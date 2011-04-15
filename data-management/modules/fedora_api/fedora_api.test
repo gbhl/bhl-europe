@@ -1,0 +1,429 @@
+<?php
+/*
+ * $Id: $
+ */
+
+/*
+ * $file
+ *
+ * Run through tests of the Fedora API funcitons.
+ */
+class FedoraAPITestCase extends DrupalWebTestCase {
+  private $pidslist = array();
+  protected $privileged_user;
+  
+  public static function getInfo() {
+    return array(
+      'name' => 'Fedora api',
+      'description' => t('The fedora repository API tests'),
+      'group' => t('fedora repository'),
+    );
+  }
+
+  function setUp() {
+    parent::setUp('fedora_api');  
+
+    // Create and login user.
+    $this->privileged_user = $this->drupalCreateFedoraUser();
+    $this->pass("Password: ".$this->privileged_user->pass);
+
+    $this->drupalLogin($this->privileged_user);
+    module_load_include('inc', 'fedora_api', 'fedora_api.raw');
+    global $base_url;
+    variable_set('fedora_user', 'fedoraAdmin');
+    variable_set('fedora_password', 'fedoraAdmin');
+  }
+
+  public function testAPIA() {
+    global $base_url;
+    $api = new FedoraAPI();
+    $client = new FedoraClient();
+    
+    $profile = $api->getObjectProfile('islandora:demos');
+    
+    if (empty($profile->error)) {
+      $this->pass('Fedora API-A getObjectProfile passed.');
+    }
+    $dslist = $api->listDatastreams('islandora:demos');
+    if (empty($dslist->error)) {
+      $this->pass('Fedora API-A listDatastreams passed.');
+    }
+    $methodlist = $api->listMethods('islandora:demos');
+    if (empty($methodlist->error)) {
+      $this->pass('Fedora API-A listMethods passed.');
+    }
+
+    $find_results = $api->findObjects("*islandora*", "" );
+    if (empty($find_results->error)) {
+      $this->pass('Fedora API-A findObjects passed.');
+    }
+    $dc_stream = $api->getDatastreamDissemination("fedora-system:FedoraObject-3.0", "DC", '', 'false');
+    if (empty($dc_stream->error)) {
+      if (strpos($dc_stream->data, '<oai_dc:dc') >= 0) {
+        $this->pass('Fedora API-A getDatastreamDissemination passed.');
+      }
+      else {
+        $this->fail("Failed to retrieve DC datastream for fedora-system:FedoraObject-3.0. Instead got: ".$dc_stream);
+      }
+    }
+    else {
+      $this->fail("Error calling drupal_http_request. ".$dc_stream->error);
+    }
+
+    $dc_html = $api->getDissemination('fedora-system:FedoraObject-3.0', 'fedora-system:3', 'viewDublinCore');
+    if (empty($dc_html->error)) {
+      if (strpos($dc_html->data, 'Dublin Core View') >= 0) {
+        $this->pass('Fedora API-A getDissemination passed.');
+      }
+      else {
+        $this->fail("Failed to retrieve viewDublinCore Disseminator for fedora-system:FedoraObject-3.0. Instead got: ".$dc_html);
+      }
+    }
+    else {
+      $this->fail("Error calling drupal_http_request for getDissemination: $dc_html->error");
+    }
+
+    $obj_hist = $api->getObjectHistory('fedora-system:FedoraObject-3.0');
+    if (empty($obj_hist->error)) {
+      if (strpos($obj_hist->data, 'fedoraObjectHistory') >= 0) {
+        $this->pass('Fedora API-A getObjectHistory passed.');
+      }
+      else {
+        $this->fail("Failed to retrieve object history for fedora-system:FedoraObject-3.0. Instead got: ".$obj_hist);
+      }
+    }
+    else {
+      $this->fail("Error calling drupal_http_request for getObjectHistory: $obj_hist->error");
+    }
+
+    $testDSID = $this->randomName(11);
+    $new_item = $client->ingest();
+    $this->pidslist[] = $new_item->pid;
+    $data = $api->addDatastream($new_item->pid, $testDSID, NULL, NULL,
+        array('controlGroup' => 'M', 'dsLocation' => $base_url.'/themes/garland/logo.png', 
+        'dsLabel' => 'hipig', 'dsState' => 'A', 'mimeType' => 'image/png'));
+
+    if ($data->code == 201) {
+      $this->pass('Add managed datastream test successful: '.$data->error);
+    }
+    else {
+      $this->fail('Problem running testaddDatastream: '.$data->error);
+    }
+
+    $test_file_DSID = $this->randomName(11);
+    $file_add_data = $api->addDatastream($new_item->pid, $test_file_DSID, getcwd().'/themes/garland/logo.png', NULL, 
+            array( 'controlGroup' => 'M', 'dsLabel' => 'hipig', 'dsState' => 'A', 'mimeType' => 'image/png'));
+
+    if ($file_add_data->code == 201) {
+      $this->pass('Add managed datastream from file test successful: ');
+    }
+    else {
+      $this->fail('Problem running testaddDatastream for file: '.$file_add_data->error);
+    }
+
+    // Now try and modify that datastream and replace its contents with another image.
+    $file_modify_data = $api->modifyDatastream($new_item->pid, $test_file_DSID, drupal_get_path('module', 'fedora_api').'/test_data/test.png', NULL,
+            array('mimeType' => 'image/png'));
+    if ($file_modify_data->code == 200) {
+      $this->pass('Modify managed datastream from file: ');
+    }
+    else {
+      $this->fail('Modify managed datastream from file: '.$file_modify_data->error);
+    }
+    
+    $test_export = $api->export($new_item->pid);
+    if (empty($test_export->error)) {
+      if (strpos($test_export->data, 'foxml:digitalObject') >= 0) {
+        $this->pass("Successfully exported FOXML.");
+      }
+      else {
+        $this->fail('Problem running export command, got: '.$test_export->data);
+      }
+    }
+    else {
+      $this->fail('Problem executing drupal_http_request for fedora_export: '.$test_export->error);
+    }
+
+    $test_nextPID = $api->getNextPID();
+    if (empty($test_nextPID->error)) {
+      if (strpos($test_nextPID->data, 'pidlist') >= 0) {
+        $this->pass('Successfully called getNextPID.');
+      }
+      else {
+        $this->fail('Problem calling getNextPID: '.$test_nextPID->data);
+      }
+    }
+    else {
+      $this->fail('Problem executing drupal_http_request for getNextPID: '.$test_nextPID->error);
+    }
+
+    $test_objectXML = $api->getObjectXML($new_item->pid);
+    if (empty($test_objectXML->error)) {
+      if (strpos($test_objectXML->data, 'foxml:digitalObject') >= 0) {
+        $this->pass('Successfully called getObjectXML.');
+      }
+      else {
+        $this->fail('Problem calling getObjectXML. Got: '.$test_objectXML->data);
+      }
+    }
+    else {
+      $this->fail('Problem calling drupal_http_request: '.$test_objectXML->error);
+    }
+  }
+
+  public function testAPIM() {
+    // Create a new object with no pid or any other parameters specified.
+    // Should return with the PID, and only contain the default 'DC' datastream.
+    $api = new FedoraAPI();
+    
+    $resp_blank_pid = $api->ingest();
+    
+    if ($resp_blank_pid->code == 201) {
+      $this->pass("Object with new PID $resp_blank_pid->data created successfully.", 'API-M');
+      $this->pidslist[] = $resp_blank_pid->data;
+    }
+    else {
+      $this->fail("Attempt to create object with blank pid. $resp_blank_pid->error");
+    }
+    
+    // Test create an object with a given pid namespace.
+    $namespace = $this->randomName(6);
+    $resp_namespace = $api->ingest(NULL, NULL, NULL, NULL, NULL, NULL, NULL, $namespace);
+    if ($resp_namespace->code == 201) {
+      $this->pass("Object with blank pid, namespace $namespace, new PID $resp_namespace->data created successfully.", 'API-M');
+      $this->pidslist[] = $resp_namespace->data;
+    }
+    else {
+      $this->fail("Attempt to create object with blank pid, namespace $namespace. $resp_namespace->error");
+    }
+    
+    // Test ingest from an XML file. First do a sanity test to make sure the pid for the object doesn't already exist.
+    $foxml_pid = 'gpWr4f:1';
+    $resp_foxml = $api->ingest(drupal_get_path('module', 'fedora_api').'/test_data/test_ingest_foxml.xml');
+    if ($resp_foxml->code == 201) {
+      $this->pass('Ingest object from existing FOXML file.');
+      $this->pidslist[] = $resp_foxml->data;
+    }
+    else {
+      $this->fail("Ingest object from existing FOXML file. $resp_foxml->error");
+    }
+    
+    // Test ingest from an FOXML string.
+    $foxml_string_pid = 'lsjdFijj:2333';
+    $foxml_string_data = file_get_contents(drupal_get_path('module', 'fedora_api').'/test_data/test_ingest_foxml_2.xml');
+    $resp_foxml_string = $api->ingest(NULL, $foxml_string_data);
+    if ($resp_foxml_string->code == 201) {
+      $this->pass('Ingest object from FOXML string');
+      $this->pidslist[] = $resp_foxml_string->data;
+    }
+    else {
+      $this->fail("Ingest object from FOXML string. $resp_foxml_string->error");
+    }
+    
+    // Test getDatastream
+    if (in_array($foxml_pid, $this->pidslist)) {
+      // Get datastream info about the default DC stream.
+      $resp_ds_info = $api->getDatastream($foxml_pid, 'DC');
+      if ($resp_ds_info->code == 200) {
+        $this->pass('Get datastream info as XML');
+      }
+      else {
+        $this->fail("Get datastream info as XML. $resp_ds_info->error");
+      }      
+    }
+    
+  }
+  
+  public function testFedoraClient() {
+    // Test ingest
+    global $base_url;
+    $client = new FedoraClient();
+    
+    try {
+      $blank_item = $client->ingest();
+      $this->pass("Ingest blank object $blank_item->pid", 'FedoraClient');
+      $this->pidslist[] = $blank_item->pid;
+    }
+    catch (HttpException $e) {
+      $this->fail("Ingest blank object ".$e->getMessage(), 'FedoraClient');
+    }
+    // Attempt to ingest new object with existing pid, should raise an exception.
+    if (!empty($blank_item)) {
+      try {
+        $double_item = $client->ingest(NULL, NULL, array('pid' => $blank_item->pid));
+        $this->fail('Ingest with existing PID raises FedoraRest Exception', 'FedoraClient');
+      }
+      catch (FedoraRestException $e) {
+        $this->pass('Ingest with existing PID raises FedoraRest Exception: '. $e->getMessage(), 'FedoraClient');
+      }
+    }
+    
+    // Test findObjects for a term.
+    try {
+      $resultset = $client->findObjects('*');
+      $this->pass("findObjects with term \"*\" found ".count($resultset)." objects", 'FedoraClient');
+    }
+    catch (FedoraRestException $e) {
+      $this->fail("findObjects with term \"*\": " . $e->getMessage(), 'FedoraClient');
+    }
+    
+    // Test findObjects for a single, specific object.
+    if (!empty($blank_item->pid)) {
+      try {
+        $resultset_query = $client->findObjects(NULL, "pid=$blank_item->pid");
+        $this->pass("Find object with pid $blank_item->pid.", 'FedoraClient');
+      }
+      catch (FedoraRestException $e) {
+        $this->fail("Find object with pid $blank_item->pid. " . $e->getMessage(), 'FedoraClient');
+      }
+    }
+  }
+  
+  public function testFedoraDatastream() {
+    global $base_url;
+    $client = new FedoraClient();
+    module_load_include('inc', 'fedora_api', 'fedora_api.datastream');
+    $item = $client->ingest();
+    
+    
+    // Attempt to get info about the default DC datastream.
+    $this->assertEqual($item->pid, $item->pid, "Instantiate FedoraItem Object $item->pid for FedoraDatastream tests", 'FedoraItem');
+    if (!empty($item)) {
+      $this->pidslist[] = $item->pid;
+    }
+    $ds = new FedoraDatastream($item, 'DC');
+    
+    $this->assertEqual($ds->dsMIME, 'text/xml', "Create FedoraDatastream for $item->pid/DC and found it to be of type text/xml.", 'FedoraDatastream');
+    try {
+      $content = $ds->content;
+      $this->pass("Get datastream DC contents.", 'FedoraDatastream');
+      // Check that datastream size is equal to what you've received.
+      $this->assertEqual(strlen($content), $ds->dsSize, "Received correct number of bytes for datastream DC, $ds->dsSize", 'FedoraDatastream');
+    }
+    catch (FedoraRestException $e) {
+      $this->fail("Get datastream DC contents. $e", 'FedoraDatastream');
+    }
+    try {
+      $ds->content = $this->randomString(255);
+        $this->fail("Set XML datastream content to invalid XML raises exception.", "FedoraDatastream");
+    }
+    catch (FedoraRestException $e) {
+      $this->pass("Set XML datastream content to invalid XML raises exception.", "FedoraDatastream");
+    }
+    // Check that getting a non-existent datastream throws an exception.
+    try {
+      $ds_fake = new FedoraDatastream($item, "OMGFAKE");
+      $this->fail("Create FedoraDatastream for non-existant datastream throws an exception.", 'FedoraDatastream');
+    }
+    catch (FedoraRestException $e) {
+      $this->pass("Create FedoraDatastream for non-existant datastream throws an exception.", 'FedoraDatastream');
+    }
+    
+    // Test datastream setters and getters
+    $ds->dsLabel = "Womp womp.";
+    $ds->dsState = 'I';
+    // Check against raw API call
+    $ds_info_resp = $client->api->getDatastream($item->pid, 'DC');
+    if ($ds_info_resp->code == 200) {
+      $ds_info_xml = $ds_info_resp->data;
+      $ds_info_elem = new SimpleXMLElement($ds_info_xml);
+      $this->assertEqual((string) $ds_info_elem->dsLabel, "Womp womp.", 'Verify dsLabel setter', 'FedoraDatastream');
+      $this->assertEqual((string) $ds_info_elem->dsState, 'I', "Verify dsState setter.", 'FedoraDatastream');
+    }
+    // Test content getter and setter.
+    $ds_default_dc = $ds->content;
+    $ds_new_dc = file_get_contents(drupal_get_path('module', 'fedora_api') . '/test_data/test_dublin_core.xml');
+    $ds->content = $ds_new_dc;
+    $this->assertFalse($ds_default_dc == $ds->content, "Datastream content getter and setter.", 'FedoraDatastream');
+  }
+  
+  public function testFedoraItem() {
+    global $base_url;
+    
+    $client = new FedoraClient();
+    $item = $client->ingest();
+    $this->pidslist[] = $item->pid;
+    $this->assertEqual($item->pid, $item->pid, "Instantiate FedoraItem Object $item->pid", 'FedoraItem');
+    $new_label = "The answer is: Moops.";
+    $item->label = $new_label;
+    $this->assertEqual($item->label, $new_label, "Test set label property.", 'FedoraItem');
+    // Assert against the output of the raw API call to make sure the label really changed.
+    $profile = $client->api->getObjectProfile($item->pid);
+    if ($profile->code == 200) {
+      $profile_doc = new SimpleXMLElement($profile->data);
+      $this->assertEqual($item->label, (string) $profile_doc->objLabel, 'Test label property against the raw API call.', 'FedoraItem');
+    }
+
+    // Do a similar test for modifying ownerId.
+    $new_ownerId = "FredTheTester";
+    $item->ownerId = $new_ownerId;
+    $this->assertEqual($item->ownerId, $new_ownerId, "Test set ownerId property.", 'FedoraItem');
+    
+    // Assert against the output of the raw API call to make sure the ownerId really changed.
+    $profile = $client->api->getObjectProfile($item->pid);
+    if ($profile->code == 200) {
+      $profile_doc = new SimpleXMLElement($profile->data);
+      $this->assertEqual($item->ownerId, (string) $profile_doc->objOwnerId, 'Test ownerId property against the raw API call.', 'FedoraItem');
+    }
+    
+    // Test adding a datastream
+    try {
+      $add_ds_id = "TXTXTXT";
+      $add_ds_content = "Hello, world!";
+      $ds = $item->addDatastream($add_ds_id, NULL, $add_ds_content, array('mimeType' => 'text/plain', 'controlGroup' => 'M'));
+      
+      $this->assertEqual($item->datastreams[$add_ds_id], $ds, "Add datastream on FedoraItem object");
+      $this->assertEqual($item->datastreams[$add_ds_id]->content, $add_ds_content, "Add datastream on FedoraItem object content matches.");
+    }
+    catch (FedoraRestException $e) {
+      $this->fail("Add datastream on FedoraItem object." . $e->getMessage());
+    }
+    
+    // Test deleting an item.
+    try {
+      $item->delete();
+      // Assert that find returns nothing.
+      $this->assert(count($client->findObjects(NULL, "pid=$item->pid state=A")) == 0, "Deleting an object removes it from search results.", 'FedoraItem');
+    }
+    catch (FedoraRestException $e) {
+      $this->fail("Delete item $item->pid. " . $e->getMessage());
+    }
+    
+   
+  }
+
+  protected function drupalCreateFedoraUser($permissions = array('access comments', 'access content', 'post comments')) {
+    // Create a role with the given permission set.
+    if (!($rid = $this->drupalCreateRole($permissions))) {
+     return FALSE;
+    }
+
+    // Create a user assigned to that role.
+    $edit = array();
+    $edit['name']   = 'simpletestuser';
+    $edit['mail']   = $edit['name'] . '@example.com';
+    $edit['roles']  = array($rid => $rid);
+    $edit['pass']   = 'simpletestpass';
+    $edit['status'] = 1;
+
+    $account = user_save('', $edit);
+
+    $this->assertTrue(!empty($account->uid), t('User created with name %name and pass %pass', array('%name' => $edit['name'], '%pass' => $edit['pass'])), t('User login'));
+    if (empty($account->uid)) {
+     return FALSE;
+    }
+
+    // Add the raw password so that we can log in as this user.
+    $account->pass_raw = $edit['pass'];
+    return $account;
+  }
+  
+  protected function tearDown() {
+    $api = new FedoraAPI();
+    foreach ($this->pidslist as $pid) {
+      $api->purgeObject($pid, "Drupal SimpleTest cleanup");
+    }
+    parent::tearDown();
+    
+  }
+}

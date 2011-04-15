@@ -1,0 +1,86 @@
+<?php
+
+// $Id:$
+
+/**
+ * $file
+ *
+ * A wrapper for the Fedora Repository's API-A and API-M calls.  Function names
+ * match the naming and capitalization conventions of the SOAP functions.
+ */
+
+/**
+ * @todo Please document this function.
+ * @see http://drupal.org/node/1354
+ */
+function fedora_api_permission() {
+  $permissions = array();
+  $permissions['administer fedora'] = array (
+      'title' => t('Administer Fedora Commons Repository'),
+      'description' => t('Set up the connection to a Fedora Commons repository and define default collection information for this site.'),
+      'restrict access' => TRUE,
+  );
+  return $permissions;
+}
+
+/**
+ * @todo Please document this function.
+ * @see http://drupal.org/node/1354
+ */
+function fedora_api_menu() {
+  $items = array();
+  $items['admin/config/fedora_repository/server'] = array(
+    'title' => t('Fedora Server Settings'),
+    'description' => t('Enter the Fedora Collection information here'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('fedora_api_settings'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/fedora_repository/server'] = array(
+    'title' => 'Fedora Server Settings',
+    'description' => 'Configure Fedora Repository API server',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('fedora_api_settings'),
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 0,
+    'access arguments' => array('administer fedora api'),
+  );
+  return $items;
+}
+
+/**
+ * Creates teh administration settings page to let the user specify the location
+ * of the Feodra Repository server.
+ */
+function fedora_api_settings($form, &$form_state) {
+  $form = array();
+  $form['fedora_server_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Fedora server URL'),
+    '#default_value' => variable_get('fedora_server_url', 'http://localhost:8080/fedora'),
+    '#description' => t('The Fedora server URL'),
+    '#required' => TRUE,
+    '#weight' => -10,
+  );
+  $form['fedora_user'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Fedora User',
+    '#default_value' => variable_get('fedora_user', 'fedoraAdmin'),
+    '#description' => t('The username to use when connecting to the Fedora server. Only set this if you wish to bypass the Fedora Drupal Servlet Filter'),
+    '#required' => FALSE,
+    '#weight' => -9,
+  );
+  $form['fedora_password'] = array(
+    '#type' => 'textfield',
+    '#title' => 'Password',
+    '#default_value' => variable_get('fedora_password', ''),
+    '#description' => t('Password for this Fedora user.'),
+    '#required' => FALSE,
+    '#weight' => -8,
+  );
+
+  //$form['#submit'][] = 'fedora_repository_admin_settings_submit';
+  $form['#weight'] = 10;
+  return system_settings_form($form);
+}

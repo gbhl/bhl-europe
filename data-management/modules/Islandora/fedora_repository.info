@@ -1,0 +1,19 @@
+; $Id$
+name = Digital Repository
+dependencies[] = imageapi
+dependencies[] = fedora_api
+description = Shows a list of items in a fedora collection.
+package = Fedora Repository
+version = 7.x
+core = 7.x
+
+; files[] = SecurityClass.inc
+; files[] = MimeClass.inc
+; files[] = XMLDatastream.inc
+; files[] = CollectionClass.inc
+; files[] = CollectionPolicy.inc
+; files[] = ContentModel.inc
+; files[] = formClass.inc
+; files[] = ObjectHelper.inc
+; files[] = SearchClass.inc
+; files[] = fedora_repository.module
