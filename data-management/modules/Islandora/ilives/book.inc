@@ -183,8 +183,8 @@ class IslandoraBook {
       $qs = '?uid='. base64_encode($user->name . ':'. $user->pass);
     }
 
-    $html = '<iframe src="/portal/reader/index.html?pid=' . $this->pid.'" scrolling="0" frameborder="0" style="width: 100%; height: 800px;">Errors: unable to load viewer</iframe>';
-	
+	$html = '<iframe src='.$base_url.'/'.drupal_get_path('module', 'fedora_repository').'/ilives/reader/index.html?pid=' . $this->pid.' scrolling="0" frameborder="0" style="width: 100%; height: 800px;">Errors: unable to load viewer</iframe>';
+
     $tabs.= $html . '</p></div><div id="tabs-2"><p>'.fedora_ilives_create_book_view($this->pid).'</p></div>';
 	if (user_access('administer nodes'))
 		$tabs .= '<div id="tabs-3"><p>'.drupal_render(drupal_get_form('book_add_pages_form', $this->pid)).'</p></div>';
