@@ -1080,6 +1080,7 @@ $output['prefix']['#markup'] = '<ol class="search-results">';
  *
 function fedora_repository_form_alter(&$form, &$form_state, $form_id) {
   // Advanced node search form
+  drupal_add_library('system', 'drupal.collapse');
   module_load_include('inc', 'fedora_repository', 'SearchClass');
   $path = drupal_get_path('module', 'fedora_repository');
   if ($form_id == 'search_form' && arg(1) == 'fedora_repository' && user_access('use advanced search')) {

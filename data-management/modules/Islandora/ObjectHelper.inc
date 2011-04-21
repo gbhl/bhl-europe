@@ -481,6 +481,7 @@ class ObjectHelper {
    *
    */
   function get_formatted_datastream_list($object_pid, $contentModels, &$fedoraItem) {
+	drupal_add_library('system', 'drupal.collapse');
     global $fedoraUser, $fedoraPass, $base_url, $user;
     module_load_include('inc', 'fedora_repository', 'ConnectionHelper');
     module_load_include('inc', 'fedora_repository', 'ObjectHelper');
@@ -546,7 +547,7 @@ class ObjectHelper {
           '#collapsible' => TRUE,
           '#collapsed' => TRUE,
           '#value' => $dataStreamBody,
-		  '#children' => '',
+		  '#attributes' => array('class' => array('collapsible', 'collapsed')),
       );
       $dataStreamBody = '<div class = "fedora_detailed_list">' . theme('fieldset', $fieldset) . '</div>';
     }
@@ -828,8 +829,7 @@ class ObjectHelper {
             '#title' => t('Items in this collection'),
             '#collapsible' => TRUE,
             '#collapsed' => TRUE,
-			'#attributes' => array(),
-			'#children' =>'',
+			'#attributes' => array('class' => array('collapsible', 'collapsed')),
             '#value' => (isset($objectList) ? $objectList : ''), //collection list
         );
         $objectListOut = theme('fieldset', $object_list_fieldset);
@@ -842,6 +842,7 @@ class ObjectHelper {
           '#collapsible' => TRUE,
           '#collapsed' => FALSE,
           '#value' => $datastreams,
+		  '#attributes' => array('class' => array('collapsible', 'collapsed')),
       );
       $objectListOut = ''; //no collection objects to show so don't show field set
     }
@@ -887,7 +888,7 @@ class ObjectHelper {
 		  '#collapsed' => TRUE,
           '#value' => $body,
 		  '#description' => '',
-		  '#children' => '',
+		  '#attributes' => array('class' => array('collapsible', 'collapsed')),
       );
       $output .= theme('fieldset', array('element' => $fieldset));
     }
