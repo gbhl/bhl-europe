@@ -1,0 +1,35 @@
+Requirements:
+  -- Web Server (e.g. Apache)
+  -- Database Server ( MySQL ) 
+  -- PHP 
+  -- Git ( http://git-scm.com )
+  For more information, go to http://drupal.org/requirements
+  
+Build the project:
+1. git clone https://github.com/bhle/bhle
+2. git checkout drupal-dev
+3. import bhle/portal/drupal/database/bhle_portal_dev.sql to your mysql databse
+4. change the file name of bhle/portal/drupal/www/sites/default/ref.settings.php to settings.php;
+   modify the $database array with your database information.
+5. modify bhle/.git/info/exclude file, add settings.php at the end
+Now your drupal portal project should be ok to run on your web browser
+
+Contribute to the project:
+1. after build the project successfully, 
+   git checkout drupal-dev
+   git checkout -b your-own-branch-name-here
+2. do all modifications you want to add to this project, and test to be sure everything is ok
+3. git checkout drupal-dev
+4. git pull 
+   if pull success, go to step 5
+   if there are conflicts:
+   1) roll back to the original drupal-dev you pulled last time
+   2) git pull again, to have all new modifications from other developers
+   3) go back to step 2, and do all again
+5. git checkout your-own-branch-name-here
+6. git add *
+7. git commit -m "your commit message"
+8. git rebase drupal-dev your-own-branch-name-here
+10. git checkout drupal-dev
+11. git merge your-own-branch-name-here
+12. git push
