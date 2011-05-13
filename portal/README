@@ -32,4 +32,4 @@ Contribute to the project:
 8. git rebase drupal-dev your-own-branch-name-here
 10. git checkout drupal-dev
 11. git merge your-own-branch-name-here
-12. git push
+12. git push (you should have a username and password to be able to do this)
