@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `drupal`
+-- Current Database: `portal_dev`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `drupal` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `portal_dev` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `drupal`;
+USE `portal_dev`;
 
 --
 -- Table structure for table `actions`

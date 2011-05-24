@@ -183,7 +183,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'drupal',
+      'database' => 'portal_dev',
       'username' => 'root',
       'password' => '',
       'host' => 'localhost',
