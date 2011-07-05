@@ -1,0 +1,16 @@
+name = Synchronize translations
+description = Synchronizes taxonomy and fields accross translations of the same content.
+dependencies[] = i18n
+package = Multilingual - Internationalization
+core = 7.x
+
+files[] = i18n_sync.module
+files[] = i18n_sync.install
+files[] = i18n_sync.module.inc
+files[] = i18n_sync.node.inc
+; Information added by drupal.org packaging script on 2011-04-30
+version = "7.x-1.0-beta5"
+core = "7.x"
+project = "i18n"
+datestamp = "1304158615"
+

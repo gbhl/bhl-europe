@@ -1,0 +1,89 @@
+<?php
+/**
+ * @file
+ * Test case for multilingual taxonomy
+ */
+
+
+class i18nTaxonomyTestCase extends Drupali18nTestCase {
+
+  function getInfo() {
+    return array(
+      'name' => 'Taxonomy translation',
+      'group' => 'Internationalization',
+      'description' => 'Taxonomy translation functions'
+    );
+  }
+
+  function setUp() {
+    parent::setUp('i18n_taxonomy');
+    parent::setUpLanguages();
+  }
+
+  function testTaxonomyTranslationAPI() {
+    // Create a localizable vocabulary with some terms
+    $number = 4;
+    $vocab = $this->createVocabulary(array('i18n_mode' => I18N_MODE_LOCALIZE));
+    $this->assertEqual(i18n_taxonomy_vocabulary_mode($vocab->vid), I18N_MODE_LOCALIZE, 'A vocabulary has been created and it is localizable.');
+    $terms = $this->drupalCreateTerms($number, array('vid' => $vocab->vid));
+    $this->assertEqual(count($terms), $number, "Four translatable terms have been created.");
+    // Create and Save Spanish translation for all of them
+    $count = 0;
+    $lang = 'es';
+    $this->drupalLogin($this->translator);
+    foreach ($terms as $term) {
+      $translations[$term->tid] = $this->createStringTranslation('taxonomy', $term->name);
+    }
+  }
+
+  // Create vocabulary with given fields
+  function drupalCreateVocabulary($vocab = array()) {
+    $vocab += array('name' => $this->randomName(10), 'description' => $this->randomName(20));
+    taxonomy_vocabulary_save($vocab);
+    return (object)$vocab;
+  }
+  // Create term with given fields
+  function drupalCreateTerms($number = 1, $data = array()) {
+    $list = array();
+    for ($i = 1; $i <= $number ; $i++ ) {
+      $term = $this->createTerm($data);
+      $list[$term->tid] = $term;
+    }
+    return $list;  
+  }
+
+  /**
+   * Returns a new vocabulary with random properties.
+   */
+  function createVocabulary($data = array()) {
+    // Create a vocabulary.
+    $data += array(
+      'i18n_mode' => I18N_MODE_LOCALIZE,
+      'name' => $this->randomName(),
+      'description' => $this->randomName(),
+    	'machine_name' => drupal_strtolower($this->randomName()),
+      'help' => '',
+    	'nodes' => array('article' => 'article'),
+      'weight' => mt_rand(0, 10),
+    );
+    $vocabulary = (object)$data;
+    taxonomy_vocabulary_save($vocabulary);
+    return $vocabulary;
+  }
+
+  /**
+   * Returns a new term with random properties in vocabulary $vid.
+   */
+  function createTerm($data = array()) {
+    $data += array(
+      'name' => $this->randomName(),
+    	'description' => $this->randomName(),
+      // Use the first available text format and vocabulary.
+      'format' => filter_default_format(),
+      'vid' => 1,
+    );
+    $term = (object)$data;
+    taxonomy_term_save($term);
+    return $term;
+  }
+}
