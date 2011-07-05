@@ -1,0 +1,17 @@
+; $Id: backup_migrate.info,v 1.3.2.1 2010/01/16 21:02:57 ronan Exp $
+name = Backup and Migrate
+description = "Backup or migrate the Drupal Database quickly and without unnecessary data."
+core = 7.x
+
+files[] = backup_migrate.module
+files[] = backup_migrate.install
+files[] = includes/destinations.inc
+files[] = includes/profiles.inc
+files[] = includes/schedules.inc
+
+; Information added by drupal.org packaging script on January 1, 1970 - 00:00
+version = "7.x-2.1"
+core = "7.x"
+project = "backup_migrate"
+datestamp = "1296102748"
+
