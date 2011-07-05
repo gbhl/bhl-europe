@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSets xmlns="http://www.tdwg.org/schemas/abcd/2.06">
+      <DataSet>
+        <TechnicalContacts>
+          <TechnicalContact>
+            <Name>Olivier GARGOMINY</Name>
+            <Email>inpn@mnhn.fr</Email>
+            <Phone>33 1 40 79 57 07</Phone>
+          </TechnicalContact>
+        </TechnicalContacts>
+        <ContentContacts>
+          <ContentContact>
+            <Name>Olivier GARGOMINY</Name>
+            <Email>inpn@mnhn.fr</Email>
+            <Phone>33 1 40 79 57 07</Phone>
+          </ContentContact>
+        </ContentContacts>
+        <Metadata>
+          <Description>
+            <Representation language="FR FR-FR">
+              <Title>Inventaire national du Patrimoine naturel (INPN)</Title>
+              <Details>Plants, animals and protected areas in metropolitain France and overseas Départements</Details>
+            </Representation>
+          </Description>
+          <RevisionData>
+            <DateModified>2008-03-19 00:00:00</DateModified>
+          </RevisionData>
+          <Owners>
+            <Owner>
+              <Organisation>
+                <Name>
+                  <Representation language="FR FR-FR">
+                    <Text>Service du Patrimoine naturel, Muséum national d'Histoire naturelle, Paris</Text>
+                    <Abbreviation>SPN, MNHN</Abbreviation>
+                  </Representation>
+                </Name>
+              </Organisation>
+              <Person>
+                <FullName>Jacques TROUVILLIEZ</FullName>
+              </Person>
+              <Roles>
+                <Role>Directeur</Role>
+              </Roles>
+              <TelephoneNumbers>
+                <TelephoneNumber>
+                  <Number>33 1 40 79 32 57</Number>
+                </TelephoneNumber>
+              </TelephoneNumbers>
+              <EmailAddresses>
+                <EmailAddress>trouvilliez@mnhn.fr</EmailAddress>
+              </EmailAddresses>
+              <URIs>
+                <URL>http://inpn.mnhn.fr</URL>
+              </URIs>
+            </Owner>
+          </Owners>
+          <IPRStatements>
+            <Acknowledgements>
+              <Acknowledgement language="FR FR-FR">
+                <Text>GBIF France</Text>
+                <Details>Adil EL FILALI and Justine CHEVAL</Details>
+              </Acknowledgement>
+            </Acknowledgements>
+          </IPRStatements>
+        </Metadata>
+        <Units>
+          <Unit>
+            <SourceInstitutionID>Service du Patrimoine naturel, Muséum national d'Histoire naturelle</SourceInstitutionID>
+            <SourceID>SPN-MNHN</SourceID>
+            <UnitID>INPN_21140568</UnitID>
+            <Identifications>
+              <Identification>
+                <Result>
+                  <TaxonIdentified>
+                    <ScientificName>
+                      <FullScientificNameString>Papilio camilla (Linnaeus, 1764)</FullScientificNameString>
+                    </ScientificName>
+                  </TaxonIdentified>
+                </Result>
+                <PreferredFlag>true</PreferredFlag>
+              </Identification>
+            </Identifications>
+            <MultiMediaObjects>
+              <MultiMediaObject>
+                <FileURI>http://inpn.mnhn.fr/isb/servlet/ISBServlet?action=Espece&amp;typeAction=10&amp;pageReturn=ficheEspeceDescription.jsp&amp;numero_taxon=53772</FileURI>
+              </MultiMediaObject>
+            </MultiMediaObjects>
+            <Gathering>
+              <Agents>
+                <GatheringAgent>
+                  <Organisation>
+                    <Name>
+                      <Representation language="FR FR-FR">
+                        <Text>SPN-MNHN Paris</Text>
+                      </Representation>
+                    </Name>
+                  </Organisation>
+                  <Person>
+                    <FullName>DIREN</FullName>
+                  </Person>
+                </GatheringAgent>
+              </Agents>
+              <LocalityText language="FR FR-FR">ZNIEFF: BOCAGE A CHENE TAUZIN ENTRE LES SABLES D'OLONNE ET LA ROCHE-SUR-YON</LocalityText>
+              <Country>
+                <Name language="FR FR-FR">FRANCE</Name>
+                <ISO3166Code>FR</ISO3166Code>
+              </Country>
+              <NamedAreas>
+                <NamedArea>
+                  <AreaClass>CITIES</AreaClass>
+                  <AreaName>ZNIEFF: BOCAGE A CHENE TAUZIN ENTRE LES SABLES D'OLONNE ET LA ROCHE-SUR-YON</AreaName>
+                </NamedArea>
+              </NamedAreas>
+              <SiteCoordinateSets>
+                <SiteCoordinates>
+                  <CoordinateMethod>WGS84</CoordinateMethod>
+                  <CoordinatesLatLong>
+                    <LongitudeDecimal>-1.61506370271</LongitudeDecimal>
+                    <LatitudeDecimal>46.5776998604</LatitudeDecimal>
+                  </CoordinatesLatLong>
+                </SiteCoordinates>
+              </SiteCoordinateSets>
+              <Synecology>
+                <AssociatedTaxa>
+                  <TaxonIdentified>
+                    <ScientificName>
+                      <FullScientificNameString>Papilio camilla (Linnaeus, 1764)</FullScientificNameString>
+                    </ScientificName>
+                  </TaxonIdentified>
+                </AssociatedTaxa>
+              </Synecology>
+            </Gathering>
+          </Unit>
+        </Units>
+      </DataSet>
+    </DataSets>

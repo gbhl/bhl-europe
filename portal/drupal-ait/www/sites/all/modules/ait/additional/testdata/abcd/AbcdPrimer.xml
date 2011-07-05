@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="en_ABCD2.0_All_parts.xslt" ?>
+<DataSets xmlns="http://www.tdwg.org/schemas/abcd/2.06">
+  <DataSet>
+    <TechnicalContacts>
+      <TechnicalContact>
+        <Name>Gerd MÃŒller</Name>
+        <Email>gerd@dfb.de</Email>
+      </TechnicalContact>
+    </TechnicalContacts>
+    <ContentContacts>
+      <ContentContact>
+        <Name>A Another</Name>
+        <Email>a.another@fake.org</Email>
+      </ContentContact>
+    </ContentContacts>
+    <Metadata>
+      <Description>
+        <Representation language="en">
+          <Title>PonTaurus collection</Title>
+        </Representation>
+      </Description>
+      <RevisionData>
+        <DateModified>2001-03-01T00:00:00</DateModified>
+      </RevisionData>
+    </Metadata>
+    <Units>
+      <Unit>
+        <SourceInstitutionID>BGBM</SourceInstitutionID>
+        <SourceID>PonTaurus</SourceID>
+        <UnitID>1136</UnitID>
+        <DateLastEdited>2001-03-01T00:00:00</DateLastEdited>
+        <Identifications>
+          <Identification>
+            <Result>
+              <TaxonIdentified>
+                <HigherTaxa>
+                  <HigherTaxon>
+                    <HigherTaxonName>Plumbaginaceae</HigherTaxonName>
+                    <HigherTaxonRank>familia</HigherTaxonRank>
+                  </HigherTaxon>
+                </HigherTaxa>
+                <ScientificName>
+                  <FullScientificNameString>Acantholimon lycaonicum Boiss. &amp; Heldr.</FullScientificNameString>
+                  <NameAtomised>
+                    <Botanical>
+                      <GenusOrMonomial>Acantholimon</GenusOrMonomial>
+                      <FirstEpithet>lycaonicum</FirstEpithet>
+                      <AuthorTeam>Boiss. &amp; Heldr.</AuthorTeam>
+                    </Botanical>
+                  </NameAtomised>
+                </ScientificName>
+              </TaxonIdentified>
+            </Result>
+            <Identifiers>
+              <Identifier>
+                <PersonName>
+                  <FullName>Mrs Barcode</FullName>
+                </PersonName>
+              </Identifier>
+            </Identifiers>
+          </Identification>
+        </Identifications>
+        <RecordBasis>PreservedSpecimen</RecordBasis>
+        <Gathering>
+          <DateTime>
+            <ISODateTimeBegin>1999-08-01T00:00:00</ISODateTimeBegin>
+          </DateTime>
+          <Agents>
+            <GatheringAgent>
+              <Person>
+                <FullName>B Another</FullName>
+              </Person>
+            </GatheringAgent>
+          </Agents>
+          <Country>
+            <Name>Turkey</Name>
+          </Country>
+          <Altitude>
+            <MeasurementOrFactAtomised>
+              <LowerValue>2620</LowerValue>
+              <UnitOfMeasurement>meter</UnitOfMeasurement>
+            </MeasurementOrFactAtomised>
+          </Altitude>
+          <Aspect>
+            <Ordination>N</Ordination>
+          </Aspect>
+        </Gathering>
+      </Unit>
+    </Units>
+  </DataSet>
+</DataSets>

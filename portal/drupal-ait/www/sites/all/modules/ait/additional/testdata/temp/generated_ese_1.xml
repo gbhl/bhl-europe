@@ -1,0 +1,11 @@
+<record xmlns="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:europeana="http://www.europeana.eu/schemas/ese/">
+
+<dc:title>TEST RECORD</dc:title>
+<dc:creator>Creator 0 darwin</dc:creator>
+<dc:creator>Creator 1 smith</dc:creator>
+<dc:subject>Great Britain</dc:subject>
+<dc:subject>France</dc:subject>
+
+<dc:publisher>Printed for T. Cadell, jun [etc., London</dc:publisher><dcterms:issued>19th century CE</dcterms:issued><type>Text</type><dc:identifer>123456789</dc:identifer><dcterms:isVersionOf>A systematic arrangement of British plants :with an easy introduction to the study of botany.</dcterms:isVersionOf><isShownBy>http://www.biodiversitylibrary.org/item/37</isShownBy><isShownAt>http://www.biodiversitylibrary.org/bibliography/17</isShownAt><object>http://www.biodiversitylibrary.org/pagethumb/6717691</object><dataProvider>Missouri Botanical Garden</dataProvider>
+
+</record>

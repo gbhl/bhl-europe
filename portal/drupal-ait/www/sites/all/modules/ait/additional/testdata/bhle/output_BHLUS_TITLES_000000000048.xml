@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Enumeratio plantarum Africae australis extratropicae :quae collectae, determinatae et expositae /a Christiano Friederico Ecklon &amp;amp; Carolo Zeyher. Pars I-III.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Enumeratio plantarum Africae australis extratropicae</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Hamburgi :</placeTerm>
+      </place>
+      <publisher>Sumtibus auctorum. Prostat apud Perthes &amp;amp; Besser,</publisher>
+      <dateIssued>1835-1837.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/48</url>
+   </location>
+   <name>
+      <namePart>Ecklon, Christian Friedrich,</namePart>
+      <namePart type="date">1795-1868.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <name>
+      <namePart>Zeyher, Carl Ludwig Philipp,</namePart>
+      <namePart type="date">1799-1858.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <identifier type="oai">BHLUS:TITLES/000000000048</identifier>
+   <identifier type="Abbreviation">Enum. Pl. Afr. Austral.</identifier>
+   <identifier type="OCLC">ocm05158897</identifier>
+   <identifier type="TL2">1621</identifier>
+</mods>

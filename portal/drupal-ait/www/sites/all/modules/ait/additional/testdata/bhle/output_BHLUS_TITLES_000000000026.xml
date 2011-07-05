@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Joannis Hedwig...species muscorum frondosorum descriptae et tabulis aeneis lxxvii coloratis illustratae /opus posthumum, editum a Friderico Schwaegrichen.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Species muscorum frondosorum : descriptae et tabulis aeneis lxxvii coloratis illustratae</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Lipsiae (Leipzig) :||Parisiis, A. Koenig,</placeTerm>
+      </place>
+      <publisher>sumtu J. A. Barthii ;</publisher>
+      <dateIssued>1801.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/26</url>
+   </location>
+   <name>
+      <namePart>Hedwig, Johannes,</namePart>
+      <namePart type="date">1730-1799.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <name>
+      <namePart>Schwägrichen, Christian Friedrich,</namePart>
+      <namePart type="date">1775-1853.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Musci</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000026</identifier>
+   <identifier type="Abbreviation">Sp. Musc. Frond.</identifier>
+   <identifier type="OCLC">ocm04663059</identifier>
+   <identifier type="TL2">2532</identifier>
+</mods>

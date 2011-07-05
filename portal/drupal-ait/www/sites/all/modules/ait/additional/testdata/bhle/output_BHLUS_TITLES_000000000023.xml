@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>The genus Phoradendron :a monographic revision.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>The genus Phoradendron</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Urbana, Ill. :</placeTerm>
+      </place>
+      <publisher>The University,</publisher>
+      <dateIssued>1916.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/23</url>
+   </location>
+   <name>
+      <namePart>Trelease, William,</namePart>
+      <namePart type="date">1857-1945.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <identifier type="oai">BHLUS:TITLES/000000000023</identifier>
+   <identifier type="Abbreviation">Phoradendron</identifier>
+   <identifier type="OCLC">ocm02713558</identifier>
+   <identifier type="TL2">15026</identifier>
+</mods>

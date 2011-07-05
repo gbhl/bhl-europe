@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>New illustration of the sexual system of Carolus von Linnaeus :and the temple of Flora, or garden of nature.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>New illustration of the sexual system of Carolus von Linnaeus</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">London :</placeTerm>
+      </place>
+      <publisher/>
+      <dateIssued>1807.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/16</url>
+   </location>
+   <name>
+      <namePart>Thornton, Robert John,</namePart>
+      <namePart type="date">1768?-1837.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Botany</topic>
+   </subject>
+   <subject>
+      <topic>Pictorial works</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000016</identifier>
+   <identifier type="OCLC">ocm04568262</identifier>
+</mods>

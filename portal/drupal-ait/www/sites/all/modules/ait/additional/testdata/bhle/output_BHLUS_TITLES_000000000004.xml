@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>The anatomy of plants :by Nehemiah Grew ...</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>The anatomy of plants</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">[London] :</placeTerm>
+      </place>
+      <publisher>Printed by W. Rawlins, for the author,</publisher>
+      <dateIssued>1682.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/4</url>
+   </location>
+   <name>
+      <namePart>Grew, Nehemiah,</namePart>
+      <namePart type="date">1641-1712.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>1682</topic>
+   </subject>
+   <subject>
+      <topic>Botany</topic>
+   </subject>
+   <subject>
+      <topic>Early works to 1800</topic>
+   </subject>
+   <subject>
+      <topic>England</topic>
+   </subject>
+   <subject>
+      <topic>Engravings</topic>
+   </subject>
+   <subject>
+      <topic>gmgpc</topic>
+   </subject>
+   <subject>
+      <topic>Plants anatomy</topic>
+   </subject>
+   <subject>
+      <topic>Pre-Linnean works</topic>
+   </subject>
+   <subject>
+      <topic>Uncolored</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000004</identifier>
+   <identifier type="OCLC">ocm23616417  </identifier>
+</mods>

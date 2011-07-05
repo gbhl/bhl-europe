@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Prodromus systematis Aroidearum /H. G. Schott.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Prodromus systematis Aroidearum</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Vindobonae (Vienna) :</placeTerm>
+      </place>
+      <publisher/>
+      <dateIssued>1860.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/68</url>
+   </location>
+   <name>
+      <namePart>Schott, H. W.</namePart>
+      <namePart type="date">1794-1865.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <identifier type="oai">BHLUS:TITLES/000000000068</identifier>
+   <identifier type="Abbreviation">Prodr. Syst. Aroid.</identifier>
+   <identifier type="OCLC">ocm05693267</identifier>
+   <identifier type="TL2">11049</identifier>
+</mods>

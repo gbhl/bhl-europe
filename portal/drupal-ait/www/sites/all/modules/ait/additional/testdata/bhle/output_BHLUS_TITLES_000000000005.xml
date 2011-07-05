@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Genera of European and Northamerican Bryineae (Mosses) /synoptically disposed by N. C. Kindberg.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Genera of European and Northamerican Bryineae (Mosses)</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Linkoeping, Sweden:</placeTerm>
+      </place>
+      <publisher>P. M. Sahlstroems Bookselling (C.V. Zickerman),</publisher>
+      <dateIssued>[1897]</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/5</url>
+   </location>
+   <name>
+      <namePart>Kindberg, N. C.</namePart>
+      <namePart type="date">1832-1910.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Europe</topic>
+   </subject>
+   <subject>
+      <topic>Musci</topic>
+   </subject>
+   <subject>
+      <topic>North America</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000005</identifier>
+   <identifier type="Abbreviation">Eur. N. Amer. Bryin.</identifier>
+   <identifier type="OCLC">ocm03938329</identifier>
+   <identifier type="TL2">3652</identifier>
+</mods>

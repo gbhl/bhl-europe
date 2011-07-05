@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Flora oder Botanische Zeitung :welche Recensionen, Abhandlungen, Aufsätze, Neuigkeiten und Nachrichten, die  Botanik betreffend, enthält /herausgegeben von der Königl. Botanischen Gesellschaft in Regensburg.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Flora, oder, Botanische Zeitung :</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Regensburg :</placeTerm>
+      </place>
+      <publisher>Die Gesellschaft,</publisher>
+      <dateIssued>1818-1965.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/64</url>
+   </location>
+   <name>
+      <namePart>Bayerische botanische Gesellschaft, Regensburg.</namePart>
+      <namePart type="date"/>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Botany</topic>
+   </subject>
+   <subject>
+      <topic>Periodicals</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000064</identifier>
+   <identifier type="Abbreviation">Flora</identifier>
+   <identifier type="BPH">373.28</identifier>
+   <identifier type="OCLC">ocm03134398</identifier>
+</mods>

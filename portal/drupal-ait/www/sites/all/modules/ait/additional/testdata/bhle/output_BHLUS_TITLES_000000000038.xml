@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Traite des arbres forestiers :ou histoire et description des arbres indigenes ou naturalises... /par M. Jaume Saint-Hilaire. Ouvrage precede d'une instruction sur la culture des arbres, par M. Thouin...</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Traite des arbres forestiers</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Paris :</placeTerm>
+      </place>
+      <publisher>de l'Imprimerie de Firmin Didot,</publisher>
+      <dateIssued>1824.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/38</url>
+   </location>
+   <name>
+      <namePart>Jaume Saint-Hilaire, Jean Henri,</namePart>
+      <namePart type="date">1772-1845.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <name>
+      <namePart>Thouin, André,</namePart>
+      <namePart type="date">1747-1824</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Arboriculture</topic>
+   </subject>
+   <subject>
+      <topic>France</topic>
+   </subject>
+   <subject>
+      <topic>Trees</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000038</identifier>
+   <identifier type="OCLC">ocm04841884</identifier>
+</mods>

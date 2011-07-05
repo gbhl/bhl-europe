@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Insectivorous plants /by Charles Darwin.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Insectivorous plants</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">London :</placeTerm>
+      </place>
+      <publisher>J. Murray,</publisher>
+      <dateIssued>1888.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/74</url>
+   </location>
+   <name>
+      <namePart>Darwin, Charles,</namePart>
+      <namePart type="date">1809-1882.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <name>
+      <namePart>Darwin, Francis,</namePart>
+      <namePart type="date">1848-1925.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Assimilation</topic>
+   </subject>
+   <subject>
+      <topic>Carnivorous plants</topic>
+   </subject>
+   <subject>
+      <topic>Plants</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000074</identifier>
+   <identifier type="OCLC">ocm04312367</identifier>
+</mods>

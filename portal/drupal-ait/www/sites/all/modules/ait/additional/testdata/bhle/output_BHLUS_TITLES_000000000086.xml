@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Prodromus florae Nepalensis :sive Enumeratio vegetabilium quae in itinere per Nepaliam proprie dictam et regiones conterminas, ann. 1802-1803. Detexit atque legit d. d. Franciscus Hamilton, (olim Buchanan) Accedunt plantae a. d. Wallich nuperius missae /Secundem methodi naturalis normam disposuit atque descripsit David Don.</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Prodromus florae Nepalensis</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Londini :</placeTerm>
+      </place>
+      <publisher>J. Gale,</publisher>
+      <dateIssued>1825.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/86</url>
+   </location>
+   <name>
+      <namePart>Don, David,</namePart>
+      <namePart type="date">1799-1841.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <name>
+      <namePart>Hamilton, Francis,</namePart>
+      <namePart type="date">1762-1829</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <name>
+      <namePart>Wallich, N.</namePart>
+      <namePart type="date">1786-1854.</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <subject>
+      <topic>Botany</topic>
+   </subject>
+   <subject>
+      <topic>Nepal</topic>
+   </subject>
+   <identifier type="oai">BHLUS:TITLES/000000000086</identifier>
+   <identifier type="Abbreviation">Prodr. Fl. Nepal.</identifier>
+   <identifier type="OCLC">ocm05863987</identifier>
+   <identifier type="TL2">1497</identifier>
+</mods>

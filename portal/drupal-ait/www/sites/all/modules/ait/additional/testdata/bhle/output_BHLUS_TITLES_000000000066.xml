@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/mods.xsd">
+   <titleInfo>
+      <title>Enumeratio plantarum Horti regii botanici berolinensis altera.Auctore dr. H. F. Link ...</title>
+   </titleInfo>
+   <titleInfo type="alternative">
+      <title>Enumeratio plantarum Horti regii botanici berolinensis altera.</title>
+   </titleInfo>
+   <originInfo>
+      <place>
+         <placeTerm type="text">Berolini :</placeTerm>
+      </place>
+      <publisher>apud G. Reimer,</publisher>
+      <dateIssued>1821-22.</dateIssued>
+      <frequency/>
+   </originInfo>
+   <location>
+      <url>http://www.biodiversitylibrary.org/bibliography/66</url>
+   </location>
+   <name>
+      <namePart>Link, Heinrich Friedrich,</namePart>
+      <namePart type="date">1767-1851</namePart>
+      <role>
+         <roleTerm type="code" authority="marcrelator">cre</roleTerm>
+      </role>
+   </name>
+   <identifier type="oai">BHLUS:TITLES/000000000066</identifier>
+   <identifier type="Abbreviation">Enum. Hort. Berol. Alt.</identifier>
+   <identifier type="OCLC">ocm03800753</identifier>
+   <identifier type="TL2">4695</identifier>
+</mods>
