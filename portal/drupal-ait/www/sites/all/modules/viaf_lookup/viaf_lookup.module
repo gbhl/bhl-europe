@@ -1,0 +1,39 @@
+<?php
+$start = microtime( true );
+viaf_lookup_author_alternatives( "poeppig" );
+$end = microtime( true );
+
+error_log( "Timing (s): " . ($end - $start) );
+
+function viaf_lookup_author_alternatives($author) {
+  $authors = array();
+
+  $searchField = "local.personalNames";
+  $openSearch_request = "http://viaf.org/viaf/search?sortKeys=holdingscount&maximumRecords=100&httpAccept=application/xml&query=" . $searchField . "+all+%22" . $author . "%22";
+
+  $viaf_namespace = "http://viaf.org/viaf/terms#";
+
+  error_log( $openSearch_request );
+
+  $domDocument = new DOMDocument();
+  $domDocument->load( $openSearch_request );
+
+  $domXPath = new DOMXPath( $domDocument );
+  $domXPath->registerNamespace( "ns", $viaf_namespace );
+
+  $nodeList = $domXPath->query( "//ns:datafield[@tag=400] | //ns:datafield[@tag=100]" );
+  $numNodes = $nodeList->length;
+
+  for( $i = 0; $i < $numNodes; $i++ ) {
+    $currNode = $nodeList->item( $i );
+
+    $nameNode = $currNode->firstChild;
+    if( $nameNode != NULL ) {
+      $authors[] = $nameNode->textContent;
+
+      error_log( "Found author: " . $nameNode->textContent );
+    }
+  }
+
+  return $authors;
+}
