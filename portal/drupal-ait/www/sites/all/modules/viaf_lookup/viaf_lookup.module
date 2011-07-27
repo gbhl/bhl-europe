@@ -1,11 +1,15 @@
 <?php
-// TEST CODE BELOW
+// TEST CODE BELOW (for running in e.g. Drupal Debug)
 //$start = microtime( true );
-//var_dump( viaf_lookup_authors_list('smith') );
+//var_dump( viaf_lookup_authors_list('poeppig') );
 //$end = microtime( true );
 //
 //echo "Timing (s): " . ($end - $start);
 // END TEST CODE
+
+/**
+ * PUBLIC INTERFACE FUNCTIONS START
+ */
 
 /**
  * Use the VIAF openSearch API to lookup alternative author names
@@ -109,6 +113,14 @@ function viaf_lookup_author_alternatives($viafID) {
 
     return false;
 }
+/**
+ * PUBLIC INTERFACE FUNCTIONS END
+ * Note: do not call any functions directly below here
+ */
+
+/**
+ * INTERNAL FUNCTIONS START
+ */
 
 /**
  * Queries the VIAF openSearch webservice API for a given author name
@@ -179,6 +191,14 @@ function _viaf_webservice_request($term, $url) {
 
     return $response;
 }
+
+/**
+ * INTERNAL FUNCTIONS END
+ */
+
+/**
+ * DRUPAL HOOK FUNCTIONS START
+ */
 
 /**
  * Implements caching functionality
@@ -267,3 +287,7 @@ function viaf_lookup_config_form_validate($form, &$form_state) {
         form_set_error('viaf_lookup_maximum_records', t('Maximum number of records must be positive.'));
     }
 }
+
+/**
+ * DRUPAL HOOK FUNCTIONS START
+ */
