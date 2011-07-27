@@ -1,39 +1,293 @@
 <?php
-$start = microtime( true );
-viaf_lookup_author_alternatives( "poeppig" );
-$end = microtime( true );
+// TEST CODE BELOW (for running in e.g. Drupal Debug)
+//$start = microtime( true );
+//var_dump( viaf_lookup_authors_list('poeppig') );
+//$end = microtime( true );
+//
+//echo "Timing (s): " . ($end - $start);
+// END TEST CODE
 
-error_log( "Timing (s): " . ($end - $start) );
+/**
+ * PUBLIC INTERFACE FUNCTIONS START
+ */
 
-function viaf_lookup_author_alternatives($author) {
-  $authors = array();
+/**
+ * Use the VIAF openSearch API to lookup alternative author names
+ * @param string $author Name of author to search for
+ * @return array Contains a list of alternative author names (and spelling), false on error
+ */
+function viaf_lookup_authors_simple($author) {
+    if (is_numeric($author))
+        return false;
 
-  $searchField = "local.personalNames";
-  $openSearch_request = "http://viaf.org/viaf/search?sortKeys=holdingscount&maximumRecords=100&httpAccept=application/xml&query=" . $searchField . "+all+%22" . $author . "%22";
+    $authors_list = array();
 
-  $viaf_namespace = "http://viaf.org/viaf/terms#";
+    // Fetch a list of all possible author names first
+    $authors = viaf_lookup_authors_list($author);
+    if ($authors == false)
+        return false;
 
-  error_log( $openSearch_request );
-
-  $domDocument = new DOMDocument();
-  $domDocument->load( $openSearch_request );
-
-  $domXPath = new DOMXPath( $domDocument );
-  $domXPath->registerNamespace( "ns", $viaf_namespace );
-
-  $nodeList = $domXPath->query( "//ns:datafield[@tag=400] | //ns:datafield[@tag=100]" );
-  $numNodes = $nodeList->length;
-
-  for( $i = 0; $i < $numNodes; $i++ ) {
-    $currNode = $nodeList->item( $i );
-
-    $nameNode = $currNode->firstChild;
-    if( $nameNode != NULL ) {
-      $authors[] = $nameNode->textContent;
-
-      error_log( "Found author: " . $nameNode->textContent );
+    // Fetch alternatives for each author
+    foreach ($authors as $viafID => $author) {
+        $alternatives = viaf_lookup_author_alternatives($viafID);
+        if ($alternatives != false) {
+            $authors_list = array_merge($authors_list, $alternatives);
+        }
     }
-  }
 
-  return $authors;
+    return $authors_list;
 }
+
+/**
+ * Lookup an author name and find all responses with their VIAF-ID
+ * @param string $author Name of author to search for
+ * @return array Associative array of form viafID => mainHeading, false on error
+ */
+function viaf_lookup_authors_list($author) {
+    if (is_numeric($author))
+        return false;
+
+    $authors = array();
+
+    $domDocument = _viaf_openSearch($author);
+    if ($domDocument != false) {
+        $viaf_namespace = "http://viaf.org/viaf/terms#";
+
+        // Create a XPath-Wrapper around it
+        $domXPath = new DOMXPath($domDocument);
+        $domXPath->registerNamespace("ns", $viaf_namespace);
+        // Fetch all relevant nodes
+        $viafClusters = $domXPath->query("//ns:VIAFCluster");
+        $numClusters = $viafClusters->length;
+
+        // Iterate through nodes and create the response
+        for ($i = 0; $i < $numClusters; $i++) {
+            $currCluster = $viafClusters->item($i);
+
+            // Find the first main-heading as well as the viaf-ID
+            $mainHeading = $domXPath->query("ns:mainHeadings/ns:data/ns:text", $currCluster)->item(0)->textContent;
+            $viafID = $domXPath->query("ns:viafID", $currCluster)->item(0)->textContent;
+
+            $authors[$viafID] = $mainHeading;
+        }
+
+        // Finally return the list of possible authors
+        return $authors;
+    }
+
+    return false;
+}
+
+/**
+ * Lookup alternative spellings for a single author using its viafID
+ * @param int $viafID VIAF-ID of author to search for
+ * @return array List of alternative author spellings, false on error
+ */
+function viaf_lookup_author_alternatives($viafID) {
+    $viafID = intval($viafID);
+    if ($viafID <= 0)
+        return false;
+
+    $alternatives = array();
+
+    $domDocument = _viaf_details($viafID);
+    if ($domDocument != false) {
+        $viaf_namespace = "http://viaf.org/viaf/terms#";
+
+        // Create a XPath-Wrapper around it
+        $domXPath = new DOMXPath($domDocument);
+        $domXPath->registerNamespace("ns", $viaf_namespace);
+        // Fetch all relevant nodes
+        $nodeList = $domXPath->query("//ns:datafield[@tag=400]/ns:subfield[@code='a'] | //ns:datafield[@tag=100]/ns:subfield[@code='a']");
+        $numNodes = $nodeList->length;
+
+        // Iterate through nodes and create the response
+        for ($i = 0; $i < $numNodes; $i++) {
+            $currNode = $nodeList->item($i);
+
+            $alternatives[] = $currNode->textContent;
+        }
+
+        return array_unique($alternatives);
+    }
+
+    return false;
+}
+/**
+ * PUBLIC INTERFACE FUNCTIONS END
+ * Note: do not call any functions directly below here
+ */
+
+/**
+ * INTERNAL FUNCTIONS START
+ */
+
+/**
+ * Queries the VIAF openSearch webservice API for a given author name
+ * This function also implements the caching
+ * NOTE: This is only a raw request function and should not be used by external modules
+ * 
+ * @param string $author Author to search for
+ * @return DOMDocument Response from service (as VIAF XML), falses on error
+ */
+function _viaf_openSearch($author) {
+    $domDocument = new DOMDocument();
+
+    // Pre-Configured variables for finding & feeding the service
+    $searchField = variable_get('viaf_lookup_search_field', "local.personalNames");
+    $openSearch_request = "http://viaf.org/viaf/search?sortKeys=holdingscount&maximumRecords=" . variable_get('viaf_lookup_maximum_records', 5) . "&httpAccept=application/xml&query=" . $searchField . "+all+%22" . urlencode($author) . "%22";
+    $response = _viaf_webservice_request($author, $openSearch_request);
+
+    // Try to load the response as XML
+    if (!empty($response) && $domDocument->loadXML($response)) {
+        return $domDocument;
+    }
+
+    return false;
+}
+
+/**
+ * Queries the VIAF webservice API for the details of a given author
+ * @param int $viafID VIAF-ID of author to search for
+ * @return DOMDocument Response from service (as VIAF XML), falses on error
+ */
+function _viaf_details($viafID) {
+    $viafID = intval($viafID);
+    if ($viafID <= 0)
+        return false;
+
+    // Pre-Configured variables for finding & feeding the service
+    $details_request = "http://viaf.org/viaf/" . $viafID . "/viaf.xml";
+    $response = _viaf_webservice_request($viafID, $details_request);
+
+    $domDocument = new DOMDocument();
+    // Try to load the response as XML
+    if (!empty($response) && $domDocument->loadXML($response)) {
+        return $domDocument;
+    }
+
+    return false;
+}
+
+/**
+ * Run a webservice request (using caching)
+ * @param string $term Arbitrary string, used for caching
+ * @param string $url web-service address
+ * @return string Web-service response 
+ */
+function _viaf_webservice_request($term, $url) {
+    $response = "";
+
+    // Check for a cached result
+    $cache_result = cache_get($term, 'cache_viaf');
+    if ($cache_result != false) {
+        $response = $cache_result->data;
+    } else {
+        $response = file_get_contents($url);
+
+        // Cache the result
+        cache_set($term, $response, 'cache_viaf', time() + variable_get('viaf_lookup_cache_time', 1) * 86400 );
+    }
+
+    return $response;
+}
+
+/**
+ * INTERNAL FUNCTIONS END
+ */
+
+/**
+ * DRUPAL HOOK FUNCTIONS START
+ */
+
+/**
+ * Implements caching functionality
+ * @return array 
+ */
+function viaf_lookup_flush_caches() {
+    return array('cache_viaf');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function viaf_lookup_menu() {
+    $items = array();
+
+    $items['admin/config/search/viaf_lookup'] = array(
+        'title' => 'VIAF Lookup',
+        'description' => 'Configuration for the VIAF Lookup module',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('viaf_lookup_config_form'),
+        'access arguments' => array('access administration pages'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    return $items;
+}
+
+/**
+ * Form function, called by drupal_get_form() 
+ * in viaf_lookup_menu().
+ */
+function viaf_lookup_config_form($form, &$form_state) {
+    $form['viaf_lookup_cache_time'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Time to cache (days)'),
+        '#default_value' => variable_get('viaf_lookup_cache_time', 1),
+        '#size' => 3,
+        '#maxlength' => 3,
+        '#description' => t('The maximum age of a cached entry.'),
+        '#required' => TRUE,
+    );
+
+    $form['viaf_lookup_maximum_records'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Maximum number of records'),
+        '#default_value' => variable_get('viaf_lookup_maximum_records', 5),
+        '#size' => 2,
+        '#maxlength' => 2,
+        '#description' => t('The maximum number of records to parse from the VIAF webservice (changing requires clearing the cache).'),
+        '#required' => TRUE,
+    );
+
+    $form['viaf_lookup_search_field'] = array(
+        '#type' => 'select',
+        '#title' => t('Metadata-Field of VIAF to search in'),
+        '#default_value' => variable_get('viaf_lookup_search_field', "local.personalNames"),
+        '#options' => array( 'cql.any' => 'All fields', 'local.names' => 'Names', 'local.personalNames' => 'Personal Names', 'local.corporateNames' => 'Corporate names', 'local.mainHeadingEl' => 'Preferred Names' ),
+        '#description' => t('The metadata-field which VIAF uses to find the author-string (changing requires clearing the cache).'),
+        '#required' => TRUE,
+    );
+
+    return system_settings_form($form);
+}
+
+/**
+ * Implements validation from the Form API.
+ * 
+ * @param $form
+ *   A structured array containing the elements and properties of the form.
+ * @param $form_state
+ *   An array that stores information about the form's current state 
+ *   during processing.
+ */
+function viaf_lookup_config_form_validate($form, &$form_state) {
+    $max_num = $form_state['values']['viaf_lookup_cache_time'];
+    if (!is_numeric($max_num)) {
+        form_set_error('viaf_lookup_cache_time', t('You must enter an integer for the maximum age.'));
+    } else if ($max_num <= 0) {
+        form_set_error('viaf_lookup_cache_time', t('Maximum age must be positive.'));
+    }
+
+    $max_num = $form_state['values']['viaf_lookup_maximum_records'];
+    if (!is_numeric($max_num)) {
+        form_set_error('viaf_lookup_maximum_records', t('You must enter an integer for the number of maximum records.'));
+    } else if ($max_num <= 0) {
+        form_set_error('viaf_lookup_maximum_records', t('Maximum number of records must be positive.'));
+    }
+}
+
+/**
+ * DRUPAL HOOK FUNCTIONS START
+ */
