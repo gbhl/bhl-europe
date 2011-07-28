@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="demo:pageSdep"
+xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Service Deployment Object for Page"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2011-06-17T11:59:19.696Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2011-07-26T14:38:08.140Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2011-06-17T11:59:19.696Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
+<foxml:xmlContent>
+<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+<audit:record ID="AUDREC1">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:31:45.371Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:32:01.620Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC3">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:33:08.787Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC4">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:34:21.814Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC5">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:35:12.515Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC6">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:35:36.593Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC7">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:42:51.521Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC8">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T13:45:53.050Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC9">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2011-07-26T14:38:08.140Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+</audit:auditTrail>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2011-06-17T11:59:19.696Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="400">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Service Deployment Object for Page</dc:title>
+  <dc:identifier>demo:pageSdep</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="" CREATED="2011-06-20T12:50:12.970Z" MIMETYPE="application/rdf+xml" SIZE="544">
+<foxml:xmlContent>
+<rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/demo:pageSdep">
+    <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"></fedora-model:hasModel>
+    <fedora-model:isDeploymentOf rdf:resource="info:fedora/demo:pageSdef"></fedora-model:isDeploymentOf>
+    <fedora-model:isContractorOf rdf:resource="info:fedora/ilives:pageCModel"></fedora-model:isContractorOf>
+  </rdf:Description>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="METHODMAP" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="METHODMAP.0" LABEL="" CREATED="2011-07-05T13:50:52.885Z" MIMETYPE="text/xml" SIZE="933">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="N/A">
+  <fmm:Method operationName="pdf" wsdlMsgName="pdfRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="medium" parmName="definition" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DatastreamInputParm parmName="JP2" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationName="jpeg" wsdlMsgName="jpegRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="3" parmName="level" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DatastreamInputParm parmName="JP2" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+</fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.1" LABEL="" CREATED="2011-07-26T13:31:45.371Z" MIMETYPE="text/xml" SIZE="933">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="N/A">
+  <fmm:Method operationName="pdf" wsdlMsgName="pdfRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="medium" parmName="resolution" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DatastreamInputParm parmName="JP2" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationName="jpeg" wsdlMsgName="jpegRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="3" parmName="level" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DatastreamInputParm parmName="JP2" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+</fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.2" LABEL="" CREATED="2011-07-26T13:34:21.814Z" MIMETYPE="text/xml" SIZE="945">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="N/A">
+  <fmm:Method operationName="pdf" wsdlMsgName="pdfRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="medium" parmName="resolution" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DefaultInputParm defaultValue="$pid" parmName="pid" passBy="VALUE" required="true"></fmm:DefaultInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationName="jpeg" wsdlMsgName="jpegRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="3" parmName="level" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DatastreamInputParm parmName="JP2" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+</fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.3" LABEL="" CREATED="2011-07-26T13:35:12.515Z" MIMETYPE="text/xml" SIZE="945">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="N/A">
+  <fmm:Method operationName="pdf" wsdlMsgName="pdfRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="medium" parmName="resolution" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DefaultInputParm defaultValue="$pid" parmName="PID" passBy="VALUE" required="true"></fmm:DefaultInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationName="jpeg" wsdlMsgName="jpegRequest" wsdlMsgOutput="response">
+    <fmm:UserInputParm defaultValue="3" parmName="level" passBy="VALUE" required="false"></fmm:UserInputParm>
+    <fmm:DatastreamInputParm parmName="JP2" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="N/A"></fmm:MethodReturnType>
+  </fmm:Method>
+</fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DSINPUTSPEC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DSINPUTSPEC.0" LABEL="" CREATED="2011-06-21T12:16:20.582Z" MIMETYPE="text/xml" SIZE="408">
+<foxml:xmlContent>
+<fbs:DSInputSpec xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec" label="Datastream Input Specification for Dual Resolution Image Implementation">
+  <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="JP2">
+    <fbs:DSInputLabel>N/A</fbs:DSInputLabel>
+    <fbs:DSMIME>N/A</fbs:DSMIME>
+    <fbs:DSInputInstruction>N/A</fbs:DSInputInstruction>
+  </fbs:DSInput>
+</fbs:DSInputSpec>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="WSDL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="WSDL.0" LABEL="" CREATED="2011-07-05T13:14:35.314Z" MIMETYPE="text/xml" SIZE="2721">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="definition" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/pagepdf?source=(JP2)&amp;definition=(definition)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="WSDL.1" LABEL="" CREATED="2011-07-26T13:32:01.620Z" MIMETYPE="text/xml" SIZE="2721">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="resolution" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/pagepdf?source=(JP2)&amp;definition=(definition)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="WSDL.2" LABEL="" CREATED="2011-07-26T13:33:08.787Z" MIMETYPE="text/xml" SIZE="2707">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="resolution" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/page/(PID)?resolution=(resolution)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="WSDL.3" LABEL="" CREATED="2011-07-26T13:35:36.593Z" MIMETYPE="text/xml" SIZE="2707">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="resolution" type="this:inputType"></wsdl:part>
+    <wsdl:part name="PID" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/page/(PID)?resolution=(resolution)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="WSDL.4" LABEL="" CREATED="2011-07-26T13:42:51.521Z" MIMETYPE="text/xml" SIZE="2706">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="resolution" type="this:inputType"></wsdl:part>
+    <wsdl:part name="PID" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/pdf/(PID)?resolution=(resolution)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="WSDL.5" LABEL="" CREATED="2011-07-26T13:45:53.050Z" MIMETYPE="text/xml" SIZE="2711">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="resolution" type="this:inputType"></wsdl:part>
+    <wsdl:part name="PID" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/page/(PID)/pdf?resolution=(resolution)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="WSDL.6" LABEL="" CREATED="2011-07-26T14:38:08.140Z" MIMETYPE="text/xml" SIZE="2711">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:thisNamespace">
+      <xsd:simpleType name="inputType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="jpegRequest">
+    <wsdl:part name="level" type="this:inputType"></wsdl:part>
+    <wsdl:part name="JP2" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pdfRequest">
+    <wsdl:part name="resolution" type="this:inputType"></wsdl:part>
+    <wsdl:part name="PID" type="this:inputType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="response">
+    <wsdl:part name="response" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="portType">
+    <wsdl:operation name="pdf">
+      <wsdl:input message="this:pdfRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <wsdl:input message="this:jpegRequest"></wsdl:input>
+      <wsdl:output message="this:response"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="service">
+    <wsdl:port binding="this:binding" name="port">
+      <http:address location="LOCAL"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="binding" type="this:portType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="pdf">
+      <http:operation location="http://local.fedora.server/bookformatter/page/pdf/(PID)?resolution=(resolution)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="jpeg">
+      <http:operation location="http://local.fedora.server/adore-djatoka/resolver?url_ver=Z39.88-2004&amp;rft_id=(JP2)&amp;svc_id=info:lanl-repo/svc/getRegion&amp;svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&amp;svc.format=image/jpeg&amp;svc.level=(level)&amp;svc.rotate=0"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="N/A"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>

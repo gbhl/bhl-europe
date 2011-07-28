@@ -1,0 +1,30 @@
+The Book Formatter project corresponds to issue 3.2.3 "Download item in different qualities" and 3.2.4 "Download item in different file formats"
+These services have been already deployed in the NHM server, please see
+(For a book)
+http://bhl-alexandria.nhm.ac.uk/fedora/objects/demo%3Adarwin/methods
+(For a page)
+http://bhl-alexandria.nhm.ac.uk/fedora/objects/demo%3Adarwin-001/methods
+http://bhl-alexandria.nhm.ac.uk/fedora/objects/demo%3Adarwin-***/methods
+
+Precondition:
+1. Fedora Commons
+2. adore Djatoka
+
+Functionality:
+1. Convert data stream JP2 of page objects to lossy JPEGs via Djatoka
+2. Convert lossy JPEGs to PDFs via iText
+3. Pack multiple ranges of lossy JPEGs into a ZIP
+4. Concatenate multiple ranges of PDFs into a single PDF
+
+Not yet implemented:
+1. b/w images
+2. Different Encoding of OCR files
+
+Installation:
+1. Check out bookformatter under access folder;
+2. build the project with Maven: mvn package;
+3. Copy bookformatter.war (/target) to the Tomcat from Fedora Commons;
+4. Ingest four service objects (/src/main/resources) into Fedora, namly, demo:pageSdef, demo:pageSdep, demo:bookSdef and demo:bookSdep;
+5. Add extra relation hasService to the Content Model objects, ilives:pageCModel, ilives:bookCModel.
+
+N.B. There are two sets of complet implementation, using servlet directly and using Jersey. Decision will be made later...
