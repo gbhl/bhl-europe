@@ -1,6 +1,0 @@
-<?php
-function col_lookup_schema() {
-    $schema['cache_col'] = drupal_get_schema_unprocessed('system', 'cache');
-    
-    return $schema;
-}

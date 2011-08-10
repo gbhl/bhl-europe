@@ -1,0 +1,141 @@
+<?php
+// START TEST CODE
+//var_dump( names_lookup_common_name_pesi( "Eurasian Spoonbill" ) );
+// END TEST CODE
+
+function names_lookup_common_name( $common_name ) {
+    $col_names = names_lookup_common_name_col($common_name);
+    $pesi_names = names_lookup_common_name_pesi($common_name);
+    
+    // If both requests failed, return false
+    if( $col_names == false && $pesi_names == false ) {
+        return false;
+    }
+    
+    // Override result for flawless merging
+    if( $col_names == false ) $col_names = array();
+    if( $pesi_names == false ) $pesi_names = array();
+    
+    return array_unique( array_merge($col_names, $pesi_names) );
+}
+
+/**
+ * Query the CoL webservice for a common-name and return all accepted names for it
+ * @param string $common_name Common name to look for
+ * @return array Array containing a list of accepted names, false on error
+ */
+function names_lookup_common_name_col( $common_name ) {
+    // Replace any "*" by "%" since CoL's webservice can handle both and this optimizes the caching
+    $common_name = str_replace( "*", "%", $common_name );
+    $accepted_names = array();
+    
+    $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&name=";
+    
+    // Send the request to the webserver
+    $response = _names_lookup_webservice_request( $common_name, $col_base . urlencode($common_name) );
+    // Check for a valid response
+    if( $response != "" ) {
+        $response_data = unserialize( $response );
+        
+        // Check if we received something senseful
+        if( $response_data === false ) {
+            return;
+        }
+        
+        // Get the results
+        if( !isset( $response_data["results"] ) ) return false;
+        $results = $response_data["results"];
+        
+        // Cycle through results
+        foreach( $results as $result ) {
+            // Check if we have a common name
+            if( $result["name_status"] != "common name" ) continue;
+            // Check for accepted name
+            if( !isset($result["accepted_name"]) || !is_array($result["accepted_name"]) ) continue;
+            
+            // Finally get the accepted names
+            $accepted_names[] = $result["accepted_name"]["name"];
+        }
+        
+        // Return any found accepted names
+        return $accepted_names;
+    }
+    
+    return false;
+}
+
+/**
+ * Query the PESI Soap Webservice for a given common name and return the scientific ones
+ * @param string $common_name Common name to look for
+ * @return array  Array containing a list of scientific names, false on error
+ */
+function names_lookup_common_name_pesi( $common_name ) {
+    // Replace any "*" by "%" since PESI's webservice can only handle those
+    $common_name = str_replace( "*", "%", $common_name );
+    $common_names = array();
+    
+    // Check for the soap extension
+    if( !extension_loaded("soap") ) {
+        return false;
+    }
+    
+    $response = _names_lookup_soap_cache("getPESIRecordsByVernacular", $common_name);
+    
+    // Check if request went okay
+    if( !is_array($response) ) {
+        return false;
+    }
+    
+    // Parse the result
+    foreach( $response as $entry ) {
+        $common_names[] = $entry->scientificname;
+    }
+    
+    return $common_names;
+}
+
+/**
+ * Run a webservice request (using caching)
+ * @param string $term Arbitrary string, used for caching
+ * @param string $url web-service address
+ * @return string Web-service response 
+ */
+function _names_lookup_webservice_request($term, $url) {
+    $response = "";
+
+    // Check for a cached result
+    $cache_result = cache_get($term, 'cache_names_col');
+    if ($cache_result != false) {
+        $response = $cache_result->data;
+    } else {
+        $response = file_get_contents($url);
+
+        // Cache the result
+        cache_set($term, $response, 'cache_names_col', time() + 86400 );
+    }
+
+    return $response;
+}
+
+function _names_lookup_soap_cache( $function_name, $parameter ) {
+    $response = null;
+    $cache_name = $function_name . " / " . $parameter;
+
+    // Check for a cached result
+    $cache_result = cache_get($cache_name, 'cache_names_pesi');
+    if ($cache_result != false) {
+        $response = unserialize($cache_result->data);
+    } else {
+        try {
+            $soapClient = new SoapClient( "http://www.eu-nomen.eu/portal/soap.php?wsdl=1" );
+            $response = $soapClient->$function_name( $parameter );
+
+            // Cache the result
+            cache_set($cache_name, serialize($response), 'cache_names_pesi', time() + 86400 );
+        }
+        catch( Exception $e ) {
+        }
+    }
+
+    return $response;
+}
