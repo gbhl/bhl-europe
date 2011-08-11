@@ -44,8 +44,9 @@ function viaf_lookup_authors_simple($author) {
  * @return array Associative array of form viafID => mainHeading, false on error
  */
 function viaf_lookup_authors_list($author) {
-    if (is_numeric($author))
+    if (is_numeric($author)) {
         return false;
+    }
 
     $authors = array();
 
@@ -85,8 +86,9 @@ function viaf_lookup_authors_list($author) {
  */
 function viaf_lookup_author_alternatives($viafID) {
     $viafID = intval($viafID);
-    if ($viafID <= 0)
+    if ($viafID <= 0) {
         return false;
+    }
 
     $alternatives = array();
 
@@ -131,14 +133,13 @@ function viaf_lookup_author_alternatives($viafID) {
  * @return DOMDocument Response from service (as VIAF XML), falses on error
  */
 function _viaf_openSearch($author) {
-    $domDocument = new DOMDocument();
-
     // Pre-Configured variables for finding & feeding the service
     $searchField = variable_get('viaf_lookup_search_field', "local.personalNames");
     $openSearch_request = "http://viaf.org/viaf/search?sortKeys=holdingscount&maximumRecords=" . variable_get('viaf_lookup_maximum_records', 5) . "&httpAccept=application/xml&query=" . $searchField . "+all+%22" . urlencode($author) . "%22";
     $response = _viaf_webservice_request($author, $openSearch_request);
 
     // Try to load the response as XML
+    $domDocument = new DOMDocument();
     if (!empty($response) && $domDocument->loadXML($response)) {
         return $domDocument;
     }
@@ -160,8 +161,8 @@ function _viaf_details($viafID) {
     $details_request = "http://viaf.org/viaf/" . $viafID . "/viaf.xml";
     $response = _viaf_webservice_request($viafID, $details_request);
 
-    $domDocument = new DOMDocument();
     // Try to load the response as XML
+    $domDocument = new DOMDocument();
     if (!empty($response) && $domDocument->loadXML($response)) {
         return $domDocument;
     }
@@ -182,11 +183,17 @@ function _viaf_webservice_request($term, $url) {
     $cache_result = cache_get($term, 'cache_viaf');
     if ($cache_result != false) {
         $response = $cache_result->data;
-    } else {
+    }
+    else {
         $response = file_get_contents($url);
-
-        // Cache the result
-        cache_set($term, $response, 'cache_viaf', time() + variable_get('viaf_lookup_cache_time', 1) * 86400 );
+        // Check for a valid response
+        if( $response !== false ) {
+            // Cache the result
+            cache_set($term, $response, 'cache_viaf', time() + variable_get('viaf_lookup_cache_time', 1) * 86400 );
+        }
+        else {
+            $response = "";
+        }
     }
 
     return $response;
@@ -264,7 +271,7 @@ function viaf_lookup_config_form($form, &$form_state) {
 }
 
 /**
- * Implements validation from the Form API.
+ * Implements validation provided by the Form API.
  * 
  * @param $form
  *   A structured array containing the elements and properties of the form.
@@ -289,5 +296,5 @@ function viaf_lookup_config_form_validate($form, &$form_state) {
 }
 
 /**
- * DRUPAL HOOK FUNCTIONS START
+ * DRUPAL HOOK FUNCTIONS END
  */
