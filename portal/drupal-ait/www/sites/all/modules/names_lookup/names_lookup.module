@@ -136,9 +136,15 @@ function _names_lookup_webservice_request($term, $url) {
     return $response;
 }
 
+/**
+ * Run a soap request (against PESI for now) and cache its result
+ * @param string $function_name Name of SOAP function to call
+ * @param mixed $parameter Parameter to send to function
+ * @return mixed Response of function call (null on error)
+ */
 function _names_lookup_soap_cache( $function_name, $parameter ) {
     $response = null;
-    $cache_name = $function_name . " / " . $parameter;
+    $cache_name = serialize( array( "function" => $function_name, "parameter" => $parameter ) );
 
     // Check for a cached result
     $cache_result = cache_get($cache_name, 'cache_names_pesi');
