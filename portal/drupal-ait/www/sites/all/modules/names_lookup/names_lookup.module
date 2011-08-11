@@ -3,6 +3,11 @@
 //var_dump( names_lookup_common_name_pesi( "Eurasian Spoonbill" ) );
 // END TEST CODE
 
+/**
+ * Query CoL and PESI webservice for scientific name for a given common name
+ * @param string $common_name Common name to search for (wildcards - * or % - allowed)
+ * @return array List of scientific names for a given common name, false on error
+ */
 function names_lookup_common_name( $common_name ) {
     $col_names = names_lookup_common_name_col($common_name);
     $pesi_names = names_lookup_common_name_pesi($common_name);
@@ -16,12 +21,26 @@ function names_lookup_common_name( $common_name ) {
     if( $col_names == false ) $col_names = array();
     if( $pesi_names == false ) $pesi_names = array();
     
-    return array_unique( array_merge($col_names, $pesi_names) );
+    $common_names = array_merge($col_names, $pesi_names);
+    
+    // Now remove duplicates
+    foreach( $common_names as $key => $name_data ) {
+        foreach( $common_names as $sub_key => $sub_data ) {
+            if( $key == $sub_key ) continue;
+            
+            if( $sub_data["name"] == $name_data["name"] && isset($common_names[$key]) ) {
+                $common_names[$key]["source"] = array_unique( array_merge( $common_names[$key]["source"], $sub_data["source"] ) );
+                unset( $common_names[$sub_key] );
+            }
+        }
+    }
+    
+    return $common_names;
 }
 
 /**
- * Query the CoL webservice for a common-name and return all accepted names for it
- * @param string $common_name Common name to look for
+ * Query the CoL webservice for accepted name for a given common-name
+ * @param string $common_name Common name to search for (wildcards - * or % - allowed)
  * @return array Array containing a list of accepted names, false on error
  */
 function names_lookup_common_name_col( $common_name ) {
@@ -54,7 +73,7 @@ function names_lookup_common_name_col( $common_name ) {
             if( !isset($result["accepted_name"]) || !is_array($result["accepted_name"]) ) continue;
             
             // Finally get the accepted names
-            $accepted_names[] = $result["accepted_name"]["name"];
+            $accepted_names[] = array( "name" => $result["accepted_name"]["name"], "source" => array( $result["accepted_name"]["source_database"] . " (" . $result["accepted_name"]["url"] . ")" ) );
         }
         
         // Return any found accepted names
@@ -65,8 +84,8 @@ function names_lookup_common_name_col( $common_name ) {
 }
 
 /**
- * Query the PESI Soap Webservice for a given common name and return the scientific ones
- * @param string $common_name Common name to look for
+ * Query the PESI Soap Webservice for scientific name for a given common name
+ * @param string $common_name Common name to search for (wildcards - * or % - allowed)
  * @return array  Array containing a list of scientific names, false on error
  */
 function names_lookup_common_name_pesi( $common_name ) {
@@ -88,7 +107,7 @@ function names_lookup_common_name_pesi( $common_name ) {
     
     // Parse the result
     foreach( $response as $entry ) {
-        $common_names[] = $entry->scientificname;
+        $common_names[] = array( "name" => $entry->scientificname, "source" => explode( ' | ', $entry->citation) );
     }
     
     return $common_names;
@@ -111,7 +130,7 @@ function _names_lookup_webservice_request($term, $url) {
         $response = file_get_contents($url);
 
         // Cache the result
-        cache_set($term, $response, 'cache_names_col', time() + 86400 );
+        cache_set($term, $response, 'cache_names_col', time() + 86400 * variable_get('names_lookup_cache_time', 1) );
     }
 
     return $response;
@@ -131,7 +150,7 @@ function _names_lookup_soap_cache( $function_name, $parameter ) {
             $response = $soapClient->$function_name( $parameter );
 
             // Cache the result
-            cache_set($cache_name, serialize($response), 'cache_names_pesi', time() + 86400 );
+            cache_set($cache_name, serialize($response), 'cache_names_pesi', time() + 86400 * variable_get('names_lookup_cache_time', 1) );
         }
         catch( Exception $e ) {
         }
@@ -139,3 +158,74 @@ function _names_lookup_soap_cache( $function_name, $parameter ) {
 
     return $response;
 }
+
+
+/**
+ * DRUPAL HOOK FUNCTIONS START
+ */
+
+/**
+ * Implements caching functionality
+ * @return array 
+ */
+function names_lookup_flush_caches() {
+    return array('cache_names_col', 'cache_names_pesi');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function names_lookup_menu() {
+    $items = array();
+
+    $items['admin/config/search/names_lookup'] = array(
+        'title' => 'Names Lookup',
+        'description' => 'Configuration for the Names Lookup module',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('names_lookup_config_form'),
+        'access arguments' => array('access administration pages'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    return $items;
+}
+
+/**
+ * Form function, called by drupal_get_form() 
+ * in names_lookup_menu().
+ */
+function names_lookup_config_form($form, &$form_state) {
+    $form['names_lookup_cache_time'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Time to cache (days)'),
+        '#default_value' => variable_get('names_lookup_cache_time', 1),
+        '#size' => 3,
+        '#maxlength' => 3,
+        '#description' => t('The maximum age of a cached entry.'),
+        '#required' => TRUE,
+    );
+
+    return system_settings_form($form);
+}
+
+/**
+ * Implements validation provided by the Form API.
+ * 
+ * @param $form
+ *   A structured array containing the elements and properties of the form.
+ * @param $form_state
+ *   An array that stores information about the form's current state 
+ *   during processing.
+ */
+function names_lookup_config_form_validate($form, &$form_state) {
+    $max_num = $form_state['values']['names_lookup_cache_time'];
+    if (!is_numeric($max_num)) {
+        form_set_error('names_lookup_cache_time', t('You must enter an integer for the maximum age.'));
+    } else if ($max_num <= 0) {
+        form_set_error('names_lookup_cache_time', t('Maximum age must be positive.'));
+    }
+}
+
+/**
+ * DRUPAL HOOK FUNCTIONS END
+ */
