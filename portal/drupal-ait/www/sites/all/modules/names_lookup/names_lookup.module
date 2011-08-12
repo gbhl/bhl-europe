@@ -1,7 +1,15 @@
 <?php
-// START TEST CODE
-//var_dump( names_lookup_common_name_pesi( "Eurasian Spoonbill" ) );
+// TEST CODE BELOW (for running in e.g. Drupal Debug)
+//$start = microtime( true );
+//var_dump( names_lookup_common_name( "Eurasian Spoonbill" ) );
+//$end = microtime( true );
+//
+//echo "Timing (s): " . ($end - $start);
 // END TEST CODE
+
+/**
+ * PUBLIC INTERFACE FUNCTIONS START
+ */
 
 /**
  * Query CoL and PESI webservice for scientific name for a given common name
@@ -114,6 +122,15 @@ function names_lookup_common_name_pesi( $common_name ) {
 }
 
 /**
+ * PUBLIC INTERFACE FUNCTIONS END
+ * Note: do not call any functions below here
+ */
+
+/**
+ * INTERNAL FUNCTIONS START
+ */
+
+/**
  * Run a webservice request (using caching)
  * @param string $term Arbitrary string, used for caching
  * @param string $url web-service address
@@ -167,6 +184,10 @@ function _names_lookup_soap_cache( $function_name, $parameter ) {
 
 
 /**
+ * INTERNAL FUNCTIONS END
+ */
+
+/**
  * DRUPAL HOOK FUNCTIONS START
  */
 
@@ -211,6 +232,15 @@ function names_lookup_config_form($form, &$form_state) {
         '#required' => TRUE,
     );
 
+    $form['names_lookup_sample_query'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Enter a common name to sample query CoL and PESI for'),
+        '#default_value' => "",
+        '#size' => 15,
+        '#description' => t('This field allows to test the Names module by issuing a sample query. The result will be displayed as error message upon saving the configuration (names are separated by semi-colons).'),
+        '#required' => FALSE,
+    );
+
     return system_settings_form($form);
 }
 
@@ -229,6 +259,22 @@ function names_lookup_config_form_validate($form, &$form_state) {
         form_set_error('names_lookup_cache_time', t('You must enter an integer for the maximum age.'));
     } else if ($max_num <= 0) {
         form_set_error('names_lookup_cache_time', t('Maximum age must be positive.'));
+    }
+
+    $sample_name = trim( $form_state['values']['names_lookup_sample_query'] );
+    if( !empty($sample_name) ) {
+        $scientificnames = names_lookup_common_name($sample_name);
+        if( $scientificnames === false ) {
+            form_set_error('names_lookup_sample_query', t('Unable to call the webservice.'));
+        }
+        else {
+            $names = array();
+            foreach( $scientificnames as $scientificname ) {
+                $names[] = $scientificname['name'];
+            }
+            
+            form_set_error('names_lookup_sample_query', t('Result: ' . join( '; ', $names ) ));
+        }
     }
 }
 
