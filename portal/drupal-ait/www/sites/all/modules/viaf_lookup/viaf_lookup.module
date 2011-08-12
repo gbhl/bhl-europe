@@ -117,7 +117,7 @@ function viaf_lookup_author_alternatives($viafID) {
 }
 /**
  * PUBLIC INTERFACE FUNCTIONS END
- * Note: do not call any functions directly below here
+ * Note: do not call any functions below here
  */
 
 /**
@@ -267,6 +267,15 @@ function viaf_lookup_config_form($form, &$form_state) {
         '#required' => TRUE,
     );
 
+    $form['viaf_lookup_sample_query'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Enter a name to sample query VIAF for'),
+        '#default_value' => "",
+        '#size' => 15,
+        '#description' => t('This field allows to test the VIAF module by issuing a sample query. The result will be displayed as error message upon saving the configuration (names are separated by semi-colons).'),
+        '#required' => FALSE,
+    );
+
     return system_settings_form($form);
 }
 
@@ -292,6 +301,17 @@ function viaf_lookup_config_form_validate($form, &$form_state) {
         form_set_error('viaf_lookup_maximum_records', t('You must enter an integer for the number of maximum records.'));
     } else if ($max_num <= 0) {
         form_set_error('viaf_lookup_maximum_records', t('Maximum number of records must be positive.'));
+    }
+    
+    $sample_name = trim( $form_state['values']['viaf_lookup_sample_query'] );
+    if( !empty($sample_name) ) {
+        $authors = viaf_lookup_authors_simple($sample_name);
+        if( $authors === false ) {
+            form_set_error('viaf_lookup_sample_query', t('Unable to call the webservice.'));
+        }
+        else {
+            form_set_error('viaf_lookup_sample_query', t('Result: ' . join( '; ', $authors ) ));
+        }
     }
 }
 
