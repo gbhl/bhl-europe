@@ -16,7 +16,7 @@
          version="1.2" is Solr's version number for the schema syntax and semantics.  It should
          not normally be changed by applications.
          1.0: multiValued attribute did not exist, all fields are multiValued by nature
-         1.1: multiValued attribute introduced, false by default 
+         1.1: multiValued attribute introduced, false by default
          1.2: omitTermFreqAndPositions attribute introduced, true by default except for text fields.
        -->
   <types>
@@ -237,7 +237,7 @@
       </analyzer>
     </fieldType>
 
-    <!-- Edge N gram type - for example for matching against queries with results 
+    <!-- Edge N gram type - for example for matching against queries with results
         KeywordTokenizer leaves input string intact as a single term.
         see: http://www.lucidimagination.com/blog/2009/09/08/auto-suggest-from-popular-queries-using-edgengrams/
    -->
@@ -253,17 +253,17 @@
      </analyzer>
     </fieldType>
    <!--  Setup simple analysis for spell checking -->
-    
+
    <fieldType name="textSpell" class="solr.TextField" positionIncrementGap="100">
      <analyzer>
        <tokenizer class="solr.StandardTokenizerFactory" />
        <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt"/>
        <filter class="solr.LengthFilterFactory" min="4" max="20" />
-       <filter class="solr.LowerCaseFilterFactory" /> 
-       <filter class="solr.RemoveDuplicatesTokenFilterFactory" /> 
+       <filter class="solr.LowerCaseFilterFactory" />
+       <filter class="solr.RemoveDuplicatesTokenFilterFactory" />
      </analyzer>
    </fieldType>
-  
+
     <!-- This is an example of using the KeywordTokenizer along
          With various TokenFilterFactories to produce a sortable field
          that does not include some properties of the source text
@@ -367,7 +367,7 @@
 
 	<!-- This field is used to build the spellchecker index -->
    <field name="spell" type="textSpell" indexed="true" stored="true" multiValued="true"/>
-  
+
   <!-- copyField commands copy one field to another at the time a document
         is added to the index.  It's used either to index the same field differently,
         or to add multiple fields to the same field for easier/faster searching.  -->

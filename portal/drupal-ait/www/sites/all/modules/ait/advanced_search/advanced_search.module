@@ -37,6 +37,13 @@ function advanced_search_menu() {
     'title' => 'Advanced Search 3',
     'type' => MENU_NORMAL_ITEM,
   );
+  $items['advanced_search_4'] = array(
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('advanced_search_form_4'),
+      'access arguments' => array('access content'),
+      'title' => 'Exact Search',
+      'type' => MENU_NORMAL_ITEM,
+  );
   $items['advanced_search_view'] = array(
     'page callback' => 'advanced_search_view',
     'access arguments' => array('access content'),
@@ -430,6 +437,48 @@ function advanced_search_form_3_submit($form, &$form_state) {
   $form_state['redirect'] = 'advanced_search_view/' . $query_string;
 }
 
+/**
+* advanced search 4 search form
+*/
+function advanced_search_form_4($form, &$form_state) {
+
+	$form['query'] = array(
+    '#type' => 'textfield',
+    '#title' => t('enter query string:'),
+    '#maxlength'=> 1024,
+	);
+	$form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'search',
+	);
+	$form['caption'] = array(
+    '#type' => 'markup',
+    '#markup' => 
+	t('<p>Exact search for the phrase entered.</p>'),
+	);
+
+	return $form;
+}
+
+
+/**
+ * advanced search 4 search form validation
+ */
+function advanced_search_form_4_validate($form, &$form_state) {
+
+	if ($form['query']['#value'] == '') form_set_error('query',t('please enter search terms'));
+}
+
+
+/**
+ * advanced search 4 search form submit handler
+ */
+function advanced_search_form_4_submit($form, &$form_state) {
+
+	$query_string = $form_state['values']['query'];
+	$form_state['redirect'] = 'advanced_search_view/' . 'all_exact:"' . $query_string . '"';
+}
+
 
 /**
  * function for viewing (and retrieving) search results
@@ -461,6 +510,7 @@ function advanced_search_view($dummy) {
       'start' => pager_find_page() * $rows,
       'hl.fl' => '*',
     );
+    
     if(isset($_SESSION) && array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] != '') {
       switch($_SESSION['advanced_search_sort'][1]) {
       case 1:
@@ -471,8 +521,10 @@ function advanced_search_view($dummy) {
         break;
       }
     }
+    
     $response = $solr->search($query_string, $opts);
     $results = advanced_search_process_response($response,$rows);
+    
   } catch(Exception $ex) {
     $qs = preg_replace("/{.*}/", "", $query_string);
     $apacheMsg = $ex->getMessage();
@@ -1135,6 +1187,15 @@ function advanced_search_searching($set = null) {
   static $v = null;
   if($set !== null) $v = $set;
   return $v;
+}
+
+/** 
+ * Set or get the is_exact_search flag
+ */
+function advanced_search_is_exact_search($set = null) {
+	static $is_exact_search = false;
+	if($set !== null) $is_exact_search = $set;
+	return $is_exact_search;
 }
 
 //TODO function advanced_search_facet_view() {

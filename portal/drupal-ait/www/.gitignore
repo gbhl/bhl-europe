@@ -9,3 +9,6 @@ sites/*/private
 .settings/
 .buildpath
 .project
+
+# Ignore other
+info.php
