@@ -108,6 +108,7 @@
 .advanced-search-grid-result div.grid-text {
   position: absolute;
   top: 105px;
+  width: 170px;
 }
 
 .advanced-search-grid-result div div.grid-title {
