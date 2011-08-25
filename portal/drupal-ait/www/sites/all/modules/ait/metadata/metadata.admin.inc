@@ -154,19 +154,42 @@ function metadata_user_settings($form, &$form_state) {
     '#type' => 'select',
     '#title' => t('Node Stylesheet'),
     '#options' => metadata_get_stylesheets(),
-    '#default_value' => metadata_variable_get_user('metadata_stylesheet'), // TODO set standard value (language specific)
+    '#default_value' => metadata_variable_get_user('metadata_stylesheet'),
   );
   $form['view_properties']['metadata_resultlist_stylesheet'] = array(
     '#type' => 'select',
     '#title' => t('Resultlist Stylesheet'),
     '#options' => metadata_get_list_stylesheets(),
-    '#default_value' => metadata_variable_get_user('metadata_result_list_stylesheet'), // TODO set standard value (language specific)
+    '#default_value' => metadata_variable_get_user('metadata_result_list_stylesheet'),
   );
   $form['view_properties']['metadata_resulttable_stylesheet'] = array(
     '#type' => 'select',
     '#title' => t('Resulttable Stylesheet'),
     '#options' => metadata_get_table_stylesheets(),
-    '#default_value' => metadata_variable_get_user('metadata_result_table_stylesheet'), // TODO set standard value (language specific)
+    '#default_value' => metadata_variable_get_user('metadata_result_table_stylesheet'),
+  );
+  $form['download_properties'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Download properties'),
+  );
+  $form['download_properties']['metadata_download_stylesheet'] = array(
+    '#type' => 'select',
+    '#title' => t('Download Stylesheet'),
+    '#options' => metadata_get_download_stylesheets(),
+    '#default_value' => metadata_variable_get_user('metadata_download_stylesheet'),
+  );
+  $form['download_properties']['upload_file'] = array(
+    '#type' => 'file',
+    '#title' => t('Upload your own stylesheet: '),
+  );
+  $form['download_properties']['upload_button'] = array(
+    '#type' => 'button',
+    '#value' => t('Upload'),
+    '#submit' => array('metadata_user_settings_xsl_upload'),
+    '#executes_submit_callback' => TRUE,
+  );
+  $form['#attributes'] = array(
+    'enctype' => "multipart/form-data",
   );
   $form['submit'] = array(
     '#type' => 'submit',
@@ -181,12 +204,41 @@ function metadata_user_settings($form, &$form_state) {
  * metadata user settings submit handler
  */
 function metadata_user_settings_submit($form, &$form_state) {
-
   // saving variables
   metadata_variable_set_user('metadata_stylesheet',             $form_state['values']['metadata_stylesheet']);
   metadata_variable_set_user('metadata_result_list_stylesheet', $form_state['values']['metadata_resultlist_stylesheet']);
-
+  metadata_variable_set_user('metadata_download_stylesheet',    $form_state['values']['metadata_download_stylesheet']);
   //unsetting $_SESSION variables, so that the saved values take effect immediatly
   unset($_SESSION['metadata_stylesheet']);
   unset($_SESSION['metadata_result_list_stylesheet']);
+  unset($_SESSION['metadata_download_stylesheet']);
+}
+
+
+function metadata_user_settings_xsl_upload($form, &$form_state) {
+  global $user;
+
+  $fileName = @$_FILES['files']['name']['upload_file'];
+  if($fileName != "") {
+    $filePath = $_FILES['files']['tmp_name']['upload_file'];
+    if ($fileContent = file_get_contents($filePath)) {
+
+      try {
+        $xsl = new DOMDocument();
+        if (!$xsl->loadXML($fileContent)) die('compiling stylesheet failed.');
+        $xslt = new XSLTProcessor();
+        $xslt->importStylesheet($xsl);
+      } catch (PDOException $e) {
+        die('compiling stylesheet failed.');
+      }
+
+      if (isset($user->data['metadata_download_stylesheets'])) $stylesheets = $user->data['metadata_download_stylesheets'];
+      else $stylesheets = array();
+      $stylesheets[$fileName] = $fileContent;
+      metadata_variable_set_user('metadata_download_stylesheets', $stylesheets);
+    }
+    else {
+      drupal_set_message(t("File import:"), "error");
+    }
+  }
 }

@@ -4,8 +4,10 @@
  * first line must be header.
  *
  * @param string $odsFileName 
- * @param mixed $table either the name of the table of the number (starting at 1)
+ * @param mixed $table either the name (case sensitive) of the table of the number (starting at 1)
  * @param int $startLine first line number to be returned (starting at 1)
+ * @param bool $skipEmptyRows 
+ * @return array of array[string => string] e.g. $table[42]["Column XY"]
  */
 function metadata_read_ods_table($odsFileName, $table = 1, $startLine = 2, $skipEmptyRows = true) {
   $zip = new ZipArchive();

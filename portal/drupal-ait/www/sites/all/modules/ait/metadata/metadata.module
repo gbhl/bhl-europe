@@ -4,6 +4,8 @@ define('DEFAULT_metadata_stylesheet','Default.xsl');
 define('DEFAULT_metadata_result_list_stylesheet','Highlighted.xsl');
 define('DEFAULT_metadata_result_table_stylesheet','Highlighted.xsl');
 define('DEFAULT_metadata_schema','schema.ods');
+define('DEFAULT_metadata_download_stylesheet','Test.xsl');
+define('DEFAULT_metadata_download_stylesheets','(serialized)' . serialize(array()));
 
 
 /**
@@ -139,11 +141,14 @@ function metadata_node_view($node, $view_mode, $langcode) {
       }
       $html = metadata_clear_ns_nodes($html_doc->saveXML());
 
-      $node->content['body'] = array(
-        '#markup' => $html,
-        '#weight' => 10,
-      );
-
+      $node->content['body'] = array (
+        '#type' => 'container',
+        '#attributes' => array(
+          'class' => array('container-inline'),
+      ));
+      $node->content['body']['panel'] = drupal_get_form('metadata_panel_form', $node->nid);
+      $node->content['body']['record']['#markup'] = $html;
+      
       break;
 
     case 'short':
@@ -157,6 +162,7 @@ function metadata_node_view($node, $view_mode, $langcode) {
   }
 }
 
+
 /**
  * Remove all xmlns nodes from xml text.
  */
@@ -165,22 +171,81 @@ function metadata_clear_ns_nodes($xmlstr) {
 }
 
 
-function metadata_panel_form($form, &$form_state) {
+function metadata_panel_form($form, &$form_state, $nid) {
 
-  $form['panel'] = array(
+  $form['funcbox'] = array(
     '#type' => 'container',
     '#attributes' => array(
       'class' => array('container-inline'),
   ));
-  $form['panel']['stylesheet'] = array (
+  $form['funcbox']['display'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array('container-inline'),
+  ));
+  $form['funcbox']['display']['view_stylesheet'] = array (
     '#type' => 'select',
-    '#title' => t('stylesheet for viewing'),
-    '#submit' => array('metadata_panel_form_submit'),
+    '#title' => t('Display format:'),
     '#options' => metadata_get_stylesheets(),
     '#default_value' => metadata_variable_get_session('metadata_stylesheet'),
   );
+  $form['funcbox']['display']['update_button'] = array (
+    '#type' => 'button',
+    '#value' => t('update'),
+    '#submit' => array('metadata_panel_form_update'),
+    '#executes_submit_callback' => TRUE,
+  );
+  $form['funcbox']['download'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array('container-inline'),
+  ));
+  $form['funcbox']['download']['download_select'] = array (
+    '#type' => 'select',
+    '#title' => t('Download record as:'),
+    '#options' => metadata_get_download_stylesheets(),
+    '#default_value' => metadata_variable_get_session('metadata_download_stylesheet'),
+  );
+  $form['funcbox']['download']['download_button'] = array (
+    '#type' => 'button',
+    '#submit' => array('metadata_node_download'),
+    '#executes_submit_callback' => TRUE,
+    '#value' => t('Download'),
+  );
+  $form['nid'] = array (
+    '#type' => 'value',
+    '#value' => $nid,
+  );
 
   return $form;
+}
+
+
+function metadata_panel_form_update($form, &$form_state) {
+   $_SESSION['metadata_stylesheet'] = $form_state['values']['view_stylesheet'];
+}
+
+
+function metadata_node_download($form, &$form_state) {
+  $_SESSION['metadata_download_stylesheet'] = $form_state['values']['download_select'];
+  $node = node_load($form['nid']['#value']);
+
+  try {
+    $xsl = metadata_get_download_stylesheet(metadata_variable_get_session('metadata_download_stylesheet'));
+    $xslt = new XSLTProcessor();
+    $xslt->importStylesheet($xsl);
+  } catch (PDOException $e) {
+    die('metadata_node_view - Loading XSLT failed: ' . $e->getMessage());
+  }
+
+  $dom = new DOMDocument();
+  $dom->loadXML($node->body['und'][0]['value']);
+  $xml_string = $xslt->transformToXML($dom);
+  
+  header('Content-Type: application/xml');
+  header('Content-Disposition: attachment; filename=download.xml'); // TODO change filename?
+  echo $xml_string;
+  exit;
 }
 
 
@@ -251,6 +316,38 @@ function metadata_get_table_stylesheets() {
   return drupal_map_assoc($files);
 }
 
+
+function metadata_get_download_stylesheets() {
+  $files = array();
+  $handle = opendir(dirname(__FILE__) . '/download_xsl/node');
+  while (false !==  ($file = readdir($handle))) {
+    if ($file != '.' and $file != '..') {
+      $files[] = $file;
+  }}
+  $user_stylesheets = array_keys(metadata_variable_get_session('metadata_download_stylesheets'));
+  $stylesheets = array_merge($files, $user_stylesheets);
+  return drupal_map_assoc($stylesheets);
+}
+
+
+function metadata_get_download_stylesheet($name) {
+  #drupal_set_message( 'opening stylesheet: ' . $name);
+  $xsl = new DOMDocument();
+  $file_path = dirname(__FILE__) . '/download_xsl/node/' . $name;
+  if (is_file($file_path)) {
+    $xsl->load($file_path);
+  }
+  else {
+    $user_stylesheets = metadata_variable_get_session('metadata_download_stylesheets');
+    if (isset($user_stylesheets[$name])) {
+      $xsl->loadXML($user_stylesheets[$name]);
+    }
+    else {
+      drupal_set_message('Could not find stylesheet', 'ERROR');
+    }
+  }
+  return $xsl;
+}
 
 /** 
  * implements hook_apachesolr_document_handlers
@@ -623,7 +720,6 @@ function metadata_variable_unset_user($name, $account = null) {
   unset($account->data[$name]);
   user_save($account);
 }
-
 
 /*
  * function for deleting nodes from database
