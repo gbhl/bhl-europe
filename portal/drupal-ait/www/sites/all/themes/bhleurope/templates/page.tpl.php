@@ -251,41 +251,14 @@
 <script type="text/javascript">
 $().ready(function() {  
     $('.grid-title').jTruncate({  
-        length: 70,
+        length: 50,  
         minTrail: 0,  
         moreText: "",  
         lessText: "",  
         ellipsisText: "...",  
         moreAni: "fast",  
         lessAni: 2000  
-    });
-    $('.grid-creator').jTruncate({
-        length: 50,
-        minTrail: 0,
-        moreText: "",
-        lessText: "",
-        ellipsisText: "...",
-        moreAni: "fast",
-        lessAni: 2000
-    });
-    $('.grid-date').jTruncate({
-        length: 50,
-        minTrail: 0,
-        moreText: "",
-        lessText: "",
-        ellipsisText: "...",
-        moreAni: "fast",
-        lessAni: 2000
-    });
-    $('.grid-provider').jTruncate({
-        length: 50,
-        minTrail: 0,
-        moreText: "",
-        lessText: "",
-        ellipsisText: "...",
-        moreAni: "fast",
-        lessAni: 2000
-    });
+    });  
     $('li.occurrence a').jTruncate({
         length: 50,
         minTrail: 20,
