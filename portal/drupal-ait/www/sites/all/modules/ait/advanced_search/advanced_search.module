@@ -531,6 +531,9 @@ function advanced_search_view($dummy) {
         break;
       }
     }
+    # replacing date ranges
+    $query_string = preg_replace('/(\d\d\d\d)\s*-\s*(\d\d\d\d)/', '[$1 TO $2]', $query_string);
+
     $response = $solr->search($query_string, $opts);
     $results = advanced_search_process_response($response,$rows);
   } catch(Exception $ex) {
