@@ -816,11 +816,6 @@ h1.title {
   border: none;
 }
 
-#block-block-3 {
-  text-align: center;
-  padding-right: 60px;
-}
-
 .block-simplenews h3 {
   color: #97bf0d;
   font-size: 1.5em;
@@ -832,17 +827,6 @@ h1.title {
   width: 200px;
   padding: 1px 10px;
   background-color: #97bf0d;
-}
-
-#block-block-2 {
-  position: absolute;
-  width: 400px;
-  margin: 60px 0 0 200px;
-}
-#block-block-5 {
-  position: absolute;
-  width: 600px;
-  margin: 40px 0 0 0;
 }
 
 table.udalosti {
