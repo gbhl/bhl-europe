@@ -1248,7 +1248,7 @@ function advanced_search_block_view($block = '') {
             if($freq > 0) {
               $escterm = addcslashes($term , '"');
               $href = '?q=advanced_search_view/' . urlencode(
-                advanced_search_searching() . " AND $facet:\"$escterm\"");
+                "(" . advanced_search_searching() . ") AND $facet:\"$escterm\"");
               $content .= "<li class='occurrence'><a href='$href'>$term</a> ($freq)</li>";
             }
           }
