@@ -4,7 +4,7 @@ define('DEFAULT_metadata_stylesheet','Default.xsl');
 define('DEFAULT_metadata_result_list_stylesheet','Highlighted.xsl');
 define('DEFAULT_metadata_result_table_stylesheet','Highlighted.xsl');
 define('DEFAULT_metadata_schema','schema.ods');
-define('DEFAULT_metadata_download_stylesheet','Test.xsl');
+define('DEFAULT_metadata_download_stylesheet','bibtex.xsl');
 define('DEFAULT_metadata_download_stylesheets','(serialized)' . serialize(array()));
 
 
@@ -242,8 +242,8 @@ function metadata_node_download($form, &$form_state) {
   $dom->loadXML($node->body['und'][0]['value']);
   $xml_string = $xslt->transformToXML($dom);
   
-  header('Content-Type: application/xml');
-  header('Content-Disposition: attachment; filename=download.xml'); // TODO change filename?
+  header('Content-Type: application/text');
+  header('Content-Disposition: attachment; filename=download'); // TODO change filename?
   echo $xml_string;
   exit;
 }

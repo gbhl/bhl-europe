@@ -510,13 +510,24 @@ function advanced_search_view($dummy) {
       'start' => pager_find_page() * $rows,
       'hl.fl' => '*',
     );
+    $prevsort = "";
+    if(isset($_SESSION) && array_key_exists('advanced_search_sort_prev', $_SESSION) && $_SESSION['advanced_search_sort_prev'][0] != '') {
+      switch($_SESSION['advanced_search_sort_prev'][1]) {
+      case 1:
+        $prevsort = ", " . $_SESSION['advanced_search_sort_prev'][0] . " asc";
+        break;
+      case -1:
+        $prevsort = ", " . $_SESSION['advanced_search_sort_prev'][0] . " desc";
+        break;
+      }
+    }
     if(isset($_SESSION) && array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] != '') {
       switch($_SESSION['advanced_search_sort'][1]) {
       case 1:
-        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " asc";
+        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " asc" . $prevsort;
         break;
       case -1:
-        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " desc";
+        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " desc" . $prevsort;
         break;
       }
     }
@@ -601,7 +612,7 @@ function advanced_search_panel_sort_results($form, &$form_state, $query_string) 
       '#id' => "advanced_search_sort_btn_$fld",
     );
     $order = "";
-    if(array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] == $fld) {
+    if(isset($_SESSION) && array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] == $fld) {
       switch($_SESSION['advanced_search_sort'][1]) {
       case 1:
         $order = "↑";
@@ -1154,6 +1165,7 @@ function advanced_search_sort($form, &$form_state) {
     }
   } else {
     $_SESSION['advanced_search_sort'] = array($fld, 1);
+    $_SESSION['advanced_search_sort_prev'] = $prev;
   }
 }
 
