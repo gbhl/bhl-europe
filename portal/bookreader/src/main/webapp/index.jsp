@@ -4,7 +4,7 @@
 <head>
     <title>BHL Europe </title>
     <% 
-        String basePath = "http://bhl-mandible.nhm.ac.uk:8080";
+        String basePath = "http://localhost:8080";
     %>
     <link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReader.css"/>
     <!-- Custom CSS overrides -->
@@ -38,7 +38,7 @@ function getPageCount(pid){
 	query += 'where ($object <fedora-model:hasModel> <fedora:ilives:pageCModel> and $object <fedora-rels-ext:isMemberOf>';
 	query += ' <fedora:' + pid + '>) order by $object';
 
-	var riUrl = 'http://bhl-alexandria.nhm.ac.uk/fedora/risearch';
+	var riUrl = '<%= basePath %>/fedora/risearch';
 	var options = {
 			  type: 'tuples',
 			  lang: 'itql',

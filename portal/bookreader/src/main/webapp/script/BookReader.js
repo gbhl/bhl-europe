@@ -5278,8 +5278,19 @@ BookReader.prototype.buildDownloadDiv = function(jDownloadDiv)
                         '<img src="' + this.imagesBaseURL + 'JPEG.png"/>',
 				'</fieldset>',
             '</fieldset>',
+			'<fieldset>',
+				'<label for="format">Quality:</label>',
+					'<fieldset class="quality_selection">',
+							'<input type="radio" name="quality" value="1"/>',
+							'<label for="quality">High</label>',
+							'<input type="radio" name="quality" value="2"  checked="checked"s/>',
+							'<label for="quality">Medium</label>',
+							'<input type="radio" name="quality" value="3"/>',
+							'<label for="quality">Low</label>',
+					'</fieldset>',
+				'</fieldset>',
             '<fieldset class="center">',
-                '<button type="button" onclick="$.fn.colorbox.close(); br.startDownload($(\'input:radio[name=format]:checked\').val(), br.downloadPages, $(\'#whole_book\').is(\':checked\'));">Download</button>',
+                '<button type="button" onclick="$.fn.colorbox.close(); br.startDownload($(\'input:radio[name=format]:checked\').val(), $(\'input:radio[name=quality]:checked\').val() ,br.downloadPages, $(\'#whole_book\').is(\':checked\'));">Download</button>',
             '</fieldset>',
         '</form>'].join('\n'));
 	
@@ -5522,7 +5533,7 @@ BookReader.prototype.updateDownloadDialog = function(){
 	this.buildDownloadDiv($('#BRdownload'));
 }
 
-BookReader.prototype.startDownload = function(format, ranges, whole) 
+BookReader.prototype.startDownload = function(format, quality, ranges, whole) 
 {
 	var method = '';
 	switch(parseInt(format)){
@@ -5537,6 +5548,19 @@ BookReader.prototype.startDownload = function(format, ranges, whole)
 			break;
 	}
 	
+	var resolution = '';
+	switch(parseInt(quality)){
+		case 1:
+			resolution = 'high';
+			break;
+		case 2:
+			resolution = 'medium';
+			break;
+		case 3:
+			resolution = 'low';
+			break;
+	}
+	
 	var url = this.basepath + '/fedora/objects/' + br.pid + '/methods/demo:bookSdef/';
 	url += method;
 	url += '?ranges=';
@@ -5546,6 +5570,11 @@ BookReader.prototype.startDownload = function(format, ranges, whole)
 	} else if (!whole && ranges.length == 0){
 		return;
 	}
+	
+	url += '&resolution=';
+	if (format != 'ocr'){
+		url += resolution;
+	} 
 
 	window.open(url);
 }
