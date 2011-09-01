@@ -1,0 +1,87 @@
+/* 
+    Document   : metadata
+    Created on : May 5, 2011, 3:57:36 PM
+    Author     : vmplanet
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.metadata-view {
+  border-collapse: separate;
+}
+
+.metadata-view * p {
+  margin-bottom: 0px;
+  font-size: 10pt;
+  line-height: 1;
+}
+
+.metadata-view td {
+  background-color: white;
+}
+
+.metadata-view-data-cell {
+  background-color: white;
+  padding: 3px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.metadata-view-picture-cell {
+  height:1px;
+  width:1px;
+  vertical-align: top;
+}
+
+.metadata-view-picture-cell img {
+  height: 200px;
+  width: 140px;
+}
+
+.metadata-view-display {
+  border-right: dotted 1px;
+  font-weight: bold;
+  font-size: 10pt;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  line-height: 1;
+  vertical-align: text-top !important;
+}
+
+.metadata-view-text {
+  vertical-align: text-top !important;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  line-height: 1;
+}
+
+.metadata-view-hidden-line {
+  display: none;
+}
+
+.metadata-view-line-1 {
+  height:0px;
+  border-right: dotted 1px;
+  border-bottom: dotted 1px;
+}
+.metadata-view-line-2 {
+  height:0px;
+  border-bottom: dotted 1px;
+}
+.metadata-view-line-3 {
+  height:0px;
+  border-right: dotted 1px;
+}
+.metadata-view-line-4 {
+  height:0px;
+}
+
+strong {
+  background-color: yellow;
+}
+
