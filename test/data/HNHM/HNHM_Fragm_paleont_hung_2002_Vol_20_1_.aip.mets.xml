@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: .aip, Collection: AIT111 Development, ID: 10706/a0dr7ss4"
+  OBJID="BHLE10706:a0dr7ss4"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-3">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>First record of fan agamid lizard from the Pleistocene of Hungary</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Meszoely, Ch. A. M.</mods:namePart>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Gasparik, M.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>aut</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Szabó, J.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>hu</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Budapest</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Hungarian Natural History Museum</mods:publisher>
+                  <mods:dateIssued>2002</mods:dateIssued>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:internetMediaType>application/pdf</mods:internetMediaType>
+                  <mods:extent>p. 1-2</mods:extent>
+                </mods:physicalDescription>
+                <mods:abstract xmlns:mods="http://www.loc.gov/mods/v3">In 1998 a small fragment of an agamid lizard mandible was discovered among the reptile bones from the locality of Tokod. It is the first agamid remain from the Pleistocene of Hungary. The presence of this taxon indicates a warm interglacial climate and raises the possibility that the age of the locality is Eemian, i.e. older than previously thought.</mods:abstract>
+                <mods:note xmlns:mods="http://www.loc.gov/mods/v3">Full text in English, abstract in English</mods:note>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Agamidae</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Late Pleistocene</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Eemian</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>vertebrates</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>interglacial</mods:topic>
+                </mods:subject>
+                <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3"/>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordCreationDate>110502</mods:recordCreationDate>
+                  <mods:recordChangeDate>20110502000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>HNHM3272</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>First record of fan agamid lizard from the Pleistocene of Hungary</dc:title>
+              <dc:creator> 
+Meszoely, Ch. A. M. 
+</dc:creator>
+              <dc:creator> 
+Gasparik, M. 
+aut 
+</dc:creator>
+              <dc:creator>  
+Szabó, J. 
+edt 
+</dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Budapest : Hungarian Natural History Museum</dc:publisher>
+              <dc:date>2002.</dc:date>
+              <dc:language/>
+              <dc:format>application/pdf</dc:format>
+              <dc:description>In 1998 a small fragment of an agamid lizard mandible was discovered among the reptile bones from the locality of Tokod. It is the first agamid remain from the Pleistocene of Hungary. The presence of this taxon indicates a warm interglacial climate and raises the possibility that the age of the locality is Eemian, i.e. older than previously thought.</dc:description>
+              <dc:description>Full text in English, abstract in English</dc:description>
+              <dc:description>In 1998 a small fragment of an agamid lizard mandible was discovered among the reptile bones from the locality of Tokod. It is the first agamid remain from the Pleistocene of Hungary. The presence of this taxon indicates a warm interglacial climate and raises the possibility that the age of the locality is Eemian, i.e. older than previously thought.</dc:description>
+              <dc:subject>Agamidae</dc:subject>
+              <dc:subject>Late Pleistocene</dc:subject>
+              <dc:subject>Eemian</dc:subject>
+              <dc:subject>vertebrates</dc:subject>
+              <dc:subject>interglacial</dc:subject>
+              <dc:identifier/>
+              <dc:relation>HNHM</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="30ac956c82180a6ee2088b0729781cdfee439545"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="902028">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-1.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="651d5a32b09db504d085e99a0127be18fc111b37"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1130680">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-2.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.3">
+        <file CHECKSUM="bdc778539158c45d73715b56574e8a4881b8c3b4"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.3.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="2889">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/Fragm_paleont_hung_2002_Vol_20_1.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.1">
+        <file ID="TAXA.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="559">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-1.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.2">
+        <file ID="TAXA.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="701">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-2.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="4187">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-1.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="4514">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-2.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7450">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-1.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7452">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1_pdf-2.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3857">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/Fragm_paleont_hung_2002_Vol_20_1.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="9206">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Fragm_paleont_hung/2002_Vol_20/1/.aip/HNHM_Fragm_paleont_hung_2002_Vol_20_1_.aip.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>
