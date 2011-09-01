@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 30_2 (1990)</dc:title>
+   <dc:creator>Ahmed  A. M., Ali  Rafaat M., Bolhar-Nordenkampf  Harald R., Bonora  Angelo, Bruni  Alessandro, Czeczuga  Bazyli, Dall'Olio  Giuseppe, Dave  Yash S., Härtel  Otto, Kabar  Kudrek, Kadioglu  Asim, Kinzel  Helmut, Olech  Maria, Özbay  Orhan, Seth  Neeru, Sieghardt  Helmuth, Silberbauer-Gottsberger  Ilse, Strobl  Anna, Teppner  Herwig, Thomas  Vinoth, Tosi  Barbara, Türk  Roman, Vijayaraghavan  M.R.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Vinoth Thomas, Yash S. Dave: Mode of Secretion in the Colleters of Alstonia scholaris (Apocynaceae).   209-  212. Ilse Silberbauer-Gottsberger: Pollination and Evolution in Palms.   213-  233. Herwig Teppner: Recensio.   234. Bazyli Czeczuga, Maria Olech: Investigations on Carotinoids in Lichens. XXV. Studies of Carotinoids in Lichens from Spitsbergen.   235-  245. Herwig Teppner: Recensio.   245-  246. Anna Strobl, Roman Türk: Untersuchungen zum Chlorophyllgehalt einiger subalpiner Flechtenarten.   247-  264. Angelo Bonora, Barbara Tosi, Giuseppe Dall'Olio, Alessandro Bruni: Occurence of Polyphenolical Implications of Quaternary Alkaloids in Ranunculus serbicus (Ranunculaceae).   265-  272. A. M. Ahmed, Rafaat M. Ali: Changes in Photosynthesis and Respiration of Hyoscyamus muticus and Datura stramonium in Response to Salinization.   273-  281. Herwig Teppner: Recensio.   281-  282. Asim Kadioglu, Orhan Özbay: Polyphenol Oxidase and Related Isoenzymes in Crown-Gall Tumors of Pea.   283-  290. Kudrek Kabar: Comparison of Kinetin and Gibberellic Acid Effects on Seed Germination under Saline Conditions.   291-  298. M.R. Vijayaraghavan, Neeru Seth: Comparison of Kinetin and Gibberellic Acid Effects on Seed Germination under Saline Conditions.   299-  303. Otto Härtel: Recensio.   304. Helmuth Sieghardt: Wirkung von Haldenstaub auf die optischen Eigenschaften der Blätter von Erysimum sylvestre.   305-  311. Herwig Teppner: Recensio.   312. Harald R. Bolhar-Nordenkampf, Helmut Kinzel: Stress, Eutrophy and Related Topics.   313-  330. Herwig Teppner: Recensiones.   331-  336</dc:description>
+   <dc:date>1990</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30196.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30196.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30196</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

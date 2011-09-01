@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Acalyptris Meyrick: revision of the platani and staticis groups in Europe and the Mediterranean (Lepidoptera: Nepticulidae)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Taxonomy</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>phylogeny</dc:subject>
+   <dc:subject>larval morphology</dc:subject>
+   <dc:subject>pupal morphology</dc:subject>
+   <dc:subject>hostplants</dc:subject>
+   <dc:subject>Anacardiaceae</dc:subject>
+   <dc:subject>Platanaceae</dc:subject>
+   <dc:subject>Loranthaceae</dc:subject>
+   <dc:subject>Plumbaginaceae</dc:subject>
+   <dc:subject>CO1</dc:subject>
+   <dc:subject>DNA-barcodes</dc:subject>
+   <dc:subject>Palaearctic</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Eulophidae</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:description>Trifurcula (Trifurcula) pallidella (Duponchel, 1843) is recorded for the first time from Spain, Andalusia. Previous records were misidentifications. Male genitalia are illustrated and a revised distribution map is provided. A few records of Trifurcula (Levarchama) species from the Annotated catalogue published in 2004 are corrected.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227769</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 48</dcterms:extent>
+   <dcterms:isPartOf>Acalyptris Meyrick: revision of the platani and staticis groups in Europe and the Mediterranean (Lepidoptera: Nepticulidae) (URN:ISSN:11755326) (Volume 1436)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227769.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50445</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227769</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

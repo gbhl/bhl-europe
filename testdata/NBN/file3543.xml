@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nemertesia tropica spec. nov. from Indonesian waters near Bali. Description of the new species and a review of the genus Nemertesia Lamouroux, 1812 (Leptothecata, Hydrozoa, Cnidaria)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Ramil F.</dc:creator>
+   <dc:creator>Vervoort W.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Cnidaria</dc:subject>
+   <dc:subject>Hydrozoa</dc:subject>
+   <dc:subject>Leptolida</dc:subject>
+   <dc:subject>Leptothecata</dc:subject>
+   <dc:subject>Plumulariidae</dc:subject>
+   <dc:subject>Nemertesia</dc:subject>
+   <dc:subject>Indonesian waters</dc:subject>
+   <dc:description>A new species of the leptolid family Plumulariidae, Nemertesia tropica spec. nov. is described. The various species of Nemertesia are listed and their synonymy and characters discussed. Allocation in Nemertesia of some species previously described in Plumularia by Fraser (1938-1948) necessitated the introduction of two new names, viz. Nemertesia californica nom. nov. for Plumularia mutabilis Fraser, 1948 and Nemertesia mexicana nom. nov. for Plumularia reversa Fraser, 1938.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209642</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 113-158 -</dcterms:extent>
+   <dcterms:isPartOf>Nemertesia tropica spec. nov. from Indonesian waters near Bali. Description of the new species and a review of the genus Nemertesia Lamouroux, 1812 (Leptothecata, Hydrozoa, Cnidaria) (URN:ISSN:00240672) (Volume 80-1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209642.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41235</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209642</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

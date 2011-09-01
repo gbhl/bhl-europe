@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carinthia II 154_74 (1964)</dc:title>
+   <dc:creator>Aichinger  Erwin, Anonym , Buschmann  Adolfine, Fritz  Adolf, Hölzel  Emil, Hölzel  Herbert, Meixner  Heinz, Mihelcic  Franz, Moll  Gerhard, Mottl  Maria, Müller  Franz, Reithofer-Jandl  Erika, Schweiger  Harald, Turnowsky  Fritz, Warch  Adolf, Wruss  Wilhelm, Wutte  Anton</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonym: Gratulationen und Dank     5. Heinz Meixner: Neue Mineralfunde in den österreichischen OstalpenXIX.     7-   21. Maria Mottl: Dorcaterium aus dem unteren Sarmat von St. Stefan im Lavanttal    22-   24. Anton Wutte: Der eiszeitliche Stausee des Rückersdorfer Berglandes und seine südliche Umgebung (Mit einer Kartenskizze)    24-   35. Adolf Warch: Ein geologischer Bericht aus den Gailtaler Alpen    35-   39. Adolf Fritz: Pollenanalytische Untersuchung des Bergkiefern-Hochmoores im Autertal,Kärnten    40-   59. Franz Müller: Aus demneuen Botanischen Garten, Klagenfurt: V.Das Moor (3.Folge)    60-   62. Adolfine Buschmann: Ein Fund von Volvariella surrecta in Kärnten (mit Tafel I)    63-   67. Erika Reithofer-Jandl: Zur Ätiologie der Gasblasenkrankheit der Fische von Warmbad Villach    68-   93. Harald Schweiger: Metallina pseudolampros n.sp., eine neue hochalpine Laufkäferart aus den Südalpen (Col.,Carabidae)    94-   96. Herbert Hölzel: Die Netzflügler Kärntens    97-  156. Franz Mihelcic: Hornmilbe (Oribatidea) einiger Steppenböden Osttirols   157-  163. Wilhelm Wruss: Der Rötelfalke in Kärnten   164-  167. Gerhard Moll: Ornithologische Beobachtungen in Kärnten (24.7. Bis 21.8.1963)   168-  174. Anonym: Bericht des Naturwissenschaftlichen Vereines für Kärnten über die Vereinsjahre 1962 und 1963   177-  180. Heinz Meixner: Jahresbericht 1964 der Fachgruppe für Mineralogie und Geologie   180-  181. Emil Hölzel: Bericht der Fachgruppe für Entomologie für das Jahr 1963   181. Franz Müller: Bericht der Fachgruppe "Freunde des Botanischen Gartens" für das Jahr 1963   182-  183. Erwin Aichinger, Fritz Turnowsky: Bericht der Fachgruppe für Botanik 1963   183</dc:description>
+   <dc:date>1964</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26089.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26089.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26089</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

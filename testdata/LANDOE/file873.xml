@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 17 (1902)</dc:title>
+   <dc:creator>Anonymus , Hackl  E., Lorenz von Libernau  Ludwig, Melichar  Leopold, Rebel  Hans, Seler  Eduard, Steindachner  Franz, Wagner  Rudolph, Zahlbruckner  Alexander</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Steindachner: Notizen.     1-   58. Leopold Melichar: Monographie der Acanaloniiden und und Flatiden (Homoptera). Fortsetzung. (Tafel I-IX)     1-  253. Anonymus: Personalnachrichten.    58-   59. Hans Rebel: Euxoa (Agrotis) Canariensis, eine neue Noctuide von den canarischen Inseln.    59-   60. E. Hackl: Neue Gräser aus Mexico   254-  256. Alexander Zahlbruckner: Schedae ad "Kryptogamas exsiccatas" editae a Museo Palatino Vindobonensi.   257-  281. Rudolph Wagner: Beiträge zur Kenntnis der Anemone ranunculoides L. und der A. lipsiensis Beck.   282-  300. Ludwig Lorenz von Libernau: Zur Ornis Neuseelands. (Tafel XII)   301-  322. Eduard Seler: Das Pulquegefäss der Bilimek'schen Sammlung im k.k. naturhistorischen Hofmuseum. (Tafel X-XI)   323-  349. Anonymus: Verzeichniss der wissenschaftlichen Corporationen und Redactionen, mit welchen wir im Schriftentausche stehen. (Seiten VII- XII) . Anonymus: Verzeichniss der Pränumeranten auf den XVI. Band der Annalen. (Seiten V-VI)</dc:description>
+   <dc:date>1902</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26552.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26552.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26552</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

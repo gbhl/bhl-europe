@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Late Cretaceous-Early Palaeogene echinoderms and the K/T boundary in the southeast Netherlands and northeast Belgium — Part 5: Asteroids</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Jagt J.W.M.</dc:creator>
+   <dc:subject>42.72 ; 38.22</dc:subject>
+   <dc:subject>Echinodermata</dc:subject>
+   <dc:subject>Asteroidea</dc:subject>
+   <dc:subject>Late Cretaceous</dc:subject>
+   <dc:subject>Early Palaeogene</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>stratigraphy</dc:subject>
+   <dc:description>All Campanian, Maastrichtian and Danian asteroids known to date from the extended type area of the Maastrichtian Stage, are described and illustrated. The geographic and stratigraphic distribution are documented. Eighteen genera (one of them new) and at least sixty-four species (eight of them new) are listed: Astropecten? sp. nov., astropectinid sp. nov., Coulonia? sp. nov., Lophidiaster? gr. punctatus/ postornatus, L. pygmaeus Spencer, 1913, Aldebarania sp. nov., Astropectinidae indet., ctenodiscid? indet., benthopectinid sp. 1 (? spp.), benthopectinid sp. 2, Metopaster alexiae sp. nov., M. aff. carinatus Brünnich Nielsen, 1943, M. continuus sp. nov., M. decipiens Spencer, 1913, M. kagstrupensis Brünnich Nielsen, 1943, M. lisannae sp. nov., M. miriamae sp. nov., M. aff. planus (Brünnich Nielsen, 1943), M. praetumidus Schulz &amp; Weitschat, 1975, M. spencerii Brünnich Nielsen, 1943, M. gr. tumidus Spencer, 1913, M. uncatus (Forbes, 1848), M. undulatus Spencer, 1913, M. sp. 1, M. sp. 2, M. sp. 3, M. sp. 4 (aff. elegans Gale, 1987a), Parametopaster? sp., Haccourtaster aemstelensis gen. et sp. nov., Recurvaster antemammillatus sp. nov., R. mammillatus (Gabb, 1876), R. gr. radiatus (Spencer, 1913), R. spiniger sp. nov., Nymphaster alseni (Schulz &amp; Weitschat, 1971), N. spenceri (Rasmussen, 1950), N. studlandensis (Schulz &amp; Weitschat, 1975), N. sp., Chomataster acules Spencer, 1913, Ophryaster? maastrichtensis Umbgrove, 1925, O. magnus Spencer, 1913, O. oligoplax (Sladen, 1891), Comptoniaster peetersorum sp. nov., Crateraster anchylus (Brünnich Nielsen, 1943), C. favosus (Spencer, 1913), C. reticulatus (Schulz &amp; Weitschat, 1981), Caletaster? sp., goniasterid sp. 1, goniasterid sp. 2, goniasterid sp. 3, goniasterid? sp. 4, goniasterid sp. 5, goniasterid sp. 6, goniasterid sp. 7, goniasterid sp. 8, Valettaster gr. ocellatus (Forbes, 1848), Stauranderaster? miliaris Brünnich Nielsen, 1943, S.? sp. (? spp.), Aspidaster? aff. senonensis (Valette, 1902), A.? sp. 1, A.? sp. 2 (aff. pistilliferus Forbes, 1848), Pycinaster aff. cornutus Rasmussen, 1945, P. magnificus Spencer, 1913, P.? aff. rosenkrantzi (Brünnich Nielsen, 1943), P. sp. 1, P. sp. 2, and asteriid sp. (? spp.). Quite a number of these must remain in open nomenclature for the time being, being based mainly on limited material. A few of the new taxa will be described elsewhere.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219134</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 377 - 503</dcterms:extent>
+   <dcterms:isPartOf>Late Cretaceous-Early Palaeogene echinoderms and the K/T boundary in the southeast Netherlands and northeast Belgium — Part 5: Asteroids (URN:ISSN:03757587) (Volume 121)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219134.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46098</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219134</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

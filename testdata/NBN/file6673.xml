@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Loligo surinamensis, a new species of Loliginid Squid (Cephalopoda, Myopsida) from Northeastern South America 1</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Voss G.L.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>While studying a collection of cephalopods from Surinam sent to me by Dr. C. O. van Regteren Altena, a number of loliginid squids were found that at first examination appeared to be Loligo pealei Lesueur, 1821. Further detailed study revealed a series of characters unknown in that species and sufficiently different from those of other known Western Atlantic loliginids to warrant the erection of a new species. An increased interest in the squids of this genus seems to warrant the publication of this new species in advance of the full report on the collections. I wish to thank the officials of the Rijksmuseum van Natuurlijke Historie, Leiden, and particularly Dr. van Regteren Altena for the opportunity to study the collections. The illustrations are mine. This work was supported by a grant from the National Science Foundation GB2499X3 for which I extend my thanks. Loligo surinamensis new species (figs. 1-3) Material examined. — Holotype: Male, mantle length 118 mm, R/V "Coquette" Sta. 8-9, 30 miles northeast of the lightship "Suriname Rivier" in no feet (= 37 m), with trawl, 30 June 1966; W. Vervoort and C. Cornet leg.; RNHL alc. 9010. Paratypes: 7 males, mantle lengths 88-114 mm, 6 females, mantle lengths 75-118 mm, R/V "Coquette" Sta. 8-9, type locality; RNHL alc. 9011. — 2 males, mantle lengths 84-85 mm, R/V "Coquette", 5 miles northwest of lighter (mouth of the Surinam River), 106-102 feet, 19 February 1963; C. O. van Regteren Altena leg.; RNHL alc. 9012. — 1 male, mantle 1) Contribution No. 1662 from the University of Miami, Rosenstiel School of Marine and Atmospheric Science. length 105 mm, R/V "Calamar" Sta. 121, 6°15'N, 54°45'W northeast of the mouth of the Surinam River in 27 m, 11 August 1967; UMML 31 :1110.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319178</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 43 - 53</dcterms:extent>
+   <dcterms:isPartOf>Loligo surinamensis, a new species of Loliginid Squid (Cephalopoda, Myopsida) from Northeastern South America 1 (URN:ISSN:0024-0672) (Volume 48) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319178.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150464</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319178</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

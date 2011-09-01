@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the genus Sinularia May (Octocorallia, Alcyonacea)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Verseveldt J.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>In this revision of the genus Sinularia 93 valid species are recorded. The type specimens of 13 species could not be examined, since the depository of the specimens is unknown; nevertheless it is possible to make notes on seven of them in this paper; three were discussed in former papers (S. gyrosa, S. marenzelleri and S. rigida), while the remaining three (S. mayi, S. microspiculata and S. verrucosa) could not be described in this paper. The holotypes of 24 species were described earlier by the present author and the reader is referred to the literature given. The results of the examination of two other species (S. densa and S. larsonae) will appear elsewhere (Records Aust. Mus. Sydney). Altogether 64 species are more or less fully described now; among them are three new species: S. grandilobata, S. manaarensis, and S. portieri. A list of invalid synonyms and species is added.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317650</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 128</dcterms:extent>
+   <dcterms:isPartOf>A revision of the genus Sinularia May (Octocorallia, Alcyonacea) (URN:ISSN:0024-1652) (Volume 179) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317650.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148936</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317650</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

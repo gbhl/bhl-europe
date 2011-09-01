@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On some Hymenoptera from the collection of Guerin-Méneville in the Leiden museum</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>About thirty years ago, while studying the Sphecinae of the Leiden Museum, I found two species of Sphex, described by F. E. Guérin-Méneville, represented here by specimens originating from the collection of this author. A note on these species, Sphex lanierii Guérin and Sphex paulinieri Guérin, was published a few years ago (van der Vecht, 1954). Recently I came across a few more specimens from the same origin, and this has stimulated me to make a thorough search in the entire collection of Hymenoptera in this Museum. Since this work has led to the discovery of a few types which have generally been regarded as lost, the results appear to be well worth publication. According to Horn &amp; Kahle (1935-7), the Hymenoptera of GuérinMéneville, who died in 1874, went partly to G. Gribodo, partly to the Natural History Museum in Paris and the Zoological Museum in Munich. An enumeration of the material in the Gribodo collection, at present in the Natural History Museum in Genoa, was recently published by Guiglia (1948). It is not generally known that a small number of specimens was obtained by the Leiden Museum. According to the labels, written by C. Ritsema Czn., curator of this Museum from 1873 to 1916, they were received from F. Monchicourt, a French entomologist who is mentioned by Horn &amp; Kahle (l.c., p. 99) as having obtained certain families of Coleoptera from Guérin's collection. A note in the files of the Museum shows that Monchicourt exchanged Coleoptera with Ritsema in 1876. The Hymenoptera from the Guérin collection were probably acquired by the Museum at about this same time, but the actual correspondence on this subject appears to be lost 1). Besides from Monchicourt the Leiden Museum received a small number</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317915</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 21 - 31</dcterms:extent>
+   <dcterms:isPartOf>On some Hymenoptera from the collection of Guerin-Méneville in the Leiden museum (URN:ISSN:0024-0672) (Volume 35) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317915.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149201</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317915</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

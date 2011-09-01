@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mecistocephalidae), with the description of a new species with unusually elongate denticles</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Bonato L.</dc:creator>
+   <dc:creator>Minelli A.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Chilopoda</dc:subject>
+   <dc:subject>functional morphology</dc:subject>
+   <dc:subject>Geophilomorpha</dc:subject>
+   <dc:subject>maxillipede</dc:subject>
+   <dc:subject>Mecistocephalus</dc:subject>
+   <dc:subject>Mecistocephalus megalodon n. sp.</dc:subject>
+   <dc:subject>predation</dc:subject>
+   <dc:description>As a contribution to investigate the interspecific diversity in the large genus Mecistocephalus Newport, 1843 with respect to these centipedes’ predatorial role in soil tropical communities, we compared the patterns of maxillipede denticles in 32 species of the genus, and studied all published relevant information. All Mecistocephalus species share a conservative pattern of six distinct denticles on the mesal side of the four articles of each maxillipede. Current views on centipede phylogeny suggest that the basic pattern in Mecistocephalus originated from an ancestral array of fewer denticles, by addition of other denticles on the first and fourth articles of the maxillipede. These patterns are not affected by sexual dimorphism, and intraspecific variation for denticle position, size and shape is negligible, but for minor allometry determining a relative increase of the size of some denticles with respect to the maxillipedes during growth. Species differ mainly in size, shape, and orientation of most denticles. Remarkably larger and unusually shaped denticles are found in a hitherto undescribed species from the Seychelles, which is described in this paper as M. megalodon n. sp.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:315810</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 85 - 97</dcterms:extent>
+   <dcterms:isPartOf>Mecistocephalidae), with the description of a new species with unusually elongate denticles (URN:ISSN:1383-4517) (Volume 78) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/315810.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/146753</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/315810</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

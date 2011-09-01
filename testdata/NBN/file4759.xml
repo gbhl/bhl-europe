@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biografische notities betreffende verzamelaars voor het Rijksmuseum van Natuurlijke Historie te Leiden. I. Hendrik Severinus Pel (1818-1876)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Geschiedenis van de biologie</dc:subject>
+   <dc:description>INHOUD Inleiding (tot de serie)................ Hendrik Severinus Pel (1818-1876)............. 5 I. Leidse tijd (1818-1840).............. 5 II. Verblijf in West Afrika (1840-1855).......... 7 A. Voorgeschiedenis............... 7 B. Chronologisch overzicht van Pel's verblijf in West Afrika .... 10 C. Pel's verzamelactiviteiten............. 12 ι. Materiaal................ 12 2. Moeilijkheden bij het verzamelen.......... 14 a. Hulp................. 14 b. Tijd................. 14 c. Financiën............... 14 d. Gezondheid............... 15 3. De door Pel bezochte vindplaatsen......... 17 a. Kumasi................ 17 b. Accra................ 18 c. Elmina ............... 19 d. Sekondi................ 20 e. Butri................. 22 f. Dabocrom............... 22 III. Terug in Nederland (1851, 1855-1876).......... 24 IV. Wetenschappelijk belang van Pel's activiteiten........ 25 A. Pel's eigen publicaties............. 25 B. Publicaties van anderen............. 28</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317263</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 3 - 32</dcterms:extent>
+   <dcterms:isPartOf>Biografische notities betreffende verzamelaars voor het Rijksmuseum van Natuurlijke Historie te Leiden. I. Hendrik Severinus Pel (1818-1876) (URN:ISSN:0459-1801) (Volume 10) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317263.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148549</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317263</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

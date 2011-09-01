@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the larval genus Problemacaris Stebbing, and its probable identity (Crustacea, Decapoda)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gordon I.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION After the manuscript of my paper on Problemacaris (Gordon, 1960), had gone to press, Dr. R. B. Pike sent me notes and drawings of a larva that had been obtained by the "Sarsia" on 14 November 1957 and which he and Dr. D. I. Williamson had examined. When I told these two zoologists that this larva was apparently an older stage of one that I had just described, they decided not to proceed any further with their joint paper, and sent the larva for inclusion in the British Museum Collection. However, Dr. Williamson and I did have some correspondence relating to the possible identity of the larva and we thought we had got a clue to the real adult. But it was hoped that an older larva might be found which could be quite conclusive, and I only added a note to some of the reprints of my paper that I sent to individuals likely to be interested in the question. Then on December 12, 1962 Dr. Vagn Hansen of Copenhagen came to see me and informed me that Problemacaris larvae were moderately common and that he had seen specimens from as far afield as New Zealand. He also assured me that the larva has the curious habit of constructing "nests" from a radiolarian belonging to the family Thalassothamnidae (cf. Haecker, 1908). I told him what I thought was the probable adult genus to which this larval genus was referable, and asked him if he had seen an older stage than the "Sarsia" larva. He promised to send me the specimens that he had for study. However, he had to go to New Delhi; when he returned to Denmark on a rather brief visit, he looked out ten tubes of supposed larvae. But, when I came to examine these tubes, I found that only six of them had each a Problemacaris larva. Another tube had what may be a "nest" but</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318683</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 331 - 347</dcterms:extent>
+   <dcterms:isPartOf>On the larval genus Problemacaris Stebbing, and its probable identity (Crustacea, Decapoda) (URN:ISSN:0024-0672) (Volume 39) (Issue 35)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318683.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149969</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318683</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

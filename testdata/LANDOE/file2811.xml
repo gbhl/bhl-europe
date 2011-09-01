@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 9_3_4 (1961)</dc:title>
+   <dc:creator>Bodrogközy  György, Favarger  Claude, Härtel  Otto, Höfler  Karl, Höfler  Luise, Horwarth  Ivo, Kelbitsch  Helga, Krisai  Robert, Mayer  Ernest, Neubauer  Hans Franz, Pfeiffer  Hans H., Rössler  Wilhelm, Thaler , Urschler  Ingrid, Weber  Friedl, Widder  Felix Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Höfler, Luise Höfler: Notizen zur Moosvegetation und über Moosgesellschaften des Plitvicer Seengebietes.   181-  190. Hans Franz Neubauer: Über zwei Besonderheiten der Frucht von Passiflora suberosa.   191-  195. György Bodrogközy:  Ökologische Untersuchungen der Mähwiesen und Weiden der Mittel-Theiss.   196-  216. Robert Krisai: Das Filzmoos bei Tarsdorf in Oberösterreich.   217-  251. Claude Favarger: Le nombre chromosomique du Pseudostellaria eruopea SCHAEFTLEIN.   252-  256. Hans H. Pfeiffer: Vegetationskundliche Beobachtungen am Rugen Slatt und - Blanken Slatt.   257-  265. Ingrid Urschler: Ein Stomata-Nachweis mit heißem Wasser.   266-  267. Ivo Horwarth: Die Pflanzenwelt der Karst-Ponikven.   268-  283. Wilhelm Rössler: Zur Kenntnis gelegentlich weißblühender Sippen.   284-  292. Helga Kelbitsch: Polyploidie der Organoide einiger Komplextumoren.   293-  298. Ernest Mayer: Pedicularis julica E. Mayer spec. nov., eine bisher verkannte Art der südöstlichsten Kalkalpen.   299-  305. Felix Josef Widder, Thaler, Otto Härtel, Friedl Weber: Recensiones.   306-  317</dc:description>
+   <dc:date>1961</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30087.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30087.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30087</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

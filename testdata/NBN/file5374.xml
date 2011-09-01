@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the genus Parastasia in the Indo-Australian region (Coleoptera: Scarabaeidae: Rutelinae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Kuijten P.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Coleoptera; Scarabaeidae; Rutelinae; Parastasiina; Parastasia; Indo-Australian region; distribution; taxonomy; key; check list; new species; synonymy.</dc:subject>
+   <dc:description>A revision is presented of the species in the genus Parastasia. All known species are described, 11 new species are established, the parameres of most species are figured, the taxonomic levels of several taxa are changed, and 21 new synonymies are proposed. For many taxa lectotypes are designated and many specimens bearing incorrect or dubious type labels are degraded to their true status. Some aspects of distribution and dispersal are shortly discussed. A tentative key and a check list are added.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317879</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 207</dcterms:extent>
+   <dcterms:isPartOf>A revision of the genus Parastasia in the Indo-Australian region (Coleoptera: Scarabaeidae: Rutelinae) (URN:ISSN:0024-1652) (Volume 275) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317879.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149165</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317879</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

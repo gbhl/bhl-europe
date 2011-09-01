@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Elements for a revision and notes on bionomy of the Cumacea (Crustacea: Peracarida) of the Weddell Sea (Antarctica). : Material collected by the Expedition ANTARKTIS-VIII/5 of R.V. “Polarstern” 1989/90</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Petrescu I.</dc:creator>
+   <dc:creator>Wittmann K.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Cumacea</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>morphology</dc:subject>
+   <dc:subject>bionomy</dc:subject>
+   <dc:subject>Antarctic</dc:subject>
+   <dc:subject>marine benthos</dc:subject>
+   <dc:description>Among 26 species of Antarctic Cumacea sampled during the southern summer 1989/90 from benthic habitats in the Weddell Sea, four are described as new to science: Campylaspis ledoyeri spec. nov., Hemilamprops bacescui spec. nov., Paralamprops racovitzai spec. nov., and Leptostylis weddelli spec. nov. Detailed descriptions are given for the previously unknown or undescribed sex in seven species: Cyclaspis gigas Zimmer, 1907, Procampylaspis compressa Zimmer, 1907, Paralamprops asper Zimmer, 1907, P. mawsoni (Hale, 1937), Diastylis anderssoni armata Ledoyer, 1993, D. mawsoni Calman, 1918, and Leptostylis antipus Zimmer, 1907. Previous descriptions are supplemented by additional morphological data on 14 species: Cyclaspis gigas, Vaunthompsonia inermis Zimmer, 1909, Eudorella gracilior Zimmer, 1907, Campylaspis excavata Ledoyer, 1993, Procampylaspis compressa, Paralamprops mawsoni, Diastylis anderssoni armata, D. corniculata Hale, 1937, D. enigmatica Ledoyer, 1993, D. helleri Zimmer, 1907, D. mawsoni, Diastylopsis goekei Roccatagliata &amp; Heard, 1992, Leptostylis antipus, and Makrokylindrus inscriptus Jones, 1971. Egg sizes measured in six species were above or partly in the upper range of previous findings in subpolar to polar climates, while numbers of eggs per female were well within this range. Body sizes measured in nine species were mostly in the upper range. Incubating females were frequent (Diastylopsis goekei), less frequent (Diastylis mawsoni), infrequent (Cyclaspis gigas, Diastylis anderssoni armata, D. corniculata), or absent (Vaunthompsonia inermis, Paralamprops mawsoni, Leptostylis antipus) in the summer samples, thus pointing to the possibility of various breeding strategies in high Antarctic waters.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216173</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 557 - 630</dcterms:extent>
+   <dcterms:isPartOf>Elements for a revision and notes on bionomy of the Cumacea (Crustacea: Peracarida) of the Weddell Sea (Antarctica). : Material collected by the Expedition ANTARKTIS-VIII/5 of R.V. “Polarstern” 1989/90 (URN:ISSN:00240672) (Volume 77, 15-36)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216173.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44296</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216173</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

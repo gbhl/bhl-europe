@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 2 (1968)</dc:title>
+   <dc:creator>Dierl  Wolfgang, Holzinger  Helmuth Karl Wilhelm, Holzinger  Ruth, Kofler  Alois, Mandl  Karl, Miksic  René, Petrovitz  Rudolf, Pinker  Rudolf, Ressl  Franz, Sterzl  Otto, Wagner  Eduard, Wagner  Otto</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wolfgang Dierl: Die Typusarten der palaearktischen Psychidae-Gattungen (Lep.).     1-   17. Helmuth Karl Wilhelm Holzinger, Ruth Holzinger: Heliconius cydno gerstneri, n.ssp. und zwei neue Formen von H. cydno cydnides Stgr. (Lep. Nymph.).    17-   21. Rudolf Pinker: Der Lebensraum von Pieris cheiranti Hbn. und die Einwanderung und Ausbreitung der Catopsilia florella F. auf den Kanaren.    22-   25. Franz Ressl: Ausgestorbene bzw. aussterbende Insektenarten im Bezirk Scheibbs (Nieder-Österreich).    25-   29. Otto Sterzl: Seltene und interessante Erebien in den Ost- und Westalpen.    30-   34. Karl Mandl: Beitrag zur Kenntnis der Carabenfauna Mittel-Asiens. Beschreibung einer Rasse von Carabus (Megodontus) schoenherri Fischer.    34-   35. Rudolf Petrovitz: Scarabaeidae aus Indien und Nepal (Coleoptera).    35-   38. Alois Kofler: Die Arten der Gattung Scaphisoma Leach aus Nord- und Osttirol (Coleoptera, Scaphidiidae).    39-   43. Eduard Wagner: Das Männchen von Orsolia longiceps E. Wagner, 1965 (Hem. Het. Miridae).    44-   45. Otto Wagner: Das Eindringen des westeuropäischen Dytisciden Deronectes (Stictotarsus) duodecimpustulatus F. in Österreich.    46-   48. René Miksic: Vorläufige Diagnosen einiger neuer Arten und Rassen der Gattung Glycyphana Burm. (59. Beitrag zur Kenntnis der Scarabaeiden).    48-   50</dc:description>
+   <dc:date>1968</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26295.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26295.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26295</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

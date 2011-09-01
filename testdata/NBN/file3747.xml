@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On two new species of Pseudogonatodes Ruthven, 1915 (Reptilia: Squamata: Gekkonidae), with remarks on the distribution of some other sphaerodactyl lizards</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Avila-Pires T.C.S.</dc:creator>
+   <dc:creator>Hoogmoed M.S.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Coleodactylus</dc:subject>
+   <dc:subject>Gonatodes</dc:subject>
+   <dc:subject>Lepidoblepharis</dc:subject>
+   <dc:subject>Pseudogonatodes</dc:subject>
+   <dc:subject>Reptilia</dc:subject>
+   <dc:subject>Squamata</dc:subject>
+   <dc:subject>lizards</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>new record</dc:subject>
+   <dc:subject>Brazil</dc:subject>
+   <dc:subject>Venezuela</dc:subject>
+   <dc:subject>geographic distribution</dc:subject>
+   <dc:subject>Amazonian rainforest</dc:subject>
+   <dc:subject>cloud forest.</dc:subject>
+   <dc:description>Two new species of Pseudogonatodes Ruthven, 1915, are described, one from the Rio Juruá Basin, in the state of Acre, Brazil (Amazonian rainforest), the other from Rancho Grande, in the state Aragua, Venezuela (cloud forest). Both have granular dorsals and relatively numerous fourth toe lamellae, of which the third (from tip to base of toe) is not distinctly larger than the two distal ones. The species from the Rio Juruá is small, with dark belly, and recognised, among other characteristics, by its tall, conical to flat-conical dorsals. That from Rancho Grande is relatively large, with low number of ventrals, and mental with a straight or convex posterior segment medially, among other distinctive characteristics. Some remarks on the geographic distribution of sphaerodactyl lizards in South America are presented, including a new record for Coleodactylus meridionalis. Duas novas espécies de Pseudogonatodes Ruthven, 1915 são descritas, uma procedente da bacia do rio Juruá, estado do Acre, Brasil (floresta amazônica), a outra de Rancho Grande, estado Aragua, Venezuela (floresta nublada). Ambas as espécies possuem escamas dorsais granulares e lamelas do quarto artelho relativamente numerosas, entre as quais a terceira lamela (a partir da extremidade distal do artelho) não é especialmente aumentada em relação às duas distais. A espécie do Rio Juruá é pequena, com ventre escuro, e reconhecível, entre outros caracteres, pelas escamas dorsais altas e cônicas a cônico-achatadas. A espécie de Rancho Grande é relativamente grande, com um baixo número de escamas ventrais, e margem posterior da mental com um segmento mediano formando uma linha transversal reta ou convexa, entre outros caracteres distintivos. São apresentadas também algumas observações sobre a distribuição geográfica de lagartos Sphaerodactylidae na América do Sul, incluindo um novo registro para Coleodactylus meridionalis.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215261</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 209 - 223</dcterms:extent>
+   <dcterms:isPartOf>On two new species of Pseudogonatodes Ruthven, 1915 (Reptilia: Squamata: Gekkonidae), with remarks on the distribution of some other sphaerodactyl lizards (URN:ISSN:00240672) (Volume 73, 12-33)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215261.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43663</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215261</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

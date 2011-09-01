@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Over het belang van Temminck's „Discours préliminaire" voor de zoologische Nomenclatuur</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>42.01 ; 42.70</dc:subject>
+   <dc:description>Het gewoonlijk als „Discours préliminaire" aangeduide artikel van Temminck heeft nimmer die aandacht van dierkundigen getrokken, die het, wegens zijn systematisch belang, verdient. Ten dele vindt dit stellig zijn oorzaak in de betrekkelijke zeldzaamheid van het werk, ten dele ook in het feit dat het gewoonlijk is ingebonden met de afleveringen over Reptielen en Amphibieën van de „Fauna Japonica", terwijl het voornaamste belang van de publicatie op mammologisch gebied is gelegen. De aanwezigheid van een exemplaar in het Rijksmuseum van Natuurlijke Historie geeft mij gelegenheid het vrij grote aantal diagnosen van diersoorten dat er in wordt gegeven te bespreken. Het artikel omvat 30 bladzijden, waarvan het titelblad de eerste is, genummerd I-XXX. De volledige titel luidt: Coup-d'Oeil/ sur la Faune des Iles de la Sonde/ et de/ l'Empire du Japon/ Discours préliminaire/ destiné à servir d'introduction à la Faune du Japon. De volgende bladzijde is blanco, terwijl boven het begin van de tekst (blz. III) nog eens staat: Discours préliminaire (vet gedrukt)/ coup-d'oeil sur la faune des îles de la Sonde/ et de l'Empire du Japon. De naam van den auteur staat onder de tekst op blz. XXX, alwaar ook de dagtekening: Musée des Pays-Bas Novembre 1835. In het Discours préliminaire wordt een aantal diersoorten voor het eerst benoemd, terwijl van andere soorten eveneens diagnosen worden gegeven, welke echter niet van invloed op de gangbare nomenclatuur zijn, daar deze soorten elders reeds eerder werden beschreven. Ook in dit geval leek mij echter een min of meer volledige bespreking op haar plaats, daar vele der oorspronkelijke diagnosen in weinig bekende tijdschriften zijn verschenen,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318501</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 205 - 227</dcterms:extent>
+   <dcterms:isPartOf>Over het belang van Temminck's „Discours préliminaire" voor de zoologische Nomenclatuur (URN:ISSN:0024-0672) (Volume 35) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318501.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149787</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318501</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

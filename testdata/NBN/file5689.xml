@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Anguilla borneensis n. sp.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Popta C.M.L.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>La longueur de la tête, mesurée jusqu'à la fente branchiale, va 6.5—7 fois dans la longueur totale de l'individu. La longueur des yeux est compris 10 fois dans la longueur de la tête, 2—2.1 fois dans l'espace interorbitaire, 2.2 fois dans le museau. II n'y a point de sillon entre les dents, ni entre les groupes de dents des mâchoires. La tête est un peu plus courte que sa distance de la nageoire dorsale, un peu plus courte ou un peu plus longue que la moitié de sa distance de la nageoire anale et plus longue ou de la même longueur que la distance entre le commencement de la nageoire dorsale à la nageoire anale. Les lèvres sont larges. Dans ces spécimens, conservés dans l'alcool, la couleur est partout également foncée en dessus, la nageoire dorsale seule a un fin bord jaune, la couleur est jaune en dessous. mm. mm. Longueur des individus . . . . . . . . . . . . . . 350 526 Longueur jusqu'à l'ouverture branchiale . . . . . 50 78 de l'ouverture branchiale à la nageoire dorsale. 57 80 de la nageoire dorsale à la nageoire anale . . . 40 78 Hab.: le Bŏ, mai—août 1900. Obs.: nom indigène: Mĕngaling; on dit qu'il peut atteindre une longueur de 1500 mm. 2 exemplaires, longs de 350 mm. et de 526 mm. Numéro de la collection du Muséum: 7654. Ces deux anguilles se trouvent dans la collection de poissons ramassée par Monsieur le Professeur Dr. A. W. Nieuwenhuis dans le centre de Bornéo, 1898 et 1900. La description de ces poissons j'ai publié en 1905/</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318194</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1924</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 73 - 76</dcterms:extent>
+   <dcterms:isPartOf>Anguilla borneensis n. sp. (URN:ISSN:0024-0672) (Volume 8) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318194.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149480</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318194</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

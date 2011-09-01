@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Embryonal structures of Miogypsina</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Bock, de J.F.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>Excellent scanning electron micrographs of embryonal structures of bispiral Miogypsina's were made, which solve a number of problems raised by details seen in thin sections. Special attention has been paid to the stolon-system near the second primary auxiliary chamber (ΡΑ-II). From the deuteroconch to the ΡΑ-II two funnel-shaped stolons cross the cylindrical protoconchal stolon on both sides. Once a 'lip' around the protoconchal stolon was discovered, it turned out to exist in nearly all the bispiral specimens.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317395</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 15</dcterms:extent>
+   <dcterms:isPartOf>Embryonal structures of Miogypsina (URN:ISSN:0375-7587) (Volume 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317395.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148681</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317395</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

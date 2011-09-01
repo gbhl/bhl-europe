@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Het vliegend hert in de gemeente Ede</dc:title>
+   <dc:creator>Smit J.T.</dc:creator>
+   <dc:creator>Krekels R.F.M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lucanus cervus; vliegend hert; verspreiding; biologie; ecologie; beheer; bescherming</dc:subject>
+   <dc:description>Het vliegend hert is een beschermde keversoort met een lange ontwikkelingsduur tot volwassen insect, minimaal 4 tot zo’n 8 jaar, en een beperkte verspreidingscapaciteit. Deze beide facetten maken haar tot een kwetsbare soort. Daar komt bij dat de weinige vindplaatsen veelal geïsoleerd liggen waardoor de soort extra kwetsbaar is. Het oorspronkelijke verspreidingsgebied van het vliegend hert in Nederland is de afgelopen decennia teruggedrongen tot vier kerngebieden. Twee daarvan liggen in ieder geval deels in de provincie Gelderland, waarmee deze provincie een centrale rol in het behoud van deze soort in Nederland inneemt. De verspreiding binnen de Gelderse kerngebieden laat zien dat de huidige populaties verspreid en tamelijk geïsoleerd liggen. Het doel van het voorliggende rapport is het duurzaam behouden van de populaties in het huidige leefgebied en het zoveel mogelijk onderling verbinden van de afzonderlijke populaties. Veel van de populaties op de Veluwe zijn te vinden in bosranden, houtwallen en zelfs tuinen. In dit rapport wordt het enige vermoedelijk huidige leefgebied binnen het grondgebied van de gemeente Ede beschreven, alsmede een nabijgelegen leefgebied in de omgeving van de plaats Kootwijk. Voor beide gebieden worden de bedreigingen en gewenste maatregelen geformuleerd. De in dit rapport voorgestelde maatregelen vormen de basis voor het behoud van het vliegend hert op de zuidwestelijke Veluwe. Het juiste beheer van houtwallen, bosranden en natuurgebieden zal dankzij de verschillende beherende instanties vorm moeten krijgen. Gezien de verspreiding van het vliegend hert zal de uitvoering over de grenzen van de formeel aangewezen natuurgebieden heen moeten reiken. Voorlichting aan beheerders en particulieren zal de uitvoering van de voorgestelde maatregelen zeer ten goede komen.</dc:description>
+   <dc:publisher>EIS-Nederland &amp; Bureau Natuurbalans - Limes Divergens BV</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:262857</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>49</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/262857.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/94377</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/262857</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

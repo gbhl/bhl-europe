@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some Streptaxidae (Mollusca) from West and Southern Africa with the description of a new species of Gulella</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Studies on representatives of the pulmonate gastropod family Streptaxidae in Africa have resulted in the data presented below. An initially unidentifiable West African streptaxid not represented in major African land mollusc collections such as in the museums at Berlin, London and Tervuren, and within a few years followed by a second shell of the same species, led to a revision of Excisa, a subgenus of Ptychotrema L. Pfeiffer, 1853. The second part of the present paper features the description of a new species of Gulella from Rhodesia. The following abbreviations have been used: alc. for alcohol, 1/d for the ratio length/major diameter of shells (this gives an indication of the shape of the shell; figures for 1/d have been calculated from micrometer readings, so that these figures may not always agree with those calculated from the measurements in mm), BM for British Museum (Natural History) (London), IRSNB for Institut Royal des Sciences Naturelles de Belgique (Brussels), NM for Natal Museum (Pietermaritzburg, South Africa), PM for Muséum National d'Histoire Naturelle (Paris), RMNH for Rijksmuseum van Natuurlijke Historie (Leiden), SM for Naturhistoriska Riksmuseet (Stockholm), SMF for Naturmuseum Senckenberg (Frankfurt am Main), and TM for Musée Royal de l'Afrique Centrale (Tervuren, Belgium). The author owes a debt of gratitude to many colleagues and others for contributing specimens, data, or otherwise: Dr. W. Adam (Brussels), Dr. J. L. Amiet (Yaoundé, Cameroon), Dr. Å. Andersson (Stockholm), Dr. P. L. G. Benoit (Tervuren, Belgium), Dr. E. Binder (Geneva), Drs. H. Chevallier and E. Fischer-Piette (Paris), Mr. H. E. Coomans (Amsterdam), Mr. S. P. Dance (Cardiff, Wales), Dr. R. Kilias (Berlin), Dr. M. Lamotte</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319320</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 245 - 260</dcterms:extent>
+   <dcterms:isPartOf>Some Streptaxidae (Mollusca) from West and Southern Africa with the description of a new species of Gulella (URN:ISSN:0024-0672) (Volume 45) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319320.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150606</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319320</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

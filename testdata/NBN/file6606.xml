@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über einige Scyphomedusen von Puerto Galera, Mindoro (Philippinen)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Während der Monate April—Mai 1924 wurden vom Department of Zoology, University of Philippines, Direktor P. B. Sivickis, am Strande von Puerto Galera, Mindoro, bei Gelegenheit daselbst abgehaltener Kurse zahlreiche Medusen beobachtet und gesammelt. Dieses Material wurde mir zur Bearbeitung übersendet, worüber hier kurz berichtet wird. Es findet sich darunter eine neue Charybdea-species, ferner einige Scyphomedusen, die bisher in den philippinischen Gewässern nicht nachgewiesen sind — in der unten stehenden Liste mit * bezeichnet — endlich einige altbekannte sehr häufige Formen, die das Gros der Sammlung ausmachen. Tiergeographisch bemerkenswert ist der Fund von Tripedalia cystophora Conant, da diese Meduse bisher nur von Jamaica bekannt war. Die kleine Sammlung umfasst ca. 120 Exemplare, die systematisch geordnet folgenden Genera und Species angehören: 1. Charybdeidae. * Charybdea sivickisi nov. spec. * Tripedalia cystophora Conant. 2. Semaeostomeae. Aurelia aurita (Linn.) Lam. * Aurelia aurita var. colpota Maas. Aurelia labiata Cham. u. Eys. 3. Rhizostomae. Cassiopeia polypoides var. culionensis Light. Cassiopeia medusa Light. * Netrostoma coerulescens Maas. Mastigias papua var. sibogae Maas.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319111</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1926</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 239 - 248</dcterms:extent>
+   <dcterms:isPartOf>Über einige Scyphomedusen von Puerto Galera, Mindoro (Philippinen) (URN:ISSN:0024-0672) (Volume 9) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319111.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150397</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319111</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

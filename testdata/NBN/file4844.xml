@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The 2003 Peter Schmidt award presented to Joanne Lerud</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Winkler Prins C.F.</dc:creator>
+   <dc:subject>Geschiedenis van de aardwetenschappen</dc:subject>
+   <dc:description>It was decided 'en petit comite' to present the Peter Schmidt award for 2003 to Joanne Lerud, a dear friend who attended many of the 'Erbe Symposia' and made valuable contributions to them. The award is especially for organising in such an excellent way the Fifth International Symposium 'Cultural Heritage in Geosciences, Mining and Metallurgy: Libraries - Archives - Museums' at the Colorado School of Mines in Golden (Colorado). The award is not valuable in a material way, but I hope it will be a precious souvenir of the mining history in The Netherlands and of the Nationaal Natuurhistorisch Museum Naturalis in Leiden. It consists of a piece of rock with Carboniferous plant fossils (Alethopteris decurrens (Artis) Zeiller and Lepidophloios laricinus Sternberg) from a Dutch mine, the National Mine Hendrik of south Limburg, long since closed down. It formed part of the important Jongmans collection, but was collected in 1976, long after the demise of Professor Jongmans. I was allowed to mount it and use it for the award. It was with great pleasure that I handed over the award to Joanne Lerud.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317348</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 308 - 308</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The 2003 Peter Schmidt award presented to Joanne Lerud (URN:ISSN:0922-4564) (Volume 4) (Issue 34)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317348.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148634</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317348</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

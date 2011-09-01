@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Beiträge zur Naturkunde Oberösterreichs (BNO) 14 (2005)</dc:title>
+   <dc:creator>Berger  Franz, Diewald  Wolfgang, Engleder  Thomas, Essl  Franz, Fuss  Gudrun, Gewolf  Susanne, Grulich  Vít, Hauser  Erwin, Hohla  Michael, Jerabek  Maria, Kleesadl  Gerhard, Lego  Egon, Melzer  Helmut, Merschel  Marco, Mitter  Heinz, Neuwirth  Gerhard, Patzner  Robert A., Plass  Jürgen, Pöll  Norbert, Priemetzhofer  Franz, Pysarczuk  Simone, Rabitsch  Wolfgang, Reiter  Guido, Schleier  Veronika, Schmalzer  Alois, Schröck  Christian, Schwarz  Martin, Sichler  Markus, Stöhr  Oliver, Vydrová  Alena</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Berger, Franz Priemetzhofer: Neue und bemerkenswerte Funde von Flechten aus Oberösterreich, Österreich     3-   18. Thomas Engleder, Egon Lego, Jürgen Plass: Aktuelles zur Birkenmaus (Sicista betulina PALLAS 1779) in der Dreiländerregion Tschechien/Deutschland/Österreich    19-   25. Franz Essl: Die Heuschreckenfauna ausgewählter Halbtrockenrasen des Strudengaus und des angrenzenden unteren Mühlviertels (Oberösterreich)    27-   37. Franz Essl, Erwin Hauser: Floristische Beobachtungen aus dem östlichen Oberösterreich 
+und dem angrenzenden Niederösterreich, Teil IV    39-   61. Gudrun Fuss, Robert A. Patzner: Arteninventar der Chrysomelidae (Coleoptera)
+in der Koaserin bei Peuerbach (Oberösterreich, Österreich)    63-   69. Franz Priemetzhofer: Silikat- und bodenbewohnende Flechten
+im Mittleren und Unteren Mühlviertel
+(Oberösterreich, Austria)    71-  146. Michael Hohla, Gerhard Kleesadl, Helmut Melzer: Neues zur Flora der oberösterreichischen Bahnanlagen   147-  199. Michael Hohla, Oliver Stöhr, Christian Schröck: Beiträge zur Kenntnis der Flora des Innviertels   201-  286. Oliver Stöhr, Susanne Gewolf: Neufunde bemerkenswerter Gefäßkryptogamen 
+aus dem Europaschutzgebiet "Waldaist-Naarn" 
+(Unteres Mühlviertel, Oberösterreich)   287-  314. Wolfgang Rabitsch: Beitrag zur Kenntnis der Wanzenfauna von Oberösterreich
+(Insecta, Heteroptera)   315-  326. Vít Grulich, Alena Vydrová: Vegetation und Flora im Bereich des Maltsch-Oberlaufs   327-  347. Guido Reiter, Simone Pysarczuk, Maria Jerabek: Erste Nachweise der Mückenfledermaus,
+Pipistrellus pygmaeus (LEACH 1825)
+(Chiroptera, Vespertilionidae) in Oberösterreich   349-  355. Norbert Pöll: In memoriam Hans Hörleinsberger
+(25.6.1912 - 29.5.2003)   357-  359. Gerhard Neuwirth: Die Flechtenflora des Kobernaußerwaldes 
+(Oberösterreich, Österreich)   361-  396. Wolfgang Diewald, Marco Merschel, Veronika Schleier, Markus Sichler: Carex maritima GUNNERUS, Ranunculus seguieri VILLARS und andere floristische Beobachtungen aus der Gemeinde Hinterstoder (Oberösterreich)   397-  409. Heinz Mitter: Bemerkenswerte Käferfunde aus Oberösterreich VIII
+(Insecta: Coleoptera)   411-  433. Martin Schwarz: Die Selandriinae außer der Gattung Dolerus (Hymenoptera,
+Symphyta, Tenthredinidae) Oberösterreichs (Österreich)   435-  450. Alois Schmalzer, Erwin Hauser: Die Schmetterlingssammlung von Heinrich Steindl 
+(15.3.1952 - 27.6.2003) aus Schönau i. M. (Oberösterreich)   451-  454</dc:description>
+   <dc:date>2005</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/14603.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/14603.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=14603</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

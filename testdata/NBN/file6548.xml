@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über valväre Stridulation bei Schwärmer (Lepidoptera Sphingidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Doesburg Jr., van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Während nächtliches Sammeln am Licht in Suriname (Süd-amerika) im Jahre 1962, fing ich ein Männchen von Protambulyx strigilis (L.) das, zu meiner Überraschung, stridulieren konnte. Beim Abtöten des Schwärmers mittels direkter Einspritzung von Alkohol im Thorax, wodurch eine blitzschnelle Immobilisation der Flügel und Beine erreicht wird, fing das Tier an zu zirpen mit einem klaren „zietie, zietie, zietie...". Als ich daraufhin die Motte näher an das Licht brachte, sah ich am Hinterleib, welches nach einer solchen Einspritzung noch einige Zeit am Leben bleibt, das letzte sichtbare Segment, nämlich die Valven, ein und ausschieben, im gleichen Rythmus wie der Laut produziert wurde. Durch diese Beobachtung war ich im stande das Stridulationsorgan ohne weiteres zu lokalisieren. Ausser das bekannte „Pfeiffen" des Totenkopfschwärmers, Acherontia atropos (L.), das offenbar auch eines anderen Mechanismus zu Grunde liegt und das von beiden Geschlechtern erzeugt werden kann (Wagner, 1836; Landois, 1874; Prell, 1920; Dumortier, 1960), war mir kein anderer Fall von Stridulation bei Imagines von Sphingiden bekannt. Und auch in den üblichen entomologischen Handbüchern war nichts darüber zu finden. Aus der darauf von mir vorgenommenen Literaturuntersuchung ergab sich aber, dass über Laute, hervorgebracht von anderen Sphingiden als Acherontia, verschiedene Wahrnehmungen aufgezeichnet worden sind, von den die meisten aber nicht näher untersucht wurden. So berichtet Krüger (1877): ,,Mehr oder weniger schwächere Töne [als die von Acherontia] vermögen noch von sich zu geben : der grosse Weinschwärmer (Sphinx Elpenor), der Wolfsmilchschwärmer (Sph. euphorbiae), der Ligusterschwärmer (Sph. ligustri), der Fichtenschwärmer (Sph. pinastri), der Windenschwärmer (Sph. con-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319053</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 161 - 170</dcterms:extent>
+   <dcterms:isPartOf>Über valväre Stridulation bei Schwärmer (Lepidoptera Sphingidae) (URN:ISSN:0024-0672) (Volume 41) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319053.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150339</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319053</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

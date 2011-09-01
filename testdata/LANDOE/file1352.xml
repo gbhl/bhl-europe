@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vorarlberger Naturschau - Forschen und Entdecken 14 (2004)</dc:title>
+   <dc:creator>Aistleitner  Ulrich, Bürgin  Toni, Furrer  Heinz, Glaser  Florian, Graf  Wolfram, Gruppe  Axel, Hutter  Gerhard, Lippert  Iris, Piekniewski  Andreas, Schmid  Margit, Staub  Rudolf, Steininger  Agnes, Szalai  Elke, Völk  Hellmut Rudolf, Werner  Richard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Rudolf Staub: Vorwort.     7. Hellmut Rudolf Völk, Andreas Piekniewski, Iris Lippert: Geomorphologie des unteren Breitachtales bei Oberstdorf. Mit einer Spezialbetrachtung zur Breitachklamm-Entstehung.     9-   66. Toni Bürgin, Heinz Furrer: Fossile Knochenfische aus der Kössen-Formation (Obertrias</dc:description>
+   <dc:description>Rhaet) von Lorüns (Vorarlberg, Österreich).    67-   86. Agnes Steininger: Die Riedgräben im nördlichen Vorarlberger Rheintal.    87-  112. Florian Glaser: Amphibien und Reptilien in den Auen der Alfenz (Klostertal, Vorarlberg) - Verbreitung, Ökologie und Schutz.   113-  142. Gerhard Hutter, Wolfram Graf: Köcherfliegen aus Vorarlberg II - Beitrag zur Kenntnis der Trichopteren des Alten Rheins - ein Vergleich zweier ökomorphologisch unterschiedlicher Standorte.   143-  152. Ulrich Aistleitner, Axel Gruppe: Vorläufige Checkliste der Netzflügler (Insecta: Neuropterida) Vorarlbergs / Austria occ..   153-  160. Elke Szalai: Die Errichtung von Großschutzgebieten als Strategie in der Regionalentwicklung - Beispiel Biosphärenpark Großes Walsertal.   161-  178. Richard Werner: Symposium Naturwissenschaften in Vorarlberg 2002 und 2003.   179-  182. Margit Schmid: Ihre Naturschau 2002.   183-  192</dc:description>
+   <dc:date>2004</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27446.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27446.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27446</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

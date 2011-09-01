@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 37 (1985)</dc:title>
+   <dc:creator>Arenberger  Ernst, Aspöck  Horst, Aspöck  Ulrike, Deschka  Gerfried, Franz  Herbert, Ganev  Julius, Hacker  Hermann, Jäch  Manfred A., Lichtenberger  Franz, Mally  Markus J., Mandl  Karl, Novak  Gottfried, Ortner  Johann, Puthz  Volker, Rausch  Hubert, Tarmann  Gerhard M., Triberti  Paolo, Varga  Zoltán</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Paolo Triberti: A revision of the genus Aspilapteryx Spuler (Lepidoptera, Gracillariidae).     1-   16. Gerhard M. Tarmann: Adscita (Gregorita) benderi n.sp., eine neue Zygaenidae aus Marokko (Lepidoptera).    17-   25. Zoltán Varga: Beiträge zur Kenntnis der Gattung Xenophysa Boursin, 1969 (Lepidoptera: Noctuidae), mit der Beschreibung drei(er) neuer Arten.    26-   36. Horst Aspöck, Ulrike Aspöck, Hubert Rausch: Zur Kenntnis der Genera Tjederiraphidia n.g. und Mongoloraphidia H.A &amp; U.A. (Neuropteroidea: Raphidioptera: Raphidiidae).    37-   48. Manfred A. Jäch: Speziation durch geographische Isolation am Beispiel der Hydraenenfauna zweier griechischen Inseln (Col., Hydraenidae).    49-   54. Karl Mandl: Fragmenta Carabologica 8. Evolution und Ausbreitung zweier Carabus-Subgenera: Meganebrius Kraatz und Imaibius Bates s.str. mit einer Revision der letzteren. I. Einleitung und Allgemeiner Teil (Varabidae, Col.).    55-   63. Franz Lichtenberger, Johann Ortner: Zur Verbreitung von Proclossiana eunomia Esp. (= Argynnis aphirape Hbn.) in Niederöstereich (Lepidoptera: Nymphalidae).    64. Gerfried Deschka: Blattminierende Lepidopteren aus dem Nahen und Mittleren Osten. V. Teil.    65-   75. Ernst Arenberger: Ergänzende Bemerkungen zur Familie Pterophoridae (Lepidoptera).    76-   80. Julius Ganev, Hermann Hacker: Beitrag zur Kenntnis der Crambidae (Lepidoptera, Pyraloidea) von Griechenland und der Türkei mit Beschreibung einer neuen Art, Euchromius siuxellus n.sp.    81-   83. Ulrike Aspöck, Horst Aspöck: Das Genus Lekrugeria Navás (Neuropteroidea: Planipennia: Berothidae: Berothinae).    85-   98. Karl Mandl: Fragmenta Carabologica 8. Evolution und Ausbreitung zweier Carabus-Subgenera: Meganebrius Kraatz und Imaibius Bates s.str. mit einer Revision der letzeren. II. Spezieller Teil (Carabidae, Col.).    99-  110. Gottfried Novak: Anthaxia (Melanthaxia) nigrojubata inexspectata, eine neue Subspecies aus Kreta (Coleoptera, Buprestidae).   111-  113. Herbert Franz: Neue Scydmaeniden aus SW-Europa und Marokko, gesammelt von H. Coffait (Coleoptera Scydmaenidae).   114-  116. Volker Puthz: Drei neue Stenaesthetus-Arten aus Afrika (Coleoptera, Staphylinidae). 48. Beitrag zur Kenntnis der Euaesthetinen.   117-  120. Markus J. Mally: Hybomitra ucrainica (Olsufjev, 1952) und Hybomitra ciureai (Séguy, 1937) - morphologische Differenzen (Diptera, Tabanidae).   121-  125</dc:description>
+   <dc:date>1985</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26317.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26317.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26317</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

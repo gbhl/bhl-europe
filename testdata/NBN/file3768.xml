@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Geological Study Collection of the Mercury Mine in Idrija</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Car J.</dc:creator>
+   <dc:creator>Rezun B.</dc:creator>
+   <dc:subject>Regionale geologie</dc:subject>
+   <dc:subject>Mercury mine</dc:subject>
+   <dc:subject>history</dc:subject>
+   <dc:subject>Geological Study Collection</dc:subject>
+   <dc:description>The collection and classification of various geological samples has a long tradition in the Idrija Mercury Mine. In the second half of the 19th century geological collection was prepared and arranged by M.V. Lipold. In 1956, a rich petrographic-palaeontological collection was created at the Municipal Museum in Idrija. Due to the exceptional genesis and development of the Idrija ore deposit, many of the petrological, structural and ore samples are, from the professional aspect, quite unique. The collected materials, which were mostly unclassified and deposited in the quarters of the former mine geological service, were formed into a Mine Geological Collection comprised of 7 thematic collections presenting an overview of all aspects of the geological structure and genesis of the ore deposit, and testify to its exceptionality and complexity. During the arrangement, structural classification and naming of rocks, consideration was given to those classifications that have been tested and internationally recognized as the best existing classifications. The mine geological collection of the Idrija Mercury Mine and the accompanying documents are arranged in the form of a study collection, and the displayed samples have been collected, arranged and presented in a manner that will also prove interesting to the general public and tourists.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215412</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 45 - 53</dcterms:extent>
+   <dcterms:isPartOf>Geological Study Collection of the Mercury Mine in Idrija (URN:ISSN:09224564) (Volume 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215412.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43814</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215412</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

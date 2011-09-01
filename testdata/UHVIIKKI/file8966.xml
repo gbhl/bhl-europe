@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zur  Synthese Pflanzen- und Tierökologischer Untersuchungen</dc:title>
+   <dc:title>Quantitative Untersuchungen über die Vogelfauna in den Wäldern Südfinnlands</dc:title>
+   <dc:title>Beiträge zur Morphologie der Analginen</dc:title>
+   <dc:publisher>Societas pro fauna et flora Fennica (fi Helsingfors)</dc:publisher>
+   <dc:contributor>Palmgren, Pontus.</dc:contributor>
+   <dc:contributor>Lönnfors, Frans.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>77e10258-b115-4347-8552-481eb583f042</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:relation>Acta zoologica Fennica, 6</dc:relation>
+   <dc:relation>Acta zoologica Fennica, 7</dc:relation>
+   <dc:relation>Acta zoologica Fennica, 8</dc:relation>
+   <dcterms:issued>1928</dcterms:issued>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:extent>51 s.</dcterms:extent>
+   <dcterms:extent>209 s. + 16 kuvasiv.</dcterms:extent>
+   <dcterms:extent>81 s. + 22 kuvasiv.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299947_acta_zoologica/299947_06-08_1928-1930/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299947_acta_zoologica/299947_06-08_1928-1930</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/77E10258B11543478552481EB583F042</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

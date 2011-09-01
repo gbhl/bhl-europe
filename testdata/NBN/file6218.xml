@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Catometopous genus Macrophthalmus as represented in the Collection of the Leiden Museum</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Tesch J.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Though not laying any claim to being considered a pioneer in this systematic treatise on the genus Macrophthalmus, a thorough account of which has been given by Ortmann in 1897, I hope a renewed investigation may be not unwelcome to carcinologists. The discrimination of the species of this genus, notwithstanding they are easily to be grouped around certain well-characterized forms, remains a troublesome task. As far as I know Ortmann (Zool. Jahrb. Abt. Syst., Bnd. 10, 1897, p. 340—342) was the first to give an analytical key of the species then known. Several authors, among whom we may name Miss Rathbun, Nobili, Stimpson and Laurie, have since described new species or cleared several yet undecided questions about imperfectly known forms, but it is especially to the accomplished carcinologist de Man that we owe the most important contributions to our knowledge in this respect and the minutest descriptions. 1) The rather rich collection of Macrophthalmus in the Leiden Museum has induced me to give a new account of it, taking as base Ortmann's revision of 1897. I much regret, that the terrible war that actually is devastating most of the civilized countries of Europe, has prevented me from getting informations about doubtful species, as it is impossible now to get access to type-specimens preserved in Museums of warfaring countries. 2) So I had to restrict myself almost entirely to the material of the Leiden Museum and it has been impossible to fill all the gaps left open by Ortmann. The number of names used for species of the genus under discussion is rather large. I give here a full list of the names that have come to my knowledge, alphabetically arranged, with reference to the first paper</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318723</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1915</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 149 - 204</dcterms:extent>
+   <dcterms:isPartOf>The Catometopous genus Macrophthalmus as represented in the Collection of the Leiden Museum (URN:ISSN:0024-0672) (Volume 1) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318723.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150009</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318723</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

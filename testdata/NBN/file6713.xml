@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Bulimulidae (Gastropoda, Euthyneura), 41) some Bulimulidea from French Guyana and Surinam, with notes on their Anatomy</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Breure A.S.H.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>During work for a generic revision of the family Bulimulidae some material from French Guyana and Surinam came to my hands. This material stems from the collections of the Muséum National d'Histoire Naturelle, Paris (MNHN), the Rijksmuseum van Natuurlijke Historie, Leiden (RMNH) and the Zoölogisch Museum, Amsterdam (ZMA). The specimens of the present study belong mainly to the genera Bulimulus Leach, 1814 and Drymaeus Albers, 1850 (among them the type material of Vernhout (1914)). The following abbreviations have been used: AG, albumen gland; EP, epiphallus; FL, flagellum; OV, ovotestis; P, penis; PR, prostate; SD, spermathecal duct; SP, spermatheca; VD, vas deferens. Recently Altena (1975) published some data on land Gastropoda from Surinam, including notes on some Bulimulidae. Restudying his material I have the following comments : (1) Drymaeus interruptofasciatus Vernhout = Drymaeus semimaculatus Pilsbry. (2) Drymaeus papyraceus Mawe sensu Altena = Drymaeus altenai sp. n. (3) Drymaeus succineus was described by Pilsbry (1901), not by Vernhout. The material upon which Vernhout based his record for Surinam consists of one specimen, which does not fit the redescription of Drymaeus succineus as given by Parodiz (1962). [I call in question whether the identification by Parodiz of succineus as a member of Stenostylus is correct]. It seems better to delete this taxon from the faunal list as given by Altena (1975). (4) Drymaeus quadrifasciatus Vernhout = Drymaeus vernhouti nom. n. (5) Simpulopsis corrugata Guppy belongs to the Bulimulinae instead of to the Amphibuliminae (misspelled Amphibulimulidae by Altena). 1) Notes on Bulimulidae, 3. — Basteria, 40: 3-6 (1976).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319218</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 107 - 115</dcterms:extent>
+   <dcterms:isPartOf>Notes on Bulimulidae (Gastropoda, Euthyneura), 41) some Bulimulidea from French Guyana and Surinam, with notes on their Anatomy (URN:ISSN:0024-0672) (Volume 50) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319218.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150504</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319218</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

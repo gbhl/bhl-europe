@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on Tropical Pholcidae I Panjange, a new genus of Indo-Australian Leaf- and rock-dwelling Pholcid spiders (Araneae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deeleman-Reinhold C.L.</dc:creator>
+   <dc:creator>Deeleman P.R.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The study of tropical spiders was taken up in the last part of the nineteenth century by Thorell, Simon and others, but since then passed through a long dormant stage. Only during the last few decades there was some revival. In particular numerous spider species from leaf-litter, ground debris, etc. have been described after collecting by special methods such as sieving, Berlese funnels and pitfall trapping. Spiders from another common habitat in South East Asian rainforests, the underside of leaves, seem to have been inadequately treated in older publications. Certain spiders, e.g. pholcids and clubionids, do not readily drop when disturbed, but stick firmly to their leaf substrate or escape sideways through twigs and branches. At present there is no adequate collecting method for this category of leaf-inhabiting spiders but to turn thousands of leaves one by one and pick them off by hand. The particular way of collecting must be the only reason why most species, which we thus collected during several visits to South East Asia, appear to be new to science. These new species were collected in various types of dense, humid forest in Borneo (Sabah and Kalimantan), Java, Sulawesi, Sri Lanka, Malay Peninsula and Luzon, and by F. R. Wanless in Sarawak, V. E. Davies and collaborators in North East Queensland, and J. R. Thomson in Kalimantan. Collecting efforts in the areas mentioned have been very rewarding and this leads to the expectation that in the areas mentioned and also in Sumatra, New Guinea and the Philippine Islands many species of Pholcidae still await discovery. Special attention should be given yet to spiders living in the canopy. There may be a considerable amount of endemism in this spider group and it is to be feared that many species will have become extinct by the wholesale destruction of Asian rainforests even before their discovery.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319084</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 121 - 130</dcterms:extent>
+   <dcterms:isPartOf>Studies on Tropical Pholcidae I Panjange, a new genus of Indo-Australian Leaf- and rock-dwelling Pholcid spiders (Araneae) (URN:ISSN:0024-0672) (Volume 57) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319084.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150370</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319084</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

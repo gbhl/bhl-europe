@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Naturkundliches Jahrbuch der Stadt Linz (Linz) 7 (1961)</dc:title>
+   <dc:creator>Donner  Josef, Hering  Erich M., Höninger  Walter, Janik  Vinzenz, Koller  Franz, Mayer  Gerald, Traunmüller  Josef, Werneck  Heinrich Ludwig v., Wirthumer  Johann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Heinrich Ludwig v. Werneck: Die Wurzel- und kernechten Stammformen der Pflaumen in Oberösterreich     7-  150. Josef Traunmüller, Heinrich Ludwig v. Werneck: Die Grünerle (Alnus viridis CHAIX-DC) im Bereiche des südlichen Böhmerwaldes   151-  174. Erich M. Hering: Blattminensuche in und um Linz   175-  199. Gerald Mayer: Studie an der Heidelibelle Sympetrum vulgatum (L.)   201-  217. Johann Wirthumer: Die Bembidienarten in ihrer Abhängigkeit von den Ablagerungen an den Flussufern   219-  234. Franz Koller: Die Bockkäfer (Cerambycidae) Oberösterreichs mit besonderen berücksichtigung des Grossraumes von Linz (Ein  Beitrag zu Coleopterenfauna Oberösterreichs)   235-  276. Walter Höninger, Josef Donner: Ergebnisse Eines Vogel-Ansiedlungsversuches im Auwald bei Steyregg   277-  284. Gerald Mayer: Aktivitätsdichte und Aktivitätsdominanz von Vögeln in einem Aubestand bei Steyregg   285-  306. Vinzenz Janik: Die Bodenkarte von Linz und ihre Auswertung für die Stadtplanung   307-  329</dc:description>
+   <dc:date>1961</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24585.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24585.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24585</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

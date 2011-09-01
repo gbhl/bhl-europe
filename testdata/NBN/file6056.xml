@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Taxonimic association of mus faberi Jentink with Rattus xanthurus (Gray), a species known only from Celebes (Rodentia: Muridae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Musser G.G.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Over 60 named forms of Rattus are recorded from Celebes (Laurie &amp; Hill, 1954). Some of these names were first proposed in the i8oo's. The taxa they represent were sometimes based on only one specimen and were often poorly diagnosed. Consequently, the taxonomie status of the names has been unclear. Such names are stumbling blocks to accurate identification and sound classification of the species of Rattus which occur on Celebes. Mus faberi, named and described by F. A. Jentink in 1883, is a classic example. The name represents a taxon based on a single specimen. The original description of that specimen was short and vague. No other specimens have ever been allocated to M. faberi in the mammalogical literature and the taxonomie status of the name has remained obscure since Jentink proposed it. I had the opportunity of examining the holotype of M. faberi during a recent visit to the Rijksmuseum van Natuurlijke Historie in Leiden. Results of that study are offered in the present paper wherein M. faberi is associated with Rattus xanthurus. ABBREVIATIONS AND METHODS The specimens discussed in this paper are in the collections of the American Museum of Natural History (A.M.N.H.), the British Museum (Natural History) (B.M.), the Rijksmuseum van Natuurlijke Historie (R.M.N.H), the personal collection of H. J. V. Sody (these specimens are housed in the Rijksmuseum van Natuurlijke Historie and will be indicated as "Sody No."), and the United States National Museum of the Smithsonian Institution (U.S.N.M.). Measurements of the length of the head and body and the length of the tail are those of the collectors and were taken from labels attached to study skins. I measured the length of the hind foot of all the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318561</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 107 - 118</dcterms:extent>
+   <dcterms:isPartOf>The Taxonimic association of mus faberi Jentink with Rattus xanthurus (Gray), a species known only from Celebes (Rodentia: Muridae) (URN:ISSN:0024-0672) (Volume 45) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318561.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149847</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318561</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

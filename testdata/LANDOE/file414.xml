@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 7 (2000)</dc:title>
+   <dc:creator>Nitsche  Karl-Andreas, Pachinger  Karol, Reichholf  Josef, Sage  Walter, Segieth  Franz, Seidl  Fritz, Seidl  Wolfgang, Seidl III  Fritz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl-Andreas Nitsche, Karol Pachinger: Die Biber [Casfor fiber L, 1758) in der Slowakei - Gegenwärtige Situation, Entwicklung und Perspektiven   259-  270. Josef Reichholf: Veränderungen in Vorkommen und Häufigkeit der Brutvögel am unteren Inn : I. Abnahmen und Verluste seit 1960   271-  292. Josef Reichholf: Starker Kronenbruch durch Eisregen und seine Auswirkungen auf Vogelbestände im Auwald am unteren Inn   293-  297. Franz Segieth: Avifaunistischer Jahresbericht vom Unteren Inn 1998   299-  309. Fritz Seidl: Nachweis einer vitalen Population der Äskulapnatter (Elaphe longissima longissima im Gemeindegebiet von Braunau am Inn (Oberösterreich)   311-  314. Josef Reichholf: Die Verbreitung der Äskulapnatter Elaphe iongissima zwischen Burghausen und Passau-Jochenstein: Neue Befunde und eine historische Interpretation   315-  320. Josef Reichholf, Walter Sage: Nachtkerzenschwärmer Proserpinus proserpina (PALLAS, 1772) am unteren Inn   321-  325. Josef Reichholf: Früheres Vorkommen der beiden Quelljungfer-Arten Cordulegaster bidentatus und Cordulegaster boltonii an den "Dachlwänden" am unteren Inn   327-  328. Josef Reichholf: Gespinstmotten paaren sich mit Apfelwicklern   329-  330. Fritz Seidl: Enorme Langlebigkeit und Widerstandsfähigkeit von Neritina (Vittina) gagates LAMARCK 1822   331-  341. Wolfgang Seidl, Fritz Seidl III: Ein Vorkommen von Charpentieria itala braunii (ROSSMÄSSLER 1836) in Braunau am Inn (Oberösterreich)   343-  344</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25192.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25192.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25192</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

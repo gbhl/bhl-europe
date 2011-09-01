@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On two different growth-forms of Merulina laxa, Dana</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>It is a well-known fact that in many species of reef-corals the form of different colonies is largely subject to external influences that affected it during its growth. Not only in different colonies is this variability found, but also parts of the same colony may offer a striking contrast when compared with one another. One of the causes that modify the growth-form of various colonies of reef-corals, especially of the branching ones, is the action of the waves that roll in upon the reef after they have been more or less dissolved at the edge. These waves constantly sweep over the tops of the coral-colonies so as to prevent them to grow in height above a certain level. Together with the larger colonies whose tops are constantly in contact with the waves there usually are smaller and younger ones growing in shallow places between the former. As a rule these smaller colonies are much more regularly built: they display in all directions an almost equal development. In their further growth the tops of these colonies at last also reach the level of wave-action and from that time the uppermost parts are constantly in contact with these waves. Then in many species no further increase of height takes place, but the highest part of the colony tends to enlarge itself in a lateral direction by the formation of thicker and larger branches as may be observed in colonies of Pocillopora and Montipora. The same formation of irregular and stunted branches is observable in specimens of Montipora that are exposed to strong currents 1). In other species the lateral growth-tendency gives rise to the formation of a multitude of small branches that form a dense mass on the top of the colony. This phenomenon I observed in the higher parts of Merulina</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318420</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1924</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 36 - 38</dcterms:extent>
+   <dcterms:isPartOf>On two different growth-forms of Merulina laxa, Dana (URN:ISSN:0024-0672) (Volume 8) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318420.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149706</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318420</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

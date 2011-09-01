@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revisionary notes on the subfamily Homolobinae (Hymenoptera: Braconidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera; Braconidae; Homolobinae; Homolobus; Indo-Australian; Indonesia; New Guinea; Australia; distribution; key</dc:subject>
+   <dc:description>Two new species of the genus Homolobus Foerster, 1862, one from Lombok, Java, the other from New Guinea, are described. The genus Westwoodiella Szépligeti, 1904, is redescribed and illustrated; the new tribe Westwoodiellini is created to include it in the subfamily Homolobinae. Rogas pectoralis Herrich-Schäffer, 1838 is synonymized with Homolobus discolor (Wesmael, 1835) syn. nov., and R. simplex Herrich-Schäffer, 1838 with Homolobus annulicornis (Nees, 1834) syn. nov. Homolobus simplex (Watanabe, 1932) nee Herrich-Schäffer, 1838 is renamed as H. watanabei nom. nov.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318892</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 359 - 368</dcterms:extent>
+   <dcterms:isPartOf>Revisionary notes on the subfamily Homolobinae (Hymenoptera: Braconidae) (URN:ISSN:0024-0672) (Volume 66) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318892.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150178</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318892</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

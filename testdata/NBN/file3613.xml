@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 65. A preliminary review of the Certhiidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Martens J.</dc:creator>
+   <dc:creator>Tietze D.T.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Certhiidae</dc:subject>
+   <dc:subject>species limits</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>First Reviser</dc:subject>
+   <dc:subject>eastern Palaearctic region</dc:subject>
+   <dc:subject>Indomalayan region</dc:subject>
+   <dc:subject>morphology</dc:subject>
+   <dc:subject>bioacoustics</dc:subject>
+   <dc:subject>molecular geneticsz</dc:subject>
+   <dc:description>Recent proposed taxonomic changes in the Certhiidae are reviewed within the geographic scope of this series and their reliability is discussed in terms of the Biological Species Concept, with respect to secondary contacts, bioacoustics, and molecular genetics. Certain hitherto unpublished data, useful for the understanding of taxonomic decisions, are included. In accordance with Article 24.2.3 of the Code one of us acts as First Reviser in selecting the correct spelling of the name of the recently described Chinese species.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210083</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 273 - 286</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 65. A preliminary review of the Certhiidae (URN:ISSN:00240672) (Volume 80-5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210083.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43023</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210083</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

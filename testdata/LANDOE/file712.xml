@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 6_1917 (1917)</dc:title>
+   <dc:creator>Anonymus , Benick  Ludwig, Bernhauer  Max, Born  Paul, Breit  Josef, Depoli  Guido, Mader  Leopold, Matcha  Jaroslav, Netolitzky  Fritz, Obenberger  Jan, Pape  C., Reitter  Edmund, Spaeth  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Max Bernhauer: Zur Staphylinidenfauna von Nordamerika. 7. Beitrag.     1-    4. Max Bernhauer: Zwei neue Xenocephalus-Arten aus dem tropischen Amerika.     4-    6. Edmund Reitter: Über Chrysochloa viridis Dfschm. und einige damit verwandte Formen.     6-    8. Franz Spaeth: Über Cassida cori Fairm. und brevis Weise.     8-    9. C. Pape: Die Abberrationen der Strangalia septempunctata Fabr.     9-   11. Guido Depoli: Anommatus (subgen. nov. Neanommatus m.) thoracicus m.    11-   12. Paul Born: Carabus vagans Matheyi nov. subspec.    12-   13. Paul Born: Callisthenus Kuschakewitschi Plasoni nov.subsp.    13-   14. Anonymus: Neubeschreibungen.    14-   16. Max Bernhauer: Neue Staphyliniden der palaearktischen Fauna nebst synonymischen Bemerkungen.    17-   23. Franz Spaeth: Beiträge zur Kenntnis der süd- und zentralamerikanischen Cassidinen.    24-   31. Jan Obenberger: Neue exotische Agrilus-Arten (Coleoptera-Buprestidae).    32-   37. Jan Obenberger: Sieben neue palaearktische Buprestiden.    38-   40. Max Bernhauer: 15. Beitrag zur Staphylinidenfauna des indo-malayischen Gebietes.    41-   46. Jan Obenberger: Neue palaearktischeBuprestiden.    46-   54. Jaroslav Matcha: Chrysochloa vittigera ab. nova Matheyi m.    54. Ludwig Benick: Notizen über europäische Steninen.    54-   62. Jan Obenberger: Ein Beitrag zur Kenntnis der Gattung Psiloptera. (Coleoptera-Buprestidae).    62-   64. Anonymus: Neubeschreibungen.    64. Josef Breit: Zwei neue zentralasiatische Käferarten.    65-   67. Josef Breit: Beiträge zur Kenntnis der europäischen Käferfauna.    68-   73. Leopold Mader: Neue palaearktische Coleopteren und biologische Notizen.    73-   76. Fritz Netolitzky: Drei neue Ocys der Mittelmeerfauna (Bembidiini, Carabidae).    77-   80. Jan Obenberger: Ein Beitrag zur Kenntnis der Gattung Psiloptera. (Coleoptera-Buprestidae). Fortsetzung und Schluss.    80-   88. Anonymus: Neubeschreibungen.    88</dc:description>
+   <dc:date>1917</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26368.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26368.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26368</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

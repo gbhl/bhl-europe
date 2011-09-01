@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 128 (1988)</dc:title>
+   <dc:creator>Anonymus , Brugger  Walter, Enzinger  Kurt, Florey  Gerhard, Greinwald  Hermann, Gstrein  Peter, Hanisch  Ernst, Koller  Fritz, Krissl  Michaela, Lechner  Elmar, Lipburger  Peter Michael, Riedl  Helmut, Rinnerthaler  Alfred, Rücker  Thomas, Stadler  Georg, Strobl  Walter, Thaler  Heinrich, Zaisberger  Friederike</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Fritz Koller: Die Anfänge der Salzburger Städte. Civitas und verwandte Begriffe in den Salzburger Quellen.     5-   32. Walter Brugger: Die Glaubensboten Baierns von Severin bis Korbinian.    33-   46. Peter Michael Lipburger: "Quoniam si quis vult operari, nec manducet .." Auffassungen von der Arbeit vor allem im Mittelalter.    47-   86. Georg Stadler: Was hat sich vom alten Salzburger Dom und dessen Einrichtung erhalten?.    87-  176. Heinrich Thaler: Eine medizinische Handschrift aus dem Armenspital in Badgastein (1636-1638).   177-  182. Hermann Greinwald: Die "Drei Waller" in Badgastein.   183-  192. Kurt Enzinger: Das Graßlgut zu Bach. Geschichte eines Bauernhofes.   193-  240. Gerhard Florey: Zum Frömmigkeitsbild des Salzburger Protestantismus.   241-  250. Michaela Krissl: Die Salzburger Neubürger im 15. und 16. Jahrhundert.   251-  314. Elmar Lechner: Salzburg als Entstehungsort der österreichischen Pädagogischen Historiographie.   315-  344. Ernst Hanisch: Die Salzburger Presse in der Ersten Republik 1918-1938.   345-  364. Alfred Rinnerthaler: Von den "Pfaffenlehrbuben" zu nationalsozialistischen Ausleseschülern. Das "Eb. Kollegium Borromäum" in nationalsozialistischer Zeit.   365-  396. Helmut Riedl: Das UNESCO-MaB-Projekt: Ökogeographische Vergleichsuntersuchungen (1981-1986).   397-  406. Thomas Rücker: Bemerkenswerte Pilzfunde aus Salzburg.   407-  414. Walter Strobl: Bemerkenswerte Funde von Gefäßpflanzen im Bundesland Salzburg.   415-  424. Peter Gstrein: Neuaufnahme eines vorgeschichtlichen Abbaus im Arthur-Stollen (Bergbau Mitterberg).   425-  438. Friederike Zaisberger: Tätigkeitsbericht des Salzburger Landesarchivs 1987.   439-  442. : Zum Salzburger Schrifttum.   443-  458. Anonymus: Gesellschaftsnachrichten. I. Mitgliederbewegung.   459-  460. Anonymus: Gesellschaftsnachrichten. II. Totentafel.   460-  464. Anonymus: Gesellschaftsnachrichten. III. Vorträge.   464-  465. Anonymus: Gesellschaftsnachrichten. IV. Exkursionen und Führungen.   465-  466. Anonymus: Gesellschaftsnachrichten. V. Vereinsleitung.   466</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29143.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29143.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29143</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

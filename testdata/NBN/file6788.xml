@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Diagnosis of new species of Macrurous Decapod Crustacea from the Siboga-expedition</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Man, de J.G.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Nematocarcinus tenuirostris Sp. Bate, var. sibogae n. Stat. 300. January 30, 1900. 10° 48'.6 S., 123° 23'.1 E. 918 m. Bottom fine grey mud. 4 adult females, 3 of which are laden with eggs. In the typical Nemat. tenuirostris, as described by Spence Bate (Report Challenger Macrura) and Miss Rathbun (The Brachyura and Macrura of the Hawaiian Islands. Wash. 1906, p. 926, Pl. XXIII, fig. 6), the rostrum is from two-thirds to one-half as long as the rest of the carapace, projecting horizontally forwards, the upper margin is slightly convex and it bears 9—13 dorsal and 1 or 2 ventral teeth. In the adult specimens, collected by the „Siboga" off the south coast of Rotti, the rostrum measures, however, somewhat more than two-thirds the length of the carapace proper and is more or less obliquely turned upward from the orbital margin to the tip; it is styliform, tapering, quite straight, not at all convex in front of the eyes and armed above with 8—10 teeth, beneath with one and of the dorsal teeth 3 or 4 stand on the carapace, posterior to the orbital margin. Length 146 mm. Plesionika longipes A. M.-Edw., var. indica n. Pandalus longipes, A. Milne-Edwards, Recueil de Figures de Crustacés nouveaux ou peu connus, Avril 1883, Pl. 20. Stat. 254. December 10. 5° 40' S., 132° 26' E. Near the Kei-islands. 310 m. Bottom fine, grey mud. 1 male and 8 ova-bearing females. When the figures in the quoted „Recueil" are indeed correct and accurate, the specimens, collected by the „Siboga", differ from the typical species that occurs in the West Indies, by the somewhat shorter rostrum, which is less strongly upturned and armed both dorsally and ventrally</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319293</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1917</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 279 - 284</dcterms:extent>
+   <dcterms:isPartOf>Diagnosis of new species of Macrurous Decapod Crustacea from the Siboga-expedition (URN:ISSN:0024-0672) (Volume 3) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319293.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150579</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319293</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

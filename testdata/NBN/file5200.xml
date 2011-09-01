@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biological results of the snellius expedition XXIII. The genus Macrophthalmus (Crustacea, Brachyura)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Barnes R.S.K.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>This paper records the species of Macrophthalmus (Ocypodidae, Macrophthalminae) collected by the Snellius Expedition during its exploration of the eastern region of the Malay Archipelago in the years 1929 and 1930. In addition, further material from this area in the collections of the Rijksmuseum van Natuurlijke Historie, Leiden, is included. Full descriptions, figures and synonymies are given for those species recorded below which have not previously been covered by this author in his survey of Macrophthalmus (see Barnes, 1966a; 1966b; 1967; 1968a; 1970). To facilitate this, material of these species has also been examined from the collections of the National Museum, Singapore, the Muséum National d'Histoire Naturelle, Paris, and the British Museum (Natural History), London. A full account of the localities mentioned below in connection with material from the Snellius Expedition has been given by Boschma (1936). Sixteen species are included in this report; those redescribed are indicated by an asterisk in the list given below. M. abercrombiei Barnes 2 specimens M. bosci Audouin 36 ,, *M. brevis (Herbst) 3 ,, M. convexus Stimpson 48 ,, M. crassipes H. M. Edwards 23 ,, *M. crinitus Rathbun 39 ,, M. definitus Adams &amp; White 15 ,, *M. dentatus Stimpson I ,, M. erato De Man 4 ,, *M. graeffei A. M. Edwards 2 ,,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317705</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 40</dcterms:extent>
+   <dcterms:isPartOf>Biological results of the snellius expedition XXIII. The genus Macrophthalmus (Crustacea, Brachyura) (URN:ISSN:0024-1652) (Volume 115) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317705.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148991</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317705</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

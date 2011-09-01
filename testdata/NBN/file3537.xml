@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Gulella johannae spec. nov. (Gastropoda, Pulmonata, Streptaxidae), a new land snail from the Drakensberg range in Limpopo Province, South Africa, with notes on G. johannesburgensis (M. &amp; P.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:subject>Pulmonata</dc:subject>
+   <dc:subject>Streptaxidae</dc:subject>
+   <dc:subject>Gulella, Gulella johannesburgensis</dc:subject>
+   <dc:subject>taxonomy;Drakensberg range</dc:subject>
+   <dc:subject>South Africa</dc:subject>
+   <dc:description>Gulella (s.l.) johannae n. sp. is described from a few forest localities in the Tzaneen District, Limpopo Province, South Africa. It is characterized by a cylindrical, costulate shell with an almost entire peristome and a four-fold apertural dentition consisting of a prominent angular lamella (delimiting an only here discontinuous peristome), a mid-labral denticle, a left basal denticle, and a mid-columellar process. The shell is somewhat similar to that of G. johannesburgensis, but is consistently larger and more slender and has more whorls, while at the same time the apertural dentition is better developed; the almost uninterrupted peristome also appears to be a signifi cant character. This new taxon most likely is a restrictedrange endemic on the eastern flanks of the northern Drakensberg escarpment. Numerical data of a lot of material identified and mostly also published as G. johannesburgensis show that probably not all specimens belong to this taxon so that more than one species may be involved here.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209636</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 63 - 72</dcterms:extent>
+   <dcterms:isPartOf>Gulella johannae spec. nov. (Gastropoda, Pulmonata, Streptaxidae), a new land snail from the Drakensberg range in Limpopo Province, South Africa, with notes on G. johannesburgensis (M. &amp; P.) (URN:ISSN:0024-0672) (Volume 80-1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209636.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41223</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209636</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

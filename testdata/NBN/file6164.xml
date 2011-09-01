@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Three species of Crustacea Decapoda Macrura from Southern Brazil, including a new species of Upogebia</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In June 1954, during an ecological study of the mangroves near the Research Station of the São Paulo University Oceanographic Institute at Cananeia, about 200 km south of Santos, southern Brazil, Dr. S. Gerlach of the Zoological Institute and Museum of the University of Kiel, Germany, collected some Crustacea representing three species of Decapoda Macrura; two of these belong to the family Alpheidae and one to the Callianassidae. I am most grateful to Dr. Gerlach for the privilege to study this small but interesting collection, which now is the property of the Kiel Museum; duplicate specimens are inserted in the collection of the Rijksmuseum van Natuurlijke Historie at Leiden. Family ALPHEIDAE The two species of Alpheidae were collected near Cananeia, partly under stones, wooden boards, etc., in the tidal zone of a sandy mud beach, and partly in the mud of the edges of mangrove pools. As all the specimens were combined to one lot it is not possible to find out whether the two species occurred at both localities, or that in one or both habitats only one of the species was found. Alpheus armillatus H. Milne Edwards The material consists of 13 specimens, the body length of which varies between 12 and 32 mm, the two ovigerous females being 24 and 32 mm long. The specimens agree quite well with the descriptions given in the literature and especially with that by Zimmer (1913, p. 401, figs. K1—T1). Like in Zimmer's material, my specimens show the external demarcation of the grooves on either side of the rostrum far less sharply than in Coutière's (1899) figs. 66 and 67, though the grooves themselves are quite distinct.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318669</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 173 - 181</dcterms:extent>
+   <dcterms:isPartOf>Three species of Crustacea Decapoda Macrura from Southern Brazil, including a new species of Upogebia (URN:ISSN:0024-0672) (Volume 34) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318669.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149955</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318669</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

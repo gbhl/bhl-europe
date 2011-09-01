@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Macrofauna van de wateren in "De Grrote Peel" : een voorjaarsbeeld</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Tol, van J.</dc:creator>
+   <dc:subject>Hydrobiologie</dc:subject>
+   <dc:subject>De Groote Peel</dc:subject>
+   <dc:subject>Noordbrabant</dc:subject>
+   <dc:subject>Limburg</dc:subject>
+   <dc:subject>macrofauna</dc:subject>
+   <dc:description>The waters of the State Reserve "De Groote Peel", situated on the border of the provinces of North-Brabant and Limburg in the Netherlands, were investigated during Easter 1971 (8-11th of April). The reserve is a former peat-moor, where peat was cut until the first half of this century. Now vast areas of Molinia caerulea with wild shoots of Salix aurita and Betula pubescens are found. Special attention was paid to waterbugs (Heteroptera aquatica and semi-aquatica) and waterbeetles (Coleoptera aquatica). The species present indicate slightly polluted oligotrophic water. The pollution is probably caused by three factors: the inflow of eutrophic water, the breeding of Blackheaded Gulls (Larus ridibundus) and the tourists. Table 1 gives a list of the insect-species collected. One macropterous specimen of Hebrus ruficeps was found between 100 micropterous specimens. Macropterous specimens of this species were only found twice previously in the Netherlands (lit. 6 and 8). A comparison with the results of Higler (1967), who investigated the same area in autumn 1966, is given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:303572</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 132 - 140</dcterms:extent>
+   <dcterms:isPartOf>Macrofauna van de wateren in "De Grrote Peel" : een voorjaarsbeeld (URN:ISSN:00241520) (Volume 75) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/303572.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/133134</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/303572</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

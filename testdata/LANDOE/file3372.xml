@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biologiezentrum Sonderpublikationen SB15 (1983)</dc:title>
+   <dc:creator>Anonymus , Dimt  Gunter, Dimt  Heidelinde, Eckhart  Lothar, Gusenleitner  Fritz, Kohl  Hermann, Marks  Alfred, Mayer  Gertrud, Pertlwieser  Manfred, Prokisch  Bernhard, Ratzenböck  Josef, Reitinger  Josef, Speta  Franz, Tovornik  Vlasta, Ulm  Benno</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Benno Ulm: 150 Jahre Oberösterreichisches Landesmuseum, Oberösterreichischer Musealverein     2-    4. : Die Mitarbeiter.     6. Josef Ratzenböck: Zum Geleit!     7. Hermann Kohl: Vorwort.     9-   10. Benno Ulm: Das älteste Kulturinstitut des Landes.    11-   42. Bernhard Prokisch: Das Museum Francisco-Carolinum.    43-   54. Benno Ulm: Das Schloßmuseum zu Linz. Von der Burg zum Museum.    55-   70. Hermann Kohl: Erdwissenschaften.    71-   92. Franz Speta: Botanik    93-  106. Fritz Gusenleitner: Zoologie. Wirbellose Tiere.   107-  118. Gertrud Mayer: Zoologie. Wirbeltiere.   119-  130. Josef Reitinger: Ur- und Frühgeschichte   131-  146. Manfred Pertlwieser, Vlasta Tovornik: Bodendenkmalpflege.   147-  154. Lothar Eckhart: Römerzeit und Frühes Christentum.   155-  170. Benno Ulm: Kunst- und Kulturgeschichte.   171-  216. Alfred Marks: Graphik.   217-  236. Alfred Marks: Bibliothek.237   237-  248. Heidelinde Dimt: Münzen und Medaillen.   249-  250. Gunter Dimt: Volkskunde.   251-  268. Heidelinde Dimt: Zoll- und Finanzgeschichte.   269-  270. Josef Reitinger: Rechtsaltertümer und Strafrechtsmuseum.   271-  274. Josef Reitinger: Technikgeschichte und Schiffahrt.   275-  290. Anonymus: Nachweis der abgebildeten Objekte.   291-  294. Anonymus: Bildnachweis.   295</dc:description>
+   <dc:date>1983</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/31370.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/31370.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=31370</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

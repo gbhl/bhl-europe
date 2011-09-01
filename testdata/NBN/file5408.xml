@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XXVI. Kritische Revision der Gattung Kailasius</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Genus Kailasius Moore Kail. inopinatus inopinatus Kotzsch (Ent. Zeit. v. 54 Nr. 3 p. 18-21) Nordwest-Afghanistan, Firuskuhi-Montes, 1 ♂ Holotype, 1 ♀ Allotype, abg. Ent. Zeit. v. 54 Nr. 3 p. 18, 9 ♂, f. rubroanalis n.c. 2 ♂, 10 ♀, alle Paratypen ex c. Kotzsch; Marak, Afghanistan 1 ♂ ex c. Avinoff (CarnegieMuseum). Eine distincte, mittelgrosse, ♂ 32-36, ♀ 35-38 mm, Art, die im Aussehen trotz der grösseren Augenflecke noch stark an Tad. (Euk.) loxias Püngeler erinnert. Die männlichen Genitalorgane von inopinatus Kotzsch sind aber wenig verschieden von denen der charltonius-Gruppe, sodass die Art wohl besser zu dieser zu ziehen ist. Das VIII. Tergit und der Uncus gleichen denen von Kail. charltonius Gray, während die Valve, die höher ansetzt und die am oberen Hinterende lappenartig ausgezogen ist, mehr der von Tad. (Euk.) imperator Oberthür ähnelt. Dass inopinatus Kotzsch eine bona species und nicht eine subspecies einer der beiden Vergleichsarten ist, muss aus dem besonderen Bau der Sphragis geschlossen werden. Diese ist nicht ringförmig und nur ventral an den Ecken des letzten Sternits angeheftet; sie zeigt ventral eine Mittelrinne, die oralwärts von einer Quererhöhung begrenzt wird. Nähere Einzelheiten können den sehr guten Abbildungen in Ent. Zeit. Nr. 3 p. 19/20 entnommen werden. Flügelfond dicht beschuppt, cremeweiss; Befransung weiss. ♂ im Vorderflügel, der am Vorderrand und an der Wurzel spärlich schwarz gekörnt ist, mit hellem, mittelbreitem Glasband bis über Cu2. Submarginale reduziert, von M2 ab in einzelne Flecke aufgelöst, die meist sehr dünn sind und Cu2 niemals erreichen. Costalband schmal, bis M2, mit strichartigem Fortsatz darüber hinaus. Zellflecke oblong, kräftig. Hinter-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317913</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1959</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 249 - 266</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XXVI. Kritische Revision der Gattung Kailasius (URN:ISSN:0024-0672) (Volume 36) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317913.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149199</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317913</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

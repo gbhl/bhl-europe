@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 2 (1880)</dc:title>
+   <dc:creator>Anonym , Burg  Adam Freiherr von, Burgerstein  Alfred, Hayek  Gustav von, Kostlivy  Stanislaus, Lorenz  Ludwig von Liburnau, Ludwig  Ernst, Oser  Johann, Pierre  Victor, Pisko  Franz Josef, Pokorny  Alois, Simony  Friedrich, Thümen  Felix von, Toula  Franz, Vincenti  Carl Ritter von, Weiss  Edmund</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Carl Ritter von Vincenti: Ueber arabische Pferde. Nach eigenen Aufzeichnungen.     1-   26. Ernst Ludwig: Ueber einige physikalische und chemische Eigenschaften der Gase.    27-   68. Alfred Burgerstein: Ueber die Kartoffelpflanze.    69-  122. Johann Oser: Ueber den Stickstoff.   123-  149. Franz Josef Pisko: Ueber die neuen Grundanschauungen in der Physik.   151-  232. Alois Pokorny: Ueber die Grenzen der Naturreiche.   233-  269. Adam Freiherr von Burg: Das Wasser in dynamischer Beziehung.   271-  320. Ludwig von Liburnau Lorenz: Ueber das untermeerische Heimwesen.   321-  408. Victor Pierre: Ueber elektrische Beleuchtung.   409-  464. Gustav von Hayek: Die Säugethiere des nördlichen Stillen Oceans.   465-  494. Friedrich Simony: Die Wüstengebiete der Erde.   495-  540. Carl Ritter von Vincenti: Der Dämon des Hanfes.   541-  567. Edmund Weiss: Ueber Veränderungen am Sternenhimmel.   569-  587. Felix von Thümen: Die Pilze im Haushalt der Menschen.   589-  619. Franz Toula: Ueber die säculeren Hebungen und Senkungen der Erdoberfläche. (1 Falttafel.)   621-  716. Stanislaus Kostlivy: Ueber Erdmagnetismus.   717-  742. Anonym: Jahres-Bericht. (Seiten III-XLVIII.)</dc:description>
+   <dc:date>1880</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29957.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29957.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29957</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

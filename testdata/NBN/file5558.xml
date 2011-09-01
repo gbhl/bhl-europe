@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The shifting of the molar row with regard to the orbit in Equus and Giraffa</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Willemse M.C.A.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>The difference in shape and in function of the postorbital bar in horse and giraffe has been pointed out by Marinelli (1933, pp. 201-222). In Giraffa the molar row extends to below the orbit. The pressure exercised on the molars by the musculus temporalis is diverted principally along the postorbital bar, and to a lesser extent along the zygomatic arch. In Equus, however, the molar row ends in front of the orbit. Therefore, the pressure exercised on the molars cannot be diverted along the postorbital bar. In the horse it is the function of this bar to divert the pressure exercised by the lower jaw in its articulation with the skull. This pressure reaches the postorbital bar by way of the zygomatic arch. In the Selenodontia (Ruminantia) the development of horns and antlers also has its influence on the postorbital bar (Marinelli, 1933, p. 205). In those animals which use their horns and antlers in fighting, the bar may serve to protect the eye. However this may be, these influences have no bearing on the relation between upper jaw and postorbital bar. Therefore, horse and giraffe may be considered as pronounced types having a postorbital bar which diverts the pressure of articulation and jaw pressure respectively. Thus in Giraffa the position of the molar row with regard to the orbit has an influence on the postorbital bar. Marinelli (1933, p. 206) states that in Giraffa the molar row extends to about half-way below the orbit. In Okapia and in fossil giraffes, e.g., Helladotherium, the molar row reaches even to below the posterior margin of the orbit, and in connexion therewith a well developed postorbital bar is present. A clear example of the influence of the position of the maxillary tooth row</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318063</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1950</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 311 - 326</dcterms:extent>
+   <dcterms:isPartOf>The shifting of the molar row with regard to the orbit in Equus and Giraffa (URN:ISSN:0024-0672) (Volume 30) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318063.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149349</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318063</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A contribution to the knowledge of non-marine Mollusca of South West Africa</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>The moment to collate scattered notes on South West African non-marine molluscs arrived last year when Mr. B. H. Lamoral of the Natal Museum, Pietermaritzburg (South Africa), entrusted the present author with the study of material obtained during a Council of Scientific and Industrial Research (C.S.I.R., Pretoria)-sponsored collecting trip. During Mr. Lamoral's explorations in 1969 in South West Africa non-marine molluscs were obtained as a sideline. Nevertheless the material is certainly considered sufficiently interesting to warrant publication. South West African material from various sources was studied and the following abbreviations have been used: BM for British Museum (Natural History), London; NM for Natal Museum, Pietermaritzburg; RMNH for Rijksmuseum van Natuurlijke Historie, Leiden; 1/d for the ratio length/ major diameter of shells, which gives an indication of the shape of the specimen under discussion. For small shells the figures for 1/d have been calculated from micrometer readings, so that these figures may not always agree with those calculated from the measurements in mm. Collecting localities of the Lamoral expedition have been indicated by the quarter degree square system. Grid references are given according to this system as explained by Poynton (1964: 3-4, fig. 1) and in a pamphlet from the Botanical Research Institute, Pretoria (October 1967), which gives lists of onedegree squares in various parts of Southern Africa. Acknowledgements are due to Mr. Lamoral and the Director of the Natal Museum, Dr. J. A. Pringle, for entrusting us with the study of the valuable South West African material. Furthermore the author owes a debt of gratitude to Dr. C. O. van Regteren Altena and Mr. E. Gittenberger (Rijks-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318771</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 43 - 73</dcterms:extent>
+   <dcterms:isPartOf>A contribution to the knowledge of non-marine Mollusca of South West Africa (URN:ISSN:0024-0672) (Volume 45) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318771.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150057</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318771</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

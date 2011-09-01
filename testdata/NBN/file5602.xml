@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Two new and aberrant species of Braconidae (Hymenoptera) from Japan</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:creator>Maetô K.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Opiinae; Agathidinae; Diachasmimorpha-group; Pseudorhinoplus; Fopius; Zelomorpha; Palaearctic; Afrotropical; Oriental; Australian; Nearctic; Holarctic; Japan; key</dc:subject>
+   <dc:description>One new species of the genus Pseudorhinoplus Fischer, 1972, and one of the genus Zelomorpha Ashmead, 1900 from Japan are described and illustrated. The generic limits of both genera are discussed. The genus Ahngeria Kokujev, 1902 is a new junior synonym of Coccygidium Saussure, 1892, and the subgenus Fopius Wharton, 1987 is given generic rank. New combinations are: Pseudorhinoplus taiwanicus (Fischer, 1975), Diachasmimorpha mellea (Gahan, 1915), D. longicaudata (Ashmead, 1905), D. aino (Watanabe, 1938), D. paeoniae (Tobias, 1980), D. tryoni (Cameron, 1911), and Coccygidium transcaspicum (Kokujev, 1902).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318107</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1990</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 59 - 70</dcterms:extent>
+   <dcterms:isPartOf>Two new and aberrant species of Braconidae (Hymenoptera) from Japan (URN:ISSN:0024-0672) (Volume 64) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318107.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149393</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318107</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

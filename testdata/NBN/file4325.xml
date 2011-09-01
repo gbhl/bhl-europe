@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Flying high: on the airborne dispersal of aquatic organisms as illustrated by the distribution histories of the gastropod genera Tryonia and Planorbarius</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Wesselingh F.P.</dc:creator>
+   <dc:creator>Cadée G.C.</dc:creator>
+   <dc:creator>Renema W.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>avian dispersal</dc:subject>
+   <dc:subject>aquatic taxa</dc:subject>
+   <dc:subject>biogeography</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:description>The actual and fossil distribution patterns of the aquatic gastropod genera Tryonia and Planorbarius indicate that avian dispersal was an important dispersal mechanism in the geological past. Combining the distribution histories of these genera with ecological data on modern relatives provides insights into the process of dispersal of aquatic taxa in general. Avian dispersal of aquatic taxa is facilitated by a variety of factors, including mass occurrence in resting/foraging places of migrating birds, ways to attach to the birds and to overcome desiccation during flight, as well as easy reproduction from a single specimen when introduced into a new habitat. The uncertain taxonomical status of aquatic organisms, as well as biased preservation and sampling, provide serious drawbacks for understanding the importance of aerial dispersal.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:235212</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 165 - 174</dcterms:extent>
+   <dcterms:isPartOf>Flying high: on the airborne dispersal of aquatic organisms as illustrated by the distribution histories of the gastropod genera Tryonia and Planorbarius (URN:ISSN:0016-7746) (Volume 78)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/235212.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/54013</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/235212</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

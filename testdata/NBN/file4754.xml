@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Tabel voor het determineren van de landzoogdieren van Nederlands Nieuw-Guinea</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Husson A.M.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>De hier gegeven tabel werd samengesteld naar aanleiding van een wens om op gemakkelijke wijze de namen te leren kennen van de zoogdieren die in Nederlands Nieuw-Guinea schade kunnen toebrengen aan land-, tuin- en bosbouw. Daar de tabel in de eerste plaats beoogt van practisch nut te zijn is er naar gestreefd om haar te baseren op eenvoudige kenmerken die zonder veel moeite zijn waar te nemen. Met uitzondering van de knaagdieren, waarvan in de meeste gevallen zelfs de genusnaam niet te bepalen is zonder gebruik te maken van schedelkenmerken en tandstructuren, is het mogelijk gebleken op uiterlijke kenmerken van ieder zoogdier tenminste vast te stellen tot welk genus het behoort. Omdat er in de eerste jaren nog geen sprake kan zijn van een goed georganiseerde bestrijding van schadelijke zoogdieren in dit gebied zal de man van de practijk er ook geen behoefte aan gevoelen om van ieder gevangen dier de naam van de soort of die van het geographische ras te kennen. De gelegenheid, die ons echter met de uitgave van deze tabel werd geboden om meer bekendheid te geven aan de grote vormenrijkdom van de Nieuw-Guinese zoogdieren, heeft ons doen besluiten om deze, met behoud van het practische doel, zodanig uit te werken dat zij als een voorlopige gids voor het identificeren van vele in het gebied waargenomen zoogdieren kan dienen. Amateur-mammalogen in Nederlands Nieuw-Guinea waren tot nu toe immers voor dit doel aangewezen op enige verouderde boeken die bovendien slechts antiquarisch zijn te verkrijgen, terwijl de verdere vakliteratuur verspreid is in artikelen welke in verschillende tijdschriften werden gepubliceerd. Zoals in iedere diergroep bevinden zich onder de Nieuw-Guinese zoogdieren naast gemakkelijk te herkennen soorten en rassen ook vele vormen</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317258</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 35</dcterms:extent>
+   <dcterms:isPartOf>Tabel voor het determineren van de landzoogdieren van Nederlands Nieuw-Guinea (URN:ISSN:0459-1801) (Volume 1) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317258.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148544</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317258</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

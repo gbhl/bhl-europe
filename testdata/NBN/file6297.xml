@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Aradidae in the Rijksmuseum van Natuurlijke Historie, Leiden (Hemiptera-Heteroptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kormilev N.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The author has identified a lot of Aradidae (Hemiptera-Heteroptera) from the collections of the Rijksmuseum van Natuurlijke Historie, Leiden. The following new taxa are proposed: Aneurus (Aneurillus) doesburgi n. sp. (Surinam); Mezira surinamensis n. sp. (Surinam); Mezira (Zemira) dentipes n. sp. (Sumatra); Neuroctenus longissimus n. sp. (Brasil); N. surinamensis n. sp. (Surinam); Natapictinus notatus n. sp. and N. surinamensis n. sp. (both from Surinam); Santaremia armata n. sp. (Surinam), and Usingerida montana n. sp. (Java). The genus Halaszfya Kormilev, 1960, is synonymized with Coloborrhinus Bergroth, 1906, and Halaszfya elongata Kormilev, 1960, is synonymized with Coloborrhinus pumilio (Champion, 1898). Halaszfya ovata Kormilev, 1960, is transferred to Coloborrhinus Bergroth, 1906, as its second species. For Coloborrhinus meziroides Kormilev, 1973, a new genus, Paramezira, is proposed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318802</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 233 - 247</dcterms:extent>
+   <dcterms:isPartOf>Aradidae in the Rijksmuseum van Natuurlijke Historie, Leiden (Hemiptera-Heteroptera) (URN:ISSN:0024-0672) (Volume 48) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318802.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150088</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318802</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

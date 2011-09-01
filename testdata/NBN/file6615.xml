@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Fortuynia marina nov. gen., nov. spec., an Oribatid mite from the intertidal zone in Netherlands New Guinea</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>On December 7, 1953, while collecting animals along the south coast of Biak Island (Netherlands New Guinea), in the neighbourhood of the Base of the Royal Netherlands Navy 1), I was surprised in seeing red Trombidiid mites creeping on stones in the intertidal zone. These stones, which fall dry at low tide, were overgrown with green Cladophora socialis and several species of red algae 2). I became interested in the fauna of the littoral, especially in the possible presence of other Acari, and I spent several mornings in observing the animal life on the stones. The Trombidiid mites later appeared to belong to a Platytrombidium species, closely related to the species described by Michener (1946) as Microtrombidium littorale from mangrove forests along the Pacific coast of Panama. It will be dealt with by Dr. Womersley of the S. Australian Museum, who studies also the Mesostigmata and the Acaridiae mentioned below. In order to collect other Acari, I took a large sample of algae on December 10, 1953 and put it in a modified Tullgren apparatus. Within two days I had a large collection of small animals: Collembola, Amphipoda, young Grapsoid crabs, Isopoda, Polychaeta, larvae of Insects, and a considerable amount of mites that, according to Womersley (in litt.), belong to two species of Mesostigmata and one species of Hyadesia. Among the material I found only one specimen of an Oribatid mite. After my return it soon became clear that the Oribatid specimen represented a very interesting new species for which it were necessary to create a new family. Due to the absence of immature stages it was, however, difficult to get a definite idea about the systematic position.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319120</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1960</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 9</dcterms:extent>
+   <dcterms:isPartOf>Fortuynia marina nov. gen., nov. spec., an Oribatid mite from the intertidal zone in Netherlands New Guinea (URN:ISSN:0024-0672) (Volume 37) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319120.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150406</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319120</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

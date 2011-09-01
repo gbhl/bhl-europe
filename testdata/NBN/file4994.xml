@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Palaeobiology of Tetragonis sulcata d'Eichwald, 1860 : an Ordovician receptaculite in erratics from the northern Netherlands</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Brummer G.J.A.</dc:creator>
+   <dc:subject>Paleobotanie, palynologie</dc:subject>
+   <dc:description>A study has been made of the receptaculite Tetragonis sulcata d'Eichwald, 1860 in Upper Ordovician erratics from the northern Netherlands. D'Eichwald's original description is reviewed, giving a wider conception of the morphological diversity of receptaculites. Tetragonis sulcata is placed in the family Tetragonaceae Rietschel, 1969 (nomen correctum), together with Lepidolites dickhauti Ulrich, 1879. The aim of this study was to reconstruct the living receptaculite organism by documenting homologies between Tetragonis sulcata and receptaculites described in the literature. Through analysis of a diverse set of morphological features which thus were obtained, an attempt could be made to determine the pattern of receptaculite morphogenesis. This study therefore concentrates on the functional morphology, growth, and calcification of meroms which are extensively reviewed, particularly with respect to receptaculite growth. The geometry of merom distribution as a result of polar growth of receptaculites has been studied. A description is given of a merom arrangement not yet considered before, the Tetragonis type, which is compared with the normal, Receptaculites, type. Controversial issues, such as the position of soft parts in receptaculites as well as their life orientation, are discussed with regard to their palaeobiological significance. This approach produced some arguments against an apex-down orientation, as proposed by Campbell et al. (1974). Based on these data, the systematic position of receptaculites is analysed. Consequently, it is inferred that they should be regarded as calcareous algae. Comparison with representatives of the chlorophyte order Dasycladales provides sufficient arguments to establish the separate order Receptaculitales within the Thallophyta.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317499</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 40</dcterms:extent>
+   <dcterms:isPartOf>Palaeobiology of Tetragonis sulcata d'Eichwald, 1860 : an Ordovician receptaculite in erratics from the northern Netherlands (URN:ISSN:0375-7587) (Volume 53)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317499.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148785</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317499</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

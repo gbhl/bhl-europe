@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zur Systematik und Ökologie türkischer Süsswasserprosobranchier</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Schütt H.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Durch die Freundlichkeit von Dr. van Regteren Altena, Leiden, wurde mir ein umfangreiches Material süßwasserbewohnender Prosobranchier zur Bearbeitung übermittelt, welches zwei von sechs niederländischen Studenten auf der „Niederländischen Biologischen Expedition in die Türkei 1959" sammelten (Hennipman et al., 1963). Von Dr. Forcart, Basel, liegt mir zu dieser Arbeit ein kleiner Posten unbearbeiteten Spiritusmaterials vor, welches er 1936 aus dem Vilayet Kayseri mitbrachte. Außerdem finden unveröffentlichte Aufsammlungen Berücksichtigung, die ich in den Jahren 1962 bis 1964 in griechisch Thrazien und in der Türkei machte. Darüberhinaus stellte mir Dr. Zilch, Frankfurt a. M., Vergleichsmaterial aus dem Senckenberg-Museum zur Verfügung. Die Photographien fertigte Herr Gregor Koch, Düsseldorf, an. Den genannten Herren bin ich zu verbindlichem Dank verpflichtet. Durch diese verhältnismäßig großen Auf Sammlungen, die sich über ein weites Gebiet der kleinasiatischen und der europäischen Türkei erstrecken, ist es jetzt, besonders, da auch gut konserviertes Material vorliegt, möglich, zusammenhängende systematische und ökologische Beurteilungen von Rassenkreisen durchzuführen und Beziehungen der Arten untereinander besser erkennen, sowie Gattungen besser abgrenzen zu können, als es teilweise bisher möglich war. Es ergab sich hier eine günstige Gelegenheit, die süßwasserbewohnenden Prosobranchier der Türkei in zusammenhängender Form zu behandeln, was in den letzten Jahrzehnten nicht mehr geschehen ist und was besonders deshalb erwünscht ist, da die einzelnen Arten sehr verstreut in z.T. recht alten Arbeiten beschrieben wurden und sich ihre systematische Stellung und Ein-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318817</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1965</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 43 - 72</dcterms:extent>
+   <dcterms:isPartOf>Zur Systematik und Ökologie türkischer Süsswasserprosobranchier (URN:ISSN:0024-0672) (Volume 41) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318817.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150103</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318817</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

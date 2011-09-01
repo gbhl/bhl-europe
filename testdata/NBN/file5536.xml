@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The cerceris species of Java (Hymenoptera Sphecoidea)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The genus Cerceris Latreille contains several hundreds of species and is represented in all zoological regions, in temperate areas as well as in the tropics and subtropics. In 1942 Arnold stated that about 650 specific names had been proposed in this genus; since then another 125 new species have been described. The species of certain parts of the world are well known. In recent years De Beaumont (1950, 1951, 1958) and others have published some important revisions of the species of Europe and North Africa, while Tsuneki (1961) studied the species of North Eastern Asia (for further references see pp. 19-21 of Tsuneki's paper). The Ethiopian Cerceris have been monographed by Brauns (1926) and by Arnold (1931, 1942). The species of the Nearctic region have been studied for several years by Prof. H. Scullen, who informed me that an extensive revision will appear in 1964. Obviously it would be of considerable interest to study the relationships within this genus from a worldwide point of view. Unfortunately, this is still far from possible, mainly on account of our insufficient knowledge of the species of South America and of the Oriental and Australian regions. As regards the Oriental region, the only more comprehensive paper is Turner's revision (1912) of the species inhabiting the former British India; it deals with 61 species, including 22 new ones. The Cerceris species of the Indo-Australian archipelago have never been revised, and our knowledge of this subject consists of no more than about 30 separate decriptions, many of which are very incomplete. The present paper on the Javan Cerceris is a first attempt towards improvement of this situation; I hope that it may be followed by similar studies</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318041</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 348 - 368</dcterms:extent>
+   <dcterms:isPartOf>The cerceris species of Java (Hymenoptera Sphecoidea) (URN:ISSN:0024-0672) (Volume 39) (Issue 36)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318041.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149327</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318041</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

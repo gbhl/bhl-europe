@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Les espèces Ouest-Africaines du genre Lycophidion (Serpentes, Colubridae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Guibé J.</dc:creator>
+   <dc:creator>Roux-Estève R.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Il règne une certaine confusion dans la systématique des serpents africains du genre Lycophidion et, malgré les tentatives de divers auteurs, l'identification des espèces s'avère souvent difficile et aléatoire; tel est le cas des formes de l'ouest-africain où il semble que certaines espèces ou sous-espèces aient été méconnues. Nous entendons par ouest-africain la région au nord du golfe de Guinée, limitée à l'Est par les hauteurs du Nord Cameroun jusqu'aux environs du lac Tchad. D'après les travaux récents, le genre Lycophidion est représenté dans cette région par les espèces suivantes: L. irroratum (Leach), L. semicinctum D. &amp; B., L. laterale Hallowell, auxquels Leston &amp; Hughes (1968), Hughes &amp; Barry (1969) et Leston (1970) ajoutent L. nigromaculatum (Peters), jusqu'alors considéré comme synonyme de L. irroratum; enfin Angel (1933) et Villiers (1963) signalent L. capense Smith. Un examen des spécimens en collection au Muséum National d'Histoire naturelle de Paris et une étude critique de la littérature concernant ce genre nous a permis une mise au point de la question et amené à la conclusion que le genre Lycophidion était représenté, dans la région considérée, par les espèces suivantes: Lycophidion irroratum (Leach, 1819) L. semicinctum semicinctum Duméril &amp; Bibron, 1854 L. semicinctum albomaculatum Steindachner, 1870 L. nigromaculatum (Peters, 1863) L. laterale Hallowell, 1857 Lycophidion irroratum (Leach) Coluber irroratum Leach, in Bowdich, 1819: 494 — Localité type: Fantee, Ghana.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318492</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 391 - 400</dcterms:extent>
+   <dcterms:isPartOf>Les espèces Ouest-Africaines du genre Lycophidion (Serpentes, Colubridae) (URN:ISSN:0024-0672) (Volume 47) (Issue 29)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318492.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149778</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318492</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

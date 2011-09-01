@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On some birds observed in the Netherlands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Oort, van E.D.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>Among the birds and the eggs from the Netherlands received by 's Rijks Museum van Natuurlijke Historie in 1930 there are some ones of special interest, which I mention in the following lines: Daption capense (Linnaeus). Some days ago I received from Mr. J. J. TER PELKWIJK at the Hague the imperfect skull of a petrel, that has been found by Mr. S. BAKKER at the Hague between half August and half September 1930 on the shore of Hoek van Holland north of the Noorderpier. Comparing the skull with skeletons in our collection, I found that it belongs to the Cape Petrel, Daption capense (L.). This is the second time that this species is recorded from the Netherlands, for in the beginning of last century a specimen of the Cape Petrel has been found dead near Sloterdijk in the neighbourhood of Amsterdam, which is described and figured in the 4th volume of NOZEMAN en SEPP, Nederlandsche Vogelen, 1809, p. 369, pi. 188, under the name of Procellaria puffinus, B. Linn. I did not include this species in my list of the birds of the Netherlands (Notes Leyden Mus. XXX, 1908—'09, p. 129), nor in my Ornithologia Neerlandica (Vol. I, 1922, p. 28), but now I think there is no longer reason to exclude it from the list. Not only from our country the Cape Petrel has been recorded, but also three times from the British Islands and at least twice as much from France. Puffinus puffinus (Brünnich). Our museum received from Mr. A. W. LACOURT at Leiden a specimen of the Manx Shearwater, picked up dead in bad condition on the shore near Katwijk 27 September 1929. The specimen was preserved in formaline; it is a female (alae 220 mm.). Skinning was impossible, only the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318873</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 259 - 261</dcterms:extent>
+   <dcterms:isPartOf>On some birds observed in the Netherlands (URN:ISSN:0024-0672) (Volume 13) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318873.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150159</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318873</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

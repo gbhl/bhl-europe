@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 76 (1989)</dc:title>
+   <dc:creator>Ambach  Walter, Anonymus , Burmann  Karl, Flatz  Ursula, Frank  Christa, Gerhold  Norbert, Heiss  Ernst, Hinterhuber  Hartmann, Hofmann  Paul, Josifov  Michael, Knapp  Horst, Kofler  Alois, Madl  Michael, Persohn  Manfred, Schatz  Heinrich, Schatz- De Zordo  Irene, Thaler  Konrad, Vogel  Erich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Norbert Gerhold: Beitrag zur Großpilzkartierung in Österreich 1987 und 1988 (Macromycetes).     7-   24. Paul Hofmann: Kartierung des epiphytischen Flechtenbewuchses im Raum von Hall in Tirol (Österreich) und Umgebung unter immissionsökologischen Gesichtspunkten.    25-   50. Erich Vogel: Beitrag zur Flechtenflora Tirols: Der Glungezer und seine Umgebung (Tuxer Voralpen, Nordtirol).    51-   71. Christa Frank: Mollusca (Gastropoda: Prosobranchia et Pulmonata) von italienischen Inseln.    73-   81. Alois Kofler: Zur Verbreitung von Landasseln in Osttirol (Österreich) (Malacostraca: Isopoda terrestria.    83-   88. Ursula Flatz: Einfluß des Substrates auf die Erfassung von Wiesenspinnen mit Barberfallen.    89-   98. Konrad Thaler: Streufunde nivaler Arthropoden in den mittleren Ostalpen.    99-  106. Heinrich Schatz: Oribatida (Acari) aus dem Kalser Dorfertal (Osttirol, Hohe Tauern, Österreich).   107-  125. Ernst Heiss: Studien zur Revision der palaearktischen Aradidae (Heteroptera). 1. Zur Kenntnis derGattung Quilnus (Stal).   127-  139. Ernst Heiss, Michael Josifov: Eine neue Acrosternum-Art von der Insel Kreta (Heteropteren aus Kreta VII).   141-  145. Irene Schatz- De Zordo: Carabidae und Staphylinidae (Coleoptera) des Kalser Dorfertales (Hohe Tauern, Osttirol, Österreich).   147-  154. Manfred Persohn, Horst Knapp: Simplocaria metallica Sturm und andere Käferfunde aus Nordtirol, Österreich (Insecta, Coleoptera, Byrrhidae).   155-  157. Michael Madl: Über Gasteruptiidae aus Tirol und Vorarlberg (Hymenoptera</dc:description>
+   <dc:description>Evanioidea).   159-  162. Karl Burmann: Beiträge zur Microlepidopteren-Fauna Tirols. XIII. Argyresthiinae (Insecta: Lepidoptera, Yponomeutidae).   163-  167. Walter Ambach: Physikalische Prinzipien bildgebender Systeme in der Medizin.   169-  174. Hartmann Hinterhuber: In memoriam tit. ao. Univ.-Prof. Dr. med. Heinrich Hetzel.   177-  178. Anonymus: IV. Vereinsnachrichten.   193-  195</dc:description>
+   <dc:date>1989</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27294.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27294.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27294</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

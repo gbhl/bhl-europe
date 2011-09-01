@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 24 (1884)</dc:title>
+   <dc:creator>Anonymus , Döttl  Johann, Ebmer  Karl, Fiedler  Leo, Fugger  Eberhard, Hauthaler  P. Willibald, Maier  F.M., Molkskron  Max Reichsritter von, Pirckmayer  Friedrich, Prinzinger  August, Steinhauser  Adolf Ritter von</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Leo Fiedler: Naturhistorische Eigenthümlichkeiten Lungau's.     1-   46. P. Willibald Hauthaler: Ein ökonomischer Rechenschaftsbericht aus Högelwörth (von ca. 1175). Ein Beitrag zur ältesten Geschichte des ehemaligen Augustiner-Chorherren-Stiftes Högelwörth.    46-   47. Adolf Ritter von Steinhauser: III. Der moderne Kirchenbau in Salzburg.    55-  108. Johann Döttl: Uebersicht der Witterung in Salzburg (Stadt) im Jahre 1882.   109-  118. F.M. Maier: Zur Geschichte des Salzburger Geschützwesens.   118-  124. Friedrich Pirckmayer: Miscellen. Aus den Akten des Mooshamer-Archives.   125-  129. Max Reichsritter von Molkskron: Zur Geschichte des Lungauer Bergbaues mir besonderer Berücksichtigung von Ramingstein und Schellgaden.   231-  250. August Prinzinger: Verzeichniß der wichtigeren Quellen zur Landeskunde des Herzogthumes Salzburg, mit Zusätzen und Bemerkungen.   251-  290. Karl Ebmer: Uebersicht der Witterung in Salzburg (Stadt) im Jahre 1883.   291-  298. Eberhard Fugger: Tage der ersten Blüthen einiger Pflanzen.   299. Friedrich Pirckmayer: Stylprobe aus dem 16. Jahrhunderte.   300-  302. Adolf Ritter von Steinhauser, Friedrich Pirckmayer: Gesellschafts-Angelegenheiten. 1. Protokoll der ordentlichen Jahres-Versammlung am 6. November 1884.   304-  309. Friedrich Pirckmayer: Gesellschafts-Angelegenheiten. 2. Bericht über die Thätigkeit und den Stand der Gesellschaft für Salzburger Landeskunde im XXIV. Vereinsjahre 1883-1884.   310-  323. Anonymus: Gesellschafts-Angelegenheiten. 3. Auszug aus den Sitzungsprotokollen des Ausschusses im XXIV. Gesellschafts-Jahre 1883-1884.   324-  329. Anonymus: Gesellschafts-Angelegenheiten. 4. Mitglieder-Verzeichniß.   330-  337. Anonymus: Gesellschafts-Angelegenheiten. 5. Verzeichniß jener gelehrten Gesellschaften, Vereine, Anstalten und Personen, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mittheilungen" eine Verbindung pflegt.   338-  339. Anonymus: Gesellschafts-Angelegenheiten. 6. Verzeichniß jener Bücher und Schriften, welche - außer dem wechselseitigen Tauschverkehre - an die Gesellschaft gelangt oder gespendet worden sind.   340-  341. Anonymus: Gesellschafts-Angelegenheiten. 7. Jahres-Rechnung über Einnahmen und Ausgaben der Gesellschaft für Salzburger Landeskunde im 24. Vereinsjahre 1883/84.   342-  343</dc:description>
+   <dc:date>1884</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29029.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29029.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29029</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

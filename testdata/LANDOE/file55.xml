@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Linzer biologische Beiträge (LBB) 5_2 (1973)</dc:title>
+   <dc:creator>Forstinger  Heinz, Grims  Franz, Hesse  Michael, Kohl  Hermann, Krisai  D., Lonsing  Alfred, Schüßler  Rudolf,</dc:creator>
+   <dc:description>Inhaltsverzeichnis: : 8. Mykologische Dreiländertagung in Viechtwang-Scharnstein, Oberösterreich.   158. Heinz Forstinger: Die bisher in Oberösterreich gefundenen resupinaten Phellinus-Arten.   160-  166. Franz Grims: Fundorte von Pflanzengallen in Oberösterreich der Jahre 1968 bis 1972.   168-  188. Michael Hesse: Endopolyploidie in einer "verpilzten Mückengalle" auf einer Umbellifere.   190-  197. Hermann Kohl: Das oberösterreichische Almtal - Überblick über die Gesteinsverhältnisse.   198-  205. D. Krisai: Höhere Pilze aus dem Trumer Seen-Gebiet.   206-  214. Alfred Lonsing: Alchemilla glabra NEYGENFIND im Mühlviertel.   216-  217. Rudolf Schüßler: Fundliste von Pilzen aus dem Almtal und Kobernausserwald in Oberösterreich.   218-  239. Rudolf Schüßler: Fundliste der im Stadtgebiet von Linz vorkommenden Pilzarten.   240-  258</dc:description>
+   <dc:date>1973</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/77.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/77.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=77</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

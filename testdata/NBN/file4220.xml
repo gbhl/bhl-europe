@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Corals of the South-west Indian Ocean: VI. The Alcyonacea (Octocorallia) of Mozambique, with a discussion on soft coral</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Benayahu Y.</dc:creator>
+   <dc:creator>Shlagman A.</dc:creator>
+   <dc:creator>Schleyer M.H.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Mozambique</dc:subject>
+   <dc:subject>East African reefs</dc:subject>
+   <dc:subject>Octocorallia</dc:subject>
+   <dc:subject>Alcyonacea</dc:subject>
+   <dc:description>A list of 46 species of Alcyonacea is presented for the coral reefs of the Segundas Archipelago and northwards in Mozambique, as well as a zoogeographical record for the Bazaruto Archipelago in southern Mozambique. Among the 12 genera listed, Rhytisma, Lemnalia and Briareum were recorded on Mozambican reefs for the first time and the study yielded 27 new zoogeographical records. The survey brings the number of soft coral species listed for Mozambique to a total of 53. A latitudinal pattern in soft coral diversity along the south equatorial East African coast is presented, with 46 species recorded in Tanzania, 46 along the northern coast of Mozambique, dropping to 29 in the Bazaruto Archipelago in southern Mozambique and rising again to 38 along the KwaZulu-Natal coast in South Africa. Only Indo-Pacific genera occur in Mozambique with no intrusion of any endemic South African soft coral fauna. Species of the family Alcyoniidae have a wider latitudinal distribution on south equatorial reefs than zooxanthellate members of the families Nephtheidae and Xeniidae, both of which are confined to lower latitudes.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220293</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 49 - 57</dcterms:extent>
+   <dcterms:isPartOf>Corals of the South-west Indian Ocean: VI. The Alcyonacea (Octocorallia) of Mozambique, with a discussion on soft coral (Volume 345)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220293.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46823</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220293</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

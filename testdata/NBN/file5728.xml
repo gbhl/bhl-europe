@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the distribution of Bidder's organ in Bufonids</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Dubois R.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>It is a well-known fact that Bidder's organ is an undeveloped ovary. It is found in all adult male and in many adult female as well as in all juvenile male and female specimens of Bufo-species, and it is situated between the fatbody and the gonad. The fact that Bidder's organ is a potential ovary is not only derived from its morphology, but has also been proved experimentally by Harms (1923) and Ponse (1924), for after castration of male toads and after ovariectomy of female common toads (Bufo vulgaris Laur. (= B. bufo (L.)) Bidder's organ may develop into a normally functioning ovary. In 1931 Stohler compiled our knowledge concerning the distribution of Bidder's organ in the Bufonidae; in addition the occurrence of the organ was described in several other species in which hitherto it had not been recorded. We refer the reader interested in these species to Stohler's publication. After 1931 some useful papers appeared on the presence of Bidder's organ in certain Bufonids: Witschi (1933), Koch (1934), De Vos (1935) and Davis (1936). In these publications much older information was confirmed and some new facts were added (table I). In connection with investigations on the physiology and histophysiology of Bidder's organ in Bufo bufo (L.), carried out in our laboratory under the guidance of Prof. G. J. van Oordt, I have traced the presence of Bidder's organ in several species of Bufonids from the Amsterdam Zoological Museum and from the Leiden Rijksmuseum van Natuurlijke Historie, which had not yet been investigated by preceding authors in this respect 1). TABLE I,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318233</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1947</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 275 - 279</dcterms:extent>
+   <dcterms:isPartOf>On the distribution of Bidder's organ in Bufonids (URN:ISSN:0024-0672) (Volume 28) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318233.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149519</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318233</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

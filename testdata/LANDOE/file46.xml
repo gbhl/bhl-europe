@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Stapfia 47 (1996)</dc:title>
+   <dc:creator>Anonymous , Cabela  Antonia, Dimt  Gunter, Dimt  Heidelinde, Gollmann  Günter, Greßler  Sabine, Grillitsch  Heinz, Herrmann  Hans-Joachim, Hödl  Walter, Jehle  Robert, Proy  Christian, Reichholf  Josef, Tiedemann  Fritz, Tunner  Heinz, Weißmair  Werner, Wuttke  Michael, Zimmermann  Heribert</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Walter Hödl: Einleitung    11-   12. Heinz Tunner: Ein Künstler erforsch die Welt der Frösche. Das Leben und das naturwissenschaftliche Werk des Malers und Kupferstechers August Johann Rösel von Rosenhof (1705-1759)    13-   52. Walter Hödl: Wie verständigen sich Frösche    53-   70. Walter Hödl: Zur Fortpflanzungsbiologie von Fröschen    71-   85. Heinz Tunner: Der Teichfrosch Rana esculenta - ein evolutionsbiologisch einzigartiger Froschlurch    87-  101. Günter Gollmann: Die Hybridzone der europäischen Unken   103-  108. Fritz Tiedemann, Antonia Cabela, Heinz Grillitsch: Die Amphibien und Reptilien Österreichs. Vorstellung einer an der Herpetologischen Sammlung des Naturhistorischen Museums Wien mit Unterstützung des Umweltbundesamtes und des  Jubiläumsfonds der Österreichischen Nationalbank laufenden Studie   109-  118. Robert Jehle: Das "Amphibienprojekt" Donauinsel"   119-  131. Sabine Greßler: Was passiert mit unseren Fröschen?   133-  144. Werner Weißmair: Amphibien - Gefährdung und Schutz   145-  175. Josef Reichholf: Frösche als Bioindikatoren   177-  187. Heribert Zimmermann: Der Schutz des tropischen Regenwaldes und eine kleines Fröschchen in Ost-Madagaskar   189-  217. Christian Proy: Zur Bedeutung der Terraristik bei der Erforschung der Biologie von Fröschen   219-  226. Michael Wuttke: Die eozänen Frösche von Messel   227-  232. Hans-Joachim Herrmann: Skizzen zur Kulturgeschichte der Frösche   233-  248. Gunter Dimt: Frösche, Kröten, Salamander   249-  259. Heidelinde Dimt: Der Frosch in Mythos und Märchen   261-  268. Anonymous: Familien und Unterfamilien der Froschlurch (Anura) und deren Artenzahlen nach Duellman 1993   269-  271</dc:description>
+   <dc:date>1996</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/48.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/48.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=48</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

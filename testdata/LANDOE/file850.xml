@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wiener Entomologische Zeitung 39 (1922)</dc:title>
+   <dc:creator>Anonymus , Formánek  Romuald, Gschwendtner  Leopold, Heikertinger  Franz, Hendel  Friedrich Georg, Hetschko  Alfred, Martini  Erich Christian Wilhelm, Melichar  Leopold, Müller  Josef (Giuseppe), Netolitzky  Fritz, Penecke  Karl Alphons Borromäus Josef, Priesner  Hermann, Reitter  Edmund, Weise  Julius</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Edmund Reitter: Bestimmungstabelle der palaearktischen Helopinae.     1-   44. Franz Heikertinger: Die mit Oedionychis verwandten paläarktischen Halticinen (Coleopt.). (Oedionychis, Lithonoma, Chloephana, Philopona, Hyphasoma). (53. Beitrag zur Kenntnis der Halticinen.).    45-   64. Friedrich Georg Hendel: Blattminierende Fliegen (Musciden).    65-   72. Romuald Formánek: Zehn neue Curculioniden nebst Bemerkungen über bekannte.    73-   84. Fritz Netolitzky: Bestimmungstafeln für palaearktische Bembidion-Arten.    85-   91. Leopold Gschwendtner: Beiträge zur Kenntnis der Dytiscidae Transbaikaliens.    92-   94. Alfred Hetschko: Hans LEDER. Ein Nachruf.    95-   96. Erich Christian Wilhelm Martini: Bestimmungsschlüssel für die deutschen Stechmücken-Arten.    97-  104. Julius Weise: Ueber einige amerikanische und australische, nach Südfrankreich eingeführte Coccinelliden.   104. Hermann Priesner: Ueber albanische Thysanopteren.   105-  107. Leopold Melichar: Eine neue Art der Gattung Euplatinus DESBR. (Col. Curc.).   108-  109. Anonymus: Notizen.   112. Edmund Reitter: Bestimmungstabelle der palaearktischen Helopinae. (Col. Tenebrionidae).   113-  171. Karl Alphons Borromäus Josef Penecke: Neue Rüsselkäfer.   172-  183. Karl Alphons Borromäus Josef Penecke: Beiträge zur Kenntnis der geographischen Verbreitung und der Nährpflanzen von Curculioniden.   183-  188. Franz Heikertinger: Untersuchungen über die angebliche Giftwirkung der Coccinelliden auf Dytiscus. (Col.).   189-  192. Josef (Giuseppe) Müller: Coleopterologische Notizen.   193-  197. Anonymus: Notiz.   200</dc:description>
+   <dc:date>1922</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26528.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26528.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26528</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

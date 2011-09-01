@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Note on Dardanus crassimanus (H. M.-Edw.) and Dardanus rufus nov. spec.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Buitendijk A.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Dardanus crassimanus (H. M.-Edw.) Pagurus crassimanus H. Milne-Edwards, 1836, Ann. Sc. Nat., (2), Zool., 6, p. 277; 1837, Hist. nat. Crust., 2, p. 227; 1848, Ann. Sc. Nat., (3), Zool., 10, p. 62. Pagurus setifer de Haan, 1849, Fauna Japonica, Crust., p. 209. Pagurus sculptipes Stimpson, 1858, Proc. Ac. Phil., p. 246; Smiths. Misc. Coll., 1907, 49, P. 205. Pagurus pavimentatus Hilgendorf, 1878, MB. k. Akad. Wiss. Berlin, p. 816, pl. 3, fig. 1—5. Pagurus sculptipes Stimpson, Ortmann, 1892, Zool. Jahrb., Syst, 6, p. 287; 1897, Zool. Jahrb., Syst., 10, p. 275. Pagurus crassimanus H. M.-Edw., Alcock, 1905, Cat. Ind. Dec. Crust., 2, Anomura, p. 162 ("Doubtful species of Clibanarius"). Pagurus pavimentatus Hilgendorf, Lenz, 1910, Voeltzkow's Reise in Ostafrika in den Jahren 1903—1905, 2, p. 563. Pagurus sculptipes Stimpson, Balss, 1914, Abh. Bayer. Akad., Math. Phys, Klasse, Suppl. 2, p. 48. In 1936 I had the opportunity to examine the type specimen of Pagurus crassimanus H. M.-Edw. in the Muséum National d'Histoire Naturelle in Paris. I was able to identify it as a true Dardanus, there being no paired appendages present on the anterior abdominal segments of either sex, the left cheliped being larger than the right, fingertips corneous, blackened and somewhat spooned. It quite corresponds with our dry material of Dardanus setifer (de Haan) and with Stimpson's description of Pagurus sculptipes. Lenz (1910) has already pointed out the differences between Pagurus setifer M.-Edw.,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318553</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 55 - 57</dcterms:extent>
+   <dcterms:isPartOf>Note on Dardanus crassimanus (H. M.-Edw.) and Dardanus rufus nov. spec. (URN:ISSN:0024-0672) (Volume 20) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318553.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149839</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318553</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

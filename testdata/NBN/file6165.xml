@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on new or rare marine fishes from Surinam</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>The fish collection of the Leiden Museum has recently been enriched by the donation of a few small or moderate collections of fishes assembled in tropical Atlantic America. As these proved to contain some representatives of species rarely encountered or even new to science and, moreover, provided interesting distributional information, publication of a few notes containing the principal data seems of interest. Note I. — A collection of about 40 specimens from Surinam, representing 29 species mostly marine, was received from Ir. Z. Salverda, who appears to have collected them himself. Unfortunately, Ir. Salverda omitted adding more detailed locality information, but all marine species can be expected to occur throughout the whole of the coastal region. Two of these species, each represented by a single example, seem of sufficient interest to be recorded here in the present and the second note. Carcharhinus porosus (Ranzani) Carcharhinus porosus, Bigelow &amp; Schroeder, 1948, pp. 394-399, figs. 74, 75. 1 ex., 267 (355) mm, ♂, RMNH reg. no. 24704, Surinam. It is remarkable that Bigelow &amp; Schroeder seem to have recorded the first specimen(s) from Surinam while, considering their references, the species, though differently named, has been known to occur in both French and British Guiana waters for more than a hundred years. As Bigelow &amp; Schroeder state that nothing is known of the habits of the present species, merely adding that it is probably a littoral species, I surmise that the species is not abundant. The specimen completely agrees with Bigelow &amp; Schroeder's extensive description; the teeth seem to number 13 + 1 + 13/12 + 1 + 12.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318670</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 295 - 301</dcterms:extent>
+   <dcterms:isPartOf>Notes on new or rare marine fishes from Surinam (URN:ISSN:0024-0672) (Volume 38) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318670.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149956</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318670</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 34_2 (1991)</dc:title>
+   <dc:creator>Anonymus , Berg  Hans-Martin, Brader  Martin, Brandner  Johann, Busch  Werner Ernst Wilhelm, Jürall  Gerhard, Radermacher  Heinz, Schön  Robert, Straka  Ulrich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Johann Brandner: Neuere Nachweise und Brutvorkommen der Zaunammer (Emberiza cirlus) in Österreich.    73-   85. Martin Brader: Die Pfuhlschnepfe (Limosa lapponica) in Österreich.    86-   96. Ulrich Straka: Zum Vorkommen des Goldregenpeifers, Pluvialis apricaria L., in Ackerbaugebieten Ostösterreichs.    97-  103. Gerhard Jürall, Heinz Radermacher, Werner Ernst Wilhelm Busch: Nisthilfenannahme und brutzeitliche Nahrung beim Rauhfußkauz (Aegolius funereus) im steirischen Salzkammergut.   104-  107. Gerhard Jürall, Heinz Radermacher: Nordfledermaus (Eptesicus nilssoni) Beute des Baumfalken (Falco subbuteo).   107-  108. Ulrich Straka: Haubenlerche (Galerida cristata L.) kollidiert beim Singflug mit Starkstromleitung.   108-  109. Hans-Martin Berg, Robert Schön: Die Felsenschwalbe (Ptyonoprogne rupestris Scopoli 1769) - ein neuer Brutvogel Niederösterreichs.   109-  112. Anonymus: Die Tätigkeit der Avifaunistischen Kommission.   112-  121</dc:description>
+   <dc:date>1991</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27518.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27518.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27518</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of four new genera and nine new species of Doryctinae (Hymenoptera: Braconidae) from French Guyana</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Braet Y.</dc:creator>
+   <dc:creator>Barbalho S.M.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Doryctinae</dc:subject>
+   <dc:subject>Achterbergia</dc:subject>
+   <dc:subject>Aphelopsia</dc:subject>
+   <dc:subject>Nervellius</dc:subject>
+   <dc:subject>Ondigus</dc:subject>
+   <dc:subject>Lamquetia</dc:subject>
+   <dc:subject>Neostaphius</dc:subject>
+   <dc:subject>Dapsilitas</dc:subject>
+   <dc:subject>Ptesimogastroides</dc:subject>
+   <dc:subject>Sharkeyelloides</dc:subject>
+   <dc:subject>Neotropical</dc:subject>
+   <dc:subject>French Guyana</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>keys</dc:subject>
+   <dc:description>From French Guyana four new genera of the subfamily Doryctinae Foerster, 1862 (Hymenoptera: Braconidae) with six new species (Lamquetia gen. nov.; type species: L. rufa Braet &amp; van Achterberg, spec. nov., L. marshi Braet &amp; Barbalho, spec. nov.), Ondigus gen. nov. (type species: O. bicolor spec. nov.), Neostaphius gen. nov. (type species: N. striatus spec. nov.), and Dapsilitas gen. nov. (type species: D. bicolor spec. nov.; D. robustisoma Braet &amp; van Achterberg, spec. nov.) are described. In addition, three new species of the genera Achterbergia Marsh, 1993 (A. cornicoxa Braet &amp; Barbalho, spec. nov.), Aphelopsia Marsh, 1993 (A. striata Braet &amp; Barbalho, spec. nov.) and Nervellius Roman, 1923 (N. exquisitus Braet &amp; Barbalho, spec. nov.) are described. Additional distributional data on Achterbergia arawak Marsh, 1993; Aphelopsia annulicornis Marsh, 1993; and Ptesimogasteroides cerdai Braet &amp; van Achterberg, 2001, are given. The internal microsculpture of the ovipositor of P. cerdai is illustrated. The genus Sharkeyelloides Marsh, 2002, is synonymized with Ptesimogastroides Braet &amp; van Achterberg, 2001 (syn. nov.). Keys to the species of the genera Achterbergia Marsh, Aphelopsia Marsh, Nervellius Roman, Lamquetia gen. nov., Dapsilitas gen. nov. and Ptesimogastroides Braet &amp; van Achterberg are given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216136</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 93 - 125</dcterms:extent>
+   <dcterms:isPartOf>Description of four new genera and nine new species of Doryctinae (Hymenoptera: Braconidae) from French Guyana (URN:ISSN:00240672) (Volume 77, 1-14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216136.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44259</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216136</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

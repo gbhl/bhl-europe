@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Trichoptera Newsletter 13 (1986)</dc:title>
+   <dc:creator>Anonym , Barnard  Peter C., Bournaud  M., Kiauta  B., Kristensen  Nils Peter, Legrand  Jean, Malicky  Hans, Tachet  Henri, Verdonk  M.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3. Nils Peter Kristensen: Obituary - Dr. Anker Nielsen     4-    6. Hans Malicky: News about Hydropsyche pellucidula     6. Peter C. Barnard: Obituary - Douglas Eric Kimmins     7-   11. B. Kiauta, M. Verdonk: Obituary - Dr. Dirk Cornelis Geijskes    12. Jean Legrand: In Memoriam: Simone Kelner-Pillaut (1925-1985)    13. Anonym: Universitá degli Studi di Perugia    14. M. Bournaud, Henri Tachet: 5th international symposium on Trichoptera - Lyon, 21-26 July 1986    15-   16. Anonym: List of Research Workers    17-   18. Hans Malicky: Trichopterological Literature    19-   28</dc:description>
+   <dc:date>1986</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26889.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26889.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26889</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

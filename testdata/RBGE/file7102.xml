@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes from the Royal Botanic Garden Edinburgh: general index volumes XXII-XXX</dc:title>
+   <dc:publisher>HMSO (Edinburgh)</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>55b70765-4675-4b8f-99f0-b4dec46e0e49</dc:identifier>
+   <dc:identifier>0080-4274</dc:identifier>
+   <dc:identifier>26774</dc:identifier>
+   <dc:language>eng</dc:language>
+   <dc:relation>Edinburgh Journal of Botany</dc:relation>
+   <dcterms:issued>1971</dcterms:issued>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/uk-rbge/NRBGEv1-23/Volume22/NRBGE_0022/NRBGE_0022_1955_0001/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/uk-rbge/NRBGEv1-23/Volume22/NRBGE_0022/NRBGE_0022_1955_0001</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RBGE/55B7076546754B8F99F0B4DEC46E0E49</europeana:isShownAt>
+<europeana:dataProvider>Royal Botanic Garden Edinburgh</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

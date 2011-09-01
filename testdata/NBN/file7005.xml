@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De steenvlieg Protonemura risi nieuw voor Nederland (Plecoptera: Nemouridae).</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Hoek, van den T.-H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>steenvliegen</dc:subject>
+   <dc:subject>Nemouridae</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>verspreiding</dc:subject>
+   <dc:description>The stonefly Protonemura risi new for the Netherlands (Plecoptera: Nemouridae) During a survey in the southernmost part of the province Limburg a stonefly new to the Netherlands was recorded: Protonemura risi (Jacobson &amp; Bianchi, 1905). The species was observed in two spring brooks in June 2005. This was a surprising discovery, as stoneflies belong to the most endangered insect groups in the Netherlands. Nymphs and adults of P. risi are characterized by short neck gills. It is a stenotherm species and lives in springs and spring brooks in mountainous areas of central and northwestern Europe. The adults are active during the summer months. The populations in Limburg have surely been overlooked in the past, as the only old record of P. nitida (Pictet, 1841) from 1951 proved to be a misidentification of P. risi. It is not expected outside the south of this province, because of the specific habitat requirements, which are not present in the rest of the country. It is recommended that P. risi will be added to the Dutch Red List of stoneflies to enable the protection of this vulnerable species and its environment.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327181</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>9</dcterms:extent>
+   <dcterms:extent>page 43 - 51</dcterms:extent>
+   <dcterms:isPartOf>De steenvlieg Protonemura risi nieuw voor Nederland (Plecoptera: Nemouridae). (URN:ISSN:01692453) (Volume 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327181.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/159696</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327181</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

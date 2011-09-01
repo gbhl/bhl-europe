@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the classification of Saldidae with the description of a new species from Spain</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Cobben R.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In the keys to the palaearctic Saldidae, which will be published before long in Dr. W. Stichels: "Illustrierte Bestimmungstabellen der Wanzen Europas", I shall use systematic conceptions, deviating from those which were up till now generally used. The character of the work mentioned does not permit a motivation. The following notes serve as an introduction to the system, as proposed in Stichel. CONTENTS I. Major classification. A. Relation to other families B. Subfamilies C. Tribes II. The problem of generic divisions. III. On the status of some palaearctic forms. IV. Saldula heijningeni spec. nov. I. MAJOR CLASSIFICATION A. Relation to other families A study of the egg development (position of germband, blastokinesis and eclosion) of Saldidae and other families (not published) has shown that the hypothesis of China (1950) that the saldids should belong to the Amphibicorisae, is justified. Of old they have been treated as representatives of the Geocorisae. B. Subfamilies Up till now the division in Saldinae Van Duzee 1917 and Saldoidinae Reuter 1912 has always been in use. To the latter belongs only the genus Saldoida Osborn 1901, while under the former all remaining (momently 15) genera are grouped. The three species of Saldoida have always attracted</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318607</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1959</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 303 - 316</dcterms:extent>
+   <dcterms:isPartOf>Notes on the classification of Saldidae with the description of a new species from Spain (URN:ISSN:0024-0672) (Volume 36) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318607.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149893</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318607</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

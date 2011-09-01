@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Das Sächsische Blaufarbenwesen und der Handel mit Kobaltfarben – nach Unterlagen der Bücherei der Bergakademie Freiberg</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Hammer P.</dc:creator>
+   <dc:subject>Overgangsmetalen en hun verbindingen</dc:subject>
+   <dc:subject>Cobalt</dc:subject>
+   <dc:subject>Saxony</dc:subject>
+   <dc:subject>blue-colour industry</dc:subject>
+   <dc:description>The German word ‘Kobold’ is the term for gnomes and goblins. It appeared for the first time in connection with minerals in Agricola’s Bermannus (1530). The first practical use was in the form of zaffer or cobalt-blue. Zaffer will not melt alone, but accompanied by vitreous substances it melts into an azure colour and so used as ‘Smalte’ for glazed earthenware, for glass and china. Since 1470 the Saxony ore mountains, especially the Schneeberg district, was the most important supplier of cobalt ores. Main products of the ‘Blaufarbenwerke’ were zaffers (Safflor) cobaltoxides of different colours and smalte (Smalte) a mixture of cobaltoxides with quartz. The Electoral-Saxon blue colour was greatly appreciated. The Dutch managed in their country eight colour-mills and received the cobalt ores from Schneeberg; perhaps in the beginning of the 17th century no mills existed in Saxony. The first mill in Saxony was in 1635 in Pfannenstiel (Schneeberg district). The cobalt-resources were so profitable that the Elector of Saxony privileged the trade and imposed taxes. Private export was strongly prohibited. Cobalt-thiefs were hanged from the gallows. In 1654, 34 mines produced 264.6 t cobalt-ore with a value of 20,513 Dutch florins. Holland was the greatest trade partner. In the last years of the 18th century, the colour-industry in Saxony and Holland received from the districts of Annaberg and Schneeberg 300-400 tons cobalt-colour per year. Since the middle of the 19th century Saxony imported cobalt-ores from Norway, Italy and Hungary. Das deutsche Wort “Kobold” wurde für Gnome und Berggeister verwendet. Die erste schriftliche Erwähnung im Zusammenhang mit dem Mineral findet man in Agricola´s Bermannus (1530). Die erste praktische Anwendung war in Form von Zaffer oder Kobalt-Blau. Zaffer schmilzt nicht allein, erst in Verbindung mit Glasschmelzen schmilzt es zu einer azurblauen Farbe und wird so als Smalte zum Glasieren von Tonwaren, für Glas und Porzellan verwendet. Seit dem Jahre 1470 war das sächsische Erzgebirge, speziell das Schneeberger Gebiet, der bedeutendste Lieferant von Kobalterz. Hauptprodukte der Blaufarbenwerke waren Safflor, Kobaltoxide verschiedener Farbe und Smalte, eine Mischung von Kobaltoxid und Quarz. Die Blaufarben des Sächsischen Kurfürstentums waren hoch geschätzt. Die Niederländer betrieben in ihrem Land 8 Farbmühlen und erhielten das Kobalterz von Schneeberg, da zu Beginn des 17. Jahrhunderts noch keine Farbmühlen in Sachsen existierten. Die erste wurde 1635 in Pfannenstiel (Schneeberger Gebiet) gebaut. Die Kobalt-Quelle wurde so profitabel, dass der Kurfürst von Sachsen das alleinige Privileg des Kobalthandels übernahm und Steuern auferlegte. Privatexport war streng verboten. Kobaltdiebe wurden am Galgen aufgehangen. Im Jahre 1654 förderten 34 Bergwerke 264,6 t Kobalterz mit einem Wert von 20513 holländischen Gulden. Die Farbindustrie in Sachsen und Holland erhielt in den letzten Jahren des 18. Jahrhunderts von den Annaberger- und Schneeberger Gebieten 300 bis 400 t Kobaltfarbe pro Jahr. Seit der Mitte des 19. Jahrhunderts importierte Sachsen Kobalterze von Norwegen, Italien und Ungarn. Mit der Erfindung des künstlichen Ultramarins und dessen Herstellung aus Ton, Quarz, Soda, Schwefel und Holzkohle, war das “Zeitalter” der Smalte abgelaufen, und ein bedeutendes Kapitel der Sächsischen Metallurgie-Geschichte kam zum Abschluss.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215456</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 108 - 177</dcterms:extent>
+   <dcterms:isPartOf>Das Sächsische Blaufarbenwesen und der Handel mit Kobaltfarben – nach Unterlagen der Bücherei der Bergakademie Freiberg (URN:ISSN:09224564) (Volume 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215456.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43858</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215456</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

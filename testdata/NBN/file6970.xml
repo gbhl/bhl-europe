@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De springstaarten van Nederland: het genus Orchesella (Hexapoda: Entognatha: Collembola).</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Berg M.P.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>springstaarten</dc:subject>
+   <dc:subject>Collembola</dc:subject>
+   <dc:subject>verspreiding</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:description>The springtails of the Netherlands: genus Orchesella (Hexapoda: Entognatha: Collembola) This is the first in a series of publications on the identification, distribution and ecology of springtails of the Netherlands. In this paper the genus Orchesella Templeton, 1835 is described, which is with four native species present in the Netherlands, i.e. O. cincta (Linnaeus, 1758), O. flavescens (Bourlet, 1839), O. quinquefasciata (Bourlet, 1841), and O. villosa (Geoffroy, 1762). A fifth species, i.e. O. bifasciata (Bourlet, 1839) is expected, but has not been recorded yet. A key to the Dutch species is provided. A database was built up, containg 1037 verified museum records, literature records and personal observations. For each species a distribution map, with a resolution of 5 km grid cells, and an ecological profile was made, based on the information in the database. Orchesella cincta is a eurytopic species, that can be found at many micro sites, even with a high level of disturbance. Orchesella flavescens is a stenotopic species of old deciduous and coniferous forest with loamy sand soil type. It prefers scarcely vegetated thin litter layers, with a moderate soil moisture. Orchesella quinquefasciata and O. villosa are quite similar in their habitat choice. They prefer wet to moist grasslands, forests with an open canopy structure and forest edges, all on clay soils.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327111</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>16</dcterms:extent>
+   <dcterms:extent>page 77 - 92</dcterms:extent>
+   <dcterms:isPartOf>De springstaarten van Nederland: het genus Orchesella (Hexapoda: Entognatha: Collembola). (URN:ISSN:01692453) (Volume 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327111.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/159597</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327111</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

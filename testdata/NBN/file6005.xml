@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Bemerkungen zu einigen termitophilen und myrmecophilen Phoriden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Schmitz H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>a. Zur näheren Kenntnis von Puliciphora spinicollis Schmitz. In Nr. 13 der „Neuen Beiträge zur Kenntnis der myrmecophilen und termitophilen Phoriden" (Deutsche Entomol. Zeitschr. 1915) wurde eine neue Puliciphora-Art von St. Gabriel bei Stanleyville am oberen Kongo beschrieben (p. 500—502). Die Exemplare stammten aus einem Bau einer Acanthotermes-Art, und ihr Entdecker, P. H. Kohl, versicherte mir, dass es in den Pilzgärten und vorrätigen Blattstückchen jener Termitennester von diesen Tieren wimmele. Es lag deswegen nahe, die Puliciphora für gesetzmässig termitophil zu halten. Sie ist es wahrscheinlich nicht. Herr Dr. Jos. Bequaert züchtete nämlich ganz dieselbe Art aus einer toten Muschel (Unio) bei Avakubi am oberen Ituri, Belgisch-Kongo, in 17 Exemplaren, Januar 1914. Selbst wenn man annehmen wollte, es seien Termitennester in der Nähe gewesen, und aus ihnen seien die Puliciphora, durch den Geruch des Kadavers angelockt, hervorgekommen, so würde immer noch ein solches Verhalten mit gesetzmässiger Termitophilie schlecht zu vereinigen sein. Echte Termitophilen würden wohl ihrer Nahrung ausschliesslich im Innern des Termitenbaus nachgehen und sie ausreichend darin finden. Puliciphora spinicollis gehört also vermutlich zu den rein zufälligen Bewohnern von Termitennestern. Sie besitzt auch kein einziges Organisationsmerkmal, das irgendwie mit termitophiler Lebensweise in Zusammenhang gebracht werden könnte; vielmehr ist sie, was schon bei ihrer Beschreibung a. a. 0. hervorgehoben wurde, den typischen Vertretern der Gattung in der indischen und australischen Region ganz ähnlich. Die Exemplare von Avakubi bieten Gelegenheit, die früher gegebene</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318510</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 27 - 32</dcterms:extent>
+   <dcterms:isPartOf>Bemerkungen zu einigen termitophilen und myrmecophilen Phoriden (URN:ISSN:0024-0672) (Volume 2) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318510.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149796</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318510</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

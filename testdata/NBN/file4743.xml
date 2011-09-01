@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Decapoda and Decapod larvae in the surface plankton from the Southern North Sea near "Texel" lightship</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Baan, van der S.M.</dc:creator>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:creator>Schrieken B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION From mid-January 1961 until the end of 1966 macroplankton was collected by the crew of "Texel" lightship (position: 53°01'30"Ν 04°22' E) and identified afterwards in the Nederlands Instituut voor Onderzoek der Zee, at that time still in Den Helder. The nets, of Saran gauze with a 2 mm mesh and an opening of 1 m2, were originally intended for catching elvers, for investigations reported upon by Creutzberg, 1961. The original aim of the present plankton project was to catch Scyphomedusae, but soon after it had been started all the available macroplankton was sorted out and, if possible, identified. This explains why the decapod larvae, dealt with in the present paper, came to be collected by nets, quite unfit for that purpose. When the meshes are open, most of the smaller larvae can pass through, but when they are blocked, e.g. by algae or, as happens to be the case in midsummer, by enormous quantities of echinoderm larvae, then great quantities of smaller organisms may suddenly turn up in the catches. Therefore the number of larvae caught does not give a reliable picture of the numbers actually present in the plankton. The postlarval and the later stages of the Natantia have been identified by the second author (H.). The identification of the adult Reptantia has also been checked by him. The larvae of the Reptantia have been identified by the third author (S.). The identification is based on the keys and descriptions as given by Lebour (1928, 1943, 1944) and by MacDonald, Pike &amp; Williamson (1957). For the data on occurrence of Pandalus and various other species in the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317247</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 75 - 97</dcterms:extent>
+   <dcterms:isPartOf>Decapoda and Decapod larvae in the surface plankton from the Southern North Sea near "Texel" lightship (URN:ISSN:0459-1801) (Volume 13) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317247.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148533</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317247</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

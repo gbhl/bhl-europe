@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pleistocene vertebrates from Celebes : VI. Stegodon spec.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>The fossil remains described in the present contribution as well as in previous numbers of this series (Hooijer, 1948a-c, 1949, 1953) were collected some years ago by Mr. H. R. van Heekeren at various localities in the Tjabengè area, Sopeng district, about 100 km Northeast of Macassar in Southwestern Celebes. I owe the opportunity to study this material to Prof. Dr. A. J. Bernet Kempers, Head of the Dinas Purbakala R.I. at Djakarta, Java. The elements to the Tjabengè fauna described thus far from Mr. Van Heekeren's collection are a giant tortoise, a babirusa, an aberrant extinct suid (Celebochoerus), an anoa, and a pygmy elephantine, the molars of which are just a 50 per cent scale reduction of their homologues in Archidiskodon planifrons (Falconer et Cautley). While at first it seemed that the Pleistocene fauna of Celebes was not any richer than indicated above, subsequent consignments made it increasingly evident to me that the pygmy archidiskodont, Archidiskodon celebensis Hooijer (1949, 1953), was not the only proboscidean in the Tjabengè fauna. Among the many specimens of Archidiskodon, mostly very fragmentary, there are a number of molar fragments of a more primitive type, stegodontine rather than elephantine in characters. Stegodon is well represented in the Pleistocene of Southeast Asia; it occurs in the Siwaliks of India, and in Burma, Indo-China, China, Japan, Formosa, the Philippines, and Java. The material to be described below indicates that stegodonts have also reached the island of Celebes. Although the nature of the material does not permit of more than a generic determination it seems advisable to make the evidence available since it is improbable that additional material can be obtained under the present conditions. Stegodon spec.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318111</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 107 - 112</dcterms:extent>
+   <dcterms:isPartOf>Pleistocene vertebrates from Celebes : VI. Stegodon spec. (URN:ISSN:0024-0672) (Volume 32) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318111.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149397</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318111</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

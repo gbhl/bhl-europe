@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[The fossil record of the Eurasian Neogene insectivores (Erinaceomorpha, Soricomorpha, Mammalia) : Part I / L.W. van den Hoek Ostende, C.S. Doukas and J.W.F. Reumer (editors)]: Germany</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Ziegler R.</dc:creator>
+   <dc:creator>Dahlmann, Th.</dc:creator>
+   <dc:creator>Reumer J.W.F.</dc:creator>
+   <dc:creator>Storch G.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>Introduction Research of Miocene and Pliocene insectivores has a long history in Germany. Already in the middle of the 19th century Miocene insectivore species have been described from South German localities. Most of these were authored by Herman von Meyer, who deserves to be named a pioneer of German insectivores research. Weisenau, today part of the city of Mainz, is the type locality of Dimylus paradoxus described by von Meyer (1846:473). Haslach near Ulm yielded the type of Cordylodon haslachensis, also described by von Meyer (1859: 174). The widely known Steinheim fauna yielded among others the type of Parasorex socialis, again described by von Meyer (1865:884). Von Meyer often received fossils from private collectors for determination. Usually, he described the specimens, drew them, and returned them to the owners. He communicated his conclusions and the descriptions of new species in his ''Mittheilungen an Professor Bronn" (communications to Professor Bronn). Schlosser often referred to the handmade drawings of von Meyer and published them in his 1887 oeuvre. He also described new species, among them the soricid Sorex neumayrianus Schlosser, 1887, today known as Heterosorex neumayrianus. In the early 20th century Ernst Stromer published on Miocene insectivores from south Germany. In his monographs from 1928 and 1940 he compiled the knowledge of the Late Miocene fauna from the Munich area, including a couple of insectivores. However, until that time, finds of fossil insectivores as well as of small mammals in general have been more or less accidental. Occasionally private collectors found fossil small</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317359</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 61 - 98</dcterms:extent>
+   <dcterms:isPartOf>[The fossil record of the Eurasian Neogene insectivores (Erinaceomorpha, Soricomorpha, Mammalia) : Part I / L.W. van den Hoek Ostende, C.S. Doukas and J.W.F. Reumer (editors)]: Germany (URN:ISSN:0922-4564) (Volume 5) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317359.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148645</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317359</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

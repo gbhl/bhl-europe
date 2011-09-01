@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Hormaphidinae from Java (Homoptera: Aphididae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Noordam D.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Aphididae; Aleurodaphis; Astegopteryx; Cerataphis; Ceratoglyphina; Ceratovacuna; Distylaphis; Euthoracaphis; Glyphinaphis; Mesothoracaphis; Metanipponaphis; Neohormaphis; Nipponaphis; Pseudoregma; Rappardiella; Reticulaphis; Schizoneuraphis; Sinonipponaphis; Thoracaphis; taxonomy; key; Java; galls; bamboo; palms; orchids.</dc:subject>
+   <dc:description>Descriptions are given of 18 genera and 56 species, with keys to the apterae and alatae viviparae. The following new genera and species are described: Astegopteryx glandulosa spec. nov., from Gigantochloa spec. and other bamboos; A. setigera spec. nov., from Styrax benzoin Dryander; Cerataphis pothophila spec. nov., from Pothos roxburghii de Vriese; Ceratovacuna floccifera spec. nov., from bamboo; C. keduensis spec. nov., from bamboo; Distylaphis gen. nov. (with type species Schizoneuraphis foliorum Van der Goot, 1917); Mesothoracaphis gen. nov. (with type species Thoracaphis rappardi H.R. Lambers and Takahashi, 1969); Metanipponaphis vandergooti spec. nov., from Lithocarpus sundaicus (Bl.) Rehd.; Neohormaphis gen. nov., with N. calva spec. nov. from Distylium stellare O.K., and Quercus spec.; Nipponaphis breuipilosa spec. nov., from Castanopsis argentea (Bl.) DC.; N. javanica spec. nov., from Castanopsis acuminatissima (Bl.) A. DC., and Quercus spec.; N. multisetosa spec. nov., from Castanopsis javanica (Bl.) DC; N. semiglabra spec. nov., from Lithocarpus bennettii (Miq.) Rehd.; Rappardiella gen. nov. (with type species Oregma loranthi Van der Goot), with R. cerina spec. nov., from Dendrophthoë pentandra (L.) Miq.; R. macrosoleni spec. nov., from Macrosolen cochinchinensis (Lour.) Tiegh.; R. plicator spec. nov., from Scurrula spec.; R. scurrulae spec. nov., from Scurrula spp.; Schizoneuraphis litseicola spec. nov., from Litsea amara Bl.; S. longisetosa spec. nov. from galls of Distylium stellare O.K.; Sinonipponaphis hispida spec. nov., from Lithocarpus indutus (Bl.) Rehd. Astegopteryx unimaculata spec. nov. for Oregma insularis sensu Van der Goot (1917).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317868</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1991</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 525</dcterms:extent>
+   <dcterms:isPartOf>Hormaphidinae from Java (Homoptera: Aphididae) (URN:ISSN:0024-1652) (Volume 270) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317868.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149154</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317868</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Variation in the number of ungues in Ameronothrus schneideri (Oudemans), an oribatid mite</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boelé F.E.</dc:creator>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the present paper an analysis is made of the variation in the number of ungues in the claws of Ameronothrus schneideri (Oudemans), an Oribatid mite. This variation is attributable to the regression of the two lateral ungues which are completely suppressed in the course of evolution (they are either present or absent). The laws of this numerical evolution (it is a so-called vertitional evolution) appear to be statistical, and do not determine individual events precisely (as the laws of the particles in quantum mechanics). In a population, each of the claws has a probability of manifestation. The variation of this probability of manifestation shows a very interesting geographical pattern which is as yet difficult to explain. Various correlations of the evolutionary processes in the eight legs are studied, and suggestions are given for continued research.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318543</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1982</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 169 - 191</dcterms:extent>
+   <dcterms:isPartOf>Variation in the number of ungues in Ameronothrus schneideri (Oudemans), an oribatid mite (URN:ISSN:0024-0672) (Volume 56) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318543.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149829</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318543</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

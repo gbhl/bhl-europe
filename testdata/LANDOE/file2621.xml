@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 143_2 (2003)</dc:title>
+   <dc:creator>Anonymus , Arming  Claudia, Dohle  Oskar, Eichberger  Christian, Fuchs  Gernod, Gruber  Fritz, Hahnl  Adolf, Heinisch  Reinhard Rudolf, Hinterstoisser  Hermann, Malkiewicz  Michael, Mittermüller  Franz, Schöll  Peter, Strobl  Walter, Weinkamer  Kurt</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Peter Schöll: Das Rauriser Weglohnbuch des Michael Aster über die Mauteinnahmen vom 1. Juni 1500 bis 20. Mai 1501.   169-  194. Fritz Gruber: Der Bergbau am Hohen Bockhart als "Staatsbetrieb" (1616-1711/12).   195-  217. Adolf Hahnl: Die ehemalige Erbgruftkapelle der Familie Lasser von Lasseregg in St. Peter in Salzburg.   219-  236. Michael Malkiewicz: Die Sängerkastraten der Fürsterzbischöflichen Hofmusik zu Salzburg.   237-  258. Kurt Weinkamer: Der Nachlass Benedikt Würstls - Über Nachfolger Raimund Felix Azwangers.   259-  272. Gernod Fuchs: Die Salzburger Gendarmerie von der "Kampfzeit" der NSDAP bis zur Entnazifizierung.   273-  336. Reinhard Rudolf Heinisch: Salzburger U-Boot-Patenschaften im Zweiten Weltkrieg.   337-  364. Hermann Hinterstoisser: Die Dienstabzeichen der Salzburger Landeswacheorgane.   365-  392. Franz Mittermüller: Das Rauchhaus Ederbauer im Salzburger Freilichtmuseum. - Eine kulturgeschichtliche Besonderheit des Salzburger Flachgaus.   393-  420. Claudia Arming, Christian Eichberger, Walter Strobl: Floristische Beiträge aus Salzburg, V.   421-  434. Oskar Dohle: Tätigkeitsbericht des Salzburger Landesarchivs für 2002.   435-  464. : Zum Salzburger Schrifttum.   465-  472. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. I. Mitgliederbewegung.   473-  474. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. II. Totentafel.   474-  476. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. III. Vorträge.   476. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. IV. Exkursionen und Führungen.   477. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. V. Vereinsleitung.   478. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. VI. Anschriften der Gesellschaft.   479. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2001/2002. VII. Vorschau auf die Vorträge im Vereinsjahr 2003/2004.   480</dc:description>
+   <dc:date>2003</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29159.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29159.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29159</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New and little known Platygastridae from Indonesia and Malaysia (Hymenoptera: Platygastroidea)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Buhl P.N.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Platygastroidea</dc:subject>
+   <dc:subject>Platygastridae</dc:subject>
+   <dc:subject>Platygastrinae</dc:subject>
+   <dc:subject>Sceliotrachelinae</dc:subject>
+   <dc:subject>Amblyaspis</dc:subject>
+   <dc:subject>Euxestonotus</dc:subject>
+   <dc:subject>Gastrotrypes</dc:subject>
+   <dc:subject>Indomerella gen. nov.</dc:subject>
+   <dc:subject>Leptacis</dc:subject>
+   <dc:subject>Platygaster</dc:subject>
+   <dc:subject>Prosynopeas</dc:subject>
+   <dc:subject>Sacespalus</dc:subject>
+   <dc:subject>Synopeas</dc:subject>
+   <dc:subject>Cylindrotacis subgen. nov.</dc:subject>
+   <dc:subject>Oriental</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:subject>Malaysia</dc:subject>
+   <dc:subject>keys</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new subgenus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:description>The following 42 taxa are described as new to science: Amblyaspis yasiriana spec. nov., Euxestonotus thorkildmunki spec. nov., Gastrotrypes malaysianus spec. nov., Indomerella vanachterbergi gen. nov. &amp; spec. nov., Leptacis acarinata spec. nov., L. apiculata spec. nov., L. bicolor spec. nov., L. Cylindrotacis bipartita subgen. nov. &amp; spec. nov., L. breviciliata spec. nov., L. caudata spec. nov., L. dupondi spec. nov., L. duponti spec. nov., L. mymaroides spec. nov., L. obtusiceps spec. nov., L. pilosella spec. nov., L. sagittata spec. nov., L. silvatica spec. nov., L. spatulata spec. nov., L. tegulata spec. nov., L. tenuissimus spec. nov., L. transoceanica spec. nov., L. yasirae spec. nov., L. vertexialis spec. nov., Platygaster achterbergi spec. nov., P. baliensis spec. nov., P. crassiclava spec. nov., P. luteipes spec. nov., P. sparsipilosa spec. nov., P. vriesi spec. nov., Prosynopeas indonesianus spec. nov., Sacespalus manii spec. nov., S. rufiscapus spec. nov., Synopeas achterbergi spec. nov., S. ciliaris spec. nov., S. flavispinus spec. nov., S. halmaherensis spec. nov., S. infuscatus spec. nov., S. lombokensis spec. nov., S. longulus spec. nov., S. nigricoxa spec. nov., S. praemorsus spec. nov., and S. quasimodo spec. nov. Platygaster intermedius Ushakumari, 2004, is transferred to Synopeas. The hitherto unknown male of Gastrotrypes caudatus Brues, 1922 is described. New records are given of some already known species. Keys are provided for Oriental species of Leptacis, Platygaster, and Synopeas.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:292114</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 515 - 579</dcterms:extent>
+   <dcterms:isPartOf>New and little known Platygastridae from Indonesia and Malaysia (Hymenoptera: Platygastroidea) (URN:ISSN:0024-0672) (Volume 82) (Issue 46)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/292114.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/122257</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/292114</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

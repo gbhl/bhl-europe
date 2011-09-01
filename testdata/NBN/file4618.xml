@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nieuwe en interessante Microlepidoptera uit Nederland in het jaar 1994 (Lepidoptera)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Huisman K.J.</dc:creator>
+   <dc:creator>Koster J.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>microlepidoptera, Nederland, faunistiek, nieuwe waarneming</dc:subject>
+   <dc:description>The eight compilation of Microlepidoptera collected in The Netlierlands covers the year 1994. Six species are recorded for the first time from The Netherlands. Micropterix schaefferi (Micropterigidae) was already collected in May 1977 but was not reported so far. The specimens were caught by sweeping Vaccinium myrtillus. One specimen of Caloptilia suberinella (Gracillariidae) was collected in a light trap in the southwestern part of the country. Two specimens of Monochroa arundinetella (Gelechiidae) were collected at light in the dunes in the province of Noord-Holland. The species is compared with M. suffesella and diagnostic features are described and figured. Scrobipalpula psilella was collected in 1991 in the very south-east of the country (Zuid-Limburg). Caryocolum fraternella was reared from Stellaria fontanum from Zuid-Limburg. Two specimens of Eucosma catoptrana (Tortricidae) were collected on the West Frisian Island of Terschelling. A seventh species, Epermenia falciformis (Epermeniidae), also new for The Netherlands, was mentioned from Eindhoven by Scholz (1996). The differences in the external characters and male and female genitalia of Lita solutella and L. sexpunctella are discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:303230</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1997</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 45 - 65</dcterms:extent>
+   <dcterms:isPartOf>Nieuwe en interessante Microlepidoptera uit Nederland in het jaar 1994 (Lepidoptera) (URN:ISSN:0013-8827) (Volume 57) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/303230.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/132752</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/303230</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

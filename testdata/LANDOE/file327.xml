@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 116-117 (1978)</dc:title>
+   <dc:creator>Draxler  Gerhard, Forstner  Walter, Frank  Christa, Franz  Herbert, Gilli  Alexander, Helsper  H.P.G., Hilbig  W., Hölzl  J., Holzner  Wolfgang, Lindner  Christian, Nopp  Herbert, Pietschmann  Artur, Pírvu  C., Pruscha  Helmut, Ricek  Erich W., Robatsch  Karl, Schratt-Ehrendorfer  Luise, Smeets  P.J.A.M., Wendelberger  Gustav, Werger  M.J.A., Westhoff  V., ZOBOT Österreich  ZOBOT Österreich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herbert Franz: In memoriam Univ.Prof. Dr. Helmut Gams     5-    6. J. Hölzl: o. Univ.-Prof.Dr. E. Bancher- 65 Jahre     7-    8. Christa Frank: Zu Vorkommen und Ökologie der beiden Mittel- und Südweststeierischen Itala-Arten     9-   13. Christa Frank: Perforatella (P.) bidentata GMELIN 1788 (Hygromiinae): weitere Funde aus der Südweststeiermark    15-   17. Artur Pietschmann: Zur Macrolepidopterenfauna des südlichen Tullner Feldes    19-   28. Alexander Gilli: Eine Besiedlung von Mauerschutt    29-   31. Luise Schratt-Ehrendorfer: Die Sumpfschraube (Vallisneria spiralis L.) in der Lobau    33-   34. Erich W. Ricek: Die Flora der Umgebung von Gmünd im niederösterreichischen Waldviertel, I. Teil    35-   59. C. Pírvu: Beitrag zum Studium der Flora und Vegetation des Hochmoores Bílbíitoarea (Rumänien)    61-   78. Christian Lindner: Eine neue Elodea in Lunz    79-   81. Gerhard Draxler: Gaswechselmessungen an Spirogyra-Arten am natürlichen Standort    83-   98. W. Hilbig, Walter Forstner, Wolfgang Holzner: Nitrophile Saumgesellschaften in Niederösterreich und dem Burgenland    99-  110. V. Westhoff, H.P.G. Helsper, P.J.A.M. Smeets, M.J.A. Werger: Ökologie der subalpinen Vegetation des Lausbachtales, Tirol   111-  125. Herbert Nopp, Helmut Pruscha: Über die Beendigung der Puppendiapause von Philosamia cynthia DRU   127-  138. Karl Robatsch: Über ein Vorkommen von Goodyera macrophylla LOWE auf Madeira   139-  140. Gustav Wendelberger: Das vierdimensionale Vegetationsgefüge der Erde   141-  158. ZOBOT Österreich ZOBOT Österreich: Satzungen und Leitung der Gesellschaft   197-  199</dc:description>
+   <dc:date>1978</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24525.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24525.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24525</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

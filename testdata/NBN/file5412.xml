@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XXI. Kritische Revision der Gattungen Lingamius und Koramius</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Subfamilie PARNASSIINAE Genus Lingamius Bryk Bryk zieht im Gegensatz zu M. Hering — siehe dessen für die Parnassiologie überaus wertvolle Arbeit ,,Morphologische Untersuchungen in der Gattung Parnassius (Lepidopt.) als Beitrag zu einer Kritik am Begriff der Unterart" in Mitt. Zool. Museum Berlin 18. Band, 3. Heft — nur L. hardwickei Gray zu diesem genus. Für weitere species stellt Bryk aufgrund anderer Merkmale als der, die die Basis der Untersuchungen von Hering waren, besondere genera auf, worin ich Bryk folgen kann. Von den vorher behandelten genera unterscheidet sich Lingamius Bryk durch das Schienenblättchen, das lang, zugespitzt das Ende der Tibia erreicht, durch die Form des 8. Tergits des ♂, die bei L. hardwickei Gray der des Tergits von Koramius acco Gray, K. cephalus Gr. Gr. und K. széchenyi Friv. änhlich ist, und durch die eigentliche Genitalarmatur. Uncus des ♂ zeigt 2 Vorsprünge; Subunci fehlen; Valven sehr gross, gerundet, schalenförmig, mit stark chitinisiertem Fortsatz an der Innenseite. Aedoeagus verschieden lang, keulenförmig verbreitert, mit bescheidenem Orificium. Die Sphragis des ♀ weisslich bis gelblich, im Profil dreieckig, seitlich abgeplattet, ventral mehr oder weniger abgerundet, meist mit deutlicher Längsfurche; sie umklammert nur halb das letzte und ein wenig das vorletzte Segment, ist also nicht ringförmig; hinten schmiegt sie sich an den Ovipositor an. Die sonstigen morphologischen für das genus kennzeichnenden Merkmale hat Bryk im Tierreich so gut beschrieben, dass ich mich damit begnügen kann, darauf hinzuweisen. Während die anderen Zeichnungselemente von L. hardwickei Gray im wesentlichen mit denen der apollo-Gruppe überein-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317917</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1958</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 83 - 112</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XXI. Kritische Revision der Gattungen Lingamius und Koramius (URN:ISSN:0024-0672) (Volume 36) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317917.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149203</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317917</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

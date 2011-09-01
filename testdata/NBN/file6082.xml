@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pleistocene vertebrates from Celebes : XII. Notes on pygmy stegodonts</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>There is a reason for adding to the series "Pleistocene vertebrates from Celebes", which was brought to a conclusion just a decade ago, and which has since been summarized, with bibliographic references, e.g., in Van Heekeren (1957) and Hooijer (1959, 1960). The discovery of a pygmy stegodont in the island of Flores, Lesser Sunda Islands (Hooijer, 1964) brought me to a reconsideration of the evidence for a pygmy Stegodon in Celebes, which was considered inconclusive at the time, and restudy of all the fragmentary specimens in the Celebes collection not included in the published reports. As a result, all doubt concerning its status is removed; the Celebes Stegodon is decidedly smaller than Stegodon trigonocephalus Martin from Java. The evidence will be presented in the pages that follow; it rounds off the account of the Pleistocene Celebes vertebrates. The pygmy elephantine Archidiskodon celebensis Hooijer (1949), nearly all the dental elements of which (including premolars and the lower tusk) are now known, is not the only proboscidean in the Pleistocene fauna of Celebes. In 1953 descriptions and figures were given of two unmistakable Stegodon molars (Hooijer, 1953), a left lower and a right upper, with basal widths of 60-63 mm, wider than the last molars of Archidiskodon celebensis (42-52 mm in M3, 41-44 mm in M3: Hooijer, 1954: 109 and 113). I could not, then, make up my mind as to whether these did represent the last molars, and left them as Stegodon spec. The stegodont molars differ from those of the pygmy archidiskodont in various characters, as follows: 1. The ridges are only two-thirds as high as wide in the unworn state, whereas in Archidiskodon celebensis the plates in M3 and M3 are higher</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318587</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 37 - 44</dcterms:extent>
+   <dcterms:isPartOf>Pleistocene vertebrates from Celebes : XII. Notes on pygmy stegodonts (URN:ISSN:0024-0672) (Volume 40) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318587.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149873</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318587</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Orbione digitata spec. nov. (Isopoda: Bopyridae), parasite de Solenocera choprai Nataraj (Decapoda: Penaeidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bourdon R.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Nous remercions vivement M. le Professeur L. B. Holthuis (Leiden) qui nous a aimablement envoyé à déterminer les deux couples de Bopyres ci-dessous décrits. La récolte de ces derniers s'avère d'ailleurs des plus intéressantes, tant du point de vue taxonomique qu'éthologique. Tout d'abord, parce qu'il s'agit d'un nouvel Orbioniné et que, d'autre part, sur la cinquantaine de Pénéides parasités par ce groupe d'Isopodes, on ne connaissait jusqu'ici qu'une seule espèce du genre Solenocera infestée. Orbione digitata spec. nov. Matériel examiné. — ♀ holotype + O'allotype et 1 ♀ + l ♂, sur Solenocera choprai Nataraj; Inde, Madras, 19.iii. 1979; J. C. Miquel coll. (Rijksmuseum van Natuurlijke Historie, Leiden, N° Crust. I. 6409 (holotype et allotype) et I. 6910 (paratypes). Description. — Femelle (fig. la): Longueur 17,4 mm; largeur 11,5 mm; pléon 5,2 mm. Asymétrie pratiquement nulle. Céphalon renflé, son bord postérieur trilobé et quelque peu fissuré. Yeux absents. Lame frontale légèrement déprimée au milieu, sa longueur n'atteignant pas la moitié de celle de la tête (0,44). Antennules très écartées de trois articles; antennes presque deux fois plus longues, paraissant comprendre cinq articles. Maxillipèdes (fig. 2a) terminés par un grand palpe dépourvu de soies. Bord postéro-ventral (fig. 2b) présentant deux paires de lamelles digitées comme l'est, à un moindre degré, la partie médiane. Péréion avec les segments II-III plus ou moins fusionnés au milieu. Bosses latéro-dorsales oblongues et proéminentes sur les quatre premiers somites. Plaques coxales à tous les thoracomères; les deux antérieures très développées, les</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318076</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1982</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 193 - 196</dcterms:extent>
+   <dcterms:isPartOf>Orbione digitata spec. nov. (Isopoda: Bopyridae), parasite de Solenocera choprai Nataraj (Decapoda: Penaeidae) (URN:ISSN:0024-0672) (Volume 56) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318076.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149362</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318076</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

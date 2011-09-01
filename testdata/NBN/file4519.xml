@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Types and originals of fossil Porifera and Cnidaria of Indonesia in Naturalis</dc:title>
+   <dc:title>NNM Technical Bulletin</dc:title>
+   <dc:creator>Leloux J.</dc:creator>
+   <dc:creator>Renema W.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:subject>Gerth</dc:subject>
+   <dc:subject>Martin</dc:subject>
+   <dc:subject>Umbgrove</dc:subject>
+   <dc:subject>Foraminifera</dc:subject>
+   <dc:subject>Hydrozoa</dc:subject>
+   <dc:subject>Scleractinia</dc:subject>
+   <dc:subject>Rugosa</dc:subject>
+   <dc:subject>Tabulata</dc:subject>
+   <dc:subject>Octocorallia</dc:subject>
+   <dc:subject>Bivalvia</dc:subject>
+   <dc:subject>Ammonoidea</dc:subject>
+   <dc:subject>Echinodermata</dc:subject>
+   <dc:subject>Rhodophyta</dc:subject>
+   <dc:subject>Tertiary</dc:subject>
+   <dc:subject>Permian</dc:subject>
+   <dc:description>The collection of Naturalis contains a significant collection of fossil corals and sponges. Within the framework of the 'NWO Groot' digitalisation projects the typespecimens, mainly from Indonesia, of Gerth, Umbgrove and related researchers were catalogued. 3920 lots containing 3479 typespecimens related to 676 taxa are concerned.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:270361</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>1-305, 104 pls.</dcterms:extent>
+   <dcterms:isPartOf>Types and originals of fossil Porifera and Cnidaria of Indonesia in Naturalis (URN:ISSN:1387-0211) (Volume 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/270361.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/99762</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/270361</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

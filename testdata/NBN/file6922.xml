@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Amphibians from Liberia and the Gold Coast</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Parker H.W.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Thanks to the courtesy of Drs. Boschma and Brongersma the author has been privileged to examine a large series of West African amphibians from the collections of the Royal Museum of Natural History in Leiden. Of the comparatively easily accessible parts of Africa, Liberia is probably the least known, in so far as its herpetological fauna is concerned, and consequently it is not surprising to find that the present material contains much of interest. The following notes concern some of the more obvious points which arise out of the material examined and do not purport to be in any way exhaustive. The author is indebted not only to the gentlemen already mentioned, but also to M. Angel and Mr. Loveridge who have most generously placed at his disposal material without which much of the work could never have been done. The herpetological fauna of Liberia is essentially that of the western section of the "Rain Forest Province". In past times the fauna of the whole Rain Forest Province from Senegal to Uganda southwards to Angola was considered to be more or less uniform and the same species were frequently reported from diametrically opposite extremes of this area. Thus, for example, many "species" have been recorded from "West Africa and Angola" and, though there undoubtedly are many wide-ranging forms which may occur in these two widely-separated areas, it is becoming increasingly evident that the "West African" region, i.e., the forested zone from Senegal to Dahomey, is a very distinct faunal province which has very few species in common with Angola, and is even quite clearly marked off from the Cameroon-Gaboon area with which it is almost confluent. The Liberian collections were made by the following collectors: —</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319427</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1936</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 87 - 102</dcterms:extent>
+   <dcterms:isPartOf>Amphibians from Liberia and the Gold Coast (URN:ISSN:0024-0672) (Volume 19) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319427.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150713</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319427</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

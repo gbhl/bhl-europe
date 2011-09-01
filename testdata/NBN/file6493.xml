@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Bird records from the Moluccas</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>INTRODUCTION For the past thirty years I have, from time to time, come across bird material and literature records which have added localities and in a few instances have added new species, to Van Bemmel's (1948) list of birds of the Moluccan Islands and its supplement, published five years later (Van Bemmel &amp; Voous, 1953). I have kept notes of these additions with the vague idea of perhaps, some time in the future, publishing a revised edition of the list of the avifauna of the Moluccas, zoogeographically one of the most interesting regions of the world. The sum total of my notes to date would hardly have justified publication, were it not for the fact that a new list of Moluccan birds was in the course of preparation by the late C. M. N. White, and is to be posthumously completed and published (cf. Benson, 1979; Cranbrook, 1980). This made it desirable to have my notes published, so that they will be available for inclusion in the new list. Ornithological activity in the Moluccas since the publication of Van BemmePs list has been limited. Many of De Haan's results were already incorporated in the paper by Van Bemmel &amp; Voous (1953); subsequently two new subspecies from his collections were described by Jany (1955). In 1953, an expedition of the Museum Zoologicum Bogoriense under the leadership of Mr. A. M. R. Wegner, worked for six weeks on Batjan (9.VI-21.VII), a much longer period on Obi (22.VII-3.XI) and one day on Majau (7.XI). Results were published by Jany (1954, 1955). In 1954, Dr. S. D. Ripley spent several months on the Island of Batjan and a few days on Halmahera (Ripley, 1959a, 1959b, 1960). Towards the end of 1961, Mr. P. Pfeffer made a small collection of birds on Ambon, an island that had been neglected ornithologically (Berlioz &amp; Pfeffer, 1966). In 1971 (19.IV-22.V) a party of students from the Australian National University,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318998</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1982</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 91 - 111</dcterms:extent>
+   <dcterms:isPartOf>Bird records from the Moluccas (URN:ISSN:0024-0672) (Volume 56) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318998.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150284</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318998</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

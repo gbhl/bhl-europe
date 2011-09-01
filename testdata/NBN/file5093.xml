@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Cavernicolous And Terrestrial Decapod Crustacea From Northern Sarawak, Borneo</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>During the 1977-1978 Royal Geographical Society Mulu (Sarawak) Expedition a number of Decapod Crustacea was obtained. Some were collected by Mr. Philip Chapman in the course of studies of the invertebrates of the limestone caves in the Gunong Mulu National Park, 4th Division of Sarawak, and the Niah National Park south of Miri. Another expedition member, Dr. N. M. Collins, collected several crabs in pitfall traps and one in a soil core in the course of studies of terrestrial invertebrates of the Mulu area. I am most indebted to Messrs Chapman and Collins for placing this interesting collection of cavernicolous and terrestrial Decapoda at my disposal, and for the extensive information on the localities, habitats and the biology of the species, as well as for descriptions of the colour of living specimens. The material, including holo- and allotypes, now forms part of the collection of the Rijksmuseum van Natuurlijke Historie, Leiden. Paratypes of the new species and duplicates of others are deposited in the British Museum (Natural History). After the report on the above collections was written, three more freshwater crabs, this time collected by the botanists of the expedition, were received through the kind offices of Dr. R. W. Ingle, British Museum (Natural History). As these specimens provided important additional information (two specimens were males of a new species, which in the other material was only represented by females; the third was a species not collected by either Mr. Chapman or Dr. Collins), they are included here. The material (a female of Palawanthelphusa pulcherrima and the male holoand paratypes of Sundathelphusa tenebrosa) forms part of the collection of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317598</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 47</dcterms:extent>
+   <dcterms:isPartOf>Cavernicolous And Terrestrial Decapod Crustacea From Northern Sarawak, Borneo (URN:ISSN:0024-1652) (Volume 171) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317598.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148884</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317598</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

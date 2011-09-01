@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ueber die Identität von Thecadactylus pollicaris Spix 1825 mit Phyllopezus goyazensis Peters 1877. Von Lorenz Müller (Zoolog. Staatssaammlung, München) und L. D. Brongersma ('s Rijks Museum van Natuurlijke Historie, Leiden)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Der von SPIX im Jahre 1825 in „Species novae Lacertarum" auf Seite 17 beschriebene und auf Tafel 18 Fig. 2 abgebildete Thecadactylus pollicaris wurde von CUVIER „Règne animal II" Seite 54 in die Synonymie von G(ecko) mabuia (= Hemidactylus mabouia MOR.) versetzt und die meisten späteren Autoren schlossen sich dieser Ansicht an. DUMÉRIL und BIBRON führen in Band III ihrer „Erpétologie générale" S. 362 die Spixsche Art allerdings nur mit einem Fragezeichen in der Synonymie von Hemidactylus mabouia auf und auch GRAY „ Catalogue of Lizards" S. 154 folgt ihrem Beispiel. Aber seitdem PETERS, der die Spixschen EidechsenArten einer Revision unterzog (Monatsber. Akad. Berlin 1877), Thecadactylus pollicaris SPIX in die Synonymie von Hemidactylus tuberculosus RADDI (= Hemidactylus mabouia Mor.) versetzt hatte, bestand offenbar kein Zweifel mehr an der Identität der beiden Arten. Nur Schlegel hatte im Jahre 1858 (Handl. Dierk. II, S. 15) Th. pollicaris unter dem Namen Platydactylus pollicaris als eigene Art aufgeführt ohne indes seine Ansicht zu begründen. Daß sie aber berechtigt war, soil in folgendem ausgeführt werden. Bei einer Durcharbeitung der herpetologischen Sammlung des Rijksmuseum van Natuurlijke Historie in Leiden fand der jüngere von uns beiden ein Glas mit einem Gecko, das folgendermaßen etikettiert war: Hemidactylus mabouia Mor. sn. Thecadactylus pollicaris SPIX. SPIX Brésil Dieses Exemplar, daß das Leidener Museum durch SPIX selbst erhielt, stimmt sehr gut mit der von ihm gegebenen Beschreibung und Abbildung</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318389</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 156 - 161</dcterms:extent>
+   <dcterms:isPartOf>Ueber die Identität von Thecadactylus pollicaris Spix 1825 mit Phyllopezus goyazensis Peters 1877. Von Lorenz Müller (Zoolog. Staatssaammlung, München) und L. D. Brongersma ('s Rijks Museum van Natuurlijke Historie, Leiden) (URN:ISSN:0024-0672) (Volume 15) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318389.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149675</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318389</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

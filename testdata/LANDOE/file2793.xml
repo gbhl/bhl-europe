@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 2_1-3 (1950)</dc:title>
+   <dc:creator>Arzt  Theodor, Fischer  Robert, Gams  Helmut, Guglia  Otto, Harrison  J.W. Heslop, Härtel  Otto, Härtel  Otto jun., Hauser  Willibald, Herzog  Th., Janchen  Erwin Emil Alfred, Kuchar  Karl, Kunz  Hans, Küster  Ernst, Langer  Elfriede, Linser  Hans, Lüdi  Werner, Medawara  Mohamed Rida, Mirimanoff  A., Negre  Robert, Rechinger  Karl Heinz, Schindler  Hellmuth, Stadelmann  R., Toth  Annemarie, Weber  Friedl, Weissenböck  Konrad, Widder  Felix Josef, Wybiral  Maria</dc:creator>
+   <dc:description>Inhaltsverzeichnis: R. Stadelmann, A. Mirimanoff: Contribution à la phytochimie du pèricarpe de Juglans regia L.     1-    7. Helmut Gams: Die IX. Internationale Pflanzengeographische Exkursion durch Irland im Juli 1949.     8-   10. Hellmuth Schindler, Annemarie Toth: Zur Anatomie des Blattes von Coelogyne flaccida.    11-   22. Robert Negre: Contribution à l'étude phytosociologique de l'Oisans: La Haute vallée du Vénéon (Massif Meije-Ecrins-Pelvoux).    23-   50. Ernst Küster: Beiträge zur Kenntnis der Kutikula, insbesondere der einiger Haare.    51-   56. Erwin Emil Alfred Janchen: Beiträge zur Benennung, Verbreitung und Anordnung der Farn- und Blütenpflanzen Österreichs, I.    57-   76. Robert Fischer, Maria Wybiral: Zum Nachweis kleinster Saponinmengen.    77-   91. Hans Linser: Beobachtungen zur Jahresperiodik der Wachstumskorrelation bei Keimlingen von Avena sativa.    92-   97. Hans Kunz: Cerastium austroalpinum KUNZ spec. nov., eine bislang verkannte Sippe der südöstlichen Kalkalpen.    98-  103. J.W. Heslop Harrison: A pondweed, new to the European flora, from the Scottish Western Isles, with some remarks on the phytogeography of the islands group.   104-  109. Willibald Hauser, Elfriede Langer: Über den Einfluss von Saponinen auf das Pflanzenwachstum.   110-  123. Karl Heinz Rechinger: Die ausdauernden iranischen Arten von Erigeron sectio.   124-  133. Konrad Weissenböck: Studien an colchizinierten Pflanzen, II. Teil: Protoplasmatische Untersuchungen.   134-  152. Otto Guglia: Zur Orchideenflora des Neusiedler See-Gebietes.   153-  156. Theodor Arzt: Mikroklimatische Untersuchungen über Windschutz in einem Kulturpflanzenstand.   157-  181. Otto Härtel: Über Wirkungen des "Vitamin T" auf pflanzenphysiologische Vorgänge.   182-  192. Mohamed Rida Medawara: Notizen über Vitamin C in der Pflanze.   193-  212. Karl Kuchar: Plasmolyseverlauf und Trichomzerfall bei zwei Oscillatorien.   213-  222. Felix Josef Widder: Diagnoses stirpium novarum, I-III.   223-  229. Th. Herzog, Friedl Weber, Otto jun. Härtel, Werner Lüdi, Felix Josef Widder: Recensiones.   230-  244</dc:description>
+   <dc:date>1950</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30065.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30065.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30065</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

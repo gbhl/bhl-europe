@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carpelimus zealandicus, een nieuwe kortschildkever voor Nederland (Coleoptera: Staphylinidae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Cuppen J.G.M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Herkenning</dc:subject>
+   <dc:subject>Exoot</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Ecologie</dc:subject>
+   <dc:description>Carpelimus zealandicus, a new rove beetle for the Netherlands (Coleoptera: Staphylinidae) In this paper the first occurrence in the Netherlands of the rove beetle Carpelimus zealandicus, originating from New Zealand, is reported. One specimen was collected on 23.v.2002 on the banks of the straightened lowland stream Hoge Raam near Sint Hubert (province of Noord- Brabant). In Europe, banks of different types of water form the normal habitat of C. zealandicus, with an apparent preference for newly created ones. During a period of forty years after the introduction of the species in Europe (England) and by an apparently good colonisation power, C. zealandicus has succeeded to build up a large distribution area in Western Europe. Despite occasionally large populations as in a newly dug canal in Austria or in several (sand)pits in England, C. zealandicus cannot be considered a very successful invasive species as numbers are most often low, collecting sites are scarce and widely distributed, and time-intervals between collecting dates are large. However, it is expected that populations of C. zealandicus in the Netherlands will be discovered soon as newly created water-bodies are a permanent part of the modern Dutch landscape.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219837</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 35 - 40</dcterms:extent>
+   <dcterms:isPartOf>Carpelimus zealandicus, een nieuwe kortschildkever voor Nederland (Coleoptera: Staphylinidae) (URN:ISSN:01692453) (Volume 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219837.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46385</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219837</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

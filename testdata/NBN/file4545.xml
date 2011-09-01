@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitochondrial patterns of intra- and interspecific differentiation among endemic freshwater crabs of ancient lakes in Sulawesi</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Schubart C.D.</dc:creator>
+   <dc:creator>Santl T.</dc:creator>
+   <dc:creator>Koller P.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>species flock</dc:subject>
+   <dc:subject>adaptive radiation</dc:subject>
+   <dc:subject>ecotypes</dc:subject>
+   <dc:subject>morphotypes</dc:subject>
+   <dc:subject>genetic barcoding</dc:subject>
+   <dc:subject>Cox1 mtDNA</dc:subject>
+   <dc:description>Due to their long-term ecological stability, ancient lakes represent very interesting systems for studying differentiation and speciation processes. High degrees of endemism and specialisation are characteristic features of their fauna. The Malili lakes from the Indonesian island Sulawesi are considered an ancient limnic system, and recent research has increased the number of recognized species and the knowledge about ecological and morphological diversification within a variety of animal taxa. Here we show that the local endemic gecarcinucid freshwater crabs are more differentiated than qualitative morphological characters and the current taxonomy may indicate. The morphologically and ecologically well characterised species Nautilothelphusa zimmeri Balss, 1933 consists of two allopatric populations with one of the groups being more closely related to sympatric Parathelphusa ferruginea Chia and Ng, 2006 according to mitochondrial genetic data. One haplotype is even shared by both species. Nevertheless, in this study lack of gene flow between both species is demonstrated. To our knowledge, this is the first report of DNA sequence identity between two different genera along the same cytochrome oxidase I gene segment that is being proposed for barcoding studies.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:280475</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 83 - 90</dcterms:extent>
+   <dcterms:isPartOf>Mitochondrial patterns of intra- and interspecific differentiation among endemic freshwater crabs of ancient lakes in Sulawesi (URN:ISSN:1383-4517) (Volume 77) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/280475.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/112259</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/280475</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

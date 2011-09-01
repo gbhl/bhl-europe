@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vorarlberger Naturschau - Forschen und Entdecken 1 (1996)</dc:title>
+   <dc:creator>Aistleitner  Eyjolf, Hostettler  Kurt, Huemer  Peter, Kilzer  Gerold, Kilzer  Rita, Machold  Christine, Pfefferkorn-Dellali  Veronika, Schmid  Margit, Werner  Richard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Veronika Pfefferkorn-Dellali: Epiphytische Flechtenvereine in Vorarlberg (Österreich) unter besonderer Berücksichtigung der Hemerobie von Waldökosystemen.     9-  152. Christine Machold: Die Trespenwiesen des Walgau.   153-  232. Rita Kilzer: Ornitho-ökologische Bewertung der sonnseitigen Bergwälder im Klostertal.   233-  264. Peter Huemer: Frühzeitige Mahd, ein bedeutender Gefährdungsfaktor für Schmetterlinge der Streuwiesen (NSG Rheindelta, Vorarlberg, Österreich).   265-  300. Kurt Hostettler: Libellenfauna im Raume Lauterach - Lustenau - Dornbirn.   301-  322. Gerold Kilzer: Zur Heuschreckenfauna Vorarlbergs.   323-  334. Eyjolf Aistleitner: Die Arealgrenzen der beiden Dickkopffalter-Arten Pyrgus malvae L. und Pyrgus malvoides (ELW. et EDW.) (Lepidoptera, Hesperiidae) in Vorarlberg (Österreich) und Liechtenstein.   335-  344. Richard Werner: Zur jährlichen Schwankungsbreite monatlicher Niederschlagssummen in Vorarlberg.   345-  350. Margit Schmid: Ihre Naturschau 1994.   351-  358. : Geologische Forschung in Vorarlberg.   359-  362</dc:description>
+   <dc:date>1996</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27433.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27433.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27433</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

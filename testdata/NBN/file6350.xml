@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The nasal mites of the Domestic Goose and the Eider (Acarina, Rhinonyssidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eyndhoven, van G.L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the year 1895 Trouessart described a new species: Sternostomum rhinolethrum 1) (at present known as Rhinonyssus rhinolethrum (Trouessart, 1895)) from the nasal cavities of the Domestic Goose, Anser anser (L.). Trouessart's description was preliminary, but the promised complete description with figures in the Bulletin de la Société Zoologique de France was never published. Strandtmann (1956, pp. 137-140) and Fain (1957, pp. 42-44) have sufficiently explained that the species R. rhinolethrum is not the type species of Sternostomum Trouessart, 1895, an invalid emendation of the generic name Sternostoma Berlese &amp; Trouessart, 1889, and that it does not even belong to the genus Sternostoma. It should be placed in the genus Rhinonyssus. In 1904 (pp. 28-30, figs. 42-47, Pl. 1 figs. 1, 3, 8) Trägårdh described under the name Sommatericola levinseni nov. gen. nov. spec. 2) a similar species, found by Prof. Levinsen in the nose of the Eider, Somateria mollissima (L.), on Greenland. It seems that Trägårdh was not aware of Trouessart's paper, as he does not refer to it at all. Yet Trägårdh must have seen some of Trouessart's papers, as on p. 29 he makes a comparison with the genus Ptilonyssus. In his description of Sommatericola levinseni Trägårdh made various mistakes, the most confusing being that his "male" was in reality a deutonymph (no dorsal shield), so that he did not observe a real male at all. His fig. 44 shows typically the claws of a nymph. The tarsal setae are incorrectly represented, as in reality the sensorial area of tarsus I shows hairs of a different shape and arrangement. Therefore all Trägårdh's con-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318855</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 297 - 307</dcterms:extent>
+   <dcterms:isPartOf>The nasal mites of the Domestic Goose and the Eider (Acarina, Rhinonyssidae) (URN:ISSN:0024-0672) (Volume 39) (Issue 31)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318855.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150141</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318855</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

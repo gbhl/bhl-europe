@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description d'une nouvelle espèce de Dineutes (Fam. Gyrinidae Col.) de l'Île de Formosa</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Uyttenboogaart D.L.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Dineutes sauteri nov. sp. Long. 16—17 mm. — Ovatus, latus, antice magis quam postice attenuatus, utrinque valde depressus; in regione scutellari fortiter convexus; supra subtilissime reticulatus et leviter sed densiter punctulatus, in medio cupreo-micans, utrinque coerulescens et paululum sericeus; infra nigropiceus, tarsis mediis et posticis ferrugineis; elytris apice rotundatis, extus vix subsinuatis, angulo suturali valde rotundato. ♂ Femoribus anticis sulcatis et ante apicem dentatis; tibiis vix incurvatis, angulo apicali externo recto, leviter deleto. Très voisine de fulgidus Rég., s'en distinguant par les caractères suivantes: Coloration plus brune en dessus, noir de poix en dessous avec les tarses des pattes natatoires ferrugineux. Tibias ant. du ♂ courbés en dehors vers le sommet avec l'angle apical extérieur droit un peu dilaté en dehors. Gibbosité scutellaire encore plus forte, les élytres encore plus dilatées, ce qui la donne l'aspect très large et court surtout chez le ♂. Angle sutural des élytres largement arrondi. Elytres avec une ponctuation obsolète plus dense et pas si fine que chez fulgidus Rég. Formosa (lac Candidius); 3 exemplaires (2 ♂ 1 ♀) dans la collection du musée de Leiden, trouvés par M. H. Sauter. Rotterdam, le 16 septembre 1915.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319125</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1915</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 140 - 140</dcterms:extent>
+   <dcterms:isPartOf>Description d'une nouvelle espèce de Dineutes (Fam. Gyrinidae Col.) de l'Île de Formosa (URN:ISSN:0024-0672) (Volume 1) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319125.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150411</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319125</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Invasieve Arthropoda in Nederland: een eerste inventarisatie</dc:title>
+   <dc:creator>Reemer M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Uitbreiding</dc:subject>
+   <dc:subject>Exoten</dc:subject>
+   <dc:description>Invasieve Arthropoda in Nederland: een eerste inventarisatie Hieronder worden soorten verstaan die zich sinds 1950 in Nederland gevestigd hebben en zich sterk hebben uitgebreid. Het overzicht kwam tot stand via een enquête onder circa 50 specialisten en beperkt zich tot de soorten waarvan het invasieve karakter duidelijk en gedocumenteerd is. De totale lijst bevat 104 invasieve soorten Arthropoda en geeft basale informatie over het voorkomen in Nederland, biologie, ecologie en relevante literatuur. De volgende resultaten met betrekking tot de herkomst van invasieve Arthropoda zijn gepresenteerd: • het grootste deel (73%) van de invasieve Arthropoda is afkomstig uit Europa; • de niet-Europese invasieve Arthropoda zijn afkomstig uit alle andere werelddelen (behalve Antarctica), met een relatief groot aandeel Noord-Amerikaanse soorten (11%); • de Europese invasieve Arthropoda hebben zich grotendeels (88%) op actieve wijze gevestigd; • de niet-Europese invasieve soorten hebben zich op passieve wijze gevestigd. De volgende resultaten met betrekking tot schadelijkheid van invasieve Arthropoda zijn gepresenteerd: • van alle invasieve Arthropoda geldt 36% als schadelijk; • van de Europese invasieve Arthropoda geldt 22% als schadelijk; • van de niet-Europese invasieve Arthropoda geldt 75% als schadelijk. Een selectie van 33 soorten wordt uitgebreid besproken. De eerste 13 hiervan zijn sinds 1992 voor het eerst in Nederland aangetroffen. De discussie gaat in op de volledigheid van het overzicht, de herkomst en de schadelijkheid van de invasieve Arthropoda.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220061</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>63</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220061.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46560</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220061</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

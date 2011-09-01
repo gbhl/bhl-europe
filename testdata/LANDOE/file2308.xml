@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 72 (1935)</dc:title>
+   <dc:creator>Freisling  Josef, Hirschberger  Josef, Lämmermayr  Ludwig, Lamprecht  Otto, Meixner  Heinz, Reiter  Hans Heribert, Reitz  Arno W., Schwinner  Robert, Weber  Friedl</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Freisling: Über Rhynchodemiden (Turbellaria, Tricladida-Terricola) der Gattungen Rhynchodemus Leidy und Artiocotylus Graff und ihre weiblichen Geschlechtsgänge.     5-   22. Josef Hirschberger: Messungen der Feldstärke des Senders von St. Peter in der weiteren Umgebung von Graz.    23-   26. Ludwig Lämmermayr: Notizen zur Flora über Gips, Dolomit, Phyllit und Magnesit in Steiermark.    27-   38. Otto Lamprecht: Flur- und Siedlungsformen im steirischen Weingebiet.    39-   60. Heinz Meixner: Neue Mineralfunde in den österreichischen Ostalpen. VI.    61-   66. Robert Schwinner: Zur Geologie von Birkfeld.    67-  100. Hans Heribert Reiter: Geschäftsbericht über das 71. Vereinsjahr 1934.   105-  108. Friedl Weber: Karl Linsbauer.   109-  112. Arno W. Reitz: Heinrich Brell +.   113-  114</dc:description>
+   <dc:date>1935</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28620.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28620.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28620</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Bijdrage tot de kennis van de Nederlandse bastaardschorpioenen (Arachnida, Pseudoscorpionida)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Over de bastaardschorpioenen van Nederland zijn slechts enkele verspreide gegevens gepubliceerd ; deze gegevens moeten bovendien bijna alle nog eens op juistheid van determinatie worden gecontroleerd. Ik meen dat een naamlijst die als basis kan dienen voor verder faunistisch onderzoek (afgezien van Rit sema, 1874) tot nu toe voor ons land niet bestond. Het is daarom zeer verheugend dat Prof. Dr. M. Beier (Naturhistorisches Museum, Zoologische Abteilung, Wenen), naast zijn bewerking van ons buitenlandse materiaal, ook nog tijd heeft gevonden voor determinatie van de Nederlandse bastaardschorpioenen uit de verzameling van het Rijksmuseum van Natuurlijke Historie. Het bleek hem dat deze collectie een aantal interessante aanvullende gegevens verschafte over de verspreiding van verscheidene soorten. Daar Prof. Beier zelf, door drukke werkzaamheden, geen tijd beschikbaar had voor het samenvatten hiervan in een publicatie, verzocht hij mij zijn determinaties in een artikel te verwerken. Het volgende is hiervan het resultaat, waarbij nadrukkelijk moet worden opgemerkt dat alle determinaties, met uitzondering van die van Lasiochernes pilosus (Ellingsen), door Prof. Beier zijn verricht. Terwille van de betrouwbaarheid van deze lijst, zijn vrijwel geen faunistische opgaven uit de Nederlandse literatuur overgenomen. De volgende opmerkingen zijn als inleiding tot de naamlijst van belang. De volgorde waarin de soorten hier vermeld staan, is die van Beier (1963) ; naar dit werk en naar Beier's bewerking in Das Tierreich (1932, 1932a) wordt bij iedere soort verwezen. Het aantal hier voor ons land genoemde soorten is 16, het aantal hiernaast nog te verwachten soorten 10 tot 20. Het verdient aanbeveling naar deze ontbrekende soorten vooral te zoeken in mest- en composthopen, in huizen, stallen en schuren, onder schors, op</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317224</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 15 - 24</dcterms:extent>
+   <dcterms:isPartOf>Bijdrage tot de kennis van de Nederlandse bastaardschorpioenen (Arachnida, Pseudoscorpionida) (URN:ISSN:0459-1801) (Volume 11) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317224.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148510</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317224</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

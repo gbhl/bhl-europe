@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>South American frogs of the Hyla rostrata group (Amphibia, Anura, Hylidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Duellman W.E.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>INTRODUCTION Few groups of Neotropical anurans are so diverse and taxonomically puzzling as the Hyla rubra group (sensu lato). Within this complex which possibly is generically distinct from Hyla, there are several species groups: Hyla strigilata Spix and related taxa in eastern Brasil; Hyla parkeri Gaige and relatives that are widely distributed in South America; Hyla catharinae and related taxa in eastern Brasil; Hyla acuminata Cope and relatives in the Chacoan region of South America; Hyla rostrata Peters and allied taxa in lower Central America, northern South America, and the Amazon Basin; Hyla rubra Laurenti and many similar species that are widespread in Central and South America; and some species, such as Hyla boesemani Groin, that do not seem to be closely allied with any of the recognized groups. The members of the Hyla rostrata group are treated in this paper. The earliest description of a species in this group is that of Hyla rostrata Peters (1863) named from Caracas, Venezuela. This name was not applied to known populations of frogs until Rivero (1968) used it for specimens from northern South America and Panamá; the Panamanian populations had been named as Hyla foliamorta by Fouquette (1958). In addition to synonymizing Hyla foliamorta with Hyla rostrata, Rivero also included Garbeana garbei Miranda-Ribeiro and Hyla lutzi Melin in the synonymy of Hyla rostrata. Cope (1887) named Scytopis boulengeri from Nicaragua; Günther (1901) and subsequent workers did not recognize Scytopis and placed boulengeri in Hyla. Miranda-Ribeiro (1926) named a new genus and species, Garbeana garbei from Eirunepé, Amazonas, Brasil. Duellman (1970a) demonstrated that Hyla lutzi was a synonym of Garbeana garbei, a species of Hyla distinct</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318811</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 177 - 192</dcterms:extent>
+   <dcterms:isPartOf>South American frogs of the Hyla rostrata group (Amphibia, Anura, Hylidae) (URN:ISSN:0024-0672) (Volume 47) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318811.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150097</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318811</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Coleoptera microptera Brunsvicensia nec non Exoticorum.</dc:title>
+   <dc:title>quotquot exstant in collectionibus Entomologorum Brunsvicensium</dc:title>
+   <dc:creator>Gravenhorst, Johann Ludwig Christian</dc:creator>
+   <dc:publisher>Reichard</dc:publisher>
+   <dc:date>1802-01-01</dc:date>
+   <dc:date>19. Jahrhundert</dc:date>
+   <dc:type>Text</dc:type>
+   <dc:type>book</dc:type>
+   <dc:type>Books, Monographs</dc:type>
+   <dc:format>text/html</dc:format>
+   <dc:format>application/pdf</dc:format>
+   <dc:format>text/xml</dc:format>
+   <dc:language>Latin</dc:language>
+   <dc:relation>http://edoc.hu-berlin.de/docviews/abstract.php?id=27586</dc:relation>
+   <europeana:object>http://edoc.hu-berlin.de/ebind/mfn/gravenhorst_1802/XML/png_low/gravenhorst-Coleoptera-HU001737577_00000001.png</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://edoc.hu-berlin.de/ebind/mfn/gravenhorst_1802/PDF/gravenhorst_1802.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://edoc.hu-berlin.de/ebind/mfn/gravenhorst_1802/XML/</europeana:isShownAt>
+<europeana:dataProvider>UB der Humboldt-Universität, Zweigbibliothek Museum für Naturkunde</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

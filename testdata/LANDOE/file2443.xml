@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Monografien Landschaften und Ökologie MLO1 (1983)</dc:title>
+   <dc:creator>Baumann  Norbert, Gepp  Johannes, Heidinger  Reinhold, Kainz  Harald, Kauen  Ernst Peter, Korber  Josef, Renner  Helmut, Schurl  Peter, Steiner  Rudolf</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Ernst Peter Kauen: Aitanti und Altarmersatz, Funktionen und Typen.     1-   13. Johannes Gepp: Praxis und Beispiele der Altarm-Erhaltung aus der Sicht des Ökologen.    14-   20. Josef Korber: Praktische Erfahrungen bei der Erhaltung und Schaffung von Feuchtgebieten.    21-   29. Reinhold Heidinger: Was können Rückhaltebecken - Was können sie nicht?    30-   53. Harald Kainz: Hydrologie von Wasser- und Feuchtflächen.    54-   61. Norbert Baumann: Pflanzen am und im Altwasser.    62-   73. Johannes Gepp: Tiere am und im Altarm (Insekten, Amphibien, Vögel, Wild).    74-   82. Norbert Baumann: Fische im Altwasser.    83-   90. Helmut Renner: Abwasserreinigung - Voraussetzung für naturgerechte Gewässer.    91-  101. Josef Korber: Abwasserreinigung - Voraussetzung für naturgerechte Gewässer.   102-  105. Rudolf Steiner: Wasserkraft und Feuchtgebiete.   106-  116. Peter Schurl: Rechtliche Fragen bei Kleingewässern unter besonderer Berücksichtigung des naturnahen Wasserbaues.   117-  122</dc:description>
+   <dc:date>1983</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28793.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28793.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28793</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

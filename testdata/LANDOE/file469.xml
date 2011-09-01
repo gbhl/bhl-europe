@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Steyrer Entomologenrunde 17 (1983)</dc:title>
+   <dc:creator>Göstl  Willibald, Hofmann  Franz, Kapfer  Gerald, Kremslehner  Karl, Lichtenberger  Franz, Mitter  Heinz, Müllner  Karl, Puchberger  Karl M., Schmidt  Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Müllner: 25 JAHRE STEYRER ENTOMOLOGENRUNDE     1-    9. Willibald Göstl: Gedanken eines Insektensammlers Willibald Göstl, Gründer der Steyrer Entomologenrunde    10. Franz Hofmann: LEPIDOPTERA    11-   22. Franz Lichtenberger: ÜBER PSYCHIDEN AUS NIEDERÖSTERREICH    23-   29. Franz Lichtenberger: Eine erfolgreiche Exkursion nach Loretto im Burgenland    30-   31. Franz Hofmann: EIN BEITRAG ZUR BIOLOGIE UND ZUCHT VON LARSNTIA CLAVARIA HAW. (ORTHOLITA CERVINATA SCHIFF.) - LEPIDOPTERA, GEOMETRIDAE    32-   33. Karl Kremslehner: ZWEITER BEITRAG ZUR MICROLEPIDOPTERENFAUNA VON OBERÖSTSRREICH    34. Karl M. Puchberger: Lebensgemeinschaft Tannermoor. Ein Beitrag zur Schmetterlingsfauna des nordöstlichen Mühlviertels.    35-   42. Karl Müllner: Eine unglaubliche, aber wahre Geschichte! (Bericht über ein Massenauftreten von Hypogymna morio L.)    43. Gerald Kapfer: QUER DURCH MAROKKO    44-   47. Heinz Mitter: COLEOPTERA- MALACODERMATA    48-   58. Heinz Mitter: ZUR VERBREITUNG VON NECRODES LITTORALIS L. IN OBERÖSTERREICH (Coleoptera, Silphidae)    59-   61. Josef Schmidt: FAMILIE CHRYSIDIDAE (Hymenoptera)    62-   75. Karl Müllner: ZUSAMMENSTELLUNG ALLER BEITRÄGE AUS DEN BERICHTEN DER STEYRER ENTOMOLOGENRUNDE BIS ZUM JAHR 1982    76-   78</dc:description>
+   <dc:date>1983</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25247.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25247.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25247</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

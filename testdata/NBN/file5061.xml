@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>List of the described species of the order Stylasterina</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Moseley (1880, pp. 83-88) published a "List of all the Species of Stylasteridae at present known", remarking that this list is not to be regarded as constituting a revision of the species, but represents an attempt to draw attention to all the species of which an account has been published. This list, which was prepared with the assistance of Dr. F. Brüggemann, of the British Museum, contains sixty species, arranged in twelve genera. The present list contains about one hundred described species of Stylasterina in addition to those mentioned by Moseley. Here again the genera are arranged according to the apparently natural system, while within each genus the species are placed in alphabetical order, an arbitrary arrangement being indicated because generally too little is known about the relationship of the different forms, even when representing species with well-defined characters. In the present paper the data are compiled in the manner of lists of synonyms, with notes indicating the geographical distribution or pointing to apparent mistakes. These lists of names are partly based on data that cannot be checked with respect to their reliability; therefore, numerous misidentifications are included. Only evident errors are expressly noted. When the identity of a described species with an earlier described form has been fully established, the former has been placed in the synonymy of the latter; when definite proof seems to be lacking it is noted in square brackets that a certain author has the opinion that one name is a synonym of another. Undoubtedly future research will show that many of the described species have no definite separate standing, but as long as this has not been proven they must, at least provisionally, keep their original status.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317566</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 72</dcterms:extent>
+   <dcterms:isPartOf>List of the described species of the order Stylasterina (URN:ISSN:0024-1652) (Volume 33) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317566.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148852</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317566</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

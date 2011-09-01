@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 4 (1874)</dc:title>
+   <dc:creator>Albert  Eduard, Anonymus , Dietl  Michael J., Hofmann  Eduard, Maly  Richard, Schott  Ferdinand, Sonklar  Carl von</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Eduard Albert: Untersuchungen über das Fieber.     3-   38. Eduard Hofmann: Beitrag zur Spectralanalyse des Blutes.    39-   58. Richard Maly: Bericht über die im med.-chem. Laboratorium in Innsbruck vom Jänner 1872 bis Juli 1873 ausgeführten Arbeiten.    59-   72. Ferdinand Schott: Mittheilungen aus den Kliniken und Instituten der Universität zu Innsbruck. Bericht über die in der pathologisch-anatomischen Anstalt in Innsbruck in den Jahren 1872 u, 1873 vollführten Obduktionen.    73-  106. Michael J. Dietl: Beiträge zur leichteren Einbürgerung rationel zusammengestellter Receptformeln im metrischen Gewichte.   107-  163. Carl von Sonklar: Über die Menge des frei-verdunstenden Wassers.   164-  172. Anonymus: Verzeichnis der beim naturw.-med. Verein von Anfang Jänner bis inclus. 18. Dez. 1872 eingelaufenen Druckschriften.   173-  174. Anonymus: Personalstand des Vereines im Jahre 1873.   175-  179. Anonymus: Sitzungsberichte. (I-LXIV.)</dc:description>
+   <dc:date>1874</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27222.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27222.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27222</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

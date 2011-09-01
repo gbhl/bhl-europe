@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Braueria 18 (1991)</dc:title>
+   <dc:creator>Anonym , Bateman  Peter L. G., Chantaramongkol  Porntip, Ivanov  Vladimir D., Malicky  Hans, Sukatcheva  I., Tomaszewski</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3. Anonym: Participants of the 6th International Symposium on Trichoptera     4. Vladimir D. Ivanov: Caddisflies of the genus Hydronema in the USSR (Hydropsychidae)     5-    8. Hans Malicky, Porntip Chantaramongkol: Einige Leptocerus Leach (Trichoptera Leptoceridae) aus Thailand (Arbeiten über thailändische Köcherfliegen Nr.8)     9-   12. Anonym: Workers on Caddisflies from Southeastern Asia    13-   15. Vladimir D. Ivanov: Selected Bibliography of Literature from the USSR    16-   20. I. Sukatcheva: The third Trichopterological Symposium in the USSR    21. Peter L. G. Bateman: Norman Ernest Hickin PhD., BSc, FRES, F.I.Biol., FZS (1910 - 1330)    22. Anonym: Trichopterological Literature    23-   28. Anonym: 7th international symposium on Trichoptera - Umea, Sweden, 3-8 August 1992    29. Tomaszewski: 6th international symposium on Trichoptera - Lodz-Zakonpane, 11-16 September 1989    30. Anonym: Effects of ownership status, weight asymmetry and case fit on the outcome of case contests in two populations of Agrypnia pagetana (Trichoptera: Phryganeidae) larvae    32</dc:description>
+   <dc:date>1991</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26825.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26825.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26825</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

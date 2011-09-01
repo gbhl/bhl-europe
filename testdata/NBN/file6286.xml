@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Eine neue myrmekophile Lepidoptere aus Java (Wurthia mymecophila n. g. n. sp.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Roepke W.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Herr Dr. Th. Wurth in Malang (Ost-Java) hatte die Güte, mich vor einiger Zeit auf das Vorkommen einer merkwürdigen myrmekophilen Lepidoptere in den Nestern der gemeinen Oecophylla smaragdina F. aufmerksam zu machen und mir sein Beobachtungsmaterial zwecks Bearbeitung zur Verfügung zu stellen. Es handelt sich um ein kleines, schneeweisses, etwa Noctuidenartiges Insekt, dessen morphologische Eigenarten den Systematiker in nicht geringe Verlegenheit bringen. Zuerst fragt man sich natürlich, ob es ein Macro- oder ein Microlepidopteron ist. Obwohl das Tierchen auf den ersten Blick nicht den Eindruck eines Kleinschmetterlings macht, ist man genötigt, seine Kleinschmetterlings-Natur zu prüfen, da es sich in keine der bestehenden Macrolepidopteren-Familien zwanglos einreihen lässt. Für die Kleinschmetterlingsnatur spricht sofort die Bildung der Adern VI—VIII der Hinterflügel (s. Fig. 10). Ganz zweifelsohne weist dieses Merkmal auf eine ausgesprochene Verwantschaft zu den Pyraliden hin. Der ganze übrige Bau des Falters hat aber so wenig pyralidenhaftes (die breiten gerundeten Flügel, die schwachen Palpen, das Fehlen des Saugers, die kurzen Beine!), dass man sich unwillkürlich dagegen sträubt, in dem Tier eine Pyralide zu erblicken. Zu den Tineiden gehort der Falter seiner Flügelnervatur wegen ganz und gar nicht. Die glatte Raupe, die in einem selbstgesponnenen Gehäuse lebt, könnte ja die Vermutung nahe legen, dass die Art mit den Tineiden etwas zu tun hatte. Dann bleibt nur die Frage übrig, ob das Tier eine Noctuide oder eine</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318791</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 141 - 146</dcterms:extent>
+   <dcterms:isPartOf>Eine neue myrmekophile Lepidoptere aus Java (Wurthia mymecophila n. g. n. sp.) (URN:ISSN:0024-0672) (Volume 2) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318791.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150077</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318791</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

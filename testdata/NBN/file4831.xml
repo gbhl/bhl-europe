@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: The Mesozoic Marine Revolution and epifaunal bivalves</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Harper E.M.</dc:creator>
+   <dc:creator>Skelton P.W.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>The well documented dramatic increase in predation pressure which started during the early Mesozoic, termed the Mesozoic Marine Revolution (MMR), had an important impact on the evolution of prey organisms (Vermeij, 1983). Epifaunal bivalves in particular are at considerable risk to predation. In this paper we consider the types of predation to which epifaunal bivalves are prone and outline the evolutionary history of the different modes of predation. We explore methods by which bivalves are known to evade these activities and chart the appearance of these defences in the fossil record. These sections involve both review of the massive existing literature on molluscivory and the presentation of new experimental data, in particular on the value of cementation and various types of valve ornament. Many previously suggested adaptations have been based on rather anecdotal evidence. Such claims need to be validated by experimental evidence of the value of a specific adaptation against a specific mode of predation. Even so it may be difficult to demonstrate that such a defence is a primary adaptation rather than a fortuitous secondary benefit of a non-adaptive or otherwise selected character. Inevitably certain taxa will be prevented from evolving particular defences by the constraints of their own body plans, whilst others will be preadapted for others. For example, obvious defensive adaptations, such as the possession of spines and thick shells are not uniformly distributed amongst the bivalve clades. In this survey we demonstrate that these defences are linked with basic features of valve secretion. Spines can only be created by bivalves which possess a very flexible periostracum, whilst thick shells are restricted to those utilising relatively inexpensive microstructures with a low organic content, for example foliated calcite. Mytiloids have been prevented from evolving such structural armour by these constraints and have, instead, resorted to a plethora of behavioural defences.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317335</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 127 - 153</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: The Mesozoic Marine Revolution and epifaunal bivalves (URN:ISSN:0922-4564) (Volume 2) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317335.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148621</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317335</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

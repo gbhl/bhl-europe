@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new subspecies of anthreptes malacensis (Scopoli) from the Soela Islands (Aves, Nectariniidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>For over a century the sunbird Anthreptes malacensis has been known to occur on the Soela Islands where it reaches the eastern limit of its distribution, and when Shelley (1877) named Anthreptes celebensis, now known as Anthreptes malacensis celebensis, he included the Soela Islands in its range. In subsequent years apparently only Hartert (1898) has in the briefest possible way discussed specimens from the Soela Islands, stating that they were: "quite like Celebes specimens". At this the matter has rested with the result that in the latest list (van Bemmel, 1948) the Soela Islands are still included in the range of Anthreptes malacensis celebensis. When Stresemann (1932) restricted, in the Celebes, the range of A. m. celebensis to the southern peninsula, and described the birds from north, east and southeast Celebes as a new subspecies, Anthreptes malacensis citrinus, the identity of the Soela birds with A. m. celebensis was no longer likely from the Zoogeographie point of view. Therefore I was not surprised to find that our series of Anthreptes malacensis from the Soela Islands shows clear differences from the two Celebes subspecies (which are very similar to each other), which justify separation as a moderately well-marked subspecies. Anthreptes malacensis extremus subspecies nova Diagnosis. — Differs in the male sex from the subspecies celebensis and citrinus in the distinctly greener, less yellow under parts; the gular patch is slightly more greyish brown, less warm brown in colour, all measurements average larger, the bill is not only somewhat larger but especially broader at its base. Differs from other neighbouring races, Anthreptes malacensis convergens Rensch (Lesser Soenda Islands), and Anthreptes malacensis helio-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319369</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 255 - 257</dcterms:extent>
+   <dcterms:isPartOf>A new subspecies of anthreptes malacensis (Scopoli) from the Soela Islands (Aves, Nectariniidae) (URN:ISSN:0024-0672) (Volume 41) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319369.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150655</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319369</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

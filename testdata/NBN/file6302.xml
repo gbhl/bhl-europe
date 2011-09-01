@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über asiatische Coenochilus (Coleoptera, Cetoniidae), mit einer Bestimmungstabelle</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Schein H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Eine Bestimmungssendung des Deutschen Entomologischen Institutes veranlasste mich, die Systematik der asiatischen Coenochilus zu studieren. Die Museen Leiden, Berlin und München und die Herren Frey, Haberäcker, Klapperich und van Nidek stellten mir ihr Material zur Verfügung; Herr Reichert des Museums Dresden und Herr Ruter des Museums Paris gaben bereitwillig Auskunft über Typen ihrer Museen. Ihnen alien sowie den Herren Prof. Dr. Sachtleben, Prof. Dr. Delkeskamp, Dr. C. de Jong, Dr. H. C. Blöte, Dr. Forster, H. Freude, P. Müller und St. von Breuning danke ich bestens für ihre Hilfe. Als Ergebnis meiner Studien veröffentliche ich hier die Beschreibung zweier neuer Arten und des ♂ von C. leopoldi Bourg. sowie eine aus der Arrow'schen Tabelle in der Fauna of British India weiterentwickelte Bestimmungstabelle aller asiatischen Arten. 1. Der Katalog von Junk-Schenkling Pars 72 aus 1921 ist auf Seite 366 f. durch folgende Arten zu ergänzen: assmuthi Wasmann, Wiener Ent. Zeit., vol. 37, 1918, S. 19. bifoveolatus Fairmaire, Ann. Soc. Ent. Fr., 1888, S. 344. leopoldi Bourgoin, Mem. Mus. Roy. H.N. Belg., 1933, Voyage Leopold, vol. IV fasc. 9, Col. II, S. 31. leveillei Nonfried, Berl. Ent. Zeit., 1891, S. 372, der nach Arrow kein Pilinurgus ist. obesus Wasmann, Wiener Ent. Zeit., vol. 37, 1918, S. 21. obscurus Westwood, Tijdsch. v. Ent., vol. 26, 1883, S. 62-65. platycerus Gerstäcker, von S. 368 des Kat. (1883). sumatranus Westwood, Tijdsch. v. Ent., vol. 26, 1883, S. 62-65. uncinatipes Moser, D. Ent. Zeit., 1915, S. 596.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318807</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 31 - 40</dcterms:extent>
+   <dcterms:isPartOf>Über asiatische Coenochilus (Coleoptera, Cetoniidae), mit einer Bestimmungstabelle (URN:ISSN:0024-0672) (Volume 32) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318807.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150093</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318807</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

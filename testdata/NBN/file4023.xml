@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Late Cretaceous-Early Palaeogene echinoderms and the K/T boundary in the southeast Netherlands and northeast Belgium — Part 4: Echinoids</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Jagt J.W.M.</dc:creator>
+   <dc:subject>42.72 ; 38.22</dc:subject>
+   <dc:subject>Echinodermata</dc:subject>
+   <dc:subject>Echinoidea</dc:subject>
+   <dc:subject>Late Cretaceous</dc:subject>
+   <dc:subject>Early Palaeogene</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>stratigraphy</dc:subject>
+   <dc:description>All Campanian, Maastrichtian and Danian echinoids known to date from the extended type area of the Maastrichtian Stage are listed and, with a few exceptions, also illustrated. The geographic and stratigraphic distribution of these echinoderms are documented. A total of 55 (sub)genera and 119 (sub)species (inclusive of formae), two of which are new, are recognised. A number of taxa are reassigned, while others have to remain in open nomenclature for the time being. Recorded for the first time from the area are representatives of Hagenowia and Zeuglopleurus, as well as juvenile specimens of Hemipneustes striatoradiatus. Cidaris gigas (= Temnocidaris (Stereocidaris) gigas) is accepted as a valid species. The name Cyphosoma rutoti is shown to be based on the spines of C. corneti, now reassigned to Trochalosoma?. New are Plagiochasma lammersmaxi Jagt &amp; van der Ham, sp. nov. and Micropsis? caementum Jagt &amp; van der Ham, sp. nov. The scope of the present paper is taxonomic and stratigraphic; the palaeobiology and palaeoecology of the echinoid faunas will be discussed in a forthcoming paper, part 6 in the present series.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219114</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 181 - 375</dcterms:extent>
+   <dcterms:isPartOf>Late Cretaceous-Early Palaeogene echinoderms and the K/T boundary in the southeast Netherlands and northeast Belgium — Part 4: Echinoids (URN:ISSN:03757587) (Volume 122)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219114.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46097</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219114</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

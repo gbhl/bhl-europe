@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Clausiliidae (Gastropoda, Pulmonata) collected by the Netherlands biological expedition to Turkey in 1959</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Loosjes F.E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>The route of the Netherlands Biological Expedition to Turkey in 1959 is published elsewhere (Hennipman a.o., 1961; Anonymus, 1963). As is mentioned there also, the zoological material collected is preserved in the Rijksmuseum van Natuurlijke Historie at Leiden. I am greatly indebted to Dr. C. O. van Regteren Altena, curator of that Museum, for placing the Clausiliidae collected by the expedition at my disposal. Moreover my thanks are due to Mrs. W. S. S. van der Feen-van Benthem Jutting, Amsterdam, and Dr. A. Zilch, Frankfurt am Main, for specimens lent for the purpose of comparison. The Clausiliidae were all collected by Mr. W. J. M. Vader, one of the members of the expedition. Only one sample is from Greece (Porto Lagos), the others are from Istanbul, near the Bosporus, and from Asiatic Turkey. All the samples are preserved dry, the soft parts having hardened in the top whorls of the shells by loss of moisture. In the systematic account the arrangement given in the „Handbuch der Paläozoölogie" vol. 6 by Wenz-Zilch (1959/60) is followed. Some of the specimens are in the author's collection and in the collection of Mr. W. J. M. Vader. PHAEDUSINAE Tribus Serrulineae Serrulina Mousson, 1873 Serrulina (Serrulina) serrulata (L. Pfeiffer, 1847) Material examined. — Turkey, Vilayet of Trabzon, 3 km S. of Hamsiköy (pl. XX), about 45 km SSW. of the city of Trabson, altitude ca. 1900 m, in a wet forest with firs and beech trees; a small number of specimens was</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318149</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 243 - 260</dcterms:extent>
+   <dcterms:isPartOf>Clausiliidae (Gastropoda, Pulmonata) collected by the Netherlands biological expedition to Turkey in 1959 (URN:ISSN:0024-0672) (Volume 38) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318149.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149435</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318149</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

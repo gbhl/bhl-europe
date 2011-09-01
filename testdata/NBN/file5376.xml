@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some remarks on the Pulmonary Artery in snakes with two lungs</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>The respiratory organs of snakes show a great diversity according to genera and species. In the Boidae (two genera excepted; cf. Brongersma, 1951 a and 1951 b), and in Xenopeltis unicolor (Reinw.) both lungs are well developed, although the left is shorter than the right (Butler, 1895). The difference in length between the right and the left lung is not the same in all genera and species, but it also shows individual variations within the species. In the Anilidae the left lung has undergone further reduction than in the Boidae; in Cylindrophis rufus (Laur.) the left lung is still rather well developed, its length is 12% of that of the right lung; in Anilius scytale (L.) the left lung is rudimentary, its length being only 3.5% of that of the right lung; in Anomochilus weberi (Lidth) the left lung has disappeared completely (Brongersma &amp; Helle, 1951). Among the Colubridae, Elapidae, and Viperidae a rudimentary left lung is present in some species, while it has disappeared in others. A rudimentary left lung is present in the following species examined by me: Elaphe radiata (Schleg.) and Elaphe flavolineata (Schleg.) (Colubridae), Bungarus candidus (L.) and Bungarus fasciatus (Schn.) (Elapidae), Crotalus durissus L. and Trimeresurus wagleri (Boie). The diagram in fig. 1 shows the relative length of the left lung in a number of species of Boidae, Anilidae, and in Xenopeltis unicolor (Reinw.). It must be remembered that these diagrams are based on measurements taken from preserved specimens; therefore, the values found are only approximately correct. Differences according to genera and species also exist in the structure of the lungs, e.g., with regard to the area of the internal wall that is alveolar, and the development of a smooth-walled anangious air-sac at the caudal end</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317881</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1951</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 36</dcterms:extent>
+   <dcterms:isPartOf>Some remarks on the Pulmonary Artery in snakes with two lungs (URN:ISSN:0024-1652) (Volume 14) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317881.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149167</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317881</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

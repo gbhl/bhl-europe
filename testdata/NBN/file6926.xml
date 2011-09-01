@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Pleistocene remains of Ophicephalus from Java, in the "Collection Dubois"</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>38.22 ; 42.81</dc:subject>
+   <dc:description>When, in the fall of 1947, my predecessor, Dr. F. P. Koumans, suddenly withdrew from ichthyological research, some of the fossil fish-remains from Trinil, collected and partly examined by Prof. Dr. E. Dubois (1907; 1908), still remained to be investigated or re-examined. I gladly accepted the opportunity to complete the research on this interesting material. A considerable part of these fossil remains, labelled by Dr. Koumans (but not mentioned in his paper, 1948, p. 80) as "16 fragments of skullbones", which "probably belong to Ophicephalus spec." (no. 11640), still proved to be in a sufficient state of preservation to permit an accurate identification of the bones these fragments must represent, as well as of the kind of fish to which the greater part must have belonged, and its affinitie s. Almost all identified bones or fragments obviously belong to an in my opinion extinct, Ophicephalid 1) species or form, and consequently have been compared most accurately with our material of that genus in the collection of fish-skeletons. However, I regret to have to state that this material was very small, consisting of but three specimens: one identified as Ophiocephalus striatus Bl., from Java, Kuhl &amp; Van Hasselt, total length 21.5 cm (cat. a), in a rather bad condition; a second identified as O. micropeltis K. &amp; v. H., from Java, Kuhl &amp; Van Hasselt, 52.5 cm (cat. a) ; and a third identified as Ophiocephalus spec., also from Java, Van Raalte, 45 cm (cat. a). The latter two are in a fine condition. A close re-examination, moreover, quite convinced me that, especially on account of the locality, the dentification, and the numbers of finrays, the latter two specimens too probably must be regarded as representing the common recent O. striatus Bl., this making the material available for comparison</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319431</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1949</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 83 - 94</dcterms:extent>
+   <dcterms:isPartOf>On Pleistocene remains of Ophicephalus from Java, in the "Collection Dubois" (URN:ISSN:0024-0672) (Volume 30) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319431.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150717</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319431</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

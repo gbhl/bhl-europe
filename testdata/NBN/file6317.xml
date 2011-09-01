@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revisionary notes on the Palaearctic Genera and species of the tribe Exothecini Foerster (Hymenoptera, Braconidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The tribe Exothecini Foerster sensu stricto (Braconidae, Rogadinae) is defined, and keys are given to the Palaearctic genera, the N.W. European species of Shawiana gen. nov. and the Palaearctic species of Xenarcha Foerster. Shawiana gen. nov. (type-species: Exothecus laevis Thomson, 1892) is described. Lectotypes are designated for Rogas catenator Haliday, 1836, R. fragilis Haliday, 1836, and Exothecus laevis Thomson, 1892. New synonyms are Bracon dimidiatus Nees, 1834 (nec Spinola, 1808) and Phanomeris thomsoni Szépligeti, 1906, of Xenarcha lustrator (Haliday. 1836) and Exothecus glabricollis Thomson, 1892, of Xenarcha abnormis (Wesmael, 1838). New combinations are: Colastes fragilis (Haliday, 1836), Shawiana catenator (Haliday, 1836), S. phyllotomae (Muesebeck, 1932), S. lapponica (Thomson, 1892), S. metalli (Muesebeck, 1932), S. foveolator (Thomson. 1892). S. laevis (Thomson, 1892). Xenarcha laticarpus (Thomson, 1892), X. abnormis (Wesmael, 1838), and X. effecta (Papp, 1972).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318822</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 339 - 355</dcterms:extent>
+   <dcterms:isPartOf>Revisionary notes on the Palaearctic Genera and species of the tribe Exothecini Foerster (Hymenoptera, Braconidae) (URN:ISSN:0024-0672) (Volume 57) (Issue 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318822.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150108</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318822</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

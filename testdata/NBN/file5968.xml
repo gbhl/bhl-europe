@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Rhizocephalan parasites of the crab Pugettia brevirostris, with notes on Sacculina gracilis</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>42.36 ; 42.74</dc:subject>
+   <dc:description>The present paper deals with two parasites of the crab Pugettia brevirostris, the one representing the new species Sacculina reinhardi, the other identified with Sacculina muricata. The excrescences of the external cuticle of Sacculina reinhardi are similar to those of Sacculina gracilis. For a comparison of S. gracilis with S. reinhardi some additional data of previously described specimens of S. gracilis are here noted and figured, to show that certain characters of this species are constantly different from the corresponding peculiarities in the only available specimen of S. reinhardi. Sacculina reinhardi nov. spec. 1) U. S. Bureau of Fisheries, Northwestern Pacific Cruise, 1906, in entrance of Uraga Strait, Gulf of Tokyo, Japan, 70 fms., October 26, 1906, 1 specimen on Pugettia brevirostris (Doflein), U. S. National Museum, catalogue number 49552. Specific characters. Male organs in the posterior part of the body, outside the visceral mass, forming straight thick-walled canals slightly increasing in size towards the dorsal region; transition of vas deferens into testis indicated by short chitinous tube only. Colleteric glands flat, their tubes nearly all in one row parallel to the surface, 15 to 17 tubes in longitudinal sections of the regions of maximum division. External cuticle with hyaline excrescences consisting of a basal part and a varying number of spines; diameter of excrescences 8 to 23 μ, height (including the spines) 8 to 27 μ. Retinacula unknown. The specimen is oval to rectangular (fig. 1 a), the mantle opening lies at the top of a papilla at the anterior surface, slightly protruding above its 1) Named after Dr. Edward G. Reinhard, Catholic University of America, the author of several important papers on Rhizocephala.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318473</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 237 - 249</dcterms:extent>
+   <dcterms:isPartOf>Rhizocephalan parasites of the crab Pugettia brevirostris, with notes on Sacculina gracilis (URN:ISSN:0024-0672) (Volume 33) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318473.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149759</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318473</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

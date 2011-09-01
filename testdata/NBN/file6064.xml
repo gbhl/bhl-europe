@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Sciadeichthys (Selenaspis) Walrechti, a new South American catfish</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Two large specimens of a hitherto unknown species of neotropical catfish have recently been found dead and washed ashore beneath the dike along the Westerscheldt near Biezelinge, Zeeland, at a mutual distance of approximately 300 meters. Both were in excellent condition and have been presented to the Rijksmuseum van Natuurlijke Historie at Leiden by Mr. B. J. J. R. Walrecht. A superficial examination already disclosed the fact that the two specimens belong to the (sub)genus Selenaspis, a well known group of catfishes inhabiting the salt and brackish shores and estuaries of the northern part of the South American continent. Some of the species are known to spawn in fresh water. The present specimens must have been transported by ship. Whether they have been thrown overboard dead or alive remains uncertain though the first possibility seems more plausible. The damaged and fringed condition of the fins indicates a period of drifting along the shore, while the length of this period is limited by the still rather fresh condition, especially of the larger and first collected specimen. On the other hand, putrefaction seems to be slow in this group of fishes. On his request, Mr. Walrecht received the information that no recent shipment of South American aquarium fishes had arrived at the aquarium of the Antwerp Zoological Garden. An investigation of the stomachs of the two specimens gave the following results. In the larger specimen, no remains of food were found; in the second specimen, the stomach contained a considerable quantity of remains, viz., a part of a rib, possibly from a pig, measuring 1.8 by 5 cm; several pieces of cartilage; numerous split peas; several small remains of plants</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318569</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 59 - 62</dcterms:extent>
+   <dcterms:isPartOf>On Sciadeichthys (Selenaspis) Walrechti, a new South American catfish (URN:ISSN:0024-0672) (Volume 33) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318569.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149855</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318569</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

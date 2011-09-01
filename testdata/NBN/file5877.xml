@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Rüsselkäfer von Sumatra gesammelt von Herrn J. B. Corporaal</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Heller K.M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Während seines Aufenthaltes in Niederländisch Indien hat Herr Conservator J. B. Corporaal, namentlich in den Jahren 1917—21, erfolgreich an der Ostküste Sumatras und da vielfach in Pflanzungen Coleopteren gesammelt, das umfangreiche Material sorgfältig praepariert und genau mit Fundorten und Daten bezettelt. Die Gesamtausbeute an Rüsselkäfern, unter denen sich einige wenige auch von der Nordküste Sumatras, aus Atjeh befanden, ist mir unter den freigebigsten Bedingungen von Herrn Corporaal zur Bearbeitung übergeben worden, wofür ihm in meinem und im Namen des Dresdner Museums, das auf diese Weise von allen Arten Belegexemplare 1) bekam, der wärmste Dank ausgesprochen sei. Die genaueren Angaben der Sammelplätze, deren Höhenlage über dem Meere in Metern beigefügt ist, sind in Rücksicht auf Druckkosten und der oftmaligen Wiederholung im Verlaufe der Arbeit wie folgt abgekürzt worden: A: Alsar Djamboe (Atjeh) Ma: Marihat 450 B: Brastagi (Toba-Hochland) 1300 P: Piasaoeloe B B: Bandar Baroe 850 Pat: Patoembah 50 Ba: Balimbingan 370 P B: Pakan Baroe 100 B G: Balei Gadjah 10 P M: Pagar Marbau 24 B L: Bah Lias 32 S: Sibolangit 550 BN: Bandar Negri 100 Sa: Sabang Bo B: Boschreserve Bandar 90 Si: Siantar (= Pematang Siantar) 400 B S: Bah Soemboel S G: Sarang Giting 70 G M: Goenoeng Melajoe S M: Soengi Merah 16 H: Haboko 300 S Ms: Soengi Moesan 110</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318382</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1925</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 220 - 244</dcterms:extent>
+   <dcterms:isPartOf>Rüsselkäfer von Sumatra gesammelt von Herrn J. B. Corporaal (URN:ISSN:0024-0672) (Volume 8) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318382.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149668</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318382</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 25 (1865)</dc:title>
+   <dc:creator>Anonymus , Gaisberger  Joseph, Schwabenau  Anton Ferdinand, Simettinger  M. F., Stülz  Jodok</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Jodok Stülz: Berholt Preuhaven, der berühmte Deutschordens-Comthur, ein Oberösterreicher aus Steyr.     1-   21. M. F. Simettinger: Der Böchgraben in Oberösterreich.    23-   32. Joseph Gaisberger: Archäologische Nachlese. II.    33-   64. Anton Ferdinand Schwabenau: Museal-Notizen.    65-   92. Anton Ferdinand Schwabenau: Fünfundzwanzigster Jahres-Bericht des Verwaltungs- Ausschusses des Museums Francisco-Carolinum an die General-Versammlung. III-XVIII. . Anonymus: V. Verzeichnis der Mitglieder des Museum Francisco-Carolinum im Jahre 1864. LIV-LXXV. . Anonymus: I. Vermehrung der Sammlungen des Museum Francisco Carolinum im Jahre 1864. XIX-XXXVIII. . Anonymus: III. Veränderungen im Stande der Mitglieder des Museum Francisco-Carolinum von der Zeit der Ausgabe des 24. Berichtes 1864 bis zu jenem des 25. Berichtes 1865. XLIV-XLVII. . Anonymus: IV. Protektor, Vorstand, Verwaltungs-Ausschuss und Mandatare des Museum Francisco-Carolinum. XLVIII-LIII. . Anonymus: II. Verzeichniss der wissenschaftlichen Gesellschaften und Anstalten, in welchen Schriftenaustausch stattfindet. XXXIX-XLIII.</dc:description>
+   <dc:date>1865</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30085.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30085.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30085</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

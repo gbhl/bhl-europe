@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new Hexagonia (Coleoptera, Carabidae) from Sumatra</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jong, de C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>When arranging a part of the Carabidae collection of the Leiden Museum, I noted that the specimens labelled Hexagonia lucassenii Van de Poll (1889: 249-250) did not constitute a homogeneous material. The material consisted of the original series of Hexagonia lucassenii from Java (Kamanglen, Tegal), and twelve specimens from Sumatra, viz., five specimens from Pagar Alam, four from Nirou(?), and three from Palembang. The Sumatran specimens were collected by J. Bouchard. The three specimens from Palembang were mounted on one pin, and bear a label (not distinctly legible) "konneri n.sp."; I presume this to be merely a museum name, probably given by Oberthür. I compared the specimens from Sumatra with the descriptions of Hexagonia-species known to occur in Sumatra, but they did not fit in with any. Presumably, the material from Sumatra represents a new form. In my opinion the differences with H. lucassenii are of a subspecific character. Hexagonia lucassenii sumatrana subspec. nov. (fig. 2) Differs from the nominate form (fig. 1) by the black area on the apical half of the elytra, which takes about one-fifth of the elytral length in H. l. lucassenii, and one-quarter to two-fifths in H. l. sumatrana, extending more or less along the suture. The remaining part of the elytra is light reddish brown. The legs are reddish brown, as in H. l. lucassenii. The ventral surface is light brown. One specimen from Pagar Alam (Pageralam, south Sumatra) is indicated as holotype. This specimen was found on the leaves of a plant called "gelagah" ("feuilles de glaga", Saccharum spontaneum L.). Some differential characters of other Sumatran species are mentioned below.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317958</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 23 - 24</dcterms:extent>
+   <dcterms:isPartOf>A new Hexagonia (Coleoptera, Carabidae) from Sumatra (URN:ISSN:0024-0672) (Volume 40) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317958.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149244</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317958</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

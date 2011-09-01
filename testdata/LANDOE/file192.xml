@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Entomologica Austriaca 4 (2001)</dc:title>
+   <dc:creator>Adlbauer  Karl, Aubrecht  Gerhard, Geiser  Elisabeth, Kaltenbach  Alfred Peter, Lampe  Karl-Heinz, Malicky  Michael, Mildner  Paul, Pape  Thomas, Sänger  Karl, Zettel  Herbert</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Sänger: Zur Verleihung der Friedrich-Brauer-Medaille an Herrn Wiss. OR Dr. Alfred Kaltenbach.     2. Thomas Pape: The Future of Entomological Collections.     3-    7. Michael Malicky, Gerhard Aubrecht: Die biogeografische Datenbank ZOBODAT (ehemalige ZOODAT) am Oberösterreichischen Landesmuseum/Biologiezentrum in Linz, Oberösterreich  eine öffentliche Einrichtung für Wissenschaft und Naturschutz im Umfeld nationaler und internationaler Kooperationsmöglichkeiten.     8-   14. Elisabeth Geiser: Risiken und Nebenwirkungen einer umfangreichen entomologischen Datenbank.    15-   18. Karl-Heinz Lampe: Naturkundemuseen in der Wissenschaftslandschaft heute und morgen.    18. Karl Adlbauer: Beiträge zur Podiumsdiskussion des ÖEG-Fachgesprächs zum Thema "Museum 2000: Datenbanken der Biodiversität".    19. Herbert Zettel: Sammlungsstrategien am Naturhistorischen Museum in Wien.    20. Paul Mildner: Zoologische Grundlagenforschung in Kärnten.    20. Alfred Peter Kaltenbach: Die Orthopterensammlung des Naturhistorischen Museums in Wien und ihre Geschichte.    21-   23</dc:description>
+   <dc:date>2001</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/23721.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/23721.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=23721</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

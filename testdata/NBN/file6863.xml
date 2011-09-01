@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Preliminary descriptions of sixteen new species of the genus Periclimenes Costa, 1844 (Crustacea, Decapoda Nantantia, Pontoniinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruce A.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The study of the pontoniid fauna of the Indo-West-Pacific region has resulted in the discovery of numerous undescribed species of the genus Periclimenes Costa, 1844. A revision of this genus, the largest in the subfamily, at present in progress, cannot be completed for some time and it is considered advisable to provide preliminary descriptions of the species concerned. The brief descriptions and remarks given here will enable the species to be identified and may contribute to their recognition in other parts of their ranges, pending their full description and illustration. Most of the species described are commensally associated with other marine invertebrates. One species is thought to be free-living, eight were found in association with coelenterates and four with echinoderms. The three remaining species are probably also commensal but their hosts are as yet unknown. The hosts of most specimens have been preserved and are in the course of identification. The holotype specimens will be deposited in the collections of the Rijksmuseum van Natuurlijke Historie, Leiden, and paratypes in the British Museum (Natural History), London, except where the specimens are already in a museum collection. Some of the material upon which this report is based was collected during a study of the Indo-West-Pacific pontoniid shrimp fauna supported by a grant from the Nuffield Foundation. Periclimenes carinidactylus sp.nov. Description. — A small robustly built species generally resembling Periclimenes affinis (Zehntner). Carapace smooth. Rostrum well developed,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319368</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 253 - 278</dcterms:extent>
+   <dcterms:isPartOf>Preliminary descriptions of sixteen new species of the genus Periclimenes Costa, 1844 (Crustacea, Decapoda Nantantia, Pontoniinae) (URN:ISSN:0024-0672) (Volume 43) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319368.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150654</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319368</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue raisonné des Coléoptères du Nord de l'Afrique (Maroc, Algérie, Tunisie et Tripolitaine): Notes sur la faune des iles Canaries et de Madère. Première partie</dc:title>
+   <dc:publisher>Société entomologique de France (fr Paris)</dc:publisher>
+   <dc:contributor>Bedel, Louis 1849-1922 (Author)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>0ff31e39-0bee-4239-aa05-eee393869e27</dc:identifier>
+   <dc:identifier>007898050</dc:identifier>
+   <dc:language>fre</dc:language>
+   <dcterms:issued>1895</dcterms:issued>
+   <dcterms:extent>402 p.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Bedel_Catalogue_raisonnA_copy_des_ColA_copy_optA_res/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Bedel_Catalogue_raisonnA_copy_des_ColA_copy_optA_res</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RMCA/0FF31E390BEE4239AA05EEE393869E27</europeana:isShownAt>
+<europeana:dataProvider>Royal Museum for Central Africa</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

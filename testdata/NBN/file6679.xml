@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zur Kenntnis der Indo-Malayischen Trigonaloiden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Über die im Ostindischen Archipel vorkommenden Arten dieser merkwürdigen Hymenopteren-Familie war bis vor Kurzem nur noch sehr wenig bekannt geworden. In der Monographic von W. A. Schulz (1907) werden nur drei Arten aus Niederländiseh-Indien erwähnt, nämlich: Poecilogonalos pulchella (Westw., 1868) von Sumatra, Lycogaster pictifrons (F. Sm., 1861) und Lycogaster celebesiensis (Szepl., 1902), beide von Celebes. Neuerdings sind von Bischoff (1938) die folgenden neuen Arten und Varietaten beschrieben worden: Poecilogonalos javana, von Java; Lycogaster zimmeri, L. heinrichi, L. pictifrons (F. 8m.) var. nepheloptera und L. celebesiensis (Szepl.) var. pluripicta, alle von Celebes. Ausser der von Bischoff beschriebenen Art kommt auf Java auch die merkwiirdige Nippogonalos jezoensis Uch. vor, wie von mir in der Sommerversammlung 1933 der „Nederlandsche Entomologische Vereeniging" mitgeteilt wurde (van der Vecht, 1933). Wahrend meinem Verbleib auf Java erhielt ich nun noch einige weitere Arten von dieser Insel; die Tiere befinden sich in der Sammlung des „Rijksmuseum van Natuurlijke Historie" zu Leiden, welche jetzt vier Arten von Java enthalt, eine von diesen ist auch durch ein Stuck von Sumatra vertreten. Poecilogonalos thwaitesii (Westw.) var. gestroi Schulz. Poecilogonalos pulchella gestroi Schulz, Ann. Mus. Civ. Genova, ser. 3a, vol. IV, 1908—1909, p. 24, ♀. 1 ♀, West-Java, Gunung Gedeh, Tapos, 800 in, Nov. 1932. 1 ♀, Sud-Sumatra, Rantau Tamiang, Aug. 1932 (Dr. H. R. A. Muller leg.). Dem erstgenannten Exemplare, das von einem Eingeborenen gesammelt</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319184</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1934</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 290 - 296</dcterms:extent>
+   <dcterms:isPartOf>Zur Kenntnis der Indo-Malayischen Trigonaloiden (URN:ISSN:0024-0672) (Volume 17) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319184.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150470</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319184</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

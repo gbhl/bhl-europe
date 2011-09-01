@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The genus Telmatactis Gravier, 1916 (Actiniaria: Acontiaria: Isophelliidae) in Greece and the eastern Mediterranean</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hartog, den J.C.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Actiniaria; Isophelliidae; Telmatactis; nematocysts; penicilli B; Greece; eastern Mediterranean; Azores; new records; inter-glacial relicts</dc:subject>
+   <dc:description>Three species of the actinian genus Telmatactis Gravier, 1916, viz. T. forskalii (Ehrenberg, 1834), T. solidago (Duchassaing &amp; Michelotti, 1864) and T. cricoides (Duchassaing, 1850), occurring in Greece and the eastern Mediterranean, are described and discussed. Detailed data on the cnidom of the three species are provided. The characteristic penicilli of members of the genus Telmatactis are discussed. These penicilli were classified by Schmidt (1969, 1972) as p-rhabdoids (= penicilli) B1b, but it is here claimed that they actually belong in Schmidt's B2 group (provisionally as penicilli B2c). They correspond in general form and as to their distribution in the actinian polyp with the more usual penicilli B2a sensu Schmidt (1969), but unlike these, they lack a terminal tube (= amastigophores sensu stricto) and a folded portion of the shaft. So far, the presence of these nematocysts has exclusively been established with certainty in species of Telmatactis but presumably this presence is shared with other members of the family Isophelliidae. Telmatactis forskalii basically has a subtropical East Atlantic/Mediterranean distribution penetrating also in the tropical Cape Verde Islands. Telmatactis Solidago and T. cricoides are species of the amphiAtlantic subtropical/tropical warm water fauna, but they are apparently absent in the mid-Atlantic Azores. T. Solidago is here reported for the first time from the relatively warm eastern part of the Mediterranean, and the occurrence of T. cricoides, recently recorded for the first time from the Central Mediterranean (Ates, 1990), is confirmed and supplemented with records from the eastern Mediterranean. Present-day winter temperatures in the western Mediterranean, although possibly not being lethal, would at least seem unfavourable to these two species, but it is obvious that they can not have survived the considerably lower temperatures in this region during the last glacial period, 18,000 years B.P. Hence, the isolated eastern Mediterranean populations of both species probably represent interglacial relicts.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318875</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1995</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 153 - 176</dcterms:extent>
+   <dcterms:isPartOf>The genus Telmatactis Gravier, 1916 (Actiniaria: Acontiaria: Isophelliidae) in Greece and the eastern Mediterranean (URN:ISSN:0024-0672) (Volume 69) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318875.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150161</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318875</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

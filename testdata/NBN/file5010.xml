@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Extant Rhabdosphaeraceae (coccolithophorids, class Prymnesiophyceae) from the Indian Ocean, Red Sea, Mediterranean Sea and North Atlantic Ocean</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Kleijne A.</dc:creator>
+   <dc:subject>Paleontologie: algemeen</dc:subject>
+   <dc:description>Rhabdosphaerids were consistently present as a minor constituent of the 1985 summer coccolithophorid flora in surface waters of the Indian Ocean, Red Sea, Mediterranean Sea and North Atlantic. Sixteen taxa are identified, belonging to seven genera, including the two new combinations Cyrtosphaera aculeata and C. cucullata and the new species C. lecaliae sp. nov. of Cyrtosphaera gen. nov., and the new combination Anacanthoica cidaris. An emended description is given for the genus Acanthoica, of which the new species A. biscayensis and a type in open nomenclature are described. All species are illustrated by SEM-micrographs and their occurrences are mapped. The most frequently occurring species were Palusphaera vandeli, present in low numbers along the entire sampling transect, Discosphaera tubifera in the warm oligotrophic water of the Red Sea, Rhabdosphaera clavigera in the somewhat colder water of the Mediterranean Sea, and Algirosphaera robusta in the Indian Ocean, indicative for upwelling conditions.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317515</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 63</dcterms:extent>
+   <dcterms:isPartOf>Extant Rhabdosphaeraceae (coccolithophorids, class Prymnesiophyceae) from the Indian Ocean, Red Sea, Mediterranean Sea and North Atlantic Ocean (URN:ISSN:0357-7587) (Volume 100)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317515.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148801</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317515</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Beiträge zur Kenntnis der Pupillacea : V. die spelaeodiscinae, Erster Nachtrag</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Mehrere interessante Funde in Höhlen Montenegros machen einen Nachtrag zur Übersicht der Spelaeodiscinae (Gittenberger, 1969) erforderlich. Die 1971-1973 gemachten Aufsammlungen folgender Personen konnten bearbeitet werden: Frau Drs. C. L. Deeleman-Reinhold (und Verwandten), Ossendrecht (VIII-1971, VII-1972), L. Pintér &amp; P. Subai, Budapest (VII1972), und P. L. Reischütz, Wien (V-1973). Ausserdem stand mir selber V-1974 gesammeltes Material zur Verfügung. Einige Proben aus dem Naturhistorischen Museum, Wien, welche 1969 nicht untersucht werden konnten, werden ebenfalls besprochen. Den genannten Personen, wie auch Dr. J. Bole, Ljubljana und Prof. V. Hudec, Praha, die mir S. (S.) obodensis und S. (A.) triaria triaria übergaben, Dr. O. E. Paget, Wien, der mir das Material des Wiener Museums zuganglich gemacht hat, Dr. H. Schütt, Düsseldorf, der Hinweise zu einigen Fundorten gab, und V. Pulević, Titograd, der mich in Montenegro einige Male begleitete, danke ich herzlich. Besonderen Dank schulde ich weiter den zuständigen Behörden, meinen Kollegen im Institut für Naturschutz, Titograd, Frau Drs. C. L. Deeleman-Reinhold, Ossendrecht, und schliesslich mehreren anonymen „Höhlenführern" in Montenegro, weil sie alle durch ihre Mitarbeit meine V-1974 gemachte Sammelreise ermöglichten. Für die Sammlungen werden folgende Abkürzungen verwendet: INT = Institut für Naturschutz der Republik Crna Gora, Titograd (Republički zavod zaštitu prirode); NMW = Naturhistorisches Museum, Wien; NMWE = Sammlung Edlauer in NMW; RMNH = Rijksmuseum van Natuurlijke 1) IV, Ergänzungen zur Kenntnis der Gattung Argna. — Basteria, 38: 1-12 (1974). Historie, Leiden; SMF = Senckenberg Museum, Frankfurt; SP = Samm-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318664</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 263 - 277</dcterms:extent>
+   <dcterms:isPartOf>Beiträge zur Kenntnis der Pupillacea : V. die spelaeodiscinae, Erster Nachtrag (URN:ISSN:0024-0672) (Volume 48) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318664.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149950</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318664</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 52 (1941)</dc:title>
+   <dc:creator>Attems[-Petzenstein]  Carl Reichsgraf von, Baumgartner  Julius, Beier  Max Walter Peter, Jordans  Adolf von, Kamptner  Erwin, Klein  Bruno Maria, Lohrmann  Ernst, Niethammer  Günter, Petrak  Franz, Rechinger  Karl Heinz, Saint Quentin  Douglas, Sittenberger  Anna, Steinbacher  Friedrich, Szatala  Ö., Wastl  Josef, Werner  Franz Josef Maria, Wettstein  Otto v. Westersheim</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Kamptner: Zwei Corallinaceen aus dem Sarmat des Alpen-Ostrandes und der Hainburger Berge. Tafel I, II.     5-   19. Bruno Maria Klein: Äußeres Stützgerüst und neuroformatives System der Ciliaten. Eine grundsätzliche Betrachtung und Auseinandersetzung. Tafel III, IV.    20-   53. Bruno Maria Klein: Reaktionen des neuroformativen Systems bei Beute-Infusorien im Leibesinnern eines Taub-Infusors. Nebst entsprechenden Lebendbeobachtungen und allgemeinen Randbemerkungen. Tafel V.    54-   65. Carl Reichsgraf von Attems[-Petzenstein]: Zur Kenntnis der Indischen Harpagophoridae. Tafel VI-IX.    66-  105. Douglas Saint Quentin: Beiträge zur Kenntnis der Insektenfauna Deutsch-Ostafrikas, insbesondere des Matengo-Hochlandes. Ergebnisse einer Sammelreise H. Zernys 1935/36. IV. Odonata.   106-  116. Max Walter Peter Beier: Beiträge zur Kenntnis der Insektenfauna Deutsch-Ostafrikas, insbesondere des Matengo-Hochlandes. Ergebnisse einer Sammelreise H. Zernys 1935/36. V. Mantodea.   117-  125. Max Walter Peter Beier: Neue und seltene Mantodeen aus deutschen Museen.   126-  154. Ernst Lohrmann: Neue Bembix-Arten des Wiener Naturhistorischen Museums.   155-  160. Franz Josef Maria Werner: Die Sandviper und ihre Verbreitung in Griechenland. Tafel X.   161-  163. Günter Niethammer: Beobachten über die Vogelwelt von Auschwitz (Ost-Oberschlesien). Tafel XI, XII.   164-  199. Adolf von Jordans, Friedrich Steinbacher: Beiträge zur Avifauna der Iberischen Halbinsel.   200-  244. Otto v. Westersheim Wettstein: Die Säugerwelt der Ägäis, nebst einer Revision des Rassenkreises von Erinaceus europaeus. Tafel XIII, XIV.   245-  278. Franz Petrak, Karl Heinz Rechinger, Julius Baumgartner, Ö. Szatala: Schedae ad "Cryptogamas exsiccatas", editae a Museo historiae naturalis Vindobonensis.   279-  300. Franz Petrak: Beiträge zur Kenntnis der orientalischen Pilzflora.   301-  396. Josef Wastl, Anna Sittenberger: Rassenkundliche Untersuchungen an Deutschen und Tschechen im südlichsten Böhmerwald (Quellgebiet der Moldau). Tafel XV-XXI.   397-  457</dc:description>
+   <dc:date>1941</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26602.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26602.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26602</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

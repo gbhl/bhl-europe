@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 5 (1939)</dc:title>
+   <dc:creator>Attems[-Petzenstein]  Carl Reichsgraf von, Holdhaus  Karl, Kautsky  Fritz, Kummerlöwe  H., Lackschewitz  P., Lang  Anton, Lindroth  C.H., Meixner  A., Meixner  Heinz, Pesta  Otto, Pia  Julius von, Rechinger  Karl Heinz, Reimoser  Eduard, Sassi  Moritz, Wastl  Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: P. Lackschewitz: Die paläarktischen Rhamphidiinen und Eriopterinen (Diptera) des Wiener Naturhistorischen Museums. Tafel I-III.     1-   67. P. Lackschewitz: Die paläarktischen Limnophilinen, Anisomerinen und Pediciinen (Diptera) des Wiener Naturhistorischen Museums. Tafel IV-V.    68-  122. C.H. Lindroth, Karl Holdhaus: Die europäischen Koleopteren mit boreoalpiner Verbreitung. Tafel VI-XVIII.   123-  293. Carl Reichsgraf von Attems[-Petzenstein]: Beiträge zur Kenntnis der Iuliden.   294-  327. Eduard Reimoser: Wissenschaftliche Ergebnisse der österreichischen biologischen Expedition nach Costa Rica. Die Spinnenfauna.   328-  386. Otto Pesta: Triops (Apus) cancriformis Bosc. aus dem Stadtgebiet von Wien.   387-  394. Moritz Sassi: Die wertvollsten Stücke der Wiener Vogelsammlung.   395-  409. Karl Heinz Rechinger: Ergebnisse einer botanischen Reise nach dem Iran, 1937.   410-  536. Julius von Pia: Ein riesiger Honigdachs (Mellivorine) aus dem Unterpliozän von Wien.   537-  583. Fritz Kautsky: Die Erycinen des niederösterreichischen Miocaen. Tafel XIX-XXII.   584-  671. A. Meixner: Eine Karbonatskapolithparagenese vom Typus Pargas aus dem Sulmtal bei Schwanberg, Koralpe, Steiermark.   672-  689. Heinz Meixner: Was ist Seelandit?   690-  693. Heinz Meixner: Algurit und seine Vorkommen: Beziehungen zu Fuchsit und Mariporit   694-  703. Anton Lang, Josef Wastl: Ein Beitrag zur Anthropologie des südlichen Waldviertels. (Gerichtsbezirk Pöggstall, Niederdonau.). Tafel XXIII.   704-  723. H. Kummerlöwe: Zur Neugestaltung der Wiener wissenschaftlichen Staatsmuseen. Seiten XXIV-XXXIX . Otto Pesta: Fünfzig Jahre Naturhistorisches Museum Wien. (Ein Beitrag zur Geschichte des Instituts.). Seiten VII-XXIII</dc:description>
+   <dc:date>1939</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26600.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26600.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26600</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

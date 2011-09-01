@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>First record of Braconidae as parasitoids of Capnodis tenebrionis (Linnaeus) (Coleoptera: Buprestidae), with notes on the ecology of Spathius erythrocephalus Wesmael (Hymenoptera: Braconidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bonsignore C.P.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:creator>Vacante V.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>biological control</dc:subject>
+   <dc:subject>Capnodis tenebrionis</dc:subject>
+   <dc:subject>Coleoptera</dc:subject>
+   <dc:subject>Buprestidae</dc:subject>
+   <dc:subject>Spathius erythrocephalus</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>gregarious</dc:subject>
+   <dc:subject>ectoparasitoid</dc:subject>
+   <dc:subject>plum</dc:subject>
+   <dc:subject>apricot</dc:subject>
+   <dc:subject>host location</dc:subject>
+   <dc:subject>host finding</dc:subject>
+   <dc:description>For the first time an ichneumonoid parasitoid is reported from the peach flatheaded rootborer Capnodis tenebrionis (Linnaeus, 1758) (Coleoptera: Buprestidae) in a heavily infested plum and apricot orchard in south-western Sicily. In 2005 and 2006 the ecology of the ectoparasitoid Spathius erythrocephalus Wesmael, 1838, (Hymenoptera: Braconidae) was studied. The larvae are ectophagous and gregarious; obviously the parasitoid search for the large buprestid larval (6.0 ± 0.4 cm). The adult parasitoid appeared in both cultivations in August and/or September and selected only the mature larvae for oviposition. In 2006 35% of the rootborer larvae on plum were parasitized. Significant diff erences were found between the mean depth in the soil in which parasitized and non-parasitized larvae were found, although C. tenebrionis larvae closest to the level of the soil surface are the easier to reach. The parasitoid is able to search for and parasitize host larvae up to a soil depth of 20 cm. No significant diff erence was found in the distribution of the parasitoid with respect to the compass orientation within the tree. Spathius erythrocephalus is a new promising antagonist for the biological control of the noxious peach flatheaded rootborer.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:292111</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 489 - 498</dcterms:extent>
+   <dcterms:isPartOf>First record of Braconidae as parasitoids of Capnodis tenebrionis (Linnaeus) (Coleoptera: Buprestidae), with notes on the ecology of Spathius erythrocephalus Wesmael (Hymenoptera: Braconidae) (URN:ISSN:0024-0672) (Volume 82) (Issue 44)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/292111.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/122254</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/292111</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

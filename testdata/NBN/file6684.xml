@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Three Bathyal Prosobranchs (Gastropoda) from the Southeast Asian Waters</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Knudsen J.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>The present report is based on three specimens of Prosobranchs from the southeast Asian waters. Two appear to represent each a species new to science, while the third specimen is assigned here with some doubt to a previously known species. One sample was collected by the Naval officer Land, and two samples were procured by Dr. J. Verwey during his participation in the "Java-South Africa Expedition 1929-30" organized by Dr. Th. Mortensen, Copenhagen. The material is kept in the Rijksmuseum van Natuurlijke Historie, Leiden, the Netherlands. I am greatly indebted to Dr. C. O. van Regteren Altena for entrusting the material to me for study and for useful information on the origin of the samples. The photographs were taken by Mr. G. Brovad and the English text was revised by Miss Susan Thorpe. TROCHIDAE Calliostoma Swainson Dell (1956: 46) established the genus Alertalex to contain a new species of Trochid. He remarked that "it is obviously related to Calliostoma (s.str.), but is too different from the type species, C. zizyphinum (L.) to be usefully retained in that genus". Alertalex is distinguished from the latter genus by its silken, subnacreous surface and the strong spiral sculpture. Clench &amp; Turner (1960: 78) believed that Alertalex belongs to Calliostoma, their assumption being based on the great similarity of radula characters. The species described below would seem to be intermediate between Alertalex and Calliostoma as far as the two separating characters used by Dell are concerned ("silken, subnacreous" and "strong spiral sculpture").</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319189</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 17 - 23</dcterms:extent>
+   <dcterms:isPartOf>Three Bathyal Prosobranchs (Gastropoda) from the Southeast Asian Waters (URN:ISSN:0024-0672) (Volume 45) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319189.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150475</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319189</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Status of Dolichopodidae of the Flemish red data book in the Netherlands (Insecta: Diptera)</dc:title>
+   <dc:title>Changes in ranges: invertebrates on the move. Proceedings of the 13th International Colloquium of the European Invertebrate Survey, Leiden, 2-5 September 2001</dc:title>
+   <dc:creator>Pollet M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Diptera</dc:subject>
+   <dc:subject>Dolichopodidae</dc:subject>
+   <dc:subject>Red data book</dc:subject>
+   <dc:subject>Flanders</dc:subject>
+   <dc:subject>The Netherlands</dc:subject>
+   <dc:subject>Biodiverity</dc:subject>
+   <dc:description>Status of Dolichopodidae of the Flemish red data book in the Netherlands (Insecta: Diptera) The distribution and status of threatened and rare Flemish dolichopodid species in the Netherlands is investigated. Rarity classes are based on the percentage of sampled UTM 10 km squares with species records, in combination with the most recent capture date. The Dutch fauna comprises 244 species, 22 of which have presumably become extinct. About 52% of the 224 shared species with Flanders seem to be more common in the latter region. Among the 23 species that are more widespread in the Netherlands, saltmarsh-, heathland-inhabiting and riparian species are better represented than in the entire shared fauna. The observed faunal discrepancies might be related to regional differences in both habitat availability, topography and management.</dc:description>
+   <dc:publisher>European Invertebrate Survey - the Netherlands</dc:publisher>
+   <dc:contributor>Reemer M. (Editor)</dc:contributor>
+   <dc:contributor>Helsdingen P.J. (Editor)</dc:contributor>
+   <dc:contributor>Kleukers R.M.J.C. (Editor)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219855</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 61 - 68</dcterms:extent>
+   <dcterms:isPartOf>Status of Dolichopodidae of the Flemish red data book in the Netherlands (Insecta: Diptera)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219855.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46395</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219855</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

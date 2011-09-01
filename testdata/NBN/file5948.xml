@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Een nieuwe ondersoort van Zosterops montana afkomstig van de Goenoeng Papandajan (West Java)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogerwerf A.</dc:creator>
+   <dc:creator>Boer, de L.E.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>In zijn laatste revisie van het genus Zosterops (Journ. für Orn., vol. 87, 1939, p. 156-164) geeft Stresemann o.a. een schematische voorstelling van de horizontale en verticale verspreiding binnen deze Archipel van de vier voornaamste groepen van dit geslacht: montana, atricapilla, palpebrosa en chloris. Tot onze verwondering wordt hierin geen montana-vorm voor WestJava opgegeven, terwijl Siebers toch reeds in 1929 vogels van Goenoeng Tjerimai besprak, en afsplitste onder de naam Zosterops montana sindorensis (Treubia, vol. 11, 1929, p. 151). Deze ondersoort werd zoowel door Chasen (Handlist of Malaysian Birds, 1935, p. 266) als door Kuroda (Birds of the Island of Java, vol. 1, 1933, p. 127) geaccepteerd. De beide auteurs van „De vogels van het Tenggergebergte" (De Tropische Natuur, jrg. 29, 1940, p. 93-101), de heer en mevrouw Van Bemmel, merken daarentegen weer op dat de soort Zosterops montana in West-Java ontbreekt, hetgeen echter in hetzelfde tijdschrift op p. 140 door den heer Bartels wordt herroepen, die melding maakt van het verzamelen van deze soort op de Papandajan. De laatste durft echter aan de hand van het geringe materiaal dat hem ter beschikking staat niet te zeggen tot welk ras de Papandajan-vogels behooren. Het Zoologisch Museum te Buitenzorg geraakte echter in 1941 in het bezit van negen balgen van dit brilvogeltje eveneens afkomstig van de Goenoeng Papandajan en aldaar verzameld op een hoogte van circa 2500 m door den heer A. de Vos. Deze balgen wijken in enkele opzichten zóó belangrijk af van alle reeds bekende vormen, dat wij het alleszins verantwoord achten haar hieronder als nieuw te beschrijven. Zosterops montana minor nov. subspec.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318453</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1947</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 252 - 253</dcterms:extent>
+   <dcterms:isPartOf>Een nieuwe ondersoort van Zosterops montana afkomstig van de Goenoeng Papandajan (West Java) (URN:ISSN:0024-0672) (Volume 28) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318453.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149739</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318453</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

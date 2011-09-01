@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 25_2 (1985)</dc:title>
+   <dc:creator>Foissner  Ilse, Fuchshofer  Heinz, Gailhofer  Manfred, Gigler  Anna, Grill  Dieter, Härtel  Otto, Horak  Othmar, Jain  Alka, Juretic  Nikola, Klein  Erich, Lauscher  Friedrich, Mamula  Djordje, Meindl  Ursula, Noitsakis  Basilios (Vasilios?), Paclt  Juraj, Pfeifhofer  Hartwig W., Singh  Awadesh Kumar, Srivastava  Sudhir Kumar, Symeonidis  Lazaros A., Teppner  Herwig, Thaler  Irmtraud, Url  Walter Gustav, Vijayaraghavan  M.R., Wolkinger  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Basilios (Vasilios?) Noitsakis: Diurnal Changes in Leaf Water Potential Components of Chrysopogon gryllus in the Field.   193-  203. Hartwig W. Pfeifhofer, Dieter Grill: Plastidenpigmente der Lärche.   205-  211. Herwig Teppner: Nodular Pysiology of Urd Bean as infected by Urd Bean Mosaic Virus, V. Effect on Some Enzymatic Activity.   211-  212. Awadesh Kumar Singh, Sudhir Kumar Srivastava: Nodular Pysiology of Urd Bean as infected by Urd Bean Mosaic Virus, V. Effect on Some Enzymatic Activity.   213-  217. Herwig Teppner: Recensio.   218. Juraj Paclt: Obligatorische Nodosität im Pflanzenreich.   219-  223. Herwig Teppner: Recensiones.   223-  224. Ilse Foissner: Reversible Dilatation of Endoplasmatic Reticulum Cisternae During Pressure and Plasmolysis.   225-  231. Franz Wolkinger, Otto Härtel: Recensiones.   231-  232. Lazaros A. Symeonidis: The Effect of Dibrom on Shoot Esterase and Certain Stages of Development in the Genus Taeniatherum (Poaceae).   233-  240. Otto Härtel: Recensio.   240. Djordje Mamula, Nikola Juretic: A Study of two Isometric Viruses Infecting Turnip in Austria.   241-  251. Herwig Teppner: Recensiones.   252. Friedrich Lauscher: Zur Phänologie vegetativ vermehrter Pflanzen einheitlicher Herkunft - Beobachtungen in phänologischen Pflanzengärten in Norwegen 1963-1982.   253-  272. M.R. Vijayaraghavan, Alka Jain: Structure and Breakdown of Protein Bodies in Cotyledonary Cells During Seed germination in Lens culinaris MEDIC.   273-  276. Heinz Fuchshofer, Otto Härtel: Physiologie des Trübungstests, einer Methode zur Bioindikation von Abgaswirkungen auf Koniferen.   277-  291. Dieter Grill, Anna Gigler: Holzanatomische Untersuchungen an einer geringelten Thuja occidentalis L..   293-  296. Ursula Meindl, Walter Gustav Url: Observation of Electron Dense Fibrillar Bodies in the Desmid Closterium Iunula.   297-  300. Othmar Horak: Zur Bedeutung des Nickels für Fabaceae, II.   301-  307. Manfred Gailhofer: Recensio.   308. Irmtraud Thaler, Manfred Gailhofer: Einschlußkörper in den Zellen von Scutellaria altissima.   309-  316. Herwig Teppner, Erich Klein: Nigritella widderi spec. nov. (Orchidaceae-Orchideae).   317-  326. Herwig Teppner: Recensiones.   327-  328</dc:description>
+   <dc:date>1985</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30181.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30181.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30181</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

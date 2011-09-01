@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Resultaten van het ringonderzoek betreffende den vogeltrek, ingesteld door 's Rijks Museum van Natuurlijke Historie te Leiden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Oort, van E.D.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>In vervolg op de verslagen van het ringonderzoek van 's Rijks Museum van Natuurlijke Historie, die ik voorheen publiceerde in het tijdschrift „Ardea" der Nederlandsche Ornithologische Vereeniging en waarvan het laatste (XIV) verscheen in jaargang XII, 1923, p. 8, geef ik in de hiervolgende bladzijden een lijst van berichten van waarneming van geringde vogels, die mij tusschen 1 Januari 1923 en 31 December 1925 werden toegezonden. Ook in den loop van deze jaren zijn weder belangrijke gegevens verkregen, zoowel omtrent het overwinteringsgebied en het trekken en zich verplaatsen in het algemeen van sommige vogelsoorten als omtrent den ouderdom van eenige individuën. Het is mij een aangename plicht hierbij mijn welgemeenden dank aan alle medewerkers aan ons onderzoek te betuigen en ik neem tevens deze gelegenheid te baat om het ringexperiment bij voortduring in aller medewerking aan te bevelen. Gewenschte inlichtingen en ringen worden gaarne verstrekt aan een ieder, die in de gelegenheid is zijne medewerking te verleenen. Schollevaar [Phalacrocorax carbo subcormoranus (Brehm)]. Ringnummer 183, geringd te Lekkerkerk (Z.-H.) 30 April 1921 door de Goudsche Ornithologische Club „Hirundo" als nestjong; 30 December 1922 geschoten bij Vauvert, departement Gard, Zuid-Frankrijk. Berichtgever de Heer E. Yullian, Lyon, Frankrijk. — 42304, geringd te Lekkerkerk (Z.-H.) 18 Juni 1924 door de Goudsche Ornithologische Club „Hirundo" als nestjong; in Augustus 1924 geschoten op de Loosdrechtsche plassen (U.). Berichtgever de Heer L. Nielast, Loosdrecht (U.). — 42308, geringd te Lekkerkerk (Z.-H.) 18 Juni 1924 door de Goud-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318955</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1926</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 179 - 198</dcterms:extent>
+   <dcterms:isPartOf>Resultaten van het ringonderzoek betreffende den vogeltrek, ingesteld door 's Rijks Museum van Natuurlijke Historie te Leiden (URN:ISSN:0024-0672) (Volume 9) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318955.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150241</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318955</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

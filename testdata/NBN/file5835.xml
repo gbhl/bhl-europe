@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Gobioid fishes : 6. On the synonymy of some species from the Indo-Australian Archipelago</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Koumans F.P.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Bathygobius fuscus (Rüpp.) Gobius fuscus Rüppell, Atl. Reise N. Afr. Fische 1828, p. 137. Gobius punctillatus Rüppell, l.c., p. 138. Gobius soporator Cuvier &amp; Valenciennes, Hist. Nat. Poissons XII. 1837, p. 56. Gobius albopunctatus Cuvier &amp; Valenciennes, l.c., p. 57. Gobius nebulopunctatus Cuvier &amp; Valenciennes, l.c., p. 58. Gobius cyclopterus Cuvier &amp; Valenciennes, l.c., p. 59. Gobius albopunctatus Rüppell, Neue Wirbelthiere Fische 1838, p. 138. Gobius nebulopunctatus Rüppell, l.c., p. 139. Gobius lineatus Jenyns, Zool. Voy. Beagle 1842, p. 95, pl. 19, fig. 2. Gobius nox Bleeker, Nat. Tijdschr. Ned. Indië I. 1851, p. 248. Gobius padangensis Bleeker, l.c., p. 249. Gobius tjilankahanensis Bleeker, l.c., p. 251. Gobius cocosensis Bleeker, Nat. Tijdschr. Ned. Indië VII. 1854, p. 47. Gobius breviceps Blyth, Journal Asiat. Soc. Bengal XXVII. 1858, p. 271. Gobius catulus Girard, Proc. Ac. Nat. Sc. Philadelphia 1858, p. 169. Gobius mapo Poey, Memorias II. 1861, p. 277. Gobius lacertus Poey, l.c., p. 278. Gobius carolinensis Gill, Proc. Ac. Nat. Sc. Philadelphia 1863, p. 268. Gobius kreftii Steindachner, Sitz. ber. Ak. Wiss. Wien LIII I. 1866, p. 451. Gobius criniger Steindachner (not of C. &amp; V.), ibid., LVI I. 1867, p. 326. Gobius brunneus Poey (not of Temminck &amp; Schlegel), Synopsis 1868, p. 393. Gobius homocyanus Vaillant &amp; Sauvage, Rev. Mag. Zool. III 3. 1875, p. 280. Glossogobius giuris Streets (not of H.B.), Bull. U. S. Nat. Mus. 7. 1877, p. 60. Gobius darnleyensis Alleyne &amp; Macleay, Proc. Linn. Soc. N.S.W.I. 1877, p. 331,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318340</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1935</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 121 - 150</dcterms:extent>
+   <dcterms:isPartOf>Notes on Gobioid fishes : 6. On the synonymy of some species from the Indo-Australian Archipelago (URN:ISSN:0024-0672) (Volume 18) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318340.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149626</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318340</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On adaptive radiation in gulls (tribe Larini)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Tinbergen N.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>In 1930 Professor Boschma, then Head of the Leiden Department of Zoology, generously allowed one of his undergraduates to spend an entire spring away from the laboratory, observing the love rituals of Terns. He even accepted the rather incoherent account this young man wrote of his observations as part of the work to be submitted for his "doctoraal" examination. I very much doubt if at that time he expected his pupil ever to develop an interest in taxonomy and systematics. I hope that this paper will show that one should never give up hope. Even though I cannot claim to have become a taxonomist, some of the results of our comparative studies of gull behaviour begin to have a bearing on classification, and beyond that on its evolutionary interpretation. This work started as an attempt to unravel the interaction between individuals on which the social organisation of a breeding colony of Herring Gulls (Larus argentatus Pont.) is based (Tinbergen, 1936, 1953). Under the influence of Whitman's comparative studies of the behaviour of pigeons (1919), and Heinroth's (1911) and Lorenz's (1941) comparative studies of Anatidae, and particularly at the personal urging of Jan Verwey and Konrad Lorenz, I started, upon my arrival in Oxford in 1949, a co-operative programme of comparative behaviour studies in gulls, in which, at one time or another, the following persons took part: P. P. G. Bateson (Cambridge), Dr. C. G. Beer (Dunedin), Dr. G. J. Broekhuysen (Cape Town), Dr. R. G. B. Brown (Oxford), Dr. E. Cullen (Oxford), Dr. J. M. Cullen (Oxford), Miss F. Feekes (Groningen), M. F. L. Fogden (Oxford), J. C. W. Houghton (Leeds), N. B. Jones (Bristol), H. Kruuk (Utrecht), Dr. G. Manley (London), R. F. Mash (Oxford), Dr. M. Moynihan (Barro Colorado), I.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317905</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 209 - 223</dcterms:extent>
+   <dcterms:isPartOf>On adaptive radiation in gulls (tribe Larini) (URN:ISSN:0024-0672) (Volume 39) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317905.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149191</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317905</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

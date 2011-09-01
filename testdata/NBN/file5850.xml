@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XLVIII. Zwei neue Unterarten von Allancastria Cerisyi Godart aus Anatolien (Lepidoptera, Parnassiidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>I Von einer 1973 mit Unterstützung der Deutschen Forschungsgemeinschaft unternommenen Reise durch Anatolien brachten Dr. P. Sigbert Wagener und sein Begleiter Andreas Schmitz eine Anzahl von Allancastria cerisyi Godart mit. Beim Studium dieses Materials glauben wir zwei neue Unterarten gefunden zu haben. Geht man vom Verbreitungsgebiet der subsp. speciosa Stichel (Palästina, Jordanien, Libanon, Syrien und dem an Syrien grenzenden Teil der Türkei) aus, so lassen sich an anatolischem cerisyi-Material zwei Variationsrichtungen erkennen. Die eine leitet östlich des zentralanatolischen Beckens nach Norden (Amasya) zur subsp. deyrollei Oberthür über, die andere führt westlich über den Kilikischen Taurus zum Sultandag am Westrand des Beckens und weiter nordwestlich in die Provinz Balikesir. Während Exemplare von der Kilikischen Pforte (Gülekbogazi, 1100 m, 6.vi.1973, leg. Wagener &amp; Schmitz; 2 ♂♂ in coll. Eisner in coll. Rijksmuseum van Natuurlijke Historie, Leiden, 4 ♂♂ in coll. Wagener, Bochum) noch weitgehend die Merkmale des Habitus der subsp. speciosa Stichel aufweisen, tritt im Gebiet zwischen Kobya, Akschehir und Egridir eine andere Unterart auf, die wir als neu beschreiben. Allancastria cerisyi lycaoniae subsp. nova Umgebung Akschehir, Mai 1935: 1 ♀ Holotypus, 1 ♂ Allotypus, beide in coll. Eisner in coll. Rijksmuseum van Natuurlijke Historie, Leiden, 1 ♂ Paratypus in coll. Wagener. Egerdir (heute: Egridir), 1000 m, Mai 1926, leg. E. Pfeiffer: 3 ♂♂, 2 ♀♀ Paratypen in coll. Eisner in coll. Rijksmuseum van Natuurlijke Historie, Leiden, 1 ♀ Paratypus in coll. Wagener. 54 km</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318355</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 81 - 83</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XLVIII. Zwei neue Unterarten von Allancastria Cerisyi Godart aus Anatolien (Lepidoptera, Parnassiidae) (URN:ISSN:0024-0672) (Volume 48) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318355.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149641</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318355</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

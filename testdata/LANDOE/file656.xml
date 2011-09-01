@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 27 (1975)</dc:title>
+   <dc:creator>Aspöck  Horst, Aspöck  Ulrike, Fischer  Maximilian, Glaser  Wolfgang, Hinz  Rolf, Malicky  Hans, Miksic  René, Pinker  Rudolf, Reisser  Hans, Schedl  Karl Eduard, Theischinger  Günther, Varga  Zoltán, Wiltshire  Edward P.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Zoltán Varga: Neue Noctuiden aus der Sammlung Vartian (Wien), I. (Lepidopt., Noctuidae, Noctuinae).     1-   15. Horst Aspöck, Ulrike Aspöck: Zur Taxonomievon Raphidia (Iranoraphidia n.subg) wittmeri Asp. et Asp. (Neur., Raphidioptera, Raphidiidae).    16-   18. Wolfgang Glaser: Beitrag zur Kenntnis der Coleophoridae, VII. Eine neue Coleophorenart aus Südspanien. Erste Stände und das Männchen von Col. nitidipennella Toll &amp; Amsel, 1967. Das Männchen von Col. coarctataephaga Toll, 1961. (Lepidoptera, Coleophoridae).    19-   24. Günther Theischinger: Rhabdiopteryx christinae, n.sp., eine neue Steinfliege aus Spanien (Plecoptera, Taeniopterygidae).    25-   30. René Miksic: Eine neue Artder Gattung Protaetia Burm. aus Indonesien (88. Beitrag zur Kenntnis der Scarabaeiden).    31-   32. Karl Eduard Schedl: Zur Synonymie der Borkenkäfer XXVI. 318. Beitrag zurMorphologie und Systematik der Scolytoidea.    33-   38. Rolf Hinz: Die Arten der Gattung Glyptorhaestus Thomson (Hymenoptera, Ichneumonidae).    39-   46. Maximilian Fischer: Drei orientalische Opiinen (Hymenoptera, Braconidae) aus der Sammlung Townes.    47-   52. Maximilian Fischer: Opius dureseaui n.sp. (Hym., Braconidae, Opiinae) gezogen aus Agromyza frontella Rondani (Dipt., Agromyzidae).    53-   55. Horst Aspöck: Gründung der Österreichischen Entomologischen Gesellschaft anläßlich des VI. Internationalen Symposiums über Entomofaunistik in Mitteleuropa.    56. Horst Aspöck, Ulrike Aspöck: Die Auflösung des Raphidia notata-Komplexes (Neur., Raphidioptera, Raphidiidae).    57-   70. Rudolf Pinker: Über eine für Europa neue Noctuide.    71-   72. Edward P. Wiltshire: Middle East Lepidoptera, XXXIII: some new Lasiocampidae, Noctuidae, Geometridae and Limacodidae.    73-   84. Hans Reisser: Beiträge zur Kenntnis der Sterrhinae (Lep., Geom.), X. Cosymbia ariadne Rssr., deren erste Stände und Frühjahrsgeneration.    85-   88. Hans Malicky: Beschreibung von 22 neuen westpaläarktischen Köcherfliegen (Trichoptera).    89-  104. Günther Theischinger: Steinfliegen (Plecoptera) aus Anatolien und Iran.   105-  114. Maximilian Fischer: Über zwei exotische Alysiinen-Wespen aus dem Aspilota-Komplex (Hymenoptera, Braconidae, Alysiinae).   115-  119. René Miksic: Rudolf Petrovitz +.   120-  124</dc:description>
+   <dc:date>1975</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26304.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26304.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26304</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

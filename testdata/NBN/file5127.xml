@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The "Comb-toothed" Loricariinae of Surinam, with reflections on the phylogenetic tendencies within the family Loricariidae (Siluriformes, Siluroidei)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>CONTENTS Introduction................... 3 The nominal genera and their evaluation........... 4 The phylogeny of the higher Loricariidae........... 12 Measurements and methods............... 18 Collecting localities................. 19 Miscellaneous remarks................ 23 The Surinam species ................ 23 Distribution and habitat................ 23 Key to the Surinam species............... 25 Descriptions of the Surinam species............. 25 Acknowledgements................. 44 Summary.................... 44 Diagrams.................... 44 References................... 55 INTRODUCTION The present paper is the third in a series intended to present a review of the Surinam representatives of the Loricariid armoured catfishes (Loricariidae), of which the previous two dealt with the Surinam species belonging to the genus Hypostomus Lacépède (Boeseman, 1968, 1969). Like these, the review now presented is mainly based on the extensive material assembled during the period 1963 to 1967 by the zoologists carrying out the Biological Brokopondo Research Project, sponsored by the Netherlands Foundation for the Advancement of Research in Surinam and the Netherlands Antilles (WOSUNA), the Netherlands Foundation for the Advan-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317632</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 56</dcterms:extent>
+   <dcterms:isPartOf>The "Comb-toothed" Loricariinae of Surinam, with reflections on the phylogenetic tendencies within the family Loricariidae (Siluriformes, Siluroidei) (URN:ISSN:0024-1652) (Volume 116) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317632.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148918</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317632</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A description and discussion of threat- and anxiety-behaviour of Burhinus capensis (Lichtenstein) during incubation</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Broekhuysen G.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Dedicated to Professor H. Boschma on the occasion of his seventieth birthday. INTRODUCTION The family Burhinidae or Stone Curlews, consists of large ploverlike birds which have no hind toe, long yellow legs with thickened tibiotarsal joints, hence the sometimes used popular name of "thickknee". The head is relatively big and very round and the eye is yellow, large and very striking. The bill is short and stout. The plumage is very cryptic when the bird is at rest, but in flight or in postures with wings raised a rather striking contrasty pattern becomes visible in the wing. All members of this family are nocturnal in their habits and during the day time they often squat on the ground among rocks and vegetation and are then difficult to spot unless they move. Stone Curlews are mostly found in tropical and temperate regions and they are represented by two species on the African continent. These two species are Burhinus vermiculatus (Cabanis) and B. capensis (Lichtenstein). The main difference between these two species is the fact that B. vermiculatus has a distinct pale bar bordered by a somewhat darker area on the inward edge, on each of the wings. B. capensis lacks this bar. The European species B. oedicnemus (L.) is very similar to B. vermiculatus and also has the bar. Of the two African species B. vermiculatus is never found far from water, hence its South African name of Water Dikkop. B. capensis, popularly called the Cape Dikkop, occurs in dry situations. Little to nothing is known about the behaviour of the former and we are only slightly better informed about the behaviour of the latter.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318417</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 240 - 248</dcterms:extent>
+   <dcterms:isPartOf>A description and discussion of threat- and anxiety-behaviour of Burhinus capensis (Lichtenstein) during incubation (URN:ISSN:0024-0672) (Volume 39) (Issue 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318417.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149703</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318417</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

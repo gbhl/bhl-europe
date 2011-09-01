@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes from the Royal Botanic Garden Edinburgh: Vol. XII, Number LVI (part number)</dc:title>
+   <dc:publisher>HMSO (Edinburgh)</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>437ff8db-e223-403b-b418-76f7910c70f1</dc:identifier>
+   <dc:identifier>0080-4274</dc:identifier>
+   <dc:identifier>26774</dc:identifier>
+   <dc:language>eng</dc:language>
+   <dc:relation>Edinburgh Journal of Botany</dc:relation>
+   <dcterms:issued>1919</dcterms:issued>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/uk-rbge/NRBGEv1-23/Volume12/NRBGE_0012/NRBGE_0012_1919_0056/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/uk-rbge/NRBGEv1-23/Volume12/NRBGE_0012/NRBGE_0012_1919_0056</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RBGE/437FF8DBE223403BB41876F7910C70F1</europeana:isShownAt>
+<europeana:dataProvider>Royal Botanic Garden Edinburgh</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 11_1_2 (1964)</dc:title>
+   <dc:creator>Ali  Syed  Irtifaq, Baillard  Lucien, Courtot  Yvette, Dequeudre  Gilbert, Dvorak  Frantisek, Gams  Helmut, Härtel  Otto, Janchen  Erwin Emil Alfred, Jeanplong  Joseph, Khushalani  Ishwari, Marsaud  Pierre, Millet  Bernard, Perney  Jean Pierre, Talon  Claude, Thaler  Irmtraud, Widder  Felix Josef, Wladarsch  Ilse</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Helmut Gams: Die Bedeutung der afromontanen und afroalpinen Floren für die Geschichte der mediterran-montanen und alpinen Floren.     1-   17. Joseph Jeanplong: Données complémentaires à la flore du Nord-Viêt-Nam, I.    18-   26. Erwin Emil Alfred Janchen: Der korrekte Name des Kalkblaugrases.    27-   30. Erwin Emil Alfred Janchen: Die systematische Stellung der Gattung Cardaminopsis.    31-   33. Ilse Wladarsch: Kernkristalle im Samen von Mirabilis jalapa.    34-   36. Ilse Wladarsch: Der Einfluss von Colchicin auf kristallführende Kerne.    37-   49. Lucien Baillard: Aperçu sur les phénomèmes périodique en biologie végétale.    50-   55. Gilbert Dequeudre, Yvette Courtot, Lucien Baillard: Sur le déclenchement de mouvements périodiques chez le Dompte-Venin, Vincetoxicum officinale.    56-   57. Pierre Marsaud, Yvette Courtot, Lucien Baillard: Sur la périodicité des mouvements dexploration du Haricot dEspagne, Phaseolus multiflorus.    58-   60. Claude Talon, Jean Pierre Perney, Lucien Baillard: Sur la périodicité phyllotaxique dune Stellaire, Stellaria media.    61-   63. Yvette Courtot: Périodicité structurale dans la vacularisation des cladodes dune Asperge.    64-   65. Bernard Millet: Périodicité de la longueur des entre-noeuds de la Fève, Vicia faba.    66-   68. Felix Josef Widder: Die Veränderlichkeit von Xanthium spinosum.    69-   82. Ishwari Khushalani: Studies in Sapindaceae, I. Embryology of Dodonaea viscosa.    83-   92. Frantisek Dvorak: Some Remarks on Hesperis series Matronales in Caucasia and Transcaucasia.    93-  101. Syed  Irtifaq Ali: Contribution to the Genus Oxytropis from West Pakistan.   102-  107. Irmtraud Thaler: Wirkung des Heparins auf die Pflanze.   108-  120. Felix Josef Widder, Otto Härtel: Recensiones.   121-  132</dc:description>
+   <dc:date>1964</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30093.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30093.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30093</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

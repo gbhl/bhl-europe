@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Synopsis of the NW European microlepidoptera with special reference to the ecology and taxonomy of the Dutch species. Part 1. Introduction and Pyralidae (Galleriinae)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Kuchlein J.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>INTRODUCTION The present work is intended to give a treatment of the taxonomy and ecology of the Microlepidoptera found in northwest Europe. Until now no study has been published covering especially this part of Europe. Special attention will be paid to the species observed in The Netherlands. In 1851 the first annotated list of the Dutch Microlepidoptera compiled by H. W. de Graaf appeared in the first volume of the 'Bouwstoffen voor eene Fauna van Nederland'. In the third volume of that work (1859-1866), partly in co-operation with P. C. T. Snellen (1866), the same author published a completely revised list of Dutch Microlepidoptera. This list appeared between 1859 and 1866. In 1882, Snellen's outstanding work, 'De Vlinders van Nederland, Microlepidoptera' appeared. No coherent treatise on Dutch Microlepidoptera has been published since then. A recent contribution is that of Lempke, who published a checklist of Dutch Lepidoptera in 1976. His classification and nomenclature are mainly based on the second edition of the British check list of Kloet &amp; Hincks (1972). Although Lempke was the first for a long time to take stock, it is still a pity that the identifications of the Microlepidoptera, observed in The Netherlands, could not all be verified (Lempke, 1976: 5). With regard to the other parts of northwest Europe, many local studies have been published, though the majority of them dates from before World War II. Recent contributions are those of Heuser et al. (1971) for the Palatine (Germany), and Bradley et al. (1973) and Heath et al. (1976) for Great Britain and Ireland. It seemed that a modern treatment of the subject would be extremely</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317225</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 53</dcterms:extent>
+   <dcterms:isPartOf>Synopsis of the NW European microlepidoptera with special reference to the ecology and taxonomy of the Dutch species. Part 1. Introduction and Pyralidae (Galleriinae) (URN:ISSN:0459-1801) (Volume 24) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317225.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148511</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317225</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Scientific results of the Surinam expedition 1948-1949 : Part II. Zoology No. 2. The fishes (I)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>The following pages contain a first report on the fishes collected by Dr. D. C. Geijskes and Mr. P. H. Creutzberg during the recent expedition to Dutch Guiana. A deplorable lack of time caused by the necessity to temporarily divert my attention from the present field of ichthyological research, compels me to publish these results before actually having finished the investigation of this rich and interesting collection. In consequence of this, the present paper concerns a part of the actual material only, and, though it includes in number the major part, a report on specimens belonging to some of the most interesting groups has to be postponed. For convenience' sake, the species recorded in the present paper have been arranged in the same order as used by Eigenmann (1912) and Boeseman (1952). Of all species the standard length is given, and generally the total length. The majority of the localities are in the neighbourhood of Paramaribo, or along the lower parts of the Marowini River. G. stands for Geijskes, C. for Creutzberg. Whenever available, additional data concerning further recently identified material are given: of this part of the material generally the total length is given only. The following new species are described: Heptapterus bleekeri nov. spec. Centromochlus creutzbergi nov. spec. Harttia crassicauda nov. spec. Pyrrhulina stoli nov. spec.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319401</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 24</dcterms:extent>
+   <dcterms:isPartOf>Scientific results of the Surinam expedition 1948-1949 : Part II. Zoology No. 2. The fishes (I) (URN:ISSN:0024-0672) (Volume 32) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319401.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150687</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319401</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

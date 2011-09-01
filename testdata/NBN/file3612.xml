@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic Notes on Asian Birds. 64. The range of the Chinese Nuthatch Sitta villosa and an evaluation of subspecies validity</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Nazarenko A.A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Sitta villosa</dc:subject>
+   <dc:subject>habitat loss</dc:subject>
+   <dc:subject>range fragmentation</dc:subject>
+   <dc:subject>subspecies variation</dc:subject>
+   <dc:description>A critical analysis of the literature regarding Sitta villosa and the examination of specimens has shown that the range of this species is divisible into three main areas. These are well separated and each population is best treated as a valid subspecies, although for corea, the easternmost population, further research is needed to understand the distinctions between two apparently disjunct populations.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210080</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 265 - 271</dcterms:extent>
+   <dcterms:isPartOf>Systematic Notes on Asian Birds. 64. The range of the Chinese Nuthatch Sitta villosa and an evaluation of subspecies validity (URN:ISSN:00240672) (Volume 80-5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210080.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41860</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210080</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

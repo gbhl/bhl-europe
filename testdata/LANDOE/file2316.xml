@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 83 (1953)</dc:title>
+   <dc:creator>Bullmann  Oskar, Buschmann  Adolfine, Eggler  Josef, Flügel  Helmut W., Hanselmayer  Josef, Hauser  Alois, Hoffmann  Fritz, Kapounek  J., Kropfitsch  M., Mayer  Viktor, Meixner  Adolf, Mell  Alfred, Mensink  H., Metz  Karl, Morawetz  Sieghart Otto, Paulitsch  Peter, Schouppé  Alexander, Stundl  Karl, Székely  Angelika, Zednicek  Walter</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Angelika Székely: Universitätsprofessor Dr. Hans Benndorf +.     5-    8. Adolfine Buschmann: Ein beachtenswerter Pilz des Schöckelgebietes.     9-   12. Josef Eggler: Mittelsteirische Rotbuchenwälder (Das Fagetum mediostiriacum calcareum).    13-   30. Helmut W. Flügel: Das sedimentäre Gefüge der Dolomitsandsteine (Grazer Paläozoikum).    31-   42. Josef Hanselmayer: Zur Frage des Schwefelgehaltes in Camgiten.    43-   60. Alois Hauser: Der Hornblende-Biotit-Dazittuff vom Urlkogel bei Gamlitz.    61-   63. Alois Hauser, J. Kapounek: Das Vulkangebiet Mureck-Retznei (Stmk.).    64-   68. Fritz Hoffmann: Beitrag zur Blattminenkunde von Leibnitz (Steiermark).    69-   89. Alexander Schouppé, M. Kropfitsch: Revision der Tabulaten aus dem Paläozoikum von Graz.    90-  117. Alfred Mell: Der "zweite Standort" des Alpen-Knöterichs (Polygonum alpinum) in Steiermark.   118-  122. H. Mensink: Eine tektonische Detailuntersuchung im Raume nördlich Gratkorn.   123-  129. Karl Metz: Beiträge zur Kenntnis der Seckauer Tauern. I. Die Kerngesteine (Gneise und Granite).   130-  157. Sieghart Otto Morawetz: Der Ennstalboden.   158-  168. Peter Paulitsch: Relikte in steirischen Bentoniten.   169-  170. Karl Stundl: Limnologische Untersuchungen an einigen steirischen Seen.   171-  184. Walter Zednicek: Dazite aus den Karnischen Alpen.   185-  192. Oskar Bullmann: Psithyrus rupestris F. als Schmarotzer bei Bombus alticola Kriechb., beobachtet auf der Stubalpe.   193-  194. Viktor Mayer: Lepidopteren-Neufunde in Steiermark.   195-  196. Adolf Meixner: 50 Jahre Entomologische Fachgruppe des Naturwissenschaftlichen Vereines für Steiermark. Ein Rückblick.   197-  202. Alois Hauser: Geschäftsbericht über das 90. Vereinsjahr 1952.   207-  212</dc:description>
+   <dc:date>1953</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28630.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28630.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28630</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on some Miogypsinoides-Miogypsina s.s. associations with special reference to morphological features</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Bock, de J.F.</dc:creator>
+   <dc:subject>Paleontologie: algemeen</dc:subject>
+   <dc:description>The primary differentiation within the genus Miogypsina is based on features seen in vertical sections. The subgenus Miogypsinoides lacks lateral chambers and the equatorial plane is covered on each side by zones of massive laminae, whereas the subgenus Miogypsina has well-developed lateral chambers on each side of the equatorial layer. Miogypsinoides shows an intraseptal canal system, due to the presence of a toothplate and a septal flap which are not found in Miogypsina s.s. Several samples contained specimens which show the possible transition from Miogypsinoides to Miogypsina s.s. The disappearance of the septal flap and the toothplate in Miogypsina was probably simultaneous with the appearance of lateral chambers. It seems that the existence of lateral chambers precluded the presence of an intraseptal canal system. The equatorial chambers of Miogypsinoides have a simple stolon system, whereas the equatorial chambers of Miogypsina show a more complex stolon system. With the appearance of the lateral chambers the stolon system became more complex. The diameter of the protoconch of Miogypsinoides is generally larger than that of Miogypsina s.s. This difference is less striking in the stratigraphically older samples. Several morphological features and microstructures are described in detail, such as the canal systems, the stolon system, the protoconchal stolon, the growth of the equatorial chambers, and the free nucleoconches of Miogypsinoides and Miogypsina s.s.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317461</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 135</dcterms:extent>
+   <dcterms:isPartOf>Studies on some Miogypsinoides-Miogypsina s.s. associations with special reference to morphological features (URN:ISSN:0375-7587) (Volume 36)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317461.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148747</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317461</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on Opilioacarida (Arachnida) III. Opilioacarus platensis Silvestri, and Adenacarus arabicus (With)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The present paper deals with two species of Opilioacarida, viz., Opilioacarus platensis Silvestri (1905) and Adenacarus arabicus (With, 1904). Both are already mentioned in the first part of my series of studies on Opilioacarida (Van der Hammen, 1966) ; at that time I had seen only their original descriptions. Recently, however, I have been able to study specimens of both species. The material of O. platensis was kindly put at my disposal by Dr. E. Piffl (Vienna), who discovered it among material collected by Mr. O. Wölke in South Brazil. Through the kindness of Dr. S. L. Tuxen (Copenhagen), I was enabled to examine personally the holotype and single known specimen of A. urabicus. It is a pleasure to me to express here my sincere thanks to Dr. Piffl, Mr. Wölke, and Dr. Tuxen for their valuable contributions to my studies of the Opilioacarida. Both species dealt with here have been described shortly after the first discovery of Opilioacarida. Of both species, new records had never been published. Although the two original descriptions are rather detailed, a number of characters of interest to me had not been mentioned. This is especially important in the case of A. arabicus, because it represents a genus of which the diagnosis was based on the original description only. In the case of O. platensis the material extended, moreover, our knowledge of the geographical distribution of the species. The paper is composed in the following way. After the redescriptions, a revised diagnosis is given of the genus Adenacarus. This is followed in its turn by a series of remarks on subjects of general importance, and by additions to the glossaries published in the first and second parts of the present series (Van der Hammen, 1966, 1968). Just as in these parts, an alphabetic</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318603</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 113 - 131</dcterms:extent>
+   <dcterms:isPartOf>Studies on Opilioacarida (Arachnida) III. Opilioacarus platensis Silvestri, and Adenacarus arabicus (With) (URN:ISSN:0024-0672) (Volume 44) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318603.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149889</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318603</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

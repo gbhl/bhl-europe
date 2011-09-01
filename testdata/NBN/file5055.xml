@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Vespinae of the Indo-Malayan and Papuan Areas (Hymenoptera, Vespidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>CONTENTS Introduction...............1 Taxonomic studies.............3 Provespa...............7 Vespa................10 Bionomics of Oriental and Papuan Vespinae........51 Provespa...............51 Vespa................52 Habitat...............52 Food...............53 Colony foundation, castes, and periodicity.......59 Nest construction.............60 Duration of life of colonies...........64 Aggressiveness and effect of sting.........66 Enemies ..............69 Mimicry...............71 Distribution of Oriental and Papuan Vespinae........72 Literature...............80 Index................83 INTRODUCTION It is now more than fifty years ago since R. du Buysson published a monograph of the genus Vespa, a group of wasps which is at present regarded as representing a subfamily consisting of four or five different genera. In the collections used for the preparation of that work, the fauna of the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317560</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 82</dcterms:extent>
+   <dcterms:isPartOf>The Vespinae of the Indo-Malayan and Papuan Areas (Hymenoptera, Vespidae) (URN:ISSN:0024-1652) (Volume 34) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317560.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148846</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317560</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

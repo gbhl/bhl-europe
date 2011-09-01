@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Interessante Aphodius-soorten (Coleoptera: Scarabaeoidea) uit mest van Nederlands grofwild</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Krikken J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The scarab fauna of dung from Dutch red deer and wild boar is recorded and discussed. Dung samples collected during four visits to the forested region South of Apeldoorn were extracted and numbers per species were counted (table 1). The samples contained one species new to the Netherlands (Aphodius zenkeri Germar), three species considered rare (A. maculatus Sturm, A. fasciatus Olivier, A. lividus Olivier), as well as 21 more common scarab species. Further Dutch records of these species and of A. corvinus Erichson are added. The distribution of these species and of some absent from the list is briefly discussed. A. zenkeri, maculatus, and fasciatus are thought to frequent shaded habitats because of a restricted drought tolerance.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317277</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 137 - 147</dcterms:extent>
+   <dcterms:isPartOf>Interessante Aphodius-soorten (Coleoptera: Scarabaeoidea) uit mest van Nederlands grofwild (URN:ISSN:0459-1801) (Volume 23) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317277.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148563</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317277</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

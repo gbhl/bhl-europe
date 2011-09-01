@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 129 (1999)</dc:title>
+   <dc:creator>Dirnböck  Thomas, Dullinger  Stefan, Friess  Thomas, Gottfried  Michael, Grabherr  Georg, Härtel  Otto, Heftberger  Monika, Hoinkes  Georg, Horak  Peter, Hubmann  Bernhard, Ingolic  Elisabeth, Jakesz-Grübler  Christina, Krisper  Günther, Kropf  Christian, Kurz  Walter, Lazar  Reinhold, Lieb  Gerhard Karl, Mayrhofer  Helmut, Melzer  Helmut, Pirker  Dieter, Reisinger  Johannes, Rinesch  Christine, Rupp  Barbara, Scheuer  Christian, Schneeweiß  Gerald M., Schönswetter  Peter, Stabentheiner  Edith, Stüwe  Kurt, Tenczer  Veronika, Trinkaus  Peter, Unzog  Wolfgang</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Otto Härtel: Ein Institut im Wandel der Zeit. 100 Jahre Gebäude der Pflanzenphysiologie in Graz aus der Sicht langjähriger Zugehörigkeit.     5-   20. Bernhard Hubmann, Johannes Reisinger: Die Gammastrahlungsintensität der Barrandeikalke (Mitteldevon) im Profil St. Pankrazen (Grazer Paläozoikum, Österreich): Bilanz und Problematik.    21-   32. Walter Kurz, Wolfgang Unzog: Variation of Quartz Textures within the Plattengneiss of the Koralm Complex (Eastern Alps).    33-   42. Veronika Tenczer, Kurt Stüwe: Some Constraints on Strenght and Rheology of the Plattengneiss Shear Zone (Loralm - Austroalpine).    43-   53. Reinhold Lazar, Gerhard Karl Lieb, Dieter Pirker: Witterung und Luftgüte 1997 in der Steiermark.    55-   70. Monika Heftberger, Helmut Mayrhofer, Christian Scheuer, Elisabeth Ingolic, Edith Stabentheiner: Rutola graminis, eine problematische Art unserer Hyphomycetenflora. Neue Funde, Typusmaterial, REM-Aufnahmen.    71-   80. Helmut Melzer: Neues zur Flora von Steiermark, XXXVIII.    81-   88. Peter Schönswetter, Gerald M. Schneeweiß: Beiträge zur Flora der Niederen Tauern östlich des Sölkpasses (Steiermark, Österreich).    89-   95. Peter Trinkaus, Christine Rinesch: 10 Jahre "Energiewaldforschung": Ergebnisse der ökologischen Begleituntersuchungen zu den Energieholzversuchen.    97-  110. Thomas Dirnböck, Stefan Dullinger, Michael Gottfried, Georg Grabherr: Die Vegetation des Hochschwab (Steiermark) - Alpine und Subalpine Stufe.   111-  251. Peter Horak, Christian Kropf: Landeskundlich bedeutsame Spinnenfunde in der Steiermark (Arachnida: Araneae).   253-  267. Barbara Rupp: Ökofaunistische Untersuchungen an der epigäischen Spinnenfauna (Arachnida: Araneae) des Wörschacher Moores (Steiermark, Bez. Liezen).   269-  279. Günther Krisper, Christina Jakesz-Grübler: Erstnachweis der Milbenfamilie Gehypochthoniidae STRENZKE, 1963 (Acari, Oribatidae) für Österreich.   281-  285. Thomas Friess: Landeskundlich bemerkenswerte Wanzenfunde (Insecta: Heteroptera) aus den Bundesländern Steiermark, Kärnten und Burgenland (Österreich).   287-  298. Georg Hoinkes: Geschäftsbericht für das Vereinsjahr 1998.   299-  304</dc:description>
+   <dc:date>1999</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28677.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28677.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28677</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

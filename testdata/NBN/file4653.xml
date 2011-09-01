@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Has one of Captain Cook’s possums landed in Leiden? The possible holotype of Pseudocheirus peregrinus (Boddaert, 1785)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Smeenk C.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:subject>Diprotodontia</dc:subject>
+   <dc:subject>Pseudocheiridae</dc:subject>
+   <dc:subject>Pseudocheirus peregrinus</dc:subject>
+   <dc:subject>holotype</dc:subject>
+   <dc:subject>history</dc:subject>
+   <dc:subject>nomenclature</dc:subject>
+   <dc:subject>Cook</dc:subject>
+   <dc:subject>Banks</dc:subject>
+   <dc:subject>Australia</dc:subject>
+   <dc:description>The identity of an old female specimen of Pseudocheirus peregrinus (Boddaert, 1785) in the National Museum of Natural History, Leiden, is discussed and the early descriptions and nomenclatural history of the species are reviewed. The assumption by Temminck (1824) and Jentink (1888) that the animal originated from one of Cook’s expeditions is extensively considered, since in that case it would be the holotype of Didelphis peregrinus Boddaert, 1785 and of some objective synonyms. The documentation of the specimen is insufficient to draw a definitive conclusion. However, the damage to the facial skin of the animal collected at Endeavour River in 1770 mentioned by Pennant (1781) would agree with the state of the Leiden specimen, which must have been badly damaged in the face, with the repairs clearly visible though well concealed. Therefore, the animals may indeed be identical.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:311949</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 723 - 740</dcterms:extent>
+   <dcterms:isPartOf>Has one of Captain Cook’s possums landed in Leiden? The possible holotype of Pseudocheirus peregrinus (Boddaert, 1785) (URN:ISSN:0024-0672) (Volume 83) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/311949.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/141979</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/311949</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

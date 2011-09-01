@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Hydrocorallia</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>I. Introduction. When using here the name Hydrocorallia for a group of corals, it is not intended to regard this group as a recognized systematic unit. Since Moseley (1880) placed the Stylasteridae with the Milleporidae in the Hydrocorallinae, a separate sub-order of the Hydroids, it has been sufficiently pointed out that the families Milleporidae and Stylasteridae have little in common, and that their respective relations are with Hydroids of systematically different groups. Broch (1914) maintains that the family Milleporidae traces its origin to that of the Corynidae, whilst in his opinion the family Stylasteridae is a highly specialized group that has been derived from the Bougainvilliidae. Stechow (1923) came to the same conclusion, he also placed the Milleporidae next to the Corynidae, and regarded the Stylasteridae as related to the Hydractiniidae (classified by other investigators as the subfamily Hydractiniinae of the Bougainvilliidae). Broch (1924) divides the suborder Athecatae of the Hydroida into three sections, the Simplicia, the Capitata, and the Filifera; the Capitata embrace the Corynidae, the Milleporidae, and a number of other families, the Filifera are divided into the Bougainvilliidae, the Stylasteridae, and some other families. According to Hickson &amp; England (1905) Ρ• 1) the Milleporidae have very little in common with the Stylasteridae : "It appears to us that to express more accurately the relations of the old group Hydrocorallinae, Millepora should be placed in an order Milleporina situated in our system next to the Hydromedusae, whilst the family Stylasteridae should be placed in an order Stylasterina situated near the Trachymedusae". Some years before publication of the opinion quoted above, Hickson had already expressed his views in a similar manner (cf.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317782</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1951</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 49</dcterms:extent>
+   <dcterms:isPartOf>Notes on Hydrocorallia (URN:ISSN:0024-1652) (Volume 13) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317782.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149068</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317782</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

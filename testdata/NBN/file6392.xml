@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Free Living Nematodes of the Mediterranean II. The Camargue</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Schuurmans-Stekhoven Jr. J.H.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:description>In 1933 Dr. G. J. van Oordt together with a number of biological students made an excursion to the Camargue. During that trip he collected some samples of mud from brackish ponds and pools in the Rhône Delta, which collection he entrusted me for further research. At this place I will bring him my renewed thanks for his contribution to nematology. Although the collection was not great, it brought to light some interesting new species. Moreover it allows us to say something about the penetration of marine forms into brackish waters. A comparison of the list of forms given below with the lists I have given from Nematodes found to occur in the former Zuidersea shows that the penetration of marine forms into brackish waters in the Mediterranean is performed in the same way as for instance in the Zuidersea. Here and there we find forms belonging to genera and even species, that are either the same or closely related. The species found in the habitats in the Camargue apparently are just as in the Zuidersea species adapted to life in brackish water and are able to live in surroundings with variable salinities. At least species like Theristus oxycerca, Anoplostoma viviparum and Tripyloides marinus, but apparently also Sphaerolaimus gracilis are oligohalophile. In total 37 specimens belonging to 11 species were studied. They were collected in the following localities: I. Salin de Giraud, no. 44, excursion Dr. G. J. van Oordt, June 9, 1933. Ecological conditions of the habitat: 5 cm3 white sand mixed with shells of Cardium and other molluscs, some Amphipods, and Foraminifera. Nemic index 0.6. Anoplostoma viviparum De Man, 1♂; a Monhystera species in bad</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318897</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1942</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 217 - 228</dcterms:extent>
+   <dcterms:isPartOf>The Free Living Nematodes of the Mediterranean II. The Camargue (URN:ISSN:0024-0672) (Volume 23) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318897.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150183</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318897</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

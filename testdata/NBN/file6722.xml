@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : IX. Kritische Revision der Gattung Parnassius (Fortsetzung 6)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In dieser Fortsetzung werden die schweizer und italienischen subspecies von Parnassius apollo L. behandelt. Bevor ich mich der Behandlung des schweizer Rassenkreises im einzelnen zuwende, möchte ich etwas tiefer auf ein Problem eingehen, das ich schon kurz gestreift habe, und das auch andere Parnassiologen/Entomologen wiederholt beschäftigt hat. Was ist die Ursache der überaus grossen Variabilität der Parnassier und welche Einflüsse bestimmen das Aussehen der einzelnen Individuen und der Unterarten? Es gibt zweifellos in ihrer Erscheinungsform gefestigte Rassen, die bei aller individuellen Variabilitätsbreite im Rahmen der betreffenden species eine sichere Bestimmung der einzelnen Individuen hinsichtlich ihrer Rassenzugehörigkeit auch ohne Fundortsangabe gestatten. Als einige Beispiele seien genannt: P. mnemosyne L. subsp. korbi Bryk, P. eversmanni Ménétr. subsp. felderi Bremer, P. nordmanni Ménétr. subsp. minimus Honr., P. Orleans Ch. Oberth. subsp. bourboni O. Bang-Haas, P. honrathi Staud. &amp; A. Bang-Haas, subsp. alburnus Stich., P. bremeri Bremer subsp. graeseri Honr., P. phoebus F. subsp. corybas Fisch.-Waldh., P. actius Eversm. subsp. actinoboloides O. BangHaas, P. jacquemontii Boisd. subsp. kangraensis Bryk &amp; Eisner und subsp. tibetanus F. Rühl, P. nomion Hb. subsp. richthofeni O. Bang-Haas, P. apollo L. subsp. pumilus Stich.; ich könnte diese Aufzählung beliebig fortsetzen, begnüge mich aber mit den wenigen Beispielen. Die Tatsache, dass der Habitus vieler anderer Rassen demgegenüber so veränderlich ist, führen manche Entomologen darauf zurück, dass die Fluggebiete einzelner Unterarten aneinander grenzen — das gilt insbesondere für das Gebiet der europäischen Alpen —, und demzufolge eine dauernde Mischung von Erb-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319227</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 201 - 222</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : IX. Kritische Revision der Gattung Parnassius (Fortsetzung 6) (URN:ISSN:0024-0672) (Volume 34) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319227.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150513</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319227</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

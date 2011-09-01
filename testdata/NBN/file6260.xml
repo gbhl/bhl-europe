@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The history of some Komodo Dragons (Varanus Komodoensis) captured on Rintja in 1927</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Rookmaaker L.C.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>INTRODUCTION The first scientific description of the Komodo Dragon (Varanus komodoensis), given by P. A. Ouwens, appeared only as late as 1912. During some time following this event, but little information on the species became available and no specimens were captured. Only in 1926, an American expedition to the island of Komodo, led by W. D. Burden, for the first time succeeded in capturing alive two Komodo Dragons and in transporting these to the U.S.A. Both animals were received at the New York zoological garden on 11 September 1926. One of the specimens, a male, died on 24 November 1926; the other, of unknown sex, died on 19 October 1926 (Jones, 1965: 92). On 14 October 1926, a male Komodo Dragon was received at the Amsterdam zoological garden. It was donated by W. Groeneveldt, at the time assistant-resident of Bima, Sumbawa. After its capture on western Flores, it was transported to Amsterdam on the SS. "Karimata", "lodged in a specially built steam-heated cabin" (Anonymous, 1926: 979). The animal died on 4 December 1926 (Jones, 1965: 92, and Fr. de Graaf, in litt., 28 November 1973); the skin was stuffed and is preserved in the Zoölogisch Museum at Amsterdam (D. Hillenius, in litt., 31 October 1973). In June 1927 five Komodo Dragons were received in European zoological gardens, viz., one in the Amsterdam Zoo, one in the Rotterdam Zoo, one in the Berlin Aquarium, and two in the London Zoo. These, with two specimens sent to the Surabaja zoological garden and five which died before reaching their destination, were captured by my late grandfather, H. R. Rookmaaker, in 1927. The history of these specimens is the main subject of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318765</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 65 - 71</dcterms:extent>
+   <dcterms:isPartOf>The history of some Komodo Dragons (Varanus Komodoensis) captured on Rintja in 1927 (URN:ISSN:0024-0672) (Volume 49) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318765.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150051</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318765</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

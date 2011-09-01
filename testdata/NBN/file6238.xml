@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Over recente en fossiele Mollusken van het Nederlandsche strand</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Blöte H.C.</dc:creator>
+   <dc:subject>38.22 ; 42.73</dc:subject>
+   <dc:description>De fossielen van ons strand hebben slechts zelden tot onderwerp van studie gediend. Inderdaad hebben deze, op secundaire ligplaats gevonden voorwerpen voor den palaeontoloog en den geoloog slechts weinig waarde, temeer waar de verplaatsing van materiaal langs het strand vrij groot schijnt te zijn en niet voldoende is onderzocht, zoodat zich de oorspronkelijke herkomst dezer voorwerpen niet laat bepalen. Desondanks meen ik vooral den malacoloog met deze opsomming van dienst te kunnen zijn; men krijgt dit fossiele materiaal vaak met recente voorwerpen tesamen in handen, en daarbij geeft het gemakkelijk aanleiding tot vergissingen. Met een zelfs oppervlakkige kennis dezer fossielen worden vele moeilijkheden ontgaan. 's Rijks Museum van Natuurlijke Historie beschikt thans over een tamelijk omvangrijke verzameling dezer fossielen, die in hoofdzaak afkomstig is van Jhr. W. C. VAN HEURN en in den laatsten tijd is aangevuld, vooral dank zij de hulp van Mej. M. J. DE GRAAG en de heeren A. L. BRANDHORST en B. HUBERT. Uiteraard is deze collectie nog verre van volledig, aangezien alle plioceene en wellicht een deel der mioceene Mollusca te verwachten zijn; bovendien resten mij nog eenige problematica. Onderstaande lijst bevat alleen die soorten, die niet meer recent voorkomen, het is n.l. niet met zekerheid uit te maken dat een exemplaar fossiel is indien de soort nog op onze kust leeft. Voorts heb ik vindplaatsen alleen opgegeven voorzoover de soorten niet uitsluitend op Walcheren werden verzameld. Tectura virginea Müll. Glyphis graeca L.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318743</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1929</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 25 - 27</dcterms:extent>
+   <dcterms:isPartOf>Over recente en fossiele Mollusken van het Nederlandsche strand (URN:ISSN:0024-0672) (Volume 12) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318743.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150029</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318743</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

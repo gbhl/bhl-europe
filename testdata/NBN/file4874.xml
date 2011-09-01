@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De larven der Nederlandse Chironomidae (Diptera) Deel C: Autoekologie en verspreiding</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Moller Pillot H.K.M.</dc:creator>
+   <dc:creator>Buskens R.F.M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Diptera</dc:subject>
+   <dc:subject>Chironomidae</dc:subject>
+   <dc:subject>larven</dc:subject>
+   <dc:subject>ecologie</dc:subject>
+   <dc:subject>verspreiding</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:description>Chironomid larvae occur in nearly all kinds of fresh and brackish waters as well as in semiterrestrial environments. The authors treat the autecology and the distribution of more than 200 taxa in the Netherlands. Except for the tribe Tanytarsini (Chironominae) all the subfamilies occurring in the Netherlands are included. The autecology of the larvae is given in ecological spectra including values of geographic distribution, water type, habitat, oxygen, pH/trophic level and chlorid concentration. The presence of larvae in the columns of the table with ecological spectra has roughly been indicated with a scale varying between 0 and 4 , except in the first two columns. The table is followed by a text describing aspects of the autecology not shown in the table. For most species also the months are mentioned in which pupa and last larval instar are present. The autecological spectra can be applicated in a number of ways. Some examples are given. The spectra are a useful tool in the biological monitoring of waters. Finally maps with the geographical distribution of most of the chironomid taxa in our country are shown. Only records checked by the authors have been included.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317379</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1990</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 85</dcterms:extent>
+   <dcterms:isPartOf>De larven der Nederlandse Chironomidae (Diptera) Deel C: Autoekologie en verspreiding (URN:ISSN:0169-2453) (Volume 1) (Issue C)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317379.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148664</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317379</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

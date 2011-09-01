@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 8_1_2 (1959)</dc:title>
+   <dc:creator>Ali  Syed  Irtifaq, Askell  Löve, Chennaveeraiah  M. S., Fuchs  Hans Peter, Härtel  Hildegard, Haybach  Gabriele, Jenik  Jan, Kiermayer  Oswald, MILICIC  Davor, Möller  H. G., Nakazawa  Singo, Neubauer  Hans Franz, Paclt  Jiri, Passarge  Harro, Rechinger  Karl Heinz, Soo  Reszö, Sterling  Clarence, Stoppel  R., Thaler  Irmtraud, Tralau  Hans, Urschler  Ingrid, Weber  Friedl, Widder  Felix Josef, Wilmanns  Ottilie</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Jan Jenik: Beitrag zur Kenntnis der Heterorrhizie dikotyler Holzpflanzen.     1-    9. Harro Passarge: Zur Gliederung der Polygono-Chenopodion-Gesellschaften im nordostdeutschen Flachland .    10-   34. Singo Nakazawa: Polar Staining and Differential Plasmoptysis of Cladophora Cells.    35-   37. Löve Askell, M. S. Chennaveeraiah: Cytotaxonomie of Cerastium holosteoides.    38-   43. Oswald Kiermayer: Über die Wirkung einiger synthetischer Wirkstoffe auf die Xylembildung von Phaseolus vulgaris.    44-   48. Syed  Irtifaq Ali: Revision of the genus Oxytropis from W. Pakistan and N. W. Himalayas.    49-   61. R. Stoppel, H. G. Möller: Das Zustandekommen der Schlafbewegungen der Pflanzen.    62-   68. Ingrid Urschler: Der "Apfeltest" zum qualitativen Nachweis von Oxydasewirkungen.    69-   73. Hans Tralau: Zur Kenntnis von Epilobium alsinifolium und myosotis silvatica subsp. frigida.    74-   92. Hans Franz Neubauer: Morphologie und Entwicklung des Blattes von Oroxylum indicum.    93-  101. Felix Josef Widder: Plantae Conrathianae.   102-  109. Hildegard Härtel, Irmtraud Thaler: Robinien mit gekrausten Fiederblättern.   110-  113. Reszö Soo: Entwicklungsgeschichte der Pflanzenwelt Ungarns.   114-  129. Friedl Weber: Negative Idioblasten.   130-  131. Clarence Sterling: Callose distribution ans wall structure in teh laticiferous cells of Allium cepa.   132-  135. Karl Heinz Rechinger: Beiträge zur Kenntnis von Rumex, XIII. Rumices anatolici.   136-  156. Gabriele Haybach: Der Calypogeia Neesiana - Plagiothecium laetum-Verein, eine Moosgesellschaft aus dem Lungau.   157-  159. Hans Peter Fuchs: Zederbauera, eine neue orientalische Cruciferen-Gattung.   160-  170. Jiri Paclt: Über die Variabilität von Parietaria officinalis.   171-  174. Ottilie Wilmanns: Epiphytengesellschaften Nordeuropas im Vergleich mit denen Mitteleuropas.   175-  182. Felix Josef Widder, Karl Heinz Rechinger, Friedl Weber, Davor MILICIC: Recensiones.   183-  197</dc:description>
+   <dc:date>1959</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30083.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30083.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30083</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

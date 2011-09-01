@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Further notes on the Spiders of new Guinea II (Araneae, Tetragnathidae, Theridiidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Chrysanthus Fr.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION In the first part of this series (Chrysanthus, 1971), I dealt with 61 species of the family Argiopidae, originating from New Guinea, the Bismarck Archipelago, the Solomon Is., and islands of the Great Barrier Reef and in the Coral Sea. The greater part of the material belongs to the Rijksmuseum van Natuurlijke Historie, Leiden; also other museums allowed me to study spiders from this region, which form part of their collections. Some further collecting has since been done by the staff of the Department of Forests, Bulolo, Territory of Papua and New Guinea (abbreviation BUL), mostly by Dr. B. Gray, and by Dr. M. H. Robinson and mrs. B. Robinson of the Bishop Museum Field Station in Wau, near Bulolo. In this second part will be treated the Tetragnathidae and Theridiidae from the same region and belonging to the same Institutions. For abbreviations, lists of collections and collectors or expeditions, maps and alphabetic list of localities I may refer to my 1971 paper. TETRAGNATHIDAE TETRAGNATHINAE Tetragnatha Latreille, 1804 According to Roewer (1942: 978) 43 species of this genus have been described in the Australian region; seven of these are also known from the Indian region and one from Southern Europe and Africa. Gravely (1921: 424), who studied a large Tetragnatha collection from the Indian region, observed that it contained ten species, seven of which were new, notwithstanding the large number of species already described from that region by Thorell and others and: "____the wide distribution of some of them [both</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317610</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 50</dcterms:extent>
+   <dcterms:isPartOf>Further notes on the Spiders of new Guinea II (Araneae, Tetragnathidae, Theridiidae) (URN:ISSN:0024-1652) (Volume 140) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317610.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148896</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317610</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

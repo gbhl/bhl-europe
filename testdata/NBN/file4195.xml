@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 24. On the priority of the name Hypsipetes Vigors, 1831, and the division of the broad genus of that name</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Dickinson E.C.</dc:creator>
+   <dc:creator>Gregory S.M.S.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>bulbuls</dc:subject>
+   <dc:subject>Pycnonotidae</dc:subject>
+   <dc:subject>Hypsipetes</dc:subject>
+   <dc:subject>Ixos</dc:subject>
+   <dc:subject>Temminck</dc:subject>
+   <dc:subject>type species</dc:subject>
+   <dc:description>We conclude that the reasons hitherto given for non-recognition of the generic name Ixos in the family Pycnonotidae were erroneous. The broad genus employed by the proponents of that view is now considered too broad, and we concur with Sibley &amp; Monroe (1990) that several generic names must be used, including Ixos. No genus can be constructed except around the name of its type species, and no other species within such a genus may be the type species of a generic name that is older. The arrangement offered by Sibley &amp; Monroe (1990) was flawed because this rule was not observed. We therefore offer a complete revision. We believe it to be desirable to recognise several more genera than those recognised by Sibley &amp; Monroe (1990), at least until we have the molecular evidence available to make firmer judgements.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220204</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Corrigenda publishes in ZV 344 (2003), p. 117</dcterms:alternative>
+   <dcterms:issued>2002</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 75 - 91</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 24. On the priority of the name Hypsipetes Vigors, 1831, and the division of the broad genus of that name (Volume 340)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220204.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46722</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220204</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

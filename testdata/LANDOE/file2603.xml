@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 123 (1983)</dc:title>
+   <dc:creator>Acker-Sutter  Rotraut, Anonymus , Florey  Gerhard, Hoffmann  Robert, Juffinger  Roswitha, Koller  Fritz, Landgraf  August, Messner  Dieter, Narobe  Franz, Sonnleitner  Käthe, Sonntag  Hermann, Wanderwitz  Heinrich, Watteck  Nora, Wind  Peter, Zaisberger  Friederike, Ziller  Leopold</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Fritz Koller: Die Salzachschiffahrt bis zum 16. Jahrhundert.     1-  126. Franz Narobe: Das Bärenwunder auf der Radstädter Tauernhöhe.   127-  130. Roswitha Juffinger, Peter Wind: Die Waltherbibel aus Michaelbeuern. Eine Bestandsaufnahme.   131-  142. Heinrich Wanderwitz: Zur Technik der Reichenhaller Solegewinnung im 12. Jahrhundert.   143-  148. Käthe Sonnleitner: Die Stellung der Kinder von Unfreien im Mittelalter in Salzburg, Steiermark und Kärnten.   149-  166. Leopold Ziller: Ergänzungen zum Salzburger Mundartbuch.   167-  190. Nora Watteck: Die Pest in Salzburg.   191-  210. Hermann Sonntag: Zur Bedeutung der Hausapotheken und öffentlichen Apotheken für das Gesundheitswesen in Stadt und Land Salzburg zu Beginn des 19. Jahrhunderts (1800-1837).   211-  282. Gerhard Florey: Der "stumme Gefangene" auf Hohenwerfen.   283-  296. Robert Hoffmann: Kindheit und Jugend im ausgehenden 19. Jahrhundert. Die Erinnerungen einer Salzburger Gastwirtstochter.   297-  318. Dieter Messner: Hermann Bahr und Salzburg.   319-  330. August Landgraf: Ruine Finstergrün. Rekonstruktionsversuch des inneren Ausbaues.   331-  344. Rotraut Acker-Sutter: Das Salzburger Landesinstitut für Volkskunde.   345-  348. : Zum Salzburger Schrifttum.   349-  354. Friederike Zaisberger: Tätigkeitsbericht des Salzburger Landesarchivs 1982.   349-  354. Anonymus: Gesellschaftsnachrichten. I. Mitgliederbewegung.   405-  407. Anonymus: Gesellschaftsnachrichten. II. Totentafel.   407-  410. Anonymus: Gesellschaftsnachrichten. III. Vorträge.   411. Anonymus: Gesellschaftsnachrichten. IV. Exkursionen und Führungen.   411-  414. Anonymus: Gesellschaftsnachrichten. V. Vereinsleitung.   415</dc:description>
+   <dc:date>1983</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29138.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29138.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29138</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

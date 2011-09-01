@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Aanteekeningen over Indische ratten</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Raadt, de O.L.E.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Javaansche Boomrat. Kort geleden is door Sody 1) betoogd, dat de naam rufescens voor de Javaansche boomrat volkomen onbruikbaar zou zijn en daarom vervangen moet worden door dien van R. r. roquei Sody; als eenige reden hiervoor geeft hij op, dat zoowel de boomrat van het Maleische schiereiland als die van Java daarom geen rufescens kan zijn, omdat zij, in tegenstelling met de door Gray beschreven echte rufescens uit Britsch-Indie, nooit een grijsachtig-witte kleur aan de buikzijde zou hebben en bovendien steeds een scherpe afscheiding tusschen de kleuren der rug- en buikzijde zou vertoonen. De groote vraag is nu maar, welke waarde aan deze beide criteria moet worden toegekend, als men hierbij het volgende overweegt: le. Gray 2) geeft in zijn beschrijving van de rufescens uit BritschIndië voor de kleur der buikzijde aan: „geelachtig grijs". 2e. Volgens Hossack 3) bestaat er niet het minste verschil tusschen de Britsch-Indische rufescens en alexandrinus (huisrat). Voor de kleur aan de buikzijde van deze rat uit Calcutta geeft hij op: geelwit in ongeveer 500/0, in de overige gevallen grijs of oranje-grijs met allerlei combinatie's tusschen deze kleuren. Voorts vermeldt hij, dat ook volgens Thomas alle mogelijke kleurovergangen tusschen rufescens en alexandrinus voorkomen. 3e. Bonhote 4) noemt de kleur aan de buikzijde van zijn rufescens (boomrat uit Malaka) wit of geelwit. 4e. Sody geeft als kleur van de buikzijde bij de Javaansche boomrat (roquei) eveneens wit of roomwit aan, nooit grijsachtig-wit (biz. 120). nadat hij tevoren (blz. 97) evenwel nog gezegd heeft: „Nu is het waar,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318617</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1931</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 43 - 51</dcterms:extent>
+   <dcterms:isPartOf>Aanteekeningen over Indische ratten (URN:ISSN:0024-0672) (Volume 14) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318617.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149903</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318617</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

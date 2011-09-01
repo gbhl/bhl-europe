@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On some species of the genus Nephrops (Crustacea Decapoda)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The present note is based in the first place on the Nephropsid material collected by the Australian Fisheries Steamer "Endeavour" in the waters of South and East Australia, while also the West Indian Nephrops specimens in the collections of the U.S. National Museum, Washington, D.C., and the Rijksmuseum van Natuurlijke Historie, Leiden, are dealt with. I wish to express my sincere thanks to Dr. Fenner A. Chace, Jr., Curator of the Division of Marine Invertebrates of the U.S. National Museum for entrusting me with the study of the larger part of this material. I am furthermore much indebted to Dr. L. R. Tommasi, Instituto Oceanografico, São Paulo, Brazil, for specimens of Nephrops rubellus. The new species described in this paper, Nephrops boschmai, is named in honour of Dr. Hilbrand Boschma, to whom the present volume is dedicated at the occasion of his 70th birthday. It is a great pleasure to express in this way my profound gratitude to Dr. Boschma not only for guiding my first steps in the field of systematic zoology, but also for the innumerable times that he gave me his sound advice and invaluable help both in scientific and personal matters. Nephrops andamanicus Wood-Mason Nephrops andamanicus Wood-Mason, 1892, pl. 4. Endeavour Expedition Great Australian Bight, 126.5° E, S. by W. of Eucla, Western Australia; depth 130-190 fathoms; No. E. 6248-6252. — 4 ♂♂, 2 ♀♀ (1 ovigerous). The carapace length of the males varies between 78 and 85 mm, the females have the carapace length 75 and 85 mm; the largest female is ovigerous. The specimens agree in practically all respects with the published</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319376</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 71 - 78</dcterms:extent>
+   <dcterms:isPartOf>On some species of the genus Nephrops (Crustacea Decapoda) (URN:ISSN:0024-0672) (Volume 39) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319376.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150662</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319376</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

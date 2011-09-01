@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Tortricoidea from Nepal, 2</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Tortricoidea</dc:subject>
+   <dc:subject>Nepal</dc:subject>
+   <dc:subject>Sammlung des Bayerischen Staates, Munich</dc:subject>
+   <dc:description>Introduction ... 3 Cochylidae ... 5 Tortricidae, Olethreutinae, Laspeyresiini ... 10 Tortricinae, Tortricini ... 48 Polyorthini ... 67 Sparganothidini ... 69 Ceracini ... 70 Archipini ... 71 Cnephasiini ... 128 Chlidanotinae ... 132 Appendix 1. Matsumuraeses species from Nepal, treated elsewhere ... 135 Appendix 2. A recent publication ... 135 Appendix 3. Description of a new Leontochroma species from China ... 136 References ... 138 Index of genus and species names and of names of plants ... 143 INTRODUCTION Until quite recently, Nepal has been hardly accessible for biological exploration, the reason why its fauna of the Tortricidae or leaf rollers remained little known. Very few incidental records and descriptions are available from former years. However, since this situation has been completely changed: with the opening of this fascinating country to research, scientists and explorers from all over the world hastened to Nepal in a continuous stream of mountaineering, geological, biological and other expeditions. With regard to the study of the Nepalese Tortricoidea outstanding material of these insects has been and is still being brought together by a series of collecting expeditions by the Munich Museum, under the auspices of the 'Torschungsunternehmen Nepal Himalaya", in the years 1962, 1964, 1967 and 1974.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:323930</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 142</dcterms:extent>
+   <dcterms:isPartOf>Tortricoidea from Nepal, 2 (URN:ISSN:0024-1652) (Volume 144) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/323930.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/155293</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/323930</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

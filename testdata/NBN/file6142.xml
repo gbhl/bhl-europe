@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Eine neue bemerkenswerte Art der Gattung Scaphidium Olivier (Coleoptera, Scaphidiidae) von Neuguinea</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Löbl I.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Von Neuguinea sind bisher vier Arten der Gattung Scaphidium Olivier bekannt geworden. Eine weitere, neue Art habe ich während meines kurzen Aufenthaltes in Leiden unter den unbestimmten neuguinesischen Käfern des Rijksmuseum van Natuurlijke Historie gefunden. Diese steht völlig isoliert und gehört wegen ihren apomorphen Merkmale, besonders was die Struktur der Flügeldecken und die Punktierung des Halsschildes betrifft, zu den auffälligsten Arten der Gattung. Scaphidium rugatum spec. nov. (Fig. 1-2) Körper sehr stark gewölbt, einfarbig tief schwarz. Fühler schwarz mit leicht metallisch violett glänzender Keule. Beine ebenfalls schwarz, abgesehen vom dunkelbraunen Apikaiteil der letzten Tarsomere und von der Krallen. Kopf sehr irregulär, ausgesprochen fein bis überwiegend kräftig und variabel dicht punktiert. Clypeus immer sehr fein punktiert. Stirn an der schmalsten Stelle zwischen den Augen 0,30-0,31 mm breit, dort etwas breiter als die Hälfte des grössten Augendiameters. Fühler kurz, mit grosser Keule, relative Länge/Breite der Glieder wie: I 58-60/19 : II 35/17 : III 33-35/14 : IV 50-53/14-15 : V 44-45/15-16 : VI 35/18-22 : VII 37-39/36-38 : VIII 33/45-47 : IX 40/60 : X 35-39/63-70 : XI 58-60/63-70. Halsschild gewölbt, apikalwärts stark deklinierend und stark verjüngt, an der Basis 2,6 mal breiter als am Apex, Seitenrand vor der Mitte leicht konkav, von der Mitte zum Apex konvex. Seitenkielchen bei Dorsalansicht der ganzen Länge nach sichtbar. Vorderrand etwas gewellt, die Vorderwinkel liegen im Niveau der Vorderrandmitte. Vorderrandstreifen seicht, relativ fein punktiert. Diskale Punktierung sehr kräftig und sehr dicht, die Punktradien sind meist 0,03-0,04 mm gross und die einzelnen Punkte liegen knapp</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318647</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 317 - 320</dcterms:extent>
+   <dcterms:isPartOf>Eine neue bemerkenswerte Art der Gattung Scaphidium Olivier (Coleoptera, Scaphidiidae) von Neuguinea (URN:ISSN:0024-0672) (Volume 49) (Issue 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318647.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149933</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318647</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

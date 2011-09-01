@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 15_2 (1972)</dc:title>
+   <dc:creator>Frey  Hans, Haar  Helmut, Habersohn  Monika, Pauler  Karl, Schifter  Herbert, Schindler  Jürgen, Walter  Winfried H., Wendland  Viktor, Winkler  Hans, Wolff  Petra</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Viktor Wendland: Die Vögel des Rauristales (Hohe Tauern). Nachtrag.    41-   48. Viktor Wendland: Über die Vogelwelt zweier Südtiroler Alpentäler.    49-   54. Karl Pauler: Künstliche Ansiedlung einer Uferschwalbenkolonie.    55-   60. Monika Habersohn: Eine Schleiereulengewöllausbeute von Baumgarten an der March.    61-   63. Helmut Haar: Eine Ringelgans (Branta b. bernicla) in der Steiermark.    64. Winfried H. Walter, Hans Frey: Steinadler im Waldviertel.    64-   66. Petra Wolff: Außergewöhnliches Verhalten eines Mäusbussards.    66. Helmut Haar: Großtrappe (Otis tarda) im Raum Ilz.    66. Hans Winkler: Über einige Färbungsmerkmale beim Blutspecht.    66-   67. Jürgen Schindler: Neuntöterbrut in 1970 m Höhe.    67. Herbert Schifter: Jahrestagung 1973 in Wien.    68-   70</dc:description>
+   <dc:date>1972</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27483.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27483.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27483</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

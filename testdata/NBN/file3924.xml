@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Debating phylogenetic relationships of the scleractinian Psammocora: molecular and morphological evidences</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Benzoni F.</dc:creator>
+   <dc:creator>Stefani F.</dc:creator>
+   <dc:creator>Stolarski J.</dc:creator>
+   <dc:creator>Pichon M.</dc:creator>
+   <dc:creator>Mitta G.</dc:creator>
+   <dc:creator>Galli P.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Psammocora</dc:subject>
+   <dc:subject>Siderastreidae</dc:subject>
+   <dc:subject>Fungiidae</dc:subject>
+   <dc:subject>synapticulae</dc:subject>
+   <dc:subject>fulturae</dc:subject>
+   <dc:subject>ITS</dc:subject>
+   <dc:subject>statistical parsimony</dc:subject>
+   <dc:description>The phylogenetic relationships of the scleractinian genus Psammocora with the other genera traditionally included in the family Siderastreidae and some Fungiidae are assessed based on combined skeletal and molecular data. P. explanulata differs from the other examined congeneric species (P. contigua, P. digitata, P. nierstraszi, P. profundacella, P. superficialis, and P. stellata) in possessing interstomatous septa between adult corallites, costae, and in having continuous buttress-like structures joining septal faces (i.e., fulturae) which typically occur in fungiids. These characters are shared with Coscinaraea wellsi but not with the remainder of the examined siderastreids (the congeneric C. columna, and Anomastraea irregularis, Horastrea indica, Pseudosiderastrea tayamai, Siderastrea savignyana) whose septa are interconnected by typical synapticulae. Most of the examined species form septa with distinct transverse groups of centers of calcification, a biomineralization pattern typical of the Robusta clade. The observations on skeletal structures corroborate the results of the ITS2 and 5.8S molecular phylogeny. C. wellsi and P. explanulata are phylogenetically very close to each other and show closer genetic affinity with the examined Fungiidae (Halomitra pileus, Herpolitha limax, Fungia paumotensis, and Podabacia crustacea) than with the other species in the genera Psammocora and Coscinaraea, or with any other siderastreid. Our results show that neither Psammocora nor Coscinaraea are monophyletic genera. The high genetic distances between the species of Siderastreidae, especially between Pseudosiderastrea tayamai and Siderastrea savignyana on one side and the other genera on the other, suggest a deep divergence in the phylogenetic structure of the family.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217424</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 35 - 54</dcterms:extent>
+   <dcterms:isPartOf>Debating phylogenetic relationships of the scleractinian Psammocora: molecular and morphological evidences (URN:ISSN:13834517) (Volume 76, 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217424.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45046</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217424</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: Palaeontological collections at the Geological Museum, University of Copenhagen: from Cabinet of Curiosities to databases</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Harper D.A.T.</dc:creator>
+   <dc:subject>Paleontologie: algemeen</dc:subject>
+   <dc:description>Geological collections were established in the University of Copenhagen during the early 1700s with the presentation of fossil, mineral and rock collections by Count A.G. Moltke, mainly assembled by Ole Worm (1588-1654) in his Museum Wormianum. Currently the palaeontological collections in the Geological Museum, alone, contain over 1 million specimens, including 26,000 types. The focus of the collection remains on material from Denmark and Greenland. Highlights from Greenland include evidence of early life from the Archaean Isua Complex, the early Cambrian Sirius Passet fauna, Devonian amphibians, Triassic dinosaurs, mammals and pterosaurs, Jurassic and Cretaceous ammonites together with Jurassic and Cretaceous plants. The Danish collections are dominated by marine invertebrates from the Maastrichtian and Danian of Zealand; spectacular fishes and insects together with less common birds and whales occur in the Paleogene and Neogene rocks of Jutland. The diverse geology of the island of Bornholm has provided rich Early Palaeozoic invertebrate faunas together with abundant brachiopods and molluscs from the Jurassic and Cretaceous together with the first evidence of a dinosaur in the Danish region. Despite this wealth of material the museum faces many challenges associated with the more efficient storage and care of material, computer registration and the encouragement of specimen-based research programmes through both domestic and international networks.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317353</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 118 - 126</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: Palaeontological collections at the Geological Museum, University of Copenhagen: from Cabinet of Curiosities to databases (URN:ISSN:0922-4564) (Volume 4) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317353.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148639</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317353</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

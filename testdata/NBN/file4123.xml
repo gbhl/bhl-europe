@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Butterflies for the new millennium: mapping butterfly distributions in Britain (Lepidoptera)</dc:title>
+   <dc:title>Changes in ranges: invertebrates on the move. Proceedings of the 13th International Colloquium of the European Invertebrate Survey, Leiden, 2-5 September 2001</dc:title>
+   <dc:creator>Fox R.</dc:creator>
+   <dc:creator>Warren M.</dc:creator>
+   <dc:creator>Harding P.</dc:creator>
+   <dc:creator>Asher J.</dc:creator>
+   <dc:creator>Jeffcoate G.</dc:creator>
+   <dc:creator>Jeffcoate S.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Butterfly recording</dc:subject>
+   <dc:subject>butterfly distribution</dc:subject>
+   <dc:subject>habitat degredation</dc:subject>
+   <dc:subject>Climate change</dc:subject>
+   <dc:subject>Biodiversity</dc:subject>
+   <dc:subject>conservation</dc:subject>
+   <dc:subject>indicator species</dc:subject>
+   <dc:description>Butterflies for the new millennium: mapping butterfly distributions in Britain (Lepidoptera) Butterflies for the New Millennium is the largest and most comprehensive survey of butterfly distribution ever undertaken in Britain and Ireland. The number of contributing recorders, the coverage achieved and the number and quality of distribution records generated far exceed those available for any other invertebrate taxon. The data thus provide a unique insight into the effects of habitat degradation and climate change on a high profile insect group. The results of the first five years of the survey (1995-1999) have been analysed to assess broad-scale distribution changes over the past two decades and the past two centuries. In both time periods, the British distributions of most butterfly species have shown substantial change. The trends affecting habitat specialist and habitat generalist (wider countryside) species differ significantly. The distributions of half of the habitat generalists have increased (consistent with an expected positive response to observed climate change), whereas most habitat specialists declined (consistent with habitat degradation). The opposing forces of climate change and habitat degradation are thought to be the main driving forces. The decline of specialist species indicates a reduction in overall biodiversity, whilst mobile and widespread generalists increasingly dominate biological communities. These patterns of change are thought to be representative of many other invertebrate groups in Britain and demonstrate the use of butterflies as indicators of environmental change.</dc:description>
+   <dc:publisher>European Invertebrate Survey - the Netherlands</dc:publisher>
+   <dc:contributor>Reemer M. (Editor)</dc:contributor>
+   <dc:contributor>Helsdingen P.J. (Editor)</dc:contributor>
+   <dc:contributor>Kleukers R.M.J.C. (Editor)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219857</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 79 - 86</dcterms:extent>
+   <dcterms:isPartOf>Butterflies for the new millennium: mapping butterfly distributions in Britain (Lepidoptera)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219857.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46397</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219857</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Anthozoen des Leidener Museums</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Pax F.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Während eines sechswöchentlichen Erholungsaufenthaltes in Holland im Herbst 1920 hatte ich Gelegenheit, die Anthozoensammlung in 's Rijks Museum van Natuurlijke Historie in Leiden zu besichtigen. Den grössten Teil der Sammlung habe ich in Leiden selbst bestimmt; eine Anzahl Stücke, deren anatomische Untersuchung mir wünschenswert erschien und über die ich im Folgenden berichte, sandte Herr Professor van Oort auf meinen Wunsch nach Breslau. Es ist mir ein aufrichtiges Bedürfnis, Herrn Professor van Oort für sein liebenswürdiges Entgegenkommen auch an dieser Stelle meinen herzlichsten Dank auszusprechen. Ordnung: ZOANTHARIA. Palythoa brochi n. sp. Fundort: Guineaküste (ohne Angabe des Sammlers). 1 Kolonie. Im Leidener Museum fand ich eine aus dem Golf von Guinea stammende Palythoa-Art, die die offenbar auf falscher Bestimmung beruhende Bezeichnung ,,Mammillifera auriculata" trug. Tatsächlich zeigte die anatomische Untersuchung, dass es sich weder um die ursprünglich von Lesueur (1817) als Mammillifera auricula beschriebene, später von Duchassaing (1850) als Mammillifera auriculata bezeichnete westindische Art, noch um eine der von der Westküste Afrikas bekannten Spezies handeln kann. Von der westafrikanischen Küste sind folgende Palythoa-Arten beschrieben worden: P. canariensis Hadd. &amp; Duerd. (Kanarische Inseln), P. senegambiensis Carter (Senegambien), P. braunsi Pax (Goldküste), P. rubra Koch (Golf von Guinea), P. guinensis Koch (Golf von Guinea) P. canalifera Koch (Golf von Guinea) und P. eremita Pax (Angola). Von diesen gehören senegambiensis, braunsi, rubra, guinensis und canalifera zur Artengruppe</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318687</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1924</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 1 - 17</dcterms:extent>
+   <dcterms:isPartOf>Anthozoen des Leidener Museums (URN:ISSN:0024-0672) (Volume 8) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318687.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149973</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318687</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

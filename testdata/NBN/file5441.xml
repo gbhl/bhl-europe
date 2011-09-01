@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the genus Enoplometopus, with descriptions of a new subgenus and two new species (Crustacea Decapoda, Axiidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The first species of the genus Enoplometopus to become known to science is E. occidentalis, described in 1840 by J. W. Randall under the name Nephrops occidentalis and said to be "brought from the west coast of North America by Mr. Nuttall" (Randall, 1840: 139). The type locality indication is obvious erroneous as the species does not seem to occur in the eastern Pacific and is quite common in the Hawaiian Islands; as Thomas Nuttall visited the Hawaiian Islands from January to March 1835 and between September 1835 and March 1836, it is most likely that his Enoplometopus material was obtained then. We propose therefore the corrected type locality indication 4'Hawaiian Islands". In 1862 A. Milne Edwards described a second species of the genus, E. pictus, and proposed the new genus Enoplometopus for it. Several later authors synonymized Randall's and A. Milne Edwards' species, but Bouvier (1915: 5-9) showed them to be two distinct species. The type locality of E. pictus is Reunion Island, and there are no reliable records of the species from other localities. After 1862 six more new species of Enoplometopus were described: E. antillensis Lütken, 1865, from the West Indies; E. dentatus Miers, 1880, from St. Helena (a junior synonym of E. antillensis, see Gordon, 1968: 80-90); E. longirostris De Man, 1888, from Amboina (a postlarval stage, possibly of E. occidentalis); E. holthuisi Gordon, 1968, from Banda, Moluccas, Indonesia; E. callistus Intès &amp; Le Loeuff, 1970, off Takoradi, Ghana, 5°30'N 2°W; E. biafri Burukovsky, 1972, off the Niger delta, Nigeria, 4°02,-4°02'9,,N 6°30'-6°35'5 "E (a junior synonym of E. callistus). Of the 5 species recognized at present as valid, two are Atlantic (E. antillensis and E. callistus) and 3 Indo-West Pacific (E. occidentalis, E. pictus, and E. holthuisi). The genus can be sharply divided into two groups, which in my opinion</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317946</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 281 - 298</dcterms:extent>
+   <dcterms:isPartOf>Notes on the genus Enoplometopus, with descriptions of a new subgenus and two new species (Crustacea Decapoda, Axiidae) (URN:ISSN:0024-0672) (Volume 56) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317946.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149232</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317946</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

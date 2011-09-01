@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 1_1 (1958)</dc:title>
+   <dc:creator>Anonymus , Bezzel  Einhard, Firbas  Wilfried, Peters  Hanns, Remold  Heinz, Rokitansky  Gerth Freiherr von, Steiner  Hans Martin, Wettstein-Westersheimb  Otto Ritter von</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerth Freiherr von Rokitansky: Zum Geleit.     1-    2. Hans Martin Steiner: Zum Zwischenzug des Silberreihers (Egretta alba).     3-    5. Heinz Remold, Einhard Bezzel: Ornithologische Beobachtungen im Gebiet der Hohen Tauern.     6-   10. Otto Ritter von Wettstein-Westersheimb: Uhu als Dauersiedler.    11. Gerth Freiherr von Rokitansky: Ein Finkenbastard der freien Wildbahn.    11-   12. Hanns Peters: Singvogelbrutverluste durch Schnecken.    12-   13. Wilfried Firbas: Eisente (Clangula hyemalis) am Staninger-Stausee.    13. Anonymus: 5. Österreichisches Ornithologentreffen. Linz, 7. und 8. Juni 1958.    14-   16</dc:description>
+   <dc:date>1958</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27453.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27453.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27453</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

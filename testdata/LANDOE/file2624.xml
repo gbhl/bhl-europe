@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 146 (2006)</dc:title>
+   <dc:creator>Anonymus , Arming  Claudia, Bayr  Hans, Dohle  Oskar, Dopsch  Heinz, Eichberger  Christian, Hausner  Renate, Herzog  Horst, Koller  Fritz, Kwisda  Rudolf, Loimer  Hermann, Machilek  Franz, Medicus  Reinhard, Pallauf  Sonja, Pflugbeil M.S.  Ernst, Strobl  Walter, Weber  Otmar, Weinkamer  Kurt, Weiss  Andrea</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Abkürzungsverzeichnis     7-    8. Heinz Dopsch, Franz Machilek: Erzbischof Konrad I. von Salzburg und seine Familie: Die Grafen von Abenberg-Frensdorf in Franken.     9-   50. Hans Bayr: Der Salzburger Bischofshof    51-  138. Otmar Weber: Pergamentfragmente des 12. Jahrhunderts mit Texten des Josephus Flavius.   139-  157. Fritz Koller: Zwei Dokumente zu den Salzburger Archivalien in Wien.   159-  166. Sonja Pallauf: Wald und Forst im Erzstift Salzburg   167-  175. Ernst Pflugbeil M.S., Rudolf Kwisda: Beitrag zur Geschichte der Forstverwaltungsgebäude und der Forstorganisation der Österreichischen Bundesforste im Land Salzburg.   177-  208. Kurt Weinkamer: Strukturwandlungen im Salzburger Lebensmittelhandel in den letzten 50 Jahren.   209-  284. Renate Hausner: "Totentanz und Jedermann": Das Sterben in der Kunst in Stadt und Land Salzburg   285-  340. Hermann Loimer: Erinnerungen an Ferdinand Sauter.   341-  388. Andrea Weiss: Das Bachhäusl aus Thumersbach/Zell am See im Salzburger Freilichtmuseum.   389-  404. Reinhard Medicus: Die Hellbrunner Allee und ihre Umgebung   405-  426. Claudia Arming, Christian Eichberger, Walter Strobl: Floristische Beiträge aus Salzburg, IX.   427-  442. Oskar Dohle: Tätigkeitsbericht des Salzburger Landesarchivs für 2005.   443-  470. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. I. Mitgliederbewegung.   471-  472. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. II. Totentafel.   472-  473. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. III. Vorträge.   474. Horst Herzog: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. IV. Exkursionen und Führungen.   474-  475. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. V. Vereinsleitung.   476. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. VI. Anschriften der Gesellschaft.   477. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2004/2005. VII. Vorschau auf die Vorträge im Vereinsjahr 2006/2007.   478. : Über die Einreichung von Beiträgen für die MGSL.   479-  480</dc:description>
+   <dc:date>2006</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29162.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29162.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29162</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

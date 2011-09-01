@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Micryphantidae and Linyphiidae (Araneida) of the Netherlands, with some notes on the genus Lepthyphantes Menge, 1866</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Helsdingen, van P.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the present paper a list is given of the species of two families of spiders, the Micryphantidae and the Linyphiidae, as far as they are known from our country. The list is the result of a revision of the existing records, which date back to 1858, when G. A. Six published a list of spiders collected by him in the province of Utrecht, which was followed in 1863 by a supplementary list. Becker (1879a) republished the records of Six, and moreover mentioned the results of his own collecting in our country (1879b, c). I do not know whether the specimens concerned have been lost, or that the collectors did not consider it worth while to preserve the material on which their records are based. Because I have not seen their specimens, I have entered their records with a question-mark. It is possible that Six has given part of his material to A. W. M. van Hasselt, because the type-specimens of Linyphia henricae Six are still in the Collection Van Hasselt. Van Hasselt himself has published a catalogue of spiders in 1885, with supplementary lists in 1886, 1890 and 1898. He has preserved a few specimens only of each species, but together they constitute the first collection of spiders from our country still in existence, at present forming part of the collections of the Rijksmuseum van Natuurlijke Historie at Leiden. In an earlier paper (van Helsdingen, 1961) I published the results of a revision of the Micryphantidae and Linyphiidae of this collection. In the present paper van Hasselt's records are not repeated, but reference is made to my revision. I have attempted to trace the material of the more recent publications, viz., those by Chrysanthus (1951a, b, 1953, 1954, 1955a' b, 1957a, b, 1958 1961), Chrysanthus, van Damme and Naaktgeboren (1959a, b), van der Drift</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317872</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 38</dcterms:extent>
+   <dcterms:isPartOf>The Micryphantidae and Linyphiidae (Araneida) of the Netherlands, with some notes on the genus Lepthyphantes Menge, 1866 (URN:ISSN:0024-1652) (Volume 62) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317872.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149158</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317872</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

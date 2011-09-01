@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiidae-Typen in der Sammlung J. C. Eisner</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Neue Namen. — Parnassius apollo nivatus Fruhstorfer f. subtusrubrolacrimans (no. 476), P. a. geminus Stichel f. posteriormarginalis (no. 491), Koramius cephalus ares Bryk &amp; Eisner f. cellopura (no. 570), Tadumia t. tenedius Eversmann f. tripicta (no. 648) und f. biexcelsior (no. 649), und Tadumia (Eukoramius) imperator uxoria nom. nov. für Parnassius imperator tyrannus O. Bang-Haas (no. 694). VORWORT Schon im Alter von 8 Jahren begann ich mit dem Sammeln von Schmetterlingen. Die Parnassier, die in meiner oberschlesischen Heimat nicht vorkommen, waren mir Jahre lang nur aus Abbildungen bekannt. Erst als Neunzehnjähriger erbeutete ich die ersten Parnassius apollo und P. phoebus im Engadin, die, ohne besonderes Interesse für diese Arten, meiner Sammlung einverleibt wurden. Erst nach dem ersten Weltkriege weckte eine Auswahlsendung, in der sich vor allem auch asiatische Parnassier befanden, mein Interesse für deren grosse Variabilität; doch arbeitete ich auch noch weiter am Ausbau anderer Familien meiner Sammlung. Die grosse Veränderung trat erst ein, als ich mit meinem Freund Felix Bryk, dem Altmeister der Parnassiologie, in Kontakt kam, seine typenreiche Sammlung übernahm, und in gemeinsamer Arbeit mit ihm in „Parnassiana" die „Kritische Revision der Gattung Parnassius" begann. Die Jahre 1930 bis 1938 waren dem intensiven Studium aller Parnassiiden, deren wir habhaft werden konnten, gewidmet. Der zweite Weltkrieg unterbrach Bryk's und meine Zusammenarbeit, die nach dem Kriege nur sporadisch durch gelegentlichen Meinungsaustausch fortgesetzt werden konnte; Bryk lebte in Stockholm, ich in Den Haag. Meine Sammlung fand ich am Ende des zweiten Weltkrieges wohlbehalten im Rijksmuseum van Natuurlijke Historie, Leiden, vor. Der ein-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317792</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 81</dcterms:extent>
+   <dcterms:isPartOf>Parnassiidae-Typen in der Sammlung J. C. Eisner (URN:ISSN:0024-1652) (Volume 81) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317792.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149078</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317792</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Report on a collection of Loricata from Manora Island, Karachi, with descriptions of three new species and a new variety</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kaas P.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>In June 1951 Dr. A. R. Ranjha of the Zoological Survey Department, Government of Pakistan, at Karachi, sent me 26 samples of Loricata, together 46 specimens, preserved in 75% rectified spirit, all, except one, from the rockey beach of Manora Island, about two miles West off the Karachi coast, where they had been collected from the tidal area at low tide. The samples were taken at different dates and by several collectors or collecting parties. There are four species and one variety among the material, of which three species and the variety are supposed to be new. Chiton iatricus Winckworth, 1930 Winckworth, R., 1930. Description of a new Chiton from Karachi. Proc. Malac. Soc. London, vol. 19, pp. 78-80, pl. 8b. Material examined: 200 yards W. of Mandir, Manora Island, rocky beach, 26-IV-1950, coll. Sufi, Taher &amp; Qadri, 11 specimens. Manora Creek, W. of Mandir, rocky beach, 11-V-1950, coll. Taher &amp; Sufi, 5 specimens. Manora Creek, Karachi, 16-V-1951, coll. Departmental Survey Party, 12 specimen Λ. Manora Island, rocky beach, 6-X-1950, coll. S. Taher, 5 specimens. Manora Creek, 22-IX-1949, coll. Dr. A. R. Ranjha, 6 specimens. Winckworth gave an excellent description of this species. His specimens were collected near the end of the East Pier at Karachi. The type measures 54 X 36 mm, the largest specimen 66 X 41 mm. The 39 specimens from Manora Island are of a smaller size, the largest measuring 43 X 31, the smallest 8X6 mm. A few additional characters</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319177</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 9</dcterms:extent>
+   <dcterms:isPartOf>Report on a collection of Loricata from Manora Island, Karachi, with descriptions of three new species and a new variety (URN:ISSN:0024-0672) (Volume 33) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319177.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150463</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319177</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

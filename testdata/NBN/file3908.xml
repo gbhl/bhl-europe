@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De uitbreiding van het zuidelijk spitskopje Conocephalus discolor in Zuid-Limburg (Orthoptera: Tettigoniidae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Willemse F.M.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Orthoptera</dc:subject>
+   <dc:subject>Conocephalus discolor</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Uitbreiding</dc:subject>
+   <dc:description>The expansion of Conocephalus discolor in the southern part of the province of Limburg (Orthoptera: Tettigoniidae) The range of Conocephalus discolor (Thunberg, 1815) in northwestern Europe and Britain has expanded substantially during the last decades. The species is known from the Netherlands since 1990 but was not found in the southern part of the province of Limburg until 1997. In 1997, triggered by an accidental find of a population in his neighbourhood, the author became highly interested and started investigating the distribution of C. discolor in these surroundings. The localities both where the species has been observed and those where it not has been found, are mapped. It became clear that the species is common between Kerkrade and Geleen. This area, covering a former coalmining-district, is quite urbanised and except for a few more natural sites not extensively examined before. The habitat ranges from dry to slightly wet, referring consistently to rough grassland with or without coarse herbaceous vegetation. These habitats are quite often presented by urban wasteland, roadside verges and railway lines, neglected fields and meadows, river banks, pools and pits. The species was not found in dry heathland. The number of observed individuals per site ranged from a single specimen to florishing populations. At a few sites a single or a few individuals were found in a habitat patch as small as 100 m2 or even less. The species was found together with a number of other Orthoptera, sometimes only with the most common ones as Chorthippus parallelus and C. biguttulus. In 20 of the 54 localities visited by the author, C. discolor was found together with P. falcata, which is also expanding its range and in seven localities together with the related C. dorsalis. The number of localities, density and size of some populations do suggest that C. discolor is already present since a number of years in this part of Limburg. However, as the localities with C. discolor become scarcer towards the western part of the study area, it is expected that the expansion will continue in the coming years. To follow this process further regular evaluations are needed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217233</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 17 - 31</dcterms:extent>
+   <dcterms:isPartOf>De uitbreiding van het zuidelijk spitskopje Conocephalus discolor in Zuid-Limburg (Orthoptera: Tettigoniidae) (URN:ISSN:01692453) (Volume 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217233.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44936</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217233</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

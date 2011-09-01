@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A note on the genus Liocranium Ogilby (Pisces, Scorpaenidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>The genus Liocranium was established by Ogilby (1903) to contain a new species of scorpion-fish from the east coast of Queensland: L. praepositum. The genus remained monotypic until McCulloch (1921) placed Paracentropogan scorpio Ogilby in it, a species also described from the Queensland coast. Whitley (1933) did not agree, and transferred P. scorpio to a separate new genus Vadesuma. In the meantime Weber (1913) described as Paracentropogon pleurostigma and Paracentropogon cynocephalus two scorpion-fishes from the East Indies. These two species, however, were not well placed in Paracentropogon, and therefore De Beaufort (1949) created the genus Sibogapistus for them. Apart from McCulloch's (1921) remark that: "Paracentropogon cynocephalus Weber is perhaps only the young of L. scorpio", a. remark that has apparently been overlooked by later authors, nobody seems to have made an attempt to identify the species described by Weber with Australian species, and in the latest literature (De Beaufort, 1962) they are kept in Sibogapistus, without mention of the genus Liocranium. Liocranium praepositum had, since its description, also been recorded from the Northern Territory and Western Australia (Whitley, 1947, 1948, 1954). Recently I noted that specimens from Western Australia differ from Queensland material in markings and perhaps also in having a slightly blunter anterior profile; this difference was verified by direct comparison with the type (Mees, 1964). Originally I intended to describe the specimens from Western Australia as a new race, but when De Beaufort's (1962) work became available I was</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318110</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 5 - 7</dcterms:extent>
+   <dcterms:isPartOf>A note on the genus Liocranium Ogilby (Pisces, Scorpaenidae) (URN:ISSN:0024-0672) (Volume 40) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318110.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149396</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318110</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

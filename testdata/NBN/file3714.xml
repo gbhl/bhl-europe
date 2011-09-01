@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Mesozoic and Cenozoic holotypes in the collection of plant fossils in the Nationaal Natuurhistorisch Museum, Leiden</dc:title>
+   <dc:title>NNM Technical Bulletin</dc:title>
+   <dc:creator>Konijnenburg-van Cittert, van J.H.A.</dc:creator>
+   <dc:creator>Waveren, van I.M.</dc:creator>
+   <dc:creator>Jonckers J.B.</dc:creator>
+   <dc:subject>Paleobotanie, palynologie</dc:subject>
+   <dc:subject>Plants</dc:subject>
+   <dc:subject>fossils</dc:subject>
+   <dc:subject>holotypes</dc:subject>
+   <dc:subject>Mesozoic</dc:subject>
+   <dc:subject>Cenozoic</dc:subject>
+   <dc:subject>Nationaal Natuurhistorisch Museum</dc:subject>
+   <dc:description>This is an inventory of the Mesozoic and Cenozoic type material in the original palaeobotanical collections of the Nationaal Natuurhistorisch Museum, Leiden, The Netherlands. In total 60 holotypes are documented and one is noted as missing from the collections. One new combination is made (Cinnamomum javanicum (Goeppert) nov. comb.) and several species are considered to be conspecific.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214530</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 27</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Mesozoic and Cenozoic holotypes in the collection of plant fossils in the Nationaal Natuurhistorisch Museum, Leiden (URN:ISSN:13870211) (Volume 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214530.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43244</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214530</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

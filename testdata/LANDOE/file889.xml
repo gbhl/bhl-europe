@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift des Oesterreichischen Entomologischen-Vereins, Wien. Fortgesetzt: Zeitschrift des Wiener Entomologen-Vereins. 24 (1939)</dc:title>
+   <dc:creator>An?ev  M., Anonymus , Gerasimov  A.M., Gornick  Friedrich, Gradl  Franz, Hartig  Friedrich (Fred), Klimesch  Josef, Rebel  Hans, Reisser  Hans, Schawerda  Karl, Scholz  Rudolf, Skala  Hugo Otto Victor</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Klimesch: Coleophora asterifoliella nov.spec. (Lep., Coleophorid.).     2-    6. Hans Rebel: Griechische Lepidopteren VI.     7-   10. Friedrich (Fred) Hartig: Paradaria Htg. praeocc. = Hypodaria Htg.    10-   11. Franz Gradl: Lythria plumularia Frr. in Vorarlberg. II. Teil. (Tafel I., II.)    11-   16. Franz Gradl: Lythria plumularia Frr. in Vorarlberg. II. Teil. Schluß.    17-   24. Karl Schawerda: Legende zu zwei Coliastafeln. (Tafel III., IV.)    24-   26. Hans Reisser: Beiträge zur Kenntnis der Sterrhinae (Lep., Geom.) I.    26-   27. Hugo Otto Victor Skala: Miner in deutschen Landen. (Tafel V-X.)    27-   30. Friedrich Gornick: Erstmalige Eizucht von Pieris manni Mayer aus dem Gebiet der Hohen Wand, N.-D.    33-   34. Rudolf Scholz: Spätherbstliches Falterleben in den Lärchenwäldern des Wipptales (Tirol).    34-   36. A.M. Gerasimov: Die Chaetotaxie des Analsegments der Raupen.    36-   39. Josef Klimesch: Die Raupe der Coleophora rectilineella F.R. (Lep., Coleophoridae).    39-   43. Hugo Otto Victor Skala: Miner in deutschen Landen.    43-   45. M. An?ev: Über Bernsteineinschlüsse und ihre wissenschaftliche Bedeutung.    45-   47. Anonymus: Berichtigung.    48. Friedrich Gornick: Eine neue Pieris bryoniae-Modifikation, mod nov. ? schleppniki.    49-   50. A.M. Gerasimov: Die Chaetotaxie des Analsegments der Raupen.    50-   59. M. An?ev: Über Bernsteineinschlüsse und ihre wissenschaftliche Bedeutung. Fortsetzung.    60-   61. Hugo Otto Victor Skala: Miner in deutschen Landen.    62-   64. Anonymus: Berichtigung.    65. Josef Klimesch: Zur Kenntnis der Biologie der Scirtopoda myosotivora M.-R. (Lep., Elachistidae).    65-   69</dc:description>
+   <dc:date>1939</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26568.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26568.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26568</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

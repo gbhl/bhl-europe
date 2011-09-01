@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The recurrence of Vogelgnathus campbelli-dominated conodont faunas in the Viséan and early Namurian of the Cantabrian Mts (Spain): a reflection of sea-level fluctuations?</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Boogaard, van den M.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>The conodont faunas from the Viséan and lower Namurian limestone succession in the Cantabrian Mts are mainly characterised by abundant Gnathodus spp. and minor amounts of Lochriea spp. However, Gnathodus and Lochriea are four times largely or almost completely replaced by Vogelgnathus campbelli, every time during a relatively short interval. Apart from being present in moderate quantities in basal Viséan faunas, V. campbelli is lacking in most of the Gnathodus-dominaled faunas from the Cantabrian Mts. These invasions by V. campbelli are supposed to have occurred during a rise of sea level enabling this - presumably more offshore - species to enter the region while at the same time the habitat of Gnathodus c.s. was partly or almost completely drowned. These sea level rises are thought to represent the periods of maximum flooding of the transgressive-regressive cycles envisaged by Ross &amp; Ross (1988). In this particular case, the ones during the late Asbian, the early and the late Brigantian and the early Namurian, and may be an earlier one during the late Chadian. Reference is made to comparable, possibly contemporaneous, invasions by V. campbelli in the Pyrenees and in Japan.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317455</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 33</dcterms:extent>
+   <dcterms:isPartOf>The recurrence of Vogelgnathus campbelli-dominated conodont faunas in the Viséan and early Namurian of the Cantabrian Mts (Spain): a reflection of sea-level fluctuations? (URN:ISSN:0357-7587) (Volume 99)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317455.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148741</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317455</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

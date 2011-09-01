@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vorarbeiten zu einer Lebermoosflora Fenno-Skandias IV-VI</dc:title>
+   <dc:title>Algen aus Kuusamo</dc:title>
+   <dc:title>Algenfunde 1935 von der Insel Ösel und von einigen Nachbarinseln</dc:title>
+   <dc:title>Anthropocore Pflanzen als edaphische Indikatoren</dc:title>
+   <dc:title>Die  arktischen Arenaria-Arten unseres naturwissenschaftlichen Gebietes</dc:title>
+   <dc:title>Bericht über die Tagung des Verbandes fenno-baltischer Pflanzengeographen in Kuressaare (Arensburg) im Juni 1935</dc:title>
+   <dc:title>Bisamråtta i Korpo</dc:title>
+   <dc:title>Botaniskt från SW-Finland 1935</dc:title>
+   <dc:title>Calosoma denticollis och Orneodes hexadactyla, nya för Finland</dc:title>
+   <dc:title>Carex paniculata L. Suomessa</dc:title>
+   <dc:title>Dvärgsparven (Emberiza pusilla Pall.) häckade i Finland</dc:title>
+   <dc:title>Einige botanische Beobachtungen in Nord-Estland im Sommer 1935</dc:title>
+   <dc:title>Einige Flechtenfunde aus Kuusamo (Nord-Finnland)</dc:title>
+   <dc:title>Elymus arenarius-lokalerna i det inre av Lappland</dc:title>
+   <dc:title>En Artenverziechnis von der Insel Odinsholm (Osamusaar) in NW-Estland</dc:title>
+   <dc:title>Ergränzende Pflanzenfunde aus der Gegend von Baltischport (Paldiski) in Estland</dc:title>
+   <dc:title>Finlands adventiva Bromusarter</dc:title>
+   <dc:title>Fynd av Alisma Wahlenbergii och Anemone triofolia</dc:title>
+   <dc:title>Fynd av Carex praecox i Ekenäs</dc:title>
+   <dc:title>Fynd av sällsynta svampar</dc:title>
+   <dc:title>Fynd av tångspigg (Spinchia vulgaris Flem.)</dc:title>
+   <dc:title>Kasvistollisia havaintoja Pohjois-Suomesta</dc:title>
+   <dc:title>Kasvistollisia tietoja Ilmajoelta ja Kurikasta</dc:title>
+   <dc:title>Ein  kleiner Beitrag zur Kenntnis der Flechten Finnlands</dc:title>
+   <dc:title>Lactuca tatarica från Terijoki</dc:title>
+   <dc:title>Moosfunde 1935 von der Insel Ösel und einigen Nachbarinseln</dc:title>
+   <dc:title>On some tetraploid spermatocytes in Chrysochraon dispar (Orth.)</dc:title>
+   <dc:title>Rubus arcticus L. rikligt fruktificerande i Ab Pargas Lillmälö sommaren 1935</dc:title>
+   <dc:title>Societas pro Fauna et Flora Fennica 15.5.1935 - 15.5.1936</dc:title>
+   <dc:title>Tvenne för landet nya fanerogamer</dc:title>
+   <dc:title>Tvenne för landet nya Geaster-arter</dc:title>
+   <dc:title>Tytö alba guttata ja Lagenorhynchus albirostris Suomelle uusia selkärankaisia</dc:title>
+   <dc:title>Über einige Verplanzungsversuche einheimischer Gewächse</dc:title>
+   <dc:title>Die  Vogelberingung in Finnland im Jahre 1934</dc:title>
+   <dc:contributor>Buch, Hans.</dc:contributor>
+   <dc:contributor>Cedercreutz, Carl.</dc:contributor>
+   <dc:contributor>Häyren, Ernst.</dc:contributor>
+   <dc:contributor>Eklund, Ole.</dc:contributor>
+   <dc:contributor>Hiitonen, Ilmari.</dc:contributor>
+   <dc:contributor>Storå, Ragnar.</dc:contributor>
+   <dc:contributor>Kotilainen, Mauno J.</dc:contributor>
+   <dc:contributor>Palmgren, Pontus.</dc:contributor>
+   <dc:contributor>Ahlner, Sten.</dc:contributor>
+   <dc:contributor>Hustich, Ilmari.</dc:contributor>
+   <dc:contributor>Lindberg, Harald.</dc:contributor>
+   <dc:contributor>Fortelius, Olof.</dc:contributor>
+   <dc:contributor>Malmström, Nicken.</dc:contributor>
+   <dc:contributor>Nordman, A.</dc:contributor>
+   <dc:contributor>Auer, A. V.</dc:contributor>
+   <dc:contributor>Sarvela, Jaakko.</dc:contributor>
+   <dc:contributor>Erichsen C. F. E.</dc:contributor>
+   <dc:contributor>Klingstedt, Holger.</dc:contributor>
+   <dc:contributor>Palmgren, Alvar.</dc:contributor>
+   <dc:contributor>Välikangas, Ilmari.</dc:contributor>
+   <dc:contributor>Hytönen, Olavi.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>0770ed5e-692b-46f1-9426-8af307faaacd</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:language>swe</dc:language>
+   <dc:language>fin</dc:language>
+   <dc:language>eng</dc:language>
+   <dc:relation>Memoranda Societatis pro fauna et flora Fennica. - -- 0373-6873. - -- 03736873</dc:relation>
+   <dcterms:issued>1935</dcterms:issued>
+   <dcterms:issued>1936</dcterms:issued>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_12_1935-1936/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_12_1935-1936</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/0770ED5E692B46F194268AF307FAAACD</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

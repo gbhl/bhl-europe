@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the West Palaearctic species of the genus Agathis Latreille (Hymenoptera: Braconidae: Agathidinae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Simbolotti G.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Agathidinae; Agathis; Bassus; Europe; North Africa; West Palaearctic; biology; distribution; key.</dc:subject>
+   <dc:description>The West Palaearctic species of the genus Agathis Latreille, 1804 (Braconidae: Agathidinae) are revised and keyed. Forty-six species of Agathis are treated as valid, of which 29 occur in Europe; three species of the former Agathis mediator group (Bassus brevicaudus (Reinhard, 1867) comb. nov., B. mediator (Nees, 1814), and B. pumilus (Ratzeburg, 1844)) are transferred to the genus Bassus Nees, 1804. One new species (A. hemirufa) from Spain is described. The following species are synonymised: Agathis longicauda Kokujev, 1895, A. albanica Fischer, 1957, A. syriaca Fischer, 1957, A. caucasica Tobias, 1963, and A. taiwanensis Chou &amp; Sharkey, 1989, with A. anglica Marshall, 1885; A. propinqua Kokujev, 1895, A. jakowlewi Kokujev, 1895, and A. anchisiades Nixon, 1986, with A. assimilis Kokujev, 1895; A. achterbergi Nixon, 1986, with A. breviseta Nees, 1814; A. schmiedeknechti Kokujev, 1895, A. meridionellae Fischer, 1957, A. albicostellae Fischer, 1966, and A. artemisiana Fischer, 1966, with A. fuscipennis (Zetterstedt, 1838); A. zaykovi Nixon, 1986, with A. montana Shestakov, 1932; A. kasachstanica Tobias, 1963, and A. nixoni Belokobylskij &amp; Jervis, 1998, with A. nigra Nees, 1814; A. simulatrix Kokujev, 1895, A. rufipes Ivanov, 1899, A. similis Shestakov, 1928, A. glabricollis Telenga, 1955, A. serratulae Tobias, 1963, A. lederi Fischer, 1968, and A. ariadne Nixon, 1986, with A. varipes Thomson, 1895; A. tenuipes Tobias, 1963, with A. gracilipes Hellén, 1956; A. tadzhica Telenga, 1955, and A. gilvus Papp, 1975, with A. syngenesiae Nees, 1814; A. genualis Marshall, 1898, with A. tibialis Nees, 1814. The tribe Microdini Ashmead, 1900 (= Eumicrodini Foerster, 1862) is synonymised with the tribe Agathidini Nees, 1814. Neotypes are designated for Agathis malvacearum Latreille, 1805, A. nigra Nees, 1814, A. rufipalpis Nees, 1814, A. syngenesiae Nees, 1814, A. tibialis Nees, 1814, and A. umbellatarum Nees, 1814. Bassus kaszabi (Papp, 1971) is a new combination and a new junior synonym of Bassus linguarius (Nees, 1814).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317713</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 167</dcterms:extent>
+   <dcterms:isPartOf>Revision of the West Palaearctic species of the genus Agathis Latreille (Hymenoptera: Braconidae: Agathidinae) (URN:ISSN:0024-1652) (Volume 325) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317713.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148999</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317713</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

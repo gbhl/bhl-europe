@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biologische bijzonderheden van Rattus r. roquei Sody, vergeleken bij die van Rattus r. jalorensis Bonhote</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Heurn , van W.C.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Gaarne maak ik gebruik van de mij geboden gelegenheid om te dezer plaatse te publiceeren het weinige, dat mij uit eigen ervaring gebleken is omtrent de biologie der Javaansche Boomrat, Rattus r. roquei. Zooals wij in het opstel van den Heer Sody (zie p. 94) reeds zagen, betreft het de rattensoort, die destijds door mij 1), nadat pogingen tot determinatie in 3 groote Europeesche musea mislukt waren, in navolging van Prof. OTTEN 2) bestempeld is geworden met den naam Mus rattus rufescens Gray, en die sindsdien in de recentste litteratuur als Mus rattus jalorensis Bonh. te boek loopt. Uit de zeer nauwgezette naspeuringen van den heer Sody is nu laatstelijk komen vast te staan, dat de naam rufescens absoluut fout is, maar dat men evenzeer faalt door onze gewone Javaansche Boomrat te vereenzelvigen met de in de Maleische Staten gevonden jalorensis Bonh. Exemplaren van deze laatste heb ik tot mijne spijt nimmer onder de oogen gehad en ik kan dus niet, zooals de heer SODY, op grond dáávan verklaren, dat het twee goed onderscheiden systematische diervormen zijn. Maar uit de hieronder volgende biologische bijzonderheden alleen reeds blijkt dit m. i. onwederlegbaar. Ik zal mij ertoe beperken, uitsluitend in de vergelijking te betrekken datgene, wat Wray schrijft in een klein artikel getiteld: „Notes on the sugar cane rat, Mus jalorensis" in Journ. Fed. Mal. St. Mus. I 1905, pag. 39, maar meen intusschen niet te mogen verzwijgen, dat WRAY eerstens in den tekst van zijn artikel spreekt van: „a rat having the underparts white, probably jalorensis", waarvan een groote serie huiden was vervaardigd, die nog met het type geïdentificeerd moesten</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318320</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 151 - 154</dcterms:extent>
+   <dcterms:isPartOf>Biologische bijzonderheden van Rattus r. roquei Sody, vergeleken bij die van Rattus r. jalorensis Bonhote (URN:ISSN:0024-0672) (Volume 13) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318320.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149606</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318320</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

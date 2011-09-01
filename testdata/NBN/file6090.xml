@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Further inquiries into the Old World species of Macromia rambur (Odonata)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Lieftinck M.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>I. DESCRIPTIONS AND RECORDS OF NORTHEAST ASIATIC SPECIES, WITH NOTES ON THE IMMATURE STAGES Remarkably little is known of the species of Macromia occurring in the northern part and far eastern countries of continental Asia. In the following list I have enumerated chronologically all species at present known from the vast territory extending north of the Himalayas, Indo-China and the intermediate countries : 1. M. amphigena Selys 1871 (Bull. Acad. Belg. (2) 31: 537-538). — ♂ ♀ Japan. 2. M. fraenata Martin 1907 (Cat. Coll. Selys, 17, Cordul. : 71-72). — ♂ Korea. 3. M. spec. indet. Bartenef 1914 (Horae Soc. Ent. Ross. 41: 21-23, fig. 12). — ♂ ♀ N. Manchukuo (Station Imjanpo, East China railroad). 4. M. clio Ris 1916 (Supplem. Entom. 5: 67-68, pl. 3, fig. 1). — ♀ Formosa. 5. M. urania Ris 1916 (Supplem. Entom. 5: 68-70, fig. 42-43, pl. 3, fig. 2-3). — ♂ ♀ Tonkin. Further range: Hainan &amp; E. China (Fukien). 6. M. sibirica Djakonov 1926 (Revue Russe d'Entom. 20: 228-231, fig. 3). — ♂ S.W. Sibiria, Novonikolaevsk, long. 83o E, lat. 55o Ν. 7. Μ. icterica Lieftinck 1929 (Tijdschr. Ent. 72: 64, 84-86, fig. 11-12). — ♂ S.E. China, Kwang Tung. 8. M. cantonensis Tinkham 1936 (Lingnan Sci. Journ. 15: 457-459). — ♂ ♀ S.E. China, Kwang Tung. 9. M. daimoji Okumura 1949 (Matsumushi, 3: 120-121, fig. 1 A-C). — ♂ ♀ Japan. (Syn. : M. tokyoensis Asahina 1949, ♂ ♀ Japan).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318595</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 251 - 277</dcterms:extent>
+   <dcterms:isPartOf>Further inquiries into the Old World species of Macromia rambur (Odonata) (URN:ISSN:0024-0672) (Volume 33) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318595.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149881</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318595</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

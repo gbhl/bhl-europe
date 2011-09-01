@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Variation in the nocturnal foraging distribution of and resource use by endangered Ryukyu flying foxes (Pteropus dasymallus) on Iriomotejima Island, Japan</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Lee Y.-F.</dc:creator>
+   <dc:creator>Takaso T.</dc:creator>
+   <dc:creator>Chiang T.-Y.</dc:creator>
+   <dc:creator>Kuo Y.-M.</dc:creator>
+   <dc:creator>Nakanishi N.</dc:creator>
+   <dc:creator>Tzeng H.-Y.</dc:creator>
+   <dc:creator>Yasuda K.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:subject>abundance</dc:subject>
+   <dc:subject>bats</dc:subject>
+   <dc:subject>Chiroptera</dc:subject>
+   <dc:subject>diet</dc:subject>
+   <dc:subject>figs</dc:subject>
+   <dc:subject>frugivores</dc:subject>
+   <dc:subject>habitat</dc:subject>
+   <dc:description>The nocturnal distribution and resource use by Ryukyu flying foxes was studied along 28 transects, covering five types of habitats, on Iriomote Island, Japan, from early June to late September, 2005. Bats were mostly encountered solitarily (66.8%) or in pairs (16.8%), with a mean linear density of 2.5 ± 0.6 bats/km of transect/night. Across the island, however, bat densities were distributed non-randomly among transect-nights, not correlated with transect length, and showed a slightly clumped distribution (variance/mean = 3.3). Outskirt trails contributed higher values to the relative importance of bat abundance, but the highest mean abundances occurred mostly at village sites on the west coast, which on average devoted only a quarter of their land area to agriculture/husbandry compared to those on the east coast. This supports our prediction that higher bat abundances are found in areas with less anthropogenic interference and more forest. Among habitats, the mean total abundance and density were lower in cultivated areas than in villages and inland forests. Bat perches in cultivated areas were also lower, and were in correspondence with lower shrub and canopy heights, and less canopy coverage. Flying fox abundance was correlated moderately with the heterogeneity of the tree composition, and strongly with the density of major fruiting trees. Thirty-nine species of plants and some animal items were used by Ryukyu flying foxes, including at least 31 species of fruits, 13 species of flowers, and leaves of seven species, with 14 species new to the record. Ficus septica and F. variegata were the most frequently encountered and dominant items in both fecal and rejecta/dropped samples, followed mostly by other figs and mulberries in the former, but by larger-seed non-Moraceae plants in dropped samples. Our results suggest that for conservation of flying foxes undisturbed forests providing an adequate resource basis are of major importance.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:311809</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 51 - 64</dcterms:extent>
+   <dcterms:isPartOf>Variation in the nocturnal foraging distribution of and resource use by endangered Ryukyu flying foxes (Pteropus dasymallus) on Iriomotejima Island, Japan (URN:ISSN:1383-4517) (Volume 78) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/311809.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/141812</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/311809</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

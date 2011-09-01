@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of Idiocnemis patriciae spec. nov. from Papua New Guinea (Odonata: Platycnemididae), with new distributional records of other Idiocnemis species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gassmann D.</dc:creator>
+   <dc:creator>Richards S.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Platycnemididae</dc:subject>
+   <dc:subject>Calicnemiinae</dc:subject>
+   <dc:subject>Idiocnemis inornata-group</dc:subject>
+   <dc:subject>Idiocnemis patriciae spec. nov.</dc:subject>
+   <dc:subject>Papua New Guinea</dc:subject>
+   <dc:description>Idiocnemis patriciae spec. nov. is described from lowland rainforests of the Dark-End Lumber and Lakekamu regions in Gulf Province, Papua New Guinea. Biogeographically, the new species is near-endemic to the Papuan Gulf Coastal Lowlands area of endemism. Notes on the habitat of the new species and on a female specimen from the Lakekamu Basin tentatively assigned to it, are included. The distributions of I. australis Gassmann, I. chloropleura Lieft inck and I. kimminsi Lieft inck are updated. I. chloropleura is recorded from Yapen island for the first time. A revised key to the males of the Idiocnemis inornata species-group is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:292115</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 581 - 593</dcterms:extent>
+   <dcterms:isPartOf>Description of Idiocnemis patriciae spec. nov. from Papua New Guinea (Odonata: Platycnemididae), with new distributional records of other Idiocnemis species (URN:ISSN:0024-0672) (Volume 82) (Issue 47)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/292115.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/122258</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/292115</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

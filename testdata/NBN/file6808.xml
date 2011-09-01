@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Two interesting invertebrates, Limnadia lenticularis (L.) (Crutacea Phyllopoda) and Gonionemus vertens A. Agassiz (Limnomedusae), found in the Netherlands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Leentvaar P.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Limmadia lenticularis (L.) In July 1960 Mr. E. Blok of the Netherlands Fishery Inspection showed me some specimens of a Crustacean which he had identified as Limnadia lenticularis (L.) (Phyllopoda Conchostraca). The specimens were found in fish ponds in the municipality of Valkenswaard, province of Noord-Brabant. These fish ponds are used to rear carp and pike. They are nowhere over 0.75 m deep and have a sandy bottom covered with mud. The vegetation is rich and consists of reed and aquatic plants (Ceratophyllum demersum L., Myriophyllum spicatum L., Potamogeton natans L., and algae). The water in the ponds is artificially fertilized. At certain times the ponds are emptied; in filling them the water is taken from a small nearby stream, the Tongelreep. This is a lowland rivulet flowing in a sandy soil which originally was covered with heather but which now is brought into cultivation and turned into meadow land. The water, which is clear, is eutrophic and fresh (30-60 mg Cl/l). The Limnadia specimens were found among algae of the genus Cladophora. Fig. 1. Known localities of Limnadia lenticularis (L.) (▲) and Gonionemus vertens A. Agassiz (●) in the Netherlands. At several occasions specimens were seen swimming near the surface of the water. According to Wesenberg-Lund (1937, p. 420) Limnadia seems to prefer shallow water habitats, such as ponds with a rich aquatic vegetation and pools which dry out in the summer. This corresponds strikingly with the environmental conditions found in the fish ponds in Valkenswaard. Gislén (1937) in his paper on the ecology of Limnadia studied the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319313</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1961</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 225 - 230</dcterms:extent>
+   <dcterms:isPartOf>Two interesting invertebrates, Limnadia lenticularis (L.) (Crutacea Phyllopoda) and Gonionemus vertens A. Agassiz (Limnomedusae), found in the Netherlands (URN:ISSN:0024-0672) (Volume 37) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319313.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150599</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319313</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De Nederlandse soorten van het genus Cyphon paykull (Coleoptera, Helodidae)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Wiebes J.T.</dc:creator>
+   <dc:creator>Wiebes - Rijks A.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>De soorten van het genus Cyphon Paykull, vooral die uit de verwantschap van C. variabilis (Thunberg), zijn zeer moeilijk op uitwendige kenmerken te determineren. Dit kan eigenlijk alleen met verse of zeer schoon geprepareerde exemplaren. Goede kenmerken zijn echter te vinden in de copulatieorganen 1), zowel bij de mannelijke als bij de vrouwelijke individuen. Bij de mannelijke organen ziet men in ventraal aanzicht de volgende onderdelen (fig. 1) : het negende sterniet (s), de ventrale (ν) en de dorsale (d) plaat van de aedeagus, en daarnaast, bij de meeste soorten, de staafvormige zijkanten van het achtste en negende tergiet (t). Bij het vrouwtje bezit de „prehensor", een chitineus orgaan in de vagina dat dient om de spermatophoor op te nemen, goed bruikbare soortskenmerken. In verscheidene artikelen heeft Nyholm beschrijvingen gegeven van de genitaliën van Cyphon-soorten. In 1955 heeft hij de kennis van de middeneuropese soorten samengevat in deel 1v van Horion's „Faunistik" (Nyholm, 1955). Het huidige artikel bestaat uit een bewerking van Nyholm's determinatietabel, tekeningen van enkele opvallende</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317249</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 3 - 16</dcterms:extent>
+   <dcterms:isPartOf>De Nederlandse soorten van het genus Cyphon paykull (Coleoptera, Helodidae) (URN:ISSN:0459-1801) (Volume 7) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317249.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148535</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317249</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

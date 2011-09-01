@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A survey of the Japanese species of Anthophila Haworth and Eutromula Froelich and their early stages (Lepidoptera, Choreutidae), with an appendix</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Arita Y.</dc:creator>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The present synopsis is the result of the study of the first author; his manuscript has been examined by the second author, while the descriptions of the new species are by both authors together. Additions on the material of the Issiki Collection are by the second author. All text figures are by the first author, except figs. 70-71 which are by Mr. J. J. A. M. Wessendorp, of the Leiden Museum. Seven species, A. fabriciana Linnaeus, pariana Clerck, moiwana Matsumura, yakushimensis Marumo, hyligenes Butler, japonica Zeller, and achyrodes Meyrick have been recorded from Japan previously as belonging to the genus Anthophila Haworth, 1811, with the type species Phalaena Tinea fabriciana Linnaeus, 1767. In the present paper these species, except A. fabriciana, are being transferred to the genus Eutromula Frölich, 1829, with the type species Phalaena Tortrix pariana Clerck, [1764]. The genus Eutromula appears to differ from Anthophila by the following points: wing neuration (figs. 1-2); in the hind wing Cuia and M3 are shortstalked in Eutromula, connate in Anthophila; male genitalia with a well developed and sclerotised gnathos in Anthophila, without gnathos in Eutromula. The larva in both is similar in general appearance, but the number of abdominal setae of the SV group is different, viz., the segments 1-3 and 7-9 with the following number of setae, respectively: 3:3:3:2:1:1, in Anthophila, and 2:3:3:2:1:1, in Eutromula. The last abdominal segment in the pupa has a cremaster of four pairs of short setae, in Anthophila, and of two dorsal setae, in Eutromula (figs. 3 and 6, respectively). "Simaethis" moiwana Matsumura is recognised as a junior synonym of "Simaethis" atrosignata Christoph (Diakonoff, 1978), while "Simaethis"</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317754</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 42</dcterms:extent>
+   <dcterms:isPartOf>A survey of the Japanese species of Anthophila Haworth and Eutromula Froelich and their early stages (Lepidoptera, Choreutidae), with an appendix (URN:ISSN:0024-1652) (Volume 166) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317754.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149040</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317754</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

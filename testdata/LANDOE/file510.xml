@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carinthia II 186_106 (1996)</dc:title>
+   <dc:creator>Amann  Brigitte, Baumgartner  Gabriele, Bisenberger  Agnes, Brandstätter  Franz, Buchar  Jan, Christian  Erhard, Deutsch  Helmut, Franz  Wilfried Robert, Fritz  Adolf, Graf  Wolfram, Haase  Martin, Holzinger  Werner, Honsig-Erlenburg  Wolfgang, Huemer  Peter, Jungmeier  Michael, Kofler  Alois, Loitz  Susanne, Mildner  Paul, Moog  Otto, Ratschker  Ulrich M., Thaler  Konrad, Ucik  Friedrich Hans, Wiener  A. Karina, Wieser  Christian, Zwander  Helmut</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wolfgang Honsig-Erlenburg, Paul Mildner: Franz Xaver Freiherr von Wulfen als Ichthyologe   349-  360. Friedrich Hans Ucik, Adolf Fritz: Neue Ergebnisse aus dem Würmgalzial Kärntens   361-  386. Erhard Christian, Wolfram Graf, Otto Moog: Plusiocampa caprai-ein "Höhlentier" in den Kärntner Zentralalpen   387-  392. Konrad Thaler, Jan Buchar: Die Wolfspinnen von Österreich 3: Gattungen Aulonia, Pardosa (p.p.), Pirata, Xerolycosa) Arachnida, Araneae: Lycosidae)-Faunistisch-tiergeographische Übersicht   393-  410. Helmut Deutsch, Alois Kofler: Über Insekten am Gailufer im Lesachtal (Westkärnten) (Hymenoptera, Planipennia, Trichoptera, Diptera, Heteroptera, Coleoptera, Lepidoptera)   411-  430. Susanne Loitz: Beitrag zur Geologie am Wildensteiner Wasserfall   431-  449. Ulrich M. Ratschker, Franz Brandstätter: Chemische und röntgenographische Untersuchungen an Pyrophanit, (Mn, Fe) TiO3, von St.Salvator,Gemeinde Friesach, Kärnten   451-  456. Ulrich M. Ratschker, Brigitte Amann: Charakterisierung der Glimmer im Friesacher Marmor (Kärnten, Österreich)   457-  461. A. Karina Wiener: Amphibienbeobachtungen in Klagenfurt   463-  468. Helmut Zwander: Untersuchungen zum Pollenflug in der freien Landschaft   469-  489. Peter Huemer, Christian Wieser: Bemerkenswerte Nachweise von Schmetterlingen in der Schütt am Dobratsch-Südabhang (Lepidoptera)   491-  500. Werner Holzinger: Kritisches Verzeichnis der Zikaden Österreichs (Ins: Homoptera, Auchenorrhyncha)   501-  517. Christian Wieser: Die Nachtfalterfauna des Gitschtales Teil X: Aigen   519-  533. Wilfried Robert Franz: Die Schmalblatt-Segge, Carex stenophylla, neu für Kärnten   535-  549. Michael Jungmeier: Franz Pehr (1878-1946) Leben und Werk des Kärntner Botanikers anläßlich seines 50. Todesjahres   551-  566. Gabriele Baumgartner, Agnes Bisenberger: Erste Daten zur Fortpflanzungsbiologie von Arianta schmidti (Rossmaessler 1836) (Gastropoda, Helicidae)   567-  570. Paul Mildner, Martin Haase: Hydrobiidae (Gastropoda, Prosobranchia) Kärntens: Zur Verbreitung der Gattung Graziana   571-  574</dc:description>
+   <dc:date>1996</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25288.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25288.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25288</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

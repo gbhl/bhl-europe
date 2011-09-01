@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Braueria 2 (1993)</dc:title>
+   <dc:creator>Anonym , Clark  R.B., Czachorowski  Stanislav, Graf  Wolfram, Gullefors  Bo, Ivanov  Vladimir D., Levanidova  Ija, Lukyanchenko  Tatyana I., Malicky  Hans, Pitsch  Thomas, Wallace  I.D., Weaver III  John S.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3-    4. Tatyana I. Lukyanchenko: A new species of Caddisfly of the genus Rhyacophila Pictet (Trichoptera: Rhyacophilidae) from Eastern Asia     5-    6. Stanislav Czachorowski: Vertival Distribution of Caddis Larvae in various types of Lake Littoral     7-    9. Anonym: A. G. McFarlane: Obituary     9. R.B. Clark, I.D. Wallace: George Norman Philipson, 1916 - 1991    10. Vladimir D. Ivanov: Andrei Vasilievich Martynov: A Life Story
+9. (22.) 8.1879 - 29.1.1938    11-   13. Hans Malicky: Some Caddisflies from Korea    14. Vladimir D. Ivanov, Ija Levanidova: A new species of Apataniidae from the Russian Far East    15-   16. Anonym: List of research workers on Trichoptera    16. Wolfram Graf: Beschreibung der Larven von Rhyacophila Producta und Rhyacophila Stigmatica und einer Larva aus der Unterfamilie Drusinae (Trichoptera: Rhyacophilidae, Limnephilidae)    17-   18. Hans Malicky: Three new Caddisflies from Mahe Island, Seychelles    19-   21. Vladimir D. Ivanov: Russian Bibliography    22-   23. Hans Malicky: Comments on the book "Trichoptera of the Levant" by L.Botosaneanu    24-   25. Bo Gullefors: The caddisflies captured during the 7th International Symposium on Trichoptera, Umeâ, Sweden, 3 - 8 August 1992.    26. Thomas Pitsch: Zur Kenntnis der Hydropsyche pellucidula-Gruppe in Mitteleuropa (Trichoptera: Hydropsychidae)    27-   32. John S. Weaver III: The Trichoptera of the Museum of Comparative Zoology, Harvard University    33-   50. Anonym: Trichopterological Literature    51-   62</dc:description>
+   <dc:date>1993</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26828.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26828.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26828</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Three new giant prehistoric rats from Flores, Lesser Sunda Islands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>The specimens described in the present paper have been collected by Dr. Th. L. Verhoeven at Liang Toge, a cave near Warukia, 1 km south of a hamlet called Lepa, in Manggarai, western Flores. This cave, as well as many others explored in the island by Verhoeven (1952, 1953), contains a Mesolithic flake and blade industry (Van Heekeren, 1957, p. 107). The faunal remains obtained from Liang Toge consist almost exclusively of jaws and bones of large rats, and it is of interest to place these specimens on record as they represent forms that are new to science, different from the one and only giant rat that is still living on Flores, Papagomys armandvillei Jentink). The discovery of new giant rats in a comparatively recent cave deposit such as that of Liang Toge in Flores, which is definitely post-Pleistocene, is not very surprising. The Lesser Sunda Islands are almost a blank as far as prehistoric mammals are concerned, and the first prehistoric fauna of this area to become known, viz., that of Timor, likewise in a Mesolithic context (Sarasin, 1935), proved to contain a distinct genus and species of giant rat, Coryphomys bühleri Schaub (1937). Like the living Papagomys armandvillei of Flores, the subfossil Timor form belongs to the Muridae with complexly folded molars, subfamily Phloeomyinae (see Simpson, 1945, p. 91). This group, the member genera of which exist for the most part high in the mountains of the remoter islands of the Malay Archipelago, presents the appearance of a relict fauna (Tate, 1936, p. 505). As in other murid groups extending into the area east of Wallace's Line, a physiological shift in the direction of giantism is apparent (Tate, l.c., p. 612). Simpson (1945, p. 208) holds the center of murid evolution to have been in the tropical and</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318794</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 299 - 314</dcterms:extent>
+   <dcterms:isPartOf>Three new giant prehistoric rats from Flores, Lesser Sunda Islands (URN:ISSN:0024-0672) (Volume 35) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318794.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150080</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318794</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

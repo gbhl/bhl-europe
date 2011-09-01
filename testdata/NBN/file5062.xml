@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Contribution to the knowledge of the Indo-Australian Pseninae (Hymenoptera, Sphecidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Lith, van J.P.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>CONTENTS Page Introduction.................. 3 Systematics . ................ 5 Morphology................. 5 Psenulus Kohl . . .............. 7 Division into groups of species............. 9 Key to the groups................ 9 Key to the females................ 13 Key to the males................ 19 Notes on some Indian species of Psenulus......... 110 Bionomics ................ 111 Systematic list of Indo-Australian Pseninae.......... 112 Literature.................. 115 Index.................... 117 INTRODUCTION As compared with the study of the genus Psen that of the Indo-Australian species of the genus Psenulus is more difficult because of the considerable sexual dimorphism existing in some groups. The material on the whole being scarce it is therefore sometimes impossible to associate the sexes with satisfactory certainty. In those species which are more or less marked with yellow the conformity of the colour pattern may be a useful indication, but there are also species, in the group of Ps. scutatus for instance, in which the males are much darker than the females. For this study I could examine about 400 specimens, originating from</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317567</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1962</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 117</dcterms:extent>
+   <dcterms:isPartOf>Contribution to the knowledge of the Indo-Australian Pseninae (Hymenoptera, Sphecidae) (URN:ISSN:0024-1652) (Volume 52) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317567.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148853</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317567</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

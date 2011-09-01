@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Morphology, Ecology and Biogeography of the South American Caecilian Chthonerpeton Indistinctum (Amphibia: Gymnophiona: Typhlonectidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gudynas E.</dc:creator>
+   <dc:creator>Williams J.D.</dc:creator>
+   <dc:creator>Mercedes Azpelicueta, de las M.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Morphology; redescription; ecology; biogeography; Gymnophiona; Chthonerpeton indistinctum</dc:subject>
+   <dc:description>This study of Chthonerpeton indistinctum (Reinhardt &amp; Lütken, 1861) considers 25 morphometric characters, teeth-counts and sex, based on 96 specimens. A multivariate analysis of characters and comparisons of geographically arranged samples is carried out by graphic and statistical methods. No trends in geographical variation were found. Subsequently a redescription of the species is presented, including measurements and counts. Sexual dimorphism was observed for four characters related to the cloacal region. The results are discussed and compared with previous reports. Character-variation is also studied. Primary annuli counts show very low variation; sample variation profiles were similar for the remaining characters. A revision of biological data shows that C. indistinctum is a viviparous, nocturnal, fossorial to aquatic species. The caecilian is found in the subtropical to temperate areas of Uruguay, southern Brazil and central-north Argentina. A biogeographic model is developed to explain the close similarity between individuals transported with water-hyacinths and those from southern Brazil, assuming a colonization of the Jacuí river basin at the time of its formation in Quaternary times. The origin of individuals transported with water-hyacinths is assumed to be the middle Paraná river basin, and its importance in the founding or maintenance of the Río de la Plata coastal population is stressed. Lastly, relationships within the genus are briefly discussed, and it is pointed out that the species C. corrugatum Taylor, 1968, C. erugatum Taylor, 1968, and C. hellmichi Taylor, 1968, remain poorly defined.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319298</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1988</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 5 - 28</dcterms:extent>
+   <dcterms:isPartOf>Morphology, Ecology and Biogeography of the South American Caecilian Chthonerpeton Indistinctum (Amphibia: Gymnophiona: Typhlonectidae) (URN:ISSN:0024-0672) (Volume 62) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319298.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150584</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319298</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

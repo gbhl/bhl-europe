@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Corals from an elevated marl of Talaud (East Indies)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Umbgrove J.H.F.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>As a member of the Expedition on board H.M. „Willebrord Snellius" Dr. Ph. H. Kuenen had the opportunity to collect a suite of corals from a marine marl, deposited in an old valley now elevated above sea level, near Mahammanale, on the island Talaud, to the North of Celebes. He kindly entrusted to me the identification of the collection, which is now in the National Museum of Geology at Leiden. The following list shows the 15 species, which could be identified, and their stratigraphical distribution. 1. Flabellum rubrum (Q. et G.), Miocene, Pliocene, Pleistocene, Recent. 2. Flabellum pavoninum Less. var. paripavoninum (Alcock), Recent. 3. Acanthocyathus grayi E.H., Miocene?, Pliocene, Pleistocene, Recent. 4. Caryophyllia spec. (probably the recent species C. clavus Sacchi). 5. Heterocyathus aequicostatus E.H., Miocene, Pliocene, Pleistocene, Recent. 6. Seriatopora hystrix (Dana), Pliocene, Pleistocene, Recent. 7. Antillophyllia constricta (Brüggem.), Miocene?, Pliocene, Pleistocene, Recent. 8. Fungia patelliformis Boschma, Neogene, Recent. 9. Fungia cyctolites Lam., Miocene?, Pliocene, Pleistocene Recent. 10. Fungia concinna Verrill, Plio-Plistocene, Recent. 11. Fungia spec. (probably a recent species). 12. Balanophyllia imperialis Sav. Kent, Recent. 13. Balanophyllia parallela (Semper), Recent. 14. Balanophyllia redivivus Moseley, Recent. 15. Goniopora stokesi E.H., Pliocene, Pleistocene, Recent. The corals are excellently preserved (only nos. 4 and 11 are damaged and for that reason the species is not identified) and they all belong to still</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319362</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1938</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 263 - 274</dcterms:extent>
+   <dcterms:isPartOf>Corals from an elevated marl of Talaud (East Indies) (URN:ISSN:0024-0672) (Volume 20) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319362.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150648</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319362</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

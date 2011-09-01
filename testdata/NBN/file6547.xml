@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zur Nomenklatur einiger Raubvögel und Eulen</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>1. Aviceda jerdoni borneensis (Brüggemann) In der Literatur wird Sharpe (1893) als Autor des Namen Baza borneensis betrachtet, und der ältere Name Baza borneensis Brüggemann (1876) als nomen nudum verworfen (z.B. bei Peters, 1931). Das ist aber nicht richtig denn obschon Brüggemann selbst die Art (oder Rasse) nicht beschrieb, basierte er sie ganz auf einen von Schlegel (1873) unter dem Namen Baza magninostris (Fehldruck für Baza magnirostris) beschriebenen Vogel von Pontianak. Da Brüggemann auf eine Beschreibung hinweist, ist sein Name gültig. Die Borneo-Rasse von Aviceda jerdoni soll deshalb Aviceda jerdoni borneensis (Brüggemann, 1876) heissen, und nicht Aviceda jerdoni borneensis (Sharpe, 1893). Es ist merkwürdig dass die jenigen die Sharpe (1893) als Autor des borneensis auffassen, doch als typische Lokalität Pontianak angeben (Peters, 1931; Chasen, 1935; Smythies, 1957), denn Sharpe beschrieb nur Stücke aus Sarawak. Der von Diard in 1826 gesammelte Typus im Leidener Museum ist bisher wohl der einzige von Pontianak und WestBorneo bekannte Vogel dieser Art. Ein glücklicher Umstand ist, dass borneensis Brüggemann die Priorität hat über Baza leucopias Sharpe (1888). Dieser Name wurde einem anscheinend albinistischen, und deshalb nicht subspezifisch deutbaren Balg aus Palawan gegeben. In der rezenten Literatur (z.B. Delacour &amp; Mayr, 1946; Parkes, 1961) wird dieser Balg, noch immer das einzige aus Palawan bekannte Stück der Art Aviceda jerdoni, zur philippinischen Rasse magnirostris gerechnet, aber auf geographischen Gründen dürfte ich eher Verwandtschaft oder sogar Identität mit der borneoschen Rasse annehmen. 2. Accipiter exilis (Temminck)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319052</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1967</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 143 - 146</dcterms:extent>
+   <dcterms:isPartOf>Zur Nomenklatur einiger Raubvögel und Eulen (URN:ISSN:0024-0672) (Volume 42) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319052.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150338</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319052</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

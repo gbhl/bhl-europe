@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De roodrandzandbij Andrena rosae  in de Zuid-hollandse Biesbosch</dc:title>
+   <dc:creator>Reemer M.</dc:creator>
+   <dc:creator>Meer, van der F.</dc:creator>
+   <dc:creator>Neve A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biologie</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Ecologie</dc:subject>
+   <dc:subject>Bescherming</dc:subject>
+   <dc:description>De roodrandzandbij Andrena rosae in de Zuid-hollandse Biesbosch De roodrandzandbij Andrena rosae is gedurende de 20e eeuw sterk achteruitgegaan in Nederland. Hierdoor staat de soort op de Rode Lijst van bedreigde bijen in de categorie 'ernstig bedreigd'. De enige resterende bekende populatie bevindt zich in de Biesbosch. In 2005 is de roodrandzandbij in het Zuid-Hollandse deel van de Biesbosch in kaart gebracht, om te onderzoeken of er mogelijkheden zijn om deze laatste populatie veilig te stellen. Het onderzoek werd uitgevoerd door EIS-Nederland in opdracht van de Provincie Zuid-Holland. Zowel in het voorjaar als in de zomer zijn enkele veldbezoeken aan de Zuid-Hollandse Biesbosch uitgevoerd. In het voorjaar was de roodrandzandbij talrijk aanwezig en zijn op diverse plaatsen nestelplekken gevonden. De nesten bevonden zich in de klei van onbeschaduwde delen van, zuid- of zuidoost-geöriënteerde dijkhellingen. De vegetatie op deze plekken bestond doorgaans uit kort, 'vet' gras met enkele gewone kruiden, zoals madeliefjes. Analyse van het stuifmeel dat enkele vrouwtjes in het voorjaar bij zich droegen suggereert dat de voorjaarsgeneratie uitsluitend stuifmeel van wilgen verzamelen. Er is ook bloembezoek door zowel mannetjes als vrouwtjes waargenomen op sleedoorn, maar vermoedelijk bezoeken zij deze struik alleen voor de nectarvoorziening. Ook in de zomer is de roodrandzandbij verspreid over de Zuid-Hollandse Biesbosch talrijk aangetroffen. Het is ondanks de hoge aantallen niet gelukt om de nesten van de zomergeneratie te vinden, ook niet op plekken waar in het voorjaar diverse nesten gevonden zijn. Mogelijk nestelen de zomerdieren dus op andersoortige plekken dan de voorjaarsdieren. Een andere mogelijkheid is dat de zomergeneratie communaal nestelt, d.w.z. dat meerdere vrouwtjes dezelfde nestopening gebruiken, waardoor er minder nestopeningen zijn en deze dus moeilijker zijn op te sporen. Zowel mannetjes als vrouwtjes foerageerden in de zomer voornamelijk op schermbloemen (Apiaceae): gewone berenklauw Heracleum sphondylium, gewone engelwortel Angelica sylvestris en kruisdistel Eryngium campestre. Stuifmeelanalyse wees uit dat de vrouwtjes overwegend van deze planten stuifmeel verzamelen. Een klein aantal vrouwtjes werd echter gezien op de bloemen van moerasspirea Filipendula ulmaria. Deze vrouwtjes bleken ook veel stuifmeel van deze plant bij zich te dragen. Dit is een opmerkelijke vondst, daar tot nu toe aangenomen werd dat de zomergeneratie van de roodrandzandbij uitsluitend stuifmeel verzamelt van schermbloemen. Gezien de eisen die de roodrandzandbij - voor zover nu bekend - aan zijn omgeving stelt, is het moeilijk te begrijpen waarom deze bij landelijk zo sterk achteruit is gegaan, terwijl hij in de Zuid-Hollandse Biesbosch zo talrijk aanwezig is. De dijken waar de soort in nestelt zijn op veel meer plaatsen in Nederland aanwezig en hetzelfde geldt voor de wilgen en schermbloemen waar de vrouwtjes stuifmeel verzamelen. Ondanks deze onduidelijkheid is het de moeite waard om te proberen deze ernstig bedreigde soort te beschermen. De volgende maatregelen kunnen hierbij van nut zijn: • Berijding van de de dijken door landbouwvoertuigen en bemesting zoveel mogelijk beperken; • Niet voor half augustus maaien. Indien eerder maaien noodzakelijk is, dan zorgen dat er ruime hoeveelheden schermbloemen blijven staan. • Bespuitingen ter bestrijding van distels, waarbij ook de stuifmeelleverancier berenklauw wordt aangetast, dienen achterwege te blijven. • Bescherming van wilgen en sleedoorn is essentieel, omdat (respectievelijk) de stuifmeel de nectar van deze struiken van groot belang zijn voor de roodrandzanbij.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220053</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>29</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220053.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46566</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220053</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

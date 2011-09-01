@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 117 (1987)</dc:title>
+   <dc:creator>Adlbauer  Karl, Bermadinger  Edith, Ernet  Detlef Rainer, Friebe  Georg J., Gepp  Johannes, Gräf  Walter, Grill  Dieter, Hasenhütl  Klaus, Heinrich  Georg, Heritsch  Haymo, Holzer  Hans Ludwig, Horak  Peter, Jost  Helmut Ulf, Kristan-Tollmann  Edith, Mayrhofer  Helmut, Melzer  Helmut, Pongratz  Waltraud, Ruoss  Engelbert, Stelzl  Michael, Teich  Thilo</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Ludwig Holzer: Geleitworte des neuen Vorsitzenden.     5-    6. Georg Heinrich: Zur radioaktiven Belastung verschiedener Pflanzen in Graz nach dem Reaktorunglück von Tschernobyl.     7-   25. Haymo Heritsch: Röntgendaten von Nephelin und Rhönit-Kristalliten aus den basaltischen Gläsern des Steinberges bei Feldbach, Oststeiermark.    27-   34. Thilo Teich: Die "metablastischen" Amphibolit-Typen im Rachaugraben der Gleinalpe, Steiermark.    35-   38. Thilo Teich: "Fremdgesteinseinschlüsse" im "metablastischen" Amphibolitzug der Gleinalpe, Steiermark.    39-   48. Thilo Teich: Chemische Untersuchungen am gebänderten Plagioklasgneis und Bänderamphibolit (feingebändert) der Gleinalpe, Steiermark.    49-   55. Georg J. Friebe: Eine Krabben-Fauna aus dem Leithakalk (Badenien) von Wurzing bei Wildon, Steiermark.    57-   65. Edith Kristan-Tollmann: Austinocrinus erckerti (DAMES) aus dem Maastricht des Gosaubeckens von Gams (Steiermark, Österreich).    67-   72. Edith Bermadinger, Dieter Grill: Pflanzenphysiologische Untersuchungen im Immissionsgebiet Breitenau.    73-   87. Helmut Melzer: Neues zur Flora von Steiermark, XXIX.    89-  104. Engelbert Ruoss, Helmut Mayrhofer, Waltraud Pongratz: Eine Rentier- und eine Becherflechte neu für die Steiermark.   105-  110. Karl Adlbauer: Untersuchungen zum Rückgang der Heuschreckenfauna im Raum Graz (Insecta, Saltatoria).   111-  165. Klaus Hasenhütl: Die Pupoidstadien der Eurypauropodinae, am Beispiel von Gravieripus latzeli (COOK, 1896) (Myriapoda, Pauropoda).   167-  171. Peter Horak: Faunistische Untersuchungen an Spinnen (Arachnida, Araneae) pflanzlicher Reliktstandorte der Steiermark</dc:description>
+   <dc:description>I: Die Kanzel.   173-  180. Helmut Ulf Jost: Neue Gallmückenfunde aus der Steiermark (Cecidomyiidae, Diptera).   181-  184. Michael Stelzl, Johannes Gepp: Nahrungsanalytische Untersuchungen an Imagines von Hemerobius micans (OLIVER) (Planipennia, Hemerobiidae).   185-  188. Walter Gräf: Geschäftsbericht über das Vereinsjahr 1986.   191-  194. Detlef Rainer Ernet: Tätigkeitsbericht 1986 der Floristisch-geobotanischen Arbeitsgemeinschaft in der Fachgruppe Botanik des Naturwissenschaftlichen Vereins für Steiermark.   195-  198</dc:description>
+   <dc:date>1987</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28664.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28664.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28664</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

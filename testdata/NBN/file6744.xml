@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Philippine subspecies of Centropus bengalensis (Gmelin) (Aves, Cuculidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>The Philippine populations of Centropus bengalensis had been generally included in the widely distributed subspecies C. b. javanensis (Dumont), type locality Java, until Deignan (1955) observed that the population of Palawan is actually referable to this subspecies, but: "that those of other islands are separable by having, in fresh plumage, increased nigrescence of the anterior upper parts, the black or blackish area usually extending to the center of the back". For this subspecies Deignan used the name C. molkenboeri Bonaparte (1850: 108, "ex Philippinis"), which had been listed as a synonym of C. b. javanensis by Shelley (1891), Stresemann (1912) and Hachisuka (1934-1935). Parkes (1957) confirmed and amplified Deignan's findings as regards the distinctness of the Philippine race, concluding his paper with the remark : "the purpose of this note is to introduce the combination Centropus bengalensis molkenboeri into current taxonomie literature so that it may be used without burdensome explanation in forthcoming papers". In a later paper, Parkes (1965) has again discussed the characters of the Philippine subspecies of C. bengalensis, using, as in his previous paper, the name C. b. molkenboeri for it. Although I am not aware that the name molkenboeri in the combination C. b. molkenboeri has been used by other authors (in the post-Parkes publications by Ripley &amp; Rabor, 1958, and Rand &amp; Rabor, 1960, the name C. b. javanensis was still applied to Philippine birds), its use has not been challenged either and for that reason, and before that combination becomes too firmly entrenched in literature, I want to state that the holotype of C. molkenboeri is still in our collection, and that it does not belong to the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319249</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 189 - 191</dcterms:extent>
+   <dcterms:isPartOf>The Philippine subspecies of Centropus bengalensis (Gmelin) (Aves, Cuculidae) (URN:ISSN:0024-0672) (Volume 45) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319249.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150535</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319249</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

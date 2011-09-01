@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 141b (1996)</dc:title>
+   <dc:creator>Faißner  Waltraud, Haider  Siegfried, Heinzl  Brigitte, Jalkotzy  Alexander, Marckhgott  Gerhard, Mittendorfer  Michaela, Moser  Franz, Pertlwieser  Manfred, Rumpler  Klaus, Schultes  Lothar, Stoiber  Hans Helmut, Tovornik  Vlasta</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Moser: Museen und Heimathäuser in Oberösterreich. Heimathaus Stadtmuseum Perg.     1-   28. Alexander Jalkotzy: Oberösterreichischer Musealverein - Gesellschaft für Landeskunde. Vereinsbericht 1995.     5-   10. Waltraud Faißner: Oberösterreichisches Landesmuseum. Bibliothek.    11-   16. Manfred Pertlwieser, Vlasta Tovornik: Oberösterreichisches Landesmuseum. Abteilung Ur- und Frühgeschichte.    16-   18. Lothar Schultes: Oberösterreichisches Landesmuseum. Abteilung Kunst- u. Kulturgeschichte, Alte Kunst.    18-   20. Brigitte Heinzl: Oberösterreichisches Landesmuseum. Abteilung Kunst- u. Kulturgeschichte, Kunstgewerbe.    20-   21. Brigitte Heinzl: Oberösterreichisches Landesmuseum. Heereskundliche Abteilung.    21-   22. Brigitte Heinzl: Oberösterreichisches Landesmuseum. Technikgeschichtliche Sammlung.    22-   23. Michaela Mittendorfer: Oberösterreichisches Landesmuseum. Museumspädagogik.    23-   24. Alexander Jalkotzy: Verband Oberösterreichischer Freilichtmuseen.    25. : Verband Österreichischer Privatmuseen Bad Neydharting.    27-   29. : Heimathäuser und -museen.    31-   44. Siegfried Haider, Gerhard Marckhgott, Klaus Rumpler: Oberösterreichisches Landesarchiv.    45-   55. : Wissenschaftliche Einrichtungen der Stadt Linz.    57-   86. : Wissenschaftliche Einrichtungen der Diözese Linz.    87-   90. : Denkmalpflege.    91-  145. : Bundesamt für Agrarbiologie.   147-  180. Hans Helmut Stoiber: Naturschutzbüro Dr. Stoiber.   181-  182</dc:description>
+   <dc:date>1996</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28342.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28342.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28342</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Antispila sp. minatore fogliare segnalato in Italia su vite = Antispila sp. a new leafminer of grapes in Italy</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Baldessari M.</dc:creator>
+   <dc:creator>Angeli G.</dc:creator>
+   <dc:creator>Girolami V.</dc:creator>
+   <dc:creator>Mazzon L.</dc:creator>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Duso C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Antispila sp.</dc:subject>
+   <dc:subject>leafminer</dc:subject>
+   <dc:subject>grape</dc:subject>
+   <dc:subject>Holocacista rivillei</dc:subject>
+   <dc:subject>Phyllocnistis vitegenella</dc:subject>
+   <dc:description>Two leaf-miner species occur in European vineyards, i.e. Holocacista rivillei (Stainton) (Lepidoptera Heliozelidae) and Phyllocnistis vitegenella Clemens (Lepidoptera Phyllocnistidae). In the summer of 2007, leaf mines similar to those caused by H. rivillei were observed in a vineyard located in north-eastern Italy. However, the first portion of mines (linear tortuous) was lacking and thus the occurrence of a different species was suspected. Larvae were reared in controlled conditions to obtain adults and the latter differed from those of H. rivillei because of their size and wing patterns. Adults belonged to the genus Antispila Hübner, but not to the species of this genus currently known for Italy and Europe. Antispila sp. was detected for the first time in Valsugana, a valley extending from the Veneto region to the Trentino province, North-eastern Italy, in the summer of 2007. One year later, the species distribution did not differ greatly in Trentino while the pest was recorded in three provinces of the Veneto region sometimes at signifi cant densities. Preliminary observations on the phenology and the behavior of this species are here reported.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:303769</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 69 - 72</dcterms:extent>
+   <dcterms:isPartOf>Antispila sp. minatore fogliare segnalato in Italia su vite = Antispila sp. a new leafminer of grapes in Italy (Volume 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/303769.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/133352</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/303769</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

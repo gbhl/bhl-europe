@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phylogenetic and systematic position of Sesarma rubripes Rathbun, 1897 (Brachyura: Grapsidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Niem V.H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Metasesarma; Aratus; Sesarma; Grapsidae; Sesarminae; phylogeny</dc:subject>
+   <dc:description>The American grapsid crab Sesarma rubripes, classified as Metasesarma rubripes by Rathbun (1918), was compared with M. rousseauxi, the type species of Metasesarma, and was found to be different in a number of characters. On the other hand, S. rubripes is very close to those species of American Sesarma that are considered to be members of the subgenus Chiromantes. The characters common to S. rubripes and the American Chiromantes can be interpreted as synapomorphies by means of an outgroup comparison. Aratus pisonii and the West African Sesarma elegans are further members of the group in question and both share special derived characters with S. rubripes. As a consequence, S. rubripes should be returned to the genus Sesarma. It is recommended, however, to maintain the generic status of the monotypic genus Aratus. Die systematische Stellung der westatlantischen Krabbenart Metasesarma rubripes wurde uberpruft. Die bisherige systematische Einordnung dieser Art erscheint zweifelhaft, denn M. rubripes zeigt grofiere Abweichungen im morphologischen Vergleich mit M. rousseauxi, der lypusart der Gattung Metasesarma. Andererseits gibt es Argumente fur einen gemeinsamen phylogenetischen Weg von M. rubripes mit denjenigen amerikanischen Arten der Gattung Sesarma, die als Vertreter der Untergattung Chiromantes angesehen werden. Die ermittelten morphologischen Übereinstimmungen können anhand eines Außengruppenvergleichs als Synapomorphien interpretiert werden. Weitere Abkömmlinge der amerikanischen Chiromantes sind Aratus pisonii und die westafrikanische Sesarma elegans. Beide Arten bilden wahrscheinlich eine Abstammungsgemeinschaft mit M. rubripes. Während für M. rubripes eine Rückführung in die Gattung Sesarma am sinnvollsten erscheint, wird empfohlen, die monotypische Gattung Aratus beizubehalten.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318206</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1993</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 185 - 195</dcterms:extent>
+   <dcterms:isPartOf>Phylogenetic and systematic position of Sesarma rubripes Rathbun, 1897 (Brachyura: Grapsidae) (URN:ISSN:0024-0672) (Volume 67) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318206.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149492</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318206</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

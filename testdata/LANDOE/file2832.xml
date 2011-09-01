@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 19_3_4 (1979)</dc:title>
+   <dc:creator>Ahmed  A. M., Albert  Roland, Czeczuga  Bazyli, Danek-Jezik  K., Dave  Yash S., Falter  Johann, Grahsl  A., Guttenberger  Helmut, Härtel  Otto, Heikal  M. D., Inamdar  J.A., Jäger  Hans-Jürgen, Kartnig  Theodor, Kothari  I. L., Murthy  G.S.R., Patel  Jyotindra Dahyabhai, Patel  N.D., Rao  Karumanchi S., Rücker  Waltraud, Schmidt  J., Shaddad  M. A., Steiner  Gudrun, Stundl  Karl, Teppner  Herwig, Thaler  Irmtraud, Thanki  Y. J., Umrath  Karl, Weigel  H.-J., Wind  Eva</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Roland Albert, Johann Falter: Stoffwechselphysiologische Untersuchungen an Blättern streusalzgeschädigter Linden in Wien. II.   141-  162. H.-J. Weigel, Hans-Jürgen Jäger: Changes in Proline Concentration of the Lichen Pseudevernia furfuracea during Drought Stress.   163-  167. J.A. Inamdar, G.S.R. Murthy: Effect of Colchicine and Morphactin on the Cotyledonary Venation of Lycopersicum esculentum var. angurlata.   169-  173. K. Danek-Jezik, J. Schmidt: Untersuchungen zum Kalluswachstum und zur Regeneration von Lycopersicum esculentum.   175-  179. K. Danek-Jezik, J. Schmidt: Stoffwechselphysiologische Vergleiche zwischen Pflanzen und Kallus von Lycopersicum esculentum.   181-  187. K. Danek-Jezik, A. Grahsl, J. Schmidt: Einfluß von Spurenelementen auf die Entwicklung von Kartoffel-X-Viren in Tomatenkallus.   189-  195. Eva Wind: Pufferkapazität in Koniferennadeln.   197-  215. Jyotindra Dahyabhai Patel: Histopathology of "Green Ear" of Bajra.   217-  223. Bazyli Czeczuga: Investigations on Carotenoids in Fungi, VI. Representation of the Hevellaceae and Morchellaceae.   225-  232. Yash S. Dave, N.D. Patel, Karumanchi S. Rao: The Study of Origin of Pericarp Layers in Solanum melongena.   233-  241. Y. J. Thanki, I. L. Kothari: Structure and Development of Spine in Momordica dioica.   243-  246. Karl Umrath, Irmtraud Thaler, Gudrun Steiner: Verringerter Gehalt an Erregersubstanz und morphologische Veränderungen bei viruskranker Mimosa pudica.   247-  251. Karl Umrath, Irmtraud Thaler, Gudrun Steiner: Die Wirkung von 3-Indolylessigsäureauf die Spaltöffnungsweite.   253-  258. A. M. Ahmed, M. D. Heikal, M. A. Shaddad: Growth, Photosynthesis and Fat Content of Some Oil Producing Plants as Influenced by Some Salinization Treatments.   259-  267. Helmut Guttenberger, Otto Härtel, Irmtraud Thaler: Scheiden chronisch SO2-geschädigte Fichtennadeln Äthylen aus?.   269-  279. Herwig Teppner, Otto Härtel, Karl Stundl, Theodor Kartnig, Waltraud Rücker: Recensiones.   281-  297</dc:description>
+   <dc:date>1979</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30154.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30154.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30154</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

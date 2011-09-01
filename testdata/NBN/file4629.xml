@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Development, comparative morphology and cornification of reptilian claws in relation to claws evolution in tetrapods</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Alibardi L.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>autoradiography</dc:subject>
+   <dc:subject>claws</dc:subject>
+   <dc:subject>cornification</dc:subject>
+   <dc:subject>histogenesis</dc:subject>
+   <dc:subject>reptiles</dc:subject>
+   <dc:subject>ultrastructure</dc:subject>
+   <dc:description>The development of claws in different reptiles and their cornification are analyzed using histological, ultrastructural and autoradiographic methods. Claws develop at the tip of digits in relation to the growth of the terminal phalanx and appear as modified scales. The apical epidermis of digit becomes thickened and is associated with a mesenchymal condensation or a dense mesenchyme. The dorsal side of the digit becomes the unguis while the ventral side becomes the sub-unguis. The corneous layer in the unguis is thicker than in the sub-unguis and accumulates hard-keratin while corneocytes remain separated or partially fused. Bundles of hard-keratin tend to accumulate in parallel orientation with respect to the surface and are directed toward the claw tip. The sub-unguis is formed by a softer corneous material and by a much thinner hard-keratin layer. Autoradiography after tritiated thymidine and histidine injection indicates that the growth of reptilian claws occurs along the entire epidermis of the claw. A proximal matrix zone for cell proliferation like in mammalian nails and claws is therefore absent in claws of reptiles. This observation indicates that the pattern of growth of reptilian and probably avian claws is different from that of mammals.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:304588</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 25 - 41</dcterms:extent>
+   <dcterms:isPartOf>Development, comparative morphology and cornification of reptilian claws in relation to claws evolution in tetrapods (URN:ISSN:1383-4517) (Volume 78) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/304588.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/134174</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/304588</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

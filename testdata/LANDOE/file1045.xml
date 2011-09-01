@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Herpetozoa 1_1_2 (1988)</dc:title>
+   <dc:creator>Baurecht  Dieter, Berger-DellŽMour  Hartwig, Dick  Gerald, Ditrich  Hans, Grillitsch  Britta, Grillitsch  Heinz, Hassl  Andreas, Hassl  Dora, Kuchling  Gerald, Mayer  Werner, Sackl  Peter, Schwammer  Harald, Splechtna  Heinz, Tiedemann  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerald Kuchling: Zur Fortpflanzung von Pseudemydura umbrina Siebenrock, 1901: Neue Untersuchungsmethoden für die Rettung einer vom Aussterben bedrohten Schildkrötenart (Testudines: Chelidae)     3-   11. Gerald Dick, Peter Sackl: Angaben zu Laichwanderung von Erdkröte, Bufo b. bufo (Linnaeus, 1758), und Grasfrosch, Rana t. temporaria Linnaeus, 1758, einiger Populationen im Waldviertel (Niederösterreich) sowie zu praktischen Schutzmaßnahmen    13-   22. Werner Mayer, Hartwig Berger-DellŽMour: Proteinelektrophoretische Untersuchungen zur Systematik der Gattungen Aporosaura, Meroles, Pedioplanis und Helibolus (Saurica: Lacertidae) aus Südwest-Afrika    23-   29. Britta Grillitsch, Heinz Grillitsch, Heinz Splechtna: Zur Morphologie der Larva von Tomopterna cryptotis (Boulenger, 1907) (Amphibia: Anura: Ranidae)    31-   46. Andreas Hassl, Dora Hassl: Von Amphibien und Reptilien auf den Menschen übertragbare Parasitosen    47-   53. Franz Tiedemann, Heinz Grillitsch: Erich Sochurek 1923-1987    55-   64. Hans Ditrich: Experimentell thyroxininduzierte Metamorphose von Ambystoma mexicanum (Shaw, 1789)    65-   67. : Die Ringelnatter, Natrix n. natrix (Linnaeus, 1758), als Beute der Regenbogenforelle, Salmo gairdneri Richardson, 1836, und der Seeforelle, Salmo trutta lacustris Linnaeus, 1758    69-   71. Harald Schwammer, Dieter Baurecht: Der Karstläufer, Podarcis melisellensis fiumana (Werner, 1891), als Beute der Europäischen Schwarzen Witwe, Latrodectus mactans tredecimguttatus (Rossi, 1790)    73-   76</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26895.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26895.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26895</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

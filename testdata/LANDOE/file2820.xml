@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 13_3_4 (1969)</dc:title>
+   <dc:creator>Ali  Syed  Irtifaq, Bakr  Zienab Y., Blecic  Vilotije, Casper  Jost S., Dengg  Erna, Faruqi  Ahmad Shamim, Ferreira de Moura  Carlos Alberto, Hammouda  Mohamed Ahmed, Härtel  Otto, Kress  Alarich, Lamprecht  Herbert Anton Karl, Marwah  Kanwal Nain, Mayer  Ernest, Raghuvanshi  Satendra S., Schaeftlein  Hans, Schauenstein  E., Teppner  Herwig, Vijayaraghavan  M.R., Widder  Felix Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Satendra S. Raghuvanshi: Cytomorphological studies of artificially induced tetraploids of Catharanthus roseus.   141-  151. Herbert Anton Karl Lamprecht: Ein Gen für schalenförmige Blättchen von Pisum und seine Koppelung.   153-  160. Herbert Anton Karl Lamprecht: Über ein Gen für auffallend grazilen Wuchs von Pisum.   161-  167. Hans Schaeftlein: Beiträge zur Kenntnis einiger mitteleuropäischer Euphrasien.   168-  182. Mohamed Ahmed Hammouda, Zienab Y. Bakr: Some Aspects of Germination of Desert Seeds.   183-  201. M.R. Vijayaraghavan, Kanwal Nain Marwah: Studies in the Family Ranunculaceae - Microsporangium, Microsporogenesis ans Ubisch Granules in Nigella damascena .   203-  209. Alarich Kress: Zytotaxonomische Untersuchungen an Primulaceen.   211-  225. Jost S. Casper: Beiträge zur Taxonomie und Chronologie der mitteleuropäischen Utricularia-Arten.   227-  240. Ernest Mayer, Vilotije Blecic: Zur Taxonomie und Chronologie von Edraianthus sectio Uniflori.   241-  247. Syed  Irtifaq Ali: The Roles of Environnement in Evolution.   248-  265. Carlos Alberto Ferreira de Moura: A new Turnera from Brazil.   267-  269. Erna Dengg: Zytologische Untersuchungen an Blattgallen von Urtica dioica.   271-  284. Ahmad Shamim Faruqi: Range of morphological variation within the Bothriochloa intermedia complex.   285-  303. Herwig Teppner: Anthoxanthum alpinum und seine Verbreitung in der Steiermark.   305-  312. Felix Josef Widder, E. Schauenstein, Otto Härtel: Recensiones.   313-  332. :</dc:description>
+   <dc:date>1969</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30097.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30097.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30097</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

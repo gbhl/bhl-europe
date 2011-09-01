@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Enkele opmerkingen omtrent Indo-Australische Danaiden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eecke, van R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Danais chrysippus (L.). Op de, bij de Noordpunt van Sumatra gelegen, kleine eilanden Poeloe Bras en Poeloe Weh komen merkwaardige chrysippus-vormen voor, waarvan één reeds door den heer Heylaerts onder den naam „vigeli" beschreven werd. (Compt. Rend. Soc. Ent. Belge, 1884, p. 94). Naast genoemden vorm komt ook een andere voor met roodbruine voorvleugels. Een dergelijk voorwerp bezit het Leidsche museum van het eiland Poeloe Weh. Alle exemplaren wijken door hunne roodachtig witte achtervleugels, door hunne regelmatig geplaatste subapikaalvlekken en door hunne grootte af van de voorwerpen der naastbij gelegen eilanden. Van de Nicobaren zijn mij geene vormen bekend. Zoo schijnt het mij gewenscht toe deze, aan de beide eilandjes eigen, vormen te benoemen en koos ik den naam „rubra". Ook het faunistisch zoo merkwaardige eiland Simaloer bezit een chrysippus-ras, dat te onderkennen is aan de licht goudbruine kleur en bovendien aan twee, soms drie, vrij groote witte vlekken op den top der cel der voorvleugels. Dit laatste kenmerk was mij eerst ontgaan (Notes Leyd. Mus. XXXVI, p. 224, 1914). Bovendien zijn beide vormen chrysippus typica en alcippoides Moore vertegenwoordigd in de serie van 5 ♂♂ en 7 ♀♀, door den heer Edw. Jacobson op Simaloer verzameld. „Auriflava" bevindt zich in het beginstadium der ontwikkeling, die bij vigeli Heyl. haar hoogtepunt heeft bereikt. Op Sumatra komen twee vormen voor, nl. de typische, lichte chrysippus en de donkere bataviana Moore. Het komt mij voor, dat de eerste uitsluitend in het Noorden en Oosten voorkomt, terwijl de tweede zich</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318986</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1915</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 205 - 227</dcterms:extent>
+   <dcterms:isPartOf>Enkele opmerkingen omtrent Indo-Australische Danaiden (URN:ISSN:0024-0672) (Volume 1) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318986.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150272</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318986</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

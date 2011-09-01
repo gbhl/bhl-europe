@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De corticole fauna van platanen: ii. Springstaarten, stofluizen, loopkevers (Collembola, Psocoptera, Carabidae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Noordijk J.</dc:creator>
+   <dc:creator>Berg M.P.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Ecologie</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:description>The corticolous fauna of plane trees: ii. Springtails, barklice and ground beetles (Collembola, Psocoptera, Carabidae) From July 1999 until September 2001 an inventory was made of the bark-dwelling arthropod fauna of 450 plane trees (Platanus x hybrida), spread over 69 localities in the Netherlands. Arthropods were collected from bark and under bark fragments at a height of 160-175 cm from the ground. Crevices in the tree trunk and bark fragments represent a habitat for a large number of arthropods. The abundance of algae, mosses and fungi, which are important resources for the corticolous fauna, were measured, as well as the number and total surface of bark fragments. Overall, 16 species of springtails, seven species of barklice, and one species of carabid beetle were found. In this paper the records are presented including location maps, notes on the identification, the presence on the stems and the ecology of the species. Although the species composition varied from locality to locality, no clear distribution patterns for the individual species were observed. Only the springtail, Anurophorus laricis, seems to be limited to the eastern part of the Netherlands. The corticolous fauna is adapted to an extreme microclimate, caused by fluctuations in temperature, wind, humidity and water availability. Similarity in microclimate between the visited sites might explain the observed similarity in distribution patterns of the species, since the studied plane trees are mostly found in similar macrohabitats.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219698</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2002</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 41 - 56</dcterms:extent>
+   <dcterms:isPartOf>De corticole fauna van platanen: ii. Springstaarten, stofluizen, loopkevers (Collembola, Psocoptera, Carabidae) (URN:ISSN:01692453) (Volume 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219698.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46313</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219698</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

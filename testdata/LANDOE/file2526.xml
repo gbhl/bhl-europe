@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 18 (1878)</dc:title>
+   <dc:creator>Aberle  Karl (Carl), Anonymus , Fritsch  Carl (sen.), Pirckmayer  Friedrich, Prinzinger  August, Sauter  Anton Eleutherius, Späth  Josef, Zillner  Franz Valentin</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Valentin Zillner: Streifzüge auf dem geschichtlichen Quellengebiete des Christenthumes in Baiern. Ein Beitrag zur Beleuchtung der Rupertusfrage.     1-   80. Carl (sen.) Fritsch: Uebersicht der Witterung im Jahre 1877. Nach den Beobachtungen an den Stationen im Herzogthume Salzburg.    81-   98. Anton Eleutherius Sauter: Flora des Herzogthumes Salzburg.    99-  185. Karl (Carl) Aberle: Theophrastus Paracelsus und dessen Ueberreste in Salzburg.   186-  247. Franz Valentin Zillner: Brand, Schwant, Maiß und Reut. Salzburgische Orts- und Güternamen, aus Urbarien gesammelt.   248-  258. Friedrich Pirckmayer: Gesellschafts-Angelegenheiten. Bericht über die Thätigkeit und den Stand der Gesellschaft für Salzburger Landeskunde im Vereinsjahre 1877-78.   262-  279. Josef Späth: Gesellschafts-Angelegenheiten. Jahres-Rechnung über Einnahmen aud Ausgaben der Gesellschaft für Salzburger Landeskunde im 18. Vereinsjahre 1877-78.   280-  281. Anonymus: Gesellschafts-Angelegenheiten. Mitglieder-Verzeichniß.   282-  290. Anonymus: Gesellschafts-Angelegenheiten. Verzeichniß jener gelehrten Gesellschaften, Vereine und Anstalten, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mittheilungen" eine Verbindung pflegt.   291-  292. Anonymus: Gesellschafts-Angelegenheiten. Verzeichniß jener Bücher, welche - außer dem wechselseitigen Tauschverkehre - an die Gesellschaft gelangt oder gespendet worden sind.   293. August Prinzinger, Friedrich Pirckmayer: Gesellschafts-Angelegenheiten. Protokoll der ordentlichen Jahres-Versammlung am 7. November 1878. - Vorsitzender: derVorstand Dr. Aug. Prinzinger - Anwesend von 20 Mitglieder.</dc:description>
+   <dc:date>1878</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29023.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29023.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29023</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

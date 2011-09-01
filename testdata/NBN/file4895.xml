@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Miocene Decapoda and Mollusca from Ramsel (province of Antwerpen, Belgium), with a new crab genus and a new cephalopod species</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Janssen A.W.</dc:creator>
+   <dc:creator>Muller P.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>Reworked phosphoritic concretions from the base of the Diest Sands (Miocene) at Ramsel (Belgium) yield many magnificent crabs and molluscs in mould preservation. Two species of crabs are present, viz. Mursia lienharti (Bachmayer, 1961) and Tasadia carniolica (Bittner, 1884), Tasadia being a new genus. The palaeoecology of the decapod fauna is discussed and compared with Paratethyan occurrences. The age of the fauna in the concretions as indicated by the mollusc fauna is Middle Miocene, Hemmoorian, youngest Oxlundian. A similar fauna, also in reworked concretions, is known from the base of the Deurne Sands at Borgerhout (Antwerpen city area). A new coleoid cephalopod species, Spirulirostra baetensi sp. nov., is described. The European Spirulirostra and Spirulirostrina species are discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317400</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 26</dcterms:extent>
+   <dcterms:isPartOf>Miocene Decapoda and Mollusca from Ramsel (province of Antwerpen, Belgium), with a new crab genus and a new cephalopod species (URN:ISSN:0375-7587) (Volume 75)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317400.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148686</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317400</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

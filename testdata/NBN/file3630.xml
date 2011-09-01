@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the genus Spermophora Hentz in Southeast Asia and on the Pacific Islands, with descriptions of three new genera (Araneae: Pholcidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Huber B.A.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Araneae</dc:subject>
+   <dc:subject>Pholcidae</dc:subject>
+   <dc:subject>Spermophora</dc:subject>
+   <dc:subject>revision</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>Southeast Asia</dc:subject>
+   <dc:subject>Pacific</dc:subject>
+   <dc:description>The main aim of the present paper is to delimit ‘true’ Spermophora, i.e. the group of species most closely related to the type species S. senoculata (Dugès). Apart from the type species, only three previously described species are included in this core group (S. estebani Simon, S. paluma Huber, S. yao Huber), together with nine newly described species: S. kerinci, S. tumbang, S. dumoga, S. maros, S. deelemanae, S. palau, S. kaindi, S. luzonica, and S. sumbawa. Except for the Holarctic and anthropophilic type species, all species have limited distributions in Southeast Asia, northeastern Australia, and the Pacific Islands, where they inhabit the leaf litter layer of tropical forests as well as caves. A tight correlation is documented in Spermophora between the male cheliceral apophyses (distance between the tips) and the pockets on the female external genitalia. In addition, three new Southeast Asian genera are described that appear similar to Spermophora but do not share the synapomorphies of the genus: Aetana n. gen. with three new species from the Philippines (A. omayan), Borneo (A. kinabalu), and Fiji (A. fiji); Savarna n. gen., with one new species from southern Thailand (S. thaleban) and two species from Sumatra and Malaysia transferred from Spermophora [Savarna tessellata (Simon) n. comb., and S. baso (Roewer) n. comb.]; and Khorata n. gen., with four new species from Thailand (K. bangkok, K. schwendingeri) and Laos (K. khammouan, K. jaegeri).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210731</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 61 - 114</dcterms:extent>
+   <dcterms:isPartOf>Revision of the genus Spermophora Hentz in Southeast Asia and on the Pacific Islands, with descriptions of three new genera (Araneae: Pholcidae) (URN:ISSN:00240672) (Volume 79-2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210731.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42079</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210731</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

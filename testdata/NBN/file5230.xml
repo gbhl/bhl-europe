@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The late Pliocene Equidae of Langebaanweg, Cape Province, South Africa</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>Introduction................... 3 The Hipparion skull from Έ'Quarry............ 6 The upper dentition from Έ' Quarry............ 12 The mandibles from Έ' Quarry.............. 19 The lower dentition from Έ' Quarry............ 20 Lower premolars from a site between Έ' and 'C' Quarries...... 26 Metapodials from Έ' Quarry.............. 26 Proximal phalanx from Έ' Quarry............. 28 Further postcranial bones from Έ 'Quarry.......... 29 Hipparion from Έ' Quarry and Baard's Quarry compared....... 30 Equus from Baard's Quarry.............. 33 How many species of Hipparion are represented at Langebaanweg?.............. 34 Conclusion................... 36 Summary................... 37 Acknowledgements................. 37 References................... 38 INTRODUCTION The site of Langebaanweg, situated approximately 32°58' S, 18°9' Ε in the Sandveld region of the southwestern Cape Province, some 105 km NNW of Cape Town, first came into the palaeontological picture in 1958, when the find of a fossil proboscidean, erroneously called Stegolophodon (Singer &amp; Hooijer, 1958), was published from this site. The remains of Equidae (Hipparion) from Baard's Quarry and from a second quarry, called Varswater, later named 'C' Quarry, were the subject of a paper by Boné &amp; Singer (1965), but better material, mainly from Έ' Quarry, has since been collected. The</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317735</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 39</dcterms:extent>
+   <dcterms:isPartOf>The late Pliocene Equidae of Langebaanweg, Cape Province, South Africa (URN:ISSN:0024-1652) (Volume 148) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317735.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149021</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317735</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

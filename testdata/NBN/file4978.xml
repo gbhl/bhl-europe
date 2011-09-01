@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Tintinnomorphs from deep-sea sediments of the Banda Sea (Indonesia)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Waveren, van I.M.</dc:creator>
+   <dc:subject>Paleobotanie, palynologie</dc:subject>
+   <dc:description>Preservational circumstances, probably related to high productivity and high sedimentation rates, result in the occurrence of a wide variety of tintinnid palynomorphs in (sub-)Recent sediments of the Banda Sea. These organic (probably chitinous) remains include both loricae and cysts, as well as the stalked pouches in which the cysts were originally encapsulated. Collectively termed 'tintinnomorphs', these palynomorphs are described and classified in an informal scheme that may serve as a key to the recognition of 76 morphologically distinctive types.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317483</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 27 - 51</dcterms:extent>
+   <dcterms:isPartOf>Tintinnomorphs from deep-sea sediments of the Banda Sea (Indonesia) (URN:ISSN:0357-7587) (Volume 105)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317483.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148769</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317483</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

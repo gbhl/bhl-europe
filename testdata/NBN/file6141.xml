@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Attacus dohertyi dammermani nov. subspec., and some notes concerning the genus Attacus L. (Lepidoptera Heterocera, Family Saturniidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Roepke W.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>I. Attacus dohertyi dammermani nov. subspec. (Plate II) Large, apex of fore wing moderately produced, general coloration of wings, head, notum including patagia, and abdomen rather light reddish brown, several intersegmental folds between the abdominal tergites blackish. In both wings the terminal area somewhat lighter, more yellowish brown, in apex of fore wing grading into yellowish. Hind wing with the apical area markedly reddish. In fore wing the dark apical spot and red dash weak, submarginal line practically wanting, in hind wing a somewhat undulating submarginal dark line well developed. Postmedian band in both wings strongly serrate, but not bent inwards. Antemedian band in both wings less distinct, not serrate, in fore wing angled on base of v2, in hind wing curved inwards. The vitreous patches in both wings very large, guttiform by having the base curved outwards, the basal angles rounded, and the top elongated and pointed towards the postmedian band. In both wings with two additional vitreous patches which are in fore wing slightly larger than in hind wing. In hind wing the lower patch communicates with the interior black border of the postmedian band. All these spots bordered by a black margin. The interior orange yellow border, so obvious in many dohertyi specimens, is wanting or indicated by some inconspicuous traces only. Underside corresponding with upperside, the outer half very light, as in atlas, but the subterminal markings in both wings practically wanting or obsolete. Lateral markings of abdomen much less developed than in atlas. I ♀, 25 cm, holotype, W. Sumba, IV. 1925, labelled Dammerman, Sumba Exp., in Museum Leiden. 2. THE SPECIES OF THE GENUS Attacus L. IN THE FAR EAST.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318646</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 49 - 56</dcterms:extent>
+   <dcterms:isPartOf>Attacus dohertyi dammermani nov. subspec., and some notes concerning the genus Attacus L. (Lepidoptera Heterocera, Family Saturniidae) (URN:ISSN:0024-0672) (Volume 32) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318646.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149932</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318646</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

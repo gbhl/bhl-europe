@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the Presence or Absence of Hypapophyses under the posterior precaudal Vertebrae in some Snakes</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>In his "Catalogue of Snakes" Boulenger (1893—1896) followed Cope in considering the presence or absence of well developed hypapophyses under the posterior precaudal vertebrae as a character of great systematic importance. Thus Boulenger divided the genera of both the Colubrinae and Dipsadomorphinae (= Boiginae) into two groups; one of these groups is characterized by the presence of well developed hypapophyses under the posterior precaudal vertebrae, while in the genera of the other group these hypapophyses are lacking. Rosén (1905a) showed that this character was not so important as previous authors had believed it to be, for he found well developed hypapophyses1) in Chrysopelea ornata (Shaw) and Anisodon lilljeborgi Rosén (= Psammodynastes pulverulentus (Boie)), in which species they are lacking according to Boulenger. In Helicops leopardina (Schl.) and H. modesta (Gthr.) Rosén (1905a, p. 170, figs, 1a, 1b) did not find these hypapophyses, although Boulenger placed the genus Helicops Wagl. in the group possessing them. Boulenger (1905) criticized Rosén's paper, and stated that he did not find more than a low keel under the posterior precaudal vertebrae in all specimens of Chrysopelea ornata (Shaw) examined by him. To this criticism Rosén (1905b) replied that among the specimens of Chrysopelea ornata (Shaw), which he examined in this respect, well developed hypapophyses were present in some specimens, while they were lacking in others. Moreover he mentions the presence of hypapophyses in Psammodynastes pulverulentus (Boie). Not much attention has been paid to Rosén's researches, and so Meise &amp; Hennig (1935, p. 140) again mention the absence of hypapophyses in Chrysopelea Boie. It seemed to me worth while to check this character in</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318920</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1938</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 240 - 242</dcterms:extent>
+   <dcterms:isPartOf>On the Presence or Absence of Hypapophyses under the posterior precaudal Vertebrae in some Snakes (URN:ISSN:0024-0672) (Volume 20) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318920.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150206</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318920</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

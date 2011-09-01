@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Bdelyrus Geijskesi, a new Scarab (Coleoptera: Scarabaeidae) from suriname associated with Bromeliaceae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Huijbregts J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Coleoptera; Scarabaeidae; Neotropical; new species; key</dc:subject>
+   <dc:description>Bdelyrus geijskesi, a new bromeliadicolous species from Suriname is described and figured. Polymorphism and sexual dimorphism in the dentation of the hind tibia within the genus Bdelyrus are reported. Lectotypes are designated for B. lagopus Harold and B. seminudus (Bates).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319138</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 61 - 67</dcterms:extent>
+   <dcterms:isPartOf>Bdelyrus Geijskesi, a new Scarab (Coleoptera: Scarabaeidae) from suriname associated with Bromeliaceae (URN:ISSN:0024-0672) (Volume 59) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319138.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150424</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319138</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

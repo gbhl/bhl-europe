@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Indo-pacific coral species belonging to the subfamily Montastreinae Vaughan &amp; Wells, 1943 (Scleractinea-Coelenterata) : Part I. The genera Montastrea and Plesiastrea</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wijsman-Best M.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>INTRODUCTION The results of this study are based on several collections mainly from the Pacific Ocean (New Caledonia, Great Barrier Reef, Australia) but also from the Indian Ocean (Indonesian Archipelago, Seychelles, Madagascar and the Mascarene Islands) and the Red Sea. Apart from this material with the ecological data essentional in corals for a modern taxonomic approach, several other collections in different museums were examined in addition to the different type specimens as comparative material. Apart from the material from the Rijksmuseum of Natural History (RMNH) in Leiden and the Institute of Taxonomic Zoology (ITZ) in Amsterdam, specimens from the following museums and institutes were studied. British Museum of Natural History (BMNH), London; Musée National Histoire naturelle (MNHN), Paris; National Museum of Natural History (USNM), Washington, D.C.; Musée Royal de l'Afrique Centrale (MRAC), Tervuren, Belgium; Australian Museum (AMS), Sydney; Queensland Museum (QMB), Brisbane; Australian Institute Marine Sciences (AIMS), Townsville, Queensland; National Museum Victoria (NMV), Melbourne; National Museum of South Australia (NMSA), Adelaïde; Station Marine d'Endoume (SME), Marseille, France; Institut d'Etude Supérieures Scientifiques de La Réunion (IESS); Ruhr Universität Bochum (RUB) F.R. Germany. Thanks also due to the keepers in charge of the coral collections of the different museums and institutes. This study was started as an identification of the collection made by Dr. H. Boschma on board of the H.M. Willebrord Snellius (for further details on these collections see Wijsman-Best 1976) present in Leiden and the collection made</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318749</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 81 - 97</dcterms:extent>
+   <dcterms:isPartOf>Indo-pacific coral species belonging to the subfamily Montastreinae Vaughan &amp; Wells, 1943 (Scleractinea-Coelenterata) : Part I. The genera Montastrea and Plesiastrea (URN:ISSN:0024-0672) (Volume 52) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318749.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150035</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318749</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

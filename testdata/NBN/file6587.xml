@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Additional records of birds from Formosa (Taiwan)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>Since the publication of my paper on birds from Formosa (Mees, 1970), a few more collections have been received from the same source. A ban has now been placed on hunting and export of wild birds by the government of the Republic of China — an enlightened and overdue piece of legislation — with the result that the connection has come to an end and no more material is to be expected from Formosa. Although the later collections do not contain anything spectacular, a few records merit publication and for the reason stated this is a good moment for doing so. I take the opportunity to report on a few specimens from our old collection and from other sources. Appended are a bibliography of ornithological papers that have appeared since Hachisuka &amp; Udagawa's (1950, 1951) comprehensive work was published, and lists of the species and subspecies that have been added to the avifauna of the island in this period. Acknowledgements. For information and for the loan of material I am indebted to the following persons: Dr. C. T. Collins (California State University, Long Beach), Mr. E. C. Dickinson (Manila), Mr. I. C. J. Galbraith (British Museum (Natural History), Tring), Dr. S. R. Severinghaus (Ithaca, N. Y.), Dr. D. W. Snow (British Museum (Natural History), Tring), Dr. S. Somadikarta (Museum Zoologicum Bogoriense, Bogor), Mrs. E. Stickney (Peabody Museum of Natural History, New Haven), Mr. W. W. Thomas (formerly American Embassy, Taipei), Dr. Y. Yamashina (Yamashina Institute for Ornithology, Tokyo) and Dr. R. L. Zusi (U.S. National Museum, Washington). Dr. B. Walraven (Japanologisch Studiecentrum, Leiden) provided translations from Korean literature, and my colleague Dr. A. Diakonoff gave similar help with Russian publications.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319092</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 243 - 264</dcterms:extent>
+   <dcterms:isPartOf>Additional records of birds from Formosa (Taiwan) (URN:ISSN:0024-0672) (Volume 51) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319092.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150378</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319092</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

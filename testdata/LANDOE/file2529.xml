@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 21 (1881)</dc:title>
+   <dc:creator>Anonymus , Döttl  Johann, Hauthaler  P. Willibald, Horner  Johann, Huber  Nikolaus, Maier  F.M., Pirckmayer  Friedrich, Prinzinger  August, Richter  Eduard, Späth  Josef, Steuss  Ludwig, Zillner  Franz Valentin</dc:creator>
+   <dc:description>Inhaltsverzeichnis: August Prinzinger: Vorträge des Dr. Prinzinger. IV. Die Eisenbahn und die alten Verkehrswege. Kuchl-Georgenberg. (Fortsetzung und Schluß).     1-   23. Franz Valentin Zillner: Salzburgische Geschlechterstudien. III: Die Werfener Burggrafen. (1 Falttafel am Bandende)    24-   79. Anonymus: Befund über die Begehung des Radstädter Tauern, Pongauer Seite, zur Erhebung des Zuges der Römerstraße und ihrer Denkzeichen. (Mit Anmerkungen und einem Nachtragvon Dr. Prinzinger.).    80-   89. Eduard Richter: Verzeichniß der Fundstellen vorhistorischer und römischer Gegenstände im Herzogthume Salzburg.    90-   97. Ludwig Steuss: Anhang. Die romanischen Ortsnamen im Lande Salzburg.    98-  101. Friedrich Pirckmayer: Kleine Beiträge zu den Nachrichten über Paul Hofhaymer.   103-  132. Johann Döttl: Uebersicht der Witterung im Jahre 1880.   133-  142. P. Willibald Hauthaler: Der handschriftliche Nachlaß Dr. Leopold Spatzenegger's.   143-  147. Nikolaus Huber: Salzburger Bibliographie.   148-  224. F.M. Maier: Miscellen. Eine Urkunde von 1444.   225-  226. Friedrich Pirckmayer: Würdigung der Verdienste Franz Thaddä v. Kleienmayrn's durch den Fürsten Erzbischof Hieronymus.   226-  228. Anonymus: Anton Sauter. Eine biographische Skizze.   229-  234. August Prinzinger, Friedrich Pirckmayer: Gesellschafts-Angelegenheiten.   235-  238. Friedrich Pirckmayer: Bericht über die Thätigkeit und den Stand der Gesellschaft für Salzburger Landeskunde im XXI. Vereinsjahre 1880-1881.   239-  246. Anonymus: Auszug aus den Sitzungsprotocollen des XXI. Gesellschafts-Jahres 1880-1881.   247-  250. Anonymus: Mitglieder-Verzeichniß.   251-  258. Anonymus: Verzeichniß jener gelehrten Gesellschaften, Vereine, Anstalten und Personen, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mittheilungen" eine Verbindung pflegt.   259-  260. Anonymus: Verzeichniß jener Bücher und Schriften, welche - außer dem wechselseitigen Tauschverkehre - an die Gesellschaft gelangt oder gespendet worden sind.   261-  262. Anonymus: Ordnung für die Benützung der Bibliothek des städtischen Museums.   263. August Prinzinger, Josef Späth, Johann Horner: Jahres-Rechnung über Einnahmen und Ausgaben der Gesellschaft für Salzburger Landeskunde am 21. Vereinsjahre 1880/81.   264-  265</dc:description>
+   <dc:date>1881</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29026.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29026.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29026</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Results of the reexamination of the type specimens of some species belonging to the subfamilies Pontoniinae and Palaemoninae (Crustacea Decapoda Macrura)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>A visit paid in June 1956 to the British Museum (Natural History), London, and to the University Museum of Zoology, Cambridge, England, enabled me to study the types of several species of Pontonid and Palaemonid prawns, the identity of which thusfar was not known with certainty. In the present paper some of the results of these reexaminations are given. I wish to express here my sincere thanks to Dr. Isabella Gordon of the Crustacea Section of the British Museum, and to Dr. C. B. Goodhart of the University Museum of Zoology at Cambridge for the permission to study this valuable material and for their most cordial assistance. Periclimenes (Periclimenes) incertus Borradaile, 1915 Periclimenes (Cristiger) incertus Borradaile, 1915, Ann. Mag. nat. Hist. (8) 15: 210; Borradaile, 1917, Trans. Linn. Soc. Lond. Zool. (2) 17 : 364, pl. 53 fig. 7. Periclimenes (Periclimenes) incertus Kemp, 1922, Rec. Indian Mus. 24: 140, 150; Holthuis, 1952, Siboga Exped. 39 (a1o) : 9, 39. Periclimenes (Periclimenes) impar Kemp, 1922, Rec. Indian Mus. 24: 140, 147, textfigs. 16, 17, pl. 3 fig. 1; Kemp, 1925, Rec. Indian Mus. 27: 322; Holthuis, 1952, Siboga Exped. 39 (a1o) : 9, 38, fig. 7; Holthuis, 1955, Zool. Verhand. Leiden 26: 60, fig. 33a. In his key to the species of the subgenus Periclimenes, Kemp (1922: 140) placed P. incertus in the group with "no teeth of upper rostral series situated on carapace behind orbit". However, in Borradaile's (1917) pl. 53 fig. 7, the posterior dorsal rostral tooth is shown as being placed behind the orbit. Since Kemp (1922: 150) stated that he had examined the type material of Borradaile's species, the possibility existed that the shape of the rostrum</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318509</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1959</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 193 - 200</dcterms:extent>
+   <dcterms:isPartOf>Results of the reexamination of the type specimens of some species belonging to the subfamilies Pontoniinae and Palaemoninae (Crustacea Decapoda Macrura) (URN:ISSN:0024-0672) (Volume 36) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318509.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149795</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318509</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

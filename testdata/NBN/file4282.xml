@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A taxonomic revision of the western Palaearctic species of the subgenera Zimmermannia Hering and Ectoedemia Busck s.str. (Lepidoptera, Nepticulidae), with notes on their phylogeny</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera</dc:subject>
+   <dc:subject>Ectoedemia</dc:subject>
+   <dc:subject>Food plants</dc:subject>
+   <dc:subject>Catalogue, western Palaearctic</dc:subject>
+   <dc:subject>Distribution patterns</dc:subject>
+   <dc:subject>Nepticulidae</dc:subject>
+   <dc:subject>Zimmermannia</dc:subject>
+   <dc:subject>Europe</dc:subject>
+   <dc:subject>France</dc:subject>
+   <dc:subject>Spain</dc:subject>
+   <dc:subject>Portugal</dc:subject>
+   <dc:subject>Italy</dc:subject>
+   <dc:subject>Greece</dc:subject>
+   <dc:subject>Turkey</dc:subject>
+   <dc:subject>Iran</dc:subject>
+   <dc:subject>Morocco</dc:subject>
+   <dc:subject>Algeria</dc:subject>
+   <dc:subject>Tunisia</dc:subject>
+   <dc:subject>Sardinia</dc:subject>
+   <dc:subject>Corsica</dc:subject>
+   <dc:subject>Sicily</dc:subject>
+   <dc:subject>Croatia</dc:subject>
+   <dc:description>The subgenera Zimmermannia Hering and Ectoedemia s.str., together forming the genus Ectoedemia Busck sensu Wilkinson &amp; Newton (1981) are described and redefined, and the Western Palaearctic species are revised. In total 50 species are recognised, including the new species hispanica, monemvasiae, nuristanica in Zimmermannia and andalusiae, algeriensis, leucothorax, alnifoliae, contorta and two unnamed species in Ectoedemia s.str. Fifteen new synonymies and ten new combinations are established and 42 lectotypes are designated. Primary types have been examined in many cases. Data on larvae and biology are included and keys to all species are provided. The monophyly and the sister group relationships of both subgenera are demonstrated. The subgenus Ectoedemia can be divided into the populella group, suberis group, subbimaculella group and occultella group, being monophyletic entities, and the possibly paraphyletic angulifasciella group. Two alternative hypotheses of the phylogeny within Ectoedemia s.str. are presented. Decisions on species discrimination have in many cases been corroborated by study of allozymes.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227179</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1985</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 98</dcterms:extent>
+   <dcterms:isPartOf>A taxonomic revision of the western Palaearctic species of the subgenera Zimmermannia Hering and Ectoedemia Busck s.str. (Lepidoptera, Nepticulidae), with notes on their phylogeny (URN:ISSN:00407496) (Volume 28, 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227179.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50162</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227179</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

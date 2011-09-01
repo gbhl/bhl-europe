@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 8 (2002)</dc:title>
+   <dc:creator>Bierwirth  Georg, Grimbs  Gudrun u. Gotthard, Mascha  Raimund, Reichholf  Josef, Reichholf-Riehm  Helgard, Schnell  Paul, Segieth  Franz, Seidl  Fritz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Reichholf: Hat die Türkentaube (Streptopelia decaoctoj das niederbayerische Inntal über die Eisenbahn besiedelt?   139-  145. Franz Segieth: Gelungene Bienenfresser (Merops apiaster)-Brut  im Landkreis Passau   147-  149. Franz Segieth: Ein Weißbürzel-Strandläufer (Calidris fuscicollis) am Unteren Inn   151-  152. Franz Segieth: Ein Weißschwanzkiebitz (Chettusia leucurus) am Unteren Inn   153-  154. Franz Segieth: Avifaunistischer Jahresbericht vom Unteren Inn 2000   155-  165. Fritz Seidl: Der Haussperling (Passer domesticus) als Prädator der Ringelnatter (Natrixn. natrix)   167-  168. Josef Reichholf: Der Niedergang der Amphibien am unteren Inn: Bilanz von 1960 bis 2000   169-  187. Raimund Mascha: Beobachtung einer Raubwanzenlarve Reduvius personatus, "Maskierter Strolch" genannt   189-  191. Josef Reichholf: Feststellungen von Feld-Sandläufem Cicindela campestris und Dünen-Sandläufern Cicindela hybrida am unteren Inn in Niederbayern   193-  197. Josef Reichholf: Ein ungewöhnlicher Nistplatz der Schwarzbäuchigen Blattschneiderbiene Megachile nigriventrisam unteren Inn   199-  201. Josef Reichholf: Früheres Massenvorkommen von Uferlaufkäfern Elaphrus riparius auf Schlickbänken am unteren Inn   203-  204. Josef Reichholf: Altersaufbau und Aktivität einer Population des Silberfischchens Lepisma saccharina L.   205-  217. Georg Bierwirth: Die Rossameisen, unsere größten Ameisen   219-  221. Josef Reichholf: Die Besiedlung einer periodisch trockenfallenden Lagune am unteren Inn mit Wasserschnecken und Muscheln   223-  231. Fritz Seidl: 40 Jahre Zoologische Gesellschaft Braunau Gründungsgeschichte   233-  237. Gudrun u. Gotthard Grimbs: ZGB-Exkursion Nationalpark Paklenica, Kroatien vom 20. 4. - 25. 4. 2001</dc:description>
+   <dc:description>Artenliste Pflanzen, Reptilien, Amphibien, Schmetterlinge, Vögel   239-  246. Paul Schnell: ZGB-Exkursion Nationalpark Paklenica, Kroatien Artenliste der vom 21.4. - 25.4.2001 beobachteten Mollusken   247-  250. Helgard Reichholf-Riehm: In memoriam HANS W I M M E R 1915-2002   251</dc:description>
+   <dc:date>2002</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25194.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25194.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25194</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

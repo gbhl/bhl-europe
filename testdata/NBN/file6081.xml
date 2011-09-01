@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Rhizocephala of the Pacific</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The Rhizocephala, parasites of Crustacea of various orders, form a small group of animals, of which the comparatively small number of published records become rather easily accessible in a complete manner, so that in this respect the group lends itself for a survey of the occurrence and the distribution of the species in the Pacific area. The available data are widely scattered in the literature (cf. references at the end of the present paper), most papers dealing with one or a few species, some publications containing data on animals of the group from a distinct geographical area, others again giving the results of an examination of the material of the group preserved in a certain museum. A survey of the available data proves that in certain regions of the Pacific our knowledge concerning the Rhizocephala is fairly well advanced, whilst on the other hand in other parts of the area hardly anything has become known in respect to the parasites of the group. A list of the species known to occur in the Pacific region follows here, arranged under the various genera. To save space the author's names Boschma (B.), Van Kampen &amp; Boschma (K. B.), and Shiino (Sh.) have been abbreviated as indicated in brackets. Behind each name one or more numbers are added in brackets, these refer to the geographical areas briefly to be indicated as: I, Japan; 2, China; 3, Philippine Islands; 4, South East Asia; 5, East Indian Archipelago; 6, New Guinea and Torres Strait; 7, North East and East Australia; 8, North America, including Bering Sea; 9, South America; 10, Central Pacific. It is not intended to regard these regions as well defined faunal provinces; for the purposes of the present paper, however, they form regions of a more or less distinct character. Peltogaster boschmai Reinhard (8), depressus Reinhard (8), latus van</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318586</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 185 - 201</dcterms:extent>
+   <dcterms:isPartOf>The Rhizocephala of the Pacific (URN:ISSN:0024-0672) (Volume 32) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318586.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149872</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318586</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

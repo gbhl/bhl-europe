@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Doryctorgilus gen. nov. and other new taxa, with a study of the internal microsculpture of the ovipositor in the subfamily Orgilinae Ashmead (Hymenoptera: Braconidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Braet Y.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Orgilinae</dc:subject>
+   <dc:subject>Anstestrigini</dc:subject>
+   <dc:subject>Mimagathidini</dc:subject>
+   <dc:subject>Orgilini</dc:subject>
+   <dc:subject>Doryctorgilus</dc:subject>
+   <dc:subject>Agathidinae</dc:subject>
+   <dc:subject>Agathidini</dc:subject>
+   <dc:subject>Mesocoelina</dc:subject>
+   <dc:subject>Agathis</dc:subject>
+   <dc:subject>Neotropical</dc:subject>
+   <dc:subject>French Guyana</dc:subject>
+   <dc:subject>Brazil</dc:subject>
+   <dc:subject>Colombia</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>ovipositor internal microsculpture</dc:subject>
+   <dc:subject>phylogeny</dc:subject>
+   <dc:subject>cladistic analysis</dc:subject>
+   <dc:subject>keys</dc:subject>
+   <dc:description>One new monotypic genus of the subfamily Orgilinae Ashmead, 1900 (type species: D. morvanae spec. nov.), two new species of the genus Podorgilus van Achterberg, 1994 (P. nemorensis spec. nov. and P. luteus spec. nov.) and one new species of the genus Agathis Latreille, 1804 (A. depressifrons spec. nov.) are described. The internal microsculpture of the ovipositor in several genera of the subfamily Orgilinae has been examined and revealed several new features with a potentially high phylogenetic value. A cladistic analysis has been performed with some of these new character-states which corroborate the recognition of the tribe Mimagathidini Enderlein, 1905 (excluding the subtribe Mesocoelina Viereck, 1918), and support the division of this subfamily into three tribes. The study of the genera Bentonia and Stantonia showed the need of an accurate analysis to verify the status of the genus Bentonia.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216139</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 127 - 152</dcterms:extent>
+   <dcterms:isPartOf>Doryctorgilus gen. nov. and other new taxa, with a study of the internal microsculpture of the ovipositor in the subfamily Orgilinae Ashmead (Hymenoptera: Braconidae) (URN:ISSN:00240672) (Volume 77, 1-14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216139.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44262</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216139</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

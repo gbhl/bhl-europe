@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 21_1 (1981)</dc:title>
+   <dc:creator>Damboldt  J., Dave  Yash S., Foissner  Ilse, Gilli  Alexander, Graumann  Günther, Grill  Dieter, Hafellner  Josef, Härtel  Otto, Huss  Herbert, Inamdar  J.A., Karataglis  Stylianos S., Melzheimer  Volker, Naidu  A. C., Patel  N.D., Phitos  D. (Dimitrios), Punz  Wolfgang, Rao  Karumanchi S., Shah  G. L., Shenoy  K. N., Teppner  Herwig, Thaler  Irmtraud, Wawrik  Friederike</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herbert Huss: Karyologische Studien an Samenpflanzen aus dem Wakhan und Großen Pamir (NO-Afghanistan).     1-   24. Josef Hafellner, Dieter Grill: Der Einfluß der Stillegung einer Zellstoffabrik auf die Vegeation der Umgebung.    25-   38. Ilse Foissner: Licht- und elektronenmikroskopische Untersuchungen an Riesenmitochondrien von Nitella flexilis.    39-   51. Friederike Wawrik: Das Phytoplankton zur Zeit des Eisbrechens 1980 in Teichen, des Waldviertels (Niederösterreich).    53-   62. Yash S. Dave, N.D. Patel, Karumanchi S. Rao: Structural Design of the Developing Fruit of Nicotiana tabacum.    63-   71. Wolfgang Punz: Gaswechselmessungen anstadtbewohnenden Pflanzen im stark immittierten Raum.    73-   83. J. Damboldt, Günther Graumann, D. (Dimitrios) Phitos, Volker Melzheimer: Der Formenkreis von Scabiosa crenata (Dipsacaceae).    85-  102. Stylianos S. Karataglis: Influence of the Soil Ca on the Tolerance of Festuca rubra Populations Against Toxic Metals.   103-  113. J.A. Inamdar, K. N. Shenoy: Leaf Architecture in some Convolvulaceae.   115-  125. Alexander Gilli: Die Flora von Mallorca im Winter.   127-  129. Volker Melzheimer: Silene multicaulis GUSS. Subsp. cretica MELZH., subspec. nov., von der Insel Kreta.   131-  136. A. C. Naidu, G. L. Shah: Observation on the Cotyledonary Stomata and Trichomes and their Ontogeny in some Genera of Lamiaceae.   137-  152. Otto Härtel, Herwig Teppner, Irmtraud Thaler: Recensiones.   153-  176</dc:description>
+   <dc:date>1981</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30167.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30167.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30167</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

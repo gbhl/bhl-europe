@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über eine neue holländische Andrena-art aus der A.ovatula K.-Gruppe, Andrena gelriae n. sp.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Bei der Durchsicht mehrerer holländischen Andrena-Sammlungen fand ich eine Art, welche, soviel ich weiss, bisher noch nicht beschrieben worden ist. Sie gehört zu der schwierigen Gruppe der A. ovatula K. (afzeliella K.), und ist der A. wilkella K. (xanthura K.) am nächsten verwandt. Nach Herrn R. C. L. Perkins, dem ich einige Stücke dieser neuen Art zusand, fehlt sie in England; auf dem Festlande ist sie sicher weiter verbreitet, aber da die Unterscheidung von den Verwandten, besonders bei abgeflogenen Stücken, sehr schwierig ist, hat man sie wohl in der Regel mit A. wilkella K. oder ovatula K. verwechselt. Die folgende Beschreibung habe ich aufgestellt nach 5 ♀♀ und 12 ♂♂: Andrena gelriae n. sp. ♀. Schwarz. Kopf ungefähr wie bei wilkella gebildet, nur der Kopfschild etwas mehr vorgezogen und der Scheitel etwas flächer. Oberkiefer am Ende gebräunt. Anhang der Oberlippe trapezförmig, glänzend, vorne in der Mitte etwas eingedrückt. Kopfschild dicht und fein körnig gerunzelt, und ausserdem dicht und ziemlich grob punktiert, die Mittellinie nur gerunzelt oder ausserdem mit wenigen Punkten versehen, matt. Stirn und Scheitel dicht runzelig punktiert, matt. Augenstreifen von vorne samtbraun, von oben braungelb schimmernd. Fühler schwarz, die letzten Glieder unten schwarzbraun. Zweites Geisselglied so lang wie die zwei folgenden Glieder zusammen; das dritte und vierte Glied sind wenig breiter als lang, die folgenden ungefähr quadratisch, das Endglied ist länger als breit. Mesonotum und Schildchen fein gerunzelt und dicht und tief einge-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318172</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1927</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 87 - 89</dcterms:extent>
+   <dcterms:isPartOf>Über eine neue holländische Andrena-art aus der A.ovatula K.-Gruppe, Andrena gelriae n. sp. (URN:ISSN:0024-0672) (Volume 10) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318172.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149458</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318172</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

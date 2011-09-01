@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Informativ. Ein Magazin des Naturschutzbundes Oberösterreich 17 (2000)</dc:title>
+   <dc:creator>Anonym , ANONYM , Barth  Markus, Brands  Michael, Grims  Franz, Limberger  Josef, Maletzky  Andreas Martin, Neubacher  Gerald, Reichl  Hubert, Trautwein  Wolfgang, Wadl  Josef, Ziegler  Kurt</dc:creator>
+   <dc:description>Inhaltsverzeichnis: : Informativ 17     1-   20. Josef Limberger: Kurioses aus dem Aiterbachtal     3. Franz Grims: Bemerkungen zumThema Kulturlandschaft     4-    5. ANONYM: OÖNB Jahreshauptversamlung 2000     5. Andreas Martin Maletzky, Josef Wadl: Neue OÖNB- Ortsgruppe in Frankenburg     6. Anonym: Aktuelles aus den Ortsgruppen     7. Anonym: Der Naturschutztip     7. Wolfgang Trautwein: Kurzporträt: 
+Oö. Umweltanwaltschaft     8-    9. Hubert Reichl: Die Umwelt- 
+verträglichkeitsprüfung - UVP     9-   10. Gerald Neubacher: Genisys Geografisches 
+Naturschutz- InformationsSystem
+InformationsSystem    11-   13. Michael Brands: Naturschutzgebiet - Landschaftsschutzgebiet - 
+Geschützter Landschaftsteil    14. Michael Brands: Naturschutz - 
+ein Thema für jedermann    15. Kurt Ziegler: Aufgabenbereich der Regions- 
+beauftragten für Natur- und Landschaftsschutz
+Landschaftsschutz    16-   17. Anonym: Neue Bezirksbeauftragte für Natur- und Landschaftsschutz    17. Markus Barth: 
+önj Neumarkt im Mühlkreis: Die Hornisse-Königin im Insektenreich
+Insektenreich    18-   19. Anonym: NATURSCHUTZSCHLAGZEILEN    18</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24318.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24318.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24318</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

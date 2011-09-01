@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Bursae in 's Rijks Museum van Natuurlijke Historie</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bayer Ch.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Since the publication in 1908 of the „Catalogue systématique des Mollusques" by R. HORST and M. M. SCHEPMAN, the collection of 's Rijks Museum van Natuurlijke Historie has attained a not unimportant extension, so that since long this catalogue is no more up to date. After the revision of the genus Bursa, which resulted into the addition to the collection of a great deal of hitherto unidentified material and which brought about several changes in the catalogue, it seemed necessary to me, to edit a new catalogue of this genus, and it is my intention to publish such a list every time when a new part of the collection has been revised. In order to give this catalogue a more general value, I have included as far as possible, all the true species of Bursa which are mentioned in literature, also those of which we do not possess any material in the Leyden Museum, moreover I added the commonly used synonyma. In the classification of the species I followed principally the systems proposed by A. H. COOKE and W. H. DALL. All the revised material is written on a card-catalogue, in which the specimens from the same locality and collector, as far as they are kept dry, bear the same letter; concerning the material preserved in liquor the number of the bottle is given instead. I have inserted these letters or numbers in the list below, followed by a number indicating how many specimens we possess from that locality. After the localities the names of the collectors are mentioned, in cases when the locality or the name of the collector is unknown I have put an interrogation mark. Genus Bursa Bolten, 1798. Ranella Lamarck, 1812.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318804</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1932</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 224 - 231</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Bursae in 's Rijks Museum van Natuurlijke Historie (URN:ISSN:0024-0672) (Volume 14) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318804.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150090</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318804</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

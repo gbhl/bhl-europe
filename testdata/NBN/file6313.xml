@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A redescription of the Sea Anemone Bunodosoma Biscayensis (Fischer, 1874) (Actiniaria, Actiniidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hartog, den J.C.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Actiniaria</dc:subject>
+   <dc:subject>Bunodosoma biscayensis</dc:subject>
+   <dc:subject>verruca</dc:subject>
+   <dc:subject>vesicle</dc:subject>
+   <dc:subject>nematocysts</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>France</dc:subject>
+   <dc:subject>Côte Basque</dc:subject>
+   <dc:description>Bunodes biscayensis Fischer, 1874, a species of Actiniaria described from Moulleau, Arcachon, south-western coast of France, and never recorded since, was rediscovered in July 1985 and found again in 1986 and 1987 in several localities along the French "Côte Basque" between the mouth of the river Adour and St. Jean-de-Luz. The species is here redescribed and referred to Bunodosoma Verrill, 1899, a genus of tropical and subtropical Atlantic and West-American intertidal and shallow water forms, hitherto not recorded from the Mediterranean and/or the Atlantic coast of Europe. Speculations are advanced as to the possible further distribution of B. biscayensis. A discussion is added concerning the morphological terms verruca and vesicle. The study is completed with an updated generic diagnosis of Bunodosoma.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318818</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1987</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 533 - 559</dcterms:extent>
+   <dcterms:isPartOf>A redescription of the Sea Anemone Bunodosoma Biscayensis (Fischer, 1874) (Actiniaria, Actiniidae) (URN:ISSN:0024-0672) (Volume 61) (Issue 36)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318818.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150104</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318818</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

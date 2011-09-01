@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Herpetozoa 5_1_2 (1992)</dc:title>
+   <dc:creator>Cabela  Antonia, Grillitsch  Britta, Grillitsch  Heinz, Kammel  Werner, Keymar  Peter F., Mylonas  Moysis, Schweiger  Mario, Tiedemann  Franz, Valakos  Efstratios</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Werner Kammel: Zur Situation der Wiesenotter, Vispera ursinii rakosiensis (Mehely, 1894) (Squamata: Serpentes: Viperidae), in Niederösterreich.     3-   11. Mario Schweiger: Herpetologische Beobachtungen im Gebiet von Ouarzazate (Marokko).    13-   31. Efstratios Valakos, Moysis Mylonas: Distribution and ecological aspects of the herpetofauna of Strofadhes Islands (Ionian Archipelago, Greece)    33-   39. Heinz Grillitsch, Antonia Cabela: Die Arealgrenzen der Reptilien in Kärnten (Österreich) dargestellt durch den Verlauf ausgewählter klimatische Iso- und Grenzlinien.    41-   49. Britta Grillitsch: Notes on the tadpole of Phrynohyas resinfictrix (Goeldi, 1907). Buccopharyngeal and external morphology of a tree hole dwelling larva (Anura: Hylidae).    51-   66. Franz Tiedemann: Zur Verbreitung der Kroatischen Gebirgseidechse, Lacerta horvathi Méhely, 1904, in Österreich (Squamata: Sauria: Lacertidae).    67-   69. Antonia Cabela: Erhebungsbögen zur Erfassung von Amphibienwanderungen als Grundlage für Schutzmaßnahmen sowie zur Verbreitungs- und Bestandsdokumentation.    71-   76. Antonia Cabela: Geschäftsbericht 1991 der Österreichischen Gesellschaft für Herpetologie (für den Zeitraum von 01.01.1991 bis 31.12.1991).    77. Peter F. Keymar: Bericht des Generalsekretärs zur 8. Ordentlichen Generalversammlung der Österreichischen Gesellschaft für Herpetologie.    78-   80</dc:description>
+   <dc:date>1992</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27061.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27061.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27061</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

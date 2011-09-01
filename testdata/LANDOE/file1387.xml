@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 14_2 (1971)</dc:title>
+   <dc:creator>Aschenbrenner  Leopold, Bauer  Kurt, Haar  Helmut, Hüni-Luft  Ilse, Mayer  Gerald, Schuller  Linde, Steiner  Hans Martin, Warncke  Klaus, Wruss  Wilhelm, Zmölnig  Jakob</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Kurt Bauer: Der Häherkuckuck (Clamator glandarius) in Österreich.    41-   43. Ilse Hüni-Luft, Hans Martin Steiner: Verbreitung und Ökologie des Ortolans (Emberiza hortulana) im Weinviertel (Niederösterreich).    44-   52. Klaus Warncke: Zu: Nachtreiher in Österreich.    53. Leopold Aschenbrenner: Weißstorch brütet erstmals in Wien.    54. Helmut Haar: Ein Zwergadler (Hieraaetus pennatus) aus der Oststeiermark.    54-   55. Linde Schuller: Lachmöwen am Lainzer Sattel.    55. Hans Martin Steiner: Feldkennzeichen der Rötelschwalbe (Hirundo daurica).    55-   56. Jakob Zmölnig: Die Wacholderdrossel Brutvogel in Kärnten.    56-   57. Wilhelm Wruss: Erste Lasurmeisen (Parus cyanus) -Beobachtungen aus Kärnten.    57. Kurt Bauer: Die österreichischen Lasurmeisen-Nachweise.    57-   59. Ilse Hüni-Luft: Winterbeobachtung der Zaunammer in Wien-Nußdorf.    59. Helmut Haar: Schneeammern (Plectrophenax nivalis) im Raum Ilz, Oststeiermark.    59-   60. Jakob Zmölnig: Ein Rosenstar (Sturnus roseus) in Oberkärnten.    60. Gerald Mayer: Theodor Kerschner +.    61. Leopold Aschenbrenner: Modedelikt "Ausrauben von Wild- und Greifvogelnestern in Schweden".    61-   62</dc:description>
+   <dc:date>1971</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27481.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27481.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27481</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Dolphins and African apes: comparisons of sympatric socio-ecology</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Bearzi M.</dc:creator>
+   <dc:creator>Stanford C.B.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:subject>sympatry</dc:subject>
+   <dc:subject>convergence</dc:subject>
+   <dc:subject>resource partitioning</dc:subject>
+   <dc:description>Dolphins and African apes are distantly related mammalian taxa that exhibit striking convergences in their socioecology. In both cetaceans and African apes, two or more closely related species sometimes occur in sympatry. However, detailed reviews of the ways in which sympatric associations of dolphins and apes are similar have not been done. As field studies of dolphins and apes have accumulated, comparisons of how the two groups avoid direct food competition when in sympatry have become possible. In this paper we review sympatric ecology among dolphins and African apes, and examine convergences in species-associations in each taxa. We review evidence for hypotheses that seek to explain avoidance of food competition, and consider whether ape-dolphin similarities in this area may be related to the way in which social groups in both taxa optimally exploit their food resources.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:262646</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 235 - 254</dcterms:extent>
+   <dcterms:isPartOf>Dolphins and African apes: comparisons of sympatric socio-ecology (URN:ISSN:1383-4517) (Volume 76) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/262646.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/94259</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/262646</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

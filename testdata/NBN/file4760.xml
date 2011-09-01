@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Kleurverscheidenheden van de mol, Talpa Europaea L., in Nederland waargenomen</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Husson A.M.</dc:creator>
+   <dc:creator>Heurn, van W.C.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>In 1734 verscheen te Amsterdam het eerste deel van het klassiek geworden werk van Albertus Seba : Locupletissimi rerum naturalium Thesauri accurata descriptio, et iconibus artificiosissimis expressio, per universam physices historiam. In dit werk, vaak aangeduid alleen met de naam „Thesaurus", geeft Seba naast voor die tijd goede beschrijvingen prachtige gekleurde afbeeldingen van de behandelde voorwerpen. Tot de „rijkste schatten" van het dierenrijk rekent Seba ook twee kleurafwijkingen van de mol, Talpa europaea L., waarvan de eerste op pagina 51 wordt vermeld als: Talpa, alba, nostras [de witte mol van ons Vaderland]. De op plaat xxxii fig. 1 gegeven afbeelding van deze kleurvariant toont echter een mol met een licht roomkleurige tint. Uit de omgeving van zijn geboorteplaats Etzela, Oost-Friesland, kende Seba een mol met witte onregelmatige vlekken (p. 68; pl. xli fig. 4). Deze kleurvariëteit wordt door hem genoemd: Talpa, maculata, Oost-Frisia [de gevlekte mol van Oost-Friesland]. Naar beide afbeeldingen van Seba wordt door Houttuyn (1761, p. 310) verwezen in het 2de stuk van het eerste deel van zijn uitvoerige bewerking van „Systema naturae" van Linnaeus : „Behalve de gewoone Mol, die zwartagtig is, wordt somtyds, in ons Land, ook een witte gevonden, by Seba afgebeeld, en eene, die Klein de Oostfriesche noemt, zynde een weinig grooter, en over 't geheele Lyf als gemarmeld met witte Vlakken op een zwarten Grond." Hierbij dient opgemerkt te worden dat Klein (1751, p. 60) onder de Oostfriesche mol de Talpa maculata van Seba verstaat. In 1776 heeft Houttuyn de gelegenheid lezers, die met het Nederlands vertrouwd zijn, op een derde kleurverscheidenheid van de mol te wijzen en wel in de vertaling van het Engelse werk van Edwards &amp; Catesby : „Verzameling van uit-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317264</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1959</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 16</dcterms:extent>
+   <dcterms:isPartOf>Kleurverscheidenheden van de mol, Talpa Europaea L., in Nederland waargenomen (URN:ISSN:0459-1801) (Volume 4) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317264.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148550</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317264</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

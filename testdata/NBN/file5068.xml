@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Hesperiidae (Lepidoptera) of the Philippines</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Jong, de R.</dc:creator>
+   <dc:creator>Treadaway C.G.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera; Hesperiidae; Philippines; biogeography.</dc:subject>
+   <dc:description>All species and subspecies of the Hesperiidae known from the Philippines are listed and their distribution across the islands, preferred habitats and flight habits are indicated. By far the richest habitat is the primary lowland forest. In view of the high rate of deforestation it is estimated that 50% of the hesperiid species is endangered and may become extinct over the next 10 to 15 years. With 151 species the Philippines is considerably poorer than Borneo (214 species), but much richer than Sulawesi (84 species). In terms of endemicity, however, the Philippines is with 35 endemic species (23.2%) relatively much richer than Borneo (12 species, 5.6%), and almost as rich as Sulawesi (20 species, 23.8%). The distribution and endemicity of species and subspecies are analysed and compared with what is known of the geological history of the Philippines. It is concluded that the fauna is relatively young and essentially of Bornean derivation. The faunal connections with Sulawesi are ambiguous, and those with Taiwan very weak. Hie Hesperiidae do not provide patterns of vicariant speciation events in the Philippines, but there is a general north-south (Luzon-Mindanao) differentiation with an intermediate area of islands showing intricate and various biogeographic links. This agrees with the geological history: the islands of the Philippines are not the result of fragmentation of a single land mass (such a fragmentation could have been a vicariant speciation event), and most of the present-day islands apparently emerged from the sea and may have been much further apart rather than closer together in the geological past. Lowering of the sea level during the Ice Ages must have united the islands in a few clusters, but such clusters are not apparent in the distribution of the Hesperiidae, contrary to what has been reported for the Mammalia. Instead the islands between Luzon and Mindanao are seen as an area with repeatedly changing dispersal opportunities. Palawan does not fit in this picture; biogeographically it is best described as a northern extension of Sundaland (which geologically speaking its southern half actually is).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317573</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1993</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 125</dcterms:extent>
+   <dcterms:isPartOf>The Hesperiidae (Lepidoptera) of the Philippines (URN:ISSN:0024-1652) (Volume 288) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317573.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148859</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317573</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

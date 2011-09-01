@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 21 (1906)</dc:title>
+   <dc:creator>Anonymus , Heger  Franz, Heimerl  Anton, Kohl  Franz Friedrich, Penther  Arnold, Pietschmann  Viktor, Rebel  Hans, Sassi  Moritz, Steindachner  Franz, Toldt jun.  Karl, Tschusi zu Schmidhoffen  Victor Ritter von, Zahlbruckner  Alexander, Zederbauer  Emmerich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Heger: Notizen. Bericht über eine Studienreise nach Niederländisch-Indien (30. Dezember 1903 - 29. September 1904).     1-   28. Karl Toldt jun.: Über das Haar- und Stachelkleide von Zaglossus Gill (Prochidna Gervais). (Tafel I- III.)     1-   21. Hans Rebel: Fünfter Beitrag zur Lepidopterenfauna der Kanaren.    22-   44. Anonymus: Verzeichnis der von Regierungsrat Franz Heger auf seiner Reise nach Niederländisch-Indien 1904 erworbenen Sammlung von ethnographischen Gegenständen, Büchern, Karten, Photographien und anderen Objekten.    29-   40. Franz Steindachner: Notizen.    41-  101. Moritz Sassi: Ein Beitrag zur Kenntnis der Vogelwelt vom Weißen Nil.    45-   59. Anton Heimerl: Über einige Arten der Gattung Xyris aus dem Herbare des Wiener Hofmuseums. (Tafel IV)    61-   71. Viktor Pietschmann: Ichtyologische Ergebnisse einer Reise nach Island, an die atlantische Küste von Marokko und in die westliche Hälfte des Mittelmeeres. (Tafel V,VI)    72-  148. Franz Steindachner: Über Homopholis Erlangeri (n.sp.) aus Abessinien, Alestes Sadleri Blgr.  u. aus dem Victoria-Nyansa und Varicorhinus Tornieri (n.sp.) aus Deutsch-Kamerun. (Tafel VII)   149-  155. Arnold Penther, Emmerich Zederbauer: Ergebnisse einer naturwissenschaftlichen Reise zum Erdschias-Dagh (Kleinasien). III. Petrographischer Teil.   157-  178. Victor Ritter von Tschusi zu Schmidhoffen: Die Typen meiner Sammlung. Originalbeschreibungen der jetzt im k.k. naturhistorischen Hofmuseum in Wien befindlichen Typen.   179-  194. Victor Ritter von Tschusi zu Schmidhoffen: Die Farbenabberationen meiner Sammlung, jetzt im Besitze des k.k. naturhistorischen Hofmuseums in Wien.   195-  203. Alexander Zahlbruckner: Schedae ad "Kryptogamas exsiccatas" editae a Museo Palatino Vindobonensi.   204-  227. Franz Friedrich Kohl: Die Hymenopterengruppe der Sphecinen. III. Monographie der Gattung Ammophila W. Kirby (sens. lat. = Ammophilinae Ashmead. Abteilung A. Die Ammophilinen der paläarktischen Region. (Tafel VII-XIII)   228-  382. Anonymus: Verzeichniss der wissenschaftlichen Korporationen und Redaktionen, mit welchen wir im Schriftentausche stehen. (Seite V- X)</dc:description>
+   <dc:date>1906</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26571.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26571.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26571</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

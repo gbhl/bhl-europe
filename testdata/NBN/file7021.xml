@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Petauristidae and Sciuridae (Mammalia, Rodentia) from Tegelen, Zuurland, and the Maasvlakte (the Netherlands)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Reumer J.W.F.</dc:creator>
+   <dc:creator>Hoek Ostende, van den L.W.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:subject>new taxon</dc:subject>
+   <dc:subject>Tiglian</dc:subject>
+   <dc:subject>Pleistocene</dc:subject>
+   <dc:subject>Hylopetes</dc:subject>
+   <dc:subject>Sciurus</dc:subject>
+   <dc:subject>Spermophilus</dc:subject>
+   <dc:subject>The Netherlands</dc:subject>
+   <dc:description>The number of known sciurid and petauristid fossils from The Netherlands is nearly doubled with the description of material from the Zuurland boreholes, the Maasvlakte, and the Tegelen claypit. The material from Tegelen is assigned to a new species of flying squirrel, Hylopetes debruijni nov. sp. One molar from the late Early Pleistocene of the Zuurland borehole is assigned to Sciurus cf. S. vulgaris. The remaining finds from the Tiglian of the Zuurland boreholes, as well as the single molar from the Maasvlakte, are all assigned to Spermophilus primigenius; this name is preferred over the suggestive use of names of recent ground squirrels for fossil material. The presence, during roughly the same stratigraphic interval, of a flying squirrel in Tegelen and of ground squirrels in Zuurland confirms marked differences in the Late Tiglian environments between the east and the west of the Netherlands.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:328009</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 455 - 467</dcterms:extent>
+   <dcterms:isPartOf>Petauristidae and Sciuridae (Mammalia, Rodentia) from Tegelen, Zuurland, and the Maasvlakte (the Netherlands) (URN:ISSN:0923-9308) (Volume 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/328009.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/161086</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/328009</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

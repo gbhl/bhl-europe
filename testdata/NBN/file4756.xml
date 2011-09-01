@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schaaldieren (Crustacea) afgebeeld op postzegels</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Het enorm grote aantal postzegels dat tegenwoordig over de gehele wereld wordt uitgegeven is er de hoofdoorzaak van dat vele Philatelisten zich zijn gaan specialiseren door ófwel slechts zegels van bepaalde landen te verzamelen óf door een z.g. beeldverzameling op te bouwen. De duidelijke tendens die bij de posterijen van vele landen bestaat om hun zegels voor „beeld" Philatelisten aantrekkelijk te maken, draagt er toe bij dat zelfs het bijeenbrengen van een zeer gespecialiseerde beeldverzameling een fascinerende bezigheid is. Het is tegenwoordig reeds vrijwel onmogelijk om zonder grote kosten een representatieve verzameling postzegels met dierenafbeeldingen op te bouwen. Maar een dergelijke collectie tot een kleine diergroep te beperken, en deze dan ook zeer grondig te verzamelen, is zowel financieel mogelijk als zeer interessant en boeiend. Een dergelijke beperkte diergroep die relatief weinig op postzegels afgebeeld wordt is die der schaaldieren of kreeftachtigen (Crustacea). Deze dieren zijn zeer decoratief en lenen zich uitstekend om als motief op postzegels gebruikt te worden, zoals duidelijk uit de hier gegeven afbeeldingen blijkt. Het aantal mij bekende postzegels dat afbeeldingen van Crustacea draagt is kleiner dan 100. Zij variëren van zeer fraai uitgevoerde, zowel wetenschappelijk als artistiek volkomen verantwoorde afbeeldingen, waaruit de identiteit van de soort nauwkeurig bepaald kan worden, tot zeer schematische of gestyleerde figuren, waaraan men nauwelijks kan zien dat zij een schaaldier voorstellen. In deze bijdrage wordt getracht een zo volledig mogelijk overzicht te geven van alle postzegels die de afbeelding van een of meer schaaldieren dragen. De oudste mij bekende zegels met een dergelijk onderwerp zijn</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317260</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1967</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 21</dcterms:extent>
+   <dcterms:isPartOf>Schaaldieren (Crustacea) afgebeeld op postzegels (URN:ISSN:0459-1801) (Volume 8) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317260.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148546</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317260</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

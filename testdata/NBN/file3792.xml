@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Is the Jongmans collection cultural heritage or a scientific collection?</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Waveren, van I.M.</dc:creator>
+   <dc:subject>Paleobotanie, palynologie</dc:subject>
+   <dc:subject>Jongmans</dc:subject>
+   <dc:subject>palaeobtoany</dc:subject>
+   <dc:subject>Geologisch Bureau</dc:subject>
+   <dc:subject>Carboniferous Congress</dc:subject>
+   <dc:description>Wilhelmus Josephus Jongmans (1878-1957) was a Dutch botanist who became involved in palaeobotany at an early stage in his career. He became head of the department of the geological survey for coal winning in Limburg (‘Geologisch Bureau voor het Mijngebied’). He accumulated the bulk of the fossil plant collection now kept in the Nationaal Natuurhistorisch Museum. A great deal of this collection consists of Carboniferous material gathered during the period of coal exploitation in the south of the Netherlands, but it also reflects the research interests of its collectors and keepers and consequently is a reflection of the state of the art in palaeobotany since approximately 1920. In 1996 the Dutch Geological Survey was reorganized and the palaeobotanical collections needed to be kept safely for future generations. Our museum felt that the collection was both a reflection of Dutch history and a valuable scientific collection. Consequently half a floor of the collection tower was made available for the 70,000 plant fossils composing the collection.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215475</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 286 - 292</dcterms:extent>
+   <dcterms:isPartOf>Is the Jongmans collection cultural heritage or a scientific collection? (URN:ISSN:09224564) (Volume 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215475.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43876</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215475</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

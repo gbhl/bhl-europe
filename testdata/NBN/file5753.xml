@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : LII. The genus Parnassius Latreille in William H. Howe's "The Butterflies of North America" (1975)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The critical remarks by Clifford D. Ferris of the chapter "Parnassius" in William H. Howe's treatise of the butterflies of North America stimulated me to write the review following below and send it in for publication to the Journal of the Lepidoρterists' Society. Through this I hoped to open a discussion on and come to a classification of the Parnassius subspecies of North-America. Earlier attempts were never followed by any reaction. Since George L. Godfrey, Editor-in-chief of the said journal, to my regret informed me that the Editors had decided not to allow any space to discussions on Howe's book, I submitted my remarks for publication in the Zoologische Mededelingen of the Rijksmuseum van Natuurlijke Historie at Leiden. The chapter on Parnassius has been dealt with by John H. Shepard and Sigrid S. Shepard. For years I have cooperated with Mr. Shepard, to whom I am indebted for many a series of well-labelled North American Parnassius. Meeting in San Francisco in 1968, we discussed at length the distribution of Parnassius in North America and came to agreement, as prove Mr. Shepard's drawings, which I still have before me. As to P. eversmanni thor W. H. Edwards I have no comments. Regarding P. clodius Ménétriés the subspecies hel (mihi) is missing. It comes from Stevens Pass in the Cascade Mountains, Washington (at 4500 ft). It is a high altitude subspecies and in my collection there is no other series of Parnassius clodius so richly designed as the types depicted by me (1956, Parnassiana Nova 10: 243-244, pl. 3 figs. 1-6). As to the subspecies pseudogallatinus Bryk, I still doubt whether specimens from the eastern part of the Vancouver territory still belong to it, whereas in most characters they come very close to ssp. hel Eisner. Most specimens</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318258</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 213 - 216</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : LII. The genus Parnassius Latreille in William H. Howe's "The Butterflies of North America" (1975) (URN:ISSN:0024-0672) (Volume 52) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318258.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149544</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318258</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Lebbeus africanus spec, nov., a new shrimp (Crustacea, Decapoda, Caridea, Hippolytidae) from Mauritanian waters, with redescriptions of four other species in the genus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Fransen C.H.J.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea; Decapoda; Caridea; Hippolytidae; Lebbeus; new species; Mauritania; eastern Atlantic</dc:subject>
+   <dc:description>A new species of hippolytid shrimp, Lebbeus africanus spec. nov. is described from the continental slope off Mauritania, eastern Atlantic. A comparison with related species is made. Lebbeus bidentatus Zarenkov, 1976, L. carinatus Zarenkov, 1976, L. curvirostris Zarenkov, 1976, and L. saldanhae Barnard, 1947, are redescribed and their taxonomic status is discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319284</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1997</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 231 - 260</dcterms:extent>
+   <dcterms:isPartOf>Lebbeus africanus spec, nov., a new shrimp (Crustacea, Decapoda, Caridea, Hippolytidae) from Mauritanian waters, with redescriptions of four other species in the genus (URN:ISSN:0024-0672) (Volume 71) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319284.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150570</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319284</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 36_1 (1996)</dc:title>
+   <dc:creator>Alber  Renate, Bragazza  Luca, Caffaro  Silvia V., Christodoulakis  Dimitrios, Clement  Johannes, Gerdol  Renato, Guttenberger  Helmut, Juretic  Nikola, Kamari  Georgia, Khanna  K. R., Klein  Erich, Krajacic  Mladen, Mamula  Djordje, Mateos  Jose Luis, Molina  María del Carmen, Müller  Maria, Muniz  Enriqueta, Nersesian  Anoush, Pedrosa  Mercedes M., Plese  Nada, Polak  Zdenko, Shukla  Sudhir, Singh  S. P., Stevanovic  Vladimir, Teppner  Herwig, Van Hasselt  Philip R., Vicente  Carlos</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Sudhir Shukla, K. R. Khanna, S. P. Singh: Diurnal Variation of Major Alkaloids in Papaver somniferum.     1-    8. Silvia V. Caffaro, Jose Luis Mateos, Carlos Vicente: Changes in the Activity of an Enzymatic Marker Bound to Plasmalemma during the Photoperiodic Flowering Induction in Soybean.     9-   28. Johannes Clement, Philip R. Van Hasselt: Chlorophyll Fluorescence as a Parameter for Frost Hardiness in Winter Wheat. A Comparison with other Hardiness Parameter.    29-   41. Anoush Nersesian: On the Systematic Position of Silene propinqua SCHISCHK. Within the Critical Gruop of S. marschallii C. A. Mey. (Caryophyllaceae).    43-   52. Erich Klein: Die Blütenfärbung in der Gattung Nigritella (Orchidaceae-Orchideae) und ihre taxonomische Relevanz, inkl. einer Neukombination.    53-   62. Dimitrios Christodoulakis: The Flora of Ikaria (Greece, E. Aegean Islands).    63-   91. Georgia Kamari, Vladimir Stevanovic: Minuartia juniperina (Caryophyllaceae) in the Balkan Peninsula.    93-  105. Renate Alber, Luca Bragazza, Renato Gerdol: Ein Beitrag zur Moortypologie am südlichen Rand des Sphagnum-Moorareals in Europa.   107-  125. Helmut Guttenberger, Maria Müller: Quantitative Karyotyping of Norway Spruce Root Meristems by Image Analysis Methods and Pattern Recognition.   127-  133. Nada Plese, Nikola Juretic, Djordje Mamula, Mladen Krajacic, Zdenko Polak: Plant Virus in Soil and Water of Forest Ecosystems in Croatia.   135-  143. María del Carmen Molina, Carlos Vicente, Mercedes M. Pedrosa, Enriqueta Muniz: Binding of a Labelled Lectin from the Lichen Xanthoria parietina to ist own Phycobiont and Analysis of ist Enzymatic Activity.   145-  158. Herwig Teppner: Recensiones.   158-  160</dc:description>
+   <dc:date>1996</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30231.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30231.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30231</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

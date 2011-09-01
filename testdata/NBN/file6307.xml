@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Hydromedusen aus der Java-See</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Die kleine Sammlung von Hydromedusen aus dem malayischen Archipel, die sich im Besitze des Rijks Museum van Natuurlijke Historie in Leiden befindet, umfasst ca 400 Exemplare. Das Material stammt fast durchwegs aus der Java-See (Nordküste von Java, Semarang, Cheribon, Pekalungan), einige Exemplare sind von Singapore, und wurde in den Jahren 1905—1916 hauptsächlich durch P. BUITENDIJK, zum geringen Teile durch K. HAASNOOT gesammelt. Es handelt sich hier fast ausschliesslich um Küstenformen. Die Sammlung enthält nur 1 Anthomedusen- und 1 Narcomedusenart, dagegen sind die Leptomedusen u. z. die Familien der Eucopidae und die Aequoridae ziemlich reichlich, die erstere mit 6, die letztere mit 4 verschiedenen Formen vertreten. Trachomedusen fehlen ganz. Die Litteratur über malayische Hydromedusen ist nicht gross. Bei einem Vergleich mit den wichtigsten in betracht kommenden Arbeiten (MAAS, Meduses d'Amboine; derselbe, die craspedoten Meduses der SibogaExpedition) ergibt sich, dass die Medusenlisten in beiden genannten Arbeiten viel umfassender waren. In beiden Listen sind viel mehr Anthomedusen, in der Sibogaliste besonders viel Trachomedusen erwähnt. Die Uebereinstimmung in der Zusammensetzung der pacifischen (Fidji Inseln, AGASSIZ u. MAYER) und indischen (Maladiven, E. F. BROWNE) Medusenfauna mit derjenigen aus dem malayischen Archipel wurde bereits von MAAS hervorgehoben. Auf Grund der neueren Arbeiten von BIGELOW lässt sich dies auch auf die Hydromedusen von den Philippinen ausdehnen. Trotzdem die Sammlung kein annähernd erschöpfendes Bild der tatsächlich vorhandenen Medusenfauna der Nordküste Javas liefert, ist sie</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318812</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1928</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 206 - 226</dcterms:extent>
+   <dcterms:isPartOf>Hydromedusen aus der Java-See (URN:ISSN:0024-0672) (Volume 11) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318812.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150098</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318812</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

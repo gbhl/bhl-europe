@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a collection of birds from the Khwae Noi Valley, Western Siam</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Junge G.C.A.</dc:creator>
+   <dc:creator>Kooiman J.G.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>The present paper deals with a collection brought together by J. G. Kooiman in 1946. After the defeat of Japan, some Dutch biologists, who during the war had worked as prisoners of war on the notorious Burma railroad, biologically explored the Khwae Noi valley. Kooiman joined this party as an ornithologist. The collection might have been larger, but shooting was limited by the exceedingly high prices of cartridges at that time. The lack of field glasses also was an inconvenience. The collection is of interest as it is the first from this part of Siam. Afterwards the collection was sent to the Rijksmuseum van Natuurlijke Historie, where it was worked out by Junge, who is responsible for the taxonomical part of the paper. Kooiman added the field notes. Ardeola bacchus (Bp.) Buphus bacchus Bonaparte, Consp. Gen. Avium, 2, 1855, P- 127 (Malay Peninsula). Nikhe: 2 ♂♂ ad. (nos. 44, 51). No. Sex Date Wing Tail Culmen Tarsus 44 ♂ ad. 3-5-1946 226 80 63 64 51 ♂ad. 4-5-1946 233 88 65 60 Irides golden yellow. Maxilla pale blue at base, central part yellow, tip black. Mandible at base yellowish geen or blue, central part yellow, tip black. Tarsus yellow, feet yellowish green. The two birds are in breeding plumage. One of them (no. 44) has the chestnut of the neck mixed with white feathers. Field notes. The Chinese Pond Heron is a very common bird in western Siam, occurring everywhere in rice fields and marshes. Along the river Khwae Noi it is found in small flocks of 4-6 birds on grassy places, open</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317771</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1951</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 38</dcterms:extent>
+   <dcterms:isPartOf>On a collection of birds from the Khwae Noi Valley, Western Siam (URN:ISSN:0024-1652) (Volume 15) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317771.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149057</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317771</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

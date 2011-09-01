@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Martinus Houttuyn (1720-1798) and his contributions to the natural sciences, with emphasis on zoology</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:creator>Ligny, de W.</dc:creator>
+   <dc:subject>Zoölogie: algemeen</dc:subject>
+   <dc:subject>Martinus Houttuyn</dc:subject>
+   <dc:subject>Natuurlijke Historie</dc:subject>
+   <dc:subject>Uitgezogte Verhandelingen</dc:subject>
+   <dc:subject>Knorr</dc:subject>
+   <dc:subject>Stoll</dc:subject>
+   <dc:description>After a short characterization of the political and economical developments in 17th-18th century Netherlands and some general remarks on the Houttuyn family and its social status, the ancestry of Martinus Houttuyn is thoroughly established. In the medical thesis he presented at Leiden University in 1749 many interesting facts about his early life and scientific development, hitherto overlooked, were found. The six principal zoological publications of Houttuyn are reviewed and are listed together with many others on a wide diversity of subjects. The esteem he received during his lifetime from compatriots as well as foreign scientists, in contrast to the near oblivion in the 19th-20th century, is demonstrated. We tried to entangle the vicissitudes of his cabinet of natural history. A copy of the catalogue of the 1787 auction of the zoological specimens is added.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215552</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>ISBN 9073239931</dcterms:alternative>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 222</dcterms:extent>
+   <dcterms:isPartOf>Martinus Houttuyn (1720-1798) and his contributions to the natural sciences, with emphasis on zoology (Volume 349)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215552.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43934</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215552</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

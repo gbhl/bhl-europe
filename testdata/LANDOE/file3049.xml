@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 48 (1908)</dc:title>
+   <dc:creator>Abel  Othenio, Anonymus , Bamberger  Max, Conrad  Victor (Viktor), Freund  Leopold, Jäger  Gustav, Marburg  Otto, Marenzeller  Emil Edler von, Oberhummer  Eugen, Panzer  Theodor, Pintner  Theodor, Reithoffer  Max, Renezeder , Reuss  August Leopold von, Schweidler  Egon Ritter von, Stark  Michael, Toula  Franz, Tschermak-Seysenegg  Erich von</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Leopold Freund: Einiges über Schönheitspflege.     1-   51. Gustav Jäger: Elektrische und verwandte Erscheinungen in Metallen.    53-   73. Renezeder: Einiges aus dem Kreislauf der Materie: Reinigung und Verwertung städtischer Abwässer.    75-  116. Theodor Pintner: Die Aalfrage.   117-  143. Erich von Tschermak-Seysenegg: Die Mendelschen Vererbungsgesetze.   145-  164. Michael Stark: Die Interferenzbilder der Kristalle.   165-  185. Theodor Panzer: Die Rolle der unorganischen Salze im tierischen Organismus.   187-  213. Victor (Viktor) Conrad: Über Gewitter.   215-  234. Emil Edler von Marenzeller: Einiges über die Verdauung.   235-  265. Otto Marburg: Über Bau und Leistungen der Großhirnrinde bei Mensch und Tier.   267-  290. Franz Toula: Das Wandern und Schwanken der Meere.   291-  349. Egon Ritter von Schweidler: Über Fluoreszenz und lichtelektrische Wirkungen.   351-  364. August Leopold von Reuss: Über die Erziehung des Farbensinnes.   365-  394. Othenio Abel: Die Anpassungsformen der Wirbeltiere an das Meeresleben.   395-  422. Max Bamberger: Über die allotropen Modifikationen der Elemente.   423-  475. Max Reithoffer: Die Grundlagen der drahtlosen Telegraphie.   477-  495. Eugen Oberhummer: Die Polarforschung, ihre Ziele und Ergebnisse.   497-  547. Anonymus: Jahresbericht. (Seiten V-LVI.)</dc:description>
+   <dc:date>1908</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30519.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30519.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30519</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

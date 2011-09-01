@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vogelkundliche Nachrichten aus Oberösterreich, Naturschutz aktuell 7a (1999)</dc:title>
+   <dc:creator>Brader  Martin, Parz-Gollner  Rosemarie, Plass  Jürgen, Pühringer  Norbert, Stadler  Susanne, Steiner  Helmut, Webendorfer  Engelbert, Weissenbrunner  Brigitte</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Helmut Steiner: Abnahme der Goldammer (Emberiza citrinella) - Vogel des Jahres -zwischen 1990 und 1998? Indikation für gravierende Probleme in der bäuerlichen Kulturlandschaft sowie Prädation durch den Sperber (*Accipiter* *nisus*) in Relation zur Waldfragmentierung     1-    9. Martin Brader, Rosemarie Parz-Gollner: Durchzug und Winterverbreitung des Kormorans (Phalacrocorax carbo sinensis) in Oberösterreich 1996/97 und 1997/98    11-   24. Engelbert Webendorfer: Eine ungewöhliche Beute eines Prachttauchers (Gavia arctica) in Oberösterreich    25-   26. Jürgen Plass: Ergebnisse der Eulenerhebung 1998 in Oberösterreich    27-   29. Norbert Pühringer, Susanne Stadler, Brigitte Weissenbrunner: Ornithologische Beobachtungen aus Oberösterreich aus dem Jahr 1998, ausgenommen Brutvögel    31-   54</dc:description>
+   <dc:date>1999</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/153.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/153.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=153</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

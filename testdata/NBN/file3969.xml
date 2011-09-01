@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Euagathis species (Hymenoptera: Braconidae: Agathidinae) from China and northern Vietnam</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:creator>Chen X.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Agathidinae</dc:subject>
+   <dc:subject>Disophrini</dc:subject>
+   <dc:subject>Euagathis</dc:subject>
+   <dc:subject>Balcemena</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>synonyms</dc:subject>
+   <dc:subject>Indo-Australian</dc:subject>
+   <dc:subject>Oriental</dc:subject>
+   <dc:subject>China</dc:subject>
+   <dc:subject>Vietnam</dc:subject>
+   <dc:subject>Tonkin</dc:subject>
+   <dc:subject>India</dc:subject>
+   <dc:description>The species of the genus Euagathis Szépligeti, 1900 (including Balcemena Cameron, 1903; Braconidae: Agathidinae) from China and northern Vietnam are revised and keyed. Twelve species are recognised, of which six are new: Euagathis argentosa spec. nov. and E. gracilitarsis spec. nov. from Yunnan (China), E. maxichora spec. nov. and E. mayunae spec. nov. from Fujian (China), E. parallela spec. nov. and E. robusta spec. nov. from Tonkin (Vietnam), the latter also from Yunnan. The following are new synonyms: Euagathis chinensis Szépligeti, 1902, E. asiatica Fahringer, 1937, E. semenovi Shestakov, 1940, and E. relativa Bhat &amp; Gupta, 1977, of E. ophippium (Cameron, 1899); E. nigritarsis (Cameron, 1899), E. hongkongensis Fullaway, 1919, E. nigrithorax Bhat &amp; Gupta, 1977, E. varuni Bhat &amp; Gupta, 1977, and E. transcarinata Bhat &amp; Gupta, 1977, of E. forticarinata (Cameron, 1899); E. albiventris Enderlein, 1920, E. sikkimensis Enderlein, 1920 and E. chinensis (Bhat &amp; Gupta, 1977) of E. borneoensis Szépligeti, 1902; E. melanocera (Cameron, 1899), E. japonica Szépligeti, 1902, E. semiflavus Szépligeti, 1908, E. horniana Enderlein, 1920, E. formosana Enderlein, 1920, E. formosana var. obscurior Enderlein, 1920, E. nigrifrons Enderlein, 1920, E. tricarinata Enderlein, 1920, of E. chinensis (Holmgren, 1868). The genus Balcemena Cameron, 1903, is synonymised with Euagathis Szépligeti, 1900, consequently, Euagathis ruficollis (Cameron, 1902; not Cameron, 1899) is replaced by E. rufonigra Enderlein, 1920.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217478</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2002</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 309 - 346</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Euagathis species (Hymenoptera: Braconidae: Agathidinae) from China and northern Vietnam (URN:ISSN:00240672) (Volume 76, 17-24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217478.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45099</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217478</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

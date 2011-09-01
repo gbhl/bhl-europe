@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 26 (1866)</dc:title>
+   <dc:creator>Anonymus , Brittinger  Christian Casimir, Scheibelberger  Friedrich, Schmieder  Pius, Schwabenau  Anton Ferdinand</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Christian Casimir Brittinger: Die Brutvögel Oberösterreichs nebst Angabe ihres Nestbaues und Beschreibung ihrer Eier.     1-  127. Friedrich Scheibelberger: Beiträge zur Geschichte des Marktes und der Pfarre Vecklamarkt.   129-  220. Pius Schmieder: Beiträge zur Landeskunde von Oberösterreich.   221-  243. Anton Ferdinand Schwabenau: Sechsundzwanzigster Jahres-Bericht des Verwaltung - Ausschusses des Museums Francisco-Carolinum an die General-Versammlung. III-VIII. . Anonymus: I. Vermehrung der Sammlungen des Museum Francisco Carolinum im Jahre 1865. IX-XXXI. . Anonymus: V. Verzeichnis der Mitglieder des Museum Francisco-Carolinum im Jahre 1865. LV-LXIV. . Anonymus: IV. Protektor, Vorstand, Verwaltungs-Ausschuss und Mandatare des Museum Francisco-Carolinum. XL-LIV. . Anonymus: II. Verzeichniss der wissenschaftlichen Gesellschaften und Anstalten, in welchen Schriftenaustausch stattfindet. XXXII-XXVI. . Anonymus: III. Veränderungen im Stande der Mitglieder des Museum Francisco-Carolinum von der Zeit der Ausgabe des 25. Berichtes 1865 bis zu jenem des 26. Berichtes 1866. XXXVII-XXXIX.</dc:description>
+   <dc:date>1866</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30088.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30088.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30088</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

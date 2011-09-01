@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 3 (1916)</dc:title>
+   <dc:creator>Hintz  E., Keissler  Karl von (Carl), Kittl  Ernst, Kränzlin  Fr., Pesta  Otto, Rebel  Hans, Rechinger sen.  Karl, Sassi  Moritz, Siebenrock  Friedrich, Spaeth  Franz, Steindachner  Franz, Steiner  Julius, Zahlbruckner  Alexander, Zerny  Hans</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Friedrich Siebenrock: Schildkröten aus dem nördlichen Seengebiet und von Belgisch-Kongo. In: Wissenschaftliche Ergebnisse der Expedition R. Grauer nach Zentralafrika, Dezember 1909 bis Februar 1911. Tafel I-II.     1-   12. Franz Steindachner: Notizen.     1-   38. Karl Rechinger sen., Karl von (Carl) Keissler: Verzeichnis der im Orchideenherbare von Reichenbach fil. enthaltenen Sammlungen.    13-   23. Julius Steiner: Aufzählung der von J. Bornmüller im Oriente gesammelten Flechten.    24-   39. Franz Spaeth: Coleopteren aus Zentralafrika. V. Cassidinae. In: Wissenschaftliche Ergebnisse der Expedition R. Grauer nach Zentralafrika, Dezember 1909 bis Februar 1911.    40-   50. Ernst Kittl: Halorellenkalke vom Vorderen Gosausee. Tafel III.    51-   54. Fr. Kränzlin: Orchidaceae Novae.    55-   65. Hans Rebel: Die Lepidopterenfauna Kretas. Tafel IV.    66-  172. Hans Zerny: Neue Heteroceren aus der Sammlung des k.k. naturhistorischen Hofmuseums in Wien. Tafel V.   173-  195. Alexander Zahlbruckner: Schedae ad "Kryptogamas exsiccatas" editae a Museo Palatino Vindobonensi.   197-  225. Otto Pesta: Sind die Dekapoden der Adria "gut" bekannt? Tafel VI.   226-  229. E. Hintz: Coleopteren aus Zentralafrika. VI. Cerambycidae. In: Wissenschaftliche Ergebnisse der Expedition R. Grauer nach Zentralafrika, Dezember 1909 bis Februar 1911.   230-  238. Moritz Sassi: Beitrag zur Ornis Zentralafrikas. II. Teil. Tafel VII-VIII.   239-  306</dc:description>
+   <dc:date>1916</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26580.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26580.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26580</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The land Prosobranchia of suriname with the description of two new species of Neocyclotus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Regteren, van C.O.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Vernhout (1914) was the first to publish an account of the land and freshwater Mollusca of Suriname. In this publication he assembled not only the older literature in which species were mentioned from Suriname, but also he named the Mollusca collected by seven expeditions and some travellers, and included in his paper the material which W. C. van Heurn collected during his trip in 1911. So he laid a sound basis for future investigations. In the present paper only the land Prosobranchia are treated. On this matter, so far as I know, only one paper has been published since 1914. This paper (Altena, 1960) mentioned Lucidella lirata (Pfeiffer) from Tambaredjo and Sidoredjo in the Saramacca district. The Rijksmuseum van Natuurlijke Historie received specimens from Suriname from many persons to whom I am much indebted for their cooperation. Thanks are also due to Mr. H. E. Coomans who sent me the specimens on loan, which were collected in 1926 by D. L. Fernandes. Here follows a list which mentions in chronological sequence the collectors with the months and the years in which they collected, together with the abbreviations under which they are mentioned in the text. F : D. L. Fernandes, Wilhelmina Gebergte Expedition, VII-VIII 1926 (for the route, see: Tijdschr. Kon. Ned. Aardr. Gen., 1927, (2) 44: 39, map 6). Ce : H. W. C. Cossee, III 1939. A : C. O. van Regteren Altena, I-III 1963. D : P. H. van Doesburg Jr., III 1963. H : P. W. Hummelinck, II 1964. M : W. J. M. Maassen, VI 1967-VI 1968.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318775</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 69 - 73</dcterms:extent>
+   <dcterms:isPartOf>The land Prosobranchia of suriname with the description of two new species of Neocyclotus (URN:ISSN:0024-0672) (Volume 48) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318775.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150061</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318775</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

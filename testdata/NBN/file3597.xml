@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 49. A preliminary review of the Aegithalidae, Remizidae and Paridae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eck S.</dc:creator>
+   <dc:creator>Martens J.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Paridae</dc:subject>
+   <dc:subject>Aegithalidae</dc:subject>
+   <dc:subject>Remizidae</dc:subject>
+   <dc:subject>species limits</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>eastern Palaearctic region</dc:subject>
+   <dc:subject>Indo-Malayan region</dc:subject>
+   <dc:subject>morphology</dc:subject>
+   <dc:subject>bioacoustics</dc:subject>
+   <dc:subject>molecular genetics</dc:subject>
+   <dc:subject>secondary contacts</dc:subject>
+   <dc:subject>hybridisation;introgression</dc:subject>
+   <dc:description>Proposed recent taxonomic changes in Paridae, Aegithalidae, and Remizidae are reviewed within the geographic scope of this series and their reliability is discussed in terms of the Biological Species Concept with respect to secondary contacts, hybridization, introgression, bioacoustics, and molecular genetics. Certain previously unpublished data are added to support the taxonomic decisions.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209958</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 63</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 49. A preliminary review of the Aegithalidae, Remizidae and Paridae (URN:ISSN:00240672) (Volume 80-5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209958.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41716</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209958</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

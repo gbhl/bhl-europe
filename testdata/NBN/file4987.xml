@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Rijksmuseum van Geologie en Mineralogie, 1878-1978 = The Rijks Museum for Geology and Mineralogy, 1878-1978 / P.C. Zwaan (editor)]: Rijksmuseum van Geologie en Mineralogie 1878 - 1978 : presentation and education</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Wilk, van der L.</dc:creator>
+   <dc:subject>Onderwijs, beroepsuitoefening, organisaties</dc:subject>
+   <dc:description>Presentation and education form one of the basic functions of a museum. In the National Museum of Geology and Mineralogy it was realised from the beginning that it was important to have part of the collections on display. In 1878 Professor Martin, the first director of's Rijks Museum van Geologie en Mineralogie (National Museum of Geology and Mineralogy), stated that the collection should be installed in such a way that it was easily accessible for visitors and arranged scientifically for professionals. To make this possible without damage to the objects new showcases were made in 1879 and following years. In the annual report 1880/1881 Martin wrote that the Geological National Museum was separated from the Natural History Museum and open for the public on Wednesday and Saturday afternoon, though in the small building the galleries could not be illuminated and a proof with light-reflectors was unsuccessful. Even in those early years Martin did not restrict presentation to the exhibition within the museum, but incidentally small collections of minerals, rocks and fossils were lent for special exhibitions like the International Colonial and Export Exhibition (1884) in Amsterdam, where the museum collection was awarded a golden medal. In the same year the Minister of the Interior visited the museum, where Martin showed him the crammed galleries and told the Minister that a large number of the prehistoric animals could never be shown in the existing galleries. By purchase and donation collections and the number of exhibition objects increased and another building had to be hired for storage. Now that the galleries no longer had to be used for storage the showcases could be arranged in a different way allowing the daylight to illuminate the objects properly. In 1890 the building of a new museum started. It was ready for use in 1892, but it took some time to get the permanent exhibition adjusted. In the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317492</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 27 - 35</dcterms:extent>
+   <dcterms:isPartOf>[Rijksmuseum van Geologie en Mineralogie, 1878-1978 = The Rijks Museum for Geology and Mineralogy, 1878-1978 / P.C. Zwaan (editor)]: Rijksmuseum van Geologie en Mineralogie 1878 - 1978 : presentation and education (URN:ISSN:0375-7587) (Volume 48)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317492.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148778</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317492</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

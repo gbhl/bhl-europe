@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the genus Matuta Weber, 1795 (Crustacea: Brachyura: Calappidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Galil B.S.</dc:creator>
+   <dc:creator>Clark P.F.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea; Decapoda; Brachyura; Calappidae; Matuta; taxonomy; new species; new genus. Matuta Weber</dc:subject>
+   <dc:subject>1795 is revised</dc:subject>
+   <dc:subject>three new genera and two new species are established</dc:subject>
+   <dc:subject>detailed synon- ymies are listed</dc:subject>
+   <dc:subject>all taxa are described and illustrated and a key is provided.</dc:subject>
+   <dc:description>Introduction Amid the gaudily-coloured parade of tropical crabs few are more splendidly patterned than the matutine genera. But the patterns decorating these species brought about taxonomic disarray and from the very beginning they baffled their researchers. Already in 1817 Leach remarked: "the characters which distinguish the species are very obscure". MacLeay (1838) wrote in exasperation: "there are many species confounded together under the name Matuta victor, I do not consider the above names of the family and genus to possess any authority". Stebbing (1905) concurred: "From the interminable discussion of minute differences, as to the importance of which distinguished authors neither agree one with another nor always with themselves, it seems safe to conclude that most of the specific names which have been coined for this genus may be dispensed with". Taxonomists, finding "the differences in armature and coloration of the carapace and anterior legs so slight and so numerous" (Miers, 1877), were inclined either to admit a single species (with several varieties) (de Haan, 1841; Ortmann, 1892; Doflein, 1902) or two (A. Milne Edwards, 1874) or, exulting in the variety of the exuberantly colourful specimens, described many new species and varieties (Miers, 1877). Thus, Henderson (1877) found that: "there are few groups of Decapod Crustacea in which authorities have differed more as to the specific or varietal value of forms". A study of the extensive collections of The Natural History Museum, London (NHM) and Nationaal Natuurhistorische Museum, Leiden (formerly Rijksmuseum van Natuurlijke History (RMNH)), together with material made available by the American Museum of Natural History, New York (AMNH), Firenze University (MF), Muséum National d'Histoire Naturelle, Paris (MNHN), National University, Singapore (NUS), Queensland Museum (QM), Senckenberg Museum, Frankfurt (SM), Tel</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317786</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 55</dcterms:extent>
+   <dcterms:isPartOf>A revision of the genus Matuta Weber, 1795 (Crustacea: Brachyura: Calappidae) (URN:ISSN:0024-1652) (Volume 294) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317786.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149072</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317786</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Naturkundliches Jahrbuch der Stadt Linz (Linz) 11 (1965)</dc:title>
+   <dc:creator>Bökönyi  Sándor, Hamann  Helmut Heinrich Franz, Häusler  Heinrich, Janik  Vinzenz, Kerschner  Theodor, Kohl  Hermann, Kusdas  Karl, Mandl  Karl, Mayer  Gerald, Merwald  Friedrich (Fritz), Reichl  Ernst Rudolf, Troll-Obergfell  Bruno, Zicsi  András</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Sándor Bökönyi: Untersuchung der Pferdeskelette des baierischen Gräberfeldes von Linz-Zizlau     7-   20. Heinrich Häusler: Vorbericht über Untersuchungen von Gesteinsdeformationen durch Spannungsänderungen an Probekörpern aus den aquitanen Schiefertonen im Raum von Linz    21-   36. Hermann Kohl: Bericht zur Bohr- und Aufschlußkartei der Naturkundlichen Station Linz    37-   38. Vinzenz Janik: Die Bodenentwicklung auf der Hochterasse der Traun bei Linz (Ist dieParabraunerdedes Harter Plateaus eine autochthone Bodenbildung?    39-  106. Hermann Kohl: Karte der Oberflächenformen der KG Holzheim und deren Umgebung im Maßstab 1:5000   107-  120. Bruno Troll-Obergfell: Über die natürliche Verjüngung des Baumbestandes in einem Park in Linz   121-  124. András Zicsi: Die Lumbriciden Oberösterreichs und Österreichs unter Zugrundelegung der Sammlung Karl Weselys mit besonderer Berücksichtigung des Linzer Raumes   125-  199. Karl Mandl: Die Arten der Gattung Carabus L. im Raumvon Linz und ihre weitere Verbreitung in den übrigen Gebieten von Österreich   203-  255. Helmut Heinrich Franz Hamann: Drei Beiträge zur Linzer Wildbienenfauna (Kulturfolger und rehabilitierung einer guten Art)   257-  284. Karl Kusdas: Beitrag zur Kenntnis der Goldwespenfauna (Chrysididae und Cleptidae) Oberösterreichs, unter  besonderer Berücksichtigung des Großraumes von Linz (Nachtrag)   285-  287. Ernst Rudolf Reichl: Zur Nachtfalterfauna des Linzer Stadtrandes (Lichtfangerlebnisse 1964 in der Lärchenau)   289-  306. Friedrich (Fritz) Merwald: Die Reptilien und Amphibien der Steyregger Auen   307-  318. Gerald Mayer: Populationsbiologische Untersuchungen an Blaumeisen   319-  334. Theodor Kerschner, Gerald Mayer: Die Einwanderung der Bisamratte in den Großraum von Linz und ihre weitere Ausbreitung in Österreich   335-  350</dc:description>
+   <dc:date>1965</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24589.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24589.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24589</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

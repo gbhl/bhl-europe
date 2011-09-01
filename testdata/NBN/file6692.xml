@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new species of Sulcia Kratochvil (Araneida, Leptoneptidae) from Greece, and a discussion of some Japanese Cavernicolous Leptonetidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deeleman-Reinhold C.L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>A NEW SPECIES OF SULCIA In 1962, Dresco described the first representative of the genus Sulcia from the Greek mainland, Sulcia lindbergi. Recently, Brignoli (1968a) considered this species a subspecies of Sulcia cretica Fage. The genus is also known from Dalmatia, Hercegovina, Montenegro, and some adjacent islands (Kratochvil, 1938) and from the Island of Crete (Fage, 1945). In January 1969, my husband P. R. Deeleman, had the opportunity to visit the Koutouki Cave near the village of Ljopessi (officially also called Peania), situated at approximately 20 km west of Athens. This visit was made possible by the assistance of Mrs. A. Petrochilos and Mr. A. Kanellis, to whom we feel very much obliged. In this cave a new species of Sulcia was collected. The cave was discovered fairly recently; it has been exploited as a show cave with electric illumination since 1962. The spiders were found in the huge main chamber, where they were hanging in their webs in crevices in the wall or between stalagmites. The cave is also inhabitied by bats, terrestrial isopods, diplopods and Orthoptera (Dolichopoda petrochilosi Chopard). The original entrance is a vertical shaft of about 15 meters, it has been made accessible for tourism by an artificial entrance. Sulcia kanellisi new species (figs. 1, 2, 4a, 6b, 7) Material. — 1 ♂ (holotype), 6 ♀, 2 subad. ♂, 3 subad. ♀, Koutouki Cave near Ljopessi, Greece, 11 January, 1969, leg. P. R. Deeleman; 1 ♂, 1 ♀, id., leg. L. A. van Dam. Description. — Length of adult ♂ (type) 2.4 mm, length of largest ♀ (paratype) 2.9 mm; cephalothorax: in ♂ 0.90 mm long, 0.67 mm wide, in ♀ 1.31 mm long, 0.96 mm wide. Cephalothorax. — Pale yellow, appendages slightly darker, abdomen whit-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319197</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 289 - 301</dcterms:extent>
+   <dcterms:isPartOf>A new species of Sulcia Kratochvil (Araneida, Leptoneptidae) from Greece, and a discussion of some Japanese Cavernicolous Leptonetidae (URN:ISSN:0024-0672) (Volume 45) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319197.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150483</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319197</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

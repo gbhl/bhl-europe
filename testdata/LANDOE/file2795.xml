@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 3_1_2 (1951)</dc:title>
+   <dc:creator>Brat  Lia, Cufodontis  Georg, Diannelidis  Themistokles, Eggler  Josef, Härtel  Hildegard, Härtel  Otto, Janchen  Erwin Emil Alfred, Kropfitsch  M., Meissner  Ruth, Pfeiffer  Hans H., Rechinger  Karl Heinz, Rosenzopf  Edith, Weber  Friedl, Widder  Felix Josef, Zöttl  Heinz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Emil Alfred Janchen: Beiträge zur Benennung, Verbreitung und Anordnung der Farn- und Blütenpflanzen Österreichs, III.     1-   21. Lia Brat, Friedl Weber: Anthoxanthin in den Schließzellen der Kronblätter von Victoria amazonica und Nymphaea zanzibariensis.    22-   28. Themistokles Diannelidis: Zur protoplasmatischen Anatomie des Blattes von Halophila stipulacea.    29-   43. Karl Heinz Rechinger: Cruciferae iranicae novae vel minus cognitae.    44-   68. Hildegard Härtel: Über die Quellbarkeit pflanzlicher Membranen.    69-   83. Georg Cufodontis: Wilhelm Georg Schimper, ein Pionier der botanischen Erforschung Äthiopiens.    84-   89. Ruth Meissner: Über das Vorkommen eines die Keimung des Wurzelparasiten Alectra Vogelii BENTH. hervorrufenden Stoffes in den Wirtswurzeln.    90-   94. Edith Rosenzopf: Sind Virus-Einschlußkörper?    95-  101. Edith Rosenzopf: Hemmung der Eiweißspindel-Bildung durch UV-Bestrahlung.   102-  103. Friedl Weber: Steinthyllen.   104-  107. M. Kropfitsch: Apfelgas-Wirkung auf Anthozyan-Bildung.   108-  109. Friedl Weber: Impatiens-Nektar.   110-  111. Hans H. Pfeiffer: Über die Pflanzengesellschaft des Kleinsten Igelkolbens in wassergefüllten Torfstichen.   112-  120. Heinz Zöttl: Experimentelle Untersuchungen über die Ausbreitungsfähigkeit alpiner Pflanzen .   121-  125. Friedl Weber, Felix Josef Widder, Josef Eggler, Otto Härtel: Recensiones.   126-  134</dc:description>
+   <dc:date>1951</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30067.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30067.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30067</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

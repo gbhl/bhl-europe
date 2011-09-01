@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biologie en ecologie van de Nederlandse pissebedvliegen (Diptera: Rhinophoridae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Wijnhoven H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biologie</dc:subject>
+   <dc:subject>Ecologie</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Fenologie</dc:subject>
+   <dc:description>Biology and ecology of the Dutch woodlouse-flies (Diptera: Rhinophoridae) In a previous paper the faunistics of seven Dutch species of Rhinophoridae were summarised (Wijnhoven &amp; Zeegers 1999). In the current publication the distribution, the biology and ecology of six species of woodlouse-flies in the vicinity of Nijmegen, province of Gelderland, the Netherlands, are discussed. The only ‘missing’ species (Stevenia atramentaria (Meigen, 1824)) may be considered extinct in the Netherlands. In total 3490 specimens were recorded from 1996 up to August 2001, 325 of these were collected by hand, 3165 were recorded as sightings. Most observations were made at an old graveyard ‘Daalseweg’ in the city of Nijmegen (fig. 2, 3, 5, table 1). For all species egg deposition was observed in detail. In total 80 females were seen laying their eggs seperately underneath stones, tree bark, pieces of cement and in crevices of walls (fig. 2), most times without any woodlice nearby. Melanophora roralis and P. maculata seemed to prefer the higher altitudes of walls and occasionally trees (between one and three meters), but P. melanocephala and T. rubricosa placed their eggs mainly at soil surface level. On several occasions many first instar larvae of P. melanocephala could be found by carefully investigating these sites. Especially in M. roralis and P. melanocephala the males gathered in considerable numbers on sun exposed walls, tree trunks and gravestones (fig. 3). Because of the very typical flight pattern of M. roralis the males could be identified easily from a distance (fig. 4). Rhinophora lepida and T. rubricosa were regularly observed visiting flowers. The first species was found mainly on flowers of Heracleum sphondylium. An interesting observation was that of a dead woodlouse Porcellio scaber, most fanatically scavenged by seven females of T. rubricosa. Both species of woodlouse-flies seem to prefer habitats with shrubs, trees or walls overgrown with ivy. Several species of jumping spiders (Arachnida: Salticidae) were observed preying on Rhinophoridae. The female flies were most vulnerable when depositing their eggs. In 1976 S. umbratica was recorded for the first time in the Netherlands. Obviously the species is much more common now. In figure 1 the previously unknown morphology of the egg and first instar larva of S. umbratica is given (Wijnhoven in prep.). The flight periods of five species are presented in the figures 6-12. Of R. lepida the males significantly appeared earlier than the females, the difference being about ten days. Because of the large number of records the flight period of P. melanocephala could be analysed in detail (fig. 7, 8). Presumably the other species having three generations per year will show a similar pattern. In the first generation as well as in the second, two peaks were observed: 1a, 1b and 2a, 2b. It is suggested the population consists of two, partly interacting classes. The first one would have the generations 1a, 2a and 3 in the first year, 1b and 2b the following year, the second class the complementary generations 1b, 2b and 1a, 2a, 3 respectively. In table 2 the records of Rhinophoridae are linked with the woodlouse species occurring in the sites where the adult flies were found. From this it becomes clear that all Rhinophoridae species, except R. lepida, preferred the synantropic habitats, which were characterised by the ‘Mediterranean’ woodlice A. vulgare and P. spinicornis. It is suggested here that Rhinophoridae species are not host-specific. Also, from the observations (figure 5 and table 2) it appeared all species can be found together in similar microhabitats. So to some extend they may compete for the same hosts. But maybe some species parasitize the smaller woodlice (Bedding in Sutton (1972)) and one other species (S. umbratica) seemed specialised in selecting female specimens with oostegites (Wijnhoven in prep.). In this respect many questions remain unanswered.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:218658</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2001</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 91 - 109</dcterms:extent>
+   <dcterms:isPartOf>Biologie en ecologie van de Nederlandse pissebedvliegen (Diptera: Rhinophoridae) (URN:ISSN:01692453) (Volume 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/218658.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45862</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/218658</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 104 (1974)</dc:title>
+   <dc:creator>Becker  Leander Peter, Fossel  Annemarie, Habeler  Heinz, Hanselmayer  Franz, Kaiser  Helmut, Kepka  Otto, Kreissl  Erich, Maurer  Willibald, Melzer  Helmut, Nagl  Hubert, Roll  Paul, Schuster  Reinhart, Theis  Gerda, Thurner  Andreas, Wakonigg  Herwig, Widder  Felix Josef, Zsilincsar  Walter</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Hanselmayer: Beitrag zur Sedimentpetrographie der Grazer Umgebung XXXII. Zur Petrographie der steirischen Glazialschotter, speziell Graz-Brucknerstraße.     9-   18. Leander Peter Becker: Beitrag zur Geologie des nordöstlichen Stubalpenrandes.    19-   29. Andreas Thurner: Erdbeben und Kohlensäure. Eine Anregung.    31-   37. Hubert Nagl: Hydrologische Untersuchungen im oberen Ennsgebiet.    39-   56. Herwig Wakonigg: Witterungsspiegel 1973 für die Steiermark unter besonderer Berücksichtigung von Graz.    57-   67. Walter Zsilincsar: Der Fremdenverkehr in Graz 1973.    69-   86. Annemarie Fossel: Die Bienenweide der Ostalpen, dargestellt am Beispiel des steirischen Ennstales.    87-  118. Willibald Maurer: Die Flora von Krumegg und St. Marein bei Graz (Steiermark, Österreich).   119-  142. Helmut Melzer: Neues zur Flora von Steiermark, XVI.   143-  158. Paul Roll: Die Verbreitung des "Lärchenkrebses" in der Steiermark.   159-  164. Felix Josef Widder: Eine Monstrosität von Leontodon helveticus in Steiermark.   165-  170. Heinz Habeler: Zur Kenntnis der Coenonympha-Arten arcania L. und Gardetta Prunn.: die systematische Wertung der steirischen "epiphilea Rebel" (Lepidoptera, Satyridea).   171-  175. Helmut Kaiser: Beitrag zur Kenntnis der Nematodenfauna der Steiermark (Fam. Mermithidae).   177-  181. Gerda Theis, Reinhart Schuster: Gestielte Tröpfchenspermatophoren bei Calyptostomiden (Acari, Trombidiformes).   183-  185. Heinz Habeler: Zygaena transalpina gulsensis Dan. nun auch im mittelsteirischen Begland nachgewiesen.   187-  189. Otto Kepka: Ein neuerlicher Nachweis der Birkenmaus (Sicista betulina Pallas) aus der Steiermark (Mamm., Rodentia).   191. Erich Kreissl: Ein Fund von Eurythyrea quercus Herbst (Ins., Coleoptera, Buprestidae).   193-  194. Reinhart Schuster: Geschäftsbericht über das Vereinsjahr 1973.   201-  204</dc:description>
+   <dc:date>1974</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28651.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28651.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28651</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

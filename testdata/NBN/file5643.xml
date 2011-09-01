@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Early stages of the "Ceracidae" (Lepidoptera), with remarks on the true position of the group</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The superfamily Tortricoidea, the so-called leaf-rollers, contains a group of exceptionally large and conspicuously coloured species, forming the chiefly Central Asiatic Cerace group. Superficially these species do not resemble other leaf-rollers very closely. Consequently several authors placed them incorrectly: Butler (1881), Warren (1888) and Cotes (1889) in the Lithosiidae, Snellen (1903) in the Tineidae, Meyrick (1907) originally in the Plutellidae. But Walker (1863) and also Moore (1888) recognised their Tortricoid character and later also Meyrick (1908) came to the same conclusion. However, the true systematic position of the Cerace group within the superfamily Tortricoidea appeared to be even more puzzling, and subject to considerable controversy. So Meyrick (1908) established the tortricoid family Ceracidae but soon abandoned this idea and in 1912 placed the species known at that time in the family Tortricidae. The present author (Diakonoff) originally followed the last solution but later (1939) separated the Cerace group as a subfamily under a less fortunately chosen name, Ceracidii. However, after a revision of the group with the aid of more extensive and rare material at the British Museum (Diakonoff, 1950), he was convinced of its independence, and resurrected Meyrick's family Ceracidae. At about the same time Obraztsov (1949) relegated the taxon to the status of a tribe, "Ceraciini", deriving his conclusion, however, from the study of a rather limited material. So far our entire knowledge of the Ceracinae has been based on the characters of the adults, no information on the early stages being available. For a long time nothing was known about the larvae or the host plants of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318148</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 59 - 66</dcterms:extent>
+   <dcterms:isPartOf>Early stages of the "Ceracidae" (Lepidoptera), with remarks on the true position of the group (URN:ISSN:0024-0672) (Volume 39) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318148.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149434</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318148</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

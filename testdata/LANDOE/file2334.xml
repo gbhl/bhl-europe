@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 101 (1971)</dc:title>
+   <dc:creator>Gruber  Gerald, Kinzl  Hans, Leitner  Wilhelm, Morawetz  Sieghart Otto, Otto  Heinz, Riedl  Helmut, Schaffhauser  Horst, Spreitzer  Hans, Stocker  Erich, Wakonigg  Herwig, Zötl  Josef, Zsilincsar  Walter</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Sieghart Otto Morawetz: Herbert Paschinger zum 60. Geburtstag.    11-   13. Sieghart Otto Morawetz: Verzeichnis der wissenschaftlichen Veröffentlichungen von Univ.-Prof. Dr. H. Paschinger.    15-   20. Sieghart Otto Morawetz: Verzeichnis der unter der Leitung von Univ.-Prof. Dr. H. Paschinger verfaßten Dissertationen.    21-   23. Gerald Gruber: Uferterrassen in Abhängigkeit von der Wetterlage.    27-   33. Hans Kinzl: Die Steiermark in der Alpenvereinskartographie.    35-   54. Wilhelm Leitner: Die Bosporus-Landschaft als Beispiel für den Strukturwandel der Istanbuler Außenbezirke.    55-   72. Sieghart Otto Morawetz: Fragen der Hangentwicklung.    73-   95. Heinz Otto: Die Temperaturumkehr in der Südweststeiermark.    97-  118. Helmut Riedl: Geographische Aspekte der Siedlungsgeschichte am Beispiel der Raabtallandschaft.   119-  131. Horst Schaffhauser: Eine Hang- und Wanduntersuchung im Bereich der Reißeckgruppe.   133-  138. Hans Spreitzer: Rezente und eiszeitliche Grenzen der glazialen und periglazialen Höhenstufen im Zentralen Taurus (vornehmlich am Beispiel des Kilikischen Ala Dag).   139-  162. Erich Stocker: Plaiken - Erscheinungsbilder rascher Hangentwicklung.   163-  174. Herwig Wakonigg: Gletscherverhalten und Klimaelemente.   175-  194. Josef Zötl: Isotopenmessungen in der Hydrogeographie als Hilfsmittel zur Untersuchung der Klimaschwankungen in der Spät- und Nacheiszeit.   195-  202. Walter Zsilincsar: Die Kärntnerstraße in Graz als Beispiel für den jüngsten Strukturwandel an einer städtischen Ausfallstraße.   203-  235</dc:description>
+   <dc:date>1971</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28648.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28648.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28648</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

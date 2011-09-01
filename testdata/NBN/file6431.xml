@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A redescription of Puto antennatus Sign. (Homoptera, Coccoidea) with notes on Ceroputo pilosellae Šulc and Macrocerococcus superbus Leon.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Reyne A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In the taxonomy of Coccoidea or scale insects much confusion is due to an insufficient knowledge of the type species of several genera. Especially our knowledge of some of the older genera is very incomplete, as the descriptions of their type species are extremely short and superficial from the modern point of view. The type specimens, on which the original descriptions of the genera were based, are distributed over several museums in all parts of the world; in some cases type material is no longer in existence, and as far as available it is seldom lent to persons in foreign countries. In consequence of this we have often to rely on the original description, as the type material is not available for examination. Signoret (Essai sur les Cochenilles, 1868-1876) was one of the first to describe the microscopical details of the genera and species which he introduced. He boiled his specimens in a solution of caustic potash to make microscopical preparations of the chitinous parts and did not hesitate to prepare even unique specimens ("que nous n'avons pas hésité à sacrifier dans l'intérêt de la science, tout en conservant les préparations bonnes à consulter, pensant qu'elles seraient ainsi plus utiles qu'une masse informe attachée à un épingle et qui ne peut présenter aucun caractère que l'on puisse énumérer"). In many cases, however, his descriptions are not detailed enough for the needs of present taxonomy. As the number of described species has increased greatly since Signoret's time, it has become necessary to pay attention to several minute details which were formerly of no importance to separate the species then known. In consequence of the superficial descriptions by earlier authors the concepts of several genera are rather vague. Ferris has emphasized that in order</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318936</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 291 - 324</dcterms:extent>
+   <dcterms:isPartOf>A redescription of Puto antennatus Sign. (Homoptera, Coccoidea) with notes on Ceroputo pilosellae Šulc and Macrocerococcus superbus Leon. (URN:ISSN:0024-0672) (Volume 32) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318936.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150222</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318936</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

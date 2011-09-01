@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zosterops montana minima nomen novum for Zosterops montana minor Hoogerwerf &amp; De Boer from Mt. Papandajan (South Priangan, West Java)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogerwerf A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>In a previous paper (Hoogerwerf and De Boer, 1947, p. 252) we described as Zosterops montana minor a new white-eye from Mt. Papandajan (South Priangan, West Java). Mr. A. C. V. van Bemmel and Dr. Ernst Mayr, however, called our attention to the fact, that the subspecific name minor cannot be used in this case, because this name is preoccupied by Zosterops albiventer minor Meyer. 1874 (p. 105) from Jobi, New Guinea, which is known as Zosterops minor minor in Mayr's (1941) List. On account of the above we have to introduce a new name for Zosterops montana minor. We take this opportunity to add to the original dutch description the following particulars. Siebers (1929, p. 151) separated birds belonging to this species from Central Java (Mt. Sumbing and Sindoro) and West Java (Mt. Tjerimei) under the name Zosterops palpebrosa sindorensis. Chasen (1935, p. 266) mentions the same birds as Zosterops chlorates sindorensis and this name was also used by Kuroda (1933, p. 127). Stresemann (1939, pp. 156-164) gives a revision of the genus Zosterops and arrives at the following conclusion (see l.c., foot note p. 160) : „der Rassenkreis heisst Z. montana, nicht Zosterops chlorates". But in his scheme of the horizontal and vertical distribution in the Archipelago of the four most important groups of this genus, viz., montana, atricapilla, palpebrosa and chloris, Stresemann (I.e., p. 161) does not record montana from Central and West Java! Later Mr. and Mrs. Van Bemmel (1940, p. 95) remark again that the species Z. montana does not occur in West Java, which statement is contradicted by Bartels (1940, p. 140), however, not on account of Siebers' birds from Mt. Tjerimei, but because of the presence in his collection of three</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318660</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1949</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 107 - 110</dcterms:extent>
+   <dcterms:isPartOf>Zosterops montana minima nomen novum for Zosterops montana minor Hoogerwerf &amp; De Boer from Mt. Papandajan (South Priangan, West Java) (URN:ISSN:0024-0672) (Volume 30) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318660.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149946</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318660</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

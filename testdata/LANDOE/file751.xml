@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 49_1971 (1971)</dc:title>
+   <dc:creator>Breuning  Stephan von, Demelt  Carl von, Franz  Herbert, Fuchs  Ernst, Janczyk  Friedrich, Paulus  Hannes F., Petrovitz  Rudolf, Puthz  Volker, Schedl  Karl Eduard, Scheerpeltz  Otto, Wewalka  Günther</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Stephan von Breuning: Beschreibung einer neuen Rasse der Gattung Carabus L. (Coleopt. Carabidae).     3. Carl von Demelt: Beschreibung einer neuen Untergattung aus dem Tribus Hesperophanini von Teneriffa (Canarische Inseln).     5-    7. Herbert Franz: Eine neue Scydmaenus-Art aus dem Sudan.     9-   10. Herbert Franz: Revision der Gattung Syndicus Motsch. (Coleopt., Scydmaenidae).    11-   28. Herbert Franz: Revision der Scydmaenus-Arten der Sammlung Schaufuss aus Neu-Guinea.    29-   41. : Untersuchungen über die Scydmaenidenfauna Neukaledoniens (Col., Scydm.).    43-  157. Ernst Fuchs: Eine neue Phytoecia aus Mazedonien.   159. Friedrich Janczyk: Neue Curculioniden der zoologischen Sammlung des Naturhistorischen Museums Wien. (10. Beitrag zur Kenntnis der Curculionidae).   161-  163. Hannes F. Paulus: Byrrhus s.str. grandi G. Fiori 1948 synonym mit B. numidicus Normand 1935, mit einer kurzen Zoogeographie der Art (Col., Byrrhidae).   165-  168. Volker Puthz: Zwei neue Stenus-Arten aus der canaliculatus-Gruppe nebst synonymischen Bemerkungen (Coleoptera, Staphylinidae). 102. Beitrag zur Kenntnis der Steninen.   169-  175. Volker Puthz: Zwei neue Stenus-Arten aus Nepal (Coleoptera, Staphylinidae). (106. Beitrag zur Kenntnis der Steninen).   177-  181. Rudolf Petrovitz: Drei neue Anoxia-Arten (Scarabaeidae, Melolonthini).   183-  187. Karl Eduard Schedl: Scolytidae und Platypodidae aus Spanisch Guinea und Fernando Poo. 279. Beitrag zur Morphologie und Systematik der Scolytidae.   189-  200. Otto Scheerpeltz: Staphylinidenausbeuten von Universitätsprofessor Dr. H. Löffler gelegentlich seiner seenkundlichen Studienreisen in tropischen Hochgebirgen 1969 und 1970. (6. Beitrag zur Kenntnis der australisch-polynesischen Staphyliniden, gleichzeitig 11. Beitrag z.K.d. orientalischen St. und 21. Beitrag z.K.d. neotropischen St.).   201-  207. Günther Wewalka: Bemerkungen zu einigen paläarktischen Dytiscidae der Gattungewn Hydroporus Clairv. und Deronectes Sharp, (Col.).   209-  218</dc:description>
+   <dc:date>1971</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26421.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26421.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26421</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

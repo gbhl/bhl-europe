@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Konowia (Vienna) 3 (1924)</dc:title>
+   <dc:creator>Alfken  Johann Dietrich, Blüthgen  Paul August Viktor, Duda  Oswald, Duda  Pavel Theodor Friedrich Oswald, Enderlein  Günther, Fahringer  Josef, Friese  Heinrich, Haupt  Hermann, Karawajew  Wladimir Afanassijevitsch, Lindberg  Hakan, Lindner  Erwin, Navás  Longinus R. P., Paramonow  S.J., Pfankuch  Karl, Priesner  Hermann, Ulmer  Georg Friedrich Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hermann Priesner: Neue europäische Thysanopteren (III) (Vorläufige Mitteilung).     1-    5. Pavel Theodor Friedrich Oswald Duda: Beitrag zur Systematik der Limosinen-Untergattungen Trachyopella und Elachisoma und Beschreibung von Elachisoma pilosa n.sp. /. (Dipteren).     5-    9. Johann Dietrich Alfken: Zur Kenntnis der Megachile-Arten von Formosa.    10-   19. Heinrich Friese: Neue Formen der Bienengattungen Centris-Epicharis.    19-   22. Georg Friedrich Franz Ulmer: Einige alte und neue Ephemeropteren.    23-   37. Hakan Lindberg: Drei neue Lygaeiden (Hem. Het.).    37-   41. Karl Pfankuch: Ichneumologisches (Hym.) [Anm.: 1. Fortsetzung.] Die Typen der Gravenhorst'schen Gattungen Phytodietus und Ischnocerus (Hym.).    41-   51. Günther Enderlein: Eine neue blutsaugende Muscide aus Afrika.    51-   52. Paul August Viktor Blüthgen: Beiträge zur Systematik der Bienengattung Halictus Latr. (Hym.) [Anm.: Fortsetzung].    53-   64. Erwin Lindner: Dipterologische Studien.    65-   75. Paul August Viktor Blüthgen: Beiträge zur Systematik der Bienengattung Halictus Latr. (Hym.) [Anm.: Fortsetzung].    76-   95. Johann Dietrich Alfken: Andrena japonica Alfk. ?.    95-   96. Oswald Duda: Revision der europäischen u. grönländischen sowie einiger südostasiat. Arten der Gattung Piophila Fallén (Dipteren).    97-  113. Josef Fahringer: Die Galle von Cynips Kollari Htg. Zuchtversuche und Beobachtungen über Bewohner und Feinde.   114-  135. S.J. Paramonow: Zwei neue Bombyliden-Arten (Diptera) aus Transkaspien.   136-  139. Oswald Duda: Revision der europäischen u. grönländischen sowie einiger südostasiat. Arten der Gattung Piophila Fallén (Dipteren).   153-  203. Longinus R. P. Navás: Neue Trichopteren [Anm.: 2. Teil].   204-  209. Johann Dietrich Alfken: Die vier großen Megachile-Arten Deutschlands.   210-  215. Heinrich Friese: Ueber die Bienen Australiens.   216-  249. S.J. Paramonow: Zwei neue Syrphiden-Arten (Diptera) aus dem südwestlichen Rußland.   249-  252. Paul August Viktor Blüthgen: Beiträge zur Systematik der Bienengattung Halictus Latr. (Hym.) [Anm.: Schluss].   253-  284. Hermann Haupt: Alte und neue Homoptera Mitteleuropas.   285-  300. Wladimir Afanassijevitsch Karawajew: Zur Systematik der paläarktischen Myrmecocystus (Formicidae), nebst einigen biologischen Notizen.   301-  308</dc:description>
+   <dc:date>1924</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25325.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25325.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25325</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

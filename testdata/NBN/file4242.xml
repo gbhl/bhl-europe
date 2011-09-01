@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Corallimorphus profundus in shallow Antarctic habitats: Bionomics, histology, and systematics (Cnidaria: Hexacorallia)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Riemann-Zürneck K.</dc:creator>
+   <dc:creator>Iken K.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Corallimorpharia</dc:subject>
+   <dc:subject>Corallimorphidae</dc:subject>
+   <dc:subject>Corallimorphus</dc:subject>
+   <dc:subject>Nectactis</dc:subject>
+   <dc:subject>Scleractinia</dc:subject>
+   <dc:subject>Micrabaciidae</dc:subject>
+   <dc:subject>Leptopenus</dc:subject>
+   <dc:subject>Stephanophyllia</dc:subject>
+   <dc:subject>Letepsammia</dc:subject>
+   <dc:subject>histology</dc:subject>
+   <dc:subject>cnidom</dc:subject>
+   <dc:subject>reproduction</dc:subject>
+   <dc:subject>ecology</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>Antarctic Peninsula</dc:subject>
+   <dc:description>In March 2000 and November/December 2001 thirteen specimens of Corallimorphus profundus Moseley, 1877, a conspicuous, anemone-like cnidarian, were hand-sampled by SCUBA diving in 30 to 40 m depth off US Palmer Station, Antarctic Peninsula. Corallimorphus species were formerly recorded only from deep water habitats from where they had been brought up more or less damaged, with most of their epithelia lost or macerated. The present well preserved specimens offer the opportunity to study various aspects of the species’ morphology and biology, particularly as one mature female contained a full cycle of oogenesis besides two batches of brooded developmental stages. Most of the results obtained demonstrate that the genus Corallimorphus shows features and bionomics that are typical of the Scleractinia. Thus, Moseley’s early assumption (1877) that this genus is distinguished from certain deep-sea corals such as Stephanophyllia only by the absence of the calcareous skeleton is largely confirmed, although direct comparison with Moseley’s material was not possible here. Similar relationships exist for another corallimorpharian, Nectactis singularis Gravier, 1918. This small, discoidal, soft-bodied deep-sea species resembles the poorly skeletalized deep-sea Scleractinia Leptopenus antarcticus Cairns, 1980, in cnidom data and histological sections.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220566</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 367 - 386</dcterms:extent>
+   <dcterms:isPartOf>Corallimorphus profundus in shallow Antarctic habitats: Bionomics, histology, and systematics (Cnidaria: Hexacorallia) (Volume 345)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220566.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46851</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220566</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the genus Syntretus Foerster (Hymenoptera: Braconidae: Euphorinae) from Europe</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:creator>Haeselbarth E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Euphorinae</dc:subject>
+   <dc:subject>Syntretini</dc:subject>
+   <dc:subject>Syntretus</dc:subject>
+   <dc:subject>Falcosyntretus</dc:subject>
+   <dc:subject>Exosyntretus</dc:subject>
+   <dc:subject>Parasyntretus</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>synonyms</dc:subject>
+   <dc:subject>Europe</dc:subject>
+   <dc:subject>West Palaearctic</dc:subject>
+   <dc:subject>East Palaearctic</dc:subject>
+   <dc:subject>Japan</dc:subject>
+   <dc:subject>lectotype</dc:subject>
+   <dc:subject>neotype</dc:subject>
+   <dc:description>The species of the genus Syntretus Foerster, 1862 (including Falcosyntretus Tobias, 1965, and Exosyntretrus Belokobylskij, 1998) (Braconidae: Euphorinae; Syntretini) from Europe are revised and keyed. The genera Falcosyntretus Tobias, 1965, Exosyntretus Belokobylskij, 1998, and Parasyntretus Belokobylskij, 1993, are synonymised with Syntretus Foerster, 1862, and the second one is provisionally used as a subgenus (stat. rev.). The subgenus Exosyntretrus is reported for the first time from Europe and two new species are included. In total twenty species of the genus Syntretus Foerster are recognised (plus one species only known from literature: Syntretus dzieduszykii Niezabitowski, 1910), of which ten are new: Syntretus breviradialis spec. nov., S. flevo spec. nov., S. fuscicoxis spec. nov., S. fuscivalvis spec. nov., S. minimus spec. nov., S. ocularis spec. nov., S. shawi spec. nov., S. stenochora spec. nov., S. taegeri spec. nov., and S. zuijleni spec. nov. S. planifacies Belokobylskij, 1993, and S. falcifer (Tobias, 1965), are reported from Japan for the first time. The following new synonyms are proposed: Microctonus vernalis Wesmael, 1835, and M. cultus Marshall, 1887, with Syntretus idalius (Haliday, 1833); Syntretus cynthius Lyle, 1927, with S. politus (Ruthe, 1856); Microctonus testaceus Capron (in Marshall), 1887, and Syntretus niger Tobias, 1976, with S. splendidus (Marshall, 1887); and Syntretus lyctaea Cole, 1959, with S. xanthocephalus (Marshall, 1887). Lectotypes are designated for Syntretus splendidus (Marshall, 1887), S. vernalis (Wesmael, 1835), S. cultus (Marshall, 1887) and S. klugii (Ruthe, 1856). A neotype is designated for S. idalius (Haliday, 1833). The purpose of the designations is the stabilization of the taxonomy of the group.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216134</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 9 - 78</dcterms:extent>
+   <dcterms:isPartOf>Revision of the genus Syntretus Foerster (Hymenoptera: Braconidae: Euphorinae) from Europe (URN:ISSN:00240672) (Volume 77, 1-14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216134.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44255</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216134</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

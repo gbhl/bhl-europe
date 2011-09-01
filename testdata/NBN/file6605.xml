@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Solariidae in the Rijksmuseum van Natuurlijke Historie : I. Solarium s.s.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bayer Ch.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>I propose in this part of my catalogue of the Solariidae to deal only with the genus Solarium s.s. and to reserve the remaining genera of this family for the next publication. For the division of the Solariidae in genera I followed Thiele's Handbuch der systematischen Weichtierkunde, also as far as concerns the names. Not only did I mention those species of which we possess specimens in the Leiden Museum, but, like in the former catalogues, I have included also, as far as possible, those species of which no material is present in our collections. The list is composed on the same lines as my previous ones. Of all species of which we possess material a list is given of the specimens, stating: 1) the letter which indicates specimens from the same locality and collector (donor), as far as they are kept dry; in case of specimens preserved in spirit the number of the jar is given instead, 2) the number of specimens, 3) the locality, 4) the collector or donor. When the locality or collector (donor) is unknown, I have placed a question mark instead. A special word of thanks is due to Dr. W. Adam for his kind help, afforded during my stay in the Musée Royal d'Histoire Naturelle de Belgique at Brussels and to Mr. R. Winckworth who was so good as to copy for me a long description with many figures, which was not obtainable in the libraries in Holland or Belgium. Many names have been used by the authors for the different cingula (zonae, vittae, lirae) and sulci of the Solarium's and in some cases different authors have applied the same name to different cingula, what may be a cause of confusion. For the sake of clearness I have combined the principal terms in a list for a case where all sulci and cingula are present, as for</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319110</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1940</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 223 - 256</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Solariidae in the Rijksmuseum van Natuurlijke Historie : I. Solarium s.s. (URN:ISSN:0024-0672) (Volume 22) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319110.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150396</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319110</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

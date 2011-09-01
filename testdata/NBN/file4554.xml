@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vliegend hert in de omgeving van Sint Odilienberg</dc:title>
+   <dc:creator>Smit J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lucanus cervus; vliegend hert; Sint Odilienberg; verspreiding; ecologie</dc:subject>
+   <dc:description>In 2008 heeft EIS-Nederland in opdracht van de Gegevensautoriteit Natuur van het ministerie van Landbouw, Natuur en Voedselkwaliteit een onderzoek uitgevoerd naar het voorkomen van het vliegend hert in de omgeving van Sint Odiliënberg. Aanleiding voor dit onderzoek was een waarneming uit 2007 gecombineerd met het feit dat er uit deze omgeving reeds enkele waarnemingen bekend waren uit de periode 1801-1995. De focus van het onderzoek lag duidelijk op het potentiële leefgebied Sint Odiliënberg, maar uitgangspunt bij dit onderzoek was een aanzet voor een complete actualisatie van de verspreiding op het niveau van 10*10 kilometer in de periode 2007-2012 en tevens het actualiseren van het verspreidingsbeeld op 1*1 kilometerhokniveau als voorbereiding op de te ontwikkelen kansenkaarten. De voorgenomen doelen bij dit onderzoek waren: - Inzicht te krijgen in de aanwezigheid van eventuele voortplantingspopulaties in het focusgebied Sint Odiliënberg. - Beoordelen van de geschiktheid van de aanwezige bosopstanden voor het vliegend hert binnen het focusgebied. - Een aanzet geven tot de complete actualisatie van het verspreidingsgebied op 10x10-kilometerhok niveau voor de periode 2007-2012. - Actualisatie van het verspreidingsbeeld op 1x1-kilometerhok niveau. In 2008 zijn er in totaal 313 waarnemingen van het vliegend hert binnengekomen, waarvan er 262 daadwerkelijk betrekking hadden op het vliegend hert. De overige 51 waarnemingen (16%) hadden betrekking op 7 verschillende soorten andere ongewervelden of waren oncontroleerbaar. Uit de omgeving van Sint Odiliënberg zijn twee betrouwbare waarnemingen binnengekomen, een mannetje op het terrein van de Clauscentrale in Maasbracht en een mannetje van de Meinweg, nabij het Maharishi Mahesh klooster. Op basis van deze beide vondsten, samen met die uit 2007 en de beoordeling van de verschillende stukken bos in deze omgeving moet aangenomen worden dat deze omgeving een actueel leefgebied vormt voor het vliegend hert. Hiermee wordt het aantal verspreidingsgebieden uitgebreid naar 5. Er dient echter wel opgemerkt te worden dat het vliegend hert in de omgeving van Sint Odiliënberg vermoedelijk erg zeldzaam is en slechts enkele verspreide en geïsoleerde populaties heeft, vergelijkbaar met het voormalige(?) verspreidingsgebied de Utrechtse Heuvelrug.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:289039</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>23</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/289039.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/120111</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/289039</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Indo-Australian species of the genus Phaeochrous castelnau, 1840 (Coleoptera: Scarabaeidae, Hybosorinae), with notes on the African species</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Kuijten P.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Coleoptera</dc:subject>
+   <dc:subject>Scarabaeidae</dc:subject>
+   <dc:subject>Phaeochrous</dc:subject>
+   <dc:subject>revision</dc:subject>
+   <dc:subject>new subspecies</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:description>A revision of the Indo-Australian species and notes on the African species of Phaeochrous are given. Nine new species and three new subspecies are described, viz., Phaeochrous australicus (Australia), compactus (Sri Lanka), elevatus (South India, Sri Lanka), enigmaticus (Java, Bangla Desh, China), lobatus (Philippines), madrassicus (South India), pletus (Timor), portuum (Papua New Guinea), pseudintermedius (Vietnam, South China), P. dissimilis subsp. vietnamicola (Vietnam, South China), emarginatus subsp. buruensis (Moluccas), intermedius subsp. occidentalis (North India, Bhutan). A neotype for Phaeochrous emarginatus Castelnau is designated. Two species hitherto considered synonyms of P. emarginatus are recognized as species and subspecies respectively, viz., P. intermedius Pic and P. emarginatus subsp. davidis Fairmaire. Eight species are considered synonyms of P. emarginatus, viz., sumatrensis (Westwood) (lectotype here designated), hirtipes (Macleay) (lectotype here designated), alternatus Fairmaire, asiaticus Lewis (lectotype here designated), pallidus Arrow, celebensis Pic, perroudi Pic, gracilis Petrovitz - the last five are new synonymies. Three species, viz., P. suturalis Lansberge, davidis Fairmaire and benderitteri Pic, are considered subspecies of emarginatus. The status of P. dubius (Westwood), indicus (Westwood), ruficollis Fairmaire, rugosicollis Benderitter, rufus Pic and tonkineus Pic remains doubtful. Phaeochrous nanus Arrow is excluded from Phaeochrous. Figures of male genitalia of all species and subspecies, a key and some notes on bionomics, are given. Phaeochrous laeviceps Fairmaire and tenuepunctatus Fairmaire are removed from the list of African species, being no Phaeochrous, and the synonymization of P. insularis Linell with laeviceps is deleted.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:323942</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 40</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Indo-Australian species of the genus Phaeochrous castelnau, 1840 (Coleoptera: Scarabaeidae, Hybosorinae), with notes on the African species (URN:ISSN:0024-1652) (Volume 165) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/323942.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/155329</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/323942</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

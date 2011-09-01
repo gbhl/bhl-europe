@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Die von der Niederländischen Biologischen expedition in die Türkei in 1959 Gesammelten Nacktschnecken (Milacidae und Limacidae, Pulmonata) mit Beschreibung Einer neuen Deroceras-art aus dem Balkan-Gebiet und der Türkei</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wiktor A.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Das in diesem Beitrag behandelte aus der Türkei stammende Material gehört dem Rijksmuseum van Natuurlijke Historie in Leiden (Holland) und wurde von W. J. M. Vader während der im Titel erwähnten Expedition gesammelt. Zur Beschreibung der neuen Art diente auch Material aus anderen Sammlungen, wobei der Verbleib entsprechend im Text angegeben wurde. Es wurde bei den von Vader gesammelten Exemplaren nicht jedesmal der Name des Sammlers wiederholt, sondern nur die Notiz „V" mit der Nummer des Standortes angegeben. Genauere Angaben über die numerierten Standorte sind den allgemeinen Expeditionsnotizen von Anonymus (1963) zu entnehmen. Das von der holländischen Expedition gesammelte Material wird durch verschiedene Spezialisten bearbeitet und in Teilen veröffentlicht. Über Weichtiere erschienen bereits Veröffentlichungen betreffs folgender Gruppen: Opisthobranchia (Swennen, 1961), Prosobranchia (Schütt, 1965), Clausiliidae (Loosjes, 1963), Enidae (Gittenberger, 1967) und Zonitidae (Riedel, 1970). Das Material aus der Sammlung in Leiden wurde mir durch die freundliche Vermittlung des Herrn Drs. E. Gittenberger (Leiden) ausgeliehen. Zur Bearbeitung der Beschreibung von Deroceras (Krynickillus) urbanskii n. sp. habe ich auch Material aus der Sammlung des Herrn Prof. Dr. J. Urbański (Poznań) benutzt. Beiden erwähnten Herren spreche ich meinen herzlichen Dank für ihre uneigennützige Hilfe aus. Dankverpflichtet bin ich ferner den Herren Dr. L. Forcart (Basel) und Dr. I. M. Likharev (Leningrad) für die Unterstützung mit schwer zugänglicher Literatur und für Erläuterungen zu einigen taxonomischen Problemen. Die Nacktschnecken gehören zu den am wenigsten durchforschten</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318236</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 261 - 280</dcterms:extent>
+   <dcterms:isPartOf>Die von der Niederländischen Biologischen expedition in die Türkei in 1959 Gesammelten Nacktschnecken (Milacidae und Limacidae, Pulmonata) mit Beschreibung Einer neuen Deroceras-art aus dem Balkan-Gebiet und der Türkei (URN:ISSN:0024-0672) (Volume 45) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318236.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149522</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318236</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

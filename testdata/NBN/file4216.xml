@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>In memoriam Jacobus Cornelis (Koos) den Hartog (1942-2000), marine naturalist</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Land, van der J.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>marine ecology</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>Cnidaria, Actiniaria, Ceriantharia, Corallimorpharia</dc:subject>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>biography</dc:subject>
+   <dc:subject>bibliography</dc:subject>
+   <dc:subject>National Museum of Natural History/Leiden</dc:subject>
+   <dc:description>Jacobus Cornelis den Hartog was born on 17 April 1942 in Broek op Langedijk. He read biology at Leiden University from 1963 to 1970. He worked at the Caribbean Marine Biological Station on Curaçao from 1971 to 1973, where he studied Caribbean sea anemones. From 1973 he worked in the National Museum of Natural History in Leiden, where he became curator of Coelenterata in 1975. For 25 years he was an active member of the marine research group of the museum and as such he participated in 15 expeditions and was involved in several smaller fieldwork projects, in the Atlantic Ocean as well as in the Indo-W Pacific region. The taxonomy of sea anemones, Actiniaria as well as Ceriantharia and Corallimorpharia, were the main subject of his studies. However, he was a real naturalist and took an interest in several other subjects and groups. As such he published, e.g., on different types of associations, the food of sea turtles and birds, sea birds in particular. He produced several lavishly illustrated papers for the general public. In recent years Den Hartog became a devoted editor of the (serial) publications of the museum. A list of his scientific papers is attached to this paper. He passed away on 7 October 2000.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220289</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 9 - 17</dcterms:extent>
+   <dcterms:isPartOf>In memoriam Jacobus Cornelis (Koos) den Hartog (1942-2000), marine naturalist (Volume 345)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220289.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46818</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220289</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

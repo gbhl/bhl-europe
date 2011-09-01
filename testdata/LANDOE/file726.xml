@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 20_1934 (1934)</dc:title>
+   <dc:creator>Anonymus , Benick  Ludwig, Goecke  Hans, Hänel  Karl, Heikertinger  Franz, Müller  Josef (Giuseppe), Netolitzky  Fritz, Schauberger  Erwin, Scheerpeltz  Otto, Scheibel  O., Schuster  Adrian, Székessy  Wilhelm, Zimmermann  Alois</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Heikertinger: "Wiener Entomologische Zeitung" und "Koleopterologische Rundschau". Ein Wort zu ihrer Vereinigung.     1-    3. Otto Scheerpeltz: Aus der Praxis des Käfersammlers. XXIV. Ködermethoden. Schluss.     4-   14. Franz Heikertinger: Wie soll eine druckfertige Abhandlung aussehen und wie baut man sie? (Siebentes Stück der Aufsatzreihe: Die Schule des Spezialisten.).    15-   31. Wilhelm Székessy: Ein neuer Fall von boreoalpiner Verbreitung bei Koleopteren. Phytodecta nivosa Suffr. = Phytodecta affinis Gyllh. (Chrysom.). Nebst einem Nachtrag zu Holdhaus' Verzeichnis der boreoalpinen Tierformen.    32-   36. Karl Hänel: Zwei neue Otiorrhynchus-Arten aus dem paläarktischen Gebiet (Curcul.).    37-   40. Josef (Giuseppe) Müller: Carabiden-Studien. V. Teil.    41-   62. Fritz Netolitzky: Europäisch-asiatische Bembidion-Arten, unter besonderer Berücksichtigung der Typen von Solsky.    63-   74. Adrian Schuster: Kleine Mitteilungen. 16. - Zur Nomenklatur des Subgenus Aulonoscelis Rtt. (Col. Tenebr.).    75-   76. Anonymus: Aus Koleopterologenkreisen.    77-   80. Otto Scheerpeltz: Die Gattung Carcinocephalus Bernh. nebst Bemerkungen über das Omaliinen-Subgenus Scribaia Luze. (Col. Staphylinidae). (19. Beitrag zur Kenntnis der paläarktischen Staphyliniden.).    81-   94. Ludwig Benick: Atheta Ermischi n.sp., ein neuer Bewohner von Hamster- und Maulwurfnestern.    95-   98. Erwin Schauberger: Zur Kenntnis der paläarktischen Harpalinen. (Vierzehnter Beitrag.).    99-  118. O. Scheibel: Neue Trechini aus Jugoslawien. (2. Beitrag.).   119-  124. Adrian Schuster: Die Tenebrioniden-Typen Fischers (Col.).   125-  128. Franz Heikertinger: Aus der Praxis des Käfersammlers. XXV. Ueber das Vorkommen einiger seltener Halticinen.   129-  137. Alois Zimmermann: Monographie der paläarktischen Dytisciden. V. Colymbetinae. (1. Teil: Copelatini, Agabini: Gattung Gaurodytes Thoms.).   138-  214. Hans Goecke: Revision asiatischer Donaciinen (Col. Chrys.). I. (3. Beitrag zur Kenntnis der Donaciinen.). (1 Fototafel)   215-  230. Franz Heikertinger: Wie ist ein Manuskript auszustatten? (Achtes Stück der Aufsatzreihe: Die Schule des Spezialisten).   231-  243. Franz Heikertinger: Aus Entomologenkreisen.   244</dc:description>
+   <dc:date>1934</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26382.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26382.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26382</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De Heterocera van Sumatra VII</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eecke, van R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>De rups van den „Kanarievlinder" (Hileud hoeis) is donker bruin met lichtere zijstrepen, de eerste lichaamsring en de naschuivers rood, voorts eene serie van dorsale bulten met witte haren begroeid. Pooten bruin. De lengte bedraagt ongeveer 45—50 mM. Behalve aan kanarie kunnen de rupsen zeer schadelijk zijn aan advocaat, mangga, kaneel en kina (DAMMERMAN). Zij spinnen fraaie goudkleurige, mazige cocons, waarin de pop zichtbaar ligt. De rups van C. andrei Jord. is geheel anders; dorsaal appelgroen, ventraal iets donkerder met laterale geelgroene lengtelijn onder de stigmata, groenachtig bruinen kop, kleine roseroode dorsale wratjes, waarop donkere haren. Op den laatsten ring staat dorsaal een vleezig uitsteeksel met een geel wratje. De geheele oppervlakte met witte puntjes; de achterste, anale ring bruin. De rupsen laten zich in koudere streken gemakkelijk opkweeken met bladeren van kersen, appelen enz. Gen. 2: Loepa Moore. Loepa, Moore, Cat. Lep. Mus. E. I. C. II, p. 399, (1859). Hamps., Faun. Br. Ind. Moths I, p. 25, (1892). Seitz, Grossschm. d. Erde X, p. 505, (1926). Type: L. katinka Westw. Geogr. verspr.: Centraal- en West-China, Voor- en Achter-Indië, Sumatra, Java en Celebes. In tegenstelling met het voorgaande genus, zijn de voorvleugels niet sterk sikkelvormig, doch wel lang uitgetrokken en vrij smal met afgeronde apex. De buitenrand is bij het ♂ binnenwaarts gebogen; daarentegen bij het ♀ niet of zelfs meer buitenwaarts. Achtervleugels bijzonder afgerond</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318547</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1929</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 137 - 175</dcterms:extent>
+   <dcterms:isPartOf>De Heterocera van Sumatra VII (URN:ISSN:0024-0672) (Volume 12) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318547.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149833</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318547</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

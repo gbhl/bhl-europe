@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new species of Meroscolex from Suriname (Oligochaeta, Glossoscolecidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Righi G.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>The genus Meroscolex Černosvitov, 1934, comprised only two species: M. guianicus Černosvitov and M. longissimus Černosvitov, both known only from French Guiana (Černosvitov, 1934: 56; 1935: 29). A third species, from Suriname, is described in the present paper. Meroscolex hoogmoedi n. sp. Material: Suriname, valley of Coeroeni River, approximately 3°2o'N 57°2o'W, leg. Dienst Bodemkartering Suriname, 24/25 June 1967 (2 clitellate specimens: holotype, coll. no. 5946, paratype, coll. no. 5947). — Suriname, Post Tigrie, New River, 3°2o'N 57°3o'W, leg. M.S. Hoogmoed, 28/29 June 1968 (5 clitellate specimens, 4 without posterior end, and 1 large aclitellate specimen, coll. no. 6055). Material in Rijksmuseum van Natuurlijke Historie, Leiden. The type specimens arrived alive in Leiden one month after they were collected. Observations on these living specimens were made by J. van der Land. External characters. — The length of the type specimens was 1.6 and 1.5 m, respectively, according to the collectors. After one month they measured 1.3 and 1.0 m, and after fixation in a mixture of alcohol 70% and formaline 5% they measured 0.80 and 0.50 m. Their diameters were then: 16 and 18 mm in the pre-clitellar region, 20 and 18 mm in the clitellum, 9 and 12 mm in the median body region, and 9 mm in the posterior region of both specimens. "In vivo" the colour of the pre-clitellar region was dorsally dark blue and ventrally light bluish green to light brown; the clitellum was dorsally dark grey-brown, nearly black, and ventrally brown with pink spots around the setae; the ridges of puberty were variable from light grey to cream-coloured. In the median and posterior regions of the body, the surface of the segments</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318993</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 313 - 317</dcterms:extent>
+   <dcterms:isPartOf>A new species of Meroscolex from Suriname (Oligochaeta, Glossoscolecidae) (URN:ISSN:0024-0672) (Volume 43) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318993.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150279</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318993</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

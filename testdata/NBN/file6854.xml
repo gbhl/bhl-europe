@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schoenoteninae of the Netherlands Stars Range expedition 1959 to Central New Guinea (Lepidoptera, Tortricidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>This paper is dedicated to Prof. Dr. L. D. Brongersma on the occasion of his 65th birthday. During several collecting expeditions of later years by this museum to the former Dutch New Guinea, organized and directed by Dr. L. D. Brongersma, a considerable number of Microlepidoptera has been collected upon my request. Among these a special place occupy the Schoenoteninae, a characteristic group of the Tortricidae, chiefly confined to New Guinea and Australia. The somewhat turbulent history of the Schoenoteninae has been aptly summarized by I. F. B. Common (1965). The definitive assignment of the subfamily has been much hampered, chiefly by the three following features: (1) the isolated position of the present group, as compared with other subfamilies of the Tortricidae, with regard to the structure: neuration, absence of ocelli, roughly scaled fore wing, etc.; (2) the evidence of their being a very natural group — and at the same time, (3) the extraordinary diversity of the male genitalia. Described as a family (Diakonoff, 1952), the Schoenoteninae were sunk to the rank of subfamily (Common, 1958), and later to that of a tribe of the subfamily Chlidanotinae (Diakonoff, 1960). In the course of later years new facts came to light, allowing a reconsideration of the systematic position of the group. The steadily increasing number of Lepidopterous families, without distinct indications of their mutual relationships and true systematic position, threatened to form a handicap for the study of the systematics in this order of insects. Probably owing to this course, a tendency has been noticeable among the students of Lepidoptera to lower the existing taxa gradually. In the present</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319359</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 417 - 444</dcterms:extent>
+   <dcterms:isPartOf>Schoenoteninae of the Netherlands Stars Range expedition 1959 to Central New Guinea (Lepidoptera, Tortricidae) (URN:ISSN:0024-0672) (Volume 47) (Issue 33)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319359.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150645</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319359</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

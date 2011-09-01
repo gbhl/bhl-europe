@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A Late Cretaceous gastropod homing scar (possibly ichnogenus Lacrimichnus) from southern Limburg, The Netherlands</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Jagt J.W.M.</dc:creator>
+   <dc:subject>38.22 ; 42.73</dc:subject>
+   <dc:subject>Trace fossil</dc:subject>
+   <dc:subject>homing scar</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:subject>Lacrimichnus</dc:subject>
+   <dc:subject>Cirripedia</dc:subject>
+   <dc:subject>Upper Cretaceous</dc:subject>
+   <dc:subject>Maastrichtian</dc:subject>
+   <dc:subject>The Netherlands</dc:subject>
+   <dc:description>An isolated gastropod homing scar, etched into an arcoscalpelline (cirripede) scutum, is recorded from the upper Nekum Member (Maastricht Formation, upper Maastrichtian) at the ENCI-HeidelbergCement Group quarry. This trace may be assignable to the ichnogenus Lacrimichnus Santos, Mayoral &amp; Muñiz, that comprises etching scars produced by Neogene calyptraeid and/or capulid gastropods and ostreid bivalves from southern Spain and Portugal. However, it differs from both ichnospecies currently contained in that ichnogenus, L. bonarensis and L. cacelensis, in showing a relatively deep depression around the rim, irregularly distributed pit- and slit-like depressions, and an irregularly subcircular outline. Despite the wealth of available hard substrates (bivalves, coleoids, echinoids, etc.) and of hipponicid gastropods, such traces are exceedingly rare in the type area of the Maastrichtian Stage.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217413</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 19 - 25</dcterms:extent>
+   <dcterms:isPartOf>A Late Cretaceous gastropod homing scar (possibly ichnogenus Lacrimichnus) from southern Limburg, The Netherlands (URN:ISSN:03757587) (Volume 134)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217413.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45035</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217413</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

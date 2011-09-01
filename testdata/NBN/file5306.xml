@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematics, Phylogeny and Biogeography of the chiefly Afromontane Genus Chondrolepis Mabille (Lepidoptera : Hesperiidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Jong, de R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera; Hesperiidae; Chondrolepis; new species; phylogeny; biogeography; Afromontane habitat.</dc:subject>
+   <dc:description>The five known species of the African genus Chondrolepis Mabille are extensively described and figured and two new species are added. Keys are given to the males and females separately. Most species are restricted to montane habitats, mainly in East Africa. Based on their phylogeny the geographic history of the species is analyzed. It is concluded that the distribution agrees with the predictions to be derived from the hypotheses that montane forests were very much restricted during the last Glacial Period of the Northern Hemisphere, later on becoming more widespread than at present, and that the contact between the Cameroun highlands and the highlands of East Africa was through species that temporarily lived in the intervening lowland forests and not through a continuous belt of montane forest across the African continent. There are indications that for Chrondrolepis this contact was possible twice. Similarly, but at other periods, a contact between the montane habitats of East Zaïre and Southeast Tanzania may have occurred twice. While the diversification of the genus is closely linked with the history of the montane forests, the origin of the genus is supposed to be the result of the desiccation of the Limpopo Valley. Testing of this hypothesis by studying the phylogeny and biogeography of other groups which should have been influenced in the same way, could lead to a better understanding of the origin of the South African fauna of forests and forest margins.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317811</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1986</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 40</dcterms:extent>
+   <dcterms:isPartOf>Systematics, Phylogeny and Biogeography of the chiefly Afromontane Genus Chondrolepis Mabille (Lepidoptera : Hesperiidae) (URN:ISSN:0024-1652) (Volume 231) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317811.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149097</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317811</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

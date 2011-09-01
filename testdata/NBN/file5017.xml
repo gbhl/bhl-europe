@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mollusca from Preangerian deposits of Mandul Island, northeastern Kalimantan Timur (East Borneo)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Beets C.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>The present paper gives the result of work on a collection of molluscs which was made in 1916 by W. H. van Hoist Pellekaan on behalf of the Bataafsche Petroleum Maatschappij, now Shell Internationale Petroleum Maatschappij. A preliminary examination of the fossils was made by K. Martin, also in 1916, his conclusion, based on 22 species, being that their age was either 'uppermost Old Miocene' (i.e., Njalindung) or 'Upper Miocene'. According to modern usage, this would imply a dating of the fauna as Preangerian. A total of 42 species, including a few new ones, has now been more fully examined. It appears that their combined geologic ranges point unwaveringly to a Preangerian age, thus confirming Martin's preliminary verdict. As is by no means exceptional among the Bornean Neogene faunas, the Mandul assemblage shows better relationships with the distant classical faunas of Javanese Preangerian than with the contemporaneous faunas of the Sangkulirang/Mangkalihat region nearby. Three new species are described, Lodderia mandulana, Proterato tenuirugosa and Apollon perliberalis, and a new subspecies, Paphia sinuosa mandulana. Apropos the examination of a rare bivalve in the Mandul fauna, Acanthocardia? greenoughi (d'Archiac &amp; Haime), a new species is described from Junghuhn's locality K (Tjidamar), Java: A.? carolimartini.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317522</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 49 - 80</dcterms:extent>
+   <dcterms:isPartOf>Mollusca from Preangerian deposits of Mandul Island, northeastern Kalimantan Timur (East Borneo) (URN:ISSN:0375-7587) (Volume 74)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317522.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148808</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317522</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

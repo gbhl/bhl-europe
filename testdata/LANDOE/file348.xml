@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 93 (1953)</dc:title>
+   <dc:creator>Cholnoky  Bela I., Gilli  Alexander, Handel-Mazetti Frh.v.  Hermann, Heikertinger  Franz, Kühnelt  Wilhelm, Mayer  Helga, Neubauer  Hans Franz, Strouhal  Hans, Tysowsky  Alexander, Wendelberger  Gustav, Werneck  Heinrich Ludwig</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Heikertinger: Tragikomödie der Zoologischen Nomenklatur (Eine Einführung für jeden Zoologen. Die Namenänderung in der Zoologie)     5-   45. Hans Strouhal: Bemerkungen zu einigen österreichischen Trichoniscus-Arten (Isop. Terr.)    46-   56. Wilhelm Kühnelt: Ein Beitrag zur Kenntnis tierischer Lebensformen (Lebensformen in Beziehung zur mechanischen Beschaffenheit des Aufenthaltsortes.)    57-   71. Alexander Tysowsky: Das Wesen des "Typus" bei den Säugetieren    72-   80. Hermann Handel-Mazetti Frh.v.: Zur floristischen Erforschung von Tirol und Vorarlberg    81-   99. Gustav Wendelberger: Über einige hochalpine Pioniergesellschaften aus der Glockner- und Muntanitzgruppe in den Hohen Tauern   100-  109. Alexander Gilli: Galium hercynium und Euphrasia nemorosa- neu für Österreich   110-  111. Heinrich Ludwig Werneck: Die Formenkreise der bodenständigen Wildnuß in Ober- und Niederösterreich   112-  119. Helga Mayer: Jahresgang der osmotischen Werte xerothermer Freilandpflanzen vom Mödlinger Frauenstein   120-  133. Bela I. Cholnoky: Diatomeenassoziationen aus dem Hennops-rivier bei Pretoria   134-  149. Hans Franz Neubauer: Bildungsabweichungen an ährigen Infloreszenzen   150-  156</dc:description>
+   <dc:date>1953</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24577.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24577.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24577</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

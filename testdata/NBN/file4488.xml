@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Marine biodiversity of the coastal area of the Berau region, East Kalimantan, Indonesia : progress report East Kalimantan program, pilot phase (October 2003) : preliminary results of a field survey performed by an Indonesian-Dutch biodiversity research team</dc:title>
+   <dc:creator>Hoeksema B.W.</dc:creator>
+   <dc:subject>Mariene biologie</dc:subject>
+   <dc:subject>Marine biodiversity</dc:subject>
+   <dc:subject>Berau region</dc:subject>
+   <dc:subject>Kalimantan</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:description>The coastal waters of East Kalimantan are part of the western boundary of the Indo-West Pacific centre of maximum marine biodiversity. During the pilot phase of the East Kalimantan Program (EKP) this has been tested by various specialists who used model taxa to test this hypothesis. Emphasis has been put on the species-rich coral reefs and islands that show reef communities in association with mangroves, seagrass, and algae. A range of habitats has been surveyed, varying in distance offshore (with decreasing salinity, turbidity, sedimentation and nutrient load): fringing reefs along the mainland shore, offshore patch reefs, delta-front barrier reefs, and uplifted atolls. The atolls consist of limestone rock and contain shallow enclosed marine lakes with a unique marine biota. The various marine environments at NE Kalimantan have enabled the selection of taxa and sites that can be used for future research on climate change records (e.g. corals, sponges and molluscs), molecular (genetic) divergence within species between separated populations, and environmental effects on species diversity. The biodiversity data will be important for the design of Marine Protected Areas (MPAs) and as an instrument in raising public awareness regarding the sustainable use of the natural resources, such as through fisheries and diving tourism.</dc:description>
+   <dc:publisher>National Museum of Natural History</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:268594</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/268594.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/98097</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/268594</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

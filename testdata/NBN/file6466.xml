@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the type specimen of Vanderbiltia rosamondae Boone (Crustacea Decapoda Macrura)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In 1935 Lee Boone in Bulletin of the Vanderbilt Marine Museum vol. 6 (pp. 160-163, pls. 41, 42) described and figured a shrimp, which she thought to belong to a new genus and species of the Palaemonid subfamily Pontoniinae, and which she named Vanderbiltia rosamondae. Boone's figures and description show that the specimen cannot possibly be a Pontoniid shrimp, but it proves to be impossible from these data alone to place the species anywhere in the system. In my report on the Pontoniinae of the Siboga Expedition (Holthuis, 1952, p. 22), therefore, I listed Vanderbiltia rosamondae (misspelled rosamundae by me) under the "species described as Pontoniinae, but not belonging in this subfamily'', and remarked that the species shows some resemblance to the Atyidae and that it might be juvenile. Though according to the description and figure Vanderbiltia in some characters resembles the Atyidae, in others (e.g., the shape of the chelae) it differs so much from any of the members of that family that it hardly could be placed there. The identity of Vanderbiltia rosamondae Boone, which species had not been recorded since the original publication, therefore remained a mystery that only could be solved by examination of the type specimen itself. In April 1953 I had the pleasure of visiting the Vanderbilt Museum in Centerport, Long Island, New York. Mr. Woodhull B. Young, curator of the Museum, whom I am profoundly thankful for giving so much of his valuable time to show my company and myself around in the Museum, and for extending many courtesies to us, was good enough to allow me to take the type specimen of Vanderbiltia rosamondae (or Vanderbiltia mirabilis, under which name it was exhibited in the Museum) with me to Washington,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318971</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 113 - 118</dcterms:extent>
+   <dcterms:isPartOf>On the type specimen of Vanderbiltia rosamondae Boone (Crustacea Decapoda Macrura) (URN:ISSN:0024-0672) (Volume 32) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318971.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150257</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318971</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

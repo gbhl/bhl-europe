@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the Pinnipedes from Japan described by Temminck in 1844</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>King J.E.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>The zoological collections made in Japan by P. F. von Siebold and Dr. Burger between the years 1823 and 1830 are described by Siebold in his Fauna Japonica (1844). The title page announces the collaboration of C. J. Temminck and H. Schlegel for that part of the work devoted to the vertebrates, but only Temminck's name appears at the head of the section on mammals, which includes that on marine mammals. The Pinnipede material brought back by Siebold and Burger included remains of some Otariids which Temminck referred to as Otaria stelleri, and some Phocids which he named Phoca nummularis n.sp. All this material is in the Rijksmuseum van Natuurlijke Historie, Leiden, and I am very grateful to the director, Dr. L. D. Brongersma for allowing me access to it. I also acknowledge with thanks the facilities for measuring skulls offered to me by Dr. J. Dorst and Dr. J. Anthony of the Muséum d'Histoire Naturelle, Paris. Zalophus californianus japonicus (Peters) The amount of Otariid material brought back from Japan is clearly indicated by Temminck on p. 11 of Les Mammifères Marins, and his account may be translated and summarized as follows: "We possess six skulls of Steller's sea lion, two of which belong to mounted skeletons. Four of the skulls of which one is figured nos. 5 and 6, pl. 22 is from an adult male of which we also have the mounted skin. The sex of the other two is not known. The fifth skull figured no. 3 and 4, pl. 22 is from an adult male of which we also have the mounted skin. The sixth skull, pl. 23 1), figs. 1 and 2 is from an adult male whose complete skeleton is figured on pl. 23."</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318861</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1961</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 211 - 224</dcterms:extent>
+   <dcterms:isPartOf>Notes on the Pinnipedes from Japan described by Temminck in 1844 (URN:ISSN:0024-0672) (Volume 37) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318861.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150147</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318861</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Gobioid fishes : 7. On the Indo-Australian species of Oxyeleotris Bleeker</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Koumans F.P.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Oxyeleotris Bleeker Oxyeleotris Bleeker, Arch. neerl. sc. ex. et nat. IX, 1874, p. 302 (Eleotris marmorata Blkr.). Body elongate, anteriorly cylindrical, posteriorly compressed. Head pointed, depressed, scaled above and on the sides. Only in O. urophthalmoides the first branchiostegal ray ends anteriorly in a spine, in the other species this spine is absent. Scales of body ctenoid, 45—100 in a longitudinal series. Teeth in several rows, in upper jaw outer row enlarged, in lower jaw in front outer row enlarged, laterally inner row enlarged; no true canines. Lower jaw prominent, mouth oblique. Gillopenings a little continued forward below, isthmus moderate. D. 1 VI; D. 2 1. 9—12; A. 1. 7—10. The Indo-Australian species of Oxyeleotris are distinguished by the following characters: 1a. D. 2 1. 9; A. 1. 7—9 2 1b. D. 2 1. 10—12; A. 1. 7—10 5 2a. 80—102 scales in a longitudinal series 3 2b. 60—70 scales in a longitudinal series 4 3a. Body with irregular blotches. Upper part of caudal peduncle without ocellus O. marmorata (Blkr.) 3b. Body without blotches. Upper part of caudal peduncle with ocellus O. urophthalmus (Blkr.) 4a. First branchiostegal ray ends anteriorly in a spine. L.1. 60—70, L.tr. 15—16, 45—50 predorsal scales O. urophthalmoides (Blkr.) 4b. First branchiostegal ray ends anteriorly not in a spine. L.1. 62—65, L.tr. 19—20,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318935</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1936</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 128 - 135</dcterms:extent>
+   <dcterms:isPartOf>Notes on Gobioid fishes : 7. On the Indo-Australian species of Oxyeleotris Bleeker (URN:ISSN:0024-0672) (Volume 19) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318935.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150221</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318935</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

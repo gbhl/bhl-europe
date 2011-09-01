@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Joannea Zoologie 9 (2007)</dc:title>
+   <dc:creator>Adlbauer  Karl, Friess  Thomas, Habeler  Heinz, Hausl-Hofstätter  Ulrike, Holzer  Erwin, Höttinger  Helmut, Koschuh  Anton, Lesar  Tone, Ramsauer  Norbert, Sackl  Peter, Schweighofer  Wolfgang, Spitzenberger  Friederike, Tajmel  Joachim, Tiefenbach  Michael</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Peter Sackl, Michael Tiefenbach, Joachim Tajmel, Friederike Spitzenberger: Weitere Ausbreitung der Brandmaus Apodemus agrarius (Pallas, 1771) in Österreich (Mammalia).     5-   13. Ulrike Hausl-Hofstätter: Bemerkenswerte Megachile-Arten aus der Steiermark (Hymenoptera, Apoidea, Megachilidae).    15-   20. Tone Lesar, Heinz Habeler: Lepidopterologie in Stajersko.    21-   44. Helmut Höttinger, Anton Koschuh, Norbert Ramsauer, Wolfgang Schweighofer: Aktuelle Nachweise des Kleinen Wander-Bläulings Leptotes pirithous (LINNAEUS, 1767) aus Österreich (Lepidoptera, Lycaenidae).    45-   49. Erwin Holzer: Erstnachweise und Wiederfunde für die Käferfauna der Steiermark (X) (Coleoptera).    51-   68. Thomas Friess, Karl Adlbauer: Die Wanzenfauna (Insecta: Heteroptera) des Truppenübungsplatzes Seetaler Alpe (Steiermark): Faunistik, Zönotik und Naturschutz.    69-   86</dc:description>
+   <dc:date>2007</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27359.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27359.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27359</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

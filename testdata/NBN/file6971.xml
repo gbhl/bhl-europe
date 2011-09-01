@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De nachtpauwoog Saturnia pavonia in Zuid-Nederland: verspreiding, vliegtijd en voedselkeuze (Lepidoptera: Saturniidae).</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Post F.A.H.E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Saturniidae</dc:subject>
+   <dc:subject>dagvlinders</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>verspreiding</dc:subject>
+   <dc:description>The emperor moth Saturnia pavonia in the southern part of the Netherlands: distribution, phenology and food (Lepidoptera: Saturniidae) Saturnia pavonia is a large and beautiful moth. It was thought that the species was becoming rare in the Netherlands. In the period 1986-2006 the species was surveyed in the province of Noord-Brabant and the northern and middle part of the province of Limburg. It was shown that the emperor moth was present in 40% of the 250 investigated 5 km squares, especially on heath land and in forests. It became clear that the species, however conspicuous in appearance, has a largely hidden lifestyle. Although the males can be seen flying over heath land, most are hidden in the vegetation. Furthermore the males fly only in the late afternoon and evening. Females are even less active and both sexes are scarcely attracted to light traps. The caterpillars are sometimes found high in trees and shrubs, but this research shows that most are hidden deep in the vegetation. The flight period started ten days earlier than in 1960, mentioned in the Dutch literature. In Central Europe Filipendula ulmaria is an important food plant. In the Netherlands most caterpillars were found on Calluna and Erica, seldom on other plans, and only occasionally on Filipendula.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327112</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>9</dcterms:extent>
+   <dcterms:extent>page 1 - 9</dcterms:extent>
+   <dcterms:isPartOf>De nachtpauwoog Saturnia pavonia in Zuid-Nederland: verspreiding, vliegtijd en voedselkeuze (Lepidoptera: Saturniidae). (URN:ISSN:01692453) (Volume 27)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327112.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/159600</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327112</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

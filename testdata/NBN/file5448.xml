@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of the hitherto unknown males of Argiope reinwardti (Doleschall, 1859) and Cyrtophora monulfi Chrysanthus, 1960 (Araneae, Argiopidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Chrysanthus Fr.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>During 1970 Dr. M. H. Robinson, Mrs. B. Robinson and Miss Y. Lubin, of the Bishop Museum Field Station in Wau (T.P.N.G.) studied Argiopid spiders in that part of eastern New Guinea. They collected many specimens and sent them to me for identification. Among these materials there were the hitherto unknown males of two species. The descriptions of these males are given here. Argiope reinwardti (Doleschall, 1859) (figs. 1-4) Epeira trifasciata Doleschall, 1857: 416 (♀); 1859: pl. 1 fig. 3(♀)- preocc. Epeira reinwardti Doleschall, 1859: 31, pl. 15 fig. 5(♀). Argyope reinwardti (Doleschall), Chrysanthus, 1971: 15, figs. 20-22 (♀). Roewer (1942: 741) synonymized Argiope plana L. Koch, 1867, with A. reinwardti and assumed that the male described and figured by Keyserling (1886: 133, pl. 10 fig. 5) as A. fasciata Hentz (= plana L. Koch) was the male of A. reinwardti. A study of the female syntypes of A. plana and the male of A. fasciata (Zoologisches Museum, Hamburg), however, convinced me that all belong to A. trifasciata (Forskål, 1775) (cf. Bonnet, 1955: 695). As far as I know the male of A. reinwardti never has been described or figured. Three males and six females have been sent to me, all collected in the Wau Valley in the course of 1970. One of the males was found at the border of a web of one of the females, together with a male of A. aetherea (Walckenaer), the other males in the neighbourhood of a web of A. picta L. Koch. It is a known fact that Argiopid males sometimes start courting at a "wrong" web. The three males do not belong to one of the other Argiope species collected in that region, viz., A. picta L. Koch, A. aetherea (Walckenaer), A. aemula</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317953</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 156 - 159</dcterms:extent>
+   <dcterms:isPartOf>Description of the hitherto unknown males of Argiope reinwardti (Doleschall, 1859) and Cyrtophora monulfi Chrysanthus, 1960 (Araneae, Argiopidae) (URN:ISSN:0024-0672) (Volume 47) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317953.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149239</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317953</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Linzer biologische Beiträge (LBB) 9_1 (1977)</dc:title>
+   <dc:creator>Grims  Franz, Gusenleitner  Josef, Klaus  W., Lonsing  Alfred, Mendl  Hans, Schmidt  Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Alfred Lonsing: Stand der floristischen Kartierung in Oberösterreich Ende 1976.     1-    3. Franz Grims: "Das Donautal zwischen Aschach und Passau, ein Refugium bemerkenswerter Pflanzen in Oberösterreich."     5-   80. W. Klaus: Coccus nivalis, ein häufiges Mikrofossil des Spätglazials und frühen Postglazialas.    81-   84. Hans Mendl: Weitere Limoniiden und Cylindrotomiden (Diptera, Nematocera) aus den Sammlungen des Oberösterreichischen Landesmuseums in Linz an der Donau.    85-   89. Josef Schmidt: Die Chrysididen der Türkei, insbesondere Anatoliens (Hymenoptera: Chrysididae).    91-  129. Josef Gusenleitner: Über Faltenwespen aus Marokko (Hymenoptera: Diploptera).   131-  161. Josef Gusenleitner: Neue Leptochilus-Arten aus Anatolien und Nordafrika.   163-  178</dc:description>
+   <dc:date>1977</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/85.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/85.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=85</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

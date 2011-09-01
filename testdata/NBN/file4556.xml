@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Additional results and discussion to the paper: Asymmetric viability of reciprocal-cross hybrids between crested and marbled newts (Triturus cristatus and T. marmoratus)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Arntzen J.W.</dc:creator>
+   <dc:creator>Jehle R.</dc:creator>
+   <dc:creator>Bardakci F.</dc:creator>
+   <dc:creator>Burke T.</dc:creator>
+   <dc:creator>Wallis G.P.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Allozyme</dc:subject>
+   <dc:subject>Bateson–Dobzhansky–Muller incompatibility</dc:subject>
+   <dc:subject>cytonuclear incompatibility</dc:subject>
+   <dc:subject>hybridization</dc:subject>
+   <dc:subject>microsatellite</dc:subject>
+   <dc:subject>mtDNA</dc:subject>
+   <dc:subject>postzygotic isolation asymmetry</dc:subject>
+   <dc:subject>Triturus</dc:subject>
+   <dc:description>Hybridization between divergent lineages often results in reduced hybrid viability. Here we report findings from a series of independent molecular analyses over several seasons on four life stages of F1 hybrids between the newts Triturus cristatus and T. marmoratus. These two species form a bimodal hybrid zone of broad overlap in France, with F1 hybrids making up about 4% of the adult population. We demonstrate strong asymmetry in the direction of the cross, with one class (cristatus-mothered) making up about 90% of F1 hybrids. By analyzing embryos and hatchlings, we show that this asymmetry is not due to prezygotic effects, as both classes of hybrid embryos are present at similar frequencies, implicating differential selection on the two hybrid classes after hatching. Adult F1 hybrids show a weak Haldane effect overall, with a 72% excess of females. The rarer marmoratusmothered class, however, consists entirely of males. The absence of females from this class of adult F1 hybrids is best explained by an incompatibility between the cristatus X chromosome and marmoratus cytoplasm. It is thus important to distinguish the two classes of reciprocal-cross hybrids before making general statements about whether Haldane’s rule is observed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:289893</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>/www3.interscience.wiley.com/cgi-bin/fulltext/121638145/PDFSTART [doi:10.1111/j.1558-5646.2009.00611.x]</dcterms:alternative>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1191 - 1202</dcterms:extent>
+   <dcterms:isPartOf>Additional results and discussion to the paper: Asymmetric viability of reciprocal-cross hybrids between crested and marbled newts (Triturus cristatus and T. marmoratus) (URN:ISSN:0014-3820) (Volume 63)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/289893.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/135332</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/289893</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

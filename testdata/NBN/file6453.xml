@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new damselfish, Chromis lubbocki (Teleostei: Pomacentridae) from the Cape Verde Archipelago, with notes on other eastern Atlantic pomacentrids</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Edwards A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Pomacentridae; eastern Atlantic; Chromis lubbocki spec. nov.; Cape Verde Archipelago;</dc:subject>
+   <dc:description>A new species of damselfish Chromis lubbocki (Teleostei: Pomacentridae) from the Cape Verde Archipelago is described. The following combination of characters separates C. lubbocki from other eastern Atlantic Chromis: Dorsal fin rays XIV, 12; pectoral fin rays 20 (occasionally 19 or 21); transverse scale rows 27 (rarely 26); scales below lateral-line 9, scales between terminal lateral-line scale and dorsal base 1 1/2; 22-24 gill-rakers on lower limb of first gill-arch; second anal spine longer than longest anal ray; length of second anal spine 18.0-22.2% SL; pelvic fins short, length of longest ray 23.0-29.6% SL; fins yellowish in life. A key to the five species of Chromis now known from the eastern Atlantic is provided and their nomenclature discussed. Using the pomacentrid collections of the CANCAP project of the Rijksmuseum van Natuurlijke Historie as a basis, the taxonomic status of other eastern Atlantic pomacentrids is reviewed and unresolved taxonomic problems outlined. Finally, a provisional list of pomacentrid species occurring in the eastern Atlantic is given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318958</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1986</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 181 - 207</dcterms:extent>
+   <dcterms:isPartOf>A new damselfish, Chromis lubbocki (Teleostei: Pomacentridae) from the Cape Verde Archipelago, with notes on other eastern Atlantic pomacentrids (URN:ISSN:0024-0672) (Volume 60) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318958.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150244</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318958</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

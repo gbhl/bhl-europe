@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New species of the genera Megischus Brullé and Stephanus Jurine from China (Hymenoptera: Stephanoidea: Stephanidae), with a key to world species of the genus Stephanus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:creator>Yang Z.-q.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Stephanoidea</dc:subject>
+   <dc:subject>Stephanidae</dc:subject>
+   <dc:subject>Megischus</dc:subject>
+   <dc:subject>Stephanus</dc:subject>
+   <dc:subject>China</dc:subject>
+   <dc:subject>Oriental</dc:subject>
+   <dc:subject>Palaearctic</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>keys</dc:subject>
+   <dc:subject>Buprestidae</dc:subject>
+   <dc:subject>Cerambycidae</dc:subject>
+   <dc:description>Three new species of the genera Megischus Brullé and Stephanus Jurine from China (Hymenoptera: Stephanoidea: Stephanidae) are described, illustrated and keyed. Megischus ptosimae Chao, 1964, from Fujian is redescribed and the specimen from India described as M. ptosimae Chao by van Achterberg (2002) is renamed as M. alveolifer spec. nov. and the Malaysian specimen of M. ducalis Westwood listed by van Achterberg (2002) is described as M. ducaloides spec. nov. M. ducalis Westwood, 1851, is reported for the first time from Cambodia, which is the first report after its description. A key to world species of the genus Stephanus is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214400</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 101 - 117</dcterms:extent>
+   <dcterms:isPartOf>New species of the genera Megischus Brullé and Stephanus Jurine from China (Hymenoptera: Stephanoidea: Stephanidae), with a key to world species of the genus Stephanus (URN:ISSN:00240672) (Volume 78, 1-16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214400.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43139</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214400</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

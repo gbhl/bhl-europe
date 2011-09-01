@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The snout of Paulocnus petrifactus (Mammalia, Edentata)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>A specimen of the ground sloth discovered by Mr. P. Stuiver in Curaçao, Paulocnus petrifactus Hooijer (1962), recently dressed from the matrix by Mr. P. H. de Buisonjé, comprises the front part of the mandible and the left half of the rostrum of the skull. It holds the left upper and right lower caniniform teeth as well as the first and second right lower cheek teeth, while the first and parts of the second left cheek teeth are in occlusion. The specimen is shown on pl. X; the mandible is presented in dorsal view in fig. 1. Fig. 1. Paulocnus petrifactus Hooijer, top view of mandible, nat. size. W. C. G. Gertenaar del. I have recently been able to compare the specimen with originals of the Cuban ground sloths Megalocnus rodens Leidy, Mesocnus browni Matthew, and Acratocnus antillensis (Matthew) as well as with the Puerto Rican Acratocnus odontrigonus Anthony when visiting the American Museum of Natural History in New York City under the auspices of the Netherlands Organization for the Advancement of Research (Z.W.O.). I am indebted to Dr. Edwin H. Colbert, Chairman, and Dr. Malcolm C. McKenna, Curator of Mammals in the Department of Vertebrate Paleontology of the American Museum, for permission to study these fossils and for generous hospitality. The front end of the mandible of Paulocnus is now available for the first time; this portion differs greatly among the West Indian sloths, the symphyseal tongue being absent in Megalocnus, rather long, decurved, and spatulate in Mesocnus, and short and roughly pointed in Acratocnus. The condition seen in Paulocnus resembles that in Mesocnus rather more than that in the other genera; the tongue is elongated only to a slightly less extent</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318702</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 79 - 84</dcterms:extent>
+   <dcterms:isPartOf>The snout of Paulocnus petrifactus (Mammalia, Edentata) (URN:ISSN:0024-0672) (Volume 39) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318702.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149988</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318702</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

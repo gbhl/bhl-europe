@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Report on the Hydroida collected by the "BALGIM" expedition in and around the Strait of Gibraltar</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Ramil F.</dc:creator>
+   <dc:creator>Vervoort W.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Cnidaria; Hydrozoa; Hydroida; genera; relationship; new species; bathyal-abyssal fauna of Ibero-Moroccan Bay; Strait of Gibraltar; Alboran Sea; water movements.</dc:subject>
+   <dc:description>A total of 102 species and varieties of hydroids and three unidentifiable species are described or mentioned in the present report, which deals principally with hydroids collected in the IberoMoroccan Bay (and adjacent Atlantic), the Strait of Gibraltar, and the Alboran Sea; for revisionary purposes some additional, mainly Atlantic, material had to be included. The material described has been assigned to four families of athecate and 14 families of thecate hydroids. Nearly all species have been illustrated and a permanent slide collection has been made. Where necessary the material described has been compared with type material; ten new (sub)species are described, of which eight from the BALGIM material. Holotypes, and where necessary and/or possible paratypes have been indicated for Stegopoma giganteum spec. nov., Acryptolaria conferta minor subspec. nov., Zygophylax elongata spec. nov., Zygophylax leloupi spec. nov., Cladocarpus boucheti spec. nov., C. corneliusi spec. nov., C. paraventricosus spec. nov., and Plumularia falcicula spec. nov. and their deposition recorded. Generally holotypes have been deposited in the Muséum National d'Histoire Naturelle, Paris. Paratypes and slides are in the collections of the National Museum of Natural History (Nationaal Natuurhistorisch Museum, former Rijksmuseum van Natuurlijke Historie), Leiden, The Netherlands. Some additional paratypes are now in The Natural History Museum [former British Museum (Natural History)], London. A representative slide collection is in the Departamento de Recursos Naturales y Medio Ambiente, Orense. A survey of the geographical distribution over the BALGIM stations shows that, generally speaking, practically all littoral and benthic species occur in the Alboran Sea as well as in the IberoMoroccan Bay, the few exceptions being bathyal-abyssal species for which the sill in the Strait of Gibraltar apparently forms a major obstacle in penetrating the Mediterranean. Furthermore a distinct influence of the outflowing Mediterranean Water on the bathyal hydroid fauna in the north-eastern part of the Ibero-Moroccan Bay could not be demonstrated. Synthecium evansii (Ellis &amp; Solander, 1786), so far considered a characteristic Mediterranean hydroid, has been observed to occur on the Atlantic side of the Straits; the species moreover has recently been recorded from the Canary Islands region. These observation contrast with the results obtained by Grasshoff (1989) during his study of other groups of benthic Cnidaria (Gorgonaria, Pennatularia and Antipatharia).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317860</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 262</dcterms:extent>
+   <dcterms:isPartOf>Report on the Hydroida collected by the "BALGIM" expedition in and around the Strait of Gibraltar (URN:ISSN:0024-1652) (Volume 277) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317860.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149146</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317860</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

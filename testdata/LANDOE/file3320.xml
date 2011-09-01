@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 127-128 (1989)</dc:title>
+   <dc:creator>Anonymus , Kasper  Werner, Kies  Ludwig, Kresser  Werner, Kusel-Fetzmann  Elsa Leonore, Nachtnebel  Hans-Peter, Nagl  Hubert, Ott  Jörg A., Pramberger  Franz, Rabeder  Gernot, Rank  Dieter, Reitinger  Johann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Vereinsbericht.     4-    5. Anonymus: Verzeichnis der abgehaltenen Vorträge.     6-   10. Hubert Nagl: Nachruf auf Ernest Troger.    11-   14. Werner Kresser: Grundwasserschutz - eine lebenswichtige Aufgabe.    15-   28. Johann Reitinger: Bedeutung des Grundwassers für die Wasserversorgung in Österreich.    29-   44. Franz Pramberger: Beobachtung und Entwicklung der Grundwasserverhältnisse in Österreich.    45-   71. Hans-Peter Nachtnebel: Fluß-Staue und Grundwasser.    73-   90. Werner Kasper: Können Gesetze das Grundwasser schützen?    91-  103. Gernot Rabeder: Modus und Geschwindigkeit der Höhlenbären-Evolution.   105-  126. Elsa Leonore Kusel-Fetzmann: Tasmanien, ein Paradies - wie lange noch?   127-  145. Dieter Rank: Isotopenverhältnisse - die Fingerabdrücke des Wassers.   147-  176. Jörg A. Ott: Prärien auf dem Meeresgrund.   177-  198. Ludwig Kies: Glaucocystophyceae: Einzeller mit blaugrünen Endocytobionten als Modelle für die Evolution der Chloroplasten.   199-  216</dc:description>
+   <dc:date>1989</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/31226.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/31226.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=31226</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

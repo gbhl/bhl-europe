@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogus van de Nederlandse spinnen (Araneae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Helsdingen, van P.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Aranaea</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Naamlijst</dc:subject>
+   <dc:description>Catalogue of the Dutch spiders (Araneae) This new catalogue is a revised edition of the catalogue of the spiders of the Netherlands of 1980. Newly published faunistic records have been added. A total of 640 species names pass in review, 20 of which (in brackets) concern former records now removed, while 10 are questionable but unverifiable (indicated with ?). Twelve species clearly introduced and not represented by viable populations outside the special anthropogenic environments, such as greenhouses, are included in the catalogue [in square brackets]. Since 1980, 77 species have been added to the Dutch faunal spider checklist. The Netherlands house the type-localities of six nominal species, now representing three recognized species (Liocranum rutilans (Thorell), Enoplognatha mordax (Thorell) and Donacochara speciosa (Thorell)) and three junior synonyms (of Oedothorax fuscus (Blackwall), Theridion blackwalli O.P.-Cambridge and Donacochara speciosa (Thorell)). The dynamic features of taxonomy and faunal composition are stressed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215299</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 190</dcterms:extent>
+   <dcterms:isPartOf>Catalogus van de Nederlandse spinnen (Araneae) (URN:ISSN:01692453) (Volume 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215299.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43700</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215299</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

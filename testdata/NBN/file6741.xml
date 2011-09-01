@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Die Gattung Opisthodonta Langerhans (Syllidae, Polychaeta): Wiederbeschreibung von O. Morena Langerhans Aus dem Westlichen Mittelmeer und aus dem roten meer und von O. Pterochaeta Southern, Neufund in der Nordsee vor der Niederländischen Küste</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hartmann-Schröder G.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Ophistodonta Langerhans ist die einzige Gattung der Unter familie Eusyllinae, bei der der Pharynx-Zahn auf der hinteren Hälfte des Pharynx liegt. Bis 1954 war die von Langerhans (1879) errichtete Gattung nur durch zwei Arten mit je einem Exemplar bekannt. Von diesen beiden Exemplaren existiert sehr wahrscheinlich nur noch der Holotypus von O. pterochaeta, während die Typusart, O. morena, verschollen ist; jedenfalls ist er in den zoologischen Sammlungen der Universität Hamburg, der Humboldt-Universität in Ost-Berlin und des Senkenberg-Museums nicht vorhanden. 1954 fand Pérès im westlichen Mittelmeer bei Marseille einen Eusyllinen mit einem weit hinten liegenden Pharynx-Zahn, den er mit Zögern der nur sehr kurz beschriebenen Opisthodonta morena von Langerhans zuordnete. Ihm folgten Guille &amp; Laubier (1966) mit einigen Exemplaren ebenfalls aus dem westlichen Mittelmeer, aus der Gegend von Banyuls. Eine kurze Beschreibung dieser Tiere durch Laubier erscheint in diesem Jahre (1970). 1966 fand Storch eine Art im Roten Meer, die er als Opisthodonta cf. morena bezeichnete. Das einzige von Pérès 1954 gesammelte Tier ist inzwischen wieder verloren gegangen (Pérès, brieflich); das Material von Laubier und Storch lag mir zur Untersuchung vor. An dieser Stelle möchte ich den Herren Drs. Laubier (Brest), Storch (Kiel) sowie Soyer (Banyuls-sur-Mer) nochmals für die Überlassung des Materials danken. Opisthodonta pterochaeta war bis vor kurzem auch nur wenig bekannt: nur der Originalfund von der irischen Atlantikküste. 1966 fand Herr Wolff (Yerseke) zusammen mit seinem Assistenten Nieuwenhuizen und Rober drei Exemplare dieser Art während einer sedimentologischen Exkursion von</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319246</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 99 - 106</dcterms:extent>
+   <dcterms:isPartOf>Die Gattung Opisthodonta Langerhans (Syllidae, Polychaeta): Wiederbeschreibung von O. Morena Langerhans Aus dem Westlichen Mittelmeer und aus dem roten meer und von O. Pterochaeta Southern, Neufund in der Nordsee vor der Niederländischen Küste (URN:ISSN:0024-0672) (Volume 45) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319246.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150532</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319246</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

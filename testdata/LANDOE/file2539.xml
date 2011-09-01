@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 31 (1891)</dc:title>
+   <dc:creator>Aberle  Karl (Carl), Anonymus , Better  Alexander, Fugger  Eberhard, Hammerle  Josef Alois, Hauthaler  P. Willibald, Pezolt  Ludwig, Pirckmayer  Friedrich, Prinzinger  August, Schnerich  Alfred</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl (Carl) Aberle: Grab-Denkmal, Schädel und Abbildungen des Theophrastus Paracelsus.     1-  226. Eberhard Fugger: Uebersicht der Witterung im Jahre 1890.   225-  232. Eberhard Fugger: Uebersicht der Witterung auf dem Untersberge 1889.   233-  236. Eberhard Fugger: Uebersicht der Witterung auf dem Untersberge 1890.   237-  240. Eberhard Fugger: Salzburg's Seen II.   241-  258. Eberhard Fugger: Beiträge zur Flora des Herzogthumes Salzburg.   259-  312. Friedrich Pirckmayer: Die Familie derer von Walchen im Pinzgau.   312-  313. P. Willibald Hauthaler, Alfred Schnerich: J. Steinhauser's Beschreibung des Domes zu Salzburg vom Jahre 1602.   363-  393. Friedrich Pirckmayer: Miscellen. Inventrary der gschütz, weer und zeug auf dem schlos (Werffen).   394-  396. Friedrich Pirckmayer: Miscellen. Lebensbild aus dem salzburgischen Gebirge gegen Ende des 16. Jahrhunderts.   398-  402. Alexander Better: Miscellen. Ueber die Büffelzucht in Salzburg.   403. Josef Alois Hammerle: Miscellen. WJR Ferdinand der Annder von Gottes Gnaden.   404-  405. Josef Alois Hammerle: Miscellen. Wolf Dietrich, von Gottes gnaden, Erzbischofe zu Salzburg, Legat des Stuels zu Rom.   404. August Prinzinger, Eberhard Fugger: Gesellschafts-Angelegenheiten. 1. Protokoll der ordentlichen Jahres-Versammlung am 15. Oktober 1891.   406-  407. August Prinzinger: Gesellschafts-Angelegenheiten. 2. -Bericht über die Tätigkeit und den Stand der Gesellschaft für Salzburger Landeskunde im XXXI. Vereinsjahre 1890-1891.   408-  421. Anonymus: Gesellschafts-Angelegenheiten. 3. Auszug aus den Sitzungsprotokollen des Ausschusses im XXXI. Gesellschaftsjahre 1890-1891.   422-  427. Anonymus: Gesellschafts-Angelegenheiten. 4. Mitglieder-Verzeichniß (mit Schluß des XXXI. Vereinsjahres).   428-  437. Anonymus: Gesellschafts-Angelegenheiten. 5. Verzeichniß jener gelehrten Gesellschaften, Vereine, Anstalten und Personen, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mittheilungen" eine Verbindung pflegt.   438-  440. Anonymus: Gesellschafts-Angelegenheiten. 6. Verzeichniß jener Bücher und Schriften, welche - außer dem wechselseitigen Tauschverkehre - an die Gesellschaft gelangt oder gespendet worden sind.   441. Ludwig Pezolt: Gesellschafts-Angelegenheiten. 7. Abrechnung über Einnahmen und Ausgaben für das 31. Vereinsjahr 1890/91.   442-  443</dc:description>
+   <dc:date>1891</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29036.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29036.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29036</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

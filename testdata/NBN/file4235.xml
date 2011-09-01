@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Isarachnanthus from Central Atlantic and Caribbean region with notes on Isarachnactis lobiancoi (Carlgren, 1912)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Molodtsova T.N.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Ceriantharia</dc:subject>
+   <dc:subject>Arachnactidae</dc:subject>
+   <dc:subject>Isarachnanthus maderensis comb.nov.</dc:subject>
+   <dc:subject>Central Atlantic</dc:subject>
+   <dc:subject>Caribbean region</dc:subject>
+   <dc:description>Isarachnanthus specimens from different localities in the Central Atlantic and Caribbean regions were studied. All examined specimens belong to one widely distributed shallow water species, Isarachnanthus maderensis (Johnson, 1861). The synonymy of this species and possible reasons for such a wide distribution are discussed. Isarachnactis lobiancoi (Carlgren, 1912) may be a larval form of I. maderensis.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220308</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 249 - 255</dcterms:extent>
+   <dcterms:isPartOf>On Isarachnanthus from Central Atlantic and Caribbean region with notes on Isarachnactis lobiancoi (Carlgren, 1912) (Volume 345)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220308.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46838</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220308</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

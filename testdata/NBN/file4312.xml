@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annotated catalogue of the Nepticulidae and Opostegidae (Lepidoptera: Nepticuloidea) of the Iberian Peninsula</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Lastuvka A.</dc:creator>
+   <dc:creator>Lastuvka Z.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera</dc:subject>
+   <dc:subject>Nepticulidae</dc:subject>
+   <dc:subject>Opostegidae</dc:subject>
+   <dc:subject>catalogue</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>new records</dc:subject>
+   <dc:subject>new hostplants</dc:subject>
+   <dc:subject>Iberian Peninsula</dc:subject>
+   <dc:description>The Nepticulidae and Opostegidae of mainland Spain (including the Balearic Islands), Portugal, Gibraltar and Andorra are listed. All previous literature records are given, and interpreted where needed. Detailed records are given for material collected and /or studied by us. In total 102 Nepticulidae and 5 Opostegidae are listed. Stigmella nivenburgensis (Preissecker, 1942), S. rhamnella (Herrich-Schäffer, 1860), S. crenulatae (Klimesch, 1975) (on new host Rhamnus lycioides), S. sorbi (Stainton, 1861), Trifurcula (Trifurcula) beirnei Puplesis, 1984, Ectoedemia (Fomoria) euphorbiella (Stainton, 1869) (on three new hosts in the genus Euphorbia) and E. (E. ) subbimaculella (Haworth, 1828) are new for Spain, and Stigmella rhamnella (Herrich-Schäffer, 1860), S. crenulatae (Klimesch, 1975), S. paradoxa (Frey, 1858), S. crataegella (Klimesch, 1936), S. hybnerella (Hübner, 1813), S. incognitella (Herrich-Schäffer, 1855), Trifurcula (Glaucolepis) rosmarinella (Chrétien, 1914), T. (Levarchama) cryptella (Stainton, 1856), T. (T.) squamatella (Stainton, 1849), Ectoedemia (Zimmermannia) atrifrontella (Stainton, 1851), E. (Z.) longicaudella Klimesch, 1953, E. (Z.) liebwerdella (Zimmermann, 1940), E. (Z.) hispanica Van Nieukerken, 1985, E. (E.) caradjai (Groschke, 1944), E. (E.) albifasciella (Heinemann, 1871), E. (E.) pubescivora (Weber, 1938) and E. (E.) heringi (Toll, 1934) are new for Portugal. Stigmella crenulatae is also new for Europe. Stigmella ilicifoliella (Mendes, 1918) and Acalyptris minimella (Rebel, 1924) are the first Nepticulidae recorded for resp. Andorra and Gibraltar. Stigmella assimilella (Zeller, 1848), S. vimineticola (Frey, 1856) and S. obliquella (Heinemann, 1862) are confirmed as Spanish. Previous records of Stigmella viscerella and S. lemniscella could not be confirmed and are regarded as doubtful. Stigmella ruficapitella (Haworth) and Trifurcula pallidella (Duponchel) are removed from the Portuguese and Spanish lists, and Ectoedemia groschkei (Skala) is shown to have been incorrectly cited from Spain. For many species we provide the first detailed records, since they were previously only listed in checklists. Records are summarized per provinces, the highest recorded number of species is 46 for Teruel in Spain, and 34 for the Algarve in Portugal. We illustrate leafmines and genitalia of several rare species of Nepticulidae. The male and female genitalia of Opostegoides menthinella (Mann, 1855) and Pseudopostega chalcopepla (Walsingham, 1908) are illustrated for the first time; Opostegoides menthinella and Pseudopostega chalcopepla are also recorded from Tunisia for the first time. In addition a key to the six species of European Opostegidae is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227758</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 211 - 260</dcterms:extent>
+   <dcterms:isPartOf>Annotated catalogue of the Nepticulidae and Opostegidae (Lepidoptera: Nepticuloidea) of the Iberian Peninsula (URN:ISSN:03005267) (Volume 32 (127))</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227758.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50436</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227758</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

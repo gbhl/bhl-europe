@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Beitrag zur Kenntnis und Verbreitung von Galathea Australiensis Stimpson, 1858, (Crustacea Decapoda, Anomura, Galatheidae) nebst Beschreibung eines Neotypus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Lewinsohn Ch.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Anlässlich der Vorbereitung einer Publikation über die Anomuren des Roten Meeres, wurde u.a. auch Material der Gattung Galathea dieser Region untersucht. Dabei ergab sich das Problem einer richtigen Bestimmung von Galathea australiensis Stimpson, 1858. Diese Art wurde von Balss (1915: 2-3), an Hand des Materiales der „Pola"-Expedition (1895/96 und 1897/98), aus dem Roten Meer beschrieben. Balss synonymisiert in der genannten Arbeit die drei von Paulson (1875: 94-95) beschriebenen Galathea-Arten vom Roten Meer mit G. australiensis. Er schreibt darüber folgendes: „Die Identität von G. aegyptiaca mit australiensis geht, wie schon aus den Beschreibungen, so besonders aus dem Vergleiche unseres grossen Materiales mit Exemplaren aus Japan hervor. Die Merkmale der von Paulson beschriebenen beiden Arten brevimana und longimana fallen durchaus in die Variationsbreite dieser Art". Die Untersuchung des vorliegenden Materiales vom Roten Meer ergab, dass die drei von Paulson beschriebenen Arten, nämlich G. aegyptiaca, G. longimana und G. brevimana, gute Arten sind, welche sich einwandfrei unterscheiden lassen (über diese Arten wird in der anfangs erwähnten Publikation ausführlich berichtet werden). Da das Typusexemplar Stimpson's von G. australiensis nicht mehr vorhanden ist, wurden die vorliegenden Arten mit Exemplaren von G. australiensis aus Port Jackson, Sydney (Typuslokalität) verglichen. Dabei ergab sich, dass keine der Paulson'schen Arten mit G. australiensis identisch ist. Als nächster Schritt wurde nun der grösste Teil der von Balss (1915) als G. australiensis determinierten Exemplare nachuntersucht (ausser dem Proben von Habban, Ras el Millan und einem ♂ von Tor, Sinai, welche wahrscheinlich nicht mehr vorhanden</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318046</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1967</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 175 - 187</dcterms:extent>
+   <dcterms:isPartOf>Beitrag zur Kenntnis und Verbreitung von Galathea Australiensis Stimpson, 1858, (Crustacea Decapoda, Anomura, Galatheidae) nebst Beschreibung eines Neotypus (URN:ISSN:0024-0672) (Volume 42) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318046.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149332</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318046</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

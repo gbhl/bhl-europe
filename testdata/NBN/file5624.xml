@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Remarks on the subclass Udonellida (Monogenea), with description of a new species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Land, van der J.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>INTRODUCTION Flatworms living as commensals on parasitic copepods from marine fishes were known already as- early as 1835, when Johnston described Udonella caligorum from Caligus spec., a parasite of Hippoglossus hippoglossus (L.). Since then a number of similar genera and species have been described, but none of these is clearly different from Udonella caligorum, as far as can be judged from the descriptions. Therefore only one valid species is recognized by most modern authors (Price, 1938; Sproston, 1946; Ivanov, 1952b). Calinella ophiodontis Kay, 1945, a species not listed by these authors, probably is another synonym to be added to the long list, but Kay's material should be re-examined before a final decision can be made. In Yamaguti's compilation (1963) the genus Calinella Monticelli, 1910, is still maintained, based on the incorrect assumption that this genus should differ from Udonella in having the intestine fenestrated. In the present paper a new species is described, which is provisionally included in the genus Udonella. Material of Udonella caligorum could also be studied. Udonella papillifera n. sp. (fig. 1-22) Material. — Dr. W. Vervoort found 12 specimens of this new species loose in a vial with about 30 specimens of Ceratocolax euthynni Vervoort (Copepoda, Cyclopoida), which were collected from the nasal fossae of Euthynnus alleteratus (Rafinesque) from the Gulf of Guinea, off Abidjan, Ivory Coast (Vervoort, 1965). From a few to more than 40 eggs of Udonella were attached to the carapax, the genital segments and the egg strings of nearly all host copepods. It is not known whether the copepods were collected from</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318129</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1967</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 67 - 81</dcterms:extent>
+   <dcterms:isPartOf>Remarks on the subclass Udonellida (Monogenea), with description of a new species (URN:ISSN:0024-0672) (Volume 42) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318129.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149415</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318129</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

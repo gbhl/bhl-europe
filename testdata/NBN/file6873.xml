@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Bonaparte's types of the cuckoos belonging to the genus Piaya</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Junge G.C.A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>Recently Dr. J. L. Peters drew my attention to the fact that Bonaparte's Piaya circe and Piaya mehleri never were closely examined in the light of modern knowledge. It is, indeed, a good thing to do this, for the names, especially mehleri, have been used for birds from various localities by different authors; this caused a good deal of trouble and confusion in the genus. Thanks to the kindness of Dr. J. L. Peters of the Museum of Comparative Zoölogy, Cambridge, Mass., and Dr. S. C. Simms of Field Museum of Natural History, Chicago, I received some specimens of each race to which the names possibly should be applied. Piaya circe Bonaparte In 1850 (p. 110) Bonaparte described Piaya circe with habitat "Columbia". Sclater (1860, p. 285) placed this name in the synonymy of Piaya macroura Gambel and in accordance with this Cabanis (1862, p. 168) considered the originally given locality to be wrong and said that Bonaparte's description agreed best with the birds from Montevideo and S.E. Brazil. Together with Heine he made the same statement in Museum Heineanum (1862—1863, p. 87). To the area inhabited by this bird in this paper they added Paraguay, which was fixed by later authors as the type locality. Allen (1893, pp. 137—139), however, considered Gambel's name macroura, based on a bird which originally was said to come from Surinam (which locality was also changed by Cabanis and Heine and later fixed as Paraguay) as a synonym of P. cayana (L.). Allen thought that circe probably was a Central American bird and the name circe therefore should antedate Sclater's name thermophila for this animal, the name thermophila being from 1859 (p. 368). Most authors, however, joined</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319378</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 183 - 186</dcterms:extent>
+   <dcterms:isPartOf>On Bonaparte's types of the cuckoos belonging to the genus Piaya (URN:ISSN:0024-0672) (Volume 19) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319378.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150664</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319378</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

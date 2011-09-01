@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The choice of external morphological characters and developmental stages for tadpole-based anuran taxonomy: a case study in Rana (Sylvirana) nigrovittata (Blyth, 1855) (Amphibia, Anura, Ranidae)</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Grosjean S.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Tadpole</dc:subject>
+   <dc:subject>Rana (Sylvirana) nigrovittata</dc:subject>
+   <dc:subject>Ranidae</dc:subject>
+   <dc:subject>external morphology</dc:subject>
+   <dc:subject>morphometry</dc:subject>
+   <dc:subject>internal buccal features</dc:subject>
+   <dc:subject>ontogeny</dc:subject>
+   <dc:subject>character variation</dc:subject>
+   <dc:subject>Vietnam</dc:subject>
+   <dc:description>The morphology of tadpoles has long received too little attention in taxonomic and phylogenetic contexts, beyond the use of Orton’s general tadpole types, despite the potential of larval characters for resolving problems in systematics. A possible explanation for this neglect is the ontogenetic variation of external morphology. In order to understand the value of larval characters in taxonomy and systematics, it is necessary to determine the developmental stage at which characters reach their definitive size, form and colour before meaningful comparisons can be made within and between species. Here I use the tadpole of Rana (Sylvirana) nigrovittata as a model organism to assess ontogenetic character variation. Morphometric measurements were taken, and external oral and internal buccal characters were assessed separately for each developmental stage from 26 to 38. Coefficients of variation were calculated for each morphometric character at each stage of development to test the character’s efficiency in reflecting the morphology of the tadpole. Most morphometric characters taken from the body described the shape of the animal well and varied little among individuals, whereas those taken from the tail were less reliable and those of the oral disk were quite variable due to contraction during fixation. A developmental 'climax' for most characters was reached by specimens between stages 32-40, indicating that they are best suited for morphological intra- and interspecific comparisons.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214341</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 61 - 76</dcterms:extent>
+   <dcterms:isPartOf>The choice of external morphological characters and developmental stages for tadpole-based anuran taxonomy: a case study in Rana (Sylvirana) nigrovittata (Blyth, 1855) (Amphibia, Anura, Ranidae) (URN:ISSN:13834517) (Volume 74, 1/2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214341.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43078</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214341</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

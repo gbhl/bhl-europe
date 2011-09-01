@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the genus Notoedres railliet, 1893, from East Asian host (Astigmata: Sarcoptidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Klompen J.S.H.</dc:creator>
+   <dc:creator>Lukoschus F.S.</dc:creator>
+   <dc:creator>Fain A.</dc:creator>
+   <dc:creator>Nadchatram M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Notoedres pahangi spec. nov. from Rattus tiomanicus jalorensis, N. dohanyi spec. nov. fromTadarida mops, N. ismaili spec. nov. from Tadarida plicata, Ν. dewitti spec. nov. from Tadarida plicata and hitherto unknown stages of N. pseudomuris Lavoipierre, 1968 (male and larva), N. jamesoni Lavoipierre, 1964 (larva), N. musculi (Kraemer, 1865) (larva), N. alexfaini Lavoipierre, 1968 (male and larva), N. rajamanickami Lavoipierre, 1968 (larva), N. cheiromeles Fain, 1959 (larva) and N. tristis Fain &amp; Marshall, 1977 (larva) are figured and described. A key to the East Asian species of Notoedres is given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319167</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 271 - 299</dcterms:extent>
+   <dcterms:isPartOf>Notes on the genus Notoedres railliet, 1893, from East Asian host (Astigmata: Sarcoptidae) (URN:ISSN:0024-0672) (Volume 57) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319167.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150453</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319167</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

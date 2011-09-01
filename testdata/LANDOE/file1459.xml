@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 145a (2000)</dc:title>
+   <dc:creator>Brandtner  Andreas, Chabera  Stanislav, Ehrl  Friedrich, Garstenauer  Erwin, Huber  Karl Heinrich, Krause  Axel, Kühberger  Christoph, Prokisch  Bernhard, Slapnicka  Harry, Strobl  Josef, Türk  Roman, Üblagger  Johanna, Winkler  Gerhard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Friedrich Ehrl: Jungsteinzeitliche Lesefunde von Unterweidlham, Marktgemeinde St. Florian bei Linz.     7-   36. Gerhard Winkler: Der römische Grabstein von Altmünster.    37-   43. Bernhard Prokisch: Die Sammlung österreichischer Raitpfennige des 16. und 17. Jahrhunderts im Oberösterreichischen Landesmuseum in Linz.    45-   86. Erwin Garstenauer: Das Sakristeiinventar der Stadtpfarrkirche von Steyr aus dem Jahre 1602.    87-  104. Josef Strobl: Johann Christoph II. Wasner - Abt von Mondsee (1592-1615).   105-  145. Andreas Brandtner: Habent sua fata libelli - Bausteine zur Erforschung der Enenkel-Bibliothek.   145-  152. Axel Krause: Kuriositäten in alten Kirchenbüchern des Mühlviertels.   153-  183. Harry Slapnicka: Das Schicksal der Ischler Kaiservilla nach dem Tod von Kaiser Franz Joseph - Ein bemerkenswertes Denkmal österreichischer Geschichte.   185-  188. Christoph Kühberger: Grenzen der Inszenierung - Die Störanfälligkeit von NS-Veranstaltungen in Österreich.   189-  216. Roman Türk, Johanna Üblagger: Die Flechten im Flechtenherbarium von Franz P. Stieglitz in der Stiftssammlung der Sternwarte in Kremsmünster.   217-  338. Stanislav Chabera, Karl Heinrich Huber: Ein Beitrag zur Frage der Oberen Moldau im Tertiär.   339-  367. : Nachruf.   369-  372. : Besprechungen.   373-  383</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27615.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27615.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27615</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahresberichte Wiener entomologischer Verein 17 (1907)</dc:title>
+   <dc:creator>Anonymus , Dziurzynski  Clemens, Krone  Wilhelm, Rebel  Hans, Schawerda  Karl, Semansky  L.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Vereins-Nachrichten.     1-    8. Anonymus: Mitglieder-Verzeichnis.     9-   11. Anonymus: Kassa-Bericht für das Jahr 1906. (Abschluss mit 31. Dezember 1906).    13. Anonymus: Bibliotheksstand.    15-   24. Wilhelm Krone: Zwei neue Microlepidopteren.    25-   27. L. Semansky: Sammelergebnisse aus der Umgebung von Bukarest.    29-   32. Hans Rebel: Lepidopteren aus dem Gebiete des Triglav und der Crna Prst in Krain. I. Nachtrag.    33-   60. Karl Schawerda: Über die Formen von Parasemia Plantaginis L.    61-   81. Clemens Dziurzynski: Über einige interessante Aberrationen von Zygaenen.    83-   88</dc:description>
+   <dc:date>1907</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28769.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28769.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28769</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

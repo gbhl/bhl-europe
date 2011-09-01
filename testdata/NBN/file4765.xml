@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Enkele interessante Nederlandse crustacea</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In de laatste jaren heeft het Rijksmuseum van Natuurlijke Historie enkele vermeldenswaardige Crustacea ontvangen, die uit de Nederlandse wateren en uit de zuidelijke Noordzee afkomstig zijn. Twee van deze bleken tot soorten te behoren die nog niet eerder uit ons land vermeld waren, te weten de garnaal Eualus occultus en de zeepok Stomatolepas elegans. De garnaal Palaemon adspersus is vroeger wel genoemd als deel uitmakend van onze fauna, doch deze opgaven berusten op foutief gedetermineerde exemplaren; recente vondsten echter tonen aan dat de soort toch tot onze fauna behoort. Van Callinectes sapidus, een uit Amerika afkomstige krabbensoort die vroeger reeds uit Nederland vermeld werd, is hier onlangs een levend wijfje uit de zuidelijke Noordzee aangevoerd, terwijl ook enkele dode exemplaren aan onze kust aanspoelden. Gaarne spreek ik hier mijn dank uit aan de heren G. R. Heerebout en W. J. Wolff, beiden van het Delta Instituut voor Hydrobiologisch Onderzoek te Ierseke, voor het verschaffen van materiaal en belangrijke inlichtingen. DECAPODA BRACHYURA Callinectes sapidus Rathbun, 1896 (tekstfig. 1, pl. 1) Callinectes sapidus is een grote zwemkrab, waarvan het rugschild een breedte van meer dan 20 cm kan bereiken. Deze maat is enigszins geflatteerd door het feit dat het rugschild aan beide zijden eindigt in een forse zijwaarts gerichte stekel, die bij het meten meegerekend wordt. De voorrand van het schild draagt tussen de ogen en de zij stekels acht scherpe tanden, die minder dan half zo lang zijn als de zijstekels. Tussen de ogen staan aan de voorrand van het rugschild twee brede driehoekige stompe tanden. De kleur van de</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317269</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 34 - 48</dcterms:extent>
+   <dcterms:isPartOf>Enkele interessante Nederlandse crustacea (URN:ISSN:0459-1801) (Volume 11) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317269.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148555</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317269</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

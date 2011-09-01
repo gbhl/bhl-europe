@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Malayan species of the genera Aphroditella, Hermione, Laetmonice and Aphrogenia</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Genus APHRODITELLA Roule 1). Mc Intosh 2) in 1885 first described a minute Aphroditean-worm from the West-Indian abyss, the ventral bristles of which are „ densely pilose almost to the terminal hook and provided with a spur as in Laetmatonice" (Aphrod. intermedia); two years thereafter Ehlers 3) among the Annelids of the Blake, from a depth of 1719 M., met with an Aphrodite, that possesses ventral bristles, provided on one side with a beard of hairs (Aphrod. obtecta). Finally Roule among the Annelids of the Travailleur and the Talisman found an Aphrodite from a depth of 1084 M., that also possesses ventral setae with a pinnate appearance; with the two preceding species he ranges this form in a new genus Aphroditella. Several species of this genus appear to be represented in the Malayan abyss. Aphroditella malayana n. sp. Siboga-expedition, Stat. 161, east off Kofian-island; depth 798 M. The body is oval, distinctly narrowed in the posterior region like in Aphrodite australis (Challenger Annel. Pl. VII, fig. 7). The long goldenbrown dorsal bristles pierce the grey dorsal felt as in Aphrodite aculeata, but the iridescent lateral bristles of this species are absent; the dorsal bristles are directed backwards, but they do not quite reach to the median dorsal line. In the posterior half of the ventral side the intersegmental grooves have a sinuous course, as also appears to occur in Aphroditella obtecta (Florida-Anneliden, Pl. VI, fig. 2). The ventral bristles are shorter than the dorsal ones; their distal part is faintly S-like curved and densely pilose over a short region at some distance from the hook, much resembling the ventral bristles of the Florida-species. They are arranged in</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318515</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 65 - 77</dcterms:extent>
+   <dcterms:isPartOf>Malayan species of the genera Aphroditella, Hermione, Laetmonice and Aphrogenia (URN:ISSN:0024-0672) (Volume 2) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318515.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149801</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318515</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

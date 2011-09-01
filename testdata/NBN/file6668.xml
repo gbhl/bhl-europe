@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Reptilien von den Molukken und den benachbarten Inseln</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kopstein F.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Das während meines 2 1/2 jährigen Aufenthaltes auf den Molukken und den ihnen benachbarten Inseln gesammelte Reptilienmaterial umfasst 73 Species und Subspecies in annähernd 1350 Exemplaren. Davon habe ich 9 Arten und 3 Varietäten als neu für die Wissenschaft beschrieben. Die Ausbeute umfasst beinahe alle Gebiete dieser ausgedehnten Eilandenwelt; manche Inseln sind besser, andere wieder minder reichlich vertreten, je nach der Länge des Aufenthaltes und der Jahreszeit, in welche die Reisen fielen. In den Jahren 1922 bis 1924 besuchte ich Ambon und die Uliasser, Ceram, Buru, die Sula-Inseln, Kei, Aru, Tenimber und manche Gebiete von Neu-Guinea, so den Digul- und Jakatifluss, schliesslich die Banda-Gruppe und die zoologisch fast noch unberührten Inseln der südlichen Bandasee, Serua, Nila, Tëun und Babar. Die von diesen isolierten Eilanden stammenden Arten bilden auch den weitaus interessantesten Teil der Sammlung. Leider war gerade hier der Aufenthalt sehr knapp bemessen; diese Inseln liegen völlig ausserhalb des Schiffsverkehrs und werden blos etwa einmal jährlich von einem Regierungsdampfer aufgesucht. Eine eingehende Bearbeitung gerade dieser Inselgruppe wäre aber von bedeutendem Interesse für die Tiergeographie, wie schon das kleine, in den folgenden Blättern besprochene Material lehrt. Vielleicht ist es mir noch gegönnt, bevor ich dieser an Fragen so reichen Welt für immer den Rücken kehre, in einem längeren und bloss diesem Zwecke dienenden Aufenthalt die Fauna der fernen Vulkane der Bandasee zu studieren, welche noch so manches naturwissenschaftliche Geheimniss in sich bergen. LISTE</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319173</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1926</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 71 - 112</dcterms:extent>
+   <dcterms:isPartOf>Reptilien von den Molukken und den benachbarten Inseln (URN:ISSN:0024-0672) (Volume 9) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319173.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150459</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319173</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

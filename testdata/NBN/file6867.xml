@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on Malayan Blattidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruijning C.F.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>INTRODUCTION The Blattid fauna of the Malayan subregion is very rich, accordingly since the earliest period of orthopterology students of Blattids have described and mentioned specimens from this region. Consequently the literature on Malayan Blattidae is greatly scattered, and though some of the authors did a considerable amount of work in compiling the most important contributions on the present subject, there is still much to be done in unravelling synonymy and distinguishing generic units and subfamilies. Brunner (1865) already described a great number of Malayan Blattidae. The descriptions of new species by Walker (1868, 1869 and 1871) are very vague and full of mistakes, giving rise to a great deal of confusion. Shelford largely restored the systematics of the group to good order by examining the species in the large collections which were at his disposal, including the types of Walker. After Shelford, Hanitsch published a large series of contributions on Malayan Blattidae, some of which (Hanitsch, 1915, 1923) contain a compilation of nearly the whole literature on this subject known at these times. In these and many other publications he also described numerous new species, but he scarcely made an attempt to arrange the unnatural aggregations of species into distinct, logical genera. Hebard (1929) on the other hand admirably succeeded in establishing numerous cases of synonymy and in describing new genera on a scientific base. Therefore it is largely due to him that the greater part of the confusion which occurred mainly in the Ectobiinae and Pseudomopinae has been cleared. In the present paper an attempt has been made to continue the work along the principles put forward by Hebard.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319372</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1948</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 1 - 174</dcterms:extent>
+   <dcterms:isPartOf>Studies on Malayan Blattidae (URN:ISSN:0024-0672) (Volume 29) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319372.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150658</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319372</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

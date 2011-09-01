@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The freshwater crabs of the genus Pseudothelphusa from northern Venezuela and Trinidad (Brachyura, Potamonidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Rodríguez G.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>During a study of collections of Venezuelan Pseudothelphusa deposited at the Museum of Biology of the Central University of Venezuela, Caracas, and at the La Salle Museum of Natural History, Caracas, examples of two new forms were discovered; one of these is here described as a new species, the other as a new subspecies of an already described species. In the previous descriptions from Venezuela and Trinidad by Rathbun (1898, 1905, 1919), the male pleopod, which furnishes the most reliable character to distinguish between the various species of this group, was not adequately illustrated. Consequently, considerable difficulty was encountered in comparing my material with these descriptions. It was therefore thought advisable to provide here full descriptions and illustrations not only of the new forms, but also of all the species previously described from this area. In these descriptions the abbreviations cb. and cl. have been used for "carapace breadth" and "carapace length" respectively. In the paragraph "Material examined" the following abbreviations have been used to indicate the institutions where the material is deposited: LS = La Salle Natural History Museum, Caracas; MB = Museum of Biology of the Central University of Venezuela, Caracas; ML = Rijksmuseum van Natuurlijke Historie, Leiden. I am most grateful to the authorities of the first two institutions for the privilege of studying the freshwater crabs in their collections. I am greatly indebted to Dr. Julian Kenny for his assistance in obtaining specimens from Trinidad, and to Mr. Andrés Eloy Esteves for his kind cooperation in all phases of the work. I am furthermore very thankful to Dr. L. B. Holthuis for his valuable suggestions and criticisms. Pseudothelphusa venezuelensis Rathbun (text-fig. 2; pi. 1)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317951</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 111 - 135</dcterms:extent>
+   <dcterms:isPartOf>The freshwater crabs of the genus Pseudothelphusa from northern Venezuela and Trinidad (Brachyura, Potamonidae) (URN:ISSN:0024-0672) (Volume 41) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317951.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149237</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317951</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

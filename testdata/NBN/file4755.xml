@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De Nederlandse soorten van de keverfamilie Mordellidae</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Batten R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>De Mordellidae vormen een interessante familie, waarvan de laatste decennia een intensieve bewerking plaatsvond door K. Ermisch (1956-1969). Zijn determineertabellen in „Die Käfer Mitteleuropas" (1969) dienden voor deze revisie van de in het Rijksmuseum van Natuurlijke Historie te Leiden aanwezige Mordellidae uit de collecties van Ed. Everts, F. T. Valck Lucassen, J. J. de Vos tot Nederveen Cappel, S. C. Snellen van Vollenhoven, H. J. Veth, H. van der Vaart, F. J. M. Heylaerts, H. C. Blöte, C. de Jong, P. J. Brakman en anderen. De biologie van de Mordellidae is nog maar zeer ten dele bekend. Verschillende soorten ontwikkelen zich als larven in vermolmd hout, andere in plantenstengels. Als imago zijn ze op bloemen te vinden in de maanden juni en juli, enkele soorten reeds in mei zoals het geslacht Anaspis, Mordellistena pentas en Mordellochroa abdominalis. Bij de coleopterologen staan ze bekend door de schokkende bewegingen die ze met hun schuitvormige lichamen in het vangnet maken, vandaar de naam spartelkevers. Dit is m.i. niet alleen een reactie door verontrusting, maar vooral omdat de poten geen normaal houvast vinden en dan automatisch blijven grijpen. Benadert men ze, terwijl ze op een composiet zitten, heel rustig, dan kan men ze meestal ongestoord waarnemen, en er zelfs de mondzuiger feilloos opzetten, zonder dat tevoren enige schokkende beweging optreedt. Het determineren heeft zijn eigen moeilijkheden, die men in belangrijke mate kan voorkomen door onmiddellijk na de vangst goed te prepareren. De kevers mogen alleen gedood worden met azijnaether; elk ander dodingsmiddel maakt het uitprepareren van de genitaliën zeer moeilijk en bij gedroogde</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317259</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 37</dcterms:extent>
+   <dcterms:isPartOf>De Nederlandse soorten van de keverfamilie Mordellidae (URN:ISSN:0459-1801) (Volume 19) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317259.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148545</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317259</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

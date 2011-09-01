@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new cavernicolous freshwater crab from New Guinea (Crustacea Decapoda)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Through the kindness of Mr. Philip Chapman of Culford, Bury St. Edmunds, Suffolk, it was made possible for me to examine a male and a female of a species of cavernicolous crab from the Western Highlands of Papua New Guinea, collected there by Mr. N. Plumley. The species proved to be new to science and its description is given below. A recent revision of the New Guinea freshwater crabs (Bott, 1974) listed 13 certain and 3 dubious species from the island. These 13 species belong to 3 genera (Rouxana Bott, 1969: 5 species; Geelvinkia Bott, 1974: 3 species; and Holthuisana Bott, 1969: 5 species). The first two genera and the nominate subgenus of the third are confined to New Guinea. All three genera belong to the family Sundathelphusidae Bott, 1969. The new species is placed here in the genus (and subgenus) Holthuisana; it proves to be closest to H. subconvexa (Roux). None of the known species of New Guinea freshwater crabs has ever been reported from caves and none shows any adaptation to subterranean life. The find of the present troglobitic species therefore is of special interest, and I am most grateful to Mr. Chapman for this material. The drawing of pl. 1 is made by Mr. W. C. G. Gertenaar, staff artist of the Rijksmuseum van Natuurlijke Historie. Holthuisana alba new species (text-fig. 1 ; pl. 1) Askembutem Cave, Wok Askembu near Tabubil, West Sepik District, Papua New Guinea; in pools on a ledge at the bottom of the second vertical pitch; 14-15 October 1978 ; leg. N. Plumley, no. 76. — 1 ♂ holotype, 1 ♀ paratype. Description of holotype male. — The carapace is high and distinctly convex in a longitudinal direction: the anterior part is curved down. Transversely</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318439</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 313 - 320</dcterms:extent>
+   <dcterms:isPartOf>A new cavernicolous freshwater crab from New Guinea (Crustacea Decapoda) (URN:ISSN:0024-0672) (Volume 55) (Issue 27)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318439.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149725</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318439</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

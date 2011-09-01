@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A contribution to our knowlegde of the Sigalioninae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Though our knowledge of the Sigalioninae much increased in the last years thanks to the assiduous investigations of Mc Intosh, Pruvot et Racovitza 1), Darboux, Willey a. o., yet there still reigns a good deal of confusion about the exact diagnosis of the genera. Sthenelais simplex Ehl. 2) f. i. has rightly been ranged by Augener among the genus Leanira 3); Leanira Giardi Darb.4) according to the investigations of Marenzeller belongs to Sthenelais 5) and Thalenessa stylolepis Willey 6) will prove, as I presume, to be a species of Sigalion. Partly this may be ascribed to the circumstance, that only a few of the investigators could dispose of a large material and therefore must borrow their knowledge from the often inadequate descriptions of others; but it may also have been caused thereby, that there was no agreement about the characters, that offer a thrustworthy criterion for the distinction of the genera. However von Marenzeller in his critical account of the genus Leanira 7) has given us a clear review of the various often inexact ideas of the authors regarding this matter and stated that besides the presence or absence of the tentacle (median antenna) and the situation of the lateral antennae (on the prostomium or on the buccal segment), the structure of the ventral bristles furnish „das ausschlaggebende Moment", to distinguish the different genera 8). As the Siboga-expedition collected representants of this group at no less as 37 stations 9), I could dispose of a rather large material and I had the opportunity to corroborate as well as to extend the investigations of von Marenzeller. Not only I could examine several species of the genera hitherto known, except one: Eusthenelais Mc lnt.; but I met with a</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319324</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 11 - 14</dcterms:extent>
+   <dcterms:isPartOf>A contribution to our knowlegde of the Sigalioninae (URN:ISSN:0024-0672) (Volume 2) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319324.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150610</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319324</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

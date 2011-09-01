@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The birds in the collection of the Zoological Museum of the University of Liège: diversity and interest, a first approach</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Loneux M.S.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>university museum</dc:subject>
+   <dc:subject>Liège Museum of Zoology</dc:subject>
+   <dc:subject>bird collection</dc:subject>
+   <dc:subject>extinct species</dc:subject>
+   <dc:subject>Castelnau</dc:subject>
+   <dc:subject>Van Beneden</dc:subject>
+   <dc:description>Most birds in the Liège Museum of Zoology have been collected during the 19th century. Between 1835 and 1871, Theodore Lacordaire acquired skins from South-East Asia through Francis Laporte Comte de Castelnau. Later, between 1872 and 1910, Edouard Van Beneden bought Belgian birds. At present, some 6,000 avian specimens are recorded as mounted skins, skeletons, skulls, eggs or organs preserved in alcohol. Since the 1970s, new specimens added to the collection are either gifts from private collections or fresh birds found dead. As we achieved to computerise the collections in a FileMaker Pro database, statistics by taxonomy, geographical origin or other criteria can be extracted. The museum also houses a few specimens of threatened or extinct species. The presence of type specimens has not yet been checked. Many specimens of the University of Liège bird collection are exhibited in systematic order in the ‘world wide diversity presentation’. Skulls and skeletons are also on display, and a ‘Belgian fauna’ room is devoted to local birds. The lack of interest of researchers in smaller collections outside national institutions and the recent lack of investment by the university for the preservation and scientific evaluation of its zoological heritage will lead to a progressive loss of the material not used for public exhibitions. The collections in universities are in urgent need of national and international appreciation, cooperation projects and funding to guarantee their long-term preservation.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210793</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 29 - 34</dcterms:extent>
+   <dcterms:isPartOf>The birds in the collection of the Zoological Museum of the University of Liège: diversity and interest, a first approach (URN:ISSN:00240672) (Volume 79-3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210793.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42161</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210793</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

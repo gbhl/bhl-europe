@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The mite Genus lardoglyphus Oudemans, 1927 (= Hoshikadania Sasa and Asanuma, 1951)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hughes A.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Lardoglyphus zacheri Oudemans and L. (= H oshikadania) konoi (Sasa and Asanuma) were sent to me by Mr. D. A. Griffiths of the Infestation Control Division of the Ministry of Agriculture. They were found in butcher's offal ("gut greaves"), used in the manufacture of fertiliser, on premises near Chesterfield. In this particular case the offal was obtained locally, though it can also be imported from the Argentine; possibly the mites were orginally introduced into this country on empty uncleaned sacks obtained from other manufacturers. The purpose of this paper is to provide a more complete description of L. zacheri Oudemans, and also to clear up some confusion in nomenclature. Lardoglyphus zacheri Oudemans, 1927 (figs. 1-5) Female (fig. 1). Length of idiosoma of six individuals: 450-600 /JI. The body is spindle-shaped, widest between the second and third pairs of legs and tapering towards either end; the posterior edge is concave. The body cuticle is smooth and cream-coloured, the legs, apodemes, and chelicerae are of a darker shade; the propodosoma lacks a dorsal shield and is clearly separated by a transverse groove from the hysterosoma. The setae of the idiosoma are smooth and slightly pectinate. The vertical internals (v. i) arise close together and project forward over the gnathosoma without reaching its extremity; the vertical externals (v. e) orginate from the same level, they are pectinate and curve towards the base of the chelicerae; behind them are the pseudostigmatic organs — small, curved and serrated — which lie in a depression above the base of leg I and are encircled by a lateral sclerite; at the anterior end of this sclerite is Grandjeans organ, a triangular fold of cuticle.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318154</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 271 - 285</dcterms:extent>
+   <dcterms:isPartOf>The mite Genus lardoglyphus Oudemans, 1927 (= Hoshikadania Sasa and Asanuma, 1951) (URN:ISSN:0024-0672) (Volume 34) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318154.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149440</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318154</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

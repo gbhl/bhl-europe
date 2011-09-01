@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Two new genera and three new species of subterranean cyclopoids (Crustacea, Copepoda) from New Zealand, with redescription of Goniocyclops silvestris Harding, 1958</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Karanovic T.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Stygofauna</dc:subject>
+   <dc:subject>Cyclopoida</dc:subject>
+   <dc:subject>New Zealand</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>Abdiacyclops</dc:subject>
+   <dc:subject>Zealandcyclops</dc:subject>
+   <dc:subject>Goniocyclops</dc:subject>
+   <dc:description>A small collection of copepod samples from several wells in the Canterbury region, South Island, was examined. It contained a few cosmopolitan cyclopoid species, three interesting harpacticoids, as well as two new cyclopoid genera. The latter are presented in this paper, together with a redescription and first description of the male of Goniocyclops silvestris Harding, 1958, a cyclopoid species previously known only from North Island. Both new genera are from the Diacyclops-Acanthocyclops complex. Abdiacyclops gen. nov. is easily distinguishable from the complex by its unique swimming legs segmentation formula (2/2, 3/3, 3/3, 3/3), and is so far monospecific and known only after females. The most important characters of the second new genus, Zealandcyclops gen. nov. are: the swimming legs segmentation formula of 2/2, 3/2, 3/2, 3/2; a very small and two-segmented fifth leg; 11-segmented antennula; and sexual dimorphism in the swimming legs, with a transformed apical spine on the third leg endopod in the male. Four species were included in this genus: Zealandcyclops fenwicki sp. nov., from a well in the South Canterbury region; Z. haywardi sp. nov., from a well in the North Canterbury region; Z. eulitoralis (Alekseev and Arov, 1986) comb. nov., from the interstitial of several beaches on the southern shore of Lake Baikal; and Z. biceri (Boxshall et al., 1993) comb. nov., from a sandy beach on the western shore of Lake Baikal. Zealandcyclops gen. nov. seems to be an archaic cyclopoid genus, having survived only in New Zealand and in the ancient Lake Baikal. With the present report, the New Zealand cyclopoid fauna numbers 16 species, a systematic list of which is presented in this paper. The majority of them are cosmopolitan elements, probably introduced here by early European settlers. Only one genus (8%) and six species (38%) are endemic, which is probably a reflection of the absence of any comprehensive research on the New Zealand cyclopoids.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209649</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 223 - 254</dcterms:extent>
+   <dcterms:isPartOf>Two new genera and three new species of subterranean cyclopoids (Crustacea, Copepoda) from New Zealand, with redescription of Goniocyclops silvestris Harding, 1958 (URN:ISSN:13834517) (Volume 74, 3/4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209649.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41276</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209649</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

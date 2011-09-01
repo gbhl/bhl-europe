@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Insectivores (Lipotyphla, Mammalia) from the Ramblian of the Daroca-Calamocha area</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Hoek Ostende, van den L.W.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:subject>Ramblian</dc:subject>
+   <dc:subject>Miocene</dc:subject>
+   <dc:subject>Insectivora</dc:subject>
+   <dc:description>The insectivore assemblages from the Ramblian stratotype near Calamocha (Spain) are described, as well as those from San Roque 4A and 4B, two Ramblian localities near the Aragonian stratotype. Two new species are described, the erinaceid Galerix remmerti, and the shrew Clapasorex alvarezae. Both the percentages and the diversity of insectivores are higher in the Lower Ramblian, suggesting more humid conditions in zone Z than in zone A. This is in contradiction with the palaeoenvironmental reconstructions based on rodents. Se describen las asociaciones de insectívoros del estratotipo del Rambliense cerca de Calamocha (Teruel, España), junto de las de San Roque 4A y 4B, dos yacimientos Ramblienses del área-tipo del Aragoniense. Se describar dos especies nuevas, el erinacéido Galerix remmerti, y la musaraña Clapasorex alvarezae. Tanto el porcentaje de insectívoros como su diversidad son mayores en el Rambliense inferior que en el Rambliense superior. Esto indica condiciones más húmedas en la zona Z que en la zona A, lo cual contradice las reconstrucciones paleoambientales basadas en roedores. Palabras clave: Rambliense, Mioceno, Insectivora.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327729</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 281 - 310</dcterms:extent>
+   <dcterms:isPartOf>Insectivores (Lipotyphla, Mammalia) from the Ramblian of the Daroca-Calamocha area (URN:ISSN:1132-1660) (Volume Extraordinario 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327729.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/160795</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327729</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

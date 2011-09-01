@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: Early ontogenetic shells of Recent and fossil Scaphopoda</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Engeser T.S.</dc:creator>
+   <dc:creator>Riedel F.</dc:creator>
+   <dc:creator>Blandel K.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>The formation of the early ontogenetic shell of Scaphopoda is reviewed. In the few known cases the embryos hatch in the gastrula stage and rapidly develop into a lecithotrophic Trochophora-like larva. Our material indicates that there might be a planktotrophic larva in some species. The clasp-like shell is formed in the larval stage (e.g. Antalis tarentina Lamarck, 1818). It later fuses into a tube and mineralises during metamorphosis. Immediately after the metamorphosis the shell increases at the anterior end (early teleoconch) and posterior end (fumarium). During further growth, the fumarium, the larval shell and finally parts of the juvenile shell are gradually resorbed. We describe several specimens with preserved protoconchs from different stratigraphie units: the Early Jurassic, the Middle Jurassic, the Palaeocene, the Oligocene, the Miocene, the Pliocene, and a Recent example. Some specimens with preserved larval shells illustrated in the literature have not been recognised as such. They are briefly reviewed. At least two different types of protoconchs (and some modifications) can be recognised within the Scaphopoda. The new data are not yet sufficient to arrange larger systematic units using the different protoconch types. It is evident, however, that in fossil Scaphopoda species with convergent adult shells can only be discovered by a synthesis of larval, juvenile and adult shell characters (shape, size, sculpture). A new genus and species, Suevidontus jaegeri gen. et sp. nov. from the late Middle Jurassic of southern Germany is introduced. The family attribution of the new genus is uncertain.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317297</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 83 - 100</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: Early ontogenetic shells of Recent and fossil Scaphopoda (URN:ISSN:0922-4564) (Volume 2) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317297.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148583</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317297</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revisionary notes on the genus Metrocoris Mayr (Heteroptera, Gerridae), with descriptions of four new species</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boer, den M.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>INTRODUCTION The genus Metrocoris Mayr comprises a small, distinct group of waterstriders, mainly inhabiting the Old World tropics. They are to be found on the surface of mountain streams and pools in the jungle. In general they are apterous, but in most species a small percentage of the individuals may have fully developed wings. The species have been little collected and are generally rare in collections. The specimens in early collections are often either single females with eggs, or one male and one female — generally with copulatory organs still partly extended — which fact may suggest that it is very difficult to catch specimens, except when they are less quick or attentive. An extensive description of the genus was given by Matsuda (1960: 302-304). Keys to the genus are to be found in the paper by Kenaga (1941: 170) and that by Hungerford &amp; Matsuda (1960b: 7). When studying the material of these insects in the Leiden Museum, I found that the structures of the male genitalia supply useful characters for distinguishing between the species. Within the species these organs appear to be constant. Dissections were made by clearing the posterior abdominal segments in KOH (10%) for approximately 12 hours. The dissections were mounted in "terebinthina laricina" on glass slides of 9 by 14 mm, which were then fastened on the same pin as the specimen. This has the great advantage of keeping specimen and dissection together. It soon became evident that this study would be impossible without the examination of the material preserved in other museums. Upon my request</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317718</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1965</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 38</dcterms:extent>
+   <dcterms:isPartOf>Revisionary notes on the genus Metrocoris Mayr (Heteroptera, Gerridae), with descriptions of four new species (URN:ISSN:0024-1652) (Volume 74) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317718.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149004</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317718</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

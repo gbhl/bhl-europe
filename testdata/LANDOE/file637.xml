@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 1 (1958)</dc:title>
+   <dc:creator>Anonymus , Burmann  Karl, Douglas  St. Quentin, Ebner  Richard, Fischer  Maximilian, Fulmek  Leopold, Glaser  Wolfgang, Jakob  Hermann, Koch  Manfred, Mandl  Karl, Mazzucco  Karl sen., Petrovitz  Rudolf, Pinker  Rudolf, Wagner  Eduard, Warnecke  H., Zimmermann  Stephan</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Burmann: Sphaleroptera alpicolana Hb. Beobachtungen aus Nordtirol (Lepidoptera, Tortricidae). (1 Tafel)     1-    5. Richard Ebner: Nachträge und Ergänzungen zur Fauna der Orthopteroidea und Blattoidea von Österreich.     6-   12. Karl sen. Mazzucco, H. Warnecke, Manfred Koch: Wanderfalterbeobachtungen im Jahre 1956 im mitteleuropäischem Raume.    12-   19. Anonymus: Wiener Entomologentagung 1957. (1 Tafel)    20. Karl Mandl: Neue Cicindeliden aus meiner Sammlung.    23-   28. Wolfgang Glaser: Beschreibung der ersten Stände Acidalia longaria HS. ((Lep., Geometridae).    29-   32. Maximilian Fischer: Drei neue Braconiden (Hymenoptera).    33-   37. Rudolf Petrovitz: Eine seltene und für Österreich neue Aphodius-Art aus der Untergattung Melinopterus Muls. (Col., Scarab.).    37-   38. Hermann Jakob: Eine neue Melasoma aus Zentralasien. 12. Beitrag zur Kenntnis pal. Chrysomeliden.    38-   39. Eduard Wagner: Beitrag zur Systematik der Untergattung Liops Fieber 1870 (Hem. Het. Miridae).    39-   42. St. Quentin Douglas: Ein neuer Phyllogomphus aus Ostafrika (Odonata).    42-   43. Eduard Wagner: Die Artberechtigung von Calocoris tunetanus E. Wagner 1942 Hem. Het. Miridae.    49-   52. Leopold Fulmek: Die Parasitinsekten der Blattflöhe (Psyllidae).    53-   60. Stephan Zimmermann: Neue Goldwespenfunde in Österreich (Hymenoptera, Chrysididae).    61-   66. Rudolf Pinker: Anleitung zur Durchführung von Winterzuchten von Lepidopteren in der Stadt.    66-   69</dc:description>
+   <dc:date>1958</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26284.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26284.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26284</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

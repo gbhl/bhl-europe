@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über eine neue Lindbergia-art von Kérkyra, Griechenland (Gastropoda: Zonitidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Pintér L.</dc:creator>
+   <dc:creator>Riedel A.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Dr. E. Gittenberger (Leiden) hat uns eine Probe einer kleinen Zonitidenart, die er auf Kérkyra ( = Korfu) gesammelt hat, zur Beurteilung und Bearbeitung zugeschickt. Bereits bei der ersten flüchtigen Untersuchung war uns klar, hier mit einer unbekannten Art zu tun zu haben, aber die generische Zugehörigkeit konnte leider nicht angegeben werden. Auch während späterer Untersuchungen konnten wir nur eine annähernde generische Bestimmung erreichen, da sich Arten dieser Gruppe der Zonitiden nur nach anatomischen Merkmalen einwandfrei einer Gattung zuordnen lassen. Da die Schalenmerkmale in erster Linie für die Gattung Lindbergia Riedel, 1959, sprechen, beschreiben wir die neue Art wie folgt. Lindbergia gittenbergeri spec. nov. (Abb. 1-3) Beschreibung. — Schale relativ groß (bis 4,5 mm breit), mit flachkonisch erhobenem Gewinde; maximal 43/4 Umgänge, welche regelmäßig an Breite zunehmen. Der letzte Umgang ist etwa zwei- bis etwas über zweimal breiter als der vorletzte und seitlich gut gerundet; bei Jungstücken ist er kaum sichtbar von oben gedrückt und deshalb weniger regelmäßig gewölbt. Mündung breiter als hoch, nicht allzusehr ausgeschnitten. Nabel verhältnismäßig breit, trichterförmig, alle Umgänge zeigend. Gehäuse gelblichweiß, durchscheinend, glänzend. Die Oberflächenskulptur besteht aus sehr feinen, dichten Spirallinien. Mitunter sind stärkere Zuwachslinien sichtbar. Abb. 1-3. Lindbergia gittenbergeri spec. nov., Holotypus; Griechenland, Insel Kérkyra, Peristerograva südöstlich von Loutses im nördlichen Teil des Pantokrator, 450 m ü. M.; E. Gittenberger leg. H.Oktober 1978; RMNH 55593. W. C. G. Gertenaar del. Beziehungen. — Von den bekannten Lindbergia-Arten steht L. spiliaenymphis</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318260</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 101 - 103</dcterms:extent>
+   <dcterms:isPartOf>Über eine neue Lindbergia-art von Kérkyra, Griechenland (Gastropoda: Zonitidae) (URN:ISSN:0024-0672) (Volume 57) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318260.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149546</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318260</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The National Malleefowl Recovery Plan: a framework for conserving the species across Australia</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Benshemesh J.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Megapodiidae</dc:subject>
+   <dc:subject>malleefowl</dc:subject>
+   <dc:subject>Leipoa ocellata</dc:subject>
+   <dc:subject>conservation</dc:subject>
+   <dc:subject>national recovery plan</dc:subject>
+   <dc:description>The malleefowl Leipoa ocellata Gould, 1840, has declined substantially since European settlement of Australia just over 200 years ago. The species is now vulnerable and is threatened by the loss and degradation of suitable habitat by grazing, fire, and clearing, by the insidious effects of fragmentation of their populations that has resulted from clearing, and by predation by introduced foxes. Accordingly, a National Malleefowl Recovery Plan is being prepared to outline actions that are needed to both secure the species and provide the information necessary for effective management. Conserving malleefowl will require improved management throughout its range and on a diversity of land tenures. Improving habitat quality is crucial and may be achieved by reducing grazing pressure from commercial stock and feral goats, by preventing the catastrophic effects of large wildfire, and by reducing the size and frequency of intentional fires. Reducing the abundance of foxes may also assist malleefowl recovery, particularly where the birds’ populations are small and isolated or declining. Remaining malleefowl populations are highly fragmented, and there is a need in many areas for habitat links to facilitate dispersal of the species between nearby habitat patches. The retention and revegetation of habitat links would also slow the degradation of remnant habitats due to increasing soil salinity. Considering the vulnerability of the species, it is especially important to monitor the distribution and abundance of malleefowl across Australia and over a number of years. Effective conservation will also require a better understanding of the species’ population dynamics, habitat preferences and genetic variability. Local communities have made a major contribution to protecting and understanding the malleefowl and interest in this popular species is growing rapidly. Many of the projects outlined in the Recovery Plan are suitable for community involvement, and the time is ripe to further encourage and promote this interest in malleefowl conservation.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219425</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 101 - 124</dcterms:extent>
+   <dcterms:isPartOf>The National Malleefowl Recovery Plan: a framework for conserving the species across Australia (Volume 327)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219425.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46267</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219425</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

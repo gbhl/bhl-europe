@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nieuwe en interessante Microlepidoptera uit Nederland in hoofdzaak van de jaren 1997 en 1998 (Lepidoptera)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Huisman K.J.</dc:creator>
+   <dc:creator>Koster J.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>microlepidoptera, Nederland, faunistiek, nieuwe waarneming</dc:subject>
+   <dc:description>This is the eleventh compilation of interesting Microlepidoptera collected in The Netherlands, covering mainly the years 1997 and 1998, but also including some older data, as well as the year 1999 in a very few cases. Stenolechiodes pseudogemmellus (Gelechiidae) is recorded for the first time from The Netherlands. This species has recently been described and specimens were found amongst series of the well-known Stenolechia gemmella. Thaumatotibia leucotreta (Tortricidae) is recorded for the first time as an inadvertently introduced species. New Dutch records of the following 99 rare and / or interesting species are given or summarised: Stigmella centifoliella, Ectoedemia atrifrontella, E. longicaudella (Nepticulidae), Nemophora ochsenheimerella, Nematopogon robertella (Adelidae), Lampronia fuscatella (Prodoxidae), Emmetia heinemanni (Tischeriidae), Nemapogon wolffiella, Monopis imella (Tineidae), Bucculatrix nigricomella (Bucculatricidae), Acrocercops brongniardella, Leucospilapteryx omissella, Phyllonorycter muelleriella, P. spinicolella, P. leucographella, P. mespilella (Gracillariidae), Yponomeuta irrorella, Argyresthia sorbiella, A. fundella, A. pulchella, A. semifusca (Yponomeutidae), Glyphipterix forsterella (Glyphipterigidae), Leucoptera spartifoliella (Lyonetiidae), Ethmia quadrillella (Ethmiidae), Luquetia lobella, Agonopterix ocellana, A. angelicella, A. cnicella (Depressariidae), Elachista exactella (Elachistidae), Scythris siccella (Scythrididae), Eratophyes amasiella, Esperia sulphurella (Oecophoridae), Coleophora binderella, C. lineolea, C. niveicostella, C. mayrella, C. trochilella, C. argentula (Coleophoridae), Pseudatemelia latipennella (Amphisbatidae), Cosmopterix scribaiella (Cosmopterigidae), Monochroa moyses, Parachronistis albiceps, Teleiodes vulgella, T. wagae, Carpatolechia proximella, Gelechia rhombella, G. senticetella, G. muscosella, G. rhombelliformis, Mirificarma interrupta, Chionodes electella, Athrips mouffetella, Scrobipalpa acuminatella, S. instabilella, Anacampsis temerella, Pexicopia malvella, Platyedra subcinerea (Gelechiidae), Aethes flagellana, Cochylidia rupicola, Spatalistis bifasciana, Acleris cristana, Sparganothis pilleriana, Endothenia oblongana, Apotomis infida, A. lineana, A. turbidana, Orthataenia undulana, Hedya ochroleucana, Celypha siderana, Pristerognatha fuligana, Epinotia nanana, Zeiraphera rufimitrana, Eucosma obumbratana, E. tripoliana, E. conterminana, Gypsonoma minutana, Blastesthia posticana, Ancylis unculana, A. apicella, Cydia tenebrosana, C. nigricana, C. amplana, Pammene gallicana, P. agnotana, P. ochsenheimeriana, P. germmana, Dichrorampha alpinana, D. agilana (Tortricidae), Stenoptilia pterodactyla, Cnaemidophorus rhododactyla, Ovendenia lienigianus (Pterophoridae), Cryptoblabes bistriga, Glyptoteles leucacrinella, Homoeosoma sinuella, Phycitodes saxicola, Vitula biviella, Friedlanderia cicatricella, Evergestis limbata, Perinephele lancealis (Pyralidae). Biological and distributional information on these species is given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:303371</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 193 - 216</dcterms:extent>
+   <dcterms:isPartOf>Nieuwe en interessante Microlepidoptera uit Nederland in hoofdzaak van de jaren 1997 en 1998 (Lepidoptera) (URN:ISSN:0013-8827) (Volume 60) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/303371.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/132932</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/303371</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the Heteropteryginae (Insecta: Phasmida: Bacillidae) of Borneo, with the description of a new genus and ten new species</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Bragg P.E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Phasmida; Heteropteryginae; distribution; ecology; Borneo; new genus; Spinodares; new species; Dares; Datames; lectotypes.</dc:subject>
+   <dc:description>The three tribes of Heteropteryginae Kirby, 1896 occurring in Borneo are nocturnal, and ground dwelling species, easily found in both primary and secondary rainforest. The subfamily is reviewed, with keys and redescriptions of all Bornean species; one new species of a predominantly Bornean genus is described from the Philippines. Lectotypes have been selected for a number of species. The eggs of 17 species are described and illustrated. Distribution maps are given for all species. Many of the species have been collected by the author and reared in the United Kingdom; some observations on their natural history and behaviour are included. In the tribe Heteropterygini the synonymy has been re-examined with a revision to the status of several taxa. The five syntypes of Haaniella grayii (Westwood) were found to belong to two different species. In the tribe Datamini new terms are introduced for the spines and tubercules. A new genus, Spinodares, is described with S. jenningsi spec. nov. as the type species. All recorded Bornean specimens of Dares Stål, 1875 have been re-examined and the synonymy revised. Seven new species of Dares are described, six from Borneo: D. kinabaluensis, D. mjobergi, D. multispinosus, D. murudensis, D. navangensis, D. planissimus, and one from Palawan: D. philippinensis; this is the only record of the tribe Datamini from the Philippines. Acanthoderus otys Westwood, 1859 has previously been placed in the genus Dares Stål, 1875, it is found to belong in Datames Stål, 1875 with Pylaemenes infans Redtenbacher, 1906 as a new junior synonym; the female is described for the first time from a specimen in the Nationaal Natuurhistorische Museum, Leiden (RMNH). Two new species of Datames are described, one with three subspecies: D. muluensis, D. borneensis borneensis, D. b. sepilokensis and D. b. waterstradti. Of the twelve new taxa described eight are represented in the RMNH collection.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317712</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1998</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 135</dcterms:extent>
+   <dcterms:isPartOf>A revision of the Heteropteryginae (Insecta: Phasmida: Bacillidae) of Borneo, with the description of a new genus and ten new species (URN:ISSN:0024-1652) (Volume 316) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317712.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148998</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317712</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

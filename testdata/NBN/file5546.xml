@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ueber einige Entwicklungsstadien von Rhopilema hispidum (Vanhoeffen) Maas</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Gelegentlich der Durchsicht einiger älterer Planktonfänge aus dem malayischen Archipel in den Sammlungen des Rijks Museum van Natuurlijke Historie in Leiden fanden sich zahlreiche Entwicklungsstadien von Rhopilema hispidum (VANH.) MAAS vor, über die ich hier kurz berichten will. Ueber die Entwicklung des Genus Rhopilema ist bisher nichts bekannt. Dies ist auffallend, weil dasselbe in den japanischen, indischen und malayischen Gewässern durch einige Arten vertreten ist und dieselben keineswegs zu den seltenen Formen gerechnet werden können. In Japan wird Rhopilema esculentum KISH. sogar als Volks-Nahrungsmittel verwendet (3), Rh. hispidum MAAS ist in den Sammlungen des Rijksmuseum durch zahlreiche Exemplare von verschiedenen Fundorten aus dem malayischen Archipel vertreten (5, 6). Da die Entwicklung der beiden anderen Scapulaten-Genera Rhizostoma und Stomolophus wenigstens einigermassen bekannt ist, über die von Rhopilema überhaupt noch keine Angaben vorliegen, ist die Auffindung einiger Entwicklungsstadien der letzteren von Interesse. Es ergab sich sofort die Frage, ob sich in der Entwicklung des Gastrovascularsystems von Rhopilema auch eine Reihe aufeinanderfolgender Stadien würde feststellen lassen, wie dies bei den Genera Rhizostoma und Stomolophus der Fall war. Eine solche ist auch hier nachweisbar. Bei der nahen Verwandschaft zwischen den Genera Rhizostoma und Rhopilema war übrigens zu erwarten, dass es keine grossen Ueberraschungen geben würde. Es liegt folgendes Material von Rhopilema hispidum vor: N°. 321 21 Ex. Jugendstadien, 12—42 mm breit, P. BUITENDIJK, Baai von Batavia, Januari 1922.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318051</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 162 - 174</dcterms:extent>
+   <dcterms:isPartOf>Ueber einige Entwicklungsstadien von Rhopilema hispidum (Vanhoeffen) Maas (URN:ISSN:0024-0672) (Volume 15) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318051.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149337</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318051</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

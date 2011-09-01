@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Environment and quantitative morphology of some Silurian tabulates from Gotland</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Stel J.H.</dc:creator>
+   <dc:subject>Paleo-ecologie</dc:subject>
+   <dc:description>An outline is given of reef development in Gotland, Sweden, during the time when the Visby (Llandovery) and Högklint (Wenlock) Beds were deposited together with a sketch of the palaeoecology in the time during which the Hemse and Hamra-Sundre (Ludlow) Beds were formed. Variation is described in the tabulates Favosites hisingeri Edwards &amp; Haime, F. obliquus (Sokolov), F. gothlandicus Lamarck, F. forbesi Edwards &amp; Haime, Syringolites kunthianus (Lindström), and Alveolites suborbicularis Lamarck. In order to clarify ecophenotypic variation of corallite size in tabulates, the corallite area and three different corallite diameters were measured. Although the corallite area is more related to the shape of the organism that lived in a corallite, comparison of the several parameters revealed that measuring of a corallite diameter can be applied in such species from which ecophenotypic variation is known. However, the current limitation of variability in corallite diameters within defined morphospecies often is far too narrow, and does not allow for ecophenotypic variation. As a consequence, the number of morphospecies established since Sokolov (1950) is unrealistically large in the F. forbesi group as well as in others. Variability in F. hisingeri is influenced to a high degree by the environment. The characteristic (genetically controlled?) pattern of larger corallites between smaller ones in F. forbesi is hardly influenced by ecological factors. Variation in thickness of the wall, in distance between the tabulae and in intensity of the development of the septal structures is mainly determined by the environment.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317485</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 75</dcterms:extent>
+   <dcterms:isPartOf>Environment and quantitative morphology of some Silurian tabulates from Gotland (URN:ISSN:0375-7587) (Volume 47)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317485.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148771</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317485</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

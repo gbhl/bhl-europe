@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 29 (1889)</dc:title>
+   <dc:creator>Anonymus , Benedikt  Rudolf, Burgerstein  Alfred, Exner  Siegmund Ritter von Ewarten, Lecher  Ernst, Lorenz  Adolf, Marenzeller  Emil Edler von, Molisch  Hans, Neumayr  Melchior, Obermayer  Albert von, Penck  Albrecht, Pernter  Josef Maria, Reuss  August Leopold von, Rodler  Alfred, Toula  Franz, Volkmer  Ottomar von, Weiss  Edmund, Wettstein  Richard von Westersheim</dc:creator>
+   <dc:description>Inhaltsverzeichnis: August Leopold von Reuss: Über den Einfluss der Beleuchtung auf das Auge.     1-   22. Siegmund Ritter von Ewarten Exner: Über Physiologisches und Pathologisches in den bildenden Künsten.    23-   49. Hans Molisch: Das Bewegungsvermögen der Keimpflanze.    51-   77. Ottomar von Volkmer: Über Fortschritte in der Photographie und den modernen Reproductionsverfahren.    79-  134. Emil Edler von Marenzeller: Über Meerleuchten.   135-  161. Josef Maria Pernter: Die modernen Wetterpropheten.   163-  188. Adolf Lorenz: Die Verkrümmungen der Bewegungswerkzeuge des Menschen und ihre orthopädische Behandlung.   189-  227. Melchior Neumayr: Die klimatischen Verhältnisse der Vorzeit.   229-  275. Albert von Obermayer: Über die Eigenschaft des Öles, die Meereswellen zu beruhigen.   277-  305. Richard von Westersheim Wettstein: Pflanzen und Ameisen.   307-  327. Rudolf Benedikt: Wandlungen in der chemischen Industrie.   329-  356. Alfred Rodler: Über den Staub.   357-  388. Ernst Lecher: Über atmosphärische Elektricität.   389-  413. Albrecht Penck: Theorien über das Gleichgewicht der Erdkruste.   415-  440. Franz Toula: Über die mikroskopische Untersuchung der Gesteine. (3 Tafeln.)   441-  495. Alfred Burgerstein: Charles Robert Darwin. Eine Skizze seines Lebens und Schaffens.   497-  576. Edmund Weiss: Über die Anwendung der Photographie in der Sternkunde.   577-  603. Anonymus: [Diverse Vereinsberichte]. (Seiten V-LXVI.)</dc:description>
+   <dc:date>1889</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30483.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30483.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30483</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

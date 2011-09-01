@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new species of Chasmodon Haliday (Hymenoptera, Braconidae, Alysiinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>During an acarological study of brackish habitats in the Netherlands, a wingless species of Chasmodon was discovered. Because of the intermediate shape of the notauli it was not possible to identify it with the key of Hedqvist (1962), and therefore I propose another key for the wingless and brachypterous specimens of Alysiinae. The new species is compared with C. apterus (Nees von Esenbeck, 1812), which is the only other species of the genus. Key to the genera of wingless and brachypterous Alysiinae 1. Scutellum indistinct, strong constriction in middle of mesosoma; second abdominal tergite petiolate. (Mediterranean; 4 spp.)........... .............Pseudopezomachus Mantero, 1905 — Scutellum distinct, constriction wanting; second tergite may be slender, but not distinctly petiolate ................2 2. Mandibles with 7 teeth; mesosoma strongly scrobiculate dorsad; length of temples 2.7 times compound eye (dorsal aspect). (N. Europe; 1 sp.)....... ................Lodbrokia Hedqvist, 1962 — Mandibles with 3 teeth, mesosoma almost smooth dorsad; length of temples equal to length of eye or less (dorsal aspect)............3 3. Third antennal segment distinctly longer than fourth; pterostigma large, elliptical; second cubital cell triangular; between notauli a medial, longitudinal, suture; hind coxa finely sculptured. (Europe; 1 sp.)............ ............Males of Alloea Haliday, 1833 (p.p.) — Third antennal segment shorter than fourth; pterostigma (if present) smaller and triangular ; second cubital cell wanting ; medial suture wanting; hind coxa smooth....................4</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319424</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 73 - 79</dcterms:extent>
+   <dcterms:isPartOf>A new species of Chasmodon Haliday (Hymenoptera, Braconidae, Alysiinae) (URN:ISSN:0024-0672) (Volume 49) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319424.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150710</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319424</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

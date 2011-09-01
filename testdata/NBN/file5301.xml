@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ρarnassiana nova XLIX Die Arten und Unterarten der Parnassiidae (Lepidoptera) (Zweiter Teil) 1)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Parnassius honrathi honrathi Staudinger Zugänge: Sultan-Hazreth Geb. 1 ♂ 1 ♀; Sarafschan 3 ♂; Sultan-Hazreth Geb. 2 ♂ 1 ♀; Sarafschan 1 ♂ 1 ♀; Kargaisk, Kandyk-Tau 1 ♂, f. costalisnigroocellata n.c. 1 ♂; Samarkand 1 ♂ 2 ♀; Barschepky 1 ♂; SultanHazreth-Geb., f. nigroocellata n.c. 1 ♂; Samarkand 1 ♂; Karategin 1 ♂; Pamir(?) 1 ♂; Sultan-Hazreth Geb. 1 ♀. Sie bestätigen die Merkmale dieser markanten Unterart. Parnassius honrathi ernesti Bryk Zugänge: West-Pamir 1 ♂ 1 ♀; Karategin 2 ♂; West-Pamir 1 ♂; Turkestan (?) 1 ♀; Garm 1 ♂; West-Pamir 1 ♂ 1 ♀; Garm, f. nigroocellata n.c. + inpicta n.c. 1 ♂, 2 ♀; Pamir(?) 1 ♂ 1 ♀; Garm 1 ♂. Bezüglich der vagen Fundortangaben und der damit zusammenhängenden Schwierigkeit der Einordnung verweise ich auf das darüber in 1950 (Parn. Nov. xxix: 144) Ausgeführte. Allgemein lässt sich aus dem mir vorliegenden Material von honrathi Staudinger sagen, dass seine Vertreter im Westen des Fluggebietes am dunkelsten und kräftigsten gezeichnet auftreten und nach Osten zu einen helleren Habitus zeigen. Parnassius honrathi alburnus Stichel Zugänge: Chorog 3 ♂ 2 ♀, ex c. Sheljuzhko; Pamir(?) 1 ♂ 1 ♀; Chorog 1 ♂ 1 ♀, ex c. Sheljuzhko; Chorog 7 ♂ 3 ♀, f. posterior-submarginalisextenta (= Submarginale wurzelwärts in ein bis zu den Costalflecken und dem Hinterrands fleck sich ausdehnendes schwarzbeschupptes Feld verbreitert) 1 ♀ Holotype; Chorog 7 ♂, f. escudei n.c. 2 ♂, f. minusculus n.c. 1 ♂, 5 ♀, die beiden Serien leg. Tzvetajev. Die Zugänge bestätigen die Merkmale dieser distincten Unterart.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317806</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 99 - 259</dcterms:extent>
+   <dcterms:isPartOf>Ρarnassiana nova XLIX Die Arten und Unterarten der Parnassiidae (Lepidoptera) (Zweiter Teil) 1) (URN:ISSN:0024-1652) (Volume 146) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317806.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149092</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317806</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

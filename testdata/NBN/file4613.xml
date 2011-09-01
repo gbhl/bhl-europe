@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Microlepidoptera in Nederland in 2004</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Huisman K.J.</dc:creator>
+   <dc:creator>Koster J.C.</dc:creator>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Ulenberg S.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>faunistiek</dc:subject>
+   <dc:subject>nieuwe waarneming</dc:subject>
+   <dc:subject>provincies</dc:subject>
+   <dc:subject>uitbreiding areaal</dc:subject>
+   <dc:description>Het jaar 2004 was weer warm, maar natter dan de vorige jaren. Verzamelaars van kleine vlinders vonden het een slecht jaar; desalniettemin zijn er nooit eerder van zoveel soorten in een jaar waarnemingen gemeld (196). Opmerkelijk is wel dat er voor het eerst sinds 1982 geen soorten nieuw voor de fauna werden gevonden. Het grote aantal nieuwe vondsten voor met name de noordelijke provincies is te danken aan enkele zeer actieve werkgroepen en verzamelaars: deze vondsten vertegenwoordigen vooral een toename van de kennis door betere inventarisatie, naast enkele werkelijke uitbreidingen.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:303154</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 38 - 55</dcterms:extent>
+   <dcterms:isPartOf>Microlepidoptera in Nederland in 2004 (URN:ISSN:0013-8827) (Volume 66) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/303154.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/132697</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/303154</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

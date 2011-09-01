@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Land tortoise types in the Rijksmuseum van Natuurlijke Historie with comments on nomenclature and systematic (Reptilia: Testudines: Testudinidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogmoed M.S.</dc:creator>
+   <dc:creator>Crumly C.R.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Testudinidae; holotypes; lectotypes; taxonomy; nomenclature</dc:subject>
+   <dc:description>The holotype of Testudo vosmaeri Fitzinger, 1826 [= Geochelone vosmaeri] is RMNH 6001. The holotype of Testudo forstenii Schlegel &amp; Müller, 1840 [= lndotestudo forstenii] is RMNH 3811. I. forstenii is considered a senior synonym of T. travancorica Boulenger, 1907 because plastral colour pattern, gular measurements, and general shell morphology do not distinguish Indian populations from Indonesian populations. The lectotype of Testudo emys Schlegel &amp; Müller, 1840 [= Manouria emys] is RMNH 3808. lndotestudo and Manouria are recognized as separate genera and briefly diagnosed. In order to avoid nomenclatural confusion and conserve current usuage, the pre-Linnaean figure in Piso (1658: 105) is selected as the lectotype for Testudo geometrica Linnaeus, 1758 [= Psammobates geometricus]. The holotype of Testudo strauchi Van Lidth de Jeude, 1893, is RMNH 6011, and is an unusual specimen of Psammobates geometricus.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319422</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 241 - 259</dcterms:extent>
+   <dcterms:isPartOf>Land tortoise types in the Rijksmuseum van Natuurlijke Historie with comments on nomenclature and systematic (Reptilia: Testudines: Testudinidae) (URN:ISSN:0024-0672) (Volume 58) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319422.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150708</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319422</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

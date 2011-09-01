@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A Miocene molluscan faunule from Caucagua (Miranda State, Venezuela), with the description of a new species of Tryonia (Mollusca, Gastropoda)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Wesselingh F.P.</dc:creator>
+   <dc:creator>Macsotay O.</dc:creator>
+   <dc:subject>42.73 ; 38.22</dc:subject>
+   <dc:subject>Miocene</dc:subject>
+   <dc:subject>Venezuela</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:subject>Tryonia</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Cumaca Formation</dc:subject>
+   <dc:description>A molluscan faunule from the Miocene Cumaca Formation of the western margin of the Tuy Basin (Venezuela) is described. The fauna yields two species of freshwater snails and a single terrestrial snail species. Tryonia vivasi nov. spec. is described from the fauna, and its biogeographical significance is discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:235213</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 61 - 65</dcterms:extent>
+   <dcterms:isPartOf>A Miocene molluscan faunule from Caucagua (Miranda State, Venezuela), with the description of a new species of Tryonia (Mollusca, Gastropoda) (URN:ISSN:1570-0399) (Volume 4) (Issue 1-2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/235213.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/54014</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/235213</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

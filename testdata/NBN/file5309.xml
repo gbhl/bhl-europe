@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the genus Nyctalemon Dalman (Lepidoptera, Uraniidae) with notes on the biology, distribution, and evolution of its species</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Regteren Altena, van C.O.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Contents ι. Introduction..............I 2. Systematics (a, The correct name of the genus p. 4; b, Diagnostic characters of the species and subspecies p. 6; c, Abbreviations p. 9; d, Key to the species and subspecies p. 10; e, Survey of the species and subspecies p. 11; f, Disregarded specimens p. 30; g, Wilcoxon tests for the difference between certain measurements in allied subspecies p. 31; h, Early stages p. 36; i, The species concept in Nyctalemon p. 37).......... 3. Biology............... 38 4. Distribution.............. 43 5. Evolution............... 46 6. Bibliography.............. 52 1. INTRODUCTION In November 1949 the late Professor Dr. L. J. Toxopeus of Bandung, Java, sent me a specimen of Nyctalemon for identification, but neither with the help of our collection, nor with the current literature did I succeed in ascertaining the correct name of this insect. On the contrary it appeared that, though the described forms of this genus clearly were of different value, viz., partly good species, partly geographical subspecies representing these species in restricted areas, no satisfactory division of the genus into species and subspecies had been given. Thus, Seitz' classification of the known forms into four species of which three are polytypic proved to make no sense. Therefore I resolved to study the genus more closely. In the ensuing correspondence Toxopeus gave me the benefit of his experience by providing references to relevant literature and quotations from</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317814</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 58</dcterms:extent>
+   <dcterms:isPartOf>A revision of the genus Nyctalemon Dalman (Lepidoptera, Uraniidae) with notes on the biology, distribution, and evolution of its species (URN:ISSN:0024-1652) (Volume 19) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317814.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149100</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317814</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

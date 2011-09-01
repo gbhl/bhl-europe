@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A remarkable Ordovician ostracod fauna from Orphan Knoll, Labrador Sea</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Becker G.</dc:creator>
+   <dc:creator>Adamczak F.J.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>This paper deals with silicified ostracods obtained from material dredged from Orphan Knoll, a submerged continental remnant in the Labrador Sea. Thirteen determinable species, belonging to the suborders Palaeoecopina and Podocopina, had been found in the material. Two species are new, the rest are left in open nomenclature. Among the smooth shelled podocopines, ancestral Pachydomellidae are of special interest, viz. Aboilia Becker &amp; Adamczak (type species A. blessi Becker &amp; Adamczak). The ostracod species are thought to indicate an age of Middle to Late Ordovician and include forms with both North American and North European affinities. It is believed that the collection of Ordovician ostracods is endemic at the species level and that they have been derived from bedrock on Orphan Knoll.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317438</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 25</dcterms:extent>
+   <dcterms:isPartOf>A remarkable Ordovician ostracod fauna from Orphan Knoll, Labrador Sea (URN:ISSN:0357-7587) (Volume 107)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317438.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148724</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317438</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

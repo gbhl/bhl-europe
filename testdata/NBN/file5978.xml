@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Over het verschil tusschen Pitta guajana guajana en Pitta guajana affinis</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogerwerf A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>In 1776 beschreef P. L. S. Müller (Syst. Nat. Suppl., p. 145) naar aanleiding van in Oost-Java verzameld materiaal de nominaatvorm dezer pitta onder de naam Turdus guajanus, terwijl de in West-Java levende ondersoort affinis als Myiothera affinis in 1821 door Horsfield (Trans. Linn. Soc. London, vol. 13, p. 154) werd beschreven op grond van in Bantam verkregen materiaal. In Cat. Birds Brit: Museum (vol. XIV, 1888, p. 445/6) vatte Sclater deze beide soorten samen onder de naam Eucichla cyanura. Robinson &amp; Kloss (Treubia, vol. V, 1924, p. 279) noemden de OostJava vogels Eucichla c. cyanura en die van het Westen Eucichla cyanura affinis, welke naam ook door Bartels &amp; Stresemann (1929) werd gebezigd. Later toonde Boden Kloss echter aan, dat de naam cyanura diende te worden gewijzigd in guajana (Journ. Mal. Br., Royal As. Soc., vol. IV, 1926, p. 161), terwijl Chasen in diens Handlist (1935) het geslacht Eucichla met Pitta vereenigde en deze brengt Pitta guajana guajana op voor OostJava en Bali en Pitta guajana affinis voor het Westen van dit eiland. De oorspronkelijke beschrijving der beide ondersoorten hebben wij niet ter beschikking, maar Kuroda (Birds of the Island of Java, vol. I, 1933, p. 339) deelt ten aanzien van de nominaatvorm het volgende mede. ,,Characters: — Very similar to E. g. affinis of W. Java, but the blue gorget much more broader (10 mm in width in ♂). Adult ♂ (E. Java) — The ground-colour of underparts yellowish instead of brownish yellow as in affinis and the throat also whiter. Adult ♀ (Bali) — "The ground-colour below of this female is not white as described in Cat. B. Brit. Mus. XIV. p. 446, but yellowish buff, and the throat is more white (HARTERT)."</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318483</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1947</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 267 - 270</dcterms:extent>
+   <dcterms:isPartOf>Over het verschil tusschen Pitta guajana guajana en Pitta guajana affinis (URN:ISSN:0024-0672) (Volume 28) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318483.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149769</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318483</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

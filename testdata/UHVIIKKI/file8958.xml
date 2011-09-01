@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Allium ursinum L., für Regio aboensis neu. Nebst einigen verbeitungsbiologischen Bertachtungen</dc:title>
+   <dc:title>Anteckningar om fågelfaunan i Pälkäne socken (Ta)</dc:title>
+   <dc:title>Beobachtungen über Bledius- und Dyschirius-Arten auf Degersand (Al Eckerö)</dc:title>
+   <dc:title>Cecidiologische Beiträge V</dc:title>
+   <dc:title>Ein für Finnland neuer Wasserpiltz, Gonapodya polymorpha Thaxter</dc:title>
+   <dc:title>Epilobium montanum X palustre, ny för Finlands flora</dc:title>
+   <dc:title>Ergebnisse einer botanischen Reise in den Kirchspielen Houtskär und Iniö (Südwestfinnland) im Jahre 1928</dc:title>
+   <dc:title>Festuca gigantea (L.) Vill. in Finnland</dc:title>
+   <dc:title>Fynd av Elodea canadensis och mörkt rödblommig Lychais flos cuculi</dc:title>
+   <dc:title>För Finland nya eller sällsynta Coleoptera</dc:title>
+   <dc:title>Gyrophora rugifera (Nyl.) Th. Fr., Suomelle uusi jäkälä</dc:title>
+   <dc:title>Intialainen kehrääjäperhonen (Saturnia atlas L.) kuoriutunut Suomessa</dc:title>
+   <dc:title>Kasvilöytöjä Kymin läntisestä saaristosta (Ka)1</dc:title>
+   <dc:title>Kertomus ekoloogis-maantieteelisistä perhostutkimuksista Tvärminnen ulkosaaristossa</dc:title>
+   <dc:title>Kromosoomien ketjuutumisesta</dc:title>
+   <dc:title>Ein  Nestfund des Zwergfliegenfängers (Muscicapa p. parva Bechst.) in Finnland</dc:title>
+   <dc:title>Neuropeterologisches aus Finnland 1. Die Gattung Sisyra mit besonderer Berücksichtigung von Sisyra jutlandica Esben-Petersen</dc:title>
+   <dc:title>Neuropeterologisches aus Finnland 2. Helicoconis lutea Wallengren aus Lappland</dc:title>
+   <dc:title>Neuropeterologisches aus Finnland 3. Boriomyia enontekiensis n. sp. aus Lappland</dc:title>
+   <dc:title>Några anmärkningsvärda fanerogam- och mossfynd</dc:title>
+   <dc:title>Några nykomlingar för Finlands empidi- och dolichopodidfauna</dc:title>
+   <dc:title>Några ornitologiska anteckningar</dc:title>
+   <dc:title>On the calssification of the Various Forms of Coregoni s. st. of Northern Europe</dc:title>
+   <dc:title>On the resistibility of some seeds against seasalt</dc:title>
+   <dc:title>Puccunellia phryganodes (Trin.) Scribn. &amp; Merr. vid Bottniska viken, ny för Finlands flora</dc:title>
+   <dc:title>Die  quantitative Diasporenproduktion einiger Agiospermen</dc:title>
+   <dc:title>Rön om Siphula ceratites i Petasmo</dc:title>
+   <dc:title>Salices från Fiskarhalvön</dc:title>
+   <dc:title>Seeball aus Lärchennadel aus dem Siltzersee in der Schweiz</dc:title>
+   <dc:title>Societas pro Fauna et Flora Fennica 13.5.1928 - 13.5.1929</dc:title>
+   <dc:title>Süsswasseralgen aus Petsamo</dc:title>
+   <dc:title>Tracheliastes fecundus n. sp</dc:title>
+   <dc:title>Tulpan med groddknopp</dc:title>
+   <dc:title>Tvenne för faunan nya Lumbricidae</dc:title>
+   <dc:title>Två för Finland nya microlepidoptera</dc:title>
+   <dc:title>Über Gammaracanthus loricatus v. lacustris (G. O. Sars) in einem südostfinnischen Kleinsee</dc:title>
+   <dc:title>En  Utricularia, som förtär fisklarver</dc:title>
+   <dc:title>Uusia Cottus quadrocornis L. -löytöjä sisävesistä</dc:title>
+   <dc:title>Zur Kenntnis der Temperaturabhängigkeit der jährlichen Abundanzkurven von Clymnia trapezina L</dc:title>
+   <dc:title>Zwei Notizen über das Meereseis und die Algen</dc:title>
+   <dc:contributor>Eklund, Ole.</dc:contributor>
+   <dc:contributor>Branders, Kurt.</dc:contributor>
+   <dc:contributor>Krogerus, Rolf.</dc:contributor>
+   <dc:contributor>Forsius, Runar.</dc:contributor>
+   <dc:contributor>Häyren, Ernst.</dc:contributor>
+   <dc:contributor>Lindberg, Harald.</dc:contributor>
+   <dc:contributor>Hiden, Ilmari.</dc:contributor>
+   <dc:contributor>Alftan, Knut.</dc:contributor>
+   <dc:contributor>Hellén, Wolter.</dc:contributor>
+   <dc:contributor>Cajander, Aarno.</dc:contributor>
+   <dc:contributor>Puolanne, M.</dc:contributor>
+   <dc:contributor>Ulvinen, Arvi.</dc:contributor>
+   <dc:contributor>Kanerva, Niilo.</dc:contributor>
+   <dc:contributor>Meurman, Olavi.</dc:contributor>
+   <dc:contributor>Hilden, Ilmari.</dc:contributor>
+   <dc:contributor>Klingstedt, Holger.</dc:contributor>
+   <dc:contributor>Buch, Hans.</dc:contributor>
+   <dc:contributor>Fey, Richard.</dc:contributor>
+   <dc:contributor>Herpman, Georgr.</dc:contributor>
+   <dc:contributor>Odenwall, E.</dc:contributor>
+   <dc:contributor>Palmgren, Alvar.</dc:contributor>
+   <dc:contributor>Cedercreutz, Carl.</dc:contributor>
+   <dc:contributor>Palmgren, Pontus.</dc:contributor>
+   <dc:contributor>Valle, K. J.</dc:contributor>
+   <dc:contributor>Segerstråle, Curt.</dc:contributor>
+   <dc:contributor>Välikangas, Ilmari.</dc:contributor>
+   <dc:contributor>Clayhills, Thomas H.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>22229423-6dd2-4c88-8b2f-a3a22639b456</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:language>swe</dc:language>
+   <dc:language>eng</dc:language>
+   <dc:language>fin</dc:language>
+   <dc:relation>Memoranda Societatis pro fauna et flora Fennica. - -- 0373-6873. - -- 03736873</dc:relation>
+   <dcterms:issued>1929</dcterms:issued>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_05_1928-1929/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_05_1928-1929</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/222294236DD24C888B2FA3A22639B456</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

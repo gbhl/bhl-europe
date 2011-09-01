@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Late Cretaceous dwarf decapods from Guerrero, southern Mexico and their migration patterns</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Fraaije R.H.B.</dc:creator>
+   <dc:creator>Vega F.J.</dc:creator>
+   <dc:creator>Bakel, van B.W.M.</dc:creator>
+   <dc:creator>Garibay-Romero L.M.</dc:creator>
+   <dc:subject>38.22 ; 42.74</dc:subject>
+   <dc:subject>Dwarfism</dc:subject>
+   <dc:subject>decapoda</dc:subject>
+   <dc:subject>Cretaceous</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Mexico</dc:subject>
+   <dc:description>Two new brachyuran species are described for the Upper Cretaceous Mexcala Formation, Guerrero State, Mexico. Longusorbis quadratus new species (Coniacian, Temalac region) is the oldest and southernmost record for the genus. Xanthosia zoquiapensis new species (Campanian, Zoquiapa region) is the first record for the genus in Mexico. In addition, the age for Costacopluma bishopi Vega and Feldmann is discussed (Coniacian, Temalac region) and represents the oldest and southernmost record for Cretaceous representatives of this genus in North America. All specimens are considerably smaller compared to other species of the same genera and are interpreted as the first example of brachyuran dwarfism in the geological record. These species add new insight into possible migratory routes during the Late Cretaceous. Within Longusorbis, a northwestern migratory route is documented from the Coniacian in Mexico to the Campanian - Maastrichtian of the west coast of North America (Canada), whereas within the genus Xanthosia, a western migratory route from the Albian of Europe to the Campanian of Mexico is indicated. Costacopluma migrated east and north to the west coast of Africa, southeast North America and Greenland.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214533</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 121 - 132</dcterms:extent>
+   <dcterms:isPartOf>Late Cretaceous dwarf decapods from Guerrero, southern Mexico and their migration patterns (URN:ISSN:13834517) (Volume 75, 3/4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214533.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43248</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214533</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

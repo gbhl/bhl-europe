@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 138 (1998)</dc:title>
+   <dc:creator>Ammerer  Gerhard, Anonymus , Beneder  Helmut, Besl  Friedrich R., Engelsberger  Ulrike, Enzinger  Kurt, Graf-Stuhlhofer  Franz, Gruber  Fritz, Hahnl  Adolf, Kerschbaum  Roland Peter, Koller  Fritz, Koller  Heinrich, Lawatsch-Boomgaarden  Barbara, Putzer  Peter, Reingrabner  Gustav, Sacherer  Johannes, Schiller  Isabella, Strobl  Walter, Zollinger  Manfred</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Roland Peter Kerschbaum: Die Verhandlungen zur Gründung eines Salzburger Priesterseminars und seine Entstehung. Ideal und Wirklichkeit eines katholischen Reforminstituts am Ende des 16. Jahrhunderts.    11-   98. Franz Graf-Stuhlhofer: Bischof Andreas Rohracher als NS-Kritiker, eine denunziatorische Überinterpretation?.    99-  102. Friedrich R. Besl: Die Entwicklung des handwerklichen Medizinalwesens im Land Salzburg vom 15. bis zum 19. Jahrhundert.   103-  296. Johannes Sacherer: Zur Gründung des salzburgischen Kollegiatstifts St. Virgil zu Friesach in Kärnten.   329-  342. Gustav Reingrabner: Joseph Schaitbergers religiöse Position.   343-  366. Barbara Lawatsch-Boomgaarden: Die Seufftzende[n] Salzburger auf der "Insel der Hoffnung". Frühes Schrifttum zur Geschichte der Salzburger Exulanten und die De Renne Library in Georgia.   367-  382. Helmut Beneder: Das Salzburger Zucht- und Arbeitshaus in der Zeit von 1754/55 bis 1779.   383-  442. Gerhard Ammerer, Manfred Zollinger: Des Kaisers neues Land. Militärgeographische Landesbeschreibung von Salzburg durch den k.k. Oberst Philipp de Lopez nach einer Reise im Jahre 1807.   443-  466. Adolf Hahnl: August Radnitzky (1810-1897).   467-  502. Isabella Schiller: Der "Schattendorfer Prozeß" von 1927 im Spiegel der Salzburger Zeitungen. Eine sprachliche Analyse.   503-  524. Kurt Enzinger: Die Enzinger vom Högl. Stammfolgen eines Rupertiwinkler Bauerngeschlechtes aus fünf Jahrhunderten.   525-  578. Walter Strobl: Bemerkenswerte Funde von Gefäßpflanzen im Bundesland Salzburg.   579-  589. Walter Strobl, Fritz Gruber: Floristisches aus dem Gasteiner Tal.   591-  600. Fritz Koller: Tätigkeitsbericht des Salzburger Landesarchivs 1997.   601-  608. Heinrich Koller: Wo missionierte der heilige Method?.   609-  617. Peter Putzer: Sceptra Universitatis Salisburgensis. Noch ein Nachtrag und zugleich ein Denkanstoß.   619-  624. Ulrike Engelsberger: Die Gemeindearchive im Bundesland Salzburg.   625-  632. : Zum Salzburger Schrifttum.   633-  656. Anonymus: Gesellschaftsnachrichten. I. Mitgliederbewegung.   657-  658. : Gesellschaftsnachrichten. II. Totentafel.   658-  662. Anonymus: Gesellschaftsnachrichten. III. Vorträge.   662. Anonymus: Gesellschaftsnachrichten. IV. Exkursionen und Führungen.   663-  664. Anonymus: Gesellschaftsnachrichten. V. Vereinsleitung.   664</dc:description>
+   <dc:date>1998</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29153.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29153.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29153</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

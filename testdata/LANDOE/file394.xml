@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 3 (1978)</dc:title>
+   <dc:creator>Baier  Ernst, Dellian  T., Falkner  Gerhard, Horst von der  Dietrich, Müller  Karl, Reichholf  Josef H., Reischütz  Peter L., Richnovszky  Andor, Seidl  Fritz jun., Sochurek  Erich, Stojaspal  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef H. Reichholf: Die Auswirkungen des Hochwassers 1977 auf den Herbstzug der Wasservögel am Egglfinger Innstausee    69-   79. Josef H. Reichholf: Mäusebussard (Buteo buteo) als Beuteschmarotzer beim Turmfalken (Falco tinnunculus)    81-   82. Josef H. Reichholf: Faunistische Daten zur Vogelwelt der Stauseen am unteren Inn (3)    83-   89. Andor Richnovszky: Angaben zur Molluskenfauna der Natrongewässer des Nationalparks Kiskunság, Ungarn    91-   94. Peter L. Reischütz, Fritz jun. Seidl, Franz Stojaspal, Karl Müller, Gerhard Falkner: Malakologische Kurzberichte (2)    95-  102. T. Dellian: In memoriam JOHANNES DAUME   103-  104. Fritz jun. Seidl: Aegopinella ressmanni (WESTERLUND) in ihrem nördlichsten Verbreitungsgebiet (Vorkommen, Begleitfauna, Biologie)   111-  124. Dietrich Horst von der: Ein Beitrag zur Kenntnis von Trichia graminicola FALKNER   125-  130. Erich Sochurek: Die Lurche und Kriechtiere Österreichs nach dem Stand von 1978   131-  139. Ernst Baier: Beobachtungen zum Aufenthalt junger Rauchschwalben (Hirundo rustica) und Mehlschwalben (Delichon urbica) in Baumkronen   141-  145. Josef H. Reichholf: Faunistische Daten zur Vogelwelt der Stauseen am unteren Inn: (4)   147-  156. Fritz jun. Seidl: Zur Molluskenfauna von Kreta: I. Historische Aufzeichnungen (Aus dem Reisetagebuch von Hofrat Dr. RUDOLF STURANY ausgewählt und kommentiert   157-  193</dc:description>
+   <dc:date>1978</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25172.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25172.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25172</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

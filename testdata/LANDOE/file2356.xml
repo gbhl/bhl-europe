@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 123 (1993)</dc:title>
+   <dc:creator>Adlmannseder  Jürgen, Aron  Alfred, Bregant  Eugen, Drescher-Schneider  Ruth, Ernet  Detlef Rainer, Freitag  Bernd, Freitag  Peter, Hafellner  Josef, Heinrich  Georg, Hofmann  E., Kahr  G., Kahr  Harald, Kastberger  Gerald, Kepka  Otto, Lazar  Reinhold, Leitner  Wilhelm, Lieb  Gerhard Karl, Maurer  Willibald, Meisel  S., Melzer  Helmut, Müller  Hansjörg, Obermayer  Walter, Pirker  Dieter, Samwald  Otto</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wilhelm Leitner: Herbert Paschinger 1911-1992.     5. Wilhelm Leitner: Sieghart Otto Morawetz.     6. S. Meisel, Hansjörg Müller, G. Kahr: Cs-137-Transfer vom Boden in den Weizen.     7-   18. Jürgen Adlmannseder: Raum- und Zeitverhalten von Ozon in den westlichen Stadtbezirken von Graz.    19-   31. Ruth Drescher-Schneider, Dieter Pirker: Pollenflug und Schadstoffeintrag in Abhängigkeit vom Witterungsgeschehen. Untersuchungen am Masenberg und an anderen steirischen Stationen.    33-   51. Reinhold Lazar, Gerhard Karl Lieb, Dieter Pirker: Witterungsspiegel 1992 für die Steiermark.    53-   72. Harald Kahr, Willibald Maurer: Holzabbauende Pilze der Steiermark, I.    73-   89. Walter Obermayer: Die Flechten der Seetaler Alpen (Steiermark, Österreich).    91-  166. Josef Hafellner: Seltene Flechten der Steiermark (Österreich).   167-  182. Helmut Melzer, Eugen Bregant: Bemerkenswerte Funde von Gefäßpflanzen in der Steiermark.   183-  205. Gerald Kastberger, Peter Freitag: Erster Übertrag-Nachweis der Höhlenschrecke Troglophilus cavicola Kollar auf Bäumen.   207-  213. Otto Samwald, Otto Samwald: Erster Brutnachweis der Rohrweihe Circus aeruginosus (Linné) für die Steiermark (Vertebrata</dc:description>
+   <dc:description>Aves).   215-  218. Bernd Freitag: Erster Fortpflanzungsnachweis der Zweifarbfledermaus Vespertilio murinus Linnaeus, 1758 (Chiroptera, Vespertilionidae) in Österreich und neue Funde in der Steiermark.   219-  221. Bernd Freitag, Otto Kepka: Neue Nachweise des Kleinen Abendseglers Nyctalus leisleri Kuhl, 1818 (Chiroptera, Vespertilionidae) aus der Steiermark und dem südlichen Burgenland.   223-  225. Bernd Freitag: Erstnachweis der Weißrandfledermaus Pipistrellus kuhli (Kuhl, 1819) für die Steiermark (Chiroptera, Vespertilionidae).   227-  228. Georg Heinrich: Geschäftsbericht für das Vereinsjahr 1992.   235-  238. Detlef Rainer Ernet, Alfred Aron, E. Hofmann, Harald Kahr: Tätigkeitsbericht 1992 der Floristisch-geobotanischen Arbeitsgemeinschaft in der Fachgruppe Botanik des Naturwissenschaftlichen Vereins für Steiermark.   239-  244</dc:description>
+   <dc:date>1993</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28670.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28670.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28670</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

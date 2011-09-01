@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verzeichnis der Ophiuriden-Sammlung des Naturhistorischen Reichsmuseums in Leiden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:creator>Groenewegen J.A.W.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Die Ophiuriden-Sammlung des Naturhistorischen Reichsmuseums in Leiden, von der wir in der vorliegenden Mitteilung ein Verzeichnis geben, umfasst zwar keine neuen Formen, doch ist sie nicht ohne Interesse, da viele bereits bekannte Formen von neuen Fundorten darin enthalten sind. Die überwiegende Mehrzahl der Exemplare stammt aus dem ostindischen Archipel. Ferner ist Material vorhanden aus dem roten Meer (Djeddah), dem indischen Ocean (Mozambique), Nordatlantischen Ocean (Cap Cod, Fundy Bai, Massachussetts-bai, Grönland, Holländische Küste), Westindien (Haiti, Curaçao, Florida), Mittelmeer (Genua, Neapel, Algier), Cap der guten Hoffnung, endlich aus dem Pacific (Sandwich-Inseln, Californien, Neu Seeland, Japan). Von seltenen Formen sind zu nennen Trichaster elegans Ludw. und Ophiarachna mauritensis de Loriol. Reichliches Vergleichsmaterial liegt vor von Ophiothrix longipeda (Lam.) und punctolimbata v. Martens; ferner von Ophiocoma scolopendrina (Lam.), Ophiocoma scolopendrina var. erinaceus (Müll. &amp; Trosch.) und var. schoenleini (Müll. &amp; Trosch.). Bei diesen viel umstrittenen Formen haben wir die umfangreiche Speciallitteratur zu Rate gezogen und glauben zur Klärung des Systematik Einiges beigetragen zu haben. In bezug auf das System der Ophiuriden haben wir uns von neueren Arbeiten vor allem an die Publikationen von Clark (4), Koehler (8, 10), Matsumoto (18) und Mortensen (19) gehalten. Das Material ist zum grösseren Teil in Alkohol conserviert. Die mit einem Sternchen bezeichneten Exemplare sind Trockenmaterial. Das Siboga-Material ist durch Prof. R. Koehler determiniert.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319371</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1929</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 176 - 194</dcterms:extent>
+   <dcterms:isPartOf>Verzeichnis der Ophiuriden-Sammlung des Naturhistorischen Reichsmuseums in Leiden (URN:ISSN:0024-0672) (Volume 12) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319371.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150657</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319371</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

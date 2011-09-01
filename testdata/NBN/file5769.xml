@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes sur les mantides du Musée de Leyde avec la description d'un nouveau genre et de quelques espèces nouvelles</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deeleman-Reinhold C.L.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Au cours de la dernière trentaine d'années, la collection de Mantides du Rijksmuseum van Natuurlijke Historie à Leyde a été augmentée peu à peu par des exemplaires récoltés à des localités différentes. Récemment une partie de ce matériel a été récoltée pendant l'expédition de la Société Royale Néerlandaise de Géographie (Koninklijk Nederlandsch Aardrijkskundig Genootschap) en 1939 et pendant les voyages à la Nouvelle Guinée du Dr. L. D. Brongersma et ses collaborateurs en 1952 jusqu'à 1955 1). Les exemplaires jusqu'ici pas identifiés étaient devenus si nombreux qu'on pouvait attendre de résultats importants d'une étude de ce matériel. Aux pages suivantes on trouvera de résultats premièrement concernant un nombre d'espèces du genre Hierodula, pour la plus grande partie originaire de la Nouvelle Guinée, autrepart de Java, des Iles Tanimber et de la Perse. Il ressortait qu'un exemplaire d'Afrique du Sud appartenait à une nouvelle espèce du genre Hoplocorypha. Il fallait créer le nouveau genre Lobovates pour un exemplaire d'Amérique Centrale. Finalement, des notes sur la présence au Bornéo et à la Nouvelle Guinée de deux espèces des genres Toxodera et Tenodera, déjà décrites jadis, pouvaient être communiquées. Hoplocorypha bicornis n. sp. Holotype: 1 ♀, Pietersburg, Transvaal, 1938, Prof. H. J. Lam et A. D. J. Meeuse. Description de la ♀ : Très grand pour le genre. Couleur principale: brun. Tête plus large que le pronotum. Yeux arrondis. Ecusson frontal transversal, petit. Ocelles petits, écartés. Sommet du vertex dépassant de beaucoup les yeux, les tubercules juxta-oculaires très prononcés, plus hauts que larges, acuminés, les</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318274</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 55 - 67</dcterms:extent>
+   <dcterms:isPartOf>Notes sur les mantides du Musée de Leyde avec la description d'un nouveau genre et de quelques espèces nouvelles (URN:ISSN:0024-0672) (Volume 35) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318274.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149560</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318274</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

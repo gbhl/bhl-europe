@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some new species of the genus Helicella (Pulmonata, Helicidae) from the province León, Spain</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:creator>Manga M.Y.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Many samples of Helicellinae have been collected by the second author in León, a province in the North of Spain. While trying to identify the species represented in this material, not only the most recent summarizing publications on Spanish Helicellinae by Ortiz de Zárate (1943, 1946, 1950, 1962 1964) were consulted, but the older literature was studied as well, especially the books of Locard (1899) and Servain (1880). These, however, constitute a most serious barrier towards a better knowledge of the Iberian terrestrial molluscan fauna, as of the great number of alleged new species described in them, only unclear shell descriptions are provided, not accompanied by a single figure. Several of our species from León are considered to be new. These are provisionally described in the present paper. A detailed analysis of the whole Helicidae fauna of León and of the importance of the various species as parasite hosts, will be given in a separate paper by the second author. The first author intends to publish the results of the literature study which was necessary for the present paper, together with the results of the examination of the type material of several of the doubtful species; lectotypes will then be selected to stabilize nomenclature. Helicellinae having genitalia with two large dart sacs, with darts, are considered by most authors to belong to Helicella Férussac, 1821. Ortiz de Zárate (1950, 1952) and Zilch (i960: 668-669) subdivided the genus into three subgenera on characters of the shell and the genitalia: Helicella s.s., Xerotricha Monterosato, 1892, and Jabalconia Ortiz de Zárate, 1952 (= Pseudoxerotricha Ortiz de Zárate, 1950, not C. Boettger, 1911). Ortiz de Zarate (1950: 52) distinguished, on shell and radula characters, two "sec-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318212</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 177 - 189</dcterms:extent>
+   <dcterms:isPartOf>Some new species of the genus Helicella (Pulmonata, Helicidae) from the province León, Spain (URN:ISSN:0024-0672) (Volume 51) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318212.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149498</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318212</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

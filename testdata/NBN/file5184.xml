@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Morphology of Glyptholaspis Confusa (FOÀ, 1900) (Acarida, Gamasina)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Morphology has developed rather differently in each of the large groups of mites. Our knowledge on the subject is nowadays at unequal levels, so that terminology, method, and way of interpretation are difficult to compare. This has resulted at present in a more or less unsurveyable condition of acarology as a whole. It is evident that a comparative acarid morphology is only possible when representatives of each group are studied, described, and figured according to the same method. In order to build up a survey of the mites based on these principles, I recently started a study of the Anactinotrichida according to methods used in oribatology. In 1961 I published an extensive description of a species of Holothyrus, with notes on characters generally neglected in this group. Although a small note on ticks appeared afterwards (Van der Hammen, 1964), a continuation of my study in this suborder is postponed till after the study of parasitic Gamasina. The present paper is the first of a series of studies in Gamasine morphology. I have chosen a large free-living species as starting point, because in large mites sectioning in general, and especially the study of the gnathosoma is considerably facilitated; in free-living mites evolution is, moreover, not influenced by parasitism. On my request Dr. G. W. Krantz (Oregon State University, Corvallis, Oregon. U.S.A.) kindly sent me identified material of Glyptholaspis confusa (Foà), a large Macrochelid mite excellently suited for my purpose. I wish to express here my thanks to Dr. Krantz for his highly valued contribution. The study resulted in a number of unexpected discoveries. One of the most interesting of these is the observation of the latero-coxal setae e and eI,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317689</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 56</dcterms:extent>
+   <dcterms:isPartOf>The Morphology of Glyptholaspis Confusa (FOÀ, 1900) (Acarida, Gamasina) (URN:ISSN:0024-1652) (Volume 71) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317689.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148975</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317689</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

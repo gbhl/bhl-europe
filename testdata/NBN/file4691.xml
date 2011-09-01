@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Libellen (Odonata) van Meijendel en omgeving : fauna van de wateren in Meijendel, IV</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Geijskes D.C.</dc:creator>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Over de libellenfauna van Meijendel is weinig bekend. In het volgende overzicht is gebruik gemaakt van een aantal vroegere gegevens en van recent materiaal, dat in Meijendel gedurende de laatste tien jaren meer gericht is verzameld. In de collecties van het Rijksmuseum van Natuurlijke Historie bevinden zich imagines die tussen 1849 en 1976 te Meijendel zijn verzameld; deze zijn alle in de materiaallijsten van de soorten opgenoemd. Daarnaast is door een onzer (E. J. van N.) bij zijn onderzoek naar de waterwantsen en waterkevers van Meijendel gedurende de periode van 1970 tot 1977, een collectie van ca. 250 libellenlarven bijeengebracht en gedetermineerd. Hiermede kon het broeden van elf soorten libellen in dit duingebied aangetoond worden. Bovendien bleek er de aanwezigheid van Anax imperator, een grote Aeshnide, waarvan de imagines tot op heden ter plaatse niet zijn waargenomen. Het aantal van Meijendel bekende soorten libellen steeg diaarmee tot 17. Tussen 1970 en 1971 werd ook een kleine collectie libellenlarven door W. J. Kuijper verzameld, tijdens zijn onderzoek naar de watermollusken van Meijendel. Ook deze larven zijn ter documentatie aan de collecties van het Rijksmuseum van Natuurlijke Historie toegevoegd. Voor de kaartjes met de vindplaatsen en de gebruikte codes ter aanduiding van kwelplassen en infiltratieresevoirs in Meijendel zij verwezen naar Van Nieukerken &amp; Van Tol (1978). In het hier gegeven overzicht zijn ook gegevens verwerkt van soorten, die uit de omgeving van Meijendel bekend zijn geworden, maar in het terrein van onderzoek niet zijn aangetroffen. De namen van deze soorten (9) zijn in de tekst tussen rechte haken geplaatst. De samenstelling van dit overzicht heeft ten doel een inzicht te verschaffen</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317195</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 126 - 136</dcterms:extent>
+   <dcterms:isPartOf>Libellen (Odonata) van Meijendel en omgeving : fauna van de wateren in Meijendel, IV (URN:ISSN:0459-1801) (Volume 23) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317195.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148481</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317195</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

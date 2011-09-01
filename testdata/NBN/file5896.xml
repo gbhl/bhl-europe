@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The systematic position of Olindia and Isoτrias (Lepidoptera, Tortricidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Razowski J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Until present the Palaearctic genera Olindia Guenée and Isotrias Meyrick have been placed either in the tribe Cnephasiini or in the Archipini. However, the study of the male genitalia reveals that they actually belong to the Polyorthini, the group known till now only from the subtropical and tropical regions of Asia, Australia and America. Both Olindia and Isotrias are characterised by well developed longitudinal split of the outer surface of the valva in which a rather delicate bunch of hair-like scales is situated. This bunch originates laterally in the median area of the subgenital segment but is derived from the tergite. This is a specialised character of the present tribe, reduced secondarily in a single Asiatic genus Cnephasitis Razowski only (Diakonoff, 1974). Two genera in question differ, however, from all known Polyorthini in the structure of the male genitalia. Description of external characters and of the genitalia may be found in several papers (Obraztsov, 1955; Razowski, 1959). Therefore, I wish to abstain from repeating those generalities and to concentrate on stressing the more important minor features of the genital characters of the male. The tegumen is large, strongly extending dorsally and laterally towards the base of the pedunculus, especially in Olindia. The end of the pedunculus forms a broadened, outwardly convex area to which two muscles are attached. The uncus in Olindia is deeply incised terminally, in Isotrias simple, as in all the remaining known genera of this tribe. The socii are small or medium-sized. The arms of the gnathos in Olindia have a membranous interconnection with one another but are separate in Isotrias. Their terminal parts are strongly broadened, bilobed in Olindia, flat and directed vertically to the ventral</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318401</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 241 - 243</dcterms:extent>
+   <dcterms:isPartOf>The systematic position of Olindia and Isoτrias (Lepidoptera, Tortricidae) (URN:ISSN:0024-0672) (Volume 54) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318401.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149687</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318401</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

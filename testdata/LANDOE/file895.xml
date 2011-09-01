@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 24 (1910)</dc:title>
+   <dc:creator>Burgerstein  Alfred, Hlawatsch  C., Kränzlin  Fr., Rebel  Hans, Ritter  Wolfgang, Steindachner  Franz, Toldt jun.  Karl, Zahlbruckner  Alexander</dc:creator>
+   <dc:description>Inhaltsverzeichnis: C. Hlawatsch: Bibliothekskatalog der mineralogisch-petrographischen Abteilung des k.k. naturhistorischen Hofmuseums in Wien.     1-  192. Franz Steindachner: Notizen.     1-   70. Fr. Kränzlin: Drei neue Myoporinen des Herbarium Vindobonense.   193-  194. Karl Toldt jun.: Über eine beachtenswerte Haarsorte und über das Haarformensystem der Säugetiere. (Tafel I- IV)   195-  268. Alexander Zahlbruckner: Schedae ad "Kryptogamas exsiccatas" editae a Museo Palatino Vindobonensi.   269-  292. Alexander Zahlbruckner: Plantae Pentherianae. Aufzählung der von Dr. A. Penther und in seinem Auftrage von P. Krook in Südafrika gesammelten Pflanzen. (Tafel VI-VII)   293-  326. Hans Rebel: Sechster Beitrag zur Lepidopterenfauna der Kanaren. (Tafel XII)   327-  374. Hans Rebel: Melitaea dejone rosinae, eine neue Tagfalterform aus Portugal. (Tafel XI)   375-  378. Wolfgang Ritter: Neue Thysanuren und Collembolen aus Ceylon und Bombay, gesammelt von Dr. Uzel.   379-  398. Franz Steindachner: Über einige Ageneiosus- und Farlowella-Arten etc. (Tafel VIII- X)   399-  408. Hans Rebel: Neue Tagfalter aus Zentralafrika. (Expedition Grauer.).   409-  414. Alfred Burgerstein: Botanische Bestimmung sibirischer Holzskulpturen des Wiener naturhistorischen Hofmuseums.   415-  418. Franz Steindachner: Die Fische des Itapocú und seiner Zuflüsse im Staate Sa Catharina (Brasilien). (Tafel V)   419-  433</dc:description>
+   <dc:date>1910</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26574.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26574.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26574</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

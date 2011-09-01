@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision der Gattung Glycyphana Burmeister (Coleoptera, Cetoniinae) I. Teil</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Mikšic R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Die Gattung Glycyphana Burm. ist in systematischer Hinsicht eine der schwierigsten, nach der Artzahl die zweitgrösste Cetoniiden-Gattung der Welt. Die erste und bisher einzige Bearbeitung der ganzen Gattung gab Burmeister, der Gründer derselben in seinem klassischen Werk „Handbuch der Entomologie" (1842). Natürlich entspricht diese Bearbeitung nicht mehr den modernen Arbeitsmethoden der Entomosystematik und umfasst ausserdem einerseits nur einen kleinen Teil der gegenwärtig bekannten Arten, anderseits aber auch einige fremde Elemente. Eine Bearbeitung der philippinischen Glycyphana gab Mohnike (1873). In diesem Jahrhundert wurden die Arten des ehemaligen Britisch Indien samt Ceylon und Burma von Arrow (1910) und in neuester Zeit die Arten des ehemaligen französischen Indochina von Paulian (1959/61) behandelt. Die Hauptmasse der Arten umfaisst aber die Fauna von Indonesien. Eben über die Glycyphana-Fauna, dieses Gebietes bestand keine einzige Monographie, da die Arbeiten von Wallace (1868) und Mohnike (1871) nicht als solche aufgefasst werden können. Auch bestand bisher kein einziges System dieser Käfer. Mit dieser Revision hoffe ich — ungeachtet mancher sehr bedeutender Beschwerden — die genannten Lücken einigermassen auszufüllen und eine Basis für weitere Forschtungen auf diesem Gebiet zu schaffen. Wegen des grossen Umfanges der Arbeit erscheint dieselbe in zwei Teile. Der vorliegende erste Teil umfasst ausser den allgemeinen Teil die Bearbeitung der Untergattungen ohne quere Punktfurche auf dem Mesosternalprocesisus, der zweite die Untergattungen wo eine solche besteht. Es ist mir eine angenehme Pflicht für die Zusendung des sehr reichen</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317593</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 112</dcterms:extent>
+   <dcterms:isPartOf>Revision der Gattung Glycyphana Burmeister (Coleoptera, Cetoniinae) I. Teil (URN:ISSN:0024-1652) (Volume 107) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317593.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148879</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317593</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

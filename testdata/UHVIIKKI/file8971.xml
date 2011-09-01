@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über Scalimetrische Metoden zur Bestimmung des Linearen Wachstums bei Fischen</dc:title>
+   <dc:title>Untersuchungen über die Chinesischen Formen der Gattung Misgurnus</dc:title>
+   <dc:title>Über die Vogelfauna der Binnengewässer Ålands</dc:title>
+   <dc:title>Studien an Rhabdocoelen Turbellarien</dc:title>
+   <dc:title>Experimentelle Untersuchungen über die Funktion der Trichobothrien bei Tegenaria derhami scop</dc:title>
+   <dc:publisher>Societas pro fauna et flora Fennica (fi Helsingfors)</dc:publisher>
+   <dc:contributor>Segerstråle, Curt.</dc:contributor>
+   <dc:contributor>Rendahl, Hialmar.</dc:contributor>
+   <dc:contributor>Palmgren, Pontus.</dc:contributor>
+   <dc:contributor>Luther, Alex.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>b5deb517-fb05-4a60-83a0-8b8482f34358</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:relation>Acta zoologica Fennica, 15</dc:relation>
+   <dc:relation>Acta zoologica Fennica, 16</dc:relation>
+   <dc:relation>Acta zoologica Fennica, 17</dc:relation>
+   <dc:relation>Acta zoologica Fennica, 18</dc:relation>
+   <dc:relation>Acta zoologica Fennica, 19</dc:relation>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>1934</dcterms:issued>
+   <dcterms:issued>1936</dcterms:issued>
+   <dcterms:extent>168 s. + 8 kuvasiv.</dcterms:extent>
+   <dcterms:extent>32 s.</dcterms:extent>
+   <dcterms:extent>59 s. + 5 kuvasiv.</dcterms:extent>
+   <dcterms:extent>24 s.</dcterms:extent>
+   <dcterms:extent>27 s.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299947_acta_zoologica/299947_15-19_1933-1936/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299947_acta_zoologica/299947_15-19_1933-1936</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/B5DEB517FB054A6083A08B8482F34358</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

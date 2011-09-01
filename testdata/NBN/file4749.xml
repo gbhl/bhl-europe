@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jonkheer Drs. Willem Cornelis van Heurn (1887-1972)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:creator>Husson A.M.</dc:creator>
+   <dc:subject>Geschiedenis van de biologie</dc:subject>
+   <dc:description>INHOUD Ι. Inleiding .................. 3 2. Nederland (1887-1911)............... 4 3. Verzameltocht naar Suriname (12 mei-10 november 1911)..... 6 4. Nederland (1911-1912)............... 11 5. Reis naar Simaloer en West-Sumatra (1912-1914)........ 12 6. Nederland (1914-1918)............... 17 7. West-Java (1919-1922)............... 18 8. Nieuw-Guinea Expeditie (1920-1921)........... 20 9. Nederland (1922-1924)............... 32 10. West-Java (1924-1933) ; Kleine Soenda-Eilanden (1930)...... 33 11. Oost-Java (1933-1939)............... 35 12. Nederland (1939-1972)............... 38 13. Zoölogische taxa naar W. C. van Heurn genoemd........ 40 14. Bibliographie van W. C. van Heurn............ 42 15. Summary.................. 50 16. Literatuur.................. 54 17. Appendix.................. 54 ι. INLEIDING Op 6 juni 1972 overleed de dierkundige Jonkheer Drs. W. C. van Heurn, die gedurende zijn lange leven (hij werd 85 jaar oud) op onopvallende wijze buitengewoon veel verrichtte voor de vermeerdering van de kennis der zoölogie. Speciaal het Rijksmuseum van Natuurlijke Historie te Leiden heeft zeer veel aan hem te danken. Reeds in 1908 schonk Van Heurn zoölogisch materiaal aan die instelling en tot het laatst toe stond hij er mee</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317253</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 67</dcterms:extent>
+   <dcterms:isPartOf>Jonkheer Drs. Willem Cornelis van Heurn (1887-1972) (URN:ISSN:0459-1801) (Volume 16) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317253.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148539</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317253</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

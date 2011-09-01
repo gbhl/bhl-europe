@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 86-87 (1937)</dc:title>
+   <dc:creator>Anonymus , Beier  Max Walter Peter, Franz  Herbert, Heikertinger  Franz, Höfler  Karl, Lorenz  Ludwig von Liburnau, Mell  Camillo, Molitor  Arnulf, Pintner  Theodor, Reichert  Israel, Remy  Paul A., Ronniger  Karl, Rosenkranz  Friedrich, Scherf  E., Schnarf  Karl, Watzl  Bruno, Zapfe  Helmuth</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Paul A. Remy: Die Eurypauropodidae (Myriapoda Pauropoda) des Naturhistorischen Museums zu Wien.     3-   34. Anonymus: Leitung der Gesellschaft.     3-    4. Franz Heikertinger: Die Mimikry der Tagfalter Südamerikas: Die Dismorphiinen.    35-   72. Helmuth Zapfe: Paläobiologische Untersuchungen an Hippuritenvorkommen der nordalpinen Gosauschichten.    73-  124. Arnulf Molitor: Versuche betreffend die "Rotblindheit" solitärer Bienen.   125-  139. Karl Schnarf: Ziele und Wege der vergleichenden Embryologie der Blütenpflanzen.   140-  147. Bruno Watzl: Beiträge zur Kenntnis der Flora des Attergaues.   148-  176. Camillo Mell: Die Molluskenfauna des Kapuzinerberges in Salzburg nebst weiteren Fundortsangaben Salzburger Weichtiere.   177-  270. Helmuth Zapfe: Ein bemerkenswerter Phocidenfund aus dem Torton des Wiener-Beckens.   271-  276. Friedrich Rosenkranz: Vom Frühlingseintritt in Niederösterreich.   277-  282. Friedrich Rosenkranz: Die Kirschblüte in Niederösterreich.   283-  287. Israel Reichert: Eine lichenogeographische Skizze Palästinas.   288-  296. Herbert Franz, Karl Höfler, E. Scherf: Zur Biosoziologie des Salzlachengebietes am Ostufer des Neusieldersees.   297-  364. Karl Ronniger: Eine von Bernh. Fest entdeckte neue Thymus-Rasse.   365. Anonymus: Sitzungsberichte.   366-  437. Max Walter Peter Beier: Anton Handlirsch.   438-  440. Theodor Pintner: Dr. Fritz Zschokke.   440-  441. Ludwig von Liburnau Lorenz: Otmar Reiser.   441-  457. Karl Ronniger: Bernhard Fest.   457-  459. Anonymus: Besprechungen.   460-  467</dc:description>
+   <dc:date>1937</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28078.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28078.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28078</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

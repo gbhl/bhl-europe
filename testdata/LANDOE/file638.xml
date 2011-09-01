@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 11 (1959)</dc:title>
+   <dc:creator>Demelt  Carl von, Douglas  St. Quentin, Fischer  Maximilian, Foltin  Hans, Fulmek  Leopold, Hicker  Richard, Kasy  Friedrich, Malicky  Hans, Pinker  Rudolf, Ressl  Franz, Scheerpeltz  Otto, Schneider  H., Warnecke  Georg Heinrich Gerhard, Wettstein  Otto</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Leopold Fulmek: Nachtrag zu: L. Fulmek - Die Parasitinsekten der Blattflöhe (Psyllidae).     1. H. Schneider: Crocallis tusciaria Bkh. neu für Niederösterreich und Österreich.     1. Hans Malicky: Lepidopterenfunde aus Niederösterreich. 2. Beitrag zur Landesfauna.     2-    4. Georg Heinrich Gerhard Warnecke: Über die Verbreitung von Hydroecia leucographa Borkh., sowie Beschreibung einer neuen Form (Lep. Noct.).     4-    6. Rudolf Pinker: Ein Sammeltag an der Südspitze Spaniens.     7-    8. Otto Scheerpeltz: Eine neue Art der Gattung Platyola Muls. Rey. aus Niederösterreich, nebst einer Bestimmungstabelle der bis jetzt bekannt gewordenen und etlichen Bemerkungen über einige der anderen bisherigen Arten dieser Gattung (Col. Staphylinidae).     9-   13. Richard Hicker: Ein neues borealpines Faunenelement aus der Familie Cantharidae (Coleopt.).    13-   16. Carl von Demelt: 9. Beitrag zur Kenntnis der Biologie palaearctischer Cerambyciden.    16-   18. Maximilian Fischer: Fünf neue Opius-Arten (Hymenoptera, Braconidae).    19-   25. Friedrich Kasy: Pyrrhia purpurites Tr. nördlich von Wien, ein faunistisch interessanter Fund.    29. Franz Ressl: Die Anthribidae (Coleoptera) des Purgstaller Gebietes.    30-   32. Georg Heinrich Gerhard Warnecke: Über ein- und zweibrütige Stämme bei Großschmetterlingen derselben Populationen.    33-   37. Friedrich Kasy: Anmerkungen zur Arbeit von Warnecke G.: Über ein- und zweibrütige Stämme bei Großschmetterlingen derselben Populationen.    37. Hans Foltin: Spilosoma urticae Esp. Die Unterscheidungsmerkmale, ihre Biotope und das Vorkommen in Oberösterreich und in den Nachbarländern.    37-   42. Otto Wettstein: Die Lebensgemeinschaft an einem Birkenstamm.    42-   59. Friedrich Kasy: Weitere in faunistischer Hinsicht bemerkenswerte Lepidopterenfunde aus Niederösterreich.    61-   64. Otto Scheerpeltz: Eine neue Art der Gattung Sipalia Muls. Rey vom Massiv des Perister in West-Mazedonien (Col., Staphylinidae).    64-   67. Hans Malicky: Eine auffallende Form von Brenthis ino Rtt.    67-   68. Richard Hicker: Neue Arten aus der Familie Malachiidae (Col.).    69-   73. Maximilian Fischer: Zur Kenntnis der Thomscon'schen Braconiden-Arten. V.    74-   82. St. Quentin Douglas: Zum Problem der boreoalpinen Verbreitung.    82-   84</dc:description>
+   <dc:date>1959</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26285.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26285.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26285</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

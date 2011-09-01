@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The MNHN taxonomic referential: state and ongoing developments</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruckert R.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>ornithology</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>classifications</dc:subject>
+   <dc:subject>bird names</dc:subject>
+   <dc:subject>types</dc:subject>
+   <dc:subject>collections</dc:subject>
+   <dc:subject>relational database</dc:subject>
+   <dc:description>The relational database of taxonomic references developed in the Muséum National d’Histoire Naturelle (MNHN), in Paris, has been greatly improved. New names, principally synonyms, have been added to the database following four lines: (1) The referential has been improved taxonomically: type-species of genera have been defined; species names renamed by nomina nova have been searched and entered as well as the source(s) of conflict of the species homonym(s); also, combinatio nova or new combinations of species names given by authors of new genera have been databased. (2) The names which were found written on the labels of the specimens of the MNHN collection have been databased. The computerization of the MNHN collection has started with the Suboscines, thus, handbooks covering these have been checked for names, including new combinations of original species names. (3) Synonyms have been entered for as far they are listed in catalogues of types published by different museums. About 16,000 types specimens covering 9,500 species or subspecies are now listed in the MNHN database, including their catalogue number and the museum where they are preserved. (4) The computerization of all names created by Statius Müller (1776), Boddaert (1783), Gmelin (1788-89), and Latham (1790; 1801), is going on. These four authors based a lot of new scientific names on vernacular names used in earlier ornithological works, e.g. on Brisson (1760) or Buffon (1770-83). All these references to common names (about 10 000) have been entered and linked with the scientific names introduced, following the synonymies presented by these authors.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210800</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 107 - 121</dcterms:extent>
+   <dcterms:isPartOf>The MNHN taxonomic referential: state and ongoing developments (URN:ISSN:00240672) (Volume 79-3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210800.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42168</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210800</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

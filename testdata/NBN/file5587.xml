@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the absence of gill rakers in specimens of the Basking Shark, Cetorhinus maximus (Gunner)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deinse, van A.B.</dc:creator>
+   <dc:creator>Adriani M.J.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>In the majority of the papers dealing more or less extensively with Cetorhinus maximus the gill rakers (fanunculi) are correctly described and regarded as specifically characteristic, whilst in a number of other papers, e.g., de Blainville (1812), Vrolik (1826), and Tchang Si (1934) the gill rakers are not mentioned. This does not necessarily indicate that the specimens examined by the cited authors did not possess gill rakers, probably no definite search was made concerning the presence or absence of these parts. From 1821 till 1952 there stranded in the Netherlands or were brought ashore by fishermen 21 specimens of Cetorhinus maximus; of nine of these it was stated that they had gill rakers, four of these specimens proved to be without gill rakers, whilst of the other specimens no notes are given concerning these parts; the last named specimens will not be further dealt with in the present paper. During the years 1950 till 1952 special attention was paid to the condition of the gill rakers in the specimens of Cetorhinus maximus that became available. The following data could be obtained. At Oostkapelle, island of Walcheren, province Zeeland, on April 11, 1950, Mr. P. J. van der Feen (Amsterdam) saw a male specimen with gill rakers; length 5.50 m. At Domburg, island of Walcheren, on October 23, 1950, he found a male specimen without gill rakers; length 3.37 m. Material of these two specimens has been preserved in the collections of the Zoological Museum at Amsterdam. At the beach of the island of Texel, province North Holland, on September 5, 1951, Mr. I. Kristensen (Den Helder) found a female specimen with gill rakers; length 3.64 m.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318092</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 307 - 310</dcterms:extent>
+   <dcterms:isPartOf>On the absence of gill rakers in specimens of the Basking Shark, Cetorhinus maximus (Gunner) (URN:ISSN:0024-0672) (Volume 31) (Issue 27)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318092.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149378</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318092</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nachtrag zum Verzeichnis der Brachiopoden-Sammlung des Naturhistorischen Reichsmuseums in Leiden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Seit dem Abschlusse des Verzeichnisses der Brachiopoden-Sammlung des Naturhistorischen Reichsmuseums in Leiden im Juli 1932 (diese Zeitschrift, Deel 15, Afl. 3/4) ist die Sammlung durch einige Neuerwerbungen und Geschenke nicht unerheblich bereichert worden. Ich gebe daher in der folgenden kurzen Liste eine gedrängte Uebersicht über das seither neu hinzugekommene Material. Dasselbe enthält unter anderem Exemplare von der Willem Barents- und von der Challenger-Expedition, Doubletten aus der schönen Brachiopoden-Sammlung des Zoologischen Museums in Amsterdam. Es sind zumeist sehr schöne, gut erhaltene, typische Stücke, Alkoholmaterial. Bezüglich des Systems und der Synonyma muss ich hier aus Raummangel zumeist auf meine erste Mitteilung verweisen. Genus Lingula Bruguière 1797. Lingula unguis (Linnaeus) 1758. Lingula anatina Bruguière 1789 1). N° 132. 1 Ex. P. Buitendijk, Nordwestküste von Java, in der Nähe der Tjiliwong, 1906. N° 133. 1 Ex. Schaedler, Neu Guinea (Sekroe), III. 1897. Genus Discinisca Dall 1871. Discinisca lamellosa (Broderip). N° 130. 3 Ex. ohne Angabe von Finder und Fundort. Genus Hemithyris d'Orbigny 1847. Hemithyris psittacea (Gmelin). N° 129. 1 Ex. 75° 42' N., 19° 04' 0., 80 m, Willem Barents Exp., 1884, Stat. 3.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318694</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1934</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 64 - 66</dcterms:extent>
+   <dcterms:isPartOf>Nachtrag zum Verzeichnis der Brachiopoden-Sammlung des Naturhistorischen Reichsmuseums in Leiden (URN:ISSN:0024-0672) (Volume 17) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318694.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149980</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318694</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

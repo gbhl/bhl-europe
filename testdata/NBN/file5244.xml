@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pleistocene vertebrates from Celebes. VIII. Dentition and skeleton of Celebochoerus heekereni Hooijer</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>CONTENTS Introduction............... 1 Celebochoerus heekereni Hooijer........... 2 Lower premolars............. 4 Upper premolars............. 9 Lower canines.............. 13 Upper canines.............. 15 Lower incisors.............. 23 Upper incisors.............. 24 Lower molars.............. 25 Upper molars.............. 30 Cranium and mandible............ 33 Postcranial skeleton............. 35 Relationships of Celebochoerus........... 38 Age and composition of the Archidiskodon-Celebochoerus fauna .... 41 References............... 42 Explanation of the plates............ 44 INTRODUCTION The very first Pleistocene vertebrate remains to be made known from the island of Celebes were two fragments of upper canines that I considered to represent a new genus and species of Suidae (Hooijer, 1948a). These specimens, collected by Mr. H. R. van Heekeren at Beru near Tjabengè (Sopeng district), between the Walanae river and the Singkang depression, about 100 km Northeast of Macassar in Southwestern Celebes, have been entrusted to me by the Head of the Archaeological Survey, Prof. Dr. A. J.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317749</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 46</dcterms:extent>
+   <dcterms:isPartOf>Pleistocene vertebrates from Celebes. VIII. Dentition and skeleton of Celebochoerus heekereni Hooijer (URN:ISSN:0024-1652) (Volume 24) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317749.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149035</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317749</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 4 (1864)</dc:title>
+   <dc:creator>Anonymus , Becker  Eduard, Riedl  Johann, Sauter  Anton Eleutherius, Schweinbach  Franz, Wallmann  Heinrich, Woldrich  Johann Nepomuk, Zillner  Franz Valentin</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Valentin Zillner: Die Wasserleitung der Alm. Kurze Geschichte und Beschreibung. (Beilagen)     5-  128. Johann Nepomuk Woldrich: Beiträge zur Meteorologie Salzburgs.   129-  162. Anton Eleutherius Sauter: Kryptogamen-Flora des Pinzgaues.   163-  216. Franz Valentin Zillner: Die Bevölkerungsverhältnisse des Landes Salzburg. Im Auftrage des hohen Landes-Ausschusses dargestellt.   217-  246. Heinrich Wallmann: Zwölf Salzburger Sagen.   247-  249. Johann Riedl: Marcus Sitticus, Erzbischof von Salzburg und sein Neffe Jakob Hanibal Graf von Hohenems.   250-  288. Johann Riedl: Anhang. Blasius Höfel. Biografische Skizze.   289-  304. Franz Valentin Zillner, Franz Schweinbach: Gesellschafts-Angelegenheiten. Bericht über die am 2. Oktober 1864 im Gemeinderaths-Sitzungssaale zu Salzburg abgehaltene Jahres-Versammlung der Gesellschaft für salzburger Landeskunde, (Dr. Zillner und 20 Mitgl. Des Vorstandes) (Seiten III-VI) . Franz Valentin Zillner: Gesellschafts-Angelegenheiten. Jahres-Bericht. (Seiten VII-VIII) . Anonymus: Gesellschafts-Angelegenheiten. Uebersicht der Vorträge in den Monatsversammlungen. (Seiten IX) . Eduard Becker: Gesellschafts-Angelegenheiten. Jahres-Rechnung über Empfänge aud Ausgaben der Gesellschaft für salzburger Landeskunde im vierten Vereinsjahre 1863-64. (Seite X) . Anonymus: Gesellschafts-Angelegenheiten. Mitglieder-Verzeichniß. (Seiten XI-XIII) . Anonymus: Gesellschafts-Angelegenheiten. Verzeichniß jener gelehrten Gesellschaften und Vereine, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer Mittheilungen eine Verbindung eingeleitet hat. (Seiten XIV) . Anonymus: Gesellschafts-Angelegenheiten. Fortsetzung des Bücherverzeichnisses. (Seiten XV-XVIII) . Anton Eleutherius Sauter: Druckfehler in der Kryptogamen-Flora Pinzgaus [Anm.: auch Berichtigungen und Nachträge]. (1 Seite unpaginiert)</dc:description>
+   <dc:date>1864</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29009.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29009.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29009</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

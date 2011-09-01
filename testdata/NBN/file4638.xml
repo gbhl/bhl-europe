@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The occurrence, bionomics and potential impacts of the invasive freshwater snail Tarebia granifera (Lamarck, 1822) (Gastropoda: Thiaridae) in South Africa</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Appleton C.C.</dc:creator>
+   <dc:creator>Forbes A.T.</dc:creator>
+   <dc:creator>Demetriades N.T.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Tarebia granifera</dc:subject>
+   <dc:subject>South Africa</dc:subject>
+   <dc:subject>invasion</dc:subject>
+   <dc:subject>bionomics</dc:subject>
+   <dc:description>The Asian prosobranch snail Tarebia granifera was reported from South Africa (and Africa) for the first time in 1999 in northern KwaZulu-Natal though it was probably introduced sometime prior to 1996. In the 10 years since its discovery it has spread rapidly, particularly northwards, into Mpumalanga province, the Kruger National Park and Swaziland. The snail has colonized different types of habitat, from rivers, lakes and irrigation canals to concrete lined reservoirs and ornamental ponds. It reaches very high densities, up to 21 000 m-2, and is likely to impact on the entire indigenous benthos of the natural waterbodies of the region – more so than any other invasive freshwater invertebrate known from the country. The indigenous thiarids Thiara amarula, Melanoides tuberculata, and Cleopatra ferruginea are considered particularly vulnerable. Preliminary accounts of the reproductive biology and population fluctuations of T. granifera in KwaZulu-Natal are also presented.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:311930</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 525 - 536</dcterms:extent>
+   <dcterms:isPartOf>The occurrence, bionomics and potential impacts of the invasive freshwater snail Tarebia granifera (Lamarck, 1822) (Gastropoda: Thiaridae) in South Africa (URN:ISSN:0024-0672) (Volume 83) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/311930.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/141949</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/311930</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

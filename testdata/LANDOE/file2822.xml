@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 14_3_4 (1972)</dc:title>
+   <dc:creator>Ahmed  Muneer (Munir?), Bonin  Gilles, Dubey  Lakhsmi, Dvorak  Frantisek, Gicklhorn  Renée, Guedes  Michel, Gutermann  Walter, Härtel  Otto, Joshi  Raghuber (?) Datt, Kumar  Dinesh, Ritter-Studenicka  Hilda, Singh  Raghuraj, Singh  Rajenda, Thaler  Irmtraud, Udar  Ram, Urschler  Ingrid, Vardar  Yusuf, Widder  Felix Josef, Wolkinger  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Irmtraud Thaler: Otto Härtel - 60 Jahre.   213-  216. Irmtraud Thaler: Die Feinstruktur der Zelleinschlüsse von Campanula moesiaca und C. trachelium.   217-  221. Felix Josef Widder: Die Harfentanne bei Bruck an der Mur.   223-  227. Ram Udar, Dinesh Kumar: Sporeling Development in Athalamia pusilla.   229-  237. Hilda Ritter-Studenicka: Die erhöhte Sukkulenz bei Serpentinpflanzen.   239-  249. Yusuf Vardar, Muneer (Munir?) Ahmed: Relative Transpiration of the old and Young Leaves of Some Macchie Elements.   251-  262. Michel Guedes: L'ochrea ligulaire de la feuille de Platane.   263-  269. Gilles Bonin: Première contribution à l'étude des pelouses mésophiles et des groupements hygrophiles du Monte Pollino (Calabre).   271-  280. Frantisek Dvorak: Problems of the species Hesperis scabrida BOISSIER.   281-  287. Rajenda Singh, Raghuraj Singh: Effect of Magnesium Nutrition on Plant Growth and Multiplication of Potato Virus X.   289-  294. Renée Gicklhorn: Neue Dokumente zum Beginn der Forschungsreisen von Thaddäus HAENKE.   295-  308. Raghuber (?) Datt Joshi, Lakhsmi Dubey: Observations on a virus Disease if Salvia splendens occuring in Gorakhpur.   309-  311. Walter Gutermann: Draba aspera, eine für die Karawanken neue Art.   313-  315. Felix Josef Widder, Otto Härtel, Irmtraud Thaler, Ingrid Urschler, Franz Wolkinger: Recensiones.   317-  339</dc:description>
+   <dc:date>1972</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30099.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30099.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30099</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

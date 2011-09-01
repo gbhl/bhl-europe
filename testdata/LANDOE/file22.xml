@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Stapfia 14 (1985)</dc:title>
+   <dc:creator>Godicl  L., Greilhuber  Johann, Heiselmayer  Paul, Karrer  Gerhard, Kereszty  Zoltán, Prack  Peter, Saukel  Johannes, Siebenbrunner  A., Strehl  S., Türk  Roman, Wittmann  Helmut</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Peter Prack: Die Vegetation an der Unteren Steyr     5-   70. Zoltán Kereszty: Die Kartierung der geschützten und gefährdeten Pflanzenarten in Ungarn    71-   76. L. Godicl: Seltene und gefährdete Pflanzen und ihr Schutz in Jugoslawien    77-   84. Gerhard Karrer: Waldgrenzstandorte an der Thermenlinie (Niederösterreich)    85-  103. Paul Heiselmayer: Zur Problematik der Zeigerwerte und deren Anwendung in Pflanzengesellschaften der alpinen Stufe   105-  125. Johann Greilhuber, S. Strehl: Deviating Basic Genome Size in a Hexaploid Population of Scilla bifolia agg. in the Valley Kreuttal (Weinviertel</dc:description>
+   <dc:description>Lower Austria)   127-  134. Helmut Wittmann, A. Siebenbrunner: Die Gattung Asarum im Bundesland Salzburg   135-  140. Roman Türk, Helmut Wittmann: Floristische Flechtenkartierung in Oberösterreich am Beispiel der Gattung Pertusaria   141-  148. Johannes Saukel: Zum Merkmalsbestand einiger mitteleuropäischer Arten der Lebermoosgattung Lophozia (Dum.) Dum. (Sektion Lophozia)   149-  185</dc:description>
+   <dc:date>1985</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/14.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/14.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=14</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

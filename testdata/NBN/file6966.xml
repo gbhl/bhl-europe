@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Recente waarnemingen van de loopkever Harpalus griseus: is er een trend (Coleoptera: Carabidae)?</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Noordijk J.</dc:creator>
+   <dc:creator>Heijerman Th.</dc:creator>
+   <dc:creator>Turin H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>loopkevers</dc:subject>
+   <dc:subject>Carabidae</dc:subject>
+   <dc:subject>verspreiding</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:description>Recent observations on Harpalus griseus: is there a trend (Coleoptera: Carabidae)? Harpalus (Pseudoophonus) griseus is reported in literature to be a rare ground beetle in the Netherlands. Recently, many specimens of this species were observed or collected by means of pitfall traps, window traps and light traps. Besides a number of observations from heathland and drift sand areas in the Veluwe region, H. griseus was collected in several agricultural and anthropogenic habitats around Wageningen. Based on our recent observations the species seems to be more eurytopic than previously thought. The total number of records shows a remarkable increase during the last decade, while the distribution area seems to decrease. It is clear that, due to different sampling intensities and collecting methods, it is impossible to successfully interpret any trend. This is not only true for H. griseus: time trend analysis for all carabids and species of many other invertebrate taxa, will be problematic in the absence of a valid procedure to correct for sampling intensity.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327002</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>8</dcterms:extent>
+   <dcterms:extent>page 43 - 50</dcterms:extent>
+   <dcterms:isPartOf>Recente waarnemingen van de loopkever Harpalus griseus: is er een trend (Coleoptera: Carabidae)? (URN:ISSN:01692453) (Volume 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327002.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/159332</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327002</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

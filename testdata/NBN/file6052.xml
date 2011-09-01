@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Note on the Zuiderzee Crab, Rithropanopeus harrisii (Gould) subspecies tridentatus (Maitland)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Buitendijk A.M.</dc:creator>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the former Zuiderzee, the large brackish inland sea of the Netherlands, a species of crab was commonly met with, which species generally was considered to be endemic in the Dutch inland waters, and was named by most authors Heteropanope tridentata (Maitland). Examination of material and literature convinced us that the crab does not belong to the genus Heteropanope at all, but is a Rithropanopeus, while it is so closely related to the American Rithropanopeus harrisii (Gould), that we only can consider it to be a subspecies of that species. The synonymy of the Dutch form is as follows: Pilumnus tridentatus Maitland, 1874, Tijdschr. Nederl. dierk. Ver., vol. 1, p. 232. non Pilumnus tridentatus Maitland, 1876, Tijdschr. Nederl. dierk. Ver., vol. 2, p. 11. Pilumnus tridentatus Hoek, 1876, Tijdschr. Nederl. dierk. Ver., vol. 2, p. 243, pl. 14 fig. 12-16. Pilumnus tridentatus Miers, 1886, Rep. Voy. Challenger, Zool., vol. 17, pp. 146, 149, 227. Pilumnus tridentatus Hoek, 1887, Tijdschr. Nederl. dierk. Ver., ser. 2 vol. 1, p. 96. Pilumnus tridentatus De Man, 1889, Zool. Jb. Syst, vol. 4, p. 422. Heteropanope tridentata De Man, 1892, Notes Leyden Mus., vol. 14, p. 228, pl. 7 figs. 1, 1a-1d. Pilumnus tridentatus A. Milne Edwards &amp; Bouvier, 1894, Rés. Camp. sci. Monaco, vol. 7, p. 39. Pilumnus tridentatus Maitland, 1897, Prodr. Faune Pays-Bas, p. 36. Pilumnus tridentatus A. Milne Edwards &amp; Bouvier, 1900, Exped. sci. Travailleur &amp; Talisman, Crust. Décap., pt. 1, p. 72. Pilumnus tridentatus Horst, 1903, Maandbl. Nederl. natuurk. Ver., vol. 2, p. 40.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318557</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1949</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 95 - 106</dcterms:extent>
+   <dcterms:isPartOf>Note on the Zuiderzee Crab, Rithropanopeus harrisii (Gould) subspecies tridentatus (Maitland) (URN:ISSN:0024-0672) (Volume 30) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318557.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149843</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318557</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

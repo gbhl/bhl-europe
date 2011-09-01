@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 36. A preliminary review of the Chloropseidae and Irenidae</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Wells D.R.</dc:creator>
+   <dc:creator>Dickinson E.C.</dc:creator>
+   <dc:creator>Dekker R.W.R.J.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>leafbirds</dc:subject>
+   <dc:subject>Chloropseidae</dc:subject>
+   <dc:subject>fairy-bluebirds</dc:subject>
+   <dc:subject>Irenidae</dc:subject>
+   <dc:subject>Aegithina</dc:subject>
+   <dc:subject>iora</dc:subject>
+   <dc:subject>species-limits</dc:subject>
+   <dc:subject>new subspecies</dc:subject>
+   <dc:subject>nomenclature</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>type locality</dc:subject>
+   <dc:description>Hypotheses of family phylogeny are summarized up to date, and amendments made to the treatment by Delacour (1960) of Chloropsis and Irena in Peters’s Check-list of Birds of the World (Mayr &amp; Greenway, 1960), at and below species level. Revision of species-limits within C. cochinchinensis (Gmelin, 1789) and C. aurifrons (Temminck, 1829) as defined in Delacour (1960) restores three ultra-taxa to species rank, boosting the global list of leafbird species to 11. Certain range and nomenclatural issues are resolved, including re-designation of the type locality of Turdus cochinchinensis, type species of Chloropsis. A new subspecies name is introduced as an outcome.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220220</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Corrigenda publishes in ZV 350 (2004), p. 203</dcterms:alternative>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 25 - 42</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 36. A preliminary review of the Chloropseidae and Irenidae (Volume 344)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220220.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46746</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220220</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

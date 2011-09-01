@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A review of the family of Hesionidae with a description of two new species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Occupied with the examination of Hesionidae from the Dutch Eastand West-Indies I found not only, that some genera of this family are described under several different names, but also, as already stated by Webster and Benedict, that the genera seem to be badly confused 1); Leocrates Kbg. f. i. is identical with Lamprophaës Gr. and Tyrrhena Clap., and Podarke pallida was ranged by Claparède among the genus Oxydromus whereas Podarke angustifrons according to Grube belongs to the genus Irma. Partly this might be ascribed to the circumstance, that sometimes not full-grown specimens were described, partly to the fact that the cephalic appendages were overlooked, either in consequence of their minute dimension or because they were fallen off. Because in the last years our knowledge of this family much increazed thanks to the arduous investigations of Fauvel, Mc Intosh, Gravier, Southern a. o. and the description of the species is scattered through a great number of publications, I tried to give in the present paper a review of the genera and an enumeration of all the species hitherto described. Though I am convinced, that no doubt several species may be overlooked, I hope however that my list might be of some use for my colleagues. Whereas Ehlers 2) and Grube 3) made use of the number of cephalic appendages as a charakter to distinguish the different genera from each other, Gravier 4) based his main divisions of the family on the uniramous or biramous condition of the parapodia; however I am agreeing with Ehlers' opinion, that this charakter is less suitable for the distinction of the genera „weil vom zweiästigen Ruder durch Verkümmerung des oberen Astes zum tuberkelartigen Vorsprung ein allmählicher Übergang zum</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318159</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1921</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 73 - 83</dcterms:extent>
+   <dcterms:isPartOf>A review of the family of Hesionidae with a description of two new species (URN:ISSN:0024-0672) (Volume 6) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318159.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149445</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318159</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

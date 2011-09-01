@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>ÖKO.L Zeitschrift für Ökologie, Natur- und Umweltschutz 1987_2 (1987)</dc:title>
+   <dc:creator>Ecker  Peter, Gusenleitner  Friedrich [Fritz], Hable  Heinrich, Haug  Michael, Knoflacher  Helmut Markus, Mitter  Heinz, Öko L. Redaktion  Öko.L Redaktion, Pfitzner  Gerhard, Plattform g. den Bau d. Pyhrnautobahn  Plattform g. den Bau d. Pyhrnautobahn, Schmid  Siegfried, Schremmer  Friedrich (Fritz), Zagler  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Peter Ecker: Der ökologische Stellenwert des Aiterbachtales in der Gemeinde Steinhaus/Wels     3-   15. Gerhard Pfitzner: Die Vogelfauna als Umweltgütespiegel der Gemeinde Steinhaus    13-   15. Öko.L Redaktion Öko L. Redaktion: Warum Widerstand gegen den Bau der Innkreis- (A8) bzw. Pyhrnautobahn (A9) im Raum Wels/Steinhaus und des oberen Kremstales?    15. Helmut Markus Knoflacher: Argumente gegen die "Westtangente" der A8 im Raume Wels/Steinhaus    15-   17. Plattform g. den Bau d. Pyhrnautobahn Plattform g. den Bau d. Pyhrnautobahn: MEMORANDUM gegen den Bau der Pyhrnautobahn in Oberösterreich    17-   19. Heinz Mitter: Das Feuchtgebiet Tagerbach-Schwaigau- Lebensraum bemerkenswerter Käferarten    19-   22. Michael Haug: Der Böhmische Enzian- Erhaltungskultur als Rettung vor dem Aussterben?    22-   25. Siegfried Schmid: Die Bedeutung botanischer Gärten für den Artenschutz    23-   24. Heinrich Hable: Drei Brutnachweise der Uferschnepfe (Limosa limosa) in Oberösterreich (1986) auf Agrarflächen    25-   28. Friedrich (Fritz) Schremmer: Wo und wie überwintert unser Zitronenfalter?    28-   30. Franz Zagler: Bachstelzen ziehen einen Kuckuck auf    31. Öko.L Redaktion Öko L. Redaktion: Buchtip: Ornithologie    31. Öko.L Redaktion Öko L. Redaktion: Buchtips: Umwelterziehung, Bestimmungsbuch, Volkskunde    32. Friedrich [Fritz] Gusenleitner: Ausstellung OÖ. Landesmuseum: Bienen und Wespen- Bestechende Vielfalt    32</dc:description>
+   <dc:date>1987</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24425.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24425.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24425</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 8_1 (1965)</dc:title>
+   <dc:creator>Aumüller  Stephan, Bauer  Kurt, Bittner  Maria &amp; Hans, Dobler  Erwin, Erlinger  Georg, Hammer  Ulrich, Kepka  Otto, Leisler  Bernd, Norden  Franz, Reid  John C., Schiemann  Heinrich, Smital  Peter, Sommerfeld  Eckhart, Steiner  Hans Martin, Weber  Wilhelm</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Bernd Leisler: Erstnachweis der Bartgrasmücke (Sylvia cantillans Pallas) für Österreich.     1-    3. John C. Reid: Eine Ruderente (Oxyura leucocephala) auf der Donau.     4-    5. Otto Kepka, Stephan Aumüller: Der Bestand des Weißstorches (Ciconia ciconia) in Österreich in den Jahren 1961 und 1962.     6-    7. Georg Erlinger: Purpurreiher und Nachtreiher brüten am Inn.     8-    9. Wilhelm Weber: Der Weißrückenspecht (Dendrocopos leucotos) am Leopoldsteinersee.    10-   11. Eckhart Sommerfeld: Pracht- und Sterntaucher am Wolfgangsee.    12-   13. Hans Martin Steiner: Bemerkungen zu der 1963 im Seewinkel beobachteten Schneegans.    13-   14. Ulrich Hammer: Eine weitere Zwergtrappe (Otis tetrax) im Seewinkel.    14-   15. Erwin Dobler: Beobachtung von Rotfußfalken im Vorarlberger Rheintal.    14. Franz Norden: Ein neuer Brutnachweis des Weißrückenspechtes (Dendrocopos leucotos) in der Steiermark.    15-   16. Erwin Dobler: Beobachtung einer Blauracke (Coracias garrulus) im Rankweiler Weitried.    15. Maria &amp; Hans Bittner: Rotkopfwürger in der Lobau.    16. Heinrich Schiemann: Ein Brutplatz des Mauerläufers im Bregenzer Wald.    16. Peter Smital: Zitronenzeisig-Beobachtung in Wien.    16-   17. Heinrich Schiemann: Ein Vorarlberger Brutplatz der Felsenschwalbe.    16. Stephan Aumüller: AUTOREFERAT: Vogelstimmen einmal anders gehört.    18-   20. Kurt Bauer: Bernhard Hufnagel +.    26</dc:description>
+   <dc:date>1965</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27470.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27470.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27470</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

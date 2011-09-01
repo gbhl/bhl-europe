@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Materials for a more stable subdivision of the genus Uca Leach</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Beinlich B.</dc:creator>
+   <dc:creator>Hagen, von H.O.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>fiddler crabs</dc:subject>
+   <dc:subject>subgenera</dc:subject>
+   <dc:subject>cladistic analysis</dc:subject>
+   <dc:subject>morphology</dc:subject>
+   <dc:subject>“major unique inventions”</dc:subject>
+   <dc:subject>zoogeography</dc:subject>
+   <dc:description>The debate on a proper subdivision of the large genus Uca was initiated by the conflicting proposals of Bott (1973) and Crane (1975). In spite of recent computer-aided mending attempts, the overall situation (instability of Uca systematics and nomenclature) has not convincingly improved. Here we try to settle the debate by presenting a simple cladistic analysis sensu Hennig (1950) based on selected morphological characters supplemented by functional remarks and a few behavioural data resulting from fieldwork. All 94 species (except six) were examined, mostly by using the authors’ collection of Uca (partly in Marburg and partly deposited in the Leiden Museum) and all species (see list in chapter 5) are assigned to one of the eight subgenera recognized: Australuca, Cranuca subgen. nov., Gelasimus, Leptuca, Minuca, Paraleptuca, Tubuca, Uca s. str. Some emphasis is laid on a differentiation within the synapomorphies selected: five “major unique inventions” (table 1) are delimited from normal apomorphic character states. The discussion is confined to zoogeographical conclusions, which refer to an early dispersal within “Wegener’s Indo-Atlantic Ocean” and which favour Australia as the centre of origin of the genus Uca.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209747</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 9 - 32</dcterms:extent>
+   <dcterms:isPartOf>Materials for a more stable subdivision of the genus Uca Leach (URN:ISSN:00240672) (Volume 80-4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209747.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41396</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209747</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

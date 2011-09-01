@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on a collection of Crustacea Decapoda from the Great Bitter Lake, Egypt, with a list of the species of Decapoda known from the Suez Canal</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Between August 18 and September 5, 1950, Dr. C. Beets, geologist Royal Dutch Shell Oil Company, explored the aquatic fauna and flora of the Great Bitter Lake. In the course of this exploration dredge hauls were made at 47 stations, distributed all over the lake. An account of this work and a description of the stations were given by Dr. Beets in a previous volume of the present journal (1953). The Decapod Crustacea collected by Dr. Beets belong to twelve species, three of which have not been reported from the Suez Canal before. Apart from these additions to our knowledge of the fauna of the Suez Canal, the present collection is of great interest because of the extensive data provided by Dr. Beets on the ecology of the localities from which the material originates. Decapoda were collected at the following stations: Station 1. Depth 1 to 2.7 m, bottom muddy/sandy though fairly firm, thickly covered with Halophila stipulacea (Forsk.) Aschers., also yielding some Sargassum prob. crispum (Forsk.) Ag. and Spirulina subsalsa Oerst. Fauna rich. Decapoda: Metapenaeus stebbingi, Periclimenes calmani, Diogenes pugilator, Ebalia granulata, Pilumnopeus vauquelini. Station 4. A shoal in a small embayment, 0.2 to 0.75 m deep, with patches of eel-grass and mussels, bottom consisting of somewhat muddy and sandy gravel deposits. Here and there a boulder beset with small sea anemones. Decapoda: Paguristes jousseaumei, Ebalia granulata, Pilumnopeus vauquelini. Station 5. Depth 9 m, bottom on the whole muddy but with a good deal of coarse sand and gravel, covered thickly by Sargassum. Decapoda: Metapenaeus stebbingi, Trachypenaeus curvirostris, Periclimenes calmani, Dio-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319343</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 301 - 330</dcterms:extent>
+   <dcterms:isPartOf>Notes on a collection of Crustacea Decapoda from the Great Bitter Lake, Egypt, with a list of the species of Decapoda known from the Suez Canal (URN:ISSN:0024-0672) (Volume 34) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319343.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150629</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319343</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

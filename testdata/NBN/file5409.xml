@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XXIV. Kritische Revision der Gattung Tadumia</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Genus Tadumia F. Moore Generotypus: T. acco G. R. Gray Tibia mit langem, ihr Ende überragendem, stark zugespitztem Schienenblättchen, das von der Tibiamitte ausgeht. Im Vorderflügel verwächst R1 am Vorderrande mit R3. R3 entspringt nicht aus dem Radialstiel. Präkostalsporn des Hinterflügels ein- oder zweiästig. Sonst gleicht das Geäder weitgehend, bis auf M1 (siehe weiter unten), dem des Genus Parnassius F. Bryk unterscheidet und diagnostiziert: Subgenus Tadumia F. Moore Im Vorderflügel M1 in seiner Stellung zum Radialrippenstamm labil, sogar bei ein- und derselben species bald mit dem Rippenstiel der Radiusgabel von R4 und R5 verwachsen, bald aus der Basis des Rippenstiels, aber auch frei aus der vorderen Zellecke entspringend; Präcostalsporn einästig. Sphragis weisslich, ventral verbreitet, gut entwickelt oder auch rudimentär. Sexualarmatur des ♂ uneinheitlich. Subgenus Eucoramius Bryk Im Vorderflügel entspringt M1 frei aus der vorderen Zellecke, Präcostalsporn zweiästig oder anstelle des zweiten Astes knotenartig verdickt. Sphragis braun, ventral stark ausgehöhlt, ihre beiden Seitenlappen durch eine flache Leiste abgegrenzt. Valve der männlichen Genitalarmatur trapezförmig. Uncusbasis tritt höckerartig hervor. Zu dem subgenus Tadumia F. Moore gehört als erste species: T. acco G. R. Gray (Cat. Lep. Ins. Brit. Mus. v. 1 p. 76 T. 12 Fig. 5/6) Die Art bevölkert das Karakorum, Kaschmir, Ladak, Sikkim und Thibet. Sie hat folgende typische Merkmale: Uncus des ♂ mit 2 Hörnern. Valve</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317914</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1959</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 165 - 192</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XXIV. Kritische Revision der Gattung Tadumia (URN:ISSN:0024-0672) (Volume 36) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317914.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149200</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317914</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

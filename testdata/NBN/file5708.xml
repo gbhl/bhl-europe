@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new genus for the Australian leptodactylid frog Crinia darlingtoni</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Tyler M.J.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>INTRODUCTION Crinia darlingtoni Loveridge, 1933, was described from a series of four specimens collected by P. J. Darlington at the Queensland National Park, Macpherson Range, Queensland, and distinguished by the rudimentary condition of the first finger and the extremely small first toe. Loveridge noted that some specimens bore a resemblance to C. acutirostris Andersson in colouration but did not discuss the phylogenetic relationships of his new species. For a generic revision Parker (1940) examined a juvenile paratype and on the basis of a similarity in the condition of the prevomer, he associated C. darlingtoni with C. leai Fletcher, C. rosea Harrison and C. laevis (Günther). In the last species he also recognized two sub-species, C. l. laevis and C. l. victoriana Boulenger, which Littlejohn &amp; Martin (1964) later restored to specific rank. The most recent contributor (Lynch, 1971) did not examine C. darlingtoni but, on the basis of published data, supported the concept of C. darlingtoni being most closely related to C. laevis and C. victoriana. Straughan &amp; Main (1966) reported that male C. darlingtoni possess bilateral brood pouches in the inguinal region, in which they found larvae at various stages of development up to metamorphic climax. Such structures and the habit of parental care are unique amongst Australian frogs; C. darlingtoni therefore contrasts strikingly with the other members of the genus which lack such structures and have free-living tadpoles. Straughan &amp; Main considered C. darlingtoni to be of considerable antiquity, persisting in a restricted habitat, which they argued had probably remained unchanged since the late Tertiary.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318213</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 193 - 201</dcterms:extent>
+   <dcterms:isPartOf>A new genus for the Australian leptodactylid frog Crinia darlingtoni (URN:ISSN:0024-0672) (Volume 47) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318213.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149499</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318213</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

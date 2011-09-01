@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Libellen in de uiterwaarden rond Zaltbommel</dc:title>
+   <dc:creator>Kalkman V.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:description>Libellen in de uiterwaarden rond Zaltbommel In opdracht van Rijkswaterstaat, Directie Oost, werd door EIS-Nederland in 2001 een inventarisatie verricht in vijf uiterwaarden langs de Waal ten oosten (rechter- en linkeroever) en westen (linker-oever) van Zaltbommel. Deze inventarisatie dient als basis voor verder onderzoek naar de indicatorwaarde van ongewervelden in de uiterwaarden. De inventarisatie richtte zich op sprinkhanen, libellen, bijen, wespen, zweefvliegen en spinnen. In dit rapport worden de resultaten met betrekking tot de libellen behandeld. De tijdens dit onderzoek geïnventariseerde uiterwaarden betreffen de Breemwaard, Gamerensche waard, Heesseltsche waard, Hurwenensche waard en de Rijswaard. In totaal werden 23 soorten libellen waargenomen. Door een communicatiefout werd de Heesseltsche waard in het voorjaar niet bezocht. In de overige gebieden varieerde het aantal soorten van 14 tot 17 (zie onderstaande tabel). De verwachting is dat bij verder onderzoek het aantal soorten per uiterwaard niet veel verder zal toenemen. Uiterwaard Aantal soorten libellen Breemwaard 15 Gamerensche waard 17 Heesseltsche waard 5 Hurwenensche waard 17 Rijswaard 14 In totaal zijn er drie soorten vastgesteld die gebonden zijn aan stromend water. Hiervan is alleen de rivierrombout Gomphus flavipes strikt gebonden aan rivieren. De soorten die bij de stilstaande wateren in de uiterwaarden werden aangetroffen betreffen allemaal in Nederland algemene soorten die een weinig stringente biotoopvoorkeur hebben. Opvallend aan de fauna van het rivierengebied is niet het voorkomen van karakteristieke soorten maar vooral de zeldzaamheid van enkele in de rest van Nederland vaak algemene soorten. Het gaat hierbij om soorten als vuurjuffer Pyrrhosoma nymphula, blauwe glazenmaker Aeshna cyanea en de keizerlibel Anax imperator. Op het eerste gezicht lijkt voor deze soorten wel degelijk geschikt biotoop aanwezig te zijn. Het ontbreken van deze soorten heeft mogelijk te maken met het regelmatig overstromen van hun biotoop door de rivier.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220045</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2002</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>21</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220045.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46545</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220045</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

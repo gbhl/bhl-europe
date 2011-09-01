@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new genus and a new species of the Carventinae from Surinam (Hemiptera, Aradidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kormilev N.A.</dc:creator>
+   <dc:creator>Doesburg, van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The junior author has collected in Surinam at night on a dead log, a few specimens of a very interesting new aradid species representing a new genus in the subfamily Carventinae, which we propose to name Apterocoris surinamensis. All measurements were taken with a micrometer eyepiece, 25 units = 1 mm. Apterocoris Kormilev et Van Doesburg, new genus Ovate, more tapering anteriorly; first three antennal segments, femora, tibiae and lateral borders of the body, with erect, stiff bristles; entire body, with exception of apical half of antennal segment IV, labium and tarsi, covered with red brown incrustation. Apterous. Head longer than width across eyes; anterior process deeply cleft anteriorly, not reaching basal 1/4 of antennal segment I. Antenniferous tubercles stout, conical, diverging. Eyes large, almost globose. Postocular borders unarmed, long and converging backward, at 2/3 of their length with 2 (1 + 1) hooklike tubercles. Vertex raised longitudinally and flanked by 2 (1 + 1) large, ovate infraocular callosities. Antennae about 3 χ as long as width of head across eyes; antennal segment I fusiform, stout, longer than head; II half as long as III and subequal to IV. Labial atrium closed, labium subapical; labial groove large, wide and shallow; labium by far not reaching hind border of labial groove, which is open posteriorly. Pronotum trapezoidal, about half as long as its maximum width, separated from mesonotum by deep, angular depression. Disc with a deep median sulcus flanked by 6 (3 + 3) longitudinal ridges; collar sinuate anteriorly, with 2 (1 + 1) spines laterally; just behind collar a transverse ridge; lateral</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318677</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 6</dcterms:extent>
+   <dcterms:isPartOf>A new genus and a new species of the Carventinae from Surinam (Hemiptera, Aradidae) (URN:ISSN:0024-0672) (Volume 52) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318677.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149963</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318677</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

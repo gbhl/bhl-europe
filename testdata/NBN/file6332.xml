@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Paragamasus (Tanygamusus) Probsti (Oudemans) (Systématique, Géographie), avec quelquesmMises au point synonymiques</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Athias-Henriot C.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>I. INTRODUCTION J'ai pu récemment examiner le matériel original de Paragamasus probsti (Oudemans) et de Pergamasus septentrionalis (Oudemans) du Rijksmuseum van Natuurlijke Historie, Leiden. Le présent article donne l'essentiel des résultats de ces examens. Il est l'occasion d'indiquer la tendance dans laquelle doivent s'orienter les recherches relatives à la Phylogenèse des „Paragamasus", ainsi que de rectifier quelque peu le désordre systématique que certains travaux de faunistique des Parasitidae ont perpétué au delà de 1967. Aucune modification à la notation des poils idiosomaux n'a été introduite, par rapport à mon premier travail sur les Paragamasus (1967), pour ne pas ajouter une difficulté de lecture. C'est grâce à l'obligeance du Dr. L. van der Hammen que le matériel de la collection Oudemans m'a été confié en prêt; qu'il trouve ici l'expression de ma sincère gratitude. II. POSITION SYSTEMATIQUE DE PARAGAMASUS (TANYGAMASUS) PROBSTI Les Parasitidae doivent définitivement être séparés des gamasides podospermiques (lesquels sont probablement une cohorte qui pourrait s'appeler Dermanyssina ou Laelapina, mais en aucun cas Gamasina); ne trouvant place dans aucune des cohortes tocospermiques nommées (Epicriina ( = Liroaspina), Uropodina, Antennophorina), ils doivent logiquement prendre rang de cohorte sous le nom de Parasitina (cf. Athias, 1969). Les „Paragamasus" sensu Athias, 1967, sont un amalgame de lignées, reliées entre elles par la parenté naturelle à des degrés variables, mais aucune d'entre elles n'a d'affinité phylogénétique qui justifie son union générique avec les vrais Pergamasus (cf. paragraphe III, 5).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318837</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 167 - 179</dcterms:extent>
+   <dcterms:isPartOf>Paragamasus (Tanygamusus) Probsti (Oudemans) (Systématique, Géographie), avec quelquesmMises au point synonymiques (URN:ISSN:0024-0672) (Volume 45) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318837.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150123</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318837</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

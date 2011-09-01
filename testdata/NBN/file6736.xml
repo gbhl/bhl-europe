@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A "new" Nitidulid Beetle from Sumatra</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jong, de C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Some time ago I was asked to identify a fossil coleopteron which had been found in the drill cuttings of an oil well in the Southern part of Sumatra. As the fossil is only a few millimetres long it may be mentioned as an amazing fact that so small an object has been found during rather rough work like oil drilling. The details of the locality as given by Mr. A. Wright Jr. of the N.V. Standard-Vacuum Petroleum Maatschappij are as follows: "The well is one of our Kaja wells, a wildcat well located 3.3 kilometres N. 300 E. from the northeast edge of the Djirah oilfield. The drill cutting was obtained from a depth of 1930 feet subsea. Although, in drill cuttings, there is a certain measure of uncertainty as to the exact level of derivation, we have sufficient evidence to be sure that the fossil actually derives from this depth. The age is Tertiary-e; it occurs below beds of Baturadja stage age, but 200 feet above a lepidocyclina-bearing horizon. The fossil occurs in a shale interval of a formation which is generally non-fossiliferous; conditions were presumably marine, but either oligotrophe or toxic; the water at the time of deposition was shallow." The fossil is pyritized, dark bronze-greyish in colour. It is nearly free from substrate, though in some crevices a light grey, rather soft, somewhat fattish substance is found which can be taken away rather easily. The fossil was sent to the Rijksmuseum van Natuurlijke Historie at Leiden, mounted in a small box on a slide, pasted to the bottom with tragacanth. During the studies it was left in the small box, and kept in an exsiccator to preserve the fossil against deterioration by atmospheric influence.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319241</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 43 - 47</dcterms:extent>
+   <dcterms:isPartOf>A "new" Nitidulid Beetle from Sumatra (URN:ISSN:0024-0672) (Volume 32) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319241.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150527</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319241</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

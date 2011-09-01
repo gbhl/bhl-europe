@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Birds of the Inyanga National Park, Rhodesia</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>In October and November 1964, after attending the Second Pan African Ornithological Congress at Pietermaritzburg, Natal, I spent some six weeks at Rhodes Inyanga Orchards in the Inyanga National Park, Rhodesia, at the kind invitation of Mr. and Mrs. C. B. Payne. During my stay I observed and collected birds in the Park and its immediate surroundings. In this paper the ornithological results of my stay are recorded. A collecting permit had been obtained for me in advance by Mrs. Payne, and by kind permission of the Chief Warden I was allowed to collect in the National Park. Authorities of the Umtali Museum placed a shotgun and dustshot at my disposal. Mrs. Payne was greatly interested in my activities; she also presented to me several bird-skins, including a specimen of the rare Sarothrura affinis antonii. Recently she has contributed to ornithological knowledge by the discovery of an even rarer rail, Sarothrura lugens lynesi (cf. Benson &amp; Irwin, 1966). To the authorities of the British Museum (Natural History) I am indebted for the loan of material and for help with the identification of Cisticola species and an immature Ploceus velatus. Loans were further received from the South African Museum, Cape Town, the Durban Museum, and the Koninklijk Museum voor Midden-Afrika, Tervuren. To Mr. A. de Roo of the last-mentioned institute I owe the identification of some specimens of Euplectes in off-season plumage. Mr. J. Hull of the University Museum, Oxford, sent information on specimens of Ploceus velatus in the Burchell collection. Financially, my visit to Africa was made possible by grants from the Jan Joost ter Pelkwijk Fonds and the Nederlandsche Organisatie voor</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317633</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 74</dcterms:extent>
+   <dcterms:isPartOf>Birds of the Inyanga National Park, Rhodesia (URN:ISSN:0024-1652) (Volume 109) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317633.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148919</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317633</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

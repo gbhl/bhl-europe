@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision der Indo-Australischen Arten von Atherina</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Weber M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Aus dem indo-australischen Archipel sind die folgenden Arten von Atherina genannt oder beschrieben: 1. A. argyrotaenia Blkr. 2. A. bimanensis Blkr. 3. A. brachypterus Blkr. 4. A. cylindrica C. V. 5. A. duodecimals C. V. 6. A. eendrachtensis Q. G. 7. A. forskåli Rüpp. 8. A. japonica Blkr. 9. A. lacunosa Forst. 10. A. pinguis Lac. 11. A. temmincki Blkr. 12. A. waigiensis Q. G. 13. A. valenciennesi Blkr. Hinsichtlich vieler von diesen Arten herrscht grosse Verwirrung, was nicht verwundern kann bei der oft sehr ungenügenden Beschreibung, die vor allem in der älteren Literatur derart ist, dass daraus unmöglich eine Art wiedererkannt werden kann. So kommt es, dass viele Arten ihr Bestehen aus der einen Publikation in eine folgende fortschleppen ohne dass die Autoren viel Kritik anwandten oder, so weit dies möglich ist, sich die Mühe gaben die typischen Arten in den Museen zu untersuchen. Mit Freude musste man daher das vor kurzem erschienene Werk von D. St. Jordan und C. L. Hubbs „A Monographic Review of the family of Atherinidae" 1) begrüssen. Aber leider gibt es keine Antwort auf die</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319067</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1921</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 45 - 53</dcterms:extent>
+   <dcterms:isPartOf>Revision der Indo-Australischen Arten von Atherina (URN:ISSN:0024-0672) (Volume 6) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319067.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150353</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319067</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

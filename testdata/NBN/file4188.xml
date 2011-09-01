@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vliegend hert in de omgeving Mander, Twente</dc:title>
+   <dc:creator>Smit J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Ecologie</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Lucanus</dc:subject>
+   <dc:subject>cervus</dc:subject>
+   <dc:description>Vliegend hert in de omgeving Mander, Twente In 2006 heeft EIS-Nederland in opdracht van het Expertise centrum van het ministerie van Landbouw, Natuur en Voedselkwaliteit een onderzoek uitgevoerd naar de verspreiding van het vliegend hert in de omgeving Mander, Twente. Dit betrof een inhaalslag verspreidingsonderzoek in het kader van het Amendement van der Ham. De voorgenomen doelen daarbij waren: - Een zo’n goed mogelijk beeld krijgen van de huidige verspreiding van het vliegend hert in de omgeving van Mander. - Een beter inzicht krijgen in de vermeende uitbreiding van het verspreidingsgebied van de afgelopen jaren. - Een beter inzicht krijgen in de spreiding van eventuele voortplantingspopulaties binnen het verspreidingsgebied. Veel media aandacht in de vorm van gepubliceerde oproepjes, verspreide posters en twee radiointerviews hebben er voor gezorgd dat er dit jaar 44 betrouwbare waarnemingen zijn binnengekomen uit de omgeving Mander. Dit is ruim 22% van het totaal aantal waarnemingen uit 2006. Dit is een erg groot aandeel voor een gebied van die geringe grootte. Naast losse waarnemingen van volwassen individuen zijn er ook twee waarnemingen van larven binnengekomen, wat zonder twijfel duidt op de aanwezigheid van een voortplantingspopulatie. Daarnaast zijn er enkele waarnemingen binnengekomen van een plek over een langere tijdsreeks, wat aangeeft dat ook op deze plekken vermoedelijk een voortplantingspopulatie aanwezig is. In totaal zijn er nu 10 kilometerhokken binnen dit verspreidingsgebeid waaruit voortplantingspopulaties bekend zijn. Naast deze betrouwbare waarnemingen en voortplantingspopulaties zijn er ook enkele oncontroleerbare waarnemingen binnengekomen die aandacht verdienen. Twee omdat ze gedaan zijn in Nijverdal, aan de rand van de Holterberg waar respectievelijk in 1988 en 2002 een betrouwbare waarneming is gedaan van het vliegend hert. En in Vriezeveen zijn drie afzonderlijke waarnemingen binnengekomen, waarvan geen duidelijk bewijs geleverd kon worden, maar waar gezien de concentratie mogelijk toch sprake is van een populatie.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220068</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>18</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220068.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46568</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220068</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

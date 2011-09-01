@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 147_2 (2007)</dc:title>
+   <dc:creator>Anonymus , Arming  Claudia, Dohle  Oskar, Eichberger  Christian, Forstner  Karl, George  Dieter, Krisch  Laurenz, Mittermüller  Franz, Müller  Guido, Ruggenthaler OFM  P. Oliver, Schernthaner  Peter, Strobl  Walter, Weber  Otmar, Weinkamer  Kurt</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Forstner: Studien zur Frühgeschichte Salzburgs.   137-  162. Otmar Weber: Der heilige Rupert und seine Mission in Salzburg   163-  200. Dieter George: Die Finanzlage der Stadt Tittmoning von 1600 bis 1816.   201-  226. Guido Müller: Über Ursprung und Ausbreitung des Namens "Tennengau" .   227-  232. Kurt Weinkamer: Tagebuchnotizen vom Administrator des "Salzburger Volksblattes" Josef Dumler (1872-1912) .   233-  254. Laurenz Krisch: Bad Gastein während der NS-Herrschaft.   255-  322. Peter Schernthaner: Pinzgauer NS-Bürgermeister im Spiegel lokalhistorischer Darstellungen.   323-  366. P. Oliver Ruggenthaler OFM: Der Musikalienbestand des Franziskanerklosters Salzburg: Relikte aus dem 18. Jahrhundert.   367-  384. Franz Mittermüller: Das Knotzingerhaus aus Lamprechtshausen-Knotzing - Hauskundliche und historische Untersuchung des Wohnhauses eines Flachgauer Gruppenhofes.   385-  414. Claudia Arming, Christian Eichberger, Walter Strobl: Floristische Beiträge aus Salzburg X.   415-  428. Oskar Dohle: Tätigkeitsbericht des Salzburger Landesarchivs für 2006.   429-  468. : Zum Salzburger Schrifttum.   469-  484. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. I. Mitgliederbewegung.   485-  486. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. II. Totentafel.   486. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. III. Vorträge.   487. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. IV. Exkursionen und Führungen.   487-  488. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. V. Vereinsleitung.   488. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. VI. Anschriften der Gesellschaft.   489. Anonymus: Gesellschaftsnachrichten für das Vereinsjahr 2005/2006. VII. Vorschau auf die Vorträge im Vereinsjahr 2007/2008.   490</dc:description>
+   <dc:date>2007</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29164.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29164.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29164</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

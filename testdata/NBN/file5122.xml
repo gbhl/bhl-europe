@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Report on a collection of Crustacea Decapoda and Stomatopoda from Turkey and the Balkans</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Under the auspices of Leiden University and with the financial aid of various organisations and institutions, Messrs. E. Hennipman, P. Nijhoff, C. Swennen, A. S. Tulp, W. J. M. Vader, and W. J. J. O. de Wilde, most of whom are biological students of Leiden University, made a collecting trip to Turkey from March to July 1959. Extensive collections of plants and animals from Turkey were brought together, while moreover incidental collecting was done on the way home in Greece and Jugoslavia. A narrative of this trip will be published by Nijhoff &amp; Swennen. The Decapod and Stomatopod Crustacea brought home by the expedition form an extensive and well preserved collection, which contains many very interesting items. It is gratifying to see that notwithstanding the short duration of the expedition and the limited means available these important results could be obtained. Most of the material was collected either in fresh water or in littoral marine habitats (0-5 m depth); on two occasions a trip with a commercial fishing boat could be made, during these trips material from deeper water was obtained. The accompanying map (fig. 1) shows the localities whence Decapoda and Stomatopoda were taken by the expedition, and other Turkish localities mentioned in the present paper. As extremely little is known about the Decapod fauna of Turkey, even the most common species in the present collection proved to be of interest. A number of Mediterranean species are now reported for the first time from Turkish waters. In addition, the Turkish south coast proved to lodge also several Indo-West Pacific species originating from the Red Sea which have entered the Mediterranean by way of the Suez Canal and went northward along the coasts of Egypt, Israel, the Lebanon and Syria. Several of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317627</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1961</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 67</dcterms:extent>
+   <dcterms:isPartOf>Report on a collection of Crustacea Decapoda and Stomatopoda from Turkey and the Balkans (URN:ISSN:0024-1652) (Volume 47) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317627.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148913</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317627</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

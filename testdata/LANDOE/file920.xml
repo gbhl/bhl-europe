@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 49 (1938)</dc:title>
+   <dc:creator>Beier  Max Walter Peter, Handlirsch  Anton, Kloiber  Ämilian, Lorenz von Libernau  Ludwig, Rebel  Hans, Rechinger  Karl Heinz, Rokitansky  Gerth Freiherr von, Toth  M.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anton Handlirsch: Neue Untersuchungen über die fossilen Insekten mit Ergänzungen und Nachträgen sowie Ausblicken auf phylogenetische, palaeogeographische und allgemein biologische Probleme. II. Teil. (Tafel I-XVI)     1-  240. Ämilian Kloiber: Die Rassen in Niederdonau. (Ältere und neuere Untersuchungen, 1883-1938). (Tafel I-III)   241-  261. Karl Heinz Rechinger: Zur Flora von Armenien und Kurdistan.   262-  281. Gerth Freiherr von Rokitansky: Zur Verbreitung der Wasseramseln, speziell der Rasse. Cinclus cinclus orientalis Stres (als M.S. abgeschl. März 1937).   282-  294. Max Walter Peter Beier: Anton Handlirsch +.Seiten (73)-(74). 1 Portraittafel. . Ludwig Lorenz von Libernau: Nachruf an Otmar Reiser. Seiten (69)-(72). . Hans Rebel: Achter Beitrag zur Lepidopterenfauna der Kanaren.Seiten  (43)-(68), Tafel I, 1 geol. Karte. . M. Toth: Die östlichen Vorlagen des Wiener Schneeberges. Seiten (1)-(42), Tafel I, 1 geol. Karte.</dc:description>
+   <dc:date>1938</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26599.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26599.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26599</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

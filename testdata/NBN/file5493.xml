@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Triodon macropterus versus Triodon bursarius : an attempt to establish the correct name and authorship</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>A visit to the Leiden Museum by Professor Dr. L. F. de Beaufort, assembling data for his next volume on the Fishes of the Indo-Australian Archipelago, prompted me to investigate the nomenclatorial difficulties still existing around the Plectognath genus Triodon and its single known species. One of the principal items consulted, Herre's 1953 Check List of Philippine Fishes, itself not without serious flaws and therefore illustrative for the present problem, proved a very satisfactory starting-point, especially as it contains the only recent and rather extensive compilation of previous literature on the subject. Still, Herre's enumeration of references is not at all exhaustive, and numerous additions taken both from systematic literature and from general works, and a few from anatomical papers, can be added. A considerable number of these, though obviously still far from complete, can be found in the list of literature at the end of the present paper. Perusing through some sixty odd papers, it appeared that the genus Triodon hitherto has been ascribed mostly to Cuvier, occasionally to Reinwardt, or to Reinwardt in Cuvier, 1829. It further was clear that the name used for the single known species of the genus has almost invariably been Triodon bursarius, the authorship going to Cuvier, Reinwardt, or Reinwardt in Cuvier, but Reinwardt apparently having preference in most publications. Triodon macropterus Lesson hardly ever occurred (Dareste, 1849: Triodon macroptère), but it was given together with Triodon bursarius, without showing preference, in some of the old French "Dictionaires" (Guichenot in Guérin, 1839; Drapiez, 1845, 1853; Ba(udement?) in d'Orbigny, 1869). Finally, it was interesting to observe that nowhere any references are given to a publication by Reinwardt.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317998</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1962</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 77 - 85</dcterms:extent>
+   <dcterms:isPartOf>Triodon macropterus versus Triodon bursarius : an attempt to establish the correct name and authorship (URN:ISSN:0024-0672) (Volume 38) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317998.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149284</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317998</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

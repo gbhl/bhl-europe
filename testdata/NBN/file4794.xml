@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[The fossil record of the Eurasian Neogene insectivores (Erinaceomorpha, Soricomorpha, Mammalia) : Part I / L.W. van den Hoek Ostende, C.S. Doukas and J.W.F. Reumer (editors)]: China</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Qiu Z.</dc:creator>
+   <dc:creator>Storch G.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>Introduction Extensive excavation activities by the Institute of Vertebrate Paleontology and Paleoanthropology, Beijing (IVPP) over the last 20 years have increased our knowledge of the Neogene micromammals from China considerably. Yet, it is still rather fragmentary; we deal with a very vast country with a complex geological and faunal history and varied ecological conditions at all times. The fossil sites are not distributed evenly in time and space (Fig. 1), and among Neogene micromammals, insectivores are often disregarded taxonomically, even though they are a major element in most assemblages. Qiu (1988) and Qiu &amp; Qiu (1995) discussed the major Neogene micromammal faunas from China and presented faunal lists, including insectivores. The location of the local faunas is shown in Fig. 1. A synopsis of fossil records of soricids from Asia was given by Storch et al. (1998). Detailed taxonomic studies of Neogene insectivores deal with local faunas such as Lufeng in the south and Tunggur, Ertemte, and Bilike in the north of China. Where necessary, we updated for the present paper the biochronological and local (administrative/geographical) settings and consulted type specimens of various taxa. Some taxa, however, still would require a more comprehensive review. Unlike the other contributions in this volume, we used the terms of the Chinese Land Mammal Ages for the chronological setting instead of the European Neogene Mammal units (MN zones). Our correlation with MN zones must be considered tentative for the most part. Within each Age the localities are arranged stratigraphically. All specimens are housed in the collections of IVPP, aside from the holotype of Metexallerix gaolanshanensis.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317298</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 37 - 50</dcterms:extent>
+   <dcterms:isPartOf>[The fossil record of the Eurasian Neogene insectivores (Erinaceomorpha, Soricomorpha, Mammalia) : Part I / L.W. van den Hoek Ostende, C.S. Doukas and J.W.F. Reumer (editors)]: China (URN:ISSN:0922-4564) (Volume 5) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317298.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148584</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317298</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

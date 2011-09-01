@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Note on a Collection of Decapoda Branchyura from the Coasts of Mexico, includung the Description of a new Genus and Species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Buitendijk A.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The material of Brachyura on which this paper is based was collected during some years on the Mexican coasts and I am greatly indebted to Dr. F. Bonet of the Escuela Nacional de Ciencias Biologicas in Mexico, D. F., for the opportunity he offered me to study this interesting material and for his kindness in presenting the larger part of it to the Rijksmuseum van Natuurlijke Historie at Leiden. At Dr. Bonet's request the seven specimens of Platychirograpsus typicus Rathbun were compared with De Man's cotype of Platychirograpsus spectabilis from Gaboon and my best thanks are due to the director and staff of the Zoological Museum in Amsterdam for their kindness in placing this male at my disposal. On examining the Majids of this collection I came across two specimens (a male and a female) which I was unable to place. At my request Dr. John S. Garth of the Allan Hancock Foundation in Los Angeles was kind enough to examine the male and he informed me that not only he agreed with me that it belongs to a new species but that according to his opinion it should even be placed in a new genus; he also informed me that in the collections of the Allan Hancock Foundation some more specimens belonging to this interesting species are present and he most kindly sent me on loan a female and two young specimens which formed a valuable addition to the material at my disposal. I want to express here my sincere thanks for his kind advice and help. DROMIIDAE Dromidia larraburei Rathbun, 1910 Dromidia sarraburei by error Rathbun, 1910, Proc. U. S. Nat. Mus., vol. 38, p. 553, pl. 48 fig. 4.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318746</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1950</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 269 - 282</dcterms:extent>
+   <dcterms:isPartOf>Note on a Collection of Decapoda Branchyura from the Coasts of Mexico, includung the Description of a new Genus and Species (URN:ISSN:0024-0672) (Volume 30) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318746.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150032</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318746</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

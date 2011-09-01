@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The medusae of some species of Hebella Allman, 1888, and Anthohebella gen. nov. (Cnidaria, Hydrozoa, Lafoeidae), with a world synopsis of species*</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boero F.</dc:creator>
+   <dc:creator>Bouillon J.</dc:creator>
+   <dc:creator>Kubota S.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Cnidaria; Hydrozoa; Hydroidomedusae; Leptomedusae; taxonomy; paedomorphosis; life cycle.</dc:subject>
+   <dc:description>The newly liberated, immature medusae of H. scandens, Hebella furax, H. muscensis, and the liberable eumedusoid of H. dyssymetra are described. The taxonomy of the medusa-producing Hebellinae is revised in the light of life cycle features. Due to inconsistencies between skeletal and medusan features, Hebellopsis is merged into Hebella. The new genus Anthohebella is proposed for the hebellids with swimming gonophores. All the nominal species referred to Hebella and Hebellopsis are discussed; out of the 45 nominal species referred at least once to Hebella and Hebellopsis, 15 are retained as valid: 11 are referred to Hebella and four to Anthohebella gen. nov.; 12 nominal species are considered conspecific with currently recognized species referred to the genera Hebella, Scandia and Lafoea; the remaining 18 nominal species are retained as doubtful.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317865</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1997</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 53</dcterms:extent>
+   <dcterms:isPartOf>The medusae of some species of Hebella Allman, 1888, and Anthohebella gen. nov. (Cnidaria, Hydrozoa, Lafoeidae), with a world synopsis of species* (URN:ISSN:0024-1652) (Volume 310) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317865.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149151</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317865</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

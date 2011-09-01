@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 38. The McClelland drawings and a reappraisal of the 1835-36 survey of the birds of Assam</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Dickinson E.C.</dc:creator>
+   <dc:creator>Walters M.P.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>McClelland</dc:subject>
+   <dc:subject>Horsfield</dc:subject>
+   <dc:subject>drawings</dc:subject>
+   <dc:subject>birds</dc:subject>
+   <dc:subject>Assam</dc:subject>
+   <dc:subject>history</dc:subject>
+   <dc:subject>British Library</dc:subject>
+   <dc:subject>Melanochlora</dc:subject>
+   <dc:subject>neotype</dc:subject>
+   <dc:subject>Tesia olivea</dc:subject>
+   <dc:description>McClelland brought back specimens and drawings from a survey in 1835-36 (and perhaps 1836-37). New birds were described in a paper read by Horsfield (1840). A comparison of the McClelland drawings of birds, held at the British Library, with the type specimens of birds newly named in 1840 and with other material has shown that McClelland’s collection was not fully reported. McClelland actually recorded about 170 species not just 96 as then listed. Some birds listed in 1840 were misidentified, of these some have been corrected earlier but at least one is here newly considered and looks as if it needs further correction. Taxonomic and nomenclatural notes are included when necessary. The correct name to apply to the one species in the genus Melanochlora, the Sultan Tit, is not safely established but as dating is not proven the name in present usage is maintained for the sake of stability. In Appendix 3 a neotype is designated for Tesia olivea (McClelland, 1840).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220222</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Corrigenda published in ZV 350 (2004), p. 203, and in: Zoologische Medelingen 8-5 (2006), p. 317</dcterms:alternative>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 63 - 106</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 38. The McClelland drawings and a reappraisal of the 1835-36 survey of the birds of Assam (Volume 344)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220222.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46748</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220222</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

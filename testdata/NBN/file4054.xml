@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Preliminary results of an ongoing study of the Nicobar megapode Megapodius nicobariensis Blyth</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Sankaran R.</dc:creator>
+   <dc:creator>Sivakumar K.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Megapodiidae</dc:subject>
+   <dc:subject>Nicobar megapode</dc:subject>
+   <dc:subject>Megapodius nicobariensis</dc:subject>
+   <dc:subject>incubation mounds</dc:subject>
+   <dc:subject>social organization</dc:subject>
+   <dc:subject>pair-bond</dc:subject>
+   <dc:description>Data collected during an ongoing study on incubation mounds and the social organization of the Nicobar megapode Megapodius nicobariensis Blyth, 1846, are reviewed. Microbial decomposition of organic matter in mounds is likely to be the major source of heat production within incubation mounds of the Nicobar megapode, though a direct relation between the rate of organic activity and the temperature could not be shown. The size of a mound was found to be the most important factor in the stabilization of incubation temperatures at optimal levels. Data on the social organization of the Nicobar megapode are presented. The use of mounds by multiple pairs, territorial behaviour, extrapair copulations and the break-up of pairs are highlighted. The mating system in the Nicobar megapode is briefly discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219422</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 75 - 90</dcterms:extent>
+   <dcterms:isPartOf>Preliminary results of an ongoing study of the Nicobar megapode Megapodius nicobariensis Blyth (Volume 327)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219422.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46264</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219422</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Records and descriptions of Schoenoteninae from the British Museum (Lepidoptera, Tortricidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>After my 1960 synopsis of the peculiar subfamily Schoenoteninae from South Asia, I was able to bring together some additional material of these insects. In order not to postpone their identification too much, I intend to deal with diverse collections separately. The material collected by the Netherlands Stars Range Expedition, 1959, has been treated recently elsewhere (Diakonoff, 1972). The present pages deal with a part of the Schoenoteninae, picked out by me in 1972 from the vast collection of the unidentified material in the British Museum (Natural History) of London (BM). In total 21 species and one subspecies are recorded below, of which 10 species are described as new. I am grateful to the Trustees, to Dr. Klaus Sattler and Mr. C. Moreby, of that Museum, for the opportunity to study this material and for the permission to retain a few duplicates for the collection of the Leiden Museum (LM). The figures were made by Mr. A. C. M. van Dijk, The Hague. Rhabdotenes dacryta spec. nov. (fig. 1) ♀ 20 mm. Head white, vertex touched with grey. Palpus long; white, basal half of upper edge of median segment and entire upper edge of terminal segment grey. Thorax white. Abdomen snow-white. Fore wing with raised scale-tufts; rather broad, costa moderately curved at base, very gently so beyond base, apex obtusely pointed, termen almost straight, hardly concave, little oblique. White, finely marbled with pale fuscous-grey. Costa with ten blackish-grey dots, first spot alternating with minute marks, suffused; other well-defined, gradually becoming larger, paler and more vertical posteriorly, along apical half of costa: dentoid; three</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318925</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 275 - 294</dcterms:extent>
+   <dcterms:isPartOf>Records and descriptions of Schoenoteninae from the British Museum (Lepidoptera, Tortricidae) (URN:ISSN:0024-0672) (Volume 46) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318925.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150211</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318925</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

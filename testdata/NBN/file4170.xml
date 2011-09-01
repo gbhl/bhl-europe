@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Obn-monitoring van bijen in gebieden van Natuurmonumenten (Hymenoptera, Apidae s.l.)</dc:title>
+   <dc:creator>Nieuwenhuijsen H.</dc:creator>
+   <dc:creator>Reemer M.</dc:creator>
+   <dc:creator>Peeters T.</dc:creator>
+   <dc:creator>Smit J.</dc:creator>
+   <dc:creator>Eck, van A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:description>Obn-monitoring van bijen in gebieden van Natuurmonumenten (Hymenoptera, Apidae s.l.) Het Overlevingsplan Bos en Natuur (OBN) is ontwikkeld door het Ministerie van Landbouw, Natuur en Voedselkwaliteit om de effecten van verzuring, vermesting en verdroging in de Nederlandse natuur te verminderen. Op initiatief van Natuurmonumenten zijn in 2006 voor het eerst enkele inventarisaties van bijen uitgevoerd in het kader van het OBN. Dit gebeurde in de onderstaande vijf gebieden. Per terrein wordt de aangetroffen bijenfauna besproken en waar mogelijk vergeleken met gegevens uit eerdere jaren. Kort wordt ingegaan op de relatie tussen de bijenfauna en het beheer van het terrein, met name de geplande OBN-ingrepen. Leggelderveld (Drenthe) Het Leggelderveld is een gevarieerd terrein van circa 300 hectare, met droge en natte heide, schraalgrasland, veenputten en bos. Er vindt begrazing plaats door paarden, runderen en Drentse heideschapen. In het kader van het OBN zijn plagwerkzaamheden gepland in enkele delen van het terrein. In 2006 zijn hier 34 bijensoorten gevonden, waarvan vijf soorten van de Rode Lijst. Uit eerdere jaren zijn 26 soorten bekend uit het gebied. Het totale aantal bekende bijensoorten uit het Leggelderveld bedraagt 50. Het Leggelderveld kan als een rijk bijengebied beschouwd worden. Naar verwachting zullen de geplande maatregelen gunstig zijn voor de bijenfauna. Loonse en Drunense Duinen (Noord-Brabant) In de Loonse en Drunense Duinen richten de herstelmaatregelen in het kader van het OBN zich in in de eerste fase uitsluitend op het centrale stuifzandgedeelte (28, 4 hectare). In dit gedeelte zijn in 2006 34 soorten bijen aangetroffen (waaronder vier Rode-Lijstsoorten), waarmee het totale aantal uit dit gebied bekende bijen op 40 komt. Naar verwachting zullen de geplande OBN-maatregelen gunstig zijn voor de bijenfauna, omdat zij zich richten op het herstellen en behouden van het open karakter van het gebied. Een aandachtspunt hierbij zijn de groeiplaatsen van kruipwilg. Deze plant komt hier uitzonderlijk veel voor en is van groot belang voor bijen in het voorjaar. Oldenaller: Heihoef (Gelderland) Het terrein bestaat uit droge en natte heide, omringd door bos. In 2006 zijn 26 bijensoorten gevonden (waaronder drie Rode-Lijstsoorten), waarmee nu 30 soorten uit het gebied bekend zijn. Er zijn geen bijengegevens bekend uit het terrein van voor de plagwerkzaamheden, dus over het effect van de reeds uitgevoerde maatregelen op de bijenfauna kan alleen gespeculeerd worden. Er worden enkele aanbevelingen gegeven die de bijenfauna ten gunste zullen komen. Steenbergerveld (Drenthe) Het Steenbergerveld bestaat uit droge heide met vennen. Het terrein wordt begraasd door runderen en in het kader van het OBN zijn plagwerkzaamheden gepland. In 2006 zijn hier 19 soorten bijen aangetroffen, waarvan twee Rode-Lijstsoorten. Het gebied is niet rijk aan bijen. De geplande plagwerkzaamheden kunnen hier verandering in aanbrengen, mits hierbij enig reliëf in de bodem ontstaat. Nationaal Park Zuid-Kennemerland (Noord-Holland) In 2006 zijn in Nationaal Park Zuid-Kennemerland 35 soorten bijen aangetroffen. In 1999 en 2000 is dit gebied ook geïnventariseerd, waardoor een goede vergelijking mogelijk is. Het meest opvallende resultaat is de vondst van de gouden slakkenhuisbij en het zilveren fluitje op drie verschillende plekken, terwijl deze soorten in 1999 en 2000 niet in het gebied gevonden zijn. Of er een verband is tussen het opduiken van deze bijzondere bijen en het begrazingsbeheer is niet zeker. Het feit dat de bloemenrijkdom in sommige terreindelen groter is, hangt vermoedelijk wel met de begrazing samen.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220049</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>37</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220049.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46552</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220049</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

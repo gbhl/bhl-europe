@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Chitinous palynomorphs and palynodebris representing crustacean exoskeleton remains from sediments of the Banda Sea (Indonesia)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Waveren, van I.M.</dc:creator>
+   <dc:subject>Paleobotanie, palynologie</dc:subject>
+   <dc:description>Palynological residues from surface sediments in the Banda Sea (Indonesia) are characterised by the presence of chitinous palynomorph types that can be correlated with exoskeletons of crustaceans, notably calanoid copepods. A series of 27 palynomorph types are described and informally categorised. Also the quantitatively prominent transparent palynodebris and its diffuse degradation products are derived from crustaceans. Selective preservation of the chitinous remains is considered to be related to the effects of high plankton production and high sedimentation rate.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317511</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 25</dcterms:extent>
+   <dcterms:isPartOf>Chitinous palynomorphs and palynodebris representing crustacean exoskeleton remains from sediments of the Banda Sea (Indonesia) (URN:ISSN:0357-7587) (Volume 105)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317511.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148797</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317511</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Johann Jacob Scheuchzer (1672-1733) und die Alpenerforschung in der Schweiz – aus den Beständen der Eisenbibliothek</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Bouheiry A.</dc:creator>
+   <dc:subject>Ertsgeologie</dc:subject>
+   <dc:subject>Iron Libray</dc:subject>
+   <dc:subject>Scheuchzer</dc:subject>
+   <dc:subject>Alpine geology</dc:subject>
+   <dc:subject>metals</dc:subject>
+   <dc:description>A short introduction provides some information about the Iron Library, a foundation of Georg Fischer Ltd, at Schaffhausen, which was established in 1949, to enable scientists and students the study of its historic collection, which is mainly concentrated on mining and metals, but includes all other related fields. Some outstanding details about the collection will be presented. The main topic of the contribution will be the research of Johann Jacob Scheuchzer (1672-1733) in the Swiss Alps. His research interests were similar to those of the well known universal scientist Conrad Gessner (1516-1565) and Johann Jakob Wagner (1641-1695), considered to be pioneers of the Alpine research in Switzerland. It is followed by biographical statements about Johann Jacob Scheuchzer and some comments about the recognition he has found in scientific circles. Furthermore, his theories about the history of the earth and the diluvium will be mentioned as well as his scientific error in the misclassification of the „Homo diluvii testis“, which has to be regarded under the aspect of the theological views about cosmology in the 17th and 18th century. More detailed is the information about the research in the Alps and the geological studies during his different expeditions, which Scheuchzer has described in his main work, „Naturgeschichte des Schweizerlandes“, published at the end of the 17th and the beginning of the 18th centuries. Special attention will be given to Scheuchzer’s observations about ore deposits and the production of gold, silver, iron, copper, lead, tin, and brass. Der Beitrag beginnt mit einer kurzen Einführung über die Eisenbibliothek, einer Stiftung der Georg Fischer AG, Schaffhausen, die 1949 gegründet wurde, um Wissenschaftlern und Studenten die unentgeltliche Forschung auf dem Gebiet des Montanwesens zu ermöglichen. Es folgen Angaben über die verschiedenen Sammelschwerpunkte und den Bestand. Dem Zentralthema, der Forschungstätigkeit Johann Jacob Scheuchzers (1672-1733) im schweizerischen Alpenraum, wird eine kurze Würdigung des Universalgelehrten Conrad Gessner (1516-1565), den eigentlichen Wegbereiter für die Alpenerforschung in der Schweiz, vorangestellt. Es folgen biographische Angaben über den Werdegang Johann Jacob Scheuchzers, seine Bedeutung in wissenschaftlichen Kreisen und über seine Theorien bezüglich der Erdgeschichte und der Sintflut. Der wissenschaftliche Irrtum Scheuchzers bezüglich des „Homo diluvii testis“ wird erwähnt, ferner, dass die Forschungstätigkeit Scheuchzers noch im Weltbild des 17. und 18. Jahrhunderts zu betrachten ist. Ausführlicher werden Scheuchzers Forschungsreisen und geologischen Studien in der Naturgeschichte des Schweizerlandes behandelt, die der Eisenbibliothek in drei inhaltlich voneinander abweichenden Ausgaben vorliegt. Den Erzvorkommen und der Metallgewinnung von Gold, Silber, Eisen, Kupfer, Blei, Zinn und Messing werden besondere Aufmerksamkeit geschenkt.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215372</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 25 - 34</dcterms:extent>
+   <dcterms:isPartOf>Johann Jacob Scheuchzer (1672-1733) und die Alpenerforschung in der Schweiz – aus den Beständen der Eisenbibliothek (URN:ISSN:09224564) (Volume 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215372.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43774</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215372</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Herpetozoa 10_1_2 (1997)</dc:title>
+   <dc:creator>Capula  Massimo, Filippi  Ernesto, Foufopoulos  Johannes, Gemel  Richard, Kuzmin  Sergius L., Luiselli  Luca M., Rödel  Mark-Oliver, Rugiero  Lorenzo, Schmidtler  Josef Friedrich, Schwarzer  Udo, Trujillo Jesus  Veronica, Vogrin  Nusa</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Johannes Foufopoulos: The reptile fauna of the Northern Dodecanese (Aegean Islands, Greece).     3-   12. Udo Schwarzer: Freilandbeobachtungen an der Kapuzennatter, Macroprotodon cucullatus ibericus Busack &amp; McCoy, 1990 in Südwest Portugal (Squamata: Serpentes: Colubridae).    13-   21. Mark-Oliver Rödel: Lebensräume und Entwicklung junger Starrbrust-Pelomedusen Pelomedusa subrufa olivacea (Schweigger, 1812) im Comoé-Nationalpark, Elfenbeinküste (Testudines: Pelomedusidae).    23-   33. Josef Friedrich Schmidtler: Die Ablepharus kitaibelii - Gruppe in Süd-Anatolien und benachbarten Gebieten (Squamata: Sauria: Scinidae).    35-   63. Massimo Capula, Ernesto Filippi, Luca M. Luiselli, Veronica Trujillo Jesus: The ecology of the Western Whip Snake, Coluber viridiflavus (Lacépède, 1789), in Mediterranean Central Italy (Squamata: Serpentes: Colubridae).    65-   79. Lorenzo Rugiero: On the ecology and phenology of Chalcides chalcides (Linnaeus, 1758) in Central Italy (Squamata: Sauria: Scinidae).    81-   84. Nusa Vogrin: On the herpetofauna of Lake Vrana and its vicinity (Dalmacia, Croatia) (Amphibia, Reptilia).    85-   88. Nusa Vogrin: A new record of the Common Spadefoot Pelobates fuscus fuscus (Laurenti, 1768), in Slovenia (Anura: Pelobatidae).    89-   90. Richard Gemel: Langjährige Gefangenschaftshaltung einer Breitrandschildkröte, Testudo marginata Schoepf, 1792 (Testudines: Testudinidae).    91-   92. Sergius L. Kuzmin: Advances in Amphibian Research in the Former Soviet Union. A new journal.    93-   94</dc:description>
+   <dc:date>1997</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27072.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27072.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27072</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

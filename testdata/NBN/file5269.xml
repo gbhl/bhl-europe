@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on the land molluscs of Zululand</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>CONTENTS Ι. Introduction.................. 3 2. Acknowledgements................ 5 3. Revision of the genus Metachatina............ 6 4. Land molluscs of the Mkuzi and Ndumu Game Reserves...... 20 4a. Topography, climate and vegetation........... 21 4b. Systematic list................ 23 4c. Notes on ecology............... 53 5. Other new records for Zululand............ 53 6. The distribution of land molluscs in Zululand......... 71 7. The distribution of land molluscs in Southern Africa....... 76 7a. The country (topography, climate, vegetation)........ 77 7b. Composition of the fauna............. 82 7c. The endemic genera and their species.......... 88 7d. The temperate element.............. 100 7e. The tropical element.............. 102 7f. Distributional history.............. 104 8. Systematic list of families, genera and subgenera........ 108 9. Summary................... 109 10. References.................. 111 11. Index to genera and subgenera of molluscs.......... 115 1. INTRODUCTION The fauna and flora of Zululand, situated in South Africa to the southeast of Swaziland, are of particular interest to the biogeographer. To the north the area is connected with the East African lowlands through the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317774</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 116</dcterms:extent>
+   <dcterms:isPartOf>Studies on the land molluscs of Zululand (URN:ISSN:0024-1652) (Volume 103) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317774.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149060</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317774</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

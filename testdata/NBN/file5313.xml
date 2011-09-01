@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some hydroids (Cnidaria: Hydrozoa) from the Mid-Atlantic Ridge, in the North Atlantic Ocean</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Calder D.R.</dc:creator>
+   <dc:creator>Vervoort W.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Cnidaria; Hydrozoa; Hydroida; Mid-Atlantic Ridge; deep water fauna; hydrothermalism.</dc:subject>
+   <dc:description>An account is given of some hydroids from the Mid-Atlantic Ridge, collected during dives of submersibles "Nautile" (operated by IFREMER, France) and "Alvin" (operated by Woods Hole Oceanographic Institution, U.S.A). The specimens came from three main sectors of the ridge: 15 species from localities near hydrothermal fields (540-1727 m) SW of the Azores, five species from an area (2565-3902 m) west of the Cape Verde Islands near Researcher Ridge, and one species from a site (4529-4578 m) within the Vema Fracture zone west of Guinea Bissau. In all, 21 species were distinguished, comprising two anthoathecates and 19 leptothecates. The families Lafoeidae and Sertulariidae were best represented, with six and four species respectively. Halecium profundum spec. nov., from the vicinity of Researcher Ridge, and Zygophylax echinata spec, nov., from the Menez Gwen hydrothermal field area south-west of the Azores, are described. Cladocarpus cartieri was discovered, for just the second time, at another station near the Menez Gwen field. The fauna was comprised largely of deep-water species. However, some eurybathic boreal species frequent in the neritic zone (e.g. Grammaria abietina, Diphasia margareta, Sertularella tenella, Nemertesia antennina, N. ramosa) were represented at certain stations near the Azores. Also present at one of these stations was the typically shallow-water boreal athecate, Ectopleura larynx. Six of the species (Eudendrium planum, Halecium profundum, spec, nov., Acryptolaria longitheca, Cryptolarella abyssicola, Zygophylax levinseni, and ?Opercularella spec.) were recorded from depths of 3000 m or more. The only species in samples from depths exceeding 4000 m was Cryptolarella abyssicola. None of the species is known to have a medusa stage in its life cycle.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317818</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1998</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 65</dcterms:extent>
+   <dcterms:isPartOf>Some hydroids (Cnidaria: Hydrozoa) from the Mid-Atlantic Ridge, in the North Atlantic Ocean (URN:ISSN:0024-1652) (Volume 319) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317818.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149104</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317818</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

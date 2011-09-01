@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new classification of the Xanthoidea sensu lato (Crustacea: Decapoda: Brachyura) based on phylogenetic analysis and traditional systematics and evaluation of all fossil Xanthoidea sensu lato</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Karasawa H.</dc:creator>
+   <dc:creator>Schweitzer C.E.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Brachyura</dc:subject>
+   <dc:subject>Xanthoidea</dc:subject>
+   <dc:subject>Portunidae</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>phylogeny</dc:subject>
+   <dc:description>A phylogenetic analysis was conducted including representatives from all recognized extant and extinct families of the Xanthoidea sensu lato, resulting in one new family, Hypothalassiidae. Four xanthoid families are elevated to superfamily status, resulting in Carpilioidea, Pilumnoidoidea, Eriphioidea, Progeryonoidea, and Goneplacoidea, and numerous subfamilies are elevated to family status. The Mathildellidae is moved from the Goneplacidae to the Portunoidea. Diagnoses for all superfamilies and families discussed herein are provided, embracing characters typically used by biologists as well as readily fossilized features of the dorsal carapace, sternum, abdomen, and chelipeds. All genera known from the fossil record at one time referred to the Xanthidae sensu lato, Xanthoidea sensu lato, or Goneplacidae sensu lato were evaluated as to their family level placement and as a result, the family-level placement of many of these genera has been changed herein. Balcacarcinus new substitute name, is provided herein for Bittneria Schweitzer and Karasawa, 2004.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210768</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 23 - 73</dcterms:extent>
+   <dcterms:isPartOf>A new classification of the Xanthoidea sensu lato (Crustacea: Decapoda: Brachyura) based on phylogenetic analysis and traditional systematics and evaluation of all fossil Xanthoidea sensu lato (URN:ISSN:13834517) (Volume 75, 1/2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210768.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42138</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210768</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

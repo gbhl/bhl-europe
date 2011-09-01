@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of a new genus of Doryctinae wasps (Hymenoptera: Braconidae) from Brazil</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gomes S.A.G.</dc:creator>
+   <dc:creator>Penteado-Dias A.M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Doryctinae</dc:subject>
+   <dc:subject>Lianus</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>Brazil</dc:subject>
+   <dc:description>The new genus Lianus of subfamily Doryctinae (Hymenoptera: Braconidae) is described and illustrated. The differences from other genera of Doryctinae are discussed. Both included species originate from the Atlantic forest at Campos do Jordão, São Paulo State, Brazil.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:198488</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 81 - 85</dcterms:extent>
+   <dcterms:isPartOf>Description of a new genus of Doryctinae wasps (Hymenoptera: Braconidae) from Brazil (URN:ISSN:0024-0672) (Volume 80-4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/198488.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/38061</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/198488</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

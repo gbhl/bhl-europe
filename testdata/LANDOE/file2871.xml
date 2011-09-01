@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 33_2 (1994)</dc:title>
+   <dc:creator>Abd-Alla  Mohamed H., Baldan  Barbara, Bavcon  Joze, Bonaldo
+Bonaldo  Antonella, Büch  Karen, Christodoulakis  Dimitrios, Corsi  Gabriella, Druscovic  Blanka, Ebermann  Robert, Floris  Carlo, Gastaldo  Paola, Huber  Gundula, Klein  Erich, Mariani  Paola, Meletti  Paolo, Melzheimer  Volker, Papes  Drazena, Profumo  Paola, Rascio  Nicoletta, Reiner  Helmut, Riggio Bevilacqua  Letizia, Sauer  Wilhelm, Spano  Carmelina, Stocker-Wörgötter  Elfie, Teppner  Herwig, Türk  Roman, Ulrich  Robert, Voss  Wolf-Rüdiger, Wolkinger  Franz, Zlinska  Janka</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herwig Teppner, Erich Klein: Nigritella gabasiana spec. nova, N. nigra subsp. iberica subsp. nova (Orchidaceae-Orchideae) und deren Embryologie.   179-  209. Herwig Teppner: Recensio.   209-  210. Helmut Reiner, Robert Ebermann: Nachweis der Myrosinase (ß-Thioglucosidase) heimischer Brassicaceae unter Verwendung der Elektrophorese und der Eisen (II)-Schwefel-Detektion.   211-  219. Gabriella Corsi: The stringing hair of Urtica membranacea POIRET (Urticaceae), III. Nuclear structure and DNA content.   221-  229. Herwig Teppner: Recensiones.   229-  230. Volker Melzheimer, Robert Ulrich: Silene fabaria (L.) SM. (Caryophyllaceae), neu für die Flora von Kreta.   231-  236. Carmelina Spano, Paolo Meletti, Carlo Floris: Growth and Germination Inhibitors in Durum Wheat Mature Grain Endosperms.   237-  248. Mohamed H. Abd-Alla: Some phenolic Compounds Enhance Nodulation and Nitrogen Fixation of Soybean / Bradyrhizobium japonicum System.   249-  256. Antonella Bonaldo
+Bonaldo, Barbara Baldan, Nicoletta Rascio, Paola Mariani, Paola Gastaldo, Paola Profumo, Letizia Riggio Bevilacqua: Ultrastructural Characterization of Seet Coat Maturation in Cercis Sliiquatrum L.   257-  265. Joze Bavcon, Blanka Druscovic, Drazena Papes: Germination of Seeds and Cytogenetic Analysis of the Spruce in Differently Polluted Areas of Slovenia.   267-  277. Franz Wolkinger: Recensio.   278. Wolf-Rüdiger Voss, Karen Büch, Wilhelm Sauer: Computergesteuerte Karyotyp- Analyse mittels des PC-Programmes "CHROMEX".   279-  288. Dimitrios Christodoulakis: Linum phitosianum spec. nova (Linaceae) aus Griechenland.   289-  294. Janka Zlinska: Das Juncetum subnodulosi W. Koch 1926 in der Slowakei.   295-  303. Gundula Huber, Elfie Stocker-Wörgötter, Roman Türk: Die Kultivierung des Mycobionten von Xanthoria parietina (L.) TH. FR. auf unterschiedlichen Kulturmedien.   305-  319. Herwig Teppner: Recensio.   320-  322</dc:description>
+   <dc:date>1994</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30217.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30217.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30217</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

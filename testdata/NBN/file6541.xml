@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Loricata (Mollusca) 11-14</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kaas P.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Mollusca; Loricata; new species; new synonyms; Leptochiton; Loricella; Ischnochiton (Stenosemus); South Africa; Mediterranean</dc:subject>
+   <dc:description>Four new species of chitons (Mollusca, Polyplacophora) are described, viz Leptochiton (L.) dispersus and L. (L.) permodestus from Transkei, L. (L.) meiringae from the eastern Cape Province, S Africa (note 11) and Ischnochiton (Stenosemus) vanbellei from the Mediterranean Sea (note 14). New records are given for little known species, such as Leptochiton (L.) chariessa (Barnard, 1963) (note 11), Ischnochiton (I.) obtusus Carpenter in Pilsbry, 1893 (note 12), Leptochiton (L.) lineatus (Nierstrasz, 1905), L. (L.) rissoi (Nierstrasz, 1905), Loricella oviformis (Nierstrasz, 1905), and Placiphorella albitestae Is. Taki, 1954 (note 13). New synonyms: Squamophora Nierstrasz, 1905, and Componochiton Milne, 1963 = Loricella Pilsbry, 1893; Paricoplax profundior Dell, 1956, and Componochiton raceki Milne, 1963, are junior objective synonyms of Loricella oviformis (Nierstrasz, 1905) (note 13).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319046</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1985</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 299 - 320</dcterms:extent>
+   <dcterms:isPartOf>Notes on Loricata (Mollusca) 11-14 (URN:ISSN:0024-0672) (Volume 59) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319046.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150332</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319046</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

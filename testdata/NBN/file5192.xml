@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Genus Hybosorus Macleay (Coleoptera: Scarabaeidae, Hybosorinae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Kuijten P.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>A taxonomic revision of the scarabaeoid genus Hybosorus is given, including descriptions, nomenclatorial notes, figures of genital apparatus and other relevant parts, a key, and notes on distribution and bionomics. Lectotypes are designated for Hybosorus carolinus LeConte, H. crassus Klug, H. nitidus Lansberge, H. pinguis Westwood, H. roei Westwood, and Hybosoroides alluaudi Benderitter. Hybosorus arator (Illiger), H. carolinus LeConte, H. nitidus Lansberge (nov. syn.), H. illigeri var. nossibianus Fairmaire, H. pinguis Westwood, H. roei Westwood, H. arator subsp. arator (Illiger) sensu Endrödi, 1957 (nov. syn.) and H. arator subsp. palearcticus Endrödi (nov. syn.) are considered synonyms of H. illigeri Reiche. Problems concerning the type-species and some dubious names are discussed. Arguments are given for Hybosorus oblongus Dahlbom, H. pinguis Westwood, H. roei Westwood and H. carolinus LeConte being nomina oblita. Hybosorus laportei Westwood is considered a valid species and H. thoracicus Westwood a synonym of H. laportei (nov. syn.). Both were currently considered synonyms of H. illigeri Reiche. A new genus, Seleucosorus, is erected for Hybosorus punctatissimus Reiche. Hybosoroides alluaudi Benderitter, due to its close similarity to Hybosorus, is included in this revision. Hybosorus laeviceps Fairmaire is considered a synonym of H. baliensis Brancsik. Removed from Hybosorus are H. curtulus Fairmaire, being a Melolonthine, and H incultus Péringuey, being an Orphnine.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317697</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 49</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Genus Hybosorus Macleay (Coleoptera: Scarabaeidae, Hybosorinae) (URN:ISSN:0024-1652) (Volume 203) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317697.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148983</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317697</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 121 (1983)</dc:title>
+   <dc:creator>Ahnelt  Peter, Englmaier  Peter, Festetics  Antal, Fiedler  Walter, Fischer  Maximilian, Geerdes  Bert, Kartusch  Robert, Lödl  Martin, Maier  Rudolf, Moll  Gert, Pass  Günther, Polatschek  Adolf, Ricek  Erich W., Sänger  Karl, Schiemer  Fritz, Schindler  Helmut, Spitzer  Gerhard, Tunner  Heinz, Weber  Anton, Wegensteiner  Rudolf, Wendelberger  Gustav, Wündsch  Leopold</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gert Moll, Bert Geerdes: Waldgesellschaften der Hainburger Berge und angrenzender Gebiete (Niederösterreich)     5-   37. Martin Lödl: Beitrag zur Macroheteroceren-Fauna des Spitzberges (östliches Niederösterreich)    39-   43. Rudolf Wegensteiner: Erfassung mikroklimatischer Parameter im Randgehänge des Vorderen Rotmooses (Lunz am See, Niederösterreich)    45-   56. Erich W. Ricek: Das Egelseemoor bei Misling imAttergau (Oberösterreich)    57-   73. Adolf Polatschek: Salix laggeri WIMM. Und Salix mielichhoferi SAUT.: Ihre verbreitung in Österreich und angrenzenden Gebieten    75-   79. Gustav Wendelberger: Crambe tataria- Zur Etymologie des Artnamens    81-   82. Maximilian Fischer: Taxonomische Untersuchung der Gattungen Harpagolacus ENDERLEIN, Rhaconotinus HEDQVIST und Doryctosoma PICARD und ihre einordnung in das System der Doryctini (Hymenoptera, Braconidae, Doryctinae)    83-   94. Gerhard Spitzer: Zum Verteilungsbild des Mäusebussards (Buteo buteo) in der Landschaft    95-  102. Gerhard Spitzer: Zur Bedeutung der Situation des Horstbaumes für den Aufzuchtserfolg beimMäusebussard (Buteo buteo)   103-  114. Gustav Wendelberger: Aus der Gesellschaft: Unsere Bibliothek- Wege und Irrwege einer Bibliothek   115-  118. Gustav Wendelberger: Univ.Prof.Dr. Fritz Knoll +   119-  120. Helmut Schindler, Robert Kartusch, Leopold Wündsch, Peter Ahnelt, Karl Sänger, Günther Pass, Heinz Tunner, Gerhard Spitzer, Fritz Schiemer, Gustav Wendelberger, Anton Weber, Peter Englmaier, Rudolf Maier, Walter Fiedler, Antal Festetics: Buchbesprechungen   121-  135</dc:description>
+   <dc:date>1983</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24522.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24522.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24522</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

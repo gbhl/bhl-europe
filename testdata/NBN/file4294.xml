@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Taxonomy and distribution of the Trifurcula (Glaucolepis) raikhonae group (Lepidoptera: Nepticulidae)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Purplesis R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera</dc:subject>
+   <dc:subject>Trifurcula (Glaucolepis)</dc:subject>
+   <dc:subject>Palaearctic region</dc:subject>
+   <dc:subject>Distribution &amp; systematics</dc:subject>
+   <dc:subject>Invertebrates</dc:subject>
+   <dc:subject>Arthropods</dc:subject>
+   <dc:subject>Insects</dc:subject>
+   <dc:subject>Lepidopterans</dc:subject>
+   <dc:subject>Nepticulidae</dc:subject>
+   <dc:subject>Turkmenia</dc:subject>
+   <dc:subject>Afghanistan</dc:subject>
+   <dc:subject>Uzbekistan</dc:subject>
+   <dc:subject>Kazakhstan</dc:subject>
+   <dc:subject>Kirgistan</dc:subject>
+   <dc:subject>Tadzhikistan</dc:subject>
+   <dc:subject>China</dc:subject>
+   <dc:subject>Spain</dc:subject>
+   <dc:subject>France</dc:subject>
+   <dc:subject>Italy</dc:subject>
+   <dc:subject>Sardinia</dc:subject>
+   <dc:subject>Austria</dc:subject>
+   <dc:subject>Slovakia</dc:subject>
+   <dc:subject>Hungary</dc:subject>
+   <dc:subject>Croatia</dc:subject>
+   <dc:subject>Turkey</dc:subject>
+   <dc:subject>Ukraine</dc:subject>
+   <dc:subject>Crimea</dc:subject>
+   <dc:subject>Armenia</dc:subject>
+   <dc:subject>Glaucolepis melanoptera</dc:subject>
+   <dc:description>Trifurcula (Glaucolepis) melanoptera sp. n. is described from southern Europe, where it is widespread. It is closely related to the Central Asian T. (Glaucolepis) raikhonae Puplesis, which is redescribed. Together they form the raikhonae species group. Sinopticula Yang is here synonymized with Glaucolepis Braun, its only species S. sinica Yang is tentatively regarded as closely related, if not conspecific with T. raikhonae. The distribution is mapped. On the basis of recent Chinese findings the larvae are assumed to be gall-makers on Prunus branches. Some phylogenetic and biogeographic remarks are given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227699</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1991</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 201 - 210</dcterms:extent>
+   <dcterms:isPartOf>Taxonomy and distribution of the Trifurcula (Glaucolepis) raikhonae group (Lepidoptera: Nepticulidae) (URN:ISSN:00407496) (Volume 134, 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227699.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50402</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227699</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

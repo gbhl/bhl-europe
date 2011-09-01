@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 93B (1992)</dc:title>
+   <dc:creator>Beck  Lothar A., Darevsky  Ilja S., Dworschak  Peter C., Eiselt  Josef, Fischer  Maximilian, Jedryczkowski  Wojciech B., Kritscher  Erich, Malicky  Hans, Mandl  Karl, Peter  Roland, Pucher  Erich, Sattmann  Helmut, Schifter  Herbert, Schmidtler  Josef Friedrich, Zapparoli  Marzio, Zerche  Lothar</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Eiselt, Ilja S. Darevsky, Josef Friedrich Schmidtler: Untersuchungen an Felseidechsen (Lacerta saxicola - Komplex</dc:description>
+   <dc:description>Reptilia: Lacertidae) in der östlichen Türkei. 1. Lacerta valentini Boettger.     1-   18. Erich Pucher: Das bronzezeitliche Pferdeskelett von Unterhautzenthal, P.B. Korneuburg (Niederösterreich), sowie Bemerkungen zu einigen anderen Funden "früher" Pferde in Österreich.    19-   39. Herbert Schifter: Die Vögel aus dem Nachlaß Ferdinand Lucas Bauer im Naturhistorischen Museum Wien und die darunter befindlichen Typen.    41-   57. Karl Mandl: Ein Beitrag zur Kenntnis einiger Chlaeniinae-(Callistinae-)-Formen aus der paläarktischen und der orientalischen Region. (Zugleich zweite Ausw.der vom Nat. Mus. in Wien erw. Chlaeniinae-Spezialsammlung Ernst Grundmanns) (Carab., Col.)    59-  103. Lothar Zerche: Zur Taxonomie, Phylogenie und Verbreitung der Hygrogeus-Gruppe Mittel- und Zentralasiens (Coleoptera: Staphylinidae: Omaliinae).   105-  142. Hans Malicky: Köcherfliegen (Insecta: Trichoptera) von den Seychellen, Komoren und Maskarenen.   143-  160. Marzio Zapparoli: Note su tassonomia, corologia ed ecologia di Lithobius peregrinus Latzel, 1880 (Chilopoda: Lithobiomorpha).   161-  179. Wojciech B. Jedryczkowski: The genus Aperittochelifer Beier, 1955, with description of a new species from South Africa (Arachnida: Pseudoscorpiones).   181-  184. Erich Kritscher: Erstnachweis von Skorpionen auf den Maltesischen Inseln. Euscorpius carpathicus candiota (Birula, 1903) (Arachn.: Scorp.: Chactidae) auf Malta und Gozo.   185-  188. Peter C. Dworschak: The Thalassinidea in the Museum of Natural History, Vienna</dc:description>
+   <dc:description>with remarks on the biology of the species.   189-  238. Helmut Sattmann: Bemerkenswerte Heliciden-Funde aus Tunesien (Gastropoda: Helicidae).   239-  242. Lothar A. Beck: Symmetromphalus hageni sp.n., a new neomphalid gastropod (Prosobranchia: Neomphalidae) from hydrothermal vents at the Manus Back-Arc Basin (Bismarck Sea, Papua New Guinea).   243-  257. Lothar A. Beck: Two new neritacean limpets (Gastropoda: Prosobranchia: Neritacea: Phenacolepadidae) from active hydrothermal vents at Hydrothermal Field 1 "Wienerwald" in the Manus Back-Arc Basin (Bismarck Sea, Papua-New Guinea).   259-  275. Roland Peter: Universitätsprofessor Dr. Ferdinand Starmühlner zum 65. Geburtstag.   277-  291. Maximilian Fischer: Richard Imb zum Gedenken.   293-  294</dc:description>
+   <dc:date>1992</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27025.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27025.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27025</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

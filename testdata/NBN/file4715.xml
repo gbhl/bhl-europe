@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De mariene Isopode Cymodoce truncata Leach, 1814, in Nederland gevonden</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Op ι januari 1962 vonden de heren G. Heerebout en B. Smulders op het strand van Oranjezon, Walcheren, een aangespoelde glazen drijver. Tussen het door teer bevuilde touwwerk van deze drijver werd een kleine pissebed aangetroffen, die bij determinatie een wijfje bleek te zijn van Cymodoce truncata Leach, een soort die nog niet eerder van ons land vermeld is. Deze soort behoort tot de familie Sphaeromatidae. De mannetjes van Cymodoce truncata (fig. ia) zijn onmiddellijk te herkennen aan het telson, dat in drie duidelijke brede tanden eindigt en op de bovenzijde 2 grote tanden draagt. De wijfjes gelijken meer op Sphaeroma, maar ook hier is de achterrand van het telson drie-tandig, hoewel de middelste tand in dorsaal aanzicht (fig. ib) de twee zijtanden bedekt. De uitstekende mediane tand onderscheidt de soort evenwel onmiddellijk van de Nederlandse Sphaeroma soorten. Cymodoce truncata heeft een grote verspreiding. De soort is bekend van de Middellandse Zee, de Azoren, Marokko en van de Atlantische kust van Europa noordwaarts tot het Kanaal. In Groot Brittannië is de soort bekend van de zuid- en westkust (van het eiland Wight tot aan de Shetland Eilanden), terwijl zij ook aan de kusten van Ierland aangetroffen is. Uit de Noordzee was de soort nog niet bekend. Het lijkt zeer waarschijnlijk dat het Nederlandse exemplaar uit het Kanaal afkomstig is en hier door stromingen op zijn glazen drijver heen gedreven is. Sinds de publicatie in 1956 van het Isopoden deel van de serie Fauna van Nederland (Holthuis, 1956) is een aantal isopoden soorten in of bij Nederland gevonden, die nog niet eerder van ons land vermeld waren. Deze soorten zijn:</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317219</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 65 - 67</dcterms:extent>
+   <dcterms:isPartOf>De mariene Isopode Cymodoce truncata Leach, 1814, in Nederland gevonden (URN:ISSN:0459-1801) (Volume 17) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317219.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148505</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317219</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

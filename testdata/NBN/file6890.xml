@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Parartemia zietziana Sayce (Crustacea Phyllopoda)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kuenen D.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>On his journey to Australia, Prof. Dr. L. G. M. Baas Becking collected several specimens of Parartemia zietziana, which he kindly handed over to me for further examination. As it is a very little known species, the few details given below may add to our somewhat scanty knowledge. Sayce described this species in 1903, creating a new genus to receive it, and his material consisted of about 20 ♂ ♂ and only 1 ♀ (Sayce, 1903, p. 231 sqq.) The locality is given as "brackish-water swamp near Lake Alexandrina, South Australia". The only further reference I have been able to find was when Calman (1913) identified a few Phyllopoda "not unlike Artemia" as this species. They were collected from salt-works near Geelong, Victoria, and were said to die at a concentration of 7°—8° B. (s.g. ± 1.055). The material of Baas Becking consists of the following: "Port Price 1" (26 III '36), 69 ♂♂, 39 ♀♀, 77 juv. "Port Price 2" (26 III '36), 35 ♂♂, 35 ♀♀, great many juv. Lake Voigt (26 III '36), 37 ♂♂, 4 ♀♀, 2 juv. "Port Price" is a salt-work, which derives its water from the sea. It is situated on the East coast of Yorke Peninsula, near the top of Bay St. Vincent. P.P. 1: Gipsum pond, concentration about 23 % total salt. Temp. 27° C. P.P. 2: Pickle pond, concentration 16 % total salt. Lake Voigt lies near the South end of the East coast of Yorke, about 6 km inland. The specimens were taken from a ditch (where there was great abundance of Dunaliella viridis and D. salina). Concentration about 5 % total salt, temp. 16° C.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319395</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 58 - 60</dcterms:extent>
+   <dcterms:isPartOf>On Parartemia zietziana Sayce (Crustacea Phyllopoda) (URN:ISSN:0024-0672) (Volume 20) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319395.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150681</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319395</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

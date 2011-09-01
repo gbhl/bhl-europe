@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New records of Marine Turbellaria from Norway</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Velde, van der G.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>INTRODUCTION During an excursion to Norway organized by the Department of Systematic Zoology of the Rijksuniversiteit of Leiden in August 1973, I had the opportunity to make some observations on Turbellarians of salt-marshes and rocky shores of the Trondheimsfjord (63o 37' N 9° 43' Ε) and the Stjörnfjord (63o 47' Ν 10° 7' Ε), a fjord connected with the Trondheimsfjord. MATERIAL AND METHODS The greater triclad flatworms were mainly collected by turning stones on the salt-marshes and rocky shores. On the salt-marshes soil samples were taken. Each sample covered an area of 25 cm2 and was 3 cm thick. For obtaining the animals the soil samples were put in a jar filled with sea water. Lack of oxygen, due to decay of the vegetable matter, and the light of a lamp make the animals creep or swim to the water surface. They can then be captured by means of a pipette. LIST OF SPECIES Neorhabdocoela Placorhynchus octaculeatus octaculeatus Karling, 1931 In a salt-marsh near Selva on the Trondheimsfjord one specimen was found together with Uteriporus vulgaris, Proxenetes deltoides and P. unidentatus in a Juncetum gerardii vegetation (sensu Beeftink, 1965), with the phanerogams Juncus gerardii, Glaux maritima, Triglochin maritima and Scirpus rufus. The algal mat covered 100% and consisted mainly of Vaucheria coronata, Vaucheria intermedia, and many blue-green and green algae. The species has a wide distribution along the European coasts (Karling,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318579</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 293 - 298</dcterms:extent>
+   <dcterms:isPartOf>New records of Marine Turbellaria from Norway (URN:ISSN:0024-0672) (Volume 49) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318579.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149865</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318579</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

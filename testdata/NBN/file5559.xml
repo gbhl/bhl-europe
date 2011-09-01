@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De Heterocera van Sumatra VI</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eecke, van R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Fam. 8: LASIOCAMPIDAE. Lasiocampidae, Hampson, Faun. Br. Ind. I, p. 402, (1892). Grünberg, Seitz, Grossschm. d. Erde X, p. 391, (1914). Meest groote, sterke, ruige vlinders met bruine vleugelteekening. Palpen dik behaard, groot, vooruitstekend; zuiger niet ontwikkeld; oogen vrij klein; antennen tamelijk lang dubbel gekamd bij beide sexen. De pooten gewoonlijk met slechts kleine terminale paren sporen en sterk behaard. Het voorhoofd en de thorax in den regel sterk behaard. Het aderstelsel sterk, vrij constant; in den voorvleugel zijn de aderen 1a en 1b niet met elkaar gevorkt, 1c zeer zelden aanwezig; de cel klein met sterke discocellularis; de aderen 6 en 7 vanaf den bovenhoek, 9 en 10 steeds gesteeld. De achtervleugel met 2 anale aderen; 6 en 7 dicht bij de basis ontspringend; 8 gekromd en dikwijls 7 rakend of daarmede door een klein dwarsadertje verbonden, waardoor een praecostale cel ontstaat; accessorische adertjes doorgaans ontwikkeld. Frenulum afwezig. De rupsen zijn sterk behaard, met eigenaardige laterale haren aan de eerste segmenten en vaak ook met dorsale haarbosjes op de voorste segmenten. De haren beschermen door hunne mechanische en chemische werking de rups zoowel als de pop, want de haren worden in het spinsel ingeweven. De ♀♀ vliegen zeer weinig en houden zich meest verborgen, terwijl de ♂♂ zeer bewegelijk kunnen zijn. Sterk sexueel dimorphisme komt ook bij deze familie voor, evenals sterk verschil in grootte bij exemplaren van dezelfde soort. Enkele soorten vliegen ook wel overdag. Determinatietabel voor enkele genera:</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318064</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1929</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 28 - 136</dcterms:extent>
+   <dcterms:isPartOf>De Heterocera van Sumatra VI (URN:ISSN:0024-0672) (Volume 12) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318064.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149350</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318064</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Redescription of the type of Lomaptera cambodiensis Wallace, and its allocation to Ischiopsopha gestro (Coleoptera, Cetoniidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Willemstein S.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>During my study of the Cetoniid genus Thaumastopeus Kraatz, I found Lomaptera cambodiensis Wallace, 1867, listed under Thaumastopeus in Junk's Coleopterorum Catalogus (Schenkling, 1921). A male specimen in the collection of the late F. T. Valck Lucassen (containing material ex coll. O. E. Janson and ex coll. F. J. S. Parry), now present in the Leiden Museum, bears a type-label. It appears to belong to Ischiopsopha Gestro, as suspected previously by Neervoort van de Poll (1886) and surmised by Heller (1895) and Schoch (1898). The generic position of the species is evident from the following characters: shape of the parameres; rather deep lateral sinuation of the elytra just behind the shoulders; sharp transversal ridge somewhat behind the middle of the pygidium; absence of the transversal ridge on the posterior tibiae, a ridge which is a character of Thaumastopeus. From other bronzy-green species of Ischiopsopha, I. cambodiensis can be differentiated with the following key to the males : 1. Meta-mesosternal1) process from the base on curved towards the body . . 2. — Meta-mesosternal process straight, only at the apex slightly curved towards the body................4• 2. First tooth on the outer margin of the anterior tibiae distinct.....3. — First tooth on the outer margin of the anterior tibiae occurring as a roundel lobe ...............I. cuprea Moser 3. Apical half of the elytra, mostly partly, provided with fine transverse striae . ..............I. laglaizei Lansberge — Apical half of the elytra entirely and at least the hind part of the basal half provided with fine transverse striae........I. ceramensis (Wallace)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318472</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 181 - 187</dcterms:extent>
+   <dcterms:isPartOf>Redescription of the type of Lomaptera cambodiensis Wallace, and its allocation to Ischiopsopha gestro (Coleoptera, Cetoniidae) (URN:ISSN:0024-0672) (Volume 45) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318472.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149758</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318472</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nieuwe en interessante Microlepidoptera uit Nederland, voornamelijk in 1985 (Lepidoptera)</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Kuchlein J.H.</dc:creator>
+   <dc:creator>Gielis C.</dc:creator>
+   <dc:creator>Huisman K.J.</dc:creator>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Wolf, van der  H.W.</dc:creator>
+   <dc:creator>Wolschrijn J.B.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera</dc:subject>
+   <dc:subject>Microlepidoptera</dc:subject>
+   <dc:subject>Netherlands</dc:subject>
+   <dc:description>This is the third annual compilation of Microlepidoptera collected in The Netherlands. The following six species are here recorded for the first time from The Netherlands: Trifurcula eurema (Tutt) (Nepticulidae), reared from Lotus uliginosus in the Isle of Terschelling: Heliozela hammoniella Sorhagen (Heliozelidae), reared from mines and collected as adults flying over Betula saplings: Caloptilia populetorum Zeller (Gracillariidae); Teleiodes saltuum (Zeller) (Gelechiidae), associated with Larix; T. fugacella (Zeller), from Ulmus; Commophila aeneana (Hubner) (Cochylidae). Other records of rare species include many new records for the province of Friesland and the Frisian Wadden Islands in addition to the recent review of this province by Lempke (1986a).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227696</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1988</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 69 - 81</dcterms:extent>
+   <dcterms:isPartOf>Nieuwe en interessante Microlepidoptera uit Nederland, voornamelijk in 1985 (Lepidoptera) (URN:ISSN:00138827) (Volume 48, 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227696.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50399</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227696</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

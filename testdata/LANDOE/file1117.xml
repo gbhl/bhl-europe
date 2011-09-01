@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Herpetozoa 9_1_2 (1996)</dc:title>
+   <dc:creator>Arribas  Oscar J., Benyr  Christa, Benyr  Gerald, Böhme  Wolfgang, Dasgupta  Ritwik, Disi  Ahmad M., Guttmann  Thomas, Malkmus  Rudolf, Mayer  Werner, Proy  Christian, Rathbauer  Franz, Schultschik  Günther, Sehnal  Peter, Steinfartz  Sebastian</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Peter Sehnal, Gerald Benyr, Franz Rathbauer, Christian Proy, Christa Benyr, Thomas Guttmann: Herpetologische Bestandserhebung im militärischen Sperrgebiet Allentsteig (Niederösterreich).     3-   18. Ritwik Dasgupta: Feeding ecology of the adult Himalayan Salamander Tylototriton verrucosus Anderson, 1871 (Caudata: Salamandridae).    19-   29. Oscar J. Arribas: Taxonomix revision of the Iberian 'Archaeolacertae' I.: A new interpretation of the geographical variation of 'Lacerta' monticola Boulenger, 1905 and 'Lacerta' cyreni Müller &amp; Helmich, 1937 (Squamata: Sauria: Lacertidae).    31-   56. Werner Mayer, Oscar J. Arribas: Allozyme differentiation and relationship among the Iberian-Pyrenean Mountain Lizards (Squamata: Sauria: Lacertidae).    57-   61. Ahmad M. Disi, Wolfgang Böhme: Zoogeography of the amphibians and reptiles of Syria, with additional new records.    63-   70. Ahmad M. Disi: A contribution to the knowledge of the herpetofauna of Jordan, VI. The Jordanian herpetofauna as a zoogeographic indicator.    71-   81. Rudolf Malkmus: Neue Daten zur Verbreitung von Hemidactylus turcicus (Linnaeus, 1758) in Portugal (Squamata: Sauria: Gekkonidae).    83-   85. Rudolf Malkmus: Abwehrverhalten der Kapuzennatter Macroprotodon cucullatus (Geoffroy, 1827) (Squamata: Serpentes: Colubridae).    87-   89. Günther Schultschik, Sebastian Steinfartz: Ergebnisse einer herpetologischen Exkursion in den Iran.    91-   95</dc:description>
+   <dc:date>1996</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27070.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27070.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27070</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

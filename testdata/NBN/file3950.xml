@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of Myra Leach, 1817 (Crustacea: Decapoda: Leucosioidea)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Galil B.S.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Leucosioidea</dc:subject>
+   <dc:subject>Myra</dc:subject>
+   <dc:subject>Myrodes</dc:subject>
+   <dc:subject>Myrine</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Indo-Pacific</dc:subject>
+   <dc:description>A study of major collections led to a revision of the Indo-Pacific leucosioid genus Myra Leach, 1817. The systematic status and nomenclatural disposition of each species was assessed, and many were diagnosed based on examination of the type material. A new genus, Myrine, is established for M. acutidens (Ihle, 1918) and M. kesslerii (Paulson, 1875). The genus Myrodes Bell, 1855, is synonymized with Myra. Nine species are retained as valid: M. affinis Bell, 1855, M. australis Haswell, 1880, M. brevimana Alcock, 1896, M. elegans Bell, 1855, M. eudactyla (Bell, 1855), M. fugax (Fabricius, 1798), M. grandis Zarenkov, 1990, M. mammillaris Bell, 1855, and M. subgranulata Kossmann, 1877. Five new species are established: M. celeris, M. currax, M. curtimana, M. pernix and M. tumidospina. All species are described and illustrated, extended synonymies are given, and a key for their identification is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217456</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2001</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 409 - 446</dcterms:extent>
+   <dcterms:isPartOf>A revision of Myra Leach, 1817 (Crustacea: Decapoda: Leucosioidea) (URN:ISSN:00240672) (Volume 75, 16-25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217456.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45078</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217456</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

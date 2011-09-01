@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A monograph of the freshwater Bryozoa-Phylactolaemata</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Lacourt A.W.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>1. This paper presents the taxonomy of the Bryozoa Phylactolaemata. The group is found to contain a number of series. The present classification reveals that a number of specific names are synonyms. 2. The evolution of the group is described on the basis of the development of the zoarium and the species-specific statoblasts. 3. The Phylactolaemata are to be considered as a group that have completed their evolution with the development of giant species with giant and specialized forms of statoblasts; this has been accompanied by a reduction in the number of tentacles. 4. The distribution of the species was assessed from the available data. The main concentration is found to occur in the southern hemisphere. 5. The distribution supports the conclusion that the continents were formerly connected; the present distributional pattern can be explained only on this basis. 6. The statoblasts were investigated with particular attention to various types of illumination and certain histochemical methods. The electron-microscopical study forming part of this investigation led to interesting results. The histochemical study also produced new information. 7. The statoblasts are illustrated with characteristic microphotographs. 8. The characters are given according to groups in the keys. Various data are presented in tables. 9. A short historical review is provided. 10. Wherever possible, relevant data on subjects other than the taxonomy of the various species have been added.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317609</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 155</dcterms:extent>
+   <dcterms:isPartOf>A monograph of the freshwater Bryozoa-Phylactolaemata (URN:ISSN:0024-1652) (Volume 93) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317609.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148895</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317609</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

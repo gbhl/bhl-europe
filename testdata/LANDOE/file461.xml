@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Steyrer Entomologenrunde 25 (1991)</dc:title>
+   <dc:creator>Fürlinger  Hannes, Hoffman  W., Lichtenberger  Franz, Mitter  Heinz, Müllner  Karl, Weißmaier  Werner, Wimmer  Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hannes Fürlinger, Karl Müllner, Josef Wimmer, W. Hoffman: II.BEITRAG ZUR KENNTNIS DER MACROLEPIDOPTERENFAUNA DES REICHRAMINGER HINTERGEBIRGES IN OBERÖSTERREICH     1-   41. Josef Wimmer: EIN BEITRAG ZUR KENNTNIS DER MICROLEPIDOPTERENFAUNA VON OBERÖSTERREICH    42-   52. Franz Lichtenberger: LICHTFÄNGE IN TAUSENDUNDEINER NACHT- Erlebnisse, Ergebnisse und besondere Begebenheiten    53-   69. Karl Müllner: AUFZEICHNUNGEN VON MEINEN BERGWANDERUNGEN UND STREIFZÜGEN DURCH DIE NATUR 1990    70-   77. Heinz Mitter: BEMERKENSWERTE KÄFERFUNDE AUS OBERÖSTERREICH ( Teil  II.)    78-   82. Heinz Mitter: NOTIZEN ZUM VORKOMMEN VON ODONTAEUS ARMIGER (SCOP.) (COLEOPTERA, SCARABAEIDAE) IN OBERÖSTERREICH    83-   85. Werner Weißmaier: BIOLOGIE HEIMISCHER SISYRIDAE (PLANIPENNIA)    86-   94</dc:description>
+   <dc:date>1991</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25239.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25239.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25239</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Synopsis of lichomolgid copepods (Poecilostomatoida) associated with soft corals (Alcyonacea) in the tropical Indo-Pacific</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Humes A.G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Alcyonacea</dc:subject>
+   <dc:subject>soft corals</dc:subject>
+   <dc:subject>Poecilostomatoida</dc:subject>
+   <dc:subject>Lichomolgidae</dc:subject>
+   <dc:subject>Copepoda</dc:subject>
+   <dc:subject>associations</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>keys</dc:subject>
+   <dc:subject>Indo-Pacific</dc:subject>
+   <dc:subject>Madagascar</dc:subject>
+   <dc:subject>New Caledonia</dc:subject>
+   <dc:subject>Moluccas</dc:subject>
+   <dc:subject>Philippines</dc:subject>
+   <dc:subject>Enewetak Atoll.</dc:subject>
+   <dc:description>A synopsis of the 97 species of lichomolgid copepods known to be associated with tropical IndoPacific shallow-water alcyonaceans is given (Madagascar, New Caledonia, Moluccas, Philippines, and Enewetak Atoll). One new genus and 29 new species are included, distributed among the lichomolgid genera Acanthomolgus (2 new species), Alcyonomolgus (1), Colobomolgus (2), Critomolgus (3), Doridicola (5), Paradoridicola (7), Paramolgus (8), and Telestacicola (1). The alcyonacean hosts, numbering more than 100 species, include members of the genera Alcyonium, Anthelia, Capnella, Cespitularia, Cladiella, Dendronephthya, Heteroxenia, Lemnalia, Litophyton, Lobophytum, Nephthea, Paralemnalia, Parerythropodium, Sarcophyton, Sinularia, Siphonogorgia, Stereonephthya, Studeriotes, Umbellulifera, and Xenia. The copepods probably occur over much of the range of the widely distributed hosts. Host specificity, at least to genus, is suggested in nearly one-fourth of the copepods. Un synopse comprenant les 97 espèces connues de copépodes lichomolgides associées aux Alcyonacea de l'eau peu profonde de l'Indo-Pacifique est présenté (Madagascar, Nouvelle Calédonie, Iles Moluques, Philippines, et l'Atoll Enewetak). Un genre nouveau et 29 espèces nouvelles sont inclues, distribueés parmi les genres lichomolgides Acanthomolgus (2 espèces nouvelles), Alcyonomolgus (1), Colobomolgus (2), Critomolgus (3), Doridicola (5), Paradoridicola (7), Paramolgus (8), et Telestacicola (1). Les hôtes de ces copépodes, comptant au nombre de plus que 100 espèces, comprennent des représentants des genres Alcyonium, Anthelia, Capnella, Cespitularia, Cladiella, Dendronephthya, Heteroxenia, Lemnalia, Litophyton, Lobophytum, Nephthea, Paralemnalia, Parerythropodium, Sarcophyton, Sinularia, Siphonogorgia, Stereonephthya, Studeriotes, Umbellulifera, et Xenia. Les copépodes en toute probabilité se trouvent dans la plupart des aires de répartition étendues des hôtes. La spécificité pour certains hôtes, au moins au niveau du genre, est suggérée dans presque un quartier des copépodes.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317742</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1990</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 201</dcterms:extent>
+   <dcterms:isPartOf>Synopsis of lichomolgid copepods (Poecilostomatoida) associated with soft corals (Alcyonacea) in the tropical Indo-Pacific (URN:ISSN:0024-1652) (Volume 266) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317742.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149028</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317742</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

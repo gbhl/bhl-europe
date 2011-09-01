@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Life of Natrix vittata (L.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bergman R.A.M.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>GENERAL CHARACTER Natrix vittata, the striped swimmer, is a harmless little snake, about half a meter long and as thin as a little finger, living in Java on coastal plains and in the hills up to 1200 m above see level. In a given area she will be very common but in adjacent regions, which to us may present exactly the same character of humidity, altitude, temperature, vegetation, etc., there will be only very occasionally a Natrix vittata among the catch (de Haas, 1941a). Even in the field she is easily recognisable, as she will lift her head high enough to show the curious design of her ventral shields. If there is an opportunity for examining the snake more closely, the twin small white spots on the head shields will identify her. The colour of the body is light bronze with a dark stripe on the spine and two stripes running on the sides. Although she moves gracefully and swims very well, she is easily caught but even then never tries to bite. There is some wriggling of the body in the hand and around the wrist but the head is erect and projected as far forward as possible swinging right and left in the attempt of seeking a way to escape. There is really only one disagreable feature about this natrix: when caught and especially when afraid or when too roughly gripped, she will open the cloaca and discharge the contents with a characteristic, most persistent and very unenjoyable odour. She is easy to maintain in captivity and unlike many other snakes, will take food readily. Once I saw three of these natrices in a cage, each gripping a part of the same small frog. Her inquisitiveness in the search for food makes her run big risks and her agility is only partly compensation for the lack of strong powers. This is well</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319075</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1950</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 11</dcterms:extent>
+   <dcterms:isPartOf>The Life of Natrix vittata (L.) (URN:ISSN:0024-0672) (Volume 31) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319075.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150361</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319075</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

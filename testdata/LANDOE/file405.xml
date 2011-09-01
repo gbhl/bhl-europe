@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 5 (1990)</dc:title>
+   <dc:creator>Hable  Heinrich, Kollar  Hans Peter, Mienis  Henk K., Nitsche  Karl-Andreas, Reichholf  Josef, Reichholf-Riehm  Helgard, Reischütz  Peter L., Seidl  Fritz jun., Seiter  Marianne, Stummer  Brunhilde, Trauttmansdorff  Josef, Utschick  Hans</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Peter Kollar, Marianne Seiter, Josef Trauttmansdorff: Der Kormoran (Phalacrocorax carbo) als Wintergast an der österreichischen Donau   147-  156. Helgard Reichholf-Riehm: Das Verteilungsmuster überwinternder Kormorane (Phalacrocorax carbo) am unteren Inn im Januar und Februar 1990   157-  164. Josef Reichholf: Verzehren überwinternde Kormorane (Phalacrocorax carbo) abnorm hohe Fischmengen?   165-  174. Hans Utschick: Reproduktion und Migration einer durch Bekämpfungsmaßnahmenreduzierten Gartenpopulation der Spanischen Weg S c h n e c k e (Arion lusitanicus)   175-  182. Peter L. Reischütz, Brunhilde Stummer: Zur Verbreitung von Graecoanatolica vegorriticola (SCHUTT) (Hydrobioidea, Prosobranchia)   183-  184. Peter L. Reischütz: Ergänzungen zur Nacktschneckenfauna Österreichs (1): Arion lusitanicus MABILLE und Arion flagellus COLLINGE   185-  186. Henk K. Mienis: Pseudosuccinea columella snails as food items of the Green Sandpipers Tringa ochropus   187-  188. Henk K. Mienis: The first records of predation on landsnails by rsts in Israel   189-  190. Fritz jun. Seidl: Extremgrößen einiger Molluskenarten   191-  193. Karl-Andreas Nitsche: Weizen als Nahrung des Bibers (Castor fiber L.)   194. Karl-Andreas Nitsche: Reviermarkierung beim Biber (Castor canadensis und Castor fiber) in Gefangenschaft - Ergänzungen   195-  200. Heinrich Hable: Ungarn-Reise der ZOOLOGISCHEN GESELLSCHAFT BRAUNAU zum Kiskunsägi Nationalpark bei Kecskemet   201-  215</dc:description>
+   <dc:date>1990</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25183.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25183.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25183</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

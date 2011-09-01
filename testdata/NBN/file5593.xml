@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XXXVIII. Nachträgliche Betrachtungen zu der Revision der Subfamilie Parnassiinae (Fortsetzung 11)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:creator>Sheljuzhko L.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>WAS IST PARNASSIUS CAESAR? Die Literatur, Parnassius actius caesar betreffend, ist nicht nur uneinheitlich, sondern auch irreleitend. Als Autor von Parnassius actius caesar wird bald Grum-Grshimailo, bald Staudinger genannt. Als sein Fluggebiet wird meist Ost-Tianschan (Berge von Korla und Kuruk-tag) und Fergana angegeben, aber auch eine Anzahl anderer Lokalitäten, wie Naryn, Karagaitau, Dzharkent und andere mehr. Eine Erörterung dieser Tatsache bei Besichtigung des P. actius-Materials der Sammlung Eisner hat uns veranlasst, die Frage „Was ist Parnassius caesar?" eingehend zu prüfen. Die erste Erwähnung eines Parnassius caesar findet sich in dem Artikel von Grum-Grshimailo, 1885, „Bericht über meine Reise in das Alai-Gebiet" (in Romanoff, 1885, Mém. s.1. Lép. 2: 247), in dem er mehrere Colias- und Parnassius-Arten anführt, die er am Kisil-Art (Kyzyl-Art) — Pass (Transalai) gesammelt hat, darunter Parnassius actius und Parnassius caesar. Die Beschreibung dieses „caesar" den er als neue Art ansieht, ist sehr dürftig. Sie lautet: „ ... Ρarn. Caesar m., eine herrliche, ganz einzig stehende Art unter den Parnassiern der palaearktischen Fauna, welche sehr auffallend in Färbung und Anzahl der rothen Augenflecke variert (auf den Vorderflügeln 4 bis o) ...". Als zweiter Autor erwähnte Elwes Parnassius caesar in 1886 (Proc. Zool. Soc. London 1886: 41): „Another new form, named, but not described, by the same explorer Grum-Grshimailo, is Parnassius caesar, which was found at Kizil Art, on the Alai Pamir plateau, at a great elevation, and said to be a splendid, quite unique species of great variability, and will no doubt be soon published in the Grand Duke Nicholas's 'Mémoires sur les Lépi-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318098</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1965</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 211 - 214</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XXXVIII. Nachträgliche Betrachtungen zu der Revision der Subfamilie Parnassiinae (Fortsetzung 11) (URN:ISSN:0024-0672) (Volume 40) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318098.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149384</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318098</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

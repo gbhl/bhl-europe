@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Morphology, anatomy and histology of Doto uva Marcus, 1955 (Opisthobranchia: Nudibranchia) from the Chilean coast</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Fischer M.A.</dc:creator>
+   <dc:creator>Velde, van der G.</dc:creator>
+   <dc:creator>Roubos E.W.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Opisthobranchia</dc:subject>
+   <dc:subject>Nudibranchia</dc:subject>
+   <dc:subject>Doto</dc:subject>
+   <dc:subject>Histology</dc:subject>
+   <dc:subject>Morphology</dc:subject>
+   <dc:subject>Chilean coast</dc:subject>
+   <dc:description>Doto uva Marcus, 1955 is a nudibranch species recorded from the Brazilian and Chilean coast. In spite of its wide distribution, D. uva has been described only superficially, mainly as to the pattern of its coloration, external morphology, radular teeth and reproductive system. Here we substantially extend this description, paying special attention to the morphology, anatomy and histology of the digestive and reproductive system. Furthermore, new data on the morphology of the central nervous system and its cell types are given, and finally, the egg mass is described. On the basis of these data, we consider the Doto specimens described from Chile conspecific with those from Brazil.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214538</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 145 - 159</dcterms:extent>
+   <dcterms:isPartOf>Morphology, anatomy and histology of Doto uva Marcus, 1955 (Opisthobranchia: Nudibranchia) from the Chilean coast (URN:ISSN:13834517) (Volume 75, 3/4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214538.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43251</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214538</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 33 (1981)</dc:title>
+   <dc:creator>Arenberger  Ernst, Aspöck  Horst, Aspöck  Ulrike, Deschka  Gerfried, Dollfuss  Hermann, Fischer  Maximilian, Ganev  Julius, Glaser  Wolfgang, Gomy  Yves, Hinz  Rolf, Hölzel  Herbert, Holzinger  Ruth, Holzschuh  Carolus, Horstmann  Klaus, Kasy  Friedrich, Mandl  Gerwig, Mandl  Karl, Mitter  Heinz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Ulrike Aspöck, Horst Aspöck: Weitere Untersuchungen an Berothiden: Berotha Walker, Isoscelipteron Costa und Asadeteva N.G. (Neuropteroidea: Planipennia).     1-   14. Julius Ganev: Eine neue Catoptria-Unterart aus Bulgarien (Lepidoptera, Crambinae).    15-   16. Ernst Arenberger: Die Pterophorus-Arten West- und Zentralasiens, 2. Beitrag (Lepidoptera, Pterophoridae).    17-   29. Friedrich Kasy: Data to the lepidopterous fauna of Greece (based on the collections of G. Christensen and L. Gozmány). 3. Eine neue Tortilia (Lepid., Oecophoridae).    30-   32. Gerfried Deschka: Blattminierende Lepidopteren aus dem Nahen und Mittleren Osten. IV. Teil.    33-   41. Wolfgang Glaser: Beitrag zur Kenntnis der Coleophoridae XIII. Zwei neue Arten aus Südspanien und deren erste Stände (Lepidoptera: Coleophoridae).    42-   46. Maximilian Fischer: Mononeuron, ein neues Doryctinen-Genus aus Brasilien (Hymenoptera, Braconidae).    47-   51. Karl Mandl: Interessante Carabus-Funde aus Österreich (Carabidae, Col.).    52-   58. Heinz Mitter: Zur Verbreitung einiger Pythiden-Arten in Oberösterreich (Coleoptera, Pythidae).    59-   61. Yves Gomy: Un Aeletes Horn Nouveau de la Jamaique (Col. Histeridae).    62-   64. Carolus Holzschuh: Elf neue Bockkäfer aus Europa und Asien (Col.: Cerambycidae).    65-   76. Hermann Dollfuss: Spilomena peruensis n.sp., a Sphecid wasp from Peru (Hymenoptera, Sphecidae).    77-   78. Rolf Hinz: Biologie und Zucht von Ichneumon didymus Grav. (Hymenoptera: Ichneumonidae).    79-   80. Klaus Horstmann: Typenrevision einiger von A. Hensch beschriebener Ichneumoniden-Arten (Hymenoptera).    81-   88. Gerwig Mandl: Eine neue Acoptolabrus-Subspezies aus Japan: Munakatai furumii (Col., Carabidae).    89-   91. Karl Mandl: Verbreitungskarten der Arten der Lophyridia lunulata-Gruppe (Col., Cicindelidae). (2 Karten)    92-   94. Ulrike Aspöck: Polymorphismus und Polytypie bei nearktischen Raphidiiden: Agulla (Glavia) modesta Carpenter, Agulla (Glacia) unicolor Carpenter und Agulla (Glavia) paramerica n.sp. (Neuropteroidea: Raphidioptera).    95-  112. Herbert Hölzel: Redeskription von Chrysopa andresi Navás und Beschreibung zweier neuer Arten aus Vorderasien (Planipennia, Chrysopidae).   113-  121. Ruth Holzinger: Hans Gratsch +.   122. Friedrich Kasy: Ing. Wolfgang Glaser +.   123-  125</dc:description>
+   <dc:date>1981</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26310.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26310.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26310</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

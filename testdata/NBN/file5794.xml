@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Phymatidae (Heteroptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kormilev N.A.</dc:creator>
+   <dc:creator>Doesburg, van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Heteroptera; Phymatidae; taxonomy</dc:subject>
+   <dc:description>A small lot of Phymatidae (except Phymatinae) from the Rijksmusem van Natuurlijke Historie, Leiden, and a few specimens from the Instituut voor Taxonomische Zoölogie, Amsterdam, the British Museum (Natural History), London, and the Natal Museum, Pietermaritzburg, have been studied. The following new species are described: Themonocoris aethiopicus spec. nov. (Ethiopia), Lophoscutus sagimani spec. nov. (Suriname), Lophoscutus brasiliensis spec. nov. (Brazil), Lophoscutus geijskesi spec. nov. (Saba, Lesser Antilles). The male of Oxythyreus cylindricornis Westwood, 1841 is described for the first time (Natal), and additional records are given for other Phymatidae.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318299</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1986</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 113 - 127</dcterms:extent>
+   <dcterms:isPartOf>Notes on Phymatidae (Heteroptera) (URN:ISSN:0024-0672) (Volume 60) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318299.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149585</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318299</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

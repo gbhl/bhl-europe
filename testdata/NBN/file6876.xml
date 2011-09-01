@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Gastroptychus Cavimurus sp. nov., a new Chirostylid (Crustacea, Decapoda, Anomura) from off the western coast of South America</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Baba K.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>During the second cruise of the Japanese Research Vessel "Kaiyo Maru" to the western coast of South America in 1968-69, Dr. Osame Tabeta of the Shimonoseki University of Fisheries, then on the staff of the Kyushu University, collected a number of galatheids off the northern Peruvian coast. All of those specimens have been placed at my disposal. Among them were a pair of chirostylids, careful examination of which showed that they belonged to an undescribed species of the genus Gastroptychus. In the meantime I also had a chance to examine unidentified galatheids in the collection of the Rijksmuseum van Natuurlijke Historie, Leiden, and found two chirostylids taken from off Ecuador, which proved to be identical with the Peruvian species. The opportunity is here taken to describe the new species as Gastroptychus cavimurus. The holotype and two paratypes are deposited in the collection of the Rijksmuseum van Natuurlijke Historie, Leiden (RMNH), and one paratype is to be sent to the Smithsonian Institution, Washington, D.C. I am grateful to Dr. L. B. Holthuis for allowing me to study the Ecuadorian specimens. Dr. Osame Tabeta kindly made the Peruvian galatheids available to me for study. I thank Dr. Fenner A. Chace, Jr. of the Smithsonian Institution for reviewing the manuscript. Gastroptychus cavimurus sp. nov. (figs. 1-3) Material. — Holotype: ovigerous female, RMNH, reg. no. Crust. D. 31282; 3°43'S 8i°07'W; 388 m; 16 December 1968; coll. by O. Tabeta. Paratypes: 1 male, collected with holotype; 2 ovigerous females, RMNH, reg. no. Crust. D. 31383. Gulf of Guayaquil, Ecuador; 450-500 m; trawled; 2 May 1967; coll. by G. Ricauter; Sta. 504, Inst. Nac. Pesca, Ecuador.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319381</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 201 - 207</dcterms:extent>
+   <dcterms:isPartOf>Gastroptychus Cavimurus sp. nov., a new Chirostylid (Crustacea, Decapoda, Anomura) from off the western coast of South America (URN:ISSN:0024-0672) (Volume 52) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319381.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150667</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319381</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Records and description of Microlepidoptera (5)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>When revising the genera of Indo-Australian and Papuan Tortricidae (1939) the author was very much in doubt as to the systematic position of the genus Diactenis Meyrick, 1907, referred before to the Tortricidae. It did not fit in that family, neither could it be successfully transferred to any other Tortricoid family known. Through lack of further data the author decided at last to transfer Diactenis to the family Chlidanotidae; the necessity of its removal from the Tortricidae being only too evident. This decision, however, was not very happy, as Diactenis was neither at its proper place in the Chlidanotidae. In the same year (1939) the late T. Bainbrigge Fletcher suggested to the author (in litt.) to erect for Diactenis a new family. Although this seemed a reasonable solution, we esteemed such an action to be premature, our information on the possible congeners of Diactenis being insufficient at that time. Instead, however temporarily, Diactenis was transferred back to the Tortricidae; but at the same time attention was drawn to the close correlation of that genus with two others (1941). Soon afterwards still more new forms of the Diactenis relationship continued coming to our notice, and the conception of this new family began to take shape. It materialized after our study of the excellent collection of Microlepidoptera, brought together by our lamented friend, the late Dr. L. J. Toxopeus, during the Third Archbold Expedition to New Guinea. The results of this study will be published soon. Meanwhile we are satisfied that the information collected during these twelve years is entirely sufficient for carrying into effect the so long</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317950</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1952</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 165 - 178</dcterms:extent>
+   <dcterms:isPartOf>Records and description of Microlepidoptera (5) (URN:ISSN:0024-0672) (Volume 31) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317950.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149236</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317950</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Genera of the Aspilota-Group and some descriptions of Fungicolous Alysiini from the Netherlands (Hymenoptera: Braconidae: Alysiinae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Alysiinae; Alysiini; Aspilota-group; Phaenocarpa; Orthostigma; Lep- totrema; Aspilota s.s.; Alitha; Carinthilota; Pterusa; Panerema; Dinotrema; Eudinostigma; Dino- stigma; phylogeny; biology; distribution; fungicolous Alysiini; Netherlands; keys.</dc:subject>
+   <dc:description>The genera of the Aspilota-group are redefined and keyed. One new genus is described: Leptotrema gen. nov.; type-species: Aspilota dentifemur Stelfox, 1943.The genus Dinotrema Foerster, 1862 is given generic status to include the majority of the species of Aspilota auct.; the genus Pterusa Fischer, 1958 is included in the Alysiini. The genus Eusynaldis Zaykov &amp; Fischer, 1982 is synonymized with Aspilota Foerster, 1862 s.s.; Coloboma Foerster, 1862, Prosapha Foerster, 1862 and Synaldis Foerster, 1862 are new synonyms of Dinotrema Foerster, 1862. Synaldis auct. is divided among Aspilota s.s., Eudinostigma Tobias, 1986 and Dinotrema. Aspilota pneumatica Fischer, 1973 is synonymized with Alysia efoveolata Thomson, 1895. Eight new species from Europe are described: Aspilota louiseae spec, nov., Carinthilota vechti spec. nov., Dinotrema mesocaudatum spec. nov., D. multiarticulatum spec. nov., D. pratense spec. nov., D. sessile spec. nov., D. tuberculatum spec. nov., Eudinostigma stenosoma spec. nov., and E. alox spec. nov. Neotypes are designated for Alysia ruficornis Nees, 1834 and Aphidius flavipes Ratzeburg, 1844. Lectotypes are designated for Alysia lineola Thomson, 1895, A. speculum Haliday, 1838, and A. venusta Haliday, 1838. The fungicolous Alysiini found in The Netherlands are keyed, partly described and their biology is summarized.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317564</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1988</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 88</dcterms:extent>
+   <dcterms:isPartOf>The Genera of the Aspilota-Group and some descriptions of Fungicolous Alysiini from the Netherlands (Hymenoptera: Braconidae: Alysiinae) (URN:ISSN:0024-1652) (Volume 247) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317564.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148850</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317564</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

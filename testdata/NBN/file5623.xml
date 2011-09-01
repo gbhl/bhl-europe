@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New data on southern African Achatinidae (Mollusca, Gastropoda Pulmonata)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Increasing knowledge of the genital anatomy of the species of the African land snail family Achatinidae has greatly improved our understanding of the delimitation of the species and the intricate interrelationships of the various taxa (Mead, 1950). The genitalia of many achatinids are still unknown due to the absence of properly preserved animals. New data, mainly on the reproductive organs of recently collected material, are supplied here for two Southern African species, Archachatina sandgroundi Bequaert and A. dimidiata (Smith), which have now been dissected for the first time. Acknowledgements are due to Mr. J. F. Peake and his staff at the British Museum (Natural History), London, Prof. K. J. Boss of the Museum of Comparative Zoology at Harvard University, Cambridge (Mass., U.S.A.), Dr. R. Kilias of the Zoologisches Museum der Humboldt-Universität, Berlin, Prof. A. R. Mead of the University of Arizona, Tucson (U.S.A.), and Dr. J. A. Pringle of the Natal Museum, Pietermaritzburg (South Africa), for assistance in various respects. The author repeatedly enjoyed the hospitality of the American Board Mission at Mount Selinda, Rhodesia, for which he is greatly indebted to the missionaries. Collecting trips to Rhodesia and the Transvaal from the author's then base at Pietermaritzburg were mainly financed through research grants received from the South African Council for Scientific and Industrial Research (C.S.I.R., Pretoria). The following abbreviations have been used: alc. for alcohol, 1/d for the ratio length/major diameter of shells, which gives an indication of the shape of the specimen under discussion; BM for British Museum (Natural History), London; MRAC for Musée Royal de l'Afrique Centrale, Ter-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318128</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 513 - 529</dcterms:extent>
+   <dcterms:isPartOf>New data on southern African Achatinidae (Mollusca, Gastropoda Pulmonata) (URN:ISSN:0024-0672) (Volume 47) (Issue 42)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318128.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149414</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318128</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

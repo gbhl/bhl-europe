@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Wiener Museums der Naturgeschichte 1 (1835)</dc:title>
+   <dc:creator>Diesing  Karl [Carl] Moriz, Endlicher  Stephan, Fenzl  Eduard, Fitzinger  Leopold Josef Franz Johann, Focke  Gustav Woldemar, Heckel  Johann Jakob, Kollar  Vinzenz, Marschall  August Friedrich Graf, Partsch  Paul, Schreibers  Carl Ritter von</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl [Carl] Moriz Diesing: Versuch einer Monographie der Gattung Pentastoma. (Tafel 1-4)     1-   32. Eduard Fenzl: Acanthophyllum C.A. Meyer eine neue Pflanzengattung aus der Ordnung der Sileneen, näher erläutert und von einer Charakteristik aller Gattungen der Alisineen. (Tafel 5-7)    33-   68. Johann Jakob Heckel: Scaphirhynchus eine neue Fischgattung aus der Ordnung der Chondropterygier mit freien Kiemen. (Tafel 8)    69-   78. Vinzenz Kollar: Beiträge zur Kenntniss der Lernäenartigen Crustaceen. (Tafel 9-10)    79-   92. Paul Partsch: Über die sogenannten versteinerten Ziegenklauen aus dem Plattensee in Ungarn, und ein neues, urweltliches Geschlecht zweischaliger Conchylien. (Tafel 11-12)    93-  102. Leopold Josef Franz Johann Fitzinger: Entwurf einer systematischen Anordnung der Schildkröten nach den Grundsätzen der natürlichen Methode.   103-  128. Stephan Endlicher: Bemerkungen über die Flora der Südseeinseln. (Tafel 13-16)   129-  190. Gustav Woldemar Focke: Planaria ehrenbergii. (Tafel 17)   191-  206. August Friedrich Graf Marschall: Decas Orthopterorum novorum. (Tafel 18)   207-  218. Johann Jakob Heckel: Über einige neue oder nicht gehörig unterschiedene Cyprinen, nebst einer systematischen Darstellung der europäischen Gattungen dieser Gruppe. (Tafel 19-21)   219-  234. Karl [Carl] Moriz Diesing: Monographie der Gattungen Amphistoma und Diplodiscus. (Tafel 22-24)   235-  260. Leopold Josef Franz Johann Fitzinger, Johann Jakob Heckel: Monographische Darstellung der Gattung Acipenser. (Tafel 25-30)   261-  326. Vinzenz Kollar: Species insectorum Coleopterorum novae. (Tafel 31)   327-  336. Eduard Fenzl: Monographie der Mollugineen und Steudelieen zweier Unterabtheilungen der Familie der Portulaceen (nebst einem Zusatze zur Abhandlung über Acanthophyllum). (Tafel 32)   337-  386. Carl Ritter von Schreibers: Allerdurchlauchtigster, Allergnädigster Kaiser und Herr! Euere Majestät. (4 Seiten unpaginiert) (1836) . Carl Ritter von Schreibers: Vorwort. (2 Seiten unpaginiert) (1836) . Carl Ritter von Schreibers: Vorwort. (2 Seiten unpaginiert)</dc:description>
+   <dc:date>1835</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28994.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28994.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28994</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

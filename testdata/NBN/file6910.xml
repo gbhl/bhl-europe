@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the cotypes of Vespertilio harpia Temminck, 1840 (Mammalia, Chiroptera, Genus Harpiocephalus)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Husson A.M.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>In a revision of vespertilionid bats the late Dr. G. H. H. Tate (1941, pp. 581-582) after examination of the skull of cotype "a" of Vespertilio Ivarpia in the collection of the Leiden Museum, originally described by Temminck (1840, pp. 219-220, pi. 55 figs. 5-6), arrived at the following conclusion: "It becomes clear, upon later study of photograph and notes, that the skull was that of Myotis sp., and not a Harpiocephalus at all.... In view of the undoubted error in the skull it would be well for the authorities at Leyden to decide whether the specimen in question is actually the type of Temminck's harpia or not." Though, as a rule, rectification of an erroneous interchange of skulls and skins in an old collection is difficult to ascertain, the present paper solves the above mentioned problem. When studying the bats of Surinam in the Leiden Museum, I investigated also the type specimen of Vespertilio ferrugineus described from Surinam by Temminck (1840, pp. 239-240, pi. 59 (not 58) fig. 2). Though this description was based on "plusieurs individus conservées à l'esprit de vin", apparently only one specimen was preserved, as a mounted skin, but it remains unknown at what date this skin was prepared from the alcoholic specimen. With the dried skin there is a mounted skull, which, according to the pencil note on the underside of the board, should belong to the type specimen of V. ferrugineus. I discovered, however, that this skull exactly agrees with the description of Harpiocephalus harpia, so that it became necessary to examine the material of this species in the Leiden Museum. The following specimens are present. ι. Cotype "a", mentioned by Jentink (1887, p. 280; 1888, p. 186): mounted skin and skull, sex unknown ; collected by S. Müller on the S. E.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319415</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 121 - 125</dcterms:extent>
+   <dcterms:isPartOf>Notes on the cotypes of Vespertilio harpia Temminck, 1840 (Mammalia, Chiroptera, Genus Harpiocephalus) (URN:ISSN:0024-0672) (Volume 33) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319415.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150701</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319415</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

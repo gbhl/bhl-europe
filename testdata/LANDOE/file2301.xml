@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 64_65 (1929)</dc:title>
+   <dc:creator>Angel  Franz, Anonymus , Clar  Eberhard, Closs  Alois, Friedrich  Othmar Michael, Fritsch  Karl von (jun.), Gáyer  Julius (Gyula), Heritsch  Franz, Hoffmann  Fritz, Hohl  Otto, Kühn  Othmar, Kuntschnig  Alois, Petraschek  Walter Emil, Prochaska  Karl, Schwinner  Robert, Seewann  Lothar, Stückler  Norbert, Thurner  Andreas</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Eberhard Clar, Alois Closs, Franz Heritsch, Alois Kuntschnig, Robert Schwinner, Andreas Thurner, Otto Hohl, Walter Emil Petraschek: Die geologische Karte der Hochlantschgruppe in Steiermark.     3-   28. Karl von (jun.) Fritsch: Siebenter Beitrag zur Flora von Steiermark.    29-   78. Franz Angel: Über Gesteine vom steirischen Erzberg.    79-  100. Andreas Thurner: Geologie der Stolzalpe bei Murau.   101-  135. Franz Angel: Dolomitsandsteine des Grazer Paläozoikums.   136-  149. Julius (Gyula) Gáyer: Die Pflanzenwelt der Nachbargebiete von Oststeiermark.   150-  177. Eberhard Clar: Über die Geologie des Serpentinstockes von Kraubath und seiner Umgebung.   178-  214. Othmar Michael Friedrich: Der Staurolith von Dietenberg bei Ligist in Weststeiermark.   215-  223. Othmar Kühn: Die Stromatoporen der Karnischen Alpen.   224-  235. Lothar Seewann: Die Blei-Zinkerz-Lagerstätte von Haufenreith-Arzberg in der Oststeiermark.   236-  271. Karl Prochaska, Fritz Hoffmann: Die Schmetterlinge Steiermarks, X. A. Systematischer Teil. Die Kleinschmetterlinge.   272-  321. Norbert Stückler: Zwölfter und dreizehnter Bericht über seismische Registrierungen in Graz in den Jahren 1918 und 1919.   322-  324. Karl von (jun.) Fritsch: August Hayek +. (Seiten XIII-XXII) . Anonymus: Vereinsleitung im Jahre 1927. (Seiten V-XII)</dc:description>
+   <dc:date>1929</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28613.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28613.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28613</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

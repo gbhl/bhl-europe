@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XII. Kritische Revision der Gattung Parnassius (Fortsetzung 8)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Bevor ich mit der Bearbeitung des dritten genus der Parnassiinae beginne, muss ich noch einmal einen Rückblick auf die bereits erfolgte Revision werfen. Ich habe schon früher erwähnt, dass meine Publikationen durch Aufführung aller in meiner Sammlung befindlichen Exemplare einen wissenschaftlichen Katalog dazu darstellen sollen. Da ich inzwischen die Bestimmung getroffen habe, dass meine Sammlung in den Besitz des Rijksmuseum van Natuurlijke Historie, Leiden, übergehen soll, hat dieses mich ersucht, sein eigenes Parnassius-Material in meine Sammlung einzugliedern. Ausserdem habe ich mehr als 20 000 Parnassier aus collection R. Oberthür erwerben können, die mein schon vorhandenes Material wertvoll ergänzen. Ich beabsichtige deshalb auch, nicht nur Neueingänge — auch aus eigenem Sammeln — aufzuzählen, sondern überall dort, wo das wünschenswert, bezw. erforderlich ist, früher gegebene Diagnosen zu ergänzen. Leider hat die Sichtung des reichen Oberthür'schen Materials erneut erwiesen, wie unzuverlässig sehr häufig die Fundortangaben sind, und im besonderen, dass sehr selten vermerkt ist, welche Tiere aus Zucht stammen. Für den Widerspruch, der darin liegt, dass es zweifellos distincte subspecies gibt, dass bei deren Zucht die Rassenmerkmale aber verwischt werden, habe ich noch keine plausible Erklärung finden können. Die Erbmasse scheint jedenfalls in sich nicht so gefestigt zu sein, dass nicht bei einer Störung der natürlichen Entwicklungsbedingungen Ausschläge in der vollen Variabilitätsbreite der Art möglich wären. Dass die Erscheinungsform der Parnassier auch in ihrem Fluggebiet durch klimatische Bedingungen stark beeinflusst wird, ist eine bekannte Tatsache. Mit der Aufzählung der Neueingänge werde ich auch, um den Nomen-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319223</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 33 - 49</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XII. Kritische Revision der Gattung Parnassius (Fortsetzung 8) (URN:ISSN:0024-0672) (Volume 35) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319223.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150509</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319223</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

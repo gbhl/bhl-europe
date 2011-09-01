@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 138a (1993)</dc:title>
+   <dc:creator>Aubrecht  Gerhard, Dessl  Reinhold J., Heinzl  Brigitte, Holter  Kurt, Kohl  Hermann, Marckhgott  Gerhard, Mayer  Gertrud, Offenberger  Johann, Petutschnig  Jürgen, Schwanzar  Christine, Zauner  Alois</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Christine Schwanzar: Der römische Wachturm im Kürnbergerwald.    10-   37. Johann Offenberger: Archäologische Untersuchungen im ehemaligen Benediktinerkloster St. Michael in Mondsee.    40-  130. Alois Zauner: Die Gegend von Wesen und Neukirchen am Walde im Mittelalter.   131-  197. Brigitte Heinzl: Die Waffensammlung der kunsthistorischen Abteilung des Oberösterreichischen Landesmuseums im Schloßmuseum Linz.   199-  239. Reinhold J. Dessl: Die Geschichte der Wilheringer Schutzengelbruderschaft.   241-  265. Gerhard Marckhgott: ... von der Hohlheit des gemächlichen Lebens.   268-  277. Jürgen Petutschnig: Das Steinkrebsvorkommen im Einzugsgebiet des Trattenbaches.   279-  307. Gertrud Mayer: Brutplatz- und Brutzeitbeobachtungen von Dohlen.   309-  322. Hermann Kohl: Der Pichlinger Menschenfund am OBERÖSTERREICH Landesmuseum.   323-  336. Gerhard Aubrecht: Nachruf Dr. Gerald Mayer.   337-  345. Kurt Holter: Hermann Vetters, 1.7.1915 - 24.5.1993.   347-  348. : Rezensionen.   349-  357</dc:description>
+   <dc:date>1993</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27608.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27608.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27608</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

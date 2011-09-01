@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 8 (1868)</dc:title>
+   <dc:creator>Anonymus , Doppler  Adam, Petermandl  Anton, Pezolt  Georg, Sauter  Anton Eleutherius, Schallhammer  Anton Ritter von, Spängler  Leopold, Spatzenegger  Leopold, Storch  Franz de Paula, Woldrich  Johann Nepomuk</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Teucht-Ordnung, Herrn Nicolausen von Trautmanstorff Zhumbherrn vnnd aines Hochwürdigen Thumbcapitls vischmaister Zuegehörig. 1579.     3-   24. Leopold Spatzenegger: Hof Ceremoniel auf das ganze Jahr vor den Camerfourier. Festa Palij und ander, wo Sr. Hochfürstl. gnaden Pflegen in ander Kirchen Zu gehen.    25-   48. Anton Ritter von Schallhammer: Biographie des Joseph Ernst Ritter von Koch-Sternfeld.    33-   80. Adam Doppler: Leonhardus die gracia etc.    48. Anton Eleutherius Sauter: Spezielle Flora der Gefäßpflanzen des Herzogthums Salzburg.    81-  283. Franz de Paula Storch: Catalogus Faunae Salisburgensis.   284-  313. Johann Nepomuk Woldrich: Witterungs-Verhältnisse zu Salzburg im Jahre 1867. (1 Tafel)   314-  323. Georg Pezolt: Ueber die Forschungen auf dem Gebiete der Salzburger Kunstgeschichte von dem Domherrn und Doctor J. Sighart.   324-  331. Anton Eleutherius Sauter: Ergänzungen und Berichtigungen zur Flora und Jahresbericht. (1 Seite unpaginiert) . Leopold Spängler: Gesellschafts-Angelegenheiten. Protokoll über die am 18. Oktober 1868 im Gemeinderaths-Sitzungssaale zu Salzburg abgehaltene Jahresversammlung. Gegenwärtige: Der Vorstand Dr. Sauter und 26 Mitgliedern. (Seite III-IV) . Anton Eleutherius Sauter: Gesellschafts-Angelegenheiten. Jahres-Bericht über die Thätigkeit und den Stand der Gesellschaft für Landeskunde im Jahre 1867/8. (Seiten V-XVI) . Anton Petermandl: Gesellschafts-Angelegenheiten. Jahres-Rechnung über Einnahmen aud Ausgaben der Gesellschaft für Salzburger Landeskunde im 8. Vereinsjahre 1867-68. (Seiten XVII-XVIII) . Anonymus: Gesellschafts-Angelegenheiten. Mitglieder-Verzeichniß. (Seiten XIX-XXV) . Anonymus: Gesellschafts-Angelegenheiten. Verzeichniß jener gelehrten Gesellschaften und Vereine, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer Mittheilungen eine Verbindung eingeleitet hat. (Seiten XXVI-XXVII) . Anonymus: Gesellschafts-Angelegenheiten. Fortsetzung des Bücher-Verzeichnisses. (Seiten XXVIII-XLVII) . Anonymus: Inhalts-Verzeichniß der ersten sieben Jahrgänge dieser Mittheilungen. (3 Seiten unpaginiert)</dc:description>
+   <dc:date>1868</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29013.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29013.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29013</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

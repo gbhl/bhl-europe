@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Results of the Rumphius Biohistorical Expedition to Ambon (1990). Part 13. Mollusca, Bivalvia, Cardiidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Poorten, ter J.J.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Bivalvia</dc:subject>
+   <dc:subject>Cardiidae</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:subject>Moluccas</dc:subject>
+   <dc:subject>Ambon</dc:subject>
+   <dc:subject>Rumphius</dc:subject>
+   <dc:description>31 Cardiidae species have been collected in Ambon, Indonesia by the Rumphius Biohistorical Expedition, comprising circa 40% of the known species of this family from the Indonesian archipelago. Seven of these could be traced to the figures given by Rumphius (1705) and an additional two, taking into account some reservations about the identity of Rumphius' depicted shells. This implies that all but one of Rumphius' species, viz. Tridacna (Tridacna) gigas (Linnaeus, 1758), have been reencountered by the present expedition. The expedition has yielded the first Indonesian published records of two species: Fulvia (Laevifulvia) lineonotata Vidal, 1994 and Acrosterigma dianthinum (Melvill &amp; Standen, 1899). For the latter this implies a considerable range extension of the known distribution.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:226661</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 259 - 301</dcterms:extent>
+   <dcterms:isPartOf>Results of the Rumphius Biohistorical Expedition to Ambon (1990). Part 13. Mollusca, Bivalvia, Cardiidae (URN:ISSN:00240672) (Volume 81, 1-17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/226661.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/49764</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/226661</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

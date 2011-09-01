@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On two species of Centropus from the Kangean islands (Aves, Cuculidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogerwerf A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>When collecting on the Kangean Islands in 1954 I obtained representatives of two species of Centropus: C. sinensis, and C. bengalensis. The first of these species was known to occur on the islands, but the second had not previously been recorded from the Kangean Archipelago, and is an interesting addition to its avifauna. The subspecific identity of these birds seemed worth investigating, as the Kangean Islands occupy an interesting position between Celebes and Java, and are known to have a certain degree of endemism. A discussion of both species will here be given. Centropus sinensis (Stephens) Of the six specimens obtained on the three islands Kangean, Saebus and Paliath, four are in the normal plumage, while two are in the plumage of birds described by Vorderman (1893) as C. kangeangensis. Until recently C. kangeangensis Vorderman has been regarded as a race of C. celebensis Quoy &amp; Gaimard. Hartert (1902) even called it "the most interesting species of the birds inhabiting the Kangean Islands" and it was only Stresemann (1939) who discovered its true affinities. The kangeangensis-plumage has been well described by Vorderman (1893) and Hartert (1902). Only the wings have the normal reddish brown colour of Centropus sinensis; all parts which are normally black, are greyish, beige, or creamy buff, varying much in tinge, especially on the under parts (pl. 1). From collected material it seems that birds in normal plumage are slightly more common than birds in kangeangensis-plumage. Out of five skins in the collections of the Buitenzorg Museum and the Leiden Museum, three are normal; Hartert (1902) had five specimens in normal plumage and four</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318809</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 119 - 123</dcterms:extent>
+   <dcterms:isPartOf>On two species of Centropus from the Kangean islands (Aves, Cuculidae) (URN:ISSN:0024-0672) (Volume 40) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318809.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150095</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318809</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Systematist's Muse – two new damselfly species from 'Elisabetha' in the Congo Basin (Odonata: Chlorocyphidae, Platycnemididae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Dijkstra K.-D.B.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Odonata</dc:subject>
+   <dc:subject>Zygoptera</dc:subject>
+   <dc:subject>dragonfly</dc:subject>
+   <dc:subject>Platycypha</dc:subject>
+   <dc:subject>Mesocnemis</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>Africa</dc:subject>
+   <dc:description>Platycypha eliseva spec. nov. and Mesocnemis saralisa spec. nov. are described from Lokutu (formerly Elisabetha) in the Democratic Republic of Congo. The taxonomy and distribution of Platycypha and Mesocnemis are discussed and keys are provided for the males.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:261760</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 15 - 27</dcterms:extent>
+   <dcterms:isPartOf>The Systematist's Muse – two new damselfly species from 'Elisabetha' in the Congo Basin (Odonata: Chlorocyphidae, Platycnemididae) (URN:ISSN:0024-0672) (Volume 82) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/261760.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/93741</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/261760</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

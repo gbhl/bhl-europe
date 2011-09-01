@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Menschenaffen (Anthropomorphae): Studien über Entwickelung und Schädelbau</dc:title>
+   <dc:publisher>C. W. Kreidel's Verlag (gw Wiesbaden)</dc:publisher>
+   <dc:contributor>Selenka, Emil 1842-1902 (Author)</dc:contributor>
+   <dc:contributor>Walkhoff, Otto (Author)</dc:contributor>
+   <dc:contributor>Hubrecht, A. A. W. (Author)</dc:contributor>
+   <dc:contributor>Keibel, Franz (Author)</dc:contributor>
+   <dc:contributor>Strahl, Hans (Author)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>b207f44d-906c-4f0a-b77e-e17ad0b7d9db</dc:identifier>
+   <dc:identifier>007728885</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dcterms:tableOfContents>1. Rassen, Schädel und Bezahnung des Orangutan.</dcterms:tableOfContents>
+   <dcterms:tableOfContents>2. Chapter II: Schädels des Gorilla und Schimpanse. Chapter III: Entwickelung des Gibbon (Hylobates und Siamanga)</dcterms:tableOfContents>
+   <dcterms:tableOfContents>Chapter III: Entwickelung des Gibbon (Hylobates und Siamanga)</dcterms:tableOfContents>
+   <dcterms:tableOfContents>4. Der Unterkiefer der Anthropomorphen und des Menschen: in seiner funktionellen Entwickelung und Gestalt von Dr. Otto Walkhoff.</dcterms:tableOfContents>
+   <dcterms:tableOfContents>5. Zur Vergleichenden Keimesgeschichte der Primaten.</dcterms:tableOfContents>
+   <dcterms:tableOfContents>6. Die diluvialen Mensclichen Kiefer Belgiens und ihre pithekoiden Eigenschaften von Dr. Otto Walkhoff.</dcterms:tableOfContents>
+   <dcterms:tableOfContents>7. Primaten-Placenten von Dr. Hans Strahl.</dcterms:tableOfContents>
+   <dcterms:issued>1898-1903</dcterms:issued>
+   <dcterms:issued>18981903</dcterms:issued>
+   <dcterms:extent>491 p. in 7 parts : ill. With biography of Emil Selenka written by Dr. A.A.W. Hubrecht</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Selenka_Menschenaffen/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Selenka_Menschenaffen</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RMCA/B207F44D906C4F0AB77EE17AD0B7D9DB</europeana:isShownAt>
+<europeana:dataProvider>Royal Museum for Central Africa</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

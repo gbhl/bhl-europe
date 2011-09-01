@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some notes on the genus Hemiphyllodactylus Bleeker</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>A look at the key to the species of the genus Lepidodactylus in Boulenger's Catalogue of Lizards (I, 1885, p. 162) shows at once that the species are placed in two groups differing in the development of the inner digit. This was first noticed by STEJNEGER (1899, p. 800) who transferred L. crepuscularis (Bav.), L. ceylonensis Blgr. and L. aurantiacus (Bedd.) to the genus Hemiphyllodactylus Blkr. At the same time he described a new species, H. leucostictus, from the Hawaii Islands. The different authors on Asiatic herpetology did not notice this publication as it chiefly dealt with the land-reptiles of the Sandwich-Islands. The attention was again attracted to it by TAYLOR (1922, p. 65) who (1918, p. 237) described a new species, H. insularis, from the Philippine Islands. While working on a revision of the Indo-Australian Gekkonidae, I arrived at the same conclusion as STEJNEGER and TAYLOR. Moreover I (1931, p. 11) am of the opinion that the following species must be united: H. typus Blkr., H. crepuscularis (Bav.), H. ceylonensis (Blgr.), H. leucostictus Stejn., H. insularis Tayl. and H. margarethae Brongersma. Perkins (1903, p. 367) already placed H. leucostictus in the synonymy of Lepidodactylus crepuscularis. He did not state any reasons and I think he was wrong to return the species to the genus Lepidodactylus. The resemblance between H. typus (Spathoscalabotes) and L. crepuscularis was noticed by WERNER (1899, p. 374) but he did not unite them. Hemiphyllodactylus aurantiacus (Bedd.) is considered by me to be a distinct species. Dr. M. A. SMITH (London), working independently, reached the same conclusion (in litt.). Dr. SMITH is of the opinion, that some other species from the asiatic mainland must be referred to this genus. These species</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319204</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1932</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 211 - 223</dcterms:extent>
+   <dcterms:isPartOf>Some notes on the genus Hemiphyllodactylus Bleeker (URN:ISSN:0024-0672) (Volume 14) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319204.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150490</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319204</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

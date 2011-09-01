@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Het onderscheiden van de Nederlandse bladroller-soorten van het geslacht Acleris Hübner (Lepidoptera, Tortricidae)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:creator>Dorst R.F.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Geen andere soorten van de Palaearctische Bladrollers (Tortricidae) vertonen een grotere variabiliteit van kleur en tekening binnen de soort dan die van het geslacht Acleris Hübner. Het is daarom vaak onmogelijk om ze op naam te brengen met de uitwendige kenmerken alleen, zodat men is aangewezen op de kenmerken van de mannelijke en vrouwelijke genitalia. Deze zijn daarentegen uitstekend geschikt voor determinatie en zo karakteristiek en constant binnen de soort, dat zelfs een eenvoudige schets ervan voor ons doel voldoende is. Er komen 23 soorten van Acleris in Nederland voor, waarvan verscheidene als vijanden van landbouwgewassen zijn aan te merken. Andere kunnen schade toebrengen aan sierbomen en struiken. Hun determinatie is derhalve van praktisch nut, doch kan bovengenoemde moeilijkheden opleveren. Dit artikeltje is bedoeld als een zo eenvoudig en kort mogelijk hulpmiddel voor deze determinatie. Hieronder volgen twee determinatie-tabellen, een voor de mannetjes en een voor de wijfjes, uitsluitend gebaseerd op de kenmerken van de genitalia; de tabellen worden verduidelijkt door eenvoudige schetsen, als hierboven bedoeld. Deze schetsen zijn gemaakt door de tweede schrijver, in hoofdzaak naar diens eigen, maar ook naar enkele andere preparaten, terwijl de tabellen van de eerste schrijver stammen. Zij worden voorafgegaan door twee verklarende figuren met legenda (fig. 1 en 2). Het materiaal voor deze studie werd in bruikleen ontvangen uit de Nederlandse collectie van het Rijksmuseum van Natuurlijke Historie te Leiden. Bovendien leek het ons raadzaam een beknopte beschrijving van het maken van genitaal-preparaten te geven, gevolgd door een lijst van de Nederlandse soorten van Acleris, met vermelding van de namen van bekende voedselplanten; het een en ander in hoofdzaak ontleend aan een eerder verschenen werk, ,,De</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317243</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1982</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 101 - 125</dcterms:extent>
+   <dcterms:isPartOf>Het onderscheiden van de Nederlandse bladroller-soorten van het geslacht Acleris Hübner (Lepidoptera, Tortricidae) (URN:ISSN:0459-1801) (Volume 28) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317243.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148529</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317243</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

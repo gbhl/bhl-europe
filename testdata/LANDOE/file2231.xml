@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 14 (1854)</dc:title>
+   <dc:creator>Anonymus , Hinterberger  Josef, Kudelka  Josef, Pritz  Franz Xaver, Proschko  Franz Isidor, Stülz  Jodok</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Hinterberger: Die Vögel von Oesterreich ob der Enns als Beitrag zur Fauna dieses Kronlandes.     1-  112. Jodok Stülz: Schicksale des Klosters und der Umgebung von Ranshofen im baierischen Erbfolge-Krieg 1504.     1-   32. Franz Xaver Pritz: Jörg von Stein, der Herr und Regierer der Herrlichkeit Steier. Ein Bruchstück aus der Geschichte des Landes ob der Enns.     1-   42. Josef Kudelka: Die Theorie und die Erfahrung mit besonderer Rücksicht auf den Magnetismus und die Electricität.     1-   27. Franz Isidor Proschko: Streifzüge im Gebiethe der Geschichte und Sage des Landes ob der Enns.     1-  116. Anonymus: 14. Jahres-Bericht über das Museum Francisco-Carolinum.     3-    8. Anonymus: Vermehrung der Sammlungen.     9-   23. Anonymus: Verzeichniß der Aenderungen im Stande der Ehren- und ordentlichen Mitglieder des Museum Francisco-Carolinum.    24-   25. Anonymus: Summarischer Rechnungs-Abschluß.    26-   27. Anonymus: Protector: Se. kaiserliche Hoheit der durchlauchtigste Prinz und Herr Franz Carl.    29-   30</dc:description>
+   <dc:date>1854</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28482.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28482.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28482</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

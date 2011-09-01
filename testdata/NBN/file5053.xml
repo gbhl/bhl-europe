@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Les Abeilles de la sous-famille des Halictinae en Nouvelle-Guinée et dans L'archipel Bismarck (Hymenoptera: Apoidea: Halictidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Pauly A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera; Apoidea; Halictidae; taxonomy; New Guinea; Bismarck Ar- chipelago.</dc:subject>
+   <dc:description>During our studies of various collections of Halictinae from New-Guinea and Bismarck Archipelago, 54 species were found: 2 Sphecodes (subgenera Sphecodes and Callosphecodes), 3 Pachyhalictus, 1 Urohalictus, 3 Lasioglossum (subgenera Parasphecodes, Nesohalictus and Ctenonomia) and 45 Homalictus (5 Papualictus and 40 Homalictus s.str.). Among the Homalictus, 21 new species are described: H. micheneri, H. altissimus, H. filiferreus, H. flavipes, H. flammeus, H. goilalaensis, H. gressitti, H. malgiensis, H. minutus, H. morobeensis, H. pilositarsis, H. rufiscopa, H. rufopurpureus, H. scabrosus, H. scutolactescens, H. scutopruinescens, H. spinosus, H. strigilalius, H. subsphecodes, H. trigoniformis and H. wauensis. The Homalictus are classified into four groups and the species are listed (except for Australia).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317558</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1986</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 58</dcterms:extent>
+   <dcterms:isPartOf>Les Abeilles de la sous-famille des Halictinae en Nouvelle-Guinée et dans L'archipel Bismarck (Hymenoptera: Apoidea: Halictidae) (URN:ISSN:0024-1652) (Volume 227) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317558.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148844</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317558</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

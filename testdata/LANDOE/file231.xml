@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Informativ. Ein Magazin des Naturschutzbundes Oberösterreich 23 (2001)</dc:title>
+   <dc:creator>Anonym , Brands  Michael, Groß  Michaela, Hangler  Markus, Hüttmeir  Simone, Mittmannsgruber  Wieland, Muhar  Andreas, Schwarz  Martin, Schwarz  Nicole, Stöger  Silvia, Weißenbacher  Herbert</dc:creator>
+   <dc:description>Inhaltsverzeichnis: : Informativ 23     1-   28. Martin Schwarz, Nicole Schwarz: Die helle Not     3. Wieland Mittmannsgruber, Michaela Groß: Einsatz für die Bewahrung einer artenreichen und lebenswerten Heimat     4. Anonym: Aktuelles aus den Ortsgruppen     5-    7. Anonym: Der Naturschutztipp     7. Andreas Muhar: Wie sieht die Landschaft der Zukunft aus?     8-    9. Silvia Stöger: Naturschutz &amp; Wertschöpfung    10-   11. Michael Brands: Ein zweiter Naturpark für Oberösterreich    12-   13. Simone Hüttmeir: Kulturlandschaft und Landschaftsgestaltung    14-   15. Herbert Weißenbacher: Biodiversität und Eibenschutz- "Das Robin- Hood- Projekt" der önj Vöcklabruck    16-   17. Anonym: Der Luchs- geheimnisvolle Katze    18. Markus Hangler: önj St. Georgen im Attergau-  "Save Nature" lautet das Motto der önj    19</dc:description>
+   <dc:date>2001</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24324.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24324.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24324</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

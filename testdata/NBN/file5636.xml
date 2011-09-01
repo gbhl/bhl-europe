@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the species of Arthrosaura Blgr. (Teiidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>In 1904 two Teiid lizards from Surinam were described by VAN LIDTH DE JEUDE who named them: Arthrosaura versteegii and Prionodactylus kockii. Of the latter species I (1928) was able to show that it did not belong to the genus Prionodactylus but that it was also an Arthrosaura and that A. dorsistriata L. MϋLLER (1923, p. 147) was a synonym of it. The status of the different Arthrosaura-species is again discussed by Ch, E. and M. D. BURT (1931, p. 312—313) in a very interesting study on the South-American lizards in the American Museum of Natural History. At the same time these authors describe a new species, Arthrosaura tatei, from Venezuela, so that they refer four species (reticulata, versteegii, kockii, tatei) to this genus. Dealing with the two species described by VAN LITH DE JEUDE (1904, p. 89, 91) the authors write on p. 313: "It is possible that future study will show A. kockii to be a synonym of this co-extensively distributed A. versteegii" and: "It appears that three of the species of Arthrosaura (versteegii, kockii, and reticulata) are practically synonymous in details of scutellation and proportion, although future work may prove this to be untrue." On p. 312 the probable identity of Pantodactylus concolor Tschudi (1847, p. 48) is discussed: "The description of Pantodactylus concolor Tschudi (1847) from Northern Brazil is very inadequate, but in every point that is given its characters agree with those of the more recently described Arthrosaura versteegii of Van Lidth de Jeude (1904)" and on p. 313: "In view of these data and the geographical locality of the forms concerned, it appears that the two species may be identical". These statements made it worth while to re-examine the types of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318141</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1932</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 76 - 88</dcterms:extent>
+   <dcterms:isPartOf>Notes on the species of Arthrosaura Blgr. (Teiidae) (URN:ISSN:0024-0672) (Volume 15) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318141.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149427</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318141</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some new Hypeninae from the Dutch Indies</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Prout A.E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>1. Hadennia purifascia sp. n. ♂ 24 mm. Antenna with ciliation well over diameter of shaft, thickened on inner side by a tuft of scales, probably at about two-fifths shaft (both antennae are broken just beyond the thickening). The broad thickened fold on costa beneath (which is present in all Hadennia ♂♂) extends along costa almost to the origin of postmedial line and reaches, at its broadest, to just behind middle of cell, fringed behind with long hair. Palpus strongly upcurved, the 3rd segmeut laid backward over thorax, but only about 11/3 mm. in length, much shorter than in hypenalis Wlkr. (the genotype), not broadened, flattened and hollowed out (as in hypenalis) nor half buried in the scaling of thorax, as is often the case in hypenalis. Head, body and wings predominantly deep benzo-brown (or pale fuscous), the wings with an oblique whitish band from about middle of discocellulars and behind vein 6 on fore wing to hindmargin of hind wing at about 3 mm., the band about 1 mm. in breadth but not quite equal throughout; ground-colour slightly darker on each side of the white band; fore wing with a linear blackish discal lunule and a similar but rather larger and blacker postmedial lunule almost on distal edge of anterior end of the white band; apex with a broad oblique buff streak, which may, however, be due to discoloration; fringe whitish chequered with fuscous; hind wing without distinct discal lunule but with traces of a buff postmedial line, excurved at about veins 4 and 3. Underside paler, more reticulated than above, the white band interrupted by a double dark discal lunule on fore wing, by a linear discal lunule and dark irroration</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318922</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1932</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 203 - 210</dcterms:extent>
+   <dcterms:isPartOf>Some new Hypeninae from the Dutch Indies (URN:ISSN:0024-0672) (Volume 14) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318922.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150208</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318922</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

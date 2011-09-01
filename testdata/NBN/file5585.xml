@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana Nova : XXXIX. Nachträgliche Betrachtungen zu der Revision der Subfamilie Parnassiinae (Fortsetzung 12)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>VARTA Parnassius apollo manleyi Wyatt Von dieser Unterart, die C. Wyatt, 1964, Zeit. Wiener Ent. Ges. 49: 154-156 beschrieben und dort Tafel 17 fig. 1-2 die Allotype und Holotype abgebildet hat, konnte ich 5 ♂ 5 ♀ Paratypen erwerben. Der subsp. marteni Eisner, mit der der Autor die neue Unterart vergleicht, ist diese nicht sehr ähnlich; sie gleicht vielmehr stark der subsp. ardanazi Fern. (subsp. kricheldorfi Eisner, deren Synonym). Ich habe allen Zweifel, ob sich subsp. manleyi als gute Unterart erweisen wird, nachdem ich die 5 oben erwähnten Paare mit den in meiner Sammlung befindlichen Vertretern der subsp. ardanazi Fern. verglichen habe. Parnassius mnemosyne puschlavensis Eisner Nachdem ich dieses Jahr oberhalb San Carlo, Puschlav, Graubünden, Schweiz, in etwa 1100 m Höhe, eine etwas grössere Serie P. mnemosyne gefangen habe, glaube ich unter Hinweis auf die Beschreibung in Parn. nov. xviii: 1 (1958, Zool. Meded. 36) und Parn. nov. xxxv: 25 (1964, Zool. Meded. 40) eine bessere Karakteristik der Unterart geben zu können. Sie zeigt in beiden Geschlechtern deutliche lunulae, die Hinterrandsschwärze ist nicht ausgebreitet, dringt nicht in die Zelle und erreicht nicht die Analzone. ♂ 27-32 mm, ♀ 29-32 mm. ♂ mit im Vorderflügel breitem, sich bei M 3 stark verjüngendem Glasband bis Cu 1. Costalfleck einzellig. Endzellfleck oblong, Mittelzellfleck erreicht die untere Discoidale nicht. Hinterflügel mit mässigem Medianfleck, meist ohne Analflecke. ♀ im Vorderflügel mit noch breiterem Glasband bis Cu 1, Costalband bis Μ 1, deutlichem Hinterrandsfleck. Im Hinterflügel beide Augen flecke gut ausgeprägt, bei einem ♀ ver-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318090</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 143 - 149</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana Nova : XXXIX. Nachträgliche Betrachtungen zu der Revision der Subfamilie Parnassiinae (Fortsetzung 12) (URN:ISSN:0024-0672) (Volume 41) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318090.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149376</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318090</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

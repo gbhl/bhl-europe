@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Atlantic Leptolida (Hydrozoa, Cnidaria) of the families Aglaopheniidae, Halopterididae, Kirchenpaueriidae and Plumulariidae collected during the CANCAP and Mauritania-II expeditions of the National Museum of Natural History, Leiden, the Netherlands</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Ansín Agís J.</dc:creator>
+   <dc:creator>Vervoort W.</dc:creator>
+   <dc:creator>Ramil F.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Cnidaria</dc:subject>
+   <dc:subject>Hydrozoa</dc:subject>
+   <dc:subject>Leptolida</dc:subject>
+   <dc:subject>Aglaopheniidae</dc:subject>
+   <dc:subject>Halopterididae</dc:subject>
+   <dc:subject>Kirchenpaueriidae</dc:subject>
+   <dc:subject>Plumulariidae</dc:subject>
+   <dc:subject>north-eastern Atlantic</dc:subject>
+   <dc:subject>geographical distribution</dc:subject>
+   <dc:description>Forty-six species of the superfamily Plumularioidea (Hydrozoa, Cnidaria) and some material identified to the generic level, collected by the CANCAP and Mauritania-II expeditions of the Rijkmuseum van Natuurlijke Historie (now Nationaal Natuurhistorisch Museum) in the period 1976-1988, are described, as well as two other species that were used in the present study. In addition to the descriptions, synonymy, variability and geographical distribution are discussed; autoecological data and measurements are also presented. The new species described here are: Aglaophenia svobodai spec. nov., Streptocaulus caboverdensis spec. nov., S. chonae spec. nov., Antennella confusa spec. nov. and Nemertesia anonyma spec. nov. All species are figured. The general classification used follows Bouillon (1985, 1995); nomenclature on the species level is as used by Svoboda &amp; Cornelius (1991), Ramil &amp; Vervoort (1992a, 1992b), Calder (1997) and Schuchert (1997). The material originates from the seas and coasts around the Azores, Madeira, Selvagens, Canary Islands and Cape Verde Islands, as well as the Atlantic off Morocco and Mauritania, at depths varying between 0 and 4000 m. All species discussed have a wider, usually Atlantic distribution, with the exception of Streptocaulus pulcherrimus Allman, 1883, endemic in the Cape Verde area and Nemertesia belini Bedot, 1916, known only from the Azores and Cape Verde Islands.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219444</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>(CANCAP-project. Contributions, no. 125)</dcterms:alternative>
+   <dcterms:issued>2001</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 268</dcterms:extent>
+   <dcterms:isPartOf>Atlantic Leptolida (Hydrozoa, Cnidaria) of the families Aglaopheniidae, Halopterididae, Kirchenpaueriidae and Plumulariidae collected during the CANCAP and Mauritania-II expeditions of the National Museum of Natural History, Leiden, the Netherlands (Volume 333)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219444.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46286</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219444</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

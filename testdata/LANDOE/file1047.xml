@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Herpetozoa 2_1_2 (1989)</dc:title>
+   <dc:creator>Cabela  Antonia, Chondropoulos  Basil P., Grillitsch  Heinz, Neudorfer  Richard, Sattmann  Helmut</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Basil P. Chondropoulos: A checklist of Greek reptiles. II. The snakes     3-   36. Helmut Sattmann: Über die Nahrung des Bergmolches, Triturus alpestris (Laurenti, 1768), in der aquatischen Phase (Caudata: Salamandridae)    37-   49. Antonia Cabela, Heinz Grillitsch: Zum systematischen Status der Blindschleiche (Anguis fragilis Linnaeus, 1758) von Nordgriechenland und Albanien (Squamata: Anguidae)    51-   69. Richard Neudorfer: Albinotische Gelbbauchunken, Bombina variegata variegata (Linnaeus, 1758) (Anura: Discoglossidae)    71-   74</dc:description>
+   <dc:date>1989</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26897.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26897.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26897</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

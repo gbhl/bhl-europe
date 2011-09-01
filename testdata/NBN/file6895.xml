@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New Forms in the genus Erebia (Lepidoptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>A revision of the material belonging to the genus Erebia Dalman in the Rijksmuseum van Natuurlijke Historie at Leiden, mainly based on the "Monograph of the genus Erebia" by B. C. S. Warren (London, 1936), induced me to describe a number of new subspecies and aberrations, and to make some remarks on forms already described. The greater and most important part of the material is to be found in the Mezger collection, which is kept separate. It has always been indicated with the types, if they are to be found in that collection ; all other types are included in the general collection of Lepidoptera of the Rijksmuseum van Natuurlijke Historic Descriptions and remarks are following here in systematic order, according to Warren's system. Erebia eriphyle (Frr.) subsp. tristis H.-S. ab. secundo-tertiopunctata nov. ab. The typical eriphyle possesses two black spots on the forewing; specimens deviating in this respect were described as ab. tripunctata Hoffm. with three spots, and as ab. impunctata Höfn. without black spots. One of the specimens in hand, from Reichenstein, Styria, and consequently belonging to the subsp. tristis H.-S., shows the two hindmost black spots of the ab. tripunctata Hoffm., but the foremost spot is lacking. I propose the name secundo-tertiopunctata nov. ab. for this aberration. Holotype: ♂, Reichenstein, 15 VII 1923, in the Mezger collection. Erebia manto (Schiff. &amp; Dennis) subsp. osmanica Schaw. ab. subtuslutescens nov. ab., and ab. bubastis nov. ab. In his excellent monograph of the genus Erebia Warren writes that the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319400</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1946</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 271 - 280</dcterms:extent>
+   <dcterms:isPartOf>New Forms in the genus Erebia (Lepidoptera) (URN:ISSN:0024-0672) (Volume 26) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319400.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150686</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319400</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

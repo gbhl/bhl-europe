@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New bird records from Biak Island</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Junge G.C.A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>Mr. C. Hoogerheide, who was stationed at the Netherlands Naval Air Base at Biak Island between July 1953 and December 1954, brought together a small collection of birds, which was sent to the Leiden Museum. It is worth while to put on record those species, which have not been collected before on this island and to give remarks on a few other species. An excellent review of the avifauna of Biak Island is given by Mayr and De Schauensee (1939). Fregata ariel ariel (Gray) A ♂ imm. and a ♀ imm. have been collected by Mr. F. Heuberger at sea near the south coast of Soepiori between Korrido and the kampong Soëk on July 26, 1952. Through the intermediary of Dr. L. D. Brongersma the specimens were presented to the Leiden Museum. Near this island the species has been collected before only by Beccari on May 8, 1875. Mayr and De Schauensee (1939, p. 14) already pointed out that the specimen must have belonged to ariel and not to minor as Salvadori (1882, p. 405) stated. It may be added that in the Leiden Museum there are no specimens of minor from the New Guinea region. The measurements of the 2 specimens are: wing 530, 553; middle tail feathers 190, 185; outer tail feathers 308, 330; culmen 88, 88; bill from gape 107, 106; tarsus 25, 22 mm. Aviceda subcristata obscura nov. subspec. Mr. Hoogerheide collected 5 specimens on the south coast of Biak. Moreover the Leiden Museum possesses a specimen collected by Von Rosenberg at Biak on March 25, 1869. Particulars of the specimens follow here: Sex Date Wing Tail Culmen from cere Tarsus ♂ 22- 8-1953 289 168 20 32</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318304</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 231 - 237</dcterms:extent>
+   <dcterms:isPartOf>New bird records from Biak Island (URN:ISSN:0024-0672) (Volume 34) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318304.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149590</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318304</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

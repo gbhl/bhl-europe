@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Cyprian Helicellinae (Mollusca: Gastropoda Pulmonata: Helicidae), making a new start</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Helicidae; Helicellinae; taxonomy; key; Cyprus</dc:subject>
+   <dc:description>Our fragmentary knowledge concerning the Cyprian Helicellinae is revised and summarized, while new data are added. "Helicella (Xerotricha) conspurcata distinguenda" Haas, 1936, is a Helicopsis species that has to be called H. cypriola (Westerlund, 1889) as a consequence of the selection of a neotype for Westerlund's poorly described nominal taxon. "Helicella (Xerotricha) conspurcata arrouxi" sensu Haas, 1934 (not Bourguignat, 1863) is described as Helicella juglans spec. nov. This species stands apart among the Helicellinae by the lack of a separate penis. Neither material nor reliable records of Xerotricha conspurcata (Draparnaud, 1801) could be traced; only X. apicina (Lamarck, 1822) is known from Cyprus. The wide-spread "arrouxi" has also been found on the island; for nomenclatural reasons it should be called Microxeromagna armillata (Lowe, 1852). Xeropicta akrotirica spec. nov. is distinguished from small specimens of X. krynickii (Krynicki, 1833). By the selection of a neotype for Helix cyparissias Pfeiffer, 1847, this nominal taxon is stabilized as a junior synonym of Xeropicta krynickii. Xeropicta ledereri (Pfeiffer, 1856) is hypothesized to be a polytypic species with X. l. mavromoustakisi (Haas, 1933) as a subspecies. The status of Helicella (Jacosta) syrensis carinatoglobosa Haas, 1934, remains unclear. Two species that are mentioned in the literature under incorrect names, are described as new: Trochoidea (Xerocrassa) nicosiana spec. nov. and Pseudoxerophila confusa spec. nov.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318592</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1991</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 99 - 128</dcterms:extent>
+   <dcterms:isPartOf>On Cyprian Helicellinae (Mollusca: Gastropoda Pulmonata: Helicidae), making a new start (URN:ISSN:0024-0672) (Volume 65) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318592.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149878</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318592</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

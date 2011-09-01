@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on Indo-Australian Lepidoptera III. Some Rhopalocera and Netrocera from Simalur, Pulu Lasia, Pulu Babi and Sumatra</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eecke, van R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The first contribution to the knowledge of the Rhopalocera-fauna of Simalur and Pulu Babi has been published in volume XXXVI of „Notes from the Leyden Museum." At that time (1914) it was not probable that more material, besides the 54 recorded species, would reach our country in a time that can be looked over. So, I was very pleased by receiving, a year ago, a few species from the islets named above through the intervention of Mr. Edw. Jacobson, who himself has brought together the above quoted first collection from Simalur and Pulu Babi and also that from Sumatra. The second collection, principally from Pulu Lasia (Lasiak), neighbouring Pulu Babi (N. L. 2° 7', E. L. 96° 40'), has been brought together by Mr. G. Harmsen, who will spare no trouble to capture more representatives of this remarkable fauna, very different from that of Sumatra and of the islands Nias, Batu, Mentawei and Engano. If we glance at the little map, it will be clear that the fauna of Simalur and its satellite-islets, which are isolated by the ocean from Sumatra, from the Banjak islets and from Nias, must form a faunistic unity. The chief character of this fauna is a high degree of melanismus, which is most developed on the islet Pulu Babi. Nearly</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318696</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1918</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 70 - 102</dcterms:extent>
+   <dcterms:isPartOf>Studies on Indo-Australian Lepidoptera III. Some Rhopalocera and Netrocera from Simalur, Pulu Lasia, Pulu Babi and Sumatra (URN:ISSN:0024-0672) (Volume 4) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318696.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149982</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318696</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

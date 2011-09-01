@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 3 (1980)</dc:title>
+   <dc:creator>Beutler  Axel, Boeters , Falkner  Gerhard, Frör  Emil, Reichholf  Josef H., Reischütz  Peter L., Seidl  Erika, Seidl  Fritz jun., Stummer  Anton&amp;Brunhilde</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Axel Beutler, Emil Frör: Die. Amphibien und Reptilien der Nordkykladen (Griechenland)   255-  290. Josef H. Reichholf: Massenansammlung der Keiljungfer Gomphus vulgatissimus (LINNAEUS 1758-) am Neusiedler See   291-  292. Peter L. Reischütz, Fritz jun. Seidl, Boeters, Gerhard Falkner, Anton&amp;Brunhilde Stummer: Malakologische Kurzberichte (4)   293-  302. Erika Seidl: Lachmöwen (Larus ridibundus) am Futterhäuschen   303-  304. Josef H. Reichholf: Zur Jagdtechnik des Raubwürgers (Lanius excubitor) auf Kleinvögel   305-  306. Josef H. Reichholf: Faunistische Daten zur Vogelwelt der Stauseen am unteren Inn (5)   307-  316</dc:description>
+   <dc:date>1980</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25174.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25174.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25174</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

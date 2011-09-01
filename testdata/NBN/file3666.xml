@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Changes in the intertidal community structure after a mass mortality event in sandy beaches of Argentina</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Dadon J.R.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Surf clams</dc:subject>
+   <dc:subject>Mesodesma mactroides</dc:subject>
+   <dc:subject>Donax hanleyanus</dc:subject>
+   <dc:subject>sandy beaches</dc:subject>
+   <dc:subject>benthos</dc:subject>
+   <dc:subject>Argentina</dc:subject>
+   <dc:subject>species interactions</dc:subject>
+   <dc:description>After a massive mortality of the dominant species (the clam Mesodesma mactroides) occurred in 1995, changes in the intertidal community in sandy beaches of Argentina were monitored. Eight sampling stations were established in a 40 km open stretch and samples were taken every October each year up to 2001. Biomass, density, size frequency distribution and mean growth rates for the most abundant species were analyzed. During the mortality event, only the benthic stages of M. mactroides were affected, their total mean biomass diminishing from 1,399 g to 2 g per running meter beach. Post-mortality recruitment was normal and the growth rates for the youngest cohorts were similar to those previously reported. After a two years’ lag, the wedge clam Donax hanleyanus replaced M. mactroides as the dominant species, increasing from 6.0 g/m up to 24.3 g/m. However, dominance replacement did not restore the productivity of the intertidal macrobenthic assemblage and, despite the increment of D. hanleyanus stocks, the community total biomass remained &lt; 1% of the pre-mortality levels. Since 1998 on, M. mactroides and D. hanleyanus showed several peaks in abundance. Disturbance, mainly due to non-regulated fisheries, has been delaying the community recovery. Taking into account the interactions among species and human activities, the present individual resourcebased management should be replaced by an integrated systembased management program including both conservation and tourism requirements.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214338</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 27 - 39</dcterms:extent>
+   <dcterms:isPartOf>Changes in the intertidal community structure after a mass mortality event in sandy beaches of Argentina (URN:ISSN:13834517) (Volume 74, 1/2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214338.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43074</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214338</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

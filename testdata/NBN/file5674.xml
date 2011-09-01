@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Rhizocephala of the genus Loxothylacus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the collections brought together by Dr. L. B. Holthuis during a visit to Australia there is a specimen of the crab Pilumnopeus serratifrons (Kinahan) bearing the Rhizocephalan parasite Loxothylacus spinulosus Boschma. The locality of the type specimen of this parasite was mentioned as "Pacific Ocean" (Boschma, 1928, p. 172) ; in all probability it was collected in the region of the East coast of Australia, because the crab Pilumnopeus serratifrons is known from this region only. The new record gives occasion to restrict the type locality of Loxothylacus spinulosus to Mosman, Sydney, New South Wales. Examination of the specimen showed that it corresponds in all essential characters with the type specimen, while a parasite of the crab Glabropilumnus seminudus (Miers) from Hongkong, previously identified with L. spinulosus (Boschma, 1933), proved to belong to a distinct species, which is described in the present paper. Loxothylacus spinulosus is the second species of the family Sacculinidae to become known from Australian waters ; the first was Sacculina duracina Boschma, a parasite of Parthenope (Parthenope) longimanus (Leach) from Port Molle, Queensland (cf. Boschma, 1933, p. 483). In all probability at least two other species of Sacculinidae will become known from the Australian East coast, for Haswell (1888) noted the occurrence in Port Jackson of parasites of the group on the crabs Thalamita sima H. Milne Edwards and Nectocarcinus integrifrons (Latreille) ; actual specimens from this region are needed to determine the specific status of these parasites. Loxothylacus spinulosus Boschma Loxothylacus spinulosus Boschma, 1928, p. 172; 1955, p. 45 (p.p.). Material examined:</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318179</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1957</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 153 - 160</dcterms:extent>
+   <dcterms:isPartOf>Notes on Rhizocephala of the genus Loxothylacus (URN:ISSN:0024-0672) (Volume 35) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318179.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149465</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318179</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

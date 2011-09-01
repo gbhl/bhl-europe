@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Report on a few Octocorals from Eniwetok Atoll, Marshall Islands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Verseveldt J.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>In 1969 Dr. Arthur G. Humes, Boston University, Massachusetts, U.S.A., collected a number of octocorals at Eniwetok Atoll, Marshall Islands. He found that most of these corals were the hosts of copepods, just like the corals collected by him in the waters north-west of Madagascar (vide Verseveldt, 1969: 3). It was with great pleasure that I identified the corals for him. As appears from the survey of the material most of the species are wellknown, with the exception of two species one of which is redescribed below, while the other is described as a new species: Sinularia marenzelleri (Wright &amp; Studer, 1889), this species being insufficiently described by previous authors, and Sinularia brongersmai spec. nov., which is named in honour of Dr. L. D. Brongersma, to whom the present paper is dedicated. The collection is kept in the Rijksmuseum van Natuurlijke Historie, Leiden; the register numbers are preceded by the abbreviation RMNH. I express my gratitude to Mr. W. ter Spill for editorial assistance, and to Mr. G. J. Vrijmoeth for making the photographs. SURVEY OF THE MATERIAL In the collection the following species are represented: Family Clavulariidae Hickson, 1894 Pachyclavularia violacea (Quoy &amp; Gaimard, 1833); one large colony, some smaller specimens and fragments. Family Alcyoniidae Lamouroux, 1812 Lobophytum pauciflorum (Ehrenberg, 1834); several colonies. Sarcophyton trocheliophorum Von Marenzeller, 1886; a few specimens. Sinularia polydactyla (Ehrenberg, 1834); a few colonies.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318135</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 457 - 464</dcterms:extent>
+   <dcterms:isPartOf>Report on a few Octocorals from Eniwetok Atoll, Marshall Islands (URN:ISSN:0024-0672) (Volume 47) (Issue 36)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318135.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149421</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318135</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

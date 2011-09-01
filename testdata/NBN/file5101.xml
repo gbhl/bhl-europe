@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mate choice in Australian brush-turkeys Alectura lathami : a preliminary report</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Birks S.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Megapodiidae; Alectura lathami; female mate-choice.</dc:subject>
+   <dc:description>Female brush-turkeys respond to several factors when choosing with whom they will mate and where they will lay their eggs. The most important factors seem to be mound condition (especially incubation stage and digging effort required), male presence at mounds (though not necessarily male quality), and perhaps competition with other females for access to mounds. Most visits by females to mounds are for the purpose of copulation and mound "assessment" rather than egg laying. Females visit several mounds/males during the breeding season. Once they make a choice, most remain loyal to the chosen mound/male for several weeks, and are rarely seen at other mounds during this time. When switching to new mounds, females always choose more recently built ones even if older mounds with proper incubation conditions are available. Occasionally females lay eggs in the mound of one male while simultaneously seeking further copulations with another. Paternity analyses, quantification of mound characteristics, and experiments that manipulate mounds and males should lead to a better understanding of female mate choice in the future.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317606</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 43 - 52</dcterms:extent>
+   <dcterms:isPartOf>Mate choice in Australian brush-turkeys Alectura lathami : a preliminary report (URN:ISSN:0024-1652) (Volume 278) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317606.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148892</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317606</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

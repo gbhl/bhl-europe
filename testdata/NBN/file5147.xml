@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The described species of the family Sacculinidae</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>I. INTRODUCTION AND KEYS OF GENERA AND SPECIES The present paper contains the data concerning the synonymy and the figures of the Sacculinidae, compiled from the various publications dealing with species of the family, to bring the scattered data together in a general survey. The keys contain all the species that are sufficiently known to be considered distinct ; unfortunately a number of described species could not be incorporated in these keys for want of definite data concerning their structure. The keys are highly artificial, they do not give an idea of the natural subdivisions of the genera, but are only meant to show that the characters of the recognized species allow of an arrangement leading to a ready identification. If these keys are being used the preliminary identification to which they give occasion should afterwards be checked by the supplementary characters contained in the more elaborate descriptions referred to in the next chapter. Not all the described species could be inserted into the keys. In this connexion especially a number of Kossmann's (1872) species were omitted, chiefly on account of lack of definite characters. In the cited paper Kossmann described 19 species of the genus Sacculina; in connexion with the data of the present paper these may be commented upon as follows. Sacculina corculum, a well defined species, now the type of the genus Loxothylacus. Sacculina papilio, a well defined species of the family Lernaeodiscidae, placed by Van Baal (1937) in the genus Triangulus. Sacculina carinata, identified by Van Kampen &amp; Boschma (1925) with two specimens on crabs different from the original host; this identification</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317652</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 76</dcterms:extent>
+   <dcterms:isPartOf>The described species of the family Sacculinidae (URN:ISSN:0024-1652) (Volume 27) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317652.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148938</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317652</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

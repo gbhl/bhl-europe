@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De hooiwagen Nelima sempronii nieuw voor Nederland (Opiliones: Phalangiidae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Wijnhoven H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Nederland; Verspreiding; Herkenning; Biotoop</dc:subject>
+   <dc:description>The harvestman Nelima sempronii new for the Netherlands (Opiliones: Phalangiidae) On September 17, 2004 one male and three females of Nelima sempronii Szalay, 1951 were collected in Ooij, east of Nijmegen, province of Gelderland. On September 25, and October 1 and 6, 2004 an additional number of 21 male and 5 female specimens were recorded from the same locality, a river dune with an old brickstone factory, close to the river Waal. The harvestmen were found under decaying wood, stones, at wooden poles and concrete walls, under shrubs, tall grasses and hedgerows, mostly close to ground level. Data on morphology, ecology and distribution are given. Original illustrations are presented. It is suggested Nelima sempronii may well become, or already is, an indigenous species in the Dutch riverine area.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:262181</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>6</dcterms:extent>
+   <dcterms:extent>page 1 - 6</dcterms:extent>
+   <dcterms:isPartOf>De hooiwagen Nelima sempronii nieuw voor Nederland (Opiliones: Phalangiidae) (URN:ISSN:01692453) (Volume 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/262181.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/94025</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/262181</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

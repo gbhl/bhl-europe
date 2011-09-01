@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the western Palaearctic Phanerotomini (Hymenoptera: Braconidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Phanerotomini; Phanerotomella; Phanerotoma; keys; distribution; Pa- laearctic; biology.</dc:subject>
+   <dc:description>Keys are given to the Western Palaearctic genera of the subfamily Cheloninae (Hymenoptera: Braconidae), and to Western Palaearctic species of the genera Phanerotoma Wesmael and Phanerotomella Szépligeti of the tribe Phanerotomini. The genus Leptodrepana Shaw, 1983 is synonymized with the genus Ascogaster Wesmael, 1835. The genera Ichneutipterus Vachal, 1907; Tritoma Szépligeti, 1908; Szépligetia Schulz, 1911; Neoacampis Szépligeti, 1914, and Tritomios Strand, 1921 are new synonyms of the genus Phanerotoma Wesmael. The following new specific synonyms are established: Phanerotomella nigra Szépligeti, 1900 and P. flavipes Snoflák, 1951 with P. bisulcata (Herrich-Schäffer, 1838); Phanerotoma picta Snoflák, 1951 with P. diversa (Walker, 1874); P. bicolor Snoflák, 1958, P. asini Llopsis, 1967, and P. snoflaki Shenefelt, 1973 with P. planifrons (Nees, 1816); P. minor Snoflák, 1951 with Chelonus dentatus Panzer, 1805; Phanerotoma antennalis Snoflák, 1951 with Chelonus tritomus Marshall, 1898; P. rjabovi Vojnovskaja-Krieger, 1929, P. media Shestakov, 1930, P. hispanica var. desertorum Hedwig, 1957, and P. flavitestacea Fischer, 1959 with P. ocularis Kohl, 1906; P. rugiferum Wesmael, 1838 and P. platypyga Snoflák, 1951 with P. rufescens (Latreille, 1809); P. sareptana Kohl, 1906 with P. katkowi Kokujev, 1900; P. olearia Fischer, (Dec.) 1968 with P. permixtellae Fischer, (April) 1968. Nine new species are described, a neotype is designated for Chelonus dentatus Panzer, 1805 and a lectotype for Phanerotoma bilinea Lyle, 1924, P. kozlovi Shestakov, 1930, P. masiana Fahringer, 1934, and P. desertorum Hedwig, 1957. Phanerotoma hispanica Kokujev, 1899 could not be recognized among the available material. Phanerotoma gracilipes (Szépligeti, 1914) is a new combination.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317574</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1990</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 106</dcterms:extent>
+   <dcterms:isPartOf>Revision of the western Palaearctic Phanerotomini (Hymenoptera: Braconidae) (URN:ISSN:0024-1652) (Volume 255) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317574.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148860</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317574</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

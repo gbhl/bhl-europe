@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Eine neue Tornaria aus der Adria</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Zoölogie: overige</dc:subject>
+   <dc:description>In einer kurzen Mitteilung über adriatische Tornarien habe ich (4) vor Jahren beiläufig erwähnt, dass im Plankton des Triester Golfes ausser den relativ grossen Tornarien des Balanoglossus clavigerus noch eine zweite kleine Larvenform vorkommt. Diese kleine Tornaria, über welche ich seinerzeit keine näheren Mitteilungen machen konnte, habe ich nun in einigen Exemplaren und in verschiedenen Entwicklungsstadien in meinen Praeparaten aus Triest wiedergefunden und gebe ich im Folgenden eine kurze Beschreibung derselben. Bei genauerer Untersuchung hat sich nämlich ergeben, dass es sich hier nicht etwa um jüngere Entwicklungsstadien des Balanoglossus clavigerus handelt, sondern dass hier eine andere Enteropneusten-Larve vorliegt. Bei früherer Gelegenheit (8, p. 131) wurde bereits erwähnt, dass diese kleine Tornaria von Triest wahrscheinlich eine neue Form darstellt, dass sie den Tornaria-Typus I zeigt (s. d.) und wahrscheinlich einer Glossobalanus-species angehören dürfte. Es liegen mir im ganzen 13 Exemplare in verschiedenen Entwicklungsstadien der progressiven und regressiven Entwicklung angehörig vor. Das Material wurde bei den regelmässigen Planktonfängen des Fischers der damaligen K. K. Zoologischen Station in Triest zwischen dem Leuchtturme und dem Wellenbrecher von Barcola zusammen mit den Larven des Balanoglossus clavigerus gefischt. Es stammt aus der Zeit van Juni/ Juli 1911. Die Grösse der Larve ist im Krohn-Stadium ca 0.50—0.60 mm., sie gehört somit zu den kleinsten bekannten Enteropneustenlarven. Betrachten wir die einzelnen Stadien genauer, wobei bezüglich Alters-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318235</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1928</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 37 - 45</dcterms:extent>
+   <dcterms:isPartOf>Eine neue Tornaria aus der Adria (URN:ISSN:0024-0672) (Volume 11) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318235.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149521</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318235</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

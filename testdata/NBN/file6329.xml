@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On three remarkable Annelida Polychaeta</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Paralacydonia weberi n. sp. Among some Glyceridae, dredged by the Siboga-expedition at Stat. 52, south off Flores at a depth of 959 M., I met with five specimens of a Polychaet, which must be ranged among the genus Paralacydonia. This rare genus was based by Fauvel in 1913 1) on three specimens of a worm (Paralacydonia paradoxa) that holds an intermediary place between the Phyllodocidae and Nephthyidae and was found in the Mediterranean sea, south of Monaco, at a depth of about 50 M. The prostomium is conical and provided at its distal end with four bi-annular antennae; the buccal segment is without appendages. The first setigerous segment bears uniramous parapodia, whereas the following parapodia are biramous; the two lobes are separated from each other by a large distance and are provided with long cilia along their internal border. The dorsal lobe is provided with two low lips, between which a fascicle of simple bristles arises and bears a small dorsal cirrus and distally a papillous appendage. The ventral lobe also has two low lips with a fascicle of compound, heterogomph bristles and is provided distally with a large triangular appendage, whereas at its inferior side there occurs a digitiform ventral cirrus. The Siboga-specimens much resemble Paralacydonia paradoxa; however in some regards they show small discrepancies from the last named species, that's why I think they must be considered to belong to an other species, named in honour of the leader of the expedition. Paralac. weberi is much larger, one specimen measuring about 40 mm., whereas the mediterranean worm has a length of 20 mm.; the number of segments of Paralac. weberi amounts to about 100. The buccal segment and the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318834</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1923</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 221 - 224</dcterms:extent>
+   <dcterms:isPartOf>On three remarkable Annelida Polychaeta (URN:ISSN:0024-0672) (Volume 7) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318834.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150120</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318834</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

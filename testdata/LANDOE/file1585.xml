@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des Naturwissenschaftlichen Vereins an der Universitaet Wien. Bericht 1914-1917 7 (1909)</dc:title>
+   <dc:creator>Abel  Othenio, Anonymus , Becke  Friedrich Johann Karl, Folgner  Raimund, Fulmek  Leopold, Galvagni  Egon, Guttenberg  Hermann von, Hayek  August von, Janchen  Erwin Emil Alfred, Jaschke  Heinrich, Neumayer  Hans, Rogenhofer  Alois Friedrich, Stadler  Gustav, Wagner  Rudolf, Werner  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Emil Alfred Janchen: Die Cistaceen Österreich-Ungarns.     1-  124. Anonymus: Vereinsnachrichten.    14. Alois Friedrich Rogenhofer: Vorträge. Einiges über die neuere Meeresforschung.   125. Hermann von Guttenberg: Vorträge. Über Sinnesorgane im Pflanzenreich.   125-  126. August von Hayek: Vorträge. Aufgaben und Ziele der modernen Pflanzengeographie.   126. Franz Werner: Vorträge. Über Termiten.   126. Anonymus: Vereinsnachrichten.   127-  128. Othenio Abel: Charles Darwin. [Festvortrag].   129-  148. Leopold Fulmek: Stephanus serrator F., ein seltenes Hymenopteron vom Bisamberg bei Wien.   149-  151. Hans Neumayer: Über einen neuen natürlichen Standort von Pinus nigra in Kärnten.   152-  153. Egon Galvagni: Die zoologische Reise des naturwissenschaftlichen Vereines nach Dalmatien im April 1906. B. Spezieller Teil. Bearbeitung des gesammelten Materials. 13. Lepidoptera.   154-  173. Friedrich Johann Karl Becke: Vorträge. Einfluß der Gesteinsart auf die Bergformen.   174-  175. Heinrich Jaschke: Vorträge. Unser Mond.   174. Rudolf Wagner: Vorträge. Die Erforschung der Vegetation der Erde.   175-  176. Anonymus: Vereinsnachrichten.   176. Egon Galvagni: Die zoologische Reise des naturwissenschaftlichen Vereines nach Dalmatien im April 1906. B. Spezieller Teil. Bearbeitung des gesammelten Materials. 13. Lepidoptera.   177-  244. Anonymus: Vereinsnachrichten.   244. Egon Galvagni: Die zoologische Reise des naturwissenschaftlichen Vereines nach Dalmatien im April 1906. B. Spezieller Teil. Bearbeitung des gesammelten Materials. 13. Lepidoptera.   245-  254. Gustav Stadler: Die zoologische Reise des naturwissenschaftlichen Vereines nach Dalmatien im April 1906. B. Spezieller Teil. Bearbeitung des gesammelten Materials. 14. Rhynchota.   254-  258. Raimund Folgner: Vorträge. Über alte Eiszeiten.   259. Anonymus: Vereinsnachrichten.   260-  280</dc:description>
+   <dc:date>1909</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27747.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27747.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27747</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

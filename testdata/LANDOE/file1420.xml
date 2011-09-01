@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 34_1 (1991)</dc:title>
+   <dc:creator>Dvorak  Michael, Hochebner  Thomas, Kollar  Hans Peter, Laber  Johannes, Ranner  Andreas, Seiter  Marianne, Straka  Ulrich, Wagner  Siegfried, Zuna-Kratky  Thomas</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Michael Dvorak: Die ersten Brutnachweise der Weißkopfmöwe (Larus cachinnans michahellis) in Österreich und ihre Brutverbreitung im Binnenland Mitteleuropas.     1-   15. Johannes Laber: Ergebnisse der Wasservogelzählungen an der Donau in Wien und an der oberen Neuen Donau aus den Jahren 1983/84 bis 1988/89.    16-   33. Ulrich Straka: Zum Vorkommen der Schneeammer (Plectrophenax nivalis L.) in Ackerbaugebieten Niederösterreichs in den Wintern 1984/85 bis 1988/89.    34-   41. Hans Peter Kollar, Marianne Seiter: Der Einflug des Seidenschwanzes (Bombycilla garrulus) in den Donauauen östlich von Wien 1988/89 und 1989/90.    42-   49. Andreas Ranner, Thomas Hochebner, Thomas Zuna-Kratky: Ringschnabelenten (Aythya collaris) in Niederösterreich.    50-   53. Siegfried Wagner: Über Jahre andauernde alternierende Nistplatzbenützung von Haubentauchern (Podiceps cristatus) und Bläßhuhn (Fulica atra).    54-   55. Ulrich Straka: Zum Vorkommen der Brautente (Aix sponsa) in den Donauauen des Tullner Feldes (Niederösterreich).    55-   56</dc:description>
+   <dc:date>1991</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27517.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27517.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27517</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Double Teeth in the Sperm Whale (Physeter macrocephalus L.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Recently a fairly large number of teeth of the sperm whale were acquired for the collections of the Rijksmuseum van Natuurlijke Historic These teeth were picked out from an extensive material of sperm whale teeth collected in the Antarctic region and preserved by the whalers for their commercial value. Together with Dr. A. B. van Deinse at Rotterdam the author spent two days in selecting from the available material those specimens which showed peculiarities of some kind so that they might prove interesting for further examination. I want to thank Dr. Van Deinse here for his kind help in saving so many peculiar specimens for scientific purposes. Double teeth of the sperm whale are not unknown, but as far as I am aware only two instances have been described, and of one of these it is still doubtful whether it is a double tooth or not. The doubtfully double tooth is the one described by Pouchet and Beauregard (1889, pl. 6 fig. 5) and commented upon by Neuville (1928, 1932). This tooth is in the collection of the Nantucket Museum, where it was examined by Pouchet. The description and the figures in the cited papers are after a plaster cast of this tooth in the Paris Museum. The tooth has two roots which rather strongly diverge. According to Neuville (1932) no traces of grooves are found on the topmost part of the tooth. Probably therefore Pouchet's explanation is correct, assuming that the two roots have arisen on account of fusion of the lateral walls of the fang in the central part of the tooth. After this fusion each half of the fang then has grown out independently from the other half. This explanation in my opinion is preferable to the one given by Neuville (1932), who is inclined to regard this</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318658</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1938</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 211 - 221</dcterms:extent>
+   <dcterms:isPartOf>Double Teeth in the Sperm Whale (Physeter macrocephalus L.) (URN:ISSN:0024-0672) (Volume 20) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318658.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149944</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318658</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The orientation of the Saculinidae (Crustacea Rhizocephala) in respect to their hosts</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Delage (1884) and Smith (1906), two authors who published extremely important contributions on Rhizocephala, largely differed in their views concerning the morphology of these parasites. Both regarded the surface of the parasites touching the thorax of the host as the left side, but in other respects they were of a quite different opinion. Delage's (1884) ideas on the morphology of Sacculina were, as he stated himself, different from those of previous authors. In his opinion the dorsal region of the parasite is on the left side of the host, the ventral region on the right side of the host. The left side of the parasite touches the sternum of the crab, the right side the abdomen. As a matter of fact then the region of the stalk must be regarded as the anterior (in Delage's terminology "superior") part of the parasite, the region of the mantle opening as the posterior (in Delage's terminology "inferior") part. According to Delage's views consequently the mesentery is found in the ventral region of the parasite. The manner of orientation of Sacculina as proposed by Smith (1906) was largely based on comparison of the morphology with that of Peltogaster. According to Smith the mesentery determines the dorsal region. The region of the stalk is the posterior part of the parasite, the region of the mantle opening the anterior part. Consequently the surface of the parasite which is in contact with the thorax of the crab is the left side, the surface which is lying against the abdomen is the right side. In previous papers dealing with Sacculinidae I have followed Smith in distinguishing right and left side, dorsal and ventral region, anterior and posterior extremity of the parasites in exactly the same manner. In the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318718</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1948</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 302 - 305</dcterms:extent>
+   <dcterms:isPartOf>The orientation of the Saculinidae (Crustacea Rhizocephala) in respect to their hosts (URN:ISSN:0024-0672) (Volume 29) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318718.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150004</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318718</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

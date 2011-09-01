@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Monografien Naturschutz MN6 (1981)</dc:title>
+   <dc:creator>Adlbauer  Karl, Anonymus , Anschau  Mladen Josef, Baumann  Norbert, Bregant  Eugen, Elsasser  Hermann, Elsasser  Sachiko, Fachbach  Günter, Gepp  Johannes, Habeler  Heinz, Igler  Kurt, Kepka  Otto, Kreissl  Erich, Matzold  Oskar, Pretzmann  Gerhard, Stark  Wilfried, Tiefenbach  Oskar, Wolkinger  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Wolkinger: Vorwort: Rote Listen - Warnsignale für unsere bedrohte Umwelt.     9-   10. Johannes Gepp: Rote Listen gefährdeter Tiere der Steiermark. Zusammenfassung, Zweckbegründung, Bedrohungsursachen, bedrohte Lebensraumtypen und Schutzvorschläge.    11-   32. Johannes Gepp: Definition der Gefährdungskategorien.    33-   36. Otto Kepka: Rote Liste der in der Steiermark gefährdeten Säugetiere (mit einer Ergänzungsliste der bisher in der Steiermark nachgewiesenen Säugetiere) (Mammalia).    37-   42. Mladen Josef Anschau: Rote Liste der in der Steiermark gefährdeten Vogelarten (Aves).    43-   46. Günter Fachbach: Rote Liste der in der Steiermark gefährdeten Kriechtiere (Reptilia).    47-   48. Günter Fachbach: Rote Liste der in der Steiermark gefährdeten Lurche (Amphibia).    49-   50. Kurt Igler, Erich Kreissl: Rote Liste der in der Steiermark gefährdeten Fische (Pisces).    51-   54. Oskar Tiefenbach, Norbert Baumann, Oskar Matzold: Rote Liste der im Raabflußsystem (Abschnitt Gleisdorf - Jennersdorf) gefährdeten Fischarten und Rundmäuler (Pisces).    55-   58. Wilfried Stark: Rote Liste gefährdeter und seltener Libellenarten der Steiermark (Odonata).    59-   62. Erich Kreissl: Die in der Steiermark gefährdeten Käferarten (Coleoptera).    63-   78. Karl Adlbauer: Rote Liste der in der Steiermark gefährdeten Bockkäfer (Cerambycidae).    79-   84. Eugen Bregant: Rote Liste der in der Steiermark gefährdeten Prachtkäfer (Coleoptera, Buprestidae).    85-   90. Johannes Gepp: Rote Liste der gefährdeten Netzflüglerarten der Steiermark (Megaloptera, Raphidioptera und Planipennia).    91-   96. Johannes Gepp: Rote Liste der gefährdeten Schnabelfliegen der Steiermark (Mecoptera).    97-   98. Heinz Habeler: Rote Liste der in der Steiermark gefährdeten Großschmetterlinge (Makro-Lepidoptera).    99-  112. Heinz Habeler: In der Steiermark bereits ausgestorbene oder verschollene Großschmetterlinge (Makro-Lepidoptera).   113-  124. Heinz Habeler: Rote Liste der Mikrolepidopteren für die Steiermark. Als Beispiel: Familie Crambidae.   125-  130. Hermann Elsasser, Sachiko Elsasser: Rote Liste der gefährdeten Tachinen Steiermarks (Diptera, Tachinidae).   131-  134. Gerhard Pretzmann: Gefährdete Arten decapoder Krebse in der Steiermark.   135-  136. Erich Kreissl: Rote Liste der in der Steiermark gefährdeten Schnecken und Muscheln (Mollusca).   137-  148. Anonymus: A: Index lateinischer Tiernamen.   149-  157. Anonymus: B: Index deutscher Tiernamen.   158-  162</dc:description>
+   <dc:date>1981</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28796.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28796.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28796</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

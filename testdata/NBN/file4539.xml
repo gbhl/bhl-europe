@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Redefinition of Thapsia Albers, 1860, and description of three more helicarionoid genera from western Africa (Gastropoda, Stylommatophora)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Winter, de A.J.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Cameroon</dc:subject>
+   <dc:subject>Côte d'Ivoire</dc:subject>
+   <dc:subject>Gabon</dc:subject>
+   <dc:subject>Africa</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>land snails</dc:subject>
+   <dc:subject>Helicarionoidea</dc:subject>
+   <dc:subject>Thapsia</dc:subject>
+   <dc:subject>Saphtia</dc:subject>
+   <dc:subject>Pseudosaphtia</dc:subject>
+   <dc:subject>Vanmolia</dc:subject>
+   <dc:subject>Urocyclidae</dc:subject>
+   <dc:description>As presently used, the helicarionoid genus Thapsia Albers, 1860 embraces a large, heterogeneous assemblage of species. As a first step in the revision of this group of taxa, the genus Thapsia (type species Helix troglodytes Morelet, 1848) is redefined anatomically and conchologically. In the absence of alcohol-preserved material of T. troglodytes, Thapsia ebimimbangana spec. nov. from Cameroon and T. wieringai spec. nov. from Gabon are described to characterize the soft parts morphology of Thapsia. Three new genera are introduced, viz. Saphtia gen. nov. (type species S. granulosa spec. nov.), Pseudosaphtia gen. nov. (type species P. brunnea spec. nov.) and Vanmolia gen. nov. (type species Thapsia sjoestedti d’Ailly, 1896). A second species of Saphtia, S. lamtoensis spec. nov., is described to illustrate the large conchological variability of the genus. The identity of Helix calamechroa Jonas in Philippi, 1843 (now Saphtia calamechroa stat. nov.), Thapsia buchholzi Bourguignat, 1885, and Thapsia rosenbergi Preston, 1909 is briefly discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:273964</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 441 - 477</dcterms:extent>
+   <dcterms:isPartOf>Redefinition of Thapsia Albers, 1860, and description of three more helicarionoid genera from western Africa (Gastropoda, Stylommatophora) (URN:ISSN:00240672) (Volume 82) (Issue 41)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/273964.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/107613</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/273964</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

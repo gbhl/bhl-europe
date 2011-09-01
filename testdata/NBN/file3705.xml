@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Intraspecific and intrageneric variabilities and their implication for the systematics of Cretaceous heteromorph ammonites; a review</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Kakabadze M.V.</dc:creator>
+   <dc:subject>38.22 ; 42.73</dc:subject>
+   <dc:subject>ammonites</dc:subject>
+   <dc:subject>heteromorphs</dc:subject>
+   <dc:subject>dimorphism</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>Cretaceous</dc:subject>
+   <dc:description>The variability in the dimensions of the shell, and some changes in suture line, sculpture, whorl section and mode of coiling in the late ontogenetic stages, have in some cases no taxonomic significance for the recognition of genera and higher taxa of Cretaceous heteromorph ammonites. In many cases, such phenomena are due to intraspecific variation or variation within a genus. The intrageneric variations of some Cretaceous heteromorphs are discussed in detail in the light of new, rich Colombian material. In relation to these problems in systematics, some questions on the systematics of the superfamily Ancyloceratoidea Gill are considered.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214457</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 17 - 37</dcterms:extent>
+   <dcterms:isPartOf>Intraspecific and intrageneric variabilities and their implication for the systematics of Cretaceous heteromorph ammonites; a review (URN:ISSN:03757587) (Volume 128)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214457.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43191</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214457</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

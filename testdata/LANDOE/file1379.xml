@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 9_2 (1966)</dc:title>
+   <dc:creator>Bauer  Kurt, Dobler  Erwin, Herrlinger  Eberhard, Jacoby  Harald, Leisler  Bernd, Spitzenberger  Friederike, Spitzer  Gerhard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Harald Jacoby: Brandseeschwalben (Sterna sandvicensis) am Bodensee.    41-   42. Gerhard Spitzer: Das Vorkommen des Seeadlers (Haliaeetus albicilla) an der niederösterreichischen Donau und im Gebiet des Neusiedler Sees während der Winter 1964/65 und 1965/66.    43-   52. Bernd Leisler: Ein Überwinterungsversuch des Löfflers (Platalea leucorodia) am Neusiedler See.    53-   54. Eberhard Herrlinger: Ein Beitrag zur Nahrungsbiologie im Marchfeld überwinternder Saatkrähen (Corvus frugilegus).    55-   60. Kurt Bauer, Friederike Spitzenberger: Die Zwergohreule (Otus scops) in Tirol und Vorarlberg.    61. Erwin Dobler: Die Brutplätze der Felsenschwalbe (Ptyonoprogne rupestris) in Vorarlberg im Jahr 1966.    61-   63. Kurt Bauer, Friederike Spitzenberger: Weitere Brutplätze der Wacholderdrossel (Turdus pilaris) in Nordtirol.    63-   64</dc:description>
+   <dc:date>1966</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27473.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27473.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27473</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

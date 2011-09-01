@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Twee sedentaire Polychaeten uit het brakke water van Nederland</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Alkmaria romijni n. g. n. sp. Een Terebellide. Eenigen tijd geleden ontving ik van Dr. Romijn, die bezig is met een onderzoek van de Oligochaetidae der binnenwateren van Nederland, een objectglaasje, bevattende drie kleine Anneliden uit het Alkmaarder meer, door hem verzameld in December 1914. Daar in de achterste segmenten uncini zichtbaar waren, besloot ik daaruit, dat de wormpjes jeugdige toestanden van een Terebellide moesten representeeren. Zij bezitten een koplob, van twee ronde oogvlekken voorzien, gevolgd door circa 20 lichaamsegmenten; het voorste van deze draagt twee cirrusachtige kieuwaanhangsels, terwijl de 12 volgende segmenten aan de dorsale zijde een paar bundels haarborsten vertoonen en van af het 4e borsteldragende segment tori uncinigeri zichtbaar zijn. Door tusschenkomst van Dr. Romijn mocht ik eenigen tijd later een tiental volwassen wormpjes ontvangen, die in September 1918 in hetzelfde meer verzameld waren door Mejuffrouw de Lint, assistente aan het Rijksinstituut voor biologisch Visscherijonderzoek. Zij hebben een lengte van 3 mm.; het lichaam is kleurloos, vertoont echter aan de ventrale zijde der voorste segmenten een viertal donkere, smalle dwarsbanden. Het vooreinde draagt drie paar onvertakte kieuwdraden; van deze zijn de middelste de langste, terwijl de dorsale en ventrale iets korter zijn. Er zijn</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318667</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1919</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 100 - 102</dcterms:extent>
+   <dcterms:isPartOf>Twee sedentaire Polychaeten uit het brakke water van Nederland (URN:ISSN:0024-0672) (Volume 5) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318667.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149953</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318667</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

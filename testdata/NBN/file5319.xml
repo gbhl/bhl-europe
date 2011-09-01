@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A review of old world species of Thyreus Panzer (=Crocisa Jurine) (Hym., Apoidea, Anthophoridae) Part 4. Palearctic species</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Lieftinck M.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>CONTENTS Page A — GENERAL Introduction............... 3 Distribution............... 7 Comparison of different faunal regions........ 7 Host relationship and flower records......... 8 Acknowledgements ............. 9 Β — SYSTEMATIC I. Taxonomic and group characters........ 11 II. Key to the Palearctic species of Thyreus Panzer ... 13 III. Group of Thyreus dimidiatipuncta (Spinola)..... 35 IV. Group of Thyreus scutellaris (F.)........ 45 V. Other species of Thyreus Panzer........ 6r VI. Species incertae sedis........... 129 VII. Addenda............... 135 C — CATALOGUE OF PALEARCTIC SPECIES OF Thyreus PANZER AND INDEX . . 137 A — GENERAL Introduction The present account is the fourth and last instalment1) of a partial revision of Thyreus Panzer, a melectine genus of parasitic anthophorid bees, geographically restricted to the Eastern Hemisphere. 1) References to communications published earlier on the same subject are to be found in the writer's last review of the Indo-Australian fauna, which appeared in this journal (Lieftinck, 1962, Zoologische Verhandelingen, Leiden 53: 1-212, 72 figs. &amp;</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317824</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 139</dcterms:extent>
+   <dcterms:isPartOf>A review of old world species of Thyreus Panzer (=Crocisa Jurine) (Hym., Apoidea, Anthophoridae) Part 4. Palearctic species (URN:ISSN:0024-1652) (Volume 98) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317824.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149110</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317824</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

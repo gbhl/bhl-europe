@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Fig Insects from Aldabra (Hymenoptera, Chalcidoidea)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wiebes J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Aldabra, a group of coral reefs situated to the north of the Mozambique Channel, has been extensively studied by the 1967-68 Expedition of the Royal Society of London. For general information I refer to the volume that resulted from this expedition (see the reference to Renvoize, 1971). Recently, Dr. S. R. J. Woodell sent several samples of insects, collected by him from the sycones of three species of figs. The material is preserved in the collections of the Leiden museum (RMNH). The fig wasps, belonging to the Chalcidoid families Agaonidae and Torymidae, are described below, following a list and a short discussion of the collections made by Dr. Woodell. Ficus nautarum Bak. : Allotriozoon heterandromorphum Grandi ; Crossogaster cf. atratus Masi. Ficus reflexa Thunb. : Elisabethiella reflexa spec. nov. ; Crossogaster spec. ; Sycobia orientalis spec. nov. Ficus avi-avi Bl. : Nigeriella avicola spec. nov. : Sycoryctes caelebs spec. nov. There are no other records for any of the wasps from Ficus reflexa and F. avi-avi. The Allotriozoon from F. nautarum is known from several localities all over Africa and Madagascar (Wiebes, 1974b). Renvoize (1971: 231) listed F. nautarum with the species known from Aldabra and the Seychelles, and not found elsewhere. Although of a slightly different form, the Allotriozoon-wasps from Aldabra and those I have seen from Madagascar (from the sycones of Ficus baroni Bak.) and the Comores, are conspecific with those from Kenya, Zaire, and West Africa (from Ficus vogelii Miq.). This raises the question as to the specific distinction of the figs. The Sycoecine wasps from the samples with Allotriozoon seem to be conspecific with Crossogaster atratus Masi (1917: 125-126, fig. 3) from the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318926</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 225 - 236</dcterms:extent>
+   <dcterms:isPartOf>Fig Insects from Aldabra (Hymenoptera, Chalcidoidea) (URN:ISSN:0024-0672) (Volume 49) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318926.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150212</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318926</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

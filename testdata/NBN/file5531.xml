@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De fossiele en recente walrussen van Nederland</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deinse, van A.B.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>In het standaardwerk „Die Säugetiere" van Max Weber (1904) treffen wij op p. 550 de taxonomie aan van de Trichechidae, welke thans Odobenidae worden genoemd. Op genoemde pagina lezen wij: „Pliocäne Reste aus England und Belgien beweisen die frühere grössere Verbreitung". Pliocene overblijfselen uit ons land waren dus in 1904 blijkbaar nog niet bekend. In 1906 werd in Nederland de eerste duidelijke aanwijzing gevonden van een fossiele Odobenus. Een visser vond toen namelijk tegenover Breskens, Zeeuwsch Vlaanderen, in de Wester-Schelde een schedel met de beide slagtanden. Hieronder hoop ik op deze en dergelijke vondsten terug te komen. In 1927-1928 kwam de tweede druk van „Die Säugetiere" uit; Weber had zich toen verzekerd van twee medewerkers, O. Abel en H. M. de Burlet. Het omvangrijke werk verscheen nu in twee delen en in deel II (1928, p. 353) staat onder de vindplaatsen van fossiele Odobenidae ook ons land vermeld. Vindplaatsen, data en namen van de gevonden stukken worden niet genoemd, terwijl de naam van het geslacht Odobenus Brisson is veranderd in die van Trichecodon Lankester, waarbij nog aangetekend wordt, dat dit laatstgenoemde genus dichtbij de recente walrus Odobenus rosmarus (L.) staat. Wenden wij ons nu tot de gevonden resten: DE FOSSIELE WALRUSSEN VAN NEDERLAND Odobenus huxleyi (Lankester) (Pl. XIII) 1. Zomer 1906. Bij Breskens werd in de Wester-Schelde gevonden een schedel met de twee slagtanden, doch zonder onderkaak. Dit stuk kwam in handen van dr. S. Schouten, die het schonk aan het Geologisch Instituut te Utrecht. In 1907 heeft L. Rutten de schedel aldaar onderzocht en</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318036</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 187 - 205</dcterms:extent>
+   <dcterms:isPartOf>De fossiele en recente walrussen van Nederland (URN:ISSN:0024-0672) (Volume 39) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318036.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149322</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318036</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

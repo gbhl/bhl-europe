@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : III. Einige neue Formen in der Familie Parnassiidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Viele Sammler rümpfen die Nase über die Benennung von Formen. Deren Festhaltung ist indessen wichtig, um einen Überblick über die Variabilitätsbreite einer Species zu geben ; ein weiterer Vorteil der dadurch erhaltenen Übersicht ist, dass er es dem Systematiker leichter macht, die für eine subspecies characteristischen Merkmale innerhalb der Variabilitätsmöglichkeit der species festzulegen. Aus dieser Anschauung heraus benenne ich die folgenden Formen: Luehdorfia puziloi Ersch. cf f. pallida (m.). Grundfarbe des cf weissgelb, wie sie sonst nur ? zeigen. Patria : Sutschanski-Rudnik, Ussuri, ι cf Typus. subsp. coreana Mats. f. fasciata (m.). ι cf mit im Hinterflügel einer continuierlichen Binde vom Wurzelfelde über Mittelzelle nach dem unteren Ende der Hinterrandschwärze. Patria: Umg. Seishin, N. Korea, ι cf Typus. subsp. inexpecta Shelj. f. rubrocatenaria (m.). Die roten Prachtflecken des Hinterflügels sind ungewöhnlich stark entwickelt zu einer breiten Binde, wie sie für subsp. chinensis Leech typisch ist, während bei inexpecta die roten Flecke normal gerade angedeutet sind. Patria: Kanoyama, Japan, ι cf ι ? Typen. Sericinus telamon Donov. f. cellopura (m.). Mittelzellfleck im Vorderflügel oberseits verschwunden, unterseits schwach als f. binaria Bryk erhalten, Endzell fleck stark reduciert. Patria : Mien-shan, Prov. Shansi, ι cf Typus, ι cf Paratypus, ι S Paratypus (subsp. mandschuricus Rosen). subsp. shantungensis M. Hering f. cellopurissima (m.).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317923</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 55 - 57</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : III. Einige neue Formen in der Familie Parnassiidae (URN:ISSN:0024-0672) (Volume 33) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317923.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149209</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317923</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Bashkirian conodonts of the Donets Basin, Ukraine</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Nemyrovska T.I.</dc:creator>
+   <dc:subject>42.80 ; 38.22</dc:subject>
+   <dc:subject>Elephantoidea</dc:subject>
+   <dc:subject>palaeozoogeography</dc:subject>
+   <dc:subject>terrestrial fauna evolution/turnover</dc:subject>
+   <dc:subject>Southeast Asia,Sulawesi</dc:subject>
+   <dc:subject>Flores</dc:subject>
+   <dc:subject>Java</dc:subject>
+   <dc:subject>Pliocene-Pleistocene</dc:subject>
+   <dc:subject>islaconodonts</dc:subject>
+   <dc:subject>Carboniferous</dc:subject>
+   <dc:subject>Bashkirian</dc:subject>
+   <dc:subject>biostratigraphy</dc:subject>
+   <dc:subject>evolution</dc:subject>
+   <dc:subject>lineage</dc:subject>
+   <dc:subject>Donets Basinnds</dc:subject>
+   <dc:subject>prehistory</dc:subject>
+   <dc:subject>hominids</dc:subject>
+   <dc:description>The present study reports upon the conodont fauna of the Upper Serpukhovian through Lower Moscovian of the Donets Basin, Ukraine. Three new species are described: Declinognathodus? pseudolateralis, Idiognathodus praedelicatus and Idiognathoides postsulcatus. The relatively continuous, rhythmic succession of shales, siltstones and sandstones, with limestone interlayers and coal seams contains a wide variety of fossils: foraminifers, conodonts, brachiopods, ostracods, corals, gastropods, ammonoids, crinoids, bivalves, bryozoans, plant remains etc. It is therefore the key or standard section for interregional and intercontinental correlations. Additionally, the Bashkirian Stage is significant in Late Carboniferous conodont evolution as during this interval all of the Late Carboniferous and Early Permian genera originated. At the Mid-Carboniferous boundary almost all of the Early Carboniferous conodont genera became extinct. The descendants of the Early Carboniferous genus Gnathodus appeared. The species of Declinognathodus and Idiognathoides, which derived from the Gn. bilineatus s.l.-Gn. postbilineatus lineage, radiated and were widespread throughout the Bashkirian and Early Moscovian. Neognathodus species, which possibly originated from G. girtyi s.l., appeared a little later and played a subordinate role in the Donets Basin. In the middle of the Bashkirian, or a little earlier, Idiognathodus and then Streptognathodus joined the above-mentioned genera. They dominated from Moscovian through Early Permian times. The Bashkirian conodonts in the Donets succession are diverse, but Idiognathoides species prevail. As Idiognathoides seems to have had a broad environmental adaptibility it may have a correlative value together with other important Bashkirian conodonts, and thus increase the potential of the Donets Bashkirian section as a bridge for the correlation between Western and Eastern Europe, America and Asia. Ten conodont zones are distinguished here as follows: 1) Gn. bilineatus bollandensis-Ad. unicornis, 2) Gn. postbilineatus, 3) Decl. noduliferus, 4) Id. sinuatus-Id. sulcatus, 5) I. sinuosus-Id. sulcatus parvus, 6) Str. expansus, 7) Id. tuberculatus-Id. fossatus, 8) Decl. marginodosus, 9) Decl. donetzianus, and 10) Str. transitivus. The first two zones with the subjacent Lochriea ziegleri Zone comprise the Serpukhovian, the next six zones, starting with the Decl. noduliferus Zone, correspond to the Bashkirian, and the last two of those belong to the Early Moscovian, although the conodonts of the Decl. donetzianus Zone resemble the latest stage of the Bashkirian conodont evolution. The lower boundary of the Bashkirian Stage coincides with the Mid-Carboniferous Boundary as defined by the appearance of Decl. noduliferus s.l. (Lane &amp; Manger, 1985; Nemirovskaya &amp; Nigmadganov, 1994; pers. commun. of Rich Lane, August, 1998) and is drawn at the base of the limestone D58 (Nemirovskaya et al., 1990). The upper boundary of the Bashkirian in the Donets Basin is drawn at the base of limestone K3 of the C25(K) Suite. This suite (formation) contains the same conodont association as the Vereisky Horizon of the Moscow Syneclise and the Asatausky and Vereisky horizons of the Bashkirian stratotype, South Urals. It might probably be correlated with the Aegiranum Marine Band (basal Bolsovian or basal Westphalian C) of Western Europe. The uppermost Bashkirian/Lower Moscovian deposits of the Donets Basin seem to correspond to the Atokan of North America.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219055</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 115</dcterms:extent>
+   <dcterms:isPartOf>Bashkirian conodonts of the Donets Basin, Ukraine (URN:ISSN:03757587) (Volume 119)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219055.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46037</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219055</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

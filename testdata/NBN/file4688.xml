@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The nephtheid soft coral genus Gersemia Marenzeller, 1878, with the description of a new species from the northeast Pacific and a review of two additional species (Octocorallia: Alcyonacea)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Williams G.C.</dc:creator>
+   <dc:creator>Lundsten L.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Cnidaria</dc:subject>
+   <dc:subject>Anthozoa</dc:subject>
+   <dc:subject>Octocorallia: Alcyonacea</dc:subject>
+   <dc:subject>Nephtheidae: Gersemia</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>eastern Pacific</dc:subject>
+   <dc:description>A new species of nephtheid soft coral inhabiting the northeast Pacific Ocean is described from samples collected using remotely operated vehicles (ROVs) and a benthic trawl. Two hundred thirty ROV video observations provide additional information about the biogeographical distribution and habitat characteristics of this new species and are used to supplement the information ascertained from collected specimens. The species described herein is found through a broad range of depths (519-2034 m), has been observed through a latitudinal range of approximately 1581 km (33.10472°N; 47° 51.412’N), and has primarily been observed living upon hard-rock substrate. In addition, we revise the generic designation of the South African nephtheid Litophyton liltvedi and we address the status of the Northeast Pacific nephtheid previously referred to as Gersemia rubiformis.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:315887</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1067 - 1081</dcterms:extent>
+   <dcterms:isPartOf>The nephtheid soft coral genus Gersemia Marenzeller, 1878, with the description of a new species from the northeast Pacific and a review of two additional species (Octocorallia: Alcyonacea) (URN:ISSN:0024-0672) (Volume 83) (Issue 34)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/315887.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/146818</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/315887</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

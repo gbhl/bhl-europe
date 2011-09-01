@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Arbeiten aus dem Zoologischen Institut der Universität Wien und der Zoologischen Station in Triest 19 (1911)</dc:title>
+   <dc:creator>Böhm  Leopold Karl, Deiner  Elise, Grobben  Karl (Carl), Klintz  Josef H., Maidl  Franz, Miestinger  Karl, Niedermeyer  Albert, Plenk  Hans, Plenk  Josef, Secerov  Slavko, Stiasny  Gustav Albert, Storch  Otto, Werner  Franz Josef Maria, Zerny  Hans</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Slavko Secerov: Über die Entstehung der Diplospondylie der Selachier.     1-   28. Josef Plenk: Zur Kenntnis der Anatomie und Histologie der Maxillardrüse bei Copepoden.    29-   56. Gustav Albert Stiasny: Über einige postlarvale Entwicklungsstadien von Lophius üiscatorius L.    57-   74. Karl (Carl) Grobben: Die Bindesubstanzen von Argulus. Ein Beitrag zurKenntnis der Bindesubstanz der Arthropoden.    75-   98. Albert Niedermeyer: Studien über den Bau von Pteroides griseum (Bohadsch).    99-  164. Josef H. Klintz: Die enchondrale Ossifikation bei den Amphibien (Salamandra maculosa Laur.).   165-  194. Otto Storch: Untersuchungen über die paarige Afterflosse der Schleierschwänze.   195-  218. Leopold Karl Böhm: Die antennalen Sinnesorgane der Lepidopteren.   219-  246. Hans Plenk: Über Änderungen der Zellgröße im Zusammenhang mit dem Körperwachstum der Tiere.   247-  288. Karl Miestinger: Beitrag zur Anatomie und Histologie von Nephrocephalus sessilis Odhner.   289-  295. Hans Zerny: Beitrag zur Kenntnis des anatomischen Baues von Rhynchobothrius tetrabothrius v. Ben.   297-  316. Franz Maidl: Beiträge zur Kenntnis des anatomischen Baues der Branchiurengattung Dolops.   317-  346. Elise Deiner: Anatomie der Anoplocephala latissima (nom.nov.).   347-  372. Franz Josef Maria Werner: Beiträge zur Anatomie einiger seltenerer Reptilien, mit besonderer Berücksichtigung der Atmungsorgane.   373-  424</dc:description>
+   <dc:date>1911</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28992.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28992.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28992</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

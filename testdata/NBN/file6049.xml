@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Über drei neue Phoridenarten, nebst Bemerkung über dei Identität der Gattungen Parastenophora Mall. und Pseudostenophora Mall. (Phoridae, Dipt.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Schmitz H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>1. Trupheoneura octobris n. sp. ♂. — Stirn doppelt so breit wie lang, bei mehreren Exemplaren mit der Andeutung einer Mittelfurche, schwarz, matt. Beborstung der Gattung entsprechend. — Fühler schwarz, mit relativ schwach vergrössertem drittem Gliede und deutlich pubeszenter Arista. — Taster schwarz bis braun, ziemlich lang und schmal, am Unterrande mit etwa 5 ziemlich gleichen, halblangen, in annähernd gleichen Abständen eingepflanzten Haaren oder Borsten besetzt, die vorderste Borste kaum länger als die übrigen. — Thorax und Schildchen schwarz, matt; dieses zweiborstig. Mesopleuren nackt. — Hinterleib mattschwarz, die Tergite untereinander gleichlang. Hypopyg von mittlerem Umfang, sehr an dasjenige von Tr. tumidula Schmitz erinnernd, schwärzlich, an der äussersten Basis glänzend. Zangen ungleich, die linke länger. Dieselbe ist schmal, nach der Basis und der Spitze zu verjüngt, mit der grössten Breite vor der Mitte; der Umriss gleicht einem sehr stumpfwinkligen Dreieck, dessen stumpfer Winkel nach aussen gerichtet ist. Rechte Zange nicht länger als das braune Analsegment. Unterteil des Hypopygs links gegen die Spitze hin gelbbraun. — Beine heller oder dunkler braun, die Schenkel meist stark verdunkelt. Form und Beborstung etwa wie bei Tr. tumidula ♂. — Flügel grau getrübt, Randader bedeutend über die Flügelmitte hinausgehend (0,56), nach dem Ende zu kräftiger werdend, aber ohne deutliche Anschwellung, ihre Abschnitte sich verbaltend wie 15 : 11 : 7, also der 1. kürzer als der 2. und 3. zusammengenommen. Randwimpern mässig kurz. Gabel schwach länglich, 2. Längsader nicht besonders steil. Die 4. auf der Vorderhälfte verhältnismässig stark gebogen und mit</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318554</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1921</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 54 - 57</dcterms:extent>
+   <dcterms:isPartOf>Über drei neue Phoridenarten, nebst Bemerkung über dei Identität der Gattungen Parastenophora Mall. und Pseudostenophora Mall. (Phoridae, Dipt.) (URN:ISSN:0024-0672) (Volume 6) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318554.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149840</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318554</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

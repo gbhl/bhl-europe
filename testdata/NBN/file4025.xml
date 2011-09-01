@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Late Cretaceous-Early Palaeogene echinoderms and the K/T boundary in the southeast Netherlands and northeast Belgium — Part 6: Conclusions</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Jagt J.W.M.</dc:creator>
+   <dc:subject>42.72 ; 38.22</dc:subject>
+   <dc:subject>Echinodermata</dc:subject>
+   <dc:subject>Late Cretaceous</dc:subject>
+   <dc:subject>Early Palaeogene</dc:subject>
+   <dc:subject>palaeobiology</dc:subject>
+   <dc:subject>K/T boundary</dc:subject>
+   <dc:subject>extinction</dc:subject>
+   <dc:description>The palaeobiology of echinoderms occurring in the Meerssen and Geulhem members is discussed and changes in diversity across the K/T boundary are documented. Using literature data on the ecology of extant faunas, the various echinoderm groups are considered. Naturally, such data can only be applied with due caution to fossil forms, whose skeletal morphology is often incompletely known. This holds especially true for asteroids, ophiuroids, and crinoids, which, upon death, rapidly disintegrate into jumbles of dissociated ossicles. Bioturbation, scavenging, and current winnowing all contribute to blurring the picture still further. However, data on extant forms do allow a preliminary subdivision of fossil species into various ecological groups, which are discussed herein. Combining recently published data on K/T boundary sections in Jylland and Sjælland (Denmark) with the picture drawn here for the Maastricht area results in the following best constrained scenario. The demise of the highly diverse latest Maastrichtian echinoderm faunas, typical of shallow-water settings with local palaeorelief and associated unconsolidated bottoms, was rapid, suggestive of a catastrophic event (e.g. increased storm activity as a result of an asteroid impact). Following is the possible equivalent of the ‘dead zone’ of the Danish sections, capped by the Vroenhoven hardground at the base of the Geulhem Member. At present, due to the lack of bulk samples from the Geulhemmerberg sections, the range of echinoderms between the Berg en Terblijt and Vroenhoven horizons (= section IVf- 7 of the Meerssen Member) cannot be fully tested. The earliest Danian echinoderms (e.g. bourgueticrinid crinoids and goniasterid asteroids) occur in fossil hash levels resting on top of the Vroenhoven Horizon, suggesting some time-averaging to have occurred. The immigration of these elements into the study area thus seems to have been rapid. Plotted on a recently published palaeogeographical map of the K/T boundary interval in Denmark, data for the Maastricht area enable a ‘K/T boundary sea’ to be extended to well south of the Ringkøbing-Fyn High, a structural high. However, the absence of such typical elements as representatives of the echinoid genus Echinocorys and isocrinid crinoids from the lower Geulhem Member demonstrates that echinoderm settlement was strongly influenced by local conditions, depth and/or energy related. In short, echinoderm distribution across the K/T boundary in the Maastrichtian type area would indicate rapid extinction of (sub)tropical shallow-water communities, and a subsequent recovery phase characterised by (?rapid) immigration from the north/northwest, linked with an earliest Danian (post-Cerithium Kalk) transgressive pulse. Faunal links with the Danish/North Atlantic region seem to have persisted until the Middle Danian, but by that time local conditions appear to have returned to the pre-K/T boundary development of palaeorelief in the area.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219135</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 505 - 577</dcterms:extent>
+   <dcterms:isPartOf>Late Cretaceous-Early Palaeogene echinoderms and the K/T boundary in the southeast Netherlands and northeast Belgium — Part 6: Conclusions (URN:ISSN:03757587) (Volume 121)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219135.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46099</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219135</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

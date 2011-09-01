@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 3_3_4 (1951)</dc:title>
+   <dc:creator>Bukatsch  Franz, Buschmann  Adolfine, Buxbaum  Franz, Eggler  J., Fischer  Robert, Härtel  Otto, Hofmann  Elise, Kenda  Griseldis, MILICIC  Davor, Pfeiffer  Hans H., Rechinger  Karl Heinz, Thaler  Irmtraud, Urschler  Ingrid, Vareschi  Volkmar, Vouk  Valentin (Vale), Weber  Friedl, Widder  Felix Josef, Wybiral  Maria, Zimmermann  Walter Max</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Valentin (Vale) Vouk: Botanik und Phytologie.   135-  141. Volkmar Vareschi: Über die Wettbewerbsspannung in einigen alpinen und tropischen Pflanzengesellschaften.   142-  155. Ingrid Urschler: Aneurin-Gehalt UV-bestrahlter Blätter.   156-  160. Karl Heinz Rechinger: Die ausdauernden Ziziphora-Arten des Iranischen Hochlandes und seiner Nachbargebiete.   161-  172. Franz Bukatsch: Über den Einfluss verschiedener mineralischer Ernährung auf den Blattpigementgehalt.   173-  186. Irmtraud Thaler: Stomata an verlaubten Fruchtblättern.   187-  188. Ingrid Urschler: Aneurin-Gehalt verletzter Kartoffelknollen.   189-  192. Elise Hofmann: Der Dritte Karbonstratigraphische Kongress in Heerlen 1951.   193-  209. Friedl Weber: SCHARINGER-Körper fehlen den Schließzellen von Delphinium.   210-  211. Griseldis Kenda, Friedl Weber: Stomata an vergrünten Reseda-Blüten.   212-  215. Irmtraud Thaler: Morphologisches über Veronica filiformis SMITH und ihre Verwandten.   216-  226. Griseldis Kenda, Friedl Weber: Die Membran der Bromelien-Schließzellen.   227-  230. Franz Buxbaum: Ein neuer Fundort von Gentiana punctata L. -? concolor KOCH.   231. Robert Fischer, Maria Wybiral: Zur Diffusion von Saponin aus der Pflanzenzelle.   232-  241. Hans H. Pfeiffer: Vergleichend-ökologische und soziologische Beobachtungen am montanen Birkenbruch des Chiemgaues.   242-  251. Felix Josef Widder: Grundformen des pflanzlichen Phasenwechsels.   252-  272. Friedl Weber: Trypanoplasten-Viruskörper von Rhipsantis.   273-  275. Adolfine Buschmann: Zur Kenntnis von Fritillaria Meleagris.   276-  297. Felix Josef Widder: Der Duft der Clematis Vitalba-Blüten.   298-  303. Friedl Weber, Otto Härtel, Walter Max Zimmermann, Davor MILICIC, Felix Josef Widder, J. Eggler: Recensiones.   304-  320</dc:description>
+   <dc:date>1951</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30068.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30068.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30068</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

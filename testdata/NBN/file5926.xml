@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zoogeographic and Taxonomic status of the South American snake Tachymenis surinamensis (Colubridae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Myers C.W.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Introduction Tachymenis is a characteristic genus of colubrid snakes inhabiting extreme western South America, from coastal Peru and Chile east to Bolivia (Walker, 1945; Peters &amp; Orejas-Miranda, 1970). An extralimital species in Brazil, Tachymenis brasiliensis Gomes, was referred to its own genus (Gomesophis) by Hoge &amp; Mertens (1959). One additional outlying species, Tachymenis surinamensis, was described from "Surinam" by Dunn in 1922, and, until now, has seemed a zoogeographic anomaly. In the present paper, we suggest that the type specimens of T. surinamensis bear erroneous locality data, and we refer the name to the synonymy of Philodryas elegans (Tschudi, 1845), a species of the coastal deserts of western South America. For lending specimens and for permitting us to work in their respective institutions, we are grateful to Dr. James E. Böhlke and Mr. Edmond V. Malnate (ANSP), Mr. Hymen Marx (FMNH), and Dr. Ernest E. Williams (MCZ). Institutional abbreviations used in the present paper are as follows: AMNH, American Museum of Natural History, New York ANSP, Academy of Natural Sciences of Philadelphia FMNH, Field Museum of Natural History, Chicago MCZ, Museum of Comparative Zoology, Harvard University, Cambridge The type specimens of Tachymenis surinamensis Dunn The holotype of Tachymenis surinamensis is registered as MCZ 5133, incorrectly cited as no. "5123" in the original description (Dunn, 1922); the specimen is a juvenile male (hemipenial spines not ossified), for which "Surinam" is the only datum recorded in the catalogues of the Museum of Comparative Zoology at Harvard University. The second specimen, the para-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318431</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 187 - 194</dcterms:extent>
+   <dcterms:isPartOf>Zoogeographic and Taxonomic status of the South American snake Tachymenis surinamensis (Colubridae) (URN:ISSN:0024-0672) (Volume 48) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318431.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149717</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318431</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

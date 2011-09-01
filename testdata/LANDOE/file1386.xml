@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 14_1 (1971)</dc:title>
+   <dc:creator>Aschenbrenner  Leopold, Dangel  Manfred, Duda  Ernst, Haar  Helmut, Schifter  Herbert, Steiner  Hans Martin, Winkler  Hans, Wruss  Wilhelm</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Winkler: Die artliche Isolation des Blutspechts Picoides (Dendrocopos) syriacus.     1-   20. Hans Winkler: Beobachtungen an Kleinspechten Picoides (Dendrocopos) minor.    21-   24. Helmut Haar: Schreiadler (Aquila pomarina) bei Ilz.    25-   26. Wilhelm Wruss: Ein Brauner Sichler in Kärnten beobachtet.    25. Herbert Schifter: Bemerkenswertes Alter eines Säbelschnäblers (Recurvirostra avosetta L.) in Gefangenschaft.    26-   27. Manfred Dangel: Interessante Todesursache freilebender Großtrappen.    26. Leopold Aschenbrenner: Beobachtungen am Zwergschnäpper während eines Gewitters.    27-   28. Helmut Haar: Sibirische Drossel (Turdus sibiricus) im strengen Winter 1928/29 in Ilz, Steiermark.    27. Ernst Duda: Rosenstare (Sturnus roseus) an der Donau.    28-   29. Herbert Schifter: Wirkl. Hofrat DDr. Gerth Rokitansky zum 65. Geburtstag.    30-   31. Wilhelm Wruss: Amtsrat i. R. Odo J. Klimsch gestorben.    30. Hans Martin Steiner: Verstorben.    30. Leopold Aschenbrenner: XV. Weltkonferenz des Internationalen Rates für Vogelschutz.    31-   34. Herbert Schifter: Jahrestagung 1971 in Murau (Steiermark).    34-   35</dc:description>
+   <dc:date>1971</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27480.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27480.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27480</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

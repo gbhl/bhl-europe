@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 118 (1988)</dc:title>
+   <dc:creator>Engenhart  Manfred, Ernet  Detlef Rainer, Fenninger  Alois, Gepp  Johannes, Grill  Dieter, Hafellner  Josef, Heritsch  Haymo, Holzer  Hans Ludwig, Horak  Peter, Kaschnitz  Andrea, Kreissl  Erich, Lazar  Reinhold, Lieb  Gerhard Karl, Loeschke  Jörg, Manser  Pius, Melzer  Helmut, Plass  Norbert, Pongratz  Waltraud, Punz  Wolfgang, Rössler  Wilhelm, Scholger  Robert, Stattegger  Karl, Zimmermann  Arnold</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Johannes Gepp: Kustos Dr. Erich Kreissl - 60 Jahre.     5-   16. Wilhelm Rössler: Zur Geschichte des Institutes für systematische Botanik (heute: Institut für Botanik) der Karl-Franzens-Universität Graz.    17-   88. Haymo Heritsch: Thaumasit von Klöch, Oststeiermark: Röntgendaten, chemische Analyse und optische Konstanten.    89-   94. Jörg Loeschke: Zur Geochemie basischer Vulkanite aus dem Grazer Paläozoikum.    95-  105. Alois Fenninger, Robert Scholger, Karl Stattegger, Pius Manser, Norbert Plass: Sedimentgeologische Untersuchungen an Stauraumsedimenten der Mur: Eine Vorstudie am Beispiel der Staustufe Mellach.   107-  118. Reinhold Lazar, Gerhard Karl Lieb: Witterungsspiegel 1986 für die Steiermark (unter besonderer Berücksichtigung von Graz).   119-  130. Reinhold Lazar, Gerhard Karl Lieb: Witterungsspiegel 1987 für die Steiermark (unter besonderer Berücksichtigung von Graz).   131-  143. Dieter Grill, Josef Hafellner, Waltraud Pongratz, Andrea Kaschnitz: Neuerliche Erhebung der epiphytischen Flechtenvegetation in Graz.   145-  155. Helmut Melzer: Neues zur Flora von Steiermark, XXX.   157-  171. Wolfgang Punz, Manfred Engenhart: Zur Vegetation von Blei-Zink-Halden im Raum Mariazell.   173-  176. Arnold Zimmermann: Übersicht über die flächig verbreiteten Vegetationstypen des Mur-Quertales zwischen Bruck a. d. Mur und Frohnleiten.   177-  184. Johannes Gepp, Erich Kreissl: Zum gegenwärtigen Stand des Vorkommens der Gottesanbeterin, Mantis religiosa L., in der Steiermark (Insecta, Mantodea).   185-  191. Peter Horak: Faunistische Untersuchungen an Spinnen (Arachnida, Araneae) pflanzlicher Reliktstandorte der Steiermark</dc:description>
+   <dc:description>II: Weizklamm und Raabklamm.   193-  201. Hans Ludwig Holzer: Geschäftsbericht über das Vereinsjahr 1987.   209-  212. Detlef Rainer Ernet: Tätigkeitsbericht 1987 der Floristisch-geobotanischen Arbeitsgemeinschaft in der Fachgruppe Botanik des Naturwissenschaftlichen Vereins für Steiermark.   213-  217</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28665.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28665.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28665</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

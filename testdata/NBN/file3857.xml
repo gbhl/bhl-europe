@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The West Palaearctic species of the genera Gildoria Hedqvist and Platyspathius Viereck, with keys to the species (Hymenoptera: Braconidae: Doryctinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Doryctinae</dc:subject>
+   <dc:subject>Gildoria</dc:subject>
+   <dc:subject>Dendrosotinus</dc:subject>
+   <dc:subject>Platyspathius</dc:subject>
+   <dc:subject>Spathiohormius</dc:subject>
+   <dc:subject>Lenticulara</dc:subject>
+   <dc:subject>Morocco</dc:subject>
+   <dc:subject>France</dc:subject>
+   <dc:subject>Canary Islands</dc:subject>
+   <dc:subject>Europe</dc:subject>
+   <dc:subject>Palaearctic</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:subject>new species.</dc:subject>
+   <dc:description>The West Palaearctic species of the genera Gildoria Hedqvist, 1974, and Platyspathius Viereck, 1911 (Braconidae: Doryctinae) are revised. Five new species are described and illustrated: Gildoria elongata spec. nov. from Canary Islands, G. gijswijti spec. nov. from France, G. iberica spec. nov. from Spain, G. striata spec. nov. from Morocco and Platyspathius europaeus spec. nov. from France and Italy. The genus Gildoria is re-instated, Gildoria anthaxiae (Belokobylskij, 1983), G. grandis (Fahringer, 1930), G. planus (Ratzeburg, 1848), G. similis ( Bouc˘ek, 1955) and G. titubata (Papp, 1985) are new combinations, and Dendrosotinus ilanotensisC ˘ apek, 1992, is synonymized with Gildoria titubata (Papp, 1985). Doryctes lenticularis Granger, 1949, is designated as type species of the subgenus Lenticularia nov. from Madagascar. A key to the species of both genera is added.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216152</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 267 - 290</dcterms:extent>
+   <dcterms:isPartOf>The West Palaearctic species of the genera Gildoria Hedqvist and Platyspathius Viereck, with keys to the species (Hymenoptera: Braconidae: Doryctinae) (URN:ISSN:00240672) (Volume 77, 15-36)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216152.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44275</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216152</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

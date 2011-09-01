@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Corallimorpharia collected during the CANCAP expeditions (1976-1986) in the south-eastern part of the North Atlantic*</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hartog, den J.C.</dc:creator>
+   <dc:creator>Ocaña O.</dc:creator>
+   <dc:creator>Brito A.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Corallimorpharia; Corallimorphidae; Corallimorphus; Corynactis; Pseudocorynactis; Sideractis; Nectactis; nematocysts; ontogeny; distribution; feeding; CANCAP-project; south-eastern North Atlantic; Macaronesia.</dc:subject>
+   <dc:description>Species of Corallimorpharia collected during the CANCAP expeditions in the south-eastern part of the North Atlantic are described and discussed, altogether five species belonging to three genera of Corallimorphidae: the shallow water forms Corynactis viridis Allman, 1846, Pseudocorynactis caribbeorum den Hartog, 1980, and P. caboverdensis spec. nov., and the deep-sea forms Corallimorphus cf. atlanticus Carlgren, 1934, and C. ingens Gravier, 1918. The taxonomic status of the representatives of the genus Corynactis Allman, 1846, is discussed. All temperate to subtropical species described so far belong to a group of closely related allopatric taxa forming the Corynactis viridis-complex, possibly representing a single species only. The colours of Corynactis viridis sensu stricto (i.e. the species occurring in the Mediterranean and the south-eastern North Atlantic) are quite variable throughout its distributional range, but not necessarily so in any given area within this range. In the Canary Islands orange to orange-brown forms predominate, suggesting a considerable degree of genetic isolation of at least this population. Noticeable sympatric variation is shown to occur in the cnidom of Corynactis viridis, notably with respect to the presence of penicilli D in the column. This variation ranges from the condition in which there are two distinct, about equally common size classes, to the condition in which the largest sizeclass is totally absent. These extremes are connected by a gradual range of intermediates in which the large category varies in frequency. The small size-class is invariably present in significant numbers, as a rule rather to very common. Pseudocorynactis caribbeorum, so far exclusively known from the Caribbean, is recorded for the first time from the eastern Atlantic Canary Islands. A second species, P. caboverdensis spec. nov., tentatively included in this genus, is reported from the Cape Verde Islands. An atypical variety of penicilli D, present in some species of the genus Corallimorphus Moseley, 1877, reminescent of, and previously confused with penicilli E (= "classical holotrichs") is described and depicted for C. atlanticus. The discovery of this variety challenges the conception that the tube of the "classical holotrichs" should be regarded as a shaft, stamping them as penicilli (= p-mastigophores or p-rhabdoids) as advocated by Cutress (1955) and den Hartog (1980). The ontogenetic development of the tentacular arrangement of Corallimorphus ingens is discussed, and speculations are presented on the feeding habits of Corallimorphus spp. and Nectactis singularis Gravier, 1918. Sideractis glacialis Danielssen, 1890, previously recorded from subarctic and arctic latitudes in the eastern Atlantic, is here reported for the first time from the Mediterranean. It was also not previously known that this species is capable of asexual reproduction by pedal laceration and that its tentacular acrospheres are characterized by the presence of atrichs sensu stricto, a nematocyst type so far only reported from a limited number of species of Actiniaria. Sideractis glacialis and Nectactis singularis representing the only two species contained in the family Sideractidae Danielssen, 1890, are transferred to the Corallimorphidae R. Hertwig, 1882, implicitly degrading Sideractidae to a subjective junior synonym of Corallimorphidae.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317646</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1993</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 76</dcterms:extent>
+   <dcterms:isPartOf>Corallimorpharia collected during the CANCAP expeditions (1976-1986) in the south-eastern part of the North Atlantic* (URN:ISSN:0024-1652) (Volume 282) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317646.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148932</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317646</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

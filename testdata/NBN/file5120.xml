@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A systematic review of the Indo-Australian Zosteropidae (Part II)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>INTRODUCTION In this, the second part of my revision of the Zosteropidae, 26 species are dealt with, all belonging to the genus Zosterops. The remaining 12 species of the genus and all the other genera, will be treated in the third part, the preparation of which is in progress. Unfortunately, it becomes more and more clear that no revision of the Pacific forms of the Zosteropidae can be really satisfactory without a visit to the American Museum of Natural History, where all the material of the Tring Museum and of the Whitney South Sea Expedition is assembled. Even though the co-operation of the authorities of that museum is above praise, I have usually been able to examine part of their series only, and no type specimens at all. More important is that the American Museum has the field-notes of the various collectors of the Whitney South Sea Expedition, probably the only extant notes on many species. These notes have not been accessible to me, so that I am not able to present anything new concerning habitat, abundance, nidification, etc. of the species concerned. Circumstances in Perth, without a basic reference collection and with insufficient literature, are difficult, and were it not for the fact that nearly all the comparative work, and also the survey of literature, had been done before I left Europe, it would have been impossible to complete this part. As it is, however, I feel satisfied that it is not far below the standard of the first part. Inevitably, partly as a result of recently published work, additions and corections to part one of this review have become necessary. Rather than include them here, I intend to publish them at the end of the third part.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317625</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1961</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 168</dcterms:extent>
+   <dcterms:isPartOf>A systematic review of the Indo-Australian Zosteropidae (Part II) (URN:ISSN:0024-1652) (Volume 50) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317625.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148911</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317625</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

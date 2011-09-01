@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some nomenclatorial corrections to 'Investigations on Stylasteridae (Hydrocorals)' 1942</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Broch H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>When discussing the genus Errina in my paper "Investigations on Stylasteridae (Hydrocorals),, (1942) I arrived at the conclusion held by Hickson (1912) that the species of the genus should be grouped in two, or possibly three, subgenera. It was pointed out that Hickson had erroneously used the designation "the Labiopora group" for the subgenus containing the type species Errina aspera (L.), and accordingly I proposed to name this subgenus Eu-Errina. For the other subgenus, viz., "the Errina group" of Hickson, the type species of which is Errina labiata Moseley, I introduced the name Labiata. A third group, viz., "the Spinipora group" of Hickson, was only casually mentioned by me, as I had no representative of this group at hand. The only species of this group known at that time was Errina echinata (Moseley). As, unfortunately, the Nomenclator Zoologicus (Neave, 1939-1940) was not accessible to me until recently, I was not aware that the name Labiata had been already used by Fabricius for a genus of Molluscs in 1823. Accordingly it will be necessary to introduce a new name for this subgenus of Errina. I thus propose to change this to Inferiolabiata. This name, moreover, has certain advantages in that it embraces the main character of the subgenus, viz., its waterspout-like spines which are connected with the mouths of the dactylozooid pores, which may be regarded as adumbrations of protruding, lower lips. In this connexion the Spinipora group of Hickson might well be discussed. Here also the name, Spinipora, is preoccupied according to Neave: it was introduced by Agassiz in 1846 (emend, pro Spinopora Blainville, 1830) for a bryozoan genus. Moseley used it in 1879 f°r a Stylasterid genus, and Hickson</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318346</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1951</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 125 - 127</dcterms:extent>
+   <dcterms:isPartOf>Some nomenclatorial corrections to 'Investigations on Stylasteridae (Hydrocorals)' 1942 (URN:ISSN:0024-0672) (Volume 31) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318346.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149632</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318346</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

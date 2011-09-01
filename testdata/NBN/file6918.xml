@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Hipparions of the Laetolil Beds, Tanzania</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>The Laetolil Beds in Tanzania, 20-30 miles south of Olduvai Gorge, have been extensively sampled by parties under the leadership of Mrs. Dr. Mary D. Leakey, who very kindly sent me Hipparion material collected in 1974, 1975, and 1976. In a restudy of proboscidean material from these beds described by Dietrich (1942), Maglio (1969) arrived at the conclusion that the Laetolil fauna represents two distinct horizons, one seemingly correlating best with Kanapoi, Yellow Sands (= Mursi Formation), Chemeron, and Kanam, and younger deposits correlating best with the later Omo Beds, possibly antedating Olduvai Bed I but only by a short time interval. This has been confirmed by radiometric dating: the Laetolil Beds with the older fauna are bracketed in time between 3.8 and 3.6 million years whereas the lava flows unconformably overlying them are dated at 2.4 million years. The younger deposits which are to be named Ndolanya Beds, therefore, have an age older than 2.4 million years, and have also produced fossils (Leakey et alii, 1976). The fossiliferous deposits in the Laetolil area have been subdivided into 26 localities from most of which I received Hipparion material, all collected in situ. Two localities, 7 East and 18, are in the Ndolanya Beds, while the others are in the Laetolil Beds (Mary Leakey, personal communication). The fossils found in situ are cream coloured or white, sometimes chalky in texture. Surface material also including brown, grey or black specimens, often rolled, has been excluded. It is among the surface material that Equus is represented. However, there is no evidence that the equid material from the Laetolil Beds proper includes any genus but Hipparion. I am most grateful to Mrs. Mary Leakey for entrusting this material to me; it comes from a critical time phase in the evolution of African hipparions as</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319423</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 15 - 33</dcterms:extent>
+   <dcterms:isPartOf>Hipparions of the Laetolil Beds, Tanzania (URN:ISSN:0024-0672) (Volume 54) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319423.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150709</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319423</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carinthia II 142_62 (1952)</dc:title>
+   <dc:creator>Attems  Carl August, Demelt  Carl von, Friedrich  Othmar Michael, Hölzel  Emil, Klimsch  Odo J.G., Krajicek  Egon, Löhr  Ludwig, Meixner  Heinz, Paschinger  Viktor, Reisinger  Erich, Steinhäusser  Hans, Treven  Karl, Trojer  Felix</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Steinhäusser: Die Naturgewalten des Lesachtales     5-   14. Karl Treven: Das Witterungsjahr 1951 in Klagenfurt    15-   17. Viktor Paschinger: Bemerkungen zur Schneedeckendauer imalpinen Draugebiet    18-   26. Heinz Meixner: Neue Mineralfunde in den österreichischen Ostalpen XII.    27-   46. Carl von Demelt: Ein Beitrag zur Biologie von Semanotus undatus L.(Käfer, gebändeter Scheibenbock) Mit 10 Abbildungen des Verfassers    46-   49. Carl August Attems: Eine Chalandea im Obirgebiet (Aus der Ordnung der Tausendfüßler und der Familie der Erdkriecher)    50-   52. Erich Reisinger: Zur Fischfauna Kärntens    52-   56. Ludwig Löhr: Der Getreidebau als Faktor bergbäuerlicher Dauersiedlung    56-   73. Felix Trojer: Der Phasenaufbau einer römischen "Eisenhüttenschlacke" vom Magdalensberg    73-   80. Heinz Meixner: Die Steine und Fassungen von Ring und Anhänger der hl. Hemma aus dem Dome zu Gurk in Kärnten. 1 Teil: Die Steine    81-   88. Emil Hölzel: Ameisen Kärntens    89-  132. Egon Krajicek, Othmar Michael Friedrich: Die Kärntner Erzlagerstätten. 1.Teil: Kärntner Quecksilberlagerstätten   133-  149. Odo J.G. Klimsch: Vogelkundliche Tagebuchblätter zum Jahre 1951   151-  152. Karl Treven: Jahresbericht 1951- Fachgruppe für Entomologie   153-  154. Karl Treven: Fachgruppe für Mineralogie und Geologie   154. Karl Treven: Fachgruppe für Meteorologie und Hydrologie   154</dc:description>
+   <dc:date>1952</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26103.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26103.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26103</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

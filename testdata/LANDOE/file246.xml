@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Informativ. Ein Magazin des Naturschutzbundes Oberösterreich 37 (2005)</dc:title>
+   <dc:creator>Anonym , Kleesadl  Gerhard, Limberger  Josef, Luger  Manfred, Pfosser  Martin, Pöstinger  Mario, Punz  Johann, Strauch  Michael, Wimmer  Lilly, Wöß  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: : Informativ 37     1-   20. Anonym: Jahreshauptversammlung 2005     3. Anonym: Natur findet Stadt     3. Manfred Luger: Naturgärten - lebendige Gärten     4. Anonym: Der Naturschutztipp     5. Anonym: Natur findet Stadt im Garten     5. Mario Pöstinger: Moorsanierung "Rote Auen"     6. Michael Strauch: Ankauf eines wertvollen Halbtrocken- 
+rasens in "kurioser" Umgebung     7-    8. Josef Limberger: Endlich verordnet - 
+das Naturschutzgebiet Koaser     9-   11. Gerhard Kleesadl, Martin Pfosser: Die Küchenschelle in Oberösterreich 
+- ist sie noch zu rette    12-   13. Anonym: Wegweiser durch NATURA 2000    13. Johann Punz: Artenvielfalt auf Betriebsflächen 
+erhöhen    14-   15. Lilly Wimmer: "Tropfsteinhöhle im Hangenden 
+Kogel" bei Ebensee    16-   17. Franz Wöß: Mark Wöss- der neue Bezirksbeauftragte für Linz-Land und Eferding    18</dc:description>
+   <dc:date>2005</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24339.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24339.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24339</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

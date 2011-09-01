@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 14_1_2 (1970)</dc:title>
+   <dc:creator>Ahmed  Muneer (Munir?), Ali  Syed  Irtifaq, Batanouny  Kamal Hassan, Batanouny  Mohiey, Dakshini  Krishna Mohdan Madan, Dvorak  Frantisek, Ehrendorfer  Friedrich, Faruqi  Ahmad Shamim, Gailhofer  Manfred, Gleink  Hans-Otto, Guedes  Michel, Gupta  Pushpendra Kumar, Härtel  Otto, Jeanplong  Joseph, Jones  Henry G., Joshi  Mohan Chandra, Kantz  G., Khalifa  Taha, Khan  Asif Mohammed, Nigam  Bishan Chandra, Schimmer  Oskar, Schwarz  Otto, Singh  Rajenda, Srivastava  Suresh Chandra, Udar  Ram, Wagner  Waldemar, Widder  Felix Josef, Wolkinger  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Muneer (Munir?) Ahmed: Ecology of Ranunculus laetus.     1-    8. Pushpendra Kumar Gupta: Variability in the Morphology of Rye (Secale cereale) Chromosomes when placed in Wheat (Triticum aestivum) Background.     9-   13. Rajenda Singh: Studies on the Transmission of Benincasa Masaie by Myzus Persicae.    15-   21. Krishna Mohdan Madan Dakshini: Studies in the Identification of Compositae Taxa by Paper Chromatography.    23-   30. Henry G. Jones: Studies in Brassavola.    31-   35. Kamal Hassan Batanouny, Taha Khalifa: Contribution to the autecology of Urginea maritima in Egypt.    41-   53. Franz Wolkinger: Das Vorkommen lebender Holzfasern in Sträuchern und Bäumen.    55-   67. Manfred Gailhofer: Der Einfluss von Huminsäure auf die Aktivität einiger Enzyme in Tomatenstecklingen.    69-   78. Kamal Hassan Batanouny, Mohiey Batanouny: Autecology of common Egyptian Fagonia species .    79-   92. Joseph Jeanplong: Données complémentaires à la flore du Nord-Viêt-Nam, II.    93-   95. Hans-Otto Gleink, Oskar Schimmer, Waldemar Wagner: Titel.    97-  111. Frantisek Dvorak: Does the Genus Iodanthus TORR. &amp; GR. Subsume under the Tribe Hesperidae?   113-  117. Bishan Chandra Nigam, Mohan Chandra Joshi: Primary production and respiration in the leaves of two Zaleya govindia.   119-  123. Otto Schwarz: Eine bemerkenswerte neue Amphoricarpus-Art aus Südwest-Anatolien.   125-  133. Asif Mohammed Khan, Syed  Irtifaq Ali, Ahmad Shamim Faruqi: Breeding system and population structure in the Aerva javanica complex.   135-  145. Michel Guedes: Le gynécée de quelques Bignoniacées, avec des précisions sur les notions de carpelle pelté et de gynoécée syncarpe.   147-  163. Ram Udar, Suresh Chandra Srivastava, Suresh Chandra Srivastava: Sporeling Development in Preissia quadrata.   165-  173. Felix Josef Widder: Herbartechnik (II): Die Thermostatpresse.   175-  180. Franz Wolkinger, Otto Härtel, Felix Josef Widder, G. Kantz, Friedrich Ehrendorfer: Recensiones.   181-  211</dc:description>
+   <dc:date>1970</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30098.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30098.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30098</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

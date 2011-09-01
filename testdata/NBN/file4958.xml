@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Detection of trace elements in apatite crystals from Panasqueira, Portugal, by non-destructive optical methods, especially polarospectrography</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Lagerwey A.A.F.</dc:creator>
+   <dc:subject>Mineralogie</dc:subject>
+   <dc:description>A selection of well developed apatite crystals of different habit and colour, originating from the tungsten-tin deposits of Panasqueira in Portugal, were analyzed by means of non-destructive optical methods. Phenomena of pleochroism, absorption and luminescence line-spectra, broadband-spectra and phosphorescence were studied. On the basis of extensive and systematic data, obtained from more than sevenhundred polarized spectrophotograms, registered of about seventy apatites from different types of deposit, and of a whole range of fluorapatites, doped with lanthanides and transition elements, it was possible to define the particular type of crystalfield and the nature and quantity of a number of trace elements, present in the fluorapatite from Panasqueira. Strong pleochroism is observed in green crystals from Panasqueira. The blue colourcomponent, intensely polarized parallel with the main axis and concentrated in topologically significant areas at the intersection of (0001) and (1120), is explained by the presence of 01- electron defects in the halogen-ion chains. The yellow-green coloration, which is not perceptibly polarized, and is distributed evenly throughout the volume of the crystals, is caused by MnO41- ions replacing (P04)3- anionic groups. Absorption line-spectra reveal the presence of 110 ppm of Nd3+ in Ca2+ sites in a representative crystal, and make it possible to assign the Panasqueira apatite to a group of typical apatites, characterized by their crystalfield-configuration; the apatites from the tin-tungsten deposits near Ehrenfriedersdorf in Saxony also belong to this group. Luminescence line-spectra do manifest the same typical fieldeffects in the Pr and Nd line groups. The presence was established of the following ions: Pr3+ (11 ppm), Nd3+ (110 ppm), Sm3+ (55 ppm), Eu3+ (10 ppm), and Dy3+ (25 ppm). Traces of Tb3+ could also be detected, but lanthanides with an atomic number higher than 66 could not be found. By comparison of the distributions of the lanthanide elements in the apatites from Panasqueira and in an average apatite, statistically defined, it is demonstrated that the lanthanides of higher atomic number are significantly enriched. Broadband-luminescence spectra demonstrated the presence of Mn2+ ions in a Ca2+ site (0.2% by weight), with an intensity maximum near 580 nm. Eu2+ (&amp;lt; 10 ppm) is concentrated in the basal layers of a special type of crystal; the blue luminescence has a maximum at 450-430 nm. Phosphorescence-effects are thought to be caused by Mn2+ in Ca2+ sites of different coordination. There is a rather narrow green emissionband with a maximum near 550 nm. Finally, the existence of a correlation between specific assemblies of variables, such as: external distinctive marks, crystalfield-configuration and quantitative distribution of lanthanides, which are characteristic for certain constitutional types of apatite, is outlined.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317463</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 52</dcterms:extent>
+   <dcterms:isPartOf>Detection of trace elements in apatite crystals from Panasqueira, Portugal, by non-destructive optical methods, especially polarospectrography (URN:ISSN:0375-7587) (Volume 42)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317463.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148749</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317463</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

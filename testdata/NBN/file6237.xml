@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the mouthparts of Eukoenenia mirabilis (Grassi) (Arachnidea: Palpigradida)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the course of the last years, I have been investigating the morphology of various groups of mites. During this comparative study, special attention has been paid to the gnathosoma, which organ represents the specialized structure of the mouthparts in this subclass. Recently, while summarizing my results on the phylogeny of the gnathosoma (Van der Hammen, 1969), it appeared necessary to start from a more primitive Arachnid condition in which the chelicerae are still in front of the palps; at the same time, just as in the mites, the coxisternal region of the palp should be present, and the mouth should be in front of the chelicerae. This condition is indeed still found in one primitive order of Arachnidea, viz., the Palpigradida. Representatives of this group are, as a rule, only rarely met with. In 1962 and 1964, however, my colleague Dr. J. Travé (Laboratoire Arago, Banyulssur-Mer) kindly presented me with a series of twelve specimens of Eukoenenia mirabilis (Grassi, 1885) collected by him and Mr. Y. Coineau at various localities near Banyuls-sur-Mer, a classical locality of the species. I am extremely grateful to Dr. Travé and Mr. Coineau for supplying me with this very important material. The species was originally described as Koenenia mirabilis (cf. also Grassi, 1886), and as such it is still mentioned in literature. Petrunkevitch (1955: P118), however, discovered that the name Koenenia Grassi (1885) is preoccupied by Koenenia Beushausen (1884). For this reason he replaced it by Eukoenenia, a name originally introduced by Börner (1901: 551) for the typical subgenus of Koenenia. The type-species of Eukoenenia Borner, (1901), consequently, is the type-species of Koenenia, viz., Koenenia mirabilis Grassi.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318742</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 41 - 45</dcterms:extent>
+   <dcterms:isPartOf>Notes on the mouthparts of Eukoenenia mirabilis (Grassi) (Arachnidea: Palpigradida) (URN:ISSN:0024-0672) (Volume 44) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318742.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150028</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318742</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

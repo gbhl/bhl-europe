@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biological results of the snellius expedition : XXVII. Faviidae collected by the snellius expedition. II. The genera favites, Goniastrea, Platygyra, Oulophyllia, Leptoria, Hydnophora and Caulastrea</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wijsman-Best M.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>INTRODUCTION This paper forms the second part of the report dealing with the Faviidae collected during the Snellius Expedition. For the general introduction I refer to part I (Wijsman-Best, 1974). The genera dealt with in the present article, Favites, Goniastrea, Platygyra, Oulophyllia, Leptoria, Hydnophora and Caulastrea were with three exceptions collected at the same localities as the specimens of Favia. For the explanations of localities 1-17 I refer to article I. The additional three localities are (see map fig. 1): 18. Amboina (18 May 1830). By reef and shore collecting on 6th May some material was obtained at Wainitoe. From 2-8 May the mantri Erie accompanied Dr. P. H. Kuenen on his trip to the neighbouring island Haroekoe and collected animals on the shore and from the reefs. 19. Paleleh, north coast of Celebes (22 Aug. 1929). Collections were made on the reefs, which have a rich coral fauna. A finely branched Millepora is a very common form here. Some Gorgonids and Antipatharians were collected by diving. 20. Batoe Ata ("Hagedis Eiland"). As a result of the high tide very few animals could be obtained from the shore. By diving at some distance from the shore, at a depth of 6-8 m, corals and other animals were collected. Species of Acropora of a plate-like horizontal growth form with delicate branches occur here as common forms, they may attain enormous sizes (diameter of the colonies up to 3 m). Of the genera here dealt with the following species have been collected: Favites pentagona (Esper, 1794); F. melicerum (Ehrenberg, 1834); F. rufa Wijsman-Best, 1972; F. chinensis (Verrill, 1866); F. acuticollis (Ortmann,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317984</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 45 - 63</dcterms:extent>
+   <dcterms:isPartOf>Biological results of the snellius expedition : XXVII. Faviidae collected by the snellius expedition. II. The genera favites, Goniastrea, Platygyra, Oulophyllia, Leptoria, Hydnophora and Caulastrea (URN:ISSN:0024-0672) (Volume 50) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317984.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149270</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317984</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

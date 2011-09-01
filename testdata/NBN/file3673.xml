@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A hitherto unnoticed adaptive radiation: epitoniid species (Gastropoda: Epitoniidae) associated with corals (Scleractinia)</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Gittenberger A.</dc:creator>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Indo-Pacific; parasites; coral reefs; coral/mollusc associations; Epitoniidae; Epitonium; Epidendrium; Epifungium; Surrepifungium; new species; new genera; Scleractinia; Fungiidae; Fungia</dc:subject>
+   <dc:description>Twenty-two epitoniid species that live associated with various hard coral species are described. Three genera, viz. Epidendrium gen. nov., Epifungium gen. nov., and Surrepifungium gen. nov., and ten species are introduced as new to science, viz. Epidendrium aureum spec. nov., E. sordidum spec. nov., Epifungium adgranulosa spec. nov., E. adgravis spec. nov., E. adscabra spec. nov., E. marki spec. nov., E. nielsi spec. nov., E. pseudolochi spec. nov., E. pseudotwilae spec. nov., Surrepifungium patamakanthini spec. nov., and ‘Epitonium’ crassicostatum spec. nov. and ‘E.’ graviarmatum spec. nov. Although their identities as separate gene pools are convincingly demonstrated by molecular data, some of these species cannot be identified unequivocally on the basis of conchological characters alone. The shell shape and sculpture are only partially diagnostic because of interspecifically overlapping character states. In most of these cases, the operculum, jaw structure, radula, spawn and/or the habitat do reveal the identity. Most of these species are associated with only one or a restricted number of coral host species and have large ranges, similar to those of their hosts.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214349</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 125 - 203</dcterms:extent>
+   <dcterms:isPartOf>A hitherto unnoticed adaptive radiation: epitoniid species (Gastropoda: Epitoniidae) associated with corals (Scleractinia) (URN:ISSN:13834517) (Volume 74, 1/2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214349.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43091</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214349</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 64 (1977)</dc:title>
+   <dc:creator>Anonym , Anonymus , Bertel  Erminald, Burmann  Karl, Fischer  Maximilian, Heiss  Ernst, Kofler  Alois, Kormilev  Nicholas Alexander, Kuhnert-Brandstätter  Maria, Lerch  Josef, Mahnert  Volker, Märk  Elmar, Märk  Tilmann D., Mostler  Helfried, Pahl  Max, Pitschmann  Hans, Schröder  Johannes Horst, Schulz  Norbert, Trawöger  Alois</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Max Pahl, Elmar Märk, Erminald Bertel, Tilmann D. Märk: Fission track measurement of the decay constant for spontaneous fission of 238U.     7-   11. Helfried Mostler: Zur Palökologie triadischer Holothurien (Echinodermata).    13-   40. Josef Lerch: Zur Frage der Wirkung exogener und enogener Faktoren bei der Phasenentwicklung der Blätter des Apfelbaumes (Malus domestica Bork.).    41-   66. Alois Kofler: Nachtrag zur Faunistik der Weichtiere (Mollusca) Osttirols.    67-   87. Volker Mahnert: Pseudoskorpione (Arachnida) aus dem Tien-Shan.    89-   95. Ernst Heiss, Nicholas Alexander Kormilev: Five new Aradidae from the oriental region (Insecta: Heteroptera).    97-  106. Alois Trawöger: Der Alpenwollafter, Eriogaster arbusculae Frr. Ein Beitrag zur Kenntnis und Erforschung der alpinen Schmetterlingsfauna (Insecta: Lepidoptera, Lasiocampidae).   107-  132. Karl Burmann: Gelechiiden aus Gebirgslagen Nordtirols (Österreich) (Insecta: Lepidoptera, Gelechiidae).   133-  146. Maximilian Fischer: Die Opiinen und Alysiinen einer Ausbeute aus Osttirol (Insecta: Hymenoptera, Braconidae).   147-  154. Norbert Schulz: Untersuchungen zur Biologie der Seesaiblinge (Salvelinus alpinus (L.)) (Pisces: Salmonidae) im Achensee (Tirol, Österreich). Teil II: Fortpflanzung.   155-  169. Johannes Horst Schröder: Testing mutagenicity in mice by scoring agonistic behaviour of males.   171-  177. Johannes Horst Schröder: Methyl methanesulfonate-induced mutations in spermatozoa and spermatids of the mouse (Mus musculus).   179-  203. Hans Pitschmann: Nachruf auf em. o. Univ.-Prof. Dr. phil. Helmut Gams (1893-1976).   207-  222. Maria Kuhnert-Brandstätter: Nachruf auf em. Univ.-Prof. Dr. med. Dr. h.c. Otto Schaumann (1891-1977).   223-  229. Anonymus: IV. Vereinsnachrichten.   237-  238. Anonym: Berichte des Naturwissenschaftlich-Medizinischen Vereins in Innsbruch   241-  242</dc:description>
+   <dc:date>1977</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27282.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27282.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27282</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

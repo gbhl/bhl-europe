@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischen Verein Innsbruck 1 (1880)</dc:title>
+   <dc:creator>Albert  Eduard, Anonymus , Mayr  P. Matthaeus, Untersteiner  Alois</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Alois Untersteiner: Bericht der syphilitisch-dermatologischen Klinik des Professor Dr. Eduard Lang für das Solarjahr 1878. Mit einer Vorbemerkung von Prof. Lang.     1-   78. P. Matthaeus Mayr: Rhynchota Tirolensia. II. Hemiptera homoptera. (Cicadinen).    79-  101. Eduard Albert: Zur Mechanik der menschlichen Sprungbeingelenke.   102-  106. Anonymus: Bericht über die Behandlungsweise der Tuberculose auf der medicinischen Klinik in Innsbruck, erstattet von der am 29. October 1879 gewählten Commission.   107-  122. Anonymus: Verzeichniss der gelehrten Gesellschaften und Vereine, mit denen der naturwissenschaftlich-medicinische Verein in Tauschverbindung steht.   123-  126. Anonymus: Personalstand des Vereines im Jahre 1879/80.   127-  131. Anonymus: Sitzungsberichte. (III-XVI.)</dc:description>
+   <dc:date>1880</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27232.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27232.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27232</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

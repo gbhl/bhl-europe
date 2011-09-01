@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wiener Entomologische Zeitung 45 (1928)</dc:title>
+   <dc:creator>Anonymus , Benick  Ludwig, Bernhauer  Max, Borgmeier  Frei Thomas, Heinze  Erich, Hetschko  Alfred, Jedlicka  Arnost, Korschefsky  Richard, Müller  Josef (Giuseppe), Plavilstshikov  Nikolaj Nikolajevitsch, Poche  Franz, Roubal  Jan, Schmidt  Edmund, Schmitz  Hermann, Schoenemund  E., Wainwright  Colbran Joseph, Wasmann  Erich P.S.J.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Frei Thomas Borgmeier: Zur Kenntnis der myrmecophilen Phoridengattung Commoptera BRUES (Dipt.).     1-    7. Jan Roubal: Coleopterologische Notizen.     8-   10. Erich Heinze: Bemerkungen über einige mit Lema armata F. verwandte afrikanische Arten nebst Beschreibung dreier neuer Arten und einer neuen Subspezies. 5. Beitrag zur Kenntnis der Criocerinen (Col., Chrysomel.).    11-   20. Ludwig Benick: Zwei neue afrikanische Stenus-Arten (Col., Staph.).    20-   23. Franz Poche: Über Stiles eigenmächtige Änderung der Internationalen Nomenklaturregeln.    23-   27. Jan Roubal: Zwei neue Coleopteren aus der Tschechoslovakei.    27-   30. Ludwig Benick: Amerikanische Steninen (Col., Staph.).    33-   52. Edmund Schmidt: Die Cicadellinen des Stettiner Museums (Hemiptera - Homoptera).    53-   90. Jan Roubal: Brosus Lutshniki sp.n. (Coleopt. Carab.).    90-   91. Arnost Jedlicka: Neue paläarktische Carabiciden II (Coleopt.).    92-   96. Colbran Joseph Wainwright: Mr. Charles H.T. TOWNSENDs descriptions. A protest.    96-   99. Alfred Hetschko: Notiz über Parapleurus alliaceus GERM.(Orthopt.).   100. Anonymus: Notizen.   104. Max Bernhauer: Zur Staphylinidenfauna des tropischen Afrika, insbesonders des Kongostaates. (20. Beitrag.).   105-  121. Richard Korschefsky: Bemerkungen über afrikanische Epilachninen mit Beschreibung zweier neuer Arten.   122-  125. Josef (Giuseppe) Müller: Zwei neue Amaurops-Arten aus der Herzegowina nebst Bemerkungen zur Systematik der Gattung Amaurops (Col. Pselaph.).   126-  132. Hermann Schmitz: Zwei neue Phoriden aus Deutschland.   132-  135. Erich P.S.J. Wasmann: Aus dem Leben einer Ameise.   136-  153. Nikolaj Nikolajevitsch Plavilstshikov: Aus dem Leben einer Ameise.   154-  157. E. Schoenemund: Über die Larven der Ephemeropterengattung Chitonophora BGTSS.   158-  163. Anonymus: Druckfehler.   168. Anonymus: Notiz.   170</dc:description>
+   <dc:date>1928</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26535.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26535.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26535</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

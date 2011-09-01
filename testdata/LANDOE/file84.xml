@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Linzer biologische Beiträge (LBB) 20_1 (1988)</dc:title>
+   <dc:creator>Breuß  Othmar, Dollfuss  Hermann, Frank  Christa, Gusenleitner  Josef, Madl  Michael, Moczar  Laszlo, Pils  Gerhard, Robatsch  Karl, Rücker  Thomas, Schwarz  Martin, Türk  Roman, Üblagger  Johanna, Warncke  Klaus, Wittmann  Helmut, Wolf  H., Zettel  Herbert</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hermann Dollfuss: Faunistische Untersuchungen über die Brauchbarkeit von Grabwespen (Hymenoptera, Sphecidae) als Umweltindikatoren durch Vergleich neuer und älterer Aufnahmen von ausgewählten Lokalfaunen im östlichen Österreich.     3-   36. Martin Schwarz: Die europäischen Arten der Gattung Idiolispa FÖRSTER (Ichneumonidae, Hymenoptera).    37-   66. Thomas Rücker: Beiträge zur Pilzflora des Bundeslandes Salzburg, Österreich. Das Gebiet der Glasenbachklamm, Grundfeld 8244/2.    67-   78. Helmut Wittmann, Roman Türk, Johanna Üblagger: Nigritella stiriaca (K. RECH.) TEPPNER &amp; KLEIN - neu für Österreich und Salzburg.    79-   82. Klaus Warncke: Isolierte Bienenvorkommen auf dem Olymp in Griechenland (Hymenoptera, Apidae).    83-  117. Laszlo Moczar: Revision on the Subgenus Priesnerius MOCZAR (Hymenoptera, Ceropalidae).   119-  160. Karl Robatsch: Beiträge zur Kenntnis der europäischen Epipactis-Arten (Orchidaceae).   161-  172. Josef Gusenleitner: Über Eumenidae aus Thailand, mit einer Bestimmungstabelle für orientalische Labus-Arten (Hymenoptera, Vespoidea).   173-  198. Herbert Zettel: Eine neue Phanerotoma-Art aus Saudi-Arabien (Hymenoptera: Braconidae, Cheloninae).   199-  202. Othmar Breuß: Beitrag zur Flechtenflora Mallorcas.   203-  215. H. Wolf: Über einige von GUSSAKOVSKIJ, F. MORAWITZ und RADOSZKOVSKI beschriebene sowie Bemerkungen zu einigen anderen Wegwespen-Arten (Hymenoptera: Pompilidae).   217-  252. Gerhard Pils: Floristische Beobachtungen aus dem Mühlviertel (Oberösterreich).   253-  281. Gerhard Pils: Gegenwart und Vergangenheit in den Arealgrenzen österreichischer Gefäßpflanzen.   283-  311. Christa Frank: Die Mollusken der österreichischen Donau, der Auengebiete und der angrenzenden Biotope von Linz bis Melk.   313-  400. H. Wolf: Ein Zwitter von Agenioideus sericeus (VAN DER LINDEN) (Hym., Pompilidae).   401. Michael Madl: Über Gasteruptiidae von Kreta (Hymenoptera, Evanioidea).   403-  410</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/106.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/106.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=106</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

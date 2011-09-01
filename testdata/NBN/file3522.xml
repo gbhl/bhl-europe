@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On two rare species of caridean shrimp from the hydrothermal fields Lucky Strike and Menez Gwen on the Mid-Atlantic Ridge</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Fransen C.H.J.M.</dc:creator>
+   <dc:creator>Biscoito M.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Caridea</dc:subject>
+   <dc:subject>Plesionika alexandri, re-description, Periclimenes kornii</dc:subject>
+   <dc:subject>Mid-Atlantic Ridge</dc:subject>
+   <dc:description>During the DIVA-2 cruise (May 31 - July 4, 1994, see Desbruyères et al., 1994) and the PICO cruise (June 25 – July 11, 1998, N/O Nadir, PI: D. Desbruyères) to the Azores Triple Junction Area, two rare species of caridean shrimp were collected. Seven specimens of the pandalid Plesionika alexandri (A. Milne Edwards, 1883) were collected at the Lucky Strike hydrothermal vent field (37°20’N), and one specimen of the pontoniine Periclimenes kornii (Lo Bianco, 1903), at the Menez Gwen hydrothermal vent field (37°50’N). These hydrothermal vent fields are located on the Mid-Atlantic Ridge SW of the Azores. Both species of shrimp are only known from a few specimens. The original description of Plesionika alexandri was based on an incomplete specimen. It is now re-described on the bases of the present material</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:198485</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 45 - 53</dcterms:extent>
+   <dcterms:isPartOf>On two rare species of caridean shrimp from the hydrothermal fields Lucky Strike and Menez Gwen on the Mid-Atlantic Ridge (URN:ISSN:0024-0672) (Volume 80-4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/198485.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/38057</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/198485</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

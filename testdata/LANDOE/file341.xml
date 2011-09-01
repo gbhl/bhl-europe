@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 96 (1956)</dc:title>
+   <dc:creator>Donner  Josef, Ehrenberg  Kurt, Haybach  Gabriele, Höfler  Karl, Kasy  Friedrich, Kühnelt  Wilhelm, Marcuzzi  Giorgio, Schiller  Josef, Tschermak  Leo, Wendelberger  Gustav, Werneck  Heinrich Ludwig</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Kurt Ehrenberg: Elise Hofmann, Nachruf     5-    6. Gustav Wendelberger: Rudolf Scharfetter, Nachruf     7-    9. Josef Schiller: Carl J. Cori, Nachruf    10-   11. Karl Höfler: Wiliam Seifriz, Nachruf    12-   13. Karl Höfler: Felix Eugen Fritsch, Nachruf    14-   15. Wilhelm Kühnelt: Lebensformen und Entwicklungsrichtungen der Muscheln    16-   41. Friedrich Kasy: Vergleichende Untersuchungen über die Transpiration von Schmetterlingspuppen verschiedener Ökologie und Entwicklungsweise bei hohem Sättigungsdefizit    42-   72. Josef Donner: Die Rädertierart Habrotrocha bidens (Gosse)    73-   94. Giorgio Marcuzzi: Die Fauna der Dolomiten    95-  110. Leo Tschermak: Untergang der Wildobsthölzer und damit des Obstbaues auf bodenständiger Unterlage durch Kahlschlag und Fichtenreinkultur?   111-  113. Heinrich Ludwig Werneck: Römischer und vorrömischer Wein- und Obstbau im österreichischen Donauraum   114-  131. Gabriele Haybach: Zur Ökologie und Soziologie einiger Moose und Moosgesellschaften des nordwestlichen Wienerwaldes   132-  168</dc:description>
+   <dc:date>1956</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24540.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24540.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24540</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

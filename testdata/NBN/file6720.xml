@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Two new species of Hesperiidae from Western Kenya (Lepidoptera, Hesperiidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jong, de R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The belt of lowland forest that stretches from West Africa eastward ends in a number of isolated forests in East Uganda and West Kenya, the most eastern extremity being the Kakamega Forest in the Western Province of Kenya, about 50 km north of Kisumu. Although impoverished as compared with the Congolese fauna, the fauna of these isolated forests is interesting, because much subspeciation has taken place there (Carcasson, 1964). In some cases the isolation appears to have led even to speciation, and below two new species are described from the Kakamega Forest. The former, Celaenorrhinus lourentis, is a member of a wide-spread genus of forest species, most of which (17 out of 23 African species) occur in the Cameroon and Congolese region. The second species, Metisella kakamega, however, belongs to a genus that is particularly distributed in Eastern Africa; several species are confined to the East African highland forests and the apparently closest relative of M. kakamega, viz., M. medea Evans, is such a highland forest species. This illustrates the statement of Carcasson (1964), that many of the isolated forests at the eastern extremity of the lowland forest belt merge with highland forest. This phenomenon of merging makes these forests the more interesting and we are greatly alarmed at the progressing deforestation and conversion into production forest of the Kakamega Forest. Without a speedy general timber-felling prohibition the Kakamega Forest will certainly not reach the end of the century and may even have vanished, or at least finish to be a natural forest, within ten years. Celaenorrhinus lourentis spec. nov. Male (holotype). — External characters (pl. 1, figs. 1-2). Length of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319225</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 299 - 306</dcterms:extent>
+   <dcterms:isPartOf>Two new species of Hesperiidae from Western Kenya (Lepidoptera, Hesperiidae) (URN:ISSN:0024-0672) (Volume 49) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319225.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150511</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319225</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

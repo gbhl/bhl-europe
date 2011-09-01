@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the Thysanura (Insecta, Apterygota) of the Canary Islands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wygodzinsky P.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The present paper constitutes a report on the Machilidae and Lepismatidae collected by Dr. C. O. van Regteren Altena in the Canary Islands in the spring of 1947. We are much obliged to Dr. van Regteren Altena for allowing us to study these interesting specimens. The first notice on Thysanura from the Canary Islands seems to be the mentioning of Machilis maritima by Lucas (1836-44). Unfortunately it is quite impossible nowadays to identify that species as understood by Lucas. Ridley (1881) mentions three species from the Canary Islands, viz., Lepisma saccharina L., from Tenerife and Gran Canaria; Lepisma mauritanica Lucas, from Las Palmas (Gran Canaria) and Lepisma eatonii Ridley, from Tenerife. L. saccharina has apparently not been found again on the Islands; anyhow we do not see any reason to doubt its presence there. Lepisma mauritanica, actually included in the genus Ctenolepisma, is a species that is rare as well as very difficult to identify; Ridley's specimens were most probably nothing else but dark Ctenolepisma lineata, a species common in the Islands. Finally Lepisma eatonii, whose correct name should be Ctenolepisma lineata eatonii, is nothing more than a colour form of Ctenolepisma lineata, which may not deserve even subspecific rank. Escherich (1905) also mentions Ctenolepisma lineata eatonii from Tenerife. Silvestri (1940) gives the first record for Lepisma myrmecobia Silvestri from the Islands (Gran Canaria and Tenerife). Wygodzinsky (1941) described Dilta insulicola from Tenerife. In the present paper an additional species of Dilta, Dilta altenai sp. n. is described from Tenerife, and several of the formerly known species of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318216</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1952</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 225 - 232</dcterms:extent>
+   <dcterms:isPartOf>Notes on the Thysanura (Insecta, Apterygota) of the Canary Islands (URN:ISSN:0024-0672) (Volume 31) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318216.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149502</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318216</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

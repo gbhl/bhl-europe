@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: Überlegungen zu einem "Haus der österreichischen (Zeit)Geschichte"</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Karner S.</dc:creator>
+   <dc:subject>Geschiedenis van de aardwetenschappen</dc:subject>
+   <dc:description>The installation of a „Haus der Geschichte Österreichs im 20. Jahrhundert" is incorporated in the programme of the Austrian Government, based on a preliminary study by the author. It should be realised in 2006 and will include the history of the Austrian Republic from 1918 to the present, emphasising the history of the First and Second Republic, and the Third Reich. Original sources will be collected and made available to schools, officials, the media and private persons. The development of Austria is seen as part of the development of Europe and, as such, also as part of the history of the World. Emphasis is placed on subjects to which Austria had an obligation, such as documents on the persecution and killing of Jews, Roma and Sinti, as well as the exile of Austrians from Central European countries. Further, its special position in the 1950s at the Iron Curtain during the Cold War is of interest. The „Haus der Geschichte der Republik Österreich" will have four aspects, to be discussed in some detail: 1) Museum with exhibitions; 2) Research network; 3) Data storage; 4) Services. Economic history will be used as an example and in it mining history will have a special place. Local companies, their products and the captains of industry are important for society. So far, little research has been done on important events, such as the gradual change from guided economy to market economy, the influence of the Marshall plan and the „Staatsvertrag", or the availability of raw materials (ore, water, oil, and wood). The study of the archives of the allied nations (the four occupants, Americans, British, French and Russians) would be of great interest, and company archives in Austria should be studied and preserved. The institutes for economical history are to pay attention to this problem. Of special interest are the external contacts of the different regions of Austria, e.g., Steiermark and Carinthia with northern Italy and Slovenia; Tyrol and Vorarlberg with southern Germany, northern Italy and Switzerland; Salzburg and Upper Austria with Bavaria; and Lower Austria and Burgenland with Hungary, the Czech Republic and Slovakia.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317299</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 158 - 179</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: Überlegungen zu einem "Haus der österreichischen (Zeit)Geschichte" (URN:ISSN:0922-4564) (Volume 4) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317299.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148585</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317299</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

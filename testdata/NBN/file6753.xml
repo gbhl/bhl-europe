@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie : Part III. Coreinae, Second Part</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Blöte H.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>SPARTOCERINI Menenotus lunatus de Cast. 1-2. Brazil, Dupont. — 3. Brazil, van Vollenhoven — 4. Brazil, Dohrn. — 5-6. Brazil. — 7. Sao Paulo, Staudinger 1932. Spartocera batatas F. 1. St. Vincent, Hope. — 2. ?. — 3-75. Post Groningen, Suriname, W. C. van Heurn. — 76. Suriname, Leesberg. — 77. ?, van Eyndhoven. — 78. Palume, Tapanahoni expedition, van Stockum, 1904. — 79. Paramaribo, 1900, Dr H. van Capellen. — 80. Suriname, van Brussel, from Fokker's collection. Spartocera brevicornis Stål. 1-5. Montevideo, Deyrolle. — 6. Uruguay, Meyer-Dür. — 7. Ensenada, near Buenos Aires, 1893, Dr H. ten Kate. Spartocera cinnamomea Hahn. 1. St. Martin, Parzudaki. — 2. Hohenau, Paraguay, Staudinger 1932. — 3-4. ?, Staudinger 1932. Spartocera denticulata Stål. 1-3. Brazil, Calkoen. — 4. Brazil, Deyrolle. — 5. Brazil. — 6. ?, van Vollenhoven. — 7. Suriname, van Eyndhoven. Spartocera dentiventris Berg. 1(-2?). Espirito Santo, Staudinger 1932. Spartocera fusca Thbg. 1-6. Rio de Janeiro, Museum Berlin. — 7. St. Vincent, Hope. — 8. Antigua, Hope. — 9. ?, from Hope's collection. — 10-11. Antilles, Parzudaki. — 12-13. Brazil, Deyrolle. — 14-16. Uruguay, Meyer-Dür. — 17. St. Martin, 1869, Rijgersma. — 18. Caracas, van Lansberge. — 19-24. ?. — 25-27. Huanuco, 1934, Ir de Voogd. Spartocera granulata Stål. 1. ?, Staudinger, 1932. Spartocera pantomina Dist. 1. Ambata. Equador (Paratype of S. ortonedai Montd.), from Fokker's collection. Spartocera quadricollis Sign. 1-2. Coroico, Bolivia, Staudinger 1932.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319258</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1936</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 23 - 66</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie : Part III. Coreinae, Second Part (URN:ISSN:0024-0672) (Volume 19) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319258.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150544</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319258</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

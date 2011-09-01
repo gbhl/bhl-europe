@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De corticole fauna van platanen: i. Arachniden (Arachnida: Araneae, Pseudoscorpiones, Acari)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Noordijk J.</dc:creator>
+   <dc:creator>Berg M.P.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Waardplanten</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Biologie</dc:subject>
+   <dc:description>The corticolous fauna of plane trees: I. Arachnids (Arachnida: Araneae, Pseudoscorpiones, Acari) From February until September 2000 an inventory was made of the bark-dwelling arthropod fauna of more than 400 plane trees (Platanus hybrida), all over the Netherlands. Arthropods were collected from bark and under the ‘loose’ bark fragments at a height of 160-175 cm from the ground. Algae, mosses and fungi are important resources for the corticolous fauna. Crevices in the tree trunk and loose bark fragments form a habitat for a large number of arthropods. The corticolous fauna is adapted to an extreme microclimate, caused by fluctuations in temperature, wind, humidity and water availability. Since plane trees are mostly planted in cities and along roads, air pollution is an additional stress factor. In total 31 species of spiders, 1 species of pseudoscorpion, and 3 species of oribatid mites were recorded. In this paper the results are presented with location maps, with notes on the presence on the stems and their ecology. Although the species composition varied from location to location, no clear distribution patterns for the individual species were observed. Only the pseudoscorpion, Chernes cimicoides, seems to be limited to the southern part of the country. Two spider species, Zygiella x-notata and Anelosimus vittatus were only recorded in spring. The other species were recorded during the whole investigation period or were only incidentally observed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:218636</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2001</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 13 - 32</dcterms:extent>
+   <dcterms:isPartOf>De corticole fauna van platanen: i. Arachniden (Arachnida: Araneae, Pseudoscorpiones, Acari) (URN:ISSN:01692453) (Volume 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/218636.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45868</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/218636</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>In Memoriam E.D. van Oort 1876 - 1933</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bayer Ch.</dc:creator>
+   <dc:subject>42.01 ; 42.83</dc:subject>
+   <dc:subject>E. D. van Oort</dc:subject>
+   <dc:subject>obituary</dc:subject>
+   <dc:description>On September 21st last Professor Dr. E. D. van Oort died at Leiden rather suddenly. For a considerable time his health had, indeed, been indifferent; on frequent occasions he had been unwell for shorter or longer periods, and in the spring of this year he was even obliged to apply for a four months' leave of absence. When after the expiry of this period, apparently recovered, he resumed his work, be it only for a few hours daily, we fostered the hope to have him among us for many years to come. Fate, however, decided differently. On Thursday morning he came to the museum, feeling better than on the previous days; he received the visitors cheerfully, and left the building past noon. Three hours later death had overtaken him. Eduard Daniel van Oort was born at Barneveld on October 31st, 1876. Already in early boyhood he felt drawn to nature, and spent a great part of his leisure-hours, nay even occasionally of his schoolhours, in the open, watching the animals, and especially the birds, in their natural surroundings. His teacher in biology at the Secondary School at the Hague, the late Dr. Ed. Everts, the well-known coleopterist, stimulated his love to the animal world, leading it into the right channels and assisting him with advice and help in forming his collections. This once roused interest determined his career. In 1895 he went to the University at Leiden, where he studied botany and under Professor Hoffmann zoology. Afterwards he was for some years (1900â1904) assistant of Professor K. Martin, director of the "Rijks Geologisch-mineralogisch Museum" (National Geological and Mineralogical Museum). He arranged there i. a. the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318980</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 263 - 265</dcterms:extent>
+   <dcterms:isPartOf>In Memoriam E.D. van Oort 1876 - 1933 (URN:ISSN:0024-0672) (Volume 16) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318980.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150266</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318980</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

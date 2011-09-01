@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Three new species of Bomolochidae (Copepoda, Cyclopoida) from Tropical Atlantic Tunnies</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Vervoort W.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Dr. J. F. Aldrin, Sous Direction de Pêche, Abidjan, Côte d'Ivoire, during an extensive survey of tropical Atlantic Tunnies, discovered the presence of Cyclopoid Copepods of the family Bomolochidae in the nasal fossae of three species of tunnies, viz., Euthynnus alleteratus (Rafinesque), Auxis thazard (Lacépède) and Sarda sarda (Bloch). The material was placed into my hands for study by mediation of Dr. R. Repelin, Director, Centre de Recherches Océanographiques, Abidjan, Côte d'Ivoire. The material from Euthynnus alleteratus and Auxis thazard has been described below. From Sarda sarda I have sofar seen only two male specimens, that I cannot possibly distinguish from the males of one of the species observed in Euthynnus alleteratus. I will await the discovery of female specimens in the nasal fossae of Sarda sarda before dealing with the material from this host. I want to express my sincere gratitude to Dr. R. Repelin and Dr. J. F. Aldrin for kindly supplying me with this interesting material. Parabomolochus anonymus nov. spec. (fig. 1-6) Material examined. — Gulf of Guinea, off Abidjan, Côte d'lvoire, leg. Dr. J. F. Aldrin, 12 adult, partly ovigerous females from the nasal fossae of Euthynnus alleteratus (Rafinesque) (type host). An ovigerous female of 932 μ length has been selected the holotype; the drawings of the external appearance have been taken from this specimen. The remaining females vary in length between 1000 and 1150 μ and have been labelled as paratypes. One of the paratypes, a non-ovigerous female of 1030 μ length, has been dissected and the appendages mounted. All specimens and the slides are in the Rijksmuseum van Natuurlijke Historie, Leiden, the Netherlands. Description. — Adult female, total length 932 μ. The greatest diameter of</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317884</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1965</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 40</dcterms:extent>
+   <dcterms:isPartOf>Three new species of Bomolochidae (Copepoda, Cyclopoida) from Tropical Atlantic Tunnies (URN:ISSN:0024-1652) (Volume 76) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317884.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149170</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317884</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Fossil brachiopods from the Pleistocene of the Antilles</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Harper D.A.T.</dc:creator>
+   <dc:creator>Donovan S.K.</dc:creator>
+   <dc:subject>42.72 ; 38.22</dc:subject>
+   <dc:subject>Brachiopoda</dc:subject>
+   <dc:subject>Pleistocene</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>Jamaica</dc:subject>
+   <dc:subject>Barbados</dc:subject>
+   <dc:subject>Antilles</dc:subject>
+   <dc:description>Pleistocene brachiopods are poorly known from the Antillean region, but are locally common in forereef deposits of Jamaica (lower Pleistocene Manchioneal Formation) and Barbados (Coral Rock). Of the four species known, two are new. Lacazella sp. cf. L. caribbeanensis Cooper, an encrusting thecideidean, is known from only three valves. Other species are terebratulides. Tichosina inconstanta sp. nov. is a large, ventribiconvex Tichosina species of elongate oval to tear-drop shaped outline, variably uniplicate with a pedicle foramen of moderate diameter. It differs from the similar Tichosina? bartletti (Dall) in having a larger pedicle foramen and a less-marked plication. Argyrotheca barrettiana (Davidson) is a medium to large, usually transverse Argyrotheca species, multicostellate with usually eight costae and costellae, increasing by intercalation up to 21 on the largest shell. The species was originally described from the Recent of the Caribbean. Terebratulina manchionealensis sp. nov. is a small, elongately oval to subtriangular Terebratulina species with a ventral sulcus and subcarinate dorsal valve. Usually there are 6-8 ribs per 2 mm at 5 mm growth stage. The known diversity in Pleistocene brachiopods from the Antilles, only four species, is depauperate when compared to the 50+ species known from the Recent of the Caribbean Sea and the Straits of Florida. The Pliocene fauna of the region, however, is similarly lacking in diversity, but includes the same genera. The comparable Pleistocene fauna of the Mediterranean Sea includes eight species belonging to six genera, including Lacazella, Argyrotheca and Terebratulina; the Mediterranean Gryphus is an analogue for the Caribbean Tichosina.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:314198</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 213 - 240</dcterms:extent>
+   <dcterms:isPartOf>Fossil brachiopods from the Pleistocene of the Antilles (URN:ISSN:0375-7587) (Volume 135)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/314198.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/144479</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/314198</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new endemic Actinia species (Actiniaria: Actiniidae) from the central Macaronesian Archipelagos</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hartog, den J.C.</dc:creator>
+   <dc:creator>Ocaña O.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Actinia</dc:subject>
+   <dc:subject>Actiniaria</dc:subject>
+   <dc:subject>Actiniidae</dc:subject>
+   <dc:subject>Macronesian Archipelagos</dc:subject>
+   <dc:subject>Atlantic</dc:subject>
+   <dc:description>The presence of some endemic taxa of the genus Actinia from Madeira and the Canary Islands is discussed. A new species, Actinia nigropunctata, is described, and some characters of the poorly known Actinia virgata are discussed. In addition, we discuss the main characters proposed by Schmidt (1971) to distinguish species of Actinia.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216146</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 229 - 244</dcterms:extent>
+   <dcterms:isPartOf>A new endemic Actinia species (Actiniaria: Actiniidae) from the central Macaronesian Archipelagos (URN:ISSN:00240672) (Volume 77, 1-14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216146.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44268</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216146</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

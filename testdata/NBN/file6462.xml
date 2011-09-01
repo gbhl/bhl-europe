@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Comparative notes on the holarctic genus Stemonyphantes Menge (Araneida, Linyphiidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Helsdingen, van P.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION The very small genus Stemonyphantes up to our present knowledge is restricted to the temperate regions of Europe, Asia and North America. It was created by Menge (1866) for the European species Aranea trilineata Linnaeus, 1767, which, among others, appeared to be a junior synonym of Aranea lineata Linnaeus, 1758. The species was recorded also from North America (Emerton, 1876, 1882; Keyserling, 1886; and others). For nearly seventy years the nearctic population was thought to be conspecific with the palaearctic population. Keyserling (1886) even supposed the species to have been imported by ship from Europe and to have spread from there. A detailed description of S. lineatus, furnished with excellent figures of the genitalia of the species, was given by Blauvelt (1936) still without any indication of differences between European and North American specimens, although she states to have seen them from both regions. Gertsch (1951) was first in drawing attention to differences between the two populations; he created the new name Stemonyphantes blauveltae for the nearctic population. In Europe a new variety S. bucculentus [ = lineatus] pictus was described by Schenkel (1930) from the Riesengebirge on the Polish-Czechoslovakian frontier. Schenkel only possessed a female specimen, which differed from the nominate form mainly in the colour of the cephalothorax and abdomen. More specimens, including a male, were recorded by Buchar (1967) from the Böhmerwald in Czechoslovakia near the German frontier. Buchar examined the genitalia of these specimens and decided to raise Schenkel's variety to specific rank. He redescribed the species and listed the main differences with S. lineatus.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318967</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 117 - 139</dcterms:extent>
+   <dcterms:isPartOf>Comparative notes on the holarctic genus Stemonyphantes Menge (Araneida, Linyphiidae) (URN:ISSN:0024-0672) (Volume 43) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318967.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150253</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318967</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

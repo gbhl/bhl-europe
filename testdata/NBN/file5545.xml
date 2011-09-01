@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Die Pedipalpi des Zoologischen Museums in Buitenzorg und die der Sammlung Dr. F. Kopstein</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Speijer E.A.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Das reichhaltige Material obengenannter Sammlungen enthalt ausschliesslich Exemplare aus Niederl. Indien. (Das ganze Material der Sammlung Kopstein wurde von Dr. F. Kopstein dem „Rijks Museum van Nat. Historie te Leiden" geschenkt; die Typen des Materials vom „Zoologisch Museum Buitenzorg" befinden sich ebenfalls in Leiden). Es liegen nur Uropygi vor, und zwar sind sämtliche Tiere Thelyphonidae. Das Material besteht aus 87 Exemplaren, gesammelt auf: Java, Borneo, Ambon, Haroekoe, Soela-Inseln, Flores, Noesa Laoet, Krakatau, KarimonDjawa Inseln. Obwohl eine Anzahl Inseln, wo schon Pedipalpi gefangen wurden, fehlt (z.B. Sumatra, Celebes, Billiton, Madoera), ist dieser Erfolg doch sehr wichtig, weil auf nicht weniger als 5 der obengenannten 9 Inseln bisher noch keine Pedipalpen gesammelt wurden und zwar noch nicht auf: Haroekoe, Soela-Inseln, Plores, Noesa Laoet und Karimon-Djawa Inseln. Dieses ist an sich schon ein sehr merklicher Erfolg, der wohl noch wichtiger erscheint, wenn wir in Betracht ziehen, dass sich unter diesen 87 Exemplaren 6 neue Arten und eine bis jetzt unbekannte Varietat befinden. Unsere Kenntnis der Verbreitung der Thelyphoniden ist immer noch eine ziemlich unvollständige, z.B. auf Ceram, — das viel grosser ist als die anderen Inseln der Molukken, — sind noch keine Thelyphoniden gesammelt worden. THELYPHONUS Latr., em. E. A. M. Speijer. Thelyphonus Latr., em. E. A. M. Speijer caudatus (L.).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318050</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 67 - 76</dcterms:extent>
+   <dcterms:isPartOf>Die Pedipalpi des Zoologischen Museums in Buitenzorg und die der Sammlung Dr. F. Kopstein (URN:ISSN:0024-0672) (Volume 16) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318050.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149336</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318050</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

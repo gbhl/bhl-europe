@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Species of the genus Sacculina (Crustacea Rhizocephala)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The genus Sacculina was founded by Thompson (1836), who described the species Sacculina carcini, the parasite of the shore crab. A second species, Sacculina inflata, was described by Leuckart (1859). Anderson (1862) gave a description of a third species, Sacculina triangularis, and published important notes on the anatomy of this and other species; afterwards it proved hat S. triangularis morphologically is not distinct from S. inflata. Hesse (1867) gave names to two Sacculinidae on different crabs. Of these one (Sacculinidia gibbsii) is a synonym of Sacculina carcini; the characters of the other species, named by Hesse Sacculinida Herbstia nodosa, are unknown. Kossmann (1872) described a large number of species of the genus from the Philippine Islands; he based his descriptions chiefly on the anatomical characters and on the excrescences of the external cuticle of the mantle. Although Kossmann's material seems to be entirely lost a number of parasites can be identified as representatives of Kossmann's species. Some of Kossmann's species of Sacculina now must be referred to other genera of Rhizocephala. In 1877 Fraisse described a european species, Sacculina neglecta (now included in the genus Drepanorchis). The names given by Hoek (1878) and Malm (1881) to Sacculinidae which they regarded as distinct species now are proven to be synonyms of previously described ones. Miers (1880) described Sacculina rotundata, a new species from the East Indies; Gissler (1884) described the first North American species, Sacculina panopaei (now included in the genus Loxothylacus). Giard (1886, 1887, 1888), Bonnier (1887) and Giard and Bonnier (1887, 1890) gave numerous names for parasites on crabs for which no previous records of infestion by Sacculinidae existed, in all probability all these</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318281</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 187 - 328</dcterms:extent>
+   <dcterms:isPartOf>The Species of the genus Sacculina (Crustacea Rhizocephala) (URN:ISSN:0024-0672) (Volume 19) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318281.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149567</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318281</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

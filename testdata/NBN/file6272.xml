@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Redescription de l'holotype de Ephemera orientalis Mclachlan, 1875 (Insecta, Ephemeroptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Demoulin G.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>En 1875, R. McLachlan décrivit Ephemera orientalis d'après un unique exemplaire ♂, capturé au Japon par P. F. von Siebold. Depuis lors, l'espèce a été signalée à nouveau, non seulement du Japon, mais de Sibérie orientale, et ce par divers auteurs. Mais aucune iconographie n'en a été donnée. En 1952, O. A. Tshernova a fait remarquer que toutes les citations de Ephemera lineata Eaton pour des captures en Asie orientale, continentale autant qu'insulaire, étaient erronées et devaient être étiquetées: Ephemera amurensis Navas. L'auteur russe envisage également la possibilité d'une synonymie E. orientalis = E. amurensis, mais, faute de matériel de la première espèce, ne peut se prononcer. Grâce à l'amabilité de M. le Dr. M. A. Lieftinck, que je remercie très vivement, j'ai pu examiner le spécimen holotypique de E. orientalis déposé dans les collections du Rijksmuseum van Natuurlijke Historie, de Leiden. Cet exemplaire n'est plus aussi complet qu'il l'était lors de sa description originale. Les cerques manquent, ainsi que la majeure partie des gonostyles, la patte I gauche et les pattes droites II et III. La patte I droite est fort abîmée et n'a plus de tarse. Quant à l'abdomen, il est détaché et incomplet. Les ailes gauches sont à peu près complètes, celles de droite étant moins bien conservées. Pour en permettre l'étude, et pour sauver ce qui pouvait encore l'être, j'ai monté les diverses parties de cet holotype en préparations microscopiques sur lames de verre; seuls, la tête et le thorax restent conservés à sec. L'exemplaire typique de E. orientalis McLachlan est un ♂ imago, mais il avait conservé de larges fragments de pellicule subimaginale. Le bord externe des quatre ailes (fig. 1a) est rembruni (assez faiblement); les ailes</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318777</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1965</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 215 - 217</dcterms:extent>
+   <dcterms:isPartOf>Redescription de l'holotype de Ephemera orientalis Mclachlan, 1875 (Insecta, Ephemeroptera) (URN:ISSN:0024-0672) (Volume 40) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318777.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150063</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318777</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

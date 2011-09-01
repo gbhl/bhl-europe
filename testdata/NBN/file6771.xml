@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Coprides nouveaux de la région éthiopienne et remarques diverses</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gillet J.J.E</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Les lignes qui suivent, rédigées depuis 1914, se rapportent à des espèces qui font partie de ma collection personnelle (C. G.), de la collection Felsche 1) (C. F.), ou de celle du Musée du Congo, à BruxellesTervueren; le retard apporté à leur publication est dû aux tristes évènements que nous traversons. Catharsius spectabilis n. sp. ♂. Espèce voisine de C. satyrus Kolbe, dont elle diffère surtout par la conformation de la tête. Clypeus à bord antérieur rectiligne, très légèrement émarginé au milieu, à côtés parallèles, à angles antérieurs largement arrondis; sutures génales en relief, recourbées en arc concave à l'extrémité; joues diagonales, très saillantes, à bords latéraux obliqués en-dedans, à angles postérieurs arrondis. Corne céphalique peu développée, droite, subconique, comprimée transversalement et située tout près du bord antérieur. Partie frontale avec une trace de carène longitudinale ne se prolongeant pas en avant. Carène transverse du prothorax semblable à celle de C. satyrus, se continuant de chaque côté de la partie rétuse pour venir à peu près se raccorder avec le bord externe de la fossette latérale. La ligne de séparation du metasternum et du mesosternum figure un angle très-aigu; dans l'espèce précitée elle est un angle obtus. Long. — 40 mm. Hab. — Afrique orientale: Usagara (C. G.). Catharsius somalicus n. sp. Espèce excessivement voisine de C. fastidiosus Thomson et cependant</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319276</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1918</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 146 - 158</dcterms:extent>
+   <dcterms:isPartOf>Coprides nouveaux de la région éthiopienne et remarques diverses (URN:ISSN:0024-0672) (Volume 4) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319276.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150562</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319276</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

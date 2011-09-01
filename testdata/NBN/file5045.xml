@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Die Evolution der Archaeopulmonata</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Harbeck K.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Archaeopulmonata; Carychiidae; Chilinidae; Siphonariidae; Onchidiidae; Amphibolidae; Otinidae; Ellobiidae; evolution; taxonomy.</dc:subject>
+   <dc:description>The Archaeopulmonata are revised, using characters of the shell and the radula, while data concerning the ontogeny and ecological data are also taken into account. Archaeopulmonates are a group of the pulmonates with some conspicuous plesiomorphous character states They differ from the basommatophores and the stylommatophores by the presence of veliger larvae. This is seen in the early ontogenetic development of all members of the families of Archaeopulmonata, which are: Carychiidae, Chilinidae (incl. Latiinae), Siphonariidae, Onchidiidae, Amphibolidae, Otinidae and Ellobiidae (with most numerous genera and species). Altogether 33 genera and 59 recent species are discussed. Fossil material shows that the roots of this stem-group are old. Jurassic and Cretaceous fossils indicate that the typical shell characters and habitat are fully developed at this time. Older Triassic and Carboniferous fossils cannot be interpreted reliably. In younger sediments, from Cenozoic-times, archaeopulmonates are more frequently found, but still rare. These fossils show the typical shell characteristics of the group and are as variable as the recent material. In some cases it can be shown that the group had a large distribution in the Tethys-realm, while today some of the families are restricted to more limited geographical areas.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317550</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1996</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 133</dcterms:extent>
+   <dcterms:isPartOf>Die Evolution der Archaeopulmonata (URN:ISSN:0024-1652) (Volume 305) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317550.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148836</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317550</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

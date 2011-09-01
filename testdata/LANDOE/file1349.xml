@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vorarlberger Naturschau - Forschen und Entdecken 11 (2002)</dc:title>
+   <dc:creator>Aistleitner  Eyjolf, Aistleitner  Ulrich, Amann  Walter, Breuss  Wilfried, Czurda  Kurt, Goldscheider  Nico, Grabherr  Beat, Graf  Wolfram, Hattler  Viktoria, Hutter  Gerhard, Jerabek  Maria, Kassebeer  Wolf, Nesemann  Hasko, Neukum  Christoph, Puchta  Anne, Reiter  Guido, Reutter  Brigitte A., Ruff  Michael, Schmid  Margit, Waldegger  Herbert, Weichselbaumer  Peter, Werner  Richard, Werz  Heike</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Richard Werner: Vorwort.     7. Christoph Neukum, Heike Werz, Nico Goldscheider: Hydrogeologie und Trinkwasserschutz im alpinen Karstsystem der Winterstaude (Marktgemeinde Bezau, Bregenzerwald, Vorarlberg, Österreich).     9-   58. Michael Ruff, Wolf Kassebeer, Kurt Czurda: Die Geologie in der Umgebung von Schoppernau (Vorarlberg, Österreich) und ihre Bedeutung bei der Entstehung von Hangbewegungen.    59-   72. Beat Grabherr: Vergleichende Untersuchungen an einem regulierten und einem nichtregulierten Bachabschnitt der Schwarzach (Vorarlberg, Österreich).    73-   94. Walter Amann, Viktoria Hattler: Auswirkung von Straßenabwässern auf das Makrozoobenthos eines Mittelgebirgsbaches.    95-  122. Brigitte A. Reutter, Guido Reiter, Maria Jerabek: Die Kleinsäuger im Naturreservat Gadental, Großes Walsertal: Teil 2 - Waldmäuse (Muridae, Rodentia).   123-  142. Anne Puchta: Zu den Auswirkungen des Extremhochwassers 1999 auf die Rohrsänger (Acrocephalus scirpaceus, A. arundinaceus) der Fußacher Bucht, Rheindelta (Vorarlberg, Österreich).   143-  164. Ulrich Aistleitner, Eyjolf Aistleitner: Biodiversitätsforschung im Natura 2000-Gebiet "Bregenzerach-Schlucht": Die Großschmetterlinge (Makrolepidoptera) im Bereich des Öko-Lehrpfades der Vorarlberger Kraftwerke (Bregenzerwald)   165-  202. Gerhard Hutter, Hasko Nesemann: Krebsegel (Branchiobdellidae: Branchiobdella ODIER, 1823) in Vorarlberg (Österreich) mit einer Neubeschreibung von Branchiobdella papillosa n.sp..   203-  214. Gerhard Hutter, Wolfram Graf, Peter Weichselbaumer: Verzeichnis der Steinfliegen Vorarlbergs (Österreich) (Insecta: Plecoptera).   215-  221. Gerhard Hutter, Wolfram Graf: Köcherfliegen (Insecta: Trichoptera) aus Vorarlberg (Österreich), I - Vorstellung des Projekts "Erforschung der Köcherfliegenfauna Vorarlbergs" und erste Ergebnisse.   223-  226. Wilfried Breuss: Die Scherenkanker (Arachnida: Opiliones, Ischyropsalididae) von Vorarlberg (Österreich).   227-  232. Herbert Waldegger: Die Sauergräser (Fam. Cyperaceae) in Vorarlberg (Österreich).   233-  268. Richard Werner: Symposium Naturwissenschaften in Vorarlberg 2000.   269-  270. Margit Schmid: Ihre Naturschau 2000.   271-  279</dc:description>
+   <dc:date>2002</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27443.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27443.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27443</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

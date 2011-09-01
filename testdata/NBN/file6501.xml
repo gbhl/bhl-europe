@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The recent solitary mussid scleractinian corals</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wells J.W.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>INTRODUCTION In 1937 the writer, following Matthai (1928, p. 209), placed the solitary mussid genera Cynarina, Homophyllia, Rhodocyathus, Protolobophyllia, Sclerophyllia, Scolymia (Lithophyllia — placed in Mussa by Verrill in 1902, p. 130, and suspected of being only the young of colonial mussids by Pourtalès in 1871, p. 70) as subjective synonyms of the various colonial genera such as Lobophyllia, Symphyllia, and Mussa, on the assumption that these supposed solitary forms were based on early monostomatous (monocentric) stages of colonial forms. The late T. W. Vaughan and the writer later (1943, p. 194) adopted the same treatment. Wells followed much the same line in 1956 (p. 417-418), except that Homophyllia was once more recognized as a distinct genus. Grave difficulties have arisen in absorbing the remaining genera in the colonial forms, and evidence has accumulated that several of these should be recognized as valid genera. The present paper, stimulated particularly by the study of a number of solitary mussids from New Caledonia sent by Dr. R. Catala of Nouméa, to whom the writer expresses his appreciation not only for the specimens but also for permission to use certain photographs taken by Dr. Catala, is an attempt to rectify some of these errors of judgment. The position now is that the names Cynarina, Rhodocyathus, Sclerophyllia, and Protolobophyllia all pertain to a single genus (Cynarina), that Acanthophyllia and Homophyllia are distinct, and that Scolymia (Lithophyllia), a West Indian form, and Parascolymia n. gen., a Pacific form, are indistinguishable from each other on the basis of skeletal structure, but differ in mode of asexual budding. The living solitary mussids may be distinguished</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319006</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 375 - 384</dcterms:extent>
+   <dcterms:isPartOf>The recent solitary mussid scleractinian corals (URN:ISSN:0024-0672) (Volume 39) (Issue 38)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319006.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150292</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319006</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 49 (1909)</dc:title>
+   <dc:creator>Abel  Othenio, Anonymus , Bamberger  Max, Becke  Friedrich Johann Karl, Diener  Carl (Karl), Freund  Leopold, Hoernes  Moritz jun., Jäger  Gustav, Lampa  Anton, Leon  Alfons, Mache  Heinrich, Marburg  Otto, Panzer  Theodor, Pintner  Theodor, Sahulka  Johann, Toula  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Theodor Panzer: Schutzmittel des menschlichen Organismus gegen Gifte.     1-   21. Carl (Karl) Diener: Der Entwicklungsgedanke in der Paläontologie.    23-   58. Anton Lampa: Über die Farben ungefärbter Körper.    59-   81. Gustav Jäger: Über die physikalischen Bedingungen des Fliegens.    83-  102. Theodor Pintner: Messina, ein zerstörtes Paradies der Zoologen.   103-  131. Moritz jun. Hoernes: Die prähistorischen Menschenrassen Europas besonders in der jüngeren Steinzeit.   133-  175. Otto Marburg: Gehirn und Sprache.   177-  200. Leopold Freund: Die Berufskrankheiten der gebildeten Stände.   201-  234. Heinrich Mache: Über das Vorkommen radioaktiver Substanzen in Erde und Luft.   235-  264. Friedrich Johann Karl Becke: Die Goldbergbaue der Hohen Tauern. (1 Karte unpaginiert.)   265-  287. Franz Toula: Erdbeben von Messina.   289-  330. Johann Sahulka: Über die bisherigen Versuche, die Gravitation aus dem Stoße der Ätherteilchen zu erklären.   331-  363. Max Bamberger: Über die Industrie komprimierter und verflüssigter Gase. (1 Falttafel).   365-  421. Alfons Leon: Baugesetze in Natur und Technik.   423-  449. Othenio Abel: Das Zeitalter der Reptilienherrschaft.   451-  481. Anonymus: Jahresbericht. (Seiten V-LIV.)</dc:description>
+   <dc:date>1909</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30520.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30520.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30520</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

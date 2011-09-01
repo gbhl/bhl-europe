@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pseudoglessula Libera, a new Subulinid land snail from Guinea, West Africa (Mollusca, Gastropoda Pulmonata)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Solem A.</dc:creator>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Study of some land snails collected in Guinea, West Africa, by Ms. Diane deVry has led to the description of a new species, Pseudoglessula libera. It is currently known only from several localities near Conakry, but probably has a wide distribution. Detailed comparisons with previously described taxa unfortunately were not possible. Many early descriptions are very brief and most available illustrations do not clearly show details of shape and sculpture that would enable quantifying differences. Direct comparisons with named material in major museum collections (London, Frankfurt-a.-M., Paris, Leiden, Chicago, Philadelphia) have failed to locate conspecific or very closely allied morphs, hence specific description is necessary. We include data on epiphragm structure and implied functioning, as well as describing and illustrating systematically significant features of the shell, radula and genital anatomy. We are indebted to Ms. Diane deVry for collecting and contributing the material on which this report is based; to F. Huysmans for preparing the photographic prints; to Jayne Freshour and Dorothy Karall for manuscript preparation and figure mounting; and to Elizabeth Liebman for preparing the text figures. The scanning electron microscope photographs were taken by the senior author using a Cambridge S-4 Stereoscan, provided Field Museum of Natural History by National Science Foundation Grant BMS 72-02149 A01. Abbreviations as to specimen location are: FMNH (Field Museum of Natural History, Chicago) and RMNH (Rijksmuseum van Natuurlijke Historie, Leiden). Pseudoglessula (Pseudoglessula) libera nov. spec. (fig. 1, plates 1-3)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318700</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 255 - 263</dcterms:extent>
+   <dcterms:isPartOf>Pseudoglessula Libera, a new Subulinid land snail from Guinea, West Africa (Mollusca, Gastropoda Pulmonata) (URN:ISSN:0024-0672) (Volume 49) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318700.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149986</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318700</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

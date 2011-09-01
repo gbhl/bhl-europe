@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 22 (1882)</dc:title>
+   <dc:creator>Anonymus , Döttl  Johann, Horner  Johann, Pirckmayer  Friedrich, Prinzinger  August, Sitte  Camillo, Späth  Josef, Zeller  Gustav, Zillner  Franz Valentin</dc:creator>
+   <dc:description>Inhaltsverzeichnis: August Prinzinger: Die Ansiedlung der Salzburger im Staate Georgien in Nordamerika.     1-   36. Franz Valentin Zillner: Das Wasser in salzburger Flur- und Ortsnamen.    37-   61. Gustav Zeller: Des Erzstiftes Salzburg Münzrecht und Münzwesen.    62-  105. Franz Valentin Zillner: Salzburgische Geschlechterstudien. IV. Die Tann.1 Falttafel   106-  168. Johann Döttl: Uebersicht der Witterung im Jahre 1881.   169-  177. August Prinzinger: Die baierisch-österreichische Volkssprache und die salzburger Mundarten.   178-  199. Camillo Sitte: Zur Geschichte der Salzburger Weißgeschirr-Fabrication.   200-  230. August Prinzinger, Friedrich Pirckmayer: Gesellschafts-Angelegenheiten. 1. Protokoll der ordentlichen Jahresversammlung am 5. Oktober 1882.   231-  234. Friedrich Pirckmayer: Gesellschafts-Angelegenheiten. 2. Bericht über die Thätigkeit und den Stand der Gesellschaft für Salzburger Landeskunde im XXII. Vereinsjahre 1881-1882.   235-  244. Anonymus: Gesellschafts-Angelegenheiten. 3. Auszug aus den Sitzungsprotokollen des Ausschusses im XXII. Gesellschafts-Jahre 1881-1882.   245-  249. Anonymus: Gesellschafts-Angelegenheiten. 4. Mitglieder-Verzeichniß.   250-  257. Anonymus: Gesellschafts-Angelegenheiten. 5. Verzeichniß jener gelehrten Gesellschaften, Vereine, Anstalten und Personen, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mittheilungen" eine Verbindung pflegt.   258-  259. Anonymus: Gesellschafts-Angelegenheiten. 6. Verzeichniß jener Bücher und Schriften, welche - außer dem wechselseitigen Tauschverkehre - an die Gesellschaft gelangt oder gespendet worden sind.   260-  261. August Prinzinger, Josef Späth, Johann Horner: Gesellschafts-Angelegenheiten. 7. Jahres-Rechnung über Einnahmen und Ausgaben der Gesellschaft für Salzburger Landeskunde am 22. Vereinsjahre 1881/82.   262-  263</dc:description>
+   <dc:date>1882</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29027.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29027.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29027</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

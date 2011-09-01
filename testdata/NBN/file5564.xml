@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vitrinellidae (Marine Mollusca Gastropoda) from Holocene deposits in Surinam (Dutch Guiana)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Regteren Altena, van C.O.</dc:creator>
+   <dc:subject>38.22 ; 42.73</dc:subject>
+   <dc:description>Five species of Vitrinellidae have been found in the Holocene shell ridges of Surinam. Of these, Vitrinella (Striovitrinella) cupidinensis,Cochliolepis surinamensis, and Solariorbis guianensis are new species, while Cyclostremiscus caraboboensis Weisbord is known from Pliocene beds in Venezuela and Teinostoma (Pseudorotella) schumoi Vanatta belongs to the Recent fauna of Guatemala. A paratype of Vitrinella cupidinensis spec. nov. was found on Olinda beach near Recife, Brazil, and clearly is a Recent shell. It seems possible, and even likely, that eventually all five species will appear to be still living in the same general region.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318069</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 233 - 241</dcterms:extent>
+   <dcterms:isPartOf>Vitrinellidae (Marine Mollusca Gastropoda) from Holocene deposits in Surinam (Dutch Guiana) (URN:ISSN:0024-0672) (Volume 41) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318069.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149355</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318069</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

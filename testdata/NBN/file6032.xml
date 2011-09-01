@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new Stenolemus from the Philippines (Heteroptera, Reduviidae, Emesinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Doesburg, van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>During investigations of fig-wasps in the Philippines in 1964, Dr. J. T. Wiebes collected a new species of bug, a small reduviid belonging to the genus Stenolemus Signoret: its description is presented here. For comparison, the type specimen of Stenolemus crassirostris Stâl, 1870 (similarly from the Philippines) has also been studied, and supplementary descriptive notes, together with drawings of some important structures of this species are included. I am indebted to Dr. Wiebes for presenting us with this interesting specimen, to Dr. P. I. Persson of the Naturhistoriska Riksmuseet, Stockholm, for loan of the Stâl type, and to Mr. J. A. Grant, B. Sc., London, for his valuable criticism and for reading the manuscript. Stenolemus wiebesi spec. nov. (figs. 1-12) Female (fig. 1). Ground colour yellowish-brown, with some white and brown suffusions; eyes grey. Whitish are — rostrum proximally, antennal segment I proximally and also at annulus less than halfway along, pronotal calli, humeral projections, epicoxal lobes, coxae distally, trochanters, femora distally and at two annuli, tibiae proximally and at two annuli, tarsi proximally; some parts of fore-wing — proximal parts of costa and area alongside, an interrupted band near middle, and an area near the tip of the wing; sides and hind margin of the abdomen. Brownish are — antennal segment I distally and other segments entirely, meso- and metathorax, hind legs, most of the proximal third of the fore-wing, spots regularly along the side margin of the abdomen. Body surface smooth, shining and densely pilose with rather short macroand microchaetae. Head (figs. 3, 5) elongately ovoid with small eyes, anterior and posterior parts inflated without projections; dorsal interocular</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318537</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 13 - 19</dcterms:extent>
+   <dcterms:isPartOf>A new Stenolemus from the Philippines (Heteroptera, Reduviidae, Emesinae) (URN:ISSN:0024-0672) (Volume 49) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318537.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149823</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318537</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the presence of Rana ridibunda ridibunda Pallas in the Netherlands</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Hoogmoed M.S.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Since long there has been a dispute whether in the Netherlands there occur one or two species of green frogs of the genus Rana. There has never been any doubt concerning the presence of Rana esculenta Linnaeus, a species widely distributed throughout the country (Van de Bund, 1964, 1968). The first to mention Rana ridibunda ridibunda Pallas from the Netherlands were Van Kampen &amp; Heimans ( 1927), who observed that they saw a specimen of Rana esculenta var. ridibunda from Den Horn in the province of Groningen. Unfortunately they did not state where the specimen was deposited and no such specimen could be found in the collections of the Rijksmuseum van Natuurlijke Historie (RMNH) in Leiden or in the Instituut voor Taxonomische Zoölogie in Amsterdam. Since that time there have been several additional records of the species. Van Wijk (1946, 1947, 1951) recorded the species from the provinces of Groningen, Zuid-Holland and Limburg. However, these data are not very reliable as they were based on field-observations by untrained people, mainly persons who keep reptiles and amphibians as pets. The material on which their observations were based was not available for examination, so the identifications could not be checked. Van Wijk (1947, 1951) also stated that he had received specimens from Groningen which he identified as R. ridibunda. As the characters he used to distinguish between the green frogs were correct, his identification probably was correct too. Unfortunately, also this material is not available for examination. The next author dealing with this problem is Van de Bund (1964), who gives more details concerning the localities of the specimens previously recorded by Van Wijk (1946, 1947, 1951): Groningen (Groningen, Haren, Eelde), Zuid-Holland (Sassenheim, Schiedam), Limburg (Meerssen). However, Van de Bund</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317215</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 72 - 76</dcterms:extent>
+   <dcterms:isPartOf>On the presence of Rana ridibunda ridibunda Pallas in the Netherlands (URN:ISSN:0459-1801) (Volume 17) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317215.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148501</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317215</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

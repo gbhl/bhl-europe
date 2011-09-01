@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Sur Amblyellus Hasdrubal Kohl (Hymenoptera: Pompilidae, Pompilinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wahis R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>En 1894, Kohl décrit d'Espagne la ♀ de Pompilus hasdrubal, espèce voisine de Pompilus sexmaculatus Spinola et caractérisée, entre autres, par un peigne de trois épines au métatarse 1 ce qui correspond bien au spécimen typique que Michael Day et moi-même avons pu examiner, en juillet 1981, au Naturhistorisches Museum Wien. Cet exemplaire porte l'étiquetage suivant: "Barcelona, Amiga", une étiquette de détermination écrite par Kohl "hasdrubal Type dét. Kohl" et une étiquette manuscrite de Priesner "gehört zu Aporinellus (Amblyellus m.) H. Priesner". Il est absolument conforme, dans tous les détails, au Pompilus obtusus Gussakowskij, 1935, au sens des auteurs européens modernes (= Pompiloides insidiosus Nouvel &amp; Ribaut, 1958). Priesner (1969) fait état d'un Pompilus hanibal Kohl, 1888 qui serait voisin de Aporinellus (Amblyellus) insidiosus Nouvel &amp; Ribaut ( = obtusus Gussakowskij) et s'en distinguerait essentiellement par un peigne de quatre épines au métatarse 1 (l'apicale nettement plus longue que le deuxième article des tarses). Je ne puis cependant comprendre où Priesner en a trouvé trace car c'est en vain qu'on cherchera la description d'une espèce de ce nom dans les publications de Kohl. Wolf (1972) signale sous le nom d'Amblyellus hasdrubal Kohl une espèce qu'il distingue d'obtusus Gussakowskij ( = insidiosus Nouvel &amp; Ribaut) par les caractères donnés par Priesner pour singulariser "hanibal". Day (1981) valide enfin le nom générique Amblyellus par désignation d'une espèce-type et cite trois espèces paléarctiques: hasdrubal Kohl, 1894, obtusus Gussakowskij, 1935 (= insidiosus Nouvel &amp; Ribaut, 1958) et kiritschenkoi Gussakowskij, 1930. Day pense que "hanibal" est probablement un lapsus pour hasdrubal Kohl et signale, par erreur, un ♂ comme holotype (en fait, le spécimen type est bien une ♀).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318520</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1983</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 97 - 100</dcterms:extent>
+   <dcterms:isPartOf>Sur Amblyellus Hasdrubal Kohl (Hymenoptera: Pompilidae, Pompilinae) (URN:ISSN:0024-0672) (Volume 57) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318520.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149806</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318520</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

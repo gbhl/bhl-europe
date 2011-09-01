@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 3_2 (1960)</dc:title>
+   <dc:creator>Abensperg-Traun  Carl, Anonymus , Aschenbrenner  Leopold, Ausobsky  Albert jr., Finkernagel  Karl, Ganso  Maria, Hable  Erich, Heyder  Richard, Höninger  Walter, Kepka  Otto, Mauersberger  Gottfried, Peters  Hanns, Rokitansky  Gerth Freiherr von, Stengel  Friedrich, Triebl  Rudolf</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Richard Heyder: Wenig bekannte Rufe des Teichhuhns (Gallinula chloropus).    21-   22. Carl Abensperg-Traun: Ornithologische Beobachtungen zwischen Maria Ellend und Petronell.    22-   24. Gerth Freiherr von Rokitansky: Zur Methode des Kopfkratzens bei Vögel.    24-   26. Maria Ganso: Winterbeobachtungen aus dem Lackengebiet des Neusiedlersees.    26-   31. Otto Kepka: Schwarzstorch (Ciconia nigra) bei Graz.    31. Hanns Peters: Der Zilp-Zalp (Phylloscopus collybita) als Felsbrüter.    31-   32. Erich Hable: Ein Brutvorkommen des Mauerläufers in geringer Seehöhe.    32-   33. Friedrich Stengel: Die Felsenschwalbe (Ptyonoprogne rupestris, Scop.), Brutvogel im Maltatal, Kärnten.    32. Gottfried Mauersberger: Zur Verbreitung von Ficedula parva in Österreich.    32. Erich Hable: Grönlandfalke in der Steiermark.    33. Gerth Freiherr von Rokitansky: Einseitige Hodenentwicklung bei einer Waldschnepfe.    35. Rudolf Triebl: Rallenreiher am Neusiedlersee.    35. Albert jr. Ausobsky: Gartenrotschwanz übernimmt Fütterung nestjunger Bachstelzen.    35-   36. Karl Finkernagel: Schnepfe trägt Jungvogel.    37. Walter Höninger: Gartenrotschwanz (Ph. phoenicurus) brütet in einem Amselnest.    37-   38. Leopold Aschenbrenner: Ein interessanter Rückblick auf das Mitgliederverzeichnis des Ornithologischen Vereines in Wien aus dem Jahre 1887.    38. Anonymus: Brand der Vogelwarte-Außenstation am Neusiedlersee.    39</dc:description>
+   <dc:date>1960</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27460.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27460.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27460</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

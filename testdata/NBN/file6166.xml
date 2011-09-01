@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New Micro-Lepidoptera</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Meyrick E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The following descriptions of new genera and species of MicroLepidoptera (principally from Java) are drawn from specimens preserved in the collections of the 's Rijks Museum van Natuurlijke Historie, Leiden, which have been submitted to me for study. They afford an interesting insight into this portion of the fauna of Java, which has been little studied hitherto except for a few descriptions by Snellen and van Deventer; 122 new species from Java are here recorded, and nearly an equal number of additional species (mostly forms from Assam or Ceylon) were noted. PHALONIADAE. Clysia ambiguella Hübn. Java, Preangor, 5000 feet (Sythoff); 4 specimens, of which two have the dark median fascia widely interrupted in disc, and two have the costal half of the fascia strongly marked but the dorsal half entirely absent. Although I have no similar examples of this variable species amongst my series from India and Ceylon, I am unable without further evidence to treat these as distinct species, though they may indicate such in process of formation; I do not find any structural difference, and additional material might give intermediate forms. TORTRICIDAE. Capua vulgaris n. sp. ♂♀ 12—14 mm. Head, palpi, and thorax pale greyish-ochreous or brownish, more or less mixed with blackish. Forewings rather elongate, costa in ♂ moderately arched, with strong fold extending from base to beyond middle, in ♀ moderately arched anteriorly, then nearly straight,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318671</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1921</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 145 - 202</dcterms:extent>
+   <dcterms:isPartOf>New Micro-Lepidoptera (URN:ISSN:0024-0672) (Volume 6) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318671.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149957</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318671</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

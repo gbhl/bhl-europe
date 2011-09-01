@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Control of bleaching in mushroom coral populations (Scleractinia: Fungiidae) in the Java Sea: stress tolerance and interference by life history strategy</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Hoeksema B.W.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>mushroom corals</dc:subject>
+   <dc:subject>Scleractinia</dc:subject>
+   <dc:subject>Fungiidae</dc:subject>
+   <dc:subject>bleaching</dc:subject>
+   <dc:subject>Java Sea</dc:subject>
+   <dc:subject>Pari Island</dc:subject>
+   <dc:description>Bleaching was studied in populations of phylogenetically closely related species (n = 21) of mushroom corals (Scleractinia: Fungiidae) around Pari Island (Java Sea) during a period of excessive seawater warming in 1983. The interspecific variation in the proportions of affected individuals was significant. Spatial variation in the degree of bleaching anlong fungiid assemblages depended much on relative species abundances. Mushroom corals In relatively stagnant water of lagoons and on the inner reef flat showed little bleaching. Many of the outer reef mushroom corals at ≤ 9 m depth were affected, but only a few at greater depths (≥15 m). In most affected fungiids, the bleached part was pale (associated with pigment loss) instead of white (assumedly caused by zooxanthcllae expulsion). The difference between the proportions of paled and whitened corals was not clearly depth-related, but most probably species-related. Most bleached fungiids were affected over their whole upper surface, whereas others showed a mosaic pattern. Entire bleaching was most common at depths &lt;6 m and partial bleaching at 9 m One species with a predominantly shallow distribution (mainly ≤9 m) showed a significant malorlty of entirely bleached individuals. The smallest mushroom corals (ømax ≤ 5cm,) on the outer reef, usually In sheltered positions, and the largest ones (ømax &gt; 20 cm), usually occurring deep, were the least affected. The latter may have escaped bleaching by recurrent downward migration.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227741</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1991</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 225 - 237</dcterms:extent>
+   <dcterms:isPartOf>Control of bleaching in mushroom coral populations (Scleractinia: Fungiidae) in the Java Sea: stress tolerance and interference by life history strategy (URN:ISSN:0171-8630) (Volume 74)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227741.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50420</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227741</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

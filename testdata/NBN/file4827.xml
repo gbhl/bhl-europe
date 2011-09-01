@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[The fossil record of the Eurasian Neogene insectivores (Erinaceomorpha, Soricomorpha, Mammalia) : Part I / L.W. van den Hoek Ostende, C.S. Doukas and J.W.F. Reumer (editors)]: The Netherlands</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Reumer J.W.F.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>Introduction This chapter concerns Neogene (Miocene and Pliocene) insectivores from The Netherlands. The same biogeographical and tectonical realm, i.e. the southeastern part of the North Sea Basin, also has several sites in the western part of Germany, but these localities are discussed in the chapter on Germany (Ziegler et al., 2005). Most of the region concerned was covered by (often shallow) seas during most of the Neogene. A late Miocene coastline can be reconstructed as running in a SW- NE direction from Antwerp (Belgium), Liessel (The Netherlands, province of Noord-Brabant), Uedem/Kevelaer (Germany, Land Nordrhein-Westfalen), to Miste/Winterswijk (The Netherlands, province of Gelderland) by the finds of glauconitic greensand-deposits containing shells and the skeletons of (beached?) whales (e.g. Hampe, 1996; Bol, 2000; Peters &amp; Monteiro, 2005, and literature therein). No continental deposits are to be expected northwest if this line. Only during Late Pliocene and Pleistocene times the coastline recedes in a northwestern direction, in times leaving the North Sea more or less dry during climate-induced regressions (e.g., during the Late Weichselian). As far as I can reconstruct, the oldest fossil insectivores from The Netherlands were found in the late 1830's after a well was drilled in the town of Gorinchem (Schreuder, 1941). There, some postcranials and a fragmentary mandible of Desmana were brought to light from a depth of 109 m. The remains were originally described as Viverra [= Galerix] exilis (Harting, 1853), but were recognized as a desman by Schreuder (1941). Since that time, Neogene fossils from The Netherlands were restricted for a long period</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317331</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 113 - 118</dcterms:extent>
+   <dcterms:isPartOf>[The fossil record of the Eurasian Neogene insectivores (Erinaceomorpha, Soricomorpha, Mammalia) : Part I / L.W. van den Hoek Ostende, C.S. Doukas and J.W.F. Reumer (editors)]: The Netherlands (URN:ISSN:0922-4564) (Volume 5) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317331.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148617</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317331</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

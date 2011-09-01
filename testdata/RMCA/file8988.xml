@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A  Natural History of the Mammalia</dc:title>
+   <dc:publisher>Hippolyte Baillière (xx London)</dc:publisher>
+   <dc:contributor>Waterhouse, G.R. 1810-1888 (Author)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>1216e65f-6974-4198-8a60-c7cc632c4102</dc:identifier>
+   <dc:identifier>003836792</dc:identifier>
+   <dc:language>eng</dc:language>
+   <dcterms:tableOfContents>1. Containing the order Marsupiata, or Pouched Animals</dcterms:tableOfContents>
+   <dcterms:tableOfContents>2. Containing the order Rodentia, or Gnawing Mammalia</dcterms:tableOfContents>
+   <dcterms:issued>1846-1848</dcterms:issued>
+   <dcterms:issued>1846</dcterms:issued>
+   <dcterms:issued>1848</dcterms:issued>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Waterhouse_Mammalia_Rodentia/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Waterhouse_Mammalia_Rodentia</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RMCA/1216E65F697441988A60C7CC632C4102</europeana:isShownAt>
+<europeana:dataProvider>Royal Museum for Central Africa</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 5 (1993)</dc:title>
+   <dc:creator>Bierwirth  Georg, Gürtler  Ingomar, Lieb  Karl, Nitsche  Karl-Andreas, Reichholf  Helgard, Reichholf  Josef, Reichholf  Josef H., Reichholf-Riehm  Helgard, Segieth  Franz, Seidl  Fritz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Helgard Reichholf-Riehm: Der Lebensraum Aue   315-  327. Fritz Seidl: Zur Molluskenfauna von St. Johann am Walde (Oberösterreich)   329-  339. Ingomar Gürtler: Die Brut- und Gastvögel des Landkreises Altötting   341-  360. Karl-Andreas Nitsche: Verhalten von Bibern (Castor fiber albicus MATSCHIE, 1907) bei extremen Umweltsituationen   361-  375. Karl-Andreas Nitsche: Daten zur Biometrie und zur Schaleninnenfärbung des Sägezähnchens (Donax trunculus)   377-  378. Georg Bierwirth: Erster Nachweis der Frühen Heidelibelle Sympetrum fonscolombei (SELYS 1840) im Landkreis Altötting   379-  380. Georg Bierwirth: Erlöschen der Zierlichen Moosjungfer Leucorrhinia caudalis (CHARPENTIER 1840) in den Altwässern des NSG Dachlleiten, Landkreis Altötting   383-  384. Helgard Reichholf-Riehm, Josef Reichholf: Lichtfallenfänge des Bachhaftes Osmylus fulvicephalus am unteren Inn im Sommer 1992   385-  387. Josef Reichholf: Lichtfallenfunde des Klapphornkäfers Odontaeus armiger im niederbayerischen Inntal   389-  390. Josef H. Reichholf: Erstfang der Mondfleckglucke (Cosmotriche lunigera ESP.) in Aigen/Inn   391. Josef H. Reichholf, Helgard Reichholf-Riehm: Rohrdommel (Botaurus stellaris) zur Brutzeit am unteren Inn   392. Josef H. Reichholf: Wespenspinne (Argiope bruennichi) nutzt Lichtfalle zum Beutefang   393-  394. Helgard Reichholf: Verschwinden des Maikäfers (Melolontha melolontha) und Rückgang der Wurzelfresser-Eule (Parastichtis monoglypha) in einem Lichtfallen-Fanggebiet im niederbayerischen Inntal   395-  398. Karl Lieb: Neuansiedlung des Gänsesägers (Mergus merganser) an der unteren Salzach   399-  400. Franz Segieth: Vogelarten im Gebiet des unteren Inns (Beobachtungen bis September 1990)   401-  406. Franz Segieth: Eine weiße Rabenkrähe (Corvus corone corone) in der Pockinger Heide   407-  408. Helgard Reichholf-Riehm, Josef Reichholf: Nachruf auf Otto Koenig geb. 23. 10. 1914 gest. 5. 12. 1992   409-  410</dc:description>
+   <dc:date>1993</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25185.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25185.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25185</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

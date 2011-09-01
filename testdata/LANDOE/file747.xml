@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 43_44_1966 (1966)</dc:title>
+   <dc:creator>Angelov  Pavel, Fuchs  Ernst, Mandl  Karl, Niedl  Jiri, Scheerpeltz  Otto</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Pavel Angelov: Die bulgarischen Arten der Familien Anthribidae, Rhinomaceridae und Brenthidae.     5-    8. Ernst Fuchs: 7. Beitrag zur Kenntnis der neotropischen Cerambyciden.     9-   15. Ernst Fuchs: Neue Cerambyciden aus Indochina (Col.).    16-   23. Karl Mandl: Neue Carabus-Formen aus Mitteleuropa und Iran.    24-   38. Karl Mandl: Über die Duftschmidschen Typen.    39-   47. Karl Mandl: Eine neue Carabusform aus Italien: Carabus catenulatus rattii ssp.nov.    48-   50. Jiri Niedl: Einige Bemerkungen zu den Determinationsproblemen der Gattung Ceroglossus Sol. (Col Carabidae, Carabini).    51-   62. Otto Scheerpeltz: Neue Staphylinidenarten aus Südwest-Afrika (Col. Staphylinidae). (11. Beitrag zur Kenntnis der afrikanischen Staphyliniden).    63-   74</dc:description>
+   <dc:date>1966</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26403.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26403.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26403</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

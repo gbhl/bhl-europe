@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A note on the occurrence of Oligochoerus limnophilus Ax &amp; Dörjes (Turbellaria, Acoela) in freshwater habitats in the Netherlands</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Dörjes J.</dc:creator>
+   <dc:creator>Young J.O.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>The only hitherto known freshwater acoelan, Oligochoerus limnophilus, has been fully described by Ax &amp; Dörjes (1966). It has been recorded from habitats of different European rivers: Elbe, Ilmenau, Lahn, Main, Mosel and Donau (Kothé, 1961, 1962; Kothé &amp; Sturz, 1963; An der Lan, 1964) where it prefers to settle on artificial stone embankments and is absent from typical lenitic regions and in river parts with a high organic pollution. The species has also been recorded from irrigation canals of rice fields in the Camargue (leg. U. Graefe). Ax &amp; Dörjes (1966) suppose that O. limnophilus emigrated during postglacial periods out of the ponto-caspian area into their new environments because all the other species of the genus have been found in the Caspian Sea. In addition to this, Beklemischev (1963) described the Caspian fauna as an endemic fauna. During the week of 7 to 12 June, 1971, when sixteen Dutch (Frisian) lakes were visited, O. limnophilus was recorded from the littoral zone of the following lakes: Bergumermeer, De Leijen, Fluessen, Heegermeer, Koevorde, Morra, Oorden, Pikmeer, Prinsenhof, Slotermeer, and Sneekermeer. The preferred habitats of the species in the littoral zone of these lakes seem to be artificial stone embankments and stony shores. All of the lakes are connected by a system of canals, and a number of canals enter each of the lakes. Due to extensive canalisation, it is difficult to identify natural rivers in The Netherlands. The new information about the distribution of 0. limnophilus confirms the presumption that the species occurs in many different freshwater habitats of the European continent. Other freshwater Turbellaria found in the sixteen Friesian lakes visited have already been listed in Young (1972), and further information on the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317230</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 63 - 64</dcterms:extent>
+   <dcterms:isPartOf>A note on the occurrence of Oligochoerus limnophilus Ax &amp; Dörjes (Turbellaria, Acoela) in freshwater habitats in the Netherlands (URN:ISSN:0459-1801) (Volume 17) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317230.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148516</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317230</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

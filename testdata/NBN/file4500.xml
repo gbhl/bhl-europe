@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pseudo-imposex: male features in female volutes not TBT-induced (Gastropoda: Volutidae)</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Swennen C.</dc:creator>
+   <dc:creator>Horpet P.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Indo-Pacific</dc:subject>
+   <dc:subject>pollution</dc:subject>
+   <dc:subject>Melo</dc:subject>
+   <dc:subject>Cymbiola</dc:subject>
+   <dc:description>The occurrence of a penis in female gastropods of the superfamily Muricoidea (infraorder Neogastropoda) has commonly been accepted as an indicator of tributyltin (TBT) pollution. Some species seem less sensitive than others, and one belonging to the family Columbellidae has been reported that it lacks the imposex response. During a survey in South-east Asian waters, females of Cymbiola nobilis and Melo melo (family Volutidae) with a small penis and an external vas deferens were initially considered as showing imposex. Doubt arose when 100% of the females had a penis on sites where other gastropods showed no or a low imposex incidence. During the present study, several hypotheses could be rejected such as (1) that the volutes are extremely sensible for TBT; (2) due to a high age they have a higher chance of coming into contact with TBT; or (3) they have a sex change during growth. This induced us to search for museum specimens collected before 1960, which date is long before TBT was brought into use as biocide in anti-fouling paint on ships. In the Australian Museum in Sydney and the Zoological Museum in Amsterdam some species were found from Indonesian and Australian waters. All inspected females showed the typical small penis and vas deferens by which it became clear that it is not TBT induced, but a natural phenomenon in these species. This is unknown in other muricoids. The "pseudo-imposex" been established in Cymbiola nobilis, C. vespertilio, Melo amphora, M. melo and M. umbilicata. These species belong to the Volutidae subfamily Cymbiinae. However, male characters in females seem missing in species belonging to the subfamilies Odontocymbiolinae and Zidoninae from South America; they show a normal TBT-induced imposex response according recent literature.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:269644</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 17 - 24</dcterms:extent>
+   <dcterms:isPartOf>Pseudo-imposex: male features in female volutes not TBT-induced (Gastropoda: Volutidae) (URN:ISSN:1383-4517) (Volume 77) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/269644.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/98740</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/269644</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

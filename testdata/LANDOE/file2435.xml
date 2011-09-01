@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Monografien Naturschutz MN1 (2004)</dc:title>
+   <dc:creator>Adlbauer  Karl, Anonymus , Bergmann  Bernhard, Derbuch  Georg, Frei  Markus, Frieß  Thomas, Fuchs  Melitta, Gepp  Johannes, Habeler  Heinz, Herberstein  Andrea, Holzer  Erwin, Holzinger  Werner E., Kaufmann  Andreas, Komposch  Brigitte, Komposch  Christian, Lazar  Reinhold, Locker  Birgit, Seitinger  Hans, Wagner  Jürgen, Wirtitsch  Michael, Zanini  Ernst</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Seitinger: Vorwort.     6. Andrea Herberstein: Vorwort.     6. Thomas Frieß: Die Idee zum Buch: Dokumentation und Gebietsführer.     7-    9. Markus Frei: Natur- und Kulturlandschaft Feistritzklamm. Geologie, Reliefformen und Böden - Ein Spaziergang durch die Klamm.    10-   21. Reinhold Lazar: Das Klima in der Feistritzklamm.    22-   29. Andreas Kaufmann: Das Schloss Herberstein.    30-   34. Andreas Kaufmann: Der Tier- und Naturpark Schloss Herberstein.    35-   38. Ernst Zanini: Naturschutz - eine Chance für Natur und Mensch. Zukunftsprojekt NATURA 2000 - von der Idee zur Umsetzung.    40-   43. Thomas Frieß: NATURA 2000 als Chance - gelebter Naturschutz im Europaschutzgebiet Feistritzklamm-Herberstein.    44-   50. Melitta Fuchs: Die Pflanzenwelt - es blüht und duftet! Eine rosafarbene Primel-Schönheit und ihr Gefolge in Schlucht und Fels - die Pflanzenwelt der Feistritzklamm.    52-   69. Karl Adlbauer: Urwald in der Steiermark?    70-   74. Christian Komposch: Die Tierwelt - es kreucht und fleucht! Spinnentier-Eldorado Herberstein  Arachnologische Vielfalt von Ameisenjägern bis zu Zwergspinnen.    76-   87. Thomas Frieß: Achtung: 'Herberstein völlig verwanzt!'    88-   97. Werner E. Holzinger, Birgit Locker: Zikaden - oft gehört!    98-  102. Georg Derbuch: Heuschrecken: Die Minnesänger von Schloss Herberstein.   103-  107. Johannes Gepp: Von Ameisen-Löwen, Blattlaus-Tigern und Panther-Ameisenjungfern.   108-  111. Heinz Habeler: Schmetterlinge - verborgene Farbwunder.   112-  124. Erwin Holzer: Käfer - Die 'Ritter von Herberstein'.   125-  141. Jürgen Wagner: Fische - Versteckte Schönheiten in der Feistritz bei Herberstein.   142-  146. Brigitte Komposch: Von 'Gold- und Haselwurm' - Kriechtiere und Lurche im NATURA 2000-Gebiet Feistritzklamm-Herberstein.   147-  153. Michael Wirtitsch: Vogelparadies Feistritzklamm - ein geschütztes Zuhause für unsere gefiederten Freunde.   154-  163. Thomas Frieß: Fledermäuse - Nachtgeister über Schloss Herberstein.   164-  166. Bernhard Bergmann: Erlebnisregion rund um Herberstein. Honigmond in Stubenberg am See.   168-  170. Bernhard Bergmann: Von Legenden in Stein in St. Johann bei Herberstein.   171-  173. Bernhard Bergmann: Siegersdorf, 2000 Jahre Weinkultur.   174-  175. Andreas Kaufmann: Freizeitangebote des Tier- und Naturparks Schloss Herberstein - ein Erlebnis zu jeder Jahreszeit!   176-  180. Anonymus: Anhang. Artenliste. 21 Seiten unpaginiert.</dc:description>
+   <dc:date>2004</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28785.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28785.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28785</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

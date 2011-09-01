@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Monstrilloida (Crustacea: Copepoda) from the Beagle Channel, South America</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Suárez-Morales E.</dc:creator>
+   <dc:creator>Ramírez F.C.</dc:creator>
+   <dc:creator>Derisio C.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>associated copepoda</dc:subject>
+   <dc:subject>marine zooplankton</dc:subject>
+   <dc:subject>Southern Ocean</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:description>Monstrilloid copepods were collected during zooplankton surveys in the Beagle Channel at the southernmost end of South America. These specimens represent two species of Monstrillopsis, one of them undescribed, and one new species of Monstrilla. Monstrillopsis igniterra n. sp. is related to forms of the M. dubia species group, and particularly to M. ferrarii and M. chilensis. It differs from these species in the relative length of the antennules, the shape and relative size of the genital double and anal somites, details of the antennular armature, and the possession of a short inner caudal seta. The other species of Monstrillopsis, M. chilensis, was previously known only from the Southeast Pacific off Chile, and was originally described from female specimens only. Male individuals found in the Beagle Channel are described and assigned herein to this species. These are the first records of Monstrillopsis from high latitudes of South America. The new species Monstrilla patagonica n.sp. is represented by males. It is characterized by the structure and relative size of the genital lappets, details of the antennular structure, armature, relative size and the number (6) of caudal setae. It belongs to a small group of species with highly modified, pectinate male antennules. A female specimen identified as M. helgolandica 35 years ago from southern Argentina is tentatively reidentified as the female of this new species, based on its differences from M. helgolandica and the rarity of this species group in the region.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:291893</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 217 - 226</dcterms:extent>
+   <dcterms:isPartOf>Monstrilloida (Crustacea: Copepoda) from the Beagle Channel, South America (URN:ISSN:1383-4517) (Volume 77) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/291893.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/121996</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/291893</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

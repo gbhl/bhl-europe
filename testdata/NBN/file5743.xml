@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A record from Surinam of the bat Chiroderma trinitatum Goodwin, 1958 (Mammalia, Chiroptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bergmans W.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Re-examination of a collection of bats from Surinam in the Zoölogisch Museum, Amsterdam, uncovered a specimen representing the Phyllostomatid bat Chiroderma trinitatum Goodwin, 1958. This species does not appear in the monograph of the Chiroptera of Surinam by Husson (1962), nor in his more recent works on the mammals of that country (1973; 1978). The present specimen therefore seems to be the first record from Surinam. It is a young adult female, captured after it had flown into a house at night on 1-II-1967, by H. Nijssen at Ligorio, a village on the river Gran Rio about 16 km southwest of Djoemoe in the Brokopondo District. It has been preserved in alcohol, with extracted skull, and is registered as ZMA 10.136. IDENTIFICATION In a recent paper dealing with all members of the genus Chiroderma Peters, 1860, Baker &amp; Genoways (1976) recognize five species: four larger ones with forearm lengths ranging from 43.7-47.5 mm in Ch. salvini Dobson, 1878, to 57.5 mm in the single known specimen of Ch. improvisum Baker &amp; Genoways, 1976, and one smaller species, Ch. trinitatum Goodwin, 1958, with forearm lengths of 39.4-41.8 mm. From this survey it is clear that the specimen from Ligorio, with a forearm length of 39.2 mm, is allied to trinitatum rather than to any of the other four species. In 1958 Goodwin described this species from Cumaca, Trinidad. He based it on one adult female with a forearm length of 40.5 mm, a greatest skull length of 22.5 mm, and a maxillary tooth row length of 7.7 mm. The skin of the holotype was in a bad state and fur colours could not be described. In 1961 Goodwin &amp; Greenhall published a drawing of the upper incisors and canines of the holotype, and some photographs of its skull. In 1964</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318248</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 313 - 317</dcterms:extent>
+   <dcterms:isPartOf>A record from Surinam of the bat Chiroderma trinitatum Goodwin, 1958 (Mammalia, Chiroptera) (URN:ISSN:0024-0672) (Volume 54) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318248.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149534</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318248</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

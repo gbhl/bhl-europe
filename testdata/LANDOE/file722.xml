@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 16_193 (1930)</dc:title>
+   <dc:creator>Borchmann  Fritz, Ganglbauer  Ludwig, Heberdey  Rudolf F., Heikertinger  Franz, Hering  Martin, Labler  Karel, Müller  Josef (Giuseppe), Netolitzky  Fritz, Rüschkamp  F., Scheuch  Hugo, Schleicher  Hugo, Voss  Eduard, Zimmermann  Alois</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Heikertinger: Internationale Regeln der Zoologischen Nomenklatur. Vorbemerkung zur Herausgabe.     1-   15. Hugo Schleicher: Aus der Praxis des Käfersammlers. XIII. Ueber Aufenthalt, Fang und Zucht der einheimischen Histeriden.    16-   29. Rudolf F. Heberdey: Hans Krekich-Strassoldo (Edler von Treuland). Ein Nachruf.    29-   32. Franz Heikertinger: Aus Koleopterologenkreisen.    33-   34. Alois Zimmermann: Monographie der paläarktischen Dytisciden. 1. Noterinae, Laccophilinae, Hydroporinae (1. Teil).    35-  118. Josef (Giuseppe) Müller: Zur Kenntnis der Gattung Molops Bon.   119-  126. Martin Hering: Aus der Praxis des Käfersammlers. XIV. Sammeln und Züchten blattminierender Käfer.   127-  137. Fritz Borchmann: Die Gattung Cteniopinus Seidlitz.   143-  164. F. Rüschkamp: Aus der Praxis des Käfersammlers. XV. Einige Worte über Präparation, Bezettelung und Kartei im Dienste der Insektenkunde.   165-  171. Hugo Scheuch: Mitteilungen über Nährpflanzen einheimischer Ceuthorrhynchinen.   172-  176. Fritz Netolitzky: Beiträge zur Kenntnis der Bembidiini (Carabidae). (33. Beitrag).   177-  190. Eduard Voss: Monographie der Rhynchitinen-Tribus Byctiscini. VI. Teil der Monographie der Rhynchitinae - Pterocolinae. (31. Beitrag zur Kenntnis der Curculionidae.).   191-  243. Ludwig Ganglbauer: Die europäischen und kaukasischen Arten der Gattung Podistra s.lat.   244-  254. Karel Labler: Kleine Mitteilungen. 9. - Ueber das Vorkommen einheimischer Histeriden in Tiernestern.   255. Franz Heikertinger: Kleine Mitteilungen. 10. - Ueber Cassida (Odontionycha) viridis fa. nigroconcolor.   255-  256. Franz Heikertinger: Die "Koleopterologische Rundschau" und ihre Ziele. Ein Rückblick auf zehn Bände der Zeitschrift.   257-  263</dc:description>
+   <dc:date>1930</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26378.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26378.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26378</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

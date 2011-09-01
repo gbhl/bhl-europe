@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Dr C. Beets (1916-1995) and the 'Rijksmuseum van Geologie en Mineralogie'</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Winkler Prins C.F.</dc:creator>
+   <dc:subject>Onderwijs, beroepsuitoefening, organisaties</dc:subject>
+   <dc:description>Dr Cornelis Beets, internationally renowned specialist of Indonesian Cainozoic molluscs, died on the 28th of July 1995. Born April 25, 1916, he read geology at Leiden University and obtained his PhD in 1941 on a geological study of the Turin Hills (Italy). When working on his PhD, he had already started studying the large collections of Cainozoic molluscs brought together by Professor K. Martin, the first director of the National Museum of Geology and Mineralogy at Leiden and his preceptor as far as the molluscs were concerned. He used the wartime years to study the Plio-Pleistocene molluscs from The Netherlands, whilst employed by the Dutch National Coalmines. After World War II he started to work for the Royal Dutch/Shell Group, which brought him to many places, especially in Africa and the Americas. Although he could no longer pursue his mollusc studies, he kept a keen interest in them and spent part of his spare time in collecting as can be seen from his 1953 publications on material from Egypt. When he expressed the wish to finish his career with the Royal Dutch/Shell for personal reasons, he was invited by the Board of Leiden University to become director of the National Museum of Geology and Mineralogy, which he accepted after making definite agreements about future improvements. Although he was keen on renewing his studies of the Indonesian collections, here at hand, his task as director, which he took very seriously, prevented this. He took a keen interest in the research projects of the staff, and originated the investigation of the interesting Miocene island fauna of Gargano (Italy). Collection management had his full attention and he hired a curator to develop a computerbased registration system. He also designed a special system to store microfossils. In the meantime the exhibits had to be renewed. It was only after his early retirement, due to a disagreement with the Board of the University, that he could dedicate himself to the Indonesian Cainozoic molluscs again, which led to several important publications on the subject. Failing eye-sight due to a stroke compelled him to give up his systematic studies, a fate he found difficult to bear. He intended to give a general review of the Indonesian Cainozoic molluscs using open nomenclature for the many new species he was now unable to describe. His final illness and demise made it impossible for him to finish this project, only a set of manuscript notes being left. At the end of this paper a complete list of Beets' publications is given, as well as a list of eponyms and taxa described by him as new.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317452</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1996</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 21</dcterms:extent>
+   <dcterms:isPartOf>Dr C. Beets (1916-1995) and the 'Rijksmuseum van Geologie en Mineralogie' (URN:ISSN:0357-7587) (Volume 113)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317452.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148738</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317452</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

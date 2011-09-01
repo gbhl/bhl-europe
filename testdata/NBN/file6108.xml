@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Further revisional notes on the Belonidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>INTRODUCTION In my recent revision of the Belonidae (Mees, 1962) a number of problems had to remain unsolved because of lack of material, and in particular because of a number of named forms the type specimens had not been available. The revision was called "preliminary" for that reason. Thanks to the co-operation of colleagues in several countries I have been able, on a round-the-world tour which lasted from February to August, 1962, to examine nearly all the types of what I had previously had to regard as species dubiae, and other type specimens, which show that in a few instances the synonymy presented in my paper is erroneous. A serious error in the key also became obvious (see under Belone punctulata). Though, inevitably, a few problems remain to be solved, it is now possible to give a reasonably exact count of the number of genera, species and subspecies in the family. I recognise two genera: Potamorrhaphis with one species, and Belone with 23 species and 5 subspecies. This compares with estimates of from sixty to a hundred species given in literature. ACKNOWLEDGEMENTS It is a pleasant duty to acknowledge the help from the colleagues who made it possible for me to examine so many type specimens: Dr. J. W. Böhlke (Academy of Natural Sciences, Philadelphia), Miss E. Hahn (Macleay Museum, Sydney), Dr. D. Kähsbauer (Naturhistorisches Museum, Wien), Dr. W. Klausewitz (Natur-Museum und Forschungs-Institut Senckenberg, Frankfurt), Dr. G. A. Mead (Museum of Comparative Zoölogy, Cambridge, Mass.), Dr. D. E. Rosen (American Museum of Natural History, New York), Dr. G. von Wahlert (Staatliches Museum für Natur-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318613</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 311 - 326</dcterms:extent>
+   <dcterms:isPartOf>Further revisional notes on the Belonidae (URN:ISSN:0024-0672) (Volume 39) (Issue 33)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318613.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149899</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318613</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

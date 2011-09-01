@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: Die Schloenbach-Reisestipendien-Stiftung: ein wertvoller Beitrag fur die geowissenschaftliche Forschung und Acquisition für die Sammlungen der Geologischen Reichsanstalt in Wien</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Cernajsek T.</dc:creator>
+   <dc:subject>Geschiedenis van de aardwetenschappen</dc:subject>
+   <dc:description>The "Geologischen Bundesanstalt" (GBA: Austrian Geological Survey) still holds hidden treasures. A good example is a collection of bills and other papers labelled "Schloenbach-Reisestipendien-Stiftung" (SF: Schloenbach Foundation for travel grants) accidentally found in the attic. Also in the register of the archives of the GBA, many references to the SF are found. In the "Verhandlungen der Geologischen Reichsanstalt" from 1873 to 1921 the Director of the survey reported on the finances of the SF. The collapse of the Austrian-Hungarian Monarchy meant the end of the SF and the similar, but younger, "Robert-Jaeger-Preisstiftung" and "Friedrich-Teller-Studienfonds". Georg Justin Carl Schloenbach was born in 1841 in Liebenhalle (Hannover, Germany). His father, Albert Schloenbach, was inspector of the saltworks. After his studies at the universities of Göttingen, Tübingen, Mü↔nchen and Berlin, Georg took his Doctor's degree in 1863 at the University of Halle. Having travelled widely in Europe, he took a position as "Sektionsgeologe" in the "Geologische Reichsanstalt" (GRA) in Vienna, refusing a position as professor at the mining academy in Peru. By 1870 he was professor at the "Deutsche Polytechnikum" (Technical University) at Prague. In the same year he died due to the extreme conditions at the military front in the Banat, where he was mapping. His broad interests included the Cretaceous and Jurassic of northern Germany, and later also the Cretaceous of Bohemia and its brachiopod faunas. He made important contributions to Bohemian stratigraphy. His manuscript maps of the Cretaceous of Bohemia can still be found in the Library of the GBA. He published many papers, 50 of which in the journals of the "Geologischen Reichsanstalt", and many others remained unfinished. In 1873, Albert Schloenbach provided a large amount of money to create a fund, the SF. The interest of the money should be used for travel grants to do fieldwork, collect fossils and study collections. At the board meeting of the GRA on the 20th November 1877, a report was presented on the unveiling of a plaquette in memory of the deceased Schloenbach. Originally it was planned to install it in the Banat, near the place where he died, but it was considered more convenient to put it in the meeting room of the GRA, now housing a large part of the archives for the geology of raw materials, where it still can be found. The SF was a welcome source of money for research travels in the Austrian double monarchy and abroad. In the list of its beneficiaries one finds famous geologists, such as Dionys Štur, Friedrich Teller, Guido Stache, Alexander Bittner, Georg Geyer, Franz Eduard Suess, Wilhelm Hammer, Otto Ampferer, Franz Kossmat, Bruno Sander and, after 1918, as the last one Erich Spengler.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317325</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 65 - 77</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: Die Schloenbach-Reisestipendien-Stiftung: ein wertvoller Beitrag fur die geowissenschaftliche Forschung und Acquisition für die Sammlungen der Geologischen Reichsanstalt in Wien (URN:ISSN:0922-4564) (Volume 4) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317325.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148611</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317325</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

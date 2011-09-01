@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Informatieplan ongewervelden in beleid en beheer</dc:title>
+   <dc:creator>Kleukers R.M.J.C.</dc:creator>
+   <dc:creator>Stroo A.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Natuurbeleid</dc:subject>
+   <dc:subject>Natuurbescherming</dc:subject>
+   <dc:description>Informatieplan ongewervelden in beleid en beheer In het informatieplan ‘Ongewervelden in beleid en beheer’ zijn met behulp van diverse bronnen de beleids- en beheervragen in kaart gebracht. De informatiebehoefte in het Nederlandse natuurbeleid wordt steeds sterker toegespitst op wettelijk beschermde soorten. Anderzijds zijn er diverse voorbeelden van beleidsvragen die betrekking hebben op andere ongewervelden. Enkele voorbeelden zijn: soorten die reageren op klimaatsveranderingen, aquatische organismen, invasieve soorten, schadelijke soorten en bosfauna. Dit biedt EIS-Nederland goede kansen om ongewervelden onder aandacht te blijven brengen. Het blijkt steeds moeilijker te worden om aandacht van natuurbeheerders te krijgen voor bedreigde ongewervelden die buiten wet- en regelgeving vallen. Daar komt bij dat het produceren van rapporten en plannen niet genoeg is. Persoonlijk contact met beheerders is essentieel. Indien EIS-Nederland serieus werk wil maken van bescherming van ongewervelde dieren dan zal een veel grotere inspanning nodig zijn.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220047</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>13</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220047.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46551</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220047</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

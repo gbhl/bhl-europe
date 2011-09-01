@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A contribution to the knowledge of the genus Spheginobaccha De Meijere (Diptera, Syrphidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Doesburg Sr., van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In 1883 J. M. F. Bigot described Speghina? macropoda after one female from "Birmania". Bigot used to place a question mark after the generic name when he was not sure that the described species did belong to the genus in question. The not forwardly produced oral margin, the presence of a facial tubercle, the spinose hind femora, and the wing-venation created a doubt about the correct use of the name Sphegina. He thought macropoda might need a new genus. De Meijere (1908) erected the new genus Spheginobaccha with Sphegina macropoda Bigot as type-species. He recorded one ♂ and one ♀ from Semarang, Java. He described both specimens and figured the wing. Though in many respects his female answered to Bigot's description of the female, De Meijere found also minor differences. Brunetti (1923) recorded S. macropoda (Bigot) from India on the score of Bigot's specimen from Burma, but he did not know the species. The given description of macropoda is a compilation from that by Bigot and that by De Meijere. However, in the same work Brunetti (p. 120) recorded six males and four females, and figured the male abdomen, of his Baccha robusta. According to Hervé-Bazin (1923) this should be the same as S. macropoda (Bigot). This may be right as Brunetti's description of Baccha robusta does not contain anything contrary to that of Bigot. It is strange, however, that Brunetti did not mention the spinose hind-femora and the curious venation of the wings. Finally, Hull (1937) described Spheginobaccha melancholia after two females from Cochin-China.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319403</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 155 - 164</dcterms:extent>
+   <dcterms:isPartOf>A contribution to the knowledge of the genus Spheginobaccha De Meijere (Diptera, Syrphidae) (URN:ISSN:0024-0672) (Volume 43) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319403.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150689</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319403</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

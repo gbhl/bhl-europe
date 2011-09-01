@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Review of the Neotropical species of the family Pterophoridae, part I: Ochyroticinae, Deuterocopinae, Pterophorinae (Platyptiliini, Exelastini, Oxyptilini) (Lepidoptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gielis C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Pterophoridae</dc:subject>
+   <dc:subject>revision</dc:subject>
+   <dc:subject>Neotropics</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>new synonyms</dc:subject>
+   <dc:subject>new combinations</dc:subject>
+   <dc:description>The Pterophoridae (Ochyroticinae, Deuterocopinae, Pterophorinae (Tribus: Platyptiliini, Exelastini, Oxyptilini)) species of the Neotropical fauna are reviewed. The species are redescribed. Moths are illustrated in colour for the first time, their genitalia are illustrated in line drawings. The examination of type specimens revealed the presence of four new synonyms: Platyptilia juanvinas Gielis, 1999, is a junior synonym of Platyptilia gravior Meyrick, 1932; Platyptilia jonesi Gielis, 1996, is a junior synonym of Platyptilia semnopis Meyrick, 1931; Oxyptilus maleficus Meyrick, 1926, is a junior synonym of Leptodeuterocopus neales (Walsingham, 1915); Lioptilus parvus Walsingham, 1880, is a junior synonym of Lioptilodes albistriolatus (Zeller, 1871). During the study of much new material 40 new species were discovered: Leptodeuterocopus tungurahue, L. angulatus, L. panamaensis, L. duchicela, Sochchora mulinus, Melanoptilia nigra, Platyptilia spicula, Stenoptilodes maculatus, S. agricultura, S. heppneri, S. medius, S. altiaustralis, Postplatyptilia nebuloarbustum, P. antillae, P. caribica, P. uruguayensis, P. pluvia, P. seitetazas, P. transversus, P. carchi, P. boletus, P, ugartei, P. drechseli, P. corticis, P. zongoensis, P. vorbecki, Amblyptilia landryi, A. kosteri, Lioptilodes altivolans, L. arequipa, L. yungas, L. salarius, L. cocodrilo, Michaelophorus margaritae, M. bahiaensis, Geina integumentum, Capperia browni, Buckleria brasilia, Megalorhipida paraiso, M. dubiosa. In the larger genera the species are arranged in groups. For a distinct group of species a new genus: Melanoptilia is proposed. A comprehensive checklist of the species has been made. To facilitate identification a key is presented to the genus level.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209646</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 290</dcterms:extent>
+   <dcterms:isPartOf>Review of the Neotropical species of the family Pterophoridae, part I: Ochyroticinae, Deuterocopinae, Pterophorinae (Platyptiliini, Exelastini, Oxyptilini) (Lepidoptera) (URN:ISSN:00240672) (Volume 80-2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209646.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41270</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209646</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

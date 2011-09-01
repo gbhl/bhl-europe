@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pleistocene vertebrates from Celebes : VII. Milk molars and premolars of Archidiskodon celebensis Hooijer</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>Among the fossil proboscidean remains collected by Mr. H. R. van Heekeren in the Tjabengè area, Sopeng district, about 100 km Northeast of Macassar in Southwestern Celebes there are a number of very small teeth. They can be referred to the species of Archidiskodon of which I originally described two specimens of M2 or M3, some molar fragments, the distal end of an ulna, and the proximal end of a tibia (Hooijer, 1949), to which could later be added a fine M3, and an M1 or M2, both completely preserved (Hooijer, 1953a). Archidiskodon celebensis Hooijer is the smallest species of Archidiskodon known at present. Its molars are only one-half as large in linear dimensions as those of Archidiskodon planifrons (Falconer et Cautley), and they agree with the latter in their ridge-plate formula, configuration of the enamel figures of the worn plates, long roots, and degree of hypsodonty. As will be seen from what follows, the Celebes pygmy elephantine also agrees with A. planifrons in what is considered to be the most important distinguishing character of A. planifrons, viz., the presence of premolars. Milk molars have been less intensively studied than molars; there are three of them, in Archidiskodon as well as in the recent species Data on DM2-4 of Archidiskodon planifrons from the Upper Siwaliks of India, of A. meridionalis (Nesti) from the Villafranchian of Europe, and of A. exoptatus Dietrich from the Early Pleistocene of East Africa are given in Fal1) A preantepenultimate milk molar (DMI) occasionally develops in the African elephant (Morrison-Scott, 1939). coner and Cautley (1845-49), Falconer (1868), Adams (1877-81), Pohlig (1888-91), Weithofer (1890), Dietrich (1942), and Osborn (1942). These</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319169</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 221 - 231</dcterms:extent>
+   <dcterms:isPartOf>Pleistocene vertebrates from Celebes : VII. Milk molars and premolars of Archidiskodon celebensis Hooijer (URN:ISSN:0024-0672) (Volume 32) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319169.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150455</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319169</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

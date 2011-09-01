@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The genus Hippolyte Leach, 1814 (Crustacea: Decapoda: Caridea: Hippolytidae) in the East Atlantic Ocean and the Mediterranean Sea, with a checklist of all species in the genus</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>d'Udekem d'Acoz C.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea; Decapoda; Caridea; Hippolytidae; Hippolyte; shrimp; systematics; discontinu- ous variations; neoteny; ecology; East Atlantic; Mediterranean; world species list.</dc:subject>
+   <dc:description>The genus Hippolyte Leach in the East Atlantic and the Mediterranean is revised and a list of the world species is given. Eleven species occur in the area studied: H. coerulescens (Fabricius), H. garciarasoi spec. nov., H. inermis Leach, H. lagarderei d'Udekem d'Acoz, H. leptocerus (Heller), H. leptometrae Ledoyer, H. niezabitowskii spec. nov., H. palliola Kensley, H. prideauxiana Leach, H. sapphica d'Udekem d'Acoz, H. varians Leach. An elaborate key, complete descriptions and illustrations of all species are provided, while their ecology is discussed in detail. A morphological account is also given for the species occuring in the Suez Canal: H. proteus (Paulson) and H. ventricosa H. Milne Edwards. It is shown that H. prideauxiana (previously H. huntii) and H. varians display important geographical variations. H. longirostris proves to be a junior synonym of H. leptocerus but part of the specimens previously referred to as H. longirostris belong in fact to a new species: H. garciarasoi spec. nov. The latter is not very variable but it is extremely close to H. leptocerus which itself displays extraordinary variations within individual populations and on a geographical scale. H. sapphica presents discontinuous variations: it comprises a long-rostred form (forma A) and a short-rostred form (forma B). H. niezabitowskii spec. nov. is a new species possibly endemic in the Adriatic and Ionian Seas and morphologically close to H. inermis and to the Mediterranean populations of H. varians. H. coerulescens presents some neotenic characters.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317714</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1996</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 133</dcterms:extent>
+   <dcterms:isPartOf>The genus Hippolyte Leach, 1814 (Crustacea: Decapoda: Caridea: Hippolytidae) in the East Atlantic Ocean and the Mediterranean Sea, with a checklist of all species in the genus (URN:ISSN:0024-1652) (Volume 303) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317714.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149000</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317714</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

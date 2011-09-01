@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 112 (1982)</dc:title>
+   <dc:creator>Ebermann  Ernst, Flügel  Helmut W., Gollner  Hannes, Habeler  Heinz, Hanselmayer  Franz, Hauswirth  Ernst, Heritsch  Haymo, Kaiser  Helmut, Kirchengast  Michael, Lahodynsky  Roman, Lazar  Reinhold, Melzer  Helmut, Michelitsch  Siegmund, Paschinger  Herbert, Plank  Stefan Maria, Poelt  Josef, Roch  Karl-Heinz, Scheidegger  Adrian E., Thalhammer  Oskar, Tschelaut  Werner, Untersweg  Thomas, Wolkinger  Franz, Zier  Christian, Zimmermann  Arnold</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Haymo Heritsch: Zum Gedenken Josef Hanselmayer.     5-    8. Josef Poelt: Wilhelm Möschl - ein Nachruf.     9-   13. Helmut W. Flügel: Dr. Walter Senarclens-Grancy.    15-   17. Franz Wolkinger: Mag. Dr. Stefan Maria Plank zum Gedenken (1949-1982).    19-   25. Haymo Heritsch: Die Latite aus der Tiefbohrung in Bad Gleichenberg, Steiermark.    27-   47. Helmut W. Flügel: Die geologische Karte der Steiermark 1:200.000 als Grundlage von Geopotentialkarten.    59-   62. Hannes Gollner, Oskar Thalhammer, Werner Tschelaut, Christian Zier: Die Laufnitzdorf-Gruppe - eine pelagische Fazies im Grazer Paläozoikum.    63-   73. Ernst Hauswirth, Roman Lahodynsky, Karl-Heinz Roch, Adrian E. Scheidegger: Geophysikalische Untersuchungen an der Großhangbewegung Wörschachwald (Ennstal, Steiermark).    75-   90. Reinhold Lazar: Witterungsspiegel 1981 für die Steiermark.    91-  100. Herbert Paschinger: Massenbewegung in der Neumarkter Paßlandschaft.   101-  108. Thomas Untersweg: Morphologische Studien im Schöcklgebiet (Grazer Bergland).   109-  125. Franz Hanselmayer: Beitrag zur Phänologie aus einem Garten in Graz (Steiermark).   127-  129. Helmut Melzer: Neues zur Flora von Steiermark, XXIV.   131-  139. Josef Poelt, Siegmund Michelitsch: Dacryonaema rufum, ein übersehener, aber weit verbreiteter Pilz der Alpen.   141-  144. Arnold Zimmermann, Stefan Maria Plank: Standortuntersuchungen an der Hopfenbuchen-Exklave bei Weiz,   145-  154. Ernst Ebermann: Zuchtversuche und morphologische Untersuchungen an heimischen Milben (Acari, Scutacaridae).   155-  165. Heinz Habeler: Montane Lepidopteren in den Niederungen der Grazer Bucht.   167-  176. Helmut Kaiser, Michael Kirchengast: Isthmusimermis GAFUROV, 1980 (Mermithida), eine für Mitteleuropa neue Nematoden-Gattung: Isthmusimermis amphidis n. sp..   177-  184. Josef Poelt: Geschäftsbericht über das Vereinsjahr 1981.   203-  206. Arnold Zimmermann: Tätigkeitsbericht 1981 der Floristisch-geobotanischen Arbeitsgemeinschaft des Naturwissenschaftlichen Vereins für Steiermark.   207-  208</dc:description>
+   <dc:date>1982</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28659.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28659.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28659</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

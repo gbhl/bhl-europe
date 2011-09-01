@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Effect of introduced species and habitat alteration on the occurrence and distribution of euryhaline fishes in fresh- and brackish-water habitats on Aruba, Bonaire and Curaçao (South Caribbean)</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Hulsman H.</dc:creator>
+   <dc:creator>Vonk R.</dc:creator>
+   <dc:creator>Aliabadian M.</dc:creator>
+   <dc:creator>Debrot A.O.</dc:creator>
+   <dc:creator>Nijman V.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:subject>fish assemblages</dc:subject>
+   <dc:subject>semi-arid islands</dc:subject>
+   <dc:subject>intermittent rivers</dc:subject>
+   <dc:subject>aquatic refugia</dc:subject>
+   <dc:subject>ecological integrity</dc:subject>
+   <dc:description>We conducted an ichthyological survey during the dry season of 2006 on the semi-arid islands of Aruba, Bonaire and Curaçao to provide information on species composition, richness and distribution in natural and non-natural aquatic habitats. The dry season species assemblages (N = 9 species) comprised less species than the wet seasons, and these data refine our knowledge of the indigenous fish fauna and its refuge localities during phases of drought and ensuing high salinity. A hierarchical cluster analysis reveals that the three islands have different species compositions with Curaçao being the most diverse, probably due to its having the most habitats and freshwaters present throughout the year. Species richness was unrelated to salinity and species diversity was highest in canalised streams. In the dry season fewer amphidromous species are present than in the wet season. We found no significant effect of human-induced changes on the presence or absence of fish species in the Netherlands Antilles. The presence of exotic species (including Xiphophorus helleri on Aruba, a first record for this island, and Oreochromis mossambicus and Poecilia reticulata occurring on all three islands) did not have a clear effect on the presence of indigenous species, nor did human alteration of the habitats have an influence on the occurrence of fish species.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:269647</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 45 - 52</dcterms:extent>
+   <dcterms:isPartOf>Effect of introduced species and habitat alteration on the occurrence and distribution of euryhaline fishes in fresh- and brackish-water habitats on Aruba, Bonaire and Curaçao (South Caribbean) (URN:ISSN:1383-4517) (Volume 77) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/269647.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/98743</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/269647</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

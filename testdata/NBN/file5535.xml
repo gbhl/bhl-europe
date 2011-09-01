@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Indo-Malayan Pterophyllinae (Orthoptera, Family Tettigoniidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jong, de C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The family Tettigoniidae consists of the long-horned grasshoppers with a more or less distinct sword-shaped ovipositor and with a distinct auditory organ at the proximal part of the fore tibiae. Handlirsch unites into this family 14 subfamilies of which the Pterophyllinae only are considered here. Concerning the name Tettigoniidae the opinions were diverging, but in recent literature this name is generally used. In the 10th edition of Linné's Systema Naturae (1758) a number of species of the genus Gryllus are united into the subgenus Tettigonia. This subgenus was considered as a genus by Fabricius and it would have been logical if he had kept the Linnean name Tettigonia for it. Fabricius, however, mixed up the Linnean names and called the here-mentioned genus: Locusta. This name has for many years been considered as the correct name of the genus, and Tettigonia L. was used for another group of insects. Stål (1874) placed Tettigonia L. into the synonymy of Locusta F. as both names refer to the same group of species. Linné (1758), however, had given the name Locusta to a group of short-horned grasshoppers; moreover Tettigonia L. has priority over Locusta F. as it had been established earlier. Thus the name Tettigonia L. is the eldest in the group and therefore should be considered to be the type genus and the name of the family should be derived from it. As to the type species of the genus Tettigonia L. Karny (1907) gives a survey of all Linnean species in the genus Gryllus, Tettigonia, and shows that successively all species have been placed into other (new) genera, leaving viridissima L. as the only species in the genus Locusta F. (Stål</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318040</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1939</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 1 - 109</dcterms:extent>
+   <dcterms:isPartOf>On Indo-Malayan Pterophyllinae (Orthoptera, Family Tettigoniidae) (URN:ISSN:0024-0672) (Volume 21) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318040.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149326</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318040</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studien über laubwiesen in den kirchspielen Kyrkslätt und Esbo in Südfinnland</dc:title>
+   <dc:title>Über die basenpermeabilität pflanzlicher zellen</dc:title>
+   <dc:title>Permeabilitätssudien an epidermiszellen von rhoeo discolor</dc:title>
+   <dc:publisher>Societas pro fauna et flora Fennica (fi Helsinki)</dc:publisher>
+   <dc:contributor>Cedercreutz, Carl.</dc:contributor>
+   <dc:contributor>Arvi, L.</dc:contributor>
+   <dc:contributor>Poijärvi, P.</dc:contributor>
+   <dc:contributor>Bärlund, Hugo.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>5eaf51f4-7dd0-4904-b5d6-d8b5c267ac10</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:relation>Acta botanica Fennica, 3</dc:relation>
+   <dc:relation>Acta botanica Fennica, 4</dc:relation>
+   <dc:relation>Acta botanica Fennica, 5</dc:relation>
+   <dcterms:issued>1927</dcterms:issued>
+   <dcterms:issued>1928</dcterms:issued>
+   <dcterms:issued>1929</dcterms:issued>
+   <dcterms:extent>150 s. : 31 kuvasiv.</dcterms:extent>
+   <dcterms:extent>102 s.</dcterms:extent>
+   <dcterms:extent>117 s.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299944_acta_botanica/299944_03-05_1927-1929/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299944_acta_botanica/299944_03-05_1927-1929</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/5EAF51F47DD04904B5D6D8B5C267AC10</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 19 (1879)</dc:title>
+   <dc:creator>Anonym , Brühl  Carl Bernhard, Burg  Adam Freiherr von, Burgerstein  Alfred, Chavanne  Josef, Karrer  Felix, Kostlivy  Stanislaus, Ludwig  Ernst, Oser  Johann, Pisko  Franz Josef, Pokorny  Alois, Reitlechner  Karl, Rumpf  Jakob, Rziha  Franz Ritter von, Simony  Friedrich, Toula  Franz, Vincenti  Carl Ritter von</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Carl Bernhard Brühl: Einiges über das Gehirn der Wirbelthiere mit besonderer Berücksichtigung jenes der Frau. (2 Falttafel)     1-  128. Franz Ritter von Rziha: Ueber Galilei.   129-  155. Jakob Rumpf: Ueber das Fernrohr.   157-  208. Johann Oser: Ueber das Wasser in chemischer Beziehung.   209-  244. Alfred Burgerstein: Ueber Pflanzenfasern.   245-  286. Franz Josef Pisko: Ueber die Fortschritte der Akustik.   287-  321. Karl Reitlechner: Die Bedeutung der Chemie für die Gesundheitspflege.   323-  412. Alois Pokorny: Blumen und Insecten in ihren wechselseitigen Beziehungen.   413-  440. Stanislaus Kostlivy: Ueber Witterungstelegraphie im Dienste der Landwirthschaft. (2 Falttafeln.)   441-  477. Adam Freiherr von Burg: Das Wasser in statischer Beziehung.   479-  524. Friedrich Simony: Ueber Alpenseen.   525-  565. Felix Karrer: Der Boden der böhmischen Bäder.   567-  605. Ernst Ludwig: Ueber den Verbrennungsprocess.   607-  634. Carl Ritter von Vincenti: Die Dattelpalme, ein Lebensbaum.   635-  660. Josef Chavanne: Ueber Sonnenflecken.   661-  686. Franz Toula: Ueber das geologisch-paläontologische Material zur Entwicklungsgeschichte der Säugethiere. (1 Falttafel.)   687-  796. Anonym: Jahres-Bericht.  (Seiten III-XLIV.)</dc:description>
+   <dc:date>1879</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29956.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29956.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29956</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

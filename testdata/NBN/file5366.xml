@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision de la famille des Alcyoniidae: les genres Sarcophytum et Lobophytum</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Tixier-Durivault A.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>TABLE DES MATIÈ RES rages Introduction ..............1 1. — Genre Sarcophytum Lesson..........2 Généralités..............2 Classification.............7 Description des espèces...........10 2. — Genre Lobophytum Marenzeller.........88 Généralités..............88 Classification.............91 Description des espèces...........95 Bibliographie............ ..178 Index alphabétique des espèces...........180 INTRODUCTION Cette étude fait partie d'un ensemble de recherches consacrées à la famille des Alcyoniidæ. Le premier travail traite du genre Lobularia Ehrbg. (Mémoires du Muséum National d'Histoire Naturelle, s. 2, vol. 23, fasc. 1, 1948), alors que le second expose le genre Sinularia May (Mémoires de l'Institut Royal des Sciences Naturelles de Belgique, s. 2, vol. 40, 1951). Les figures de spicules établies au grossissement X 210 ont été réduites de moitié au tirage, ce qui nuit indubitablement à leur lecture rapide. 1. — GENRE SARCOPHYTUM LESSON GÉNÉRALITÉS Sarcophytum Lesson Alcyonium (pars) Quoy et Gaimard, 1833, Voy. Astrolabe, vol. 4, Zooph., p. 270.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317871</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1958</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 179</dcterms:extent>
+   <dcterms:isPartOf>Revision de la famille des Alcyoniidae: les genres Sarcophytum et Lobophytum (URN:ISSN:0024-1652) (Volume 36) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317871.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149157</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317871</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nepticulidae (Lepidoptera) in China, 1. Introduction and Stigmella Schrank feeding on Fagaceae</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Liu Y.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nepticulidae</dc:subject>
+   <dc:subject>Stigmella</dc:subject>
+   <dc:subject>Fagaceae</dc:subject>
+   <dc:subject>Quercus</dc:subject>
+   <dc:subject>Cyclobalanopsis</dc:subject>
+   <dc:subject>Castanopsis</dc:subject>
+   <dc:subject>Lithocarpus</dc:subject>
+   <dc:subject>Yunnan</dc:subject>
+   <dc:subject>Heilongjiang</dc:subject>
+   <dc:subject>East-Palaearctic</dc:subject>
+   <dc:subject>hostplant relationships</dc:subject>
+   <dc:subject>leafminers</dc:subject>
+   <dc:description>The Stigmella species feeding on Fagaceae collected in China in 1984 are described and all known East Asian species are reviewed. In total 13 species are recognized: 12 are tentatively grouped in the ruficapitella-group and one in the caesurifasciella-group. The ruficapitella-group includes here also the castanopsiella-group and the suberivora-group. Stigmella kao, S. circumargentea, S. vandrieli and S. lithocarpella are described as new species from Yunnan and S. fumida Kemperman &amp; Wilkinson is also reported from Yunnan. From Heilongjiang four species are reported: S. omelkoi Puplesis, S. fervida Puplesis (on basis of mines only), S. dentatae Puplesis and S. aladina Puplesis. Three new synonyms are proposed: S. quercifaga Kemperman &amp; Wilkinson with S. aladina Puplesis, S. kurii Kemperman &amp; Wilkinson with S. chrysopterella Kemperman &amp; Wilkinson and S. egregilustrata Kemperman &amp; Wilkinson with S. caesurifasciella Kemperman &amp; Wilkinson. S. chrysopterella is tentatively regarded as the female of S. fumida. The collecting localities in China are briefly described and illustrated.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227748</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 145 - 181</dcterms:extent>
+   <dcterms:isPartOf>Nepticulidae (Lepidoptera) in China, 1. Introduction and Stigmella Schrank feeding on Fagaceae (URN:ISSN:00407496) (Volume 143)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227748.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50426</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227748</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a collection of Decapod Crustacea from the Republic of El Salvador (Central America)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>For about half a year (February-July, 1953) Dr. M. Boeseman, curator of Fishes of the Rijksmuseum van Natuurlijke Historie, was the guest of the Instituto Tropical de Investigaciones Científicas at San Salvador. During this time Dr. Boeseman made extensive collections in numerous localities throughout the Republic of El Salvador and, though his main attention was directed towards the fishes, an interesting collection of Decapod Crustacea was collected and sent home to Leiden. This collection forms the main subject of the present paper. As Dr. G. Kruseman, curator of Insects of the Zoological Museum at Amsterdam, collected some Decapoda in the same region during his stay in El Salvador in the summer of 1952, this material also is included in the present report. The number of species of Decapoda dealt with here is not very large and probably represents only a small portion of the actual number of species inhabiting the territory of El Salvador. Nevertheless it seems worth while to publish the present notes since the carcinological fauna of El Salvador is very poorly known, most of the species being recorded here for the first time as belonging to that fauna. Furthermore the collections contain some species which until now were insufficiently known, and the systematic status of which could be elucidated. I am very thankful to Dr. Boeseman for the interest shown in my work and for the many informations received. Furthermore I am much indebted to the authorities of the Zoological Museum at Amsterdam for their permission to study the material collected by Dr. Kruseman. The collector's numbers mentioned in the enumeration of the material are Dr. Boeseman's, unless stated otherwise. The abbreviations cb. and cl.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317674</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 43</dcterms:extent>
+   <dcterms:isPartOf>On a collection of Decapod Crustacea from the Republic of El Salvador (Central America) (URN:ISSN:0024-1652) (Volume 23) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317674.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148960</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317674</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

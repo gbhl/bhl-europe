@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the European species of the Gammarus Locusta-group (Crustacea, Amphipoda)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Stock J.H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION In the past, many authors emphasized the great variability in the morphology of the members of the genus Gammarus. At the same time, such "varieties" were distributed in waters ranging from entirely fresh to purely marine. Both ideas, the morphological variability and the great salinity tolerance, have not been substantiated by more modern investigations. The descriptive and experimental work, first of all that of Sexton, has shown that the morphological characters of the various forms are very stable, at least at a given stage of maturity, and that very slight details suffice for their characterization. These closely related forms are intersterile (Spooner, 1947, 1951 ; Kinne, 1954; Wautier &amp; Roux, 1959) and behave ecologically different (e.g. Spooner, 1947; Segerstråle, 1947; Kinne, 1954). Because of their intersterility and since the distribution areas overlap (cf. Segerstråle, 1947, fig. 6; Nijssen, 1963), most authors now follow Kinne, 1954, in considering the "forms" of Gammarus good species. The idea that the specific characters (more in particular, the "hairiness") would be brought forward through environmental factors, such as salinity, was disproved by Spooner (1947), who showed that the characteristic formation of the cuticular structures was independent of the salinity, and genetically determined. Sexton (many papers), but especially Spooner (1947), Segerstråle (1947), and Kinne (1954) have done excellent work in straightening the taxonomic status of the marine and brackish water species of Gammarus of the Atlantic coasts of Europe. Their work chiefly, clarified the morphology and ecology of Gammarus duebeni Lilljeborg, 1851 and of a number of forms previously confused under the name of G. locusta (Linnaeus, 1758). The</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317626</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1967</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 56</dcterms:extent>
+   <dcterms:isPartOf>A revision of the European species of the Gammarus Locusta-group (Crustacea, Amphipoda) (URN:ISSN:0024-1652) (Volume 90) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317626.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148912</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317626</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

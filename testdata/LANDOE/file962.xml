@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 9 (2006)</dc:title>
+   <dc:creator>Bierwirth  Georg, Blaschke  Rainer, Mascha  Rosemarie, Reichholf  Josef H., Samhaber  Johanna, Schnell  Paul, Schnell  Waltraud, Segieth  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef H. Reichholf: Winterverluste in der Bestandsentwicklung von Posthornschnecken Planorbarius corneus L.: Die Bedeutung von Dauer und jahreszeitlichem Auftreten der Eisbedeckung am Beispiel eines fischfreien Gartenteichs.    99-  108. Georg Bierwirth: Dolichoderus quadripunctatus und Leptothorax affinis, zwei stark gefährdete Ameisenarten im NSG Untere Alz   109-  114. Georg Bierwirth: Eine epizootische Pilzerkrankung bei der Waldameise (Formica polyctena).   115-  116. Josef H. Reichholf: Lausfliegen (Hippoboscidae): Gibt es sie noch?   117-  121. Franz Segieth: Avifaunistischer Jahresbericht vom Unteren Inn 2004.   123-  135. Rainer Blaschke, Waltraud Schnell: ZGB-Exkursion in Kroatien vom 30. 04. - 06. 05. 2005 - Artenliste der festgestellten Pflanzen
+von RAINER BLASCHKE &amp; WALTRAUD SCHNELL.   137-  147. : ZGB-Exkursion in Kroatien vom 30. 04. - 06. 05. 2005   137-  159. Paul Schnell, Waltraud Schnell: ZGB-Exkursion in Kroatien vom 30. 04. - 06. 05. 2005 - Artenliste der festgestellten Mollusken von PAUL und WALTRAUD SCHNELL.   148-  156. Johanna Samhaber: ZGB-Exkursion in Kroatien vom 30. 04. - 06. 05. 2005 - Artenliste der beobachteten Vögel von JOHANNA SAMHABER.   157-  159. Rosemarie Mascha: Nachruf auf Univ.- Prof. Dr. Ferdinand STARMÜHLNER.   161</dc:description>
+   <dc:date>2006</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26658.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26658.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26658</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

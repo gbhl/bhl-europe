@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Synaphridae of Madagascar (Araneae: Araneoidea): A New Family Record for the Afrotropical Region</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Miller J.A.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>synapomorphy</dc:subject>
+   <dc:subject>scanning electron microscopy</dc:subject>
+   <dc:subject>Africepheia</dc:subject>
+   <dc:subject>Cepheia</dc:subject>
+   <dc:subject>Synaphris</dc:subject>
+   <dc:description>The spider family Synaphridae is reported for the first time from Madagascar. Three new species are described. Africepheia gen. nov. is established for A. madagascariensis sp. nov.; two species of Synaphris Simon, 1894 are described: S. schlingeri sp. nov. and S. toliara sp. nov. Diagnostic characteristics for the family and putative synapomorphies are discussed, elucidated by scanning electron microscope images representing both Malagasy genera. This research highlights the connection between large scale collecting efforts in biodiversity hotspots like Madagascar and advances in systematics.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:306631</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 21 - 48</dcterms:extent>
+   <dcterms:isPartOf>Synaphridae of Madagascar (Araneae: Araneoidea): A New Family Record for the Afrotropical Region (URN:ISSN:0068-547X) (Volume 58) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/306631.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/136513</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/306631</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

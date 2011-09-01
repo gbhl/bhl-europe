@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Three new species of the genus Adelophryne (Amphibia: Anura: Leptodactylidae) from northeastern Brazil, with remarks on the other species of the genus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogmoed M.S.</dc:creator>
+   <dc:creator>Borges D.M.</dc:creator>
+   <dc:creator>Cascon P.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Adelophryne; South America; Brazil; Atlantic forest; new species</dc:subject>
+   <dc:description>In the present paper three new species of the genus Adelophryne from the coastal Atlantic forest in Brazil are described. The species are separated from the two species formerly known from the Amazon forest by caatinga vegetation and a distance of at least 1600 km. A. pachydactylus from Bahia has a reduced number of phalanges in the fourth finger, and large subdigital pads under fingers and toes. A. baturitensis has distinct subarticular tubercles under the toes and a relatively large size. A. maranguapensis has large discs on fingers and toes and is boldly patterned. During fieldwork in Amapá two specimens of A. gutturosa were collected and based on them additional data are provided and some concepts from the original description are revised. Literature data on this genus are incorporated and a key to the known species is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319391</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 271 - 300</dcterms:extent>
+   <dcterms:isPartOf>Three new species of the genus Adelophryne (Amphibia: Anura: Leptodactylidae) from northeastern Brazil, with remarks on the other species of the genus (URN:ISSN:0024-0672) (Volume 68) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319391.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150677</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319391</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

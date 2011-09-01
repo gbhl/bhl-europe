@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Geographical variation of Caprimulgus Macrurus Horsfield (Aves, Caprimulgidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>INTRODUCTION The races of Caprimulgus macrurus Horsfield have been revised several times, most recently by Oberholser (1915). This work is now over sixty years old and it was exclusively based on the very inadequate material at the time available in North American collections, without any reference to the large series in the museums of London, Tring, Leiden, etc. As a result, much of Oberholser's revision is based on little more than guesswork (cf. Rothschild &amp; Hartert, 1918: 321). Also, Oberholser omitted the races belonging to the "manillensis" group, although several years earlier Hartert (1906) had concluded that they are conspecific with C. macrurus. My own work on the problem of the geographical variation of the species started over twelve years ago when, studying material from the Western Papuan Islands, I found myself unable to distinguish the numerous races that have been described from the eastern part of its range. Optimistically I announced a revision (Mees, 1965: 171-172). As in the publication mentioned a little-known name was re-introduced and a number of currently accepted names were placed in the synonymy, an explanation is now overdue. The reason for the delay is that completion of the revision took a much longer time than expected. The eastern subspecies did not present any particular difficulties as the material available in Leiden, augmented with a few small loans from other institutions, was adequate for an understanding of the geographical variation in that part of the range of the species. The situation in Borneo, however, could not be satisfactorily clarified with the available material. The Asiatic mainland and several island areas also presented difficulties which were partly insolvable because of insufficient material. Only in</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317588</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 47</dcterms:extent>
+   <dcterms:isPartOf>Geographical variation of Caprimulgus Macrurus Horsfield (Aves, Caprimulgidae) (URN:ISSN:0024-1652) (Volume 155) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317588.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148874</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317588</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

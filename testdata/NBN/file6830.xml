@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : LI. Bemerkungen über Parnassius in den Karpathen und der Tschechoslowakei</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:creator>Zelný J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Parnassius mnemosyne mesoleucus Fruhstorfer, natio gynaecotropaintensa (natio nova) Zelný (1956) hat in seinen Arbeiten „Parnassius mnemosyne mesoleucus Fruhstorfer aus der Kleinen Fatra" (Zeitschrift der Wiener Entomologischen Gesellschaft, 41: 257-263) sich ausführlich über die in den verschiedenen Biotopen vorkommenden mnemosyne geäussert, darunter auch über die mnemosyne, die das Bystricska-Tal in einer Höhe von 500 m bevölkern. Diese mnemosyne zeigen ebenso wie die in anderen Gebieten der Kleinen Fatra fliegenden einen gynaecotropen habitus. Zelný hat aber im BystricskaTal in Höhe von 800-900 m in Laufe einiger Jahre mnemosyne Serien von einen Aussehen erbeutet, das wir glauben als Parnassius mnemosyne mesoleucus Fruhstorfer, natio gynaecotropaintensa (natio nova) festhalten zu müssen. Diese mnemosyne sind besonders gross (♂ 32-34 mm, ♀ 33-35 mm), ♂ im Vorderflügel mit breitem, dunklem Glasband bis über M 3, gut ausgeprägtem Costalfleck, kräftigen Zellflecken; im Hinterflügel, der internerval verglast ist, mit kräftigem Medianauge, überwiegend auch mit deutlichem Costalfleck, Hinterrandsschwärze bis zur Analzone, mit zweizelligem, zuweilen dreizelligem, dann mit dem Medianauge verbundenen Analband. ♀ im stark melahyalinen bis vollständig verdunkelten Vorderflügel, mit breitem Subcostalband bis Μ 1; Glasbinden sehr breit bis zum Hinterrand. Im Hinterflügel mit kräftigen Augenflecken, die oft verbunden sind, ausgebreiteter, häufig einen Teil des Discus bedeckender Hinterrandsschwärze bis zur Analzone, zweizelligem, überwiegend vierzelligem Analband bis zum Medianauge.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319335</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 95 - 97</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : LI. Bemerkungen über Parnassius in den Karpathen und der Tschechoslowakei (URN:ISSN:0024-0672) (Volume 51) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319335.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150621</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319335</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

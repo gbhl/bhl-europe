@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A revision of the Genus Scincella (Reptilia: Sauria: Scincidae) of asia, with some notes on its evolution</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Ouboter P.E.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Scincidae; Scincella</dc:subject>
+   <dc:subject>keys; new species; numerical analysis; evolution; Asia; zoogeography.</dc:subject>
+   <dc:description>Of the genus Scincella Mittleman, 1950 (sensu Greer, 1974) 337 specimens from Asia were examined for 74 characters, which were treated in a numerical-taxonomic way. The dendrogram resulting from this analysis was not stringently adhered to. Because of the wide variation in certain numerical scale characters within one taxon or even within one population, these characters (used by many authors as key characters to separate taxa) are not regarded as very important. For sympatric and parapatric species other characters, including relative size of head, body and limbs, are regarded as very important, because these characters are influenced by the way of life (niche separation). For the separation of allopatric species scale-numbers, but many other characters as well, were used. Twelve species, S. ladacensis (Günther, 1864), S. sikimmensis (Blyth, 1853), S. capitanea spec. nov., S. victoriana (Shreve, 1940), S. travancorica (Beddome, 1870), S. bilineata (Gray, 1846), S. doriae (Boulenger, 1887), S. reevesii (Gray, 1838), S. melanosticta (Boulenger, 1887), S. punctatolineata (Boulenger, 1893), S. barbouri (Stejneger, 1925) and S. modesta (Günther, 1864), and two subspecies, S. ladacensis himalayana (Günther, 1864) and S. melanosticta kohtaoensis (Cochran, 1927), are recognized and described. S. capitanea is a newly described species characterized by its large body size and relatively small head. The speciation in the genus is thought to have occurred in wet forest refugia, the size and distribution of which were determined by wet and dry geological periods.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317820</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1986</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 66</dcterms:extent>
+   <dcterms:isPartOf>A revision of the Genus Scincella (Reptilia: Sauria: Scincidae) of asia, with some notes on its evolution (URN:ISSN:0024-1652) (Volume 229) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317820.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149106</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317820</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

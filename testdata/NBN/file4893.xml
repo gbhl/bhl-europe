@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Distribution and transport of Fennoscandinavian indicators : a synthesis of data from the literature leading to a reconstruction of a pattern of flowlines and ice margins of the Scandinavian ice sheets</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Overweel C.J.</dc:creator>
+   <dc:subject>Geologie: algemeen</dc:subject>
+   <dc:description>Detailed indicator counts in the literature on areas south and east of the Baltic were revaluated on the basis of the main ice movement directions of the last glacial in Fennoscandia. This revaluation resulted in a distribution pattern of indicators which partially coincides with the general trends of ice movement. This holds for both the Weichselian and the Saalian. The other part of the indicator distribution is of Baltic origin. The interrelationship found between flowline and distribution pattern was further analysed and elaborated, which led to a reconstruction of the directions of ice movement and outline forms of the Scandinavian ice sheets. The peripheral glacier-margin drainage was incorporated into the reconstruction, and the resulting possibility that drift ice could have transported indicators of Baltic origin through the Urstromtäler and the glacial lakes is discussed in some detail.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317398</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 117</dcterms:extent>
+   <dcterms:isPartOf>Distribution and transport of Fennoscandinavian indicators : a synthesis of data from the literature leading to a reconstruction of a pattern of flowlines and ice margins of the Scandinavian ice sheets (URN:ISSN:0375-7587) (Volume 43)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317398.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148684</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317398</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

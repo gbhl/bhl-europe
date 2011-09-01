@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the fishes of Western New Guinea I</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>INTRODUCTION In the summer of 1954, I received an invitation from the Netherlands New Guinea Government to undertake a faunistic investigation of the fish fauna of the area. It was thought advisable for the promotion of the local New Guinea fisheries, to first obtain a more thorough knowledge of the fish fauna of the region, based on a collection as complete as could be attained within a reasonable time. As such a collecting trip could be expected to yield results of considerable zoological and zoogeographical importance, I gladly accepted this unique opportunity. A most fortunate circumstance was that my visit coincided with an already previously planned collecting trip to the same area by two of my colleagues, Dr. L. D. Brongersma, at the time deputy-director and curator of herpetology, now director of the Leiden Museum, and Dr. L. B. Holthuis, curator of carcinology at the same institution. The resulting mutual assistance and pooling of technical facilities subsequently proved to contribute notably to the success of my explorations. While the voyage was sponsored by the Netherlands Government, numerous facilities and much, often indispensable, support were rendered by the Government of Netherlands New Guinea, by the Royal Netherlands Navy, by the missions of the Dutch Reformed Church and the Roman Catholic Church, and by the Christian and Missionary Alliance. Invaluable further assistance was received from private persons too numerous to be mentioned here all by name. The following notes, though primarely based on the material collected during our 1954-1955 survey, will occasionally also include data based on</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319252</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 221 - 242</dcterms:extent>
+   <dcterms:isPartOf>Notes on the fishes of Western New Guinea I (URN:ISSN:0024-0672) (Volume 38) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319252.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150538</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319252</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

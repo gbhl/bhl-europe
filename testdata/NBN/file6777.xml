@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Cyclopoid copepods associated with antipatharian coelenterates in Madagascar</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Humes A.G.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Previous work (in i960) at Nosy Bé, in northwestern Madagascar, resulted in the collection by dredging of the antipatharian Stichopathes echinulata Brook parasitized by the copepod Vahinius petax Humes, 1967. More recently (in 1964 and 1967) I have obtained by SCUBA diving several other antipatharians with which the copepods described below were associated. The collection in 1964 was made as part of the U. S. Program in Biology of the International Indian Ocean Expedition. The collections in 1967 were made during field work supported by a grant (GB-5838) from the National Science Foundation of the United States. The study of the copepods has been aided by the same N. S. F. grant. All figures have been drawn with the aid of a camera lucida. The letter after the explanation of each figure refers to the scale at which it was drawn. The abbreviations used are: Ax = first antenna, A2 = second antenna, R = rostrum, L = labrum, MD = mandible, Ρ = paragnath, ΜΧχ = first maxilla, MX2 = second maxilla, MXPD = maxilliped, and Pi = leg ι. The measurements of the length of the body have been made in all cases from specimens in lactic acid and do not include the setae on the caudal rami. In the spine and setal formulas for legs 1 to 4 the Roman numerals indicate spines and the Arabic numerals represent setae. The lengths of the segments of the first antenna have been measured along their posterior non-setiferous margins. I am greatly indebted to Dr. W. Vervoort of the Rijksmuseum van Natuurlijke Historie, Leiden, for the identifications of the several species of Antipathes, and to Dr. Elisabeth Deichmann of the Museum of Comparative</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319282</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 30</dcterms:extent>
+   <dcterms:isPartOf>Cyclopoid copepods associated with antipatharian coelenterates in Madagascar (URN:ISSN:0024-0672) (Volume 44) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319282.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150568</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319282</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

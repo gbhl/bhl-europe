@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift Arbeitsgemeinschaft Österreichischer Entomologen 13 (1961)</dc:title>
+   <dc:creator>Blumenthal  Carl Ludwig, Douglas  St. Quentin, Fischer  Maximilian, Jakob  Hermann, Kasy  Friedrich, Malicky  Hans, Mandl  Karl, Scheerpeltz  Otto, Teppner  Herwig, Wagner  Eduard, Zimmermann  Stephan</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Eduard Wagner: Eine neue Phytocoris-Art von der Insel Kreta (Hem. Het. Miridae).     1-    3. Maximilian Fischer: Eine neue Apanteles-Art aus Jugoslawien (Hymenoptera, Braconidae).     4-    5. Otto Scheerpeltz: Neue Kurzflügler aus Nordost-Spanien (Col. Staph.).     6-    9. Otto Scheerpeltz: Neue Arten der Gattung Atheta C.G. Thoms. aus Macedonien (Col. Staph.). (109. Beitrag zur Kenntnis der paläarktischen Staphyliniden).    10-   14. Karl Mandl: Carabologische Notizen. (1 Tafel)    14-   23. Hans Malicky: Über die Ökologie von Lycaeides idas L., insbesondere über seine Symbiose mit Ameisen.    22-   49. Carl Ludwig Blumenthal: Die Laufkäfer der Lüneburger Heide, Teil III. Zur Verbreitung des Carabus violaceus L. in Nordwestdeutschland.    24-   27. St. Quentin Douglas: Putzvorgänge bei Libellen. (4 Tafel)    28-   29. Herwig Teppner: Beitrag zur Faunistik und Biologie der Bockkäfer in der Steiermark.    50-   60. Hermann Jakob: Zwei neue Lilioceris-Arten (Col., Chrysomel.) aus China. 16. Beitrag zur Kenntnis pal. Chrysomeliden.    61-   62. Friedrich Kasy: Beiträge zur Kenntnis der Micro- und Macroheteroceren - Fauna Westmazedoniens.    65-   82. Stephan Zimmermann: Neue Goldwespenfunde in Österreich (Hymenoptera, Chrysididae) III.    83-   84. Eduard Wagner: Noch eine neue Lygaeiden-Gattung aus dem Tschadsee-Gebiet (Hem. Het.).    85-   87</dc:description>
+   <dc:date>1961</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26288.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26288.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26288</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

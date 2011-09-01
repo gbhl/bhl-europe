@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The coral Montipora monasteriata (Forsk.) in the Fiji Islands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>During a visit to the Fiji Islands, of about three weeks in March, 1949, through the kind help of Mr. Harold Gatty at Suva I had the opportunity to make trips to various coral reefs. On one of these trips, on March 18, to the reef of Tomberua, a small island to the south east of the large island Viti Levu, I collected an extensive material of various species of the genus Montipora. Among this material there is one colony of Montipora monasteriata (Forsk.), apparently the first to be reported from the Pacific region, as Crossland (1941, p. 35) states: "It is remarkable that the species, which is not uncommon in the Red Sea, has not appeared in any collection outside this area except in Gravier's from the Gulf of Aden." Forskål's (1775) short description of his Madrepora monasteriata does not give any details about the growth form of the species. Milne Edwards (1860) ranges the species in the group characterized by "polypier subdendroïde ou en forme de touffe rameuse à branches digitiformes". Probably Klunzinger (1879) was influenced by Milne Edwards's data when he identified a branched form as Montipora monasteriata. After examination of some of Forskål's specimens, von Marenzeller (1907) concluded that Klunzinger's Montipora tuberculosa belongs to M. monasteriata (Forsk.), whilst Klunzinger's M. monasteriata is another species of the genus. Crossland (1941) arrives at the same conclusion; as this author gives an elaborate account of the history concerning the species, I have noted here the most salient details only. According to Crossland the work by Bernard (1897) is not helpful and is best ignored (meaning, of course, as far as concerns the data in connexion with the specific status of M. monasteriata). However this may be, it must not be overlooked that Bernard (1. c, p. 137), although</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318692</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1951</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 89 - 94</dcterms:extent>
+   <dcterms:isPartOf>The coral Montipora monasteriata (Forsk.) in the Fiji Islands (URN:ISSN:0024-0672) (Volume 31) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318692.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149978</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318692</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

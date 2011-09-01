@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 1 (1835)</dc:title>
+   <dc:creator>Anonymus , Pillersdorf , Plank  Franz, Rayder , Spaun  Anton Ritter  von, Ugarte  Aloys</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: 1. Bericht über die Leistungen des vaterländischen Vereines zur Bildung eines Museums für das Erzherzogthum Österreich ob der Enns, und das Herzogthum Salzburg.     3-   13. Anton Ritter  von Spaun: Beylage I.    14-   15. Pillersdorf: Beylage II. Hoch und Wohlgeborner Graf!    15-   16. Aloys Ugarte: Beylage III.    16-   17. : Beylage IV. Bekanntmachung.    17-   18. : Beylage V. Nahmens-Verzeichnis.    18-   19. : Beylage VI. Kundmachung.    19-   20. Anonymus: Beylage VIII. Statuten.    20-   25. Rayder: Beylage VII. An den Verein des vaterländischen Museums für Österreich ob der Enns, und für das Herzogthum Salzburg.    20. Anonymus: Beylage IX. An die Freunde des  Vereines des vaterländischen Museums für Österreich ob der Enns, mit Inbegriff des Herzogthums Salzburg.    25-   26. Anonymus: Beylage X. Übersicht.    26-   49. Franz Plank:  Beylage XI.    49. Anonymus: Beylage XII. Alphabethisches Nahmensverzeichniss.    50-   63</dc:description>
+   <dc:date>1835</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28469.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28469.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28469</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

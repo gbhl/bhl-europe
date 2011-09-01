@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ergebnisse der Nachuntersuchung einiger Rhizostomeen-Typen Haeckel's und Schultze's aus der Sammlung des Zoologischen Institutes der Universität in Jena</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Durch die Aufstellung des neuen Systems der Rhizostomeen (vergl. meine früheren Mitteilungen (12—15), insbesonders meine „Studien über Rhizostomeen..." (15)), hat sich die Nachuntersuchung zahlreicher Typenexemplare als notwendig erwiesen. Die Originalbeschreibungen der Autoren lassen vielfach Angaben gerade über jene anatomischen Merkmale vermissen, die auf Grund der neueren Untersuchungen für die Beurteilung der systematischen Stellung der einzelnen Formen von Wichtigkeit geworden sind. Eine Anzahl solcher Originale Haeckels konnte bereits bei Gelegenheit der Bearbeitung der Sammlung des Kopenhagener Museums untersucht werden (16), über die Untersuchungsergebnisse weiterer aus dem ehemaligen Museum Godeffroy in Hamburg stammender Originale Haeckel's und Chun's habe ich an anderer Stelle berichtet (19), über die Siboga-Typen (Maas) in meinen „Studien" (15). Sehr erwünscht war es mir daher, auch die Originale von Rhizostomeen in den Sammlungen des phyletischen Museums und des Zoologischen Institutes in Jena untersuchen zu können, was mir durch die Güte des Herrn Prof. Dr. L. Plate, und die Mühewaltung von Herrn Prof. Dr. V. Franz, Jena, ermöglicht wurde. Beiden Herrn sei hiefür bestens gedankt. Es wäre nun sehr naheliegend, anzunehmen, dass in den Jenenser Sammlungen das Gros der Typenexemplare der durch Haeckel neu beschriebenen Scyphomedusen aufzufinden sein müsste. Das ist nun leider nicht der Fall. Aus der Liste der in den genannten Instituten befindlichen Scyphomedusen, die ich Herrn Prof. Franz verdanke, geht hervor, dass von den Haeckelschen Originalen nur ganz wenige vorhanden sind 1), die mir mit anderen zur Nachuntersuchung übersendet wurden. Dagegen</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319087</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1922</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 61 - 79</dcterms:extent>
+   <dcterms:isPartOf>Ergebnisse der Nachuntersuchung einiger Rhizostomeen-Typen Haeckel's und Schultze's aus der Sammlung des Zoologischen Institutes der Universität in Jena (URN:ISSN:0024-0672) (Volume 7) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319087.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150373</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319087</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

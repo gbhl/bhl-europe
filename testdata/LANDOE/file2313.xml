@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 77_78 (1949)</dc:title>
+   <dc:creator>Attems[-Petzenstein]  Carl Reichsgraf von, Donner  J. H., Eggler  Josef, Franz  Herbert, Frisch  Karl von, Goetsch  Wilhelm, Heritsch  Haymo, Höfler  Karl, Jettmar  H.M., Kleinert  Th., Koegeler  Karl, Kubiena  Walter Ludwig, Lieb  Hans, Robitsch  Johann, Rössler  Wilhelm, Schouppé  Alexander, Wagner  Eduard, Widder  Felix Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Carl Reichsgraf von Attems[-Petzenstein]: Myriopoden von der Gleinalpe und zwei neue Attemsiidae.     5-   10. J. H. Donner: Rotatorien einiger Teiche um Admont.    11-   20. Josef Eggler: Pflanzenwelt und Bodensäure.    21-   60. Haymo Heritsch: Die Gesteine des Gailtaler Kristallinzuges zwischen Birnbaum und Dellach im Gailtal.    61-   92. Karl Koegeler: Mittelmeer-Flora in Graz.    93-  100. Johann Robitsch: Das Radegunder Kristallin.   101-  138. Alexander Schouppé: Zwei Decapoden aus dem Torton von Retznei.   139-  141. Alexander Schouppé: Die Fauna des Steinbruches von Retznei bei Ehrenhausen.   142-  144. Eduard Wagner: Reihenuntersuchungen bei der Untergattung Exolygus E. Wagn. (Hem. Het Miridae).   145-  150. Herbert Franz: Die biologischen Grundlagen der Bodenfruchtbarkeit (Vortrag).   151-  152. Wilhelm Goetsch: Entdeckung eines neuen Wirkstoffes (Vitamin T) (Vortrag).   153-  163. Karl Höfler: Fluoreszenzmikroskopie und Zellphysiologie (Vortrag).   164-  166. H.M. Jettmar: Auf Pestexpedition in China (Vortrag).   167-  170. Th. Kleinert: Fortschritte auf dem Gebiete der Viskosespinnfasern (Vortrag).   171-  172. Walter Ludwig Kubiena: Wesen und Formen der Humusbildung (Vortrag).   173-  174. Hans Lieb: Die Isotopen und ihre Bedeutung für die Biochemie (Vortrag).   175-  176. Alexander Schouppé: Die Bedeutng der Palaeontologie für die Abstammungslehre (Vortrag).   177-  180. Felix Josef Widder: Gingko und Telomtheorie.   181-  183. Karl von Frisch: Geschäftsbericht über das 85. Vereinsjahr 1947.   185-  187. Wilhelm Rössler: Geschäftsbericht über das 86. Vereinsjahr 1948.   188-  189</dc:description>
+   <dc:date>1949</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28625.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28625.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28625</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Marine Mollusca of Suriname (Dutch Guiana) Holocene and recent Part III. Gastropoda and Cephalopoda</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Regteren Altena, van C.O.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>CONTENTS 1. Introduction, systematic survey and page references....... 3 2. Gastropoda and Cephalopoda............. 8 3. List of corrections of and additions to Part II......... 89 4. References.................. 92 5. Plates ................... 100 1. INTRODUCTION, SYSTEMATIC SURVEY AND PAGE REFERENCES The first part of this work, published in 1969, is a general introduction to the Suriname marine Mollusca; in the second part, published in 1971, the Bivalvia and Scaphopoda were treated; in this third and last part the Gastropoda and Cephalopoda are dealt with. The system adopted in this part is that of Thiele (1929, 1931), but more or less altered at several places, in nomenclature as well as in sequence. The holotypes of the species described by the author (1965, 1966, 1968, 1971a and in this paper) are placed in the Rijksmuseum van Natuurlijke Historie at Leiden, except the holotype of Solariorbis guianensis Altena which is in the Surinaams Museum at Paramaribo. The Surinaams Museum holds also paratypes of the other new species described by the author and specimens of about all the species found on the shell ridges, washed ashore, or dredged off the coast of Suriname as far as they were mentioned in Part II and III of this publication. Many persons, who here helpful to me by sending specimens or identifying them, were mentioned in Part I and II of this paper. To these the following should be added. Mr. P. G. E. F. Augustinus, who visited Suriname three times studying</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317690</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 104</dcterms:extent>
+   <dcterms:isPartOf>The Marine Mollusca of Suriname (Dutch Guiana) Holocene and recent Part III. Gastropoda and Cephalopoda (URN:ISSN:0024-1652) (Volume 139) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317690.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148976</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317690</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

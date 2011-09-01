@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Anisospira velascorum, a new land snail from Mexico, with notes on the anatomy and histology (Mollusca, Gastropoda, Urocoptidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Breure A.S.H.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>During a collecting trip through southern and central Mexico (Breure, 1974) special attention has been paid to Bulimulidae and Urocoptidae. Among the material of urocoptids a new species has been found. Anisospira velascorum sp. n. (figs. 1-10, pl. 1) Description. — Shell up to 30.5 mm, 2.39 times as long as wide, rimate, with rather convex sides; cylindrical; solid. Colour reddish-brown. Surface slightly shining, with numerous fine riblets, which are slightly recurved and equally spaced over the surface of the shell. Riblets about (half) as broad as the intervals, with 5-6 riblets/mm on the antepenultimate whorl. Decollate; adult shell with 7 whorls, moderately convex; first three whorls of adult shell rapidly increasing in width, other whorls nearly cylindrical, but last whorl usually more slender. Suture well impressed. Aperture broadly ovate, usually adnate, as long as wide, 0.23 times the total length. Peristome moderately thickened, narrowly reflexed, whitish. Axis with two smooth spiral lamellae, confined to the last 11/2 whorl. One lamella just above floor of whorl, blade- to cord-like; the second lamella, which is less developed and absent in some specimens, is located near the middle of the axis (fig. 2). Genitalia. — The genitalia of this species correspond to the general description for those of Anisospira given by Thompson (1968: 149), but the epiphallus originates below the apex of the penis (fig. 10) and is ca. 7 times as long as the penis. Genital atrium. The lumen is elongate with infoldings, and lined with a cubic epithelium (cell height 5 μm). The subepithelial tissue is made up by loose connective tissue in which some light blue (with Alcian Blue; hereafter indicated as AB) staining cells are dispersed. At the periphery</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318042</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 299 - 305</dcterms:extent>
+   <dcterms:isPartOf>Anisospira velascorum, a new land snail from Mexico, with notes on the anatomy and histology (Mollusca, Gastropoda, Urocoptidae) (URN:ISSN:0024-0672) (Volume 51) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318042.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149328</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318042</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

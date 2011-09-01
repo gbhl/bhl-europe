@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Rhizocephalan parasite of the crab Xantho incisus (Leach)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>42.36 ; 42.74</dc:subject>
+   <dc:description>As shown by Holthuis (1954), the correct name for the European crab commonly referred to as Xantho floridus (Montagu) is Xantho incisus (Leach). A Rhizocephalan parasite of this crab was first mentioned (without an indication of specific characters) by Gerbe (1862); afterwards specimens were recorded by Kossmann (1873), who suggested that they might be identical with his Sacculina benedeni, the parasite of the crab Pachygrapsus marmoratus (Fabricius), at present considered identical with Sacculina carcini Thompson. Bonnier (1887) used the name Sacculina gerbei Giard for the parasite of Xantho incisus; this name was, however, not mentioned in any of the several papers by Giard dealing with Rhizocephala. In the present paper the parasite is referred to with the name Sacculina gerbei Bonnier, though perhaps the correct indication would be "Sacculina gerbei Giard in Bonnier". Guérin-Ganivet (1911) used the name Sacculina gerbei Giard for the parasite of Xantho incisus ; he examined a specimen from the collection of the Marine Laboratory at Wimereux without exact data of a locality and remarks (l.c., pp. 51-52) : Cette Sacculine rentre à la rigueur dans la categorie de celles qu'on pourrait sans doute assimiler à Sacculina carcini. La forme du seul exemplaire que j'ai examiné n'est cependant pas absolument identique à cette dernière; les deux diverticules latéraux font défaut et l'orifice cloacal est au sommet d'une proéminence du manteau. La cavité incubatrice était vide et la masse viscérale lisse; la glande collétérique est située à la limite de séparation du tiers moyen et du tiers inférieur de la masse viscérale; je n'ai pu observer le testicule, ne voulant pas détériorer par trop cet échantillon unique. Je ne me décide d'ailleurs à lui conserver provisoirement le nom spécifique que lui</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318143</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 227 - 235</dcterms:extent>
+   <dcterms:isPartOf>The Rhizocephalan parasite of the crab Xantho incisus (Leach) (URN:ISSN:0024-0672) (Volume 33) (Issue 23)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318143.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149429</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318143</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

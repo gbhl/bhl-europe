@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Additions to the fauna of Braconidae from Madeira and Selvagens Islands, with the description of five new species (Hymenoptera: Braconidae: Homolobinae, Alysiinae, Opiinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:creator>Aguiar, Franquinho A.M.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Alysiinae</dc:subject>
+   <dc:subject>Aphidiinae</dc:subject>
+   <dc:subject>Blacinae</dc:subject>
+   <dc:subject>Braconinae, Cheloninae</dc:subject>
+   <dc:subject>Doryctinae</dc:subject>
+   <dc:subject>Euphorinae</dc:subject>
+   <dc:subject>Helconinae</dc:subject>
+   <dc:subject>Homolobinae</dc:subject>
+   <dc:subject>Hormiinae</dc:subject>
+   <dc:subject>Macrocentrinae</dc:subject>
+   <dc:subject>Microgastrinae</dc:subject>
+   <dc:subject>Miracinae</dc:subject>
+   <dc:subject>Opiinae;Rogadinae</dc:subject>
+   <dc:subject>Dinotrema</dc:subject>
+   <dc:subject>Homolobus</dc:subject>
+   <dc:subject>Orthostigma</dc:subject>
+   <dc:subject>Palaearctic</dc:subject>
+   <dc:subject>Portugal</dc:subject>
+   <dc:subject>Madeira Islands</dc:subject>
+   <dc:subject>Selvagens Islands</dc:subject>
+   <dc:subject>Canary Islands</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:description>Twenty-one species of the family Braconidae (Hymenoptera) are added to the checklist of Braconidae from Madeira, resulting in 113 species, of which 17 species are endemic to Madeira Islands and 4 species are only known from Madeira and Canary Islands. Five species are reported new for the Selvagens Islands. Five new species are described and illustrated: Homolobus (Apatia) madeirensis spec. nov. (Homolobinae), Dinotrema glabriscutum spec. nov., D. brunneicornis spec. nov. and Orthostigma minusculum spec. nov. (Alysiinae: Alysiini) and Phaedrotoma flaveola spec. nov. (Opiinae: Opiini). Meteorus pendulus (Müller, 1776) is considered to be a Holarctic species, with as junior synonyms the Nearctic Perilitus communis Cression, 1872 (syn. nov.) and the Palaearctic Ichneumon gyrator Thunberg, 1822.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:315871</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 777 - 797</dcterms:extent>
+   <dcterms:isPartOf>Additions to the fauna of Braconidae from Madeira and Selvagens Islands, with the description of five new species (Hymenoptera: Braconidae: Homolobinae, Alysiinae, Opiinae) (URN:ISSN:0024-0672) (Volume 83) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/315871.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/146802</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/315871</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

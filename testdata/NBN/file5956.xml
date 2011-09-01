@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A systematic catalogue of the Coleopterous family Helotidae in the Leiden Museum</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Ritsema C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Gen. HELOTA Mc L.1) Mc Leay, Annulosa Javanica, 1825, p. 42; ed. Lequien, 1833, p. 151. INDOMALAYAN SPECIES. (Nos. 1—69). 1. Vigorsi Mc L. Annul. Javan. 1825, p. 43, tab. 1, fig. 9; ed. Lequien, 1833, p. 152, tab. 5, fig. 4. a. ♀. Java or.: Mt. Ardjoeno (W. E. J. Hekmeyer). b. ♀. Java (A. B. v. Medenbach de Rooy). c &amp; d. ♂♂. Java occ.: Mt. Poentjak (J. D. Pasteur. 2) e &amp; f. ♀♀. Java occ.: Mt. Poentjak (J. D. Pasteur). 3) g—l. ♂♂. Java occ: Toegoe (J. D. Pasteur). m. ♀. Java occ: Toegoe (J. D. Pasteur). n. ♂. Java occ.: Pengalengan (H. Fruhstorfer). o. ♀. Java occ.: Pengalengan (H. Fruhstorfer). p. ♂. Java occ.: Soekaboemi (H. Fruhstorfer). q. ♂. Java occ.: Mt. Gedeh (H. Fruhstorfer). r. ♀. Java occ.: Mt. Tjikorai (H. Fruhstorfer). s &amp; t. ♂♂. Java or.: Mts. Tengger (H. Fruhstorfer). u &amp; v. ♀♀. Java or.: Mts. Tengger (H. Fruhstorfer). w. ♂. Java mer., H. Fruhstorfer (H. Rolle). 4) x. ♂. Java: Pandamas, J. B. Ledru (R. Oberthür). y. ♀. Java: Pandamas, J. B. Ledru (R. Oberthür). z. ♂. Java or.: Nongkodjadjar (E. Jacobson). aa—cc. ♂♂. Java or.: Soerabaya (H. Deyrolle). dd—ff. ♀♀. Java or.: Soerabaya (H. Deyrolle).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318461</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1915</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 125 - 139</dcterms:extent>
+   <dcterms:isPartOf>A systematic catalogue of the Coleopterous family Helotidae in the Leiden Museum (URN:ISSN:0024-0672) (Volume 1) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318461.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149747</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318461</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

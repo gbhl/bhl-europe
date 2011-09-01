@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>List of egg-capsules of Rajidae washed ashore in the Netherlands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Lacourt A.W.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Egg-capsules of the following four Raja-species have been known with certainty for many years from the shores of the Netherlands: Raja clavata Linnaeus, Raja montagui Fowler (Raja maculata Montagu), Raja radiata Donovan, and Raja batis Linnaeus. It is therefore of interest to note that from 1931 to 1935 and in 1936 egg-capsules diverging strongly from the well-known species, have been found on the beach between Wassenaar and Noordwijk (in the province of South-Holland). These capsules appeared to belong to the following five species: Raja brachyura Lafont, Raja naevus Müller and Henle, Raja undulata Lacépède, Raja microcellata Montagu, and Raja marginata Lacépède. The determinations have been made with Clark's (1922) paper, with the exception of Raja radiata Donovan, as this species is not mentioned by him. After studying and comparing the material of the collections of the Museum of Natural History at Leiden, several private collections, and my own, the following list of the species, occurring on the shore of the Netherlands, could be compiled: 1. Raja clavata Linnaeus. Egg-capsules are known from nearly the whole shore. Very common. 2. Raja montagui Fowler. Egg-capsules known from the shore of the province of South-Holland and the isle of Ameland. Rather common. 3. Raja radiata Donovan. Egg-capsules chiefly known from the northern part of the shore, south as far as Oostvoorne (South-Holland). Rather rare, capsules have been found single or in small groups. Once, on 2 IX 1935, 82 capsules have been found by the author on the isle of Ameland.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318555</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 27 - 28</dcterms:extent>
+   <dcterms:isPartOf>List of egg-capsules of Rajidae washed ashore in the Netherlands (URN:ISSN:0024-0672) (Volume 20) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318555.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149841</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318555</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

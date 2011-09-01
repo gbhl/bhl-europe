@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A taxonomic revision of the European, Mediterranean and NW. African species generally placed in Sphaeroma Bosc, 1802 (Isopoda: Flabellifera: Sphaeromatidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Jacobs B.J.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Isopoda; Flabellifera; Sphaeromatidae; Sphaeroma; Lekanesphaera; Ex- osphaeroma; Verhoeff; keys; species; new species.</dc:subject>
+   <dc:description>The European, Mediterranean and NW. African species usually assigned to the genus Sphaeroma are revised. The genus Sphaeroma as understood so far has been divided into two genera: Sphaeroma s.s. and Lekanesphaera Verhoeff, 1943. Keys to the three species of Sphaeroma and the thirteen species of Lekanesphaera are given. Two new species are described viz., L. glabella (from Madeira) and L. terceirae (from Terceira, Azores) and the synonymy of known species is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317597</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1987</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 71</dcterms:extent>
+   <dcterms:isPartOf>A taxonomic revision of the European, Mediterranean and NW. African species generally placed in Sphaeroma Bosc, 1802 (Isopoda: Flabellifera: Sphaeromatidae) (URN:ISSN:0024-1652) (Volume 238) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317597.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148883</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317597</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

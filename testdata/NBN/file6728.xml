@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the genera Melongena and Semifusus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bayer Ch.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Melongena Schumacher, 1817 (= Galeodes Röding) Thiele (1931, p. 320) gives the name Galeodes (Bolten) Röding, 1798, to this genus. This name, however, was already used by Olivier in the Encyclopédic méthodique, Insectes (1791, vol. 6, p. 578) for a genus of the Solifugidae. The author gave a detailed diagnosis and, moreover, described two species of the genus. Galeodes Olivier, 1791, obtains therefore priority in respect to Galeodes Röding, 1798, and this last name must thus be dropped as a hononym. Cassidula "Humphrey" (1797, p. 32), which is sometimes used, is not valid, as according to Opinion 51 the anonymous catalogue "Museum Calonnianum" "is not to be accepted as basis for any nomenclatorial work". The next name to be considered for this genus is Melongena Schumacher, 1817. This author (1817, p. 212) gives a clear diagnosis of the genus and mentions as genotype M. fasciata [= M. melongena (L.)]. As in my previous catalogues I have, besides the species present in our collection, as far as possible, included here all the species of Melongena that are mentioned in literature. All the specimens from one collector in a certain locality, as far as they are kept dry, bear the same letter, whilst of the material preserved in liquor the number of the jar is given. In the list of species dealt with below, I have inserted these letters or numbers, followed by a number indicating how many specimens we possess from that locality. After the locality the name of the collector is mentioned; when the locality or the name of the collector is unknown I have placed a note of interrogation. 1. Sect. Melongena s.s. M. corona (Gmelin)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319233</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1952</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 265 - 299</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the genera Melongena and Semifusus (URN:ISSN:0024-0672) (Volume 31) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319233.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150519</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319233</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the sinus lumbosacralis, spina bifida occulta, and status dysraphicus in birds</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jelgersma H.C.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>The sinus rhomboidalis sacralis or sinus lumbosacralis as it is named by Ariens Kappers (1920) is an interesting anatomical part of the lumbosacral region of the avian spinal medulla. It is found in birds only and neither in reptiles nor in mammals. Fig. 1 shows the lumbosacral part of the spinal medulla of Phoenicopterus Pig. 1. Spinal medulla of Phoenicopterus, dorsal view, with sinus lumbosacralis and corpus gelatinosum. From Imhof (1905). seen from the dorsal surface and Fig. 2 represents a diagrammatic transverse section through the lumbosacral part. These figures show some peculiarities that are found in birds only. All vertebrates with hind limbs have a lumbosacral enlargement of the spinal medulla, but in birds this enlargement has become more pronounced through the presence of the lumbosacral sinus. At the dorsal surface of the medulla there is an elongated cleft, which we may call the sinus, and this cleft penetrates rather deep, deeper than the central canal. The cleft is filled up by a plug of peculiar gelatinous tissue, which protrudes in a marked degree above the surface of the medulla. This tissue is named by Terni (1924) the corpus glycogenicus because the cells contain a great mass of glycogen. Perhaps it is better to use the name corpus gelatinosum, as this name pretends nothing, and glycogen is of common occurrence in tumors and in many other tissues. Ariens Kappers (1924) has shown that this tissue is of a very complicated origin, it is partly glious, partly pial and partly arachnoidal, it contains blood vessels and it is composed of large vacuolized cells. It is remarkable that this gelatinous tissue, when transferred to 70 % alcohol collapses in a few minutes. Imhof (1905) has studied the embryonic development of the lumbosacral sinus</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318568</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1951</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 95 - 106</dcterms:extent>
+   <dcterms:isPartOf>On the sinus lumbosacralis, spina bifida occulta, and status dysraphicus in birds (URN:ISSN:0024-0672) (Volume 31) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318568.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149854</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318568</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

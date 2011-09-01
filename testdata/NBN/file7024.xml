@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Cetaceans stranded in the Netherlands from 1998 to 2007</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Camphuysen C.J.</dc:creator>
+   <dc:creator>Smeenk C.</dc:creator>
+   <dc:creator>Addink M.</dc:creator>
+   <dc:creator>Jansen O.E.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:subject>cetaceans</dc:subject>
+   <dc:subject>strandings</dc:subject>
+   <dc:subject>the Netherlands</dc:subject>
+   <dc:subject>North Sea</dc:subject>
+   <dc:subject>Wadden Sea</dc:subject>
+   <dc:subject>fin whale</dc:subject>
+   <dc:subject>sei whale</dc:subject>
+   <dc:subject>minke whale</dc:subject>
+   <dc:subject>humpback</dc:subject>
+   <dc:description>Between 1998 and 2007, 2063 cetaceans were found stranded in the Netherlands, representing at least 14 species. Two species, humpback whale (Megaptera novaeangliae) and Blainville’s beaked whale (Mesoplodon densirostris), are additions to the Dutch list. Apart from the first humpback whales, relatively many balaenopterid whales were found in comparison with previous decades. Range extension of recovering populations may explain part of this trend. However, the decline in strandings frequency in sperm whales (Physeter macrocephalus), another species with a slowly recovering Atlantic population but with a distinct peak in strandings in the 1990s, suggests that the factors underlying these changes are complex. During the 20th century, the strandings frequency of some dolphin species regularly occurring in the North Sea has changed markedly. Bottlenose dolphins (Tursiops truncatus) disappeared in the 1960s, common dolphins (Delphinus delphis) were fairly numerous during some decades in the mid-20th century, and white-beaked dolphins (Lagenorhynchus albirostris) became abundant and virtually replaced bottlenose dolphins in the strandings records since the 1970s. Numbers of stranded harbour porpoises (Phocoena phocoena) continued to increase over the years. All individual cases other than harbour porpoises are listed in this paper, reporting species, date, locality, reporter, sex, total length (TL), collected remains, and remarks. A total of 1968 reports of stranded harbour porpoises were received, ranging from 59 in 1998 to 539 in 2006. It is estimated that along the North Sea coast at least 19% more porpoises were washed ashore than were actually recorded. On the Wadden Sea islands, this discrepancy is estimated as at least 30%. The mean length of porpoises declined gradually with time and the sex ratio was male-biased in all subregions. From measurements (TL) it is concluded that circa 72% were juveniles, with small proportions of adults (15.5%; unsexed and ?? animals of TL&gt;150 cm, // animals of TL&gt;145 cm) and neonates or stillborns (12.4%; all porpoises of TL&lt;90 cm). The predominance of males is evident only in juveniles (62.8%), whereas the sex ratio in adults and neonates is not significantly skewed. 20.2% of the females and 12.1% of the males are large enough to be regarded as sexually mature. The overall strandings pattern of the harbour porpoise is bimodal, with peaks in strandings in March-April and August. Presumed adults were proportionally numerous in winter (December- January) and in June, whereas about a quarter of all porpoises found in July, August and September were neonates or stillborn. At least ten porpoises were very large (TL estimated or measured &gt;170 cm) and a minimum of 14 females were either pregnant or had recently given birth. It should be noted, however, that only a small proportion of the porpoises was checked for reproductive status. Foetuses ranged in length from 22 cm (December 2006) to 75 cm (May 2004). Many porpoises were decomposed when found and these were buried or removed and destroyed. At least 38 cases were reported with evident external signs of by-catches, another 17 carcasses had been heavily mutilated with knives. A combination of histopathology and gross pathology of 255 harbour porpoises found in the period 1990-2000 and in 2006 and 2007 suggested that between 50 and 60% of the animals showed signs of definite or probable by-catch in fishing gear. Many of the stranded porpoises found had come into conflict with fisheries and had died, as several of the larger (baleen) whales did. A dialogue with fisheries organisations is proposed to explore the issue further and to try and mitigate the problem.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:328649</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 87 - 122</dcterms:extent>
+   <dcterms:isPartOf>Cetaceans stranded in the Netherlands from 1998 to 2007 (URN:ISSN:0024-7634) (Volume 51) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/328649.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/162012</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/328649</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

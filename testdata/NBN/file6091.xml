@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ergebnis der Untersuchung Powerscher in Litt.-Arten nebst Beschreibung einer neuen Gattung des Tribus Ceocephalini von Madagaskar</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kleine R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>1. Cyphagogus gracilis zwei Stück von Tandjong Morawa, Serdang (N. O. Sumatra) und Moeara teweh, Borneo, ist nach Sennas Beschreibung = Cyphagogus angusticeps Senna. Mit dieser Art konnte ich die grösste Übereinstimmung feststellen. 2. Cyphagogus moestus. Zwei Stück von Batjan. Es ist eine 11—13 mm. grosse Art, einfarbig schwarz, Halsschild ohne nennenswerte Punktierung, ohne Härchen, Deckenrippen alle mehr oder weniger nach innen geschwungen. Hinterer Metatarsus so lang wie 2 und 3 zusammen. Es handelt sich vielleicht um eine neue Art. Bei der grossen Gleichförmigkeit der Cyphagogus-Arten will ich die Beschreibung einem künftigen Spezialisten überlassen. Es ist notwendig alle Arten zusammen zu haben. Inzwischen festgestellt: C. splendens Eleine. 3. Cyphagogus pilosus. Ein Exemplar von Salawatti; durch Typenvergleich = C. splendens Kleine Zemioses brevirostris. Dies Tier scheint noch nicht beschrieben zu sein. Es kann nur zur Gattung Neosebus Senna gehören, mit der es in alien wichtigen Punkten übereinstimmt. Dagegen kann ich es nicht mit der einzigen Art: bidentatus Senna vereinigen, obwohl mit derselben nahe Verwandtschaft besteht. Ich stelle die Differenzen gegenüber. bidentatus n. sp. Mesorostrum nicht erhaben. Mesorostrum mit hohen Kanten, von der Basis aus eine nach dem Prorostrum sich dreieckig erweiternde Mittelfurche, die nach den vorderen Aussenwänden desselben</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318596</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1921</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 58 - 63</dcterms:extent>
+   <dcterms:isPartOf>Ergebnis der Untersuchung Powerscher in Litt.-Arten nebst Beschreibung einer neuen Gattung des Tribus Ceocephalini von Madagaskar (URN:ISSN:0024-0672) (Volume 6) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318596.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149882</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318596</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

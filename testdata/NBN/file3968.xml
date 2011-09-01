@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the genus Parzaommomyia Girault (Hymenoptera: Eulophidae), with taxonomic notes on related genera</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gumovsky A.</dc:creator>
+   <dc:creator>Ubaidillah R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Eulophidae</dc:subject>
+   <dc:subject>Entedoninae</dc:subject>
+   <dc:subject>phylogeny</dc:subject>
+   <dc:subject>Parzaommomyia</dc:subject>
+   <dc:subject>Omphale-complex</dc:subject>
+   <dc:subject>Australasia</dc:subject>
+   <dc:subject>Oriental</dc:subject>
+   <dc:subject>Afrotropical</dc:subject>
+   <dc:subject>Palaeotropical</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:description>The eulophid genus Parzaommomyia Girault, 1915, is revised and redefined. Five new species are described and illustrated: P. sulensis spec. nov. from Sulawesi and West Malaysia, P. africana spec. nov. from Nigeria, P. crassicornis spec. nov. from Sulawesi, New Guinea and China, P. achterbergi spec. nov. from East Malaysia and Java, and P. incompleta spec. nov. from New Guinea. Species of this genus represent a monophyletic Palaeotropical group characterized by six synapomorphies according to the results of the cladistic analysis of all known (six) species and 20 outgroup taxa coded for twenty-nine characters. The supraclypeal area is delimited by grooves (i. e. both the clypeus and the supraclypeus are delimited), the sensory pores on the scape of the male are fused in a “sensory plaque”, the posterior part of the scutellum has a distinct apical rim, the dorsellum is wide and margined, the lateral propodeal plica is diagonal, and the volsellar setae on male genitalia are enlarged. The first two characters are autapomorphies and most helpful for diagnostic purposes. The sensory pores fused in a “plaque” on the ventral edge of the scape of the male, are recorded for a first time for the eulophid subfamily Entedoninae Förster, 1856 (previously known for the subfamily Tetrastichinae Förster, 1856 only). The systematic position of the genus, its infrageneric variation and the phylogenetic relationships are discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217476</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2002</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 271 - 308</dcterms:extent>
+   <dcterms:isPartOf>Revision of the genus Parzaommomyia Girault (Hymenoptera: Eulophidae), with taxonomic notes on related genera (URN:ISSN:00240672) (Volume 76, 17-24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217476.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45098</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217476</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

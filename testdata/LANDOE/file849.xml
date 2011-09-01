@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wiener Entomologische Zeitung 38 (1920)</dc:title>
+   <dc:creator>Anonymus , Becker  Theodor, Bernhauer  Max, Depoli  Guido, Enderlein  Günther, Fleischer  Antonin, Heikertinger  Franz, Hendel  Friedrich Georg, Hetschko  Alfred, Mader  Leopold, Melichar  Leopold, Müller  Josef (Giuseppe), Priesner  Hermann, Reitter  Edmund</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Heikertinger: Edmund REITTER. Ein Nachruf. 1 Portraittafel.     1-   16. Alfred Hetschko: Nachtrag zum Verzeichnis der Schriften von Edmund REITTER.    17-   20. Edmund Reitter: Bestimmungs-Tabelle der europäischen Donaciini, mit Berücksichtigung der Arten aus der paläarktischen Region.    21-   43. Max Bernhauer: Neue Staphyliniden aus Mittelamerika.    44-   47. Günther Enderlein: Die Culiciden-Fauna Madagascars.    47-   52. Friedrich Georg Hendel: Zwei neue europäische Dipterengattungen.    53-   56. Günther Enderlein: Einige neue orientalische Braconiden.    57-   59. Günther Enderlein: Einige neue Sepsiden. (Dipt.).    60-   61. Antonin Fleischer: Eine neue Achenium-Art. (Col. Staphyl.).    62. Edmund Reitter: Bestimmungstabelle der Trixagidae, Eucnemidae, Cerophytidae und Phylloceridae der palaearktischen Fauna.    65-   90. Edmund Reitter: Cryptophagus cellaroides n.sp. (Col. Cryptophag.).    90. Edmund Reitter: Ueber einige Krainer Anophthalmen.    91-   99. Leopold Melichar: Eine neue Art der Gattung Abidama (Cerop.).   100. Max Bernhauer: Neue Staphyliniden aus Südamerika, besonders aus Argentinien. (26. Beitrag).   101-  108. Franz Heikertinger: Ueber die angebliche Giftwirkung des Coccunellidenblutes.   109-  113. Hermann Priesner: Neue europäische Thysanopteren.   115-  122. Theodor Becker: Neue Dipteren meiner Sammlung. Pipunculidae. (Dorylaidae).   123-  132. Josef (Giuseppe) Müller: Ueber neue und bekannte Carabiden.   133-  141. Antonin Fleischer: Bemerkenswerte Käfer-Aberrationen.   142. Guido Depoli: Die ostadriatischen Formen von Cantharis obscura L.   143-  144. Antonin Fleischer: Bemerkenswerte Käfer-Aberrationen.   145. Anonymus: Notizen.   148. Theodor Becker: Neue Dipteren meiner Sammlung. Pipunculidae. (Schluss.).   149-  167. Edmund Reitter: Bemerkungen zu den Curculioniden-Gattungen Microlarinus HOCHH. und Cylindropterus CHEVR.   168. Max Bernhauer: Neue Staphyliniden aus Südamerika, besonders aus Argentinien. (26. Beitrag). (Schluss).   169-  179. Josef (Giuseppe) Müller: Ein neuer Ptomaphagus aus Istrien. (Col. Siöph.).   180. Edmund Reitter: Notiz über Plectophloeus REITT. (Col. Pselaph.).   180. Leopold Mader: Neue Coleopteren aus Albanien.   181. Antonin Fleischer: Ocaleomorpha Lacoi FLEISCH. = Apocellus sphaericollis SAY.   181-  182</dc:description>
+   <dc:date>1920</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26527.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26527.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26527</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

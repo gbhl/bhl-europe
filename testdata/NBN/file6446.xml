@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The structure of the ovipositing organs as a tribal character in the Indo-Australian Sycophagine Torymidae (Hymenoptera, Chalcidoidea)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wiebes J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Landmarks on the distal segments of the female Chalcidoid gaster are the spiracular peritremata of the eighth urotergite, and the pygostyli of the ninth. The eighth and ninth sterna bear the first and second valvulae, which form the effective ovipositor and its sheath, respectively. The ninth moreover bears the third valvulae, commonly called the valves of the ovipositor. Most Chalcidoid Hymenoptera of the family Torymidae have a long ovipositor, in some instances several times as long as the body. Comparative study of fig wasps of the subfamily Sycophaginae shows that the great length of the ovipositing organs in different groups, may have been acquired by different means. The characters of these structures of the females appear to be correlated with various characters of the males. The characters of the males are only shortly mentioned in the present paper. Those of the female ovipositing organs are here taken as criteria for a tribal classification of the Sycophaginae. One nomenclatorial remark precedes the enumeration of the tribes. Saunders (1883a: 11 ff.), on the presumption that the fig wasps should be transferred to "a more congenial sphere, by restoring them, as heretofore, to the vegetable-feeding" Cynipoidea, classified several genera in the subfamilie Sycophagides. Blastophaga Gravenhorst, Agaon Dalman, Sycocrypta Coquerel, Eupristina Saunders, Pleistodontes Saunders, and Kradibia Saunders were assigned to the first division, Prionastomata Saunders ( Prionostomata in Saunders, 1883b : v), a synonym of Agaonidae Walker (1846: 23); Sycophaga Westwood and Apocrypta Coquerel to the second, Aploastomata Saunders (Haplostomata), a synonym of Sycophagoidae Walker (1875: 16). Apart from these "fig insects proper", Saunders</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318951</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 151 - 159</dcterms:extent>
+   <dcterms:isPartOf>The structure of the ovipositing organs as a tribal character in the Indo-Australian Sycophagine Torymidae (Hymenoptera, Chalcidoidea) (URN:ISSN:0024-0672) (Volume 41) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318951.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150237</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318951</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

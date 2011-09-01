@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischen Verein Innsbruck 27 (1902)</dc:title>
+   <dc:creator>Anonymus , Czermak  Paul, Gredler  Ignaz (Vinzenz) Maria P.,, Matouschek  Franz, Radakovic  M.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Matouschek: Beiträge zur Moosflora von Tirol und Vorarlberg II.     1-   56. Ignaz (Vinzenz) Maria P., Gredler: Zoologische Parallelen.    57-   64. Paul Czermak: Nachtrag zur astronomischen Standuhr des physikalischen Insstitutes der Universität Innsbruck.    65-   68. Paul Czermak: Trauerkundgebung für Professor Dr. Ignaz Klemencic in der Sitzung des medicin.-naturwiss. Vereins am 29. October 1901.    69-   76. M. Radakovic: Bericht über die letzten magnetischen Arbeiten von Prof. Klemencic.    77-   86. Franz Matouschek: Beiträge zur Moosflora von Tirol und Vorarlberg III.    87-  110. Paul Czermak: Beiträge Beobachtungen des meteorologischen Observatoriums der Universität Innsbruck im Jahre 1900.   113-  183. Anonymus: Vereinsnachrichten. III. Personalstand des Vereines. (XXV-XXVIII.) . Anonymus: Vereinsnachrichten. II. Verzeichniss der Academien, Gesellschaften, Institute und Redactionen, mit denen der naturwissenschaftlich-medicinische Verein in Tauschverbindung steht, sowie der letzterhaltenen Publicationen derselben. (XV-XXIII.) . Anonymus: Vereinsnachrichten. I. Bericht über die im Jahre 1901/1902 vom Vereine abgehaltenen Sitzungen. (III-XIII.)</dc:description>
+   <dc:date>1902</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27248.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27248.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27248</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

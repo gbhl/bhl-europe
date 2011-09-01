@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phaeocroides Nanus (Arrow), Phaeocroides Mapellii Petrovitz and Phaeocroides Orientalis (Petrovitz): notes on Generic status, synonymy and types; redescriptions (Coleoptera: Hybosoridae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kuijten P.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Coleoptera; Hybosoridae; Phaeocroides; Phaeochrous; India; generic status; synonymy; types</dc:subject>
+   <dc:description>Phaeochrous nanus Arrow is transferred to Phaeocroides (comb. nov.); Phaeocroides mapellii Petrovitz is a synonym (syn. nov.). Commentaries on the types and spelling of the generic name, differences from the other Indian genera and redescriptions are given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318949</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1988</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 91 - 98</dcterms:extent>
+   <dcterms:isPartOf>Phaeocroides Nanus (Arrow), Phaeocroides Mapellii Petrovitz and Phaeocroides Orientalis (Petrovitz): notes on Generic status, synonymy and types; redescriptions (Coleoptera: Hybosoridae) (URN:ISSN:0024-0672) (Volume 62) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318949.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150235</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318949</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De waarde van de Kagerplassen, vastgesteld aan de hand van de macrofauna, in het bijzonder die van de oevers</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Berge - Henegouwen, van A.L.</dc:creator>
+   <dc:creator>Velde, van der G.</dc:creator>
+   <dc:subject>Zoögeografie, zoö-ecologie</dc:subject>
+   <dc:description>INLEIDING De Kagerplassen, gelegen bij Warmond ten noorden van Leiden, bestaan uit een aantal met elkaar verbonden plassen, doorvaarten en boezemwateren (fig. 1). Deze plassen zijn een restant van de Haarlemmermeer, welke in 1852 werd drooggelegd. Zij dienen als boezemwateren voor het Rijnland. De wateraanvoer gaat via de inlaat van de Hollandse IJssel bij Gouda door de Rijpweteringse vaart, de Zijp en de Zijl en in mindere mate via de Haarlemmermeerringvaart ten oosten van het gemaal Leeghwater. De afvoer van dit water met een tamelijk laag chloridegehalte, maar met een hoog gehalte aan organisch materiaal, gaat via de uitlaat bij Katwijk en voor een klein deel via het gemaal bij Spaarndam, dus voornamelijk via Spriet en Laeck — Warmonder Leede en soms voor een deel via de Haarlemmermeerringvaart ten noordwesten van het gemaal Leeghwater. Daarnaast is ook de kwaliteit van het uitgeslagen polderwater van de omringende polders van belang. In geval van grote droogte ontstaat steeds meer brakke kwel in de polders, waardoor het uitgeslagen water, vooral uit de Haarlemmermeer, rijk aan chlorideionen is. We hebben in de Kagerplassen te maken met de invloed van deze twee typen water, die beide kunnen overheersen, al naar gelang er veel of weinig polderwater uitgeslagen wordt of water uit de Hollandse IJssel wordt ingelaten. Dit is natuurlijk weer afhankelijk van de hoeveelheid neerslag. De chemische waarden van het eutrofe Kaagwater vertonen dan ook vrij grote schommelingen, waarbij de extremen van belang zijn voor het voorkomen van de benthische organismen. De volgende waarden werden aan het planktonverslag van R. Schuurmans (1970) ontleend. Het electrisch geleidingsvermogen, een maat voor het electrolytgehalte, schommelde tussen de</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317244</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 4 - 21</dcterms:extent>
+   <dcterms:isPartOf>De waarde van de Kagerplassen, vastgesteld aan de hand van de macrofauna, in het bijzonder die van de oevers (URN:ISSN:0459-1801) (Volume 17) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317244.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148530</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317244</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

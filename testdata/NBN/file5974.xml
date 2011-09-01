@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The identity of Staurophlebia gigantula Martin (Odonata, Aeshnidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Geijskes D.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The large species of the genus Staurophlebia are confined to the neotropics and some to the Amazon-basin in particular. One of these species, Staurophlebia gigantula, was described as new by Martin (1909) after three males and two females present in the De Selys Longchamps collection and probably collected by H. W. Bates in the Amazonas district. With a photograph of the right wing pair of a male, a drawing of the male appendices in dorsal and lateral view and a figure in colour of a male specimen, the species seemed well fixed. It was the second species of Staurophlebia described, and for 50 years it was known from its types only. During my first expedition into the interior of Surinam in 1939, I found near the Brazilian border a species of Staurophlebia not belonging to the common S. reticulata (Burm.). At first it was thought to be S. gigantula, but later it proved to be a new species, which was then, under the name S. wayana, described by me as new in my revision of the genus (Geijskes, 1959). On 10 March 1957 Dr. J. Racenis of Caracas collected in San Juan de Manapiare, Amazonas, Venezuela, a male specimen of a Staurophlebia, which he sent me for comparison with my S. wayana. A careful examination showed that this species was not the same as mine, differing in the yellow occipital triangle, the shorter second segment of the antenna and in some peculiarities of the appendices. It could be S. gigantula, had the appendix inferior been shorter. Within the series of six species of the genus, S. gigantula is characterized by the short male appendix inferior, which, measured from the figure of the appendices given in the original description, reaches only ⅓ of the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318479</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 67 - 70</dcterms:extent>
+   <dcterms:isPartOf>The identity of Staurophlebia gigantula Martin (Odonata, Aeshnidae) (URN:ISSN:0024-0672) (Volume 39) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318479.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149765</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318479</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Estimating the snake species richness of the Santubong Peninsula (Borneo) in two different ways</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Rooijen, van</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Chao I estimator</dc:subject>
+   <dc:subject>negative exponential function</dc:subject>
+   <dc:subject>rarefaction curve</dc:subject>
+   <dc:subject>Santubong Peninsula Borneo</dc:subject>
+   <dc:subject>snakes</dc:subject>
+   <dc:subject>species richness</dc:subject>
+   <dc:subject>Weibull function</dc:subject>
+   <dc:description>The distribution of Borneo’s species across the island is far from well-known. This is particularly true for snakes which are hard to find. Given the current rate of habitat destruction and consequent need for conservation strategies, more information is required as to the species composition and richness of specific areas of potential conservation priority. An example is the Santubong Peninsula, Sarawak, Malaysia, part of which has recently been gazetted as a National Park. In this paper, the snake species richness of the Santubong Peninsula is estimated on the basis of data obtained during 450 survey-hours. Thirty-two species were recorded. Negative exponential and Weibull functions were fitted to the rarefaction curve. The Weibull function exhibited a high goodness-of-fit, as opposed to the negative exponential function. On the basis of the fitted Weibull function, the total number of snake species was estimated to be 42. A similar estimate of 40 was obtained by applying the nonparametric Chao I estimator. Thus, less than a third of Borneo’s known 139 land snakes inhabit the Santubong Peninsula. Extrapolation of the fitted Weibull function demonstrated that direct measuring of herpetofaunal species richness of species-rich tropical ecosystems is unfeasible given the required search time. I advocate that the use of estimates is unavoidable.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:320292</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 141 - 147</dcterms:extent>
+   <dcterms:isPartOf>Estimating the snake species richness of the Santubong Peninsula (Borneo) in two different ways (URN:ISSN:1383-4517) (Volume 78) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/320292.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/151597</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/320292</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

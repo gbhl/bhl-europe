@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new species of Nevskyella Ossiannilsson, 1954 (Homoptera, Aphididae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hille Ris Lambers D.</dc:creator>
+   <dc:creator>Bosch, van den R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>INTRODUCTION Hitherto only one species of Nevskyella Ossiannilsson, 1954, was known, viz., the type, Nevskya fungifera Ossiannilsson, 1953. This has only been found near Uppsala, Sweden on Carex caryophyllea Latour ( = C. verna Chaix = C. praecox Jacq.). A very similar species found in three departments of southern France is described hereafter. Nevskyella meridionalis nov. spec. Apterous viviparous female. Morphological characters. — Body about 1.35 to 1.80 mm long, elongated oval, often quite slender, not depressed. Pigmentation of body very nearly like that figured by Ossiannilsson (1935, p. 235, fig. 1) for the type species, but usually the meso-metathoracic blotches extended more cephalad and often connected with the blotches of the pronotum; the blotches very dark brown to blackish, paler to pale around the bases of the hairs, darker around the siphunculi and on eighth abdominal tergite. The pigmented and the pale dorsal areas covered with low, rather flat warts which in dorsal view look like oval or irregular "rings"; only on the sides of the vertex, around the siphunculi and on the eighth abdominal tergite lines of granular nodules are present. Dorsal hairs numerous, all mushroom-shaped, like Cantharellus. Seventh abdominal tergite much wider than eighth, with a fan-shaped hair on each of the rounded, verrucose, processus-like posterior corners; eighth tergite above the cauda with a pair of parallel, fingertip-shaped processi, which are about ¾ of the length of first antennal segment, either of which bears 2 stout, often curved hairs of 0.025 to 0.050 mm with blunt or slightly widened, flat apices. The processi have more or less oblique apices if the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318192</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 180 - 184</dcterms:extent>
+   <dcterms:isPartOf>A new species of Nevskyella Ossiannilsson, 1954 (Homoptera, Aphididae) (URN:ISSN:0024-0672) (Volume 39) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318192.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149478</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318192</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

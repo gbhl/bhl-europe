@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Three dwarf lycophytes from the Carboniferous of Argentina*)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Archangelsky S.</dc:creator>
+   <dc:creator>Azcuy C.L.</dc:creator>
+   <dc:creator>Wagner R. H.</dc:creator>
+   <dc:subject>Paleobotanie, palynologie</dc:subject>
+   <dc:description>Impressions of the bark of two small lycophytes, Bumbudendron paganzianum gen. et sp. nov. and Bumbudendron nitidum sp. nov., are described from middle Carboniferous shales in the Sierra de Paganzo. Lepidodendroid leaf cushions with a well-developed leaf scar showing a single trace, and the presence of a fertile branch structure, invite comparison with Bodeodendron/Sporangiostrobus of the contemporaneous equatorial belt. The presence of an infrafoliar bladder provides the main distinguishing character. Small stem impressions with a thick cuticle are recorded of the simple lycophyte Malanzania nana gen. et sp. nov. which has false leaf scars corresponding to spiny excrescences. These remains have been found in the middle Carboniferous of Malanzán in the Sierra de los Llanos. They are comparable to Palaeostigma of Brazil and South Africa. The cuticle shows approximately isodiametric cells flanking the holes corresponding to false leaf scars, and more elongate cells in a fan-shaped disposition occupying the wide areas separating these scars. The rather poor record of Pennsylvanian lycophytes in western South America is analysed, the result being that there may be two additional elements, viz. 'Lepidodendropsis' peruviana (Gothan) Jongmans and 'Cyclostigma' pacifica (Steinmann) Jongmans. The generic names of these taxa have been misapplied and a revision of these two species is recommended.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317505</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1981</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 35</dcterms:extent>
+   <dcterms:isPartOf>Three dwarf lycophytes from the Carboniferous of Argentina*) (URN:ISSN:0375-7587) (Volume 64)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317505.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148791</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317505</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

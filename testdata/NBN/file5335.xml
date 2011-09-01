@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes upon some Sea Turtles</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>In recent years much attention is being paid to marine turtles, and it is the merit of Deraniyagala, Carr, and others to have contributed much to our knowledge of this group. Nevertheless, our knowledge of the species and subspecies that may be recognized, and that of their distribution is as yet far from complete. Before a satisfactory classification can be reached, many more data will have to be assembled. In the meantime, notes on variations in individual cases, and locality records may be of some value to future research. It is with this in mind that the present notes are published. They are based upon specimens in the collections of the Rijksmuseum van Natuurlijke Historie, Leiden (ML), of the Zoölogisch Museum, Amsterdam (ZMA), of the British Museum (Natural History), London (BM), and of the Royal Scottish Museum, Edinburgh (RSM). I am greatly indebted to Prof. Dr. H. Engel (Amsterdam), to Dr. H. W. Parker, Miss A. G. C. Grandison and Mr. J. C. Battersby (London), and to Dr. A. S. Clarke (Edinburgh) for permission to study the specimens in their care, and to Dr. E. Williams (Cambridge, Mass.) for information about turtles in the Museum of Comparative Zoölogy. Deraniyagala (1939 a-b; 1943, pp. 79-80; 1952, p. 57) and Wermuth (1956, pp. 405, 406, 413) raised some nomenclatorial problems, and these are also discussed in the present notes. The drawings reproduced in figures 2-8 do not pretend to be anything more than sketches; they were made without the help of instruments, and although they may prove to show slight errors in the proportions of the shields, I believe that they are sufficiently accurate to illustrate the features discussed in the text.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317840</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1961</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 46</dcterms:extent>
+   <dcterms:isPartOf>Notes upon some Sea Turtles (URN:ISSN:0024-1652) (Volume 51) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317840.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149126</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317840</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

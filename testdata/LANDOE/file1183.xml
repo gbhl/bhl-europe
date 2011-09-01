@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 43_44 (1934)</dc:title>
+   <dc:creator>Anonymus , Ekhart  E., Gams  Helmut, Grabherr  Walter, Kühtreiber  Josef, Leutelt-Kipke  Senta, Steinmaurer  R.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Kühtreiber: Die Plecopterenfauna Nordtirols. (I-VII, 6 Tafeln, 1 Karte.)     1-  219. Senta Leutelt-Kipke: Hydrochemische Beobachtungen an einigen Südtiroler Mittelgebirgs- und Alpenrandseen.   221-  244. E. Ekhart: Klima von Innsbruck. Mit teilweiser Benützung einer Dissertation von Frl. Dr. F. Wilcke.   245-  359. R. Steinmaurer: Über Fortschritte in der Erforschung der Ultrastrahlung.   363-  368. Helmut Gams: Zweiter Bericht über die Fortschritte in der Erforschung der Flora und Vegetation von Tirol (Fortsetzung des Berichtes im Jahrgang 42, 1931).   369-  377. Walter Grabherr: Zweiter Bericht über die Fortschritte in der Erforschung der Flora und Vegetation von Tirol (Fortsetzung des Berichtes im Jahrgang 42, 1931).   378-  380. Anonymus: Vereinsnachrichten. V. Personalstand des Vereines. (XIX-XXIII.) . Anonymus: Vereinsnachrichten. IV. Verzeichnis der Akademien, Gesellschaften und Institute, mit denen der naturwissenschaftlich-medizinische Verein in Tauschverbindung steht. (Nach dem Stande vom 1. Juni 1934). (XV-XIX.) . Anonymus: Vereinsnachrichten. III. Berichte über die im Jahre 1933/34 abgehaltenen Sitzungen. (XI-XV) . Anonymus: Vereinsnachrichten. II. Berichte über die im Jahre 1932/33 abgehaltenen Sitzungen. (IX-XI.) . Anonymus: Vereinsnachrichten. I. Berichte über die im Jahre 1931/32 abgehaltenen Sitzungen. (V-IX.)</dc:description>
+   <dc:date>1934</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27264.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27264.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27264</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

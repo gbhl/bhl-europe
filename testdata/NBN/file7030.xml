@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Monochamus in Nederland: voorkomen en vangmethoden.</dc:title>
+   <dc:creator>Heijerman Th.</dc:creator>
+   <dc:creator>Keijl G.O.</dc:creator>
+   <dc:creator>Kalkman V.J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nematoda</dc:subject>
+   <dc:subject>boktorren</dc:subject>
+   <dc:subject>Bursaphelenchus xylophilus</dc:subject>
+   <dc:subject>dennenhoutaaltje</dc:subject>
+   <dc:description>CONCLUSIES Monochamus sutor is in Nederland bekend van zeventien exemplaren, waarvan algemeen wordt aangenomen dat deze zijn geïmporteerd. De meest recente stamt uit 1961. De dichtstbijzijnde populatie bevindt zich in het zuidoosten van Rheinland-Pfalz in Duitsland. Het lijkt vooralsnog niet waarschijnlijk dat de soort op eigen kracht in Nederland terecht komt. Monochamus galloprovincialis is in Nederland van zes waarnemingen van ingevoerde exemplaren bekend, de recentste uit 2009. Daarnaast bevindt zich tenminste sinds de eerste helft van de twintigste eeuw een populatie in de duinen bij Bergen en Schoorl (Noord-Holland). Buiten de duinen van Schoorl en Bergen zijn er geen populaties van Monochamus-soorten uit Nederland bekend. De aanwezigheid van een populatie M. galloprovincialis bij Bergen en Schoorl toont aan dat Nederland in ieder geval klimatologisch voor deze soort geschikt is. Gezien de lage trefkans van de soort is het echter niet uit te sluiten dat er op andere plekken in Nederland populaties aanwezig zijn. Potentiële vindplaatsen zijn grote opstanden van dennen (M. galloprovincialis) of grote opstanden van sparren (M. sutor). Zelfs indien beide soorten niet op eigen kracht vanuit het buitenland Nederland weten te bereiken, dan nog zouden ze via import in ons land terecht kunnen komen. Hierbij is de import met plantmateriaal het waarschijnlijkste hoewel de waarneming in 2009 van een exemplaar van M. galloprovincialis bij een kuikenmestbedrijf te Ede laat zien dat ze ook op andere wijze ingevoerd kunnen worden. De vijftien, in de zomer van 2009, bij Bergen en Schoorl gevangen exemplaren van M. galloprovincialis bleken geen Bursaphelenchus xylophilus bij zich te dragen en er kan met redelijke zekerheid worden aangenomen dat deze populatie vrij is van deze nematode. Tijdens het in 2009 bij Schoorl uitgevoerde veldwerk bleek dat de WitaPrall Bark Beetle Trap (WBBT) in combinatie met het feromoon Gallowit geschikt is voor het inventariseren van M. galloprovincialis.</dc:description>
+   <dc:publisher>EIS-Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:330149</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>16</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/330149.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/163452</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/330149</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

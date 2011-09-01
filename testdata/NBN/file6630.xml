@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Embryologie précoce de Sacculina carcini Thompson</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bocquet-Védrine J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION Dans sa monographie pourtant très complète de Sacculina carcini Thompson, publiée en 1884, Delage ne traite pas de l'étude embryologique de cette espèce. Il ne se désintéressait pas pour autant de ce sujet sur lequel il exprimait son intention de revenir „plus tard, dans un moment opportun". Les seules recherches d'embryologie descriptive antérieures à l'„Évolution de la Sacculine" sont dues à Van Beneden (1869-1870). Van Beneden a bien vu la division totale de l'oeuf en deux, puis en quatre blastomères ègaux, mais l'impossibilité où il s'est trouvé de suivre la division des noyaux l'a conduit à considérer qu'il y avait, après ce stade, séparation de „quatre cellules embryonnaires sous forme de petits globes protoplasmiques pourvus chacun d'un noyau. Les quatre grands globes foncés, formés d'éléments très réfringents, ne représentent plus des cellules; aussi, se fondent-ils bientôt l'un dans l'autre de façon à former un amas unique d'éléments nutritifs". Il est certain que ces résultats paraissaient peu satisfaisants à Delage qui considérait l'embryologie de la Sacculine comme „loin d'être connue". Cependant, sollicité par beaucoup d'autres sujets, Delage ne devait jamais reprendre cette étude. En 1904, Abric faisait paraître une courte note dans laquelle il considère la division de l'oeuf de Sacculine comme „totale et inégale", le stade 2 étant figuré par un macromère et un micromère tous deux riches en vitellus. Le macromère diminuant de taille et le micromère augmentant de taille, il en résulterait deux cellules égales. Abric constate ultérieurement la formation de stades à nombre impair de blastomères (3, 5, 7), due au fait que souvent</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319135</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 11</dcterms:extent>
+   <dcterms:isPartOf>Embryologie précoce de Sacculina carcini Thompson (URN:ISSN:0024-0672) (Volume 39) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319135.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150421</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319135</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>ÖKO.L Zeitschrift für Ökologie, Natur- und Umweltschutz 1984_2 (1984)</dc:title>
+   <dc:creator>Grims  Franz, Knoflacher  Helmut Markus, Kump  Alfred, Loidl  Erich, Mittmannsgruber  Wieland, Öko L. Redaktion  Öko.L Redaktion, Pfitzner  Gerhard, Sochurek  Erich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerhard Pfitzner: Die Bedeutung der Fangzaunanlage Kapuzinerstraße/Linz im Rahmen eines lokalen Amphibienschutzkonzeptes     3-   10. Öko.L Redaktion Öko L. Redaktion: "Machen sie mit"- Aktionen der Naturkundlichen Station    10. Franz Grims: Vegetation und Vogelwelt an der unregulierten und regulierten Pram- ein Vergleich    11-   18. Erich Loidl: Besonderheit im Gemüsegarten: Orobanche ramosa L.    18. Wieland Mittmannsgruber: Bepflanzungsaktion am Haselbach in der Biesenfeldsiedlung in Linz- Urfahr    19. Alfred Kump: Heilpflanzen aus anderer Sicht Teil 5: Gemeiner Hopfen (Humulus lupulus L.) und Spitzwegerich (Plantago lanceolata L.)    20-   23. Helmut Markus Knoflacher: Umfang und Ursachen der Wildunfälle in Oberösterreich    23-   26. Erich Sochurek: Zur Situation der Skorpionarten in Österreich    27-   29. Öko.L Redaktion Öko L. Redaktion: Buchtipps    31</dc:description>
+   <dc:date>1984</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24414.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24414.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24414</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some observations on the larval development of Cyclops leuckarti Claus and Cyclops hyalinus Rehberg</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Andreae J.C.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Introduction. Whilst examining the vertical distribution of planktonic Copepoda in the Klinkenberger Put, a deep pond at Warmond near Leiden, wide about 400 m, without any connection with other water, samples were taken in October 1951, November 1951, January 1952, February 1952, and March 1952. In the samples of March 1952 a large quantity of larvae of Copepoda were found. A small part of them was in the naupliar stages; the majority, however, appeared to be present as copepodids. These copepodids proved to belong to two different subgenera, viz., Cyclops Claus and Mesocyclops Sars. In the samples only a few adult forms were found, these were Cyclops (Cyclops) strenuus Fischer, Cyclops (Cyclops) vicinus Uljanin, Cyclops (Mesocyclops) leuckarti Claus, and Cyclops (Mesocyclops) hyalinus Rehberg. As representatives of the Centropagidae (Calanoida) were found some adults and larvae of Diaptomus gracilis Sars and larvae of the genus Eurytemora Giesbrecht. Countings of the Copepoda in the samples proved that the vertical distribution of the copepodids was in no way homogeneous, the density being the highest at the surface and at the bottom (15 m). A very low density was found at a depth of 11 meters. It was, however, difficult to determine whether these maximal occurrences manifested themselves in all the species present or that the different peaks were caused by concentrations of different species at different depths, because a scrutiny of the available literature failed to produce keys (or tables) for the identification of the copepodid stages. No enumeration of the differences between the copepodids of the above mentioned species could be found. There only exist keys to</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318497</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 283 - 298</dcterms:extent>
+   <dcterms:isPartOf>Some observations on the larval development of Cyclops leuckarti Claus and Cyclops hyalinus Rehberg (URN:ISSN:0024-0672) (Volume 33) (Issue 27)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318497.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149783</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318497</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

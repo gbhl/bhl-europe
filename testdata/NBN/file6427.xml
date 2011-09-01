@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some preliminary notes on Surinam Sting Rays, including the description of a new species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>In Dr. D. C. Geijskes' collection of Surinam fishes, mentioned in my previous paper on this subject (Boeseman, 1948), I found six specimens belonging to the so-called "sting rays" (Dasyatidae), representing three different species, and all very interesting in some respects. I. Dasyatis schmardae (Werner). Trygon schmardae Werner, 1904, p. 298 (Jamaica). Dasybatus schmardae, Garman, 1913, p. 386 (after Werner). Dasybatus schmardae, Meek &amp; Hildebrand, 1923, p. 81 (Toro Point &amp; Mindi Cut, Panama Canal). Dasyatis schmardae, Fowler, 1931, p. 391 (Vessigny River at Brighton, Trinidad). Four specimens, from Coppenam Point, Surinam, coll. Dr. D. C. Geijskes, Dec. 1942, 2 ♂ ♂ measuring 530 and 575 mm, 2 ♀ ♀ measuring 610 and 705 mm. The condition of the specimens is excellent, even the tails, so often mutilated in these rays, are wholly undamaged. The agreement with the cited descriptions, especially the very extensive given by Meek &amp; Hildebrand, is practically complete and, in my opinion, leaves no room for doubt as to the identification. As far as I found in literature, this species hitherto never has been reported from the Guyanas, the most eastward report being Fowler's from Trinidad. Moreover, the previous literature on this species gives the impression of a very rare occurrence in its whole hitherto established geographical area: Werner (Jamaica) had but a single specimen, Meek &amp; Hildebrand (Panama) two specimens, and Fowler again but one specimen at his disposal. Garman has not seen any specimens, and just quotes Werner. AH specimens hitherto reported were female.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318932</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1948</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 31 - 47</dcterms:extent>
+   <dcterms:isPartOf>Some preliminary notes on Surinam Sting Rays, including the description of a new species (URN:ISSN:0024-0672) (Volume 30) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318932.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150218</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318932</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A key to the "X-Species" of North American fiddler crabs (genus uca)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hagen, von H.-O.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Up to the late sixties of this century the number of species of the genus Uca occurring on the East and Gulf coasts of North America seemed rather well established. Usually ten species were listed: U. burgersi Holthuis ( = U. affinis (Streets)), U. leptodactyla Rathbun, U. minax (Le Conte), U. pugilator (Bosc), U. pugnax (Smith), U. rapax (Smith), U. speciosa (Ives), U. spinicarpa Rathbun, U. subcylindrica (Stimpson) and U. thayeri Rathbun. Subsequently, however, some uncertainty arose about the number of fiddler crab species of the Gulf coast area. Barnwell (1968) mentioned an undescribed species from Ocean Springs, Mississippi, and Salmon and co-workers described no less than three new Gulf coast species of Uca (Salmon &amp; Atsaides, 1968; Novak &amp; Salmon, 1974). Meanwhile, the new names were used in ecological and other studies (e.g. Powers, 1975; Powers &amp; Cole, 1976). Crane (1975) was the first to re-examine the type material of two of these additional species. She decided to include them in her Uca monograph admitting subspecific rank to them. However, when trying to give a comprehensive differential diagnosis of the two new subspecies and all related forms Crane met with difficulties (most clearly expressed on p. 193 and p. 197 of the 1975 monograph). Furthermore, there are reasons to doubt the subspecies concept of Crane in general (see Von Hagen, 1976, and new data from Lewinsohn, 1977, and Frith &amp; Frith, 1977). These doubts as well as results of bioacoustic work with West Indian fiddler crabs (Von Hagen, 1975) induced the present author to question the taxonomic proposals of Crane (1975) as well as the original ones of Salmon and co-workers and to re-examine the holotypes, which was possible through the kindness of Dr. R. B. Manning, National Museum of Natural History</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319057</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 87 - 96</dcterms:extent>
+   <dcterms:isPartOf>A key to the "X-Species" of North American fiddler crabs (genus uca) (URN:ISSN:0024-0672) (Volume 55) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319057.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150343</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319057</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

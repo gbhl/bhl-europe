@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>SVAMPE 15</dc:title>
+   <dc:creator>Danish Mycological Society</dc:creator>
+   <dc:creator>Foreningens til Svampekundskabens Fremme</dc:creator>
+   <dc:subject>Fungi</dc:subject>
+   <dc:subject>Mycology</dc:subject>
+   <dc:subject>Denmark</dc:subject>
+   <dc:description>The journal of the Danish Mycological Society (Foreningen til Svampekundskabens Fremme), published bi-annually. The journal started in 1980, taking over from the journal FRIESIA. It contains articles on fungi and other mycological issues connected to mycology in Denmark. Online table of contents to authors, articles and photos can be found at the society homepage, www.svampe.dk.</dc:description>
+   <dc:publisher>Danish Mycological Society</dc:publisher>
+   <dc:publisher>Foreningens til Svampekundskabens Fremme</dc:publisher>
+   <dc:contributor>Natural History Museum, Copenhagen</dc:contributor>
+   <dc:contributor>Statens Naturhistoriske Museum</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:type>Journal</dc:type>
+   <dc:format>PDF</dc:format>
+   <dc:format>400 dpi</dc:format>
+   <dc:identifier>http://www.svampe.dk/svampe-15/</dc:identifier>
+   <dc:identifier>ISSN 0106-7451</dc:identifier>
+   <dc:source>pdf of the printed version</dc:source>
+   <dc:language>dk</dc:language>
+   <dc:language>en</dc:language>
+   <dc:language>Primarily danish, some abstracts in english</dc:language>
+   <dc:rights>http://www.europeana.eu/rights/rr-f/</dc:rights>
+   <dcterms:created>2010-03-29</dcterms:created>
+   <dcterms:issued>2011-04-10</dcterms:issued>
+   <dcterms:extent>52 pages</dcterms:extent>
+   <dcterms:isPartOf>SVAMPE</dcterms:isPartOf>
+   <dcterms:isPartOf>/www.svampe.dk/publikationer/svampe/</dcterms:isPartOf>
+   <dcterms:spatial>Europe/Northern Europe/Denmark</dcterms:spatial>
+   <dcterms:temporal>1987</dcterms:temporal>
+   <europeana:object>http://www.svampe.dk/svampelist/svampesomikoner/Svampe15.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.svampe.dk/svampelist/svampepdf/svampe15.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.svampe.dk/svampe-15/</europeana:isShownAt>
+<europeana:dataProvider>University of Copenhagen</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

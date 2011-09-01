@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On three Macrurous Decapod Crustacea, one of which is new to science</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Man, de J.G.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Scyllarm arctus (L.). I am sorry to say that the key to the indopacific species of the genus Scyllarus Fabr., published by me at p. 68 of Part III of my work on the Decapoda Macrura of the Siboga Expedition (J. G. de Man, Siboga Exp., Monogr. 39a2, Eryonidae etc. 1916) is in part incorrect. The section g1 at p. 70 should henceforth be read as follows: g1 Abdominal terga not at all prominent. h1 Anterior extremity of the sternum with a deep triangular notch 1). i1 Carapace with 2 teeth in the middle line before the cervical groove. j1 First abdominal somite with a dark, oval spot in the middle. Calcified portion of the telson terminating in four teeth. Both the inner and the outer margin of the proximal (outer) antennal squame armed with only one well-developed acute tooth, though one observes before the tooth of the inner and behind that of the outer margin the trace of a second obtuse prominence. Length, outer antennae included, 56 mm... sordidus (Stimps.). j2 First abdominal somite with no dark, oval spot in the middle. Calcified portion of the telson terminating in two teeth.. pumilus Nob. (G. Nobili, Faune Carcinol. de la Mer Rouge, Décapodes et Stomatopodes, 1906, p. 87). i2 Carapace with 3 acute teeth in the middle line before the cervical groove. Outer margin of the proximal (outer) antennal squame with two acute, well-developed teeth, though between the anterior tooth and the apex the margin shows sometimes traces of 3, 4 or 5</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318414</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1921</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 92 - 96</dcterms:extent>
+   <dcterms:isPartOf>On three Macrurous Decapod Crustacea, one of which is new to science (URN:ISSN:0024-0672) (Volume 6) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318414.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149700</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318414</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

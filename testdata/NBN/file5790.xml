@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the nature of systematics and biogeography : I. The Willis-Curve</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wittenrood H.G.</dc:creator>
+   <dc:creator>Blöte  H.C.</dc:creator>
+   <dc:subject>Zoögeografie, zoö-ecologie</dc:subject>
+   <dc:description>Since the appearance of ,,Age and Area" by Dr. J. C.Willis in 1922 the progress in this matter has not been so great as before. From the contribution of a few chapters by some well-known biologists, and from many approving remarks by others quoted throughout the book one might derive that the theory of origin and evolution of species, etc., presented in it, had already a remarkable success. But there is also a whole chapter in the book, containing the diversified objections, to which Dr. Willis makes head. The „very strong evidence based upon definite facts, not upon a priori reasoning", however, required by Willis (p. 233), has turned out to be more of a repetition of the same statements with more or less different materials than of the discovery of conclusive facts. The situation seems to us best characterized by quoting Dr. Ph. P. Calvert's (1923) statement: „..., I fail to find the key to the origin and evolution of species with the ease which Dr. Willis's commendation of Age and Area would lead me to expect, and which I would welcome if the key but turned in the lock". It is of no use trying to entangle all the controverses to which the theory gives cause: they are almost without exception of the nature of putting one probable explanation against the other. Dr. Willis could easily refute them, because the objections were so fragmentary. Therefore the only way promising results in finding the real meaning of Willis's statements must consist in the analytical examination of them. The most striking result and attribute of Willis's considerations, of course, is the „hollow curve", which we propose to term the „Williscurve". It is a representation of the frequency-distribution of systematic</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318295</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1934</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 297 - 304</dcterms:extent>
+   <dcterms:isPartOf>On the nature of systematics and biogeography : I. The Willis-Curve (URN:ISSN:0024-0672) (Volume 17) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318295.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149581</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318295</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

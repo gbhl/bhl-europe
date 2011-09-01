@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung Uca)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hagen H.O.V.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>EINLEITUNG Bei einem Aufenthalt auf der westindischen Insel Trinidad in den Jahren 1965/66 hatte ich Gelegenheit, die meisten karibischen Winkerkrabben der Gattung Uca sowie Daten über ihre Biologie, Ökologie und Verbreitung zu sammeln. Ein Teil des Materials, d.h. Vertreter aller 9 auf Trinidad gefundenen Arten, wurde dem Rijksmuseum van Natuurlijke Historie, Leiden, zur Verfügung gestellt, ebenso einige der bei einem kurzen Aufenthalt 1966 bei Colon, Panama, gesammelten Winkerkrabben. Zu den morphologischen Untersuchungen am eigenen Material konnte ich 1968 ergänzend die etwas über tausend Exemplare zählende Kollektion ostamerikanischer Winkerkrabben des Zoologischen Staatsmuseums, Hamburg, hinzuziehen. Dabei zeigte es sich, daß die Fundorte dieser Sammlung, die von 1888 bis 1953 zusammengetragen wurde, dazu zwingen, die bisherigen Vorstellungen über die Verbreitungsgrenzen der karibischen Winkerkrabben teils etwas, teils erheblich zu revidieren. Die Mitteilung dieser Fundorte wird in der vorliegenden Arbeit verbunden mit einigen Überlegungen zum Verbreitungsmuster der atlantischen UcaArten, zumal hier eigene, auf Trinidad gewonnene Daten über artspezifische Unterschiede in den Biotopansprüchen zur Erklärung herangezogen werden können. Den Angaben über die Verbreitung wird eine Aufstellung von Verwandtschaftsgruppen innerhalb der karibischen Winkerkrabben vorausgeschickt, weil nicht wenige regionale Untersuchungen über amerikanische Decapoden eine gewisse Unsicherheit hinsichtlich der sachgemäßen Gruppierung der jeweils aufgeführten Uca-Arten verraten, obwohl die Voraussetzungen für eine Klärung der Verwandtschaftsverhältnisse inzwischen einiger-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319126</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 217 - 235</dcterms:extent>
+   <dcterms:isPartOf>Verwandtschaftliche Gruppierung und Verbreitung der Karibischen Winkerkrabben (Ocypodidae, Gattung Uca) (URN:ISSN:0024-0672) (Volume 44) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319126.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150412</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319126</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

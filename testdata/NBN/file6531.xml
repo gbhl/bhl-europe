@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Growth of the skull of the Harbour Porpoise, Phocoena Phocoena (Linnaeus, 1758), in the North Sea, after age determination based on dentinal growth layer groups</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Noldus L.P.J.J.</dc:creator>
+   <dc:creator>Klerk, De R.J.J.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:subject>Mammalia; Cetacea; Phocoenidae; Phocoena phocoena; North Sea; skull; growth; teeth; age determination</dc:subject>
+   <dc:description>This study of the Harbour Porpoise Phocoena phocoena (Linnaeus, 1758) has been undertaken in order to find out whether differences in size and growth rate between the skulls of males and females could be demonstrated. Stuart &amp; Morejohn (1980) have established this phenomenon in the population of the north-eastern Pacific. The material on which this study is based, consists of 76 skulls present in the collection of the Rijksmuseum van Natuurlijke Historie (RMNH), Leiden. They all belong to specimens stranded on the Dutch coast. In order to determine the age, of all these specimens the number of dentinal growth layer groups (GLG) in the teeth was counted. Thereupon 32 cranial characters were measured of each skull; these measurements were plotted against the number of growth layer groups. Twenty-nine of the 32 characters showed a significant relationship with the number of growth layer groups. In all cases the female specimens were larger than the male specimens of the same age. After statistical analysis of the results, it turned out that there was no significant difference in growth rate of the skull parts measured. So in this respect there is no distinct sexual difference. This is in contrast to the results of Stuart &amp; Morejohn (1980) for the population of the northeastern Pacific: initially smaller sizes but a significantly higher growth rate in females. The difference between the northern Atlantic population and the one from the north-eastern Pacific might support the distinction of the subspecies P. p. phocoena and P. p. vomerina.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319036</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 213 - 239</dcterms:extent>
+   <dcterms:isPartOf>Growth of the skull of the Harbour Porpoise, Phocoena Phocoena (Linnaeus, 1758), in the North Sea, after age determination based on dentinal growth layer groups (URN:ISSN:0024-0672) (Volume 58) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319036.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150322</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319036</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

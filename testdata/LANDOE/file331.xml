@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 112 (1972)</dc:title>
+   <dc:creator>Abel  Erich, Biebl  Richard, Forstner  Walter, Hautzinger  Leo, Holzner  Wolfgang, Klaus  W., Kusel-Fetzmann  Elsa Leonore, Lew  Hans, Löffler  Heinz, Melzer  Helmut, Nemenz  Harald, Nopp  Herbert, Ott  Jörg A., Peroutka  Franz, Piffl  Eduard, Sänger  Karl, Scheerpeltz  Otto, Wendelberger  Gustav</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Otto Scheerpeltz: Die bis jetzt bekannt gewordenen paläarktischen Arten der Großgattung Leptusa KRAATZ (Col., Staphyl.)- I.Teil     5-   31. Otto Scheerpeltz: Die bis jetzt bekannt gewordenen, paläarktischen Arten der Großgattung Leptusa KRAATZ (Col. Staphylinidae) II.Teil: Subgenus Typhlopasilia und  Tropidiopasilia    32-   63. Herbert Nopp: Zur Wasseraufnahme und Ionenregulation von Helix aspersa O.F.Müll.    64-   66. Wolfgang Holzner: Einige Ruderalgesellschaften des oberen Murtales    67-   85. Walter Forstner: Das Tungusische Greiskraut (Senecio tanguticus MAXIM.) in Niederösterreich    86-   88. Walter Forstner: Glixie (Syngonanthus elegans (BONG.) RUHL., Eriocaulaceae    89-   91. Walter Forstner: Die Ring-Glockenblume (Symphyandra hofmanii PANTOCZEK) in der Steiermark    92-   93. Hans Lew, Elsa Leonore Kusel-Fetzmann: Die Makrophytenvegetation des Klopeiner Sees (Kärnten)    94-   99. Helmut Melzer: Beiträge zur Flora des Burgenlandes, von Nieder- und Oberösterreich   100-  114. Leo Hautzinger: Dactylorhiza cruenta (O.F.MUELLER) Soó X D.maculata (L.) Soó ssp. Maculata, ein neuer interspezifischer Bastard   115-  117. Erich Abel, Richard Biebl, Franz Peroutka, Karl Sänger, Herbert Nopp, Jörg A. Ott, Gustav Wendelberger, Heinz Löffler, W. Klaus, Harald Nemenz, Eduard Piffl: Besprechungen   119-  130</dc:description>
+   <dc:date>1972</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24529.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24529.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24529</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

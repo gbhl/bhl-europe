@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The 'Dutch approach', or how to achieve a second life for abandoned geological collections</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Clercq S.W.G.de</dc:creator>
+   <dc:subject>Geologie: overige</dc:subject>
+   <dc:description>This paper is part of a 'diptych' describing the 'life-cycle' of geological collections from Dutch universities against the background of developments in education and research. Whereas this paper focuses on the development of the collections, the rise and decline of their use in research and teaching and the process that finally led to combined, national effort to decide on the future of these collections, Leo Kriegsman's paper will discuss the process of making choices which collections will be kept for the future and how to deal with selection and de-accessioning. The worldwide shift from the field to the laboratory in both education and research, combined with massive reorganisations, led to many orphaned collections, totalling some two million objects. Sponsored by the government, the five oldest Dutch universities engaged in a collaborative action to tackle this problem with the aim to improve the overall quality and accessibility of the collections, as well as to intensify their present and future use through selection, de-accession, collection mobility, or even disposal. Some experiences, pitfalls and recommendations will be discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317300</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 83 - 99</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The 'Dutch approach', or how to achieve a second life for abandoned geological collections (URN:ISSN:0922-4564) (Volume 4) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317300.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148586</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317300</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

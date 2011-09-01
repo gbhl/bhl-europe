@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 116a (1971)</dc:title>
+   <dc:creator>Eckhart  Lothar, Eibner  Clemens, Felgenhauer  Fritz, Foltin  Hans, Grims  Franz, Holter  Kurt, Kloiber  Ämilian, Kneidinger  Josef, Krawarik  Hans, Lenzenweger  Rupert, Mitterndorfer  Wilhelm, Offenberger  Johann, Pertlwieser  Manfred, Rabl  Rudolf, Tovornik  Vlasta, Ubl  Hanns, Winkler  Gerhard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Johann Offenberger: Probleme und Techniken der Pfahlbauforschung.     9-   21. Ämilian Kloiber, Josef Kneidinger, Manfred Pertlwieser: Die neolithische Siedlung und die neolithischen Gräberfundplätze von Rutzing und Haid, Ortsgemeinde Hörsching, Politischer Bezirk Linz-Land, Oberösterreich, IV. Teil.    23-   50. Manfred Pertlwieser, Manfred Pertlwieser, Manfred Pertlwieser: Die hallstattzeitliche Höhensiedlung auf dem Waschenberg bei Bad Wimsbach/Neydharting, Politischer Bezirk Wels, Oberösterreich, III. Teil: Die Funde.    51-   80. Vlasta Tovornik: Ein römerzeitliches Brandgrab auf dem Waschenberg.    81-   84. Gerhard Winkler: Legio II Italica, Geschichte und Denkmäler.    85-  138. Hanns Ubl: Ein neues Dienerrelief der Lauriacenser Steinmetzwerkstatt des 3. Jh. n. Chr. - Mit einem Nachtrag: Nochmals Fahnenfächer.   139-  154. Lothar Eckhart: Zwei kleine Grabungen an der Peripherie von Enns.   155-  167. Fritz Felgenhauer: Die Wehranlage auf dem Kirchberg zu Attersee. Bericht über die Versuchsgrabung 1970.   169-  184. Clemens Eibner: Das Erdwerk "Schloßberg" auf dem Buchberg in Attersee, Oberösterreich. Bericht über die Versuchsgrabung 1970.   185-  194. Hans Krawarik: Zur Siedlungsgeschichte des Pyhrnpaßraumes.   195-  212. Kurt Holter: Geschichte von Schlierbach bis 1355.   213-  248. Rudolf Rabl: Carl Rabl (1853-1917).   249-  292. Rupert Lenzenweger: Beiträge zur Desmidiaceenflora des Ibmer Moores, 5. und letzte Fortsetzung.   293-  303. Franz Grims: Die Flora des Sauwaldes und der umgrenzenden Täler von Pram, Inn und Donau, II. Teil.   305-  350. Hans Foltin, Wilhelm Mitterndorfer: Die Schmetterlingsfauna des östlichen Aschachtales, besonders des Wärmegebietes von Kopl-Steinwänd, ein Beitrag zur Lepidopterenfauna von Oberösterreich.   351-  380. : Besprechungen und Anzeigen.   381-  400</dc:description>
+   <dc:date>1971</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27364.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27364.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27364</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

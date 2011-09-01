@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of Poecilia (Acanthophacelus) wingei n. sp. from the Paría Peninsula, Venezuela, including notes on Acanthophacelus Eigenmann, 1907 and other subgenera of Poecilia Bloch and Schneider, 1801 (Teleostei, Cyprinodontiformes, Poeciliidae)</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Poeser F.N.</dc:creator>
+   <dc:creator>Kempkes M.</dc:creator>
+   <dc:creator>Isbrücker I.J.H.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:subject>Guppies</dc:subject>
+   <dc:subject>Poecilia reticulata</dc:subject>
+   <dc:subject>P. wingei</dc:subject>
+   <dc:subject>melanophore patterns</dc:subject>
+   <dc:subject>character displacement</dc:subject>
+   <dc:subject>Paría Peninsula</dc:subject>
+   <dc:subject>despeciation</dc:subject>
+   <dc:description>The taxonomy of the common guppy, Poecilia reticulata Peters, 1859, is reviewed and the closely related Campoma guppy, P. wingei n. sp., is described. Formerly, the common guppy was not judged to be closely related to any other species of Poecilia, but the new species is the second species to be allocated in the subgenus Acanthophacelus Eigenmann, 1907. The recognition of P. wingei results from observed character displacement, i.e., on the interaction between two closely related species in a shared environment. In addition to differences in coloration, behaviour also indicates specific differences. The area in which P. wingei occurs, the Campoma region at the base of the Paría Peninsula in Venezuela, hints to an origin of the subgenus Acanthophacelus prior to the uplift of the Cordilleras, i.e., the eastern orogenesis of the Andes. Moreover, an explanation is offered for aberrant molecular data in Trinidadian guppies.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214343</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 97 - 115</dcterms:extent>
+   <dcterms:isPartOf>Description of Poecilia (Acanthophacelus) wingei n. sp. from the Paría Peninsula, Venezuela, including notes on Acanthophacelus Eigenmann, 1907 and other subgenera of Poecilia Bloch and Schneider, 1801 (Teleostei, Cyprinodontiformes, Poeciliidae) (URN:ISSN:13834517) (Volume 74, 1/2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214343.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43080</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214343</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

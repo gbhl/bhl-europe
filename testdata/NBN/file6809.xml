@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On six species of marine Mollusca from suriname, four of which are new</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Regteren, van C.O.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Four new species are here described in order to have their descriptions published before "Seashells of Wia Wia" by D. J. Green &amp; R. H. Hill and the second part of my paper on the Holocene and Recent marine Mollusca of Suriname will appear. Notes are added on two species for which names are used different from those in previous publications. The description of Solen rosewateri n. sp. is nearly completely based on specimens obtained during the Research of the Continental Shelf of Suriname (Onderzoek Continentaal Plat Suriname: O.C.P.S.), which dredged off the Suriname coast in 1966 and 1969. As large parts of the O.C.P.S. material have not yet been sorted out, there is a possibility that specimens of the other new species described in the present paper will prove to occur in this material. Unless otherwise stated the specimens are in the Rijksmuseum van Natuurlijke Historie at Leiden. Petricola (Petricolaria) pholadiformis gracilis Deshayes nov. comb. (pl. 1 figs. 4-6, textfig. 1c, d) I found that the syntypes of Petricola gracilis Deshayes in the British Museum (Natural History) agree with specimens from St. Petersburg, Florida; Galveston, Texas; the beach near the mouth of Matapica Canal, Suriname, and Holocene shell ridges near Cupido on the Maratakka, Suriname. The subspecies was mentioned as Petricola (Petricolaria) aff. parallela Pilsbry &amp; Lowe in my publication of 1968 (p. 158). Lamarck (1818: 505) described Petricola pholadiformis after one specimen from unknown locality, which belonged to the cabinet of Mrs. Bandeville. This cabinet was bought by the Prince of Masséna after having passed through other hands (Lamy 1931?: 22) and finally came to the Muséum</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319314</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 75 - 86</dcterms:extent>
+   <dcterms:isPartOf>On six species of marine Mollusca from suriname, four of which are new (URN:ISSN:0024-0672) (Volume 45) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319314.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150600</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319314</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

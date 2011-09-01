@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 110_111_1 (1971)</dc:title>
+   <dc:creator>Dopsch  Heinz, Gavigan  Johann R., Gerabek  Karl, Heinisch  Reinhard, Hell  Martin, Neffe  Heinz R., Ospald  Hans, Pagitz-Roscher  Magda, Penninger  Ernst, Vogeltanz  Rudolf, Watteck  Nora</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Ospald: Johann Stainhauser. Ein Salzburger Historiograph des beginnenden 17. Jahrhunderts (1570-1625).     1-  124. Heinz Dopsch: Der bayerische Adel und die Besetzung des Erzbistums Salzburg im 10. und 11. Jahrhundert.   125-  152. Magda Pagitz-Roscher: Chronik des Niederleghauses.   153-  198. Johann R. Gavigan: Felice Millensio, OSA, Mitgründer des Müllner Klosters. Sein Lebensweg bis 1608.   199-  254. Reinhard Heinisch: Die Neutralitätspolitik Erzbischof Paris Lodrons und ihre Vorläufer. Salzburgs Stellung zu Liga und Reich.   255-  276. Ernst Penninger: Über die Gewehrlichkeit der Salzlieferung von Erzstift Salzburg an Churbayern.   277-  296. Ernst Penninger: Die Straßennamen der Stadt Hallein.   297-  364. Nora Watteck: Abergläubisches und Magisches für den Hausgebrauch und zum Erzsuchen.   365-  380. Karl Gerabek: Die Gewässer im Stadtbereich von Salzburg.   381-  396. Heinz R. Neffe: Ein Beitrag zur Morphologie des Zederhaustales.   397-  418. Rudolf Vogeltanz: Der erste Seeigel aus den Oberalmer Mergelkalken.   419-  426. Martin Hell: Der römische Gutshof in Elsbethen.   427-  444. Martin Hell: Bajuwarengräber aus Seeham in Salzburg.   445-  456</dc:description>
+   <dc:date>1971</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29122.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29122.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29122</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

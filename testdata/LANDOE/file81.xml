@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Linzer biologische Beiträge (LBB) 18_2 (1986)</dc:title>
+   <dc:creator>Ebmer  Andreas W., Frank  Christa, Gusenleitner  Josef, Krieger  Hubert, Riedl  Harald, Riedl-Dorn  Christa, Schmidt  Konrad, Speta  Franz, Türk  Roman, Wechtl  E.E., Westrich  Paul, Wolf  H.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hubert Krieger, Roman Türk: Floristische und immissionsökologische Untersuchungen an Rindenflechten im Unteren Mühlviertel, Oberösterreich.   241-  337. H. Wolf: Ein Zwitter von Priocnemis exaltata (FABRICIUS) (Hym., Pompilidae).   339-  340. Paul Westrich, Konrad Schmidt: Methoden und Anwendungsgebiete der Pollenanalyse bei Wildbienen (Hymenoptera, Apoidea).   341-  360. Josef Gusenleitner: Zwei neue Antepipona-Arten aus der Türkei (Hym., Eumenidae).   361-  371. Christa Riedl-Dorn, Harald Riedl: Über eine neue Arthophyllum-Art (Araliaceae) von den Neuen Hebriden.   373-  380. Harald Riedl, Christa Riedl-Dorn: Ergebnisse einer Sammel- und Studienreise nach Mauritius im Sommer 1981.   381-  387. E.E. Wechtl, Harald Riedl: Beitrag zur Kenntnis der Mikropilze von Mauritius.   389-  398. Franz Speta: Über die herbstblühenden Scillen des Mittelmeerraumes.   399-  416. Andreas W. Ebmer: Die Artgruppe des Lasioglossum strictifrons (VACHAL 1895) mit einer Bestimmungstabelle der Weibchen (Hymenoptera, Apoidea, Halictidae).   417-  443. Christa Frank: Zur Verbreitung der rezenten schalentragenden Land- und Wassermollusken Österreichs.   445-  526</dc:description>
+   <dc:date>1986</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/103.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/103.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=103</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

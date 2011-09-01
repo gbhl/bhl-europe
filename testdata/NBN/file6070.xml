@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Beitrag zur Systematik und Nomenklatur der Paläarktischen Osmiini, mit Angaben Über Ihre Verbreitung</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Zanden, van der G.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Apidae</dc:subject>
+   <dc:subject>Megachilinae</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>nomenclature</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:description>The author gives a preliminary list of all valid names of the species and subspecies of the Palaearctic Osmiini, including genera and their subgenera and notes on their distribution. Since Ducke (1900) no comprehensive study of this group of bees has been published. The list is a first step towards a complete revision and should be useful to future workers on this group.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318575</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1988</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 113 - 133</dcterms:extent>
+   <dcterms:isPartOf>Beitrag zur Systematik und Nomenklatur der Paläarktischen Osmiini, mit Angaben Über Ihre Verbreitung (URN:ISSN:0024-0672) (Volume 62) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318575.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149861</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318575</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

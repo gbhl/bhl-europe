@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On slipper lobsters</dc:title>
+   <dc:title>The Biology and Fisheries of the Slipper Lobster</dc:title>
+   <dc:creator>Schram F.R.</dc:creator>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Scyllaridae</dc:subject>
+   <dc:subject>Slipper lobster</dc:subject>
+   <dc:publisher>CRC Press</dc:publisher>
+   <dc:contributor>Lavalli K.L. (Editor)</dc:contributor>
+   <dc:contributor>Spanier E. (Editor)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:226597</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Review of: The Biology and Fisheries of the Slipper Lobster, edited by K.L. Lavalli and E. Spanier. CRC Press, Boca Raton, Florida, USA, 2007, 400 pp. ISBN 0-8493-3398-9.</dcterms:alternative>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>400</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/226597.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/49678</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/226597</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

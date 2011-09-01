@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 99 (1969)</dc:title>
+   <dc:creator>Dostal  Viktor, Ehrendorfer  Friedrich, Gusenleitner  Josef, Haar  Helmut, Habeler  Heinz, Hable  Erich, Heritsch  Haymo, Jahn  Erich, Melzer  Helmut, Morawetz  Sieghart Otto, Noe  Michael, Riedl  Hans, Samwald  Franz, Schaeftlein  Hans, Schmeller  Elisabeth, Schrey  Adolf, Schroll  Fritz, Schuster  Reinhart, Sixl  Wolf, Vornatscher  Josef, Weissert  Bruno, Wittmann  Roland</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Haymo Heritsch: Chemische Analysen gabbroider und eklogitischer Gesteine und ihrer Mineralien vom Fundpunkt Lenzbauer in Gressenberg bei Schwanberg, Koralpe, Steiermark.     5-   17. Haymo Heritsch, Roland Wittmann: Chemische Analysen eklogitischer Gesteine und ihrer Mineralien vom Fundpunkt Hohl bei Wies, Koralpe, Steiermark.    18-   29. Sieghart Otto Morawetz: Witterungsspiegel 1968 (für Graz).    30-   32. Helmut Melzer: Neues zur Flora der Steiermark, XII.    33-   47. Erich Jahn: Pilzkundliche Beobachtungen am Furtnerteich bei Neumarkt.    48-   54. Fritz Schroll: Zur Problematik der Systematik der Neunaugen im ostalpinen Raum.    55-   88. Michael Noe: Ein Beitrag zur Hydrobiologie der hinteren Ingering und zur Limnologie des Ingeringsees in denSeckauer Tauern (Steiermark).    89-  122. Josef Vornatscher: Gammarus (Rivulogammarus) lacustris G. O. Sars (Amphipoda) in Österreich.   123-  129. Wolf Sixl: Studien an Baumhöhlen in der Steiermark.   130-  142. Heinz Habeler: Die Großschmetterlinge von Graz und seiner Umgebung V.   143-  180. Erich Hable: Bemerkenswerte ornithologische Beobachtungen im Gebiet der Forschungsstätte "P. Blasius HANF" am Furtnerteich im Jahre 1968 (Aves).   181-  188. Helmut Haar: Ornithologische Beobachtungen in der Oststeiermark im Jahre 1968 (Aves).   188-  193. Franz Samwald: Ornithologische Beobachtungen in der Oststeiermark im Jahre 1968 (Aves).   193-  201. Bruno Weissert: Die Vogelwelt des südlichen Hartberger Bezirkes mit besonderer Berücksichtigung der Neudauer Teiche (Aves).   202-  213. Josef Gusenleitner: Symmorphus (Koptodynerus) declivis (Harttig 1932) " Zweitfund für Österreich (Insecta, Hymenoptera).   213-  214. Hans Schaeftlein: Hydropus longicornis Sharp - Erstnachweis für Österreich (Insecta, Coleoptera).   214-  215. Reinhart Schuster: Bemerkenswerte Spinnen- und Milbenfunde (Arachnida: Araneae und Acari).   216-  217. Wolf Sixl: Nasale Milben einheimischer Vögel (Arachnida, Acari).   217-  218. Wolf Sixl, Viktor Dostal, Elisabeth Schmeller, Hans Riedl: Heimische Zecken (Arachnida, Acari).   218-  219. Friedrich Ehrendorfer, Adolf Schrey: Geschäftsbericht über das Vereinsjahr 1968.   222-  224</dc:description>
+   <dc:date>1969</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28646.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28646.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28646</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

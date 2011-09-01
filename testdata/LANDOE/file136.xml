@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vogelkundliche Nachrichten aus Oberösterreich, Naturschutz aktuell 5a (1997)</dc:title>
+   <dc:creator>Billinger  Karl, Brader  Martin, Donner  Josef, Hochrathner  Peter, Jiresch  Winfried, Mühllechner  Ludwig, Weißmair  Werner</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Billinger: Nachruf: Renate Wittler (6.7.1928-13.4.1997)     1-   73. Karl Billinger: Nachruf: Renate Wittler (6.7.1928-13.4.1997)     1-   73. Winfried Jiresch: 10 Jahre Wanderfalkenuntersuchung (Falco peregrinus) in Oberösterreich     1-    8. Peter Hochrathner: Qualitative und quantitative Erhebung der Avifauna auf drei ausgewählten Untersuchungsflächen im Sengsengebirge (Transektgebiet) - Subalpin bis alpin (Oberösterreich)     9-   39. Ludwig Mühllechner: Dichteermittlung der Hohltaube (Columba oenas) im Hausruck/Kobernausserwald, Oberösterreich    41-   44. Josef Donner: Vogelberingung in Oberösterreich 1996 und bemerkenswerte Ringfunde    45-   50. Martin Brader, Werner Weißmair: Ornithologische Beobachtungen aus Oberösterreich von Juli bis Dezember 1996    51-   70. Martin Brader, Karl Billinger: Aufruf zur Mitarbeit: Von der Alpendohle zum Zwergtaucher-Oberösterreichs Vogelwelt zur Jahrtausendwende - ein neuer Brutvogelatlas ist im Werden    71-   72</dc:description>
+   <dc:date>1997</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/2200.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/2200.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=2200</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

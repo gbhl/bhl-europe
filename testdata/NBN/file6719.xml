@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XXXII. Nachträgliche Betrachtungen zu der Revision der Subfamilie Parnassiinae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>subsp. olympiacus Kolar und Rebel Die in Parn. VI p. 33/34 gegebene Diagnose dieser distincten Unterart, von der mir nunmehr Vertreter mehrerer Jahrgänge vorliegen, kann wie folgt ergänzt werden. ♂ ♀ 37-41 mm. ♂ im Vorderflügel mit ungleich lang ausgebildeter Marginale, bis über Cu1 oder bis kurz vor der Flügelrundung ; Submarginale bescheiden bis über Cu1; Endzellfleck öfter f. quincunx n.c.; im Hinterflügel häufig Marginale internerval und Submarginale angedeutet. ♀ mit mehr oder weniger markant entwickelter fasciata-Binde, ocelloconjuncta-Steg und stets mit ampliusanalis-Fleck. subsp. graecus Ziegler Das neue Material in meiner Sammlung bestätigt den typischen habitus dieser stark androtropen Unterart, wie er in Parn. Nova XIV angegeben ist. ♂ ♀ 37-41 mm. subsp. peloponnesiacus Pag. Der Fundort Patras bedarf immer noch der Bestätigung. Das ♂ ♀ in meiner Sammlung ex c. Menthe stammt auch von Neuschild, aufgrund dessen Material Pagenstecher die subspecies beschrieben hat. subsp. albanicus Riemel ♂ ♀ 40-44 mm; subsp. macedonicus Bollow ♂ ♀ 38-43 mm. Meinen früheren Ausführungen habe ich nichts hinzuzufügen. subsp. dardanus Rebel Die Diagnose in Parn. VI p. 34 sei dahingehend richtiggestellt, dass der Hinterrandsfleck des Vorderflügels rundlich klein ist, und dass die Ozellen in beiden Geschlechtern klein bis mittelgross sind. Die Hinterrandsschwärze ist seicht, zuweilen reduziert.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319224</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1962</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 105 - 128</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XXXII. Nachträgliche Betrachtungen zu der Revision der Subfamilie Parnassiinae (URN:ISSN:0024-0672) (Volume 38) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319224.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150510</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319224</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

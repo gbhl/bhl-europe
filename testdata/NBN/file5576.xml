@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : LV. Alancastria Cerisyi Godard</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Als ich 1974 in Parn. Nov. 49 (Erster Teil) das Genus Alancastria Bryk behandelte, waren mir zwei wichtige Publicationen nicht bekannt: T. B. Larsen's "Two species of Alancastria Bryk in Libanon" und Dr. G. Bernardi's Beschreibung von A. deyrollei subsp. eisneri, die meine Zweifel über die Einreihung meines Materials bei den subsp. cerisyi cerisyi Godard, subsp. speciosa Stichel und subsp. deyrollei Oberthür als gerechtfertigt bestätigt und mir gestattet haben, das in Frage kommende Material in meiner Sammlung auf grund der jetzt bekannten Merkmale wie folgt einzureihen. Alancastria cerisyi cerisyi Godard Smyrna 4♂ 6♀; Brussa 1♂ 1 ♀; Kurd-Dagh 2 ♂; Mortana? f. nigripuncta Sheljuzhko 1 ♂, e.l. 2 ♀ mit Geäder- und Zeichnungsvariationen; Brussa 1 ♂; Edesol-Dagh 4♂ 1 ♀; 12 km westlich Balikesir 1 ♀ Holotype, 1 ♂ Allotype, 2 ♀ 6 ♂ Paratypen von subsp. mysiensis Eisner &amp; Wagener (Syn. von cerisyi cerisyi Godard). Alancastria cerisyi speciosa Stichel Syrien, Akbes 7 ♂, f. minusculus n.c. 3 ♂, f. caeca Sheljuzhko 2 ♂, 5 ♀; Aleppo 1 ♀; Beyruth 2 ♂ 3♀; Cheikhlè 1 ♂ 1 ♀; Jerusalem 9 ♂; Libanon, Djecin 2 ♂, f. minusculus n.c. 1 ♀; Libanon 1 ♂, f. minusculus n.c. 1 ♀; Adalia 5 ♂ 1 ♀; Amanus-Gebirge 4 ♂, f. minusculus n.c. 1 ♂, 4 ♀; Akbes 1 ♂; Carmel bei Haifa 1 ♂; Antakia, Antilibanon 1 ♀; Syrische Grenze bei Adana 2 ♂; Beyruth 1 ♂; Zahlè, Libanon 1 ♂; Libanon 1 ♀; Hamadan 1 ♀. Alancastria cerisyi deyrollei Oberthür Amasia 23 ♂ 5 ♀, f. rubrocatenata Eisner 1 ♀ Allotype, f. albidior Rühl &amp; Heyne 7 ♀, f. obscurior Rühl &amp; Heyne 12 ♀, f. minusculus n.c. 1 ♀, f. ochracea Staudinger 1 ♀; Pontus 2 ♂; Ankara 1 ♂; Samsun 1♂1♀; Marsi-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318081</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 283 - 284</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : LV. Alancastria Cerisyi Godard (URN:ISSN:0024-0672) (Volume 53) (Issue 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318081.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149367</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318081</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

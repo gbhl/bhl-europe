@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte der Arbeitsgemeinschaft für ökologische Entomologie in Graz 5 (1975)</dc:title>
+   <dc:creator>Adlbauer  Karl, Gepp  Johannes, Mazzucco  Karl sen., Stark  Wilfried</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wilfried Stark: Bemerkenswerte Insektenfund im Stadtgebiet von Graz.   164-  169. Johannes Gepp: Fehlparasitierung der Tachine Spoggosia fasciata EGG. bei Hypogymna morio L. (Lep., Lymantr.).   170-  173. Karl sen. Mazzucco: Beobachtungsstation Weißsee, 2300m, Hohe Tauern, Salzburg, Arbeitsbericht 1971-1973   174-  183. Karl Adlbauer: Einige beachtenswerte Bockkäferfunde in der Steiermark.   184-  186. Johannes Gepp: Zum 70. Geburtstag von Univ.-Prof., Dipl.-Ing., Dipl. Agr., Dr. Bruno Schaerffenberg.   187-  194</dc:description>
+   <dc:date>1975</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29000.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29000.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29000</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

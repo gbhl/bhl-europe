@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new genus and two new species of minute leptodactylid frogs from northern South America, with comments upon Phyzelaphryne (Amphibia: Anura: Leptodactylidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hoogmoed M.S.</dc:creator>
+   <dc:creator>Lescure J.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Anura; Leptodactylidae; genera; Adelophryne gen. nov.; Eleutherodactylus; Phyzelaphryne; key; Neotropics</dc:subject>
+   <dc:description>The synonymisation of Phyzelaphryne miriamae Heyer with Eleutherodactylus nigrovittatus Andersson is denied and it is shown that both species are quite distinct in numerous characters. A new genus (Adelophryne) of minute leptodactylid frogs with pointed discs on the toes and a distinctly reduced fourth finger, containing two new species (A. adiastola spec. nov. and A. gutturosa spec. nov.) is described from northern South America. A key to separate the diminutive leptodactylid frogs with pointed toetips is given. The relationships of the new genus are not clear, but possibly are with one of the species groups of Eleutherodactylus, of the subfamily Eleutherodactylinae.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319080</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 85 - 115</dcterms:extent>
+   <dcterms:isPartOf>A new genus and two new species of minute leptodactylid frogs from northern South America, with comments upon Phyzelaphryne (Amphibia: Anura: Leptodactylidae) (URN:ISSN:0024-0672) (Volume 58) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319080.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150366</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319080</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

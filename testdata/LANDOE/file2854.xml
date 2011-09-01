@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 26_2 (1987)</dc:title>
+   <dc:creator>Benes  Zdenka, Brander  Urs, Czeczuga  Bazyli, Fuchshofer  Heinz, Guttenberger  Helmut, Härtel  Otto, Heinrich  Georg, Karataglis  Stylianos S., Kiermayer  Oswald, Kies  Ludwig, Klein  Erich, Maurer  Willibald, Meindl  Ursula, Schröder  Walter, Singh  Anil Kumar, Singh  Awadesh Kumar, Speta  Franz, Sterk  H., Teppner  Herwig, Thaler  Irmtraud, Umrath  Karl</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Irmtraud Thaler: Zellforschung in Graz - Zum 100. Geburtstag Friedl WEBERs.   137-  147. Herwig Teppner: Recensio.   147-  148. Karl Umrath, Zdenka Benes: Cell Proliferation on Potato-Parenchym induced by the Excitatory Substance of the Solanaceae.   149-  155. Otto Härtel: Recensiones.   156. Ursula Meindl, Oswald Kiermayer: Elektronenmikroskopischer Aspects von Raphidenzellen der Orchidee Haemaria discolor.   157-  164. Awadesh Kumar Singh, Anil Kumar Singh: Chemical Composition of Cowpea Plants as influenced by Southern Bean Mosaic Virus and Cowpea Mosaic Virus.   165-  170. Urs Brander: Ultrastructure of the Callose and Cellulose Types of Crystal Envelopes in the Calcium Oxalate Idioblastes of Abutilion pictum WALP.   171-  192. Herwig Teppner: Recensio.   192. Helmut Guttenberger: Schließzellengröße und DNA-Gehalt in den Keim- und dritten Folgeblättern von Silene noctiflora L.   193-  199. Herwig Teppner: Recensio.   199. Bazyli Czeczuga: The Effect of Light on the Content of Photosynthetically Active Pigments in Plants. VII. Chromatic Adaptation in the Lichens Peltigera polydactyla and P. rufescens.   201-  208. Stylianos S. Karataglis: Estimation of the Toxicity of Different Metals, Using as Criterion the Degree of Root Elongation in Triticum aestivum Seedlings.   209-  217. Herwig Teppner: Recensio.   218. Georg Heinrich, Ludwig Kies, Walter Schröder: Untersuchungen über die Mineralisierung der gehäuse von Trachelomonas-Arten (Euglenophyceen) mit Hilfe des Laser-Mikrosonden-Massenanalysators LAMMA 500.   219-  225. Otto Härtel: Recensiones.   226. Willibald Maurer: Rubus widderi, spec. nov. (Rosaceae).   227-  233. Otto Härtel: Recensiones.   233-  234. Otto Härtel, Heinz Fuchshofer: Methodische Ergänzungen zum Trübungstest zur Bioindikation von Abgaswirkungen auf Koniferen.   235-  246. Franz Speta: Die verwandtschaftlichen Beziehungen von Brimeura SALISB.: ein Vergleich mit den Gattungen Oncostema RAFIN., Hyacinthoides MEDIC. und Camassia LINDL. (Hyacinthaceae).   247-  310. H. Sterk, Herwig Teppner, Otto Härtel, Erich Klein: Recensiones.   311-  320</dc:description>
+   <dc:date>1987</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30187.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30187.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30187</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Re-description of Phymactis papillosa (Lesson, 1830) and Phymanthea pluvia (Drayton in Dana, 1846) (Cnidaria: Anthozoa), two common actiniid sea anemones from the south east Pacific with a discussion of related genera</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Häussermann V.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Actiniaria</dc:subject>
+   <dc:subject>Actiniidae</dc:subject>
+   <dc:subject>Phymactis papillosa</dc:subject>
+   <dc:subject>Phymactis clematis</dc:subject>
+   <dc:subject>Phymanthea pluvia</dc:subject>
+   <dc:subject>Bunodosoma</dc:subject>
+   <dc:subject>non-adhesive vesicles</dc:subject>
+   <dc:subject>Chile</dc:subject>
+   <dc:subject>Peru</dc:subject>
+   <dc:subject>Mexico</dc:subject>
+   <dc:subject>benthos</dc:subject>
+   <dc:description>Actiniid sea anemones possess few characteristics of taxonomic value, which makes columnar outgrowths one of the most important features for systematic work. There are two species of actiniid sea anemones known from Chile and southern Peru that exhibit a column densely covered with non-adhesive vesicles: Phymactis papillosa (Lesson, 1830) (= Phymactis clematis) and Phymanthea pluvia (Drayton in Dana, 1846). Hereby both are re-described in detail. The re-descriptions are based on observations of about 100 living animals in their habitat and in aquaria and on the examination of 21 specimens of P. papillosa and seven specimens of P. pluvia collected in Chile between 1995 and 2003. In Chile, specimens of both species occur in tide-pools, on vertical and overhanging rock-walls in the intertidal zone and in shallow water down to depths of 16 m. Large size, numerous short tentacles, and acrorhagi characterize both species. Phymactis papillosa is a widely distributed species: its occurrence is confirmed from Playa Tantalean, Peninsula Bayovar, Peru (05°48’15’’S, 81°04’99’’W), to the Archipelago de los Chonos (44°24’S; 73°34’W), south Chile, for the Gulf of California (24°08’N; 110°15’W) and for the Pacific coast of Mexico (23°26’N; 110°15’W) as well as for some Pacific Islands. Phymactis papillosa occurs solitarily and in clonal aggregations and exhibits four distinct colour varieties: var. rubra, var. viridis, var. cyanea and var. fusca as well as some mixed morphs. Phymanthea pluvia can be found between Caleta Yasila, Paita, Peru (05°07’38’’S, 81°10’07’’W), and the region of Valparaíso, central Chile (33°02’S, 71°38’W). Specimens of P. pluvia always have a hardly varying orange colour; the apexes of its vesicles are whitish. Morphologically both species are quite similar; besides the colour they can be distinguished by the histological structure of the vesicles and by the numerous rod-like basitrichs in the acrorhagi of P. papillosa. Structure and histology of the vesicles of both species are described in detail and possible functions and the taxonomic value of vesicles are discussed. The distinctive characters of the genera Phymactis Milne Edwards 1857, Bunodosoma Verrill, 1899, and Phymanthea Carlgren, 1959 are given. Valid as well as doubtful species of all three genera are listed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214449</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 345 - 381</dcterms:extent>
+   <dcterms:isPartOf>Re-description of Phymactis papillosa (Lesson, 1830) and Phymanthea pluvia (Drayton in Dana, 1846) (Cnidaria: Anthozoa), two common actiniid sea anemones from the south east Pacific with a discussion of related genera (URN:ISSN:00240672) (Volume 78, 18-28)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214449.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43183</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214449</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vorarlberger Naturschau - Forschen und Entdecken 7 (1999)</dc:title>
+   <dc:creator>Aistleitner  Eyjolf, Batlogg  Nikolaus, Bojar  Hans-Peter, Drexel  Peter, Friebe  Georg J., Huber  Dietmar, Huemer  Peter, Niederer  Walter, Sigg  Andrea, Zimmermann  Klaus</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Eyjolf Aistleitner: Vorwort.     7-    8. Andrea Sigg: Qualitative und quantitative Erfassung der Molluskenarten in verschiedenen Tiefen des Bodensees in Vorarlberg.     9-   66. Peter Drexel: Ausgewählte Aspekte des Stadt- und Geländeklimas von Feldkirch (Vorarlberg).    67-  108. Nikolaus Batlogg: Zum Wasserhaushalt des Einzugsgebietes der Oberen Ill.   109-  140. Dietmar Huber: Die Verbreitung der Amphibien und Reptilien im Kleinwalsertal, Österreich, mit Anmerkungen zur Ökologie und Zoogeographie.   141-  154. Walter Niederer: Die Wanzensammlung (Heteroptera, Insecta) der Vorarlberger Naturschau.   155-  168. Peter Huemer: Das Sumpfhornklee-Widderchen (Zygaena trifolii) - eine Wiederentdeckung für Österreich.   169-  172. Klaus Zimmermann: Das Projekt NatureWeb: Biologische und Erdwissenschaftliche Verbreitungsdaten im Internet.   173-  188. Georg J. Friebe: Zur paläontologischen Erforschung Vorarlbergs: Die wissenschaftlichen (Auslands-) Kontakte Siegfried Fusseneggers zwischen 1924 und 1939.   189-  206. Georg J. Friebe, Hans-Peter Bojar: Fluorit, Dolomit und Quarz aus schmalen Klüften in Dolomit, Schröcken - Unterboden (Vorarlberg).   207-  209</dc:description>
+   <dc:date>1999</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27439.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27439.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27439</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

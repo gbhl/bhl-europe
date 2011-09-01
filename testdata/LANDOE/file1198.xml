@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 61 (1974)</dc:title>
+   <dc:creator>Anonym , Burmann  Karl, Florineth  Florin, Heiss  Ernst, Kawecka  Barbara, Kofler  Alois, Mahnert  Volker, Maucci  Walter, Meyer  Erwin, Pfaller  Kristian, Schröcksnadel  Hans, Strimmer  Alfred, Thaler  Konrad</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Alfred Strimmer: Die Steppenvegetation des mittleren Vinschgaues (Südtirol: Italien).     7-   42. Florin Florineth: Vegetation und Boden im Steppengebiet des oberen Vinschgaues (Südtirol: Italien).    43-   70. Barbara Kawecka: Effect of organic pollution on the development of diatom communities in the alpine streams Finstertaler Bach and Gurgler Ache (Northern Tyrol, Austria).    71-   82. Walter Maucci: Hypsibius (H.) cataphractus (Tardigrada: Macrobiotidae) und weitere Nachrichten über Tardigraden aus Österreich.    83-   86. Volker Mahnert: Roncus viti n.sp. (Arachnida: Pseudoscorpiones) aus dem Iran.    87-   91. Erwin Meyer, Konrad Thaler: Fragmenta Faunistica Tirolensia, II (Diplopoda, Chilognatha: Julidae, Craspedosomatidae).    93-   99. Ernst Heiss: Ein neuer Aradus (Insecta: Heteroptera, Aradidae) aus der Türkei.   101-  105. Alois Kofler: Zweiter Beitrag zur Käferfauna (Insecta: Coleoptera) des Lechtales (Tirol: Österreich).   107-  119. Karl Burmann: Das Weibchen von Hybernia aurantiaria lariciaria Scholz forma fumipennaria Hellw. (Insecta: Lepidoptera, Geometridae).   121-  122. Kristian Pfaller: Die Helminthenfauna der Rötelmaus (Clethrionomys glareolus, Schreber, 1780) in verschiedenen Höhenlagen und in verschiedenen Altersklassen (Tirol: Österreich).   123-  130. Hans Schröcksnadel: Nachruf auf Ehrenmitglied Univ.-Prof. Dr. med. Ferdinand Scheminzky.   133-  148. Anonym: IV. Vereinsnachrichten   157-  159</dc:description>
+   <dc:date>1974</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27279.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27279.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27279</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

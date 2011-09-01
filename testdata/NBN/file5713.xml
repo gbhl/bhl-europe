@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the genus Centistes Haliday (Hymenoptera: Braconidae: Euphorinae) of the USSR Far East and neighbouring territories</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Belokobylskij S.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Euphorinae</dc:subject>
+   <dc:subject>Centistes</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Far East of the USSR</dc:subject>
+   <dc:description>The East Palaearctic species of the genus Centistes Haliday are revised. The subgeneric division of the genus Centistes is discussed; Syrrhizus Foerster is considered to be a distinct genus. Eleven new species from the Far East of the USSR are figured and described: C. (C.) alekseevi, C. (A.) semiruficus, C. (A.) convexitemporalis, C. (A.) microvalvis, C. (A.) pteropygidium, C. (A,) sylvicola, C. (A.) manchzhuricus, C. (A.) chaetopygidium, C. (A.) planivalvis, C. (A.) spasskensis, and C. (A.) scutellaris. Three species (C. (A.) paupella (Shenefelt), C. (A.) medythiae Maetô &amp; Nagai, and C. (A.) antennalis (Watanabe)) are recorded for the fauna of the USSR for the first time, and six species (C. (C.) cuspidatus (Haliday), C. (C.) fuscipes (Nees), C. (A.) collaris (Thomson), C. (A.) ater (Nees), C. (A.) edentatus (Haliday), and C. (A.) saxo (Reinhard)) are new for the Far East of the USSR. The lectotype of Leiophron saxo Reinhard, 1862, is designated. A key to East Palaearctic subgenera and species of Centistes is given.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318218</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 199 - 237</dcterms:extent>
+   <dcterms:isPartOf>Revision of the genus Centistes Haliday (Hymenoptera: Braconidae: Euphorinae) of the USSR Far East and neighbouring territories (URN:ISSN:0024-0672) (Volume 66) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318218.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149504</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318218</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

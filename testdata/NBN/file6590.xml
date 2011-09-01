@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Descriptions of exotic Microlepidoptera</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Adoxophyes trirhabda spec. nov. (fig. 3, 4) ♂ 13 mm. Head light ochreous, mixed with tawny. Antenna ochreoustawny finely ringed with blackish-purple, tip of scape suffused with purple. Palpus light ochreous suffused with reddish-tawny throughout. Thorax ochreous-tawny, glossy. Legs light ochreous, banded with purplish, basal half of tibia purplish, tarsus purplish, articulations ochreous-tawny. Abdomen ochreous-tawny. Fore wing suboval-truncate, costa strongly curved from base to apex, apex rounded, termen slightly rounded above, strongly rounded below. Glossy light ochreous, with dense oblique transverse strigulae of brighter and deeper tawny-orange, appearing dull in certain lights; costal fold narrow, to beyond 1/3, deeper orange-tawny; three oblique rather narrow and irregular transverse fasciae of purple-black dense dusting, slightly dilated in dorsum; first fascia at about 3/5, from about 1/3 of wing breadth, second from 2/5 of costa to 2|3 of dorsum, more oblique than first, third parallel to first, somewhat beyond 3/5; an ill-defined, small spot of purple-black dusting on extreme base of wing. Cilia golden-ochreous. Hind wing light purplish-grey, cilia pale golden-ochreous. ♀ 16 mm. Similar to the male, but only with traces of the second transverse fascia which is ferruginous; other markings obliterate. Cilia tawny-golden, apical half suffused with purplish-black. Male genitalia. Socius moderate, not reaching to the middle of the arms of gnathos, outer side free throughout, inner side only with the lower third free. Gnathos characteristic, rather short and slender, rectangular, angles hardly projecting. Labis with numerous small teeth. Pulvinus large, short-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319095</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 7</dcterms:extent>
+   <dcterms:isPartOf>Descriptions of exotic Microlepidoptera (URN:ISSN:0024-0672) (Volume 43) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319095.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150381</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319095</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

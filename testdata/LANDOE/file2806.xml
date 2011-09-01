@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 7_4 (1958)</dc:title>
+   <dc:creator>Biebl  Richard, Fürnkranz  Dietrich, Härtel  Otto, Hertzer  Wilhelm Gustav, Kinzel  Helmut, Kirschner  R., Markgraf  Friedrich, Pfeiffer  Hans H., Roth  Ingrid, Sun  C. N., Widder  Felix Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: R. Kirschner: Die Lebensdauer von Laubblättern nach Spritzung mit 2,4-D-Na bei Gynura aurantiaca.   253-  257. C. N. Sun: Effect of indole-3-acetic acid on the tumor-like growth of soybean in vitro.   258-  260. Ingrid Roth: Blütenbiologische und morphologische Studien an Bulbine semibarbata.   261-  274. Hans H. Pfeiffer: Über den Nachweis floristischer Vegetationswandlungen des Grünlandes.   275-  283. Dietrich Fürnkranz: Die Panaschierung bei Coprosma Baueri.   284-  287. Hans H. Pfeiffer: Über das Zusammentreffen von Pflanzengesellschaften in Komplexen.   287-  295. Wilhelm Gustav Hertzer: Die Umgrenzung der Gramineengattung Willbleibia.   296-  297. Wilhelm Gustav Hertzer: Neuere phytogeographische Studien in Uruguay, dem südlichen Grenzgebiete vieler südamerikanischer Areale.   298-  301. Friedrich Markgraf: Eine neue Gliederung der Alpenmohne.   302-  314. Felix Josef Widder: Der Gattungsname Hildenbrandia.   315-  320. Felix Josef Widder, Otto Härtel, Helmut Kinzel, Richard Biebl: Recensiones.   321-  333</dc:description>
+   <dc:date>1958</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30082.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30082.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30082</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

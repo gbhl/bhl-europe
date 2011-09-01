@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 93 (1953)</dc:title>
+   <dc:creator>Anonymus , Goldberger  Josef, Hell  Martin, Hintermaier  Hans, Keplinger  Wilfried, Klein  Herbert, Lendl  Egon, Reiter  Matthias, Strauss  Felix F., Tremel  Ferdinand, Weber  Franz Konrad</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herbert Klein: Quellenbeiträge zur Geschichte der Salzburger Bauernunruhen im 15. Jahrhundert.     1-   59. Wilfried Keplinger: Erzbischof Wolf Dietrichs biblische Kriegsordnung.    60-   89. Martin Hell: Ist die frühchristliche Bronzetafel aus Salzburg eine Fälschung?.    90-   96. Ferdinand Tremel: Beiträge zur Geschichte des steirisch-salzburgischen Handels.    97-  113. Felix F. Strauss: Eine bibliographische Studie amerikanischer Salisburgensien. Ein Beitrag zur Salzburger Literatur.   114-  119. Hans Hintermaier: Aus Jakob Philipp Fallmerayers Soldatenzeit. Sein Briefwechsel mit seinem Salzburger Bekannten Heinrich Hepperger.   120-  131. Josef Goldberger: Die Karstentwicklung und Felsbruchtätigkeit am Hochkönig.   132-  153. Egon Lendl: Landwirtschaftsgeographische Probleme aus dem Lande Salzburg.   154-  166. Franz Konrad Weber: Die Ableitung des Namens Glan.   167. Matthias Reiter: Über einige Gräser des Landes Salzburg.   168-  173. : Zum salzburgischen Schrifttum.   174-  189. Anonymus: Gesellschaftsnachrichten für das 92. Vereinsjahr 1951/52. 1. Mitgliederbewegung.   190-  191. Anonymus: Gesellschaftsnachrichten für das 92. Vereinsjahr 1951/52. 2. Totentafel.   191-  194. Anonymus: Gesellschaftsnachrichten für das 92. Vereinsjahr 1951/52. 3. Vorträge.   194. Anonymus: Gesellschaftsnachrichten für das 92. Vereinsjahr 1951/52. 5. Vereinsleitung.   195. Anonymus: Gesellschaftsnachrichten für das 92. Vereinsjahr 1951/52. 4. Führungen und Wanderungen.   195</dc:description>
+   <dc:date>1953</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29104.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29104.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29104</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

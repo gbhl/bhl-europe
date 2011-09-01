@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carinthia II 131_51 (1941)</dc:title>
+   <dc:creator>Anonym , Bellschan-Mildenburg  Eugen, Findenegg  Ingo, Gilli  Alexander, Hödl  Alfred, Hölzel  E., Hölzel  Emil, Kahler  Franz, Klimsch  Odo J.G., Paschinger  Herbert, Paschinger  Viktor, Puschnig  Roman, Ramme  W., Strasser  Karl, Trapp  Erich, Treven  Karl, Turnowsky  Fritz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Viktor Paschinger: Savekärnten ein Alpenland (Mit 1 Abbildung im Text)     5-   16. Eugen Bellschan-Mildenburg: In Kärnten übliche Volksheilmittelaus dem Pflanzen- und Tierreich (Siebenter Beitrag zur Volksmedizin in Kärnten)    17-   23. Herbert Paschinger: Über die Höhenflucht im Oberen Gailtal    23-   30. Erich Trapp: Über die Nordlichtererscheinung vom 1. März 1941    30-   33. Ingo Findenegg: Einige physikalische und chemische Beobachtungen an Kärntner Gewässern (Mit 5 Abbildungen imText)    33-   53. Alfred Hödl: Tracht und Paragenese des Kalkspates der Bleiberger Lagerstätte    54-   62. Franz Kahler: Bohnerze und Augensteinfelder in Kärnten    63-   69. Alexander Gilli: Bemerkenswerte Pflanzenfunde aus Kärnten    70-   73. Karl Strasser: Zur Diplopodenfauna Kärntens (Mit 7 Abbildungen imText)    74-   86. Emil Hölzel: Ameisenstudien und Beobachtungen in der näheren und weiteren Umgebung von Klagenfurt und in den Karawanken    86-  120. W. Ramme: Die Orthopterenfauna von Kärnten (Mit einer Tafel)   121-  131. Odo J.G. Klimsch: Zur Ökologie der Avifauna Kärntens (mit Osttirol)   132-  135. Odo J.G. Klimsch: Verzeichnis der Heute noch in Kärnten vorkommenden Vögel (Gegenüberstellung zum systematischen Verzeichnis der Vögel Kärntens von F. Keller vom Jahre 1890)   135-  151. Anonym: Kleine Mitteilungen - Ein Riesenpilz   152. Anonym: Kleine Mitteilungen - Bericht über die Entomologische Arbeitsgemeinschaft Kärnten   152-  153. Roman Puschnig: Hans Sabidussi (7.9.1864- 21.1.1941)   158-  166. Ingo Findenegg: Bericht des Vereines "Naturkundliches Landesmuseum für Kärnten" über das Vereinsjahr 1940   166-  170. Eugen Bellschan-Mildenburg, Viktor Paschinger, Karl Treven, Ingo Findenegg, Fritz Turnowsky, E. Hölzel, Franz Kahler: Berichte der Abteilungsvorstände   171-  176</dc:description>
+   <dc:date>1941</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26113.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26113.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26113</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

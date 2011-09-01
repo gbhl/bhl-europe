@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Contributions to the knowledge of Leucosiidae VI. Soceulia gen. nov. (Crustacea: Brachyura)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Galil B.S.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Leucosiidae</dc:subject>
+   <dc:subject>Leucosia</dc:subject>
+   <dc:subject>Soceulia</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Indo-Pacific</dc:subject>
+   <dc:description>A new genus, Soceulia, is established for Leucosia species with third to fifth segments of the male abdomen fused, the first male pleopod with shaft coiled once on its axis, and terminating in a digitate apical process encased in a setose muff: L. marmorea Bell, 1855, L. brunnea Miers, 1877, L. major Chen &amp; Ng, 2003, and a new species, S. alainia. The species are described or redescribed and illustrated, extended synonymies are given, and a key for their identification is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:198487</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 71 - 79</dcterms:extent>
+   <dcterms:isPartOf>Contributions to the knowledge of Leucosiidae VI. Soceulia gen. nov. (Crustacea: Brachyura) (URN:ISSN:0024-0672) (Volume 80-4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/198487.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/38060</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/198487</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

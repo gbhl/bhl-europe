@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 86 (1956)</dc:title>
+   <dc:creator>Anschau  Mladen Josef, Bernhauer  Wolfgang, Brandl  Walter, Burkard  Otto, Flügel  Erik (Horst Wolfgang), Flügel  Helmut W., Hanselmayer  Josef, Härtel  Otto, Hauser  Alois, Kepka  Otto, Maurin  Viktor, Melzer  Helmut, Metz  Karl, Morawetz  Sieghart Otto, Pichlmayer  E., Schuster  Reinhart, Skringer  Heribert</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Metz: Prof. Dr. Alois Hauser zum Gedenken.     5-   10. Otto Kepka: Allgemeine faunistische Nachrichten aus Steiermark (III). ARTHROPODA Insecta (Orthoptera).    11. Mladen Josef Anschau, Wolfgang Bernhauer, Otto Kepka: Allgemeine faunistische Nachrichten aus Steiermark (III). VERTEBRATA: AVES. Ornithologische Beobachtungen aus der mittleren und östlichen Steiermark (3. Folge: 1955).    11-   17. Heribert Skringer: Allgemeine faunistische Nachrichten aus Steiermark (III). VERTEBRATA: AVES. Ornithologische Beobachtungen aus der südlichen Steiermark.    17-   18. E. Pichlmayer: Allgemeine faunistische Nachrichten aus Steiermark (III). VERTEBRATA: AVES. Ornithologische Beobachtungen an den Fischteichen bei Kirchberg a. d. Raab (Oststeiermark).    18-   19. Otto Kepka: Allgemeine faunistische Nachrichten aus Steiermark (III). MAMMALIA.    19-   21. Otto Burkard: Die Ionosphärenstation an der Universität Graz.    22-   25. Erik (Horst Wolfgang) Flügel: Zur Bibliographie der Stromatoporen.    26-   31. Helmut W. Flügel: Neue Korallenfunde aus dem Unterludlow von Graz.    32-   58. Josef Hanselmayer, Sieghart Otto Morawetz: Witterungsspiegel 1955.    59-   67. Alois Hauser, Walter Brandl: Das Alter des Sölker Marmors.    68-   71. Viktor Maurin: Der Untergrund der Murbrücken in der Grazer Innenstadt.    72-   79. Helmut Melzer: Notizen zur Flora von Steiermark.    80-   83. Sieghart Otto Morawetz: Wald und Alm in den Schladminger Tauern und ihre Beziehungen zum Gelände und Lokalklima.    84-   95. Reinhart Schuster: Ergänzender Beitrag zur steirischen Bodenmilben-Fauna (Oribatei).    96-  101. Otto Härtel: Geschäftsbericht über das Vereinsjahr 1955.   104-  107</dc:description>
+   <dc:date>1956</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28633.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28633.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28633</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

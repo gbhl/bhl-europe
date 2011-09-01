@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The South Asiatic Polyorthini with notes on species of Polyortha Dognin (Lepidoptera, Tortricidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>CONTENTS Introduction................... 4 Polyorthini Obraztsov................ 6 Key to the genera of Polyorthini............. 10 Polyortha Dognin................. 11 Notes on species of Polyortha Dognin in the collection of the British Museum (Natural History)................ 13 Lophoprora Meyrick................ 18 L. cyanostacta Meyrick ♂ ♀............. 19 Lopharcha Diakonoff................ 21 Species group 1................. 23 L. quinquestriata Diakonoff ♂♀........... 23 L. chalcophanes (Meyrick) ♀............ 25 L. chionea spec. nov. ♀.............. 30 L. halidora (Meyrick) ♂♀............. 31 L. deliqua spec. nov. ♀.............. 33 L. herbaecolor (Diakonoff) ♂♀............ 36 L. angustior (Diakonoff) ♀............. 38 L. rapax (Meyrick) ♂♀.............. 38 L. orthioterma (Diakonoff) ♀............ 40 L. erioptila (Meyrick) ♂ ♀............. 43 L. cryptacantha spec. nov. ♂♀............ 45 L. maurognoma spec. nov. ♂............. 49 L. siderota (Meyrick) ♀.............. 50 Species group 2................. 50</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317611</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 86</dcterms:extent>
+   <dcterms:isPartOf>The South Asiatic Polyorthini with notes on species of Polyortha Dognin (Lepidoptera, Tortricidae) (URN:ISSN:0024-1652) (Volume 131) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317611.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148897</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317611</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

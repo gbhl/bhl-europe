@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mytilus antiquorum J. Sowerby, 1821 and other Pliocene mussels (Mollusca, Bivalvia) from the Southern North Sea Basin</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Vervoenen M.</dc:creator>
+   <dc:creator>Wesselingh F.P.</dc:creator>
+   <dc:creator>Nieulande, van F.A.D.</dc:creator>
+   <dc:subject>42.73 ; 38.22</dc:subject>
+   <dc:subject>Pliocene</dc:subject>
+   <dc:subject>North Sea basin</dc:subject>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Bivalvia</dc:subject>
+   <dc:subject>Mytilidae</dc:subject>
+   <dc:description>Mytilus antiquorum J. Sowerby, 1821, is recorded from the Coralline Crag Formation of East Anglia (UK) and the Lillo Formation (Oorderen, Kruisschans and Merksem members) of the Antwerp area (Belgium). The species is diagnosed on the basis of newly collected material and differentiated from modern European mussel species. The presence of M. antiquorum in the southern North Sea Basin is restricted to the Middle (Piacenzian) and early Late Pliocene (Gelasian). A possible occurrence of the species in the latest Pliocene of northern Greenland is discussed. A second Middle- Late Pliocene North Sea Basin species, tentatively referred to as M. edulis forma giganteus Wood, 1874, is diagnosed and discussed. The systematic status of this species remains unsolved. In the Late Pliocene, a third mussel species occurs in the area, tentatively identified as Mytilus trossulus Gould, 1850.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:235200</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 73 - 81</dcterms:extent>
+   <dcterms:isPartOf>Mytilus antiquorum J. Sowerby, 1821 and other Pliocene mussels (Mollusca, Bivalvia) from the Southern North Sea Basin (URN:ISSN:0165-280X) (Volume 37) (Issue 3-4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/235200.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/54003</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/235200</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

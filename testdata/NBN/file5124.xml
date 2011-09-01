@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the subfamily Macrocentrinae Foerster (Hymenoptera: Braconidae) from the Palaearctic region</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera; Braconidae; Macrocentrinae; Austrozele; Aulacocentrum; Macrocentrus; Rectizele gen. nov.; Palaearctic; Europe; Holarctic; distribution; keys; biology.</dc:subject>
+   <dc:description>Six new species of the genus Austrozele Roman, one new genus (Rectizele; type species: R. parki spec. nov. from Korea), and eight species of the genus Macrocentrus Curtis are described and illustrated. Keys to the Holarctic genera and to the Palaearctic species are added. New combinations are: Dolichozele gravitarsis (Muesebeck, 1938); Hymenochaonia delicata (Cresson, 1872). The following new synonyms are proposed: Paniscozele sumatrana Enderlein, 1920, and Palinzele oceanica Brues, 1922, with Austrozele longipes (Holmgren, 1868); Plectobracon testaceus Brèthes, 1927, with Dolichozele koebeli Viereck, 1911; Eubadizon dubius Wesmael, 1835, Macrocentrus affinis Hedwig, 1961, and M. affiniqades Shenefelt, 1969, with M. collaris (Spinola, 1808); Macrocentrus bicoloripes van Achterberg, 1982, with M. hungaricus Marshall, 1893; Helcon intricator Ratzeburg, 1852, with M. resinellae (Linnaeus, 1758); Macrocentrus cordanus Papp, 1989, with M. spilotus van Achterbeg &amp; Belokobylskij, 1987; Paniscozele Enderlein and Laevis Sharma, 1982, with Austrozele Roman, 1910; Pachymerella Enderlein, 1920, with Hymenochaonia Dalla Torre, 1898; Neozele Brues, 1926, and Plectrobracon Brethes, 1927, with Dolichozele Viereck, 1911; Pseudophylacter Fahringer, 1929, with Macrocentrus Curtis, 1833.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317629</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1993</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 105</dcterms:extent>
+   <dcterms:isPartOf>Revision of the subfamily Macrocentrinae Foerster (Hymenoptera: Braconidae) from the Palaearctic region (URN:ISSN:0024-1652) (Volume 286) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317629.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148915</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317629</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

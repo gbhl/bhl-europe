@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Over een te Noordwijk aan Zee aangespoelden Lagenorhynchus albirostris, benevens een lijst van de Cetaceen-soorten, die tot heden aan de Nederlandsche Kust zijn waargenomen</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Oort, van E.D.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Den 8sten Februari 1918 werd bjj Noordwjjk aan Zee een oud voorwerp van Lagenorhynchus albirostris Gray op de kust geworpen. Het werd aangekocht voor de collectie van het Rjjks Museum van Natuurljjke Historie en nog in levenden toestand daarheen gebracht, alwaar de gelegenheid zich voordeed een fraaie, natuurgetrouwe aquarel naar hetleven te laten vervaardigen. Deze soort behoort tot de groote zeldzaamheden aan onze kust. Het is een volwassen ♂ dier van 2,75 m. totaallengte en wegende 275 kg. De borstvinnen zjjn 47 cm. lang, de staartvin is 72 cm. breed en de rugvin 35 cm. hoog. Op den buik liggende is de hoogte van het dier tot aan de punt van de rugvin 90 cm. en de grootste breedte van het lichaam, een weinig voor de rugvin, 52 cm. De afstand van het spuitgat tot aan de punt van den bek is 32 cm. en die van het oog tot aan de punt van den bek 31 cm. Het begin van de borstvinnen is 49 cm. van de punt van den bek verwjjderd en dat van de rugvin, in rechte ljjn gemeten, 105 cm. De spleetvormige anale opening is 3 cm. lang en 86 cm. van het uiteinde van den staart verwjjderd; de 25 cm. lange genitaalspleet ligt 22 cm. voor de anale opening en 25 cm. voor de genitaalspleet ligt de navel, die 117 cm. van de punt van de onderkaak verwjjderd is. De kleur is aan de bovenzjjde donker leizwart, met 2 geelachtig grjjze vlekken aan de zjjden van het lichaam en een geelachtig grjjze vlek achter de rugvin. De onderzjjde is tot achter den anus wit, aan de zjjden door een violet grauwe kleur in het zwart der bovendeelen overgaande. De staart is geheel zwart en voor den wortel bevindt zich aan</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318621</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1918</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 54 - 62</dcterms:extent>
+   <dcterms:isPartOf>Over een te Noordwijk aan Zee aangespoelden Lagenorhynchus albirostris, benevens een lijst van de Cetaceen-soorten, die tot heden aan de Nederlandsche Kust zijn waargenomen (URN:ISSN:0024-0672) (Volume 4) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318621.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149907</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318621</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

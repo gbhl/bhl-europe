@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Chromodoris magnifica (Quoy &amp; Gaimard, 1832), a new nudibranch host for the shrimp Periclimenes imperator Bruce, 1967 (Pontoniinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Fransen C.H.J.M.</dc:creator>
+   <dc:creator>Goud J.</dc:creator>
+   <dc:subject>42.73 ; 42.74</dc:subject>
+   <dc:subject>Crustacea; Decapoda; Caridea; Pontoniinae; Periclimenes imperator; Mollusca; Nudibranchia;</dc:subject>
+   <dc:description>During the NNM/Maluku Expedition 1996, in the framework of the NNM Fauna Malesiana Marine Program, a shrimp belonging to the species Periclimenes imperator Bruce, 1967, was found on a nudibranch while diving at 20 m depth in Seri Bay, on the south coast of Ambon. Periclimens imperator has been recorded throughout the tropical Indo-West Pacific, from East Africa and the Red Sea to Hawaii, from nudibranch and holothurian hosts. The nudibranch was identified as Chromodorus magnifica (Quoy &amp; Gaimard, 1832) (see Rudman, 1982: 216-219, figs. 17A, B, 18, 19). The association with Chromodorus magnifica is recorded here for the first time.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:215267</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 273 - 283</dcterms:extent>
+   <dcterms:isPartOf>Chromodoris magnifica (Quoy &amp; Gaimard, 1832), a new nudibranch host for the shrimp Periclimenes imperator Bruce, 1967 (Pontoniinae) (URN:ISSN:00240672) (Volume 73, 12-33)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/215267.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43669</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/215267</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of a new frog of the genus Hyla from Suriname</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Goin C.J.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>While in Suriname during June 1964, I had the opportunity of collecting a series of a species of Hyla that seems to be undescribed. It seems appropriate that this species be known as Hyla boesemani sp. nov. (fig. 1) Diagnosis. — A small Hyla with vomerine tooth patches close together or contiguous; with just a trace of web between the fingers; fourth toe webbed to the base of the penultimate phalanx; a small but well-developed patagium; a very distinct skin fold across chest. It has a dorsal pattern of scattered light spots, a distinct, narrow, postocular dark stripe, and lacks a pattern on the thigh although the latter has a small amount of uniformly distributed pigment present. This species is perhaps most easily confused with the members of the Hyla leucophyllata-group because of its pale, unpatterned thighs. It differs from these, though, in the fact that its thighs are gray rather than pink in life and in that in preservative the thigh, although without a pattern, is covered with a rather uniform gray pigmentation rather than being pigmentless as are those of the members of the leucophyllata-group. Holotype. — Rijksmuseum van Natuurlijke Historie 12601, adult male, collected near Zanderij, Suriname District, Suriname, on June 16, 1964, by Coleman J. Goin and D. C. Geijskes. Paratypes. — Fourteen, all adult males, as follows: Rijksmuseum van Natuurlijke Historie (RMNH) 12602, 12603; Florida State Museum 22367; and Coleman J. Goin collection (CJG) 2408, 2409, 2414; from Zanderij, Suriname Distict, Suriname. American Museum of Natural History A75555; British Museum (Natural History) 1966.26; Carnegie Museum 41595; Mu-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318703</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 229 - 232</dcterms:extent>
+   <dcterms:isPartOf>Description of a new frog of the genus Hyla from Suriname (URN:ISSN:0024-0672) (Volume 41) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318703.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149989</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318703</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

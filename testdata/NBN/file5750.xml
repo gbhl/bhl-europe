@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Additions to the knowledge of the Pterophoridae (Lepidoptera) of the Galapagos archipelago, Ecuador, with descriptions of two new species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Landry B.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Lepidoptera; Pterophoridae; Galápagos Islands; new species; new distribution records; new hostplant records</dc:subject>
+   <dc:description>Two new species of Pterophoridae (Platyptilia vilema spec. nov. and Stenoptilodes gielisi spec, nov.) are described from the Galápagos Islands. Exelastis pumilio (Zeller) is reported from the archipelago for the first time. Seven hostplant records (six of them new) are given for five of the 15 species now found in the Galápagos. Twenty-three new island records are given for species already mentioned from the archipelago. Se describen dos especies nuevas de Pterophoridae (PlatypHlia vilema spec. nov. y Stenoptilodes gielisi spec. nov.) para las islas Galápagos. Exelastis pumilio (Zeller) se cita por primera vez para el archipiélago. Se dan siete registros de plantas hospederas, de las cuales seis son nuevos, para cinco de las 15 especies conocidas. Se presentan 23 nuevos registros de distribution dentro del archipiélago, por especies previamente mencionadas.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318255</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1993</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 473 - 485</dcterms:extent>
+   <dcterms:isPartOf>Additions to the knowledge of the Pterophoridae (Lepidoptera) of the Galapagos archipelago, Ecuador, with descriptions of two new species (URN:ISSN:0024-0672) (Volume 67) (Issue 34)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318255.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149541</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318255</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

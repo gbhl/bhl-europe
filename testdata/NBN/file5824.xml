@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Concise survey of localities and collection numbers of zoological and botanical specimens, collected by the Netherlands biological expedition to Turkey 1959</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>[Anonymous]</dc:creator>
+   <dc:subject>Zoögeografie, zoö-ecologie</dc:subject>
+   <dc:description>I. INTRODUCTION In the spring of 1959 E. Hennipman, P. Nijhoff, C. Swennen, A. S. Tulp, W. J. M. Vader and W. J. J. O. de Wilde made a biological collecting expedition to Turkey. The record of this journey of the "Nederlandse Biologische Expeditie Turkije 1959" appeared in "De Levende Natuur" vol. 64, supplement to no. 5 (1961). Here follows a condensed description of the localities where material was collected as well as a list of collection numbers of the zoological and botanical specimens. The route followed by the expedition is indicated on map 1, on which are also indicated the areas shown in the more detailed maps 2, 3, 4 and 5. Since, on the one hand, geographical names in Turkey are subject to alterations and on the other certain names are used several times for quite different places, the numerous topographical synonyms and homonyms repeatedly cause confusion in literature. That is why all geographical names occurring in this contribution are fixed by means of the maps. All data are taken from the maps 1 : 200,000 of the Turkish Ordnance Survey. The complete zoological collection is now in the Rijksmuseum van Natuurlijke Historie at Leiden. Of the botanical collection, the specimens of which are labelled: "Flora Turcomanniae Asiaticae, iter Leydense 1959", the first set, containing among other things all unique specimens, is now in the Rijksherbarium in Leiden. Duplicate sets were sent to the Laboratorium voor Plantensystematiek en -geografie at Wageningen, the Royal Botanic Gardens at Kew, the Botanisches Museum in Berlin, the Botanisch Museum en Herbarium at Utrecht and the Botanik Enstitüsü in Ankara.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318329</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 129 - 151</dcterms:extent>
+   <dcterms:isPartOf>Concise survey of localities and collection numbers of zoological and botanical specimens, collected by the Netherlands biological expedition to Turkey 1959 (URN:ISSN:0024-0672) (Volume 38) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318329.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149615</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318329</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

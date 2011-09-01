@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carinthia II 126_46 (1936)</dc:title>
+   <dc:creator>Glantschnig  Thomas, Heritsch  Haymo, Hölzel  Emil, Kieslinger  Alois, Klimsch  Odo J.G., Lex  Franz, Menninger von Lerchental  Albert, Paschinger  Herbert, Paschinger  Viktor, Pehr  Franz, Puschnig  Roman, Treven  Karl, Werner  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Alois Kieslinger: Die Grünschiefer von Mittelkärnten als Baustein (Mit 5 Abbildungen)- Die Geschichte einer Gesteinsmode     1-   10. Haymo Heritsch: Ergänzung zur Abhandlung: "Barytkristalle des Hüttenberger Erzberges (Kärnten)" (1)    10-   12. Herbert Paschinger: Toteislandschaften in Kärnten    12-   16. Herbert Paschinger: Asymmetrische Flußgebiete und Talquerschnitte in Kärnten    16-   21. Albert Menninger von Lerchental: Der Pressegger See in medizinisch-klimatischer Hinsicht (Mit einer Klimatafel als Beilage)    21-   26. Karl Treven: Das Witterungsjahr 1935 an der Wetterwarte Klagenfurt, Landesmuseum    26-   28. Franz Pehr: Floristisches vom Standorte der Frühlingslichtblume (Bulbocodium vernum L.) in Kärnten    28-   36. Thomas Glantschnig: Beitrag zur Flora des oberen Drautales    36-   38. Franz Werner: Beiträge zur Kenntnis der Tierwelt der Umgebung von Hermagor    38-   47. Emil Hölzel: II. Nachtrag zum Verzeichnis der bisher in Kärnten beobachteten Käfer    47-   56. Odo J.G. Klimsch: Vogelkundlichen Beobachtungen um Klagenfurt    56-   58. Viktor Paschinger: Erstrebtes und Erreichtes im Kärnner Naturschutz    58-   66. Franz Lex: Neue Arbeiten geologischen und geographischen Inhaltes über den nordwestlichen Teil Kärntens    66-   78. Roman Puschnig: Bericht des Vereines "Naturkundliches Landesmuseum für Kärnten" über das Vereinsjahr 1935    79-   84</dc:description>
+   <dc:date>1936</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26118.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26118.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26118</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Foraminifera of the Saba Bank Expedition, 1972 (Cicar Cruises 34, 35)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hofker J.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:description>INTRODUCTION Bottom samples obtained by means of a Van Veen grab during the 1972 Saba Bank Expedition (CICAR cruises 34 and 35) appeared to comprise many samples with Foraminifera. This material was kindly put at my disposal by Dr. D. van Harten of the Geological Institute of the University of Amsterdam, where the material had been deposited. Complementary to this, a large amount of samples from many stations of the Saba Bank area were obtained from the residues in containers with larger material stored in the Rijksmuseum van Natuurlijke Historie at Leiden, but many of these residues contained only few Foraminifera. Dr. W. Vervoort of the Leiden Museum asked me to identify all the Foraminifera from both collections. As a result 1360 cardboard slides could be added to the collection of Caribbean Foraminifera in the Rijksmuseum van Natuurlijke Historie. Dr. D. van Harten, Dr. W. Vervoort, and Messrs. J. C. den Hartog and M. Slierings are kindly thanked for their help and advise. As the author already described numerous species from the Caribbean region (Hofker, 1956, 1964, 1969, 1971, 1972, 1976), he will only describe here some of the species found in so far as they are new or were imperfectly known. THE SABA BANK The Saba Bank (fig. 1) seems to be a submerged island to the south-east of the island of Saba; the sea-floor between Saba and the Bank is rather deep, and the submerged island seems not to have had any connection with Saba. Like the other islands around the Bank, both are of volcanic origin. The platform of the bank itself, found between 17°12'N to 17°45'N and</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317578</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 73</dcterms:extent>
+   <dcterms:isPartOf>The Foraminifera of the Saba Bank Expedition, 1972 (Cicar Cruises 34, 35) (URN:ISSN:0024-1652) (Volume 177) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317578.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148864</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317578</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

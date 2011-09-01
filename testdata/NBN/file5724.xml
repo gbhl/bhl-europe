@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Les Conidae du Surinam</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mol, van J.-J.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>RÉSUMÉ Les prospections des navires océanographiques Snellius et Luymes au large des côtes du Surinam révèlent l'existence de sept espèces de Conidae. Parmi celles-ci une espèce, Conus guyanensis spec. nov., semble endémique à cette région. Six espèces (Conus centurio, C. austini, C. daucus, C. jaspideus, C. ermineus et C. villepiniï) sont caractéristiques de la faune Caraïbe, elies se retrouvent jusqu'au Brésil. INTRODUCTION Le matériel récolté au cours des dragages méthodiques des navires océanographiques Snellius (côtes du Surinam, OCPS 1966) et Luymes (côtes du Surinam, OCPC 1969 et Guyana Shelf Exp. 1970) comble une lacune importante dans les recherches faunistiques du continent Sud Américain. En effet la faune malacologique de la côte Nord de l'Amérique du Sud constitue un domaine encore pratiquement inexploré. Or la présente étude, quoique restreinte à une seule famille de mollusques, fait ressortir une certaine endémicité de la faune malacologique dont les causes demeurent obscures. En effet cette brève révision fait apparaître l'existence d'une espèce qui paraît endémique à cette région; comme semble le prouver une étude, actuellement en cours, du très riche matériel récolté par le Pillsbury (Université de Miami) tout au long de la côte depuis Panama jusqu'à la Guyane française. Les espèces recueillies au cours de la campagne du Snellius et du Luymes semblent toutes caractéristiques des fonds sableux ou sablo-vaseux. Les espèces affectionnant principalement les récifs madréporiques, ou du moins les substrats rocheux, en sont absentes. DESCRIPTIONS Conus guyanensis spec. nov. (fig. 1, pl. 1 fig. 3, 4, pl. 2 fig. 10)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318229</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 261 - 268</dcterms:extent>
+   <dcterms:isPartOf>Les Conidae du Surinam (URN:ISSN:0024-0672) (Volume 46) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318229.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149515</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318229</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

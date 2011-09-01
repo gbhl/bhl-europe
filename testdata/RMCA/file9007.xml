@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Grand gibier et terres inconnues : autour des grands lacs de l'Afrique Centrale, le Mont Elgon</dc:title>
+   <dc:publisher>Plon (xx Paris)</dc:publisher>
+   <dc:contributor>de Bary, Maxime (Author)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>5cd65be3-6747-4544-bc1d-2e0ce74896c1</dc:identifier>
+   <dc:language>fre</dc:language>
+   <dcterms:issued>1910</dcterms:issued>
+   <dcterms:extent>VIII, 341 p.: 86 grav.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/De_Bary_Grand_gibier/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/De_Bary_Grand_gibier</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RMCA/5CD65BE367474544BC1D2E0CE74896C1</europeana:isShownAt>
+<europeana:dataProvider>Royal Museum for Central Africa</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

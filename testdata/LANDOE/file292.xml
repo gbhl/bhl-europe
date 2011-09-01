@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>ÖKO.L Zeitschrift für Ökologie, Natur- und Umweltschutz 1988_3_4 (1988)</dc:title>
+   <dc:creator>Dietzen  Wolfgang, Hamminger  Franz, Kollar  Hans Peter, Maier  Franz, Niederleitner  Heinz, Nouak  Andrea, Nouak  Helga, Öko L. Redaktion  Öko.L Redaktion, Pfitzner  Gerhard, Scheuchenpflug  Anton, Schremmer  Friedrich (Fritz), Strauch  Michael</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerhard Pfitzner: Zehn Jahre Naturschutzarbeit der "Naturkundlichen Station" Alharting- Zwischenbilanz und Perspektiven: Teil 1     3-   12. Michael Strauch: Seltener Pflanzenreichtum in den Auwäldern des unteren Trauntales    13-   19. Hans Peter Kollar: Steilwände- Zentren faunistischer Artenvielfalt    20-   26. Öko.L Redaktion Öko L. Redaktion: Buchtips: Naturschutz, Ökologie, Naturführer    26. Friedrich (Fritz) Schremmer: Von Brennesseln und Schmetterlingen    27-   33. Anton Scheuchenpflug: Die Bayrische Au bei Aigen- ein "entomologisches Abenteuer"    33-   37. Heinz Niederleitner: Gebt den Schmetterlingen eine Chance zum Überleben!    38-   43. Wolfgang Dietzen: Igelschutz- aber richtig!    43-   45. Öko.L Redaktion Öko L. Redaktion: Buchtips: Umweltbericht, Umweltpolitk, Bestimmungsbuch, Gesundheit    45. Franz Maier: Ökozellen und Naturlandschaften Grünburgs- ein Beitrag zur Biotopkartierung von Oberösterreich    46-   56. Andrea Nouak, Helga Nouak: Ein unbebautes Grundstück wandelt sich zur Naturgarten-Ökozelle    57-   59. Öko.L Redaktion Öko L. Redaktion: Buchtip: Umweltpolitik    59. Franz Hamminger: Erfahrungen u. Beobachtungen bei der Renaturierung eines zerstörten Feuchtbiotops    60-   62. Öko.L Redaktion Öko L. Redaktion: Buchtip: Naturbeschreibung, Umwelterziehung, Geologie, Imkerei, Bodenkunde, Gesundheit, Heilkräuter    62-   64. Öko.L Redaktion Öko L. Redaktion: VHS- Programm    64</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24429.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24429.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24429</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

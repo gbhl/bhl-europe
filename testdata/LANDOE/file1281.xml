@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 123a (1978)</dc:title>
+   <dc:creator>Adlmannseder  Anton, Ardelt  Rudolf, Dimt  Heidelinde, Heinzl  Brigitte, Klaus  Wilhelm, Mayer  Gerald, Ruprechtsberger  Erwin Maria, Schoch  Werner H., Schweingruber  Fritz Hans, Theischinger  Günther, Tovornik  Vlasta, Winkler  Eike-Meinrad, Zach  Otto</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Maria Ruprechtsberger: Reliefverzierte Sigillata aus dem Ennser Museum - Supplement zu P. Karnitsch, die verzierte Sigillata von Lauriacum, FiL 3 (1955).     9-  103. Eike-Meinrad Winkler: Anthropologische Untersuchung von 13 Brandgräbern und einer Erdbestattung aus dem römerzeitlichen Lauriacum (Enns).   105-  120. Vlasta Tovornik: Frühmittelalterliche Gräberfunde von Sierninghofen, Gem. Sierning, Pol. Bezirk Steyr.   121-  143. Heidelinde Dimt: Der Münzfund von Kremsmünster.   145-  157. Brigitte Heinzl: Leonhard Sattler.   159-  194. Rudolf Ardelt: Johann Pauckner, Bauernmöbeltischler zu Reichenau i. M.   195-  208. Wilhelm Klaus: Neue fossile Föhrenreste aus dem Raum von Linz - Zur Stammesgeschichte der Schwarzföhre, Pinus nigra ARN.   209-  222. Werner H. Schoch, Fritz Hans Schweingruber: Hölzer und Samen aus der neolithischen Seeufersiedlung Misling am Attersee.   223-  227. Otto Zach: Plankton des Traunsees.   229-  236. Günther Theischinger: Schnaken (Tipulidae) aus Oberösterreich (I), (Diptera, Nematocera).   237-  268. Anton Adlmannseder: Weitere Trichopterenfunde an Gewässern in Oberösterreich und Salzburg. Ein Beitrag zur Trichopterenfauna Österreichs, mit ergänzenden Beobachtungen.   269-  290. Gerald Mayer: Das Haselhuhn in Oberösterreich.   291-  309. : Besprechungen und Anzeigen.   311-  319</dc:description>
+   <dc:date>1978</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27375.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27375.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27375</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

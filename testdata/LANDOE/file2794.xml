@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 2_4 (1950)</dc:title>
+   <dc:creator>Buschmann  Adolfine, Gilli  Alexander, Härtel  Otto, Helige  Hedwig, Janchen  Erwin Emil Alfred, Kenda  Griseldis, Mairold  Friedl, Meissner  Ruth, Napp-Zinn  Klaus, Rechinger  Karl Heinz, Weber  Friedl, Weber  Hans, Widder  Felix Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Alexander Gilli: Die Phänologie des Salicornietum herbaceae an der Nordsee   247-  259. Klaus Napp-Zinn: Über ein zwangstordiertes Exemplar von Dianthus barbatus.   260-  266. Erwin Emil Alfred Janchen: Die sogenannte Schildform der jungen Staubgefäße.   267-  270. Friedl Mairold, Friedl Weber: Matricaria Chamomilla durch Colchizinierung ohne Strahlenblüten.   271-  275. Adolfine Buschmann: Die marakonisischen Deschampsia-Arten.   276-  287. Griseldis Kenda: Anthozyanstaub in der Antherenepidermis von Papaver Rhoeas.   288-  290. Hans Weber: Über den morphologischen Wert der Blumenblätter.   291-  298. Hedwig Helige, Friedl Weber: Stomata-Zahl vergrünter Hydrangea-Kelchblätter.   299-  301. Erwin Emil Alfred Janchen: Beiträge zur Benennung, Verbreitung und Anordnung der Farn- und Blütenpflanzen Österreichs, II.   302-  315. Ruth Meissner: Die Bestimmung von Glycerin in pflanzlichem Material.   316-  318. Otto Härtel, Karl Heinz Rechinger, Friedl Weber, Felix Josef Widder: Recensiones.   319-  330</dc:description>
+   <dc:date>1950</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30066.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30066.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30066</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

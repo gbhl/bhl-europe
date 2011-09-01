@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift des Oesterreichischen Entomologischen-Vereins, Wien. Fortgesetzt: Zeitschrift des Wiener Entomologen-Vereins. 9 (1924)</dc:title>
+   <dc:creator>Binder  Adolf, Bubacek  Otto, Eder  Richard, Erfurth  Paul, Gornik  Friedrich, Gschwandner  Robert, Habanec  Ludwig, Hoffmann  Emil, Kitt  Moritz, Klimesch  Josef, Lekic  Paul, Müller  Leopold, Reisser  Hans, Rischka  Hans, Ronnicke  Paul, Schawerda  Karl, Schultz  Victor G. M., Sheljuzhko  Leo Andrejewitsch</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Paul Ronnicke: Zur bryoniae-Frage.     5-    8. Moritz Kitt: Colias edusa F.     8-   20. Ludwig Habanec: Interessantes Ergebnis einer Zucht von Colias edusa F. ab. helice Hb. aus dem Ei.    20-   21. Emil Hoffmann: Lepidopterologische Sammelergebnisse aus Salzburg. Über Parn. apollo L. und mnemosyne L. sowie über Col. palaeno L.    21-   23. Victor G. M. Schultz: Die ersten Stände von Hydrilla Kitti Rbl. Fortsetzung folgt.    26-   29. Emil Hoffmann: Lepidopterologische Sammelergebnisse aus Salzburg. Über Parn. apollo L. und mnemosyne L. sowie über Col. palaeno L. Fortsetzung folgt.    32-   33. Victor G. M. Schultz: Die ersten Stände von Hydrilla Kitti Rbl. Schluss.    35-   37. Leo Andrejewitsch Sheljuzhko: Eine verkannte Noctuide (Erastria umbrivaga Krul.).    38-   39. Emil Hoffmann: Lepidopterologische Sammelergebnisse aus Salzburg. Über Parn. apollo L. und mnemosyne L. sowie über Col. palaeno L. Schluss.    39-   41. Paul Lekic: Lycaena bellargus ab. Flavomaculata.    42. Friedrich Gornik: Über unseren alpinen Pieris napi.    45-   49. Paul Erfurth: Zwei für Niederösterreich neue Micra-Formen.    49-   52. Leo Andrejewitsch Sheljuzhko: Neue Parnassius-Formen. Fortsetzung folgt.    57-   60. Hans Reisser: Eine neue Form von Parnassius mnemosyne L.    60-   63. Adolf Binder: Lepidopterologisches aus Böhmen. Fortsetzung folgt.    63-   65. Leo Andrejewitsch Sheljuzhko: Neue Parnassius-Formen. Schluss.    67-   71. Adolf Binder: Lepidopterologisches aus Böhmen. Fortsetzung folgt.    71-   73. Adolf Binder: Lepidopterologisches aus Böhmen. Schluss.    77-   80. Robert Gschwandner: Pergesa elpenor L. ab. Scheiderbaueri, ab.nov.    87. Karl Schawerda: Gnophos sheljuzhkoi sp. nova.    87-   90. Leopold Müller: Entomologisches aus Oberösterreich. Fortsetzung folgt.    90-   93. Hans Rischka: Beobachtungen an Acherontia atropos.    98-  100. Josef Klimesch: Interessante Ergebnisse einer Eucosmia certata Eizucht.   101-  103. Richard Eder: Häufig oder selten?   107-  109. Leopold Müller: Entomologisches aus Oberösterreich. Fortsetzung folgt.   109-  112. Otto Bubacek: Aberrative Schmetterlingsformen. (Mit Abbildung).   113. : Entomologisches aus Oberösterreich.</dc:description>
+   <dc:date>1924</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24622.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24622.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24622</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

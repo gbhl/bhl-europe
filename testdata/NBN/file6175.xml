@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Two new species of Scyllarid lobsters (Crustacea Decapoda, Palinuridea) from Australia and the Kermadec Islands, New Zealand</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>During the preparation of a revision of the family Scyllaridae, two species from Australian and New Zealand waters were received that proved to be new to science. One belongs to the genus Ibacus, the other to Scyllarus. In order to make the names available to other zoologists working with the species, their descriptions are provided herewith. I want to express my sincere thanks to Dr. A. J. Bruce, Director, Heron Island Research Station, Queensland, for the holotype and a paratype of Ibacus brucei new species, with which he provided me. Dr. D. J. G. Griffin, Director, Australian Museum, Sydney, not only allowed me to study the Scyllaridae of his Museum, but also provided me with information on and coloured photographs of additional material of Ibacus brucei seen by him. I am likewise most indebted to Dr. Torben Wolff, Universitetets Zoologiske Museum, Copenhagen, for making material collected by the Galathea Expedition available to me. Furthermore Dr. Griffin graciously allowed me to publish the description of Ibacus brucei, although he also had discovered the species to be new, and he gave permission to publish his coloured photographs. The abbreviation cl. is used for carapace length. AM, stands for Australian Museum; RMNH, for Rijksmuseum van Natuurlijke Historie; and UZM, for Universitetets Zoologiske Museum. Ibacus brucei new species (pls. 1,2) Material examined: Off southern Queensland, 26°31'S 153°43'E; 100-102 fathoms (= 183-187 m) ; 20 July 1968; "Nimbus" Sta.11 ; A. J. Bruce. - 1 male (RMNH). Due east of Point Lookout, North Stradbroke Island, Queensland; 86 fathoms (= 157 m) ; otter trawl; 1 August 1967; commercial vessel "Sadie III"; A. J. Bruce. -</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318680</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 191 - 200</dcterms:extent>
+   <dcterms:isPartOf>Two new species of Scyllarid lobsters (Crustacea Decapoda, Palinuridea) from Australia and the Kermadec Islands, New Zealand (URN:ISSN:0024-0672) (Volume 52) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318680.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149966</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318680</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

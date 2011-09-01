@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Considerations on most Rugosa and the Dividocorallia from de Groot’s (1963) collection</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Fedorowski J.</dc:creator>
+   <dc:subject>38.22 ; 42.79</dc:subject>
+   <dc:subject>Rugosa</dc:subject>
+   <dc:subject>Dividocorallia</dc:subject>
+   <dc:subject>Bashkirian-Moscovian</dc:subject>
+   <dc:subject>Spain</dc:subject>
+   <dc:description>Rugose corals reinvestigated herein constitute the main part of the collection described by de Groot (1963). The taxonomy proposed herein differs in several instances from that accepted originally by de Groot. Some changes, such as Petalaxis for Lithostrotionella and Calophyllum instead of Polycoelia, were already introduced in de Groot’s unpublished catalogue. Others were introduced in order to match the recent advances in rugose coral systematics. Most systematic changes were based on new microstructural, diagenetic and hystero-ontogenetic studies. These are described in detail for individual species and briefly discussed in the concluding considerations. Trabecular microstructure of septa and its diagenetic alteration was documented for most species. Presence of two kinds of intercorallite walls (partition and dividing walls) was documented on the basis of their difference in microstructure. This was especially important for the genus Petalaxis, allowing proof of a distinction between species representing its nominative subgenus and that distinguished by de Groot as Hillia. A new name Degrootia was proposed for Hillia, which is preoccupied by a lepidopteran. Two genera, one new (Arctocorallium gen. nov.), represented by two species, were transferred to the Calyxcorallia (Dividocorallia), the order and subclass not distinguished by de Groot. Both those species were investigated and documented in particular detail, especially their hystero-ontogeny. The restudied material allowed proof of a distinction between the Calyxcorallia and the Rugosa in the insertion of major septa. Also, an uncertain status of minor-like septa that may replace the major septa was demonstrated. Both those determinations are based on the hystero-ontogeny.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214517</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 71 - 311</dcterms:extent>
+   <dcterms:isPartOf>Considerations on most Rugosa and the Dividocorallia from de Groot’s (1963) collection (URN:ISSN:03757587) (Volume 127)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214517.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43235</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214517</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

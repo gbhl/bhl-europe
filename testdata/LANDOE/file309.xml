@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 137 (2000)</dc:title>
+   <dc:creator>Balátová-Tulácková  Emilie, Bartosova  Marie, Fischer  Robert, Hofer  Angelika, Király  Gergely, Maier  Rudolf, Pavlicev  Mihaela, Peiritsch  Julia, Povolny  Dalibor, Punz  Wolfgang, Reimnitz  Regina, Riedl  Birgit, Schratt-Ehrendorfer  Luise, Sieghardt  Helmut, Tröstl  Renate, Waitzbauer  Wolfgang</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Angelika Hofer, Wolfgang Waitzbauer: Beiträge zur Entomofauna des Naturschutzgebietes Eichkogel bei Mödling (Niederösterreich). 1. Ausgewählte Diptera (Insecta) der Trockenrasen     1-   30. Julia Peiritsch: Kotbewohnende Käfer (Coleoptera) des Hundsheimer Berges (östliches Niederösterreich)    31-   44. Julia Peiritsch, Wolfgang Waitzbauer: Auswirkung der Schafbeweidung als Pflegekonzept für Trockenrasen im östlichen Niederösterreich (Hundsheimer Berge)    45-   62. Dalibor Povolny: Beitrag zur Fleischfliegenfauna (Insecta: Diptera, Sarcophagidae) des Hundsheimer Berges (Niederösterreich)    63-   76. Birgit Riedl: Bestandsaufnahme ausgewählter Arthropodengruppen eines naturnahen Trockenrasens auf dem Südwesthang des Braunsberges bei Hainburg (Niederösterreich)    77-  125. Luise Schratt-Ehrendorfer: Historischer und aktueller Zustand von Trockenstandorten (= Heißländen) in den Donauauen bei Wien (Lobau).   127-  135. Luise Schratt-Ehrendorfer: Entwicklungstendenzen von Vegetationseinheiten an Sonderstandorten der Donauauen bei Wien (Untere Lobau)   137-  145. Renate Tröstl: Über das Vorkommen von Orcula dolium (DRAPARNAUD,1801) im nordöstlichsten Teil des Flysch- Wienerwaldes   147-  152. Renate Tröstl: Ökologisch-faunistische Überlegungen zur Problematik der Validität supraspezifischer Einheiten bei Schneckenarten   153-  160. Robert Fischer: Spezielle Waldgesellschaften am Ufer des Traunsees   161-  173. Marie Bartosova, Dalibor Povolny: Schwermetallgehalte bei Fleischfliegen und ihren Wirten in ausgewählten Habitaten Niederösterreichs und Südmährens   175-  204. Emilie Balátová-Tulácková: Molinietalia-Gesellschaften des Landschaftsschutzgebietes Orlické hory (NO-Böhmen).   205-  234. Gergely Király: Neue Ergebnisse der floristischen Forschung im westlichen Grenzgebiet Ungarns.   235-  253. Regina Reimnitz, Helmut Sieghardt, Wolfgang Punz: Vergleichend-anatomische Studien an Pflanzen der Eppaner "Eislöcher".   255-  264. Mihaela Pavlicev, Wolfgang Punz, Rudolf Maier: Ökosystemare Struktur- und Stoffflußanalyse der Stadt Ptuj (Slowenien).   265-  283</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24506.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24506.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24506</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

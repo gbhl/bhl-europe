@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Fish microfossils from Ramsåsa, site E, Scania, southern Sweden (mid Palaeozoic)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Vergoossen J.M.J.</dc:creator>
+   <dc:subject>38.22 ; 42.81</dc:subject>
+   <dc:subject>osteostracans</dc:subject>
+   <dc:subject>anaspids</dc:subject>
+   <dc:subject>thelodonts</dc:subject>
+   <dc:subject>acanthodians</dc:subject>
+   <dc:subject>Whitcliffian</dc:subject>
+   <dc:subject>Sweden</dc:subject>
+   <dc:description>Material from three pieces of rock from Ramsåsa, site E, was divided into size fractions 0.106, 0.212, 0.355, 0.425 and 0.5 mm. Larger sizes were absent. The three assemblages were examined and compared with each other, also per fraction, and with residue samples from site E. The latter are proportionately not representative of the faunas of which they must have been part, specimens measuring 0.5 mm or more. The residue labels refer to Ørvig and his student Peyel. The results of the comparison between the assemblages from the rocks and from the residues are hardly complementary. Thelodont scales were obtained almost exclusively from the pieces of rock; acanthodian ‘modified trunk’ scales, spines and jawbones and rare birkeniid remains were restricted to the stored residues, which also yielded a variety of osteostracan (‘hemicyclaspid’ and ‘zenaspid’) armour fragments. A late Ludlow age (within the T. sculptilis biozone) is suggested for the rock samples on the basis of the fish assemblages alone. Since the Ørvig and Peyel residue materials contained T. sculptilis scales, they are not older than the T. sculptilis zone (Upper Ludlow- Lower Pridoli).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214516</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 70</dcterms:extent>
+   <dcterms:isPartOf>Fish microfossils from Ramsåsa, site E, Scania, southern Sweden (mid Palaeozoic) (URN:ISSN:03757587) (Volume 127)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214516.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43234</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214516</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

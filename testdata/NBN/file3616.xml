@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Non-indigenous marine and estuarine species in The Netherlands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wolff W.J.</dc:creator>
+   <dc:subject>Mariene biologie</dc:subject>
+   <dc:subject>non-indigenous species</dc:subject>
+   <dc:subject>introduced species</dc:subject>
+   <dc:subject>exotic species</dc:subject>
+   <dc:subject>alien species</dc:subject>
+   <dc:subject>invasive species</dc:subject>
+   <dc:subject>The Netherlands</dc:subject>
+   <dc:subject>North Sea</dc:subject>
+   <dc:subject>Wadden Sea</dc:subject>
+   <dc:subject>Oosterschelde estuary</dc:subject>
+   <dc:subject>estuaries</dc:subject>
+   <dc:description>An overview is presented of non-indigenous marine and estuarine plant and animal species recorded from The Netherlands. In this list both exotic species from outside NW Europe and non-indigenous species from elsewhere in NW Europe are enumerated. Species that have been suggested to be non-indigenous in The Netherlands but for which insufficient evidence could be found are discussed shortly as well. The list is based mainly on literature data supplemented by own observations of the author. At least 99 plant and animal species have been introduced from elsewhere in the world. Another 13 species have been introduced from other parts of NW Europe. The third category of dubious non-indigenous species enumerates 37 species. The list is preceded by an introduction describing the history of Dutch research on introduced species, the origin of the marine and estuarine flora and fauna of The Netherlands, natural and human-induced dispersal processes, and a summary of the geographic patterns of introduced species.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210096</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 116</dcterms:extent>
+   <dcterms:isPartOf>Non-indigenous marine and estuarine species in The Netherlands (URN:ISSN:00240672) (Volume 79-1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210096.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41874</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210096</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

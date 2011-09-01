@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Agropyrum junceum (L.) LB., neu für die Flora Finnlands</dc:title>
+   <dc:title>Bericht über die Tagung der fenno-baltischen Pflanzengeographen in Finnland im Juni 1938</dc:title>
+   <dc:title>Ett  bidrag till kännedom om vegetation och flora i Terijoki socken på Karelska näset</dc:title>
+   <dc:title>Centraria nivalis L. (Ach.) funnen i Terijoki</dc:title>
+   <dc:title>Claytonia sibirica L. (Cl. alsinoides Sims.) funnen i Terijoki</dc:title>
+   <dc:title>Cryptogramme crispa återfunnen på Åland</dc:title>
+   <dc:title>Dentalia bulbifera L. i Terijoki</dc:title>
+   <dc:title>Einige neue undgbemerkenswerte Zygnemaceen für Finnland</dc:title>
+   <dc:title>Elymus arenarius f. ramosus Lüderwaldt i Finland</dc:title>
+   <dc:title>Eräitä leutojen syksyjen seurauksia Helsingin seudun kasvillisuudessa (varsinkin ruderaattikasvillisuudessa)</dc:title>
+   <dc:title>En  flytbladsform av Ranunculus sceleratus L. funnen i Pernå</dc:title>
+   <dc:title>Fynd av Mnium Drummondii Bruch &amp; Schimp i Terijoki</dc:title>
+   <dc:title>Förebilderna till Elias Tillandz växtfigurer</dc:title>
+   <dc:title>Förslag berörande kartor, som skulle belysa den bbiologiska fältforskningens intensitet i olika delar av landet</dc:title>
+   <dc:title>Galium saxatile i Terijoki</dc:title>
+   <dc:title>Lamium galeobdolon (L.) Cr. i Finland</dc:title>
+   <dc:title>Luzulz pallescens (Wg) Bess. x sudetica (Wlld) DC funnen i Kuusamo</dc:title>
+   <dc:title>Massenvegetation von Oscillatoriaceen auf Holz in einem Gradierwerk</dc:title>
+   <dc:title>Några anmärkningsvärda Alchemilla-fynd</dc:title>
+   <dc:title>Några anmärkningsvärdare växtfynd</dc:title>
+   <dc:title>Rumex thyrsiflorus Fingerh. funnen i Pernå</dc:title>
+   <dc:title>Societas pro Fauna et Flora Fennica 15.5.1938 - 15.5.1939</dc:title>
+   <dc:title>Über das Vorkommen von Utricularia neglecta Lehm. in Finnland</dc:title>
+   <dc:title>Utricularia neglecta Lehm. i Hitis</dc:title>
+   <dc:title>Die  Vogelberingung in Finnland im Jahre 1937</dc:title>
+   <dc:title>Zur Kenntnis der stehenden Kleingewässern auf den Schäreninseln</dc:title>
+   <dc:title>Zur Kenntnis einer Blütenanomalie bei Barbarea vulgaris R. Br</dc:title>
+   <dc:title>Överflöd av lemlar och sorkar i trakten av Kilpisjärvi, Enontekiö, år 1938</dc:title>
+   <dc:subject>57</dc:subject>
+   <dc:subject>kasvit / keltapeippi / Terijoki</dc:subject>
+   <dc:contributor>Hiitonen, Ilmari.</dc:contributor>
+   <dc:contributor>Häyren, Ernst.</dc:contributor>
+   <dc:contributor>Fagerström, Lars.</dc:contributor>
+   <dc:contributor>Olofsson, Paul.</dc:contributor>
+   <dc:contributor>Cedercreutz, Carl.</dc:contributor>
+   <dc:contributor>Nilsson, Kai.</dc:contributor>
+   <dc:contributor>Lemberg, Bertel.</dc:contributor>
+   <dc:contributor>Skepparnabb, Lilli.</dc:contributor>
+   <dc:contributor>Hustich, Ilmari.</dc:contributor>
+   <dc:contributor>Montell, Justus.</dc:contributor>
+   <dc:contributor>Buch, Hans.</dc:contributor>
+   <dc:contributor>Marklund, Gunnar.</dc:contributor>
+   <dc:contributor>Palmgren, Alvar.</dc:contributor>
+   <dc:contributor>Luther, Hans.</dc:contributor>
+   <dc:contributor>Olsoni, Börje.</dc:contributor>
+   <dc:contributor>Välikangas, Ilmari.</dc:contributor>
+   <dc:contributor>Hytönen, Olavi.</dc:contributor>
+   <dc:contributor>Kuenen, D. J.</dc:contributor>
+   <dc:contributor>Hintikka, T. J.</dc:contributor>
+   <dc:contributor>Nordman, Adolf Fr.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>10ff7fee-c177-4dde-91e2-7dee26e49529</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:language>swe</dc:language>
+   <dc:language>fin</dc:language>
+   <dc:relation>Memoranda Societatis pro fauna et flora Fennica. - -- 0373-6873. - -- 03736873</dc:relation>
+   <dc:relation>Memoranda Societatis pro Fauna et Flora Fennica. -</dc:relation>
+   <dcterms:issued>1939</dcterms:issued>
+   <dcterms:issued>1940</dcterms:issued>
+   <dcterms:spatial>Terijoki</dcterms:spatial>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_15_1938-1939/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_15_1938-1939</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/10FF7FEEC1774DDE91E27DEE26E49529</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

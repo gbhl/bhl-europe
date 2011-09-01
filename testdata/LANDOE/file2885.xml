@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 38_2 (1998)</dc:title>
+   <dc:creator>Abou-Zeid  Hanan, Asthir  B., Backor  Martin, Backorova  Miriam, Barakad  Salah, Basra  A. S., Batic  Franc, Cater  Matjaz, Del Zoppo  Marina, Galleschi  Luciano, Gurusamy  Chinnasamy, Hudak  Jan, Kaur  A., Letz  Roman, Marhold  Karol, Ononis  Antonino, Rajput  Kishore S., Rao  Karumanchi S., Saber  Nabil, Saviozzi  Franco, Schneeweiss  Gerald M., Teppner  Herwig, Thiagarajan  C. P.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Matjaz Cater, Franc Batic: Determination of Seed Vitality by High Frequency Electrophotography.   225-  237. Herwig Teppner: Recensio.   237-  238. Martin Backor, Jan Hudak, Miriam Backorova: Comparison between Growth Responses of Autotrophic and Heterotrophic Populations of Lichen Photobiont Trebouxia irregularis (Chlorophyta) on Cu, Hg and Cd Chlorides Treatment.   239-  250. Kishore S. Rajput, Karumanchi S. Rao: Seasonal Anatomy of Secondary Phloem of Teak (Tectona grandis L. Verbenaceae) Growing in Dry and Moist Deciduous Forests.   251-  258. Chinnasamy Gurusamy, C. P. Thiagarajan: The Pattern of Seed Development and Maturation in Cauliflower (Brassica oleracea L. var. botrytis).   259-  268. Nabil Saber, Hanan Abou-Zeid, Salah Barakad: Effect of Radiation Quality on Phenylalanine Ammonia-Lyase and Pigment Content in the Shoots of Broad Bean (Vicia faba) Seedlings.   269-  279. Herwig Teppner: Recensio.   279-  280. Marina Del Zoppo, Luciano Galleschi, Antonino Ononis, Franco Saviozzi: Salinity and Proteolytic Enzymes in Germinating Seeds of x Haynaldoticum sardoum (Poaceae).   281-  291. Herwig Teppner: Recensio.   292. B. Asthir, A. Kaur, A. S. Basra: Do Phytohormones Influence the Uptake and Metabolism of Sucrose in Spikelets of Wheat?   293-  299. Herwig Teppner: Recensio.   299-  300. Gerald M. Schneeweiss: Saxifraga carpatica (Saxifragaceae) - neu für die Alpen.   301-  305. Herwig Teppner: Recensio.   306. Herwig Teppner: Anthoxanthum maderense spez. nova und A. odoratum (Poaceae-Aveneae) von Madeira und deren Chromosomen-Morphologie.   307-  321. Herwig Teppner: Recensio.   321-  322. Roman Letz, Karol Marhold: Multivariate Morphometric Study of the Sempervivum montanum Group (Crassulaceae) in the West Carpathians.   323-  336</dc:description>
+   <dc:date>1998</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30239.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30239.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30239</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

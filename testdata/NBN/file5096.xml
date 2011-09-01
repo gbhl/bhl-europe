@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Flatidae (Homoptera: Fulgoroidea) of Indonesia, exclusive of Irian Jaya</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Medler J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Flatidae; Indonesia; systematics; distribution.</dc:subject>
+   <dc:description>Taxa of the fulgoroid family Flatidae (Homoptera) occurring in Indonesia exclusive of Irian Jaya are treated. One hundred twenty seven species are recorded under 50 genera. Keys, descriptions, illustrations and collection data are presented. New genera described: Insulume, type species - Insulume minutum Medler; Menora, type species - Menora longmina Medler; Planata, type species - Ormenis taeniata Schmidt; Stenume, type species - Melicharia karnyi Baker; Tormenis, type species - Ormenis ornata Melichar; Walena, type species - Ormenis alba Melichar. New species described: Atracis jangis, Atracis servis, Bythopsyrna ebonfana, Flatomorpha biglypta, Flatomorpha disguisa, Flatomorpha rubrata, Idume decolora, Idume stigma, Insulume minutum, Lecopia waitera, Menora longmina, Neomelichara lucentis, Neomelicharia roseola, Seliza incurva, Staliana bicolis, Staliana bufilis, Walena rostra, Zecheuna azira. New combinations: Daeda funerula (Melichar), ex Farona; Daeda siporensis (Baker), ex Seliza; Flatomorpha fuscomarginata (Melichar), ex Melicharia; Flatomorpha umbrimargo (Walker), ex Paratella; Planata limbata (Distant), Planata maculosa (Distant), ex Paranotus; Planata taeniata (Schmidt), ex Ormenis; Scarpantina rotundata (Melichar), ex Dermoflata; Stenume kirbyi (Baker), ex Melicharia; Tormenis ornata (Melichar), ex Anaya; Walena alba (Melichar), Walena exsarola (Medler), ex Melicharia. Neotype: Flata adscendens Fabricius, ZMUC; Cicada pustulata Donovan, ZMCU. New synonymies (junior synonym followed by senior synonym): Atracis consocia Melichar = Cerfennia tabida (Gerstaecker); Atracis nodosa Gerstaecker = Staliana inaequalis (Walker); Cerynia incurva Melichar = Cerynia albata (Stål); Cicada pustulata Donovan = Neomelicharia cruentata (Fabricius); Colobesthes rectilinea Walker = Nephesa truncaticornis (Spinola); Daeda siporensis (Baker) = Daeda funerula (Melichar); Daksha unicolor Karny = Lawana exaltata (Walker); Dermoflata Melichar = Scarpantina Melichar; Ketumala singapurana Ghauri = Daeda siporensis (Baker); Neomelicharia impunctata Karny = Sanurus flavovenosus Bierman; Neomelicharia lactealis Kirkaldy = Neomelicharia cruentata (Fabricius); Ormenis severa Melichar = Idume niveina (Walker); Phyma griseopunctata Schmidt = Flata guttularis (Walker); Phyma waterstradti Schmidt = Lawana pryeri (Distant); Poeciloptera ocellifera Walker = Neomelicharia sparsa (Fabricius).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317601</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 88</dcterms:extent>
+   <dcterms:isPartOf>Flatidae (Homoptera: Fulgoroidea) of Indonesia, exclusive of Irian Jaya (URN:ISSN:0024-1652) (Volume 324) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317601.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148887</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317601</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

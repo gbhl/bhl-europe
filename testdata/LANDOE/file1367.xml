@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 3_3_4 (1960)</dc:title>
+   <dc:creator>Aschenbrenner  Leopold, Ausobsky  Albert, Bodenstein  G., Carrara  Bruno, Festetics  Antal, Fisler  W., Ganso  Maria, Gauckler  Anton, Grims  Franz, Hable  Erich, Huber  Jakob, Hufnagel  Bernhard, Kepka  Otto, Lischka  Walter, Mayer  Gerald, Peters  Hanns, Psenner  Hans, Rokitansky  Prokop (Lothar) Freiherr von, Triebl  Rudolf, Wruss  Wilhelm</dc:creator>
+   <dc:description>Inhaltsverzeichnis: W. Fisler, Bruno Carrara: Bericht über die Bodensee-Exkursion vom 6. September 1959.    41-   46. G. Bodenstein, Prokop (Lothar) Freiherr von Rokitansky: Ein westliche Heringsmöwe bei Wien.    46-   48. Hanns Peters, Leopold Aschenbrenner: Der Zwergschnäpper (Ficedula parva) zuckt doch mit den Flügeln.    48-   49. Albert Ausobsky: Ein weiterer Fitis-Zilpzalp Mischsänger.    49-   52. Leopold Aschenbrenner: Vogelbeobachtungen an Orten größerer Menschenansammlungen.    52-   53. Jakob Huber: Einige bemerkenswerte Vogelarten auf Zettersfeld (Osttirol).    54-   55. Antal Festetics: Die Amselnester der Wiener Universität.    55-   57. Rudolf Triebl: Brutnachweis der Tafelente (Aythya ferina) für N.Ö.    58. Anton Gauckler, Walter Lischka: Kraniche (Grus grus L.) im Seewinkel (Burgenland).    58-   61. Otto Kepka: Haubenlerche brütet im Zentrum einer Großstatdt.    60. Hanns Peters: Der Girlitz (Serinus serinus) als Bodenbrüter und Nachtsänger.    60. Franz Grims: Eine Lachmöwenkolonie am Innstausee bei Braunau.    61. Franz Grims: Ein Silberreiher am Innstausee bei Braunau.    61. Maria Ganso: Schmarotzerraubmöwen in Österreich.    61-   62. Erich Hable: Ein Brutvorkommen des Zwergtauchers in 1300 m Seehöhe.    62-   63. Albert Ausobsky: Zu: Die Wirtsvögel unseres Kuckucks.    63. Hans Psenner: Über das Verhalten verschiedener Vogelarten bei Erdbeben.    63-   64. Hans Psenner: Das Brutvorkommen des Rötelfalken in Nordtirol.    64. Wilhelm Wruss: Zu: Eigenartige Nahrungsaufnahme der Türkentaube (Streptopelia decaocto).    64-   65. Leopold Aschenbrenner: Tagung der Deutschen Ornithologen Gesellschaft 1960 in Salzburg.    66. Gerald Mayer, Leopold Aschenbrenner: Internationale Wasservogelzählung - Bitte um Mitarbeit.    67. Bernhard Hufnagel: Beringungsbericht der Österreichischen Vogelwarte für die Jahre 1958 und 1959.    69-   71</dc:description>
+   <dc:date>1960</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27461.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27461.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27461</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

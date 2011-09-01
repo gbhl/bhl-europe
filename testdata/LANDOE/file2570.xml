@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 66 (1926)</dc:title>
+   <dc:creator>Adrian  Karl, Anonymus , Brandl  Alice, Erben  Wilhelm, Klein  Herbert, Koblitz  Hans, Martin  Franz, Mayr  Josef Karl, Schönberger  Matthias, Tratz  Paul Eduard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Karl Mayr: Geschichte der salzburgischen Zentralbehörden von der Mitte des 13. bis ans Ende des 16. Jahrhunderts.     1-   62. Matthias Schönberger: "Bis Stegen". Ein Beitrag zur ältesten Geschichte des Pongaus.    63-   80. Karl Adrian: Das Großarler Herodesspiel.    81-   98. Herbert Klein: Das salzburgische Söldnerheer im 14. Jahrhundert.    99-  158. Alice Brandl: Ein Besuch in Ebenezer, der ersten Siedlung der Salzburger Emigranten in Georgia, USA.   159-  168. Paul Eduard Tratz: Bisheriger Verlauf der Einwanderung der Bisamratte (Fiber zibethicus) im Lande Salzburg.   169-  172. Wilhelm Erben: Zum 100. Geburtstag von Theodor Sickel (18. Dezember 1926).   173-  176. Franz Martin: Neues von der heiligen Erentrudis.   177-  181. Hans Koblitz: Funde im Lande Salzburg.   182-  185. Anonymus: Zur salzburgischen Literatur.   186-  192. Anonymus: Gesellschafts-Nachrichten. 1. Mitgliederbewegung.   193. Anonymus: Gesellschafts-Nachrichten. 2. Vorträge.   193-  194. Anonymus: Gesellschafts-Nachrichten. 3. Führungen und Wanderungen.   194. Anonymus: Gesellschafts-Nachrichten. 4. Nekrolog.   194-  195. Anonymus: Gesellschafts-Nachrichten. 5. Vereinsleitung.   195</dc:description>
+   <dc:date>1926</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29081.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29081.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29081</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

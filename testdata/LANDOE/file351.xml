@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Naturkundliches Jahrbuch der Stadt Linz (Linz) 2 (1956)</dc:title>
+   <dc:creator>Baschant  Rudolf, Hamann  Helmut Heinrich Franz, Häusler  Heinrich, Hofmann  Elise, Kerschner  Theodor, Klimesch  Josef, Kloiber  Ämilian, Kloiber  Josef, Koller  Franz, Kusdas  Karl, Mayer  Gerald, Pertlwieser  Hans, Ruttner  Adolf, Wacha  Georg, Werneck  Heinrich Ludwig v., Wettstein  Otto v. Westersheim, Wirthumer  Johann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Elise Hofmann, Heinrich Ludwig v. Werneck: Sammelfrüchte und Getreidebau aus der Bronzezeit zu Traun bei Linz     7-   11. Ämilian Kloiber: Anthropologische Auswertung der Urnenfelderzeitlichen Leichenbrände von Linz-Schörgenhub und St. Martin bei Linz    13-   18. Heinrich Häusler: Ein Stück jüngster Talgeschichte aus der Umgebung von Linz    19-   60. Georg Wacha: Fische und Fischhandel im alten Linz    61-  117. Theodor Kerschner: Der Linzer Markt für Süsswasserfische (insbesondere in seiner letzten Blüte vor dem ersten Weltkriege)   119-  155. Adolf Ruttner: Die Pflanzenwelt des Grossraumes von Linz vor 100 Jahren   157-  220. Otto v. Westersheim Wettstein: Die Lurche und Kriechtiere des Linzer Gebietes und einiger anderer Oberösterreichischer Gegenden   221-  233. Rudolf Baschant: Mein Weg zur "Lieblichen Wissenschaft"   235-  240. Josef Kloiber: Das Vorkommen der Curculioniden im Linzer Raum und in einigen anderen Oberösterreichischen Landesteilen (Ein Beitrag zur Käferfauna Oberösterreich)   241-  292. Johann Wirthumer: Die Calasoma und Carabus-Arten des engeren Linzer Gebietes   293-  298. Johann Wirthumer: Die Gattung Clivina Latr. (Carabidae, Coleoptera) und ihre in der Umgebung von Linz vorkommenden Arten   299-  305. Karl Kusdas: Beitrag zur Kenntnis der Goldwespenfauna (Chrysidae und Cleptidae) Oberösterreichs unter besonderre berücksichtigung des Grossraumes von Linz   307-  326. Helmut Heinrich Franz Hamann, Franz Koller: Die Wildbienen der Linzer Umgebung und ihre Flugpflanzen   327-  361. Josef Klimesch: Beiträge zur Kenntnis der Blattminierenden Insektenlarven des Linzer Gebietes   363-  379. Gerald Mayer: Phänologische Daten einiger Singvögel (Linz-Steyr-Wels)   381-  389. Hans Pertlwieser, Gerald Mayer: Die Vogelwelt des Mündungsgebietes der Traun 2. Teil   391-  398</dc:description>
+   <dc:date>1956</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24581.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24581.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24581</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

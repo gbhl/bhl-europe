@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Views from the other side of the bird: users’ perspectives on bird collections</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Chilton G.</dc:creator>
+   <dc:creator>Fuller E.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>museum collections</dc:subject>
+   <dc:description>Bird collections are an increasingly valuable resource for the scientific and artistic communities. A number of recommendations are made which should facilitate legitimate use of bird collections, and help to justify the continued support of these collections. 1. If staffing limitations hinder the legitimate use of an institution’s collections, this situation should be used as justification for better funding. 2. Online catalogues have a valuable but limited role in facilitating research; directors of institutions must be made aware that such catalogues do not diminish the role of the curatorial staff. 3. All stakeholders must accept their responsibility to prevent further marginalization of museum collections. 4. In many cases the value of having rare artefacts on public display is greater than the risk to those items, and so institutions should consider placing a greater proportion of their most valuable artefacts on display to the public. 5. Institutions should develop and publish guidelines on acceptable uses of their collections and a list of applicable fees if such fees are appropriate. These guidelines should include a description of the procedures involved in applying for access to the collection.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210813</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 131 - 136</dcterms:extent>
+   <dcterms:isPartOf>Views from the other side of the bird: users’ perspectives on bird collections (URN:ISSN:00240672) (Volume 79-3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210813.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42175</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210813</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

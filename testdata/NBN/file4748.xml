@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Reisverslag van de expeditie West Suriname 1971</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Geijskes D.C.</dc:creator>
+   <dc:subject>Geschiedenis van de biologie</dc:subject>
+   <dc:description>1. Inleiding. 2. Verloop van de expeditie. 3. De voorbereidingen en de reis naar de Nickerie rivier. 4. De tocht op de Nickerie rivier (27 jan.-22 febr.). 5. De tocht op de Maratakka rivier (25 febr.-9 mrt). 6. Het verblijf te Wageningen en in Nw-Nickerie, met het onderzoek van de Nannikreek (10-21 mrt.). 7. De tocht op de Corantijn, in de Kaboerikreek en in de Kabalebo rivier (22 mrt.12 april). 8. De terugtocht. 1. INLEIDING De zoölogische expeditie naar het Westen van Suriname in het voorjaar van 1971 uitgevoerd, werd door het Rijksmuseum van Natuurlijke Historie te Leiden georganiseerd en door de Stichting Wotro in Den Haag gesubsidieerd*). Zij werd gehouden van 19 januari tot eind april 1971. Van het museum te Leiden namen aan de tocht deel de leden: Dr. D. C. Geijskes (leider en entomoloog), Dr. M. Boeseman (ichthyoloog) en P. Staffeleu (technisch assistent A) voor het verzamelen en prepareren van zoogdieren en vogels. Te Paramaribo sloot zich daarbij aan D. G. Reeder, onderopzichter bij 's Lands Bosbeheer, die de herpetologie (Amphibia, Reptilia) voor zijn rekening nam en ook botanisch verzamelde. Het doel van de expeditie was het verzamelen van dieren in het gebied van de Nickerie rivier, de Maratakka, het Nannibekken en een gedeelte van de Beneden Corantijn, inclusief de Kaboerikreek en de Kabalebo rivier tot aan de Avanavero-vallen. De aanleiding hiertoe was, dat ten eerste over dit</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317252</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 41</dcterms:extent>
+   <dcterms:isPartOf>Reisverslag van de expeditie West Suriname 1971 (URN:ISSN:0459-1801) (Volume 15) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317252.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148538</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317252</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

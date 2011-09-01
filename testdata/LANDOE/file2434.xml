@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Monografien Landschaften und Ökologie MLO3 (2003)</dc:title>
+   <dc:creator>Anonymus , Bouvier  Friedrich, Eichberger  Klaus, Fedl  Agnes, Gepp  Johannes, Hlawka  Gerd, Josel  Franz, Kleinegger  Andrea, Nagl  Siegfried, Prügger  Gertraud, Rosenfellner  Gabriele, Rosmann  Heinz, Ster  Thomas, Wentner  Astrid M., Wolfmayr  Andrea</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Siegfried Nagl: Vorwort.    12-   12. Gertraud Prügger: Die Idee.    14-   14. Gerd Hlawka: Grünraum als Lebenselixier.    18-   25. Friedrich Bouvier: Graz - die gefährdete Gartenstadt.    26-   29. Thomas Ster: Überlegungen zur Geschichte der Vorgärten.    30-   39. Astrid M. Wentner: Kunsttopographische Impressionen. Vorgärten des 19. Jahrhunderts: Vorhandenes - Entschwundenes.    40-   49. Andrea Kleinegger: Unterschiedliche Erscheinungsbilder. Klassische Erscheinungsbilder. Abgewandelte Erscheinungsbilder.    56-   61. Johannes Gepp: Tierleben in städtischen Vorgärten.    62-   67. Agnes Fedl: Bepflanzung. Bedeutung der fachlichen Beratung zur individuellen Gestaltung. Checkliste.    68-   79. Andrea Kleinegger: Versiegelung.    80-   85. Franz Josel: Zur Sache.    88-   89. Gertraud Prügger: Ausgangslage.    90-   91. Andrea Kleinegger: Umsetzung. Öffentlichkeitsarbeit. Fotodokumentation. Revitalisierungen. Erfolge.    92-   97. Klaus Eichberger: Bezirksrat Jakomini: Mehr Wohn- und Lebensqualität.    98-  101. Heinz Rosmann: Vorgärten aus stadtplanerischer Sicht.   102-  107. Gabriele Rosenfellner: Schulprojekt "Vorgärten im Wandel der Jahreszeiten".   108-  111. Gertraud Prügger: 1999 bis 2003 - ein Resümee.   112-  115. Gertraud Prügger: Ein Vorgärtlein - das kleine Paradies für meinen Großvater.   118-  123. Andrea Wolfmayr: Gedanklicher Streifzug.   124-  129. Anonymus: Weiterführende Literatur.   130. Anonymus: Die Autoren.   131</dc:description>
+   <dc:date>2003</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28784.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28784.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28784</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

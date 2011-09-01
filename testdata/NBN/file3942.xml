@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Alfred Russel Wallace’s record of his consignments to Samuel Stevens, 1854-1861</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Baker D.B.</dc:creator>
+   <dc:subject>Natuurlijke historie</dc:subject>
+   <dc:subject>A.R. Wallace</dc:subject>
+   <dc:subject>C. Allen</dc:subject>
+   <dc:subject>S. Stevens</dc:subject>
+   <dc:subject>Malaysia</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:subject>biography</dc:subject>
+   <dc:subject>biogeography</dc:subject>
+   <dc:subject>biodiversity</dc:subject>
+   <dc:description>An annotated facsimile of those pages of Alfred Russel Wallace’s notebook recording his consignments from the Malay Archipelago to his London agent, Samuel Stevens, is provided. Records of individual consignments are linked with the stages of Wallace’s and Charles Allen’s itineraries to which they relate and are amplified from data provided by Wallace elsewhere; wherever possible, dates and places of the despatch of consignments and of the dates of their receipt in London are noted; and the dates of material becoming available for study are established, chiefly from British Museum accessions registers. It is intended that this should provide readier access to scattered collection data and should in particular assist in determining what specimens may properly be regarded as types or syntypes of the many taxa described by numerous contemporary authors from Wallace’s material.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217448</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2001</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 251 - 341</dcterms:extent>
+   <dcterms:isPartOf>Alfred Russel Wallace’s record of his consignments to Samuel Stevens, 1854-1861 (URN:ISSN:00240672) (Volume 75, 16-25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217448.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45070</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217448</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

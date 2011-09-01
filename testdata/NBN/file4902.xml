@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ultramafic xenoliths from alkaline basalts of Finkenberg (Siebengebirge, West Germany)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Moreva-Perekalina T.V.</dc:creator>
+   <dc:subject>Stollingsgesteenten</dc:subject>
+   <dc:description>The mantle-derived xenoliths from alkali-basalts of Finkenberg (West Germany) belong mostly to the lherzolite and wehrlite series. The members of the lherzolite suite are spinel-bearing lherzolites, harzburgites and websterites. They have undergone processes of strong deformation and partial recrystallization. The major mineral phases (olivine, orthopyroxene) are highly magnesian but the pyroxenes contain also a relatively high amount of Al2O3 (spinel exsolution in both ortho- and clinopyroxene). Subsolidus re-equilibration was an important stage in the formation of these rocks. This type of xenoliths is considered to represent upper-mantle material which has undergone a relatively low degree of partial melting. Xenoliths belonging to the wehrlite suite (wehrlites, clinopyroxenites) are mostly phlogopite-bearing rocks. Their magmatic textures are partly modified by later metasomatic processes. The major mineral phases are present in several generations. This feature reflects the complex multi-stage formation process of these rocks. Inclusions of the wehrlite suite are regarded as magmatic rocks, unrelated to the host basalts. The important role of such components as: K, H2O but also Fe, Ti, Cl, and P2O5 in the processes of metasomatism is stressed. Alkaline clinopyroxenites with Na-Fe-bearing green clinopyroxene, apatite, titanite, and carbonate are magmatic rocks which can not be considered members of the suites mentioned above. The important role of metasomatism processes (involving such components as Na, CO2 and also Fe, Ti, Cl, and P2O5) predating the generation of the parental magma is evident. The variety of xenolith types shows that the upper mantle beneath this volcanic region must be heterogeneous.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317407</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1985</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 65</dcterms:extent>
+   <dcterms:isPartOf>Ultramafic xenoliths from alkaline basalts of Finkenberg (Siebengebirge, West Germany) (URN:ISSN:0375-7587) (Volume 78)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317407.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148693</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317407</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Over Rattus rattus roquei Sody met beschrijving van een nieuw ras van Rattus rattus van Soemba</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Sody H.J.V.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Geen der op Java voorkomende soorten heeft wellicht den werkers in Javaansche ratten zooveel determinatie-zorgen gekost als de voor kort door mij 1) met roquei benoemde Javaansche „boomrat" 2). Door enkele auteurs 3) werd de vorm oorspronkelijk slechts aangeduid als Mus sp. of Rattus sp., ter verduidelijking vergezeld van eenige Inlandsche namen als „tikoes koening" en „tikoes poehoen". Er schijnt verder oorspronkelijk een vrij algemeene meening te hebben bestaan, dat deze witbuikige rat identiek zou zijn met Jentink's Mus neglectus. Met dien naam vinden we althans zulke volkomen witbuikige ratten met scherpe afscheiding tusschen het wit van den buik en het donker van den rug, aangeduid bij Robinson en Kloss4), Chasen en Kloss 5), Dammerman 6) e. a. Het schijnt echter, dat die naam in werkelijkheid slechts een synoniem is van diardi Jentink, in elk geval wijst de oorspronkelijke beschrijving7) ("muzzle, lips, throat, chest, belly, inside of legs and arms yellowish, the hairs being slate-colored with long yellow tips") zeker niet op onze witbuikige boomrat. Zoover ik kan nagaan was Otten 8) de eerste, die voor onze rat den naam rufescens (Gray, nec Bonhote!) gebruikte, hierin later nagevolgd door van Heurn9). Otten baseerde zich hierbij op een bericht van de Beaufort 10), die op zijn beurt weer zich beriep op het werk van Bonhote11), bij welken laatsten auteur dan ook stellig de oorsprong van deze vergissing te zoeken is. In zijn overzicht der "Oriental rats" geeft deze laatste schrijver een zeer eigenaardige onderverdeeling van de "Mus rattus group", t. w. in: 1) Nat. Tijdschr. Ned. Ind., LXXXIX, 1929, p. 163, Noot.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318470</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 94 - 99</dcterms:extent>
+   <dcterms:isPartOf>Over Rattus rattus roquei Sody met beschrijving van een nieuw ras van Rattus rattus van Soemba (URN:ISSN:0024-0672) (Volume 13) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318470.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149756</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318470</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

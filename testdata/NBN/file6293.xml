@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On two new species of the genus Acanthochondria Oakley (Crustacea Copepoda) found in Japan</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Shiino S.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Acanthochondria Oakley is a genus of parasitic copepods, the members of which usually cling to the gills or gill arches of fishes, or to the mucous membrane of their buccal cavity, or to the inner surface of their operculum. Two new species of this genus recently obtained in Japan are described here in some detail. Acanthochondria yui sp. nov. (figs. 1, 2) Occurrence. — On the operculum, the gill arches and the roof of the buccal cavity of Acanthogobius flavimanus (Temminck &amp; Schlegel), taken at the estuary of the river Aikawa, Tsu, Japan, by Mr. K. Mori. 19 females on one host, 22 on another; each associated with a male. One of the females from the former lot is selected the holotype. Female. — The colour is whitish, the egg tubes are white. The length from the head to the abdomen is 5.53 mm, that from the head to the caudal lobe of the fourth segment 6.00 mm, the width across the third segment is 2.66 mm, the egg tube measures 4.27 mm. The head is ovoidal, slightly wider posteriorly than anteriorly, and as long as the next two segments combined. The first thoracic segment is cylindrical, short, and somewhat narrower than the head. The second segment is a little broader than the head, with round sides, and is separated from the adjoining segments, both in front and behind, by lateral notches. The third and fourth segments are swollen, strongly widening, and separated from each other by a pair of lateral constrictions. They are well convex on the sides, and subequal to each other both in length and in width; their combined length on the midline equals that of the rest of the body, and their width reaches twice that of the head. The fourth segment has a pair of linguiform lobes, extending backwards for some distance beyond the terminal</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318798</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 30 - 36</dcterms:extent>
+   <dcterms:isPartOf>On two new species of the genus Acanthochondria Oakley (Crustacea Copepoda) found in Japan (URN:ISSN:0024-0672) (Volume 39) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318798.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150084</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318798</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

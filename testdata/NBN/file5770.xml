@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Les especes indonesiennes du genre Homalictus Cockerell (Hymenoptera, Apoidea, Halictidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Pauly A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>RÉSUMÉ Cette note donne la distribution et des clés pour la séparation des 16 espèces de Homalictus Cockerell (groupe Homalictus, s.str.) recensées en Indonésie, île de NouvelleGuinée excepté. Six espèces nouvelles sont décrites (declivis, kangeani, moearae, ranacus, subdeclivis, vechti) ainsi que les mâles nouveaux de babakanensis (Friese) et toxopei (Alfken). Le mâle de testaceipes (Friese) est désigné comme le lectotype de l'espèce et associé à une nouvelle femelle. H. nusaensis est le nom. nov. pour nigroviridis (Friese, non Graenicher). H. babakanensis (Friese), H. bataviae (Blüthgen), H. getasanus (Blüthgen), H. laraticus (Blüthgen), H. nusaensis (Cockerell), H. redivivus (Blüthgen), H. testaceipes (Friese) sont des comb. nov. dans le genre Homalictus. Les abeilles du genre Homalictus sont abondantes dans la région australienne, les îles du Pacifique et l'Archipel indomalais. Ce genre comprend des espèces souvent métalliques dont le caractère le plus remarquable est la présence d'une brosse de poils récolteurs sur les sternites abdominaux. Michener (1965) a donné la liste des espèces australiennes et sud-pacifiques, les espèces de Micronésie ont été révisées par Krombein (1950) et les espèces indomalaises par Blüthgen (1926, 1928, 1931). On peut séparer facilement les espèces indonésiennes en deux groupes (Homalictus, sensu stricto, et Indohalictus Blüthgen), mais ceux-ci ne sont plus reconnus comme sous-genres depuis la classification de Michener (1965) en raison de l'existence d'espèces australiennes de position ambiguë. Seul le groupe Homalictus, sensu stricto, sera révisé ici et l'aire géographique considérée sera limitée aux îles indonésiennes, Nouvelle-Guinée excepté. Au total, 16 espèces de Homalictus, s.str., ont été relevées au cours de notre étude, parmi lesquelles 6 sont nouvelles, mais il est évident que de nombreuses</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318275</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 11 - 28</dcterms:extent>
+   <dcterms:isPartOf>Les especes indonesiennes du genre Homalictus Cockerell (Hymenoptera, Apoidea, Halictidae) (URN:ISSN:0024-0672) (Volume 55) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318275.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149561</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318275</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

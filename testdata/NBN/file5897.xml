@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Bulimulidae (Gastropoda, Euthyneura), 7. Anatomy and histology of Simpulopsis (Simpulopsis) miersi Pfeiffer, 1856</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Barros, de J.L.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>During recent years a group of Brazilian malacologists has contributed substantially to our knowledge of Brazilian Bulimulidae. The second author has been fortunate enough to have had the opportunity to visit some of these specialists twice and to establish a close cooperation. This paper is the second in our joint series treating several species in greater detail. The first paper in this series is by Breure &amp; Dos Santos Coelho (1976). Simpulopsis (Simpulopsis) miersi Pfeiffer, 1856 (figs. 1-7, pls. 1, 2) Simpulopsis miersi Pfeiffer, 1856: 260; Pfeiffer, 1859: 800; Pfeiffer, 1868: 21; Pfeiffer, 1876: 28; Pfeiffer &amp; Clessin, 1881: 229; Pilsbry, 1899: 218; Morretes, 1949: 162. Type locality. — Brazil, State of Espírito Santo. Type material. — Lectotype (here designated; shell height 22 mm, diameter 23 mm; pl. 1 figs. 1-3) and one paralectotype in British Museum (Nat. Hist.), registration numbers 1975489 and 1975490 respectively, "Espirits Santo" [sic] (ex Cuming ex Miers). This is the first time that S. (S.) miersi is figured. !) Notes on Bulimulidae, 6. — Basteria 41 (1977). MATERIAL AND METHODS AU material was collected at Linhares, State of Espírito Santo, by J. L. de Barros Araujo, E. Izecksohn and A. L. Peracchi (Museu Nacional, Rio de Janeiro, Moll. 3572/3; MN 3723/2), by A. C. Domingos (MN 3726/11, Rijksmuseum van Natuurlijke Historie, Leiden Moll. 9036/5) and by C. Elias (MN 3725/18, MN 3724/5, RMNH 9037/3) respectively. Specimens were fixed in an alcohol-glycerol mixture (ethanol 70%: glycerol = 9:1). Dissections were carried out under a Wild M4 stereo-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318402</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 19 - 25</dcterms:extent>
+   <dcterms:isPartOf>Notes on Bulimulidae (Gastropoda, Euthyneura), 7. Anatomy and histology of Simpulopsis (Simpulopsis) miersi Pfeiffer, 1856 (URN:ISSN:0024-0672) (Volume 52) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318402.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149688</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318402</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

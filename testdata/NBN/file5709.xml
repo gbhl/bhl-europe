@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biological results of the Snellius the expedition : XXV. Faviidae collected by Snellius expedition. I. The genus Favia</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wijsman-Best M.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Introduction The expedition of H.M. "Willebrord Snellius,, in the eastern Indonesian seas (1929-1930) brought home a large collection of corals. The biologist on board, Dr. H. Boschma, as well as the geologist Dr. Ph. H. Kuenen collected these specimens during low tide on the reefs or by way of dredging and diving. The greater part of the material comes from shallow waters (depths of 0.5 to 5 m). The use of diving apparatus allowed collecting at a depth of 2 to 15 m. Sometimes corals were dredged from depths of 30 m or more. The total coral material consists of more than 10.000 samples, about half of which are specimens of the genus Acropora. Although the material was sorted out and generally identified as to the genus, so far no study was made of any special group. Boschma (1936) published a paper on the biological data of the Snellius expedition. All field data in the present paper stem from that report as well as from personal communications of Dr. Boschma himself. Presently the genus Favia (Faviidae sensu Wells, 1956) is dealt with. The same species concept is applied as in my former paper on the Faviinae of New Caledonia (Wijsman-Best, 1972). Both regions lay centrally in the Indo Pacific area, and they have most of their species in common. Faviinae from eastern Indonesia are only occasionally mentioned in the literature (Quelch, 1886; Thiel, 1932; Umbgrove, 1939, 1940; Verwey, 1931). Specimens from this area collected by the Siboga expedition have been mentioned by Wijsman-Best, 1972. Explanation of the localities as mentioned by Boschma, 1936 (see map fig. 1): 1. Suvadiva atoll, Maldive Islands (3-4 May 1929). Collecting on the reefs and dredging in the lagoon.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318214</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 249 - 261</dcterms:extent>
+   <dcterms:isPartOf>Biological results of the Snellius the expedition : XXV. Faviidae collected by Snellius expedition. I. The genus Favia (URN:ISSN:0024-0672) (Volume 48) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318214.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149500</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318214</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

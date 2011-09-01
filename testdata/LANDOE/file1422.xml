@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 35_1 (1992)</dc:title>
+   <dc:creator>Berg  Hans-Martin, Berger  Veronika, Frey  Hans, Gamauf  Anita, Grüll  Alfred, Ille  Rottraud, Leditznig  Christoph, Luber  Heinrich, Pühringer  Norbert, Samwald  Franz, Samwald  Otto, Schaden  Gabriele, Scherzinger  Wolfgang, Steiner  Helmut</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wolfgang Scherzinger: Eulen und Greifvögel in Österreich. 1. Treffen von Interessenten in Mariazell vom 26. bis 27. Oktober 1991. Vorwort.     3. Hans-Martin Berg: Status und Verbreitung der Eulen (Strigiformes) in Österreich.     4-    8. Hans Frey: Bestandsentwicklung und Jungenproduktion des Uhus (Bubo bubo) in Niederösterreich zwischen 1969 und 1991.     9-   19. Hans Frey, Alfred Grüll: Bestandsentwicklung, Bruterfolg und Nahrungszusammensetzung des Uhus (Bubo bubo) im Burgenland von 1981 bis 1991.    20-   36. Otto Samwald, Franz Samwald: Brutverbreitung und Bestandsentwicklung der Zwergohreule (Otus scops) in der Steiermark.    37-   48. Rottraud Ille: Zur Biologie und Ökologie des Steinkauzes (Athene noctua) im Marchfeld: Aktuelle Situation und mögliche Schutzmaßnahmen.    49-   57. Gabriele Schaden: Der Einfluß von Früherfahrung auf die Nistplatzwahl bei Schleiereulen (Tyto alba guttata).    56-   68. Christoph Leditznig: Telemetriestudie am Uhu (Bubo bubo) im niederösterreichischen Alpenvorland -Methodik und erste Ergebnisse.    69-   72. Veronika Berger: Herzfrequenzänderungen brütender Waldohreulen (Asio otus) auf Grund menschlicher Störungen.    73-   79. Norbert Pühringer: Sperlingskauzbeobachtungen (Glaucidium passerinum) im Almtal, Oberösterreich, von 1989 bis 1991.    80-   81. Anita Gamauf: Status und Verbreitung der Greifvögel in Österreich.    82-   84. Hans Frey: Die Wiedereinbürgerung des Bartgeiers (Gypaetus barbatus) in den Alpen.    85-   95. Helmut Steiner: Die Greifvogelgemeinschaft einer Probefläche in der oberösterreichischen Kulturlandschaft.    96-  110. Heinrich Luber: Der Wanderfalke (Falco peregrinus) wieder im Aufwind - ein Situationsbericht aus der Steiermark.   111-  116. Norbert Pühringer: Der Wanderfalke (Falco peregrinus) am Nordrand des Toten Gebirges, Oberösterreich.   117</dc:description>
+   <dc:date>1992</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27519.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27519.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27519</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

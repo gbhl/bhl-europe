@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Philippine Fig wasps 1. Records and descriptions of Otitesellini (Hymenoptera Chalcidoidea, Torymidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wiebes J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In 1964, by awarding to me that year's proceeds of the "Pieter Langerhuizen Fonds", the Hollandsche Maatschappij der Wetenschappen enabled me to study figs and fig wasps in the Philippines. While several Philippine fig wasps are already known from the papers by Ashmead (1904, 1905), Brown (1906), Baker (1913), Williams (1921, 1928), Grandi (1927, 1930), Baltazar (1966), Wiebes (1963, 1966a, b, 1967a, b, and 1974) and Hill (1969), the collection made in 1964 and 1965 still contains much new material. In this and forthcoming reports I shall include data on the collection made by F. X. Williams, received in loan from the Hawaiian Sugar Planters' Association, Honolulu (abbreviated HSPA), and on several lots of material sent for identification by: the American Museum of Natural History, New York (AMNH), the Bernice P. Bishop Museum, Honolulu (BMH), the California Academy of Sciences, San Francisco (CAS), the Rijksmuseum van Natuurlijke Historie, Leiden (RMNH), the United States National Museum, Washington (USNM), and the Universitetets Zoologiske Museum, Copenhagen (ZMC; material from the Noona Dan Expedition, see Petersen, 1966). A short report on my trip to the Philippines was published in the Dutch language (Wiebes, 1965). All collecting localities are indicated on the map of fig. 1 of the present paper. Of the many colleagues who helped me in one way or another, I here only mention four, viz., Dra. Clare R. Baltazar, at the time of my visit Entomologist of the Bureau of Plant Industry, Manila; Dr. F. B. Calora, Head of the Department of Entomology, University of the Philippines' College of Agriculture (UPCA); Prof. E. J. H. Corner, University of Cambridge; and Prof. J. V. Pancho, Botanist of the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317959</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 145 - 161</dcterms:extent>
+   <dcterms:isPartOf>Philippine Fig wasps 1. Records and descriptions of Otitesellini (Hymenoptera Chalcidoidea, Torymidae) (URN:ISSN:0024-0672) (Volume 48) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317959.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149245</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317959</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

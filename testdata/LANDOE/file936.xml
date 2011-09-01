@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 64 (1961)</dc:title>
+   <dc:creator>Beier  Max Walter Peter, Fischer  Maximilian, Flügel  Erik, Janczyk  Friedrich, Mandl  Karl, Nemenz  Harald, Paget  Oliver E, Patzak  Alois Walter, Petrak  Franz, Piffl  Eduard, Pretzmann  Gerhard, Scheerpeltz  Otto, Sieverts-Doreck  Hertha, Strouhal  Hans</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Strouhal: Hofrat Dr. Carl Graf Attems zum Gedenken. (Tafel1)     1-   38. Oliver E Paget: Aemilian Edlauer +. (Tafel 2)    39-   41. Alois Walter Patzak: Zwei neue Ballota-Arten aus der Türkei nebst einem Nachtrag zur Gattung Ballota.    42-   56. Franz Petrak: Schedae ad Cryptogamas exsiccatas, editae a Museo Historiae Naturalis Vindobonensi.    57-   64. Erik Flügel: Typen-Katalog. Verzeichnis der in der Geologisch-Paläontologischen Abteilung des Naturhistorischen Museums in Wien aufbewahrten Typen sowie der Abbildungsoriginale. I. Invertebrata: I. Protozoa. 2. Coelenterata.    65-  104. Hertha Sieverts-Doreck: Zur Kenntnis der Crinoidengattung Discometra (Comatulida, Mariametrina) im Miozän des Wiener Beckens. (Tafel 3)   105-  126. Karl Mandl: Ergebnisse der von Dr. O. Paget und Dr. E. Kritscher auf Rhodos durchgeführten zoologischen Exkursionen. III. Coleoptera.   127-  134. Otto Scheerpeltz: Ergebnisse der von Dr. O. Paget und Dr. E. Kritscher auf Rhodos durchgeführten zoologischen Exkursionen. IV. Coleoptera, Fam. Staphylinidae. (101. Beitrag zur Kenntnis der paläarktischen Staphyliniden Staphyliniden).   135-  138. Max Walter Peter Beier: Ergebnisse der von Dr. O. Paget und Dr. E. Kritscher auf Rhodos durchgeführten zoologischen Exkursionen. V. Pseudoscorpionidea.   139-  142. Harald Nemenz: Ergebnisse der von Dr. O. Paget und Dr. E. Kritscher auf Rhodos durchgeführten zoologischen Exkursionen. VI. Ixodidae.   143-  145. Max Walter Peter Beier: Über kaukasische Pseudoskorpione.   146-  153. Maximilian Fischer: Zwei neue Opiinen-Gattungen (Hym., Braconidae).   154-  158. Friedrich Janczyk: Neue Curculioniden der zoologischen Sammlung des Naturhistorischen Museums. (4. Beitrag zur Kenntnis der Curculionidae).   159-  163. Eduard Piffl: Zur Oribatidenfauna des Leopoldsberges von Wien. (1. Beitrag).   164-  172. Gerhard Pretzmann: Eine neue amerikanische Krabbe der Gattung Lissa. (Tafel 4)   173-  177. Hans Strouhal: Eine neue Höckerassel von Korfu (Isop. terr.). (31. Beitrag zur Isopodenfauna der Balkanhalbinsel).   178-  184. Hans Strouhal: Die Oniscoideen-Fauna der Juan FernŽndez-Inseln (Crustacea, Isopoda terrestria).    185-  244. Hans Strouhal: Eine neue, ostmediterrane Typhlocirolana-Spezies (Isopoda, Cirolanidae).   245-  256</dc:description>
+   <dc:date>1961</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26615.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26615.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26615</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New Neotropical pseudoscorpions (Pseudoscorpiones) from Aruba, Trinidad and Saba (Lesser Antilles), with some new localities of pseudoscorpions from Aruba and Bonaire</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Tooren, van den  D.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Pseudoscorpions</dc:subject>
+   <dc:subject>Olpiidae</dc:subject>
+   <dc:subject>Pachyolpium arubense arubense</dc:subject>
+   <dc:subject>Pachyolpium arubense variabile</dc:subject>
+   <dc:subject>Aphelolpium scitulum</dc:subject>
+   <dc:subject>Chernetidae</dc:subject>
+   <dc:subject>Pachychernes corticalis spec. nov.</dc:subject>
+   <dc:subject>Corticochernes sabae gen. et spec. nov.</dc:subject>
+   <dc:subject>Atemnidae</dc:subject>
+   <dc:subject>Trinidatemnus separatus gen. et spec. nov.</dc:subject>
+   <dc:subject>Aruba</dc:subject>
+   <dc:subject>Bonaire</dc:subject>
+   <dc:subject>Trinidad</dc:subject>
+   <dc:subject>Saba</dc:subject>
+   <dc:description>Three new species are described: Pachychernes corticalis spec. nov. from Aruba, Corticochernes sabae gen. et spec. nov. from Saba and Trinidatemnus separatus gen. et spec. nov. from Trinidad. Some new localities are reported of Pachyolpium arubense arubense Beier, 1936, Pachyolpium arubense variabile van den Tooren, 2002 and Aphelolpium scitulum Hoff , 1964.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:273963</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 423 - 440</dcterms:extent>
+   <dcterms:isPartOf>New Neotropical pseudoscorpions (Pseudoscorpiones) from Aruba, Trinidad and Saba (Lesser Antilles), with some new localities of pseudoscorpions from Aruba and Bonaire (URN:ISSN:00240672) (Volume 82) (Issue 40)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/273963.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/107612</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/273963</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

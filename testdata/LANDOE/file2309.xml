@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 73 (1936)</dc:title>
+   <dc:creator>Felser  Karloskar, Friedrich  Othmar Michael, Heritsch  Franz, Knebel  Rudolf, Kühn  Othmar, Lämmermayr  Ludwig, Leitinger  R., Mayer  Rudolf, Meixner  Heinz, Meznerics  Ilona, Nevole  Johann, Pischinger  Alfred, Reiter  Hans Heribert, Seelmeyer  Hans, Widder  Felix Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karloskar Felser: Caninia Nikitini Stuckenberg aus dem schiefrigen Kalk des Häuselberges bei Leoben.     5-    6. Karloskar Felser, Hans Seelmeyer: Die Detailkartierung im Oberkarbon-Perm der Karnischen Alpen zwischen Schulterkofel und Tresdorfer Höhe.     7-    9. Othmar Michael Friedrich: Beiträge zur Kenntnis steirischer Erzvorkommen.    10-   18. Franz Heritsch, Othmar Kühn: Geschiebe von Triaskorallen vom Plabutsch bei Graz.    19-   32. Franz Heritsch: Das Erdbeben von Obdach-Reichenfels am 3. Oktober 1936.    33-   37. Rudolf Knebel: Bericht über die Auswirkungen des Erdbebens in den Ortschaften Obdach, Reichenfels und St. Leonhard im Lavanttal am 3., 4. und 5. Oktober 1936.    38-   43. Ludwig Lämmermayr: Ökologisch-Floristisches aus dem Quercetum lanuginosaea bei Graz.    44-   60. Rudolf Mayer: Geographische Beiträge zur ältesten Entwicklung der Siedlung Graz.    61-  107. Heinz Meixner: Neue Mineralfunde in den österreichischen Ostalpen. VIII.   108-  117. Ilona Meznerics: Die Schlierbildungen des mittelsteirischen Beckens.   118-  140. Johann Nevole: Beitrag zur Flora des Hochschwabes in Steiermark.   141-  144. Hans Heribert Reiter: Geschäftsbericht über das 73. Vereinsjahr 1935.   150-  153. Alfred Pischinger: Universitätsprofessor Dr. Hans Rabl +.   154-  155. R. Leitinger: Karl Rosenberg +.   156-  157. Felix Josef Widder: Vitus von Voncina +.   158-  160</dc:description>
+   <dc:date>1936</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28621.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28621.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28621</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

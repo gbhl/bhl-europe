@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 53. The authorship and date of publication of the “Catalogue of the Specimens and Drawings of Mammalia and Birds of Nepal and Thibet presented by B.H. Hodgson, Esq. to the British Museum”</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Dickinson E.C.</dc:creator>
+   <dc:creator>Walters M.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>date</dc:subject>
+   <dc:subject>authorship</dc:subject>
+   <dc:subject>priority</dc:subject>
+   <dc:subject>Aceros.</dc:subject>
+   <dc:description>The authorship of this work or at least the ornithological part of it, and of the subsequent 1863 report, is best attributed to both John Edward Gray, who signed the preface, and his brother George Robert Gray. The first report has an imprint date of 1846, but evidence shows that this was not available as a published work until January 1847. The potential for priority conflict between this Catalogue and papers by Hodgson and Blyth in 1844-46, and between the Catalogue and G.R. Gray (1844-49), is discussed; and the new names proposed by Gray &amp; Gray in the Catalogue are examined to see which were immediately in synonymy when they were published. Attention is drawn to the correct authorship of the generic name Aceros as being Hodgson and not J.E. Gray.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209994</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 137 - 153</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 53. The authorship and date of publication of the “Catalogue of the Specimens and Drawings of Mammalia and Birds of Nepal and Thibet presented by B.H. Hodgson, Esq. to the British Museum” (URN:ISSN:00240672) (Volume 80-5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209994.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41775</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209994</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

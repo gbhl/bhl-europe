@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ichneumonidae (Hymenoptera) aus den Sammlungen Gravenhorst und Holmgren in Museen in Leiden und Paris</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horstmann K.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Bei Besuchen in Leiden und Paris im Jahr 1977 habe ich Listen des Materials angefertigt, das aus den Sammlungen Gravenhorst oder Holmgren stammt, jetzt aber in den naturhistorischen Museen in diesen Städten aufbewahrt wird. Mademoiselle Dr. S. Kelner-Pillault (Muséum national d'histoire naturelle, Paris) und Herrn Dr. C. van Achterberg (Rijksmuseum van Natuurlijke Historie, Leiden) bin ich für ihre Hilfe zu großem Dank verpflichtet. Die Untersuchungen wurden durch eine Reisebeihilfe der Deutschen Forschungsgemeinschaft unterstützt. I. ICHNEUMONIDAE AUS DER SAMMLUNG GRAVENHORST IM RIJKSMUSEUM VAN NATUURLIJKE HISTORIE IN LEIDEN In seinem dreibändigen Werk "Ichneumonologia Europaea" hat J. L. C. Gravenhorst (1829) die Grundlage für die Systematik der Familie Ichneumonidae gelegt, zahlreiche Arten neu beschrieben und ebenso zahlreiche Arten älterer Autoren, deren Sammlungen oft verschollen sind, gedeutet und damit in ihrem Gebrauch festgelegt. Das Material, das die Basis für diese Untersuchungen bildete, wurde zum größten Teil in seiner eigenen Sammlung in Breslau (jetzt Wroclaw) aufbewahrt. Einige Teile waren aber nie in seinem Besitz, andere hat er vermutlich selbst während und nach der Fertigstellung seiner Arbeiten an andere Museen abgegeben, unter anderem auch an das Rijksmuseum van Natuurlijke Historie in Leiden (Townes, 1959, 1965). Da etwa ein Viertel seiner Sammlung in Breslau gegen Ende des letzten Krieges verloren gegangen ist, haben diese anderen Sammlungsteile einen besonderen Wert bekommen, denn in ihnen sind Arten erhalten, die in der Hauptsammlung jetzt fehlen. Das Museum in Leiden hat das Material im Jahr 1825 erworben (nach</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318188</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 159 - 169</dcterms:extent>
+   <dcterms:isPartOf>Ichneumonidae (Hymenoptera) aus den Sammlungen Gravenhorst und Holmgren in Museen in Leiden und Paris (URN:ISSN:0024-0672) (Volume 55) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318188.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149474</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318188</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

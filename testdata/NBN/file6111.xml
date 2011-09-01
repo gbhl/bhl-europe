@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the scientific career of Professor Dr. L. D. Brongersma, compiled at the occasion of his sixty fifth birthday</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>42.01 ; 42.82</dc:subject>
+   <dc:description>For a large part the data in the present paper are based on manuscript notes in the Rijksmuseum van Natuurlijke Historie at Leiden, assembled by Brongersma himself; they form only a brief account of his scientific achievements. Efforts to completeness were only made in the composition of the List of Publications; here besides the scientific papers those with popular contents are listed. Thanks are due to Dr. W. Vervoort and to Dr. M. Boeseman for constructive remarks. Leo Daniël Brongersma was born on May 17th, 1907, at Bloemendaal (province of North-Holland); here he attended elementary school, while he went to high school in the neighbouring town of Haarlem. From 1925 to 1931 he studied zoology, botany and geology at the Municipal University of Amsterdam, where he passed examinations (more or less comparable to B. Sc. and M. Sc.) in 1929 and 1931. In 1934 he obtained the degree of Doctor of Science (cum laude), after defending publicly his thesis "Contributions to Indo-Australian Herpetology". (On the same day, one hour earlier, his wife-to-be, Margaretha Sanders, took her doctor's degree at the same university (cum laude), after defending a thesis on a palaeozoological subject). From September 1928 to October 1934 Brongersma was assistant at the Zoological Museum at Amsterdam; in 1932 he became curator of reptiles and amphibians at the Rijksmuseum van Natuurlijke Historie at Leiden. The great financial crisis of the early thirties made that this nomination could not be continued, but in 1933 he received a grant to remain working in this museum, whilst at the same time he kept the assistantship at the Zoological Museum at Amsterdam, and accepted an assistantship at the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318616</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page VIII - XXII</dcterms:extent>
+   <dcterms:isPartOf>Notes on the scientific career of Professor Dr. L. D. Brongersma, compiled at the occasion of his sixty fifth birthday (URN:ISSN:0024-0672) (Volume 47)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318616.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149902</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318616</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

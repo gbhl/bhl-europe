@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Dermaptera in the Museums at Leiden and Amsterdam</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The collections of Dermaptera in the Rijksmuseum van Natuurlijke Historie at Leiden and the Zoölogisch Museum at Amsterdam, referred to in the present paper as "Museum Leiden" and "Museum Amsterdam", consist of numerous specimens including many types described by previous authors and a fairly large number of hitherto unidentified examples. A reinvestigation and an identification of the unidentified material therefore promised interesting results, a promise which has been fulfilled. The investigations took place during the war years 1942 and 1943 under unfavorable circumstances. The original MS was finished shortly after the war but, due to printing difficulties, publication had to be postponed. During the recent preparation of the present paper, some alterations and corrections of the old MS were found necessary and recent literature was added. No time was available for the examination and inclusion in the present paper of the acquisitions of both collections during and since the war. The almost 3500 specimens included in this paper proved to belong to 157 species, 2 subspecies, 16 varieties; among these, 20 species and 8 varieties are new to science while the types were found of 30 species described by previous authors, most by De Haan, De Bormans, Dohrn, and Burr. The following new species are described: Diplatymorpha borneensis nov. gen., nov. spec. (fig. 2) Dicrana jacobsoni nov. spec. (fig. 4) Pyge vanderdoesi nov. spec. (fig. 5) Gonolabidura javana nov. spec. (figs. 6a, 7a, b)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317621</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 122</dcterms:extent>
+   <dcterms:isPartOf>The Dermaptera in the Museums at Leiden and Amsterdam (URN:ISSN:0024-1652) (Volume 21) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317621.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148907</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317621</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

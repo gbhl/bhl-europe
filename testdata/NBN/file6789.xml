@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Descriptions of two new Ceriantharia from the Caribbean region, Pachycerianthus curacaoensis n. sp. and Arachnanthus nocturnus n. sp., with a discussion of the cnidom and of the classification of the Ceriantharia</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hartog, den J.C.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Two new Ceriantharia, Pachycerianthus curacaoensis and Arachnanthus nocturnus, both from the Caribbean region, are described. It is recommended to avoid the terms proto- and metamesenteries in taxonomie descriptions. The cnidom of the Ceriantharia is discussed; a subdivision of the spirulae (=b-rhabdoids) and penicilli ( = p-rhabdoids) differing from that of Schmidt (1972) is given. The anoplotelic character of the terminal tube of the penicilli (Schmidt, 1972) is doubted on the basis of light microscopical investigations. Mainly on the basis of the study of Botruanthus benedeni (Torrey &amp; Kleeberger, 1909) (Botrucnidiferidae), the 2 newly described species (respectively belonging to the Cerianthidae and the Arachnactidae), and of the data available in the existing literature, it is concluded that the Ceriantharia may be subdivided into 2 suborders, for which the names Spirularia and Penicillaria are proposed. The Spirularia include the Cerianthidae and the Botrucnidiferidae. The Penicillaria include the Arachnactidae only. Diagnoses of the newly proposed suborders are given in addition.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319294</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 211 - 242</dcterms:extent>
+   <dcterms:isPartOf>Descriptions of two new Ceriantharia from the Caribbean region, Pachycerianthus curacaoensis n. sp. and Arachnanthus nocturnus n. sp., with a discussion of the cnidom and of the classification of the Ceriantharia (URN:ISSN:0024-0672) (Volume 51) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319294.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150580</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319294</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Solariidae in the Rijksmuseum van Natuurlijke Historie. III. Torinia</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Bayer Ch.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Opinions are divided in relation to what generical name has priority, Heliacus or Torinia. In proof of this I will quote, leaving aside those of many others, the opinions of two authorities. Thiele [1918, p. 80 (114)] writes: "Bezüglich des Namens Torinia bemerkt Iredale, dass ihm Heliacus Orbigny, weil älter, vorzuziehen sei; es mag sein, dass dieser Name ein wenig älter ist — nach Hermannsen von 1841, nach Iredale 1842, es scheint also die Zeit des Erscheinens nicht ganz festzustehen —, während Torinia von Gray 1842 auf die Beschaffenheit des Deckels hin begründet worden ist". The opinion of Tomlin (1928, p. 333), however, is quite different: "Gray in Proc. Zool. Soc., 1847, Ρ· 151, gives his own genus Torinia precedence, quoting it as of 1840 and 1842. These two references are to different editions of the 'Synopsis of the Contents of the British Museum', and are fully explained by Iredale in Proc. Malac. Soc. (London), X, pp. 294-309. The 1840 usage of Torinia is a nomen nudum; the 1842 edition gives a short comparative account of operculum only, quoted on p. 308. It hardly seems a sufficient diagnosis on which to found a genus, and the reasons for rejection given by Iredale on p. 301 may well be applied to this case at any rate". As I mentioned already in a previous paper (1940, p. 223), I follow in this catalogue Thiele's "Handbuch der systematischen Weichtierkunde", in relation to the generic names and also as far as concerns the classification, but it is not my intention to state thereby hat I always completely agree with the opinions of his author. I wish to express here my heartiest thanks to the gentlemen who helped</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317653</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1948</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 1 - 44</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Solariidae in the Rijksmuseum van Natuurlijke Historie. III. Torinia (URN:ISSN:0024-1652) (Volume 4) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317653.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148939</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317653</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

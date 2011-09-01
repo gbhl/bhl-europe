@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 53 (1913)</dc:title>
+   <dc:creator>Adrian  Karl, Anonymus , Erben  Wilhelm, Fugger  Eberhard, Greinz  Christian, Huemer  Blasius, Martin  Franz, Mayr  Josef Karl, Ploy  H., Scheibl  Eligius</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wilhelm Erben: Untersuchungen zur Geschichte des Erzbischofes Gebhard.     1-   38. Christian Greinz: Die Urkunden des Stadtpfarrarchives in Hallein.    39-   68. Blasius Huemer: Stainhausers Biographie der Salzburger Erzbischöfe Michael und Georg von Kuenburg.    69-  107. Eberhard Fugger: Übersicht der Witterung im Jahre 1912.   109-  115. Eberhard Fugger: Salzachtemperatur.   117-  119. Christian Greinz: Die Urkunden des Stadtpfarrarchives in Hallein.   121-  192. Josef Karl Mayr: Die Türkenpolitik Erzbischof Wolf Dietrichs von Salzburg.   193-  354. Franz Martin: Kleine Beiträge zur Musikgeschichte Salzburgs, insbesondere zur Biographie Michael Haydns.   355-  362. Karl Adrian: Das Leiden Christi-Singen in Großarl.   363-  370. Anonymus: Zur salzburgischen Literatur.   371-  382. Eberhard Fugger, H. Ploy: Gesellschafts-Angelegenheiten. 1. Protokoll über die Jahreshauptversammlung der Gesellschaft für Salzburger Landeskunde vom 9. Oktober 1913.   383. Eberhard Fugger, H. Ploy: Gesellschafts-Angelegenheiten. 2. Jahresbericht.   384-  386. Anonymus: Gesellschafts-Angelegenheiten. 3. Nekrologe.   387-  392. Anonymus: Gesellschafts-Angelegenheiten. 4. Auszug aus den Verhandlungen des Ausschusses der Gesellschaft für Salzburger Landeskunde.   393-  394. Eligius Scheibl: Gesellschafts-Angelegenheiten. 5. Kasse-Bericht über die 53. Jahres-Gebarung vom 1. Oktober 1912 bis 30. September 1913.   395-  398. Anonymus: Gesellschafts-Angelegenheiten. 6. Mitglieder-Verzeichnis nach dem Stande vom 24. September 1913.   399-  413. Anonymus: Gesellschafts-Angelegenheiten. 7. Verzeichnis der gelehrten Gesellschaften, Vereine und Anstalten, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mitteilungen" eine Verbindung pflegt.   414-  418</dc:description>
+   <dc:date>1913</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29068.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29068.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29068</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

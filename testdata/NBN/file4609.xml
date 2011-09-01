@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Fossil Crustacea of the Late Pleistocene Port Morant Formation, west Port Morant Harbour, southeastern Jamaica</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Collins J.S.H.</dc:creator>
+   <dc:creator>Donovan S.K.</dc:creator>
+   <dc:creator>Stemann T.A.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Jamaica</dc:subject>
+   <dc:subject>Pleistocene</dc:subject>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Cirripedia</dc:subject>
+   <dc:description>The Late Pleistocene Port Morant Formation of southeast Jamaica is particularly rich in fossil marine crustaceans. A new locality on the west side of Port Morant Harbour, parish of St. Thomas, has yielded decapods including the callianassids Lepidophthalmus jamaicense? (Schmitt ), Neocallichirus peraensis Collins et al. and Neocallichirus? sp.; anomurans Petrochirus bahamensis (Herbst) and Paguristes sp. cf. P. lymanni A. Milne-Edwards &amp; Bouvier; and brachyurans Hepatus praecox Collins et al., Persephona sp., Mithrax acuticornis Stimpson, Mithrax verrucosus H. Milne Edwards, Mithraculus forceps A. Milne-Edwards, aff. Hyas sp., Portunus vocans (A. Milne-Edwards), Achelous sebae (H. Milne Edwards), Actaea sp. cf. A. bifrons Rathbun, Actaea acantha (H. Milne Edwards), Micropanope sp. aff. M. truncatiformis Rathbun and Carpilius corallinus Herbst. Of the 17 species of decapod, only four, sparsely represented, are also common to southeast Port Morant Harbour, where they are relatively common; two species are known from other deposits in Jamaica; two from other Caribbean islands; and eight are Recent species new to the fossil record of the Caribbean. Balanomorph cirripedes include three species, Chthalamus fragilis? Darwin, Balanus eburneus Gould and Ceratochoncha sp. aff. C. barbadensis (Withers).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:301551</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 23 - 53</dcterms:extent>
+   <dcterms:isPartOf>Fossil Crustacea of the Late Pleistocene Port Morant Formation, west Port Morant Harbour, southeastern Jamaica (URN:ISSN:0375-7587) (Volume 138)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/301551.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/131094</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/301551</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

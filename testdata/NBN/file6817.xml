@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Further preliminary descriptions of new species of the genus Periclimenaeus Borradaile, 1915 (Crustacea, Decapoda Natantia, Pontoniinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruce A.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In a recent paper preliminary descriptions were given of ten new species of the genus Periclimenaeus Borradaile from the Indo-West-Pacific region (Bruce, 1969). The recent acquisition of further material has provided three new species of the same genus from the Great Barrier Reef and two other new species have also been discovered. Preliminary descriptions of these new species, based primarily on the undissected holotype specimens, are now provided. All specimens, whose hosts were noted, were obtained from sponges, some of which are in the process of identification. The holotype specimens will be deposited in the collections of the Rijksmuseum van Natuurlijke Historie, Leiden, except where they are part of the collections of another museum. Periclimenaeus bidentatus sp. nov. Description. — A small, relatively slenderly built species. Body generally smooth. Rostrum well developed, slender, acute, reaching to base of intermediate segment of antennular peduncle, straight, slightly depressed. Dorsal margin with seven long slender acute teeth, the most posterior situated over the orbital margin. Ventral margin feebly convex, toothless. Midrib indistinct. Epigastric spine absent. Small acute supraorbital tubercles present. Orbit feebly developed. Inferior orbital angle feebly developed, blunt. Antennal spine robust, situated over inferior orbital angle. Anterolateral angle of carapace broadly rounded. Sixth abdominal segment about 1.5 times longer than deep. Pleura of first four segments rounded; fifth bluntly subrectangular; sixth acutely expanded. Telson normal, moderately narrow, with dorsal spines at o.1 and 0.5 of telson length and three pairs of terminal spines.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319322</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 305 - 315</dcterms:extent>
+   <dcterms:isPartOf>Further preliminary descriptions of new species of the genus Periclimenaeus Borradaile, 1915 (Crustacea, Decapoda Natantia, Pontoniinae) (URN:ISSN:0024-0672) (Volume 44) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319322.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150608</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319322</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

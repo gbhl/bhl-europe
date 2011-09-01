@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen des naturwissenschaftlichen Vereins für Steiermark 69 (1932)</dc:title>
+   <dc:creator>Angel  Franz, Anonymus , Fritsch  Karl von (jun.), Heritsch  Franz, Heritsch  Haymo, Kren  Kurt, Meixner  Heinz, Rasin-Streden  R., Schmuck  Albert, Semetkowski  Walter von, Teppner  Wilfried, Wegener  Kurt</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Angel: Diabase und deren Abkömmlinge in den österreichischen Ostalpen.     5-   24. Franz Heritsch, Haymo Heritsch: Malchite aus dem Gailtal.    25-   33. Kurt Kren: Beiträge zur Geomorphologie der Venedigergruppe.    34-   53. Heinz Meixner: Neue Mineralfunde in den österreichischen Ostalpen. IV.    54-   58. Albert Schmuck: Beiträge zur Geomorphologie der Sonnblickgruppe.    59-   69. R. Rasin-Streden: Bericht über das Jahr 1931.    71. R. Rasin-Streden: Bericht über die Jahres-Hauptversammlung vom 24. Jänner 1931.    72. R. Rasin-Streden: Geschäftsbericht über das 68. Vereinsjahr 1931.    73-   81. Franz Heritsch: 69. Hauptversammlung des Naturwissenschaftlichen Vereines für Steiermark in Graz am Samstag, den 28. Jänner 1932, 18 Uhr, im Hörsaal für Mineralogie der Universität, Universitätsplatz 2, II. Stock.    82. Franz Angel: Cornelius Doelter +.    84-   85. Anonymus: Ettingshausen zum Gedächtnis.    85-   87. Wilfried Teppner: Vinzenz Hilber +.    87-   89. Walter von Semetkowski: G. Schulz-Döpfner +.    89-   91. Kurt Wegener: Alfred Wegener +.    92-   94. Karl von (jun.) Fritsch: Richard Wettstein +.    95-   96</dc:description>
+   <dc:date>1932</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28617.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28617.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28617</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

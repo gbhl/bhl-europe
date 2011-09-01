@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 101-102 (1962)</dc:title>
+   <dc:creator>Biebl  Richard, Broer  Hannes, Dölling  Ludwig, Ehrenberg  Christian Gottfried, Fetzmann  Elsalore, Fiedler  Walter, Franz  Herbert, Handel-Mazzetti  Heinrich Freiherr von, Hänsel  Hermann, Haybach  Gabriele, Höfler  Karl, Hübl  Erich, Janchen  Erwin Emil Alfred, Kinzel  Helmut, Knötig  Helmut, Koenig  O., Kühnelt  Wilhelm, Löffler  Heinz, Mainx  Felix, Melzer  Helmut, Moser  Roman, Neubauer  Hans Franz, Podhorsky  Jaro, Schremmer  Friedrich (Fritz), Schubert-Soldern  R., Schuster  Reinhart, Url  Walter, Vaillant  F., Wendelberger  Gustav, Wieser  W., ZOBOT Österreich  ZOBOT Österreich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: ZOBOT Österreich ZOBOT Österreich: Mitteilung vom Ableben des Ehrenpräsidenten der Zoologisch-Botanischen Gesellschaft in Wien, Herrn Hofrat ERICH TSCHERMAK-SEYSENEGG     5. Karl Höfler: Siegfried Strugger, Nachruf     7-    9. Erwin Emil Alfred Janchen: Hans Steinbach, Nachruf    10-   12. Hermann Hänsel: Die Bedeutung Tschermaks für Züchtungsforschung und praktische Pflanzenzüchtung    13-   17. Christian Gottfried Ehrenberg: Über Lebensweise und Lebensraum des Höhlenbären. Eine paläobiologische Studie.    18-   31. R. Schubert-Soldern: Der Schildkrötenpanzer- Anpassung und Stammesentwicklung    32-   49. Ludwig Dölling: Der Anteil der Tierwelt an der Bildung von Unterwasserböden.    50-   85. F. Vaillant: Einige Psychodillen (Dipteren) aus Österreich    86-   93. Gabriele Haybach: Zwei neue Collembolenarten aus Österreich    94-   97. Herbert Franz: Ein neuer Microcaeculus aus Südamerika. (Acari, Trombidiformes)    98-  100. Erich Hübl: Zur Autökologie und Soziologie einiger Pflanzen in den Wäldern des Leithagebirges.   101-  143. Elsalore Fetzmann: Zur Algenvegetation der Wasserfälle im Maltatal (Kärnten)   144-  153. Helmut Kinzel: Chemische Untersuchungen im Maltatal   154-  156. Hannes Broer: Desmidiaceen-Standorte in den Schladminger Tauern und den gegenüberliegenden Dachsteinvorbergen   157-  191. Helmut Melzer: Floristisches aus Niederösterreich und dem Burgenland, IV.   192-  200. Heinrich Freiherr von Handel-Mazzetti: Zur floristischen Erforschung von Tirol und Vorarlberg, IX.   201-  221. Jaro Podhorsky: Die Verbreitung des Cyclamen purpurascens in Salzburg und dem angrenzenden Bayern</dc:description>
+   <dc:description>sein vermuteter Einwanderungsweg   222-  225. Roman Moser: Ein Botrychium-Standort im Vorfeld des Großen Gosaugletschers   226-  227. Hans Franz Neubauer: Beobachtungen an Keim- und Erstlingsblättern von Sämlingen und über einige Unregelmäßigkeiten bei solchen.   228-  238. Walter Fiedler, Walter Url, Elsalore Fetzmann, W. Wieser, Richard Biebl, Helmut Knötig, O. Koenig, Reinhart Schuster, Erich Hübl, Gustav Wendelberger, Heinz Löffler, Wilhelm Kühnelt, Friedrich (Fritz) Schremmer, Felix Mainx: Besprechungen   239-  263</dc:description>
+   <dc:date>1962</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24535.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24535.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24535</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

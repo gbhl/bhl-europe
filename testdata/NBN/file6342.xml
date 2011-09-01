@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new record for the anchialine shrimp Ligur uveae (Borradaile, 1899) (Decapoda, Hippolytidae) in the Philippines with notes on its morphology, behaviour and ecology</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wear R.G.</dc:creator>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION Ligur uveae is generally considered an anchialine species (found in land-locked, generally supralittoral saltwater pools) with the type locality given simply as "Uvea, Loyalty Islands" by Borradaile (1899). The species is widely distributed geographically, although locally evidently confined to a very restricted habitat. Its known range extends from the western Indian Ocean to Polynesia: Aldabra, western Indian Ocean (Borradaile, 1917; Gordon, 1936); Halmahera, northern Moluccas, Indonesia (Holthuis, 1947; 1963); Uvea, Loyalty Islands (Borradaile, 1899; Gordon, 1936); Sayawa Islet near Uvea (Monod, 1968); Vatulele Island, Fiji Archipelago (Gordon, 1936; Derrick, 1957; Marden, 1958; Reed &amp; Hames, 1967); Vanua Vatu and Vanua Levu Islands, Fiji Archipelago (Gordon, 1936; Derrick, 1957); Fangafale Islet, Funafuti Atoll, Ellice Islands (Holthuis, 1973). The species is also thought to occur at the islet of Yanuca, near Beqa off the south coast of Viti Levu, Fiji (Clunie, pers. comm.). So far as can be ascertained from these published records and unpublished information, L. uveae is a typical member of the anchialine community. This is supported by the habitat of the present material collected from a small and well sunlit salt-water pool separated from the sea by a sand bar some 40 m wide. The Philippines specimens are found apparently exclusively on Tiniguiban, a small islet about one hectare in size lying about 500 m off the island of Guimaras near its southern end. Guimaras Island itself is separated from the larger provincial island of Panay in the central Philippines to the northwest, by about 20 km of open water (fig. 1). Local inhabitants of Igang, the nearby barrio (village) on Guimaras Island, and also those living in</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318847</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 125 - 140</dcterms:extent>
+   <dcterms:isPartOf>A new record for the anchialine shrimp Ligur uveae (Borradaile, 1899) (Decapoda, Hippolytidae) in the Philippines with notes on its morphology, behaviour and ecology (URN:ISSN:0024-0672) (Volume 51) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318847.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150133</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318847</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

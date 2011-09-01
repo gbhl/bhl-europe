@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Herpetozoa 5_3_4 (1992)</dc:title>
+   <dc:creator>Anibaldi  Claudio, Cabela  Antonia, Capula  Massimo, Fritz  Uwe, Grillitsch  Heinz, Kammel  Werner, Luiselli  Luca M., Pauler  Ingo, Proy  Christian, Schultschik  Günther, Tiedemann  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Tiedemann: Wirklicher Hofrat Dr. Josef Eiselt zum 80. Geburtstag.    83-   90. Luca M. Luiselli: The diet of the Slow Worm, Anguis f. fragilis Linnaeus, 1758, in the Tarvisio Forest (Carnic Alps, NE Italy) (Squamata: Sauria: Anguidae).    91-   94. Massimo Capula, Luca M. Luiselli, Claudio Anibaldi: Biennial reproduction and clutch parameters in an alpine population of the Slow Worm, Anguis fragilis Linnaeus, 1758 (Squamata: Sauria: Anguidae).    95-   98. Christian Proy: Zur Biologie von Agalychnis saltator Taylor, 1955 (Anura: Hylidae).    99-  107. Werner Kammel: Zur Situation der Wiesenotter, Vipera ursinii rakosiensis (Mehely, 1894), und der Pannonischen Bergeidechse, Lacerta vivipara pannonica Lac &amp; Kluch, 1968, im Burgenland (Österreich) (Squamata: Serpentes: Viperidae</dc:description>
+   <dc:description>Sauria: Lacertidae).   109-  118. Heinz Grillitsch, Antonia Cabela: Das potentielle Verbreitungsgebiet der Würfelnatter, Natrix t. tessellata (Laurenti, 1768), in Österreich (Reptilia: Squamata: Colubridae).   119-  130. Uwe Fritz: Podarcis p. pityusensis (Bosca, 1883) eingeschleppt in Cala Ratjada (NO-Mallorca) (Squamata: Sauria: Lacertidae).   131-  133. Uwe Fritz, Ingo Pauler: Erstnachweis von Acanthochelys pallidipectoris (Freiberg, 1945) für Paraguay (Testudines: Pleurodira: Chelidae).   135-  137. Günther Schultschik: Ergebnisse einer urodelenkundlichen Exkursion an die türkische Schwarzmeerküste und nach Rumänien.   143-  148. Antonia Cabela, Heinz Grillitsch: Fachzeitschriften in der Bibliothek der Herpetologischen Sammlung des Naturhistorischen Museums in Wien.   149-  152. Antonia Cabela: Mitgliederverzeichnis der Österreichischen Gesellschaft für Herpetologie. Stand vom 30. Juli 1992.   153-  158</dc:description>
+   <dc:date>1992</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27062.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27062.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27062</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

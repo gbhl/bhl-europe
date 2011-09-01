@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Alien Planorbid (Mollusca, Gastropoda Pulmonata) from South West Africa erroneously recorded as Biomphalaria Pfeifferi</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>In 1970 I published a record of the freshwater snail Biomphalaria pfeifferi (Krauss, 1848) (fam. Planorbidae) for South West Africa: "Sandamap Farm, Spitzkoppe" (Van Bruggen, 1970: 45, figs. 1-13). Dr. D. S. Brown of the Medical Research Council (London) kindly drew my attention to the fact that judging from the figures the described specimens certainly do not belong to this species. Dr. Brown generously agreed to examine the material, which unfortunately only consisted of shells. His conclusion is that these represent an imported alien species of the American planorbid genus Helisoma Swainson, 1840. This genus is rich in species which are very difficult to tell apart, particularly if their genital anatomy and geographical origin are unknown. Tropical aquarium fanciers and fish breeders have spread some freshwater snails outside their countries of origin and thus the genus Helisoma is also known from South Africa (Brown, 1967: 483). However, Dr. Brown writes: "Speaking from memory, my Helisoma from Natal were different to yours, in that the spire was generally far less elevated. I suppose that there may have been a number of introductions from separate sources." The following additional data on the above South West African locality have kindly been supplied by the collector, Mr. B. H. Lamoral of the Natal Museum, Pietermaritzburg, South Africa. He writes as follows: "I did however collect some molluscs on Spitzkoppe farm which is adjacent to Sandamap farm. The bulk of the Spitzkoppe farm molluscs we collected at the outer base of the empty water reservoir. This water reservoir was the usual one that one sees on farms (round, approximate diameter 4 metres, height 2 metres)." These reservoirs are usually supplied with water from a wind pump. "There</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318089</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 11 - 18</dcterms:extent>
+   <dcterms:isPartOf>Alien Planorbid (Mollusca, Gastropoda Pulmonata) from South West Africa erroneously recorded as Biomphalaria Pfeifferi (URN:ISSN:0024-0672) (Volume 48) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318089.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149375</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318089</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

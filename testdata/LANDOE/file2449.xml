@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wiener Entomologische Monatsschrift 1 (1857)</dc:title>
+   <dc:creator>Anonymus , Assmuss  Ed. Phil., Czagl  A., Hornig  Johann von, Kolenati  Friedrich Anton, Lederer  Julius, Loew  Hermann, Mann  Josef Johann, Miller  Ludwig, Müller  Julius, Sartorius  August, Schedl  Christian, Schiner  Ignaz Rudolph</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hermann Loew: Dipterologische Notizen.     1-   10. Anonymus: Vorwort.     1. Ludwig Miller: Die Apionen derWiener Gegend.    10-   25. Julius Lederer: Lycaeniden-Gattungen der europäischen Fauna.    25-   32. Hermann Loew: Dipterologische Mittheilungen.    33-   56. Ludwig Miller: Die Apionen der Wiener Gegend.    56-   59. Friedrich Anton Kolenati: Synopsis prodroma der Flughaut-Milben (Pteroptida) der Fledermäuse.    59-   60. Friedrich Anton Kolenati: Synopsis prodroma der Nycteribien.    61-   62. August Sartorius: Methode Trichopterygien zu fangen.    63-   64. Friedrich Anton Kolenati: Synopsis prodroma der auf Vespertilionen Europas lebenden Ceratopsyllen.    65-   66. Friedrich Anton Kolenati: Epizoa der Nycteribien.    66-   69. Johann von Hornig: Ueber die ersten Stände einiger Lepidoptern.    69-   73. Christian Schedl: Einige Bemerkungen über Psyche atra Freyer.    73-   75. Julius Lederer: Die körperlichen Auszeichnungen der europäischen Hesperiden.    75-   80. Julius Lederer: Vier neue europäische Schmetterlinge.    80-   83. A. Czagl: Analytische Darstellung der Histeriden. Nach Abbé de Marseul.    84-   88. Julius Müller: Beitrag zur Entwicklungsgeschichte von Pleretes matronula.    88-   89. Julius Lederer: Nachtrag zur Schmetterlings-Fauna von Beirut.    90-   95. Julius Lederer: Nachtrag zur Schmetterlings-Fauna von Beirut.    97-  102. Ignaz Rudolph Schiner: Einige Bemerkungen zu den in "Wiegmann's Archiv" enthaltenen "Jahresberichten über die Leistungen in der Entomologie".   103-  116. A. Czagl: Analytische Darstellung der Histeriden. Nach Abbé de Marseul.   116-  128. A. Czagl: Analytische Darstellung der Histeriden. Nach Abbé de Marseul.   129-  133. Friedrich Anton Kolenati: Eine Excursion in die Herrmannshöhle bei Kirchberg am Wechsel in Steiermark.   133-  135. Ed. Phil. Assmuss: Die Raupe von Hepialus sylvinus.   137. Ludwig Miller: Malachius gracilis n.sp.   138. Josef Johann Mann: Verzeichnis der im Jahre 1853 in der Gegend von Fiume gesammelten Schmetterlinge.   139-  160. Josef Johann Mann: Verzeichnis der im Jahre 1853 in der Gegend von Fiume gesammelten Schmetterlinge.   161-  189. Anonymus: Berichtigungen.   191. Anonymus: Register der Gattungen und neuen oder erwähnten Arten.   193-  194</dc:description>
+   <dc:date>1857</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28802.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28802.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28802</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

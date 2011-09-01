@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New Species of the Genus Ammotrypane Rathke</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Among the collection of Annelida of the Leyden Museum I met with some specimens of the interesting genus Ammotrypane, collected in the Malay Archipelago, Our knowledge of this genus of Opheliïdae is rather scanty. However as, according to the investigations of Grube 1) and Kükenthal 2), the number of segments and branchiae in each species are fixed, I presume that the species, mentioned in this paper, hitherto have not been described. The only species mentioned till now from that part of the Indo-Pacific are Ammotr. remigera Ehl. and — polycheles Gr. 3), also found in the neighbourhood of the Aroe-isles, like three of our species. Ammotrypane kampeni n. sp. Fig. 1. A specimen, measuring in length 35 mm. and provided with 58 pairs of parapodia, could not be identified with any of the species, already described. The body is faintly annulated, but does not show intersegmental grooves. The head is rounded above, not keeled and furnished with a conspicuous palpode. The first pair of parapodia lacks the branchia and consists only of a short, conical process with bristles; however the succeeding ones are all provided with it. In the anterior segments the branchia reaches to half the length of the lateral side, but commencing with the 10th one they grow longer, though not extending to the dorsal median line. A ventral cirrus, as present in some</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318108</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1919</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 22 - 24</dcterms:extent>
+   <dcterms:isPartOf>New Species of the Genus Ammotrypane Rathke (URN:ISSN:0024-0672) (Volume 5) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318108.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149394</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318108</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

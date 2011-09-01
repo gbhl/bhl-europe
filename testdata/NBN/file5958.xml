@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Sur deux nouveaux épicarides (Isopoda) parasites de Crustacés Décapodes</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bourdon R.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Le Dr. L. B. Holthuis, Rijksmuseum van Natuurlijke Historie, Leiden, que nous remercions très vivement ici, nous a envoyé récemment deux nouveaux Epicarides, l'un branchial, l'autre abdominal. Nous donnerons ci-dessous leur description. Le premier est un Bopyridae parasite d'un Scyllarus de la Mer Rouge. Cette récolte est particulièrement intéressante, car, ainsi que l'а remarqué M. Holthuis, elle constitue le premier cas de parasitisme connu chez les Palinura. Mais la capture apparaît d'autant plus exceptionnelle que le spécimen appartient aux Céponiens proprement dits, groupe dont les quelques cinquante espèces infestent exclusivement les Brachyura 1). A l'exception de Pseudione, phylogénétiquement peu évolué et encore très hétéroxène qui se rencontre sur les Décapodes les plus divers, les autres Bopyridae montrent, en effet, une spécificité parasitaire relative, les différentes formes d'un genre donné se fixant toujours sur des hôtes appartenant à une même unité taxonomique, et très rares sont les exemples où un genre parasite des Décapodes de plusieurs tribus, même voisines. Aucun, en tous cas, n'avait été jusqu'ici obtenu d'hôtes systématiquement aussi éloignés que le sont les Crabes et les Scyllares. Quant au second spécimen, il s'agit d'une femelle de Phryxidae, malheureu1) Par Céponiens nous entendons le groupe-Cepon sensu Shiino (1966) à l'exclusion du genre Ione, d'Hypocepon ovale Nierstrasz &amp; Brender-à-Brandis et Procepon insolitum Shiino qui, par leur faciès particulier et le fait d'être inféodés à des Thalassinidea laissent quelque doute sur leur appartenance aux vrais Céponiens; c'est le cas également pour Atyросеpon Nierstrasz &amp; Brender-à-Brandis dont l'hôte reste inconnu. sement sans mâle, sur un Periclimenes des Maldives, genre déjà infesté</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318463</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1967</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 167 - 174</dcterms:extent>
+   <dcterms:isPartOf>Sur deux nouveaux épicarides (Isopoda) parasites de Crustacés Décapodes (URN:ISSN:0024-0672) (Volume 42) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318463.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149749</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318463</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

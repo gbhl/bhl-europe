@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 94 (1954)</dc:title>
+   <dc:creator>An der Lan  Hannes, Anonymus , Raaz  Franz Friedrich, Schubert  Gustav, Schubert-Soldern  Rainer, Stratil-Sauer  Gustav</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gustav Stratil-Sauer: Der Reis als wirtschaftsgeographischer Faktor.     1-   20. Gustav Schubert: Medizinische Probleme der Raumschiffahrt.    21-   32. Hannes An der Lan: Die lebende Tertiär-Fauna des Ochrida-Sees (Balkan).    33-   48. Rainer Schubert-Soldern: Kritische Bemerkungen zur Instinktlehre.    49-   68. Franz Friedrich Raaz: Die Evolution der Kristallopgraphie: Kristallstrukturtheorie, Röntgenographie, Kristallchemie.    69-   87. Anonymus: Bericht über das 94. Vereinsjahr (1953/54). (Seiten V-IX).</dc:description>
+   <dc:date>1954</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30605.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30605.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30605</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

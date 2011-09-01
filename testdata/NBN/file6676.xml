@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On some telestacea and Alcyonacea (Coelenterata; Octocorallia) from the West Indian region</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Verseveldt J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>INTRODUCTION During several cruises of H.N1.M.S. Snellius and H.N1.M.S. Luymes in the Guyana shelf region and the Caribbean in the period of 1966 to 1972 a number of Telestacea and Alcyonacea were collected, which have been entrusted to me by Prof. Dr. W. Vervoort, director of the Rijksmuseum van Natuurlijke Historie, Leiden, and participant of most of the expeditions. I thank him for placing the material at my disposal. List of the cruises: "Snellius" zoological exploration of the continental shelf of Surinam (OCPS-I), western part of the Surinam shelf, March to May 1966. "Luymes" zoological exploration of the continental shelf of Surinam (OCPS-II), eastern part of the Surinam shelf, April 1969. "Luymes" Guyana shelf expedition (CICAR 15), shelf region from French Guiana to Guyana, August and September 1970. "Luymes" CICAR cruise no. 19, around Aruba and Curaçao, December 1970. "Luymes" Saba Bank expedition (CICAR 34/35), Saba Bank area, May and June 1972. Among the specimens I found several remarkable colonies, which seemed to represent a new Bellonella species. Fortunately I met Dr. Frederick M. Bayer, from Washington, D.C., who was at the Leiden Museum in October 1976. He is a specialist in the octocorallian fauna of the West Indian region, and I showed him my Bellonella specimens. To my surprise he immediately identified them with "Alcyonium" rubistella Deichmann, 1936. He agreed with me, however, that the species belongs to the genus Bellonella. A comparison with Deichmann's description was disappointing, so I decided to give a new description of B. rubistella. All specimens discussed in this paper are kept in the Rijksmuseum van</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319181</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 41 - 47</dcterms:extent>
+   <dcterms:isPartOf>On some telestacea and Alcyonacea (Coelenterata; Octocorallia) from the West Indian region (URN:ISSN:0024-0672) (Volume 53) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319181.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150467</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319181</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

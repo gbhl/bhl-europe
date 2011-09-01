@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Trichoptera Newsletter 15 (1988)</dc:title>
+   <dc:creator>Anonym , Czachorowski  Stanislav, Dorman  Jane, Edington  Ann, Edington  John M., Kohly  N., Li  Yowen, Malicky  Hans, Moor  Ferdinand C. de, Nimmo  Andrew P., Scott  Katherine Marjorie F., Stroot  Philippe, Sun  Changhai, Tian  Lixin, Tomaszewski , Weaver  John Ernst, Williams  Nancy E., Yang  Lianfang</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3-    4. Tomaszewski: 6th International symposium on Trichoptera - Lodz-Zakopane, 11-16 September 1989     5-    6. John Ernst Weaver: A Tribute to Lorus Johnson Milne     7-    8. Anonym: List of Research Workers on Trichoptera     9. Anonym: Dr. Donald G. Denning     9. Lixin Tian, Yowen Li, Lianfang Yang, Changhai Sun: Advances in Calssification Studies on Chinese Chaddisflies in 1987    10. Anonym: List of Research Workers on Trichoptera    10. Philippe Stroot: Working out a list of the Trichoptera threatened in the E.E.C.: a call for information    11-   13. Katherine Marjorie F. Scott: New unpublished Records for Southern Africa    14. Anonym: List of Research Workers on Trichoptera    14. Katherine Marjorie F. Scott, Ferdinand C. de Moor, N. Kohly: Life History Alternatives in the Genus Chematopsyche (Trichoptera: Hydropsychidae) in Southern Africa    16. Anonym: Note - Alasdair A Joyce    17. Anonym: Obscula Zoologica Fluminensia    17-   18. Stanislav Czachorowski: A new larva of the genus Ceractea Stephens. 1829?    18. Nancy E. Williams: Atlas of Larval Sclerites - Request for Assistance    19. Andrew P. Nimmo: Corrigendum to 'Psychoglypha (Monophylax) new subgenus (Trichoptera, Llimnephilidae, Limnephilini), Proc. 5th Int. Symp. Trich., Series Entomologica 39:53-54.1987'.    20. Andrew P. Nimmo: Comments on 'A preliminary study of the subfamily Hydropsychinae (Trichoptera: Hydropsychidae) in China, Proc. 5th Int. Symp. Trich., Scries Eatomologica 39:125-129., by Tian &amp; Li. 1987'.    20. Hans Malicky: A comment on figuring Three-Dimensional Structures    21-   24. Anonym: Trichopterological Literature    25-   37. John M. Edington, Ann Edington, Jane Dorman: Habitat partitioning amongst hydropsychid larvae in a malaysian stream    40</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26891.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26891.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26891</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

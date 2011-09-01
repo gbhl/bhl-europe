@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of a new member of the Monarcha trivirgatа-group from Flores, Lesser Sunda Islands (Aves, Monarchinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mees G.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>Amongst material from the island of Flores forwarded by the Rev. Fr. J. A. J. Verheijen SVD and the Rev. Fr. E. Schmutz SVD is a monarchine flycatcher which appears to represent an undescribed species. It may be known and diagnosed as follows. Monarcha sacerdotum species nova Type and unique specimen, ♂ ad., with large gonads (the testes measured about 7 X 41/2 mm each), 25 September 1971, Sesok, Flores, 1000 m, collected in the lower stages of primary forest by E. Schmutz. Rijksmuseum van Natuurlijke Historie no. 68135. Diagnosis. — A morphologically very normal member of the genus Monarcha; measurements, including size and shape of bill, similar to those of M. t. trivirgata (Temminck), but plumage different in two conspicuous characters : 1° there is no trace of rust colour or brown in the plumage, the underparts (except for the black throat patch) being pure white; 20 the outer pair of rectrices with much more white : the outer web is white to its base, the inner web is distally white over a length of 38 mm. In M. t. trivirgata the white part of the inner web varies from 24-33 mm in length, and on the outer web it is at most a few millimetres longer. The second and third pairs of rectrices have a decreasing amount of white, but also much more than in the corresponding pairs of M. t. trivirgata. The upper parts are similar to those of M. t. trivirgata : forehead, sides of head, chin and throat patch glossy black, central three pairs of rectrices and upper tail coverts black, remiges and upper wing coverts blackish with grey outer edges, remainder of upper parts grey. In general appearance M. sacerdotum is remarkably close to Heteranax mundus (Sclater), but differs in the greater extent of white on the tail, the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318829</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 179 - 181</dcterms:extent>
+   <dcterms:isPartOf>Description of a new member of the Monarcha trivirgatа-group from Flores, Lesser Sunda Islands (Aves, Monarchinae) (URN:ISSN:0024-0672) (Volume 46) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318829.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150115</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318829</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Sacculinidae, chiefly in the collection of the United States National Museum</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In a previous paper (Boschma, 1933 b) descriptions were given of 22 species of Rhizocephala in the collection of the United States National Museum. In the cited paper especially attention was given to the details of the external and the internal cuticle, the data concerning the structure of the male organs and the colleteric glands were briefly described but not figured. The measurements of the type specimens were noted but no description was given of the shape of the animals. In a later paper (Boschma, 1937) some more details were described of the male organs and the colleteric glands of the specimens belonging to the genus Sacculina, but these structures up till now remain imperfectly known in the specimens belonging to other genera of the group. To obtain a better basis for comparison with other specimens it seemed desirable to describe the hitherto imperfectly known details of the specimens. Some of the new names in the cited paper appeared to be synonyms of other names, whilst some species proved to belong to another genus than the one in which they originally were placed. The species are arranged here in the same order as in the original paper. In most of the drawings of sections the excrescences of the cuticle are omitted. Sacculina lata Boschma (figs, 1a, 4a). Sacculina lata Boschma, 1933 b, p. 219, fig. 1 (external and internal cuticle) ; Idem, 1937, p. 273, fig. 55 (male organs), fig. 56 (colleteric gland). Type specimen on Charybdis miles de Haan, Misaki, Japan, A. S. Pearse don., 1930 (collection U. S. N. M.). The specimen (21 X 11 X 7 1/2 mm) has an oblong shape with more or</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317762</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1950</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 55</dcterms:extent>
+   <dcterms:isPartOf>Notes on Sacculinidae, chiefly in the collection of the United States National Museum (URN:ISSN:0024-1652) (Volume 7) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317762.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149048</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317762</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The pelvic bones of Physeter macrocephalus L.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deinse, van A.B.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Although from 1255 up till now about 47 Physeter macrocephalus have been cast upon the coast of the Netherlands, or have come ashore alive, but very few materials have been preserved and we are in the possession of only two specimens, those of 1937, the complete skeletons of which are preserved in the Rijksmuseum van Natuurlijke Historie, Leiden. Apart from these skeletons the following fragments are preserved : 1. The damaged upper part of the skull and three vertebrae from the animal of Scheveningen, 1617. These fragments are in the possession of the Dutch Protestant Church, Keizerstraat, Scheveningen (Van Deinse, 1918, p. 42, etc., and Plate IV). 2. The left humerus, radius, and ulna, grown together, probably from the same specimen as no. 1. This bone was found, November 1907, in a pond in The Hague, and is now kept at the Gymnasium Erasmianum, Rotterdam (Van Deinse, 1916, p. 521, etc., with 4 figures, and 1918, pp. 38, 39, 47, with 2 figures). 3. One tooth from the sperm whale of Terschelling, 1762, preserved in the West-Terschelling Museum (Van Deinse, 1946, p. 206). 4. Fragment of a lower jaw, found in 1885 in a moat at Leiden, now in the Rijksmuseum van Natuurlijke Historie, Leiden (Van Deinse, 1918, P- 49). 5. The distal part of a humerus, and an ulna with olecranon lacking. Both pieces were found at Sas-van-Gent, Zeeuwsch-Vlaanderen, Zeeland, in April 1948, they are now in the Geological Museum, Leiden (Van Deinse, Nieuwe Rotterdamse Courant, July 24th, 1948). The above mentioned two skeletons are from male sperm whales (length</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318906</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 25 - 32</dcterms:extent>
+   <dcterms:isPartOf>The pelvic bones of Physeter macrocephalus L. (URN:ISSN:0024-0672) (Volume 33) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318906.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150192</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318906</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Apollo 29 (1972)</dc:title>
+   <dc:creator>Anonym , Grohs  Hans, Kohl  Hermann, Mandl  Karl, Merwald  Friedrich (Fritz), Rohrhofer  Josef, Schöffer  Emmerich, Zerlik  Alfred</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Grohs: Gedanken zum Welt-Tierschutztag am 1. Oktober     1-    3. Anonym: Im Urlaub wird der Hund unbequem     3. Karl Mandl: Blutschwitzerkäfer in den Urfahrwänden     3-    4. Friedrich (Fritz) Merwald: Über das Vorkommen der Europäischen Sumpfschildkröte in Oberösterreich     4-    5. Hermann Kohl: Begehung des Stollens unter der Wasserstiege am Römerberg     5-    6. Emmerich Schöffer: Der Juni 1972 dauerte um eine Sekunde länger     6. Alfred Zerlik: Zum 100. Todestag von P. Johann Nepomuk Hinteröcker S. J., dem Begründer des ersten botanischen Gartens in Linz     7-    8. Josef Rohrhofer: Naturkundliche Wanderziele in Oberösterreich. Der Edelkastanienwald bei Unterach     8-    9. Anonym: Klimaschwankungen von Linz     9. Anonym: Konzeption erst ein halbes Jahr nach Paarung bei Fledermäusen    10. Anonym: Kurzberichte aus Österreich und aller Welt    10-   12</dc:description>
+   <dc:date>1972</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26487.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26487.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26487</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

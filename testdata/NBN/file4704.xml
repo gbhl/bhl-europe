@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Alexander von Humboldt and Coenraad Jacob Temminck</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Raat A.J.P.</dc:creator>
+   <dc:subject>Geschiedenis van de biologie</dc:subject>
+   <dc:description>INTRODUCTION In the archives of the Rijksmuseum van Natuurlijke Historie in Leiden there is a map with three letters written by Alexander von Humboldt (17691859) to the first director of the Museum, Coenraad Jacob Temminck (1778-1858). The map, the hard cover of John Gould's "Synopsis of the birds of Australia" (April 1837), bears the handwritten caption "correspondentie von Humboldt" (correspondence von Humboldt). Besides the letters of von Humboldt, the map contains three concepts of letters written by C. J. Temminck to A. von Humboldt. These letters were probably not the sole contacts that von Humboldt and Temminck ever had, for as early as 1790 von Humboldt already visited the Temminck family in Amsterdam. It is likely that there have been more contacts between von Humboldt and Temminck than are recorded here, but letters may have gotten lost and personal visits not documented. The letters were written in the period between 1821 and 1857. In that period C. J. Temminck was the director of the Rijksmuseum van Natuurlijke Historie, and the inspiring promotor of the scientific exploration of the Dutch East-Indies by the "Natuurkundige Commissie" (Natural History Commission) (Sirks, 1915; Veth, 1879). Coenraad Jacob Temminck was born in Amsterdam in 1778 as the son of the rich "thesaurier" (treasurer) of the Dutch United Chartered Elast India Company, Jacob Temminck. Jacob Temminck was since 1770 an ardent collector of exotic birds and other natural curiosities. Without any doubt C. J. Temminck's interest in ornithology was influenced by his father's collection. C. J. Temminck was educated by a Swiss private tutor in Amster-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317208</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1976</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 19 - 38</dcterms:extent>
+   <dcterms:isPartOf>Alexander von Humboldt and Coenraad Jacob Temminck (URN:ISSN:0459-1801) (Volume 21) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317208.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148494</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317208</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

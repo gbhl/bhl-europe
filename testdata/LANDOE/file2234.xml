@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 17 (1857)</dc:title>
+   <dc:creator>Anonymus , Ehrlich  Karl, Reslhuber  Augustin, Stülz  Jodok</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Jodok Stülz: Zur Geschichte der Pfarre und der Stadt Vöcklabruck.     1-  190. Anonymus: 17. Jahres-Bericht.     3-    8. Anonymus: Vermehrung der Sammlungen.     9-   24. Anonymus: Verzeichniß der Aenderungen im Stande der Ehren- und ordentlichen Mitglieder des Museum Francisco-Carolinum.    25-   26. Anonymus: Protector: Se. kaiserliche Hoheit der durchlauchtigste Prinz und Herr Franz Carl.    27-   28. Karl Ehrlich: Die nutzbaren Gesteine Oberösterreichs und Salzburgs nach dem geognostischen Vorkommen und in ihrer Anwendung.   191-  234. Augustin Reslhuber: Bericht über die Kometen von den Jahren 975, 1264 und 1556.   235-  256</dc:description>
+   <dc:date>1857</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28486.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28486.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28486</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Malleefowl conservation in New South Wales: a review</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Priddel D.</dc:creator>
+   <dc:creator>Wheeler R.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Megapodiidae</dc:subject>
+   <dc:subject>malleefowl</dc:subject>
+   <dc:subject>Leipoa ocellata</dc:subject>
+   <dc:subject>threatening processes</dc:subject>
+   <dc:subject>conservation</dc:subject>
+   <dc:subject>management</dc:subject>
+   <dc:subject>recovery actions</dc:subject>
+   <dc:description>Together with land clearance, grazing by stock and inappropriate fire regimes, predation by the introduced European red fox Vulpes vulpes (Linnaeus, 1758) has decimated populations of malleefowl Leipoa ocellata Gould, 1840. The decline of the malleefowl has been most pronounced in New South Wales, where foxes prey so heavily on malleefowl that adult mortality exceeds recruitment of young into the breeding population. Although young malleefowl are particularly vulnerable to foxes, subadults and adults are also taken. Within New South Wales, heavy predation by foxes occurs both in the remnants of native vegetation within agricultural lands and in the large tracts of mallee that lie further inland. Foxes appear to be the prime cause of malleefowl mortality throughout much of the malleefowl’s geographic range. Both fire and grazing by domestic stock reduce the carrying capacity of the habitat for malleefowl. In reserves where stock are excluded, there is no evidence that food resources are limiting malleefowl populations. Exotic herbivores, such as goats and rabbits, probably contribute to the demise of the malleefowl by reducing vegetative cover. Malleefowl are particularly vulnerable to predation by raptors in habitats where vegetative cover is sparse. Greater canopy cover, together with greater stocks of seeds within the soil seed-bank, can explain why old-growth mallee is optimal habitat for malleefowl. Malleefowl survival can be enhanced substantially by fox control. Fox baiting, however, needs to be frequent, intensive and widespread to reduce fox density to levels where predation no longer threatens the survival or recovery of malleefowl populations. Poisoning of foxes on surrounding properties, together with effective rabbit and goat control, is needed to maximise the effectiveness of any fox-control program. Without conservation action, the steady decline and loss of extant populations will continue unabated. Improved survival of malleefowl in habitat that has been intensively managed for their benefit is encouraging, but as yet there has been no definitive evidence of population recovery. In New South Wales, conservation efforts will need to focus on the expansive reserves of mallee in the west of the state. Conservation of malleefowl throughout its range is likely to be achieved only by the use of exclusion fencing to protect isolated populations in small remnants of native vegetation.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219426</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 125 - 142</dcterms:extent>
+   <dcterms:isPartOf>Malleefowl conservation in New South Wales: a review (Volume 327)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219426.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46268</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219426</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

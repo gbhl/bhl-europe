@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XLVI. Nachtägliche Betrachtungen zu der revision der subfamilie Parnassiana (Fortsetzung 19)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>NOTIZEN ÜBER PARNASSIUS MNEMOSYNE EPLEKTUS RÜ TIMEYER UND P.M.PHAIOHYALINUS RÜ TIMEYER Herr E. Rütimeyer hat in 1969 (Ent. Ges. Basel, (N.F.) 19 (4): 111 und 112-113) zwei Unterarten von Parnassius mnemosyne L. beschrieben. P. mnemosyne ekplektus Rütimeyer, Topotypus: Bund-Alp, oberhalb Griesalp, 1680 m, oberes Kiental. Merkwürdig ist, dass der Autor die ihm vorliegenden Exemplare, besonders die ♀, als denen der subsp. uralka Bryk und drenowskyi Bryk &amp; Eisner nahestehend bezeichnet, anstatt sie mit in der Nähe fliegenden Unterarten zu vergleichen. Nach den Abbildungen zur urteilen, handelt es sich um P. mnemosyne L. von typisch schweizer Habitus. P. mnemosyne phaiohyalinus Rütimeyer, Topotypus: Unteres, horizontales Urbachtal, 1000-1100 m, südlich von Innertkirchen. Die Abbildungen zeigen Exemplare von schweizer Karakter. EINE NEUE UNTERART VON PARNASSIUS EVERSMANNI Parnassius eversmanni (felderi) rubeni subsp. nova (pl. 2 figs, a, b) Die von Kotzsch als Saisonform? beschriebene Parnassius eversmanni (felderi) innae von Polovina, Bureja-Mts., wurde in der parnassiologischen Litteratur wiederholt erörtert und angezweifelt. Eine Serie van 11 ♂ 2 ♀ aus dem Autonomous Jewish Territory in den kleinen Chingan Mts. zeigt aber, dass P. eversmanni felderi Bremer doch ein weiteres Verbreitungsgebiet hat, als für diesen Parnassius bekannt war. Der habitus der kleinen Serie ist deutlich von dem der felderi-Vertreter aus dem Radejevka-Gebiet, Amur, verschieden, weshalb ich die Chingan-Stücke als Parnassius eversmanni (felderi) rubeni sbsp. nova festhalte.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318640</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 87 - 90</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XLVI. Nachtägliche Betrachtungen zu der revision der subfamilie Parnassiana (Fortsetzung 19) (URN:ISSN:0024-0672) (Volume 45) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318640.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149926</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318640</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

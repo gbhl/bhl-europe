@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 32_1951 (1951)</dc:title>
+   <dc:creator>Anonymus , Franz  Herbert, Heikertinger  Franz, Jakob  Hermann, Mader  Leopold, Mandl  Karl, Petrovitz  Rudolf, Scheerpeltz  Otto</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Heikertinger: Bestimmungstabellen europäischer Käfer. (12. Stück.) LXXXII. Fam. Chrysomelidae. 5. Subfam. Halticinae. Abteilung II. Bestimmungstabellen der paläarktischen Arten der Gattungen Podagrica Foudr. Mantura Steph. und Chaetocnema Steph.     1-   83. Franz Heikertinger: Aus Entomologenkreisen.    84. Anonymus: Geleitwort.    85. Anonymus: Nachruf für Reg.-Rat Franz Heikertinger.    86-   87. Herbert Franz: Die nordwesttiberischen Arten aus der Verwandtschaft der Nebria sobrina Schaufuss 1862 (Coleopt., Carabidae).    88-   92. Herbert Franz: Die nordwesttiberischen Arten der Gattung Dichotrachelus (Coleopt. Curcul.).    93-   96. Otto Scheerpeltz: Aus der Schule des Käfersammlers XLIII. Eine einfache Ködermethode für alle an ausfließendem Baumsaft zu findenden Insekten.    97-   99. Rudolf Petrovitz: Eine neue Methode zur Präparation von Meloe-Arten.   100-  101. Hermann Jakob: Eine neue Lema-Art aus China. (Chrys. Col.). 9. Beitrag zur Kenntnis pal. Chrysomeliden.   102-  103. Hermann Jakob: Bemerkungen zu Chrysomela cerealis ssp. alternans Panz. (=ssp. plorans Bechyne). (Chrys.Col.). 10. Beitrag zur Kenntnis pal. Chrysomeliden.   104. Karl Mandl: Die Käferfauna Österreichs. II. Die Cicindeliden Österreichs. Mit einer Vorbemerkung der Schriftleitung.   105-  122. Leopold Mader: Weiteres über Coccinelliden aus der Sammlung des Naturhistorischen Museums in Wien.   123-  131. Otto Scheerpeltz: Die paläarktischen Arten der Gattung Blepharrhymenus Solier. (Col. Staphyl.). (54. Beitrag zur Kenntnis der paläarktischen Staphyliniden.).   132-  143. Otto Scheerpeltz: Eine neue Art der Atheten-Untergattung Ceritaxa Muls. Rey (Col. Staph.). (55. Beitrag zur Kenntnis der paläarktischen Staphyliniden.).   144-  145. Otto Scheerpeltz: Eine neue Aleochara (Col. Staphyl.) aus einem Baumhöhlennest der Hohltaube (Columba oenas). (56. Beitrag zur Kenntnis der paläarktischen Staphyliniden.).   146-  148. Otto Scheerpeltz: Bestimmungstabelle der bis heute bekannt gewordenen paläarktischen Arten der Gattung Meotica Muls. Rey. (Col. Staphyl.). (57. Beitrag zur Kenntnis der paläarktischen Staphyliniden.).   149-  158. Karl Mandl: Ergebnisse einer Revision der Carabiden-Sammlung des Naturhistorischen Museums in Wien (3. Teil). Neue Calosoma-Formen in der Koleopterensammlung des Naturhistorischen Museums in Wien.   159-  165. Anonymus: Aus Entomologenkreisen.   166. Anonymus: Verzeichnis der im 32. Bande neu beschriebenen Gattungen, Arten und Formen.</dc:description>
+   <dc:date>1951</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26394.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26394.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26394</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

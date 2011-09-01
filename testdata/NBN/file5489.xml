@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a new genus of Aphroditidae from the Netherlands' East-Indies</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Horst R.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>At the Stations 49a and 260 the Siboga-Expedition collected two specimens of Aphroditidae, that, though agreeing in their main characters with Hermione and Laetmonice, in my opinion cannot be ranged in these genera on account of the quite different shape of their dorsal bristles; therefore the new genus Halogenia may be proposed for them. Halogenia arenifera n. sp. Siboga-expedition, Stat. 49a, Sapeh-strait, depth of 69 M. The body of the unique specimen is ellipsoidal, long 12 mm., broad 7 mm.; the number of its segments is about 30. Its ventral side is rough, densely beset with small tubercles, whereas the dorsum is entirely covered with sand-grains, that are adhering to the elytra. No dorsal felt could be detected. The parapodia are slender, conical, measuring in length two thirds of the breadth of the body. The sides of the body are flanked by long dorsal bristles (fig. 1), that are thin and flexible, pale-brown coloured; they show a fine, longitudinal striation and terminate at their distal end in a large, dark-brown hook, bearing on its convex side a conical point. The bristle is surrounded by a sheath, that (presumably by the influence of the spirit) has a wrinkled appearance and above the hook passes in a rather long filiform appendage, that in its basal part shows a small enlargement. In the anterior segments these bristles are so long, that bent afterwards they almost reach to the end of the body. In front of these uncinate bristles some barbed setae are situated, provided with a rather long spear-tip, behind which two or three recurved fangs occur. Each</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317994</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 63 - 64</dcterms:extent>
+   <dcterms:isPartOf>On a new genus of Aphroditidae from the Netherlands' East-Indies (URN:ISSN:0024-0672) (Volume 2) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317994.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149280</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317994</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

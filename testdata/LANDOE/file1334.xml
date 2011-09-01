@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Entomologischer Anzeiger 12 (1931)</dc:title>
+   <dc:creator>Aue  A.U.E., Bandermann  Franz, Hepp  Albert, Liebke  Max, Lommatzsch  Wilhelm, Pic  Maurice, Plavilstshikov  Nikolaj Nikolajevitsch, Polentz  Georg, Schauer  Gustav, Schneider  Carl, Skala  Hugo Otto Victor</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Max Liebke: Laufkäfer-Studien X.   146-  149. A.U.E. Aue: Cyankali in Schnittwunden.   157-  158. Max Liebke: Laufkäfer-Studien X.   159-  162. Hugo Otto Victor Skala: Zur Falterfauna Mährens und Schlesiens.   179-  182. Nikolaj Nikolajevitsch Plavilstshikov: Eine neue Leptura-Art aus Circassien (Col., Cerambycidae).   182-  184. A.U.E. Aue: Entomologisches Allerlei XIII.   189-  192. Max Liebke: Laufkäfer-Studien X.   193-  195. Franz Bandermann: Einige aberrative Noctuiden aus Halle.   196-  197. A.U.E. Aue: Entomologisches Allerlei XIII.   205-  208. Wilhelm Lommatzsch: Beitrag zur Kenntnis der Großschmetterlingsfauna von Frankfurt a.M.   209-  212. Albert Hepp: Über Farbenformen von Geotrupes mutator Marsham, darunter zwei neue  anthracina, bicolora  und ihr Auftreten um Frankfurt (Main) (Scarabaeidae).   213-  215. A.U.E. Aue: Entomologisches Allerlei XIII.   223-  226. Wilhelm Lommatzsch: Beitrag zur Kenntnis der Großschmetterlingsfauna von Frankfurt a.M.   227-  230. Georg Polentz: Beiträge zur schlesischen Käferfauna.   231-  232. Gustav Schauer: Eine neue Art der afrikanischen Cetoniden-Gattung Apocnosis.   235. Carl Schneider: Die in Württemberg vorkommenden Arten der Geometridengattungen Thephronia Hbn.-Perconia Hbn.   244-  247. Maurice Pic: Neue exotische Coleopteren (Malacodermata) II.   250-  255</dc:description>
+   <dc:date>1931</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27428.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27428.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27428</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 79 (1930)</dc:title>
+   <dc:creator>Anonymus , Bojko  Hugo, Cufodontis  Georg, Eidmann  Hermann, Handel-Mazzetti  Heinrich Freiherr von, Neumayer  Hans, Pehr  Franz, Poche  Franz, Prenn  Fritz, Scheerpeltz  Otto, Vetter  Johann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Sitzungsberichte.     1-  120. Otto Scheerpeltz: Monographie der Gattung Olophrum Er. (Col. Staphylinidae)..     1-  257. Franz Pehr: Floristische Streifzüge im steirischen Mießlingtale.   257-  268. Johann Vetter: Über die Verbreitung einiger Epilobien in Österreich.   268-  273. Franz Poche: Dr. Stiles "American referendum" on three propositions in Nomenclature.   273-  283. Fritz Prenn: Aus der Nordtiroler Libellenfauna.   283-  296. Georg Cufodontis: Die Namen Senecio integrifolius und helenitis in ihrer richtigen Verwendung.   297-  299. Hugo Bojko: Heleocharis Vierhapperi nov. spec. Eine neue Sippe aus den Dolomiten.   300-  307. Heinrich Freiherr von Handel-Mazzetti: Ein bisher unbekanntes Vorkommen nordischer Taraxaca in den Alpen.   307-  308. Hermann Eidmann: Entomologische Ergebnisse einer Reise nach Ostasien.   308-  335. Hans Neumayer: Floristisches aus Österreich einschließlich einiger angrender Gebiete I.   336-  411. Anonymus: Leitung der Gesellschaft. (Seiten III-IV)</dc:description>
+   <dc:date>1930</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28071.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28071.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28071</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

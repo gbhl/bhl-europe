@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De identiteit van Rattus bukit Bonhote</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Raadt, de O.L.E.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>In 1903 beschreef Bonhote 1) onder den naam van Mus bukit een rat, afkomstig van het Maleische schiereiland (Jalor); aangezien nu deze R. bukit ook op Java voorkornt en in de Indische literatuur eertijds onder den naam van R. jerdoni Blyth te boek stond, is het zeer zeker de moeite waard eens na te gaan, op welke wijze de naam bukit ontstaan is; men kan nu bij Hossack 2) het volgende hierover vinden, hij schrijft (blz. 4): „Mr. Bonhote admits that a series of M. bukit agreed exactly with a series sent home by Mr. Lyle from Assam and recorded by Mr. Bonhote himself as M. jerdoni. Nevertheless, not only does he retain the name of M. bukit, but he places it in a different subgroup from M. jerdoni, namely, that of M. griseiventer 1). M. pellax is practically a prototype of M. jerdoni, but he separates them". Ziedaar nu de zeer zonderlinge en allesbehalve wetenschappelijke wijze, waarop door Bonhote deze zoogenaamde Mus bukit van de Mus jerdoni is afgescheiden; desniettemin heeft hij, zooals uit de literatuur blijkt, met deze afscheiding nog zoo'n bijval geoogst, dat sindsdien de R. bukit op Java zelfs in 2 subspecies is onderverdeeld2), terwijl tevens de naam R. jerdoni Blyth geheel uit de Indische literatuur is verdwenen! Het is dan ook, meen ik, thans wel heel duidelijk, dat er hoegenaamd niet het minste verschil bestaat tusschen R. bukit en R. jerdoni en dat derhalve de tegenwoordig gangbare namen R. bukit treubi en R. bukit temmincki van stonde af aan plaats zullen moeten maken voor den vroeger bestaanden naam van de bewuste rat, n.l. R. jerdoni Blyth. LITERATUUR. 1. Bonhote, Geciteerd naar Hossack.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318959</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 30 - 30</dcterms:extent>
+   <dcterms:isPartOf>De identiteit van Rattus bukit Bonhote (URN:ISSN:0024-0672) (Volume 16) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318959.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150245</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318959</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

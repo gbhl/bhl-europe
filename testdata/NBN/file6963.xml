@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Waarnemingen van de veenmol Gryllotalpa gryllotalpa in de duinen van Noord-Holland (Orthoptera).</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Kerkhof W.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Orthoptera</dc:subject>
+   <dc:subject>veenmol</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>verspreiding</dc:subject>
+   <dc:description>The mole cricket Gryllotalpa gryllotalpa in de Dutch dunes (Orthoptera) In recent years mole crickets Gryllotalpa gryllotalpa were found at 37 sites in the Dutch dunes. Conservation measures to create moist dune valleys seem to play a positive role for mole crickets. Half of the new records stemmed from recently created wet areas. A number of mole crickets were caught at night during bird investigations with standing nets. Probably the change of the environment in the dunes can develop more mole cricket sites in the region. Possibly the species can colonize the vegetable garden complexes at the edge of the dunes, its main habitat in the province of Zuid-Holland.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:326993</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>4</dcterms:extent>
+   <dcterms:extent>page 27 - 30</dcterms:extent>
+   <dcterms:isPartOf>Waarnemingen van de veenmol Gryllotalpa gryllotalpa in de duinen van Noord-Holland (Orthoptera). (URN:ISSN:01692453) (Volume 26)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/326993.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/159277</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/326993</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

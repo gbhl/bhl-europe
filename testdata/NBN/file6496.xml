@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Hispinen aus dem Holländischen Kolonialgebiet. 27. Beitrag zur Kenntnis der Hispinen (Col. Chrys.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Uhmann  E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>NEUE ART: Botryonopa Kleinei, Borneo, NEUE VERBREITUNGSGEBIETE: Metaxycera purpurata Guér, Surinam, bisher Brasilien, ferner Paraguay, Uruguay, Cayenne, Columbien. Sceloenopla maculata 01., Surinam, bisher Cayenne. Sceloenopla quinquemaculata Guér., Surinam, bisher Columbien. Amplipalpa collaris Guér., Surinam, bisher Brasilien. Botryonopa Kleinei n. sp. Elongata, subdepressa, nitida, flavo-testacea, antennis, articulo primo excepto, nigris; elytris in parte tertia postica fascia lata, obliqua, metallico-violacea a sutura usque ad marginem lateralem, apice rufo-testaceo; prothorace longitudine latiore, lateribus rotundatis et undulatis, disco postice irregulariter punctato, ante scutum impresso; elytris basi prothoracis latioribus, parallelis, in parte apicali oblique truncatis, in apice extremo rotundatis, angulo suturali spinuloso, regulariter punctato-striatis, interstitiis planis; femoribus omnibus dentatis. — Long 16,5 mm. Der B. Sheppardi Baly ähnlich, aber heller gelbbraun, der violettblaue Apikalfleck bindenartig, die Spitze der Decken rötlich-gelbbraun, Halsschild nicht seidig-glänzend, der 7. und 8. Zwischenraum ohne unregelmässige Punkte, anscheinend mit B. Helleri Heyden näher verwandt. Kopf auf der Stirn fein und zerstreut punktiert, mit feiner Mittellinie, zwischen den Fühlern tief rinnenförmig. Hals deutlich abgesetzt. Schläfen glatt. — Fühler die Schultern überragend, zylindrisch, 1. Fühlerglied verdickt, 2. etwas kürzer, 3. fast doppelt so lang wie das 2., 4. etwas kür-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319001</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 178 - 179</dcterms:extent>
+   <dcterms:isPartOf>Hispinen aus dem Holländischen Kolonialgebiet. 27. Beitrag zur Kenntnis der Hispinen (Col. Chrys.) (URN:ISSN:0024-0672) (Volume 13) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319001.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150287</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319001</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

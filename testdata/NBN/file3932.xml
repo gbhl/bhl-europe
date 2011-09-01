@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New species of the genera Foenomorpha Szépligeti (Cenocoeliinae) and Chelonus Panzer (Cheloninae) (Hymenoptera: Braconidae), from French Guiana, Suriname, and Brazil</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Braet Y.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae</dc:subject>
+   <dc:subject>Cenocoeliinae</dc:subject>
+   <dc:subject>Cheloninae</dc:subject>
+   <dc:subject>Mendesellinae</dc:subject>
+   <dc:subject>Foenomorpha</dc:subject>
+   <dc:subject>Chelonus</dc:subject>
+   <dc:subject>Baculonus</dc:subject>
+   <dc:subject>Epsilogaster</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Neotropical</dc:subject>
+   <dc:subject>French Guiana</dc:subject>
+   <dc:subject>Suriname</dc:subject>
+   <dc:subject>Brazil</dc:subject>
+   <dc:subject>Costa Rica</dc:subject>
+   <dc:subject>Peru</dc:subject>
+   <dc:subject>distribution</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:description>Two new species of the genus Foenomorpha Szépligeti, 1904, are described (F. rufa spec. nov. from Brazil and F. senlura spec. nov. from French Guiana). A key to the known species is added and notes on the other two species are added. Foenomorpha filicornis (Cameron, 1887) is a new combination for Cenocoelius filicornis Cameron. An aberrant group of Chelonus with very slender antennal segments and a protuberant scutellum from French Guiana and Suriname is described and included in the new subgenus Baculonus (type species: C. pachytellus spec. nov.). Epsilogaster palenque Whitfield &amp; Mason, 1994, is reported for the first time from Costa Rica.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:217437</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2001</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 103 - 118</dcterms:extent>
+   <dcterms:isPartOf>New species of the genera Foenomorpha Szépligeti (Cenocoeliinae) and Chelonus Panzer (Cheloninae) (Hymenoptera: Braconidae), from French Guiana, Suriname, and Brazil (URN:ISSN:00240672) (Volume 75, 1-15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/217437.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45059</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/217437</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

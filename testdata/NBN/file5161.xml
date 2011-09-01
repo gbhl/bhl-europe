@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the West Palaearctic species of the genus Bassus Fabricius (Hymenoptera: Braconidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Simbolotti G.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Agathidinae; Bassus; Agathis; Europe; North Africa; West Palaearctic; biology; distribution; keys.</dc:subject>
+   <dc:description>The West Palaearctic species of the genus Bassus Fabricius, 1804 (Braconidae: Agathidinae) are revised and keyed, together with the similar Agathis mediator group. Twenty-two species of Bassus and four species of the Agathis mediator group are recognized, of which three are new: B. barbieri from Algeria, B. epinotiae from Great Britain, and B. graecus from Greece. Seven species are synonymized: Microdus lugubrator Ratzeburg, 1852 with B. mediator (Nees, 1814), Microdus punctatus Abdinbekova, 1975 with B. rugulosus (Nees, 1834), Microdus annae Enderlein, 1908, Microdus victoris Telenga, 1955, and M. anuphrievi Tobias, 1986 with B. tumidulus (Nees, 1814), Microdus rufiventris Abdinbekova, 1975 with B. nugax (Reinhard, 1867), and Agathis minuta Niezabitowski, 1910, with Cenostomus lugubris Foerster, 1862. Three genera are synonymized with Bassus: Camptothlipsis Enderlein, 1920, Hormagathis Brues, 1926 and Obesomicrodus Papp, 1971. Lectotypes are designated for the following species: Cenostomus lugubris Foerster, 1862; Microdus arcuatus Reinhard, 1867; M. brevicaudis Reinhard, 1867; M. fortipes Reinhard, 1867, and M. nugax Reinhard, 1867. Neotypes are designated for Microdus cingulipes Nees, 1814; M. clausthalianus Ratzeburg, 1844; M. dimidiator Nees, 1834; M. linguarius Nees, 1814; M. mediator Nees, 1814; M. pumilus Ratzeburg, 1844; M. rufipes Nees, 1814; M. rugulosus Nees, 1834; and M. tumidulus Nees, 1814. Orgilus abbreviator (Ratzeburg, 1852) comb. nov. may be a senior synonym of O. nanellae Tobias, 1986. Bassus niger (Papp, 1971 nec Telenga, 1955) is renamed as B. nigrisoma nom. nov.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317666</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 80</dcterms:extent>
+   <dcterms:isPartOf>Revision of the West Palaearctic species of the genus Bassus Fabricius (Hymenoptera: Braconidae) (URN:ISSN:0024-1652) (Volume 281) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317666.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148952</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317666</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

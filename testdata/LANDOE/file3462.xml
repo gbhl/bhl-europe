@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahresbericht der Biologischen Station Lunz 1991-92_014 (1993)</dc:title>
+   <dc:creator>Adamicka  Peter, Aigner  Fritz, Anonymus , Brehm  Vincenz, Bretschko  Gernot, Kowarc  Verena A., Leichtfried  Maria, Maier  Klaus-Jürgen, Mathooko  Jude M., Panek  Karl, Prosenz  Bernd, Schmid  Peter-Eric, Schmid-Araya  Jenny M., Waringer  Johann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gernot Bretschko: Vorwort.     5. Anonymus: Publications of the Biological Station Lunz. Arbeiten aus der Biologischen Station Lunz 1991.     6-    7. Anonymus: Publications of the Biological Station Lunz. Arbeiten aus der Biologischen Station Lunz 1992.     7-    8. Peter Adamicka, Fritz Aigner: Die Witterung 1991/1992.     9-   23. Peter Adamicka: Schneearme und schneereiche Winter in Lunz.    24-   25. Peter Adamicka: Frau Dr. Friederike Wawrik zum 90. Geburtstag.    26-   29. Peter Adamicka: Professor Dr. Agnes Ruttner zum Gedenken.    30-   36. Maria Leichtfried: Modifizierung der Proteinanalyse für Sedimente.    37-   40. Gernot Bretschko: Gauge data and water temperatures in the RITRODAT area1991 and 1992 and long year averages of climatic data.    41-   47. Verena A. Kowarc: Longitudional distribution of a microcrustacea community (first results).    48-   57. Jude M. Mathooko, Peter-Eric Schmid: Spatial heterogeneity and gradients of organic matter resources (OMR) in a second - order alpine gravel stream (the Oberer Seebach, Lunz, Austria).    58-   74. Jenny M. Schmid-Araya: Benthic rotifera inhabiting the bed sediments of a mountain gravel stream.    75-  101. Johann Waringer: Hydraulic measurements and distances travelled by drifting invertebrates in a calcareous mountain brook (Ritrodat-Lunz).   102-  110. Karl Panek: Dispersal dynamic of the zoobenthos within the bed sediments of an alpine stream.   111-  112. Klaus-Jürgen Maier: Horizontal patch-distribution in the gravel fauna of a second order alpine stream.   113-  115. Bernd Prosenz: Die Kartierung der Makrophyten in der Mayrbucht 1991.   132-  142. Vincenz Brehm: Aus meinem Leben (Autobiographie, achte Fortsetzung).   143-  150</dc:description>
+   <dc:date>1993</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/31464.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/31464.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=31464</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

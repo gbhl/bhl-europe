@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the fishes of western New Guinea : II. Lophichthys boschmai, a new genus and species from the Arafoera Sea</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>During my visit to western New Guinea (1954-1955), a rich collection of marine animals was presented to the Leiden Museum by the Fisheries Department of the Netherlands New Guinea Government. The specimens, mostly fishes, had been captured during previous trips of the Government fishing vessel "De Goede Hoop", and were preserved on the initiative of Mr. D. C. Zwollo, at the time Director of the Fisheries Department there, to whom we are especially indebted. One of the most intriguing specimens of this fish collection, evidently representing a new genus and probably even new higher categories of fish taxonomy, is discussed here. It is a pleasure to dedicate the present species to Prof. Dr. H. Boschma, who has expertly guided the first steps of so many zoological taxonomists, including the present author's. Furthermore, it is a most welcome coincidence that the species was collected approximately in the area of his own principal field activities during the Snellius Expedition (1929-1930) and the Wissel Lakes Expedition (1939). Lophichthys nov. gen. The new genus being for the moment known only from the single specimen at hand, it is difficult to distinguish and delimit diagnostic characters. However, by comparison with those used for related genera, the following diagnosis may be given: Body covered with small spines and, especially on the head and along the lateral line, with skinny flaps. Head very large, subcuboid or slightly depressed, without median groove. Mouth subvertical, wide, with well developed slender teeth on jaws, vomer, palatines, endopterygoid, and tongue. Gill apertures small, at the end of a short tube, above pectorals slightly before</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318268</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 12 - 18</dcterms:extent>
+   <dcterms:isPartOf>Notes on the fishes of western New Guinea : II. Lophichthys boschmai, a new genus and species from the Arafoera Sea (URN:ISSN:0024-0672) (Volume 39) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318268.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149554</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318268</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

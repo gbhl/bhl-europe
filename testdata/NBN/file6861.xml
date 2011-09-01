@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zenarchopterus-Studien</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mohr E.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Unter dem mir von Herrn Dr. F. P. Koumans freundlichst überlassenen Hemirhamphiden-Material des Rijksmuseum van Natuurlijke Historie te Leiden ist eine Serie einer neuen Zenarchopterus-Art, die ich wegen der Form der Anale beim erwachsenen Männchen bezeichne als: Zenarchopterus xiphophorus nov. spec. Mus. Leiden:Belawan-Deli, Sumatra; 4 ♂ von 12.5, 12.5, 13.0, 13.5 cm; 2 ♀ von 13.0, 17.0 cm. ♂ D 15; A 10—11; P 11; V 6; Sq. 1. ca. 40. ♀ D 14; A 11—12; P 11; V 6; Sq. 1. ca. 40. Oberschnabel etwas breiter als lang; Länge sechs- bis siebenmal im Schnabelfortsatz enthalten. Analpapille beim ♂ gross mit besonderer Spitze, nicht beschuppt, ♀ ohne. Iriszipfel nicht mehr zu finden. ♂: Vierter D-Strahl verbreitert und um mehr als die Flossenhöhe verlängert; der 4. Strahl ist so stark gebogen, dass — wenigstens bei den erwachsenen konservierten Tieren — der Klunker des Strahlenendes neben dem Silberstreifen an der Körperseite liegt. ♂ A dreiteilig, im vorderen Teil 5 dünne Gliederstrahlen; 6. Strahl stark verdickt, verbreitert, gefiedert und etwa viermal so lang wie der 5., sodass das Ende des 6. bei erwachsenen ♂ noch weit über den Hinterrand der Caudale hinweg ragt. Bei den 12.5 cm langen ♂ überragt der 6. Strahl das C-Ende noch nicht, wohl aber die C-Basis. Im Gegensatz zu Z. brevirostris Gthr. legt sich bei der neuen Art der 6. Strahl nicht neben die Körperseite, sondern bleibt in der Flossenebene unterhalb der Unterkante des Fisches. Hinter dem verlängerten und verbreiterten 6. Strahl folgen der 7.—10. (11.) A-Strahl als selbständiges Flösschen von</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319366</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1934</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 11 - 14</dcterms:extent>
+   <dcterms:isPartOf>Zenarchopterus-Studien (URN:ISSN:0024-0672) (Volume 17) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319366.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150652</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319366</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

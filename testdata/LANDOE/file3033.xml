@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 32 (1892)</dc:title>
+   <dc:creator>Adler  Gottlieb, Anonymus , Benedikt  Rudolf, Exner  Siegmund Ritter von Ewarten, Höhnel  Franz Xaver Rudolf Ritter von, Jüllig  Max, Lieben  Adolf, Marenzeller  Emil Edler von, Molisch  Hans, Obermayer  Albert von, Pernter  Josef Maria, Simony  Oskar, Tinter  Wilhelm Edler von Marienwil, Toula  Franz, Toula , Wähner  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gottlieb Adler: Über die Materie.     1-   24. Rudolf Benedikt: Sprengstoffe und Explosionen.    25-   48. Hans Molisch: Die Genussmittel aus dem Pflanzenreiche und ihre Verfälschungen.    49-   75. Siegmund Ritter von Ewarten Exner: Das Räthsel der Brieftauben.    77-  118. Josef Maria Pernter: Die Wärmevertheilung auf der Erdoberfläche und ihre Ursachen.   119-  148. Emil Edler von Marenzeller: Das Heim der Tiefseethiere.   149-  177. Franz Xaver Rudolf Ritter von Höhnel: Über einige botanische Forschungsergebnisse der letzten Jahre.   179-  206. Franz Wähner: Korallenriffe und Tiefseeablagerungen in den Alpen. (1 Falttafel.)   207-  252. Toula: Reisebilder aus Bulgarien.   253-  290. Wilhelm Edler von Marienwil Tinter: Die Entfernungen der Himmelskörper im Verhältnisse zu den Entfernungen auf der Erde. (6 Tafeln unpaginiert.)   291-  324. Oskar Simony: Die Canarischen Inseln, insbesondere Lanzarote und die Isletas.   325-  398. Max Jüllig: Über elektrische Kraftübertragung mittels Mehr-Phasenstrom.   399-  430. Adolf Lieben: Ein Einblick in die Werkstätte chemischer Forschung.   431-  450. Albert von Obermayer: Die Methoden der Fixierung der elektrischen Entladungserscheinungen.   451-  500. Franz Toula: Über Wildbach-Verheerungen und die Mittel, ihnen vorzubeugen.   501-  622. Anonymus: Jahres-Bericht. (Seiten V-LII.)</dc:description>
+   <dc:date>1892</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30486.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30486.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30486</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

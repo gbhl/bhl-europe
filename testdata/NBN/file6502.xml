@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pontonides sympathes, a new species of commensal shrimp (Crustacea, Decapoda, Pontoniinae) from Antipatharia in the Galapagos Islands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Ridder, de Ch.</dc:creator>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>During a stay at the Galapagos Islands (1975-1976), one of us (Ch. de Ridder) made a study of Gorgonaria and Antipatharia, paying special attention to commensals found with these corals. On Antipathes galapagensis Deichmann, 1941, a species of the pontoniine shrimp genus Pontonides was observed, which proved to be new to science. The present paper describes the new species and its living conditions. Pontonides sympathes new species (figs. 1-3) Material examined. — Punta Pitt, north-east coast of San Cristobal Island, Galapagos Archipelago, Ecuador; on Antipathes galapagensis Deichmann growing on a lava bottom at a depth of 8 m; surface water temperature 23.9oC; 2 February 1976; Ch. De Ridder leg.; I ovigerous female holotype, and 29 paratypes. Specimens of this species, on the same host, were observed in two other localities in the Galapagos Archipelago: near Daphne Major Island (depth 10 to 23 m), and near Champion Island (depth about 15 m). These specimens, however, were not collected. Description. — The carapace is somewhat depressed. The rostrum is broad, short, and depressed; it reaches slightly beyond the base of the eyes and fails by far to reach the base of the antennular peduncles. It is flat and wide; its midrib is elevated, but rather low, unarmed and with a blunt dorsal angle in about the middle of its length. The lateral margin of the rostrum bears a distinct, though small tooth; in one of the specimens, on one of the lateral margins a second tooth is placed immediately behind the first, in all other specimens each lateral margin has only a single tooth. The margin between the tip of the rostrum and the lateral tooth runs obliquely backward</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319007</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 101 - 110</dcterms:extent>
+   <dcterms:isPartOf>Pontonides sympathes, a new species of commensal shrimp (Crustacea, Decapoda, Pontoniinae) from Antipatharia in the Galapagos Islands (URN:ISSN:0024-0672) (Volume 54) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319007.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150293</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319007</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

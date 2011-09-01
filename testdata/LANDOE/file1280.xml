@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 122a (1977)</dc:title>
+   <dc:creator>Erlinger  Georg, Hack  Wolfgang, Heinzl  Brigitte, Höllhuber  Alfred, Jenisch  Viktor, Kinz  Gernot, Klaus  Wilhelm, Kux-Jülg  Renate, Mayer  Gerald, Mayer  Gertrud, Mittendorfer  Franz, Pertlwieser  Manfred, Ruprechtsberger  Erwin Maria, Schmidt  Roland, Schuster  Reinhart, Tichy  Gottfried, Tovornik  Vlasta, Wolff  Petra</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Maria Ruprechtsberger: Der Grabstein CIL III 13529 der Christin Vrsa aus Ovilava/Wels, Oberösterreich. Eine sprachliche Interpretation.     9-   23. Renate Kux-Jülg: Ein spätrömischer Grabfund aus Linz-Zizlau II.    25-   32. Vlasta Tovornik: Slawische Grabfunde am nördlichen Donauufer bei Windegg, Gem. Steyregg, Pol. Bez. Urfahr-Umgebung.    33-   60. Manfred Pertlwieser: Zur ethnischen Zugehörigkeit der beigabenführenden Gräberfelder des 9. Jahrhunderts im östlichen Oberösterreich.    61-   82. Alfred Höllhuber: Die Reichensteiner Töpfermarkensammlung.    83-  120. Gernot Kinz: Die Wasserstiefel der Fischer und der Wasserbauschiffleute aus dem Flußgebiet der Traun zwischen Traunfall und Traun-Donau-Mündung.   129-  170. Wilhelm Klaus: Zur Bestimmung und Interpretation der Pollendichte in Sedimenten, am Beispiel von Tongesteinen aus dem Hallstätter Salzberg und dem Torfmoor am Walserberg dargestellt.   171-  182. Roland Schmidt: Zur spätglazialen Vegetationsentwicklung im Arber-Gebiet (Bayerischer Wald-Böhmerwald).   183-  192. Viktor Jenisch, Gottfried Tichy: Neue Funde von Mastodonten-Molaren aus den Schottern des südlichen Kobernaußerwaldes (Oberösterreich).   193-  200. Reinhart Schuster, Wolfgang Hack: Bemerkenswerte Funde der bodenbewohnenden Fliege Aptilotus Paradoxus MIK (Diptera, Sphaeroceridae) in Oberösterreich.   201-  206. Franz Mittendorfer: Die Lappentaucher (Podicipidae) als Wintergäste auf den Salzkammergutseen 1967/68 bis 1975/76.   207-  222. Gerald Mayer: Eintreffen der Zugvögel in Oberösterreich.   223-  253. Gertrud Mayer: Raubmöwen in Oberösterreich.   255-  261. Georg Erlinger: Nestfunde und Nestformen der Beutelmeise (Remiz pendulinus) in Oberösterreich   263-  267. Petra Wolff: Die Jagd- und Haustierfauna der spätneolithischen Pfahlbauten des Mondsees.   269-  347. : Besprechungen und Anzeigen.   349-  364. Brigitte Heinzl: Die Porzellansammlung der kunsthistorischen Abteilung des Oberösterreichischen Landesmuseums in Linz.  1221-  128. : Die Lappentaucher (Podicipidae) als Wintergäste auf den Salzkammergutseen 1967/68 bis 1975/76.</dc:description>
+   <dc:date>1977</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27374.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27374.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27374</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annotations on the genera Triscolia, Megascolia and Scolia (Hymenoptera, Scoliidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Betrem J.G.</dc:creator>
+   <dc:creator>Chester Bradley J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>This communication has been divided in three sections. Section A deals with the types of some taxa belonging to the genera Triscolia, Megascolia and Scolia; section B deals with the species of the genera Triscolia and Megascolia; a third section dealing with the species of the genus Scolia will be published separately in the next volume of this journal. Lists of the species belonging to these genera and many of their synonyms are added. SECTION A. TYPES OF SOME TAXA BELONGING TO THE GENERA TRISCOLIA AND SCOLIA It has been accepted as a fact by Sherborn's Nomenclator Zoologicus, by the Prussian Academy's Nomenclator Zoologicus, and by taxonomists, that the taxa Discolia and Triscolia were established by De Saussure &amp; Sichel, 18642). It has likewise been accepted that Ashmead, 1903, had properly designated Scolia apicicornis Guérin, an Ethiopian species, to be the typespecies of Discolia, and that Bartlett, 1912, had correctly designated Scolia flavifrons Fabr. to be the type-species of Triscolia. Without adequate study of S. apicicornis, a little-known species, it has been assumed that it belonged to the same taxon as S. quadripunctata Fabr., the type-species of Scolia. Therefore Discolia came to rest as a junior subjective synonym of Scolia. The senior author has recently observed that De Saussure anticipated the joint publication of these names by using them in a paper published in the preceding year, 1863. He placed two species in Discolia, namely Scolia nobilitata Fabr. and Scolia consors Saussure. We now select S. nobilitata to be the type-species of that taxon. De Saussure included only S. badia Saussure in Triscolia, which is therefore the type-species by monotypy.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318663</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 433 - 444</dcterms:extent>
+   <dcterms:isPartOf>Annotations on the genera Triscolia, Megascolia and Scolia (Hymenoptera, Scoliidae) (URN:ISSN:0024-0672) (Volume 39) (Issue 43)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318663.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149949</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318663</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on the Moluccan Megapode Eulipoa wallacei (G.R. Gray, 1860) following the rediscovery of two major nesting grounds</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Dekker R.W.R.J.</dc:creator>
+   <dc:creator>Argeloo M.</dc:creator>
+   <dc:creator>Jepson P.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Moluccan Megapode; Eulipoa wallacei; Indonesia; Haruku; Halmahera; nesting grounds</dc:subject>
+   <dc:description>Two nesting grounds of the Moluccan Megapode, Eulipoa wallacei (G.R. Gray, 1860) located on the islands of Haruku and Halmahera, Indonesia, are described. Together they provide nesting opportunities for more than half of the estimated world population of this endangered megapode. Further information is given on six additional nesting grounds. Data are presented on size and origin of the megapode populations using these sites, egg-laying season, behaviour, and measurements of birds and eggs in relation to their breeding strategy of using solar heat for the incubation of their eggs.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318499</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1995</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 251 - 260</dcterms:extent>
+   <dcterms:isPartOf>Notes on the Moluccan Megapode Eulipoa wallacei (G.R. Gray, 1860) following the rediscovery of two major nesting grounds (URN:ISSN:0024-0672) (Volume 69) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318499.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149785</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318499</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

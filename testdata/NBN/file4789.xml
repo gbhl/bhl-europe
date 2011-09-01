@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: Late Glacial and Post-Glacial molluscan successions from the site of the Channel Tunnel in SE England</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Preece R.C.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>A summary of the molluscan succession at Holywell Coombe, Folkestone, Kent is given. The replacement of arctic-alpine communities of the Late Glacial by the diverse woodland assemblages of the early and mid Post-Glacial are described. The impact of early man on the faunas since the Neolithic is also assessed. This succession is related to the vegetational history by means of pollen analysis and a detailed chronology is provided by radiocarbon dating. This is the most complete and best dated molluscan succession yet known from Britain.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317293</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 387 - 395</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: Late Glacial and Post-Glacial molluscan successions from the site of the Channel Tunnel in SE England (URN:ISSN:0922-4564) (Volume 2) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317293.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148579</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317293</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

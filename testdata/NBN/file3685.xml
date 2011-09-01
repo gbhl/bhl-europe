@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Antipatharia (Cnidaria: Anthozoa). Part IV.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Opresko D.M.</dc:creator>
+   <dc:subject>Invertebrata: overige</dc:subject>
+   <dc:subject>Cnidaria</dc:subject>
+   <dc:subject>Anthozoa</dc:subject>
+   <dc:subject>Antipatharia</dc:subject>
+   <dc:subject>Aphanipathidae fam. nov.</dc:subject>
+   <dc:subject>Aphanipathinae subfam. nov.</dc:subject>
+   <dc:subject>Aphanipathes Brook</dc:subject>
+   <dc:subject>Phanopathes gen. nov.</dc:subject>
+   <dc:subject>Tetrapathes, gen. nov.</dc:subject>
+   <dc:subject>Pteridopathes gen. nov.</dc:subject>
+   <dc:subject>Asteriopathes, gen. nov.</dc:subject>
+   <dc:subject>Acanthopathinae subfam. nov.</dc:subject>
+   <dc:subject>Acanthopathes gen. nov.</dc:subject>
+   <dc:subject>Rhipidopathes Edwards &amp; Haime</dc:subject>
+   <dc:subject>Distichopathes gen. nov.</dc:subject>
+   <dc:subject>Elatopathes, gen. nov.</dc:subject>
+   <dc:description>A new family of antipatharian corals, Aphanipathidae (Cnidaria: Anthozoa: Antipatharia), is established for Aphanipathes sarothamnoides Brook and related species. The family is characterized by tall, conical, acicular or cylindrical spines, which are usually covered to some degree with small tubercles (smooth spines occur in some species), and by polyps that are 0.5-1.3 mm in transverse diameter and have small, subequal tentacles. The family is divided into two subfamilies based on differences in the development of the polypar spines. In the Aphanipathinae the polypar spines are subequal. Genera are recognized on the basis of morphological features of the corallum. Aphanipathes Brook (type species A. sarothamnoides Brook) has a sparsely to densely branched corallum with straight, usually ascending, branchlets. Phanopathes gen. nov. (type species Antipathes expansa Opresko &amp; Cairns) forms fan-shaped colonies with irregularly bilateral branchlets. Pteridopathes gen. nov. (type species P. pinnata spec. nov.) has mostly simple pinnules (sometimes with randomly occurring simple secondary pinnules) arranged in two rows. Tetrapathes gen. nov. (type species Aphanipathes alata Brook) has simple pinnules arranged in four rows, and Asteriopathes gen. nov. (type species A. arachniformis spec. nov.) has simple pinnules arranged in six or more rows. In the Acanthopathinae the polypar spines are anisomorphic, with the circumpolypar spines larger than the interpolypar spines and the hypostomal spines usually reduced or absent. As in the Aphanipathinae, genera are recognized on the basis of morphological features of the corallum. Acanthopathes gen. nov. (type species Antipathes humilis Pourtalès) forms candelabra and flabellate colonies and has reduced hypostomal spines. Rhipidopathes Milne Edwards &amp; Haime (type species Antipathes reticulata Esper), forms flabellate colonies and has hypostomal spines that are not always reduced in size. Distichopathes gen. nov. (type species D. disticha spec. nov.) has simple, straight pinnules arranged primarily in two rows, and Elatopathes gen. nov. (type species Antipathes abietina Pourtalès) has simple pinnules arranged in four or more rows.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214429</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 209 - 240</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Antipatharia (Cnidaria: Anthozoa). Part IV. (URN:ISSN:00240672) (Volume 78, 1-16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214429.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/51441</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214429</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

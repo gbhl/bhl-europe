@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Some fossil species of Babylonia seen in ultraviolet light, with description of a new species (Mollusca, Gastropoda)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Regteren, van C.O.</dc:creator>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>When preparing a revision of the genus Babylonia for "Indo-Pacific Mollusca", edited by Dr. R. Tucker Abbott, we tried ultraviolet light to see the outline of the colour-pattern of some fossil species. Later on we saw the same method described by Mrs. Katherine Krueger (1971). Dr. H. E. Coomans of the Institute for Taxonomic Zoology (Zoological Museum), Amsterdam, called our attention to this method. We used an ultraviolet lamp UVSL-15 of Ultra-Violet Products Inc., San Gabriel, California. Mr. Chr. Hoorn, photographer of our museum, found a method to photograph the normally invisible pattern. He used an orthochromatic film, Copex Ortho, Agfa-Gevaert, 120 din, in combination with a yellow filter. After having found a suitable specimen by previous examination with the lamp in a dark room, that shell was exposed to short and long wave ultraviolet together from four sides, each time during five minutes. As this resulted in some good photographs, these will be published here. We first show a recent and a fossil specimen of Babylonia spirata (L.) (pl. 1 figs. 1, 2). The recent one is from the Bay of Djakarta; the other is from the Young Neogene at Benkulen, Sumatra. There is general conformity in the colour-pattern of these two specimens, but also some differences are apparent. The spots along the sutural canal are relatively large in the fossil specimen and the other spots are conspicuously rounded and rather constant in size. The recent B. spirata, however, shows a great variability in the colour-pattern. The figured shell is the one in our collection which comes nearest to the fossil specimen. In Babylonia pangkaensis (Martin) 1) (pl. 1 figs. 3, 4) the colour-pattern</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318052</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 468 - 472</dcterms:extent>
+   <dcterms:isPartOf>Some fossil species of Babylonia seen in ultraviolet light, with description of a new species (Mollusca, Gastropoda) (URN:ISSN:0024-0672) (Volume 47) (Issue 38)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318052.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149338</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318052</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

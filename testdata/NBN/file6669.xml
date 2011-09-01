@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Petricola pholadiformis Lam. on the Dutch Coast</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vernhout J.H.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Since I published my paper on this subject (Notes Leyden Museum, Vol. XXXIV, 1912, p. 240), the following localities of our coast where this American mollusc also has been collected, have come to my knowledge: Vlissingen, isle of Walcheren; south-east of Domburg (see sketch of the coast of the Netherlands in the cited paper). Eastern-Schelde, between Ierseke and Tholen. Zandvoort, between Noordwijk and Petten. Terschelling, the island next to Vlieland in nord-east direction. Leiden Museum, Jan. 7, 1915.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319174</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1915</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 32 - 32</dcterms:extent>
+   <dcterms:isPartOf>Petricola pholadiformis Lam. on the Dutch Coast (URN:ISSN:0024-0672) (Volume 1) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319174.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150460</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319174</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

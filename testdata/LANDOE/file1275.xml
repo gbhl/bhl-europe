@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 119a (1974)</dc:title>
+   <dc:creator>d'Occhieppo  Konradin, Eckhart  Lothar, Felgenhauer  Sabine, Heinzl  Brigitte, Janik  Vinzenz, Kohl  Hermann, Korth  Thomas, Lipp  Franz C., Ricek  Erich Wilhelm, Ruprechtsberger  Erwin Maria, Sedlak  Gerhard, Spillmann  Franz, Taubert  Gesine, Tovornik  Vlasta, Werneck  Heinrich Ludwig v.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerhard Sedlak: Moderne Tendenzen der Denkmalpflege. Ein Beitrag zum Europäischen Jahr des Denkmalschutzes 1975.     9-   18. Vlasta Tovornik: Der Schalenstein am urgeschichtlichen Opferplatz auf der "Berglitzl" in Gusen, Pol. Bez. Perg, Oberösterreich.    19-   22. Erwin Maria Ruprechtsberger: Zum Typenschatz des Terra-Sigillata-Töpfers Januarius (II) von Rheinzabern.    23-   28. Lothar Eckhart: Gedanken über Römersteine in alten Kirchen.    29-   38. Sabine Felgenhauer: Tönerne Spielzeugpferdchen des Mittelalters in Österreich.    39-   52. Gesine Taubert: Spätmittelalterliche Kreuzabnahmespiele in Wels, Wien und Tirol.    53-   89. Konradin d'Occhieppo: Keplers Weg zur Physik des Himmels.    91-  106. Brigitte Heinzl: Die nachmittelalterlichen Bildwerke des oberösterreichischen Landesmuseums.   107-  116. Franz C. Lipp: Ein Kultdenkmal des hl. Koloman aus dem Innviertel.   117-  120. Thomas Korth: Der Brunnen im Stiftshof von St. Florian.   121-  129. Heinrich Ludwig v. Werneck, Hermann Kohl: Karte des historischen Weinbaues in Oberösterreich.   131-  144. Vinzenz Janik: Sedimentpetrographische Untersuchungen der quartären Profile von St. Georgen a. d. Mattig und Mauerkirchen (Oberösterreich).   145-  178. Franz Spillmann: Ein neues Anthracotherium aus den oberoligozänen Linzer Sanden (Anthracotherium frehi n. sp.).   179-  198. Erich Wilhelm Ricek: Die Frühlingsknotenblume (Leucojum vernum L.) im Attergau und im Hausruckwald.   199-  210. : Besprechungen und Anzeigen.   211-  240</dc:description>
+   <dc:date>1974</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27367.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27367.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27367</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

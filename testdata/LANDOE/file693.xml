@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wissenschaftliche Mitteilungen Niederösterreichisches Landesmuseum 7 (1991)</dc:title>
+   <dc:creator>Bittermann  Wolfgang, Frank  Christa, Kollar  Hans Peter, Pintar  Manfred, Schlott-Idl  Karin, Seiter  Marianne, Sieber  Johanna, Steiner  Hans Martin, Straka  Ulrich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Christa Frank: Pleistozäne und holozäne Molluskenfaunen aus Stillfried an der March: Ein Beitrag zur Ausgrabungsgeschichte von Stillfried und des Buhuberges nördlich von Stillfried. (N.F. 286)     7-  272. Wolfgang Bittermann: Populationsdynamik der xerophilen Landschnecke Helicella obvia (MENKE, 1828 Mollusca, Helicidae). (N.F. 286)   273-  287. Wolfgang Bittermann: Rinderrassenreduktion von 1880-1985 unter dem Aspekt der genetischen Verarmung. (N.F. 286)   289-  299. Hans Peter Kollar, Marianne Seiter: Die Vogelwelt einer forstlich-biologischen Versuchsfläche in den Donau-Auen östlich von Wien, Teil I: Kommentierte Artenliste. (N.F. 286)   301-  338. Ulrich Straka, Hans Martin Steiner, Manfred Pintar: Die Korneuburger Donau-Auen (NÖ). Die ökologische Situation eines Au-Gebietes im Unterwasser des Kraftwerkes Greifenstein im Jahr 1986. (N.F. 286)   339-  395. Johanna Sieber: Suboptimale Biberreviere in Niederösterreich. (N.F. 286)   397-  405. Karin Schlott-Idl: Quantitative Aspekte der Zooplanktonentwicklung in Waldviertler Fischteichen. (N.F. 286)   407-  414</dc:description>
+   <dc:date>1991</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26349.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26349.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26349</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

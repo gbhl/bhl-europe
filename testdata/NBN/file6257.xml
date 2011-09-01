@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On some new species of Carabidae from Sumatra contained in the collection of the Leyden Museum</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Andrewes H.E.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>With the kind permission of the Director of the Leiden Museum and the able assistance of Mr. H. C. BLÖTE, to whom I am much indebted for his services; some hundreds of specimens of undetermined Sumatran Carabidae have, during the past few months, been sent to me for indentification. Among these I have found examples of one new genus and ten new species, which are described in the succeeding pages. Some of these species were represented only in the Leiden Museum, but of others I found specimens in the collection of the F. M. S. Museum, Kuala Lumpur, while my own collection contained examples of four of them. Some of the type specimens are in the Leiden Museum, some in the British Museum, and some in my collection, as mentioned at the close of the respective descriptions. Tachys blötei sp. n. Length: 2.4 mm. Brownish red, joints 2 to 5 of antennae and disk of elytra a little darker, apex of elytra paler, joints 6 to 11 of antennae yellowish white. Head with deep single furrows, diverging behind, eyes moderately prominent, mentum with two pores, antennae filiform, joint 2 a little longer than 3. Prothorax cordate, a half wider than long, sides strongly rounded, sinuate close to base, which is barely as wide as apex, hind angles sharp, slightly acute, strongly reflexed, projecting a little laterally, without carina; median line fine, basal sulcus deep, punctate, interrupted, and with a large pore at middle. Elytra moderately convex, with square shoulders, two fifths longer than wide, border neither dentate nor perceptibly setulose, rounded at shoulder and reaching stria 4; striae 1 and</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318762</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 193 - 203</dcterms:extent>
+   <dcterms:isPartOf>On some new species of Carabidae from Sumatra contained in the collection of the Leyden Museum (URN:ISSN:0024-0672) (Volume 13) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318762.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150048</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318762</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

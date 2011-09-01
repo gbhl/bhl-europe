@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on Opilioacarida (Arachnida) II. Redescription of Paracarus hexophthalmus (Redikorzev)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In the first part of the present series (Van der Hammen, 1966), I estimated the extent of my studies on Opilioacarida at two papers, each paper dealing with a representative of one genus. Since the publication of this first part, however, new material has been placed at my disposal, enabling me to start a revision (to be published in several parts) of nearly all species of the group described up to now. Such a revision is interesting because of two reasons. In the first place Opilioacarida are characterized by a very homogeneous habitus which is in remarkable contrast with the considerable variability of many other characters, in such a way demonstrating the further evolution of a type probably fixed at an early date. In the second place, a thorough knowledge of the group will certainly provide comparative Anactinotrichid morphology with an essential base, primitive representatives being indispensable for a clear comprehension of homologies (Opilioacarida and, to a less extent, Holothyrida are considered here the only primitive representatives of the Anactinotrichida, primitive being interpreted as presenting an important number of primitive characters). In my preliminary revision of the species of Opilioacarida (Van der Hammen, 1966: 48), I mentioned also the genus Paracarus Chamberlin &amp; Mulaik (1942), of which Opilioacarus hexophthalmus Redikorzev (1937) from Asiatic Russia is the type-species and single representative. A short diagnosis of this remarkable genus was given by me, which diagnosis was based on the original description and figures by Redikorzev (some characters had been verified by Dr. Nina Bregetova). Recently, however, through the kindness of Dr. Bregetova, I was enabled to examine personally one specimen of the species, an investigation which appeared to be of considerable interest</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319151</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 57 - 76</dcterms:extent>
+   <dcterms:isPartOf>Studies on Opilioacarida (Arachnida) II. Redescription of Paracarus hexophthalmus (Redikorzev) (URN:ISSN:0024-0672) (Volume 43) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319151.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150437</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319151</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

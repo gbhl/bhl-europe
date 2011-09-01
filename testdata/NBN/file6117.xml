@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the early editions of Lacepède's "Tableaux des Mammifères et des Oiseaux", with remarks on two hitherto overlooked species: Lori bengalensis Lacepède, 1800, and Ornithorynchus novae Hollandiae Lacepède, 1800</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Husson A.M.</dc:creator>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>42.83 ; 42.84</dc:subject>
+   <dc:description>Sherborn (1899) very ably discussed the four editions of Lacepède's "Tableaux des Mammifères et des Oiseaux" that were known to him, and made the complicated history of these publications clear. To these four editions we now can add two that evidently were not known to Sherborn, one of which must be exceedingly rare. In the following lines the six editions are discussed in chronological order; editions I, III, IV, and V have been dealt with by Sherborn, II and VI are those that we recently became acquainted with. Edition I (published between January 1 and September 22, 1799). The original "Tableaux" were published in Lacepède's "Discours d'ouverture et de clôture du cours d'histoire naturelle Donné dans le Muséum national d'Histoire naturelle, l'an VII de la République, et Tableaux méthodiques des mammifères et des oiseaux" a paper, in-4, issued "à Paris chez Plassan, Imprimeur-Libraire. L'an VII de la République." This publication consists of three parts. The first (4 pp., pp. 1-55, 1 p.) contains the actual "Discours". The second is the "Tableau des divisions, sous-divisions, ordres et genres des mammifères", pp. 1-18; the third is "Tableau des sous-classes, divisions, sous-divisions, ordres et genres des oiseaux", pp. 1-20. This edition has been fully dealt with by Sherborn (1899). Edition II (published between September 23 and December 31, 1800). This second edition was published as an appendix to "Séances / des écoles normales, / recueillies / par des sténographes, / et revues / par les professeurs. / Nouvelle édition. / Tome huitième." published at "Paris, / à l'imprimerie du cercle-social. / (1800.) / An 9 de la République Française.", it is in-8. The appendix consists of pp. 1-86 (pp. 1, 2, 3, 38 and 39 are un-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318622</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 211 - 219</dcterms:extent>
+   <dcterms:isPartOf>On the early editions of Lacepède's "Tableaux des Mammifères et des Oiseaux", with remarks on two hitherto overlooked species: Lori bengalensis Lacepède, 1800, and Ornithorynchus novae Hollandiae Lacepède, 1800 (URN:ISSN:0024-0672) (Volume 32) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318622.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149908</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318622</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

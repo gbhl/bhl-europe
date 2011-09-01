@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The identity of Hapalopoda investigator Filhol, 1885 (Decapoda, Penaeidae) and other shrimps collected by the 1880-1883 "Travailleur" and "Talisman" expeditions</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In 1880, 1881, and 1882 the French research vessel "Travailleur" explored the deep waters of the Bay of Biscay (1880, 1881, 1882), off the Portuguese coast (1881, 1882), the Mediterranean (1881) and the eastern Atlantic from the Bay of Biscay as far south as the Canary Islands (1882). In 1883 the "Travailleur" was replaced by the larger "Talisman", which ship explored the eastern Atlantic between the Bay of Biscay and the Cape Verde Islands, visiting also the Azores, and going as far west as 31°34'N 41°15'W (of Greenwich = 43°35'W of Paris; the longitudes of the "Travailleur" and "Talisman" stations were always given relative to Paris). A select company of French zoologists was on board the "Talisman" on her (June-August) 1883 cruise. Among these zoologists were Alphonse Milne Edwards (the leader of the expedition), Edmond Perrier, the marquis Alexandre Guillaume Léopold de Folin and Henri Filhol. The collections made during the expeditions, and especially those by the "Talisman", proved very valuable and formed the subject of numerous important publications. The study of the Crustacea was entrusted to A. Milne Edwards, who in collaboration with E. L. Bouvier published the final report on the Decapoda Brachyura and Anomura in 1900 (A. Milne Edwards &amp; Bouvier, 1900). Apart from the Sergestidae, which were dealt with by Hansen (1927), no account of the Decapoda Macrura of the expeditions as a whole has ever been published, although scattered notes dealt with some of the material; so Bouvier (1908), when reporting upon the Penaeidae of the expeditions of Prince Albert I of Monaco, occasionally referred to specimens collected by the "Talisman". Several of the zoologists, who had taken part in the expeditions, published popular accounts of their experiences, using published and unpublished in-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318526</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 183 - 194</dcterms:extent>
+   <dcterms:isPartOf>The identity of Hapalopoda investigator Filhol, 1885 (Decapoda, Penaeidae) and other shrimps collected by the 1880-1883 "Travailleur" and "Talisman" expeditions (URN:ISSN:0024-0672) (Volume 55) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318526.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149812</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318526</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

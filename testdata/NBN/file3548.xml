@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New sawflies (Hymenoptera: Symphyta, Tenthredinidae) from Indonesia, Papua New Guinea, Malaysia and Vietnam, with keys to genera and species</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Haris A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera</dc:subject>
+   <dc:subject>Symphyta</dc:subject>
+   <dc:subject>Tenthredinidae</dc:subject>
+   <dc:subject>Vietnam</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:subject>Malaysia</dc:subject>
+   <dc:subject>Java</dc:subject>
+   <dc:subject>Sumatra</dc:subject>
+   <dc:subject>Borneo</dc:subject>
+   <dc:subject>Celebes</dc:subject>
+   <dc:subject>Papua New Guinea</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:description>In total 32 new species of Tenthredinidae are described from Vietnam and 18 new species from Indonesia: Nesoselandria albotonkinensis spec. nov., N. albeotegularissima spec. nov., N. devriesiana spec. nov., Anapeptamena achterbergiana spec. nov., Neostromboceros nigrogiganteus spec. nov., N. gracilioides spec. nov., N. alboclypeatus spec. nov., N. daoensis spec. nov., N. phuongensis spec. nov., Abusarbidea bicoloristigmata spec. nov., Eusunoxa alboapicalis spec. nov., Neopoppia tonkinometallica spec. nov., Abeleses vietnamensis spec. nov., A. metallotonkinensis spec. nov., Heptamelus tonkinensis spec. nov., Athlophorus devriesi spec. nov., Rhopographus vietnamensis spec. nov., Xenapatidea hematothoracica spec. nov., X. devriesi spec. nov., Allantidea achterbergiana spec. nov., Neothrinax nigrotonkinensis spec. nov., Indotaxonus flavissimus spec. nov., Darjilingia vietnamensis spec. nov., D. tonkinensis spec. nov., D. hoangliensis spec. nov., Ferna achterbergi spec. nov., Monophadnus bicoloritonkinensis spec. nov., Eutomostethus phongdiensis spec. nov., Eutomostethus albotegularissimus spec. nov., Tenthredo octomaculatus spec. nov., T. tricoloritonkinensis spec. nov. and T. danangiensis spec. nov. from Vietnam. Neostromboceros pleuronotatus spec. nov., N. albopedissimus spec. nov., N. flavopedis spec. nov., N. rubroguinealis spec. nov., N. rubromalayensis spec. nov., Eusunoxa malaya spec. nov., Emphytus danumiensis spec. nov., Hemibeleses sulawesiensis spec. nov., Neopoppia irregulata spec. nov., Tenthredo nigrosabahensis spec. nov., T. djampangensis spec. nov., Neothrinax kaindiensis spec. nov., N. excavata spec. nov., N. gedehensis spec. nov., Abeleses metallojavanus spec. nov., Caliroa nigrojavana spec. nov., Nesoselandria sulawesiensis spec. nov. and Athlophorus achterbergianus spec. nov. from Indonesia. Monophadnus glaucus Enderlein, 1919; Monophadnus sumatranus Enderlein, 1919; Amonophadnus nigripennis Benson, 1935; Amonophadnus nigrojavanus Haris, 2002; Corporaalinus azureus Forsius, 1925; Corporaalinus cyanescens Forsius, 1925; and Corporaalinus jacobsoni Forsius, 1929, are proposed as new synonyms of Monophadnus rivalis Konow, 1906. An identification key is added for the known Tenthredinidae of Borneo, Sumatra, Java, Sulawesi and New Guinea.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209647</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 291 - 365</dcterms:extent>
+   <dcterms:isPartOf>New sawflies (Hymenoptera: Symphyta, Tenthredinidae) from Indonesia, Papua New Guinea, Malaysia and Vietnam, with keys to genera and species (URN:ISSN:00240672) (Volume 80-2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209647.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41272</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209647</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

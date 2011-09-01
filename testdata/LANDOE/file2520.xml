@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 12 (1872)</dc:title>
+   <dc:creator>Anonymus , Doppler  Adam, Petermandl  Anton, Pirckmayer  Friedrich, Raab  Robert Ritter von, Sauter  Anton Eleutherius, Schweinbach  Franz, Spatzenegger  Leopold, Zillner  Franz Valentin</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Robert Ritter von Raab: Die Thannhausen. Ein Beitrag zur Kunde von Salzburgs Adelsgeschlechtern.     3-   33. Franz Valentin Zillner: Ueber die Bevölkerungsverhältnisse Salzburgs.    34-   62. Anton Eleutherius Sauter: Flora des Herzogthums Salzburg.    63-  176. Adam Doppler: Die ältesten Original-Urkunden des fürsterzbischöflichen Consistorial-Archives zu Salzburg.   179-  342. Adam Doppler: Miscellen. Verordnungen K. Karls's des Großen und Beschlüsse der Reisbacher Synode.   345-  352. Friedrich Pirckmayer: Miscellen. Salzburg's Kunstschätze &amp; Alterthümer.   352-  386. Friedrich Pirckmayer: Miscellen. Salzburger Hoffrath meiner Wolff Diethrichen von Raithnaw Erzbischoven daselbst: So anno 1590 in dtz. Werkh ist worden.   386-  410. Friedrich Pirckmayer: Miscellen. Chronologie der General-Steuer-Einnehmer der erzstiftl. Salzburg. Landschaft.   411-  412. Franz Valentin Zillner: Miscellen. Urtheilspruch in Zaubereisachen. (Concept.).   413-  414. Leopold Spatzenegger: Miscellen. Verzeichniß der Decane der theologischen Facultät der Universität zu Salzburg v. J. 1652-1811 aus den Protokollen der obigen Facultät.   414-  431. Anton Eleutherius Sauter: Miscellen. Nachträge zum 1. und 2. Theil der Flora des Herzogthums Salzburg.   431-  432. Anton Eleutherius Sauter, Franz Schweinbach: Gesellschafts-Angelegenheiten. Protokoll über die am 17. Oktober 1872 im Stiftskeller zu St. Peter abgehaltene Jahres-Versammlung der Gesellschaft für Salzburger Landeskunde.   435-  436. Anton Eleutherius Sauter: Gesellschafts-Angelegenheiten. Bericht über die Thätigkeit und den Stand der Gesellschaft für Salzburger Landeskunde im Vereinsjahre 1871/72.   437-  450. Anton Petermandl: Gesellschafts-Angelegenheiten. Jahres-Rechnung über Einnahmen aud Ausgaben der Gesellschaft für Salzburger Landeskunde im 12. Vereinsjahre 1871/72.   451-  452. Anonymus: Gesellschafts-Angelegenheiten. Mitglieder-Verzeichniß.   453-  460. Anonymus: Gesellschafts-Angelegenheiten. Verzeichniß jener gelehrten Gesellschaften und Vereine, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer Mittheilungen eine Verbindung eingeleitet hat.   460-  461. Anonymus: Gesellschafts-Angelegenheiten. Fortsetzung des Bücher-Verzeichnisses 1871/72.   462-  466</dc:description>
+   <dc:date>1872</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29017.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29017.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29017</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

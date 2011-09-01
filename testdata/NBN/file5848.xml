@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the identity and nomenclature of „Pectinaria Belgica (Pallas, 1766)" (Polychaeta, Amphictenidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Lucas J.A.W.</dc:creator>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>In most Dutch scientific and popular books dealing with Polychaeta, the common amphictenid of the Dutch North Sea shore is indicated with the name Pectinaria belgica (Pallas, 1766). In preparing a revision of the Dutch Polychaeta, one of us (J. A. W. L.) studied the extensive collections of Dutch representatives of the family Amphictenidae present in the Rijksmuseum van Natuurlijke Historie at Leiden and the Zoological Museum at Amsterdam, as well as newly collected material from the Dutch beaches. Comparing these specimens with the account by Fauvel (1927:218225) of the Amphictenidae in the Faune de France, all of the Dutch specimens (with the single exception of a specimen of Pectinaria (Amphictene) auricoma collected in the former Zuiderzee) proved to be identical with what Fauvel named Pectinaria (Lagis) koreni (Malmgren), and not with his Pectinaria belgica (Pallas). A closer study of the status of both the generic and specific name of the Dutch species lead to rather unexpected results. GENERIC NAMES The name Pectinaria was first published by Lamarck (1818:348). Its type-species is Nereis cylindraria belgica Pallas, 1766, by subsequent selection by Hartman (1959:479). According to Malmgren (1866:355), the generic name Pectinaria does not date from Lamarck (1818), but from Lamarck (1812). In the latter publication, Lamarck (1812:95,96) divided the "Annelides" into two orders, the second of which, "Annelides Gymnobranches", is again divided into two sections, (1) the "Gymn[obranches] libres ou vagabondes" and (2) the "Gymn[obranches] tubicolaires". In the latter, again, two groups were</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318353</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 85 - 90</dcterms:extent>
+   <dcterms:isPartOf>On the identity and nomenclature of „Pectinaria Belgica (Pallas, 1766)" (Polychaeta, Amphictenidae) (URN:ISSN:0024-0672) (Volume 49) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318353.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149639</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318353</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

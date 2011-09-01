@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 28_1 (1988)</dc:title>
+   <dc:creator>Ebermann  Robert, Englmaier  Peter, Esterbauer  Hermann, Fain  Abraham, Gailhofer  Manfred, Grill  Dieter, Härtel  Otto, Katinakis  Panagiotis, Khatri  Karbir Singh, Kronberger  Winfried, Kusel  Elsa, Lauscher  Friedrich, Madrzak  Cezary, Pfeifhofer  Christine, Pfeifhofer  Hartwig W., Stich  Karl, Teppner  Herwig, Voliotis  Dimitrios T., Wittmann  Helmut</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Peter Englmaier, Helmut Wittmann: Morphologie, Ökologie und Verbreitung von Festuca intercedens in Österreich.     1-   12. Abraham Fain: Secretory Tissues and Factors Influencing their Development.    13-   26. Winfried Kronberger: Kinetics of Nonionic Diffusion of Hydrogene Fluoride in Plants, II. Model estimation on uptake, distribution, and translocation of F in higher plants    27-   49. Herwig Teppner: Onosma epiroticum spec. nova. (Boraginaceae) aus Griechenland.    51-   54. Karbir Singh Khatri: Studies in the Caucasian Species of Cardamine (Cruciferae).    55-   80. Dimitrios T. Voliotis: Über die griechischen Pulsatillen (Ranunculaceae), Taxonomie, Standorte und Verbreitung.    81-   90. Friedrich Lauscher: Analysen des Jahresverlaufs der Belaubung von Bäumen und Sträuchern.    91-  107. Otto Härtel: Recensio.   108. Karl Stich, Robert Ebermann: Localization on Peroxidase Isoenzymes in Different Parts of Some Trees.   109-  114. Herwig Teppner: Onosma kaheiri spec. nova. und O. erectum (Boraginaceae) aus Griechenland.   115-  131. Elsa Kusel: Recensio.   132. Panagiotis Katinakis, Cezary Madrzak: Conservation of soybean (Glycine max) nodulins and nodulin genes within the tribe Phaseolae.   133-  140. Christine Pfeifhofer, Dieter Grill, Hartwig W. Pfeifhofer: Protein-thiol Groups in Spruce Needles.   141-  151. Herwig Teppner, Manfred Gailhofer, Otto Härtel, Hermann Esterbauer: Recensiones.   153-  160</dc:description>
+   <dc:date>1988</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30190.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30190.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30190</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

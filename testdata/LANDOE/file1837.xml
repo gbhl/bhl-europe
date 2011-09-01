@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 74-75 (1926)</dc:title>
+   <dc:creator>Anonymus , Franke  Hans, Heikertinger  Franz, Hermann  Friedrich, Hochstetter  Ferdinand Ritter von, Hofeneder  Karl, Lohwag  Heinrich, Politzer  Georg, Prenn  Fritz, Ronniger  Karl, Schmeidel  Gustav, Schussnig  Bruno, Spandl  Hermann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Sitzungsberichte.     1-  204. Hermann Spandl: Die Phyllopodenfauna des mittleren und südlichen Mähren.     1-   37. Heinrich Lohwag: Zur Stellung und Systematik der Gastromyzeten.    38-   55. Franz Heikertinger: Monographie der Halticinengattung Orestia Germ. (Col., Chrysom.).    56-  125. Fritz Prenn: Libellenbeobachtungen in Kufstein (Nordtirol).   125-  134. Fritz Prenn: Sympycna paedisca Br. (Odonata, Lestidae).   135-  140. Friedrich Hermann: Die Gattungen der Leptogastrinen (Dipt.).   140-  152. Friedrich Hermann: Beitrag zur Kenntnis der Asiliden. Der Verwandtschaftskreis des gen. Holcocephala Jännicke.   153-  191. Karl Ronniger: Bemerkungen über einige Gentianen.   191-  194. Karl Hofeneder: Nachtrag zu "Stylops in copula".   194-  195. Bruno Schussnig: Betrachtungen über das System der niederen Pflanzen.   196-  272. Ferdinand Ritter von Hochstetter: Zur Entwicklung des menschlichen Kleinhirns.   272-  281. Hans Franke: Der Fangapparat von Chydorus.   281-  285. Gustav Schmeidel: Ein Präparationsverfahren zur Erhaltung natürlicher Form und Farbe.   285-  288. Georg Politzer: Histologische Untersuchungen über die Giftwirkung der sogenannten Vitalfarbstoffe.   288-  291. Anonymus: Leitung der Gesellschaft. (Seiten III-IV)</dc:description>
+   <dc:date>1926</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28067.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28067.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28067</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

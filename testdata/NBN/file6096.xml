@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Diagnoses of new species of Macrurous Decapod Crustacea from the Siboga-expedition</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Man, de J.G.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Family STYLODACTYLIDAE. Stylodactylus A. M.-Edw. Stylodactylus Sibogae n. sp. Stat. 95. 5° 43'.5 N., 119°40'E. Sulu Sea. 522 m. Stony bottom. 1 female. Distinguished from all the other species of the genus by the lower margin of the rostrum being smooth and glabrous. Rostrum horizontally projecting to about the middle of 2nd joint of antennular peduncle, armed above with 16 subequal teeth, of which the first six stand on the carapace; these proximal teeth are separated by very short distances, but the rest are contiguous; anterior tooth at one-fifth the length of the rostrum from the acuminate tip. Carapace with small supraorbital, antennal and branchiostegal spine. Abdomen 6-times as long as the rostrum, 4-times as long as the carapace and a little more than twice as long as carapace and rostrum taken together. The abdomen resembles that of Stylod. amarynthis de Man, but the pleura are smooth, quite unarmed, devoid of spines. Eyestalks cylindrical, almost half as long as carapace, cornea semiglobular, measuring two-thirds the length of the rest of the stalk, distinctly faceted, of a pale grayish colour, blackish near the posterior margin. Antennular peduncle little shorter than carapace, very slender, 10 to 11times as long as thick, basal joint more than twice as long as the two following combined, 2nd one and a half as long as 3rd. Antennal scale reaching by one-fourth its length beyond the antennular peduncle, narrow, the greatest width, proximally, being one-sixth the length; outer margin concave, terminal spine reaching beyond the truncate tip of the lamellar</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318601</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1918</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 159 - 166</dcterms:extent>
+   <dcterms:isPartOf>Diagnoses of new species of Macrurous Decapod Crustacea from the Siboga-expedition (URN:ISSN:0024-0672) (Volume 4) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318601.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149887</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318601</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

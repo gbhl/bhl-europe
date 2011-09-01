@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 130b (1985)</dc:title>
+   <dc:creator>Aubrecht  Gerhard, Dimt  Gunter, Dimt  Heidelinde, Frieberger  Rupert Gottfried, Gusenleitner  Fritz, Haidinger  P. Christian, Kohl  Hermann, Lipp  Franz C., Pertlwieser  Manfred, Pichler  Isfried H., Ploch  Margarete, Pröll  Roswitha, Rehberger  Karl, Rumpler  Klaus, Schwanzar  Christine, Speta  Franz, Stoiber  Hans Helmut, Tovornik  Vlasta, Ulm  Benno, Wibiral  Norbert, Winkler  Gerhard, Zauner  Alois</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerhard Winkler: Oberösterreichischer Musealverein. Vereinsbericht 1984.     7-   12. Hermann Kohl: Oberösterreichisches Landesmuseum. Direktionsbericht.    13-   16. Manfred Pertlwieser, Vlasta Tovornik: Oberösterreichisches Landesmuseum. Archäologisch-Anthropologisches Labor.    17-   19. Benno Ulm: Oberösterreichisches Landesmuseum. Abteilung Kunst- u. Kulturgeschichte 1982-1985.    19-   23. Christine Schwanzar: Oberösterreichisches Landesmuseum. Abteilung Römerzeit und Frühes Christentum.    23-   26. Margarete Ploch: Oberösterreichisches Landesmuseum. Graphische Sammlung.    26-   28. Heidelinde Dimt: Oberösterreichisches Landesmuseum. Münz- und Medaillensammlung.    28-   29. Heidelinde Dimt: Oberösterreichisches Landesmuseum. Numismatische Arbeitsgemeinschaft.    29-   30. Heidelinde Dimt: Oberösterreichisches Landesmuseum. Zoll- und Finanzgeschichtliche Sammlung.    30. Gunter Dimt: Oberösterreichisches Landesmuseum. Abteilung Volkskunde.    31-   32. Gerhard Aubrecht, Fritz Gusenleitner: Oberösterreichisches Landesmuseum. Abteilung Zoologie.    33-   41. Fritz Gusenleitner: Oberösterreichisches Landesmuseum. Entomologische Arbeitsgemeinschaft.    42-   54. Franz Speta: Oberösterreichisches Landesmuseum. Abteilung Botanik.    54-   56. Franz Speta: Oberösterreichisches Landesmuseum. Botanische Arbeitsgemeinschaft.    56-   67. Margarete Ploch: Oberösterreichisches Landesmuseum. Bibliothek.    67-   69. : Heimathäuser und -museen.    71-   95. Franz C. Lipp: Verband Oberösterreichischer Freilichtmuseen.    97-   99. Alois Zauner, Klaus Rumpler: Oberösterreichisches Landesarchiv.   101-  106. : Die wissenschaftlichen Einrichtungen der Stadt Linz.   107-  135. : Die wissenschaftlichen Einrichtungen der Diözese Linz.   137-  144. Karl Rehberger: Stift St. Florian.   145-  146. P. Christian Haidinger: Stift Kremsmünster.   147-  150. Isfried H. Pichler: Stift Schlägl.   151-  153. Rupert Gottfried Frieberger, Roswitha Pröll: Verein Schlägler Musikseminare - Schlägler Orgelkonzerte.   155-  158. Norbert Wibiral: Denkmalpflege.   159-  174. : Landwirtschaftlich-Chemische Bundesanstalt Linz.   175-  189. Hans Helmut Stoiber: Naturschutzbüro Dr. Stoiber.   191</dc:description>
+   <dc:date>1985</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28328.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28328.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28328</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Distinguishing the genera Apomatus Philippi, 1844 and Protula Risso, 1826 (Polychaeta: Serpulidae). A further Plea for a Methodical approach to Serpulid Taxonomy</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hove, Ten H.A.</dc:creator>
+   <dc:creator>Pantus F.J.A</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:subject>Polychaeta; Serpulidae; Apomatus; Protula; taxonomy; Mediterranean</dc:subject>
+   <dc:description>Ventral thoracic bloodvessel-patterns were defined in a random sample of 152 living specimens of the Apomatus/Protula- complex. Two main patterns and a derived one could be recognized. Eight characters, often used in Serpulid taxonomy and retraceable in preserved material, were determined too: e.g. presence or absence of an operculum and pattern of thoracic setae. These parameters were correlated to the vascular patterns. It was shown that (a) all operculate specimens possess a vascular system of one main pattern; 86% of those closely studied have "Apomatus-setae" at least from setiger 4 onwards; all have radioles with paired rows of compound eyespots. (b) The non-operculate specimens generally possess the other main vascular pattern; the thorax often has limbate setae throughout (56°/o) or "Apomatus-setae" in posterior segments only (31%); 70% show paired rows of simple eyespots. (c) The depths of occurrence of operculate worms differ significantly from those of nonoperculate specimens, (d) The derived vascular pattern occurs in five out of seven specimens from a depth of 200 m. Correlation of characters clarified a long existing taxonomie problem: Apomatus and Protula are distinct taxa.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319269</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1985</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 419 - 437</dcterms:extent>
+   <dcterms:isPartOf>Distinguishing the genera Apomatus Philippi, 1844 and Protula Risso, 1826 (Polychaeta: Serpulidae). A further Plea for a Methodical approach to Serpulid Taxonomy (URN:ISSN:0024-0672) (Volume 59) (Issue 32)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319269.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150555</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319269</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

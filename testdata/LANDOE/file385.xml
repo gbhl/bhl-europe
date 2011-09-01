@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 1 (1969)</dc:title>
+   <dc:creator>Baumeister  Willy, Böhles , Erlinger jun. , Herold  Harry, Nawratil  Oskar, Reichholf  Josef, Riehm  Helgard, Salvini-Plawen  Luitfried, Seidl  Fritz jun., Vetter  Ludwig</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Reichholf: Biologische Untersuchungen an den Stauseen am "Unteren Inn" im Rahmen der ZOOLOGISCHEN GESELLSCHAFT BRAUNAU    15-   17. Fritz jun. Seidl: Bemerkenswerte Mollusken aus dem Bezirk Braunau am Inn und den nördlich und östlich, angrenzenden Gebieten    18-   24. Josef Reichholf: Aufgaben und Ziele der ornithologischen Forschung am "Unteren Inn"    25-   27. Josef Reichholf: Die Ergebnisse der Internationalen Wasservogelzählung an den Stauseen am "Unteren Inn" im Herbst-1968    29-   40. Ludwig Vetter: Brillenvögel (Zosteropidae)    40-   42. Willy Baumeister: Drei Paramecien des chrysalis-Typs (Paramecium varionuklei = P. pseudoputrinum 1931, P. Traunsteineri und P. chilodonides) aus Kleingewässern    43-   52. Josef Reichholf, Helgard Riehm: Der Schillerfalter. (Apatura iris) am  "Unteren lnn"- 1968    53-   54. Erlinger jun.: Die Säugetiere der Umgebung von Braunau am Inn, unter besonderer Berücksichtigung des Schützgebietes "Hagenauer Bucht" und den im Süden angrenzenden Auen    54-   60. Erlinger jun.: Erste Ergebnisse der Limicolen-Beringung am "Unteren Inn"    61-   62. Josef Reichholf: Nahrungsangebot und. Frühjahrszug der Wasservögel an den Stauseen am "Unteren Inn"    63-   74. Josef Reichholf: Der Anteil der Stauseen am "Unteren Inn" am Bestand der Entenvögel Bayerns, in der Zählperiode 1968/69    74-   75. Böhles: Untersuchungen zur Schlammfauna der Sandbänke der "Hagenauer Bucht" am "Unteren Inn"    76-   78. Josef Reichholf: Ein Springfroschvorkommen in den Innauen    78-   82. Ludwig Vetter: Einige Erfahrungen mit meinem Mittelmeerbecken    82-   83. Erlinger jun.: Fischsterben in der" Hagenauer Bucht"    84. Luitfried Salvini-Plawen: Was sind Solenogastren und Caudofoveaten?    85-   98. Oskar Nawratil: Schneckenzucht in Österreich    99-  102. Josef Reichholf: Prodromus einer Avifauna der Stauseen am "Unteren Inn"   103-  111. Josef Reichholf: Der Frühjahrszug des Kampfläufers (Philomachus pugnax) 1969   111-  112. Harry Herold: Pagodulina pagodula principalis KLEMM und Discus perspectivus (MEGERLE VON MÜHLFELD) an der unteren Alz und Salzach   113-  115. Josef Reichholf, Erlinger jun.: Schreiadler (Aquila pomarina) im Bezirk Braunau am Inn   116</dc:description>
+   <dc:date>1969</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25163.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25163.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25163</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

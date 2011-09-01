@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Recent changes in the Dutch Heteroptera fauna (Insecta: Hemiptera)</dc:title>
+   <dc:title>Changes in ranges: invertebrates on the move. Proceedings of the 13th International Colloquium of the European Invertebrate Survey, Leiden, 2-5 September 2001</dc:title>
+   <dc:creator>Aukema B.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Heteroptera</dc:subject>
+   <dc:subject>Dutch fauna</dc:subject>
+   <dc:subject>Turnover</dc:subject>
+   <dc:subject>Extinctions</dc:subject>
+   <dc:subject>New arrivals</dc:subject>
+   <dc:subject>Range changes</dc:subject>
+   <dc:subject>Global warming</dc:subject>
+   <dc:description>Recent changes in the Dutch Heteroptera fauna (Insecta: Hemiptera) At present 610 species of Heteroptera are recorded from the Netherlands. The database of the Dutch bureau of the European Invertebrate Survey currently includes about 130 000 Dutch records (combinations of locality and species). The records, however, are strongly biased towards aquatic and semiaquatic species (72 761 records of 64 species = 1137 records/species) in comparison with terrestrial species (55 375 records of 545 species = 101 records/species). Although since about 1850 there have always been Dutch heteropterists, collecting efforts show large differences in time and place and it is for instance easy to locate both residences and favourite holiday resorts of heteropterists from the distribution maps. Local faunas are not static but dynamic and changes in the Dutch Heteroptera fauna were analysed for the period since 1960 and especially before and since 1980. A number of 571 species (93.6% of the Dutch species listed) have been recorded since 1960 and 510 of these (83.6%) have been recorded regularly since 1960 and are considered ‘resident species’. The changes documented for the period 1980-2002 concern 61 species: 27 new arrivals, 27 species rediscovered after not having been recorded in the period 1960-1980, and 7 species not recorded since 1980. From these data it is concluded that the turnover of species since 1980 (61 of 571 species) has been 10.7%. New arrivals (27) outnumber the extinctions (seven). Turnover of species of local faunas is considered a natural process (species come and go continuously), but it is also clear that habitat changes, international trade and global warming have contributed largely to the observed changes in the Dutch fauna. At least four of the 27 new arrivals are linked to international transport of plant material and the majority of the new arrivals are supposed to benefit from global warming.</dc:description>
+   <dc:publisher>European Invertebrate Survey - the Netherlands</dc:publisher>
+   <dc:contributor>Reemer M. (Editor)</dc:contributor>
+   <dc:contributor>Helsdingen P.J. (Editor)</dc:contributor>
+   <dc:contributor>Kleukers R.M.J.C. (Editor)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219853</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 39 - 52</dcterms:extent>
+   <dcterms:isPartOf>Recent changes in the Dutch Heteroptera fauna (Insecta: Hemiptera)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219853.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46393</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219853</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

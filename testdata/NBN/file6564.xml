@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Polychaeten aus den Zoologischen Museen von Leiden und Amsterdam III</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Augener H.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>Am Mittel- und Hinterkörper schimmert dorsal in der Parapodbasis ein braunliches Organ, wohl das Segmentalorgan, durch die Körperhaut hindurch, so dass jederseits am Körper eine Längsreihe von segmentalen bräunlichen Flecken gebildet wird. Die Kiefer eines Exemplares ergaben herauspräpariert folgendes Bild. Der Unterkiefer ist in seiner Form demjenigen der Eunice grubei Grav. ähnlich. Die Stäbe sind schwarzbraun, an ihrer vorderen Hälfte aussen zur Hälfte ganz farblos; die Schneiden sind hell, mit braunem Fleck an ihrer Aussenecke und mit einem braunen Längsstrich jederseits neben der Symphyse, die Schneidenkanten ohne deutliche Zähne. — Oberkiefer: I) Zange; II) 8 resp. 9 Zähne; III) 6 Zähne; IV) ca. 7 resp. ca. 10 Zähne; V) 0 resp. 0 Zähne. Die Oberkieferstücke sind dunkelgelblich, mit braunen Nähten, die Zangen mehr bräunlich. Genau aufs Haar sind die Zahnzahlen, z. B. von IV, kaum zu erkennen. Diese an ihrem auffallend schlanken Habitus kenntliche Art hat eine sehr früh beginnende und zugleich eine bedeutende Strecke vor dem Hinterende aufhörende Kiemenzone und hat ziemlich grosse Ähnlichkeit mit der Eunice longicirris Gr., unterscheidet sich von dieser aber u. a. durch die kürzere Eiemenzone und die Hellfarbigkeit ihrer ParapodAciculae und Ventralhaken. Die Benennung des vorliegenden Materials als Eunice leptocirrus wurde gesichert durch die Vergleichung mit einem im Hamburger Zoologischen Museum befindlichen, nicht mehr besonders gut erhaltenen Exemplar der Art von den Viti-Inseln. Grube hat diese Art 1869 (1870) von den Schiffer- und Viti-Inseln angeführt. Die spärlichen Angaben Grube's passen zu meinen Tieren. Der vom ihm be-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319069</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 129 - 162</dcterms:extent>
+   <dcterms:isPartOf>Polychaeten aus den Zoologischen Museen von Leiden und Amsterdam III (URN:ISSN:0024-0672) (Volume 16) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319069.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150355</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319069</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

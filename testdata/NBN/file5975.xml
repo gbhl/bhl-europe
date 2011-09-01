@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Hilbrand Boschma</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Klaauw, van der C.J.</dc:creator>
+   <dc:subject>42.01 ; 42.74</dc:subject>
+   <dc:description>For anyone who, now or in the future, in the far future, will have to do something with Rhizocephala, their systematics, microscopic anatomy, host specialization etc., it will be impossible to avoid the name and the work of Boschma. It rather seems that he can almost confine himself to this author. Anyone who, now or in the future and in some respects a very far future, will have to do something with corals, Anthozoa as well as "Hydrocorallia", their systematics, ontogeny, normal and abnormal bud formation, their variability, their form in relation to the environment, their symbioses, their geography etc., will do injustice to himself and to science by not including Boschma's work in his studies. For such colleagues this sketch of Boschma's life has been written, so that they may understand why and how Boschma's studies on these groups fit in his wider interest and skill in microscopic anatomy, in ontogeny, in certain aspects of physiology, in ecology and in zoogeography. This sketch has also been written for many other biologists, who are interested in the scientific work and the social functions of an investigator known to them. They may learn from it how, from a comparative anatomist, working microscopically as well as macroscopically, from an ontogenist and from a naturalist, has grown a systematist who used his former interests as expedients. This sketch may also give an answer to the question as to what goes on in a museum of natural history, for it describes the character of such a museum, while at the same time it pictures the history of the Leiden museum in an important period. In a way it also contributes to establishing the fate of "natural history" within the limits of biology. On the one hand natural history intensifies its problems to those of systematics,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318480</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page IX - XLIX</dcterms:extent>
+   <dcterms:isPartOf>Hilbrand Boschma (URN:ISSN:0024-0672) (Volume 39)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318480.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149766</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318480</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

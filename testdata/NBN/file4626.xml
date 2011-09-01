@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Biodiversiteit in Nederland</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Loon, van A.J.</dc:creator>
+   <dc:subject>Natuurbescherming</dc:subject>
+   <dc:subject>biodiversiteit</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:description>Biodiversiteit is een relatief nieuw begrip dat de rijkdom aan soorten en planten en dieren, maar ook van ecosystemen beschrijft. De toegenomen maatschappelijke zorg voor het verdwijnen van levensvormen heeft tijdens de Conferentie van Rio de Janeiro in 1992 geleid tot het Internationale Verdrag inzake de Biologische Diversiteit. Ook Nederland heeft als ondertekenaar van dit verdrag een bijzondere verantwoordelijkheid voor zijn eigen soorten planten en dieren. Hoeveel zijn dat er eigenlijk in Nederland? Wat doen overheid en particuliere natuurbescherming er aan om deze rijkdom in ons land te behouden? En wat is dat begrip biodiversiteit eigenlijk? Dit boek probeert een antwoord te geven op een aantal van die vragen. Zo worden hier voor het eerst de aantallen in ons land voorkomende soorten planten en dieren gegeven (ca. 42.000), naast informatie over de groepen waartoe deze soorten behoren, waar ze leven, hoe men ze kan determineren en hoe het gesteld is met de achteruitgang. Nu is het al zeker dat meer dan 600 diersoorten uit Nederland zijn verdwenen en dat er veel meer bedreigd zijn. Anderzijds komen er telkens nieuwe soorten uit verre streken bij. Wetenschappers geven hun visie op het begrip biodiversiteit en beleidsmakers bij de Vereniging Natuurmonumenten en het Ministerie van Landbouw, Natuurbeheer en Visserij vertellen hoe we huns inziens het beste de biodiversiteit kunnen behouden. De door de overheid vastgestelde lijst van doelsoorten is ook in dit boek opgenomen evenals de volledige tekst van het Internationale Verdrag inzake de Biologische Diversiteit.</dc:description>
+   <dc:publisher>Nationaal Natuurhistorisch Museum [etc.]</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:303573</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Uitg. naar aanleiding van het gelĳknamige symposium in de Stadsgehoorzaal Leiden, 19 november 1993 Met index, lit. opg. - Met samenvatting in het Engels</dcterms:alternative>
+   <dcterms:issued>1995</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>208</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/303573.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/133136</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/303573</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

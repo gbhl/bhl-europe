@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Molluscan radiations and landscape evolution in Miocene Amazonia</dc:title>
+   <dc:creator>Wesselingh F.P.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Amazonian biodiversity</dc:subject>
+   <dc:subject>Miocene</dc:subject>
+   <dc:subject>mollusc fauna</dc:subject>
+   <dc:subject>Pebas Formation</dc:subject>
+   <dc:description>This PhD study aims to exploit the rich archive provided by the Miocene mollusc fauna of the Pebas Formation and other inland Miocene Amazonian formations to reconstruct landscape evolution and biotic development in lowland Amazonia during the Neogene. Over 160 samples from more than 70 Pebas Formation outcrops mostly collected by the author were processed for this study. Additional samples were collected in Andean areas of Colombia and Venezuela and further material from other northwestern South American basins was studied in museums. Pebas Formation samples and well log data made available by Occidental Peru from three wells in the Marañon Basin in Peru were also investigated. During this study four genera and 74 species from the Pebas Formation have been described and a further 13 species have been introduced in open nomenclature, and several species were reported for the first time. The number of mollusc species attributed to the Pebas fauna has increased from around 50 to 156. The Pebas fauna is characterised as aquatic, endemic and extinct, and is a typical representative of a long-lived lake fauna. Fluvial taxa are not common, (marginal) marine taxa are rare. An additional molluscan fauna from the Miocene Solimões Formation of Brazil, containing 13 fresh water species was also described. The newly documented fauna was used to improve biostratigraphic framework of Miocene Amazonian deposits. Twelve mollusc zones were introduced, the upper eleven of which cover a time interval of approximately seven million years covered previously by only three pollen zones. An age model calculated for the borehole data indicates that the Pebas Formation was deposited between c. 24 and 11 Ma. The areal distribution of the outcropping mollusc zones uncovered a broad dome structure, termed here the Iquitos-Araracuara anteclise in the study area. The structure appears to have influenced river courses and also contributed to edaphic heterogeneity that may have been in part responsible for the current high biodiversity in the study area. The Pebas system was a huge system (&gt; one million km2) dominated by relatively shallow lakes, but also containing swamps and rivers. The system was fed by rivers draining the emergent Andes in the west and lowlands and cratons to the east. The Pebas system was located at sea level and was open to marine settings through a northern portal running through the Llanos Basin and East Venezuela Basin towards the Caribbean. Cyclical baselevel changes possibly related to Mylankhovitch cycles, have been documented in depositional sequences of the Pebas Formation. The composition of the Pebasian mollusc fauna implies that the system was mostly a fresh water system. Such an interpretation is matched by strontium isotope ratios as well as very negative d18O ratios found in the shells, but is at odds with oligohaline and mesohaline ichnofacies found in the same strata. The mollusc fauna of the Pebas Formation diversified through most of the existence of the lake system. The diversification was mostly the result of in-situ cladogenesis. The success of some of the Pebasian endemic clades is explained by adaptation to fresh water, low oxygen, common unconsolidated lake bottoms (soup grounds) as well as high predation intensity. Maximum diversity was reached at the base of the late Middle to early Late Miocene Grimsdalea pollen zone, some 13 Ma. At the time some 85 species co-occurred, 67 of which are considered as Pebasian endemics. A subsequent drop in species richness coincides with indications of elevated salinities, although a causal relation still needs to be established. Apparently the Pebas fauna went (almost) entirely extinct with the replacement of the lake system into a fluvio-tidal system during the Early Late Miocene, some 11 Ma.</dc:description>
+   <dc:publisher>University of Turku</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:307030</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Doctoral dissertation (article-based)</dcterms:alternative>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>41</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/307030.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/136815</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/307030</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

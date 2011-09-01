@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annotated checklist of the Alpheid Shrimp of the Red Sea and Gulf of Aden</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Banner D.M.</dc:creator>
+   <dc:creator>Banner A.H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The 72 species and subspecies of alpheid shrimp previously reported from the Red Sea and Gulf of Aden are listed, and the following 20 species and subspecies previously known from the Indo-Pacific or the Indian Ocean, are added: Alpheus bisincisus De Haan; A. clypeatus Coutière; A. distinguendus De Man; A. edamensis De Man; Α. euphrosyne euphrosyne De Man; A. lanceostylus Banner; A. leptochirus Coutière; Α. miersi Coutière; A. pareuchirus pareuchirus Coutière; A. tenuicarpus De Man; Athanas marshallenis Chace; Betaeopsis indicus (De Man); Salmoneus brevirostris (Edmondson); Synalpheus ancistrorhynchus De Man; S. gracilirostris De Man; S. hastilicrassus Coutière; S. nilandensis Coutière; S. sladeni Coutière; S. trianthus De Man; S. tricuspidatus (Heller). In addition, three species are described as new, the first two from the southern Red Sea and the third from the Gulf of Aden: Athanopsis brevirostris; Synalpheus paradoxus; Synalpheus spongicola. Other changes in nomenclature or records and in other characterizations are as follows: A lectotype is selected and described for Alpheus bucephaloides from Nobili's type series from the Persian Gulf. A. fasciatus Lockington, recorded by Coutière (1899: 486) from the area, is considered probably to be A. alpheopsides Coutière, and Lockington's nominal taxon itself to be a nomen dubium until types are redescribed or topotypes are established. A. djiboutensis De Man is considered to be a synonym of A. djeddensis Coutière. The species recorded by Coutière as A. euchirus Dana from the area was probably A. serenei Tiwari. A. inopinatus Holthuis &amp; Gottlieb and A. lobidens polynesica Banner &amp; Banner are placed into synonymy under A. lobidens De Haan. The genus Salmoneus Holthuis is redefined, and a provisional key is given to its species. Characteristics of the remaining "types" of Coutière's two species, S. cristatus and S. Serratidigitus, are discussed; and S. latirostris (Coutière) and S. sibogae (De Man) are considered to be synonyms of the latter species. Finally Synalpheus savigny (Guérin) is considered to be a nomen dubium and Tattersall's record of it from the Red Sea to be equally dubious. As an appendix to the study, the listing of 15 species from a small Danish collection and two private collectors from the Persian Gulf is given: all are known from the Red Sea, but nine of the species have not been previously recorded from the Persian Gulf.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317684</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1981</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 99</dcterms:extent>
+   <dcterms:isPartOf>Annotated checklist of the Alpheid Shrimp of the Red Sea and Gulf of Aden (URN:ISSN:0024-1652) (Volume 190) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317684.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148970</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317684</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

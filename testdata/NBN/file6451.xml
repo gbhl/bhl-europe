@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revisionary notes on the Sphenomorphus isolepis complex (Lacertilia, Scincidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Storr G.M.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Taxa that have only just attained specific distinction from each other can be of great interest to students of evolution, though their classification may pose serious problems for taxonomists. For example, the sparrows Passer domesticus and P. hispaniolensis behave as good species in most parts of their shared range but hybridize in other parts. The gulls of the Larus argentatus complex form a ring of annectant races around the Holarctic, but their overlapping terminal segments behave as good species in western Europe. Each of these phenomena (described by Mayr, 1963) is paralleled in Australian skinks of the genus Sphenomorphus, the first in the richardsonii complex and the second in the isolepis complex. Previous analyses of these complexes (Storr, 1967) were hampered by shortage of material from critical areas, but recent collections permit a reappraisal of the isolepis complex. It was suggested earlier that if S. i. isolepis and S. i. douglasi should prove to be sympatric in north Kimberley, douglasi would have to be considered a full species, and its eastern and western segments could be racially separated. Subsequent collections of both forms by Mr W. H. Butler at Kalumburu have confirmed their sympatry in north Kimberley. However, I am now reluctant to raise douglasi to a full species. As discussed below, the eastern (and typical) segment of douglasi is connected to typical isolepis by a chain of intermediate, sometimes intergrading, populations. To break this chain seems more artificial than to separate the two segments of "douglasi". I therefore 1) restrict douglasi to the eastern segment (Darwin region) and tentatively retain it as a race of S. isolepis, and 2) describe the western segment as a new species below. Sphenomorphus brongersmai spec. nov.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318956</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 5</dcterms:extent>
+   <dcterms:isPartOf>Revisionary notes on the Sphenomorphus isolepis complex (Lacertilia, Scincidae) (URN:ISSN:0024-0672) (Volume 47) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318956.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150242</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318956</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Re-evaluation of the holotype of Mus ruber Jentink, 1880 (Rodentia: Muridae) from western New Guinea (Irian Jaya)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Calaby J.H.</dc:creator>
+   <dc:creator>Mary Taylor J.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>INTRODUCTION The first rodent from the New Guinea region, now included in the genus Rattus, to be formally named, was Mus ruber Jentink, 1880. The name R. ruber is currently in widespread use (Lidicker, 1968, 1973; Lidicker &amp; Ziegler, 1968; Misonne, 1969; Ziegler, 1971; Bulmer &amp; Menzies, 1972, 1973; Menzies, 1973; Dwyer, 1975), several subspecies from areas throughout New Guinea and adjacent islands have been placed under it (Tate, 1951; Laurie, 1952; Laurie &amp; Hill, 1954), and some of these are among the most abundant and widespread endemic rats in the entire region. Furthermore, populations identified as nominate ruber and various other subspecies have on earlier occasions been shifted at the generic level or have been linked with other groups of Rattus. In fact the various forms currently placed in R. ruber represent a complex of species. A detailed analysis of the situation will be published at a future date (Taylor, Calaby and Van Deusen, ms). Several assessments of species of Rattus endemic to New Guinea have been made, of which none has seriously questioned the endemicity or validity of R. ruber as a distinct taxon represented by Jentink's holotype. Jentink (1880) remarked that the holotype had very soft fur with no trace of spines, and that it resembled Mus neglectus (= R. rattus), a point not pursued by later investigators, some of whom (e.g. Ellerman) never even examined the specimen. THE TYPE SPECIMEN The holotype consists of a mounted specimen (Rijksmuseum van Natuurlijke Historie, Cat. syst. a) and skull (RMNH Cat. ost. a), reg. nr. 26067. It is not known whether any field collecting label ever existed, but the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318476</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 215 - 219</dcterms:extent>
+   <dcterms:isPartOf>Re-evaluation of the holotype of Mus ruber Jentink, 1880 (Rodentia: Muridae) from western New Guinea (Irian Jaya) (URN:ISSN:0024-0672) (Volume 55) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318476.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149762</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318476</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

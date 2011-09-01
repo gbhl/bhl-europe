@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Un Trachys asiatique nouveau (Coleoptera, Buprestidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Thery A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Trachys calopogoniae nov. spec. Noir dessus, tête et pronotum plus ou moins bronzés; dessous bronzé verdâtre; palpes et tarses, à l'exception du dernier article, testacés. Subovalaire, ayant sa plus grande largeur aux épaules, orné, en dessus, de dessins formés de poils blancs et dorés, semi-érigés, en mélange, l'espace entre les dessins, recouvert de poils noirs analogues, mais de même couleur que le fond et absolument invisibles, sauf sous un certain jour. Tête profondément creusée en avant, sans sculpture distincte, front recouvert de gros poils couchés, assez espacés et ne voilant pas le fond. Epistome large, assez haut, environ deux fois aussi large que haut, échancré en avant, finement strié, avec un pore arrondi, situé, de chaque côté, au dessus des angles de l'épistome. Yeux assez allongés, assez régulièrement elliptiques, la suture fronto-oculaire légèrement en carène, la partie située entre les yeux à côtés convergents assez fortement vers le bas. Antennes courtes, dépassant à peine le bord antérieur du pronotum, dentées à partir du 7ème article, le 2ème article presqu'aussi épais que le premier, un peu plus long que large, les 4 suivants cylindriques, le 3ème un peu plus long que les suivants, les articles 4—6 subégaux, les articles dentés pilifères. Pronotum deux fois 3/4 aussi large que long, ayant sa plus grande largeur à la base, avec les angles anteriéurs assez saillants, à peine aigus, les côtés faiblement arqués, rebordés par une carène un peu sinueuse, les angles postérieurs un peu aigus prolongés en arrière et contournant l'épaule. Base fortement sinueuse, avec un large lobe médian arrondi. Disque regulièrement bombé, sillonné le long de la base, à peine visiblement sculpté, recouvert de poils dorés, dirigés vers l'avant, avec une petite tache de poils</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318828</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 203 - 205</dcterms:extent>
+   <dcterms:isPartOf>Un Trachys asiatique nouveau (Coleoptera, Buprestidae) (URN:ISSN:0024-0672) (Volume 20) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318828.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150114</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318828</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

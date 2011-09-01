@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Studies on Idiocerine Leafhoppers XII. Idioscopus Clavosignatus spec. nov. (Homoptera, Cicadellidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Maldonado Capriles J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Among material from the Leiden Museum loaned to me for study a new species of Idioscopus was found that is described here. A summary of the species in the genus is added in two tables. In the descriptions below 30 micrometer units are equivalent to 1.0 mm. The types are deposited in the Leiden Museum, The Netherlands, in my own collection, and in the United States National Museum, Washington. Idioscopus clavosignatus spec. nov. Male. — Overall coloration brown or blackish-brown, forewing with a conspicuous greenish-yellow area on basal half of clavus. Vertex brown; medially, along basal margin, and eyes lined with light-brown. Face with anteclypeus, most of postclypeus, and areas around ocelli blackish-brown; genae, lorae, and remaining areas of frons brownish. Beak blackish-brown. Pronotum brown, with four ivory spots along anterior margin. Scutellum brown, a small triangular blackish area near each basal angle, apex greenishyellow. Thorax laterally brown, mesopleura blackish-brown. Fore and mid legs light-brown; hind leg with costa posteriorly, femur, and tibia entirely brown; other areas of coxa light-brown; outer edge of metatibia with lightbrown spines; hind tarsus with first segment ivory. Forewing mostly transparent, with a brownish tinge, with well-defined brown veins (fig. 2); clavus as described above; costal cell and apices of second to fourth apical cells and part of appendix darker brown; costal margin brown, small area at apex of costal cell and base of outermost apical cell hyaline or grayish. Abdominal sterna brown with cream-coloured apical margin. Vertex five times as wide as long (25 : 5), margins parallel, finely transversely striate. Face as long as wide across eyes (48 : 48), ocelli closer to</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318842</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 163 - 167</dcterms:extent>
+   <dcterms:isPartOf>Studies on Idiocerine Leafhoppers XII. Idioscopus Clavosignatus spec. nov. (Homoptera, Cicadellidae) (URN:ISSN:0024-0672) (Volume 48) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318842.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150128</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318842</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

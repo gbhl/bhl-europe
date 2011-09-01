@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a collection of fishes from Siam</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Koumans F.P.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Through the courtesy of Dr. J. Roux, to whom I am very thankful, I received for identification from the "Naturhistorisches Museum" at Basle a collection of Fishes from Siam, collected by Dr. H. Bernatzik in 1936 and 1937. The collection consists of representatives of 37 species, among which the type of a new species. Barilius bernatziki nov. spec. (fig. 1). D. 3.8; A. 3.9; P. 1.14; V. 1.8; L.l. 31 + 2; L.tr. T. 6 1/2 / 1/ 3 1/2. Body elongate, strongly compressed, dorsal profile less convex than ventral profile; height 3 1/4 in length, 4 1/5 in total length. Head compressed, 4 in length, a little more than 5 in total length. Eye 3 1/2 in head, interorbital flat, 1 eye diameter. Circumorbital bones large. Snout as long as eye, tip before upper edge of pupil. Mouth oblique, lower jaw a little prominent. Maxillary extends to below anterior edge of pupil. Rostral barbel and maxillary barbel very short, about 5 in eye. On lower jaw on each side anteriorly 4 rows of pores (pearl organs), posteriorly 3 rows; 2 rows on each side on the end of maxillary; some rows on snout and some pores below anterior part of eye; a few pores on lower limb of preopercle; a row on each side before the branchiostegal region, some pores between the branchiostegal rays. These pores have horny tubercles, which are more or less deciduous. Origin of dorsal fin above the 15th scale of lateral line, midway between posterior edge of eye and base of caudal fin; 17 predorsal scales. Margin of dorsal fin nearly straight, anterior rays a little shorter than head, last rays inserted above the anterior 1/3 of anal fin. Origin of anal fin below the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318478</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 61 - 64</dcterms:extent>
+   <dcterms:isPartOf>On a collection of fishes from Siam (URN:ISSN:0024-0672) (Volume 20) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318478.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149764</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318478</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

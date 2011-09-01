@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On recent accessions of Surinam fishes</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>In 1953, Mr. E. C. Stol, naturalist at Leiden, kindly placed at my disposal a small collection of Surinam freshwater aquarium fishes. A second collection, consisting of freshwater and marine specimens from Surinam, mainly collected by Dr. D. C. Geijskes and Mr. H. W. Lijding (Fishery Department), was received during 1954. As the two collections proved to contain several interesting specimens belonging to species not yet reported from Surinam, the following enumeration is given. To the measurements of specimens with damaged caudal fins the mark is added. Dasyatis guttata (Bl.; Schn.) 1 ex., near lightship Surinam River, 5-8 miles E., 12 January 1954, H. W. Lijding, 412 mm, ♂. Further data: length of disc (to anus) 97 mm; length of tail (from anus) 315 mm; width of disc 106 mm; snout (to orbit) 26 mm; floor of mouth with three distinct papillae; skin completely smooth; yolk sac well developed. A well known species from the Surinam coastal area. Gymnura micrura (Bl.; Schn.) 1 ex., Surinam River (8-10 miles above outlet?), 11 February 1954, H. W. Lijding, 165 mm, ♂. A common Caribbean species; the type came from Surinam. Narcine brasiliensis (Olfers) 1 ex., near lightship Surinam River, 5-8 miles E., 13 July 1953, H. W. Lijding, 123 mm, 9. There are distinct dark circular markings on the back. This species is quite common in the Caribbean waters but apparently had not yet been</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318024</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 183 - 199</dcterms:extent>
+   <dcterms:isPartOf>On recent accessions of Surinam fishes (URN:ISSN:0024-0672) (Volume 34) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318024.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149310</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318024</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

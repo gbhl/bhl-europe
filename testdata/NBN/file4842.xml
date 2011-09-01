@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: Environmental changes recorded in the Holocene molluscan faunas from Djursland, Denmark</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Petersen K.S.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>Environmental changes in the Holocene molluscan fauna are elucidated by the investigation of the Korupsø area in the central part of Djursland, Denmark, on macrofossils and 14C datings of shell material. The oldest recorded stratum is a lacustrine Boreal lime gyttja which in the Early Atlantic was covered by saltwater gyttja with a rich fauna of molluscs. The fauna is characterised by Ostrea edulis, Venerupis decussata, Macoma balthica, and Corbula gibba. Bittium reticulatum is only found in large quantities within this older part of the sequence up to the end of the Atlantic. The disappearance of Bittium reticulatum in the Subboreal is explained as having been caused by a change to a more brackish environment. This explanation is supported by the decline in numbers of Hydrobia ulvae and the occurrence in equal numbers of Hydrobia ventrosa in the Subboreal. The rate of sedimentation was low during the Atlantic (1 m per thousand years) compared to the Subboreal, when a sedimentation of up to 5 m per thousand years has been observed. This change in sedimentation rate is tentatively connected with a lowering of the tidal range in the Danish waters since the Atlantic.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317346</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1992</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 359 - 369</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the symposium 'Molluscan Palaeontology' : 11th International Malacological Congress, Siena (Italy) 30th August - 5th September 1992 / A.W. Janssen and R. Janssen (editors)]: Environmental changes recorded in the Holocene molluscan faunas from Djursland, Denmark (URN:ISSN:0922-4564) (Volume 2) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317346.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148632</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317346</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

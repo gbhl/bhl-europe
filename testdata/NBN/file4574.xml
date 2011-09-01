@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>OBN-inventarisaties van bijen in Buurserzand, Kampina, Sprengenberg, Velhorst en Witte Veen</dc:title>
+   <dc:creator>Loonstra A.J.</dc:creator>
+   <dc:creator>Reemer M.</dc:creator>
+   <dc:creator>Meer, van der F.</dc:creator>
+   <dc:creator>Smit J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera; Apidae; Bijen; verspreiding; natuurmonumenten;</dc:subject>
+   <dc:description>Op initiatief van de Vereniging Natuurmonumenten heeft Stichting EIS-Nederland in 2008 de bijenfauna geïnventariseerd van vijf terreinen (zie onder). Speciale aandacht ging hierbij uit naar terreindelen waar in het kader van het Overlevingsplan Bos en Natuur (OBN) maatregelen getroffen zijn of zullen worden om verzuring, vermesting en verdroging tegen te gaan. Elk gebied is minimaal drie keer bezocht. Per gebied wordt de aangetroffen bijenfauna besproken en waar mogelijk vergeleken met gegevens uit eerdere jaren. Ook worden er aanbevelingen gegeven voor beheer ten gunste van de bijenfauna. Buurserzand (Overijssel: Twente) In 2008 zijn 41 soorten bijen gevonden in het Buurserzand, waaronder vier soorten van de Rode Lijst. Enkele vergraste stukken heide zullen in het kader van het OBN geplagd worden. Deze terreindelen zijn nu nauwelijks interressant voor bijen. Naar verwachting zullen de geplande plagwerkzaamheden hier in positieve zin verandering in aanbrengen. De voor bijen meest interessante stukken zijn te vinden op en langs zandpaden en wegen. Hier is de meeste bloemenrijkdom te vinden. Kampina - Smalbroeken (Noord-Brabant) In 2008 zijn 42 soorten bijen gevonden in het deel van de Kampina dat Smalbroeken wordt genoemd. Hieronder zijn zeven soorten van de Rode Lijst, waarvan de klaverbehangersbij Megachile ligniseca de bijzonderste is. Een groot deel van Smalbroeken is vochtig en bebost, waardoor slechts kleine delen geschikt zijn voor bijen. Geschikte delen zijn vooral te vinden op en langs zandige paden en dijken en langs bosranden. De droge heideterreintjes zijn momenteel te sterk vergrast en verbost om interessant te zijn voor bijen. Sprengenberg (Overijssel) In 2008 zijn 50 soorten bijen gevonden op de Sprengenberg, waaronder acht soorten van de Rode Lijst. Het terrein is afwisselend en biedt een goede diversiteit aan bloemenaanbod en nestelgelegenheid. Belangrijke elementen zijn onder andere wilgen, sporkehout, solitaire braamstruwelen op de heide en steilwanden. De stukken door Natuurmonumenten afgegraven heide met de daarlangs ontstane steilwanden zullen naar verwachting interessant worden als nestelplaats voor bijen. Velhorst (Gelderland: Achterhoek) In 2008 zijn 63 soorten bijen gevonden in Velhorst, waaronder 12 soorten van de Rode Lijst. Dit is een opvallend hoog aantal voor zo'n klein gebiedje. Dit is vermoedelijk te danken aan het gevarieerde karakter van het terrein, met een afwisselende vegetatiestructuur en veel overgangen van droog naar nat. Witte Veen (Overijssel: Twente) In 2008 zijn 31 soorten bijen gevonden in het Witte Veen, waaronder drie soorten van de Rode Lijst. De te plaggen stukken heide zijn dicht begroeid en/of tamelijk nat, waardoor ze voor bijen weinig interessant zijn. De plagwerkzaamheden zullen op droge plekken waarschijnlijk nestelgelegenheid opleveren, terwijl er op natte plekken wellicht meer bloemenaanbod ontstaat. De voor bijen meest interessante plekken liggen langs de wegen en paden en in enkele zandige terreindelen.</dc:description>
+   <dc:publisher>EIS-Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:292316</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>40</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/292316.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/122774</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/292316</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

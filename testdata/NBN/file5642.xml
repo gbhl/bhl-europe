@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Dragonfly-fauna of Trinidad in the British West Indies (Odonata)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Geijskes D.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>PART II. Subordo: Anisoptera. Fam. Aeschnidae. Subfam. Gomphinae. Genus: Gomphoides Selys. The little material of the interesting family of Gomphinae we know from this island, is represented by a few specimens of the genus Gomphoides. In the year 1929 on July 13 and some days afterwards, two specimens, one male and one female of different species were taken by myself on a small river in the mountains near Mt. St. Benedict. Since these captures no Gomphoides was seen again, all the time I stayed in Trinidad. Mr. E. B. WILLIAMSON in Michigan, from whom I got information when determining my Gomphoides-specimens, wrote me in this connection, that he was just working at a revision of the genus and not able (March 17, 1930) to name my Trinidad specimens. About one year afterwards in a letter dated Jan. 13, 1931, Mr. WILLIAMSON wrote me, that two Gomphoides-specimens were received from Trinidad from the collector Belmontes in Brasso, a male in a consignment for his own collection and a female in a collection consigned to Dr. WALKER in Toronto, which specimen was forwarded to him by Dr. WALKER. In his last letter of April 6, 1932, Mr. WILLIAMSON noted on the Gomphoides-specimens: "As to Trinidad Gomphoides, I think there are two species in all the material to date. I have no reason to think the Trinidad Gomphoides represent anything new, so I believe naming of the scanty material can well await the completion of my study if that meets with your approval".</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318147</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1932</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 96 - 128</dcterms:extent>
+   <dcterms:isPartOf>The Dragonfly-fauna of Trinidad in the British West Indies (Odonata) (URN:ISSN:0024-0672) (Volume 15) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318147.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149433</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318147</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

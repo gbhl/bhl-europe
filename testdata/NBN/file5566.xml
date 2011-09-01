@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a new bird of paradise from Central New Guinea, Falcinellus meyeri albicans</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Oort, van E.D.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:description>Among the collection of birdskins brought home by the third expedition to Mount Wilhelmina in the Snow Mountains of New Guinea there are some specimens, males and females, of a bird of paradise, much resembling Falcinellus meyeri (Finsch) from South-east New Guinea, but differing in some points. They likely are representatives of a western form of the above-named species, inhabiting the high mountains of the central part of Netherlands' New Guinea. I name this form: Falcinellus meyeri albicans nov. subsp. The adult male is similar to that of meyeri, the long feathers of the flanks however are white and not pale yellowish brown; the breast is more pure olive, with less brown tinge. The female much resembles that of meyeri, but the colour of the back, upper tailcoverts and tailfeathers is olive-brown, without rufous tinge. Types, ♂ ♀, Treubbivak (2366 m.) on the Treub Mountains, January 30, 1913 and March 8, 1913. G. Versteeg leg., Nos 497 and 630. The expedition has collected near Bijenkorfbivak, on the southern slope of the Hellwig Mountains at an elevation of ± 1750 m., a fine series of the black form of Falcinellus striatus (Boddaert), described by Mr. Rothschild from Mount Goliath (5000 feet) under the name of Falcinellus striatus atratus (Ibis, 1912, p. 110). Mr. Rothschild is right in treating this bird as a subspecies of striatus, but this is not the case with meyeri, as he has done in a paper in the Ibis of 1911, p. 350. The females of striatus and atratus are easily distinguished from the females of meyeri and albicans by the coloration of the quills, the rufous colour of the outer webs of the primaries and of the inner webs of the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318071</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1915</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 228 - 228</dcterms:extent>
+   <dcterms:isPartOf>On a new bird of paradise from Central New Guinea, Falcinellus meyeri albicans (URN:ISSN:0024-0672) (Volume 1) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318071.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149357</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318071</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

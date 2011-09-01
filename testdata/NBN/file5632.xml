@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Beiträge zur Kenntnis der Pupillacea VII. Über zwei Wenig Bekannte Valloniidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Spermodea spermatia (Da Silva e Castro) (Fig. 2) Helix spermatia J. da Silva e Castro, 1887: 249 (Locus typicus: "au bois de Bussaco", Bugaco, 40°22'N 8°21'W, etwa 15 km nnö. von Coimbra, Beira Litoral, Portugal — ? Syntypus: MHNG-Bgt2)). — A. Locard, 1899: 61. Helix (Acanthinula) spermatia — C. A. Westerlund, 1889: 17. Acanthinula spermatia — H. A. Pilsbry, 1895: 281. Spermodea spermatia — H. A. Pilsbry, 1926: 188. — L. Germain, 1930: 389. Spermodea lamellata spermatea [sic] — S. G. H. Jaeckel, 1962: 105. Von Helix spermatia existiert nur die dürftige Originalbeschreibung, ohne Abbildung, mit der Angabe dazu, dass es sich um eine mit "lamellata, Jeffreys" nahe verwandte Art handelt. Nur durch diese Angabe wurde die spätere Zuteilung zur Gattung Spermodea Westerlund, 1902 (Typusart: S. lamellata (Jeffreys)), möglich. Jaeckel (1962: 105) rechnet das Taxon ohne nähere Begründung als Unterart zu S. lamellata. Nobre (1930) erwähnt Helix spermatia nicht. In der Sammlung Bourguignat im Muséum d'Histoire Naturelle, Genf, befindet sich ein Gehäuse von "Helix spermatia" vom Originalfundort. Es dürfte sich dabei um einen Syntypus handeln, denn es ergibt sich aus der Arbeit von Da Silva e Castro (1887), einem Mitglied der "Société malacologique de France", dass Bourguignat Originalmaterial zur Beurteilung zugeschickt bekommen hatte. Es war Bourguignat — "notre excellent ami et savant maître" — der spermatia und lamellata zu einer "petit groupe à part" rechnen wollte. 1) VI. Die Gattung Agardhiella in Jugoslawien. — Zool. Meded. Leiden, 48 (24): 279-289.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318137</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 295 - 301</dcterms:extent>
+   <dcterms:isPartOf>Beiträge zur Kenntnis der Pupillacea VII. Über zwei Wenig Bekannte Valloniidae (URN:ISSN:0024-0672) (Volume 50) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318137.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149423</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318137</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

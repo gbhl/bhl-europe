@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vogelkundliche Nachrichten aus Oberösterreich, Naturschutz aktuell 17ab (2009)</dc:title>
+   <dc:creator>Billinger  Karl, Brader  Martin, Donner  Josef, Frühauf  Johannes, Haslinger  Gernot, Krieger  Hubert, Plass  Jürgen, Pühringer  Norbert, Ranner  Andreas, Reichholf-Riehm  Helgard, Rubenser  Herbert, Schmalzer  Alois, Schütz  Claudia, Stadler  Susanne, Steiner  Helmut, Uhl  Hans, Weigl  Stephan</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Andreas Ranner, Claudia Schütz: ERSTER NACHWEIS DER SCHWALBENMÖWE (Xema sabini,
+SABINE 1819) FÜR OBERÖSTERREICH UND ÜBERLE     1-   12. Hans Uhl, Johannes Frühauf, Hubert Krieger, Herbert Rubenser, Alois Schmalzer: HEIDELERCHE (Lullula arborea) IM MÜHLVIERTEL
+ERHEBUNG DER BRUTVORKOMMEN UND
+ARTENSCHUTZPROJEKT 2007    13-   44. Helmut Steiner: BESTANDSEINBRUCH DES KIEBITZ (Vanellus vanellus) IM
+ALPENVORLAND, GROßRÄUMIGE DICHTE UND
+VORLÄUFIGE FAKTOREN FÜR HABICHT- UND
+WANDERFALKEN-PRÄDATION    45-   71. Helmut Steiner: ZUR NUTZUNG DES HERBSTLICHEN VOGELZUGES UND
+ÖKOLOGIE EINER BRUT AUF EINEM MASTEN EINER
+HOCHSPANNUNGLEITUNG BEIM BAUMFALKEN (Falco subbuteo)    73-   88. Martin Brader: INTERNATIONALE WASSERVOGELZÄHLUNG IN
+OBERÖSTERREICH IM JÄNNER 2009 (EINSCHLIESSLICH
+DER ZÄHLUNGEN NOVEMBER 2008 UND MÄRZ 2009)    89-   95. Jürgen Plass, Gernot Haslinger: ERGEBNISSE DER EULENERHEBUNG IN
+OBERÖSTERREICH 2008    97-  111. Josef Donner: VOGELBERINGUNG IN OBERÖSTERREICH 2008 UND
+BEMERKENSWERTE RINGFUNDE   113-  118. Karl Billinger, Helgard Reichholf-Riehm: ERSTE BRUT VOM SEEADLER (Haliaeetus albicilla)
+AM UNTEREN INN (BAYERN)   119-  128. Stephan Weigl, Martin Brader: ORNITHOLOGISCHE VIERLÄNDER-EXKURSION NACH
+SÜDBÖHMEN AUF DEN TRUPPENÜBUNGSPLATZ
+BOLETICE (SPECIAL PROTECTED AREA) IM MAI 2009   129-  140. Susanne Stadler, Norbert Pühringer: ORNITHOLOGISCHE BEOBACHTUNGEN AUS
+OBERÖSTERREICH AUS DEM JAHR 2008   141-  196. : Kurz notiert   197</dc:description>
+   <dc:date>2009</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29212.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29212.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29212</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

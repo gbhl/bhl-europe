@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Micractaeon, a monotypic genus of African land snails (Gastropoda Pulmonata: Ferussaciidae?)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:creator>Winter, de A.J.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Gastropoda; Pulmonata; Ferussaciidae; Micractaeon; Africa; Ghana; Cameroon; Zaïre; Kenya; Zambia; Mala?i ; taxonomy; distribution</dc:subject>
+   <dc:description>Micractaeon kakamegaensis Verdcourt, 1993 (type loc. Kenya, Kakamega Forest), is a synonym of Pseudopeas koptawelilense Germain, 1934 (type loc. Kenya, Mt. Elgon); the proper name is therefore Micractaeon koptawelilensis (Germain, 1934). New anatomical data are supplied, more or less confirming classification in the family Ferussaciidae. The shell is subject to some considerable variation in size, shape and sculpture. The species appears to be widely distributed in various types of forest in tropical Africa (Ghana, Cameroon, eastern and south-eastern Zaïre, Kenya, Malawi, and eastern Zambia); hypsometrical distribution is generally from c. 950 m to c. 2300 m, although in Ghana it has been collected at altitudes of between &amp;lt; 250 and c. 700 m.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319133</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1995</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 79 - 92</dcterms:extent>
+   <dcterms:isPartOf>Notes on Micractaeon, a monotypic genus of African land snails (Gastropoda Pulmonata: Ferussaciidae?) (URN:ISSN:0024-0672) (Volume 69) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319133.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150419</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319133</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

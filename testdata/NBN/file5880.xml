@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ueber Anomalien des Gastrovascularsystems von Rhizostoma octopus L. und ihre Bedeutung für die Phylogenie</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>In zahlreichen früheren Mitteilungen (2, 4, 5, 7) habe ich bereits auf die Bedeutung der Anomalien in der Ausbildung des Gastrovascularsystems der Rhizostomeen für die Erkenntnis der Phylogenie hingewiesen. Anomalien sind bei den Rhizostomeen nichts seltenes. Oft ist das Gastrovascularsystem nicht in allen Sektoren eines Exemplares gleichmässig entwickelt. Manche zeigen das normale Verhalten, andre eilen in der Entwicklung voraus, andre bleiben dagegen zurück. So kann man gelegentlich bei einem einzigen Exemplar eine ganze Reihe von Entwicklungsstufen des Gastrovascularsystems feststellen, die bei anderen Genera zeitlebens festgehalten werden. Das ist besonders wichtig bei jenen Formen, über deren Ontogenie wenig oder nichts bekannt ist. Gelegentlich der Beschreibung einiger Entwicklungsstadien von Rhizostoma octopus (7) habe ich neuerdings die Notwendigkeit des Studiums der Anomalien des Gastrovascularsystems erkannt. Da Entwicklungsstadien selbst bei einer im adulten Zustande so leicht erlangbaren, in unseren Gewässern so häufigen Form nur sehr schwer zu erhalten sind, ist man für phylogenetische Speculationen auf das Studium der Anomalien geradezu angewiesen. Die Hauptschwierigkeit derartiger Untersuchungen, die Verfügung über reichliches Material, besteht hier nicht, während dies bei den meisten tropischen Formen wohl der Fall ist. Von den 3 Scapulaten-Genera ist die Entwicklung von Rhopilema ganz unbekannt; von Rhizostoma kennt man nur einzelne Stadien (Floresca-, Lychnorhiza-Stadium). Am genauesten ist die Entwicklung von Stomolophus bekannt, wo eine ganze Reihe aufeinanderfolgender Stadien nachgewiesen werden konnte (3). Es ergab sich die Aufgabe, nunmehr auch bei Rhizo-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318385</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1929</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 4 - 15</dcterms:extent>
+   <dcterms:isPartOf>Ueber Anomalien des Gastrovascularsystems von Rhizostoma octopus L. und ihre Bedeutung für die Phylogenie (URN:ISSN:0024-0672) (Volume 12) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318385.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149671</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318385</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

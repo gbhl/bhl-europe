@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Late Cretaceous-Early Palaeogene echinoderms and the K/Tboundary in the southeast Netherlands and northeast Belgium - Part 2: Crinoids</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Jagt J.W.M.</dc:creator>
+   <dc:subject>42.77 ; 38.22</dc:subject>
+   <dc:subject>Echinodermata</dc:subject>
+   <dc:subject>Crinoidea</dc:subject>
+   <dc:subject>Late Cretaceous</dc:subject>
+   <dc:subject>Early Palaeogene</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>stratigraphy</dc:subject>
+   <dc:description>All Campanian, Maastrichtian and Danian articulate (cladid) crinoids known to date from the extendedtype area of the Maastrichtian Stage, are described and illustrated. The geographic and stratigraphicdistribution of this unexpectedly diverse echinoderm group are documented. A total of twentygenera (three of them new) and thirty-six species (six of them new) are defined: Austinocrinus bicoronatus(von Hagenow, 1840), ‘Isocrinus’ sp., ‘I.’ lanceolatus (Roemer, 1840)?, Isselicrinus buchii (Roemer,1840), Praeisselicrinus? limburgicus (Rasmussen, 1961), Nielsenicrinus agassizii (von Hagenow, 1840) (=‘Pentacrinites’ kloedeni von Hagenow, 1840), N. ewaldi sp. nov., Jaekelometra gr. belgica (Jaekel, 1902), J.gr. concava (Schlüter, 1878) (= J. columnaris Gislén, 1924 and including forma meijeri Rasmussen, 1961),J.? defectiva sp. nov., Placometra gr. laticirra (Carpenter, 1880), Atuatucametra annae gen. et sp. nov.,Amphorometra gr. conoidea (Goldfuss, 1839), Semiometra impressa (Carpenter, 1881), S. lenticularis (Schlüter, 1878), S. saskiae sp. nov., Loriolometra retzii (Lundgren, 1875), Hertha gr. pygmea Gislén, 1924,H. gr. plana (Brünnich Nielsen, 1913), H. gr. mystica von Hagenow, 1840 (?), Bourgueticrinus sp. 1 (aff.baculatus Klikushin, 1982c), Bourgueticrinus sp. 2, B. bruennichinielseni Ødum, in Jessen &amp; Ødum, 1923,B. aff. brydonei Rasmussen, 1961, B. constrictus (von Hagenow, in Quenstedt, 1876), B. danicusBrünnich Nielsen, 1913, B. hureae (Valette, 1917), B.? suedicus (Carpenter, 1881), Democrinus? maximus(Brünnich Nielsen, 1915), Monachocrinus? gallicus Rasmussen, 1961, Cyathidium vlieksi Jagt, 1986, Applinocrinuscretaceus (Bather, 1924), Birgelenocrinus degraafigen. et sp. nov., and Veugelersia diana gen. etsp. nov. It is demonstrated that comatulids and bourgueticrinids/bathycrinids in particular show awide range of variation. Awaiting detailed biometric analyses of modern comatulid populations anda reassessment of comatulid taxonomy, for the time being the use of open nomenclature (Bengtson,1988) is favoured in these instances. Generic reassignments are proposed for Isocrinus? carinatusRoemer, 1840 [sensu Rasmussen, 1961] and Bourgueticrinus aequalis d’Orbigny, 1841: to the cainocrinidgenus Nielsenicrinus and to the otherwise exclusively North American Late Cretaceous genus Dunnicrinus,respectively.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:218997</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 59 - 255</dcterms:extent>
+   <dcterms:isPartOf>Late Cretaceous-Early Palaeogene echinoderms and the K/Tboundary in the southeast Netherlands and northeast Belgium - Part 2: Crinoids (URN:ISSN:03757587) (Volume 116)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/218997.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/45921</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/218997</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

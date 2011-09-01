@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wiener Entomologische Zeitung 48 (1931)</dc:title>
+   <dc:creator>Anonymus , Balthasar  Vladimír, Baranoff  N., Benick  Ludwig, Bernhauer  Max, Eggers  Hans, Eidam  Paul, Heinze  Erich, Heller  Karl Maria, Hetschko  Alfred, Kusnezov  Victor, Laboissiére  Victor, Mandl  Karl, Roubal  Jan, Schmidt  Edmund, Spaeth  Franz, Stein  Richard Ritter von, Umnov  N.N.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Mandl: Systematische Zusammenstellung einer Sammelausbeute aus Transbaikalien aund dem Ussurigebiete.     1-   28. Hans Eggers: Borkenkäfer (Ipidae, Col.) aus Südamerika. IV.    29-   42. Victor Laboissiére: Galerucini africains nouveaux ou peu connus de la collection du Deutsches Entomologisches Institut.    42-   57. Vladimír Balthasar: Elfter Beitrag zur Kenntnis der Scarabaeidae des palaearktischen Faunengebietes.    57-   60. Anonymus: Notiz.    64. Edmund Schmidt: Homopterologisches aus dem Stettiner Museum für Naturkunde. (Hemiptera-Homoptera).    65-   77. Paul Eidam: Bemerkenswerte und neue Caraben der Sammlung LEONHARD (Dahlem).    77-   80. Richard Ritter von Stein: Neue und wenig bekannte Afterraupen nebst Bemerkungen über Blattwespen überhaupt.    81-   96. Karl Maria Heller: H. SAUTER's Formosa-Ausbeute (Curculionidae).    96-  112. Victor Kusnezov: Eine neue Petalocephala-Art. (Hemipt. Cicad.).   112-  114. N. Baranoff: Über Raupenfliegen, welche durch die Farbe des Abdomens Exorista confinis FALL. ähnlich sind.   117-  124. Max Bernhauer: Zur Staphylinidenfauna des chinesischen Reiches.   125-  132. N.N. Umnov: Neue Heuschrecken-Arten aus Mittel-Asien. (Orthopt. Acridiodea.).   132-  137. Ludwig Benick: Über alte und neue ostasiatische Steninen.   137-  146. Franz Spaeth: Bestimmungstabelle der Hoplionota-Arten (Col. Chrysom.) von Madagascar und Nachbarinseln. I. Teil.   149-  174. Alfred Hetschko: Über einige von Dr. C. HAMPE im Jahre 1852 beschriebene Käferarten.   174. Erich Heinze: Über neue und bekannte afrikanische Criocerinen, großenteils aus Londoner Museen. (19. Beitrag zur Kenntnis der Criocerinen, Col., Chrysomel.).   175-  213. Alfred Hetschko: Bemerkungen über einige Liponeura-Arten.   213-  214. Jan Roubal: Bemerkungen über einige Choleven, nebst Beschreibung einer neuen Subspecies.   214-  218. Alfred Hetschko: Dr. F.G. RAMBOUSEK.   218-  219</dc:description>
+   <dc:date>1931</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26538.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26538.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26538</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

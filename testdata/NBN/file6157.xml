@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A note on the Mandible of Aceratherium Acutirostratum (Deraniyagala) from Moruaret hill, Turkana district, Kenya</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>The genus and species Turkanatherium acutirostratus was proposed by Deraniyagala (1951) for a skull, without the mandible, collected by Dr. H. B. S. Cooke, a member of the Wendell-Phillips Expedition to Africa in 1948, at Moruaret Hill (or Moruorot) near Losodok (or Lothidok) in the Turkana district, Kenya. The holotype is in the Colombo Museum, Ceylon. Dr. Deraniyagala has had the courtesy to send me a series of good photographs of the specimen to supplement his own descriptions and published figures, for which I am very grateful. This has enabled me to identify among material in the Tervuren Museum, Belgium, originating from (Early) Miocene deposits at Karugamania, Lake Albert, Western Rift Valley in Congo, a number of teeth pertaining to the very same species (Hooijer, 1963), henceforth named Aceratherium acutirostratum (Deraniyagala). A few years later, studying Miocene rhinocerotids from East Africa housed in the Centre for Prehistory and Palaeontology, National Museum, Nairobi, I found the same species to occur at a number of sites and sub-sites on Rusinga Island and Ngira, Karungu, in Kenya, as well as at Napak 1 in Uganda (the Uganda material kindly supplied by Dr. W. W. Bishop). Among the Kenya material, entrusted to me by Dr. L. S. B. Leakey, there is a mandible originating from R.1, Rusinga, 1947 (no. 850) associated with a skull featuring the distinctive characters of A. acutirostratum such as the weak, hornless nasals, absence of a frontal horn boss, and the shallow nasomaxillary notch and elevated occiput. The upper dentition of A. acutirostratum is characterized by the marked protocone constriction and prominent antecrochet in the molars as well as in the premolars, which latter have the antecrochet blocking the medisinus and the internal cingulum forming a ledge between protoloph and</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318662</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1968</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 231 - 235</dcterms:extent>
+   <dcterms:isPartOf>A note on the Mandible of Aceratherium Acutirostratum (Deraniyagala) from Moruaret hill, Turkana district, Kenya (URN:ISSN:0024-0672) (Volume 42) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318662.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149948</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318662</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

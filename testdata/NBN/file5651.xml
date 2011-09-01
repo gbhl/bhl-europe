@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Pseudorca crassidens (Owen), ein Beitrag zur vergleichenden Anatomie der Cetaceen</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Slijper E.J.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>INHALTSÜ BERSICHT Abschnitt 1 Einleitung; Material .... 243 I Strandung .... 243 II Material .... 244 Abschnitt 2 Nomenklatur; Geographische Verbreitung; Lebensweise .... 245 I Nomenklatur .... 245 II Geographische Verbreitung .... 246 III Lebensweise .... 249 Abschnitt 3 Äussere Form; Wachstum .... 250 I Äussere Form .... 250 II Wachstum .... 251 Abschnitt 4 Skelett .... 252 I Wirbelsäule .... 252 II Rippen .... 255 III Sternum .... 255 IV Becken .... 257 V Vorderextremität .... 258 VI Schädel .... 260 VII Zähne .... 260 Abschnitt 5 Muskelsystem .... 262 I Der M. scalenus .... 262 II Die Bauchmuskeln .... 263 A Anatomisches .... 263 1 Allgemeine Lage- und Ursprungsverhaltnisse .... 263 2 Die Rectusscheide .... 265</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318156</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1939</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 241 - 366</dcterms:extent>
+   <dcterms:isPartOf>Pseudorca crassidens (Owen), ein Beitrag zur vergleichenden Anatomie der Cetaceen (URN:ISSN:0024-0672) (Volume 21) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318156.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149442</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318156</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

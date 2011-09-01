@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new calanoid Copepod, Centropages karachiensis, from the inshore waters of the Karachi coast, West Pakistan</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Haq S.M.</dc:creator>
+   <dc:creator>Rehman, Ur Fazal</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION The new species Centropages karachiensis which is described below was found in small numbers in surface hauls made during September inside Karachi harbour and in the Korangi Creek area situated about 7 miles southeast of the Karachi harbour break water. The holotype is deposited in the Institute of Marine Biology, University of Karachi and the paratypes in the British Museum (Natural History), London and the Rijksmuseum van Natuurlijke Historie, Leiden (Reg. no. Crust. F 792). Centropages karachiensis sp. nov. Description. — Female (figs. 1-13). The total body length varies between 1.2 mm and 1.35 mm. The body is cylindrical in shape. The front end of the head is rounded with a typical middorsal crest provided with two purple coloured eyes situated ventrally. The first thoracic somite is distinctly separated from the cephalic region. A large purple middorsal spot is present at the junction of the first thoracic segment and the posterior margin of the cephalic segment (fig. 1). The posterior thoracic corner is rounded and flexed in a downward direction, it is provided with a notch on the ventral aspect of the segment (fig. 2). The abdomen is three-segmented. The genital segment is slightly asymmetrical in dorsal view, bulging slightly towards the left. The furca is symmetrical, it is about two times as long as broad and bears 5 small setae. It has an additional sensory bristle located between the first and second setae. The antennule (fig. 3) does not extend beyond the 4th thoracic somite and consists of 21 free segments. The number and position of setae and the proportional length of the segments are as shown in the figure.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318160</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 183 - 188</dcterms:extent>
+   <dcterms:isPartOf>A new calanoid Copepod, Centropages karachiensis, from the inshore waters of the Karachi coast, West Pakistan (URN:ISSN:0024-0672) (Volume 46) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318160.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149446</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318160</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

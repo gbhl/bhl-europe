@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Meijendel als milieu voor waterorganismen : fauna van de wateren in Meijendel, I</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Tol, van J.</dc:creator>
+   <dc:subject>Hydrobiologie</dc:subject>
+   <dc:description>„De plantenminnaar zal echter te vergeefs in de Haagsche duinen zoeken naar de voor de duinflora zoo typische bloemen, wier groei is gebonden aan den eisch, dat de bodem het gansche jaar door moerassig moet blijven, zoodat zij daar na de oprichting der Duinwaterleiding zijn verdwenen. Doch hoe hoog men ook het nut van het botaniseeren moge aanslaan, daaraan mag toch niet het veel hooger belang worden opgeofferd, dat voor een stad als 's Gravenhage verbonden is aan het verkrijgen van uitstekend en goed drinkwater, hare onvermijdelijke en voornaamste levensbehoefte." Pareau (z.j. : 49-50) INHOUD Ι. Inleiding .................. 39 2. Algemene beschrijving van het gebied........... 40 3. Geschiedenis van het voorkomen van water in Meijendel...... 40 3.1 Tot de infiltratie van 1955............. 40 3.2 De waterwinning............... 42 4. Historie van het hydrobiologisch onderzoek......... 43 4.1 Meijendel-onderzoek I en eerder........... 43 4.2 Meijendel-onderzoek II (1953-1961).......... 44 4.3 Ander onderzoek van 1950 tot 1971.......... 45 4.4 Onderzoek door de Duinwaterleiding van 's-Gravenhage (D.W.L.) . 45 4.5 Botanisch onderzoek.............. 46</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317245</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 38 - 69</dcterms:extent>
+   <dcterms:isPartOf>Meijendel als milieu voor waterorganismen : fauna van de wateren in Meijendel, I (URN:ISSN:0459-1801) (Volume 23) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317245.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148531</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317245</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

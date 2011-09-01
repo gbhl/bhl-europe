@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New species of Krombeinius (Hymenoptera: Chalcidoidea: Perilampidae) from Indonesia, and the first description of first-instar larva for the genus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Darling D.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Hymenoptera; Chalcidoidea; Perilampidae; Krombeinius; Indonesia</dc:subject>
+   <dc:description>Two new species of Krombeinius from Indonesia are described and illustrated, K. kubah from Java and K. dictyon from Sulawesi. In addition, K. eumenidarum Bouček and K. megalaspis (Cameron) are redescribed to allow comparison with the closely related species, K. dictyon and K. kubah, respectively. The first-instar larva of K. kubah is described from an aculeate wasp cocoon associated with the holotype and these planidia are compared with those known for Perilampidae and Eucharitidae. The new species are accommodated in the key to species and phylogenetic analysis of the genus presented in Darling (1988) and the biogeographic implications of the phylogeny are discussed.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318590</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1995</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 209 - 229</dcterms:extent>
+   <dcterms:isPartOf>New species of Krombeinius (Hymenoptera: Chalcidoidea: Perilampidae) from Indonesia, and the first description of first-instar larva for the genus (URN:ISSN:0024-0672) (Volume 69) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318590.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149876</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318590</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

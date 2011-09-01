@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Kritische Bemerkungen über die beschriebenen Arten der Rhizostomeengattung Acromitus</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Maaden, van der H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Vor einiger Zeit erhielt das Rijksmuseum van Natuurlijke Historie in Leiden von Prof. T. Y. Chen, Amoy, eine Anzahl Scyphomedusen zugesendet unter dem Namen: Acromitus tankakheei Light. Von diesem Fundorte ist bisher nur diese einzige Acromitus-Art bekannt (Light, 1924). Da die Beschreibung von Light nur ganz kurz und in mancher Hinsicht unzureichend ist, unternahm ich es, einer Anregung Dr .G. Stiasny's folgend, das Material von Amoy genauer zu untersuchen und die Lücken in der Beschreibung von Light zu ergänzen. Ich erwartete natürlich in den übersandten Medusen die von Light beschriebene Meduse, Acromitus tankakheei, wiederzufinden, fand aber zu meiner Ueberraschung, dass alle Exemplare der Species flagellatus angehören. Ich musste daher annehmen, dass Light, der ausser A. tankakheei nur noch die von ihm selbst früher (Light, 1914) beschriebene Art A. maculosus kannte, die ihm unbekannte Art A. flagellatus mit dem neuen Namen belegt hatte. Bei der Durchsicht der Literatur kam mir der Gedanke, dass nicht nur A. tankakheei und A. flagellatus, sondern alle s. g. guten Acromitus-Arten wohl nur einer einzigen Species angehören könnten. Dies als Arbeitshypothese nehmend, nahm ich mir vor, auf Grund der Untersuchung des frisch eingetroffenen Materials alle Arten des Genus Acromitus nochmals untereinander zu vergleichen. Es bot sich mir dafür eine günstige Gelegenheit, weil mir in der Rhizostomeen-Sammlung des Museums reichliches Material verschiedener Arten dieses Genus vorlag, ausgenommen von A. maculosus Light. Das Material von Amoy.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319428</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1935</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 228 - 236</dcterms:extent>
+   <dcterms:isPartOf>Kritische Bemerkungen über die beschriebenen Arten der Rhizostomeengattung Acromitus (URN:ISSN:0024-0672) (Volume 18) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319428.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150714</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319428</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

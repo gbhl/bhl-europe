@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>In and out of Africa: Dr A.C. van Bruggen, keen educator and eminent biologist</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Breure A.S.H.</dc:creator>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:creator>Maassen W.J.M.</dc:creator>
+   <dc:creator>Winter, de A.J.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>biography</dc:subject>
+   <dc:subject>A.C. van Bruggen</dc:subject>
+   <dc:subject>entomology</dc:subject>
+   <dc:subject>malacology</dc:subject>
+   <dc:subject>botany</dc:subject>
+   <dc:subject>list of taxa</dc:subject>
+   <dc:subject>eponyms</dc:subject>
+   <dc:subject>Africa</dc:subject>
+   <dc:description>A brief biography of A.C. van Bruggen is presented, with special emphasis on his scientific career, on the occasion of his 80th birthday. His many-fold interests and publications are highlighted and eponyms are listed that were introduced in the entomological and malacological literature. A list of new taxa proposed in malacology, entomology and botany is presented.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:311929</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 509 - 524</dcterms:extent>
+   <dcterms:isPartOf>In and out of Africa: Dr A.C. van Bruggen, keen educator and eminent biologist (URN:ISSN:00240672) (Volume 83) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/311929.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/141944</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/311929</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

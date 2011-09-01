@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The megapode action plan 1995 - 1999 halfway down the road</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Dekker R.W.R.J.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Megapodiidae</dc:subject>
+   <dc:subject>megapodes</dc:subject>
+   <dc:subject>action plan</dc:subject>
+   <dc:subject>conservation</dc:subject>
+   <dc:subject>current projects</dc:subject>
+   <dc:subject>IUCN threat categories</dc:subject>
+   <dc:description>Megapodes: an action plan for their conservation 1995 - 1999, a collaborative effort of members of the Megapode Specialist Group and the World Pheasant Association, was published in 1995. It summarizes the conservation status of all megapode taxa and indicates the needs of those species under threat. The Action Plan was intended to be a stimulus for conservation orientated studies and to generate funds more easily. An overview is given of studies (1990 - present) in which these threatened taxa were involved. The status of these and other taxa are reassessed according to the finalized IUCN threat categories (which supercede the Mace-Lande threat categories originally used in the Action Plan) as a preparation for the megapode action plan 2000 - 2004.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219428</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 151 - 158</dcterms:extent>
+   <dcterms:isPartOf>The megapode action plan 1995 - 1999 halfway down the road (URN:ISSN:00240672) (Volume 327)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219428.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46270</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219428</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

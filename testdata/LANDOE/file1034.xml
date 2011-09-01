@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Braueria 29 (2002)</dc:title>
+   <dc:creator>Anonym , Bowles  David E., Chaibu  Prachuab, Changthong  Nattaphron, Chantaramongkol  Porntip, Cheunbarn  Siraporn, Fehér  István, Ivanov  Vladimir D., Kiss  Ottó, Knight  Charles, Krusnik  Ciril, Laudee  Pongsak, Malicky  Hans, Malicky  Michael, Prommi  Taeng-on, Saengpradab  Narumon, Sompong  Somjit, Sukatsheva  I.D., Tanida  Kazumi, Thani  Isara, Urbanic  Gorazd, Vilimi  László</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3. Hans Malicky: How useful are dichotomous keys?     4-    5. David E. Bowles, Charles Knight: Obituary - Dr. Michael L. Mathis     6. I.D. Sukatsheva, Vladimir D. Ivanov: In memory of Olga Mikhailovna Martynova (1900-1997)     7-    9. Kazumi Tanida: 11th International Symposium on Trichoptera - Second Announcement and Call for Registration    10-   11. Hans Malicky, Porntip Chantaramongkol, Narumon Saengpradab, Prachuab Chaibu, Isara Thani, Nattaphron Changthong, Siraporn Cheunbarn, Pongsak Laudee, Taeng-on Prommi, Somjit Sompong: Neue asiatische Leptoceridae (Trichoptera) (Zugleich Arbeit Nr. 33 über thailändische Köcherfliegen)    15-   30. Ottó Kiss, László Vilimi, István Fehér: The water quality state of the Szalajka Stream, Bükk Mts., Hungary    31-   34. Vladimir D. Ivanov: Protoradema IVANOV, a new generic name for Pseudoradema IVANOV et MENSHUTKINA, 1996    35. Gorazd Urbanic, Ciril Krusnik, Hans Malicky: Drusus slovenicus (Trichoptera, Limnephilidae), a new species from the Slovenian Alps.    35. Michael Malicky: Trichoptera data from France    36. Anonym: Trichopterological Literature    37-   43</dc:description>
+   <dc:date>2002</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26882.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26882.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26882</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

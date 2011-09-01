@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Historical Notes on Artemia salina (L.)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kuenen D.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Although an abundant literature exists on Artemia salina, there are still interesting facts in the first history of the discovery of this remarkable animal and in the first study of its habits, which seem to be now forgotten. It is generally considered that Rackett (1812) was the first to give a drawing of Artemia salina, accompanying a short paper on the animal, and he himself states this to be the fact. It is, however, not true, as Schlosser's famous original description was illustrated in the french edition (1756). The drawing is an excellent one and much better than the one Rackett gave (fig. 1). As Gautier remarks in an additional note to Schlosser's letter, the first publication in 1755 was not accompanied by a picture. The drawing, which dates from July 1756, is of particular interest as it unmistakably represents an extreme form of Artemia, either var. milhausenii, or even köppeniana, which are both typical forms for high concentrations. Especially the latter is very seldom found in nature, though it has been bred in the laboratory by several workers. The drawing is in other ways so accurate that we may surely trust this detail. As the text of the letter is very interesting we will give it here in full 1) : Extrait d'une Lettre de M. le Docteur Schlosser, concernant un Insecte pen connu. A Limington en Hampscire le 7. Octobre 1755. MONSIEUR, Je visitois ce matin les salines, qui se trouvent ici le long du bord de la mer, &amp; aprés avoir vu tout ce qui regarde la maniere de réduire l'eau marine en une lessive extrémement acre &amp; saline, je fus frappé d'y découvrir des millions d'Insectes les plus agiles du monde. Leur couleur rouge teignoit l'eau d'une vaste citerne, d'où on la tire pour la mettre dans des chaudrons 2). Je ne manquai pas de remplir une bouteille de</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319337</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1938</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 222 - 230</dcterms:extent>
+   <dcterms:isPartOf>Historical Notes on Artemia salina (L.) (URN:ISSN:0024-0672) (Volume 20) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319337.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150623</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319337</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

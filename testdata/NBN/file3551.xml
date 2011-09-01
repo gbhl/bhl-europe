@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Increased genetic diversity in Greek populations of the genus Ligidium (Crustacea: Isopoda: Oniscidea) revealed by RFLP analysis of mtDNA segments</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Klossa-Kilia E.</dc:creator>
+   <dc:creator>Kilias G.</dc:creator>
+   <dc:creator>Sfenthourakis S.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Oniscidea</dc:subject>
+   <dc:subject>Greece</dc:subject>
+   <dc:subject>mtDNA</dc:subject>
+   <dc:subject>RLFPs</dc:subject>
+   <dc:subject>genetic isolation</dc:subject>
+   <dc:subject>Ligidium</dc:subject>
+   <dc:subject>isopods</dc:subject>
+   <dc:subject>16S rDNA</dc:subject>
+   <dc:subject>12S rDNA</dc:subject>
+   <dc:description>We investigated mtDNA genetic differentiation and the phylogenetic relationships of 11 populations of the oniscidean genus Ligidium. We studied nine populations from Greece, assigned to three nominal species (L. euboicum, L. germanicum and L. beieri), and two from central Europe (L. germanicum and L. hypnorum), applying RFLP analysis of two mtDNA segments (12S rDNA and 16S rDNA) amplified by PCR. The analysis revealed seven monomorphic and four polymorphic populations, and 17 different haplotypes, each one present in one population only. Several restriction enzymes produced population specific patterns, enabling discrimination among the different populations. The estimated net nucleotide divergence between populations ranges from 1.06 to 16.52%, while the high NST value (0.96) indicates the existence of increased interpopulation genetic differentiation that can be attributed to the extreme isolation among Ligidium populations. The relationships between haplotypes and populations are not congruent with their geographical distribution and the established taxonomy within the genus.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209650</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 255 - 264</dcterms:extent>
+   <dcterms:isPartOf>Increased genetic diversity in Greek populations of the genus Ligidium (Crustacea: Isopoda: Oniscidea) revealed by RFLP analysis of mtDNA segments (URN:ISSN:13834517) (Volume 74, 3/4) (Issue 3/4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209650.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41282</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209650</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

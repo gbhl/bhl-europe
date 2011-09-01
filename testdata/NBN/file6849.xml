@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>An account of money Spiders from down under (Araneida, Linyphiidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Helsdingen, van P.J.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The Australian and New Zealand regions so far were left out of consideration when studying the Linyphiidae (Linyphiinae) on a world-wide basis. When revising the genus Linyphia it appeared that a fair number of species had been described from these regions; but it also became very clear, by a superficial investigation, that these species were so completely different from our European concept of Linyphia and related genera, that they were best put aside then with a view to paying more attention to that part of the world at a later time. A small collection of Linyphiidae from Australian caves, recently received from Mrs. Barbara York Main, Nedlands, Western Australia, offered an excellent opportunity to become better acquainted with the interesting fauna of this continent and the adjacent regions. Together with a number of specimens gathered in the course of years from different museum collections this formed a small but useful basis to start from. The specimens received from Australia and from other musea were used as nuclei of investigation into the literature of this region. Of the formerly described species only those were re-investigated that were considered to be closely related to the species already at hand. The number of species of Linyphiidae that have been described from Australia is very small, only nine. Four more are known from Tasmania. New Zealand (Auckland Island, Campbell Island, and Antipodes Island included, each with one species) is by far the richest, as far as our knowledge of this family goes at present, with 25 species, two of which are more widely distributed over the world. Going north we know one species from Lord Howe Island, one from Norfolk Island, two from New Caledonia, one from the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319354</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 369 - 390</dcterms:extent>
+   <dcterms:isPartOf>An account of money Spiders from down under (Araneida, Linyphiidae) (URN:ISSN:0024-0672) (Volume 47) (Issue 28)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319354.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150640</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319354</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

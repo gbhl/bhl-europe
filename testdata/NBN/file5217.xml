@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Euagathis species (Hymenoptera: Braconidae: Bassinae) from the Sunda Islands</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Simbolotti G.</dc:creator>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Bassinae; Agathidinae; Disophrini; Euagathis; key; distribution; Indo-Aus- tralian; Oriental; Indonesia; Sunda Islands; Java; Bali; Kangean Islands; Sumbawa; Sumba; Sumatra; Borneo; Kalimantan; Brunei; Malaysia; Sabah; Sarawak.</dc:subject>
+   <dc:description>The species of the genus Euagathis Szépligeti, 1900 (Braconidae: Bassinae (= Agathidinae)) from the Greater and Lesser Sunda Islands (including West Malaysia) are revised and keyed. The subfamily name Bassinae Nees, 1812, is used because it is senior to the commonly used subfamily name Agathidinae Nees, 1814. Twenty-two species are recognized, of which nine are new. The genus Holcotroticus Cameron, 1902, is synonymized with Euagathis Szepligeti, 1900, and Euagathis ruficollis (Cameron, 1902) is a new combination. The following species are synonymized: Euagathis pilosa Szépligeti, 1902, and E. creophora Cameron, 1905, with E. clathrata (Brullé, 1846); E. rufonigra Enderlein, 1920, with E. ruficollis (Cameron, 1902); Euagathis variabilis Enderlein, 1920, Euagathis v. var. tibialis Enderlein, 1920, E. v. var. melanopleura Enderlein, 1920, E. v. var. melanogaster Enderlein, 1920, E. v. var. tonkinensis Enderlein, 1920, and E. bipunctata Enderlein, 1920 with Agathis forticarinata (Cameron, 1899); Euagathis semiflavus Szépligeti, 1908, E. horniana Enderlein, 1920, E. formosana Enderlein, 1920, E.f. var. obscurior Enderlein, 1920, E. nigrifrons Enderlein, 1920, E. tricarinata Enderlein, 1920, with E. japonica Szépligeti, 1902; E. variabilis var. obscuripennis Enderlein, 1920, E. v. var. dissimilis Enderlein, 1920, E. v. var. sucarandana Enderlein, 1920, Disophrys divisa Enderlein, 1920, and E. baltazarae Bhat &amp; Gupta, 1977, with E. semifusca (Brullé, 1846); E. biroi Szépligeti, 1902, E. dubiosus Turner, 1919, and E. spilota Fullaway, 1919, with E. abbotti (Ashmead, 1900); E. quadrifossulata var. divisa Enderlein, 1920, with Coccygidium concolor (Szépligeti, 1908). Euagathis erythrocephala Cameron, 1905, E. quadrifossulata Enderlein, 1920, E. q. var. divisa Enderlein, 1920, E. q. var. flavipes Enderlein, 1920, and Disophrys concolor Szépligeti, 1908, are transferred to the genus Coccygidium Saussure, 1892. Euagathis insulcata Enderlein, 1920, E. z. var. rufithorax Enderlein, 1920, E. i. var. ruficeps Enderlein, 1920, and E. i. var. nigrescens Enderlein, 1920, are transferred to the genus Cremnops Foerster, 1862. E. borneoensis Szépligeti, 1902, is transferred to the genus Balcemena Cameron, 1903, and Euagathis cryptoplebiae Viereck, 1913 to the genus Bassus Fabricius, 1804. Lectotypes are designated of Agathis semifusca Brulle, 1846, A. semiflava Brullé, 1846, Euagathis erythrocephala Cameron, 1905, E. ruficollis Cameron, 1905, E. fuscinotum Enderlein, 1920, E. pubescens Enderlein, 1920, E. tricarinata Enderlein, 1920, E. formosana Enderlein, 1920, E. variabilis Enderlein, 1920, E. v. var. tibialis Enderlein, 1920, E. v. var. melanopleura Enderlein, 1920, E. v. var. melanogaster Enderlein, 1920, E. bipunctata Enderlein, 1920, E. v. var. dissimilis Enderlein, 1920, E. v. var. sucarandana Enderlein, 1920, E. v. var. obscuripennis Enderlein, 1920, E. quadrifossulata Enderlein, 1920, E. q. var. divisa Enderlein, 1920, E. q. var. flavipes Enderlein, 1920, E. insulcata Enderlein, 1920, E. i. var. ruficeps Enderlein, 1920, and E. i. var. rufithorax Enderlein, 1920.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317722</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 62</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Euagathis species (Hymenoptera: Braconidae: Bassinae) from the Sunda Islands (URN:ISSN:0024-1652) (Volume 293) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317722.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149008</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317722</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Frederik Petrus Koumans, 1905-1977, a biography and a tentative list of his biological papers</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>42.01 ; 42.81</dc:subject>
+   <dc:description>On Wednesday 27 April 1977, my predecessor as a curator of fishes at the Leiden Museum, Dr. F. P. Koumans, after a short illness, rather unexpectedly passed away at the age of 72. Considering his rôle as a staff member of the Museum and the importance of his contributions to science, the publication of a short biographical note and a list of his publications seems an obligation towards his former colleagues, if not a duty for me as his former pupil. Frederik Petrus Koumans was born on 21 January 1905 in the Hague, where he attended elementary and high school. After his high school examination in 1922, he studied biology at the nearby University of Leiden, where he obtained his masters degree in 1927, and his doctorate in 1931. There is no information available about his being interested in natural history at an early age, though his choice of biology as a study seems to point that way. He became a member of natural history societies (Nederlandsche Dierkundige Vereeniging, Nederlandsche Natuurhistorische Vereeniging) only in 1924, and his first interests, rather than in fishes, seem to have been in Cetacea, on which group he gave a lecture to the The Hague branch of the Nederlandsche Natuurhistorische Vereeniging on 16 February 1924 (Natura, 308: 68-70). It is interesting that his later friend, Mr. J. Knock, with whom he was to make a round the world trip in 1938, shared this early interest in cetaceans (Natura, 304: 14-15). Also molluscs had Koumans' attention, as is shown by his first gift of a few specimens to the Rijksmuseum van Natuurlijke Historie already in December 1923 and his later activities in the Nederlandsche Malacologische Vereeniging, but this interest evidently decreased around 1945, when he disposed of his private collection (17500 specimens)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319101</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 277 - 285</dcterms:extent>
+   <dcterms:isPartOf>Frederik Petrus Koumans, 1905-1977, a biography and a tentative list of his biological papers (URN:ISSN:0024-0672) (Volume 52) (Issue 24)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319101.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150387</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319101</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

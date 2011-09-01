@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 68 (1928)</dc:title>
+   <dc:creator>Aigner  Damasus P., Anonymus , Felner  Josef, Franz  Günther, Martin  Franz, Mayr  Josef Karl, Seefeldner  Erich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Karl Mayr: Wolf Dietrich und das Passauer Kriegsvolk.     1-   50. Franz Martin: Die Salzburger Chronik des Felix Adauctus Haslberger.    51-   68. Josef Felner: Die politische und amtliche Verfassung der Pfleggerichte Werfen, Mittersill und Saalfelden am Ende des 18. Jahrhunderts.    69-   96. Günther Franz: Der Salzburger Bauernaufstand 1462.    97-  112. Franz Martin: Beiträge zur Salzburger Familiengeschichte. 4. Berchthold von Sonnenburg.   113-  115. Franz Martin: Beiträge zur Salzburger Familiengeschichte. 5. Motzel.   116-  120. Franz Martin: Beiträge zur Salzburger Familiengeschichte. 6. Weitmoser.   121-  122. Franz Martin: Beiträge zur Salzburger Familiengeschichte. 7. Weiser.   123-  126. Damasus P. Aigner: Der alte Salzburger See und sein Becken.   127-  138. Erich Seefeldner: Die Taxenbacher Enge. Eine morphologische Untersuchung.   139-  166. Anonymus: Zur salzburgischen Literatur.   167-  174. Anonymus: Gesellschafts-Nachrichten. 1. Mitgliederbewegung.   175-  176. Anonymus: Gesellschafts-Nachrichten. 2. Vorträge.   176. Anonymus: Gesellschafts-Nachrichten. 3. Führungen und Wanderungen.   176-  177. Anonymus: Gesellschafts-Nachrichten. 4. Nekrolog.   177-  182. Anonymus: Gesellschafts-Nachrichten. 5. Vereinsvorstehung.   183</dc:description>
+   <dc:date>1928</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29083.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29083.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29083</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

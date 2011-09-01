@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Harietella simulans (T. Scott, 1894), a commesal Copepod on Limonoria lignorum (Rathke)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vervoort W.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In April 1949 Mr. J. A. W. Lucas, a student of Biology and a careful collector of marine animals, supplied the Rijksmuseum van Natuurlijke Historie at Leiden with some specimens of Limnoria lignorum (Rathke), found in logs of wood washed ashore near Katwijk. These Isopods proved to be infested by a small Harpacticoid Copepod and by a species of Ostracod. These animals were occasionally observed on the oral appendages and the legs. The Copepods were attached to various parts of the carapace, usually the telson, and were very small (about 0.5 mm) and the identification met with considerable difficulties. They proved to be identical, at last, with Harrietella simulans (T. Scott, 1894), a species known from the Firth of Forth and the Firth of Clyde in Great Britain and from Drøbak in Norway. A description of the specimens and a discussion of the synonymy, distribution and bionomics are given below. The Ostracods have not yet been identified. Harrietella simulans (T. Scott, 1894) ? Laophonte simulans T. Scott, 1804, p. 248, p1. 7 figs. 24-32, p1. 8 fig: 1. Harrietella simulans, T. Scott, 1906, p. 464, p1. 11 figs. 9, 10; Sars, 1920, p. 73, pl. 49; Pesta, 1927, p. 44. Laophonte brevifurca (?) Stephensen, 1936, p. 4, fig. 1. Material. 5 adult females and one immature female from Limnoria lignorum (Rathke). Katwijk, in submerged logs of wood, washed ashore Febr. 20, 1949. Leg. J. A. W. Lucas. 1 adult female from Limnoria lignorum (Rathke). Noordwijkerhout-Zandvoort, in logs of wood found on the shore March 2, 1949. Leg. J. A. W. Lucas. Female, adult stage. Total length 0.41-0.50 mm. Body depressed, pyriform,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318810</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1950</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 297 - 305</dcterms:extent>
+   <dcterms:isPartOf>Harietella simulans (T. Scott, 1894), a commesal Copepod on Limonoria lignorum (Rathke) (URN:ISSN:0024-0672) (Volume 30) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318810.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150096</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318810</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

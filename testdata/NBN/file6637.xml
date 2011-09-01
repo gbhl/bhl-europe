@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Stylasterine coral Allopora stellulata (Stewart)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>The description of Stylaster stellulatus Stewart was based on a specimen obtained at Tahiti, the coral was stated to be extremely rare, and only found at one small island in the neighbourhood. The description contains all the peculiarities for a specific definition of the coral, the salient points of this description are here mentioned, partly in Stewart's own words (1878, pp. 41-43). "The corallum is of a bright rose colour, especially in the younger branches, the older parts being often more pale. The branches are usually quite cylindrical, though occasionally flattened at their tips; the general appearance being much like that of S. sanguineus, but it has a bluer rose tint, and is at once distinguished by the minute size of its calicles (1/67 of an inch) which are usually uniformly and densely scattered over the branches, a few of which only show them to be more abundant at the contiguous edges". Each cyclosystem consists "of a central cup-shaped calyx, ... having an opening in its floor from which a large tube passes towards the interior of the corallum: running throughout the whole length of the tube is a minutely spined style-like columella whose point may be seen in the centre of the hole at the bottom of the calyx". The cyclosystems have from ten to fourteen dactylotomes. In the description of the cyclosystems Stewart remarks that their outer border is often raised around them so as to resemble the theca of an ordinary coral. "The edge of this false theca is sometimes more raised on the proximal side (nearest fixed end of corallum), at other times on opposite sides corresponding with the plane of the branches, but is absent or slightly developed on the larger branches where the axis of the group of zooids is at a right angle to the surface". The dactylostyles are described as "small,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319142</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1960</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 49 - 60</dcterms:extent>
+   <dcterms:isPartOf>The Stylasterine coral Allopora stellulata (Stewart) (URN:ISSN:0024-0672) (Volume 37) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319142.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150428</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319142</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

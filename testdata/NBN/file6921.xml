@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Supplement to a monograph of the Indo-Australian Clausiliidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Loosjes F.E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Since the publication of my monograph of the Indo-Australian Clausiliidae (Loosjes, 1953) I obtained some additional information, consisting mainly of new distribution records and data on shell-structures. The present paper deals with these additional data, while furthermore two new species are described. The specimens concerned were obtained on loan from the following Museums: Zoölogisch Museum, Amsterdam (Z.M.A.), Rijks Museum van Natuurlijke Historie, Leiden (R.M.N.H.), Museo Civico di Storia Naturale di Genova (M.C.G.), Natur-Museum Senckenberg, Frankfurt am Main (S.M.F.), Ueberseemuseum, Bremen (U.M.B.). My thanks are due to Mrs. W. S. S. van der Feen-van Benthem Jutting, Dr. C. O. van Regteren Altena, Prof. Dr. E. Tortonese, Dr. A. Zilch, Dr. H. Knipper, Dr. M. A. Lieftinck, Mr. L. J. M. Butot, Mr. A. M. R. Wegner and to the owners of the private collections mentioned below. Phaedusa H. &amp; A. Adams, 1855 Sectio Phaedusa Phaedusa corticina corticina (L. Pfeiffer, 1842) 1953 Loosjes, p. 17 1954 Zilch, p. 31 1954 Knipper, p. 260 1959 Van Benthem Jutting, p. 127 (Ph. corticina) West Java Radjamandala, altitude 650 m, leg. J. M. A. van Groenendael, 1939 (L. J. M. Butot collection, 3 specimens); dimensions (in mm) : shell aperture number of whorls</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319426</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 153 - 169</dcterms:extent>
+   <dcterms:isPartOf>Supplement to a monograph of the Indo-Australian Clausiliidae (URN:ISSN:0024-0672) (Volume 38) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319426.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150712</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319426</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

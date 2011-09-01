@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Crustacea Decapoda Macrura (the Alpheidae excepted) of Easter Island</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>So far the Crustacean fauna of Easter Island has received but very little attention. In most early narratives of expeditions visiting the island no mention is made of any Crustacean. Behrens (1908: 135) who accompanied Jacob Roggeveen on the voyage during which, in 1722, the island was discovered, stated in his diary that "No animals were met with, as far as we penetrated on this occasion, except sundry species of birds". Cornelis Bouman, captain of the ship "Tienhoven" of Roggeveen's expedition, did not mention any Crustacean from Easter Island, even though in his narrative he shows a great interest in marine life, as is clearly demonstrated by his account of the expedition's visit to Juan Fernandez (24 February to 17 March 1722) in which he repeatedly mentioned the presence of "delicaete creeften" (delicious lobsters) at that island (cf. Mulert, 1911: 123-127, 134-144). Also Cook, Laperouse, Beechey, and other early explorers, who visited the island do not report the presence of Crustacea. Only Hervé (1908: 122) in his account of Gonzalez's 1770 voyage reported "small crabs" from the outer of the small islets at the S.E. tip of Easter Island. The first positive mention of the occurrence of macrurous Decapods on the island seems to be by Gana (1870). In early 1870 Ignacio L. Gana, captain of the corvette "O'Higgins" of the Chilean navy, made an 8 days visit to Easter Island. He was charged by his government to make a scientific description of the island, which study was published by him in 1870. A french translation of this report was given by De Lapelin (1872). F. T. de Lapelin, vice-admiral of the French Pacific fleet visited Easter Island in the "Flore", anchoring off Hanga Roa on 3 January 1872. Through circumstances he was only able to verify a great part of the information provided by previous visitors but "elle ne nous a</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318893</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 29 - 54</dcterms:extent>
+   <dcterms:isPartOf>The Crustacea Decapoda Macrura (the Alpheidae excepted) of Easter Island (URN:ISSN:0024-0672) (Volume 46) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318893.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150179</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318893</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

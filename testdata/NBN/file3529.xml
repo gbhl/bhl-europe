@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Antipatharia (Cnidaria: Anthozoa). Part V. Establishment of a new family, Stylopathidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Opresko D.M.</dc:creator>
+   <dc:subject>42.72 ; 42.70</dc:subject>
+   <dc:subject>Cnidaria</dc:subject>
+   <dc:subject>Anthozoa</dc:subject>
+   <dc:subject>Antipatharia</dc:subject>
+   <dc:subject>Stylopathidae, fam. nov.</dc:subject>
+   <dc:subject>Stylopathes gen nov.</dc:subject>
+   <dc:subject>S. columnaris</dc:subject>
+   <dc:description>A new family of antipatharian corals, Stylopathidae (Cnidaria: Anthozoa: Antipatharia), is established for Arachnopathes columnaris Duchassaing, 1870, and related species. The family is characterized bysmall polyps, 1.5 mm or less in transverse diameter; small, conical, smooth spines, often distally directed(especially at the tips of the branchlets and/or pinnules); and by the tendency for the pinnulesand branchlets to occur in subopposite pairs or to be arranged in verticils of three or four (rarely five)pinnules. In many species adjacent pinnules or branchlets fuse together or anastomose, resulting in theformation of cylindrical, reticulated worm runs along the stem or branches. Genera are established onthe basis of morphological features of the corallum. Stylopathes gen. nov., includes the type species,Arachnopathes columnaris Duchassaing, and is characterized by a monopodial or very sparsely branchedcorallum. Triadopathes gen nov. contains only the type species Parantipathes triadocrada Opresko, and has multiple, vertically directed, stem-like primary branches, arising primarily from the lower parts ofthe corallum. Tylopathes Brook contains the type species T. crispa Brook, and is characterized by a flabellatecorallum with short, mostly bilateral branchlets.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:198496</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 109 - 138</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Antipatharia (Cnidaria: Anthozoa). Part V. Establishment of a new family, Stylopathidae (URN:ISSN:0024-0672) (Volume 80-4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/198496.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/38069</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/198496</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

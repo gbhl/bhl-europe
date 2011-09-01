@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Ghanese Lizards of the Genus Mabuya (Scincidae, Sauria, Reptilia)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hoogmoed M.S.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>In the present paper the eight species of Mabuya occurring in Ghana are discussed. A key for their identification is given. Two of the species reported for Ghana were known only from the rainforest in the Congo basin, now their presence in the rainforest west of the Dahomey-gap is demonstrated. One of these, Mabuya albilabris (Hallowell), has since long been considered a synonym of M. blandingii (Hallowell), but careful examination of large series proved that M. albilabris (Hallowell), is a perfectly good species, a view sustained by observations on both species in the wild. One species, of which ten specimens from Ghana and one from Nigeria are known, is described as new. A new subspecies of Mabuya polytropis Boulenger is described from the rainforest west of the Dahomey-gap. The name of the species known until now as M. blandingii (Hallowell) is changed into M. affinis (Gray).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317671</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 62</dcterms:extent>
+   <dcterms:isPartOf>Ghanese Lizards of the Genus Mabuya (Scincidae, Sauria, Reptilia) (URN:ISSN:0024-1652) (Volume 138) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317671.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/154772</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317671</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

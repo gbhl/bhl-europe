@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The marine mollusca of Suriname (Dutch Guiana) holocene and recent Part 1. General Introduction</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Regteren Altena, van C.O.</dc:creator>
+   <dc:subject>38.22 ; 42.73</dc:subject>
+   <dc:description>CONTENTS Ι. Scope of this work................ 3 2. Acknowledgements................ 4 3. History of the study of Suriname marine Mollusca....... 6 a. Recent.................. 6 b. Holocene................. 15 4. The Suriname coastal waters as an environment for Mollusca .... 23 a. General remarks............... 23 b. The intertidal zone and shallow coastal waters....... 24 c. The estuary and lower course of the Suriname River..... 26 d. The coastal waters within the 30 fathom line....... 29 5. The occurrence of Holocene marine Mollusca in Suriname..... 31 6. The economic importance of Suriname marine Mollusca...... 34 7. Origin of the material studied............. 36 a. Collections and collectors............. 36 b. Localities................. 39 8. The marine Mollusca of French and British Guiana....... 42 9. References.................. 44 I. SCOPE OF THIS WORK More than ten years ago Dr. D. C. Geijskes, then Director of the Suriname Museum, Paramaribo, visited me and asked for my help. During the years (since 1938) Dr. Geijskes had stayed in Suriname, he had collected marine Mollusca in a great number of localities, in the Holocene so called shellridges, as well as on the coast and in the estuaries. He was sure that his collection contained a great number of species, and that their distribution over</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317746</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 49</dcterms:extent>
+   <dcterms:isPartOf>The marine mollusca of Suriname (Dutch Guiana) holocene and recent Part 1. General Introduction (URN:ISSN:0024-1652) (Volume 101) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317746.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149032</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317746</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

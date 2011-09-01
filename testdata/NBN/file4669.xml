@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Cricetidae and Gliridae (Rodentia, Mammalia) from the Miocene and Pliocene of southern Spain</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>García-Alix A.</dc:creator>
+   <dc:creator>Minwer-Barakat R.</dc:creator>
+   <dc:creator>Martín-Suárez E.</dc:creator>
+   <dc:creator>Freudenthal M.</dc:creator>
+   <dc:subject>42.48 ; 38.22</dc:subject>
+   <dc:subject>Gliridae</dc:subject>
+   <dc:subject>Cricetidae</dc:subject>
+   <dc:subject>Granada basin</dc:subject>
+   <dc:subject>Guadix basin</dc:subject>
+   <dc:subject>Mio-Pliocene boundary</dc:subject>
+   <dc:description>Several Miocene and Pliocene continental fossiliferous localities in the Granada and Guadix basins have yielded fossil micromammals. Cricetids and glirids are known from most of these localities. This paper deals with the genera Apocricetus, Ruscinomys, Blancomys and Eliomys. The Cricetidae are important biostratigraphical markers, especially Apocricetus. The presence of A. barrierei in the locality PUR-4 indicates the beginning of the Early Ruscinian. The continuous record of Ruscinomys during the Late Turolian and the Early Ruscinian corroborates the lineage between R. schaubi and R. lasallei. The occurrence of a large specimen of Blancomys in the Granada Basin seems to indicate two phylogenetic lineages during the Late Turolian. The studied specimens of Eliomys allow us to confirm the relationship between E. intermedius and E. quercinus.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:314204</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 38</dcterms:extent>
+   <dcterms:isPartOf>Cricetidae and Gliridae (Rodentia, Mammalia) from the Miocene and Pliocene of southern Spain (URN:ISSN:0375-7587) (Volume 136)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/314204.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/144487</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/314204</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

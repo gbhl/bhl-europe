@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new sponge Desmapsamma vervoorti spec. nov. (Poecilosclerida: Desmacididae) from Indonesia</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Soest, van R.W.M.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Porifera; Indonesia; new species; Desmapsamma.</dc:subject>
+   <dc:description>A new poecilosclerid sponge species Desmapsamma vervoorti spec. nov. is described from several Indonesian localities: Ambon, Jedan, Salayar, Komodo, Java, and Irian Jaya. The species was earlier reported from several Indo-Pacific localities as D. anchorata (Carter, 1882), a common Caribbean shallow water species. Comparison with Caribbean specimens makes it clear that Indo-Pacific specimens demonstrate small but consistent differences.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317752</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1998</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 427 - 434</dcterms:extent>
+   <dcterms:isPartOf>A new sponge Desmapsamma vervoorti spec. nov. (Poecilosclerida: Desmacididae) from Indonesia (URN:ISSN:0024-1652) (Volume 323) (Issue 33)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317752.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149038</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317752</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

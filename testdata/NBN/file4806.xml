@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The VII International Symposium 'Cultural Heritage in Geosciences' at Leiden: welcoming address</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Weiden, van der W.G.</dc:creator>
+   <dc:subject>Geologie: overige</dc:subject>
+   <dc:description>Naturalis, the National Museum of Natural History, is very proud of hosting this important symposium. The organizers made a right choice by selecting our museum for this expert meeting because our geological collections are famous. The collections (zoological, palaeontological and geological) are stored in the tower of the museum 20 floors high. In all more than 11,000,000 items. The geological collections have a wide scope thanks to, for instance: • The former mining industry in The Netherlands up to 1970. • Our former colonies, in particular the East-Indies, nowadays Indonesia. • Geological explorations all over the world by our scientists. • The transfer of geological collections by universities and the Dutch Geological Survey (NITG/TNO). Some of the collections are world famous, such as the Staring Collection. Dr W.C.H. Staring (1808-1877) was the secretary of the Commission for the geological map of The Netherlands. One of the best palaeobotanical collections worldwide has been assembled by Professor Wilhelmus Jongmans (1878-1957); recently this collection has been transferred to Naturalis. A small collection of as such unattractive minerals and fossils is of special interest, because it is the first of its kind from Japan. Philip Von Siebold acquired them during his stay on the artificial island of Deshima during the first half of the 19th century. But how do we use the collection? The Museum's mission statement is as follows: 'We want to use our unique natural history collections to advance the knowledge of, and appreciation for Nature, aimed at the largest possible spectrum of Dutch society. Therefore, we want to be THE natural history museum of the nation, operating in an international network of similar organizations.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317310</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 5 - 6</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The VII International Symposium 'Cultural Heritage in Geosciences' at Leiden: welcoming address (URN:ISSN:0922-4564) (Volume 4) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317310.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148596</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317310</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

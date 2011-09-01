@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Braueria 24 (1997)</dc:title>
+   <dc:creator>Anonym , Chantaramongkol  Porntip, Cianficconi  Fernanda, Crichton  M. Ian, Czachorowski  Stanislav, Dean  John, Ivanov  Vladimir D., Johanson  Kjell Arne, Kumanski  Krassimir, Malicky  Hans, Moretti  Giampaolo, Nogradi  Sára, Sipahiler  Füsun, Speziale  A., Uherkovich  Akos, Wiggins  Glenn B.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3. Giampaolo Moretti: A new species of Rhyacophila (Trichoptera: Rhyacophilidae) from Calabria, Southern Italy     4. Kjell Arne Johanson: Description of Helicopsyche Giboni SP.N. from Madagascar (Trichoptera: Helicopsychidae)     5-    6. Fernanda Cianficconi, M. Ian Crichton: Giampaolo Moretti     5. Anonym: Russian literature     6. Hans Malicky, Porntip Chantaramongkol: 9th International Symposium on Trichoptera - Chiang Mai 1998 - Second Circular     7-    8. M. Ian Crichton: Caddis Larvae as a pest of Watercress     9-   10. Glenn B. Wiggins: Current studies by Glenn B. Wiggins    10. Stanislav Czachorowski: The first checklist of Belarus Ian Trichoptera    11-   12. John Dean: Trichoptera studies in Australia    12. Akos Uherkovich, Sára Nogradi: Platyphylax Frauenfeldi Brauer, 1857 (Trichoptera, Limnephilidae) in Hungary    13-   14. Füsun Sipahiler: New species of Caddisflies from Turkey (Trichoptera: Rhyacophilidae, Hydroptilidae, Beraeidae)    15-   17. Anonym: List of research workers on Trichoptera    17. Hans Malicky: Eine neue Arctopsychide aus Thailand    17. Sára Nogradi: How to distinguisg the females of the three european Mystacides Species    18. Fernanda Cianficconi, Giampaolo Moretti, A. Speziale: Phoresy in an adult Trichopteran    18. Krassimir Kumanski, Hans Malicky: Beschreibung einer neuen Micropterna (Trichoptera: Limnephilidae) aus Kleinasien    19. Vladimir D. Ivanov: Russian Bibliography    20-   22. Anonym: Trichopterological Literature    23-   34. Hans Malicky: Beschreibung von vier neuen Mesophylax - Arten (Trichoptera: Limnephilidae)    34-   35</dc:description>
+   <dc:date>1997</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26832.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26832.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26832</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

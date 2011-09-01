@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Dix années au Tanganyka</dc:title>
+   <dc:publisher>Pierre Dumont (fr Limoges)</dc:publisher>
+   <dc:contributor>Coulbois, François Ancien administrateur apostolique du Haut-Congo (Author)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>22d2a38c-01c9-40dc-b355-98ebb98ee85a</dc:identifier>
+   <dc:identifier>007726287</dc:identifier>
+   <dc:language>fre</dc:language>
+   <dcterms:issued>1901</dcterms:issued>
+   <dcterms:extent>304 p, X : ill, map.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Coulbois_Dix_annA_copy_es_au_Tanganyka/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/be-rmca/Monographs/Coulbois_Dix_annA_copy_es_au_Tanganyka</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=RMCA/22D2A38C01C940DCB35598EBB98EE85A</europeana:isShownAt>
+<europeana:dataProvider>Royal Museum for Central Africa</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

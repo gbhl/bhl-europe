@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a new genus and species of Apogonidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Koumans F.P.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>PTERAPOGON n. g. Body deep, compressed. Head large. Eye large, greater than snout. Mouth wide, oblique. Maxillary reaches to below middle of eye. Teeth villiform in bands in jaws, on vomer and palatines. No canines. Preopercle ridge double, edge serrate. Opercle with spine posteriorly. Scales large, ctenoid. Top of head, interorbital and snout naked. Lateral line complete, scales about 25. First dorsal of 7 spines, second dorsal of 1 spine and 14 rays. Anal of 2 spines and 13 rays, similar and opposite to soft dorsal. Pectorals short. Ventrals long. Caudal fin deeply forked. This genus is distinguished from all other Apogonidae in having 14 rays in soft dorsal fin. Pterapogon kauderni n. sp. (PL I, fig. 2). Depth 2. Head 2l/2. Snout 4 in head. Eye 2—21/4. Interorbital about equal to snout. Maxillary reaches to middle of eye. The 1st spine of Dl is small, the 3rd, 4th and 5th are elongated, about as long as head. The 1st, 2nd? 3rd, and 4th ray of D2 are elongated, the 2nd is the longest, longer than length excluded head. The 1st, 2nd and 3rd anal ray are elongated, the 2nd is the longest, as long as or longer than the head. Caudal fin deeply forked, the external caudal rays are elongated and much longer than head. Pectoral fin short, as long as eye + snout. Ventrals long, 1st and 2nd ray prolonged, 2nd ray the longest, as long as or longer than head. Color in spirits: whitish, dotted over with small black spots. A black transverse band is placed a little obliquely through the eye, another from the first half of first dorsal fin to the branchiostegal rays, a third from</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318030</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 78 - 78</dcterms:extent>
+   <dcterms:isPartOf>On a new genus and species of Apogonidae (URN:ISSN:0024-0672) (Volume 16) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318030.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149316</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318030</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

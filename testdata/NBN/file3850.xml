@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Contribution to the knowledge of Leucosiidae I. The identity of Leucosia craniolaris (Linnaeus, 1758), and redefinition of the genus Leucosia Weber, 1795 (Crustacea: Brachyura)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Galil B.S.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Leucosiidae</dc:subject>
+   <dc:subject>Leucosia</dc:subject>
+   <dc:subject>neotype</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Indo-Pacific</dc:subject>
+   <dc:description>A study of the genus Leucosia Weber, 1795, led to the establishment of the identity of the type species, L. craniolaris (Linnaeus, 1758), designation of a neotype and redefinition of the genus. Leucosia is now restricted to 4 species: the type species L. craniolaris (Linnaeus, 1758), L. punctata Bell, 1855, L. moresbiensis Haswell, 1880, and a new species, L. rubripalma. They differ from all other species heretofore assigned to the genus in having first male pleopod with a screw-like tightly coiled shaft, terminating in a setose muff. The species are described or redescribed and illustrated, extended synonymies are given, and a key for their identification is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:216142</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 181 - 191</dcterms:extent>
+   <dcterms:isPartOf>Contribution to the knowledge of Leucosiidae I. The identity of Leucosia craniolaris (Linnaeus, 1758), and redefinition of the genus Leucosia Weber, 1795 (Crustacea: Brachyura) (URN:ISSN:00240672) (Volume 77, 1-14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/216142.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/44264</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/216142</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 6_1 (1876)</dc:title>
+   <dc:creator>Albert  Eduard, Anonymus , Dietl  Michael J., Liebermann  Leo, Pfaundler  Leopold</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Eduard Albert: Jahresbericht der chirurgischen Universitätsklinik in Innsbruck.     3-   84. Leo Liebermann: Einiges aus der vergleichenden Chemie. Ein Beitrag zur Lehre Darwin's von der Entstehung und Abstammung der Arten. (Vortrag, gehalten im naturw.-medic. Verein zu Innsbruck).    85-   93. Michael J. Dietl: Ueber Coordinationsanomalien symmetrischer Körperbewegungen. Ein Vortrag gehalten im naturw.-medic. Vereine zu Innsbruck im Dezember 1875.    94-  115. Leopold Pfaundler: Auszug aus dem Vortrage: " Ueber den Kampf um's Dasein unter den Molkülen".   116-  122. Anonymus: Sitzungs-Berichte. (I-XXVII.)</dc:description>
+   <dc:date>1876</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27224.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27224.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27224</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

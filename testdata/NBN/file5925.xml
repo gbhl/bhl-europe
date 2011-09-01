@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A fossil gazelle (Gazelle schreuderae nov. spec.) from the Netherlands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>In 1944 Miss Dr. A. Schreuder sent me for identification a fossil horncore, which according to the accompanying letter came from a well-boring near Grubbenvorst (province of Limburg). It was found in a coarse sandy layer with gravel at a depth of 61.50 m below the surface; the topographic height of the latter is given as 24.53 m + N.A.P. (N.A.P. = sea-level at Amsterdam). Dr. J. F. Steenhuis, geologist to the Government Geological Foundation, informed me that deep borings for the water-supply of Central-Limburg have been made in the years 1918, 1919, and 1922 S. and S.E. of Grubbenvorst. Evidently we have to do with boring no. I of October 1918, which reached a depth of 83 m, the top being at 24.50 m + N.A.P. (Geological Foundation Index no. 695/4). The section is as follows (the denotations of the strata are those used by Tesch (1930)) : Laagterras II 8 from 24.50 m + to 15.50 m + N.A.P. Middenterras (?) II 6 and Hoogterras II 1 from 15.50 m + to 4.— m + N.A.P. Zone of the Teglian Clay, "Onderste Fijn" II o from 4.— m + to 2.50 m — N.A.P. More or less coarse, mostly mudfree sand with gravel, alternating with rather fine sand with a variable mud and gravel content from 2.50 m — to 45.50 m — N.A.P. Below 45.50 m — N.A.P. very fine micaceous sand containing much mud. The percentage of mud and mica increases with depth. The boring was finished at a depth of 58.50 m — N.A.P.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318430</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1945</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 55 - 64</dcterms:extent>
+   <dcterms:isPartOf>A fossil gazelle (Gazelle schreuderae nov. spec.) from the Netherlands (URN:ISSN:0024-0672) (Volume 25) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318430.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149716</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318430</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

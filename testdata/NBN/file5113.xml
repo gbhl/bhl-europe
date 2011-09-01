@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Die Dromiidae des Roten Meeres (Crustacea Decapoda, Brachyura)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Lewinsohn Ch.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Die hier bearbeitete Sammlung enthält zehn Arten. Von diesen waren acht Arten bekannt, eine Art wird als neu für die Wissenschaft beschrieben und eine Art konnte nur bis zu der Gattung bestimmt werden. Guinot (1967) nennt in einer zusammenfassenden Liste der Brachyuren des westlichen Indischen Ozeans und des Roten Meeres elf Arten von Dromiiden aus dem Roten Meer. Zu dieser Zusammenfassung lässt sich jetzt folgendes sagen: Das Vorkommen von sechs Arten kann ohne Veränderung bestätigt werden, nämlich: Dromidia unidentata (Rüppell), Cryptodromia canaliculata Stimpson, C. granulata (Kossmann), C. hilgendorfi De Man, C. gilesii (Alcock) und C. bullifera (Alcock). Zwei der von Guinot genannten Arten sind bis jetzt nicht im Roten Meer gefunden worden, Dromidiopsis dormia (Linnaeus) und Cryptodromia pentagonalis (Hilgendorf). Bezüglich Dromidiopsis dormia konnte hier nachgewiesen werden, dass alle diesbezüglichen Angaben aus dem Roten Meer zu Dromia dehaani Rathbun, gehören. Cryptodromia pentagonalis wird von Nobili (1906: 146) genannt und er schreibt dort unter anderem „Nouvelle pour la mer Rouge". Der Fundort des von Nobili beschriebenen Weibchens ist jedoch Aden und liegt daher ausserhalb des Roten Meeres. Immer wieder muss darauf hingewiesen werden, dass ein Teil des von Nobili (1906) bearbeiteten Materials nicht aus dem Roten Meer stammt, sondern aus dem Golf von Aden. Die von Guinot genannte Art Cryptodromia tomentosa (Heller) wurde schon von De Man (1888) mit C. canaliculata Stimpson, synonymisiert. Pseudodromia integrifrons Henderson, wurde von Balss (1922) mit P. caphyraeformis (Richters) synonymisiert. Pseudodromia murrayi Gordon, wird in dieser Arbeit ebenfalls mit P. caphyraeformis synonymisiert.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317618</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 41</dcterms:extent>
+   <dcterms:isPartOf>Die Dromiidae des Roten Meeres (Crustacea Decapoda, Brachyura) (URN:ISSN:0024-1652) (Volume 151) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317618.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148904</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317618</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

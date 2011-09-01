@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new Mynes (Nymphalidae) from Boeroe</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Juriaanse J.H.</dc:creator>
+   <dc:creator>Volbeda G.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Mynes talboti spec. nov. Male. Forewing upperside: yellowish-white (XVII 25' f), 1) costa and apical part black with bluish tinge. Upper and lower discoidal nervure black till end of cell. Outer margin black, 1 mm. wide. Submarginal band from black apex till anal angle greenish black ( XLVII 33""b) about 4 mm. wide, blackened on veins 1, 2 and 3. Hindwing upperside: whitish blue-green, (XLVIII 37""b) lightest at basal part and abdominal margin. A black border from costal margin till anal angle, narrowest at vein 3 about 5 mm. wide. A thin white marginal line from vein 3 till about half way abdominal margin. Forewing underside: white, yellowish at base. A black marginal line from base via apex till anal angle, about 1 mm. wide. A curved dark brown (XLVI 13""k) band about 5 mm. wide, from cell above the lower discoidal nervure, touching the terminal margin between veins 2, 3 and 4, and bending a little inwards, ending on vein 1. In interspace 6, about 5 mm. from cell-apex an oblong whitish spot followed by a smaller oblong yellow spot. Under those, in interspace 5 a more or less prominent yellowish streak. In interspace 3 and 4 a sub-marginal orange-red (II 11. i.) more or less rectangular spot, divided by vein 4. One ♂ shows this red spot very pronounced in interspace 3 only, leaving a few red scales in interspace 4. Apex white and yellow, with black veins. Interspace 8 with a few black scales, interspace 6 about 1 mm. longer than 7 and a little triangular part in interspaces 4 and 5. Hindwing underside: brownish-black (XLVI 13""k). A trian-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319334</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1922</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 127 - 128</dcterms:extent>
+   <dcterms:isPartOf>A new Mynes (Nymphalidae) from Boeroe (URN:ISSN:0024-0672) (Volume 7) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319334.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150620</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319334</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

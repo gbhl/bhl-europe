@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On two new Sinularia species (Octocorallia: Alcyonacea) from the Moluccas</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Verseveldt J.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>The present note is based on alcyonacean material collected by Dr. Arthur G. Humes, Boston University Marine Program, Marine Biological Laboratory, Woods Hole, Massachusetts, U.S.A., while on board R/V "Alpha Helix" in the waters of the Moluccas in the spring of 1975. The corals, most of which were the hosts of copepods, were collected during the "Alpha Helix'' East Asian Bioluminescence Expedition, which was supported by the National Science Foundation (USA) under grants OFS 74 01830 and OFS 74 02888 to the Scripps Institution of Oceanography and NSF grant BMS 74 23242 to the University of California, Santa Barbara. I thank Dr. Humes for entrusting the material to me. The material is kept in the Rijksmuseum van Natuurlijke Historie, Leiden, Netherlands; the register numbers are preceded by the abbreviation RMNH. The collection contains a number of well-known species, most of them are widespread throughout the warm Indo-Pacific area. Three species have not been recorded from Indonesian waters before. They are the following. Dendronephthya (Morchellana) castanea Utinomi, 1952. One colony from the SW shore of Gunung Api, Banda Is., 4°3i/45"S i29°5i'55"E, depth 3 m, 4 May 1975, A. G. Humes no. 1834, RMNH Coel. no. 11834. Previously recorded from Japan (Utinomi, 1952) and the Philippines (Tixier-Durivault &amp; Prevorsek, 1962). Litophyton acutifolium Kukenthal, 1913. One colony from the same locality, but depth 10 m, 28 April 1975, A. G. Humes no. 1794, RMNH Coel. no. 11835. Field-note: "Long slender stalk, brown branches". Previously recorded from the Red Sea (Kukenthal, 1913; Verseveldt, 1974). Nephthea galbuloides Verseveldt, 1973. One colony from Amboina,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319032</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 303 - 307</dcterms:extent>
+   <dcterms:isPartOf>On two new Sinularia species (Octocorallia: Alcyonacea) from the Moluccas (URN:ISSN:0024-0672) (Volume 50) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319032.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150318</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319032</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

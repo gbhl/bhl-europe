@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Molluscs from the Miocene Pebas Formation of Peruvian and Colombian Amazonia</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Wesselingh F.P.</dc:creator>
+   <dc:creator>Anderson L.C.</dc:creator>
+   <dc:creator>Kadolsky D.</dc:creator>
+   <dc:subject>42.73 ; 38.22</dc:subject>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>systematics</dc:subject>
+   <dc:subject>Pebas Formation</dc:subject>
+   <dc:subject>Miocene</dc:subject>
+   <dc:subject>western Amazonia</dc:subject>
+   <dc:description>The mollusc fauna of the Miocene Pebas Formation of Peruvian and Colombian Amazonia contains at least 158 mollusc species, 73 of which are introduced as new; 13 are described in open nomenclature. Four genera are introduced (the cochliopid genera Feliconcha and Glabertryonia, and the corbulid genera Pachyrotunda and Concentricavalva) and a nomen novum is introduced for one genus (Longosoma). A neotype is designated for Liosoma glabra Conrad, 1874a. The Pebas fauna is taxonomically dominated by two families, viz. the Cochliopidae (86 species; 54%) and Corbulidae (23 species; 15%). The fauna can be characterised as aquatic (155 species; 98%), endemic (114 species; 72%) and extinct (only four species are extant). Many of the families represented by a few species in the Pebas fauna include important ecological groups, such as indicators of marine influence (e.g., Nassariidae, one species), terrestrial settings (e.g., Acavidae, one species) and stagnant to marginally agitated freshwaters (e.g., Planorbidae, four species). Only seven species (4%) representing undisputedly elevated salinities were found, whereas 31 species (20%) are undisputed restricted to freshwater biotopes. Only three (2%) terrestrial gastropod species are known. The Pebas system experienced profuse radiations of molluscs that led to an overwhelmingly endemic fauna, typical of a long-lived lake environment. Several extant genera, which nowadays live outside Amazonia, may have originated within the Pebas system. The stratigraphic continuity of species and line ages, at least for the late Early-early Late Miocene interval (c. 18-9 Ma), indicates that lakes continuously occupied the system and never were entirely replaced by rivers or the sea. The rare occurrence of marine taxa indicates that the system was at sealevel and occasionally experienced marine incursions.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209728</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 19 - 290</dcterms:extent>
+   <dcterms:isPartOf>Molluscs from the Miocene Pebas Formation of Peruvian and Colombian Amazonia (URN:ISSN:03757587) (Volume 133)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209728.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41346</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209728</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

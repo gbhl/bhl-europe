@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 27_2 (1987)</dc:title>
+   <dc:creator>Awadalla  A. A., Beck  Roland, Ebermann  Robert, Esterbauer  Hermann, Grill  Dieter, Härtel  Otto, Heinrich  Georg, Iatrou  Gregory, Karagiannakidou  Vasiliki, Kokkini  Stella, Kronberger  Winfried, Lang  Klaus J., Lickl  Eleonore, Malik  Chander Parkash, Messerer  Maximilian, Pfeifhofer  Hartwig W., Rücker  Waltraud, Salama  F. M., Setia  Neelam, Setia  Ramesh Chander, Swadis  Thomas, Teppner  Herwig, Tschulik  Andrea, Wawrik  Friederike, Welz  Walter</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Eleonore Lickl, Roland Beck, Robert Ebermann: Response of Peroxidase and Amylase Isoenzyme Activities of Aesculus hippocastanum and Picea abies to Gamma and Beta Irradiation (Short Communication).   177-  180. F. M. Salama, A. A. Awadalla: The Effect of Different Kinetin Application Methods on Some Chlorophyll Parameters of Two Crop Plants Grown Under Salinity Stress.   181-  193. Herwig Teppner: Recensio.   193-  194. Friederike Wawrik: Phytoplankton-Erstbesiedelung eines Teiches in Niederösterreich.   195-  204. Ramesh Chander Setia, Neelam Setia, Chander Parkash Malik: The Podwall Structure and Function in Relation to Seed Influences Development in Some Legumes.   205-  220. Dieter Grill, Hartwig W. Pfeifhofer, Andrea Tschulik: Untersuchungen über die jahreszeitlichen Schwankungen von Nadelinhaltsstoffen unter besonderer Berücksichtigung von Frosthärtefaktoren.   221-  240. Winfried Kronberger: Kinetics of Nonionic Diffusion of Hydrogene Fluoride in Plants, I. Experimental and theoretical treatment of weak acid permeation.   241-  265. Herwig Teppner: Recensio.   266. Vasiliki Karagiannakidou, Stella Kokkini: The Flora of Mount Menikion in North East Greece.   267-  283. Herwig Teppner: Recensio.   284. Herwig Teppner, Gregory Iatrou: Onosma sangiasense spec. nova. (Boraginaceae) from Peloponnisos (Greece):   285-  288. Klaus J. Lang, Maximilian Messerer: Die quantitative Verteilung der Monoterpene in verschiedenen Teilen einer 19-jährigen Lärche.   289-  298. Georg Heinrich, Walter Welz, Thomas Swadis: Substanzverluste und Strukturerhaltung im Verlauf einer "trockenen" Einbettung für die Elektronenmikroskopie.   299-  309. Herwig Teppner: Recensio.   309-  310. Dieter Grill, Hartwig W. Pfeifhofer, Hermann Esterbauer: Further Inversigations on the Thiol Content of Norway Spruce Needles.   311-  317. Otto Härtel, Waltraud Rücker: Recensiones.   318-  320</dc:description>
+   <dc:date>1987</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30189.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30189.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30189</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

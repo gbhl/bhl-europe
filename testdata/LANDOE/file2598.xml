@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 116 (1976)</dc:title>
+   <dc:creator>Anonymus , Brunner  Walter, Christ  Günter, Kerschhofer  Otto, Koller  Fritz, Ludwig  Karl-Heinz, Müller  Guido, Watteck  Nora</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Fritz Koller: Hallein im frühen und hohen Mittelalter.     1-  116. Karl-Heinz Ludwig: Ergebung und Widerstand im Zusammenhang mit dem Bauernkrieg von 1525/26.   117-  136. Günter Christ: Landeskirchliche Bestrebungen in Bayern und in den österreichischen Erblanden.   137-  158. Nora Watteck: Der Fagerstein bei der Wilhelmskapelle und seine Bedeutung.   159-  174. Otto Kerschhofer: Die Salzburger Emigration nach Preußisch-Litauen.   175-  254. Walter Brunner: Die Ramingsteiner Bergordnung von 1459.   255-  276. Guido Müller: Salzburgs Seen 13.   277-  286. Guido Müller: Franz Keil. Ein Alpenforscher und Pionier der plastischen Gebirgsdarstellung (1822-1876).   287-  310. : Zum salzburgischen Schrifttum.   311-  350. Anonymus: Gesellschaftsnachrichten. I. Mitgliederbewegung.   351-  353. Anonymus: Gesellschaftsnachrichten. II. Totentafel.   353-  359. Anonymus: Gesellschaftsnachrichten. III. Vorträge.   360. Anonymus: Gesellschaftsnachrichten. IV. Exkursionen und Führungen.   360-  362. Anonymus: Gesellschaftsnachrichten. V. Vereinsleitung.   362</dc:description>
+   <dc:date>1976</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29131.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29131.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29131</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

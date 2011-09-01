@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 71 (1984)</dc:title>
+   <dc:creator>Ambach  Walter, Anonymus , Bortenschlager  Inez, Bortenschlager  Sigmar, Burmann  Karl, Canaval  Heinz, Chemini  Claudio, Ennemoser  Oswald, Gerhold  Norbert, Goller  Franz, Heinricher  Alois, Heiss  Ernst, Kofler  Alois, Landmann  Armin, Margreiter-Kownacka  Marta, Murphy  Frances, Murphy  John, Pechlaner , Pschorn-Walcher  Hubert, Ritter  Helmut, Saxl  Reinhard, Schedl  Wolfgang, Seidenstücker  Gustav, Thaler  Konrad</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Norbert Gerhold: Der Märzschneckling, Hygrophorus marzuolus (Fr.) Bres. -ein Herbst- und Frühjahrspilz (Basidiomycetes: Hygrophoraceae).     7-   17. Sigmar Bortenschlager: Beiträge zur Vegetationsgeschichte Tirols I. Inneres Ötztal und unteres Inntal.    19-   56. Claudio Chemini: Sulla presenza di Trogulus closanicus Avram in Austria, Baviera e Slovenia (Arachnida: Opiliones).    57-   61. Alois Kofler: Faunistik der Weberknechte Osttirols (Österreich) (Arachnida: Opiliones).    63-   82. John Murphy, Frances Murphy: An English collection of Tyrolean spiders (Arachnida: Aranei).    83-   96. Konrad Thaler: Fragmenta Faunistica Tirolensia - VI (Arachnida: Aranei, Opiliones</dc:description>
+   <dc:description>Myriapoda: Diplopoda, Chilopoda</dc:description>
+   <dc:description>Insecta: Coleoptera, Carabidae).    97-  118. Pechlaner, Reinhard Saxl, Marta Margreiter-Kownacka, Helmut Ritter: Die Bodenfauna als Indikator für den Saprobitätsgrad von Fließgewässern in Tirol.   119-  135. Gustav Seidenstücker: Zur Ökologie von Calocoris lineolatus Costa (Insecta: Heteroptera, Miridae).   137-  140. Ernst Heiss: Heteropteren aus Kreta II (Insecta: Heteroptera).   141-  155. Karl Burmann: Beiträge zur Microlepidopteren-Fauna Tirols. VI. Depressariinae (Insecta: Lepidoptera, Oecophoridae).   157-  172. Wolfgang Schedl, Hubert Pschorn-Walcher: Ein Beitrag zu schwarzen Bürstenhornblattwespen aus Mitteleuropa (Insecta: Hymenoptera, Argidae).   173-  179. Armin Landmann: Zur Fischfauna Nordtirols: Erstfund des Moderlieschens Leucaspius delineatus (Pisces: Cyprinidae).   181-  185. Armin Landmann: Zum Vorkommen und Status der Lachmöwe (Larus ridibundus) in Nordtirol (Aves: Laridae).   187-  198. Alois Heinricher, Franz Goller: Vorkommen und Brut des Bienenfressers (Merops apiaster) in Osttirol (Österreich) (Aves: Meropidae).   199-  201. Walter Ambach, Oswald Ennemoser, Heinz Canaval: Demonstrationsversuch zur Computertomographie.   203-  211. Sigmar Bortenschlager, Inez Bortenschlager: Pollenflug in Innsbruck 1977-1983 (Tirol, Österreich) medizinische Bedeutung.   213-  240. Anonymus: III. Vereinsnachrichten.   257-  259</dc:description>
+   <dc:date>1984</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27289.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27289.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27289</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

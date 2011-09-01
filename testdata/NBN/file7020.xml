@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>El sistema de yacimientos de mamíferos miocenos del Cerro de los Batallones, Cuenca de Madrid: estado actual y perspectivas</dc:title>
+   <dc:title>Palaeontologica Nova</dc:title>
+   <dc:title>Publicaciones del Seminario de Paleontología (SEPAZ)</dc:title>
+   <dc:creator>Morales J.</dc:creator>
+   <dc:creator>Pozo M.</dc:creator>
+   <dc:creator>Silva P.G.</dc:creator>
+   <dc:creator>Domingo M.S.</dc:creator>
+   <dc:creator>López-Antoñanzas R.</dc:creator>
+   <dc:creator>Álvarez Sierra A.</dc:creator>
+   <dc:creator>Antón M.</dc:creator>
+   <dc:creator>Martín Escorza C.</dc:creator>
+   <dc:creator>Quiralte V.</dc:creator>
+   <dc:creator>Salesa M.J.</dc:creator>
+   <dc:creator>Sánchez I.M.</dc:creator>
+   <dc:creator>Azanza B.</dc:creator>
+   <dc:creator>Calvo J.P.</dc:creator>
+   <dc:creator>Carrasco P.</dc:creator>
+   <dc:creator>García-Paredes I.</dc:creator>
+   <dc:creator>Knoll F.</dc:creator>
+   <dc:creator>Hernández Fernández M.</dc:creator>
+   <dc:creator>Hoek Ostende, van den L.W.</dc:creator>
+   <dc:creator>Merino L.</dc:creator>
+   <dc:creator>Meulen, van der A.J.</dc:creator>
+   <dc:creator>Montoya P.</dc:creator>
+   <dc:creator>Peigné S.</dc:creator>
+   <dc:creator>Peláez-Campomanes P.</dc:creator>
+   <dc:creator>Sánchez-Marco A.</dc:creator>
+   <dc:creator>Turner A.</dc:creator>
+   <dc:creator>Abella J.</dc:creator>
+   <dc:creator>Alcalde G.M.</dc:creator>
+   <dc:creator>Andrés M.</dc:creator>
+   <dc:creator>DeMiguel D.</dc:creator>
+   <dc:creator>Cantalapiedra J.L.</dc:creator>
+   <dc:creator>Fraile S.</dc:creator>
+   <dc:creator>García Yelo B.A.</dc:creator>
+   <dc:creator>Gómez Cano A.R.</dc:creator>
+   <dc:creator>López Guerrero P.</dc:creator>
+   <dc:creator>Oliver Pérez A.</dc:creator>
+   <dc:creator>Siliceo G.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:subject>miocene</dc:subject>
+   <dc:subject>Cerro de los Batallones</dc:subject>
+   <dc:description>The Cerro de los Batallones (Los Batallones Butte) is located in the central-northern area of the Madrid Basin, central Spain. Nine vertebrates localities containing a large variety of mammals of Upper Vallesian Age (Late Miocene) have been found associated with the sediments forming the butte. From bottom to top, these sediments consist of magnesian lutite beds (Unit I), paleosols formed of sepiolite and opal (Unit II), and siliclastic, marlstone and carbonate beds (Unit III). The set of ERT profiles developed in Los Batallones Butte have demonstrate that electrical imaging techniques are an estimable tool for the characterization and prospecting of fossil sites developed in fine-grained siliciclastic sequences. These localities contain an exceptionally rich, varied and well-preserved vertebrate fauna together with invertebrate and plant fossils. Carnivore species are strikingly well represented at Batallones 1 and 3, and large herbivore species, such as mastodons, rhinoceros and giraffes, at Batallones 2, 4, 5 and 10. The taphonomical studies, together with the morphological features shown by the sedimentary fills of the mammal localities, permit an overall interpretation of these deposits as vertebrate traps. The study of these localities should offer a significant contribution to our understanding of the formation pattern of trap-like paleontological sites - which so far have been typically reported in karstic-type systems -, as well as an important source of paleobiological information about numerous vertebrate groups.</dc:description>
+   <dc:publisher>Universidad de Zaragoza</dc:publisher>
+   <dc:contributor>Esteve J. (Editor)</dc:contributor>
+   <dc:contributor>Meléndez G. (Editor)</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327989</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 41 - 117</dcterms:extent>
+   <dcterms:isPartOf>El sistema de yacimientos de mamíferos miocenos del Cerro de los Batallones, Cuenca de Madrid: estado actual y perspectivas (URN:ISBN:978-84-96214-96-5) (Volume 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327989.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/161052</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327989</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

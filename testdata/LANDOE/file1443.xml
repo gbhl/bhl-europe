@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Egretta 48_1_2 (2005)</dc:title>
+   <dc:creator>Anonymus , Denner  Manuel, Frank  Georg, Grubbauer  Pia, Gubi  Friedrich, Khil  Leander, Laber  Johannes, Lauermann  Hansjörg, Loupal  Gerhard, Nemeth  Erwin, Peer  Katharina, Ranner  Andreas, Reichholf-Riehm  Helgard, Riegler  Regina, Sachslehner  Leopold M., Teufelbacher  Norbert, Wichmann  Gabor, Zuna-Kratky  Thomas</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Nemeth, Pia Grubbauer: Zur aktuellen Bestandsituation der Reiher und Löffler des Neusiedler See-Gebietes.     1-   18. Georg Frank, Gabor Wichmann: Die Situation des Mittelspechts (Dendrocopos medius) in Wien.    19-   34. Katharina Peer: Habitatmerkmale von Brutrevieren des Alpenschneehuhns (Lagopus mutus) im Kühtai, Tirol.    35-   44. Johannes Laber, Thomas Zuna-Kratky: Ergebnisse langjähriger Mitwinter-Greifvogelzählungen im Laaer Becken (Niederösterreich).    45-   62. Norbert Teufelbacher, Leander Khil: Der Einflug von Seidenschwänzen (Bombycilla garrulus) im Winter 2004/05 im östlichen Österreich.    63-   87. Hansjörg Lauermann, Friedrich Gubi, Leopold M. Sachslehner: Eine erfolgreiche Brut der Kornweihe (Circus cyaneus) im Horner Becken (Niederösterreich) im Jahr 2005.    88-   95. Andreas Ranner, Regina Riegler: Verbreitung und Bestand der Saatkrähe (Corvus frugilegus) im Burgenland im Jahr 2005.    96-  101. Manuel Denner: Vögel als Straßenverkehrsopfer  Ergebnisse einer gezielten Erfassung im Weinviertel in den Jahren 2003 und 2004.   102-  108. Helgard Reichholf-Riehm: Brutversuch des Löfflers (Platalea leucorodia) am unteren Inn.   109-  112. Gerhard Loupal: Dipl.-Ing. Dr. Kurt Bauer zum 80. Geburtstag.   113. Anonymus: Leopld Aschenbrenner zum Professor ernannt.   114</dc:description>
+   <dc:date>2005</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27540.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27540.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27540</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

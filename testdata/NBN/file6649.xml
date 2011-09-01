@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Neue Indomalayische Cerceris-Arten</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Maidl F.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Cerceris celebensis n. sp. ♀. Nigra, flavo et rufo variegata. Clypeus (Fig. 1) profunde concavus, cornibus duobus crassis basi nascentibus, margine apicali protracto dentato. Area basalis segmenti mediani basi crasse longitudinaliter, apice transverse striata. Segmentum primum (Fig. 2) abdominis quadratum. Segmentum secundum ventrale sine area basali elevata. Long. 16 mm. ♀. Die Art ist an dem eigentümlich geformten Kopfschild (Fig. 1) sofort kenntlich. Derselbe ist mitten schüsselförmig ausgehöhlt. Die Aushöhlung ist begrenzt: Oben am Grunde durch zwei lange, starke voneinander durch einen breiten halbkreisförmigen Ausschnitt getrennte Hörner, unten am Ende an dem trapezförmig vorgezogenen Rand des Mittelteiles durch zwei kleine ± undeutliche Zähnchen in der Mitte und je zwei grössere deutliche Zähne jederseits von diesen. Im Vergleich mit ähnlichen Kopfschildbildungen bei anderen Cercerisarten erscheinen die zwei Hörner als der Rest eines dachförmig vom Grunde des Kopfschildes abstehenden Vorsprungs, der so tief und breit halbkreisförmig ausgerundet erscheint, dass von ihm nur ein — von oben gesehen — mondsichelförmigen Rest sichtbar ist. Die Innenränder der Seitenaugen laufen gegen den Kopfschild zu etwas auseinander. Das 2. Fühlergeisselglied ist so lang als das 3. und ein Drittel des 4. zusammen (Fig. 3). — Der „herzförmige", dreieckige Raum des Mittelsegments zeigt am Grunde einige grobe, etwas auseinanderlaufende Längsriefen, an der Spitze einige ebensolche Querriefen. Die Mittelfurche ist nur schwach ausgeprägt. — Der erste Hinterleibsabschnitt (Fig. 2) ist nur wenig länger als breit, mit gewölbten Seiten und breit niedergedrücktem Endrand. Der 2. Bauch-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319154</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1926</dcterms:issued>
+   <dcterms:issued>20th century CE/1920s</dcterms:issued>
+   <dcterms:extent>page 221 - 238</dcterms:extent>
+   <dcterms:isPartOf>Neue Indomalayische Cerceris-Arten (URN:ISSN:0024-0672) (Volume 9) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319154.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150440</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319154</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

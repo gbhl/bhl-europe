@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Koleopterologische Rundschau 33_1955 (1955)</dc:title>
+   <dc:creator>Anonymus , Downes  J.A., Franz  Herbert, Fuchs  Ernst, Grundmann  E., Hicker  Richard, Hildebrand  Peter, Mader  Leopold, Pilleri  G., Scheerpeltz  Otto, Tippmann  Friedrich F., Wirthumer  H.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Geleitwort.     1. G. Pilleri: Prof. Dr. Josef Müller - 75 Jahre alt.     2-   14. Herbert Franz: Zur Kenntnis der Pselaphiden Nordspaniens.    14-   46. Ernst Fuchs: 1. Beitrag zur Kenntnis der neotropischen Cerambyciden.    47-   53. E. Grundmann: Ein neuer Stenochlaenius aus Kashmir. Col., Carabidae, Chlaeniinae.    53-   55. Richard Hicker: Neue paläarktische Arten aus der Familie Cantharidae.    55-   60. Peter Hildebrand: Die Abgrenzung einer neuen Natio des Carabus Scheidleri Panz.    60-   62. Leopold Mader: Neue Coleopteren aus Fukien (China). Helotidae, Languriidae, Erotylidae, Endomychidae, Coccinellidae.    62-   78. Otto Scheerpeltz: Eine neue Art der Gattung Platystethus Mannh., mit einer Bestimmungstabelle der westpaläarktischen Arten und Formen dieser Gattung (Col. Staphylinidae). (61. Beitrag zur Kenntnis der paläarktischen Staphyliniden).    78-   88. Friedrich F. Tippmann: Zur Kenntnis der Cerambycidenfauna Fukiens (Süd-Ost-China). (4 Tafeln)    88-  137. Friedrich F. Tippmann: Zur Geschichte und Synonymie einer großen, sehr seltenen Cerambycide. (Fam. Cerambycidae, Subfam.: Prioninae).   137-  141. H. Wirthumer: Die Verbreitung von Bembidion prasinum Duft. im Donauraum.   141-  146. Anonymus: Aus Entomologenkreisen.   148. J.A. Downes: Aus Entomologenkreisen. X. Internationaler Entomologischer Kongreß Montreal, Kanada, 1956.   148-  149</dc:description>
+   <dc:date>1955</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26395.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26395.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26395</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

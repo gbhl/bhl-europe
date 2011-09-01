@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Illustr.Nr.3]. Zwey Gartencabinette.</dc:title>
+   <dc:creator>[Anonym]</dc:creator>
+   <dc:subject>Gartenkabinette</dc:subject>
+   <dc:type>Text</dc:type>
+   <dc:type>Zeitschriftenartikel</dc:type>
+   <dc:format>html/gif</dc:format>
+   <dc:source>Gartenkalender, 4.Jg.</dc:source>
+   <dc:relation>http://www.ub.uni-bielefeld.de/diglib/aufkl/gartenkal</dc:relation>
+   <dcterms:issued>1785</dcterms:issued>
+   <dcterms:extent>Seite [III] - [III]</dcterms:extent>
+   <europeana:object>http://www.ub.uni-bielefeld.de/diglib/aufkl/gartenkal/095851/00000010.gif</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.ub.uni-bielefeld.de/cgi-bin/neubutton.cgi?pfad=/diglib/aufkl/gartenkal/095851&amp;seite=00000010.TIF&amp;werk=Zeitschriften+der+Aufklaerung</europeana:isShownBy>
+   <europeana:isShownAt>http://www.ub.uni-bielefeld.de/diglib/aufkl/gartenkal</europeana:isShownAt>
+<europeana:dataProvider>Universitätsbibliothek Bielefeld</europeana:dataProvider><europeana:rights>http://creativecommons.org/publicdomain/mark/1.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the genus Therioaphis walker, 1870 with descriptions of new species (Homoptera, Aphididae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hille Ris Lambers D.</dc:creator>
+   <dc:creator>Bosch, van den R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>INTRODUCTION The second author in 1959 and 1960 collected aphids in the Netherlands. Germany, Switzerland, Austria, Italy, Southeastern France, Israel and Iran, concentrating on Phyllaphidine ("Callipterine") aphids. Many species were reared and used for small experiments. In the Netherlands, Austria, and during the period of 22 August 1959 to 13 September 1959 in Southern France, the first author took part in the aphid hunt. The resulting material was handed to the first author for preliminary identification. A considerable number of undescribed species was discovered. Rather than merely publish the descriptions we have decided to write a more comprehensive paper. The study of some species, e.g., Therioaphis ononidis (Kaltenbach), over their territory gave us an insight into their intraspecific variability and this knowledge could then be applied to such controversial species as Therioaphis trifolii (Monell). THE HISTORY OF THE GENUS THERIOAPHIS WALKER, 1870 F. Walker very briefly described the genus and indicated Aphis ononidis Kaltenbach, 1846, as the type. As according to Doncaster (1961), Aphis ononidis Kaltenbach is still present among Walker's slides, no confusion about the type is possible. Börner (1949) erected the new genera Triphyllaphis, Pterocallidium and Myzocallidium which will have to be discussed in some detail. Triphyllaphis Börner, 1949, type Triphyllaphis luteola Börner, 1949, is distinguished from the other genera by the presence of pleural hairs in first instar larvae and adults, and the conical shape and absence of notable pigmentation of the hair-bearing processi in apterae. We can confirm the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317775</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 47</dcterms:extent>
+   <dcterms:isPartOf>On the genus Therioaphis walker, 1870 with descriptions of new species (Homoptera, Aphididae) (URN:ISSN:0024-1652) (Volume 68) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317775.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149061</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317775</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

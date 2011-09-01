@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mediterranean Neocomian belemnites, part 2: the Berriasian-Valanginian boundary in southeast Spain (Río Argos, Cañada Lengua and Tornajo)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Janssen N.M.M.</dc:creator>
+   <dc:subject>42.83 ; 38.22</dc:subject>
+   <dc:subject>Belemnites</dc:subject>
+   <dc:subject>Berriasian</dc:subject>
+   <dc:subject>sequence stratigraphy</dc:subject>
+   <dc:subject>Spain,Valanginian</dc:subject>
+   <dc:description>Belemnites have been sampled and investigated from three successions (Río Argos, Cañada Lengua and Tornajo) with different palaeobathymetries. In this way an excellent opportunity has been created to compare the distribution of belemnites, both stratigraphically and with regard to palaeo-water depth. These successions are well studied with respect to ammonites. Pseudobelus is abundant only in the deep water settings, contrary to Castellanibelus. Hibolithes seems to be restricted to certain strata, being relatively common in the outer platform succession (Tornajo). The Cañada Lengua and Tornajo successions are interpreted sequence stratigraphically. Generally, the Cañada Lengua is characterised by ‘highstand’ stacking, while the absence of lowstand deposits and the presence of marly highstand deposits characterises the Tornajo succession. The new genus Gillieronibelus (type species Belemnites mayeri Gilliéron, 1873) is described. The genus Coctebelus Weis, 1991, is regarded as a junior synonym of Berriasibelus Delattre, 1952. The genera Conobelus and Berriasibelus have different stratigraphical distributions. Three new species are described; Conobelus? piradoensis sp. nov., Duvalia miravetesensis sp. nov. and Duvalia tornajoensis sp. nov. There is an important belemnite faunal change in the lower Alpillensis Zone, were the position of the Berriasian-Valanginian boundary is favoured to be placed on top of sequence Be 7.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219298</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>Erratum published in SG 127 (2004), p. 379-380</dcterms:alternative>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 121 - 183</dcterms:extent>
+   <dcterms:isPartOf>Mediterranean Neocomian belemnites, part 2: the Berriasian-Valanginian boundary in southeast Spain (Río Argos, Cañada Lengua and Tornajo) (URN:ISSN:03757587) (Volume 126)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219298.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46241</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219298</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

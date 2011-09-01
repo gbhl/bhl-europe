@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Activity of the body wall musculature of the African Clawed Toad, Xenopus laevis (Daudin), during diving and respiration</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jongh, de H.J.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>INTRODUCTION Mechanisms for regulating the specific weight of the body are well known in fishes. In other aquatic vertebrates the lungs might have a function similar to that of the swimbladder or the lungs in fishes. In anuran tadpoles the lungs may serve as hydrostatic balancers, but this has not been verified experimentally. Active regulation of lung volume, and thus of body volume and specific weight, during diving is unknown in adult anurans, although Parker (1936) expressed the opinion that in male Trichobatrachus robustus the lungs, which possess a posterior diverticulum surrounded by specialized musculature, serve as a hydrostatic apparatus. If there is no active regulation of lung volume during diving, the volume of the lungs will depend on such factors as pulmonary pressure initially reached while breathing at the surface, compliance of lung wall and body wall, and hydrostatic pressure acting on the body wall. If the volume of the other contents of the body cavity remains unchanged, the lung volume may be expected to adapt by contraction or expansion to the depth at which the animal is located. This expectation is based on the assumption that due to the absence of ribs anurans are unable to expand the body wall except by means of the buccal force pump. If, on the other hand, the musculature of the body wall or of the lungs should act to compress the body cavity or the lungs, pulmonary pressure might be raised to a higher level. This would lead to a decrease in lung volume, an increase in specific weight and facilitation of diving. Relaxation of the muscles would then result in an upward movement of the animal. In this paper the electromyographic activity is described of some muscles</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318652</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 135 - 144</dcterms:extent>
+   <dcterms:isPartOf>Activity of the body wall musculature of the African Clawed Toad, Xenopus laevis (Daudin), during diving and respiration (URN:ISSN:0024-0672) (Volume 47) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318652.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149938</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318652</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

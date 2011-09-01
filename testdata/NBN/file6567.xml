@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Neue Lycaeniden des Leiderner Museums</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Fruhstorfer H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Einige Exemplare aus der Lycaena cleotas Guér.-Gruppe des Leidener Museums veranlassten mich das Material meiner Sammlung und meine Übersicht übe die Formen der Gattung Luthrodes, Iris 1915, pp. 47-49, nochmals nachzuprüfen. Bei dieser Gelegenheit fand ich, dass die unbedeutende Chilades laius Cram, von Ceylon dieselbe Gestaltung der Klammerorgane besitzt, als die gewaltig grosse Luthrodes boopis Fruhst. von Celebes und die nur wenig kleineren Formen und Vicarianten der papuanischen Luthrodes cleotas Guér. Über die Zusammengehörigkeit von laius und boopis war ich weiter nicht erstaunt; haben wir doch in Chilades athena Feld. von Luzon und anderen Philippinen bereits ein Verbindungsglied zwischen beiden. Auf Grund der Identität der Klammerorgane liesse sich ohne weiteres auch cleotas als die östlichste und am erheblichsten differenzierte laius-Rasse betrachten. Im Widerspruch mit dieser einfachen Tatsache steht jedoch das Faktum, dass auf den südlichen Philippinen sowohl Chilades laius athena Feld., wie auch eine viel grössere und mehr mit der papuanischen cleotas übereinstimmende Form, nämlich mindora Feld. vorkommt. Herr Professor Courvoisier hat auf mein Ersuchen die Androconien von laius, cleotas und arruana Feld. untersucht. Da ergab sich, dass laius kreisrunde, cleotas jedoch länglich ovale Androconien besitzt. Zwischen beiden Extremen steht aber bereits wieder arruana Feld. mit nach vorne deutlich abgerundeten und viel breiteren Androconien. Arruana bildet somit durch ihre Androconien ein Verbindungsglied zwischen den beiden Extremen laius und cleotas. Es ist zu bedauern, dass weder boopis, noch athena untersucht werden konnten, weil das Material zu kostbar ist</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319072</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 90 - 95</dcterms:extent>
+   <dcterms:isPartOf>Neue Lycaeniden des Leiderner Museums (URN:ISSN:0024-0672) (Volume 2) (Issue 12)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319072.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150358</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319072</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

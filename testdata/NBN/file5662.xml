@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new species of the genus Canacophilus Carl, 1926, from New Caledonia (Diplopoda, Polydesmida, Sphaerotrichopodidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Jeekel C.A.W.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Canacophilus chordeumopygus nov. spec. New Caledonia, Mt. Mou, 2000 ft. under stones, 8-14 March 1914 (coll. P. D. Montague, New Caledonia Expedition), 1 ♂ (holotype), 2 ♀ ♀. Colour. — Head rather dark brownish gray. Antennae of the same colour, though slightly paler. Body segments similarly coloured as the head, but the metatergites, including the posterior portion of the lateral keels and except a zone near the waist, paler, more yellowish brown. Legs and anal segment rather dark brownish gray. Width. — Holotype ♂ : 3.1 mm; paratype ♀♀: 3.5 mm. Head and antennae. — Labrum moderately narrow, moderately emarginate, tridentate. Clypeus rather weakly impressed towards the labrum, weakly convex, the lateral borders emarginate. Headplate smooth, with weak cellular structure. Clypeal and frontal parts moderately to rather weakly setiferous, the setae varying from short to rather long. Antennal sockets separated by about one and a half times the diameter of one socket or by about two thirds the length of the second antennal segment. Postantennal groove and the wall in front of it rather weakly developed. Vertex not demarcated from the frontal area, moderately convex, with a few setae. Vertigial sulcus weakly impressed, not reaching the upper level of the sockets. Antennae rather long and slender, moderately to, distally, rather densely setiferous. Length of the segments: 2 = 3 &gt; 4 = 5 = 6; the sixth segment about two thirds the second. The fifth and sixth segments distinctly thicker than the proximal segments. Collum. — About as wide as the head. Dorsal outline subsemicircular, very slightly transversely elongate. Anterior border widely and evenly rounded. Posterior border weakly emarginate in the middle, laterally widely</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318167</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 369 - 374</dcterms:extent>
+   <dcterms:isPartOf>A new species of the genus Canacophilus Carl, 1926, from New Caledonia (Diplopoda, Polydesmida, Sphaerotrichopodidae) (URN:ISSN:0024-0672) (Volume 39) (Issue 37)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318167.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149453</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318167</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

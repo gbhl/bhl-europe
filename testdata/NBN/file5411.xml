@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Rhizocephala infesting species of the Anomuran genus Galathea</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>During the work of the Ecological Survey of the University of Cape Town a few Crustacea of various groups were collected which proved to be infested with Rhizocephalan parasites. Remarks on one of these, a parasite of Galathea dispersa Bate, are given in the present paper, while notes are added on the data from the literature and on the structure of some other specimens 1). The Rhizocephala occurring as parasites of species of the genus Galathea belong to the genera Triangulus and Lernaeodiscus (family Lernaeodiscidae) or to the genus Galatheascus (family Peltogastridae). Moreover, one species of the genus Sacculina is known as a parasite of a Galathea, while Parthenopea subterranea Kossmann, a species usually infesting Callianassa, has been reported as a parasite of Galathea dispersa. The following is a review of the literature on the parasites here dealt with, the scientific names are recorded as they were used in the cited papers. Gerbe (1862). Records of parasites ("Sacculina, ou Peltogaster") of Carcinus moenas, Xanthus floridus, Portunus marmoreus, and Galathea squammifera, apparently from the Atlantic coast region of France. No characters noted of the adult parasites, the larvae are stated to show specific differences. Perhaps the first (unnamed) record of Lernaeodiscus squamiferae Pérez, 1922. Stuxberg (1873). "Pachybdella Carcini" mentioned as a parasite of various Brachyura and of Galathea squamifera, the last record obviously based on Gerbe (1862). Milne Edwards &amp; Bouvier (1900). One female specimen of Galathea squamifera Leach "sacculinée", from Lanzarote, Canary Islands, depth 30 m; two female specimens of Galathea intermedia Lilljeborg "sacculinées", the one from north of the Banc d'Arguin, Mauretania, depth 235 m, the other from the Cape Verde Islands, depth 318 m. Possibly</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317916</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1958</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 33 - 53</dcterms:extent>
+   <dcterms:isPartOf>Notes on Rhizocephala infesting species of the Anomuran genus Galathea (URN:ISSN:0024-0672) (Volume 36) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317916.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149202</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317916</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

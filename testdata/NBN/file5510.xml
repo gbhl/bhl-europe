@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zoological results of the Dutch New Guinea expedition 1939 : No. 4. Temnocephales</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Baer J.G.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Les matériaux faisant l'objet de la présente étude, proviennent tous de la région centrale de la Nouvelle-Guinée néerlandaise. Ils ont été récoltés dans les bocaux renfermant les Crustacés par le Dr. L. B. Holthuis, chargé de déterminer ces derniers. Nous tenons à remercier tout particulièrement le professeur H. Boschma d'avoir bien voulu mettre ces matériaux à notre disposition et nous le prions d'accepter le parrainage de l'espèce type d'un des nouveaux genres que nous avons créé. Nous remercions également le Dr. Holthuis de l'intérêt qu'il a témoigné à nos recherches et des nombreux renseignements qu'il nous a donnés. Deux espèces de Temnocéphales ont été signalées jusqu'ici en NouvelleGuinée. Ce sont Craniocephala biroi Mont. du Crabe d'eau douce, Sesarma gracilipes M.-E., et Temnocephala handschini Baer chez une Ecrevisse (voir plus loin). La première de ces deux espèces n'est connue que par une courte 1) Previous numbers of the Zoological Results of the Dutch New Guinea Expedition 1939: No. 1. L. D. Brongersma, A new Scincid Lizard. Nova Guinea, n.s., vol. 5, pp. 272-283, 2 pis., 4 text-figs. No. 2. F. P. Koumans, The Fishes. Ibid., pp. 284-288, 1 text-fig. No. 3. L. B. Holthuis, Decapoda Macrura with a Revision of the New Guinea Parastacidae. Ibid., pp. 289-328, 8 pis. description de Monticelli (1905); elle est incomplète, notamment en ce qui concerne l'anatomie des organes sexuels. Il paraît y avoir trois paires de testicules ce qui constitue un caractère unique chez les Temnocéphales. A notre demande, le Dr. A. Palombi, de la Station zoologique de Naples, nous</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318015</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 119 - 140</dcterms:extent>
+   <dcterms:isPartOf>Zoological results of the Dutch New Guinea expedition 1939 : No. 4. Temnocephales (URN:ISSN:0024-0672) (Volume 32) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318015.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149301</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318015</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

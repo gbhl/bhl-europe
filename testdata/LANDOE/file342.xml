@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 95 (1955)</dc:title>
+   <dc:creator>Cholnoky  Bela I., Ehrenberg  Kurt, Franz  Herbert, Gilli  Alexander, Handel-Mazetti Frh.v.  Hermann, Höfler  Karl, Melzer  Helmut, Neubauer  Hans Franz, Novitzky  S.v., Poelt  Josef, Werneck  Heinrich Ludwig</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herbert Franz: Zum Gedenken an Prof.Dr. Josef Meixner     5-    8. Herbert Franz: Dritter Beitrag zur Kenntnis der Caeculidae (Acari)     9-   18. Kurt Ehrenberg: Über Höhlenbären und Bärenhölen.    19-   41. S.v. Novitzky: Such-, Sammel- und Zuchtmethoden von Kleinschmarotzer-Wespen (Microhymenoptera)    42-   57. Karl Höfler: Über Pilzsoziologie    58-   75. Bela I. Cholnoky: Diatomeengesellschaften aus den Donauauen oberhalb von Wien    76-   87. Heinrich Ludwig Werneck: Kahlschlag und Fichtenreinkultur- Die Ursachen zum Untergange der Wildobsthölzer und damit des Obstbaues auf bodenständigen Unterlagen.    88-  103. Helmut Melzer: Floristisches aus Niederösterreich und dem Burgenlande.   104-  106. Josef Poelt: Flechten der Schwarzen Wand in der Großarl.   107-  113. Hermann Handel-Mazetti Frh.v.: Angaben aus Prof.Dr.Kotulas Pflanzenkatalogen, als Beitrag zur floristischen Erforschung von Tirol und Vorarlberg.   114-  154. Hermann Handel-Mazetti Frh.v.: Zur floristischen Erforschung von Tirol und Vorarlberg.   155-  167. Alexander Gilli: Beiträge zur Flora Vorder-Indiens   168-  181. Hans Franz Neubauer: Eine Blütenabnormität der Seerose.   182-  183</dc:description>
+   <dc:date>1955</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24541.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24541.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24541</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

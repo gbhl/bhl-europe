@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Boomkrekels Oecanthus pellucens bij Lobith het land binnen (Orthoptera: Gryllidae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Felix R.</dc:creator>
+   <dc:creator>Kleef, van H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Boomkrekel; Nederland; Verspreiding; Herkenning</dc:subject>
+   <dc:description>Oecanthus pellucens entering the Netherlands at Lobith (Orthoptera: Gryllidae) On august 8, 2004 a male Oecanthus pellucens was heard along the river Waal, just east of the city of Nijmegen (the Netherlands). Additional searches revealed that the species is distributed from the German border towards Nijmegen and Arnhem along the rivers Waal and Rhine respectively. These observations confirm that O. pellucens has successfully colonised the Netherlands in a natural way and has probably been present for several years. Previous records of O. pellucens in the Netherlands were attributed to transport by traffic from southern Europe. All specimens were found along the shore of the river, indicating that dispersal is accomplished by water transport during winter and spring flooding. During this period the eggs of the species are in diapause inside plants. Since O. pellucens is very thermophilous it remains to be seen if it can survive the next cold and wet summer.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:261967</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>6</dcterms:extent>
+   <dcterms:extent>page 1 - 6</dcterms:extent>
+   <dcterms:isPartOf>Boomkrekels Oecanthus pellucens bij Lobith het land binnen (Orthoptera: Gryllidae) (URN:ISSN:01692453) (Volume 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/261967.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/94018</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/261967</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

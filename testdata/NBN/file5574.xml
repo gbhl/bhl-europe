@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on Gobioid Fishes : 10. On a collection of the Museum of Basle, with description of a new species of Apocryptodon</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Koumans F.P.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>From the "Naturhistorisches Museum" at Basle I received a collection of Gobioid fishes for identification. This collection was made in interesting localities in the eastern part of the Indo-Australian Archipelago, Islands east of New Guinea (Bismarck Archipelago), Polynesia and Australia. I am very much obliged to Dr. J . Roux for sending me the collection for identification. It consists of the following material: Glossogobius giuris (H.B.) 2 sp. Katherine riv. N . Australia, Prof. Handschin 1932. 1 sp. Rotti Isl., Sept. 1935, Dr. A . BÜhler. Awaous stamineus (Val.) 2 sp. Rotti Isl. in rivers, Sept. 1935, Dr. A. BÜhler. Ctenogobius frenatus (Gthr.) 5 sp. Australia. Sicyopterus cynocephalus (C. &amp; V.) 3 sp. Baaguia Port. Timor, Aug. 1935, Dr. A. BÜhler. 14 sp. Fatu Menassi Mollo 1350 m Timor, June 1935, Dr. A. BÜhler. Sicyopterus macrostetholepis (Blkr.) 2 sp. Baaguia Port. Timor, Aug. 1935, Dr. A. BÜhler. Sicyopterus hageni Popta 6 sp. Baaguia Port. Timor, Aug. 1935, Dr. A. BÜhler. Sicyopterus microcephalus (Blkr.) 1 sp. Baaguia Port. Timor, Aug. 1935, Dr. A. BÜhler. 1 sp. Amarassi Timor, May 1935, Dr. A. BÜhler. Sicyopus balinense (Blkr.) 1 sp. Namamoso New Hanover, Nov. 1931, Dr. A. BÜhler.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318079</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 24 - 26</dcterms:extent>
+   <dcterms:isPartOf>Notes on Gobioid Fishes : 10. On a collection of the Museum of Basle, with description of a new species of Apocryptodon (URN:ISSN:0024-0672) (Volume 20) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318079.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149365</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318079</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 28 (1888)</dc:title>
+   <dc:creator>Aberle  Karl (Carl), Angermayer  Josef Ritter von Rebenberg, Anonymus , Fugger  Eberhard, Peregrinus  Johannes, Pezolt  Ludwig, Prinzinger  August, Schöller  Hans, Schweinbach  Franz, Steinhauser  Adolf Ritter von, Wutke  Konrad</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Konrad Wutke: Beiträge zur Geschichte des großen Städtebundkrieges für die Jahre 1387-1388.     1-   64. Eberhard Fugger: Beobachtungen in den Eishöhlen des Untersberges bei Salzburg. (5 Tafeln.)    65-  164. Hans Schöller: Uebersicht der Witterung im Jahre 1887.   165-  172. Hans Schöller: Uebersicht der Witterung auf dem Untersberge.   173-  177. August Prinzinger: Ueber einige "Heidenwege" im salzburgischen Gebirge, insbesondere über den Korntauern.   178-  201. Adolf Ritter von Steinhauser: Ueber den Profanbau in Salzburg und das altsalzburgische Bürgerhaus.   202-  206. August Prinzinger: Miscellen. Geschichtliche Alterthümer in Goldegg, wovon noch keine Aufzeichnung besteht.   227-  228. Anonymus: Miscellen. Der Bergwerksbetrieb des Landes Salzburg im Jahre 1886.   228-  232. Anonymus: Literarische Beiträge zur Geschichts- und Landeskunde Salzburgs, welche in den Jahren 1886 und 1887 anderwärts durch den Druck veröffentlicht worden sind.   233-  268. Karl (Carl) Aberle: Grab-Denkmal, Schädel undAbbildungen des Theophrastus Paracelsus. (1 Tafel)   269-  355. Johannes Peregrinus: Geschichte der salzburgischen Dom-Sängerknaben oder schlechthin des Kapellhauses.   357-  416. Ludwig Pezolt: Miscellen. Die Grenzen des ehemaligen Stadtgerichtsbezirkes Salzburg.   417-  423. Franz Schweinbach, Josef Ritter von Rebenberg Angermayer: Gesellschafts-Angelegenheiten. 1. Protokoll der ordentlichen Jahresversammlung am 11. Oktober 1888.   424-  426. August Prinzinger: Gesellschafts-Angelegenheiten. 2. Jahres-Bericht des Ausschusses an die Hauptversammlung vom 11. Oktober 1888 über das XXVIII. Vereinsjahr 1887-1888.   427-  437. Anonymus: Gesellschafts-Angelegenheiten. 3. Auszug aus den Sitzungsprotokollen des Ausschusses im XXVIII. Gesellschaftsjahre 1887-1888.   438-  443. Anonymus: Gesellschafts-Angelegenheiten. 4. Mitglieder-Verzeichniß (mit Schluß des XXVIII. Vereinsjahres).   444-  453. Anonymus: Gesellschafts-Angelegenheiten. 5. Verzeichniß jener gelehrten Gesellschaften, Vereine, Anstalten und Personen, mit welchen die Gesellschaft für Salzburger Landeskunde durch Uebersendung ihrer "Mittheilungen" eine Verbindung pflegt.   454-  456. Anonymus: Gesellschafts-Angelegenheiten. 6. Verzeichniß jener Bücher und Schriften, welche - außer dem wechselseitigen Tauschverkehre - an die Gesellschaft gelangt oder gespendet worden sind.   457-  458. Anonymus: Gesellschafts-Angelegenheiten. 7. Jahres-Rechnung über Einnahmen und Ausgaben für das 28. Vereinsjahre 1887/88.   459-  460</dc:description>
+   <dc:date>1888</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29033.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29033.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29033</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

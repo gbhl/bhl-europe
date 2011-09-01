@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Trichoptera Newsletter 14 (1987)</dc:title>
+   <dc:creator>Anonym , Dolling  W.R., Kumanski  Krassimir, Malicky  Hans, Neboiss  Artur, Szczesny  Bronislaw, Tachet  Henri, Tian  Lixin, Urbanus , Wells  Alice, Yang  Lianfang</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist     3. Henri Tachet: Opening Speech of the 5th International Symposium on Trichoptera (July 21st 1986)     5-    6. Hans Malicky: Hydropsyche Ornatula McL. 1878 in China     6. Anonym: List of Research Workers on Trichoptera     6. Anonym: List of participants of the Fifth International Symposium on Trichoptera - Lyon, 21-26 July 1986     7-   10. Anonym: List of poster displays and oral communications presented at the Fifth International Symposium on Trichoptera    11-   15. Artur Neboiss: Stettin Museum Insect Collection    16. Anonym: Caddis Flies of the Furan Stream near Tarentaise (Loire, France)    16. Krassimir Kumanski: A new Genus of the Chaetopterygini - Tribe (Trichoptera: Limnephilidae)    17-   19. Anonym: Ces drôles de bêtes qu'on appelle trichoptères    20. Alice Wells, Artur Neboiss: A glimpse of North Sulawesi Trichoptera    21-   23. Anonym: List of Research Worker on Trichoptera    24. Bronislaw Szczesny: A propos Psilopteryx psorosa Kol. in the North Carpathians    25-   26. Hans Malicky: On some Rhyacophila from Doi Suthep Mountain, Northern Thailand    27-   28. Hans Malicky: Hydroptila Juba, Bona Species    30. Anonym: The second All-Union symposium on Trichopterology in the USSR    31-   32. Lianfang Yang, Lixin Tian: Taxonomic and Faunistic Studies on Chinese Caddis Flies    31. Hans Malicky: Zwei neue türkische Köcherfliegen (Trichoptera)    33-   34. Urbanus, W.R. Dolling: On some Aspects of the Greater European Typology    35-   36. Hans Malicky: Tinodes waeneri pollensa n.ssp. von Mallorca    37. Anonym: Trichopterological Literature    38-   46</dc:description>
+   <dc:date>1987</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26890.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26890.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26890</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

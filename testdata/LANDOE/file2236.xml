@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 19 (1859)</dc:title>
+   <dc:creator>Anonymus , Ehrlich  Karl, Gaisberger  Joseph, Hrdina  Ernst</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Joseph Gaisberger: Zur Geschichte milder Stiftungen im Land ob der Ens.     1-   60. Anonymus: 19. Jahres-Bericht.     3-    9. Anonymus: Vermehrung der Sammlungen.    11-   26. Anonymus: Veränderungen im Stande der Ehren- und ordentlichen Mitglieder des Museum Francisco-Carolinum.    27-   28. Anonymus: Protector: Se. kaiserliche Hoheit der durchlauchtigste Prinz und Herr Franz Carl    29-   31. Ernst Hrdina: Contouren zu einer Monographie des "Traunsee`s".    61-   83. Karl Ehrlich: Die geognostische Abtheilung des Museums und Aufstellung der betreffenden vaterländischen Sammlungen.    85-  100</dc:description>
+   <dc:date>1859</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28488.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28488.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28488</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

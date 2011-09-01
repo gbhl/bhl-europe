@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift der Wiener Entomologischen Gesellschaft 54</dc:title>
+   <dc:creator>Amsel  Hans-Georg, Deschka  Gerfried, Dimic  Nenad, Feichtenberger  Erich W., Hörleinsberger  Hans, Kühnert  Hermann, Meier  Herbert G., Pinker  Rudolf, Povolny  Dalibor, Reisser  Hans, Thomas  Werner, Wyatt  Colin W.,</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans-Georg Amsel: Hans Reisser zum 75. Geburtstag am 20.3.1971.    65-   69. Hans Hörleinsberger: Hans Foltin - 70 Jahre.    70-   71. Dalibor Povolny: Bedeutsame faunistische und taxonomische Entdeckungen bei den Scrobipalpa-Arten (Lep., Gelechiidae) in Mitteleuropa.    71-   78. Nenad Dimic, Gerfried Deschka: Lithocolletis (=Phyllonorycter) gerasimowi Hering 1930: Erstfund für Südeuropa.    78-   83. Gerfried Deschka: Nähere Angaben über Lithocolletis vulturella Deschka (Lepidoptera, Lithocolletidae).    84-   91. Gerfried Deschka: Nähere Angaben über Lithocolletis bartolomella Deschka (Lepidoptera, Lithocolletidae).    92-  100. Rudolf Pinker: Neue und interessante Lepidopteren aus Madeira und den Azoren mit faunistischen Hinweisen auf die Kanaren.   101-  131. Colin W. Wyatt: Eine neue Rasse von Parnassius phoebus L. aus Kanada.   132-  133. Erich W. Feichtenberger: Erwähnenswerte Modifikationen von Venusia cambrica Curt. (Lep., Geometridae).   133. Hermann Kühnert: Die Verbreitung von Antheraea yamamai Guer. im Bezirk Deutschlandsberg (Lepidoptera, Saturniidae).   134-  138. Herbert G. Meier: Über ein Vorkommen von Pseudobankesia gramatella Lhomme (Lep., Psychidae) in den südlichen Zentralalpen. (8. Beitrag zur Kenntnis der Psychiden).   139-  145. Werner Thomas: Aethes fennicana adelaidae Toll (Lep., Cochylidae). Ein Neufund für Österreich.   145-  146. Hans Reisser: Oberösterreichische Entomologentagungen in Linz.   146. Hans Reisser: Entomologentagungen in Wien.   147. :</dc:description>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27039.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27039.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27039</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

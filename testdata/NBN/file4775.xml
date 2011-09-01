@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>New and supplementary records of marine Isopoda for the Netherlands and the Southern North Sea since 1956, with a note on Peltogaster paguri (Crustacea, Cirripedia)</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Adema J.P.H.M.</dc:creator>
+   <dc:creator>Huwae P.H.M.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION Part XVI of the Fauna van Nederland, Isopoda &amp; Tanaidacea (Holthuis, 1956), deals with 27 species of Isopoda occurring in salt and/or brackish water. According to Holthuis (1956) the occurrence in the Netherlands of two of these, Sphaeroma serratum (Fabricius, 1787) and Bopyrus squillarum Latreille, 1802, is very doubtful and will remain so, as the material on which the records were based is lost and no new records of these species have been published for the Netherlands. Since 1956 many new data were obtained for several of the remaining 25 species, while 12 species were found for the first time in Dutch waters or in the southern North Sea. The present paper deals with the more interesting finds. Part of the species mentioned here have been discussed earlier. A key for the Dutch species is given by Huwae (1977). Since the publication of the key, three species, Pseudione hyndmanni (Bate &amp; Westwood, 1868), Ione thoracica (Montagu, 1808) and Astacilla longicornis (Sowerby, 1806), were added to the Dutch fauna list. Two species, Arcturella dilatata (G. O. Sars, 1882) and Liriopsis pygmaea (Rathke, 1843) have been included here, because so far they were not represented in the collection of the Rijksmuseum van Natuurlijke Historie, although, properly speaking, they were not collected in the "Dutch" part of the southern North Sea. Most of the records from the Dutch coast are based on material obtained by members of the "Strandwerkgemeenschap van de Koninklijke Nederlandse Natuurhistorische Vereniging, de Nederlandse Jeugdbond voor Natuurstudie en de Algemeen Christelijke Jeugdbond voor Natuurstudie en Natuurbescherming" (the Shore Study-group of the Royal Netherlands Natural History Society, the Netherlands and General Christian Junior Leagues for Nature Study);</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317279</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1982</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 33 - 57</dcterms:extent>
+   <dcterms:isPartOf>New and supplementary records of marine Isopoda for the Netherlands and the Southern North Sea since 1956, with a note on Peltogaster paguri (Crustacea, Cirripedia) (URN:ISSN:0459-1801) (Volume 28) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317279.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148565</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317279</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

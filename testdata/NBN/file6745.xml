@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Lizards with northern affinities from the mountains of Oman</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Arnold E.N.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>Oman material of four lizard species is described and discussed ; it comprises specimens of a previously undescribed gecko, Phyllodactylus gallagheri, two lacertids — the poorly known Lacerta jayakari Boulenger, 1887, and L. cyanura, also described here for the first time, and a skink, Ablepharus pannonicus Lichtenstein, 1823. These species have no strong affinities with any members of the mainly Saharo-Sindian fauna now occupying much of Arabia but are closely related to forms occurring to the north of the peninsula. It is probable that they are relicts of a more temperate fauna which once entered more extensively into southeastern Arabia. As might be expected, all four species are absent from the desert areas of Oman and are confined to the disjunct mesic habitats which exist in the mountains.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319250</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 111 - 128</dcterms:extent>
+   <dcterms:isPartOf>Lizards with northern affinities from the mountains of Oman (URN:ISSN:0024-0672) (Volume 47) (Issue 8)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319250.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150536</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319250</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

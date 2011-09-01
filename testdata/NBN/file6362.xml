@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : XI. Kritische Revision der Gattung Parnassius (Fortsetzung 7)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Bevor ich mit der Behandlung der tiroler und bayrischen Unterarten von P. apollo L. in dieser Fortsetzung beginne, möchte ich ein Versäumnis bei der Aufzählung der spanischen Rassen nachholen. subsp. maurilianus Fern. (Bol. Soc. Esp. p. 180, 1926), Typus Palencia, Sierra del Brezo, Villafria, ist als eine intermediär zwischen den subsp. ardanazi Fern. und escalerae Rothsch. stehende Unterart beschrieben, was 22 ♂ 4 ♀ mit Fundort Camasobres, Palencia, 11. 7. 1941, R. Oberthur, die ich aus dessen Sammlung erworben habe, bestätigen. Ich möchte hinzufügen, dass die ♂ stärker entwickelte Vorderflügelbinden, die ♀ einen helleren Flügelfond als die ♂ ♀ der Vergleichsrassen aufweisen. Bei der Karakterisierung der Unterarten der tiroler und bayrischen Alpen ist zu den in meiner vorigen Abhandlung erwähnten Schwierigkeiten ein neuer meine Arbeit erschwerender Umstand hinzugekommen, die Tatsache, dass eine grosse Menge gezogener Apollo tiroler und bayrischer Herkunft in Umlauf gebracht wurden, ohne ausdrücklich als solche gekennzeichnet zu sein; diese verstören das einheitliche Rassenbild. Ich bin geneigt anzunehmen, dass z.B. ein erheblicher Prozentsatz der Exemplare, die J.E. Kammel in seiner verdienstvollen Arbeit „Zur Rassenfrage des Parnassius apollo L. aus den nördlichen und zentralen Ostalpengebieten" (Zeitschrift der Wiener Entomologischen Gesellschaft, 1943) abbildet und seiner Karakterisierung zugrunde legt, gezogene Tiere betrifft. Kammel bestreitet die hinreichende Differenzierung verschiedener Rassen, schlägt aber vor, diese als formae geographicae bestehen zu lassen. Das ist weder Fisch, noch Fleisch. Auch eine distincte geographische Form muss sich kennzeichnen lassen. Wahr-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318867</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 247 - 270</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : XI. Kritische Revision der Gattung Parnassius (Fortsetzung 7) (URN:ISSN:0024-0672) (Volume 34) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318867.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150153</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318867</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

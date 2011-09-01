@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Comparative reproductive anatomy in the South African giant land snails (Gastropoda: Pulmonata: Achatinidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mead A.R.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:subject>Pulmonata</dc:subject>
+   <dc:subject>Achatinidae</dc:subject>
+   <dc:subject>biogeography</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>genital anatomy</dc:subject>
+   <dc:subject>Southern Africa</dc:subject>
+   <dc:subject>East Africa</dc:subject>
+   <dc:description>The history and current taxonomic status of 62 nominal taxa are revised that have been associated in the literature with the subgenus Tholachatina Bequaert, 1950, of genus Archachatina Albers, 1850, and the genus Cochlitoma Férussac, 1821, in the land snail family Achatinidae Swainson, 1840. Tangible, reliable characters have been found in the detailed features of the reproductive anatomy in this family. The results of comparative anatomical study convincingly reflect phylogeny in contrast to the comparative study of only the shell characters. This latter more strongly reflects the effects of the intrinsically variable environment over time. In the present study, both sets of characters are needed to refine identification. Change, and therefore speciation, is shown in the reproductive system through anatomical differences that may develop in the functional interrelationships of the two integral reproductive systems of hermaphroditism. Limited adjustment to anatomical change over time has established for each genus a typical, characteristic reproductive anatomical pattern or configuration. Because this pattern has a basically high degree of physical stability within a population, it becomes an identifying character for the genus, and more restrictedly so for the species. Two new genera (Bruggenina and Brownisca) and two new species (Cochlitoma kilburni and C. wigleyi) are described on the basis of distinctive anatomical characters. The genus Cochlitoma sensu Pilsbry (1904) is resurrected and redescribed. It contains most of the southern African achatinid species. Bequaert’s subgenus Tholachatina (1950) of West African genus Archachatina is invalid. The genus Archachatina Albers, 1850, has no endemic species in southern Africa.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214451</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 417 - 449</dcterms:extent>
+   <dcterms:isPartOf>Comparative reproductive anatomy in the South African giant land snails (Gastropoda: Pulmonata: Achatinidae) (URN:ISSN:00240672) (Volume 78, 18-28)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214451.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43185</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214451</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Behavioural responses of caddisfly larvae (Hydropsyche angustipennis) to hypoxia</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Geest, van der H.G.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>avoidance behaviour</dc:subject>
+   <dc:subject>impedance conversion technique</dc:subject>
+   <dc:subject>low oxygen</dc:subject>
+   <dc:subject>aquatic insect behaviour</dc:subject>
+   <dc:description>The availability of aquatic oxygen can limit habitat suitability for benthic insects, and differences in hypoxia tolerance can therefore play a role in explaining distributions in the field. This study describes a behavioural test in which the trade off between different survival strategies after exposure to different oxygen concentrations is analyzed, using the caddisfly Hydropsyche angustipennis as a model organism. The impedance conversion technique was used to quantify patterns of behaviour for individual caddisflies at three levels of dissolved oxygen (100%, 50%, and 30% saturation) under controlled laboratory conditions. Exposure to hypoxia resulted in behavioural changes: under low-oxygen conditions, larvae increased their ventilation rate, which may increase oxygen uptake. However, they also increased the time spent on other activities, which may reflect avoidance behaviour.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:262647</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 255 - 260</dcterms:extent>
+   <dcterms:isPartOf>Behavioural responses of caddisfly larvae (Hydropsyche angustipennis) to hypoxia (URN:ISSN:1383-4517) (Volume 76) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/262647.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/94260</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/262647</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

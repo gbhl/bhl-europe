@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Joannea Zoologie 2 (2000)</dc:title>
+   <dc:creator>Adlbauer  Karl, Fachbach  Günter, Hausl-Hofstätter  Ulrike, Holzer  Erwin, Koschuh  Anton, Kuzmits  Leo, Lazar  Reinhold, Lichtenberger  Franz, Paill  Wolfgang, Zechner  Lisbeth</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Ulrike Hausl-Hofstätter: Zur Bienenfauna der Steiermark IV. Ceratina LATR. (Hymenoptera, Apoidea, Anthophoridae), mit einigen Funden aus dem Burgenland.     5-   12. Ulrike Hausl-Hofstätter: Zur Bienenfauna der Steiermark V. Weitere Angaben zur Verbreitung von Trachusa PANZ. und Anthidium FABR. (Hymenoptera, Apoidea, Megachilidae), ergänzt durch Funde aus dem Burgenland.    13-   15. Leo Kuzmits: Drei neue Kleinschmetterlinge für das Burgenland (Lepidoptera).    17-   18. Franz Lichtenberger: Neue und bemerkenswerte Kleinschmetterlinge aus der Steiermark (Lepidoptera).    19-   23. Wolfgang Paill, Karl Adlbauer, Erwin Holzer: Interessante Laufkäferfunde aus der Steiermark (Coleoptera, Carabidae).    25-   32. Karl Adlbauer: Ein Nachweis von Ripidius quadriceps ABEILLE DE PERRIN, 1872 aus der Steiermark (Coleoptera, Ripiphoridae).    33-   35. Lisbeth Zechner, Günter Fachbach, Reinhold Lazar: Verbreitung und Habitatansprüche der Östlichen Grille Modicogryllus frontalis (FIEBER, 1844) in der Steiermark, Österreich (Saltatoria, Gryllidae).    37-   69. Anton Koschuh, Lisbeth Zechner: Über aktuelle Funde der Sumpfgrille (Pteronemobius heydenii FISCHER, 1853) in der Steiermark (Saltatoria, Trigonidiidae).    71-   82. Lisbeth Zechner, Anton Koschuh: Zur Verbreitung der Italienischen Schönschrecke Calliptamus italicus (LINNÉ, 1758) in der Steiermark (Saltatoria, Acrididae).    83-   97</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/23733.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/23733.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=23733</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

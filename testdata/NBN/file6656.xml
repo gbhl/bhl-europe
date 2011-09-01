@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mechanism of the jaw and body muscles of Orthragoriscus mola L.</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Roon, van J.M.</dc:creator>
+   <dc:creator>Pelkwijk, ter J.J.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>There are several descriptions of the anatomy of Orthragoriscus mola L., but no authors except Van Dobben (1935) have given a functional treatise concerning the mechanism of the jaw. Unfortunately the fish described by Van Dobben seems to have been abnormal. The description which follows is based on anatomical study of two sunfishes which stranded on the Dutch coast and were placed at our disposal by the Rijksmuseum van Natuurlijke Historie, Leiden. Specimen A, a female, stranded December 10, 1935 near Burgh, in the neighbourhood of Haamstede, on the Isle of Schouwen. It has been used for a cast in the Leiden Museum and was dissected by Dr N. Tinbergen and J. J. ter Pelkwijk December 13 and 14, 1935 at the Zoological Laboratory at Leiden. Specimen B, a male, stranded December 13, 1938, between Wassenaarsche Slag and Katwijk in Holland. It was dissected by J. M. van Roon and J. J. ter Pelkwijk on December 14 and 15, 1938 at the Leiden Museum. The dissected specimen was kept in a 50 % solution of alcohol and was further studied on February 14, 1939. External features (fig. 1a and 1b) A 1935 В 1938 Total length................................................ 100 cm 120 cm Total height of the body................................. 65 75 Total height from tip of anal fin to tip of dorsal fin 137 150 Height of tail fin.......................................... 63 75 Distance from tip of snout to gill-slit ............... 29 36 Distance from tip of snout to front of pectoral fin 33 47 The tip of the snout protudes over the upper jaw 1 3</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319161</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1939</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 65 - 75</dcterms:extent>
+   <dcterms:isPartOf>Mechanism of the jaw and body muscles of Orthragoriscus mola L. (URN:ISSN:0024-0672) (Volume 22) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319161.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150447</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319161</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

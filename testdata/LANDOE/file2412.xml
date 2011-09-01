@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahresberichte Wiener entomologischer Verein 1 (1900)</dc:title>
+   <dc:creator>Anonymus , Fleischmann  Friedrich, Hirschke  Hans (=Hanns), Metzger  Anton, Mitis  Heinrich von, Naufock  Albert  jun., Neustetter  Heinrich Michael</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Chronik.     1-    7. Anonymus: Mitglieder-Verzeichnis.     9-   11. Anonymus: Cassa-Bericht für das Jahr 1899. (Abschluss mit 31. December 1899).    13. Anonymus: Bibliothek-Stand.    15-   24. Anonymus: Necrologe. (Anm.: Adolf Freiherr von Kalchberg, Hugo May sen.).    25-   27. Heinrich Michael Neustetter: Beitrag zur Macrolepidopteren-Fauna von Kärnthen.    29-   59. Hans (=Hanns) Hirschke: Zwei neue Geometriden-Formen.    61. Anton Metzger: Beitrag zur Lepidopteren-Fauna von Weyer in Oberösterreich (I. Nachtrag).    63-   67. Hans (=Hanns) Hirschke: Die ersten Stände von Lignyoptera Fumidaria Hb.    69-   71. Albert  jun. Naufock: Ein weiterer Beitrag zur Zucht von Lignyoptera Fumidaria Hb.    73-   75. Heinrich von Mitis: Vanessa Xanthomelas Esp. aberr. Chelys.    77-   81. Friedrich Fleischmann: Zur Kenntnis von Psodos noricana Wagner und coracina Esp.    83-   88. Heinrich von Mitis: Berichtigung.    89</dc:description>
+   <dc:date>1900</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28758.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28758.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28758</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

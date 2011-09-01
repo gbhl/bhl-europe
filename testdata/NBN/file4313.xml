@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nepticulidae from the Volga and Ural region</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Nieukerken, van E.J.</dc:creator>
+   <dc:creator>Zolotuhin V.V.</dc:creator>
+   <dc:creator>Mistchenko A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Russia</dc:subject>
+   <dc:subject>faunistics</dc:subject>
+   <dc:subject>new records</dc:subject>
+   <dc:subject>new synonymy</dc:subject>
+   <dc:subject>Stigmella</dc:subject>
+   <dc:subject>Ectoedemia</dc:subject>
+   <dc:subject>Bohemannia</dc:subject>
+   <dc:subject>Trifurcula</dc:subject>
+   <dc:description>Abstract. The Nepticulidae of the Russian provinces (oblasts) Ul’yanovsk, Samara, Saratov, Volgograd, Astrakhan and Chelyabinsk and the Kalmyk Republic are listed. We record 60 species, including two only previously recorded, 28 species only on the basis of leafmines (indicated with an *). Seventeen species are recorded as new for Russia. Eleven of these are reported on the basis of adults: Stigmella glutinosae (Stainton, 1858), S. ulmiphaga (Preissecker, 1942), S. thuringiaca (Petry, 1904), S. rolandi Van Nieukerken, 1990, S. hybnerella (Hübner, 1813), Trifurcula (Trifurcula) subnitidella (Duponchel, 1843), T. (T.) silviae Van Nieukerken, 1990, T. (T.) beirnei Puplesis, 1984, T. (T.) chamaecytisi Z. &amp; A. La√tüvka, 1994, Ectoedemia (Zimmermannia) liebwerdella Zimmermann, 1940 and Ectoedemia (Ectoedemia) caradjai (Groschke, 1944). Six species are reported on the basis of mines only: Stigmella freyella (Heyden, 1858), S. nivenburgensis (Preissecker, 1942), S. paradoxa (Frey, 1858), S. perpygmaeella (Doubleday, 1859), Ectoedemia (Ectoedemia) atricollis (Stainton, 1857) and E. spinosella (Joannis, 1908). Astigmella dissona Puplesis, 1984 is synonymised with Stigmella naturnella (Klimesch, 1936), here recorded for European Russia for the first time, bridging the gap between Far East Russia and Europe. S. juryi Puplesis, 1991 is synonymised with S. paradoxa (Frey, 1858). S. zelleriella (Snellen, 1875) is found in a stream valley in steppe area, probably associated with Salix triandra, a different host in habitat that differs widely from other occurrences. S. obliquella (Heinemann, 1862) is for the first time recorded from European Russia. A few new records outside this area are cited under distribution, including Ectoedemia (Fomoria) weaveri (Stainton, 1855) recorded from Magadan in the Far East.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:227761</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 125 - 157</dcterms:extent>
+   <dcterms:isPartOf>Nepticulidae from the Volga and Ural region (URN:ISSN:03427536) (Volume 27 (2/3))</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/227761.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/50437</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/227761</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on some recent and fossil cats, chiefly from the Malay Archipelago</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>INTRODUCTION The present paper contains notes on some recent cats in the collections of the Rijksmuseum van Natuurlijke Historie, Leiden, as well as descriptions of the fossil Felidae in the "Collectie Dubois", Leiden, which its Director Prof. Dubois entrusted to me. The fossils were collected in Java 1) by Prof. Eug. Dubois during his searches for remains of the precursor of man, and with the intention to gather data about the geological age and ecology of this precursor (cf. Dubois, 1888). The age of the deposits from which the fossil cats were collected, has been much discussed. A review of the literature (up to 1931) on this subject has been given by Van Es (1931), who concludes that the Trinilfauna must be referred to the lower plistocene age, while Van der Maarel (1932) believes the Trinil-fauna to belong to the middle-plistocene. In a recent paper Von Koenigswald (1934) arrives at the conclusion that the plistocene mammal-fauna of Java in reality consists of three distinct faunae of different age: 1. the old plistocene Djetis-fauna, 2. the Trinil-fauna in its restricted sense of middle-plistocene age, and 3. the young-plistocene Ngandong-fauna. The latter in his opinion is connected with the recent javanese fauna by the prehistoric Sampoeng-fauna, which was described by Dammerman (1932, 1934 a, 1934 b). To this I may add that Prof. Dubois after his extensive studies on this subject, arrives at the conclusion that the Trinil-fauna belongs paleontologically to the youngest pliocene, geologically to the oldest plistocene, in the European sense of these terms. In connection with the age of the Trinil-fauna it was to be expected,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318121</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1935</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 1 - 89</dcterms:extent>
+   <dcterms:isPartOf>Notes on some recent and fossil cats, chiefly from the Malay Archipelago (URN:ISSN:0024-0672) (Volume 18) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318121.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149407</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318121</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

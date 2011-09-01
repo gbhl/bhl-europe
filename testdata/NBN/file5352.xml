@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Octocorallia from North-Western Madagascar (Part I)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Verseveldt J.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>INTRODUCTION During the years 1960, 1963, 1964 and 1967 Dr. Arthur G. Humes, Boston University, Massachusetts, U.S.A., collected a number of octocorals in the waters north-west of Madagascar, near the islands Nosy Bé, Nosy Komba, Ambariobe (a small island nearly between Nosy Komba and Nosy Bé), Tany Kely (a small island to the south of Nosy Bé), Nosy Faly, Isles Mitsio, etc. The purpose of his collecting was the study of the copepods associated with these corals. In order to know the identity of the coral hosts of his copepods, Dr. Humes entrusted his extensive collection to me for identification. I wish to express my best thanks to Dr. Humes for giving me the opportunity of working on his interesting material. The present paper forms the first of a series devoted to these octocorals, which now form part of the collection of the Rijksmuseum van Natuurlijke Historie, Leiden; the registered numbers are indicated with the abbreviation RMNH. Through the kindness of Dr. J. H. Stock of the Zoölogisch Museum at Amsterdam I could also examine material held by that Museum and collected by Dr. Stock in 1963 and 1964 at the same localities as Dr. Humes's specimens. Dr. Stock's material is indicated with registered numbers preceded by the abbreviation ZMA. For comparative purposes also material of the Siboga Expedition from the collection of the Amsterdam Museum was examined. I also examined fragments of the schizo-syntype of Sympodium fuscum Thomson &amp; Henderson, which are kept in the British Museum (Natural History), London; the fragments have been placed at my disposal through the kindness of Dr. R. W. Sims, curator of the Annelida Section, who was then temporarily</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317857</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1969</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 38</dcterms:extent>
+   <dcterms:isPartOf>Octocorallia from North-Western Madagascar (Part I) (URN:ISSN:0024-1652) (Volume 106) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317857.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149143</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317857</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the Indo-Australian species of the genus Thyreus Panzer (= Crocisa Jurine) (Hym., Apoidea, Anthophoridae) Part 3. Oriental and Australian species</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Lieftinck M.A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>CONTENTS A— GENERAL.................. 3 Introduction................. 3 Classification and characters............. 5 Host relationship................ 7 Distribution ................. 7 Material.................. 10 Acknowledgements................ 11 Β — SYSTEMATIC.................. 11 I. White-spotted species mainly restricted to continental Asia .... 11 II. Blue-spotted species, exclusive of those occurring in the Papuan faunal region and Australia.............. 30 Key to the males of East Asiatic species of Thyreus Panzer . . . 163 III. Australo-Papuan species............. 169 Key to the Australo-Papuan species of Thyreus Panzer..... 170 IV. Species incertae sedis............204, 211 C— CATALOGUE OF INDO-AUSTRALIAN Thyreus PANZER, AND INDEX .... 206 A — GENERAL Introduction This paper is a continuation of two published under the same title. A chronological reference list of all regional forms of the genus Thyreus is contained in the first part of this revision (1958, Nova Guinea, new ser., 9 : 21-30). The second part, dealing with a single species of eastern distribution, T. nitidulus (F.), was published one year later in the same journal (1959, new ser., 10 : 99-130). A few species omitted from the first list are</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317590</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1962</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 1 - 212</dcterms:extent>
+   <dcterms:isPartOf>Revision of the Indo-Australian species of the genus Thyreus Panzer (= Crocisa Jurine) (Hym., Apoidea, Anthophoridae) Part 3. Oriental and Australian species (URN:ISSN:0024-1652) (Volume 53) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317590.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148876</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317590</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

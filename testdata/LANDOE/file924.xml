@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 53_1 (1942)</dc:title>
+   <dc:creator>Herzog  Th., Horsky  R., Klein  Bruno Maria, Niethammer  Günter, Pia  Julius von, Rechinger  Karl Heinz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Julius von Pia: Geologische Untersuchungen in der Salmgruppe (Oberdonau). (Tafel I-VII.)     5-  155. Bruno Maria Klein: Das Silberlinien- oder neuroformative System der Ciliaten. Eine zusammenfassende Darstellung unter Berücksichtigung eines homologen und eines amalogen Zwischensystems bei den Metazoen. Tafel VIII-XII.   156-  336. Günter Niethammer: Nachtrag zu den ornithologischen Beobachtungen in Ost-Oberschlesien.   337-  339. Karl Heinz Rechinger: Ergebnisse einer botanischen Reise nach dem Iran, 1937. III. Teil.   340-  357. Th. Herzog: Lebermoose aus Sumatra.   358-  373. R. Horsky: Religiöse Holzplastik auf Nias. Tafel XXIII-XXIX.   374-  398</dc:description>
+   <dc:date>1942</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26603.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26603.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26603</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

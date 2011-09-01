@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A collection of sawflies ( Hymenoptera Symphyta) from Java</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Benson R.B.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>I have lately received for determination some very interesting sawflies collected in Java mostly by Dr. J. van der Vecht. The collection contained eight species not recorded in Forsius' recent list of Javan Sawflies (Forsius 1934), six of these being entirely new species. The types of these new species have been deposited in the Rijksmuseum van Natuurlijke Historie, Leiden, Holland; paratypes and duplicate specimens where available have been retained in the British Museum. In addition to these I have added the description of a new species of Anapeptamena given to the British Museum by Dr. C. Ferriére. The additions to the Javan fauna are listed below. ORUSSIDAE Ophrynopus maculpennis (Smith) Bajoekidoel, Banjoewangi, East Java, 1 ♂, IX. 1932, Toxopeus leg. Forsius (1926) suggests that O. loriae (Mantero), and O. trifasciatus (Cameron) (New Guinea), as well as O. sericatus Mocsary (New South Wales) and O. queenslandicus (G. Turner) (Queensland) are synonymous with this species. The Australian species O. sericatus Mocsary, is, however, certainly a very distinct species from O. maculipennis (Smith) as I have indicated in the key below. The Malaysian and Australian forms of Ophrynopus Konow can be distinguished from the Central and South American forms by the fact that segment 3 of the abdomen is about two-thirds as long as segment 2 while in the American forms segment 3 is about half as long as segment 2. In the American species also the ocellar region is usually about as broad as long, the tubercles being arranged in a semicircle behind the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318053</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1935</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 167 - 180</dcterms:extent>
+   <dcterms:isPartOf>A collection of sawflies ( Hymenoptera Symphyta) from Java (URN:ISSN:0024-0672) (Volume 18) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318053.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149339</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318053</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

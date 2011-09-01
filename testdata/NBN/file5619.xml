@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Further notes on Brazilian Conidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mol, van J.-J.</dc:creator>
+   <dc:creator>Tursch B.</dc:creator>
+   <dc:creator>Kempf M.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>Since the publication of a survey of brazilian Conidae (Van Moll et al., 1967) new extensive dredgings effected by one of us (M.K.) along considerable portions of the Brazilian coast have brought a rich material allowing us to add to the previous work and to correct certain opinions therein expressed. Conus testudinarius Hwass, 1792 Conus testudinarius Hwass (see Kohn, 1968, for nomenclature) has been dredged off the mouth of the Amazon (1°10.7'N 46°32.5'W, 100 m deep, calcareous algal gravelly sand and organogenous material. — 2 dead specimens) and off the coast of Ceará (2°13.5'S 40°43.5'W, 53 m deep, calcareous algal sandy gravel. — 1 living juvenile; 2°25.3'S 40°50.5'W, 24 m deep, littoral gravelly sand. — 1 dead juvenile) (see map, fig. 1). The southernmost previous record in the West Atlantic was Venezuela (Clench, 1942). The present record constitutes the first for Brazil. Conus selenae Van Mol, Tursch &amp; Kempf, 1967 We had the opportunity of examining important series of live-collected specimens of the two forms that in an earlier publication (Van Mol, Tursch &amp; Kempf, 1967) we had described as two new species Conus selenae and Conus yemanjae, of which we at that time had only a few specimens at our disposal. It has become obvious that intermediate forms do exist between what should now be considered as two variation extremes of a single species, for which we will keep the name Conus selenae. The radulae of different forms of this variable species have been examined, which has led to the conclusion that the radula (fig. 2) in all its characters is exactly identical in all the forms of this species. Therefore the name Conus yemanjae</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318124</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1971</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 161 - 166</dcterms:extent>
+   <dcterms:isPartOf>Further notes on Brazilian Conidae (URN:ISSN:0024-0672) (Volume 45) (Issue 15)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318124.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149410</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318124</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

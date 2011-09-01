@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>In memorium Dr. Agatha Gijzen (1904-1995), eminent museum historian and zoo biologist</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bruggen, van A.C.</dc:creator>
+   <dc:subject>Geschiedenis van de biologie</dc:subject>
+   <dc:subject>History of zoology; history of natural history museums; Rijksmuseum van Natuurlijke Historie; zoo biology; Antwerp Zoo; Planckendael Zoo; Mammalia</dc:subject>
+   <dc:subject>Giraffidae: Okapia</dc:subject>
+   <dc:description>Dr Agatha Gijzen (Rotterdam *9 October 1904, Merksem/Belgium †19 February 1995) was a remarkable zoologist in more than one respect. Although her professional career, spanning more than three and a half decades, was largely spent as a staff zoologist in the service of the famous Antwerp/ Planckendael zoological gardens complex in Belgium (1947-1974), she had already made her name as a zoologist/historian by obtaining her Ph.D. degree in 1938 on an extensive first study of the history of the Rijksmuseum van Natuurlijke Historie in Leiden, the national museum of natural history of The Netherlands. She properly organized the archives of the museum for the very first time and her published doctoral thesis (unfortunately only available in Dutch; summary in English) covers the history from the museum's beginnings in 1820 (and its predecessors) until 1915, when the museum was completely settled in its then new and revolutionary building under the guidance of its fourth director. This means that she reviews the period of the first three directors (Dr C.J. Temminck, 1820-1858; Dr H. Schlegel, 1858-1884; Dr F.A. Jentink, 1884- 1913) completely (Dr E.D. van Oort, acting director 1913-1915, took over the reins in 1915, so that his tenure is hardly touched upon). Apart from the directors, the scientific staff is very fully covered. Another part of the book describes the collectors who contributed material from all over the world, but particularly from the then Dutch East Indies (Indonesia). The book is concluded with an annotated alphabetical index of correspondents in the period 1820-1915. Gijzen's treatise is a basic work on the museum, its policies and history; it is still consulted almost daily by all who have to refer to material obtained before 1915. The second and longest part of Agatha Gijzen's professional career was devoted to the management, care and breeding of exotic animals in zoological gardens. After almost a decade at the Rotterdam Zoological Gardens (1938-1947, with an interruption during World War II), she enjoyed the exciting times of rebuilding the almost totally destroyed Antwerp Zoo (Belgium) after the war and the opening and first development of its outstation Planckendael in Muizen near Mechelen. In the course of supervising the management of the mammals, she became an expert on the okapi [Okapia johnstoni (Sclater)], the at that time still elusive forest giraffid of Zaïre, initiating the international studbook of specimens in captivity and publishing some authoritative papers on the subject. Finally she was appointed part-time professor of animal behaviour at the Free University of Brussels (Vrije Universiteit Brussel, 1970-1975) besides her duties as senior scientist at the Antwerp/Planckendael zoos. The obituary lists her publications, many of which were of a semipopular nature in the context of the educational duties of a non-commercial zoological gardens. The zoo journal destined for a wider public was published in two editions, in Dutch and in French. Agatha Gijzen originally wrote her contributions in Dutch, but (almost) all are also available in French - these articles are marked with an *. The edition in French was the one distributed in exchange by the Antwerp Zoo and referred to in the Zoological Record.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318966</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1996</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 235 - 247</dcterms:extent>
+   <dcterms:isPartOf>In memorium Dr. Agatha Gijzen (1904-1995), eminent museum historian and zoo biologist (URN:ISSN:0024-0672) (Volume 70) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318966.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150252</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318966</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

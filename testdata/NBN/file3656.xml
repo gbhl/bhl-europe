@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Taxonomic identity of Trochilus verticalis Deppe, 1830</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Quaisser C.</dc:creator>
+   <dc:creator>Weller A.-A.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Trochilidae</dc:subject>
+   <dc:subject>Trochilus verticalis</dc:subject>
+   <dc:subject>Agyrtria cyanocephala</dc:subject>
+   <dc:subject>Agyrtria violiceps</dc:subject>
+   <dc:subject>lectotype designation</dc:subject>
+   <dc:description>The type series of Trochilus verticalis Deppe, 1830, deposited in the collections of the Museum für Naturkunde Berlin (ZMB) and the Naturhistorisches Museum Wien (NMW), consists of five specimens of different taxa and one specimen with aberrant characters. However, the original description of verticalis refers to Agyrtria cyanocephala (Lesson, 1829), to which only the two NMW specimens clearly correspond. Therefore NMW 2.670 (male, Perote) is designated as lectotype of Trochilus verticalis Deppe, 1830.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210815</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 147 - 155</dcterms:extent>
+   <dcterms:isPartOf>Taxonomic identity of Trochilus verticalis Deppe, 1830 (URN:ISSN:00240672) (Volume 79-3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210815.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42177</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210815</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 11_3_4 (1966)</dc:title>
+   <dc:creator>Ali  Syed  Irtifaq, Dvorak  Frantisek, Härdtl  Heinrich, Härtel  Otto, Heinrich  Georg, Heslop-Harrison  J., Knox  R. B., Lamprecht  Herbert Anton Karl, Pfeiffer  Hans H., Teppner  Herwig, Thaler  Irmtraud, Widder  Felix Josef, Wolkinger  Franz, Zimmermann  Walter Max</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Syed  Irtifaq Ali: Contribution to the genus Astragalus from West Pakistan, II. The subgenera Carpinus and Cercidothrix.   133-  140. Franz Wolkinger: Stomatische Chromosomenzahlen von Crocus Malyi, Iris Reichenbachii subsp. velebitica und Lilium bosniacum.   141-  144. Walter Max Zimmermann: Phänetische und phylogenetische Verwandtschaft.   145-  163. Frantisek Dvorak: Hesperis podocarpa Boissier emend. Dvorák.   164-  167. Hans H. Pfeiffer: Streifenschätzungen an Trockenrasen des ostalpinen Raumes - ein Beitrag zur Begriffsbildung und Methodik der Pflanzensoziologie.   168-  173. Heinrich Härdtl: Die Wildpflanze Xanthium riparium in pflanzenbaulicher Sicht.   174-  188. Herbert Anton Karl Lamprecht: Die beiden Fagus sylvatica-Exmutanten lacinata und asplenifolia und ihre genetische Grundlage.   189-  198. Frantisek Dvorak: Some Remarks on the Genus Clausia.   199-  206. Georg Heinrich: Die Wirkung von ein- und mehrwertigen Ionen und von basischen Farbstoffen auf die Pflanzenzelle in Anwesenheit von Huminsäure.   207-  217. Herbert Anton Karl Lamprecht: Die erste, bereits von Mendel ausgeführte genanalalytische Untersuchung der Testafarbe von Phaseolus vulgaris.   218-  223. Herwig Teppner: Zur Kenntnis der Gattung Waldensteinia, I.   224-  238. Felix Josef Widder: Die Nomenklatur von Minuartia setacea subsp. bannatica.   239-  244. Irmtraud Thaler: Zellphysiologische Untersuchungen an der Zwiebelschuppe von Hippeastrum.   245-  255. R. B. Knox, J. Heslop-Harrison: Control of Pollen Fertiliy through the Agency of the Light Regime in the Grass Dichanthium aristatum.   256-  267. Felix Josef Widder, Irmtraud Thaler, Otto Härtel: Recensiones.   268-  303</dc:description>
+   <dc:date>1966</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30094.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30094.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30094</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

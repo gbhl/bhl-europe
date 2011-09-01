@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A pygmy Stegodon from the middle Pleistocene of Eastern Java</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>The material to be described below forms part of a collection of fossil vertebrates made by Dr. J. Cosijn North of Djetis and Perning in Eastern Java (Cosijn, 1931, 1932). The Cosijn collection has not yet been fully described, some preliminary identifications were made by the late Prof. Dr. J. H. F. Umbgrove (in Cosijn, 1931, pp. 118-119). The collection is preserved in the Geological Museum at Leiden ; I have previously described the remains of rhinoceros (Hooijer, 1946, pp. 3, 55, 73, and 76) and those of hippopotamus (Hooijer, 1950, pp. 66, 69-72, and 87-108). It is a pleasure again to acknowledge my indebtedness to Prof. Dr. B. G. Escher and to Prof. Dr. I. M. van der Vlerk for permission to study this valuable material. Umbgrove's first conclusion that the vertebrate fauna found by Cosijn is analogous to that of the Trinil bone beds is not shared by Von Koenigswald, who claims the mammalian fauna first discovered by Cosijn, the Djetis fauna, to be older than the Trinil fauna. The latter is Middle Pleistocene, and the Djetis fauna is placed in the Early Pleistocene (Von Koenigswald, 1935, p. 193). I have presented arguments elsewhere (Hooijer, 1952) for regarding the Djetis fauna as similar in age to the Trinil fauna. Both are early postVillafranchian faunas, and both are characterized by the presence of a series of forms (notably Macaca, Hylobates, Pongo, Ursus, Crocuta, and Tapirus) typifying the Southern Chinese Stegodon-Ailuropoda fauna (fully described in Colbert and Hooijer, 1953). The presence of these forms in the Javanese faunas shows that by the time of the formation of the Djetis and the Trinil beds these invading elements from the mainland of Asia had already reached Java (cf. Von Koenigswald, 1940, p. 72; 1950, p. 92). In our opinion the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318409</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1954</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 91 - 102</dcterms:extent>
+   <dcterms:isPartOf>A pygmy Stegodon from the middle Pleistocene of Eastern Java (URN:ISSN:0024-0672) (Volume 33) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318409.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149695</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318409</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Entomologischen Arbeitsgemeinschaft Salzkammergut 2 (2000)</dc:title>
+   <dc:creator>Aumayr  Siegfried, Gawlick  Hans-Jürgen, Hamborg  Dirk, Ortner  Siegfried, Pöll  Norbert, Pühringer  Franz, Ryrholm  Nils</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Norbert Pöll, Siegfried Ortner: Die Makrolepidopterenfauna des westlichen Toten Gebirges unter besonderer Berücksichtigung des Rettenbachtales von Bad Ischl (OÖ.) bis zum Loser/Altaussee (Stmk.) Eine Bestandsaufnahme im geplanten Nationalpark Kalkalpen West (Insecta-Lepidoptera)     1-   21. Hans-Jürgen Gawlick: Zur Geologie zwischen Hallstätter See und Traunsee (Mit 1 Tabelle und 5 Abbildungen)    22-   33. Dirk Hamborg: Der Steinbruch Klausen - ein Refugium thermophiler Pflanzen- und Tierarten- Eine botanisch-zoologische Bestandsaufnahme- Glasflügler - Sesiidae (Projektbericht 1991)    34-   46. Franz Pühringer: 1. Nachtrag zu den Glasflüglernachweisen in Österreich (Lepidoptera, Sesiidae)    47-   64. Franz Pühringer, Nils Ryrholm: Pheromonanflug europäischer Glasflügler (Lepidoptera, Sesiidae)    65-   72. Franz Pühringer: Bibliographia Sesiidarum orbis terrarum (Lepidoptera, Sesiidae)    73-  146. Siegfried Aumayr: Reisebericht über zwei Skandinavienreisen 1994 und 1995   147-  149. Siegfried Ortner: Neu zur Fauna Mitteleuropas hinzugekommene Makrolepidopteren seit dem Standardwerk von FORSTER &amp; WOHLFAHRT Eulen (Noctuidae) (Insecta: Lepidoptera)   150-  154. Norbert Pöll, Siegfried Ortner: In memoriam Fritz Laube (26.5.1942- 10.8.2000) Seite I-II</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26251.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26251.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26251</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

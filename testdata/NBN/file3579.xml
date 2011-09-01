@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nieuwe vindplaatsen van het in Nederland uitgestorven gewaande vlokreeftje Echinogammarus stoerensis (Crustacea: Amphipoda: Gammaridea)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Faasse M.A.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Amphipoda</dc:subject>
+   <dc:subject>Gammaridea</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Herkenning</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:description>The amphipod Echinogammarus stoerensis not extinct in The Netherlands (Crustacea: Amphipoda: Gammaridea) The gammaridean amphipod Echinogammarus stoerensis has never been a common species in the Netherlands, due to the scarcity of suitable habitats. It is typically found under boulders on a gravelly substrate, where a freshwater flow occurs over the littoral zone. As a result of reinforcement of sea dykes, the typical habitat disappeared from The Netherlands. However, E. stoerensis proves to survive in less suited substrates with more silt, and freshwater supply only from rain.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209792</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1999</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 7 - 10</dcterms:extent>
+   <dcterms:isPartOf>Nieuwe vindplaatsen van het in Nederland uitgestorven gewaande vlokreeftje Echinogammarus stoerensis (Crustacea: Amphipoda: Gammaridea) (URN:ISSN:01692453) (Volume 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209792.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41447</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209792</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

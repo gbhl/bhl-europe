@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the genus Strandesia Stuhlmann, 1888 (Crustacea, Ostracoda, Cyprididae) with description of Strandesia kimberleyi n. sp. and a key to the extant species of the genus</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Karanovic I.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:subject>Ostracoda</dc:subject>
+   <dc:subject>Cyprididae</dc:subject>
+   <dc:subject>Strandesia</dc:subject>
+   <dc:subject>key</dc:subject>
+   <dc:description>Strandesia kimberleyi n. sp. is described from subterranean waters of the Kimberley Region (Western Australia). It belongs to the group of relatively elongated Strandesia Stuhlmann, 1888 species, with no projection on the carapace and with a finely serrated posterior margin of the CR and its claws. The new species is characterized by the asymmetrical valves, elongated terminal segment of the maxillular palp, and the presence of a sensory organ antero-proximally on the first segment of the antennula. This is the first time that this organ is reported in the genus Strandesia. Strandesia purpurascens (Brady, 1886) is redescribed, while for S. variegata (Sars, 1901) and S. obliqua (Brady, 1868) some additional notes on the morphology are provided. A key to identification of 67 species of Strandesia is here given. This number includes a new species and two new combinations (S. iheringi (Sars, 1901) comb. nov., and S. mollis (Furtos, 1936) comb. nov.). Strandesia ewaldi is proposed as a nomen novum for S. labiata Roessler, 1990, while 31 species are proposed to be synonyms.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214342</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 77 - 95</dcterms:extent>
+   <dcterms:isPartOf>On the genus Strandesia Stuhlmann, 1888 (Crustacea, Ostracoda, Cyprididae) with description of Strandesia kimberleyi n. sp. and a key to the extant species of the genus (URN:ISSN:13834517) (Volume 74, 1/2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214342.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43079</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214342</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

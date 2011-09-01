@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the subfamily Bransatoglirinae (Gliridae, Rodentia, Mammalia)</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Freudenthal M.</dc:creator>
+   <dc:creator>Martín-Suárez E.</dc:creator>
+   <dc:subject>42.84 ; 38.22</dc:subject>
+   <dc:subject>Gliridae</dc:subject>
+   <dc:subject>Bransatoglirinae</dc:subject>
+   <dc:subject>classification</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:description>Daams &amp; de Bruijn created the subfamily Bransatoglirinae for the genus Bransatoglis Hugueney, and considered Paraglis Baudelot and Oligodyromys Bahlo to be synonyms of Bransatoglis. Twenty two valid species have been classified as Bransatoglis or one of its supposed synonyms, ranging in age from Late Eocene (MP17) to Middle Miocene (MN6) and varying in size from very small to very large. Apparently, Bransatoglis has become a ‘wastebasket’ and it is impossible to formulate a diagnosis that covers all these species. In this paper the genera Paraglis and Oligodyromys are restored, new diagnoses are given and the genus Microdyromys is transferred from the Dryomyinae to the Bransatoglirinae. A new species of Oligodyromys, O. libanicus, is described from the Lower Oligocene of Montalbán 8 (Teruel, Spain).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:314199</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2007</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 241 - 274</dcterms:extent>
+   <dcterms:isPartOf>Revision of the subfamily Bransatoglirinae (Gliridae, Rodentia, Mammalia) (URN:ISSN:0375-7587) (Volume 135)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/314199.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/144480</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/314199</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

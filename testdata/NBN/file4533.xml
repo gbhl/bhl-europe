@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Description of two new species from the genera Palaemonella Dana, 1852 and Vir Holthuis, 1952 (Crustacea: Caridea: Palaemonidae: Pontoniinae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Marin I.N.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Crustacea</dc:subject>
+   <dc:subject>Caridea</dc:subject>
+   <dc:subject>Pontoniinae</dc:subject>
+   <dc:subject>Palaemonella</dc:subject>
+   <dc:subject>Vir</dc:subject>
+   <dc:subject>Vietnam</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:description>Two new species, Palaemonella aliska spec. nov. and Vir longidactylus spec. nov. are described from Nhatrang Bay, Vietnam. Palaemonella aliska spec. nov., collected from the holes burrowed by Alpheus cf. bellulus Miya &amp; Miyake, 1969 and an unidentified goby, clearly diff ering from the remained species of the genus by its highly developed dorsal rostral carina, reaching to the mid-lenght of the carapace, and the presence of three well developed dorsal teeth situated on the carapace posterior to the orbital margin. Vir longidactylus spec. nov., collected on colonies of the caryophyllid coral Physogyra lichtensteini Edwards &amp; Haime, 1851, diff ers from all species of the genus by its highly produced sharp molar process of the mandible and the unusually long and straight fingers of the second pereiopod.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:273954</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2008</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 375 - 390</dcterms:extent>
+   <dcterms:isPartOf>Description of two new species from the genera Palaemonella Dana, 1852 and Vir Holthuis, 1952 (Crustacea: Caridea: Palaemonidae: Pontoniinae) (URN:ISSN:00240672) (Volume 82) (Issue 35)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/273954.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/107602</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/273954</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

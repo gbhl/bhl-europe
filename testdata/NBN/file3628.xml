@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Contributions to the knowledge of Leucosiidae III. Urnalana gen. nov. (Crustacea: Brachyura)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Galil B.S.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Decapoda</dc:subject>
+   <dc:subject>Leucosiidae</dc:subject>
+   <dc:subject>Leucosia</dc:subject>
+   <dc:subject>new genus</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Indo-Pacific</dc:subject>
+   <dc:description>A new genus, Urnalana, is established for Leucosia species with an urn-shaped carapace: L. angulata Rathbun, 1911, L. chevretii Haswell, 1880, L. cumingii Bell, 1855, L. elata A. Milne Edwards, 1874, L. elatoides Bouvier, 1915, L. hilaris Nobili, 1905, L. haematostica Adams &amp; White, 1849, L. insularis Takeda &amp; Kurata, 1976, L. margaritata A. Milne Edwards, 1874, L. pulchella Bell, 1855, L. purarensis Ovaere, 1987, L. thysanotus George &amp; Clark, 1976, L. whitei Bell, 1855, and three new species: U. elatula, U. granulimera, and U. parahaematostica. The species are described or redescribed and illustrated, extended synonymies are given, and a key for their identification is provided.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210729</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 9 - 40</dcterms:extent>
+   <dcterms:isPartOf>Contributions to the knowledge of Leucosiidae III. Urnalana gen. nov. (Crustacea: Brachyura) (URN:ISSN:00240672) (Volume 79-2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210729.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/42075</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210729</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new species of Hydromys (Muridae) from Western New Guinea (Irian Jaya)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Musser G.G.</dc:creator>
+   <dc:creator>Piik E.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>A new species of the murid Hydromys is named and described, based on skins, skulls and denti tions. The sample comes from the Wissel Lakes region in the Indonesian half of New Guinea (Irian Jaya). In many features, the new species is a miniature version of Hydromys chrysogaster and may be more closely related to that large water rat than to H. habbema. Nothing is known about habits or habitat of the new rat, and it has not yet been collected elsewhere in Irian Jaya or in the eastern half of New Guinea (Papua).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318530</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1982</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 153 - 167</dcterms:extent>
+   <dcterms:isPartOf>A new species of Hydromys (Muridae) from Western New Guinea (Irian Jaya) (URN:ISSN:0024-0672) (Volume 56) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318530.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149816</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318530</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

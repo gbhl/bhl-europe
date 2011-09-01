@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 78 (1920)</dc:title>
+   <dc:creator>Anonymus , Hager  Evermod, Kerschner  Theodor, Ortner  Richard, Priesner  Hermann, Straßmayr  Eduard, Wessely  Karl, Zibermayr  Ignaz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Verwaltungsbericht.     3-   10. Richard Ortner: Die prähistorische Kunst in Oberösterreich.    11-   16. Karl Wessely: Die Lumbriciden der Sammlung des oberösterreichischen Landesmuseums.    17-   18. Karl Wessely: Beschreibung von für Oberösterreich neuen Regenwürmern nach den oberösterreichischen Fundstücken.    18. Eduard Straßmayr: Die Linzer Wollenzeug- und Teppichfabrik in der Reiseliteratur.    19-   24. Theodor Kerschner: Die Aufgaben und Ziele des naturwissenschaftlichen Landesmuseums in Linz.    25-   31. Evermod Hager: Zur Geschichte der oberösterreichischen Stifte im Zeitalter der Reformation.    32-   49. Hermann Priesner: Beitrag zur Kenntnis der Thysanopteren Oberösterreichs.    50-   63. Ignaz Zibermayr: Die Flüchtung des Archives der oberösterreichischen Landschaft in den Franzosenkriegen.    64-   86. : Werke aus dem Verlage des Museum Francisco Carolinum.    87. Anonymus: Rechte der Mitglieder.    88</dc:description>
+   <dc:date>1920</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28714.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28714.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28714</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

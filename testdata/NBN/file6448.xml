@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The dates of publication of "Verhandelingen over de natuurlijke Geschiedenis der Nederlandsche overzeesche Bezittingen" edited by C. J. Temminck</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Husson A.M.</dc:creator>
+   <dc:creator>Holthuis  L.B.</dc:creator>
+   <dc:subject>Geschiedenis van de biologie</dc:subject>
+   <dc:description>I. Historical. In the first half of the previous century the Netherlands government took a great interest in stimulating the scientific exploration of the Netherlands East Indies. In 1820 a "Natuurkundige Commissie voor Nederlandsch-Indië" (Natural History Commission for the Netherlands Indies; hereafter indicated as "Indies Commission") was installed and given the task to travel in the Dutch possessions in the East Indies with the object to extend the scientific knowledge of the natural productions of that region. The Indies Commission, which existed from 29 April 1820 to 17 April 1850, consisted of the following scientists (the dates behind the names indicate the time spent in the Indies as member of the Commission, the end of the stay marked with a † if caused by death) : H. Kuhl December 1820 - 14 September 1821 †, J. C. van Hasselt December 1820 - 8 September 1823 †, G. van Raalten December 1820 - 17 April 1829 †, H. Boie 6 June 1826 - 4 September 1827 †, H. C. Macklot 6 June 1826 - 12 May 1832 †, S. Müller 6 June 1826 - February 1836, A. Zippelius April 1827 - 31 December 1828 †, P. Diard January or February 1828 - 1841, P. W. Korthals about May 1831 - February 1836, L. Horner about July 1835 - 7 December 1838 †, E. A. Forsten 14 December 1838 - 3 January 1843 †, F. W. Junghuhn 1837 and 25 May 1845 - 1848, C. A. L. M. Schwaner about August 1842 - 30 March 1851 †, and the following artists and technicians: J. Keultjes December 1820 - 16 September 1821 †, P. van Oort 6 June 1826 - 24 September 1834 †, D. H. R. van Gelder about May 1831 - about 1838, B. N. Overdijk about May 1831 - about 1838, H. von Gaffron January 1840 - ?. The zoological collections made by the Indies Commission were to be stored in the Rijksmuseum van Natuurlijke Historie at Lei-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318953</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 17 - 24</dcterms:extent>
+   <dcterms:isPartOf>The dates of publication of "Verhandelingen over de natuurlijke Geschiedenis der Nederlandsche overzeesche Bezittingen" edited by C. J. Temminck (URN:ISSN:0024-0672) (Volume 34) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318953.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150239</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318953</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

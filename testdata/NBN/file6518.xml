@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Redescription of Coutierea agassizi (Coutière, 1901) (Crustacea Decapoda, Palaemonidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Since Coutière (1901) published the original description of his new species Coralliocaris Agassizi, no new finds of this species have been reported anymore. Recently a second specimen was collected by the University of Miami's R.V. "John Elliott Pillsbury", which makes it possible to give additional details of this peculiar species, which is so aberrant that it was made the type of a separate genus, of which it still is the only species known. Coutière's only specimen was a male and it it therefore most gratifying that the present second specimen is an ovigerous female. Unfortunately the exact locality where this second specimen was collected is not known. I am most grateful to Dr. Gilbert L. Voss, Institute of Marine and Atmospheric Science, University of Miami, Florida, for his kindness to allow me to study this very interesting specimen. Coutierea agassizi (Coutière) Coralliocaris Agassizi Coutière, 1901: 115, fig.; Holthuis, 1955: 75. Coralliocaris Agassizii - Nobili, 1901: 4 (genus Coutièrea proposed). Coutièrea agassizi - Borradaile, 1917: 386; Holthuis, 1951: 179, pl. 56; Holthuis, 1952: 19; Holthuis, 1955: 74, fig. 47b. Coralliocaris agassizi - Kemp, 1922: 267; Holthuis, 1955a: 210; Hemming, 1957: 135. Material. — One ovigerous female was taken during the 1971 cruise of R.V. "John Elliott Pillsbury" in West Indian waters. The label with the specimen indicated the station number 1384, but this certainly is incorrect, as station 1384 was in the Puerto Rico Trench (19°49'N 67°oo'W, depth 7956-7919 m) and it is certain that among the few specimens collected at that station there were no shrimps. A number of other organisms carried the incorrect station number, and it is most likely that the material was collected at</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319023</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 313 - 320</dcterms:extent>
+   <dcterms:isPartOf>Redescription of Coutierea agassizi (Coutière, 1901) (Crustacea Decapoda, Palaemonidae) (URN:ISSN:0024-0672) (Volume 52) (Issue 27)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319023.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150309</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319023</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Beiträge zur Naturkunde Oberösterreichs (BNO) 7 (1999)</dc:title>
+   <dc:creator>Berger  Franz, Essl  Franz, Freudenthaler  Peter, Krisai  Robert, Lichtenberger  Franz, Neuwirth  Gerhard, Ortner  Johann, Palmetshofer  Franz, Priemetzhofer  Franz u.  Angela, Reschenhofer  Johann, Roth  Andrea, Schlüsslmayr  Gerhard, Schwarz  Martin, Speta  Franz, Stöhr  Oliver, Straka  Ulrich, Türk  Roman, Weißmair  Werner, Wimmer  Josef</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Gerhard Schlüsslmayr: Die Moose und Moosgesellschaften der Haselschlucht im Reichraminger Hintergebirge (Nationalpark Kalkalpen)     1-   39. Oliver Stöhr: Hypericum pulchrum L.-wiederentdeckt für Oberösterreich    41-   51. Andrea Roth: Ökolfaunistische Analyse der Spinnenzönosen (Arachnida, Araneae) zweier Enns-Inseln in Oberösterreich    53-   78. Johann Reschenhofer, Robert Krisai: Ackermoose kommen wieder! Spaerocarpos texanus Austin (Sphaerocarpaceae) wieder belegt für Österreich und einige Funde von Anthoceros agrestis Paton (Anthocerotaceae) und Riccia sorocarpa Bischof (Ricciaceae) im westlichen OÖ.(Innviertel)    79-   86. Oliver Stöhr, Roman Türk: Baeomyces placophyllus - neu für Oberösterreich - sowie weitere bemerkenswerte Flechtenfunde aus dem Kobernaußerwald    87-   96. Josef Wimmer: Lepidopterologische Notizen aus Oberösterreich - 3 (Insecta: Lepidoptera)    97-  125. Franz u.  Angela Priemetzhofer: Die Flechtenflora der Stadtmauern von Freistadt (Oberösterreich)   127-  141. Peter Freudenthaler: Epigäische Spinnen und Weberknechte zweier Blockschutt-Habitate im Ranna-Tal, Oberösterreich (Arachnida: Araneae, Opiliones)   143-  152. Franz Lichtenberger, Johann Ortner, Franz Palmetshofer: Lipidoptrologische Notizen aus Oberösterreich - 4. Eucosma fervidana (Zeller 1847) neu für Oberösterreich (Insecta: Lepidoptera, Tortricidae, Olethreutinae).   153-  157. Gerhard Neuwirth: Interessante epilithische und epigaeische Flechtenfunde an Gleiskörpern und begleitenden Bahnanlagen im Inn- und Hausruckviertel (Oberösterreich)   159-  167. Martin Schwarz: Halmwespen (Hymenoptera, Symphyta, Cephidae) Oberösterreichs (Österreichs)   169-  180. Franz Berger: Kompilierte Liste weiterer Flechtenfunde aus dem unteren Rannatal (Mühlviertel, Oberösterreich, Österreich) und Aspekte zur dessen Unterschutzstellung   181-  203. Franz Essl: Floristische Beobachtungen aus dem östlichen Oberösterreich un dem angrendenden Niederösterreich   205-  244. Ulrich Straka: Beobachtungen von Amphibien und Reptilien im Reichraminger Hintergebirge (Oberösterreich) in den Jahren 1992 bis 1997   245-  274. Werner Weißmair: Zur Faunistik und Ökologie der Süßwasserschwämme (Porifera: Sjpongillidae) Oberösterreichs   275-  279. Werner Weißmair: Moostierchen (Tentraculata: Bryozoa) aus Oberösterreich   281-  284. Franz Speta: Landeskulturpreis 1999 an Wilhelm Foissner   285-  313</dc:description>
+   <dc:date>1999</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/135.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/135.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=135</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

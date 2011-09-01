@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Results of the Rumphius Biohistorical Expedition to Ambon (1990) : Part 2. An unusual triphorid (Mollusca: Gastropoda) from the Moluccas, Indonesia</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Marshall B.A.</dc:creator>
+   <dc:subject>42.01 ; 42.73</dc:subject>
+   <dc:subject>Gastropoda</dc:subject>
+   <dc:subject>Triphoridae</dc:subject>
+   <dc:subject>new subgenus</dc:subject>
+   <dc:subject>Ambon</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:description>Costatophora is introduced as a new subgenus of Tetraphora Laseron, 1958 for Triforis seranus P.J. Fischer, 1927, a triphorid with distinctive teleoconch sculpture and radular morphology.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318013</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1994</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 39 - 43</dcterms:extent>
+   <dcterms:isPartOf>Results of the Rumphius Biohistorical Expedition to Ambon (1990) : Part 2. An unusual triphorid (Mollusca: Gastropoda) from the Moluccas, Indonesia (URN:ISSN:0024-0672) (Volume 68) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318013.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149299</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318013</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

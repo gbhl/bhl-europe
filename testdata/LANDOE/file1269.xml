@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 113a (1968)</dc:title>
+   <dc:creator>Commenda  Hans, Eckhart  Lothar, Heinzl  Brigitte, Kloiber  Ämilian, Kneidinger  Josef, Krawarik  Hans, Kunze  Walter, Lipp  Franz C., Mayer  Gertrud, Morton  Friedrich, Müller  Hubert Fr. X., Ricek  Erich Wilhelm, Schmidt  Rudolf Wolfgang, Schober  Friedrich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Ämilian Kloiber, Josef Kneidinger: Die neolithische Siedlung und die neolithischen Gräberfundplätze von Rutzing und Haid, Ortsgemeinde Hörsching, politischer Bezirk Linz-Land, Oberösterreich , I. Teil. Mit Beiträgen von H. H. F. HAMANN und Ch. V. JANIK.     9-   58. Ämilian Kloiber: Die Ausgrabungen auf dem "Hausberg" in Auhof bei Perg, Machland, Oberösterreich, im Jahre 1967.    59-   64. Lothar Eckhart: Kulturgeschichtliche Probleme Oberösterreichs V., Archäologische Untersuchungen in der "Benedictus-Kapelle" der Pfarr-(Stifts-)kirche von Mondsee.    65-   71. Hubert Fr. X. Müller: Die kirchenrechtlichen Verhältnisse des Augustiner-Chorherrenstiftes Waldhausen im Spätmittelalter. Seine Anfänge und sein Pfarrnetz.    73-  108. Rudolf Wolfgang Schmidt: Liutold von Ranshofen.   109-  112. Hans Krawarik: Die territoriale Entwicklung der Herrschaft Spital am Pyhrn 1190-1490.   113-  134. Brigitte Heinzl: Der Monogrammist "H" und seine Beziehung zu Wolf Huber.   135-  140. Friedrich Schober: Das Gastgewerbe in Freistadt.   141-  152. Franz C. Lipp: Eine Badertruhe aus Oberösterreich.   153-  155. Hans Commenda: Volkstum im Landl zur Biedermeierzeit.   157-  172. Walter Kunze: Der Mondseer Einbaum.   173-  202. Gertrud Mayer: Die Sammlung mitteleuropäischer Vogelarten am Oberösterreichischen Landesmuseum in Linz.   203-  228. Erich Wilhelm Ricek: Untersuchungen über die Vegetation auf Baumstümpfen, II. Teil.   229-  256. Friedrich Morton: Botanische Aufnahmen aus dem Salzkammergut.   257-  286. : Besprechungen und Anzeigen.   287-  314</dc:description>
+   <dc:date>1968</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27361.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27361.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27361</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

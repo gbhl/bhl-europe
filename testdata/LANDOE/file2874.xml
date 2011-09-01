@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 34_2 (1994)</dc:title>
+   <dc:creator>Ashraf  M., Bitoni  Maria B., Cheema  Z. A., Cozza  Radiana, De Kok  Luit J., Drescher  Anton, Egger  Richard, Galanti  Gaetano, Geburek  Thomas, Gottsberger  Gerhard, Grill  Dieter, Grulich  Vít, Guttenberger  Helmut, Hodalova  Iva, Innocenti  Anna M., Klein  Erich, Koumpli-Sovantzi  Lemonia, Müller  Maria, Polatschek  Adolf, Rao  Mulpuri V., Sariko-Hatzinikolaou  Maria, Schleie  Dieter, Singh  Kushal, Steinbach  Kathrin, Tausz  Michael, Teppner  Herwig, Tripp-Knowles  Peggy, Türk  Roman, Yannitsaros  Artemios, Zafar  Z. U., Zagulskij  Michail</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herwig Teppner, Erich Klein, Anton Drescher, Michail Zagulskij: Nigritella carpatica (Orchidaceae-Orchideae) ein Reliktendemit der Ostalpen.   169-  187. Herwig Teppner: Recensio.   188. Adolf Polatschek: Nomenklatorischer Beitrag zur Gattung Erysimum (Brassicaceae).   189-  202. Kathrin Steinbach, Gerhard Gottsberger: Phenology and Pollination Biology of Five Ranunculus Species in Giessen, Central Germany.   203-  218. Herwig Teppner: Recensio.   218. M. Ashraf, Z. U. Zafar, Z. A. Cheema: Effect of Low Potassium Regimes on Some Salt- and Drought-Tolerant Lines of Pearl Millet.   219-  227. Herwig Teppner: Recensiones.   227-  228. Richard Egger, Dieter Schleie, Roman Türk: Changes of Physiological and Biochemical Paramters in the Lichen Hypogymnia physoides (L.) NYL. Due to the Action of Air Pollutants - a Field Study.   229-  242. Maria Sariko-Hatzinikolaou, Lemonia Koumpli-Sovantzi, Artemios Yannitsaros: Myriophyllum alterniflorum DC. (Haloragaceae).   243-  246. Vít Grulich, Iva Hodalova: The Senecio doria Group (Asteraceae-Senecioneae).   247-  265. Helmut Guttenberger: Recensio.   265-  266. Thomas Geburek, Peggy Tripp-Knowles: Spatial Stand Structure of Sugar Maple (Acer saccharum Marsh.) in Ontario, Canada.   267-  278. Herwig Teppner: Recensio.   278. Mulpuri V. Rao, Luit J. De Kok: Interactive Effects of High CO2 and SO2 on Growth and Antioxidant Levels in Wheat.   279-  290. Herwig Teppner: Recensio.   290. Michael Tausz, Maria Müller, Dieter Grill: Stress-physiological Investigations and Chromosomal Analysis on Norway spruce (Picea abies (L.) KARST.) - A Field Study.   291-  308. Kushal Singh: Effects of Spermidine, IAA, ACC and Ethylene on Petal Longevity in Carnation (Dianthus Caryophyllus L.).   309-  313. Herwig Teppner: Recensio.   313-  314. Radiana Cozza, Gaetano Galanti, Maria B. Bitoni, Anna M. Innocenti: Effects of Storage at low Temperature on the Germination of the Waterchestnut (Trapa natans).   315-  320. Herwig Teppner: Recensio.   320. Maria Müller, Dieter Grill, Helmut Guttenberger: The Effects of Interactions between Ozone and CO2 on the Chromosomes of Norway Spruce Root Meristems.   321-  335. Herwig Teppner: Recensio.   335-  336</dc:description>
+   <dc:date>1994</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30228.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30228.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30228</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

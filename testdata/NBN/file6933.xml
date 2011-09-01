@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Identification of the species of the Cheilosia variabilis group (Diptera, Syrphidae) from the Balkan Peninsula using wing geometric morphometrics, with the revision of status of C. melanopa redi Vujic, 1996</dc:title>
+   <dc:title>Contributions to Zoology</dc:title>
+   <dc:creator>Francuski Lj.</dc:creator>
+   <dc:creator>Vujic A.</dc:creator>
+   <dc:creator>Kovacevic A.</dc:creator>
+   <dc:creator>Ludoski J.</dc:creator>
+   <dc:creator>Milankov V.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Cheilosia variabilis group</dc:subject>
+   <dc:subject>geometric morphometrics</dc:subject>
+   <dc:subject>intraspecific divergent units</dc:subject>
+   <dc:subject>species delimitation</dc:subject>
+   <dc:subject>wing shape</dc:subject>
+   <dc:subject>wing size</dc:subject>
+   <dc:description>The present study investigates phenotypic differentiation patterns among four species of the Cheilosia variabilis group (Diptera, Syrphidae) using a landmark-based geometric morphometric approach. Herein, wing geometric morphometrics established species boundaries that confirm C. melanopa and C. redi stat. nov. as evolutionarily independent entities or separate species within the previously described C. melanopa species. Seventeen samples of C. lasiopa, C. variabilis, C. melanopa and C. redi from 11 localities on the Balkan Peninsula were analysed. Based on wing shape and size, both species boundaries and intraspecific divergent units were delineated indicating the possible presence of evolutionarily independent units within the analysed taxa. Significant differences in wing size were obtained among the analysed species and canonical variate analysis showed that wing shape was sufficiently different to allow the correct classification of 99.7% and 100% individuals of males and females, respectively. Considerable wing size variation was detected among males and females of conspecific populations of C. melanopa and males of C. variabilis. Contrary to partial discrimination based on the male wing shape among conspecific populations of C. redi and C. variabilis, clear separation of conspecific populations of C. melanopa (for both sexes) and females of C. redi and C. variabilis was observed. The UPGMA cluster analysis based on squared Mahalanobis distances revealed a close similarity between C. melanopa and C. redi, whereas C. lasiopa was the most divergent species. Results presented in this study utilize wing shape and size as new taxonomic characters in delimitating the closely related species and populations of the Cheilosia variabilis group.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:320197</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2009</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 129 - 140</dcterms:extent>
+   <dcterms:isPartOf>Identification of the species of the Cheilosia variabilis group (Diptera, Syrphidae) from the Balkan Peninsula using wing geometric morphometrics, with the revision of status of C. melanopa redi Vujic, 1996 (URN:ISSN:1383-4517) (Volume 78) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/320197.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/151542</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/320197</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

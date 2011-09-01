@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Zoologischen Gesellschaft Braunau 8 (2001)</dc:title>
+   <dc:creator>Bierwirth  Georg, Förstel  Alfons, Reichholf  Josef, Sage  Walter, Segieth  Franz, Seidl  Friedrich, ZGB  ZGB</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Josef Reichholf: Der Inn - ein sommerkalter Fluss: Ökologische und klimatologische Aspekte seiner Wassertemperatur     1-   19. Josef Reichholf: Daten zur Leitfähigkeit des Innwassers im Jahresgang: Staubereich Eggifing-Obernberg von Juni 1983 bis Juli 1985    21-   26. Josef Reichholf: Die Entwicklung des Silberweiden-Auwaldes auf den Anlandungen in den Stauseen am unteren Inn    27-   39. Franz Segieth: Avifaunistischer Jahresbericht vom Unteren Inn 1999    41-   52. Alfons Förstel: Ein Adlerbussard (Buteo rufinus) in Mittelfranken    53-   54. Alfons Förstel: Hohes Alter eines oberpfälzer Uhus (Bubo bubo)    55-   56. Walter Sage: Ein Grünfink Carduelis chloris X Stieglitz Carduelis carduelis Mischling in Ramerding, Gemeinde Kirchdorf/Inn    57-   59. Josef Reichholf: Erdkröten (Bufo bufo), Rutten (Lota lota) und Änderungen in der Leitfähigkeit eines kleinen Baches im niederbayerischen Inntal    61-   74. Josef Reichholf: Früheres Vorkommen des Steinbeißers (Cobitis taenia) im Inselgebiet des Egglfinger Innstausees in Niederbayern    75-   77. Josef Reichholf: Taubenschwänzchen Macroglossum stellatarum wärmt sich auf Sand    79-   80. Walter Sage: Erstes Auftreten des asiatischen Bockkäfer Anoplophora glabripennis (MOTSCHULSKY) in Mitteleuropa    81-   88. Josef Reichholf: Stylopisierte Feldwespen: Früher häufig, jetzt selten?    89-   93. Friedrich Seidl: Zur Kenntnis der Süßwassermolluskenfauna der ostägäischen Insel Ikaria    95-  102. Josef Reichholf: Die Langlebigkeit und Widerstandsfähigkeit der tropischen Süßwasserschnecke Neritina gagates: Versuch einer Erklärung   103-  108. Georg Bierwirth: Die Konjugation der Spiralalgen   109-  112. ZGB ZGB: In memoriam Fritz SEIDL Professor und Wissenschaftlicher Konsulent Träger der goldenen Verdienstmedaille der Stadt Braunau (17. August 1936-8. Juli 2001)   113-  119</dc:description>
+   <dc:date>2001</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/25193.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/25193.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=25193</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

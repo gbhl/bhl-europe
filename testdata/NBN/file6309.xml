@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A partial revision of the genus Metabelba grandjean (Oribatei, Acari)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hammen, van der L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION The genus Metabelba was created by Grandjean in 1936 for Belbidae of which the solenidions of tibiae II and III are coupled with protective hairs, but of which the solenidion of tibia IV is free, long, and tactile. The genus belongs to the group of rather small species that are never covered with foreign material, but of which the cerotegument is very thick, especially on the moniliform legs, whilst the adults often bear the larval and nymphal skins. The species have three or four lateral apophyses : one (which is not always present) between leg I and leg II, two between II and III, and one between III and IV. We have been in doubt as to the nomenclature of these apophyses, for although they have generally been regarded as tectopedia, they do not protect the trochanteres. Grandjean (in litt.) recently proposed to us the following notation. The apophysis between I and II is restricted to some members of the Belbidae, and in the present paper it is simply called anterior apophysis (a.a.). The two apophyses between II and III occur in several families; they protect the sejugal stigma; here they are called anterior and posterior parastigmatic apophyses (a.p.a., a.p.p.). It is obvious that the fourth apophysis is a discidium (dis; cf. Grandjean, 1952, p. 31). There are no spinae adnatae but there is often one pair of protuberances under the anterior border of the notogaster, opposite to a corresponding pair on the propodosoma ; sometimes there is even a second pair of protuberances on the propodosoma, also situated in the posterior part. The type of the genus is Damaeus papillipes Nicolet, a species that was insufficiently described, but of which Grandjean discovered specimens at</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318814</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1953</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 141 - 154</dcterms:extent>
+   <dcterms:isPartOf>A partial revision of the genus Metabelba grandjean (Oribatei, Acari) (URN:ISSN:0024-0672) (Volume 32) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318814.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150100</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318814</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

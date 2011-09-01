@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new genus and species in Velocipedidae (Heteroptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Doesburg Jr., van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Dedicated to Dr. H. C. Blöte on the occasion of his 70th birthday. In the collection of the Rijksmuseum van Natuurlijke Historie at Leiden, the author found a peculiar and most interesting specimen belonging to the Heteropterous family Velocipedidae. It appears to be quite different from the representatives of Scotomedes Stål, 1873, the only genus hitherto known is this family. The specimen is not in a very good state of preservation, but complete enough to serve as the basis for the following description. Bloeteomedes nov. gen. Typus: Β. borneensis nov. spec. Distinguishable from Scotomedes by the following characters: head longer, more cylindrical, underside without a median keel; first antennal segment extending far beyond apex of head, its length more than half of second segment; lateral margin of pronotum produced at lateral callus, posterior margin only slightly concave ; posterior lobe of pronotum with two sublateral tubercles near posterior margin; seventh sternite of female medially only slightly narrowed; visible part of 1st gonocoxa (VIII) short and very broad, its width more than three times its length. Body oblong-oval. Head long and slender, its length almost 2l/2 times the width behind the eyes; eyes hemispherical, situated at about 1/3 from base of head; bucculae large, fused medially; gula without a medial, longitudinal keel; antenniferous tubercle about half-way eye and apex of head; first antennal segment reaching far beyond apex of head; second segment long and slender, with a conspicuous seta beyond middle; rostrum long and slender, reaching lhe hind coxae, second segment incrassate proximally.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319010</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1970</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 247 - 250</dcterms:extent>
+   <dcterms:isPartOf>A new genus and species in Velocipedidae (Heteroptera) (URN:ISSN:0024-0672) (Volume 44) (Issue 17)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319010.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150296</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319010</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

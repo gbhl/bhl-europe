@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mittheilungen der Gesellschaft für Salzburger Landeskunde 133 (1993)</dc:title>
+   <dc:creator>Anonymus , Bauer  Günther Georg, Brandtner  Gerhard, Conrad  Kurt, Daum-Tholl  Susan E. von, Florey  Gerhard, Geiser  Elisabeth, Helm  Gerlinde, Ilka  Peter, Koller  Fritz, Lutze  Klaus, Mayr  Peter G., Ramharter  Johannes, Rücker  Thomas, Strobl  Walter, Zaisberger  Friederike</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Susan E. von Daum-Tholl: Das Wiener Cutbercht-Evangeliar. Innere Gründe für eine frühe Datierung.     7-   25. Klaus Lutze: Das Taufbecken im Dom zu Salzburg.    27-   52. Fritz Koller: Das Marktlibell von St. Johann im Pongau. Ein salzburgisches Marktrecht aus der Epoche Kaiser Friedrichs III.    53-   69. Johannes Ramharter: Zwischen Manierismus und Barock. Jakob Gerold und die Salzburger Skulptur um die Mitte des 17. Jahrhunderts.    71-  176. Gerlinde Helm: Über die Selbständigkeit der Kopie. Eine Untersuchung zur stilistischen Eigenständigkeit Joseph Anton Pfaffingers (1684-1758) gegenüber seinem barocken "Vorbild" Michael Bernhard Mandl (ca. 1660-1711) anhand ausgewählter Werkbeispiele.   177-  224. Gerhard Brandtner: Ostpreußen in der ersten Hälfte des 18. Jahrhunderts und die Ansiedlung der Salzburger Emigranten.   225-  260. Gerhard Florey: "Der Wahre Römisch Catholische Salzburger". Eine Kontrovers-Postille im Auftrag Firmians.   261-  274. Günther Georg Bauer: Die Salzburger Spielkartenmaler des 18. und frühen 19. Jahrhunderts.   275-  322. Peter G. Mayr: Die Gemeindevermittlungsämter im Land Salzburg.   323-  365. Peter Ilka: Die Getreideernte im Saalfeldener Becken vor dem Einzug der modernen Landtechnik.   367-  412. Walter Strobl: Bemerkenswerte Funde von Gefäßpflanzen im Bundesland Salzburg.   413-  422. Thomas Rücker: Über einen "Höhlen-Pilz" aus dem Scheukofen bei Salzburg.   423-  431. Elisabeth Geiser: Tiergeographisch bemerkenswerte Käfer des Lungaus.   433-  443. Friederike Zaisberger: Tätigkeitsbericht des Salzburger Landesarchivs 1992.   445-  452. : Zum Salzburger Schrifttum.   453-  482. Anonymus: Gesellschaftsnachrichten. I. Mitgliederbewegung.   483-  484. : Gesellschaftsnachrichten. II. Totentafel.   484-  488. Anonymus: Gesellschaftsnachrichten. III. Vorträge.   488-  489. Anonymus: Gesellschaftsnachrichten. IV. Exkursionen und Führungen.   489-  490. Kurt Conrad: Gesellschaftsnachrichten. V. Aktuelle Anliegen.   490-  494. Anonymus: Gesellschaftsnachrichten. VI. Vereinsleitung.   495</dc:description>
+   <dc:date>1993</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29148.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29148.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29148</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

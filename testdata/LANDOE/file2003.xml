@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Abteilung für Zoologie am Landesmuseum Joanneum Graz 3_1974 (1974)</dc:title>
+   <dc:creator>Fain  Alexander, Gepp  Johannes, Habeler  Heinz, Hable  Erich, Moritsch  Ch., Präsent  Ilse, Präsent  Siegfried, Rehacek  J., Samwald  Franz, Sebek  Z., Sixl  Wolf, Sixl-Voigt  B., Stani  Willibald, Weissert  Bruno</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Alexander Fain, Wolf Sixl, Ch. Moritsch: The nasal mites of the family Rhinonyssidae with description of a new species (Acarina)     1-    9. Johannes Gepp: Die Netzflügler (Megaloptera, Raphidiodea, Planipennia) des Kaiserwaldes südwestlich von Graz (mit einer zoogeographischen Analyse)    11-   28. Heinz Habeler: Ein neuer Tagfalter für die Steiermark: Coenonympha gardetta Prun, (Ins., Lepidoptera, Satyridae)    29-   32. J. Rehacek, Wolf Sixl, Z. Sebek: Trypanosomen in der Haemolymphevon Zecken    33. Wolf Sixl, B. Sixl-Voigt: Ein Beitrag zur Klärung des Feinaufbaues der Innenstrukturen bei Stigmen von Zecken (Haemaphysalis inermis)    35-   39. Erich Hable: Bemerkenswerte ornithologische Beobachtungen im Gebiete der Forschungsstätte "P. Blasius Hanf" am Furtnerteich im Jahre 1973 (Aves)    41-   48. Ilse Präsent: Interessantes aus einer Sammlung ornithologischer Beobachtungsdaten der Jahre 1806-1960 (Aves)    49-   65. Siegfried Präsent: Ornithologische Beobachtungen im Gebiete des Hörfeldes und seiner Umgebung aus dem Jahre 1973 (Aves)    67-   70. Franz Samwald: Ornithologische Beobachtungen an den Güssinger Teichen in den Jahren 1968-1973 (Aves)    71-   94. Willibald Stani: Ornithologische Beobachtungen im Bezirk Leibnitz im Jahre 1973 (Aves)    95-  103. Bruno Weissert: Bemerkungen über seltene Brutvögel in der Steiermark (Aves)   105-  106. Bruno Weissert: Der Bestand des Weißstorches (Ciconia ciconia L.) in der Steiermark im Jahre 1973 (Aves)   107-  109</dc:description>
+   <dc:date>1974</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28244.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28244.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28244</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

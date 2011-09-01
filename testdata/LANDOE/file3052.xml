@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 51 (1911)</dc:title>
+   <dc:creator>Anonymus , Böck  Friedrich, Brückner  Eduard, Freund  Leopold, Kammerer  Paul, Lecher  Ernst, Leon  Alfons, Mache  Heinrich, Marburg  Otto, Molisch  Hans, Panzer  Theodor, Pintner  Theodor, Reithoffer  Max, Skrabal  Anton, Trabert  Wilhelm, Tschermak-Seysenegg  Erich von, Wallaschek  Richard</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Wilhelm Trabert: Einige neue Ergebnisse der wissenschaftlichen Ballon- und Drachenaufstiege.     1-   19. Theodor Pintner: Wie aus Würmern Perlen werden.    21-   47. Erich von Tschermak-Seysenegg: Über die experimentelle Bearbeitung der modernen Vererbungsfragen in Nordamerika.    49-   74. Eduard Brückner: Das Eis der Antarktis.    75-  110. Theodor Panzer: Abbau und Aufbau von Eiweiß im menschlichen Körper.   111-  140. Hans Molisch: Das Erfrieren der Pflanze.   141-  176. Richard Wallaschek: Die physiologischen Grundlagen des musikalischen Hörens.   177-  200. Otto Marburg: Die Alltagsschädigungen des menschlichen Nervensystems und ihre Folgen.   201-  222. Anton Skrabal: Chemische und strahlende Energie.   223-  256. Heinrich Mache: Die Grubenlampe.   257-  281. Paul Kammerer: Hauptaufgaben der experimentellen Biologie in bezug auf Anpassungs- und Vererbungslehre.   283-  334. Ernst Lecher: Einiges über das Elektron.   335-  355. Alfons Leon: Das Materialprüfungswesen.   357-  387. Friedrich Böck: Über das Silicium und seine wichtigsten Verbindungen.   389-  435. Max Reithoffer: Ein elektrisches Zentraluhrensystem für Wien.   437-  456. Leopold Freund: Fortschritte auf dem Gebiete der Röntgenstrahlen.   457-  475. Anonymus: Jahres-Bericht. (Seiten V-XLIV.)</dc:description>
+   <dc:date>1911</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30522.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30522.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30522</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

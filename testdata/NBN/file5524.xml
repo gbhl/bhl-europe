@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Parnassiana nova : X. Zwei neue nordamerikanische Parnassius Subspecies</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eisner C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Parnassius clodius hel subsp. nova Schon die erste Sendung einer grösseren Anzahl von P. clodius Ménétr., die ich von D. Frechin empfing, enthielt Exemplare, die in den Mts. Cascade, Washington, gefangen waren und ein von dem übrigen clodius-Material, das vom Gorst Creek, Bremerton, Bear Creek, Tahuyah Creek, Mission Creek, alle Washington-State, stammte, verschiedenes Aussehen zeigte. Eine zweite grössere Ausbeute aus den Mts. Cascade bestätigte meine Vermutung, dass es sich bei den Tieren vom Stevens Pass 4500' und Berne 3500' um eine distincte Höhenrasse handelt, die sich zu subsp. claudianus Stich. wie subsp. baldur W. H. Edw. zu der Stammform verhält. Allerdings zeigt die neue Unterart eine subsp. baldur W. H. Edw. entgegengesetzte Entwicklungstendenz, subsp. baldur W. H. Edw. zur Reduktion der Zeichnungselemente, subsp. hel (m.) zu deren Verstärkung und zur Verdunkelung, weshalb ich die Rasse nach der Göttin der Unterwelt in der nordischen Mythologie „Hel" benannt habe. Mit subsp. baldur W. H. Edw. hat meine hel die auffallend starke Verkleinerung der Ozellen gemeinsam, von denen das Medianauge bei 14 von mir insgesamt vorliegenden 102 ♂ schwarz ausgefüllt ist. Eine Erscheinung, die ich bei P. clodius Ménétr. erstmalig festgestellt habe, ist die f. grundi n.c. = zusätzlicher schwarzer Fleck zwischen den beiden Zellflecken, der 4 ♂ und 3 ♀ angehören (1 ♂ Holotypus, 1 ♀ Allotypus, 3 ♂ 2 ♀ Paratypen in c. m.). Von subsp. claudianus Stich. unterscheidet sich die neue Unterart vor allem auch in der Grösse, ♂ 31-35 mm, ♀ 30-34 mm gegenüber der Vergleichsrasse ♂ 34-39 mm, ♀ 32-39 mm, wobei noch darauf hingewiesen werden muss, dass die Mehrzahl von subsp. hel sich der unteren, die von subsp. claudianus Stich. der oberen</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318029</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 243 - 245</dcterms:extent>
+   <dcterms:isPartOf>Parnassiana nova : X. Zwei neue nordamerikanische Parnassius Subspecies (URN:ISSN:0024-0672) (Volume 34) (Issue 18)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318029.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149315</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318029</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phocanella minor van Beneden, een kleine fossiele zeehond : nieuw voor de zwarte bottenfauna van de Schelde</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>In 1876 beschreef Van Beneden (1876: 799) resten van een kleine zeehond uit het Scaldisien van het Bekken van Antwerpen als Phocanella minor. Newton (1891: 19/20) meldde een humerus fragment van deze soort afkomstig uit het Nodule Bed van de Red Crag bij Foxhall, 4 mijl Z.W. van Woodbridge in Suffolk. Een fragment van een femur werd door Van Deinse (1927: 1363) gerapporteerd van de Groeve van Wiegerink ten noorden van Zwolle; dit zou tot nu toe de enige fossiele vondst van Phocanella minor uit ons land zijn. Het zwarte botje waarvan hier nu melding wordt gemaakt ontving ik van Dr. P. H. de Buisonjé en is afkomstig van een schelpenzuiger in de Westerschelde. Het is een groot deel van het heiligbeen (sacrum), en de overeenkomst met het sacrum van Phocanella minor zoals dat door Van Beneden (1877, pl. 14 figs. 18-19) is afgebeeld is zo compleet als men zich slechts kan wensen. Het botje is afgerold en dus waarschijnlijk getransporteerd (zie pi. 1). De dorsale bogen van de sacrale wervels zijn verloren gegaan, en zo ook de linkervleugel van de eerste sacrale wervel. Aan beide zijden is het eerste sacrale foramen aan de ventrale kant bewaard gebleven. Enkele maten, voor zover die te nemen zijn (die van het vrijwel onbeschadigde, door Van Beneden afgebeelde sacrum tussen haakjes): lengte van de eerste en tweede sacrale wervel tezamen, 29 mm (31 mm); breedte over de vleugels van de eerste sacrale wervel, iets meer dan 40 mm (47 mm) ; idem over de wanden van de eerste ventrale sacrale foramina, 26 mm (30 mm) ; dorsoventrale doorsnede van het eerste sacrale wervellichaam, 15 mm (17 mm), en die van de vleugel, 24 mm (ca. 28 mm). Achter het tweede ventrale sacrale foramen is het laterale gedeelte afgebroken en is nog slechts een</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317233</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1975</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 77 - 78</dcterms:extent>
+   <dcterms:isPartOf>Phocanella minor van Beneden, een kleine fossiele zeehond : nieuw voor de zwarte bottenfauna van de Schelde (URN:ISSN:0459-1801) (Volume 17) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317233.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148519</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317233</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 115a (1970)</dc:title>
+   <dc:creator>Benes  Antonin, Eckhart  Lothar, Forstinger  Heinz, Grims  Franz, Heinzl  Brigitte, Kloiber  Ämilian, Kneidinger  Josef, Krawarik  Hans, Lenzenweger  Rupert, Pertlwieser  Manfred, Pitschmann  Benedikt, Rabl  Rudolf, Rebel  Hermann, Ricek  Erich Wilhelm, Stephani  Klaus, Tovornik  Vlasta, Ubl  Hanns, Werneck  Wernfried Ludwig</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Manfred Pertlwieser, Vlasta Tovornik: Ein urgeschichtlicher Siedlungsplatz auf dem Wachtberg bei Ebelsberg, Bezirk Linz-Land. Ein weiterer Nachweis der Linearbandkeramik in Oberösterreich.     9-   20. Ämilian Kloiber, Josef Kneidinger: Die neolithische Siedlung und die neolithischen Gräberfundplätze von Rutzing und Haid, Ortsgemeinde Hörsching, Polit. Bez. Linz-Land, Oberösterreich (III. Teil). Mit Beiträgen von Sandor ?ÖKÖNYI, Hans Georg KLOIBER und Manfred PERTLWIESER.    21-   36. Manfred Pertlwieser: Die hallstattzeitliche Höhensiedlung auf den Waschenberg bei Bad Wimsbach/Neydharting, Polit. Bez. Wels, Oberösterreich. II.Teil: Die Objekte.    37-   70. Antonin Benes: Austriaca in den südböhmischen Museen.    71-   90. Hanns Ubl: Flabellifer. Eine neue Dienerfigur auf einem Lauriacenser Grabrelief des 3. Jh. n. Chr.    91-  114. Lothar Eckhart: Zur gotischen und romanischen Stiftskirche von Mondsee.   115-  128. Hans Krawarik: 850 Jahre Windischgarsten.   129-  154. Hermann Rebel: Probleme der oberösterreichischen Sozialgeschichte zur Zeit der bayerischen Pfandherrschaft, 1620-1628.   155-  165. Rudolf Rabl: Anfänge, Ausbreitung und Werdegang der Ärztefamilie Rabl in Oberösterreich.   167-  198. Benedikt Pitschmann: P. Matthias Höfer von Kremsmünster und sein etymologisches Wörterbuch (1815), II. Teil.   199-  210. Klaus Stephani: Oberösterreicher in der Maramuresch.   211-  220. Brigitte Heinzl: Die Graphiksammlung Alfred Kubins im oberösterreichischen Landesmuseum.   221-  237. Wernfried Ludwig Werneck: Versuch einer Übersichtsdarstellung ur- und frühgeschichtlicher Kulturpflanzenfunde im Ostalpenraum (Beitrag zur Ausbreitungsgeschichte der wichtigsten Kulturpflanzen).   239-  250. Rupert Lenzenweger: Beiträge zur Desmidiaceenflora des Ibmermoores (4. Fortsetzung).   251-  266. Erich Wilhelm Ricek: Kryptogamenvereine an Lehmböschungen.   267-  298. Heinz Forstinger: Einige bemerkenswerte Porlinge aus dem Innviertel.   299-  304. Franz Grims: Die Flora des Sauwaldes und der umgrenzenden Täler von Pram, Inn und Donau.   305-  338. : Besprechungen und Anzeigen.   339-  366</dc:description>
+   <dc:date>1970</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27363.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27363.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27363</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

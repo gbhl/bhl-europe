@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Additional Miocene to Pleistocene rhinoceroses of Africa</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>The purpose of the present paper is to place on record data on fossil Rhinocerotidae from Africa not included in earlier papers. Material has turned up in Africa in great quantities over the last decade, much from beautifully calibrated sequences especially in Ethiopia and the Baringo area of Kenya. Dreary descriptions of fossil teeth and bones are simply a prerequisite to construct, as is my aim, a sort of phylogeny of the rhinoceroses of Africa comparable to those long established for Europe or America. We have at this moment seven genera and a dozen or so species of Rhinocerotidae from the Neogene and the Quaternary, which will be dealt with below. My research in East and South Africa has been supported by grants-in-aid from the Wenner-Gren Foundation for Anthropological Research, Inc., in New York City. Brachypotherium heinzelini Hooijer This species, first recorded from Sinda, Congo (Hooijer, 1963), and afterwards from Rusinga, Karungu, and Napak II (Hooijer, 1966), is characteristic of the Early Miocene of East Africa. Recently, the lower jaw fragment from the Miocene of Langental in Southwest Africa described but unnamed by Stromer (1926: 112) was identified as Brachypotherium heinzelini by Heissig (1971); the first southern African record of the species. I agree with this identification, but it is not correct to state that flattened external grooves such as seen in the Langental P4-M2 appear first in Brachypotherium only at the base of the Vindobonian (Heissig, 1971* 127): Brachypotherium stehlini Viret of the Upper Burdigalian and Lower Vindobonian already has them (Hooijer, 1966: 145). The external grooves and cingula are variable in B. heinzelini as well as in B. snowi (Fourtau)</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319141</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1973</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 149 - 178</dcterms:extent>
+   <dcterms:isPartOf>Additional Miocene to Pleistocene rhinoceroses of Africa (URN:ISSN:0024-0672) (Volume 46) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319141.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150427</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319141</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

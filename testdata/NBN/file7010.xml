@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Middle Aragonian (Middle Miocene) Micromammals from La Retama (Intermediate Depression, Tagus Basin) Province of Cuenca, Spain</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Álvarez Sierra M.A.</dc:creator>
+   <dc:creator>García Paredes I.</dc:creator>
+   <dc:creator>Hoek Ostende, van den L.W.</dc:creator>
+   <dc:creator>Meulen, van der A.J.</dc:creator>
+   <dc:creator>Peláez-Campomanes P.</dc:creator>
+   <dc:creator>Sevilla P.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:subject>Rodents</dc:subject>
+   <dc:subject>Insectivores</dc:subject>
+   <dc:subject>Bats</dc:subject>
+   <dc:subject>Systematic</dc:subject>
+   <dc:subject>Biochronology</dc:subject>
+   <dc:subject>Paleoecology</dc:subject>
+   <dc:description>The micromammal fauna from the Middle Miocene (Middle Aragonian) of La Retama, eastern central Spain, is described. It is a relatively poor rodent fauna composed by ten species only, associated to a highly diverse bat fauna, which includes five genera. The insectivores are represented by two species. This fossil assemblage has been correlated to zone Db (MN 5). The palaeoenvironmental reconstruction based on micromammals indicates open and dry conditions for this locality. Se describen los micromamíferos del Mioceno medio (Aragoniense medio) de La Retama, sector centro-oriental español. La fauna de roedores es relativamente pobre y está compuesta únicamente por diez especies. Sin embargo, cabe destacar la elevada diversidad de los quirópteros, representados por cinco géneros. Se describe también dos taxa de insectívoros. Esta asociación fósil ha sido correlacionada con la zona Db (MN5). La reconstrucción paleoambiental de La Retama inferida a partir de la fauna de micromamíferos corresponde a un ambiente abierto y seco. Palabras clave: Roedores, Insectívoros, Murciélagos, Sistemática, Biocronología, Paleoecología.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327712</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 401 - 428</dcterms:extent>
+   <dcterms:isPartOf>The Middle Aragonian (Middle Miocene) Micromammals from La Retama (Intermediate Depression, Tagus Basin) Province of Cuenca, Spain (URN:ISSN:0367-0449) (Volume 62) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327712.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/160788</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327712</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

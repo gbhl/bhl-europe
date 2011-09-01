@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new fruit bat of the genus Myonycteris Matschie, 1899, from eastern Kenya and Tanzania (Mammalia, Megachiroptera)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bergmans W.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>Myonycteris relicta n. sp. is described from the Shimba Hills in southeast Kenya and from the Usambara Mountains in northeast Tanzania. The species is larger than the only other known African mainland species of the genus, Myonycteris torquata (Dobson, 1878), from the Central and West African rain forests and, if compared to M. torquata and the only other species in the genus, M. brachycephala (Bocage, 1889) from São Tomé, has a relatively longer rostrum, a more deflected cranial axis, and further differs in number, shape and position of its teeth. The new species provides new arguments for the relationship between the genera Myonycteris Matschie, 1899, and Lissonycteris Andersen, 1912. It is believed that Myonycteris relicta may be a forest species and as such restricted to isolated East African forests.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319404</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 171 - 181</dcterms:extent>
+   <dcterms:isPartOf>A new fruit bat of the genus Myonycteris Matschie, 1899, from eastern Kenya and Tanzania (Mammalia, Megachiroptera) (URN:ISSN:0024-0672) (Volume 55) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319404.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150690</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319404</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

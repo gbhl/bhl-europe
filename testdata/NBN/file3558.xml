@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Cretaceous Bryozoa from the Campanian and Maastrichtian of the Atlantic and Gulf Coastal Plains, United States</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Taylor P.D.</dc:creator>
+   <dc:creator>McKinney F.K.</dc:creator>
+   <dc:subject>38.22 ; 42.72</dc:subject>
+   <dc:subject>Bryozoa</dc:subject>
+   <dc:subject>Cretaceous</dc:subject>
+   <dc:subject>U.S.A.</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:description>The Late Cretaceous bryozoan fauna of North America has been severely neglected in the past. In this preliminary study based on museum material and a limited amount of fieldwork, we describe a total of 128 Campanian-Maastrichtian bryozoan species from Delaware, New Jersey, North Carolina, South Carolina, Tennessee, Georgia, Alabama, Mississippi, Louisiana and Arkansas. Eighty-two of these species are new, as are five (Basslerinella, Pseudoallantopora, Kristerina, Turnerella and Peedeesella) of the 77 genera. One new family, Peedeesellidae, is proposed. Cheilostomes, with 94 species (73 per cent of the total), outnumber cyclostomes, with 34 species (27 percent), a pattern matching that seen elsewhere in the world in coeval deposits. There appear to be very few species (4) in common with the better known bryozoan faunas of the same age from Europe. Although both local and regional diversities are moderately high, most of the Atlantic and Gulf Coastal Plain bryozoans are encrusters; erect species are uncommon and are never present in suffi cient density to form bryozoan limestones, in contrast to some Maastrichtian deposits from other regions.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209694</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 346</dcterms:extent>
+   <dcterms:isPartOf>Cretaceous Bryozoa from the Campanian and Maastrichtian of the Atlantic and Gulf Coastal Plains, United States (URN:ISSN:03757587) (Volume 132)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209694.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41316</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209694</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

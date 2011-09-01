@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A review of the new genus Anischnogaster in the Papuan region (Hymenoptera, Vespidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>The Stenogastrinae, a group of subsocial wasps currently regarded as a subfamily of the Vespidae (Richards, 1962: 4), have a remarkable distribution. Most of the species are inhabitants of the Oriental region, where their range extends from Southern India eastward to the Philippine Islands, Celebes, Sumba and Flores. No Stenogastrinae have ever been collected in the Moluccas, but the group is well represented in the Papuan area, occurring throughout New Guinea and in the neighbouring islands of Waigeo, Misool and Aru. From 1831 to 1913 nine species have been described from this area, but from examination of the types we have learned that only six of these may be regarded as good species. Various collections made in New Guinea during the last forty years contain representatives of at least as many new species, and as the material of some of these is still very scanty, there is little doubt that further collecting will bring additional species to light. The known Papuan species belong to two distinct groups which are sufficiently different from their Oriental relatives as well as from each other to be treated as genera. One genus is Stenogaster Guérin, 1831, based on the first species of the subfamily to become known, S. fulgipennis Guérin; it was described from material collected at "Dory" (= Manokwari) in N. W. New Guinea by the famous expedition of the "Coquille". I hope to discuss the very difficult taxonomy of this genus in a future paper. The members of the second group, which forms the subject of this study, are placed here in a new genus, Anischnogaster. In general appearance the species of this genus are rather similar to certain species of the Oriental genus Parischnogaster Schulthess, but since particularly the males differ in several</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317906</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 240 - 256</dcterms:extent>
+   <dcterms:isPartOf>A review of the new genus Anischnogaster in the Papuan region (Hymenoptera, Vespidae) (URN:ISSN:0024-0672) (Volume 47) (Issue 19)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317906.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149192</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317906</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

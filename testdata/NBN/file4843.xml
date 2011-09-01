@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The Royal Natural History Collection in Vienna (18th century): from possessing minerals as a private treasure towards territorial ambitions as consciousness</dc:title>
+   <dc:title>Scripta Geologica. Special Issue</dc:title>
+   <dc:creator>Klemun M.</dc:creator>
+   <dc:subject>Geschiedenis van de aardwetenschappen</dc:subject>
+   <dc:description>This paper deals with a famous private natural history collection of the court, transformed to a public collection of the state. Associated is a very important question: how cultural and political structures became a dimension of a collection. In order to establish a Court Natural History Cabinet of its own, separate from other collections ("Physical Cabinet," The Coin and Antique Collection), Emperor Franz Stephan von Lothringen (17081765) decides in the middle of the 18th century to buy the famous 'museo' of Jean de Baillou, who had worked as a director of gardens and mines in Tuscany. The Collection of de Baillou consisted mainly of minerals, which were collected in Italy (some came from famous places all over the world), and fossils, particularly mussels, snails and crustaceans. It was one of the most famous and richest European collections of its type. It represented the Emperor's passion for science, modern 'know-how' and his self-confidence at being a personal centre, not for politics, but for special taste. The Emperor spent a lot of money on the collection. Furthermore, he sent naturalists to collect specimens and thus increase the collection. The Collection was the emperors private treasure and was placed near the Library of the Viennese court. De Baillou became managing director for life and after his death was succeeded by his son. In the first decades no catalogue was made. After twenty years, following the death of Franz Stephan von Lothringen, Maria Theresia wanted to have a survey about the collections of the court. Ignaz von Born, who had already made a name for himself at the Prague mint was appointed to write a first catalogue of the collection. He pointed out the low standard of the natural history collection and the scientific necessity of a rich mineral collection. It was also a time in which the government started to work against particularism in administration. The government also tried to get more evidence of minerals of all countries governed by the Habsburg Monarchy. The mining administration at Vienna ordered the mine inspectors in the periphery to send up documentation of minerals and rocks, which were found there. Thus, the transfer represents a new concept of scientific interest in a political dimension. Treasure no longer had priority.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317347</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 193 - 199</dcterms:extent>
+   <dcterms:isPartOf>[Proceedings of the VII international symposium 'Cultural heritage in geosciences, mining and metallurgy : libraries, archives, museums' : "Museums and their collections" held at the Nationaal Natuurhistorisch Museum Leiden (The Netherlands), 19-23 May, 2003 / Cor F. Winkler Prins and Stephen K. Donovan (editors)]: The Royal Natural History Collection in Vienna (18th century): from possessing minerals as a private treasure towards territorial ambitions as consciousness (URN:ISSN:0922-4564) (Volume 4) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317347.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148633</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317347</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

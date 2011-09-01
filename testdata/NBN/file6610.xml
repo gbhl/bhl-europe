@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Die Madreporaria des Naturhistorischen Reichs-Museums in Leiden : I. Die Genera Porites, Goniopora, Alveopora, Montipora</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:description>Wenn ich mich dazu entschlossen habe, ein Verzeichnis der reichhaltigen Steinkorallen-Sammlung des Rijks Museum van Natuurlijke Historie in Leiden zu veröffentlichen, die zum grössten Teile aus dem malayischen Archipel stammt, geschieht dies hauptsächlich deswegen, weil die Litteratur über recente Korallen aus diesem an ihnen so reichen Gebiete überaus arm ist. Zusammenfassende Uebersichten der recenten Korallenfauna aus dem ostindischen Archipel finden wir allein in einer Arbeit BEDOTS (1) und aus jüngster Zeit in einer schönen Publikation UMBGROVES (20), der um die im Neogen dieses Gebietes zahlreich vertretenen Riffkorallen studieren zu können, die lebenden Korallriffe untersuchte. Viel besser steht es um die Kenntnis des fossilen Korallen. "Wichtig für die Kenntnis der malayischen Korallenfauna sind hier die Arbeiten von FELIX (s. u.) und von GERTH (4a, b, c) über die jungtertiären Korallen von Borneo, Java und Nias, sowie insbesondere seine Uebersicht der aus dem Kaenozoicum des indischen Archipels bekannten Arten. Gelegentliche Angaben über recente Korallen dieses Gebietes finden sich wohl auch bei QUELCH (13), DANA (3), BERNARD (2), STUDER (14), MILNE EDWARDS und HAIME (11), ORTMANN (12), VAUGHAN (17, 18), doch sind dieselben stets nur beiläufiger Art, gegeben gelegentlich der Bearbeitung yon Material anderer Provenienz. Einzelne Familien wie die Eupsammidae, Fungidae, Agariciidae u. a. aus dem Material der SibogaExpedition oder von Dr. TH. MORTENSEN haben Bearbeiter in V. D. HORST, BOSCHMA u. a. gefunden, doch beschränken sich die Angaben in diesen Fällen stets nur auf die behandelte Gruppe. Das Siboga-Material aus den hier besprochenen Genera ist noch unbearbeitet. — Über die westindische</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319115</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1930</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 22 - 52</dcterms:extent>
+   <dcterms:isPartOf>Die Madreporaria des Naturhistorischen Reichs-Museums in Leiden : I. Die Genera Porites, Goniopora, Alveopora, Montipora (URN:ISSN:0024-0672) (Volume 13) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319115.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150401</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319115</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

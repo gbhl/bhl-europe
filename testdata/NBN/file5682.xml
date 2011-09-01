@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The sabre-toothed cat Megantereon from the Pleistocene of Java</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Kurtén B.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:description>In April 1961 the present author made a study of the fossil Carnivora from Java in the Dubois Collection, of the Rijksmuseum van Natuurlijke Historie, Leiden. Among a lot of unidentified specimens, one was found to represent a sabre-toothed cat of a type not hitherto known from the Pleistocene of Java. The only sabre-tooth so far known from the Pleistocene of Java is Homotherium zwierzyckii (Koenigswald), which occurs in the Djetis fauna. The new form is certainly not a Homotherium, and may be identified as a member of the genus Megantereon. Thus it can be shown that both of the characteristic Pleistocene Old World forms of machairodont cats were represented in Java. Though the genus Megantereon does not survive in post-Villafranchian times in Europe, as far as our present information goes, it certainly does so in China as well as in Africa. It is known from the middle Pleistocene faunas of Choukoutien as well as from the Transvaal australopithecine caves (Teilhard, 1939; Ewer, 1955). Indeed, the situation at Choukoutien, Locality 1, where the two forms Homotherium ultimum (Teilhard) and Megantereon inexpectatus (Teilhard) are associated, is quite analogous to that in Java. DESCRIPTION OF THE SPECIMEN The specimen, Coll. Dubois No. 1464, is a fragment of an upper canine, apparently of the right side. It bears only the inscription E. 13, but since that alludes merely to the packing-case, it does not establish the exact provenience of the tooth. Dr. D. A. Hooijer drew my attention to the relatively eroded and pitted surface of the find, which is similar to that exhibited by the first Pithecanthropus skull from Trinil. This condition is seen in several,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318187</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1962</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 101 - 104</dcterms:extent>
+   <dcterms:isPartOf>The sabre-toothed cat Megantereon from the Pleistocene of Java (URN:ISSN:0024-0672) (Volume 38) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318187.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149473</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318187</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

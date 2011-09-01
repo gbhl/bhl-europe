@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Species of Agaon Dalman and Allotriozoon grandi from Africa and Malagasy (Hymenoptera Chalcidoidea, Agaonidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Wiebes J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Since the publication of my catalogue of Agaon Dalman (Wiebes, 1968) and the key to its species (Wiebes, 1969), several new samples were collected, both in West and East Africa and in Malagasy. In the present paper five new species are described, and keys are given to the species of the two groups recognized in 1969. For bibliographical data reference is here made to the papers mentioned above. The genus Allotriozoon Grandi, not revised since its original description by Grandi (1916), is treated in more detail than is Agaon. One name is synonymized, and one new species is added to those already known for more than fifty years; the knowledge of their distribution is considerably enlarged. Acknowledgements are due to those who collected the samples and sent them for inclusion in the collection of the Rijksmuseum van Natuurlijke Historie, Leiden (abbreviated RMNH in the text), viz., L. H. M. Blommers (Amsterdam, formerly at ORSTOM, Malagasy), Dr. D. S. Hill (Hong Kong, formerly at Makerere University, Uganda), Dr. J. T. Medler (Ile-Ife, Nigeria), Dr. L. E. Newton (Kumasi, Ghana), Drs. E. S. Ross and R. E. Leech (California Academy of Sciences, San Francisco, to where the material will be returned), and Dr. &amp; Mrs. W. W. J. O. de WildeDuijfjes (Leiden, The Netherlands). Of the samples donated by Dr. Hill, more specimens are preserved in his private collection. Agaon Dalman, 1818 Species-group of Agaon paradoxum Dalman Key to species (females 1) 1. Eyes large and bulging, their longitudinal diameter twice as long as the cheek. Process of the third antennal segment, although reaching beyond the apex of the</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319033</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1974</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 123 - 143</dcterms:extent>
+   <dcterms:isPartOf>Species of Agaon Dalman and Allotriozoon grandi from Africa and Malagasy (Hymenoptera Chalcidoidea, Agaonidae) (URN:ISSN:0024-0672) (Volume 48) (Issue 13)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319033.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150319</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319033</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

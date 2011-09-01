@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Mitteilungen der Abteilung für Zoologie am Landesmuseum Joanneum Graz 43_1989 (1989)</dc:title>
+   <dc:creator>Brunner  Helwig, Freitag  Bernd, Habeler  Heinz, Hable  Erich, Kepka  Otto, Kreissl  Erich, Krott  Peter, Lederer  Emanuel, Nonveiller  Guido, Spitzenberger  Friederike</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erich Kreissl: Vorwort     1-    2. Erich Hable, Friederike Spitzenberger: Die Birkenmaus, Sicista betulina PALLAS, 1779 (Mammalia, Rodentia) in Österreich Mammalia austriaca 16     3-   22. Peter Krott: Ein erster Beleg des Gartenschläfers (EHomys quercinus LINNAEUS, 1766) für die Steiermark (Mammalia, Gliridae)    23-   24. Otto Kepka: Ein Brutversuch des Schwarzstorches (Ciconia nigta L.) im Weichbild der Stadt Graz (Aves)    25-   26. Heinz Habeler: Lepidopterologische Nachrichten aus der Steiermark, 13. Mit Funddaten aus dem nördlichen Adriaraum (Hex., Lepidoptera)    27-   36. Guido Nonveiller: Unter welchen Umständen wurde in Serbien im Jahre 1904 die erste Höhlenbathysciinae vom Grazer Entomologen Ing. Hermann NEUMANN entdeckt?    37-   38. Bernd Freitag: Über neue Fundorte des ostalpinen Endemiten Cylindrus obtusus (DRAPARNAUD, 1805) (Moll., Gastropoda, Helicidae)    43-   52. Helwig Brunner, Emanuel Lederer: Kurzmitteilung: Erstnachweis des Gelbschnabel-Eistauchers (Gavia adamsii) für die Steiermark (Aves)    53-   54. Erich Kreissl, Bernd Freitag: Kurzmitteilung: Weitere Bythiospeum-Nachweise aus dem Grazer Bergland (Moll., Gastropoda, Prosobranchia)    55-   56</dc:description>
+   <dc:date>1989</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28268.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28268.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28268</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

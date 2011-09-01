@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A sirenian skeleton from the Miocene of Eibergen, province of Gelderland, The Netherlands: Metaxytherium cf. medium Desmarest</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>Paleozoölogie</dc:subject>
+   <dc:description>A sirenian skeleton, the major part of which was excavated from Miocene deposits at Eibergen near Winterswijk, belongs to Metaxytherium. The temporal crests on the parietals are well separated. The foramen magnum is pointed above. The mandible has a downturned symphysial body with four shallow alveoli on each side. The wide mandibular canal opens some distance behind the alveolus of M3. There are alveoli for one premolar (P4) and for three molars (M1-M3). Only M2 dext. is preserved; it has four main cusps and some accessory cusplets. The humerus, the shaft portion of which is missing, has a wide and marked bicipital groove. The vertebrae, with the exception of the atlas, are fragmentary. The spinous processes are solid, the centra porous. The ribs, a few of which have been reassembled rather completely from fragments, are solid except for their vertebral ends. The distal, or sternal, ends may show a porous structure internally. In the sternum, the manubrium is separate, whereas corpus and ensiform process are co-ossified. The Eibergen sirenian appears indistinguishable from Metaxytherium medium (Desmarest) from the Helvetian of France.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317531</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 25</dcterms:extent>
+   <dcterms:isPartOf>A sirenian skeleton from the Miocene of Eibergen, province of Gelderland, The Netherlands: Metaxytherium cf. medium Desmarest (URN:ISSN:0375-7587) (Volume 41)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317531.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148817</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317531</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

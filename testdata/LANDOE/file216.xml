@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Zeitschrift des Oesterreichischen Entomologischen-Vereins, Wien. Fortgesetzt: Zeitschrift des Wiener Entomologen-Vereins. 1 (1917)</dc:title>
+   <dc:creator>Baumann  Ludwig, Dziurzynski  Clemens, Freund  Ludwig, Gillmer  M., Hofbauer  Ludwig, Hoffmann  Fritz, Kammel  Josef Ernst, Mayer  Ludwig, Prohaska  Karl, Ronnicke  Paul, Skala  Hugo Otto Victor, Sterneck  Jakob von, Sterzl  Alois, Zelezny  Zdenko, Zweigelt  Fritz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Karl Prohaska: Über das Auftreten von Plutella maculipennis Curt. in Steiermark.    23-   24. Hugo Otto Victor Skala: Betrachtungen zur Verbreitung der Großschmetterlinge in Niederösterreich. Schluss.    24-   25. Josef Ernst Kammel: Neue Abarten von Lignyoptera fumidaria Hb.    25-   26. Fritz Hoffmann: Über die Schmetterlingsfauna der Umgebung Gröbmings und des Stoderzinkens in Obersteiermark.    26-   26. Clemens Dziurzynski: Zygaena angelicae O. var. ratisbonensis Burg.    26-   26. Ludwig Hofbauer: Entomologische Herbsttage in Dalmatien.    26-   27. Jakob von Sterneck: Gelbe Zygaenen aus Böhmen.    29-   30. Paul Ronnicke: Entgegnung auf den Artikel: "Die dritte Generation von Colias myrmidone Esp." von Ludwig Mayer in Graz, in Nr. 5 d. Bl.    30-   31. M. Gillmer: Über Agrotis simulans Hufn.    31-   32. Ludwig Mayer: Die dritte Generation von Colias myrmidone Esp., v. nana Mayer, durch Freilands- und Zimmerzucht nachgewiesen. Berichtigung.    32-   32. Ludwig Freund: Die Literatur über die Insekten Böhmens. Fortsetzung folgt.    32-   34. Fritz Hoffmann: Anfrage über Argynnis selene ab. thalia.    34-   34. Fritz Zweigelt: Zur Frage der honigschwitzenden Gräser. Schluss folgt.    35-   37. Alois Sterzl: Über Orrh. vaccinii L. und einige ihrer Formen.    37-   38. Zdenko Zelezny: Thais polyxena Schiff. Ab. Skalae nov. Ab.    37-   37. Fritz Hoffmann: Kleiner Beitrag zur Lepidopterenfauna Mitteldalmatiens.    38-   39. Ludwig Freund: Die Literatur über die Insekten Böhmens. Fortsetzung folgt.    39-   40. Ludwig Baumann: Einführung in die Hymenopterologie.    41-   44</dc:description>
+   <dc:date>1917</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24089.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24089.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24089</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahrbuch des Oberösterreichischen Musealvereines 81 (1926)</dc:title>
+   <dc:creator>Hager  Evermod, Handmann  Rudolf, Kloiber  Josef, Meixner  Josef, Morton  Friedrich, Newald  Richard, Oberwalder  Oskar, Priesner  Hermann, Straßmayr  Eduard, Trinks  Erich, Zibermayr  Ignaz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erich Trinks: Beiträge zur Geschichte des Benediktinerklosters Lambach.    85-  152. Richard Newald: Beiträge zur Geschichte des Humanismus in Oberösterreich.   153-  223. Evermod Hager: Propst Siegmund Zerer von Schlägl (1522-1533) und sein Grabstein. (Mit zwei Bildertafeln).   225-  240. Eduard Straßmayr: Archivar Johann Adam Trauner. Ein Beitrag zur oberösterreichischen Archivgeschichte des 18. Jahrhunderts. (Mit einer Schrifttafel).   241-  287. Ignaz Zibermayr: Evermod Eduard Hager +.   291-  299. Oskar Oberwalder: Erwin Theuer +.   300-  305. Eduard Straßmayr: Franz Sekker +.   306-  308. Erich Trinks: Josef Lohninger +.   309-  313. Josef Kloiber: Beiträge zur Käferfauna von Oberösterreich. Verzeichnis der Halticinen Oberösterreichs.   341-  360. Josef Meixner: Der erste Höhlenlaufkäfer aus den Nordalpen. (Mit 3 Abbildungen).   361-  363. Hermann Priesner: Über einige Bythinus-Arten (Col.) der Puncticollis-Gruppe. (Mit 3 Abbildungen).   365-  368. Hermann Priesner: Holz- und Bücherläuse (Copeognatha) aus Oberösterreich und Steiermark.   369-  376. Friedrich Morton: Neue Beiträge zur Höhlenflora von Oberösterreich.   377-  380. Rudolf Handmann: Beiträge zur Kenntnis österreichischer Diatomeen und ihrer Verbreitung. (Mit 3 Abbildungen).   513-  340</dc:description>
+   <dc:date>1926</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27084.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27084.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27084</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

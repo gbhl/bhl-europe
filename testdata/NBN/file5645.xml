@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Tardigrada of the Netherlands : a review of records from literature and a revision of the Loman Collection</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Land, van der J.</dc:creator>
+   <dc:subject>Invertebrata: algemeen</dc:subject>
+   <dc:description>INTRODUCTION In the present paper an attempt is made to collect all records on Tardigrada from the Netherlands and to give a review of the Dutch literature on this group; "second-hand" information of little importance, however, has generally been omitted. Further a list is given of the species present in the small collection of J. C. C. Loman, now property of the Zoologisch Museum, Amsterdam. REVIEW OF THE LITERATURE In a handbook by J. van der Hoeven (1846, pp. 236 and 666) the Tardigrada are called Colopoda, whilst the name Tardigrada is still used there for a group of mammals; in R. Leuckart's supplement to Van der Hoeven's book (1856, pp. 143-144) the name Colopoda is altered into Tardigrada. Van der Hoeven mentioned some species but he did not indicate any as having been found in the Netherlands. Schlegel (1858) cited the group as Arctisca and introduced the Dutch name "beerdiertjes"; a figure of "Macrobiotus Hufelandii" was given by him on pl. VI fig. 18. Snellen van Vollenhoven (1859, p. 79) introduced another Dutch name: "mosbeertjes", which is still in use at present. According to him "Macrobiotus ursellus Müll." is found in the Netherlands and occurs in moss growing on roofs; he gave a figure (pl. VI fig. 12) of an exuvium with eggs from which it is clear that his Macrobiotus ursellus actually is a Hypsibius-species, the identity of which, however, is uncertain. Harting (1870, pp. 320, 354-357) mentioned a number of species but apparently his list was compiled from foreign literature and gives no data on Dutch animals. Lubach (1875, pp. 206-207) mentioned the occurrence of the "gewoon mosbeertje" (Macrobiotus ursellus) in the Nether-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318150</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1963</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 195 - 206</dcterms:extent>
+   <dcterms:isPartOf>The Tardigrada of the Netherlands : a review of records from literature and a revision of the Loman Collection (URN:ISSN:0024-0672) (Volume 38) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318150.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149436</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318150</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

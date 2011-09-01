@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Elfter Beitrag zur Kenntnis der Protaetia-Arten (Coleoptera, Cetoniidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Mikšic R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Da ich den Abschluß der als 11. Beitrag zur Kenntnis der Protaetia-Arten geplanten Revision der Protaetien des Festlandes von Südasien aus technischen Gründen verschieben mußte, veröffentliche ich hier die Beschreibungen einer neuen Art und Rasse aus diesem Gebiet, dann einer neuen Rasse von Madagaskar und den benachbarten Inseln einer indischen Art und endlich einige Bemerkungen über Protaetien und zwei verwandte Gattungen. Die Abbildungen zu dieser Arbeit wurden von Frau Fadila Softić-Harović verfertigt. Protaetia wiebesi spec. nov. Unter dem Namen Protaetia alboguttata (Vigors, 1826, Zool. Journ. 2: 238, pl. 9 fig. 3) wurden bisher zwei, besonders durch den Bau der Hinterschenkeln und Parameren sehr gut differenzierte Arten vermengt. Zu P. alboguttata (Vigors) wurde als Synonym P. saundersi (Bainbridge, 1841/43, Trans, ent. Soc. London 3: 219) gezogen. Es tauchte nun zuerst die Frage auf, ob sich beide Namen auf dieselbe und auf welche der beiden Arten beziehen. Der Typus der P. alboguttata (Vigors) ist leider nicht sicher nachzuweisen2). Die Originalbeschreibung paßt ziemlich auf beide Arten, doch verweist die Angabe „nigro-viridis" auf die Art mit einfachen Hinterschen1) 52. Beitrag zur Kenntnis der Scarabaeiden. 2) Laut Arrow (1910, Fauna of British India: 163) befindet sich der Typus der Cetonia alboguttata Vigors im British Museum. Doch wurde ich bei meiner Anfrage auf das Macleay Museum in Sydney verwiesen. Von dort teilte mir Frau Jenny Anderson brieflich mit, daß sich in den Sammlungen kein als Typus bezeichnetes Exemplar der C. alboguttata Vigors befindet.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318114</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1966</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 299 - 305</dcterms:extent>
+   <dcterms:isPartOf>Elfter Beitrag zur Kenntnis der Protaetia-Arten (Coleoptera, Cetoniidae) (URN:ISSN:0024-0672) (Volume 41) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318114.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149400</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318114</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

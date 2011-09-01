@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 85B (1983)</dc:title>
+   <dc:creator>Ahnelt  Harald, Almaca  Carlos, Fischer  Maximilian, Golovatch  Sergei I., Kritscher  Erich, Malicky  Hans, Pace  Roberto, Pretzmann  Gerhard, Reischütz  Peter L., Starmühlner  Ferdinand, Therezien  Yves, Titova  Lidia P., Zaykov  Angel</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Carlos Almaca: Notes on Barbus graellsii Steindachner, 1866.     1-    7. Harald Ahnelt: Erstnachweis von Scorpaena maderensis Val., 1833 (Pisces, Scorpaenidae) für Kreta und Rhodos (Griechenland) mit Angaben zum bisher einzigen Fund dieser Art aus der Adria.     9-   11. Maximilian Fischer: Illustrierte Redeskriptionen von Opiinen aus der UdSSR und neuer Bestimmungsschlüssel zu den paläarktischen Arten des Subgenus Utetes Foerster (Hymenoptera, Braconidae).    13-   37. Angel Zaykov, Maximilian Fischer: Über Opiinae aus Bulgarien    39-   51. Roberto Pace: Risultati dello studio delle specie del genere Leptusa Kraatz della collezione Scheerpeltz al Naturhistorisches Museum di Vienna (Coleoptera, Staphylinidae). (XXII Contributo alla conoscenza delle Aleocharinae).    53-  102. Roberto Pace: Octavius del Goriziano e dellIstria (Coleoptera, Staphylinidae). (XLII Contributo alla conoscenza della fauna endogea).   103-  108. Gerhard Pretzmann: Bericht über einige Sammelreisen im Mittelmeerraum.   109-  112. Gerhard Pretzmann: Ergebnisse einiger Sammelreisen im Mittelmeergebiet.   113-  116. Erich Kritscher: Die Fische des Neusiedlersees und ihre Parasiten. V. Trematoda: Digenea.   117-  131. Peter L. Reischütz: Ein Beitrag zur Molluskenfauna der Insel Thasos (Griechenland).   133-  146. Lidia P. Titova: Two new Tygarrup Chamb. (Chiulopoda, Geophilida, Mecistocephalidae) from Indochina.   147-  156. Sergei I. Golovatch: A Contribution to the Millipede Fauna of Iran (Diplopoda).   157-  169. Ferdinand Starmühlner, Yves Therezien: Résultats de la Mission Hydrobiologique Austro-Francaise de 1979 aux Iles de la Guadeloupe, de la Dominique et de la Martinique (Petites Antilles). Partie I A: Rapport préliminaire: Indroduction, ...   171-  218. Ferdinand Starmühlner, Yves Therezien: Résultats de la Mission Hydrobiologique Austro-Francaise de 1979 aux Iles de la Guadeloupe, de la Dominique et de la Martinique (Petites Antilles). Partie I B: Rapport préliminaire: Indroduction, ....   219-  262. Hans Malicky: Trichoptères des Petites Antilles (Trichoptera). Resultats de la Mission Hydrobiologique Autrichienne-Francaise de 1979 aux Iles de la Guadeloupe, de la Dominique et de la Martinique (Petites Antilles). Partie II.   263-  269. Maximilian Fischer: Dr. med. Stephan Zimmermann +.   271-  274</dc:description>
+   <dc:date>1983</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26627.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26627.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26627</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

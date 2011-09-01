@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Annalen des Naturhistorischen Museums in Wien 91A (1990)</dc:title>
+   <dc:creator>Bachmayer  Friedrich, Breitinger  Emil, Daponte  Alexander, Kamarianou  Anna, Kovar-Eder  Johanna, Krainer  Bernhard, Kritscher  Herbert, Kubiak  Hernyk, Pentzos-Daponte  Athena, Prossinger  Hermann, Ruttkay  Elisabeth, Szilvássy  Johann, Szyndlar  Zbigniew, Teschler-Nicola  Maria, Wilson  Robert, Zerova  Galina A.</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Friedrich Bachmayer, Robert Wilson: Two additions to the Kohfidisch (Burgenland) fauna of Eastern Austria     1-    5. Johanna Kovar-Eder, Bernhard Krainer: Faziesentwicklung und Florenabfolge des Ausschlusses Wörth bei Kirchberg/Raab (Pannon, Steirisches Becken)     7-   38. Hernyk Kubiak: Eine Mammutfundstelle im Bereich der Ortschaft Ruppersthal (Großweikersdorf) bei Kirchberg am Wagram, NÖ    39-   51. Zbigniew Szyndlar, Galina A. Zerova: Neogene Cobras of the Genus Naja (Serpentes: Elapidae) of East Europe    53-   61. Emil Breitinger: Sulcus praeauriculatis und Sulcus praesymphysialis als Fertilitätszeichen    63-   78. Athena Pentzos-Daponte, Herbert Kritscher, Alexander Daponte, Anna Kamarianou: Rötgenologische Untersuchungen der Nasennebenhöhlen bei der nordgriechischen Bevölkerung    79-  102. Elisabeth Ruttkay: Spätneolithische Siedlungsfunde aus dem westlilchen Niederösterreich   103-  124. Johann Szilvássy, Herbert Kritscher: Präparation, Rekonstruktion und Interpretation von sieben menschlichen Skeletten aus einer urnenfelderzeitlichen Speichergrube in Stillfried an der March, NÖ   125-  143. Johann Szilvássy, Herbert Kritscher: Bestimmung des individuellen Lebensalters beim Menschen mit Hilfe der Spongiosastruktur der Langknochen   145-  154. Maria Teschler-Nicola, Hermann Prossinger: Vorschläge zur Objektivierung paläodemographischer Rohdaten am Beispiel der Frühbronzezeitfriedhöfe des unteren Traisentales. - Teil I   155-  171</dc:description>
+   <dc:date>1990</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26655.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26655.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26655</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

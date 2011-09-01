@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Cymothoide Isopoden van de Nederlandse kust en de Zuidelijke Noordzee</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>In het in 1956 uitgegeven deel betreffende de Isopoda in de serie „Fauna van Nederland" (Holthuis, 1956) werden van de familie Cymothoidae twee genera (Aega en Eurydice) voor Nederland genoemd, met drie soorten (Aega rosacea Risso, Aega psora (L.) en Eurydice pulchra Leach). Volgens moderne opvattingen moet de vroegere familie Cymothoidae opgesplitst worden in de families Cymothoidae sensu stricto, Aegidae en Cirolanidae. De Aega soorten behoren vanzelfsprekend tot de familie Aegidae, terwijl het geslacht Eurydice tegenwoordig in de familie Cirolanidae geplaatst wordt. In 1956 waren dus geen Nederlandse vertegenwoordigers bekend van de familie Cymothoidae zoals deze tegenwoordig opgevat wordt. Evenwel zijn sindsdien twee soorten van echte Cymothoidae van onze kust, resp. van de zuidelijke Noordzee bekend geworden, te weten Nerocila maculata en Anilocra frontalis. Hier zullen deze twee soorten nader behandeld worden. De Cymothoidae zijn, evenals de Aegidae, visparasieten, die zich met hun scherpe klauwen in de bek, in de kieuwholte of op de buitenkant van het lichaam van hun gastheer vasthechten. De vertegenwoordigers van deze twee families behoren tot de grootste isopoden die van ons land en zijn omgeving bekend zijn. De Cymothoidae onderscheiden zich van de Aegidae door het feit dat alle looppoten van scherpe haakvormig gekromde klauwen voorzien zijn; bij de Aegidae dragen slechts de eerste drie paren poten dergelijke klauwen, terwijl de overige vier paren een normale, niet haakvormige dactylus bezitten, die dan ook geen functie bij het vasthechten aan de gastheer vervult. Verder bestaan de antennen der Cymothoidae uit 8 of 9 segmenten, die onderling niet sterk van elkaar verschillen, terwijl bij de Aegidae beide antennen eindigen in een duidelijke uit veel leden opgebouwde flagel.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317254</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 28 - 33</dcterms:extent>
+   <dcterms:isPartOf>Cymothoide Isopoden van de Nederlandse kust en de Zuidelijke Noordzee (URN:ISSN:0459-1801) (Volume 23) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317254.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148540</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317254</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

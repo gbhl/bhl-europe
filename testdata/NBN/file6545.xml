@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Einiges über Cernuella (Pulmonata, Helicidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Clerx J.P.M.</dc:creator>
+   <dc:creator>Gittenberger E.</dc:creator>
+   <dc:subject>Mollusca</dc:subject>
+   <dc:description>INHALT A. Cernuella und ihre Untergattungen............27 B. Die französischen Cernuella Arten............29 C. Die systematische Stellung der Cernuella Arten der Cyrenaika.....52 Die vorliegende Arbeit basiert in erster Linie auf den Untersuchungsergebnissen des ersten Autors, welche vom zweiten Autor teilweise ergänzt und zur Veröffentlichung überarbeitet wurden. Wir sind Dr. E. Binder (Genf), Dr. H. Chevallier (Paris), Dr. Ο. E. Paget (Wien) und Dr. E. Wawra (Wien) zu besonderem Dank verpflichtet, weil sie uns Originalmaterial aus den Sammlungen Bourguignat, Locard und Draparnaud zur Bearbeitung anvertraut haben. A. CERNUELLA UND IHRE UNTERGATTUNGEN Die Gattung Cernuella unterscheidet sich von den übrigen Helicellinae durch die Ausbildung zweier Pfeilsäcke an einer Seite der Vagina. Der innere Pfeilsack ist manchmal erheblich kleiner als der äussere, in dem meist ein Pfeil ausgebildet wird. Dieser Pfeil kann eine blattförmig verbreiterte Spitze vorzeigen, jedoch nur wenn er voll ausgewachsen ist. Nur bei den Vertretern der Gattung Kalitinaia sind Pfeile unbekannt oder zumindest noch nicht beschrieben worden. Nach Bonavita (1965: 88) sind die Pfeilsäcke auch bei C. (Xerosecta) explanata leer; nach Germain (1930: 309) und MoquinTandon (1855: 231) ist bei dieser Art jedoch sogar in beiden Pfeilsäcken ein Pfeil vorhanden. A. Schmidt (1853: 176) meldet, dass bei C. (Xeromagna) cespitum auch im inneren Pfeilsack "zuweilen einen viel zarteren Pfeil (zur Reserve?)" gefunden wird, was wir nicht bestätigen konnten. Ein Penisappendix fehlt.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319050</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1977</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 27 - 56</dcterms:extent>
+   <dcterms:isPartOf>Einiges über Cernuella (Pulmonata, Helicidae) (URN:ISSN:0024-0672) (Volume 52) (Issue 4)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319050.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150336</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319050</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

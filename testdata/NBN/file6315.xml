@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Contribution to the knowledge of the Southeast Asian spiders of the families Pacullidae and Tetrablemmidae</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Deeleman-Reinhold C.L.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>INTRODUCTION Among the spiders, obtained during our 1979 collecting trip to Borneo by sieving leaf-litter in various forest types, the armored spiders of the families Pacullidae and Tetrablemmidae were among the most numerous and diversified. The excellent paper by Shear ( 1978) treating these families exhaustively greatly facilitated a classification of these spiders. Six new species are here described from Borneo, four in the Pacullidae and two in the Tetrablemmidae, in each of these families a new genus had to be erected for part of these species. Furthermore, this paper includes a description of a new Tetrablemmid, collected by Dr. L. van der Hammen in West Irian (New Guinea) in 1953/54 and a redescription of Brignoliella bicornis (Simon) from Luzon, Philippines. The new material justifies Shear's division of the six-eyed armored spiders with abdominal rings into Pacullidae and Tetrablemmidae, as all taxa can easily be assigned to either of these two families and no intermediate forms were found. It is noteworthy that each of the species of the larger Pacullidae was found on a single locality only, whereas the Tetrablemmid Ablemma species was collected over a larger area. Thanks are due to Dr. L. van der Hammen of the Leiden Museum of Natural History for making available to me the museum's material from West Irian, and to Dr. P. J. van Helsdingen of this museum for reading the manuscript and making useful comments. PACULLIDAE Simon Of the eight species hitherto known, all from Southeast Asia, only one has been described adequately from both sexes: Paculla kraui Shear. The</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318820</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 65 - 82</dcterms:extent>
+   <dcterms:isPartOf>Contribution to the knowledge of the Southeast Asian spiders of the families Pacullidae and Tetrablemmidae (URN:ISSN:0024-0672) (Volume 56) (Issue 5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318820.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150106</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318820</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

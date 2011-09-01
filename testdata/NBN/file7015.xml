@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Distribution and evolutionary history of the Early Miocene erinaceid Galerix symeonidisi Doukas, 1986</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Hoek Ostende, van den L.W.</dc:creator>
+   <dc:creator>Doukas C.S.</dc:creator>
+   <dc:subject>38.22 ; 42.84</dc:subject>
+   <dc:subject>evolutionary history</dc:subject>
+   <dc:subject>Galerix</dc:subject>
+   <dc:subject>Miocene</dc:subject>
+   <dc:description>The distribution of the Early Miocene galericine Galerix symeonidisi, with records from Greece, Germany, Spain and Austria is discussed. The identification of G. cf. symeonidisi from the Anatolian Çankiri basin is changed into G. cf. uenayae on the basis of additional material. Galerix symeonidisi enters Europe at the MN 3/ MN 4 transition. Differences in the pattern of replacement of the preceding Galerix species in Germany and Spain suggest that ecological factors played a role in that replacement. Galerix symeonidisi is succeeded by G. exilis in Western and Central Europe. A G. symeonidisi - G. exilis lineage, as has been proposed in literature, is rejected. The record from the Daroca-Calamocha area (Spain) is instead interpreted as a case of gradual replacement. The replacement is considered the result of an opening of the landscape when conditions became dryer. In Greece, G. symeondisi is not replaced by G. exilis. In Karidia, a galericine has been found which shows features intermediate between G. symeondisi and the oldest representatives of Schizogalerix, suggesting that symeonidisi might be ancestral to that genus.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:327789</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>in: Reumer, J.W.F. &amp; Wessels, W. (eds.) - Distribution and migration of Tertiary mammals in Eurasia. A volume in honour of Hans de Bruijn DEINSEA 10: 287-303</dcterms:alternative>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 287 - 303</dcterms:extent>
+   <dcterms:isPartOf>Distribution and evolutionary history of the Early Miocene erinaceid Galerix symeonidisi Doukas, 1986 (URN:ISSN:0923-9308) (Volume 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/327789.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/160833</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/327789</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematische catalogus der Indo-Australische Danaiden</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Eecke, van R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>De hier gevolgde rangschikking is, behoudens eene zeer enkele uitzondering, die van den heer H. Fruhstorfer in het groote werk van Seitz over de Indo-Australische Rhopalocera (Bd. IX, pp. 192—284). Hieruit valt niet op te maken, dat ik het met de gevolgde rangschikking geheel eens ben, doch daar, waar het in catalogus brengen der museumcollectie eene eerste vereischte is, meende ik, ter wille van het sneller gereedkomen van het eenmaal begonnen werk, mijne persoonlijke meeningen voorloopig achterwege te moeten laten. Toch viel er bij het op naam brengen van al het Danaiden-materiaal het een en ander op te merken en te beschrijven, zooals te zien is uit de van mijn hand in deel I, 1915, van dit tijdschrift voorkomende publicatie. De Danaiden-collectie van het Museum bevat bij het ter perse gaan van dezen catalogus 4000 exemplaren in 139 soorten, Tellervo zoilus (F.) medegerekend. In het werk van Seitz zijn circa 200 species vermeld. De collectie is dus geenszins onbelangrijk te noemen, ook door de typen en co-typen, die zij bevat. Dat er niet meer soorten vertegenwoordigd zijn, is vooral te wijten aan gebrek aan materiaal der Philippijnen en van Nieuw-Guinea. Ook het materiaal der Kleine Soenda-eilanden roept om aanvulling evenals dat van het vasteland van Indië en Ceylon. Tegenover dit tekort staat een tegoed. Immers het materiaal der Riouw Lingga-, Anambas- en Natoena-eilanden, benevens dat van Simaloer, Nias, Banka, Billiton, Java, Celebes en de Molukken is fraai te noemen. Onder de belangrijke verzamelingen, die in den laatsten tijd aan het Museum zijn afgestaan, mag ik wel die noemen der heeren Piepers en</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318821</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1916</dcterms:issued>
+   <dcterms:issued>20th century CE/1910s</dcterms:issued>
+   <dcterms:extent>page 185 - 264</dcterms:extent>
+   <dcterms:isPartOf>Systematische catalogus der Indo-Australische Danaiden (URN:ISSN:0024-0672) (Volume 2) (Issue 20)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318821.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150107</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318821</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

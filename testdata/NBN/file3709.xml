@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the Barremian-Early Albian biogeography (by ammonites) of Colombia</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Kakabadze M.V.</dc:creator>
+   <dc:creator>Hoedemaeker P.J.</dc:creator>
+   <dc:creator>Bogdanova T.N.</dc:creator>
+   <dc:creator>Sharikadze M.Z.</dc:creator>
+   <dc:subject>38.22 ; 42.73</dc:subject>
+   <dc:subject>palaeobiogeography</dc:subject>
+   <dc:subject>Early Cretaceous</dc:subject>
+   <dc:subject>ammonites</dc:subject>
+   <dc:subject>Colombia</dc:subject>
+   <dc:description>On the basis of new and published palaeontological and stratigraphical data, the qualitative and quantitative variations in the Barremian-early Albian ammonite fauna of Colombia have been documented and analyzed. The position adopted here is that in the early Barremian the Andean Province became replaced by the Caribbean Subprovince in Colombia. The Caribbean Subprovince became separated as an independent unit from the Andean Province on the generic level (Buergliceras, Pedioceras), but especially on the species level. In the middle/upper Aptian many new endemic genera and subgenera appeared; Juandurhamiceras, Neodeshayesites, Laqueoceras, Zambranoites, Riedelites and Pseudoptychoceras. Besides, many endemic middle Aptian species of other, non-endemic genera appeared. Beginning from the middle Aptian the Caribbean area was a separate biogeographic enitity with the rank of Province; the Colombian region is considered to be the core area of the Caribbean Province.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:214461</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2004</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 515 - 558</dcterms:extent>
+   <dcterms:isPartOf>On the Barremian-Early Albian biogeography (by ammonites) of Colombia (URN:ISSN:03757587) (Volume 128)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/214461.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/43195</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/214461</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

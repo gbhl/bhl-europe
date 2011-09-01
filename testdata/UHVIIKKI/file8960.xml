@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Anoncodes rufiventris Scop., en direkt invandrare från Balticum</dc:title>
+   <dc:title>Asellus aquaticus L. v. abyssalis nov. var</dc:title>
+   <dc:title>Berättelse över en sommaren 1926 företagen resa till utöarna i Finska viken samt till Bottniska vikens kuster</dc:title>
+   <dc:title>Ciconia ciconia iakttagen mellan Ekenäs och Lappvik</dc:title>
+   <dc:title>Ein für das Festland Finnlands und zwei für Finnland neue Lebermoose</dc:title>
+   <dc:title>En för landet ny myrform</dc:title>
+   <dc:title>Equisetum scirpoides C. Rich. på Åland</dc:title>
+   <dc:title>Ett  fall av utrotning av paddor och grodor genom igelkottar</dc:title>
+   <dc:title>Fynd av morkulla på Brändö</dc:title>
+   <dc:title>Förteckning öfver af undertecknad under en tidsrymd af c. 25år iakttagna kärlväxter i Teisko socken</dc:title>
+   <dc:title>Huomattavia kasvilöytöjä Pohjois-Suomesta</dc:title>
+   <dc:title>Huomioita siilistä sammakonsyöjänä</dc:title>
+   <dc:title>Larus minutus Pall. häckfågel i Nyland</dc:title>
+   <dc:title>Lisätietoja Rumex confertus'en esiintymisestä Suomessa</dc:title>
+   <dc:title>Mallophger från Tetrao urogallus L</dc:title>
+   <dc:title>Memoranda Societatis pro fauna et flora Fennica</dc:title>
+   <dc:title>Några sällsynta växtfynd</dc:title>
+   <dc:title>Piesma salsolae Beck., ny för Fennoskandia</dc:title>
+   <dc:title>Rubus humulifolius in Jyväskylä gefunden</dc:title>
+   <dc:title>Sedum villosum L., ny för Finlands flora</dc:title>
+   <dc:title>Societas pro Fauna et Flora Fennica 13.5.1926 - 13.5.1927</dc:title>
+   <dc:title>Tunturipöllö ammuttu Suomenlinnan linnoitusalueella</dc:title>
+   <dc:title>Vid Lappajärvi sjö i mellersta Österbotten år 1907 implanterade och ännu fortlevande växter</dc:title>
+   <dc:title>Växtfynd i Ab Kimito - Hitis sommaren 1926</dc:title>
+   <dc:title>Weitere Versuche über Keimung in Meerwasser</dc:title>
+   <dc:title>Wichtigere Pflanzenfunde aus Estland im Sommer 1926</dc:title>
+   <dc:subject>58</dc:subject>
+   <dc:subject>59</dc:subject>
+   <dc:publisher>Societas pro fauna et flora Fennica. (fi Helsinki)</dc:publisher>
+   <dc:contributor>Kogerus, R.</dc:contributor>
+   <dc:contributor>Odenwall, E.</dc:contributor>
+   <dc:contributor>Lemberg, B.</dc:contributor>
+   <dc:contributor>Berger, Elna.</dc:contributor>
+   <dc:contributor>Buch, Hans.</dc:contributor>
+   <dc:contributor>Bäck, Ragnar.</dc:contributor>
+   <dc:contributor>Palmgren, Pontus.</dc:contributor>
+   <dc:contributor>Eklund, Ole.</dc:contributor>
+   <dc:contributor>Hortling, Ivar.</dc:contributor>
+   <dc:contributor>Idman, G. R.</dc:contributor>
+   <dc:contributor>Kotilainen, Mauno J.</dc:contributor>
+   <dc:contributor>Välikangas, Ilmari.</dc:contributor>
+   <dc:contributor>Nyström, Erik W.</dc:contributor>
+   <dc:contributor>Hiden, Ilmari.</dc:contributor>
+   <dc:contributor>Hellen, W.</dc:contributor>
+   <dc:contributor>Societas pro fauna et flora Fennica</dc:contributor>
+   <dc:contributor>Gadolin, A. W.</dc:contributor>
+   <dc:contributor>Krogerus, Rolf.</dc:contributor>
+   <dc:contributor>Mikkola, E.</dc:contributor>
+   <dc:contributor>Montell, J.</dc:contributor>
+   <dc:contributor>Palmgren, Alvar.</dc:contributor>
+   <dc:contributor>Kiertonen, A.</dc:contributor>
+   <dc:contributor>Olsoni, B.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:format>print</dc:format>
+   <dc:identifier>399df113-f64d-4cb9-9fcb-76a2a023241e</dc:identifier>
+   <dc:identifier>0373-6873</dc:identifier>
+   <dc:identifier>0375-7641</dc:identifier>
+   <dc:language>swe</dc:language>
+   <dc:language>ger</dc:language>
+   <dc:language>fin</dc:language>
+   <dc:language>mul</dc:language>
+   <dc:relation>Memoranda Societatis pro fauna et flora Fennica. - -- 0373-6873. - -- 03736873</dc:relation>
+   <dcterms:issued>1927</dcterms:issued>
+   <dcterms:issued>9999</dcterms:issued>
+   <dcterms:extent>25 cm.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_03_1926-1927/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_301519_Memoranda_Societatis/301519_03_1926-1927</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/399DF113F64D4CB99FCB76A2A023241E</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

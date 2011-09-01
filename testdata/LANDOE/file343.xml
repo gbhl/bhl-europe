@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Naturkundliche Mitteilungen aus Oberösterreich 101 (1948)</dc:title>
+   <dc:creator>Anonym , Becker  Helmut, Foltin  Hans, Hoffmann  Emil, Kerschner  Theodor, Klimesch  Josef, Kloiber  Ämilian Josef, Kusdas  Karl, Pfoser  Karl, Weinmeister  Bruno, Wirthumer  Johann</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Bruno Weinmeister: Der Schattensteinbrech Saxifraga umbrosa L., Beitrag zur Flora d. Tiefenbachtales bei Scharnstein     3-    5. Helmut Becker: Waldbodenkundliche und pflanzensoziologische Untersuchungen als Vorarbeiten für eine arealmässige Darstellung der Wald- und Vegetationstypen in Oberösterreich Folge 1     6-    8. Bruno Weinmeister: Beitrag zur Charakteristik der Walddecke Oberösterreich     9-   10. Theodor Kerschner: Verbreitung einzelner Vogelarten in Oberösterreich Folge 1</dc:description>
+   <dc:description>(Vorläufiges Ergebnis einer Rundfrage)    10-   12. Karl Kusdas: Zygaena brizae Esp. in Oberösterreich (Lepidopt., Zygaenidae)    12-   15. Emil Hoffmann: Neue Formen von Makrolepidopt. in Oberösterreich    15-   16. Josef Klimesch: Über einige bemerkenswerte Oberösterreichische Lepidopterenfunde    17-   18. Hans Foltin: Phänologisches aus Oberösterreich (Lep.)    19-   22. Johann Wirthumer: Beobachtungen über das Vorkomen der Flussufer- Bembidien am Traun- Mündungsabschnitt (Col.) Folge 1    22-   23. Ämilian Josef Kloiber: Anomale Fühlerbildung an Arge cyanocrocea Forst. (Hymenopt., Tenthredinidae)    24. Karl Pfoser: Wirte und Fundorte von Zecken in Oberösterreich    25. Anonym: Kleine Mitteilungen    26</dc:description>
+   <dc:date>1948</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24555.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24555.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24555</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

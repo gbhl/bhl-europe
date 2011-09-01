@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Trichoptera Newsletter 17 (1990)</dc:title>
+   <dc:creator>Anonym , Crichton  M. Ian, Ivanov  Vladimir D., Levanidova  Ija, Lixin  Tian, Malicky  Hans, Neboiss  Artur, Szczesny  Bronislaw, Weaver  J.S., Youwen  Li</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Hans Malicky: Dear Trichopterologist...     3. : News     4. M. Ian Crichton: 6th International Symposium on Trichoptera     5. Anonym: Universita' degli studi di Perugia     6. J.S. Weaver: The Trichoptera collection of the Museum of comparative zoology: A request for Information     7. Anonym: Obituary     8. Artur Neboiss: 8th Australian Trichopterist's meeting Melbourne 8-9 November 1989     9-   10. Bronislaw Szczesny: Potamophylax cingulatus Stephens - a polymorphic species?    11-   13. : Classification, community structure and biomonitoring water quality of Jiu-Hua river    14. Li Youwen, Tian Lixin: Four new caddisflies from China    15-   18. Anonym: Graduate research assistantships at the University of New Hampshire    18. Vladimir D. Ivanov: Selected Bibliography from Trichoptera Newsletter N 10-15    19-   35. Ija Levanidova: Some comments on the paper by Z. Spuris: A review of the fauna of caddisflies of the USSR    36-   38. Anonym: List of research workers on Trichoptera    38. Anonym: Trichopterological Literature    39-   51. Anonym: List of research workers on Trichoptera    51. Anonym: Trichopterological Literature (Additions)    52-   54. Anonym: List of research workers on Trichoptera    54</dc:description>
+   <dc:date>1990</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28192.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28192.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28192</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 5_4 (1954)</dc:title>
+   <dc:creator>Brat  Lia, Gicklhorn  Josef, Kenda  Griseldis, Kielhauser  Gustav E., Rechinger  Karl Heinz, Thaler  Irmtraud, Weber  Friedl</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Friedl Weber: Eiweißkristalle in Lilium Henryi.   277-  279. Karl Heinz Rechinger: Die Gattung Thymus in Persien und angrenzenden Gebieten.   280-  303. Irmtraud Thaler: Änderung der Blattform durch ß-Naphthylessigsäure.   304-  308. Gustav E. Kielhauser: Beitrag zur Algenflora von Nord-Tirol.   309-  312. Griseldis Kenda: Stomata-Zahl der Hochblätter von Bougainvillea.   313-  314. Josef Gicklhorn: Die Blaufärbung der scharlachroten Blüten von Salvia splendens nach rascher kurzer Erwärmung.   315-  323. Lia Brat: Recensiones.   324-  336</dc:description>
+   <dc:date>1954</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30078.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30078.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30078</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

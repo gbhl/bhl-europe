@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Revision of the genera Foersteria Szépligeti and Polydegmon Foerster (Hymenoptera: Braconidae), with the description of a new genus</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Achterberg, van C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Braconidae; Helconinae; Brachistini; Brachistina; Chelostes; Foersteria; Polydegmon; keys; Palaearctic; distribution.</dc:subject>
+   <dc:description>Three closely related Palaearctic genera of the subtribe Brachistina, Foersteria Szépligeti, 1896, Polydegmon Foerster, 1862 and Chelostes gen. nov. (type-species: C. robustus spec. nov. from Turkey) are revised and illustrated. The Holarctic genera of the subtribe Brachistina are keyed and two new species are described from Turkey. The genus Aliolus Say, 1836 is synonymized with the genus Eubazus Nees, 1814. Helcon puber Haliday, 1835 is a new senior synonym of Calyptus opacus Reinhard, 1867, Foersteria flavipes Szépligeti, 1896 and F. talitzkii Tobias, 1961, and is included in the genus Foersteria (comb. nov.). Finally Polydegmon marshalli Szépligeti, 1896 is synonymized with P. foveolatus (Herrich-Schäffer, 1838). Foersteria vardzia Enukidze, 1976 is transferred to the genus Chelostes, and F. minuta Papp, 1971 to the genus Eubazus Nees and synonymized with E. nigripes (Ruthe, 1867). Foersteria polonica Fahringer, 1934 is given species rank. A lectotype is designated for Foersteria opaca (Reinhard, 1867) and F. puber (Haliday, 1835).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317706</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1990</dcterms:issued>
+   <dcterms:issued>20th century CE/1990s</dcterms:issued>
+   <dcterms:extent>page 1 - 32</dcterms:extent>
+   <dcterms:isPartOf>Revision of the genera Foersteria Szépligeti and Polydegmon Foerster (Hymenoptera: Braconidae), with the description of a new genus (URN:ISSN:0024-1652) (Volume 257) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317706.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148992</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317706</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

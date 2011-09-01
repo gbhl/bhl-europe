@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Nouveaux onthophagides du Kénya (Coleoptera, Scarabaeidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gambefort Y.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>RÉSUMÉ Quatre nouveaux scarabéides sont décrits du Kénya : Caccobius (Caccophilus) krikkeni, Onthophagus kingstoni, O. smeenki, O. obliquas ssp. shimba. Dans cette note sont décrits un Caccobius et trois Onthophagus provenant des récoltes de J. Krikken et al. dans le sud-est du Kénya. Le travail de terrain se poursuivant encore, une récapitulation de l'ensemble des Onthophagini récoltés ne pourra être donnée que plus tard. Une des missions ayant permis de récolter les insectes qui font l'objet du présent travail a été financée par la Fondation Néerlandaise pour le Développement de la Recherche Tropicale (WOTRO). Caccobius (Caccophilus) krikkeni n. sp. Holotype ♂. En ovale allongé, aplati, mat. Tête et prothorax brun de poix à très faible reflet métallique, sauf l'épistome et les angles antérieurs prothoraciques d'un testacé obscur; élytres d'un testacé obscur; pygidium brun de poix à très faible reflet métallique; dessous brun de poix; pattes testacé obscur; massue antennaire brune. Dessus à pubescence imperceptible sur la tête, sauf l'épistome; blanchâtre, médiocrement longue, couchée, assez éparse sur les côtés du prothorax, devenant imperceptible sur le disque; très fine, assez éparse, régulière sur les élytres et le pygidium; imperceptible dessous. Tête de forme grossièrement pentagonale, les côtés un peu échancrés à la jonction clypéo-génale. Pas trace de carène frontale. Vertex armé d'une petite corne droite, située au niveau de l'arrière des yeux. Ponctuation céphalique presque uniformément très fine, avec de rares points plus gros sur les tempes et les joues, moins rares sur l'épistome.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318776</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1980</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 195 - 200</dcterms:extent>
+   <dcterms:isPartOf>Nouveaux onthophagides du Kénya (Coleoptera, Scarabaeidae) (URN:ISSN:0024-0672) (Volume 55) (Issue 16)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318776.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150062</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318776</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

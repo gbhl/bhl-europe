@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Rhizocephala from New Guinea : IV. Notes on Parasites of various Crabs</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boschma H.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>The parasites dealt with in the present paper were brought together by Dr. L. D. Brongersma, Dr. L. B. Holthuis, and Dr. M. Boeseman during their recent voyage to New Guinea1). One of the specimens had to remain unidentified on account of lack of distinct characters; the other parasites proved to belong to previously described species, often presenting peculiarities leading to additional data of specific variation. Sacculina brevispina Van Kampen &amp; Boschma No. 1323B. Biak Island, reef West of Sorido, 1 specimen on Phymodius ungulatus (H. Milne Edwards), February, 1955. The type specimen of Sacculina brevispina is a parasite of the crab Actaea hirsutissima (Rüppell) from Sanguisiapu in the Sulu Islands (Van Kampen &amp; Boschma, 1925, p. 27). The specimen from Biak Island was infesting another species of host, though both belong to the family Xanthidae. In some respects the specimen from Biak Island differs from the type of Sacculina brevispina, these differences are recorded below; they are, however, not of the kind to regard the two as specifically distinct. The specimen from Biak Island has an irregularly oval shape (fig. 1a, b), at the posterior end a part of the body slightly protrudes next to the stalk. The mantle opening lies in the centre of the anterior region, somewhat turned towards the left side; its surroundings do not protrude over the surface of the body. At the right side there is a distinct median groove in the posterior part, where the parasite was lying against the abdomen of the host (fig. 1b). The dorso-ventral diameter is 7 1/2 mm, the anteroposterior diameter 4 1/2 mm, and the thickness 2 mm. The type specimen of Sacculina brevispina is slightly larger (dimensions</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319144</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1955</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 109 - 124</dcterms:extent>
+   <dcterms:isPartOf>Rhizocephala from New Guinea : IV. Notes on Parasites of various Crabs (URN:ISSN:0024-0672) (Volume 34) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319144.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150430</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319144</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

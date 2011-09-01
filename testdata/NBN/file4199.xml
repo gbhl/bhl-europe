@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 28. Taxonomic comments on some south and south-east Asian members of the family Nectariniidae</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Mann C.F.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Asia</dc:subject>
+   <dc:subject>Nectariniidae</dc:subject>
+   <dc:subject>taxonomy</dc:subject>
+   <dc:description>Certain taxonomic changes made by Cheke &amp; Mann (2001) are here explained and justified. Dicaeum haematostictum Sharpe, 1876, is split from D. australe (Hermann, 1783). D. aeruginosum Bourns &amp; Worcester, 1894 is merged into D. agile (Tickell, 1833). The genus Chalcoparia Cabanis, 1851, is re-established for (Motacilla) singalensis Gmelin, 1788. The taxon Leptocoma sperata marinduquensis (duPont, 1971), is shown to be based on a specimen of Aethopyga siparaja magnifica Sharpe, 1876. Aethopyga vigorsii (Sykes, 1832) is split from A. siparaja (Raffles, 1822). Cheke &amp; Mann (op. cit.) mistakenly omitted two forms, Anthreptes malacensis erixanthus Oberholser, 1932 and Arachnothera longirostra zarhina Oberholser, 1912. Five subspecies are removed from Aethopyga shelleyi Sharpe, 1876 to create the polytypic A. bella, Tweeddale, 1877. The Arachnothera affinis (Horsfield, 1822)/modesta (Eyton, 1839)/everetti (Sharpe, 1893) complex is re-evaluated in the light of the revision by Davison in Smythies (1999).</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220208</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2002</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 179 - 189</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 28. Taxonomic comments on some south and south-east Asian members of the family Nectariniidae (Volume 340)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220208.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46726</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220208</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Berichte des naturwissenschaftlichen-medizinischer Verein Innsbruck 54 (1966)</dc:title>
+   <dc:creator>Anonymus , Ganner  Hans, Klima  Jörg, Mostler  Jörg, Sarnthein  Michael, Schedl  Wolfgang, Scheminzky  Ferdinand, Schramm  Karin, Thaler  Konrad, Tiefenbrunner  Friedrich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Jörg Klima: Über Symmetrien von Funktionen und Strukturen in der Zelle.    11-   20. Jörg Mostler: Conodonten aus der Magnesitlagerstätte Entachen-Alm (Nördliche Grauwackenzone, Salzburg).    21-   31. Michael Sarnthein: Sedimentologische Profilreihen aus den mitteltriadischen Karbonatgesteinen der Kalkalpen nördlich und südlich von Innsbruck.    33-   59. Wolfgang Schedl: Zur Verbreitung und Autökologie von Xyleborus eurygraphus Ratz.(Coleoptera, Scolytidae).    61-   74. Karin Schramm: Untersuchung der vertikalen Komponente der Gletscherbewegung und der Deformation des Eises im Zungengebiet des Hintereisferners.    75-  150. Konrad Thaler: Fragmenta Faunistica Tirolensia (Diplopoda, Arachnida).   151-  157. Friedrich Tiefenbrunner: Probleme bei manometrischen Atmungsmessungen von langsamwüchsigen Basidomyceten.   159-  165. Hans Ganner: Nachruf für Dr. Karl Vorderwinkler, Facharzt für Nerven- und Gemütskrankheiten.   169-  171. Ferdinand Scheminzky: Nachruf für Univ.-Prof. Dr. Jarisch, emeritierter Ordinarius für Pharmakologie an der Universität Innsbruck.   173-  176. Anonymus: IV. Vereinsnachrichten.   181-  184. Anonymus: Mitgliederverzeichnis, Stand vom 5. Juli 1966.   185-  187</dc:description>
+   <dc:date>1966</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/27272.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/27272.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=27272</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

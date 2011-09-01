@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On an extinct species of the genus Varanus (Reptilia, Sauria) from the island of Flores</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Brongersma L.D.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:description>An interesting collection of subfossil animal remains from cave deposits in the island of Flores (Lesser Sunda Islands) was brought together by Dr. Th. L. Verhoeven. The collection includes numerous remains of mammals (Hooijer, 1957; Hooijer, in Verhoeven, 1958, pp. 262-263), as well as some vertebrae of snakes, and fragments of the skull of a Varanus species. The deposits also contain evidence of a mesolithic flake and blade industry (Verhoeven, 1952, 1953; Van Heekeren, 1957, p. 107); their age is holocene (Hooijer, 1957, p. 299: "definitely post-Pleistocene"). The Varanus remains are described in the present paper; they belong to a new species; which I dedicate to Dr. D. A. Hooijer in appreciation of his outstanding contributions to the knowledge of the extinct faunas of S. E. Asia. The subfossil remains have been compared to skulls of various species of Varanus in the collections of the Rijksmuseum van Natuurlijke Historie, Leiden. As the description will show they differ widely from the recent species occurring in the island of Flores (Varanus (V.) salvator (Laur.), V. (V.) komodoensis Ouwens), as well as from all other species known from S. E. Asia. In two characters they resemble Varanus (Polydaedalus) niloticus (L.) and Varanus (subgenus incertum) grayi Blgr. Of the last-named species only one skull of a full-grown individual is known (Zoologische Sammlung des Bayerischen Staates, Munich, nr. 2640/0, Luzon, Philippine Islands, leg. Loher, 1897), and I am greatly indebted to Dr. W. Hellmich, Munich, for the loan of this skull. Prof. R. Mertens kindly interrupted his study of this skull to allow its being sent to Leiden. In his monograph of the Varanidae Mertens (1942a, b, c) published descriptions of the skulls and teeth of the majority of the species and subspecies of the genus Varanus and the nume-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318560</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1958</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 113 - 125</dcterms:extent>
+   <dcterms:isPartOf>On an extinct species of the genus Varanus (Reptilia, Sauria) from the island of Flores (URN:ISSN:0024-0672) (Volume 36) (Issue 7)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318560.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149846</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318560</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

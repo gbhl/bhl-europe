@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie : Part IV. Coreinae, third Part</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Blöte H.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>ACANTHOCEPHALINI Acanthocephala (A.) declivis Say. 1-4. Mexico, Klug. Var. panamensis Dist. 5-6. Chiriqui, Panama. Acanthocephala (A.) latipes Drury. 1-3. Brazil, Calkoen. — 4. Brazil, van Eyndhoven. — 5. Central Brazil, van Vollenhoven. — 6. Brazil. — 7. ?. — 8. Post Groningen, Surinam, W. C. van Heurn. — 9. Brazil. Acanthocephala (A.) mercur Mayr. 1. Espirito Santo. — 2. Pachitea, Peru. (Both: Staudinger 1933). Acanthocephala (A.) scutellata Sign. 1-2. Pachitea, Peru, Staudinger 1932. — 3-4. Puerto Inca, Rio Pachitea, Peru, Staudinger 1933. Acanthocephala (A.) sericeicollis Walk. 1-3. Chiriqui, Panama. — 4. ?. (Altogether: Staudinger 1933). Acanthocephala (Spilopleura) parensis Dall. 1. Santa Cruz, Bolivia, Staudinger 1933. — 2. Marcapata, Peru, Staudinger 1936. — 3. Espirito Santo, Staudinger 1936. Var. tristis nov. var. This variety differs from the typical form by the darker colour of the upper parts, the less distinctly lighter coloured nervatures in the hemielytra, and the absence of any indication of a yellow annulation at the ultimate antennal joint. In the specimens I could examine the sharp-pointed teeth on the upper edge of the femora of the ♀ are more distinctly developed than in the typical form. — 4—7. Callanga, Peru, Staudinger 1935 (Holo- Allo- and Paratypes of the var.), and two ♂ Paratypes from Peru in the collection of the "Deutschen Entomologischen Institut". Acanthocephala (Metapodius) angustipes Westw. 1. Brazil. — 2. Amer-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318835</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1938</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 275 - 308</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Coreidae in the Rijksmuseum van Natuurlijke Historie : Part IV. Coreinae, third Part (URN:ISSN:0024-0672) (Volume 20) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318835.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150121</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318835</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

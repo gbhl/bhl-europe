@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Jahresbericht des Vereines für Vogelkunde und Vogelschutz in Salzburg 16_1890_1891 (1892)</dc:title>
+   <dc:creator>Bahn  Franz, Seidl  Franz, Walter  Julius</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Franz Bahn: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XVI. Vereinsjahr 1890 bis 1891.     1-    7. Julius Walter: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XV. Vereinsjahr 1890 bis 1891. Cassa-Bericht der ersten Section des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg für das Jahr 1891.     8-   10. Julius Walter: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XVI. Vereinsjahr 1890 bis 1891. Vermögens-Nachweisung der zweiten Section des Vereines für Vogelkunde und Vogelschutz, sowie Geflügelzucht in Salzburg für das Jahr 1891.    10. Franz Seidl: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XVI. Vereinsjahr 1890 bis 1891. Verzeichniss der dem Vereine für Vogelkunde und Vogelschutz in Salzburg gehörigen Zeitschriften, Bücher und Broschüren am Schlusse des Vereinsjahres 1891.    11-   15. Franz Bahn: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XVI. Vereinsjahr 1890 bis 1891. Namensverzeichnis der Mitglieder. A. Ehren-Mitglieder.    16. Franz Bahn: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XVI. Vereinsjahr 1890 bis 1891. Namensverzeichnis der Mitglieder. B. Wirkliche P.T. Mitglieder.    17-   28. Franz Bahn: Jahres-Bericht des Vereines für Vogelkunde und Vogelschutz sowie Geflügelzucht in Salzburg. XVI. Vereinsjahr 1890 bis 1891. Verstorbene Mitglieder.    29</dc:description>
+   <dc:date>1892</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30801.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30801.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30801</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

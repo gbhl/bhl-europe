@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A new Aulacocylus (Coleoptera, Passalidae) from the Island of Celebes</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Doesburg, van P.H.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>Aulacocyclus laevipennis nov. spec. Description. Lamellae of antennae rather short and stout. Labrum about twice as broad as long, with long, dark red hairs, strongly and closely punctured, anterior margin concave, angles rounded, sides slightly convergent behind. No groove between clypeus and frons. Central tubercle very robust, somewhat square in section, seen from the side its basal vertical part as broad as the whole hind half of the head, strongly elevated and regularly bent forward, excavated in front, seen from behind the base is a little narrower than the apex, the latter a little excavated. Surface of head and basal sides of central tubercle with coarse, hair-bearing punctures. Supra-orbital ridges straight, parallel, somewhat thickened in front. Mentum with a small, smooth, triangular central part, the rest coarsely punctured with dark red hairs. Mandibles with 3 terminal teeth, anterior lower tooth of the right mandible conical, pointed, that of the left mandible very broad, at the outer side with 3 teeth, at the inner side deeply excavated. The angles of pronotum prominent and rounded. The median groove is deep but incomplete in front. The marginal grooves are narrow, scarcely punctured, the anterior marginal groove moderately broader and deeper behind the head. Scars are smooth, small and oval. Anterior part of scutellum coarsely punctured. Elytrae smooth, glossy, only the grooves near the suture distinct, the other grooves towards the sides become more and more indistinct, the lateral grooves have disappeared and are only recognizable by the vaulting of the ribs and the rows of small, obscure punctures. Epipleurae densely</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318369</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1945</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 39 - 40</dcterms:extent>
+   <dcterms:isPartOf>A new Aulacocylus (Coleoptera, Passalidae) from the Island of Celebes (URN:ISSN:0024-0672) (Volume 25) (Issue 6)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318369.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149655</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318369</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

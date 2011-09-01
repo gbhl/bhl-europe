@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Catalogue of the Cassididae in the Rijksmuseum van Natuurlijke Historie</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bayer Ch.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In order to give a survey of all the Cassididae that are now known, I have adopted the same method as for the preceding families dealt with in this catalogue (cf. "Zool. Meded.", vol. 14, pp. 224—231, 1932 &amp; vol. 16, pp. 33—59, 1933): besides those species of which the Rijksmuseum van Natuurlijke Historie possesses specimens, I have, as far as possible, also included those species which have been described till now, but of which we possess no specimens. Moreover I have also mentioned the principal synonyms. For the division of this family in genera, subgenera and sections, I have again adopted the system used by Thiele in his "Handbuch der systematischen Weichtierkunde". For the revision of the Australian species the publications of Iredale have proved very useful. Just as in my previous lists, the first letter, indicating the position in the catalogue of specimens of the same locality and collector, is followed by the number of specimens in our possession. After that comes the locality, followed by the name of the collector or donor. If the locality or donor is unknown, I have replaced them by a sign of interrogation. In the case of specimens kept in spirit, the number of the jar takes the place of the letter indicating the position. Genus Cassis Scopoli, 1777 I. Subgenus Cassis s. s. Sect. Cassis s. s. C. cornuta (Linné) Buccinum cornutum Linné, Syst. nat., ed. 10, p. 735, No. 384, 1758. — Syst. nat., ed. 12, p. 1198, No. 445, 1767.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318698</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1935</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 93 - 120</dcterms:extent>
+   <dcterms:isPartOf>Catalogue of the Cassididae in the Rijksmuseum van Natuurlijke Historie (URN:ISSN:0024-0672) (Volume 18) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318698.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149984</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318698</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

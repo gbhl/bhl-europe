@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>De opmars van de wespenspin Argiope bruennichi in Nederland (Araneae: Araneidae)</dc:title>
+   <dc:title>Nederlandse Faunistische Mededelingen</dc:title>
+   <dc:creator>Linden, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:subject>Araneae</dc:subject>
+   <dc:subject>Araneidae</dc:subject>
+   <dc:subject>Argiope bruennichi</dc:subject>
+   <dc:subject>Wespenspin</dc:subject>
+   <dc:subject>Wespspin</dc:subject>
+   <dc:subject>Tijgerspin</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Uitbreiding</dc:subject>
+   <dc:subject>Fenologie</dc:subject>
+   <dc:description>The expansion of the range of the spider Argiope bruennichi in the Netherlands (Araneae: Araneidae) Argiope bruennichi (Scopoli, 1772) is one of the biggest and most colourful spiders in Europe and therefore easy to recognise, even by non-specialists. The species has expanded its range in Germany and Belgium for several decades now and reached the south of The Netherlands in 1980. After the discovery of the first female in the south of the province of Limburg more specimens were found in this region in subsequent years. Later the species was discovered near Herkenbosch, about 30 kilometres to the north. Over the last years the expansion continued rapidly and now almost 300 records are brought together. The species has become widespread in the southern and eastern part of The Netherlands. In 1995 a leap of some 70 kilometres was made, from Limburg to the southern parts of the Veluwe. The years 1998 and 1999 were very good for Argiope, both with over 80 records per year. It is suggested that this expansion is related to the warm and sunny summers in the nineties.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:209828</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 45 - 53</dcterms:extent>
+   <dcterms:isPartOf>De opmars van de wespenspin Argiope bruennichi in Nederland (Araneae: Araneidae) (URN:ISSN:01692453) (Volume 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/209828.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41523</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/209828</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Vliegend hert in het Rijk van Nijmegen</dc:title>
+   <dc:creator>Smit J.T.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>Nederland</dc:subject>
+   <dc:subject>Lucanus</dc:subject>
+   <dc:subject>cervus</dc:subject>
+   <dc:subject>Verspreiding</dc:subject>
+   <dc:subject>Biotopen</dc:subject>
+   <dc:subject>Biologie</dc:subject>
+   <dc:subject>Ecologie</dc:subject>
+   <dc:subject>bescherming</dc:subject>
+   <dc:description>Vliegend hert in het Rijk van Nijmegen In 2005 heeft EIS-Nederland in opdracht van het Expertise centrum van het ministerie van Landbouw, Natuur en Voedselkwaliteit een onderzoek uitgevoerd naar de verspreiding van het vliegend hert in het Rijk van Nijmegen. Dit betrof een inhaalslag verspreidingsonderzoek in het kader van het Amendement van der Ham. De voorgenomen doelen daarbij waren: - Een zo’n goed mogelijk beeld te krijgen van de actuele verspreiding van het vliegend hert in het Rijk van Nijmegen. - Het achterhalen van de voortplantingsplekken. - Door middel van een voorlichtingsdag de verschillende beherende instanties te attenderen op het voorkomen van het vliegend hert in het Rijk van Nijmegen, in de hoop meer waarnemingen binnen te krijgen. Een regionaal mediaoffensief, onder andere in de kringen van natuurliefhebbers, heeft er voor gezorgd dat er 23 betrouwbare waarnemingen van vliegende herten zijn binnengekomen uit het Rijk van Nijmegen. Dit is bijna 10% van het totaal aantal Nederlandse waarnemingen uit 2005. Dit is een groot aandeel gezien het geringe oppervlakte ten opzichte van de overige verspreidingsgebieden in Nederland. Naast de waarnemingen van volwassen kevers zijn er ook op twee zekere voortplantingsplekken aangetroffen. Deze informatie geeft, gecombineerd met de verspreidingsgegevens uit Nordrhein-Westfalen, een goed inzicht in de verspreiding van het vliegend hert in het Rijk van Nijmegen en het aangrenzende Duitse Reichswald. Tijdens de voorlichtingsdag georganiseerd op 5 juli in Groesbeek heeft Klaus Kretschmer van het Biologisch station im Kreis Wesel e.V. een lezing gehouden over het voorkomen van het vliegend hert in Nordrhein-Westfalen, waarbij ook de ervaringen met het beheer aan bod kwamen. Tevens was een vertegenwoordiger van het NABU Naturschutzstation e.V. uit Kranenburg aanwezig. Met deze contacten is de kiem gelegd voor een internationale samenwerking tot het behoud van het vliegend hert in het Rijk van Nijmegen en aangrenzend Duitsland.</dc:description>
+   <dc:publisher>European Invertebrate Survey - Nederland</dc:publisher>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:220069</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2005</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>20</dcterms:extent>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/220069.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46567</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/220069</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

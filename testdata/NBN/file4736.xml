@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The Turbellaria of some Friesland lakes with incidental records of Gasteropoda and Hirudinea</dc:title>
+   <dc:title>Zoologische Bijdragen</dc:title>
+   <dc:creator>Young J.O.</dc:creator>
+   <dc:subject>42.76; 42.73</dc:subject>
+   <dc:description>INTRODUCTION During the week 7th to 12th June, 1971 opportunity was taken of accompanying members of the I.B.P. team based at the Tjeukemeer, the Netherlands, on a boat journey through the Friesland lakes. The main aim of the author was to collect Turbellaria (Tricladida and Microturbellaria) from the vegetation and stones in the littoral zone of 16 lakes (see Table 1). However, any specimens of Gasteropoda and Hirudinea obtained in samples were also noted. METHODS In the reed beds, mostly Phragmites (see Table 1), an F.B.A. net (60 meshes/inch = approx. 23.6 meshes/cm) mounted in a square frame on a 5 ft. (1.524 metres) pole was used to sweep through the vegetation and top layers of substratum for a given period of time (minimum 15 minutes). The contents of the bag net were emptied periodically into white polythene basins containing a little lake water; after sampling was completed large pieces of vegetation etc. were picked out of the basins before their contents were poured into glass jars. In the laboratory on the boat the relevant animals were removed and identified (for details see Young, 1970). On stony littoral areas (see Table 1), when these were present in the vicinity of the landing area, stones were examined for the relevant taxa and washed in a little water contained in white polythene basins. Again collections continued for a given length of time (minimum 15 minutes). The samples were then treated in the same way as for the vegetation samples. Irrigation/drainage ditches adjacent to the Brandemeer, Heegermeer and Tjeukemeer were also sampled for Microturbellaria using the same</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317240</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 59 - 70</dcterms:extent>
+   <dcterms:isPartOf>The Turbellaria of some Friesland lakes with incidental records of Gasteropoda and Hirudinea (URN:ISSN:0459-1801) (Volume 13) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317240.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148526</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317240</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

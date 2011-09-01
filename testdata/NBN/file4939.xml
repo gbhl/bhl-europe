@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Rijksmuseum van Geologie en Mineralogie 1878-1978  : a retrospect</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Groot, de G.E.</dc:creator>
+   <dc:subject>Onderwijs, beroepsuitoefening, organisaties</dc:subject>
+   <dc:subject>Rijksmuseum van Geologie en Mineralogie</dc:subject>
+   <dc:subject>history of museums</dc:subject>
+   <dc:description>Introduction The birth of the RGM The first period (1878-1922) - The new building - Scientific assistants The second period (1922-1955) - The new wing - The Museum in the post-war years The third period (from 1955 onwards) - Plans for removal - A new director References --- Introduction On reading through the annual reports of the Rijksmuseum van Geologie en Mineralogie (RGM) from its earliest years onwards, one finds three main current themes: the need for more staff, more room, and more money expressed in various keys, in a tone of despair or with confidence in the fulfillment of a reasonable request. This prevented the story thus reported from becoming monotonous. In the course of the hundred years of its existence the RGM had to serve different functions. According to the dominating function three periods may be distinguished. The first period bears the stamp of K. Martin's personality. It lasted nearly 45 years, from 1878 to 1922; the RGM was then first and foremost a centre of research. During the second period, from 1922 till 1955, it had to function chiefly as an institute for the training of students, the Museum s. str. then ...</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317444</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 3 - 25</dcterms:extent>
+   <dcterms:isPartOf>Rijksmuseum van Geologie en Mineralogie 1878-1978  : a retrospect (URN:ISSN:0375-7587) (Volume 48)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317444.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148730</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317444</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

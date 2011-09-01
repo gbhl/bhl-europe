@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Phyton, Annales Rei Botanicae, Horn 16_1_4 (1974)</dc:title>
+   <dc:creator>Aichinger  Erwin, Eckardt  Theo, Fischer  Manfred Adalbert, Fossel  Annemarie, Gailhofer  Manfred, Gams  Helmut, Gutermann  Walter, Härtel  Otto, Kästner  Arndt, Leute  Gerfried Horand, Markgraf  Friedrich, Mayer  Ernest, Merxmüller  Hermann, Meusel  Hermann, Miklau-Grassl  Sieglinde, Nagl  Walter, Pittoni  Helga, Poelt  Josef, Rechinger  Karl Heinz, Riedl  Harald, Rössler  Wilhelm, Sauer  Wilhelm, Schaeftlein  Hans, Teppner  Herwig, Thaler  Irmtraud, Vorwohl  Günther, Wagenitz  Gerhard, Wraber  Tone</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Erwin Aichinger: Sukzedane und simultane Vegetationsentwicklung.     3-   11. Theo Eckardt: Vom Blütenbau der Centrospermen-Gattung Lophiocarpus Turcz..    13-   27. Manfred Adalbert Fischer: Beitrag zu einer systematischen Neubearbeitung der Gruppe um Pseudolysimachium spicatum (L.) OPIZ (= Veronica spicata).    29-   47. Annemarie Fossel, Günther Vorwohl: Honigbienen und Fieberklee (Menyanthes trifoliata).    49-   55. Manfred Gailhofer, Irmtraud Thaler: Plastidenstrukturen einer Smicronyx-Galle auf Cuscuta campestris.    57-   64. Helmut Gams: Zur Problematik der Sippen- und Zönosen-Areale.    65-   74. Walter Gutermann: Erigeron subsp. macrophyllus, eine verkannte Sippe des Alpen-Ostrandes.    75-   79. Otto Härtel, Sieglinde Miklau-Grassl: Über den Einfluss von SO2 auf Pflanzenzellen.    81-   99. Gerfried Horand Leute: Der Aronstab (Arum maculatum L.) - neu für Kärnten.   101-  103. Friedrich Markgraf: Morphologische Kleinigkeiten mit größten Folgen.   105-  115. Ernest Mayer, Tone Wraber: Die Gattung Haplophyllum JUSS. in Jugoslawien.   117-  125. Hermann Meusel, Arndt Kästner: Zur Wuchsform einiger Veilchenarten.   127-  135. Hermann Merxmüller: Zur Wuchsform einiger Veilchenarten.   137-  158. Walter Nagl: Elektronenmikroskopischer Vergleich der nukleolen und Plastiden im Gameten und Sporophyten des Lebermooses Sphaerocarpos donnellii.   159-  163. Helga Pittoni: Behaarung und Chromosomezahlen sternhaariger Leontodon-Sippen.   165-  188. Josef Poelt: Zur Kenntnis der Flechtenfamilie Candelariaceae.   189-  210. Karl Heinz Rechinger: Aetheorrhiza bulbosa (L.) CASS und ihre geographischen Rassen.   211-  220. Harald Riedl: Dothioropsis corni, n. gen., n. spec., ein Bindeglied zwischen Melanoconiales und Spaeropsidales.   221-  230. Wilhelm Rössler: Myrosinzellen bei Tovaria.   231-  238. Wilhelm Sauer: Beiträge zur Kenntnis von Pulmonaria montana LEJEUNE und P. mollis WULFEN (recte: WOLFF) ex HORNEMANN in Mitteleuropa.   239-  264. Hans Schaeftlein: Altes und neues über Moehringia diversifolia.   265-  280. Herwig Teppner: Waldensteinia tenia und ihre Vorkommen in den südöstlichen Alpen.   281-  299. Gerhard Wagenitz: Parallele Evolution von Merkmalen in der Gattung Centaurea.   301-  312</dc:description>
+   <dc:date>1974</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/30143.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/30143.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=30143</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

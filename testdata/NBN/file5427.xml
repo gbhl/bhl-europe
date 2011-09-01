@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On the systematic position of Scotomedes (Heteroptera, Nabidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Blöte H.C.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In the collection of the Leiden Museum there is preserved the holotype of Scotomedes ater Stål. I was much surprised to discover that Velocipeda biguttula Reut. is a synonym of it. Distant described another Scotomedes-species in his "Fauna of British India" under the name: Godefridus alienus, bringing it to the Reduviidae, subfam. Apiomerinae. This was a reason for derision by Reuter, who cited it as an instance of Distant's less trustworthy scientific performances (Reuter, 1905). However, though it seems to have been "bon ton" to ridiculize Distant's views, we are not accustomed to neglect Stål's, and I was much interested to know why Stål had placed Scotomedes without hesitation into the Nabidae, as other authors have been of a so much different opinion. The next author after Stål, studying a Scotomedes-species, was Bergroth, when he described Velocipeda prisca. He brings the species to the Saldidae, to form a separate subfamily of that group. His arguments are rather feeble, as he writes: "The nervature of the membrane, however, has no resemblance to that of a Saldid, only because of the greater part of the other characters of the anatomy, i.e. by the long legs, the large eyes, the structure of the rostrum and of the pronotum, the animal is closely related to the genus Salda, so that the systematic position cannot be doubtful". I need not give instances of long legs and large eyes occurring in almost any family of the Heteroptera. A three-jointed rostrum occurs, except in the Saldidae, also in the Anthocoridae, Cimicidae, Reduviidae, and Macrocephalinae. Interesting in this connection is also Reuter's statement: "As a very instructive instance, in connection with the development of a</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317932</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1945</dcterms:issued>
+   <dcterms:issued>20th century CE/1940s</dcterms:issued>
+   <dcterms:extent>page 321 - 324</dcterms:extent>
+   <dcterms:isPartOf>On the systematic position of Scotomedes (Heteroptera, Nabidae) (URN:ISSN:0024-0672) (Volume 25) (Issue 21)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317932.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149218</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317932</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

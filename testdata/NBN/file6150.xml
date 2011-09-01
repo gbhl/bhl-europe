@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Polychaeten aus den Zoologischen Museen von Leiden und Amsterdam I</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Augener H.</dc:creator>
+   <dc:subject>Platyhelminthes, Aschelminthes, Annelida</dc:subject>
+   <dc:description>In der vorliegenden Arbeit ist die Untersuchung eines sehr umfangreichen Polychaeten-Materials niedergelegt, das mir von Herrn Prof. Dr. E. D. van Oort in Leiden und Herrn Prof. Dr. L. F. de Beaufort in Amsterdam zur Bearbeitung übergeben wurde. Von diesem Material ist der dem Museum in Leiden gehörende Anteil viel grösser als der Anteil aus dem Museum in Amsterdam. Ich habe die Untersuchung über die grosse Menge unbestimmten Materials aus dem Leidener Museum mit dem bisher durchaus unbearbeiteten Material aus dem Amsterdamer Museum vereinigt in einem ersten, grossen Abschnitt unter dem Zeichen Römisch I. In einem zweiten, kleinen Abschnitt unter dem Zeichen Römisch II. ist die Nachuntersuchung über zahlreiche dem Leidener Museum gehörende Polychaeten-Typen enthalten, die von Arm. Hansen im Jahre 1881 nach der Sammlung von Ed. van Beneden vom östliehen Süd-Amerika beschrieben worden sind. Ich verweise bezüglich dieser Typen auf Abschnitt II. meiner Arbeit. Die bisher unbearbeiteten Polychaeten setzen sich zusammen aus Material aus den verschiedensten Weltgegenden. Vertreten sind verschiedene europäische Länder, wie Holland, Deutschland, Norwegen, Italien, Frankreich. Vertreten ist ferner das Kap der Guten Hoffnung, das Rote Meer, der Nordatlantische Ozean, Niederländisch-Ostindien, die Südsee, das WestindienMeer, das Nördliche Eismeer, wozu noch einzelne Funde aus einigen anderen Weltgegenden hinzukommen. Ein grosser Teil des Materials stammt von Niederlandisch-Ostindien, ferner aus dem Nördlichen Eismeer. Aus dem letzteren stammt ein ziemlich grosses Material von den Expeditionen des Willem Barents und der Varna; das Westindien-Meer ist u. a. vertreten durch die Sammlung der Yacht Chazalie.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318655</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1933</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 177 - 260</dcterms:extent>
+   <dcterms:isPartOf>Polychaeten aus den Zoologischen Museen von Leiden und Amsterdam I (URN:ISSN:0024-0672) (Volume 15) (Issue 11)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318655.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149941</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318655</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

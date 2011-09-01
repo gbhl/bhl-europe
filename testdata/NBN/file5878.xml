@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The valid name of the Banteng: Bibos javanicus (d'Alton)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Hooijer D.A.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>While studying the collection of recent oxen of the Museum my attention was drawn to the problem of the nomenclature of the Java banteng. I believe to have been able to clear up the confusion that still exists today, as will be set forth in the present note. The wild ox of Java, the banteng, is known variously as Bos sondaicus or Bos banteng, but neither of these is the earliest available valid name. The species should have been called: Bibos javanicus (d'Alton) B[os] Javanicus d'Alton, Skelete der Wiederkäuer, Bonn, 1823, p. (7), pl. VIII fig. c. The earliest reference to the banteng of Java I have been able to find is in Pennant (1800, p. 35): "Mr. Loten told me that wild oxen, of a reddish brown color, with vast horns, and of a great size, are found in Java". Raffles, in his oft quoted "History of Java" refers to the wild Javan ox as "bánteng" (Raffles, 1817, p. 49; 1830, p. 56) or "bánteng" (Raffles, 1817, p. III; 1830, p. 123), but these are vernacularisms, as are "Bentinger" as used by Boie and Macklot (1827, p. 316) and "Bantinger" (Fischer, 1829, p. 500). In February, 1821, two adult banteng skeletons from Java were sent to Leiden by Reinwardt, one male, and the other female. In the handwritten list of specimens of Reinwardt's consignment preserved in the archives of the Rijksmuseum van Natuurlijke Historie at Leiden these skeletons are marked as of the wild Javan ox or Bantinger, Bos javanicus. The skulls of these specimens were figured for the first time by d'Alton (1823, pl. VIII figs, c and d), who, in the explanation of the plate, indicates the male (his fig. c) as "Schadel des Javanischen zahmen Ochsen (B. Javanicus, Reinwardt)",</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318383</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1956</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 223 - 226</dcterms:extent>
+   <dcterms:isPartOf>The valid name of the Banteng: Bibos javanicus (d'Alton) (URN:ISSN:0024-0672) (Volume 34) (Issue 14)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318383.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149669</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318383</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

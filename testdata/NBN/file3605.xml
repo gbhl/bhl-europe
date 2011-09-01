@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Systematic notes on Asian birds. 57.The authorship of the generic name Gymnoris</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Gregory S.M.S.</dc:creator>
+   <dc:subject>Aves</dc:subject>
+   <dc:subject>Synomenclature</dc:subject>
+   <dc:subject>author</dc:subject>
+   <dc:subject>J.E. Gray</dc:subject>
+   <dc:subject>Hodgson</dc:subject>
+   <dc:subject>Blyth</dc:subject>
+   <dc:subject>Gymnoris</dc:subject>
+   <dc:subject>flavirostris</dc:subject>
+   <dc:subject>flavicollis</dc:subject>
+   <dc:subject>xanthocollis</dc:subject>
+   <dc:description>The currently accepted citation for Gymnoris: J.E. Gray, 1831, is shown to be fundamentally erroneous. The first valid citation is that of Blyth in 1845. However the nominal type species’ name is preoccupied, and the nomen novum of Fringilla xanthocollis E. Burton, 1838, should be associated with it. The correct citation is given in full.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:210000</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2006</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 185 - 188</dcterms:extent>
+   <dcterms:isPartOf>Systematic notes on Asian birds. 57.The authorship of the generic name Gymnoris (URN:ISSN:00240672) (Volume 80-5)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/210000.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/41782</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/210000</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

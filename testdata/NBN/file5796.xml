@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On a Luxation of the skull-atlas joint and consecutive ankylosis in a Grey Seal, Halichoerus grypus (Fabricius, 1791), with notes on other Grey Seals from the Netherlands</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Bree, van P.J.H.</dc:creator>
+   <dc:subject>Mammalia</dc:subject>
+   <dc:description>On January 3, 1969, about 1 km south of Zandvoort, Netherlands, a very young female Grey Seal was found on the beach. The animal was exhausted and in a bad condition and could therefore be caught. It was taken to the Amsterdam Zoo where, in spite of good care, it died on February 17 of the same year. While living in the Zoo it was noted that the seal from time to time had convulsions, that it was partially lame, and that its head was positioned in a rather unusual manner. After its death, the Grey Seal was brought to the Zoological Museum of the Amsterdam University for dissection. During the dissection and more clearly afterwards when the whole skeleton was cleaned, a luxation of the skull-atlas joint and a consecutive ankylosis was observed (see plate 2). Although it cannot be proved, we have the impression, in view of the state of development of the ankylosis, that the luxation dated from the time of birth or shortly afterwards. No wonder that the seal was partly paralysed and that it had convulsions. If it is accepted that this young seal has had the luxation from the time of its birth, it must have travelled a distance of over 500 km in spite of its condition, before it was found on the beach near Zandvoort. This is assuming that the Grey Seal came from the Farne Islands near the England-Scotland border (see further on in this article). If the mean date of birth in the Farne Islands colony of Halichoerus grypus is about the 2nd of November and the moulting and lactation period lasts about 21 days, then the young animal had a little less than 6 weeks to move from the Farne Islands to the Netherlands' coast. A remarkable performance in view of its condition! Until the second World War, Grey Seals were unknown from coastal</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318301</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1972</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 331 - 336</dcterms:extent>
+   <dcterms:isPartOf>On a Luxation of the skull-atlas joint and consecutive ankylosis in a Grey Seal, Halichoerus grypus (Fabricius, 1791), with notes on other Grey Seals from the Netherlands (URN:ISSN:0024-0672) (Volume 47) (Issue 25)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318301.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149587</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318301</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

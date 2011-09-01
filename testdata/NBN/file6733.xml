@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Descriptions of a new genus and species of exotic microlepidoptera (Tortricidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Diakonoff A.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>A closer study and becoming available of additional material show the desirability of describing a new genus and species of Tortricidae from Southern Asia. The author is indebted to Prof. Dr. W. Sauter and Mrs. M. Horak, Eidgenössische Technische Hochschule, Zürich, Switzerland, for kindly putting at his disposal material of one of the species, recently collected in New Guinea and for the premission to retain duplicates for the Leiden Museum collection. The figures are by Mr. A. C. M. van Dijk, The Hague and by the author. Penthostola gen. nov. (πένθος - mourning, στολή = dress) Head with roughly spreading scales, on forehead forming a transverse crest. Ocellus posterior. Haustellum developed. Antenna in male simple, minutely ciliate below. Palpus moderate or rather long, ascending or subascending, with rather smoothly appressed scales, roughish only along apex of median segment and along its lower edge, median segment dilated towards apex or broad throughout, terminal segment smooth, short, usually drooping, pointed or subobtuse. Thorax with a single or double posterior crest. Posterior tibia with smoothly appressed long hair-scales above and beneath, bristly and spreading at apex. Fore wing (fig. 1) oblong-truncate, rather narrow, without a fold. Vein 2 from 2/3, 3 from angle, 4 closer to 3, veins on termen not approximated, 7 free, to termen, 10 from beyond 3/4 of upper edge of cell, 11 from slightly before middle, chorda from halfway between 10-11 to base of 6, median branch, to just below base of 5. Hind wing with a cubital pecten, vein 2 from middle or from beyond</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319238</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1978</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 261 - 266</dcterms:extent>
+   <dcterms:isPartOf>Descriptions of a new genus and species of exotic microlepidoptera (Tortricidae) (URN:ISSN:0024-0672) (Volume 52) (Issue 22)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319238.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150524</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319238</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

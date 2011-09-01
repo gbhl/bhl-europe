@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Verhandlungen der Zoologisch-Botanischen Gesellschaft in Wien. Frueher: Verh.des Zoologisch-Botanischen Vereins in Wien. 85 (1936)</dc:title>
+   <dc:creator>Adensamer  Wolfgang, Anonymus , Ehrenberg  Kurt, Handel-Mazzetti  Heinrich Freiherr von, Hofer  Helmut, Keissler  Karl von (Carl), Rechinger  Karl Heinz, Zapfe  Helmuth</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Anonymus: Leitung der Gesellschaft.     3-    4. Kurt Ehrenberg: Neue Untersuchungen über das Skelett von neugeborenen Braun- und Höhlenbären.     5-   13. Kurt Ehrenberg: Ein Ausschnitt aus dem Fragenkreis: Form und Funktion.    14-   25. Heinrich Freiherr von Handel-Mazzetti: Die Taraxacum-Arten nordischer Herkunft als Nunatakerpflanzen in den Alpen.    26-   41. Helmuth Zapfe: Lebensspuren grabender Echiniden aus dem Eozän Siebenbürgens.    42-   52. Karl Heinz Rechinger: Zur Kenntnis der Flora der Sanntaler Alpen.    53-   59. Helmut Hofer: Der Formenkreis Carduelis carduelis und die phylogenetische Ableitung seiner Rassen.    60-   87. Anonymus: Kurze Mitteilung.    88. Anonymus: Sitzungsberichte.    89-  144. Wolfgang Adensamer: Nachruf. Zum Gedächtnis an Hofrat Dr. Rudolf Sturany.   145-  149. Karl von (Carl) Keissler: Siegfried Stockmayer. Ein Nachruf.   149-  157. Kurt Ehrenberg: Henry Fairfield Osborn.   157-  160. Anonymus: Buchbesprechungen.   161-  167</dc:description>
+   <dc:date>1936</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/28077.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/28077.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=28077</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

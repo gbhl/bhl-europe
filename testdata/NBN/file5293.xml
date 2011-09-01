@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>A study on the Gut contents of six Leathery Turtles Dermochelys Coriacea (Linnaeus) (Reptilia: Testudines: Dermochelyidae) from British waters and from the Netherlands</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Hartog, Den J.C.</dc:creator>
+   <dc:creator>Nierop, Van M.M.</dc:creator>
+   <dc:subject>Amphibia, Reptilia</dc:subject>
+   <dc:subject>Scyphozoa; Leptomedusae; Siphonophora; Testudines; Dermochelys; nemato- cysts; British Isles</dc:subject>
+   <dc:subject>Netherlands; food; digestive tract; anatomy; functional morphology.</dc:subject>
+   <dc:description>Microscopical investigations of the gut contents of six individuals of Dermochelys coriacea from southern England and the North Sea revealed the presence in all of these of numerous nematocysts, mainly scyphozoan. Only six species of Scyphozoa occur in British shallow waters and in the North Sea, viz., Pelagia noctiluca (Forskål), Chrysaora hysoscella (L.), Aurelia aurita (L.), Cyanea capillata (L.), C. lamarckii (L.) and Rhizostoma octopus (L.). For the purpose of comparison and identification an inventory was made of the cnidom of these six species (based on preserved material). Nematocysts of one or more of these species appeared to be present in each of the turtles, all six species being represented. One of the turtles in addition appeared to have foraged upon the leptomedusa Aequorea spec. Small numbers of siphonophoran nematocysts were also found, but these may represent contaminations taken in with Scyphozoa, many of which feed upon other coelenterates. As the extremely watery diet of leathery turtles implicates the intake of large amounts of excess sea-water, speculations are put forward about the way in which this water is removed. In our view this is mainly done by oral expulsion and not primarily by renal and lachrymal gland excretion. Basing ourselves on the sparse and very rough data available in the literature, we conclude that the amount of organic matter taken in per day by a fully grown leathery turtle (in its eastern North Atlantic seasonal quarters) may be in the order of 2.5 kg per day (not 8-10 kg as suggested by Duron, 1978), standing for an energy intake of about 11.000-16.000 k.cal. The intake of plastics and other indigestable matters, a phenomenon frequently reported for this species, indicates that it apparently is indiscriminately attracted by all slow moving or floating objects of some size. The fact in itself that it takes such materials proves that the shape of its food items is of little or no relevance. The anthropomorphic interpretation therefore that the leathery turtle (and the same holds for other sea turtles) would mistake plastics for jelly-fish as has repeatedly been suggested in the literature, cannot be taken seriously.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317798</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1984</dcterms:issued>
+   <dcterms:issued>20th century CE/1980s</dcterms:issued>
+   <dcterms:extent>page 1 - 36</dcterms:extent>
+   <dcterms:isPartOf>A study on the Gut contents of six Leathery Turtles Dermochelys Coriacea (Linnaeus) (Reptilia: Testudines: Dermochelyidae) from British waters and from the Netherlands (URN:ISSN:0024-1652) (Volume 209) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317798.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149084</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317798</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

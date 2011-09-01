@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>The New World tarantula-hawk wasp genus Pepsis Fabricius (Hymenoptera: Pompilidae). Part 1. Introduction and the P. rubra species-group</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Vardy C.R.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:subject>spider-hunting wasps</dc:subject>
+   <dc:subject>Pompilidae</dc:subject>
+   <dc:subject>Pepsis</dc:subject>
+   <dc:subject>systematic revision</dc:subject>
+   <dc:subject>new species</dc:subject>
+   <dc:subject>Neotropical</dc:subject>
+   <dc:subject>natural history</dc:subject>
+   <dc:description>The genus Pepsis is diagnosed and described, and its taxonomic and natural history reviewed. The following are newly synonymized under this genus: the genera Abripepsis Banks, 1946 and Brethesia Schrottky, 1909; and all the existing subgenera of Pepsis, viz. Chrysopepsis Haupt, 1952; Cirripepsis Banks, 1945 &amp; 1946; Deropepsis Banks, 1946; Dinopepsis Banks, 1945; Dinopepsis Haupt, 1952; Giganteopepsis Lucas, 1919 of Pate, 1946; Gigantopepsis Lucas, 1919; Nannopepsis Banks, 1945 &amp; 1946; Ovatopepsis Haupt, 1952; Stenopepsis Banks, 1945; Titanopepsis Haupt, 1952; and Trichopepsis Banks, 1945. The Pepsis rubra species-group, with 18 species, including the type-species of Pepsis, is defined and described; keys to both sexes are provided. In this group, 3 species-names are newly proposed: P. cooperi, P. inbio, and P. roigi; and the following 32 names are newly synonymized under the names indicated: P. albocincta Smith, 1855 = P. abrupta Brèthes, 1908; = P. ameghinoi Brèthes, 1908; = P. annaeerdmuthae Lucas, 1919; = P. chrysothorax Brèthes, 1908; = P. copelloi Brèthes, 1914; = P. echeverriai Brèthes, 1908; = P. ichesi Brèthes, 1908; = P. lycaste Banks, 1946; = P. nutrix Brèthes, 1914; = P. pertyi Lucas, 1895; = P. prixii Brèthes, 1908; = P. rubescens Lucas, 1895; = P. ruficornis Lucas, 1897 (not Fabricius, 1781); = P. staudingeri Enderlein, 1901; = P. sulcata Brèthes, 1908. P. caridei Brèthes, 1908 = P. pampeana Brèthes, 1908. P. chrysothemis Lucas, 1895 = P. lucasii Fox, 1898. P. decorata Perty, 1833 = P. incompleta Brèthes, 1908; = P. opposita Banks, 1946. P. foxi Lucas, 1897 = P. flaminia Brèthes, 1914; = P. gemella Banks, 1946. P. heros (Fabricius, 1798) = P. atrata Lepeletier, 1845; = P. magnifica Montet, 1921. P. mexicana Lucas, 1895 = P. messerschmidti Lucas, 1895. P. pallidolimbata Lucas, 1895 = P. smithi Hurd, 1948. P. rubra (Drury, 1773) = P. papiliopennis (Christ, 1791); = P. stellata (Fabricius, 1793). P. sericans Lepeletier, 1845 = P. decepta Banks, 1928; = P. domingensis Lepeletier, 1845; = P. ignicornis Cresson, 1865. P. thisbe Lucas, 1895 = P. sayi Banks, 1926. P. vinipennis Packard, 1869 = P. insignis Mocsáry, 1885. A single name, P. albocincta Smith, 1855, is revalidated. The name P. inca Banks, 1946 [Abripepsis], does not belong in the P. rubra-group, but is here synonymized under P. chiliensis Lepeletier, 1845 [Pepsis] because of its new generic status.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:219443</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>2000</dcterms:issued>
+   <dcterms:issued>20th century CE</dcterms:issued>
+   <dcterms:extent>page 1 - 86</dcterms:extent>
+   <dcterms:isPartOf>The New World tarantula-hawk wasp genus Pepsis Fabricius (Hymenoptera: Pompilidae). Part 1. Introduction and the P. rubra species-group (Volume 332)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/219443.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/46285</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/219443</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

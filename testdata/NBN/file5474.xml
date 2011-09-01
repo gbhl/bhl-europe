@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Notes on marine fishes from the Netherlands Antilles, with the description of a new species, Eutyx tumidifrons (Brotulidae)</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Boeseman M.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>A small number of fishes from the Netherlands Antilles has been collected and recently presented to the Leiden Museum by Dr. J. S. Zaneveld, Head of the Biology Department, College of William and Mary, Norfolk, Va., formerly Director of the Caraibisch Marien Biologisch Instituut, Curaçao; and Dr. L. B. Holthuis, Curator of Carcinology at the Leiden Museum. While most specimens proved to belong to known Caribbean Syngnathidae, one very remarkable specimen appeared to belong to an undescribed species. Syngnathidae Syngnathus dunckeri Metzelaar Syngnathus dunckeri Metzelaar, 1919, p. 28, fig. 9 (Plaja Grandi, Curaçao; lake of Bonaire; harbour of St. Eustatius; St. Martin); —, Longley &amp; Hildebrand, 1941, pp. 56, 59 (Long Key; inside Bird Key reef); —, Herald, 1942, p. 132 (Bermuda; Bahamas; Cuba; Haiti; Santa Lucia; St. Kitts; Antigua; Virgin Islands; Grenadines; Puerto Rico; Curaçao; Dry Tortugas; off Cape Hatteras). 1 ex., in Piscadera Baai, Curaçao, 5 January 1957, coll. Dr. L. B. Holthuis, reg. no. RMNH 23228. According to the information provided by Dr. Holthuis, this specimen was caught at a depth of about two meters, between Zostera. It has 16 + 33 rings; D about 24; on o + 7 rings. Of the present species we hitherto possessed in our collections only a single specimen from Klein Bonaire, coll. Dr. P. Wagenaar Hummelinck, 13 September 1948, reg. no. RMNH 18740, not previously recorded. Syngnathus rousseau Kaup Syngnathus rousseau Kaup, 1856, p. 40 (Martinique); —, Longley &amp;</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317979</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1960</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 11 - 16</dcterms:extent>
+   <dcterms:isPartOf>Notes on marine fishes from the Netherlands Antilles, with the description of a new species, Eutyx tumidifrons (Brotulidae) (URN:ISSN:0024-0672) (Volume 37) (Issue 2)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317979.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149265</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317979</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Statistical reconstruction of the Palmatolepis apparatus (Late Devonian conodontophorids) at the generic, sub-generic, and specific level</dc:title>
+   <dc:title>Scripta Geologica</dc:title>
+   <dc:creator>Boogaard, van den M.</dc:creator>
+   <dc:creator>Kuhry B.</dc:creator>
+   <dc:subject>Paleontologie: algemeen</dc:subject>
+   <dc:description>Extensive frequency data are used for a reconstruction of Devonian cunodont apparatuses. Correspondence analysis and a related clustering method are selected as statistical tools, and are used as informal methods for testing a priori hypotheses rather than as search mechanisms. In our view, the Palmatolepis apparatus consists of palmatolepan P elements, tripodellan or nothognathellan O elements, palmatodellan and smithiform N elements, and a symmetry transition consisting of falcodontan A1 elements, asymmetrical scutulan A2 elements, and symmetrical scutulan A3 elements. A peculiar phenomenon, already described by other authors, is the numerical dominance of the P elements, which are on the average 15 times as frequent as corresponding O and N elements. It is argued that this phenomenon is not due to post-mortem processes. Several biological explanations are considered. The O elements corresponding to various palmatolepan elements are identified, and this result allows a critical reappraisal of phylogenetical views based on the P elements alone. Results broadly support current views. We recognize five subgenera: Manticolepis, Tripodellus (= Deflectolepis), Palmatolepis, Panderolepis, and Conditolepis (new subgenus). Our most important result with respect to other apparatuses is the strong evidence that 'Icriodus' and simple cones, contrary to the prevailing opinion, did not belong to a common apparatus.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317498</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1979</dcterms:issued>
+   <dcterms:issued>1970s</dcterms:issued>
+   <dcterms:extent>page 1 - 57</dcterms:extent>
+   <dcterms:isPartOf>Statistical reconstruction of the Palmatolepis apparatus (Late Devonian conodontophorids) at the generic, sub-generic, and specific level (URN:ISSN:0375-7587) (Volume 49)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317498.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/148784</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317498</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

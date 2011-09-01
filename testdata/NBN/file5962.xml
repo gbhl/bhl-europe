@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Sesarma (Sesarma) cerberus, a new cavernicolous crab from Amboina</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>Though the number of species of macrurous Decapoda known from subterranean waters is rather extensive, there are surprisingly few species of crabs that have been found in that habitat. Wolf (1934: 105, 106) listed only four species of Brachyura, three of which are epigeal forms, which had only accidentally entered subterranean waters. Hartnoll (1964: 79; in press) made it clear that at that time only three species of crabs could be considered to be truly troglobic: Sesarma jacobsoni Ihle, 1912, which so far is only known from caves in Central Java, Sesarma verleyi Rathbun, 1914, from caves in Jamaica, and Typhlopseudothelphusa mocinoi Rioja, 1953, from a cave in Chiapas, S.E. Mexico. The last mentioned species, which belongs to the family Pseudothelphusidae, is a typical troglobiont, being blind, unpigmented and with very long and slender legs. The two Sesarma species (family Grapsidae) also are adapted to cave life, but to a lesser degree: the eyes are present, though small, with the cornea reduced but still pigmented, and the legs are conspicuously lengthened; the colour in life of S. verleyi, according to Hartnoll (1964; in press), is pale bluish white. The colour of living specimens of S. jacobsoni is unknown, but preserved material is quite pale. S. jacobsoni and S. verleyi, though originating from widely distant localities resemble each other very conspicuously. In the present paper a third cavernicolous species of Sesarma is described. It shows a close resemblance to both S. verleyi and S. jacobsoni, but is still less typically adapted to subterranean life. Sesarma (Sesarma) cerberus new species (fig. 1, 2, 3a, b) Material examined. — Cave on the island Nusa Lain, just west of Amboina,</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318467</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1964</dcterms:issued>
+   <dcterms:issued>20th century CE/1960s</dcterms:issued>
+   <dcterms:extent>page 65 - 72</dcterms:extent>
+   <dcterms:isPartOf>Sesarma (Sesarma) cerberus, a new cavernicolous crab from Amboina (URN:ISSN:0024-0672) (Volume 40) (Issue 9)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318467.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149753</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318467</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

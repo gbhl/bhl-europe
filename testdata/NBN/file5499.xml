@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Gorgonaria von Konakry, Liberia, Goldküste und Angola</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Stiasny G.</dc:creator>
+   <dc:subject>Pisces</dc:subject>
+   <dc:description>Ich berichte hier über die Ergebnisse der Untersuchung einiger westafrikanischer Gorgonaria aus dem Äquatorialgebiet. In den Sammlungen des Rijksmuseum van Natuurlijke Historie, Leiden, befinden sich zahlreichie Exemplare von Liberia, der Goldküste und Angola. Angeschlossen wird eine kurze Beschreibung einiger Gorgonarienstöckchen aus dem Muséum National d'Histoire Naturelle, Paris, die Professor Auguste Chevalier im Jahre 1905 bei Konakry, Französisch Guinea, gesammelt hat. Diese Exemplare wurden mir nachträglich, nach Abschluss meiner Bearbeitung der von demselben Forscher bei Libreville, Französisch Congo, gesammelten Rindenkorallen, durch Herrn Dr. Gilbert Ranson, Muséum National, Paris, zugesendet. Sie werden aber wegen des Fundortes besser hier besprochen. Es handelt sich hier ausschliesslich um Gorgonarien, die der Familie Gorgoniidae Ridley angehören, u.z. um Angehörige der Genera Lophogorgia und Leptogorgia, welch letzteres an der westafrikanischen Küste ein Hauptverbreitungsgebiet hat. Das Material, das hier beschrieben wird, umfasst im Ganzen 28 Exemplare, die sich systematisch folgenderweise ordnen lassen: 1) Rijksmuseum, Leiden: Lophogorgia angolensis nov. spec. 1 Ex. „ büttikoferi nov. spec. 1 Ex. „ lütkeni Wright &amp; Stud. 2 Ex. Leptogorgia dichotoma Verrill 3 Ex. „ petechizans (Pallas) 6 Ex. „ pulcherrima var. simplex Bielsch. 1 Ex.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:318004</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>20th century CE/1930s</dcterms:issued>
+   <dcterms:extent>page 65 - 82</dcterms:extent>
+   <dcterms:isPartOf>Gorgonaria von Konakry, Liberia, Goldküste und Angola (URN:ISSN:0024-0672) (Volume 20) (Issue 10)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/318004.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149290</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/318004</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

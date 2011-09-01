@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Sponge interactions with spatial competitors in the Spermonde Archipelago</dc:title>
+   <dc:title>Various articles</dc:title>
+   <dc:creator>Voogd, de N.J.</dc:creator>
+   <dc:creator>Becking L.E.</dc:creator>
+   <dc:creator>Hoeksema B.W.</dc:creator>
+   <dc:creator>Noor A.</dc:creator>
+   <dc:creator>Soest, van R.W.M.</dc:creator>
+   <dc:subject>Porifera, Coelenterata, Echinodermata, Brachyopoda</dc:subject>
+   <dc:subject>Spatial competition</dc:subject>
+   <dc:subject>allelopathy</dc:subject>
+   <dc:subject>sponge culture</dc:subject>
+   <dc:subject>Indonesia</dc:subject>
+   <dc:description>This study describes the in situ effects of four bioactive sponges on their neighbours at three different locations and two depths in the Spermonde Archipelago, SW Sulawesi, Indonesia. The natural rates of interaction between the sponge species and eight possible competitive invertebrate groups were defined and quantified in circular subplots, this was repeated 25x for each of the four species and for each location and depth. Most interactions occurred with other sponges and with corals. Coral overgrowth by the four target species caused necrosis in more than 85 % of these interactions, whereas this was less than 25 % in sponge overgrowths. These results suggest that the toxins are used in spatial competition and that the concentrations of the bioactive compounds of the target species differ both intra-individually and intra-specifically.</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:268614</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:alternative>[2004]</dcterms:alternative>
+   <dcterms:issued>2003</dcterms:issued>
+   <dcterms:issued>21st century CE</dcterms:issued>
+   <dcterms:extent>page 253 - 261</dcterms:extent>
+   <dcterms:isPartOf>Sponge interactions with spatial competitors in the Spermonde Archipelago (URN:ISSN:0373-4110) (Volume 68)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/268614.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/98117</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/268614</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

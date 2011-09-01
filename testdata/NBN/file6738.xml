@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Scientific Results of the Surinam Expedition 1948-1949 : Part II. Zoology. No. 1. Crustacea Decapoda Macrura</dc:title>
+   <dc:title>Zoologische Mededelingen</dc:title>
+   <dc:creator>Holthuis L.B.</dc:creator>
+   <dc:subject>Arthropoda</dc:subject>
+   <dc:description>During the 1948-1949 Scientific Surinam Expedition, thorough zoological, botanical and geological explorations have been made in the coastal area and in the anterior mountain region of Dutch Guiana. The number of macrurous Decapods collected is large, though the number of species represented is relatively small. These shrimps have been collected at the following localities: 1. Coronieweg. This is the highway from Coronie to Paramaribo. Coronie is situated in the N.W. part of Surinam, about at 5° 53' N 56° 20' W. The Coronieweg localities are accompanied by a piket- and a km-number, e.g., Coronieweg, piket 216, km N 0.2. The piket-number indicates the distance in hundreds of meters which a certain point on the highway (the piket) is situated east of Coronie. The km-number indicates the number of kilometers that the actual locality is situated due north or south of the piket. The indication Coronieweg, piket 216, km N 0.2, thus means that the locality is situated 0.2 km north of a point on the highway, which point lies 21.6 km E. of Coronie. 2. Republiek. This is a locality on the railway, which runs from Paramaribo southwards into the interior of Surinam. Republiek is situated about 43 km S. of Paramaribo, on the Coropina creek, which empties in the Para, a branch of the Surinam River. 3. Paramaribo. 4. Plantation "Peperpot", a plantation on the east bank of the Surinam River, somewhat above Paramaribo. 5. Moengotapoe. A locality in the N.E. part of Surinam at about 5° 34' N 54° 14' W. The expedition went from Moengotapoe in a straight line due</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:319243</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1950</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 25 - 37</dcterms:extent>
+   <dcterms:isPartOf>Scientific Results of the Surinam Expedition 1948-1949 : Part II. Zoology. No. 1. Crustacea Decapoda Macrura (URN:ISSN:0024-0672) (Volume 31) (Issue 3)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/319243.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/150529</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/319243</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

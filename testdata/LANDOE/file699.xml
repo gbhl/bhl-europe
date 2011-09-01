@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Wissenschaftliche Mitteilungen Niederösterreichisches Landesmuseum 13 (2000)</dc:title>
+   <dc:creator>Drescher  Anton, Egger  Gregory, Forster  Rosemarie B., Frank  Christa, Philipp  Andrea, Straka  Ulrich</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Andrea Philipp, Rosemarie B. Forster: Die Rekolonisationsdynamik der wirbellosen Bodenfauna eines intermittierenden Flysch-Wienerwaldbaches. (N.F. 433)     7-   30. Christa Frank: Über holozäne Molluskenfaunen dreier Fundstellen im südlichen Wiener Becken (Niederösterreich). (N.F. 433)    31-   45. Christa Frank: Mollusca (Gastropoda et Bivalvia): eine historische Sammlung aus Hollabrunn (Niederösterreich). (N.F. 433)    47-  167. Ulrich Straka: Brutbestandsentwicklung und Siedlungsstruktur des Graureihers Ardea cinerea in den Donau-Auen des Tullner Feldes (NÖ) zwischen Altenwörth und Korneuburg von 1990-1999. (N.F. 433)   169-  176. Ulrich Straka: Ein Vorkommen der Kiemenfußkrebse (Crustacea, Branchiopoda) Branchipus schaefferi (FISCHER) und Leptestheria dahalacensis (RÜPPELL) in den Donauauen im Tullner Feld (NÖ). (N.F. 433)   177-  178. Anton Drescher, Gregory Egger: Die Vegetation der Traisenaue zwischen Altmannsdorf und Traismauer (Niederösterreich). (N.F. 433)   179-  244</dc:description>
+   <dc:date>2000</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26355.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26355.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26355</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

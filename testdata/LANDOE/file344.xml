@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Naturkundliche Mitteilungen aus Oberösterreich SH01 (1949)</dc:title>
+   <dc:creator>Franz  Herbert, Hamann  Helmut Heinrich Franz, Hoffmann  Emil, Klimesch  Josef, Kühnelt  Wilhelm, Loidl  Rudolf, Reisser  Hans</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herbert Franz: Die Hauptverbreitungstypen der mitteleuropäischen Fauna     1-    6. Wilhelm Kühnelt: Vorläufiges Verzeichnis der bisher in Oberösterreich aufgefundenen und noch zu erwartenden Orthopteren und Dermapteren     6-   10. Josef Klimesch: Über das Vorkommen der Zwiebelmotte (Acrolepia assectella Z.) lep. in Oberösterreich    10-   11. Josef Klimesch: Über gallenerzeugende und gallenbewohnende Schmetterlingsraupen    11-   15. Emil Hoffmann: Libellen besonders aus Oberösterreich und Salzburg, mit kurzen biologischen und morphologischen Angaben (mit 1 Bildtafel S.26a)    15-   24. Rudolf Loidl: Zur Biologie des Vorderen Langbathsees bei Ebensee (Arbeiten der Naturkundenstation Ebensee, Nr. 3)    24-   26. Helmut Heinrich Franz Hamann: Exkursionen in Sizilien, insbes. Am Aetna- Ost und Südhang. Vorläufige Mitteilungen über entomolog. und botanische Beobachtungen (mit einer Aetna- Kartenskizze S.26b)    26-   37. Hans Reisser: Eine Sommerausbeute aus Windischgarsten. (Lepidoptera) Liste der aufgefundenen Arten    38-   40</dc:description>
+   <dc:date>1949</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/24556.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/24556.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=24556</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

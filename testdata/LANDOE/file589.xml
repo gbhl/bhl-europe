@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Carinthia II 135_55 (1946)</dc:title>
+   <dc:creator>Findenegg  Ingo, Glantschnig  Thomas, Hölzel  Emil, Klimsch  Odo J.G., Paschinger  Herbert, Paschinger  Viktor, Sanden-Guja  W., Treven  Karl, Turnowsky  Fritz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Herbert Paschinger: Die Ernährungskraft der Kärntner Landwirtschaft     5-   12. Viktor Paschinger: Bericht über die Beobachtungen an der Pasterze in den Jahren 1933 bis 1944    12-   26. Ingo Findenegg: Der Afritzer- und Brennsee (Eine limnologische Untersuchung) mit 3 Abbildungen imText    26-   39. Fritz Turnowsky: Über Schwankungen des Wasserspiegels an zwei Osttiroler Hochgebirgsseen    40-   44. Thomas Glantschnig: Festuca pumila in den Zentralalpen Kärntens    50-   56. Emil Hölzel: Ergebnisse der Koschuta-Explorierung 1942-1945 (Beitrag zur Koleopterengeographie der Karawanken mit 3 Lichtbildern    57-   93. W. Sanden-Guja: Brut der kleinen Rohrdommel, Ixobrychus minutus minutus (L) am Hafnersee 1945    94. Odo J.G. Klimsch: Die Vogelwelt rund um die Herzogstadt St. Veit a. d. Glan im Kriegsjahre 1945 und Einschlägiges    95-  105. Odo J.G. Klimsch: Vom Vogelzug durch Kärnten   105-  112. Karl Treven, Herbert Paschinger: Dem Ehrenvorstand Hofrat Dr.Franz Lex zum Gedenken (9.10.1875 in Hörtendorf- 19.12.1944)   112-  115. Karl Treven: Tätigkeitsbericht der Naturkundlichen Abteilung des Landesmuseum für Kärnten über das Jahr 1945   115-  118. Karl Treven: Bericht des Naturwissenschaftlichen Vereines- seit April 1944   119-  120</dc:description>
+   <dc:date>1946</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/26109.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/26109.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=26109</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

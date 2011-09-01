@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Untersuchungen über die säkulare landhebung als pflanzengeograpischer faktor</dc:title>
+   <dc:title>Jämtlands kärlväxtflora</dc:title>
+   <dc:title>Die  varietäten von Carex salina wg ssp. cuspidata wg nebst ihren hybriden an den küsten des bottnischen busens, Finnland</dc:title>
+   <dc:title>Die  taraxacum-flora Estlands</dc:title>
+   <dc:title>Über den antagonismus von wasserstoffionen und metallkationen bei micrasterias</dc:title>
+   <dc:title>Experimentelle untersuchungen über die euanemochore verbreitung der sporenpflanzen</dc:title>
+   <dc:publisher>Societas pro fauna et flora Fennica (fi Helsinki)</dc:publisher>
+   <dc:contributor>Valovirta, E. J.</dc:contributor>
+   <dc:contributor>Lange, T. H.</dc:contributor>
+   <dc:contributor>Saxen, Uno.</dc:contributor>
+   <dc:contributor>Marklund, Gunnar.</dc:contributor>
+   <dc:contributor>Waris, Harry.</dc:contributor>
+   <dc:contributor>Pettersson, Bror.</dc:contributor>
+   <dc:type>Text</dc:type>
+   <dc:identifier>d07e3936-41f7-49c0-923c-eaeb743063eb</dc:identifier>
+   <dc:language>ger</dc:language>
+   <dc:language>swe</dc:language>
+   <dc:relation>Acta botanica Fennica, 20</dc:relation>
+   <dc:relation>Acta botanica Fennica, 21</dc:relation>
+   <dc:relation>Acta botanica Fennica, 22</dc:relation>
+   <dc:relation>Acta botanica Fennica, 23</dc:relation>
+   <dc:relation>Acta botanica Fennica, 24</dc:relation>
+   <dc:relation>Acta botanica Fennica, 25</dc:relation>
+   <dcterms:issued>1937</dcterms:issued>
+   <dcterms:issued>1938</dcterms:issued>
+   <dcterms:issued>1939</dcterms:issued>
+   <dcterms:issued>1940</dcterms:issued>
+   <dcterms:extent>161 s. + 11 kuvasiv.</dcterms:extent>
+   <dcterms:extent>187 s. + 15 kuvasiv.</dcterms:extent>
+   <dcterms:extent>30 s. + 5 kuvasiv.v.</dcterms:extent>
+   <dcterms:extent>136 s. + 14 kuvasiv.</dcterms:extent>
+   <dcterms:extent>36 s.</dcterms:extent>
+   <dcterms:extent>102 s.</dcterms:extent>
+   <europeana:object>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299944_acta_botanica/299944_20-25_1937-1940/thumbnail.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://bhl-alexandria.nhm.ac.uk/aip-preview/fi-uhviikki/FI-Hb/FI-Hb_299944_acta_botanica/299944_20-25_1937-1940</europeana:isShownBy>
+   <europeana:isShownAt>http://bhl.ait.co.at/index.php?form=display&amp;oaiid=UHVIIKKI/D07E393641F749C0923CEAEB743063EB</europeana:isShownAt>
+<europeana:dataProvider>Helsingin yliopisto</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by-nc-sa/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

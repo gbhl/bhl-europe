@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>Schriften des Vereins zur Verbreitung naturwissenschaftlicher Kenntnisse Wien 18 (1878)</dc:title>
+   <dc:creator>Anonym , Burgerstein  Alfred, Claus  Carl (Karl) Friedrich Wilhelm, Döll  Eduard, Hayek  Gustav von, Nahlik  Johann Edler von, Pierre  Victor, Pokorny  Alois, Reitlechner  Karl, Rumpf  Jakob, Rziha  Franz Ritter von, Simony  Friedrich, Simony , Toula  Franz</dc:creator>
+   <dc:description>Inhaltsverzeichnis: Jakob Rumpf: Ueber das Bildmikroskop.     1-   34. Simony: Das naturwissenschaftliche Element in der Landschaft. III. Die Schriftzeichen der Erdgeschichte im Alpengebäude.    35-   76. Carl (Karl) Friedrich Wilhelm Claus: Ueber Instinkt und Vererbung.    77-  116. Franz Toula: Ueber vulkanische Berge und den Vulkanismus.   117-  165. Eduard Döll: Ueber die Entstehung des Goldes auf dessen Lagerstätten.   167-  189. Karl Reitlechner: Wandlungen und Wanderungen der Producte der Landwirtschaft.   191-  242. Gustav von Hayek: Ueber den Colorado-Kartoffelkäfer.   243-  266. Alois Pokorny: Ueber Kletterpflanzen und deren Lebensweise.   267-  296. Victor Pierre: Ueber elektrodynamische Induction.   297-  363. Alfred Burgerstein: Ueber den Keimungsprocess der Samenpflanzen.   365-  409. Gustav von Hayek: Skizzen aus der Thierwelt Australiens.   411-  435. Franz Toula: Die Korallenriffe.   437-  475. Franz Ritter von Rziha: Der Einfluss der Naturwissenschaften auf die Ingenieur-Baukunst.   477-  546. Alfred Burgerstein: Die Nadelhölzer der Jetztzeit und der Vorwelt.   547-  597. Friedrich Simony: Das naturwissenschaftliche Element in der Landwirtschaft. IV. Bilder aus dem Hügel- und Niederungslande.   599-  631. Johann Edler von Nahlik: Ueber einige Feinde des Waldes.   633-  692. Anonym: Jahres-Bericht. (Seiten III-XLVII.)</dc:description>
+   <dc:date>1878</dc:date>
+   <dc:type>Text</dc:type>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://www.biologiezentrum.at/pdf_frei_img/29955.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.biologiezentrum.at/pdf_frei_baende/29955.pdf</europeana:isShownBy>
+   <europeana:isShownAt>http://www.biologiezentrum.at/biophp/de/band_det.php?litnr=29955</europeana:isShownAt>
+<europeana:dataProvider>Oberösterreichisches Landesmuseum</europeana:dataProvider><europeana:rights>http://www.europeana.eu/rights/rr-f/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+

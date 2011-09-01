@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/version17/mets.v1-7.xsd">
+    <mets:dmdSec ID="DMDLOG_0001">
+        <mets:mdWrap MDTYPE="ESE">
+            <mets:xmlData>
+
+            <europeana:record xmlns:prov="http://www.openarchives.org/OAI/2.0/provenance" xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:europeana="http://www.europeana.eu/schemas/ese/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ http://www.europeana.eu/schemas/ese/ESE-V3.3.xsd">
+   <dc:title>On Eumenes Arcuatus (Fabricius) and some Allied Indo-australian wasps (Hymenoptera, Vespidae)</dc:title>
+   <dc:title>Zoologische Verhandelingen</dc:title>
+   <dc:creator>Vecht, van der J.</dc:creator>
+   <dc:subject>Insecta</dc:subject>
+   <dc:description>In a study on the variation of Polistes and other Vespidae, K. Zimmermann (Zeitschr. Morph. Oek. Tiere, 22, 1931, pp. 173-230) concluded that the variation of the Indo-Australian Eumenes arcuatus (Fabricius) differs in a remarkable way from that of several European species of wasps. The geographic variation of the palaearctic Polistes, Odynerus and Eumenes was found to be strongly influenced by external factors: black pigments increase in cold and humid environments, whereas the yellow pigments dominate in hot and dry areas. According to Zimmermann, there is considerable individual variation in this respect in the palaearctic region, and no constant geographic races have developed here. On the other hand, the Indo-Australian Eumenes arcuatus occurs in a number of clearly separated geographic races in which no influence of climatic factors on the distribution of the black and yellow pigments is recognizable. Zimmermann distinguished twelve subspecies of E. arcuatus, all differing in colour characters; some of these are widely distributed, others inhabit only a restricted area. Some overlapping of the areas of distribution was said to occur: the Ceylonese flavopicta was recorded as "vereinzelt auf Sumatra und Java" (where this form certainly does not occur!); the Javanese blanchardi was recorded from Sumatra (incorrectly!) and the Saleyer Islands; in the latter locality it was therefore supposed to fly together with the black saleyerensis, described by Zimmermann from these same islands. New Britain was said to harbour both typical arcuatus and the subsp. praslinius. Zimmermann published a series of diagrams showing the different colour patterns of the various subspecies, and was the first author to distinguish the form inhabiting continental South East Asia and Sumatra (subsp. continen-</dc:description>
+   <dc:type>Text</dc:type>
+   <dc:identifier>oai:naturalis.nl:317827</dc:identifier>
+   <dc:source>NCB Naturalis</dc:source>
+   <dc:rights>http://purl.org/eprint/accessRights/OpenAccess</dc:rights>
+   <dcterms:issued>1959</dcterms:issued>
+   <dcterms:issued>20th century CE/1950s</dcterms:issued>
+   <dcterms:extent>page 1 - 71</dcterms:extent>
+   <dcterms:isPartOf>On Eumenes Arcuatus (Fabricius) and some Allied Indo-australian wasps (Hymenoptera, Vespidae) (URN:ISSN:0024-1652) (Volume 41) (Issue 1)</dcterms:isPartOf>
+   <europeana:object>http://bhl.ait.co.at/templates/bhle/sampledata/cachedImage.php?maxSize=200&amp;filename=http://bhl.ait.co.at/data/naturalis/317827.jpg</europeana:object>
+   <europeana:provider>BHL Europe</europeana:provider>
+   <europeana:type>TEXT</europeana:type>
+   <europeana:isShownBy>http://www.repository.naturalis.nl/document/149113</europeana:isShownBy>
+   <europeana:isShownAt>http://www.repository.naturalis.nl/record/317827</europeana:isShownAt>
+<europeana:dataProvider>NCB Naturalis</europeana:dataProvider><europeana:rights>http://creativecommons.org/licenses/by/3.0/</europeana:rights></europeana:record></mets:xmlData>
+        </mets:mdWrap>
+    </mets:dmdSec>
+</mets:mets>
+
