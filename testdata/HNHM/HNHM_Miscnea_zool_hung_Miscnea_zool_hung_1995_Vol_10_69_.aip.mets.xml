@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: .aip, Collection: AIT111 Development, ID: 10706/a0p8czbw"
+  OBJID="BHLE10706:a0p8czbw"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-4">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>First record of Acentrella sinaica Bogoescu, 1931 in Austria (Insecta: Ephemeroptera: Baetidae)</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Hutter, G.</mods:namePart>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Moog, O.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>aut</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Forró, L.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Bankovics, A.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Demeter, A.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Korsós, Z.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Murai, É.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Pintér, L.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>hu</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Budapest</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Hungarian Natural History Museum</mods:publisher>
+                  <mods:dateIssued>1995</mods:dateIssued>
+                  <mods:dateCreated>(19951030 printing)</mods:dateCreated>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:internetMediaType>application/pdf</mods:internetMediaType>
+                  <mods:extent>p. 69-72</mods:extent>
+                </mods:physicalDescription>
+                <mods:abstract xmlns:mods="http://www.loc.gov/mods/v3">Nymphs of Acentrella sinaica were recorded in Austria for the first time. The specimens were found on cobbles and boulders in a fifth-order mountain stream at an elevation of 1020 m above sea level in the crystalline Tauern Alps of Salzburg.</mods:abstract>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Insecta</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>faunistics</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Ephemeroptera</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Austria</mods:topic>
+                </mods:subject>
+                <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3">0230-9017</mods:identifier>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordCreationDate>090605</mods:recordCreationDate>
+                  <mods:recordChangeDate>20090605000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>HNHM2622</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>First record of Acentrella sinaica Bogoescu, 1931 in Austria (Insecta: Ephemeroptera: Baetidae).</dc:title>
+              <dc:creator> 
+Hutter, G. 
+</dc:creator>
+              <dc:creator> 
+Moog, O. 
+aut 
+</dc:creator>
+              <dc:creator>  
+Forró, L. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Bankovics, A. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Demeter, A. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Korsós, Z. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Murai, É. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Pintér, L. 
+edt 
+</dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Budapest : Hungarian Natural History Museum</dc:publisher>
+              <dc:date>1995.</dc:date>
+              <dc:language/>
+              <dc:format>application/pdf</dc:format>
+              <dc:description>Nymphs of Acentrella sinaica were recorded in Austria for the first time. The specimens were found on cobbles and boulders in a fifth-order mountain stream at an elevation of 1020 m above sea level in the crystalline Tauern Alps of Salzburg.</dc:description>
+              <dc:description>Nymphs of Acentrella sinaica were recorded in Austria for the first time. The specimens were found on cobbles and boulders in a fifth-order mountain stream at an elevation of 1020 m above sea level in the crystalline Tauern Alps of Salzburg.</dc:description>
+              <dc:subject>Insecta</dc:subject>
+              <dc:subject>faunistics</dc:subject>
+              <dc:subject>Ephemeroptera</dc:subject>
+              <dc:subject>Austria</dc:subject>
+              <dc:identifier/>
+              <dc:relation>HNHM</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.0">
+        <file CHECKSUM="f1e50f21ccec191ba264716f403d78aa6a206f45"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.0.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2729260">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-1.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="2c4ea244ea67e36fc1f50c011ab19f885843ea14"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3696594">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-2.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="ffe945d67b8623531f0918aa3079908ac446366b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2044658">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-3.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.3">
+        <file CHECKSUM="0222c046c4fb3371f9f18d49aa7ec364d2b6b4f6"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.3.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3710298">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-4.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.4">
+        <file CHECKSUM="33143ac9d412141acb8947dab7d74605d5bdd0d6"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.4.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="3304">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/Miscnea_zool_hung_1995_Vol_10_69.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.0">
+        <file ID="TAXA.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="2089">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-1.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.1">
+        <file ID="TAXA.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="2977">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-2.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.2">
+        <file ID="TAXA.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="11318">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-3.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.3">
+        <file ID="TAXA.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="2461">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-4.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.0">
+        <file ID="OCR.0.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2812">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-1.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2987">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-2.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2042">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-3.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.3">
+        <file ID="OCR.3.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3483">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-4.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.0">
+        <file ID="JHOVE.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9230">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-1.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9230">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-2.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9230">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-3.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9230">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69_pdf-4.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.4">
+        <file ID="JHOVE.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3875">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/Miscnea_zool_hung_1995_Vol_10_69.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="14846">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/Miscnea_zool_hung_1995_Vol_10/69/.aip/HNHM_Miscnea_zool_hung_Miscnea_zool_hung_1995_Vol_10_69_.aip.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>
