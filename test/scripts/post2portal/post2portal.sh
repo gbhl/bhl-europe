@@ -19,7 +19,7 @@ cd "$1"
 echo "Posting files under $(pwd)"
 
 
-URI="$1/?q=file_push"
+URI="$2/?q=file_push"
 
 # collection ids (you find them in the URL when hovering over 
 # the collection in the sidebar of the portal
@@ -35,25 +35,27 @@ UCPH=6250
 UHVIIKKI=6249
 
 # FOR ALL XML FILES
-for i in $(find -type f | grep xml$) 
+for i in $(find -type f | tr ' ()[]|;&' '????????'| grep xml$) 
 do
-	echo Uploading $i ..
+	echo "Uploading $i .."
 	# collection is the name of the directory
 	COLLECTION="$(echo $i | cut -f2 -d/)"
 	eval COLLECTION_ID=\$$COLLECTION
 	# extract title from first dc:title
-	TITLE="$(grep -o '<dc:title>[^>]*</dc:title>' $i | sed 's,<[^>]*>,,g' | sed -e 's,&amp;,&,g' -e 's,&lt;,<,g' -e 's,&gt;,>,g' | head -n1)"
+	TITLE="$(grep -o '<dc:title>[^>]*</dc:title>' "$i" | sed 's,<[^>]*>,,g' | sed -e 's,&amp;,&,g' -e 's,&lt;,<,g' -e 's,&gt;,>,g' | head -n1)"
 
 
 	# id is filename
 	# a unique ID! when using the same the node in the portal is overwritten.
-	ID="$(echo $i | cut -f3 -d/)"
+	ID="$(echo "$i" | cut -f3 -d/)"
 
 	echo "  collection_id=$COLLECTION_ID ($COLLECTION)"
 	echo "  title=$TITLE"
 
+	DATAFILE="$i"
+
 	# post id,data,title,collection_id to <portal-base-url>/?q=file_push
-	curl "$URI" --data-urlencode "id=$ID" --data-urlencode "node@$i" --data "collection_id=$COLLECTION_ID" --data-urlencode "title=$TITLE"
+	curl --silent "$URI" --data-urlencode "id=$ID" --data-urlencode "node@$DATAFILE" --data "collection_id=$COLLECTION_ID" --data-urlencode "title=$TITLE"
 
 	echo
 done
