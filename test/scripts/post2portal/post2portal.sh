@@ -10,6 +10,10 @@ e.g. $0 /tmp/files/ http://test111.ait.co.at
 EOT
 	exit 1
 fi
+if [ ! -d "$1" ]; then
+	echo "$1 is no directory"
+	exit 2
+fi
 
 cd "$1"
 echo "Posting files under $(pwd)"
