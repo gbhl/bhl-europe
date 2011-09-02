@@ -1,32 +1,15 @@
 package com.atos.bookingester.util;
 
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.geom.AffineTransform;
-import java.awt.image.BufferedImage;
-import java.awt.image.RenderedImage;
-import java.awt.image.renderable.ParameterBlock;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import javax.imageio.ImageIO;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
 
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IM4JavaException;
 import org.im4java.core.IMOperation;
 
-import com.sun.media.jai.codec.FileSeekableStream;
-import com.sun.media.jai.codec.ImageCodec;
-import com.sun.media.jai.codec.ImageDecoder;
-import com.sun.media.jai.codec.ImageEncoder;
-import com.sun.media.jai.codec.ImageEncoderImpl;
-import com.sun.media.jai.codec.SeekableStream;
-import com.sun.media.jai.codecimpl.JPEGCodec;
-import com.sun.media.jai.codecimpl.JPEGImageEncoder;
 
 public class ImageUtil {
 	private static ConvertCmd convert = new ConvertCmd();

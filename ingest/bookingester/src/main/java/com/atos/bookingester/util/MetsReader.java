@@ -19,8 +19,6 @@ public class MetsReader extends DefaultHandler {
 	@Override
 	public void startElement(String uri, String localName, String qName,
 			Attributes a) throws SAXException {
-//		System.out.println(qName);
-//		System.out.println(a.getValue("ID"));
 		if(qName.equalsIgnoreCase("fileGrp") && a.getValue("ID").equalsIgnoreCase("DATASTREAMS")){
 			startDatastreams = true;
 		}

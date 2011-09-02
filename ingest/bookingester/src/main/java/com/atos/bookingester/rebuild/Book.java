@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.atos.bookingester.util.ImageUtil;
-import com.yourmediashelf.fedora.generated.access.DatastreamType;
-import com.yourmediashelf.fedora.generated.management.Datastream;
 
 public class Book implements FedoraObject {
 	private String title;

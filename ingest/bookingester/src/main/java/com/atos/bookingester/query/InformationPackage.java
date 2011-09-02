@@ -19,6 +19,7 @@ public class InformationPackage {
 	private String path;
 	private String user;
 	private String metsfile;
+	private InformationPackageType type;
 
 	public String getDate() {
 		return date;
@@ -55,7 +56,15 @@ public class InformationPackage {
 	public InputStream getMetsfileAsStream() throws IOException{
 		return MyHttpClient.getAsStream(metsfile);
 	}
-	
+
+	public InformationPackageType getType() {
+		return type;
+	}
+
+	public void setType(InformationPackageType type) {
+		this.type = type;
+	}
+
 	@Override
 	public String toString() {
 		return "METS: " + this.metsfile;

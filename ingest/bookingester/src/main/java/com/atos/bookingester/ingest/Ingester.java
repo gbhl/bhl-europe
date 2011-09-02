@@ -2,7 +2,6 @@ package com.atos.bookingester.ingest;
 
 import java.io.File;
 import java.net.MalformedURLException;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -12,7 +11,6 @@ import com.atos.bookingester.rebuild.FedoraObject;
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
-import com.yourmediashelf.fedora.generated.management.Datastream;
 
 public class Ingester {
 	private FedoraClient client;

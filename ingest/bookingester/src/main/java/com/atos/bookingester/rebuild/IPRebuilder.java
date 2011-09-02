@@ -5,9 +5,8 @@ import com.atos.bookingester.query.InformationPackage;
 public class IPRebuilder {
 	public static FedoraObject rebuild(InformationPackage pack){
 		MetsObject mets = new MetsObject(pack);
-		FedoraObjectType type = mets.getType();
-		System.out.println("Parsing a: " + type);
-		RebuildStrategy strategy = RebuildStrategyFactory.getStrategy(type);
+		System.out.println("Parsing a: " + mets.getType() + " ID:" + mets.getID());
+		RebuildStrategy strategy = RebuildStrategyFactory.getStrategy(mets.getType());
 		return strategy.rebuildObject(mets);
 	}
 }
