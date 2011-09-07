@@ -938,7 +938,7 @@ function advanced_search_get_and_set_fields_from_solr_schema() {
 
   foreach ($xpath->query('/schema/fields/field/@name') as $field_name) {
     $fn = $field_name->textContent;
-    if(substr($fn, -7) != "__facet" && substr($fn, -6) != "__sort" 
+    if(substr($fn, -7) != "__facet" && substr($fn, -6) != "__sort" && substr($fn, -7) != "__exact"
          && $fn != "id" && $fn != "entity_id" && $fn != "entity_type"
          && $fn != "label" && $fn != "all") {
       $field_names[] = $fn;
