@@ -442,22 +442,22 @@ function advanced_search_form_3_submit($form, &$form_state) {
 */
 function advanced_search_form_4($form, &$form_state) {
 
-	$form['query'] = array(
+ $form['query'] = array(
     '#type' => 'textfield',
     '#title' => t('enter query string:'),
     '#maxlength'=> 1024,
-	);
-	$form['submit'] = array(
+ );
+ $form['submit'] = array(
     '#type' => 'submit',
     '#value' => 'search',
-	);
-	$form['caption'] = array(
+ );
+ $form['caption'] = array(
     '#type' => 'markup',
     '#markup' => 
-	t('<p>Exact search for the phrase entered.</p>'),
-	);
+ t('<p>Exact search for the phrase entered.</p>'),
+ );
 
-	return $form;
+ return $form;
 }
 
 
@@ -466,7 +466,7 @@ function advanced_search_form_4($form, &$form_state) {
  */
 function advanced_search_form_4_validate($form, &$form_state) {
 
-	if ($form['query']['#value'] == '') form_set_error('query',t('please enter search terms'));
+ if ($form['query']['#value'] == '') form_set_error('query',t('please enter search terms'));
 }
 
 
@@ -475,8 +475,8 @@ function advanced_search_form_4_validate($form, &$form_state) {
  */
 function advanced_search_form_4_submit($form, &$form_state) {
 
-	$query_string = $form_state['values']['query'];
-	$form_state['redirect'] = 'advanced_search_view/' . 'all_exact:"' . $query_string . '"';
+ $query_string = $form_state['values']['query'];
+ $form_state['redirect'] = 'advanced_search_view/' . 'all_exact:"' . $query_string . '"';
 }
 
 
@@ -510,21 +510,29 @@ function advanced_search_view($dummy) {
       'start' => pager_find_page() * $rows,
       'hl.fl' => '*',
     );
-    
-    if(isset($_SESSION) && array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] != '') {
-      switch($_SESSION['advanced_search_sort'][1]) {
+    $prevsort = "";
+    if(isset($_SESSION) && array_key_exists('advanced_search_sort_prev', $_SESSION) && $_SESSION['advanced_search_sort_prev'][0] != '') {
+      switch($_SESSION['advanced_search_sort_prev'][1]) {
       case 1:
-        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " asc";
+        $prevsort = ", " . $_SESSION['advanced_search_sort_prev'][0] . " asc";
         break;
       case -1:
-        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " desc";
+        $prevsort = ", " . $_SESSION['advanced_search_sort_prev'][0] . " desc";
         break;
       }
     }
-    
+    if(isset($_SESSION) && array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] != '') {
+      switch($_SESSION['advanced_search_sort'][1]) {
+      case 1:
+        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " asc" . $prevsort;
+        break;
+      case -1:
+        $opts['sort'] = $_SESSION['advanced_search_sort'][0] . " desc" . $prevsort;
+        break;
+      }
+    }
     $response = $solr->search($query_string, $opts);
     $results = advanced_search_process_response($response,$rows);
-    
   } catch(Exception $ex) {
     $qs = preg_replace("/{.*}/", "", $query_string);
     $apacheMsg = $ex->getMessage();
@@ -604,7 +612,7 @@ function advanced_search_panel_sort_results($form, &$form_state, $query_string) 
       '#id' => "advanced_search_sort_btn_$fld",
     );
     $order = "";
-    if(array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] == $fld) {
+    if(isset($_SESSION) && array_key_exists('advanced_search_sort', $_SESSION) && $_SESSION['advanced_search_sort'][0] == $fld) {
       switch($_SESSION['advanced_search_sort'][1]) {
       case 1:
         $order = "↑";
@@ -1157,6 +1165,7 @@ function advanced_search_sort($form, &$form_state) {
     }
   } else {
     $_SESSION['advanced_search_sort'] = array($fld, 1);
+    $_SESSION['advanced_search_sort_prev'] = $prev;
   }
 }
 
@@ -1193,10 +1202,11 @@ function advanced_search_searching($set = null) {
  * Set or get the is_exact_search flag
  */
 function advanced_search_is_exact_search($set = null) {
-	static $is_exact_search = false;
-	if($set !== null) $is_exact_search = $set;
-	return $is_exact_search;
+ static $is_exact_search = false;
+ if($set !== null) $is_exact_search = $set;
+ return $is_exact_search;
 }
+
 
 //TODO function advanced_search_facet_view() {
 //}
@@ -1238,7 +1248,7 @@ function advanced_search_block_view($block = '') {
             if($freq > 0) {
               $escterm = addcslashes($term , '"');
               $href = '?q=advanced_search_view/' . urlencode(
-                advanced_search_searching() . " AND $facet:\"$escterm\"");
+                "(" . advanced_search_searching() . ") AND $facet:\"$escterm\"");
               $content .= "<li class='occurrence'><a href='$href'>$term</a> ($freq)</li>";
             }
           }

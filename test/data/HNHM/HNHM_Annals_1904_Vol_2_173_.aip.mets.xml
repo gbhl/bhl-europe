@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: .aip, Collection: AIT111 Development, ID: 10706/a0kh18bt"
+  OBJID="BHLE10706:a0kh18bt"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-25">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>Südamerikanische Braconiden</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Szépligeti, V.</mods:namePart>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>hu</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Budapest</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Magyar Nemzeti Múzeum</mods:publisher>
+                  <mods:dateIssued>1904</mods:dateIssued>
+                  <mods:dateCreated>(19040625 printing)</mods:dateCreated>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:internetMediaType>application/pdf</mods:internetMediaType>
+                  <mods:extent>p. 173-197</mods:extent>
+                </mods:physicalDescription>
+                <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3">0521-4726</mods:identifier>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordCreationDate>090206</mods:recordCreationDate>
+                  <mods:recordChangeDate>20090206000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>HNHM37</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>Südamerikanische Braconiden</dc:title>
+              <dc:creator> 
+Szépligeti, V. 
+</dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Budapest : Magyar Nemzeti Múzeum</dc:publisher>
+              <dc:date>1904.</dc:date>
+              <dc:language/>
+              <dc:format>application/pdf</dc:format>
+              <dc:identifier/>
+              <dc:relation>HNHM</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.0">
+        <file CHECKSUM="efdf7a9b4a49357a3fd626889aadbf515fa2ea2f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.0.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="211330">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-01.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="a9d90608892d9e07dd368673985e9c8dbbc91693"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="243358">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-02.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="6468b67035a156c02418402e02077b79b74a58b5"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="235552">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-03.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.3">
+        <file CHECKSUM="1bded585c9e5f21886409096544df21d25597197"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.3.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="223180">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-04.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.4">
+        <file CHECKSUM="9ccac88855cf5c46e096f7518f993f6e2184323a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.4.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="231186">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-05.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.5">
+        <file CHECKSUM="6d8e4ad8b8dad0eaba927590d18b15fcb83c5236"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.5.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="203856">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-06.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.6">
+        <file CHECKSUM="15aaf650e26d6cc9de2d8231330870eab82aa0ef"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.6.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="244888">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-07.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.7">
+        <file CHECKSUM="92de8c8eacb4ef5d9353bf537232d1dcea26611c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.7.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="210942">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-08.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.8">
+        <file CHECKSUM="3efc7b568976a4c3d8d7978bfec0a84829361146"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.8.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="224410">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-09.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.9">
+        <file CHECKSUM="07eb13f3b5a7aec473de404baa1be9926af69132"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.9.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="230282">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-10.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.10">
+        <file CHECKSUM="50ad860e0468f39e8b5cc610abbd68db1b1aa25d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.10.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="210758">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-11.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.11">
+        <file CHECKSUM="4bfc3e131d0bac5a6965b4f68a490b69d12a8347"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.11.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="218082">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-12.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.12">
+        <file CHECKSUM="9cba036cbf5e91fed7e6a238ef0257b8f5b185fc"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.12.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="231378">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-13.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.13">
+        <file CHECKSUM="2385bb7e82803e5ea1c514ff00609e925d98c783"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.13.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="218770">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-14.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.14">
+        <file CHECKSUM="e20b7df6060b87f99704d1c14500c99868fe604f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.14.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="225292">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-15.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.15">
+        <file CHECKSUM="14a6b5effd76e5b82c0c9e0624bb87f178dbdf02"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.15.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="242194">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-16.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.16">
+        <file CHECKSUM="01c401d7186e72bec470875bce847a8d0402f9e6"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.16.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="233446">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-17.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.17">
+        <file CHECKSUM="213676312920f64ee5e1c7fda702b499b4bf0861"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.17.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="231946">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-18.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.18">
+        <file CHECKSUM="b37f19f975cd0b34a03ab7f5f92dad485e89451d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.18.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="242008">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-19.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.19">
+        <file CHECKSUM="ef482282334c0b57268efe6cbc108a61ac79915f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.19.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="233702">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-20.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.20">
+        <file CHECKSUM="64a1568caf03c8c143cda4094be0d9b3068d2211"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.20.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="252012">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-21.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.21">
+        <file CHECKSUM="33f99dd59fd0af31fe2e2d6b72abe70f706fcf47"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.21.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="216426">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-22.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.22">
+        <file CHECKSUM="87df34575f1b7f96f4a43c342eaf5eaf1b733938"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.22.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="224642">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-23.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.23">
+        <file CHECKSUM="69afae2c63ed331d6f9d5ed4ac99a5a4ad954bed"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.23.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="233684">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-24.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.24">
+        <file CHECKSUM="445a566256c6bf784b864dd9aa7de6ca49dfc38c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.24.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="189884">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-25.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.25">
+        <file CHECKSUM="370bcb2945d44330067289ddd702deba9dc7f051"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.25.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="1637">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/Annals_HNHM_1904_Vol_2_173.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.0">
+        <file ID="TAXA.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="578">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-01.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.1">
+        <file ID="TAXA.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="419">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-02.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.3">
+        <file ID="TAXA.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="419">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-04.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.6">
+        <file ID="TAXA.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="419">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-07.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.8">
+        <file ID="TAXA.8.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="277">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-09.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.9">
+        <file ID="TAXA.9.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="559">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-10.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.11">
+        <file ID="TAXA.11.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="279">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-12.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.12">
+        <file ID="TAXA.12.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="419">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-13.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.14">
+        <file ID="TAXA.14.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="441">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-15.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.15">
+        <file ID="TAXA.15.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="281">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-16.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.16">
+        <file ID="TAXA.16.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="566">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-17.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.17">
+        <file ID="TAXA.17.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="441">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-18.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.18">
+        <file ID="TAXA.18.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="279">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-19.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.19">
+        <file ID="TAXA.19.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="279">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-20.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.20">
+        <file ID="TAXA.20.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="591">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-21.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.21">
+        <file ID="TAXA.21.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="713">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-22.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.22">
+        <file ID="TAXA.22.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="878">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-23.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.23">
+        <file ID="TAXA.23.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="715">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-24.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.24">
+        <file ID="TAXA.24.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="565">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-25.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.0">
+        <file ID="OCR.0.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1852">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-01.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2594">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-02.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2369">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-03.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.3">
+        <file ID="OCR.3.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2076">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-04.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.4">
+        <file ID="OCR.4.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2262">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-05.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.5">
+        <file ID="OCR.5.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1840">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-06.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.6">
+        <file ID="OCR.6.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2501">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-07.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.7">
+        <file ID="OCR.7.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1803">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-08.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.8">
+        <file ID="OCR.8.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2057">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-09.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.9">
+        <file ID="OCR.9.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2278">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-10.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.10">
+        <file ID="OCR.10.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1929">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-11.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.11">
+        <file ID="OCR.11.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1957">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-12.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.12">
+        <file ID="OCR.12.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2217">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-13.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.13">
+        <file ID="OCR.13.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2798">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-14.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.14">
+        <file ID="OCR.14.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2610">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-15.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.15">
+        <file ID="OCR.15.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2450">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-16.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.16">
+        <file ID="OCR.16.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2260">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-17.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.17">
+        <file ID="OCR.17.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2594">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-18.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.18">
+        <file ID="OCR.18.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2605">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-19.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.19">
+        <file ID="OCR.19.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2237">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-20.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.20">
+        <file ID="OCR.20.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2750">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-21.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.21">
+        <file ID="OCR.21.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2040">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-22.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.22">
+        <file ID="OCR.22.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2061">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-23.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.23">
+        <file ID="OCR.23.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2243">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-24.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.24">
+        <file ID="OCR.24.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1495">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-25.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.0">
+        <file ID="JHOVE.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-01.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-02.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-03.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-04.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.4">
+        <file ID="JHOVE.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-05.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.5">
+        <file ID="JHOVE.5.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-06.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.6">
+        <file ID="JHOVE.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-07.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.7">
+        <file ID="JHOVE.7.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-08.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.8">
+        <file ID="JHOVE.8.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-09.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.9">
+        <file ID="JHOVE.9.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-10.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.10">
+        <file ID="JHOVE.10.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-11.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.11">
+        <file ID="JHOVE.11.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-12.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.12">
+        <file ID="JHOVE.12.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-13.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.13">
+        <file ID="JHOVE.13.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-14.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.14">
+        <file ID="JHOVE.14.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-15.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.15">
+        <file ID="JHOVE.15.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-16.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.16">
+        <file ID="JHOVE.16.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-17.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.17">
+        <file ID="JHOVE.17.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-18.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.18">
+        <file ID="JHOVE.18.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-19.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.19">
+        <file ID="JHOVE.19.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-20.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.20">
+        <file ID="JHOVE.20.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-21.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.21">
+        <file ID="JHOVE.21.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-22.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.22">
+        <file ID="JHOVE.22.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-23.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.23">
+        <file ID="JHOVE.23.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-24.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.24">
+        <file ID="JHOVE.24.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="7418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173_pdf-25.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.25">
+        <file ID="JHOVE.25.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3842">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/Annals_HNHM_1904_Vol_2_173.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="59635">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals/1904_Vol_2/173/.aip/HNHM_Annals_1904_Vol_2_173_.aip.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>

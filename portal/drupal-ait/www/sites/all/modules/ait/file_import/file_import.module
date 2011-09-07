@@ -211,19 +211,27 @@ function file_import_import_form_submit($form, &$form_state) {
   return $form;
 }
 
-function file_import_get_collection_id(array $collNames) {
-  //TODO lookup names in collections taxonomy
-  return null;
-  $term = array_pop($collNames);
-  $rs = db_query('SELECT t.tid FROM {taxonomy_term_data} t WHERE t.name LIKE :nam', array(':nam' => $term));
+function file_import_get_collection_id(array $collNames, $parent = null) {
+  $term = array_shift($collNames);
+  if($parent === null) {
+    $rs = db_query('SELECT t.tid '.
+    'FROM {taxonomy_term_data} t '.
+    'LEFT JOIN {taxonomy_vocabulary} v ON t.vid = v.vid '.
+    'WHERE v.machine_name = :voc AND t.name LIKE :nam', 
+    array(
+      ':voc' => 'collections',
+      ':nam' => $term));
+  } else {
+    $rs = db_query('SELECT t.tid '.
+    'FROM {taxonomy_term_data} t '.
+    'LEFT JOIN {taxonomy_term_hierarchy} h ON h.tid = t.tid '.
+    'WHERE h.parent = :par AND t.name LIKE :nam', 
+    array(
+      ':par' => $parent,
+      ':nam' => $term));
+  }
   foreach($rs->fetchAll() as $tid) {
-    $trm = taxonomy_term_load($tid);
-    $match = true;
-    for($i = 0; $i < count($collNames); ++$i) {
-      //$trm->parents check
-      $match = false;
-    }
-    if($match) return $tid;
+    file_import_get_collection_id($collNames, $tid);
   }
   return null;
 }
