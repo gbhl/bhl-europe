@@ -1,4 +1,7 @@
 settings.php
 .directory
 *.kate-swp
+.settings
+.project
+.buildpath
 *~
