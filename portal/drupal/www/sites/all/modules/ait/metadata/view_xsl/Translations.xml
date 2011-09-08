@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<terms>
+    <term text="Title">
+        <translation language="fr" text="Titre"/>
+        <translation language="de" text="Titel"/>          
+        <translation language="es" text="Título"/>
+        <translation language="cs" text="Název"/>        
+        <translation language="pt-pt" text="Título"/>
+        <translation language="it" text="Titolo"/>                        
+    </term>
+    <term text="Author">
+        <translation language="fr" text="Auteur"/>
+        <translation language="de" text="Autor"/>          
+        <translation language="es" text="Autor"/>
+        <translation language="cs" text="Autor"/>        
+        <translation language="pt-pt" text="Autor"/>
+        <translation language="it" text="Autore"/>     
+    </term>
+    <term text="Contributor">
+        <translation language="fr" text="Contributeur"/>
+        <translation language="de" text="Beitragende"/>          
+        <translation language="es" text="Colaborador"/>
+        <translation language="cs" text="Přispěvatel"/>        
+        <translation language="pt-pt" text="Contribuidor"/>
+        <translation language="it" text="Contribuente"/>  
+    </term>        
+    <term text="Publication">
+        <translation language="fr" text="Publication"/>
+        <translation language="de" text="Veröffentlichung"/>          
+        <translation language="es" text="Publicación"/>
+        <translation language="cs" text="publikace"/>        
+        <translation language="pt-pt" text="Publicação"/>
+        <translation language="it" text="Pubblicazione"/>  
+    </term>        
+    <term text="Date">
+        <translation language="fr" text="Date"/>
+        <translation language="de" text="Datum"/>          
+        <translation language="es" text="Fecha"/>
+        <translation language="cs" text="Datum"/>        
+        <translation language="pt-pt" text="Data"/>
+        <translation language="it" text="Data"/>  
+    </term>        
+    <term text="Date created">
+        <translation language="fr" text="Date créé"/>
+        <translation language="de" text="Datum erstellt"/>          
+        <translation language="es" text="Fecha creado"/>
+        <translation language="cs" text="Datum vytvořené"/>        
+        <translation language="pt-pt" text="Data criado"/>
+        <translation language="it" text="Data creato"/>  
+    </term>        
+    <term text="Date captured">
+        <translation language="fr" text="Date capturé"/>
+        <translation language="de" text="Erfassungsdatum"/>          
+        <translation language="es" text="Fecha de captura"/>
+        <translation language="cs" text="Datum zachytil"/>        
+        <translation language="pt-pt" text="Data capturado"/>
+        <translation language="it" text="Data catturato"/>  
+    </term>        
+    <term text="Date valid">
+        <translation language="fr" text="Date de validité"/>
+        <translation language="de" text="Gütligkeitsdatum"/>          
+        <translation language="es" text="Fecha válida"/>
+        <translation language="cs" text="Datum platnosti"/>        
+        <translation language="pt-pt" text="Data de validade"/>
+        <translation language="it" text="Data valido"/>  
+    </term>        
+    <term text="Date copyright">
+        <translation language="fr" text="Date du droit d'auteur"/>
+        <translation language="de" text="Datum Urheberrecht"/>          
+        <translation language="es" text="Fecha de derechos de autor"/>
+        <translation language="cs" text="Datum autorských práv"/>        
+        <translation language="pt-pt" text="Data de direitos autorais"/>
+        <translation language="it" text="Data di diritto d'autore"/>  
+    </term>        
+    <term text="Date other">
+        <translation language="fr" text="Autre date"/>
+        <translation language="de" text="Anderes Datum"/>          
+        <translation language="es" text="Otra fecha"/>
+        <translation language="cs" text="Další den"/>        
+        <translation language="pt-pt" text="Outra data"/>
+        <translation language="it" text="Altra data"/>   
+    </term>        
+    <term text="Type">
+        <translation language="fr" text="Type de ressource"/>
+        <translation language="de" text="Objekttyp"/>          
+        <translation language="es" text="Tipo"/>
+        <translation language="cs" text="Typ"/>        
+        <translation language="pt-pt" text="Tipo"/>
+        <translation language="it" text="Tipo"/>  
+    </term>        
+    <term text="Language">
+        <translation language="fr" text="Langue"/>
+        <translation language="de" text="Sprache"/>          
+        <translation language="es" text="Idioma"/>
+        <translation language="cs" text="Jazyk"/>        
+        <translation language="pt-pt" text="Idioma"/>
+        <translation language="it" text="Lingua"/>  
+    </term>        
+    <term text="Physical Description">
+        <translation language="fr" text="Description physique"/>
+        <translation language="de" text="Physische  Beschreibung"/>          
+        <translation language="es" text="Descripción física"/>
+        <translation language="cs" text="Fyzický popis"/>        
+        <translation language="pt-pt" text="Descrição  Física"/>
+        <translation language="it" text="Descrizione fisica"/>  
+    </term>        
+    <term text="Abstract">
+        <translation language="fr" text="Résumé"/>
+        <translation language="de" text="Abstract"/>          
+        <translation language="es" text="Resumen"/>
+        <translation language="cs" text="Abstraktní"/>        
+        <translation language="pt-pt" text="Resumo"/>
+        <translation language="it" text="Astratto"/>  
+    </term>        
+    <term text="Table of Contents">
+        <translation language="fr" text="Table des matières"/>
+        <translation language="de" text="Inhaltsverzeichnis"/>          
+        <translation language="es" text="Tabla de contenidos"/>
+        <translation language="cs" text="Obsah"/>        
+        <translation language="pt-pt" text="Tabela de  Conteúdos"/>
+        <translation language="it" text="Indice dei contenuti"/>  
+    </term>   
+    <term text="Subject">
+        <translation language="fr" text="Sujet"/>
+        <translation language="de" text="Schlagwort"/>          
+        <translation language="es" text="Asunto"/>
+        <translation language="cs" text="Předmět"/>        
+        <translation language="pt-pt" text="Assunto"/>
+        <translation language="it" text="Soggetto"/>  
+    </term>        
+    <term text="Identification">
+        <translation language="fr" text="Identifiant"/>
+        <translation language="de" text="Objektkennung"/>          
+        <translation language="es" text="Identificador"/>
+        <translation language="cs" text="Identifikátor"/>        
+        <translation language="pt-pt" text="Identificador"/>
+        <translation language="it" text="Identificatore"/>  
+    </term>        
+    <term text="Holding Information">
+        <translation language="fr" text="Lieu de stockage"/>
+        <translation language="de" text="Datenherkunft"/>          
+        <translation language="es" text="Lugar de archivación"/>
+        <translation language="cs" text="Místo uložení"/>        
+        <translation language="pt-pt" text="Local do armazenamento"/>
+        <translation language="it" text="Luogo di conservazione"/>  
+    </term>        
+    <term text="Rights">
+        <translation language="fr" text="Gestion des droits"/>
+        <translation language="de" text="Rechte"/>          
+        <translation language="es" text="Derechos"/>
+        <translation language="cs" text="Práva"/>        
+        <translation language="pt-pt" text="Direitos"/>
+        <translation language="it" text="Diritti"/>  
+    </term>        
+    <term text="Related Items">
+        <translation language="fr" text="Objets associés"/>
+        <translation language="de" text="Verbundene Objekte"/>          
+        <translation language="es" text="Objetos relacionados"/>
+        <translation language="cs" text="Příbuzné objekty"/>        
+        <translation language="pt-pt" text="Relação"/>
+        <translation language="it" text="Oggetti correlati"/>  
+    </term>        
+    <term text="Notes">
+        <translation language="fr" text="Notes"/>
+        <translation language="de" text="Anmerkungen"/>          
+        <translation language="es" text="Notas"/>
+        <translation language="cs" text="Poznámka"/>        
+        <translation language="pt-pt" text="Notas"/>
+        <translation language="it" text="Note"/>  
+    </term>        
+    <term text="Digital Object">
+        <translation language="fr" text="Digital Object"/>
+        <translation language="de" text="Digitales Objekt"/>          
+        <translation language="es" text="De objeto digital"/>
+        <translation language="cs" text="Digitální objektu"/>        
+        <translation language="pt-pt" text="Digital Object"/>
+        <translation language="it" text="Digital Object"/>  
+    </term>        
+</terms> 
