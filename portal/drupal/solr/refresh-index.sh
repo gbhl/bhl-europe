@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash 
+
+#set -x # uncomment for debugging
 
 echo "USAGE: execute this script in its own folder."
 echo "HINT: After skipping this script with ctrl+c"
@@ -23,13 +25,10 @@ ITEMS_LEFT=${lines[1]}
 
 echo "Number of nodes to index: $ITEMS_LEFT"
 
-
 # Number of items to index per cron run
 ITEMS_PER_RUN=($($DRUSH vget --pipe apachesolr_cron_limit | egrep -o "[0-9]*"))
 
 echo "Nodes to index per cron run: $ITEMS_PER_RUN"
-
-
 echo ""
 
 TIMES=$(($ITEMS_LEFT/$ITEMS_PER_RUN))
@@ -42,7 +41,7 @@ $DRUSH solr-delete-index # delete core 2
 $DRUSH vset -yes apachesolr_default_environment solr # switch back to core1
 
 echo "Marking content for indexing"
-#drush solr-reindex
+$DRUSH solr-reindex
 
 echo "Reindexing content marked for indexing."
 $DRUSH solr-index
