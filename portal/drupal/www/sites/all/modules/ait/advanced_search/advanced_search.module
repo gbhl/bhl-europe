@@ -531,6 +531,9 @@ function advanced_search_view($dummy) {
         break;
       }
     }
+    # replacing date ranges
+    $query_string = preg_replace('/(\d\d\d\d)\s*-\s*(\d\d\d\d)/', '[$1 TO $2]', $query_string);
+
     $response = $solr->search($query_string, $opts);
     $results = advanced_search_process_response($response,$rows);
   } catch(Exception $ex) {
@@ -946,7 +949,7 @@ function advanced_search_get_and_set_fields_from_solr_schema() {
 
   foreach ($xpath->query('/schema/fields/field/@name') as $field_name) {
     $fn = $field_name->textContent;
-    if(substr($fn, -7) != "__facet" && substr($fn, -6) != "__sort" && substr($fn, -7) != "__exact"
+    if(substr($fn, -7) != "__facet" && substr($fn, -6) != "__sort" 
          && $fn != "id" && $fn != "entity_id" && $fn != "entity_type"
          && $fn != "label" && $fn != "all") {
       $field_names[] = $fn;
@@ -1284,6 +1287,18 @@ function advanced_search_block_form_simple($form, &$form_state) {
     '#default_value' => '',
     '#attributes' => array('title' => t('Enter the terms you wish to search for.')),
   );
+  $def = isset($_SESSION['simple_search_field'])? $_SESSION['simple_search_field']
+    : array('dc_creator', 'dc_title', 'dc_date', 'olef_journal_title');
+  $form['simple_search_field'] = array(
+    '#type' => 'checkboxes',
+    '#default_value' => $def,
+    '#options' => array(
+      'dc_creator' => t('author'),
+      'dc_title' => t('titles'),
+      'dc_date' => t('year'),
+      'olef_journal_title' => t('journal title'),
+    ),
+  );
   $form['submit'] = array(
     '#type' => 'submit',
     '#attributes' => array(),
@@ -1293,8 +1308,15 @@ function advanced_search_block_form_simple($form, &$form_state) {
 }
 
 function advanced_search_block_form_simple_submit($form, &$form_state) {
-  $query_string = $form_state['values']['query'];
-  $form_state['redirect'] = 'advanced_search_view/' . $query_string;
+  $query = $form_state['values']['query'];
+  $fields = $form_state['values']['simple_search_field'];
+  $_SESSION['simple_search_field'] = $fields;
+  $qparts = array();
+  foreach($fields as $field) {
+    if($field) $qparts[] = "$field:$query";
+  }
+  $q = empty($qparts)? $query :  implode(' OR ', $qparts);
+  $form_state['redirect'] = "advanced_search_view/$q";
 }
 
 function advanced_search_init_facet_fields() {
