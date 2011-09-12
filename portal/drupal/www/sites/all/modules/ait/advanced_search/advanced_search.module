@@ -1313,6 +1313,7 @@ function advanced_search_block_form_simple_submit($form, &$form_state) {
   $_SESSION['simple_search_field'] = $fields;
   $qparts = array();
   foreach($fields as $field) {
+    if($query == "") $query = "*";
     if($field) $qparts[] = "$field:$query";
   }
   $q = empty($qparts)? $query :  implode(' OR ', $qparts);
