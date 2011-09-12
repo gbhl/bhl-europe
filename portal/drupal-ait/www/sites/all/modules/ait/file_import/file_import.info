@@ -1,6 +1,0 @@
-name = File import
-description = Ait test implentation for file import to ese-type
-package = Metadata Handling
-core = 7.x
-dependencies[] = metadata
-

@@ -1,0 +1,75 @@
+# Dansk translation of drupalforfirebug (6.x-1.2)
+# Copyright (c) 2009 by the Dansk translation team
+# Generated from files:
+#  drupalforfirebug/drupalforfirebug.module: n/a
+#  drupalforfirebug/drupalforfirebug_preprocess.module: n/a
+#  drupalforfirebug/drupalforfirebug.info: n/a
+#  drupalforfirebug/drupalforfirebug_preprocess.info: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: drupalforfirebug (6.x-1.2)\n"
+"POT-Creation-Date: 2009-05-30 02:34-0700\n"
+"PO-Revision-Date: 2009-05-30 11:36+0100\n"
+"Language-Team: Dansk <dansk@klid.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"Last-Translator: Morten Wulff <wulff@ratatosk.net>\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+
+#: drupalforfirebug.module:152
+msgid "Execute"
+msgstr "Udfør"
+
+#: drupalforfirebug.module:136,138
+msgid "Please Enable the Devel Modules to Log SQL Queries: "
+msgstr "Aktivér venligst Devel-modulet for at logge SQL forespørgsler: "
+
+#: drupalforfirebug.module:136
+msgid "Enable SQL Queries"
+msgstr "Aktivér SQL forespørgsler"
+
+#: drupalforfirebug.module:138
+msgid "See Devel Project Page"
+msgstr "Se Devel projektsiden"
+
+#: drupalforfirebug.module:150
+msgid "Enter PHP code for execution. Do not use <code>&lt;?php ?&gt;</code> tags."
+msgstr "Indtast PHP kode som skal køres. Brug ikke <code>&lt;?php ?&gt;</code> tags."
+
+#: drupalforfirebug.module:246
+msgid "Access Firebug Debug"
+msgstr "Tilgå Firebug Debug"
+
+#: drupalforfirebug.module:246
+msgid "Execute Firebug PHP"
+msgstr "Udfør Firebug PHP"
+
+#: drupalforfirebug.module:0
+msgid "drupalforfirebug"
+msgstr "drupalforfirebug"
+
+#: drupalforfirebug_preprocess.module:0
+msgid "drupalforfirebug_preprocess"
+msgstr "drupalforfirebug_preprocess"
+
+#: drupalforfirebug.info:0;
+#: drupalforfirebug_preprocess.info:0
+msgid "Drupal for Firebug"
+msgstr "Drupal for Firebug"
+
+#: drupalforfirebug.info:0
+msgid "A helper extension for the Drupal for Firebug Firefox extension addon"
+msgstr "En udvidelse til Drupal for Firebug Firefox-udvidelsen"
+
+#: drupalforfirebug_preprocess.info:0
+msgid "Drupal for Firebug Preprocessor"
+msgstr "Drupal for Firebug forbehandler"
+
+#: drupalforfirebug_preprocess.info:0
+msgid "A helper extension for the Drupal for Firebug Firefox extension to do preprocessing of forms"
+msgstr "En udvidelse til Drupal for Firebug Firefox-udvidelsen som forbehandler formularer"
+

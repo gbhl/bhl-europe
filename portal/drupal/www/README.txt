@@ -1,31 +1,12 @@
 // $Id: README.txt,v 1.1 2010/12/02 00:20:18 webchick Exp $
 
-This is the BHL-Europe Portal which is based on Drupal 7
-
 CONTENTS OF THIS FILE
 ---------------------
 
- * About BHL-Europe
  * About Drupal
  * Configuration and features
  * Appearance
  * Developing for Drupal
-
-
-ABOUT BHL-Europe
-----------------
-
-The Biodiversity Heritage Library for Europe (BHL-Europe)
-BHL-Europe is a 3 year project, involving 28 major natural history museums, botanical gardens and other cooperating institutions.
-
-The libraries of the European natural history museums and botanical gardens collectively hold the majority of the world’s published knowledge on the discovery and subsequent description of biological diversity. However, digital access to this knowledge is difficult. The objective of the BHL-Europe project is to make available Europe’s biodiversity information to everyone by improving the interoperability of European biodiversity digital libraries.
-
-Furthermore, the project will provide a multilingual access point for biodiversity content through the BHL-Europe web portal with specific biological functionalities for search and retrieval and through the EUROPEANA portal.
-
-The literature illustrations shown on this web site show some examples of the rich biodiversity material that we would like to make accessible to the world.
-
-BHL-Europe is a Best Practice Network, funded by the European Commission under the eContentplus programme, as part of the i2010 policy.
-
 
 ABOUT DRUPAL
 ------------

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: .aip, Collection: AIT111 Development, ID: 10706/a09zw3s2"
+  OBJID="BHLE10706:a09zw3s2"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-8">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>The zoological results of Gy. Topál's collegtings in South Argentina 16. Catopidae et Colonidae (Coleoptera)</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Szymczakowski, A.</mods:namePart>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>hu</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Budapest</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Gondolat Kiadó</mods:publisher>
+                  <mods:dateIssued>1965</mods:dateIssued>
+                  <mods:dateCreated>(19651231 printing)</mods:dateCreated>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:internetMediaType>application/pdf</mods:internetMediaType>
+                  <mods:extent>p. 245-252</mods:extent>
+                </mods:physicalDescription>
+                <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3">0521-4726</mods:identifier>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordCreationDate>090206</mods:recordCreationDate>
+                  <mods:recordChangeDate>20090206000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>HNHM963</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>The zoological results of Gy. Topál's collegtings in South Argentina 16. Catopidae et Colonidae (Coleoptera)</dc:title>
+              <dc:creator> 
+Szymczakowski, A. 
+</dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Budapest : Gondolat Kiadó</dc:publisher>
+              <dc:date>1965.</dc:date>
+              <dc:language/>
+              <dc:format>application/pdf</dc:format>
+              <dc:identifier/>
+              <dc:relation>HNHM</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.0">
+        <file CHECKSUM="565fe0b134306fb1df290cefb538c5f0bcd8313e"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.0.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4320576">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-1.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="819d414370df1ff30af66b05c8e70f472427082e"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="5697850">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-2.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="7bc58e79b35ec8a1a60acf35c6315f7b0430a488"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3735684">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-3.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.3">
+        <file CHECKSUM="1a911fb7ec377aceaf9d7bb2f7703d366df27a24"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.3.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4511504">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-4.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.4">
+        <file CHECKSUM="85c7007291762111e01e9dff1f59faa3e9f637fa"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.4.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="5250152">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-5.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.5">
+        <file CHECKSUM="48f5f58ee2e2118cfbde997d0b7b54117edc1bb1"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.5.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4703098">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-6.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.6">
+        <file CHECKSUM="8ef70f6b74dd17083e8a19242aa41db06db0ae5f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.6.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4699532">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-7.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.7">
+        <file CHECKSUM="871071c153c1d6dbd5a03619c4f5aa643a06ebc0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.7.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4835960">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-8.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.8">
+        <file CHECKSUM="344b79af3ed4b353482597b04dddb84a167ee74d"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.8.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="1716">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/Annals_HNHM_1965_Vol_57_245.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.0">
+        <file ID="TAXA.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="2763">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-1.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.1">
+        <file ID="TAXA.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="2315">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-2.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.2">
+        <file ID="TAXA.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="855">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-3.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.3">
+        <file ID="TAXA.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="283">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-4.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.4">
+        <file ID="TAXA.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="579">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-5.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.5">
+        <file ID="TAXA.5.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="281">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-6.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.6">
+        <file ID="TAXA.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="565">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-7.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.7">
+        <file ID="TAXA.7.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="2175">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-8.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.0">
+        <file ID="OCR.0.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3177">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-1.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3480">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-2.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1600">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-3.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.3">
+        <file ID="OCR.3.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2505">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-4.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.4">
+        <file ID="OCR.4.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3919">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-5.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.5">
+        <file ID="OCR.5.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1878">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-6.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.6">
+        <file ID="OCR.6.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2164">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-7.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.7">
+        <file ID="OCR.7.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3474">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-8.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.0">
+        <file ID="JHOVE.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-1.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-2.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-3.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-4.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.4">
+        <file ID="JHOVE.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-5.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.5">
+        <file ID="JHOVE.5.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-6.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.6">
+        <file ID="JHOVE.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-7.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.7">
+        <file ID="JHOVE.7.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9198">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245_pdf-8.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.8">
+        <file ID="JHOVE.8.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3861">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/Annals_HNHM_1965_Vol_57_245.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="24445">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Annals_HNHM/Annals_HNHM_1965_Vol_57/245/.aip/HNHM_Annals_HNHM_Annals_HNHM_1965_Vol_57_245_.aip.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>

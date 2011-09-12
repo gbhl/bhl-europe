@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: .aip, Collection: AIT111 Development, ID: 10706/a0t1g1n8"
+  OBJID="BHLE10706:a0t1g1n8"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-16">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>The subspecific division of Rhinolophus luctus Temminck, 1835, and the taxonomic status of R. beddomei Andersen, 1905 (Mammalia, Chiroptera)</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Topál, Gy.</mods:namePart>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Csorba, G.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>aut</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Forró, L.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Bankovics, A.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Demeter, A.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Korsós, Z.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Murai, É.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Pintér, L.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>hu</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Budapest</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Hungarian Natural History Museum</mods:publisher>
+                  <mods:dateIssued>1992</mods:dateIssued>
+                  <mods:dateCreated>(19920930 printing)</mods:dateCreated>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:internetMediaType>application/pdf</mods:internetMediaType>
+                  <mods:extent>p. 101-116</mods:extent>
+                </mods:physicalDescription>
+                <mods:abstract xmlns:mods="http://www.loc.gov/mods/v3">The subspecific division of Rhinolophus luctus Temminck, 1835 is reviewed, and the taxonomic status of Rhinolophus luctus beddomei (Andersen, 1905) is discussed. Specimens in the Bombay Natural History Society, The Natural History Museum, London, and a recently collected Vietnamese animal are statistically analysed. The South-Indian Rhinolophus beddomei is regarded as different from Rhinolophus luctus at specific level.</mods:abstract>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Rhinolophus</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>taxonomy</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Oriental Region</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>morphometrics</mods:topic>
+                </mods:subject>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>systematics</mods:topic>
+                </mods:subject>
+                <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3">0230-9017</mods:identifier>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordCreationDate>090605</mods:recordCreationDate>
+                  <mods:recordChangeDate>20090605000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>HNHM2600</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>The subspecific division of Rhinolophus luctus Temminck, 1835, and the taxonomic status of R. beddomei Andersen, 1905 (Mammalia, Chiroptera)</dc:title>
+              <dc:creator> 
+Topál, Gy. 
+</dc:creator>
+              <dc:creator> 
+Csorba, G. 
+aut 
+</dc:creator>
+              <dc:creator>  
+Forró, L. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Bankovics, A. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Demeter, A. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Korsós, Z. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Murai, É. 
+edt 
+</dc:creator>
+              <dc:creator>  
+Pintér, L. 
+edt 
+</dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Budapest : Hungarian Natural History Museum</dc:publisher>
+              <dc:date>1992.</dc:date>
+              <dc:language/>
+              <dc:format>application/pdf</dc:format>
+              <dc:description>The subspecific division of Rhinolophus luctus Temminck, 1835 is reviewed, and the taxonomic status of Rhinolophus luctus beddomei (Andersen, 1905) is discussed. Specimens in the Bombay Natural History Society, The Natural History Museum, London, and a recently collected Vietnamese animal are statistically analysed. The South-Indian Rhinolophus beddomei is regarded as different from Rhinolophus luctus at specific level.</dc:description>
+              <dc:description>The subspecific division of Rhinolophus luctus Temminck, 1835 is reviewed, and the taxonomic status of Rhinolophus luctus beddomei (Andersen, 1905) is discussed. Specimens in the Bombay Natural History Society, The Natural History Museum, London, and a recently collected Vietnamese animal are statistically analysed. The South-Indian Rhinolophus beddomei is regarded as different from Rhinolophus luctus at specific level.</dc:description>
+              <dc:subject>Rhinolophus</dc:subject>
+              <dc:subject>taxonomy</dc:subject>
+              <dc:subject>Oriental Region</dc:subject>
+              <dc:subject>morphometrics</dc:subject>
+              <dc:subject>systematics</dc:subject>
+              <dc:identifier/>
+              <dc:relation>HNHM</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.0">
+        <file CHECKSUM="c75927e0566743102751f3b538205481c2b018d1"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.0.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2972326">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-01.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="4ee9d7fc617398fa6c8505a4d9a798b2af399f89"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4479848">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-02.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="5d2381483a1fc26b8adf5b9a3e4f66f5e24c477d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2997642">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-03.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.3">
+        <file CHECKSUM="65a6fed2893f3ebd5c3c758a3e656d2d520fd1b1"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.3.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3637306">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-04.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.4">
+        <file CHECKSUM="8e21b1c3b9b7f339c9968196dbb8e48eaa9e39a7"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.4.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1996226">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-05.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.5">
+        <file CHECKSUM="45f1f127205c7eb087cd3151a08c46cf5b35f643"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.5.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2604450">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-06.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.6">
+        <file CHECKSUM="c39e23e9af1b5f2a713a825a718514632493336d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.6.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2048138">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-07.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.7">
+        <file CHECKSUM="2ff5a25ac0f327fa301fc23028a4e99c5aa2d552"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.7.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1796872">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-08.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.8">
+        <file CHECKSUM="058830af1aa6ac4d589fda47c55bd09a08a66904"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.8.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2152314">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-09.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.9">
+        <file CHECKSUM="77ce226e60a778fa9cfbc0c36f87132d28ffbd67"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.9.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2361348">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-10.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.10">
+        <file CHECKSUM="7ff1729012b2b00eaf0cb4955e06f37fc49f4b45"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.10.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1251456">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-11.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.11">
+        <file CHECKSUM="d71d787d4d35fc489856a38b952b341f59c13fc7"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.11.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4572536">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-12.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.12">
+        <file CHECKSUM="481ebce1456f79be6b88f5db50762e1031e07146"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.12.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1307502">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-13.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.13">
+        <file CHECKSUM="e8e758b47f5f20d8d098adc8f038ba2ce0bd861a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.13.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3926406">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-14.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.14">
+        <file CHECKSUM="6fb70531bd9c8805244b2eefacc107485fd703b6"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.14.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2004502">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-15.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.15">
+        <file CHECKSUM="dea1124cbca51376261867251c41417c6dfd4a7e"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.15.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="6422176">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-16.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.16">
+        <file CHECKSUM="776d9a0938452dd477c657338466259e67427108"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.16.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="3642">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/Miscnea_zool_hung_1992_Vol_7_101.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.0">
+        <file ID="TAXA.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3071">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-01.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.13">
+        <file ID="TAXA.13.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="1613">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-14.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.14">
+        <file ID="TAXA.14.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="1349">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-15.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.0">
+        <file ID="OCR.0.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2813">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-01.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="4328">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-02.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3574">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-03.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.3">
+        <file ID="OCR.3.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2856">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-04.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.4">
+        <file ID="OCR.4.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2051">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-05.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.5">
+        <file ID="OCR.5.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2237">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-06.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.6">
+        <file ID="OCR.6.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="800">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-07.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.7">
+        <file ID="OCR.7.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1011">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-08.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.8">
+        <file ID="OCR.8.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1655">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-09.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.9">
+        <file ID="OCR.9.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1480">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-10.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.10">
+        <file ID="OCR.10.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="720">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-11.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.11">
+        <file ID="OCR.11.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3537">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-12.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.12">
+        <file ID="OCR.12.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="661">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-13.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.13">
+        <file ID="OCR.13.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3550">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-14.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.14">
+        <file ID="OCR.14.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2191">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-15.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.15">
+        <file ID="OCR.15.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="319">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-16.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.0">
+        <file ID="JHOVE.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-01.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-02.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-03.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-04.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.4">
+        <file ID="JHOVE.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-05.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.5">
+        <file ID="JHOVE.5.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-06.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.6">
+        <file ID="JHOVE.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-07.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.7">
+        <file ID="JHOVE.7.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-08.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.8">
+        <file ID="JHOVE.8.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-09.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.9">
+        <file ID="JHOVE.9.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-10.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.10">
+        <file ID="JHOVE.10.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-11.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.11">
+        <file ID="JHOVE.11.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-12.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.12">
+        <file ID="JHOVE.12.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-13.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.13">
+        <file ID="JHOVE.13.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-14.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.14">
+        <file ID="JHOVE.14.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-15.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.15">
+        <file ID="JHOVE.15.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101_pdf-16.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.16">
+        <file ID="JHOVE.16.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3857">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/Miscnea_zool_hung_1992_Vol_7_101.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="36252">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/Miscnea_zool_hung/1992_Vol_7/101/.aip/HNHM_Miscnea_zool_hung_1992_Vol_7_101_.aip.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>

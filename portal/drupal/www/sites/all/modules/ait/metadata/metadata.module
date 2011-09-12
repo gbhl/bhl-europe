@@ -1,0 +1,757 @@
+<?php
+
+define('DEFAULT_metadata_stylesheet','Default.xsl');
+define('DEFAULT_metadata_result_list_stylesheet','Highlighted.xsl');
+define('DEFAULT_metadata_result_table_stylesheet','Highlighted.xsl');
+define('DEFAULT_metadata_schema','schema.ods');
+define('DEFAULT_metadata_download_stylesheet','bibtex.xsl');
+define('DEFAULT_metadata_download_stylesheets','(serialized)' . serialize(array()));
+
+
+/**
+ * Implements hook_menu().
+ */
+function metadata_menu() {
+
+  $items['user/%/bhle_settings'] = array(
+    'title' => 'Settings',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('metadata_user_settings'),
+    'access callback' => TRUE,
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'metadata.admin.inc',
+  );
+  $items['admin/config/search/metadata_settings'] = array(
+    'title' => 'Metadata settings',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('metadata_settings'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'metadata.admin.inc',
+  );
+  $items['records_delete'] = array(
+    'page callback' => 'metadata_records_delete',
+    'access arguments' => array('access administration pages'),
+    'title' => 'Delete Records',
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+
+/**
+ * implements hook_permission()
+ */
+function metadata_permission() {
+  return array(
+    'access user specific' => array (
+      'title' => t('User specific data'),
+      'description' => t('Access data that is saved to a specific user.'),
+  ));
+}
+
+
+/**
+ * Implements hook_node_delete().
+ */
+function metadata_node_delete($node, $set_message = true) {
+  static $failed = false;
+  if($failed) return;
+  try {
+    $solr = apachesolr_get_solr(variable_get('metadata_core'));
+    $solr->deleteById(apachesolr_document_id($node->nid));
+    apachesolr_index_set_last_updated(REQUEST_TIME);
+  } catch (Exception $e) {
+    watchdog('Metadata', nl2br(check_plain($e->getMessage())), null, WATCHDOG_ERROR);
+    // Don't keep trying queries if they are failing.
+    $failed = false;
+  }
+}
+
+/**
+ * view for one metadata record
+ * @param <type> $node
+ * @param <type> $view_mode
+ * @param <type> $langcode
+ * @return <type>
+ */
+function metadata_node_view($node, $view_mode, $langcode) {
+  global $language;
+
+  if (strcmp($node->content['#bundle'],'bhle') != 0) return;
+
+  switch ($view_mode) {
+    case "full":
+
+      $format = $node->body['und'][0]['format'];
+
+      try {
+
+        $stylesheet_name = metadata_variable_get_session('metadata_stylesheet');
+        $xsl_file = dirname(__FILE__)."/view_xsl/node/$stylesheet_name";
+        if(!file_exists($xsl_file)) {
+          watchdog('metadata', 'displaying node: ' . "No such stylesheet $stylesheet_name. Using default.", NULL, WATCHDOG_ERROR);
+          $stylesheet_name = DEFAULT_metadata_stylesheet;
+          $xsl_file = dirname(__FILE__)."/view_xsl/node/$stylesheet_name";
+        }
+        $xsl = new DOMDocument();
+        $xsl->load($xsl_file);
+        $xslt = new XSLTProcessor();
+        $xslt->importStylesheet($xsl);
+        
+        $xslt->setParameter('','language',$language->language);
+
+      } catch (PDOException $e) {
+        die('metadata_node_view - Loading XSLT failed: ' . $e->getMessage());
+      }
+
+      $dom = new DOMDocument();
+      $dom->loadXML($node->body['und'][0]['value']);
+      $html_doc = $xslt->transformToDoc($dom);
+      $elems = array($html_doc->documentElement);
+      while(count($elems) > 0) {
+        $e = array_pop($elems);
+        for($nd = $e->firstChild; $nd != null; $nd = $next) {
+          $next = $nd->nextSibling;
+          switch($nd->nodeType) {
+          case XML_ELEMENT_NODE:
+            $elems[] = $nd;
+            break;
+          case XML_TEXT_NODE:
+            while( $nd != null && ($pos = strpos($nd->nodeValue, 'http://')) !== false ) {
+              $link = $nd->splitText($pos);
+              if($link == null) break;
+              $end = strpos($link->nodeValue, " ");
+              if($end == 0) $nd = null;
+              else $nd = $link->splitText($end);
+              $a = $html_doc->createElement("a");
+              $a->setAttribute("class", "autoLink");
+              $a->setAttribute("href", $link->nodeValue);
+              $a->appendChild($link);
+              if($nd != null) {
+                $e->insertBefore($a, $nd);
+              } else {
+                $e->appendChild($a);
+              }
+            }
+            break;
+          }
+        }
+      }
+      $html = metadata_clear_ns_nodes($html_doc->saveXML());
+
+      $node->content['body'] = array (
+        '#type' => 'container',
+        '#attributes' => array(
+          'class' => array('container-inline'),
+      ));
+      $node->content['body']['panel'] = drupal_get_form('metadata_panel_form', $node->nid);
+      $node->content['body']['record']['#markup'] = $html;
+      
+      break;
+
+    case 'short':
+
+      $node->content['body'] = array(
+        '#markup' => '',
+        '#weight' => 10,
+      );
+
+      break;
+  }
+}
+
+
+/**
+ * Remove all xmlns nodes from xml text.
+ */
+function metadata_clear_ns_nodes($xmlstr) {
+  return preg_replace("/xmlns(:[^ ]+)? *= *\"[^\"]*\"/", "", $xmlstr);
+}
+
+
+function metadata_panel_form($form, &$form_state, $nid) {
+
+  $form['funcbox'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array('container-inline'),
+  ));
+  $form['funcbox']['display'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array('container-inline'),
+  ));
+  $form['funcbox']['display']['view_stylesheet'] = array (
+    '#type' => 'select',
+    '#title' => t('Display format:'),
+    '#options' => metadata_get_stylesheets(),
+    '#default_value' => metadata_variable_get_session('metadata_stylesheet'),
+  );
+  $form['funcbox']['display']['update_button'] = array (
+    '#type' => 'button',
+    '#value' => t('update'),
+    '#submit' => array('metadata_panel_form_update'),
+    '#executes_submit_callback' => TRUE,
+  );
+  $form['funcbox']['download'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array('container-inline'),
+  ));
+  $form['funcbox']['download']['download_select'] = array (
+    '#type' => 'select',
+    '#title' => t('Download record as:'),
+    '#options' => metadata_get_download_stylesheets(),
+    '#default_value' => metadata_variable_get_session('metadata_download_stylesheet'),
+  );
+  $form['funcbox']['download']['download_button'] = array (
+    '#type' => 'button',
+    '#submit' => array('metadata_node_download'),
+    '#executes_submit_callback' => TRUE,
+    '#value' => t('Download'),
+  );
+  $form['nid'] = array (
+    '#type' => 'value',
+    '#value' => $nid,
+  );
+
+  return $form;
+}
+
+
+function metadata_panel_form_update($form, &$form_state) {
+   $_SESSION['metadata_stylesheet'] = $form_state['values']['view_stylesheet'];
+}
+
+
+function metadata_node_download($form, &$form_state) {
+  $_SESSION['metadata_download_stylesheet'] = $form_state['values']['download_select'];
+  $node = node_load($form['nid']['#value']);
+
+  try {
+    $xsl = metadata_get_download_stylesheet(metadata_variable_get_session('metadata_download_stylesheet'));
+    $xslt = new XSLTProcessor();
+    $xslt->importStylesheet($xsl);
+  } catch (PDOException $e) {
+    die('metadata_node_view - Loading XSLT failed: ' . $e->getMessage());
+  }
+
+  $dom = new DOMDocument();
+  $dom->loadXML($node->body['und'][0]['value']);
+  $xml_string = $xslt->transformToXML($dom);
+  
+  header('Content-Type: application/text');
+  header('Content-Disposition: attachment; filename=download'); // TODO change filename?
+  echo $xml_string;
+  exit;
+}
+
+
+/**
+ * Page for viewing all metadata //TODO: take out?
+ * @return build array
+ */
+function metadata_page() {
+  $build = array();
+  $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status LIMIT 0,1000';
+  $result = db_query($sql,
+    array(
+      ':type' => 'bhle',
+      ':status' => 1,
+    )
+  );
+  
+  foreach ($result as $row) {
+    $node = node_load($row->nid);
+    $build['node_list'][]= node_view($node, 'short');
+  }
+
+  return $build;
+}
+
+
+
+function metadata_get_schemas() {
+  $files = array();
+  $handle = opendir(dirname(__FILE__) . '/../additional/');
+  while (false !==  ($file = readdir($handle))) {
+    if (substr($file, 0, 6) == 'schema' && substr($file, -4) == '.ods') {
+      $files[$file] = $file;
+  }}
+  return $files;
+}
+
+
+function metadata_get_stylesheets() {
+  $files = array();
+  $handle = opendir(dirname(__FILE__) . '/view_xsl/node');
+  while (false !==  ($file = readdir($handle))) {
+    if ($file != '.' and $file != '..') {
+      $files[] = $file;
+  }}
+  return drupal_map_assoc($files);
+}
+
+
+function metadata_get_list_stylesheets() {
+  $files = array();
+  $handle = opendir(dirname(__FILE__) . '/view_xsl/resultlist');
+  while (false !==  ($file = readdir($handle))) {
+    if ($file != '.' and $file != '..') {
+      $files[] = $file;
+  }}
+  return drupal_map_assoc($files);
+}
+
+
+function metadata_get_table_stylesheets() {
+  $files = array();
+  $handle = opendir(dirname(__FILE__) . '/view_xsl/resulttable');
+  while (false !==  ($file = readdir($handle))) {
+    if ($file != '.' and $file != '..') {
+      $files[] = $file;
+  }}
+  return drupal_map_assoc($files);
+}
+
+
+function metadata_get_download_stylesheets() {
+  $files = array();
+  $handle = opendir(dirname(__FILE__) . '/download_xsl/node');
+  while (false !==  ($file = readdir($handle))) {
+    if ($file != '.' and $file != '..') {
+      $files[] = $file;
+  }}
+  $user_stylesheets = array_keys(metadata_variable_get_session('metadata_download_stylesheets'));
+  $stylesheets = array_merge($files, $user_stylesheets);
+  return drupal_map_assoc($stylesheets);
+}
+
+
+function metadata_get_download_stylesheet($name) {
+  #drupal_set_message( 'opening stylesheet: ' . $name);
+  $xsl = new DOMDocument();
+  $file_path = dirname(__FILE__) . '/download_xsl/node/' . $name;
+  if (is_file($file_path)) {
+    $xsl->load($file_path);
+  }
+  else {
+    $user_stylesheets = metadata_variable_get_session('metadata_download_stylesheets');
+    if (isset($user_stylesheets[$name])) {
+      $xsl->loadXML($user_stylesheets[$name]);
+    }
+    else {
+      drupal_set_message('Could not find stylesheet', 'ERROR');
+    }
+  }
+  return $xsl;
+}
+
+/** 
+ * implements hook_apachesolr_document_handlers
+ * @returns mixed[] A list of callbacks to be applied to documents before sent to solr.
+ *          function($node, $namespace): ApacheSolrDocument[]
+ */
+function metadata_apachesolr_document_handlers($nodeType, $namespace) {
+  return array("metadata_index_node_cb");
+  //return array();
+}
+
+
+/**
+ * @returns ApacheSolrDocument[] or array()
+ */
+function metadata_index_node_cb($node, $namespace) {
+  static $solr = null;
+  try {
+    if($solr == null) {
+      // The name from the Apache Solr core config page:
+      // default would be "Apache Solr server"
+      $solr_id = variable_get('metadata_core');
+      // default id $solr_id = apachesolr_default_server();
+      // Get the $solr object
+      ///$servers = apachesolr_load_all_servers();
+
+      //if(empty($servers[$solr_id])) {
+      //  watchdog('metadata', 'index node: ' . "No such core $solr_id", NULL, WATCHDOG_ERROR);
+      //} else {
+        $solr = apachesolr_get_solr($solr_id);
+        // If there is no server available, don't continue.
+        if (!$solr->ping(variable_get('apachesolr_ping_timeout', 4))) {
+          $solr = null;
+          throw new Exception(t('No Solr instance available during indexing.'));
+        }
+      //}
+    }
+    if($solr != null) {
+      $doc = metadata_node_for_indexing($node, $namespace);
+      if($doc != null) {
+        $solr_handler = $solr->getUrl();
+        if(substr($solr_handler, -1) != "/") $solr_handler .= "/";
+        $solr_handler .= "update";
+        $resp = drupal_http_request($solr_handler, array(
+          'headers' => array(
+            'Content-Type' => 'text/xml; charset=UTF-8'
+          ),
+          'method' => 'POST',          
+          'data' => '<add commitWithin="10000">'.metadata_transform_for_solr($doc)."</add>"
+        ));   
+        // TODO $resp error handling
+        // response = <response> <lst name="responseHeader"><int name="status">0</int><int name="QTime">1</int></lst> </response>
+        //$solr_handler .= "mets?command=full-import&clean=false&commit=true";
+        //  'data' => $doc->saveXML()
+//         watchdog('metadata', 'send: ' . htmlspecialchars(metadata_transform_for_solr($doc)), NULL, WATCHDOG_ERROR);
+      }
+//       $doc = metadata_node_to_document($node, $namespace);
+//       if($doc != null) {
+//         $solr->addDocuments(array($doc));
+//       }
+    }
+  } catch (Exception $e) {
+    watchdog('metadata', 'index node: ' . nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+  }
+
+  // default indexing on default core
+  return array(apachesolr_node_to_document($node, $namespace));
+}
+
+/**
+ *
+ * @return array
+ */
+function metadata_schema_data() {
+  static $data = null;
+  if($data == null) {
+    $data = variable_get("metadata_schema_data", null);
+    if($data == null) {
+      require_once(dirname(__FILE__)."/metadata_config_tools.inc");
+      $data = metadata_read_ods_table(dirname(__FILE__)
+          ."/../additional/schema.ods", 1, 3);
+      //TODO variable_set("metadata_schema_data", $data);
+    }
+  }
+  return $data;
+}
+
+
+/** Enrich with id, etc.
+ *
+ * @param array $node drupal node.
+ * @param string $namespace unused
+ * @return DOMDocument
+ */
+function metadata_node_for_indexing($node, $namespace) {
+  if($node->type != 'bhle') return null;
+  try {
+    $ret = new DOMDocument();
+    $ret->loadXML($node->body["und"][0]["value"]);
+
+    $root = $ret->documentElement;
+    $root->setAttribute("_id", apachesolr_document_id($node->nid));
+    $root->setAttribute("_entity_id", $node->nid);
+    $root->setAttribute("_entity_type", "node");
+    $root->setAttribute("_label", apachesolr_clean_text($node->title));
+    return $ret;
+  } catch(Exception $ex) {
+    watchdog('metadata', 'node for index: ' . nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+    return null;
+  }
+}
+
+/** Convert a mets xml into a solr document
+ * 
+ * @param DOMDocument $document The mets xml node.
+ * @param boolean $retAsStr true=return a string, false=return a DOM.
+ * @return mixed (DOMDocument or string)  
+ */
+function metadata_transform_for_solr($document, $retAsStr=true) {
+  static $xsl = null;
+  if($xsl == null) {
+    $xsltxt = variable_get("metadata_solr_transform", null);
+    if($xsltxt == null) {
+      require_once(dirname(__FILE__)."/metadata_config_tools.inc");
+      
+      $data = metadata_read_ods_table(dirname(__FILE__)."/../additional/schema.ods", 1, 3);
+      $xsldom = metadata_create_data_transformer($data);
+    } else {
+      $xsldom = new DOMDocument();
+      $xsldom->loadXML($xsltxt);
+    }
+    $xsl = new XSLTProcessor();
+    $xsl->importStylesheet($xsldom);
+  }
+  if($retAsStr)
+    return $xsl->transformToXML($document);
+  return $xsl->transformToDoc($document);
+}
+
+
+/**
+ * Convert a drupal node into the structure for Apache solr
+ */
+function metadata_node_to_document($node, $namespace) {
+  // We fill the apache solr fields (names from the schema.xml) with data from the field.
+  if($node->type != 'bhle') return null;
+
+  $schema = metadata_schema_data();
+
+  $asd = new ApacheSolrDocument();
+  $asd->addField("id", apachesolr_document_id($node->nid));
+  $asd->addField("entity_id", $node->nid);
+  $asd->addField("entity_type", "node");
+  $asd->addField("label", apachesolr_clean_text($node->title));
+
+  $doc = new DOMDocument();
+  try {
+    $doc->loadXML($node->body["und"][0]["value"]);
+
+    $root = $doc->documentElement;
+    $xp = new DOMXPath($doc);
+    foreach($schema as $field) {
+      if(!empty($field["Namespaces"])) {
+        list($alias, $ns) = array_map('trim', explode('=', $field["Namespaces"]));
+        echo( 'ns: ' ."$alias=$ns<br/>");
+        $xp->registerNamespace($alias, $ns);
+      }
+    }
+
+// echo "<pre>";
+    echo microtime(true)."index: ".$node->nid."\n";
+    foreach($schema as $field) {
+      if(!empty($field["Field-XPath"])) {
+      watchdog('metadata', 'xp: ' . $field["Field-XPath"], NULL, WATCHDOG_ERROR);
+//     echo "....xp: " . $field["Field-XPath"] . "\n";
+        foreach($xp->query($field["Field-XPath"], $root) as $elem) {
+          if(!empty($field["Field"])) {
+//     echo "....fld: " . $field["Field"] . "\n";
+            $asd->addField($field["Field"], $elem->textContent);
+          }
+          if(!empty($field["Role"])) {
+//     echo "....role: " . $field["Role"] . "\n";
+            $asd->addField($field["Role"], $elem->textContent);
+          }
+        }
+      }
+    }
+//     die(microtime(true));
+//       watchdog('metadata', 'import: ' . nl2br(check_plain($msg)), NULL, WATCHDOG_INFO);
+    return $asd;
+  } catch(Exception $ex) {
+    watchdog('metadata', 'node to doc: ' . nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+    return null;
+  }
+}
+
+/**
+ * alter one item in the result list (xsl transformation)
+ */
+function metadata_apachesolr_process_results(&$results) {
+  
+  foreach ($results as $key => $result) {
+    
+    $node = node_load($result['fields']['entity_id']);
+    // TODO: this is hack for taxonomy term result list
+    if($node->type != 'bhle') continue;
+
+    $dom = new DOMDocument();
+    $dom->loadXML($node->body['und'][0]['value']);
+
+    if(array_key_exists('highlighting', $result)) {
+      $hl_terms = advanced_search_extract_hl_terms($result['highlighting']);
+      advanced_search_hightlight_node($hl_terms,$dom);
+    }
+
+    $view_type = metadata_variable_get_session('advanced_search_result_view_type');
+
+    switch ($view_type) {
+      case 'list':
+        $folder_name = 'resultlist';
+        $stylesheet_name = metadata_variable_get_session('metadata_result_list_stylesheet');
+        break;
+      case 'table':
+        $folder_name = 'resulttable';
+        $stylesheet_name = metadata_variable_get_session('metadata_result_table_stylesheet');
+        break;
+      default:
+        die('metadata_apachesolr_process_results - result view type not set correctly');
+    }
+
+    $xsl_file = dirname(__FILE__)."/view_xsl/$folder_name/$stylesheet_name";
+    if(!file_exists($xsl_file)) {
+      watchdog('metadata', 'displaying resultlist: ' . "No such stylesheet $stylesheet_name. Using default.", NULL, WATCHDOG_ERROR);
+      $stylesheet_name = constant('DEFAULT_metadata_' . $view_type . '_stylesheet');
+      $xsl_file = dirname(__FILE__)."/view_xsl/resultlist/$stylesheet_name";
+    }
+    $xsl = new DOMDocument();
+    $xsl->load($xsl_file);
+    $xslt = new XSLTProcessor();
+    $xslt->setParameter('', 'displayURI', url("node/" . $node->nid));
+    $xslt->importStylesheet($xsl);
+
+    $html = metadata_clear_ns_nodes($xslt->transformToXML($dom));
+
+    $results[$key]['snippet'] = $html;
+  }
+}
+
+
+/**
+ * gets a variable on session level - fallback if needed
+ *
+ * @param <type> $name - name of the variable
+ * @param <type> $account - account for user specific variable (default: current user)
+ * @return <type> variable value
+ */
+function metadata_variable_get_session($name, $account = null) {
+
+  if (isset($_SESSION[$name])) return $_SESSION[$name];
+  else return metadata_variable_get_user($name, $account);
+}
+
+/**
+ * gets a variable on user level - fallback if needed
+ *
+ * @param <type> $name - name of the variable
+ * @param <type> $account - account for user specific variable (default: current user)
+ * @return <type> variable value
+ */
+function metadata_variable_get_user($name, $account = null) {
+  global $user;
+
+  if ($account === null) $account = $user;
+
+  if (isset($account->data[$name])) return $account->data[$name];
+  else return metadata_variable_get_application($name, $account);
+}
+
+/**
+ * gets a variable on application level - fallback if needed
+ *
+ * @param <type> $name - name of the variable
+ * @param <type> $account - account for user specific variable (default: current user)
+ * @return <type> variable value
+ */
+function metadata_variable_get_application($name, $account = null) {
+
+  //TODO: switch with commented out code block when application-specialization ready
+  $prefixed_name = 'bhle_' . $name;
+  $variable = variable_get($prefixed_name);
+  if (isset($variable)) return $variable;
+
+  /*
+  if (isset($account->data['application'])) {
+    // TODO determine prefix when more then 1 application for 1 user possible
+    $prefixed_name = $account->data['application'] . '_' . $name;
+    $variable = variable_get($prefixed_name);
+    if (isset($variable)) return $variable;
+  }
+   */
+
+  // get global default
+  if (defined('DEFAULT_' . $name)) {
+    $variable = constant('DEFAULT_' . $name);
+
+    // unserializing if needed
+    if (is_string($variable)) {
+      if (strncmp($variable,'(serialized)',12) == 0) {
+        return unserialize(substr($variable,12));
+    }}
+    
+    return $variable;
+  }
+  else die('metadata_variable_get_application - variable name not declared (account-uid: ' . $account->uid . '  name: ' . $name . ')');
+}
+
+
+/**
+ * sets a variable on user level
+ *
+ * @param <type> $name - name of the variable
+ * @param <type> $value - value to set
+ * @param <type> $account - account for user specific variable (default: current user)
+ */
+function metadata_variable_set_user($name, $value, $account = null) {
+  global $user;
+
+  if ($account === null) $account = user_load($user->uid);  // does not work correctly without re-loading $user
+  
+  user_save($account, array('data' => array($name => $value)));
+}
+
+
+/**
+ * sets a variable on application level
+ *
+ * @param <type> $name - name of the variable
+ * @param <type> $value - value to set
+ * @param <type> $account - account for user specific variable (default: current user)
+ */
+function metadata_variable_set_application($name, $value, $account = null) {
+
+  //TODO: switch with commented out code block when application-specialization ready
+  $application = 'bhle';
+  /*
+  if (!isset($account->data['application'])) 
+    die('metadata_variable_set_application - application could not be determined (account-uid: ' . $account->uid . '  name: ' . $name . ')');
+
+  $application = $account->data['application'];
+  */
+
+  // TODO determine prefix when more then 1 application for 1 user possible
+  $prefixed_name = $application . '_' . $name;
+  variable_set($prefixed_name, $value);
+}
+
+
+/**
+ * unsets a variable on user level
+ *
+ * @param <type> $name - name of the variable
+ * @param <type> $value - value to set
+ * @param <type> $account - account for user specific variable (default: current user)
+ */
+function metadata_variable_unset_user($name, $account = null) {
+  global $user;
+
+  if ($account === null) $account = user_load($user->uid);  // does not work correctly without re-loading $user
+
+  unset($account->data[$name]);
+  user_save($account);
+}
+
+/*
+ * function for deleting nodes from database
+ */
+function metadata_records_delete($type, $taxonomy_id = '') {
+
+  if (!empty($taxonomy_id)) {
+    drupal_set_message("deleting all records from type: $type with taxonomy-id: $taxonomy_id");
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.nid IN
+      (SELECT entity_id FROM {field_data_field_collection} f WHERE f.field_collection_tid = :tid)';
+    $result = db_query($sql, array(':type' => $type, ':tid' => $taxonomy_id));
+  }
+  else {
+    drupal_set_message("deleting all records from type: $type");
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+    $result = db_query($sql, array(':type' => $type));
+  }
+
+  $nids = array();
+  foreach ($result as $row) {
+    $nids[] = $row->nid;
+  }  
+  
+  if (!empty($nids)) {
+    ini_set('max_execution_time', '900');
+    foreach (array_chunk($nids, 100) as $nid_chunk) {
+      node_delete_multiple($nid_chunk);
+    }
+    watchdog('Metadata', "metadata_records_delete - deleted nodes with nids: " . implode(', ', $nids));
+    return "deleted " . count($nids) . " nodes";
+  }
+  else {
+    return "no nodes to delete";
+  }
+}
