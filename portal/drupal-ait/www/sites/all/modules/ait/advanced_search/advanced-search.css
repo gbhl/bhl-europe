@@ -126,3 +126,19 @@ a.normalText:hover {
 .search-result .title {
   visibility: hidden;
 }
+
+#edit-simple-search-field {
+  font-size: small;
+  width: 9em;
+/*   position: absolute; */
+  right: 0px;
+  top:0px;
+/*   float:right; */
+}
+
+#edit-simple-search-field .form-type-checkbox {
+  margin: 0px;
+}
+#edit-simple-search-field .form-type-checkbox input {
+  margin: 0px;
+}
