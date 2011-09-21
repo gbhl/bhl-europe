@@ -296,6 +296,15 @@ function names_lookup_config_form($form, &$form_state) {
         '#required' => FALSE,
     );
 
+    $form['names_lookup_synonyms_sample_query'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Enter a scientific name to receive synonyms for'),
+        '#default_value' => "",
+        '#size' => 15,
+        '#description' => t('This field allows to test the Names module by issuing a sample query. The result will be displayed as error message upon saving the configuration (names are separated by semi-colons).'),
+        '#required' => FALSE,
+    );
+
     return system_settings_form($form);
 }
 
@@ -331,6 +340,23 @@ function names_lookup_config_form_validate($form, &$form_state) {
             form_set_error('names_lookup_sample_query', t('Result: ' . join( '; ', $names ) ));
         }
     }
+
+    $sample_name = trim( $form_state['values']['names_lookup_synonyms_sample_query'] );
+    if( !empty($sample_name) ) {
+        $synonyms = names_lookup_synonyms($sample_name);
+        if( $synonyms === false ) {
+            form_set_error('names_lookup_synonyms_sample_query', t('Error while calling the webservice.'));
+        }
+        else {
+            $names = array();
+            foreach( $synonyms as $synonym ) {
+                $names[] = $synonym['name'];
+            }
+            
+            form_set_error('names_lookup_synonyms_sample_query', t('Result: ' . join( '; ', $names ) ));
+        }
+    }
+
 }
 
 /**
