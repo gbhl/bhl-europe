@@ -488,10 +488,15 @@ a.BRgrey:visited   { color: #666; }
     line-height: 1.5em;
     font-weight: normal;
 }
+
+.BRfloat textarea.ocrTextarea{
+   height: 500px;
+}
+
 .BRfloat textarea {
     height: 85px;
 }
-.BRfloat button[type=button] {
+.BRfloat button {
     font-size: 2em;
     padding: 5px;
     margin: 0 auto;
@@ -499,7 +504,7 @@ a.BRgrey:visited   { color: #666; }
 .BRfloat p {
     width: 575px;
     font-size: 1.6em;
-    margin: 20px 20px 0;
+    margin: 20px 20px 20px;
 }
 .BRfloat p.meta {
     font-size: 1.1em;

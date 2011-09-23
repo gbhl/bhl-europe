@@ -299,9 +299,11 @@ BookReader.prototype.init = function() {
     this.initUIStrings();
 
     // Start AJAX request for OL data
-    if (this.getOpenLibraryRecord) {
-        this.getOpenLibraryRecord(this.gotOpenLibraryRecord);
-    }
+    //if (this.getOpenLibraryRecord) {
+    //    this.getOpenLibraryRecord(this.gotOpenLibraryRecord);
+    //}
+	
+	this.initTOC();
 
 }
 
@@ -2725,19 +2727,15 @@ BookReader.prototype.search = function(term) {
     
     $('#textSrch').blur(); //cause mobile safari to hide the keyboard     
     
-    var url = 'http://'+this.server.replace(/:.+/, ''); //remove the port and userdir
-    url    += '/fulltext/inside.php?item_id='+this.bookId;
-    url    += '&doc='+this.subPrefix;   //TODO: test with subitem
-    url    += '&path='+this.bookPath.replace(new RegExp('/'+this.subPrefix+'$'), ''); //remove subPrefix from end of path
-    url    += '&q='+escape(term);
-    //console.log('search url='+url);
+    var url = this.basepath + '/' + this.fedorapath + '/objects/' + this.pid + '/methods/demo:bookSdef/search?query=' + escape(term);
     
     term = term.replace(/\//g, ' '); // strip slashes, since this goes in the url
     this.searchTerm = term;
     
     this.removeSearchResults();
     this.showProgressPopup('<img id="searchmarker" src="'+this.imagesBaseURL + 'marker_srch-on.png'+'"> Search results will appear below...');
-    $.ajax({url:url, dataType:'jsonp', jsonpCallback:'br.BRSearchCallback'});    
+    //$.ajax({url:url, dataType:'jsonp', jsonpCallback:'br.BRSearchCallback'});
+	$.ajax({url:url, dataType:'json', success: function(data){br.BRSearchCallback(data);}});  	
 }
 
 // BRSearchCallback()
@@ -2770,6 +2768,10 @@ BookReader.prototype.BRSearchCallback = function(results) {
     }
     br.updateSearchHilites();
     br.removeProgressPopup();
+}
+
+BookReader.prototype.leafNumToIndex = function(pageNum) {
+    return pageNum - 1;
 }
 
 
@@ -3567,11 +3569,19 @@ BookReader.prototype.removeChapters = function() {
     $('#BRnavpos .chapter').remove();
 }
 
+BookReader.prototype.initTOC = function() {
+    var self = this;
+	$.getJSON('/bookreader/toc.json', function(data){
+		self.updateTOC(data);
+	})
+}
+
 /*
  * Update the table of contents based on array of TOC entries.
  */
 BookReader.prototype.updateTOC = function(tocEntries) {
     this.removeChapters();
+	
     for (var i = 0; i < tocEntries.length; i++) {
         this.addChapterFromEntry(tocEntries[i]);
     }
@@ -3700,7 +3710,7 @@ BookReader.prototype.initToolbar = function(mode, ui) {
     jToolbar.find('.info').colorbox({inline: true, opacity: "0.5", href: "#BRinfo", onLoad: function() { self.autoStop(); self.ttsStop(); } });
 	jToolbar.find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { self.autoStop(); self.ttsStop(); } });
 	
-    $('<div style="display: none;"></div>').append(this.blankShareDiv()).append(this.blankInfoDiv()).append(this.blankDownloadDiv()).appendTo($('body'));
+    $('<div style="display: none;"></div>').append(this.blankShareDiv()).append(this.blankInfoDiv()).append(this.blankDownloadDiv()).append(this.blankOCRDiv()).appendTo($('body'));
 
     $('#BRinfo .BRfloatTitle a').attr( {'href': this.bookUrl} ).text(this.bookTitle).addClass('title');
 	$('#BRdownload .BRfloatTitle a').attr( {'href': this.bookUrl} ).text(this.bookTitle).addClass('title');
@@ -3753,6 +3763,17 @@ BookReader.prototype.blankDownloadDiv = function() {
         '<div class="BRfloat" id="BRdownload">',
             '<div class="BRfloatHead">',
                 'Download',
+                '<a class="floatShut" href="javascript:;" onclick="$.fn.colorbox.close();"><span class="shift">Close</span></a>',
+            '</div>',
+        '</div>'].join('\n')
+    );
+}
+
+BookReader.prototype.blankOCRDiv = function() {
+    return $([
+        '<div class="BRfloat" id="BRocr">',
+            '<div class="BRfloatHead">',
+                'OCR',
                 '<a class="floatShut" href="javascript:;" onclick="$.fn.colorbox.close();"><span class="shift">Close</span></a>',
             '</div>',
         '</div>'].join('\n')
@@ -5371,8 +5392,9 @@ BookReader.prototype.getToolBox = function(index) {
 	var toolbox = $(
 	   "<div name='BRtoolbox_" + index + "' id='BRtoolbox_" + index + "' class='BRtoolbox'>"
         +   "<span id='BRtoolboxbuttons'>"
-        +     "<button class='BRicon add_page'></button>"
-		+     "<button class='BRicon remove_page'></button>"
+        +     "<button class='BRicon add_page' title='Add this page to download basket'></button>"
+		+     "<button class='BRicon remove_page' title='Remove this page from download basket'></button>"
+		+     "<button class='BRicon ocr' title='Display the OCR of this page'></button>"
         +   "</span>"
         + "</div>"
 	);
@@ -5398,6 +5420,14 @@ BookReader.prototype.getToolBox = function(index) {
 		self.updateDownloadDialog();
 		$(this).hide();
         $(this).siblings('.add_page').show();
+	});
+	
+	toolbox.find('.ocr').click( function(){
+		self.showPageOCR(index);
+	});
+	
+	toolbox.find('.print_page').click( function(){
+		window.print();
 	});
 	
 	toolbox.hide();
@@ -5533,6 +5563,32 @@ BookReader.prototype.updateDownloadDialog = function(){
 	this.buildDownloadDiv($('#BRdownload'));
 }
 
+BookReader.prototype.updateOCRDialog = function(index){
+	$('#BRocr').find('form').each(function(){
+		$(this).remove();
+	});
+
+	var ocrUrl = this.getPageOCRURI(index);
+	var pageOCR = $.ajax({
+      url: ocrUrl,
+      async:false
+   }
+	).responseText;
+	
+	var jForm = $([
+        '<form method="post" action="">',
+                '<fieldset class="ocrFieldset">',
+                '</fieldset>',
+            '<fieldset class="center">',
+                '<button type="submit"">Correct it!</button>',
+            '</fieldset>',
+        '</form>'].join('\n'));
+	
+	jForm.find('.ocrFieldset').append('<textarea class="ocrTextarea">' + pageOCR + '</textarea >');
+	
+	jForm.appendTo($('#BRocr'));
+}
+
 BookReader.prototype.startDownload = function(format, quality, ranges, whole) 
 {
 	var method = '';
@@ -5561,7 +5617,7 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 			break;
 	}
 	
-	var url = this.basepath + '/fedora/objects/' + br.pid + '/methods/demo:bookSdef/';
+	var url = this.basepath + '/' + this.fedorapath + '/objects/' + br.pid + '/methods/demo:bookSdef/';
 	url += method;
 	url += '?ranges=';
 	
@@ -5571,10 +5627,15 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 		return;
 	}
 	
-	url += '&resolution=';
-	if (format != 'ocr'){
+	if (method != 'ocr'){
+		url += '&resolution=';
 		url += resolution;
 	} 
 
 	window.open(url);
 }
+
+BookReader.prototype.showPageOCR = function(index){
+	this.updateOCRDialog(index);
+	$.colorbox({inline: true, href: '#BRocr', opacity: 0.3});
+} 

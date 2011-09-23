@@ -5,6 +5,7 @@
     <title>BHL Europe </title>
     <% 
         String basePath = "http://localhost:8080";
+        String fedoraPath = "fedora";
     %>
     <link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReader.css"/>
     <!-- Custom CSS overrides -->
@@ -23,11 +24,11 @@
 <body style="background-color: ##939598;">
 
 <div id="BookReader">
-    Internet Archive BookReader Demo    <br/>
+    BHL Europe BookReader<br/>
     
     <noscript>
     <p>
-        The BookReader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.  You can also try one of the <a href="http://www.archive.org/details/goodytwoshoes00newyiala"> other formats of the book</a>.
+        The BookReader requires JavaScript to be enabled. Please check that your browser supports JavaScript and that it is enabled in the browser settings.</a>.
     </p>
     </noscript>
 </div>
@@ -38,7 +39,7 @@ function getPageCount(pid){
 	query += 'where ($object <fedora-model:hasModel> <fedora:ilives:pageCModel> and $object <fedora-rels-ext:isMemberOf>';
 	query += ' <fedora:' + pid + '>) order by $object';
 
-	var riUrl = '<%= basePath %>/fedora/risearch';
+	var riUrl = '<%= basePath %>/<%= fedoraPath %>/risearch';
 	var options = {
 			  type: 'tuples',
 			  lang: 'itql',
@@ -80,16 +81,22 @@ function getUrlVars(index) {
  return vars;
 }
 
+console.log(location);
+
 // Create the BookReader object
 br = new BookReader();
 
 br.basepath = '<%= basePath %>';
+
+br.fedorapath = '<%= fedoraPath %>';
 
 //Extract variable pid from URL
 br.pid = '<%= request.getParameter("pid") %>';
 
 // Extract variable pid from URL
 br.ui = '<%= request.getParameter("ui") %>';
+
+br.server = '<%= basePath %>/booktoolbox';
 
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
@@ -101,19 +108,19 @@ br.getPageHeight = function(index) {
     return 1200;
 }
 
-//We load the images from archive.org -- you can modify this function to retrieve images
-//using a different URL structure
 br.getPageURI = function(index, reduce, rotate) {
-	//var level = Math.floor(-2 * (reduce -6) / 2);
-	//console.log(level);
- // reduce and rotate are ignored in this simple implementation, but we
- // could e.g. look at reduce and load images from a different directory
- // or pass the information to an image server
  var leafStr = '000';            
  var imgStr = (index+1).toString();
  var re = new RegExp("0{"+imgStr.length+"}$");
- var url = '<%= basePath %>/fedora/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/demo:pageSdef/jpeg';
-	//url + = '?level=' + level;
+ var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/demo:pageSdef/jpeg';
+ return url;
+}
+
+br.getPageOCRURI = function(index) {
+ var leafStr = '000';            
+ var imgStr = (index).toString();
+ var re = new RegExp("0{"+imgStr.length+"}$");
+ var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/datastreams/TEI/content';
  return url;
 }
 
@@ -169,7 +176,7 @@ br.numLeafs = getPageCount(br.pid);
 
 //Book title and the URL used for the book title link
 br.bookTitle= br.pid.split(':')[1] + ' on BHL Europe';
-br.bookUrl  = 'http://bhl-alexandria.nhm.ac.uk/datamanagement';
+br.bookUrl  = 'http://bhl-int1.nhm.ac.uk/datamanagement';
 
 // Override the path used to find UI images
 br.imagesBaseURL = br.basepath + '/bookreader/images/';
@@ -183,8 +190,8 @@ br.init();
 
 // read-aloud and search need backend compenents and are not supported in the demo
 $('#BRtoolbar').find('.read').hide();
-$('#textSrch').hide();
-$('#btnSrch').hide();
+//$('#textSrch').hide();
+//$('#btnSrch').hide();
 </script>
 
 </body>
