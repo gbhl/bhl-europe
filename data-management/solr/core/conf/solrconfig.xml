@@ -67,8 +67,7 @@
      The Merge Policy in Lucene controls how merging is handled by Lucene.  The default in 2.3 is the LogByteSizeMergePolicy, previous
      versions used LogDocMergePolicy.
 
-     LogByteSizeMergePolicy chooses segments to merge based on their size.  The Lucene 2.2 default, LogDocMergePolicy chose when
-     to merge based on number of documents
+     LogByteSizeMergePolicy chooses segments to merge based on their size.  The Lucene 2.2 default, LogDocMergePolicy chose when to merge based on number of documents
 
      Other implementations of MergePolicy must have a no-argument constructor
      -->
