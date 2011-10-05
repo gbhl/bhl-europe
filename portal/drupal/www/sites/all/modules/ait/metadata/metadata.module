@@ -446,16 +446,24 @@ function metadata_node_for_indexing($node, $namespace) {
   if($node->type != 'bhle') return null;
   try {
     $ret = new DOMDocument();
-    $ret->loadXML($node->body["und"][0]["value"]);
+    if(!$ret){
+      //TODO throw exception
+      throw new Exception("new DOMDocument() returned an uninitialized object, this should never happen.");
 
+    }
+    $ret->loadXML($node->body["und"][0]["value"]);
     $root = $ret->documentElement;
+    if(!$root){
+      throw new Exception("loaded XML document is empty, node " . $node->nid . "'" . $node->title . "'");
+    }
     $root->setAttribute("_id", apachesolr_document_id($node->nid));
     $root->setAttribute("_entity_id", $node->nid);
     $root->setAttribute("_entity_type", "node");
     $root->setAttribute("_label", apachesolr_clean_text($node->title));
     return $ret;
-  } catch(Exception $ex) {
+  } catch(Exception $e) {
     watchdog('metadata', 'node for index: ' . nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+    drupal_set_message(nl2br(check_plain($e->getMessage())), "error");
     return null;
   }
 }
