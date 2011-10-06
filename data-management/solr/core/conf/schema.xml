@@ -289,13 +289,14 @@
          (stopwords_en.txt), down cases, protects words from protwords.txt, and
          finally applies Porter's stemming.  The query time analyzer
          also applies synonyms from synonyms.txt. -->
+
     <!--  unused for BHL-Metadata
     <fieldType name="text_en" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <!- - in this example, we will only use synonyms at query time
         <filter class="solr.SynonymFilterFactory" synonyms="index_synonyms.txt" ignoreCase="true" expand="false"/>
-        -- >
+        - ->
         <!- - Case insensitive stop word removal.
           add enablePositionIncrements=true in both the index and query
           analyzers to leave a 'gap' for more accurate phrase queries.
@@ -391,7 +392,7 @@
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.KeywordMarkerFilterFactory" protected="protwords.txt"/>
         <filter class="solr.EnglishMinimalStemFilterFactory"/>
-        <!-- this filter can remove any duplicate tokens that appear at the same position - sometimes
+        <!- - this filter can remove any duplicate tokens that appear at the same position - sometimes
              possible with WordDelimiterFilter in conjuncton with stemming. - ->
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
       </analyzer>
@@ -408,6 +409,15 @@
       </analyzer>
     </fieldType>
     -->
+
+    <!-- A text field that only splits on whitespace for exact matching of words -->
+    <fieldType name="sorting" class="solr.TextField" positionIncrementGap="100" sortMissingLast="true">
+      <analyzer>
+        <filter class="solr.ICUNormalizer2FilterFactory" name="nfkc_cf" mode="compose"/>
+        <tokenizer class="solr.KeywordTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
 
     <!-- This is an example of using the KeywordTokenizer along
          With various TokenFilterFactories to produce a sortable field
