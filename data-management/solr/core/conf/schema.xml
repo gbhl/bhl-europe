@@ -570,10 +570,7 @@
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
      -->
 
-<field name="entity_id" multiValued="false" type="long" indexed="true" stored="true" required="true"/>
-   <!-- entity_type is "node", "file", "user", or some other Drupal object type -->
-   <field name="entity_type" multiValued="false" type="string" indexed="true" stored="true" required="true"/>
-
+   <field name="entity_id" multiValued="false" type="long" indexed="true" stored="true" required="true"/>
    <field name="label" type="text_general" indexed="true" termVectors="false" stored="true" multiValued="true"/>
 
    <field name="all" type="text_general" indexed="true" termVectors="false" stored="false" multiValued="true"/>
