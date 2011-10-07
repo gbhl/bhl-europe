@@ -228,7 +228,8 @@
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <!-- ICUFoldingFilterFactory = combined behavior of ASCIIFoldingFilter, LowerCaseFilter, and ICUNormalizer2Filter -->
         <filter class="solr.ICUFoldingFilterFactory"/>
-    <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" enablePositionIncrements="true" />
+        <filter class="solr.PatternReplaceFilterFactory" pattern="([aAoOuU])e" replacement="$1" replace="all"/>
+    	<filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" enablePositionIncrements="true" />
       </analyzer>
     </fieldType>
 
