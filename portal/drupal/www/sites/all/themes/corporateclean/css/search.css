@@ -1,0 +1,38 @@
+.front #search_area {position:relative; width:1010px; height:140px; background:transparent url('../images/bg-simple-search.png') no-repeat 0px 0px;}            
+
+.front #search_area #block-advanced-search-metadata-simple-search {float:left; width:700px;}
+
+#block-advanced-search-metadata-simple-search form .form-item,
+#block-advanced-search-metadata-simple-search form .form-action {margin:0px;}
+#block-advanced-search-metadata-simple-search form .form-item.form-type-textfield.form-item-query {float:left; width:570px;}
+#block-advanced-search-metadata-simple-search form .form-item.form-type-textfield.form-item-query label {float:left; padding:0px; margin:15px 25px 25px; color:#006626; font-weight:bold; /*height: 136px;*/}
+#block-advanced-search-metadata-simple-search form .form-item.form-type-textfield.form-item-query input#edit-query {clear:left; float:left; width:520px; padding:5px; margin:15px 0px 0px 35px; font-size:125%; border:none; background: transparent none; text-align:center;}
+#block-advanced-search-metadata-simple-search form #edit-simple-search-field {position:absolute; top:15px; left:125px; width:400px; height:25px; overflow:hidden;}
+#block-advanced-search-metadata-simple-search form #edit-simple-search-field .form-item.form-type-checkbox {float:left; display:inline; padding:0px 5px;}
+#block-advanced-search-metadata-simple-search form #edit-simple-search-field .form-item.form-type-checkbox label {color:#006626; font-weight:bold;padding:2px;}
+#block-advanced-search-metadata-simple-search form input#edit-submit {float:left; width:92px; height:47px; overflow:hidden; padding:0px; margin:61px 0px 0 20px;} 
+
+.front #search_area .simple-search-links {float:right; position:relative; width:300px;}
+
+.front #search_area p.advanced-search {
+  position:absolute; top:0px; left:-180px; 
+  margin:0px; padding:15px 20px 5px 0; 
+  width:140px; text-align:right; font-size:116.7%; 
+  background:transparent url('../images/icon-arrow.png') no-repeat right 18px;
+}
+.front #search_area p.advanced-search a {margin:0px; padding:0px; color:#006626; font-weight:bold; line-height:1; text-decoration:none;}
+.front #search_area p.advanced-search a:hover {text-decoration:underline;}
+
+.front #search_area p.advanced-buttons {
+  display:block; margin:0px; padding:43px 0 0 0; 
+  width:289px; height:80px;
+  background:transparent url('../images/bg-simplesearch-links.png') no-repeat 0px bottom;
+}
+.front #search_area p.advanced-buttons a {
+  display:block; margin:0px; padding:5px; 
+  width:134px; height:70px;
+  text-indent: -50000px; 
+  overflow:hidden;
+}
+.front #search_area p.advanced-buttons a.browse-link {float:left;}
+.front #search_area p.advanced-buttons a.tutorial-link {float:right;}

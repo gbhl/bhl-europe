@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function menu_item_visibility_schema() {
+  $schema['menu_links_visibility_role'] = array(
+    'fields' => array(
+      'mlid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => "The menu link's ID from {menu_links}.mlid.",
+      ),
+      'rid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'description' => "The user's role ID from {users_roles}.rid.",
+      ),
+    ),
+    'primary key' => array('mlid', 'rid'),
+    'indexes' => array(
+      'rid' => array('rid'),
+    ),
+    'foreign keys' => array(
+      'menu_links' => array(
+        'table' => 'menu_links',
+        'columns' => array('mlid' => 'mlid'),
+      ),
+      'role' => array(
+        'table' => 'role',
+        'columns' => array('rid' => 'rid'),
+      ),
+    ),
+  );
+
+  return $schema;
+}
