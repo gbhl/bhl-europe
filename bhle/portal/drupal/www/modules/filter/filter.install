@@ -1,4 +1,5 @@
 <?php
+// $Id: filter.install,v 1.51 2011/01/02 17:26:39 webchick Exp $
 
 /**
  * @file
@@ -152,9 +153,8 @@ function filter_install() {
  * Implements hook_update_dependencies().
  */
 function filter_update_dependencies() {
-  // filter_update_7005() migrates role permissions and therefore must run
-  // after the {role} and {role_permission} tables are properly set up, which
-  // happens in user_update_7007().
+  // Filter update 7007 migrates permissions and therefore needs to run after
+  // the {role} table is properly set up.
   $dependencies['filter'][7005] = array(
     'user' => 7007,
   );

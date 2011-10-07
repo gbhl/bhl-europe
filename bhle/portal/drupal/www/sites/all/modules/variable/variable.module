@@ -36,7 +36,7 @@ function variable_access($variable, $account = NULL) {
     return TRUE;
   }
   elseif ($variable = _variable_variable($variable)) {
-    $group = isset($variable['group']) ? variable_get_group($variable['group']) : array();
+    $group = variable_get_group($variable['group']);
     if (!isset($group['access']) && !isset($variable['access'])) {
       return FALSE;
     }
@@ -408,7 +408,6 @@ function variable_include($variable = NULL) {
     // Include module.variable.inc files related to the variable and the variable type.
     variable_module_include($variable['module']);
     variable_type_include($variable['type']);
-    $included[$variable['name']] = TRUE;
   }
 }
 

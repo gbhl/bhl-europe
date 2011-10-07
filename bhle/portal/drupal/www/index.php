@@ -1,4 +1,5 @@
 <?php
+// $Id: index.php,v 1.99 2009/10/15 14:07:25 dries Exp $
 
 /**
  * @file

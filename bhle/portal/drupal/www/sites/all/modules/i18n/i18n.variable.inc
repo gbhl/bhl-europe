@@ -5,20 +5,20 @@
  */
 
 /**
- * Implements hook_variable_group_info().
+ * Implements hook_variable_group_info()
  */
 function i18n_variable_group_info() {
   $groups['i18n'] = array(
     'title' => t('Multilingual settings'),
     'description' => t('Mixed options for multilingual sites.'),
     'access' => 'administer site configuration',
-    'path' => 'admin/config/regional/i18n',
+    'path' => 'admin/config/regional/i18n',     
   );
   return $groups;
 }
 
 /**
- * Implements hook_variable_info().
+ * Implements hook_variable_info()
  */
 function i18n_variable_info($options = array()) {
   $variables['i18n_language_list'] = array(
@@ -33,7 +33,7 @@ function i18n_variable_info($options = array()) {
 }
 
 /**
- * Implements hook_variable_type_info().
+ * Implements hook_variable_type_info()
  */
 function i18n_variable_type_info() {
   // Multiple variable per language options

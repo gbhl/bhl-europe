@@ -380,7 +380,6 @@ class DrupalApacheSolrService {
       // Make sure we are not sending a request body.
       $options['data'] = NULL;
     }
-
     $result = drupal_http_request($url, $options);
 
     if (!isset($result->code) || $result->code < 0) {

@@ -1,4 +1,5 @@
 <?php
+// $Id: stream_wrappers.inc,v 1.22 2010/12/30 22:33:03 webchick Exp $
 
 /**
  * @file
@@ -341,11 +342,7 @@ abstract class DrupalLocalStreamWrapper implements DrupalStreamWrapperInterface 
    * Base implementation of chmod().
    */
   function chmod($mode) {
-    $output = @chmod($this->getLocalPath(), $mode);
-    // We are modifying the underlying file here, so we have to clear the stat
-    // cache so that PHP understands that URI has changed too.
-    clearstatcache();
-    return $output;
+    return @chmod($this->getLocalPath(), $mode);
   }
 
   /**
@@ -387,7 +384,7 @@ abstract class DrupalLocalStreamWrapper implements DrupalStreamWrapperInterface 
    *   The file mode ("r", "wb" etc.).
    * @param $options
    *   A bit mask of STREAM_USE_PATH and STREAM_REPORT_ERRORS.
-   * @param $opened_path
+   * @param &$opened_path
    *   A string containing the path actually opened.
    *
    * @return
@@ -401,7 +398,7 @@ abstract class DrupalLocalStreamWrapper implements DrupalStreamWrapperInterface 
     $this->handle = ($options & STREAM_REPORT_ERRORS) ? fopen($path, $mode) : @fopen($path, $mode);
 
     if ((bool) $this->handle && $options & STREAM_USE_PATH) {
-      $opened_path = $path;
+      $opened_url = $path;
     }
 
     return (bool) $this->handle;

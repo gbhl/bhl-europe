@@ -151,14 +151,10 @@ function piwik_page_alter(&$page) {
       $custom_var_name = !empty($piwik_custom_vars['slots'][$i]['name']) ? $piwik_custom_vars['slots'][$i]['name'] : '';
       if (!empty($custom_var_name)) {
         $custom_var_value = !empty($piwik_custom_vars['slots'][$i]['value']) ? $piwik_custom_vars['slots'][$i]['value'] : '';
-        $custom_var_scope = !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 'visit';
+        $custom_var_scope = !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 1;
 
-        $types = array();
         $node = menu_get_object();
-        if (is_object($node)) {
-          $types += array('node' => $node);
-        }
-        $custom_var_value = token_replace($custom_var_value, $types, array('clear' => TRUE));
+        $custom_var_value = token_replace($custom_var_value, array('node' => $node), array('clear' => TRUE));
 
         // Suppress empty custom variables.
         if (!is_numeric($custom_var_value) && empty($custom_var_value)) {
@@ -174,8 +170,8 @@ function piwik_page_alter(&$page) {
 
         $custom_var_name = drupal_json_encode($custom_var_name);
         $custom_var_value = drupal_json_encode($custom_var_value);
-        $custom_var_scope = drupal_json_encode($custom_var_scope);
-        $custom_variable .= "_paq.push(['setCustomVariable', $i, $custom_var_name, $custom_var_value, $custom_var_scope]);";
+        // TODO: Scope is not yet implemented in piwik. Maybe a new feature in future.
+        $custom_variable .= "_paq.push(['setCustomVariable', $i, $custom_var_name, $custom_var_value]);";
       }
     }
 

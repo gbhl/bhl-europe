@@ -1,3 +1,4 @@
+// $Id: form.js,v 1.15 2010/04/09 12:24:53 dries Exp $
 (function ($) {
 
 /**

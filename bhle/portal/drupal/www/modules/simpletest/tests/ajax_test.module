@@ -1,8 +1,9 @@
 <?php
+// $Id: ajax_test.module,v 1.5 2010/10/21 19:31:39 dries Exp $
 
 /**
  * @file
- * Helper module for Ajax framework tests.
+ * Helper module for AJAX framework tests.
  */
 
 /**
@@ -44,7 +45,7 @@ function ajax_test_render() {
 }
 
 /**
- * Menu callback; Returns Ajax element with #error property set.
+ * Menu callback; Returns AJAX element with #error property set.
  */
 function ajax_test_error() {
   $message = '';

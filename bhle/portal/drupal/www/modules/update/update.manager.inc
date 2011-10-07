@@ -1,4 +1,5 @@
 <?php
+// $Id: update.manager.inc,v 1.34 2011/01/03 02:53:07 webchick Exp $
 
 /**
  * @file
@@ -643,11 +644,8 @@ function update_manager_install_form_submit($form, &$form_state) {
     form_set_error($field, t('Provided archive contains no files.'));
     return;
   }
-
-  // Unfortunately, we can only use the directory name to determine the project
-  // name. Some archivers list the first file as the directory (i.e., MODULE/)
-  // and others list an actual file (i.e., MODULE/README.TXT).
-  $project = strtok($files[0], '/\\');
+  // Unfortunately, we can only use the directory name for this. :(
+  $project = drupal_substr($files[0], 0, -1);
 
   $archive_errors = update_manager_archive_verify($project, $local_cache, $directory);
   if (!empty($archive_errors)) {
@@ -731,6 +729,26 @@ function update_manager_install_form_submit($form, &$form_state) {
  */
 
 /**
+ * Return the directory where update archive files should be extracted.
+ *
+ * If the directory does not already exist, attempt to create it.
+ *
+ * @return
+ *   The full path to the temporary directory where update file archives
+ *   should be extracted.
+ */
+function _update_manager_extract_directory() {
+  $directory = &drupal_static(__FUNCTION__, '');
+  if (empty($directory)) {
+    $directory = 'temporary://update-extraction';
+    if (!file_exists($directory)) {
+      mkdir($directory);
+    }
+  }
+  return $directory;
+}
+
+/**
  * Unpack a downloaded archive file.
  *
  * @param string $project
@@ -753,12 +771,8 @@ function update_manager_archive_extract($file, $directory) {
   // old files mixed with the new files (e.g. in cases where files were removed
   // from a later release).
   $files = $archiver->listContents();
-
-  // Unfortunately, we can only use the directory name to determine the project
-  // name. Some archivers list the first file as the directory (i.e., MODULE/)
-  // and others list an actual file (i.e., MODULE/README.TXT).
-  $project = strtok($files[0], '/\\');
-
+  // Unfortunately, we can only use the directory name for this. :(
+  $project = drupal_substr($files[0], 0, -1);
   $extract_location = $directory . '/' . $project;
   if (file_exists($extract_location)) {
     file_unmanaged_delete_recursive($extract_location);
@@ -809,8 +823,12 @@ function update_manager_file_get($url) {
   }
 
   // Check the cache and download the file if needed.
-  $cache_directory = _update_manager_cache_directory();
+  $cache_directory = 'temporary://update-cache';
   $local = $cache_directory . '/' . basename($parsed_url['path']);
+
+  if (!file_exists($cache_directory)) {
+    mkdir($cache_directory);
+  }
 
   if (!file_exists($local) || update_delete_file_if_stale($local)) {
     return system_retrieve_file($url, $local, FALSE, FILE_EXISTS_REPLACE);
@@ -831,7 +849,7 @@ function update_manager_file_get($url) {
  *   The short name of the project to download.
  * @param string $url
  *   The URL to download a specific project release archive file.
- * @param array $context
+ * @param array &$context
  *   Reference to an array used for BatchAPI storage.
  *
  * @see update_manager_download_page()

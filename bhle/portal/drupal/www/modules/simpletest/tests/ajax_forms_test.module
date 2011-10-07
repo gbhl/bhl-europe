@@ -1,8 +1,9 @@
 <?php
+// $Id: ajax_forms_test.module,v 1.9 2010/11/29 03:00:50 webchick Exp $
 
 /**
  * @file
- * Simpletest mock module for Ajax forms testing.
+ * Simpletest mock module for AJAX forms testing.
  */
 
 /**
@@ -66,7 +67,7 @@ function ajax_forms_test_simple_form($form, &$form_state) {
 }
 
 /**
- * Ajax callback triggered by select.
+ * AJAX callback triggered by select.
  */
 function ajax_forms_test_simple_form_select_callback($form, $form_state) {
   $commands = array();
@@ -76,7 +77,7 @@ function ajax_forms_test_simple_form_select_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback triggered by checkbox.
+ * AJAX callback triggered by checkbox.
  */
 function ajax_forms_test_simple_form_checkbox_callback($form, $form_state) {
   $commands = array();
@@ -87,7 +88,7 @@ function ajax_forms_test_simple_form_checkbox_callback($form, $form_state) {
 
 
 /**
- * Form to display the Ajax Commands.
+ * Form to display the AJAX Commands.
  * @param $form
  * @param $form_state
  * @return unknown_type
@@ -153,7 +154,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     ),
   );
 
-  // Shows the Ajax 'css' command.
+  // Shows the AJAX 'css' command.
   $form['css_command_example'] = array(
     '#value' => t("Set the the '#box' div to be blue."),
     '#type' => 'submit',
@@ -164,7 +165,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
   );
 
 
-  // Shows the Ajax 'data' command. But there is no use of this information,
+  // Shows the AJAX 'data' command. But there is no use of this information,
   // as this would require a javascript client to use the data.
   $form['data_command_example'] = array(
     '#value' => t("AJAX data command: Issue command."),
@@ -175,7 +176,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     '#suffix' => '<div id="data_div">Data attached to this div.</div>',
   );
 
-  // Shows the Ajax 'invoke' command.
+  // Shows the AJAX 'invoke' command.
   $form['invoke_command_example'] = array(
     '#value' => t("AJAX invoke command: Invoke addClass() method."),
     '#type' => 'submit',
@@ -185,7 +186,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     '#suffix' => '<div id="invoke_div">Original contents</div>',
   );
 
-  // Shows the Ajax 'html' command.
+  // Shows the AJAX 'html' command.
   $form['html_command_example'] = array(
     '#value' => t("AJAX html: Replace the HTML in a selector."),
     '#type' => 'submit',
@@ -195,7 +196,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     '#suffix' => '<div id="html_div">Original contents</div>',
   );
 
-  // Shows the Ajax 'insert' command.
+  // Shows the AJAX 'insert' command.
   $form['insert_command_example'] = array(
     '#value' => t("AJAX insert: Let client insert based on #ajax['method']."),
     '#type' => 'submit',
@@ -206,7 +207,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     '#suffix' => '<div id="insert_div">Original contents</div>',
   );
 
-  // Shows the Ajax 'prepend' command.
+  // Shows the AJAX 'prepend' command.
   $form['prepend_command_example'] = array(
     '#value' => t("AJAX 'prepend': Click to prepend something"),
     '#type' => 'submit',
@@ -216,7 +217,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     '#suffix' => '<div id="prepend_div">Something will be prepended to this div. </div>',
   );
 
-  // Shows the Ajax 'remove' command.
+  // Shows the AJAX 'remove' command.
   $form['remove_command_example'] = array(
     '#value' => t("AJAX 'remove': Click to remove text"),
     '#type' => 'submit',
@@ -226,7 +227,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
     '#suffix' => '<div id="remove_div"><div id="remove_text">text to be removed</div></div>',
   );
 
-  // Shows the Ajax 'restripe' command.
+  // Shows the AJAX 'restripe' command.
   $form['restripe_command_example'] = array(
     '#type' => 'submit',
     '#value' => t("AJAX 'restripe' command"),
@@ -241,7 +242,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
                   </div>',
   );
 
-  // Demonstrates the Ajax 'settings' command. The 'settings' command has
+  // Demonstrates the AJAX 'settings' command. The 'settings' command has
   // nothing visual to "show", but it can be tested via SimpleTest and via
   // Firebug.
   $form['settings_command_example'] = array(
@@ -261,7 +262,7 @@ function ajax_forms_test_ajax_commands_form($form, &$form_state) {
 }
 
 /**
- * Ajax callback for 'after'.
+ * AJAX callback for 'after'.
  */
 function ajax_forms_test_advanced_commands_after_callback($form, $form_state) {
   $selector = '#after_div';
@@ -272,7 +273,7 @@ function ajax_forms_test_advanced_commands_after_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'alert'.
+ * AJAX callback for 'alert'.
  */
 function ajax_forms_test_advanced_commands_alert_callback($form, $form_state) {
   $commands = array();
@@ -281,7 +282,7 @@ function ajax_forms_test_advanced_commands_alert_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'append'.
+ * AJAX callback for 'append'.
  */
 function ajax_forms_test_advanced_commands_append_callback($form, $form_state) {
   $selector = '#append_div';
@@ -291,7 +292,7 @@ function ajax_forms_test_advanced_commands_append_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'before'.
+ * AJAX callback for 'before'.
  */
 function ajax_forms_test_advanced_commands_before_callback($form, $form_state) {
   $selector = '#before_div';
@@ -302,14 +303,14 @@ function ajax_forms_test_advanced_commands_before_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'changed'.
+ * AJAX callback for 'changed'.
  */
 function ajax_forms_test_advanced_commands_changed_callback($form, $form_state) {
   $commands[] = ajax_command_changed('#changed_div');
   return array('#type' => 'ajax', '#commands' => $commands);
 }
 /**
- * Ajax callback for 'changed' with asterisk marking inner div.
+ * AJAX callback for 'changed' with asterisk marking inner div.
  */
 function ajax_forms_test_advanced_commands_changed_asterisk_callback($form, $form_state) {
   $commands = array();
@@ -318,7 +319,7 @@ function ajax_forms_test_advanced_commands_changed_asterisk_callback($form, $for
 }
 
 /**
- * Ajax callback for 'css'.
+ * AJAX callback for 'css'.
  */
 function ajax_forms_test_advanced_commands_css_callback($form, $form_state) {
   $selector = '#css_div';
@@ -330,7 +331,7 @@ function ajax_forms_test_advanced_commands_css_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'data'.
+ * AJAX callback for 'data'.
  */
 function ajax_forms_test_advanced_commands_data_callback($form, $form_state) {
   $selector = '#data_div';
@@ -341,7 +342,7 @@ function ajax_forms_test_advanced_commands_data_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'invoke'.
+ * AJAX callback for 'invoke'.
  */
 function ajax_forms_test_advanced_commands_invoke_callback($form, $form_state) {
   $commands = array();
@@ -350,7 +351,7 @@ function ajax_forms_test_advanced_commands_invoke_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'html'.
+ * AJAX callback for 'html'.
  */
 function ajax_forms_test_advanced_commands_html_callback($form, $form_state) {
   $commands = array();
@@ -359,7 +360,7 @@ function ajax_forms_test_advanced_commands_html_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'insert'.
+ * AJAX callback for 'insert'.
  */
 function ajax_forms_test_advanced_commands_insert_callback($form, $form_state) {
   $commands = array();
@@ -368,7 +369,7 @@ function ajax_forms_test_advanced_commands_insert_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'prepend'.
+ * AJAX callback for 'prepend'.
  */
 function ajax_forms_test_advanced_commands_prepend_callback($form, $form_state) {
   $commands = array();
@@ -377,7 +378,7 @@ function ajax_forms_test_advanced_commands_prepend_callback($form, $form_state) 
 }
 
 /**
- * Ajax callback for 'remove'.
+ * AJAX callback for 'remove'.
  */
 function ajax_forms_test_advanced_commands_remove_callback($form, $form_state) {
   $commands = array();
@@ -386,7 +387,7 @@ function ajax_forms_test_advanced_commands_remove_callback($form, $form_state) {
 }
 
 /**
- * Ajax callback for 'restripe'.
+ * AJAX callback for 'restripe'.
  */
 function ajax_forms_test_advanced_commands_restripe_callback($form, $form_state) {
   $commands = array();
@@ -395,7 +396,7 @@ function ajax_forms_test_advanced_commands_restripe_callback($form, $form_state)
 }
 
 /**
- * Ajax callback for 'settings'.
+ * AJAX callback for 'settings'.
  */
 function ajax_forms_test_advanced_commands_settings_callback($form, $form_state) {
   $commands = array();
@@ -406,12 +407,12 @@ function ajax_forms_test_advanced_commands_settings_callback($form, $form_state)
 
 /**
  * This form and its related submit and callback functions demonstrate
- * not validating another form element when a single Ajax element is triggered.
+ * not validating another form element when a single AJAX element is triggered.
  *
- * The "drivertext" element is an Ajax-enabled textfield, free-form.
+ * The "drivertext" element is an AJAX-enabled textfield, free-form.
  * The "required_field" element is a textfield marked required.
  *
- * The correct behavior is that the Ajax-enabled drivertext element should
+ * The correct behavior is that the AJAX-enabled drivertext element should
  * be able to trigger without causing validation of the "required_field".
  */
 function ajax_forms_test_validation_form($form, &$form_state) {
@@ -450,7 +451,7 @@ function ajax_forms_test_validation_form_submit($form, $form_state) {
 }
 
 /**
- * Ajax callback for the 'drivertext' element of the validation form.
+ * AJAX callback for the 'drivertext' element of the validation form.
  */
 function ajax_forms_test_validation_form_callback($form, $form_state) {
   drupal_set_message("ajax_forms_test_validation_form_callback invoked");

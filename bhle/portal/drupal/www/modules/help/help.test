@@ -1,9 +1,5 @@
 <?php
-
-/**
- * @file
- * Tests for help.module.
- */
+// $Id: help.test,v 1.22 2010/11/27 20:25:44 dries Exp $
 
 class HelpTestCase extends DrupalWebTestCase {
   protected $big_user;

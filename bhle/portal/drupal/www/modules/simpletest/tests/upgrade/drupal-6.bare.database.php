@@ -1,4 +1,5 @@
 <?php
+// $Id: drupal-6.bare.database.php,v 1.1 2010/06/28 02:05:47 webchick Exp $
 
 /**
  * @file
@@ -7901,7 +7902,7 @@ db_insert('users')->fields(array(
   'access' => '0',
   'login' => '0',
   'status' => '0',
-  'timezone' => '-21600',
+  'timezone' => NULL,
   'language' => '',
   'picture' => '',
   'init' => '',
@@ -7922,7 +7923,7 @@ db_insert('users')->fields(array(
   'access' => '1277671612',
   'login' => '1277671612',
   'status' => '1',
-  'timezone' => '-21600',
+  'timezone' => NULL,
   'language' => '',
   'picture' => '',
   'init' => 'admin@example.com',

@@ -1,4 +1,5 @@
 <?php
+// $Id: aggregator.fetcher.inc,v 1.12 2010/01/08 11:03:54 dries Exp $
 
 /**
  * @file

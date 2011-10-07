@@ -1,4 +1,5 @@
 <?php
+// $Id: locale.api.php,v 1.12 2010/07/16 02:37:06 dries Exp $
 
 /**
  * @file

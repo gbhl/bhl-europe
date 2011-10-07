@@ -274,7 +274,6 @@ function piwik_admin_settings_form($form_state) {
     $form['piwik_custom_var']['slots'][$i]['value'] = array(
       '#default_value' => !empty($piwik_custom_vars['slots'][$i]['value']) ? $piwik_custom_vars['slots'][$i]['value'] : '',
       '#description' => t('The custom variable value. You may use tokens in this field.'),
-      '#maxlength' => 255,
       '#title' => t('Custom variable value #@slot', array('@slot' => $i)),
       '#title_display' => 'invisible',
       '#type' => 'textfield',
@@ -285,14 +284,15 @@ function piwik_admin_settings_form($form_state) {
       $form['piwik_custom_var']['slots'][$i]['value']['#element_validate'][] = 'token_element_validate';
     }
     $form['piwik_custom_var']['slots'][$i]['scope'] = array(
-      '#default_value' => !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 'visit',
+      '#default_value' => !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 1,
       '#description' => t('The scope for the custom variable.'),
       '#title' => t('Custom variable slot #@slot', array('@slot' => $i)),
       '#title_display' => 'invisible',
       '#type' => 'select',
       '#options' => array(
-        'visit' => t('Visit'),
-        'page' => t('Page'),
+        //1 => t('Visitor'),
+        2 => t('Session'),
+        //3 => t('Page'),
       ),
     );
   }

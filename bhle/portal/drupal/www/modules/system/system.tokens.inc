@@ -1,4 +1,5 @@
 <?php
+// $Id: system.tokens.inc,v 1.13 2010/10/28 01:33:41 dries Exp $
 
 /**
  * @file
@@ -88,6 +89,10 @@ function system_token_info() {
     'name' => t("File name"),
     'description' => t("The name of the file on disk."),
   );
+  $file['description'] = array(
+    'name' => t("Description"),
+    'description' => t("An optional human-readable description of the file."),
+  );
   $file['path'] = array(
     'name' => t("Path"),
     'description' => t("The location of the file relative to Drupal root."),
@@ -98,7 +103,7 @@ function system_token_info() {
   );
   $file['size'] = array(
     'name' => t("File size"),
-    'description' => t("The size of the file."),
+    'description' => t("The size of the file, in kilobytes."),
   );
   $file['url'] = array(
     'name' => t("URL"),
@@ -130,13 +135,10 @@ function system_token_info() {
  */
 function system_tokens($type, $tokens, array $data = array(), array $options = array()) {
   $url_options = array('absolute' => TRUE);
-  if (isset($options['language'])) {
-    $url_options['language'] = $options['language'];
-    $language_code = $options['language']->language;
+  if (isset($language)) {
+    $url_options['language'] = $language;
   }
-  else {
-    $language_code = NULL;
-  }
+  $langcode = (isset($language) ? $language->language : NULL);
   $sanitize = !empty($options['sanitize']);
 
   $replacements = array();
@@ -184,19 +186,19 @@ function system_tokens($type, $tokens, array $data = array(), array $options = a
     foreach ($tokens as $name => $original) {
       switch ($name) {
         case 'short':
-          $replacements[$original] = format_date($date, 'short', '', NULL, $language_code);
+          $replacements[$original] = format_date($date, 'short', '', NULL, $langcode);
           break;
 
         case 'medium':
-          $replacements[$original] = format_date($date, 'medium', '', NULL, $language_code);
+          $replacements[$original] = format_date($date, 'medium', '', NULL, $langcode);
           break;
 
         case 'long':
-          $replacements[$original] = format_date($date, 'long', '', NULL, $language_code);
+          $replacements[$original] = format_date($date, 'long', '', NULL, $langcode);
           break;
 
         case 'since':
-          $replacements[$original] = format_interval((REQUEST_TIME - $date), 2, $language_code);
+          $replacements[$original] = format_interval((REQUEST_TIME - $date), 2, $langcode);
           break;
 
         case 'raw':
@@ -207,7 +209,7 @@ function system_tokens($type, $tokens, array $data = array(), array $options = a
 
     if ($created_tokens = token_find_with_prefix($tokens, 'custom')) {
       foreach ($created_tokens as $name => $original) {
-        $replacements[$original] = format_date($date, 'custom', $name, NULL, $language_code);
+        $replacements[$original] = format_date($date, 'custom', $name, NULL, $langcode);
       }
     }
   }
@@ -225,6 +227,10 @@ function system_tokens($type, $tokens, array $data = array(), array $options = a
         // Essential file data
         case 'name':
           $replacements[$original] = $sanitize ? check_plain($file->filename) : $file->filename;
+          break;
+
+        case 'description':
+          $replacements[$original] = $sanitize ? check_plain($file->description) : $file->description;
           break;
 
         case 'path':
@@ -245,13 +251,12 @@ function system_tokens($type, $tokens, array $data = array(), array $options = a
 
         // These tokens are default variations on the chained tokens handled below.
         case 'timestamp':
-          $replacements[$original] = format_date($file->timestamp, 'medium', '', NULL, $language_code);
+          $replacements[$original] = format_date($file->timestamp, 'medium', '', NULL, $langcode);
           break;
 
         case 'owner':
           $account = user_load($file->uid);
-          $name = format_username($account);
-          $replacements[$original] = $sanitize ? check_plain($name) : $name;
+          $replacements[$original] = $sanitize ? check_plain($account->name) : $account->name;
           break;
       }
     }

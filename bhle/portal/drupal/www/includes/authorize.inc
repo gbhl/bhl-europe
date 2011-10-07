@@ -1,4 +1,5 @@
 <?php
+// $Id: authorize.inc,v 1.15 2011/01/04 04:37:27 webchick Exp $
 
 /**
  * @file
@@ -159,7 +160,7 @@ function _authorize_filetransfer_connection_settings($backend) {
  * Therefore, to properly add defaults, we need to walk through all the
  * children form elements and process those defaults recursively.
  *
- * @param $element
+ * @param &$element
  *   Reference to the Form API form element we're operating on.
  * @param $key
  *   The key for our current form element, if any.
@@ -193,7 +194,7 @@ function _authorize_filetransfer_connection_settings_set_defaults(&$element, $ke
 function authorize_filetransfer_form_validate($form, &$form_state) {
   // Only validate the form if we have collected all of the user input and are
   // ready to proceed with updating or installing.
-  if ($form_state['triggering_element']['#name'] != 'process_updates') {
+  if ($form_state['clicked_button']['#name'] != 'process_updates') {
     return;
   }
 
@@ -224,7 +225,7 @@ function authorize_filetransfer_form_validate($form, &$form_state) {
  */
 function authorize_filetransfer_form_submit($form, &$form_state) {
   global $base_url;
-  switch ($form_state['triggering_element']['#name']) {
+  switch ($form_state['clicked_button']['#name']) {
     case 'process_updates':
 
       // Save the connection settings to the DB.

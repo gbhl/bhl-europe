@@ -7,9 +7,33 @@
 /**
  * Path overview page
  */
-function i18n_path_admin_overview($type = NULL) {
-  module_load_include('admin.inc', 'i18n_translation');
-  return i18n_translation_admin_overview('path');
+function i18n_path_admin_overview() {
+  $default = language_default('language');
+  $result = db_select('i18n_path', 'p')->fields('p')->execute();
+  foreach ($result as $path) {
+    $paths[$path->tsid][$path->language] = $path->path;
+  }
+  if (!empty($paths)) {
+    $build['paths'] = array(
+      '#theme' => 'table',
+      '#header' => array(t('Paths'), t('Operations')),
+    );
+    foreach ($paths as $tpid => $set) {
+      $items = array();
+      foreach ($set as $lang => $path) {
+        // We'll see the path alias if any on the link
+        $items[] = l($path, $path, array('language' => i18n_language($lang)));
+      }
+      $build['paths']['#rows'][] = array(
+        theme('item_list', array('items' => $items)),
+        l(t('Edit'), 'admin/config/regional/i18n_translation/path/edit/' . $tpid),
+      );
+    }
+  }
+  else {
+    $build['message']['#markup'] = t('No path translations.');
+  }
+  return $build;
 }
 
 /**
@@ -33,7 +57,7 @@ function i18n_path_admin_form($form, $form_state, $translation_set = NULL) {
     '#type' => 'fieldset',
     '#title' => t('Translations'),
     '#tree' => TRUE,
-    '#description' => t('The path for this menu link. This can be an internal Drupal path such as %add-node or an external URL such as %drupal. Enter %front to link to the front page.', array('%front' => '<front>', '%add-node' => 'node/add', '%drupal' => 'http://drupal.org')),
+    '#description' => t('Enter system paths that will be considered as translations of each other.'),
   );
   foreach (i18n_language_list() as $langcode => $name) {
     $form['translations'][$langcode] = array(
@@ -42,19 +66,9 @@ function i18n_path_admin_form($form, $form_state, $translation_set = NULL) {
       '#default_value' => !empty($paths[$langcode]) ? $paths[$langcode]->path : '',
     );
   }
-
-  $form['controls']['update'] = array(
-    '#type' => 'submit',
-    '#value' => t('Save'),
-    '#name' => 'save',
-  );
-
+  $form['controls']['update'] = array('#type' => 'submit', '#value' => t('Save'));
   if ($translation_set) {
-    $form['controls']['delete'] = array(
-      '#type' => 'submit',
-      '#value' => t('Delete'),
-      '#name' => 'delete',
-    );
+    $form['controls']['delete'] = array('#type' => 'submit', '#value' => t('Delete'));
   }
   return $form;
 }
@@ -63,23 +77,8 @@ function i18n_path_admin_form($form, $form_state, $translation_set = NULL) {
  * Process form validation
  */
 function i18n_path_admin_form_validate($form, &$form_state)  {
-  if ($form_state['triggering_element']['#name'] == 'save') {
-    $paths = &$form_state['values']['translations'];
-    if ($paths = array_filter($paths)) {
-      module_load_include('inc', 'menu', 'menu.admin');
-      foreach ($paths as $language => &$link_path) {
-        $link_path = i18n_prepare_normal_path($link_path, $language);
-        $validation_form_state = array(
-          'values' => array(
-            'link_path' => $link_path,
-          ),
-        );
-        menu_edit_item_validate(array(), $validation_form_state);
-      }
-    }
-    else {
-      form_set_error('paths', t('There are no path translations to save.'));
-    }
+  if ($form_state['values']['op'] == t('Save') && !array_filter($form_state['values']['translations'])) {
+    form_set_error('paths', t('There are no path translations to save.'));
   }
 }
 
@@ -88,47 +87,35 @@ function i18n_path_admin_form_validate($form, &$form_state)  {
  */
 function i18n_path_admin_form_submit($form, &$form_state) {
   $translation_set = $form_state['values']['translation_set'];
-  switch ($form_state['triggering_element']['#name']) {
-    case 'save':
+
+  switch ($form_state['values']['op']) {
+    case t('Save'):
       $paths = array_filter($form_state['values']['translations']);
       $translation_set = $translation_set ? $translation_set : i18n_translation_set_create('path');
-      $translation_set->title = '';
       $translations = $translation_set->get_translations();
+      $translation_set->translations = array();
       foreach ($paths as $lang => $path) {
         if (isset($translations[$lang])) {
           $translations[$lang]->path = $path;
+          $translation_set->translations[$lang]->path = $path;
         }
         else {
-          $translation_set->add_item($path, $lang);
+          $translation_set->translations[$lang] = $path;
         }
       }
-
-      foreach (array_diff(array_keys($translation_set->get_translations()), array_keys($paths)) as $language) {
-        $translation_set->remove_language($language);
-        unset($translations[$language]);
-      }
-
-      if (!empty($form_state['values']['title'])) {
-        $translation_set->title = $form_state['values']['title'];
-      }
-
       $translation_set->save(TRUE);
       drupal_set_message(t('The path translation has been saved.'));
       break;
-    case 'delete':
-      $destination = array();
-      if (isset($_GET['destination'])) {
-        $destination = drupal_get_destination();
-        unset($_GET['destination']);
-      }
-      $form_state['redirect'] = array($translation_set->get_delete_path(), array('query' => $destination));
-      return;
+    case t('Delete'):
+      $translation_set->delete(TRUE);
+      drupal_set_message(t('The path translation has been deleted.'));
+      break;
   }
   $form_state['redirect'] = 'admin/config/regional/i18n_translation/path';
 }
 
 /**
- * Save path translation set.
+ * Save path translation set
  */
 function i18n_path_save_translations($paths, $tpid = NULL) {
   $paths = array_filter($paths);
@@ -146,5 +133,5 @@ function i18n_path_save_translations($paths, $tpid = NULL) {
     }
     lock_release('i18n_path');
     return $tpid;
-  }
+  }  
 }

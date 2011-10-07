@@ -1,4 +1,5 @@
 <?php
+// $Id: standard.install,v 1.30 2011/01/04 18:24:24 webchick Exp $
 
 /**
  * Implements hook_install().
@@ -271,7 +272,7 @@ function standard_install() {
   $description = st('Use tags to group articles on similar topics into categories.');
   $help = st('Enter a comma-separated list of words to describe your content.');
   $vocabulary = (object) array(
-    'name' => st('Tags'),
+    'name' => 'Tags',
     'description' => $description,
     'machine_name' => 'tags',
     'help' => $help,
@@ -298,7 +299,7 @@ function standard_install() {
   $instance = array(
     'field_name' => 'field_' . $vocabulary->machine_name,
     'entity_type' => 'node',
-    'label' => 'Tags',
+    'label' => $vocabulary->name,
     'bundle' => 'article',
     'description' => $vocabulary->help,
     'widget' => array(
@@ -327,6 +328,7 @@ function standard_install() {
     'field_name' => 'field_image',
     'type' => 'image',
     'cardinality' => 1,
+    'translatable' => TRUE,
     'locked' => FALSE,
     'indexes' => array('fid' => array('fid')),
     'settings' => array(

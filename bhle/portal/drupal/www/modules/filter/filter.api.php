@@ -1,4 +1,5 @@
 <?php
+// $Id: filter.api.php,v 1.22 2010/12/09 02:04:16 dries Exp $
 
 /**
  * @file

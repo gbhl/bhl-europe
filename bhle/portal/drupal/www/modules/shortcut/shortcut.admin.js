@@ -1,3 +1,4 @@
+// $Id: shortcut.admin.js,v 1.1 2009/10/17 00:51:52 dries Exp $
 (function ($) {
 
 /**

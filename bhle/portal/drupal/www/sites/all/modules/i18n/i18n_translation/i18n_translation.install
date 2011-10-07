@@ -6,14 +6,14 @@
  */
 
 /**
- * Implements hook_install().
+ * Implements hook_install()
  */
 function i18n_translation_install() {
-
+  
 }
 
 /**
- * Implements hook_schema().
+ * Implements hook_schema()
  */
 function i18n_translation_schema() {
   $schema['i18n_translation_set'] = array(

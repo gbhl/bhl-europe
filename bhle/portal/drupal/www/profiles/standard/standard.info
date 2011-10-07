@@ -1,3 +1,4 @@
+; $Id: standard.info,v 1.2 2010/10/25 15:48:41 webchick Exp $
 name = Standard
 description = Install with commonly used features pre-configured.
 version = VERSION
@@ -25,8 +26,8 @@ dependencies[] = file
 dependencies[] = rdf
 files[] = standard.profile
 
-; Information added by drupal.org packaging script on 2011-08-31
-version = "7.8"
+; Information added by drupal.org packaging script on 2011-01-05
+version = "7.0"
 project = "drupal"
-datestamp = "1314817616"
+datestamp = "1294208756"
 

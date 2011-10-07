@@ -14,7 +14,7 @@
  *   The page content.
  */
 function i18n_taxonomy_term_page($term) {
-  $term = i18n_taxonomy_localize_terms($term);
+  i18n_taxonomy_localize_terms($term);
   // Build breadcrumb based on the hierarchy of the term.
   $current = (object) array(
     'tid' => $term->tid,
@@ -23,7 +23,7 @@ function i18n_taxonomy_term_page($term) {
   //   presumption. Make this behavior configurable per vocabulary or term.
   $breadcrumb = array();
   while ($parents = taxonomy_get_parents($current->tid)) {
-    $parents = i18n_taxonomy_localize_terms($parents);
+    i18n_taxonomy_localize_terms($parents);
     $current = array_shift($parents);
     $breadcrumb[] = l($current->name, 'taxonomy/term/' . $current->tid);
   }
@@ -48,7 +48,7 @@ function i18n_taxonomy_term_page($term) {
     $build['pager'] = array(
       '#theme' => 'pager',
       '#weight' => 5,
-    );
+     );
   }
   else {
     $build['no_content'] = array(
@@ -71,17 +71,24 @@ function i18n_taxonomy_term_page($term) {
  * @ingroup themeable
  */
 function theme_i18n_taxonomy_term_page($tids, $result) {
-  drupal_add_css(drupal_get_path('module', 'taxonomy') . '/taxonomy.css');
+  drupal_add_css(drupal_get_path('module', 'taxonomy') .'/taxonomy.css');
 
   $output = '';
 
   // Only display the description if we have a single term, to avoid clutter and confusion.
   if (count($tids) == 1) {
-    $term = i18n_taxonomy_localize_terms(taxonomy_term_load($tids[0]));
+    $term = taxonomy_get_term($tids[0]);
+    if (i18n_taxonomy_vocabulary($term->vid) & I18N_MODE_LOCALIZE) {
+      $description = i18n_string("taxonomy:term:$term->tid:description", $term->description);
+    }
+    else {
+      $description = $term->description;
+    }
+
     // Check that a description is set.
-    if (!empty($term->description)) {
+    if (!empty($description)) {
       $output .= '<div class="taxonomy-term-description">';
-      $output .= filter_xss_admin($term->description);
+      $output .= filter_xss_admin($description);
       $output .= '</div>';
     }
   }
@@ -134,7 +141,7 @@ function _i18n_taxonomy_autocomplete($langcode, $vids, $tags_typed = '') {
     $query->addTag('i18n_select');
     // Add language condition
     $query->condition('t.language', $langcode);
-
+    
     // Do not select already entered terms.
     if (!empty($tags_typed)) {
       $query->condition('t.name', $tags_typed, 'NOT IN');

@@ -5,16 +5,8 @@
  */
 class i18n_path_translation_set extends i18n_translation_set {
   /**
-   * Add translation item
-   */
-  public function add_item($path, $langcode = NULL) {
-    // Path may be object or plain string
-    $item = is_object($path) ? $path : (object)array('path' => $path, 'language' => $langcode);
-    return parent::add_item($item, $langcode);
-  }
-  /**
    * Clean path translations.
-   *
+   * 
    * Unlike other translation sets this actually deletes paths
    */
   public function clean_translations() {
@@ -35,38 +27,22 @@ class i18n_path_translation_set extends i18n_translation_set {
    * Save all path translations
    */
   public function save_translations() {
-    foreach ($this->get_translations() as $lang => $path) {
-      $path = is_object($path) ? $path : (object) array('path' => $path, 'language' => $lang, 'tsid' => $this->tsid);
+    foreach ($this->translations as $lang => $path) {
+      $path = is_object($path) ? $path : (object)array('path' => $path, 'language' => $lang, 'tsid' => $this->tsid);
       drupal_write_record('i18n_path', $path, !empty($path->tpid) ? 'tpid' : array());
-      $this->add_item($path, $lang);
+      $this->translations[$lang] = $path;
     }
   }
-
-}
-
-/**
- * Path object
- */
-class i18n_path_object extends i18n_object_wrapper {
   /**
    * Get title from item
    */
-  public function get_title() {
-    return $this->object->path;
+  protected function item_title($item) {
+    return $item['path'];
   }
-
   /**
-   * Get path for item
+   * Get link for item
    */
-  public function get_path() {
-    return check_url($this->object->path);
+  protected function item_path($item) {
+    return check_url($item['path']);
   }
-
-  /**
-   * Get translate mode
-   */
-  public function get_translate_mode() {
-    return I18N_MODE_TRANSLATE;
-  }
-
 }

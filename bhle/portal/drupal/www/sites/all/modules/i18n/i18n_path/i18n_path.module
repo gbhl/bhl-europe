@@ -38,19 +38,10 @@ function i18n_path_menu() {
     'page arguments' => array('i18n_path_admin_form', 6),
     'access arguments' => array('administer site configuration'),
     'file' => 'i18n_path.admin.inc',
-    'type' => MENU_LOCAL_TASK,
-    'context' => MENU_CONTEXT_INLINE,
+    'type' => MENU_CALLBACK,
+    'parent' => 'admin/config/regional/i18n_translation',
   );
-  $items['admin/config/regional/i18n_translation/path/delete/%i18n_path_translation_set'] = array(
-    'title' => 'Delete path translation',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('i18n_translation_set_delete_confirm', 6),
-    'access arguments' => array('administer site configuration'),
-    'file' => 'i18n_path.admin.inc',
-    'type' => MENU_LOCAL_TASK,
-    'context' => MENU_CONTEXT_INLINE,
-  );
-  return $items;
+  return $items;  
 }
 
 /**
@@ -91,7 +82,7 @@ function i18n_path_get_translations($path) {
 function i18n_path_language_switch_links_alter(array &$links, $type, $path) {
   if (($translations = i18n_path_get_translations($path))) {
     foreach ($translations as $langcode => $translated_path) {
-      $links[$langcode] = i18n_translation_link($translated_path, $langcode);
+      $links[$langcode] = i18n_translation_link($path, $langcode);
     }
   }
 }
@@ -103,16 +94,9 @@ function i18n_path_i18n_object_info() {
   return array(
     'path' => array(
       'title' => t('Path'),
-      'class' => 'i18n_path_object',
-      'key' => array('path', 'language'),
       'translation set' => array(
         'class' => 'i18n_path_translation_set',
         'table' => 'i18n_path',
-        'field' => 'tsid',
-        'placeholder' => '%i18n_path_translation_set',
-        'edit path' => 'admin/config/regional/i18n_translation/path/edit/%i18n_path_translation_set',
-        'delete path' => 'admin/config/regional/i18n_translation/path/delete/%i18n_path_translation_set',
-        'list path' => 'admin/config/regional/i18n_translation/path',
       ),
     )
   );
