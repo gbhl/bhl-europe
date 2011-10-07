@@ -1,0 +1,136 @@
+<?php
+
+
+
+/**
+ * Implements hook_menu_link_alter().
+ *
+ * In order to have our menu_item_visibility_translated_menu_link_alter()
+ * function called by _menu_link_translate(), we have to manually set this
+ * menu link as 'altered'. Unfortunately this alters all menu links and we need
+ * to figure out a better solution in order to not globally alter all links.
+ */
+function menu_item_visibility_menu_link_alter(&$item) {
+  $item['options']['alter'] = TRUE;
+
+  // Because menu_link_save() may skip calling hook_menu_link_update(), we need
+  // to force it to be invoked. See http://drupal.org/node/1013856.
+  if (!empty($item['mlid'])) {
+    _menu_item_visibility_menu_link_update($item);
+  }
+}
+
+/**
+ * Implements hook_translated_menu_link_alter().
+ */
+function menu_item_visibility_translated_menu_link_alter(&$item, $map) {
+  global $user;
+
+  if (!empty($item['access'])) {
+    // Menu administrators can see all links.
+    if (strpos(current_path(), 'admin/structure/menu/manage/' . $item['menu_name']) === 0 && user_access('administer menu')) {
+      return;
+    }
+
+    // @todo Convert this into a proper hook so modules can extend visibility.
+    $item['visibility'] = menu_item_visibility_load($item['mlid']);
+    if (!empty($item['visibility']['roles']) && !array_intersect($item['visibility']['roles'], array_keys($user->roles))) {
+      $item['access'] = FALSE;
+    }
+  }
+}
+
+/**
+ * Load all visibility data for a menu link.
+ */
+function menu_item_visibility_load($mlid) {
+  $visibility = array();
+  if (!empty($mlid)) {
+    $visibility['roles'] = db_query("SELECT rid FROM {menu_links_visibility_role} WHERE mlid = :mlid", array(':mlid' => $mlid))->fetchCol();
+    module_invoke_all('menu_item_visibility_load', $visibility, $mlid);
+  }
+  return $visibility;
+}
+
+/**
+ * Implements hook_menu_link_insert()
+ */
+function menu_item_visibility_menu_link_insert($link) {
+  if (!empty($link['roles']) && $roles = array_filter($link['roles'])) {
+    $query = db_insert('menu_links_visibility_role');
+    $query->fields(array('mlid', 'rid'));
+    foreach ($roles as $rid) {
+      $query->values(array('mlid' => $link['mlid'], 'rid' => $rid));
+    }
+    $query->execute();
+  }
+}
+
+/**
+ * Implements hook_menu_link_update()
+ *
+ * Disabled as a hook until http://drupal.org/node/1013856 is fixed.
+ */
+function _menu_item_visibility_menu_link_update($link) {
+  db_delete('menu_links_visibility_role')
+    ->condition('mlid', $link['mlid'])
+    ->execute();
+
+  menu_item_visibility_menu_link_insert($link);
+}
+
+/**
+ * Implements hook_menu_link_delete()
+ */
+function menu_item_visibility_menu_link_delete($link) {
+  db_delete('menu_links_visibility_role')
+    ->condition('mlid', $link['mlid'])
+    ->execute();
+}
+
+/**
+ * Implements hook_user_role_delete()
+ */
+function menu_item_visibility_user_role_delete($role) {
+  db_delete('menu_links_visibility_role')
+    ->condition('rid', $role->rid)
+    ->execute();
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function menu_item_visibility_form_menu_edit_item_alter(&$form, &$form_state) {
+  // Visibility settings.
+  $form['visibility_title'] = array(
+    '#type' => 'item',
+    '#title' => t('Visibility settings'),
+  );
+  $form['visibility'] = array(
+    '#type' => 'vertical_tabs',
+    '#attached' => array(
+      'js' => array(
+        'vertical-tabs' => drupal_get_path('module', 'menu_item_visibility') . '/menu_item_visibility.js',
+      ),
+    ),
+  );
+
+  $visibility = menu_item_visibility_load($form['mlid']['#value']);
+
+  // Per-role visibility.
+  $form['visibility']['role'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Roles'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+    '#group' => 'visibility',
+    '#weight' => 10,
+  );
+  $form['visibility']['role']['roles'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Show menu link for specific roles'),
+    '#default_value' => isset($visibility['roles']) ? $visibility['roles'] : array(),
+    '#options' => array_map('check_plain', user_roles()),
+    '#description' => t('Show this menu link only for the selected role(s). If you select no roles, the menu link will be visible to all users.'),
+  );
+}

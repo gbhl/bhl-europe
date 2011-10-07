@@ -1,0 +1,6 @@
+name = Advanced Search
+description = Ait test implentation for advanced search
+package = Metadata Handling
+core = 7.x
+dependencies[] = metadata
+stylesheets[all][] = advanced-search.css

@@ -1,0 +1,121 @@
+/** (c) 2011-07 mnk (support@in-web.cz) **/
+
+@import "reset.css";
+
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size:75%; /* 12px */ 
+  line-height:1.417;  /* 17px */
+  color:#000;  
+  text-align:left;
+  background:#fff none;
+}
+
+/* nadpisy ----------------------------------------------------------------- */
+h1, h2, h3, h4, h5 {
+  margin-bottom: 5px; padding: 0px 5px;
+  text-align:left; 
+  font-weight: bold;
+  font-size: 100%;
+}
+
+h1 {
+  margin-bottom: 10px; padding:5px;
+  font-size: 250%;  /* 30px */
+  font-weight: normal;
+  line-height:100%;   /*  30px  */
+}
+h2 {
+  margin-bottom: 10px; 
+  font-size:175%; /*  21px  */  
+  font-weight: normal;
+}
+h3 {
+  font-size: 125%; /* 15px */
+}
+h4 {
+  font-size: 100%; /*  12px  */
+}
+
+/* STYLY pro semanticke elemnty -------------------------------------------------------*/
+.node ol, 
+.node ul, 
+.node dl {
+  margin-bottom: 10px;
+  text-align:left;
+}
+.node dt {font-weight:bold;}
+.node ul {padding-left:20px; list-style-type: square;}
+.node li {
+  line-height:1.417; /* 17px */
+}
+.node ul li ul {list-style-type: disc;}
+.node ul li ul li ul {  list-style-type: circle;}
+
+.node blockquote, 
+.node blockquote p , 
+.node q {
+	font-style:italic;
+	margin-bottom:10px;
+}
+
+.node sup, 
+.node sub {
+  font-size:91.7%;  /*  11px  */
+}
+.node acronym {cursor: help; background-color: #FFFFAC;}
+.node abbr {cursor:help; border-bottom:dashed 1px;}
+.node code {
+  font-family:"Lucida Console", Monaco, monospace; 
+  font-size:91.7%; /* 11px */
+}
+
+/* odstavce ---------------------------------------------------------------- */
+.node p {
+  margin-bottom:10px; padding: 0px 5px;
+  text-align:left;  
+}
+
+/* obrazky ----------------------------------------------------------------- */
+.node img {
+	background:transparent none;
+	border: transparent 1px solid;
+}
+/* obrazky v odkazech ------------------------------------------------------ */
+.node a img {display:block;}
+
+/* základní STYLY pro TABULKY ------------------------------------------------------- */
+table {
+	clear:both; margin:10px 5px; 
+  width:90%; color:#2f2f2f; 
+	border-collapse: collapse; border-spacing:0;
+}
+td, th {
+  padding:4px 10px; vertical-align:middle; 
+  text-align:left; font-weight:normal; 
+  border:1px solid #fff; background:#f7f7f7;
+}
+th {
+  padding:5px 10px; 
+  font-weight:bold;
+  font-variant:small-caps; 
+  background:#d7d7d7;
+}
+td {font-size:91.7%;}
+tr:hover td {background:#e9e9e9;}
+table.half {width:45%;}
+table.thirds {width:330px;}
+table.half td, table.thirds td {text-align:center;}
+tr.descript td {font-size:100%; background:#e9e9e9;} 
+tr.away td a {color:#7a7a7a;} 
+tr.away td a:hover {color:#e4620c;}
+tfoot {font-style:italic;}
+
+/* základní STYLY pro FORMULARE ------------------------------------------------------- */
+/*
+form {clear:both; margin:0px;padding:0px; color:#555;}
+legend {display:none;}
+fieldset {margin:0px; padding:10px; border:0px none; }
+label {float:left; display:block; padding:3px 5px 2px 5px;}
+input, select, textarea {margin:0 0 4px 0; padding:3px 5px; border: 1px solid #ADACAC; background:#f8f8f8;}
+*/

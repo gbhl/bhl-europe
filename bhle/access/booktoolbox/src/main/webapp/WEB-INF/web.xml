@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>resource</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jersey Web Application</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+	<!--
+	<servlet>
+		<servlet-name>PagePDFServlet</servlet-name>
+		<servlet-class>servlet.PagePDFServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookPDFServlet</servlet-name>
+		<servlet-class>servlet.BookPDFServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookOCRServlet</servlet-name>
+		<servlet-class>servlet.BookOCRServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>BookZIPServlet</servlet-name>
+		<servlet-class>servlet.BookZIPServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PagePDFServlet</servlet-name>
+		<url-pattern>/pagepdf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookPDFServlet</servlet-name>
+		<url-pattern>/bookpdf</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookOCRServlet</servlet-name>
+		<url-pattern>/bookocr</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookZIPServlet</servlet-name>
+		<url-pattern>/bookzip</url-pattern>
+	</servlet-mapping>
+	-->
+</web-app>

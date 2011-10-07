@@ -1,0 +1,42 @@
+/* $Id: reset.css,v 1.4 2009/07/13 23:52:58 andregriffin Exp $ */
+
+/* reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+table {border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+img, a img {border:none;outline:none;}
+
+/* common styling */
+:focus{outline:1px dotted;}
+address,form,hr,table,ul,ol,dl,pre{margin-bottom:1.5em;}
+abbr,acronym{font-size:85%;letter-spacing:.1em;text-transform:uppercase;}
+abbr[title],acronym[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}
+blockquote{color:#666;font-style:italic;margin:1.5em;}
+ins{border-bottom:1px dotted #000;text-decoration:none;}
+del{text-decoration:line-through;}
+small,sup,sub{font-size:85%;}
+big{font-size:125%;line-height:80%;}
+sup{vertical-align:super;}
+sub{vertical-align:sub;}
+pre{white-space:pre;}
+cite,em,dfn{font-style:italic;}
+code{font-family:mono-space, monospace;font-size:100%;}
+strong,th,thead td,dt{font-weight:bold;}
+hr{background:#ddd;border:none;clear:both;color:#ddd;float:none;height:.1em;margin:0 0 1.45em;width:100%;}
+hr.space{background:#fff;color:#fff;}
+table{margin:0 0 1.4em;width:100%;}
+th{font-weight:bold;}
+thead th{border-bottom:0;font-weight:bold;}
+tbody th{border-bottom:0;}
+th,td,caption{padding:4px 10px 4px 5px;vertical-align:middle;}
+tfoot{font-style:italic;}
+label{font-weight:normal;}
+fieldset{margin:0 0 1.5em;padding:1.4em;}
+legend{font-size:1em;font-weight:normal;}
+input,textarea,select{margin:0.5em 0;}
+input[type=submit]{padding:0 2px;}
+input[type=text],input[type=password]{background:#fff;border:1px solid #ccc;margin:8px 0;padding:2px;}
+input[type=checkbox],input[type=radio],input.checkbox,input.radio{position:relative;top:.15em;}

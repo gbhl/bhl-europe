@@ -1,0 +1,7 @@
+<?php
+function names_lookup_schema() {
+    $schema['cache_names_col'] = drupal_get_schema_unprocessed('system', 'cache');
+    $schema['cache_names_pesi'] = drupal_get_schema_unprocessed('system', 'cache');
+    
+    return $schema;
+}

@@ -1,0 +1,69 @@
+/* 
+    Document   : metadata
+    Created on : May 5, 2011, 3:57:36 PM
+    Author     : vmplanet
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.metadata-view {
+  border-collapse: separate;
+}
+
+.metadata-view td {
+  background-color: white;
+}
+
+.metadata-view-data-cell {
+  background-color: white;
+  padding: 3px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.metadata-view-picture-cell {
+  height:1px;
+  width:1px;
+}
+
+.metadata-view-picture-cell img {
+  height: 200px;
+  width: 140px;
+  border: 2px solid #888888;
+}
+
+.metadata-view-display {
+  border-right: solid 2px #99BB77;
+  font-weight: bold;
+  vertical-align: text-top !important;
+  height: 1px;
+}
+
+.metadata-view-text {
+}
+
+.metadata-view-hidden-line {
+  height: 1px;
+}
+
+.metadata-view-line-1 {
+  height:0px;
+  border-right: solid 2px #99BB77;
+  border-bottom: solid 1px #99BB77;
+}
+.metadata-view-line-2 {
+  height:0px;
+  border-bottom: solid 1px #99BB77;
+}
+.metadata-view-line-3 {
+  height:0px;
+  border-right: solid 2px #99BB77;
+}
+.metadata-view-line-4 {
+  height:0px;
+}
