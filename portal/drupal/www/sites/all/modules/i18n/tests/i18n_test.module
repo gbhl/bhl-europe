@@ -34,7 +34,7 @@ function i18n_test_i18n_string_info() {
     'title' => t('Test'),
     'description' => t('Translatable menu items: title and description.'),
     'format' => FALSE, // This group doesn't have strings with format
-    'refresh callback' = 'i18n_test_i18n_string_refresh',
+    'refresh callback' => 'i18n_test_i18n_string_refresh',
   );
   return $groups;
 }

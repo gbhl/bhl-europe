@@ -6,11 +6,11 @@
 
 /**
  * Select multilingual variables
- * 
- * There are two lists of variables here. 
+ *
+ * There are two lists of variables here.
  * - i18n_variable_conf, list with high level variable names, some of which are multiple variables
  * - i18n_variable_list, translated list into actual variable names
- * 
+ *
  * Aditional variables to be make translatable can be set into $conf['i18n_variables'] as for older versions
  */
 function i18n_variable_admin_settings($form, $form_state) {

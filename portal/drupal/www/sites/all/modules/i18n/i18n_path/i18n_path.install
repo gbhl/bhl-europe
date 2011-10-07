@@ -6,14 +6,19 @@
  */
 
 /**
- * Implements hook_install()
+ * Implements hook_install().
  */
 function i18n_path_install() {
-  
+  // Set module weight for it to run after core modules, but before views.
+  db_update('system')
+    ->fields(array('weight' => 5))
+    ->condition('name', 'i18n_path', '=')
+    ->condition('type', 'module', '=')
+    ->execute();
 }
 
 /**
- * Implements hook_schema()
+ * Implements hook_schema().
  */
 function i18n_path_schema() {
   $schema['i18n_path'] = array(
@@ -72,4 +77,16 @@ function i18n_path_schema() {
     'primary key' => array('tpid'),
   );
   return $schema;
+}
+
+/**
+ * Set module weight.
+ */
+function i18n_path_update_7000(&$sandbox) {
+  // Set module weight for it to run after core modules, but before views.
+  db_update('system')
+    ->fields(array('weight' => 5))
+    ->condition('name', 'i18n_path', '=')
+    ->condition('type', 'module', '=')
+    ->execute();
 }

@@ -58,13 +58,16 @@ function i18n_variable_initialize($language = NULL) {
  * Get variables language, make sure it is initialized
  */
 function i18n_variable_language($initialize = TRUE) {
-  if (isset($GLOBALS['language_variable'])) {
-    // If we've got a variables language, it will be that one
-    return $GLOBALS['language_variable'];
+  // If we've got a variables language, it will be that one
+  if (!isset($GLOBALS['language_variable'])) {
+    if (!empty($_GET['i18n_variable_language']) && arg(0) == 'admin') {
+      $GLOBALS['language_variable'] = i18n_language($_GET['i18n_variable_language']);
+    }
+    else {
+      $GLOBALS['language_variable'] = i18n_language();
+    }
   }
-  else {
-    return i18n_language();
-  }
+  return $GLOBALS['language_variable'];
 }
 
 /**
@@ -92,13 +95,39 @@ function i18n_variable_form_alter(&$form, &$form_state, $form_id) {
         $form['#i18n_variable'] = $form['var']['#value'];
         $form['var']['#value'] = 'i18n_variable_theme_settings';
         $form['#submit'][] = 'i18n_variable_theme_form_submit';
+        $form += i18n_variable_form_selector();
       }
     }
     elseif ($i18n_variables = i18n_variable_form_alter_settings($form, $variables)) {
       array_unshift($form['#submit'], 'i18n_variable_form_submit');
       $form['#i18n_variables'] = $i18n_variables;
+      $form += i18n_variable_form_selector();
     }
   }  
+}
+
+/**
+ * Variable form language switcher
+ */
+function i18n_variable_form_selector() {
+  $current = i18n_variable_language();
+  $form['i18n_variable'] = array(
+    '#type' => 'fieldset',
+    '#weight' => -100,
+    '#title' => t('There are multilingual variables in this form.'),
+    '#description' => t('Check you are editing the variables for the right language or select the desired one. To enable more multilingual variables visit <a href="@i18n-variable-admin">multilingual variables configuration</a>.', array('@i18n-variable-admin' => url('admin/config/regional/i18n/variable'))),
+  );
+  $form['i18n_variable']['i18n_variable_language'] = array('#type' => 'value', '#value' => $current);
+  foreach (language_list() as $language) {
+    $link =  l($language->name, $_GET['q'], array('query' => array('i18n_variable_language' => $language->language)));
+    $items[] = $current->language == $language->language ? '<strong>' . $link . '</strong>' : $link;
+  }
+  $form['i18n_variable']['i18n_language_select'] = array(
+    '#title' => t('Select language'),
+    '#type' => 'item',  
+    '#markup' => implode(' | ', $items),
+  );
+  return $form;
 }
 
 /**
@@ -142,16 +171,6 @@ function i18n_variable_form_alter_settings(&$form, $variables) {
       // Add form field class (i18n-variable) and description text.
       $form[$field]['#attributes']['class'][] = 'i18n-variable';
       $form[$field]['#description'] = !empty($form[$field]['#description']) ? $form[$field]['#description'] : '';
-      $path = $_GET['q'];
-      $output .= t('Change this variable for other language:') . ' ';
-      foreach (i18n_language_list() as $l => $lang) {
-        if (i18n_langcode() == $l) {
-          $output .= $lang . ' ';
-        }
-        else {
-          $output .= l($lang, $path, array('language' => i18n_language($l))) . ' ';
-        }
-      }
       $form[$field]['#description'] .= ' <strong>' . t('This is a multilingual variable.') . '</strong> ' . $output;
       // Addd field => name to result
       $result[$field] = !empty($form[$field]['#title']) ? $form[$field]['#title'] : $field;
@@ -165,7 +184,8 @@ function i18n_variable_form_alter_settings(&$form, $variables) {
  */
 function i18n_variable_form_submit($form, &$form_state) {
   $op = isset($form_state['values']['op']) ? $form_state['values']['op'] : '';
-  $language = i18n_variable_language();
+  $language = i18n_language($form_state['values']['i18n_variable_language']);
+  unset($form_state['values']['i18n_variable_language']);
   $variables = array_keys($form['#i18n_variables']);
   foreach ($variables as $name) {
     if (isset($form_state['values'][$name])) {
@@ -194,7 +214,8 @@ function i18n_variable_form_submit($form, &$form_state) {
  * Note the theme variable has already been set into 'i18n_variable_theme_settings'
  */
 function i18n_variable_theme_form_submit($form, &$form_state) {
-  $language = i18n_variable_language();
+  $language = i18n_language($form_state['values']['i18n_variable_language']);
+  unset($form_state['values']['i18n_variable_language']);
   $settings = variable_get('i18n_variable_theme_settings');
   $name = $form['#i18n_variable'];
   i18n_variable_set($name, $settings, $language->language);

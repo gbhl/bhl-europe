@@ -17,11 +17,11 @@ function i18n_menu_install() {
   // If updating from D6, module changed name
   if (variable_get('i18n_drupal6_update')) {
     i18n_menu_update_7000();
-  }  
+  }
 }
 
 /**
- * Implements hook_uninstall()
+ * Implements hook_uninstall().
  */
 function i18n_menu_uninstall() {
   db_drop_field('menu_links', 'language');
@@ -31,11 +31,11 @@ function i18n_menu_uninstall() {
 }
 
 /**
- * Implements hook_schema_alter()
+ * Implements hook_schema_alter().
  */
 function i18n_menu_schema_alter(&$schema) {
   $schema['menu_links']['fields']['language'] = array('type' => 'varchar', 'length' => 12, 'not null' => TRUE, 'default' => LANGUAGE_NONE);
-  $schema['menu_links']['fields']['i18n_tsid'] = array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0); 
+  $schema['menu_links']['fields']['i18n_tsid'] = array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0);
   $schema['menu_custom']['fields']['i18n_mode'] = array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0);
   $schema['menu_custom']['fields']['language'] = array('type' => 'varchar', 'length' => 12, 'not null' => TRUE, 'default' => LANGUAGE_NONE);
 }

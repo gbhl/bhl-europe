@@ -6,18 +6,29 @@
  */
 
 /**
- * Implements hook_install()
+ * Implements hook_install().
  */
 function i18n_field_install() {
   // If updating from D6, module changed name
   if (variable_get('i18n_drupal6_update')) {
     i18n_field_update_7000();
-  }  
+  }
+}
+
+
+/**
+ * Implements hook_update_dependencies()
+ */
+function i18n_field_update_dependencies() {
+  $dependencies['i18n_field'][7000] = array(
+    'i18n_string' => 7001,
+  );
+  return $dependencies;
 }
 
 /**
- * Implements hook_i18n_drupal6_update
- * 
+ * Implements hook_i18n_drupal6_update().
+ *
  * Update old string names
  */
 function i18n_field_update_7000() {
@@ -28,7 +39,7 @@ function i18n_field_update_7000() {
     ->fields('s')
     ->condition('textgroup', 'cck')
     ->condition('type', 'field');
-  foreach ($query->execute->fetchAll() as $string) {
+  foreach ($query->execute() as $string) {
     $string->textgroup = 'field';
     list($bundle, $field) = split('-', $string->objectid);
     $string->type = $field;
@@ -42,14 +53,14 @@ function i18n_field_update_7000() {
     ->fields('s')
     ->condition('textgroup', 'profile')
     ->condition('type', 'field');
-  foreach ($query->execute->fetchAll() as $string) {
+  foreach ($query->execute() as $string) {
     $string->textgroup = 'field';
     $string->type = $string->property;
     if ($string->objectid == 'options') {
       // @todo Handle field options
       $string->objectid = '#allowed_values';
     }
-    else { // 
+    else {
       $string->objectid = 'user'; // Bundle for profile fields
       i18n_string_install_update_string($string);
     }
@@ -59,16 +70,16 @@ function i18n_field_update_7000() {
 
 /**
  * Old strings to update. All these will be handled by i18n_field module
- * 
+ *
  * 'cck:field:'. $content_type .'-'. $field_name .':widget_label'
  *  --> 'field:$field_name:$bundle:label' (though not used atm)
  * 'cck:field:'. $content_type .'-'. $field_name .':widget_description'
  *  --> 'field:$field_name:$bundle:description'
  * 'cck:fieldgroup:'. $content_type .'-'. $group_name .':display_description'
- * 'cck:fieldgroup:'. $content_type .'-'. $group_name .':form_description', $group['settings']['form']['description']); 
- * 
+ * 'cck:fieldgroup:'. $content_type .'-'. $group_name .':form_description', $group['settings']['form']['description']);
+ *
  * Profile:
  * profile:field:$field_name:title|explanation|options
  * "profile:category", $field->category
- * 
+ *
  */

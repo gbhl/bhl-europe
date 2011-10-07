@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_variable_info()
+ * Implements hook_variable_info().
  */
 function i18n_select_variable_info($options = array()) {
   $variables['i18n_select_nodes'] = array(
@@ -21,12 +21,7 @@ function i18n_select_variable_info($options = array()) {
     'group' => 'i18n',
     'element' => array('#disabled' => !module_exists('i18n_taxonomy')),
   );
-  $variables['i18n_select_blocks'] = array(
-    'title' => t('Blocks (not implemented)', array(), $options),
-    'type' => 'boolean',
-    'default' => TRUE,
-    'group' => 'i18n',
-  );
+
   // Enable / disable for specific pages
   $description = t("Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.", array('%blog' => 'blog', '%blog-wildcard' => 'blog/*', '%front' => '<front>'), $options);
   if (module_exists('php')) {
@@ -35,7 +30,7 @@ function i18n_select_variable_info($options = array()) {
   }
   else {
     $title = t('Pages', array(), $options);
-  }  
+  }
   $variables['i18n_select_page_mode'] = array(
     'type' => 'select',
     'options callback' => 'i18n_select_variable_option_list',
@@ -74,5 +69,5 @@ function i18n_select_variable_option_list($variable, $options = array()) {
   if (module_exists('php')) {
     $options += array(I18N_SELECT_PAGE_PHP => t('Pages on which this PHP code returns <code>TRUE</code> (experts only)'));
   }
-  return $options;  
+  return $options;
 }
