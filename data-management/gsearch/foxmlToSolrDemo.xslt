@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- $Id: foxmlToSolr.xslt $ -->
 <xsl:stylesheet version="1.0"
-		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"   
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     	xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
     		exclude-result-prefixes="exts"
 		xmlns:foxml="info:fedora/fedora-system:def/foxml#"
@@ -11,7 +11,7 @@
 
 <!--
 	 This xslt stylesheet generates the Solr doc element consisting of field elements
-     from a FOXML record. 
+     from a FOXML record.
      You must specify the index field elements in solr's schema.xml file,
      including the uniqueKey element, which in this case is set to "PID".
      Options for tailoring:
@@ -27,7 +27,7 @@
 	<xsl:param name="TRUSTSTOREPATH" select="repositoryName"/>
 	<xsl:param name="TRUSTSTOREPASS" select="repositoryName"/>
 	<xsl:variable name="PID" select="/foxml:digitalObject/@PID"/>
-	
+
 	<xsl:template match="/">
 		<!-- The following allows only active FedoraObjects to be indexed. -->
 		<xsl:if test="foxml:digitalObject/foxml:objectProperties/foxml:property[@NAME='info:fedora/fedora-system:def/model#state' and @VALUE='Active']">
@@ -48,8 +48,8 @@
 	</xsl:template>
 
 	<xsl:template match="/foxml:digitalObject" mode="activeFedoraObject">
-		<add> 
-		<doc> 
+		<add>
+		<doc>
 			<field name="PID">
 				<xsl:value-of select="$PID"/>
 			</field>
@@ -61,8 +61,8 @@
 			</field>
 			<xsl:for-each select="foxml:objectProperties/foxml:property">
 				<field>
-					<xsl:attribute name="name"> 
-						<xsl:value-of select="concat('fgs.', substring-after(@NAME,'#'))"/>
+					<xsl:attribute name="name">
+						<xsl:value-of select="concat('fgs_', substring-after(@NAME,'#'))"/>
 					</xsl:attribute>
 					<xsl:value-of select="@VALUE"/>
 				</field>
@@ -70,24 +70,24 @@
 			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/oai_dc:dc/*">
 				<field>
 					<xsl:attribute name="name">
-						<xsl:value-of select="concat('dc.', substring-after(name(),':'))"/>
+						<xsl:value-of select="concat('dc_', substring-after(name(),':'))"/>
 					</xsl:attribute>
 					<xsl:value-of select="text()"/>
 				</field>
 			</xsl:for-each>
 
-			<!-- a datastream is fetched, if its mimetype 
+			<!-- a datastream is fetched, if its mimetype
 			     can be handled, the text becomes the value of the field. -->
 			<xsl:for-each select="foxml:datastream[@CONTROL_GROUP='M' or @CONTROL_GROUP='E' or @CONTROL_GROUP='R']">
 				<field>
 					<xsl:attribute name="name">
-						<xsl:value-of select="concat('dsm.', @ID)"/>
+						<xsl:value-of select="concat('dsm_', @ID)"/>
 					</xsl:attribute>
 					<xsl:value-of select="exts:getDatastreamText($PID, $REPOSITORYNAME, @ID, $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH, $TRUSTSTOREPASS)"/>
 				</field>
 			</xsl:for-each>
-			
-			<!-- 
+
+			<!--
 			creating an index field with all text from the foxml record and its datastreams
 			-->
 
@@ -101,15 +101,15 @@
 					<xsl:text>&#160;</xsl:text>
 				</xsl:for-each>
 			</field>
-			
+
 		</doc>
 		</add>
 	</xsl:template>
 
 	<xsl:template match="/foxml:digitalObject" mode="inactiveFedoraObject">
-		<delete> 
+		<delete>
 			<id><xsl:value-of select="$PID"/></id>
 		</delete>
 	</xsl:template>
-	
-</xsl:stylesheet>	
+
+</xsl:stylesheet>
