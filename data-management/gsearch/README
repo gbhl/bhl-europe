@@ -1,5 +1,11 @@
 These XSLT are for Gsearch to transform the FOXML from Fedora Repository to Solr index XML.
 
+all configuration regarding indexing is found in
+
+fedora/tomcat/webapps/fedoragsearch/WEB-INF/classes/fgsconfigFinal/index/FgsIndex/
+
 By default, foxmlToSolrDemo.xslt is used. And it can be configured in index.properties.
+
+The xslt to be used can be configured by the propery fgsindex.defaultUpdateIndexDocXslt
 
 Every modification needs to restart Tomcat.
