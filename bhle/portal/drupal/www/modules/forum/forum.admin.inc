@@ -1,4 +1,5 @@
 <?php
+// $Id: forum.admin.inc,v 1.36 2010/08/08 19:21:25 dries Exp $
 
 /**
  * @file

@@ -1,4 +1,5 @@
 <?php
+// $Id: poll.tokens.inc,v 1.6 2010/12/01 00:31:38 webchick Exp $
 
 /**
  * @file

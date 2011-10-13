@@ -1,4 +1,5 @@
 <?php
+// $Id: profile-listing.tpl.php,v 1.7 2009/08/06 05:05:59 webchick Exp $
 
 /**
  * @file

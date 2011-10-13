@@ -1,4 +1,5 @@
 <?php
+// $Id: template.php,v 1.13 2010/12/14 01:04:27 dries Exp $
 
 /**
  * Add body classes if certain regions have content.
@@ -105,6 +106,7 @@ function bartik_process_maintenance_page(&$variables) {
  * Override or insert variables into the node template.
  */
 function bartik_preprocess_node(&$variables) {
+  $variables['submitted'] = t('published by !username on !datetime', array('!username' => $variables['name'], '!datetime' => $variables['date']));
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }

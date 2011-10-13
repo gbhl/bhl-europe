@@ -93,15 +93,6 @@ function piwik_reports_menu() {
     'weight' => 4,
     'type' => MENU_LOCAL_TASK,
   );
-  $items['admin/reports/piwik_reports/visitors/variables'] = array(
-    'title' => 'Custom variables',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('piwik_reports_reports', 'custom_variables'),
-    'access arguments' => array('access piwik reports'),
-    'file' => 'piwik_reports.pages.inc',
-    'weight' => 5,
-    'type' => MENU_LOCAL_TASK,
-  );
   $items['admin/reports/piwik_reports/actions'] = array(
     'title' => 'Actions',
     'page callback' => 'drupal_get_form',
@@ -213,6 +204,7 @@ function piwik_reports_menu() {
       'page arguments' => array('piwik_reports_admin_settings_form'),
       'access arguments' => array('administer piwik reports'),
       'type' => MENU_NORMAL_ITEM,
+      'file' => 'piwik.admin.inc',
     );
   }
   return $items;
@@ -231,64 +223,6 @@ function piwik_reports_menu_alter(&$items) {
       'type' => MENU_NORMAL_ITEM,
     );
   }
-}
-
-/**
- * Implements hook_block_info().
- */
-function piwik_reports_block_info() {
-  $blocks['piwik_page_report'] = array(
-    'info' => t('Piwik page report'),
-    'cache' => DRUPAL_NO_CACHE,
-  );
-  return $blocks;
-}
-
-/**
- * Implements hook_block_view().
- */
-function piwik_reports_block_view($delta = '') {
-  $block = array();
-
-  switch ($delta) {
-    case 'piwik_page_report':
-      $block['subject'] = t('Piwik page statistics');
-      if (!module_exists('piwik')) {
-        $block['content'] = t('To use this block you need to install <a href="!url">Piwik</a> module',array('!url' => 'http://www.drupal.org/project/piwik',));
-        return $block;
-      } 
-      if ($router_item = menu_get_item()) { 
-        if ($router_item['access'] != TRUE) {
-          return;
-        }
-      } 
-      if (!user_access('access piwik reports')) {
-        return;
-      }
-      drupal_add_js(drupal_get_path('module', 'piwik_reports') . '/piwik_reports.js');
-      // Build the data URL with all params.
-      global $user;
-      $piwik_auth = (variable_get('piwik_reports_token_auth', '') ? variable_get('piwik_reports_token_auth', '') : $user->data['piwik_reports_token_auth']);
-      $piwik_url = variable_get('piwik_url_http', '');
-
-      $data_params = array();
-      $data_params['idSite'] = variable_get('piwik_site_id',''); 
-      $data_params['date'] = 'today'; 
-      $data_params['period'] = 'year';
-      $data_params['module'] = 'API';
-      $data_params['method'] = 'Actions.getPageUrl';
-      $data_params['pageUrl'] = $_SERVER['REQUEST_URI']; 
-      $data_params['format'] = 'JSON';
-      if (!empty($piwik_auth)) {
-        $data_params['token_auth'] = $piwik_auth;
-      }
-      
-      $data_url = $piwik_url . 'index.php?' . drupal_http_build_query($data_params) . '&jsoncallback=?';
-      drupal_add_js(array('piwik_reports' => array('url' => $data_url)), 'setting');
-      $block['content'] = '<div id="piwikpageviews">x</div>';
-    break;
-  }
-  return $block;
 }
 
 /**

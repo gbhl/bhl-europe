@@ -77,13 +77,7 @@ function piwik_reports_siteselect_form($form = array(), $piwik_auth) {
       '#options' => $options,
     );
   }
-  elseif (count($options) == 1) {
-    $form['basic']['inline']['site'] = array(
-      '#type' => 'hidden',
-      '#value' => $_SESSION['piwik_reports_site'],
-    );
-  }
-  else {
+  elseif (count($options) == 0) {
     $_SESSION['piwik_reports_site'] = '';
   }
   return $form;
@@ -176,12 +170,6 @@ function piwik_reports_reports($form, &$form_state, $report) {
       $title[0] = t('Visitors countries');
       $data_params[0]['moduleToWidgetize'] = 'UserCountry';
       $data_params[0]['actionToWidgetize'] = 'getCountry';
-      $data_params[0]['filter_limit'] = 15;
-    break;
-    case 'custom_variables':
-      $title[0] = t('Custom variables');
-      $data_params[0]['moduleToWidgetize'] = 'CustomVariables';
-      $data_params[0]['actionToWidgetize'] = 'getCustomVariables';
       $data_params[0]['filter_limit'] = 15;
     break;
     case 'actions_pageurls':

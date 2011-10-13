@@ -57,16 +57,6 @@ define('I18N_STRING_STATUS_UPDATE', 1);
 define('I18N_STRING_STATUS_DELETE', 2);
 
 /**
- * Special string formats/filters: Run through filter_xss
- */
-define('I18N_STRING_FILTER_XSS', 'FILTER_XSS');
-
-/**
- * Special string formats/filters: Run through filter_xss_admin
- */
-define('I18N_STRING_FILTER_XSS_ADMIN', 'FILTER_XSS_ADMIN');
-
-/**
  * Implements hook_help().
  */
 function i18n_string_help($path, $arg) {
@@ -331,7 +321,7 @@ function i18n_string_textgroup($textgroup) {
  * Check whether a string format is allowed for translation.
  */
 function i18n_string_allowed_format($format_id = NULL) {
-  if (!$format_id || $format_id === I18N_STRING_FILTER_XSS || $format_id === I18N_STRING_FILTER_XSS_ADMIN) {
+  if (!$format_id) {
     return TRUE;
   }
   else {
@@ -508,24 +498,13 @@ function i18n_string_translate_access($string_format, $account = NULL) {
  *   - 'sanitize', whether to apply the text format, defaults to TRUE.
  *   - 'cache', text format parameter.
  *   - 'langcode', text format parameter, defaults to current page language.
- *   - 'allowed_tags', allowed HTML tags when format is I18N_STRING_FILTER_XSS
  */
 function i18n_string_format($string, $options = array()) {
   $options += array('langcode' => i18n_langcode(), 'format' => FALSE, 'sanitize' => TRUE, 'cache' => FALSE);
   // Apply format and callback 
   if ($string) {
     if ($options['format'] && $options['sanitize']) {
-      // Handle special format values (xss, xss_admin)
-      switch ($options['format']) {
-        case I18N_STRING_FILTER_XSS:
-          $string = !empty($options['allowed_tags']) ? filter_xss($string, $options['allowed_tags']) : filter_xss($string);
-          break;
-        case I18N_STRING_FILTER_XSS_ADMIN:
-          $string = filter_xss_admin($string);
-          break;
-        default:
-          $string = check_markup($string, $options['format'], $options['langcode'], $options['cache']);
-      }
+      $string = check_markup($string, $options['format'], $options['langcode'], $options['cache']);
     }
     if (isset($options['callback'])) {
       $string = call_user_func($options['callback'], $string);

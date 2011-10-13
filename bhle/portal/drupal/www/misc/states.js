@@ -1,3 +1,4 @@
+// $Id: states.js,v 1.5 2010/12/06 16:10:29 webchick Exp $
 (function ($) {
 
 /**
@@ -362,12 +363,7 @@ states.State.prototype = {
 
   $(document).bind('state:required', function(e) {
     if (e.trigger) {
-      if (e.value) {
-        $(e.target).closest('.form-item, .form-wrapper').find('label').append('<span class="form-required">*</span>');
-      }
-      else {
-        $(e.target).closest('.form-item, .form-wrapper').find('label .form-required').remove();
-      }
+      $(e.target).closest('.form-item, .form-submit, .form-wrapper')[e.value ? 'addClass' : 'removeClass']('form-required');
     }
   });
 

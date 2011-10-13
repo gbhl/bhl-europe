@@ -1,4 +1,5 @@
 <?php
+// $Id: tablesort.inc,v 1.61 2010/12/17 19:28:13 webchick Exp $
 
 /**
  * @file
@@ -73,7 +74,18 @@ class TableSort extends SelectQueryExtender {
    *   The current sort direction ("asc" or "desc").
    */
   protected function getSort() {
-    return tablesort_get_sort($this->header);
+    if (isset($_GET['sort'])) {
+      return ($_GET['sort'] == 'desc') ? 'desc' : 'asc';
+    }
+    // User has not specified a sort. Use default if specified; otherwise use "asc".
+    else {
+      foreach ($this->header as $header) {
+        if (is_array($header) && isset($header['sort'])) {
+          return $header['sort'];
+        }
+      }
+    }
+    return 'asc';
   }
 
   /**
@@ -100,7 +112,32 @@ class TableSort extends SelectQueryExtender {
    *   - "sql": The name of the database field to sort on.
    */
   protected function order() {
-    return tablesort_get_order($this->header);
+    $order = isset($_GET['order']) ? $_GET['order'] : '';
+    foreach ($this->header as $header) {
+      if (isset($header['data']) && $order == $header['data']) {
+        return array('name' => $header['data'], 'sql' => isset($header['field']) ? $header['field'] : '');
+      }
+
+      if (isset($header['sort']) && ($header['sort'] == 'asc' || $header['sort'] == 'desc')) {
+        $default = array('name' => $header['data'], 'sql' => isset($header['field']) ? $header['field'] : '');
+      }
+    }
+
+    if (isset($default)) {
+      return $default;
+    }
+    else {
+      // The first column specified is initial 'order by' field unless otherwise specified
+      $headers = array_values($this->header);
+      $header = $headers[0];
+      if (is_array($header)) {
+        $header += array('data' => NULL, 'field' => NULL);
+        return array('name' => $header['data'], 'sql' => $header['field']);
+      }
+      else {
+        return array('name' => $header);
+      }
+    }
   }
 }
 
@@ -202,27 +239,29 @@ function tablesort_get_query_parameters() {
 function tablesort_get_order($headers) {
   $order = isset($_GET['order']) ? $_GET['order'] : '';
   foreach ($headers as $header) {
-    if (is_array($header)) {
-      if (isset($header['data']) && $order == $header['data']) {
-        $default = $header;
-        break;
-      }
+    if (isset($header['data']) && $order == $header['data']) {
+      return array('name' => $header['data'], 'sql' => isset($header['field']) ? $header['field'] : '');
+    }
 
-      if (empty($default) && isset($header['sort']) && ($header['sort'] == 'asc' || $header['sort'] == 'desc')) {
-        $default = $header;
-      }
+    if (isset($header['sort']) && ($header['sort'] == 'asc' || $header['sort'] == 'desc')) {
+      $default = array('name' => $header['data'], 'sql' => isset($header['field']) ? $header['field'] : '');
     }
   }
 
-  if (!isset($default)) {
-    $default = reset($headers);
-    if (!is_array($default)) {
-      $default = array('data' => $default);
+  if (isset($default)) {
+    return $default;
+  }
+  else {
+    // The first column specified is the initial 'order by' field unless otherwise specified.
+    $first = current($headers);
+    if (is_array($first)) {
+      $first += array('data' => NULL, 'field' => NULL);
+      return array('name' => $first['data'], 'sql' => $first['field']);
+    }
+    else {
+      return array('name' => $first, 'sql' => '');
     }
   }
-
-  $default += array('data' => NULL, 'field' => NULL);
-  return array('name' => $default['data'], 'sql' => $default['field']);
 }
 
 /**
@@ -235,15 +274,12 @@ function tablesort_get_order($headers) {
  */
 function tablesort_get_sort($headers) {
   if (isset($_GET['sort'])) {
-    return (strtolower($_GET['sort']) == 'desc') ? 'desc' : 'asc';
+    return ($_GET['sort'] == 'desc') ? 'desc' : 'asc';
   }
-  // The user has not specified a sort. Use the default for the currently sorted
-  // header if specified; otherwise use "asc".
+  // User has not specified a sort. Use default if specified; otherwise use "asc".
   else {
-    // Find out which header is currently being sorted.
-    $ts = tablesort_get_order($headers);
     foreach ($headers as $header) {
-      if (is_array($header) && isset($header['data']) && $header['data'] == $ts['name'] && isset($header['sort'])) {
+      if (isset($header['sort'])) {
         return $header['sort'];
       }
     }

@@ -1,4 +1,5 @@
 <?php
+// $Id: dblog.admin.inc,v 1.42 2010/12/04 01:52:15 webchick Exp $
 
 /**
  * @file
@@ -10,8 +11,6 @@
  *
  * Messages are truncated at 56 chars. Full-length message could be viewed at
  * the message details page.
- *
- * @ingroup logging_severity_levels
  */
 function dblog_overview() {
   $filter = dblog_build_filter_query();
@@ -61,7 +60,7 @@ function dblog_overview() {
         format_date($dblog->timestamp, 'short'),
         theme('dblog_message', array('event' => $dblog, 'link' => TRUE)),
         theme('username', array('account' => $dblog)),
-        filter_xss($dblog->link),
+        $dblog->link,
       ),
       // Attributes for tr
       'class' => array(drupal_html_class('dblog-' . $dblog->type), $classes[$dblog->severity]),
@@ -287,7 +286,7 @@ function dblog_filter_form($form) {
     '#type' => 'fieldset',
     '#title' => t('Filter log messages'),
     '#collapsible' => TRUE,
-    '#collapsed' => empty($_SESSION['dblog_overview_filter']),
+    '#collapsed' => empty($session),
   );
   foreach ($filters as $key => $filter) {
     $form['filters']['status'][$key] = array(

@@ -129,7 +129,7 @@ function piwik_page_alter(&$page) {
       // Check we have a node object, it supports translation, and its
       // translated node ID (tnid) doesn't match its own node ID.
       $node = menu_get_object();
-      if ($node && translation_supported_type($node->type) && !empty($node->tnid) && ($node->tnid != $node->nid)) {
+      if ($node && translation_supported_type($node->type) && isset($node->tnid) && ($node->tnid != $node->nid)) {
         $source_node = node_load($node->tnid);
         $languages = language_list();
         $set_custom_url = drupal_json_encode(url('node/' . $source_node->nid, array('language' => $languages[$source_node->language], 'absolute' => TRUE)));
@@ -138,10 +138,10 @@ function piwik_page_alter(&$page) {
 
     // Track access denied (403) and file not found (404) pages.
     if ($status == '403 Forbidden') {
-      $set_document_title = '"403/URL = " + String(document.location.pathname + document.location.search).replace(/\//g,"%2f") + "/From = " + String(document.referrer).replace(/\//g,"%2f")';
+      $set_document_title = '"403/URL = " + String(document.location.pathname + document.location.search).replace(///g,"%2f") + "/From = " + String(document.referrer).replace(///g,"%2f")';
     }
     elseif ($status == '404 Not Found') {
-      $set_document_title = '"404/URL = " + String(document.location.pathname + document.location.search).replace(/\//g,"%2f") + "/From = " + String(document.referrer).replace(/\//g,"%2f")';
+      $set_document_title = '"404/URL = " + String(document.location.pathname + document.location.search).replace(///g,"%2f") + "/From = " + String(document.referrer).replace(///g,"%2f")';
     }
 
     // Add custom variables.
@@ -151,14 +151,10 @@ function piwik_page_alter(&$page) {
       $custom_var_name = !empty($piwik_custom_vars['slots'][$i]['name']) ? $piwik_custom_vars['slots'][$i]['name'] : '';
       if (!empty($custom_var_name)) {
         $custom_var_value = !empty($piwik_custom_vars['slots'][$i]['value']) ? $piwik_custom_vars['slots'][$i]['value'] : '';
-        $custom_var_scope = !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 'visit';
+        $custom_var_scope = !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 1;
 
-        $types = array();
         $node = menu_get_object();
-        if (is_object($node)) {
-          $types += array('node' => $node);
-        }
-        $custom_var_value = token_replace($custom_var_value, $types, array('clear' => TRUE));
+        $custom_var_value = token_replace($custom_var_value, array('node' => $node), array('clear' => TRUE));
 
         // Suppress empty custom variables.
         if (!is_numeric($custom_var_value) && empty($custom_var_value)) {
@@ -174,8 +170,8 @@ function piwik_page_alter(&$page) {
 
         $custom_var_name = drupal_json_encode($custom_var_name);
         $custom_var_value = drupal_json_encode($custom_var_value);
-        $custom_var_scope = drupal_json_encode($custom_var_scope);
-        $custom_variable .= "_paq.push(['setCustomVariable', $i, $custom_var_name, $custom_var_value, $custom_var_scope]);";
+        // TODO: Scope is not yet implemented in piwik. Maybe a new feature in future.
+        $custom_variable .= "_paq.push(['setCustomVariable', $i, $custom_var_name, $custom_var_value]);";
       }
     }
 

@@ -1,4 +1,5 @@
 <?php
+// $Id: password.inc,v 1.9 2010/12/18 00:56:18 dries Exp $
 
 /**
  * @file
@@ -18,7 +19,7 @@
  * increase by 1 every Drupal version in order to counteract increases in the
  * speed and power of computers available to crack the hashes.
  */
-define('DRUPAL_HASH_COUNT', 15);
+define('DRUPAL_HASH_COUNT', 14);
 
 /**
  * The minimum allowed log2 number of iterations for password stretching.

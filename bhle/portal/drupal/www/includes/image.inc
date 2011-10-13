@@ -1,4 +1,5 @@
 <?php
+// $Id: image.inc,v 1.42 2011/01/02 17:26:39 webchick Exp $
 
 /**
  * @file

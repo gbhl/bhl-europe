@@ -1,4 +1,5 @@
 <?php
+// $Id: book-all-books-block.tpl.php,v 1.5 2010/01/30 07:59:24 dries Exp $
 
 /**
  * @file

@@ -1,4 +1,5 @@
 <?php
+// $Id: openid.install,v 1.13 2011/01/02 17:26:39 webchick Exp $
 
 /**
  * @file
@@ -91,27 +92,20 @@ function openid_requirements($phase) {
 
   if ($phase == 'runtime') {
     // Check for the PHP BC Math library.
-    if (!function_exists('bcadd') && !function_exists('gmp_add')) {
-      $requirements['openid_math'] = array(
+    if (!function_exists('bcadd')) {
+      $requirements['bcmath'] = array(
         'value' => t('Not installed'),
         'severity' => REQUIREMENT_ERROR,
-        'description' => t('OpenID suggests the use of either the <a href="@gmp">GMP Math</a> (recommended for performance) or <a href="@bc">BC Math</a> libraries to enable OpenID associations.', array('@gmp' => 'http://php.net/manual/en/book.gmp.php', '@bc' => 'http://www.php.net/manual/en/book.bc.php')),
-      );
-    }
-    elseif (!function_exists('gmp_add')) {
-      $requirements['openid_math'] = array(
-        'value' => t('Not optimized'),
-        'severity' => REQUIREMENT_WARNING,
-        'description' => t('OpenID suggests the use of the GMP Math library for PHP for optimal performance. Check the <a href="@url">GMP Math Library documentation</a> for installation instructions.', array('@url' => 'http://www.php.net/manual/en/book.gmp.php')),
+        'description' => t('OpenID requires the BC Math library for PHP which is missing or outdated. Check the <a href="@url">PHP BC Math Library documentation</a> for information on how to correct this.', array('@url' => 'http://www.php.net/manual/en/book.bc.php')),
       );
     }
     else {
-      $requirements['openid_math'] = array(
+      $requirements['bcmath'] = array(
         'value' => t('Installed'),
         'severity' => REQUIREMENT_OK,
       );
     }
-    $requirements['openid_math']['title'] = t('OpenID Math library');
+    $requirements['bcmath']['title'] = t('BC Math library');
   }
 
   return $requirements;

@@ -15,7 +15,6 @@ function i18n_variable_install() {
   if (variable_get('i18n_drupal6_update')) {
     i18n_variable_update_7000();
     i18n_variable_update_7001();
-    i18n_variable_update_7002();
   }
 }
 
@@ -35,13 +34,5 @@ function i18n_variable_update_7001() {
   foreach (db_select('i18n_variable', 'v')->fields('v')->execute()->fetchAll() as $variable) {
     variable_store_set('language', $variable->language, $variable->name, unserialize($variable->value));
   }
-}
-
-/**
- * Drop i18n_variable table if exists
- */
-function i18n_variable_update_7002() {
-  if (db_table_exists('i18n_variable')) {
-    db_drop_table('i18n_variable');
-  }
+  // @todo Delete obsoleted table i18n_variable
 }

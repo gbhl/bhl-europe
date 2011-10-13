@@ -1,4 +1,5 @@
 <?php
+// $Id: utility.inc,v 1.2 2010/07/24 17:28:25 dries Exp $
 
 /**
  * @file

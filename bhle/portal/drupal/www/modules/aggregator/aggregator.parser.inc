@@ -1,4 +1,5 @@
 <?php
+// $Id: aggregator.parser.inc,v 1.10 2010/07/24 17:42:22 dries Exp $
 
 /**
  * @file
@@ -124,11 +125,7 @@ function aggregator_parse_feed(&$data, $feed) {
     else {
       $item['link'] = $feed->link;
     }
-
-    // Atom feeds have an ID tag instead of a GUID tag.
-    if (!isset($item['guid'])) {
-      $item['guid'] = isset($item['id']) ? $item['id'] : '';
-    }
+    $item['guid'] = isset($item['guid']) ? $item['guid'] : '';
 
     // Atom feeds have a content and/or summary tag instead of a description tag.
     if (!empty($item['content:encoded'])) {

@@ -1,3 +1,4 @@
+// $Id: vertical-tabs.js,v 1.14 2010/07/24 16:56:31 dries Exp $
 
 (function ($) {
 

@@ -1,4 +1,5 @@
 <?php
+// $Id: template.php,v 1.2 2010/08/22 12:46:21 dries Exp $
 
 /**
  * Tests a theme overriding a suggestion of a base theme hook.

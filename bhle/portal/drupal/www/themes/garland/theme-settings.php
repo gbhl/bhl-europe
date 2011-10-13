@@ -1,4 +1,5 @@
 <?php
+// $Id: theme-settings.php,v 1.3 2010/09/04 15:21:09 dries Exp $
 
 /**
  * @file

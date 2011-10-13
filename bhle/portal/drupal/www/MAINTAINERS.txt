@@ -1,3 +1,4 @@
+// $Id: MAINTAINERS.txt,v 1.53 2011/01/04 01:03:23 webchick Exp $
 
 Drupal core is maintained by the community.  To participate, go to
 
@@ -18,7 +19,7 @@ Drupal 7
 Component maintainers
 ---------------------
 
-Ajax system
+AJAX system
 - Alex Bronstein 'effulgentsia' <http://drupal.org/user/78040>
 - Randy Fay 'rfay' <http://drupal.org/user/30906>
 - Earl Miles 'merlinofchaos' <http://drupal.org/user/26979>
@@ -43,7 +44,7 @@ Database system
 
   - MySQL driver
     - Larry Garfield 'Crell' <http://drupal.org/user/26398>
-    - David Strauss 'David Strauss' <http://drupal.org/user/93254>
+    - David Strauss 'David Strauss' <hhttp://drupal.org/user/93254>
 
   - PostgreSQL driver
     - Damien Tournoud 'DamZ' <http://drupal.org/user/22211>
@@ -54,7 +55,7 @@ Database system
     - Károly Négyesi 'chx' <http://drupal.org/user/9446>
 
 Database update system
-- Károly Négyesi 'chx' <http://drupal.org/user/9446>
+- ?
 
 Entity system
 - Nathaniel Catchpole 'catch' <http://drupal.org/user/35733>
@@ -190,7 +191,7 @@ Filter module
 - Daniel F. Kudwien 'sun' <http://drupal.org/user/54136>
 
 Forum module
-- Lee Rowlands 'larowlan' <http://drupal.org/user/395439>
+- ?
 
 Help module
 - ?
@@ -209,7 +210,6 @@ Node module
 - David Strauss 'David Strauss' <http://drupal.org/user/93254>
 
 OpenID module
-- Vojtech Kusy 'wojtha' <http://drupal.org/user/56154>
 - Heine Deelstra 'Heine' <http://drupal.org/user/17943>
 - Christian Schmidt 'c960657' <http://drupal.org/user/216078>
 - Damien Tournoud 'DamZ' <http://drupal.org/user/22211>
@@ -237,7 +237,6 @@ Search module
 
 Shortcut module
 - David Rothstein 'David_Rothstein' <http://drupal.org/user/124982>
-- Kristof De Jaeger 'swentel' <http://drupal.org/user/107403>
 
 Simpletest module
 - Jimmy Berry 'boombatower' <http://drupal.org/user/214218>

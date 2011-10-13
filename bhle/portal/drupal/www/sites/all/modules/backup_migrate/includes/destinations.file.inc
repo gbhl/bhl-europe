@@ -1,4 +1,5 @@
 <?php
+// $Id: destinations.file.inc,v 1.2.2.6 2010/12/27 17:55:33 ronan Exp $
 
 
 /**

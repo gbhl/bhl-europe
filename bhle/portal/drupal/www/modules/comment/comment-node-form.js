@@ -1,3 +1,4 @@
+// $Id: comment-node-form.js,v 1.6 2010/11/05 19:47:20 dries Exp $
 
 (function ($) {
 

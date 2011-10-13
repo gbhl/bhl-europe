@@ -1,4 +1,5 @@
 <?php
+// $Id: field.crud.inc,v 1.74 2011/01/02 17:26:39 webchick Exp $
 
 /**
  * @file
@@ -38,7 +39,7 @@
  *   - settings: each omitted setting is given the default value defined in
  *     hook_field_info().
  *   - storage:
- *     - type: the storage backend specified in the 'field_storage_default'
+ *     - type: the storage backend specified in the 'field_default_storage'
  *       system variable.
  *     - settings: each omitted setting is given the default value specified in
  *       hook_field_storage_info().
@@ -421,6 +422,7 @@ function field_delete_field($field_name) {
  *   will be given the following default values:
  *   - label: the field name
  *   - description: empty string
+ *   - weight: 0
  *   - required: FALSE
  *   - default_value_function: empty string
  *   - settings: each omitted setting is given the default value specified in
@@ -633,11 +635,12 @@ function _field_write_instance($instance, $update = FALSE) {
 }
 
 /**
- * Reads a single instance record from the database.
+ * Reads a single instance record directly from the database.
  *
- * Generally, you should use field_info_instance() instead, as it
- * provides caching and allows other modules the opportunity to
- * append additional formatters, widgets, and other information.
+ * Generally, you should use the field_info_instance() instead.
+ *
+ * This function will not return deleted instances. Use
+ * field_read_instances() instead for this purpose.
  *
  * @param $entity_type
  *   The type of entity to which the field is bound.

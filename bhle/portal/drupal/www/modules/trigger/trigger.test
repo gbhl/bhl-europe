@@ -1,9 +1,5 @@
 <?php
-
-/**
- * @file
- * Tests for trigger.module.
- */
+// $Id: trigger.test,v 1.37 2010/10/05 06:17:29 webchick Exp $
 
 /**
  * Provides common helper methods.

@@ -1,4 +1,5 @@
 <?php
+// $Id: filters.backup_restore.inc,v 1.1.4.4 2011/01/24 05:37:19 ronan Exp $
 
 
 /**
@@ -32,10 +33,9 @@ class backup_migrate_filter_backup_restore extends backup_migrate_filter {
    * Get the default backup settings for this filter.
    */
   function backup_settings_default() {
-    backup_migrate_include('destinations');
     $out = array();
-    foreach (backup_migrate_get_destinations('source') as $destination) {
-      $out['destinations'][$destination->get_id()] = $destination->backup_settings_default();
+    foreach ($this->_get_destination_types() as $destination) {
+      $out += $destination->backup_settings_default();
     }
     return $out;
   }
@@ -73,25 +73,11 @@ class backup_migrate_filter_backup_restore extends backup_migrate_filter {
    * Get the form for the backup settings for this filter.
    */
   function backup_settings_form($settings) {
-    backup_migrate_include('destinations');
-    $out = array('destinations' => array(
-      '#tree' => TRUE,
-      
-    ));
-    foreach (backup_migrate_get_destinations('source') as $destination) {
-      $destination_settings = (array)(@$settings['destinations'][$destination->get_id()]) + $settings;
-      if ($form = $destination->backup_settings_form($destination_settings)) {
-        $out['destinations'][$destination->get_id()] = array(
-          '#type' => 'fieldset',
-          '#title' => t('!name Backup Options', array('!name' => $destination->get('name'))),
-          "#collapsible" => TRUE,
-          "#collapsed" => TRUE,
-          '#tree' => TRUE,
-          '#parents' => array('filters', 'destinations', $destination->get_id()),
-        ) + $form;
-      }
+    $form = array();
+    foreach ($this->_get_destination_types() as $destination) {
+      $destination->backup_settings_form($form, $settings);
     }
-    return $out;
+    return $form;
   }
 
   /**
@@ -121,9 +107,6 @@ class backup_migrate_filter_backup_restore extends backup_migrate_filter {
    */
   function backup($file, &$settings) {
     if ($source = $settings->get_source()) {
-      if (!empty($settings->filters['destinations'][$source->get_id()])) {
-        $settings->filters = (array)($settings->filters['destinations'][$source->get_id()]) + $settings->filters;
-      }
       $file = $source->backup_to_file($file, $settings);
       return $file;
     }
@@ -136,9 +119,6 @@ class backup_migrate_filter_backup_restore extends backup_migrate_filter {
    */
   function restore($file, &$settings) {
     if ($source = $settings->get_source()) {
-      if (!empty($settings->filters['destinations'][$source->get_id()])) {
-        $settings->filters = (array)($settings->filters['destinations'][$source->get_id()]) + $settings->filters;
-      }
       $num = $source->restore_from_file($file, $settings);
       return $num ? $file : FALSE;
     }
