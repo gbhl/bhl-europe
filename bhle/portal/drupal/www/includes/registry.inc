@@ -1,4 +1,5 @@
 <?php
+// $Id: registry.inc,v 1.34 2010/09/17 14:45:46 dries Exp $
 
 /**
  * @file
@@ -97,8 +98,7 @@ function _registry_update() {
     _registry_check_code(REGISTRY_RESET_LOOKUP_CACHE);
   }
   catch (Exception $e) {
-    $transaction->rollback();
-    watchdog_exception('registry', $e);
+    $transaction->rollback('registry', $e->getMessage(), array(), WATCHDOG_ERROR);
     throw $e;
   }
 

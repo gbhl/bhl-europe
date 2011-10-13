@@ -37,7 +37,7 @@ function i18n_node_variable_info($options = array()) {
   );
   $variables['i18n_node_default_language_none'] = array(
     'title' => t('Default language for content types with Multilingual support disabled.', array(), $options),
-    'description' => t('Determines which language will be set for newly created content of types that don\'t have Multilingual support enabled.', array(), $options),
+    'description' => t('Determines which language will be set for newly created content of types that don\'t have have Multilingual support enabled.', array(), $options),
     'type' => 'select',
     'options' => array(
       0 => t('The site\'s default language (Default behaviour).', array(), $options),

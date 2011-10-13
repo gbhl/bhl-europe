@@ -1,4 +1,5 @@
 <?php
+// $Id: node.tokens.inc,v 1.15 2010/06/29 00:57:19 dries Exp $
 
 /**
  * @file

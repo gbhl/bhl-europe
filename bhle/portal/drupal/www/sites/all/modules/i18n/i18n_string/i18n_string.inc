@@ -453,7 +453,7 @@ class i18n_string_textgroup_default {
         watchdog('i18n_string', 'Deleted string %location for text group %textgroup: %string', $i18nstring->get_args());
       }
       if ($options['messages']) {
-        drupal_set_message(t('Deleted string %location for text group %textgroup: %string', $i18nstring->get_args()));
+        drupal_set_message(t('Deleted string %location for tex tgroup %textgroup: %string', $i18nstring->get_args()));
       }
       return SAVED_DELETED;
     }

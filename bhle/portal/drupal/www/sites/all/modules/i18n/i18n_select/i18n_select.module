@@ -42,10 +42,7 @@ function i18n_select_init() {
  * Dirty trick to enable selection for blocks though it may be disabled for the current page.
  */
 function i18n_select_block_list_alter(&$blocks) {
-  // Still, skip for form submission. There are pages like the ones produced 
-  // by overlay that render the blocks before the page.
-  // See overlay_init(), overlay_overlay_child_initialize()
-  if (empty($_POST) && !isset($_GET['token']) && variable_get('i18n_select_page_block', TRUE)) {
+  if (variable_get('i18n_select_page_block', TRUE)) {
     i18n_select(TRUE);
   }
 }

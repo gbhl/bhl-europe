@@ -1,4 +1,5 @@
 <?php
+// $Id: node.tpl.php,v 1.2 2010/12/01 00:18:15 webchick Exp $
 
 /**
  * @file

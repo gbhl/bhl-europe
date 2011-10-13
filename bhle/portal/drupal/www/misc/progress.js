@@ -1,3 +1,4 @@
+// $Id: progress.js,v 1.27 2010/09/09 21:05:11 dries Exp $
 (function ($) {
 
 /**

@@ -1,3 +1,4 @@
+// $Id: jquery.cookie.js,v 1.1 2009/07/01 12:16:48 dries Exp $
 
 /**
  * Cookie plugin 1.0

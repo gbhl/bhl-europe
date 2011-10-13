@@ -1,3 +1,4 @@
+// $Id: preview.js,v 1.5 2010/12/11 21:37:41 webchick Exp $
 
 (function ($) {
   Drupal.color = {

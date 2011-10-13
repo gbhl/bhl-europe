@@ -1,9 +1,0 @@
-name = Views jQFX Cloud Carousel
-description = Integrates the Cloud Carousel plugin with Views jQFX.
-dependencies[] = views_jqfx
-package = Views
-core = 7.x
-files[] = views_jqfx_cloudcarousel.module
-files[] = views_jqfx_cloudcarousel.views_jqfx.inc
-files[] = theme/views_jqfx_cloudcarousel.theme.inc
-

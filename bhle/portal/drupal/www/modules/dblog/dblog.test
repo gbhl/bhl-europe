@@ -1,9 +1,5 @@
 <?php
-
-/**
- * @file
- * Tests for dblog.module.
- */
+// $Id: dblog.test,v 1.40 2010/12/04 01:52:15 webchick Exp $
 
 class DBLogTestCase extends DrupalWebTestCase {
   protected $big_user;
@@ -528,8 +524,6 @@ class DBLogTestCase extends DrupalWebTestCase {
    *   CSS class attribute.
    * @return
    *   The watchdog severity constant or NULL if not found.
-   *
-   * @ingroup logging_severity_levels
    */
   protected function getSeverityConstant($class) {
     // Reversed array from dblog_overview().

@@ -1,4 +1,5 @@
 <?php
+// $Id: forum.pages.inc,v 1.4 2010/04/28 05:54:55 webchick Exp $
 
 /**
  * @file

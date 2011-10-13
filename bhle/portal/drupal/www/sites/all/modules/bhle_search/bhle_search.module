@@ -20,12 +20,6 @@ function bhle_search_search_info() {
  */
 function bhle_search_form_search_form_alter(&$form, $form_state) {
     $conditions = $_SESSION['bhle_search']['conditions'];
-
-    // add a label (required for layout)
-    $form['basic']['search_description'] = array(
-        '#markup' => t('<label>search in:</label>'),
-        '#weight' => -11,
-    );
     
     $form['basic']['title'] = array(
         '#type' => 'checkbox',
@@ -54,13 +48,19 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         '#default_value' => (isset($conditions['taxon_name'])) ? $conditions['taxon_name'] : 0,
         '#weight' => -7,
     );
-        
+    
+    // add a label (required for layout)
+    $form['basic']['search_description'] = array(
+        '#markup' => t('<label>simple search all</label>'),
+        '#weight' => -6,
+    );
+    
     // modify simple keys enter form
     $form['basic']['keys']['#attributes'] = array(
-        'onblur' => "if (this.value == '') {this.value = '" . t('simple search all') . "';}",
-        'onfocus' => "if (this.value == '" . t('simple search all') . "') {this.value = '';}"
+        'onblur' => "if (this.value == '') {this.value = '" . t('type what do you want to search') . "';}",
+        'onfocus' => "if (this.value == '" . t('type what do you want to search') . "') {this.value = '';}"
     );
-    if( empty($form['basic']['keys']['#default_value']) ) $form['basic']['keys']['#default_value'] = t('simple search all');
+    if( empty($form['basic']['keys']['#default_value']) ) $form['basic']['keys']['#default_value'] = t('type what do you want to search');
     
     $form['#validate'][] = 'bhle_search_simple_validate';
     

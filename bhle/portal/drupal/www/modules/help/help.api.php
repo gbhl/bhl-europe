@@ -1,4 +1,5 @@
 <?php
+// $Id: help.api.php,v 1.11 2010/10/06 03:43:01 webchick Exp $
 
 /**
  * @file

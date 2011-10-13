@@ -1,4 +1,5 @@
 <?php
+// $Id: query.inc,v 1.24 2010/11/29 04:45:10 webchick Exp $
 
 /**
  * @ingroup database
@@ -103,8 +104,8 @@ class InsertQuery_pgsql extends InsertQuery {
   }
 
   public function __toString() {
-    // Create a sanitized comment string to prepend to the query.
-    $comments = $this->connection->makeComment($this->comments);
+    // Create a comments string to prepend to the query.
+    $comments = (!empty($this->comments)) ? '/* ' . implode('; ', $this->comments) . ' */ ' : '';
 
     // Default fields are always placed first for consistency.
     $insert_fields = array_merge($this->defaultFields, $this->insertFields);

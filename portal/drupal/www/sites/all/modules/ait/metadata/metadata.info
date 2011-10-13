@@ -1,7 +1,0 @@
-name = Metadata Nodes
-description = Ait test implentation for metadata nodes
-package = Metadata Handling
-core = 7.x
-dependencies[] = apachesolr
-stylesheets[all][] = metadata.css
-

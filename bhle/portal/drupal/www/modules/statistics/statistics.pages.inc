@@ -1,4 +1,5 @@
 <?php
+// $Id: statistics.pages.inc,v 1.23 2010/01/09 21:54:01 webchick Exp $
 
 /**
  * @file

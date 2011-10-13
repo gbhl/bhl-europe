@@ -1,9 +1,5 @@
 <?php
-
-/**
- * @file
- * Tests for openid.module.
- */
+// $Id: openid.test,v 1.32 2010/10/08 05:28:30 webchick Exp $
 
 /**
  * Base class for OpenID tests.

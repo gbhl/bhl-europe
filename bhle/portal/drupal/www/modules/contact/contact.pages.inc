@@ -1,4 +1,5 @@
 <?php
+// $Id: contact.pages.inc,v 1.45 2010/11/30 17:16:37 dries Exp $
 
 /**
  * @file
