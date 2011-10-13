@@ -76,12 +76,12 @@
                        
             <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
             
-            <?php if ($page['search_area']): ?><div id="search_area"><?php print render($page['search_area']); ?></div><?php endif; ?>
-
             <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
-
-            <?php print render($page['content']); ?>
             
+            <?php print render($page['content']); ?>            
+            
+
+            <?php if ($page['content_expanded']): ?><div id="content_expanded"><?php print render($page['content_expanded']); ?></div><?php endif; ?>           
             
         </div><!-- EOF: #main -->
 
@@ -135,11 +135,13 @@
 
 </div><!-- EOF: #footer -->
 
-<!-- Footer -->    
+<!-- Footer Bottom -->    
 <div id="footer-bottom">
     <div id="footer-bottom-inside">
-        <?php print render($page['footer']); ?>            
+        <?php print render($page['footer_bottom']); ?>            
     </div><!-- EOF: #footer-bottom-inside -->
-</div><!-- EOF: #footer -->
+</div><!-- EOF: #footer_bottom -->
 
 </div><!-- EOF: #page-wrapper -->
+
+

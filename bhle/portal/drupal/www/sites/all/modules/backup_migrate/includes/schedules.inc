@@ -1,5 +1,4 @@
 <?php
-// $Id: schedules.inc,v 1.2.2.3 2011/01/24 05:37:19 ronan Exp $
 
 /**
  * @file

@@ -1,4 +1,3 @@
-// $Id: backup_migrate.js,v 1.1.4.3 2010/10/16 23:08:56 ronan Exp $
 
 (function ($) {
 Drupal.backup_migrate = {

@@ -130,6 +130,11 @@ function i18n_string_translate_page_form_strings($strings, $langcode) {
         $description = '<h5>' . t('Text format: @name', array('@name' => $format->name)) . '</h5>' . theme('filter_tips', array('tips' => _filter_tips($format->format, FALSE)));
       }
     }
+    // If we don't have a source we create it
+    if (!$source && empty($disabled)) {
+      $item->update(array('messages' => TRUE));
+      $source = $item->get_source();
+    }
     $default_value = $item->format_translation($langcode, array('langcode' => $langcode, 'sanitize' => FALSE, 'debug' => FALSE));
     $form[$item->get_name()] = array(
       '#title' => $item->get_title(),

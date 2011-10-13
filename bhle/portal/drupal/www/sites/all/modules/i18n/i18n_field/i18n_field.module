@@ -59,7 +59,7 @@ function i18n_field_menu() {
             'file' => 'i18n_field.pages.inc',
             'type' => MENU_LOCAL_TASK,
           ) + $access;
-          
+
           $items["$path/fields/%field_ui_menu/translate/%language"] = array(
             'load arguments' => array($entity_type, $bundle_arg, $bundle_pos, '%map'),
             'title' => 'Instance',
@@ -68,7 +68,7 @@ function i18n_field_menu() {
             'file' => 'i18n_field.pages.inc',
             'type' => MENU_CALLBACK,
           ) + $access;
-        }      
+        }
       }
     }
   }
@@ -97,7 +97,7 @@ function i18n_field_field_attach_form($entity_type, $entity, &$form, &$form_stat
   foreach ($instances as $field_name => $instance) {
     if (isset($form[$field_name])) {
       $langcode = $form[$field_name]['#language'];
-      $field = &$form[$field_name];     
+      $field = &$form[$field_name];
       // Note: cardinality for unlimited fields is -1
       if (isset($field[$langcode]['#cardinality']) && $field[$langcode]['#cardinality'] != 1) {
         $translated = i18n_string_object_translate('field_instance', $instance);
@@ -241,15 +241,24 @@ function i18n_field_field_widget_form(&$form, &$form_state, $field, $instance, $
   if (($translate = i18n_field_type_info($field['type'], 'translate_default')) && !empty($instance['default_value'][$delta]['value']) && !empty($items[$delta]['value']) && $instance['default_value'][$delta]['value'] === $items[$delta]['value']) {
     $items[$delta]['value'] = $translate($instance, $items[$delta]['value'], $i18n_langcode);
   }
-  // Translate list options
-  if (($translate = i18n_field_type_info($field['type'], 'translate_options')) && !empty($field['settings']['allowed_values'])) {
-    $field['settings']['allowed_values'] = $translate($field, $i18n_langcode);
-  }
 
   // Redirect through original module_field_widget_form()
   if (!empty($instance['widget']['i18n_field_callbacks'])) {
     foreach ($instance['widget']['i18n_field_callbacks'] as $function) {
-      $element = $function($form, $form_state, $field, $instance, $langcode, $items, $delta, $element);
+      $element = $function($form, $form_state, $field, $instance_current, $langcode, $items, $delta, $element);
+    }
+  }
+  // Translate list options
+  if (($translate = i18n_field_type_info($field['type'], 'translate_options')) && !empty($field['settings']['allowed_values'])) {
+    $element['#options'] = $translate($field, $i18n_langcode);
+
+    if ($field['type'] == 'list_boolean' && !empty($element['#on_value'])) {
+      $on_value = $element['#on_value'];
+      $element['#title'] = $element['#options'][$on_value];
+
+      if ($instance['widget']['settings']['display_label']) {
+        $element['#title'] = $instance_current['label'];
+      }
     }
   }
   return $element;
@@ -263,7 +272,7 @@ function i18n_field_field_attach_view_alter(&$output, $context) {
     $element = &$output[$field_name];
     if (!empty($element['#entity_type']) && !empty($element['#field_name']) && !empty($element['#bundle'])) {
       $instance = field_read_instance($element['#entity_type'], $element['#field_name'], $element['#bundle']);
- 
+
       // Translate field title if set
       if (!empty($instance['label'])) {
         $element['#title'] = i18n_field_translate_property($instance, 'label');

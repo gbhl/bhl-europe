@@ -136,7 +136,8 @@ function i18n_taxonomy_admin_paths() {
 function i18n_taxonomy_menu_alter(&$items) {
   // If ctool's page manager is active for the path skip this modules override.
   // Also views module takes over this page so this won't work if views enabled.
-  if (variable_get('page_manager_term_view_disabled', TRUE)) {
+  // Skip when taxonomy_display enabled, see http://drupal.org/node/1280194
+  if (variable_get('page_manager_term_view_disabled', TRUE) && !module_exists('taxonomy_display')) {
     // Taxonomy term page. Localize terms.
     $items['taxonomy/term/%taxonomy_term']['page callback'] = 'i18n_taxonomy_term_page';
     $items['taxonomy/term/%taxonomy_term']['title callback'] = 'i18n_taxonomy_term_name';
@@ -527,6 +528,20 @@ function i18n_taxonomy_translation_tids($str_tids, $lang) {
     }
   }
   return implode($separator, $translated_tids);
+}
+
+/**
+ * Implements hook_taxonomy_display_breadcrumb_parents_alter(). 
+ */
+function i18n_taxonomy_taxonomy_display_breadcrumb_parents_alter(&$parents) {
+  $parents = i18n_taxonomy_localize_terms($parents);
+}
+
+/**
+ * Implements hook_taxonomy_display_term_page_term_object_alter().
+ */
+function i18n_taxonomy_taxonomy_display_term_page_term_object_alter(&$term) {
+  $term = i18n_taxonomy_localize_terms($term);
 }
 
 /**
@@ -1019,7 +1034,7 @@ function i18n_taxonomy_vocabulary_mode($vid, $mode = NULL) {
   }
   else {
     if (!isset($modes[$vid])) {
-      $modes[$vid] = taxonomy_vocabulary_load($vid)->i18n_mode;
+      $modes[$vid] = i18n_object_field(taxonomy_vocabulary_load($vid), 'i18n_mode', I18N_MODE_NONE);
     }
     return isset($mode) ? $mode & $modes[$vid] : $modes[$vid];
   }

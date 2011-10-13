@@ -1,5 +1,4 @@
 <?php
-// $Id: menu.admin.inc,v 1.90 2010/10/20 07:40:59 webchick Exp $
 
 /**
  * @file
@@ -679,7 +678,7 @@ function menu_configure() {
     '#empty_option' => t('No Secondary links'),
     '#options' => $menu_options,
     '#tree' => FALSE,
-    '#description' => t('Select the source for the Secondary links. An advanced option allows you to use the same source for both Main links (currently %main) and Secondary links: if your source menu has two levels of hierarchy, the top level menu links will appear in the Main links, and the children of the active link will appear in the Secondary links.', array('%main' => $menu_options[$main])),
+    '#description' => t('Select the source for the Secondary links. An advanced option allows you to use the same source for both Main links (currently %main) and Secondary links: if your source menu has two levels of hierarchy, the top level menu links will appear in the Main links, and the children of the active link will appear in the Secondary links.', array('%main' => $main ? $menu_options[$main] : 'none')),
   );
 
   return system_settings_form($form);

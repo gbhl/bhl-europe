@@ -1,5 +1,4 @@
 <?php
-// $Id: database.inc,v 1.147 2010/12/22 07:48:56 webchick Exp $
 
 /**
  * @file
@@ -274,20 +273,25 @@ abstract class DatabaseConnection extends PDO {
   protected $schema = NULL;
 
   /**
-   * The default prefix used by this database connection.
-   *
-   * Separated from the other prefixes for performance reasons.
-   *
-   * @var string
-   */
-  protected $defaultPrefix = '';
-
-  /**
-   * The non-default prefixes used by this database connection.
+   * The prefixes used by this database connection.
    *
    * @var array
    */
   protected $prefixes = array();
+
+  /**
+   * List of search values for use in prefixTables().
+   *
+   * @var array
+   */
+  protected $prefixSearch = array();
+
+  /**
+   * List of replacement values for use in prefixTables().
+   *
+   * @var array
+   */
+  protected $prefixReplace = array();
 
   function __construct($dsn, $username, $password, $driver_options = array()) {
     // Initialize and prepare the connection prefix.
@@ -321,7 +325,7 @@ abstract class DatabaseConnection extends PDO {
    *   PDO::FETCH_OBJ, PDO::FETCH_NUM, or a string representing the name of a
    *   class. If a string is specified, each record will be fetched into a new
    *   object of that class. The behavior of all other values is defined by PDO.
-   *   See http://www.php.net/PDOStatement-fetch
+   *   See http://php.net/manual/pdostatement.fetch.php
    * - return: Depending on the type of query, different return values may be
    *   meaningful. This directive instructs the system which type of return
    *   value is desired. The system will generally set the correct value
@@ -376,7 +380,7 @@ abstract class DatabaseConnection extends PDO {
   }
 
   /**
-   * Preprocess the prefixes used by this database connection.
+   * Set the list of prefixes used by this database connection.
    *
    * @param $prefix
    *   The prefixes, in any of the multiple forms documented in
@@ -384,14 +388,27 @@ abstract class DatabaseConnection extends PDO {
    */
   protected function setPrefix($prefix) {
     if (is_array($prefix)) {
-      $this->defaultPrefix = isset($prefix['default']) ? $prefix['default'] : '';
-      unset($prefix['default']);
-      $this->prefixes = $prefix;
+      $this->prefixes = $prefix + array('default' => '');
     }
     else {
-      $this->defaultPrefix = $prefix;
-      $this->prefixes = array();
+      $this->prefixes = array('default' => $prefix);
     }
+
+    // Set up variables for use in prefixTables(). Replace table-specific
+    // prefixes first.
+    $this->prefixSearch = array();
+    $this->prefixReplace = array();
+    foreach ($this->prefixes as $key => $val) {
+      if ($key != 'default') {
+        $this->prefixSearch[] = '{' . $key . '}';
+        $this->prefixReplace[] = $val . $key;
+      }
+    }
+    // Then replace remaining tables with the default prefix.
+    $this->prefixSearch[] = '{';
+    $this->prefixReplace[] = $this->prefixes['default'];
+    $this->prefixSearch[] = '}';
+    $this->prefixReplace[] = '';
   }
 
   /**
@@ -409,12 +426,7 @@ abstract class DatabaseConnection extends PDO {
    *   The properly-prefixed string.
    */
   public function prefixTables($sql) {
-    // Replace specific table prefixes first.
-    foreach ($this->prefixes as $key => $val) {
-      $sql = strtr($sql, array('{' . $key . '}' => $val . $key));
-    }
-    // Then replace remaining tables with the default prefix.
-    return strtr($sql, array('{' => $this->defaultPrefix , '}' => ''));
+    return str_replace($this->prefixSearch, $this->prefixReplace, $sql);
   }
 
   /**
@@ -428,7 +440,7 @@ abstract class DatabaseConnection extends PDO {
       return $this->prefixes[$table];
     }
     else {
-      return $this->defaultPrefix;
+      return $this->prefixes['default'];
     }
   }
 
@@ -539,6 +551,63 @@ abstract class DatabaseConnection extends PDO {
    */
   public function makeSequenceName($table, $field) {
     return $this->prefixTables('{' . $table . '}_' . $field . '_seq');
+  }
+
+  /**
+   * Flatten an array of query comments into a single comment string.
+   *
+   * The comment string will be sanitized to avoid SQL injection attacks.
+   *
+   * @param $comments
+   *   An array of query comment strings.
+   *
+   * @return
+   *   A sanitized comment string.
+   */
+  public function makeComment($comments) {
+    if (empty($comments))
+      return '';
+
+    // Flatten the array of comments.
+    $comment = implode('; ', $comments);
+
+    // Sanitize the comment string so as to avoid SQL injection attacks.
+    return '/* ' . $this->filterComment($comment) . ' */ ';
+  }
+
+  /**
+   * Sanitize a query comment string.
+   *
+   * Ensure a query comment does not include strings such as "* /" that might
+   * terminate the comment early. This avoids SQL injection attacks via the
+   * query comment. The comment strings in this example are separated by a
+   * space to avoid PHP parse errors.
+   *
+   * For example, the comment:
+   * @code
+   * db_update('example')
+   *  ->condition('id', $id)
+   *  ->fields(array('field2' => 10))
+   *  ->comment('Exploit * / DROP TABLE node; --')
+   *  ->execute()
+   * @endcode
+   *
+   * Would result in the following SQL statement being generated:
+   * @code
+   * "/ * Exploit * / DROP TABLE node; -- * / UPDATE example SET field2=..."
+   * @endcode
+   *
+   * Unless the comment is sanitised first, the SQL server would drop the
+   * node table and ignore the rest of the SQL statement.
+   *
+   * @param $comment
+   *   A query comment string.
+   *
+   * @return
+   *   A sanitized version of the query comment string.
+   */
+  protected function filterComment($comment = '') {
+    return preg_replace('/(\/\*\s*)|(\s*\*\/)/', '', $comment);
   }
 
   /**
@@ -953,7 +1022,9 @@ abstract class DatabaseConnection extends PDO {
     }
 
     // We need to find the point we're rolling back to, all other savepoints
-    // before are no longer needed.
+    // before are no longer needed. If we rolled back other active savepoints,
+    // we need to throw an exception.
+    $rolled_back_other_active_savepoints = FALSE;
     while ($savepoint = array_pop($this->transactionLayers)) {
       if ($savepoint == $savepoint_name) {
         // If it is the last the transaction in the stack, then it is not a
@@ -963,10 +1034,20 @@ abstract class DatabaseConnection extends PDO {
           break;
         }
         $this->query('ROLLBACK TO SAVEPOINT ' . $savepoint);
+        $this->popCommittableTransactions();
+        if ($rolled_back_other_active_savepoints) {
+          throw new DatabaseTransactionOutOfOrderException();
+        }
         return;
+      }
+      else {
+        $rolled_back_other_active_savepoints = TRUE;
       }
     }
     parent::rollBack();
+    if ($rolled_back_other_active_savepoints) {
+      throw new DatabaseTransactionOutOfOrderException();
+    }
   }
 
   /**
@@ -1015,15 +1096,28 @@ abstract class DatabaseConnection extends PDO {
     if (!$this->supportsTransactions()) {
       return;
     }
-    if (!$this->inTransaction()) {
+    if (!isset($this->transactionLayers[$name])) {
       throw new DatabaseTransactionNoActiveException();
     }
 
-    // Commit everything since SAVEPOINT $name.
-    while($savepoint = array_pop($this->transactionLayers)) {
-      if ($savepoint != $name) continue;
+    // Mark this layer as committable.
+    $this->transactionLayers[$name] = FALSE;
+    $this->popCommittableTransactions();
+  }
+
+  /**
+   * Internal function: commit all the transaction layers that can commit.
+   */
+  protected function popCommittableTransactions() {
+    // Commit all the committable layers.
+    foreach (array_reverse($this->transactionLayers) as $name => $active) {
+      // Stop once we found an active transaction.
+      if ($active) {
+        break;
+      }
 
       // If there are no more layers left then we should commit.
+      unset($this->transactionLayers[$name]);
       if (empty($this->transactionLayers)) {
         if (!parent::commit()) {
           throw new DatabaseTransactionCommitFailedException();
@@ -1031,7 +1125,6 @@ abstract class DatabaseConnection extends PDO {
       }
       else {
         $this->query('RELEASE SAVEPOINT ' . $name);
-        break;
       }
     }
   }
@@ -1676,6 +1769,11 @@ class DatabaseTransactionCommitFailedException extends Exception { }
 class DatabaseTransactionExplicitCommitNotAllowedException extends Exception { }
 
 /**
+ * Exception thrown when a rollback() resulted in other active transactions being rolled-back.
+ */
+class DatabaseTransactionOutOfOrderException extends Exception { }
+
+/**
  * Exception thrown for merge queries that do not make semantic sense.
  *
  * There are many ways that a merge query could be malformed.  They should all
@@ -1770,7 +1868,7 @@ class DatabaseTransaction {
 
   public function __destruct() {
     // If we rolled back then the transaction would have already been popped.
-    if ($this->connection->inTransaction() && !$this->rolledBack) {
+    if (!$this->rolledBack) {
       $this->connection->popTransaction($this->name);
     }
   }

@@ -1,5 +1,4 @@
 <?php
-// $Id: taxonomy.pages.inc,v 1.57 2010/11/23 02:56:10 dries Exp $
 
 /**
  * @file
@@ -32,14 +31,12 @@ function taxonomy_term_page($term) {
   drupal_add_feed('taxonomy/term/' . $term->tid . '/feed', 'RSS - ' . $term->name);
 
   $build = array();
-  // Add term heading if the term has a description
-  if (!empty($term->description)) {
-    $build['term_heading'] = array(
-      '#prefix' => '<div class="term-listing-heading">',
-      '#suffix' => '</div>',
-      'term' => taxonomy_term_view($term, 'full'),
-    );
-  }
+
+  $build['term_heading'] = array(
+    '#prefix' => '<div class="term-listing-heading">',
+    '#suffix' => '</div>',
+    'term' => taxonomy_term_view($term, 'full'),
+  );
 
   if ($nids = taxonomy_select_nodes($term->tid, TRUE, variable_get('default_nodes_main', 10))) {
     $nodes = node_load_multiple($nids);
@@ -113,7 +110,7 @@ function taxonomy_autocomplete($field_name, $tags_typed = '') {
       ->execute()
       ->fetchAllKeyed();
 
-    $prefix = count($tags_typed) ? implode(', ', $tags_typed) . ', ' : '';
+    $prefix = count($tags_typed) ? drupal_implode_tags($tags_typed) . ', ' : '';
 
     $term_matches = array();
     foreach ($tags_return as $tid => $name) {
@@ -122,9 +119,7 @@ function taxonomy_autocomplete($field_name, $tags_typed = '') {
       if (strpos($name, ',') !== FALSE || strpos($name, '"') !== FALSE) {
         $n = '"' . str_replace('"', '""', $name) . '"';
       }
-      else {
-        $term_matches[$prefix . $n] = check_plain($name);
-      }
+      $term_matches[$prefix . $n] = check_plain($name);
     }
   }
 
