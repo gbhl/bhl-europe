@@ -4,12 +4,14 @@
     <property name="snapshooter" value="/home/solr-user/solr/bin/snapshooter.sh" />
  -->
  <cores adminPath="/admin/cores">
+ <!--
   <core name="core1" instanceDir="core1">
     <property name="dataDir" value="core1/data" />
   </core>
   <core name="core2" instanceDir="core2">
     <property name="dataDir" value="core2/data" />
   </core>
+ -->
   <core name="core3" instanceDir="core3">
     <property name="dataDir" value="core3/data" />
   </core>
