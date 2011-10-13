@@ -1,0 +1,407 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.akubraproject</groupId>
+  <artifactId>akubra</artifactId>
+  <version>0.3</version>
+  <packaging>pom</packaging>
+  <name>Akubra Blob Storage API</name>
+  <url>http://akubraproject.org/</url>
+  <description>A pluggable interface that provides read/write access to finite-length, URI-addressible bitstreams</description>
+  <inceptionYear>2009</inceptionYear>
+
+  <organization>
+    <name>DuraSpace</name>
+    <url>http://duraspace.org/</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>Licensed under the Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <comments>Copyright (c) 2009-2010 DuraSpace</comments>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <system>jira</system>
+    <url>https://fedora-commons.org/jira/browse/AKUBRA</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>bamboo</system>
+    <url>https://fedora-commons.org/bamboo/browse/AKUBRA</url>
+  </ciManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>Akubra project general users mailing list</name>
+      <subscribe>http://groups.google.com/group/akubra-users/subscribe</subscribe>
+      <unsubscribe>akubra-users+unsubscribe@googlegroups.com</unsubscribe>
+      <post>akubra-users@googlegroups.com</post>
+      <archive>http://groups.google.com/group/akubra-users/topics</archive>
+    </mailingList>
+    <mailingList>
+      <name>Akubra project developer mailing list</name>
+      <subscribe>http://groups.google.com/group/akubra-dev/subscribe</subscribe>
+      <unsubscribe>akubra-dev+unsubscribe@googlegroups.com</unsubscribe>
+      <post>akubra-dev@googlegroups.com</post>
+      <archive>http://groups.google.com/group/akubra-dev/topics</archive>
+    </mailingList>
+    <mailingList>
+      <name>Akubra project commit notification mailing list</name>
+      <subscribe>http://groups.google.com/group/akubra-codewatch/subscribe</subscribe>
+      <unsubscribe>akubra-codewatch+unsubscribe@googlegroups.com</unsubscribe>
+      <post>akubra-codewatch@googlegroups.com</post>
+      <archive>http://groups.google.com/group/akubra-codewatch/topics</archive>
+    </mailingList>
+  </mailingLists>
+
+  <developers>
+    <developer>
+      <name>Amit Kapoor</name>
+    </developer>
+    <developer>
+      <name>Chris Wilper</name>
+    </developer>
+    <developer>
+      <name>Pradeep Krishnan</name>
+    </developer>
+    <developer>
+      <name>Ronald Tschalär</name>
+    </developer>
+  </developers>
+
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
+    <site>
+      <id>site</id>
+      <url>${site.deploy.url}</url>
+    </site>
+  </distributionManagement>
+
+  <scm>
+    <developerConnection>scm:svn:https://fedora-commons.org/svn/root/akubra/tags/akubra-0.3</developerConnection>
+    <connection>scm:svn:https://fedora-commons.org/svn/root/akubra/tags/akubra-0.3</connection>
+    <url>scm:svn:https://fedora-commons.org/svn/root/akubra/tags/akubra-0.3</url>
+  </scm>
+
+  <modules>
+    <module>akubra-core</module>
+    <module>akubra-fs</module>
+    <module>akubra-map</module>
+    <module>akubra-mem</module>
+    <module>akubra-mux</module>
+    <module>akubra-tck</module>
+    <module>akubra-txn</module>  
+	<module>bhle-llstore</module> 
+  </modules>
+
+  <properties>
+    <!-- aggregate documentation: javadocs, jxr, pmd, etc -->
+    <aggregate>true</aggregate>
+    <site.deploy.path>/tmp/akubra-site</site.deploy.path>
+    <site.deploy.url>file://${site.deploy.path}</site.deploy.url>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>0.9.18</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.collections</groupId>
+        <artifactId>google-collections</artifactId>
+        <version>1.0-rc1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>1.4</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.transaction</groupId>
+        <artifactId>jta</artifactId>
+        <version>1.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.akubraproject</groupId>
+        <artifactId>akubra-core</artifactId>
+        <version>${pom.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.akubraproject</groupId>
+        <artifactId>akubra-fs</artifactId>
+        <version>${pom.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.akubraproject</groupId>
+        <artifactId>akubra-mem</artifactId>
+        <version>${pom.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.akubraproject</groupId>
+        <artifactId>akubra-tck</artifactId>
+        <version>${pom.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.akubraproject</groupId>
+        <artifactId>akubra-txn</artifactId>
+        <version>${pom.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymock</artifactId>
+        <version>2.4</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.easymock</groupId>
+        <artifactId>easymockclassextension</artifactId>
+        <version>2.4</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.5.10</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>5.8</version>
+        <classifier>jdk15</classifier>
+        <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0</version>
+        <configuration>
+          <tagBase>https://fedora-commons.org/svn/root/akubra/tags</tagBase>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>1.0-beta-1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <bannedDependencies>
+                  <searchTransitive>true</searchTransitive>
+                  <excludes>
+                    <exclude>commons-logging</exclude>
+                    <exclude>log4j</exclude>
+                  </excludes>
+                </bannedDependencies>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Export-Package>${osgi.export}</Export-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <instrumentation>
+            <ignores>
+              <ignore>org.apache.commons.logging.*</ignore>
+            </ignores>
+          </instrumentation>
+          <check>
+            <haltOnFailure>false</haltOnFailure>
+          </check>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>2.4</version>
+        <dependencies>
+          <dependency>
+            <groupId>pmd</groupId>
+            <artifactId>pmd</artifactId>
+            <version>4.2.5</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+
+    <defaultGoal>install</defaultGoal>
+  </build>
+
+  <reporting>
+    <plugins>
+      <!-- Generate one javadoc for everything -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <links>
+            <!-- j2ee must precede j2se so javax.transaction is picked up correctly -->
+            <link>http://java.sun.com/javase/6/docs/api/</link>
+            <link>http://java.sun.com/javaee/6/docs/api/</link>
+            <link>http://commons.apache.org/io/api-1.4</link>
+            <link>http://google-collections.googlecode.com/svn/trunk/javadoc</link>
+          </links>
+        </configuration>
+      </plugin>
+
+      <!-- Java Cross-References -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <inputEncoding>UTF-8</inputEncoding>
+          <outputEncoding>UTF-8</outputEncoding>
+        </configuration>
+      </plugin>
+
+      <!-- code style checks -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <configuration>
+          <sourceEncoding>UTF-8</sourceEncoding>
+          <targetJdk>1.5</targetJdk>
+          <failOnViolation>false</failOnViolation>
+        </configuration>
+      </plugin>
+
+      <!-- findbugs -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.0</version>
+        <configuration>
+          <excludeFilterFile>${project.parent.basedir}/findbugs_exclude.xml</excludeFilterFile>
+        </configuration>
+      </plugin>
+
+      <!-- code coverage analyzer -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.2</version>
+      </plugin>
+
+      <!-- collect test reports -->
+      <plugin>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.4.3</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>report-only</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <profiles>
+    <profile>
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+</project>

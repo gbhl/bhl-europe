@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* $Id: ie.css,v 1.2 2009/07/13 23:52:58 andregriffin Exp $ */
+/**
+ * Drupal 6 Framework - Created by Andre Griffin
+ * For Internet Explorer 7 and under
+ */
+#header #sitename{padding-bottom:1.5em;}
+ol{list-style-position:inside;margin-left:-1.3em;}
+ol ul li{margin-left:1.5em;padding:0;}
+.clearfix,.container{display:inline-block;}
+* html .clearfix,* html .container{height:1%;}
+hr{margin:-8px auto 11px;}

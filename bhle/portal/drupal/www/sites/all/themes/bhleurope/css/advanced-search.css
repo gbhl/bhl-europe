@@ -1,0 +1,254 @@
+/* 
+    Document   : advanced-search
+    Created on : May 5, 2011, 5:44:20 PM
+    Author     : vmplanet
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.advanced-search-highlighting {
+    background-color: yellow !important;
+    font-weight: bold !important;
+}
+
+
+.advanced-search-results-list td {
+    background-color: white;
+}
+
+.advanced-search-results-list table {
+    height: 1px;
+}
+
+.advanced-search-results-table {
+    height: 1px;
+    width: 1px;
+    border: none;
+}
+
+.advanced-search-results-table-cell {
+    background-color: white;
+    border: 1px solid white;
+    padding: 0px;
+}
+
+.advanced-search-results-table-cell > div {
+    background-color: white;
+    border: 1px solid white;
+    height: 250px;
+    width: 200px;
+}
+
+.advanced-search-results-table-cell > div > div {
+    background-color: #F5F5F5;
+    border: 3px solid #DDDDDD;
+    height: 220px;
+    width: 170px;
+    overflow: hidden;
+    margin: 12px;
+    padding: 5px;
+}
+
+.advanced-search-results-table-cell > div > div:hover {
+    background-color: #DDFFBB;
+    border: 3px solid #333333;
+}
+
+.advanced-search-results-table-cell > div > div * {
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.advanced-search-results-table-cell > div > div p {
+    text-align: left;
+    font-size: 9pt;
+}
+
+.advanced-search-table-result {
+    width: 100%;
+    text-align: center;
+}
+
+.advanced-search-table-result-picture-cell img {
+    border: 2px solid #888888 !important;
+    height: 100px;
+    width: 70px;
+}
+
+
+.advanced-search-list-result-picture-cell {
+  height: 1px;
+  width: 1px;
+}
+
+.advanced-search-list-result-picture-cell img {
+  border: 2px solid #888888;
+}
+
+/* resultgrid adaptations */
+.advanced-search-grid-result {
+  position: absolute;
+}
+
+.advanced-search-grid-result div.thumbnail img {
+  position: absolute;
+  border: 2px sold #888888 !important;
+  height: 100px;
+  width: 70px;
+}
+
+.advanced-search-grid-result div.grid-text {
+  position: absolute;
+  top: 105px;
+  width: 170px;
+}
+
+.advanced-search-grid-result div div.grid-title {
+  color: #000000;
+  font-weight: bold;	
+  font-size: 10pt;
+  line-height: 1;
+}
+
+.advanced-search-grid-result div div.grid-provider {
+  color: #000000;
+  font-size: 10pt;
+  line-height: 1;
+  margin-top: 1em;
+}
+
+.advanced-search-grid-result div.grid-shown {
+  position: absolute;
+  top: 1px;
+  left: 150px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icons/book.png);
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.advanced-search-grid-result div.grid-shown a.shownat {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+/* resultlist adaptations */
+.advanced-search-result h3 {
+  visibility: hidden;
+}
+
+.search-results li {
+  margin-bottom: 2px;
+}
+
+.search-results * p {
+  margin-bottom: 1px;
+}
+
+.advanced-search-list-result {
+  margin-bottom: 1em;
+  min-height: 50px;
+  height: 100%;
+}
+
+.advanced-search-list-result-picture-cell {
+}
+
+.advanced-search-list-result-metadata {
+  margin-left: 50px;
+}
+
+.advanced-search-list-result-picture-cell img {
+  margin-right: 1em;
+  max-height: 70px;
+  min-height: 50px;
+  max-width: 50px;
+}
+
+li.advanced-search-result {
+  padding-bottom: 1em;
+}
+
+li.list-title a {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+li.list-title a:link {
+  color: blue;
+}
+
+li.list-title a:visited {
+  color: purple;
+}
+
+li.list-title a:hover {
+  color: magenta;
+}
+
+li.list-creator * {
+  color: #5A5B5E;
+  font-size: 10pt;
+}
+
+li.list-date * {
+  color: #5A5B5E;
+  font-size: 10pt;
+}
+
+li.list-provider * {
+  color: #5A5B5E;
+  font-size: 10pt;
+}
+
+.advanced-search-list-result ul li {
+  line-height: 1;
+  font-size: 11pt;
+  color: #000000;
+}
+
+.advanced-search-list-result ul li.list-title {
+  font-weight: bold;
+}
+
+.facet h1 {
+  margin-top: 10pt;
+  margin-bottom: 2pt;
+  font-size: 120%;
+}
+
+.facet .occurrence {
+  margin-left: 4pt;
+  font-size: 90%;
+  list-style-type: none;
+}
+
+.facet .occurrence:first-line {
+  font-size: 100%;
+}
+
+.search-result .title {
+  visibility: hidden;
+}
+
+.results-matches_for {
+  display: inline;
+}
+
+.results-matches_for-label {
+  font-weight: bold;
+  display: inline;
+}
+
+.results-matches_for-searchterms {
+ display: inline;
+ margin-left: 1em;
+}

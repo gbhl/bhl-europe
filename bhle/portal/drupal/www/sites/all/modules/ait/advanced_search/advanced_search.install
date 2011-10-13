@@ -1,0 +1,8 @@
+<?php
+
+function advanced_search_install() {
+
+  // remark: does not work, because solr is eventually not configured,
+  // fixed through advanced_search_get_all_metadata_fields()
+  //variable_set('advanced_search_all_fields',advanced_search_get_fields_from_solr_schema());
+}

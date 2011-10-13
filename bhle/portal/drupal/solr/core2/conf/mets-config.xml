@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+        <dataSource type="ContentStreamDataSource" connectionTimeout="300000" readTimeout="400000"/>
+        <document>                      
+                <entity name="mets-ese" processor="XPathEntityProcessor" stream="false" forEach="/mets" onError="continue">
+                      
+      <field column="id" xpath="/mets/@_id"/>                  
+      <field column="entity_id" xpath="/mets/@_entity_id"/>                  
+      <field column="entity_type" xpath="/mets/@_entity_type"/>                  
+      <field column="label" xpath="/mets/@_label"/>                  
+      
+
+                <field column="dc_title" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:title"/>
+      <field column="dcterms_alternative" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:alternative"/>
+      <field column="dc_creator" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:creator"/>
+      <field column="dc_subject" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:subject"/>
+      <field column="dc_description" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:description"/>
+      <field column="dcterms_tableOfContents" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:tableOfContents"/>
+      <field column="dc_publisher" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:publisher"/>
+      <field column="dc_contributer" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:contributer"/>
+      <field column="dc_date" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:date"/>
+      <field column="dcterms_created" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:created"/>
+      <field column="dcterms_issued" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:issued"/>
+      <field column="dc_type" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:type"/>
+      <field column="dc_format" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:format"/>
+      <field column="dcterms_extent" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:extent"/>
+      <field column="dcterms_medium" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:medium"/>
+      <field column="dc_identifier" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:identifier"/>
+      <field column="dc_source" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:source"/>
+      <field column="dc_language" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:language"/>
+      <field column="dc_relation" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:relation"/>
+      <field column="dcterms_isVersionOf" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:isVersionOf"/>
+      <field column="dcterms_hasVersion" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:hasVersion"/>
+      <field column="dcterms_isReplacedBy" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:isReplacedBy"/>
+      <field column="dcterms_replaces" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:replaces"/>
+      <field column="dcterms_isRequiredBy" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:isRequiredBy"/>
+      <field column="dcterms_requires" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:requires"/>
+      <field column="dcterms_isPartOf" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:isPartOf"/>
+      <field column="dcterms_hasPart" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:hasPart"/>
+      <field column="dcterms_isReferencedBy" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:isReferencedBy"/>
+      <field column="dcterms_references" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:references"/>
+      <field column="dcterms_isFormatOf" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:isFormatOf"/>
+      <field column="dcterms_hasForamt" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:hasForamt"/>
+      <field column="dcterms_conformsTo" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:conformsTo"/>
+      <field column="dc_coverage" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:coverage"/>
+      <field column="dcterms_spatial" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:spatial"/>
+      <field column="dcterms_temporal" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:temporal"/>
+      <field column="dc_rights" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dc:rights"/>
+      <field column="dcterms_provenance" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/dcterms:provenance"/>
+      <field column="europeana_isShownBy" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:isShownBy"/>
+      <field column="europeana_isShownAt" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:isShownAt"/>
+      <field column="europeana_country" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:country"/>
+      <field column="europeana_dataProvider" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:dataProvider"/>
+      <field column="europeana_hasObject" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:hasObject"/>
+      <field column="europeana_language" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:language"/>
+      <field column="europeana_object" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:object"/>
+      <field column="europeana_provider" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:provider"/>
+      <field column="europeana_rights" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:rights"/>
+      <field column="europeana_type" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:type"/>
+      <field column="europeana_unstored" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:unstored"/>
+      <field column="europeana_uri" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:uri"/>
+      <field column="europeana_userTag" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:userTag"/>
+      <field column="europeana_year" xpath="/mets:mets/mets:dmdSec/mets:mdWrap/mets:xmlData/europeana:record/europeana:year"/>
+      </entity>
+        </document>
+</dataConfig>
