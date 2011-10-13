@@ -177,7 +177,7 @@ function piwik_admin_settings_form($form_state) {
   );
   $form['tracking']['linktracking']['piwik_track'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Track clicks on outgoing links and downloads (clicks on file links) for the following extensions'),
+    '#title' => t('Track clicks on outbound links and downloads (clicks on file links) for the following extensions'),
     '#default_value' => variable_get('piwik_track', 1),
   );
   $form['tracking']['linktracking']['piwik_trackfiles_extensions'] = array(
@@ -274,6 +274,7 @@ function piwik_admin_settings_form($form_state) {
     $form['piwik_custom_var']['slots'][$i]['value'] = array(
       '#default_value' => !empty($piwik_custom_vars['slots'][$i]['value']) ? $piwik_custom_vars['slots'][$i]['value'] : '',
       '#description' => t('The custom variable value. You may use tokens in this field.'),
+      '#maxlength' => 255,
       '#title' => t('Custom variable value #@slot', array('@slot' => $i)),
       '#title_display' => 'invisible',
       '#type' => 'textfield',
@@ -284,15 +285,14 @@ function piwik_admin_settings_form($form_state) {
       $form['piwik_custom_var']['slots'][$i]['value']['#element_validate'][] = 'token_element_validate';
     }
     $form['piwik_custom_var']['slots'][$i]['scope'] = array(
-      '#default_value' => !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 1,
+      '#default_value' => !empty($piwik_custom_vars['slots'][$i]['scope']) ? $piwik_custom_vars['slots'][$i]['scope'] : 'visit',
       '#description' => t('The scope for the custom variable.'),
       '#title' => t('Custom variable slot #@slot', array('@slot' => $i)),
       '#title_display' => 'invisible',
       '#type' => 'select',
       '#options' => array(
-        //1 => t('Visitor'),
-        2 => t('Session'),
-        //3 => t('Page'),
+        'visit' => t('Visit'),
+        'page' => t('Page'),
       ),
     );
   }

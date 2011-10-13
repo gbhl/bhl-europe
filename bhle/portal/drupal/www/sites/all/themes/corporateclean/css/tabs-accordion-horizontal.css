@@ -3,9 +3,17 @@
 #feed_tabs {width:1010px; height:62px; padding:0px; margin:0px auto; background:transparent; border:none; overflow:hidden;}
 
 #feed-tabs {width:990px; height:62px; margin:0px auto; background-color:#fbfbf9; overflow:hidden;}
+#feed-tabs .rss-feed {
+  float:left;  margin:0px; padding:0px;
+	height:62px; width:68px;
+}
+#feed-tabs .rss-feed .content {
+  margin:0px; padding:0px;	
+  height:62px; width:68px;
+  display:block !important;
+}
 #feed-tabs .feed-icon {
-  display:block; float:left;  
-  margin:0px; padding:0px;
+  display:block; margin:0px; padding:0px;
   text-indent: -50000px;
 	height:62px; width:68px;
   background:transparent url('../images/btn-rss.png') no-repeat left top;	
@@ -72,7 +80,7 @@
 }
 #accordion div.content div.item-list ul li {
   display:inline-block;    float:left;
-  margin:10px 0px; padding:0px 20px 0px 20px;  
+  margin:15px 0px 5px; padding:0px 20px 0px 20px;  
   width:180px; height:35px; 
   background:transparent url('../images/icon-bullet.gif') no-repeat left .6em;	
   overflow: hidden; 

@@ -20,10 +20,13 @@ function i18n_node_add_page() {
   foreach ($content as &$item) {
     // Type machine name will be the third part of the path
     $parts = explode('/', $item['path']);
-    $type = $parts[2];
-    // We just need to translate the description, the title is translated by the menu system
-    // The string will be filtered (xss_admin) on the theme layer
-    $item['description'] = i18n_node_translate_type($type, 'description', $item['description']);
+    // Check whether this has a node type, other items may be here too, see #1264662
+    $type = isset($parts[2]) ? $parts[2] : NULL;
+    if ($type) {
+      // We just need to translate the description, the title is translated by the menu system
+      // The string will be filtered (xss_admin) on the theme layer
+      $item['description'] = i18n_node_translate_type($type, 'description', $item['description']);
+    }
   }
   return theme('node_add_list', array('content' => $content));
 }
@@ -78,7 +81,7 @@ function i18n_node_translation_overview($node) {
     else {
       // No such translation in the set yet: help user to create it.
       $title = t('n/a');
-      if (node_access('create', $node)) {
+      if (node_access('create', $node->type)) {
         $text = t('add translation');
         $path = 'node/add/' . str_replace('_', '-', $node->type);
         $query = array('query' => array('translation' => $node->nid, 'target' => $langcode));

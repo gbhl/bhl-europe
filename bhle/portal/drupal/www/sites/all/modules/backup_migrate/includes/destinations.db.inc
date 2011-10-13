@@ -1,5 +1,4 @@
 <?php
-// $Id: destinations.db.inc,v 1.2.2.2 2010/05/08 22:01:12 ronan Exp $
 
 
 /**
@@ -108,18 +107,10 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
   /**
    * Get the form for the backup settings for this destination.
    */
-  function backup_settings_form(&$form, $settings) {
+  function backup_settings_form($settings) {
     $tables  = $this->get_table_names();
-    $form['database'] = array(
-      "#type" => "fieldset",
-      "#title" => t("Database Options"),
-      "#collapsible" => TRUE,
-      "#collapsed" => TRUE,
-      "#tree" => FALSE,
-      "#description" => t("You may omit specific tables, or specific table data from the backup file. Only omit data that you know you will not need such as cache data, or tables from other applications. Excluding tables can break your Drupal install, so <strong>do not change these settings unless you know what you're doing</strong>."),
-      '#weight' => 5,
-    );
-    $form['database']['exclude_tables'] = array(
+    $form['#description'] = t("You may omit specific tables, or specific table data from the backup file. Only omit data that you know you will not need such as cache data, or tables from other applications. Excluding tables can break your Drupal install, so <strong>do not change these settings unless you know what you're doing</strong>.");
+    $form['exclude_tables'] = array(
       "#type" => "select",
       "#multiple" => TRUE,
       "#title" => t("Exclude the following tables altogether"),
@@ -127,7 +118,7 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
       "#default_value" => $settings['exclude_tables'],
       "#description" => t("The selected tables will not be added to the backup file."),
     );
-    $form['database']['nodata_tables'] = array(
+    $form['nodata_tables'] = array(
       "#type" => "select",
       "#multiple" => TRUE,
       "#title" => t("Exclude the data from the following tables"),
@@ -135,13 +126,12 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
       "#default_value" => $settings['nodata_tables'],
       "#description" => t("The selected tables will have their structure backed up but not their contents. This is useful for excluding cache data to reduce file size."),
     );
-    $form['database']['utils_lock_tables'] = array(
+    $form['utils_lock_tables'] = array(
       '#type' => 'checkbox',
       '#title' => t('Lock tables during backup'),
       '#default_value' => !empty($settings['utils_lock_tables']) ? $settings['utils_lock_tables'] : NULL,
       '#description' => t('This can help reduce data corruption, but will make your site unresponsive.'),
     );
-
     return $form;
   }
 
@@ -243,6 +233,15 @@ class backup_migrate_destination_db extends backup_migrate_destination_remote {
    * Get a list of tables in the database.
    */
   function get_table_names() {
+    // Must be overridden.
+    $out = $this->_get_table_names();
+    return $out;
+  }
+
+  /**
+   * Get a list of tables in the database.
+   */
+  function _get_table_names() {
     // Must be overridden.
     return array();
   }

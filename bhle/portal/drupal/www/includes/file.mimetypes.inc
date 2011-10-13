@@ -1,5 +1,4 @@
 <?php
-// $Id: file.mimetypes.inc,v 1.5 2010/07/16 02:40:48 dries Exp $
 
 /**
  * @file
@@ -408,7 +407,6 @@ function file_default_mimetype_mapping() {
       'doc' => 14,
       'bin' => 15,
       'oda' => 16,
-      'ogg' => 17,
       'ogx' => 17,
       'pdf' => 18,
       'key' => 19,
@@ -630,6 +628,7 @@ function file_default_mimetype_mapping() {
       'm4a' => 188,
       'mp3' => 188,
       'mp2' => 188,
+      'ogg' => 189,
       'oga' => 189,
       'spx' => 189,
       'sid' => 190,

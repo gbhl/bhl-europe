@@ -83,6 +83,7 @@
  *   - "module": Module to which this variable belongs. This property will be added automatically.
  *   - "repeat": Array of variable properties for children variables.
  *   - "localize": Boolean value, TRUE for variables that should be localized. This may be used by other modules.
+ *   - "validate callback": Callback to validate the variable value, it will be added to form element #validate.
  */
 function hook_variable_info($options) {
   $variables['site_name'] = array(
@@ -192,5 +193,6 @@ function hook_variable_group_info() {
     'title' => t('Feed settings'),
     'description' => t('Feed settings'),
     'access' => 'administer site configuration',
-  );  
+  );
+  return $groups;
 }

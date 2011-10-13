@@ -448,3 +448,17 @@ function i18n_prepare_normal_path($link_path, $language) {
   }
   return $normal_path;
 }
+
+/**
+ * Checks if an entity translation is enabled for the given entity type.
+ * @param $entity_type
+ */
+function i18n_entity_translation_enabled($entity_type) {
+  $cache = &drupal_static(__FUNCTION__);
+  if (!isset($cache[$entity_type])) {
+    // Check if the entity_translation module exists and if so if the given
+    // entity type is handled.
+    $cache[$entity_type] = module_exists('entity_translation') && entity_translation_enabled($entity_type);
+  }
+  return $cache[$entity_type];
+}

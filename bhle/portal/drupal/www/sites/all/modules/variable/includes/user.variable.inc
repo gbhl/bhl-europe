@@ -86,6 +86,12 @@ function user_variable_info($options) {
     'default' => FALSE,
     'group' => 'user_settings',
   );
+  $variables['user_mail_cancel_confirm_[mail_part]'] = array(
+    'type' => 'user_mail',
+    'title' => t('Account cancellation confirmation'),
+    'description' => t('Edit the e-mail messages sent to users when they attempt to cancel their accounts.', array(), $options) .' '. $email_token_help,
+    'group' => 'user_mails',
+  );
   $variables['user_mail_status_canceled_[mail_part]'] = array(
     'type' => 'user_mail',
     'title' => t('Account deleted email'),

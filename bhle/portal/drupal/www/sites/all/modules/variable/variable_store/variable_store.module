@@ -77,9 +77,7 @@ function variable_store_load($realm, $key) {
       ->execute();
     $variables = array();
     foreach ($result as $variable) {
-      if (i18n_variable_list($variable->name)) {
-        $variables[$variable->name] = $variable->serialized ? unserialize($variable->value) : $variable->value;
-      }
+      $variables[$variable->name] = $variable->serialized ? unserialize($variable->value) : $variable->value;
     }
     cache_set($cacheid, $variables, 'cache_bootstrap');
   }

@@ -1,5 +1,4 @@
 <?php
-// $Id: destinations.s3.inc,v 1.2.2.1 2010/12/28 06:24:07 ronan Exp $
 
 
 /**
@@ -15,11 +14,12 @@
 class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
   var $supported_ops = array('scheduled backup', 'manual backup', 'restore', 'list files', 'configure', 'delete');
   var $s3 = NULL; 
+  var $cache_files = TRUE;
 
   /**
    * Save to to the s3 destination.
    */
-  function save_file($file, $settings) {
+  function _save_file($file, $settings) {
     if ($s3 = $this->s3_object()) {
       $path = $file->filename();
       if ($s3->putObject($s3->inputFile($file->filepath(), FALSE), $this->get_bucket(), $this->remote_path($file->filename()), S3::ACL_PRIVATE)) {
@@ -47,7 +47,7 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
   /**
    * Delete from the s3 destination.
    */
-  function delete_file($file_id) {
+  function _delete_file($file_id) {
     if ($s3 = $this->s3_object()) {
       $s3->deleteObject($this->get_bucket(), $this->remote_path($file_id));
     }
@@ -56,7 +56,7 @@ class backup_migrate_destination_s3 extends backup_migrate_destination_remote {
   /**
    * List all files from the s3 destination.
    */
-  function list_files() {
+  function _list_files() {
     backup_migrate_include('files');
     $files = array();
     if ($s3 = $this->s3_object()) {

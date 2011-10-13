@@ -11,20 +11,20 @@ regions[header] = Header
 regions[highlighted] = Highlighted
 regions[help] = Help
 
-regions[search_area] = Search area
-
 regions[content_top] = Content top
-regions[content] = Content
-regions[sidebar] = Sidebar
+regions[content] = Content Main
+regions[content_expanded] = Expanded Content
 regions[content_bottom] = Content bottom
 
-regions[feed_tabs] = Feed tabs
+regions[sidebar] = Sidebar
+
+regions[feed_tabs] = Feed Tabs
 
 regions[footer_first] = Footer first
 regions[footer_second] = Footer second
 regions[footer_third] = Footer third
 
-regions[footer] = Footer
+regions[footer_bottom] = Footer Bottom
 regions[page_bottom] = Page bottom
 
 settings[breadcrumb_display]= 1
