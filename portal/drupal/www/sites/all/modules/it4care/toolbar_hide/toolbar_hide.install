@@ -1,0 +1,14 @@
+<?php
+// $Id: toolbar_hide.install,v 1.1.2.1 2010/11/13 21:30:07 joshthegeek Exp $
+/**
+ * @file
+ * Install, update and uninstall functions for the Toolbar Hider module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function toolbar_hide_uninstall() {
+  variable_del('toolbar_hide_key');
+  variable_del('toolbar_hide_default');
+}

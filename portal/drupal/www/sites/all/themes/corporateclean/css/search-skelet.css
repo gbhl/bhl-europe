@@ -1,0 +1,176 @@
+/**  METADATA SIMPLE SEARCH SKELET **/
+
+.block.metadata-simple-search-skelet {  
+  position:relative; float:left; margin: 20px 0px;
+  width:700px; height:140px; 
+  background:transparent url('../images/bg-simple-search.png') no-repeat 0px 0px;
+}            
+.block.metadata-simple-search-skelet h2 {float:left; padding:0px; margin:15px 25px 25px; color:#006626; font-weight:bold; font-size: 116.7%;}
+
+.block.metadata-simple-search-skelet .form-item,
+.block.metadata-simple-search-skelet .form-action {margin:0px;}
+
+.block.metadata-simple-search-skelet #edit-simple-search-field {float:left; margin:0px; padding:15px 10px 5px; width:400px; height:25px; overflow:hidden; font-size:116.7%;}
+.block.metadata-simple-search-skelet form #edit-simple-search-field .form-item.form-type-checkbox {float:left; display:inline; padding:0px 5px;}
+.block.metadata-simple-search-skelet form #edit-simple-search-field .form-item.form-type-checkbox label {color:#006626;  font-weight:bold;padding:2px;}
+
+.block.metadata-simple-search-skelet .form-type-textfield.form-item-query {clear:left; float:left; width:530px; margin:0px; padding:10px 0px 0px 35px;}
+.block.metadata-simple-search-skelet .form-type-textfield.form-item-query input#edit-query {
+  padding:5px; margin:0px; 
+  width:530px; font-size:166.7%; 
+  text-align:center; color:#8bc53f; 
+  border:none; background: transparent none;   
+}
+
+.block.metadata-simple-search-skelet .form-type-submit.form-item-submit {
+  float:left; margin:0px; padding:2px 0px 0px 20px; 
+  width:92px; height:47px; 
+  overflow:hidden; 
+  background: transparent url('../images/btn-search.png') no-repeat 20px 2px;
+}
+.block.metadata-simple-search-skelet  input#edit-submit {
+  display:block; padding:0px; margin:0px; 
+  width:92px; height:47px; 
+  text-indent: -50000px;
+  border:none; background:transparent none;
+} 
+
+
+/** ADVANCED SEARCH --------------- **/
+.block.advanced-search-form-2-skelet {
+  position:relative;  margin-top: 20px; width:1010px;
+  background:transparent url('../images/bg-advanced-search-form2-header.png') no-repeat 1px top;
+}
+
+.block.advanced-search-form-2-skelet h2 {
+  float:left; height:20px; margin:0px;
+  padding: 15px 25px 15px 30px; font-size:116.7%;
+  color: #006626; font-weight: bold; 
+}
+.block.advanced-search-form-2-skelet .content{
+  padding: 50px 0px 90px 0px; 
+  width:1010px; 
+  background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;
+} 
+
+.block.advanced-search-form-2-skelet form {
+  margin:0px; padding:0px 10px; 
+  width:990px; color: #006626;
+  background:transparent url('../images/bg-advanced-search-form2-form.png') repeat-y 1px 0px;
+}
+.block.advanced-search-form-2-skelet .form-item,
+.block.advanced-search-form-2-skelet .form-actions {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.block.advanced-search-form-2-skelet #edit-advanced-search-field {position:absolute; left:180px; top:15px; margin:0px; padding:0px 10px 5px; width:400px; height:25px; overflow:hidden; font-size:116.7%;}
+.block.advanced-search-form-2-skelet #edit-advanced-search-field .form-item.form-type-checkbox {float:left; display:inline; padding:0px 5px;}
+.block.advanced-search-form-2-skelet #edit-advanced-search-field .form-item.form-type-checkbox label {color:#006626;  font-weight:bold;padding:2px;}
+
+.block.advanced-search-form-2-skelet fieldset {
+  position:relative; display:block; clear:both;
+  margin:0px; padding:17px 17px 20px 23px; 
+  width:950px; height:45px;
+  font-size:100%; color: #006626;
+  border:none; background:transparent url('../images/bg-advanced-search-form2-tr.png') no-repeat 0px 0px;
+}           
+.block.advanced-search-form-2-skelet fieldset.last {padding-bottom:18px; background-image: url('../images/bg-advanced-search-form2-tr-last.png');}
+
+.block.advanced-search-form-2-skelet .form-type-textfield.form-item-searchtext {float:left; padding:5px 50px 0px 0px; margin:0px;  width:490px; overflow:hidden;}
+.block.advanced-search-form-2-skelet .form-type-textfield.form-item-searchtext input {
+  display:block; width:480px; height:25px; padding:5px; margin:0px;
+  color:#004226; font-size:166.7%; line-height:1;   
+  background:transparent none; border:none;
+  overflow:hidden;
+}
+
+.block.advanced-search-form-2-skelet .form-type-select.form-item-fieldselection {float:left; padding:0px 0px 0px 12px; width: 180px; overflow:hidden;}
+
+.block.advanced-search-form-2-skelet .form-type-select.form-item-fieldselection select {
+  display:block;  height:47px; width:180px; 
+  background:transparent none; border:none;  
+  padding: 15px 10px 15px 10px; 
+}
+
+.block.advanced-search-form-2-skelet .form-type-select.form-item-relation {float:left; padding:0px 0px 0px 15px; width:95px; overflow:hidden;}
+.block.advanced-search-form-2-skelet .form-type-select.form-item-relation select {
+   display:block;  height:47px;  padding: 15px 10px 15px 10px; width:95px; 
+   background:transparent none !important; border:none;   
+}
+#content .block.advanced-search-form-2-skelet .form-type-select.form-item-relation a {/*color:#fff;*/} 
+
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-delete {
+  float:right; margin:0px; padding:0px; 
+  width:45px; height:47px; 
+  overflow:hidden; 
+  background: transparent url('../images/btn-add-del.png') no-repeat right 0px; 
+}
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-delete input.form-submit {
+  display:block; padding:0px; margin:0px;  
+  height:47px; width:45px; cursor:pointer;
+  text-indent: -50000px; background:transparent none; border:none;  
+}
+
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-addfield {
+  float:right; margin:0px; padding:0px 0px 0px 1px; 
+  width:45px; height:47px; 
+  overflow:hidden; 
+  background: transparent url('../images/btn-add-del.png') no-repeat left 0px;
+}
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-addfield input.form-submit {
+  display:block; padding:0px; margin:0px;  
+  height:47px; width:45px; cursor:pointer; 
+  text-indent: -50000px; background:transparent none; border:none;  
+}
+
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-save {
+  float:right; margin:20px 10px 0px; padding:5px 0px; 
+  height:20px;
+  background: transparent url('../images/btn-save.png') no-repeat right top;
+}
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-save input#edit-save {
+  display:block; height:25px; padding:0px 40px 0px 5px; margin:0px;  
+  font-size: 141.7%; color: #006626; font-weight: bold;    
+  background:transparent none; border:none; */ cursor:pointer; 
+
+}
+
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-reset {
+  float:right; margin:20px 30px 0px; padding:5px 0px; 
+  height:20px; 
+  background: transparent url('../images/btn-reset.png') no-repeat right top;
+}
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-reset input#edit-reset {
+  display:block; height:25px; padding:0px 40px 0px 5px; margin:0px;     
+  font-size: 141.7%; color: #006626; font-weight: bold;      
+  background:transparent none; border:none;  cursor:pointer; 
+}
+
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-submit {
+  float:right; margin:0px; padding:16px 16px 0px 0px; 
+  width:92px; height:47px; 
+  overflow:hidden; 
+  background: transparent url('../images/btn-search.png') no-repeat 0px 16px;
+}
+.block.advanced-search-form-2-skelet .form-type-submit.form-item-submit input#edit-submit {
+  display:block; padding:0px; margin:0px; 
+  width:92px; height:47px;  
+  text-indent: -50000px;    cursor:pointer;
+  border:none; background:transparent none; 
+} 
+
+
+.not-front #content-inside .region-content {position:relative;}
+
+.not-front #content-inside .region-content .advanced-search-link {float:right; width:300px;}
+
+.not-front #content-inside .region-content .advanced-search-link p.simple-search {
+  position:absolute; top:0px; right:10px; 
+  margin:0px; padding:15px 20px 5px 0; 
+  width:140px; text-align:right; font-size:141.7%; 
+  background:transparent url('../images/icon-arrow.png') no-repeat right 18px;
+}
+.not-front #content-inside .region-content .advanced-search-link p.simple-search a {margin:0px; padding:0px; color:#006626; font-weight:bold; line-height:1; text-decoration:none;}
+.not-front #content-inside .region-content .advanced-search-link p.simple-search a:hover {text-decoration:underline;}
+
