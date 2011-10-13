@@ -380,6 +380,7 @@ class DrupalApacheSolrService {
       // Make sure we are not sending a request body.
       $options['data'] = NULL;
     }
+
     $result = drupal_http_request($url, $options);
 
     if (!isset($result->code) || $result->code < 0) {
@@ -505,6 +506,9 @@ class DrupalApacheSolrService {
 
     if (!isset($parsed_url['user'])) {
       $parsed_url['user'] = '';
+    }
+    else {
+      $parsed_url['host'] = '@' . $parsed_url['host'];
     }
     $parsed_url['pass'] = isset($parsed_url['pass']) ? ':' . $parsed_url['pass'] : '';
     $parsed_url['port'] = isset($parsed_url['port']) ? ':' . $parsed_url['port'] : '';
@@ -741,7 +745,7 @@ class DrupalApacheSolrService {
     else if ($method == 'POST') {
       $searchUrl = $this->_constructUrl(self::SEARCH_SERVLET);
       $options['data'] = $queryString;
-      $options['headers']['Content-Type'] = 'application/x-www-form-urlencoded';
+      $options['headers']['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
       return $this->_sendRawPost($searchUrl, $options);
     }
     else {

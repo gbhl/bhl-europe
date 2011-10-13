@@ -1,9 +1,8 @@
 <?php
-// $Id: file.test,v 1.29 2010/12/11 01:32:20 dries Exp $
 
 /**
  * @file
- * Tests file uploading through the File module.
+ * Tests for file.module.
  */
 
 /**
@@ -13,7 +12,16 @@ class FileFieldTestCase extends DrupalWebTestCase {
   protected $admin_user;
 
   function setUp() {
-    parent::setUp('file', 'file_module_test');
+    // Since this is a base class for many test cases, support the same
+    // flexibility that DrupalWebTestCase::setUp() has for the modules to be
+    // passed in as either an array or a variable number of string arguments.
+    $modules = func_get_args();
+    if (isset($modules[0]) && is_array($modules[0])) {
+      $modules = $modules[0];
+    }
+    $modules[] = 'file';
+    $modules[] = 'file_module_test';
+    parent::setUp($modules);
     $this->admin_user = $this->drupalCreateUser(array('access content', 'access administration pages', 'administer site configuration', 'administer users', 'administer permissions', 'administer content types', 'administer nodes', 'bypass node access'));
     $this->drupalLogin($this->admin_user);
   }
@@ -113,7 +121,7 @@ class FileFieldTestCase extends DrupalWebTestCase {
   /**
    * Upload a file to a node.
    */
-  function uploadNodeFile($file, $field_name, $nid_or_type, $new_revision = TRUE) {
+  function uploadNodeFile($file, $field_name, $nid_or_type, $new_revision = TRUE, $extras = array()) {
     $langcode = LANGUAGE_NONE;
     $edit = array(
       "title" => $this->randomName(),
@@ -125,7 +133,8 @@ class FileFieldTestCase extends DrupalWebTestCase {
     }
     else {
       // Add a new node.
-      $node = $this->drupalCreateNode(array('type' => $nid_or_type));
+      $extras['type'] = $nid_or_type;
+      $node = $this->drupalCreateNode($extras);
       $nid = $node->nid;
       // Save at least one revision to better simulate a real site.
       $this->drupalCreateNode(get_object_vars($node));
@@ -254,7 +263,7 @@ class FileManagedFileElementTestCase extends FileFieldTestCase {
         $this->drupalPost($path . '/' . $last_fid, array(), t('Save'));
         $this->assertRaw(t('The file id is %fid.', array('%fid' => $last_fid)), t('Empty submission did not change an existing file.'));
 
-        // Now, test the Upload and Remove buttons, with and without AJAX.
+        // Now, test the Upload and Remove buttons, with and without Ajax.
         foreach (array(FALSE, TRUE) as $ajax) {
           // Upload, then Submit.
           $last_fid_prior = $this->getLastFileId();
@@ -302,7 +311,7 @@ class FileManagedFileElementTestCase extends FileFieldTestCase {
 }
 
 /**
- * Test class to test file field widget, single and multi-valued, with and without AJAX, with public and private files.
+ * Test class to test file field widget, single and multi-valued, with and without Ajax, with public and private files.
  */
 class FileFieldWidgetTestCase extends FileFieldTestCase {
   public static function getInfo() {
@@ -314,7 +323,7 @@ class FileFieldWidgetTestCase extends FileFieldTestCase {
   }
 
   /**
-   * Tests upload and remove buttons, with and without AJAX, for a single-valued File field.
+   * Tests upload and remove buttons, with and without Ajax, for a single-valued File field.
    */
   function testSingleValuedWidget() {
     // Use 'page' instead of 'article', so that the 'article' image field does
@@ -371,7 +380,7 @@ class FileFieldWidgetTestCase extends FileFieldTestCase {
   }
 
   /**
-   * Tests upload and remove buttons, with and without AJAX, for a multi-valued File field.
+   * Tests upload and remove buttons, with and without Ajax, for a multi-valued File field.
    */
   function testMultiValuedWidget() {
     // Use 'page' instead of 'article', so that the 'article' image field does
@@ -390,7 +399,7 @@ class FileFieldWidgetTestCase extends FileFieldTestCase {
       // Visit the node creation form, and upload 3 files. Since the field has
       // cardinality of 3, ensure the "Upload" button is displayed until after
       // the 3rd file, and after that, isn't displayed.
-      // @todo This is only testing a non-AJAX upload, because drupalPostAJAX()
+      // @todo This is only testing a non-Ajax upload, because drupalPostAJAX()
       //   does not yet emulate jQuery's file upload.
       $this->drupalGet("node/add/$type_name");
       for ($delta = 0; $delta < 3; $delta++) {
@@ -531,6 +540,7 @@ class FileFieldWidgetTestCase extends FileFieldTestCase {
       'title' => $this->randomName(),
     );
     $this->drupalPost('node/add/article', $edit, t('Save'));
+    $node = $this->drupalGetNodeByTitle($edit['title']);
 
     // Add a comment with a file.
     $text_file = $this->getTestFile('text');
@@ -558,6 +568,18 @@ class FileFieldWidgetTestCase extends FileFieldTestCase {
 
     // Test anonymous file download.
     $this->drupalLogout();
+    $this->drupalGet(file_create_url($comment_file->uri));
+    $this->assertResponse(403, t('Confirmed that access is denied for the file without the needed permission.'));
+
+    // Unpublishes node.
+    $this->drupalLogin($this->admin_user);
+    $edit = array(
+      'status' => FALSE,
+    );
+    $this->drupalPost('node/' . $node->nid . '/edit', $edit, t('Save'));
+
+    // Ensures normal user can no longer download the file.
+    $this->drupalLogin($user);
     $this->drupalGet(file_create_url($comment_file->uri));
     $this->assertResponse(403, t('Confirmed that access is denied for the file without the needed permission.'));
   }
@@ -933,7 +955,7 @@ class FileFieldPathTestCase extends FileFieldTestCase {
 
     // Check the path when used with tokens.
     // Change the path to contain multiple token directories.
-    $field = $this->updateFileField($field_name, $type_name, array('file_directory' => '[user:uid]/[user:name]'));
+    $field = $this->updateFileField($field_name, $type_name, array('file_directory' => '[current-user:uid]/[current-user:name]'));
 
     // Upload a new file into the token subdirectories.
     $nid = $this->uploadNodeFile($test_file, $field_name, $type_name);
@@ -941,6 +963,8 @@ class FileFieldPathTestCase extends FileFieldTestCase {
     // Check that the file was uploaded into the subdirectory.
     $node = node_load($nid, NULL, TRUE);
     $node_file = (object) $node->{$field_name}[LANGUAGE_NONE][0];
+    // Do token replacement using the same user which uploaded the file, not
+    // the user running the test case.
     $data = array('user' => $this->admin_user);
     $subdirectory = token_replace('[user:uid]/[user:name]', $data);
     $this->assertPathMatch('public://' . $subdirectory . '/' . $test_file->filename, $node_file->uri, t('The file %file was uploaded to the correct path with token replacements.', array('%file' => $node_file->uri)));
@@ -1005,21 +1029,19 @@ class FileTokenReplaceTestCase extends FileFieldTestCase {
 
     // Load the node and the file.
     $node = node_load($nid, NULL, TRUE);
-    $file = (object) $node->{$field_name}[LANGUAGE_NONE][0];
-    $file->description = 'File description.';
+    $file = file_load($node->{$field_name}[LANGUAGE_NONE][0]['fid']);
 
     // Generate and test sanitized tokens.
     $tests = array();
     $tests['[file:fid]'] = $file->fid;
     $tests['[file:name]'] = check_plain($file->filename);
-    $tests['[file:description]'] = filter_xss($file->description);
-    $tests['[file:path]'] = filter_xss($file->uri);
-    $tests['[file:mime]'] = filter_xss($file->filemime);
+    $tests['[file:path]'] = check_plain($file->uri);
+    $tests['[file:mime]'] = check_plain($file->filemime);
     $tests['[file:size]'] = format_size($file->filesize);
-    $tests['[file:url]'] = url(file_create_url($file->uri), $url_options);
+    $tests['[file:url]'] = check_plain(file_create_url($file->uri));
     $tests['[file:timestamp]'] = format_date($file->timestamp, 'medium', '', NULL, $language->language);
     $tests['[file:timestamp:short]'] = format_date($file->timestamp, 'short', '', NULL, $language->language);
-    $tests['[file:owner]'] = $this->admin_user->name;
+    $tests['[file:owner]'] = check_plain(format_username($this->admin_user));
     $tests['[file:owner:uid]'] = $file->uid;
 
     // Test to make sure that we generated something for each token.
@@ -1027,19 +1049,61 @@ class FileTokenReplaceTestCase extends FileFieldTestCase {
 
     foreach ($tests as $input => $expected) {
       $output = token_replace($input, array('file' => $file), array('language' => $language));
-      $this->assertFalse(strcmp($output, $expected), t('Sanitized file token %token replaced.', array('%token' => $input)));
+      $this->assertEqual($output, $expected, t('Sanitized file token %token replaced.', array('%token' => $input)));
     }
 
     // Generate and test unsanitized tokens.
     $tests['[file:name]'] = $file->filename;
-    $tests['[file:description]'] = $file->description;
     $tests['[file:path]'] = $file->uri;
     $tests['[file:mime]'] = $file->filemime;
     $tests['[file:size]'] = format_size($file->filesize);
 
     foreach ($tests as $input => $expected) {
       $output = token_replace($input, array('file' => $file), array('language' => $language, 'sanitize' => FALSE));
-      $this->assertFalse(strcmp($output, $expected), t('Unsanitized file token %token replaced.', array('%token' => $input)));
+      $this->assertEqual($output, $expected, t('Unsanitized file token %token replaced.', array('%token' => $input)));
     }
+  }
+}
+
+/**
+ * Test class to test file access on private nodes.
+ */
+class FilePrivateTestCase extends FileFieldTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Private file test',
+      'description' => 'Uploads a test to a private node and checks access.',
+      'group' => 'File',
+    );
+  }
+
+  function setUp() {
+    parent::setUp('node_access_test');
+    node_access_rebuild();
+    variable_set('node_access_test_private', TRUE);
+  }
+
+  /**
+   * Uploads a file to a private node, then tests that access is allowed and denied when appropriate.
+   */
+  function testPrivateFile() {
+    // Use 'page' instead of 'article', so that the 'article' image field does
+    // not conflict with this test. If in the future the 'page' type gets its
+    // own default file or image field, this test can be made more robust by
+    // using a custom node type.
+    $type_name = 'page';
+    $field_name = strtolower($this->randomName());
+    $this->createFileField($field_name, $type_name, array('uri_scheme' => 'private'));
+
+    $test_file = $this->getTestFile('text');
+    $nid = $this->uploadNodeFile($test_file, $field_name, $type_name, TRUE, array('private' => TRUE));
+    $node = node_load($nid, NULL, TRUE);
+    $node_file = (object) $node->{$field_name}[LANGUAGE_NONE][0];
+    // Ensure the file can be downloaded.
+    $this->drupalGet(file_create_url($node_file->uri));
+    $this->assertResponse(200, t('Confirmed that the generated URL is correct by downloading the shipped file.'));
+    $this->drupalLogOut();
+    $this->drupalGet(file_create_url($node_file->uri));
+    $this->assertResponse(403, t('Confirmed that access is denied for the file without the needed permission.'));
   }
 }

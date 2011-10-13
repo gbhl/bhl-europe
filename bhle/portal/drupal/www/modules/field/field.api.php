@@ -1,5 +1,4 @@
 <?php
-// $Id: field.api.php,v 1.101 2010/12/14 19:50:05 dries Exp $
 
 /**
  * @ingroup field_fieldable_type
@@ -16,7 +15,7 @@
  *
  * Fieldable entities or modules that want to have their components supported
  * should expose them using this hook. The user-defined settings (weight,
- * visibility) are automatically applied on rendered forms and displayed
+ * visible) are automatically applied on rendered forms and displayed
  * entities in a #pre_render callback added by field_attach_form() and
  * field_attach_view().
  *
@@ -75,8 +74,8 @@ function hook_field_extra_fields() {
 function hook_field_extra_fields_alter(&$info) {
   // Force node title to always be at the top of the list by default.
   foreach (node_type_get_types() as $bundle) {
-    if (isset($info['node'][$bundle]['title'])) {
-      $info['node'][$bundle]['title']['weight'] = -20;
+    if (isset($info['node'][$bundle->type]['title'])) {
+      $info['node'][$bundle->type]['title']['weight'] = -20;
     }
   }
 }
@@ -257,8 +256,8 @@ function hook_field_schema($field) {
   }
   $columns += array(
     'format' => array(
-      'type' => 'int',
-      'unsigned' => TRUE,
+      'type' => 'varchar',
+      'length' => 255,
       'not null' => FALSE,
     ),
   );
@@ -676,10 +675,6 @@ function hook_field_is_empty($item, $field) {
  * Widget hooks are typically called by the Field Attach API during the
  * creation of the field form structure with field_attach_form().
  *
- * @see hook_field_widget_info_alter()
- * @see hook_field_widget_form()
- * @see hook_field_widget_error()
- *
  * @return
  *   An array describing the widget types implemented by the module.
  *   The keys are widget type names. To avoid name clashes, widget type
@@ -705,6 +700,12 @@ function hook_field_is_empty($item, $field) {
  *       - FIELD_BEHAVIOR_DEFAULT: (default) If the widget accepts default
  *         values.
  *       - FIELD_BEHAVIOR_NONE: if the widget does not support default values.
+ *
+ * @see hook_field_widget_info_alter()
+ * @see hook_field_widget_form()
+ * @see hook_field_widget_form_alter()
+ * @see hook_field_widget_WIDGET_TYPE_form_alter()
+ * @see hook_field_widget_error()
  */
 function hook_field_widget_info() {
     return array(
@@ -758,7 +759,7 @@ function hook_field_widget_info_alter(&$info) {
 /**
  * Return the form for a single field widget.
  *
- * Field widget form elements should be based on the passed in $element, which
+ * Field widget form elements should be based on the passed-in $element, which
  * contains the base form element properties derived from the field
  * configuration.
  *
@@ -784,8 +785,8 @@ function hook_field_widget_info_alter(&$info) {
  * properties from $field and $instance and set them as ad-hoc
  * $element['#custom'] properties, for later use by its element callbacks.
  *
- * @see field_widget_field()
- * @see field_widget_instance()
+ * Other modules may alter the form element provided by this function using
+ * hook_field_widget_form_alter().
  *
  * @param $form
  *   The form structure where widgets are being attached to. This might be a
@@ -827,6 +828,11 @@ function hook_field_widget_info_alter(&$info) {
  *
  * @return
  *   The form elements for a single widget for this field.
+ *
+ * @see field_widget_field()
+ * @see field_widget_instance()
+ * @see hook_field_widget_form_alter()
+ * @see hook_field_widget_WIDGET_TYPE_form_alter()
  */
 function hook_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
   $element += array(
@@ -834,6 +840,69 @@ function hook_field_widget_form(&$form, &$form_state, $field, $instance, $langco
     '#default_value' => isset($items[$delta]) ? $items[$delta] : '',
   );
   return $element;
+}
+
+/**
+ * Alter forms for field widgets provided by other modules.
+ *
+ * @param $element
+ *   The field widget form element as constructed by hook_field_widget_form().
+ * @param $form_state
+ *   An associative array containing the current state of the form.
+ * @param $context
+ *   An associative array containing the following key-value pairs, matching the
+ *   arguments received by hook_field_widget_form():
+ *   - "form": The form structure where widgets are being attached to. This
+ *     might be a full form structure, or a sub-element of a larger form.
+ *   - "field": The field structure.
+ *   - "instance": The field instance structure.
+ *   - "langcode": The language associated with $items.
+ *   - "items": Array of default values for this field.
+ *   - "delta": The order of this item in the array of subelements (0, 1, 2,
+ *     etc).
+ *
+ * @see hook_field_widget_form()
+ * @see hook_field_widget_WIDGET_TYPE_form_alter
+ */
+function hook_field_widget_form_alter(&$element, &$form_state, $context) {
+  // Add a css class to widget form elements for all fields of type mytype.
+  if ($context['field']['type'] == 'mytype') {
+    // Be sure not to overwrite existing attributes.
+    $element['#attributes']['class'][] = 'myclass';
+  }
+}
+
+/**
+ * Alter widget forms for a specific widget provided by another module.
+ *
+ * Modules can implement hook_field_widget_WIDGET_TYPE_form_alter() to modify a
+ * specific widget form, rather than using hook_field_widget_form_alter() and
+ * checking the widget type.
+ *
+ * @param $element
+ *   The field widget form element as constructed by hook_field_widget_form().
+ * @param $form_state
+ *   An associative array containing the current state of the form.
+ * @param $context
+ *   An associative array containing the following key-value pairs, matching the
+ *   arguments received by hook_field_widget_form():
+ *   - "form": The form structure where widgets are being attached to. This
+ *     might be a full form structure, or a sub-element of a larger form.
+ *   - "field": The field structure.
+ *   - "instance": The field instance structure.
+ *   - "langcode": The language associated with $items.
+ *   - "items": Array of default values for this field.
+ *   - "delta": The order of this item in the array of subelements (0, 1, 2,
+ *     etc).
+ *
+ * @see hook_field_widget_form()
+ * @see hook_field_widget_form_alter()
+ */
+function hook_field_widget_WIDGET_TYPE_form_alter(&$element, &$form_state, $context) {
+  // Code here will only act on widgets of type WIDGET_TYPE.  For example,
+  // hook_field_widget_mymodule_autocomplete_form_alter() will only act on
+  // widgets of type 'mymodule_autocomplete'.
+  $element['#autocomplete_path'] = 'mymodule/autocomplete_path';
 }
 
 /**
@@ -1133,7 +1202,7 @@ function hook_field_attach_form($entity_type, $entity, &$form, &$form_state, $la
  *
  * See field_attach_load() for details and arguments.
  */
-function hook_field_attach_load($entity_type, &$entities, $age, $options) {
+function hook_field_attach_load($entity_type, $entities, $age, $options) {
   // @todo Needs function body.
 }
 
@@ -1271,7 +1340,7 @@ function hook_field_attach_delete_revision($entity_type, $entity) {
  */
 function hook_field_attach_purge($entity_type, $entity, $field, $instance) {
   // find the corresponding data in mymodule and purge it
-  if($entity_type == 'node' && $field->field_name == 'my_field_name') {
+  if ($entity_type == 'node' && $field->field_name == 'my_field_name') {
     mymodule_remove_mydata($entity->nid);
   }
 }
@@ -1319,7 +1388,7 @@ function hook_field_attach_view_alter(&$output, $context) {
  *
  * This hook is invoked after the field module has performed the operation.
  *
- * @param &$entity
+ * @param $entity
  *   The entity being prepared for translation.
  * @param $context
  *   An associative array containing:
@@ -1362,7 +1431,7 @@ function hook_field_language_alter(&$display_language, $context) {
  * This hook is invoked from field_available_languages() to allow modules to
  * alter the array of available languages for the given field.
  *
- * @param &$languages
+ * @param $languages
  *   A reference to an array of language codes to be made available.
  * @param $context
  *   An associative array containing:
@@ -1581,7 +1650,7 @@ function hook_field_storage_details_alter(&$details, $field) {
  *     non-deleted fields. If unset or FALSE, only non-deleted fields should be
  *     loaded.
  */
-function hook_field_storage_load($entity_type, &$entities, $age, $fields, $options) {
+function hook_field_storage_load($entity_type, $entities, $age, $fields, $options) {
   $field_info = field_info_field_by_ids();
   $load_current = $age == FIELD_LOAD_CURRENT;
 
@@ -2137,7 +2206,7 @@ function hook_field_info_max_weight($entity_type, $bundle, $context) {
  *   found in the 'display' key of $instance definitions.
  * @param $context
  *   An associative array containing:
- *   - entity_type: The entity type; e.g. 'node' or 'user'.
+ *   - entity_type: The entity type; e.g., 'node' or 'user'.
  *   - field: The field being rendered.
  *   - instance: The instance being rendered.
  *   - entity: The entity being rendered.
@@ -2172,7 +2241,7 @@ function hook_field_display_alter(&$display, $context) {
  *   found in the 'display' key of $instance definitions.
  * @param $context
  *   An associative array containing:
- *   - entity_type: The entity type; e.g. 'node' or 'user'.
+ *   - entity_type: The entity type; e.g., 'node' or 'user'.
  *   - field: The field being rendered.
  *   - instance: The instance being rendered.
  *   - entity: The entity being rendered.
@@ -2199,13 +2268,13 @@ function hook_field_display_ENTITY_TYPE_alter(&$display, $context) {
  *   by pseudo-field names.
  * @param $context
  *   An associative array containing:
- *   - entity_type: The entity type; e.g. 'node' or 'user'.
+ *   - entity_type: The entity type; e.g., 'node' or 'user'.
  *   - bundle: The bundle name.
  *   - view_mode: The view mode, e.g. 'full', 'teaser'...
  */
 function hook_field_extra_fields_display_alter(&$displays, $context) {
   if ($context['entity_type'] == 'taxonomy_term' && $context['view_mode'] == 'full') {
-    $displays['description']['visibility'] = FALSE;
+    $displays['description']['visible'] = FALSE;
   }
 }
 
@@ -2225,7 +2294,7 @@ function hook_field_extra_fields_display_alter(&$displays, $context) {
  *   The instance's widget properties.
  * @param $context
  *   An associative array containing:
- *   - entity_type: The entity type; e.g. 'node' or 'user'.
+ *   - entity_type: The entity type; e.g., 'node' or 'user'.
  *   - entity: The entity object.
  *   - field: The field that the widget belongs to.
  *   - instance: The instance of the field.
@@ -2257,7 +2326,7 @@ function hook_field_widget_properties_alter(&$widget, $context) {
  *   The instance's widget properties.
  * @param $context
  *   An associative array containing:
- *   - entity_type: The entity type; e.g. 'node' or 'user'.
+ *   - entity_type: The entity type; e.g., 'node' or 'user'.
  *   - entity: The entity object.
  *   - field: The field that the widget belongs to.
  *   - instance: The instance of the field.
@@ -2416,7 +2485,7 @@ function hook_field_delete_instance($instance) {
  * @param $field
  *   The field record just read from the database.
  */
-function hook_field_read_field(&$field) {
+function hook_field_read_field($field) {
   // @todo Needs function body.
 }
 

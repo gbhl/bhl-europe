@@ -1,5 +1,4 @@
 <?php
-// $Id: schema.inc,v 1.23 2010/12/23 01:43:38 webchick Exp $
 
 /**
  * @file
@@ -197,6 +196,7 @@ class DatabaseSchema_sqlite extends DatabaseSchema {
     // $map does not use drupal_static as its value never changes.
     static $map = array(
       'varchar:normal'  => 'VARCHAR',
+      'char:normal'     => 'CHAR',
 
       'text:tiny'       => 'TEXT',
       'text:small'      => 'TEXT',
