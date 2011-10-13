@@ -1,0 +1,7 @@
+; $Id$ 
+name = Islandora Book
+description = Provides book interface
+package = Fedora Repository
+dependencies[] = fedora_repository
+version = 7.x
+core = 7.x

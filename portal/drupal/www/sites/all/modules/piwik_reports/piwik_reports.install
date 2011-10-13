@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Installation file for Piwik Reports module.
+ */
+
+/**
+ * Remove dead global period setting, moved into user $_SESSION['piwik_reports_period'] value.
+ */
+function piwik_reports_update_6000() {
+  $ret = array();
+
+  variable_del('piwik_reports_period');
+
+  // hook_update_N() no longer returns a $ret array. Instead, return
+  // nothing or a translated string indicating the update ran successfully.
+  // See http://drupal.org/node/224333#update_sql.
+  return t('TODO Add a descriptive string here to show in the UI.') /* $ret */;
+}

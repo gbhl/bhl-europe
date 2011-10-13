@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: Lemaire_Observations meteorologiques, Collection: AIT111 Development, ID: 10706/a0r2282n"
+  OBJID="BHLE10706:a0r2282n"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-1">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>Congo. District de l'Equateur. Station d'Equateurville</mods:title>
+                  <mods:subTitle>Observations météorologiques: faites du 15 avril 1891 au 31 décembre 1892</mods:subTitle>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Lemaire, Charles</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>aut</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>be</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Bruxelles</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Société genérale d'imprimerie et de publicité</mods:publisher>
+                  <mods:dateIssued>1893</mods:dateIssued>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:language xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:languageTerm>fre</mods:languageTerm>
+                </mods:language>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:extent>32 p.</mods:extent>
+                </mods:physicalDescription>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:descriptionStandard>aacr</mods:descriptionStandard>
+                  <mods:recordCreationDate>100913</mods:recordCreationDate>
+                  <mods:recordChangeDate>20100913151358.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>007712045</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <dc:title>Congo. District de l'Equateur. Station d'Equateurville : Observations météorologiques: faites du 15 avril 1891 au 31 décembre 1892.</dc:title>
+            <dc:creator>
+    Lemaire, Charles
+    aut
+  </dc:creator>
+            <dc:type>text</dc:type>
+            <dc:publisher>Bruxelles : Société genérale d'imprimerie et de publicité,</dc:publisher>
+            <dc:date>1893.</dc:date>
+            <dc:language>fre</dc:language>
+            <dc:relation>RMCA</dc:relation>
+          </oai_dc:dc>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="01a4fc849c09c981f185650bf4b7a2eb1da292cf"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="15276259">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0001_frontcover.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.3">
+        <file CHECKSUM="ac0d2749e40771e4178e8206773a75cf0d4563df"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.3.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4775024">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0002.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.4">
+        <file CHECKSUM="4d86cab9c412b54a7a53b662ed84071c187ec049"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.4.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4668701">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0003_halftitlepage.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.5">
+        <file CHECKSUM="47ebaa48c3a05638074e0b7ace9050842074dd06"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.5.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4781261">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0004.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.6">
+        <file CHECKSUM="a971af60a11e48f267ba3b63815708eb45eba040"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.6.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0005_titlepage.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.7">
+        <file CHECKSUM="61fb22540dd8c00c1945f0278dbdebe096760b1c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.7.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4774988">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0006.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.8">
+        <file CHECKSUM="d867730cc800c75ba9a45cee20446a956344870b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.8.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0007_page%205.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.9">
+        <file CHECKSUM="dc571a089b0060dde2203490f3b82f8e17306379"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.9.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4776680">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0008_page%206.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.10">
+        <file CHECKSUM="52bff866df0198ce2bcfddafa6d62f27986d8eb1"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.10.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0009_page%207.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.11">
+        <file CHECKSUM="48863577550465b463e5d022c04a39ec29734429"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.11.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4765712">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0010_page%208.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.12">
+        <file CHECKSUM="6c85b6fa0a5fcc48f4cc551023e8bafaa6641840"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.12.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0011_page%209.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.13">
+        <file CHECKSUM="ccb6ea3815a1969c75ffc2a01792b6b35c828c8a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.13.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4776456">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0012_page%2010.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.14">
+        <file CHECKSUM="baa7c37aba56aa42127045c1d5c5a6e4a037e8f4"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.14.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0013_page%2011.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.15">
+        <file CHECKSUM="c351fe9945faa42168df58aea2ed81ecc3f7d482"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.15.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4768988">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0014_page%2012.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.16">
+        <file CHECKSUM="3268d3dab6d4df2da7a55645abfba6a1a580fe01"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.16.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0015_page%2013.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.17">
+        <file CHECKSUM="06c3cb381b50182a9c096eff82f2ad49a911ba8f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.17.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4776448">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0016_page%2014.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.18">
+        <file CHECKSUM="0babb1d103e42981bccfe26277684e2cf9689f41"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.18.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0017_page%2015.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.19">
+        <file CHECKSUM="9b94c08edbcd65e7d0e90a0dd4aad9170358c017"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.19.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4769124">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0018_page%2016.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.20">
+        <file CHECKSUM="99c352f0f60f30361dcdaeddcd0d8a45b93166ca"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.20.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4937663">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0019_page%2017.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.21">
+        <file CHECKSUM="1c98a2145dc187540fadef902a6abbc773609133"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.21.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4914824">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0020_page%2018.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.22">
+        <file CHECKSUM="2665eaba2a573a752b34fc46c43fa9e0ad874eab"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.22.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0021_page%2019.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.23">
+        <file CHECKSUM="c39666c8363982cbf6bd16d0e74075048c624c35"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.23.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4932912">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0022_page%2020.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.24">
+        <file CHECKSUM="79bf9d56c0e3d0ae675b3a654a88127cb617f7fa"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.24.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0023_page%2021.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.25">
+        <file CHECKSUM="5b4ee405bc2856a97dcde92549b52dba2d061cd3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.25.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4949380">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0024_page%2022.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.26">
+        <file CHECKSUM="50ad1fe37fa47041a275e8b8f9566c7025ae44b9"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.26.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0025_page%2023.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.27">
+        <file CHECKSUM="74505d138fc6fa434ff4988b3ecd0acbab1f87bf"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.27.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4914772">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0026_page%2024.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.28">
+        <file CHECKSUM="0348d870ade1fffffe331ed4c57dd938e44ffa26"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.28.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0027_page%2025.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.29">
+        <file CHECKSUM="b168cac82109a0d464d46050dff72b1ecf365d0e"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.29.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4908184">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0028_page%2026.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.30">
+        <file CHECKSUM="72b40c25ae6f0e6c04edbc933d065d02d8c627cc"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.30.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0029_page%2027.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.31">
+        <file CHECKSUM="d8f017073f1351acb5df3ca57d3ff0eeb41aca53"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.31.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4953924">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0030_page%2028.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.32">
+        <file CHECKSUM="d523c644d618ccffccf31dc8930da2553cd7ec67"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.32.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0031_page%2029.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.33">
+        <file CHECKSUM="56b81451a10529fb2ff5dc85e7a5d263ad82212b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.33.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4990588">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0032_page%2030.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.34">
+        <file CHECKSUM="51948ece6ce05d1a937c21a4a47e458264e7e1ed"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.34.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0033_page%2031.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.35">
+        <file CHECKSUM="594e1ce0b970754607aaf5b30d92452162ff4c02"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.35.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="5030925">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0034_page%2032.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.36">
+        <file CHECKSUM="d30ea4368b9638c2a34cac6d8b55d681d3fbebc8"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.36.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4812503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0035.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.37">
+        <file CHECKSUM="8e48763279e9bd53ddc0406b669a463064dd83a3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.37.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="14853484">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA_0036_backcover.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.1">
+        <file CHECKSUM="5895754ed0d3d58ba48535bfd66e1f3c98c07c5c"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.1.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="1373">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/observationsmete00lemaRMCA.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.20">
+        <file ID="TAXA.20.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="273">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0019_page%2017.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.21">
+        <file ID="TAXA.21.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="273">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0020_page%2018.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.33">
+        <file ID="TAXA.33.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="277">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0032_page%2030.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1119">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0001_frontcover.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.3">
+        <file ID="OCR.3.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0002.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.4">
+        <file ID="OCR.4.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="376">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0003_halftitlepage.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.5">
+        <file ID="OCR.5.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="33">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0004.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.7">
+        <file ID="OCR.7.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="16">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0006.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.8">
+        <file ID="OCR.8.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="939">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0007_page%205.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.9">
+        <file ID="OCR.9.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1924">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0008_page%206.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.17">
+        <file ID="OCR.17.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1150">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0016_page%2014.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.18">
+        <file ID="OCR.18.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1563">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0017_page%2015.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.20">
+        <file ID="OCR.20.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1588">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0019_page%2017.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.21">
+        <file ID="OCR.21.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1728">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0020_page%2018.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.22">
+        <file ID="OCR.22.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1465">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0021_page%2019.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.23">
+        <file ID="OCR.23.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2317">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0022_page%2020.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.24">
+        <file ID="OCR.24.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="967">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0023_page%2021.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.25">
+        <file ID="OCR.25.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1014">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0024_page%2022.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.26">
+        <file ID="OCR.26.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1867">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0025_page%2023.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.27">
+        <file ID="OCR.27.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1835">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0026_page%2024.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.28">
+        <file ID="OCR.28.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1983">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0027_page%2025.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.29">
+        <file ID="OCR.29.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1602">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0028_page%2026.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.30">
+        <file ID="OCR.30.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1703">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0029_page%2027.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.31">
+        <file ID="OCR.31.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="835">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0030_page%2028.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.32">
+        <file ID="OCR.32.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1968">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0031_page%2029.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.33">
+        <file ID="OCR.33.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2260">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0032_page%2030.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.34">
+        <file ID="OCR.34.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2069">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0033_page%2031.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.35">
+        <file ID="OCR.35.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="624">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0034_page%2032.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.36">
+        <file ID="OCR.36.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="3">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0035.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.37">
+        <file ID="OCR.37.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0036_backcover.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="5006">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9776">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0001_frontcover.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="84819">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0002.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.4">
+        <file ID="JHOVE.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8105">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0003_halftitlepage.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.5">
+        <file ID="JHOVE.5.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8091">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0004.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.6">
+        <file ID="JHOVE.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0005_titlepage.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.7">
+        <file ID="JHOVE.7.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="83860">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0006.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.8">
+        <file ID="JHOVE.8.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8100">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0007_page%205.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.9">
+        <file ID="JHOVE.9.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="130607">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0008_page%206.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.10">
+        <file ID="JHOVE.10.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8100">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0009_page%207.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.11">
+        <file ID="JHOVE.11.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="120196">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0010_page%208.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.12">
+        <file ID="JHOVE.12.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8100">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0011_page%209.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.13">
+        <file ID="JHOVE.13.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="124496">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0012_page%2010.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.14">
+        <file ID="JHOVE.14.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0013_page%2011.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.15">
+        <file ID="JHOVE.15.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="116942">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0014_page%2012.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.16">
+        <file ID="JHOVE.16.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0015_page%2013.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.17">
+        <file ID="JHOVE.17.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="124176">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0016_page%2014.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.18">
+        <file ID="JHOVE.18.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0017_page%2015.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.19">
+        <file ID="JHOVE.19.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="120787">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0018_page%2016.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.20">
+        <file ID="JHOVE.20.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0019_page%2017.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.21">
+        <file ID="JHOVE.21.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="128503">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0020_page%2018.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.22">
+        <file ID="JHOVE.22.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0021_page%2019.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.23">
+        <file ID="JHOVE.23.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="130674">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0022_page%2020.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.24">
+        <file ID="JHOVE.24.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0023_page%2021.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.25">
+        <file ID="JHOVE.25.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="121214">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0024_page%2022.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.26">
+        <file ID="JHOVE.26.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0025_page%2023.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.27">
+        <file ID="JHOVE.27.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="141606">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0026_page%2024.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.28">
+        <file ID="JHOVE.28.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0027_page%2025.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.29">
+        <file ID="JHOVE.29.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="137267">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0028_page%2026.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.30">
+        <file ID="JHOVE.30.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0029_page%2027.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.31">
+        <file ID="JHOVE.31.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="139447">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0030_page%2028.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.32">
+        <file ID="JHOVE.32.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0031_page%2029.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.33">
+        <file ID="JHOVE.33.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="139242">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0032_page%2030.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.34">
+        <file ID="JHOVE.34.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0033_page%2031.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.35">
+        <file ID="JHOVE.35.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8101">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0034_page%2032.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.36">
+        <file ID="JHOVE.36.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8091">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0035.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.37">
+        <file ID="JHOVE.37.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="99030">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/observationsmete00lemaRMCA_0036_backcover.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="26916">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/RMCA/Monographs/Lemaire_Observations%20meteorologiques/.aip/RMCA_Monographs_Lemaire_Observations%20meteorologiques.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>

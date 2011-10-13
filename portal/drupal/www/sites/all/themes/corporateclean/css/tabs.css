@@ -1,0 +1,82 @@
+/* Tabs */
+* jQuery UI Tabs 1.8.14
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding: .2em; zoom: 1;
+    background: url("/images/bg-xtabs.png") repeat-x scroll 0 100% #F1ECE9;
+ } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { 
+  margin: 0; padding: 10px 15px 0px 15px; overflow:hidden;
+  background: url("/images/bg-forms-tab-top.gif") no-repeat left top #f1ece9;
+}
+.ui-tabs .ui-tabs-nav li { 
+
+background: url("/images/bg-tab-right.gif") no-repeat right top transparent;
+    display: block;
+    float: left;
+    margin: 5px 1px 0px;
+    padding: 0 5px 0 0;
+
+  list-style: none; float: left; position: relative; top: 1px; white-space: nowrap; 
+}
+.ui-tabs .ui-tabs-nav li a { 
+  float: left; text-decoration: none; 
+  background: url("/images/bg-tab-left.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    margin: 0; color:#fff;
+    padding: 6px 12px 6px 17px;
+  /*  font-size: 1.16em; */
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+  margin-top:0px; margin-bottom: 0; padding-bottom: 1px; 
+background: url("/images/bg-tab-selected-right.gif") no-repeat right top transparent;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; padding-top:11px;color:#1B474D;
+background: url("/images/bg-tab-selected-left.gif") no-repeat scroll 0 0 transparent;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-nav li a:hover {color:#bf2121; }
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { /*display: none !important;*/ visibility:hidden; }
+
+/* ---------- */
+.browsearea-content-block {
+  width:1010px; 
+/*  background: #fff url('/images/home/bg-tabbox.png') repeat-y left top; */ 
+  overflow:hidden;
+}
+.browsearea-content-block .browsearea-content-list {
+  width: 3200px;
+/*  background: transparent url('/images/home/bg-tabbox-bot.png') no-repeat left bottom; */
+  overflow:hidden;	
+}
+
+.browsearea-content-block .browsearea-content-list li.browsearea-content {
+  display:block; padding: 12px 10px 12px 25px; 
+  width:990px; color: #555; overflow:hidden;
+}
+
+.ui-tabs .browsearea-content {float:left; width:518px;}
+.ui-tabs .browsearea-content.ui-tabs-hide {float:right !important;}
+
+.browsearea-content ul {list-style: none; margin:0; padding:0px 5px;}
+.browsearea-content ul li {
+  padding:3px 0 3px 30px; margin:0;
+  list-style:none;
+/*  background: transparent url('/images/home/bullet-tabbox.png') left no-repeat; */
+}
+
+
+
+
+
+
+
+
+

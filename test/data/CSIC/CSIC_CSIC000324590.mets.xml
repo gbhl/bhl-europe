@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: CSIC000324590, Collection: AIT111 Development, ID: 10706/a0mgqnn4"
+  OBJID="BHLE10706:a0mgqnn4"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-108">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>Memoria presentada para optar a la plaza de conservador del Museo Nacional de Ciencias Naturales</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>García-Valdecasas, Antonio</mods:namePart>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>esp</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Madrid</mods:placeTerm>
+                  </mods:place>
+                  <mods:dateIssued>1984</mods:dateIssued>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:language xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:languageTerm>spa</mods:languageTerm>
+                </mods:language>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:extent>97 [1] h. ; 30 cm.</mods:extent>
+                </mods:physicalDescription>
+                <mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:topic>Museos de ciencias naturales</mods:topic>
+                </mods:subject>
+                <mods:classification xmlns:mods="http://www.loc.gov/mods/v3">069:59</mods:classification>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordContentSource>ES-MaCSI</mods:recordContentSource>
+                  <mods:recordCreationDate>920710</mods:recordCreationDate>
+                  <mods:recordChangeDate>20000501070000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>CSIC000324590</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                  <mods:languageOfCataloging>
+                    <mods:languageTerm>spa</mods:languageTerm>
+                  </mods:languageOfCataloging>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>Memoria presentada para optar a la plaza de conservador del Museo Nacional de Ciencias Naturales / </dc:title>
+              <dc:creator>
+            García-Valdecasas, Antonio
+        </dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Madrid,</dc:publisher>
+              <dc:date>1984.</dc:date>
+              <dc:language>spa</dc:language>
+              <dc:subject>Museos de ciencias naturales.</dc:subject>
+              <dc:relation>CSIC</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.0">
+        <file CHECKSUM="f4950fddbe8bd076f42b73e99c1cb474c0700e97"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.0.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2851364">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0001.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="fce06976a22b0d1c8a5bd8e2d5ce6b043ce5576b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4270110">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0002.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="386b45e3c603a4972fc6cc7cf302ace2bc1e0af5"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3952620">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0003.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.3">
+        <file CHECKSUM="3e1dd1e3701848d8d198bf643b645a4269547a12"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.3.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4558944">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0004.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.4">
+        <file CHECKSUM="faad84ece037a561a4e14506cfaf4e9128f3357c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.4.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2063872">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0005.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.5">
+        <file CHECKSUM="d9df7a2d95839ba2f5ecfb66ab6c3cf7ec3b957d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.5.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4292688">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0006.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.6">
+        <file CHECKSUM="566f2d1dff06d6c8d9fa5d3e023b51ab74b31238"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.6.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4135620">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0007.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.7">
+        <file CHECKSUM="109297c689ae875d8333b6d18a18030e8270cda3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.7.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3257210">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0008.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.8">
+        <file CHECKSUM="ee780f73bd0f2c968b0207bda850fbd921a097a4"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.8.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4104094">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0009.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.9">
+        <file CHECKSUM="0386cc4448f461b38257b7bd0bc83acc3682fdf3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.9.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4324702">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0010.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.10">
+        <file CHECKSUM="e1d3a4bdc11ee3f7767ebe4c4f68e1fa239cd6c2"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.10.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2884502">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0011.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.11">
+        <file CHECKSUM="ef8fceff858d8d9c3ff018d5495ee01603e88195"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.11.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4113164">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0012.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.12">
+        <file CHECKSUM="56b1c615ffdb1397ca9ce8a1daf3623143b2644a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.12.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2182208">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0013.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.13">
+        <file CHECKSUM="1923253fbac188d7e583cfb75b1b6f1756a3d384"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.13.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3965492">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0014.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.14">
+        <file CHECKSUM="84f371ccf3f13f4f5c61148887417924b44f836a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.14.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3426392">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0015.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.15">
+        <file CHECKSUM="b54a72bcd3276064d6e30b577e62d4690a32b7ba"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.15.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3253898">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0016.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.16">
+        <file CHECKSUM="5c1d552c38c792529400540e0e64058fbf1e2c9d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.16.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3240766">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0017.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.17">
+        <file CHECKSUM="208b198a1a2557b7c3d8bcac1f5f247e11affe7b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.17.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3104254">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0018.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.18">
+        <file CHECKSUM="554d408e4ee15022bcc5d63b3baa9041deab9488"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.18.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3522060">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0019.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.19">
+        <file CHECKSUM="ce860b15ccd6e4bd005d5df4c5f8bc5f4a328108"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.19.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3508332">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0020.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.20">
+        <file CHECKSUM="a0a9dbb0506ecce439fd19684467a1537e98791a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.20.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3494302">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0021.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.21">
+        <file CHECKSUM="e2a197f830fd637f184f8548401922eeb7e47b88"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.21.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2792418">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0022.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.22">
+        <file CHECKSUM="f3ade5101d6316775d501587b2408cd0ba761493"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.22.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1439498">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0023.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.23">
+        <file CHECKSUM="ba3aefd0d43edc2c979bad560ee9f630aa0b0c6b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.23.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3551656">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0024.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.24">
+        <file CHECKSUM="8d8195508f49c0a86b606a6df078ed76aebfdea0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.24.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3736708">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0025.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.25">
+        <file CHECKSUM="4d67de2275151aad5b3fbbb8e411d73ada4b9ad9"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.25.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3721354">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0026.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.26">
+        <file CHECKSUM="dd8e69c836c66d149e082ccb813d4e87ade084e3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.26.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2891076">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0027.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.27">
+        <file CHECKSUM="eb593d1387d03e40bb8fecd4acf7c2c003e4a658"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.27.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3039472">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0028.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.28">
+        <file CHECKSUM="513d13a9a2d3bb43bca14b32bed12ce198510c41"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.28.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3153964">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0029.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.29">
+        <file CHECKSUM="77e1fb531ef2d18458a41e7b0047d51c4e264a98"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.29.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3058760">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0030.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.30">
+        <file CHECKSUM="bf36f3eb8050d1198aaf394723378388e8c9b266"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.30.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3465390">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0031.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.31">
+        <file CHECKSUM="c12f0f82e8afa240aa4ba757dc129678837d15f4"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.31.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3823212">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0032.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.32">
+        <file CHECKSUM="a35db5ebd2d078e27968dc014656b4472afb33ee"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.32.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3402900">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0033.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.33">
+        <file CHECKSUM="66ba3261c9e5b3aee448ed587f2e0291a1988d45"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.33.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3046450">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0034.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.34">
+        <file CHECKSUM="dfb562cc8f732f9574cd532e89b9a0bcaef79faf"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.34.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3281860">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0035.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.35">
+        <file CHECKSUM="542392d8ccc2ac9c98d63392fa0a885eecc0e5d0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.35.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3222412">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0036.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.36">
+        <file CHECKSUM="bb78bc8c94e1486a6250bf3c2a2663b26deb52ce"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.36.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1921190">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0037.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.37">
+        <file CHECKSUM="71b916dbded4bcbb0c64ffe97ed22d24915c4c6a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.37.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3288074">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0038.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.38">
+        <file CHECKSUM="e5d1037762be1192d1a473585f755725a01542f9"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.38.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1238130">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0039.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.39">
+        <file CHECKSUM="ea5dc1b13b69cb81a39d9f9716f8b1d27bc09c62"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.39.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3010778">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0040.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.40">
+        <file CHECKSUM="ce4ed60cc45eb8dc4252bb4c45eb20551789814e"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.40.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3158864">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0041.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.41">
+        <file CHECKSUM="43d7f3c48d6f0262f6d58d38a43e9da33b71b35d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.41.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3206438">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0042.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.42">
+        <file CHECKSUM="219bb3d163c7d8ff11974943ef99f6835b1bf6cc"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.42.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3474318">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0043.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.43">
+        <file CHECKSUM="2c061af0fe502272dd85254eaf6acaf902243193"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.43.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3318126">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0044.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.44">
+        <file CHECKSUM="5188e067b09e43a79757db2be2f981993685d1b2"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.44.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3437216">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0045.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.45">
+        <file CHECKSUM="d0c733ef417060b8c93f22d879c378605c072e7d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.45.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3218152">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0046.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.46">
+        <file CHECKSUM="911867a2919699c6b98571cfe7ecb946bfd57aff"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.46.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2539836">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0047.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.47">
+        <file CHECKSUM="efd5cb0bf88263ca8c30f46096c6d858626f5547"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.47.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1847818">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0048.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.48">
+        <file CHECKSUM="ba8dd9ce5ab98eec96ca3a607e15ebd0d951d8be"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.48.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1114062">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0049.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.49">
+        <file CHECKSUM="d3bc388a7be1a55e94473feef0fbe0ec6fbe6d92"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.49.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2757938">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0050.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.50">
+        <file CHECKSUM="7d11596ed4251f02143abd070c5834d8620f095c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.50.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2978366">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0051.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.51">
+        <file CHECKSUM="09cac306ebdc3996a08cd6be21590753b29c02ba"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.51.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3026886">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0052.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.52">
+        <file CHECKSUM="20d0e02c760b63ba374e4c60b6680f321be8eebd"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.52.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3057614">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0053.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.53">
+        <file CHECKSUM="d2808be8c1dfad6b0274c267e69ef834e6df4da4"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.53.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3498494">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0054.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.54">
+        <file CHECKSUM="172bf70c97b9e858709425c5643b01593f0b39aa"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.54.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2905810">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0055.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.55">
+        <file CHECKSUM="52116f9e0e29a5680cb60c9352941dcfa095a940"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.55.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3404580">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0056.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.56">
+        <file CHECKSUM="0fa88afcc3802d8908a244f5ef728dc860347e56"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.56.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3609774">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0057.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.57">
+        <file CHECKSUM="465cc4a56456d65ab23ece83a0f5c38e34a66ee0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.57.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3217972">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0058.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.58">
+        <file CHECKSUM="65c9432d67cf7081cf843a8f8f61aa3015d2ac5c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.58.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2125550">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0059.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.59">
+        <file CHECKSUM="f067ecff3126292a6b7bc00614ae94a9fae56d32"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.59.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2700712">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0060.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.60">
+        <file CHECKSUM="37226dcf7b8185bde47cced9a3a59470ae9da690"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.60.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2697698">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0061.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.61">
+        <file CHECKSUM="b7267186420777a5b0072edd7ffbacd222213cc1"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.61.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3384684">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0062.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.62">
+        <file CHECKSUM="b971010447d89b6d5ef98cbd72ac39d849fb92a3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.62.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3056302">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0063.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.63">
+        <file CHECKSUM="3324df6c239de13868c0d00cdd123a9f4b3929d9"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.63.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2502876">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0064.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.64">
+        <file CHECKSUM="1a2b5dc9c45422c94965d90dffdd2a6f56a712e0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.64.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2926130">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0065.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.65">
+        <file CHECKSUM="9394a98186560a12dc2a87c74cba803a14732717"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.65.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3517800">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0066.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.66">
+        <file CHECKSUM="40ef5bd85ff87b633209a895ff6d9146bb825ac5"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.66.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3850064">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0067.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.67">
+        <file CHECKSUM="80610b1ded779cdefd2a58df724400bab7ccdc82"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.67.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3717216">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0068.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.68">
+        <file CHECKSUM="229e8c9217421982f416672f96d71b0bbd8ec721"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.68.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2817126">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0069.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.69">
+        <file CHECKSUM="50f6249853a48de7b3dc9a28de82350c39ba3a42"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.69.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2113464">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0070.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.70">
+        <file CHECKSUM="4e2f485fed0fdd6527f848d62f5ad382ff279737"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.70.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3561736">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0071.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.71">
+        <file CHECKSUM="02d2a8719966791606637eacd74f68ec361a6cce"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.71.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2970718">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0072.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.72">
+        <file CHECKSUM="bf8596990a884ddc2a431cf103a11f58e8b6409c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.72.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3472984">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0073.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.73">
+        <file CHECKSUM="174487d10187b0d806abccd27766bdad0113f9bc"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.73.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3409648">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0074.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.74">
+        <file CHECKSUM="a6f3629257623b595062de15a743c8b9bdbad7ec"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.74.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3854398">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0075.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.75">
+        <file CHECKSUM="2d0ef5766d8f05b5195a7a2aa44d97ae3cb27d44"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.75.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3993080">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0076.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.76">
+        <file CHECKSUM="32f441106ef4ce5d2f76392a79f162fe426f9f8a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.76.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3375618">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0077.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.77">
+        <file CHECKSUM="f649cfc6ce657fe7a2b0b4bde3640211168f9c34"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.77.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1642070">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0078.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.78">
+        <file CHECKSUM="065e2a4320f40da2a68928693f2c468daff356fa"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.78.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1232750">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0079.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.79">
+        <file CHECKSUM="4f2a60b6048e91a98980332e4313b4d7e8f1d91d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.79.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3215552">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0080.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.80">
+        <file CHECKSUM="869e100b062e944a9fb94e8ed79ec862b6caf055"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.80.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3015968">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0081.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.81">
+        <file CHECKSUM="5face0aa912db20745b656837f34af50a9bc259a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.81.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3225050">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0082.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.82">
+        <file CHECKSUM="ed345bf4f7253f01f620e5c59cf5164f4a61b79b"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.82.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2926062">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0083.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.83">
+        <file CHECKSUM="9cf77db15f0a2f323106d949ea1782e88129cfb1"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.83.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2778338">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0084.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.84">
+        <file CHECKSUM="ba98c18d27346c0072055356113f98ac01fafc01"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.84.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2696638">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0085.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.85">
+        <file CHECKSUM="410f70fa238f2bb78d741ef6fe424f745e6bfc21"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.85.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3037594">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0086.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.86">
+        <file CHECKSUM="689630bb7e2f8aa87540fe69e3bc13dbd3143733"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.86.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3061524">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0087.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.87">
+        <file CHECKSUM="c9ef069beb4885253101dfa87c5e2d2386e42314"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.87.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1873396">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0088.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.88">
+        <file CHECKSUM="81421901f38c346b859286faca21f06e6c77d9c6"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.88.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="897886">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0089.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.89">
+        <file CHECKSUM="2bef7fac1baab17983aff38e65d9c338d3998674"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.89.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2490034">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0090.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.90">
+        <file CHECKSUM="b348f0f3833bb22cef63e33911d9ba0f3a2dd307"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.90.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2540852">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0091.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.91">
+        <file CHECKSUM="4eee62be201b80057ee89dcd33d8f19fca176984"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.91.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2545880">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0092.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.92">
+        <file CHECKSUM="33e8dbe65b4f6cb28488941defa64e263fd46781"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.92.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1384920">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0093.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.93">
+        <file CHECKSUM="27cf9387e896f81267be64ce2e3f84a3a41b99b0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.93.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="842630">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0094.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.94">
+        <file CHECKSUM="19d8b427adc536ec82aff3982142c4aebc0c2a96"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.94.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3142646">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0095.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.95">
+        <file CHECKSUM="697181e35856a00f9a03beec47c374d62be4282c"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.95.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3439882">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0096.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.96">
+        <file CHECKSUM="690ab926617f4678f2861a67726ceee3432ba4b3"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.96.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3132858">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0097.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.97">
+        <file CHECKSUM="3f57368313d2b22bfd7f0f5a56a4ac3ccf96910a"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.97.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2668182">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0098.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.98">
+        <file CHECKSUM="2fbbeacb70adc2eea1b15be58c6312001d815a52"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.98.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3192592">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0099.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.99">
+        <file CHECKSUM="ecb42be9761c12f5cb6edbb17ef55b71de2d1ea9"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.99.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3300490">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0100.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.100">
+        <file CHECKSUM="0e479cff9bfcf72f3a42505095a8a1cfa97fd9a0"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.100.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2947522">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0101.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.101">
+        <file CHECKSUM="5716478bbdb309fa8df34552cd272d31ba7d34fa"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.101.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3503366">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0102.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.102">
+        <file CHECKSUM="02f02989a934e8f020b676ce4e3e4caa9872ddca"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.102.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3480794">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0103.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.103">
+        <file CHECKSUM="2d3f1a80cd1ff5bda5838f807fe219823f0c508d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.103.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="2875728">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0104.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.104">
+        <file CHECKSUM="5ac9746b0a1b173be9665ad64d1e7d06f6424030"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.104.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3286458">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0105.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.105">
+        <file CHECKSUM="b41d049fc24eb4de5bdec0e9f73a8730f1a03fba"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.105.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1319588">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0106.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.106">
+        <file CHECKSUM="c6e677dc3469ca25d3d028b6ff5a44cfef6d711f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.106.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1433754">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0107.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.107">
+        <file CHECKSUM="e4941d66731b8a9edf5f7422e08166ff2668cecb"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.107.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="4372414">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_0108.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.108">
+        <file CHECKSUM="634662343ad6663eae90826bb4ffc64d1c0c1f54"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.108.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="1843">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/CSIC000324590_metadata.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.25">
+        <file ID="TAXA.25.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="425">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0026.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.27">
+        <file ID="TAXA.27.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="4755">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0028.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.28">
+        <file ID="TAXA.28.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="6884">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0029.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.29">
+        <file ID="TAXA.29.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3117">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0030.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.30">
+        <file ID="TAXA.30.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="273">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0031.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.52">
+        <file ID="TAXA.52.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="411">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0053.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.57">
+        <file ID="TAXA.57.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="283">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0058.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.89">
+        <file ID="TAXA.89.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="417">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0090.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.90">
+        <file ID="TAXA.90.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="281">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0091.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.102">
+        <file ID="TAXA.102.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="273">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0103.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.0">
+        <file ID="OCR.0.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="165">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0001.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1267">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0002.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1308">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0003.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.3">
+        <file ID="OCR.3.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1376">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0004.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.4">
+        <file ID="OCR.4.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="56">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0005.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.5">
+        <file ID="OCR.5.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1343">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0006.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.6">
+        <file ID="OCR.6.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1442">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0007.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.7">
+        <file ID="OCR.7.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1047">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0008.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.8">
+        <file ID="OCR.8.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1211">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0009.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.9">
+        <file ID="OCR.9.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1282">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0010.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.10">
+        <file ID="OCR.10.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="360">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0011.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.11">
+        <file ID="OCR.11.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="486">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0012.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.12">
+        <file ID="OCR.12.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="106">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0013.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.13">
+        <file ID="OCR.13.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1249">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0014.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.14">
+        <file ID="OCR.14.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1381">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0015.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.16">
+        <file ID="OCR.16.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1391">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0017.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.17">
+        <file ID="OCR.17.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1338">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0018.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.18">
+        <file ID="OCR.18.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1301">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0019.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.19">
+        <file ID="OCR.19.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1419">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0020.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.20">
+        <file ID="OCR.20.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1292">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0021.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.21">
+        <file ID="OCR.21.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="990">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0022.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.22">
+        <file ID="OCR.22.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="65">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0023.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.24">
+        <file ID="OCR.24.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1390">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0025.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.25">
+        <file ID="OCR.25.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1416">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0026.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.27">
+        <file ID="OCR.27.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1173">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0028.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.28">
+        <file ID="OCR.28.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1340">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0029.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.29">
+        <file ID="OCR.29.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1248">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0030.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.30">
+        <file ID="OCR.30.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1434">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0031.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.31">
+        <file ID="OCR.31.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1365">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0032.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.32">
+        <file ID="OCR.32.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1326">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0033.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.33">
+        <file ID="OCR.33.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1309">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0034.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.34">
+        <file ID="OCR.34.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1371">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0035.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.35">
+        <file ID="OCR.35.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1324">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0036.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.36">
+        <file ID="OCR.36.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="689">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0037.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.37">
+        <file ID="OCR.37.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="715">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0038.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.38">
+        <file ID="OCR.38.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="34">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0039.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.40">
+        <file ID="OCR.40.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1293">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0041.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.41">
+        <file ID="OCR.41.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1249">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0042.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.42">
+        <file ID="OCR.42.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1393">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0043.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.44">
+        <file ID="OCR.44.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1419">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0045.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.45">
+        <file ID="OCR.45.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1266">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0046.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.46">
+        <file ID="OCR.46.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="939">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0047.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.47">
+        <file ID="OCR.47.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="324">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0048.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.48">
+        <file ID="OCR.48.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="39">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0049.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.49">
+        <file ID="OCR.49.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1050">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0050.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.50">
+        <file ID="OCR.50.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1220">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0051.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.51">
+        <file ID="OCR.51.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="288">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0052.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.52">
+        <file ID="OCR.52.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1184">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0053.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.53">
+        <file ID="OCR.53.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1369">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0054.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.54">
+        <file ID="OCR.54.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1107">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0055.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.55">
+        <file ID="OCR.55.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1337">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0056.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.56">
+        <file ID="OCR.56.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1528">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0057.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.57">
+        <file ID="OCR.57.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1339">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0058.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.59">
+        <file ID="OCR.59.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1050">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0060.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.63">
+        <file ID="OCR.63.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="299">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0064.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.64">
+        <file ID="OCR.64.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1149">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0065.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.65">
+        <file ID="OCR.65.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1401">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0066.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.66">
+        <file ID="OCR.66.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="784">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0067.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.67">
+        <file ID="OCR.67.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1349">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0068.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.68">
+        <file ID="OCR.68.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1067">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0069.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.69">
+        <file ID="OCR.69.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="301">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0070.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.70">
+        <file ID="OCR.70.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1426">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0071.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.71">
+        <file ID="OCR.71.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1232">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0072.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.72">
+        <file ID="OCR.72.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1348">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0073.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.73">
+        <file ID="OCR.73.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1105">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0074.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.74">
+        <file ID="OCR.74.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1306">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0075.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.75">
+        <file ID="OCR.75.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1371">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0076.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.76">
+        <file ID="OCR.76.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1243">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0077.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.78">
+        <file ID="OCR.78.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="85">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0079.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.80">
+        <file ID="OCR.80.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1084">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0081.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.81">
+        <file ID="OCR.81.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1107">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0082.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.82">
+        <file ID="OCR.82.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1012">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0083.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.83">
+        <file ID="OCR.83.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="932">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0084.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.85">
+        <file ID="OCR.85.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="905">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0086.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.88">
+        <file ID="OCR.88.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="18">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0089.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.89">
+        <file ID="OCR.89.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="949">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0090.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.90">
+        <file ID="OCR.90.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="845">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0091.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.91">
+        <file ID="OCR.91.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="885">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0092.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.93">
+        <file ID="OCR.93.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="16">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0094.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.94">
+        <file ID="OCR.94.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1184">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0095.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.96">
+        <file ID="OCR.96.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1202">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0097.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.97">
+        <file ID="OCR.97.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1022">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0098.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.98">
+        <file ID="OCR.98.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1160">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0099.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.99">
+        <file ID="OCR.99.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1295">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0100.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.102">
+        <file ID="OCR.102.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1258">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0103.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.103">
+        <file ID="OCR.103.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="949">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0104.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.104">
+        <file ID="OCR.104.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="971">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0105.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.106">
+        <file ID="OCR.106.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="25">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0107.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.107">
+        <file ID="OCR.107.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="822">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0108.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.0">
+        <file ID="JHOVE.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0001.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0002.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0003.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0004.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.4">
+        <file ID="JHOVE.4.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0005.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.5">
+        <file ID="JHOVE.5.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0006.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.6">
+        <file ID="JHOVE.6.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0007.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.7">
+        <file ID="JHOVE.7.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0008.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.8">
+        <file ID="JHOVE.8.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0009.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.9">
+        <file ID="JHOVE.9.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0010.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.10">
+        <file ID="JHOVE.10.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0011.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.11">
+        <file ID="JHOVE.11.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0012.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.12">
+        <file ID="JHOVE.12.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0013.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.13">
+        <file ID="JHOVE.13.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0014.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.14">
+        <file ID="JHOVE.14.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0015.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.15">
+        <file ID="JHOVE.15.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0016.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.16">
+        <file ID="JHOVE.16.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0017.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.17">
+        <file ID="JHOVE.17.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0018.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.18">
+        <file ID="JHOVE.18.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0019.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.19">
+        <file ID="JHOVE.19.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0020.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.20">
+        <file ID="JHOVE.20.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0021.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.21">
+        <file ID="JHOVE.21.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0022.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.22">
+        <file ID="JHOVE.22.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0023.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.23">
+        <file ID="JHOVE.23.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0024.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.24">
+        <file ID="JHOVE.24.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0025.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.25">
+        <file ID="JHOVE.25.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0026.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.26">
+        <file ID="JHOVE.26.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0027.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.27">
+        <file ID="JHOVE.27.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0028.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.28">
+        <file ID="JHOVE.28.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0029.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.29">
+        <file ID="JHOVE.29.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0030.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.30">
+        <file ID="JHOVE.30.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0031.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.31">
+        <file ID="JHOVE.31.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0032.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.32">
+        <file ID="JHOVE.32.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0033.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.33">
+        <file ID="JHOVE.33.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0034.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.34">
+        <file ID="JHOVE.34.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0035.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.35">
+        <file ID="JHOVE.35.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0036.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.36">
+        <file ID="JHOVE.36.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0037.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.37">
+        <file ID="JHOVE.37.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0038.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.38">
+        <file ID="JHOVE.38.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0039.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.39">
+        <file ID="JHOVE.39.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0040.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.40">
+        <file ID="JHOVE.40.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0041.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.41">
+        <file ID="JHOVE.41.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0042.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.42">
+        <file ID="JHOVE.42.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0043.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.43">
+        <file ID="JHOVE.43.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0044.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.44">
+        <file ID="JHOVE.44.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0045.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.45">
+        <file ID="JHOVE.45.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0046.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.46">
+        <file ID="JHOVE.46.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0047.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.47">
+        <file ID="JHOVE.47.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0048.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.48">
+        <file ID="JHOVE.48.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0049.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.49">
+        <file ID="JHOVE.49.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0050.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.50">
+        <file ID="JHOVE.50.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0051.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.51">
+        <file ID="JHOVE.51.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0052.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.52">
+        <file ID="JHOVE.52.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0053.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.53">
+        <file ID="JHOVE.53.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0054.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.54">
+        <file ID="JHOVE.54.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0055.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.55">
+        <file ID="JHOVE.55.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0056.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.56">
+        <file ID="JHOVE.56.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0057.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.57">
+        <file ID="JHOVE.57.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0058.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.58">
+        <file ID="JHOVE.58.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0059.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.59">
+        <file ID="JHOVE.59.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0060.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.60">
+        <file ID="JHOVE.60.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0061.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.61">
+        <file ID="JHOVE.61.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0062.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.62">
+        <file ID="JHOVE.62.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0063.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.63">
+        <file ID="JHOVE.63.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0064.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.64">
+        <file ID="JHOVE.64.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0065.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.65">
+        <file ID="JHOVE.65.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0066.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.66">
+        <file ID="JHOVE.66.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0067.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.67">
+        <file ID="JHOVE.67.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0068.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.68">
+        <file ID="JHOVE.68.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0069.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.69">
+        <file ID="JHOVE.69.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0070.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.70">
+        <file ID="JHOVE.70.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0071.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.71">
+        <file ID="JHOVE.71.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0072.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.72">
+        <file ID="JHOVE.72.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0073.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.73">
+        <file ID="JHOVE.73.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0074.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.74">
+        <file ID="JHOVE.74.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0075.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.75">
+        <file ID="JHOVE.75.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0076.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.76">
+        <file ID="JHOVE.76.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0077.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.77">
+        <file ID="JHOVE.77.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0078.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.78">
+        <file ID="JHOVE.78.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0079.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.79">
+        <file ID="JHOVE.79.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0080.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.80">
+        <file ID="JHOVE.80.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0081.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.81">
+        <file ID="JHOVE.81.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0082.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.82">
+        <file ID="JHOVE.82.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0083.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.83">
+        <file ID="JHOVE.83.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0084.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.84">
+        <file ID="JHOVE.84.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0085.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.85">
+        <file ID="JHOVE.85.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0086.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.86">
+        <file ID="JHOVE.86.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0087.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.87">
+        <file ID="JHOVE.87.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0088.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.88">
+        <file ID="JHOVE.88.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8662">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0089.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.89">
+        <file ID="JHOVE.89.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0090.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.90">
+        <file ID="JHOVE.90.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0091.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.91">
+        <file ID="JHOVE.91.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0092.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.92">
+        <file ID="JHOVE.92.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0093.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.93">
+        <file ID="JHOVE.93.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8662">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0094.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.94">
+        <file ID="JHOVE.94.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0095.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.95">
+        <file ID="JHOVE.95.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0096.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.96">
+        <file ID="JHOVE.96.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0097.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.97">
+        <file ID="JHOVE.97.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0098.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.98">
+        <file ID="JHOVE.98.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0099.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.99">
+        <file ID="JHOVE.99.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0100.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.100">
+        <file ID="JHOVE.100.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0101.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.101">
+        <file ID="JHOVE.101.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0102.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.102">
+        <file ID="JHOVE.102.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0103.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.103">
+        <file ID="JHOVE.103.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0104.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.104">
+        <file ID="JHOVE.104.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0105.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.105">
+        <file ID="JHOVE.105.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0106.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.106">
+        <file ID="JHOVE.106.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0107.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.107">
+        <file ID="JHOVE.107.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="8664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_0108.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.108">
+        <file ID="JHOVE.108.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3675">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC000324590_metadata.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="58551">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/CSIC/CSIC000324590/.aip/CSIC_CSIC000324590.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>

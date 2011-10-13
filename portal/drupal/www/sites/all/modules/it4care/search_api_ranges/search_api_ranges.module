@@ -1,0 +1,810 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function search_api_ranges_help($path, array $arg) {
+  if ($path == 'admin/config/search/search_api/index/%/ranges') {
+    return t('Select the indexed fields for which you want to create range facet blocks. ' .
+        'Before range facet blocks are actually displayed, you will have to enable and configure them at the <a href="!url">block administration page</a>.',
+        array('!url' => url('admin/structure/block')));
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function search_api_ranges_menu() {
+  $items['admin/config/search/search_api/index/%search_api_index/ranges'] = array(
+    'title' => 'Ranges',
+    'description' => 'Select the range facet blocks to display.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('search_api_ranges_index_select', 5),
+    'access arguments' => array('administer search_api'),
+    'weight' => -1,
+    'type' => MENU_LOCAL_TASK,
+    'context' => MENU_CONTEXT_INLINE | MENU_CONTEXT_PAGE,
+    'file' => 'search_api_ranges.admin.inc',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function search_api_ranges_theme() {
+  $themes['search_api_ranges_form_table'] = array(
+    'render element' => 'element',
+    'file' => 'search_api_ranges.admin.inc',
+  );
+  $themes['search_api_ranges_slider'] = array(
+    'variables' => array(
+      'slider' => '',
+    ),
+    'file' => 'search_api_ranges.theme.inc',
+  );
+  $themes['search_api_ranges_range'] = array(
+    'variables' => array(
+      'name' => '',
+      'field' => '',
+      'count' => 0,
+      'path' => NULL,
+      'options' => array(),
+      'active' => FALSE,
+    ),
+    'file' => 'search_api_ranges.theme.inc',
+  );
+  $themes['search_api_ranges_block_view_form'] = array(
+    'arguments' => array(
+      'form' => NULL,
+    ),
+    'template' => 'search-api-ranges-slider',
+    'render element' => 'form',
+  );
+  return $themes;
+}
+
+/**
+ * Implements hook_entity_info().
+ */
+function search_api_ranges_entity_info() {
+  $info['search_api_range'] = array(
+    'label' => t('Search range facet'),
+    'controller class' => 'EntityAPIControllerExportable',
+    'entity class' => 'SearchApiRange',
+    'base table' => 'search_api_range',
+    'uri callback' => 'search_api_range_url',
+    'module' => 'search_api_ranges',
+    'exportable' => TRUE,
+    'entity keys' => array(
+      'id' => 'id',
+      'name' => 'delta',
+      'label' => 'name',
+    ),
+  );
+
+  return $info;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function search_api_ranges_permission() {
+  return array(
+    'use search_api_ranges' => array(
+      'title' => t('Use search ranges'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function search_api_ranges_block_info() {
+  $blocks = array();
+
+  $ranges = search_api_range_load_multiple(FALSE, array('enabled' => 1));
+  foreach ($ranges as $range) {
+    $blocks[$range->delta]['info'] = $range->name . ' (' . t('Range filter') . ')';
+    // It will hardly ever be possible to cache range facet blocks sensibly.
+    $blocks[$range->delta]['cache'] = DRUPAL_NO_CACHE;
+    // Use this so range facet blocks are initially grouped together.
+    $blocks[$range->delta]['weight'] = 5;
+  }
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ */
+function search_api_ranges_block_configure($delta = '') {
+  $range = search_api_range_load($delta);
+  if (!$range) {
+    return array();
+  }
+  $index = search_api_index_load($range->index_id);
+  if (!$index || empty($index->options['fields'][$range->field])) {
+    drupal_set_message(t("This range facet's index field is unknown."), 'error');
+    return array();
+  }
+  $field = $index->options['fields'][$range->field];
+  $options = $range->options;
+
+  $form['index_description'] = array(
+    '#type' => 'item',
+    '#title' => t('Search index'),
+    '#description' => l($index->name, 'admin/config/search/search_api/index/' . $index->machine_name),
+  );
+  $form['field_prefix'] = array(
+    '#type' => 'textfield',
+    '#title' => t('A field prefix'),
+    '#description' => t('Prefix to add in front of the field value, for example: &euro; or HTML like &amp;euro;'),
+    '#default_value' => $options['field_prefix'],
+  );
+  $form['field_suffix'] = array(
+    '#type' => 'textfield',
+    '#title' => t('A field suffix'),
+    '#description' => t('Suffix to add after the field value, for example: Pcs.'),
+    '#default_value' => $options['field_suffix'],
+  );
+
+  $search_ids = variable_get('search_api_ranges_search_ids', array());
+  if (empty($search_ids[$index->machine_name]) || count($search_ids[$index->machine_name]) <= 1) {
+    $form['default_true'] = array(
+      '#type' => 'value',
+      '#value' => $options['default_true'],
+    );
+    $form['ids_list'] = array(
+      '#type' => 'value',
+      '#value' => $options['ids_list'],
+    );
+  }
+  else {
+    $form['default_true'] = array(
+      '#type' => 'select',
+      '#title' => t('Display for searches'),
+      '#options' => array(
+        TRUE => t('For all except the selected'),
+        FALSE => t('Only for the selected'),
+      ),
+      '#default_value' => $options['default_true'],
+    );
+    $form['ids_list'] = array(
+      '#type' => 'select',
+      '#title' => t('Search IDs'),
+      '#options' => $search_ids[$index->machine_name],
+      '#size' => min(4, count($search_ids[$index->machine_name])),
+      '#multiple' => TRUE,
+      '#default_value' => $options['ids_list'],
+    );
+  }
+
+  $form['range'] = array(
+    '#type' => 'value',
+    '#value' => $range,
+  );
+
+  return $form;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function search_api_ranges_block_view($delta = '') {
+  if (!user_access('use search_api_ranges')) {
+    return;
+  }
+
+  // Since we already computed the active range facets when altering the search queries, we don't do it again here.
+  $search_ids = drupal_static('search_api_ranges_search_api_query_alter', array());
+
+  if (empty($search_ids[$delta]) || !search_api_current_search($search_ids[$delta])) {
+    return;
+  }
+  $search_id = $search_ids[$delta];
+  list($query, $results) = search_api_current_search($search_id);
+
+  // calculate slider's from, to, min and max values
+  $params = drupal_get_query_parameters();
+  $range_blocks = search_api_ranges_get_blocks();
+  if (empty($range_blocks[$delta])) {
+    return;
+  }
+  $index_id = $range_blocks[$delta]['index_id'];
+  $field = $range_blocks[$delta]['field'];
+
+  $min_value = search_api_ranges_minmax($field, 'ASC', $params, $index_id, $query->getKeys());
+  $max_value = search_api_ranges_minmax($field, 'DESC', $params, $index_id, $query->getKeys());
+
+  if (empty($min_value) && empty($max_value)) {
+    return;
+  }
+
+  // @todo allow cloned blocks, and account for [0], [1] etc.
+  if (isset($params['filter'][$field][0])) {
+    $values = explode(' ', substr($params['filter'][$range_blocks[$delta]['field']][0], 1, -1));
+    $from_value = round($values[0]);
+    $to_value = round($values[1]);
+  }
+  if (!isset($from_value) || $from_value < $min_value) {
+    $from_value = $min_value;
+  }
+  if (!isset($to_value) || $max_value < $to_value) {
+    $to_value = $max_value;
+  }
+
+  $range = search_api_range_load($delta);
+  if (!$range->enabled) {
+    return;
+  }
+  $options = $range->options;
+
+  // Get active range facet filters for this query.
+  $num = count(search_api_current_search());
+  $params = drupal_get_query_parameters($_GET, array('q', 'page'));
+  $filter_name = $num > 1 ? 'filter_' . $search_id : 'filter';
+  $filters = isset($params[$filter_name]) ? $params[$filter_name] : array();
+  if (!$filters && $num == 1 && isset($params['filter_' . $search_id])) {
+    $filter_name = 'filter_' . $search_id;
+    $filters = $params[$filter_name];
+  }
+  $filters = empty($filters[$range->field]) ? array() : $filters[$range->field];
+
+  // Get type information for later name-generation.
+  if (empty($options['type'])) {
+    _search_api_ranges_refresh_type($range, $options);
+    $range->options = $options;
+    $range->save();
+  }
+  $type = $options['type'];
+  $values = isset($options['options']) ? $options['options'] : array();
+
+  $theme_suffix  = '';
+  $theme_suffix .= '__' . preg_replace('/\W+/', '_', $query->getIndex()->item_type);
+  $theme_suffix .= '__' . preg_replace('/\W+/', '_', $range->field);
+  $theme_suffix .= '__' . preg_replace('/\W+/', '_', $range->delta);
+  $theme = array(
+    '#theme'  => 'search_api_ranges_slider' . $theme_suffix,
+    '#slider' => '',
+  );
+
+  $values = array(
+    'delta' => $delta,
+    'field' => $field,
+    'name' => $range->options['field_name'],
+    'to' => $to_value,
+    'from' => $from_value,
+    'min' => $min_value,
+    'max' => $max_value,
+    'prefix' => $range->options['field_prefix'],
+    'suffix' => $range->options['field_suffix'],
+  );
+
+  $theme['#slider'] = drupal_get_form('search_api_ranges_block_view_form', $values);
+
+  return array(
+    'subject' => $range->options['field_name'],
+    'content' => $theme,
+  );
+}
+
+/**
+ * Get a list of sorts field names for the current search index id
+ *
+ * @return a cached query object
+ */
+function search_api_ranges_get_blocks($reset = FALSE) {
+  $cache = &drupal_static(__FUNCTION__, array());
+  if (!isset($cache['search_api_range_blocks']) || $reset) {
+    $query = db_select('search_api_range', 's')
+    ->fields('s', array('delta', 'index_id', 'field'))
+    ->condition('enabled', 1)
+    ->execute();
+
+    $data = array();
+    while ($row = $query->fetch()) {
+      $data[$row->delta] = array(
+        'field' => $row->field,
+        'index_id' => $row->index_id,
+      );
+    }
+
+    $cache['search_api_range_blocks'] = $data;
+  }
+  return $cache['search_api_range_blocks'];
+}
+
+/**
+ * Breakout for search_api_ranges_block_view_form()
+ * We find the lowest/highest single value given the active facets
+ *
+ * @todo include the keys
+ */
+function search_api_ranges_minmax($range_field, $order, $params, $index_id, $keys) {
+  $index = search_api_index_load($index_id);
+
+  $options = array();
+  $options['limit'] = 1;
+  $options['search id'] = 'search_api_ranges:minmax/' . $order;
+  // helps avoid running the ranges query alter
+  $options['search_api_ranges skip'] = 1;
+
+  $query = search_api_query($index_id, $options);
+  $query->sort($range_field, $order);
+  $query->keys($keys);
+
+  // Add active facet filters.
+  $filter_array = search_api_facets_get_filters($query);
+
+  // for min/max queries: unset self
+  unset($filter_array[$range_field]);
+
+  foreach ($filter_array as $field => $filters) {
+    foreach ($filters as $filter) {
+      if ($filter == '!') {
+        $query->condition($field, NULL);
+      }
+      elseif ($filter[0] == '"') {
+        $filter = substr($filter, 1, -1);
+        if (strlen($filter)) {
+          $query->condition($field, $filter);
+        }
+      }
+      else {
+        $lowtype = $filter[0];
+        $uptype = $filter[strlen($filter) - 1];
+        $filter = substr($filter, 1, -1);
+        list($lower, $upper) = explode(' ', $filter, 2);
+        if ($lower == '*' && $upper == '*') {
+          $query->condition($field, NULL, '<>');
+        }
+        else {
+          if ($lower != '*') {
+            $query->condition($field, $lower, $lowtype == '[' ? '>=' : '>');
+          }
+          if ($upper != '*') {
+            $query->condition($field, $upper, $uptype == ']' ? '<=' : '<');
+          }
+        }
+      }
+    }
+  }
+
+  // query results
+  $results = search_api_ranges_minmax_execute($query);
+  if(!$results['results']) {
+    return;
+  }
+  foreach ($results['results'] as $result) {
+    $entity = entity_load($index->item_type, array($result['id']));
+    $index->dataAlter($entity);
+    $wrapper = $index->entityWrapper($entity[$result['id']]);
+  }
+
+  // we have to round because jQuery slider cannot handle decimals
+  $fields[$range_field]['type'] = 'integer';
+  $fields = search_api_extract_fields($wrapper, $fields);
+  return round($fields[$range_field]['value']);
+}
+
+/**
+ * Executes the min/max search query.
+ *
+ * @return array
+ *   An associative array containing the search results. The following keys
+ *   are standardized:
+ *   - 'result count': The overall number of results for this query, without
+ *     range restrictions. Might be approximated, for large numbers.
+ *   - results: An array of results, ordered as specified. The array keys are
+ *     the items' IDs, values are arrays containing the following keys:
+ *     - id: The item's ID.
+ *     - score: A float measuring how well the item fits the search.
+ *     - entity (optional): If set, the fully loaded entity. This field should
+ *       always be used by modules using search results, to avoid duplicate
+ *       entity loads.
+ *     - excerpt (optional): If set, an HTML text containing highlighted
+ *       portions of the fulltext that match the query.
+ *   - warnings: A numeric array of translated warning messages that may be
+ *     displayed to the user.
+ *   - ignored: A numeric array of search keys that were ignored for this
+ *     search (e.g., because of being too short or stop words).
+ *   - performance: An associative array with the time taken (as floats, in
+ *     seconds) for specific parts of the search execution:
+ *     - complete: The complete runtime of the query.
+ *     - hooks: Hook invocations and other server-independent processing.
+ *     - preprocessing: Preprocessing of the service class.
+ *     - execution: The actual query to the search server, in whatever form.
+ *     - postprocessing: Preparing the results for returning.
+ *   Additional metadata may be returned in other keys. Only 'result count'
+ *   and 'results' always have to be set, all other entries are optional.
+ */
+function search_api_ranges_minmax_execute(SearchApiQuery $query) {
+  $start = microtime(TRUE);
+
+  // Add filter for languages.
+  $languages = $query->getOption('languages');
+  if (isset($languages)) {
+    $query->addLanguages($languages);
+  }
+
+  // Add fulltext fields, unless set
+  if ($query->getFields() === NULL) {
+    $query->fields($query->getIndex()->getFulltextFields());
+  }
+
+  // Preprocess query.
+  $query->getIndex()->preprocessSearchQuery($query);
+
+  $pre_search = microtime(TRUE);
+
+  // Execute query.
+  $response = $query->getIndex()->server()->search($query);
+
+  $post_search = microtime(TRUE);
+
+  // Postprocess results.
+  $query->getIndex()->postprocessSearchResults($response, $query);
+
+  $end = microtime(TRUE);
+  $response['performance']['complete'] = $end - $start;
+  $response['performance']['hooks'] = $response['performance']['complete'] - ($post_search - $pre_search);
+
+  return $response;
+}
+
+/**
+ * Generates the jQuery range slider form for range facet blocks
+ */
+function search_api_ranges_block_view_form($form, &$form_state, $values) {
+  $form = '';
+
+  // construct ajax target params
+  $target_params = drupal_get_query_parameters($_GET, array('q'));
+  unset($target_params['filter'][$values['field']]);
+
+  // construct form
+  $form['text-range'] = array(
+    '#markup' => '<p class="text-range">' .
+      t('!field_name ranges from !prefix@from!suffix to !prefix@to!suffix', array(
+        '!field_name' => $values['name'],
+        '@from' => $values['min'],
+        '@to' => $values['max'],
+        '!prefix' => $values['prefix'],
+        '!suffix' => $values['suffix'],
+      ))
+      . '</p>',
+  );
+  $form['range-from'] = array(
+    '#type' => 'textfield',
+    '#title' => t('From'),
+    '#size' => 10,
+    '#default_value' => $values['from'],
+  );
+  $form['range-slider'] = array(
+    '#markup' => '<div class="range-slider"></div>',
+  );
+  $form['range-to'] = array(
+    '#type' => 'textfield',
+    '#title' => t('To'),
+    '#size' => 10,
+    '#default_value' => $values['to'],
+  );
+  $form['range-min'] = array(
+    '#type' => 'hidden',
+    '#value' => $values['min'],
+  );
+  $form['range-max'] = array(
+    '#type' => 'hidden',
+    '#value' => $values['max'],
+  );
+  $form['range-ajax-target'] = array(
+    '#type' => 'hidden',
+    '#value' => url($_GET['q'], array('query' => $target_params)),
+  );
+  $form['range-field'] = array(
+    '#type' => 'hidden',
+    '#value' => $values['field'],
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Go'),
+  );
+
+  // add jQuery UI
+  drupal_add_library('system', 'ui.slider');
+  drupal_add_js(drupal_get_path('module', 'search_api_ranges') . '/search_api_ranges.js');
+
+  return $form;
+}
+
+/**
+ * Handle slider block submit
+ */
+function search_api_ranges_block_view_form_submit($form, &$form_state) {
+  $values = $form_state['values'];
+  $params = drupal_get_query_parameters($_GET, array('q', 'page'));
+
+  // @todo: allow for cloned blocks and multiple ranges for same filter
+  $params['filter'][$form_state['input']['range-field']][0] = '[' . $values['range-from'] . ' ' . $values['range-to'] . ']';
+
+  drupal_goto($_GET['q'], array('query' => array($params)));
+}
+
+/**
+ * Implements hook_search_api_query_alter().
+ */
+function search_api_ranges_search_api_query_alter(SearchApiQuery $query) {
+  if (!user_access('use search_api_ranges')) {
+    return;
+  }
+
+  // Add range facet fields to query.
+  $index_id = $query->getIndex()->machine_name;
+  $ranges = search_api_range_load_multiple(FALSE, array('index_id' => $index_id, 'enabled' => 1));
+  $fields = array();
+
+  // Save the active range facets for later retrieval when generating blocks.
+  $active = &drupal_static(__FUNCTION__, array());
+  $search_id = $query->getOption('search id');
+  foreach ($ranges as $range) {
+    if (array_search($search_id, $range->options['ids_list']) === FALSE) {
+      $search_ids = variable_get('search_api_ranges_search_ids', array());
+      if (empty($search_ids[$index_id][$search_id])) {
+        // Remember this search ID.
+        $search_ids[$index_id][$search_id] = $search_id;
+        variable_set('search_api_ranges_search_ids', $search_ids);
+      }
+      if (!$range->options['default_true']) {
+        break; // Range facet doesn't match.
+      }
+    }
+    elseif ($range->options['default_true']) {
+      break; // Range facet doesn't match.
+    }
+    $active[$range->delta] = $search_id;
+    $fields[$range->delta] = array(
+      'field' => $range->field,
+    );
+  }
+  if ($fields) {
+    $old = $query->setOption('search_api_ranges', $fields);
+    if ($old) { // This will only happen if other modules add range facets of their own.
+      $query->setOption('search_api_ranges', $fields + $old);
+    }
+  }
+
+  // Add active range facet filters. Skip for min/max queries.
+  $params = drupal_get_query_parameters();
+  if (isset($params['range'])) {
+    foreach ($params['range'] as $key => $range) {
+      $range = explode(' TO ', substr($range, 1, -1));
+      $query->condition($key, $range[0], '>=');
+      $query->condition($key, $range[1], '<=');
+    }
+  }
+}
+
+/**
+ * Implements hook_search_api_index_update().
+ */
+function search_api_ranges_search_api_index_update(SearchApiIndex $index) {
+  $id = $index->machine_name;
+  if ($index->enabled != $index->original->enabled) {
+    if ($index->enabled) {
+      if (search_api_range_load_multiple(FALSE, array('index_id' => $id))) {
+        drupal_set_message(t('There are saved range facets for this index. ' .
+            'Go to the <a href="!url">range facet page</a> to enable them.',
+            array('!url' => 'admin/config/search/search_api/index/' . $id . '/ranges')));
+      }
+    }
+    else {
+      foreach (search_api_range_load_multiple(FALSE, array('index_id' => $id, 'enabled' => TRUE)) as $range) {
+        $range->enabled = FALSE;
+        $range->save();
+      }
+      if (isset($range)) {
+        drupal_set_message(t('The disabled index still had active range facet blocks. They were deactivated.'), 'status', FALSE);
+      }
+    }
+  }
+  $options = $index->options + array('fields' => array());
+  $original_options = $index->original->options + array('fields' => array());
+  if ($options['fields'] != $original_options['fields']) {
+    $fields = $options['fields'];
+    $ranges = search_api_range_load_multiple(FALSE, array('index_id' => $id, 'enabled' => 1));
+    foreach ($ranges as $range) {
+      if (empty($fields[$range->field]['indexed'])) {
+        $range->enabled = FALSE;
+        $range->save();
+      }
+      elseif (empty($range->options['type']) || $range->options['type'] != $fields[$range->field]['type']) {
+        _search_api_ranges_refresh_type($range, $range->options);
+        $range->save();
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_search_api_index_delete().
+ */
+function search_api_ranges_search_api_index_delete(SearchApiIndex $index) {
+  db_delete('search_api_range')
+    ->condition('index_id', $index->machine_name)
+    ->execute();
+  if (search_api_range_load_multiple(FALSE, array('index_id' => $index->machine_name), TRUE)) {
+    drupal_set_message(t('A module defines default search range facets for the deleted index. You should update the module code or disable it.'), 'warning');
+  }
+}
+
+/**
+ * Implements hook_search_api_range_insert().
+ */
+function search_api_ranges_search_api_range_insert(SearchApiRange $range) {
+  block_flush_caches();
+  cache_clear_all('*', 'cache_block', TRUE);
+}
+
+/**
+ * Implements hook_search_api_range_update().
+ */
+function search_api_ranges_search_api_range_update(SearchApiRange $range) {
+  if ($range->enabled != $range->original->enabled) {
+    block_flush_caches();
+    cache_clear_all('*', 'cache_block', TRUE);
+  }
+}
+
+/**
+ * Implements hook_search_api_range_delete().
+ */
+function search_api_ranges_search_api_range_delete(SearchApiRange $range) {
+  block_flush_caches();
+  cache_clear_all('*', 'cache_block', TRUE);
+}
+
+/**
+ * Implements hook_flush_caches().
+ *
+ * Refreshes type information for all enabled range facets.
+ */
+function search_api_ranges_flush_caches() {
+  foreach (search_api_range_load_multiple(FALSE, array('enabled' => 1)) as $range) {
+    if (empty($range->options['type']) || $range->options['type'] == 'options') {
+      _search_api_ranges_refresh_type($range, $range->options);
+      $range->save();
+    }
+  }
+}
+
+/**
+ * Load a search range facets.
+ *
+ * @param $id
+ *   Either a range facet's numeric ID or delta.
+ * @param $reset
+ *   Whether to reset the internal entity_load cache.
+ *
+ * @return SearchApiRange
+ *   Either the range facet with the specified ID or delta, or FALSE, if no
+ *   such range facet exists.
+ */
+function search_api_range_load($id, $reset = FALSE) {
+  $ret = entity_load('search_api_range', array($id), array(), $reset);
+  return $ret ? reset($ret) : FALSE;
+}
+
+/**
+ * Load multiple range facets at once, determined by IDs or deltas, or by other
+ * conditions.
+ *
+ * @see entity_load()
+ *
+ * @param $ids
+ *   An array of range facet IDs or machine names.
+ * @param $conditions
+ *   An array of conditions on the {search_api_range} table in the form
+ *   'field' => $value.
+ * @param $reset
+ *   Whether to reset the internal entity_load cache.
+ *
+ * @return array
+ *   An array of SearchApiRange objects keyed by machine name.
+ */
+function search_api_range_load_multiple($ids = array(), $conditions = array(), $reset = FALSE) {
+  return entity_load('search_api_range', $ids, $conditions, $reset);
+}
+
+/**
+ * Saves a range facet.
+ * If $range->delta is empty, it will be computed automatically. In this case,
+ * or if $range->is_new is set, the facet will be inserted. Otherwise, it will
+ * be updated.
+ *
+ * @param SearchApiRange $range
+ *   The range facet object to save.
+ */
+function search_api_range_save(SearchApiRange $range) {
+  $range->save();
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function search_api_ranges_block_save($delta = '', array $edit = array()) {
+  $range = $edit['range'];
+  $options = $range->options;
+  foreach ($options as $key => $value) {
+    if (isset($edit[$key])) {
+      $options[$key] = $edit[$key];
+    }
+  }
+  // We refresh the options each time the form is saved. Similar behaviour exists for modules, menus, blocks and themes, so – why not?
+  if (empty($options['type']) || $options['type'] == 'options') {
+    _search_api_ranges_refresh_type($range, $options);
+  }
+  if ($options != $range->options) {
+    $range->options = $options;
+    $range->save();
+  }
+}
+
+/**
+ * Deletes range facets according to a set of conditions.
+ *
+ * @param $conditions
+ *   An array of conditions, analogous to search_api_range_load_multiple().
+ * @param $reset
+ *   Whether to reset the internal cache.
+ *
+ * @return
+ *   TRUE, if any range facets were successfully deleted, FALSE otherwise.
+ */
+function search_api_range_delete_multiple(array $conditions = array(), $reset = FALSE) {
+  $ids = array_keys(search_api_range_load_multiple(FALSE, $conditions, $reset));
+  if (!$ids) {
+    return FALSE;
+  }
+  entity_delete_multiple('search_api_range', $ids);
+  return TRUE;
+}
+
+/**
+ * Refresh the type information in the given options array.
+ *
+ * @param stdClass $range
+ *   The range whose type information should be refreshed.
+ * @param array $options
+ *   An array for which 'type' and, if applicable, 'options' will be set.
+ */
+function _search_api_ranges_refresh_type(SearchApiRange $range, array &$options) {
+  $index = search_api_index_load($range->index_id);
+  $type = $index->options['fields'][$range->field]['type'];
+  $options['type'] = search_api_extract_inner_type($type);
+  $wrapper = $index->entityWrapper();
+  foreach (explode(':', $range->field) as $part) {
+    if (!isset($wrapper->$part)) {
+      $wrapper = NULL;
+      return;
+    }
+    $wrapper = $wrapper->$part;
+    $wrapper_info = $wrapper->info();
+    $level = search_api_list_nesting_level($wrapper_info['type']);
+    for ($i = 0; $i < $level; ++$i) {
+      $wrapper = $wrapper[0];
+    }
+  }
+  if ($wrapper->optionsList('view')) {
+    $options['type'] = 'options';
+    $options['options'] = $wrapper->optionsList('view');
+  }
+}
+
+/**
+ * Compares two object by their "iname" properties.
+ */
+function _search_api_ranges_compare_iname(stdClass $term1, stdClass $term2) {
+  return strcmp($term1->iname, $term2->iname);
+}

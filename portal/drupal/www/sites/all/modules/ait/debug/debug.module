@@ -1,0 +1,154 @@
+<?php
+
+/**
+ * 
+ * implements hook_watchdog ...
+ * @param unknown_type $log_entry
+ */
+
+
+function debug_menu() {
+
+  $items['debug_call_menu_rebuild'] = array(
+    'title' => 'debug: rebuild menu',
+    'page callback' => 'debug_call_menu_rebuild',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+function debug_call_menu_rebuild() {
+
+  menu_rebuild();
+}
+
+
+function debug_watchdog(array $log_entry) {
+
+  return;
+
+  debug_print_variable('WATCHDOG', $log_entry, true);
+}
+
+
+
+/**
+ * function for printing debug output desired
+ */
+
+function debug_print_variable($heading, $variable, $drupal_set_message = true) {
+  
+  //return;        // return if no debug output is desired
+  
+  if ($drupal_set_message) {
+    //drupal_set_message('DEBUG: ' . $heading . ':   <pre>' . var_export($variable, TRUE) . '</pre>');
+    
+    // Needs devel module:
+    dpm($variable, $heading);
+  }
+  else {
+    echo 'DEBUG: ' . $heading;
+    echo '<pre>';
+    echo var_export($variable, TRUE);
+    echo '</pre>';
+  }
+}
+
+
+
+/*
+function print_debug($function_name) {
+	drupal_set_message($function_name);
+}
+
+// Hooks
+
+function debug_username_alter(&$name, $account) {print_debug(__FUNCTION__);}
+function debug_user_cancel($edit, $account, $method) {print_debug(__FUNCTION__);}
+function debug_user_cancel_methods_alter(&$methods) {print_debug(__FUNCTION__);}
+function debug_user_categories() {print_debug(__FUNCTION__);}
+function debug_user_delete($account) {print_debug(__FUNCTION__);}
+function debug_user_insert(&$edit, $account, $category) {print_debug(__FUNCTION__);}
+function debug_user_load($users) {print_debug(__FUNCTION__);}
+function debug_user_login(&$edit, $account) {print_debug(__FUNCTION__);}
+function debug_user_logout($account) {print_debug(__FUNCTION__);}
+function debug_user_operations() {print_debug(__FUNCTION__);}
+function debug_user_presave(&$edit, $account, $category) {print_debug(__FUNCTION__);}
+function debug_user_role_delete($role) {print_debug(__FUNCTION__);}
+function debug_user_role_insert($role) {print_debug(__FUNCTION__);}
+function debug_user_role_update($role) {print_debug(__FUNCTION__);}
+function debug_user_update(&$edit, $account, $category) {print_debug(__FUNCTION__);}
+function debug_user_view($account, $view_mode, $langcode) {print_debug(__FUNCTION__);}
+function debug_user_view_alter(&$build) {print_debug(__FUNCTION__);}
+*/
+
+/*
+function debug_access($op, $node, $account) 									{print_debug(__FUNCTION__);}
+function debug_actions_delete() 												{print_debug(__FUNCTION__);}
+function debug_aut() 															{print_debug(__FUNCTION__);}
+function debug_block($op='list', $delta=0, $edit=array()) {print_debug(__FUNCTION__);}
+function debug_boot() {print_debug(__FUNCTION__);}
+function debug_commen() {print_debug(__FUNCTION__);}
+function debug_cro() {print_debug(__FUNCTION__);}
+function debug_db_rewrite_sql($query, $primary_table, $primary_field, $args) {print_debug(__FUNCTION__);}
+function debug_delet() {print_debug(__FUNCTION__);}
+function debug_disable() {print_debug(__FUNCTION__);}
+function debug_element() {print_debug(__FUNCTION__);}
+function debug_enable() {print_debug(__FUNCTION__);}
+function debug_exit($destination=NULL) {print_debug(__FUNCTION__);}
+function debug_file_download($file) {print_debug(__FUNCTION__);}
+function debug_filter($op, $delta=0, $format=-1, $text='') {print_debug(__FUNCTION__);}
+function debug_filter_tips($delta, $format, $long=false) {print_debug(__FUNCTION__);}
+function debug_flush_caches() {print_debug(__FUNCTION__);}
+function debug_footer($main=0) {print_debug(__FUNCTION__);}
+function debug_form(&$node,&$param) {print_debug(__FUNCTION__);}
+function debug_forms() {print_debug(__FUNCTION__);}
+function debug_form_alter(&$form,$form_state,$form_id) {print_debug(__FUNCTION__);}
+function debug_help($path, $arg) {print_debug(__FUNCTION__);}
+function debug_inf() {print_debug(__FUNCTION__);}
+function debug_ini() {print_debug(__FUNCTION__);}
+function debug_insert($node) {print_debug(__FUNCTION__);}
+function debug_instal() {print_debug(__FUNCTION__);}
+function debug_link($type, $object, $teaser=FALSE) {print_debug(__FUNCTION__);}
+function debug_link_alter(&$links, $node) {print_debug(__FUNCTION__);}
+function debug_load($node) {print_debug(__FUNCTION__);}
+function debug_mail($key, &$message, $params) {print_debug(__FUNCTION__);}
+function debug_mail_alter(&$message) {print_debug(__FUNCTION__);}
+function debug_men() {print_debug(__FUNCTION__);}
+function debug_menu_alter(&$callbacks) {print_debug(__FUNCTION__);}
+function debug_menu_link_alter(&$item, $menu) {print_debug(__FUNCTION__);}
+function debug_nodeapi(&$node, $op, $a3=NULL, $a4=NULL) {print_debug(__FUNCTION__);}
+function debug_node_grants($account, $op) {print_debug(__FUNCTION__);}
+function debug_node_inf() {print_debug(__FUNCTION__);}
+function debug_node_operations() {print_debug(__FUNCTION__);}
+function debug_node_type($op, $info) {print_debug(__FUNCTION__);}
+function debug_per() {print_debug(__FUNCTION__);}
+function debug_ping($name='', $url='') {print_debug(__FUNCTION__);}
+function debug_prepare(&$node) {print_debug(__FUNCTION__);}
+function debug_profile_alter(&$fields, $account) {print_debug(__FUNCTION__);}
+function debug_requirements($phase) {print_debug(__FUNCTION__);}
+function debug_schema() {print_debug(__FUNCTION__);}
+function debug_search($op='search', $keys=null) {print_debug(__FUNCTION__);}
+function debug_search_item($item) {print_debug(__FUNCTION__);}
+function debug_search_preprocess($text) {print_debug(__FUNCTION__);}
+function debug_submit(&$node) {print_debug(__FUNCTION__);}
+function debug_setting() {print_debug(__FUNCTION__);}
+function debug_system_info_alter() {print_debug(__FUNCTION__);}
+function debug_taxonomy($op, $type, $array=NULL) {print_debug(__FUNCTION__);}
+function debug_term_path() {print_debug(__FUNCTION__);}
+function debug_theme() {print_debug(__FUNCTION__);}
+function debug_theme_registry_alter() {print_debug(__FUNCTION__);}
+function debug_translated_menu_link_alter() {print_debug(__FUNCTION__);}
+function debug_uninstall() {print_debug(__FUNCTION__);}
+function debug_update($node) {print_debug(__FUNCTION__);}
+function debug_update_inde() {print_debug(__FUNCTION__);}
+function debug_update_() {print_debug(__FUNCTION__);}
+function debug_user($op,&$edit,&$account, $category= ULL) {print_debug(__FUNCTION__);}
+function debug_user_operations() {print_debug(__FUNCTION__);}
+function debug_validate($node) {print_debug(__FUNCTION__);}
+function debug_view($node, $teaser=FALSE, $page=FALSE) {print_debug(__FUNCTION__);}
+function debug_watchdog($log_msg) {print_debug(__FUNCTION__);}
+function debug_xmlrpc() {print_debug(__FUNCTION__);}
+*/

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets EXT_VERSION="1.1"
+  LABEL="External ID: .aip, Collection: AIT111 Development, ID: 10706/a0jh9w2h"
+  OBJID="BHLE10706:a0jh9w2h"
+  PROFILE="http://www.bhl-europe.eu/profiles/bhle-mets-profile-1.0"
+  TYPE="FedoraObject" xmlns="http://www.loc.gov/METS/"
+  xmlns:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+  xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metsHdr RECORDSTATUS="A">
+    <agent ROLE="IPOWNER" TYPE="ORGANIZATION">
+      <name>AIT111 Development</name>
+      <note>BHL-Europe Content Provider</note>
+    </agent>
+  </metsHdr>
+  <dmdSecFedora ID="derivative-3">
+    <descMD ID="DESC.0">
+      <mdWrap LABEL="derivative" MDTYPE="OTHER">
+        <xmlData>
+          <bhl>
+            <bhlElement>
+              <bibliographicInformation>
+                <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:title>Contributions to the Bryoflora of Greece, I. The Bryophytes of the Cave Perama near Joannina</mods:title>
+                </mods:titleInfo>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>Rajczy, M.</mods:namePart>
+                </mods:name>
+                <mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:namePart>P. Komáromy, Zs.</mods:namePart>
+                  <mods:role>
+                    <mods:roleTerm>edt</mods:roleTerm>
+                  </mods:role>
+                </mods:name>
+                <mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+                <mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:place>
+                    <mods:placeTerm>hu</mods:placeTerm>
+                  </mods:place>
+                  <mods:place>
+                    <mods:placeTerm>Budapest</mods:placeTerm>
+                  </mods:place>
+                  <mods:publisher>Népművelési Propaganda Iroda</mods:publisher>
+                  <mods:dateIssued>1979</mods:dateIssued>
+                  <mods:issuance>monographic</mods:issuance>
+                  <mods:frequency/>
+                </mods:originInfo>
+                <mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:form>print</mods:form>
+                  <mods:internetMediaType>application/pdf</mods:internetMediaType>
+                  <mods:extent>p. 3-5</mods:extent>
+                </mods:physicalDescription>
+                <mods:abstract xmlns:mods="http://www.loc.gov/mods/v3">This paper deals with the Bryophytes collected by the author in 1976 in Cave Perama (Epirus, near Joannina), and at its upper entrance. 7 Musci are reported from the cave and 2 Hepatics and 14 Musci from its upper entrance.</mods:abstract>
+                <mods:identifier xmlns:mods="http://www.loc.gov/mods/v3">0301-7001</mods:identifier>
+                <mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+                  <mods:recordCreationDate>110405</mods:recordCreationDate>
+                  <mods:recordChangeDate>20110405000000.0</mods:recordChangeDate>
+                  <mods:recordIdentifier>HNHM3030</mods:recordIdentifier>
+                  <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.68)</mods:recordOrigin>
+                </mods:recordInfo>
+              </bibliographicInformation>
+            </bhlElement>
+          </bhl>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <dmdSecFedora ID="DC">
+    <descMD ID="DC1.0">
+      <mdWrap LABEL="derivative-DC" MDTYPE="DC">
+        <xmlData>
+          <oai_dc:dcCollection
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+            <oai_dc:dc>
+              <dc:title>Contributions to the Bryoflora of Greece, I. The Bryophytes of the Cave Perama near Joannina</dc:title>
+              <dc:creator> 
+Rajczy, M. 
+</dc:creator>
+              <dc:creator>  
+P. Komáromy, Zs. 
+edt 
+</dc:creator>
+              <dc:type>text</dc:type>
+              <dc:publisher>Budapest : Népművelési Propaganda Iroda</dc:publisher>
+              <dc:date>1979.</dc:date>
+              <dc:language/>
+              <dc:format>application/pdf</dc:format>
+              <dc:description>This paper deals with the Bryophytes collected by the author in 1976 in Cave Perama (Epirus, near Joannina), and at its upper entrance. 7 Musci are reported from the cave and 2 Hepatics and 14 Musci from its upper entrance.</dc:description>
+              <dc:description>This paper deals with the Bryophytes collected by the author in 1976 in Cave Perama (Epirus, near Joannina), and at its upper entrance. 7 Musci are reported from the cave and 2 Hepatics and 14 Musci from its upper entrance.</dc:description>
+              <dc:identifier/>
+              <dc:relation>HNHM</dc:relation>
+            </oai_dc:dc>
+          </oai_dc:dcCollection>
+        </xmlData>
+      </mdWrap>
+    </descMD>
+  </dmdSecFedora>
+  <fileSec>
+    <fileGrp ID="DATASTREAMS">
+      <fileGrp ID="IMAGE.0">
+        <file CHECKSUM="ace851d7c7769140a5d4c238b64fa38f94b2259d"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.0.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3236116">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-1.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.1">
+        <file CHECKSUM="0f7472468ad75ec8670295e0710a9bf74bd13c64"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.1.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="3226552">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-2.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="IMAGE.2">
+        <file CHECKSUM="a7b247f4badd53f1e3a7ecef2b0a9067f4e5ad1f"
+          CHECKSUMTYPE="SHA-1" ID="IMAGE.2.FILE" MIMETYPE="image/tiff"
+          OWNERID="M" SIZE="1908850">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-3.tif"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="METADATA.3">
+        <file CHECKSUM="569986ed2818b8bb574ec2a170e42f5e7cc9da5e"
+          CHECKSUMTYPE="SHA-1" ID="METADATA.3.FILE"
+          MIMETYPE="application/xml" OWNERID="M" SIZE="2037">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/StudiaBotHung_1979_vol13_3.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.0">
+        <file ID="TAXA.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="1427">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-1.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.1">
+        <file ID="TAXA.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="1327">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-2.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="TAXA.2">
+        <file ID="TAXA.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="425">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-3.tif.taxa.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.0">
+        <file ID="OCR.0.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1935">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-1.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.1">
+        <file ID="OCR.1.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="2244">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-2.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="OCR.2">
+        <file ID="OCR.2.FILE" MIMETYPE="text/plain" OWNERID="M" SIZE="1087">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-3.tif.txt"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.0">
+        <file ID="JHOVE.0.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9170">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-1.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.1">
+        <file ID="JHOVE.1.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9170">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-2.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.2">
+        <file ID="JHOVE.2.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="9170">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3_pdf-3.tif.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="JHOVE.3">
+        <file ID="JHOVE.3.FILE" MIMETYPE="application/xml" OWNERID="M" SIZE="3883">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/StudiaBotHung_1979_vol13_3.xml.jhove.xml"/>
+        </file>
+      </fileGrp>
+      <fileGrp ID="NFO">
+        <file ID="NFO.FILE" MIMETYPE="application/rdf+xml" OWNERID="M" SIZE="10664">
+          <FLocat LOCTYPE="URL" xlink:href="http://test111.ait.co.at:8080/PreIngest/resources/user-ait111/HNHM/StudiaBotHung/1979_vol13/3/.aip/HNHM_StudiaBotHung_1979_vol13_3_.aip.nfo.rdf.xml"/>
+        </file>
+      </fileGrp>
+    </fileGrp>
+  </fileSec>
+</mets>
