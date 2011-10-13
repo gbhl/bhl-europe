@@ -15,7 +15,7 @@ function _apachesolr_search_browse_form($default_value) {
   }
   else {
     $description .= t('Remember to enable filters on the <a href="!filterslink">enabled filters page</a> and assign blocks to regions on the <a href="!blocklink">block settings page</a>', array(
-      '!filterslink' => url('admin/config/search/apachesolr/facets'),
+      '!filterslink' => url('admin/config/search/apachesolr/enabled-filters'),
       '!blocklink' => url('admin/structure/block'),
     ));
   }
@@ -23,10 +23,10 @@ function _apachesolr_search_browse_form($default_value) {
     '#type' => 'radios',
     '#title' => t('Behavior on empty search'),
     '#options' => array(
-      'none' => t("Show search box"),
-      'browse'  => t("Show enabled filters' blocks under the search box"),
-      'blocks'  => t("Show enabled filters' blocks in their configured regions"),
-      'results' => t("Show enabled filters' blocks in their configured regions and first page of all available results"),
+      'none'    => t("Show search box"),
+      'browse'  => t("Show search box and enabled filters' blocks under the search box"),
+      'blocks'  => t("Show search box and enabled filters' blocks in their configured regions"),
+      'results' => t("Show search box, enabled filters' blocks in their configured regions and first page of all available results"),
     ),
     '#default_value' => $default_value,
     '#description' => $description,
@@ -43,32 +43,28 @@ function apachesolr_search_page_list_page() {
   $header = array(
     'label' => array('data' => t('Name'), 'field' => 's.label'),
     'path' => array('data' => t('Path'), 'field' => 's.search_path'),
-    'environment' => array('data' => t('Search environment')),
+    'environment' => array('data' => t('Search environment'), 'field' => 'ser.env_name'),
     'operations' => array('data' => t('Operations'), 'colspan' => '2'),
   );
 
   // Initializes the search page query.
   $query = db_select('apachesolr_search_page', 's')
-    ->fields('s', array('label', 'page_id', 'page_title', 'env_id', 'description', 'search_path', 'settings'))
+    ->fields('s', array('label', 'page_id', 'page_title', 'description', 'search_path'))
     ->extend('PagerDefault')
     ->extend('TableSort')
     ->limit(20)
     ->orderByHeader($header);
 
-  $rows = array();
-  $rows['core_search'] = array();
+  $query->addField('ser', 'name', 'env_name');
 
+  // Joins on the environment table.
+  $query->leftJoin('apachesolr_environment', 'ser', 's.env_id = ser.env_id');
+
+  $rows = array();
   foreach ($query->execute() as $record) {
     $row = array();
 
-    $label = check_plain($record->label);
-    if ($record->page_id == 'core_search') {
-      $label .= ' ' . t('<em>(integrates with core <a href="!search_admin">Search module</a>)</em>', array('!search_admin' => url('admin/config/search/settings')));
-      // Special case - always uses the default environment.
-      $record->env_id = apachesolr_default_environment();
-    }
-
-    $row[] = $label;
+    $row[] = check_plain($record->label);
 
     $row[] = array(
       'data' => array(
@@ -78,32 +74,20 @@ function apachesolr_search_page_list_page() {
       ),
     );
 
-    $environment = apachesolr_environment_load($record->env_id);
-    $row[] = $environment ? check_plain($environment['name']) : check_plain(t('<Disabled>'));
+    $row[] = check_plain($record->env_name);
 
-    $settings = unserialize($record->settings);
     // Operations
     $row[] = array('data' => l(t('Edit'), 'admin/config/search/apachesolr/search-pages/' . $record->page_id . '/edit'));
-    if (!isset($settings['apachesolr_search_not_removable'])) {
-      $row[] = array('data' => l(t('Delete'), 'admin/config/search/apachesolr/search-pages/' . $record->page_id . '/delete'));
-    }
-    else {
-      $row[] = '';
-    }
+    $row[] = array('data' => l(t('Delete'), 'admin/config/search/apachesolr/search-pages/' . $record->page_id . '/delete'));
 
-    $rows[$record->page_id] = $row;
+    $rows[] = $row;
   }
 
   $build['list'] = array(
     '#theme' => 'table',
     '#header' => $header,
-    '#rows' => array_values($rows),
+    '#rows' => $rows,
     '#empty' => t('No available search pages.'),
-  );
-  $build['pager'] = array(
-    '#theme' => 'pager',
-    '#quantity' => 20,
-    '#weight' => 10,
   );
 
   return $build;
@@ -113,24 +97,8 @@ function apachesolr_search_page_list_page() {
  * Menu callback/form-builder for the form to create or edit a search page.
  */
 function apachesolr_search_page_settings_form($form, &$form_state, $search_page = NULL) {
-  $environments = apachesolr_load_all_environments();
-  $options = array('' => t('<Disabled>'));
-  foreach ($environments as $id => $environment) {
-    $options[$id] = $environment['name'];
-  }
-  // Validate the env_id.
-  if (!empty($search_page->env_id) && !apachesolr_environment_load($search_page->env_id)) {
-    $search_page->env_id = '';
-  }
 
   // Initializes form with common settings.
-
-
-  $form['search_page'] = array(
-      '#type' => 'value',
-      '#value' => $search_page,
-  );
-
   $form['label'] = array(
     '#type' => 'textfield',
     '#title' => t('Label'),
@@ -138,8 +106,8 @@ function apachesolr_search_page_settings_form($form, &$form_state, $search_page 
     '#required' => TRUE,
     '#size' => 30,
     '#maxlength' => 32,
+    '#weight' => -50,
     '#default_value' => !empty($search_page->label) ? $search_page->label : '',
-    '#description' => t('The human-readable name of the search page configuration.'),
   );
 
   $form['page_id'] = array(
@@ -151,47 +119,36 @@ function apachesolr_search_page_settings_form($form, &$form_state, $search_page 
       'source' => array('label'),
     ),
     '#description' => '',
+    '#weight' => -40,
     '#default_value' => !empty($search_page->page_id) ? $search_page->page_id : '',
     '#disabled' => !empty($search_page),
-    '#description' => t('A unique machine-readable identifier for the search page configuration. It must only contain lowercase letters, numbers, and underscores.'),
   );
 
-  $form['description_enable'] = array(
-    '#type' => 'checkbox',
+  $form['info']['description'] = array(
     '#title' => t('Description'),
-  );
-  $form['description'] = array(
     '#type' => 'textfield',
-    '#title' => t('Provide description'),
-    '#title_display' => 'invisible',
-    '#size' => 64,
+    '#required' => FALSE,
+    '#maxlength' => 255,
+    '#description' => '',
     '#default_value' => !empty($search_page->description) ? $search_page->description : '',
-    '#dependency' => array(
-      'edit-description-enable' => array(1),
-    ),
   );
 
-  $form['info'] = array(
-    '#title' => t('Search Page Information'),
-    '#type' => 'fieldset',
-    '#collapsible' => FALSE,
+  $form['info']['search_path'] = array(
+    '#title' => t('Path'),
+    '#type' => 'textfield',
+    '#required' => TRUE,
+    '#maxlength' => 255,
+    '#description' => t('For example: search/my-search-page. Search keywords will appear at the end of the path.'),
+    '#default_value' => !empty($search_page->search_path) ? $search_page->search_path : '',
   );
 
-  $core_search = $search_page->page_id == 'core_search';
-  if ($core_search) {
-    $description = t('This page always uses the current default search environment');
-  }
-  else {
-    $description = t('The environment that is used by this search page. If no environment is selected, this page will be disabled.');
-  }
-
-  $form['info']['env_id'] = array(
-    '#title' => t('Search environment'),
-    '#type' => 'select',
-    '#options' => $options,
-    '#default_value' => !empty($search_page->env_id) ? $search_page->env_id : '',
-    '#disabled' => $search_page->page_id == 'core_search',
-    '#description' => $description,
+  $form['info']['filters'] = array(
+    '#title' => t('Default filters'),
+    '#type' => 'textfield',
+    '#required' => FALSE,
+    '#maxlength' => 255,
+    '#description' => t('A comma-separated list of lucene filter queries to apply by default. E.g. "bundle:blog, is_uid:(1 OR 2 OR 3)"'),
+    '#default_value' => !empty($search_page->settings['fq'])  ? implode(', ', $search_page->settings['fq']) : '',
   );
 
   $form['info']['page_title'] = array(
@@ -203,104 +160,39 @@ function apachesolr_search_page_settings_form($form, &$form_state, $search_page 
     '#default_value' => !empty($search_page->page_title) ? $search_page->page_title : '',
   );
 
-  $search_types = apachesolr_load_all_search_types();
-  $options = array('custom' => t('Custom Field'));
-  foreach ($search_types as $id => $search_type) {
-    $options[$id] = $search_type['name'];
+  // Sets the descriptions and button text.
+  $form['label']['#description'] = t('The human-readable name of the search page configuration.');
+  $form['page_id']['#description'] = t('A unique machine-readable identifier for the search page configuration. It must only contain lowercase letters, numbers, and underscores.');
+  $form['info']['description']['#description'] = t('The description of the search page configuration.');
+
+  $id = variable_get('apachesolr_default_environment', 'solr');
+  $environments = apachesolr_load_all_environments();
+
+  $options = array('' => t('<Disabled>'));
+  foreach ($environments as $id => $environment) {
+    $options[$id] = $environment['name'];
+  }
+  // Validate the env_id.
+  if (!empty($search_page->env_id) && !apachesolr_environment_load($search_page->env_id)) {
+    $search_page->env_id = '';
   }
 
-  $form['info']['search_type'] = array(
-    '#title' => t('Search Type'),
+  $form['info']['env_id'] = array(
+    '#title' => t('Search environment'),
     '#type' => 'select',
     '#options' => $options,
-    '#default_value' => !empty($search_page->settings['apachesolr_search_search_type']) ? $search_page->settings['apachesolr_search_search_type'] : '',
-    '#access' => !$core_search,
-    '#description' => t('Use this only when filtering on a value from the search path.
-      For example, select Taxonomy Term to filter on a term ID (search/taxonomy/%).'),
-    '#ajax' => array(
-      'callback' => 'apachesolr_search_ajax_search_page_default',
-      'wrapper' => 'dynamic-search-page',
-      'method' => 'replace',
-    ),
-  );
-
-  // Token element validate is added to validate the specific
-  // tokens that are allowed
-  $form['info']['search_path'] = array(
-    '#title' => t('Path'),
-    '#type' => 'textfield',
-    '#required' => TRUE,
-    '#maxlength' => 255,
-    '#description' => t('For example: search/my-search-page. Search keywords will appear at the end of the path.'),
-    '#default_value' => !empty($search_page->search_path) ? $search_page->search_path : '',
-  );
-  if (!$core_search) {
-    $form['info']['search_path']['#description'] .= ' ' . t('You can use one % to make the search page dynamic.');
-  }
-
-  $form['info']['custom_filter_enable'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Custom Filter'),
-  );
-  $form['info']['filters'] = array(
-    '#title' => t('Custom filters'),
-    '#type' => 'textfield',
-    '#required' => FALSE,
-    '#maxlength' => 255,
-    '#description' => t('A comma-separated list of lucene filter queries to apply by default.'),
-    '#default_value' => !empty($search_page->settings['fq'])  ? implode(', ', $search_page->settings['fq']) : '',
-    '#dependency' => array(
-      'edit-custom-filter-enable' => array(1),
-      'edit-search-type' => array('custom'),
-    ),
-  );
-  if (!$core_search) {
-    $form['info']['filters']['#description'] .= ' ' . t('E.g. "bundle:blog, is_uid:(1 OR 2 OR %). % will be replaced by the value of % in the path"');
-  }
-
-  $form['advanced'] = array(
-    '#title' => t('Advanced Search Page Options'),
-    '#type' => 'fieldset',
-    '#collapsible' => TRUE,
-    '#collapsed' => TRUE,
-  );
-
-  // Results per page per search page
-  $default_value = isset($search_page->settings['apachesolr_search_per_page']) ? $search_page->settings['apachesolr_search_per_page'] : '10';
-  $form['advanced']['apachesolr_search_per_page'] = array(
-    '#type' => 'select',
-    '#title' => t('Results per page'),
-    '#description' => t('Select how many items will be displayed on one page of the search result.'),
-    '#options' => drupal_map_assoc(array(5, 10, 20, 30, 40, 50, 60, 80, 100)),
-    '#default_value' => $default_value,
-  );
-
-  // Enable/disable spellcheck on pages
-  $default_value = isset($search_page->settings['apachesolr_search_spellcheck']) ? $search_page->settings['apachesolr_search_spellcheck'] : TRUE;
-  $form['advanced']['apachesolr_search_spellcheck'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Enable spell check'),
-    '#description' => t('Display "Did you mean … ?" above search results.'),
-    '#default_value' => $default_value,
-  );
-
-  // Enable/disable search form on search page (replaced by a block perhaps)
-  $default_value = isset($search_page->settings['apachesolr_search_search_box']) ? $search_page->settings['apachesolr_search_search_box'] : TRUE;
-  $form['advanced']['apachesolr_search_search_box'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Enable the search box on the page'),
-    '#description' => t('Display a search box on the page.'),
-    '#access' => !$core_search,
-    '#default_value' => $default_value,
+    '#default_value' => !empty($search_page->env_id) ? $search_page->env_id : '',
+    '#description' => t('The environment that is used by this search page. If no environment is selected, this page will be disabled.'),
+    '#weight' => -30,
   );
 
   // Use the main search page setting as the default for new pages.
-  $default_value = isset($search_page->settings['apachesolr_search_browse']) ? $search_page->settings['apachesolr_search_browse'] : 'browse';
-  $form['advanced']['apachesolr_search_browse'] = _apachesolr_search_browse_form($default_value);
+  $default_value = isset($search_page->settings['apachesolr_search_browse']) ? $search_page->settings['apachesolr_search_browse'] : variable_get('apachesolr_search_browse', 'browse');
+  $form['info']['apachesolr_search_browse'] = _apachesolr_search_browse_form($default_value);
 
-  // Button for the corresponding actions
   $form['actions'] = array(
     '#type' => 'actions',
+    '#weight' => 20,
   );
 
   $form['actions']['submit'] = array(
@@ -319,35 +211,6 @@ function apachesolr_search_page_settings_form($form, &$form_state, $search_page 
   return $form;
 }
 
-/**
- * Callback element needs only select the portion of the form to be updated.
- * Since #ajax['callback'] return can be HTML or a renderable array (or an
- * array of commands), we can just return a piece of the form.
- */
-function apachesolr_search_ajax_search_page_default($form, $form_state, $search_page = NULL) {
-
-  $search_page = $form_state['values']['search_page'];
-  $search_types = apachesolr_load_all_search_types();
-
-  // Helping with sensible defaults for the search path
-  $default_search_path = '';
-
-  if (!empty($form_state['values']['search_type']) && $form_state['values']['search_type'] != 'custom') {
-    $default_search_path = $search_types[$form_state['values']['search_type']]['default menu'];
-    $form['setup']['search_path']['#value'] = $default_search_path;
-  }
-
-  // Helping with sensible defaults for the search title
-  $default_search_title = '';
-
-  if (!empty($form_state['values']['page_title']) && $form_state['values']['search_type'] != 'custom') {
-    $default_search_title_callback = $search_types[$form_state['values']['search_type']]['title callback'];
-    $default_search_title = $default_search_title_callback();
-    $form['setup']['page_title']['#value'] = $default_search_title;
-  }
-  return $form['setup'];
-}
-
 function apachesolr_search_page_settings_form_validate($form, &$form_state) {
   // Performs basic validation of the menu path.
   if (url_is_external($form_state['values']['search_path'])) {
@@ -357,14 +220,6 @@ function apachesolr_search_page_settings_form_validate($form, &$form_state) {
   if (empty($form_state['values']['search_path'])) {
     form_set_error('search_path', t('Path required.'));
   }
-  if ($form_state['values']['page_id'] == 'core_search') {
-    if (!preg_match('@^search/[^/%]+$@', $form_state['values']['search_path'])) {
-      form_set_error('search_path', t('The core Search page path must start with search/ and only have one /'));
-    }
-  }
-  elseif (count(explode('%', $form_state['values']['search_path'])) > 2) {
-    form_set_error('search_path', t('Only one % placeholder is allowed.'));
-  }
 }
 
 /**
@@ -372,7 +227,6 @@ function apachesolr_search_page_settings_form_validate($form, &$form_state) {
  */
 function apachesolr_search_page_settings_form_submit($form, &$form_state) {
   $settings = array();
-  $settings['fq'] = array();
   if ($form_state['values']['filters']) {
     foreach(explode(',', $form_state['values']['filters']) as $string) {
       $string = trim($string);
@@ -382,28 +236,25 @@ function apachesolr_search_page_settings_form_submit($form, &$form_state) {
       }
     }
   }
-  $settings['apachesolr_search_search_type'] = $form_state['values']['search_type'];
-  $settings['apachesolr_search_search_box'] = $form_state['values']['apachesolr_search_search_box'];
-  $settings['apachesolr_search_per_page'] = $form_state['values']['apachesolr_search_per_page'];
+
   $settings['apachesolr_search_browse'] = $form_state['values']['apachesolr_search_browse'];
-  $settings['apachesolr_search_spellcheck'] = $form_state['values']['apachesolr_search_spellcheck'];
 
-  if (isset($form_state['values']['search_page']->settings)) {
-    $settings = array_merge($form_state['values']['search_page']->settings, $settings);
-  }
-
-  $search_page = new stdClass();
-  $search_page->page_id = $form_state['values']['page_id'];
-  $search_page->label = $form_state['values']['label'];
-  $search_page->description = $form_state['values']['description'];
-  $search_page->env_id = $form_state['values']['env_id'];
-  $search_page->search_path = $form_state['values']['search_path'];
-  $search_page->page_title = $form_state['values']['page_title'];
-  $search_page->settings = $settings;
-  apachesolr_search_page_save($search_page);
+  db_merge('apachesolr_search_page')
+    ->key(array('page_id' => $form_state['values']['page_id']))
+    ->fields(array(
+      'label' => $form_state['values']['label'],
+      'page_id' => $form_state['values']['page_id'],
+      'description' => $form_state['values']['description'],
+      'env_id' => $form_state['values']['env_id'],
+      'search_path' => $form_state['values']['search_path'],
+      'page_title' => $form_state['values']['page_title'],
+      'settings' => serialize($settings),
+    ))
+    ->execute();
 
   // Saves our values in the database, sets redirect path on success.
   drupal_set_message(t('The configuration options have been saved for %page.', array('%page' => $form_state['values']['label'])));
+
   $form_state['redirect'] = 'admin/config/search/apachesolr/search-pages';
 
   // Menu rebuild needed to pick up search path.
@@ -436,14 +287,8 @@ function apachesolr_search_delete_search_page_confirm($form, &$form_state, $sear
 
   // Finalizes and returns the confirmation form.
   $return_path = 'admin/config/search/apachesolr/search-pages';
-  $button_text = t('Delete page');
-  if (!isset($search_page->settings['apachesolr_search_not_removable'])) {
-    return confirm_form($form, $message, $return_path, $caption, $button_text);
-  }
-  else {
-    // Maybe this should be solved somehow else
-    drupal_access_denied();
-  }
+  $button_text = t('Delete configuration');
+  return confirm_form($form, $message, $return_path, $caption, $button_text);
 }
 
 /**

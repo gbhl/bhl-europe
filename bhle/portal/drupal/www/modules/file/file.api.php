@@ -1,4 +1,5 @@
 <?php
+// $Id: file.api.php,v 1.1 2010/08/23 14:53:50 webchick Exp $
 
 /**
  * @file
@@ -41,7 +42,7 @@ function hook_file_download_access($field, $entity_type, $entity) {
  *
  * @see hook_file_download_access().
  *
- * @param $grants
+ * @param &$grants
  *   An array of grants gathered by hook_file_download_access(). The array is
  *   keyed by the module that defines the entity type's access control; the
  *   values are Boolean grant responses for each module.

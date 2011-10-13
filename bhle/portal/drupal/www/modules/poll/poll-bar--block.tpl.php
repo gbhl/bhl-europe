@@ -1,4 +1,5 @@
 <?php
+// $Id: poll-bar--block.tpl.php,v 1.1 2010/01/13 06:07:27 webchick Exp $
 
 /**
  * @file

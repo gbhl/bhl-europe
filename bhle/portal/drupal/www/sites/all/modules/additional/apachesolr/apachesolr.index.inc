@@ -76,7 +76,7 @@ function apachesolr_node_to_document($node, $namespace) {
     }
     $document->ds_created = apachesolr_date_iso($node->created);
     $document->ds_changed = apachesolr_date_iso($node->changed);
-    if (isset($node->last_comment_timestamp) && !empty($node->comment_count)) {
+    if (isset($node->last_comment_timestamp)) {
       $document->ds_last_comment_timestamp = apachesolr_date_iso($node->last_comment_timestamp);
       $document->ds_last_comment_or_change = apachesolr_date_iso(max($node->last_comment_timestamp, $node->changed));
     }
@@ -93,7 +93,7 @@ function apachesolr_node_to_document($node, $namespace) {
       if (isset($node->{$field_name})) {
         // Got a field.
         $function = $field_info['indexing_callback'];
-        if ($function && is_callable($function)) {
+        if ($function && function_exists($function)) {
           // NOTE: This function should always return an array.  One
           // node field may be indexed to multiple Solr fields.
           $fields = $function($node, $field_name, $index_key, $field_info);
@@ -230,121 +230,21 @@ function apachesolr_vocab_name($vid) {
 /**
  * Callback that converts list module field into an array
  */
-function apachesolr_fields_default_indexing_callback($entity, $field_name, $index_key, $field_info) {
+function apachesolr_fields_list_indexing_callback($entity, $field_name, $index_key, $field_info) {
   $fields = array();
   if (!empty($entity->{$field_name})) {
     $field = $entity->$field_name;
     list($lang, $values) = each($field);
-    switch ($field_info['index_type']) {
-      case 'integer':
-      case 'half-int':
-      case 'sint':
-      case 'tint':
-      case 'thalf-int':
-      case 'boolean':
-        $function = 'intval';
-        break;
-      case 'float':
-      case 'double':
-      case 'sfloat':
-      case 'sdouble':
-      case 'tfloat':
-      case 'tdouble':
-        $function = 'apachesolr_floatval';
-        break;
-      default:
-        $function = 'apachesolr_clean_text';
-    }
     foreach ($values as $fval) {
       $fields[] = array(
         'key' => $index_key,
-        'value' => $function($fval['value']),
+        'value' => apachesolr_clean_text($fval['value']),
       );
     }
   }
   return $fields;
 }
 
-/**
- * This function is used during indexing to normalize the DATE and DATETIME
- * fields into the appropriate format for Apache Solr.
- */
-function apachesolr_date_default_indexing_callback($entity, $field_name, $index_key, $field_info) {
-  $fields = array();
-  if (!empty($entity->{$field_name})) {
-    $field = $entity->$field_name;
-    list($lang, $values) = each($field);
-    // Construct a Solr-ready date string in UTC time zone based on the field's date string and time zone.
-    $tz = new DateTimeZone(isset($field['timezone']) ? $field['timezone'] : 'UTC');
-
-    // $fields may end up having two values; one for the start date
-    // and one for the end date.
-    foreach ($values as $value) {
-      if ($date = date_create($value['value'], $tz)) {
-        $index_value = apachesolr_date_iso($date->format('U'));
-        $fields[] = array(
-          'key' => $index_key,
-          'value' => $index_value,
-        );
-      }
-
-      if (isset($value['value2'])) {
-        if ($date = date_create($value['value2'], $tz)) {
-          $index_value = apachesolr_date_iso($date->format('U'));
-          $fields[] = array(
-            // The value2 element is the end date. Therefore it gets indexed
-            // into its own Solr field.
-            'key' => $index_key . '_end',
-            'value' => $index_value,
-          );
-        }
-      }
-    }
-  }
-  return $fields;
-}
-
-/**
- * This function is used during indexing to normalize the DATESTAMP fields
- * into the appropriate format for Apache Solr.
- */
-function apachesolr_datestamp_default_indexing_callback($entity, $field_name, $index_key, $field_info) {
-  $fields = array();
-  if (!empty($entity->{$field_name})) {
-    // $fields may end up having two values; one for the start date
-    // and one for the end date.
-    $field = $entity->$field_name;
-    list($lang, $values) = each($field);
-
-    foreach ($values as $value) {
-      if (isset($value['value']) && $value['value'] != 0) {
-        $index_value = apachesolr_date_iso($value['value']);
-        $fields[] = array(
-          'key' => $index_key,
-          'value' => $index_value,
-        );
-      }
-      if (isset($value['value2']) && $value['value'] != 0) {
-        $index_value = apachesolr_date_iso($value['value2']);
-        $fields[] = array(
-          // The value2 element is the end date. Therefore it gets indexed
-          // into its own Solr field.
-          'key' => $index_key . '_end',
-          'value' => $index_value,
-        );
-      }
-    }
-  }
-  return $fields;
-}
-
-function apachesolr_floatval($value) {
-  return sprintf('%0.20f', $value);
-}
-
-/**
- *  @see http://drupal.org/node/1059372
- */
 function apachesolr_cck_nodereference_indexing_callback($node, $field_name, $index_key, $cck_info) {
   $fields = array();
   if (!empty($node->{$field_name})) {
@@ -361,9 +261,6 @@ function apachesolr_cck_nodereference_indexing_callback($node, $field_name, $ind
   return $fields;
 }
 
-/**
- *  @see http://drupal.org/node/1059372
- */
 function apachesolr_cck_userreference_indexing_callback($node, $field_name, $index_key, $cck_info) {
   $fields = array();
   if (!empty($node->$field_name)) {
@@ -423,19 +320,31 @@ function apachesolr_add_tags_to_document($document, $text) {
 
 /**
  * hook_cron() helper to try to make {apachesolr_search_node} consistent with {node}.
+ * TODO: this function is never used
  */
 function apachesolr_cron_check_node_table() {
   // Check for unpublished content that wasn't deleted from the index.
   $query = db_select('apachesolr_search_node', 'asn')
     ->fields('n', array('nid', 'status'))
-    ->where('asn.status <> n.status');
+    ->condition('asn.status', 'n.status', '<>');
   $query->innerJoin('node', 'n', 'n.nid = asn.nid');
-  $nodes = $query->execute()->fetchAllAssoc('nid');
+  $result = $query->execute();
 
+  $node_lists = array();
+  $nodes = array();
   // Update or delete at most this many in each Solr query.
   $limit = variable_get('apachesolr_cron_mass_limit', 500);
-  $node_lists = array_chunk($nodes, $limit, TRUE);
-
+  foreach ($result as $node) {
+    $nodes[$node->nid] = $node;
+    if (count($nodes) == $limit) {
+      $node_lists[] = $nodes;
+      $nodes = array();
+    }
+  }
+  // Any remaning ones if the limit is not reached.
+  if (count($nodes)) {
+    $node_lists[] = $nodes;
+  }
   foreach ($node_lists as $nodes) {
     watchdog('Apache Solr', 'On cron running apachesolr_nodeapi_mass_update() on nids @nids', array('@nids' => implode(',', array_keys($nodes))), WATCHDOG_WARNING);
     if (!apachesolr_nodeapi_mass_update($nodes)) {
@@ -448,9 +357,21 @@ function apachesolr_cron_check_node_table() {
     ->fields('asn', array('nid'))
     ->isNull('n.nid');
   $query->leftJoin('node', 'n', 'n.nid = asn.nid');
-  $nodes = $query->execute()->fetchAllAssoc('nid');
-  $node_lists = array_chunk($nodes, $limit, TRUE);
+  $result = $query->execute();
 
+  $node_lists = array();
+  $nodes = array();
+  foreach ($result as $node) {
+    $nodes[$node->nid] = $node;
+    if (count($nodes) == $limit) {
+      $node_lists[] = $nodes;
+      $nodes = array();
+    }
+  }
+  // Any remaning ones if the limit is not reached.
+  if (count($nodes)) {
+    $node_lists[] = $nodes;
+  }
   foreach ($node_lists as $nodes) {
     watchdog('Apache Solr', 'On cron running apachesolr_nodeapi_mass_delete() on nids @nids', array('@nids' => implode(',', array_keys($nodes))), WATCHDOG_WARNING);
     if (!apachesolr_nodeapi_mass_delete($nodes)) {
@@ -465,7 +386,7 @@ function apachesolr_nodeapi_mass_update($nodes) {
     return TRUE;
   }
 
-  if (apachesolr_environment_variable_get(apachesolr_default_environment(), 'apachesolr_read_only', APACHESOLR_READ_WRITE) == APACHESOLR_READ_ONLY) {
+  if (apachesolr_server_variable_get(apachesolr_default_server(), 'apachesolr_read_only', APACHESOLR_READ_WRITE) == APACHESOLR_READ_ONLY) {
     return TRUE;
   }
 
@@ -504,7 +425,7 @@ function apachesolr_nodeapi_mass_delete($nodes) {
     return TRUE;
   }
 
-  if (apachesolr_environment_variable_get(apachesolr_default_environment(), 'apachesolr_read_only', APACHESOLR_READ_WRITE) == APACHESOLR_READ_ONLY) {
+  if (apachesolr_server_variable_get(apachesolr_default_server(), 'apachesolr_read_only', APACHESOLR_READ_WRITE) == APACHESOLR_READ_ONLY) {
     return TRUE;
   }
 

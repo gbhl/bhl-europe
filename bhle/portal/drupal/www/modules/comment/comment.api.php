@@ -1,4 +1,5 @@
 <?php
+// $Id: comment.api.php,v 1.18 2010/10/23 15:30:34 webchick Exp $
 
 /**
  * @file

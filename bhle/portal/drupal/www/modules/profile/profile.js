@@ -1,3 +1,4 @@
+// $Id: profile.js,v 1.8 2010/01/30 07:59:25 dries Exp $
 (function ($) {
 
 /**

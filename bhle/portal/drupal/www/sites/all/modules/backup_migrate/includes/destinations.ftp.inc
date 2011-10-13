@@ -1,4 +1,5 @@
 <?php
+// $Id: destinations.ftp.inc,v 1.2.2.3 2010/12/07 06:22:59 ronan Exp $
 
 
 /**
@@ -18,7 +19,7 @@ class backup_migrate_destination_ftp extends backup_migrate_destination_remote {
   /**
    * Save to the ftp destination.
    */
-  function _save_file($file, $settings) {
+  function save_file($file, $settings) {
     $ftp = $this->ftp_object();
     if (drupal_ftp_file_to_ftp($file->filepath(), $file->filename(), '.', $ftp)) {
       return $file;
@@ -42,12 +43,12 @@ class backup_migrate_destination_ftp extends backup_migrate_destination_remote {
   /**
    * Delete from the ftp destination.
    */
-  function _delete_file($file_id) {
+  function delete_file($file_id) {
     $this->ftp_object();
     drupal_ftp_delete_file($file_id, $this->ftp);
   }
 
-  function _list_files() {
+  function list_files() {
     backup_migrate_include('files');
     $files = array();
     $this->ftp_object();

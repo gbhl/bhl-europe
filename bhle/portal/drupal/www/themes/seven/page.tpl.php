@@ -1,4 +1,5 @@
 <?php
+// $Id: page.tpl.php,v 1.15 2010/11/20 04:03:51 webchick Exp $
 ?>
   <div id="branding" class="clearfix">
     <?php print $breadcrumb; ?>
@@ -11,9 +12,7 @@
   </div>
 
   <div id="page">
-    <?php if ($secondary_local_tasks): ?>
-      <div class="tabs-secondary clearfix"><ul class="tabs secondary"><?php print render($secondary_local_tasks); ?></ul></div>
-    <?php endif; ?>
+    <?php print render($secondary_local_tasks); ?>
 
     <div id="content" class="clearfix">
       <div class="element-invisible"><a id="main-content"></a></div>

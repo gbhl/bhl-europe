@@ -1,4 +1,5 @@
 <?php
+// $Id: devel.module,v 1.472 2011/01/04 19:47:31 weitzman Exp $
 
 // This module holds functions useful for Drupal development.
 // Please contribute!
@@ -32,25 +33,10 @@ function devel_help($section) {
 }
 
 /**
- * Implements hook_modules_installed().
- *
- * @see devel_install()
- */
-function devel_modules_installed($modules) {
-  if (in_array('menu', $modules)) {
-    $menu = array(
-      'menu_name' => 'devel',
-      'title' => t('Development'),
-      'description' => t('Development link'),
-    );
-    menu_save($menu);
-  }
-}
-
-/**
- * Implements hook_menu().
+ * Implementationation of hook_menu().
  */
 function devel_menu() {
+  $items = array();
   // Note: we can't dynamically append destination to querystring. Do so at theme layer. Fix in D7?
   $items['devel/cache/clear'] = array(
     'title' => 'Empty cache',
@@ -394,31 +380,30 @@ function devel_init() {
       }
       elseif (module_exists('libraries')) {
         // Support Libraries API - http://drupal.org/project/libraries
-        $firephp_path = libraries_get_path('FirePHPCore');
-        $firephp_path = ($firephp_path ? $firephp_path . '/lib/FirePHPCore/' : '');
+        $firephp_path = libraries_get_path('FirePHPCore') . '/lib/FirePHPCore/';
         $chromephp_path = libraries_get_path('chromephp');
       }
       else {
-        $firephp_path = './' . drupal_get_path('module', 'devel') . '/FirePHPCore/lib/FirePHPCore/';
-        $chromephp_path = './' . drupal_get_path('module', 'devel') . '/chromephp';
+        $firephp_path = './'. drupal_get_path('module', 'devel') .'/FirePHPCore/lib/FirePHPCore/';
+        $chromephp_path = './' . drupal_get_path('module', 'devel') .'/chromephp';
       }
 
-      // Include FirePHP if it exists.
-      if (!empty($firephp_path) && file_exists($firephp_path . 'fb.php')) {
-        include_once $firephp_path . 'fb.php';
-        include_once $firephp_path . 'FirePHP.class.php';
+      // include FirePHP if exists...
+      if (file_exists($firephp_path .'fb.php')) {
+        include_once $firephp_path .'fb.php';
+        include_once $firephp_path .'FirePHP.class.php';
       }
 
-      // Include ChromePHP if it exists.
-      if (!empty($chromephp_path) && file_exists($chromephp_path .= '/ChromePhp.php')) {
-        include_once $chromephp_path;
+      // include ChromePHP if exists...
+      if (file_exists($chromephp_path . '/ChromePhp.php')) {
+        include_once $chromephp_path . '/ChromePhp.php';
       }
 
 
       // Add CSS for query log if should be displayed.
       if (variable_get('devel_query_display', 0)) {
-        drupal_add_css(drupal_get_path('module', 'devel') . '/devel.css');
-        drupal_add_js(drupal_get_path('module', 'devel') . '/devel.js');
+        drupal_add_css(drupal_get_path('module', 'devel') .'/devel.css');
+        drupal_add_js(drupal_get_path('module', 'devel'). '/devel.js');
       }
     }
   }
@@ -627,15 +612,11 @@ function backtrace_error_handler($error_level, $message, $filename, $line, $cont
     $backtrace = debug_backtrace();
     array_shift($backtrace);
     $variables = array('%error' => $type[0], '%message' => $message, '%function' => $backtrace[0]['function'] .'()', '%file' => $filename, '%line' => $line);
-    $counter = count($backtrace);
+    $counter = 0;
 
-    // Show message if error_level is ERROR_REPORTING_DISPLAY_SOME or higher.
-    // (This is Drupal's error_level, which is different from $error_level,
-    // and we purposely ignore the difference between _SOME and _ALL,
-    // see #970688!)
-    if (variable_get('error_level', 1) >= 1) {
+    if (variable_get('error_level', 1) == 1) {
       foreach ($backtrace as $call) {
-        $nicetrace[--$counter . ': ' . $call['function']] = $call;
+        $nicetrace[$call['function'] . '<span class="' . $counter++ . '" />'] = $call;
       }
       print t('%error: %message in %function (line %line of %file).', $variables) ." =&gt;\n";
       krumo($nicetrace);
@@ -663,6 +644,11 @@ function devel_permission() {
     'switch users' => array(
       'title' => t('Switch users'),
       'description' => t('Become any user on the site with just a click.'),
+      'restrict access' => TRUE,
+    ),
+    'display source code' => array(
+      'title' => t('Display source code'),
+      'description' => t('View the site\'s php source code.'),
       'restrict access' => TRUE,
     ),
   );
@@ -758,7 +744,6 @@ function devel_switch_user_list() {
     $roles = user_roles(TRUE, 'switch users');
     $query = db_select('users', 'u');
     $query->addField('u', 'uid');
-    $query->addField('u', 'access');
     $query->distinct();
     $query->condition('u.uid', 0, '>');
     $query->condition('u.status', 0, '>');
@@ -977,7 +962,7 @@ function devel_shutdown_real() {
     }
 
     if (isset($user) && user_access('access devel information')) {
-      $queries = (devel_query_enabled() ? Database::getLog('devel', 'default') : NULL);
+      $queries = Database::getLog('devel', 'default');
       $output .= devel_shutdown_summary($queries);
       $output .= devel_shutdown_query($queries);
     }
@@ -1219,7 +1204,6 @@ function devel_switch_user($name = NULL) {
   if (isset($name) && $account = user_load_by_name($name)) {
     $old_uid = $user->uid;
     $user = $account;
-    $user->timestamp = time() - 9999;
     if (!$old_uid) {
       // Switch from anonymous to authorized.
       drupal_session_regenerate();

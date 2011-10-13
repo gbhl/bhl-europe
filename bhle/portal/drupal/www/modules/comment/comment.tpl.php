@@ -1,4 +1,5 @@
 <?php
+// $Id: comment.tpl.php,v 1.19 2010/12/01 00:18:15 webchick Exp $
 
 /**
  * @file

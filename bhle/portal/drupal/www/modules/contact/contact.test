@@ -1,10 +1,9 @@
 <?php
+// $Id: contact.test,v 1.45 2010/08/05 23:53:37 webchick Exp $
 
 /**
- * @file 
- * Tests for contact.module.
+ * Test the sitewide contact form.
  */
-
 class ContactSitewideTestCase extends DrupalWebTestCase {
   public static function getInfo() {
     return array(

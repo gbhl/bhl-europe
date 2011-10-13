@@ -1,4 +1,5 @@
 <?php
+// $Id: taxonomy.tokens.inc,v 1.10 2010/11/14 00:25:44 dries Exp $
 
 /**
  * @file

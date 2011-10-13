@@ -1,3 +1,4 @@
+/* $Id: comment.css,v 1.5 2008/12/31 12:02:21 dries Exp $ */
 
 #comments {
   margin-top: 15px;
@@ -8,6 +9,6 @@
 .comment-unpublished {
   background-color: #fff4f4;
 }
-.comment-preview {
+.preview .comment {
   background-color: #ffffea;
 }

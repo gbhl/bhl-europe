@@ -67,30 +67,30 @@ Drupal.behaviors.trackingSettingsSummary = {
     $('fieldset#edit-linktracking', context).drupalSetSummary(function (context) {
       var vals = [];
       if ($('input#edit-piwik-track', context).is(':checked')) {
-        vals.push(Drupal.t('Outbound links'));
+        vals.push(Drupal.t('Outgoing links'));
         vals.push(Drupal.t('Downloads'));
       }
       if (!vals.length) {
         return Drupal.t('Not tracked');
       }
-      return Drupal.t('@items enabled', {'@items' : vals.join(', ')});
+      return Drupal.t('@items tracked', {'@items' : vals.join(', ')});
     });
     
     $('fieldset#edit-search', context).drupalSetSummary(function (context) {
       var vals = [];
       if ($('input#edit-piwik-site-search', context).is(':checked')) {
-        vals.push(Drupal.t('Site search'));
+        vals.push('Site search');
       }
       if (!vals.length) {
         return Drupal.t('Not tracked');
       }
-      return Drupal.t('@items enabled', {'@items' : vals.join(', ')});
+      return Drupal.t('@items tracked', {'@items' : vals.join(', ')});
     });
 
     $('fieldset#edit-privacy', context).drupalSetSummary(function (context) {
       var vals = [];
       if ($('input#edit-piwik-privacy-donottrack', context).is(':checked')) {
-        vals.push(Drupal.t('Universal web tracking opt-out'));
+        vals.push('Universal web tracking opt-out');
       }
       if (!vals.length) {
         return Drupal.t('No privacy');

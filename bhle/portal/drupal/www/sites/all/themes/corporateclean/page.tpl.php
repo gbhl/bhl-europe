@@ -76,6 +76,8 @@
 
             <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
                   
+            <?php if ($page['search_area']): ?><div id="search_area"><?php print render($page['search_area']); ?></div><?php endif; ?>
+
 			      <?php print render($title_prefix); ?>
             <?php if ($title): ?>
               <h1><?php print $title ?></h1>
@@ -85,8 +87,6 @@
             <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
             
             <?php print render($page['content']); ?>
-
-            <?php if ($page['content_expanded']): ?><div id="content_expanded"><?php print render($page['content_expanded']); ?></div><?php endif; ?>
             
         </div><!-- EOF: #main -->
 
@@ -110,6 +110,7 @@
     <!-- Feed tabs. -->
     <?php if ($page['feed_tabs']): ?>
     <div id="feed_tabs">           
+      <?php print $feed_icons; ?>
       <?php print render($page['feed_tabs']); ?>
     </div><!-- EOF: #feed_tabs -->
     <?php endif; ?>        
@@ -137,11 +138,11 @@
 
 </div><!-- EOF: #footer -->
 
-<!-- Footer Bottom -->    
+<!-- Footer -->    
 <div id="footer-bottom">
     <div id="footer-bottom-inside">                  
-        <?php print render($page['footer_bottom']); ?>
+        <?php print render($page['footer']); ?>
     </div><!-- EOF: #footer-bottom-inside -->
-</div><!-- EOF: #footer_bottom -->
+</div><!-- EOF: #footer -->
 
 </div><!-- EOF: #page-wrapper -->

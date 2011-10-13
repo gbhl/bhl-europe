@@ -1,4 +1,5 @@
 <?php
+// $Id: shortcut.module,v 1.27 2010/09/24 00:37:44 dries Exp $
 
 /**
  * @file
@@ -460,7 +461,7 @@ function shortcut_set_assign_user($shortcut_set, $account) {
  *   to any set.
  */
 function shortcut_set_unassign_user($account) {
-  $deleted = db_delete('shortcut_set_users')
+  $deleted = db_delete('shortcut_set')
     ->condition('uid', $account->uid)
     ->execute();
   return (bool) $deleted;

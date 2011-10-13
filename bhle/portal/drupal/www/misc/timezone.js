@@ -1,3 +1,4 @@
+// $Id: timezone.js,v 1.7 2009/08/31 05:51:08 dries Exp $
 (function ($) {
 
 /**

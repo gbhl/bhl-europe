@@ -1,4 +1,5 @@
 <?php
+// $Id: aggregator-summary-items.tpl.php,v 1.4 2010/10/15 23:37:55 webchick Exp $
 
 /**
  * @file

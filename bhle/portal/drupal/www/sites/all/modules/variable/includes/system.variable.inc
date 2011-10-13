@@ -195,6 +195,7 @@ function system_variable_info($options) {
     'group' => 'theme_settings',
     'localize' => TRUE,
   );
+
   return $variables;
 }
 
@@ -233,7 +234,10 @@ function system_variable_type_info() {
   // Internal Drupal path as used by menu items.
   $type['drupal_path'] = array(
     'title' => t('Drupal path'),
-    'element callback' => 'system_variable_path_element',
+    'element' => array(
+      '#type' => 'textfield', '#size' => 40,
+      '#field_prefix' => url(NULL, array('absolute' => TRUE)) . (variable_get('clean_url', 0) ? '' : '?q='),
+    ),
     'localize' => TRUE,
   );
   // File system path, relative to Drupal installation.
@@ -355,16 +359,4 @@ function system_variable_theme_defaults($variable, $options) {
     'favicon_path' => '',
     'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
-}
-
-/**
- * Callback for path variable element
- */
-function system_variable_path_element($variable, $options) {
-  $element = variable_form_element_default($variable, $options) +array(
-    '#type' => 'textfield', 
-    '#size' => 40,
-    '#field_prefix' => url(NULL, array('absolute' => TRUE)) . (variable_get('clean_url', 0) ? '' : '?q='),
-  );
-  return $element;
 }

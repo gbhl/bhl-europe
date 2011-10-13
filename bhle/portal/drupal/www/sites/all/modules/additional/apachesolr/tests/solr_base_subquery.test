@@ -1,12 +1,10 @@
 <?php
 
 class DrupalSolrSubQueryTests extends DrupalWebTestCase {
-  public static function getInfo() {
-    return array(
-      'name' => 'Subquery handling',
+  function getInfo() {
+    return array('name' => 'Subquery handling',
       'description' => 'Tests for subqueries.',
-      'group' => 'ApacheSolr',
-    );
+      'group' => 'ApacheSolr');
   }
 
   function setUp() {
