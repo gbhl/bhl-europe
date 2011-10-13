@@ -11,7 +11,7 @@
 function i18n_string_enable() {
   // Refresh locales for enabled modules
   $modules = module_implements('i18n_string_refresh');
-  i18n_string_modules_enabled($modules);  
+  i18n_string_modules_enabled($modules);
 }
 
 /**
@@ -26,6 +26,7 @@ function i18n_string_install() {
   // If updating from D6, module changed name
   if (variable_get('i18n_drupal6_update')) {
     i18n_string_update_7000();
+    i18n_string_update_7001();
   }
 }
 
@@ -128,7 +129,77 @@ function i18n_string_install_update_string($string) {
   $string->location = $string->textgroup . ':' . $string->context;
   $string->objectindex = (int)$string->objectid;
   drupal_write_record('i18n_string', $string, 'lid');
-  drupal_write_record('locales_source', $string, 'lid');  
+  drupal_write_record('locales_source', $string, 'lid');
+}
+
+/**
+ * Update context for strings.
+ *
+ * As some string locations depend on configurable values, the field needs sometimes to be updated
+ * without losing existing translations. I.e:
+ * - profile fields indexed by field name.
+ * - content types indexted by low level content type name.
+ *
+ * Example:
+ *  'profile:field:oldfield:*' -> 'profile:field:newfield:*'
+ */
+function i18n_string_install_update_context($oldname, $newname) {
+  // Get context replacing '*' with empty string.
+  $oldcontext = explode(':', $oldname);
+  $newcontext = explode(':', $newname);
+  /*
+  i18n_string_context(str_replace('*', '', $oldname));
+  $newcontext = i18n_string_context(str_replace('*', '', $newname));
+  */
+  // Get location with placeholders.
+  foreach (array('textgroup', 'type', 'objectid', 'property') as $index => $field) {
+    if ($oldcontext[$index] != $newcontext[$index]) {
+      $replace[$field] = $newcontext[$index];
+    }
+  }
+
+  // Query and replace if there are any fields. It is possible that under some circumstances fields are the same
+  if (!empty($replace)) {
+    $textgroup = array_shift($oldcontext);
+    $context = str_replace('*', '%', implode(':', $oldcontext));
+    $count = 0;
+    $query = db_select('i18n_string', 's')
+      ->fields('s')
+      ->condition('s.textgroup', $textgroup)
+      ->condition('s.context', $context, 'LIKE');
+
+    foreach ($query->execute()->fetchAll() as $source) {
+      foreach ($replace as $field => $value) {
+        $source->$field = $value;
+      }
+      // Recalculate location, context, objectindex
+      $source->context = $source->type . ':' . $source->objectid . ':' . $source->property;
+      $source->location = $source->textgroup . ':' . $source->context;
+      $source->objectindex = (int)$source->objectid;
+      // Update source string.
+      $update = array(
+        'textgroup' => $source->textgroup,
+        'context' => $source->context,
+      );
+      db_update('locales_source')
+        ->fields($update + array('location' => $source->location))
+        ->condition('lid', $source->lid)
+        ->execute();
+
+      // Update object data.
+      db_update('i18n_string')
+      ->fields($update + array(
+        'type' => $source->type,
+        'objectid' => $source->objectid,
+        'property' => $source->property,
+        'objectindex' => $source->objectindex,
+      ))
+      ->condition('lid', $source->lid)
+      ->execute();
+      $count++;
+    }
+    drupal_set_message(t('Updated @count string names from %oldname to %newname.', array('@count' => $count, '%oldname' => $oldname, '%newname' => $newname)));
+  }
 }
 
 /**
@@ -144,16 +215,17 @@ function i18n_string_update_7000() {
     db_query("UPDATE {i18n_string} s SET s.textgroup = (SELECT l.textgroup FROM {locales_source} l WHERE l.lid = s.lid)");
     // Populate context field. We could use CONCAT_WS but I guess this is more standard.
     db_query("UPDATE {i18n_string} SET context = CONCAT(type, ':', objectid, ':', property)");
-    db_query("UPDATE {locales_source} s SET s.context = (SELECT l.context FROM {i18n_string} l WHERE l.lid = s.lid)");    
+    db_query("UPDATE {locales_source} s INNER JOIN {i18n_string} i ON s.lid = i.lid SET s.context = i.context");
   }
 }
 
 /**
- * Rename i18n_strings table to i18n_string to avoid clashes when upgrading
+ * Drop obsoleted i18n_strings table if exists
  */
 function i18n_string_update_7001() {
-  db_rename_table('i18n_strings', 'i18n_string');
-  drupal_get_schema(NULL, TRUE);
+  if (db_table_exists('i18n_strings')) {
+    db_drop_table('i18n_strings');
+  }
 }
 
 /**

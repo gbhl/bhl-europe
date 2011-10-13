@@ -1,0 +1,6 @@
+/* $Id: toolbar_hide.css,v 1.1.2.3 2010/11/14 22:09:17 joshthegeek Exp $ */
+
+body.tbr_menu_hidden {
+  padding-top:0px !important;
+}
+

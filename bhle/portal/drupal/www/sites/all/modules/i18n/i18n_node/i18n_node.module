@@ -3,31 +3,14 @@
 /**
  * @file
  * Internationalization (i18n) module - Node type handling
- * 
+ *
  * The i18n strings created by this module are:
  * - node:type:[type]:[name,title,body,help]
  */
 
-/**
- * Implements hook_menu().
- */
-/**
- * @todo Update autocomplete, try some other module
-function i18n_node_menu() {
-  // Autocomplete callback for nodes
-  $items['i18n/node/autocomplete'] = array(
-    'title' => 'Node title autocomplete',
-    'page callback' => 'i18n_node_autocomplete',
-    'access arguments' => array('access content'),
-    'type' => MENU_CALLBACK,
-    'file' => 'i18n_node.pages.inc',
-  );
-  return $items;
-}
-*/
 
 /**
- * Replacement for node_add
+ * Replacement for node_add.
  *
  * This just calls node_add() and switches title. This has to be done here to work always
  */
@@ -48,7 +31,7 @@ function i18n_node_add($type) {
 function i18n_node_field_extra_fields() {
   $return = array();
   $info = entity_get_info('node');
-  foreach (array_keys($info['bundles']) as $bundle) {  
+  foreach (array_keys($info['bundles']) as $bundle) {
     if (i18n_node_type_enabled($bundle)) {
       $return['node'][$bundle] = i18n_language_field_extra();
     }
@@ -64,17 +47,30 @@ function i18n_node_menu() {
     'title' => 'Node options',
     'description' => 'Configure extended options for multilingual content and translations.',
     'page callback' => 'drupal_get_form',
-    'page arguments' => array('variable_module_form', 'i18n_node'),
+    'page arguments' => array('variable_group_form', 'i18n_node'),
     'access arguments' => array('administer site configuration'),
     'type' => MENU_LOCAL_TASK,
     'weight' => 10,
+  );
+  $items['i18n/node/autocomplete'] = array(
+    'page callback' => 'i18n_node_autocomplete',
+    'file' => 'i18n_node.pages.inc',
+    'access arguments' => array('administer content translations'),
+    'type' => MENU_CALLBACK,
   );
   return $items;
 }
 
 /**
+ * Menu access callback function.
+ */
+function i18n_node_translate_tab_access() {
+  return user_access('translate interface') && user_access('administer content types');
+}
+
+/**
  * Implements hook_block_view_MODULE_DELTA_alter().
- * 
+ *
  * Set translated help text for node/add pages, replace node_help() text.
  */
 function i18n_node_block_view_system_help_alter(&$block) {
@@ -85,8 +81,8 @@ function i18n_node_block_view_system_help_alter(&$block) {
       if ($help !== $type->help) {
         $block['content'] = str_replace(filter_xss_admin($type->help), filter_xss_admin($help), $block['content']);
       }
-    } 
-  } 
+    }
+  }
 }
 
 /**
@@ -103,6 +99,10 @@ function i18n_node_help($path, $arg) {
       $output .= '<li>'. t("Content type descriptions were previously localized so they won't be affected.") .'</li>';
       $output .= '</ul>';
       $output .= '<p>'. t('To search and translate strings, use the <a href="@translate-interface">translation interface</a> pages.', array('@translate-interface' => url('admin/config/regional/translate'))) .'</p>';
+      return $output;
+    case 'admin/config/regional/i18n':
+    case 'admin/config/regional/i18n/node':
+      $output = '<p>' . t('Your can find some more per content type options on the <a href="@configure_content">Content types administration page</a>.', array('@configure_content' => url('admin/structure/types'))) .'</p>';
       return $output;
   }
 }
@@ -123,57 +123,6 @@ function i18n_node_i18n_context_language() {
 }
 
 /**
- * Implements hook_i18n_string_info()
- */
-function i18n_node_i18n_string_info() {
-  $groups['node'] = array(
-    'title' => t('Node types'),
-    'description' => t('Content type names, descriptions, help texts.'),
-    //'format' => TRUE, // This group has strings with format (block body)
-    'list' => TRUE, // This group can list all strings
-  );
-  return $groups;
-}
-/**
- * Implements hook_i18n_string_list()
- */
-function i18n_node_i18n_string_list($group) {
-  if ($group == 'node' || $group = 'all') {
-    $strings = array();
-    foreach (node_type_get_types() as $type) {
-      $strings['node']['type'][$type->type] = array(
-        'name' => $type->name,
-        'title_label' => $type->title_label,
-        'description' => $type->description,
-        'help' => $type->help,
-      );
-    }
-    return $strings; 
-  }
-}
-
-/**
- * Implements hook i18n_object_info()
- */
-function i18n_node_i18n_object_info() {
-  $info['node_type'] = array(
-    'title' => t('Node type'),
-    'key' => 'type',
-    'string translation' => array(
-      'textgroup' => 'node',
-      'type' => 'type',
-      'properties' => array(
-        'name' => t('Name'),
-        'title_label' => t('Title label'), 
-        'description' => t('Description'),
-        'help' => t('Help text'),
-      ),
-    )
-  );
-  return $info;
-}
-
-/**
  * Implements hook_i18n_translate_path()
  */
 function i18n_node_i18n_translate_path($path, $language) {
@@ -182,7 +131,7 @@ function i18n_node_i18n_translate_path($path, $language) {
     if (!empty($translations[$language->language])) {
       return 'node/' . $translations[$language->language]->nid . $matches[2];
     }
-  } 
+  }
 }
 
 /**
@@ -217,7 +166,7 @@ function i18n_node_menu_alter(&$items) {
  * Get node language.
  */
 function i18n_node_get_lang($nid, $default = '') {
-  $lang = db_result(db_query('SELECT language FROM {node} WHERE nid = %d', $nid));
+  $lang = db_query('SELECT language FROM {node} WHERE nid = :nid', array(':nid' => $nid))->fetchField();
   return $lang ? $lang : $default ;
 }
 
@@ -229,9 +178,11 @@ function i18n_node_get_lang($nid, $default = '') {
  * @param $node
  *   Node to retrieve language list for.
  * @param $translate
- *   Only languages available for translation. Filter out existing translations.
+ *   Only languages available for translation.
+ * @param $select
+ *   Only languages that can be selected for this node
  */
-function i18n_node_language_list($node, $translate = FALSE) {
+function i18n_node_language_list($node, $translate = FALSE, $select = FALSE) {
   // Check if the node module manages its own language list.
   $languages = node_invoke($node, 'language_list', $translate);
 
@@ -244,7 +195,7 @@ function i18n_node_language_list($node, $translate = FALSE) {
       }
     }
     // Language may be locked for this node type, restrict options to current one
-    if (i18n_node_language_options($node, 'lock') && !empty($node->language) && !empty($languages[$node->language])) {
+    if ($select && i18n_node_language_options($node, 'lock') && !empty($node->language) && !empty($languages[$node->language])) {
       $languages = array($node->language => $languages[$node->language]);
     }
     // Check language required for this type (no language neutral)
@@ -321,7 +272,7 @@ function i18n_node_node_view($node) {
  * Handles links for extended languages. Sets current interface language.
  */
 function i18n_node_node_view_alter(&$build) {
-  $node = $build['#node'];  
+  $node = $build['#node'];
   // Hide node translation links.
   if (variable_get('i18n_hide_translation_links', 0)) {
     if (isset($build['links']['translation'])) {
@@ -345,7 +296,7 @@ function i18n_node_node_view_alter(&$build) {
           'language' => $language,
           'attributes' => array(
         		'title' => $translations[$langcode]->title,
-        		'class' => array('translation-link'),               
+        		'class' => array('translation-link'),
           ),
         );
       }
@@ -381,7 +332,7 @@ function i18n_node_node_type_delete($info) {
  * Implements hook_elements().
  *
  * Add a process callback for textfields.
- * 
+ *
  *  * @todo Update D7
  */
 /*
@@ -397,7 +348,7 @@ function i18n_node_elements() {
  *
  * When editing or translating a node, set Javascript to rewrite autocomplete
  * paths to use the node language prefix rather than the current content one.
- * 
+ *
  * @todo Update D7
  */
 function i18n_node_textfield_process($element) {
@@ -499,7 +450,7 @@ function i18n_node_form_node_form_alter(&$form, $form_state) {
    *
    * @see http://drupal.org/node/765860
   */
-  
+
   // call a 'private' implemenation of i18n_node_form_node_form_alter()
   $form['#after_build'][] = '_i18n_node_form_node_form_alter';
 }
@@ -508,12 +459,16 @@ function i18n_node_form_node_form_alter(&$form, $form_state) {
  * Implements hook_form_BASE_FORM_ID_alter().
  * Called by i18n_node_form_node_form_alter
  */
-function _i18n_node_form_node_form_alter($form, $form_state) {
+function _i18n_node_form_node_form_alter($form, &$form_state) {
   $node = $form['#node'];
   if (i18n_node_type_enabled($node)) {
     if (!empty($form['language']['#options'])) {
-      $form['language']['#options'] = i18n_node_language_list($node, TRUE);
+      $form['language']['#options'] = i18n_node_language_list($node, TRUE, TRUE);
     }
+  }
+  elseif (variable_get('i18n_node_default_language_none', 0) && !isset($form['#node']->nid)) {
+    // Override locale module setting default language to nodes. It is already in form_state.
+    $form['language']['#value'] = $form_state['values']['language'] = LANGUAGE_NONE;
   }
 
   // Translate field names for title and body for the node edit form.
@@ -534,7 +489,7 @@ function _i18n_node_form_node_form_alter($form, $form_state) {
 function i18n_node_theme() {
   return array(
     'i18n_node_select_translation' => array(
-      'arguments' => array('element' => NULL),
+      'render element' => 'element',
       'file' => 'i18n_node.pages.inc',
     ),
   );
@@ -542,7 +497,7 @@ function i18n_node_theme() {
 
 /**
  * Shorthand for translating node type strings
- * 
+ *
  * @param $type
  *   Node type name or full object
  */
@@ -555,19 +510,19 @@ function i18n_node_translate_type($type, $property = 'name', $source = NULL, $op
 }
 
 /**
- * Translate node type name (filtered)
+ * Translate node type name (unfiltered)
  */
 function i18n_node_type_name($type, $name) {
-  return check_plain(i18n_string_translate(array('node', 'type', $type, 'name'), $name)); 
+  return i18n_string_translate(array('node', 'type', $type, 'name'), $name);
 }
 
 /**
  * Check whether this is a language enabled node type
- * 
+ *
  * @param $type
  *   Node, node type object, or node type name
  */
 function i18n_node_type_enabled($type) {
   $type = is_object($type) ? $type->type : $type;
-  return (bool)variable_get('language_content_type_'. $type, FALSE);
+  return locale_multilingual_node_type($type);
 }

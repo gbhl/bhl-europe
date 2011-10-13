@@ -5,42 +5,21 @@
  * Helper functions for menu administration.
  */
 
-/**
- * Generate a tabular listing of translations for vocabularies.
- */
-function i18n_menu_translation_overview($menu) {
-  // Get translation sets with elements in this menu
-  $query =db_select('i18n_translation_set', 's')
-    ->distinct()
-    ->fields('s', array('tsid'))
-    ->condition('s.type', 'menu_link');
-  $query->join('menu_links', 'ml', 's.tsid = ml.i18n_tsid');
-  $query->condition('ml.menu_name', $menu['menu_name']);
-  if ($tsids = $query->execute()->fetchColumn()) {
-    return drupal_get_form('i18n_translation_set_overview', 'menu_link', $tsids);
-  }
-  else {
-    return t('No translations for this menu item.');
-  }
-}
 
 /**
- * Produces a vocabulary translation form.
+ * Produces a menu translation form.
  */
-function i18n_menu_translation_form($form, $form_state, $menu = NULL, $item = NULL, $translation_set = NULL) {
+function i18n_menu_translation_form($form, $form_state, $translation_set = NULL, $item = NULL) {
+  $translation_set = $translation_set ? $translation_set : i18n_translation_set_create('menu_link');
   $form['translation_set'] = array('#type' => 'value', '#value' => $translation_set);
-  $translations = $translation_set ? $translation_set->get_translations() : array();
+  $translations = $translation_set->get_translations();
+  // What to do with title? Let's make it a hidden field for now, some tests relay on it
+  $form['title'] = array('#type' => 'hidden', '#default_value' => $translation_set->title);
   if ($item && ($lang = i18n_object_langcode($item))) {
     $translations[$lang] = $item;
   }
   $item = $item ? $item : array('mlid' => 0, 'menu_name' => '', 'plid' => 0);
-  $item_lang = i18n_object_langcode($item); 
-  $form['title'] = array(
-    '#title' => t('Title'),
-    '#type' => 'textfield',
-    '#default_value' => $translation_set ? $translation_set->title : '',
-    '#description' => t('Optional descriptive name for this translation set.'),
-  );
+  $item_lang = i18n_object_langcode($item);
   $form['translations'] = array(
     '#type' => 'fieldset',
     '#title' => t('Translations'),
@@ -70,13 +49,14 @@ function i18n_menu_translation_form($form, $form_state, $menu = NULL, $item = NU
         '#default_value' => $default,
         '#options' => $options,
         '#description' => t('The maximum depth for a link and all its children is fixed at !maxdepth. Some menu links may not be available as parents if selecting them would exceed this limit.', array('!maxdepth' => MENU_MAX_DEPTH)),
-        '#attributes' => array('class' => array('menu-title-select')),  
+        '#attributes' => array('class' => array('menu-title-select')),
       );
     }
   }
-  $form['controls']['update'] = array('#type' => 'submit', '#value' => t('Save'));
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['update'] = array('#type' => 'submit', '#value' => t('Save'));
   if ($translation_set) {
-    $form['controls']['delete'] = array('#type' => 'submit', '#value' => t('Delete'));
+    $form['actions']['delete'] = array('#type' => 'submit', '#value' => t('Delete'));
   }
   return $form;
 }
@@ -85,8 +65,22 @@ function i18n_menu_translation_form($form, $form_state, $menu = NULL, $item = NU
  * Process form validation
  */
 function i18n_menu_translation_form_validate($form, &$form_state)  {
-  if ($form_state['values']['op'] == t('Save') && !array_filter($form_state['values']['translations'])) {
-    form_set_error('paths', t('There are no path translations to save.'));
+  if ($form_state['values']['op'] == t('Save')) {
+    $selected = 0;
+    // example array('en' => 'navigation:0')
+    $mlids = array_filter($form_state['values']['translations']);
+    foreach ($mlids as $lang => $item_name) {
+      list($menu_name, $mlid) = explode(':', $item_name);
+      if ($mlid && ($item = menu_link_load($mlid)) && i18n_object_langcode($item)) {
+        $selected++;
+      }
+      else {
+        unset($form_state['values']['translations'][$lang]);
+      }
+    }
+    if ($selected < 1) {
+      form_set_error('translations', t('There are no translations to save.'));
+    }
   }
 }
 
@@ -99,13 +93,13 @@ function i18n_menu_translation_form_submit($form, &$form_state) {
   switch ($form_state['values']['op']) {
     case t('Save'):
       $mlids = array_filter($form_state['values']['translations']);
-      $translation_set = $translation_set ? $translation_set : i18n_translation_set_create('menu_link');
-      $translations = $translation_set->get_translations();
-      $translation_set->translations = array();
+      $translation_set->reset_translations();
       foreach ($mlids as $lang => $item_name) {
         list($menu_name, $mlid) = explode(':', $item_name);
-        $translation_set->translations[$lang] = menu_link_load($mlid);
+        $item = menu_link_load($mlid);
+        $translation_set->add_item($item, $lang);
       }
+      $translation_set->title = !empty($form_state['values']['title']) ? $form_state['values']['title'] : '';
       $translation_set->save(TRUE);
       drupal_set_message(t('The item translation has been saved.'));
       break;
@@ -114,6 +108,7 @@ function i18n_menu_translation_form_submit($form, &$form_state) {
       drupal_set_message(t('The item translation has been deleted.'));
       break;
   }
+
   $form_state['redirect'] = 'admin/structure/menu';
 }
 
@@ -152,8 +147,10 @@ function i18n_menu_parent_options($menus, $item, $langcode) {
       $available_menus[$name] = $menu;
     }
   }
-
+  // Disable i18n selection, enable after the query.
+  $previous = i18n_select(FALSE);
   $options = _i18n_menu_get_options($menus, $available_menus, $item, $langcode);
+  i18n_select($previous);
   return $options;
 }
 
@@ -172,9 +169,10 @@ function _i18n_menu_get_options($menus, $available_menus, $item, $langcode) {
   $options = array();
   foreach ($menus as $menu_name => $title) {
     if (isset($available_menus[$menu_name])) {
-      $tree = i18n_menu_tree_all_data($menu_name, $langcode, NULL);
-      $options[$menu_name . ':0'] = '<' . $title . '>';
-      _menu_parents_recurse($tree, $menu_name, '--', $options, $item['mlid'], $limit);
+      if ($tree = i18n_menu_tree_all_data($menu_name, $langcode, NULL)) {  
+        $options[$menu_name . ':0'] = '<' . $title . '>';
+        _menu_parents_recurse($tree, $menu_name, '--', $options, $item['mlid'], $limit);
+      }
     }
   }
   return $options;
@@ -185,10 +183,76 @@ function _i18n_menu_get_options($menus, $available_menus, $item, $langcode) {
  */
 function i18n_menu_tree_all_data($menu_name, $langcode, $link = NULL, $max_depth = NULL) {
   $tree = menu_tree_all_data($menu_name, $link, $max_depth);
+  return _i18n_menu_tree_filter_items($tree, $langcode);
+}
+
+/**
+ * Filter out menu items that have a different language
+ */
+function _i18n_menu_tree_filter_items($tree, $langcode) {
+  $result = array();
   foreach ($tree as $key => $item) {
-    if (!empty($item['link']['customized']) && ($lang = i18n_object_langcode($item['link'])) && $lang != $langcode) {
-      unset($tree[$key]);
+    $lang = i18n_object_langcode($item['link']);
+    if (!empty($item['below'])) {
+      $item['below'] = _i18n_menu_tree_filter_items($item['below'], $langcode);
+    }
+    if (!empty($item['link']['customized']) && $lang == $langcode) {
+      $result[$key] = $item;
+    }
+    elseif (!empty($item['below'])) {
+      // Keep for the tree but mark as unselectable.
+      $item['link']['title'] = '(' . $item['link']['title'] . ')';
+      $result[$key] = $item;
     }
   }
-  return $tree;
+  return $result;
+}
+
+/**
+ * Callback for menu translation tab.
+ */
+function i18n_menu_translation_item_overview($item, $translation_set = NULL) {
+  if ($item['i18n_tsid']) {
+    // Already part of a set, grab that set.
+    $translation_set = i18n_translation_set_load($item['i18n_tsid']);
+    $translations = $translation_set->get_translations();
+  }
+  else {
+    // We have no translation source mlid, this could be a new set, emulate that.
+    $translations = array($item['language'] => $item);
+  }
+
+  $type = variable_get('translation_language_type', LANGUAGE_TYPE_INTERFACE);
+  $header = array(t('Language'), t('Title'), t('Operations'));
+
+  foreach (i18n_language_list() as $langcode => $language_name) {
+    $options = array();
+    if (isset($translations[$langcode])) {
+      // Existing translation in the translation set: display status.
+      $translation_item = menu_link_load($translations[$langcode]['mlid']);
+      $title = l($translation_item['link_title'], $translation_item['link_path']);
+      $path = 'admin/structure/menu/item/' . $translation_item['mlid'];
+      $options[] = l(t('edit'), $path);
+
+      if ($translation_item['mlid'] == $item['mlid']) {
+        $language_name = t('<strong>@language_name</strong> (source)', array('@language_name' => $language_name));
+      }
+    }
+    else {
+      // No such translation in the set yet: help user to create it.
+      $title = t('n/a');
+      $options[] = l(t('add translation'), 'admin/structure/menu/manage/' . $item['menu_name'] . '/add', array('query' => array('translation' => $item['mlid'], 'target' => $langcode) + drupal_get_destination()));
+    }
+    $rows[] = array($language_name, $title, implode(" | ", $options));
+  }
+
+  drupal_set_title(t('Translations of menu item %title', array('%title' => $item['link_title'])), PASS_THROUGH);
+
+  $build['translation_item_overview'] = array(
+    '#theme' => 'table',
+    '#header' => $header,
+    '#rows' => $rows,
+  );
+
+  return $build;
 }

@@ -3,7 +3,7 @@
 /**
  * @file
  * Internationalization (i18n) package. Synchronization of translations
- * 
+ *
  * Node synchronization.
  */
 
@@ -26,7 +26,7 @@
  * @param $op
  *   Node operation (insert|update).
  */
-function i18n_sync_node_translation($node, $translations, $fields, $op) {
+function i18n_sync_node_translation($node, $translations, $field_names, $op) {
   $count = 0;
   // Disable language selection and synchronization temporarily, enable it again later
   i18n_select(FALSE);
@@ -38,84 +38,25 @@ function i18n_sync_node_translation($node, $translations, $fields, $op) {
     }
     // Load full node, we need all data here.
     $translation = node_load($translation->nid, NULL, TRUE);
-    $field_info = i18n_sync_node_options($node->type);
+    $i18n_options = i18n_sync_node_options($node->type);
     // Invoke callback for each field, the default is just copy over
-    foreach ($fields as $field) {
-      if (!empty($field_info[$field]['callback'])) {
-        call_user_func($field_info[$field]['callback'], $node, $translation, $field);
+    foreach ($field_names as $field) {
+      if (!empty($i18n_options[$field]['field_name'])) {
+        i18n_sync_field_translation_sync('node', $node->type, $translation, $translation->language, $node, $node->language, $i18n_options[$field]['field_name']);
       }
-      elseif (!empty($field_info[$field]['field'])) {
-        i18n_sync_node_translation_field_field($node, $translation, $field, $field_info[$field]['field']);
+      elseif (isset($node->$field)) {
+        // Standard node field, just copy over.
+        $translation->$field = $node->$field;
       }
     }
     // Give a chance to other modules for additional sync
-    module_invoke_all('i18n_sync_node_translation', $node, $translation, $fields);
+    module_invoke_all('i18n_sync_translation', 'node', $translation, $translation->language, $node, $node->language, $field_names);
     node_save($translation);
     $count++;
   }
   i18n_sync(TRUE);
-  i18n_select(TRUE);  
+  i18n_select(TRUE);
   drupal_set_message(format_plural($count, 'One node translation has been synchronized.', 'All @count node translations have been synchronized.'));
-}
-
-/**
- * Synchronize default field
- */
-function i18n_sync_node_translation_default_field($node, $translation, $field) {
-  switch ($field) {
-    case 'parent': // Book outlines, translating parent page if exists.
-    case 'iid': // Attached image nodes.
-      i18n_sync_node_translation_attached_node($node, $translation, $field);
-      break;
-
-    case 'files':
-      // Sync existing attached files. This should work for images too
-      foreach ((array)$node->files as $fid => $file) {
-        if (isset($translation->files[$fid])) {
-          // Just update list and weight properties, description can be different
-          $translation->files[$fid]->list = $file->list;
-          $translation->files[$fid]->weight = $file->weight;
-        }
-        else {
-          // New file. Clone so we can set the new property just for this translation
-          $translation->files[$fid] = clone $file;
-          $translation->files[$fid]->new = TRUE;
-        }
-      }
-      // Drop removed files.
-      foreach ((array)$translation->files as $fid => $file) {
-        if (!isset($node->files[$fid])) {
-          $translation->files[$fid]->remove = TRUE;
-        }
-      }
-      break;
-
-    default:
-      // For fields that don't need special handling.
-      if (isset($node->$field)) {
-        $translation->$field = $node->$field;
-      }
-  }  
-}
-
-
-/**
- * Synchronize taxonomy.
- *
- * Translate translatable terms, just copy over the rest.
- */
-function i18n_sync_node_translation_taxonomy(&$node, &$source) {
-  if (module_exists('i18n_taxonomy') && is_array($source->taxonomy)) {
-    // Load clean source node taxonomy so we don't need to handle weird form input
-    if (!isset($source->i18n_taxonomy)) {
-      $source->i18n_taxonomy = i18n_taxonomy_node_get_terms($source);
-    }
-    $node->taxonomy = i18n_taxonomy_translate_terms($source->i18n_taxonomy, $node->language, FALSE);
-  }
-  else {
-    // If not multilingual taxonomy enabled, just copy over.
-    $node->taxonomy = $source->taxonomy;
-  }
 }
 
 /**
@@ -140,32 +81,6 @@ function i18n_sync_node_translation_nodereference_field(&$node, &$translation, $
     }
   }
   $translation->$field = $translated_references;
-}
-
-/**
- * Translating an filefield (cck).
- */
-function i18n_sync_node_translation_filefield_field(&$node, &$translation, $field) {
-  if (is_array($node->$field)) {
-    $translated_images = array();
-    foreach ($node->$field as $file) {
-      $found = false;
-
-      // Try to find existing translations of the filefield items and reference them.
-      foreach ($translation->$field as $translation_image) {
-        if ($file['fid'] == $translation_image['fid']) {
-          $translated_images[] = $translation_image;
-          $found = true;
-        }
-      }
-
-      // If there was no translation found for the filefield item, just copy it.
-      if (!$found) {
-        $translated_images[] = $file;
-      }
-    }
-    $translation->$field = $translated_images;
-  }
 }
 
 /**
@@ -194,21 +109,62 @@ function i18n_sync_node_translation_reference_field(&$reference_node, $default_v
 
 /**
  * Synchronize configurable field
- * 
+ *
  * @param $field_info
  *   Field API field information.
  */
-function i18n_sync_node_translation_field_field($node, $translation, $field, $field_info) {
-  switch ($field_info['type']) {
-    case 'taxonomy_term_reference':
-      // Do nothing it has already been syncd.
-      // i18n_sync_node_translation_taxonomy($translation, $node);
+function i18n_sync_node_translation_default_field($node, $translation, $field, $field_info) {
+  switch ($field_info['field']['type']) {
+    case 'file':
+    case 'image':
+      i18n_sync_node_translation_file_field($node, $translation, $field);
       break;
     default:
       // For fields that don't need special handling, just copy it over if defined.
-      if (isset($node->{$field}[$node->language])) {
-        $translation->{$field}[$translation->language] = $node->{$field}[$node->language];
+      // Field languages are completely unconsistent, for not to say broken
+      // both in Drupal core and entity translation. Let's hope this works. 
+      $source_lang = field_language('node', $node, $field);
+      $translation_lang = field_language('node', $translation, $field);
+      if (isset($node->{$field}[$source_lang])) {
+        $translation->{$field}[$translation_lang] = $node->{$field}[$source_lang];
       }
-      break;   
-  } 
+      break;
+  }
+}
+
+/**
+ * Sync a file or image field:
+ * - file-id's (fid) are synced
+ * - order of fid's is synced
+ * - description, alt, title is kept if already existing, copied otherwise
+ *
+ * @param object $node the node whose changes are to be synced
+ * @param object $translation a node to which the changes need to be synced
+ * @param string $field field name
+ */
+function i18n_sync_node_translation_file_field($node, $translation, $field) {
+  if (isset($node->{$field}[$node->language])) {
+    // Build a copy of the existing files in the translation node
+    // indexed by fid for easy retrieval in the copy loop below
+    $existing_files = array();
+    if (isset($translation->{$field}[$translation->language])) {
+      foreach ($translation->{$field}[$translation->language] as $delta => $file) {
+        $existing_files[$file['fid']] = $file;
+      }
+    }
+
+    // Start creating the translated copy
+    $translated_files = $node->{$field}[$node->language];
+    foreach ($translated_files as $delta => &$file) {
+      // keep alt, title, description if they already exist
+      if (array_key_exists($file['fid'], $existing_files)) {
+        foreach (array('title', 'description', 'alt') as $property) {
+          if (!empty($existing_files[$file['fid']][$property])) {
+            $file[$property] = $existing_files[$file['fid']][$property];
+          }
+        }
+      }
+    }
+    $translation->{$field}[$translation->language] = $translated_files;
+  }
 }

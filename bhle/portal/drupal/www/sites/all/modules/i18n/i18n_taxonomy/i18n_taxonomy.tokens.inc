@@ -57,7 +57,7 @@ function i18n_taxonomy_tokens($type, $tokens, array $data = array(), array $opti
   $replacements = array();
   $sanitize = !empty($options['sanitize']);
   $langcode = isset($options['language']) ? $options['language']->language : i18n_langcode();
-  
+
   if ($type == 'term' && !empty($data['term'])) {
     $term = $data['term'];
 

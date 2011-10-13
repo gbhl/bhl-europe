@@ -1,0 +1,118 @@
+.region-content-expanded #block-menu-menu-browse.collections {
+  margin:20px auto; width:950px; height:88px; padding: 10px 20px; 
+  background:transparent url('../images/bg-collections.png') no-repeat 0px 0px;
+}
+.region-content-expanded #block-menu-menu-browse.collections h2 {color:#006626; margin-bottom:15px; padding:0px; font-size:141.7%;}
+.region-content-expanded #block-menu-menu-browse.collections ul.menu {display:block; list-style-type:none;}
+.region-content-expanded #block-menu-menu-browse.collections ul.menu li {
+  display: block; float: left;
+  padding: 5px 20px; margin: 0;
+  list-style-type: none;
+  font-weight: bold; line-height:1; 
+  border-left:1px solid #8bc53f;
+  overflow: hidden;
+}
+.region-content-expanded #block-menu-menu-browse.collections ul.menu li.first {padding-left:0px; border:none;}
+
+.region-content-expanded #block-menu-menu-browse.collections ul.menu li a {color:#004226; font-size:141.7%;}
+
+/** BROWSE TABS **/
+#content-inside #browsetabs {
+  margin:0px auto; padding:0px; padding-bottom:25px; width:1010px;
+  background:transparent url('../images/bg-facet-range-bot.png') no-repeat 50% bottom;
+}
+div.browsearea {float:left; position:relative; width: 1010px;}
+div.browsearea ul#browsearea-tabs {
+  margin: 0; padding:20px 30px 5px; display:block; list-style: none; 
+  width:950px; height: 25px; 
+  background:transparent /*url('../images/bg-facet-range-tab.png') no-repeat 50% top*/;
+  overflow:hidden;   
+}
+div.browsearea ul#browsearea-tabs li {
+  float:left; display:block;
+  /* margin: 6px 3px 0px 0; padding: 0; */  line-height:1; 
+  /* height:34px; font-weight: bold;  background: url('/images/home/bg-tab-right.png') no-repeat right 0px; */
+}
+div.browsearea ul#browsearea-tabs li.ui-state-hover {
+/*  background: url('/images/home/bg-tab-right.png') 100% -35px no-repeat; */
+}
+div.browsearea ul#browsearea-tabs li.ui-tabs-selected {
+/*  margin-bottom:0px; margin-top:0px; height:41px;
+  background: url('/images/home/bg-tab-right.png') 100% -35px no-repeat; */
+}
+div.browsearea ul#browsearea-tabs h2 {color:#ccc; font-size:141.7%; display:inline;}
+div.browsearea ul#browsearea-tabs li a {
+  color:#ccc; font-size:141.7%; display:inline;
+  display: block; padding: 0px 17px 0px 0px; 
+  text-decoration:none;
+/*  background: url('/images/home/bg-tab-left.png') no-repeat left 0px; */ 
+}
+div.browsearea ul#browsearea-tabs li.ui-state-hover a {color:#006626; /*background-position: 0 -35px;*/}
+div.browsearea ul#browsearea-tabs li.ui-tabs-selected a {/*padding-top:18px; */color:#006626; /* height:20px;	background-position: 0 -35px;*/}
+
+
+
+#content-inside #browsetabs .browsearea-content-block {
+  margin:0px; padding:0px 10px; width:990px;
+  background:transparent url('../images/bg-facet-range-bg.png') repeat-y 50% top;
+}
+#content-inside #browsetabs .browsearea-content {
+  margin:0px; padding:0px; width:990px; 
+  background:#e1f0ce url('../images/bg-facet-range-gradient.png') repeat-x left bottom;    
+}
+
+#content-inside #browsetabs .browsearea-content a {
+  display:block; float:left; 
+  padding:5px 5px; margin:10px;
+  height:28px; width:29px;  
+  text-align:center; color:#006626; font-size:150%;
+  background:transparent url('../images/lbl-facet-filter-result.png') no-repeat left top;
+} 
+
+
+
+
+
+
+
+/* TABS ------------------------------------------------------------------------------------- */
+
+
+
+/** BROWSE by YEAR RANGE **/
+#content-inside .block.browse-year {
+  margin:0px auto; padding:0px; padding-bottom:25px; width:1010px;
+  background:transparent url('../images/bg-facet-range-bot.png') no-repeat 50% bottom;
+  overflow:hidden;    
+}
+#content-inside .block.browse-year h2 {
+  margin:0px; padding:20px 30px 5px; width:950px; height: 25px;
+  color:#006626; font-size:141.7%;
+  background:transparent url('../images/bg-facet-range-tab.png') no-repeat 50% top;
+  overflow:hidden;    
+}
+
+#content-inside .block.browse-year .content {
+  margin:0px; padding:0px 10px; width:990px;
+  background:transparent url('../images/bg-facet-range-bg.png') repeat-y 50% top;
+  overflow:hidden;    
+}
+
+#content-inside .block.browse-year .content .browse-year.years-list {
+  margin:0px; padding:0px; width:990px; /* min-height:230px; */ overflow:hidden;
+  background:#e1f0ce url('../images/bg-facet-range-gradient.png') repeat-x left bottom;    
+}
+
+#content-inside .block.browse-year .content .data-range-handlers {
+  margin:0px; padding:5px; width:980px; height:130px;
+  background:transparent url('../images/bg-facet-range-hr.png') no-repeat 50% bottom;    
+}
+
+#content-inside .block.browse-year .content .browse-year.years-list a {
+  display:block; float:left; 
+  padding:5px 10px; margin:10px;
+  height:28px; width:45px;  
+  text-align:center; color:#006626; font-size:150%;
+  background:transparent url('../images/lbl-facet-range-result.png') no-repeat right top;
+} 
+

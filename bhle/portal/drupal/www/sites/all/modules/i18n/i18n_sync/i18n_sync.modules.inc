@@ -3,8 +3,8 @@
 /**
  * @file
  * Internationalization (i18n) package. Synchronization of translations
- * 
- * Implements hook_i18n_sync_node_fields() for several core and contrib modules.
+ *
+ * Implements hook_i18n_sync_node_fields() for several core modules.
  */
 
 /**
@@ -13,7 +13,7 @@
 function book_i18n_sync_options($entity_type, $bundle_name) {
   if ($entity_type == 'node') {
     return array(
-      'parent' => array('title' =>t('Book outline'), 'description' => t('Set the translated parent for each translation if possible.')),
+      'parent' => array('title' => t('Book outline'), 'description' => t('Set the translated parent for each translation if possible.')),
     );
   }
 }
@@ -36,11 +36,10 @@ function field_i18n_sync_options($entity_type, $bundle_name) {
   if ($bundle_name) {
     $instances = field_info_instances($entity_type, $bundle_name);
     foreach ($instances as $name => $instance) {
-      $field = field_info_field($instance['field_name']);
       $sync_fields[$name] = array(
         'title' => $instance['label'],
         'description' => $instance['description'],
-        'field' => $field,
+        'field_name' => $instance['field_name'],
         'group' => 'fields',
       );
     }
@@ -54,7 +53,7 @@ function field_i18n_sync_options($entity_type, $bundle_name) {
 function node_i18n_sync_options($entity_type, $bundle_name) {
   if ($entity_type == 'node') {
     return array(
-      'name' => array('title' => t('Author')),
+      'uid' => array('title' => t('Author')),
       'status' => array('title' => t('Status')),
       'promote' => array('title' => t('Promote')),
       'moderate' =>  array('title' => t('Moderate')),

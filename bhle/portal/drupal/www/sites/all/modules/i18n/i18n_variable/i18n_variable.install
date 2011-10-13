@@ -6,7 +6,7 @@
  */
 
 /**
- * Implements hook_install()
+ * Implements hook_install().
  */
 function i18n_variable_install() {
   // Set module weight for it to run before most modules, but after variable_realm

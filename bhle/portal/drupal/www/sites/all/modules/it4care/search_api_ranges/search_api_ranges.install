@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function search_api_ranges_schema() {
+  $schema['search_api_range'] = array(
+    'description' => 'Stores all activated or configured range facets of a site.',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for a range facet.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'delta' => array(
+        'description' => "The range facet block's {block}.delta.",
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '0',
+      ),
+      'index_id' => array(
+        'description' => 'The {search_api_index}.machine_name this range facet belongs to.',
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => TRUE,
+      ),
+      'field' => array(
+        'description' => 'The index field this range facet belongs to.',
+        'type' => 'varchar',
+        'length' => 255,// This is ugly, but we can't be sure how long a field name might get.
+        'not null' => TRUE,
+      ),
+      'name' => array(
+        'description' => 'The human-readable name to be displayed for this block.',
+        'type' => 'varchar',
+        'length' => 80,
+        'not null' => TRUE,
+      ),
+      'enabled' => array(
+        'description' => 'A flag indicating whether the range facet is enabled.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'default' => 1,
+      ),
+      'options' => array(
+        'description' => 'The options used to configure the range facet.',
+        'type' => 'text',
+        'serialize' => TRUE,
+        'not null' => TRUE,
+      ),
+    ) + entity_exportable_schema_fields(),
+    'indexes' => array(
+      'field' => array('index_id', array('field', 50)),
+      'enabled' => array('enabled'),
+    ),
+    'unique keys' => array(
+      'delta' => array('delta'),
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function search_api_ranges_uninstall() {
+  variable_del('search_api_ranges_search_ids');
+}

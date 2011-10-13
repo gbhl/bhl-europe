@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * @file
+ * Test case for multilingual string
+ */
+
 /**
  * Class for testing i18n_string and modules using these features
  *
@@ -7,7 +13,7 @@
 
 
 class i18nStringTestCase extends Drupali18nTestCase {
-  
+
   function getInfo() {
     return array(
       'name' => 'String translation API',

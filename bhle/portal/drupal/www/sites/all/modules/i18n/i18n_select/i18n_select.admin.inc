@@ -1,10 +1,15 @@
 <?php
 
+/**
+ * @file
+ * Helper functions for select administration.
+ */
+
 function i18n_select_admin_settings() {
   $form['types'] = array(
     '#type' => 'variable_fieldset',
     '#title' => t('Content to filter by language'),
-    '#variable_list' => array('i18n_select_nodes', 'i18n_select_taxonomy', 'i18n_select_blocks'),
+    '#variable_list' => array('i18n_select_nodes', 'i18n_select_taxonomy'),
   );
   $form['mode'] = array(
     '#type' => 'variable_fieldset',
@@ -20,4 +25,3 @@ function i18n_select_admin_settings() {
   );
   return system_settings_form($form);
 }
-

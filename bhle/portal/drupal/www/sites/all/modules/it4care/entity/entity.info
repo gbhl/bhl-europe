@@ -1,0 +1,19 @@
+name = Entity API
+description = Enables modules to work with any entity type and to provide entities.
+core = 7.x
+files[] = views/plugins/entity_plugin_row_entity_view.inc
+files[] = includes/entity.controller.inc
+files[] = includes/entity.inc
+files[] = includes/entity.ui.inc
+files[] = includes/entity.wrapper.inc
+files[] = entity.features.inc
+files[] = entity.info.inc
+files[] = entity.rules.inc
+files[] = entity.test
+
+; Information added by drupal.org packaging script on 2011-07-12
+version = "7.x-1.0-beta10"
+core = "7.x"
+project = "entity"
+datestamp = "1310486817"
+

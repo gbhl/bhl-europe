@@ -51,10 +51,24 @@ function i18n_sync_help($path, $arg) {
 }
 
 /**
- * Implements hook_field_attach_prepare_translation_alter()
+ * Implements hook_hook_info().
  */
-function i18n_sync_field_attach_prepare_translation_alter(&$entity, $context) {
+function i18n_sync_hook_info() {
+  $hooks['i18n_sync_options'] = array(
+    'group' => 'i18n',
+  );
+  return $hooks;
+}
 
+/**
+ * Implements hook_field_info_alter()
+ */
+function i18n_sync_field_info_alter(&$info) {
+  foreach (array('file', 'image') as $type) {
+    if (isset($info[$type])) {
+      $info[$type]['i18n_sync_callback'] = 'i18n_sync_field_file_sync';
+    }
+  }
 }
 
 /**
@@ -213,21 +227,16 @@ function i18n_sync_node_prepare($node) {
   // If creating a translation, copy over all the fields to be synchronized.
   if (empty($node->nid) && !empty($node->translation_source) && ($sync_fields = i18n_sync_node_fields($node->type))) {
     $source = $node->translation_source;
+    $i18n_options = i18n_sync_node_options($node->type);
+    // Copy over standard node fields. The rest are handled by field_attach_prepare_translation()
     foreach ($sync_fields as $field) {
-      if (empty($source->$field)) continue;
-      switch ($field) {
-        case 'taxonomy':
-          // Do nothing, this is handled by the i18n_taxonomy module
-          break;
-        default:
-          // @todo Properly check field type and act accordingly
-          if (is_array($source->$field) && isset($source->{$field}[$source->language])) {
-            $node->{$field}[$node->language] = $source->{$field}[$source->language];
-          }
-          else {
-            $node->$field = $source->$field;
-          }
-          break;
+      if (!empty($source->$field) && empty($i18n_options[$field]['field_name'])) {
+        if ($field == 'uid') {
+          $node->name = $source->name;
+        }
+        else {
+          $node->$field = $source->$field;
+        }
       }
     }
   }
@@ -279,4 +288,58 @@ function i18n_sync_options($entity_type, $bundle_name) {
   }
 
   return $cache[$entity_type][$bundle_name];
+}
+
+/**
+ * Synchronize entity field translation
+ */
+function i18n_sync_field_translation_sync($entity_type, $bundle_name, $entity, $langcode, $source_entity, $source_langcode, $field_name) {
+  $field = field_info_field($field_name);
+  $instance = field_info_instance($entity_type, $field_name, $bundle_name);
+  $source_lang = field_language($entity_type, $source_entity, $field_name);
+  $translation_lang = field_language($entity_type, $entity, $field_name);
+  if (isset($source_entity->{$field_name}[$source_lang])) {
+    $items = $source_entity->{$field_name}[$source_lang];
+    // Determine the function to synchronize this field. If none, just copy over.
+    $type_info = field_info_field_types($field['type']);
+    if (isset($type_info['i18n_sync_callback'])) {
+      $function = $type_info['i18n_sync_callback'];
+      $function($entity_type, $entity, $field, $instance, $langcode, $items, $source_entity, $source_langcode);
+    }
+    $entity->{$field_name}[$translation_lang] = $items;
+  }
+  else {
+    // If source not set, unset translation too
+    unset($entity->{$field_name}[$translation_lang]);
+  }
+}
+
+/**
+ * Sync a file or image field (i18n_sync_callback)
+ * 
+ * - file-id's (fid) are synced
+ * - order of fid's is synced
+ * - description, alt, title is kept if already existing, copied otherwise
+ */
+function i18n_sync_field_file_sync($entity_type, $entity, $field, $instance, $langcode, &$items, $source_entity, $source_language) {
+  $field_name = $instance['field_name'];
+  // Build a copy of the existing files in the translation node
+  // indexed by fid for easy retrieval in the copy loop below
+  $existing_files = array();
+  if (isset($entity->{$field_name}[$langcode])) {
+    foreach ($entity->{$field_name}[$langcode] as $delta => $file) {
+      $existing_files[$file['fid']] = $file;
+    }
+  }
+  // Start creating the translated copy
+  foreach ($items as $delta => &$file) {
+    // keep alt, title, description if they already exist
+    if (array_key_exists($file['fid'], $existing_files)) {
+      foreach (array('title', 'description', 'alt') as $property) {
+        if (!empty($existing_files[$file['fid']][$property])) {
+          $file[$property] = $existing_files[$file['fid']][$property];
+        }
+      }
+    }
+  }
 }
