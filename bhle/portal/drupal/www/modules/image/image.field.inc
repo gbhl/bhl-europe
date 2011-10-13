@@ -1,5 +1,4 @@
 <?php
-// $Id: image.field.inc,v 1.34 2010/10/31 12:12:00 dries Exp $
 
 /**
  * @file
@@ -52,16 +51,18 @@ function image_field_settings_form($field, $instance) {
     '#description' => t('Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field.'),
   );
 
+  // When the user sets the scheme on the UI, even for the first time, it's
+  // updating a field because fields are created on the "Manage fields"
+  // page. So image_field_update_field() can handle this change.
   $form['default_image'] = array(
     '#title' => t('Default image'),
     '#type' => 'managed_file',
     '#description' => t('If no image is uploaded, this image will be shown on display.'),
     '#default_value' => $field['settings']['default_image'],
-    '#upload_location' => 'public://default_images/',
+    '#upload_location' => $settings['uri_scheme'] . '://default_images/',
   );
 
   return $form;
-
 }
 
 /**
@@ -546,7 +547,7 @@ function theme_image_formatter($variables) {
     $output = theme('image', $image);
   }
 
-  if ($variables['path']) {
+  if (!empty($variables['path']['path'])) {
     $path = $variables['path']['path'];
     $options = $variables['path']['options'];
     // When displaying an image inside a link, the html option must be TRUE.

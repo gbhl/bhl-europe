@@ -1,9 +1,8 @@
 <?php
-// $Id: shortcut.test,v 1.7 2010/11/27 20:25:44 dries Exp $
 
 /**
  * @file
- * Tests for the shortcut module.
+ * Tests for shortcut.module.
  */
 
 /**
@@ -311,6 +310,19 @@ class ShortcutSetsTestCase extends ShortcutTestCase {
     $this->assertRaw(t('The shortcut set %name already exists. Choose another name.', array('%name' => $existing_title)));
     $set = shortcut_set_load($set->set_name);
     $this->assertNotEqual($set->title, $existing_title, t('The shortcut set %title cannot be renamed to %new-title because a shortcut set with that title already exists.', array('%title' => $set->title, '%new-title' => $existing_title)));
+  }
+
+  /**
+   * Tests unassigning a shortcut set.
+   */
+  function testShortcutSetUnassign() {
+    $new_set = $this->generateShortcutSet($this->randomName(10));
+
+    shortcut_set_assign_user($new_set, $this->shortcut_user);
+    shortcut_set_unassign_user($this->shortcut_user);
+    $current_set = shortcut_current_displayed_set($this->shortcut_user);
+    $default_set = shortcut_default_set($this->shortcut_user);
+    $this->assertTrue($current_set->set_name == $default_set->set_name, "Successfully unassigned another user's shortcut set.");
   }
 
   /**

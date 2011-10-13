@@ -1,5 +1,4 @@
 <?php
-// $Id: bootstrap.inc,v 1.462 2011/01/05 06:17:58 webchick Exp $
 
 /**
  * @file
@@ -9,7 +8,7 @@
 /**
  * The current system version.
  */
-define('VERSION', '7.0');
+define('VERSION', '7.8');
 
 /**
  * Core API compatibility.
@@ -39,92 +38,68 @@ define('CACHE_PERMANENT', 0);
 define('CACHE_TEMPORARY', -1);
 
 /**
- * Log message severity -- Emergency: system is unusable.
+ * @defgroup logging_severity_levels Logging severity levels
+ * @{
+ * Logging severity levels as defined in RFC 3164.
  *
  * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
+ * defined in RFC 3164, section 4.1.1.  PHP supplies predefined LOG_* constants
+ * for use in the syslog() function, but their values on Windows builds do not
+ * correspond to RFC 3164.  The associated PHP bug report was closed with the
+ * comment, "And it's also not a bug, as Windows just have less log levels,"
+ * and "So the behavior you're seeing is perfectly normal."
  *
+ * @see http://www.faqs.org/rfcs/rfc3164.html
+ * @see http://bugs.php.net/bug.php?id=18090
+ * @see http://php.net/manual/function.syslog.php
+ * @see http://php.net/manual/network.constants.php
  * @see watchdog()
  * @see watchdog_severity_levels()
+ */
+
+/**
+ * Log message severity -- Emergency: system is unusable.
  */
 define('WATCHDOG_EMERGENCY', 0);
 
 /**
  * Log message severity -- Alert: action must be taken immediately.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_ALERT', 1);
 
 /**
  * Log message severity -- Critical: critical conditions.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_CRITICAL', 2);
 
 /**
  * Log message severity -- Error: error conditions.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_ERROR', 3);
 
 /**
  * Log message severity -- Warning: warning conditions.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_WARNING', 4);
 
 /**
  * Log message severity -- Notice: normal but significant condition.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_NOTICE', 5);
 
 /**
  * Log message severity -- Informational: informational messages.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_INFO', 6);
 
 /**
  * Log message severity -- Debug: debug-level messages.
- *
- * The WATCHDOG_* constant definitions correspond to the logging severity levels
- * defined in RFC 3164, section 4.1.1: http://www.faqs.org/rfcs/rfc3164.html
- *
- * @see watchdog()
- * @see watchdog_severity_levels()
  */
 define('WATCHDOG_DEBUG', 7);
+
+/**
+ * @} End of "defgroup logging_severity_levels".
+ */
 
 /**
  * First bootstrap phase: initialize configuration.
@@ -217,8 +192,11 @@ define('LANGUAGE_RTL', 1);
 
 /**
  * For convenience, define a short form of the request time global.
+ *
+ * REQUEST_TIME is a float with microseconds since PHP 5.4.0, but float
+ * timestamps confuses most of the PHP functions (including date_create()).
  */
-define('REQUEST_TIME', $_SERVER['REQUEST_TIME']);
+define('REQUEST_TIME', (int) $_SERVER['REQUEST_TIME']);
 
 /**
  * Flag for drupal_set_title(); text is not sanitized, so run check_plain().
@@ -246,6 +224,195 @@ define('REGISTRY_WRITE_LOOKUP_CACHE', 2);
  * @see http://php.net/manual/en/language.functions.php
  */
 define('DRUPAL_PHP_FUNCTION_PATTERN', '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*');
+
+/**
+ * Provides a caching wrapper to be used in place of large array structures.
+ *
+ * This class should be extended by systems that need to cache large amounts
+ * of data and have it represented as an array to calling functions. These
+ * arrays can become very large, so ArrayAccess is used to allow different
+ * strategies to be used for caching internally (lazy loading, building caches
+ * over time etc.). This can dramatically reduce the amount of data that needs
+ * to be loaded from cache backends on each request, and memory usage from
+ * static caches of that same data.
+ *
+ * Note that array_* functions do not work with ArrayAccess. Systems using
+ * DrupalCacheArray should use this only internally. If providing API functions
+ * that return the full array, this can be cached separately or returned
+ * directly. However since DrupalCacheArray holds partial content by design, it
+ * should be a normal PHP array or otherwise contain the full structure.
+ *
+ * Note also that due to limitations in PHP prior to 5.3.4, it is impossible to
+ * write directly to the contents of nested arrays contained in this object.
+ * Only writes to the top-level array elements are possible. So if you
+ * previously had set $object['foo'] = array(1, 2, 'bar' => 'baz'), but later
+ * want to change the value of 'bar' from 'baz' to 'foobar', you cannot do so
+ * a targeted write like $object['foo']['bar'] = 'foobar'. Instead, you must
+ * overwrite the entire top-level 'foo' array with the entire set of new
+ * values: $object['foo'] = array(1, 2, 'bar' => 'foobar'). Due to this same
+ * limitation, attempts to create references to any contained data, nested or
+ * otherwise, will fail silently. So $var = &$object['foo'] will not throw an
+ * error, and $var will be populated with the contents of $object['foo'], but
+ * that data will be passed by value, not reference. For more information on
+ * the PHP limitation, see the note in the official PHP documentation at·
+ * http://php.net/manual/en/arrayaccess.offsetget.php on
+ * ArrayAccess::offsetGet().
+ *
+ * By default, the class accounts for caches where calling functions might
+ * request keys in the array that won't exist even after a cache rebuild. This
+ * prevents situations where a cache rebuild would be triggered over and over
+ * due to a 'missing' item. These cases are stored internally as a value of
+ * NULL. This means that the offsetGet() and offsetExists() methods
+ * must be overridden if caching an array where the top level values can
+ * legitimately be NULL, and where $object->offsetExists() needs to correctly
+ * return (equivalent to array_key_exists() vs. isset()). This should not
+ * be necessary in the majority of cases.
+ *
+ * Classes extending this class must override at least the
+ * resolveCacheMiss() method to have a working implementation.
+ *
+ * offsetSet() is not overridden by this class by default. In practice this
+ * means that assigning an offset via arrayAccess will only apply while the
+ * object is in scope and will not be written back to the persistent cache.
+ * This follows a similar pattern to static vs. persistent caching in
+ * procedural code. Extending classes may wish to alter this behaviour, for
+ * example by overriding offsetSet() and adding an automatic call to persist().
+ *
+ * @see SchemaCache
+ */
+abstract class DrupalCacheArray implements ArrayAccess {
+
+  /**
+   * A cid to pass to cache_set() and cache_get().
+   */
+  private $cid;
+
+  /**
+   * A bin to pass to cache_set() and cache_get().
+   */
+  private $bin;
+
+  /**
+   * An array of keys to add to the cache at the end of the request.
+   */
+  protected $keysToPersist = array();
+
+  /**
+   * Storage for the data itself.
+   */
+  protected $storage = array();
+
+  /**
+   * Constructor.
+   *
+   * @param $cid
+   *   The cid for the array being cached.
+   * @param $bin
+   *   The bin to cache the array.
+   */
+  public function __construct($cid, $bin) {
+    $this->cid = $cid;
+    $this->bin = $bin;
+
+    if ($cached = cache_get($this->cid, $this->bin)) {
+     $this->storage = $cached->data;
+    }
+  }
+
+  public function offsetExists($offset) {
+    return $this->offsetGet($offset) !== NULL;
+  }
+
+  public function offsetGet($offset) {
+    if (isset($this->storage[$offset]) || array_key_exists($offset, $this->storage)) {
+      return $this->storage[$offset];
+    }
+    else {
+      return $this->resolveCacheMiss($offset);
+    }
+  }
+
+  public function offsetSet($offset, $value) {
+    $this->storage[$offset] = $value;
+  }
+
+  public function offsetUnset($offset) {
+    unset($this->storage[$offset]);
+  }
+
+  /**
+   * Flags an offset value to be written to the persistent cache.
+   *
+   * If a value is assigned to a cache object with offsetSet(), by default it
+   * will not be written to the persistent cache unless it is flagged with this
+   * method. This allows items to be cached for the duration of a request,
+   * without necessarily writing back to the persistent cache at the end.
+   *
+   * @param $offset
+   *   The array offset that was request.
+   * @param $persist
+   *   Optional boolean to specify whether the offset should be persisted or
+   *   not, defaults to TRUE. When called with $persist = FALSE the offset will
+   *   be unflagged so that it will not written at the end of the request.
+   */
+  protected function persist($offset, $persist = TRUE) {
+    $this->keysToPersist[$offset] = $persist;
+  }
+
+  /**
+   * Resolves a cache miss.
+   *
+   * When an offset is not found in the object, this is treated as a cache
+   * miss. This method allows classes implementing the interface to look up
+   * the actual value and allow it to be cached.
+   *
+   * @param $offset
+   *   The offset that was requested.
+   *
+   * @return
+   *   The value of the offset, or NULL if no value was found.
+   */
+  abstract protected function resolveCacheMiss($offset);
+
+  /**
+   * Immediately write a value to the persistent cache.
+   *
+   * @param $cid
+   *   The cache ID.
+   * @param $bin
+   *   The cache bin.
+   * @param $data
+   *   The data to write to the persistent cache.
+   * @param $lock
+   *   Whether to acquire a lock before writing to cache.
+   */
+  protected function set($cid, $data, $bin, $lock = TRUE) {
+    // Lock cache writes to help avoid stampedes.
+    // To implement locking for cache misses, override __construct().
+    $lock_name = $cid . ':' . $bin;
+    if (!$lock || lock_acquire($lock_name)) {
+      if ($cached = cache_get($cid, $bin)) {
+        $data = $cached->data + $data;
+      }
+      cache_set($cid, $data, $bin);
+      if ($lock) {
+        lock_release($lock_name);
+      }
+    }
+  }
+
+  public function __destruct() {
+    $data = array();
+    foreach ($this->keysToPersist as $offset => $persist) {
+      if ($persist) {
+        $data[$offset] = $this->storage[$offset];
+      }
+    }
+    if (!empty($data)) {
+      $this->set($this->cid, $data, $this->bin);
+    }
+  }
+}
 
 /**
  * Start the timer with the specified name. If you start and stop the same
@@ -312,31 +479,30 @@ function timer_stop($name) {
 }
 
 /**
- * Find the appropriate configuration directory.
+ * Finds the appropriate configuration directory.
  *
- * Try finding a matching configuration directory by stripping the website's
+ * Finds a matching configuration directory by stripping the website's
  * hostname from left to right and pathname from right to left. The first
- * configuration file found will be used; the remaining will ignored. If no
- * configuration file is found, return a default value '$confdir/default'.
+ * configuration file found will be used and the remaining ones will be ignored.
+ * If no configuration file is found, return a default value '$confdir/default'.
  *
- * Example for a fictitious site installed at
- * http://www.drupal.org:8080/mysite/test/ the 'settings.php' is searched in
- * the following directories:
+ * With a site located at http://www.example.com:8080/mysite/test/, the file,
+ * settings.php, is searched for in the following directories:
  *
- *  1. $confdir/8080.www.drupal.org.mysite.test
- *  2. $confdir/www.drupal.org.mysite.test
- *  3. $confdir/drupal.org.mysite.test
- *  4. $confdir/org.mysite.test
+ *  1. $confdir/8080.www.example.com.mysite.test
+ *  2. $confdir/www.example.com.mysite.test
+ *  3. $confdir/example.com.mysite.test
+ *  4. $confdir/com.mysite.test
  *
- *  5. $confdir/8080.www.drupal.org.mysite
- *  6. $confdir/www.drupal.org.mysite
- *  7. $confdir/drupal.org.mysite
- *  8. $confdir/org.mysite
+ *  5. $confdir/8080.www.example.com.mysite
+ *  6. $confdir/www.example.com.mysite
+ *  7. $confdir/example.com.mysite
+ *  8. $confdir/com.mysite
  *
- *  9. $confdir/8080.www.drupal.org
- * 10. $confdir/www.drupal.org
- * 11. $confdir/drupal.org
- * 12. $confdir/org
+ *  9. $confdir/8080.www.example.com
+ * 10. $confdir/www.example.com
+ * 11. $confdir/example.com
+ * 12. $confdir/com
  *
  * 13. $confdir/default
  *
@@ -344,18 +510,18 @@ function timer_stop($name) {
  * prior to scanning for directories. It should define an associative array
  * named $sites, which maps domains to directories. It should be in the form
  * of:
- *
+ * @code
  * $sites = array(
  *   'The url to alias' => 'A directory within the sites directory'
  * );
- *
+ * @endcode
  * For example:
- *
+ * @code
  * $sites = array(
  *   'devexample.com' => 'example.com',
  *   'localhost.example' => 'example.com',
  * );
- *
+ * @endcode
  * The above array will cause Drupal to look for a directory named
  * "example.com" in the sites directory whenever a request comes from
  * "example.com", "devexample.com", or "localhost/example". That is useful
@@ -364,14 +530,15 @@ function timer_stop($name) {
  * (files, system table, etc.) this will ensure the paths are correct while
  * accessed on development servers.
  *
- * @param $require_settings
+ * @param bool $require_settings
  *   Only configuration directories with an existing settings.php file
  *   will be recognized. Defaults to TRUE. During initial installation,
  *   this is set to FALSE so that Drupal can detect a matching directory,
  *   then create a new settings.php file in it.
- * @param reset
+ * @param bool $reset
  *   Force a full search for matching directories even if one had been
- *   found previously.
+ *   found previously. Defaults to FALSE.
+ *
  * @return
  *   The path of the matching directory.
  */
@@ -1123,13 +1290,12 @@ function drupal_serve_page_from_cache(stdClass $cache) {
     }
   }
 
-  // If a cache is served from a HTTP proxy without hitting the web server,
-  // the boot and exit hooks cannot be fired, so only allow caching in
-  // proxies if boot hooks are disabled. If the client send a session cookie,
-  // do not bother caching the page in a public proxy, because the cached copy
-  // will only be served to that particular user due to Vary: Cookie, unless
-  // the Vary header has been replaced or unset in hook_boot() (see below).
-  $max_age = !variable_get('page_cache_invoke_hooks', TRUE) && (!isset($_COOKIE[session_name()]) || isset($hook_boot_headers['vary'])) ? variable_get('page_cache_maximum_age', 0) : 0;
+  // If the client sent a session cookie, a cached copy will only be served
+  // to that one particular client due to Vary: Cookie. Thus, do not set
+  // max-age > 0, allowing the page to be cached by external proxies, when a
+  // session cookie is present unless the Vary header has been replaced or
+  // unset in hook_boot().
+  $max_age = !isset($_COOKIE[session_name()]) || isset($hook_boot_headers['vary']) ? variable_get('page_cache_maximum_age', 0) : 0;
   $default_headers['Cache-Control'] = 'public, max-age=' . $max_age;
 
   // Entity tag should change if the output changes.
@@ -1222,185 +1388,64 @@ function drupal_unpack($obj, $field = 'data') {
 /**
  * Translates a string to the current language or to a given language.
  *
- * All human-readable text that will be displayed on the site or sent to a user
- * should be passed through the t() function. This ensures that sites can be
- * fully translated into other languages.
+ * The t() function serves two purposes. First, at run-time it translates
+ * user-visible text into the appropriate language. Second, various mechanisms
+ * that figure out what text needs to be translated work off t() -- the text
+ * inside t() calls is added to the database of strings to be translated. So,
+ * to enable a fully-translatable site, it is important that all human-readable
+ * text that will be displayed on the site or sent to a user is passed through
+ * the t() function, or a related function. See the
+ * @link http://drupal.org/node/322729 Localization API @endlink pages for
+ * more information, including recommendations on how to break up or not
+ * break up strings for translation.
  *
- * Here are some examples of translating static text using t():
+ * You should never use t() to translate variables, such as calling
+ * @code t($text); @endcode, unless the text that the variable holds has been
+ * passed through t() elsewhere (e.g., $text is one of several translated
+ * literal strings in an array). It is especially important never to call
+ * @code t($user_text); @endcode, where $user_text is some text that a user
+ * entered - doing that can lead to cross-site scripting and other security
+ * problems. However, you can use variable substitution in your string, to put
+ * variable text such as user names or link URLs into translated text. Variable
+ * substitution looks like this:
  * @code
- *   if (!$info || !$info['extension']) {
- *     form_set_error('picture_upload', t('The uploaded file was not an image.'));
- *   }
- *
- *   $form['submit'] = array(
- *     '#type' => 'submit',
- *     '#value' => t('Log in'),
- *   );
+ * $text = t("@name's blog", array('@name' => format_username($account)));
  * @endcode
+ * Basically, you can put variables like @name into your string, and t() will
+ * substitute their sanitized values at translation time (see $args below or
+ * the Localization API pages referenced above for details). Translators can
+ * then rearrange the string as necessary for the language (e.g., in Spanish,
+ * it might be "blog de @name").
  *
- * In addition to translating static text, t() can handle text that should not
- * be translated or that might change from time to time (such as link paths)
- * and dynamic text from variables, using special "placeholders". There are
- * three styles of placeholders:
- * - !variable: Indicates that the text should be inserted as-is. This is
- *   useful for inserting variables into things like e-mail. Example:
- *   @code
- *     $message[] = t("If you don't want to receive such e-mails, you can change your settings at !url.", array('!url' => url("user/$account->uid", array('absolute' => TRUE))));
- *   @endcode
- * - @variable: Indicates that the text should be run through check_plain(), to
- *   escape HTML characters. Use this for any output that is displayed within a
- *   Drupal page. Example:
- *   @code
- *     drupal_set_title($title = t("@name's blog", array('@name' => format_username($account))), PASS_THROUGH);
- *   @endcode
- * - %variable: Indicates that the string should be HTML-escaped and highlighted
- *   with drupal_placeholder(), which shows up as <em>emphasized</em>.
- *   @code
- *     $message = t('%name-from sent %name-to an e-mail.', array('%name-from' => format_username($user), '%name-to' => format_username($account)));
- *   @endcode
- *
- * When using t(), try to put entire paragraphs in one t() call. This makes it
- * easier for translators, as it provides context as to what each word refers
- * to (and also allows translators to adjust word order, which may not be the
- * same in all languages). HTML markup within translation strings is allowed,
- * but should be avoided if possible. The exception is embedded links: link
- * titles add context for translators and need to be translated, so they should
- * be kept in the main string, while link URLs should be generated using
- * placeholders.
- * - Incorrect HTML in t():
- *   @code
- *     $output .= t('<p>Go to the @contact-page.</p>', array('@contact-page' => l(t('contact page'), 'contact')));
- *   @endcode
- * - Correct HTML in t():
- *   @code
- *     $output .= '<p>' . t('Go to the <a href="@contact-page">contact page</a>.', array('@contact-page' => url('contact'))) . '</p>';
- *   @endcode
- *
- * Another thing that is helpful is to avoid escaping quotation marks wherever
- * possible, because it can be confusing to translation teams.
- * - Less desirable quotation mark escaping:
- *   @code
- *     $output .= t('Don\'t click me.');
- *   @endcode
- * - Better way to use quotation marks:
- *   @code
- *     $output .= t("Don't click me.");
- *   @endcode
- *
- * It is important that all translation uses the t() mechanism, because in
- * addition to actually translating the text at run-time, the t() function is
- * also used by text-extraction routines to find text that needs to be
- * translated, and build databases of text to be translated for translation
- * teams. For that reason, you must put the actual string into the t() function,
- * in most cases, and not a variable.
- * - Incorrect use of a variable in t():
- *   @code
- *     $message = 'An error occurred.';
- *     drupal_set_message(t($message), 'error');
- *     $output .= t($message);
- *   @endcode
- * - Correct translation of a variable with t():
- *   @code
- *     $message = t('An error occurred.');
- *     drupal_set_message($message, 'error');
- *     $output .= $message;
- *   @endcode
- *
- * The only case in which variables can be passed safely through t() is when
- * code-based versions of the same strings will be passed through t() (or
- * otherwise extracted) elsewhere.
- *
- * Also, you cannot use t() early in the bootstrap process, prior to the
- * DRUPAL_BOOTSTRAP_LANGUAGE phase. The language variables will not be
- * initialized yet, so the string will not be translated into the correct
- * language. Examples of places where t() cannot be used include:
- * - In a PHP define() statement.
- * - In a hook_boot() implementation.
- *
- * In some cases, modules may include strings in code that can't use t()
- * calls. For example, a module may use an external PHP application that
- * produces strings that are loaded into variables in Drupal for output.
- * In these cases, module authors may include a dummy file that passes the
- * relevant strings through t(). This approach will allow the strings to be
- * extracted.
- *
- * Sample external (non-Drupal) code:
- * @code
- *   class Time {
- *     public $yesterday = 'Yesterday';
- *     public $today = 'Today';
- *     public $tomorrow = 'Tomorrow';
- *   }
- * @endcode
- *
- * Sample dummy file:
- * @code
- *   // Dummy function included in example.potx.inc.
- *   function example_potx() {
- *     $strings = array(
- *       t('Yesterday'),
- *       t('Today'),
- *       t('Tomorrow'),
- *     );
- *     // No return value needed, since this is a dummy function.
- *   }
- * @endcode
- *
- * Having passed strings through t() in a dummy function, it is then
- * possible to pass variables through t():
- * @code
- *   $time = new Time();
- *   $output .= t($time->today);
- * @endcode
- *
- * However tempting it is, custom data from user input or other non-code
- * sources should not be passed through t(). Doing so leads to the following
- * problems and errors:
- *  - The t() system doesn't support updates to existing strings. When user
- *    data is updated, the next time it's passed through t(), a new record is
- *    created instead of an update. The database bloats over time and any
- *    existing translations are orphaned with each update.
- *  - The t() system assumes any data it receives is in English. User data may
- *    be in another language, producing translation errors.
- *  - The "Built-in interface" text group in the locale system is used to
- *    produce translations for storage in .po files. When non-code strings are
- *    passed through t(), they are added to this text group, which is rendered
- *    inaccurate since it is a mix of actual interface strings and various user
- *    input strings of uncertain origin.
- * Instead, translation of these data can be done through the locale system,
- * either directly through hook_local() or through helper functions provided by
- * contributed modules.
- *
- * Incorrect:
- * @code
- *   $item = item_load();
- *   $output .= check_plain(t($item['title']));
- * @endcode
- *
- * During installation, st() is used in place of t(). Code that may be called
- * during installation or during normal operation should use the get_t()
- * helper function.
+ * During the Drupal installation phase, some resources used by t() wil not be
+ * available to code that needs localization. See st() and get_t() for
+ * alternatives.
  *
  * @param $string
  *   A string containing the English string to translate.
  * @param $args
- *   An associative array of replacements to make after translation. Incidences
- *   of any key in this array are replaced with the corresponding value. Based
- *   on the first character of the key, the value is escaped and/or themed:
- *    - !variable: inserted as is
- *    - @variable: escape plain text to HTML (using check_plain())
- *    - %variable: escape text and theme as a placeholder for user-submitted
- *      content (using check_plain() + drupal_placeholder())
+ *   An associative array of replacements to make after translation.
+ *   Occurrences in $string of any key in $args are replaced with the
+ *   corresponding value, after sanitization. The sanitization function depends
+ *   on the first character of the key:
+ *   - !variable: Inserted as is. Use this for text that has already been
+ *     sanitized.
+ *   - @variable: Escaped to HTML using check_plain(). Use this for anything
+ *     displayed on a page on the site.
+ *   - %variable: Escaped as a placeholder for user-submitted content using
+ *     drupal_placeholder(), which shows up as <em>emphasized</em> text.
  * @param $options
- *   An associative array of additional options, with the following keys:
- *     - 'langcode' (defaults to the current language) The language code to
- *       translate to a language other than what is used to display the page.
- *     - 'context' (defaults to the empty context) The context the source string
- *       belongs to.
+ *   An associative array of additional options, with the following elements:
+ *   - 'langcode' (defaults to the current language): The language code to
+ *     translate to a language other than what is used to display the page.
+ *   - 'context' (defaults to the empty context): The context the source string
+ *     belongs to.
  *
  * @return
  *   The translated string.
  *
+ * @see st()
+ * @see get_t()
  * @ingroup sanitization
  */
 function t($string, array $args = array(), array $options = array()) {
@@ -1547,7 +1592,7 @@ function request_uri() {
  *   The exception that is going to be logged.
  * @param $message
  *   The message to store in the log. If empty, a text that contains all useful
- *   information about the passed in exception is used.
+ *   information about the passed-in exception is used.
  * @param $variables
  *   Array of variables to replace in the message on display. Defaults to the
  *   return value of drupal_decode_exception().
@@ -1643,8 +1688,8 @@ function watchdog($type, $message, $variables = array(), $severity = WATCHDOG_NO
  * messages without clearing them.
  *
  * @param $message
- *   The message should begin with a capital letter and always ends with a
- *   period '.'.
+ *   The message to be displayed to the user. For consistency with other
+ *   messages, it should begin with a capital letter and end with a period.
  * @param $type
  *   The type of the message. One of the following values are possible:
  *   - 'status'
@@ -2363,8 +2408,30 @@ function drupal_installation_attempted() {
 }
 
 /**
- * Return the name of the localization function. Use in code that needs to
- * run both during installation and normal operation.
+ * Returns the name of the proper localization function.
+ *
+ * get_t() exists to support localization for code that might run during
+ * the installation phase, when some elements of the system might not have
+ * loaded.
+ *
+ * This would include implementations of hook_install(), which could run
+ * during the Drupal installation phase, and might also be run during
+ * non-installation time, such as while installing the module from the the
+ * module administration page.
+ *
+ * Example useage:
+ * @code
+ *   $t = get_t();
+ *   $translated = $t('translate this');
+ * @endcode
+ *
+ * Use t() if your code will never run during the Drupal installation phase.
+ * Use st() if your code will only run during installation and never any other
+ * time. Use get_t() if your code could run in either circumstance.
+ *
+ * @see t()
+ * @see st()
+ * @ingroup sanitization
  */
 function get_t() {
   static $t;
@@ -2420,6 +2487,9 @@ function drupal_language_types() {
  * Return true if there is more than one language enabled.
  */
 function drupal_multilingual() {
+  // The "language_count" variable stores the number of enabled languages to
+  // avoid unnecessarily querying the database when building the list of
+  // enabled languages on monolingual sites.
   return variable_get('language_count', 1) > 1;
 }
 
@@ -2491,6 +2561,8 @@ function language_default($property = NULL) {
  *   base_path() returns "/drupalfolder/".
  * - http://example.com/path/alias (which is a path alias for node/306) returns
  *   "path/alias" as opposed to the internal path.
+ * - http://example.com/index.php returns an empty string (meaning: front page).
+ * - http://example.com/index.php?page=1 returns an empty string.
  *
  * @return
  *   The requested Drupal URL path.
@@ -2512,11 +2584,19 @@ function request_path() {
     $path = $_GET['q'];
   }
   elseif (isset($_SERVER['REQUEST_URI'])) {
-    // This is a request using a clean URL. Extract the path from REQUEST_URI.
+    // This request is either a clean URL, or 'index.php', or nonsense.
+    // Extract the path from REQUEST_URI.
     $request_path = strtok($_SERVER['REQUEST_URI'], '?');
     $base_path_len = strlen(rtrim(dirname($_SERVER['SCRIPT_NAME']), '\/'));
     // Unescape and strip $base_path prefix, leaving q without a leading slash.
     $path = substr(urldecode($request_path), $base_path_len + 1);
+    // If the path equals the script filename, either because 'index.php' was
+    // explicitly provided in the URL, or because the server added it to
+    // $_SERVER['REQUEST_URI'] even when it wasn't provided in the URL (some
+    // versions of Microsoft IIS do this), the front page should be served.
+    if ($path == basename($_SERVER['PHP_SELF'])) {
+      $path = '';
+    }
   }
   else {
     // This is the front page.
@@ -2641,6 +2721,55 @@ function ip_address() {
  *   If true, the schema will be rebuilt instead of retrieved from the cache.
  */
 function drupal_get_schema($table = NULL, $rebuild = FALSE) {
+  static $schema;
+
+  if ($rebuild || !isset($table)) {
+    $schema = drupal_get_complete_schema($rebuild);
+  }
+  elseif (!isset($schema)) {
+    $schema = new SchemaCache();
+  }
+
+  if (!isset($table)) {
+    return $schema;
+  }
+  if (isset($schema[$table])) {
+    return $schema[$table];
+  }
+  else {
+    return FALSE;
+  }
+}
+
+/**
+ * Extends DrupalCacheArray to allow for dynamic building of the schema cache.
+ */
+class SchemaCache extends DrupalCacheArray {
+
+  public function __construct() {
+    // Cache by request method.
+    parent::__construct('schema:runtime:' . $_SERVER['REQUEST_METHOD'] == 'GET', 'cache');
+  }
+
+  protected function resolveCacheMiss($offset) {
+    $complete_schema = drupal_get_complete_schema();
+    $value = isset($complete_schema[$offset]) ? $complete_schema[$offset] :  NULL;
+    $this->storage[$offset] = $value;
+    $this->persist($offset);
+    return $value;
+  }
+}
+
+/**
+ * Get the whole database schema.
+ *
+ * The returned schema will include any modifications made by any
+ * module that implements hook_schema_alter().
+ *
+ * @param $rebuild
+ *   If true, the schema will be rebuilt instead of retrieved from the cache.
+ */
+function drupal_get_complete_schema($rebuild = FALSE) {
   static $schema = array();
 
   if (empty($schema) || $rebuild) {
@@ -2682,18 +2811,13 @@ function drupal_get_schema($table = NULL, $rebuild = FALSE) {
       if (!empty($schema) && (drupal_get_bootstrap_phase() == DRUPAL_BOOTSTRAP_FULL)) {
         cache_set('schema', $schema);
       }
+      if ($rebuild) {
+        cache_clear_all('schema:', 'cache', TRUE);
+      }
     }
   }
 
-  if (!isset($table)) {
-    return $schema;
-  }
-  elseif (isset($schema[$table])) {
-    return $schema[$table];
-  }
-  else {
-    return FALSE;
-  }
+  return $schema;
 }
 
 /**

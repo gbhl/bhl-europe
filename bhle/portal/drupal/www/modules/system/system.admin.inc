@@ -1,5 +1,4 @@
 <?php
-// $Id: system.admin.inc,v 1.327 2011/01/04 04:02:29 webchick Exp $
 
 /**
  * @file
@@ -55,6 +54,7 @@ function system_admin_config_page() {
 
 /**
  * Provide a single block from the administration menu as a page.
+ *
  * This function is often a destination for these blocks.
  * For example, 'admin/structure/types' needs to have a destination to be valid
  * in the Drupal menu system, but too much information there might be
@@ -158,7 +158,6 @@ function system_themes_page() {
           'alt' => t('Screenshot for !theme theme', array('!theme' => $theme->info['name'])),
           'title' => t('Screenshot for !theme theme', array('!theme' => $theme->info['name'])),
           'attributes' => array('class' => array('screenshot')),
-          'getsize' => FALSE,
         );
         break;
       }
@@ -350,6 +349,14 @@ function system_theme_default() {
       }
       // Set the default theme.
       variable_set('theme_default', $theme);
+
+      // Rebuild the menu. This duplicates the menu_rebuild() in theme_enable().
+      // However, modules must know the current default theme in order to use
+      // this information in hook_menu() or hook_menu_alter() implementations,
+      // and doing the variable_set() before the theme_enable() could result
+      // in a race condition where the theme is default but not enabled.
+      menu_rebuild();
+
       // The status message depends on whether an admin theme is currently in use:
       // a value of 0 means the admin theme is set to be the default theme.
       $admin_theme = variable_get('admin_theme', 0);
@@ -792,7 +799,7 @@ function system_modules($form, $form_state = array()) {
     $extra['enabled'] = (bool) $module->status;
     if (!empty($module->info['required'] )) {
       $extra['disabled'] = TRUE;
-      $extra['required_by'][] = $distribution_name;
+      $extra['required_by'][] = $distribution_name . (!empty($module->info['explanation']) ? ' ('. $module->info['explanation'] .')' : '');
     }
 
     // If this module requires other modules, add them to the array.
@@ -1030,7 +1037,7 @@ function system_modules_confirm_form($modules, $storage) {
       '@module' => $name,
       '@depends' => implode(', ', $info['depends']),
     );
-    $items[] = format_plural(count($info['depends']), 'The @module module is missing, so the following module will be disabled: @depends.', 'The @module module is missing, so the following module will be disabled: @depends.', $t_argument);
+    $items[] = format_plural(count($info['depends']), 'The @module module is missing, so the following module will be disabled: @depends.', 'The @module module is missing, so the following modules will be disabled: @depends.', $t_argument);
   }
 
   $form['text'] = array('#markup' => theme('item_list', array('items' => $items)));
@@ -1182,11 +1189,6 @@ function system_modules_submit($form, &$form_state) {
   }
 
   $form_state['redirect'] = 'admin/modules';
-
-  // Notify locale module about module changes, so translations can be
-  // imported. This might start a batch, and only return to the redirect
-  // path after that.
-  module_invoke('locale', 'system_update', $actions['install']);
 }
 
 /**
@@ -1755,7 +1757,7 @@ function system_file_system_settings() {
     '#title' => t('Private file system path'),
     '#default_value' => variable_get('file_private_path', ''),
     '#maxlength' => 255,
-    '#description' => t('A local file system path where private files will be stored. This directory must exist and be writable by Drupal. This directory should not be accessible over the web.'),
+    '#description' => t('An existing local file system path for storing private files. It should be writable by Drupal and not accessible over the web. See the online handbook for <a href="@handbook">more information about securing private files</a>.', array('@handbook' => 'http://drupal.org/handbook/modules/file')),
     '#after_build' => array('system_check_directory'),
   );
 

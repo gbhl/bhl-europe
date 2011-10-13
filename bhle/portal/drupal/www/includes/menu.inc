@@ -1,5 +1,4 @@
 <?php
-// $Id: menu.inc,v 1.431 2011/01/04 06:20:30 dries Exp $
 
 /**
  * @file
@@ -14,7 +13,10 @@
  * The Drupal menu system drives both the navigation system from a user
  * perspective and the callback system that Drupal uses to respond to URLs
  * passed from the browser. For this reason, a good understanding of the
- * menu system is fundamental to the creation of complex modules.
+ * menu system is fundamental to the creation of complex modules. As a note,
+ * this is related to, but separate from menu.module, which allows menus
+ * (which in this context are hierarchical lists of links) to be customized from
+ * the Drupal administrative interface.
  *
  * Drupal's menu system follows a simple hierarchy defined by paths.
  * Implementations of hook_menu() define menu items and assign them to
@@ -125,7 +127,7 @@ define('MENU_IS_LOCAL_ACTION', 0x0100);
 /**
  * @defgroup menu_item_types Menu item types
  * @{
- * Definitions for various menu types.
+ * Definitions for various menu item types.
  *
  * Menu item definitions provide one of these constants, which are shortcuts for
  * combinations of @link menu_flags Menu flags @endlink.
@@ -429,6 +431,11 @@ function menu_get_item($path = NULL, $router_item = NULL) {
     $router_items[$path] = $router_item;
   }
   if (!isset($router_items[$path])) {
+    // Rebuild if we know it's needed, or if the menu masks are missing which
+    // occurs rarely, likely due to a race condition of multiple rebuilds.
+    if (variable_get('menu_rebuild_needed', FALSE) || !variable_get('menu_masks', array())) {
+      menu_rebuild();
+    }
     $original_map = arg(NULL, $path);
 
     // Since there is no limit to the length of $path, use a hash to keep it
@@ -488,11 +495,6 @@ function menu_execute_active_handler($path = NULL, $deliver = TRUE) {
 
   // Only continue if the site status is not set.
   if ($page_callback_result == MENU_SITE_ONLINE) {
-    // Rebuild if we know it's needed, or if the menu masks are missing which
-    // occurs rarely, likely due to a race condition of multiple rebuilds.
-    if (variable_get('menu_rebuild_needed', FALSE) || !variable_get('menu_masks', array())) {
-      menu_rebuild();
-    }
     if ($router_item = menu_get_item($path)) {
       if ($router_item['access']) {
         if ($router_item['include_file']) {
@@ -1042,7 +1044,7 @@ function menu_tree_output($tree) {
     }
 
     // Allow menu-specific theme overrides.
-    $element['#theme'] = 'menu_link__' . $data['link']['menu_name'];
+    $element['#theme'] = 'menu_link__' . strtr($data['link']['menu_name'], '-', '_');
     $element['#attributes']['class'] = $class;
     $element['#title'] = $data['link']['title'];
     $element['#href'] = $data['link']['href'];
@@ -2064,7 +2066,7 @@ function menu_local_tasks($level = 0) {
  *   node or array('system', 'navigation') for a certain block.
  *
  * @return
- *   A list of menu router items that are local tasks for the passed in path.
+ *   A list of menu router items that are local tasks for the passed-in path.
  *
  * @see contextual_links_preprocess()
  */
@@ -2319,11 +2321,11 @@ function menu_set_active_trail($new_trail = NULL) {
       }
       list($key, $curr) = each($tree);
     }
-    // Make sure the current page is in the trail (needed for the page title),
-    // if the link's type allows it to be shown in the breadcrumb. Also exclude
-    // it if we are on the front page.
+    // Make sure the current page is in the trail to build the page title, by
+    // appending either the preferred link or the menu router item for the
+    // current page. Exclude it if we are on the front page.
     $last = end($trail);
-    if ($last['href'] != $preferred_link['href'] && ($preferred_link['type'] & MENU_VISIBLE_IN_BREADCRUMB) == MENU_VISIBLE_IN_BREADCRUMB && !drupal_is_front_page()) {
+    if ($last['href'] != $preferred_link['href'] && !drupal_is_front_page()) {
       $trail[] = $preferred_link;
     }
   }
@@ -2338,7 +2340,7 @@ function menu_set_active_trail($new_trail = NULL) {
  *   menu link ('node/5' if it exists, or fallback to 'node/%').
  *
  * @return
- *   A fully translated menu link, or NULL if not matching menu link was
+ *   A fully translated menu link, or NULL if no matching menu link was
  *   found. The most specific menu link ('node/5' preferred over 'node/%') in
  *   the most preferred menu (as defined by menu_get_active_menu_names()) is
  *   returned.
@@ -2694,19 +2696,15 @@ function _menu_navigation_links_rebuild($menu) {
     }
   }
   if ($menu_links) {
+    // Keep an array of processed menu links, to allow menu_link_save() to
+    // check this for parents instead of querying the database.
+    $parent_candidates = array();
     // Make sure no child comes before its parent.
     array_multisort($sort, SORT_NUMERIC, $menu_links);
 
-    foreach ($menu_links as $item) {
+    foreach ($menu_links as $key => $item) {
       $existing_item = db_select('menu_links')
-        ->fields('menu_links', array(
-          'mlid',
-          'menu_name',
-          'plid',
-          'customized',
-          'has_children',
-          'updated',
-        ))
+        ->fields('menu_links')
         ->condition('link_path', $item['path'])
         ->condition('module', 'system')
         ->execute()->fetchAssoc();
@@ -2725,9 +2723,14 @@ function _menu_navigation_links_rebuild($menu) {
         $item['has_children'] = $existing_item['has_children'];
         $item['updated'] = $existing_item['updated'];
       }
-      if (!$existing_item || !$existing_item['customized']) {
+      if ($existing_item && $existing_item['customized']) {
+        $parent_candidates[$existing_item['mlid']] = $existing_item;
+      }
+      else {
         $item = _menu_link_build($item);
-        menu_link_save($item);
+        menu_link_save($item, $existing_item, $parent_candidates);
+        $parent_candidates[$item['mlid']] = $item;
+        unset($menu_links[$key]);
       }
     }
   }
@@ -2891,10 +2894,11 @@ function _menu_delete_item($item, $force = FALSE) {
         menu_link_save($child);
       }
     }
-    db_delete('menu_links')->condition('mlid', $item['mlid'])->execute();
 
-    // Notify modules we have deleted the item.
+    // Notify modules we are deleting the item.
     module_invoke_all('menu_link_delete', $item);
+
+    db_delete('menu_links')->condition('mlid', $item['mlid'])->execute();
 
     // Update the has_children status of the parent.
     _menu_update_parental_status($item);
@@ -2904,24 +2908,37 @@ function _menu_delete_item($item, $force = FALSE) {
 }
 
 /**
- * Save a menu link.
+ * Saves a menu link.
+ *
+ * After calling this function, rebuild the menu cache using
+ * menu_cache_clear_all().
  *
  * @param $item
- *   An array representing a menu link item. The only mandatory keys are
- *   link_path and link_title. Possible keys are:
- *   - menu_name: Default is navigation
- *   - weight: Default is 0
- *   - expanded: Whether the item is expanded.
- *   - options: An array of options, see l() for more.
- *   - mlid: Set to an existing value, or 0 or NULL to insert a new link.
- *   - plid: The mlid of the parent.
- *   - router_path: The path of the relevant router item.
+ *   An associative array representing a menu link item, with elements:
+ *   - link_path: (required) The path of the menu item, which should be
+ *     normalized first by calling drupal_get_normal_path() on it.
+ *   - link_title: (required) Title to appear in menu for the link.
+ *   - menu_name: (optional) The machine name of the menu for the link.
+ *     Defaults to 'navigation'.
+ *   - weight: (optional) Integer to determine position in menu. Default is 0.
+ *   - expanded: (optional) Boolean that determines if the item is expanded.
+ *   - options: (optional) An array of options, see l() for more.
+ *   - mlid: (optional) Menu link identifier, the primary integer key for each
+ *     menu link. Can be set to an existing value, or to 0 or NULL
+ *     to insert a new link.
+ *   - plid: (optional) The mlid of the parent.
+ *   - router_path: (optional) The path of the relevant router item.
+ * @param $existing_item
+ *   Optional, the current record from the {menu_links} table as an array.
+ * @param $parent_candidates
+ *   Optional array of menu links keyed by mlid. Used by
+ *   _menu_navigation_links_rebuild() only.
  *
  * @return
  *   The mlid of the saved menu link, or FALSE if the menu link could not be
  *   saved.
  */
-function menu_link_save(&$item) {
+function menu_link_save(&$item, $existing_item = array(), $parent_candidates = array()) {
   drupal_alter('menu_link', $item);
 
   // This is the easiest way to handle the unique internal path '<front>',
@@ -2940,15 +2957,20 @@ function menu_link_save(&$item) {
     'customized' => 0,
     'updated' => 0,
   );
-  $existing_item = FALSE;
   if (isset($item['mlid'])) {
-    if ($existing_item = db_query("SELECT * FROM {menu_links} WHERE mlid = :mlid", array(':mlid' => $item['mlid']))->fetchAssoc()) {
+    if (!$existing_item) {
+      $existing_item = db_query('SELECT * FROM {menu_links} WHERE mlid = :mlid', array('mlid' => $item['mlid']))->fetchAssoc();
+    }
+    if ($existing_item) {
       $existing_item['options'] = unserialize($existing_item['options']);
     }
   }
+  else {
+    $existing_item = FALSE;
+  }
 
   // Try to find a parent link. If found, assign it and derive its menu.
-  $parent = _menu_link_find_parent($item);
+  $parent = _menu_link_find_parent($item, $parent_candidates);
   if (!empty($parent['mlid'])) {
     $item['plid'] = $parent['mlid'];
     $item['menu_name'] = $parent['menu_name'];
@@ -3082,11 +3104,13 @@ function menu_link_save(&$item) {
  *
  * @param $menu_link
  *   A menu link.
+ * @param $parent_candidates
+ *   An array of menu links keyed by mlid.
  * @return
  *   A menu link structure of the possible parent or FALSE if no valid parent
  *   has been found.
  */
-function _menu_link_find_parent($menu_link) {
+function _menu_link_find_parent($menu_link, $parent_candidates = array()) {
   $parent = FALSE;
 
   // This item is explicitely top-level, skip the rest of the parenting.
@@ -3108,7 +3132,12 @@ function _menu_link_find_parent($menu_link) {
   }
 
   foreach ($candidates as $mlid) {
-    $parent = db_query("SELECT * FROM {menu_links} WHERE mlid = :mlid", array(':mlid' => $mlid))->fetchAssoc();
+    if (isset($parent_candidates[$mlid])) {
+      $parent = $parent_candidates[$mlid];
+    }
+    else {
+      $parent = db_query("SELECT * FROM {menu_links} WHERE mlid = :mlid", array(':mlid' => $mlid))->fetchAssoc();
+    }
     if ($parent) {
       return $parent;
     }

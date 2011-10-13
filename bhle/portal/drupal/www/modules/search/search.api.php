@@ -1,5 +1,4 @@
 <?php
-// $Id: search.api.php,v 1.33 2010/11/21 20:36:36 dries Exp $
 
 /**
  * @file
@@ -107,6 +106,10 @@ function hook_search_reset() {
 
 /**
  * Report the status of indexing.
+ *
+ * The core search module only invokes this hook on active modules.
+ * Implementing modules do not need to check whether they are active when
+ * calculating their return values.
  *
  * @return
  *  An associative array with the key-value pairs:

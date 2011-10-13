@@ -1,5 +1,4 @@
 <?php
-// $Id: simpletest.pages.inc,v 1.33 2010/10/20 01:31:07 dries Exp $
 
 /**
  * @file
@@ -83,8 +82,8 @@ function theme_simpletest_test_table($variables) {
   // Define the images used to expand/collapse the test groups.
   $js = array(
     'images' => array(
-      theme('image', array('path' => 'misc/menu-collapsed.png', 'alt' => t('Expand'), 'title' => t('Expand'))) . ' <a href="#" class="simpletest-collapse">(' . t('Expand') . ')</a>',
-      theme('image', array('path' => 'misc/menu-expanded.png', 'alt' => t('Collapse'), 'title' => t('Collapse'))) . ' <a href="#" class="simpletest-collapse">(' . t('Collapse') . ')</a>',
+      theme('image', array('path' => 'misc/menu-collapsed.png', 'width' => 7, 'height' => 7, 'alt' => t('Expand'), 'title' => t('Expand'))) . ' <a href="#" class="simpletest-collapse">(' . t('Expand') . ')</a>',
+      theme('image', array('path' => 'misc/menu-expanded.png', 'width' => 7, 'height' => 7, 'alt' => t('Collapse'), 'title' => t('Collapse'))) . ' <a href="#" class="simpletest-collapse">(' . t('Collapse') . ')</a>',
     ),
   );
 
@@ -129,7 +128,7 @@ function theme_simpletest_test_table($variables) {
     );
 
     // Sorting $element by children's #title attribute instead of by class name.
-    uasort($element, '_simpletest_sort_by_title');
+    uasort($element, 'element_sort_by_title');
 
     // Cycle through each test within the current group.
     foreach (element_children($element) as $test_name) {
@@ -176,18 +175,6 @@ function theme_simpletest_test_table($variables) {
   else {
     return theme('table', array('header' => $header, 'rows' => $rows, 'attributes' => array('id' => 'simpletest-form-table')));
   }
-}
-
-/**
- * Sort element by title instead of by class name.
- */
-function _simpletest_sort_by_title($a, $b) {
-  // This is for parts of $element that are not an array.
-  if (!isset($a['#title']) || !isset($b['#title'])) {
-    return 1;
-  }
-
-  return strcasecmp($a['#title'], $b['#title']);
 }
 
 /**
@@ -427,10 +414,10 @@ function simpletest_result_status_image($status) {
 
   if (!isset($map)) {
     $map = array(
-      'pass' => theme('image', array('path' => 'misc/watchdog-ok.png', 'alt' => t('Pass'))),
-      'fail' => theme('image', array('path' => 'misc/watchdog-error.png', 'alt' => t('Fail'))),
-      'exception' => theme('image', array('path' => 'misc/watchdog-warning.png', 'alt' => t('Exception'))),
-      'debug' => theme('image', array('path' => 'misc/watchdog-warning.png', 'alt' => t('Debug'))),
+      'pass' => theme('image', array('path' => 'misc/watchdog-ok.png', 'width' => 18, 'height' => 18, 'alt' => t('Pass'))),
+      'fail' => theme('image', array('path' => 'misc/watchdog-error.png', 'width' => 18, 'height' => 18, 'alt' => t('Fail'))),
+      'exception' => theme('image', array('path' => 'misc/watchdog-warning.png', 'width' => 18, 'height' => 18, 'alt' => t('Exception'))),
+      'debug' => theme('image', array('path' => 'misc/watchdog-warning.png', 'width' => 18, 'height' => 18, 'alt' => t('Debug'))),
     );
   }
   if (isset($map[$status])) {

@@ -1,5 +1,4 @@
 <?php
-// $Id: simpletest.module,v 1.97 2010/11/12 03:06:52 dries Exp $
 
 /**
  * @file
@@ -453,13 +452,15 @@ function simpletest_clean_database() {
  * Find all leftover temporary directories and remove them.
  */
 function simpletest_clean_temporary_directories() {
-  $files = scandir('public://simpletest');
   $count = 0;
-  foreach ($files as $file) {
-    $path = 'public://simpletest/' . $file;
-    if (is_dir($path) && is_numeric($file)) {
-      file_unmanaged_delete_recursive($path);
-      $count++;
+  if (is_dir('public://simpletest')) {
+    $files = scandir('public://simpletest');
+    foreach ($files as $file) {
+      $path = 'public://simpletest/' . $file;
+      if (is_dir($path) && is_numeric($file)) {
+        file_unmanaged_delete_recursive($path);
+        $count++;
+      }
     }
   }
 

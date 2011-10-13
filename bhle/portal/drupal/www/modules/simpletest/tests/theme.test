@@ -1,5 +1,4 @@
 <?php
-// $Id: theme.test,v 1.23 2010/11/14 21:04:45 webchick Exp $
 
 /**
  * @file
@@ -43,6 +42,11 @@ class ThemeUnitTest extends DrupalWebTestCase {
     $args = array('node', "1\0");
     $suggestions = theme_get_suggestions($args, 'page');
     $this->assertEqual($suggestions, array('page__node', 'page__node__%', 'page__node__1'), t('Removed invalid \\0 from suggestions'));
+    // Define path with hyphens to be used to generate suggestions.
+    $args = array('node', '1', 'hyphen-path');
+    $result = array('page__node', 'page__node__%', 'page__node__1', 'page__node__hyphen_path');
+    $suggestions = theme_get_suggestions($args, 'page');
+    $this->assertEqual($suggestions, $result, t('Found expected page suggestions for paths containing hyphens.'));
   }
 
   /**

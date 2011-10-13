@@ -6,9 +6,9 @@ configure = admin/config/system/piwik
 
 files[] = piwik.test
 
-; Information added by drupal.org packaging script on 2011-03-28
-version = "7.x-2.1"
+; Information added by drupal.org packaging script on 2011-10-08
+version = "7.x-2.3"
 core = "7.x"
 project = "piwik"
-datestamp = "1301339469"
+datestamp = "1318077407"
 
