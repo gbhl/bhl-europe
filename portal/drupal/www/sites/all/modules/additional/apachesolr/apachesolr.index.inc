@@ -230,116 +230,19 @@ function apachesolr_vocab_name($vid) {
 /**
  * Callback that converts list module field into an array
  */
-function apachesolr_fields_default_indexing_callback($entity, $field_name, $index_key, $field_info) {
+function apachesolr_fields_list_indexing_callback($entity, $field_name, $index_key, $field_info) {
   $fields = array();
   if (!empty($entity->{$field_name})) {
     $field = $entity->$field_name;
     list($lang, $values) = each($field);
-    switch ($field_info['index_type']) {
-      case 'integer':
-      case 'half-int':
-      case 'sint':
-      case 'tint':
-      case 'thalf-int':
-      case 'boolean':
-        $function = 'intval';
-        break;
-      case 'float':
-      case 'double':
-      case 'sfloat':
-      case 'sdouble':
-      case 'tfloat':
-      case 'tdouble':
-        $function = 'apachesolr_floatval';
-        break;
-      default:
-        $function = 'apachesolr_clean_text';
-    }
     foreach ($values as $fval) {
       $fields[] = array(
         'key' => $index_key,
-        'value' => $function($fval['value']),
+        'value' => apachesolr_clean_text($fval['value']),
       );
     }
   }
   return $fields;
-}
-
-/**
- * This function is used during indexing to normalize the DATE and DATETIME
- * fields into the appropriate format for Apache Solr.
- */
-function apachesolr_date_default_indexing_callback($entity, $field_name, $index_key, $field_info) {
-  $fields = array();
-  if (!empty($entity->{$field_name})) {
-    $field = $entity->$field_name;
-    list($lang, $values) = each($field);
-    // Construct a Solr-ready date string in UTC time zone based on the field's date string and time zone.
-    $tz = new DateTimeZone(isset($field['timezone']) ? $field['timezone'] : 'UTC');
-
-    // $fields may end up having two values; one for the start date
-    // and one for the end date.
-    foreach ($values as $value) {
-      if ($date = date_create($value['value'], $tz)) {
-        $index_value = apachesolr_date_iso($date->format('U'));
-        $fields[] = array(
-          'key' => $index_key,
-          'value' => $index_value,
-        );
-      }
-
-      if (isset($value['value2'])) {
-        if ($date = date_create($value['value2'], $tz)) {
-          $index_value = apachesolr_date_iso($date->format('U'));
-          $fields[] = array(
-            // The value2 element is the end date. Therefore it gets indexed
-            // into its own Solr field.
-            'key' => $index_key . '_end',
-            'value' => $index_value,
-          );
-        }
-      }
-    }
-  }
-  return $fields;
-}
-
-/**
- * This function is used during indexing to normalize the DATESTAMP fields
- * into the appropriate format for Apache Solr.
- */
-function apachesolr_datestamp_default_indexing_callback($entity, $field_name, $index_key, $field_info) {
-  $fields = array();
-  if (!empty($entity->{$field_name})) {
-    // $fields may end up having two values; one for the start date
-    // and one for the end date.
-    $field = $entity->$field_name;
-    list($lang, $values) = each($field);
-
-    foreach ($values as $value) {
-      if (isset($value['value']) && $value['value'] != 0) {
-        $index_value = apachesolr_date_iso($value['value']);
-        $fields[] = array(
-          'key' => $index_key,
-          'value' => $index_value,
-        );
-      }
-      if (isset($value['value2']) && $value['value'] != 0) {
-        $index_value = apachesolr_date_iso($value['value2']);
-        $fields[] = array(
-          // The value2 element is the end date. Therefore it gets indexed
-          // into its own Solr field.
-          'key' => $index_key . '_end',
-          'value' => $index_value,
-        );
-      }
-    }
-  }
-  return $fields;
-}
-
-function apachesolr_floatval($value) {
-  return sprintf('%0.20f', $value);
 }
 
 /**

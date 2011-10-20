@@ -507,9 +507,6 @@ class DrupalApacheSolrService {
     if (!isset($parsed_url['user'])) {
       $parsed_url['user'] = '';
     }
-    else {
-      $parsed_url['host'] = '@' . $parsed_url['host'];
-    }
     $parsed_url['pass'] = isset($parsed_url['pass']) ? ':' . $parsed_url['pass'] : '';
     $parsed_url['port'] = isset($parsed_url['port']) ? ':' . $parsed_url['port'] : '';
 
@@ -745,7 +742,7 @@ class DrupalApacheSolrService {
     else if ($method == 'POST') {
       $searchUrl = $this->_constructUrl(self::SEARCH_SERVLET);
       $options['data'] = $queryString;
-      $options['headers']['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
+      $options['headers']['Content-Type'] = 'application/x-www-form-urlencoded';
       return $this->_sendRawPost($searchUrl, $options);
     }
     else {
