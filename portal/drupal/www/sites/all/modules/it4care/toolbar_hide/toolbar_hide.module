@@ -1,0 +1,76 @@
+<?php
+// $Id: toolbar_hide.module,v 1.2.2.6 2010/12/05 14:15:50 joshthegeek Exp $
+/**
+ * @file
+ * Toolbar Hider, to keep the toolbar out of the way.
+ *
+ * Toolbar Hider will hide/show the admin menu with the press of a key.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function toolbar_hide_menu() {
+  $items = array();
+  
+  $items['admin/config/user-interface/toolbar-hide'] = array(
+    'title' => 'Toolbar Hider',
+    'description' => 'Hide/show the toolbar with one keypress.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('toolbar_hide_admin_settings'),
+    'access callback' => 'user_access',
+    'access arguments' => array('administer site configuration'),
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_init().
+ */
+function toolbar_hide_init() {
+  $path = drupal_get_path('module', 'toolbar_hide');
+  $settings = array(
+    'key'     => variable_get('toolbar_hide_key', '`'),
+    'default' => variable_get('toolbar_hide_default', 0),
+  );
+
+  drupal_add_js($path . '/toolbar_hide.js', array('defer' => TRUE));
+  drupal_add_js(array('toolbar_hide' => $settings), array('type' => 'setting', 'scope' => JS_DEFAULT));
+  if (variable_get('toolbar_hide_css',1) == 1)
+  {
+    drupal_add_css($path . '/toolbar_hide.css');
+  }
+}
+
+/**
+ * Form callback for admin settings.
+ */
+function toolbar_hide_admin_settings() {
+  $form = array();
+
+  $form['toolbar_hide_default'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Hide by default'),
+    '#default_value' => variable_get('toolbar_hide_default', 0),
+    '#description' => t('Hide the toolbar by default.'),
+  );
+
+  $form['toolbar_hide_key'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Show/hide key'),
+    '#size' => 1,
+    '#maxlength' => 1,
+    '#default_value' => variable_get('toolbar_hide_key', '`'),
+    '#description' => t('This key will show/hide the toolbar. I recommend using a key that you don\'t use often, like `.'),
+    '#wysiwyg' => FALSE,
+  );
+
+  $form['toolbar_hide_css'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Adjust page margin'),
+    '#default_value' => variable_get('toolbar_hide_css', 1),
+    '#description' => t('Adjsut the page margin when the toolbar is hidden?'),
+  );
+
+  return system_settings_form($form);
+}

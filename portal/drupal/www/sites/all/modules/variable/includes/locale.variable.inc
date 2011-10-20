@@ -20,6 +20,15 @@ function locale_variable_info($options) {
     'description' => t('Enable multilingual support for this content type. If enabled, a language selection field will be added to the editing form, allowing you to select from one of the <a href="!languages">enabled languages</a>. If disabled, new posts are saved with the default language. Existing content will not be affected by changing this option.', array('!languages' => url('admin/config/regional/language', $options)), $options),
     'group' => 'node_type_settings',
   );
+  $variables['language_default'] = array(
+    'title' => t('Site default language'),
+    'type' => 'select',
+    'group' => 'regional_settings',
+    'options callback' => 'locale_variable_options_language', 
+    'format callback' => 'locale_variable_language_default_format',
+    'element callback' => 'locale_variable_language_default_element',
+    'default callback' => 'locale_variable_language_default',
+  );
   return $variables;
 }
 
@@ -43,4 +52,47 @@ function locale_variable_options_language($variable, $options) {
   return locale_language_list('name', TRUE);
 }
 
+/**
+ * Form element for site default language
+ */
+function locale_variable_language_default_element($variable, $options) {
+  $element = variable_form_element_options($variable, $options);
+  //$element['#default_value'] = $element['#default_value']->language;
+  $element['#value_callback'] = 'locale_variable_language_element_value';
+  $element['#element_validate'][] = 'locale_variable_language_element_validate';
+  return $element;
+}
 
+/**
+ * Get language default.
+ */
+function locale_variable_language_default($variable, $options) {
+  return language_default();
+}
+
+/**
+ * Format language object variable
+ */
+function locale_variable_language_default_format($variable, $options = array()) {
+  return !empty($variable['value']) ? check_plain($variable['value']->name) : t('None');
+}
+
+/**
+ * Map form element value to actual value.
+ */
+function locale_variable_language_element_value($element, $input = FALSE, $form_state = array()) {
+  if ($input === FALSE) {
+    return $element['#default_value']->language;
+  }
+  else {
+    return $input;
+  }
+}
+
+/**
+ * Replace language code by language object on submission
+ */
+function locale_variable_language_element_validate($element, &$form_state, $form) {
+  $languages = language_list();
+  $form_state['values'][$element['#name']] = $languages[$form_state['values'][$element['#name']]];
+}

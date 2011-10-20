@@ -1,5 +1,4 @@
 <?php
-// $Id: destinations.db.mysql.inc,v 1.1.4.4 2010/12/07 06:22:59 ronan Exp $
 
 backup_migrate_include('destinations.db');
 
@@ -148,7 +147,7 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
   /**
    * Get a list of tables in the database.
    */
-  function get_table_names() {
+  function _get_table_names() {
     $out = array();
     foreach ($this->_get_tables() as $table) {
       $out[$table['name']] = $table['name'];
@@ -263,6 +262,18 @@ class backup_migrate_destination_db_mysql extends backup_migrate_destination_db 
     }
   
     return $lines;
+  }
+
+  /**
+   * Get the db connection for the specified db.
+   */
+  function _get_db_connection() {
+    if (!$this->connection) {
+      $this->connection = parent::_get_db_connection();
+      // Set the sql mode because the default is ANSI,TRADITIONAL which is not aware of collation or storage engine.
+      $this->connection->exec("SET sql_mode=''");
+    }
+    return $this->connection;
   }
 
   /**

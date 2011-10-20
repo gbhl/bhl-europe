@@ -1,5 +1,4 @@
 <?php
-// $Id: destinations.inc,v 1.2.2.6 2011/01/25 05:35:36 ronan Exp $
 
 
 /**
@@ -258,10 +257,15 @@ function _backup_migrate_destination_get_file_links($destination_id, $file_id) {
  * List the backup files in the given destination.
  */
 function backup_migrate_ui_destination_display_files($destination_id = NULL) {
-  $out = $sort = array();
+  $rows = $sort = array();
   if ($destination = backup_migrate_get_destination($destination_id)) {
-    drupal_set_title(t('@title Files', array('@title' => $destination->get_name())));
+    // Refresh the file listing cache if requested.
+    if (isset($_GET['refresh'])) {
+      $destination->file_cache_clear();
+      drupal_goto($_GET['q']);
+    }
 
+    drupal_set_title(t('@title Files', array('@title' => $destination->get_name())));
     $headers = array(
       array('data' => t('Filename'), 'field' => 'filename'),
       array('data' => t('Date'), 'field' => 'filetime'),
@@ -284,7 +288,7 @@ function backup_migrate_ui_destination_display_files($destination_id = NULL) {
       // Show only files that can be restored from.
       if ($file->is_recognized_type()) {
         $sort[] = $info[$sort_key];
-        $out[] = array_merge(array(
+        $rows[] = array_merge(array(
           check_plain($info['filename']),
           format_date($info['filetime'], 'small'),
           format_interval(time() - $info['filetime'], 1),
@@ -299,14 +303,21 @@ function backup_migrate_ui_destination_display_files($destination_id = NULL) {
       $headers[] = array('data' => t('Operations'), 'colspan' => $ops);
     }
 
-    array_multisort($sort, $sort_dir, $out);
+    array_multisort($sort, $sort_dir, $rows);
 
-    if ($out) {
-      return theme('table', array('header' => $headers, 'rows' => $out));
+    if ($rows) {
+      drupal_add_css(drupal_get_path('module', 'backup_migrate') .'/backup_migrate.css');
+      $out = '';
+      $out .= theme('table', array('header' => $headers, 'rows' => $rows));
     }
     else {
-      return t('There are no backup files to display.');
+      $out = t('There are no backup files to display.');
     }
+   if ($destination->cache_files && $destination->fetch_time) {
+      drupal_add_css(drupal_get_path('module', 'backup_migrate') .'/backup_migrate.css');
+      $out .= '<div class="backup-migrate-cache-time">'. t('This listing was fetched !time ago. !refresh', array('!time' => format_interval(time() - $destination->fetch_time, 1), '!refresh' => l(t('fetch now'), $_GET['q'], array('query' => array('refresh' => 'true'))))) .'</div>';
+    }
+    return $out;
   }
   drupal_goto(BACKUP_MIGRATE_MENU_PATH . "/destination");
 }
@@ -483,6 +494,9 @@ class backup_migrate_destination extends backup_migrate_item {
   var $default_values = array('settings' => array());
   var $singular = 'destination';
   var $plural = 'destinations';
+  var $cache_files = FALSE;
+  var $fetch_time = NULL;
+  var $cache_expire = 86400; // 24 hours
 
   var $destination_type = "";
   var $supported_ops = array();
@@ -567,6 +581,15 @@ class backup_migrate_destination extends backup_migrate_item {
    */
   function save_file($file, $settings) {
     // This must be overriden.
+    $this->file_cache_clear();
+    return $this->_save_file($file, $settings);
+  }
+
+  /**
+   * Save the given file to the destination.
+   */
+  function _save_file($file, $settings) {
+    // This must be overriden.
     return $file;
   }
 
@@ -591,13 +614,68 @@ class backup_migrate_destination extends backup_migrate_item {
    * List all the available files in the given destination with their destination specific id.
    */
   function list_files() {
+    $out = NULL;
+    if ($this->cache_files) {
+      $out = $this->file_cache_get();
+    }
+    if ($out === NULL) {
+      $out = $this->_list_files();
+      if ($this->cache_files) {
+        $this->file_cache_set($out);
+      }
+    }
+    return $out;
+  }
+
+  /**
+   * List all the available files in the given destination with their destination specific id.
+   */
+  function _list_files() {
     return array();
+  }
+
+  /**
+   * Cache the file list.
+   */
+  function file_cache_set($files) {
+    cache_set('backup_migrate_file_list:'. $this->get_id(), $files, 'cache', time() + $this->cache_expire);
+  }
+
+  /**
+   * Retrieve the file list.
+   */
+  function file_cache_get() {
+    backup_migrate_include('files');
+    $cache = cache_get('backup_migrate_file_list:'. $this->get_id());
+    if (!empty($cache->data) && $cache->created > (time() - $this->cache_expire)) {
+      $this->fetch_time = $cache->created;
+      return $cache->data;
+    }
+    $this->fetch_time = 0;
+    return NULL;
+  }
+
+  /**
+   * Retrieve the file list.
+   */
+  function file_cache_clear() {
+    if ($this->cache_files) {
+      $this->file_cache_set(NULL);
+    }
   }
 
   /**
    * Delete the file with the given destination specific id.
    */
   function delete_file($file_id) {
+    $this->file_cache_clear();
+    $this->_delete_file($file_id);
+  }
+
+  /**
+   * Delete the file with the given destination specific id.
+   */
+  function _delete_file($file_id) {
     // This must be overriden.
   }
 
@@ -837,20 +915,20 @@ class backup_migrate_destination extends backup_migrate_item {
   /**
    * Get the form for the settings for this filter.
    */
-  function backup_settings_form(&$form, $settings) {
+  function backup_settings_form($settings) {
+    return array();
   }
 
   /**
    * Get the form for the settings for this filter.
    */
-  function backup_settings_form_validate($form_values) {
+  function backup_settings_form_validate($form, &$form_state) {
   }
 
   /**
    * Submit the settings form. Any values returned will be saved.
    */
-  function backup_settings_form_submit($form_values) {
-    return $form_values;
+  function backup_settings_form_submit($form, &$form_state) {
   }
 
   /**

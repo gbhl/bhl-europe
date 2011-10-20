@@ -62,13 +62,6 @@ function i18n_node_menu() {
 }
 
 /**
- * Menu access callback function.
- */
-function i18n_node_translate_tab_access() {
-  return user_access('translate interface') && user_access('administer content types');
-}
-
-/**
  * Implements hook_block_view_MODULE_DELTA_alter().
  *
  * Set translated help text for node/add pages, replace node_help() text.
@@ -92,7 +85,7 @@ function i18n_node_help($path, $arg) {
   switch ($path) {
     case 'admin/help#i18n_node':
       $output = '<p>' . t('Provides some extended multilingual options for nodes.') . '</p>';
-      $output .= '<p>'. t('Aditionally, if <em>String translation</em> enabled, this module will localize all content type configuration texts.') .'</p>';
+      $output .= '<p>'. t('Additionally, if <em>String translation</em> enabled, this module will localize all content type configuration texts.') .'</p>';
       $output .= '<ul>';
       $output .= '<li>'. t('Content type names') .'</li>';
       $output .= '<li>'. t('Submission guidelines') .'</li>';
@@ -102,7 +95,7 @@ function i18n_node_help($path, $arg) {
       return $output;
     case 'admin/config/regional/i18n':
     case 'admin/config/regional/i18n/node':
-      $output = '<p>' . t('Your can find some more per content type options on the <a href="@configure_content">Content types administration page</a>.', array('@configure_content' => url('admin/structure/types'))) .'</p>';
+      $output = '<p>' . t('You can find some more per content type options on the <a href="@configure_content">Content types administration page</a>.', array('@configure_content' => url('admin/structure/types'))) .'</p>';
       return $output;
   }
 }

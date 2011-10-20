@@ -1,9 +1,8 @@
 <?php
-// $Id: block.test,v 1.64 2010/11/29 06:38:51 webchick Exp $
 
 /**
  * @file
- * Tests for the block module
+ * Tests for block.module.
  */
 
 class BlockTestCase extends DrupalWebTestCase {
@@ -185,6 +184,49 @@ class BlockTestCase extends DrupalWebTestCase {
     $this->assertNoText($title, t('Block was not displayed according to block visibility rules.'));
 
     $this->drupalGet('USER/' . $this->admin_user->uid);
+    $this->assertNoText($title, t('Block was not displayed according to block visibility rules regardless of path case.'));
+
+    // Confirm that the block is not displayed to anonymous users.
+    $this->drupalLogout();
+    $this->drupalGet('');
+    $this->assertNoText($title, t('Block was not displayed to anonymous users.'));
+  }
+
+  /**
+   * Test block visibility when using "pages" restriction but leaving 
+   * "pages" textarea empty
+   */
+  function testBlockVisibilityListedEmpty() {
+    $block = array();
+
+    // Create a random title for the block
+    $title = $this->randomName(8);
+
+    // Create the custom block
+    $custom_block = array();
+    $custom_block['info'] = $this->randomName(8);
+    $custom_block['title'] = $title;
+    $custom_block['body[value]'] = $this->randomName(32);
+    $this->drupalPost('admin/structure/block/add', $custom_block, t('Save block'));
+
+    $bid = db_query("SELECT bid FROM {block_custom} WHERE info = :info", array(':info' => $custom_block['info']))->fetchField();
+    $block['module'] = 'block';
+    $block['delta'] = $bid;
+    $block['title'] = $title;
+
+    // Move block to the first sidebar.
+    $this->moveBlockToRegion($block, $this->regions[1]);
+
+    // Set the block to be hidden on any user path, and to be shown only to
+    // authenticated users.
+    $edit = array();
+    $edit['visibility'] = BLOCK_VISIBILITY_LISTED;
+    $this->drupalPost('admin/structure/block/manage/' . $block['module'] . '/' . $block['delta'] . '/configure', $edit, t('Save block'));
+
+    $this->drupalGet('');
+    $this->assertNoText($title, t('Block was not displayed according to block visibility rules.'));
+
+    $this->drupalGet('user');
     $this->assertNoText($title, t('Block was not displayed according to block visibility rules regardless of path case.'));
 
     // Confirm that the block is not displayed to anonymous users.
@@ -415,7 +457,7 @@ class BlockAdminThemeTestCase extends DrupalWebTestCase {
   public static function getInfo() {
     return array(
       'name' => 'Admin theme block admin accessibility',
-      'description' => "Check whether the block administer page for a disabled theme acccessible if and only if it's the admin theme.",
+      'description' => "Check whether the block administer page for a disabled theme accessible if and only if it's the admin theme.",
       'group' => 'Block',
     );
   }
@@ -665,5 +707,47 @@ class BlockHTMLIdTestCase extends DrupalWebTestCase {
   function testHTMLId() {
     $this->drupalGet('');
     $this->assertRaw('block-block-test-test-html-id', t('HTML id for test block is valid.'));
+  }
+}
+
+
+/**
+ * Unit tests for template_preprocess_block().
+ */
+class BlockTemplateSuggestionsUnitTest extends DrupalUnitTestCase {
+  public static function getInfo() {
+    return array(
+      'name' => 'Block template suggestions',
+      'description' => 'Test the template_preprocess_block() function.',
+      'group' => 'Block',
+    );
+  }
+
+  /**
+   * Test if template_preprocess_block() handles the suggestions right.
+   */
+  function testBlockThemeHookSuggestions() {
+    // Define block delta with underscore to be preprocessed
+    $block1 = new stdClass();
+    $block1->module = 'block';
+    $block1->delta = 'underscore_test';
+    $block1->region = 'footer';
+    $variables1 = array();
+    $variables1['elements']['#block'] = $block1;
+    $variables1['elements']['#children'] = '';
+    template_preprocess_block($variables1);
+    $this->assertEqual($variables1['theme_hook_suggestions'], array('block__footer', 'block__block', 'block__block__underscore_test'), t('Found expected block suggestions for delta with underscore'));
+
+    // Define block delta with hyphens to be preprocessed. Hyphens should be
+    // replaced with underscores.
+    $block2 = new stdClass();
+    $block2->module = 'block';
+    $block2->delta = 'hyphen-test';
+    $block2->region = 'footer';
+    $variables2 = array();
+    $variables2['elements']['#block'] = $block2;
+    $variables2['elements']['#children'] = '';
+    template_preprocess_block($variables2);
+    $this->assertEqual($variables2['theme_hook_suggestions'], array('block__footer', 'block__block', 'block__block__hyphen_test'), t('Hyphens (-) in block delta were replaced by underscore (_)'));
   }
 }

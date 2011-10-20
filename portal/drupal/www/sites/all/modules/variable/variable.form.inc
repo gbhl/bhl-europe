@@ -19,6 +19,9 @@ function variable_form_element($variable, $options = array()) {
   else {
     $element = variable_form_element_default($variable, $options); 
   }
+  if (!empty($variable['validate callback'])) {
+    $element['#validate'][] = $variable['validate callback'];
+  }
   $element += array('#access' => variable_access($variable));
   if (!empty($variable['required'])) {
     $element += array('#required' => TRUE);
@@ -114,9 +117,10 @@ function variable_form_element_unknown($variable, $options = array()) {
 function variable_form_element_options($variable, $options = array()) {
   $element = variable_form_element_default($variable, $options);
   $element['#options'] = $variable['options'];
-  // Depending on the number of options this may be radios or a drop-down
+  // Depending on the number of options this may be radios or a drop-down.
+  // However if there are nested options (an option is an array) it should be always a drop-down.
   if (empty($element['#type'])) {
-    $element['#type'] = count($variable['options']) <= 4 ? 'radios' : 'select';
+    $element['#type'] = count($variable['options']) > 4 || array_filter(array_map('is_array', $variable['options'])) ? 'select' : 'radios';
   }
   return $element;
 }

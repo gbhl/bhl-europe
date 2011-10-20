@@ -20,7 +20,7 @@ function i18n_string_variable_info($options = array()) {
     'type' => 'options',
     'default callback' => 'i18n_string_variable_format_default',
     'access' => 'administer filters',
-    'description' => t('Only the strings that have the text formats selected will be allowed by the translation system. All the others will be deleted next time the strings are refreshed.'),
+    'description' => t('The translation system only translates strings with the selected text formats. All other strings will be ignored and removed from the list of translatable strings.'),
   );
   $variables['i18n_string_source_language'] = array(
     'title' => t('Source language'),
