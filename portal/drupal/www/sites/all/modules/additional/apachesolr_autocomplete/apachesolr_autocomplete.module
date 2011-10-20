@@ -171,6 +171,26 @@ function theme_apachesolr_autocomplete_spellcheck($variables) {
 }
 
 /**
+ * Return the basic set of parameters for the Solr query.
+ * 
+ * @param $suggestions_to_return
+ *   Number of facets to return.
+ * @return array
+ */
+function apachesolr_autocomplete_basic_params($suggestions_to_return) {
+  return array(
+    'facet' => 'true',
+    'facet.field' => array('spell'),
+    // We ask for $suggestions_to_return * 5 facets, because we want
+    // not-too-frequent terms (will be filtered below). 5 is just my best guess.
+    'facet.limit' => $suggestions_to_return * 5,
+    'facet.mincount' => 1,
+    'start' => 0,
+    'rows' => 0,
+  );
+}
+
+/**
  * Helper function that suggests ways to complete partial words.
  *
  * For example, if $keys = "learn", this might return suggestions like:
@@ -194,15 +214,8 @@ function apachesolr_autocomplete_suggest_word_completion($keys, $suggestions_to_
     return array();
   }
   // Ask Solr to return facets that begin with $last_part; these will be the suggestions.
-  $params = array(
-    'facet' => 'true',
-    'facet.field' => array('spell'),
-    'facet.prefix' => $last_part,
-    'facet.limit' => $suggestions_to_return * 5,
-    'facet.mincount' => 1,
-    'start' => 0,
-    'rows' => 0,
-  );
+  $params = apachesolr_autocomplete_basic_params($suggestions_to_return);
+  $params['facet.prefix'] = $last_part;
   // Get array of themed suggestions.
   $result = apachesolr_autocomplete_suggest($first_part, $params, 'apachesolr_autocomplete_highlight', $keys, $suggestions_to_return);
   if ($result && $result['suggestions']) {
@@ -230,16 +243,7 @@ function apachesolr_autocomplete_suggest_additional_term($keys, $suggestions_to_
   }
 
   // Ask Solr to return facets from the 'spell' field to use as suggestions.
-  $params = array(
-    'facet' => 'true',
-    'facet.field' => array('spell'),
-    // We ask for $suggestions_to_return * 5 facets, because we want
-    // not-too-frequent terms (will be filtered below). 5 is just my best guess.
-    'facet.limit' => $suggestions_to_return * 5,
-    'facet.mincount' => 1,
-    'start' => 0,
-    'rows' => 0,
-  );
+  $params = apachesolr_autocomplete_basic_params($suggestions_to_return);
 
   // Initialize arrays
   $suggestions = array();
@@ -255,7 +259,7 @@ function apachesolr_autocomplete_suggest_additional_term($keys, $suggestions_to_
 
   // Suggest using the spellchecker
   if (apachesolr_autocomplete_variable_get_suggest_spellcheck()) {
-    if ($result['response']->spellcheck && $result['response']->spellcheck->suggestions) {
+    if (isset($result['response']->spellcheck) && isset($result['response']->spellcheck->suggestions)) {
       $spellcheck_suggestions = get_object_vars($result['response']->spellcheck->suggestions);
       foreach($spellcheck_suggestions as $word => $value) {
         $replacements[$word] = $value->suggestion[0];
@@ -287,25 +291,20 @@ function apachesolr_autocomplete_suggest($keys, $params, $theme_callback, $orig_
   // Query Solr for $keys so that suggestions will always return results.
   $query = apachesolr_drupal_query($keys);
 
-  // Allow other modules to modify query.
-  apachesolr_modify_query($query,'apachesolr_autocomplete');
+  // This hook allows modules to modify the query and params objects.
+  drupal_alter('apachesolr_query', $query);
   if (!$query) {
     return array();
   }
   apachesolr_search_add_spellcheck_params($query);
-  $params += $query->params;
-
-  // Try to contact Solr.
-  try {
-    $solr = apachesolr_get_solr();
+  foreach ($params as $param => $paramValue) {
+    $query->addParam($param, $paramValue);
   }
-  catch (Exception $e) {
-    watchdog('apachesolr_autocomplete', $e->getMessage(), NULL, WATCHDOG_ERROR);
-    return array();
-  }
+  apachesolr_search_add_boost_params($query);
 
   // Query Solr
-  $response = $solr->search($keys, $params['start'], $params['rows'], $params);
+  $response = $query->search($keys);
+  // Loop through requested fields and get suggestions.
   foreach ($params['facet.field'] as $field) {
     foreach ($response->facet_counts->facet_fields->{$field} as $terms => $count) {
       $terms = preg_replace('/[_-]+/', ' ', $terms);
@@ -315,7 +314,7 @@ function apachesolr_autocomplete_suggest($keys, $params, $theme_callback, $orig_
             $matches[$term] += $count;
           }
           else {
-            $matches[$term] = 1;
+            $matches[$term] = $count;
           }
         }
       }

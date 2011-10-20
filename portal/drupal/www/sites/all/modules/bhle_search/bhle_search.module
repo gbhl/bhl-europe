@@ -1,9 +1,4 @@
 <?php
-// Initialize the session array (if necessary)
-if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditions'])) {
-    $_SESSION['bhle_search'] = array('conditions' => array());
-}
-
 /**
  * Implements hook_search_info()
  */
@@ -21,46 +16,29 @@ function bhle_search_search_info() {
 function bhle_search_form_search_form_alter(&$form, $form_state) {
     $conditions = $_SESSION['bhle_search']['conditions'];
     
-    $form['basic']['title'] = array(
+    $form['title'] = array(
         '#type' => 'checkbox',
         '#title' => t('Title'),
         '#default_value' => (isset($conditions['title'])) ? $conditions['title'] : 1,
-        '#weight' => -10,
     );
     
-    $form['basic']['author'] = array(
+    $form['author'] = array(
         '#type' => 'checkbox',
         '#title' => t('Author'),
         '#default_value' => (isset($conditions['author'])) ? $conditions['author'] : 1,
-        '#weight' => -9,
     );
     
-    $form['basic']['year'] = array(
+    $form['year'] = array(
         '#type' => 'checkbox',
         '#title' => t('Year'),
         '#default_value' => (isset($conditions['year'])) ? $conditions['year'] : 1,
-        '#weight' => -8,
     );
     
-    $form['basic']['taxon_name'] = array(
+    $form['taxon_name'] = array(
         '#type' => 'checkbox',
         '#title' => t('Taxon Name'),
         '#default_value' => (isset($conditions['taxon_name'])) ? $conditions['taxon_name'] : 0,
-        '#weight' => -7,
     );
-    
-    // add a label (required for layout)
-    $form['basic']['search_description'] = array(
-        '#markup' => t('<label>simple search all</label>'),
-        '#weight' => -6,
-    );
-    
-    // modify simple keys enter form
-    $form['basic']['keys']['#attributes'] = array(
-        'onblur' => "if (this.value == '') {this.value = '" . t('type what do you want to search') . "';}",
-        'onfocus' => "if (this.value == '" . t('type what do you want to search') . "') {this.value = '';}"
-    );
-    if( empty($form['basic']['keys']['#default_value']) ) $form['basic']['keys']['#default_value'] = t('type what do you want to search');
     
     $form['#validate'][] = 'bhle_search_simple_validate';
     
@@ -73,20 +51,9 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
 function bhle_search_simple_validate($form, &$form_state) {
     $conditions = array();
     
-    // Check for a valid date
-    $year = $form_state['values']['year'];
-    // Check if we just have a number
-    if( !is_numeric($year) ) $year = strtotime( $year );
-    if( $year === false ) {
-        form_set_error('year', t('Invalid year format'));
-    }
-    else {
-        $year = date( '%N', $year );
-    }
-    
     $conditions['title'] = $form_state['values']['title'];
     $conditions['author'] = $form_state['values']['author'];
-    $conditions['year'] = $year;
+    $conditions['year'] = $form_state['values']['year'];
     $conditions['taxon_name'] = $form_state['values']['taxon_name'];
     
     // Official way to handle sessions is by directly writing into the super-globals
@@ -106,7 +73,7 @@ function bhle_search_conditions($keys) {
  * Execute the search and return the results
  */
 function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
-    $solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
+    $solr = apachesolr_get_solr( 1 );
     $query = '';
     $results = array();
     
@@ -124,7 +91,6 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $query .= ' ' . variable_get('bhle_search_taxon_name_field', 'keywords') . ':"' . $keys . '"';
     }
     
-    try {
     // Query solr
     $responseObj = $solr->search($query);
     $response = $responseObj->response;
@@ -138,10 +104,6 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 'title' => $doc->name,
             );
         }
-    }
-    }
-    catch( Exception $e ) {
-        
     }
     
     return $results;
@@ -220,21 +182,6 @@ function bhle_search_config_simple_form($form, &$form_state) {
         '#size' => 15,
         '#description' => t('Set the Apache Solr index field which contains the taxon name information.'),
         '#required' => TRUE,
-    );
-    
-    // Load all environments from the apachesolr module and list them in our settings
-    $environments = apachesolr_load_all_environments();
-    $options = array();
-    foreach( $environments as $id => $environment ) {
-        $options[$id] = $environment['name'];
-    }
-    $form['bhle_search_solr_core'] = array(
-        '#type' => 'select',
-        '#title' => t('Apache Solr core to use for querying.'),
-        '#default_value' => variable_get('bhle_search_solr_core', 'solr'),
-        '#description' => t('Set the Apache Solr core which is used for executing a query.'),
-        '#required' => TRUE,
-        '#options' => $options,
     );
 
     return system_settings_form($form);

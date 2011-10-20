@@ -2,8 +2,8 @@
 <!-- $Id: foxmlToSolr.xslt $ -->
 <xsl:stylesheet version="1.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    	xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
-    		exclude-result-prefixes="exts"
+    xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
+    exclude-result-prefixes="exts"
 		xmlns:foxml="info:fedora/fedora-system:def/foxml#"
 		xmlns:dc="http://purl.org/dc/elements/1.1/"
 		xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
