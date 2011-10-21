@@ -4,18 +4,19 @@
   <groupId>com.atos</groupId>
   <artifactId>bookreader</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>bookreader Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>bookreader</finalName>
-  </build>
+	<build>
+		<finalName>bookreader</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<outputDirectory>${env.FEDORA_HOME}/tomcat/webapps</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
