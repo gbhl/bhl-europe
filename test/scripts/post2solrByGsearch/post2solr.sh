@@ -4,7 +4,7 @@ JAVA=/usr/bin/java
 XALAN_BASE=/opt/xalan-j_2_7_1
 FGSEARCH_BASE=/home/andreas/workspaces/bhle/opt/fedoragsearch
 SOLR_POST=/opt/apache-solr-3.3.0/example/exampledocs/post.jar
-ULR=http://127.0.0.1:8983/solr/core3/update
+ULR=http://127.0.0.1:8983/solr/core/update
 
 if [ "$1" == "" -o "$2" == "" ]; then
 	cat <<EOT
