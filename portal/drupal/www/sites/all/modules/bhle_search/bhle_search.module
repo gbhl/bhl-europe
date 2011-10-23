@@ -15,6 +15,7 @@ function bhle_search_search_info() {
     );
 }
 
+
 /**
  * Helper function for modifying the search form block
  */
@@ -62,6 +63,7 @@ function bhle_search_simple_search_alter(&$form) {
     if(module_exists("apachesolr_autocomplete")){
     	$element = &$form['basic']['keys'];
     	apachesolr_autocomplete_do_alter($element);
+    	drupal_add_css( drupal_get_path('module', 'bhle_search') . '/bhle_search.css');
     }
 
     return $form;
@@ -278,3 +280,5 @@ function bhle_search_config_simple_form($form, &$form_state) {
 function bhle_search_config_advanced_form($form, &$form_state) {
     return system_settings_form($form);
 }
+
+
