@@ -48,7 +48,7 @@ function apachesolr_taxonomy_term_page($term) {
 
   if (user_access('search content')) {
     $_GET['retain-filters'] = 1; // Encourages the user to keep the taxonomy filter on next search.
-    $results = apachesolr_search_run('', array('qt' => 'standard', 'q' => 'tid:' . $term->tid), variable_get('apachesolr_search_taxonomy_sort', 'ds_created desc'), 'search/apachesolr_search', isset($_GET['page']) ? $_GET['page'] : 0);
+    $results = apachesolr_search_run('', 'tid:' . $term->tid, variable_get('apachesolr_search_taxonomy_sort', 'ds_created desc'), 'search/apachesolr_search', isset($_GET['page']) ? $_GET['page'] : 0);
 
     if ($results) {
       foreach ($results as $entry) {

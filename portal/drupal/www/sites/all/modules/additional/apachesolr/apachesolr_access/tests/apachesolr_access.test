@@ -1,7 +1,7 @@
 <?php
 
 class DrupalApacheSolrNodeAccess extends DrupalWebTestCase {
-  public static function getInfo() {
+  function getInfo() {
     return array(
       'name' => 'Node Access',
       'description' => 'Test Access Control',
@@ -73,18 +73,17 @@ class DrupalApacheSolrNodeAccess extends DrupalWebTestCase {
     apachesolr_access_apachesolr_update_index($document, $author_restricted_node, 'apachesolr_search');
     $field = 'access_node_' . apachesolr_site_hash() . '_nodeaccess_author';
     $this->assertEqual($document->{$field}[0], $basic_user->uid, 'Solr Document being indexed is restricted by the proper author');
-
+ 
     // Test addition of filters to query.
     $subquery = apachesolr_access_build_subquery($basic_user);
 
     $expected_criterion = array(
       'access__all' => 0,
       'access_node_' . apachesolr_site_hash() . '_all' => 0,
-      // The node access_test module writes this as of core 7.3.
-      'access_node_' . apachesolr_site_hash() . '_node_access_test_author' => $basic_user->uid,
       // @todo - we need to check grants provided by node_access_test module.
  //     'access_node_' . apachesolr_site_hash() . '_nodeaccess_rid' => array(2, $assigned_role),
  //     'access_node_' . apachesolr_site_hash() . '_nodeaccess_uid' => $basic_user->uid,
+ //     'access_node_' . apachesolr_site_hash() . '_nodeaccess_author' => $basic_user->uid,
     );
 
     $fields = $subquery->getFilters();
@@ -117,9 +116,10 @@ class DrupalApacheSolrNodeAccess extends DrupalWebTestCase {
     // Do some manipulation to avoid having to guess the order.
     $filter = trim(end($search['params']['fq']), ')(');
     $parts = explode(' OR ', $filter);
-    $this->assertEqual(count($expected_criterion), count($parts), 'Number of parts is the same as the number of critera');
+    $this->assertEqual(count($expected_criterion), count($parts), 'Number of parts is the same as the numebr of critera');
     foreach ($expected_criterion as $k => $v) {
       $this->assertTrue(in_array("$k:$v", $parts), "Filter $k:$v found in the parts");
     }
   }
 }
+

@@ -99,6 +99,7 @@ class ApacheSolrFacetapiDate extends FacetapiQueryTypeDate implements FacetapiQu
         );
       }
     }
+
     // Returns the range information.
     return $return;
   }
@@ -124,6 +125,7 @@ class ApacheSolrFacetapiDate extends FacetapiQueryTypeDate implements FacetapiQu
     // relationships.
     $parent = NULL;
     foreach ($this->adapter->getActiveItems($this->facet) as $value => $item) {
+
       // Builds the raw facet "value", the count for selected items will be the
       // total number of rows returned in the query.
       $build[$value] = array('#count' => $total);
@@ -148,10 +150,8 @@ class ApacheSolrFacetapiDate extends FacetapiQueryTypeDate implements FacetapiQu
     }
 
     $end = (!empty($raw_data['end'])) ? $raw_data['end'] : '';
-    $start = (!empty($raw_data['start'])) ? $raw_data['start'] : '';
     $gap = (!empty($raw_data['gap'])) ? $raw_data['gap'] : '';
 
-    unset($raw_data['start']);
     unset($raw_data['end']);
     unset($raw_data['gap']);
 
@@ -178,6 +178,7 @@ class ApacheSolrFacetapiDate extends FacetapiQueryTypeDate implements FacetapiQu
         }
       }
     }
+
     return $build;
   }
 }

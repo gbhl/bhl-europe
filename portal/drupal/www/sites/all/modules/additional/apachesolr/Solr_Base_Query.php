@@ -275,7 +275,6 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
     'hl.regex.slop' => TRUE,
     'hl.regex.pattern' => TRUE,
     'hl.regex.maxAnalyzedChars' => TRUE,
-    'spellcheck' => TRUE,
   );
 
   public function getParam($name) {
@@ -316,11 +315,6 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
       // Something complicated
       $exclude = !empty($matches[1]);
       $this->addFilter('', $matches[2], $exclude, $local);
-    }
-    elseif (preg_match('/(-|)([^:]+):(\(.+\))/', $string, $matches)) {
-      // Something with a complicated right-hand-side.
-      $exclude = !empty($matches[1]);
-      $this->addFilter($matches[2], $matches[3], $exclude, $local);
     }
     elseif (preg_match('/(-|)([^:]+):(\S+)/', $string, $matches)) {
       //$index_fields = (array) $this->solr->getFields();

@@ -285,6 +285,17 @@
       </analyzer>
     </fieldType>
 
+    <fieldType name="text_spell" class="solr.TextField" positionIncrementGap="100">
+     <analyzer>
+       <tokenizer class="solr.StandardTokenizerFactory" />
+       <filter class="solr.ICUNormalizer2FilterFactory" name="nfkc_cf" mode="compose"/><!-- for unicode normalization see http://unicode.org/reports/tr15/ -->
+       <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt"/>
+       <filter class="solr.LengthFilterFactory" min="4" max="20" />
+       <filter class="solr.LowerCaseFilterFactory" />
+       <filter class="solr.RemoveDuplicatesTokenFilterFactory" />
+     </analyzer>
+   </fieldType>
+
     <!-- A text field with defaults appropriate for English: it
          tokenizes with StandardTokenizer, removes English stop words
          (stopwords_en.txt), down cases, protects words from protwords.txt, and
@@ -556,6 +567,22 @@
    <field name="all__exact" type="text_exact" indexed="true" termVectors="false" stored="false" multiValued="true"/>
    <!-- catchall text field that indexes tokens both normally and in reverse for efficient leading wildcard queries. -->
    <field name="all__rev" type="text_general_rev" indexed="true" stored="false" multiValued="true"/>
+
+   	<!-- This field is used to build the spellchecker index
+   		 it should contain the contents of all fields which
+   		 are searchable by the simple search:
+   		 	* title
+   		 	* yournal title
+   		 	* author
+   		 	* year
+   		 	* taxon name
+   	-->
+   <field name="spell" type="text_spell" indexed="true" stored="true" multiValued="true"/>
+   <copyField source="dc_title" dest="spell"/>
+   <copyField source="dc_creator" dest="spell"/>
+   <copyField source="dc_subject" dest="spell"/>
+   <copyField source="dc_date" dest="spell"/>
+   <copyField source="dc_dateIssued" dest="spell"/>
 
    <!-- unused fiels from example, keeping as reference
 		<field name="payloads" type="payloads" indexed="true" stored="true"/>

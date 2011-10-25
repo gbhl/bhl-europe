@@ -4,7 +4,7 @@
 	<groupId>net.atos</groupId>
 	<artifactId>booktoolbox</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>BHL-Europe Book Toolbox</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -51,11 +51,20 @@
 	<build>
 		<finalName>booktoolbox</finalName>
 		<plugins>
+		<!--
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
 					<port>9090</port>
+				</configuration>
+			</plugin>
+		-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<outputDirectory>${env.FEDORA_HOME}/tomcat/webapps</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>

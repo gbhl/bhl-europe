@@ -73,33 +73,6 @@ class ApacheSolrFacetapiAdapter extends FacetapiAdapter {
   }
 
   /**
-   * Returns the search path.
-   *
-   * @return string
-   *   A string containing the search path.
-   *
-   * @todo D8 should provide an API function for this.
-   */
-  public function getSearchPath() {
-    $query = apachesolr_current_query();
-    if (NULL === $this->searchPath && NULL === $query->getPath()) {
-      if ($path = module_invoke($this->info['module'] . '_search', 'search_info')) {
-        $this->searchPath = 'search/' . $path['path'];
-        if (!isset($_GET['keys']) && ($keys = $this->getSearchKeys())) {
-          $this->searchPath .= '/' . $keys;
-        }
-      }
-    }
-    if (NULL === $query->getPath()) {
-       return $this->searchPath;
-    }
-    else {
-      return $query->getPath();
-    }
-
-  }
-
-  /**
    * Returns the nmber of total results found for the current search.
    */
   public function getResultCount() {
