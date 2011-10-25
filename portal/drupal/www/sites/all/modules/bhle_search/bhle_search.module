@@ -26,7 +26,6 @@ function bhle_search_search_info() {
     );
 }
 
-
 /**
  * Implements hook_FORMID_form_alter()
  * (aka Simple Search)
@@ -128,13 +127,19 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
                 'class' => ( $weight == count($conditions) ) ? array('last') : array(''),
             ),
             
+            'term_label_' . $weight => array(
+                '#type' => 'markup',
+                '#markup' => '<label>' . t('type what do you want to search') . '</label>',
+            ),
+            
             'term_' . $weight => array(
                 '#type' => 'textfield',
                 '#title' => t(''),
-                '#default_value' => (!empty($condition['term'])) ? $condition['term'] : t('type what do you want to search'),
+                //'#default_value' => (!empty($condition['term'])) ? $condition['term'] : t('type what do you want to search'),
+                '#default_value' => (!empty($condition['term'])) ? $condition['term'] : '',
                 '#attributes' => array(
                     //'onblur' => "if (this.value == '') {this.value = '" . t('type what do you want to search') . "';}",
-                    'onfocus' => "if (this.value == '" . t('type what do you want to search') . "') {this.value = '';}",
+                    //'onfocus' => "if (this.value == '" . t('type what do you want to search') . "') {this.value = '';}",
                 ),
             ),
             
@@ -351,26 +356,24 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $query .= $condition['field'] . ':' . $query_term;
     }
     
-    var_dump( $query );
-    
     try {
-    // Query solr
-    $responseObj = $solr->search($query);
-    $response = $responseObj->response;
-    // Check if we found something
-    if( $response->numFound > 0 ) {
-        $docs = $response->docs;
-		$titleField = variable_get('bhle_search_title_field', 'name');
-        foreach( $docs as $doc ) {
-			$titleArray = $doc->$titleField; // the solr response contains an array per field!!!
-            $results[] = array(
-                'link' => url('empty.html'),
-            	'title' => $titleArray[0]
-            );
+        // Query solr
+        $responseObj = $solr->search($query);
+        $response = $responseObj->response;
+        // Check if we found something
+        if ($response->numFound > 0) {
+            $docs = $response->docs;
+            $titleField = variable_get('bhle_search_title_field', 'name');
+            foreach ($docs as $doc) {
+                $titleArray = $doc->$titleField; // the solr response contains an array per field!!!
+                $results[] = array(
+                    'link' => url('empty.html'),
+                    'title' => $titleArray[0]
+                );
+            }
         }
     }
-    }
-    catch( Exception $e ) {
+    catch (Exception $e) {
     }
 
     return $results;
