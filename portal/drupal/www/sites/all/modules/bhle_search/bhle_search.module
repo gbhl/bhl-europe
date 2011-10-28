@@ -381,7 +381,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 }
             }
             // Check if we are looking for a scientific name
-            else if( $condition['field'] == variable_get('bhle_search_scienific_name_field', 'keywords') ) {
+            else if( $condition['field'] == variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) ) {
                 if( module_exists('names_lookup') ) {
                     $synonyms_list = names_lookup_synonyms( $condition['term'] );
 
@@ -415,7 +415,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         // Check if we found something
         if ($response->numFound > 0) {
             $docs = $response->docs;
-            $titleField = variable_get('bhle_search_title_field', 'name');
+            $titleField = variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD);
             foreach ($docs as $doc) {
                 $titleArray = $doc->$titleField; // the solr response contains an array per field!!!
                 $results[] = array(
