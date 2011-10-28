@@ -86,7 +86,7 @@ public class BookPDFServlet extends HttpServlet {
 		for (int i = 0; i < pagePIDs.size(); i++) {
 			try {
 				URL pdfURL = new URL(FedoraObjectService.getURLFromPID(pagePIDs.get(i))
-						+ "/methods/demo:pageSdef/pdf?definition=" + definition);
+						+ "/methods/bhle-service:pageSdef/pdf?definition=" + definition);
 				PdfReader pdfReader = new PdfReader(pdfURL);
 				PdfTemplate page = writer.getImportedPage(pdfReader, 1);
 				document.newPage();

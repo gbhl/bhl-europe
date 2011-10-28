@@ -17,7 +17,7 @@ public class ResourceIndex {
 		PostMethod post = new PostMethod(GlobalParameter.BASE_URL + "/"
 				+ GlobalParameter.FEDORA + "/" + GlobalParameter.RESOURCE_INDEX);
 		String query = "select $object from <#ri> "
-				+ "where ($object <fedora-model:hasModel> <fedora:ilives:pageCModel> "
+				+ "where ($object <fedora-model:hasModel> <fedora:islandora:pageCModel> "
 				+ "and $object <fedora-rels-ext:isMemberOf> <fedora:" + pid
 				+ ">)";
 		NameValuePair[] data = { new NameValuePair("type", "tuples"),
