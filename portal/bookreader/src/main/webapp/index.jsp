@@ -3,14 +3,56 @@
 <html>
 <head>
     <title>BHL Europe </title>
+    <%@ page import="org.apache.commons.httpclient.*, org.apache.commons.httpclient.methods.*, java.io.IOException, java.text.DecimalFormat" %>
     <% 
-        String basePath = "http://localhost:8080";
+        String basePath = "http://bhl-test.nhm.ac.uk";
         String fedoraPath = "fedora";
+        int pageCount = 0;
+        String pid = request.getParameter("pid");
+        
+        HttpClient client = new HttpClient();
+		PostMethod post = new PostMethod("http://localhost:8080/fedora/risearch");
+		String query = "select $object from <#ri> "
+				+ "where ($object <fedora-model:hasModel> <fedora:islandora:pageCModel> "
+				+ "and $object <fedora-rels-ext:isMemberOf> <fedora:" + pid + ">)";
+		NameValuePair[] data = { new NameValuePair("type", "tuples"),
+				new NameValuePair("format", "count"),
+				new NameValuePair("lang", "iTQL"),
+				new NameValuePair("query", query) };
+		post.setRequestBody(data);
+		try {
+			client.executeMethod(post);
+			String pageCountString = post.getResponseBodyAsString();
+			pageCount = Integer.valueOf(pageCountString);
+		} catch (HttpException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		DecimalFormat formatter = new DecimalFormat("000");
+		String pageDimensionsArray = "[";
+		for (int i = 1 ; i <= pageCount; i++ ){
+			GetMethod get = new GetMethod("http://localhost:8080/fedora/objects/" + pid + "-" + formatter.format(i) + "/datastreams/DIMENSION/content");
+			try {
+				client.executeMethod(get);
+				String pageDimensions = get.getResponseBodyAsString();
+				pageDimensionsArray += "'";
+				pageDimensionsArray += pageDimensions;
+				pageDimensionsArray += "'";
+				pageDimensionsArray += ",";
+			} catch (HttpException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		pageDimensionsArray += "]";
     %>
-    <link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReader.css"/>
+	<link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReader.css"/>
     <!-- Custom CSS overrides -->
     <link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReaderBHLE.css"/>
-
+    
     <script type="text/javascript" src="http://www.archive.org/includes/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="http://www.archive.org/bookreader/jquery-ui-1.8.5.custom.min.js"></script>
 
@@ -34,55 +76,6 @@
 </div>
 
 <script type="text/javascript">
-function getPageCount(pid){
-	var query = 'select $object from <#ri> ';
-	query += 'where ($object <fedora-model:hasModel> <fedora:ilives:pageCModel> and $object <fedora-rels-ext:isMemberOf>';
-	query += ' <fedora:' + pid + '>) order by $object';
-
-	var riUrl = '<%= basePath %>/<%= fedoraPath %>/risearch';
-	var options = {
-			  type: 'tuples',
-			  lang: 'itql',
-			  format: 'count',
-			  dt: 'on',
-			  query: query
-		  };
-	
-	var pageCount = $.ajax({
-      url: riUrl,
-      type: "POST",
-      data: options,
-      async:false
-   }
-	).responseText;
-
-	return parseInt(pageCount);
-}
-
-function getUrlVars(index) {
- var vars = [], hash;
- var url = window.location.href;
- 
- if (url.indexOf('#') == -1 ){
-	var hashes = url.slice(url.indexOf('?') + 1).split('&');
- } else {
-	var hashes = url.slice(url.indexOf('?') + 1, url.indexOf('#')).split('&');
- }
-
- for(var i = 0; i < hashes.length; i++) {
-   hash = hashes[i].split('=');
-   vars.push(hash[0]);
-   
-   if (hash[0] == index) {
-	return hash[1];
-   }
-   vars[hash[0]] = hash[1];
- }
- return vars;
-}
-
-console.log(location);
-
 // Create the BookReader object
 br = new BookReader();
 
@@ -96,23 +89,31 @@ br.pid = '<%= request.getParameter("pid") %>';
 // Extract variable pid from URL
 br.ui = '<%= request.getParameter("ui") %>';
 
-br.server = '<%= basePath %>/booktoolbox';
+br.pageDimensions = <%= pageDimensionsArray %>;
 
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
-    return 800;
+	if (br.pageDimensions[index] != undefined){
+		return parseInt(br.pageDimensions[index].split("x")[0]);
+	} else {
+		return 800;
+	}
 }
 
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
-    return 1200;
+	if (br.pageDimensions[index] != undefined){
+		return parseInt(br.pageDimensions[index].split("x")[1]);
+	} else {
+		return 1200;
+	}
 }
 
 br.getPageURI = function(index, reduce, rotate) {
  var leafStr = '000';            
- var imgStr = (index+1).toString();
+ var imgStr = br.getPageNum(index).toString();
  var re = new RegExp("0{"+imgStr.length+"}$");
- var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/demo:pageSdef/jpeg';
+ var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/bhle-service:pageSdef/jpeg';
  return url;
 }
 
@@ -172,11 +173,11 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = getPageCount(br.pid);
+br.numLeafs = <%= pageCount %>;
 
 //Book title and the URL used for the book title link
-br.bookTitle= br.pid.split(':')[1] + ' on BHL Europe';
-br.bookUrl  = 'http://bhl-int1.nhm.ac.uk/datamanagement';
+br.bookTitle= 'BHL Europe';
+br.bookUrl  = 'http://bhl-test.nhm.ac.uk/dm';
 
 // Override the path used to find UI images
 br.imagesBaseURL = br.basepath + '/bookreader/images/';
@@ -190,6 +191,7 @@ br.init();
 
 // read-aloud and search need backend compenents and are not supported in the demo
 $('#BRtoolbar').find('.read').hide();
+$('#BRtoolbar').find('.info').hide();
 //$('#textSrch').hide();
 //$('#btnSrch').hide();
 </script>

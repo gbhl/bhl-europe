@@ -2727,7 +2727,7 @@ BookReader.prototype.search = function(term) {
     
     $('#textSrch').blur(); //cause mobile safari to hide the keyboard     
     
-    var url = this.basepath + '/' + this.fedorapath + '/objects/' + this.pid + '/methods/demo:bookSdef/search?query=' + escape(term);
+    var url = this.basepath + '/' + this.fedorapath + '/objects/' + this.pid + '/methods/bhle-service:bookSdef/search?query=' + escape(term);
     
     term = term.replace(/\//g, ' '); // strip slashes, since this goes in the url
     this.searchTerm = term;
@@ -5301,14 +5301,11 @@ BookReader.prototype.buildDownloadDiv = function(jDownloadDiv)
             '</fieldset>',
 			'<fieldset>',
 				'<label for="format">Quality:</label>',
-					'<fieldset class="quality_selection">',
-							'<input type="radio" name="quality" value="1"/>',
-							'<label for="quality">High</label>',
-							'<input type="radio" name="quality" value="2"  checked="checked"s/>',
-							'<label for="quality">Medium</label>',
-							'<input type="radio" name="quality" value="3"/>',
-							'<label for="quality">Low</label>',
-					'</fieldset>',
+					'<select name="quality">',
+					 '<option value="high">High</option>',
+					  '<option value="medium" selected="selected">Medium</option>',
+					  '<option value="low">Low</option>',
+					'</select>',
 				'</fieldset>',
             '<fieldset class="center">',
                 '<button type="button" onclick="$.fn.colorbox.close(); br.startDownload($(\'input:radio[name=format]:checked\').val(), $(\'input:radio[name=quality]:checked\').val() ,br.downloadPages, $(\'#whole_book\').is(\':checked\'));">Download</button>',
@@ -5617,7 +5614,7 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 			break;
 	}
 	
-	var url = this.basepath + '/' + this.fedorapath + '/objects/' + br.pid + '/methods/demo:bookSdef/';
+	var url = this.basepath + '/' + this.fedorapath + '/objects/' + br.pid + '/methods/bhle-service:bookSdef/';
 	url += method;
 	url += '?ranges=';
 	

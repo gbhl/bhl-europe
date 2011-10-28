@@ -984,5 +984,12 @@ lable #whole_book {
 }
 
 .format_selection img{
+	width: 70px;
+	height: 70px;
 	margin-right: 50px;
+}
+
+fieldset .thumbnailFieldset{
+	max-height: 150px;
+	overflow: auto;
 }
