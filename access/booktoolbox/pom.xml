@@ -67,6 +67,14 @@
 					<outputDirectory>${env.FEDORA_HOME}/tomcat/webapps</outputDirectory>
 				</configuration>
 			</plugin>
+		<plugin>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <configuration>
+               <target>1.6</target>
+               <source>1.6</source>
+               <encoding>UTF-8</encoding>
+           </configuration>
+       </plugin>
 		</plugins>
 	</build>
 	<pluginRepositories>

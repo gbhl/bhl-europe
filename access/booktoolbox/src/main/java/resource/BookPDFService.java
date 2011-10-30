@@ -69,9 +69,7 @@ public class BookPDFService extends FedoraObjectService{
 
 		for (int i = 0; i < pagePIDs.size(); i++) {
 			try {
-				URL pdfURL = new URL(getURLFromPID(pagePIDs.get(i))
-						+ "/methods/" + PAGE_DEF + "/pdf?resolution="
-						+ resolution.getResolution());
+				URL pdfURL = new URL(getPDFURLFromPID(pagePIDs.get(i), resolution));
 				PdfReader pdfReader = new PdfReader(pdfURL);
 				PdfTemplate page = writer.getImportedPage(pdfReader, 1);
 				document.newPage();

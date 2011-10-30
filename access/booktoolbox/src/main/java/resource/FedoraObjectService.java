@@ -2,6 +2,7 @@ package resource;
 
 import util.GlobalParameter;
 import util.PagePIDExtractor;
+import util.Resolution;
 import util.SerialPagePIDExtractor;
 
 public class FedoraObjectService {
@@ -25,5 +26,9 @@ public class FedoraObjectService {
 	
 	public static String getJPEGURLFromPID(String pid, int level) {
 		return getURLFromPID(pid) + "/methods/" + PAGE_DEF + "/jpeg?level=" + level;
+	}
+	
+		public static String getPDFURLFromPID(String pid, Resolution resolution) {
+		return getURLFromPID(pid) + "/methods/" + PAGE_DEF + "/pdf?resolution=" + resolution.getResolution();
 	}
 }
