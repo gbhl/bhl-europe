@@ -94,6 +94,9 @@
        other than the default ./data under the Solr home.  If
        replication is in use, this should match the replication
        configuration.
+
+       you have to specify the jvm argument, e.g.:
+       -Dsolr.data.dir=~/dev/data/data-management/solr/
     -->
     <dataDir>${solr.data.dir:./solr/core/data}</dataDir>
 
