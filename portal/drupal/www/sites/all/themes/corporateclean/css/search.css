@@ -1,6 +1,10 @@
-.front #content-inside .region-content {position:relative; width:1010px; height:140px; background:transparent url('../images/bg-simple-search.png') no-repeat 0px 0px;}            
+.front #content-inside .region-content {position:relative; width:1010px; height:140px; background:transparent url('../images/bg-simple-search.png') no-repeat 0px 0px;}
 .front #content-inside .region-content h2,
 .front #content-inside .region-content ul {display:none;}
+
+.front #content-inside .region-content #autocomplete ul {
+  display: block;
+}
 
 .front #content-inside .region-content form .container-inline.form-wrapper#edit-basic {float:left; width:700px;}
 
@@ -8,7 +12,7 @@
 .front form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
 .front form .form-wrapper#edit-basic label {
-  float:left; padding:0px; margin:15px 25px 25px; 
+  float:left; padding:0px; margin:15px 25px 25px;
   color:#006626; font-weight:bold; font-size: 116.7%;
 }
 .front form .form-wrapper#edit-basic .form-item label {float:none; padding:0px; margin:0px;}
@@ -21,9 +25,9 @@
 
 .front form .form-item.form-type-textfield {float:left; width:580px;}
 .front form .form-item.form-type-textfield input#edit-keys.form-text {
-  clear:left; float:left; 
-  width:520px; padding:5px; margin:10px 10px 5px 35px; 
-  font-size:166.7%;  text-align:center; color:#8bc53f; 
+  clear:left; float:left;
+  width:520px; padding:5px; margin:10px 10px 5px 35px;
+  font-size:166.7%;  text-align:center; color:#8bc53f;
   border:none; background: transparent none;
 }
 .front form .form-wrapper#edit-basic input#edit-submit {
@@ -31,29 +35,29 @@
   width:92px; height:47px; text-indent:-50000px;
   background: transparent url('../images/btn-search.png') no-repeat 0px 0px;
   overflow:hidden;  border:none; cursor:pointer;
-} 
+}
 
 
 .front #content-inside .region-content .simple-search-links {float:right; position:relative; width:300px;}
 
 .front #content-inside .region-content p.advanced-search {
-  position:absolute; top:0px; left:-180px; 
-  margin:0px; padding:15px 20px 5px 0; 
-  width:140px; text-align:right; font-size:141.7%; 
+  position:absolute; top:0px; left:-180px;
+  margin:0px; padding:15px 20px 5px 0;
+  width:140px; text-align:right; font-size:141.7%;
   background:transparent url('../images/icon-arrow.png') no-repeat right 18px;
 }
 .front #content-inside .region-content p.advanced-search a {margin:0px; padding:0px; color:#006626; font-weight:bold; line-height:1; text-decoration:none;}
 .front #content-inside .region-content p.advanced-search a:hover {text-decoration:underline;}
 
 .front #content-inside .region-content p.advanced-buttons {
-  display:block; margin:0px; padding:43px 0 0 0; 
+  display:block; margin:0px; padding:43px 0 0 0;
   width:289px; height:80px;
   background:transparent url('../images/bg-simplesearch-links.png') no-repeat 0px bottom;
 }
 .front #content-inside .region-content p.advanced-buttons a {
-  display:block; margin:0px; padding:5px; 
+  display:block; margin:0px; padding:5px;
   width:134px; height:70px;
-  text-indent: -50000px; 
+  text-indent: -50000px;
   overflow:hidden;
 }
 .front #content-inside .region-content p.advanced-buttons a.browse-link {float:left;}
@@ -69,22 +73,22 @@
 .page-advanced-search-2 #content #main h1 {
   float:left; height:20px; margin:0px;
   padding: 15px 25px 15px 30px; font-size:116.7%;
-  color: #006626; font-weight: bold; 
+  color: #006626; font-weight: bold;
 
 }
 
 form#advanced-search-form-2 {
-  margin:0px; padding:0px 10px; 
+  margin:0px; padding:0px 10px;
   width:990px;
   background:transparent url('../images/bg-advanced-search-form2-form.png') repeat-y 1px 0px;
 }
 .page-advanced-search-2 #content #main .region-content{
-  clear:both; position:relative; padding: 0px 0px 90px 0px; 
-  width:1010px; 
+  clear:both; position:relative; padding: 0px 0px 90px 0px;
+  width:1010px;
   background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;
-} 
+}
 form#advanced-search-form-2 #edit-addfield {
-  position:absolute; left:890px; top: 27px; 
+  position:absolute; left:890px; top: 27px;
   height:47px; width:92px; text-indent: -50000px;
   background:transparent none; border:none;
 }
@@ -98,24 +102,24 @@ margin-top: 0px;
 margin-bottom: 0px;
 }
 form#advanced-search-form-2 table {
-  padding: 0px; margin:0px; 
+  padding: 0px; margin:0px;
   width:990px; color: #006626;
 }
 form#advanced-search-form-2 table tr {
-  position:relative; display:block; 
-  margin:0px; padding:15px 15px 15px 20px; 
+  position:relative; display:block;
+  margin:0px; padding:15px 15px 15px 20px;
   width:955px; height:40px;
   background:transparent url('../images/bg-advanced-search-form2-tr.png') no-repeat -9px 0px;
 }
 form#advanced-search-form-2 table th,
 form#advanced-search-form-2 table td {
-  padding:0px; margin:0px; 
+  padding:0px; margin:0px;
   width:auto; font-size:100%; color: #006626;
   border:none; background: transparent none;
-}           
+}
 form#advanced-search-form-2 table tr div.form-type-textfield {position:absolute; left:30px; top:20px;}
 form#advanced-search-form-2 table tr div.form-type-textfield input {
-  width:480px; 
+  width:480px;
   color:#004226;font-size:166.7%; line-height:1;
   background:transparent none; border:none;
 }
@@ -125,6 +129,6 @@ form#advanced-search-form-2 table tr input.form-submit {
 }
 form#advanced-search-form-2 table tr div.form-type-select {position:absolute; left:575px; top:12px;}
 form#advanced-search-form-2 table tr div.form-type-select select {
-  width:180px; height:47px; 
+  width:180px; height:47px;
   background:transparent none; border:none;
 }
