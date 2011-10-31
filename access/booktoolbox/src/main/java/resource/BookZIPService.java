@@ -19,6 +19,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.Response;
 import javax.ws.rs.core.StreamingOutput;
 
 import util.GlobalParameter;
@@ -38,20 +39,27 @@ public class BookZIPService extends FedoraObjectService {
 	@GET
 	@Path("{pid}")
 	@Produces("application/zip")
-	public StreamingOutput getPDF(
+	public Response getPDF(
 			@PathParam("pid") String pid,
 			@DefaultValue("") @QueryParam("ranges") String ranges,
 			@DefaultValue("medium") @QueryParam("resolution") final Resolution resolution) {
 
 		final List<String> rangeList = pidExtracoteor.getPIDs(pid, ranges);
-
-		return new StreamingOutput() {
+		return Response.ok(new StreamingOutput() {
 
 			public void write(OutputStream out) throws IOException,
 					WebApplicationException {
 				createZIP(out, rangeList, resolution);
 			}
-		};
+		}).header("Content-Disposition", "attachment;filename=" + pid
+				+ ".zip").build();
+//		return new StreamingOutput() {
+//
+//			public void write(OutputStream out) throws IOException,
+//					WebApplicationException {
+//				createZIP(out, rangeList, resolution);
+//			}
+//		};
 	}
 
 	private void createZIP(OutputStream out, List<String> rangeList,
@@ -71,8 +79,7 @@ public class BookZIPService extends FedoraObjectService {
 			ZipOutputStream out) {
 		URL url;
 		try {
-			url = new URL(getURLFromPID(pid) + "/methods/" + PAGE_DEF
-					+ "/jpeg?level=" + resolution.getLevel());
+			url = new URL(getJPEGURLFromPID(pid, resolution.getLevel()));
 			InputStream in = url.openStream();
 
 			ZipEntry entry = new ZipEntry(pid + ".jpg");

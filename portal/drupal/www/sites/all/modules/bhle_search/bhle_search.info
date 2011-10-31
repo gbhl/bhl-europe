@@ -1,5 +1,6 @@
 name = BHL-E search
 description = Implements simple as well as advanced search for the BHL-Europe portal
-version = 0.1
+version = 0.8
 core = 7.x
 package = Search
+dependencies[] = apachesolr
