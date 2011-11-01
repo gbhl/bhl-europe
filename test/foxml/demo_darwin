@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<foxml:digitalObject VERSION="1.1" PID="demo:darwin"
+<foxml:digitalObject VERSION="1.1" PID="bhl:darwin"
 xmlns:foxml="info:fedora/fedora-system:def/foxml#"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
@@ -79,7 +79,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:xmlContent>
 <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
   <dc:title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of &apos;The origin of species&apos;.</dc:title>
-  <dc:identifier>demo:darwin</dc:identifier>
+  <dc:identifier>bhl:darwin</dc:identifier>
 </oai_dc:dc>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
@@ -117,21 +117,21 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastream>
 <foxml:datastream ID="TN" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
 <foxml:datastreamVersion ID="TN.0" LABEL="Thumbnail" CREATED="2011-06-21T13:49:17.514Z" MIMETYPE="image/jpg" SIZE="1749466">
-<foxml:contentLocation TYPE="INTERNAL_ID" REF="demo:darwin+TN+TN.0"/>
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="bhl:darwin+TN+TN.0"/>
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
 <foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Fedora object-to-object relationship metadata" CREATED="2011-06-21T13:49:17.731Z" MIMETYPE="text/xml" SIZE="152">
 <foxml:xmlContent>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="info:fedora/demo:darwin"></rdf:Description>
+  <rdf:Description rdf:about="info:fedora/bhl:darwin"></rdf:Description>
 </rdf:RDF>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 <foxml:datastreamVersion ID="RELS-EXT.1" LABEL="Fedora Object-to-Object Relationship Metadata" CREATED="2011-06-21T13:49:17.798Z" MIMETYPE="text/xml" SIZE="271">
 <foxml:xmlContent>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="info:fedora/demo:darwin">
+  <rdf:Description rdf:about="info:fedora/bhl:darwin">
     <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/ilives:bookCModel"></hasModel>
   </rdf:Description>
 </rdf:RDF>
@@ -140,7 +140,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:datastreamVersion ID="RELS-EXT.2" LABEL="Fedora Object-to-Object Relationship Metadata" CREATED="2011-06-21T13:49:17.856Z" MIMETYPE="text/xml" SIZE="420">
 <foxml:xmlContent>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="info:fedora/demo:darwin">
+  <rdf:Description rdf:about="info:fedora/bhl:darwin">
     <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/ilives:bookCModel"></hasModel>
     <isMemberOfCollection xmlns="info:fedora/fedora-system:def/relations-external#" rdf:resource="info:fedora/islandora:top"></isMemberOfCollection>
   </rdf:Description>

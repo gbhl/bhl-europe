@@ -91,7 +91,7 @@
 			creating an index field with all text from the foxml record and its datastreams
 			-->
 
-			<field name="foxml.all.text">
+			<field name="foxml_all_text">
 				<xsl:for-each select="//text()">
 					<xsl:value-of select="."/>
 					<xsl:text>&#160;</xsl:text>
