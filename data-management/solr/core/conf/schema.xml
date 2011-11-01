@@ -223,6 +223,7 @@
         <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" enablePositionIncrements="true" />
         <filter class="solr.WordDelimiterFilterFactory" protected="protwords.txt" generateWordParts="1" generateNumberParts="1" catenateWords="1" catenateNumbers="1" catenateAll="0" splitOnCaseChange="1" preserveOriginal="1"/>
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+         <filter class="solr.ReversedWildcardFilterFactory" withOriginal="true" maxPosAsterisk="3" maxPosQuestion="2" maxFractionAsterisk="0.33"/>
       </analyzer>
       <analyzer type="query">
         <tokenizer class="solr.StandardTokenizerFactory"/>
@@ -565,8 +566,6 @@
    -->
    <field name="all" type="text_general" indexed="true" termVectors="false" stored="false" multiValued="true"/>
    <field name="all__exact" type="text_exact" indexed="true" termVectors="false" stored="false" multiValued="true"/>
-   <!-- catchall text field that indexes tokens both normally and in reverse for efficient leading wildcard queries. -->
-   <field name="all__rev" type="text_general_rev" indexed="true" stored="false" multiValued="true"/>
 
    	<!-- This field is used to build the spellchecker index
    		 it should contain the contents of all fields which

@@ -1146,7 +1146,8 @@
       <str name="spellcheck.onlyMorePopular">false</str>
       <str name="spellcheck.extendedResults">false</str>
       <str name="spellcheck.count">1</str>
-      <str name="q">*</str>
+      <str name="q.alt">*</str>
+      <!-- <str name="defType">edismax</str>  -->
     </lst>
     <arr name="last-components">
       <str>spellcheck</str>
@@ -1490,10 +1491,9 @@
        used in either the "defType" param for the QueryComponent (used
        by SearchHandler) or in LocalParams
     -->
-  <!-- example of registering a query parser -->
-  <!--
-     <queryParser name="myparser" class="com.mycompany.MyQParserPlugin"/>
-    -->
+    <!--
+    <queryParser name="myparser" class="org.apache.solr.search.ExtendedDismaxQParser"/>
+	-->
 
   <!-- Function Parsers
 
