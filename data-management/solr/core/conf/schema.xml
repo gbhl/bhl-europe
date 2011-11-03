@@ -594,6 +594,7 @@
    <field name="timestamp" type="date" indexed="true" stored="true" default="NOW" multiValued="false"/>
    -->
 
+
     <!--
       dc_* fields
      -->
@@ -730,6 +731,36 @@
     <copyField source="dc_coverage" dest="dc_coverage__facet"/>
     <copyField source="dc_coverage" dest="all"/>
     <copyField source="dc_coverage" dest="all__exact"/>
+
+  	<!--
+   		combination field wich are needed for simple search,
+   		these fields will will contain data from the named fields
+   	 -->
+	<field name="dc_title_dc_author" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author"/>
+    <copyField source="dc_author" dest="dc_title_dc_author"/>
+
+    <field name="dc_title_dc_author__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author__exact"/>
+    <copyField source="dc_author" dest="dc_title_dc_author__exact"/>
+
+    <field name="dc_title_dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_date"/>
+    <copyField source="dc_date" dest="dc_title_dc_date"/>
+
+    <field name="dc_title_dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_date__exact"/>
+    <copyField source="dc_date" dest="dc_title_dc_date__exact"/>
+
+    <field name="dc_title_dc_author_dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author_dc_date"/>
+    <copyField source="dc_author" dest="dc_title_dc_author_dc_date"/>
+    <copyField source="dc_date" dest="dc_title_dc_author_dc_date"/>
+
+    <field name="dc_title_dc_author_dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author_dc_date__exact"/>
+    <copyField source="dc_author" dest="dc_title_dc_author_dc_date__exact"/>
+    <copyField source="dc_date" dest="dc_title_dc_author_dc_date__exact"/>
 
     <!--
       dcterms fields
@@ -942,7 +973,7 @@
  <defaultSearchField>all</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
- <solrQueryParser defaultOperator="OR"/>
+ <solrQueryParser defaultOperator="AND"/>
 
 
    <!-- Above, multiple source fields are copied to the [text] field.
