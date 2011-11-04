@@ -1,0 +1,4 @@
+/* Changes the cursor on hover of the handle (the block title). */
+.ui-sortable h2 {
+  cursor: move;
+}

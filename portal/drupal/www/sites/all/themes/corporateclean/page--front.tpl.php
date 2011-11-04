@@ -10,12 +10,15 @@
               <!-- <h1> --><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"  id="logo"><?php // print $title ?><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a><!-- </h1> -->
             <?php endif; ?>
     
-            <p id="skip-link">
+
             <!-- Skryty odkaz vedouci na napovedu ke klavesovym zkratkam -->
+<!--
+            <p id="skip-link">
             <a href="http://www.ippi.cz/klavesove-zkratky/neni-mapa-stranek.html" accesskey="1" tabindex="1" class="skiplink">Klávesové zkratky na tomto webu - rozšírené</a>
             <a href="/" accesskey="2" tabindex="3" class="skiplink">Hlavní strana</a>
             <a href="/#obsah" class="skiplink" tabindex="2" accesskey="0">Na informační obsah stránky</a>
             </p>
+-->
                  
         </div>
             
@@ -49,48 +52,12 @@
 
 <!-- Content. -->
 <div id="content">
-
     <div id="content-inside" class="inside">
     
-        <div id="main">
-                     
-            <?php if (theme_get_setting('breadcrumb_display','corporateclean')): print $breadcrumb; endif; ?>
-      
-            <?php if ($messages): ?>
-            <div id="console" class="clearfix">
-            <?php print $messages; ?>
-            </div>
-            <?php endif; ?>
-     
-            <?php if ($page['help']): ?>
-            <div id="help">
-            <?php print render($page['help']); ?>
-            </div>
-            <?php endif; ?>
-            
-            <?php if ($action_links): ?>
-            <ul class="action-links">
-            <?php print render($action_links); ?>
-            </ul>
-            <?php endif; ?>
-                       
-            <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-            
-            <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
-            
-            <?php print render($page['content']); ?>            
-            
-
-            <?php if ($page['content_expanded']): ?><div id="content_expanded"><?php print render($page['content_expanded']); ?></div><?php endif; ?>           
-            
+        <div id="main">                         
+            <?php print render($page['content']); ?>                       
+            <?php if ($page['content_expanded']): ?><div id="content_expanded"><?php print render($page['content_expanded']); ?></div><?php endif; ?>                      
         </div><!-- EOF: #main -->
-
-        <?php if ($layout != 'none'): ?>
-          <div id="sidebar">
-             <?php print render($page['sidebar']); ?>
-             <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary-menu', 'links', 'clearfix')))); ?>
-          </div><!-- EOF: #sidebar -->
-       <?php endif; ?>
             
     </div><!-- EOF: #content-inside -->
 
@@ -104,7 +71,7 @@
     <!-- Feed tabs. -->
     <?php if ($page['feed_tabs']): ?>
       <div id="feed-tabs">         
-        <?php print $feed_icons; ?>  
+          
         <div id="accordion">           
           <?php print render($page['feed_tabs']); ?>
         </div>          

@@ -1,134 +1,331 @@
-.front #content-inside .region-content {position:relative; width:1010px; height:140px; background:transparent url('../images/bg-simple-search.png') no-repeat 0px 0px;}
-.front #content-inside .region-content h2,
-.front #content-inside .region-content ul {display:none;}
+.front #content-inside .region-content {width:1010px;} 
 
-.front #content-inside .region-content #autocomplete ul {
-  display: block;
+.front #block-search-form {
+  position:relative; float:left; margin:0px;
+  width:700px; height:140px; 
+  background:transparent url('../images/bg-simple-search.png') no-repeat 0px 0px;
 }
+.front #block-search-form h2,
+.front #block-search-form ul {display:none;}
 
-.front #content-inside .region-content form .container-inline.form-wrapper#edit-basic {float:left; width:700px;}
+.front #block-search-form .container-inline {width:700px; overflow:hidden;}
 
-.front form .form-item,
-.front form .form-actions {margin-top: 0px; margin-bottom: 0px;}
+form .form-item,
+form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
-.front form .form-wrapper#edit-basic label {
-  float:left; padding:0px; margin:15px 25px 25px;
+.front #block-search-form .container-inline label {
+  float:left; margin:0px; padding:15px 30px 25px; 
   color:#006626; font-weight:bold; font-size: 116.7%;
+  background:transparent url('../images/bg-simple-search-tab-right.png') no-repeat right top;
 }
-.front form .form-wrapper#edit-basic .form-item label {float:none; padding:0px; margin:0px;}
-.front form .form-wrapper#edit-basic .form-item.form-type-textfield label {display:none;}
+.front #block-search-form .container-inline .form-item label {float:none; padding:0px; margin:0px; background:transparent none;}
+.front #block-search-form .container-inline .form-item.form-type-textfield label {display:none;}
 
 /* .front form .form-wrapper#edit-basic #edit-simple-search-field {position:absolute; top:15px; left:125px; width:400px; height:25px; overflow:hidden; font-size:116.7%;} */
 
-.front form .form-wrapper#edit-basic .form-item.form-type-checkbox {float:left; display:inline; padding:15px 5px 25px;}
-.front form .form-wrapper#edit-basic .form-item.form-type-checkbox label {color:#006626;  font-weight:bold;padding:2px;}
+.front #block-search-form .container-inline .form-item.form-type-checkbox {float:left; display:inline; padding:15px 5px 27px;}
+.front #block-search-form .container-inline .form-item.form-type-checkbox label {color:#006626; font-weight:bold;}
 
-.front form .form-item.form-type-textfield {float:left; width:580px;}
-.front form .form-item.form-type-textfield input#edit-keys.form-text {
-  clear:left; float:left;
-  width:520px; padding:5px; margin:10px 10px 5px 35px;
-  font-size:166.7%;  text-align:center; color:#8bc53f;
+.front #block-search-form .container-inline .form-item.form-type-checkbox label {float:right;}
+.front #block-search-form .container-inline .form-item.form-type-checkbox input {float:left; margin-top:3px; margin-right:10px;}
+
+.front #block-search-form .form-item.form-type-textfield {float:left; width:580px;}
+.front #block-search-form .form-item.form-type-textfield input.form-text {
+  clear:left; float:left; 
+  width:520px; padding:5px; margin:7px 10px 5px 35px; 
+  font-size:166.7%;  text-align:center; color:#8bc53f; 
   border:none; background: transparent none;
 }
-.front form .form-wrapper#edit-basic input#edit-submit {
-  float:left; padding:0px; margin:2px 0px 0 5px;
+.front #block-search-form .form-wrapper#edit-actions input#edit-submit {
+  float:left; padding:0px; margin:0px 0px 0 5px;
   width:92px; height:47px; text-indent:-50000px;
   background: transparent url('../images/btn-search.png') no-repeat 0px 0px;
   overflow:hidden;  border:none; cursor:pointer;
-}
+} 
 
 
 .front #content-inside .region-content .simple-search-links {float:right; position:relative; width:300px;}
 
 .front #content-inside .region-content p.advanced-search {
-  position:absolute; top:0px; left:-180px;
-  margin:0px; padding:15px 20px 5px 0;
-  width:140px; text-align:right; font-size:141.7%;
-  background:transparent url('../images/icon-arrow.png') no-repeat right 18px;
+  position:absolute; top:0px; right:10px; 
+  margin:0px; padding:15px 20px 5px 0; 
+  width:140px; text-align:right; font-size:116.7%; 
+  background:transparent url('../images/icon-arrow.png') no-repeat right 17px;
 }
 .front #content-inside .region-content p.advanced-search a {margin:0px; padding:0px; color:#006626; font-weight:bold; line-height:1; text-decoration:none;}
 .front #content-inside .region-content p.advanced-search a:hover {text-decoration:underline;}
 
 .front #content-inside .region-content p.advanced-buttons {
-  display:block; margin:0px; padding:43px 0 0 0;
+  display:block; margin:0px; padding:43px 0 0 0; 
   width:289px; height:80px;
   background:transparent url('../images/bg-simplesearch-links.png') no-repeat 0px bottom;
 }
 .front #content-inside .region-content p.advanced-buttons a {
-  display:block; margin:0px; padding:5px;
-  width:134px; height:70px;
-  text-indent: -50000px;
+  display:block; margin:0px; padding:25px 4px 25px 60px; 
+  width:80px; height:30px;  color:#006626; font-size:150%;
+ /* text-indent: -50000px; */ 
   overflow:hidden;
 }
+/*.front #content-inside .region-content p.advanced-buttons a:hover {text-decoration:none;}*/
+
 .front #content-inside .region-content p.advanced-buttons a.browse-link {float:left;}
 .front #content-inside .region-content p.advanced-buttons a.tutorial-link {float:right;}
 
 
 /** ADVANCED SEARCH --------------- **/
-.page-advanced-search-2 #content #main {
-  position:relative;  margin-top: 20px; width:1010px;
-  background:transparent url('../images/bg-advanced-search-form2-header.png') no-repeat 1px top;
+.page-search-bhle #content #main {
+  position:relative;  margin-top: 20px; margin-bottom:30px; width:1010px;
+  /*background:transparent url('../images/bg-advanced-search-form2-header.png') no-repeat 1px top;*/
 }
 
-.page-advanced-search-2 #content #main h1 {
+.page-search-bhle #content #main h1 {
+  display:none;
+/*
   float:left; height:20px; margin:0px;
   padding: 15px 25px 15px 30px; font-size:116.7%;
-  color: #006626; font-weight: bold;
-
+  color: #006626; font-weight: bold; 
+ */
+}                                 
+.page-search-bhle #content #main ul { margin-left:5px; padding-left:20px; list-style-type: disc;}   
+.page-search-bhle #content #main .advanced-search-link {
+  float:right; position:relative;
+  z-index:20;
 }
-
-form#advanced-search-form-2 {
-  margin:0px; padding:0px 10px;
-  width:990px;
-  background:transparent url('../images/bg-advanced-search-form2-form.png') repeat-y 1px 0px;
+.page-search-bhle #content #main .advanced-search-link p.simple-search { 
+  margin:0px; padding:17px 20px 3px 0; 
+  position:absolute; top:0px; right:10px;
+  width:140px; text-align:right; font-size:116.7%; 
+  background:transparent url('../images/icon-arrow.png') no-repeat right 17px;
 }
-.page-advanced-search-2 #content #main .region-content{
-  clear:both; position:relative; padding: 0px 0px 90px 0px;
-  width:1010px;
-  background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;
-}
-form#advanced-search-form-2 #edit-addfield {
-  position:absolute; left:890px; top: 27px;
-  height:47px; width:92px; text-indent: -50000px;
-  background:transparent none; border:none;
-}
-form#advanced-search-form-2 #edit-reset {position:absolute; left:790px;  margin-top:23px;}
-form#advanced-search-form-2 #edit-submit {position:absolute; left:892px; margin-top:17px;}
+.page-search-bhle #content #main .advanced-search-link p.simple-search a {margin:0px; padding:0px; color:#006626; font-weight:bold; line-height:1; text-decoration:none;}
+.page-search-bhle #content #main .advanced-search-link p.simple-search a:hover {text-decoration:underline;}
 
 
-form#advanced-search-form-2 .form-item,
-form#advanced-search-form-2 .form-actions {
+.page-search-bhle #content #main .region-content{
+  clear:both; position:relative; padding: 0px; 
+  width:1010px; 
+  background:transparent url('../images/bg-advsearchbox-top.png') no-repeat left top;
+  /*background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;*/  
+} 
+
+.page-search-bhle form#search-form {
+  margin:0px; padding:0px 0px 30px 0px; width:1010px; overflow:hidden;
+  background:transparent url('../images/bg-advsearchbox-bot.png') no-repeat left bottom;
+/*  background:transparent url('../images/bg-advanced-search-form2-form.png') repeat-y 1px 0px; */
+}
+.page-search-bhle form#search-form .form-item,
+.page-search-bhle form#search-form .form-actions {
 margin-top: 0px;
 margin-bottom: 0px;
 }
-form#advanced-search-form-2 table {
-  padding: 0px; margin:0px;
+
+.page-search-bhle form#search-form label {
+  float:left; margin:0px; padding:20px 35px 10px 30px; 
+  color:#006626; font-weight:bold; font-size: 116.7%; height:25px;
+  background:transparent url('../images/bg-advsearchbox-top-tab-right.png') no-repeat right top;
+}
+.page-search-bhle form#search-form .form-item label {float:none; padding:0px; margin:0px; background:transparent none;}
+.page-search-bhle form#search-form .fieldset-wrapper label,
+.page-search-bhle form#search-form .form-item.form-type-textfield label {display:none;}
+
+
+.page-search-bhle form#search-form div.fields-block-wrapper {
+  clear:both;
+  margin:0px; padding:0px 11px 0px 9px; width:990px;
+  background:transparent url('../images/bg-advsearchbox-bg.png') repeat-y left top;  
+  overflow:hidden;
+}
+.page-search-bhle form#search-form div.fields-block {
+  margin:-6px 0 0 0; padding:0px; width:990px; position:relative; 
+  background: #cde6ab url('../images/bg-advsearchbox-first.png') repeat-x left top;
+  overflow:hidden;
+}
+
+.page-search-bhle form#search-form fieldset.form-wrapper {
+  position:relative; display:block; clear:both;
+/*
+  margin:0px; padding:0px 11px 0px 9px; width:990px;
+  background:transparent url('../images/bg-advsearchbox-bg.png') repeat-y left top;
+*/
+
+  margin:0px 0px 0px; padding:0px; width:990px;
+  background:transparent url('../images/bg-advsearchbox-fieldset-bot.png') no-repeat left top;
+  overflow:hidden;
+}
+/*
+.page-search-bhle form#search-form fieldset.form-wrapper {
+  position:relative; display:block; clear:both;
+  margin:0px; padding:0px 10px; width:990px;
+  background:transparent url('../images/bg-advanced-search-form2-form.png') repeat-y 1px 0px;
+  overflow:hidden;
+}
+*/
+
+.page-search-bhle form#search-form fieldset.form-wrapper .fieldset-wrapper {
+  margin:0px; padding:19px 17px 17px 20px; 
+  width:953px; height:45px;
+  font-size:100%; color: #006626;
+  border-color: #cde6ab;
+  border:none; 
+}
+.page-search-bhle form#search-form fieldset.form-wrapper#edit-condition-1 .fieldset-wrapper {
+/*  background: #cde6ab url('../images/bg-advsearchbox-first.png') repeat-x left top; */
+  background: transparent url('../images/btn-del-disabled.png') no-repeat 924px 17px;
+}
+
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-expand-search {
+  float:left; display:inline; padding:15px 10px 0px 20px;
+}
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-exact-phrase {
+  /*position:absolute; left:180px; top:15px;*/ 
+/* margin:0px; padding:0px 10px 5px; width:400px; height:25px; overflow:hidden; */ 
+  position:absolute; right:400px; display:inline; padding:15px 0px 0px 20px;
+}
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-expand-search label,
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-exact-phrase label {color:#006626; font-size:116.7%; font-weight:bold; margin:0px; padding:0px;}                                                                 
+
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-expand-search label {float:right; }
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-expand-search input {float:left; margin-top:3px; margin-right:10px;}
+
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-exact-phrase label {float:left; }
+.page-search-bhle form#search-form .form-item.form-type-checkbox.form-item-exact-phrase input {float:right; margin-top:3px; margin-left:10px;}
+
+.page-search-bhle form#search-form .form-type-textfield.form-item {
+  float:left; padding:5px 10px 6px 5px; margin:0px;  width:535px; height:35px; 
+  background: transparent url('../images/bg-advsearchbox-textfield.png') no-repeat left top;
+  overflow:hidden;
+}
+.page-search-bhle form#search-form .form-type-textfield.form-item input {
+  display:block; width:528px; height:25px; padding:5px; margin:0px;
+  color:#004226; font-size:166.7%; line-height:1;   
+  background:transparent none; border:none;
+  overflow:hidden;
+}
+
+.page-search-bhle form#search-form .fieldset-wrapper .form-type-checkbox.form-item {
+  float:left; padding:16px 13px 17px 12px; margin:0px;  width:13px; height:13px; 
+  background: transparent url('../images/bg-advsearchbox-textfield.png') no-repeat right top;
+  overflow:hidden;
+}
+.page-search-bhle form#search-form .fieldset-wrapper .form-type-checkbox.form-item input.exact-phrase {
+  display:block; padding:0px; margin:0px;
+  background:transparent none; border:none;
+  overflow:hidden;
+}
+
+.page-search-bhle form#search-form .form-item.form-type-select {float:left; padding:0px 0px 0px 13px;}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-field {
+  display:block;  height:45px; width:178px !important; 
+  background:transparent url('../images/btn-advsearch-selfield.png') no-repeat left top; border:none;  
+  padding:0px; color:#fff; font-weight:bold;
+}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-field:hover {text-decoration:none;}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-field span.ui-selectmenu-status {
+  display:block;  height:20px; width:130px !important;
+  padding: 13px 33px 12px 15px; 
+}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-field .ui-selectmenu-icon.ui-icon {
+  right:11px; margin-top:-3px;
+  background:transparent url('../images/icon-advsearch-sel-down.png') no-repeat left top;
+}
+.ui-selectmenu-menu-dropdown.select-field {width:176px !important;}
+
+.block.advanced-search-form-2-skelet .form-type-select.form-item-relation {float:left; padding:0px 0px 0px 15px; width:95px; overflow:hidden;}
+
+.page-search-bhle form#search-form .form-item.form-type-select a.select-operator {
+  display:block;  height:45px;  width:93px !important; 
+  background:transparent url('../images/btn-advsearch-seloperator.png') no-repeat left top; border:none;   
+  padding:0px; color:#fff; font-weight:bold;
+}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-operator:hover {text-decoration:none;}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-operator span.ui-selectmenu-status {
+  display:block;  height:20px; width:45px !important;
+  padding: 13px 33px 12px 15px;  
+}
+.page-search-bhle form#search-form .form-item.form-type-select a.select-operator .ui-selectmenu-icon.ui-icon {
+  right:11px; margin-top:-3px;
+  background:transparent url('../images/icon-advsearch-sel-down.png') no-repeat left top;
+}
+
+.ui-widget-content {
+border: 1px solid #AAA/*{borderColorContent}*/;
+background: #a4d268 url(images/ui-bg_flat_75_a4d268_40x100.png) 50% 50% repeat-x;}
+
+.ui-selectmenu-menu-dropdown.select-operator {width:92px !important;}
+
+/*.page-search-bhle form#search-form .edit-addfield,*/
+.page-search-bhle form#search-form .edit-delfield {
+  /*position:absolute; left:890px; top: 27px;*/
+  float:right; height:47px; width:49px; text-indent: -50000px;
+  background:transparent none; border:none; cursor:pointer;
+}
+/* .page-search-bhle form#search-form .edit-addfield {background: transparent url('../images/btn-advsearch-add.png') no-repeat right top;} */
+.page-search-bhle form#search-form .edit-delfield {background: transparent url('../images/btn-advsearch-del.png') no-repeat right top;}
+.page-search-bhle form#search-form .last.form-wrapper#edit-condition-1 .edit-delfield {display:none;}
+                                   
+
+.page-search-bhle form#search-form #edit-reset {/*position:absolute; left:790px;  margin-top:23px;*/}
+.page-search-bhle form#search-form #edit-submit {/*position:absolute; left:892px; margin-top:17px;*/}
+
+.page-search-bhle form#search-form #edit-add {
+  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 35px 0px 10px;  
+  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;    
+  background: transparent url('../images/btn-add.png') no-repeat right top;
+  border:none; cursor:pointer; 
+}
+
+.page-search-bhle form#search-form #edit-save {
+  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 10px 0px;  
+  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;    
+  background: transparent url('../images/btn-save.png') no-repeat right top;
+  border:none; cursor:pointer; 
+}
+
+.page-search-bhle form#search-form #edit-reset {
+  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 20px 0px; 
+  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;      
+  background: transparent url('../images/btn-reset.png') no-repeat right top;
+  border:none;  cursor:pointer; 
+}
+
+.page-search-bhle form#search-form #edit-submit {
+  float:right; display:block; padding:0px; margin:16px 26px 0px 0px; 
+  width:92px; height:47px; text-indent: -50000px; cursor:pointer;  
+  background: transparent url('../images/btn-search.png') no-repeat left top;
+  /*background:transparent none;*/    
+  border:none; overflow:hidden; 
+} 
+
+
+
+.page-search-bhle form#search-form table {
+  padding: 0px; margin:0px; 
   width:990px; color: #006626;
 }
-form#advanced-search-form-2 table tr {
-  position:relative; display:block;
-  margin:0px; padding:15px 15px 15px 20px;
+.page-search-bhle form#search-form table tr {
+  position:relative; display:block; 
+  margin:0px; padding:15px 15px 15px 20px; 
   width:955px; height:40px;
   background:transparent url('../images/bg-advanced-search-form2-tr.png') no-repeat -9px 0px;
 }
-form#advanced-search-form-2 table th,
-form#advanced-search-form-2 table td {
-  padding:0px; margin:0px;
+.page-search-bhle form#search-form table th,
+.page-search-bhle form#search-form table td {
+  padding:0px; margin:0px; 
   width:auto; font-size:100%; color: #006626;
   border:none; background: transparent none;
-}
-form#advanced-search-form-2 table tr div.form-type-textfield {position:absolute; left:30px; top:20px;}
-form#advanced-search-form-2 table tr div.form-type-textfield input {
-  width:480px;
+}           
+.page-search-bhle form#search-form table tr div.form-type-textfield {position:absolute; left:30px; top:20px;}
+.page-search-bhle form#search-form table tr div.form-type-textfield input {
+  width:480px; 
   color:#004226;font-size:166.7%; line-height:1;
   background:transparent none; border:none;
 }
-form#advanced-search-form-2 table tr input.form-submit {
+.page-search-bhle form#search-form table tr input.form-submit {
   position:absolute; left:530px; top:25px;
   font-size:bold; background:transparent none; border:none;
 }
-form#advanced-search-form-2 table tr div.form-type-select {position:absolute; left:575px; top:12px;}
-form#advanced-search-form-2 table tr div.form-type-select select {
-  width:180px; height:47px;
+.page-search-bhle form#search-form table tr div.form-type-select {position:absolute; left:575px; top:12px;}
+.page-search-bhle form#search-form table tr div.form-type-select select {
+  width:180px !important; height:47px; 
   background:transparent none; border:none;
 }

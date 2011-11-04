@@ -12,8 +12,9 @@ regions[highlighted] = Highlighted
 regions[help] = Help
 
 regions[content_top] = Content top
-regions[content] = Content Main
-regions[content_expanded] = Expanded Content
+regions[content_preface] = Content preface
+regions[content] = Content MAIN
+regions[content_expanded] = Content expanded 
 regions[content_bottom] = Content bottom
 
 regions[sidebar] = Sidebar

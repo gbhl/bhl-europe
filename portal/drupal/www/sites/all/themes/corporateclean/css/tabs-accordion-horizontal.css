@@ -28,15 +28,21 @@
   display:block;
 	float:left; margin:0px; padding:0px;
 	height:62px; width:68px;
-  text-indent: -50000px;
   background-color:transparent;
   background-repeat:no-repeat; 
   background-position:left top;	
-	cursor:pointer; overflow:hidden;
+	overflow:hidden;
 }
-#accordion .feed-facebook h2 {background-image: url('../images/btn-facebook.png');}
-#accordion .feed-twitter h2 {background-image: url('../images/btn-twitter.png');}
-#accordion .feed-blogger h2 {background-image: url('../images/btn-blogger.png');}
+#accordion h2 /*a*/ {
+  display:block;
+	margin:0px; padding:0px;
+	height:62px; width:68px;
+  text-indent: -50000px;
+  background:transparent none;
+}
+#accordion h2#tab_feed-facebook {background-image: url('../images/btn-facebook.png');}
+#accordion h2#tab_feed-twitter {background-image: url('../images/btn-twitter.png');}
+#accordion h2#tab_feed-blogger {background-image: url('../images/btn-blogger.png');}
 /* currently active header */
 
 #accordion h2.current{cursor:default; background-position:left bottom;}
@@ -45,40 +51,34 @@
 	accordion pane. should initially have zero width and display:none.
 	the first pane should override these with inline style
 */
-#accordion div.content {
+#accordion div.block-aggregator {
 	width:0px; height:62px;
-	float:left;	
-	display:none;		
-	margin-right:8px;
-	color:#000;
+	float:left;	display:none;		
+	margin-right:8px;	color:#999; 
 	overflow:hidden;
 }
 
 /* content inside a pane should have fixed width */
-#accordion div.content div.item-list {
-	color:#444;
-	margin:0 0 -10px 0;
-	width:710px; height:55px;
-	overflow:hidden;
-}
-#accordion div.content div.more-link {
-	color:#444; font-size:91.7%;
-	margin:0 0 -10px 0; padding: 0px 5px;
-	width:700px; height:12px;
-	overflow:hidden;
-}
-
-#accordion div div.content {	
-	color:#999;
+#accordion div.block-aggregator div.content {clear:both; margin:0px; width:710px; height:62px;	overflow:hidden;}
+#accordion div div.block-aggregator {	
+	color:#999; 
 	width:710px; overflow:hidden;
 }
 
-#accordion div.content div.item-list ul {
-  clear:both; display:block; 
-  margin:0px; padding:0px; list-style-type:none;
-  width:710px; height:55px; overflow: hidden; 
+#accordion div.block-aggregator div.more-link {color:#444; float:right; width:40px; overflow:hidden;} 
+#accordion div.block-aggregator div.more-link a {padding:5px; font-weight:bold; color:#006626;}
+#accordion div.block-aggregator div.item-list {float:left; margin:0px 0px 7px; padding:0px 5px;  width:660px; height:55px; overflow: hidden;}
+ /* display:none; */
+/*	color:#444; font-size:91.7%;
+	margin:0 0 -10px 0; padding: 0px 5px;
+	width:700px; height:12px;
+	overflow:hidden;*/
+#accordion div.block-aggregator div.item-list ul {
+  display:block; float:left; margin:0px; padding:0px; 
+  list-style-type:none;
+  width:660px; height:55px; overflow: hidden; 
 }
-#accordion div.content div.item-list ul li {
+#accordion div.block-aggregator div.item-list ul li {
   display:inline-block;    float:left;
   margin:15px 0px 5px; padding:0px 20px 0px 20px;  
   width:180px; height:35px; 
@@ -86,8 +86,8 @@
   overflow: hidden; 
 }
   
-#accordion div.content div.item-list ul li a {
+#accordion div.block-aggregator div.item-list ul li a {
   color:#999; text-decoration:none;
   line-height:1.6;  
 }
-#accordion div.content div.item-list ul li a:hover {text-decoration:underline;}  
+#accordion div.block-aggregator div.item-list ul li a:hover {text-decoration:underline;}  

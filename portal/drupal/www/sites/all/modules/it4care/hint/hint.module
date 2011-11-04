@@ -1,0 +1,147 @@
+<?php
+// $Id: hint.module,v 1.4 2009/12/20 02:05:12 quicksketch Exp $
+
+/**
+ * @file
+ * The Hint module provides an API for adding JavaScript "hints" to fields.
+ */
+
+/**
+ * Implementation of hook_menu().
+ */
+function hint_menu() {
+  $items = array();
+
+  $items['admin/config/user-interface/hint'] = array(
+    'title' => 'Hint settings',
+    'description' => 'Enable or disable pre-configured uses of textfield hints.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('hint_settings_form'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Implementation of hook_init().
+ */
+function hint_init() {
+  drupal_add_js(drupal_get_path('module', 'hint') . '/hint.js');
+}
+
+/**
+ * Implementation of hook_elements().
+ */
+function hint_element_info() {
+  $elements = array();
+
+  $elements['textfield']['#pre_render'] = array('hint_pre_render');
+  $elements['password']['#pre_render'] = array('hint_pre_render');
+
+  return $elements;
+}
+
+/**
+ * Pre-render function to read #hint properties.
+ */
+function hint_pre_render($element) {
+
+  if (isset($element['#hint'])) {
+    $class = 'hint-enabled';
+    $element['#attributes']['title'] = $element['#hint'];
+    $element['#attributes']['class'][] = $class;
+  }
+  if (isset($element['#hint_remove_title']) && $element['#hint_remove_title']) {
+    unset($element['#title']);
+  }
+
+  return $element;
+}
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function hint_form_alter(&$form, $form_state, $form_id) {
+  if (hint_enabled_forms($form_id)) {
+    switch ($form_id) {
+      case 'search_block_form':
+        $form['search_block_form']['#hint'] = t('Search');
+        break;
+      case 'user_login':
+      case 'user_login_block':
+        hint_set_hint($form['name']);
+        hint_set_hint($form['pass']);
+        break;
+    }
+  }
+}
+
+/**
+ * Form for configuring hint.
+ */
+function hint_settings_form($form_state) {
+  $form = array();
+  $form['hint_forms'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Enabled hints'),
+    '#description' => t('Hint module includes several default implementations, which can be enabled by selecting options below.'),
+    '#tree' => TRUE,
+  );
+
+
+  $settings = hint_enabled_forms();
+  $supported_forms = array(
+    'search_block_form' => t('Search block'),
+    'user_login' => t('User login page'),
+    'user_login_block' => t('User login block'),
+  );
+  foreach ($supported_forms as $form_id => $form_name) {
+    $form['hint_forms'][$form_id]['enabled'] = array(
+      '#type' => 'checkbox',
+      '#title' => $form_name,
+      '#default_value' => isset($settings[$form_id]['enabled']) ? $settings[$form_id]['enabled'] : FALSE,
+    );
+  }
+
+  return system_settings_form($form);
+}
+
+/**
+ * A utility function to quickly set a field hint and remove its title.
+ */
+function hint_set_hint(&$element, $hint = NULL) {
+  if (!isset($hint)) {
+    $hint = $element['#title'];
+  }
+  $element['#hint'] = $hint;
+  $element['#hint_remove_title'] = TRUE;
+}
+
+/**
+ * Get a list of enabled forms that have default hints enabled.
+ *
+ * @param $form_id
+ *   (optional) When provided, will determine whether the given form should have
+ *   the hints enabled.
+ * @return
+ *   An array of form IDs with an "enabled" flag determining whether the forms
+ *   should have the hints enabled. When the $form_id parameter is passed, will
+ *   return a boolean determining whether or not the given form should have the
+ *   hints enabled.
+ */
+function hint_enabled_forms($form_id = NULL) {
+  static $hints = NULL;
+
+  if (!isset($hints)) {
+    $default = array('search_block_form' => array('enabled' => 1));
+    $hints = variable_get('hint_forms', $default);
+  }
+  if (isset($form_id)) {
+    return isset($hints[$form_id]['enabled']) ? $hints[$form_id]['enabled'] : FALSE;
+  }
+  else {
+    return $hints;
+  }
+}

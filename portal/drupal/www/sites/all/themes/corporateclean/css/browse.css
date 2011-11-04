@@ -1,9 +1,26 @@
+.page-browse #content #main h1 {display:none;}
+.page-browse #content #main {margin-top:20px; margin-bottom:20px;}
+
 .region-content-expanded #block-menu-menu-browse.collections {
-  margin:20px auto; width:950px; height:88px; padding: 10px 20px; 
+  margin:20px auto; width:990px; /*height:98px;*/ padding: 0px; 
   background:transparent url('../images/bg-collections.png') no-repeat 0px 0px;
 }
-.region-content-expanded #block-menu-menu-browse.collections h2 {color:#006626; margin-bottom:15px; padding:0px; font-size:141.7%;}
-.region-content-expanded #block-menu-menu-browse.collections ul.menu {display:block; list-style-type:none;}
+.region-content-expanded #block-menu-menu-browse.collections h2 {
+  float:left; margin:0px; padding:10px 40px 15px 20px; 
+  color:#006626; font-size:141.7%;
+  background:transparent url('../images/bg-collections-tab-right.png') no-repeat right top;
+}
+.region-content-expanded #block-menu-menu-browse.collections .content {
+  width:990px;   clear:both; 
+  background:transparent url('../images/bg-collections-bg.png') repeat-y left top; 
+  overflow:hidden;
+}
+.region-content-expanded #block-menu-menu-browse.collections ul.menu {
+  display:block; list-style-type:none;
+  padding:0px 20px 10px; width:950px;
+  background:transparent url('../images/bg-collections-bot.png') no-repeat left bottom; 
+  overflow:hidden;
+}
 .region-content-expanded #block-menu-menu-browse.collections ul.menu li {
   display: block; float: left;
   padding: 5px 20px; margin: 0;
@@ -17,102 +34,235 @@
 .region-content-expanded #block-menu-menu-browse.collections ul.menu li a {color:#004226; font-size:141.7%;}
 
 /** BROWSE TABS **/
-#content-inside #browsetabs {
-  margin:0px auto; padding:0px; padding-bottom:25px; width:1010px;
-  background:transparent url('../images/bg-facet-range-bot.png') no-repeat 50% bottom;
+div#quicktabs-browsetabs ul.quicktabs-tabs.quicktabs-style-basic {
+  margin: 0; /*padding:20px 30px 5px;*/ display:block; list-style: none; 
+  overflow:hidden;   border:none;
+  border-bottom: 0px none;
+  padding: 0px;
+  font: bold 100%/1.417 'Trebuchet MS', Helvetica, sans-serif !important;
+  font-size:100% !important;
+font-weight: bold;
+height: 54px;
 }
-div.browsearea {float:left; position:relative; width: 1010px;}
-div.browsearea ul#browsearea-tabs {
-  margin: 0; padding:20px 30px 5px; display:block; list-style: none; 
-  width:950px; height: 25px; 
-  background:transparent /*url('../images/bg-facet-range-tab.png') no-repeat 50% top*/;
-  overflow:hidden;   
-}
-div.browsearea ul#browsearea-tabs li {
+div#quicktabs-browsetabs ul.quicktabs-tabs.quicktabs-style-basic li {
   float:left; display:block;
   /* margin: 6px 3px 0px 0; padding: 0; */  line-height:1; 
-  /* height:34px; font-weight: bold;  background: url('/images/home/bg-tab-right.png') no-repeat right 0px; */
+  border:none;
 }
-div.browsearea ul#browsearea-tabs li.ui-state-hover {
-/*  background: url('/images/home/bg-tab-right.png') 100% -35px no-repeat; */
-}
-div.browsearea ul#browsearea-tabs li.ui-tabs-selected {
-/*  margin-bottom:0px; margin-top:0px; height:41px;
-  background: url('/images/home/bg-tab-right.png') 100% -35px no-repeat; */
-}
-div.browsearea ul#browsearea-tabs h2 {color:#ccc; font-size:141.7%; display:inline;}
-div.browsearea ul#browsearea-tabs li a {
+div#quicktabs-browsetabs ul.quicktabs-tabs.quicktabs-style-basic li a {
   color:#ccc; font-size:141.7%; display:inline;
-  display: block; padding: 0px 17px 0px 0px; 
+  display: block; color:#006626;
   text-decoration:none;
-/*  background: url('/images/home/bg-tab-left.png') no-repeat left 0px; */ 
+}                                              
+
+ul.quicktabs-tabs.quicktabs-style-basic a {
+font: normal 141.7%/1.417 'Trebuchet MS', Helvetica, sans-serif !important;
+color: #006626;
 }
-div.browsearea ul#browsearea-tabs li.ui-state-hover a {color:#006626; /*background-position: 0 -35px;*/}
-div.browsearea ul#browsearea-tabs li.ui-tabs-selected a {/*padding-top:18px; */color:#006626; /* height:20px;	background-position: 0 -35px;*/}
+div#quicktabs-browsetabs ul.quicktabs-tabs.quicktabs-style-basic li a:hover {color:#006626 !important; text-decoration:underline;}
+div#quicktabs-browsetabs ul.quicktabs-tabs.quicktabs-style-basic li.active a {color:#006626;  text-decoration:none; cursor:default;}
 
-
-
-#content-inside #browsetabs .browsearea-content-block {
-  margin:0px; padding:0px 10px; width:990px;
-  background:transparent url('../images/bg-facet-range-bg.png') repeat-y 50% top;
-}
-#content-inside #browsetabs .browsearea-content {
-  margin:0px; padding:0px; width:990px; 
-  background:#e1f0ce url('../images/bg-facet-range-gradient.png') repeat-x left bottom;    
+#content-inside #quicktabs-browsetabs {
+  margin:0px auto 20px; padding:0px; width:1010px;
 }
 
-#content-inside #browsetabs .browsearea-content a {
+
+div#quicktabs-browsetabs #quicktabs-container-browsetabs {
+  position:relative; margin:0px; padding:0px 10px 20px; width:990px; height:97px;
+  background:transparent url('../images/bg-browse-tabs-content.png') no-repeat 50% bottom;  
+  border:none; overflow:hidden;
+}
+div#quicktabs-browsetabs #quicktabs-container-browsetabs h2 {float:right; font-size:91.7%; font-weight:normal; position:absolute; top:80px; right:25px; visibility:hidden;} 
+div#quicktabs-browsetabs #quicktabs-container-browsetabs .quicktabs-tabpage  {
+  margin:0px; padding:0px 0px 0px 9px; width:981px; 
+  border:none;  overflow:hidden;
+}
+
+div#quicktabs-browsetabs #quicktabs-container-browsetabs a {
   display:block; float:left; 
-  padding:5px 5px; margin:10px;
+  padding:5px 5px; margin:0px 0px 11px 9px;
   height:28px; width:29px;  
-  text-align:center; color:#006626; font-size:150%;
+  text-align:center; color:#006626; font-size:150%; text-decoration:none;
   background:transparent url('../images/lbl-facet-filter-result.png') no-repeat left top;
 } 
+div#quicktabs-browsetabs #quicktabs-container-browsetabs a:hover {background-position:right top;}
 
-
-
-
-
-
+div#quicktabs-browsetabs ul.quicktabs-tabs {
+  margin:0px; padding:0px; width:1010px; height:54px;
+  background:transparent url('../images/bg-tabs-off.png') no-repeat 50% bottom;  
+  border:none; overflow:hidden;
+}
+div#quicktabs-browsetabs ul.quicktabs-tabs li {display:block; margin:0px; padding:0px; height:54px; }
+div#quicktabs-browsetabs ul.quicktabs-tabs li.active {
+  background:transparent url('../images/bg-tabs-tab-right.png') no-repeat right bottom;
+}
+div#quicktabs-browsetabs ul.quicktabs-tabs li a {display:block; margin:0px; padding:15px 30px 15px 30px; height:24px;} 
+div#quicktabs-browsetabs ul.quicktabs-tabs li.active a {
+  background:transparent url('../images/bg-tabs-tab-left.png') no-repeat left bottom;
+}
+div#quicktabs-browsetabs ul.quicktabs-tabs li.active a#quicktabs-tab-browsetabs-0 {
+  background:transparent url('../images/bg-tabs-tab0-left.png') no-repeat left bottom;
+}
 
 /* TABS ------------------------------------------------------------------------------------- */
 
-
-
 /** BROWSE by YEAR RANGE **/
-#content-inside .block.browse-year {
+#content-inside .block.browse-year,
+#view-release-periods-page .view-release-periods {
   margin:0px auto; padding:0px; padding-bottom:25px; width:1010px;
   background:transparent url('../images/bg-facet-range-bot.png') no-repeat 50% bottom;
   overflow:hidden;    
 }
-#content-inside .block.browse-year h2 {
-  margin:0px; padding:20px 30px 5px; width:950px; height: 25px;
+
+#content-inside .block.browse-year h2,
+#view-release-periods-page .view-header h2 {
+  margin:0px; padding:0px 30px 5px; width:950px; height: 45px;
   color:#006626; font-size:141.7%;
   background:transparent url('../images/bg-facet-range-tab.png') no-repeat 50% top;
   overflow:hidden;    
 }
+#content-inside .block.browse-year h2 span,
+#view-release-periods-page .view-header h2 span {
+  display:block; float:left; margin:0px; padding:20px 40px 0px 0px; height: 25px;
+  background:transparent url('../images/bg-facet-range-tab-right.png') no-repeat right top;
+}
 
-#content-inside .block.browse-year .content {
-  margin:0px; padding:0px 10px; width:990px;
-  background:transparent url('../images/bg-facet-range-bg.png') repeat-y 50% top;
+
+#content-inside .block.browse-year .content,
+#view-release-periods-page .view-release-period-content-wrapper {
+  /* margin:0px; padding:0px 11px 0px 9px; */ 
+  margin: 0 0 0 0px; padding: 0 11px 0 9px; width:990px;
+  background:transparent url('../images/bg-facet-range-bg.png') repeat-y right top;
   overflow:hidden;    
 }
 
-#content-inside .block.browse-year .content .browse-year.years-list {
+#content-inside .block.browse-year .content .browse-year.years-list,
+#view-release-periods-page .view-release-period-content {
   margin:0px; padding:0px; width:990px; /* min-height:230px; */ overflow:hidden;
   background:#e1f0ce url('../images/bg-facet-range-gradient.png') repeat-x left bottom;    
 }
 
-#content-inside .block.browse-year .content .data-range-handlers {
-  margin:0px; padding:5px; width:980px; height:130px;
+#content-inside .block.browse-year .content .data-range-handlers,
+#view-release-periods-page .view-filters  {
+  margin:0px; padding:0px 10px; width:970px; height:140px;
   background:transparent url('../images/bg-facet-range-hr.png') no-repeat 50% bottom;    
 }
 
-#content-inside .block.browse-year .content .browse-year.years-list a {
-  display:block; float:left; 
-  padding:5px 10px; margin:10px;
-  height:28px; width:45px;  
+#view-release-periods-page .view-content {padding:10px 10px 0px 10px; width:970px; min-height:100px; overflow:hidden;}
+#view-release-periods-page .view-content .views-row {float:left; margin:10px; width:65px; height:38px;}
+#content-inside .block.browse-year .content .browse-year.years-list a,
+#view-release-periods-page .view-content .views-row a {
+  display:block; padding:5px 10px; 
+  height:28px; width:45px; text-decoration:none;  
   text-align:center; color:#006626; font-size:150%;
   background:transparent url('../images/lbl-facet-range-result.png') no-repeat right top;
 } 
+#content-inside .block.browse-year .content .browse-year.years-list a:hover,
+#view-release-periods-page .view-content .views-row a:hover {background-position:left top; }
 
+/* ------------------ */
+
+form#views-exposed-form-release-periods-page {padding:0px 10px; width:960px;}
+form#views-exposed-form-release-periods-page #edit-slider-filter-wrapper {float:left; width:682px;}
+form#views-exposed-form-release-periods-page #edit-slider-filter-wrapper label {display:none;}
+form#views-exposed-form-release-periods-page .ui-slider-horizontal {
+  margin-top:60px; margin-bottom:10px;
+  height:3px; border:none;
+  background:transparent url('../images/bg-browse-year-slider.gif') repeat-x left top;   
+}
+
+form#views-exposed-form-release-periods-page .ui-corner-all {
+-moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+}
+form#views-exposed-form-release-periods-page .ui-widget {font: normal 125%/1.417 'Trebuchet MS', Helvetica, sans-serif !important; color: #006626;}
+form#views-exposed-form-release-periods-page .ui-widget-content {position:relative; border:0px none transparent !important;}
+
+
+form#views-exposed-form-release-periods-page .ui-widget-header {
+border: 1px solid #006626;  position:absolute;
+background: #006626 none;
+}
+/*form#views-exposed-form-release-periods-page .ui-state-default,*/
+form#views-exposed-form-release-periods-page .ui-widget-content .ui-state-default.ui-slider-max {
+  border: 0px solid lightGrey;     text-align:center; color:#006626; font-size:116.4%; font-weight:bold;
+  background: transparent url('../images/lbl-browse-year-slider-max.png') no-repeat left top;
+}
+form#views-exposed-form-release-periods-page .ui-widget-content .ui-state-default.ui-slider-min {
+  border: 0px solid lightGrey;    text-align:center; color:#006626; font-size:116.4%; font-weight:bold; 
+  background: transparent url('../images/lbl-browse-year-slider-min.png') no-repeat left top;
+}
+
+form#views-exposed-form-release-periods-page .ui-slider-horizontal .ui-slider-handle.ui-slider-max {
+top: 7px;
+margin-left: 0px; padding:20px 10px 5px;
+}
+
+form#views-exposed-form-release-periods-page .ui-slider-horizontal .ui-slider-handle.ui-slider-min {
+top: -53px;
+margin-left: 0px; padding:5px 10px 20px;
+}
+
+form#views-exposed-form-release-periods-page .ui-slider .ui-slider-handle {
+  position: absolute; z-index: 2; 
+  width: 45px; height: 26px;
+  cursor: default;
+}
+
+form#views-exposed-form-release-periods-page .ui-slider .ui-slider-handle:hover {text-decoration:none;}
+
+form#views-exposed-form-release-periods-page .views-exposed-widget.views-submit-button {float:right; padding-top:30px; width:184px;}
+form#views-exposed-form-release-periods-page .views-exposed-widget.views-submit-button input {
+  height:38px; width:184px;
+  text-indent:-50000px;
+  border:none; background:transparent url('../images/btn-browse-year-apply.png') no-repeat left top; 
+  display:none;
+}
+
+form#views-exposed-form-release-periods-page .form-item.form-type-textfield.form-item-slider-filter-min {float:left;}
+form#views-exposed-form-release-periods-page .form-item.form-type-textfield.form-item-slider-filter-max  {float:right;}
+
+.views-exposed-form .views-exposed-widget {width:682px;}
+
+#edit-slider-filter-max-wrapper,
+#edit-slider-filter-min-wrapper,
+#edit-slider-filter-max-wrapper label {
+  margin-top: 5px;
+  display: inline-block;
+}
+#edit-slider-filter-min,
+#edit-slider-filter-max {
+  width: 30px;
+  visibility:hidden;
+}
+#edit-slider-filter-max-wrapper label {
+  width: 75px;
+  text-align: center;
+}
+
+
+/*
+ * jQuery UI Slider 1.8.7
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 1.2em; height: 1.2em; cursor: default; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
