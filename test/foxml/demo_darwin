@@ -80,6 +80,9 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
   <dc:title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of &apos;The origin of species&apos;.</dc:title>
   <dc:identifier>bhl:darwin</dc:identifier>
+  <dc:creator>Edward Bagnall</dc:creator>
+  <dc:publisher>Poulton</dc:publisher>
+  <dc:date>1909</dc:date>
 </oai_dc:dc>
 </foxml:xmlContent>
 </foxml:datastreamVersion>

@@ -181,6 +181,7 @@ function bhle_search_add_condition(&$form, $id, $total_count, $term = '', $field
  * (aka Advanced Search)
  */
 function bhle_search_form_search_form_alter(&$form, $form_state) {
+
     // Remove basic form since we build a completely custom one
     unset($form['basic']);
 
@@ -413,15 +414,36 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $responseObj = $solr->search($query);
         $response = $responseObj->response;
         // Check if we found something
+
+        // configuration of the result list items
+        // hard coded by now, could be made nicer ...
+        // .., but by now we quickly need a more complete result list
+        $result_field_names = array(
+        	"dc_title" => "title",
+        	"dc_creator" => "author",
+        	"dc_date" => "year",
+        	"dc_publisher" => "publisher"
+        );
+ 		$title_field_name = "dc_title";
+
         if ($response->numFound > 0) {
             $docs = $response->docs;
-            $titleField = variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD);
+            $doc_index=0;
             foreach ($docs as $doc) {
-                $titleArray = $doc->$titleField; // the solr response contains an array per field!!!
-                $results[] = array(
-                    'link' => url('empty.html'),
-                    'title' => $titleArray[0]
-                );
+            	$results[$doc_index] = array();
+            	$results[$doc_index]["extra"] = array();
+            	foreach ($result_field_names as $field_name => $label){
+
+            		if($field_name == $title_field_name) {
+	            		$results[$doc_index]["link"] = url('empty.html');
+	            		$results[$doc_index]["title"] = _solrdoc_getField($doc, $field_name);
+            		} else {
+            			//TODO use hook_node_search_result instead
+	                	$results[$doc_index]["extra"][$label] = _solrdoc_getField($doc, $field_name);
+            		}
+
+            	}
+            	$doc_index++;
             }
         }
     }
@@ -429,6 +451,21 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     }
 
     return $results;
+}
+
+/**
+ * Helper function to read fields from solr response doc entities.
+ *
+ *
+ * @param unknown_type $solr_doc
+ * @param unknown_type $fieldName
+ */
+function _solrdoc_getField(&$solr_doc, $fieldName){
+
+	if(isset($solr_doc->$fieldName)){
+		$fieldArray = $solr_doc->$fieldName; // the solr response contains an array per field!!!
+		return $fieldArray[0];
+	}
 }
 
 /**
