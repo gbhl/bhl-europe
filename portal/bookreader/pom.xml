@@ -24,13 +24,6 @@
 					<port>9090</port>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<outputDirectory>${env.FEDORA_HOME}/tomcat/webapps</outputDirectory>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 </project>
