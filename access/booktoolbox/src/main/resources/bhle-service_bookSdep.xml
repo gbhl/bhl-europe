@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<foxml:digitalObject VERSION="1.1" PID="demo:bookSdep"
+<foxml:digitalObject VERSION="1.1" PID="bhle-service:bookSdep"
 xmlns:foxml="info:fedora/fedora-system:def/foxml#"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
@@ -8,7 +8,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Service Deployment Object for Book"/>
 <foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
 <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2011-06-21T08:35:11.186Z"/>
-<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2011-09-20T13:24:02.187Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2011-11-05T13:54:50.661Z"/>
 </foxml:objectProperties>
 <foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
 <foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2011-06-21T08:35:11.186Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
@@ -110,30 +110,33 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <audit:date>2011-09-20T13:24:02.187Z</audit:date>
 <audit:justification></audit:justification>
 </audit:record>
+<audit:record ID="AUDREC13">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>WSDL</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-05T13:52:44.037Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC14">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>RELS-EXT</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-05T13:54:50.661Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
 </audit:auditTrail>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
-<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2011-06-21T08:35:11.186Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="400">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2011-06-21T08:35:11.186Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="408">
 <foxml:xmlContent>
 <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
   <dc:title>Service Deployment Object for Book</dc:title>
-  <dc:identifier>demo:bookSdep</dc:identifier>
+  <dc:identifier>bhle-service:bookSdep</dc:identifier>
 </oai_dc:dc>
-</foxml:xmlContent>
-</foxml:datastreamVersion>
-</foxml:datastream>
-<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
-<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="" CREATED="2011-06-21T09:05:50.247Z" MIMETYPE="application/rdf+xml" SIZE="544">
-<foxml:xmlContent>
-<rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="info:fedora/demo:bookSdep">
-    <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"></fedora-model:hasModel>
-    <fedora-model:isDeploymentOf rdf:resource="info:fedora/demo:bookSdef"></fedora-model:isDeploymentOf>
-    <fedora-model:isContractorOf rdf:resource="info:fedora/ilives:bookCModel"></fedora-model:isContractorOf>
-  </rdf:Description>
-</rdf:RDF>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
@@ -186,7 +189,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:datastreamVersion>
 </foxml:datastream>
 <foxml:datastream ID="WSDL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
-<foxml:datastreamVersion ID="WSDL.8" LABEL="" CREATED="2011-09-20T13:24:02.187Z" MIMETYPE="text/xml" SIZE="4866">
+<foxml:datastreamVersion ID="WSDL.9" LABEL="" CREATED="2011-11-05T13:52:44.037Z" MIMETYPE="text/xml" SIZE="4841">
 <foxml:xmlContent>
 <wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="urn:thisNamespace" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="definitions" targetNamespace="urn:thisNamespace">
   <wsdl:types>
@@ -251,7 +254,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
   <wsdl:binding name="binding" type="this:portType">
     <http:binding verb="GET"></http:binding>
     <wsdl:operation name="bookreader">
-      <http:operation location="http://local.fedora.server/bookreader/index.jsp?pid=(pid)&amp;ui=(ui)"></http:operation>
+      <http:operation location="http://localhost:8090/bookreader/index.jsp?pid=(pid)&amp;ui=(ui)"></http:operation>
       <wsdl:input>
         <http:urlReplacement></http:urlReplacement>
       </wsdl:input>
@@ -260,7 +263,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="search">
-      <http:operation location="http://local.fedora.server/booktoolbox/book/search/(pid)?query=(query)"></http:operation>
+      <http:operation location="http://localhost:8090/booktoolbox/book/search/(pid)?query=(query)"></http:operation>
       <wsdl:input>
         <http:urlReplacement></http:urlReplacement>
       </wsdl:input>
@@ -269,7 +272,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="pdf">
-      <http:operation location="http://local.fedora.server/booktoolbox/book/pdf/(pid)?ranges=(ranges)&amp;resolution=(resolution)"></http:operation>
+      <http:operation location="http://localhost:8090/booktoolbox/book/pdf/(pid)?ranges=(ranges)&amp;resolution=(resolution)"></http:operation>
       <wsdl:input>
         <http:urlReplacement></http:urlReplacement>
       </wsdl:input>
@@ -278,7 +281,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ocr">
-      <http:operation location="http://local.fedora.server/booktoolbox/book/ocr/(pid)?ranges=(ranges)"></http:operation>
+      <http:operation location="http://localhost:8090/booktoolbox/book/ocr/(pid)?ranges=(ranges)"></http:operation>
       <wsdl:input>
         <http:urlReplacement></http:urlReplacement>
       </wsdl:input>
@@ -287,7 +290,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="zip">
-      <http:operation location="http://local.fedora.server/booktoolbox/book/zip/(pid)?ranges=(ranges)&amp;resolution=(resolution)"></http:operation>
+      <http:operation location="http://localhost:8090/booktoolbox/book/zip/(pid)?ranges=(ranges)&amp;resolution=(resolution)"></http:operation>
       <wsdl:input>
         <http:urlReplacement></http:urlReplacement>
       </wsdl:input>
@@ -297,6 +300,19 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
     </wsdl:operation>
   </wsdl:binding>
 </wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="RELS-EXT.1" LABEL="" CREATED="2011-11-05T13:54:50.661Z" MIMETYPE="application/rdf+xml" SIZE="563">
+<foxml:xmlContent>
+<rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/bhle-service:bookSdep">
+    <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"></fedora-model:hasModel>
+    <fedora-model:isDeploymentOf rdf:resource="info:fedora/bhle-service:bookSdef"></fedora-model:isDeploymentOf>
+    <fedora-model:isContractorOf rdf:resource="info:fedora/islandora:bookCModel"></fedora-model:isContractorOf>
+  </rdf:Description>
+</rdf:RDF>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>

@@ -30,7 +30,7 @@
 			e.printStackTrace();
 		}
 		
-		DecimalFormat formatter = new DecimalFormat("000");
+		DecimalFormat formatter = new DecimalFormat("0000");
 		String pageDimensionsArray = "[";
 		for (int i = 1 ; i <= pageCount; i++ ){
 			GetMethod get = new GetMethod("http://localhost:8080/fedora/objects/" + pid + "-" + formatter.format(i) + "/datastreams/DIMENSION/content");
@@ -110,7 +110,7 @@ br.getPageHeight = function(index) {
 }
 
 br.getPageURI = function(index, reduce, rotate) {
- var leafStr = '000';            
+ var leafStr = '0000';            
  var imgStr = br.getPageNum(index).toString();
  var re = new RegExp("0{"+imgStr.length+"}$");
  var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/bhle-service:pageSdef/jpeg';
@@ -118,7 +118,7 @@ br.getPageURI = function(index, reduce, rotate) {
 }
 
 br.getPageOCRURI = function(index) {
- var leafStr = '000';            
+ var leafStr = '0000';            
  var imgStr = (index).toString();
  var re = new RegExp("0{"+imgStr.length+"}$");
  var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/datastreams/TEI/content';
