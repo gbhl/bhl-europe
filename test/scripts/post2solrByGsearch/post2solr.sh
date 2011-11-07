@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -e
 
 JAVA=/usr/bin/java
 FGSEARCH_BASE=/home/bhladmin/dev/opt/archival-storage/fedora/tomcat/webapps/fedoragsearch/
