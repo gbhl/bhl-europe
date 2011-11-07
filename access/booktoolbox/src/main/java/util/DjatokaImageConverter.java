@@ -21,8 +21,7 @@ public class DjatokaImageConverter implements ImageConverter {
 		try {
 			result = Image
 					.getInstance(new URL(
-							GlobalParameter.BASE_URL
-									+ "/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id="
+									"http://localhost:8090/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id="
 									+ source
 									+ "&svc_id=info:lanl-repo/svc/getRegion&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000&svc.format=image/jpeg&svc.level="
 									+ resolution.getLevel() + "&svc.rotate=0"));

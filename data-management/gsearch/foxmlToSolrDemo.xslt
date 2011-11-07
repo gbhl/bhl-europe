@@ -2,23 +2,25 @@
 <!-- $Id: foxmlToSolr.xslt $ -->
 <xsl:stylesheet version="1.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
-    exclude-result-prefixes="exts"
+		xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
+		exclude-result-prefixes="exts"
 		xmlns:foxml="info:fedora/fedora-system:def/foxml#"
 		xmlns:dc="http://purl.org/dc/elements/1.1/"
-		xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/">
+		xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" >
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
 <!--
-	 This xslt stylesheet generates the Solr doc element consisting of field elements
-     from a FOXML record.
-     You must specify the index field elements in solr's schema.xml file,
-     including the uniqueKey element, which in this case is set to "PID".
-     Options for tailoring:
-       - generation of fields from other XML metadata streams than DC
-       - generation of fields from other datastream types than XML
-         - from datastream by ID, text fetched, if mimetype can be handled.
+	This xslt stylesheet generates the Solr doc element consisting of field elements
+	from a FOXML record.
+	You must specify the index field elements in solr's schema.xml file,
+	including the uniqueKey element, which in this case is set to "PID".
+	Options for tailoring:
+		- generation of fields from other XML metadata streams than DC
+		- generation of fields from other datastream types than XML
+		- from datastream by ID, text fetched, if mimetype can be handled.
 -->
+	
+	<xsl:include href="./includes/mods-solr.xsl"/>
 
 	<xsl:param name="REPOSITORYNAME" select="repositoryName"/>
 	<xsl:param name="FEDORASOAP" select="repositoryName"/>
@@ -75,7 +77,24 @@
 					<xsl:value-of select="text()"/>
 				</field>
 			</xsl:for-each>
-
+			<!-- 
+				OLEF/MODS  ( templates included from olef-solr.xml )
+			-->
+			<!-- variant with works with local namespace set on mods element -->
+			<!-- 
+			-->
+			<xsl:for-each select="/foxml:digitalObject/foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/*[local-name(.) = 'mods']">
+				<xsl:call-template name="mods"/>
+			</xsl:for-each>
+			
+			<!-- variant with works when local namespace NOT SET on mods element -->
+			<!--
+			<xsl:for-each select="/foxml:digitalObject/foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/mods">
+				<xsl:call-template name="mods-name-DEBUG"/>
+				<DEBUG><xsl:value-of select="language"/></DEBUG>
+			</xsl:for-each>
+			-->
+			
 			<!-- a datastream is fetched, if its mimetype
 			     can be handled, the text becomes the value of the field. -->
 			<xsl:for-each select="foxml:datastream[@CONTROL_GROUP='M' or @CONTROL_GROUP='E' or @CONTROL_GROUP='R']">
@@ -105,6 +124,7 @@
 		</doc>
 		</add>
 	</xsl:template>
+	
 
 	<xsl:template match="/foxml:digitalObject" mode="inactiveFedoraObject">
 		<delete>

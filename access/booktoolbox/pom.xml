@@ -60,13 +60,6 @@
 				</configuration>
 			</plugin>
 		-->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<outputDirectory>${env.FEDORA_HOME}/tomcat/webapps</outputDirectory>
-				</configuration>
-			</plugin>
 		<plugin>
            <artifactId>maven-compiler-plugin</artifactId>
            <configuration>

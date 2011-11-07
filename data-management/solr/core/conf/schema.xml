@@ -736,27 +736,27 @@
    		combination field wich are needed for simple search,
    		these fields will will contain data from the named fields
    	 -->
+   	 <!-- dc_title +  dc_author -->
 	<field name="dc_title_dc_author" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="dc_title" dest="dc_title_dc_author"/>
     <copyField source="dc_author" dest="dc_title_dc_author"/>
-
     <field name="dc_title_dc_author__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="dc_title" dest="dc_title_dc_author__exact"/>
     <copyField source="dc_author" dest="dc_title_dc_author__exact"/>
 
+	<!-- dc_title + dc_date  -->
     <field name="dc_title_dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="dc_title" dest="dc_title_dc_date"/>
     <copyField source="dc_date" dest="dc_title_dc_date"/>
-
     <field name="dc_title_dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="dc_title" dest="dc_title_dc_date__exact"/>
     <copyField source="dc_date" dest="dc_title_dc_date__exact"/>
 
+	<!-- dc_title +  dc_author + dc_date -->
     <field name="dc_title_dc_author_dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="dc_title" dest="dc_title_dc_author_dc_date"/>
     <copyField source="dc_author" dest="dc_title_dc_author_dc_date"/>
     <copyField source="dc_date" dest="dc_title_dc_author_dc_date"/>
-
     <field name="dc_title_dc_author_dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="dc_title" dest="dc_title_dc_author_dc_date__exact"/>
     <copyField source="dc_author" dest="dc_title_dc_author_dc_date__exact"/>
