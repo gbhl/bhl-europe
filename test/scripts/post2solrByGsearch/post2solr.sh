@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -x
 
 JAVA=/usr/bin/java
 FGSEARCH_BASE=/home/bhladmin/dev/opt/archival-storage/fedora/tomcat/webapps/fedoragsearch/
@@ -47,22 +47,28 @@ do
 
   IN=${i/.\//}
 
-	#
-	# execute the script defined in $PRE_POCESSOR
-	#
-	if [ -f "$PRE_POCESSOR" ]
-	then
-  echo "pre processing $IN .."
-		. $PRE_POCESSOR $IN > $OUT_PRE
-	else
-		cp $IN $OUT_PRE
+	# filter
+	TEST=$(grep "<foxml:digitalObject VERSION=\"1\.1\" PID=\"bhle:" $IN)
+
+	if [ -n "$TEST" ]
+  then
+		#
+		# execute the script defined in $PRE_POCESSOR
+		#
+		if [ -f "$PRE_POCESSOR" ]
+		then
+		echo "pre processing $IN .."
+			. $PRE_POCESSOR $IN > $OUT_PRE
+		else
+			cp $IN $OUT_PRE
+		fi
+		echo "processing $IN ($OUT_PRE).."
+		$JAVA -classpath $FGSEARCH_BASE/WEB-INF/classes:$FGSEARCH_BASE/WEB-INF/lib/serializer.jar:$FGSEARCH_BASE/WEB-INF/lib/xml-apis.jar:$FGSEARCH_BASE/WEB-INF/lib/xercesImpl.jar:$FGSEARCH_BASE/WEB-INF/lib/xalan.jar:$FGSEARCH_BASE/WEB-INF/lib/log4j-1.2.15.jar org.apache.xalan.xslt.Process -in $OUT_PRE -xsl $2 -out $OUT
+
+		echo "posting $IN .."
+		$JAVA -Durl=$ULR -jar $SOLR_POST $OUT
+
+		echo
 	fi
-	echo "processing $IN ($OUT_PRE).."
-  $JAVA -classpath $FGSEARCH_BASE/WEB-INF/classes:$FGSEARCH_BASE/WEB-INF/lib/serializer.jar:$FGSEARCH_BASE/WEB-INF/lib/xml-apis.jar:$FGSEARCH_BASE/WEB-INF/lib/xercesImpl.jar:$FGSEARCH_BASE/WEB-INF/lib/xalan.jar:$FGSEARCH_BASE/WEB-INF/lib/log4j-1.2.15.jar org.apache.xalan.xslt.Process -in $OUT_PRE -xsl $2 -out $OUT
-
-  echo "posting $IN .."
-  $JAVA -Durl=$ULR -jar $SOLR_POST $OUT
-
-	echo
 done
 
