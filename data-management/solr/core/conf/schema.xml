@@ -683,6 +683,14 @@
     <copyField source="mods_language" dest="all"/>
     <copyField source="mods_language" dest="all__exact"/>
 
+    <field name="mods_abstract" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_abstract__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_abstract__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="mods_abstract" dest="mods_abstract__exact"/>
+    <copyField source="mods_abstract" dest="mods_abstract__facet"/>
+    <copyField source="mods_abstract" dest="all"/>
+    <copyField source="mods_abstract" dest="all__exact"/>
+
   	<!--
    		combination field wich are needed for simple search,
    		these fields will will contain data from the named fields
