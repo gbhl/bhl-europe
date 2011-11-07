@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
+
+
+	BHL-Europe solr schema, focused on Dublin core fields
+	this schema is repaced by the latest schema
+	(schema.xml later backed up as schema-mods.xml) which rather is
+	using mods fields.
+
+
+ -->
+<!--
  Licensed to the Apache Software Foundation (ASF) under one or more
  contributor license agreements.  See the NOTICE file distributed with
  this work for additional information regarding copyright ownership.
@@ -577,10 +587,11 @@
    		 	* taxon name
    	-->
    <field name="spell" type="text_spell" indexed="true" stored="true" multiValued="true"/>
-   <copyField source="mods_title" dest="spell"/>
-   <copyField source="mods_name" dest="spell"/>
-   <copyField source="mods_subject" dest="spell"/>
-   <copyField source="mods_date_issued" dest="spell"/>
+   <copyField source="dc_title" dest="spell"/>
+   <copyField source="dc_creator" dest="spell"/>
+   <copyField source="dc_subject" dest="spell"/>
+   <copyField source="dc_date" dest="spell"/>
+   <copyField source="dc_dateIssued" dest="spell"/>
 
    <!-- unused fiels from example, keeping as reference
 		<field name="payloads" type="payloads" indexed="true" stored="true"/>
@@ -595,124 +606,351 @@
 
 
     <!--
-      mods_* fields
+      dc_* fields
      -->
 
-	<!-- title  -->
-    <field name="mods_title" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_title__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_title__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <field name="mods_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_title" dest="mods_title__facet"/>
-    <copyField source="mods_title" dest="mods_title__exact"/>
-    <copyField source="mods_title" dest="all"/>
-    <copyField source="mods_title" dest="all__exact"/>
+    <field name="dc_title" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_title__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_title__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="dc_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_title" dest="dc_title__facet"/>
+    <copyField source="dc_title" dest="dc_title__exact"/>
+    <copyField source="dc_title" dest="all"/>
+    <copyField source="dc_title" dest="all__exact"/>
 
-	<!-- author name  -->
-    <field name="mods_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_name__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_name__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <field name="mods_name__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_name" dest="mods_name__exact"/>
-    <copyField source="mods_name" dest="mods_name__facet"/>
-    <copyField source="mods_name" dest="all"/>
-    <copyField source="mods_name" dest="all__exact"/>
+    <field name="dc_creator" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_creator__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_creator__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="dc_creator__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_creator" dest="dc_creator__exact"/>
+    <copyField source="dc_creator" dest="dc_creator__facet"/>
+    <copyField source="dc_creator" dest="all"/>
+    <copyField source="dc_creator" dest="all__exact"/>
 
-	<!-- date issued (year string expected) -->
-    <field name="mods_date_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_date_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_date_issued__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <field name="mods_date_issued__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_date_issued" dest="mods_date_issued__exact"/>
-    <copyField source="mods_date_issued" dest="mods_date_issued__facet"/>
-    <copyField source="mods_date_issued" dest="all"/>
-    <copyField source="mods_date_issued" dest="all__exact"/>
+    <field name="dc_subject" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_subject__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_subject__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <field name="dc_subject__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_subject" dest="dc_subject__exact"/>
+    <copyField source="dc_subject" dest="dc_subject__facet"/>
+    <copyField source="dc_subject" dest="all"/>
+    <copyField source="dc_subject" dest="all__exact"/>
 
-	<!--   -->
-    <field name="mods_type_of_resource" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_type_of_resource__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_type_of_resource__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <field name="mods_type_of_resource__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_type_of_resource" dest="mods_type_of_resource__exact"/>
-    <copyField source="mods_type_of_resource" dest="mods_type_of_resource__facet"/>
-    <copyField source="mods_type_of_resource" dest="all"/>
-    <copyField source="mods_type_of_resource" dest="all__exact"/>
+    <field name="dc_description" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_description__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_description__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_description" dest="dc_description__exact"/>
+    <copyField source="dc_description" dest="dc_description__facet"/>
+    <copyField source="dc_description" dest="all"/>
+    <copyField source="dc_description" dest="all__exact"/>
 
-	<!-- keywords on subject  -->
-    <field name="mods_subject" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_subject__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_subject__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
-    <field name="mods_subject__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_subject" dest="mods_subject__exact"/>
-    <copyField source="mods_subject" dest="mods_subject__facet"/>
-    <copyField source="mods_subject" dest="all"/>
-    <copyField source="mods_subject" dest="all__exact"/>
+    <field name="dc_publisher" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_publisher__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_publisher__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_publisher" dest="dc_publisher__exact"/>
+    <copyField source="dc_publisher" dest="dc_publisher__facet"/>
+    <copyField source="dc_publisher" dest="all"/>
+    <copyField source="dc_publisher" dest="all__exact"/>
 
-	<!-- publisher -->
-    <field name="mods_publisher" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_publisher__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_publisher__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_publisher" dest="mods_publisher__exact"/>
-    <copyField source="mods_publisher" dest="mods_publisher__facet"/>
-    <copyField source="mods_publisher" dest="all"/>
-    <copyField source="mods_publisher" dest="all__exact"/>
+    <field name="dc_contributor" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_contributor__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_contributor__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_contributor" dest="dc_contributor__exact"/>
+    <copyField source="dc_contributor" dest="dc_contributor__facet"/>
+    <copyField source="dc_contributor" dest="all"/>
+    <copyField source="dc_contributor" dest="all__exact"/>
 
-    <!-- place of publication -->
-    <field name="mods_place" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_place__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_place__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_place" dest="mods_place__exact"/>
-    <copyField source="mods_place" dest="mods_place__facet"/>
-    <copyField source="mods_place" dest="all"/>
-    <copyField source="mods_place" dest="all__exact"/>
+    <field name="dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_date__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="dc_date__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_date" dest="dc_date__exact"/>
+    <copyField source="dc_date" dest="dc_date__facet"/>
+    <copyField source="dc_date" dest="all"/>
+    <copyField source="dc_date" dest="all__exact"/>
 
-	<!-- content provider -->
-    <field name="mods_record_content_source" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_record_content_source__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_record_content_source__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_record_content_source" dest="mods_record_content_source__exact"/>
-    <copyField source="mods_record_content_source" dest="mods_record_content_source__facet"/>
-    <copyField source="mods_record_content_source" dest="all"/>
-    <copyField source="mods_record_content_source" dest="all__exact"/>
+    <field name="dc_dateIssued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_dateIssued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_dateIssued__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="dc_dateIssued__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_dateIssued" dest="dc_dateIssued__exact"/>
+    <copyField source="dc_dateIssued" dest="dc_dateIssued__facet"/>
+    <copyField source="dc_dateIssued" dest="all"/>
+    <copyField source="dc_dateIssued" dest="all__exact"/>
 
-    <field name="mods_language" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_language__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_language__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_language" dest="mods_language__exact"/>
-    <copyField source="mods_language" dest="mods_language__facet"/>
-    <copyField source="mods_language" dest="all"/>
-    <copyField source="mods_language" dest="all__exact"/>
+    <field name="dc_type" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_type__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_type__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="dc_type__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_type" dest="dc_type__exact"/>
+    <copyField source="dc_type" dest="dc_type__facet"/>
+    <copyField source="dc_type" dest="all"/>
+    <copyField source="dc_type" dest="all__exact"/>
+
+    <field name="dc_format" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_format__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_format__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_format" dest="dc_format__exact"/>
+    <copyField source="dc_format" dest="dc_format__facet"/>
+    <copyField source="dc_format" dest="all"/>
+    <copyField source="dc_format" dest="all__exact"/>
+
+    <field name="dc_identifier" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_identifier__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_identifier__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_identifier" dest="dc_identifier__exact"/>
+    <copyField source="dc_identifier" dest="dc_identifier__facet"/>
+    <copyField source="dc_identifier" dest="all"/>
+    <copyField source="dc_identifier" dest="all__exact"/>
+
+    <field name="dc_source" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_source__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_source__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_source" dest="dc_source__exact"/>
+    <copyField source="dc_source" dest="dc_source__facet"/>
+    <copyField source="dc_source" dest="all"/>
+
+    <field name="dc_language" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_language__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_language__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_language" dest="dc_language__exact"/>
+    <copyField source="dc_language" dest="dc_language__facet"/>
+    <copyField source="dc_language" dest="all"/>
+    <copyField source="dc_language" dest="all__exact"/>
+
+    <field name="dc_relation" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_relation__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_relation__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_relation" dest="dc_relation__exact"/>
+    <copyField source="dc_relation" dest="dc_relation__facet"/>
+    <copyField source="dc_relation" dest="all"/>
+    <copyField source="dc_relation" dest="all__exact"/>
+
+    <field name="dc_rights" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_rights__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_rights__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_rights" dest="dc_rights__exact"/>
+    <copyField source="dc_rights" dest="dc_rights__facet"/>
+    <copyField source="dc_rights" dest="all"/>
+    <copyField source="dc_rights" dest="all__exact"/>
+
+    <field name="dc_coverage" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_coverage__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dc_coverage__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dc_coverage" dest="dc_coverage__exact"/>
+    <copyField source="dc_coverage" dest="dc_coverage__facet"/>
+    <copyField source="dc_coverage" dest="all"/>
+    <copyField source="dc_coverage" dest="all__exact"/>
 
   	<!--
    		combination field wich are needed for simple search,
    		these fields will will contain data from the named fields
    	 -->
-   	 <!-- mods_title +  mods_name -->
-	<field name="mods_title_mods_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name"/>
-    <copyField source="mods_name" dest="mods_title_mods_name"/>
-    <field name="mods_title_mods_name__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name__exact"/>
-    <copyField source="mods_name" dest="mods_title_mods_name__exact"/>
+   	 <!-- dc_title +  dc_author -->
+	<field name="dc_title_dc_author" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author"/>
+    <copyField source="dc_author" dest="dc_title_dc_author"/>
+    <field name="dc_title_dc_author__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author__exact"/>
+    <copyField source="dc_author" dest="dc_title_dc_author__exact"/>
 
-	<!-- mods_title + mods_date_issued  -->
-    <field name="mods_title_mods_date_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_date_issued"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_date_issued"/>
-    <field name="mods_title_mods_date_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_date_issued__exact"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_date_issued__exact"/>
+	<!-- dc_title + dc_date  -->
+    <field name="dc_title_dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_date"/>
+    <copyField source="dc_date" dest="dc_title_dc_date"/>
+    <field name="dc_title_dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_date__exact"/>
+    <copyField source="dc_date" dest="dc_title_dc_date__exact"/>
 
-	<!-- mods_title +  mods_name + mods_date_issued -->
-    <field name="mods_title_mods_name_mods_date_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name_mods_date_issued"/>
-    <copyField source="mods_name" dest="mods_title_mods_name_mods_date_issued"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_name_mods_date_issued"/>
-    <field name="mods_title_mods_name_mods_date_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name_mods_date_issued__exact"/>
-    <copyField source="mods_name" dest="mods_title_mods_name_mods_date_issued__exact"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_name_mods_date_issued__exact"/>
+	<!-- dc_title +  dc_author + dc_date -->
+    <field name="dc_title_dc_author_dc_date" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author_dc_date"/>
+    <copyField source="dc_author" dest="dc_title_dc_author_dc_date"/>
+    <copyField source="dc_date" dest="dc_title_dc_author_dc_date"/>
+    <field name="dc_title_dc_author_dc_date__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <copyField source="dc_title" dest="dc_title_dc_author_dc_date__exact"/>
+    <copyField source="dc_author" dest="dc_title_dc_author_dc_date__exact"/>
+    <copyField source="dc_date" dest="dc_title_dc_author_dc_date__exact"/>
 
+    <!--
+      dcterms fields
+      copied from drupal solr core2 schema, but not yet used
+
+   <field name="dcterms_tableOfContents" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_tableOfContents__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_tableOfContents__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_tableOfContents" dest="dcterms_tableOfContents__exact"/>
+    <copyField source="dcterms_tableOfContents" dest="dcterms_tableOfContents__facet"/>
+    <copyField source="dcterms_tableOfContents" dest="all"/>
+    <copyField source="dcterms_tableOfContents" dest="all__exact"/>
+
+    <field name="dcterms_alternative" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_alternative__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_alternative__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_alternative" dest="dcterms_alternative__exact"/>
+    <copyField source="dcterms_alternative" dest="dcterms_alternative__facet"/>
+    <copyField source="dcterms_alternative" dest="all"/>
+    <copyField source="dcterms_alternative" dest="all__exact"/>
+
+    <field name="dcterms_created" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_created__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_created__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_created" dest="dcterms_created__exact"/>
+    <copyField source="dcterms_created" dest="dcterms_created__facet"/>
+    <copyField source="dcterms_created" dest="all"/>
+    <copyField source="dcterms_created" dest="all__exact"/>
+
+    <field name="dcterms_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_issued__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_issued" dest="dcterms_issued__exact"/>
+    <copyField source="dcterms_issued" dest="dcterms_issued__facet"/>
+    <copyField source="dcterms_issued" dest="all"/>
+    <copyField source="dcterms_issued" dest="all__exact"/>
+
+    <field name="dcterms_extent" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_extent__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_extent__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_extent" dest="dcterms_extent__exact"/>
+    <copyField source="dcterms_extent" dest="dcterms_extent__facet"/>
+    <copyField source="dcterms_extent" dest="all"/>
+    <copyField source="dcterms_extent" dest="all__exact"/>
+
+    <field name="dcterms_medium" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_medium__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_medium__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_medium" dest="dcterms_medium__exact"/>
+    <copyField source="dcterms_medium" dest="dcterms_medium__facet"/>
+    <copyField source="dcterms_medium" dest="all"/>
+    <copyField source="dcterms_medium" dest="all__exact"/>
+
+    <field name="dcterms_isVersionOf" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isVersionOf__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isVersionOf__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_isVersionOf" dest="dcterms_isVersionOf__exact"/>
+    <copyField source="dcterms_isVersionOf" dest="dcterms_isVersionOf__facet"/>
+    <copyField source="dcterms_isVersionOf" dest="all"/>
+    <copyField source="dcterms_isVersionOf" dest="all__exact"/>
+
+    <field name="dcterms_hasVersion" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_hasVersion__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_hasVersion__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_hasVersion" dest="dcterms_hasVersion__exact"/>
+    <copyField source="dcterms_hasVersion" dest="dcterms_hasVersion__facet"/>
+    <copyField source="dcterms_hasVersion" dest="all"/>
+    <copyField source="dcterms_hasVersion" dest="all__exact"/>
+
+    <field name="dcterms_isReplacedBy" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isReplacedBy__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isReplacedBy__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_isReplacedBy" dest="dcterms_isReplacedBy__exact"/>
+    <copyField source="dcterms_isReplacedBy" dest="dcterms_isReplacedBy__facet"/>
+    <copyField source="dcterms_isReplacedBy" dest="all__exact"/>
+
+    <field name="dcterms_replaces" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_replaces__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_replaces__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_replaces" dest="dcterms_replaces__exact"/>
+    <copyField source="dcterms_replaces" dest="dcterms_replaces__facet"/>
+    <copyField source="dcterms_replaces" dest="all"/>
+    <copyField source="dcterms_replaces" dest="all__exact"/>
+
+    <field name="dcterms_isRequiredBy" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isRequiredBy__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isRequiredBy__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_isRequiredBy" dest="dcterms_isRequiredBy__exact"/>
+    <copyField source="dcterms_isRequiredBy" dest="dcterms_isRequiredBy__facet"/>
+    <copyField source="dcterms_isRequiredBy" dest="all"/>
+    <copyField source="dcterms_isRequiredBy" dest="all__exact"/>
+
+    <field name="dcterms_requires" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_requires__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_requires__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_requires" dest="dcterms_requires__exact"/>
+    <copyField source="dcterms_requires" dest="dcterms_requires__facet"/>
+    <copyField source="dcterms_requires" dest="all"/>
+    <copyField source="dcterms_requires" dest="all__exact"/>
+
+    <field name="dcterms_isPartOf" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isPartOf__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isPartOf__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_isPartOf" dest="dcterms_isPartOf__exact"/>
+    <copyField source="dcterms_isPartOf" dest="dcterms_isPartOf__facet"/>
+    <copyField source="dcterms_isPartOf" dest="all"/>
+    <copyField source="dcterms_isPartOf" dest="all__exact"/>
+
+    <field name="dcterms_hasPart" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_hasPart__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_hasPart__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_hasPart" dest="dcterms_hasPart__exact"/>
+    <copyField source="dcterms_hasPart" dest="dcterms_hasPart__facet"/>
+    <copyField source="dcterms_hasPart" dest="all"/>
+    <copyField source="dcterms_hasPart" dest="all__exact"/>
+
+    <field name="dcterms_isReferencedBy" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isReferencedBy__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isReferencedBy__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_isReferencedBy" dest="dcterms_isReferencedBy__exact"/>
+    <copyField source="dcterms_isReferencedBy" dest="dcterms_isReferencedBy__facet"/>
+    <copyField source="dcterms_isReferencedBy" dest="all"/>
+    <copyField source="dcterms_isReferencedBy" dest="all__exact"/>
+
+    <field name="dcterms_references" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_references__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_references__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_references" dest="dcterms_references__exact"/>
+    <copyField source="dcterms_references" dest="dcterms_references__facet"/>
+    <copyField source="dcterms_references" dest="all"/>
+    <copyField source="dcterms_references" dest="all__exact"/>
+
+    <field name="dcterms_isFormatOf" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isFormatOf__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_isFormatOf__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_isFormatOf" dest="dcterms_isFormatOf__exact"/>
+    <copyField source="dcterms_isFormatOf" dest="dcterms_isFormatOf__facet"/>
+    <copyField source="dcterms_isFormatOf" dest="all"/>
+    <copyField source="dcterms_isFormatOf" dest="all__exact"/>
+
+    <field name="dcterms_hasFormat" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_hasFormat__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_hasFormat__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_hasFormat" dest="dcterms_hasFormat__exact"/>
+    <copyField source="dcterms_hasFormat" dest="dcterms_hasFormat__facet"/>
+    <copyField source="dcterms_hasFormat" dest="all"/>
+    <copyField source="dcterms_hasFormat" dest="all__exact"/>
+
+    <field name="dcterms_conformsTo" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_conformsTo__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_conformsTo__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_conformsTo" dest="dcterms_conformsTo__exact"/>
+    <copyField source="dcterms_conformsTo" dest="dcterms_conformsTo__facet"/>
+    <copyField source="dcterms_conformsTo" dest="all"/>
+    <copyField source="dcterms_conformsTo" dest="all__exact"/>
+
+    <field name="dcterms_spatial" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_spatial__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_spatial__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_spatial" dest="dcterms_spatial__exact"/>
+    <copyField source="dcterms_spatial" dest="dcterms_spatial__facet"/>
+    <copyField source="dcterms_spatial" dest="all"/>
+    <copyField source="dcterms_spatial" dest="all__exact"/>
+
+    <field name="dcterms_temporal" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_temporal__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_temporal__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_temporal" dest="dcterms_temporal__exact"/>
+    <copyField source="dcterms_temporal" dest="dcterms_temporal__facet"/>
+    <copyField source="dcterms_temporal" dest="all"/>
+    <copyField source="dcterms_temporal" dest="all__exact"/>
+
+    <field name="dcterms_provenance" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_provenance__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="dcterms_provenance__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="dcterms_provenance" dest="dcterms_provenance__exact"/>
+    <copyField source="dcterms_provenance" dest="dcterms_provenance__facet"/>
+    <copyField source="dcterms_provenance" dest="all"/>
+    <copyField source="dcterms_provenance" dest="all__exact"/>
+   -->
 
    <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
         will be used if the name matches any of the patterns.
