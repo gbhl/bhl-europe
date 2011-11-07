@@ -1,10 +1,17 @@
 #!/bin/bash -x
 
 JAVA=/usr/bin/java
-XALAN_BASE=/opt/xalan-j_2_7_1
-FGSEARCH_BASE=/home/andreas/workspaces/bhle/opt/fedoragsearch
-SOLR_POST=/opt/apache-solr-3.3.0/example/exampledocs/post.jar
+FGSEARCH_BASE=/home/bhladmin/dev/opt/archival-storage/fedora/tomcat/webapps/fedoragsearch/
+SOLR_POST=/home/bhladmin/dev/apache-solr-3.3.0-orginal/example/exampledocs/post.jar
 ULR=http://127.0.0.1:8983/solr/core/update
+
+#
+# load custom configuration from HOME/.bhl/post2solr.conf it this filed is present
+#
+if [ -f "$HOME/.bhl/post2solr.conf" ]
+then
+	. "$HOME/.bhl/post2solr.conf"
+fi
 
 if [ "$1" == "" -o "$2" == "" ]; then
 	cat <<EOT
