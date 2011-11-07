@@ -31,10 +31,6 @@ var bhle_search = {
         if( jQuery( 'fieldset[name^="condition_"]' ).length <= 1 ) return;
         
         // Remove the whole fieldset for this condition
-        var condition = jQuery( '#edit-condition-' + condition_id );
-        if( condition.hasClass( 'last' ) ) {
-            condition.prev().addClass( 'last' );
-        }
-        condition.remove();
+        jQuery( 'fieldset[name="condition_' + condition_id + '"]' ).remove();
     }
 }
