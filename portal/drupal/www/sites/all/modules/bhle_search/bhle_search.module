@@ -40,8 +40,26 @@ define( 'BHLE_SEARCH_TITLE_FIELD', 'name' );
 define( 'BHLE_SEARCH_AUTHOR_FIELD', 'author' );
 define( 'BHLE_SEARCH_YEAR_FIELD', 'last_modified' );
 define( 'BHLE_SEARCH_SCIENTIFIC_NAME_FIELD', 'keywords' );
-define( 'BHLE_SEARCH_FIELDS', 'description;comments' );
 define( 'BHLE_DEFAULT_TERM', 'type what do you want to search' );
+/**
+ * Suggested default metadata fields for Advanced search: 
+		a.	All metadata fields – including the abstract
+		b.	Title
+		c.	Journal title
+		d.	Author
+		e.	Year
+		f.	Language of the text
+		g.	Publisher
+		h.	Place of publishing
+		i.	Content provider
+		j.	Abstract
+		k.	Scientific name
+		l.	Monograph (content type)
+		m.	Article (content type)
+		n.	Journal/Serial (content type)
+ *
+ */
+define( 'BHLE_SEARCH_FIELDS', 'dc_identifier;dc_publisher;PID' );
 
 /**
  * Implements hook_search_info()
