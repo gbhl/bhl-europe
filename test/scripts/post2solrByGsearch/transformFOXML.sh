@@ -11,6 +11,14 @@ XSL_POC="xalan"
 JAVA=/usr/bin/java
 FGSEARCH_BASE=/home/andreas/workspaces/bhle/opt/fedoragsearch
 
+#
+# load custom configuration from HOME/.bhl/post2solr.conf it this filed is present
+#
+if [ -f "$HOME/.bhl/post2solr.conf" ]
+then
+	. "$HOME/.bhl/post2solr.conf"
+fi
+
 
 
 if [ "$1" == "" -o "$2" == "" ]; then
@@ -30,21 +38,33 @@ fi
 
 echo "transforming foxml file  $2"
 
-
+OUT_PRE=/tmp/post2solr.out-pre.xml
 OUT=/tmp/post2solr.out.xml
 
 
 IN=$2
-echo "processing $IN .."
+
+#
+# execute the script defined in $PRE_POCESSOR
+#
+if [ -f "$PRE_POCESSOR" ]
+then
+echo "pre processing $IN .."
+	. $PRE_POCESSOR $IN > $OUT_PRE
+else
+	cp $IN $OUT_PRE
+fi
+
+echo "processing $IN ($OUT_PRE).."
 
 case $XSL_POC in
 	"xalan")
 		XSL_POC_CLASSPATH="$FGSEARCH_BASE/WEB-INF/lib/serializer.jar:$FGSEARCH_BASE/WEB-INF/lib/xml-apis.jar:$FGSEARCH_BASE/WEB-INF/lib/xalan.jar:$FGSEARCH_BASE/WEB-INF/lib/xercesImpl.jar"
-		XSL_POC_CMD="org.apache.xalan.xslt.Process -in $IN -xsl $1 -out $OUT"
+		XSL_POC_CMD="org.apache.xalan.xslt.Process -in $OUT_PRE -xsl $1 -out $OUT"
 	;;
 	"saxon")
 		XSL_POC_CLASSPATH="$FGSEARCH_BASE/WEB-INF/lib/saxon9he.jar"
-		XSL_POC_CMD="net.sf.saxon.Transform -s:$IN -xsl:$1 -o:$OUT"
+		XSL_POC_CMD="net.sf.saxon.Transform -s:$OUT_PRE -xsl:$1 -o:$OUT"
 	;;
 	*)
 		echo "XSL prcessor $XSL_POC unsupported"
