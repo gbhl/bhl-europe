@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#######################################################
+#
+# configuration (can be overwritten, see next comment):
+#
 JAVA=/usr/bin/java
 FGSEARCH_BASE=/home/bhladmin/dev/opt/archival-storage/fedora/tomcat/webapps/fedoragsearch/
 SOLR_POST=/home/bhladmin/dev/apache-solr-3.3.0-orginal/example/exampledocs/post.jar
@@ -13,8 +17,9 @@ if [ -f "$HOME/.bhl/post2solr.conf" ]
 then
 	. "$HOME/.bhl/post2solr.conf"
 fi
-
-
+#
+#
+#######################################################
 
 
 if [ "$1" == "" -o "$2" == "" ]; then
@@ -41,8 +46,14 @@ echo "Posting foxml files from $1"
 OUT_PRE=/tmp/post2solr.out-pre.xml
 OUT=/tmp/post2solr.out.xml
 
-# FOR ALL FILES excluding those ending with *.0 (=fedora datastream files)
-for i in $(find -type f | grep -v "~$"| grep -v ".0$")
+# FOR ALL FILES with fedora content model = "bookCModel"
+
+SAVEIFS=$IFS
+IFS=$'\n'
+FILE_LIST=($(grep -rl "rdf:resource=\"info:fedora/islandora:bookCModel\"></hasModel>" ./))
+IFS=$SAVEIFS
+
+for i in ${FILE_LIST[*]}
 do
 
   IN=${i/.\//}
