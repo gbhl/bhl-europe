@@ -609,7 +609,9 @@
 	<!-- title  -->
     <field name="mods_title" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_title__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_title" dest="mods_title__exact"/>
+    <copyField source="mods_title" dest="mods_title__sort"/>
     <copyField source="mods_title" dest="all"/>
     <copyField source="mods_title" dest="all__exact"/>
 
