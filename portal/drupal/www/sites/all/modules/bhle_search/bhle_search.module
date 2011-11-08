@@ -42,24 +42,24 @@ define( 'BHLE_SEARCH_YEAR_FIELD', 'last_modified' );
 define( 'BHLE_SEARCH_SCIENTIFIC_NAME_FIELD', 'keywords' );
 define( 'BHLE_DEFAULT_TERM', 'type what do you want to search' );
 /**
- * Suggested default metadata fields for Advanced search: 
-		a.	All metadata fields – including the abstract
-		b.	Title
-		c.	Journal title
-		d.	Author
-		e.	Year
-		f.	Language of the text
-		g.	Publisher
-		h.	Place of publishing
-		i.	Content provider
-		j.	Abstract
-		k.	Scientific name
-		l.	Monograph (content type)
-		m.	Article (content type)
-		n.	Journal/Serial (content type)
+ * Suggested default metadata fields for Advanced search mapped to mods solr fields:
+		a.	All metadata fields – including the abstract [=all]
+		b.	Title [=mods_title]
+		c.	Journal title [=mods_title]
+		d.	Author [=mods_name]
+		e.	Year [=mods_date_issued]
+		f.	Language of the text [=mods_language]
+		g.	Publisher [=mods_publisher]
+		h.	Place of publishing [=mods_place]
+		i.	Content provider [=mods_record_content_source ?]
+		j.	Abstract [=mods_abstract]
+		k.	Scientific name [- NA -]
+		l.	Monograph (content type) [- NA -]
+		m.	Article (content type) [- NA -]
+		n.	Journal/Serial (content type) [- NA -]
  *
  */
-define( 'BHLE_SEARCH_FIELDS', 'dc_identifier;dc_publisher;PID' );
+define( 'BHLE_SEARCH_FIELDS', 'PID;mods_language;mods_place;mods_record_content_source;mods_abstract' );
 
 /**
  * Implements hook_search_info()
@@ -506,12 +506,12 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         // hard coded by now, could be made nicer ...
         // .., but by now we quickly need a more complete result list
         $result_field_names = array(
-        	"dc_title" => "title",
-        	"dc_creator" => "author",
-        	"dc_date" => "year",
-        	"dc_publisher" => "publisher"
+        	"mods_title" => "title",
+        	"mods_name" => "author",
+        	"mods_date_issued" => "year",
+        	"mods_publishe" => "publisher"
         );
- 		$title_field_name = "dc_title";
+ 		$title_field_name = "mods_title";
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
