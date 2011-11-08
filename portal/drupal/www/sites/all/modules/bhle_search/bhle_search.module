@@ -404,10 +404,11 @@ function bhle_search_conditions($keys) {
  */
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
+    // wildcards: * ? are the only allowed characters!
     return str_replace( array(
-        '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', '*', '?', ':', '\\',
+        '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', ':', '\\',
     ), array(
-        '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\*', '\\?', '\\:', '\\\\',
+        '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\:', '\\\\',
     ), $string );
 }
 
@@ -512,12 +513,17 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         	"mods_publisher" => "publisher"
         );
  		$title_field_name = "mods_title";
+ 		$contentType = "book"; // TODO get contetType from solr response
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
             $doc_index=0;
             foreach ($docs as $doc) {
+            	$even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
             	$results[$doc_index] = array();
+            	// #attributes.class will be evaluated in bhle_search_preprocess_search_result()
+            	$results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-'.$contentType));
+            	$results[$doc_index]['content_type'] = $contentType;
             	$results[$doc_index]["extra"] = array();
             	foreach ($result_field_names as $field_name => $label){
 
@@ -663,4 +669,72 @@ function bhle_search_config_simple_form($form, &$form_state) {
  */
 function bhle_search_config_advanced_form($form, &$form_state) {
     return system_settings_form($form);
+}
+
+// /**
+//  *
+//  * Enter description here ...
+//  * see http://drupal.org/node/223430
+//  */
+// function bhle_search_preprocess_search_results(&$variables) {
+
+// }
+
+/**
+ *
+ * Enter description here ...
+ * see http://drupal.org/node/223430
+ */
+function bhle_search_preprocess_search_result(&$variables) {
+
+
+	$additional_classes = $variables['result']['#attributes']['class'];
+	foreach($additional_classes as $class){
+		$variables['classes_array'][] =  $class;
+	}
+	$variables['content_type'] = $variables['result']['content_type'];
+
+}
+
+/**
+ * Implementation of hook hook_block_info()
+ *
+ */
+function bhle_search_block_info() {
+
+	$blocks['search_summary'] = array(
+	    'info' => t('Search summary'),
+	    'cache' => DRUPAL_NO_CACHE,
+	);
+
+	return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view()
+ *
+ *  - 'delta' : Which block to render. This is a unique identifier for the block within the module, defined in hook_block_info().
+ */
+function bhle_search_block_view($delta = '') {
+
+	$block = array();
+
+	switch ($delta) {
+		case 'search_summary':
+			$block['subject'] = t('Search summary');
+			$block['content'] =
+				array(
+			        'number_of_result' => array(
+			        	'#title' => t('Number of results') . ':',
+			        	'#content' => 'TODO'
+		        	),
+			        'matches_for' => array(
+			        	'#title' => t('Matches for') . ':',
+			        	'#content' => 'TODO'
+		        	)
+	        	);
+			break;
+	}
+
+	return $block;
 }
