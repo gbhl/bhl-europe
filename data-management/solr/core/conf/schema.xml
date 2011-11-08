@@ -596,14 +596,19 @@
 
     <!--
       mods_* fields
+
+        sort and facet fields needed for:
+         - author name
+         - date
+         - language
+         - content provider
+         - scientific names
+         - type: serial (Journal), Journal volume, article, monograph, unknown
      -->
 
 	<!-- title  -->
     <field name="mods_title" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_title__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_title__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <field name="mods_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
-    <copyField source="mods_title" dest="mods_title__facet"/>
     <copyField source="mods_title" dest="mods_title__exact"/>
     <copyField source="mods_title" dest="all"/>
     <copyField source="mods_title" dest="all__exact"/>
@@ -615,6 +620,7 @@
     <field name="mods_name__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_name" dest="mods_name__exact"/>
     <copyField source="mods_name" dest="mods_name__facet"/>
+    <copyField source="mods_name" dest="mods_name__sort"/>
     <copyField source="mods_name" dest="all"/>
     <copyField source="mods_name" dest="all__exact"/>
 
@@ -625,6 +631,7 @@
     <field name="mods_date_issued__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_date_issued" dest="mods_date_issued__exact"/>
     <copyField source="mods_date_issued" dest="mods_date_issued__facet"/>
+    <copyField source="mods_date_issued" dest="mods_date_issued__sort"/>
     <copyField source="mods_date_issued" dest="all"/>
     <copyField source="mods_date_issued" dest="all__exact"/>
 
@@ -635,6 +642,7 @@
     <field name="mods_type_of_resource__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_type_of_resource" dest="mods_type_of_resource__exact"/>
     <copyField source="mods_type_of_resource" dest="mods_type_of_resource__facet"/>
+    <copyField source="mods_type_of_resource" dest="mods_type_of_resource__sort"/>
     <copyField source="mods_type_of_resource" dest="all"/>
     <copyField source="mods_type_of_resource" dest="all__exact"/>
 
@@ -645,24 +653,21 @@
     <field name="mods_subject__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_subject" dest="mods_subject__exact"/>
     <copyField source="mods_subject" dest="mods_subject__facet"/>
+    <copyField source="mods_subject" dest="mods_subject__sort"/>
     <copyField source="mods_subject" dest="all"/>
     <copyField source="mods_subject" dest="all__exact"/>
 
 	<!-- publisher -->
     <field name="mods_publisher" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_publisher__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_publisher__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_publisher" dest="mods_publisher__exact"/>
-    <copyField source="mods_publisher" dest="mods_publisher__facet"/>
     <copyField source="mods_publisher" dest="all"/>
     <copyField source="mods_publisher" dest="all__exact"/>
 
     <!-- place of publication -->
     <field name="mods_place" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_place__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_place__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_place" dest="mods_place__exact"/>
-    <copyField source="mods_place" dest="mods_place__facet"/>
     <copyField source="mods_place" dest="all"/>
     <copyField source="mods_place" dest="all__exact"/>
 
@@ -670,56 +675,28 @@
     <field name="mods_record_content_source" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_record_content_source__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_record_content_source__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_record_content_source__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_record_content_source" dest="mods_record_content_source__exact"/>
     <copyField source="mods_record_content_source" dest="mods_record_content_source__facet"/>
+    <copyField source="mods_record_content_source" dest="mods_record_content_source__sort"/>
     <copyField source="mods_record_content_source" dest="all"/>
     <copyField source="mods_record_content_source" dest="all__exact"/>
 
     <field name="mods_language" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_language__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_language__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_language__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_language" dest="mods_language__exact"/>
     <copyField source="mods_language" dest="mods_language__facet"/>
+    <copyField source="mods_language" dest="mods_language__sort"/>
     <copyField source="mods_language" dest="all"/>
     <copyField source="mods_language" dest="all__exact"/>
 
     <field name="mods_abstract" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_abstract__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_abstract__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_abstract" dest="mods_abstract__exact"/>
-    <copyField source="mods_abstract" dest="mods_abstract__facet"/>
     <copyField source="mods_abstract" dest="all"/>
     <copyField source="mods_abstract" dest="all__exact"/>
-
-  	<!--
-   		combination field wich are needed for simple search,
-   		these fields will will contain data from the named fields
-   	 -->
-   	 <!-- mods_title +  mods_name -->
-	<field name="mods_title_mods_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name"/>
-    <copyField source="mods_name" dest="mods_title_mods_name"/>
-    <field name="mods_title_mods_name__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name__exact"/>
-    <copyField source="mods_name" dest="mods_title_mods_name__exact"/>
-
-	<!-- mods_title + mods_date_issued  -->
-    <field name="mods_title_mods_date_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_date_issued"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_date_issued"/>
-    <field name="mods_title_mods_date_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_date_issued__exact"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_date_issued__exact"/>
-
-	<!-- mods_title +  mods_name + mods_date_issued -->
-    <field name="mods_title_mods_name_mods_date_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name_mods_date_issued"/>
-    <copyField source="mods_name" dest="mods_title_mods_name_mods_date_issued"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_name_mods_date_issued"/>
-    <field name="mods_title_mods_name_mods_date_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <copyField source="mods_title" dest="mods_title_mods_name_mods_date_issued__exact"/>
-    <copyField source="mods_name" dest="mods_title_mods_name_mods_date_issued__exact"/>
-    <copyField source="mods_date_issued" dest="mods_title_mods_name_mods_date_issued__exact"/>
 
 
    <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
@@ -753,7 +730,7 @@
  <defaultSearchField>all</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
- <solrQueryParser defaultOperator="AND"/>
+ <solrQueryParser defaultOperator="OR"/>
 
 
    <!-- Above, multiple source fields are copied to the [text] field.
