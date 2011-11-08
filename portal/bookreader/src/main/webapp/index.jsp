@@ -5,8 +5,6 @@
     <title>BHL Europe </title>
     <%@ page import="org.apache.commons.httpclient.*, org.apache.commons.httpclient.methods.*, java.io.IOException, java.text.DecimalFormat" %>
     <% 
-        String basePath = "http://bhl-test.nhm.ac.uk";
-        String fedoraPath = "fedora";
         int pageCount = 0;
         String pid = request.getParameter("pid");
         
@@ -29,29 +27,23 @@
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		DecimalFormat formatter = new DecimalFormat("0000");
-		String pageDimensionsArray = "[";
-		for (int i = 1 ; i <= pageCount; i++ ){
-			GetMethod get = new GetMethod("http://localhost:8080/fedora/objects/" + pid + "-" + formatter.format(i) + "/datastreams/DIMENSION/content");
-			try {
-				client.executeMethod(get);
-				String pageDimensions = get.getResponseBodyAsString();
-				pageDimensionsArray += "'";
-				pageDimensionsArray += pageDimensions;
-				pageDimensionsArray += "'";
-				pageDimensionsArray += ",";
-			} catch (HttpException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		String pageDimensionsArray = "[]";
+		GetMethod get = new GetMethod("http://localhost:8080/fedora/objects/" + pid + "/datastreams/DIMENSIONS/content");
+		try {
+			client.executeMethod(get);
+			if (get.getStatusCode() == 200)
+				pageDimensionsArray = get.getResponseBodyAsString();
+			else
+				pageDimensionsArray = "[]";
+		} catch (HttpException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		pageDimensionsArray += "]";
     %>
-	<link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReader.css"/>
+	<link rel="stylesheet" type="text/css" href="/bookreader/style/BookReader.css"/>
     <!-- Custom CSS overrides -->
-    <link rel="stylesheet" type="text/css" href="<%= basePath %>/bookreader/style/BookReaderBHLE.css"/>
+    <link rel="stylesheet" type="text/css" href="/bookreader/style/BookReaderBHLE.css"/>
     
     <script type="text/javascript" src="http://www.archive.org/includes/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="http://www.archive.org/bookreader/jquery-ui-1.8.5.custom.min.js"></script>
@@ -61,7 +53,7 @@
     <script type="text/javascript" src="http://www.archive.org/bookreader/jquery.ui.ipad.js"></script>
     <script type="text/javascript" src="http://www.archive.org/bookreader/jquery.bt.min.js"></script>
 
-    <script type="text/javascript" src="<%= basePath %>/bookreader/script/BookReader.js"></script>
+    <script type="text/javascript" src="/bookreader/script/BookReader.js"></script>
 </head>
 <body style="background-color: ##939598;">
 
@@ -78,10 +70,6 @@
 <script type="text/javascript">
 // Create the BookReader object
 br = new BookReader();
-
-br.basepath = '<%= basePath %>';
-
-br.fedorapath = '<%= fedoraPath %>';
 
 //Extract variable pid from URL
 br.pid = '<%= request.getParameter("pid") %>';
@@ -113,7 +101,7 @@ br.getPageURI = function(index, reduce, rotate) {
  var leafStr = '0000';            
  var imgStr = br.getPageNum(index).toString();
  var re = new RegExp("0{"+imgStr.length+"}$");
- var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/bhle-service:pageSdef/jpeg';
+ var url = '/fedora/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/methods/bhle-service:pageSdef/jpeg';
  return url;
 }
 
@@ -121,7 +109,7 @@ br.getPageOCRURI = function(index) {
  var leafStr = '0000';            
  var imgStr = (index).toString();
  var re = new RegExp("0{"+imgStr.length+"}$");
- var url = '<%= basePath %>/<%= fedoraPath %>/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/datastreams/TEI/content';
+ var url = '/fedora/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/datastreams/TEI/content';
  return url;
 }
 
@@ -177,10 +165,10 @@ br.numLeafs = <%= pageCount %>;
 
 //Book title and the URL used for the book title link
 br.bookTitle= 'BHL Europe';
-br.bookUrl  = 'http://bhl-test.nhm.ac.uk/dm';
+br.bookUrl  = '/datamanagement';
 
 // Override the path used to find UI images
-br.imagesBaseURL = br.basepath + '/bookreader/images/';
+br.imagesBaseURL = '/bookreader/images/';
 
 br.getEmbedCode = function(frameWidth, frameHeight, viewParams) {
     return "Embed code not supported in bookreader demo.";
