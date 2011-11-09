@@ -394,8 +394,9 @@ function bhle_search_advanced_validate($form, &$form_state) {
 
 /**
  * Callback which returns the search conditions (referenced in bhle_search_search_info)
+ * @param $keys (unused)
  */
-function bhle_search_conditions($keys) {
+function bhle_search_conditions($keys = null) {
     return $_SESSION['bhle_search']['conditions'];
 }
 
@@ -693,7 +694,23 @@ function bhle_search_preprocess_search_result(&$variables) {
 }
 
 /**
- * Implementation of hook hook_block_info()
+ * Implements hook_theme().
+ */
+function bhle_search_theme() {
+	return array(
+	    'search_summary' => array(
+	      'variables' => array(
+	      	'number_of_results' => null,
+	      	'matches_for' => null,
+			'module' => null
+	      ),
+	      'template' => 'search_summary'
+		)
+	);
+}
+
+/**
+ * Implements hook hook_block_info()
  *
  */
 function bhle_search_block_info() {
@@ -707,7 +724,7 @@ function bhle_search_block_info() {
 }
 
 /**
- * Implementation of hook_block_view()
+ * Implements hook_block_view()
  *
  *  - 'delta' : Which block to render. This is a unique identifier for the block within the module, defined in hook_block_info().
  */
@@ -721,17 +738,39 @@ function bhle_search_block_view($delta = '') {
 			$block['content'] =
 				array(
 					'#theme' => 'search_summary',
-			        'number_of_result' => array(
-			        	'#title' => t('Number of results') . ':',
-			        	'content' => 'TODO'
+			        '#number_of_results' => array(
+			        	'label' => t('Number of results'),
+			        	'value' => 22
 		        	),
-			        'matches_for' => array(
-			        	'#title' => t('Matches for') . ':',
-			        	'content' => 'TODO'
+			        '#matches_for' => array(
+			        	'label' => t('Matches for'),
+			        	'search_conditions' => bhle_search_conditions()
 		        	)
 	        	);
 			break;
 	}
 
 	return $block;
+}
+
+/**
+* Process variables for search_summary.tpl.php.
+*
+* The $variables array contains the following arguments:
+* - $number_of_results
+* - $matches_for
+*
+* @see search_summary.tpl.php
+*/
+function template_preprocess_search_summary(&$variables) {
+
+	$conditions = $variables['matches_for']['search_conditions'];
+	$variables['matches_for']['search_conditions'] = array();
+	foreach($conditions as $condition){
+		$condition['term'] = check_plain($condition['term'] . "x");
+		$condition['count'] = 9999; //TODO in bhle_search_block_view()
+		$condition['field_label'] = $condition['field']; //TODO get field label from form or variables
+
+		$variables['matches_for']['search_conditions'][] = $condition;
+	}
 }
