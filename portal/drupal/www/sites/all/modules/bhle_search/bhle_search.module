@@ -579,18 +579,19 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $response = $responseObj->response;
         // Check if we found something
 
+        // ----------------------------------------------
         // configuration of the result list items
         // hard coded by now, could be made nicer ...
-        // .., but by now we quickly need a more complete result list
+        // .., but by now we quickly need a more
+        // complete result list
         $result_field_names = array(
         	"mods_title" => "title",
         	"mods_name" => "author",
         	"mods_date_issued" => "year",
         	"mods_publisher" => "publisher"
         );
-
-        $title_field_name = "mods_title";
-	$contentType = "book"; // TODO get contetType from solr response
+	$title_field_name = "mods_title";
+	$content_type_field_name = "contentType";
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
@@ -598,6 +599,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             foreach ($docs as $doc) {
             	$even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
             	$results[$doc_index] = array();
+		 		$contentType = _solrdoc_getField($doc, $content_type_field_name);
             	// #attributes.class will be evaluated in bhle_search_preprocess_search_result()
             	$results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-'.$contentType));
             	$results[$doc_index]['content_type'] = $contentType;
@@ -748,18 +750,10 @@ function bhle_search_config_advanced_form($form, &$form_state) {
     return system_settings_form($form);
 }
 
-// /**
-//  *
-//  * Enter description here ...
-//  * see http://drupal.org/node/223430
-//  */
-// function bhle_search_preprocess_search_results(&$variables) {
-
-// }
 
 /**
+ * Additional preprocessor to template_preprocess_search_result(&$variables)
  *
- * Enter description here ...
  * see http://drupal.org/node/223430
  */
 function bhle_search_preprocess_search_result(&$variables) {
@@ -801,13 +795,14 @@ function bhle_search_block_view($delta = '') {
 			$block['subject'] = t('Search summary');
 			$block['content'] =
 				array(
+					'#theme' => 'search_summary',
 			        'number_of_result' => array(
 			        	'#title' => t('Number of results') . ':',
-			        	'#content' => 'TODO'
+			        	'content' => 'TODO'
 		        	),
 			        'matches_for' => array(
 			        	'#title' => t('Matches for') . ':',
-			        	'#content' => 'TODO'
+			        	'content' => 'TODO'
 		        	)
 	        	);
 			break;

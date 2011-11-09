@@ -3,6 +3,7 @@
 <xsl:stylesheet version="1.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
+		xmlns:fn="http://xml.apache.org/xalan"
 		exclude-result-prefixes="exts"
 		xmlns:foxml="info:fedora/fedora-system:def/foxml#"
 		xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -61,6 +62,23 @@
 			<field name="REPOSBASEURL">
 				<xsl:value-of select="substring($FEDORASOAP, 1, string-length($FEDORASOAP)-9)"/>
 			</field>
+			
+			<!-- 
+				Content type			
+				
+				<xsl:for-each select="foxml:datastream[@ID='RELS-EXT.1']/foxml:datastreamVersion/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" >
+				
+			-->
+			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[@ID='RELS-EXT.1']/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" >
+				<xsl:variable name="resourceUri" select="@*[name()='rdf:resource']" />
+				<field name="contentType">
+					<xsl:value-of select="substring-before( fn:tokenize($resourceUri, ':')[3], 'CModel')"/>
+				</field>
+			</xsl:for-each>
+			
+			<!-- 
+				fedora properties
+			-->
 			<xsl:for-each select="foxml:objectProperties/foxml:property">
 				<field>
 					<xsl:attribute name="name">
@@ -80,10 +98,10 @@
 			<!-- 
 				OLEF/MODS  ( templates included from olef-solr.xml )
 			-->
-			<!-- variant with works with local namespace set on mods element -->
+			<!-- variant witch works with local namespace set on mods element -->
 			<!-- 
 			-->
-			<xsl:for-each select="/foxml:digitalObject/foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/*[local-name(.) = 'mods']">
+			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/*[local-name(.) = 'mods']">
 				<xsl:call-template name="mods"/>
 			</xsl:for-each>
 			
@@ -93,10 +111,14 @@
 				<xsl:call-template name="mods-name-DEBUG"/>
 				<DEBUG><xsl:value-of select="language"/></DEBUG>
 			</xsl:for-each>
-			-->
+			-->	
 			
-			<!-- a datastream is fetched, if its mimetype
-			     can be handled, the text becomes the value of the field. -->
+			<!--
+				Datastreams
+				
+				datastream is fetched, if its mimetype
+			     	can be handled, the text becomes the value of the field. 
+			-->
 			<xsl:for-each select="foxml:datastream[@CONTROL_GROUP='M' or @CONTROL_GROUP='E' or @CONTROL_GROUP='R']">
 				<field>
 					<xsl:attribute name="name">
@@ -124,7 +146,7 @@
 		</doc>
 		</add>
 	</xsl:template>
-	
+
 
 	<xsl:template match="/foxml:digitalObject" mode="inactiveFedoraObject">
 		<delete>
