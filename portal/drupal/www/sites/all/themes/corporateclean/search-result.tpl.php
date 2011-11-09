@@ -78,8 +78,8 @@
       <?php foreach($info_split as $key => $value) : ?>
         <li class="search-info-item metadata-<?php print $key ?>">
         <a href="#" title="<?php print t($key) ?>" class="content-<?php print $key ?>"><?php print $value ?></a><span class="gradient-overflow">&nbsp;</span></li>
-      </ul>
       <?php endforeach; ?>
+      </ul>
     <?php endif; ?>
   </div>
   <div class="result-actions">
