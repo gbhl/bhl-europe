@@ -29,9 +29,19 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // Initialize the session array (if necessary)
 if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditions'])) {
     $_SESSION['bhle_search'] = array(
-        'conditions' => array(),
-        'expand_search' => 0,
-        'exact_phrase' => 0,
+        'conditions' => array(),        // Advanced search conditions
+        'expand_search' => 0,           // Enable search term expansion
+        'exact_phrase' => 0,            // Exact phrase matching
+        'simple_condition' => array(
+            'phrase' => '',             // Simple search string (overwrites advanced search)
+            'fields' => array(          // List of fields to search in
+                'title' => 0,
+                'author' => 0,
+                'year' => 0,
+                'scientific_name' => 0,
+            ),        
+        ),       
+        'simple_search' => false,       // Set to true when running simple search
     );
 }
 
@@ -124,12 +134,16 @@ function bhle_search_form_search_block_form_alter(&$form, $form_state) {
     	drupal_add_css( drupal_get_path('module', 'bhle_search') . '/bhle_search.css');
     }
 
+    // Remember simple search as our starting point
+    $_SESSION['bhle_search']['simple_search'] = true;
+
     return $form;
 }
 
 /**
+ * Add an advanced condition form-row to a given form reference and return it
  */
-function bhle_search_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAULT_TERM, $field = '', $operator = '' ) {
+function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAULT_TERM, $field = '', $operator = '', $bNoDel = false ) {
     // Pre-construct the list of searchable metadata fields
     $fields = explode( ';' , variable_get('bhle_search_fields', BHLE_SEARCH_FIELDS) );
     $fields = array_combine($fields, $fields);
@@ -159,6 +173,7 @@ function bhle_search_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAU
             '#attributes' => array(
                 'onblur' => "if (this.value == '') {this.value = '" . t(BHLE_DEFAULT_TERM) . "';}",
                 'onfocus' => "if (this.value == '" . t(BHLE_DEFAULT_TERM) . "') {this.value = '';}",
+                'name' => 'term_' . $id,
             ),
         ),
         'exact_phrase_' . $id => array(
@@ -166,7 +181,8 @@ function bhle_search_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAU
             '#title' => '',
             '#attributes' => array(
                 'class' => array( 'exact-phrase' ),
-            ),
+                'name' => 'exact_phrase_' . $id,
+            ),            
         ),
         'field_' . $id => array(
             '#type' => 'select',
@@ -175,6 +191,7 @@ function bhle_search_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAU
             '#default_value' => $field,
             '#attributes' => array(
                 'class' => array( 'select-field' ),
+                'name' => 'field_' . $id,
             ),
         ),
         'operator_' . $id => array(
@@ -188,28 +205,29 @@ function bhle_search_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAU
             '#default_value' => $operator,
             '#attributes' => array(
                 'class' => array( 'select-operator' ),
-            ),
-        ),
-/*        'addcondition_' . $id => array(
-            '#type' => 'submit',
-            '#value' => t('Add'),
-            '#ajax' => array(
-                'callback' => 'bhle_search_ajax_add_condition',
-                'wrapper' => 'edit-condition-' . $id,
-                'method' => 'after',
-                'effect' => 'fade',
-            ),
-        ),*/
-
-        // Drupal does not support input type=button in its form API, so that's why we have to use markup
-        'delcondition_' . $id => array(
-            '#type' => 'markup',
-            '#markup' => '<input onclick="bhle_search.remove_condition( ' . $id . ' );" type="button" id="edit-delcondition-' . $id . '" name="delcondition_' . $id . '" value="' . t('Del') . '" class="edit-delfield" />',
-            '#attributes' => array(
-                'class' => array( 'input-delcondition' ),
+                'name' => 'operator_' . $id,
             ),
         ),
     );
+    
+    // Check if we have to add a delete button
+    if( !$bNoDel ) {
+        $form['condition_' . $id]['delcondition_' . $id] = array(
+            '#type' => 'button',
+            '#value' => 'delcondition_' . $id,
+            '#ajax' => array(
+                'callback' => 'bhle_search_advanced_del_ajax',
+                'wrapper' => 'fields-block-wrapper',
+                'method' => 'replace',
+            ),
+            '#validate' => array(
+                'bhle_search_advanced_del_validate'
+            ),
+            '#attributes' => array(
+                'class' => array( 'input-delcondition', 'edit-delfield' ),
+            ),
+        );
+    }
 
     return $form;
 }
@@ -222,12 +240,22 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     // Remove basic form since we build a completely custom one
     unset($form['basic']);
 
-    error_log( 'bhle_search_form_search_form_alter called!' );
+    // Check if we have to add a new condition
+    if( isset($form_state['values']) && $form_state['values']['op'] == t('Add field') ) {
+        $_SESSION['bhle_search']['conditions'][] = array( 'term' => '', 'field' => '', 'operator' => '', 'phrase' => false );
+    }
+    // else check if we want to remove one
+    else if( isset($form_state['values']) && strpos( $form_state['values']['op'], 'delcondition_' ) === 0 ) {
+        $matches = array();
+        if( preg_match( '/delcondition_(\d+)/', $form_state['values']['op'], $matches ) > 0 ) {
+            $condition_id = $matches[1];
+            
+            unset( $_SESSION['bhle_search']['conditions'][$condition_id] );
+        }
+    }
 
     // Fetch all setup conditions
     $conditions = $_SESSION['bhle_search']['conditions'];
-    // Add empty condition
-    $conditions[] = array( 'term' => '', 'field' => '', 'operator' => '', 'phrase' => false );
 
     // Add advanced search label
     $form['search_label'] = array(
@@ -249,26 +277,31 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         '#title' => t('exact word / phrase'),
         '#default_value' => (isset($_SESSION['bhle_search']['exact_phrase'])) ? $_SESSION['bhle_search']['exact_phrase'] : 0,
         '#weight' => -1,
+        '#attributes' => array(
+            'onclick' => "bhle_search.exact_phrase( jQuery(this) );",
+        ),
     );
 
     // Finally iterate over conditions and add each of them as form row
-    $weight = 1;
+    $weight = 0;
+    $bNoDel = count($conditions) <= 1;
     $form_conditions = array(
         '#type' => 'markup',
         '#markup' => '',
-        '#prefix' => '<div class="fields-block-wrapper"><div class="fields-block" id="fields-block">',
+        '#prefix' => '<div class="fields-block-wrapper" id="fields-block-wrapper"><div class="fields-block" id="fields-block">',
         '#suffix' => '</div></div>',
     );
-    foreach( $conditions as $condition ) {
-        $form_conditions = bhle_search_add_condition($form_conditions, $weight, count($conditions), $condition['term'], $condition['field'], $condition['operator']);
-        $weight++;
+    foreach( $conditions as $condition_id => $condition ) {
+        $form_conditions = bhle_search_advanced_add_condition($form_conditions, $condition_id, count($conditions), $condition['term'], $condition['field'], $condition['operator'], $bNoDel );
+        $weight = $condition_id;
     }
-    $form['form_conditions'] = $form_conditions;
+    // Add conditions to form layout
+    $form['form_conditions'] = $form_conditions; 
 
     // Store the number of conditions as a hidden field
     $form['num_conditions'] = array(
         '#type' => 'hidden',
-        '#default_value' => count($conditions),
+        '#default_value' => $weight,
         '#weight' => $weight++,
     );
 
@@ -279,11 +312,16 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         '#weight' => $weight++,
     );
     $form['add'] = array(
-        '#type' => 'submit',
+        '#type' => 'button',
         '#value' => t('Add field'),
         '#weight' => $weight++,
         '#ajax' => array(
-            'callback' => 'bhle_search_ajax_add_condition',
+            'callback' => 'bhle_search_advanced_add_ajax',
+            'wrapper' => 'fields-block-wrapper',
+            'method' => 'replace',
+        ),
+        '#validate' => array(
+            'bhle_search_advanced_add_validate'
         ),
     );
     $form['reset'] = array(
@@ -305,30 +343,24 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         drupal_get_path( 'module', 'bhle_search' ) . '/js/advanced_search.js',
     );
 
+    // Remember advanced search as our starting point
+    $_SESSION['bhle_search']['simple_search'] = false;
+
     return $form;
 }
 
 /**
  * AJAX callback for dynamically adding new conditions to the search page
  */
-function bhle_search_ajax_add_condition($form, $form_state) {
-    error_log( 'bhle_search_ajax_add_condition called!' );
+function bhle_search_advanced_add_ajax($form, $form_state) {
+    return $form['form_conditions'];
+}
 
-    $ajax_commands = array();
-
-    // TODO: Get condition id dynamically
-    $condition_id = $form_state['values']['num_conditions'] + 1;
-
-    $form['form_conditions'] = bhle_search_add_condition($form['form_conditions'], $condition_id, 0, '' );
-
-    $form_html = drupal_render( $form['form_conditions']['condition_' . $condition_id] );
-
-    $ajax_commands[] = ajax_command_append( '#fields-block', $form_html );
-    $ajax_commands[] = ajax_command_invoke( '#edit-delcondition-' . $condition_id, 'bind', array( 'click', "bhle_search.remove_condition( ' . $condition_id . ' );" ) );
-    $ajax_commands[] = ajax_command_invoke( 'input[name="num_conditions"]', 'val', array( $condition_id ) );
-
-    // Render row and return it
-    return array('#type' => 'ajax', '#commands' => $ajax_commands);
+/**
+ * AJAX callback for dynamically removing conditions from the search page
+ */
+function bhle_search_advanced_del_ajax($form, $form_state) {
+    return $form['form_conditions'];
 }
 
 /**
@@ -339,7 +371,7 @@ function bhle_search_simple_validate($form, &$form_state) {
 
     // Check for a valid date
     // Note: Code is required, since solr expects a special date format if the field is marked as date-type
-    $year = $form_state['values']['year'];
+    /*$year = $form_state['values']['year'];
     // Check if we just have a number
     if( !is_numeric($year) ) $year = strtotime( $year );
     if( $year === false ) {
@@ -347,16 +379,21 @@ function bhle_search_simple_validate($form, &$form_state) {
     }
     else {
         $year = date( '%N', $year );
-    }
+    }*/
 
-    if($form_state['values']['title']) $conditions[] = array( 'term' => $form_state['values']['search_block_form'], 'field' => variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD), 'operator' => 'OR', 'phrase' => false );
-    if($form_state['values']['author']) $conditions[] = array( 'term' => $form_state['values']['search_block_form'], 'field' => variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD), 'operator' => 'OR', 'phrase' => false );
-    if($form_state['values']['year']) $conditions[] = array( 'term' => $form_state['values']['search_block_form'], 'field' => variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD), 'operator' => 'OR', 'phrase' => false );
-    if($form_state['values']['scientific_name']) $conditions[] = array( 'term' => $form_state['values']['search_block_form'], 'field' => variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD), 'operator' => 'OR', 'phrase' => false );
-
+    // Save the condition parameters
+    $_SESSION['bhle_search']['simple_condition'] = array(
+        'phrase' => $form_state['values']['search_block_form'],
+        'fields' => array(
+            'title' => $form_state['values']['title'],
+            'author' => $form_state['values']['author'],
+            'year' => $form_state['values']['year'],
+            'scientific_name' => $form_state['values']['scientific_name'],
+        ),
+    );
+    
     // Official way to handle sessions is by directly writing into the super-globals
     // See: http://api.drupal.org/api/drupal/includes--session.inc
-    $_SESSION['bhle_search']['conditions'] = $conditions;
     $_SESSION['bhle_search']['expand_search'] = 0;      // Turn of search term expansion in simple search
     $_SESSION['bhle_search']['exact_phrase'] = 0;      // Turn of search term expansion in simple search
 }
@@ -367,9 +404,7 @@ function bhle_search_simple_validate($form, &$form_state) {
 function bhle_search_advanced_validate($form, &$form_state) {
     $conditions = array();
     $values = $form_state['values'];
-
-    //die( var_export($values, true) );
-
+    
     for( $i = 1; $i <= $values['num_conditions']; $i++ ) {
         // Check if condition-row exists (might have been removed client-side)
         if( !isset($values['term_' . $i]) ) continue;
@@ -393,6 +428,20 @@ function bhle_search_advanced_validate($form, &$form_state) {
 }
 
 /**
+ * Callback (AJAX) when the 'Add Field' button is clicked
+ * Dummy function which prevents the global validation handler from running
+ */
+function bhle_search_advanced_add_validate($form, &$form_state) {
+}
+
+/**
+ * Callback (AJAX) when the 'Del Field' button is clicked
+ * Dummy function which prevents the global validation handler from running
+ */
+function bhle_search_advanced_del_validate($form, &$form_state) {
+}
+
+/**
  * Callback which returns the search conditions (referenced in bhle_search_search_info)
  */
 function bhle_search_conditions($keys) {
@@ -404,10 +453,11 @@ function bhle_search_conditions($keys) {
  */
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
+    // wildcards: * ? are the only allowed characters!
     return str_replace( array(
-        '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', '*', '?', ':', '\\',
+        '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', ':', '\\',
     ), array(
-        '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\*', '\\?', '\\:', '\\\\',
+        '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\:', '\\\\',
     ), $string );
 }
 
@@ -438,86 +488,121 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     $solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
     $query = '';
     $results = array();
-
-    // Build Solr query out of the conditions
-    foreach( $conditions as $condition ) {
-        // Escape the search-term
-        $query_term = bhle_search_solr_escape($condition['term']);
-        // Check if we have to quote the term
-        if( $condition['phrase'] ) {
-            $query_term = '"' . $query_term . '"';
+    $params = array();
+    
+    // Check for simple search (uses the dismax parser)
+    if( $_SESSION['bhle_search']['simple_search'] ) {
+        $query = bhle_search_solr_escape($_SESSION['bhle_search']['simple_condition']['phrase']);
+        
+        // Create list of fields
+        $fields = array();
+        if( $_SESSION['bhle_search']['simple_condition']['fields']['title'] ) {
+            $fields[] = variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD);
         }
-
-        // Check if search term expansion is turned on
-        if( $_SESSION['bhle_search']['expand_search'] ) {
-            // Check if we are looking for an author
-            if( $condition['field'] == variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD) ) {
-                // Check if VIAF module is active
-                if( module_exists('viaf_lookup') ) {
-                    // Fetch list of authors
-                    $viaf_authors = viaf_lookup_authors_simple( $condition['term'] );
-
-                    // Check if we found any authors, if yes add them as term
-                    if( is_array($viaf_authors) && count($viaf_authors) > 0 ) {
-                        // Add original term since we want to include it as well
-                        $viaf_authors[] = $condition['term'];
-                        $query_term = bhle_search_solr_build_query($viaf_authors);
-                    }
-                }
-                else {
-                    drupal_set_message( 'VIAF-Module not active!', 'error' );
-                }
+        if( $_SESSION['bhle_search']['simple_condition']['fields']['author'] ) {
+            $fields[] = variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD);
+        }
+        if( $_SESSION['bhle_search']['simple_condition']['fields']['year'] ) {
+            $fields[] = variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD);
+        }
+        if( $_SESSION['bhle_search']['simple_condition']['fields']['scientific_name'] ) {
+            $fields[] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
+        }
+        
+        // Configure dismax parser
+        $params['defType'] = 'dismax';
+        $params['qf'] = implode( ' ', $fields );
+    }
+    // ...we have advanced search
+    else {
+        // Build Solr query out of the conditions
+        foreach( $conditions as $condition ) {
+            // Escape the search-term
+            $query_term = bhle_search_solr_escape($condition['term']);
+            // Check if we have to quote the term
+            if( $condition['phrase'] ) {
+                $query_term = '"' . $query_term . '"';
             }
-            // Check if we are looking for a scientific name
-            else if( $condition['field'] == variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) ) {
-                if( module_exists('names_lookup') ) {
-                    $synonyms_list = names_lookup_synonyms( $condition['term'] );
 
-                    // Check if we found any synonyms, if yes add to term
-                    if( is_array($synonyms_list) && count($synonyms_list) > 0 ) {
-                        $synonyms = array();
-                        foreach( $synonyms_list as $synonym_entry ) {
-                            $synonyms[] = $synonym_entry['name'];
+            // Check if search term expansion is turned on
+            if( $_SESSION['bhle_search']['expand_search'] ) {
+                // Check if we are looking for an author
+                if( $condition['field'] == variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD) ) {
+                    // Check if VIAF module is active
+                    if( module_exists('viaf_lookup') ) {
+                        // Fetch list of authors
+                        $viaf_authors = viaf_lookup_authors_simple( $condition['term'] );
+
+                        // Check if we found any authors, if yes add them as term
+                        if( is_array($viaf_authors) && count($viaf_authors) > 0 ) {
+                            // Add original term since we want to include it as well
+                            $viaf_authors[] = $condition['term'];
+                            $query_term = bhle_search_solr_build_query($viaf_authors);
                         }
-
-                        // Add original term since we want to include it as well
-                        $synonyms[] = $condition['term'];
-                        $query_term = bhle_search_solr_build_query($synonyms);
+                    }
+                    else {
+                        drupal_set_message( 'VIAF-Module not active!', 'error' );
                     }
                 }
-                else {
-                    drupal_set_message( 'Names-Module not active!', 'error' );
+                // Check if we are looking for a scientific name
+                else if( $condition['field'] == variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) ) {
+                    if( module_exists('names_lookup') ) {
+                        $synonyms_list = names_lookup_synonyms( $condition['term'] );
+
+                        // Check if we found any synonyms, if yes add to term
+                        if( is_array($synonyms_list) && count($synonyms_list) > 0 ) {
+                            $synonyms = array();
+                            foreach( $synonyms_list as $synonym_entry ) {
+                                $synonyms[] = $synonym_entry['name'];
+                            }
+
+                            // Add original term since we want to include it as well
+                            $synonyms[] = $condition['term'];
+                            $query_term = bhle_search_solr_build_query($synonyms);
+                        }
+                    }
+                    else {
+                        drupal_set_message( 'Names-Module not active!', 'error' );
+                    }
                 }
             }
-        }
 
-        // Append to query
-        if( !empty($query) ) $query .= ' ' . $condition['operator'] . ' ';
-        $query .= $condition['field'] . ':(' . $query_term . ')';
+            // Append to query
+            if( !empty($query) ) $query .= ' ' . $condition['operator'] . ' ';
+            $query .= $condition['field'] . ':(' . $query_term . ')';
+        }
     }
 
     try {
         // Query solr
-        $responseObj = $solr->search($query);
+        $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
         // Check if we found something
 
+        // ----------------------------------------------
         // configuration of the result list items
         // hard coded by now, could be made nicer ...
-        // .., but by now we quickly need a more complete result list
+        // .., but by now we quickly need a more
+        // complete result list
         $result_field_names = array(
         	"mods_title" => "title",
         	"mods_name" => "author",
         	"mods_date_issued" => "year",
         	"mods_publisher" => "publisher"
         );
- 		$title_field_name = "mods_title";
+	$title_field_name = "mods_title";
+	$content_type_field_name = "contentType";
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
             $doc_index=0;
             foreach ($docs as $doc) {
+            	$even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
             	$results[$doc_index] = array();
+		 		$contentType = _solrdoc_getField($doc, $content_type_field_name);
+            	// #attributes.class will be evaluated in bhle_search_preprocess_search_result()
+            	$results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-'.$contentType));
+            	$results[$doc_index]['content_type'] = $contentType;
             	$results[$doc_index]["extra"] = array();
             	foreach ($result_field_names as $field_name => $label){
 
@@ -663,4 +748,65 @@ function bhle_search_config_simple_form($form, &$form_state) {
  */
 function bhle_search_config_advanced_form($form, &$form_state) {
     return system_settings_form($form);
+}
+
+
+/**
+ * Additional preprocessor to template_preprocess_search_result(&$variables)
+ *
+ * see http://drupal.org/node/223430
+ */
+function bhle_search_preprocess_search_result(&$variables) {
+
+
+	$additional_classes = $variables['result']['#attributes']['class'];
+	foreach($additional_classes as $class){
+		$variables['classes_array'][] =  $class;
+	}
+	$variables['content_type'] = $variables['result']['content_type'];
+
+}
+
+/**
+ * Implementation of hook hook_block_info()
+ *
+ */
+function bhle_search_block_info() {
+
+	$blocks['search_summary'] = array(
+	    'info' => t('Search summary'),
+	    'cache' => DRUPAL_NO_CACHE,
+	);
+
+	return $blocks;
+}
+
+/**
+ * Implementation of hook_block_view()
+ *
+ *  - 'delta' : Which block to render. This is a unique identifier for the block within the module, defined in hook_block_info().
+ */
+function bhle_search_block_view($delta = '') {
+
+	$block = array();
+
+	switch ($delta) {
+		case 'search_summary':
+			$block['subject'] = t('Search summary');
+			$block['content'] =
+				array(
+					'#theme' => 'search_summary',
+			        'number_of_result' => array(
+			        	'#title' => t('Number of results') . ':',
+			        	'content' => 'TODO'
+		        	),
+			        'matches_for' => array(
+			        	'#title' => t('Matches for') . ':',
+			        	'content' => 'TODO'
+		        	)
+	        	);
+			break;
+	}
+
+	return $block;
 }
