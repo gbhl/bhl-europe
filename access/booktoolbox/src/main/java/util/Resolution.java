@@ -9,11 +9,11 @@ public class Resolution {
 	
 	public int getLevel(){
 		if (resolution.equalsIgnoreCase("high")){
-			return 5;
+			return GlobalParameter.LEVEL_HIGH_RESOLUTION;
 		} else if (resolution.equalsIgnoreCase("low")){
-			return 1;
+			return GlobalParameter.LEVEL_LOW_RESOLUTION;
 		} else {
-			return 3;
+			return GlobalParameter.LEVEL_MEDIUM_RESOLUTION;
 		}
 	}
 	

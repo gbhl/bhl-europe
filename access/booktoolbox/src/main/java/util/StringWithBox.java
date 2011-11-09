@@ -2,12 +2,10 @@ package util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -18,6 +16,7 @@ import resource.FedoraObjectService;
 import difflib.Delta;
 import difflib.DiffUtils;
 import difflib.Patch;
+import exception.BoxInvalidException;
 
 public class StringWithBox extends HashMap<Integer, Box> {
 	private static final long serialVersionUID = -1099878838111370667L;

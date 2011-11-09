@@ -14,10 +14,10 @@ public class ResourceIndex {
 		int pageCount = 0;
 
 		HttpClient client = new HttpClient();
-		PostMethod post = new PostMethod(GlobalParameter.BASE_URL + "/"
-				+ GlobalParameter.FEDORA + "/" + GlobalParameter.RESOURCE_INDEX);
+		PostMethod post = new PostMethod(GlobalParameter.URL_RISEARCH);
 		String query = "select $object from <#ri> "
-				+ "where ($object <fedora-model:hasModel> <fedora:islandora:pageCModel> "
+				+ "where ($object <fedora-model:hasModel> <fedora:"
+				+ GlobalParameter.PID_PAGE_CMODEL + "> "
 				+ "and $object <fedora-rels-ext:isMemberOf> <fedora:" + pid
 				+ ">)";
 		NameValuePair[] data = { new NameValuePair("type", "tuples"),

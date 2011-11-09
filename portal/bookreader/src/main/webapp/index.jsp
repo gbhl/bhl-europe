@@ -3,10 +3,12 @@
 <html>
 <head>
     <title>BHL Europe </title>
-    <%@ page import="org.apache.commons.httpclient.*, org.apache.commons.httpclient.methods.*, java.io.IOException, java.text.DecimalFormat" %>
+    <%@ page import="org.apache.commons.httpclient.*, org.apache.commons.httpclient.methods.*, java.io.IOException, javax.xml.parsers.*, org.w3c.dom.*" %>
     <% 
+    	String fedoraPath = "http://localhost:8080/fedora";
         int pageCount = 0;
         String pid = request.getParameter("pid");
+        String title = null;
         
         HttpClient client = new HttpClient();
 		PostMethod post = new PostMethod("http://localhost:8080/fedora/risearch");
@@ -27,8 +29,20 @@
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String pageDimensionsArray = "[]";
-		GetMethod get = new GetMethod("http://localhost:8080/fedora/objects/" + pid + "/datastreams/DIMENSIONS/content");
+		
+		try {
+			DocumentBuilderFactory factory = DocumentBuilderFactory
+					.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse(fedoraPath + "/objects/" + pid + "?format=xml");
+			NodeList list = doc.getElementsByTagName("objLabel");
+			title = list.item(0).getTextContent();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		String pageDimensionsArray = null;
+		GetMethod get = new GetMethod(fedoraPath + "/objects/" + pid + "/datastreams/DIMENSIONS/content");
 		try {
 			client.executeMethod(get);
 			if (get.getStatusCode() == 200)
@@ -42,8 +56,6 @@
 		}
     %>
 	<link rel="stylesheet" type="text/css" href="/bookreader/style/BookReader.css"/>
-    <!-- Custom CSS overrides -->
-    <link rel="stylesheet" type="text/css" href="/bookreader/style/BookReaderBHLE.css"/>
     
     <script type="text/javascript" src="http://www.archive.org/includes/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="http://www.archive.org/bookreader/jquery-ui-1.8.5.custom.min.js"></script>
@@ -107,9 +119,9 @@ br.getPageURI = function(index, reduce, rotate) {
 
 br.getPageOCRURI = function(index) {
  var leafStr = '0000';            
- var imgStr = (index).toString();
- var re = new RegExp("0{"+imgStr.length+"}$");
- var url = '/fedora/objects/' + br.pid + '-' + leafStr.replace(re, imgStr) + '/datastreams/TEI/content';
+ var indexStr = (index).toString();
+ var re = new RegExp("0{"+indexStr.length+"}$");
+ var url = '/fedora/objects/' + br.pid + '-' + leafStr.replace(re, indexStr) + '/datastreams/TEI/content';
  return url;
 }
 
@@ -164,14 +176,14 @@ br.getPageNum = function(index) {
 br.numLeafs = <%= pageCount %>;
 
 //Book title and the URL used for the book title link
-br.bookTitle= 'BHL Europe';
-br.bookUrl  = '/datamanagement';
+br.bookTitle= "<%= title %>";
+br.bookUrl  = '/fedora/objects/' + br.pid + '/methods/bhle-service:bookSdef/bookreader?ui=';
 
 // Override the path used to find UI images
 br.imagesBaseURL = '/bookreader/images/';
 
 br.getEmbedCode = function(frameWidth, frameHeight, viewParams) {
-    return "Embed code not supported in bookreader demo.";
+    return "Embed code not supported in bookreader.";
 }
 
 // Let's go!

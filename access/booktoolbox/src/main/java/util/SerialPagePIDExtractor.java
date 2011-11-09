@@ -12,13 +12,9 @@ public class SerialPagePIDExtractor implements PagePIDExtractor {
 	public List<String> getPIDs(String pid, String requestParameter) {
 		this.pid = pid;
 		pageCount = ResourceIndex.getPageCount(pid);
-
 		List<Range> ranges = splitRanges(requestParameter);
-
 		fixRangesConsistency(ranges);
-
 		List<String> pids = mergeRanges(ranges);
-
 		return pids;
 	}
 

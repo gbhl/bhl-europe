@@ -83,9 +83,6 @@ function BookReader() {
 	// Record the pages in download basket
 	this.downloadPages = [];
     
-    // Should be overriden (before init) by custom implmentations.
-    this.logoURL = 'http://www.archive.org';
-    
     // Base URL for UI images - should be overriden (before init) by
     // custom implementations.
     // $$$ This is the same directory as the images referenced by relative
@@ -303,7 +300,7 @@ BookReader.prototype.init = function() {
     //    this.getOpenLibraryRecord(this.gotOpenLibraryRecord);
     //}
 	
-	this.initTOC();
+	//this.initTOC();
 
 }
 
@@ -3403,7 +3400,6 @@ BookReader.prototype.initEmbedNavbar = function() {
         +         '<button class="BRicon book_left"></button>'
         +         '<button class="BRicon book_right"></button>'
         +   "</span>"
-        +   "<span><a class='logo' href='" + this.logoURL + "' 'target='_blank' ></a></span>"
         +   "<span id='BRembedreturn'><a href='" + thisLink + "' target='_blank' ></a></span>"
         + '</div>'
     );
@@ -3649,8 +3645,7 @@ BookReader.prototype.initToolbar = function(mode, ui) {
         +     readIcon
         //+     "<button class='BRicon full'></button>"
         +   "</span>"
-        +   "<span><a class='logo' href='" + this.logoURL + "'></a></span>"
-        +   "<span id='BRreturn'><a></a></span>"
+        +   "<span id='BRreturn'><a target='_blank'></a></span>"
         +   "<div id='BRnavCntlTop' class='BRnabrbuvCntl'></div>"
         + "</div>"
         /*
@@ -3680,10 +3675,6 @@ BookReader.prototype.initToolbar = function(mode, ui) {
     
     this.updateToolbarZoom(this.reduce); // Pretty format
         
-    if (ui == "embed" || ui == "touch") {
-        $("#BookReader a.logo").attr("target","_blank");
-    }
-
     // $$$ turn this into a member variable
     var jToolbar = $('#BRtoolbar'); // j prefix indicates jQuery object
     
@@ -5342,8 +5333,7 @@ BookReader.prototype.initUIStrings = function()
     // the toolbar and nav bar easier
         
     // Setup tooltips -- later we could load these from a file for i18n
-    var titles = { '.logo': 'Go to Archive.org', // $$$ update after getting OL record
-                   '.zoom_in': 'Zoom in',
+    var titles = { '.zoom_in': 'Zoom in',
                    '.zoom_out': 'Zoom out',
                    '.onepg': 'One-page view',
                    '.twopg': 'Two-page view',
