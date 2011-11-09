@@ -26,11 +26,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 var bhle_search = {
-    remove_condition: function( condition_id ) {
-        // We need at least one condition
-        if( jQuery( 'fieldset[name^="condition_"]' ).length <= 1 ) return;
-        
-        // Remove the whole fieldset for this condition
-        jQuery( 'fieldset[name="condition_' + condition_id + '"]' ).remove();
+    exact_phrase: function( p_exact ) {
+        // WARNING: attr is pre jQuery 1.6 - if there is ever an upgrade we have to switch to "prop"
+        jQuery( 'input[name^="exact_phrase_"]' ).attr( 'checked', p_exact.attr('checked') );
     }
 }
