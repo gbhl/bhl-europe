@@ -63,23 +63,46 @@
  */
 ?>
 <li class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print t($content_type) ?></p></div>
   <?php print render($title_prefix); ?>
-  <h3 class="title"<?php print $title_attributes; ?>>
+  <h3 class="result-title"<?php print $title_attributes; ?>>
     <a href="<?php print $url; ?>"><?php print $title; ?></a>
-  </h3>
+    <span class="gradient-overflow">&nbsp;</span></h3>
   <?php print render($title_suffix); ?>
   <div class="search-snippet-info">
     <?php if ($snippet) : ?>
       <p class="search-snippet"<?php print $content_attributes; ?>><?php print $snippet; ?></p>
     <?php endif; ?>
     <?php if ($info_split) : ?>
-      <ul class="search-info">
-      <?php
-        foreach($info_split as $key => $value) {
-          print '<li class="' . $key . '">' . $value . '</li>';
-        }
-      ?>
+      <ul class="search-info-list">
+      <?php foreach($info_split as $key => $value) : ?>
+        <li class="search-info-item metadata-<?php print $key ?>">
+        <a href="#" title="<?php print t($key) ?>" class="content-<?php print $key ?>"><?php print $value ?></a><span class="gradient-overflow">&nbsp;</span></li>
       </ul>
+      <?php endforeach; ?>
     <?php endif; ?>
   </div>
+  <div class="result-actions">
+      <p class="result-buttons view-read radius gradient-vertical-grey">
+      	<a title="View record" href="#" class="link-view first">View record</a>
+      	<a title="Read <?php print t($content_type) ?>" href="#" class="link-read last">Read <?php print t($content_type) ?></a>
+      </p>
+  </div>
 </li>
+<?php if(false) : ?>
+<li class="search-result even content-type- ">
+    <div class="content-type-logo radius gradient-vertical-grey"><p class="label">Content Type Name</p></div>
+    <h3 class="result-title"><a href="/portal/empty.html?language=en">Über die Oekologie und Verbreitung der Arthropoden der Triebsandgebiete an den Kuesten Finnlands</a><span class="gradient-overflow">&nbsp;</span></h3>
+    <div class="search-snippet-info">
+
+      <ul class="search-info-list">
+        <li class="search-info-item metadata-author"><a href="#" title="Author" class="content-author">Rolf Krogerus</a><span class="gradient-overflow">&nbsp;</span></li>
+        <li class="search-info-item metadata-year"><a href="#" title="Year" class="content-year">1956</a><span class="gradient-overflow">&nbsp;</span></li>
+        <li class="search-info-item metadata-publisher"><a href="#" title="Publisher" class="content-publisher">Zheng</a><span class="gradient-overflow">&nbsp;</span></li>
+      </ul>
+    </div>
+    <div class="result-actions">
+      <p class="result-buttons view-read radius gradient-vertical-grey"><a title="View record" href="#" class="link-view first">View record</a><a title="Read book" href="#" class="link-read last">Read book</a></p>
+    </div>
+  </li>
+<?php endif; ?>

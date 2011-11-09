@@ -2727,7 +2727,7 @@ BookReader.prototype.search = function(term) {
     
     $('#textSrch').blur(); //cause mobile safari to hide the keyboard     
     
-    var url = this.basepath + '/' + this.fedorapath + '/objects/' + this.pid + '/methods/bhle-service:bookSdef/search?query=' + escape(term);
+    var url = '/fedora/objects/' + this.pid + '/methods/bhle-service:bookSdef/search?query=' + escape(term);
     
     term = term.replace(/\//g, ' '); // strip slashes, since this goes in the url
     this.searchTerm = term;
@@ -5614,7 +5614,7 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 			break;
 	}
 	
-	var url = this.basepath + '/' + this.fedorapath + '/objects/' + br.pid + '/methods/bhle-service:bookSdef/';
+	var url = '/fedora/objects/' + br.pid + '/methods/bhle-service:bookSdef/';
 	url += method;
 	url += '?ranges=';
 	
