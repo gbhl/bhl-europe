@@ -42,6 +42,7 @@ if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditi
             ),
         ),
         'simple_search' => false,       // Set to true when running simple search
+        'advanced_search' => true,      // Displays the advanced search form
     );
 }
 
@@ -143,7 +144,7 @@ function bhle_search_form_search_block_form_alter(&$form, $form_state) {
 /**
  * Add an advanced condition form-row to a given form reference and return it
  */
-function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAULT_TERM, $field = '', $operator = '', $bNoDel = false ) {
+function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = BHLE_DEFAULT_TERM, $exact_phrase = 0, $field = '', $operator = '', $bNoDel = false ) {
     // Pre-construct the list of searchable metadata fields
     $fields = explode( ';' , variable_get('bhle_search_fields', BHLE_SEARCH_FIELDS) );
     $fields = array_combine($fields, $fields);
@@ -179,6 +180,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
         'exact_phrase_' . $id => array(
             '#type' => 'checkbox',
             '#title' => '',
+            '#default_value' => $exact_phrase,
             '#attributes' => array(
                 'class' => array( 'exact-phrase' ),
                 'name' => 'exact_phrase_' . $id,
@@ -242,7 +244,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
 
     // Check if we have to add a new condition
     if( isset($form_state['values']) && $form_state['values']['op'] == t('Add field') ) {
-        $_SESSION['bhle_search']['conditions'][] = array( 'term' => '', 'field' => '', 'operator' => '', 'phrase' => false );
+        $_SESSION['bhle_search']['conditions'][] = array( 'term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0 );
     }
     // else check if we want to remove one
     else if( isset($form_state['values']) && strpos( $form_state['values']['op'], 'delcondition_' ) === 0 ) {
@@ -292,14 +294,12 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         '#suffix' => '</div></div>',
     );
     foreach( $conditions as $condition_id => $condition ) {
-        $form_conditions = bhle_search_advanced_add_condition($form_conditions, $condition_id, count($conditions), $condition['term'], $condition['field'], $condition['operator'], $bNoDel );
+        $form_conditions = bhle_search_advanced_add_condition($form_conditions, $condition_id, count($conditions), $condition['term'], $condition['exact_phrase'], $condition['field'], $condition['operator'], $bNoDel );
         $weight = $condition_id;
     }
     // Add conditions to form layout
-    $form['form_conditions'] = $form_conditions;
-
-    error_log( 'weight: ' . $weight );
-
+    $form['form_conditions'] = $form_conditions; 
+    
     // Store the number of conditions as a hidden field
     $form['form_conditions']['num_conditions'] = array(
         '#type' => 'hidden',
@@ -370,7 +370,7 @@ function bhle_search_advanced_del_ajax($form, $form_state) {
  */
 function bhle_search_simple_validate($form, &$form_state) {
     $conditions = array();
-
+    
     // Check for a valid date
     // Note: Code is required, since solr expects a special date format if the field is marked as date-type
     /*$year = $form_state['values']['year'];
@@ -404,13 +404,9 @@ function bhle_search_simple_validate($form, &$form_state) {
  * Validate the advanced search form
  */
 function bhle_search_advanced_validate($form, &$form_state) {
-    error_log( 'bhle_search_advanced_validate' );
-
     $conditions = array();
     $values = $form_state['values'];
-
-    error_log( $values['num_conditions'] );
-
+    
     for( $i = 0; $i <= $values['num_conditions']; $i++ ) {
         // Check if condition-row exists (might have been removed client-side)
         if( !isset($values['term_' . $i]) ) continue;
@@ -419,7 +415,7 @@ function bhle_search_advanced_validate($form, &$form_state) {
         $term = $values['term_' . $i];
         // Check term for validity
         if( !empty($term) && $term != BHLE_DEFAULT_TERM ) {
-            $conditions[] = array( 'term' => $term, 'field' => $values['field_' . $i], 'operator' => $values['operator_' . $i], 'phrase' => true );
+            $conditions[] = array( 'term' => $term, 'field' => $values['field_' . $i], 'operator' => $values['operator_' . $i], 'exact_phrase' => $values['exact_phrase_' . $i] );
         }
     }
 
@@ -524,11 +520,15 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     else {
         // Build Solr query out of the conditions
         foreach( $conditions as $condition ) {
+            // Get the query field
+            $query_field = $condition['field'];
             // Escape the search-term
             $query_term = bhle_search_solr_escape($condition['term']);
+            
             // Check if we have to quote the term
-            if( $condition['phrase'] ) {
+            if( $condition['exact_phrase'] ) {
                 $query_term = '"' . $query_term . '"';
+                $query_field .= '__exact';  // Change to exact index
             }
 
             // Check if search term expansion is turned on
@@ -576,7 +576,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 
             // Append to query
             if( !empty($query) ) $query .= ' ' . $condition['operator'] . ' ';
-            $query .= $condition['field'] . ':(' . $query_term . ')';
+            $query .= $query_field . ':(' . $query_term . ')';
         }
     }
 
@@ -664,11 +664,10 @@ function bhle_search_search_result_field_map_for($type = 'unknown') {
  * @param unknown_type $fieldName
  */
 function _solrdoc_getField(&$solr_doc, $fieldName){
-
-	if(isset($solr_doc->$fieldName)){
-		$fieldArray = $solr_doc->$fieldName; // the solr response contains an array per field!!!
-		return $fieldArray[0];
-	}
+    if(isset($solr_doc->$fieldName)){
+        $fieldArray = $solr_doc->$fieldName; // the solr response contains an array per field!!!
+        return $fieldArray[0];
+    }
 }
 
 /**
@@ -685,7 +684,6 @@ function bhle_search_menu() {
         'access arguments' => array('access administration pages'),
         'type' => MENU_NORMAL_ITEM,
     );
-
     $items['admin/config/search/bhle/simple'] = array(
         'title' => 'Simple',
         'page callback' => 'drupal_get_form',
