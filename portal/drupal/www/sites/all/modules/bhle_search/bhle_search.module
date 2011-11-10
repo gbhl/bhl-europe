@@ -297,11 +297,13 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     }
     // Add conditions to form layout
     $form['form_conditions'] = $form_conditions; 
+    
+    error_log( 'weight: ' . $weight );
 
     // Store the number of conditions as a hidden field
-    $form['num_conditions'] = array(
+    $form['form_conditions']['num_conditions'] = array(
         '#type' => 'hidden',
-        '#default_value' => $weight,
+        '#value' => $weight,
         '#weight' => $weight++,
     );
 
@@ -402,10 +404,14 @@ function bhle_search_simple_validate($form, &$form_state) {
  * Validate the advanced search form
  */
 function bhle_search_advanced_validate($form, &$form_state) {
+    error_log( 'bhle_search_advanced_validate' );
+    
     $conditions = array();
     $values = $form_state['values'];
     
-    for( $i = 1; $i <= $values['num_conditions']; $i++ ) {
+    error_log( $values['num_conditions'] );
+
+    for( $i = 0; $i <= $values['num_conditions']; $i++ ) {
         // Check if condition-row exists (might have been removed client-side)
         if( !isset($values['term_' . $i]) ) continue;
 
