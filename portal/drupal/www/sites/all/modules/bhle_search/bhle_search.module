@@ -885,7 +885,7 @@ function bhle_search_block_view($delta = '') {
  */
 function bhle_search_add_hit_count($conditions = null) {
 
-	if(is_array($conditions)){
+	if(is_array($conditions) && is_array($_SESSION['bhle_search']['query'])) {
 		$solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
 		$query = '*';
 		$results = array();
