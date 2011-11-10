@@ -27,7 +27,7 @@
 */
 
 
-print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
+//print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
 //print ('<pre>' . var_dump($number_of_results).'</pre>');
 //print ('<pre>' .  var_dump($matches_for) .'</pre>');
 
