@@ -877,27 +877,34 @@ function bhle_search_block_view($delta = '') {
 	return $block;
 }
 
-function bhle_search_add_hit_count($conditions) {
+/**
+ * Query solr for hit count per query condition by making use of
+ * a facet query, the count is added to the $conditions.
+ *
+ * @param - $conditions
+ */
+function bhle_search_add_hit_count($conditions = null) {
 
-	$solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
-	$query = '*';
-	$results = array();
-	$params = array('facet' => 'true', 'facet.query' => array());
+	if(is_array($conditions)){
+		$solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
+		$query = '*';
+		$results = array();
+		$params = array('facet' => 'true', 'facet.query' => array());
 
-	foreach ($_SESSION['bhle_search']['query'] as $query_item){
-		$params['facet.query'][] = $query_item['query_field'] . ":". $query_item['query_term'];
+		foreach ($_SESSION['bhle_search']['query'] as $query_item){
+			$params['facet.query'][] = $query_item['query_field'] . ":". $query_item['query_term'];
+		}
+		// Query solr for facet query
+		// like ?q=*&facet=true&facet.query=mods_title__exact:"le continent mysterieux"&facet.query=mods_name:Morton
+		$responseObj = $solr->search($query, $params);
+		$facet_queries = $responseObj->facet_counts->facet_queries;
+
+		foreach ($conditions as $i => &$condition){
+			$query_field = $_SESSION['bhle_search']['query'][$i];
+			$facet_result = $facet_queries->$params['facet.query'][$i];
+			$condition['count'] = $facet_result;
+		}
 	}
-	// Query solr for facet query
-	// like ?q=*&facet=true&facet.query=mods_title__exact:"le continent mysterieux"&facet.query=mods_name:Morton
-	$responseObj = $solr->search($query, $params);
-	$facet_queries = $responseObj->facet_counts->facet_queries;
-
-	foreach ($conditions as $i => &$condition){
-		$query_field = $_SESSION['bhle_search']['query'][$i];
-		$facet_result = $facet_queries->$params['facet.query'][$i];
-		$condition['count'] = $facet_result;
-	}
-
 	return $conditions;
 }
 
