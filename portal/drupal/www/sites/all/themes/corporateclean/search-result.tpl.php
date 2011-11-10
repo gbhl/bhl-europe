@@ -63,7 +63,7 @@
  */
 
 ?>
-<li class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<li class="<?php print $classes; ?>"<?php print $attributes; ?>><!-- PID=<?php print $PID; ?>  -->
   <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print t($content_type) ?></p></div>
   <?php print render($title_prefix); ?>
   <h3 class="result-title"<?php print $title_attributes; ?>>
