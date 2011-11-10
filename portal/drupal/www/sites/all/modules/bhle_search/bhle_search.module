@@ -519,6 +519,8 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     // ...we have advanced search
     else {
         // Build Solr query out of the conditions
+        // $_SESSION['bhle_search']['query'] will hold the atomized query parameter details
+    	$_SESSION['bhle_search']['query'] = array();
         foreach( $conditions as $condition ) {
             // Get the query field
             $query_field = $condition['field'];
@@ -577,6 +579,10 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             // Append to query
             if( !empty($query) ) $query .= ' ' . $condition['operator'] . ' ';
             $query .= $query_field . ':(' . $query_term . ')';
+            $_SESSION['bhle_search']['query'][] = array(
+            	'query_field' => $query_field,
+            	'query_term' => $query_term
+           	);
         }
     }
 
@@ -851,6 +857,7 @@ function bhle_search_block_view($delta = '') {
 
 	switch ($delta) {
 		case 'search_summary':
+			$conditions_with_count = bhle_search_add_hit_count(bhle_search_conditions());
 			$block['subject'] = t('Search summary');
 			$block['content'] =
 				array(
@@ -861,13 +868,37 @@ function bhle_search_block_view($delta = '') {
 		        	),
 			        '#matches_for' => array(
 			        	'label' => t('Matches for'),
-			        	'search_conditions' => bhle_search_conditions()
+			        	'search_conditions' => $conditions_with_count
 		        	)
 	        	);
 			break;
 	}
 
 	return $block;
+}
+
+function bhle_search_add_hit_count($conditions) {
+
+	$solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
+	$query = '*';
+	$results = array();
+	$params = array('facet' => 'true', 'facet.query' => array());
+
+	foreach ($_SESSION['bhle_search']['query'] as $query_item){
+		$params['facet.query'][] = $query_item['query_field'] . ":". $query_item['query_term'];
+	}
+	// Query solr for facet query
+	// like ?q=*&facet=true&facet.query=mods_title__exact:"le continent mysterieux"&facet.query=mods_name:Morton
+	$responseObj = $solr->search($query, $params);
+	$facet_queries = $responseObj->facet_counts->facet_queries;
+
+	foreach ($conditions as $i => &$condition){
+		$query_field = $_SESSION['bhle_search']['query'][$i];
+		$facet_result = $facet_queries->$params['facet.query'][$i];
+		$condition['count'] = $facet_result;
+	}
+
+	return $conditions;
 }
 
 /**
@@ -881,15 +912,18 @@ function bhle_search_block_view($delta = '') {
  */
 function template_preprocess_search_summary(&$variables) {
 
+	// copy conditions
 	$conditions = $variables['matches_for']['search_conditions'];
+	// empty original
 	$variables['matches_for']['search_conditions'] = array();
+
 	foreach($conditions as $condition){
 		$condition['term'] = check_plain($condition['term']);
 		if($condition['exact_phrase']){
 			$condition['term'] = '"' . $condition['term'] . '"';
 		}
-		$condition['count'] = 9999; //TODO in bhle_search_block_view()
-		$condition['field_label'] = $condition['field']; //TODO get field label from form or variables
+
+		$condition['field_label'] = str_replace("mods_", "", $condition['field']); //TODO get field label from form or variables
 
 		$variables['matches_for']['search_conditions'][] = $condition;
 	}

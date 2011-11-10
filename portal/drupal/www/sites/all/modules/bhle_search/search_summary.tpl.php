@@ -27,7 +27,7 @@
 */
 
 
-//print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
+print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
 //print ('<pre>' . var_dump($number_of_results).'</pre>');
 //print ('<pre>' .  var_dump($matches_for) .'</pre>');
 
@@ -44,7 +44,7 @@
 				<?php if($condition['exact_phrase'] == 1) :?><span class="exact">exact:</span><?php endif; ?>
 				<span class="terms"><?php print $condition['term']; ?></span>
 				<span class="count">(<?php print $condition['count']; ?>)</span>
-				<span class="field"><?php print $condition['field']; ?></span>
+				<span class="field"><?php print $condition['field_label']; ?></span>
 				<span class="operator"><?php print $condition['operator']; ?></span>
 			</li>
 		<?php endforeach; ?>
