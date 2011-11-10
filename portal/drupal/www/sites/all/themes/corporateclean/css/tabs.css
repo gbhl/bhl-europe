@@ -1,5 +1,5 @@
 /* Tabs */
-* jQuery UI Tabs 1.8.14
+/* jQuery UI Tabs 1.8.14
  *
  * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
  * Dual licensed under the MIT or GPL Version 2 licenses.
@@ -16,7 +16,7 @@
 }
 .ui-tabs .ui-tabs-nav li { 
 
-background: url("/images/bg-tab-right.gif") no-repeat right top transparent;
+background: /* url("/images/bg-tab-right.gif") no-repeat right top */ transparent;
     display: block;
     float: left;
     margin: 5px 1px 0px;
@@ -26,7 +26,7 @@ background: url("/images/bg-tab-right.gif") no-repeat right top transparent;
 }
 .ui-tabs .ui-tabs-nav li a { 
   float: left; text-decoration: none; 
-  background: url("/images/bg-tab-left.gif") no-repeat scroll 0 0 transparent;
+  background: /* url("/images/bg-tab-left.gif") no-repeat scroll 0 0 */ transparent;
     display: block;
     float: left;
     margin: 0; color:#fff;

@@ -7,7 +7,7 @@
   <?php print render($title_suffix); ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <p class="advanced-search"><a class="advanced-search-link" href="search" title="<?php print t('Advanced search');?>"><?php print t('Advanced search');?></a></p>
+    <p class="advanced-search"><a class="advanced-search-link" href="search/bhle" title="<?php print t('Advanced search');?>"><?php print t('Advanced search');?></a></p>
     <?php print $content ?>
   </div>
 

@@ -1,6 +1,5 @@
 (function ($) {
   Drupal.behaviors.customSlider = {
-//    attach: $(document).ready(function() {
     attach: function() {
 
       var min = $("input#edit-slider-filter-min");
@@ -22,14 +21,10 @@
       min.parents('div.views-widget:not(.ajax-processed)').addClass('ajax-processed').before(
         $('<div></div>').slider({
 
-//      min.parents('div.views-widget').before(
-
-//                $('<div></div>').slider({
              range: true,
              min: 1600,     // Adjust slider min and max to the range 
              max: 2050,    // of the exposed filter.
              step: 10,
-//             values: [init_min, init_max],
              values: [init_min, init_max],
 
              slide: function(event, ui){
@@ -43,18 +38,11 @@
 				$(this).parents('form').find('.ctools-auto-submit-click').click();
 			},             
              
-//             stop: function(event, ui){
-//                $(this).parents('form').find('.ctools-auto-submit-click').click();
-//             }             
-//             stop: function(event, ui){
-//                    $(this).parents('form').submit();
-//             }       
          })
 
        );      // Add .hide() before the ';' to remove the input elements altogether.
       
       }
-//    })
 
   };
   

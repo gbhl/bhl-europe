@@ -4,9 +4,10 @@
 @import "css/search.css";
 @import "css/tabs-accordion-horizontal.css";
 @import "css/views_jqfx_cloudcarousel_basic.css";
-@import "css/search-skelet.css";
 @import "css/browse.css";
 @import "css/tabs.css";
+@import "css/results.css";
+@import "css/css3.css";
 
 body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-height:1.417; color:#fff; background-color:#38691f;}
 #page-wrapper {background:#fff url('images/bg-fish.jpg') no-repeat 50% 109px;}
@@ -141,12 +142,13 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
   overflow:hidden;
 }
 .block.top-menu ul li {display:inline-block; margin:0px; padding:5px 20px; height:30px; font-size:150%;}
-.block.top-menu ul li.top-browse {width:135px; background:transparent url('images/bg_toptext-small-delimiters.png') no-repeat 50% 50%;}
+.block.top-menu ul li.top-search,
+.block.top-menu ul li.top-browse {/*width:135px;*/ background:transparent url('images/bg_toptext-small-delimiter.png') no-repeat right 50%;}
 .block.top-menu ul li a { padding:5px 0px 5px 40px; color:#006626; text-decoration:none; }
 .block.top-menu ul li a:hover { text-decoration:underline; }
-.block.top-menu ul li.top-search a {background:transparent url('images/icon-top-search.png') no-repeat 4px 50%;}
+.block.top-menu ul li.top-search a {padding-left:45px; background:transparent url('images/icon-top-search.png') no-repeat 4px 50%;}
 .block.top-menu ul li.top-browse a {background:transparent url('images/icon-top-browse.png') no-repeat left 50%;}
-.block.top-menu ul li.top-tutorial a {background:transparent url('images/icon-top-tutorial.png') no-repeat left 50%;}
+.block.top-menu ul li.top-tutorial a {padding-left:30px; background:transparent url('images/icon-top-tutorial.png') no-repeat left 50%;}
 
 .page-search-bhle .block.top-menu ul li.top-search a,
 .page-browse .block.top-menu ul li.top-browse a {text-decoration:underline; cursor:default;}

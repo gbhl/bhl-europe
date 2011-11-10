@@ -70,6 +70,9 @@
 
     <!-- Feed tabs. -->
     <?php if ($page['feed_tabs']): ?>
+
+      <?php drupal_add_js(drupal_get_path('theme', 'corporateclean') . '/js/jquery.tools.min.js'); ?>
+      
       <div id="feed-tabs">         
           
         <div id="accordion">           
