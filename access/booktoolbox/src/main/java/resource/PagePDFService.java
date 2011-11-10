@@ -1,7 +1,9 @@
 package resource;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.net.URL;
 
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
@@ -12,21 +14,17 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.StreamingOutput;
 
+import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
 import com.itextpdf.text.Image;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import util.DjatokaImageConverter;
-import util.ImageConverter;
 import util.Resolution;
 
 @Path("page/pdf")
-public class PagePDFService {
-
-	private ImageConverter converter = new DjatokaImageConverter();;
-
+public class PagePDFService extends FedoraObjectService {
 	@GET
 	@Path("{pid}")
 	@Produces("application/pdf")
@@ -37,8 +35,16 @@ public class PagePDFService {
 
 			public void write(OutputStream out) throws IOException,
 					WebApplicationException {
-				Image image = converter.convertFromPID(pid, resolution);
-				createPDF(out, image);
+				try {
+					System.out.println(new URL(getJPEGURLFromPID(
+							pid, resolution.getLevel())).toString());
+					Image image = Image.getInstance(new URL(getJPEGURLFromPID(
+							pid, resolution.getLevel())));
+					createPDF(out, image);
+				} catch (BadElementException e) {
+					e.printStackTrace();
+				}
+
 			}
 		};
 	}
