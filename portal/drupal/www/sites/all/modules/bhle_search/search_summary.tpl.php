@@ -27,7 +27,8 @@
 */
 
 
-// print ('<pre>' .var_dump($element) . var_dump($number_of_results) . var_dump($matches_for) .'</pre>');
+print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
+// print ( var_dump($number_of_results) . var_dump($matches_for) .'</pre>');
 
 ?>
 <div class="search-summary search-summary-<?php print $classes; ?>">
