@@ -7,7 +7,9 @@
 		exclude-result-prefixes="exts"
 		xmlns:foxml="info:fedora/fedora-system:def/foxml#"
 		xmlns:dc="http://purl.org/dc/elements/1.1/"
-		xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" >
+		xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		 >
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
 <!--
@@ -35,7 +37,7 @@
 		<!-- The following allows only active FedoraObjects to be indexed. -->
 		<xsl:if test="foxml:digitalObject/foxml:objectProperties/foxml:property[@NAME='info:fedora/fedora-system:def/model#state' and @VALUE='Active']">
 			<xsl:if test="not(foxml:digitalObject/foxml:datastream[@ID='METHODMAP'] or foxml:digitalObject/foxml:datastream[@ID='DS-COMPOSITE-MODEL'])">
-				<xsl:if test="starts-with($PID,'')">
+				<xsl:if test="starts-with($PID,'bhle') and foxml:digitalObject/foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/rdf:RDF/rdf:Description/*[local-name()='hasModel' and @rdf:resource='info:fedora/islandora:bookCModel']">
 					<xsl:apply-templates mode="activeFedoraObject"/>
 				</xsl:if>
 			</xsl:if>
@@ -43,7 +45,7 @@
 		<!-- The following allows inactive FedoraObjects to be deleted from the index. -->
 		<xsl:if test="foxml:digitalObject/foxml:objectProperties/foxml:property[@NAME='info:fedora/fedora-system:def/model#state' and @VALUE='Inactive']">
 			<xsl:if test="not(foxml:digitalObject/foxml:datastream[@ID='METHODMAP'] or foxml:digitalObject/foxml:datastream[@ID='DS-COMPOSITE-MODEL'])">
-				<xsl:if test="starts-with($PID,'')">
+				<xsl:if test="starts-with($PID,'bhle') and foxml:digitalObject/foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/rdf:RDF/rdf:Description/*[local-name()='hasModel' and @rdf:resource='info:fedora/islandora:bookCModel']">
 					<xsl:apply-templates mode="inactiveFedoraObject"/>
 				</xsl:if>
 			</xsl:if>
@@ -56,23 +58,24 @@
 			<field name="PID">
 				<xsl:value-of select="$PID"/>
 			</field>
+			<!--  
 			<field name="REPOSITORYNAME">
 				<xsl:value-of select="$REPOSITORYNAME"/>
 			</field>
 			<field name="REPOSBASEURL">
 				<xsl:value-of select="substring($FEDORASOAP, 1, string-length($FEDORASOAP)-9)"/>
 			</field>
-			
+			-->
 			<!-- 
 				Content type			
 				
-				<xsl:for-each select="foxml:datastream[@ID='RELS-EXT.1']/foxml:datastreamVersion/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" >
+				<xsl:for-each select="foxml:datastream[last()]/foxml:datastreamVersion/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" >
 				
 			-->
-			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[@ID='RELS-EXT.1']/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" >
-				<xsl:variable name="resourceUri" select="@*[name()='rdf:resource']" />
+			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" >
+				<xsl:variable name="resourceUri" select="@rdf:resource" />
 				<field name="contentType">
-					<xsl:value-of select="substring-before( fn:tokenize($resourceUri, ':')[3], 'CModel')"/>
+					<xsl:value-of select="substring-before( substring-after($resourceUri, 'islandora:'), 'CModel')"/>
 				</field>
 			</xsl:for-each>
 			
@@ -101,7 +104,7 @@
 			<!-- variant witch works with local namespace set on mods element -->
 			<!-- 
 			-->
-			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/*[local-name(.) = 'mods']">
+			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/*[local-name() = 'mods']">
 				<xsl:call-template name="mods"/>
 			</xsl:for-each>
 			
@@ -119,6 +122,7 @@
 				datastream is fetched, if its mimetype
 			     	can be handled, the text becomes the value of the field. 
 			-->
+			<!--  
 			<xsl:for-each select="foxml:datastream[@CONTROL_GROUP='M' or @CONTROL_GROUP='E' or @CONTROL_GROUP='R']">
 				<field>
 					<xsl:attribute name="name">
@@ -127,11 +131,11 @@
 					<xsl:value-of select="exts:getDatastreamText($PID, $REPOSITORYNAME, @ID, $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH, $TRUSTSTOREPASS)"/>
 				</field>
 			</xsl:for-each>
-
+			-->
 			<!--
 			creating an index field with all text from the foxml record and its datastreams
 			-->
-
+			<!--
 			<field name="foxml_all_text">
 				<xsl:for-each select="//text()">
 					<xsl:value-of select="."/>
@@ -142,7 +146,7 @@
 					<xsl:text>&#160;</xsl:text>
 				</xsl:for-each>
 			</field>
-
+			-->
 		</doc>
 		</add>
 	</xsl:template>
