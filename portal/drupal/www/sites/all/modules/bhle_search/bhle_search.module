@@ -608,6 +608,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             	// #attributes.class will be evaluated in bhle_search_preprocess_search_result()
             	$results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-'.$contentType));
             	$results[$doc_index]['content_type'] = $contentType;
+            	$results[$doc_index]['PID'] = _solrdoc_getField($doc, 'PID');
             	$results[$doc_index]["extra"] = array();
 
             	$field_map = bhle_search_search_result_field_map_for($contentType);
@@ -666,8 +667,12 @@ function bhle_search_search_result_field_map_for($type = 'unknown') {
 function _solrdoc_getField(&$solr_doc, $fieldName){
 
 	if(isset($solr_doc->$fieldName)){
-		$fieldArray = $solr_doc->$fieldName; // the solr response contains an array per field!!!
-		return $fieldArray[0];
+		$field = $solr_doc->$fieldName; // the solr response contains an array per field!!!
+		if(is_array($field)) {
+			return $field[0];
+		} else {
+			return $field;
+		}
 	}
 }
 
@@ -792,6 +797,7 @@ function bhle_search_preprocess_search_result(&$variables) {
 
 	$additional_classes = $variables['result']['#attributes']['class'];
 	$variables['content_type'] = $variables['result']['content_type'];
+	$variables['PID'] = $variables['result']['PID'];
 
 	foreach($additional_classes as $class){
 		$variables['classes_array'][] =  $class;
