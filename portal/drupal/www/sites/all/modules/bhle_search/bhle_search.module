@@ -39,8 +39,8 @@ if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditi
                 'author' => 0,
                 'year' => 0,
                 'scientific_name' => 0,
-            ),        
-        ),       
+            ),
+        ),
         'simple_search' => false,       // Set to true when running simple search
         'advanced_search' => true,      // Displays the advanced search form
     );
@@ -184,7 +184,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#attributes' => array(
                 'class' => array( 'exact-phrase' ),
                 'name' => 'exact_phrase_' . $id,
-            ),            
+            ),
         ),
         'field_' . $id => array(
             '#type' => 'select',
@@ -211,7 +211,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             ),
         ),
     );
-    
+
     // Check if we have to add a delete button
     if( !$bNoDel ) {
         $form['condition_' . $id]['delcondition_' . $id] = array(
@@ -251,7 +251,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         $matches = array();
         if( preg_match( '/delcondition_(\d+)/', $form_state['values']['op'], $matches ) > 0 ) {
             $condition_id = $matches[1];
-            
+
             unset( $_SESSION['bhle_search']['conditions'][$condition_id] );
         }
     }
@@ -393,7 +393,7 @@ function bhle_search_simple_validate($form, &$form_state) {
             'scientific_name' => $form_state['values']['scientific_name'],
         ),
     );
-    
+
     // Official way to handle sessions is by directly writing into the super-globals
     // See: http://api.drupal.org/api/drupal/includes--session.inc
     $_SESSION['bhle_search']['expand_search'] = 0;      // Turn of search term expansion in simple search
@@ -445,8 +445,9 @@ function bhle_search_advanced_del_validate($form, &$form_state) {
 
 /**
  * Callback which returns the search conditions (referenced in bhle_search_search_info)
+ * @param $keys (unused)
  */
-function bhle_search_conditions($keys) {
+function bhle_search_conditions($keys = null) {
     return $_SESSION['bhle_search']['conditions'];
 }
 
@@ -491,11 +492,11 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     $query = '';
     $results = array();
     $params = array();
-    
+
     // Check for simple search (uses the dismax parser)
     if( $_SESSION['bhle_search']['simple_search'] ) {
         $query = bhle_search_solr_escape($_SESSION['bhle_search']['simple_condition']['phrase']);
-        
+
         // Create list of fields
         $fields = array();
         if( $_SESSION['bhle_search']['simple_condition']['fields']['title'] ) {
@@ -510,7 +511,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         if( $_SESSION['bhle_search']['simple_condition']['fields']['scientific_name'] ) {
             $fields[] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
         }
-        
+
         // Configure dismax parser
         $params['defType'] = 'dismax';
         $params['qf'] = implode( ' ', $fields );
@@ -590,14 +591,12 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         // hard coded by now, could be made nicer ...
         // .., but by now we quickly need a more
         // complete result list
-        $result_field_names = array(
-        	"mods_title" => "title",
-        	"mods_name" => "author",
-        	"mods_date_issued" => "year",
-        	"mods_publisher" => "publisher"
-        );
-	$title_field_name = "mods_title";
-	$content_type_field_name = "contentType";
+
+		$title_field_name = "mods_title";
+		$content_type_field_name = "contentType";
+		// ----------------------------------------------
+
+	    $_SESSION['bhle_search']['numFound'] = $response->numFound;
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
@@ -610,14 +609,15 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             	$results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-'.$contentType));
             	$results[$doc_index]['content_type'] = $contentType;
             	$results[$doc_index]["extra"] = array();
-            	foreach ($result_field_names as $field_name => $label){
 
-            		if($field_name == $title_field_name) {
+            	$field_map = bhle_search_search_result_field_map_for($contentType);
+            	foreach ($field_map as $label => $solr_field_name){
+            		if($solr_field_name == $title_field_name) {
 	            		$results[$doc_index]["link"] = url('empty.html');
-	            		$results[$doc_index]["title"] = _solrdoc_getField($doc, $field_name);
+	            		$results[$doc_index]["title"] = _solrdoc_getField($doc, $solr_field_name);
             		} else {
             			//TODO use hook_node_search_result instead
-	                	$results[$doc_index]["extra"][$label] = _solrdoc_getField($doc, $field_name);
+	                	$results[$doc_index]["extra"][$label] = _solrdoc_getField($doc, $solr_field_name);
             		}
 
             	}
@@ -629,6 +629,31 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     }
 
     return $results;
+}
+
+/**
+ * Returns a definition map of metadata fields to be shown for the specific kind of
+ * literature item specified by the $type parameter. the return type is an associative array:
+ * $label => $solr_field_name
+ *
+ *
+ * @param - $type : allowed values are: unknown, book, journal, journal-article
+ */
+function bhle_search_search_result_field_map_for($type = 'unknown') {
+	switch($type){
+		case 'unknown':
+		case 'journal':
+		case 'journal-article':
+		case 'book':
+			return array(
+				// for book:
+	        	"title" => "mods_title",
+        	 	"author" => "mods_name",
+        	 	"year" => "mods_date_issued",
+        	 	"publisher" => "mods_publisher"
+			);
+
+	}
 }
 
 /**
@@ -764,15 +789,38 @@ function bhle_search_preprocess_search_result(&$variables) {
 
 
 	$additional_classes = $variables['result']['#attributes']['class'];
+	$variables['content_type'] = $variables['result']['content_type'];
+
 	foreach($additional_classes as $class){
 		$variables['classes_array'][] =  $class;
 	}
-	$variables['content_type'] = $variables['result']['content_type'];
+
+	$variables['title'] = check_plain($variables['title']);
+	$variables['link'] = check_url($variables['link']);
+	foreach( array_keys($variables['result']['extra']) as $key){
+		$variables['result']['extra'][$key] = check_plain($variables['result']['extra'][$key]);
+	}
 
 }
 
 /**
- * Implementation of hook hook_block_info()
+ * Implements hook_theme().
+ */
+function bhle_search_theme() {
+	return array(
+	    'search_summary' => array(
+	      'variables' => array(
+	      	'number_of_results' => null,
+	      	'matches_for' => null,
+			'module' => null
+	      ),
+	      'template' => 'search_summary'
+		)
+	);
+}
+
+/**
+ * Implements hook hook_block_info()
  *
  */
 function bhle_search_block_info() {
@@ -786,7 +834,7 @@ function bhle_search_block_info() {
 }
 
 /**
- * Implementation of hook_block_view()
+ * Implements hook_block_view()
  *
  *  - 'delta' : Which block to render. This is a unique identifier for the block within the module, defined in hook_block_info().
  */
@@ -800,13 +848,13 @@ function bhle_search_block_view($delta = '') {
 			$block['content'] =
 				array(
 					'#theme' => 'search_summary',
-			        'number_of_result' => array(
-			        	'#title' => t('Number of results') . ':',
-			        	'content' => 'TODO'
+			        '#number_of_results' => array(
+			        	'label' => t('Number of results'),
+			        	'value' => $_SESSION['bhle_search']['numFound']
 		        	),
-			        'matches_for' => array(
-			        	'#title' => t('Matches for') . ':',
-			        	'content' => 'TODO'
+			        '#matches_for' => array(
+			        	'label' => t('Matches for'),
+			        	'search_conditions' => bhle_search_conditions()
 		        	)
 	        	);
 			break;
@@ -814,3 +862,27 @@ function bhle_search_block_view($delta = '') {
 
 	return $block;
 }
+
+/**
+ * Process variables for search_summary.tpl.php.
+ *
+ * The $variables array contains the following arguments:
+ * - $number_of_results
+ * - $matches_for
+ *
+ * @see search_summary.tpl.php
+ */
+function template_preprocess_search_summary(&$variables) {
+
+	$conditions = $variables['matches_for']['search_conditions'];
+	$variables['matches_for']['search_conditions'] = array();
+	foreach($conditions as $condition){
+		$condition['term'] = check_plain($condition['term']);
+		$condition['count'] = 9999; //TODO in bhle_search_block_view()
+		$condition['field_label'] = $condition['field']; //TODO get field label from form or variables
+
+		$variables['matches_for']['search_conditions'][] = $condition;
+	}
+}
+
+
