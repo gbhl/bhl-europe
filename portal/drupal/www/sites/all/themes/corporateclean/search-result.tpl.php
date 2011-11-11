@@ -84,8 +84,8 @@
   </div>
   <div class="result-actions">
       <p class="result-buttons view-read radius gradient-vertical-grey">
-      	<a title="View record" href="#" class="link-view first">View record</a>
-      	<a title="Read <?php print t($content_type) ?>" href="#" class="link-read last">Read <?php print t($content_type) ?></a>
+      	<a title="View record" href="/fedora/objects/<?php print(urlencode($PID)); url() ?>/datastreams/MODS/content" class="link-view first">View record</a>
+      	<a title="Read <?php print t($content_type) ?>" href="/fedora/objects/<?php print(urlencode($PID)); ?>/methods/bhle-service%3AbookSdef/bookreader?ui=full#page/1/mode/1up" class="link-read last">Read <?php print t($content_type) ?></a>
       </p>
   </div>
 </li>
