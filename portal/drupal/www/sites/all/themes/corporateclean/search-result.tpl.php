@@ -62,7 +62,7 @@
  * @see template_process()
  */
 ?>
-<li class="<?php print $classes; ?>"<?php print $attributes; ?>><!-- PID=<?php print $PID; ?>  -->
+<li class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print t($content_type) ?></p></div>
   <?php print render($title_prefix); ?>
   <h3 class="result-title"<?php print $title_attributes; ?>>
@@ -78,14 +78,31 @@
       <?php foreach($info_split as $key => $value) : ?>
         <li class="search-info-item metadata-<?php print $key ?>">
         <a href="#" title="<?php print t($key) ?>" class="content-<?php print $key ?>"><?php print $value ?></a><span class="gradient-overflow">&nbsp;</span></li>
-      <?php endforeach; ?>
       </ul>
+      <?php endforeach; ?>
     <?php endif; ?>
   </div>
   <div class="result-actions">
       <p class="result-buttons view-read radius gradient-vertical-grey">
-      	<a title="View record" href="/fedora/objects/<?php print(urlencode($PID)); url() ?>/datastreams/MODS/content" class="link-view first">View record</a>
-      	<a title="Read <?php print t($content_type) ?>" href="/fedora/objects/<?php print(urlencode($PID)); ?>/methods/bhle-service%3AbookSdef/bookreader?ui=full#page/1/mode/1up" class="link-read last">Read <?php print t($content_type) ?></a>
+      	<a title="View record" href="#" class="link-view first">View record</a>
+      	<a title="Read <?php print t($content_type) ?>" href="#" class="link-read last">Read <?php print t($content_type) ?></a>
       </p>
   </div>
 </li>
+<?php if(false) : ?>
+<li class="search-result even content-type- ">
+    <div class="content-type-logo radius gradient-vertical-grey"><p class="label">Content Type Name</p></div>
+    <h3 class="result-title"><a href="/portal/empty.html?language=en">Über die Oekologie und Verbreitung der Arthropoden der Triebsandgebiete an den Kuesten Finnlands</a><span class="gradient-overflow">&nbsp;</span></h3>
+    <div class="search-snippet-info">
+
+      <ul class="search-info-list">
+        <li class="search-info-item metadata-author"><a href="#" title="Author" class="content-author">Rolf Krogerus</a><span class="gradient-overflow">&nbsp;</span></li>
+        <li class="search-info-item metadata-year"><a href="#" title="Year" class="content-year">1956</a><span class="gradient-overflow">&nbsp;</span></li>
+        <li class="search-info-item metadata-publisher"><a href="#" title="Publisher" class="content-publisher">Zheng</a><span class="gradient-overflow">&nbsp;</span></li>
+      </ul>
+    </div>
+    <div class="result-actions">
+      <p class="result-buttons view-read radius gradient-vertical-grey"><a title="View record" href="#" class="link-view first">View record</a><a title="Read book" href="#" class="link-read last">Read book</a></p>
+    </div>
+  </li>
+<?php endif; ?>

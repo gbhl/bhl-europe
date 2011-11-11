@@ -8,6 +8,7 @@
 @import "css/tabs.css";
 @import "css/results.css";
 @import "css/css3.css";
+@import "css/sidebar.css";
 
 body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-height:1.417; color:#fff; background-color:#38691f;}
 #page-wrapper {background:#fff url('images/bg-fish.jpg') no-repeat 50% 109px;}
@@ -21,7 +22,6 @@ body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-he
 #content_bottom,
 #footer,
 #footer_bottom {clear: both; width:100%;} 
-
 
 /* Typopgrafie */
 a {text-decoration:none;}
@@ -166,9 +166,18 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 #content-inside {width:1010px; margin:0px auto; overflow:hidden;}
 #first-time {display:none;}
 
-#main { float:left; width: 620px; min-height: 490px;  margin:0px; padding:0px 60px 0px 0px;}
+#main {width: 100%; min-height:490px; margin:0px; padding:0px;}
 .front #main {height: 490px;}
-.no-sidebars #main { width:1010px; margin:0px; padding:0px; }
+.no-sidebars #main { width:1010px;}
+
+/* 2-sloupcovy layout */ 
+/* SEARCH_RESULT_DETAIL/BIBLIO - sidebar vlevo: 9+225 + 19 + 748+9 */
+.sidebar-first #main {float:right; padding:20px 9px 20px 0px; width:748px;} 
+.sidebar-first #sidebar {float:left; padding-left:20px 0px 20px 9px; width:225px;} 
+
+/* SEARCH_RESULT_LIST/DEFAULT - sidebar vlevo: 3+294 + 36 + 672+5 */
+.sidebar-first #main {float:right; padding:20px 5px 20px 0px; width: 672px;}  
+.sidebar-first #sidebar {float:left; padding:20px 0px 20px 3px; width:294px;} 
 
 /*  Bottom content */
 #content_bottom {color:#376d4e; background: transparent url('images/bg-content-bottom.png') no-repeat 50% top;} 

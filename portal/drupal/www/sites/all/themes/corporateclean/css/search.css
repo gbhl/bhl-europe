@@ -95,7 +95,7 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
 
 /** ADVANCED SEARCH --------------- **/
-.page-search-bhle #content #main {
+.page-search-bhle.no-sidebars #content #main {
   position:relative;  margin-top: 20px; margin-bottom:30px; width:1010px;
   /*background:transparent url('../images/bg-advanced-search-form2-header.png') no-repeat 1px top;*/
 }

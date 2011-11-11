@@ -97,13 +97,11 @@
             
         </div><!-- EOF: #main -->
 
-
         <?php if ($layout != 'none'): ?>
-          <div id="sidebar">
-             <?php print render($page['sidebar']); ?>
-             <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary-menu', 'links', 'clearfix')))); ?>
+          <div id="sidebar">            
+            <?php print render($page['sidebar_first']); ?>
           </div><!-- EOF: #sidebar -->
-        <?php endif; ?>
+        <?php endif; ?>  
           
     </div><!-- EOF: #content-inside -->
        

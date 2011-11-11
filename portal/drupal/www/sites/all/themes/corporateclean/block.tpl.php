@@ -2,12 +2,14 @@
 
 <?php print render($title_prefix); ?>
 <?php if ($block->subject): ?>
-<h2<?php print $title_attributes; ?>><?php print $block->subject ?></h2>
+<h2<?php print $title_attributes; ?>><span><?php print $block->subject ?></span></h2>
 <?php endif;?>
 <?php print render($title_suffix); ?>
 
 <div class="content"<?php print $content_attributes; ?>>
+<div class="content-inner">
 <?php print $content ?>
+</div>
 </div>
 
 </div>

@@ -14,5 +14,5 @@
 </div>
   
 <div class="simple-search-links">
-  <p class="advanced-buttons"><a class="browse-link" href="/browse" title="Browse">Browse</a> <a class="tutorial-link colorbox-load init-colorbox-load-processed-processed cboxElement" href="/tutorial?width=900&amp;height=500" title="Tutorial">Tutorial</a></p>
+  <p class="advanced-buttons"><a class="browse-link" href="/browse" title="Browse"><?php print t('Browse'); ?></a> <a class="tutorial-link colorbox-load init-colorbox-load-processed-processed cboxElement" href="/tutorial?width=900&amp;height=500" title="Tutorial"><?php print t('Tutorial'); ?></a></p>
 </div>

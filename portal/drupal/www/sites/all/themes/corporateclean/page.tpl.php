@@ -99,7 +99,7 @@
 
         <?php if ($layout != 'none'): ?>
           <div id="sidebar">
-             <?php print render($page['sidebar']); ?>
+             <?php print render($page['sidebar_first']); ?>          
              <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary-menu', 'links', 'clearfix')))); ?>
           </div><!-- EOF: #sidebar -->
         <?php endif; ?>
