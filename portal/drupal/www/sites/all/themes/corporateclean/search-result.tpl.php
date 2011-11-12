@@ -63,7 +63,7 @@
  */
 ?>
 <li class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print t($content_type) ?></p></div>
+  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print t($content_type) ?></p><span class="bitmap">&nbsp;</span></div>
   <?php print render($title_prefix); ?>
   <h3 class="result-title"<?php print $title_attributes; ?>>
     <a href="<?php print $url; ?>"><?php print $title; ?></a>
@@ -78,8 +78,8 @@
       <?php foreach($info_split as $key => $value) : ?>
         <li class="search-info-item metadata-<?php print $key ?>">
         <a href="#" title="<?php print t($key) ?>" class="content-<?php print $key ?>"><?php print $value ?></a><span class="gradient-overflow">&nbsp;</span></li>
-      </ul>
       <?php endforeach; ?>
+      </ul>
     <?php endif; ?>
   </div>
   <div class="result-actions">

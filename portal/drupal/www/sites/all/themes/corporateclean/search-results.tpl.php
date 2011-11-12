@@ -23,10 +23,18 @@
 ?>
 <?php if ($search_results) : ?>
   <h2><?php print t('Search results');?></h2>
-  <ol class="search-results <?php print $module; ?>-results">
-    <?php print $search_results; ?>
-  </ol>
-  <?php print $pager; ?>
+  
+  <p id="results-view-type" class="radius gradient-vertical-grey"><?php print t('View search results as:'); ?> <span>List</span></p>     
+  <div id="results" class="catalog">   
+  
+    <ol class="search-results <?php print $module; ?>-results">
+      <?php print $search_results; ?>
+    </ol>
+    
+    <?php print $pager; ?>
+
+  </div>
+
 <?php else : ?>
   <h2><?php print t('Your search yielded no results');?></h2>
   <?php print search_help('search#noresults', drupal_help_arg()); ?>
