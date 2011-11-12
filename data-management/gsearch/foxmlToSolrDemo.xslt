@@ -104,7 +104,7 @@
 			<!-- variant witch works with local namespace set on mods element -->
 			<!-- 
 			-->
-			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/*[local-name() = 'mods']">
+			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/*[local-name() = 'mods']">
 				<xsl:call-template name="mods"/>
 			</xsl:for-each>
 			
