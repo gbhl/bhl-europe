@@ -66,17 +66,24 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 .sidebar-panel.search-summary-sidebar #search-step-back-link a:hover {text-decoration:underline;}
 
 .sidebar-panel .search-summary #searched-querry {color: #006626;}
-.sidebar-panel strong {margin:0px 5px; color: #000; font-weight:normal;} 
+.sidebar-panel .search-summary ul#searched-querry {list-style-type:none;}
+.sidebar-panel strong {margin:0px 5px; color: #000; font-weight:normal;}
+.sidebar-panel .search-summary span.terms, 
+.sidebar-panel .search-summary span.count {color: #000; font-weight:normal;} 
 
-.sidebar-panel label.grip,
-.sidebar-panel label.grip.open {
+/** Rozbalovací bloky **/
+.sidebar-panel .collapsing-grip {
   margin-bottom:5px; padding-right:15px;
   background: transparent url('../images/icon-collapse-expand.png') no-repeat 235px 50%;  
+  cursor:pointer;
 }
-.sidebar-panel label.grip.close {  
-  background-position: right 50%;
-}
+.sidebar-panel .collapsing-grip.expanded {background-position: right 50%;}
 
+.sidebar-panel .collapsing-content {display:none;}
+.sidebar-panel .search-summary .collapsing-content {display:block;}
+
+.sidebar-panel .collapsing-grip:hover,
+.sidebar-panel .collapsing-multiple-grip:hover {text-decoration:underline;}
 
 .sidebar-panel.facet-list-sidebar #facet-list-grip-multiple {
   position:absolute; top:10px; right:25px;
@@ -89,5 +96,5 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
   list-style-type:none; margin:0 0 10px 10px;
 }
 
-.sidebar-panel.facet-list-sidebar .facet-list ul.collapsable.closed li {display:none;}
+/*.sidebar-panel.facet-list-sidebar .facet-list ul.collapsable.closed li {display:none;}*/
 
