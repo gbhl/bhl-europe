@@ -172,12 +172,14 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 
 /* 2-sloupcovy layout */ 
 /* SEARCH_RESULT_DETAIL/BIBLIO - sidebar vlevo: 9+225 + 19 + 748+9 */
-.sidebar-first #main {float:right; padding:20px 9px 20px 0px; width:748px;} 
-.sidebar-first #sidebar {float:left; padding-left:20px 0px 20px 9px; width:225px;} 
+.sidebar-second #main {float:right; padding:20px 9px 20px 0px; width:748px;} 
+.sidebar-second #sidebar-second {float:left; padding-left:20px 0px 20px 9px; width:225px;} 
+.sidebar-second #sidebar {display:none;}
 
 /* SEARCH_RESULT_LIST/DEFAULT - sidebar vlevo: 3+294 + 36 + 672+5 */
 .sidebar-first #main {float:right; padding:20px 5px 20px 0px; width: 672px;}  
-.sidebar-first #sidebar {float:left; padding:20px 0px 20px 3px; width:294px;} 
+.sidebar-first #sidebar {float:left; padding:20px 0px 20px 3px; width:294px;}
+.sidebar-first #sidebar-second {display:none;} 
 
 /*  Bottom content */
 #content_bottom {color:#376d4e; background: transparent url('images/bg-content-bottom.png') no-repeat 50% top;} 

@@ -19,6 +19,35 @@ drupal_add_library('system', 'ui.tabs');
 
 drupal_add_js('jQuery(document).ready(function($) {
 
+
+    $(".collapsing-grip").click(function(){
+      var header=$(this);
+      var par = $(this).next(".collapsing-content");
+      if (header.hasClass("expanded")) {
+        par.slideUp(600);
+        header.removeClass("expanded");
+      } else {
+        par.slideDown(600);
+        header.addClass("expanded");
+      }
+    });
+
+    $(".collapsing-multiple-grip").click(function(){
+      var header=$(this);
+      var parheader = $(".collapsing-multiple .collapsing-grip");
+      var par = $(".collapsing-multiple .collapsing-content");
+      if (header.hasClass("expanded-all")) {
+        par.slideUp(600);
+        parheader.removeClass("expanded");        
+        header.removeClass("expanded-all");
+      } else {
+        par.slideDown(600);
+        parheader.addClass("expanded");
+        header.addClass("expanded-all");
+      }
+    });
+
+
        $( "#tabs" ).tabs();   
        
        $("#results-view-type span").bind("click", function() {
