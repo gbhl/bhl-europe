@@ -892,7 +892,9 @@ function bhle_search_add_hit_count($conditions = null) {
 		$params = array('facet' => 'true', 'facet.query' => array());
 
 		foreach ($_SESSION['bhle_search']['query'] as $query_item){
-			$params['facet.query'][] = $query_item['query_field'] . ":". $query_item['query_term'];
+			if(trim($query_item['query_term'])) { // check for empty term
+				$params['facet.query'][] = $query_item['query_field'] . ":". ($query_item['query_term'] ? $query_item['query_term'] : '""');
+			}
 		}
 		// Query solr for facet query
 		// like ?q=*&facet=true&facet.query=mods_title__exact:"le continent mysterieux"&facet.query=mods_name:Morton
@@ -900,9 +902,11 @@ function bhle_search_add_hit_count($conditions = null) {
 		$facet_queries = $responseObj->facet_counts->facet_queries;
 
 		foreach ($conditions as $i => &$condition){
-			$query_field = $_SESSION['bhle_search']['query'][$i];
-			$facet_result = $facet_queries->$params['facet.query'][$i];
-			$condition['count'] = $facet_result;
+			$query_item = $_SESSION['bhle_search']['query'][$i];
+			if(trim($query_item['query_term'])) { // check for empty term; compare with above
+				$facet_result = $facet_queries->$params['facet.query'][$i];
+				$condition['count'] = $facet_result;
+			}
 		}
 	}
 	return $conditions;
