@@ -1,0 +1,5 @@
+name = Journals Lookup
+description = Provides functionality for looking up several Journal related details (like Acronyms, alternative spellings, etc.)
+version = 0.1
+core = 7.x
+package = Search
