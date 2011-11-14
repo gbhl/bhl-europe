@@ -100,7 +100,7 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
   /*background:transparent url('../images/bg-advanced-search-form2-header.png') no-repeat 1px top;*/
 }
 
-.page-search-bhle.no-sidebars #content #main h1 {
+.page-search-bhle #content #main h1 {
   display:none;
 /*
   float:left; height:20px; margin:0px;
