@@ -89,20 +89,3 @@
       </p>
   </div>
 </li>
-<?php if(false) : ?>
-<li class="search-result even content-type- ">
-    <div class="content-type-logo radius gradient-vertical-grey"><p class="label">Content Type Name</p></div>
-    <h3 class="result-title"><a href="/portal/empty.html?language=en">Über die Oekologie und Verbreitung der Arthropoden der Triebsandgebiete an den Kuesten Finnlands</a><span class="gradient-overflow">&nbsp;</span></h3>
-    <div class="search-snippet-info">
-
-      <ul class="search-info-list">
-        <li class="search-info-item metadata-author"><a href="#" title="Author" class="content-author">Rolf Krogerus</a><span class="gradient-overflow">&nbsp;</span></li>
-        <li class="search-info-item metadata-year"><a href="#" title="Year" class="content-year">1956</a><span class="gradient-overflow">&nbsp;</span></li>
-        <li class="search-info-item metadata-publisher"><a href="#" title="Publisher" class="content-publisher">Zheng</a><span class="gradient-overflow">&nbsp;</span></li>
-      </ul>
-    </div>
-    <div class="result-actions">
-      <p class="result-buttons view-read radius gradient-vertical-grey"><a title="View record" href="#" class="link-view first">View record</a><a title="Read book" href="#" class="link-read last">Read book</a></p>
-    </div>
-  </li>
-<?php endif; ?>
