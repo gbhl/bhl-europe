@@ -63,7 +63,7 @@
  */
 ?>
 <li class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print t($content_type) ?></p><span class="bitmap">&nbsp;</span></div>
+  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php /*  BHLE ID */ ?></p><span class="bitmap">&nbsp;</span></div>
   <?php print render($title_prefix); ?>
   <h3 class="result-title"<?php print $title_attributes; ?>>
     <a href="<?php print $url; ?>"><?php print $title; ?></a>
@@ -84,8 +84,17 @@
   </div>
   <div class="result-actions">
       <p class="result-buttons view-read radius gradient-vertical-grey">
-      	<a title="View record" href="/fedora/objects/<?php print(urlencode($PID)); url() ?>/datastreams/MODS/content" class="link-view first">View record</a>
-      	<a title="Read <?php print t($content_type) ?>" href="/fedora/objects/<?php print(urlencode($PID)); ?>/methods/bhle-service%3AbookSdef/bookreader?ui=full#page/1/mode/2up" class="link-read last">Read <?php print t($content_type) ?></a>
+      	<a title="<?php print t('View record'); ?>" href="/fedora/objects/<?php print(urlencode($PID)); url() ?>/datastreams/MODS/content" class="link-view first"><?php print t('View record'); ?></a>
+      	<a title="Read <?php print t($content_type) ?>" href="/fedora/objects/<?php print(urlencode($PID)); ?>/methods/bhle-service%3AbookSdef/bookreader?ui=full#page/1/mode/2up" class="link-read last"><?php print t('Read ' . $content_type) ?></a>
       </p>
+
+<!--      
+      <p class="result-buttons download-basket radius gradient-vertical-grey">
+	     <a class="link-download first" href="#" title="Download"><?php print t('Download'); ?></a>
+	     <a class="link-basket last" href="#" title="Add to basket"><?php print t('Add to basket'); ?></a>
+      </p>
+-->
+
+
   </div>
 </li>

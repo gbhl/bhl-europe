@@ -22,10 +22,10 @@
  */
 ?>
 <?php if ($search_results) : ?>
-  <h2><?php print t('Search results');?></h2>
+  <h2 class="search-result-title wcag"><?php print t('Search results');?></h2>
   
-  <p id="results-view-type" class="radius gradient-vertical-grey"><?php print t('View search results as:'); ?> <span>List</span></p>     
-  <div id="results" class="catalog">   
+  <p id="results-view-type" class="radius gradient-vertical-grey"><?php print t('View search results as:'); ?> <span><?php print t('TABLE'); ?></span></p>     
+  <div id="results" class="list">   
   
     <ol class="search-results <?php print $module; ?>-results">
       <?php print $search_results; ?>

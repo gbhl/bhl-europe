@@ -214,6 +214,9 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
   width:920px; /*height:155px;*/ overflow:hidden;
   background: transparent url('images/bg_tips-delimiter.png') left 50% no-repeat;
 }
+.jcarousel-clip {width:920px;}
+.jcarousel-clip-horizontal {width:920px;}
+
 #content #content_bottom .jcarousel.jcarousel-list.jcarousel-list-horizontal {/*height:155px;*/}
 #content #content_bottom .jcarousel-item.jcarousel-item-horizontal {
   margin:0px; padding:15px 0px 15px;

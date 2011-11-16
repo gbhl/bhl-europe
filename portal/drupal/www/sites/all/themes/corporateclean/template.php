@@ -56,9 +56,9 @@ drupal_add_js('jQuery(document).ready(function($) {
        });
        
        $("#results-view-type span").toggle(function () {
-         $(this ).text("' . t('Catalog') . '"); 
+         $(this ).text("' . t('LIST') . '"); 
        }, function () {
-         $(this ).text("' . t('List') . '"); 
+         $(this ).text("' . t('TABLE') . '"); 
        });       
       
        $("#accordion").tabs("div.block-aggregator",{
@@ -76,5 +76,18 @@ drupal_add_js('jQuery(document).ready(function($) {
 drupal_add_library('system', 'ui.slider');
 drupal_add_js(drupal_get_path('theme', 'corporateclean') . '/js/custom.js');
  
+function corporateclean_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+  
+    unset($form['search_block_form']['#title']);
+	
+    $form['search_block_form']['#title_display'] = 'invisible';
+  	$form_default = t('simple search all');
+    $form['search_block_form']['#default_value'] = $form_default;
+
+ 	  $form['search_block_form']['#attributes'] = array('onblur' => "if (this.value == '') {this.value = '{$form_default}';}", 'onfocus' => "if (this.value == '{$form_default}') {this.value = '';}" );
+  }
+} 
+  
  
 ?>
