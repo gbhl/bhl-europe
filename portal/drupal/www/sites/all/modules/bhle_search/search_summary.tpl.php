@@ -32,13 +32,16 @@
 //print ('<pre>' .  var_dump($matches_for) .'</pre>');
 
 ?>
+
+<p id="search-step-back-link"><a href="/search/bhle" title="step back"><?php print t('STEP BACK'); ?></a></p>
+
 <div class="search-summary search-summary-<?php print $classes; ?>">
 	<div class="number_of_results">
 		<label><?php print $number_of_results['label']; ?>:</label><?php print $number_of_results['value']; ?>
 	</div>
 	<div class="matches_for">
-		<label><?php print $matches_for['label']; ?>:</label>
-		<ul>
+		<label class="collapsing-grip expanded"><?php print $matches_for['label']; ?>:</label>
+		<ul id="searched-querry" class="collapsing-content">
 		<?php foreach ($matches_for['search_conditions'] as $condition) : ?>
 			<li>
 				<?php if($condition['exact_phrase'] == 1) :?><span class="exact">exact:</span><?php endif; ?>
