@@ -59,7 +59,7 @@ function jcarousel_views_ajax() {
           $view->pager['use_pager'] = FALSE;
           $view->pager['offset'] = $first;
           $view->pager['items_per_page'] = $last - $first;
-  
+
           $view->display[$display_id]->handler->set_option('use_pager', 0);
           $view->display[$display_id]->handler->set_option('offset', $first);
           $view->display[$display_id]->handler->set_option('items_per_page', $last - $first);
@@ -111,6 +111,18 @@ function jcarousel_views_add($view, $display_id = NULL) {
     if ($option) {
       $options[$key] = is_numeric($option) ? (int) $option : $option;
     }
+  }
+
+  // By default limit the scrolling to the same number of items as are visible
+  // to avoid display glitches.
+  if (empty($options['scroll']) && !empty($options['visible'])) {
+    $options['scroll'] = $options['visible'];
+  }
+
+  // By default limit the scrolling to the same number of items as are visible
+  // to avoid display glitches.
+  if (empty($options['scroll']) && !empty($options['visible'])) {
+    $options['scroll'] = $options['visible'];
   }
 
   // Get the total number of items in this view.
@@ -181,12 +193,12 @@ function template_preprocess_jcarousel_view(&$variables) {
   $settings = jcarousel_views_add($view, $display_id);
 
   // Build the list of classes for the carousel.
-  $options = $view->style_options;
+  $options = $view->style_plugin->options;
   $variables['jcarousel_classes_array'] = array(
     'jcarousel',
     drupal_clean_css_identifier('jcarousel-view--' . $view->name . '--' . $display_id),
   );
-  if ($options['skin']) {
+  if (!empty($options['skin'])) {
     $variables['jcarousel_classes_array'][] = 'jcarousel-skin-' . $options['skin'];
   }
   $variables['jcarousel_classes'] = implode(' ', $variables['jcarousel_classes_array']);

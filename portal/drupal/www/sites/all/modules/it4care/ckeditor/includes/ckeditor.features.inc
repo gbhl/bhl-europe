@@ -5,7 +5,7 @@
  *
  * == BEGIN LICENSE ==
  *
- * Licensed under the terms of any of the following licenses at your
+ * Licensed under the terms of any of the following licenses of your
  * choice:
  *
  *  - GNU General Public License Version 2 or later (the "GPL")
@@ -20,13 +20,17 @@
  * == END LICENSE ==
  *
  * @file
- * CKEditor Module for Drupal 6.x
+ * CKEditor Module for Drupal 7.x
  *
  * This module allows Drupal to replace textarea fields with CKEditor.
  *
- * This HTML text editor brings to the web many of the powerful functionalities
- * of known desktop editors like Word. It's really  lightweight and doesn't
- * require any kind of installation on the client computer.
+ * CKEditor is an online rich text editor that can be embedded inside web pages.
+ * It is a WYSIWYG (What You See Is What You Get) editor which means that the
+ * text edited in it looks as similar as possible to the results end users will
+ * see after the document gets published. It brings to the Web popular editing
+ * features found in desktop word processors such as Microsoft Word and
+ * OpenOffice.org Writer. CKEditor is truly lightweight and does not require any
+ * kind of installation on the client computer.
  */
 
 /**

@@ -6,7 +6,7 @@
  *
  * == BEGIN LICENSE ==
  *
- * Licensed under the terms of any of the following licenses at your
+ * Licensed under the terms of any of the following licenses of your
  * choice:
  *
  *  - GNU General Public License Version 2 or later (the "GPL")
@@ -25,13 +25,17 @@
  *
  * This module allows Drupal to replace textarea fields with CKEditor.
  *
- * This HTML text editor brings to the web many of the powerful functionalities
- * of known desktop editors like Word. It's really  lightweight and doesn't
- * require any kind of installation on the client computer.
+ * CKEditor is an online rich text editor that can be embedded inside web pages.
+ * It is a WYSIWYG (What You See Is What You Get) editor which means that the
+ * text edited in it looks as similar as possible to the results end users will
+ * see after the document gets published. It brings to the Web popular editing
+ * features found in desktop word processors such as Microsoft Word and
+ * OpenOffice.org Writer. CKEditor is truly lightweight and does not require any
+ * kind of installation on the client computer.
  */
 /**
- * The name of simplified toolbar which should be forced
- * Be sure that this toolbar is defined in ckeditor.config.js or fckconfig.js
+ * The name of the simplified toolbar that should be forced.
+ * Make sure that this toolbar is defined in ckeditor.config.js or fckconfig.js.
  */
 define('CKEDITOR_FORCE_SIMPLE_TOOLBAR_NAME', 'DrupalBasic');
 define('CKEDITOR_ENTERMODE_P', 1);
@@ -62,7 +66,7 @@ function ckeditor_menu() {
     );
 
     $items['ckeditor/disable/wysiwyg'] = array(
-        'title' => 'Disable WYSIWYG module',
+        'title' => 'Disable the WYSIWYG module',
         'description' => 'Disable WYSIWYG module.',
         'page callback' => 'ckeditor_disable_wysiwyg',
         'file' => 'includes/ckeditor.admin.inc',
@@ -81,7 +85,7 @@ function ckeditor_menu() {
     );
 
     $items['admin/config/content/ckeditor/add'] = array(
-        'title' => 'Add new CKEditor profile',
+        'title' => 'Add a new CKEditor profile',
         'description' => 'Configure the rich text editor.',
         'page callback' => 'drupal_get_form',
         'page arguments' => array('ckeditor_admin_profile_form'),
@@ -91,7 +95,7 @@ function ckeditor_menu() {
     );
 
     $items['admin/config/content/ckeditor/clone/%ckeditor_profile'] = array(
-        'title' => 'Clone CKEditor profile',
+        'title' => 'Clone the CKEditor profile',
         'description' => 'Configure the rich text editor.',
         'page callback' => 'drupal_get_form',
         'page arguments' => array('ckeditor_admin_profile_clone_form', 5),
@@ -101,7 +105,7 @@ function ckeditor_menu() {
     );
 
     $items['admin/config/content/ckeditor/edit/%ckeditor_profile'] = array(
-        'title' => 'Edit CKEditor profile',
+        'title' => 'Edit the CKEditor profile',
         'description' => 'Configure the rich text editor.',
         'page callback' => 'drupal_get_form',
         'page arguments' => array('ckeditor_admin_profile_form', 5),
@@ -111,7 +115,7 @@ function ckeditor_menu() {
     );
 
     $items['admin/config/content/ckeditor/delete/%ckeditor_profile'] = array(
-        'title' => 'Delete CKEditor profile',
+        'title' => 'Delete the CKEditor profile',
         'description' => 'Configure the rich text editor.',
         'page callback' => 'drupal_get_form',
         'page arguments' => array('ckeditor_admin_profile_delete_form', 5),
@@ -121,7 +125,7 @@ function ckeditor_menu() {
     );
 
     $items['admin/config/content/ckeditor/addg'] = array(
-        'title' => 'Add CKEditor Global profile',
+        'title' => 'Add the CKEditor Global profile',
         'description' => 'Configure the rich text editor.',
         'page callback' => 'drupal_get_form',
         'page arguments' => array('ckeditor_admin_global_profile_form', 'add'),
@@ -131,7 +135,7 @@ function ckeditor_menu() {
     );
 
     $items['admin/config/content/ckeditor/editg'] = array(
-        'title' => 'Edit CKEditor Global profile',
+        'title' => 'Edit the CKEditor Global profile',
         'description' => 'Configure the rich text editor.',
         'page callback' => 'drupal_get_form',
         'page arguments' => array('ckeditor_admin_global_profile_form', 'edit'),
@@ -144,7 +148,7 @@ function ckeditor_menu() {
 }
 
 /**
- * Implementation of hook_permission()
+ * Implementation of hook_permission().
  *
  * People -> Permissions
  */
@@ -152,18 +156,18 @@ function ckeditor_permission() {
     $arr = array();
     $arr['administer ckeditor'] = array(
             'title' => t('Administer CKEditor access'),
-            'description' => t('Allow users to change CKEditor settings')
+            'description' => t('Allow users to change CKEditor settings.')
         );
 
     $arr['customize ckeditor'] = array(
             'title' => t('Customize CKEditor appearance'),
-            'description' => t('Allow users to customize CKEditor appearance')
+            'description' => t('Allow users to customize CKEditor appearance.')
         );
 
     if (file_exists(drupal_get_path('module', 'ckeditor') . "/ckfinder")) {
         $arr['allow CKFinder file uploads'] = array(
             'title' => t('CKFinder access'),
-            'description' => t('Allow users to use CKFinder')
+            'description' => t('Allow users to use CKFinder.')
         );
     }
     return $arr;
@@ -172,8 +176,8 @@ function ckeditor_permission() {
 /**
  * Implementation of hook_help().
  *
- * This function delegates execution to ckeditor_help_delegate() in includes/ckeditor.page.inc to
- * lower the amount of code in ckeditor.module
+ * This function delegates the execution to ckeditor_help_delegate() in includes/ckeditor.page.inc to
+ * lower the amount of code in ckeditor.module.
  */
 function ckeditor_help($path, $arg) {
     module_load_include('inc', 'ckeditor', 'includes/ckeditor.page');
@@ -200,19 +204,19 @@ function ckeditor_form_alter(&$form, $form_state, $form_id) {
 /**
  * Implementation of hook_element_info_alter().
  *
- * Replace textarea with CKEditor using callback function (ckeditor_pre_render_text_format)
+ * Replace the textarea with CKEditor using a callback function (ckeditor_pre_render_text_format).
  */
 function ckeditor_element_info_alter(&$types) {
     $types['text_format']['#pre_render'][] = 'ckeditor_pre_render_text_format';
 }
 
 /**
- * This function create the HTML objects required for the CKEditor
+ * This function creates the HTML objects required for CKEditor.
  *
  * @param $element
- *   A fully populated form element to add the editor to
+ *   A fully populated form element to add the editor to.
  * @return
- *   The same $element with extra CKEditor markup and initialization
+ *   The same $element with extra CKEditor markup and initialization.
  */
 function ckeditor_pre_render_text_format($element) {
     static $init = FALSE;
@@ -229,8 +233,8 @@ function ckeditor_pre_render_text_format($element) {
 
     if (isset($element['value'])) {
         if (isset($element['summary'])) {
-            $element['value'] = ckeditor_load_by_field($element['value'], $element['#format'], TRUE, $element['summary']['#id']);
-            $element['summary'] = ckeditor_load_by_field($element['summary'], $element['#format'], FALSE);
+            $element['value'] = ckeditor_load_by_field($element['value'], $element['format']['format'], TRUE, $element['summary']['#id']);
+            $element['summary'] = ckeditor_load_by_field($element['summary'], $element['format']['format'], FALSE);
         }
         else {
             $element['value'] = ckeditor_load_by_field($element['value'], $element['#format']);
@@ -246,8 +250,8 @@ function ckeditor_pre_render_text_format($element) {
 /**
  * Implementation of hook_user().
  *
- * This function delegates execution to ckeditor_user_delegate() in includes/ckeditor.user.inc to
- * lower the amount of code in ckeditor.module
+ * This function delegates the execution to ckeditor_user_delegate() in includes/ckeditor.user.inc to
+ * lower the amount of code in ckeditor.module.
  */
 function ckeditor_user($type, $edit, &$user, $category = NULL) {
     if (($type == 'form' && $category == 'account') || $type == 'validate') {
@@ -286,10 +290,10 @@ function ckeditor_profile_load($name = '', $clear = FALSE) {
 }
 
 /**
- * Read CKEditor path from Global profile
+ * Read the CKEditor path from the Global profile.
  *
  * @return
- *   path to CKEditor folder
+ *   Path to CKEditor folder.
  */
 function ckeditor_path($local = FALSE, $refresh = FALSE) {
     static $cke_path;
@@ -352,10 +356,10 @@ function ckeditor_path($local = FALSE, $refresh = FALSE) {
 }
 
 /**
- * Read CKEditor plugins path from Global profile
+ * Read the CKEditor plugins path from the Global profile.
  *
  * @return
- *   path to CKEditor plugins folder
+ *   Path to CKEditor plugins folder.
  */
 function ckeditor_plugins_path($local = FALSE, $refresh = FALSE) {
     static $cke_plugins_path;
@@ -369,6 +373,10 @@ function ckeditor_plugins_path($local = FALSE, $refresh = FALSE) {
         //default: path to ckeditor subdirectory in the ckeditor module directory (starting from the document root)
         //e.g. for http://example.com/drupal it will be /drupal/sites/all/modules/ckeditor/ckeditor
         $cke_plugins_path = base_path() . $mod_path . '/plugins';
+
+        //default: path to plugins subdirectory in the ckeditor module directory (relative to index.php)
+        //e.g.: sites/all/modules/ckeditor/plugins
+        $cke_plugins_local_path = $mod_path . '/plugins';
 
         if ($global_profile) {
             $gs = $global_profile->settings;
@@ -402,7 +410,7 @@ function ckeditor_plugins_path($local = FALSE, $refresh = FALSE) {
             //the document root located and append ckeditor_plugins_path to it.
             if (!empty($gs['ckeditor_plugins_local_path'])) {
                 $cke_plugins_local_path = $gs['ckeditor_plugins_local_path'];
-            } 
+            }
             elseif (!empty($gs['ckeditor_plugins_path'])) {
                 module_load_include('inc', 'ckeditor', 'includes/ckeditor.lib');
                 $local_path = ckeditor_resolve_url($gs['ckeditor_plugins_path'] . "/");
@@ -415,16 +423,16 @@ function ckeditor_plugins_path($local = FALSE, $refresh = FALSE) {
 
     if ($local) {
         return $cke_plugins_local_path;
-    } 
+    }
     else {
         return $cke_plugins_path;
     }
 }
 
 /**
- * Implementation of hook_features_api()
+ * Implementation of hook_features_api().
  *
- * Allow exporting of CKEditor profiles by the Features module
+ * Allow exporting of CKEditor profiles by the Features module.
  */
 function ckeditor_features_api() {
   return array(
@@ -435,4 +443,43 @@ function ckeditor_features_api() {
       'file' => drupal_get_path('module', 'ckeditor') . '/includes/ckeditor.features.inc',
     )
   );
+}
+
+/**
+ * Implementation of hook_file_download().
+ * Support for private downloads.
+ * CKEditor does not implement any kind of potection on private files.
+ */
+function ckeditor_file_download($uri) {
+
+  if ($path = file_create_url($uri)) {
+    $result = db_query("SELECT f.* FROM {file_managed} f WHERE uri = :uri", array(':uri' => $path));
+    foreach ($result as $record)
+    {
+      return NULL;
+    }
+    //No info in DB? Probably a file uploaded with FCKeditor / CKFinder
+    $global_profile = ckeditor_profile_load("CKEditor Global Profile");
+    //Assume that files inside of ckeditor directory belong to the CKEditor. If private directory is set, let the decision about protection to the user.
+    $private_dir_db = $private_dir = isset($global_profile->settings['private_dir']) ? trim($global_profile->settings['private_dir'], '\/') : '';
+    $private_dir_db = str_replace(array('\\%u', '\\%n'),array('', '') , $private_dir_db);
+    $private_dir = preg_quote($private_dir, '#');
+    $private_dir = strtr($private_dir, array('%u' => '(\d+)', '%n' => '([\x80-\xF7 \w@.-]+)')); // regex for %n taken from user_validate_name() in user.module
+    $private_dir = trim($private_dir, '\/');
+
+    $regex = '#^'. preg_quote(file_default_scheme() . '://' , '#') . $private_dir .'#';
+
+    if (!strstr($uri, 'private://') && !strstr($uri,'public://'))
+    {
+      $path =   file_default_scheme() . '://' .$uri   ;
+    }else{
+      $path =    $uri  ;
+    }
+    if (!$private_dir && variable_get('file_default_scheme', '') == 'private' &&  strcmp(isset($global_profile->settings['ckeditor_allow_download_private_files']) ? $global_profile->settings['ckeditor_allow_download_private_files']: '', 't') != 0 ) return -1;
+    if (preg_match($regex, $path))
+    {
+      $info = image_get_info($uri);
+      return array('Content-Type' => $info['mime_type']);
+    }
+  }
 }

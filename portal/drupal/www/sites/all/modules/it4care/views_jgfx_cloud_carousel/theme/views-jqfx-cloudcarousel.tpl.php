@@ -8,7 +8,7 @@
 
 <div id="views-jqfx-cloudcarousel-<?php print $id; ?>" class="views-jqfx-cloudcarousel-container">
 
-  <div id="views-jqfx-cloudcarousel-images-<?php print $id; ?>" class=<?php print $classes; ?>>
+  <div id="views-jqfx-cloudcarousel-images-<?php print $id; ?>" class="<?php print $classes; ?>">
     <?php foreach ($images as $image): ?>
       <?php print $image ."\n"; ?>
     <?php endforeach; ?>
