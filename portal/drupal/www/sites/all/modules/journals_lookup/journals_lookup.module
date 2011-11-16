@@ -39,12 +39,14 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 function journals_lookup_acronym( $acronym ) {
+    $titles = array();
+    
     // Remove any quotes, as they are not allowed
     $acronym = str_replace( '"', "", $acronym );
     
     // Prepare the webservice URL
-    $url = "http://services.d-nb.de/sru/zdb?version=1.1&operation=searchRetrieve&recordSchema=MARC21-xml&query=";
-    $url .= urlencode( 'title="' . $acronym . '"' );
+    $url = "http://services.d-nb.de/sru/zdb?version=1.1&operation=searchRetrieve&recordSchema=MARC21-xml&maximumRecords=" . variable_get('journals_lookup_maximum_results', 5) . "&query=";
+    $url .= urlencode( 'title="' . $acronym . '" or cdn="' . $acronym . '"' );
     
     $response = _journals_lookup_webservice_request( $acronym, $url );
     // Try to load the response as XML
@@ -53,18 +55,29 @@ function journals_lookup_acronym( $acronym ) {
         return false;
     }
     
-    //<datafield tag="245" ind1="1" ind2="0">
+    // Create XPath query object
     $domXPath = new DOMXPath($domDocument);
-    $records = $domXPath->query( "//recordData/record" );
+    $domXPath->registerNamespace( "nssrw", "http://www.loc.gov/zing/srw/" );
+    $domXPath->registerNamespace( "nsmarc", "http://www.loc.gov/MARC21/slim" );
+    
+    // Find the result records
+    $records = $domXPath->query( "//nsmarc:record" );
     $numRecords = $records->length;
     
-    error_log( $numRecords );
-    
+    // Cycle through results and fetch titles for them
     for( $i = 0; $i < $numRecords; $i++ ) {
         $record = $records->item($i);
         
-        error_log( $domXPath->query( "datafield[tag='245']/subfield[code='a']", $record)->item(0)->textContent );
+        // Fine the title node
+        $titleNode = $domXPath->query( "nsmarc:datafield[@tag='245']/nsmarc:subfield[@code='a']", $record);
+        if( $titleNode->length <= 0 ) continue;
+        
+        // Add the title to result list
+        $titles[] = trim( $titleNode->item(0)->textContent );
     }
+    
+    // Clean up entries & return them
+    return array_unique($titles);
 }
 
 /**
@@ -148,6 +161,16 @@ function journals_lookup_config_form($form, &$form_state) {
         '#required' => TRUE,
     );
 
+    $form['journals_lookup_maximum_results'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Maximum number of results to return.'),
+        '#default_value' => variable_get('journals_lookup_maximum_results', 5),
+        '#size' => 3,
+        '#maxlength' => 3,
+        '#description' => t('The maximum number of results to return (clean cache for changes to take effect).'),
+        '#required' => TRUE,
+    );
+
     $form['journals_lookup_sample_query_abbreviations'] = array(
         '#type' => 'textfield',
         '#title' => t('Enter a journal abbreviation to sample query ZDB for'),
@@ -177,28 +200,23 @@ function journals_lookup_config_form_validate($form, &$form_state) {
         form_set_error('journals_lookup_cache_time', t('Maximum age must be positive.'));
     }
 
-    $sample_name = trim( $form_state['values']['names_lookup_sample_query'] );
-    if( !empty($sample_name) ) {
-        $scientificnames = names_lookup_common_name($sample_name);
-        if( $scientificnames === false ) {
-            form_set_error('names_lookup_sample_query', t('Unable to call the webservice.'));
+    $max_results = $form_state['values']['journals_lookup_maximum_results'];
+    if (!is_numeric($max_results)) {
+        form_set_error('journals_lookup_maximum_results', t('You must enter an integer for the maximum number.'));
+    } else if ($max_results <= 0) {
+        form_set_error('journals_lookup_maximum_results', t('Maximum number must be positive.'));
+    }
+
+    $sample_acronym = trim( $form_state['values']['journals_lookup_sample_query_abbreviations'] );
+    if( !empty($sample_acronym) ) {
+        $journal_titles = journals_lookup_acronym($sample_acronym);
+        if( $journal_titles === false ) {
+            form_set_error('journals_lookup_sample_query_abbreviations', t('Unable to call the webservice.'));
         }
         else {
-            $names = array();
-            foreach( $scientificnames as $scientificname ) {
-                $names[] = $scientificname['name'];
-            }
-            
-            form_set_error('names_lookup_sample_query', t('Result: ' . join( '; ', $names ) ));
+            form_set_error('journals_lookup_sample_query_abbreviations', t('Result: ' . join( '; ', $journal_titles ) ));
         }
     }
-
-    $sample_name = trim( $form_state['values']['journals_lookup_sample_query_abbreviations'] );
-    if( !empty($sample_name) ) {
-        // TODO: Continue here
-        form_set_error('journals_lookup_sample_query_abbreviations', t('Result: ' . join( '; ', $names ) ));
-    }
-
 }
 
 /**
