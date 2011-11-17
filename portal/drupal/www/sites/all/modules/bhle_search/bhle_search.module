@@ -574,6 +574,22 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                         drupal_set_message( 'Names-Module not active!', 'error' );
                     }
                 }
+                // Check if we are looking for a (journal) title
+                else if( $condition['field'] == variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD) ) {
+                    if( module_exists('journals_lookup') ) {
+                        $titles_list = journals_lookup_acronym( $condition['term'] );
+
+                        // Check if we found any titles, if yes add to term
+                        if( is_array($titles_list) && count($titles_list) > 0 ) {
+                            // Add original term since we want to include it as well
+                            $titles_list[] = $condition['term'];
+                            $query_term = bhle_search_solr_build_query($titles_list);
+                        }
+                    }
+                    else {
+                        drupal_set_message( 'Journals-Module not active!', 'error' );
+                    }
+                }
             }
 
             // Append to query
@@ -585,7 +601,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
            	);
         }
     }
-
+    
     try {
         // Query solr
         $responseObj = $solr->search($query, $params);
