@@ -1,0 +1,224 @@
+<?php
+/**
+Copyright (c) 2011, Museum of Natural History Vienna
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of the Museum of Natural History Vienna nor the
+      names of its contributors may be used to endorse or promote products
+      derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL Museum of Natural History Vienna BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+// TEST CODE BELOW (for running in e.g. Drupal Debug)
+//$start = microtime( true );
+//var_dump( names_lookup_common_name( "Eurasian Spoonbill" ) );
+//$end = microtime( true );
+//
+//echo "Timing (s): " . ($end - $start);
+// END TEST CODE
+
+/**
+ * PUBLIC INTERFACE FUNCTIONS START
+ */
+
+function journals_lookup_acronym( $acronym ) {
+    $titles = array();
+    
+    // Remove any quotes, as they are not allowed
+    $acronym = str_replace( '"', "", $acronym );
+    
+    // Prepare the webservice URL
+    $url = "http://services.d-nb.de/sru/zdb?version=1.1&operation=searchRetrieve&recordSchema=MARC21-xml&maximumRecords=" . variable_get('journals_lookup_maximum_results', 5) . "&query=";
+    $url .= urlencode( 'title="' . $acronym . '" or cdn="' . $acronym . '"' );
+    
+    $response = _journals_lookup_webservice_request( $acronym, $url );
+    // Try to load the response as XML
+    $domDocument = new DOMDocument();
+    if (empty($response) || !$domDocument->loadXML($response)) {
+        return false;
+    }
+    
+    // Create XPath query object
+    $domXPath = new DOMXPath($domDocument);
+    $domXPath->registerNamespace( "nssrw", "http://www.loc.gov/zing/srw/" );
+    $domXPath->registerNamespace( "nsmarc", "http://www.loc.gov/MARC21/slim" );
+    
+    // Find the result records
+    $records = $domXPath->query( "//nsmarc:record" );
+    $numRecords = $records->length;
+    
+    // Cycle through results and fetch titles for them
+    for( $i = 0; $i < $numRecords; $i++ ) {
+        $record = $records->item($i);
+        
+        // Fine the title node
+        $titleNode = $domXPath->query( "nsmarc:datafield[@tag='245']/nsmarc:subfield[@code='a']", $record);
+        if( $titleNode->length <= 0 ) continue;
+        
+        // Add the title to result list
+        $titles[] = trim( $titleNode->item(0)->textContent );
+    }
+    
+    // Clean up entries & return them
+    return array_unique($titles);
+}
+
+/**
+ * PUBLIC INTERFACE FUNCTIONS END
+ * Note: do not call any functions below here
+ */
+
+/**
+ * INTERNAL FUNCTIONS START
+ */
+
+/**
+ * Run a webservice request (using caching)
+ * @param string $term Arbitrary string, used for caching
+ * @param string $url web-service address
+ * @return string Web-service response 
+ */
+function _journals_lookup_webservice_request($term, $url) {
+    $response = "";
+
+    // Check for a cached result
+    $cache_result = cache_get($term, 'cache_journals_zdb');
+    if ($cache_result != false) {
+        $response = $cache_result->data;
+    } else {
+        $response = file_get_contents($url);
+
+        // Cache the result
+        cache_set($term, $response, 'cache_journals_zdb', time() + 86400 * variable_get('journals_lookup_cache_time', 1) );
+    }
+
+    return $response;
+}
+
+/**
+ * INTERNAL FUNCTIONS END
+ */
+
+/**
+ * DRUPAL HOOK FUNCTIONS START
+ */
+
+/**
+ * Implements caching functionality
+ * @return array 
+ */
+function journals_lookup_flush_caches() {
+    return array('cache_journals_zdb');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function journals_lookup_menu() {
+    $items = array();
+
+    $items['admin/config/search/journals_lookup'] = array(
+        'title' => 'Journals Lookup',
+        'description' => 'Configuration for the Journals Lookup module',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('journals_lookup_config_form'),
+        'access arguments' => array('access administration pages'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    return $items;
+}
+
+/**
+ * Form function, called by drupal_get_form() 
+ * in journals_lookup_menu().
+ */
+function journals_lookup_config_form($form, &$form_state) {
+    $form['journals_lookup_cache_time'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Time to cache (days)'),
+        '#default_value' => variable_get('journals_lookup_cache_time', 1),
+        '#size' => 3,
+        '#maxlength' => 3,
+        '#description' => t('The maximum age of a cached entry.'),
+        '#required' => TRUE,
+    );
+
+    $form['journals_lookup_maximum_results'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Maximum number of results to return.'),
+        '#default_value' => variable_get('journals_lookup_maximum_results', 5),
+        '#size' => 3,
+        '#maxlength' => 3,
+        '#description' => t('The maximum number of results to return (clean cache for changes to take effect).'),
+        '#required' => TRUE,
+    );
+
+    $form['journals_lookup_sample_query_abbreviations'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Enter a journal abbreviation to sample query ZDB for'),
+        '#default_value' => "",
+        '#size' => 15,
+        '#description' => t('This field allows to test the journals module by issuing a sample query. The result will be displayed as error message upon saving the configuration (names are separated by semi-colons).'),
+        '#required' => FALSE,
+    );
+
+    return system_settings_form($form);
+}
+
+/**
+ * Implements validation provided by the Form API.
+ * 
+ * @param $form
+ *   A structured array containing the elements and properties of the form.
+ * @param $form_state
+ *   An array that stores information about the form's current state 
+ *   during processing.
+ */
+function journals_lookup_config_form_validate($form, &$form_state) {
+    $max_num = $form_state['values']['journals_lookup_cache_time'];
+    if (!is_numeric($max_num)) {
+        form_set_error('journals_lookup_cache_time', t('You must enter an integer for the maximum age.'));
+    } else if ($max_num <= 0) {
+        form_set_error('journals_lookup_cache_time', t('Maximum age must be positive.'));
+    }
+
+    $max_results = $form_state['values']['journals_lookup_maximum_results'];
+    if (!is_numeric($max_results)) {
+        form_set_error('journals_lookup_maximum_results', t('You must enter an integer for the maximum number.'));
+    } else if ($max_results <= 0) {
+        form_set_error('journals_lookup_maximum_results', t('Maximum number must be positive.'));
+    }
+
+    $sample_acronym = trim( $form_state['values']['journals_lookup_sample_query_abbreviations'] );
+    if( !empty($sample_acronym) ) {
+        $journal_titles = journals_lookup_acronym($sample_acronym);
+        if( $journal_titles === false ) {
+            form_set_error('journals_lookup_sample_query_abbreviations', t('Unable to call the webservice.'));
+        }
+        else {
+            form_set_error('journals_lookup_sample_query_abbreviations', t('Result: ' . join( '; ', $journal_titles ) ));
+        }
+    }
+}
+
+/**
+ * DRUPAL HOOK FUNCTIONS END
+ */
