@@ -17,12 +17,30 @@ function selectmenu_menu() {
     'description' => 'Configure jQuery UI selectmenu settings.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('selectmenu_admin_form'),
-    'access arguments' => array('administer jQuery UI selectmenu'),
+    'access arguments' => array('administer jquery ui selectmenu'),
     'file' => 'selectmenu.admin.inc',
   );
   return $items;
 }
 
+/**
+ * Implements hook_permission().
+ */
+function hook_permission() {
+  return array(
+    'administer jquery ui selectmenu' => array(
+      'title' => t('Administer jQuery UI Selectmenu'), 
+      'description' => t('Perform administration tasks for jQuery UI Selectmenu.'),
+    ),
+  );
+}
+
+/**
+ * Get a list of CSS ids from a textarea and prepare them for use.
+ *
+ * @return $css_ids
+ *  An iterative array of string CSS ids.
+ */
 function _selectmenu_prepare_css_form_ids() {
   // Prepare CSS form ids.
   if (!isset($css_ids)) {
@@ -33,9 +51,14 @@ function _selectmenu_prepare_css_form_ids() {
   return $css_ids;
 }
 
+/**
+ * Put necessary JS related settings into Drupal.settings. Force load required
+ *  jQuery plugins.
+ */
 function _selectmenu_add_libs() {
   $form_id_exceptions = _selectmenu_prepare_css_form_ids();
 
+  // Building a Drupal.settings entry.
   $settings = array(
     'form_id_exceptions' => $form_id_exceptions,
     'ignore_system_settings_forms' => variable_get('selectmenu_ignore_system_settings_forms', TRUE),
@@ -44,9 +67,13 @@ function _selectmenu_add_libs() {
     'disable_for_admin_theme' => variable_get('selectmenu_disable_for_admin_theme', FALSE),
   );
 
+  // Check to see if we are using the admin theme and if selectmenu should be disabled according to preference.
   global $theme;
   if ($theme == variable_get('admin_theme') && variable_get('selectmenu_disable_for_admin_theme', FALSE)) {
-    return;
+    // Making sure the admin_theme isn't the sidewide default theme either.
+    if ($theme != variable_get('theme_default', '')) {
+      return;
+    }
   }
 
   $libs_loc = _selectmenu_find_libs();
@@ -64,6 +91,16 @@ function _selectmenu_add_libs() {
   }
 }
 
+/**
+ * Return the path of jQuery UI Selectmeu plugin.
+ *
+ * @return string
+ *  Path for the jquery.ui.selectmenu jQuery plugin, relative to Drupal root.
+ *
+ * @todo Support the Libraries module.
+ * @todo Check for multiple possible locations for the presence of the Selectmenu plugin.
+ * @todo Check for versions of the Selectmenu plugin.
+ */
 function _selectmenu_find_libs() {
   return drupal_get_path('module', 'selectmenu') . '/js/jquery.ui.selectmenu';
 }

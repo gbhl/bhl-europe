@@ -7,27 +7,26 @@
 
 Drupal.behaviors.jcarousel = {};
 Drupal.behaviors.jcarousel.attach = function(context, settings) {
-  var settings = settings || Drupal.settings;
-  for (var key in settings.jcarousel.carousels) {
-    var options = settings.jcarousel.carousels[key];
+  settings = settings || Drupal.settings;
+  $.each(settings.jcarousel.carousels, function(key, options) {
     var $carousel = $(options.selector + ':not(.jcarousel-processed)', context);
 
     // If this carousel has already been processed or doesn't exist, move on.
     if (!$carousel.length) {
-      continue;
+      return;
     }
 
     // Callbacks need to be converted from a string to an actual function.
-    for (var optionKey in options) {
+    $.each(options, function(optionKey) {
       if (optionKey.match(/Callback$/) && typeof options[optionKey] == 'string') {
         var callbackFunction = window;
         var callbackParents = options[optionKey].split('.');
-        for (var objectParent in callbackParents) {
+        $.each(callbackParents, function(objectParent) {
           callbackFunction = callbackFunction[callbackParents[objectParent]];
-        }
+        });
         options[optionKey] = callbackFunction;
       }
-    }
+    });
 
     // Add standard options required for AJAX functionality.
     if (options.ajax && !options.itemLoadCallback) {
@@ -38,18 +37,27 @@ Drupal.behaviors.jcarousel.attach = function(context, settings) {
     if (options.auto && options.autoPause && !options.initCallback) {
       options.initCallback = function(carousel, state) {
         Drupal.jcarousel.autoPauseCallback(carousel, state);
-      }
+      };
     }
 
-    // Change next and previous buttons to links for accessibility.
+    // Add navigation to the carousel if enabled.
+    if (options.navigation && !options.setupCallback && !options.itemVisibleInCallback) {
+      options.setupCallback = function(carousel) {
+        Drupal.jcarousel.addNavigation(carousel, options.navigation);
+      };
+      options.itemLastInCallback = {
+        onAfterAnimation: Drupal.jcarousel.updateNavigationActive
+      };
+    }
+
     if (!options.hasOwnProperty('buttonNextHTML') && !options.hasOwnProperty('buttonPrevHTML')) {
-      options.buttonNextHTML = '<a href="javascript:void(0)"></a>';
-      options.buttonPrevHTML = '<a href="javascript:void(0)"></a>';
+      options.buttonNextHTML = Drupal.theme('jCarouselButton', 'next');
+      options.buttonPrevHTML = Drupal.theme('jCarouselButton', 'previous');
     }
 
     // Initialize the jcarousel.
     $carousel.addClass('jcarousel-processed').jcarousel(options);
-  }
+  });
 };
 
 Drupal.jcarousel = {};
@@ -86,9 +94,11 @@ Drupal.jcarousel.ajaxLoadCallback = function(jcarousel, state) {
     type: 'GET',
     data: viewData,
     success: function(response) {
-      Drupal.jcarousel.ajaxResponseCallback(jcarousel, target, response)
+      Drupal.jcarousel.ajaxResponseCallback(jcarousel, target, response);
     },
-    error: function(xhr) { Drupal.jcarousel.ajaxErrorCallback(xhr, ajaxPath); },
+    error: function(xhr) {
+      Drupal.jcarousel.ajaxErrorCallback(xhr, ajaxPath);
+    },
     dataType: 'json'
   });
 
@@ -110,6 +120,88 @@ Drupal.jcarousel.autoPauseCallback = function(carousel, state) {
 };
 
 /**
+ * Setup callback for jCarousel. Adds the navigation to the carousel if enabled.
+ */
+Drupal.jcarousel.addNavigation = function(carousel, position) {
+  // This only works for a positive starting point.  Also, .first is 1-based
+  // while .last is a count, so we need to reset the .first number to be
+  // 0-based to make the math work.
+  carousel.pageSize = carousel.last - (carousel.first - 1);
+
+  // jCarousel's Views integration sets "size" in the carousel options. Use that
+  // if available, otherwise count the number of items in the carousel.
+  var itemCount = carousel.options.size ? carousel.options.size : $(carousel.list).children('li').length;
+  carousel.pageCount =  Math.ceil(itemCount / carousel.pageSize);
+  carousel.pageNumber = 1;
+
+  // Don't add a pager if there's only one page of results.
+  if (carousel.pageCount <= 1) {
+    return;
+  }
+
+  // Add a class to the wrapper so it can adjust CSS.
+  $(carousel.list).parents('.jcarousel-container:first').addClass('jcarousel-navigation-' + position);
+
+  var navigation = $('<ul class="jcarousel-navigation"></ul>');
+
+  for (var i = 1; i <= carousel.pageCount; i++) {
+    var pagerItem = $(Drupal.theme('jCarouselPageLink', i));
+    var listItem = $('<li></li>').attr('jcarousel-page', i).append(pagerItem);
+    navigation.append(listItem);
+
+    // Make the first page active by default.
+    if (i === 1) {
+      listItem.addClass('active');
+    }
+
+    // Scroll to the correct page when a pager is clicked.
+    pagerItem.bind('click', function() {
+      // We scroll to the new page based on item offsets. This works with
+      // circular carousels that do not divide items evenly, making it so that
+      // going back or forward in pages will not skip or repeat any items.
+      var newPageNumber = $(this).parent().attr('jcarousel-page');
+      var itemOffset = (newPageNumber - carousel.pageNumber) * carousel.pageSize;
+
+      if (itemOffset) {
+        carousel.scroll(carousel.first + itemOffset);
+      }
+
+      return false;
+    });
+  }
+
+  $(carousel.list).parents('.jcarousel-clip:first')[position](navigation);
+}
+
+/**
+ * itemVisibleInCallback for jCarousel. Update the navigation after page change.
+ */
+Drupal.jcarousel.updateNavigationActive = function(carousel, item, idx, state) {
+  // The navigation doesn't even exist yet when this is called on init.
+  var $listItems = $(carousel.list).parents('.jcarousel-container:first').find('.jcarousel-navigation li');
+  if ($listItems.length == 0) {
+    return;
+  }
+
+  // jCarousel does some very odd things with circular wraps. Items before the
+  // first item are given negative numbers and items after the last are given
+  // numbers beyond the total number of items. This complicated logic calculates
+  // which page number is active based off this numbering scheme.
+  var pageNumber = Math.ceil(idx / carousel.pageSize);
+  if (pageNumber <= 0 || pageNumber > carousel.pageCount) {
+    pageNumber = pageNumber % carousel.pageCount;
+    pageNumber = pageNumber == 0 ? carousel.pageCount : pageNumber;
+    pageNumber = pageNumber < 0 ? pageNumber + carousel.pageCount : pageNumber;
+  }
+  carousel.pageNumber = pageNumber;
+  var currentPage = $listItems.get(carousel.pageNumber - 1);
+
+  // Set the current page to be active.
+  $listItems.not(currentPage).removeClass('active');
+  $(currentPage).addClass('active');
+}
+
+/**
  * AJAX callback for all jCarousel-style views.
  */
 Drupal.jcarousel.ajaxResponseCallback = function(jcarousel, target, response) {
@@ -121,7 +213,7 @@ Drupal.jcarousel.ajaxResponseCallback = function(jcarousel, target, response) {
   var jcarousel = $view.find('ul.jcarousel').data('jcarousel');
 
   // Add items to the jCarousel.
-  $('ul.jcarousel li', response.display).each(function(i) {
+  $('ul.jcarousel > li', response.display).each(function(i) {
     var itemNumber = this.className.replace(/.*?jcarousel-item-(\d+).*?/, '$1');
     jcarousel.add(itemNumber, this.innerHTML);
   });
@@ -161,6 +253,15 @@ Drupal.jcarousel.ajaxErrorCallback = function (xhr, path) {
   }
 
   alert(Drupal.t("An error occurred at @path.\n\nError Description: @error", {'@path': path, '@error': error_text}));
+};
+
+Drupal.theme.prototype.jCarouselButton = function(type) {
+  // Use links for buttons for accessibility.
+  return '<a href="javascript:void(0)"></a>';
+};
+
+Drupal.theme.prototype.jCarouselPageLink = function(pageNumber) {
+  return '<a href="javascript:void(0)"><span>' + (pageNumber) + '</span></a>';
 };
 
 })(jQuery);

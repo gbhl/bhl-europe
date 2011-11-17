@@ -37,10 +37,11 @@
 
 <div class="search-summary search-summary-<?php print $classes; ?>">
 	<div class="number_of_results">
-		<label><?php print $number_of_results['label']; ?>:</label><?php print $number_of_results['value']; ?>
+		<h3 class="heading"><?php print $number_of_results['label']; ?>: <span class="value"><?php print $number_of_results['value']; ?></span></h3>
+		<p id="save-query-link"><a href="#" title="Save query"><?php print t('Save query'); ?></a></p>
 	</div>
 	<div class="matches_for">
-		<label class="collapsing-grip expanded"><?php print $matches_for['label']; ?>:</label>
+		<h3 class="heading collapsing-grip expanded"><?php print $matches_for['label']; ?>:</h3>
 		<ul id="searched-querry" class="collapsing-content">
 		<?php foreach ($matches_for['search_conditions'] as $condition) : ?>
 			<li>

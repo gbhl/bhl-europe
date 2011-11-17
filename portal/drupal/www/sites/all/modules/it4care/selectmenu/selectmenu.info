@@ -3,9 +3,9 @@ description = "Drupal integration for an improved version of the jQuery UI selec
 core = 7.x
 package = User interface
 configure = admin/config/user-interface/selectmenu
-; Information added by drupal.org packaging script on 2011-08-03
-version = "7.x-1.06"
+; Information added by drupal.org packaging script on 2011-10-27
+version = "7.x-1.7"
 core = "7.x"
 project = "selectmenu"
-datestamp = "1312389719"
+datestamp = "1319755235"
 

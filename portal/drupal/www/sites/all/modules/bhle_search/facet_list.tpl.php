@@ -15,46 +15,46 @@
 <div class="facet-list collapsing-multiple">
 
   <div class="content-types">
-		<label class="collapsing-grip"><?php print t('Material type:'); ?></label>
+		<h3 class="collapsing-grip"><a href="#" title=""><?php print t('Material type:'); ?></a> <span class="value"></span></h3>
                 <ul class="collapsing-content">
-                   <li><?php print t('Unknown: '); ?></li>
-                   <li><?php print t('Journal: '); ?></li>
-                   <li><?php print t('Volume: '); ?><</li>
-                   <li><?php print t('Article: '); ?></li>
-                   <li><?php print t('Monograph: '); ?></li>
+                   <li><a href="#" title=""><?php print t('Unknown: '); ?></a> <span class="value"></span></li>
+                   <li><a href="#" title=""><?php print t('Journal: '); ?></a> <span class="value"></span></li>
+                   <li><a href="#" title=""><?php print t('Volume: '); ?></a> <span class="value"></span></li>
+                   <li><a href="#" title=""><?php print t('Article: '); ?></a> <span class="value"></span></li>
+                   <li><a href="#" title=""><?php print t('Monograph: '); ?></a> <span class="value"></span></li>
                </ul>
   </div>
 
   <div class="author-name">
-		<label class="collapsing-grip"><?php print t('Author name:'); ?></label>
+		<h3 class="collapsing-grip"><a href="#" title=""><?php print t('Author name:'); ?></a> <span class="value"></span></h3>
                 <ul class="collapsing-content">
                    <li><?php print t('Unknown: '); ?></li>
                </ul>
   </div>
 
   <div class="year">
-		<label class="collapsing-grip"><?php print t('Year:'); ?></label>
+		<h3 class="collapsing-grip"><a href="#" title=""><?php print t('Year:'); ?></a> <span class="value"></span></h3>
                 <ul class="collapsing-content">
                    <li></li>
                </ul>
   </div>
 
   <div class="languages">
-		<label class="collapsing-grip"><?php print t('Languages:'); ?></label>
+		<h3 class="collapsing-grip"><a href="#" title=""><?php print t('Languages:'); ?></a> <span class="value"></span></h3>
                 <ul class="collapsing-content">
                    <li></li>
                </ul>
   </div>
 
     <div class="content-providers">
-		<label class="collapsing-grip"><?php print t('Content providers:'); ?></label>
+		<h3 class="collapsing-grip"><a href="#" title=""><?php print t('Content providers:'); ?></a> <span class="value"></span></h3>
                 <ul class="collapsing-content">
                    <li></li>
                </ul>
   </div>
 
     <div class="scientific-names">
-		<label class="collapsing-grip"><?php print t('Scientific names:'); ?></label>
+		<h3 class="collapsing-grip"><a href="#" title=""><?php print t('Scientific names:'); ?></a> <span class="value"></span></h3>
                 <ul class="collapsing-content">
                    <li></li>
                </ul>

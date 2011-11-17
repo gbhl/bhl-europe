@@ -28,10 +28,12 @@
 
 .jcarousel-skin-default .jcarousel-clip-horizontal {
   width: 440px;
+  overflow: hidden;
 }
 
 .jcarousel-skin-default .jcarousel-clip-vertical {
   height: 440px;
+  overflow: hidden;
 }
 
 .jcarousel-skin-default .jcarousel-item {
@@ -148,5 +150,22 @@
 .jcarousel-skin-default .jcarousel-next-disabled-vertical:active {
   cursor: default;
   background-position: -96px -96px;
+}
+
+.jcarousel-skin-default .jcarousel-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-skin-default .jcarousel-navigation li {
+  display: inline;
+  margin: 0 2px 0 0;
+  padding: 0;
+  background: none;
+}
+
+.jcarousel-skin-default .jcarousel-navigation li.active a {
+  font-weight: bold;
+  text-decoration: none;
 }
 
