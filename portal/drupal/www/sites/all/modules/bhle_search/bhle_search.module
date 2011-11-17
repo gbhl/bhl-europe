@@ -385,7 +385,7 @@ function bhle_search_simple_validate($form, &$form_state) {
 
     // Save the condition parameters
     $_SESSION['bhle_search']['simple_condition'] = array(
-        'phrase' => $form_state['values']['search_block_form'],
+        'phrase' => trim($form_state['values']['search_block_form']),
         'fields' => array(
             'title' => $form_state['values']['title'],
             'author' => $form_state['values']['author'],
@@ -412,7 +412,7 @@ function bhle_search_advanced_validate($form, &$form_state) {
         if( !isset($values['term_' . $i]) ) continue;
 
         // Fetch the current term
-        $term = $values['term_' . $i];
+        $term = trim($values['term_' . $i]);
         // Check term for validity
         if( !empty($term) && $term != BHLE_DEFAULT_TERM ) {
             $conditions[] = array( 'term' => $term, 'field' => $values['field_' . $i], 'operator' => $values['operator_' . $i], 'exact_phrase' => $values['exact_phrase_' . $i] );
