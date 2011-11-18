@@ -29,10 +29,12 @@
 
 //print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
 //print ('<pre>' . var_dump($number_of_results).'</pre>');
-//print ('<pre>' .  var_dump($matches_for) .'</pre>');
+// print ('<h6>$matches_for</h6><pre>' .  var_dump($matches_for) .'</pre>');
+// print ('<h6>$search_summary</h6><pre>' .  var_dump($DEBUG) .'</pre>');
 
 ?>
 
+<div id="search_type"><?php print(isset($matches_for) ? "Advanced" : "Simple" );?> search</div>
 <p id="search-step-back-link"><a href="/search/bhle" title="step back"><?php print t('STEP BACK'); ?></a></p>
 
 <div class="search-summary search-summary-<?php print $classes; ?>">
@@ -40,6 +42,7 @@
 		<h3 class="heading"><?php print $number_of_results['label']; ?>: <span class="value"><?php print $number_of_results['value']; ?></span></h3>
 		<p id="save-query-link"><a href="#" title="Save query"><?php print t('Save query'); ?></a></p>
 	</div>
+<?php if(isset($matches_for)) :?>
 	<div class="matches_for">
 		<h3 class="heading collapsing-grip expanded"><?php print $matches_for['label']; ?>:</h3>
 		<ul id="searched-querry" class="collapsing-content">
@@ -54,4 +57,5 @@
 		<?php endforeach; ?>
 		</ul>
 	</div>
+<?php endif; ?>
 </div>
