@@ -13,7 +13,7 @@
 *  - $matches_for (array)
 *  		e.g.:
 *  			'label' => string 'Matches for'
-		  	'search_conditions' =>
+		  	'info' =>
 			    array
 			      0 =>
 			        array
@@ -29,8 +29,8 @@
 
 //print ('<pre>' .var_dump($_SESSION['bhle_search']) .'</pre>');
 //print ('<pre>' . var_dump($number_of_results).'</pre>');
-// print ('<h6>$matches_for</h6><pre>' .  var_dump($matches_for) .'</pre>');
-// print ('<h6>$search_summary</h6><pre>' .  var_dump($DEBUG) .'</pre>');
+//print ('<h6>$matches_for</h6><pre>' .  var_dump($matches_for) .'</pre>');
+//print ('<h6>$search_summary</h6><pre>' .  var_dump($DEBUG) .'</pre>');
 
 ?>
 
@@ -46,13 +46,16 @@
 	<div class="matches_for">
 		<h3 class="heading collapsing-grip expanded"><?php print $matches_for['label']; ?>:</h3>
 		<ul id="searched-querry" class="collapsing-content">
-		<?php foreach ($matches_for['search_conditions'] as $condition) : ?>
+		<?php foreach ($matches_for['info'] as $info) : ?>
 			<li>
-				<?php if($condition['exact_phrase'] == 1) :?><span class="exact">exact:</span><?php endif; ?>
-				<span class="terms"><?php print $condition['term']; ?></span>
-				<span class="count">(<?php print $condition['count']; ?>)</span>
-				<span class="field"><?php print $condition['field_label']; ?></span>
-				<span class="operator"><?php print $condition['operator']; ?></span>
+				<?php if($info['exact_phrase'] == 1) :?><span class="exact">exact:</span><?php endif; ?>
+				<span class="terms"><?php print $info['term']; ?></span>
+				<?php if(isset($info['term_expanded'])) : ?>
+					<span class="terms_expanded"> expanded to: <?php print $info['term_expanded']; ?></span>
+				<?php endif; ?>
+				<span class="count">(<?php print $info['count']; ?>)</span>
+				<span class="field"><?php print $info['field_label']; ?></span>
+				<span class="operator"><?php print $info['operator']; ?></span>
 			</li>
 		<?php endforeach; ?>
 		</ul>

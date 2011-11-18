@@ -912,7 +912,7 @@ function bhle_search_block_view($delta = '') {
 
 	switch ($delta) {
 	case 'search_summary':
-		$conditions_with_count = bhle_search_search_summary_add_hit_count();
+		bhle_search_search_summary_add_hit_count();
 		$search_summary = bhle_search_search_summary_add();
 
 		$block['subject'] = t('Search summary');
@@ -927,7 +927,7 @@ function bhle_search_block_view($delta = '') {
 		if(count($search_summary) > 0) {
 			$block['content']['#matches_for'] = array(
 					'label' => t('Matches for'),
-					'search_conditions' => $conditions_with_count
+					'search_summary' => $search_summary
 			);
 		}
 		break;
@@ -937,14 +937,28 @@ function bhle_search_block_view($delta = '') {
 }
 
 
-function bhle_search_search_summary_add(&$condition = null, $query = null){
-	static $_search_summary;
+function bhle_search_search_summary_add($condition = null, $query = null){
+	global $_search_summary;
 
 	if(!isset($_search_summary)){
 		$_search_summary = array();
 	}
 	if($condition != null &&  $query != null){
 		$_search_summary[] = array('condition'=>$condition, 'query'=>$query);
+	}
+
+	return $_search_summary;
+}
+
+function bhle_search_search_summary_update($index, $condition = null, $query = null){
+	global $_search_summary;
+
+	if($condition != null){
+		$_search_summary[$index]['condition'] = $condition;
+	}
+
+	if($query != null){
+		$_search_summary[$index]['query'] = $query;
 	}
 
 	return $_search_summary;
@@ -960,7 +974,6 @@ function bhle_search_search_summary_add(&$condition = null, $query = null){
 function bhle_search_search_summary_add_hit_count() {
 
 	$search_summary = bhle_search_search_summary_add();
-	$conditions = array();
 
 	if(count($search_summary) > 0) {
 		$solr = apachesolr_get_solr( variable_get('bhle_search_solr_core') );
@@ -986,10 +999,9 @@ function bhle_search_search_summary_add_hit_count() {
 				$facet_result = $facet_queries->$params['facet.query'][$i];
 				$condition['count'] = $facet_result;
 			}
-			$conditions[] = $condition;
+			bhle_search_search_summary_update($i, $condition);
 		}
 	}
-	return $conditions;
 }
 
 /**
@@ -1003,13 +1015,17 @@ function bhle_search_search_summary_add_hit_count() {
  */
 function template_preprocess_search_summary(&$variables) {
 
-	if(isset($variables['matches_for']['search_conditions'])){
-		// copy conditions
-		$conditions = $variables['matches_for']['search_conditions'];
-		// empty original
-		$variables['matches_for']['search_conditions'] = array();
+	if(isset($variables['matches_for']['search_summary'])){
 
-		foreach($conditions as $condition){
+		// copy conditions
+		$search_summary = $variables['matches_for']['search_summary'];
+		// empty original
+		$variables['matches_for']['search_summary'] = array();
+
+		foreach($search_summary as $i=>$summary_element){
+
+			$condition = $summary_element['condition'];
+
 			$condition['term'] = check_plain($condition['term']);
 			if($condition['exact_phrase']){
 				$condition['term'] = '"' . $condition['term'] . '"';
@@ -1017,10 +1033,15 @@ function template_preprocess_search_summary(&$variables) {
 
 			$condition['field_label'] = str_replace("mods_", "", $condition['field']); //TODO get field label from form or variables
 
-			$variables['matches_for']['search_conditions'][] = $condition;
+			$variables['matches_for']['info'][$i] = $condition;
+
+			$entered_term = $condition['term'];
+			$expanded_term = $summary_element['query']['query_term'];
+			if($expanded_term !== $entered_term){
+				$variables['matches_for']['info'][$i]['term_expanded'] = check_plain($expanded_term);
+			}
 		}
 	}
-	$variables['DEBUG']= bhle_search_search_summary_add();
 }
 
 
