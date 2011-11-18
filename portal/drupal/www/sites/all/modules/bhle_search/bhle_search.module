@@ -518,7 +518,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 				}
 
 				// Configure dismax parser
-				$params['defType'] = 'dismax';
+				$params['defType'] = 'edismax';
 				$params['qf'] = implode( ' ', $fields );
 		}
 		// ...we have advanced search
