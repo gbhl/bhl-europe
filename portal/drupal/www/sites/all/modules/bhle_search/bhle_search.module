@@ -649,7 +649,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 		// ----------------------------------------------
 
 	    $_SESSION['bhle_search']['numFound'] = $response->numFound;
-	    pager_default_initialize($response->numFound, 10);
+	    pager_default_initialize($response->numFound, BHLE_SEARCH_DEFAULT_LIMIT);
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
