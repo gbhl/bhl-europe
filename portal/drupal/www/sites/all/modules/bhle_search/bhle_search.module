@@ -526,6 +526,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         // Build Solr query out of the conditions
         // $_SESSION['bhle_search']['query'] will hold the atomized query parameter details
     	$_SESSION['bhle_search']['query'] = array();
+
         foreach( $conditions as $condition ) {
             // Get the query field
             $query_field = $condition['field'];
@@ -625,6 +626,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             	'query_field' => $query_field,
             	'query_term' => $query_term
            	);
+            bhle_search_search_summary_add($condition, $_SESSION['bhle_search']['query']);
         }
     }
 
@@ -933,6 +935,19 @@ function bhle_search_block_view($delta = '') {
 	return $block;
 }
 
+function bhle_search_search_summary_add(&$condition = null, $query = null){
+	static $_search_summary;
+
+	if(!isset($_search_summary)){
+		$_search_summary = array();
+	}
+	if($condition != null &&  $query != null){
+		$_search_summary[] = array('condition'=>$condition, 'query'=>$query);
+	}
+
+	return $_search_summary;
+}
+
 /**
  * Query solr for hit count per query condition by making use of
  * a facet query, the count is added to the $conditions.
@@ -994,6 +1009,7 @@ function template_preprocess_search_summary(&$variables) {
 
 		$variables['matches_for']['search_conditions'][] = $condition;
 	}
+	$variables['DEBUG']= bhle_search_search_summary_add();
 }
 
 
