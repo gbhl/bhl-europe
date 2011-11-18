@@ -27,6 +27,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 // Pre-defined variables (note: defaults are based on Solr's default schema)
+define( 'BHLE_SEARCH_DEFAULT_LIMIT', 12 );
 define( 'BHLE_SEARCH_TITLE_FIELD', 'name' );
 define( 'BHLE_SEARCH_AUTHOR_FIELD', 'author' );
 define( 'BHLE_SEARCH_YEAR_FIELD', 'last_modified' );
@@ -58,7 +59,7 @@ if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditi
     $_SESSION['bhle_search'] = array(
         'conditions' => array(
             array( 'term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0 )   // Advanced search conditions
-        ),     
+        ),
         'expand_search' => 0,               // Enable search term expansion
         'exact_phrase' => 0,                // Exact phrase matching
         'simple_condition' => array(
@@ -627,6 +628,10 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         }
     }
 
+    //set parameters to get the requested page
+    $params['rows']= BHLE_SEARCH_DEFAULT_LIMIT;
+    $params['start'] = pager_find_page() * BHLE_SEARCH_DEFAULT_LIMIT;
+
     try {
         // Query solr
         $responseObj = $solr->search($query, $params);
@@ -644,6 +649,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 		// ----------------------------------------------
 
 	    $_SESSION['bhle_search']['numFound'] = $response->numFound;
+	    pager_default_initialize($response->numFound, 10);
 
         if ($response->numFound > 0) {
             $docs = $response->docs;
