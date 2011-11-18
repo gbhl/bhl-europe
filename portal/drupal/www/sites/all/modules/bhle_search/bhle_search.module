@@ -31,9 +31,8 @@ define( 'BHLE_SEARCH_TITLE_FIELD', 'name' );
 define( 'BHLE_SEARCH_AUTHOR_FIELD', 'author' );
 define( 'BHLE_SEARCH_YEAR_FIELD', 'last_modified' );
 define( 'BHLE_SEARCH_SCIENTIFIC_NAME_FIELD', 'keywords' );
+define( 'BHLE_SEARCH_COMMON_NAME_FIELD', 'keywords_copy' );
 define( 'BHLE_SEARCH_DEFAULT_TERM', 'type what do you want to search' );
-// Default condition template
-define( 'BHLE_SEARCH_DEFAULT_CONDITION', array( 'term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0 ) );
 /**
  * Suggested default metadata fields for Advanced search mapped to mods solr fields:
 		a.	All metadata fields – including the abstract [=all]
@@ -58,7 +57,7 @@ define( 'BHLE_SEARCH_FIELDS', 'PID;mods_language;mods_place;mods_record_content_
 if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditions'])) {
     $_SESSION['bhle_search'] = array(
         'conditions' => array(
-            BHLE_SEARCH_DEFAULT_CONDITION   // Advanced search conditions
+            array( 'term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0 )   // Advanced search conditions
         ),     
         'expand_search' => 0,               // Enable search term expansion
         'exact_phrase' => 0,                // Exact phrase matching
@@ -156,6 +155,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
     $fields[variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD)] = variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD);
     $fields[variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD)] = variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD);
     $fields[variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD)] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
+    $fields[variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD)] = variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD);
 
     // Check if a valid term was passed
     if( empty($term) ) $term = BHLE_SEARCH_DEFAULT_TERM;
@@ -248,7 +248,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
 
     // Check if we have to add a new condition
     if( isset($form_state['values']) && $form_state['values']['op'] == t('Add field') ) {
-        $_SESSION['bhle_search']['conditions'][] = BHLE_SEARCH_DEFAULT_CONDITION;
+        $_SESSION['bhle_search']['conditions'][] = array( 'term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0 );
     }
     // else check if we want to remove one
     else if( isset($form_state['values']) && strpos( $form_state['values']['op'], 'delcondition_' ) === 0 ) {
@@ -594,6 +594,27 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                         drupal_set_message( 'Journals-Module not active!', 'error' );
                     }
                 }
+                // Check if we are looking for a common name
+                else if( $condition['field'] == variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD) ) {
+                    if( module_exists('names_lookup') ) {
+                        $scientifics_list = names_lookup_common_name( $condition['term'] );
+
+                        // Check if we found any synonyms, if yes add to term
+                        if( is_array($scientifics_list) && count($scientifics_list) > 0 ) {
+                            $scientific_names = array();
+                            foreach( $scientifics_list as $scientific_name ) {
+                                $scientific_names[] = $scientific_name['name'];
+                            }
+
+                            // Add original term since we want to include it as well
+                            $scientific_names[] = $condition['term'];
+                            $query_term = bhle_search_solr_build_query($scientific_names);
+                        }
+                    }
+                    else {
+                        drupal_set_message( 'Names-Module not active!', 'error' );
+                    }
+                }
             }
 
             // Append to query
@@ -605,7 +626,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
            	);
         }
     }
-    
+
     try {
         // Query solr
         $responseObj = $solr->search($query, $params);
@@ -773,6 +794,15 @@ function bhle_search_config_simple_form($form, &$form_state) {
         '#default_value' => variable_get('bhle_search_scienific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD),
         '#size' => 15,
         '#description' => t('Set the Apache Solr index field which contains the scientific name information.'),
+        '#required' => TRUE,
+    );
+
+    $form['bhle_search_common_name_field'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Apache Solr index field for COMMON NAME expansion triggering.'),
+        '#default_value' => variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD),
+        '#size' => 15,
+        '#description' => t('Set the Apache Solr index field which will be used to trigger the common name expansion (contains scientific names).'),
         '#required' => TRUE,
     );
 
