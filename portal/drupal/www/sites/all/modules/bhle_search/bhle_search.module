@@ -524,9 +524,6 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 		// ...we have advanced search
 		else {
 				// Build Solr query out of the conditions
-				// $_SESSION['bhle_search']['query'] will hold the atomized query parameter details
-			$_SESSION['bhle_search']['query'] = array();
-
 				foreach( $conditions as $condition ) {
 						// Get the query field
 						$query_field = $condition['field'];
@@ -626,7 +623,6 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 							'query_field' => $query_field,
 							'query_term' => $query_term
 						 );
-						$_SESSION['bhle_search']['query'][] = $search_summary_query_info;
 						bhle_search_search_summary_add($condition, $search_summary_query_info);
 				}
 		}
