@@ -7,6 +7,7 @@ package at.nhmwien.schema_mapping_tool.converter;
 
 import java.io.File;
 import java.io.InputStream;
+import java.nio.charset.Charset;
 
 /**
  *

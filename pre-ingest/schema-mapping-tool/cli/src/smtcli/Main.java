@@ -117,7 +117,12 @@ public class Main {
                 // Conversion mode, invoke conversion function and wait for result
                 case 'c':
                     try {
-                        Main.convertMode(Integer.parseInt(cmd.getOptionValue("cm")), cmd.getOptionValue("if"), cmd.getOptionValue("of"));
+                        Charset inputEncoding = Charset.defaultCharset(), outputEncoding = Charset.defaultCharset();
+
+                        if( cmd.hasOption( "ife" ) ) inputEncoding = Charset.forName( cmd.getOptionValue("ife") );
+                        if( cmd.hasOption( "ofe" ) ) outputEncoding = Charset.forName( cmd.getOptionValue("ofe") );
+
+                        Main.convertMode(Integer.parseInt(cmd.getOptionValue("cm")), cmd.getOptionValue("if"), cmd.getOptionValue("of"), inputEncoding, outputEncoding );
                         System.exit(1);
                     }
                     catch( Exception e ) {
@@ -276,7 +281,7 @@ public class Main {
      * @param inputFileName Name of input file
      * @param outputFileName Name of output file
      */
-    public static void convertMode( int convertMode, String inputFileName, String outputFileName ) throws Exception {
+    public static void convertMode( int convertMode, String inputFileName, String outputFileName, Charset inputEncoding, Charset outputEncoding ) throws Exception {
         if( inputFileName == null || outputFileName == null ) {
             System.err.println( "Please specify both input and output file name!" );
             return;
@@ -294,13 +299,13 @@ public class Main {
             // MARC21 to MARCXML
             case 1:
                 System.out.print( "Starting conversion of MARC21 to MARCXML..." );
-                MARC21Converter.convertToMARCXML(inputFile, outputFile);
+                MARC21Converter.convertToMARCXML(inputFile, outputFile, inputEncoding, outputEncoding);
                 System.out.println( "done!" );
                 break;
             // MARC21 to MODS
             case 2:
                 System.out.print( "Starting conversion of MARC21 to MODS..." );
-                MARC21Converter.convertToMODS(inputFile, outputFile);
+                MARC21Converter.convertToMODS(inputFile, outputFile, inputEncoding, outputEncoding);
                 System.out.println( "done!" );
                 break;
             // MARCXML to MODS
@@ -312,7 +317,7 @@ public class Main {
             // MARC21 to OLEF
             case 4:
                 System.out.print( "Starting conversion of MARC21 to OLEF..." );
-                MARC21Converter.convertToOLEF(inputFile, outputFile);
+                MARC21Converter.convertToOLEF(inputFile, outputFile, inputEncoding, outputEncoding);
                 System.out.println( "done!" );
                 break;
             // MARCXML to OLEF

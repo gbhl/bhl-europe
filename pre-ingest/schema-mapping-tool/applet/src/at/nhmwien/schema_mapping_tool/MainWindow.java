@@ -28,6 +28,7 @@ import at.nhmwien.schema_mapping_tool.converter.MARC21Converter;
 import at.nhmwien.schema_mapping_tool.converter.MARCXMLConverter;
 import at.nhmwien.schema_mapping_tool.converter.MODSConverter;
 import at.nhmwien.schema_mapping_tool.converter.REFNUMConverter;
+import java.nio.charset.Charset;
 
 // at.nhmwien.schema_mapping_tool.fileProcessors.*;
 
@@ -885,7 +886,8 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
             File outputFile = new File( outputFileName );
 
             try {
-                MARC21Converter.convertToMARCXML(inputFile, outputFile);
+                Charset uft8Charset = Charset.forName("UTF-8");
+                MARC21Converter.convertToMARCXML(inputFile, outputFile, uft8Charset, uft8Charset );
 
                 JOptionPane.showMessageDialog(this, "Successfully converted to MARCXML. Output File: " + outputFile.getPath() );
             }
@@ -945,7 +947,8 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
                 InputStream xslFile = getClass().getResourceAsStream( "converter/resources/MARC21slim2MODS3-4.xsl" );
                 XSLTransformer.transform(tempFile, outputFile, xslFile);*/
                 
-                MARC21Converter.convertToMODS(inputFile, outputFile);
+                Charset uft8Charset = Charset.forName("UTF-8");
+                MARC21Converter.convertToMODS(inputFile, outputFile, uft8Charset, uft8Charset);
 
                 JOptionPane.showMessageDialog(this, "Successfully converted to MODS. Output File: " + outputFile.getPath() );
             }
@@ -969,7 +972,8 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
                 outputFileName = outputFileName.substring(0, outputFileName.lastIndexOf(".")) + "_olef.xml";
                 File outputFile = new File( outputFileName );
 
-                MARC21Converter.convertToOLEF(inputFile, outputFile);
+                Charset uft8Charset = Charset.forName("UTF-8");
+                MARC21Converter.convertToOLEF(inputFile, outputFile, uft8Charset, uft8Charset);
 
                 JOptionPane.showMessageDialog(this, "Successfully converted to OLEF. Output File: " + outputFile.getPath() );
             }
