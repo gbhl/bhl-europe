@@ -40,7 +40,6 @@
 <div class="search-summary search-summary-<?php print $classes; ?>">
 	<div class="number_of_results">
 		<h3 class="heading"><?php print $number_of_results['label']; ?>: <span class="value"><?php print $number_of_results['value']; ?></span></h3>
-		<p id="save-query-link"><a href="#" title="Save query"><?php print t('Save query'); ?></a></p>
 	</div>
 <?php if(isset($matches_for)) :?>
 	<div class="matches_for">

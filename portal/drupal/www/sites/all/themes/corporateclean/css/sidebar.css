@@ -65,6 +65,9 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 .sidebar-panel.search-summary-sidebar .number_of_results {width:250px; overflow:hidden;}
 .sidebar-panel.search-summary-sidebar .number_of_results h3 {float:left; display:inline-block; margin-right:5px; margin-top:3px;}
 
+
+.sidebar-panel.search-summary-sidebar .number_of_results #save-query-link {display:none;}
+/*
 .sidebar-panel.search-summary-sidebar .number_of_results #save-query-link {float:right; font-size:108.4%; text-align:right; display:inline-block;}
 .sidebar-panel.search-summary-sidebar .number_of_results #save-query-link a {
   padding:5px 34px 5px 5px; display:block;
@@ -72,7 +75,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
   background: transparent url('../images/icon-saveqlink.png') no-repeat right 50%;
 }
 .sidebar-panel.search-summary-sidebar .number_of_results #save-query-link a:hover {text-decoration:underline;}
-
+*/
 
 .sidebar-panel .search-summary #searched-querry {color: #006626;}
 .sidebar-panel .search-summary ul#searched-querry {list-style-type:none;}

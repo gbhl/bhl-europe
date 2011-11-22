@@ -24,15 +24,35 @@
 <?php if ($search_results) : ?>
   <h2 class="search-result-title wcag"><?php print t('Search results');?></h2>
 
-  <p id="results-view-type" class="radius gradient-vertical-grey"><?php print t('View search results as:'); ?> <span><?php print t('TABLE'); ?></span></p>
-  <div id="results" class="list">
+  <div id="results">
 
-  	<?php print $pager; ?>
-    <ol class="search-results <?php print $module; ?>-results">
-      <?php print $search_results; ?>
-    </ol>
+    <div id="results-sort-box">
+
+      <div id="results-number-box">
+        <div id="results-number-label">
+          <?php print t('Items per page:'); ?> <span>30</span></a>                            
+        </div>
+        <ul id="results-number">
+          <li class="selected"><a href="?per_list=30">30</a></li>
+          <li><a href="?per_list=60">60</a></li>
+          <li><a href="?per_list="><?php print t('all'); ?></a></li>
+        </ul>
+      </div>
+
+      <div id="results-list-type-box">
+        <p id="results-view-type" class="radius gradient-vertical-grey"><?php print t('View results as:'); ?> <span><?php print t('TABLE'); ?></span></p>
+       </ul>
+      </div>
+
+    </div>
+  
     <?php print $pager; ?>
 
+    <ol id="search-results" class="search-results <?php print $module; ?>-results list">
+      <?php print $search_results; ?>
+    </ol>
+
+    <?php print $pager; ?>
   </div>
 
 <?php else : ?>
