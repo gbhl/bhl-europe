@@ -138,9 +138,6 @@ function bhle_search_form_search_block_form_alter(&$form, $form_state) {
         drupal_add_css(drupal_get_path('module', 'bhle_search') . '/bhle_search.css');
     }
 
-    // Remember simple search as our starting point
-    $_SESSION['bhle_search']['simple_search'] = true;
-
     return $form;
 }
 
@@ -350,9 +347,6 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         drupal_get_path('module', 'bhle_search') . '/js/advanced_search.js',
     );
 
-    // Remember advanced search as our starting point
-    $_SESSION['bhle_search']['simple_search'] = false;
-
     return $form;
 }
 
@@ -403,6 +397,9 @@ function bhle_search_simple_validate($form, &$form_state) {
     // See: http://api.drupal.org/api/drupal/includes--session.inc
     $_SESSION['bhle_search']['expand_search'] = 0;      // Turn of search term expansion in simple search
     $_SESSION['bhle_search']['exact_phrase'] = 0;      // Turn of search term expansion in simple search
+
+    // Remember simple search as our starting point
+    $_SESSION['bhle_search']['simple_search'] = true;
 }
 
 /**
@@ -433,7 +430,9 @@ function bhle_search_advanced_validate($form, &$form_state) {
     $_SESSION['bhle_search']['conditions'] = $conditions;
     $_SESSION['bhle_search']['expand_search'] = $values['expand_search'];
     $_SESSION['bhle_search']['exact_phrase'] = $values['exact_phrase'];
-}
+
+    // Remember advanced search as our starting point
+    $_SESSION['bhle_search']['simple_search'] = false;}
 
 /**
  * Callback (AJAX) when the 'Add Field' button is clicked
