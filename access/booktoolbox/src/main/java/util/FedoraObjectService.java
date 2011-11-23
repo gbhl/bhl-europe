@@ -1,9 +1,7 @@
-package resource;
+package util;
 
-import util.GlobalParameter;
-import util.PagePIDExtractor;
-import util.Resolution;
-import util.SerialPagePIDExtractor;
+import java.util.concurrent.Semaphore;
+
 
 public class FedoraObjectService {
 	protected PagePIDExtractor pidExtracoteor = new SerialPagePIDExtractor();

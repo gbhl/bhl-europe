@@ -1,4 +1,4 @@
-package util;
+package util.search;
 
 public class Box {
 	public Box(String line) {

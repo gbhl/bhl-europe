@@ -1,7 +1,8 @@
-package util;
+package util.search;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Match {
 	private String text;

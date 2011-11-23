@@ -1,0 +1,19 @@
+<form
+	action="/booktoolbox/offline"
+	method="post">
+	<input type="hidden" name="format" value="${format}"/>
+	<input type="hidden" name="resolution" value="${resolution}" />
+	<input type="hidden" name="ranges" value="${ranges}" />
+	<input type="hidden" name="lang" value="${lang}" />
+	<p>
+		${msg_email_reason}
+	</p>
+	<p>
+		${msg_email_content}
+	</p>
+	
+	<p>
+		${label_your_email} <input type="text" name="email" />
+	</p>
+	<input type="submit" value="${button_submit}" />
+</form>

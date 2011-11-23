@@ -14,10 +14,12 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 
-import util.SearchResult;
-import util.StringWithBox;
+import util.FedoraObjectService;
+import util.search.SearchResult;
+import util.search.StringWithBox;
 
-@Path("book/search")
+
+@Path("search")
 public class BookSearchService extends FedoraObjectService {
 	@GET
 	@Path("{pid}")

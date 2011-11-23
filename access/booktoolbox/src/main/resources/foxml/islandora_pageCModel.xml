@@ -10,38 +10,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2009-02-11T19:36:02.739Z"/>
 <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2011-11-05T13:51:40.204Z"/>
 </foxml:objectProperties>
-<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
-<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2009-02-11T19:36:02.739Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
-<foxml:xmlContent>
-<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
-<audit:record ID="AUDREC1">
-<audit:process type="Fedora API-M"/>
-<audit:action>ingest</audit:action>
-<audit:componentID></audit:componentID>
-<audit:responsibility>fedoraAdmin</audit:responsibility>
-<audit:date>2009-11-12T14:57:00.652Z</audit:date>
-<audit:justification>Ingested from local file /Users/aoneill/dev/iiv/iiv/etc/fedora-objects/islandora_book_pageCModel.xml</audit:justification>
-</audit:record>
-<audit:record ID="AUDREC2">
-<audit:process type="Fedora API-M"/>
-<audit:action>ingest</audit:action>
-<audit:componentID></audit:componentID>
-<audit:responsibility>bhletech</audit:responsibility>
-<audit:date>2011-11-05T13:45:05.457Z</audit:date>
-<audit:justification>Fedora Object Ingested</audit:justification>
-</audit:record>
-<audit:record ID="AUDREC3">
-<audit:process type="Fedora API-M"/>
-<audit:action>modifyDatastreamByValue</audit:action>
-<audit:componentID>RELS-EXT</audit:componentID>
-<audit:responsibility>bhletech</audit:responsibility>
-<audit:date>2011-11-05T13:51:40.204Z</audit:date>
-<audit:justification></audit:justification>
-</audit:record>
-</audit:auditTrail>
-</foxml:xmlContent>
-</foxml:datastreamVersion>
-</foxml:datastream>
 <foxml:datastream ID="DS-COMPOSITE-MODEL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
 <foxml:datastreamVersion ID="DS-COMPOSITE-MODEL.2" LABEL="Datastream Composite Model" CREATED="2009-02-11T19:56:48.895Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0" SIZE="1738">
 <foxml:xmlContent>

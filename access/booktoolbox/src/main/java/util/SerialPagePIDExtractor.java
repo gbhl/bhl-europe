@@ -49,7 +49,7 @@ public class SerialPagePIDExtractor implements PagePIDExtractor {
 	}
 
 	private List<String> mergeRanges(List<Range> ranges) {
-		DecimalFormat formatter = new DecimalFormat("0000");
+		DecimalFormat formatter = new DecimalFormat("000");
 
 		List<String> result = new ArrayList<String>();
 

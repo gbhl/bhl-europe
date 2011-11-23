@@ -10,38 +10,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 <foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2008-12-14T00:12:52.636Z"/>
 <foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2011-11-05T13:50:39.196Z"/>
 </foxml:objectProperties>
-<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
-<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2008-12-14T00:12:52.636Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
-<foxml:xmlContent>
-<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
-<audit:record ID="AUDREC1">
-<audit:process type="Fedora API-M"/>
-<audit:action>ingest</audit:action>
-<audit:componentID></audit:componentID>
-<audit:responsibility>bhletech</audit:responsibility>
-<audit:date>2011-11-05T13:45:05.645Z</audit:date>
-<audit:justification>Fedora Object Ingested</audit:justification>
-</audit:record>
-<audit:record ID="AUDREC2">
-<audit:process type="Fedora API-M"/>
-<audit:action>modifyDatastreamByValue</audit:action>
-<audit:componentID>RELS-EXT</audit:componentID>
-<audit:responsibility>bhletech</audit:responsibility>
-<audit:date>2011-11-05T13:49:21.334Z</audit:date>
-<audit:justification></audit:justification>
-</audit:record>
-<audit:record ID="AUDREC3">
-<audit:process type="Fedora API-M"/>
-<audit:action>modifyDatastreamByValue</audit:action>
-<audit:componentID>RELS-EXT</audit:componentID>
-<audit:responsibility>bhletech</audit:responsibility>
-<audit:date>2011-11-05T13:50:39.196Z</audit:date>
-<audit:justification></audit:justification>
-</audit:record>
-</audit:auditTrail>
-</foxml:xmlContent>
-</foxml:datastreamVersion>
-</foxml:datastream>
 <foxml:datastream ID="DS-COMPOSITE-MODEL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
 <foxml:datastreamVersion ID="DS-COMPOSITE-MODEL.7" LABEL="Datastream Composite Model" CREATED="2009-03-11T19:16:18.656Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0" SIZE="1627">
 <foxml:xmlContent>
@@ -89,7 +57,7 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
-<foxml:datastream ID="ISLANDORACM" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastream ID="ISLANDORACM" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
 <foxml:datastreamVersion ID="ISLANDORACM.0" LABEL="Islandora content model information" CREATED="2011-07-08T18:28:14.022Z" MIMETYPE="text/xml" SIZE="6155">
 <foxml:xmlContent>
 <content_model xmlns="http://www.islandora.ca" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="book" xsi:schemaLocation="http://www.islandora.ca http://137.149.200.50/sites/all/modules/islandora/islandoracm.xsd">
