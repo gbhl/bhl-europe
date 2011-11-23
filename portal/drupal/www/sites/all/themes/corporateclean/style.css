@@ -9,6 +9,7 @@
 @import "css/results.css";
 @import "css/css3.css";
 @import "css/sidebar.css";
+@import "css/biblio.css";
 
 body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-height:1.417; color:#fff; background-color:#38691f;}
 #page-wrapper {background:#fff url('images/bg-fish.jpg') no-repeat 50% 109px;}
@@ -21,7 +22,8 @@ body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-he
 #content,
 #content_bottom,
 #footer,
-#footer_bottom {clear: both; width:100%;} 
+#footer_bottom {clear: both; width:100%;
+} 
 
 /* Typopgrafie */
 a {text-decoration:none;}
@@ -172,8 +174,8 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 
 /* 2-sloupcovy layout */ 
 /* SEARCH_RESULT_DETAIL/BIBLIO - sidebar vlevo: 9+225 + 19 + 748+9 */
-.sidebar-second #main {float:right; padding:20px 9px 20px 0px; width:748px;} 
-.sidebar-second #sidebar-second {float:left; padding-left:20px 0px 20px 9px; width:225px;} 
+.sidebar-second #main {float:right; padding:20px 9px 20px 0px; width:718px;} 
+.sidebar-second #sidebar-second {float:left; padding:20px 0px 20px 9px; width:255px;} 
 .sidebar-second #sidebar {display:none;}
 
 /* SEARCH_RESULT_LIST/DEFAULT - sidebar vlevo: 3+294 + 36 + 672+5 */
@@ -282,10 +284,14 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last, #footer .block ul.men
 #footer #user-login-form {position:relative;}
 #footer #user-login-form input.form-text {
     border: medium none;
-    height: 20px; font-size:91.7%; 
+    height: 18px; font-size:91.7%; 
     margin-bottom: 12px; color:#555;
     text-align: center;
-    width: 155px;
+    width: 153px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border:#555 1px solid;   
 }
 #footer #user-login-form .item-list {clear:both;}
 #footer #user-login-form .item-list ul {display:block; font-weight:bold; list-style-type:none; margin:0px; padding:10px 0px 0px;}
@@ -295,7 +301,16 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last, #footer .block ul.men
 #footer #user-login-form .form-item.form-type-textfield.form-item-name,
 #footer #user-login-form .form-item.form-type-password.form-item-pass {float:left; width:165px;}
 #footer #user-login-form label {display:none;}
-#footer #user-login-form input {margin-bottom:12px; width:155px; height:20px; border:none; text-align:center;}
+#footer #user-login-form input {
+  margin-bottom:12px; 
+  width:153px; height:18px; 
+  text-align:center;
+  border:none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border:#555 1px solid;     
+}
 
 #footer #user-login-form .form-actions {position:absolute; top:35px; left:165px; font-weight:bold; text-align:right;}
 #footer #user-login-form .form-actions .form-submit {
@@ -331,7 +346,15 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last, #footer .block ul.men
 #colorbox #user-login .form-item.form-type-textfield.form-item-name,
 #colorbox #user-login .form-item.form-type-password.form-item-pass {float:left; width:170px;}
 #colorbox #user-login label {display:none;}
-#colorbox #user-login input {margin-bottom:12px; width:168px; height:20px; border:none; text-align:center;}
+#colorbox #user-login input {
+  margin-bottom:12px; 
+  width:168px; height:20px; 
+  border:none; text-align:center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border:#555 1px solid;   
+}
 
 #colorbox #user-login #edit-actions {position:absolute; top:35px; left:190px; text-align:right;}
 #colorbox #user-login #edit-actions .form-submit {

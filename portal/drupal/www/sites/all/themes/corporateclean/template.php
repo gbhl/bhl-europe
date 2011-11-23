@@ -50,8 +50,8 @@ drupal_add_js('jQuery(document).ready(function($) {
 
        $( "#tabs" ).tabs();   
        
-       $("#results-view-type span").bind("click", function() {
-         $("#results").toggleClass("list catalog");
+       $("#results-sort-box #results-list-type-box #results-view-type span").bind("click", function() {
+         $("#search-results").toggleClass("list catalog");
          return false;
        });
        
