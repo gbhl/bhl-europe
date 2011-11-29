@@ -10,6 +10,7 @@
 		xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
 		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		xmlns:mods="http://www.loc.gov/mods/v3"
+		xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
 		 >
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
@@ -162,6 +163,14 @@
 	<xsl:template match="olef" name="olef">
 		<xsl:for-each select="element/bibliographicInformation">
 			<xsl:call-template name="mods" />
+		</xsl:for-each>
+		<xsl:for-each select="element/itemInformation">
+			<xsl:for-each select="files/file/pages/page/taxon/dwc:scientificName">
+				<xsl:element name="field">
+					<xsl:attribute name="name">olef_scientific_name</xsl:attribute>
+					<xsl:value-of select="." />
+				</xsl:element>
+			</xsl:for-each>
 		</xsl:for-each>
 	</xsl:template>
 

@@ -700,6 +700,7 @@
     <copyField source="mods_abstract" dest="all"/>
     <copyField source="mods_abstract" dest="all__exact"/>
 
+    <field name="olef_scientific_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
 
    <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
         will be used if the name matches any of the patterns.
