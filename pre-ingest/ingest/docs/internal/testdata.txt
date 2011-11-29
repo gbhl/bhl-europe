@@ -1,0 +1,55 @@
+
+
+/mnt/nfs/upload/providers/
+
+/mnt/nfs-demeter/upload/providers
+
+
+warum gegeben
+/mnt/nfs/dev/
+
+und nicht
+
+/mnt/nfs-demeter/upload/providers
+
+
+
+/mnt/nfs-demeter/upload/providers/testdata/spices_prepared
+
+
+
+
+https://bhl.wikispaces.com/Content+_Management
+
+
+
+ingest test books sind in: /mnt/nfs/dev/ingestion-testdata/books
+
+Those listed as INGESTED_BOOK_US_something are the spices books that we
+have so far, the others are other test ingests.
+
+
+
+
+hab mir die Buecher selbst noch nicht angesehen, aber ich bin davon 
+ausgegangen - ich werde das ganze nochmal mit Chris "confirmen".
+
+uebrigens habe ich gerade die Paramter fuer das SMT-CLI fuer die bereits 
+gemappten CPs aufs Wiki gestellt! Zu finden unter:
+
+https://bhl.wikispaces.com/Content+_Management
+
+
+
+Those listed as INGESTED_BOOK_US_something are the spices books that we
+have so far, the others are other test ingests.
+
+ the specifics are drawn from the CP upload/testdata folder
+> - including some from the BHL-US corpus identified for the
+> spices exhibition.  Those books ingested can be found in:
+> /mnt/nfs/dev/ingestion-testdata/books - Zheng cc'd in case
+> you have questions on that front and need accurate answers!
+
+
+ the SMT over the test data sample that is in
+> >>> upload/providers/testdata?)
