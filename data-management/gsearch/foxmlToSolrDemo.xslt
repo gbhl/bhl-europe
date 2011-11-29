@@ -101,8 +101,11 @@
 			<!-- variant witch works with local namespace set on mods element -->
 			<!-- 
 			-->
-			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/*[local-name() = 'mods']">
+			<!--<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/*[local-name() = 'mods']">
 				<xsl:call-template name="mods"/>
+			</xsl:for-each>-->
+			<xsl:for-each select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/*[local-name() = 'olef']">
+				<xsl:call-template name="olef"/>
 			</xsl:for-each>
 			
 			<!-- variant with works when local namespace NOT SET on mods element -->
@@ -153,6 +156,12 @@
 		<delete>
 			<id><xsl:value-of select="$PID"/></id>
 		</delete>
+	</xsl:template>
+
+	<xsl:template match="olef" name="olef">
+		<xsl:for-each select="element/bibliographicInformation">
+			<xsl:call-template name="mods" />
+		</xsl:for-each>
 	</xsl:template>
 	
 	<xsl:template match="mods" name="mods">
