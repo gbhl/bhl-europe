@@ -166,7 +166,6 @@
 	</xsl:template>
 
 	<xsl:template match="mods:mods" name="mods">
-
         <xsl:variable name="form" select="mods:physicalDescription/mods:form"/>
         <xsl:variable name="rform" select="mods:physicalDescription/mods:reformattingQuality"/>
         <xsl:variable name="intm" select="mods:physicalDescription/mods:internetMediaType"/>
@@ -179,35 +178,33 @@
         <xsl:variable name="hierarchic" select="mods:subject/mods:hierarchicalGeographic"/>
         <xsl:variable name="subname" select="mods:subject/mods:name"/>
 
-
         <!-- SetSpec is handled twice, once for regular indexing and once for faceting,
                     The setSpec will be broken up into individual elements by the java processing
                 -->
 
         <xsl:for-each select="mods:*">
-
             <!-- titleInfo -->
-            <xsl:if test="local-name() = 'mods:titleInfo'">
+            <xsl:if test="local-name() = 'titleInfo'">
                 <xsl:call-template name="mods-titleInfo"/>
             </xsl:if>
 
             <!-- name -->
-            <xsl:if test="local-name() = 'mods:name'">
+            <xsl:if test="local-name() = 'name'">
                 <xsl:call-template name="mods-name"/>
             </xsl:if>
 
             <!-- subject -->
-            <xsl:if test="local-name() = 'mods:subject'">
+            <xsl:if test="local-name() = 'subject'">
                 <xsl:call-template name="mods-subject"/>
             </xsl:if>
 
             <!-- typeOfResource -->
-            <xsl:if test="local-name() = 'mods:typeOfResource'">
+            <xsl:if test="local-name() = 'typeOfResource'">
                 <xsl:call-template name="mods-typeOfResource"/>
             </xsl:if>
 
             <!-- genre -->
-            <xsl:if test="local-name() = 'mods:genre'">
+            <xsl:if test="local-name() = 'genre'">
                 <xsl:element name="field">
                     <xsl:attribute name="name">mods_genre</xsl:attribute>
                     <xsl:for-each select="mods:*[local-name(.) = 'mods:genre']">
@@ -231,14 +228,14 @@
             </xsl:for-each>
 
             <!-- originInfo -->
-            <xsl:if test="local-name() = 'mods:originInfo'">
+            <xsl:if test="local-name() = 'originInfo'">
                 <xsl:call-template name="mods-originInfo"/>
             </xsl:if>
 
 
             <!-- language -->
             <xsl:if
-                test="local-name() = 'mods:language' and child::*[local-name() = 'mods:languageTerm' and @type='text']">
+                test="local-name() = 'language' and child::*[local-name() = 'languageTerm' and @type='text']">
                 <xsl:element name="field">
                     <xsl:attribute name="name">mods_language</xsl:attribute>
                     <xsl:for-each select="mods:languageTerm[@type='text']">
@@ -258,7 +255,7 @@
             </xsl:if>
 
             <!-- abstract -->
-            <xsl:if test="local-name() = 'mods:abstract'">
+            <xsl:if test="local-name() = 'abstract'">
                 <xsl:call-template name="mods:abstract"/>
             </xsl:if>
 
@@ -292,7 +289,7 @@
 
             <!-- recordInfo -->
             <xsl:if
-                test="local-name() = 'mods:recordInfo' and child::*[local-name() = 'mods:recordContentSource']">
+                test="local-name() = 'recordInfo' and child::*[local-name() = 'recordContentSource']">
                 <xsl:element name="field">
                     <xsl:attribute name="name">mods_record_content_source</xsl:attribute>
                     <xsl:for-each select="mods:recordContentSource">
