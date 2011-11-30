@@ -651,7 +651,7 @@
 	<!-- keywords on subject  -->
     <field name="mods_subject" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_subject__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <field name="mods_subject__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <field name="mods_subject__sort" type="sorting" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <field name="mods_subject__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_subject" dest="mods_subject__exact"/>
     <copyField source="mods_subject" dest="mods_subject__facet"/>
