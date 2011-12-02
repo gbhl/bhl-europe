@@ -117,7 +117,7 @@ function bhle_search_init() {
       'exact_phrase' => 0
     );
     $_SESSION['bhle_search']['conditions'][] = $condition;
-    
+
     $field = $_GET['field']; // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
     /* TODO: find solution for complex queries */
@@ -218,14 +218,24 @@ function bhle_search_form_search_block_form_alter(&$form, $form_state) {
  * Add an advanced condition form-row to a given form reference and return it
  */
 function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = BHLE_SEARCH_DEFAULT_TERM, $exact_phrase = 0, $field = '', $operator = '', $bNoDel = false) {
-    // Pre-construct the list of searchable metadata fields
-    $fields = explode(';', variable_get('bhle_search_fields', BHLE_SEARCH_FIELDS));
-    $fields = array_combine($fields, $fields);
+
+	// Pre-construct the list of searchable metadata fields
+    $fields_b = explode(';', variable_get('bhle_search_fields', BHLE_SEARCH_FIELDS));
+    $fields_b = array_combine($fields_b, $fields_b);
+
     $fields[variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD)] = variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD);
     $fields[variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD)] = variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD);
     $fields[variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD)] = variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD);
     $fields[variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD)] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
     $fields[variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD)] = variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD);
+
+    $fields = array_merge($fields, $fields_b);
+
+    // set correct labels for all fields
+
+    foreach(array_keys($fields) as $key){
+    	$fields[$key] = t(field_name_label($key));
+    }
 
     // Check if a valid term was passed
     if (empty($term))
@@ -512,7 +522,7 @@ function bhle_search_advanced_validate($form, &$form_state) {
  * Dummy function which prevents the global validation handler from running
  */
 function bhle_search_advanced_add_validate($form, &$form_state) {
-    
+
 }
 
 /**
@@ -520,7 +530,7 @@ function bhle_search_advanced_add_validate($form, &$form_state) {
  * Dummy function which prevents the global validation handler from running
  */
 function bhle_search_advanced_del_validate($form, &$form_state) {
-    
+
 }
 
 /**
@@ -592,15 +602,24 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             $fields[] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
         }
 
+        if(_is_wildcard_query($query)) {
+        	$fields_exact = array();
+        	foreach($fields as $field){
+        		$fields_exact[] = $field . '__exact';
+        	}
+        	$fields = array_merge($fields, $fields_exact);
+        }
+
         // Configure dismax parser
         $params['defType'] = 'edismax';
         $params['qf'] = implode(' ', $fields);
+
     }
     // ...we have advanced search
     else {
         // Build Solr query out of the conditions
         foreach ($conditions as $condition) {
-          
+
             // Get the query field
             $query_field = $condition['field'];
             // Escape the search-term
@@ -611,7 +630,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 $query_term = '"' . $query_term . '"';
                 $query_field .= '__exact';  // Change to exact index
             }
-            
+
             // Check if search term expansion is turned on
             if ($_SESSION['bhle_search']['expand_search']) {
                 // Check if we are looking for an author
@@ -728,8 +747,15 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
               );
               bhle_search_search_summary_add($condition, $search_summary_query_info);
         }
+
+        // lowercase the full query string if it is not an exact search.
+        // This step is needed to normalize tokens in the case
+        // of wildcard searches. All analyzers are ommited in this case.
+        if(!$condition['exact_phrase']) {
+        	$query = strtolower( $query );
+        }
     }
-    
+
     // Do not search if there is no query
     if( strlen($query) <= 0 ) {
         return array();
@@ -787,7 +813,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                   $field_value = _solrdoc_getField($doc, $field_name);
                   $facet_prepare[$field_name][$field_value]++;
                 }
-                
+
               }
             }
             foreach($facet_prepare as $field_name => $field_value) {
@@ -830,7 +856,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             }
         }
     } catch (Exception $e) {
-        
+
     }
 
     return $results;
@@ -908,6 +934,10 @@ function _solrdoc_getField(&$solr_doc, $fieldName, $glue = ', ') {
             return $field;
         }
     }
+}
+
+function _is_wildcard_query($query_string) {
+	return strpos($query, "*") || strpos($query, "?");
 }
 
 /**
@@ -1020,6 +1050,22 @@ function bhle_search_config_simple_form($form, &$form_state) {
     return system_settings_form($form);
 }
 
+function field_name_label($field_name){
+	static $field_name_label_map;
+
+	if(!isset($field_name_label_map)){
+		$field_name_label_map = array("date_issued"=>'Year', 'name'=>'Author');
+	}
+
+	$label = substr($field_name, strpos($field_name, '_') + 1);
+	if(isset($field_name_label_map[$label])){
+		return t($field_name_label_map[$label]);
+	} else {
+		$label = str_replace('_', ' ', $label);
+		return ucfirst($label);
+	}
+}
+
 /**
  * Form function, called by drupal_get_form()
  * in bhle_search_menu().
@@ -1044,8 +1090,6 @@ function bhle_search_preprocess_search_result(&$variables) {
         $variables['classes_array'][] = $class;
     }
 
-    $variables['title'] = check_plain($variables['title']);
-    $variables['link'] = check_url($variables['link']);
     foreach (array_keys($variables['result']['extra']) as $key) {
         $variables['result']['extra'][$key] = check_plain($variables['result']['extra'][$key]);
     }
@@ -1320,7 +1364,7 @@ function template_preprocess_search_summary(&$variables) {
                 $condition['term'] = '"' . $condition['term'] . '"';
             }
 
-            $condition['field_label'] = str_replace("mods_", "", $condition['field']); //TODO get field label from form or variables
+            $condition['field_label'] = field_name_label($condition['field']);
 
             $variables['matches_for']['info'][$i] = $condition;
 
