@@ -38,6 +38,7 @@
     <?php if ($exposed): ?>
       <div class="view-filters">
         <?php print $exposed; ?>
+        <div class="userange-button"><a href="#" title="<?php print t('Use the range'); ?>"> <?php print t('Use the range'); ?></a></div>
       </div>   
       
     <?php endif; ?>

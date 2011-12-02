@@ -51,14 +51,14 @@ drupal_add_js('jQuery(document).ready(function($) {
        $( "#tabs" ).tabs();   
        
        $("#results-sort-box #results-list-type-box #results-view-type span").bind("click", function() {
-         $("#search-results").toggleClass("list catalog");
+         $("#search-results").toggleClass("catalog list");
          return false;
        });
        
        $("#results-view-type span").toggle(function () {
-         $(this ).text("' . t('LIST') . '"); 
-       }, function () {
          $(this ).text("' . t('TABLE') . '"); 
+       }, function () {
+         $(this ).text("' . t('LIST') . '"); 
        });       
       
        $("#accordion").tabs("div.block-aggregator",{

@@ -902,7 +902,7 @@ function bhle_search_facet_field_map($type = 'simple') {
               "mods_date_issued" => t("Year"),
               "mods_language" => t("Language"),
               "mods_record_content_source" => t("Content provider"),
-              "olef_scientific_name" => t("Metadata")
+              "olef_scientific_name" => t("Scientific name")
             );
         case 'simple':
             return array(
@@ -911,7 +911,7 @@ function bhle_search_facet_field_map($type = 'simple') {
               "mods_date_issued" => t("Year"),
               "mods_language" => t("Language"),
               "mods_record_content_source" => t("Content provider"),
-              "olef_scientific_name" => t("Metadata")
+              "olef_scientific_name" => t("Scientific name")
             );
     }
 }
