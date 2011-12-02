@@ -12,3 +12,6 @@ sites/*/private
 
 # Ignore other
 info.php
+
+# No more .htacess hacks
+.htaccess

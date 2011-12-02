@@ -1148,6 +1148,7 @@
       <str name="spellcheck.count">1</str>
       <str name="q">*</str>
       <str name="sort">mods_title__sort desc</str>
+      <str name="defType">edismax</str>
     </lst>
     <arr name="last-components">
       <str>spellcheck</str>

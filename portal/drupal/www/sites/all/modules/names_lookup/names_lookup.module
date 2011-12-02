@@ -177,6 +177,16 @@ function names_lookup_synonyms_col( $scientific_name ) {
 }
 
 /**
+ * Lookup the accepted name for a given scientific name, returns the passed name if it is already accepted
+ * @param string $scientific_name Scientific name to look for
+ */
+function names_lookup_accepted_pesi( $scientific_name ) {
+    $accepted_name = array();
+    
+    $response = _names_lookup_soap_cache("getPESIRecordsByVernacular", $common_name);
+}
+
+/**
  * PUBLIC INTERFACE FUNCTIONS END
  * Note: do not call any functions below here
  */
