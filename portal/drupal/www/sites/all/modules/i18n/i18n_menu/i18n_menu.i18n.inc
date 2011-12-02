@@ -88,13 +88,14 @@ function i18n_menu_i18n_string_info() {
  * Implements hook_i18n_string_list()
  */
 function i18n_menu_i18n_string_objects($type) {
-  if ($type == 'menu_item') {
+  if ($type == 'menu_link') {
     // All menu items that have no language and are customized.
     return db_select('menu_links', 'm')
       ->fields('m')
       ->condition('language', LANGUAGE_NONE)
       ->condition('customized', 1)
-      ->fetchAll();
+      ->execute()
+      ->fetchAllAssoc('mlid', PDO::FETCH_ASSOC);
   }
 }
 

@@ -246,7 +246,7 @@ function i18n_taxonomy_field_extra_fields() {
   $info = entity_get_info('taxonomy_term');
   foreach (array_keys($info['bundles']) as $bundle) {
     $vocabulary = taxonomy_vocabulary_machine_name_load($bundle);
-    if (i18n_taxonomy_vocabulary_mode($vocabulary, I18N_MODE_TRANSLATE)) {
+    if ($vocabulary && i18n_taxonomy_vocabulary_mode($vocabulary, I18N_MODE_TRANSLATE)) {
       $return['taxonomy_term'][$bundle] = i18n_language_field_extra();
     }
   }
@@ -277,6 +277,21 @@ function i18n_taxonomy_field_info_alter(&$info) {
   $info['taxonomy_term_reference']['module'] = 'i18n_taxonomy';
   // Sync callback for field translations
   $info['taxonomy_term_reference']['i18n_sync_callback'] = 'i18n_taxonomy_field_prepare_translation';
+}
+
+/**
+ * Implements hook_field_storage_details_alter().
+ *
+ * We don't alter the storage details but the stored details of the field itself...
+ *
+ * @param array $field
+ *   The field record just read from the database.
+ */
+function i18n_taxonomy_field_storage_details_alter($details, &$field, $instance) {
+  if ($field['type'] === 'taxonomy_term_reference') {
+    // We also take over existing taxonomy_term_reference fields.
+    $field['module'] = 'i18n_taxonomy';
+  }
 }
 
 /**
@@ -1176,4 +1191,36 @@ function _i18n_taxonomy_filter_terms($term) {
  */
 function i18n_taxonomy_translation_set_load($tsid) {
   return i18n_translation_set_load($tsid, 'taxonomy_term');
+}
+
+/**
+ * Implements hook_field_uuid_load().
+ */
+function i18n_taxonomy_field_uuid_load($entity_type, $entity, $field, $instance, $langcode, &$items) {
+  taxonomy_field_uuid_load($entity_type, $entity, $field, $instance, $langcode, $items);
+}
+
+/**
+ * Implements hook_field_uuid_presave().
+ */
+function i18n_taxonomy_field_uuid_presave($entity_type, $entity, $field, $instance, $langcode, &$items) {
+  taxonomy_field_uuid_presave($entity_type, $entity, $field, $instance, $langcode, $items);
+}
+/**
+ * Implements hook_entity_info_alter().
+ */
+function i18n_taxonomy_entity_info_alter(&$entity_info) {
+  if (isset($entity_info['taxonomy_term'])) {
+    // Core doesn't provide a label callback for taxonomy terms. By setting one
+    // we can use it to return the correct localized term name.
+    $entity_info['taxonomy_term']['label callback'] = 'i18n_taxonomy_taxonomy_term_label';
+  }
+}
+
+/**
+ * Providing a hook_entity_info() 'label callback' to ensure modules that use
+ * entity_label() get the correct localized taxonomy term.
+ */
+function i18n_taxonomy_taxonomy_term_label($term, $entity_type) {
+  return i18n_taxonomy_term_name($term, i18n_language()->language);
 }

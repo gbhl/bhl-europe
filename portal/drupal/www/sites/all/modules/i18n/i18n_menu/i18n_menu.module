@@ -354,7 +354,7 @@ function i18n_menu_localize_tree($tree, $langcode = NULL) {
         // There may be injected menu items here so we check it actually has router path
         $router = isset($link['router_path']) ? i18n_menu_get_router($link['router_path']) : NULL;
         // If the title is the same it will be localized by the menu system.
-        if ($router && $link['link_title'] != $router['title']) {
+        if (!$router || $link['link_title'] != $router['title']) {
           $item['link']['title'] = _i18n_menu_link_title($link, $langcode);
         }
         if ($description = _i18n_menu_link_description($link, $langcode)) {

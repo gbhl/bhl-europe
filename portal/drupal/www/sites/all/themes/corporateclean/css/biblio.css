@@ -101,22 +101,26 @@
 }
 
 /* SUMMARY */
-.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .biblio-summary.ui-tabs-panel ul {
+.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .ui-tabs-panel ul {
   margin:0px; padding:0px; 
   list-style-type:none; width:680px;
   overflow:hidden;
 }
-.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .biblio-summary.ui-tabs-panel ul li {
+.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .ui-tabs-panel ul li {
   display:block; margin:0px; padding:0px;
    width:680px; line-height:2.0; color:#006626;
   overflow:hidden;
 }
-.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .biblio-summary.ui-tabs-panel ul li label {
+.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .ui-tabs-panel ul li label {
  float:left; display:block;
- padding-right:14px; margin-right:12px; 
+ padding-right:14px;  
  width:150px; text-align:right; 
  color:#8bc53f; font-weight:normal; 
- border-right:1px #8bc53f solid; 
+}
+.one-sidebar.sidebar-second #main  #tabs.biblio.ui-tabs .ui-tabs-panel ul li p {
+  display:block; float:right; padding-left:12px; 
+  width:500px;
+  border-left:1px #8bc53f solid; 
 }
 
 /* ENDNOTE */
@@ -287,7 +291,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a:hover {background-position:left top; }
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a:hover {/* background-position:left top; */ background-color:#8bc53f;}
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-links-block .biblio-read-link {
   margin:0px 3px; padding:5px 0px 0px; width:209px; 
