@@ -228,20 +228,12 @@
 
 
 			<!-- language -->
-			<xsl:if
-				test="local-name() = 'language' and child::*[local-name() = 'languageTerm' and @type='text']">
+			<xsl:for-each select="mods:languageTerm">
 				<xsl:element name="field">
 					<xsl:attribute name="name">mods_language</xsl:attribute>
-					<xsl:for-each select="mods:languageTerm[@type='text']">
-						<xsl:if test=". != ''">
-							<xsl:if test="position() != 1">
-								<xsl:text>; </xsl:text>
-							</xsl:if>
-							<xsl:value-of select="." />
-						</xsl:if>
-					</xsl:for-each>
+					<xsl:value-of select="." />
 				</xsl:element>
-			</xsl:if>
+			</xsl:for-each>
 
 			<!-- physicalDescription -->
 			<xsl:if test="$form or $rform or $intm or $extent or $dorigin">
