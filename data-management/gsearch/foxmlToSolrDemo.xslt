@@ -170,7 +170,13 @@
 		<xsl:variable name="subname" select="mods:subject/mods:name"/>
 
 		<!-- SetSpec is handled twice, once for regular indexing and once for faceting, 
-			The setSpec will be broken up into individual elements by the java processing -->
+		The setSpec will be broken up into individual elements by the java processing -->
+		
+		<xsl:element name="field">
+			<xsl:attribute name="name">mods_title__search</xsl:attribute>
+			<!-- including nsort because this is keyword search spec -->
+			<xsl:value-of select="//mods:title[1]"/>
+		</xsl:element>
 
 		<xsl:for-each select="mods:*">
 			<!-- titleInfo -->
@@ -187,6 +193,7 @@
 			<xsl:if test="local-name() = 'subject'">
 				<xsl:call-template name="mods-subject"/>
 			</xsl:if>
+			
 
 			<!-- typeOfResource -->
 			<xsl:if test="local-name() = 'typeOfResource'">
@@ -352,7 +359,6 @@
 	<xsl:template match="mods:titleInfo" name="mods-titleInfo">
 		<xsl:variable name="nsort" select="mods:nonSort"/>
 		<xsl:variable name="titl" select="mods:title"/>
-		<xsl:variable name="titl_first" select="mods:title[1]"/>
 		<xsl:variable name="subt" select="mods:subTitle"/>
 		<xsl:variable name="partname" select="mods:partName"/>
 		<xsl:variable name="partNumber" select="mods:partnum"/>
@@ -432,11 +438,6 @@
 							</xsl:if>
 						</xsl:if>
 					</xsl:for-each>
-				</xsl:element>
-				<xsl:element name="field">
-					<xsl:attribute name="name">mods_title__search</xsl:attribute>
-					<!-- including nsort because this is keyword search spec -->
-					<xsl:value-of select="$titl_first"/>
 				</xsl:element>
 			</xsl:otherwise>
 		</xsl:choose>
