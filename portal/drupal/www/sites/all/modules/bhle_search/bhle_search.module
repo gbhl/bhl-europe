@@ -978,7 +978,7 @@ function bhle_search_config_simple_form($form, &$form_state) {
     $form['bhle_search_scientific_name_field'] = array(
         '#type' => 'textfield',
         '#title' => t('Apache Solr index field for SCIENTIFIC NAME information.'),
-        '#default_value' => variable_get('bhle_search_scienific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD),
+        '#default_value' => variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD),
         '#size' => 15,
         '#description' => t('Set the Apache Solr index field which contains the scientific name information.'),
         '#required' => TRUE,
