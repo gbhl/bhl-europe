@@ -364,11 +364,23 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last, #footer .block ul.men
 }
 #colorbox #user-login #edit-actions .form-submit:hover {text-decoration:underline;}
 
+/** TUTORIAL **/
+#colorbox #tutorial-inline-content {margin:20px 0px; padding:0px 20px;}
+#colorbox #tutorial-inline-content h1,
+#colorbox #tutorial-inline-content h2,
+#colorbox #tutorial-inline-content h3 {margin-top:10px;}
+#colorbox #tutorial-inline-content p {padding:0px 5px 10px 5px; text-align:justify;}
+
+
+
 /* Footer Right region */ 
 .footer-area.third { width:450px; padding-right:0px;}        
 .footer-banners a {float:right;}
 
 /* Footer bottom */
 #footer-bottom-inside { width: 1010px; margin: 0 auto; } 
+
+/* Tutorial inline contents */
+#footer-bottom-inside #tutorial-inline-content {display:none;}
 
 

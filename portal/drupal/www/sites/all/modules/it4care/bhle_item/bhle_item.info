@@ -1,0 +1,8 @@
+name = BHL-E view item
+description = Custom module
+core = 6.x
+package = BHLE
+dependencies[] = apachesolr
+
+version = "7.x-1.0"
+core = "7.x"

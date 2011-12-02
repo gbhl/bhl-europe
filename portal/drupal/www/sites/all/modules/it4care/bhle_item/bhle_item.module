@@ -1,0 +1,131 @@
+<?php
+
+/**
+ * Implementation of hook_menu().
+ */
+function bhle_item_menu() {
+  $items['bhle-view/%'] = array(
+    'title callback' => 'bhle_item_page_title',
+    'title arguments' => array(1),
+    'page callback' => 'bhle_item_page_view',
+    'page arguments' => array(1),
+    'access callback' => 'bhle_item_access',
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Title callback.
+ */
+function bhle_item_page_title($pid) {
+  $item = bhle_item_load($pid);
+  return $item->dc_title[0];
+}
+
+/**
+ * Implements hook_permission().
+ */
+function bhle_item_permission() {
+  $perms = array(
+    'access bhle item' => array(
+      'title' => t('Access BHL Europe items'),
+    ),
+  );
+  return $perms;
+}
+
+/**
+ * Access callback.
+ */
+function bhle_item_access() {
+  global $user;
+  return TRUE;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bhle_item_theme() {
+  return array(
+    'bhle_item_full' => array(
+      'variables' => array(
+        'item' => NULL,
+        'rendered' => NULL,
+      ),
+      'template' => 'bhle_item_view_full',
+    ),
+    'bhle_item_teaser' => array(
+      'variables' => array(
+        'item' => NULL,
+        'rendered' => NULL,
+      ),
+      'template' => 'bhle_item_view_teaser',
+    ),
+  );
+}
+
+/**
+ * Custom preprocess
+ */
+function _template_preprocess_bhle_item_view($item) {
+  $rendered['dc_title'] = _solrdoc_getField($item, 'dc_title');
+  $rendered['dc_identifier'] = _solrdoc_getField($item, 'dc_identifier');
+
+  $rendered['contentType'] = _solrdoc_getField($item, 'contentType');
+  $rendered['spell'] = _solrdoc_getField($item, 'spell');
+
+  $rendered['fgs_ownerId'] = _solrdoc_getField($item, 'fgs_ownerId');
+  $rendered['fgs_createdDate'] = _solrdoc_getField($item, 'fgs_createdDate');
+  $rendered['fgs_lastModifiedDate'] = _solrdoc_getField($item, 'fgs_lastModifiedDate');
+  $rendered['fgs_label'] = _solrdoc_getField($item, 'fgs_label');
+  $rendered['fgs_state'] = _solrdoc_getField($item, 'fgs_state');
+
+
+
+  $rendered['mods_publisher'] = _solrdoc_getField($item, 'mods_publisher');
+  $rendered['mods_subject_topic'] = _solrdoc_getField($item, 'mods_subject_topic');
+  $rendered['mods_subject'] = _solrdoc_getField($item, 'mods_subject');
+  $rendered['mods_type_of_resource__exact'] = _solrdoc_getField($item, 'mods_type_of_resource__exact');
+  $rendered['mods_title'] = _solrdoc_getField($item, 'mods_title');
+  $rendered['mods_place__exact'] = _solrdoc_getField($item, 'mods_place__exact');
+  $rendered['mods_publisher__exact'] = _solrdoc_getField($item, 'mods_publisher__exact');
+  $rendered['mods_language'] = _solrdoc_getField($item, 'mods_language');
+  $rendered['mods_record_content_source'] = _solrdoc_getField($item, 'mods_record_content_source');
+  $rendered['mods_record_content_source__exact'] = _solrdoc_getField($item, 'mods_record_content_source__exact');
+  $rendered['mods_origin'] = _solrdoc_getField($item, 'mods_origin');
+  $rendered['mods_date_issued'] = _solrdoc_getField($item, 'mods_date_issued');
+  $rendered['mods_language__exact'] = _solrdoc_getField($item, 'mods_language__exact');
+  $rendered['mods_type_of_resource'] = _solrdoc_getField($item, 'mods_type_of_resource');
+  $rendered['mods_name'] = _solrdoc_getField($item, 'mods_name');
+  $rendered['mods_date_issued__exact'] = _solrdoc_getField($item, 'mods_date_issued__exact');
+  $rendered['mods_title__exact'] = _solrdoc_getField($item, 'mods_title__exact');
+  $rendered['mods_subject__exact'] = _solrdoc_getField($item, 'mods_subject__exact');
+  $rendered['mods_place'] = _solrdoc_getField($item, 'mods_place');
+  $rendered['mods_name__exact'] = _solrdoc_getField($item, 'mods_name__exact');
+  ksort($rendered);
+  return $rendered;
+}
+
+/**
+ * Load item object from Solr.
+ */
+function bhle_item_load($pid) {
+  $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+  $query = 'PID:(' . str_replace(':', '\:', arg(1)) . ')'; // TODO: better argument handling
+  $results = array();
+  $params = array();
+  $params['rows'] = 1;
+  $responseObj = $solr->search($query, $params);
+  $response = $responseObj->response;
+  return $response->docs[0];
+}
+
+/**
+ * Menu callback; view a single item.
+ */
+function bhle_item_page_view($pid) {
+  $item = bhle_item_load($pid);
+  $rendered = _template_preprocess_bhle_item_view($item);
+  return theme('bhle_item_full', array('item' => $item, 'rendered' => $rendered));
+}
