@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="bhle:1" xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of 'The origin of species'."/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2011-11-04T15:24:04.358Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2011-11-10T13:31:16.113Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2011-11-04T15:24:04.358Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
+<foxml:xmlContent>
+<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+<audit:record ID="AUDREC1">
+<audit:process type="Fedora API-M"/>
+<audit:action>ingest</audit:action>
+<audit:componentID/>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-04T15:24:04.358Z</audit:date>
+<audit:justification>Fedora Object Ingested</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>MODS</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-04T15:24:05.397Z</audit:date>
+<audit:justification>Ingested object MODS</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC3">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>RELS-EXT</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-04T15:24:05.850Z</audit:date>
+<audit:justification>Ingested object RELS-EXT</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC4">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>RELS-EXT</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-04T15:24:06.053Z</audit:date>
+<audit:justification>Modified by Islandora API</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC5">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>TN</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-04T15:24:06.209Z</audit:date>
+<audit:justification>Ingested object TN</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC6">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyObject</audit:action>
+<audit:componentID/>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-05T14:22:25.080Z</audit:date>
+<audit:justification>Modified by Islandora API</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC7">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>DIMENSIONS</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-07T10:08:14.523Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC8">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByReference</audit:action>
+<audit:componentID>DIMENSIONS</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-07T10:08:51.436Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC9">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>MODS</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-10T13:31:16.113Z</audit:date>
+<audit:justification/>
+</audit:record>
+<audit:record ID="AUDREC10">
+<audit:process type="Fedora API-M"/>
+<audit:action>setDatastreamVersionable</audit:action>
+<audit:componentID>MODS</audit:componentID>
+<audit:responsibility>bhletech</audit:responsibility>
+<audit:date>2011-11-10T13:31:16.113Z</audit:date>
+<audit:justification/>
+</audit:record>
+</audit:auditTrail>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2011-11-04T15:24:04.358Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="621">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of 'The origin of species'.</dc:title>
+  <dc:identifier>bhle:1</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="MODS" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="MODS.0" LABEL="MODS Metadata" CREATED="2011-11-04T15:24:05.397Z" MIMETYPE="text/xml" SIZE="1174">
+<foxml:xmlContent>
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
+  <titleInfo>
+    <title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of 'The origin of species'.</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Poulton, Edward Bagnall, Sir, 1856-1943.</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">London,</placeTerm>
+    </place>
+    <publisher>Longmans, Green, and co.,</publisher>
+    <dateIssued>1909.</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+  </language>
+  <subject>
+    <topic>Darwin, Charles,</topic>
+  </subject>
+  <recordInfo>
+    <recordContentSource authority="marcorg">DLC/ICU</recordContentSource>
+  </recordInfo>
+</mods>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="MODS.1" LABEL="MODS Metadata" CREATED="2011-11-10T13:31:16.113Z" MIMETYPE="text/xml" SIZE="1139">
+<foxml:xmlContent>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
+  <titleInfo>
+    <title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of 'The origin of species'.</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Poulton, Edward Bagnall, Sir, 1856-1943.</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">London,</placeTerm>
+    </place>
+    <publisher>Longmans, Green, and co.,</publisher>
+    <dateIssued>1909.</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+  </language>
+  <subject>
+    <topic>Darwin, Charles,</topic>
+  </subject>
+  <recordInfo>
+    <recordContentSource authority="marcorg">DLC/ICU</recordContentSource>
+  </recordInfo>
+</mods>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="Fedora object-to-object relationship metadata" CREATED="2011-11-04T15:24:05.850Z" MIMETYPE="text/xml" SIZE="147">
+<foxml:xmlContent>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/bhle:1"/>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="RELS-EXT.1" LABEL="Fedora Object-to-Object Relationship Metadata" CREATED="2011-11-04T15:24:06.053Z" MIMETYPE="text/xml" SIZE="269">
+<foxml:xmlContent>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/bhle:1">
+    <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/islandora:bookCModel"/>
+  </rdf:Description>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="TN" STATE="A" CONTROL_GROUP="M" VERSIONABLE="true">
+<foxml:datastreamVersion ID="TN.0" LABEL="Thumbnail" CREATED="2011-11-04T15:24:06.209Z" MIMETYPE="image/jpg" SIZE="4295">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="bhle:1+TN+TN.0"/>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DIMENSIONS" STATE="A" CONTROL_GROUP="M" VERSIONABLE="false">
+<foxml:datastreamVersion ID="DIMENSIONS.1" LABEL="width x height of pages" CREATED="2011-11-07T10:08:51.436Z" MIMETYPE="text/plain" SIZE="1371">
+<foxml:contentLocation TYPE="INTERNAL_ID" REF="bhle:1+DIMENSIONS+DIMENSIONS.1"/>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>
