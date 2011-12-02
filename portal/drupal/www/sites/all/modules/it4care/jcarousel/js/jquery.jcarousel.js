@@ -22,8 +22,8 @@
         start: 1,
         offset: 1,
         size: null,
-        scroll: 1,
-        visible: 4,
+        scroll: 3,
+        visible: null,
         animation: 'normal',
         easing: 'swing',
         auto: 0,
@@ -45,8 +45,7 @@
         buttonPrevEvent: 'click',
         buttonNextCallback: null,
         buttonPrevCallback: null,
-        //itemFallbackDimension: null
-        itemFallbackDimension: 230
+        itemFallbackDimension: null
     }, windowLoaded = false;
 
     $(window).bind('load.jcarousel', function() { windowLoaded = true; });
@@ -176,9 +175,9 @@
         this.buttonNext.css('display', 'block');
         this.buttonPrev.css('display', 'block');
 
-        this.funcNext   = function() { self.next(); return false; };
-        this.funcPrev   = function() { self.prev(); return false; };
-        this.funcResize = function() { 
+        this.funcNext   = function() { self.next(); };
+        this.funcPrev   = function() { self.prev(); };
+        this.funcResize = function() {
             if (self.resizeTimer) {
                 clearTimeout(self.resizeTimer);
             }

@@ -1,27 +1,27 @@
 .page-browse #content #main h1 {display:none;}
 .page-browse #content #main {margin-top:20px; margin-bottom:20px;}
 
-.region-content-expanded #block-menu-menu-browse.collections {
+.region-content-expanded .collections {
   margin:20px auto; width:990px; /*height:98px;*/ padding: 0px; 
   background:transparent url('../images/bg-collections.png') no-repeat 0px 0px;
 }
-.region-content-expanded #block-menu-menu-browse.collections h2 {
+.region-content-expanded .collections h2 {
   float:left; margin:0px; padding:10px 40px 15px 20px; 
   color:#006626; font-size:141.7%;
   background:transparent url('../images/bg-collections-tab-right.png') no-repeat right top;
 }
-.region-content-expanded #block-menu-menu-browse.collections .content {
+.region-content-expanded .collections .content {
   width:990px;   clear:both; 
   background:transparent url('../images/bg-collections-bg.png') repeat-y left top; 
   overflow:hidden;
 }
-.region-content-expanded #block-menu-menu-browse.collections ul.menu {
+.region-content-expanded .collections ul.menu {
   display:block; list-style-type:none;
   padding:0px 20px 10px; width:950px;
   background:transparent url('../images/bg-collections-bot.png') no-repeat left bottom; 
   overflow:hidden;
 }
-.region-content-expanded #block-menu-menu-browse.collections ul.menu li {
+.region-content-expanded .collections ul.menu li {
   display: block; float: left;
   padding: 5px 20px; margin: 0;
   list-style-type: none;
@@ -29,9 +29,9 @@
   border-left:1px solid #8bc53f;
   overflow: hidden;
 }
-.region-content-expanded #block-menu-menu-browse.collections ul.menu li.first {padding-left:0px; border:none;}
+.region-content-expanded .collections ul.menu li.first {padding-left:0px; border:none;}
 
-.region-content-expanded #block-menu-menu-browse.collections ul.menu li a {color:#004226; font-size:141.7%;}
+.region-content-expanded .collections ul.menu li a {color:#004226; font-size:141.7%;}
 
 /** BROWSE TABS **/
 /* Tabs */
@@ -191,12 +191,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', end
 }
 
 #view-browse-page .view-content {
-  padding:0px 10px; margin-bottom:10px; width:970px; /*min-height:100px;*/ overflow:hidden;
+  padding:0px 10px 10px 15px; margin-bottom:10px; width:965px; /*min-height:100px;*/ overflow:hidden;
 
   background:transparent url('../images/bg-facet-range-hr.png') no-repeat 50% top;
   
 }
-#view-browse-page .view-content .views-row {float:left; margin:20px; width:65px; height:38px;}
+#view-browse-page .view-content .views-row {float:left; margin:20px 10px 0px 5px; width:65px; height:38px;}
 #content-inside .block.browse-year .content .browse-year.years-list a,
 #view-browse-page .view-content .views-row a {
   display:block; padding:5px 10px; 

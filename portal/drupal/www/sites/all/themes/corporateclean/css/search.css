@@ -312,6 +312,7 @@ background: #a4d268 /* url(images/ui-bg_flat_75_a4d268_40x100.png) 50% 50% repea
   background: transparent url('../images/btn-save.png') no-repeat right top;
   border:none; cursor:pointer; 
 }
+.page-search-bhle.no-sidebars form#search-form #edit-save {/*display:none;*/}
 
 .page-search-bhle.no-sidebars form#search-form #edit-reset {
   float:right; display:block; padding:5px 40px 5px 5px; margin:26px 20px 0px; 

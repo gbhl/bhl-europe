@@ -10,12 +10,14 @@
               <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"  id="logo"><img src="/sites/default/files/logo-small.png" alt="<?php print t('Home'); ?>" /></a>
             <?php endif; ?>
      
-            <p id="skip-link">
             <!-- Skryty odkaz vedouci na napovedu ke klavesovym zkratkam -->
-            <a href="http://www.ippi.cz/klavesove-zkratky/neni-mapa-stranek.html" accesskey="1" tabindex="1" class="skiplink">Klávesové zkratky na tomto webu - rozšírené</a>
-            <a href="/" accesskey="2" tabindex="3" class="skiplink">Hlavní strana</a>
-            <a href="/#obsah" class="skiplink" tabindex="2" accesskey="0">Na informační obsah stránky</a>
+<!--            
+            <p id="skip-link">
+              <a href="http://www.ippi.cz/klavesove-zkratky/neni-mapa-stranek.html" accesskey="1" tabindex="1" class="skiplink">Klávesové zkratky na tomto webu - rozšírené</a>
+              <a href="/" accesskey="2" tabindex="3" class="skiplink">Hlavní strana</a>
+              <a href="/#obsah" class="skiplink" tabindex="2" accesskey="0">Na informační obsah stránky</a>
             </p>
+-->
   
         </div>
            

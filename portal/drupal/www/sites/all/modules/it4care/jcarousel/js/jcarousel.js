@@ -8,6 +8,12 @@
 Drupal.behaviors.jcarousel = {};
 Drupal.behaviors.jcarousel.attach = function(context, settings) {
   settings = settings || Drupal.settings;
+
+  // If no carousels exist on this part of the page, work no further. 
+  if (!settings.jcarousel || !settings.jcarousel.carousels) {
+    return;
+  }
+
   $.each(settings.jcarousel.carousels, function(key, options) {
     var $carousel = $(options.selector + ':not(.jcarousel-processed)', context);
 
@@ -41,13 +47,18 @@ Drupal.behaviors.jcarousel.attach = function(context, settings) {
     }
 
     // Add navigation to the carousel if enabled.
-    if (options.navigation && !options.setupCallback && !options.itemVisibleInCallback) {
+    if (!options.setupCallback) {
       options.setupCallback = function(carousel) {
-        Drupal.jcarousel.addNavigation(carousel, options.navigation);
+        Drupal.jcarousel.setupCarousel(carousel);
+        if (options.navigation) {
+          Drupal.jcarousel.addNavigation(carousel, options.navigation);
+        }
       };
-      options.itemLastInCallback = {
-        onAfterAnimation: Drupal.jcarousel.updateNavigationActive
-      };
+      if (options.navigation && !options.itemVisibleInCallback) {
+        options.itemLastInCallback = {
+          onAfterAnimation: Drupal.jcarousel.updateNavigationActive
+        };
+      }
     }
 
     if (!options.hasOwnProperty('buttonNextHTML') && !options.hasOwnProperty('buttonPrevHTML')) {
@@ -74,9 +85,9 @@ Drupal.jcarousel.ajaxLoadCallback = function(jcarousel, state) {
 
   // Find this view's settings in the Views AJAX settings.
   var settings;
-  $.each(Drupal.settings.views.ajaxViews, function(i, viewSettings) {
-    if ($view.is('.view-dom-id-' + viewSettings['view_dom_id'])) {
-      settings = viewSettings;
+  $.each(Drupal.settings.jcarousel.carousels, function(domID, carouselSettings) {
+    if ($list.is('.' + domID)) {
+      settings = carouselSettings['view_options'];
     }
   });
 
@@ -120,10 +131,11 @@ Drupal.jcarousel.autoPauseCallback = function(carousel, state) {
 };
 
 /**
- * Setup callback for jCarousel. Adds the navigation to the carousel if enabled.
+ * Setup callback for jCarousel. Calculates number of pages.
  */
-Drupal.jcarousel.addNavigation = function(carousel, position) {
-  // This only works for a positive starting point.  Also, .first is 1-based
+Drupal.jcarousel.setupCarousel = function(carousel) {
+  // Determine the number of pages this carousel includes.
+  // This only works for a positive starting point. Also, .first is 1-based
   // while .last is a count, so we need to reset the .first number to be
   // 0-based to make the math work.
   carousel.pageSize = carousel.last - (carousel.first - 1);
@@ -134,6 +146,21 @@ Drupal.jcarousel.addNavigation = function(carousel, position) {
   carousel.pageCount =  Math.ceil(itemCount / carousel.pageSize);
   carousel.pageNumber = 1;
 
+  // Disable the previous/next arrows if there is only one page.
+  if (carousel.pageCount == 1) {
+    carousel.buttonNext.addClass('jcarousel-next-disabled').attr('disabled', true);
+    carousel.buttonPrev.addClass('jcarousel-prev-disabled').attr('disabled', true);
+  }
+
+  // Always remove the hard-coded display: block from the navigation.
+  carousel.buttonNext.css('display', '');
+  carousel.buttonPrev.css('display', '');
+}
+
+/**
+ * Setup callback for jCarousel. Adds the navigation to the carousel if enabled.
+ */
+Drupal.jcarousel.addNavigation = function(carousel, position) {
   // Don't add a pager if there's only one page of results.
   if (carousel.pageCount <= 1) {
     return;
@@ -214,9 +241,12 @@ Drupal.jcarousel.ajaxResponseCallback = function(jcarousel, target, response) {
 
   // Add items to the jCarousel.
   $('ul.jcarousel > li', response.display).each(function(i) {
-    var itemNumber = this.className.replace(/.*?jcarousel-item-(\d+).*?/, '$1');
+    var itemNumber = this.className.replace(/.*?jcarousel-item-(\d+).*/, '$1');
     jcarousel.add(itemNumber, this.innerHTML);
   });
+
+  // Add Drupal behaviors to the content of the carousel to affect new items.
+  Drupal.attachBehaviors(jcarousel.list.get(0));
 
   // Treat messages the same way that Views typically handles messages.
   if (response.messages) {
