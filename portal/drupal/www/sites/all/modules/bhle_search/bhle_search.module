@@ -707,45 +707,49 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 }
             }
             // Append to query
-              if($query_field == 'simple') {
-                if($query) { $query .= ' ' . $condition['operator'] . ' '; }
-                $query .= '(';
-                foreach($_SESSION['bhle_search']['simple_condition']['fields'] as $delta => $value) {
-                  if($value == 1) {
-                    switch ($delta) {
-                      case 'title':
-                        if($in_query) { $query .= ' OR '; }
-                        $query .= variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD) . ':' . $query_term . '';
-                        $in_query = 1;
-                        break;
-                      case 'author':
-                        if($in_query) { $query .= ' OR '; }
-                        $query .= variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD) . ':' . $query_term . '';
-                        $in_query = 1;
-                        break;
-                      case 'year':
-                        if($in_query) { $query .= ' OR '; }
-                        $query .= variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD) . ':' . $query_term . '';
-                        $in_query = 1;
-                        break;
-                      case 'scientific_name':
-                        if($in_query) { $query .= ' OR '; }
-                        $query .= variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) . ':' . $query_term . '';
-                        $in_query = 1;
-                        break;
-                    }
+            if($query_field == 'simple') {
+              if($query) { $query .= ' ' . $condition['operator'] . ' '; }
+              $query .= '(';
+              foreach($_SESSION['bhle_search']['simple_condition']['fields'] as $delta => $value) {
+                if($value == 1) {
+                  switch ($delta) {
+                    case 'title':
+                      if($in_query) { $query .= ' OR '; }
+                      $query .= variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD) . ':' . $query_term . '';
+                      $in_query = 1;
+                      break;
+                    case 'author':
+                      if($in_query) { $query .= ' OR '; }
+                      $query .= variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD) . ':' . $query_term . '';
+                      $in_query = 1;
+                      break;
+                    case 'year':
+                      if($in_query) { $query .= ' OR '; }
+                      $query .= variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD) . ':' . $query_term . '';
+                      $in_query = 1;
+                      break;
+                    case 'scientific_name':
+                      if($in_query) { $query .= ' OR '; }
+                      $query .= variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) . ':' . $query_term . '';
+                      $in_query = 1;
+                      break;
                   }
                 }
-                $query .= ')';
-              } else {
-                if($query) { $query .= ' ' . $condition['operator'] . ' '; }
-                $query .= $query_field . ':(' . $query_term . ')';
               }
-              $search_summary_query_info = array(
-                'query_field' => $query_field,
-                'query_term' => $query_term
-              );
-              bhle_search_search_summary_add($condition, $search_summary_query_info);
+              $query .= ')';
+            } else {
+              if($query) {
+                $operator = ' ' . $condition['operator'] . ' ';
+              }
+              $query .= $operator . _wildcard_save_query_token($query_field, $query_term, TRUE);
+            }
+
+            $search_summary_query_info = array(
+              'query_field' => $query_field,
+              'query_term' => $query_term
+            );
+
+            bhle_search_search_summary_add($condition, $search_summary_query_info);
         }
 
         // lowercase the full query string if it is not an exact search.
@@ -934,6 +938,23 @@ function _solrdoc_getField(&$solr_doc, $fieldName, $glue = ', ') {
             return $field;
         }
     }
+}
+
+function _wildcard_save_query_token($query_field, $query_term, $term_in_brackets=false){
+
+    if($term_in_brackets){
+        $ob = '(';
+        $cb = ')';
+    }
+
+    if(_is_wildcard_query($query_term)) {
+        $query_token .= '(' ;
+        $query_token .= $query_field . ':' . $ob . $query_term . $cb .' OR ' . $query_field . '__exact:' . $ob . $query_term . $cb;
+        $query_token .= ')';
+    } else {
+        $query_token .= $query_field . ':' . $ob . $query_term . $cb;
+    }
+    return $query_token;
 }
 
 function _is_wildcard_query($query_string) {
@@ -1281,8 +1302,8 @@ function bhle_search_search_summary_add_hit_count() {
         foreach ($search_summary as $summary_element) {
             $query_item = $summary_element['query'];
             if (trim($query_item['query_term'])) { // check for empty term
-              if($query_item['query_field'] == 'simple') {
 
+             if($query_item['query_field'] == 'simple') {
 
                 foreach($_SESSION['bhle_search']['simple_condition']['fields'] as $delta => $value) {
                   if($value == 1) {
@@ -1315,7 +1336,7 @@ function bhle_search_search_summary_add_hit_count() {
                 //$params['facet.query'][] = 'mods_date_issued:1901 OR mods_date_issued:1900';
                 $params['facet.query'][] = $q;
               } else {
-                $params['facet.query'][] = $query_item['query_field'] . ":" . ($query_item['query_term'] ? $query_item['query_term'] : '""');
+                $params['facet.query'][] = _wildcard_save_query_token($query_item['query_field'], ($query_item['query_term'] ? $query_item['query_term'] : '""'));
               }
             }
         }
