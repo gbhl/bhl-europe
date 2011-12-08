@@ -214,9 +214,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', end
 #content-inside .block.browse-year .content .browse-year.years-list a:hover,
 #view-browse-page .view-content .views-row a:hover {/* background-position:left top; */ background-color:#8bc53f;}
 
+
+/** Use the Range Button ---------------- **/
+#view-browse-page .view-filters .userange-button {
+  float:right; padding-top:50px; 
+  width:184px; 
+  overflow:hidden;
+}
+#view-browse-page .view-filters .userange-button a {
+  float:left; display:block; 
+  padding:5px 35px; margin-bottom:15px; 
+  color:#006626;
+
+  background: rgb(231,243,215); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZjNkNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYmQ1NzQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(231,243,215,1) 0%, rgba(171,213,116,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,243,215,1)), color-stop(100%,rgba(171,213,116,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(231,243,215,1) 0%,rgba(171,213,116,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(231,243,215,1) 0%,rgba(171,213,116,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(231,243,215,1) 0%,rgba(171,213,116,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(231,243,215,1) 0%,rgba(171,213,116,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7f3d7', endColorstr='#abd574',GradientType=0 ); /* IE6-8 */
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  border: #8bc53f 1px solid; 
+}
+#view-browse-page .view-filters .userange-button a:hover {
+  border-color:#006626; text-decoration:none;
+}
+
 /* ------------------ */
 
-form#views-exposed-form-browse-page {padding:0px 10px; width:960px;}
+form#views-exposed-form-browse-page {float:left; padding:0px 10px; width:750px;}
 form#views-exposed-form-browse-page #edit-slider-filter-wrapper {float:left; width:682px;}
 form#views-exposed-form-browse-page #edit-slider-filter-wrapper label {display:none;}
 form#views-exposed-form-browse-page .ui-slider-horizontal {
@@ -242,7 +275,7 @@ background: #006626 none;
   border-radius: 2px;
 }
 /*form#views-exposed-form-browse-page .ui-state-default,*/
-form#views-exposed-form-browse-page .ui-widget-content .ui-state-default.ui-slider-max {
+form#views-exposed-form-browse-page .ui-widget-content .ui-state-default.ui-slider-max {  
   border: 0px solid lightGrey;     text-align:center; color:#006626; font-size:116.4%; font-weight:bold;
   background: transparent url('../images/lbl-browse-year-slider-max.png') no-repeat left top;
 }
@@ -269,7 +302,7 @@ form#views-exposed-form-browse-page .ui-slider .ui-slider-handle {
 
 form#views-exposed-form-browse-page .ui-slider .ui-slider-handle:hover {text-decoration:none;}
 
-form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button {float:right; padding-top:30px; width:184px;}
+form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button {display:none; float:right; padding-top:30px; width:184px;}
 form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button input {
   height:38px; width:184px;
   text-indent:-50000px;
@@ -323,3 +356,6 @@ form#views-exposed-form-browse-page .form-item.form-type-textfield.form-item-sli
 .ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
 .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
 .ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+
+
