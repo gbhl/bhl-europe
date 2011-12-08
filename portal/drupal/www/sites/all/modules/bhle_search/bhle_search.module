@@ -840,16 +840,16 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 $results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-' . $contentType));
                 $results[$doc_index]['content_type'] = $contentType;
                 $results[$doc_index]['PID'] = _solrdoc_getField($doc, 'PID');
-                $results[$doc_index]["extra"] = array();
+                $results[$doc_index]['extra'] = array();
 
                 $field_map = bhle_search_search_result_field_map_for($contentType);
                 foreach ($field_map as $label => $solr_field_name) {
                     if ($solr_field_name == $title_field_name) {
-                        $results[$doc_index]["link"] = '/bhle-view/' . $doc->PID;
-                        $results[$doc_index]["title"] = _solrdoc_getField($doc, $solr_field_name);
+                        $results[$doc_index]['link'] = url('bhle-view/' . $doc->PID);
+                        $results[$doc_index]['title'] = _solrdoc_getField($doc, $solr_field_name);
                     } else {
                         //TODO use hook_node_search_result instead
-                        $results[$doc_index]["extra"][$label] = _solrdoc_getField($doc, $solr_field_name);
+                        $results[$doc_index]['extra'][$label] = _solrdoc_getField($doc, $solr_field_name);
                     }
                 }
                 $doc_index++;
@@ -937,7 +937,7 @@ function _solrdoc_getField(&$solr_doc, $fieldName, $glue = ', ') {
 }
 
 function _is_wildcard_query($query_string) {
-	return strpos($query, "*") || strpos($query, "?");
+	return strpos($query_string, "*") !== false || strpos($query_string, "?") !== false;
 }
 
 /**

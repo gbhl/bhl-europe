@@ -14,16 +14,16 @@
 <div class="biblio-context-panel">
 
   <div class="collection-id">
-    <p><label><?php print t('Collection'); ?></label> <a href="#" title="<?php print t('Collection'); ?>"> <?php print $collection; ?></a></p> 
+    <p><label><?php print t('Collection'); ?></label> <a href="#" title="<?php print t('Collection'); ?>"> <?php print $collection; ?></a></p>
     <p><label><?php print t('intern BHLE ID'); ?></label> <?php print $intern_bhle_id; ?></p>
   </div>
 
   <div class="content-preview"><img src="<?php print $content_preview; ?>" alt="" /></div>
-    
+
   <div class="biblio-read-links-block">
     <div class="biblio-read-years">
 
-	    <?php foreach () : ?>
+	    <?php foreach (array() as $nothing) : // dummy code ?>
 	      <a href="#"></a>
       <?php endforeach; ?>
 
