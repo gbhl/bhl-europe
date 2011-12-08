@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 #######################################################
 #
@@ -50,8 +50,10 @@ OUT=/tmp/post2solr.out.xml
 
 SAVEIFS=$IFS
 IFS=$'\n'
-FILE_LIST=($(grep -rl "rdf:resource=\"info:fedora/islandora:bookCModel\"></hasModel>" ./))
+FILE_LIST=($(grep -rl "rdf:resource=\"info:fedora/islandora:bookCModel\"" ./))
 IFS=$SAVEIFS
+
+echo "Filelist: "$FILE_LIST
 
 for i in ${FILE_LIST[*]}
 do
