@@ -237,7 +237,8 @@
   <element>
     <bibliographicInformation>
       <mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
-        <mods:title>Flora de Catalunya</mods:title>
+        <mods:nonSort>El</mods:nonSort>
+        <mods:title>    Flora de Catalunya</mods:title>
         <mods:subTitle>enumeració y descripció de les plantes vasculars espontanies de l'antic principat fins avuy conegudes y de les més importants que s'hi cultiven</mods:subTitle>
       </mods:titleInfo>
       <mods:name xmlns:mods="http://www.loc.gov/mods/v3">

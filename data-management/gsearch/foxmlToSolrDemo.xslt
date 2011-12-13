@@ -9,12 +9,12 @@
 	xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
-	<!-- This xslt stylesheet generates the Solr doc element consisting of field 
-		elements from a FOXML record. You must specify the index field elements in 
-		solr's schema.xml file, including the uniqueKey element, which in this case 
-		is set to "PID". Options for tailoring: - generation of fields from other 
-		XML metadata streams than DC - generation of fields from other datastream 
-		types than XML - from datastream by ID, text fetched, if mimetype can be 
+	<!-- This xslt stylesheet generates the Solr doc element consisting of field
+		elements from a FOXML record. You must specify the index field elements in
+		solr's schema.xml file, including the uniqueKey element, which in this case
+		is set to "PID". Options for tailoring: - generation of fields from other
+		XML metadata streams than DC - generation of fields from other datastream
+		types than XML - from datastream by ID, text fetched, if mimetype can be
 		handled. -->
 	<xsl:param name="REPOSITORYNAME" select="repositoryName"/>
 	<xsl:param name="FEDORASOAP" select="repositoryName"/>
@@ -36,7 +36,7 @@
 				</xsl:if>
 			</xsl:if>
 		</xsl:if>
-		<!-- The following allows inactive FedoraObjects to be deleted from the 
+		<!-- The following allows inactive FedoraObjects to be deleted from the
 			index. -->
 		<xsl:if
 			test="foxml:digitalObject/foxml:objectProperties/foxml:property[@NAME='info:fedora/fedora-system:def/model#state' and @VALUE='Inactive']">
@@ -56,10 +56,10 @@
 				<field name="PID">
 					<xsl:value-of select="$PID"/>
 				</field>
-				<!-- <field name="REPOSITORYNAME"> <xsl:value-of select="$REPOSITORYNAME"/> 
-					</field> <field name="REPOSBASEURL"> <xsl:value-of select="substring($FEDORASOAP, 
+				<!-- <field name="REPOSITORYNAME"> <xsl:value-of select="$REPOSITORYNAME"/>
+					</field> <field name="REPOSBASEURL"> <xsl:value-of select="substring($FEDORASOAP,
 					1, string-length($FEDORASOAP)-9)"/> </field> -->
-				<!-- Content type <xsl:for-each select="foxml:datastream[last()]/foxml:datastreamVersion/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']" 
+				<!-- Content type <xsl:for-each select="foxml:datastream[last()]/foxml:datastreamVersion/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']"
 					> -->
 				<xsl:for-each
 					select="foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='hasModel']">
@@ -111,23 +111,23 @@
 
 
 				<!-- variant with works when local namespace NOT SET on mods element -->
-				<!-- <xsl:for-each select="/foxml:digitalObject/foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/mods"> 
-					<xsl:call-template name="mods-name-DEBUG"/> <DEBUG><xsl:value-of select="language"/></DEBUG> 
+				<!-- <xsl:for-each select="/foxml:digitalObject/foxml:datastream/foxml:datastreamVersion/foxml:xmlContent/mods">
+					<xsl:call-template name="mods-name-DEBUG"/> <DEBUG><xsl:value-of select="language"/></DEBUG>
 					</xsl:for-each> -->
 
-				<!-- Datastreams datastream is fetched, if its mimetype can be handled, 
+				<!-- Datastreams datastream is fetched, if its mimetype can be handled,
 					the text becomes the value of the field. -->
-				<!-- <xsl:for-each select="foxml:datastream[@CONTROL_GROUP='M' or @CONTROL_GROUP='E' 
-					or @CONTROL_GROUP='R']"> <field> <xsl:attribute name="name"> <xsl:value-of 
-					select="concat('dsm_', @ID)"/> </xsl:attribute> <xsl:value-of select="exts:getDatastreamText($PID, 
-					$REPOSITORYNAME, @ID, $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH, 
+				<!-- <xsl:for-each select="foxml:datastream[@CONTROL_GROUP='M' or @CONTROL_GROUP='E'
+					or @CONTROL_GROUP='R']"> <field> <xsl:attribute name="name"> <xsl:value-of
+					select="concat('dsm_', @ID)"/> </xsl:attribute> <xsl:value-of select="exts:getDatastreamText($PID,
+					$REPOSITORYNAME, @ID, $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH,
 					$TRUSTSTOREPASS)"/> </field> </xsl:for-each> -->
-				<!-- creating an index field with all text from the foxml record and 
+				<!-- creating an index field with all text from the foxml record and
 					its datastreams -->
-				<!-- <field name="foxml_all_text"> <xsl:for-each select="//text()"> <xsl:value-of 
-					select="."/> <xsl:text>&#160;</xsl:text> </xsl:for-each> <xsl:for-each select="//foxml:datastream[@CONTROL_GROUP='M' 
-					or @CONTROL_GROUP='E' or @CONTROL_GROUP='R']"> <xsl:value-of select="exts:getDatastreamText($PID, 
-					$REPOSITORYNAME, @ID, $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH, 
+				<!-- <field name="foxml_all_text"> <xsl:for-each select="//text()"> <xsl:value-of
+					select="."/> <xsl:text>&#160;</xsl:text> </xsl:for-each> <xsl:for-each select="//foxml:datastream[@CONTROL_GROUP='M'
+					or @CONTROL_GROUP='E' or @CONTROL_GROUP='R']"> <xsl:value-of select="exts:getDatastreamText($PID,
+					$REPOSITORYNAME, @ID, $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH,
 					$TRUSTSTOREPASS)"/> <xsl:text>&#160;</xsl:text> </xsl:for-each> </field> -->
 			</doc>
 		</add>
@@ -169,14 +169,28 @@
 		<xsl:variable name="hierarchic" select="mods:subject/mods:hierarchicalGeographic"/>
 		<xsl:variable name="subname" select="mods:subject/mods:name"/>
 
-		<!-- SetSpec is handled twice, once for regular indexing and once for faceting, 
+		<!-- SetSpec is handled twice, once for regular indexing and once for faceting,
 		The setSpec will be broken up into individual elements by the java processing -->
-		
+
+		<!--
+		        First accurrence of title in the current mods element for sorting, 
+		       circumventing problems with multiple title entries
+		-->
+		<xsl:variable name="firstTitleNonSort" select="*/mods:title[1]"/>
 		<xsl:element name="field">
-			<xsl:attribute name="name">mods_title__search</xsl:attribute>
-			<!-- including nsort because this is keyword search spec -->
-			<xsl:value-of select="//mods:title[1]"/>
+			<xsl:attribute name="name">mods_title__sort</xsl:attribute>
+			<!-- excluding mods:nonSort, mods:subTitle -->
+			<xsl:value-of select="$firstTitleNonSort"/>
 		</xsl:element>
+		<!-- ... and browsing functionality we only take the first 4 letters since we are
+			interessted into the start of the full title phrase only
+		-->
+		<xsl:element name="field">
+			<xsl:attribute name="name">mods_title__browse</xsl:attribute>
+			<!-- excluding mods:nonSort, mods:subTitle -->
+			<xsl:value-of select="substring(translate(normalize-space($firstTitleNonSort), ' ', '_'), 1, 8)"/>
+		</xsl:element>
+		
 
 		<xsl:for-each select="mods:*">
 			<!-- titleInfo -->
@@ -193,7 +207,7 @@
 			<xsl:if test="local-name() = 'subject'">
 				<xsl:call-template name="mods-subject"/>
 			</xsl:if>
-			
+
 
 			<!-- typeOfResource -->
 			<xsl:if test="local-name() = 'typeOfResource'">
@@ -454,9 +468,9 @@
 
 
 	<xsl:template match="mods:originInfo" name="mods-originInfo">
-		<!--+ + first look for any date with a keyDate and any attribute with the 
-			value w3cdtf + then for any date with a keyDate + then for the first dateIssued 
-			+ then for the first dateCreated + then for the first copyrightDate + then 
+		<!--+ + first look for any date with a keyDate and any attribute with the
+			value w3cdtf + then for any date with a keyDate + then for the first dateIssued
+			+ then for the first dateCreated + then for the first copyrightDate + then
 			for the first dateOther + -->
 		<xsl:variable name="date_splat_w3c_key_date" select="*[@keyDate and @*='w3cdtf']"/>
 		<xsl:variable name="date_splat_key_date" select="*[@keyDate]"/>
@@ -501,7 +515,7 @@
 			<xsl:when test="$date_issued">
 				<xsl:for-each select="$date_issued">
 					<xsl:element name="field">
-						<!-- special field for date_issued, all other dates are accumulated 
+						<!-- special field for date_issued, all other dates are accumulated
 							in raw_date -->
 						<xsl:attribute name="name">mods_date_issued</xsl:attribute>
 						<xsl:choose>
@@ -600,7 +614,7 @@
 
 		<xsl:variable name="pl" select="mods:place"/>
 		<xsl:variable name="pub" select="mods:publisher"/>
-		<!-- BUG in next line <xsl:variable name="datei" select="dateIssued" separator="== 
+		<!-- BUG in next line <xsl:variable name="datei" select="dateIssued" separator="==
 			"/> replaced by following: -->
 		<xsl:variable name="datei" select="mods:dateIssued"/>
 		<xsl:variable name="datec" select="mods:dateCreated"/>
