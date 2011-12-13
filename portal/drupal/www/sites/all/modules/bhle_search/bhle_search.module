@@ -1392,7 +1392,7 @@ function template_preprocess_search_summary(&$variables) {
 
             $entered_term = $condition['term'];
             $expanded_term = $summary_element['query']['query_term'];
-            if ($expanded_term !== $entered_term) {
+            if ($expanded_term !== bhle_search_solr_escape($entered_term))  {
                 $variables['matches_for']['info'][$i]['term_expanded'] = check_plain($expanded_term);
             }
         }
