@@ -618,6 +618,9 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     // ...we have advanced search
     else {
         // Build Solr query out of the conditions
+
+        // $previous_condition_operator will  hold the condition operator of the previous condition
+        $previous_condition_operator = null;
         foreach ($conditions as $condition) {
 
             // Get the query field
@@ -738,10 +741,13 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
               }
               $query .= ')';
             } else {
-              if($query) {
-                $operator = ' ' . $condition['operator'] . ' ';
-              }
-              $query .= $operator . _wildcard_save_query_token($query_field, $query_term, TRUE);
+                // lowercase the full $query_term if it is not an exact search.
+                // This step is needed to normalize tokens in the case
+                // of wildcard searches. All analyzers are ommited in this case.
+                if(!$condition['exact_phrase']) {
+                    $query_term = strtolower( $query_term );
+                }
+                $query .= ($previous_condition_operator ? ' ' . $previous_condition_operator . ' ' : '') . _wildcard_save_query_token($query_field, $query_term, TRUE);
             }
 
             $search_summary_query_info = array(
@@ -750,14 +756,9 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             );
 
             bhle_search_search_summary_add($condition, $search_summary_query_info);
-        }
+            $previous_condition_operator = strtoupper( $condition['operator'] );
+        } // END of loop over conditions
 
-        // lowercase the full query string if it is not an exact search.
-        // This step is needed to normalize tokens in the case
-        // of wildcard searches. All analyzers are ommited in this case.
-        if(!$condition['exact_phrase']) {
-        	$query = strtolower( $query );
-        }
     }
 
     // Do not search if there is no query

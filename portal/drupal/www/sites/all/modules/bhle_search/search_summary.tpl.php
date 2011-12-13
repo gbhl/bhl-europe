@@ -45,7 +45,7 @@
 	<div class="matches_for">
 		<h3 class="heading collapsing-grip expanded"><?php print $matches_for['label']; ?>:</h3>
 		<ul id="searched-querry" class="collapsing-content">
-		<?php foreach ($matches_for['info'] as $info) : ?>
+		<?php $i=1; foreach ($matches_for['info'] as $info) : ?>
 			<li>
 				<?php if($info['exact_phrase'] == 1) :?><span class="exact">exact:</span><?php endif; ?>
 				<span class="terms"><?php print $info['term']; ?></span>
@@ -54,7 +54,9 @@
 				<?php endif; ?>
 				<span class="count">(<?php print $info['count']; ?>)</span>
 				<span class="field"><?php print $info['field_label']; ?></span>
+				<?php if(++$i < count($matches_for)) : ?>
 				<span class="operator"><?php print $info['operator']; ?></span>
+				<?php endif; ?>
 			</li>
 		<?php endforeach; ?>
 		</ul>
