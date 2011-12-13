@@ -609,55 +609,55 @@
 	<!-- title  -->
     <field name="mods_title" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_title__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <field name="mods_title__browse" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_title" dest="mods_title__exact"/>
-    <!--<copyField source="mods_title" dest="mods_title__sort"/>-->
     <copyField source="mods_title" dest="all"/>
     <copyField source="mods_title" dest="all__exact"/>
-    <field name="mods_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
 	<!-- author name  -->
     <field name="mods_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_name__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_name__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_name__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_name" dest="mods_name__exact"/>
     <copyField source="mods_name" dest="mods_name__facet"/>
     <!--<copyField source="mods_name" dest="mods_name__sort"/>-->
     <copyField source="mods_name" dest="all"/>
     <copyField source="mods_name" dest="all__exact"/>
-    <field name="mods_name__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
 	<!-- date issued (year string expected) -->
     <field name="mods_date_issued" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_date_issued__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_date_issued__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_date_issued__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_date_issued" dest="mods_date_issued__exact"/>
     <copyField source="mods_date_issued" dest="mods_date_issued__facet"/>
     <!--<copyField source="mods_date_issued" dest="mods_date_issued__sort"/>-->
     <copyField source="mods_date_issued" dest="all"/>
     <copyField source="mods_date_issued" dest="all__exact"/>
-    <field name="mods_date_issued__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
 	<!--   -->
     <field name="mods_type_of_resource" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_type_of_resource__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_type_of_resource__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_type_of_resource__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_type_of_resource" dest="mods_type_of_resource__exact"/>
     <copyField source="mods_type_of_resource" dest="mods_type_of_resource__facet"/>
     <!--<copyField source="mods_type_of_resource" dest="mods_type_of_resource__sort"/>-->
     <copyField source="mods_type_of_resource" dest="all"/>
     <copyField source="mods_type_of_resource" dest="all__exact"/>
-    <field name="mods_type_of_resource__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
 	<!-- keywords on subject  -->
     <field name="mods_subject" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_subject__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_subject__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_subject__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_subject" dest="mods_subject__exact"/>
     <copyField source="mods_subject" dest="mods_subject__facet"/>
     <!--<copyField source="mods_subject" dest="mods_subject__sort"/>-->
     <copyField source="mods_subject" dest="all"/>
     <copyField source="mods_subject" dest="all__exact"/>
-    <field name="mods_subject__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
 	<!-- publisher -->
     <field name="mods_publisher" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
@@ -677,22 +677,22 @@
     <field name="mods_record_content_source" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_record_content_source__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_record_content_source__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_record_content_source__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_record_content_source" dest="mods_record_content_source__exact"/>
     <copyField source="mods_record_content_source" dest="mods_record_content_source__facet"/>
     <!--<copyField source="mods_record_content_source" dest="mods_record_content_source__sort"/>-->
     <copyField source="mods_record_content_source" dest="all"/>
     <copyField source="mods_record_content_source" dest="all__exact"/>
-    <field name="mods_record_content_source__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
     <field name="mods_language" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_language__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_language__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_language__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_language" dest="mods_language__exact"/>
     <copyField source="mods_language" dest="mods_language__facet"/>
     <!--<copyField source="mods_language" dest="mods_language__sort"/>-->
     <copyField source="mods_language" dest="all"/>
     <copyField source="mods_language" dest="all__exact"/>
-    <field name="mods_language__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
 
     <field name="mods_abstract" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_abstract__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>

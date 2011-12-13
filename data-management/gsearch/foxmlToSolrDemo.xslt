@@ -188,7 +188,7 @@
 		<xsl:element name="field">
 			<xsl:attribute name="name">mods_title__browse</xsl:attribute>
 			<!-- excluding mods:nonSort, mods:subTitle -->
-			<xsl:value-of select="substring(translate(normalize-space($firstTitleNonSort), ' ', '_'), 1, 8)"/>
+			<xsl:value-of select="substring(translate(normalize-space($firstTitleNonSort), ' ', '_'), 1, 4)"/>
 		</xsl:element>
 		
 
