@@ -54,7 +54,7 @@
 				<?php endif; ?>
 				<span class="count">(<?php print $info['count']; ?>)</span>
 				<span class="field"><?php print $info['field_label']; ?></span>
-				<?php if(++$i < count($matches_for)) : ?>
+				<?php if(++$i <= count($matches_for['info'])) : ?>
 				<span class="operator"><?php print $info['operator']; ?></span>
 				<?php endif; ?>
 			</li>

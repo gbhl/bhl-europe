@@ -547,11 +547,15 @@ function bhle_search_conditions($keys = null) {
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
     // wildcards: * ? are the only allowed characters!
-    return str_replace(array(
+    $escaped_str = str_replace(array(
                 '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', ':', '\\',
                     ), array(
                 '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\:', '\\\\',
                     ), $string);
+
+    // allow using escape sequences like \\[ in the original $string
+    $escaped_str = str_replace('\\\\\\', '', $escaped_str);
+    return $escaped_str;
 }
 
 /**
@@ -741,11 +745,14 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
               }
               $query .= ')';
             } else {
-                // lowercase the full $query_term if it is not an exact search.
-                // This step is needed to normalize tokens in the case
-                // of wildcard searches. All analyzers are ommited in this case.
-                if(!$condition['exact_phrase']) {
+                if( _is_wildcard_query($query_term) && !$condition['exact_phrase']) {
+                    // lowercase the full $query_term if it is not an exact search.
+                    // This step is needed to normalize tokens in the case
+                    // of wildcard searches. All analyzers are ommited in this case.
+                    // but preserve ' AND ', ' OR ', ' TO '
                     $query_term = strtolower( $query_term );
+                    $query_term = str_replace(array(' and ', ' or ', ' to '), array(' AND ', ' OR ', ' TO '), $query_term);
+
                 }
                 $query .= ($previous_condition_operator ? ' ' . $previous_condition_operator . ' ' : '') . _wildcard_save_query_token($query_field, $query_term, TRUE);
             }
@@ -1264,7 +1271,7 @@ function bhle_search_search_summary_add($condition = null, $query = null) {
         $_search_summary = array();
     }
     if ($condition != null && $query != null) {
-        $_search_summary[] = array('condition' => $condition, 'query' => $query);
+        $_search_summary[] = array('condition' => $condition, 'query' => bhle_search_solr_escape($query));
     }
 
     return $_search_summary;
@@ -1392,7 +1399,7 @@ function template_preprocess_search_summary(&$variables) {
 
             $entered_term = $condition['term'];
             $expanded_term = $summary_element['query']['query_term'];
-            if ($expanded_term !== bhle_search_solr_escape($entered_term))  {
+            if ($expanded_term !== $entered_term)  {
                 $variables['matches_for']['info'][$i]['term_expanded'] = check_plain($expanded_term);
             }
         }
