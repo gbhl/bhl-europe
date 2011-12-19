@@ -183,7 +183,50 @@ function names_lookup_synonyms_col( $scientific_name ) {
 function names_lookup_accepted_pesi( $scientific_name ) {
     $accepted_name = array();
     
-    $response = _names_lookup_soap_cache("getPESIRecordsByVernacular", $common_name);
+    $response = _names_lookup_soap_cache("getPESIRecords", $scientific_name);
+}
+
+function names_lookup_accepted_col( $scientific_name ) {
+    // Replace any "*" by "%" since CoL's webservice can handle both and this optimizes the caching
+    $scientific_name = str_replace( "*", "%", $scientific_name );
+    $synonym_names = array();
+    
+    $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&name=";
+    
+    // Send the request to the webserver
+    $response = _names_lookup_webservice_request( $scientific_name, $col_base . urlencode($scientific_name) );
+    // Check for a valid response
+    if( $response != "" ) {
+        $response_data = unserialize( $response );
+        
+        // Check if we received something senseful
+        if( $response_data === false ) {
+            return;
+        }
+        
+        // Get the results
+        if( !isset( $response_data["results"] ) ) return false;
+        $results = $response_data["results"];
+        
+        // Cycle through results
+        foreach( $results as $result ) {
+            // Check if this is a synonym
+            if( isset($result['sn_id']) ) {
+                $sn_id = intval($result['sn_id']);
+                
+                // Check for a valid synonym-id
+                if( $sn_id <= 0 ) continue;
+                
+                $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&id=";
+                $response = _names_lookup_webservice_request( $sn_id, $col_base . urlencode($sn_id) );
+            }
+        }
+        
+        // Return any found synonyms
+        return $synonym_names;
+    }
+    
+    return false;
 }
 
 /**
