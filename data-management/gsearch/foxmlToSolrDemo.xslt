@@ -144,16 +144,21 @@
 
 	<xsl:template match="olef" name="olef">
 		<xsl:for-each select="element/bibliographicInformation">
-			<xsl:call-template name="mods"/>
+			<xsl:call-template name="mods" />
 		</xsl:for-each>
 		<xsl:for-each select="element/itemInformation">
 			<xsl:for-each select="files/file/pages/page/taxon/dwc:scientificName">
 				<xsl:element name="field">
 					<xsl:attribute name="name">olef_scientific_name</xsl:attribute>
-					<xsl:value-of select="."/>
+					<xsl:value-of select="." />
 				</xsl:element>
 			</xsl:for-each>
 		</xsl:for-each>
+		<!-- As soon as OLEF content from Pre-ingest is coming, we will activate this rule -->
+		<!--<xsl:element name="field">
+			<xsl:attribute name="name">contentType</xsl:attribute>
+			<xsl:value-of select="element/level" />
+		</xsl:element>-->
 	</xsl:template>
 
 	<xsl:template match="mods:mods" name="mods">
@@ -294,17 +299,13 @@
 			<!-- recordInfo -->
 			<xsl:if
 				test="local-name() = 'recordInfo' and child::*[local-name() = 'recordContentSource']">
-				<xsl:element name="field">
-					<xsl:attribute name="name">mods_record_content_source</xsl:attribute>
-					<xsl:for-each select="mods:recordContentSource">
-						<xsl:if test=". != ''">
-							<xsl:if test="position() != 1">
-								<xsl:text>; </xsl:text>
-							</xsl:if>
+				<xsl:for-each select="mods:recordContentSource">
+					<xsl:element name="field">
+						<xsl:attribute name="name">mods_record_content_source</xsl:attribute>
 							<xsl:value-of select="."/>
 						</xsl:if>
-					</xsl:for-each>
-				</xsl:element>
+					</xsl:element>
+				</xsl:for-each>
 			</xsl:if>
 
 		</xsl:for-each>
