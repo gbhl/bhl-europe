@@ -6,15 +6,14 @@
 // ** AUTHOR:  ANDREAS MEHRRATH         **
 // ***************************************
 
-// -----------------------
-// ---- CUSTOM CONFIG ----
-// -----------------------
 
 // ABSOLUTE PATH TO THE INGEST APPLICATION ROOT (WHERE INGEST.PHP RESIDE!)
 define("_ABS",                      str_replace("//","/",$_SERVER['DOCUMENT_ROOT']."/"));
 
-// URL TO THE INGEST APPLICATION
+// URL TO THE INGEST APPLICATION (bhl-int.nhm.ac.uk)
 define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/");
+
+define("_UPLOADS_HOME",             "http://bhl-celsus.nhm.ac.uk/uploads/");
 
 // TECHNICAL CONTACT
 define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
@@ -27,8 +26,11 @@ define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
 
 define("_WORK_DIR",                 _ABS."temp/");
 define("_CONTENT_ROOT",             "G:/dev/nhm/bhl/ingest/testdata/");
-define("_AIP_DIR",					".aip");
-define("_AIP_OLEF_FN",				"olef.xml");
+define("_REVERSE_LOOKUP_URL",       "http://bhl-celsus.nhm.ac.uk/uploads/");
+define("_AIP_DIR",		    ".aip");
+define("_AIP_OLEF_FN",		    "olef.xml");
+define("_SELF_ADMIN",               false);        // SELF ADMIN OF CP SETTINGS ON|OFF
+
 
 
 // DATABASE DETAILS
@@ -40,10 +42,7 @@ define("_DB_DEBUG",                 true);
 
 
 
-// MAX DIRECTORY STRUCTURE DEPTH
-define("_ANALYZE_MAX_DEPTH",        "10");
-
-
+// CONTENT SPECIFIC
 // --------------------
 // ---- FILE TYPES ----
 // --------------------
@@ -51,6 +50,13 @@ define("_PAGEDATA_EXT",             ".tif,.tiff,.jpeg,.jpg,.ppm,.gif,.TIF,.TIFF,
 define("_BOOKDATA_EXT",             ".pdf,.PDF");
 define("_METADATA_EXT",             ".xml,.marc,.XML,.MARC");
 define("_OCRDATA_EXT",              ".txt,.ocr,.TXT,.OCR");
+define("_ANALYZE_MAX_DEPTH",        20);            // MAX DIRECTORY STRUCTURE DEPTH
+
+
+// NOID
+// ---------------------
+define("_NOID",                     "G:/dev/nhm/bhl/ingest/bin/noid/noid -f G:/dev/nhm/bhl/ingest/bin/noid/noid/ mint 1");
+define("_NOID_PREFIX",              "10706/a0");
 
 
 // -----------------------------
@@ -58,7 +64,7 @@ define("_OCRDATA_EXT",              ".txt,.ocr,.TXT,.OCR");
 // -----------------------------
 define("_JAVA_BIN",                 "java.exe");
 define("_SCHEMA_MAPPER",            "G:/dev/nhm/bhl/ingest/bin/smt/SMT-cli.jar");
-define("_SMT",                      _JAVA_BIN." -jar \"".str_replace("/","\\",_SCHEMA_MAPPER)."\"");
+define("_SMT",                      _JAVA_BIN." -jar "._SCHEMA_MAPPER." ");
 
 
 // -------------------------------------
@@ -88,12 +94,17 @@ define("_OCR_ABS",                  "G:/dev/nhm/bhl/ingest/bin/tesseract/");
 define("_OCR_DAT",                  _OCR_ABS."tessdata/");
 define("_TESSERACT",                _OCR_ABS."tesseract.exe");
 
+define("_OCR_TIMEOUT",              120);
+
 
 // -------------------------------
 // ---- TAXON SPECIFIC (UBIO) ----
 // -------------------------------
 define("_TAXON_FINDER",             "http://www.ubio.org/webservices/service.php?function=taxonFinder&includeLinks=0&url=");
-define("_TAXON_FINDIT",             "http://www.ubio.org/webservices/service.php?function=findIT&strict=1&url=")
+define("_TAXON_FINDIT",             "http://www.ubio.org/webservices/service.php?function=findIT&strict=1&url=");
+define("_TAXON_TESTFILE",           "http://www.ubio.org/tools/Small.txt");
 
-        
+define("_TAXON_WEB_TIMEOUT",        19);
+
+
 ?>

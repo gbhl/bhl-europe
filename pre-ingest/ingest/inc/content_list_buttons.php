@@ -5,98 +5,109 @@
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
-
-
-// WORKSTEPS
-// arr_dropdown($myArr, $feldname, $wert, $size, $title, $js)
+// GUI WORKSTEPS
 
 
 // !!! HIER EINSCHALTEN ALLER TASKS FUER DEN ZU ERSTELLENDEN JOB!!!!
-
-// !!! VON GRAU AUF FARBIG -- WENN FERTIG AUF HAECKCHEN
-
 // !!! BUTTON CSS UEBERARBEITEN WIE IN PROVIDER DETAILS ABER ABGERUNDET ETC.
 
 
-
-echo "<a href='#' >";
-icon("metadata.png","Prepare Metadata","onClick=\"javascript: popup_win('gm','"._SYSTEM."?menu_nav=get_metadata&content_id=".$line[0]."',1000,500);\"");
-echo "</a>";
-
-
-// icon($image, $alt, $action, $width, $height, $echo, $img_map, $id)
-
-/*
+/* CONTENT_LAST_SUCC_STEP
  * 
- * button("Reload & Analyze My Current Uploads",
-        ,900,32,'center'); 
+ * 0 ... no step
+ * 1 ... metadata generated
+ * 2 ... page images (tiffs) ok
+ * 3 ... ocr or pdf2text done
+ * 4 ... taxonfinding done
+ * 5 ... gid (?)
+ * 6 ... format specs (?)
+ * 7 ... 
+ * 8 ... aip ready for ingest
+ * 9 ... ingested
+ * 
+ * 10 .. checked
+ * 
+ */
 
 
-if ($arrIngestDetails['ingest_last_successful_step']==0)    
+// METADATA (1)
+$command = "onClick=\"javascript: popup_win('gm','"._SYSTEM."?menu_nav=get_metadata&content_id=".$line[0]."',1000,500);\""; 
+
+if ($line[10]==0)        icon("metadata.png","Prepare Metadata now...",$command); 
+else                     icon("metadata0.png","Metadata already prepared.",$command); 
+
+
+// -------- queueable methods start -----
+
+// IMAGES (2)
+$command = "onClick=\"javascript: popup_win('pi','"._SYSTEM."?menu_nav=get_images&content_id=".$line[0]."',1000,500);\"";
+
+if ($line[10]==0) 
+    icon("tif32_00.png","Prepare Metadata first!");
+else if ($line[10]==1)    
+    icon("tif32.png","Prepare Page Images now...",$command); 
+else 
+    icon("tif32_0.png","Images already prepared.",$command); 
+
+
+// OCR (3)
+
+if (!$isPDF)   // FALLS NICHT PDF
 {
-// METADATA
-    icon("metadata.png",     "Prepare Metadata");
-else
-    icon("metadata0.png",    "");
-*/
-
-
-
-// IMAGES
-if ($arrIngestDetails['ingest_last_successful_step']<2)    
-    icon("tif32.png",         "Process Image Transformations");
-else
-    icon("tif32.png",        "");
-
-
-// OCR
-// FALLS NICHT PDF
-if (!$isPDF)   
-{
-    // OCR FOR TIF HERE
-    if ($arrIngestDetails['ingest_last_successful_step']<2)    
-        icon("ocr00.png",          "Generate OCR for all Pages");
+    $command = "onClick=\"javascript: popup_win('po','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."',1000,500);\"";
+    if ($line[10]<2)
+        icon("ocr00.png",          "Prepare Metadata and Page Images first!");
+    else if ($line[10]==2)    
+        icon("ocr.png",            "Generate OCR for all Pages now...",$command); 
     else
-        icon("ocr0.png",         "");
+        icon("ocr0.png",           "OCR already prepared.",$command); 
+}
+else           // PDF TO TEXT & TIF HERE
+{
+    $command = "onClick=\"javascript: popup_win('pp','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."&pdf=1',1000,500);\"";
+    if ($line[10]<2)    
+        icon("pdf2tiff00.png",      "Prepare Metadata and Page Images first!");
+    else if ($line[10]==2)
+        icon("pdf2tiff.png",        "Prepare PDF Text now...",$command); 
+    else
+        icon("pdf2tiff0.png",       "PDF Text already prepared.",$command); 
 }
 
-// PDF TO TEXT & TIF HERE
-else
-{
-    if ($arrIngestDetails['ingest_last_successful_step']<2)    
-        icon("pdf2tiff00.png",      "Generate TIFF and TEXT from PDF");
-    else
-        icon("pdf2tiff0.png",     "");
-}
 
-// TAXON
-if ($arrIngestDetails['ingest_last_successful_step']==0)    
-    icon("taxon00.png",        "Get Taxons for all Pages");
-else
-    icon("taxon0.png",       "");        
+// TAXON (4)
+$command = "onClick=\"javascript: popup_win('tx','"._SYSTEM."?menu_nav=get_taxons&content_id=".$line[0]."',1000,500);\"";
 
-// INGEST
-if ($arrIngestDetails['ingest_last_successful_step']==0)    
-    icon("planning00.png",     "Queue/Start Fedora Ingest");
-else
-    icon("planning00.png",    "");
+if ($line[10]<3) 
+    icon("taxon00.png",             "Prepare (OCR) Text first!");
+else if ($line[10]==3)    
+    icon("taxon.png",               "Prepare/Gather Taxonometric Information now...",$command); 
+else 
+    icon("taxon0.png",              "Taxonometric Information already present.",$command); 
 
-        // !!! icon("planning0.png",    "");
+
+// FORMAT SPECS (5)
+
+// GLOBAL UNIQUE ID (6)
+
+
+
+// INGEST (9)
+$command = "onClick=\"javascript: popup_win('in','"._SYSTEM."?menu_nav=ingest&content_id=".$line[0]."',1000,500);\"";
+
+if ($line[10]<4)   // !!! CHANGE THAT TO 6 IF 5+6 ARE NECESSARY
+    icon("planning00.png",             "Media not ready for Ingest!");
+else if ($line[10]==3)    
+    icon("planning.png",               "Ingest Media now...",$command); 
+else 
+    icon("planning0.png",              "Media is already ingested.",$command); 
+
+
+
+// DROP INGEST
 
 lz(2);
-icon("failed_30.png",   "Drop Content from Content Management (not Filesystem)",
+icon("failed_30.png",   "Drop Content from Content Management (not Filesystem). Drop if ingested correctly or to re-analyze/prepare.",
         "onClick=\"nachfrage('Drop selected Content Element from Management?','"._SYSTEM."?menu_nav=".$menu_nav."&sub_action=drop_content&content_id=".$line[0]."');\"");
-
-// icon($image, $alt, $action, $width, $height, $echo, $img_map, $id)
-if ($arrIngestDetails['ingest_status']=='')  // undefiniert
-{
-    // PREPARE ANBIETEN (=OLEF)
-    // prepare this mediums metadata
-    // generate ocr task
-
-    // ingest
-}        
-
 
 
 ?>

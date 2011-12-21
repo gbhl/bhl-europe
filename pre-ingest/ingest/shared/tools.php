@@ -885,5 +885,15 @@ function invisible_html($bytes)
     return $retVal;   
 }
 
+/**
+ * CREATES A CLEAN PATH WITHOUT X-TIMES /
+ *
+ * @param int $bytes
+ */
+function clean_path($myDir,$letter="/")
+{
+    // 2,3 UND 4-FACHE VORKOMMEN BEREINIGEN
+    return str_replace(array($letter.$letter.$letter.$letter,$letter.$letter.$letter,$letter.$letter),$letter,$myDir);
+}
 
 ?>

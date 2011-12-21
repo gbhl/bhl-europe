@@ -24,10 +24,11 @@ define("_SYSTEM",           _HOME."index.php");
 
 define("_TRENNER",          "|");
 
+define("_QUEUE_PREFIX",     "content_queue_");
+define("_QUEUE_SUFFIX",     ".sh");
+
 
 include_once(_ABS."shared/common_globals.php");
 
-
-   
         
 ?>
