@@ -1,8 +1,28 @@
 
+admin home on production
+
+testdata/spices_prepared
+
+/mnt/nfs-demeter/upload/providers/testdata/spices_prepared/Darwins_Origin
+
 
 /mnt/nfs/upload/providers/
 
 /mnt/nfs-demeter/upload/providers
+
+
+handle net 
+
+Based on Noid from CPAN by Kunze.
+
+Used following schema to setup NOID:
+noid dbcreate a0.reeeeee - 10706
+
+Generating around 550 million ids with prefix a0.
+
+Registered Handle.net handle 10706 for BHL-Europe.
+
+
 
 
 warum gegeben

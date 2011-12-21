@@ -14,8 +14,8 @@ function getDirectory( $path = '.', $arrContents=array(),$level = 0,
 // ******************************************************************************************
 {
 	// INITS
-	if ($ignore=="")	  $ignore = array('.', '..' );
-	if ($arrContents=="") $arrContents = array();
+	if ($ignore=="")       $ignore = array('.', '..' );
+	if ($arrContents=="")  $arrContents = array();
 
     // TRIM LAST SLASH
     if (substr($path,(strlen($path)-1),1)=="/") $path = substr($path,0,strlen($path)-1);
@@ -80,4 +80,23 @@ function get_dir_size($dir_name)
 }
 
 
+// ******************
+function rrmdir($dir) 
+// ******************
+{
+   // if (instr($dir,":\"))
+   if (is_dir($dir)) 
+   {
+     $objects = scandir($dir);
+     foreach ($objects as $object) {
+       if ($object != "." && $object != "..") {
+         if (filetype($dir."/".$object) == "dir") rrmdir($dir."/".$object); else unlink($dir."/".$object);
+       }
+     }
+     reset($objects);
+     rmdir($dir);
+   }
+ }
+ 
+ 
 ?>

@@ -28,8 +28,6 @@ include_once(_SHARED."imagelib.php");
 <?php
 
 
-$arrProvider = get_provider_details($user_id);
-
 
 // ADMIN ACCOUNT
 include("provider_details.php");

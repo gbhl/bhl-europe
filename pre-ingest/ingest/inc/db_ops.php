@@ -1,8 +1,7 @@
 <?php
 
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * MANIPULATIVE DATABASE OPERATIONS AFTER POSTS
  */
 
 
@@ -11,14 +10,33 @@
 // *****************
 if($sub_action=="save_cp_details")
 {
+    // NEUEN ODER BESTEHENDEN WERT UPDATEN (ERSPART DYNAMISCHES SQL)       
+    if (!isset($user_content_home)) $user_content_home = $arrProvider['user_content_home'];
+    if (!isset($user_content_id))   $user_content_id   = $arrProvider['user_content_id'];
+    if (!isset($user_config))       $user_config       = $arrProvider['user_config'];
+    if (!isset($user_config_smt))   $user_config_smt   = $arrProvider['user_config_smt'];
+    if ((!isset($queue_mode))||(!is_numeric($queue_mode)))    $queue_mode = 0;
+    if (!isset($user_memo))         $user_memo         = $arrProvider['user_memo'];
+    
     $query  = "update users set 
         user_content_home='".$user_content_home."', 
         user_content_id='".$user_content_id."', 
         user_config='".$user_config."', 
-        user_config_smt='".$user_config_smt."'  
+        user_config_smt='".$user_config_smt."',
+        queue_mode=".$queue_mode.",
+        user_memo='".$user_memo."'
         where user_id=".$user_id;
 
-    if (mysql_select($query,$db)>0) $endmsg = "Account data successfully updated!";
+    // BESTAETIGUNG UM UMSETZEN EVTL. DADURCH GEAENDERTER REALTIME USER VARIABLEN
+    if (mysql_select($query,$db)>0) { 
+        $endmsg = "Account data successfully updated!";
+        $arrProvider['user_content_home'] = $user_content_home;
+        $arrProvider['user_content_id']   = $user_content_id;
+        $arrProvider['user_config']       = $user_config;
+        $arrProvider['user_config_smt']   = $user_config_smt;
+        $arrProvider['queue_mode']        = $queue_mode;
+        $arrProvider['user_memo']         = $user_memo;
+    }
 
     // *****************
     // PASSWORD CHANGE 
@@ -94,10 +112,15 @@ if($sub_action=="save_dir_details")
              {
                 $cpages = (int) count(getPageFiles($_POST[$arrKeys[$i]]));
              }
+             
+             if ($isPDF) { $croot = dirname($_POST[$arrKeys[$i]]); $cname=basename($_POST[$arrKeys[$i]]); }
+             else        { 
+                 $croot = $_POST[$arrKeys[$i]];
+                 $cname = str_replace(urldecode($analyzeDir),'',$_POST[$arrKeys[$i]]);
+                 $cname = str_replace(_CONTENT_ROOT,'',$cname);
+             }
 
-             $inserted += mysql_select($query." (".$nextPK.",'".$_POST[$arrKeys[$i]]."','".
-                     str_replace(_CONTENT_ROOT,'',$_POST[$arrKeys[$i]])."',now(),'".$ctime.
-                     "',".$fsize.",".$cpages.")",$db);
+             $inserted += mysql_select($query." (".$nextPK.",'".$croot."','".$cname."',now(),'".$ctime."',".$fsize.",".$cpages.")",$db);
          }
      }
     }
@@ -143,13 +166,29 @@ if ($sub_action=="save_ingest_settings")
 // *************************************
 // ***** DROP CONTENT (FROM MGMT) ******
 // *************************************
-if ($sub_action=="drop_content")
-{
-   if (is_numeric($content_id))
-       mysql_select("delete from content where content_id=".$content_id,$db);
+if ($sub_action == "drop_content") {
+    if ((isset($content_id)) && (is_numeric($content_id))) {
+        // VORAB CONTENT DIR HOLEN
+        $contentDir = abfrage("select content_root from content where content_id=" . $content_id, $db);
+
+        // DELETE CONTENT MANAGMENT DATA ROW
+        mysql_select("delete from content where content_id=" . $content_id, $db);
+
+        // DELETE QUEUE SCRIPT FILE
+        @unlink(_WORK_DIR . $curQueueFile);
+
+        // DROP .AIP DIR 
+        include_once(_SHARED . "dir_tools.php");
+
+        $destDir = clean_path($contentDir . "/" . _AIP_DIR . "/");
+
+        rrmdir($destDir);
+
+        $endmsg .= "Content " . $content_id . " removed from management. Queue/Workdir/"._AIP_DIR." cleaned up.";
+
+        unset($content_id);
+    }
 }
-
-
 
 
 ?>

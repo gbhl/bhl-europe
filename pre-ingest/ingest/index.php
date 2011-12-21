@@ -22,14 +22,12 @@ include_once(_SHARED."tools.php");
 include_once(_SHARED."mysql.php");
 include_once("inc/ingest_tools.php");
 
-include_once("inc/inits.php");
+include_once("inc/inits.php");          // includes session
 
 
 
 if (!_CLI_EXECUTION)
 {
-    include_once(_SHARED."session.php");
-    
     // ******
     // LOGOUT
     // ******
@@ -68,6 +66,10 @@ switch($menu_nav)
         include_once("inc/ingest_list.php");
         break;
     
+    case "ingest":
+        include_once("inc/ingest.php");
+        break;
+    
     case "upload_analyze":
         include_once("inc/upload_analyze.php");
         break;
@@ -76,8 +78,11 @@ switch($menu_nav)
         include_once("inc/ingest_detail.php");
         break;
     
-    case "get_metadata":
-        include_once("inc/get_metadata.php");
+    case "get_metadata":   // olef | guid
+    case "get_images":
+    case "get_ocr":
+    case "get_taxons":
+        include_once("inc/step_kernel.php");
         break;
 
     case "job_prepare_ingest":
@@ -97,9 +102,9 @@ switch($menu_nav)
         break;
 
     case "show_content_root":
-		show_content_root();
-		break;
-   
+        show_content_root();
+        break;
+
     case "show_user_dir":
         show_user_dir($user_id);
         break;
@@ -118,6 +123,7 @@ switch($menu_nav)
     
     case "help":
         show_help_file(_ABS."docs/HELP.txt");
+        show_help_file(_ABS."docs/HISTORY.txt");
         show_help_file(_ABS."docs/INSTALL.txt");
         break;
     

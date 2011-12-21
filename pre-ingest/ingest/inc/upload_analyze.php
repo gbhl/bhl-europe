@@ -12,40 +12,34 @@ include_once(_SHARED."dir_tools.php");
 
 
 if (!isset($analyzeDir)) die(_ERR." No Directory set.");
-
+else
 $analyzeDir = str_replace('//','/',urldecode($analyzeDir));
-
 
 
 ob_start();
 
-echo "<h2>Content Analyzer - <font color=green>activate new Content</font><br><font color=blue size=2><b>Checking ".$analyzeDir."...</b></font></h2>";
+echo "<h2>Content Analyzer - <font color=green>activates new Content</font><br><font color=blue size=2><b>Checking ".$analyzeDir."...</b></font></h2>";
 
-progressBar("Please wait, reading Files<br>to database...","processing.gif","margin-top: 55px; left: 20px;","visible",2);
+progressBar("Please wait, reading Files<br>to database...","processing.gif","margin-top: 55px; left: 300px;","visible",2);
 
 echo invisible_html(1024*5);
 
-ob_end_flush();
-ob_flush();
-flush(); 
-sleep(2);
+@ob_end_flush();
+@ob_flush();
+@flush(); 
+sleep(1);
 
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+$arrDir = getDirectory($analyzeDir,array(),0,array('.', '..',_AIP_DIR ),_ANALYZE_MAX_DEPTH); 
 
-// echo_pre(getDirectory($analyzeDir));
-
-$arrDir = getDirectory($analyzeDir,array());
-    
-// echo_pre($arrDir);       <-- wird nie angezeigt das buffer drop !
-
+// EINLESEN DER STRUKTUR IN DB
 $csvDir = implode(_TRENNER,$arrDir);
 $csvDir = str_replace(_CONTENT_ROOT,"",$csvDir);
 
 mysql_select("update users set user_directory='".($csvDir)."' where user_id=".$user_id,$db);
 
-$out2 = ob_get_contents();
-
-ob_end_clean();
+// $out2 = ob_get_contents();
+@ob_end_clean();
 
 close_progressBar();
 
@@ -55,7 +49,6 @@ form('dir_details');
  
 if ($anzDir>0)
 {
-   
     echo "<b>".count($arrDir)." Elements found.<br>
         <font color=green>Please check the objects you want to manage.</font>";
     nl();
@@ -65,7 +58,7 @@ if ($anzDir>0)
     hidden("analyzeDir",urlencode($analyzeDir));
     
     echo "<table border=1 width=980 style=\"margin-left: 2px; border-color: green; background-color: white; font: 11px courier new;\">
-        <tr><th>PATH | INFO</th><th width=70>Activate Content Root/File</th></tr>";
+        <tr><th>PATH | INFO &nbsp; (page files filtered)</th><th width=70>Activate Content Root/File</th></tr>";
     
     $cur_pages = 0;
     
@@ -113,11 +106,12 @@ if ($anzDir>0)
            // ONLY DIRS AND PDFS CAN BE ACTIVATED BUT NO AIP DIRS
            if ((($isDir)||($isPDF))&&(!$isAIPdir))
            {
-               // LOOK IF ALREADY ACTIVE
-               if (((int)abfrage("select count(*) from content where content_root='".$arrDir[$i]."'",$db))>0)
+               // LOOK IF ALREADY ACTIVE (2 TEIL IST WEGEN PDFS DIRNAME EBENFALLS KEINE CHECKBOX MEHR)
+               if ((((int)abfrage("select count(*) from content where content_root='".$arrDir[$i]."'",$db))>0)||
+                   (((int)abfrage("select count(*) from content where content_root='".dirname($arrDir[$i])."'",$db))>0))
                    icon("green_16.png", "Already under management, disable in management view only...");
                else
-                   checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);      
+                   checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
            }
            else 
                if ($metadata) icon("write12.gif");
@@ -130,16 +124,15 @@ if ($anzDir>0)
     echo "</table>";
     
     // echo "<font >".str_replace(_TRENNER,"<br>\n",$csvDir)."</font>";
-    button("save selection","submit",200);
-
+    button("save your selection","submit",900);
 }
 else
     echo "<font color=red>No Content found!</font>";
 
 lz(2);
-close_button(2,200);
+close_button(2,900,"","","CLOSE here to auto refresh your management list behind ...");
+
 
 close_form();
-
 
 ?>
