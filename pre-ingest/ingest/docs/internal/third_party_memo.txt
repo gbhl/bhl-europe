@@ -1,9 +1,23 @@
-<?php
-/* 
+
+
+olef erweiterungen ?
+
+guid 
+
+
+
+/*
+ * to point to your tessdata directory (example: if your tessdata path is '/usr/local/share/tessdata' you have to use 'export=TESSDATA_PREFIX='/usr/local/share/'). The command line for running tesseract is:
+
+tesseract <image> <outputbasename> [-l lang] [configs]
  * 
  * 
+ * http://code.google.com/p/tesseract-ocr/wiki/ReadMe
  * 
- */
+*/
+
+// tesseract <image.tif> <output> [-l <langid>]
+
 
 
 http://php.net/manual/de/features.connection-handling.php

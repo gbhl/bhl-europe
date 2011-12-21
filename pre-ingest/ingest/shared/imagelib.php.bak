@@ -277,7 +277,6 @@ function progressBar($wait_text="",$image="",$css="",$visibility="",$baseStyle=1
 }
 
 
-
 // ************************
 function close_progressBar()
 {
