@@ -6,22 +6,18 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIFF files from foreign page format</h1>";
+echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIFF files from various sources</h1>";
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
-$arrTiffs = getPageTIFFiles($user_id, $contentDir);    
+$arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $nTiffs   = count($arrTiffs);
 
-if ($nTiffs == 0)    {
-    $arrTiffs = getPageTIFFiles($user_id, $destDir);    
-    $nTiffs   = count($arrTiffs);    
-}
 
-if ($nTiffs > 0)    echo "Tiff files present - no convert initiated!\n";
+if ($nTiffs > 0)    echo "Tiff files present - nothing to do!\n";
 else 
 {   
-    if (isPDF($contentName)) include("inc/pdf2tiff.php");     // $arrTiffs am ende setzten auf die generierten !!!
-    else                     include("inc/images2tiff.php");  // KEIN PDF
+    if ($isPDF) include("inc/pdf2tiff.php");     // $arrTiffs am ende setzten auf die generierten !!!
+    else        include("inc/images2tiff.php");  // KEIN PDF
 }
 
 
@@ -29,18 +25,18 @@ else
 $nTiffs   = count($arrTiffs);
 
 // IN JEDEM FALL OB VORH. ODER GERADE ERZEUGT DIE DATENBANK UPDATEN
-if ($nTiffs > 0) {
+if ($nTiffs > 0) 
+{
     // IF SUCCESSFUL SET STATE TO 2
-    setContentSteps($content_id, 2);
+    if (getContentSteps($content_id)<2) setContentSteps($content_id, 2);
 
     $csvTiffs = implode(_TRENNER, $arrTiffs);
     $csvTiffs = str_replace(_CONTENT_ROOT, "", $csvTiffs);
     mysql_select("update content set content_pages_tiff='" . $csvTiffs . "' where content_id=" . $content_id);
 
     $endmsg .= $nTiffs . " files generated and database updated successfully.";
-} else if (_QUEUE_MODE) {
-    echo queue_add($curQueueFile, $arrQueueCommands);
 }
-else
-    echo _ERR . " The necessary files could not be prepared!";
+else if (!_QUEUE_MODE) echo _ERR . "Necessary files could not be prepared!";
+
+
 ?>

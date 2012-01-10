@@ -57,11 +57,11 @@ else
 {   // a0.reeeeee - 10706  - eigener minter erzeugt max 12 stellige guids mithilfe von time
     $cGUID = _NOID_PREFIX.substr('00000000000000000000'.time(),-20).$content_id;
     
-    echo "Minted: ".$cGUID." \n";
+    echo "Minted: <font color=red>".$cGUID."</font> \n";
     // noid example
     // noid dbcreate f5.reedeedk long 13030 cdlib.org oac/cmp
     // namespace ranging from a low of 13030/f5000000s to a high of 13030/f5zz9zz94
-    
 }
+
 
 ?>

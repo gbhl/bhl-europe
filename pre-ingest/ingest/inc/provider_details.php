@@ -52,14 +52,17 @@ echo _TR."Provider Token"._TD;  textfeld("user_content_id ".$extraTag,$arrProvid
 echo " <sup>*defines your working directory</sup> ";
 
 // CONFIGS
-echo _TR."Ingest Config"._TD;   textfeld("user_config ".$extraTag,$arrProvider['user_config'],55);
-echo _TR."Schema Mapping"._TD;  textfeld("user_config_smt ".$extraTag,$arrProvider['user_config_smt'],55);
+echo _TR."Ingest Config"._TD;   textfeld("user_config ".$extraTag,$arrProvider['user_config'],55,900);
+echo _TR."Schema Mapping"._TD;  textfeld("user_config_smt ".$extraTag,$arrProvider['user_config_smt'],55,900);
 echo " <sup>*Parameters</sup> ";
 
 echo _TR."Working Dir"._TD._WORK_DIR.$arrProvider['user_content_id']."/"; lz(3);
 if (is_readable(_WORK_DIR.$arrProvider['user_content_id']."/"))
 		icon("green_16.png", "Filesystem Check ok, readable..."); 
 else    icon("failed_16.png","Filesystem Check failed no access possible..."); 
+
+lz();
+icon("folder_16.png","Explore this Directory.","onClick=\"javascript: popup_win('cr','"._SYSTEM."?menu_nav=show_working_dir',1000,500);\"");
 
 
 // ALL PROVIDERS ROOT
@@ -68,7 +71,6 @@ if (is_readable(_CONTENT_ROOT)) icon("green_16.png", "Filesystem Check ok, reada
 else                            icon("failed_16.png","Filesystem Check failed no access possible..."); 
 
 lz();
-
 icon("folder_16.png","Explore this Directory.","onClick=\"javascript: popup_win('cr','"._SYSTEM."?menu_nav=show_content_root',1000,500);\"");
 
 
@@ -77,15 +79,25 @@ icon("folder_16.png","Explore this Directory.","onClick=\"javascript: popup_win(
 
 
 // SHOW USERS CONTENT ROOT
-$usr_croot = str_replace('//','/',_CONTENT_ROOT."/".$arrProvider['user_content_home']);
+$usr_croot = clean_path(_CONTENT_ROOT."/".$arrProvider['user_content_home']);
 
 echo _TR."User Content"._TD.$usr_croot; lz(3);
 if (is_readable($usr_croot)) icon("green_16.png", "Filesystem Check ok, readable..."); 
 else                         icon("failed_16.png","Filesystem Check failed no access possible..."); 
 
 lz();
-
 icon("exclam_16.png","You are managing this directory.");
+lz();
+icon("folder_16.png","Explore this Directory.","onClick=\"javascript: popup_win('cr','"._SYSTEM."?menu_nav=show_user_content_root',1000,500);\"");
+
+
+
+
+echo _TR."Metadata Webservice"._TD;  
+textfeld("metadata_ws ".$extraTag,$arrProvider['metadata_ws'],62,900);
+lz();
+icon("exclam_16.png","Preferred setting, overrules local files.");
+
 
 
 echo "</td></tr><tr><td colspan=2>";

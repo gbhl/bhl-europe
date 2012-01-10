@@ -20,6 +20,8 @@ include_once("inc/globals.php");            // SYSTEM PARAMENTER (DERIVED)
 // SHARED LIBS
 include_once(_SHARED."tools.php");
 include_once(_SHARED."mysql.php");
+include_once(_SHARED."dir_tools.php");
+
 include_once("inc/ingest_tools.php");
 
 include_once("inc/inits.php");          // includes session
@@ -78,7 +80,7 @@ switch($menu_nav)
         include_once("inc/ingest_detail.php");
         break;
     
-    case "get_metadata":   // olef | guid
+    case "get_metadata":   // olef + guid
     case "get_images":
     case "get_ocr":
     case "get_taxons":
@@ -101,14 +103,26 @@ switch($menu_nav)
         include_once("inc/ingest_log.php");
         break;
 
-    case "show_content_root":
-        show_content_root();
-        break;
-
     case "show_user_dir":
-        show_user_dir($user_id);
+        echo "<h1 style='margin-top: 6px;'>Last Analyzed Upload Filestructure Elements <font size=-1> (from Management Database, not realtime, created by last Upload Analyze)<br>For realtime directory listings click on the folder icons in '<b>my Account</b>'.</font></h1>";
+        print_dir_arr(explode(_TRENNER,abfrage("select user_directory from users where user_id=".$user_id)));
         break;
     
+    case "show_content_root":
+        echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (1st Level Overview)</font></h1>";
+        print_dir_arr(getDirectory(_CONTENT_ROOT,array(),0,"",1));
+        break;
+
+    case "show_user_content_root":
+        echo "<h1 style='margin-top: 6px;'>Your Content Root <font size=-1> (for orientation purposes only)</font></h1>";
+        print_dir_arr(getDirectory(_USER_CONTENT_ROOT,array(),0,"",_ANALYZE_MAX_DEPTH));        
+        break;
+    
+    case "show_working_dir":
+        echo "<h1 style='margin-top: 6px;'>Working Directory<font size=-1> (for orientation purposes only)</font></h1>";
+        print_dir_arr(getDirectory(_WORK_DIR.$arrProvider['user_content_id'],array(),0,"",_ANALYZE_MAX_DEPTH));        
+        break;
+
     case "selftest":
         include_once("inc/selftest.php");                
         break;

@@ -8,17 +8,14 @@
 
 include_once(_SHARED."formlib.php");
 include_once(_SHARED."imagelib.php");
-include_once(_SHARED."dir_tools.php");
 
 
-if (!isset($analyzeDir)) die(_ERR." No Directory set.");
-else
-$analyzeDir = str_replace('//','/',urldecode($analyzeDir));
-
+if (!isset($analyzeDir))    die(_ERR." No Directory set.");
+else                        $analyzeDir = clean_path(urldecode($analyzeDir));
 
 ob_start();
 
-echo "<h2>Content Analyzer - <font color=green>activates new Content</font><br><font color=blue size=2><b>Checking ".$analyzeDir."...</b></font></h2>";
+echo "<center><h2>Content Analyzer - <font color=green>activates new Content</font><br><font color=blue size=2><b>Checking ".$analyzeDir."...</b></font></h2>";
 
 progressBar("Please wait, reading Files<br>to database...","processing.gif","margin-top: 55px; left: 300px;","visible",2);
 
@@ -110,8 +107,12 @@ if ($anzDir>0)
                if ((((int)abfrage("select count(*) from content where content_root='".$arrDir[$i]."'",$db))>0)||
                    (((int)abfrage("select count(*) from content where content_root='".dirname($arrDir[$i])."'",$db))>0))
                    icon("green_16.png", "Already under management, disable in management view only...");
-               else
+               else 
+               {
+                   // NUR FALLS DIRECTORY NICHT LEER ANBIETEN!
+                   if (!is_dir_empty($arrDir[$i],true))
                    checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
+               }
            }
            else 
                if ($metadata) icon("write12.gif");
@@ -124,15 +125,20 @@ if ($anzDir>0)
     echo "</table>";
     
     // echo "<font >".str_replace(_TRENNER,"<br>\n",$csvDir)."</font>";
-    button("save your selection","submit",900);
+    nl();
+    button("save your current selection","submit",900);
 }
 else
     echo "<font color=red>No Content found!</font>";
 
-lz(2);
-close_button(2,900,"","","CLOSE here to auto refresh your management list behind ...");
-
+// lz(2);
+close_button(2,900,"","","CLOSE here & refresh your management list");
 
 close_form();
 
+nl(2);
+
+
 ?>
+
+</center>

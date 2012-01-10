@@ -376,10 +376,10 @@ function SetCookie(cookieName,cookieValue,nDays)
 function switch_visibility(obj)
 // ****************************
 {
-	if ( (obj!=null) && ((IsObject(obj)) || (IsElement(obj))) )
+	if ( (IsObject(obj)) || (IsElement(obj)) )
 	{
 	 if (obj.style.visibility=='visible') { obj.style.visibility = 'hidden';  }
-	 else	{ obj.style.visibility = 'visible'; }
+	 else								  { obj.style.visibility = 'visible'; }
 	}
 }
 

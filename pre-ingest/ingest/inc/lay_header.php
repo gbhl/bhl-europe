@@ -18,7 +18,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <link rel="stylesheet" href="css/reset-min.css" type="text/css" />
-<link rel="stylesheet" href="css/portal.css"    type="text/css" media="all"    charset="utf-8" />
+<link rel="stylesheet" href="css/portal.css"    type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="css/ingest.css"    type="text/css" media="all" charset="utf-8" />
 <?php
 
 // NUR BEIM PORTAL MENU MATIC

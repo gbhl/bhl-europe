@@ -25,7 +25,8 @@ define("_LOGIN_FAILED",			_ERR."Login data not accepted !\\n\\nPlease take care 
 define("_WRONG_REQUEST",		_ERR."Wrong request, required information is not available. Access details logged!");
 define("_ERR_COOKIE",			_ERR."Cannot set a cookie, please check your browser configuration.");
 define("_ERR_ORA_LOGIN",		_ERR."Because of missing login data the database could not be connected.");
-define("_ERR_ORA_ENV",          _ERR."Das Oracle Environment ist nicht gueltig. (ORACLE_HOME, etc.)");
+define("_ERR_ORA_ENV",          _ERR."The Oracle Environment is not valid. (ORACLE_HOME, etc.)");
+define("_DEPRECATED",           _ERR."This function is deprecated, ask your support.");
 
 
 // ***********************************
