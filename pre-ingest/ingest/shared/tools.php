@@ -885,6 +885,7 @@ function invisible_html($bytes)
     return $retVal;   
 }
 
+
 /**
  * CREATES A CLEAN PATH WITHOUT X-TIMES /
  *

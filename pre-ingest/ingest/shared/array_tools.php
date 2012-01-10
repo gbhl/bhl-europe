@@ -92,4 +92,14 @@ function array_find_value_near($myArray,$pattern)
 }
 
 
+
+// MERGE VALUES OF 2 ARRAYS WITH NEW KEYS 0...N
+function array_merger()
+{
+    
+    
+}
+
+
+
 ?>

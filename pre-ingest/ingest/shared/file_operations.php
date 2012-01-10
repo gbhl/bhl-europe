@@ -218,4 +218,22 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
 }
 
 
+
+// ***************************************
+function file_line_exists($myFile,$myLine)
+// ***************************************
+{
+    if (is_readable($myFile)) 
+    {
+        $fContent = file_get_contents($myFile);
+        if (strpos($fContent,$myLine)===false)  return false;
+        
+        return true;
+    }
+    
+    return false;
+}
+
+
+
 ?>

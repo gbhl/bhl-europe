@@ -1,8 +1,37 @@
 
+// !!! file check in allen so einbauen !!! wie bei taxonfinder.php
+
+
+die steps jeweils zu 1 file zusammenfassen im inc/inc verz. direkt von stop_kernel aufgerufen
+
+
+beschreibung
+
+
+
+spices_prepared/darw....
+!!! content name muss pfad ohne content_root bis runter sein falls über mehrere verzeichnisse
+
+// http://tomdancer.com/setting-a-timeout-on-file_get_contents-for-urls/
+
+
+********************
+PRODUKTION
+ONLINE EINSTELLUNGEN
+********************
+
+content home - testdata
+
+take Darwins_Origin
+
+
+
+
 
 olef erweiterungen ?
 
-guid 
+
+rename('/path1/old_filename', '/path2/new_filename');
 
 
 
@@ -98,4 +127,349 @@ Selaginella riddellii van Eselt.
     
     
 
-?>
+
+zheng.li@atos.net
+
+
+lee.namba@atos.net
+
+C.J.Sleep@nhm.ac.uk
+
+mehrrath@mindcatch.com
+
+
+generate 
+
+
+jpeg2000 at ingest time 
+
+pdf 2 jpg convert 
+
+
+ingest ocr results to page object
+
+
+
+
+http://ec.europa.eu/youreurope/citizens/residence/worker-pensioner/rights-conditions/index_en.htm
+
+
+
+produce jp 2000 in same resolution
+
+
+reverse prox the directory
+
+ingest
+
+
+send chris the ip 
+to get a firewall rule directly to bhl servers
+
+
+
+
+probleme
+--------
+no access to fedora (network problems, but server errors)
+is fedora working as desired?
+
+problem mit serverzugängen muss direkt am server arbeiten
+können datenbanmanagement und phftp installiert damit 
+mehr oder weniger erfolgreich damit man schneller entwickeln
+kann
+
+habe lee und zheng informationen für die selbständigkeit
+in frankreich und austria diskutiert und links geschickt.
+alle seiten sind up to date.
+
+es wird stundenlang am deployment vorgang gezaubert
+es ist das deployment mit maven git (insbesondere pull)
+problematisch --- zeitfaktor
+
+
+
+
+
+expample data with comparable end 2 end
+
+(upload -2- fedora export)
+
+
+
+
+pdf2
+
+
+integration -- before tests
+
+--- access: and 
+
+
+
+complex directory scanning 
+and structure cleanup
+
+--->
+
+
+
+virusscan in os side
+not in pre-ingest
+
+
+pdf support
+
+
+upload structure
+
+write a file submission format 
+
+
+
+important: example book collection !!!!! for ingest tests
+
+
+jhove
+
+
+taxonfinder
+
+
+
+
+
+upload root
+
+
+/mnt/nfs/upload/providers
+
+
+work directory
+
+
+/mnt/nfs/integration/data/pre-ingest/ 
+
+
+
+
+sql structure
+
+
+festhalten es geht überhaupt kein einziger ingest der nicht
+nachgebessert wurde von ait manuell!!!!
+
+
+warum mets package
+
+was ist mit directory ingest in fedora! (new feature') ?
+
+
+
+
+email von atos lee ?
+
+
+kernpunkt mets 2 fedora part:  FedoraMetsMarshallerService.java 
+PreIngest/src/main/java/at/co/ait/domain/services/MetsMarshallerService.java?r=329
+
+
+
+
+./web ist lediglich das webinterface bestehend unzulängliches
+logging
+
+
+
+handles.net ???
+
+
+
+
+
+
+
+
+j.taif@nhm.ac.uk
+C.J.Sleep@nhm.ac.uk
+wolfgang.koller@nhm-wien.ac.at
+heimo.rainer@nhm-wien.ac.at
+
+
+
+
+
+
+Der externe Link auf den Pre-Ingest Server lautet:
+
+
+http://bhl-int.nhm.ac.uk/PreIngest
+
+Login: landoe
+Passwd: landoe
+
+
+
+
+
+jenes rausnehmen das nicht commited wurde an github
+
+
+netbeans - development ui ähnlich wie eclipse 
+
+
+
+struktur von verzeichnisbäumen
+
+
+
+integration von webservices - 
+beispiel:
+
+ubio taxonfinder soll über preingest tool angestossen werden und liste
+der gefundenen wissensch. namen - index in olef abgelegt (olef info: http://www.bhl-europe.eu/bhl-schema/v0.3/)
+
+---> 
+
+
+accounts für london über wolfgang 
+
+working application: 
+
+
+holt z.b. daten von
+
+upload area 
+-------------------
+http://bhl-celsus.nhm.ac.uk/uploads/
+
+http://bhl-celsus.nhm.ac.uk/uploads/RBGE/Florav1-3/Volume1/
+
+
+
+festlegung der verz. stuktur über deliverable 2.1 (liegt im bhl wiki und heisst) 2pt1
+
+
+
+
+
+
+
+
+
+montag alle 2 wochen um 15:00 ab 24.10, skype konferenz, agenda 
+
+
+
+3-5 november prag, entwickler kongress,
+
+atos vor ort, andere entwickler austausch  
+
+
+wolfang macht sola search für drupal mit simple und advanced
+
+
+
+walter.koch@ait.co.at
+
+
+chris sleep systeadmin hostet server - graham higley work package 3 lead
+
+
+
+michael malicky @ landesmuseum.at
+
+it chef von die landesmuseum 
+
+
+über command line wird schema mapping angeworfen
+
+
+transfer von pre-ingest in den git hub master zweig von google code rüber
+google code stirbt
+
+
+
+
+bhl.wikispaces.com
+
+mehrrath
+wiki11
+
+
+
+
+http://fedora-commons.org/
+
+
+
+Hier der Link zum SMT: 
+
+http://code.google.com/p/schema-mapping-tool/
+
+
+
+
+Hier der Link zu den Rohdaten der Provider:
+
+http://bhl-celsus.nhm.ac.uk/uploads/
+
+
+
+
+
+
+
+
+file:///D:/nhm/bhl-bits-doku/html/annotated.html
+
+
+
+
+
+checkout google
+
+# Non-members may check out a read-only working copy anonymously over HTTP.
+svn checkout http://bhl-bits.googlecode.com/svn/trunk/ bhl-bits-read-only 
+
+
+http://code.google.com/p/bhl-bits/source/checkout
+
+
+
+# Non-members may check out a read-only working copy anonymously over HTTP.
+svn checkout http://bhl-bits.googlecode.com/svn/trunk/ bhl-bits-read-only 
+
+
+
+
+
+
+OLEF Schema:
+
+http://www.bhl-europe.eu/bhl-schema/v0.3/
+
+
+
+Pre-Ingest Code
+
+http://code.google.com/p/bhl-bits/source/browse/#svn%2Ftrunk%2Fbhl-e%2Fpre-ingest
+
+http://code.google.com/p/bhl-bits/source/checkout
+
+
+Viele Grüße,
+Wolfgang
+
+
+--------------------------------------
+Information gemaess UGB Par. 14 Abs. 1
+
+Naturhistorisches Museum
+1010 Wien, Burgring 7
+Firmenbuchnummer: FN 236724z
+Firmenbuchgericht: Handelsgericht Wien
+UID: ATU 38020609
+Rechtsform: Wissenschaftliche Anstalt
+oeffentlichen Rechts des Bundes
+--------------------------------------

@@ -10,15 +10,16 @@
 
 <ul id="navigation">
 
-	<li class="home"><a href="index.php"><span>Home/Login</span></a></li>
+<li class="home"><a href="index.php"><span>Home/Login</span></a></li>
 
-	<li class="search"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Registration</span></a></li>
+<li class="search"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Registration</span></a></li>
        
-    <li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
+<li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
 
-    <li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',400,500);"><span>About</span></a></li>        
+<li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',400,500);"><span>About</span></a></li>        
         
-	<li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>
+<li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>
+
 </ul>
 
 
