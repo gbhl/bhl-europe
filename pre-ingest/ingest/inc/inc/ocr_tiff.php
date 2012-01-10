@@ -6,11 +6,8 @@ $arrTiffs = explode(_TRENNER, abfrage($query, $db));
 
 $nPages = count($arrTiffs);
 
-$arrQueueCommands = array();
 
 echo "<h3>Try to recognize Text in " . $nPages . " Page Images.</h3>";
-
-progressBar("Please wait, OCR running ...", "processing.gif", "margin-top: 55px; left: 300px;", "visible", 2);
 
 echo "<pre>";
 
@@ -57,5 +54,5 @@ for ($i = 0; $i < $nPages; $i++) {
 
 echo "</pre>";
 
-close_progressBar();
+
 ?>

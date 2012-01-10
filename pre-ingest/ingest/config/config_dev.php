@@ -25,8 +25,11 @@ define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
 // BE DROPPED BY AN UPGRADE
 
 define("_WORK_DIR",                 _ABS."temp/");
-define("_CONTENT_ROOT",             "G:/dev/nhm/bhl/ingest/testdata/");
+define("_CONTENT_ROOT",             "G:/dev/nhm/ingest/uploads/");
+
+// REVERSE LOOKUP URL MUST POINT TO THE _CONTENT_ROOT AND END WITH /
 define("_REVERSE_LOOKUP_URL",       "http://bhl-celsus.nhm.ac.uk/uploads/");
+
 define("_AIP_DIR",		    ".aip");
 define("_AIP_OLEF_FN",		    "olef.xml");
 define("_SELF_ADMIN",               false);        // SELF ADMIN OF CP SETTINGS ON|OFF
@@ -55,7 +58,7 @@ define("_ANALYZE_MAX_DEPTH",        20);            // MAX DIRECTORY STRUCTURE D
 
 // NOID
 // ---------------------
-define("_NOID",                     "G:/dev/nhm/bhl/ingest/bin/noid/noid -f G:/dev/nhm/bhl/ingest/bin/noid/noid/ mint 1");
+define("_NOID",                     "G:/dev/nhm/ingest/bin/noid/noid -f G:/dev/nhm/ingest/bin/noid/noid/ mint 1");
 define("_NOID_PREFIX",              "10706/a0");
 
 
@@ -63,14 +66,14 @@ define("_NOID_PREFIX",              "10706/a0");
 // ---- SCHEMA MAPPING TOOL ----
 // -----------------------------
 define("_JAVA_BIN",                 "java.exe");
-define("_SCHEMA_MAPPER",            "G:/dev/nhm/bhl/ingest/bin/smt/SMT-cli.jar");
+define("_SCHEMA_MAPPER",            "G:/dev/nhm/ingest/bin/smt/SMT-cli.jar");
 define("_SMT",                      _JAVA_BIN." -jar "._SCHEMA_MAPPER." ");
 
 
 // -------------------------------------
 // ---- IMAGE MANIPULATION SPECIFIC ----
 // -------------------------------------
-define("_IMG_MAGICK_CONVERT",       "G:/dev/nhm/bhl/ingest/bin/imagemagick/convert.exe");
+define("_IMG_MAGICK_CONVERT",       "G:/dev/nhm/ingest/bin/imagemagick/convert.exe");
 define("_IMG_BITPERPIXEL",          8);
 
 define("_IMG_ORI_WIDTH",            2048);
@@ -82,7 +85,7 @@ define("_IMG_CONVERT_PARAMS",       "");
 // ----------------------------
 // ---- PDF 2 TXT SPECIFIC ----
 // ----------------------------
-define("_XPDF_ABS",                 "G:/dev/nhm/bhl/ingest/bin/xpdf/bin32/");
+define("_XPDF_ABS",                 "G:/dev/nhm/ingest/bin/xpdf/bin32/");
 define("_PDFTOTEXT",                _XPDF_ABS."pdftotext.exe");
 define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm.exe");
 
@@ -90,7 +93,7 @@ define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm.exe");
 // ----------------------
 // ---- OCR SPECIFIC ----
 // ----------------------
-define("_OCR_ABS",                  "G:/dev/nhm/bhl/ingest/bin/tesseract/");
+define("_OCR_ABS",                  "G:/dev/nhm/ingest/bin/tesseract/");
 define("_OCR_DAT",                  _OCR_ABS."tessdata/");
 define("_TESSERACT",                _OCR_ABS."tesseract.exe");
 

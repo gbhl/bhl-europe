@@ -11,6 +11,7 @@
 include_once(_SHARED . "formlib.php");
 include_once(_SHARED . "imagelib.php");
 
+
 ?>
 
 <style>
@@ -21,17 +22,21 @@ include_once(_SHARED . "imagelib.php");
 
 if ((isset($content_id))&&(is_numeric($content_id))) 
 {
-    $contentDir  = abfrage("select content_root from content where content_id=" . $content_id);
-    $contentName = abfrage("select content_name from content where content_id=" . $content_id);
-    $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");
-    $workDir     = clean_path(_WORK_DIR . $arrProvider['user_content_id'] . "/");
-
-    // GENERATE WORK DIR
-    if (!is_dir($workDir))      @mkdir($workDir);
-    if (!is_dir($destDir))      @mkdir($destDir);     
+    // VORAB INFOS UEBER CONTENT UND BEREITS ERSTELLTES HOLEN
+    $arrQueueCommands = array();
+    
+    progressBar("Please wait operation in progress...", "processing.gif", "margin-top: 55px; left: 300px;", "visible", 2);
 
     // INVOKE TARGET SCRIPT
     include_once("inc/" . $menu_nav.".php");
+
+    close_progressBar();    
+
+    if (_QUEUE_MODE) {
+        echo queue_add($curQueueFile, $arrQueueCommands);
+    }
+    
+    
 }
 else
     echo _ERR . " Content ID is missing...";

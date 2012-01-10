@@ -79,9 +79,9 @@ em strong, strong em{ font-weight:bold; font-style:italic; }
 	border:solid #E69623;
 	border-width:3px 0 3px 0;
 	
-	opacity: 0.6;
-	-moz-opacity: 0.6;
-	filter: alpha(opacity=60);
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter: alpha(opacity=75);
 }
 
 #logo{

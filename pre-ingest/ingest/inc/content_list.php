@@ -6,6 +6,8 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
+nl();
+
 form("form_ingest_manager");
 hidden("menu_nav",$menu_nav);
 hidden("sub_action","save_ingest_settings");
@@ -15,16 +17,17 @@ echo "<table border=1 width=1000 style='font: 11px verdana; background-color: wh
 <tr><td colspan=7 align=center>";
 
 button("Reload & Analyze My Current Uploads",
-        "popup_win('au','"._SYSTEM."?menu_nav=upload_analyze&analyzeDir=".urlencode(str_replace('//','/',_CONTENT_ROOT."/".$arrProvider['user_content_home']))."',1000,500);",990,32,'center'); 
+        "popup_win('au','"._SYSTEM."?menu_nav=upload_analyze&analyzeDir=".
+        urlencode(_USER_CONTENT_ROOT)."',1000,500);",990,32,'center'); 
 nl();
+
+button("Refresh","document.location.href='"._SYSTEM."?menu_nav=ingest_list';",200,32,'center'); 
+
+button("View My Analyzed Uploads",
+        "popup_win('mu','"._SYSTEM."?menu_nav=show_user_dir',1000,500);",200,32,'center');
 
 button("View My Ingest Log",
         "popup_win('il','"._SYSTEM."?menu_nav=ingest_log',1000,500);",200,32,'center');
-
-button("View My Uploads",
-        "popup_win('mu','"._SYSTEM."?menu_nav=show_user_dir',1000,500);",200,32,'center');
-
-button("Refresh Ingest List","document.location.href='"._SYSTEM."?menu_nav=ingest_list';",200,32,'center'); 
 
 button("Save My Changes","submit",390,32,'center');
 
@@ -121,27 +124,4 @@ Please analyze your content uploads first and check your account details in <b>m
 
 
 
-/*
-
-for ($i=0;$i<$nrows;$i++)
-{
-    echo _TR." relative path not found"._TD." .. "._TD." .. "._TD." .. "._TD." .. "._TD." .. "._TD;
-
-    // OPERATIONS
-    checkbox("ingest_do_ocr");
-    checkbox("ingest_do_taxon");
-    checkbox("ingest_do_sm");
-
-    echo " "._TR;
-}
-*/
-
-
-// button($value, $js_action, $width, $height, $textalign, $id, $echome, $tabindex)
-
-// echo _HOME;
-// echo "<a href=\""._SYSTEM."?menu_nav=admin\" >test</a>";
-
-
-    
 ?>

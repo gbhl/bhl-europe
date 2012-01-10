@@ -18,7 +18,7 @@ include_once(_SHARED."imagelib.php");
        
         <li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
 
-        <li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',400,500);"><span>About</span></a></li>        
+        <li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',420,540);"><span>About</span></a></li>        
         
 	<li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>
 
@@ -45,9 +45,6 @@ include("content_list.php");
 <script type="text/javascript" src="js/jquery-1.6.4.js"></script>
 
 <script type="text/javascript">
-
-
-// modifications by mehrrath a.
 
 
 // TO RUN TOGETHER WITH MOOTOOLS !
@@ -78,3 +75,9 @@ jQuery.noConflict();
 })(jQuery);  //  abschluss
 </script>
 
+
+<div id=logodiv>
+
+<a href='http://www.bhl-europe.eu/' target='_blank'><img src="img/logo.png" width=277 height=92 border=0></a>
+
+</div>

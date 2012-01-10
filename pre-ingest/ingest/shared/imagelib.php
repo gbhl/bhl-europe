@@ -121,6 +121,7 @@ function icon($image,$alt='',$action='',$width='',$height='',$echo = true,$img_m
   if ($echo)	{ echo $rw; return true; }
   else			{ return $rw; }
  }
+
  else return false;
 }
 

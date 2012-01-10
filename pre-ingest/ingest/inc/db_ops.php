@@ -24,8 +24,11 @@ if($sub_action=="save_cp_details")
         user_config='".$user_config."', 
         user_config_smt='".$user_config_smt."',
         queue_mode=".$queue_mode.",
-        user_memo='".$user_memo."'
+        user_memo='".$user_memo."',
+        metadata_ws='".$metadata_ws."' 
         where user_id=".$user_id;
+    
+    // col user_directory is maintained by analyzer
 
     // BESTAETIGUNG UM UMSETZEN EVTL. DADURCH GEAENDERTER REALTIME USER VARIABLEN
     if (mysql_select($query,$db)>0) { 
@@ -36,6 +39,7 @@ if($sub_action=="save_cp_details")
         $arrProvider['user_config_smt']   = $user_config_smt;
         $arrProvider['queue_mode']        = $queue_mode;
         $arrProvider['user_memo']         = $user_memo;
+        $arrProvider['metadata_ws']       = $metadata_ws;
     }
 
     // *****************
@@ -56,8 +60,6 @@ if($sub_action=="save_cp_details")
 // *******************************
 if($sub_action=="save_dir_details")
 {
-    include_once(_SHARED."dir_tools.php");
-    
     $inserted = 0;
     $query    = "insert into content (content_id,content_root,content_name,
         content_atime,content_ctime,content_size,content_pages) values ";
@@ -110,7 +112,7 @@ if($sub_action=="save_dir_details")
              }
              else  // BILDDATEN SELBEN TYPS IM ROOT ZAEHLEN (NICHT REKURSIV!)
              {
-                $cpages = (int) count(getPageFiles($_POST[$arrKeys[$i]]));
+                $cpages = (int) count(getContentFiles($_POST[$arrKeys[$i]],'pagedata'));
              }
              
              if ($isPDF) { $croot = dirname($_POST[$arrKeys[$i]]); $cname=basename($_POST[$arrKeys[$i]]); }
@@ -166,23 +168,17 @@ if ($sub_action=="save_ingest_settings")
 // *************************************
 // ***** DROP CONTENT (FROM MGMT) ******
 // *************************************
-if ($sub_action == "drop_content") {
-    if ((isset($content_id)) && (is_numeric($content_id))) {
-        // VORAB CONTENT DIR HOLEN
-        $contentDir = abfrage("select content_root from content where content_id=" . $content_id, $db);
-
+if ($sub_action == "drop_content") 
+{
+    if (isset($destDir))     // FROM INIT.PHP
+    {
         // DELETE CONTENT MANAGMENT DATA ROW
         mysql_select("delete from content where content_id=" . $content_id, $db);
 
         // DELETE QUEUE SCRIPT FILE
-        @unlink(_WORK_DIR . $curQueueFile);
+        @unlink($curQueueFile);
 
-        // DROP .AIP DIR 
-        include_once(_SHARED . "dir_tools.php");
-
-        $destDir = clean_path($contentDir . "/" . _AIP_DIR . "/");
-
-        rrmdir($destDir);
+        rrmdir($destDir);   // aip dir 
 
         $endmsg .= "Content " . $content_id . " removed from management. Queue/Workdir/"._AIP_DIR." cleaned up.";
 
