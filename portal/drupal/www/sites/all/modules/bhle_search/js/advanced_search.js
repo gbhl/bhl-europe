@@ -29,5 +29,53 @@ var bhle_search = {
     exact_phrase: function( p_exact ) {
         // WARNING: attr is pre jQuery 1.6 - if there is ever an upgrade we have to switch to "prop"
         jQuery( 'input[name^="exact_phrase_"]' ).attr( 'checked', p_exact.attr('checked') );
+    },
+    or_not_operators: function () {
+        // WARNING: live is pre jQuery 1.6 - if there is ever an upgrade we have to switch to "jQuery(document).on(…"
+        jQuery('.operator-or, .operator-not').live('click', function(){
+          var $input        = jQuery('.form-item input.form-text', jQuery(this).parent());
+          
+          // If the field is filled with placeholder text, empty it first
+          if ( $input.val() == jQuery('.fieldset-wrapper label:first').text())
+            $input.val('');
+                    
+          // Select operator by class
+          var operator      = '';
+          if ( jQuery(this).attr('class').indexOf('operator-or') >= 0 )
+            operator = ' OR ';
+          if ( jQuery(this).attr('class').indexOf('operator-not') >= 0 )
+            operator = ' NOT ';
+          
+          // Do operator insertion
+          var insertPos = ( $input.cursorPosition() == 0 ) ? $input.val().length : $input.cursorPosition() ;
+          $input.val( $input.val().substring(0, insertPos) + operator + $input.val().substring(insertPos) );
+          $input.focus();
+          
+          return false;  
+        });
     }
 }
+
+jQuery(document).ready( bhle_search.or_not_operators );
+
+
+// jQuery method for getting input cursor position
+new function($) {
+    $.fn.cursorPosition = function() {
+        var pos = 0;
+        var input = $(this).get(0);
+        // IE Support
+        if (document.selection) {
+            input.focus();
+            var sel = document.selection.createRange();
+            var selLen = document.selection.createRange().text.length;
+            sel.moveStart('character', -input.value.length);
+            pos = sel.text.length - selLen;
+        }
+        // Firefox support
+        else if (input.selectionStart || input.selectionStart == '0')
+            pos = input.selectionStart;
+
+        return pos;
+    }
+} (jQuery);

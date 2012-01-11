@@ -262,6 +262,23 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
                 'name' => 'term_' . $id,
             ),
         ),
+
+        'operator_or_' . $id => array(
+            '#type' => 'button',
+            '#default_value' => 'OR',
+            '#attributes' => array(
+                'class' => array('operator-or' , 'edit-or'),
+            ),
+        ),
+
+        'operator_not_' . $id => array(
+            '#type' => 'button',
+            '#default_value' => 'NOT',
+            '#attributes' => array(
+                'class' => array('operator-not' , 'edit-not'),
+            ),
+        ),
+
         'exact_phrase_' . $id => array(
             '#type' => 'checkbox',
             '#title' => '',
@@ -279,20 +296,6 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#attributes' => array(
                 'class' => array('select-field'),
                 'name' => 'field_' . $id,
-            ),
-        ),
-        'operator_' . $id => array(
-            '#type' => 'select',
-            '#title' => '',
-            '#options' => array(
-                'AND' => t('AND'),
-                'OR' => t('OR'),
-                'NOT' => t('NOT'),
-            ),
-            '#default_value' => $operator,
-            '#attributes' => array(
-                'class' => array('select-operator'),
-                'name' => 'operator_' . $id,
             ),
         ),
     );
@@ -1150,6 +1153,10 @@ function bhle_search_block_info() {
         'info' => t('Search summary'),
         'cache' => DRUPAL_NO_CACHE,
     );
+    $blocks['bhle_search'] = array(
+        'info' => t('BHL-E search'),
+        'cache' => DRUPAL_NO_CACHE,
+    );
     $blocks['simple_facet'] = array(
         'info' => t('BHL-E Facet list simple'),
         'cache' => DRUPAL_NO_CACHE,
@@ -1171,6 +1178,10 @@ function bhle_search_block_view($delta = '') {
     $block = array();
 
     switch ($delta) {
+        case 'bhle_search':
+          $block['subject'] = null; // Most forms don't have a subject
+          $block['content'] = drupal_get_form('search_form');
+          break;
         case 'search_summary':
             bhle_search_search_summary_add_hit_count();
             $search_summary = bhle_search_search_summary_add();
