@@ -178,7 +178,7 @@ if ($sub_action == "drop_content")
         // DELETE QUEUE SCRIPT FILE
         @unlink($curQueueFile);
 
-        rrmdir($destDir);   // aip dir 
+        rrmdir($destDir);   // AIP DIR DROP
 
         $endmsg .= "Content " . $content_id . " removed from management. Queue/Workdir/"._AIP_DIR." cleaned up.";
 

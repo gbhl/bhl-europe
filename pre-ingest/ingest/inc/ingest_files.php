@@ -95,13 +95,11 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
     // DIRECTORY EINLESEN ( NICHT REKURIV - JOURNALS ? !!!)
     $arrFiles       = getDirectory(clean_path($path),array(),0,"",0);
 
-    if ($include_aip) {
+    if (($include_aip)&&(is_dir(clean_path($path."/"._AIP_DIR)))) {
         $arrFiles   = getDirectory(clean_path($path."/"._AIP_DIR),$arrFiles,0,"",0);
     }
 
-    // !!! TEST
-    // print_r($arrFiles);
-    
+   
     $nFiles = count($arrFiles);
 
     for ($i = 0; $i < $nFiles; $i++) 

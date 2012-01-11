@@ -8,24 +8,6 @@
 
 ?>
 
-<ul id="navigation">
-
-<li class="home"><a href="index.php"><span>Home/Login</span></a></li>
-
-<li class="search"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Registration</span></a></li>
-       
-<li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
-
-<li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',400,500);"><span>About</span></a></li>        
-        
-<li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>
-
-</ul>
-
-
-
-
-
 <div id="container" >
 	
 	<a id="logo" href="#">BHL - Europe Central Ingestion Portal</a>
@@ -126,49 +108,3 @@
 /* ********************** */
 
 </script>
-
-
-	
-
-
-<script type="text/javascript" src="js/jquery-1.6.4.js"></script>
-
-<script type="text/javascript">
-
-
-// modifications by mehrrath a.
-
-
-// TO RUN TOGETHER WITH MOOTOOLS !
-jQuery.noConflict();
-
-// $(function() {
-(function($) 
-{
-	var d=300;
-	$('#navigation a').each(function(){
-		$(this).stop().animate({
-			'marginTop':'-80px'
-		},d+=150);
-	});
-
-	$('#navigation > li').hover(
-	function () {
-		$('a',$(this)).stop().animate({
-			'marginTop':'-2px'
-		},200);
-	},
-	function () {
-		$('a',$(this)).stop().animate({
-			'marginTop':'-80px'
-		},200);
-	}
-);
-})(jQuery);  //  abschluss
-</script>
-
-<?php
-
-// ------------------------------------------
-
-?>

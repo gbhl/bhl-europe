@@ -12,13 +12,15 @@
     3 Error opening an output file.
     4 Error related to PDF permissions.
     5 Other error.
+   
+    PPM-root-nnnnnn.ppm, where nnnnnn is the page number. 
  */
 
 $relativePDF = basename($sourcePDF);
 
 
 $arrPPM = getContentFiles($contentDir, 'single_suffix', true,'.ppm');
-$nPPM = count($arrPPM);
+$nPPM   = count($arrPPM);
 
 
 // GENERATE TIFs FROM PPM
@@ -30,20 +32,16 @@ if ($nPPM>0)
 // GENERATE PPM
 else
 {
-    echo "<h3>Try to generate PPM's from " . $relativePDF . "</h3>";
+    echo "<h3>Try to generate PPM's from " . $relativePDF . "</h3><pre>";
 
-    echo "<pre>";
+    $outputFile = $destDir.$relativePDF;  // not real output file is pdftoppm root!
+                                          // PPM-root-nnnnnn.ppm, where nnnnnn is the page number. 
 
-    $outputFile = $destDir.$relativePDF.".tif";  
+    $myCmd = _PDFTOPPM . " " . $sourcePDF . " " . $outputFile; 
+    $myCmd = exec_prepare($myCmd); 
 
-    $myCmd = _PDFTOPPM . " " . $sourcePDF . " " .  $destDir;
-
-
-    // KORREKTUR TESTUMGEBUNG (WINDOWS)
-    if (instr($myCmd, ":/"))
-        $myCmd = str_replace("/", "\\", $myCmd);
-
-    if (!_QUEUE_MODE) {
+    if (!_QUEUE_MODE) 
+    {
         $output = array();
         $return_var = "";
 
@@ -54,16 +52,13 @@ else
         else
             echo "Error in PDFTOPPM; " . $rLine . "\n";
 
-        // NOW MAKE THESE PPM TO THE PAGEDATA IN THE DATABASE FOR IMAGES2TIFF.PHP
-        //if (file_exists($outputFile))   $arrTextFiles[] = $outputFile;
+        // DONT MAKE THESE PPM TO THE PAGEDATA IN THE DATABASE FOR IMAGES2TIFF.PHP
     }
     else {
         // INGEST SCRIPT COMMANDS
         echo $myCmd . "\n";
         $arrQueueCommands[] = $myCmd;
     }
-
-    // $myCmd = _IMG_MAGICK_CONVERT . " " . $arrPageSources[$i] . " " . $outputFile; !!!
 
     echo "</pre>";
 }

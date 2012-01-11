@@ -48,12 +48,16 @@ else
     // B) HOLEN DES LOKALEN METADATENFILES
 
     $inputFiles  = getContentFiles($contentDir,'metadata',false);
-    $inputFile   = $inputFiles[0];
+    if (array_key_exists(0, $inputFiles))   $inputFile   = $inputFiles[0];
     unset($inputFiles);
 }
 
-if ((!isset($inputFile))||(!file_exists($inputFile))) 
-    die (_ERR." Metadata File not found or connection failure.");
+if ((!isset($inputFile))||(!file_exists($inputFile))) {
+     echo _ERR." No local metadata file found or connection failure to webservice.";
+     nl(2);
+}
+else
+{
 
 ob_start();
 
@@ -78,15 +82,10 @@ $myParams   = str_replace(array("<output_file>", "<output file>"), $outputFile, 
 
 @ob_end_clean();
 
-
 $myCmd = $myCmd . " " . $myParams;
+$myCmd = exec_prepare($myCmd);
 
-// KORREKTUR TESTUMGEBUNG (WINDOWS)
-if (instr($myCmd, ":/"))
-    $myCmd = str_replace("/", "\\", $myCmd);
-
-echo "Executing Schema Mapper: 
-        <pre>\n";
+echo "Executing Schema Mapper: <pre>\n";
 
 echo str_replace(array("-if", "-of"), array("\n-if", "\n-of"), htmlspecialchars($myCmd));
 
@@ -141,5 +140,6 @@ if (file_exists($outputFile))
 else
     echo _ERR . "Could not generate OLEF/GUID! (Metadata/Minter missing or not interpretable.)";
 
+}
 
 ?>
