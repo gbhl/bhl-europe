@@ -13,7 +13,7 @@ hidden("menu_nav",$menu_nav);
 hidden("sub_action","save_ingest_settings");
 
 echo "<center>";
-echo "<table border=1 width=1000 style='font: 11px verdana; background-color: white; margin-top: 33px;'>
+echo "<table width=1000 style='border: 3px solid #88FFFF; font: 11px verdana; background-color: white; margin-top: 33px;'>
 <tr><td colspan=7 align=center>";
 
 button("Reload & Analyze My Current Uploads",
@@ -75,7 +75,7 @@ if ($nrows>0)
             <font style=\"color: black; font-weight: bold; text-shadow: #555 3px 2px 4px;\">".str_replace(_CONTENT_ROOT,"",$line[3])."</font>"._TD;
         
         // CONTENT TYPE 
-        arr_dropdown($arrEnumCTypes,'content_type',$line[4],1,"","",true);
+        arr_dropdown($arrEnumCTypes,"content_type' disabled style='",$line[4],1,"","",true);
         echo _TD;
         
         // INGEST STATUS
@@ -102,7 +102,6 @@ if ($nrows>0)
         
         echo "</td></tr>\n";
         
-        
         $line = mysql_fetch_array($result);
     }
     
@@ -115,13 +114,10 @@ else
     echo _TAB;
     
     nl(3);
-    echo "<center><b>You have currently no Content under Management.</b>
-<br>        <br>
+    echo "<center><b>You have currently no Content under Management.</b><br><br>
 Please analyze your content uploads first and check your account details in <b>my Account</b> above.
-
-</center>";
+</center>\n";
+    
 }
-
-
 
 ?>

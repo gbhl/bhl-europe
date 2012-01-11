@@ -3,31 +3,26 @@
 // TIFFS VON DATENBANK HOLEN DA IN USER_DIRECTORY ALTSTAND VON ANALYZE 
 $query = "select content_pages_tiff from content where content_id=" . $content_id;
 $arrTiffs = explode(_TRENNER, abfrage($query, $db));
-
-$nPages = count($arrTiffs);
+$nPages   = count($arrTiffs);
 
 
 echo "<h3>Try to recognize Text in " . $nPages . " Page Images.</h3>";
 
 echo "<pre>";
 
-for ($i = 0; $i < $nPages; $i++) {
+for ($i = 0; $i < $nPages; $i++) 
+{
     ob_start();
 
-    $outputFile = $arrTiffs[$i]; //.".txt"; // substr($arrPageSources[$i],0,strrpos($arrPageSources[$i],".")).".txt";
+    $outputFile = $destDir.basename($arrTiffs[$i]);
 
+    // define("_OCR_DAT",  "/usr/local/share/tessdata/");
+    // export TESSDATA_PREFIX=/some/path/to/tessdata
     $myCmd = _TESSERACT . " " . _CONTENT_ROOT . $arrTiffs[$i] . " " . _CONTENT_ROOT . $outputFile . " -l eng ";
-    /*
-     * define("_OCR_ABS",                  "/usr/local/bin/");
-      define("_OCR_DAT",                  "/usr/local/share/tessdata/");
-      define("_TESSERACT",                _OCR_ABS."tesseract");
-     */
+    $myCmd = exec_prepare($myCmd);    
     
-    // KORREKTUR TESTUMGEBUNG (WINDOWS)
-    if (instr($myCmd, ":/"))
-        $myCmd = str_replace("/", "\\", $myCmd);
-
-    if (!_QUEUE_MODE) {
+    if (!_QUEUE_MODE) 
+    {
         $output = array();
         $return_var = "";
 

@@ -14,37 +14,43 @@
 */
 
 $relativePDF = basename($sourcePDF);
+$nPages      = getNumPagesInPDF($sourcePDF);
 
-echo "<h3>Try to extract Text from " . $relativePDF . "</h3>";
+
+echo "<h3>Try to extract text from ".$nPages." pages in " . $relativePDF . "</h3>";
 
 echo "<pre>";
 
-$outputFile = $destDir.$relativePDF.".txt";  
+// EINZELNE PAGES EXTRAHIEREN AUS DEM PDF
+for ($i=1;$i<=$nPages;$i++)
+{
+    $myCmd = str_replace("SSSS",$sourcePDF,_PDFTOTEXT);
+    
+    $outputFile = $destDir.$relativePDF."_".$i."_PDF_".$i.".txt";
 
-$myCmd = _PDFTOTEXT . " " . $sourcePDF . " " .  $outputFile;
+    // FIRST - LAST PAGE  - OUTPUT FILE 
+    $myCmd = str_replace(array('FFFF','LLLL','OOOO'),array($i,$i,$outputFile),$myCmd);
+    $myCmd = exec_prepare($myCmd);
+    
+    if (!_QUEUE_MODE) 
+    {
+        $output = array();
+        $return_var = "";
 
+        $rLine = exec($myCmd, $output, $return_var);
 
-// KORREKTUR TESTUMGEBUNG (WINDOWS)
-if (instr($myCmd, ":/"))
-    $myCmd = str_replace("/", "\\", $myCmd);
+        if ($return_var == 0)
+            echo $myCmd . "\nPDFTOTEXT ok!            " . str_replace("()", "", "(" . $rLine . ")") . "\n";
+        else
+            echo "Error in PDFTOTEXT; " . $rLine . "\n";
 
-if (!_QUEUE_MODE) {
-    $output = array();
-    $return_var = "";
-
-    $rLine = exec($myCmd, $output, $return_var);
-
-    if ($return_var == 0)
-        echo $myCmd . "\nPDFTOTEXT ok!            " . str_replace("()", "", "(" . $rLine . ")") . "\n";
-    else
-        echo "Error in PDFTOTEXT; " . $rLine . "\n";
-
-    if (file_exists($outputFile))   $arrTextFiles[] = $outputFile;
-}
-else {
-    // INGEST SCRIPT COMMANDS
-    echo $myCmd . "\n";
-    $arrQueueCommands[] = $myCmd;
+        if (file_exists($outputFile))   $arrTextFiles[] = $outputFile;
+    }
+    else {
+        // INGEST SCRIPT COMMANDS
+        echo $myCmd . "\n";
+        $arrQueueCommands[] = $myCmd;
+    }
 }
 
 echo "</pre>";
