@@ -144,7 +144,7 @@ else
     echo "<font color=red>No Content found!</font>";
 
 // CLOSE & REFRESH PARENT
-button("CLOSE - stop activating content","if (opener.document) { opener.document.body.focus(); opener.document.location.href='"._SYSTEM."?menu_nav=ingest_list'; } window.close();",900,-1);
+close_ingest_popup("CLOSE - stop activating content");
 
 close_form();
 

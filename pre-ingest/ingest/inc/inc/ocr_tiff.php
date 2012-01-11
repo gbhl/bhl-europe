@@ -18,7 +18,7 @@ for ($i = 0; $i < $nPages; $i++)
 
     // define("_OCR_DAT",  "/usr/local/share/tessdata/");
     // export TESSDATA_PREFIX=/some/path/to/tessdata
-    $myCmd = _TESSERACT . " " . _CONTENT_ROOT . $arrTiffs[$i] . " " . _CONTENT_ROOT . $outputFile . " -l eng ";
+    $myCmd = _TESSERACT . " " . _CONTENT_ROOT . $arrTiffs[$i] . " " . $outputFile . " -l eng ";
     $myCmd = exec_prepare($myCmd);    
     
     if (!_QUEUE_MODE) 
@@ -33,8 +33,8 @@ for ($i = 0; $i < $nPages; $i++)
         else
             echo "Error in OCR; " . $rLine . "\n";
 
-        if (file_exists(_CONTENT_ROOT . $outputFile . ".txt"))
-            $arrTextFiles[] = $outputFile . ".txt";
+        if (file_exists($outputFile . ".txt"))
+            $arrTextFiles[] = str_replace(_CONTENT_ROOT,'',$outputFile . ".txt");
     }
     else {
         // INGEST SCRIPT COMMANDS

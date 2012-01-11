@@ -132,9 +132,18 @@ function queue_add($queueFile, $arrQueueCommands)
         else            return _ERR." Queueing failed or commands already queued!";
     }
     
-    return _ERR." Nothing to queue!";
+    return "Info: Nothing queued.";
 }
 
+
+
+// *****************************************
+function close_ingest_popup($button_text="")
+// *****************************************
+// BUTTON CLOSES CURRENT POPUP AND RE-LOADS INGEST_LIST
+{
+    button($button_text,"if (opener.document) { opener.document.body.focus(); opener.document.location.href='"._SYSTEM."?menu_nav=ingest_list'; } window.close();",900,-1);
+}
 
 
 ?>

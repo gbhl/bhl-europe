@@ -32,18 +32,19 @@ if ((isset($content_id))&&(is_numeric($content_id)))
 
     close_progressBar();    
 
-    if (_QUEUE_MODE) {
+    if ((_QUEUE_MODE)&&($menu_nav!='get_metadata')) 
+    {
         echo queue_add($curQueueFile, $arrQueueCommands);
     }
-    
-    
+   
 }
 else
     echo _ERR . " Content ID is missing...";
 
 nl();
 
-close_button(2, 900, "", "", "CLOSE here to auto refresh your management list behind ...");
+// CLOSE & REFRESH PARENT
+close_ingest_popup("CLOSE here to auto refresh your management list behind ...");
 
 nl(2);
 

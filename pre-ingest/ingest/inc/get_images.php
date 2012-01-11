@@ -16,7 +16,7 @@ $nTiffs   = count($arrTiffs);
 if ($nTiffs > 0)    echo "TIF files present - nothing to do!\n";
 else 
 {   
-    if ($isPDF) include("inc/pdf2tiff.php");     // $arrTiffs am ende setzten auf die generierten !!!
+    if ($isPDF) include("inc/pdf2ppm.php");     // $arrTiffs am ende setzten auf die generierten !!!
     else        include("inc/images2tiff.php");  // KEIN PDF
 }
 

@@ -1,7 +1,14 @@
 <?php
+// ********************************************
+// ** FILE:    IMAGES2TIFF.PHP               **
+// ** PURPOSE: BHLE INGESTION & PREPARATION  **
+// ** DATE:    05.11.2011                    **
+// ** AUTHOR:  ANDREAS MEHRRATH              **
+// ********************************************
+
 
 // HOLE PAGES SOURCES UND KONVIERTIERE SIE
-// HIER AUCH PPM BEACHTEN DA VON PDF2TIFF AUFGERUFEN
+// CONVERT DIVERSER IMAGE FILE TYPEN (PAGEDATA TYPES) NACH TIF
 
 
 unset($arrTiffs);
@@ -16,11 +23,10 @@ $nPages = count($arrPageSources);
 if ($nPages==0) echo _ERR." No Page Sources found.)";
 else 
 {
-    echo "<h3>Try to convert " . $nPages . " foreign Page Sources to TIF.</h3>";
+    echo "<h3>Try to convert " . $nPages . " foreign Page Sources to TIF.</h3><pre>";
 
-    echo "<pre>";
-
-    for ($i = 0; $i < $nPages; $i++) {
+    for ($i = 0; $i < $nPages; $i++) 
+    {
         ob_start();
 
         $outputFile = substr($arrPageSources[$i], 0, strrpos($arrPageSources[$i], ".")) . ".tif";
@@ -41,7 +47,8 @@ else
             else
                 echo "Error in converting; " . $rLine . "\n";
 
-            if (file_exists($outputFile)) $arrTiffs[] = $outputFile;
+            if (file_exists($outputFile))
+                $arrTiffs[] = str_replace(_CONTENT_ROOT,'',$outputFile);
         }
         else {
             // INGEST SCRIPT COMMANDS

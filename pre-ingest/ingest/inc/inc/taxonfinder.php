@@ -20,8 +20,6 @@ $resource_context = stream_context_create(array(
 
 if ($nTextFiles==0) die(_ERR."No page text/OCR files found in upload or "._AIP_DIR." directory!");
 
-
-
 echo "<h3>Try to get taxons for ".$nTextFiles." text files.</h3>";
 
 // FUER ALLE TEXTFILES TAXON WEBSERVICE AUFRUFEN
@@ -63,12 +61,9 @@ for ($i = 0; $i < $nTextFiles; $i++)
 
             if ($nBytes !== false) {
                 echo $nBytes . " bytes written, ok.\n";
-                $arrTaxons[] = $outputFile;
+                $arrTaxons[] = str_replace(_CONTENT_ROOT,'',$outputFile);
             }
-
-            if ($nBytes === false) {
-                echo "No taxons found or error.\n";
-            }
+            else    echo "No taxons returned or connection error.\n";
         }
     }
     else
