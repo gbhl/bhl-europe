@@ -9,50 +9,137 @@
 // TO OLEF FORMAT 
 // ********************************************
 
-// REQUIRES: $content_id
-
-$myCmd       = _SMT;
-
-$arrProvider = get_provider_details($user_id);
 
 
-echo "<h1>Mapping Your Metadata to OLEF</h1>";
+// A) WEBSERVICE METADATA PROVIDER WS
+$metadata_ws = trim($arrProvider['metadata_ws']);
 
+if ($metadata_ws != "")
+{
+   
+    echo "<h3 style='margin-top: 3px;'>Try to get Metadata from Webservice</h3>";
 
-$myParams     = abfrage("select user_config_smt from users as wert where user_id=".$user_id,$db);
+    $resource_context = stream_context_create(array(
+        'http' => array(
+            'timeout' => _TAXON_WEB_TIMEOUT
+        )
+            )
+    );
 
-$workDir      = str_replace("//","/",_WORK_DIR.$arrProvider['user_content_id']."/");
+    // DIRECTORY NAME IS KEY TO GATHER
+    $metadataFile = clean_path($contentDir."/metadata_ws.xml");
+    $wsKey = $contentName;
+    $pos   = strrpos($wsKey,"/");
+    
+    if ($pos!==false)
+    {
+        $wsKey = substr($wsKey,$pos+1);
+        if ($wsKey=="") $wsKey = basename($contentName);    // nimmt auch /etc/  --> etc
+    }
 
-$contentDir   = abfrage("select content_root from content where content_id=".$content_id);
+    $myURL = $metadata_ws.$wsKey;     
 
-$fileMetadata = getMetaDataFile($user_id,$contentDir);
+    // DIRECTORY NAME IS KEY TO GATHER
+    if (file_put_contents($metadataFile,file_get_contents($myURL, 0, $resource_context))>0)
+    $inputFile = $metadataFile;
+}
+else
+{
+    // B) HOLEN DES LOKALEN METADATENFILES
 
+    $inputFiles  = getContentFiles($contentDir,'metadata',false);
+    if (array_key_exists(0, $inputFiles))   $inputFile   = $inputFiles[0];
+    unset($inputFiles);
+}
 
+if ((!isset($inputFile))||(!file_exists($inputFile))) {
+     echo _ERR." No local metadata file found or connection failure to webservice.";
+     nl(2);
+}
+else
+{
 
+ob_start();
 
-@mkdir(_WORK_DIR.$arrProvider['user_content_id']);
+echo "<h1 style='margin-top: 3px;'>Mapping Your Metadata to OLEF Repository Standard</h1>";
 
-@mkdir(str_replace("//","/",$contentDir."/"._AIP_DIR."/"));
+echo invisible_html(1024 * 5);
 
+@ob_end_flush();
+@ob_flush();
+@flush();
+sleep(1);
 
-$outputFile   = str_replace("//","/",$contentDir."/"._AIP_DIR."/"._AIP_OLEF_FN);
+$myCmd = _SMT;
 
+$myParams   = abfrage("select user_config_smt from users as wert where user_id=" . $user_id, $db);
 
-$myParams = str_replace(array("<input_file>", "<input file>"),$fileMetadata,$myParams);
+$outputFile = $destDir._AIP_OLEF_FN;
 
-$myParams = str_replace(array("<output_file>","<output file>"),$outputFile,$myParams);
+$myParams   = str_replace(array("<input_file>", "<input file>"), $inputFile, $myParams);
 
+$myParams   = str_replace(array("<output_file>", "<output file>"), $outputFile, $myParams);
 
-echo "Executing: <pre> ".htmlspecialchars( $myCmd." ".$myParams)."</pre>";
+@ob_end_clean();
+
+$myCmd = $myCmd . " " . $myParams;
+$myCmd = exec_prepare($myCmd);
+
+echo "Executing Schema Mapper: <pre>\n";
+
+echo str_replace(array("-if", "-of"), array("\n-if", "\n-of"), htmlspecialchars($myCmd));
+
+if ((!is_array($inputFile)) && (file_exists($inputFile))) 
+{
+    $output = array();
+    $return_var = "";
+    
+    $rLine = @exec($myCmd, $output, $return_var);
+
+    echo "\n\nReturn Code: " . $return_var . " (" . $rLine . ")\n";
+    // echo print_r($output);
+    // echo_pre($output);
+}
+else
+    echo _ERR . " Input File missing or not found.";
+
+echo "</pre>";
 
 nl();
 
-// !!! execute here
+if (file_exists($outputFile)) 
+{
+    $olef = file_get_contents($outputFile);
+    echo "\n<h2>OLEF Result: &nbsp; ";
+    icon("green_16.png");
+    echo "</h2>";
 
-// _WORKING_
+    echo "<hr>\n<pre>" . htmlspecialchars($olef) . " \n\n";
+    
+    $cGUID = "";
+    include("get_guid.php");
+    
+    echo "</pre>";    
+    
+    // NUR BEI GUID STEP OK
+    if (($cGUID!="") &&($olef!=""))
+    {
+        mysql_select("update content set content_status='in preparation', 
+            content_olef='" . mysql_clean_string($olef) .
+                "', content_guid='".$cGUID."' where content_id=" . $content_id);
+        
+        mysql_select("insert into content_guid (content_id,guid,released,last_action) values (".
+                $content_id.",'".$cGUID."',now(),now())");
 
-// java.exe -jar "G:\dev\nhm\bhl\ingest\bin\smt\SMT-cli.jar" -m c -cm 5 -if -of 
+        // IF SUCCESSFUL SET STATE TO 1 
+        if (getContentSteps($content_id)<1) setContentSteps($content_id, 1);
+    }
 
-// $rootDir = _CONTENT_ROOT."/".$arrProvider['user_content_home'];
+    unset($olef);
+}
+else
+    echo _ERR . "Could not generate OLEF/GUID! (Metadata/Minter missing or not interpretable.)";
+
+}
 
 ?>

@@ -63,7 +63,7 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingests` (
   `ingest_id` INT UNSIGNED NOT NULL ,
   `content_id` INT UNSIGNED NULL ,
   `user_id` INT UNSIGNED NULL ,
-  `ingest_structure` INT UNSIGNED NULL ,
+  `ingest_structure_id` INT UNSIGNED NULL ,
   `ingest_alias` VARCHAR(100) NULL ,
   `ingest_time` DATETIME NULL ,
   `ingest_status` ENUM('unknown','prepared','queued','success','failed') NULL DEFAULT 'prepared' ,
@@ -87,10 +87,17 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`content` (
   `content_name` VARCHAR(255) NULL ,
   `content_alias` VARCHAR(100) NULL ,
   `content_type` ENUM('unknown','book','journal','magazine','other') NULL DEFAULT 'book' ,
-  `content_status` TINYINT UNSIGNED NULL DEFAULT 1 ,
+  `content_status` ENUM('not prepared','in preparation','ready for ingest') NULL DEFAULT 'not prepared' ,
   `content_ctime` DATETIME NULL ,
   `content_atime` DATETIME NULL ,
   `content_blob` BINARY NULL ,
+  `content_size` BIGINT UNSIGNED NULL ,
+  `content_pages` INT UNSIGNED NULL ,
+  `content_last_succ_step` TINYINT UNSIGNED NULL DEFAULT 0 ,
+  `content_olef` MEDIUMTEXT NULL ,
+  `content_pages_text` TEXT NULL ,
+  `content_pages_tiff` TEXT NULL ,
+  `content_pages_taxon` TEXT NULL ,
   PRIMARY KEY (`content_id`) )
 ENGINE = InnoDB;
 
@@ -121,7 +128,7 @@ SET AUTOCOMMIT=0;
 USE `int_pi_pi`;
 INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`) VALUES ('1', 'mehrrath', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, NULL);
 INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`) VALUES ('2', 'nhmw', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`) VALUES ('3', 'test', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'testdata', '0', NULL, NULL, NULL, NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'NHMW', 'NHMW', '1', NULL, NULL, NULL, NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`) VALUES ('3', 'NBGB', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'NBGB', 'NBGB', '1', NULL, '-m c -cm 4 -if <input_file> -of <output_file> -ife ISO-8859-15', 'The metadata looks fine, all plain MARC21 records which convert fine.', NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'spices', 'admin', '1', NULL, '-m c -cm 5 -if <input_file> -of <output_file>', 'die spices Daten sind jetzt vorbereitet und in einer flachen Struktur am Server.', NULL);
 
 COMMIT;

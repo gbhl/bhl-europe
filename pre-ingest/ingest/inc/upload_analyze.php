@@ -8,44 +8,35 @@
 
 include_once(_SHARED."formlib.php");
 include_once(_SHARED."imagelib.php");
-include_once(_SHARED."dir_tools.php");
 
 
-if (!isset($analyzeDir)) die(_ERR." No Directory set.");
-
-$analyzeDir = str_replace('//','/',urldecode($analyzeDir));
-
-
+if (!isset($analyzeDir))    die(_ERR." No Directory set.");
+else                        $analyzeDir = clean_path(urldecode($analyzeDir));
 
 ob_start();
 
-echo "<h2>Content Analyzer - <font color=green>activate new Content</font><br><font color=blue size=2><b>Checking ".$analyzeDir."...</b></font></h2>";
+echo "<center><h2>Content Analyzer - <font color=green>activates new Content</font><br><font color=blue size=2><b>Checking ".$analyzeDir."...</b></font></h2>";
 
-progressBar("Please wait, reading Files<br>to database...","processing.gif","margin-top: 55px; left: 20px;","visible",2);
+progressBar("Please wait, reading Files<br>to database...","processing.gif","margin-top: 55px; left: 300px;","visible",2);
 
 echo invisible_html(1024*5);
 
-ob_end_flush();
-ob_flush();
-flush(); 
-sleep(2);
+@ob_end_flush();
+@ob_flush();
+@flush(); 
+sleep(1);
 
-// --------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+$arrDir = getDirectory($analyzeDir,array(),0,array('.', '..',_AIP_DIR ),_ANALYZE_MAX_DEPTH); 
 
-// echo_pre(getDirectory($analyzeDir));
-
-$arrDir = getDirectory($analyzeDir,array());
-    
-// echo_pre($arrDir);       <-- wird nie angezeigt das buffer drop !
-
+// EINLESEN DER STRUKTUR IN DB
 $csvDir = implode(_TRENNER,$arrDir);
 $csvDir = str_replace(_CONTENT_ROOT,"",$csvDir);
 
 mysql_select("update users set user_directory='".($csvDir)."' where user_id=".$user_id,$db);
 
-$out2 = ob_get_contents();
-
-ob_end_clean();
+// $out2 = ob_get_contents();
+@ob_end_clean();
 
 close_progressBar();
 
@@ -55,7 +46,6 @@ form('dir_details');
  
 if ($anzDir>0)
 {
-   
     echo "<b>".count($arrDir)." Elements found.<br>
         <font color=green>Please check the objects you want to manage.</font>";
     nl();
@@ -65,27 +55,32 @@ if ($anzDir>0)
     hidden("analyzeDir",urlencode($analyzeDir));
     
     echo "<table border=1 width=980 style=\"margin-left: 2px; border-color: green; background-color: white; font: 11px courier new;\">
-        <tr><th>PATH | INFO</th><th width=70>Activate Content Root/File</th></tr>";
+        <tr><th>PATH | INFO &nbsp; (page files filtered)</th><th width=70>Activate Content Root/File</th></tr>";
     
     $cur_pages = 0;
     
-    for ($i=0;$i<$anzDir;$i++)
+    for ($i=0;$i<=$anzDir;$i++)
     {
        $metadata  = false;
        $isPDF    = false;
        $isDir    = false;
        
-       if (is_dir($arrDir[$i]))     $isDir=true;
-       else if (isPDF($arrDir[$i])) $isPDF=true;
+       
+       if ($i<$anzDir) {
+        if (is_dir($arrDir[$i]))     $isDir=true;
+        else if (isPDF($arrDir[$i])) $isPDF=true;
+       }
        
        // PAGES LINE
-       if (($cur_pages<>0)&&(($isDir)||($isPDF))) {
+       if ((($cur_pages<>0)&&(($isDir)||($isPDF)))||($i==$anzDir)) {
            
            echo "<tr><td align=right>";
            icon("picture.gif");
-           echo " Number of valid page objects for this (image files, scans, ...) </td><td align=center>".$cur_pages;;
-           echo "</tr></td>\n";
+           echo " Number of valid page objects for this (image files, scans, ...) </td><td align=center>".$cur_pages." p.";
+           echo "</td></tr>\n";
            $cur_pages=0;
+           
+           if ($i==$anzDir) break(1);
        }
        
        $isPageData = isPagedata($arrDir[$i]);
@@ -113,11 +108,23 @@ if ($anzDir>0)
            // ONLY DIRS AND PDFS CAN BE ACTIVATED BUT NO AIP DIRS
            if ((($isDir)||($isPDF))&&(!$isAIPdir))
            {
-               // LOOK IF ALREADY ACTIVE
-               if (((int)abfrage("select count(*) from content where content_root='".$arrDir[$i]."'",$db))>0)
+               // LOOK IF ALREADY ACTIVE (2 TEIL IST WEGEN PDFS DIRNAME EBENFALLS KEINE CHECKBOX MEHR)
+               if ((((int)abfrage("select count(*) from content where content_root='".$arrDir[$i]."'",$db))>0)||
+                   (((int)abfrage("select count(*) from content where content_root='".dirname($arrDir[$i])."'",$db))>0))
                    icon("green_16.png", "Already under management, disable in management view only...");
-               else
-                   checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);      
+               else 
+               {
+                   // NICHT AKTIVIERTE DIRS & PDFS 
+                   // 
+                   // NUR FALLS DIRECTORY NICHT LEER ANBIETEN!
+                   if ((!is_dir_empty($arrDir[$i],true))&&(!$isPDF))
+                        checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
+                   else if ($isPDF) {
+                       include_once(_SHARED."pdf_tools.php");
+                       checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
+                       echo "<br>".getNumPagesInPDF(array($arrDir[$i]))." p.";
+                   }
+               }
            }
            else 
                if ($metadata) icon("write12.gif");
@@ -127,19 +134,22 @@ if ($anzDir>0)
        else $cur_pages++;
     }
     
-    echo "</table>";
+    echo "</table>\n";
     
     // echo "<font >".str_replace(_TRENNER,"<br>\n",$csvDir)."</font>";
-    button("save selection","submit",200);
-
+    nl();
+    button("SAVE - your current activation selection","submit",900);
 }
 else
     echo "<font color=red>No Content found!</font>";
 
-lz(2);
-close_button(2,200);
+// CLOSE & REFRESH PARENT
+button("CLOSE - stop activating content","if (opener.document) { opener.document.body.focus(); opener.document.location.href='"._SYSTEM."?menu_nav=ingest_list'; } window.close();",900,-1);
 
 close_form();
 
+nl(2);
 
 ?>
+
+</center>

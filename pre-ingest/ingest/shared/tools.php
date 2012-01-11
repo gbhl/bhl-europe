@@ -886,4 +886,30 @@ function invisible_html($bytes)
 }
 
 
+/**
+ * CREATES A CLEAN PATH WITHOUT X-TIMES /
+ *
+ * @param int $bytes
+ */
+function clean_path($myDir,$letter="/")
+{
+    // 2,3 UND 4-FACHE VORKOMMEN BEREINIGEN
+    return str_replace(array($letter.$letter.$letter.$letter,$letter.$letter.$letter,$letter.$letter),$letter,$myDir);
+}
+
+
+/**
+ * CORRECTS SLASHS TO BAKSLASH IN WINDOWS ENVIRONMENTS
+ *
+ * @param int $bytes
+ */
+function exec_prepare($myCmd)
+{
+    // KORREKTUR VON PFADEN IN WINDOWS UMGEBUNGEN
+    if (instr($myCmd, ":/")) $myCmd = str_replace("/", "\\", $myCmd);
+    
+    return $myCmd;
+}
+
+
 ?>

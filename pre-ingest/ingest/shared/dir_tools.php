@@ -13,9 +13,9 @@ function getDirectory( $path = '.', $arrContents=array(),$level = 0,
         $ignore = array('.', '..' ), $max_levels=1000)
 // ******************************************************************************************
 {
-	// INITS
-	if ($ignore=="")	  $ignore = array('.', '..' );
-	if ($arrContents=="") $arrContents = array();
+    // INITS
+    if ($ignore=="")      $ignore = array('.', '..' );
+    if ($arrContents=="") $arrContents = array();
 
     // TRIM LAST SLASH
     if (substr($path,(strlen($path)-1),1)=="/") $path = substr($path,0,strlen($path)-1);
@@ -28,7 +28,7 @@ function getDirectory( $path = '.', $arrContents=array(),$level = 0,
         {
             if( !in_array( $file, $ignore ) )       // Check that this file is not to be ignored
             {
-                $cur_abs = str_replace('//','',$path."/".$file );
+                $cur_abs = str_replace('//','',$path."/".$file );   // !!! correct ?
                         
                 // 1. ** DIRECTORY **
                 if (( is_dir($cur_abs ))&&($max_levels>=$level+1))
@@ -78,6 +78,82 @@ function get_dir_size($dir_name)
     
     return $dir_size;
 }
+
+
+// ******************
+function rrmdir($dir) 
+// ******************
+{
+   // if (instr($dir,":\"))
+   if (is_dir($dir)) 
+   {
+     $objects = scandir($dir);
+     foreach ($objects as $object) {
+       if ($object != "." && $object != "..") {
+         if (filetype($dir."/".$object) == "dir") rrmdir($dir."/".$object); else @unlink($dir."/".$object);
+       }
+     }
+     reset($objects);
+     rmdir($dir);
+   }
+ }
+
+
+
+// *******************************************************************************************
+function print_dir_arr($arrDir,$arrIcons=array("folder_16.png","file_16.png"),$dirsOnly=false)
+// *******************************************************************************************
+{
+    include_once(_SHARED."imagelib.php");
+
+    echo "<div id=\"folderlist\" name=\"folderlist\" class=\"folderlist\">";
+
+    $nFiles = count($arrDir);
+
+    if ($nFiles==0) echo "Info: Directory is empty or not readable/analyzed.<br>\n";
+    else
+    {
+     for ($i=0;$i<$nFiles;$i++)
+     {
+            if ((is_dir($arrDir[$i]))||(is_dir(_CONTENT_ROOT.$arrDir[$i])))
+                    icon($arrIcons[0]);
+            else	if (!$dirsOnly)					
+                    icon($arrIcons[1]);
+
+            echo "&nbsp;".$arrDir[$i]."\n<br>\n";
+      }
+    }
+    echo $nFiles." Elements.";
+    echo "</div>";
+}
+
+
+
+// *************************************************
+function is_dir_empty($myDir,$CountOnlyFiles=false)
+// *************************************************
+// RETURNS FALSE IF NO DIRECTORY OR NOT EMPTY, 
+// $ONLYFILES ... CHECK IF DIR HAS FILES (IGNORES SUBDIRS)
+{
+    if (!is_dir($myDir)) return false;
+    
+    $arrContent = getDirectory($myDir,"",0,"",0);
+    $nContent   = count($arrContent);
+    
+    if ($nContent==0) return true;
+    
+    $nFiles=0;
+    
+    for ($i=0;$i<$nContent;$i++) {
+        if (!is_dir($arrContent[$i])) $nFiles++;
+    }
+    
+    if (($nFiles==0)&&($CountOnlyFiles)) return true;
+
+    return false;
+}
+
+
 
 
 ?>

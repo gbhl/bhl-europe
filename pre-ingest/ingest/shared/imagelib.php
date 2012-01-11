@@ -121,6 +121,7 @@ function icon($image,$alt='',$action='',$width='',$height='',$echo = true,$img_m
   if ($echo)	{ echo $rw; return true; }
   else			{ return $rw; }
  }
+
  else return false;
 }
 
@@ -275,6 +276,7 @@ function progressBar($wait_text="",$image="",$css="",$visibility="",$baseStyle=1
         // js_command("eval(\"document.getElementById('progressBar').style.left = '\" + (((window.screen.width) / 2)-(parseInt((document.getElementById('progressBar').offsetWidth))/2)) + \"px';\");");
     }
 }
+
 
 
 // ************************

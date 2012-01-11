@@ -1,0 +1,62 @@
+
+
+// !!! FILE CHECK IN ALLEN SO EINBAUEN !!!
+
+
+// $arrPagesTextFiles = getContentFiles($contentDir,''".txt");
+// $nTextFiles = count($arrPagesTextFiles);
+// $arrPagesTextFiles = getPageFiles($destDir,".txt");   // REALE FILES DURCHSUCHEN .aip
+// $nTextFiles = count($arrPagesTextFiles);
+
+
+$arrTiffs = getPageTIFFiles($user_id, $contentDir);    
+
+if ($nTiffs == 0)    {
+    $arrTiffs = getPageTIFFiles($user_id, $destDir);    
+    $nTiffs   = count($arrTiffs);    
+}
+
+
+
+$arrTextFiles = getPageTextFiles($user_id, $contentDir);
+$nTextFiles   = count($arrTextFiles);
+
+if ($nTextFiles == 0)    {
+    $arrTextFiles = getPageTextFiles($user_id, $destDir);    
+    $nTextFiles   = count($arrTextFiles);    
+}
+
+
+
+$arrTaxons = getPageTaxonFiles($user_id,$contentDir);
+if ($nTaxons == 0)    {
+    $arrTaxons = getPageTaxonFiles($user_id, $destDir);    
+    $nTaxons   = count($arrTaxons);    
+}
+
+
+/*
+
+for ($i=0;$i<$nrows;$i++)
+{
+    echo _TR." relative path not found"._TD." .. "._TD." .. "._TD." .. "._TD." .. "._TD." .. "._TD;
+
+    // OPERATIONS
+    checkbox("ingest_do_ocr");
+    checkbox("ingest_do_taxon");
+    checkbox("ingest_do_sm");
+
+    echo " "._TR;
+}
+*/
+
+
+// button($value, $js_action, $width, $height, $textalign, $id, $echome, $tabindex)
+
+// echo _HOME;
+
+// echo "<a href=\""._SYSTEM."?menu_nav=admin\" >test</a>";
+
+
+    
+

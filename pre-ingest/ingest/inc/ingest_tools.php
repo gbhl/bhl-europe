@@ -6,6 +6,8 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
+include_once("ingest_files.php");       // TOOLS FOR INGEST FILES
+
 
 // ************************************
 function get_provider_details($user_id)
@@ -14,7 +16,7 @@ function get_provider_details($user_id)
     if (is_numeric($user_id))
     {
         $query = "select user_name, user_content_home, user_content_id, is_admin, 
-            user_config, user_config_smt, user_memo
+            user_config, user_config_smt, user_memo, queue_mode, metadata_ws 
             from "._USER_TAB." where user_id=".$user_id;
 
         return mysql_get_line($query);
@@ -31,15 +33,15 @@ function get_ingest_details($ingest_id="",$content_id)
 // ***************************************************
 {
     $query = "select 
-        ingest_id, content_id, user_id, ingest_structure, ingest_alias, ingest_time, 
-        ingest status, ingest_last_successful_step, ingest_version, ingest_do_ocr, 
+        ingest_id, content_id, user_id, ingest_structure_id, ingest_alias, ingest_time, 
+        ingest_status, ingest_last_successful_step, ingest_version, ingest_do_ocr, 
         ingest_do_taxon, ingest_do_sm 
         from ingests where ";
     
     if (is_numeric($ingest_id))         $query .= "ingest_id=".$ingest_id;
-    else if (is_numeric($ingest_id))    $query .= "content_id=".$content_id;
+    else if (is_numeric($content_id))   $query .= "content_id=".$content_id;
     else return false;
-    
+
     return mysql_get_line($query); 
 }
 
@@ -72,155 +74,65 @@ function show_help_file($filename)
 
 
 
-// ***********************
-function isMetadata($path)
-// ***********************
+// SET LAST SUCCESSFUL STEP WITH CONTENT OPERATIONS
+function setContentSteps($content_id,$step=0)
 {
-    $arrME = explode(',',_METADATA_EXT);
-    
-    if (instr(basename($path),$arrME,true,true)) return true;
-            
-    return false;
+    return mysql_select("update content set content_last_succ_step=".$step." where content_id=".$content_id);
 }
 
 
-
-// ********************************************
-function getMetaDataFile($user_id,$content_dir)
-// ********************************************
+// GET LAST SUCCESSFUL STEP WITH CONTENT OPERATIONS
+function getContentSteps($content_id)
 {
-    $arrUserDir = explode(_TRENNER,abfrage("select user_directory from users where user_id=".$user_id));
-
-	$nUserDir   = count($arrUserDir);
-
-	$interesting = false;
-
-	for ($i=0;$i<$nUserDir;$i++)
-	{
-		if (($arrUserDir[$i]==$content_dir)||(_CONTENT_ROOT.$arrUserDir[$i]==$content_dir))
-                    $interesting = true;		// AB CONTENT VERZEICHNIS
-
-		if (($interesting)&&(isMetadata($arrUserDir[$i])))	return _CONTENT_ROOT.$arrUserDir[$i];
-	}
-
-	return false;
+    return abfrage("select content_last_succ_step from content where content_id=".$content_id);
 }
 
-
-
-
-// ***********************
-function isPagedata($path)
-// ***********************
-{
-    $arrME = explode(',',_PAGEDATA_EXT);
-    
-    if (instr(basename($path),$arrME,true,true)) return true;
-
-    return false;
-}
-
-
-// *****************************
-function show_user_dir($user_id)
-// *****************************
-{
-    echo "<h1 style='margin-top: 6px;'>Last Analyzed Upload Filestructure Elements <font size=-1> (from Management Database, not realtime)</font></h1>";
-    
-    $dirC = abfrage("select user_directory from users where user_id=".$user_id);
-    
-	if ($dirC!="")  $dirC = explode('|',$dirC);
-	else			$dirC = array();
-  
-	print_dir_arr($dirC);
-}
-
-
-
-// ****************************
-function print_dir_arr($arrDir)
-// *****************************
-{
-	include_once(_SHARED."imagelib.php");
-
-	echo "<div id=folder name=folder style=\"background-color: #E4F8F7;\">";
-
-	$nFiles = count($arrDir);
-
-	if ($nFiles==0)	echo "User Directory is empty or not analyzed now.";
-	else
-	{
-		echo "<font style=\"font: 13px courier new; font-weight: bold;\">";
-
-		for ($i=0;$i<$nFiles;$i++)	
-	    {
-			if ((is_dir($arrDir[$i]))||(is_dir(_CONTENT_ROOT.$arrDir[$i])))
-				icon("folder_16.png");
-			else						
-				icon("file_16.png");
-
-			echo "&nbsp;".$arrDir[$i]."\n<br>\n";
-		}
-
-		echo "</font>";
-	}
-
-	echo "</div>";
-}
-
-
-
-// *************************
-function show_content_root()
-// *************************
-{
-	include_once(_SHARED."dir_tools.php");
-
-    echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (for orientation purposes only)</font></h1>";
-    
-	$arrDir = getDirectory(_CONTENT_ROOT,array(),0,"",0);
-
-	print_dir_arr($arrDir);
-}
-
-
-
-// ******************
-function isPDF($path)
-// ******************
-{
-    $myFile = strtolower(basename($path));
-    
-    if (strpos($myFile,'.pdf')!==false) return true;
-    
-    if (strpos($myFile,'_pdf')!==false) return true;        // checkbox value name mismatch after post
-    
-    return false;
-}
-
-
-
-// *************************
-function getPageFiles($path)
-// *************************
-{
-    $arrPageExt = array_values(explode(',',_PAGEDATA_EXT));
-    $arrFiles   = getDirectory($path);
-    $nFiles     = count($arrFiles);
-    
-    $arrPageFiles = array();
-    
-   
-    for ($i=0;$i<$nFiles;$i++)
-    {
-        // instr($haystack, $needle, $ignoreCase, $oneMatchOnly)
         
-        if (instr(basename(strtolower($arrFiles[$i])),$arrPageExt,true,true))
-                $arrPageFiles[] = $arrFiles[$i];
-                
+
+// SET INGEST_LAST_SUCCESSFUL_STEP
+function setIngestState($ingest_id,$state=0)
+{
+    if ((is_numeric($ingest_id))&&(is_numeric($state))) {
+        $query = "update ingests set ingest_last_successful_step=".$state." where ingest_id=".$ingest_id;
+        return mysql_select($query);
     }
     
-    return $arrPageFiles;
+    return false;
+}
+
+
+
+// ADD COMMANDS TO QUEUE SCRIPT FILE IF NOT ALREADY INSIDE
+
+function queue_add($queueFile, $arrQueueCommands) 
+{
+    include_once(_SHARED."file_operations.php");
+    
+    $content2write = "";
+    $linesAdded=0;
+    $nBytes=0;
+    
+    $nCommands = count($arrQueueCommands);
+    
+    if ($nCommands>0)
+    {
+        for ($i=0;$i<$nCommands;$i++)
+        {
+            if (!file_line_exists($queueFile,$arrQueueCommands[$i]))
+            {
+                $content2write .= $arrQueueCommands[$i]."\n";
+                $linesAdded++;
+            }
+        }
+
+        if ($content2write!="")
+        $nBytes = file_put_contents($queueFile, "\n".$content2write."\n", FILE_APPEND);
+
+        if($nBytes>0)   return $nBytes. " Bytes / ".$linesAdded." commands queued.\n";
+        else            return _ERR." Queueing failed or commands already queued!";
+    }
+    
+    return _ERR." Nothing to queue!";
 }
 
 
