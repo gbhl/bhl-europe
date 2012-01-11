@@ -21,7 +21,7 @@ now=`date +%Y_%m_%d_%H_%M_%S`
 rootDir="/var/www/ingest"
 
 # _WORK_DIR (CONFIG.PHP)
-sourceDir="$rootDir/temp"
+sourceDir="$rootDir/temp/"
 
 execDir="$rootDir/queuing/running/preparation_$now/"
 archDir="$rootDir/queuing/archive/"

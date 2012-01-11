@@ -21,6 +21,7 @@ $resource_context = stream_context_create(array(
 if ($nTextFiles==0) die(_ERR."No page text/OCR files found in upload or "._AIP_DIR." directory!");
 
 
+
 echo "<h3>Try to get taxons for ".$nTextFiles." text files.</h3>";
 
 // FUER ALLE TEXTFILES TAXON WEBSERVICE AUFRUFEN
@@ -34,7 +35,7 @@ for ($i = 0; $i < $nTextFiles; $i++)
     $outputFile = substr(basename($arrPagesTextFiles[$i]), 0, strrpos(basename($arrPagesTextFiles[$i]), '.'));
     
     // DARF KEIN .TXT IN SICH TRAGEN
-    $outputFile = clean_path($contentDir . "/" . $outputFile . ".tax");
+    $outputFile = clean_path($destDir . $outputFile . ".tax");
 
     $inputFileSelfReferenceHTTPpath = _HOME . "" . $arrPagesTextFiles[$i];
 
@@ -47,7 +48,7 @@ for ($i = 0; $i < $nTextFiles; $i++)
    
     if (!_QUEUE_MODE)
     {
-        echo "Try to analyze " . basename($arrPagesTextFiles[$i]) . " .... ";
+        echo "Try to analyze " . basename($arrPagesTextFiles[$i]) . " ... ";
         
         // echo $myURL . "\n";
         

@@ -41,3 +41,41 @@ if ($menu_nav=="portal") {
 <script type="text/javascript" src="<?php echo _SHARED_URL; ?>js/tools.js"></script>
 </head>
 <body>
+
+<?php
+
+// UPPER MENU
+
+if ($menu_nav=='ingest_list')
+{
+?>
+
+<ul id="navigation">
+        <li class="home"><a href="#" onClick="switch_visibility(document.getElementById('pd_div'));"><span>my Account</span></a></li>
+        <li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
+        <li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',420,540);"><span>About</span></a></li>        
+	<li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>
+	<li class="about"><a href="#" onClick="nachfrage('Terminate current ingest session?','<?php echo _SYSTEM."?menu_nav=logout"; ?>');"><span>Logout</span></a></li>        
+</ul>
+
+<?php    
+
+}
+
+if ($menu_nav=='portal')
+{
+?>
+
+<ul id="navigation">
+    <li class="home"><a href="index.php"><span>Home/Login</span></a></li>
+    <li class="search"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Registration</span></a></li>
+    <li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
+    <li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',420,540);"><span>About</span></a></li>        
+    <li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>
+</ul>
+
+<?php
+
+}
+
+?>

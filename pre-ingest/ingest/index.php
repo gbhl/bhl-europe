@@ -53,6 +53,7 @@ if (!_CLI_EXECUTION)
         include("inc/db_ops.php");
     }
     
+    if ((!isset($menu_nav))||($menu_nav==''))  $menu_nav = 'portal';
     
     // AUSGABE
     include_once("inc/lay_header.php");

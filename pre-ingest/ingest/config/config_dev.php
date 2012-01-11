@@ -51,7 +51,7 @@ define("_DB_DEBUG",                 true);
 // --------------------
 define("_PAGEDATA_EXT",             ".tif,.tiff,.jpeg,.jpg,.ppm,.gif,.TIF,.TIFF,.JPEG,.JPG,.PPM,.GIF");
 define("_BOOKDATA_EXT",             ".pdf,.PDF");
-define("_METADATA_EXT",             ".xml,.marc,.XML,.MARC");
+define("_METADATA_EXT",             ".xml,.marc,.mrc,.XML,.MARC,.MRC");
 define("_OCRDATA_EXT",              ".txt,.ocr,.TXT,.OCR");
 define("_ANALYZE_MAX_DEPTH",        20);            // MAX DIRECTORY STRUCTURE DEPTH
 
@@ -86,8 +86,8 @@ define("_IMG_CONVERT_PARAMS",       "");
 // ---- PDF 2 TXT SPECIFIC ----
 // ----------------------------
 define("_XPDF_ABS",                 "G:/dev/nhm/ingest/bin/xpdf/bin32/");
-define("_PDFTOTEXT",                _XPDF_ABS."pdftotext.exe");
-define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm.exe");
+define("_PDFTOTEXT",                _XPDF_ABS."pdftotext.exe -nopgbrk -eol unix -f FFFF -l LLLL SSSS OOOO");
+define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm.exe -r 40 ");
 
 
 // ----------------------

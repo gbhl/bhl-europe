@@ -1,4 +1,70 @@
 
+
+
+> Hallo Andreas,
+> 
+> ich habe mich jetzt mit dem Tool gespielt - dabei sind mir gleich einige
+> Dinge aufgefallen:
+> 
+> - .mrc/.MRC Dateien sollten per Default als Metadaten-Files erkannt
+> werden (habe ich jetzt händisch nachgearbeitet)
+-konfigurationssache: erledigt
+
+> - Der Cron-Job hat nicht funktioniert, da der "temp" Pfad keinen
+> Trailing-Slash hatte
+
+- ?? trailing slash welche variable meinst du genau (im bash script
+oder im php code)?
+
+
+> - Erzeugte Files befinden sich nach wie vor im Haupt-Verzeichnis und
+> nicht im .aip Verzeichnis
+
+versions-bug: gefixt
+
+> - In der "Reload & Analyze My Current Uploads" Ansicht wird beim letzten
+> Eintrag die Anzahl der Seiten nicht ausgegeben
+> - In der Übersicht werden die Pages als "n.a." angezeigt
+
+bug: fixing planned 
+> - Der "Content Type" ist weiterhin auswählbar (Übersicht)
+bug: fixing planned 
+> - Der "Ingest Status" wird nicht aktualisiert (Übersicht)
+bug: fixing planned 
+> - Der letzte Schritt (Ingest) wird automatisch ausgelöst (bzw. ausgegraut)
+
+automatisch ausgelöst - erklärung bitte?
+
+> - Beim Cleanup werden erzeugte Files nicht wieder gelöscht (z.B. .tax
+> Files)
+
+-> es wird datenbankseitig aufgeräumt und das queue file gelöscht ...
+alles zu löschen ist eine feature request - bitte überdenken und dann
+ diesen bestätigen oder nicht
+
+
+> Und der wichtigste Punkte:
+> - Es wird nach wie vor KEIN METS File generiert. Das war der wichtigste
+> Punkt, welcher bist Gestern zu erledigen war. Habe ich hier etwas
+> übersehen oder warum gibt es noch kein METS File?
+
+erzeugung erst beim letzten schritt wenn alles validiert werden konnte
+
+
+> Und ein Bug ist mir auch noch aufgefallen:
+> - Wenn man in der Übersicht einen Eintrag löscht (über das rote 'X'),
+> danach auf "Reload & Analyze My Current Uploads" geht, den soeben
+> gelöschten Eintrag auswählt und über "save your current selection"
+> abspeichert, danach auf "CLOSE here & refresh your management list"
+> klick, dann wird die Übersicht zwar neu geladen, aber der Eintrag
+> (scheinbar) gleich wieder gelöscht.
+
+bug: fixing planned
+
+
+
+
+
 // !!! file check in allen so einbauen !!! wie bei taxonfinder.php
 
 

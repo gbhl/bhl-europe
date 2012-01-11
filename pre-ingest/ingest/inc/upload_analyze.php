@@ -59,23 +59,28 @@ if ($anzDir>0)
     
     $cur_pages = 0;
     
-    for ($i=0;$i<$anzDir;$i++)
+    for ($i=0;$i<=$anzDir;$i++)
     {
        $metadata  = false;
        $isPDF    = false;
        $isDir    = false;
        
-       if (is_dir($arrDir[$i]))     $isDir=true;
-       else if (isPDF($arrDir[$i])) $isPDF=true;
+       
+       if ($i<$anzDir) {
+        if (is_dir($arrDir[$i]))     $isDir=true;
+        else if (isPDF($arrDir[$i])) $isPDF=true;
+       }
        
        // PAGES LINE
-       if (($cur_pages<>0)&&(($isDir)||($isPDF))) {
+       if ((($cur_pages<>0)&&(($isDir)||($isPDF)))||($i==$anzDir)) {
            
            echo "<tr><td align=right>";
            icon("picture.gif");
-           echo " Number of valid page objects for this (image files, scans, ...) </td><td align=center>".$cur_pages;;
-           echo "</tr></td>\n";
+           echo " Number of valid page objects for this (image files, scans, ...) </td><td align=center>".$cur_pages." p.";
+           echo "</td></tr>\n";
            $cur_pages=0;
+           
+           if ($i==$anzDir) break(1);
        }
        
        $isPageData = isPagedata($arrDir[$i]);
@@ -109,9 +114,16 @@ if ($anzDir>0)
                    icon("green_16.png", "Already under management, disable in management view only...");
                else 
                {
+                   // NICHT AKTIVIERTE DIRS & PDFS 
+                   // 
                    // NUR FALLS DIRECTORY NICHT LEER ANBIETEN!
-                   if (!is_dir_empty($arrDir[$i],true))
-                   checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
+                   if ((!is_dir_empty($arrDir[$i],true))&&(!$isPDF))
+                        checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
+                   else if ($isPDF) {
+                       include_once(_SHARED."pdf_tools.php");
+                       checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
+                       echo "<br>".getNumPagesInPDF(array($arrDir[$i]))." p.";
+                   }
                }
            }
            else 
@@ -122,22 +134,21 @@ if ($anzDir>0)
        else $cur_pages++;
     }
     
-    echo "</table>";
+    echo "</table>\n";
     
     // echo "<font >".str_replace(_TRENNER,"<br>\n",$csvDir)."</font>";
     nl();
-    button("save your current selection","submit",900);
+    button("SAVE - your current activation selection","submit",900);
 }
 else
     echo "<font color=red>No Content found!</font>";
 
-// lz(2);
-close_button(2,900,"","","CLOSE here & refresh your management list");
+// CLOSE & REFRESH PARENT
+button("CLOSE - stop activating content","if (opener.document) { opener.document.body.focus(); opener.document.location.href='"._SYSTEM."?menu_nav=ingest_list'; } window.close();",900,-1);
 
 close_form();
 
 nl(2);
-
 
 ?>
 

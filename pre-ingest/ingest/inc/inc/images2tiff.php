@@ -24,16 +24,13 @@ else
         ob_start();
 
         $outputFile = substr($arrPageSources[$i], 0, strrpos($arrPageSources[$i], ".")) . ".tif";
-
         $outputFile = $destDir . basename($outputFile);
 
         $myCmd = _IMG_MAGICK_CONVERT . " " . $arrPageSources[$i] . " " . $outputFile;
-
-        // KORREKTUR TESTUMGEBUNG (WINDOWS)
-        if (instr($myCmd, ":/"))
-            $myCmd = str_replace("/", "\\", $myCmd);
-
-        if (!_QUEUE_MODE) {
+        $myCmd = exec_prepare($myCmd);
+        
+        if (!_QUEUE_MODE) 
+        {
             $output = array();
             $return_var = "";
 

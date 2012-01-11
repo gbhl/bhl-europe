@@ -6,14 +6,14 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIFF files from various sources</h1>";
+echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIF files from various sources</h1>";
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $nTiffs   = count($arrTiffs);
 
 
-if ($nTiffs > 0)    echo "Tiff files present - nothing to do!\n";
+if ($nTiffs > 0)    echo "TIF files present - nothing to do!\n";
 else 
 {   
     if ($isPDF) include("inc/pdf2tiff.php");     // $arrTiffs am ende setzten auf die generierten !!!
