@@ -303,7 +303,6 @@
 					<xsl:element name="field">
 						<xsl:attribute name="name">mods_record_content_source</xsl:attribute>
 							<xsl:value-of select="."/>
-						</xsl:if>
 					</xsl:element>
 				</xsl:for-each>
 			</xsl:if>
