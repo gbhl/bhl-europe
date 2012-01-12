@@ -53,6 +53,16 @@
 <div id="content">
 
     <div id="content-inside" class="inside">
+
+        <?php if ($page['content_preface']): ?>
+            <div id="content_preface">
+            <div class="advanced-search-link">
+                <p class="simple-search"><a class="advanced-search-link" href="/" title="<?php print t('Simple search');?>"><?php print t('Simple search');?></a></p>
+            </div>
+            
+            <?php print render($page['content_preface']); ?>
+        </div>
+        <?php endif; ?>           
     
         <div id="main">
             
@@ -86,12 +96,6 @@
            
             <?php if ($tabs): ?><?php print render($tabs); ?><?php endif; ?>
             
-
-            <?php if ($page['content_preface']): ?><div id="content_preface"><?php print render($page['content_preface']); ?></div><?php endif; ?>           
-
-              <div class="advanced-search-link">
-                <p class="simple-search"><a class="advanced-search-link" href="/" title="<?php print t('Simple search');?>"><?php print t('Simple search');?></a></p>
-              </div>
               <?php print render($page['content']); ?>                       
 
             <?php if ($page['content_expanded']): ?><div id="content_expanded"><?php print render($page['content_expanded']); ?></div><?php endif; ?>           

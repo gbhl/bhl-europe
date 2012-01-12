@@ -738,7 +738,7 @@
  <defaultSearchField>all</defaultSearchField>
 
  <!-- SolrQueryParser configuration: defaultOperator="AND|OR" -->
- <solrQueryParser defaultOperator="OR"/>
+ <solrQueryParser defaultOperator="AND"/>
 
 
    <!-- Above, multiple source fields are copied to the [text] field.

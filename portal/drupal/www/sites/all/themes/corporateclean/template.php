@@ -51,14 +51,14 @@ drupal_add_js('jQuery(document).ready(function($) {
        $( "#tabs" ).tabs();   
        
        $("#results-sort-box #results-list-type-box #results-view-type span").bind("click", function() {
-         $("#search-results").toggleClass("catalog list");
+         $("#search-results").toggleClass("list catalog");
          return false;
        });
        
        $("#results-view-type span").toggle(function () {
-         $(this ).text("' . t('TABLE') . '"); 
-       }, function () {
          $(this ).text("' . t('LIST') . '"); 
+       }, function () {
+         $(this ).text("' . t('TABLE') . '"); 
        });       
       
        $("#accordion").tabs("div.block-aggregator",{
@@ -88,6 +88,18 @@ function corporateclean_form_alter(&$form, &$form_state, $form_id) {
  	  $form['search_block_form']['#attributes'] = array('onblur' => "if (this.value == '') {this.value = '{$form_default}';}", 'onfocus' => "if (this.value == '{$form_default}') {this.value = '';}" );
   }
 } 
-  
- 
+
+function corporateclean_page_alter(&$page) {
+  // This assumes everything being output in the "content" page region.
+
+  // Logged in
+  if (!empty($page['content']['system_main']['content']['search_form'])) {
+    unset($page['content']['system_main']['content']['search_form']);
+  }
+
+  // Not logged in
+  if (!empty($page['content']['system_main']['search_form'])) {
+    unset($page['content']['system_main']['search_form']);
+  }
+}
 ?>
