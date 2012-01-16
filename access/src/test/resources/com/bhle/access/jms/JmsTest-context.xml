@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jms="http://www.springframework.org/schema/jms" xmlns:amq="http://activemq.apache.org/schema/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+
+	<import resource="classpath*:/META-INF/spring/env-context.xml" />
+	<import resource="classpath*:/META-INF/spring/akubra-context.xml" />
+
+	<!-- Embedded ActiveMQ Broker -->
+	<amq:broker id="broker" useJmx="false" persistent="false">
+		<amq:transportConnectors>
+			<amq:transportConnector uri="tcp://localhost:51515" />
+		</amq:transportConnectors>
+	</amq:broker>
+
+	<!-- ActiveMQ Destination -->
+	<amq:topic id="destination" physicalName="fedora.apim.update" />
+
+	<!-- JMS ConnectionFactory to use, configuring the embedded broker using 
+		XML -->
+	<amq:connectionFactory id="jmsFactory"
+		brokerURL="tcp://localhost:51515" />
+
+	<!-- JMS Producer Configuration -->
+	<bean id="jmsProducerConnectionFactory"
+		class="org.springframework.jms.connection.SingleConnectionFactory"
+		depends-on="broker" p:targetConnectionFactory-ref="jmsFactory" />
+
+	<bean id="jmsProducerTemplate" class="org.springframework.jms.core.JmsTemplate"
+		p:connectionFactory-ref="jmsProducerConnectionFactory"
+		p:defaultDestination-ref="destination" />
+
+	<bean id="initializer" class="com.bhle.access.jms.FedoraJmsInitializer" />
+
+	<bean id="messagingClient"
+		class="com.yourmediashelf.fedora.client.messaging.MessagingClient">
+		<constructor-arg value="access" />
+		<constructor-arg ref="fedoraJmsContainer" />
+		<constructor-arg>
+			<props>
+				<prop key="java.naming.factory.initial">${java.naming.factory.initial}</prop>
+				<prop key="java.naming.provider.url">tcp://localhost:51515</prop>
+				<prop key="connection.factory.name">${connection.factory.name}</prop>
+				<prop key="topic.fedora">fedora.apim.update</prop>
+			</props>
+		</constructor-arg>
+		<constructor-arg value="true" />
+	</bean>
+
+	<bean id="fedoraJmsContainer" class="com.bhle.access.jms.listener.FedoraJmsContainer">
+		<property name="listeners">
+			<list>
+				<bean class="com.bhle.access.jms.AtomFedoraJmsListenerDumb" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fedoraJmsAtomMessageStubUtil" class="com.bhle.access.jms.FedoraJmsAtomMessageStubUtil">
+		<property name="ingestMessage">
+			<value>classpath:com/bhle/access/jms/atom/ingest.xml</value>
+		</property>
+		<property name="purgeObjectMessage">
+			<value>classpath:com/bhle/access/jms/atom/purgeObject.xml</value>
+		</property>
+		<property name="purgeDatastreamMessage">
+			<value>classpath:com/bhle/access/jms/atom/purgeDatastream.xml</value>
+		</property>
+		<property name="addDatastreamMessage">
+			<value>classpath:com/bhle/access/jms/atom/addDatastream.xml</value>
+		</property>
+		<property name="modifyObjectMessage">
+			<value>classpath:com/bhle/access/jms/atom/modifyObject.xml</value>
+		</property>
+		<property name="modifyDatastreamMessage">
+			<value>classpath:com/bhle/access/jms/atom/modifyDatastream.xml
+			</value>
+		</property>
+	</bean>
+
+	<bean id="messageConvertor" class="com.bhle.access.jms.util.FedoraJmsMessageConverter" />
+
+	<bean id="jmsProducer" class="com.bhle.access.jms.FedoraJmsProducerStub" />
+
+	<bean id="atomFedoraJmsListenerDumb" class="com.bhle.access.jms.AtomFedoraJmsListenerDumb" />
+</beans>

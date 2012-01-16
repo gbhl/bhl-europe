@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jms="http://www.springframework.org/schema/jms" xmlns:amq="http://activemq.apache.org/schema/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+	<context:component-scan base-package="com.bhle.access.jms" />
+
+	<context:property-placeholder location="classpath:access.properties" />
+
+	<bean id="messagingClient" class="com.yourmediashelf.fedora.client.messaging.MessagingClient">
+		<constructor-arg value="access" />
+		<constructor-arg ref="fedoraJmsContainer" />
+		<constructor-arg>
+			<props>
+				<prop key="java.naming.factory.initial">${java.naming.factory.initial}</prop>
+				<prop key="java.naming.provider.url">${java.naming.provider.url}</prop>
+				<prop key="connection.factory.name">${connection.factory.name}</prop>
+				<prop key="topic.fedora">fedora.apim.update</prop>
+			</props>
+		</constructor-arg>
+		<constructor-arg value="true" />
+	</bean>
+	
+	<bean id="fedoraJmsContainer" class="com.bhle.access.jms.listener.FedoraJmsContainer">
+		<property name="listeners">
+			<list>
+				<ref bean="atomFedoraJmsListener"/>
+			</list>
+		</property>
+	</bean>
+</beans>

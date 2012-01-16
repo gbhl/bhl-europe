@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:int="http://www.springframework.org/schema/integration"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/integration
+							http://www.springframework.org/schema/integration/spring-integration-2.0.xsd">
+
+	<int:poller max-messages-per-poll="1" id="defaultPoller" default="true">
+		<int:interval-trigger interval="1000" />
+	</int:poller>
+	
+	<int:gateway id="OfflineProcessingGateway" service-interface="com.bhle.access.download.offline.OfflineProcessingService">
+		<int:method name="handleRawRequest" request-channel="requestChannel" />
+	</int:gateway>
+
+	<int:channel id="requestChannel" />
+
+	<int:channel id="launchChannel">
+		<int:queue />
+	</int:channel>
+
+	<int:channel id="statusChannel">
+		<int:queue />
+	</int:channel>
+
+	<bean id="jobLaunchRequestTransformer"
+		class="com.bhle.access.download.offline.JobLaunchRequestTransformer" />
+	<int:transformer input-channel="requestChannel"
+		output-channel="launchChannel" ref="jobLaunchRequestTransformer" />
+
+	<bean id="jobMessageHandler"
+		class="org.springframework.batch.integration.launch.JobLaunchingMessageHandler">
+		<constructor-arg ref="jobLauncher" />
+	</bean>
+	<int:service-activator input-channel="launchChannel"
+		output-channel="statusChannel" ref="jobMessageHandler" />
+
+</beans>
