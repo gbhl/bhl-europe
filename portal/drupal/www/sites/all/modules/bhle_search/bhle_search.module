@@ -549,11 +549,11 @@ function bhle_search_conditions($keys = null) {
  */
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
-    // wildcards: * ? are the only allowed characters!
+    // are the only allowed characters are: *, ?, [, ]
     $escaped_str = str_replace(array(
-                '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', ':', '\\',
+                '+', '-', '&&', '||', '!', '(', ')', '{', '}', '^', '"', '~', ':', '\\',
                     ), array(
-                '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\:', '\\\\',
+                '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\^', '\\"', '\\~', '\\:', '\\\\',
                     ), $string);
 
     // allow using escape sequences like \\[ in the original $string
