@@ -1,4 +1,4 @@
-h2.search-result-title {display:none;}
+h2.search-result-title{display:none;}
 
 #results-sort-box {
   float:right; padding:0px; margin-bottom:20px;
@@ -96,7 +96,7 @@ h2.search-result-title {display:none;}
 #results-sort-box #results-list-type-box #results-view-type span:hover {text-decoration:underline;}
 
 
-#results {float:right; width:690px;}
+.page-search-bhle-empty #results {display:block; float:right; width:690px;}
 
 /** PAGER **/
 #results .item-list {
@@ -156,7 +156,7 @@ h2.search-result-title {display:none;}
   overflow:hidden;         
 }
 #results #search-results.catalog li.search-result .content-type-logo p.label {
-  display:block; padding:0px 3px 4px; margin:0px; height:13px; text-align:right; color:#333; font-size:91.7%;
+  display:block; padding:0px 8px 4px; margin:0px; height:13px; text-align:right; font-weight:bold; color:#333; font-size:91.7%;
   background:transparent url('../images/bg-result-preview-underline.png') no-repeat left bottom; 
 }
 #results #search-results li.search-result .content-type-logo span.bitmap {
@@ -208,12 +208,19 @@ h2.search-result-title {display:none;}
   padding:0px; margin:0px; display:block; 
 }  
 #content #main #results #search-results.list li.search-result .search-snippet-info ul.search-info-list {
-  margin-left:5px; padding-left:5px; list-style-type:none;
+  margin-left:5px; padding-left:5px; list-style-type:none; overflow:visible;
 }                                     
 #results #search-results.catalog li.search-result .search-snippet-info li.search-info-item {
-  display:block; position:relative; overflow:hidden;
-  width:105px;  margin:0px 0px 5px 0px; padding:2px 4px 0px 11px; line-height:1.25;
+  display:block; position:relative; overflow:visible;
+  width:120px;  margin:0px 0px 5px 0px; padding:0px; 
 }       
+#results #search-results.catalog li.search-result .search-snippet-info li.search-info-item span.item-label {
+  display:block; position:relative;
+  padding:2px 4px 0px 11px; line-height:1.25;
+  width:105px;
+  overflow:hidden;
+}
+
 #results #search-results.list li.search-result .search-snippet-info li.search-info-item {
  margin:0px; padding: 0px 0px 0px 17px; font-size:116.7%;
  background: transparent url('../images/icon-bullet-green.gif') no-repeat left .6em; 
@@ -233,15 +240,44 @@ overflow: hidden;
 
 #results #search-results li.search-result .search-snippet-info li.search-info-item a {color:#333;}
 
-#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author {height:28px;}
-#results #search-results.catalog li.search-result .search-snippet-info li.metadata-year {height:16px;}
-#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher {height:29px;}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author span.item-label {height:28px;}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-year span.item-label {height:16px;}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher span.item-label {height:29px;}
                                                                                                     
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author,
 #results #search-results.catalog li.search-result .search-snippet-info li.metadata-author span.gradient-overflow {height:31px;}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-year,
 #results #search-results.catalog li.search-result .search-snippet-info li.metadata-year span.gradient-overflow {height:19px;}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher,
 #results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher span.gradient-overflow {height:32px;}
 
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author:hover span.item-label,
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author span.item-label:hover,
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher span.item-label:hover {
+  position:absolute; top:0px; left:0px; 
+  padding:2px 4px 3px 11px;
+  height:auto;
+  background-color:#d9dfce;
+  border:1px #ccd3c1 solid; 
+  z-index:1000;
+}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author:hover span.item-label,
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author span.item-label:hover {
+ height:auto; min-height:28px;
+}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher:hover span.item-label,
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher span.item-label:hover {
+ height:auto; min-height:29px;
+}
 
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author:hover span.gradient-overflow,
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author span.gradient-overflow:hover {
+ height:auto; min-height:31px; display:none;
+}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher:hover span.gradient-overflow,
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher span.gradient-overflow:hover {
+ height:auto; min-height:32px; display:none;
+}
 
 #results #search-results.catalog li.search-result .result-actions {clear:both; padding-top:20px;}
 

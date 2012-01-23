@@ -22,6 +22,8 @@
  */
 ?>
 <?php if ($search_results) : ?>
+
+
   <h2 class="search-result-title wcag"><?php print t('Search results');?></h2>
 
   <div id="results">
@@ -30,16 +32,15 @@
 
       <div id="results-number-box">
         <div id="results-number-label">
-          <?php print t('Items per page:'); ?> <span><?php print t('all'); ?></span></a>                            
+          <?php print t('Items per page:'); ?> <span></span></a>                            
         </div>
         <ul id="results-number">
           <li><a href="?per_list=5">5</a></li>
-          <li><a href="?per_list=10">10</a></li>
+          <li class="selected"><a href="?per_list=10">10</a></li>
           <li><a href="?per_list=15">15</a></li>
           <li><a href="?per_list=20">20</a></li>
           <li><a href="?per_list=25">25</a></li>
           <li><a href="?per_list=30">30</a></li>
-          <li class="selected"><a href="?per_list="><?php print t('all'); ?></a></li>
         </ul>
       </div>
 
@@ -52,6 +53,8 @@
   
     <?php print $pager; ?>
 
+    <?php print $browse; ?>
+
     <ol id="search-results" class="search-results <?php print $module; ?>-results catalog">
       <?php print $search_results; ?>
     </ol>
@@ -63,3 +66,4 @@
   <h2><?php print t('Your search yielded no results');?></h2>
   <?php print search_help('search#noresults', drupal_help_arg()); ?>
 <?php endif; ?>
+

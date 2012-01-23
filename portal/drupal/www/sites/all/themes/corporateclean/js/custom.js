@@ -15,15 +15,11 @@
       min.val(init_min);
       max.val(init_max);
 
-      $('a.ui-slider-min').text(init_min);
-      $('a.ui-slider-max').text(init_max);
-
       min.parents('div.views-widget:not(.ajax-processed)').addClass('ajax-processed').before(
         $('<div></div>').slider({
-
              range: true,
-             min: 1600,     // Adjust slider min and max to the range 
-             max: 2050,    // of the exposed filter.
+             min:  1600,     // Adjust slider min and max to the range 
+             max:  2050,     // of the exposed filter.
              step: 10,
              values: [init_min, init_max],
 
@@ -33,18 +29,16 @@
                 max.val(ui.values[1]);
                 $('a.ui-slider-max').text(ui.values[1]);
              },
-             
-			stop: function(event, ui){
-				$(this).parents('form').find('.ctools-auto-submit-click').click();
-			},             
-             
-         })
 
-       );      // Add .hide() before the ';' to remove the input elements altogether.
-      
-      }
+      			 stop: function(event, ui){
+      			  	$(this).parents('form').find('.ctools-auto-submit-click').click();
+      			 },             
+        })
+      );      // Add .hide() before the ';' to remove the input elements altogether.
 
+      $('a.ui-slider-min').text(init_min);
+      $('a.ui-slider-max').text(init_max);
+    }
   };
-  
 }(jQuery));
 

@@ -62,8 +62,10 @@
  * @see template_process()
  */
 ?>
+    <?php print $query_source; ?>
+
 <li class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php /*  BHLE ID */ ?></p><span class="bitmap">&nbsp;</span></div>
+  <div class="content-type-logo radius gradient-vertical-grey"><p class="label"><?php print $item_order; ?>.</p><span class="bitmap">&nbsp;</span></div>
   <?php print render($title_prefix); ?>
   <h3 class="result-title"<?php print $title_attributes; ?>>
     <a href="<?php print $url; ?>"><?php print $title; ?></a>
@@ -77,7 +79,7 @@
       <ul class="search-info-list">
       <?php foreach($info_split as $key => $value) : ?>
         <li class="search-info-item metadata-<?php print $key ?>">
-        <a href="#" title="<?php print t($key) ?>" class="content-<?php print $key ?>"><?php print $value ?></a><span class="gradient-overflow">&nbsp;</span></li>
+          <span class="item-label"><?php print $value ?></span><span class="gradient-overflow">&nbsp;</span></li>
       <?php endforeach; ?>
       </ul>
     <?php endif; ?>

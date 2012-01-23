@@ -26,32 +26,6 @@
  * @ingroup views_templates
  */
 ?>
-<div id="view-browse-page">
-<div class="<?php print $classes; ?>">
-  
-    <div class="view-header">
-      <h2><span><?php print t('Browse by Year'); ?></span></h2>
-    </div>
 
-  <div class="view-browse-content-wrapper">
-  <div class="view-browse-content">
-    <?php if ($exposed): ?>
-      <div class="view-filters">
-        <?php print $exposed; ?>
-        <div class="userange-button"><a href="#" title="<?php print t('Use the range'); ?>"> <?php print t('Use the range'); ?></a></div>
-      </div>   
-      
-    <?php endif; ?>
-
-    <div class="view-content">
-      <?php if ($rows): ?>
-        <?php print $rows; ?>
-      <?php endif; ?>
-    </div>
-  </div>
-
-</div> 
-</div> 
-</div> 
 
 <?php /* class view */ ?>

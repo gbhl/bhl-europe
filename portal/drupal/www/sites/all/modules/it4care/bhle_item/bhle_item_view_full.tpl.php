@@ -17,17 +17,15 @@ unset($item->olef_scientific_name);
   <ul>
     <li class="first"><a href="#tabs-1" class="active biblio-summary"><?php print t('Summary'); ?></a></li>
     <li><a href="#tabs-2" class="active biblio-abstract"><?php print t('Abstract'); ?></a></li>
-    <li><a href="#tabs-3" class="active biblio-mods"><?php print t('MODS'); ?></a></li>
-<!--    <li><a href="#tabs-4" class="active biblio-bibtex"><?php print t('BibTeX'); ?></a></li> -->
-    <li><a href="#tabs-5" class="active biblio-endnote"><?php print t('Endnote'); ?></a></li>
-    <li><a href="#tabs-6" class="active biblio-mark21"><?php print t('Mark21'); ?></a></li>
-    <li><a href="#tabs-7" class="active biblio-dc"><?php print t('DC'); ?></a></li>
-<!--    <li><a href="#tabs-8" class="active biblio-references"><?php print t('References'); ?></a></li> --> 
+    <li><a href="#tabs-3" class="active biblio-marc21"><?php print t('MARC21'); ?></a></li>
+    <li><a href="#tabs-4" class="active biblio-marcxml"><?php print t('MARCXML'); ?></a></li>
+    <li><a href="#tabs-5" class="active biblio-mods"><?php print t('MODS'); ?></a></li>
+    <li><a href="#tabs-6" class="active biblio-dc"><?php print t('Dublin Core'); ?></a></li>
+    <li><a href="#tabs-7" class="active biblio-refnum"><?php print t('RefNum'); ?></a></li> 
   </ul>
 
   <div id="tabs-1" class="biblio-summary">
     <div class="download-button"><a href="#" title="<?php print t('Download Summary'); ?>"> <?php print t('Download Summary'); ?></a></div>
-
     <ul>
       <?php if ($rendered['dc_title']) { ?><li><label><?php print t('Title'); ?></label><p><?php print $rendered['dc_title']; ?></p></li><?php } ?>
       <?php if ($rendered['mods_name']) { ?><li><label><?php print t('Author'); ?></label><p><?php print $rendered['mods_name']; ?></p></li><?php } ?>
@@ -48,7 +46,17 @@ unset($item->olef_scientific_name);
     <p><?php print t('No data for '); ?><?php print t('Abstract'); ?></p>
   </div>
 
-  <div id="tabs-3" class="biblio-mods">
+  <div id="tabs-3" class="biblio-marc21">
+    <div class="download-button"><a href="#" title="<?php print t('Download MARC21'); ?>"><?php print t('Download MARC21'); ?></a></div>
+    <p><?php print t('No data for '); ?><?php print t('MARC21'); ?></p>
+  </div>
+
+  <div id="tabs-4" class="biblio-marcxml">
+    <div class="download-button"><a href="#" title="<?php print t('Download MARCXML'); ?>"><?php print t('Download MARCXML'); ?></a></div>
+    <p><?php print t('No data for '); ?><?php print t('MARCXML'); ?></p>
+  </div>
+
+  <div id="tabs-5" class="biblio-mods">
     <div class="download-button"><a href="#" title="<?php print t('Download MODS'); ?>"> <?php print t('Download MODS'); ?></a></div>
     <ul>
       <?php if ($rendered['mods_title']) { ?><li><label><?php print t('Title'); ?></label><p><?php print $rendered['mods_title']; ?></p></li><?php } ?>
@@ -65,34 +73,15 @@ unset($item->olef_scientific_name);
     </ul>
   </div>
 
-<!--
-  <div id="tabs-4" class="biblio-bibtex">
-    <div class="download-button"><a href="#" title="<?php print t('Download BibTeX'); ?>"> <?php print t('Download BibTeX'); ?></a></div>
-    <p><?php print t('No data for '); ?>BibTeX</p>
-  </div>
--->
-
-  <div id="tabs-5" class="biblio-endnote">
-    <div class="download-button"><a href="#" title="<?php print t('Download EndNote citations'); ?>"><?php print t('Download EndNote citations'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('EndNote'); ?></p>
+  <div id="tabs-6" class="biblio-dc">
+    <div class="download-button"><a href="#" title="<?php print t('Download Dublin Core'); ?>"><?php print t('Download Dublin Core'); ?></a></div>
+    <p><?php print t('No data for '); ?><?php print t('Dublin Core'); ?></p>
   </div>
 
-  <div id="tabs-6" class="biblio-references">
-    <div class="download-button"><a href="#" title="<?php print t('Download Mark21'); ?>"><?php print t('Download Mark21'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('Mark21'); ?></p>
+  <div id="tabs-7" class="biblio-refnum">
+    <div class="download-button"><a href="#" title="<?php print t('Download RefNum'); ?>"><?php print t('Download RefNum'); ?></a></div>
+    <p><?php print t('No data for '); ?><?php print t('RefNum'); ?></p>
   </div>
-
-  <div id="tabs-7" class="biblio-references">
-    <div class="download-button"><a href="#" title="<?php print t('Download DC'); ?>"><?php print t('Download DC'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('DC'); ?></p>
-  </div>
-
-<!--
-  <div id="tabs-8" class="biblio-references">
-    <div class="download-button"><a href="#" title="<?php print t('Download References'); ?>"><?php print t('Download References'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('References'); ?></p>
-  </div>
--->
 
 </div>
 

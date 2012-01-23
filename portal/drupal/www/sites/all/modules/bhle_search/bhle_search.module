@@ -37,7 +37,7 @@ define('BHLE_SEARCH_COMMON_NAME_FIELD', 'keywords_copy');
 define('BHLE_SEARCH_DEFAULT_TERM', 'type what do you want to search');
 /**
  * Suggested default metadata fields for Advanced search mapped to mods solr fields:
-  a.	All metadata fields – including the abstract [=all]
+  a.	All metadata fields - including the abstract [=all]
   b.	Title [=mods_title]
   c.	Journal title [=mods_title]
   d.	Author [=mods_name]
@@ -68,6 +68,10 @@ function bhle_search_init() {
           'simple_search' => false, // Set to true when running simple search
       );
   }
+
+  /* $_SESSION['bhle_search']['browse'] is used to decide which block to insert into the page "Search Results" whether "Browse" or "Advanced Search"
+  $_SESSION['bhle_search']['browse'] = ($_GET['source'] == 'browse') ? TRUE : FALSE;
+
   /* FACET HANDLING */
   if ($_GET['action'] == 'addfacet' && $_SESSION['bhle_search']['facet']['last'] != $_GET['last'] && $_GET['source'] == 'browse') {
     unset($_SESSION['bhle_search']['conditions']);
@@ -240,6 +244,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
                 'onblur' => "if (this.value == '') {this.value = '" . t(BHLE_SEARCH_DEFAULT_TERM) . "';}",
                 'onfocus' => "if (this.value == '" . t(BHLE_SEARCH_DEFAULT_TERM) . "') {this.value = '';}",
                 'name' => 'term_' . $id,
+                'tabindex' => (7*$id+1),
             ),
         ),
 
@@ -248,6 +253,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'OR',
             '#attributes' => array(
                 'class' => array('operator-or' , 'edit-or'),
+                'tabindex' => (7*$id+3), 
             ),
         ),
 
@@ -256,6 +262,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'NOT',
             '#attributes' => array(
                 'class' => array('operator-not' , 'edit-not'),
+                'tabindex' => (7*$id+4),
             ),
         ),
 
@@ -266,6 +273,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#attributes' => array(
                 'class' => array('exact-phrase'),
                 'name' => 'exact_phrase_' . $id,
+                'tabindex' => (7*$id+5),
             ),
         ),
         'field_' . $id => array(
@@ -276,6 +284,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#attributes' => array(
                 'class' => array('select-field'),
                 'name' => 'field_' . $id,
+                'tabindex' => (7*$id+6),
             ),
         ),
     );
@@ -295,6 +304,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             ),
             '#attributes' => array(
                 'class' => array('input-delcondition', 'edit-delfield'),
+                'tabindex' => (7*$id+7),
             ),
         );
     }
@@ -364,6 +374,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     foreach ($conditions as $condition_id => $condition) {
         $form_conditions = bhle_search_advanced_add_condition($form_conditions, $condition_id, count($conditions), $condition['term'], $condition['exact_phrase'], $condition['field'], $condition['operator'], $bNoDel);
         $weight = $condition_id;
+        $tabindex = $condition_id;
     }
     // Add conditions to form layout
     $form['form_conditions'] = $form_conditions;
@@ -379,6 +390,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     $form['submit'] = array(
         '#type' => 'submit',
         '#value' => t('Search'),
+        '#attributes' => array('tabindex' => ($tabindex+2),),
         '#weight' => $weight++,
     );
     $form['add'] = array(
@@ -392,17 +404,21 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         ),
         '#validate' => array(
             'bhle_search_advanced_add_validate'
+            
         ),
+        '#attributes' => array('tabindex' => ($tabindex+8),),
     );
     $form['reset'] = array(
         '#type' => 'submit',
         '#value' => t('Reset'),
         '#weight' => $weight++,
+        '#attributes' => array('tabindex' => 0,),
     );
     $form['save'] = array(
         '#type' => 'submit',
         '#value' => t('Save Query'),
         '#weight' => $weight++,
+        '#attributes' => array('tabindex' => ($tabindex+9),),
     );
 
     // Add custom validate handler
@@ -796,6 +812,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 $doc = $docs[$i];
                 $even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
                 $results[$doc_index] = array();
+                $results[$doc_index]['item_order'] = ($doc_index + 1);
                 $contentType = _solrdoc_getField($doc, $content_type_field_name);
                 // #attributes.class will be evaluated in bhle_search_preprocess_search_result()
                 $results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-' . $contentType));
@@ -1177,7 +1194,8 @@ function bhle_search_preprocess_search_result(&$variables) {
     $additional_classes = $variables['result']['#attributes']['class'];
     $variables['content_type'] = $variables['result']['content_type'];
     $variables['PID'] = $variables['result']['PID'];
-
+    $variables['item_order'] = $variables['result']['item_order'];
+    
     foreach ($additional_classes as $class) {
         $variables['classes_array'][] = $class;
     }
