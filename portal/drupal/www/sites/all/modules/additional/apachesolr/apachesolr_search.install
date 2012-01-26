@@ -6,9 +6,64 @@
  */
 
 /**
+ * Implements hook_install().
+ */
+function apachesolr_search_install() {
+  // Add a taxonomy search page to the database
+  $settings = array(
+    'apachesolr_search_search_type' => 'tid',
+    'apachesolr_search_per_page' => 10,
+    'apachesolr_search_browse' => 'results',
+    'apachesolr_search_spellcheck' => FALSE,
+    'apachesolr_search_search_box' => FALSE,
+  );
+  $settings = serialize($settings);
+
+  $fields = array(
+    'page_id' => 'taxonomy_search',
+    'label' => 'Taxonomy Search',
+    'description' => 'Search all items with given term',
+    'search_path' => 'taxonomy/term/%',
+    'env_id' => '',
+    'page_title' => '%value',
+    'settings' => $settings,
+  );
+  db_insert('apachesolr_search_page')->fields($fields)->execute();
+}
+
+/**
  * Implements hook_enable().
  */
 function apachesolr_search_enable() {
+  // Make sure the default core search page is installed.
+  $search_page = apachesolr_search_page_load('core_search');
+  if (empty($search_page)) {
+    // Add Default search page (core search)
+    // This is a duplication from update_7004 but it is intended
+    // so future changes are possible without breaking the update
+    $settings = array(
+      'apachesolr_search_search_type' => 'custom',
+      'apachesolr_search_per_page' => 10,
+      'apachesolr_search_browse' => 'browse',
+      'apachesolr_search_spellcheck' => TRUE,
+      'apachesolr_search_not_removable' => TRUE,
+      'apachesolr_search_search_box' => TRUE,
+    );
+    $settings = serialize($settings);
+
+    $fields = array(
+      'page_id' => 'core_search',
+      'label' => 'Core Search',
+      'description' => 'Core Search',
+      'search_path' => 'search/site',
+      'env_id' => 'solr',
+      'page_title' => 'Site',
+      'settings' => $settings,
+    );
+    db_insert('apachesolr_search_page')->fields($fields)->execute();
+  }
+
+
   $active = variable_get('search_active_modules', array('node', 'user'));
   $active[] = 'apachesolr_search';
   variable_set('search_active_modules', array_unique($active));
@@ -108,7 +163,6 @@ function apachesolr_search_uninstall() {
     variable_set('search_active_modules', $active);
   }
   // Remove variables.
-  variable_del('apachesolr_search_browse');
   variable_del('apachesolr_search_spellcheck');
 }
 
@@ -226,3 +280,61 @@ function apachesolr_search_update_7003() {
   db_delete('block')->condition('module', 'apachesolr_search')->execute();
 }
 
+/**
+ * Add a default search page for core
+ * Add a taxonomy page if the taxonomy module was ever active
+ */
+function apachesolr_search_update_7004() {
+  // Add Default search page (core search)
+  $settings = array(
+    'apachesolr_search_search_type' => 'custom',
+    'apachesolr_search_per_page' => variable_get('apachesolr_rows', 10),
+    'apachesolr_search_browse' => variable_get('apachesolr_search_browse', 'browse'),
+    'apachesolr_search_spellcheck' => variable_get('apachesolr_search_spellcheck', TRUE),
+    'apachesolr_search_not_removable' => TRUE,
+    'apachesolr_search_search_box' => TRUE,
+  );
+  $settings = serialize($settings);
+
+  $fields = array(
+    'page_id' => 'core_search',
+    'label' => 'Core Search',
+    'description' => 'Site search',
+    'search_path' => 'search/site',
+    'env_id' => 'solr',
+    'page_title' => 'Site',
+    'settings' => $settings,
+  );
+  db_insert('apachesolr_search_page')->fields($fields)->execute();
+  // Remove variables.
+  variable_del('apachesolr_search_spellcheck');
+  variable_del('apachesolr_search_browse');
+
+  // Add this taxonomy search page to the database
+  $settings = array(
+    'apachesolr_search_search_type' => 'tid',
+    'apachesolr_search_per_page' => 10,
+    'apachesolr_search_browse' => 'results',
+    'apachesolr_search_spellcheck' => FALSE,
+    'apachesolr_search_search_box' => FALSE,
+  );
+  $settings = serialize($settings);
+
+  $fields = array(
+    'page_id' => 'taxonomy_search',
+    'label' => 'Taxonomy Search',
+    'description' => 'Search all items with given term',
+    'search_path' => 'taxonomy/term/%',
+    'env_id' => '',
+    'page_title' => '%value',
+    'settings' => $settings,
+  );
+  db_insert('apachesolr_search_page')->fields($fields)->execute();
+
+  // Check if the taxonomy module was ever present
+  $status = db_query("SELECT 1 FROM {system} WHERE name = 'apachesolr_taxonomy'")->fetchField();
+  if ($status) {
+    $message  = t('If you had the apachesolr_taxonomy module enabled please go to the !link and enable the Taxonomy Term page', array('!link' => l('Apache Solr custom pages', 'admin/config/search/apachesolr/search-pages')));
+    drupal_set_message($message, 'warning');
+  }
+}

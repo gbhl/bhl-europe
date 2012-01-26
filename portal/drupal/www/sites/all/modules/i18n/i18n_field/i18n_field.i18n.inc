@@ -26,7 +26,7 @@ function i18n_field_i18n_object_info() {
           'title' => t('Label'),
         ),
       ),
-      //'translate path' => 'admin/structure/block/manage/%module/%delta/translate/%language',
+      //'translate path' => 'admin/structure/block/manage/%module/%delta/translate/%i18n_language',
     )
   );
   $info['field_instance'] = array(
@@ -56,7 +56,7 @@ function i18n_field_i18n_object_info() {
           'format' => 'format',
         ),
       ),
-      //'translate path' => 'admin/structure/types/manage/%bundle/fields/%field_ui_menu/translate/%language',
+      //'translate path' => 'admin/structure/types/manage/%bundle/fields/%field_ui_menu/translate/%i18n_language',
     )
   );
   return $info;

@@ -12,15 +12,14 @@
  */
 function i18n_redirect_init() {
   $path = $_GET['q'];
+  $language = i18n_language();
   // Not for logged in users nor for home page
   if (!$path || drupal_is_front_page() || !empty($GLOBALS['user']->uid)) {
     return;
   }
-  $language = i18n_language();
-  foreach (module_implements('i18n_translate_path') as $module) {
-    $translated = call_user_func($module . '_i18n_translate_path', $path, $language);
-    if ($translated && $translated != $path) {
-      drupal_goto($translated, array('language' => $language), 301);
+  elseif ($translations = i18n_get_path_translations($path)) {
+    if (isset($translations[$language->language]) && $translations[$language->language]['href'] != $path) {
+      drupal_goto($translations[$language->language]['href'], array('language' => $language), 301);
     }
   }
 }

@@ -79,8 +79,20 @@ function i18n_menu_block_view_alter(&$data, $block) {
 /**
  * Implements hook_i18n_translate_path()
  */
-function i18n_menu_i18n_translate_path($path, $language) {
-  // @todo
+function i18n_menu_i18n_translate_path($path) {
+  $item = i18n_menu_link_load($path, i18n_langcode());
+  if ($item && ($set = i18n_translation_object('menu_link', $item))) {
+    $links = array();
+    foreach ($set->get_translations() as $lang => $link) {
+      $links[$lang] = array(
+        'href' => $link['link_path'],
+        'title' => $link['link_title'],
+        'i18n_type' => 'menu_link',
+        'i18n_object' => $link,
+      );
+    }
+    return $links;
+  }
 }
 
 /**
@@ -703,22 +715,6 @@ function i18n_menu_edit_item_form_submit($form, &$form_state) {
  */
 function i18n_menu_translation_load($tsid) {
   return i18n_translation_set_load($tsid, 'menu_link');
-}
-
-/**
- * Implements hook_language_switch_links_alter().
- *
- * Replaces links with pointers to translated versions of the content.
- */
-function i18n_menu_language_switch_links_alter(array &$links, $type, $path) {
-  $item = i18n_menu_link_load($path, i18n_langcode());
-  if ($item && ($set = i18n_translation_object('menu_link', $item))) {
-    foreach ($set->get_translations() as $lang => $link) {
-      if (!isset($links[$lang]) || !isset($links[$lang]['href']) || $links[$lang]['href'] == $path) {
-        $links[$lang] = i18n_translation_link($link['link_path'], $lang);
-      }
-    }
-  }
 }
 
 /**

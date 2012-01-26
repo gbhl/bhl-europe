@@ -63,10 +63,10 @@ function i18n_sync_hook_info() {
 /**
  * Implements hook_field_info_alter()
  */
-function i18n_sync_field_info_alter(&$info) {
+function i18n_sync_field_info_alter(&$fields) {
   foreach (array('file', 'image') as $type) {
-    if (isset($info[$type])) {
-      $info[$type]['i18n_sync_callback'] = 'i18n_sync_field_file_sync';
+    if (isset($fields[$type])) {
+      $fields[$type]['i18n_sync_callback'] = 'i18n_sync_field_file_sync';
     }
   }
 }
@@ -190,12 +190,22 @@ function i18n_sync_node_check($node) {
 
 /**
  * Get node translations if any, excluding the node itself
+ *
+ * @param $reset
+ *   Whether to reset the translation_node_get_translations cache.
  */
-function i18n_sync_node_get_translations($node) {
-  // Maybe translations are already here
-  if (!empty($node->tnid) && ($translations = translation_node_get_translations($node->tnid))) {
-    unset($translations[$node->language]);
-    return $translations;
+function i18n_sync_node_get_translations($node, $reset = FALSE) {
+  if (!empty($node->tnid)) {
+    if ($reset) {
+      // Clear the static cache of translation_node_get_translations
+      $translations_cache = &drupal_static('translation_node_get_translations', array());
+      unset($translations_cache[$node->tnid]);
+    }
+    // Maybe translations are already here
+    if ($translations = translation_node_get_translations($node->tnid)) {
+      unset($translations[$node->language]);
+      return $translations;
+    }
   }
 }
 
@@ -214,7 +224,7 @@ function i18n_sync_node_insert($node) {
  */
 function i18n_sync_node_update($node) {
   // Let's go with field synchronization.
-  if (i18n_sync_node_check($node) && !empty($node->tnid) && ($fields = i18n_sync_node_fields($node->type)) && ($translations = i18n_sync_node_get_translations($node))) {
+  if (i18n_sync_node_check($node) && !empty($node->tnid) && ($fields = i18n_sync_node_fields($node->type)) && ($translations = i18n_sync_node_get_translations($node, TRUE))) {
     module_load_include('node.inc', 'i18n_sync');
     i18n_sync_node_translation($node, $translations, $fields, 'update');
   }

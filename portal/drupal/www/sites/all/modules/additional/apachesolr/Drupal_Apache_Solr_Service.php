@@ -77,6 +77,7 @@ class DrupalApacheSolrService {
   const UPDATE_SERVLET = 'update';
   const SEARCH_SERVLET = 'select';
   const LUKE_SERVLET = 'admin/luke';
+  const SYSTEM_SERVLET = 'admin/system';
   const STATS_SERVLET = 'admin/stats.jsp';
 
   /**
@@ -102,6 +103,8 @@ class DrupalApacheSolrService {
   protected $env_id;
   protected $luke;
   protected $stats;
+  protected $system_info;
+
 
   /**
    * Call the /admin/ping servlet, to test the connection to the server.
@@ -132,6 +135,44 @@ class DrupalApacheSolrService {
     else {
       return FALSE;
     }
+  }
+
+  /**
+   * Call the /admin/system servlet
+   *
+   * @return
+   *   (array) With all the system info
+   */
+  public function setSystemInfo() {
+    $url = $this->_constructUrl(self::SYSTEM_SERVLET, array('wt' => 'json'));
+    if ($this->env_id) {
+      $this->system_info_cid = $this->env_id . ":system:" . drupal_hash_base64($url);
+      $cache = cache_get($this->system_info_cid, 'cache_apachesolr');
+      if (isset($cache->data)) {
+        $this->system_info = json_decode($cache->data);
+      }
+    }
+    // Second pass to populate the cache if necessary.
+    if (empty($this->system_info)) {
+      $response = $this->_sendRawGet($url);
+      $this->system_info = json_decode($response->data);
+      if ($this->env_id) {
+        cache_set($this->system_info_cid, $response->data, 'cache_apachesolr');
+      }
+    }
+  }
+
+  /**
+   * Get information about the Solr Core.
+   *
+   * @return
+   *   (string) system info encoded in json
+   */
+  public function getSystemInfo() {
+    if (!isset($this->system_info)) {
+      $this->setSystemInfo();
+    }
+    return $this->system_info;
   }
 
   /**
@@ -507,6 +548,9 @@ class DrupalApacheSolrService {
     if (!isset($parsed_url['user'])) {
       $parsed_url['user'] = '';
     }
+    else {
+      $parsed_url['host'] = '@' . $parsed_url['host'];
+    }
     $parsed_url['pass'] = isset($parsed_url['pass']) ? ':' . $parsed_url['pass'] : '';
     $parsed_url['port'] = isset($parsed_url['port']) ? ':' . $parsed_url['port'] : '';
 
@@ -742,7 +786,7 @@ class DrupalApacheSolrService {
     else if ($method == 'POST') {
       $searchUrl = $this->_constructUrl(self::SEARCH_SERVLET);
       $options['data'] = $queryString;
-      $options['headers']['Content-Type'] = 'application/x-www-form-urlencoded';
+      $options['headers']['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
       return $this->_sendRawPost($searchUrl, $options);
     }
     else {

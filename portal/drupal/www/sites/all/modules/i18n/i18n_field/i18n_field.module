@@ -60,7 +60,7 @@ function i18n_field_menu() {
             'type' => MENU_LOCAL_TASK,
           ) + $access;
 
-          $items["$path/fields/%field_ui_menu/translate/%language"] = array(
+          $items["$path/fields/%field_ui_menu/translate/%i18n_language"] = array(
             'load arguments' => array($entity_type, $bundle_arg, $bundle_pos, '%map'),
             'title' => 'Instance',
             'page callback' => 'i18n_field_page_translate',
@@ -251,7 +251,10 @@ function i18n_field_field_widget_form(&$form, &$form_state, $field, $instance, $
   // Translate list options
   if (($translate = i18n_field_type_info($field['type'], 'translate_options')) && !empty($field['settings']['allowed_values'])) {
     $element['#options'] = $translate($field, $i18n_langcode);
-
+    if ($element['#properties']['empty_option']) {
+      $label = theme('options_none', array('instance' => $instance, 'option' => $element['#properties']['empty_option']));
+      $element['#options'] = array('_none' => $label) + $element['#options'];
+    }
     if ($field['type'] == 'list_boolean' && !empty($element['#on_value'])) {
       $on_value = $element['#on_value'];
       $element['#title'] = $element['#options'][$on_value];

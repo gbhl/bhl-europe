@@ -77,6 +77,14 @@ function i18n_language($language = NULL) {
 }
 
 /**
+ * Menu object loader, language
+ */
+function i18n_language_load($langcode) {
+  $list = language_list();
+  return isset($list[$langcode]) ? $list[$langcode] : FALSE;
+}
+
+/**
  * Get language selector form element
  */
 function i18n_element_language_select($default = LANGUAGE_NONE) {
@@ -395,6 +403,48 @@ function i18n_object_key($type, $object, $default = NULL) {
  */
 function i18n_object_translate_access($type, $object) {
   return i18n_object($type, $object)->get_translate_access();
+}
+
+/**
+ * Get translations for path.
+ * 
+ * @param $path
+ *   Path to get translations for or '<front>' for front page.
+ */
+function i18n_get_path_translations($path) {
+  $translations = &drupal_static(__FUNCTION__);
+  if (!isset($translations[$path])) {
+    $translations[$path] = array();
+    foreach (module_implements('i18n_translate_path') as $module) {
+      $translated = call_user_func($module . '_i18n_translate_path', $path);
+      // Add into the array, if two modules returning a translation first takes precedence.
+      if ($translated) {
+        $translations[$path] += $translated;
+      }
+    }
+    // Chance for altering the results.
+    drupal_alter('i18n_translate_path', $translations[$path], $path);
+  }
+  return $translations[$path];
+}
+
+/**
+ * Implements hook_language_switch_links_alter().
+ *
+ * Replaces links with pointers to translated versions of the content.
+ */
+function i18n_language_switch_links_alter(array &$links, $type, $path) {
+  // For the front page we have nothing to add to Drupal core links.
+  if ($path != '<front>' && ($translations = i18n_get_path_translations($path))) {
+    foreach ($translations as $langcode => $translation) {
+      if (isset($links[$langcode])) {
+        $links[$langcode]['href'] = $translation['href'];
+        if (!empty($translation['title'])) {
+          $links[$langcode]['attributes']['title'] = $translation['title'];
+        }
+      }
+    }
+  }
 }
 
 /**
