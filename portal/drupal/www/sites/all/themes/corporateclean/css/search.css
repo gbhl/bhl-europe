@@ -30,7 +30,7 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 .front #block-search-form .container-inline .form-item.form-type-checkbox label {float:right;}
 .front #block-search-form .container-inline .form-item.form-type-checkbox input {float:left; margin-top:3px; margin-right:10px;}
 
-.front #block-search-form .form-item.form-type-textfield {float:left; width:580px;}
+.front #block-search-form .form-item.form-type-textfield {float:left; width:552px; padding-left:28px;}
 /*
 .front #block-search-form .form-item.form-type-textfield input.form-text {
   clear:left; float:left; 
@@ -42,7 +42,7 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
 .front #block-search-form .form-item.form-type-textfield input.form-text {
   clear:left; float:left; 
-  width:536px; height:34px; padding:5px; margin:0px 10px 5px 28px; 
+  width:536px; height:34px; padding:5px; margin:0px 10px 5px 0px; 
   font-size:166.7%;  text-align:center; color:#8bc53f; 
   background:#fff none;
   border:1px #8bc53f solid;
@@ -50,6 +50,7 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.front #block-search-form .form-item.form-type-textfield #autocomplete ul {padding:5px;}
 
 .front #block-search-form .form-wrapper#edit-actions input.form-submit {
   float:left; padding:0px; margin:0px 0px 0 5px;
