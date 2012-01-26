@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:batch="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/batch
+                           http://www.springframework.org/schema/batch/spring-batch-2.1.xsd">
+
+	<bean id="derivativeWriter" class="com.bhle.access.batch.DerivativeWriter"
+		p:store-ref="storageService" />
+
+	<batch:job id="updateDerivative" restartable="true">
+	<batch:description>Re-generate all derivatives from Fedora Repository</batch:description>
+		<batch:step id="updateDerivative_step1">
+			<batch:tasklet>
+				<batch:chunk reader="fedoraObjectReader" processor="conversionProcessor"
+					writer="derivativeWriter" commit-interval="${batch.commit.interval}" />
+			</batch:tasklet>
+		</batch:step>
+	</batch:job>
+
+</beans>

@@ -51,16 +51,17 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 .sidebar-panel label, 
 .sidebar-panel li {color: #006626;}
 
-.sidebar-panel.search-summary-sidebar #search-step-back-link {
+.sidebar-panel.search-summary-sidebar #edit-search {
   position:absolute; top:10px; right:25px;   font-size:108.4%;
   z-index:10;
 }
-.sidebar-panel.search-summary-sidebar #search-step-back-link a {
+.sidebar-panel.search-summary-sidebar #edit-search a {
   padding:5px 34px 5px 5px; display:block;
   color: #006626; font-weight:bold; 
-  background: transparent url('../images/icon-backlink.png') no-repeat right 50%;
+  background: transparent url('../images/icon-editsearch.png') no-repeat right bottom;
 }
-.sidebar-panel.search-summary-sidebar #search-step-back-link a:hover {text-decoration:underline;}
+.sidebar-panel.search-summary-sidebar #edit-search a.expand {background-position:right top;}
+.sidebar-panel.search-summary-sidebar #edit-search a:hover {text-decoration:underline;}
 
 .sidebar-panel.search-summary-sidebar .number_of_results {width:250px; overflow:hidden;}
 .sidebar-panel.search-summary-sidebar .number_of_results h3 {float:left; display:inline-block; margin-right:5px; margin-top:3px;}

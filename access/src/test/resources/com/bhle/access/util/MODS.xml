@@ -1,0 +1,25 @@
+<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
+  <titleInfo>
+    <title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of &apos;The origin of species&apos;.</title>
+  </titleInfo>
+  <name type="personal">
+    <namePart>Poulton, Edward Bagnall, Sir, 1856-1943.</namePart>
+  </name>
+  <typeOfResource>text</typeOfResource>
+  <originInfo>
+    <place>
+      <placeTerm type="text">London,</placeTerm>
+    </place>
+    <publisher>Longmans, Green, and co.,</publisher>
+    <dateIssued>1909.</dateIssued>
+  </originInfo>
+  <language>
+    <languageTerm authority="iso639-2b" type="text">English</languageTerm>
+  </language>
+  <subject>
+    <topic>Darwin, Charles,</topic>
+  </subject>
+  <recordInfo>
+    <recordContentSource authority="marcorg">DLC/ICU</recordContentSource>
+  </recordInfo>
+</mods>

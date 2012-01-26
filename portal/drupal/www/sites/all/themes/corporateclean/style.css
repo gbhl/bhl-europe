@@ -323,7 +323,7 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last, #footer .block ul.men
 
 /* colorbox login form */ 
 #cboxWrapper, #cboxContent {background-color:#4c8327;}
-#cboxLoadedContent {margin-bottom:0px;}
+#cboxLoadedContent {margin-bottom:0px; height:135px; width:375px;}
 #cboxWrapper #cboxClose {
  width:30px; height:30px;
  background: transparent url('images/icon-colorbox-close.png') no-repeat 0px 0px; position:absolute; top:0px;
@@ -358,11 +358,13 @@ ul.secondary-menu li.last, #footer-bottom ul.menu li.last, #footer .block ul.men
 
 #colorbox #user-login #edit-actions {position:absolute; top:35px; left:190px; text-align:right;}
 #colorbox #user-login #edit-actions .form-submit {
-  padding:0px 15px 0px 0px; font-weight:bold; font-size: 116.7%; 
+  padding:5px 18px 0px 3px; margin-bottom:0px; font-weight:bold; font-size: 125%; 
   color:#fff; width:auto; text-align:right; cursor:pointer;  
   border:none; background:transparent url('images/icon-directlink-white.png') no-repeat right 0.5em; 
 }
 #colorbox #user-login #edit-actions .form-submit:hover {text-decoration:underline;}
+
+
 
 /** TUTORIAL **/
 #colorbox #tutorial-inline-content {margin:20px 0px; padding:0px 20px;}

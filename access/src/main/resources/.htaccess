@@ -1,0 +1,15 @@
+<IfModule alias_module>
+	Alias /access D:/temp
+	<Directory D:/temp>
+		Order allow,deny
+		Allow from all
+		Options Indexes
+		Options FollowSymLinks
+		
+		<IfModule mod_rewrite.c> 
+			RewriteEngine On
+			RewriteBase /access
+			RewriteRule ^(\w{2})(\w{2})(\w{2})(\w{2})/?(.*)$ $1/$2/$3/$4/$1$2$3$4/$5
+		</IfModule>
+	</Directory>
+</IfModule>

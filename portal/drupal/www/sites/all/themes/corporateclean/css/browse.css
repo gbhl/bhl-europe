@@ -21,7 +21,7 @@
   background:transparent url('../images/bg-collections-bot.png') no-repeat left bottom; 
   overflow:hidden;
 }
-.region-content-expanded .collections ul.menu li {
+.region-content-expanded .collections ul.menu li{
   display: block; float: left;
   padding: 5px 20px; margin: 0;
   list-style-type: none;
@@ -29,34 +29,64 @@
   border-left:1px solid #8bc53f;
   overflow: hidden;
 }
-.region-content-expanded .collections ul.menu li.first {padding-left:0px; border:none;}
+
+.region-content-expanded .collections ul.menu li.first{padding-left:0px; border:none;}
+
+#content .browse-tabs .ui-tabs .ui-tabs-panel.collections a,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-provider a {
+  display:block; float:left; 
+  padding:5px 20px; margin:0px 0px 11px 9px;
+  height:26px; width:auto;  
+  text-align:center; color:#006626; font-size:125%; text-decoration:none;
+/*  background:transparent url('../images/lbl-facet-filter-result.png') no-repeat left top; */
+  background-color:#fff;
+  
+  border:#8bc53f 1px solid;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
 
 .region-content-expanded .collections ul.menu li a {color:#004226; font-size:141.7%;}
 
 /** BROWSE TABS **/
 /* Tabs */
+#content .ui-tabs,
 #content .ui-tabs { 
   position: relative; /* padding: .2em; zoom: 1;*/
   margin:0px auto 20px; padding:0px; width:1010px;
   background:transparent none; border:0px none;
 /*    background: url("/images/bg-xtabs.png") repeat-x scroll 0 100% #F1ECE9;*/
+  background:transparent url('../images/bg-tabs-off.png') no-repeat -1px top;  
+
  } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 
+#content .block-quicktabs.browse-tabs {position:relative; width:1010px;}
+#content .block-quicktabs.browse-tabs h2 {
+  float:left;  margin:0px; padding:15px 10px;
+  color:#006626;
+  font: normal 125%/1.417 'Trebuchet MS', Helvetica, sans-serif !important; 
+  height:24px;
+}
+ 
 #content .browse-tabs .ui-tabs ul.ui-tabs-nav { 
   /*padding:20px 30px 5px;*/ 
+  float:left;
   display:block; margin:0px; padding:0px;
-  width:1010px; height:54px;
+  /* width:1010px; */ height:54px;
   list-style: none; 
   font: bold 100%/1.417 'Trebuchet MS', Helvetica, sans-serif !important;
-  font-size:100% !important; font-weight: bold; 
-  background:transparent url('../images/bg-tabs-off.png') no-repeat 50% bottom;  
+  font-size:100% !important; font-weight: bold;  
+/*  background:transparent url('../images/bg-tabs-off.png') no-repeat 50% bottom; */
+  background:transparent none;   
   border:none; overflow:hidden;
 }
 #content .browse-tabs .ui-tabs .ui-tabs-nav li {
   float:left; margin:0px; padding:0px;line-height:1; border:none; height:54px;
 }
 #content .browse-tabs .ui-tabs .ui-tabs-nav li a {
-  display:block; margin:0px; padding:15px 30px; 
+  display:block; margin:0px; padding:15px 34px 15px 30px; 
   height:24px; color: #006626; 
   font: normal 125%/1.417 'Trebuchet MS', Helvetica, sans-serif !important; 
 }                                              
@@ -74,11 +104,35 @@
 }
 
 #content .browse-tabs .ui-tabs .ui-tabs-panel { 
+  margin: 0px auto; padding: 0px; padding-bottom: 25px;
+  width: 1010px;
+  background: transparent url('../images/bg-facet-range-bot.png') no-repeat right bottom;
+  overflow: hidden;
+}
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-views,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block {
   display: block;    clear:both;
-  position:relative; margin:0px; padding:0px 10px 20px 19px; width:981px; height:97px;
-  background:transparent url('../images/bg-browse-tabs-content.png') no-repeat 50% bottom;  
+  position:relative; margin:0px; padding: 0 11px 0 9px; width:990px;
+  background:transparent url('../images/bg-facet-range-bg.png') repeat-y right top; 
   border:none; overflow:hidden; 
 }
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block.browse-provider {padding-top:10px;}
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-views .content,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block .content {
+  margin:0px; padding:0px; width:990px; /* min-height:230px; */ overflow:hidden;
+  /* background:#c8e3a3 url('../images/bg-facet-range-gradient.png') repeat-x left top; */
+  background: rgb(225,240,206); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2UxZjBjZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhOGQzNmUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(225,240,206,1) 1%, rgba(168,211,110,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(225,240,206,1)), color-stop(100%,rgba(168,211,110,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(225,240,206,1) 1%,rgba(168,211,110,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(225,240,206,1) 1%,rgba(168,211,110,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(225,240,206,1) 1%,rgba(168,211,110,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(225,240,206,1) 1%,rgba(168,211,110,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', endColorstr='#a8d36e',GradientType=0 ); /* IE6-8 */
+}
+
 #content .browse-tabs .ui-tabs .ui-tabs-panel h2 {float:right; font-size:91.7%; font-weight:normal; position:absolute; top:80px; right:25px; visibility:hidden;} 
 
 #content .browse-tabs .ui-tabs .ui-tabs-panel a {
@@ -158,11 +212,18 @@
   background:transparent url('../images/bg-facet-range-tab-right.png') no-repeat right top;
 }
 
+#content .browse-tabs .ui-tabs .ui-tabs-panel.browse-year {
+  margin: 0px auto; padding: 0px; padding-bottom: 25px;
+  width: 1010px; height:auto;
+  background: transparent url('../images/bg-facet-range-bot.png') no-repeat 50% bottom;
+  overflow: hidden;
+}
 
 #content-inside .block.browse-year .content,
-#view-browse-page .view-browse-content-wrapper {
+#view-browse-page .view-browse-content-wrapper,
+#content .browse-tabs .ui-tabs .ui-tabs-panel.view-display-id-block_browse_year {
   /* margin:0px; padding:0px 11px 0px 9px; */ 
-  margin: 0 0 0 0px; padding: 0 11px 0 9px; width:990px;
+  margin: 0 0 0 0px; padding: 0 11px 0 9px; width:990px; height:auto;
   background:transparent url('../images/bg-facet-range-bg.png') repeat-y right top;
   overflow:hidden;    
 }
@@ -185,20 +246,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', end
 }
 
 #content-inside .block.browse-year .content .data-range-handlers,
-#view-browse-page .view-filters  {
+#view-browse-page .view-filters,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-filters {
   margin:0px; padding:0px 10px; width:970px; height:140px;
   /* background:transparent url('../images/bg-facet-range-hr.png') no-repeat 50% bottom; */    
 }
 
-#view-browse-page .view-content {
+#view-browse-page .view-content,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-content {
   padding:0px 10px 10px 15px; margin-bottom:10px; width:965px; /*min-height:100px;*/ overflow:hidden;
-
   background:transparent url('../images/bg-facet-range-hr.png') no-repeat 50% top;
-  
 }
-#view-browse-page .view-content .views-row {float:left; margin:20px 10px 0px 5px; width:65px; height:38px;}
+#view-browse-page .view-content .views-row,  
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-content .views-row {float:left; margin:20px 10px 0px 5px; width:65px; height:38px;}
 #content-inside .block.browse-year .content .browse-year.years-list a,
-#view-browse-page .view-content .views-row a {
+#view-browse-page .view-content .views-row a,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-browse-content-wrapper .view-content a, 
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-content a {
   display:block; padding:5px 10px; 
   height:26px; width:43px; text-decoration:none;  
   text-align:center; color:#006626; font-size:150%;
@@ -211,20 +275,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', end
   -moz-border-radius: 4px;
   border-radius: 4px;
 } 
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-browse-content-wrapper .view-content a,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-content a {font-size:125%;}
 #content-inside .block.browse-year .content .browse-year.years-list a:hover,
-#view-browse-page .view-content .views-row a:hover {/* background-position:left top; */ background-color:#8bc53f;}
+#view-browse-page .view-content .views-row a:hover,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-browse-content-wrapper .view-content a:hover,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-content a:hover {/* background-position:left top; */ background-color:#8bc53f;}
 
+
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-filters a {width:auto; height:auto; float:none; margin:0px; border:0 none;}
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-filters a:hover {/* background-position:right top;*/ background-color:transparent;}
 
 /** Use the Range Button ---------------- **/
-#view-browse-page .view-filters .userange-button {
+#view-browse-page .view-filters {}
+
+#view-browse-page .view-filters .userange-button,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-filters .userange-button {
   float:right; padding-top:50px; 
   width:184px; 
   overflow:hidden;
 }
-#view-browse-page .view-filters .userange-button a {
+#view-browse-page .view-filters .userange-button a,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-filters .userange-button a,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-filters .userange-button a {
   float:left; display:block; 
   padding:5px 35px; margin-bottom:15px; 
-  color:#006626;
+  color:#006626; font-size:100%; 
 
   background: rgb(231,243,215); /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -243,31 +319,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', end
 
   border: #8bc53f 1px solid; 
 }
-#view-browse-page .view-filters .userange-button a:hover {
+#view-browse-page .view-filters .userange-button a:hover,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-filters .userange-button a:hover {
   border-color:#006626; text-decoration:none;
 }
 
 /* ------------------ */
 
-form#views-exposed-form-browse-page {float:left; padding:0px 10px; width:750px;}
-form#views-exposed-form-browse-page #edit-slider-filter-wrapper {float:left; width:682px;}
-form#views-exposed-form-browse-page #edit-slider-filter-wrapper label {display:none;}
-form#views-exposed-form-browse-page .ui-slider-horizontal {
+form#views-exposed-form-browse-page,
+form#views-exposed-form-browse-block-browse-year {float:left; padding:0px 10px; width:750px;}
+form#views-exposed-form-browse-page #edit-slider-filter-wrapper,
+form#views-exposed-form-browse-block-browse-year #edit-slider-filter-wrapper {float:left; width:682px;}
+form#views-exposed-form-browse-page #edit-slider-filter-wrapper label,
+form#views-exposed-form-browse-block-browse-year #edit-slider-filter-wrapper label  {display:none;}
+form#views-exposed-form-browse-page .ui-slider-horizontal,
+form#views-exposed-form-browse-block-browse-year .ui-slider-horizontal {
   margin-top:60px; margin-bottom:10px;
   height:3px; border:none;
   background:transparent url('../images/bg-browse-year-slider.gif') repeat-x left top;   
 }
 
-form#views-exposed-form-browse-page .ui-corner-all {
+form#views-exposed-form-browse-page .ui-corner-all,
+form#views-exposed-form-browse-block-browse-year .ui-corner-all {
 -moz-border-radius: 0px;
 -webkit-border-radius: 0px;
 border-radius: 0px;
 }
-form#views-exposed-form-browse-page .ui-widget {font: normal 125%/1.417 'Trebuchet MS', Helvetica, sans-serif !important; color: #006626;}
-form#views-exposed-form-browse-page .ui-widget-content {position:relative; border:0px none transparent !important;}
+form#views-exposed-form-browse-page .ui-widget,
+form#views-exposed-form-browse-block-browse-year  .ui-widget {font: normal 125%/1.417 'Trebuchet MS', Helvetica, sans-serif !important; color: #006626;}
+.ui-tabs form#views-exposed-form-browse-block-browse-year  .ui-widget {font-size:100% !important;}
+form#views-exposed-form-browse-page .ui-widget-content,
+form#views-exposed-form-browse-block-browse-year  .ui-widget-content {position:relative; border:0px none transparent !important;}
 
 
-form#views-exposed-form-browse-page .ui-widget-header {
+form#views-exposed-form-browse-page .ui-widget-header,
+form#views-exposed-form-browse-block-browse-year  .ui-widget-header {
 border: 1px solid #006626;  position:absolute;
 background: #006626 none;
  -webkit-border-radius: 2px;
@@ -275,43 +361,54 @@ background: #006626 none;
   border-radius: 2px;
 }
 /*form#views-exposed-form-browse-page .ui-state-default,*/
-form#views-exposed-form-browse-page .ui-widget-content .ui-state-default.ui-slider-max {  
+form#views-exposed-form-browse-page .ui-widget-content .ui-state-default.ui-slider-max,
+form#views-exposed-form-browse-block-browse-year  .ui-widget-content .ui-state-default.ui-slider-max {  
   border: 0px solid lightGrey;     text-align:center; color:#006626; font-size:116.4%; font-weight:bold;
   background: transparent url('../images/lbl-browse-year-slider-max.png') no-repeat left top;
 }
-form#views-exposed-form-browse-page .ui-widget-content .ui-state-default.ui-slider-min {
+form#views-exposed-form-browse-page .ui-widget-content .ui-state-default.ui-slider-min,
+form#views-exposed-form-browse-block-browse-year .ui-widget-content .ui-state-default.ui-slider-min {
   border: 0px solid lightGrey;    text-align:center; color:#006626; font-size:116.4%; font-weight:bold; 
   background: transparent url('../images/lbl-browse-year-slider-min.png') no-repeat left top;
 }
 
-form#views-exposed-form-browse-page .ui-slider-horizontal .ui-slider-handle.ui-slider-max {
+form#views-exposed-form-browse-page .ui-slider-horizontal .ui-slider-handle.ui-slider-max,
+form#views-exposed-form-browse-block-browse-year  .ui-slider-horizontal .ui-slider-handle.ui-slider-max {
 top: 7px;
 margin-left: 0px; padding:20px 10px 5px;
 }
 
-form#views-exposed-form-browse-page .ui-slider-horizontal .ui-slider-handle.ui-slider-min {
+form#views-exposed-form-browse-page .ui-slider-horizontal .ui-slider-handle.ui-slider-min,
+form#views-exposed-form-browse-block-browse-year  .ui-slider-horizontal .ui-slider-handle.ui-slider-min {
 top: -53px;
-margin-left: 0px; padding:5px 10px 20px;
+margin: 0px; padding:5px 10px 20px;
 }
 
-form#views-exposed-form-browse-page .ui-slider .ui-slider-handle {
+form#views-exposed-form-browse-page .ui-slider .ui-slider-handle,
+form#views-exposed-form-browse-block-browse-year .ui-slider .ui-slider-handle,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .view-filters .ui-slider .ui-slider-handle {
   position: absolute; z-index: 2; 
   width: 45px; height: 26px;
   cursor: default;
 }
 
-form#views-exposed-form-browse-page .ui-slider .ui-slider-handle:hover {text-decoration:none;}
+form#views-exposed-form-browse-page .ui-slider .ui-slider-handle:hover,
+form#views-exposed-form-browse-block-browse-year  .ui-slider .ui-slider-handle:hover {text-decoration:none;}
 
-form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button {display:none; float:right; padding-top:30px; width:184px;}
-form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button input {
+form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button,
+form#views-exposed-form-browse-block-browse-year  .views-exposed-widget.views-submit-button {display:none; float:right; padding-top:30px; width:184px;}
+form#views-exposed-form-browse-page .views-exposed-widget.views-submit-button input,
+form#views-exposed-form-browse-block-browse-year  .views-exposed-widget.views-submit-button input {
   height:38px; width:184px;
   text-indent:-50000px;
   border:none; background:transparent url('../images/btn-browse-year-apply.png') no-repeat left top; 
   display:none;
 }
 
-form#views-exposed-form-browse-page .form-item.form-type-textfield.form-item-slider-filter-min {float:left;}
-form#views-exposed-form-browse-page .form-item.form-type-textfield.form-item-slider-filter-max  {float:right;}
+form#views-exposed-form-browse-page .form-item.form-type-textfield.form-item-slider-filter-min,
+form#views-exposed-form-browse-block-browse-year  .form-item.form-type-textfield.form-item-slider-filter-min {float:left;}
+form#views-exposed-form-browse-page .form-item.form-type-textfield.form-item-slider-filter-max,
+form#views-exposed-form-browse-block-browse-year  .form-item.form-type-textfield.form-item-slider-filter-max {float:right;}
 
 .views-exposed-form .views-exposed-widget {width:682px;}
 

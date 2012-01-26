@@ -19,6 +19,18 @@ drupal_add_library('system', 'ui.tabs');
 
 drupal_add_js('jQuery(document).ready(function($) {
 
+    $(".page-search-bhle.one-sidebar #content_preface").hide();
+    $("#edit-search a").addClass("expand");
+
+    $("#edit-search a").click(function(){
+      if ($(this).hasClass("expand")) {
+        $(".page-search-bhle.one-sidebar #content_preface").slideDown(900);
+        $(this).removeClass("expand");
+      } else {
+        $(".page-search-bhle.one-sidebar #content_preface").slideUp(900);
+        $(this).addClass("expand");
+      }
+    });
 
     $(".collapsing-grip").click(function(){
       var header=$(this);
@@ -85,7 +97,7 @@ function corporateclean_form_alter(&$form, &$form_state, $form_id) {
   	$form_default = t('simple search all');
     $form['search_block_form']['#default_value'] = $form_default;
 
- 	  $form['search_block_form']['#attributes'] = array('onblur' => "if (this.value == '') {this.value = '{$form_default}';}", 'onfocus' => "if (this.value == '{$form_default}') {this.value = '';}" );
+ 	  $form['search_block_form']['#attributes'] = array('tabindex' => 0, 'onblur' => "if (this.value == '') {this.value = '{$form_default}';}", 'onfocus' => "if (this.value == '{$form_default}') {this.value = '';}" );
   }
 } 
 

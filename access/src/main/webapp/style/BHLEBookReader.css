@@ -1,0 +1,133 @@
+/*
+ * Custom overrides for BookReader Demo.
+ */
+
+/* Hide print and embed functionality */
+#BRtoolbar .embed,.print {
+	display: none;
+}
+
+a.logo {
+	display: none;
+}
+
+.BRfloat fieldset {
+	margin-top: 10px;
+}
+
+#BRreturn a {
+	margin-left: 10px;
+}
+
+.BRicon {
+	background-image: url(../images/BRicons_extended.png);
+}
+
+.BRicon.download {
+	background-position: -1240px 0;
+	text-align: right;
+}
+
+.BRicon.download:hover {
+	background-position: -1280px 0;
+}
+
+.BRicon.add_page {
+	background-position: -1320px 0;
+}
+
+.BRicon.add_page:hover {
+	background-position: -1360px 0;
+}
+
+.BRicon.remove_page {
+	background-position: -1400px 0;
+}
+
+.BRicon.remove_page:hover {
+	background-position: -1440px 0;
+}
+
+.BRicon.ocr {
+	background-position: -1480px 0;
+}
+
+.BRicon.ocr:hover {
+	background-position: -1520px 0;
+}
+
+.BRtoolbox {
+	background-color: #e2dcc5;
+	-webkit-box-shadow: 0 10px 6px -6px black;
+	-moz-box-shadow: 0 10px 6px -6px black;
+	box-shadow: 0 10px 6px -6px black;
+}
+
+div#BRnavpos {
+	margin-right: 380px;
+}
+
+div#BRpagebox {
+	float: right;
+	margin-top: 8px;
+}
+
+#BRpagebox  input {
+	width: 30px;
+	text-align: center;
+	margin-left: 5px;
+}
+
+.BRtnlist {
+	width: 600px;
+}
+
+.BRtnlist li {
+	display: inline;
+}
+
+.BRtnlist img {
+	width: 80px;
+	margin-bottom: 10px;
+}
+
+.BRtnlist button {
+	margin: 5px 20px 0px -20px;
+	vertical-align: top;
+}
+
+.delete_tumbnail {
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	background-image: url(../images/icon_delete.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.delete_tumbnail:hover {
+	background-position: -15px 0;
+}
+
+lable #whole_book {
+	display: inline;
+	font-weight: 700;
+	font-size: 1.6em;
+	margin: 10px 0;
+}
+
+.format_selection img {
+	width: 70px;
+	height: 70px;
+	margin-right: 50px;
+}
+
+fieldset .thumbnailFieldset {
+	max-height: 150px;
+	overflow: auto;
+}

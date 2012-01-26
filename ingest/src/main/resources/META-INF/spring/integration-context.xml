@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/integration"
+	xmlns:int-file="http://www.springframework.org/schema/integration/file"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/integration
+							http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
+							http://www.springframework.org/schema/integration/file
+							http://www.springframework.org/schema/integration/file/spring-integration-file-1.0.xsd">
+
+	<channel id="inboundSipChannel">
+		<queue />
+	</channel>
+
+	<transformer id="jobLaunchRequestTransformer"
+		input-channel="inboundSipChannel" output-channel="jobLaunchChannel" />
+
+	<channel id="jobLaunchChannel" />
+
+	<beans:bean id="jobMessageHandler"
+		class="org.springframework.batch.integration.launch.JobLaunchingMessageHandler">
+		<beans:constructor-arg ref="jobLauncher" />
+	</beans:bean>
+	<service-activator input-channel="jobLaunchChannel"
+		ref="jobMessageHandler" />
+
+<!-- 	<gateway id="ingestGateway" default-request-channel="fedoraeRequestChannel"
+		default-reply-channel="fedoraeReplyChannel" service-interface="com.bhle.ingest.IngestService" /> -->
+
+	<gateway id="ingestGateway">
+		<method name="ingestPackage" request-channel="inboundSipChannel" />
+		<method name="ingestItem" request-channel="fedoraeRequestChannel" reply-channel="fedoraeReplyChannel"/>
+	</gateway>
+
+	<channel id="fedoraeRequestChannel" />
+	<channel id="fedoraeReplyChannel" />
+
+	<beans:bean id="ingestServiceImpl" class="com.bhle.ingest.IngestServiceImpl">
+		<beans:constructor-arg ref="fedoraClient" />
+	</beans:bean>
+	<service-activator input-channel="fedoraeRequestChannel"
+		output-channel="fedoraeReplyChannel" ref="ingestServiceImpl" />
+
+</beans:beans>

@@ -50,16 +50,17 @@
 <?php endif; ?>        
 
 <!-- Content. -->
-<div id="content">
+<div id="content" class="<?php if($_GET['source'] == 'browse'): ?>source-browse<?php else: ?>search-form-source<?php endif; ?>">
 
     <div id="content-inside" class="inside">
 
         <?php if ($page['content_preface']): ?>
             <div id="content_preface">
-            <div class="advanced-search-link">
-                <p class="simple-search"><a class="advanced-search-link" href="/" title="<?php print t('Simple search');?>"><?php print t('Simple search');?></a></p>
-            </div>
-            
+
+                 <div class="advanced-search-link">
+                   <p class="simple-search"><a class="advanced-search-link" href="/" title="<?php print t('Simple search');?>"><?php print t('Simple search');?></a></p>
+                 </div>
+               
             <?php print render($page['content_preface']); ?>
         </div>
         <?php endif; ?>           

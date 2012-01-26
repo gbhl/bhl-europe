@@ -96,14 +96,19 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
 
 /** ADVANCED SEARCH --------------- **/
-.page-search-bhle.no-sidebars #content #main,
-.page-search-bhle #content #content_preface {
+.page-search-bhle.no-sidebars #content #main {
   position:relative;  margin-top: 20px; margin-bottom:30px; width:1010px;
+}
+.page-search-bhle #content #content_preface {
+  position:relative; margin-top: 20px; width:1010px;
   /*background:transparent url('../images/bg-advanced-search-form2-header.png') no-repeat 1px top;*/
 }
+.page-search-bhle.sidebar-first #main,
+.page-search-bhle.sidebar-first #sidebar {margin-top: 20px;}
 
 .page-search-bhle #content #main h1,
-.page-search-bhle #content #content_preface h1 {
+.page-search-bhle #content #content_preface h1,
+.page-search-bhle #content ul.tabs.primary {
   display:none;
 /*
   float:left; height:20px; margin:0px;
@@ -138,6 +143,7 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
   background:transparent url('../images/bg-advsearchbox-top.png') no-repeat left top;
   /*background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;*/  
 } 
+#content.source-browse #content_preface .region-content-preface {background:transparent none;}
 
 .page-search-bhle form.search-form {
   margin:0px; padding:0px 0px 30px 0px; width:1010px; overflow:hidden;
@@ -224,19 +230,26 @@ margin-bottom: 0px;
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search {
   float:left; display:inline; padding:15px 10px 0px 20px;
 }
-.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase {
-  /*position:absolute; left:180px; top:15px;*/ 
-/* margin:0px; padding:0px 10px 5px; width:400px; height:25px; overflow:hidden; */ 
-  position:absolute; right:400px; display:inline; padding:15px 4px 0px 20px;
-}
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search label,
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase label {color:#006626; font-size:116.7%; font-weight:bold; margin:0px; padding:0px;}                                                                 
 
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search label {float:right; }
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search input {float:left; margin-top:3px; margin-right:10px;}
 
-.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase label {float:left; }
-.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase input {float:right; margin-top:3px; margin-left:10px;}
+.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase {
+  /*position:absolute; left:180px; top:15px;*/ 
+/* margin:0px; padding:0px 10px 5px; width:400px; height:25px; overflow:hidden; */ 
+  position:absolute; right:405px; display:inline; /* padding:15px 4px 0px 20px; */
+  padding: 0px; margin:15px 0px 0px 20px;  
+  height:17px; background-color:#006626; overflow:hidden;
+}
+
+.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase label {
+  float:left; margin:0px; padding:2px 10px 0px 0px; height:15px; background-color:#fff; line-height:1.0; 
+}
+.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase input {
+  float:right; margin:2px; padding:0px; height:13px; width:13px;
+}
 
 .page-search-bhle form.search-form .form-type-textfield.form-item {
   float:left; padding:5px 10px 6px 5px; margin:0px;  width:418px; height:23px; 
@@ -262,14 +275,15 @@ margin-bottom: 0px;
 }
 
 .page-search-bhle form.search-form .fieldset-wrapper .form-type-checkbox.form-item {
-  float:left; padding:10px 13px 11px 12px; margin:0px;  width:13px; height:13px; 
+  float:left; /* padding:10px 13px 11px 12px; margin:0px; */ 
+  background-color:#006626; margin:8px 11px 9px 10px; padding:0px;
+  width:17px; height:17px; 
 /*  background: transparent url('../images/bg-advsearchbox-textfield.png') no-repeat right top; */
   overflow:hidden;
 }
 .page-search-bhle form.search-form .fieldset-wrapper .form-type-checkbox.form-item input.exact-phrase {
-  display:block; padding:0px; margin:0px;
-  background:transparent none; border:none;
-  overflow:hidden;
+  display:block; 
+  margin:2px; padding:0px; height:13px; width:13px;
 }
 
 .page-search-bhle form.search-form .form-item.form-type-select {float:left; padding:0px 0px 0px 24px;}

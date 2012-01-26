@@ -37,7 +37,7 @@ define('BHLE_SEARCH_COMMON_NAME_FIELD', 'keywords_copy');
 define('BHLE_SEARCH_DEFAULT_TERM', 'type what do you want to search');
 /**
  * Suggested default metadata fields for Advanced search mapped to mods solr fields:
-  a.	All metadata fields – including the abstract [=all]
+  a.	All metadata fields - including the abstract [=all]
   b.	Title [=mods_title]
   c.	Journal title [=mods_title]
   d.	Author [=mods_name]
@@ -62,23 +62,16 @@ function bhle_search_init() {
   // Initialize the session array (if necessary)
   if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditions'])) {
       $_SESSION['bhle_search'] = array(
-          'conditions' => array(
-              array('term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0)   // Advanced search conditions
-          ),
+          'conditions' => array('term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0),   // Advanced search conditions
           'expand_search' => 0, // Enable search term expansion
           'exact_phrase' => 0, // Exact phrase matching
-          'simple_condition' => array(
-              'phrase' => '', // Simple search string (overwrites advanced search)
-              'fields' => array(// List of fields to search in
-                  'title' => 0,
-                  'author' => 0,
-                  'year' => 0,
-                  'scientific_name' => 0,
-              ),
-          ),
           'simple_search' => false, // Set to true when running simple search
       );
   }
+
+  /* $_SESSION['bhle_search']['browse'] is used to decide which block to insert into the page "Search Results" whether "Browse" or "Advanced Search"
+  $_SESSION['bhle_search']['browse'] = ($_GET['source'] == 'browse') ? TRUE : FALSE;
+
   /* FACET HANDLING */
   if ($_GET['action'] == 'addfacet' && $_SESSION['bhle_search']['facet']['last'] != $_GET['last'] && $_GET['source'] == 'browse') {
     unset($_SESSION['bhle_search']['conditions']);
@@ -98,29 +91,6 @@ function bhle_search_init() {
     $_SESSION['bhle_search']['facet']['last'] = $_GET['last'];
     $field = $_GET['field']; // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
-    $condition = array(
-      'term' => bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$field][$key]['#label']),
-      'field' => $field,
-      'operator' => 'AND',
-      'exact_phrase' => 0
-    );
-    $_SESSION['bhle_search']['conditions'][] = $condition;
-  }
-  if ($_GET['action'] == 'addfacet' && $_SESSION['bhle_search']['facet']['last'] != $_GET['last'] && $_GET['source'] == 'simple') {
-    unset($_SESSION['bhle_search']['conditions']);
-    $_SESSION['bhle_search']['simple_search'] = FALSE;
-    $query = bhle_search_solr_escape($_SESSION['bhle_search']['simple_condition']['phrase']);
-    $condition = array(
-      'term' => bhle_search_solr_escape($query),
-      'field' => 'simple', // dummy field
-      'operator' => 'OR',
-      'exact_phrase' => 0
-    );
-    $_SESSION['bhle_search']['conditions'][] = $condition;
-
-    $field = $_GET['field']; // TODO: escape for security
-    $key = $_GET['key']; // TODO: escape for security
-    /* TODO: find solution for complex queries */
     $condition = array(
       'term' => bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$field][$key]['#label']),
       'field' => $field,
@@ -214,27 +184,41 @@ function bhle_search_form_search_block_form_alter(&$form, $form_state) {
     return $form;
 }
 
+
 /**
  * Add an advanced condition form-row to a given form reference and return it
  */
 function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = BHLE_SEARCH_DEFAULT_TERM, $exact_phrase = 0, $field = '', $operator = '', $bNoDel = false) {
 
 	// Pre-construct the list of searchable metadata fields
-    $fields_b = explode(';', variable_get('bhle_search_fields', BHLE_SEARCH_FIELDS));
-    $fields_b = array_combine($fields_b, $fields_b);
 
-    $fields[variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD)] = variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD);
-    $fields[variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD)] = variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD);
-    $fields[variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD)] = variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD);
-    $fields[variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD)] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
-    $fields[variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD)] = variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD);
+    //  - fixed fields
+    $default_field_names = get_default_field_names(); // ('title', 'author', 'year', 'scientific_name', 'common_name');
+    foreach( $default_field_names as $name){
+        $default_fields[] = get_field_by_name($name);
+    }
 
-    $fields = array_merge($fields, $fields_b);
+    //  - user defined fields
+    $user_defined_fields = explode(';', variable_get('bhle_search_fields', BHLE_SEARCH_FIELDS));
+
+    //  - combination fields for simple search compatibility
+    for($i = 2; $i<=4 ;$i++) {
+        $combinations = combinations(get_simple_search_field_names(), $i);
+        foreach($combinations as $combination){
+            for($i = 0; $i < count($combination); $i++) {
+                $combination[$i] = get_field_by_name($combination[$i]);
+            }
+            $combination_fields[] = implode("+", $combination);
+        }
+    }
+
+    // merge all fields into on array
+    $fields = array_merge($default_fields, $user_defined_fields, $combination_fields);
+    $fields = array_combine($fields, $fields);
 
     // set correct labels for all fields
-
     foreach(array_keys($fields) as $key){
-    	$fields[$key] = t(field_name_label($key));
+        $fields[$key] = human_readable_field_name($fields[$key]);
     }
 
     // Check if a valid term was passed
@@ -260,6 +244,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
                 'onblur' => "if (this.value == '') {this.value = '" . t(BHLE_SEARCH_DEFAULT_TERM) . "';}",
                 'onfocus' => "if (this.value == '" . t(BHLE_SEARCH_DEFAULT_TERM) . "') {this.value = '';}",
                 'name' => 'term_' . $id,
+                'tabindex' => (7*$id+1),
             ),
         ),
 
@@ -268,6 +253,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'OR',
             '#attributes' => array(
                 'class' => array('operator-or' , 'edit-or'),
+                'tabindex' => (7*$id+3), 
             ),
         ),
 
@@ -276,6 +262,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'NOT',
             '#attributes' => array(
                 'class' => array('operator-not' , 'edit-not'),
+                'tabindex' => (7*$id+4),
             ),
         ),
 
@@ -286,6 +273,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#attributes' => array(
                 'class' => array('exact-phrase'),
                 'name' => 'exact_phrase_' . $id,
+                'tabindex' => (7*$id+5),
             ),
         ),
         'field_' . $id => array(
@@ -296,6 +284,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#attributes' => array(
                 'class' => array('select-field'),
                 'name' => 'field_' . $id,
+                'tabindex' => (7*$id+6),
             ),
         ),
     );
@@ -315,6 +304,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             ),
             '#attributes' => array(
                 'class' => array('input-delcondition', 'edit-delfield'),
+                'tabindex' => (7*$id+7),
             ),
         );
     }
@@ -384,6 +374,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     foreach ($conditions as $condition_id => $condition) {
         $form_conditions = bhle_search_advanced_add_condition($form_conditions, $condition_id, count($conditions), $condition['term'], $condition['exact_phrase'], $condition['field'], $condition['operator'], $bNoDel);
         $weight = $condition_id;
+        $tabindex = $condition_id;
     }
     // Add conditions to form layout
     $form['form_conditions'] = $form_conditions;
@@ -399,6 +390,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     $form['submit'] = array(
         '#type' => 'submit',
         '#value' => t('Search'),
+        '#attributes' => array('tabindex' => ($tabindex+2),),
         '#weight' => $weight++,
     );
     $form['add'] = array(
@@ -412,17 +404,21 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         ),
         '#validate' => array(
             'bhle_search_advanced_add_validate'
+            
         ),
+        '#attributes' => array('tabindex' => ($tabindex+8),),
     );
     $form['reset'] = array(
         '#type' => 'submit',
         '#value' => t('Reset'),
         '#weight' => $weight++,
+        '#attributes' => array('tabindex' => 0,),
     );
     $form['save'] = array(
         '#type' => 'submit',
         '#value' => t('Save Query'),
         '#weight' => $weight++,
+        '#attributes' => array('tabindex' => ($tabindex+9),),
     );
 
     // Add custom validate handler
@@ -456,28 +452,20 @@ function bhle_search_advanced_del_ajax($form, $form_state) {
 function bhle_search_simple_validate($form, &$form_state) {
     $conditions = array();
 
-    // Check for a valid date
-    // Note: Code is required, since solr expects a special date format if the field is marked as date-type
-    /* $year = $form_state['values']['year'];
-      // Check if we just have a number
-      if( !is_numeric($year) ) $year = strtotime( $year );
-      if( $year === false ) {
-      form_set_error('year', t('Invalid year format'));
-      }
-      else {
-      $year = date( '%N', $year );
-      } */
+    $field_names = get_simple_search_field_names();
+    $combination_field = '';
+    foreach($field_names as $name){
+        if($form_state['values'][$name]) {
+            $combination_field .= ($combination_field ? '+' : '') . get_field_by_name($name);
+        }
+    }
 
-    // Save the condition parameters
-    $_SESSION['bhle_search']['simple_condition'] = array(
-        'phrase' => trim($form_state['values']['search_block_form']),
-        'fields' => array(
-            'title' => $form_state['values']['title'],
-            'author' => $form_state['values']['author'],
-            'year' => $form_state['values']['year'],
-            'scientific_name' => $form_state['values']['scientific_name'],
-        ),
-    );
+    $conditions[] = array(
+    	'term' => trim($form_state['values']['search_block_form']),
+        'field' => $combination_field,
+        'operator' => $values['operator_' . $i],
+        'exact_phrase' => $values['exact_phrase_' . $i]);
+    $_SESSION['bhle_search']['conditions'] = $conditions;
 
     // Official way to handle sessions is by directly writing into the super-globals
     // See: http://api.drupal.org/api/drupal/includes--session.inc
@@ -485,16 +473,33 @@ function bhle_search_simple_validate($form, &$form_state) {
     $_SESSION['bhle_search']['exact_phrase'] = 0;      // Turn of search term expansion in simple search
 
     // Remember simple search as our starting point
-    $_SESSION['bhle_search']['simple_search'] = true;
+    $_SESSION['bhle_search']['simple_search'] = FALSE;
 }
 
 /**
  * Validate the advanced search form
  */
 function bhle_search_advanced_validate($form, &$form_state) {
+
+
+    // reset the search if reset has been clicked
+    if(isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#value'] == 'Reset'){
+        for ($i = 0; $i <= $form_state['values']['num_conditions']; $i++) {
+            unset($form_state['values']['term_' . $i]);
+            unset($form_state['values']['field_' . $i]);
+            unset($form_state['values']['operator_' . $i]);
+            unset($form_state['values']['operator_or_' . $i]);
+            unset($form_state['values']['operator_not_' . $i]);
+            unset($form_state['values']['exact_phrase_' . $i]);
+        }
+        $values['num_conditions'] = 0;
+        unset($_SESSION['bhle_search']['conditions']);
+        unset($_SESSION['numFound']);
+    }
+
+
     $conditions = array();
     $values = $form_state['values'];
-
     for ($i = 0; $i <= $values['num_conditions']; $i++) {
         // Check if condition-row exists (might have been removed client-side)
         if (!isset($values['term_' . $i]))
@@ -518,7 +523,8 @@ function bhle_search_advanced_validate($form, &$form_state) {
     $_SESSION['bhle_search']['exact_phrase'] = $values['exact_phrase'];
 
     // Remember advanced search as our starting point
-    $_SESSION['bhle_search']['simple_search'] = false;}
+    $_SESSION['bhle_search']['simple_search'] = false;
+}
 
 /**
  * Callback (AJAX) when the 'Add Field' button is clicked
@@ -549,11 +555,11 @@ function bhle_search_conditions($keys = null) {
  */
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
-    // wildcards: * ? are the only allowed characters!
+    // are the only allowed characters are: *, ?, [, ]
     $escaped_str = str_replace(array(
-                '+', '-', '&&', '||', '!', '(', ')', '{', '}', '[', ']', '^', '"', '~', ':', '\\',
+                '+', '-', '&&', '||', '!', '(', ')', '{', '}', '^', '"', '~', ':', '\\',
                     ), array(
-                '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\[', '\\]', '\\^', '\\"', '\\~', '\\:', '\\\\',
+                '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\^', '\\"', '\\~', '\\:', '\\\\',
                     ), $string);
 
     // allow using escape sequences like \\[ in the original $string
@@ -590,186 +596,142 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
     $query = '';
     $results = array();
     $params = array();
-    // Check for simple search (uses the dismax parser)
-    if ($_SESSION['bhle_search']['simple_search']) {
-        $query = bhle_search_solr_escape($_SESSION['bhle_search']['simple_condition']['phrase']);
 
-        // Create list of fields
-        $fields = array();
-        if ($_SESSION['bhle_search']['simple_condition']['fields']['title']) {
-            $fields[] = variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD);
-        }
-        if ($_SESSION['bhle_search']['simple_condition']['fields']['author']) {
-            $fields[] = variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD);
-        }
-        if ($_SESSION['bhle_search']['simple_condition']['fields']['year']) {
-            $fields[] = variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD);
-        }
-        if ($_SESSION['bhle_search']['simple_condition']['fields']['scientific_name']) {
-            $fields[] = variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD);
+    // Build Solr query out of the conditions
+
+    // $previous_condition_operator will  hold the condition operator of the previous condition
+    $previous_condition_operator = null;
+    foreach ($conditions as $condition) {
+
+        // all fiels are combined by AND, this is default and must not be changed!!!!
+        $condition['operator'] = 'AND';
+
+        // Escape the search-term
+        $query_term = bhle_search_solr_escape($condition['term']);
+        // Check if we have to quote the term
+        if ($condition['exact_phrase']) {
+            $query_term = '"' . $query_term . '"';
         }
 
-        if(_is_wildcard_query($query)) {
-        	$fields_exact = array();
-        	foreach($fields as $field){
-        		$fields_exact[] = $field . '__exact';
-        	}
-        	$fields = array_merge($fields, $fields_exact);
-        }
+        // Get the query field
+        $query_field = $condition['field'];
 
-        // Configure dismax parser
-        $params['defType'] = 'edismax';
-        $params['qf'] = implode(' ', $fields);
-
-    }
-    // ...we have advanced search
-    else {
-        // Build Solr query out of the conditions
-
-        // $previous_condition_operator will  hold the condition operator of the previous condition
-        $previous_condition_operator = null;
-        foreach ($conditions as $condition) {
-
-            // Get the query field
-            $query_field = $condition['field'];
-            // Escape the search-term
-            $query_term = bhle_search_solr_escape($condition['term']);
-
-            // Check if we have to quote the term
+        if(_is_combination_field($query_field)){
+            // prepate $query_field to be used in the dismax query parameter 'qf'
+            // multiple field names are concatenated with '+'
             if ($condition['exact_phrase']) {
-                $query_term = '"' . $query_term . '"';
-                $query_field .= '__exact';  // Change to exact index
-            }
-
-            // Check if search term expansion is turned on
-            if ($_SESSION['bhle_search']['expand_search']) {
-                // Check if we are looking for an author
-                if ($condition['field'] == variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD)) {
-                    // Check if VIAF module is active
-                    if (module_exists('viaf_lookup')) {
-                        // Fetch list of authors
-                        $viaf_authors = viaf_lookup_authors_simple($condition['term']);
-
-                        // Check if we found any authors, if yes add them as term
-                        if (is_array($viaf_authors) && count($viaf_authors) > 0) {
-                            // Add original term since we want to include it as well
-                            $viaf_authors[] = $condition['term'];
-                            $query_term = bhle_search_solr_build_query($viaf_authors);
-                        }
-                    } else {
-                        drupal_set_message('VIAF-Module not active!', 'error');
-                    }
+                // Change to exact index
+                $f = explode("+", $query_field);
+                for($i = 0; $i < count($f); $i++){
+                    $f[$i] = $f[$i] . '__exact';
                 }
-                // Check if we are looking for a scientific name
-                else if ($condition['field'] == variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD)) {
-                    if (module_exists('names_lookup')) {
-                        $synonyms_list = names_lookup_synonyms($condition['term']);
-
-                        // Check if we found any synonyms, if yes add to term
-                        if (is_array($synonyms_list) && count($synonyms_list) > 0) {
-                            $synonyms = array();
-                            foreach ($synonyms_list as $synonym_entry) {
-                                $synonyms[] = $synonym_entry['name'];
-                            }
-
-                            // Add original term since we want to include it as well
-                            $synonyms[] = $condition['term'];
-                            $query_term = bhle_search_solr_build_query($synonyms);
-                        }
-                    } else {
-                        drupal_set_message('Names-Module not active!', 'error');
-                    }
-                }
-                // Check if we are looking for a (journal) title
-                else if ($condition['field'] == variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD)) {
-                    if (module_exists('journals_lookup')) {
-                        $titles_list = journals_lookup_acronym($condition['term']);
-
-                        // Check if we found any titles, if yes add to term
-                        if (is_array($titles_list) && count($titles_list) > 0) {
-                            // Add original term since we want to include it as well
-                            $titles_list[] = $condition['term'];
-                            $query_term = bhle_search_solr_build_query($titles_list);
-                        }
-                    } else {
-                        drupal_set_message('Journals-Module not active!', 'error');
-                    }
-                }
-                // Check if we are looking for a common name
-                else if ($condition['field'] == variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD)) {
-                    if (module_exists('names_lookup')) {
-                        $scientifics_list = names_lookup_common_name($condition['term']);
-
-                        // Check if we found any synonyms, if yes add to term
-                        if (is_array($scientifics_list) && count($scientifics_list) > 0) {
-                            $scientific_names = array();
-                            foreach ($scientifics_list as $scientific_name) {
-                                $scientific_names[] = $scientific_name['name'];
-                            }
-
-                            // Add original term since we want to include it as well
-                            $scientific_names[] = $condition['term'];
-                            $query_term = bhle_search_solr_build_query($scientific_names);
-                        }
-                    } else {
-                        drupal_set_message('Names-Module not active!', 'error');
-                    }
-                }
-            }
-            // Append to query
-            if($query_field == 'simple') {
-              if($query) { $query .= ' ' . $condition['operator'] . ' '; }
-              $query .= '(';
-              foreach($_SESSION['bhle_search']['simple_condition']['fields'] as $delta => $value) {
-                if($value == 1) {
-                  switch ($delta) {
-                    case 'title':
-                      if($in_query) { $query .= ' OR '; }
-                      $query .= variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD) . ':' . $query_term . '';
-                      $in_query = 1;
-                      break;
-                    case 'author':
-                      if($in_query) { $query .= ' OR '; }
-                      $query .= variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD) . ':' . $query_term . '';
-                      $in_query = 1;
-                      break;
-                    case 'year':
-                      if($in_query) { $query .= ' OR '; }
-                      $query .= variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD) . ':' . $query_term . '';
-                      $in_query = 1;
-                      break;
-                    case 'scientific_name':
-                      if($in_query) { $query .= ' OR '; }
-                      $query .= variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) . ':' . $query_term . '';
-                      $in_query = 1;
-                      break;
-                  }
-                }
-              }
-              $query .= ')';
+                $params['qf'] = join(" ", $f);
+                $query_field = join("+", $f); // will not be used in query but needed as reference
             } else {
-                if( _is_wildcard_query($query_term) && !$condition['exact_phrase']) {
-                    // lowercase the full $query_term if it is not an exact search.
-                    // This step is needed to normalize tokens in the case
-                    // of wildcard searches. All analyzers are ommited in this case.
-                    // but preserve ' AND ', ' OR ', ' TO '
-                    $query_term = strtolower( $query_term );
-                    $query_term = str_replace(array(' and ', ' or ', ' to '), array(' AND ', ' OR ', ' TO '), $query_term);
-
-                }
-                $query .= ($previous_condition_operator ? ' ' . $previous_condition_operator . ' ' : '') . _wildcard_save_query_token($query_field, $query_term, TRUE);
+                $params['qf'] = str_replace("+", " ", $query_field);
             }
+        } else {
+            if ($condition['exact_phrase']) {
+                // Change to exact index
+                $query_field .= '__exact';
+            }
+        }
 
-            $search_summary_query_info = array(
-              'query_field' => $query_field,
-              'query_term' => $query_term
-            );
+        // Check if search term expansion is turned on
+        if ($_SESSION['bhle_search']['expand_search']) {
+            // Check if we are looking for an author
+            if ($condition['field'] == variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD)) {
+                // Check if VIAF module is active
+                if (module_exists('viaf_lookup')) {
+                    // Fetch list of authors
+                    $viaf_authors = viaf_lookup_authors_simple($condition['term']);
 
-            bhle_search_search_summary_add($condition, $search_summary_query_info);
-            $previous_condition_operator = strtoupper( $condition['operator'] );
-        } // END of loop over conditions
+                    // Check if we found any authors, if yes add them as term
+                    if (is_array($viaf_authors) && count($viaf_authors) > 0) {
+                        // Add original term since we want to include it as well
+                        $viaf_authors[] = $condition['term'];
+                        $query_term = bhle_search_solr_build_query($viaf_authors);
+                    }
+                } else {
+                    drupal_set_message('VIAF-Module not active!', 'error');
+                }
+            }
+            // Check if we are looking for a scientific name
+            else if ($condition['field'] == variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD)) {
+                if (module_exists('names_lookup')) {
+                    $synonyms_list = names_lookup_synonyms($condition['term']);
 
-    }
+                    // Check if we found any synonyms, if yes add to term
+                    if (is_array($synonyms_list) && count($synonyms_list) > 0) {
+                        $synonyms = array();
+                        foreach ($synonyms_list as $synonym_entry) {
+                            $synonyms[] = $synonym_entry['name'];
+                        }
+
+                        // Add original term since we want to include it as well
+                        $synonyms[] = $condition['term'];
+                        $query_term = bhle_search_solr_build_query($synonyms);
+                    }
+                } else {
+                    drupal_set_message('Names-Module not active!', 'error');
+                }
+            }
+            // Check if we are looking for a (journal) title
+            else if ($condition['field'] == variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD)) {
+                if (module_exists('journals_lookup')) {
+                    $titles_list = journals_lookup_acronym($condition['term']);
+
+                    // Check if we found any titles, if yes add to term
+                    if (is_array($titles_list) && count($titles_list) > 0) {
+                        // Add original term since we want to include it as well
+                        $titles_list[] = $condition['term'];
+                        $query_term = bhle_search_solr_build_query($titles_list);
+                    }
+                } else {
+                    drupal_set_message('Journals-Module not active!', 'error');
+                }
+            }
+            // Check if we are looking for a common name
+            else if ($condition['field'] == variable_get('bhle_search_common_name_field', BHLE_SEARCH_COMMON_NAME_FIELD)) {
+                if (module_exists('names_lookup')) {
+                    $scientifics_list = names_lookup_common_name($condition['term']);
+
+                    // Check if we found any synonyms, if yes add to term
+                    if (is_array($scientifics_list) && count($scientifics_list) > 0) {
+                        $scientific_names = array();
+                        foreach ($scientifics_list as $scientific_name) {
+                            $scientific_names[] = $scientific_name['name'];
+                        }
+
+                        // Add original term since we want to include it as well
+                        $scientific_names[] = $condition['term'];
+                        $query_term = bhle_search_solr_build_query($scientific_names);
+                    }
+                } else {
+                    drupal_set_message('Names-Module not active!', 'error');
+                }
+            }
+        }
+
+        if( _is_wildcard_query($query_term) && !$condition['exact_phrase']) {
+            // lowercase the full $query_term if it is not an exact search.
+            // This step is needed to normalize tokens in the case
+            // of wildcard searches. All analyzers are ommited in this case.
+            // but preserve ' AND ', ' OR ', ' TO '
+            $query_term = strtolower( $query_term );
+            $query_term = str_replace(array(' and ', ' or ', ' to '), array(' AND ', ' OR ', ' TO '), $query_term);
+
+        }
+        $query .= ($previous_condition_operator ? ' ' . $previous_condition_operator . ' ' : '') . _wildcard_save_query_token($query_field, $query_term, TRUE);
+
+        $search_summary_query_info = array(
+          'query_field' => $query_field,
+          'query_term' => $query_term
+        );
+
+        bhle_search_search_summary_add($condition, $search_summary_query_info);
+        $previous_condition_operator = strtoupper( $condition['operator'] );
+    } // END of loop over conditions
 
     // Do not search if there is no query
     if( strlen($query) <= 0 ) {
@@ -850,6 +812,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 $doc = $docs[$i];
                 $even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
                 $results[$doc_index] = array();
+                $results[$doc_index]['item_order'] = ($doc_index + 1);
                 $contentType = _solrdoc_getField($doc, $content_type_field_name);
                 // #attributes.class will be evaluated in bhle_search_preprocess_search_result()
                 $results[$doc_index]['#attributes'] = array('class' => array($even_odd, 'content-type-' . $contentType));
@@ -907,6 +870,7 @@ function bhle_search_search_result_field_map_for($type = 'unknown') {
  *
  *
  * @param - $type : allowed values are: simple, advanced
+ * FIXME remove @param since it is not used
  */
 function bhle_search_facet_field_map($type = 'simple') {
     switch ($type) {
@@ -951,25 +915,114 @@ function _solrdoc_getField(&$solr_doc, $fieldName, $glue = ', ') {
     }
 }
 
+/**
+ * Expands queries containing wildcards to also search in the _exact fields, this solves in most cases
+ * the problem that all solr analyzers are are by passed in wildcard queries. Due to this bypassing
+ * it is otherwise not possible to use diacritics at the same time in the search terms.
+ *
+ * NOTE: If we are runnig a exact term/phrase search we are querying for a phrase (eg: "terma termb")
+ * wildcard operators are usless, so thers is no need to care about these cases in this function.
+ *
+ * @param unknown_type $query_field
+ * @param unknown_type $query_term
+ * @param unknown_type $term_in_brackets
+ * @return string
+ */
 function _wildcard_save_query_token($query_field, $query_term, $term_in_brackets=false){
 
     if($term_in_brackets){
         $ob = '(';
         $cb = ')';
     }
-
-    if(_is_wildcard_query($query_term)) {
-        $query_token .= '(' ;
-        $query_token .= $query_field . ':' . $ob . $query_term . $cb .' OR ' . $query_field . '__exact:' . $ob . $query_term . $cb;
-        $query_token .= ')';
+    if(_is_combination_field($query_field)){
+        // skip all fieldnames in queries since we already have them in the solr qf parameter
+        // this has been done at the beginning of the calling function and should be meoved to here !! TODO
+        $query_token .= $ob . $query_term . $cb;
     } else {
-        $query_token .= $query_field . ':' . $ob . $query_term . $cb;
+        if(_is_wildcard_query($query_term)) {
+            $query_token .= '(' ;
+            $query_token .= $query_field . ':' . $ob . $query_term . $cb .' OR ' . $query_field . '__exact:' . $ob . $query_term . $cb;
+            $query_token .= ')';
+        } else {
+            $query_token .= $query_field . ':' . $ob . $query_term . $cb;
+        }
     }
     return $query_token;
 }
 
 function _is_wildcard_query($query_string) {
 	return strpos($query_string, "*") !== false || strpos($query_string, "?") !== false;
+}
+
+function _is_combination_field($query_field){
+    return strpos($query_field, "+") !== false;
+}
+/**
+ *
+ * returns all $n combinations of the elemens given in $elements
+ * @param array $elements
+ * @return multitype:|boolean
+ */
+function combinations($base, $n) {
+
+    $baselen = count($base);
+    if($baselen == 0){
+        return;
+    }
+
+    if($n == 1){
+        $return = array();
+        foreach($base as $b){
+            $return[] = array($b);
+        }
+        return $return;
+
+    }else{
+        //get one level lower combinations
+        $oneLevelLower = combinations($base,$n-1);
+
+        //for every one level lower combinations add one element to them that the last element of a combination is preceeded by the element which follows it in base array if there is none, does not add
+        $newCombs = array();
+
+        foreach($oneLevelLower as $oll){
+
+            $lastEl = $oll[$n-2];
+            $found = false;
+            foreach($base as  $key => $b){
+                if($b == $lastEl){
+                    $found = true;
+                    continue;
+                    //last element found
+
+                }
+                if($found == true){
+                    //add to combinations with last element
+                    if($key < $baselen){
+
+                        $tmp = $oll;
+                        $newCombination = array_slice($tmp,0);
+                        $newCombination[]=$b;
+                        $newCombs[] = array_slice($newCombination,0);
+                    }
+                }
+            }
+        }
+    }
+
+    return $newCombs;
+
+}
+
+function human_readable_field_name($field_name) {
+        if(strpos($field_name, "+")) { // if it is a combination field
+            $tokens = explode("+", $field_name);
+            for($i = 0; $i < count($tokens); $i++) {
+                $tokens[$i] = t(field_name_label($tokens[$i]));
+            }
+            return join(" + ", $tokens);
+        } else {
+    	    return t(field_name_label($field_name));
+        }
 }
 
 /**
@@ -1098,6 +1151,30 @@ function field_name_label($field_name){
 	}
 }
 
+function get_default_field_names() {
+    static $names;
+
+    if(!$names){
+        $names = array ('title', 'author', 'year', 'scientific_name', 'common_name');
+    }
+
+    return $names;
+}
+
+function get_simple_search_field_names() {
+    static $names;
+
+    if(!$names){
+        $names = array ('title', 'author', 'year', 'scientific_name');
+    }
+
+    return $names;
+}
+
+function get_field_by_name($name) {
+    return  variable_get('bhle_search_' . $name . '_field', constant(strtoupper('bhle_search_' . $name . '_field')));
+}
+
 /**
  * Form function, called by drupal_get_form()
  * in bhle_search_menu().
@@ -1117,7 +1194,8 @@ function bhle_search_preprocess_search_result(&$variables) {
     $additional_classes = $variables['result']['#attributes']['class'];
     $variables['content_type'] = $variables['result']['content_type'];
     $variables['PID'] = $variables['result']['PID'];
-
+    $variables['item_order'] = $variables['result']['item_order'];
+    
     foreach ($additional_classes as $class) {
         $variables['classes_array'][] = $class;
     }
@@ -1204,34 +1282,34 @@ function bhle_search_block_view($delta = '') {
             break;
 
         case 'simple_facet':
-          global $bhle_facet;
-          $block['subject'] = t('Facet list');
-          $block['content']['#type'] = 'markup';
-          $block['content']['#markup'] = '';
-          if(is_array($bhle_facet)) {
-            $block['content']['#markup'] .= '<p id="facet-list-grip-multiple" class="collapsing-multiple-grip">' . t('Collapse / expand all') . '</p>';
-            $block['content']['#markup'] .= '<div class="facet-list collapsing-multiple">';
-            foreach($bhle_facet['fields'] as $field_name => $field) {
-              $block['content']['#markup'] .= '<div class="facet-item"><h3 class="collapsing-grip"><a href="#">' . $field['#title'] . '</a></h3>';
-              $block['content']['#markup'] .= '<ul class="collapsing-content">';
-              foreach($field as $key => $val) {
-                if (is_numeric($key)) {
-                  $source = 'simple';
-                  if(!$val['#label']) {
-                    $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
-                    $block['content']['#markup'] .= '<li><span class="value">' . t('Not set') . ':' . ' ' . $val['#count'] . '</span></li>'; // TODO: use theme_list
-                  } else {
-                    $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
-                    $block['content']['#markup'] .= '<li>' . l($val['#label'] . ':', 'search/bhle/empty', $params) . ' <span class="value">' . $val['#count'] . '</span></li>'; // TODO: use theme_list
-                  }
-                  unset($delete);
-                }
-              }
-              $block['content']['#markup'] .= '</ul></div>';
-            }
-            $block['content']['#markup'] .= '</div>';
-          }
-          break;
+//           global $bhle_facet;
+//           $block['subject'] = t('Facet list');
+//           $block['content']['#type'] = 'markup';
+//           $block['content']['#markup'] = '';
+//           if(is_array($bhle_facet)) {
+//             $block['content']['#markup'] .= '<p id="facet-list-grip-multiple" class="collapsing-multiple-grip">' . t('Collapse / expand all') . '</p>';
+//             $block['content']['#markup'] .= '<div class="facet-list collapsing-multiple">';
+//             foreach($bhle_facet['fields'] as $field_name => $field) {
+//               $block['content']['#markup'] .= '<div class="facet-item"><h3 class="collapsing-grip"><a href="#">' . $field['#title'] . '</a></h3>';
+//               $block['content']['#markup'] .= '<ul class="collapsing-content">';
+//               foreach($field as $key => $val) {
+//                 if (is_numeric($key)) {
+//                   $source = 'simple';
+//                   if(!$val['#label']) {
+//                     $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+//                     $block['content']['#markup'] .= '<li><span class="value">' . t('Not set') . ':' . ' ' . $val['#count'] . '</span></li>'; // TODO: use theme_list
+//                   } else {
+//                     $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+//                     $block['content']['#markup'] .= '<li>' . l($val['#label'] . ':', 'search/bhle/empty', $params) . ' <span class="value">' . $val['#count'] . '</span></li>'; // TODO: use theme_list
+//                   }
+//                   unset($delete);
+//                 }
+//               }
+//               $block['content']['#markup'] .= '</ul></div>';
+//             }
+//             $block['content']['#markup'] .= '</div>';
+//           }
+//           break;
         case 'advanced_facet':
           global $bhle_facet;
           $block['subject'] = t('Facet list');
@@ -1276,6 +1354,13 @@ function bhle_search_block_view($delta = '') {
     return $block;
 }
 
+// ==== search summary ==== TODO implement as class //
+function bhle_search_search_summary_clear() {
+    global $_search_summary;
+
+    $_search_summary = array();
+}
+
 function bhle_search_search_summary_add($condition = null, $query = null) {
     global $_search_summary;
     if (!isset($_search_summary)) {
@@ -1302,6 +1387,8 @@ function bhle_search_search_summary_update($index, $condition = null, $query = n
     return $_search_summary;
 }
 
+// ==== END search summary == //
+
 /**
  * Query solr for hit count per query condition by making use of
  * a facet query, the count is added to search_summary which can be
@@ -1321,42 +1408,7 @@ function bhle_search_search_summary_add_hit_count() {
         foreach ($search_summary as $summary_element) {
             $query_item = $summary_element['query'];
             if (trim($query_item['query_term'])) { // check for empty term
-
-             if($query_item['query_field'] == 'simple') {
-
-                foreach($_SESSION['bhle_search']['simple_condition']['fields'] as $delta => $value) {
-                  if($value == 1) {
-                    switch ($delta) {
-                      case 'title':
-                        if($in_query) { $q .= ' OR '; }
-                        $q .= variable_get('bhle_search_title_field', BHLE_SEARCH_TITLE_FIELD) . ':' . $query_item['query_term'] . '';
-                        $in_query = 1;
-                        break;
-                      case 'author':
-                        if($in_query) { $q .= ' OR '; }
-                        $q .= variable_get('bhle_search_author_field', BHLE_SEARCH_AUTHOR_FIELD) . ':' . $query_item['query_term'] . '';
-                        $in_query = 1;
-                        break;
-                      case 'year':
-                        if($in_query) { $q .= ' OR '; }
-                        $q .= variable_get('bhle_search_year_field', BHLE_SEARCH_YEAR_FIELD) . ':' . $query_item['query_term'] . '';
-                        $in_query = 1;
-                        break;
-                      case 'scientific_name':
-                        if($in_query) { $q .= ' OR '; }
-                        $q .= variable_get('bhle_search_scientific_name_field', BHLE_SEARCH_SCIENTIFIC_NAME_FIELD) . ':' . $query_item['query_term'] . '';
-                        $in_query = 1;
-                        break;
-                    }
-                  }
-                }
-
-                //dpm($q);
-                //$params['facet.query'][] = 'mods_date_issued:1901 OR mods_date_issued:1900';
-                $params['facet.query'][] = $q;
-              } else {
                 $params['facet.query'][] = _wildcard_save_query_token($query_item['query_field'], ($query_item['query_term'] ? $query_item['query_term'] : '""'));
-              }
             }
         }
         // Query solr for facet query
@@ -1404,7 +1456,7 @@ function template_preprocess_search_summary(&$variables) {
                 $condition['term'] = '"' . $condition['term'] . '"';
             }
 
-            $condition['field_label'] = field_name_label($condition['field']);
+            $condition['field_label'] = human_readable_field_name($condition['field']);
 
             $variables['matches_for']['info'][$i] = $condition;
 

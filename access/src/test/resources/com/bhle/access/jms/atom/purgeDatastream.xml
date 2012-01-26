@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fedora-types="http://www.fedora.info/definitions/1/0/types/">
+  <id>urn:uuid:13b4e998-a122-40d6-9fb3-9008aab6dd76</id>
+  <updated>2011-12-03T10:07:01.937Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+    <uri>http://localhost:8080/fedora</uri>
+  </author>
+  <title type="text">purgeDatastream</title>
+  <category term="changeme:1" scheme="fedora-types:pid" label="xsd:string"></category>
+  <category term="DSID" scheme="fedora-types:dsID" label="xsd:string"></category>
+  <category term="null" scheme="fedora-types:startDT" label="xsd:string"></category>
+  <category term="null" scheme="fedora-types:endDT" label="xsd:string"></category>
+  <category term="null" scheme="fedora-types:logMessage" label="xsd:string"></category>
+  <summary type="text">changeme:18</summary>
+  <content type="text">[OMITTED]</content>
+  <category term="3.4.2" scheme="info:fedora/fedora-system:def/view#version"></category>
+  <category term="info:fedora/fedora-system:ATOM-APIM-1.0" scheme="http://www.fedora.info/definitions/1/0/types/formatURI"></category>
+</entry>

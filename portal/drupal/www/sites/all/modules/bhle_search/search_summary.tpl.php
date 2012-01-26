@@ -35,7 +35,7 @@
 ?>
 
 <div id="search_type"><?php print(isset($matches_for) ? "Advanced" : "Simple" );?> search</div>
-<p id="search-step-back-link"><a href="/search/bhle" title="step back"><?php print t('STEP BACK'); ?></a></p>
+<p id="edit-search"><a href="#" title="Edit search query"><?php print t('EDIT SEARCH'); ?></a></p>
 
 <div class="search-summary search-summary-<?php print $classes; ?>">
 	<div class="number_of_results">
