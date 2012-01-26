@@ -40,6 +40,12 @@ class ApacheSolrFacetapiTerm extends FacetapiQueryType implements FacetapiQueryT
     $limit = empty($settings->settings['hard_limit']) ? 20 : (int) $settings->settings['hard_limit'];
     $query->addParam('f.' . $this->facet['field'] . '.facet.limit', $limit);
 
+    // Adds "facet mincount" parameter to limit the number of facets.
+    if (isset($settings->settings['facet_mincount'])) {
+      $count = $settings->settings['facet_mincount'];
+      $query->addParam('f.' . $this->facet['field'] . '.facet.mincount', $count);
+    }
+
     $active = $this->adapter->getActiveItems($this->facet);
 
     // Adds filter based on the operator.
@@ -73,11 +79,12 @@ class ApacheSolrFacetapiTerm extends FacetapiQueryType implements FacetapiQueryT
   public function build() {
     $build = array();
     if ($response = apachesolr_static_response_cache($this->adapter->getSearcher())) {
+      $settings = $this->adapter->getFacet($this->facet)->getSettings();
       if (isset($response->facet_counts->facet_fields->{$this->facet['field']})) {
         $values = (array) $response->facet_counts->facet_fields->{$this->facet['field']};
         foreach ($values as $value => $count) {
           // Facet missing may return 0 even if mincount is 1.
-          if ($count) {
+          if (empty($settings->settings['facet_mincount']) || $count) {
             $build[$value] = array('#count' => $count);
           }
         }

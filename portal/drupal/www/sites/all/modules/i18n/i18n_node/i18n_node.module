@@ -10,22 +10,6 @@
 
 
 /**
- * Replacement for node_add.
- *
- * This just calls node_add() and switches title. This has to be done here to work always
- */
-function i18n_node_add($type) {
-  global $user;
-
-  $types = node_type_get_types();
-  $node = (object) array('uid' => $user->uid, 'name' => (isset($user->name) ? $user->name : ''), 'type' => $type, 'language' => LANGUAGE_NONE);
-  drupal_set_title(t('Create @name', array('@name' => i18n_node_translate_type($types[$type], 'name'))), PASS_THROUGH);
-  $output = drupal_get_form($type . '_node_form', $node);
-
-  return $output;
-}
-
-/**
  * Implements hook_field_extra_fields().
  */
 function i18n_node_field_extra_fields() {
@@ -118,11 +102,18 @@ function i18n_node_i18n_context_language() {
 /**
  * Implements hook_i18n_translate_path()
  */
-function i18n_node_i18n_translate_path($path, $language) {
+function i18n_node_i18n_translate_path($path) {
   if (preg_match("!^node/(\d+)(/.+|)!", $path, $matches) && ($node = node_load((int) $matches[1])) && i18n_object_langcode($node) && !empty($node->tnid)) {
-    $translations = translation_node_get_translations($node->tnid);
-    if (!empty($translations[$language->language])) {
-      return 'node/' . $translations[$language->language]->nid . $matches[2];
+    if ($translations = translation_node_get_translations($node->tnid)) {
+      $result = array();
+      foreach ($translations as $langcode => $node_translation) {
+        $result[$langcode] = array(
+          'href' => 'node/' . $node_translation->nid . $matches[2],
+          'title' => $node_translation->title,
+          'object' => $node_translation,
+        );
+      }
+      return $result;
     }
   }
 }
@@ -146,9 +137,6 @@ function i18n_node_menu_alter(&$items) {
   foreach (node_type_get_types() as $type) {
     $path = 'node/add/' . str_replace('_', '-', $type->type);
     if (isset($items[$path])) {
-      if (!empty($items[$path]['page callback']) && $items[$path]['page callback'] == 'node_add') {
-        $items[$path]['page callback'] = 'i18n_node_add';
-      }
       $items[$path]['title callback'] = 'i18n_node_type_name';
       $items[$path]['title arguments'] = array($type->type, $type->name);
     }
@@ -433,6 +421,7 @@ function i18n_node_form_node_type_form_alter(&$form, &$form_state) {
  * Implements hook_form_BASE_FORM_ID_alter().
  */
 function i18n_node_form_node_form_alter(&$form, $form_state) {
+  $node = $form['#node'];
   /**
    * i18n has to override locale.module
    * drupal_alter() fails to order modules correctly in some cases
@@ -465,14 +454,20 @@ function _i18n_node_form_node_form_alter($form, &$form_state) {
   }
 
   // Translate field names for title and body for the node edit form.
-  $type = $form['#node']->type;
   if (!empty($form['title']['#title'])) {
-    $form['title']['#title'] = i18n_node_translate_type($type, 'title_label', $form['title']['#title']);
+    $form['title']['#title'] = i18n_node_translate_type($node->type, 'title_label', $form['title']['#title']);
   }
   if (!empty($form['body_field']['body']['#title'])) {
-    $form['body_field']['body']['#title'] = i18n_node_translate_type($type, 'body', $form['body_field']['body']['#title']);
+    $form['body_field']['body']['#title'] = i18n_node_translate_type($node->type, 'body', $form['body_field']['body']['#title']);
   }
-
+  // Translate page title for node/add/% and node/%/edit pages.
+  $types = node_type_get_types();
+  if (empty($node->nid) && $_GET['q'] == 'node/add/' . str_replace('_', '-', $node->type)) {
+    drupal_set_title(t('Create @name', array('@name' => i18n_node_translate_type($types[$node->type], 'name'))), PASS_THROUGH);
+  }
+  elseif (!empty($node->nid) && $_GET['q'] == 'node/' . $node->nid . '/edit') {
+    drupal_set_title(t('<em>Edit @type</em> @title', array('@type' => i18n_node_translate_type($types[$node->type], 'name'), '@title' => $node->title)), PASS_THROUGH);
+  }
   return $form;
 }
 

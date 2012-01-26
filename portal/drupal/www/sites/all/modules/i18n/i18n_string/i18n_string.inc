@@ -6,7 +6,7 @@
 
 /**
  * String object that contains source and translations.
- * 
+ *
  * Note all database operations must go through textgroup object so we can switch storage at some point.
  */
 class i18n_string_object {
@@ -16,7 +16,7 @@ class i18n_string_object {
   public $lid;
   public $source;
   public $textgroup;
-  public $location;  
+  public $location;
   public $context;
   public $version;
   // Properties from i18n_tring
@@ -31,7 +31,7 @@ class i18n_string_object {
   public $translations;
   // Textgroup object
   protected $_textgroup;
- 
+
   /**
    * Class constructor
    */
@@ -54,13 +54,13 @@ class i18n_string_object {
    * Set context properties
    */
   public function set_context($context) {
-    $parts = is_array($context) ? $context : explode(':', $context);  
+    $parts = is_array($context) ? $context : explode(':', $context);
     $this->context = is_array($context) ? implode(':', $context) : $context;
     // Location will be the full string name
     $this->location = $this->textgroup . ':' . $this->context;
     $this->type = array_shift($parts);
     $this->objectid = $parts ? array_shift($parts) : '';
-    $this->objectkey = (int)$this->objectid;      
+    $this->objectkey = (int)$this->objectid;
     // Remaining elements glued again with ':'
     $this->property = $parts ? implode(':', $parts) : '';
     return $this;
@@ -90,7 +90,7 @@ class i18n_string_object {
   }
   /**
    * Set source string
-   * 
+   *
    * @param $string
    *   Plain string or array with 'string', 'format', etc...
    */
@@ -127,14 +127,14 @@ class i18n_string_object {
       else {
         // No source, no translation
         $this->translations[$langcode] = FALSE;
-      }      
+      }
     }
     // Which doesn't mean we've got a translation, only that we've got the result cached
     return $this->translations[$langcode];
   }
   /**
    * Set translation for language
-   * 
+   *
    * @param $translation
    *   Translation object (from database) or string
    */
@@ -196,7 +196,7 @@ class i18n_string_object {
    *   String object if source exists.
    */
   public function get_source() {
-    // If already searched and not found we don't have a source, 
+    // If already searched and not found we don't have a source,
     if (isset($this->lid) && !$this->lid) {
       return NULL;
     }
@@ -219,10 +219,10 @@ class i18n_string_object {
       return $this;
     }
   }
-  
+
   /**
    * Set properties from object or array
-   * 
+   *
    * @param $properties
    *   Obejct or array of properties
    * @param $set_null
@@ -276,7 +276,7 @@ class i18n_string_textgroup_default {
 
   /**
    * Class constructor.
-   * 
+   *
    * There are to hidden variables to produce debugging information:
    * - 'i18n_string_debug', generic for all text groups.
    * - 'i18n_string_debug_TEXTGROUP', enable debug only for TEXTGROUP.
@@ -287,7 +287,7 @@ class i18n_string_textgroup_default {
   }
   /**
    * Build string object
-   * 
+   *
    * @param $context
    *   Context array or string
    * @param $string string
@@ -299,7 +299,7 @@ class i18n_string_textgroup_default {
     if ($cached = $this->cache_get($context)) {
       $i18nstring = $cached;
     }
-    else {    
+    else {
       $i18nstring = new i18n_string_object();
       $i18nstring->textgroup = $this->textgroup;
       $i18nstring->set_context($context);
@@ -390,9 +390,9 @@ class i18n_string_textgroup_default {
 
   /**
    * Filter array of strings
-   * 
+   *
    * @param $filter
-   *   Array of name value conditions. 
+   *   Array of name value conditions.
    */
   protected static function string_filter($string_list, $filter) {
     // Remove 'language' and '*' conditions.
@@ -527,7 +527,7 @@ class i18n_string_textgroup_default {
           watchdog('i18n_string', 'Created string %location for text group %textgroup: %string', $i18nstring->get_args());
           break;
       }
-    } 
+    }
     return $status;
   }
 
@@ -592,7 +592,7 @@ class i18n_string_textgroup_default {
       $query->condition('s.textgroup', $i18nstring->textgroup);
       $query->condition('s.context', $i18nstring->context);
     }
-    // Add translation fields   
+    // Add translation fields
     $query->fields('t', array('translation', 'i18n_status'));
     $query->condition('t.language', $langcode);
     // Speed up the query, we just need one row
@@ -713,7 +713,7 @@ class i18n_string_textgroup_default {
 
   /**
    * Build combinations of an array of arrays respecting keys.
-   * 
+   *
    * Example:
    *   array(array(a,b), array(1,2)) will translate into
    *   array(a,1), array(a,2), array(b,1), array(b,2)
@@ -740,21 +740,21 @@ class i18n_string_textgroup_default {
 
   /**
    * Get multiple translations with search conditions.
-   * 
+   *
    * @param $translations
    *   Array of translation objects as loaded from the db.
 	 * @param $langcode
 	 *   Language code, array of language codes or * to search all translations.
-	 * 
+	 *
    * @return array
    *   Array of i18n string objects.
    */
   protected function multiple_translation_build($translations, $langcode) {
     $strings = array();
-    foreach ($translations as $translation) {   
+    foreach ($translations as $translation) {
       // The string object may be already in list
       if (isset($strings[$translation->context])) {
-        $string = $strings[$translation->context];        
+        $string = $strings[$translation->context];
       }
       else {
         $string = $this->build_string($translation->context);
@@ -777,7 +777,7 @@ class i18n_string_textgroup_default {
    * Load multiple translations from db
    *
    * @todo Optimize when we've already got the source object
-   * 
+   *
    * @param $conditions
    *   Array of field values to use as query conditions.
    * @param $langcode
@@ -817,7 +817,7 @@ class i18n_string_textgroup_default {
 
   /**
    * Search multiple translations with key combinations.
-   * 
+   *
    * Each $context field may be a single value, an array of values or '*'.
    * Example:
    * 	array('term', array(1,2), '*')
@@ -826,10 +826,10 @@ class i18n_string_textgroup_default {
    * And will result in these combinations to search for
    *  array('type' => 'term', 'objectid' => 1, 'property' => '*', 'language' => 'es')
    *  array('type' => 'term', 'objectid' => 2, 'property' => '*', 'language' => 'es')
-   * 
+   *
    * @param $context array
    *   Array with String context conditions.
-   *   
+   *
    * @return
    *   Array of translation objects indexed by context.
    */
@@ -874,7 +874,7 @@ class i18n_string_textgroup_default {
 
   /**
    * Set multiple cache.
-   * 
+   *
    * @param $context
    *   String context with language property at the end.
    * @param $strings
@@ -884,13 +884,13 @@ class i18n_string_textgroup_default {
     $cache_key = implode(':', $context);
     $this->cache_multiple[$cache_key] = $strings;
   }
-  
+
   /**
    * Get strings from multiple cache.
-   * 
+   *
    * @param $context array
    *   String context as array with language property at the end.
-   * 
+   *
    * @return mixed
    *   Array of strings (may be empty) if we've got a cache hit.
    *   Null otherwise.
@@ -907,7 +907,7 @@ class i18n_string_textgroup_default {
         if ($value != '*') {
           $try = array_merge($context, array($key => '*'));
           $cache_key = implode(':', $try);
-          if (isset($this->cache_multiple[$cache_key])) {         
+          if (isset($this->cache_multiple[$cache_key])) {
             // As we've found some more generic key, we need to filter using original conditions.
             $strings = $this->string_filter($this->cache_multiple[$cache_key], $context);
             return $strings;
@@ -916,17 +916,17 @@ class i18n_string_textgroup_default {
       }
       // If we've reached here, we didn't find any cache match.
       return NULL;
-    }   
+    }
   }
 
   /**
    * Translate array of source strings
-   * 
+   *
    * @param $context
    *   Context array with placeholders (*)
    * @param $strings
    *   Optional array of source strings indexed by the placeholder property
-   *   
+   *
    * @return array
    *   Array of string objects (with translation) indexed by the placeholder field
    */
@@ -935,7 +935,7 @@ class i18n_string_textgroup_default {
     $search = $context = array_combine(array('type', 'objectid', 'property'), $context);
     $langcode = isset($options['langcode']) ? $options['langcode'] : i18n_langcode();
     // If we've got keyed source strings set the array of keys on the placeholder field
-    // or if not, remove that condition so we search all strings with that keys.   
+    // or if not, remove that condition so we search all strings with that keys.
     foreach ($search as $field => $value) {
       if ($value === '*') {
         $property = $field;
@@ -951,7 +951,7 @@ class i18n_string_textgroup_default {
     foreach ($result as $key => $i18nstring) {
       $translations[$i18nstring->$property] = $i18nstring;
     }
-    // Set strings as source or create 
+    // Set strings as source or create
     foreach ($strings as $key => $source) {
       if (isset($translations[$key]) && is_object($translations[$key])) {
         $translations[$key]->set_string($source);
@@ -971,7 +971,7 @@ class i18n_string_textgroup_default {
 
   /**
    * Update string translation, only if source exists.
-   * 
+   *
    * @param $context
    *   String context as array
    * @param $langcode
@@ -997,7 +997,7 @@ class i18n_string_textgroup_default {
     ->fields('l')
     ->condition('l.textgroup', $this->textgroup);
     $alias = $query->leftJoin('i18n_string', 's', 'l.lid = s.lid');
-    $query->condition('s.lid', NULL);
+    $query->isNull('s.lid');
     foreach ($query->execute()->fetchAll() as $string) {
       $i18nstring = $this->build_string($string->context, $string->source);
       $this->save_string($i18nstring);
@@ -1014,12 +1014,12 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
   protected $textgroup;
   // Properties for translation
   protected $properties;
-  
+
   /**
    * Get object strings for translation
-   * 
+   *
  	 * This will return a simple array of string objects, indexed by full string name.
- 	 * 
+ 	 *
  	 * @param $options
  	 *   Array with processing options.
  	 *   - 'empty', whether to return empty strings, defaults to FALSE.
@@ -1046,7 +1046,7 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
   }
   /**
    * Get object translatable properties
-   * 
+   *
    * This will return a big array indexed by textgroup, object type, object id and string key.
    * Each element is an array with string information, and may have these properties:
    * - 'string', the string itself, will be NULL if the object doesn't have that string
@@ -1056,6 +1056,9 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
   public function get_properties() {
     if (!isset($this->properties)) {
       $this->properties = $this->build_properties();
+      // Call hook_i18n_string_list_TEXTGROUP_alter(), last chance for modules
+      drupal_alter('i18n_string_list_' . $this->get_textgroup(), $this->properties, $this->type, $this->object);
+      
     }
     return $this->properties;
   }
@@ -1064,13 +1067,13 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
    * Build properties from object.
    */
   protected function build_properties() {
-    list($string_type, $object_id) = $this->get_string_context(); 
+    list($string_type, $object_id) = $this->get_string_context();
     $object_keys = array(
       $this->get_textgroup(),
       $string_type,
       $object_id,
     );
-    $strings = array();   
+    $strings = array();
     foreach ($this->get_string_info('properties', array()) as $field => $info) {
       $info = is_array($info) ? $info : array('title' => $info);
       $field_name = isset($info['field']) ? $info['field'] : $field;
@@ -1082,8 +1085,6 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
         'name' => array_merge($object_keys, array($field)),
       );
     }
-    // Call hook_i18n_string_list_TEXTGROUP_alter(), last chance for modules
-    drupal_alter('i18n_string_list_' . $this->get_textgroup(), $strings, $this->type, $this->object);
     return $strings;
   }
 
@@ -1101,13 +1102,13 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
    * 	 Language code if we want ti for a specific language
    */
   public function get_translate_path($langcode = NULL) {
-    $replacements = array('%language' => $langcode ? $langcode : '');
+    $replacements = array('%i18n_language' => $langcode ? $langcode : '');
     if ($path = $this->get_string_info('translate path')) {
       return $this->path_replace($path, $replacements);
     }
     elseif ($path = $this->get_info('translate tab')) {
       // If we've got a translate tab path, we just add language to it
-      return $this->path_replace($path . '/%language', $replacements);
+      return $this->path_replace($path . '/%i18n_language', $replacements);
     }
   }
 
@@ -1137,9 +1138,9 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
 
   /**
    * Translate object.
-   * 
+   *
    * Translations are cached so it runs only once per language.
-   * 
+   *
    * @return object/array
    *   A clone of the object with its properties translated.
    */
@@ -1160,9 +1161,9 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
 
   /**
    * Translate all properties for object.
-   * 
+   *
    * On top of object strings we search for all textgroup:type:objectid:* properties
-   * 
+   *
    * @param $langcode
    *   A clone of the object or array
    */
@@ -1192,10 +1193,10 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
     $context[] = '*';
     return $context;
   }
-  
+
   /**
    * Translate object property.
-   * 
+   *
    * Mot often, this is a direct field set, but sometimes fields may have different formats.
    */
   protected function translate_field(&$object, $i18nstring, $langcode, $options) {
@@ -1208,12 +1209,12 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
       $object[$field_name] = $translation;
     }
   }
-  
+
   /**
    * Remove all strings for this object.
    */
   public function strings_remove($options = array()) {
-    return $this->strings_operation('remove', $options + array('empty' => TRUE)); 
+    return $this->strings_operation('remove', $options + array('empty' => TRUE));
   }
 
   /**
@@ -1222,15 +1223,15 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
   public function strings_update($options = array()) {
     return $this->strings_operation('update', $options + array('empty' => TRUE, 'update' => TRUE));
   }
-  
+
   /**
    * Run some operation on all this object's strings.
-   * 
+   *
    * @param $method
    *   Operation to run on all strings: 'update', 'remove'.
    * @param $options
    *   Array of options to pass to the string method.
-   *   
+   *
    * @return array
    *   Count for each result
    */
@@ -1240,6 +1241,6 @@ class i18n_string_object_wrapper extends i18n_object_wrapper {
       $status = $string->$method($options);
       $result[$status] = isset($result[$status]) ? $result[$status] +1 : 1;
     }
-    return $result;    
+    return $result;
   }
 }

@@ -85,7 +85,7 @@ function i18n_menu_i18n_string_info() {
 }
 
 /**
- * Implements hook_i18n_string_list()
+ * Implements hook_i18n_string_objects()
  */
 function i18n_menu_i18n_string_objects($type) {
   if ($type == 'menu_link') {

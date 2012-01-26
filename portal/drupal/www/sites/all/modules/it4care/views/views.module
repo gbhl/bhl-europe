@@ -58,7 +58,7 @@ function views_api_minimum_version() {
  */
 function views_theme($existing, $type, $theme, $path) {
   $path = drupal_get_path('module', 'views');
-  include_once $path . '/theme/theme.inc';
+  ctools_include('theme', 'views', 'theme');
 
   // Some quasi clever array merging here.
   $base = array(
@@ -90,6 +90,10 @@ function views_theme($existing, $type, $theme, $path) {
   $hooks['views_view_field'] = $base + array(
     'pattern' => 'views_view_field__',
     'variables' => array('view' => NULL, 'field' => NULL, 'row' => NULL),
+  );
+  $hooks['views_view_grouping'] = $base + array(
+    'pattern' => 'views_view_grouping__',
+    'variables' => array('view' => NULL, 'grouping' => NULL, 'grouping_level' => NULL, 'rows' => NULL, 'title' => NULL),
   );
 
   $plugins = views_fetch_plugin_data();
@@ -219,7 +223,8 @@ function _views_find_module_templates($cache, $path) {
           $templates[strtr($file, '-', '_')] = array(
             'template' => $file,
             'path' => dirname($files[$match]->uri),
-            'variables' => $info['variables'],
+            'variables' => isset($info['variables']) ? $info['variables'] : NULL,
+            'render element' => isset($info['render element']) ? $info['render element'] : NULL,
             'base hook' => $hook,
             'includes' => isset($info['includes']) ? $info['includes'] : NULL,
           );
@@ -1305,7 +1310,7 @@ function views_get_applicable_views($type) {
   // @todo: Use a smarter flagging system so that we don't have to
   // load every view for this.
   $result = array();
-  $views = views_get_all_views(TRUE);
+  $views = views_get_all_views();
 
   foreach ($views as $view) {
     // Skip disabled views.
@@ -1421,12 +1426,12 @@ function views_get_views_as_options($views_only = FALSE, $filter = 'all', $exclu
   foreach ($views as $view) {
     // Return only views.
     if ($views_only && $view->name != $exclude_view_name) {
-      $options[$view->name] = $view_name;
+      $options[$view->name] = $view->get_human_name();
     }
     // Return views with display ids.
     else {
       foreach ($view->display as $display_id => $display) {
-        if (!($view->name == $exclude_view_name && $view->current_display != $exclude_view_display)) {
+        if (!($view->name == $exclude_view_name && $display_id == $exclude_view_display)) {
           if ($optgroup) {
             $options[$view->name][$view->name . ':' . $display->id] = t('@view : @display', array('@view' => $view->name, '@display' => $display->id));
           }
@@ -1585,13 +1590,18 @@ function views_debug($message, $placeholders = array()) {
     $output = '<pre>' . var_export($message, TRUE) . '</pre>';
   }
   if (module_exists('devel') && variable_get('views_devel_output', FALSE) && user_access('access devel information')) {
-    if (variable_get('views_devel_region', 'footer') != 'watchdog') {
-      $output = empty($output) ? t($message, $placeholders) : $output;
-      drupal_add_region_content(variable_get('views_devel_region', 'footer'), $output);
-    }
-    else {
+    $devel_region = variable_get('views_devel_region', 'footer');
+    if ($devel_region == 'watchdog') {
       $output = $message;
       watchdog('views_logging', $output, $placeholders);
+    }
+    else if ($devel_region == 'drupal_debug') {
+      $output = empty($output) ? t($message, $placeholders) : $output;
+      dd($output);
+    }
+    else {
+      $output = empty($output) ? t($message, $placeholders) : $output;
+      dpm($output);
     }
   }
   elseif (isset($GLOBALS['drupal_test_info'])) {
@@ -2276,7 +2286,7 @@ function views_process_check_options($element, &$form_state) {
  * @param $alter
  *   - max_length: Maximum lenght of the string, the rest gets truncated.
  *   - word_boundary: Trim only on a word boundary.
- *   - ellipsis: Trim only on a word boundary.
+ *   - ellipsis: Show an ellipsis (...) at the end of the trimmed string.
  *   - html: Take sure that the html is correct.
  *
  * @param $value
@@ -2311,6 +2321,22 @@ function views_trim_text($alter, $value) {
   }
 
   return $value;
+}
+
+/**
+ * Adds one to each key of the array.
+ *
+ * For example array(0 => 'foo') would be array(1 => 'foo').
+ */
+function views_array_key_plus($array) {
+  $keys = array_keys($array);
+  rsort($keys);
+  foreach ($keys as $key) {
+    $array[$key+1] = $array[$key];
+    unset($array[$key]);
+  }
+  asort($array);
+  return $array;
 }
 
 /**

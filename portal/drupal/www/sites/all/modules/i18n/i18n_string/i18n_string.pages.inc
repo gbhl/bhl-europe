@@ -10,7 +10,10 @@
 /**
  * Generate translate page from object
  */
-function i18n_string_translate_page_object($object_type, $object_value, $langcode = NULL) {
+function i18n_string_translate_page_object($object_type, $object_value, $language = NULL) {
+  // For backwards compatibility, ensure parameter is a language object
+  $language = $language ? i18n_language($language) : NULL;
+  $langcode = $language ? $language->language : NULL;
   // Get base keys for all these strings. Object key may be multiple like for blocks (module, delta)
   $object = i18n_object($object_type, $object_value);
   $strings = $object->get_strings(array('empty' => TRUE));
