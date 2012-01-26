@@ -1,6 +1,15 @@
 <?php
+/**
+ * This class allows you to make operations on a query that will be sent to
+ * Apache Solr. methods such as adding and removing sorts, remove and replace
+ * parameters, adding and removing filters, getters and setters for various
+ * parameters and more
+ * @file
+ *   Class that defines the base query for the Apache Solr Drupal module.
+ */
 
 class SolrFilterSubQuery {
+
   /**
    * Static shared by all instances, used to increment ID numbers.
    */
@@ -10,7 +19,6 @@ class SolrFilterSubQuery {
    * Each query/subquery will have a unique ID.
    */
   public $id;
-
   public $operator;
 
   /**
@@ -127,6 +135,97 @@ class SolrFilterSubQuery {
   }
 
   /**
+   * Make sure our query matches the pattern name:value or name:"value"
+   * Make sure that if we are ranges we use name:[ AND ]
+   * allowed inputs :
+   * a. bundle:article
+   * b. date:[1970-12-31T23:59:59Z TO NOW]
+   * Split the text in 4 different parts
+   * 1. name, eg.: bundle or date
+   * 2. The first opening bracket (or nothing), eg.: [
+   * 3. The value of the field, eg. article or 1970-12-31T23:59:59Z TO NOW
+   * 4. The last closing bracket, eg.: ]
+   * @param string $filter
+   *   The filter to validate
+   * @return boolean
+   */
+  public static function validFilterValue($filter) {
+    $opening = 0;
+    $closing = 0;
+    $name = NULL;
+    $value = NULL;
+
+    if (preg_match('/(?P<name>[^:]+):(?P<value>.+)?$/', $filter, $matches)) {
+      foreach ($matches as $match_id => $match) {
+        switch($match_id) {
+          case 'name' :
+            $name = $match;
+            break;
+          case 'value' :
+            $value = $match;
+            break;
+        }
+      }
+
+      // For the name we allow any character that fits between the A-Z0-9 range and
+      // any alternative for this in other languages. No special characters allowed
+      if (!preg_match('/^[a-zA-Z0-9_\x7f-\xff]+$/', $name)) {
+        return FALSE;
+      }
+
+      // For the value we allow anything that is UTF8
+      if (!drupal_validate_utf8($value)) {
+        return FALSE;
+      }
+
+      // Check our bracket count. If it does not match it is also not valid
+      $valid_brackets = TRUE;
+      $brackets['opening']['{'] = substr_count($value, '{');
+      $brackets['closing']['}'] = substr_count($value, '}');
+      $valid_brackets = ($brackets['opening']['{'] != $brackets['closing']['}']) ? FALSE : TRUE;
+      $brackets['opening']['['] = substr_count($value, '[');
+      $brackets['closing'][']'] = substr_count($value, ']');
+      $valid_brackets = ($brackets['opening']['['] != $brackets['closing'][']']) ? FALSE : TRUE;
+      $brackets['opening']['('] = substr_count($value, '(');
+      $brackets['closing'][')'] = substr_count($value, ')');
+      $valid_brackets = ($brackets['opening']['('] != $brackets['closing'][')']) ? FALSE : TRUE;
+      if (!$valid_brackets) {
+        return FALSE;
+      }
+
+      // Check the date field inputs
+      if (preg_match('/\[(.+) TO (.+)\]$/', $value, $datefields)) {
+        // Only Allow a value in the form of
+        // http://lucene.apache.org/solr/api/org/apache/solr/schema/DateField.html
+        // http://lucene.apache.org/solr/api/org/apache/solr/util/DateMathParser.html
+        // http://wiki.apache.org/solr/SolrQuerySyntax
+        // 1976-03-06T23:59:59.999Z (valid)
+        // * (valid)
+        // 1995-12-31T23:59:59.999Z (valid)
+        // 2007-03-06T00:00:00Z (valid)
+        // NOW-1YEAR/DAY (valid)
+        // NOW/DAY+1DAY (valid)
+        // 1976-03-06T23:59:59.999Z (valid)
+        // 1976-03-06T23:59:59.999Z+1YEAR (valid)
+        // 1976-03-06T23:59:59.999Z/YEAR (valid)
+        // 1976-03-06T23:59:59.999Z (valid)
+        // 1976-03-06T23::59::59.999Z (invalid)
+        if (!empty($datefields[1]) && !empty($datefields[2])) {
+          // Do not check to full value, only the splitted ones
+          unset($datefields[0]);
+          // Check if both matches are valid datefields
+          foreach ($datefields as $datefield) {
+            if (!preg_match('/(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:[\d\.]{2,6}Z(\S)*)|(^([A-Z\*]+)(\A-Z0-9\+\-\/)*)/', $datefield, $datefield_match)) {
+              return FALSE;
+            }
+          }
+        }
+      }
+    }
+    return TRUE;
+  }
+
+  /**
    * Builds a set of filter queries from $this->fields and all subqueries.
    *
    * Returns an array of strings that can be combined into
@@ -141,11 +240,12 @@ class SolrFilterSubQuery {
       $subfq = $subquery->rebuildFq();
       if ($subfq) {
         $operator = $subquery->operator;
-        $fq[] =  "(" . implode(" $operator ", $subfq) . ")";
+        $fq[] = "(" . implode(" $operator ", $subfq) . ")";
       }
     }
     return $fq;
   }
+
 }
 
 class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterface {
@@ -167,20 +267,20 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
   protected $solr;
   // The array keys must always be real Solr index fields.
   protected $available_sorts;
+
   /**
-   * The query name is used to construct a searcher string. Typically something like 'apachesolr'
+   * The query name is used to construct a searcher string. Mostly the
+   * environment id
    */
   protected $name;
-
   // Makes sure we always have a valid sort.
   protected $solrsort = array('#name' => 'score', '#direction' => 'desc');
-
   // A flag to allow the search to be aborted.
   public $abort_search = FALSE;
 
   /**
-   * @param $name
-   *   A name (namespce) for this query.  Typically 'apachesolr'.
+   * @param $env_id
+   *   The environment where you are calling the query from.  Typically the default environment.
    *
    * @param $solr
    *   An instantiated DrupalApacheSolrService Object.
@@ -231,7 +331,7 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
   }
 
   protected $single_value_params = array(
-    'q' => TRUE,    // http://wiki.apache.org/solr/SearchHandler#q
+    'q' => TRUE, // http://wiki.apache.org/solr/SearchHandler#q
     'q.op' => TRUE, // http://wiki.apache.org/solr/SearchHandler#q.op
     'q.alt' => TRUE, // http://wiki.apache.org/solr/SearchHandler#q
     'df' => TRUE,
@@ -242,6 +342,7 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
     'debugQuery' => TRUE,
     'start' => TRUE,
     'rows' => TRUE,
+    'stats' => TRUE,
     'facet' => TRUE,
     'facet.prefix' => TRUE,
     'facet.limit' => TRUE,
@@ -275,6 +376,7 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
     'hl.regex.slop' => TRUE,
     'hl.regex.pattern' => TRUE,
     'hl.regex.maxAnalyzedChars' => TRUE,
+    'spellcheck' => TRUE,
   );
 
   public function getParam($name) {
@@ -296,31 +398,40 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
     // For certain fields Solr prefers a comma separated list.
     foreach (array('fl', 'hl.fl', 'sort', 'mlt.fl') as $name) {
       if (isset($params[$name])) {
-        $params[$name]  = implode(',', $params[$name]);
+        $params[$name] = implode(',', $params[$name]);
       }
     }
     return $params;
   }
 
   protected function addFq($string, $index = NULL) {
-    // Gets information about the fields already in solr index.
     $string = trim($string);
     $local = '';
     $exclude = FALSE;
-    if (preg_match('/\({!([^}]+)\}(.*)/', $string, $matches)) {
+    $name = NULL;
+    $value = NULL;
+
+    // Check if we are dealing with an exclude
+    if (preg_match('/^-(.*)/', $string, $matches)) {
+      $exclude = TRUE;
+      $string = $matches[1];
+    }
+
+    // If {!something} is found as first character then this is a local value
+    if (preg_match('/\{!([^}]+)\}(.*)/', $string, $matches)) {
       $local = $matches[1];
       $string = $matches[2];
     }
-    if (preg_match('/(-|)(\(\S+\))/', $string, $matches)) {
-      // Something complicated
-      $exclude = !empty($matches[1]);
-      $this->addFilter('', $matches[2], $exclude, $local);
+
+    // Anything that has a name and value
+    // check if we have a : in the string
+    if (strstr($string, ':')) {
+      list($name, $value) = explode(":", $string, 2);
     }
-    elseif (preg_match('/(-|)([^:]+):(\S+)/', $string, $matches)) {
-      //$index_fields = (array) $this->solr->getFields();
-      $exclude = !empty($matches[1]);
-      $this->addFilter($matches[2], $matches[3], $exclude, $local);
+    else {
+      $value = $string;
     }
+    $this->addFilter($name, $value, $exclude, $local);
     return $this;
   }
 
@@ -397,7 +508,7 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
   }
 
   protected function parseSortString() {
-        // Substitute any field aliases with real field names.
+    // Substitute any field aliases with real field names.
     $sortstring = strtr($this->sortstring, $this->field_map);
     // Score is a special case - it's the default sort for Solr.
     if ('' == $sortstring || 'score desc' == $sortstring) {
@@ -408,7 +519,7 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
     else {
       // Validate and set sort parameter
       $fields = implode('|', array_keys($this->available_sorts));
-      if (preg_match('/^(?:('. $fields .') (asc|desc),?)+$/', $sortstring, $matches)) {
+      if (preg_match('/^(?:(' . $fields . ') (asc|desc),?)+$/', $sortstring, $matches)) {
         // We only use the last match.
         $this->solrsort['#name'] = $matches[1];
         $this->solrsort['#direction'] = $matches[2];
@@ -425,6 +536,13 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
     // We expect non-aliased sorts to be added.
     $this->available_sorts[$name] = $sort;
     // Re-parse the sortstring.
+    $this->parseSortString();
+    return $this;
+  }
+
+  public function setAvailableSorts($sorts) {
+    // We expect a complete array of valid sorts.
+    $this->available_sorts = $sorts;
     $this->parseSortString();
     return $this;
   }
@@ -460,7 +578,7 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
       if (isset($this->field_map[$solrsort['#name']])) {
         $solrsort['#name'] = $this->field_map[$solrsort['#name']];
       }
-      $queryvalues['solrsort'] = $solrsort['#name'] .' '. $solrsort['#direction'];
+      $queryvalues['solrsort'] = $solrsort['#name'] . ' ' . $solrsort['#direction'];
     }
     else {
       // Return to default relevancy sort.
@@ -479,4 +597,5 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
   public function solr($method) {
     return $this->solr->$method();
   }
+
 }

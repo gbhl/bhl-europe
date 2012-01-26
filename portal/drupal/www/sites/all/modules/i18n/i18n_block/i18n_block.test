@@ -6,7 +6,7 @@
 
 class i18nBlocksTestCase extends Drupali18nTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Block translation',
       'group' => 'Internationalization',

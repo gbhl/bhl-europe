@@ -184,9 +184,9 @@ class Drupali18nTestCase extends DrupalWebTestCase {
   function createNodeTranslation($node, $language, $title = NULL, $body = NULL) {
     $body = $body ? $body : $this->randomName();
     $title = $title ? $title : $this->randomName();
-    $this->drupalGet('node/add/' . $node->type, array('query' => array('translation' => $node->nid, 'target' => $language->language)));    
+    $this->drupalGet('node/add/' . $node->type, array('query' => array('translation' => $node->nid, 'target' => $language->language)));
 
-    
+
     $this->assertFieldByXPath('//input[@id="edit-title"]', $node->title, "Original title value correctly populated.");
     $field_lang = field_language('node', $node, 'body');
     $body_key = "body[und][0][value]";
@@ -435,7 +435,7 @@ class Drupali18nTestCase extends DrupalWebTestCase {
 }
 
 class Drupali18nConfigTestCase extends Drupali18nTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Multilingual configuration',
       'group' => 'Internationalization',

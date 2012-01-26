@@ -7,7 +7,7 @@
 
 class i18nTaxonomyTestCase extends Drupali18nTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Taxonomy translation',
       'group' => 'Internationalization',

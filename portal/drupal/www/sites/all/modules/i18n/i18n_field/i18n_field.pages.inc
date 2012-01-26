@@ -8,15 +8,15 @@
  * 
  * We need to translate field and field instance.
  */
-function i18n_field_page_translate($instance, $langcode = NULL) {
+function i18n_field_page_translate($instance, $language = NULL) {
   module_load_include('inc', 'i18n_string', 'i18n_string.pages');
-  if (!$langcode) {
+  if (!$language) {
     // Overview page will be the regular one
     return i18n_string_translate_page_object('field_instance', $instance);
   }
   else {
-    drupal_set_title(t('Translate to @language', array('@language' => i18n_language_name($langcode))));
-    return drupal_get_form('i18n_field_page_translate_form', $instance, $langcode);
+    drupal_set_title(t('Translate to @language', array('@language' => i18n_language_name($language))));
+    return drupal_get_form('i18n_field_page_translate_form', $instance, $language->language);
   }
 }
 

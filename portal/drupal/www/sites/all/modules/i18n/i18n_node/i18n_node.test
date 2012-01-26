@@ -6,7 +6,7 @@
  */
 
 class I18nNodeTestCase extends Drupali18nTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Content translation',
       'group' => 'Internationalization',

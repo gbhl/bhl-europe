@@ -27,12 +27,35 @@
  */
 ?>  
 
+<?php
+  //  jandvorak - add class when slider delta is less than 100
+  $min_num = isset($_REQUEST['slider-filter']['min']) ? intval($_REQUEST['slider-filter']['min']) : '0';
+  $max_num = isset($_REQUEST['slider-filter']['max']) ? intval($_REQUEST['slider-filter']['max']) : '0';
+  $classes .= ( $max_num - $min_num <= 100 && $min_num>0 && $max_num>0) ? ' use-range' : '';
+?>
+
 <div class="<?php print $classes; ?>">
 
     <?php if ($exposed): ?>
       <div class="view-filters">
         <?php print $exposed; ?>
-        <div class="userange-button"><a href="#" title="<?php print t('Use the range'); ?>"> <?php print t('Use the range'); ?></a></div>
+
+        <div id="userange_button" class="userange-button">
+        <?php
+        
+          $min = isset($_REQUEST['slider-filter']['min']) ? $_REQUEST['slider-filter']['min'] : '_MIN_';
+          $max = isset($_REQUEST['slider-filter']['max']) ? $_REQUEST['slider-filter']['max'] : '_MAX_';
+          
+          // jandvorak - generate Use the range button link by slider request values
+          //$label = '[_MIN_ TO _MAX_]';
+          $label = '['.$min.' TO '.$max.']';
+          
+          $key = $label;
+          $params = array('query' => array('action' => 'addfacet', 'field' => 'mods_date_issued', 'key' => urlencode($key), 'source' => browse, 'last' => md5(time())));
+          print '' . l(t('Use the interval'), 'search/bhle/empty', $params) . '';
+        ?>  
+          <span class="disallow-button"><?php print t('Use the interval'); ?></span>
+        </div>   
       </div>   
       
     <?php endif; ?>

@@ -12,12 +12,11 @@ Poject homepage: http://drupal.org/project/piwik_reports
 
 Issues: http://drupal.org/project/issues/piwik_reports
 
+Sponsored by Relinc: http://www.relinc.it
+
 
 Installation
 ------------
-
- * This module depends on Piwik Web Analytics 
-   http://drupal.org/project/piwik
 
  * Copy the whole piwik_reports directory to your modules directory
    (e.g. DRUPAL_ROOT/sites/all/modules) and activate it in the modules page
@@ -31,13 +30,20 @@ Installation
 Documentation
 -------------
 
+Reports
 This modules allow to see some of the piwik reports directly in your Drupal
 site. Just follow the installation instructions and go to 
 admin/reports/piwik_reports.
 
+Multisite
+Piwik reports will show statistics of every site the token_auth has view
+permissions on piwik server. Administrators can limit access to only to some of
+the allowed sites.
 
-Wish list
------
+Block
+A piwik page report block is available for in page statistics.
 
-- multi site.
+Piwik Piwik Web Analytics
+Piwik Piwik Web Analytics (http://drupal.org/project/piwik) is not a dependency
+any more, but is still required to track your site.
 

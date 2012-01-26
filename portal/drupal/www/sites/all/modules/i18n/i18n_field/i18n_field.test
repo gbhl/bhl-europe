@@ -7,7 +7,7 @@
 
 class i18nFieldTestCase extends Drupali18nTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Field translation',
       'group' => 'Internationalization',

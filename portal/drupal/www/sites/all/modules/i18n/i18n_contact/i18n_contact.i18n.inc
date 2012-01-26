@@ -48,7 +48,7 @@ function i18n_contact_i18n_object_info() {
         'reply' => t('Auto-reply'),
       ),
       // Path to translate strings to every language.
-      'translate path' => 'admin/structure/contact/edit/%contact/translate/%language',
+      'translate path' => 'admin/structure/contact/edit/%contact/translate/%i18n_language',
     )
   );
   return $info;

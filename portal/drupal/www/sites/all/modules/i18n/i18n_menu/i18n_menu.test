@@ -5,7 +5,7 @@
  * Test case for multilingual menus.
  */
 class i18nMenuTestCase extends Drupali18nTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Menu translation',
       'group' => 'Internationalization',

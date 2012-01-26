@@ -1,106 +1,115 @@
 <?php
 
-/**   
+/**
  * @file
  *   Provides the page callback for user defined search pages.
- */ 
+ */
 
 /**
  * Returns search results on user defined search pages.
  */
-function apachesolr_search_user_defined_search_page($page_id, $keys = '') {
+function apachesolr_search_custom_page($page_id, $keys = '', $path_replacer = NULL) {
   $search_page = apachesolr_search_page_load($page_id);
+  if (empty($search_page)) {
+    drupal_set_message(t('This search page cannot be found'), 'error');
+    drupal_not_found();
+  }
+  // Add our replacement value in the conditions array
+  if (!empty($path_replacer)) {
+    $search_page->settings['apachesolr_search_path_replacer'] = $path_replacer;
+  }
+  // Replace dynamic path with current path
+  $search_page->search_path = str_replace('%', $path_replacer, $search_page->search_path);
+  // Retrieve the conditions that apply to this page
+  $conditions = apachesolr_search_conditions_default($search_page);
+  // Retrieve the results of the search
+  $results = apachesolr_search_search_results($keys, $conditions, $search_page);
+  // Initiate our build array
   $build = array();
-  $filters = isset($search_page->settings['fq']) ? $search_page->settings['fq'] : array();
-  $solrsort = isset($_GET['solrsort']) ? $_GET['solrsort'] : '';
-  // We may also have filters added by facet API module. The 'f'
-  // is determined by constant FacetapiAdapter::FILTER_KEY. Hard
-  // coded here to avoid extra class loading.
-  $conditions = array();
-  if (!empty($_GET['f']) && is_array($_GET['f'])) {
-    if (module_exists('facetapi')) {
-      $conditions['f'] = $_GET['f'];
-    }
-  }
-
-  $empty_search_behavior = $search_page->settings['apachesolr_search_browse'];
-
-  try {
-    $solr = apachesolr_get_solr($search_page->env_id);
+  // Add a custom search form if required
+  if (!empty($search_page->settings['apachesolr_search_search_box'])) {
     // Adds the search form to the page.
-    $build['search_form'] = drupal_get_form('apachesolr_search_user_defined_search_form', $search_page, $keys);
-
-    if (!$keys && empty($conditions) && ($empty_search_behavior == 'browse' || $empty_search_behavior == 'blocks')) {
-      // Pass empty search behavior as string on to apachesolr_search_search_page()
-      $results = apachesolr_search_run('apachesolr', array('fq' => $filters), '', $search_page->search_path, 0, $solr);
-      if ($empty_search_behavior == 'browse') {
-        // Hide sidebar blocks for content-area browsing instead.
-        apachesolr_suppress_blocks(TRUE);
-      }
-
-      $build['search_results'] = apachesolr_search_page_browse($empty_search_behavior);
-    }
-    elseif ($keys || !empty($conditions) || $empty_search_behavior == 'results') {
-      $results = apachesolr_search_run('apachesolr', array('q' => $keys, 'fq' => $filters), $solrsort, $search_page->search_path, pager_find_page(), $solr);
-      // Adds search results to the render array.
-      $build['search_results'] = array(
-        '#theme' => 'search_results',
-        '#results' => $results,
-        '#module' => 'apachesolr_search',
-      );
-    }
+    $build['search_form'] = drupal_get_form('apachesolr_search_custom_page_search_form', $search_page, $keys);
   }
-  catch (Exception $e) {
-    watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
-    apachesolr_failure(t('Solr search'), $keys);
-  }
-
-  return $build;
+  // Build our page and allow modification.
+  $build_results = apachesolr_search_search_page_custom($results, $search_page, $build);
+  return $build_results;
 }
 
 /**
  * Search for placed on user defined search pages.
  */
-function apachesolr_search_user_defined_search_form($form, &$form_state, $search_page, $keys = '') {
+function apachesolr_search_custom_page_search_form($form, &$form_state, $search_page, $keys = '') {
   // Loads the core Search CSS file, use the core search module's classes.
   drupal_add_css(drupal_get_path('module', 'search') . '/search.css');
+
+  $form = array();
   $form['#id'] = 'search-form';
   $form['#attributes']['class'][] = 'search-form';
-
   $form['#search_page'] = $search_page;
-
   $form['basic'] = array(
     '#type' => 'container',
     '#attributes' => array('class' => array('container-inline')),
   );
-
   $form['basic']['keys'] = array(
     '#type' => 'textfield',
-    '#title' => t('Enter terms'), 
+    '#title' => t('Enter terms'),
     '#default_value' => $keys,
     '#size' => 20,
     '#maxlength' => 255,
   );
-
   $form['basic']['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Search'),
   );
 
+  $apachesolr_has_searched = apachesolr_has_searched($search_page->env_id);
+  $query = apachesolr_current_query($search_page->env_id);
+
+  if ($apachesolr_has_searched) {
+    $query = apachesolr_current_query($search_page->env_id);
+    $searcher = $query->getSearcher();
+    // We use the presence of filter query params as a flag for the retain filters checkbox.
+    $fq = $query->getParam('fq');
+  }
+
+  if ($apachesolr_has_searched && ($response = apachesolr_static_response_cache($searcher))) {
+    $form['basic']['get'] = array(
+      '#type' => 'hidden',
+      '#default_value' => json_encode(array_diff_key($_GET, array('q' => 1, 'page' => 1, 'solrsort' => 1, 'retain-filters' => 1))),
+    );
+
+    if ($fq) {
+      $form['basic']['retain-filters'] = array(
+        '#type' => 'checkbox',
+        '#title' => t('Retain current filters'),
+        '#default_value' => (int) isset($_GET['retain-filters']),
+      );
+    }
+        }
   return $form;
 }
 
 /**
- * Processes apachesolr_search_user_defined_search_form submissions.
+ * Processes apachesolr_search_custom_page_search_form submissions.
  */
-function apachesolr_search_user_defined_search_form_submit(&$form, &$form_state) {
-  $page = $form['#search_page'];
-
-  $redirect = $page->search_path;
+function apachesolr_search_custom_page_search_form_submit(&$form, &$form_state) {
+  $search_page = $form['#search_page'];
+  $redirect = $search_page->search_path;
   if (strlen($form_state['values']['keys'])) {
     $redirect .= '/' . $form_state['values']['keys'];
   }
-
-  // Redirects to path set in configuration.
-  $form_state['redirect'] = $redirect;
+  if (isset($form_state['values']['get'])) {
+    $get = json_decode($form_state['values']['get'], TRUE);
+  }
+  if (!empty($form_state['values']['retain-filters'])) {
+    // Add our saved value
+    $get['retain-filters'] = '1';
+    // Add the query values into the redirect.
+    $form_state['redirect'] = array($redirect, array('query' => $get));
+  }
+  else {
+    // Redirects to path set in configuration.
+    $form_state['redirect'] = $redirect;
+  }
 }
