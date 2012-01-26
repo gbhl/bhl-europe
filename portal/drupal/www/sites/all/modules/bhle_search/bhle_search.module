@@ -62,7 +62,7 @@ function bhle_search_init() {
   // Initialize the session array (if necessary)
   if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditions'])) {
       $_SESSION['bhle_search'] = array(
-          'conditions' => array('term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0),   // Advanced search conditions
+          'conditions' => array(array('term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0)),   // Advanced search conditions
           'expand_search' => 0, // Enable search term expansion
           'exact_phrase' => 0, // Exact phrase matching
           'simple_search' => false, // Set to true when running simple search
@@ -253,7 +253,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'OR',
             '#attributes' => array(
                 'class' => array('operator-or' , 'edit-or'),
-                'tabindex' => (7*$id+3), 
+                'tabindex' => (7*$id+3),
             ),
         ),
 
@@ -404,7 +404,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         ),
         '#validate' => array(
             'bhle_search_advanced_add_validate'
-            
+
         ),
         '#attributes' => array('tabindex' => ($tabindex+8),),
     );
@@ -1195,7 +1195,7 @@ function bhle_search_preprocess_search_result(&$variables) {
     $variables['content_type'] = $variables['result']['content_type'];
     $variables['PID'] = $variables['result']['PID'];
     $variables['item_order'] = $variables['result']['item_order'];
-    
+
     foreach ($additional_classes as $class) {
         $variables['classes_array'][] = $class;
     }
