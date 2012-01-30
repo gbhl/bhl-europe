@@ -1,4 +1,5 @@
 h2.search-result-title{display:none;}
+/* .no-sidebars #results {display:none;} */
 
 #results-sort-box {
   float:right; padding:0px; margin-bottom:20px;

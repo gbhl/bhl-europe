@@ -183,12 +183,12 @@ function i18n_taxonomy_field_formatter_info() {
   );
 }
 
-/**
- * Implements hook_field_formatter_prepare_view().
- *
- * This preloads all taxonomy terms for multiple loaded objects at once and
- * unsets values for invalid terms that do not exist.
- */
+ /**
+- * Implements hook_field_formatter_prepare_view().
+- *
+- * This preloads all taxonomy terms for multiple loaded objects at once and
+- * unsets values for invalid terms that do not exist.
+- */
 function i18n_taxonomy_field_formatter_prepare_view($entity_type, $entities, $field, $instances, $langcode, &$items, $displays) {
   return taxonomy_field_formatter_prepare_view($entity_type, $entities, $field, $instances, $langcode, $items, $displays);
 }
@@ -272,9 +272,10 @@ function i18n_taxonomy_field_attach_view_alter(&$output, $context) {
 function i18n_taxonomy_field_info_alter(&$info) {
   // Change default formatter for term reference fields
   $info['taxonomy_term_reference']['default_formatter'] = 'i18n_taxonomy_term_reference_link';
-  // Change module for this field. Basically we take over this field and this means
-  // we need to implement a bunch of hooks for fields and options, including hook_field_schema()
-  $info['taxonomy_term_reference']['module'] = 'i18n_taxonomy';
+
+  // Translate field values.
+  $info['taxonomy_term_reference']['options_list_callback'] = 'i18n_taxonomy_allowed_values';
+
   // Sync callback for field translations
   $info['taxonomy_term_reference']['i18n_sync_callback'] = 'i18n_taxonomy_field_prepare_translation';
 }
@@ -287,16 +288,44 @@ function i18n_taxonomy_field_info_alter(&$info) {
  * @param array $field
  *   The field record just read from the database.
  */
-function i18n_taxonomy_field_storage_details_alter($details, &$field, $instance) {
+function i18n_taxonomy_field_storage_details_alter(&$details, &$field) {
   if ($field['type'] === 'taxonomy_term_reference') {
-    // We also take over existing taxonomy_term_reference fields.
-    $field['module'] = 'i18n_taxonomy';
+    $field['settings']['options_list_callback'] = 'i18n_taxonomy_allowed_values';
   }
 }
 
 /**
- * Implements hook_field_prepare_translation().
- * 
+ * Implements hook_field_attach_prepare_translation_alter().
+
+ * Prepare and synchronize translation for term reference fields.
+ */
+function i18n_taxonomy_field_attach_prepare_translation_alter(&$entity, $context) {
+  $entity_type = $context['entity_type'];
+  $source_entity = $context['source_entity'];
+  
+  $options = array(
+    'default' => FALSE,
+    'deleted' => FALSE,
+    'language' => NULL,
+  );
+
+  // Determine the list of instances to iterate on.
+  list(, , $bundle) = entity_extract_ids($entity_type, $source_entity);
+  $instances = _field_invoke_get_instances($entity_type, $bundle, $options);
+  if (!empty($instances)) {
+    foreach($instances as $field_info) {
+      $field = field_info_field($field_info['field_name']);
+      if ($field['type'] == 'taxonomy_term_reference' && isset($entity->{$field_info['field_name']})) {
+        // iterate over languages.
+        foreach($entity->{$field_info['field_name']} as $language => &$items) {
+          i18n_taxonomy_field_prepare_translation($entity_type, $entity, $field, $field_info, $entity->language, $items, $source_entity, $source_entity->language);
+        }
+      }
+    }
+  }
+}
+
+/**
  * Prepare and synchronize translation for term reference fields
  */
 function i18n_taxonomy_field_prepare_translation($entity_type, $entity, $field, $instance, $langcode, &$items, $source_entity, $source_langcode) {
@@ -308,73 +337,8 @@ function i18n_taxonomy_field_prepare_translation($entity_type, $entity, $field, 
         'tid' => $translation->tid
       );
     }
+    $field['settings']['options_list_callback'] = 'i18n_taxonomy_allowed_values';
   }
-}
-
-/**
- * Implements hook_field_is_empty().
- */
-function i18n_taxonomy_field_is_empty($item, $field) {
-  return taxonomy_field_is_empty($item, $field);
-}
-
-/**
- * Implements hook_field_widget_error().
- */
-function i18n_taxonomy_field_widget_error($element, $error, $form, &$form_state) {
-  form_error($element, $error['message']);
-}
-
-/**
- * Implements hook_field_widget_form().
- */
-function i18n_taxonomy_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
-  return taxonomy_field_widget_form($form, $form_state, $field, $instance, $langcode, $items, $delta, $element);
-}
-
-/**
- * Implements hook_field_settings_form().
- */
-function i18n_taxonomy_field_settings_form($field, $instance, $has_data) {
-  return taxonomy_field_settings_form($field, $instance, $has_data);
-}
-
-/**
- * Implements hook_field_validate().
- */
-function i18n_taxonomy_field_validate($entity_type, $entity, $field, $instance, $langcode, $items, &$errors) {
-  return taxonomy_field_validate($entity_type, $entity, $field, $instance, $langcode, $items, $errors);
-}
-
-/**
- * Implements hook_field_presave().
- *
- * Create any new terms defined in a freetagging vocabulary.
- */
-function i18n_taxonomy_field_presave($entity_type, $entity, $field, $instance, $langcode, &$items) {
-  return taxonomy_field_presave($entity_type, $entity, $field, $instance, $langcode, $items);
-}
-
-/**
- * Implements hook_field_insert().
- */
-function i18n_taxonomy_field_insert($entity_type, $entity, $field, $instance, $langcode, &$items) {
-  return taxonomy_field_insert($entity_type, $entity, $field, $instance, $langcode, $items);
-}
-
-/**
- * Implements hook_field_update().
- */
-function i18n_taxonomy_field_update($entity_type, $entity, $field, $instance, $langcode, &$items) {
-  return taxonomy_field_update($entity_type, $entity, $field, $instance, $langcode, $items);
-}
-
-/**
- * Implements hook_options_list().
- */
-function i18n_taxonomy_options_list($field) {
-  $function = !empty($field['settings']['options_list_callback']) ? $field['settings']['options_list_callback'] : 'i18n_taxonomy_allowed_values';
-  return $function($field);
 }
 
 /**
@@ -402,46 +366,36 @@ function i18n_taxonomy_allowed_values($field) {
 /**
  * Implements hook_i18n_translate_path()
  */
-function i18n_taxonomy_i18n_translate_path($path, $language) {
-  if ($translations = i18n_taxonomy_translate_path($path, array($language->language))) {
-    return reset($translations);
-  }
-}
-
-/**
- * Implements hook_language_switch_links_alter().
- *
- * Replaces links with pointers to translated versions of the content.
- */
-function i18n_taxonomy_language_switch_links_alter(array &$links, $type, $path) {
-  if ($translations = i18n_taxonomy_translate_path($path, array_keys($links))) { //or at a taxonomy-listing?
-    foreach ($translations as $langcode => $translated_path) {
-        $links[$langcode]['href'] = $translated_path;
+function i18n_taxonomy_i18n_translate_path($path) {
+  if (preg_match("/^(taxonomy\/term\/)([^\/]*)(.*)$/", $path, $matches)) {
+    $links = array();
+    // If single term, treat it differently
+    if (is_numeric($matches[2]) && !$matches[3]) {
+      $term = taxonomy_term_load($matches[2]);
+      if (!empty($term->i18n_tsid)) {
+        $set = i18n_translation_set_load($term->i18n_tsid);
+      }
     }
-  }
-}
-
-/**
- * Translate path to languages
- *
- * @param $path
- *   Path to translate
- * @param $languages
- *   Language codes
- */
-function i18n_taxonomy_translate_path($path, $languages) {
-  $cache = &drupal_static(__FUNCTION__);
-  if (preg_match("/^(taxonomy\/term\/)([^\/]*)(.*)$/", $path, $matches)) { //or at a taxonomy-listing?
-    $translations = array();
-    foreach ($languages as $langcode) {
-      if (isset($cache[$path][$langcode])) {
-        $translations[$langcode] = $cache[$path][$langcode];
+    foreach (language_list() as $langcode => $language) {
+      if ($term) {
+        if (!empty($set) && ($translation = $set->get_item($langcode))) {
+          $links[$langcode] = array(
+            'href' => 'taxonomy/term/' . $translation->tid,
+            'title' => $translation->name,
+          );
+        }
+        else {
+          $links[$langcode] = array(
+            'href' => $path,
+            'title' => i18n_taxonomy_term_name($term, $langcode),
+          );
+        }
       }
       elseif ($str_tids = i18n_taxonomy_translation_tids($matches[2], $langcode)) {
-        $translations[$langcode] = $cache[$path][$langcode] = "taxonomy/term/$str_tids". $matches[3];
+        $links[$langcode]['href'] = "taxonomy/term/$str_tids". $matches[3];
       }
     }
-    return $translations;
+    return $links;
   }
 }
 
@@ -1223,4 +1177,13 @@ function i18n_taxonomy_entity_info_alter(&$entity_info) {
  */
 function i18n_taxonomy_taxonomy_term_label($term, $entity_type) {
   return i18n_taxonomy_term_name($term, i18n_language()->language);
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function i18n_taxonomy_views_api() {
+  return array(
+    'api' => 3,
+  );
 }

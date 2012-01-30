@@ -29,7 +29,7 @@ function i18n_block_i18n_object_info() {
           'format' => 'format',
         ),
       ),
-      'translate path' => 'admin/structure/block/manage/%module/%delta/translate/%language',
+      'translate path' => 'admin/structure/block/manage/%module/%delta/translate/%i18n_language',
     )
   );
   return $info;

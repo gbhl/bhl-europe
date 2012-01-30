@@ -96,7 +96,7 @@ function i18n_taxonomy_i18n_string_objects($type) {
   if ($type == 'taxonomy_term') {
     $terms = array();
     foreach (taxonomy_get_vocabularies() as $vid => $vocabulary) { 
-      if ($vocabulary->i18n_mode & I18N_MODE_LOCALIZE) {
+      if (isset($vocabulary->i18n_mode) && $vocabulary->i18n_mode & I18N_MODE_LOCALIZE) {
         foreach (taxonomy_get_tree($vid, 0) as $term) {
           $terms[] = $term;
         }

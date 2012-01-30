@@ -14,7 +14,7 @@
 
 class i18nStringTestCase extends Drupali18nTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'String translation API',
       'group' => 'Internationalization',

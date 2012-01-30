@@ -6,7 +6,7 @@
 
 class i18nSyncTestCase extends Drupali18nTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Synchronize translations',
       'group' => 'Internationalization',
@@ -41,10 +41,10 @@ class i18nSyncTestCase extends Drupali18nTestCase {
     $source = $this->createNode('page', $this->randomName(), $this->randomString(20), language_default('language'), array('field_tags[und]' => $tag_name = $this->randomName()));
     $this->drupalGet('node/' . $source->nid . '/translate');
     $translations = $this->createNodeTranslationSet($source);
-    
+
     drupal_static_reset('translation_node_get_translations');
     $this->assertEqual(count(translation_node_get_translations($source->tnid)), $language_count, "Created $language_count $source->type translations.");
-    
+
     // Set up fields for synchronization: promoted, field_tags
     $this->drupalLogin($this->admin_user);
     $edit = array(
@@ -52,7 +52,7 @@ class i18nSyncTestCase extends Drupali18nTestCase {
       'i18n_sync_node_type[promote]' => 1,
       'i18n_sync_node_type[field_tags]' => 1,
     );
-    $this->drupalPost('admin/structure/types/manage/page', $edit, t('Save content type'));   
+    $this->drupalPost('admin/structure/types/manage/page', $edit, t('Save content type'));
     $this->drupalGet('admin/structure/types/manage/page');
     // Update source fields and check translations have been updated.
     $new_title = $this->randomName();

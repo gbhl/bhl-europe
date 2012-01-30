@@ -7,7 +7,7 @@
 
 class i18nVariableTestCase extends Drupali18nTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => 'Variable translation',
       'group' => 'Internationalization',
@@ -23,7 +23,7 @@ class i18nVariableTestCase extends Drupali18nTestCase {
   /**
    * Set up translation for content type (page)
    */
-  function setUpContentTranslation() {
+  function setUpContentTranslation($settings = array()) {
     $this->translator = $this->drupalCreateUser(array('create page content', 'edit own page content', 'translate content'));
     $this->drupalLogin($this->admin_user);
     // Set "Basic page" content type to use multilingual support with
@@ -44,7 +44,7 @@ class i18nVariableTestCase extends Drupali18nTestCase {
 
   function testVariableLocalize() {
     $this->setUpContentTranslation();
-    
+
     // Create 2 nodes in different languages.
     $first_title = $this->randomName(10);
     $first_body = $this->randomString(50);
@@ -59,30 +59,30 @@ class i18nVariableTestCase extends Drupali18nTestCase {
 
     $this->drupalGet('<front>', array('language' => i18n_language($this->secondary_language)));
     $this->assertText(t('No front page content has been created yet.'));
-    
+
     $edit = array(
       'variables[site_name]' => 1,
       'variables[site_frontpage]' => 1,
     );
     $this->drupalPost('admin/config/regional/i18n/variable', $edit, t('Save configuration'));
-    
+
     $edit_first = array(
       'site_frontpage' => 'node/' . $first_node->nid,
       'site_name' => $this->randomName(10),
     );
     $this->drupalPost('admin/config/system/site-information', $edit_first, t('Save configuration'), array('language' => i18n_language($this->default_language)));
-    
+
     $edit_secondary = array(
       'site_frontpage' => 'node/' . $secondary_node->nid,
       'site_name' => $this->randomName(10),
     );
     $this->drupalPost('admin/config/system/site-information', $edit_secondary, t('Save configuration'), array('language' => i18n_language($this->secondary_language)));
-    
+
     $this->drupalGet('<front>', array('language' => i18n_language($this->default_language)));
     $this->assertText($edit_first['site_name']);
     $this->assertNoText(t('No front page content has been created yet.'));
     $this->assertText($first_title);
-    
+
     $this->drupalGet('<front>', array('language' => i18n_language($this->secondary_language)));
     $this->assertText($edit_secondary['site_name']);
     $this->assertNoText(t('No front page content has been created yet.'));
