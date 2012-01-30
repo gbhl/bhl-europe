@@ -33,49 +33,48 @@ function substr_pos($myString,$pos1=0,$pos2=0)
   * RETURNS TRUE IF STRING CONTAINS THE NEEDLE, OR ALL NEEDLES IF THEY ARE AN ARRAY.
   * BE AWARE: IN ARRAY COMPARISION IT RETURNS TRUE IF "A PART" OF EACH OR ONE ELEMENT
   *
-  * @param string   $myString
-  * @param integer  $pos1
-  * @param integer  $pos2
+  * @param  string    $haystack
+  * @param  mixed     $needle
+  * @param  boolean   $ignoreCase
+  * @param  boolean   $oneMatchOnly
+  * @return boolean   true|false 
+  * @desc   IMPORTANT: ONEMATCHONLY MEANS THAT ONLY ONE NEEDLE (IF NEEDLE IS AN ARRAY) 
+  *         MUST BE FOUND TO RETURN TRUE.
   */
 function instr($haystack,$needle,$ignoreCase=false,$oneMatchOnly=false)
 {
-    // BEI ARRAY NEEDLE: KOMMEN WIRKLICH ALLE ELEMENTE IM NEEDLE ARRAY IN HAYSTACK VOR ?
+    
+    // 1. MULTIVERGLEICH STRING MIT ARRAY
     if (is_array($needle))
     {
-        $anz    = count($needle);
-
+        $anz = count($needle);
+        
         for ($i=0;$i<$anz;$i++)
         {
-            if (!$oneMatchOnly) // EVERY ITEM NECESSARY (PARTLY)
-            {
-                if ($ignoreCase) { if (!(instr(strtolower($haystack),strtolower($needle[$i])))) return false; }
-                else             { if (!(instr($haystack,$needle[$i]))) return false; }
-            }
-            else    // ONE PARTLY MATCH ENOUGH
-            {
-                if ($ignoreCase) { if (instr(strtolower($haystack),strtolower($needle[$i]))) return true; }
-                else             { if (instr($haystack,$needle[$i])) return true; }
-            }
+            // EVERY ITEM NECESSARY
+            if (!$oneMatchOnly) { 
+                if (!(instr($haystack,$needle[$i],$ignoreCase,$oneMatchOnly))) return false; }
+            
+            // ONE PARTLY MATCH ENOUGH
+            else { 
+                if ((instr($haystack,$needle[$i],$ignoreCase,$oneMatchOnly))) return true;   } 
         }
     }
-
-    if ($oneMatchOnly) return false;
-
-    // STANDARDVERGLEICH: IST NEEDLE IN HAYSTACK VORHANDEN ?
     else
     {
+        // 2. EINZELVERGLEICH STRING MIT STRING
+        
         if ( (strlen($haystack)>0) and (strlen($needle)>0) )
         {
             if ($ignoreCase)	$pos = stripos($haystack, $needle);
-            else				$pos =  strpos($haystack,$needle);
+            else		$pos = strpos($haystack, $needle);
 
             if ($pos === false)  return false;
+            else                 return true;
         }
-        else
+
         return false;
     }
-
-    return true;
 }
 
 

@@ -56,8 +56,8 @@ if (!_CLI_EXECUTION)
     if ((!isset($menu_nav))||($menu_nav==''))  $menu_nav = 'portal';
     
     // AUSGABE
+    if (!isset($noheader))
     include_once("inc/lay_header.php");
-
     
 }   // - no cli -
 
@@ -85,16 +85,17 @@ switch($menu_nav)
     case "get_images":
     case "get_ocr":
     case "get_taxons":
+    case "get_mets":
         include_once("inc/step_kernel.php");
         break;
 
-    case "job_prepare_ingest":
+ /*   case "job_prepare_ingest":
         include_once("inc/job_prepare_ingest.php");
         break;
 
     case "job_ingest_fedora":
         include_once("inc/job_ingest_fedora.php");
-        break;
+        break; */
 
     case "ingest_history":
         include_once('inc/ingest_history.php');
@@ -105,12 +106,12 @@ switch($menu_nav)
         break;
 
     case "show_user_dir":
-        echo "<h1 style='margin-top: 6px;'>Last Analyzed Upload Filestructure Elements <font size=-1> (from Management Database, not realtime, created by last Upload Analyze)<br>For realtime directory listings click on the folder icons in '<b>my Account</b>'.</font></h1>";
+        echo "<h1 style='margin-top: 6px;'>Last Analyzed Upload Filestructure Elements <font size=-1> (from Management Database, not realtime, created by last Upload Analyze)<br>For realtime directory listings click on the folder icons in '<b>my Preferences</b>'.</font></h1>";
         print_dir_arr(explode(_TRENNER,abfrage("select user_directory from users where user_id=".$user_id)));
         break;
     
     case "show_content_root":
-        echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (1st Level Overview)</font></h1>";
+        echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (1st level overview only)</font></h1>";
         print_dir_arr(getDirectory(_CONTENT_ROOT,array(),0,"",1));
         break;
 
@@ -142,13 +143,32 @@ switch($menu_nav)
         show_help_file(_ABS."docs/INSTALL.txt");
         break;
     
-    default: 
+    case "file_tree": 
+        // WIRD VON CONTEN_LIST UND AJAX AUFGERUFEN
+
+        if ((isset($start_root))&&($start_root!="/")) {
+            $root = urldecode($start_root);
+            $root = clean_path(_CONTENT_ROOT."/".str_replace(_CONTENT_ROOT,"",$root));
+        }
+        else echo _ERR."forbidden.";
+        
+        // FILE_TREE.PHP WIRD SPAETER VON LAY_FOOTER AUFGERUFEN
+
+        break;
+        
+    case "file_download":
+        include_once(_SHARED."file_download.php");
+        die();
+        break;
+
+    default:
         include_once("inc/portal.php");
-        break;    
+        break;
 }
 
 // *****************************************************
 
-if (!_CLI_EXECUTION)  include_once("inc/lay_footer.php");
+if (!_CLI_EXECUTION)
+        include_once("inc/lay_footer.php");
 
 ?>

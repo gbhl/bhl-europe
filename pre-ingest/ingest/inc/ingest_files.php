@@ -101,12 +101,16 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
 
    
     $nFiles = count($arrFiles);
+    
+    // CONTROL FILES ETC. ZUM IGNORIEREN
+    $arrCF = array(_FEDORA_CF_READY,_FEDORA_CF_FINISHED,_FEDORA_CF_RUNNING,
+        _AIP_OLEF_FN,_THUMB_BGRD,_THUMB_FN);
 
     for ($i = 0; $i < $nFiles; $i++) 
     { 
         $pos = strrpos($arrFiles[$i],".");
        
-        if ($pos!==false)
+        if (($pos!==false)&&(!in_array(basename($arrFiles[$i]),$arrCF)))
         {   
             $importantPart = substr($arrFiles[$i],$pos);
             

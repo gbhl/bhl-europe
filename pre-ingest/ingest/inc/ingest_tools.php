@@ -111,14 +111,15 @@ function queue_add($queueFile, $arrQueueCommands)
     $content2write = "";
     $linesAdded=0;
     $nBytes=0;
-    
+
     $nCommands = count($arrQueueCommands);
-    
+
     if ($nCommands>0)
     {
         for ($i=0;$i<$nCommands;$i++)
         {
-            if (!file_line_exists($queueFile,$arrQueueCommands[$i]))
+            // ONLY ADD COMMAND IF NOT EXISTING
+            if (!file_content_exists($queueFile,$arrQueueCommands[$i],true,true))
             {
                 $content2write .= $arrQueueCommands[$i]."\n";
                 $linesAdded++;
@@ -132,9 +133,84 @@ function queue_add($queueFile, $arrQueueCommands)
         else            return _ERR." Queueing failed or commands already queued!";
     }
     
-    return _ERR." Nothing to queue!";
+    return "Info: Nothing queued.";
 }
 
+
+
+// *****************************************
+function close_ingest_popup($button_text="")
+// *****************************************
+// BUTTON CLOSES CURRENT POPUP AND RE-LOADS INGEST_LIST
+{
+   button($button_text,"if (opener.document) { opener.document.body.focus(); opener.document.location.href='"._SYSTEM."?menu_nav=ingest_list'; } window.close();",900,-1);
+}
+
+
+
+// ***********************************
+function getReverseLookupURL($absPath)
+// ***********************************
+{
+    $retVal = str_replace(_CONTENT_ROOT,"",$absPath);
+
+    $retVal = _REVERSE_LOOKUP_URL.$retVal;
+
+    return $retVal;
+}
+
+
+// *****************************
+function getOCRlang($content_id)
+// *****************************
+{
+    // SET $tesseractMappings/_TESSERACT_DEAULT_LANG
+    include(_ABS."config/tesseract_config.php");    // x-times not once
+    
+    $olefLang = "";
+    $retLang  = _TESSERACT_DEAULT_LANG;
+    
+    // LOAD OLEF TO DOM
+    $domDoc   = new DOMDocument();
+    $domDoc->load(_OLEF_FILE);
+
+    // SEARCH FOR mods:languageTerm
+    $allElements = $domDoc->getElementsByTagName('*');
+    
+    // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
+    foreach( $allElements as $curElement )
+    {
+      // $nodeAttributes = $curElement->attributes;
+         $nodeName = trim($curElement->nodeName);
+         
+         if ($nodeName=="mods:language")
+         {
+             $olefLang = strtolower(trim($curElement->nodeValue));
+             break;
+         }
+    }
+    
+    // IF NOT CLEAR USE: _TESSERACT_DEAULT_LANG
+    if ($olefLang=="")  return _TESSERACT_DEAULT_LANG;
+    else
+    {
+        $nMappings = count($tesseractMappings);
+        
+        // GET KEY OF LANGUAGE WHICH IS DIRECTLY THE TESSERACT LANG ABREVIATION
+        $searchfor = ",".$olefLang.",";
+        
+        $ret = preg_grep("/{$searchfor}/", $tesseractMappings );
+
+        list($key,$val) = each($ret);
+        
+        // NUR VERWENDEN WENN TRAINEDDATA EXISTIERT
+        if (($key!="")&&(file_exists(_OCR_DAT.$key.".traineddata")))  return $key;
+    }
+    
+    echo "Taking default OCR language (".$retLang.") ...\n";
+    
+    return $retLang;
+}
 
 
 ?>

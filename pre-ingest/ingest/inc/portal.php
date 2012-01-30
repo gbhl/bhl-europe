@@ -76,7 +76,7 @@
 
 		<br>
 		<h1>Member Login</h2>
-                <form method="post" action="index.php" style="margin: 0px 0px 0px 0px;">
+                <form  name="frm_login" method="post" action="index.php" style="margin: 0px 0px 0px 0px;">
                 <input type="hidden"   name="menu_nav"  value="ingest_list">
 		<input type="text"     name="user_name" size=30><br>
 		<input type="password" name="user_pwd"  size=30 style="margin-top: 2px;"><br>

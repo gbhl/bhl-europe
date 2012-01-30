@@ -157,9 +157,20 @@ if ($sub_action=="save_ingest_settings")
 
                 mysql_select($query,$db);
          }
+         
+         if (instr($arrKeys[$i],"content_ipr"))
+         {
+                $curContentID  = substr($arrKeys[$i],strrpos($arrKeys[$i],"_")+1);
+                $curContentIPR = $_POST[$arrKeys[$i]];
+
+                $query = "update content set content_ipr='".
+                        mysql_clean_string($curContentIPR)."' where content_id=".$curContentID;
+
+                mysql_select($query,$db);
+         }
     }
     
-    // SPEICHERN DER CONTENT TYPS UND INGEST STATUS !!! hier
+    // !!! SPEICHERN DER CONTENT TYPS UND INGEST STATUS EVTL. HIER
     
 }
 
@@ -184,6 +195,19 @@ if ($sub_action == "drop_content")
 
         unset($content_id);
     }
+}
+
+
+// RESET INGEST TO NOT INGESTED VIA DELETE OF CONTROLFILES
+if($sub_action=="reset_ingest")
+{
+    
+    @unlink(clean_path($destDir."/")._FEDORA_CF_FINISHED);
+    @unlink(clean_path($destDir."/")._FEDORA_CF_READY);
+    
+    // !!! ALLE NICHT OLEF XML AUCH LOESCHEN HIER
+    
+    $endmsg .= "Selected content no longer marked as -ingest ready- and no longer marked as -ingested-.";
 }
 
 

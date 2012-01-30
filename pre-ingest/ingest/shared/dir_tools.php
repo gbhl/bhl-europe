@@ -19,7 +19,7 @@ function getDirectory( $path = '.', $arrContents=array(),$level = 0,
 
     // TRIM LAST SLASH
     if (substr($path,(strlen($path)-1),1)=="/") $path = substr($path,0,strlen($path)-1);
-            
+
     if (is_readable($path))
     {
         $dh = opendir( $path );
@@ -28,7 +28,7 @@ function getDirectory( $path = '.', $arrContents=array(),$level = 0,
         {
             if( !in_array( $file, $ignore ) )       // Check that this file is not to be ignored
             {
-                $cur_abs = str_replace('//','',$path."/".$file );   // !!! correct ?
+                $cur_abs = str_replace('//','',$path."/".$file );
                         
                 // 1. ** DIRECTORY **
                 if (( is_dir($cur_abs ))&&($max_levels>=$level+1))

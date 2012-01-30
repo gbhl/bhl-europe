@@ -7,6 +7,9 @@
 
 // INGEST TO FEDORA
 
+// ALLE INGEST DETAILS ZUM CONTENT
+
+$arrIngestDetails = get_ingest_details("",$content_id);    
 
 
 // icon($image, $alt, $action, $width, $height, $echo, $img_map, $id)

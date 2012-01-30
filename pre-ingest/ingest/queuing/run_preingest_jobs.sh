@@ -23,6 +23,9 @@ rootDir="/var/www/ingest"
 # _WORK_DIR (CONFIG.PHP)
 sourceDir="$rootDir/temp/"
 
+# LOG
+logDest="$rootDir/log/log_$now.log"
+
 execDir="$rootDir/queuing/running/preparation_$now/"
 archDir="$rootDir/queuing/archive/"
 
@@ -37,14 +40,19 @@ mkdir $execDir
 find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
 
 
+# **********************************
 # INVOKE SCRIPTS IN CURRENT $execDir
-
-find $execDir -maxdepth 1 -name '*.sh' -type f -exec sh {} ';'
+# **********************************
+find $execDir -maxdepth 1 -name '*.sh' -type f -exec sh {} ';' > $logDest
 
 
 # ARCHIVE & CLEANUP
 
 find $execDir -maxdepth 1 -name '*.sh' -type f -exec mv {} $archDir ';'
+
+# CLEAN EMPTY (30MIN) LOGS
+
+find $rootDir/log/ -name '*.log' -type f -size 0 -exec rm -f {} ';'
 
 # ETWAIGE ARTEFAKTE DROPPEN
 

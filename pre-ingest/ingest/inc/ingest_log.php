@@ -6,9 +6,26 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
+include_once(_SHARED . "formlib.php");
 
-echo "<h2>Ingest Log of <font color=maroon> ".$user_name." </font></h2>";
 
+?>
+
+<style>
+    
+body { margin: 10px 10px 10px 10px; }
+
+</style>
+
+<?php
+
+echo "<h2>Ingest Logs of <font color=maroon> ".$user_name." </font></h2>";
+
+nl();
+
+echo "<a href='"._HOME."log/'>View current archived queue logs ...</a>"; 
+
+nl(2);
 
 $query = "select l.log_time, l.log_text 
     from ingest_log l, ingests i, content c 
@@ -39,7 +56,15 @@ if ($nrows>0)
     echo "</pre>";
 }
 
-else echo "My Ingest Log is currently empty.";
+else echo "My Ingest database logs are currently empty.";
+
+
+nl(2);
+
+
+close_ingest_popup("CLOSE here to auto refresh your management list behind ...");
+
+
 
 
 ?>

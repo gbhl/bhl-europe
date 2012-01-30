@@ -1,6 +1,44 @@
 
 
-// !!! FILE CHECK IN ALLEN SO EINBAUEN !!!
+
+// $node = $domDoc->createElement("itemInformation","");
+// $node->setAttribute("type", "use and reproduction");
+// $bis = $domDoc->getElementsByTagName("bibliographicInformation");
+
+
+// $thumbURL = _REVERSE_LOOKUP_URL.clean_path($arrProvider['user_content_home']."/".$line[5]."/"._AIP_DIR."/".basename($thumbIMG));
+// CONTENT NAME IST PFAD OHNE _CONTENT_ROOT BIS RUNTER ZUM MEDIUM UND DAMIT RICHTIG
+// $myPath = clean_path($arrProvider['user_content_home']."/".$contentName."/".basename($arrPagesTextFiles[$i]));
+// echo $retVal;
+
+
+
+// composite -compose atop -geometry +10+10 photo.jpeg frame.jpg photo_frame.jpg
+// -mattecolor SkyBlue -frame 6x6+2+2  -floodfill +3+3  #ffffff -opaque  #ffffff -frame 2 -geometry +4+4 -background #ffffff  -bordercolor LimeGreen -border 0
+// -matte -virtual-pixel transparent -distort Perspective '0,0,0,0  0,90,0,90  90,0,90,25  90,90,90,65' checks_pers.png
+// $myCmd = str_replace("convert","composite",_IMG_MAGICK_CONVERT) . " -compose atop -geometry +10+10 ".$thumbIMG." "._USR_ABS."thumb_frame_72_82.png ".$thumbIMG." ";
+// thumb_frame_70_49.png
+// $myCmd = _IMG_MAGICK_CONVERT . " ".$thumbIMG." -matte -distort Perspective '0,0,0,0  0,90,0,90  90,0,90,25  90,90,90,65' ".str_replace(".png","s.png",$thumbIMG)." ";
+// http://www.imagemagick.org/Usage/distorts/
+
+// echo $myCmd;        
+// thumb_frame_72_82.png
+
+
+/*
+ * 
+button("Reload & Analyze My Current Uploads",
+        ,990,32,'center'); 
+nl();
+button("Refresh",,200,32,'center'); 
+button("View My Analyzed Uploads",
+       ,200,32,'center');
+button("View My Ingest Log",
+        ,200,32,'center');
+button("Save My Changes","submit",390,32,'center');
+
+*/
+
 
 
 // $arrPagesTextFiles = getContentFiles($contentDir,''".txt");

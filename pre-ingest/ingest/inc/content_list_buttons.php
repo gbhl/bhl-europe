@@ -7,11 +7,6 @@
 // ********************************************
 // GUI WORKSTEPS
 
-
-// !!! HIER EINSCHALTEN ALLER TASKS FUER DEN ZU ERSTELLENDEN JOB!!!!
-// !!! BUTTON CSS UEBERARBEITEN WIE IN PROVIDER DETAILS ABER ABGERUNDET ETC.
-
-
 /* CONTENT_LAST_SUCC_STEP
  * 
  * 0 ... no step
@@ -85,29 +80,91 @@ else
     icon("taxon0.png",              "Taxonometric Information already present.",$command); 
 
 
-// FORMAT SPECS (5)
-
-// GLOBAL UNIQUE ID (6)
+// FORMAT SPECS (5) - MEDIA ATTRIBUTES
 
 
 
-// INGEST (9)
-$command = "onClick=\"javascript: popup_win('in','"._SYSTEM."?menu_nav=ingest&content_id=".$line[0]."',1000,500);\"";
+// METS INGEST CONTROL FILES
 
-if ($line[10]<4)   // !!! CHANGE THAT TO 6 IF 5+6 ARE NECESSARY
-    icon("planning00.png",             "Media not ready for Ingest!");
-else if ($line[10]==3)    
-    icon("planning.png",               "Ingest Media now...",$command); 
-else 
-    icon("planning0.png",              "Media is already ingested.",$command); 
+$command = "onClick=\"javascript: popup_win('in','"._SYSTEM."?menu_nav=get_mets&content_id=".$line[0]."',1000,500);\"";
 
+if (!isset($endJS)) $endJS = "";
+
+
+// CHECK INGEST STATUS OF CURRENT CONTENT VIA FILESYSTEM
+if ((file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_FINISHED))||
+    (file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY)))
+{
+    $line[10]=5;    // NUR TEMP. AUF 5 SETZEN
+    
+    echo "<div id=\"dialog_".$line[0]."\" title=\""._APP_NAME." - Ingest \">
+        <br><ul>
+        <li><u><a href='#' ".$command.">Regenerate ingest package (OLEF mods, page METS)...</a></u></li><br>
+	<li><u><a href='"._FEDORA_ADMIN_GUI."' target=_blank>Show Ingest Log on Fedora...</a></u></li><br>
+        <li><u><a href='"._SYSTEM."?menu_nav=ingest_list&sub_action=reset_ingest&content_id=".$line[0]."' target=_blank>Reset AIP to status \"not ingested\" and remove flag \"ready for ingest\"...</a></u><br>
+        <font size=1>Enables you to re-prepare steps and/or re-ingest...</font></li><br>
+        </ul>
+        </div>";    
+
+$endJS .= "
+
+jQuery.noConflict();
+
+(function($) 
+{
+    $( \"#dialog_".$line[0]."\" ).dialog({  autoOpen: false, width: 600, height: 320, draggable:true, modal: false,  buttons: { \"Close\": function() { $(this).dialog(\"close\"); } }   });
+    
+    $('#ingestButton_".$line[0]."').click(function() 
+    {
+        $( \"#dialog_".$line[0]."\" ).dialog('open');
+    });
+
+})(jQuery);
+
+";
+  
+} // NUR FALLS INGEST FINISHED
+
+
+if ($line[10]<4)
+    icon("planning00.png",             "Media not ready for release!");
+else if (($line[10]==4)&&(!file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY)))
+    icon("planning.png",               "Check & Release Media now...",$command); 
+else { 
+      icon("planning0.png",
+              "Media was already released and ingested see Fedora logs.",
+              "onClick=\"\"","","",true,false,"ingestButton_".$line[0]);
+     }
 
 
 // DROP INGEST
 
-lz(2);
+lz(1);
+icon("sep.png");
+lz(1);
+
 icon("failed_30.png",   "Drop Content from Content Management (not Filesystem). Drop if ingested correctly or to re-analyze/prepare.",
         "onClick=\"nachfrage('Drop selected Content Element from Management?','"._SYSTEM."?menu_nav=".$menu_nav."&sub_action=drop_content&content_id=".$line[0]."');\"");
 
+
+// VISIBLE STATUS UPDATES (GUI ONLY)
+
+if (file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_FINISHED))
+{
+    $endJS .= "
+        
+    document.forms.form_ingest_manager.content_status_".$line[0].".options[3].selected = true;
+
+ ";
+
+}
+else if (file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY))
+{
+        $endJS .= "
+        
+    document.forms.form_ingest_manager.content_status_".$line[0].".options[2].selected = true;
+
+ ";
+}
 
 ?>
