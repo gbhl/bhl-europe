@@ -19,12 +19,17 @@ include_once(_SHARED."pdf_tools.php");
 $relativePDF = basename($sourcePDF);
 $nPages      = getNumPagesInPDF(array($sourcePDF));
 
-echo "<h3>Try to extract text from ".$nPages." pages in " . $relativePDF . "</h3><pre>";
+echo "<h3>Try to extract text from ".$nPages." pages in " . $relativePDF . 
+        " <font size=-2>(1 Step Operation, please be patient...</font></h3><pre>";
 
 // EINZELNE PAGES EXTRAHIEREN AUS DEM PDF
 for ($i=1;$i<=$nPages;$i++)
 {
     ob_start();
+    
+    // http://foolabs.com/xpdf/about.html
+    // http://foolabs.com/xpdf/download.html
+    // http://linux.die.net/man/1/pdftotext
     
     $myCmd = str_replace("SSSS",$sourcePDF,_PDFTOTEXT);
     
@@ -60,7 +65,7 @@ for ($i=1;$i<=$nPages;$i++)
     @flush();
 }
 
-echo "</pre>";
+echo "\n\n</pre>\n";
 
 
 ?>

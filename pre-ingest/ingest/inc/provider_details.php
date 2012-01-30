@@ -20,7 +20,8 @@ hidden("menu_nav",$menu_nav);
 hidden("sub_action","save_cp_details");
 
 echo "<table cellspacing=3 cellpadding=3 width=650 border=1 style='font: 12px verdana; color: #1A3B72; background-color: #E4EBF7;'>";
-echo "<tr><th colspan=2 style=\"height: 33px; \">My Account Configuration"._TR;
+echo "<tr><th colspan=2 style=\"height: 33px; \">".
+        icon("preferences.png","","","","",false)." my Preferences"._TR;
 
 echo "<li>My Username"._TD."<b>".$arrProvider['user_name']."</b>";  
 if ($arrProvider['is_admin']=='1') echo " (Admin)";    
@@ -36,8 +37,7 @@ echo "<a href='#' onClick=\"popup_win('ih','"._SYSTEM."?menu_nav=ingest_history&
 icon("history_21.gif"," ingest history ...[click for details]"); echo " Ingest History</a>";
 
 lz(3);
-echo checkbox("queue_mode",$arrProvider['queue_mode'].$extraTag,"Queue Mode","","before","",false)." <sup>*queued time shifted processing</sup>"._TR;
-// checkbox($variable, $checked, $title, $js_action, $text_position, $tabindex, $echome, $value)
+echo checkbox("queue_mode",$arrProvider['queue_mode'].$extraTag,"<b>Queue Mode</b>","","before","",false)." <sup>*queued time shifted processing</sup>"._TR;
 
 // CONTENT HOME
 echo "Content Home"._TD;        textfeld("user_content_home ".$extraTag,$arrProvider['user_content_home'],55);
@@ -96,7 +96,7 @@ icon("folder_16.png","Explore this Directory.","onClick=\"javascript: popup_win(
 echo _TR."Metadata Webservice"._TD;  
 textfeld("metadata_ws ".$extraTag,$arrProvider['metadata_ws'],62,900);
 lz();
-icon("exclam_16.png","Preferred setting, overrules local files.");
+icon("exclam_16.png","Preferred setting. If set webservice is used before local file.");
 
 
 

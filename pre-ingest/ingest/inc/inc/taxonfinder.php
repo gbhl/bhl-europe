@@ -6,6 +6,34 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
+/* 
+  http://www.ubio.org/index.php?pagename=services_overview');
+
+Recommened:
+ * http://www.ubio.org/index.php?pagename=services_overview
+ * 
+ * http://www.ubio.org/index.php?pagename=xml_services
+ * 
+ * http://www.ubio.org/index.php?pagename=soap_methods/taxonFinder
+ * 
+ * test:
+ * http://www.ubio.org/tools/Small.txt
+ * http://www.ubio.org/webservices/service.php?function=taxonFinder&includeLinks=0&url=http://www.ubio.org/tools/Small.txt
+ * http://www.ubio.org/tools/recognize.php
+ * http://www.ubio.org/portal/index.php
+ * 
+ * Saccharum alopecuroides subvar. angustifolium (Nees) Roberty
+Acacia angustissima (P. Mill.) Kuntze var. cuspidata (Schlecht.) L. Benson
+Selaginella riddellii van Eselt. 
+ * 
+ * old:
+ * http://www.ubio.org/index.php?pagename=services_methods2
+ * 
+ * other
+ * http://www.ncbi.nlm.nih.gov/pmc/articles/PMC555944/
+ * 
+ * 
+ */
 
 // TEXTFILES ERMITTELN (IN UPLOAD ODER .AIP)
 $arrPagesTextFiles = getContentFiles($contentDir,'ocrdata',true);
@@ -13,18 +41,17 @@ $nTextFiles = count($arrPagesTextFiles);
 
 $resource_context = stream_context_create(array(
     'http' => array(
-        'timeout' => _TAXON_WEB_TIMEOUT
+        'timeout' => _WEBSERVICE_TIMEOUT
     )
         )
 );
 
 if ($nTextFiles==0) die(_ERR."No page text/OCR files found in upload or "._AIP_DIR." directory!");
 
-echo "<h3>Try to get taxons for ".$nTextFiles." text files.</h3>";
+echo "<h3>Try to get taxons for ".$nTextFiles." text files.</h3><pre>";
+
 
 // FUER ALLE TEXTFILES TAXON WEBSERVICE AUFRUFEN
-echo "<pre>";
-
 for ($i = 0; $i < $nTextFiles; $i++) 
 {
     ob_start();
@@ -33,23 +60,14 @@ for ($i = 0; $i < $nTextFiles; $i++)
     $outputFile = substr(basename($arrPagesTextFiles[$i]), 0, strrpos(basename($arrPagesTextFiles[$i]), '.'));
     
     // DARF KEIN .TXT IN SICH TRAGEN
-    $outputFile = clean_path($destDir . $outputFile . ".tax");
+    $outputFile = clean_path($destDir . $outputFile . _TAXON_EXT);
 
-    $inputFileSelfReferenceHTTPpath = _HOME . "" . $arrPagesTextFiles[$i];
-
-    $myURL = _TAXON_FINDER . _REVERSE_LOOKUP_URL;
-
-    // CONTENT NAME IST PFAD OHNE _CONTENT_ROOT BIS RUNTER ZUM MEDIUM UND DAMIT RICHTIG
-    $myPath = clean_path($arrProvider['user_content_home']."/".$contentName."/".basename($arrPagesTextFiles[$i]));
-    
-    $myURL .= $myPath;
-   
+    $myURL = _TAXON_FINDER . getReverseLookupURL($arrPagesTextFiles[$i]);
+  
     if (!_QUEUE_MODE)
     {
-        echo "Try to analyze " . basename($arrPagesTextFiles[$i]) . " ... ";
-        
-        // echo $myURL . "\n";
-        
+        echo "Try to analyze " . basename($arrPagesTextFiles[$i]) . " ...\n".$myURL."\n";
+       
         // TAXONFINDING
         $strXMLTaxons = file_get_contents($myURL, 0, $resource_context);
         $nBytes = false;
@@ -65,6 +83,8 @@ for ($i = 0; $i < $nTextFiles; $i++)
             }
             else    echo "No taxons returned or connection error.\n";
         }
+        
+        echo "\n";
     }
     else
     {
@@ -81,7 +101,7 @@ for ($i = 0; $i < $nTextFiles; $i++)
     @flush();
 }
 
-echo "</pre>";
+echo "\n\n</pre>\n";
 
 
 ?>

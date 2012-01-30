@@ -1,407 +1,141 @@
+********************
+       TODO
+********************
+
+
+problem der extrem langen listungen am produktionssytem - abbruch?
+
+korrektur fuer olef embedding
+
+<?php 
+$next_elem = $doc->createDocumentFragment(); 
+$next_elem->appendXML($row['text']); 
+$section_elem->appendChild($next_elem); 
+?> 
+
+
+ gefundenen wissensch. namen - index in olef abgelegt 
+(olef info: http://www.bhl-europe.eu/bhl-schema/v0.3/)
+
+ingest ocr results to page object ?
+
+tag <pid> -> guid aus mit  in book item
+
+page item guid _sequence# nicht page# 
+
+rels_ext_rdf format relation zu buch
+is member of guid (stellt beziehung her)
+
+inline im mets
+
+rels_ext_rdf_format 
+(mailingliste)
 
 
 
-> Hallo Andreas,
-> 
-> ich habe mich jetzt mit dem Tool gespielt - dabei sind mir gleich einige
-> Dinge aufgefallen:
-> 
-> - .mrc/.MRC Dateien sollten per Default als Metadaten-Files erkannt
-> werden (habe ich jetzt händisch nachgearbeitet)
--konfigurationssache: erledigt
+********************
+       TESTS
+********************
 
-> - Der Cron-Job hat nicht funktioniert, da der "temp" Pfad keinen
-> Trailing-Slash hatte
+ein pdf durchspielen - ppm darf nicht in tiff pages landen
 
-- ?? trailing slash welche variable meinst du genau (im bash script
-oder im php code)?
+ein buch durchspielen mit vorg. tifs
 
+schauen ob ppm in datenbank landen content_page_tifs
 
-> - Erzeugte Files befinden sich nach wie vor im Haupt-Verzeichnis und
-> nicht im .aip Verzeichnis
+********************
+       BUGS
+********************
 
-versions-bug: gefixt
-
-> - In der "Reload & Analyze My Current Uploads" Ansicht wird beim letzten
-> Eintrag die Anzahl der Seiten nicht ausgegeben
-> - In der Übersicht werden die Pages als "n.a." angezeigt
-
-bug: fixing planned 
-> - Der "Content Type" ist weiterhin auswählbar (Übersicht)
-bug: fixing planned 
 > - Der "Ingest Status" wird nicht aktualisiert (Übersicht)
 bug: fixing planned 
-> - Der letzte Schritt (Ingest) wird automatisch ausgelöst (bzw. ausgegraut)
 
+> - Der letzte Schritt (Ingest) wird automatisch ausgelöst (bzw. ausgegraut)
 automatisch ausgelöst - erklärung bitte?
 
-> - Beim Cleanup werden erzeugte Files nicht wieder gelöscht (z.B. .tax
-> Files)
-
--> es wird datenbankseitig aufgeräumt und das queue file gelöscht ...
-alles zu löschen ist eine feature request - bitte überdenken und dann
- diesen bestätigen oder nicht
-
-
-> Und der wichtigste Punkte:
-> - Es wird nach wie vor KEIN METS File generiert. Das war der wichtigste
-> Punkt, welcher bist Gestern zu erledigen war. Habe ich hier etwas
-> übersehen oder warum gibt es noch kein METS File?
-
-erzeugung erst beim letzten schritt wenn alles validiert werden konnte
-
-
-> Und ein Bug ist mir auch noch aufgefallen:
-> - Wenn man in der Übersicht einen Eintrag löscht (über das rote 'X'),
-> danach auf "Reload & Analyze My Current Uploads" geht, den soeben
-> gelöschten Eintrag auswählt und über "save your current selection"
-> abspeichert, danach auf "CLOSE here & refresh your management list"
-> klick, dann wird die Übersicht zwar neu geladen, aber der Eintrag
-> (scheinbar) gleich wieder gelöscht.
-
-bug: fixing planned
-
-
-
-
-
-// !!! file check in allen so einbauen !!! wie bei taxonfinder.php
-
-
-die steps jeweils zu 1 file zusammenfassen im inc/inc verz. direkt von stop_kernel aufgerufen
-
-
-beschreibung
-
-
-
-spices_prepared/darw....
-!!! content name muss pfad ohne content_root bis runter sein falls über mehrere verzeichnisse
 
 // http://tomdancer.com/setting-a-timeout-on-file_get_contents-for-urls/
 
 
+
 ********************
-PRODUKTION
+     PRODUKTION
 ONLINE EINSTELLUNGEN
 ********************
 
-content home - testdata
-
-take Darwins_Origin
-
-
-
-
-
-olef erweiterungen ?
-
-
 rename('/path1/old_filename', '/path2/new_filename');
 
-
-
-/*
- * to point to your tessdata directory (example: if your tessdata path is '/usr/local/share/tessdata' you have to use 'export=TESSDATA_PREFIX='/usr/local/share/'). The command line for running tesseract is:
-
-tesseract <image> <outputbasename> [-l lang] [configs]
- * 
- * 
- * http://code.google.com/p/tesseract-ocr/wiki/ReadMe
- * 
-*/
-
-// tesseract <image.tif> <output> [-l <langid>]
-
-
+to point to your tessdata directory (example: if your tessdata path is '/usr/local/share/tessdata' you have to use 'export=TESSDATA_PREFIX='/usr/local/share/'). The command line for running tesseract is:
 
 http://php.net/manual/de/features.connection-handling.php
 
 
 
-// schema mapping tool
+****
+OLEF
+****
 
+// schema 
+http://www.bhl-europe.eu/bhl-schema/v0.3/
+
+// schema mapping tool
 https://bhl.wikispaces.com/Content+_Management
 
 
 
-// ---- MAIN CONFIG ----
-define("_ABS_PATH",             "G:\dev\nhm\bhl\ingest\htdocs");
+***********
+*** GIT ***
+***********
+
+web: https <pfad> kopieren
+
+cmd: git clone <pfad>
+
+password -> leer
+
+-> merge mit akt. stand
+-> git add . (im root v. kopie)
+// git add --help
+git commit
+
+git push
+
+------------
 
 
-
-// ---- IMAGE MANIPULATION SPECIFIC ----
-
-// http://www.imagemagick.org/script/formats.php
-
-
-
-
-// ---- PDF 2 TXT SPECIFIC ----
-
-// http://foolabs.com/xpdf/about.html
-// http://foolabs.com/xpdf/download.html
-// http://linux.die.net/man/1/pdftotext
-
-"G:\dev\nhm\bhl\ingest\bin\pdf2txt\pdf2txt.exe");
-
-
-
-
-// ---- OCR SPECIFIC ----
-'G:\dev\nhm\bhl\ingest\bin\tesseract\tesseract.exe');
-
-'http://code.google.com/p/tesseract-ocr/');
-
-'http://code.google.com/p/tesseract-ocr/downloads/list');
-
-
-
-// ---- TAXON SPECIFIC (UBIO) ----
-
-  'http://www.ubio.org/index.php?pagename=services_overview');
-
-/* Recommened:
- * http://www.ubio.org/index.php?pagename=services_overview
- * 
- * http://www.ubio.org/index.php?pagename=xml_services !!!!
-  * 
- * http://www.ubio.org/index.php?pagename=soap_methods/taxonFinder
- * 
- * test:
- * http://www.ubio.org/tools/Small.txt
- * http://www.ubio.org/webservices/service.php?function=taxonFinder&includeLinks=0&url=http://www.ubio.org/tools/Small.txt
- * http://www.ubio.org/tools/recognize.php
- * http://www.ubio.org/portal/index.php
- * 
- * Saccharum alopecuroides subvar. angustifolium (Nees) Roberty
-Acacia angustissima (P. Mill.) Kuntze var. cuspidata (Schlecht.) L. Benson
-Selaginella riddellii van Eselt. 
- * 
- * old:
- * http://www.ubio.org/index.php?pagename=services_methods2
- * 
- * other
- * http://www.ncbi.nlm.nih.gov/pmc/articles/PMC555944/
- * 
- * 
- * Sablotron
- * 
- * 
- */
-
-    
-    
-
-
-zheng.li@atos.net
-
-
-lee.namba@atos.net
-
-C.J.Sleep@nhm.ac.uk
-
-mehrrath@mindcatch.com
-
-
-generate 
-
-
-jpeg2000 at ingest time 
-
-pdf 2 jpg convert 
-
+Sablotron
 
 ingest ocr results to page object
 
-
-
-
-http://ec.europa.eu/youreurope/citizens/residence/worker-pensioner/rights-conditions/index_en.htm
-
-
-
-produce jp 2000 in same resolution
-
+produce jp 2000 in same resolution (jpeg2000 at ingest time )
 
 reverse prox the directory
-
-ingest
-
-
-send chris the ip 
-to get a firewall rule directly to bhl servers
-
-
-
-
-probleme
---------
-no access to fedora (network problems, but server errors)
-is fedora working as desired?
-
-problem mit serverzugängen muss direkt am server arbeiten
-können datenbanmanagement und phftp installiert damit 
-mehr oder weniger erfolgreich damit man schneller entwickeln
-kann
-
-habe lee und zheng informationen für die selbständigkeit
-in frankreich und austria diskutiert und links geschickt.
-alle seiten sind up to date.
-
-es wird stundenlang am deployment vorgang gezaubert
-es ist das deployment mit maven git (insbesondere pull)
-problematisch --- zeitfaktor
-
-
-
-
 
 expample data with comparable end 2 end
 
 (upload -2- fedora export)
 
-
-
-
-pdf2
-
-
 integration -- before tests
 
---- access: and 
+virusscan in os side not in pre-ingest
 
 
-
-complex directory scanning 
-and structure cleanup
-
---->
-
-
-
-virusscan in os side
-not in pre-ingest
-
-
-pdf support
-
-
-upload structure
-
-write a file submission format 
-
-
-
-important: example book collection !!!!! for ingest tests
-
-
-jhove
-
-
-taxonfinder
-
-
-
-
-
-upload root
-
-
-/mnt/nfs/upload/providers
-
-
-work directory
-
-
-/mnt/nfs/integration/data/pre-ingest/ 
-
-
-
-
-sql structure
-
-
-festhalten es geht überhaupt kein einziger ingest der nicht
-nachgebessert wurde von ait manuell!!!!
-
-
-warum mets package
 
 was ist mit directory ingest in fedora! (new feature') ?
-
-
-
-
-email von atos lee ?
-
 
 kernpunkt mets 2 fedora part:  FedoraMetsMarshallerService.java 
 PreIngest/src/main/java/at/co/ait/domain/services/MetsMarshallerService.java?r=329
 
 
-
-
 ./web ist lediglich das webinterface bestehend unzulängliches
 logging
 
-
-
-handles.net ???
-
-
-
-
-
-
-
-
-j.taif@nhm.ac.uk
-C.J.Sleep@nhm.ac.uk
-wolfgang.koller@nhm-wien.ac.at
-heimo.rainer@nhm-wien.ac.at
-
-
-
-
-
-
 Der externe Link auf den Pre-Ingest Server lautet:
-
-
-http://bhl-int.nhm.ac.uk/PreIngest
-
-Login: landoe
-Passwd: landoe
-
-
-
-
-
-jenes rausnehmen das nicht commited wurde an github
-
-
-netbeans - development ui ähnlich wie eclipse 
-
-
-
-struktur von verzeichnisbäumen
-
-
 
 integration von webservices - 
 beispiel:
 
-ubio taxonfinder soll über preingest tool angestossen werden und liste
-der gefundenen wissensch. namen - index in olef abgelegt (olef info: http://www.bhl-europe.eu/bhl-schema/v0.3/)
-
----> 
-
-
-accounts für london über wolfgang 
-
 working application: 
-
 
 holt z.b. daten von
 
@@ -411,131 +145,15 @@ http://bhl-celsus.nhm.ac.uk/uploads/
 
 http://bhl-celsus.nhm.ac.uk/uploads/RBGE/Florav1-3/Volume1/
 
-
-
 festlegung der verz. stuktur über deliverable 2.1 (liegt im bhl wiki und heisst) 2pt1
 
-
-
-
-
-
-
-
-
-montag alle 2 wochen um 15:00 ab 24.10, skype konferenz, agenda 
-
-
-
-3-5 november prag, entwickler kongress,
-
-atos vor ort, andere entwickler austausch  
-
-
-wolfang macht sola search für drupal mit simple und advanced
-
-
-
-walter.koch@ait.co.at
-
-
-chris sleep systeadmin hostet server - graham higley work package 3 lead
-
-
-
-michael malicky @ landesmuseum.at
-
-it chef von die landesmuseum 
-
-
-über command line wird schema mapping angeworfen
-
-
-transfer von pre-ingest in den git hub master zweig von google code rüber
+transfer von pre-ingest in den git hub master zweig von google code rüber 
 google code stirbt
 
-
-
-
-bhl.wikispaces.com
-
-mehrrath
-wiki11
-
-
-
-
 http://fedora-commons.org/
-
-
-
-Hier der Link zum SMT: 
-
-http://code.google.com/p/schema-mapping-tool/
-
-
-
-
-Hier der Link zu den Rohdaten der Provider:
-
-http://bhl-celsus.nhm.ac.uk/uploads/
-
-
-
-
-
-
 
 
 file:///D:/nhm/bhl-bits-doku/html/annotated.html
 
 
 
-
-
-checkout google
-
-# Non-members may check out a read-only working copy anonymously over HTTP.
-svn checkout http://bhl-bits.googlecode.com/svn/trunk/ bhl-bits-read-only 
-
-
-http://code.google.com/p/bhl-bits/source/checkout
-
-
-
-# Non-members may check out a read-only working copy anonymously over HTTP.
-svn checkout http://bhl-bits.googlecode.com/svn/trunk/ bhl-bits-read-only 
-
-
-
-
-
-
-OLEF Schema:
-
-http://www.bhl-europe.eu/bhl-schema/v0.3/
-
-
-
-Pre-Ingest Code
-
-http://code.google.com/p/bhl-bits/source/browse/#svn%2Ftrunk%2Fbhl-e%2Fpre-ingest
-
-http://code.google.com/p/bhl-bits/source/checkout
-
-
-Viele Grüße,
-Wolfgang
-
-
---------------------------------------
-Information gemaess UGB Par. 14 Abs. 1
-
-Naturhistorisches Museum
-1010 Wien, Burgring 7
-Firmenbuchnummer: FN 236724z
-Firmenbuchgericht: Handelsgericht Wien
-UID: ATU 38020609
-Rechtsform: Wissenschaftliche Anstalt
-oeffentlichen Rechts des Bundes
---------------------------------------

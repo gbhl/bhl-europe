@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<METS:mets EXT_VERSION="1.1" OBJID="bhle:a0hhmgs1"
+LABEL="Volume 1"
+xmlns:METS="http://www.loc.gov/METS/"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+<METS:metsHdr RECORDSTATUS="Active">
+</METS:metsHdr>
+<METS:amdSec ID="DC">
+<METS:techMD ID="DC1.0">
+<METS:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" LABEL="Dublin Core Record for this object" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/">
+<METS:xmlData>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Volume 1</dc:title>
+  <dc:identifier>bhle:a0hhmgs1</dc:identifier>
+</oai_dc:dc>
+</METS:xmlData></METS:mdWrap>
+</METS:techMD>
+</METS:amdSec>
+<METS:amdSec ID="RELS-EXT">
+<METS:techMD ID="RELS-EXT.0">
+<METS:mdWrap MIMETYPE="application/rdf+xml" MDTYPE="OTHER" LABEL="Fedora Object-to-Object Relationship Metadata">
+<METS:xmlData>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/bhle:a0hhmgs1">
+    <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/bhle-cmodel:volumeCModel"></hasModel>
+    <isMemberOf xmlns="info:fedora/fedora-system:def/relations-external#" rdf:resource="info:fedora/bhle:a0hhmgs0"></isMemberOf>
+  </rdf:Description>
+</rdf:RDF>
+</METS:xmlData></METS:mdWrap>
+</METS:techMD>
+</METS:amdSec>
+<METS:amdSec ID="OLEF">
+<METS:techMD ID="OLEF.0">
+<METS:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" LABEL="OLEF Metadata">
+<METS:xmlData>
+<olef></olef>
+</METS:xmlData></METS:mdWrap>
+</METS:techMD>
+</METS:amdSec>
+</METS:mets>

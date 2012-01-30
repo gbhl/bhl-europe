@@ -1,4 +1,17 @@
 <?php
+// ********************************************
+// ** FILE:    OCR_TIFF.PHP                 **
+// ** PURPOSE: BHLE INGESTION & PREPARATION  **
+// ** DATE:    23.11.2011                    **
+// ** AUTHOR:  ANDREAS MEHRRATH              **
+// ********************************************
+
+// OCR VON IMAGE QUELLE MIT TESSERACT ...
+
+// http://code.google.com/p/tesseract-ocr/wiki/ReadMe
+// http://code.google.com/p/tesseract-ocr/
+// http://code.google.com/p/tesseract-ocr/downloads/list
+
 
 // TIFFS VON DATENBANK HOLEN DA IN USER_DIRECTORY ALTSTAND VON ANALYZE 
 $query = "select content_pages_tiff from content where content_id=" . $content_id;
@@ -6,9 +19,9 @@ $arrTiffs = explode(_TRENNER, abfrage($query, $db));
 $nPages   = count($arrTiffs);
 
 
-echo "<h3>Try to recognize Text in " . $nPages . " Page Images.</h3>";
+echo "<h3>Try to recognize Text in " . $nPages . " Page Images.</h3><pre>\n";
 
-echo "<pre>";
+$ocrLang = getOCRlang($content_id);
 
 for ($i = 0; $i < $nPages; $i++) 
 {
@@ -18,10 +31,12 @@ for ($i = 0; $i < $nPages; $i++)
 
     // define("_OCR_DAT",  "/usr/local/share/tessdata/");
     // export TESSDATA_PREFIX=/some/path/to/tessdata
-    $myCmd = _TESSERACT . " " . _CONTENT_ROOT . $arrTiffs[$i] . " " . $outputFile . " -l eng ";
+    // tesseract <image.tif> <outputbasename> [-l <langid>] [configs]
+
+    $myCmd = _TESSERACT . " \"" . _CONTENT_ROOT . $arrTiffs[$i] . "\" \"" . $outputFile . "\" -l ".$ocrLang." ";
     $myCmd = exec_prepare($myCmd);    
     
-    if (!_QUEUE_MODE) 
+    if (!_QUEUE_MODE)
     {
         $output = array();
         $return_var = "";
@@ -47,7 +62,7 @@ for ($i = 0; $i < $nPages; $i++)
     @flush();
 }
 
-echo "</pre>";
+echo "\n\n</pre>\n";
 
 
 ?>

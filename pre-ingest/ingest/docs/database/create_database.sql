@@ -20,7 +20,7 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`users` (
   `user_config` TEXT NULL ,
   `user_config_smt` TEXT NULL ,
   `user_memo` TEXT NULL ,
-  `user_directory` MEDIUMTEXT NULL ,
+  `user_directory` LONGTEXT NULL ,
   `queue_mode` TINYINT UNSIGNED NULL DEFAULT 0 ,
   `metadata_ws` VARCHAR(1024) NULL ,
   PRIMARY KEY (`user_id`) )
@@ -36,7 +36,7 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingest_log` (
   `log_id` INT UNSIGNED NOT NULL ,
   `ingest_id` INT UNSIGNED NULL ,
   `log_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ,
-  `log_text` MEDIUMTEXT NULL ,
+  `log_text` LONGTEXT NULL ,
   PRIMARY KEY (`log_id`) )
 ENGINE = InnoDB;
 
@@ -98,10 +98,11 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`content` (
   `content_last_succ_step` TINYINT UNSIGNED NULL DEFAULT 0 ,
   `content_olef` MEDIUMTEXT NULL ,
   `content_guid` VARCHAR(255) NULL ,
-  `content_pages_text` TEXT NULL ,
-  `content_pages_tiff` TEXT NULL ,
-  `content_pages_taxon` TEXT NULL ,
-  `content_pages_formatinfo` TEXT NULL ,
+  `content_pages_text` LONGTEXT NULL ,
+  `content_pages_tiff` LONGTEXT NULL ,
+  `content_pages_taxon` LONGTEXT NULL ,
+  `content_pages_formatinfo` LONGTEXT NULL ,
+  `content_ipr` TEXT NULL ,
   PRIMARY KEY (`content_id`) )
 ENGINE = InnoDB;
 

@@ -6,10 +6,10 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-
 // HOLE PAGES SOURCES UND KONVIERTIERE SIE
 // CONVERT DIVERSER IMAGE FILE TYPEN (PAGEDATA TYPES) NACH TIF
 
+// http://www.imagemagick.org/script/formats.php
 
 unset($arrTiffs);
 
@@ -32,7 +32,7 @@ else
         $outputFile = substr($arrPageSources[$i], 0, strrpos($arrPageSources[$i], ".")) . ".tif";
         $outputFile = $destDir . basename($outputFile);
 
-        $myCmd = _IMG_MAGICK_CONVERT . " " . $arrPageSources[$i] . " " . $outputFile;
+        $myCmd = _IMG_MAGICK_CONVERT . " \"" . $arrPageSources[$i] . "\" \"" . $outputFile."\"";
         $myCmd = exec_prepare($myCmd);
         
         if (!_QUEUE_MODE) 
@@ -50,7 +50,8 @@ else
             if (file_exists($outputFile))
                 $arrTiffs[] = str_replace(_CONTENT_ROOT,'',$outputFile);
         }
-        else {
+        else 
+        {
             // INGEST SCRIPT COMMANDS
             echo $myCmd . "\n";
             $arrQueueCommands[] = $myCmd;
@@ -61,7 +62,7 @@ else
         @flush();
     }
 
-    echo "</pre>";
+    echo "\n\n</pre>\n";
 }
 
 

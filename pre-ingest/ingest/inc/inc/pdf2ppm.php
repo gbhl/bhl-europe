@@ -38,14 +38,22 @@ if ($nPPM>0)
 // GENERATE PPM
 else
 {
-    echo "<h3>Try to generate PPM's from " . $relativePDF . "</h3><pre>";
+    ob_start();
+    
+    echo "<h3>Try to generate PPM's from " . $relativePDF . "</h3><pre>\nRunning...\n\n";
 
+    echo invisible_html(1024 * 5);
+    
     $outputFile = $destDir.$relativePDF;  // not real output file is pdftoppm root!
                                           // PPM-root-nnnnnn.ppm, where nnnnnn is the page number. 
 
-    $myCmd = _PDFTOPPM . " " . $sourcePDF . " " . $outputFile; 
+    $myCmd = _PDFTOPPM . " \"" . $sourcePDF . "\" \"" . $outputFile."\""; 
     $myCmd = exec_prepare($myCmd); 
-
+    
+    @ob_end_flush();
+    @ob_flush();
+    @flush();
+    
     if (!_QUEUE_MODE) 
     {
         $output = array();
@@ -66,8 +74,13 @@ else
         $arrQueueCommands[] = $myCmd;
     }
 
-    echo "</pre>";
+    echo "\n\n</pre>\n";
 }
+
+
+// PPMS WIEDER ZAEHLEN
+if (!_QUEUE_MODE)
+$nPPM = getContentFiles($contentDir, 'single_suffix', true,'.ppm');
 
 
 ?>

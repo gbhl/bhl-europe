@@ -133,9 +133,9 @@ function date2my($myDate)
 
 
 //////////////////////////////////////////////////////////////////
-//			Date2Time				                            //
+//			Date2Time				//
 //--------------------------------------------------------------//
-// DatumString im Format	2002-04-04 23:03:00		            //
+// DatumString im Format	2002-04-04 23:03:00		//
 //////////////////////////////////////////////////////////////////
 function Date2Time($datumstr)
 {
@@ -200,14 +200,18 @@ function zeitintervall($feld,$intervall_id)
 		$ret .= " ( to_days(date_format(CURRENT_DATE,'%Y-%m-%d')) - 1) ";
   	  break;
   case 3: // thisweek
-        $day = (int) date("w"); // 0..sonntag 6..samstag
+                $day = (int) date("w");  // 0... SONNTAG   6...SAMSTAG
 		$j=0;
+                
 		for ($i=0;$i<$day;$i++)
 		{
 		 if ($i==0) $ret .= " and ( ";
 		 else       $ret .= " or ";
 
- 		 $ret .= " to_days(date_format(".$feld.",'%Y-%m-%d')) = ";		 // !!! das noch pruefen
+		 // AKTUELLER FELDWERT IN TAGEN
+ 		 $ret .= "   to_days(date_format(".$feld.",'%Y-%m-%d')) = ";
+                 
+                 // IST GLEICH EINEM DER LETZTEN TAGE DER BETR. WOCHE
 		 $ret .= " ( to_days(date_format(CURRENT_DATE,'%Y-%m-%d')) - ".$i.") ";
 		 $j=1;
 		}
@@ -318,11 +322,11 @@ function get_next_day($year,$month,$day)
 //			Dazu wird der String mit den Delimitern " ", ".", "/","-"
 //			getrennt, und die ersten drei Werte an checkdate
 // 			uebergeben
-// Eingabestring muss folgendermaßen formatiert sein:
+// Eingabestring muss folgendermaï¿½en formatiert sein:
 //			'dd mm yyyy'
 //		 	'dd/mm/yyyy'
-//	   	    'dd.mm.yyyy'
-//	   	    'dd-mm-yyyy'
+//                      'dd.mm.yyyy'
+//                      'dd-mm-yyyy'
 //			optional kann dahinter ein Datum stehen:
 //			'dd.mm.yyyy hh:mm:ss'	 (wird aber ignoriert)
 // Rueckgabewert: False (wenn kein Datum), sonst Datum (formatiert)
@@ -348,10 +352,10 @@ function str_ifdate($sDateString)
 // teile string
 	$arrStrParts = array(" "," "," "," ");
 	$arrStrParts = explode($sDelim, $sDateString, 4);
-	$iNumParts   = count($arrStrParts);								// count elements
+	$iNumParts   = count($arrStrParts);	// count elements
 
 // abort if no valid date
-	if ($iNumParts < 3) 											// date only valid if at least 3 elements
+	if ($iNumParts < 3) 			// date only valid if at least 3 elements
 	{
 		$sDateString = false;
 		return $sDateString;
@@ -369,7 +373,6 @@ function str_ifdate($sDateString)
 		}
 
 // check date (Achtung: mm-dd-yyyy)
-
  		for ($k=0;$k<=2;$k++)
  		{
  			$arrStrParts[$k] = intval(trim($arrStrParts[$k]));
@@ -394,10 +397,10 @@ function str_ifdate($sDateString)
 	}
 
 // Debug
-//		echo "DEBUG: sDelim: ".$sDelim."<br>";
+//	echo "DEBUG: sDelim: ".$sDelim."<br>";
 //  	echo "DEBUG: Tag, Mon, Jahr, Rest: '".$arrStrParts[0]."' '".$arrStrParts[1]."' '".$arrStrParts[2]."' '".$arrStrParts[3]."'<br>";
 //  	echo "DEBUG: sDateString: ".$sDateString."<br>";
-//		echo "DEBUG: bIsDate: ".$bIsDate."<br>";
+//	echo "DEBUG: bIsDate: ".$bIsDate."<br>";
 
 
 // Return
@@ -411,12 +414,9 @@ function str_ifdate($sDateString)
 
 
 
-
-
-// *******************************
-// *** T000? ***
 // *******************************
 function datetime2mysql($datetime)
+// *******************************
 {
  // DATUM MUSS VON ZEIT MIT BLENK GETRENNT SEIN UND VOR DER ZEIT STEHEN
  $datetime = trim($datetime);
@@ -436,7 +436,7 @@ function datetime2mysql($datetime)
 
 
 /**
- * Check whether a date is later than the other
+ * CHECK WHETHER A DATE IS LATER THAN THE OTHER
  *
  * @param string $check_date             Format: DD.MM.YYYY
  * @param string $conditional_date       Format: DD.MM.YYYY
