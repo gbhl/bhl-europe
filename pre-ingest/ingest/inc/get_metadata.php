@@ -9,9 +9,13 @@
 // TO OLEF FORMAT 
 // ********************************************
 
+ob_start();
 
+$inputFile = "";
 
+// **********************************
 // A) WEBSERVICE METADATA PROVIDER WS
+// **********************************
 $metadata_ws = trim($arrProvider['metadata_ws']);
 
 if ($metadata_ws != "")
@@ -21,7 +25,7 @@ if ($metadata_ws != "")
 
     $resource_context = stream_context_create(array(
         'http' => array(
-            'timeout' => _TAXON_WEB_TIMEOUT
+            'timeout' => _WEBSERVICE_TIMEOUT
         )
             )
     );
@@ -37,109 +41,77 @@ if ($metadata_ws != "")
         if ($wsKey=="") $wsKey = basename($contentName);    // nimmt auch /etc/  --> etc
     }
 
-    $myURL = $metadata_ws.$wsKey;     
+    $myURL = $metadata_ws.$wsKey;    
+    
+    echo "Try to get metadata over: <b>".$myURL."</b>"; nl(2);
 
     // DIRECTORY NAME IS KEY TO GATHER
     if (file_put_contents($metadataFile,file_get_contents($myURL, 0, $resource_context))>0)
     $inputFile = $metadataFile;
 }
-else
-{
-    // B) HOLEN DES LOKALEN METADATENFILES
 
+// ***********************************
+// B) HOLEN DES LOKALEN METADATENFILES
+// ***********************************
+if ($inputFile=="")
+{
+    nl(); echo "Try to get local metadata."; nl();
     $inputFiles  = getContentFiles($contentDir,'metadata',false);
     if (array_key_exists(0, $inputFiles))   $inputFile   = $inputFiles[0];
     unset($inputFiles);
 }
 
-if ((!isset($inputFile))||(!file_exists($inputFile))) {
+if (!file_exists($inputFile)) 
+{
      echo _ERR." No local metadata file found or connection failure to webservice.";
      nl(2);
 }
 else
 {
-
-ob_start();
-
-echo "<h1 style='margin-top: 3px;'>Mapping Your Metadata to OLEF Repository Standard</h1>";
-
-echo invisible_html(1024 * 5);
-
-@ob_end_flush();
-@ob_flush();
-@flush();
-sleep(1);
-
-$myCmd = _SMT;
-
-$myParams   = abfrage("select user_config_smt from users as wert where user_id=" . $user_id, $db);
-
-$outputFile = $destDir._AIP_OLEF_FN;
-
-$myParams   = str_replace(array("<input_file>", "<input file>"), $inputFile, $myParams);
-
-$myParams   = str_replace(array("<output_file>", "<output file>"), $outputFile, $myParams);
-
-@ob_end_clean();
-
-$myCmd = $myCmd . " " . $myParams;
-$myCmd = exec_prepare($myCmd);
-
-echo "Executing Schema Mapper: <pre>\n";
-
-echo str_replace(array("-if", "-of"), array("\n-if", "\n-of"), htmlspecialchars($myCmd));
-
-if ((!is_array($inputFile)) && (file_exists($inputFile))) 
-{
-    $output = array();
-    $return_var = "";
+    echo "<h1 style='margin-top: 3px;'>Mapping Your Metadata to OLEF Repository Standard</h1>";
+    echo invisible_html(1024*5);
     
-    $rLine = @exec($myCmd, $output, $return_var);
+    echo "Executing Schema Mapper...<pre>\n";    
 
-    echo "\n\nReturn Code: " . $return_var . " (" . $rLine . ")\n";
-    // echo print_r($output);
-    // echo_pre($output);
-}
-else
-    echo _ERR . " Input File missing or not found.";
+    @ob_end_flush();
+    @ob_flush();
+    @flush(); 
+    sleep(1);
 
-echo "</pre>";
+    include_once("inc/metadata.php");
 
-nl();
-
-if (file_exists($outputFile)) 
-{
-    $olef = file_get_contents($outputFile);
-    echo "\n<h2>OLEF Result: &nbsp; ";
-    icon("green_16.png");
-    echo "</h2>";
-
-    echo "<hr>\n<pre>" . htmlspecialchars($olef) . " \n\n";
-    
-    $cGUID = "";
-    include("get_guid.php");
-    
-    echo "</pre>";    
-    
-    // NUR BEI GUID STEP OK
-    if (($cGUID!="") &&($olef!=""))
+    if (file_exists($outputFile)) 
     {
-        mysql_select("update content set content_status='in preparation', 
-            content_olef='" . mysql_clean_string($olef) .
-                "', content_guid='".$cGUID."' where content_id=" . $content_id);
-        
-        mysql_select("insert into content_guid (content_id,guid,released,last_action) values (".
-                $content_id.",'".$cGUID."',now(),now())");
+        $olef = file_get_contents($outputFile);
+        echo "\n<h2>OLEF Result: &nbsp; ";
+        icon("green_16.png");
+        echo "</h2>";
 
-        // IF SUCCESSFUL SET STATE TO 1 
-        if (getContentSteps($content_id)<1) setContentSteps($content_id, 1);
+        echo "<hr>\n<pre>" . htmlspecialchars($olef) . " \n\n";
+
+        $cGUID = "";
+        include("inc/guid_minter.php");
+
+        echo "\n\n</pre>\n";    
+
+        // NUR BEI GUID STEP OK
+        if (($cGUID!="") &&($olef!=""))
+        {
+            mysql_select("update content set content_status='in preparation', 
+                content_olef='" . mysql_clean_string($olef) .
+                    "', content_guid='".$cGUID."' where content_id=" . $content_id);
+
+            mysql_select("insert into content_guid (content_id,guid,released,last_action) values (".
+                    $content_id.",'".$cGUID."',now(),now())");
+
+            // IF SUCCESSFUL SET STATE TO 1 
+            if (getContentSteps($content_id)<1) setContentSteps($content_id, 1);
+        }
+
+        unset($olef);
     }
-
-    unset($olef);
-}
-else
-    echo _ERR . "Could not generate OLEF/GUID! (Metadata/Minter missing or not interpretable.)";
-
+    else
+        echo _ERR . "Could not generate OLEF/GUID! (Metadata/Minter missing or not interpretable.)";
 }
 
 ?>

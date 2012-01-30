@@ -1,4 +1,24 @@
 
+
+Hier der Link zum SMT: 
+
+http://code.google.com/p/schema-mapping-tool/
+
+
+Hier der Link zu den Rohdaten der Provider:
+
+http://bhl-celsus.nhm.ac.uk/uploads/
+
+
+content home - testdata
+
+spices_prepared/darw....
+!!! content name muss pfad ohne content_root bis runter sein falls über mehrere verzeichnisse
+
+
+take Darwins_Origin
+
+
 admin home on production
 
 testdata/spices_prepared
@@ -10,18 +30,23 @@ testdata/spices_prepared
 
 /mnt/nfs-demeter/upload/providers
 
+/var/www/ingest
+/mnt/nfs/dev/
+/mnt/nfs/upload/providers/
+/mnt/nfs-demeter/development/ingestion-testdata
 
-handle net 
 
-Based on Noid from CPAN by Kunze.
+http://bhl-celsus.nhm.ac.uk/uploads/
 
-Used following schema to setup NOID:
-noid dbcreate a0.reeeeee - 10706
+http://bhl-celsus.nhm.ac.uk/uploads/RBGE/Florav1-3/Volume1/
 
-Generating around 550 million ids with prefix a0.
 
-Registered Handle.net handle 10706 for BHL-Europe.
 
+upload root
+/mnt/nfs/upload/providers
+
+work directory
+/mnt/nfs/integration/data/pre-ingest/ 
 
 
 
@@ -31,9 +56,6 @@ warum gegeben
 und nicht
 
 /mnt/nfs-demeter/upload/providers
-
-
-
 /mnt/nfs-demeter/upload/providers/testdata/spices_prepared
 
 

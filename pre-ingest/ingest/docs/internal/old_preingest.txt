@@ -1,0 +1,31 @@
+
+****
+OLD:
+****
+http://bhl-int.nhm.ac.uk/PreIngest
+Login: landoe
+Passwd: landoe
+
+
+Pre-Ingest Code
+
+http://code.google.com/p/bhl-bits/source/browse/#svn%2Ftrunk%2Fbhl-e%2Fpre-ingest
+http://code.google.com/p/bhl-bits/source/checkout
+
+
+checkout google
+
+# Non-members may check out a read-only working copy anonymously over HTTP.
+svn checkout http://bhl-bits.googlecode.com/svn/trunk/ bhl-bits-read-only 
+
+
+http://code.google.com/p/bhl-bits/source/checkout
+
+
+
+# Non-members may check out a read-only working copy anonymously over HTTP.
+svn checkout http://bhl-bits.googlecode.com/svn/trunk/ bhl-bits-read-only 
+
+
+walter.koch@ait.co.at
+

@@ -6,9 +6,8 @@
 // ** AUTHOR:  ANDREAS MEHRRATH            **
 // ******************************************
 /*
-INFOS:   file_delete funktion war aus tools !!!
-         funktion delete_file sollte nicht mehr benutzt werden wird mit file_delete ersetzt !!!
-         auch schauen ob dieses file ueberall included ist fuer die fkt.aufrufe file_delete()
+INFOS:   FUNKTION DELETE_FILE SOLLTE NICHT MEHR BENUTZT WERDEN WIRD MIT FILE_DELETE ERSETZT
+         AUCH SCHAUEN OB DIESES FILE UEBERALL INCLUDED IST FUER DIE FKT.AUFRUFE FILE_DELETE()
 */
 
 
@@ -180,11 +179,16 @@ function read_file($filename)
  *
  * @param   string  $fileName
  * @param   array   $arrLinesToRemove
+ * @param   string  $commentLinePrefix
+ * @param   boolean $ignoreCase
+ * @param   boolean $inverted
  * @return  array   FILTERED LINES OF FILE
  *
  * 2ND PARAMETER DEFINES LINES WHICH CONTAIN THESE CHARACTERS ONLY(!) WILL BE EXCLUDED
+ * IF INVERTED = TRUE LINES TO IGNORE BECOME LINES TO RETURN
  */
-function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePrefix="")
+function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePrefix="",
+        $ignoreCase=false,$inverted=false)
 // *************************************************************************************
 {
     $rVal = array();
@@ -200,13 +204,27 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
         while (!feof($fp))
         {
             $line = trim(trim(fgets($fp)),"\x00..\x1F");
-
-            $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
-
-            if ($probeLine != "")
+            
+            if (!$inverted)
             {
-                if (($commentLinePrefix=="")||(substr($line,0,strlen($commentLinePrefix))!=$commentLinePrefix))
-                $rVal[] = $line;
+                if ($ignoreCase)    $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
+                else                $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
+
+                if ($probeLine != "")
+                {
+                    if (($commentLinePrefix=="")||(substr($line,0,strlen($commentLinePrefix))!=$commentLinePrefix))
+                    $rVal[] = $line;
+                }
+            }
+            else
+            {
+                    if (($commentLinePrefix=="")||(substr($line,0,strlen($commentLinePrefix))!=$commentLinePrefix))
+                    {
+                        if ($ignoreCase)    $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
+                        else                $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
+
+                        if ($line!=$probeLine)  $rVal[] = $line;
+                    }
             }
         }
         fclose($fp);
@@ -219,19 +237,26 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
 
 
 
-// ***************************************
-function file_line_exists($myFile,$myLine)
-// ***************************************
+
+
+/**
+ * CHECKT FILE AUF VORHANDENSEIN DIVERSER INHALTE (ARRAY)
+ *
+ * @param   string    $myFile
+ * @param   array     $myContent
+ * @param   boolean   $ignoreCase
+ * @param   boolean   $oneMatchOnly
+ * 
+ * @return  boolean true|false
+ *
+ */
+function file_content_exists($myFile,$myContent,$ignoreCase=false,$oneMatchOnly=false)
+// ***********************************************************************************
 {
-    if (is_readable($myFile)) 
-    {
-        $fContent = file_get_contents($myFile);
-        if (strpos($fContent,$myLine)===false)  return false;
-        
-        return true;
-    }
+    if (is_readable($myFile))   $fContent = file_get_contents($myFile);
+    else return false;
     
-    return false;
+    return instr($fContent,$myContent,$ignoreCase,$oneMatchOnly);
 }
 
 

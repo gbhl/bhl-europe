@@ -7,7 +7,6 @@
 // ********************************************
 
 
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -30,6 +29,9 @@ echo "<link rel=\"stylesheet\" href=\"css/MenuMatic.css\" type=\"text/css\" medi
 if (in_array($menu_nav,array("portal","ingest_list","admin"))) 
 echo "<link rel=\"stylesheet\" href=\"css/uppermenu.css\" type=\"text/css\" media=\"screen\" charset=\"utf-8\" />\n";
 
+echo "<link rel=\"stylesheet\" href=\"js/jquery/themes/smoothness/jquery.ui.all.css\"    type=\"text/css\" charset=\"utf-8\" />";
+
+
 if ($menu_nav=="portal") {
 ?>
 <!--[if lt IE 7]>
@@ -40,7 +42,7 @@ if ($menu_nav=="portal") {
 
 <script type="text/javascript" src="<?php echo _SHARED_URL; ?>js/tools.js"></script>
 </head>
-<body>
+<body onload="self.focus();">
 
 <?php
 
@@ -51,7 +53,7 @@ if ($menu_nav=='ingest_list')
 ?>
 
 <ul id="navigation">
-        <li class="home"><a href="#" onClick="switch_visibility(document.getElementById('pd_div'));"><span>my Account</span></a></li>
+        <li class="home"><a href="#" onClick="switch_visibility(document.getElementById('pd_div'));"><span>Preferences</span></a></li>
         <li class="photos"><a href="#"  onCLick="popup_win('help', '<?php echo _SYSTEM; ?>?menu_nav=help', 800,600);"><span>Help</span></a></li>
         <li class="rssfeed"><a href="#" onCLick="popup_win('about','<?php echo _SYSTEM; ?>?menu_nav=about',420,540);"><span>About</span></a></li>        
 	<li class="contact"><a href="mailto:<?php echo _CONTACT_EMAIL; ?>"><span>Contact</span></a></li>

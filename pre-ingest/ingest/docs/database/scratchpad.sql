@@ -16,6 +16,8 @@ select * from user_session
 
 EDIT `int_pi_pi`.`users`;
 
-delete from user_session where user_id not in (select u.user_id from users u where 1=1) or last_action < 1321630327 
+delete from user_session where 
+user_id not in (select u.user_id from users u where 1=1) 
+or last_action < 1321630327 
 
 use int_pi_pi

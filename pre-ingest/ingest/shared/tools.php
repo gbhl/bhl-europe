@@ -218,13 +218,13 @@ function abs_e() { echo "</p>\n"; }
 
 
 
-// **********************************************************
-// !!! NEUE ULTIMATIVE ABSATZ FORM ersetzt alle abs_...
-// **********************************************************
+// ****************************************************
+// * !!! NEUE ULTIMATIVE ABSATZ FORM ERSETZT ALLE abs_... *
+// ****************************************************
 function absatz($marginLeft="", $marginRight="", $marginTop="", $marginBottom="", $width="", $blocktext="")
 {
-    // je nach margins solle rechts oder linksbuendiger absatz erzeugt 
-    // werden mit den jew. margins, breite,...
+    // JE NACH MARGINS SOLLE RECHTS ODER LINKSBUENDIGER ABSATZ ERZEUGT 
+    // WERDEN MIT DEN JEW. MARGINS, BREITE,...
     if ($marginLeft=="") $i=1;
 }
 
