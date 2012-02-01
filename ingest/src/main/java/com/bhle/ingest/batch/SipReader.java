@@ -2,7 +2,10 @@ package com.bhle.ingest.batch;
 
 import java.io.File;
 import java.net.URI;
+import java.util.Iterator;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.annotation.BeforeStep;
 import org.springframework.batch.item.ItemReader;
@@ -16,6 +19,9 @@ import com.bhle.ingest.Sip;
 @Component
 public class SipReader implements ItemReader<File> {
 
+	private static final Logger logger = LoggerFactory
+			.getLogger(SipReader.class);
+	
 	private StepExecution stepExecution;
 
 	@BeforeStep
@@ -23,16 +29,23 @@ public class SipReader implements ItemReader<File> {
 		this.stepExecution = stepExecution;
 	}
 
-	private Sip sip;
+	private Iterator<File> iterator;
 	
 	@Override
 	public File read() throws Exception, UnexpectedInputException,
 			ParseException, NonTransientResourceException {
-		if (sip == null) {
+		if (iterator == null) {
 			URI sipUri = URI.create(stepExecution.getJobParameters().getString(
 					Sip.JOB_PARAM_URI_KEY));
-			sip = new Sip(sipUri);
+			Sip sip = new Sip(sipUri);
+			iterator = sip.getItems().iterator();
 		}
-		return sip.getItems().iterator().next();
+		if (iterator.hasNext()){
+			File file = iterator.next();
+			logger.info("Ingesting File: " + file.getName());
+			return file;
+		} else {
+			return null;
+		}
 	}
 }

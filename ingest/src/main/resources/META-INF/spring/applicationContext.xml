@@ -11,5 +11,9 @@
 	http://mina.apache.org/ftpserver/ftpserver-1.0.xsd">
 
 	<import resource="classpath*:/META-INF/spring/env-context.xml" />
+	<import resource="classpath*:/META-INF/spring/commons-context.xml" />
+	<import resource="classpath*:/META-INF/spring/data-source-context.xml" />
+	<import resource="classpath*:/META-INF/spring/batch-context.xml" />
+	<import resource="classpath*:/META-INF/spring/integration-context.xml" />
 	
 </beans>

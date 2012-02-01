@@ -1,4 +1,4 @@
-package com.bhle.ingest.batch;
+package com.bhle.ingest.integration;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameter;

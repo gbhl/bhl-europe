@@ -21,9 +21,9 @@ public class InboundInvokerController {
 	@Autowired
 	private IngestService service;
 	
-	@RequestMapping(value = "/", method = RequestMethod.POST)
-	@ResponseStatus(HttpStatus.CREATED)
+//	@RequestMapping(value = "/", method = RequestMethod.POST)
+//	@ResponseStatus(HttpStatus.CREATED)
 	public void test(@RequestParam(value = "uri") URI uri) {
-		service.ingestPackage(new Sip(uri));
+//		service.ingestPackage(new Sip(uri));
 	}
 }
