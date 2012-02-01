@@ -32,15 +32,16 @@ public class QueryAndPurge {
 				.getBean("fedoraClient");
 
 		FindObjectsResponse findObjectsResponse = FedoraClient.findObjects()
-				.terms(query).pid().execute(client);
+				.terms(query).maxResults(Integer.MAX_VALUE).pid()
+				.execute(client);
 
 		List<String> pids = findObjectsResponse.getPids();
 
-		System.out.println("Objects:");
+		System.out.println("Objects (count: " + pids.size() + "):");
 		for (String pid : pids) {
 			System.out.println(pid);
 		}
-		System.out.println("Purge the objects above? [Y/N]");
+		System.out.print("Purge the objects above? [Y/N]");
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String response = null;

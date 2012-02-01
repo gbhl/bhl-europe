@@ -5,7 +5,6 @@ import static org.junit.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
 
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +34,6 @@ public class IngestServiceTest implements ResourceLoaderAware {
 	@Autowired
 	private IngestService service;
 
-	@Ignore
 	@Test
 	public void testIngestServiceImpl() throws IOException, IngestException {
 		Resource testMetsResource = resourceLoader
