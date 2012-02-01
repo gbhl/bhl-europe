@@ -16,6 +16,8 @@ import org.springframework.integration.support.MessageBuilder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.bhle.ingest.batch.IngestException;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
 public class IngestServiceTest implements ResourceLoaderAware {
@@ -35,7 +37,7 @@ public class IngestServiceTest implements ResourceLoaderAware {
 
 	@Ignore
 	@Test
-	public void testIngestServiceImpl() throws IOException {
+	public void testIngestServiceImpl() throws IOException, IngestException {
 		Resource testMetsResource = resourceLoader
 				.getResource("classpath:com/bhle/ingest/test_9999.xml");
 		File testMets = testMetsResource.getFile();
@@ -48,7 +50,7 @@ public class IngestServiceTest implements ResourceLoaderAware {
 	}
 
 	@Test
-	public void testIngestServiceGateway() throws IOException{
+	public void testIngestServiceGateway() throws IOException, IngestException{
 		Resource testMetsResource = resourceLoader.getResource("classpath:com/bhle/ingest/test_9999.xml");
 		File testMets = testMetsResource.getFile();
 		int statusCode =  service.ingestItem(testMets);

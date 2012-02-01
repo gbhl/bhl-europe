@@ -4,10 +4,10 @@ import java.io.File;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.integration.Message;
 import org.springframework.integration.annotation.ServiceActivator;
 
+import com.bhle.ingest.batch.IngestException;
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.response.FedoraResponse;
@@ -15,7 +15,7 @@ import com.yourmediashelf.fedora.client.response.FedoraResponse;
 public class IngestServiceImpl {
 
 	private static final Logger logger = LoggerFactory
-			.getLogger(IngestServiceTest.class);
+			.getLogger(IngestServiceImpl.class);
 
 	private FedoraClient client;
 
@@ -24,7 +24,7 @@ public class IngestServiceImpl {
 	}
 
 	@ServiceActivator
-	public int ingestMETS(Message<File> message) {
+	public int ingestMETS(Message<File> message) throws IngestException {
 		FedoraResponse response = null;;
 		try {
 			response = FedoraClient.ingest()
@@ -32,7 +32,7 @@ public class IngestServiceImpl {
 					.format("info:fedora/fedora-system:METSFedoraExt-1.1")
 					.execute(client);
 		} catch (FedoraClientException e) {
-			e.printStackTrace();
+			throw new IngestException(e);
 		}
 		return response.getStatus();
 	}

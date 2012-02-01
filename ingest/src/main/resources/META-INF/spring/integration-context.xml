@@ -10,13 +10,41 @@
                            http://www.springframework.org/schema/integration
 							http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
 							http://www.springframework.org/schema/integration/file
-							http://www.springframework.org/schema/integration/file/spring-integration-file-1.0.xsd">
+							http://www.springframework.org/schema/integration/file/spring-integration-file-2.0.xsd">
+
+	<context:component-scan base-package="com.bhle.ingest.integration" />
+
+	<poller default="true">
+		<interval-trigger interval="1000" />
+	</poller>
+
+	<int-file:inbound-channel-adapter id="filesystemInboundAdapter"
+		directory="file:${sip.dir}" filter="compositeFilter" channel="inboundFileChannel"
+		scanner="sipDirectoryScanner">
+	</int-file:inbound-channel-adapter>
+	<beans:bean id="sipDirectoryScanner"
+		class="com.bhle.ingest.integration.ReadySipFolderScanner" />
+
+	<beans:bean id="compositeFilter"
+		class="org.springframework.integration.file.filters.CompositeFileListFilter">
+		<beans:constructor-arg>
+			<beans:list>
+				<beans:bean
+					class="org.springframework.integration.file.filters.AcceptOnceFileListFilter" />
+			</beans:list>
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<channel id="inboundFileChannel" />
+
+	<transformer input-channel="inboundFileChannel"
+		output-channel="inboundSipChannel" ref="sipTransformer" />
 
 	<channel id="inboundSipChannel">
 		<queue />
 	</channel>
 
-	<transformer id="jobLaunchRequestTransformer"
+	<transformer ref="jobLaunchRequestTransformer"
 		input-channel="inboundSipChannel" output-channel="jobLaunchChannel" />
 
 	<channel id="jobLaunchChannel" />
@@ -26,14 +54,20 @@
 		<beans:constructor-arg ref="jobLauncher" />
 	</beans:bean>
 	<service-activator input-channel="jobLaunchChannel"
-		ref="jobMessageHandler" />
+		output-channel="statusChannel" ref="jobMessageHandler" />
 
-<!-- 	<gateway id="ingestGateway" default-request-channel="fedoraeRequestChannel"
-		default-reply-channel="fedoraeReplyChannel" service-interface="com.bhle.ingest.IngestService" /> -->
+	<channel id="statusChannel">
+		<queue />
+	</channel>
 
-	<gateway id="ingestGateway">
-		<method name="ingestPackage" request-channel="inboundSipChannel" />
-		<method name="ingestItem" request-channel="fedoraeRequestChannel" reply-channel="fedoraeReplyChannel"/>
+	<!-- <gateway id="ingestGateway" default-request-channel="fedoraeRequestChannel" 
+		default-reply-channel="fedoraeReplyChannel" service-interface="com.bhle.ingest.IngestService" 
+		/> -->
+
+	<gateway id="ingestGateway" service-interface="com.bhle.ingest.IngestService">
+		<!-- <method name="ingestPackage" request-channel="inboundSipChannel" /> -->
+		<method name="ingestItem" request-channel="fedoraeRequestChannel"
+			reply-channel="fedoraeReplyChannel" />
 	</gateway>
 
 	<channel id="fedoraeRequestChannel" />

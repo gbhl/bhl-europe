@@ -2,7 +2,8 @@ package com.bhle.ingest;
 
 import java.io.File;
 
+import com.bhle.ingest.batch.IngestException;
+
 public interface IngestService {
-	public void ingestPackage(Sip sip);
-	public int ingestItem(File file);
+	public int ingestItem(File file) throws IngestException;
 }

@@ -30,4 +30,16 @@
 		class="org.springframework.batch.core.repository.support.JobRepositoryFactoryBean"
 		p:dataSource-ref="dataSource" p:transactionManager-ref="transactionManager" />
 
+	<batch:job id="batchIngestJob">
+		<batch:step id="main">
+			<batch:tasklet>
+				<batch:chunk reader="sipReader" writer="sipWriter"
+					commit-interval="${batch.commit.interval}" />
+			</batch:tasklet>
+		</batch:step>
+		<batch:listeners>
+			<batch:listener ref="batchIngestListener" />
+		</batch:listeners>
+	</batch:job>
+
 </beans>
