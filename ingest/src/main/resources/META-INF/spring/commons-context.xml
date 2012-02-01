@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
@@ -16,4 +17,12 @@
 		<constructor-arg ref="fedoraCredentials" />
 	</bean>
 
+	<bean id="sip" class="com.bhle.ingest.Sip" p:extractor-ref="sipItemsExtractor" />
+
+	<bean id="sipItemsExtractor" class="com.bhle.ingest.SipItemsExtractorImpl"
+		p:filter-ref="filenameRegexFilter" />
+
+	<bean id="filenameRegexFilter" class="com.bhle.ingest.integration.FilenameRegexFilter">
+		<constructor-arg value="${ingest.filename.pattern}" />
+	</bean>
 </beans>

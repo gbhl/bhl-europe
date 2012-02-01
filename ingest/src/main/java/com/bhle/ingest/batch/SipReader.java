@@ -42,7 +42,6 @@ public class SipReader implements ItemReader<File> {
 		}
 		if (iterator.hasNext()){
 			File file = iterator.next();
-			logger.info("Ingesting File: " + file.getName());
 			return file;
 		} else {
 			return null;

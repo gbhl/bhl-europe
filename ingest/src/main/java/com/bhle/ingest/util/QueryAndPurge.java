@@ -40,7 +40,7 @@ public class QueryAndPurge {
 		for (String pid : pids) {
 			System.out.println(pid);
 		}
-		System.out.println("Purge the objects above? [Y/N]");
+		System.out.print("Purge the objects above? [Y/N]");
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String response = null;

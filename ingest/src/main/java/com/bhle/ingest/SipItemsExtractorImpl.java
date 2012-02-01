@@ -10,33 +10,21 @@ import org.slf4j.LoggerFactory;
 import org.springframework.integration.file.filters.AbstractFileListFilter;
 import org.springframework.stereotype.Component;
 
-import com.bhle.ingest.integration.FilenameSuffixFilter;
+import com.bhle.ingest.integration.FilenameRegexFilter;
 
-@Component
 public class SipItemsExtractorImpl implements SipItemsExtractor {
 
-	public FilenameSuffixFilter filter = new FilenameSuffixFilter(".xml");
+	public FilenameRegexFilter filter;
+	
+	public void setFilter(FilenameRegexFilter filter) {
+		this.filter = filter;
+	}
 
 	@Override
 	public List<File> getItems(Sip sip) {
 		File sipDirectory = new File(sip.getURI());
 		File[] sipItems = sipDirectory.listFiles(filter);
 		return Arrays.asList(sipItems);
-	}
-
-	class FilenameSuffixFilter implements FilenameFilter {
-
-		private String suffix;
-
-		public FilenameSuffixFilter(String suffix) {
-			this.suffix = suffix;
-		}
-
-		@Override
-		public boolean accept(File dir, String name) {
-			return name.endsWith(suffix);
-		}
-
 	}
 
 }
