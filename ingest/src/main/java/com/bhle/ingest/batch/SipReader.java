@@ -19,9 +19,6 @@ import com.bhle.ingest.Sip;
 @Component
 public class SipReader implements ItemReader<File> {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(SipReader.class);
-	
 	private StepExecution stepExecution;
 
 	@BeforeStep

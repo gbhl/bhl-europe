@@ -60,23 +60,19 @@
 		<queue />
 	</channel>
 
-	<!-- <gateway id="ingestGateway" default-request-channel="fedoraeRequestChannel" 
-		default-reply-channel="fedoraeReplyChannel" service-interface="com.bhle.ingest.IngestService" 
-		/> -->
-
 	<gateway id="ingestGateway" service-interface="com.bhle.ingest.IngestService">
 		<!-- <method name="ingestPackage" request-channel="inboundSipChannel" /> -->
-		<method name="ingestItem" request-channel="fedoraeRequestChannel"
-			reply-channel="fedoraeReplyChannel" />
+		<method name="ingestItem" request-channel="fedoraRequestChannel"
+			reply-channel="fedoraReplyChannel" />
 	</gateway>
 
-	<channel id="fedoraeRequestChannel" />
-	<channel id="fedoraeReplyChannel" />
+	<channel id="fedoraRequestChannel" />
+	<channel id="fedoraReplyChannel" />
 
 	<beans:bean id="ingestServiceImpl" class="com.bhle.ingest.IngestServiceImpl">
 		<beans:constructor-arg ref="fedoraClient" />
 	</beans:bean>
-	<service-activator input-channel="fedoraeRequestChannel"
-		output-channel="fedoraeReplyChannel" ref="ingestServiceImpl" />
+	<service-activator input-channel="fedoraRequestChannel"
+		output-channel="fedoraReplyChannel" ref="ingestServiceImpl" />
 
 </beans:beans>
