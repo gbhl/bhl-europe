@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
-	xmlns="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:batch="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
                            http://www.springframework.org/schema/batch
                            http://www.springframework.org/schema/batch/spring-batch-2.1.xsd">
+	
+	<context:component-scan base-package="com.bhle.access.download.offline.batch" />
 
-	<job id="offlineProcessing">
-		<description>Offline processing when the request cannot be fulfilled in real-time</description>
-		<step id="main">
-			<tasklet>
-				<chunk reader="offlineRequestReader" processor="offlineProcessor"
+	<batch:job id="offlineProcessing">
+		<batch:description>Offline processing when the request cannot be fulfilled
+			in real-time</batch:description>
+		<batch:step id="main">
+			<batch:tasklet>
+				<batch:chunk reader="offlineRequestReader" processor="offlineProcessor"
 					writer="offlineProductWriter" commit-interval="1" />
-			</tasklet>
-		<next on="FAILED" to="reportFailureToUser"/>
-		<end on="COMPLETED"/>
-		</step>
-		<step id="reportFailureToUser">
-			<tasklet>
-				<chunk reader="failureReportReader"
-					writer="userFailureEmailSender" commit-interval="1" />
-			</tasklet>
-		</step>
-	</job>
+			</batch:tasklet>
+		</batch:step>
+	</batch:job>
 
-</beans:beans>
+</beans>

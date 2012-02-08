@@ -14,6 +14,7 @@ BookReader.prototype.getToolBox = function(index) {
         +     "<button class='BRicon add_page' title='Add this page to download basket'></button>"
 		+     "<button class='BRicon remove_page' title='Remove this page from download basket'></button>"
 		+     "<button class='BRicon ocr' title='Display OCR of this page'></button>"
+		//+     "<button class='BRicon ubio' title='Show Scientific Names on this page'></button>"
         +   "</span>"
         + "</div>"
 	);
@@ -182,25 +183,23 @@ BookReader.prototype.updateOCRDialog = function(index){
 		$(this).remove();
 	});
 
-	var ocrUrl = this.getPageOCRURI(index);
-	var pageOCR = $.ajax({
-      url: ocrUrl,
-      async:false
-   }
-	).responseText;
-	
 	var jForm = $([
         '<form method="post" action="">',
                 '<fieldset class="ocrFieldset">',
                 '</fieldset>',
-            '<fieldset class="center">',
-                '<button type="submit"">Correct it!</button>',
-            '</fieldset>',
+            //'<fieldset class="center">',
+            //    '<button type="submit"">Correct it!</button>',
+            //'</fieldset>',
         '</form>'].join('\n'));
 	
-	jForm.find('.ocrFieldset').append('<textarea class="ocrTextarea">' + pageOCR + '</textarea >');
+	jForm.find('.ocrFieldset').append('<iframe src="' + this.getPageOCRURI(index) + '"/>');
 	
 	jForm.appendTo($('#BRocr'));
+}
+
+BookReader.prototype.showPageOCR = function(index){
+	this.updateOCRDialog(index);
+	$.colorbox({inline: true, opacity: "0.5", href: "#BRocr", height: "500px"});
 }
 
 BookReader.prototype.startDownload = function(format, quality, ranges, whole) 
@@ -214,24 +213,24 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 			method = 'ocr';
 			break;
 		case 3:
-			method = 'zip';
+			method = 'jpg';
 			break;
 	}
 	
 	var resolution = '';
-	switch(parseInt(quality)){
-		case 1:
+	switch(quality){
+		case 0:
 			resolution = 'high';
 			break;
-		case 2:
+		case 1:
 			resolution = 'medium';
 			break;
-		case 3:
+		case 2:
 			resolution = 'low';
 			break;
 	}
 	
-	var url = '/fedora/objects/' + br.pid + '/methods/bhle-service:bookSdef/';
+	var url = '/access/download/' + br.bookInfo.guid + '/';
 	url += method;
 	url += '?ranges=';
 	
@@ -247,11 +246,6 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 	} 
 
 	window.open(url);
-}
-
-BookReader.prototype.showPageOCR = function(index){
-	this.updateOCRDialog(index);
-	$.colorbox({inline: true, href: '#BRocr', opacity: 0.3});
 }
 
 BookReader.prototype.search = function(term) {
@@ -338,7 +332,7 @@ BookReader.prototype.buildDownloadDiv = function(jDownloadDiv)
 					'</select>',
 				'</fieldset>',
             '<fieldset class="center">',
-                '<button type="button" onclick="$.fn.colorbox.close(); br.startDownload($(\'input:radio[name=format]:checked\').val(), $(\'input:radio[name=quality]:checked\').val() ,br.downloadPages, $(\'#whole_book\').is(\':checked\'));">Download</button>',
+                '<button type="button" onclick="$.fn.colorbox.close(); br.startDownload($(\'input:radio[name=format]:checked\').val(), $(\'select[name=quality]\').get(0).selectedIndex, br.selectedPages, $(\'#whole_book\').is(\':checked\'));">Download</button>',
             '</fieldset>',
         '</form>'].join('\n'));
 	
@@ -375,4 +369,139 @@ BookReader.prototype.updatePageBoxPageNum = function(index) {
     }
     
     $('#pagenum .currentpage').text(pageStr);
+}
+
+BookReader.prototype.buildCollapsableBox = function(){
+	var box = $(['<div id="BRbox">',
+	                	'<div id="BRboxhead" class="BRexpand" />',
+	                	'<div id="BRboxcontent" />',
+	                '</div>'
+	                ].join('\n'));
+	
+	box.find('#BRboxcontent').append(this.buildPageList());
+	box.find('#BRboxcontent').append(this.buildScientificNameList());
+	
+	box.find('#BRboxhead').click(function() {
+		if ($(this).hasClass('BRexpand')) {
+			$(this).animate({
+				opacity : 1
+			});
+			$(this).parent().animate({
+				left : "0px",
+			});
+			$('#BookReader').animate({
+				left : "210px",
+			});
+			$(this).addClass('BRcollapse').removeClass('BRexpand');
+		} else {
+			$(this).animate({
+				opacity : .25
+			});
+			$(this).parent().animate({
+				left : "-200px",
+			});
+			$('#BookReader').animate({
+				left : "0px",
+			});
+			$(this).addClass('BRexpand').removeClass('BRcollapse');
+		}
+	})
+	
+    box.find('#BRboxhead').mouseover(function(){
+        if ($(this).hasClass('BRexpand')) {
+            $('#BRboxhead').animate({opacity:1},250);
+        };
+    });
+	 box.find('#BRboxhead').mouseleave(function(){
+        if ($(this).hasClass('BRexpand')) {
+            $('#BRboxhead').animate({opacity:.25},250);
+        };
+    });
+	
+	var self = this;
+	$(document).bind('jumpToIndex', function(event, index){
+		self.updatePageList(index);
+		self.updateScientificNameList(index);
+	})
+	
+	return box;
+}
+
+BookReader.prototype.buildPageList = function(){
+	var pageListDiv = $('<div id="BRpagination" />');
+	
+	if (this.bookInfo.pages == undefined){
+		pageListDiv.text("Page information not found");
+		return;
+	}
+	
+	var fieldset = $('<fieldset />');
+	var legend = $('<legend>Pages</legend>');
+	fieldset.append(legend);
+	
+	var pageList = $('<select size="20" />');
+	pageList.appendTo(fieldset);
+	
+	fieldset.appendTo(pageListDiv);
+	
+	var self = this;
+	for (i = 0; i < this.bookInfo.pages.length; i++){
+		var pageEntry = $('<option />');
+		pageEntry.text(this.bookInfo.pages[i].name);
+		pageList.append(pageEntry);
+		(function() {
+			var index = i;
+			pageEntry.click(function(){
+				self.jumpToIndex(index);
+			});
+		})();
+	}
+	
+	return pageListDiv;
+}
+
+BookReader.prototype.updatePageList = function(index){
+	console.log('updatePageList ' + index);
+	$('#BRpagination').find('select').get(0).selectedIndex = index;
+}
+
+BookReader.prototype.buildScientificNameList = function(){
+	var scientificNamesDiv = $('<div id="BRscientificNames" />');
+	
+	if (this.bookInfo.pages == undefined){
+		scientificNamesDiv.text("Page information not found");
+		return;
+	}
+	
+	var fieldset = $('<fieldset />');
+	var legend = $('<legend>Names on this page</legend>');
+	fieldset.append(legend);
+	
+	var nameList = $('<ol />');
+	nameList.appendTo(fieldset);
+	
+	var ubioSubtitle = $('<div id="ubioLinkDiv"><p>Powered by <a href="http://www.uBio.org" target="_blank" title="uBio">uBio</a></p></div>')
+	fieldset.append(ubioSubtitle);
+
+	scientificNamesDiv.append(fieldset);
+	
+	return scientificNamesDiv;
+}
+
+BookReader.prototype.updateScientificNameList = function(index){
+	console.log('updateScientificNameList ' + index);
+	var nameList = $('#BRscientificNames').find('ol');
+	nameList.empty();
+	
+	if(this.bookInfo.pages[index].scientificNames.length == 0){
+		var msgEntry = $('<li />');
+		msgEntry.text('No Names Found');
+		nameList.append(msgEntry);
+	} else {
+		for (i = 0; i < this.bookInfo.pages[index].scientificNames.length; i++){
+			var nameEntry = $('<li />');
+			nameEntry.text(this.bookInfo.pages[index].scientificNames[i]);
+			nameList.append(nameEntry);
+		}
+	}
 }

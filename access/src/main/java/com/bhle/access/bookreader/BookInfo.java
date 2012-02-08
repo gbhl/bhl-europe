@@ -8,6 +8,8 @@ import java.util.List;
 import com.bhle.access.util.Olef;
 
 public class BookInfo {
+	private String guid;
+	
 	private String title;
 	private URL url;
 	private int entryPageIndex;
@@ -16,6 +18,14 @@ public class BookInfo {
 	private Olef olef;
 
 	private TableOfContent toc;
+
+	public String getGuid() {
+		return guid;
+	}
+
+	public void setGuid(String guid) {
+		this.guid = guid;
+	}
 
 	public String getTitle() {
 		return title;

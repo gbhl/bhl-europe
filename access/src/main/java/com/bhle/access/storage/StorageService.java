@@ -89,7 +89,7 @@ public class StorageService {
 	}
 
 	public void updateDerivative(Derivative derivative) {
-		logger.info("Update Derivative: " + derivative.getPid() + " "
+		logger.debug("Update Derivative: " + derivative.getPid() + " "
 				+ derivative.getDsId());
 
 		try {
@@ -101,7 +101,8 @@ public class StorageService {
 	}
 
 	public void deleteDerivative(Derivative derivative) {
-
+		logger.debug("Update Derivative: " + derivative.getPid() + " "
+				+ derivative.getDsId());
 		try {
 			defaultStorages.remove(derivative.getPid(), derivative.getDsId());
 		} catch (IOException e) {

@@ -14,6 +14,7 @@ import org.akubraproject.UnsupportedIdException;
 import org.akubraproject.map.IdMappingBlobStore;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -56,16 +57,12 @@ public class AkubraTest {
 		FileMapper fileMapper = new SubFolderFileMapper();
 
 		String internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:a0hhmgs6/JPG"));
-		Assert.assertEquals("a0hhmgs6_jpg.*", internalFile);
+				.create("info:fedora/bhle:10706-a00000000000132805961115-00001/JPG"));
+		Assert.assertEquals("jpg/a00000000000132805961115_00001.*", internalFile);
 
 		internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:a0hhmgs6-00001/JPG"));
-		Assert.assertEquals("jpg/a0hhmgs6_00001.*", internalFile);
-
-		internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:a0hhmgs6-00001"));
-		Assert.assertEquals("*/a0hhmgs6_00001.*", internalFile);
+				.create("info:fedora/bhle:10706-a00000000000132805961115-00001"));
+		Assert.assertEquals("*/a00000000000132805961115_00001.*", internalFile);
 	}
 
 	@Test
@@ -73,16 +70,12 @@ public class AkubraTest {
 		FileMapper fileMapper = new SubFolderFileMapper();
 
 		String internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:a0hhmgs6/JPG"));
-		Assert.assertEquals("a0hhmgs6_jpg.*", internalFile);
+				.create("info:fedora/bhle:10706-a00000000000132805961115/JP2"));
+		Assert.assertEquals("a00000000000132805961115_jp2.*", internalFile);
 
 		internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:a0hhmgs6"));
-		Assert.assertEquals("a0hhmgs6_*.*", internalFile);
-
-		internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:a0hhmgs6-0001"));
-		Assert.assertEquals("*/a0hhmgs6_0001.*", internalFile);
+				.create("info:fedora/bhle:10706-a00000000000132805961115"));
+		Assert.assertEquals("a00000000000132805961115_*.*", internalFile);
 	}
 
 	@Test
@@ -90,20 +83,12 @@ public class AkubraTest {
 		FileMapper fileMapper = new SubFolderFileMapper();
 
 		String externalFile = fileMapper.getExternalFile(URI
-				.create("file:a0/hh/mg/s6/a0hhmgs6/a0hhmgs6_dc.xml"));
+				.create("file:a0000000/00001328/05961115/a00000000000132805961115/a00000000000132805961115_dc.xml"));
 		Assert.assertEquals("DC", externalFile);
 
 		externalFile = fileMapper.getExternalFile(URI
-				.create("file:a0/hh/mg/s6/a0hhmgs6/dc/a0hhmgs6_00001.xml"));
+				.create("file:a0000000/00001328/05961115/a00000000000132805961115/dc/a00000000000132805961115_00001.xml"));
 		Assert.assertEquals("DC", externalFile);
-	}
-
-	@Test
-	public void testInvalidDirectFileMapper() {
-		FileMapper fileMapper = new SubFolderFileMapper();
-		String externalFile = fileMapper.getExternalFile(URI
-				.create("file:a0/hh/mg/s6/a0hhmgs6.jpg"));
-		Assert.assertNull(externalFile);
 	}
 
 	@Test
@@ -112,7 +97,7 @@ public class AkubraTest {
 		BlobStoreConnection connnection = blobStore.openConnection(null, null);
 		Blob blob = null;
 		try {
-			blob = connnection.getBlob(new URI("info:fedora/bhle:a0hhmgs6/OLEF"),
+			blob = connnection.getBlob(new URI("info:fedora/bhle:10706-a00000000000132805961115/OLEF"),
 					null);
 		} catch (UnsupportedIdException e) {
 			e.printStackTrace();
@@ -139,7 +124,7 @@ public class AkubraTest {
 		}
 
 		try {
-			blob = connnection.getBlob(new URI("info:fedora/bhle:a0hhmgs6/OLEF"),
+			blob = connnection.getBlob(new URI("info:fedora/bhle:10706-a00000000000132805961115/OLEF"),
 					null);
 			Assert.assertTrue(blob.exists());
 			blob.delete();
@@ -157,13 +142,14 @@ public class AkubraTest {
 		BlobStoreConnection connnection = blobStore.openConnection(null, null);
 		try {
 			Blob blob = connnection.getBlob(new URI(
-					"info:fedora/bhle:a0hhmgs6/JPG"), null);
+					"info:fedora/bhle:10706-a00000000000132805961115/JPG"), null);
 			blob.openOutputStream(-1, true);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testListBlobIds() {
 		try {

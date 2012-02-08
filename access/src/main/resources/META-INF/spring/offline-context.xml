@@ -7,6 +7,8 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<context:component-scan base-package="com.bhle.access.download.offline.batch" />
+
 	<bean id="offlineProductWriter" class="com.bhle.access.download.offline.batch.OfflineProductWriter" p:store-ref="offlineStorage" />
 
 	<bean id="offlineStorage"

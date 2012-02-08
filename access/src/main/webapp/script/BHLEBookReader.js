@@ -17,20 +17,29 @@ $.event.props = res;
 // Create the BookReader object
 br = new BookReader();
 
-// Return the width of a given page.  Here we assume all images are 800 pixels wide
+br.bookInfo = bookInfo;
+
+// Return the width of a given page. Here we assume all images are 800 pixels
+// wide
 br.getPageWidth = function(index) {
 	return bookInfo.pages[index].width;
 }
 
-// Return the height of a given page.  Here we assume all images are 1200 pixels high
+// Return the height of a given page. Here we assume all images are 1200 pixels
+// high
 br.getPageHeight = function(index) {
 	return bookInfo.pages[index].height;
 }
 
-// We load the images from archive.org -- you can modify this function to retrieve images
+// We load the images from archive.org -- you can modify this function to
+// retrieve images
 // using a different URL structure
 br.getPageURI = function(index, reduce, rotate) {
     return bookInfo.pages[index].url;
+}
+
+br.getPageOCRURI = function(index) {
+    return bookInfo.pages[index].ocrUrl;
 }
 
 // Return which side, left or right, that a given page should be displayed on
@@ -43,7 +52,7 @@ br.getPageSide = function(index) {
 }
 
 // This function returns the left and right indices for the user-visible
-// spread that contains the given index.  The return values may be
+// spread that contains the given index. The return values may be
 // null if there is no facing page or the index is invalid.
 br.getSpreadIndices = function(pindex) {   
     var spreadIndices = [null, null]; 
@@ -74,7 +83,8 @@ br.getSpreadIndices = function(pindex) {
 
 // For a given "accessible page index" return the page number in the book.
 //
-// For example, index 5 might correspond to "Page 1" if there is front matter such
+// For example, index 5 might correspond to "Page 1" if there is front matter
+// such
 // as a title page and table of contents.
 br.getPageNum = function(index) {
     return bookInfo.pages[index].name;
@@ -97,7 +107,27 @@ br.getEmbedCode = function(frameWidth, frameHeight, viewParams) {
 // Let's go!
 br.init();
 
-// read-aloud and search need backend compenents and are not supported in the demo
+// read-aloud and search need backend compenents and are not supported in the
+// demo
 $('#BRtoolbar').find('.read').hide();
 $('#textSrch').hide();
 $('#btnSrch').hide();
+
+$('#BRpage').after('<div id="BRpagebox">Go to:<input type="text"/></div>');
+$('#BRpagebox').find('input').val(br.getPageNum(br.currentIndex()));
+$('#BRpagebox').find('input').change(function(){
+	br.jumpToIndex(br.getPageIndex($(this).val()));
+});
+
+$(".BRicon.info").before('<button class="BRicon download"></button>');
+$('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
+$('body').append(br.blankDownloadDiv());
+br.buildDownloadDiv($('#BRdownload'));
+$('#BRdownload').before($('#BRinfo'));
+
+var mainDiv = $('<div id="main" />');
+$('#BookReader').wrap(mainDiv);
+$('#BookReader').before(br.buildCollapsableBox());
+
+$('body').append(br.blankOCRDiv());
+$('#BRocr').before($('#BRinfo'));

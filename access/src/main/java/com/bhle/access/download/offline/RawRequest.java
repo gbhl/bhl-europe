@@ -14,7 +14,7 @@ public class RawRequest {
 	public RawRequest() {
 	}
 	
-	public RawRequest(Object[] args) {
+	RawRequest(Object[] args) {
 		this.guid = (String) args[0];
 		this.ranges = (String) args[1];
 		Resolution resolution = (Resolution) args[2];

@@ -15,15 +15,8 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<filter-mapping>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-
-	<filter>
-		<filter-name>shallowEtagHeaderFilter</filter-name>
-		<filter-class>org.springframework.web.filter.ShallowEtagHeaderFilter</filter-class>
-	</filter>
+	<!-- <filter-mapping> <filter-name>springSecurityFilterChain</filter-name> 
+		<url-pattern>/*</url-pattern> </filter-mapping> -->
 
 	<servlet>
 		<servlet-name>Batch Servlet</servlet-name>
@@ -39,27 +32,6 @@
 		<servlet-name>Batch Servlet</servlet-name>
 		<url-pattern>/batch-admin/*</url-pattern>
 	</servlet-mapping>
-
-	<filter>
-		<filter-name>springSecurityFilterChain</filter-name>
-		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-	</filter>
-
-
-	<filter>
-		<filter-name>hiddenHttpMethodFilter</filter-name>
-		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
-	</filter>
-
-	<filter-mapping>
-		<filter-name>shallowEtagHeaderFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-
-	<filter-mapping>
-		<filter-name>hiddenHttpMethodFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
 
 
 	<filter>

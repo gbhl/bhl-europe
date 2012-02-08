@@ -11,7 +11,8 @@ import com.yourmediashelf.fedora.client.messaging.MessagingException;
 
 @Component
 public class FedoraJmsInitializer {
-	@Autowired (required = true)
+	
+	@Autowired
 	private MessagingClient messagingClient;
 
 	

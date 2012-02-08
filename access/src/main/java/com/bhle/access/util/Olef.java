@@ -3,6 +3,8 @@ package com.bhle.access.util;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.xml.namespace.QName;
 import javax.xml.parsers.DocumentBuilder;
@@ -15,6 +17,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class Olef {
@@ -56,7 +59,27 @@ public class Olef {
 
 	public String getPageName(int i) {
 		// TODO need more spec
-		return "Page " + (i + 1);
+		String pageName = (String) evaluateXpath(
+				"//itemInformation/files/file["+ (i + 1) +"]/pages/page/name/text()",
+				XPathConstants.STRING);
+		if(pageName == null || pageName.equals("")){
+			System.out.println("Not Found");
+			pageName = String.valueOf(i+1);
+		}
+		return pageName;
+	}
+	
+	public List<String> getScientificNames(int i) {
+		NodeList scientificNameNodes = (NodeList) evaluateXpath(
+				"//itemInformation/files/file["+ (i + 1) +" ]/pages/page/taxon/dwc:scientificName/text()",
+				XPathConstants.NODESET);
+		
+		List<String> scientificNames = new ArrayList<String>();
+		
+		for (int j = 0; j < scientificNameNodes.getLength(); j++){
+			scientificNames.add(scientificNameNodes.item(j).getNodeValue());
+		}
+		return scientificNames;
 	}
 
 	private Object evaluateXpath(String xpathExpression, QName returnType) {
@@ -65,7 +88,7 @@ public class Olef {
 			XPathFactory factory = XPathFactory.newInstance();
 			XPath xpath = factory.newXPath();
 
-			xpath.setNamespaceContext(new ModsNamespaceContext());
+			xpath.setNamespaceContext(new OlefNamespaceContext());
 
 			XPathExpression expr = xpath.compile(xpathExpression);
 			Object obj = expr.evaluate(doc, returnType);

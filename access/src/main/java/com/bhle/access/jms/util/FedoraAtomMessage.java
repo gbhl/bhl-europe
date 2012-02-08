@@ -10,7 +10,6 @@ import org.apache.abdera.model.Entry;
 import org.apache.abdera.parser.Parser;
 
 
-import com.bhle.access.domain.Method;
 
 public class FedoraAtomMessage {
 

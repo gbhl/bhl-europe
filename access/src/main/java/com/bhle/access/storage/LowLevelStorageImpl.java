@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -19,6 +18,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class LowLevelStorageImpl implements LowLevelStorage {
+	
+	private static final Logger logger = LoggerFactory
+			.getLogger(LowLevelStorageImpl.class);
 
 	private BlobStore blobStore;
 

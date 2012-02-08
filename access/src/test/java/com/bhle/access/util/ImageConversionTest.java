@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import junit.framework.Assert;
 
 import org.apache.log4j.Logger;
+import org.hyperic.sigar.OperatingSystem;
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IM4JavaException;
 import org.im4java.core.IMOperation;
@@ -41,14 +42,14 @@ public class ImageConversionTest implements ResourceLoaderAware {
 
 	@Before
 	public void init() {
-		String myPath = "C:\\Program Files\\ImageMagick";
-		ProcessStarter.setGlobalSearchPath(myPath);
+//		String myPath = "C:\\Program Files\\ImageMagick";
+//		ProcessStarter.setGlobalSearchPath(myPath);
 	}
 
 	@Test
 	public void testTiffToJp2() throws Exception {
 		Resource tiff = resourceLoader
-				.getResource("classpath:com/bhle/access/util/sample.TIF");
+				.getResource("classpath:com/bhle/access/sample/sample.TIF");
 
 		String currentPath = tiff.getFile().getParent();
 		String tiffPath = tiff.getFile().getAbsolutePath();
@@ -74,7 +75,7 @@ public class ImageConversionTest implements ResourceLoaderAware {
 	public void testPiping() throws IOException, InterruptedException,
 			IM4JavaException {
 		Resource tiff = resourceLoader
-				.getResource("classpath:com/bhle/access/util/sample.TIF");
+				.getResource("classpath:com/bhle/access/sample/sample.TIF");
 
 		String currentPath = tiff.getFile().getParent();
 		String tiffPath = tiff.getFile().getAbsolutePath();
@@ -94,7 +95,7 @@ public class ImageConversionTest implements ResourceLoaderAware {
 
 		OutputStream out = new FileOutputStream(jp2Path);
 		out.write(byteArrayOutputStream.toByteArray());
-		
+
 		byteArrayOutputStream.close();
 		out.close();
 	}

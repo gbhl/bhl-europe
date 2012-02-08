@@ -3,10 +3,12 @@ package com.bhle.access.storage.akubra.mapper.path;
 import java.net.URI;
 import java.util.regex.Pattern;
 
+import org.springframework.beans.factory.annotation.Value;
+
 import com.bhle.access.util.FedoraURI;
 
 public class PairtreePathMapper implements PathMapper {
-
+	
 	private int fixedPathLength;
 
 	public PairtreePathMapper(int fixedPathLength) {
@@ -18,7 +20,7 @@ public class PairtreePathMapper implements PathMapper {
 		StringBuffer fullPath = new StringBuffer();
 
 		String guid = fedoraURI.getGuid();
-		String serialNumber = fedoraURI.getSerialNumber();
+		
 		int pathLengthCount = 0;
 		for (int i = 0; i < guid.length(); i++) {
 			fullPath.append(guid.charAt(i));
@@ -42,10 +44,10 @@ public class PairtreePathMapper implements PathMapper {
 		
 		if (fileNameFrags.length == 3) {
 			if (Pattern.matches("\\d+", fileNameFrags[1])){
-				pid = fileNameFrags[0] + "-" + fileNameFrags[1];
+				pid = FedoraURI.getPidFromGuid(fileNameFrags[0]) + "-" + fileNameFrags[1];
 				return pid;
 			} else {
-				pid = fileNameFrags[0];
+				pid = FedoraURI.getPidFromGuid(fileNameFrags[0]);
 				return pid;
 			}
 		} else {

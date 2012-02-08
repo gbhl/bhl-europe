@@ -4,7 +4,17 @@ import java.net.URI;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.akubraproject.UnsupportedIdException;
+import org.springframework.beans.factory.annotation.Value;
+
 public class FedoraURI {
+
+	
+	public static String GUID_BANK_ID;
+	
+	public void setGuidBankId(String bankId){
+		FedoraURI.GUID_BANK_ID = bankId;
+	}
 
 	public static String DEFAULT_NAMESPACE;
 
@@ -31,28 +41,21 @@ public class FedoraURI {
 
 		this.scheme = uri.getScheme();
 		String path = uri.getSchemeSpecificPart();
-		Pattern datastreamPattern = Pattern.compile("fedora/.*:.*/.*");
-		Matcher datastreamMatcher = datastreamPattern.matcher(path);
-
-		Pattern objectPattern = Pattern.compile("fedora/.*:[^/]*");
-		Matcher objectMatcher = objectPattern.matcher(path);
-
-		if (datastreamMatcher.matches()) {
-			String[] frags = path.split("/");
-			this.pid = frags[1];
-			this.namespace = pid.substring(0, pid.indexOf(":"));
-			this.dsid = frags[2];
-		} else if (objectMatcher.matches()) {
-			String[] frags = path.split("/");
-			this.pid = frags[1];
+		Pattern pattern = Pattern
+				.compile("^fedora/((\\w+):(?:[^-/]+)-([^-/]+)-?(\\d*))/?(\\w*)$");
+		Matcher matcher = pattern.matcher(path);
+		if (matcher.find()) {
+			pid = matcher.group(1);
+			namespace = matcher.group(2);
+			guid = matcher.group(3);
+			serialNumber = matcher.group(4);
+			dsid = matcher.group(5);
 		} else {
-			throw new UnsupportedOperationException();
-		}
-		if (pid.contains("-")) {
-			this.guid = pid.substring(pid.indexOf(":") + 1, pid.indexOf("-"));
-			this.serialNumber = pid.substring(pid.indexOf("-") + 1);
-		} else {
-			this.guid = pid.substring(pid.indexOf(":") + 1);
+			try {
+				throw new UnsupportedIdException(uri);
+			} catch (UnsupportedIdException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -89,7 +92,7 @@ public class FedoraURI {
 	}
 
 	public static String getPidFromGuid(String guid) {
-		return FedoraURI.DEFAULT_NAMESPACE + ":" + guid;
+		return FedoraURI.DEFAULT_NAMESPACE + ":" + GUID_BANK_ID + "-" + guid;
 	}
 
 	public static FedoraURI getFedoraUri(String guid, String dsid) {

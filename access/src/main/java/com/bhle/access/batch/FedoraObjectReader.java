@@ -30,6 +30,7 @@ public class FedoraObjectReader implements ItemReader<DigitalObjectWrapper> {
 
 		if (cursor >= pids.size() - 1) {
 			cursor = 0;
+			pids = null;
 			return null;
 		} else {
 			logger.info("Batch Read: " + pids.get(cursor));

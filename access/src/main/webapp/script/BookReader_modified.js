@@ -1298,7 +1298,10 @@ BookReader.prototype.jumpToPage = function(pageNum) {
 //______________________________________________________________________________
 BookReader.prototype.jumpToIndex = function(index, pageX, pageY) {
 
-    this.willChangeToIndex(index);
+	$(document).trigger('jumpToIndex', [index]);
+	console.log('jumpToIndex ' + index);
+	
+	this.willChangeToIndex(index);
 
     this.ttsStop();
 

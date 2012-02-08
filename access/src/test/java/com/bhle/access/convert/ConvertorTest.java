@@ -1,6 +1,5 @@
 package com.bhle.access.convert;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -36,34 +35,39 @@ public class ConvertorTest implements ResourceLoaderAware {
 
 	}
 
-	private DatastreamWrapper dcDatastreamWrapper = new DatastreamWrapper("DC");
-	private DigitalObjectWrapper simpleObjectWrapper = new DigitalObjectWrapper(
-			"test:SIMPLEOBJID");
-
 	private DatastreamWrapper tiffDatastreamWrapper = new DatastreamWrapper(
 			"TIFF");
 	private DigitalObjectWrapper pageObjectWrapper = new DigitalObjectWrapper(
 			"test:PAGEOBJECTID");
 
+	private DatastreamWrapper olefDatastreamWrapper = new DatastreamWrapper(
+			"OLEF");
+	private DigitalObjectWrapper bookObjectWrapper = new DigitalObjectWrapper(
+			"test:BOOKOBJECTID");
+
 	@Before
 	public void init() {
-		String myPath = "C:\\Program Files\\ImageMagick";
-		ProcessStarter.setGlobalSearchPath(myPath);
-		
-		initialSimpleObject();
+//		String myPath = "C:\\Program Files\\ImageMagick";
+//		ProcessStarter.setGlobalSearchPath(myPath);
+
+		initialBookObject();
 		initialPageObject();
 	}
 
-	private void initialSimpleObject() {
+	private void initialBookObject() {
 		List<String> contentModels = new ArrayList<String>();
-		contentModels.add("info:fedora/fedora-system:ContentModel-3.0");
-		simpleObjectWrapper.setConternModels(contentModels);
+		contentModels.add("info:fedora/bhle-cmodel:monographCModel");
+		bookObjectWrapper.setConternModels(contentModels);
 
-		dcDatastreamWrapper.setMimeType("text/plain");
-		dcDatastreamWrapper.setDigitalObject(simpleObjectWrapper);
-		String dc = "<dc/>";
-		dcDatastreamWrapper.setInputStream(new ByteArrayInputStream(dc
-				.getBytes()));
+		olefDatastreamWrapper.setMimeType("text/xml");
+		olefDatastreamWrapper.setDigitalObject(bookObjectWrapper);
+		Resource olef = resourceLoader
+				.getResource("classpath:com/bhle/access/sample/OLEF.xml");
+		try {
+			olefDatastreamWrapper.setInputStream(olef.getInputStream());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private void initialPageObject() {
@@ -75,7 +79,8 @@ public class ConvertorTest implements ResourceLoaderAware {
 		tiffDatastreamWrapper.setDigitalObject(pageObjectWrapper);
 		try {
 			tiffDatastreamWrapper.setInputStream(resourceLoader.getResource(
-					"classpath:com/bhle/access/util/sample.TIF").getInputStream());
+					"classpath:com/bhle/access/sample/sample.TIF")
+					.getInputStream());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -86,10 +91,11 @@ public class ConvertorTest implements ResourceLoaderAware {
 		Tiff2JpegConvertor tiffConvertor = new Tiff2JpegConvertor();
 		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
 		convertors.add(tiffConvertor);
-		
+
 		ConvertorManager.convertors = convertors;
 
-		Derivative[] derivatives = ConvertorManager.derive(tiffDatastreamWrapper);
+		Derivative[] derivatives = ConvertorManager
+				.derive(tiffDatastreamWrapper);
 		Assert.assertEquals(1, derivatives.length);
 
 		File jp2 = null;
@@ -112,5 +118,30 @@ public class ConvertorTest implements ResourceLoaderAware {
 		} catch (InfoException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Test
+	public void testOlefConvertors() {
+		Olef2BibTexConvertor olef2BibTexConvertor = new Olef2BibTexConvertor();
+		Olef2DcConvertor olef2DcConvertor = new Olef2DcConvertor();
+		Olef2EndnoteConvertor olef2EndnoteConvertor = new Olef2EndnoteConvertor();
+		Olef2Marc21Convertor olef2Marc21Convertor = new Olef2Marc21Convertor();
+		Olef2ModsConvertor olef2ModsConvertor = new Olef2ModsConvertor();
+		Olef2OlefConvertor olef2OlefConvertor = new Olef2OlefConvertor();
+		
+		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
+		convertors.add(olef2BibTexConvertor);
+		convertors.add(olef2DcConvertor);
+		convertors.add(olef2EndnoteConvertor);
+		convertors.add(olef2Marc21Convertor);
+		convertors.add(olef2ModsConvertor);
+		convertors.add(olef2OlefConvertor);
+
+		ConvertorManager.convertors = convertors;
+
+		Derivative[] derivatives = ConvertorManager
+				.derive(olefDatastreamWrapper);
+		
+		Assert.assertEquals(6, derivatives.length);
 	}
 }

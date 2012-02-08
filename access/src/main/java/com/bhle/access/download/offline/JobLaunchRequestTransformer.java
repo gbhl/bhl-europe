@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.configuration.support.MapJobRegistry;
+import org.springframework.batch.core.launch.NoSuchJobException;
 import org.springframework.batch.integration.launch.JobLaunchRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -19,12 +21,11 @@ public class JobLaunchRequestTransformer {
 			.getLogger(JobLaunchRequestTransformer.class);
 
 	@Autowired
-	@Qualifier("offlineProcessing")
-	private Job job;
+	private MapJobRegistry jobLocator;
 
 	@Transformer
 	public Message<JobLaunchRequest> tramsformRawRequestToJobLaunchRequest(
-			Message<RawRequest> rawRequestMessage) {
+			Message<RawRequest> rawRequestMessage) throws NoSuchJobException {
 		RawRequest rawRequest = rawRequestMessage.getPayload();
 		
 		logger.info("Transform request from: " + rawRequest.getEmail());
@@ -37,7 +38,7 @@ public class JobLaunchRequestTransformer {
 		jobParametersBuilder.addLong("timestamp", (Long)rawRequestMessage.getHeaders().get(MessageHeaders.TIMESTAMP));
 		JobParameters jobParameters = jobParametersBuilder.toJobParameters();
 		
-		JobLaunchRequest jobLaunchRequest = new JobLaunchRequest(job, jobParameters);
+		JobLaunchRequest jobLaunchRequest = new JobLaunchRequest(jobLocator.getJob("offlineProcessing"), jobParameters);
 		return MessageBuilder.withPayload(jobLaunchRequest).build();
 	}
 }

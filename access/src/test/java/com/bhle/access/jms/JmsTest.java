@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.bhle.access.domain.Method;
 import com.bhle.access.jms.listener.AtomFedoraJmsListener;
 import com.bhle.access.jms.util.FedoraAtomMessage;
+import com.bhle.access.jms.util.Method;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration

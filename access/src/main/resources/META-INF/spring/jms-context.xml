@@ -12,11 +12,12 @@
                            http://activemq.apache.org/schema/core 
                            http://activemq.apache.org/schema/core/activemq-core.xsd">
 
-	<context:component-scan base-package="com.bhle.access.jms" />
+	<context:component-scan base-package="com.bhle.access.jms.*" />
 
-	<context:property-placeholder location="classpath:access.properties" />
+	<bean id="initializer" class="com.bhle.access.jms.FedoraJmsInitializer" scope="singleton" />
 
-	<bean id="messagingClient" class="com.yourmediashelf.fedora.client.messaging.MessagingClient">
+	<bean id="messagingClient"
+		class="com.yourmediashelf.fedora.client.messaging.MessagingClient">
 		<constructor-arg value="access" />
 		<constructor-arg ref="fedoraJmsContainer" />
 		<constructor-arg>
@@ -29,11 +30,11 @@
 		</constructor-arg>
 		<constructor-arg value="true" />
 	</bean>
-	
+
 	<bean id="fedoraJmsContainer" class="com.bhle.access.jms.listener.FedoraJmsContainer">
 		<property name="listeners">
 			<list>
-				<ref bean="atomFedoraJmsListener"/>
+				<ref bean="atomFedoraJmsListener" />
 			</list>
 		</property>
 	</bean>

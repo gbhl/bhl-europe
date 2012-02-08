@@ -2,6 +2,7 @@ package com.bhle.access.util;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import junit.framework.Assert;
 
@@ -29,7 +30,7 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 	@Before
 	public void init() {
 		olef = resourceLoader
-				.getResource("classpath:com/bhle/access/util/OLEF.xml");
+				.getResource("classpath:com/bhle/access/sample/OLEF.xml");
 	}
 
 	@Test
@@ -99,6 +100,17 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 			Olef olefDoc = new Olef(olef.getInputStream());
 			String entryPage = olefDoc.getEntryPage();
 			Assert.assertEquals("18", entryPage);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testOlefScientificNames(){
+		try {
+			Olef olefDoc = new Olef(olef.getInputStream());
+			List<String> names = olefDoc.getScientificNames(8);
+			Assert.assertEquals(39, names.size());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

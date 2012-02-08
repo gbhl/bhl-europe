@@ -15,17 +15,28 @@
 		<property name="convertors">
 			<list>
 				<ref bean="tiff2Jp2Convertor" />
+				<ref bean="ocr2OcrConvertor" />
 				<ref bean="Olef2DcConvertor" />
 				<ref bean="Olef2OlefConvertor" />
 				<ref bean="Olef2ModsConvertor" />
 				<ref bean="Olef2Marc21Convertor" />
 				<ref bean="Olef2BibTexConvertor" />
 				<ref bean="Olef2EndnoteConvertor" />
+				<ref bean="bookInfoConvertor" />
 			</list>
 		</property>
 	</bean>
 
 	<bean id="tiff2Jp2Convertor" class="com.bhle.access.convert.Tiff2JpegConvertor">
+		<property name="contentModels">
+			<list>
+				<value>info:fedora/bhle-cmodel:pageCModel</value>
+				<value>info:fedora/bhle-cmodel:imageCModel</value>
+			</list>
+		</property>
+	</bean>
+	
+		<bean id="ocr2OcrConvertor" class="com.bhle.access.convert.Ocr2OcrConvertor">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:pageCModel</value>
@@ -117,5 +128,5 @@
 		</property>
 	</bean>
 
-
+	<bean id="bookInfoConvertor" class="com.bhle.access.bookreader.BookInfoConvertor" />
 </beans>

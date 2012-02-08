@@ -1,9 +1,7 @@
 package com.bhle.access.util;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
@@ -29,7 +27,7 @@ public class BibUtilsTest implements ResourceLoaderAware {
 	@Before
 	public void init() {
 		mods = resourceLoader
-				.getResource("classpath:com/bhle/access/util/MODS.xml");
+				.getResource("classpath:com/bhle/access/sample/MODS.xml");
 	}
 
 	@Test

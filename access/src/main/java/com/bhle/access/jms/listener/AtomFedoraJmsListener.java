@@ -38,7 +38,7 @@ public class AtomFedoraJmsListener implements FedoraJmsListener {
 
 		switch (atomMessage.getMethodName()) {
 		case INGEST:
-			logger.info("Generate derivatives after ingest");
+			logger.debug("Generate derivatives after ingest");
 			DigitalObjectWrapper objectWrapper = DigitalObjectFactory
 					.build(atomMessage);
 			Derivative[] objectDerivatives = ConvertorManager
@@ -48,14 +48,13 @@ public class AtomFedoraJmsListener implements FedoraJmsListener {
 			}
 			break;
 		case PURGE_OBJECT:
-			// TODO: delete the whole folder
-			logger.info("Generate derivatives after purgeObject");
+			logger.debug("Delete derivatives after purgeObject");
 			storageService.deleteObject(atomMessage.getPid());
 			break;
 		case ADD_DATASTREAM:
-			logger.info("Generate derivatives after addDatastream");
+			logger.debug("Generate derivatives after addDatastream");
 		case MODIFY_DATASTREAM:
-			logger.info("Delete derivatives after modifyDatastream");
+			logger.debug("Delete derivatives after modifyDatastream");
 			DatastreamWrapper datastreamWrapper = DatastreamFactory
 					.build(atomMessage);
 			Derivative[] datastreamDerivatives = ConvertorManager
@@ -65,7 +64,7 @@ public class AtomFedoraJmsListener implements FedoraJmsListener {
 			}
 			break;
 		case PURGE_DATASTREAM:
-			logger.info("Delete derivatives after purgeDatastream");
+			logger.debug("Delete derivatives after purgeDatastream");
 			DatastreamWrapper datastream = DatastreamFactory
 					.buildInformation(atomMessage);
 			Derivative[] derivativesInformation = ConvertorManager

@@ -4,7 +4,7 @@
 
 	<groupId>com.bhle</groupId>
 	<artifactId>access</artifactId>
-	<version>0.5</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 
 	<name>access</name>
@@ -217,6 +217,13 @@
 			<groupId>org.hyperic</groupId>
 			<artifactId>sigar</artifactId>
 			<version>1.6.3.82</version>
+		</dependency>
+		<dependency>
+			<groupId>proai</groupId>
+			<artifactId>proai</artifactId>
+			<version>1.1.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/lib/proai-1.1.1.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<build>

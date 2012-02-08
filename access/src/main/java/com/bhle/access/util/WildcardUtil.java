@@ -25,15 +25,11 @@ public class WildcardUtil {
 		String wildcardRegex = wildcardToRegex(wildcardPath);
 		List<File> result = new ArrayList<File>();
 
-		System.out.println("Base Dir: " + tmpBaseDir);
-		System.out.println("Regex: " + wildcardRegex);
 		Iterator<File> iterator = null;
 		for (iterator = FileUtils.iterateFiles(new File(tmpBaseDir), null, true); iterator
 				.hasNext();) {
 			File file = iterator.next();
-			System.out.println("luguo: " + file);
 			if (Pattern.matches(wildcardRegex, file.toString())) {
-				System.out.println(file);
 				result.add(file);
 			}
 		}

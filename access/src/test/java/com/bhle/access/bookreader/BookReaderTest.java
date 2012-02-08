@@ -9,15 +9,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.bhle.access.BaseTest;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
-public class BookReaderTest {
-	
+public class BookReaderTest extends BaseTest {
+
 	@Ignore
 	@Test
-	public void testBuildBookInfo(){
-		BookInfo book = BookInfoBuilder.build("a0hhmgs3");
+	public void testBuildBookInfo() {
+		BookInfo book = BookInfoBuilder.build("a00000000000132805961115");
 		Assert.assertNotNull(book.getTitle());
 		Assert.assertNotNull(book.getEntryPageIndex());
 	}

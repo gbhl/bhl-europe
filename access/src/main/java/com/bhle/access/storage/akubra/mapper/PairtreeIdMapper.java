@@ -37,8 +37,7 @@ public class PairtreeIdMapper implements IdMapper {
 		logger.info("Receive Internal ID: " + internalId);
 		String externalPath = pathMapper.getExternalPath(internalId, FedoraURI.DEFAULT_NAMESPACE);
 		String externalFile = fileMapper.getExternalFile(internalId);
-		URI externalId = URI.create(FedoraURI.DEFAULT_SCHEME + ":fedora/" + FedoraURI.DEFAULT_NAMESPACE
-				+ ":" + externalPath + "/" + externalFile);
+		URI externalId = URI.create(FedoraURI.DEFAULT_SCHEME + ":fedora/" + externalPath + "/" + externalFile);
 		logger.info("Return External ID: " + externalId.toString());
 		return externalId;
 	}

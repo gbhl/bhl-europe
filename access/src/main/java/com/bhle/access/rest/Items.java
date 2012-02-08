@@ -3,22 +3,21 @@ package com.bhle.access.rest;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map.Entry;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.ext.Provider;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.bhle.access.convert.ConvertorManager;
@@ -26,17 +25,15 @@ import com.bhle.access.feed.AtomFactory;
 import com.bhle.access.storage.StorageService;
 import com.sun.jersey.api.NotFoundException;
 
-@Path("items")
 @Component
+@Scope("request")
+@Path("items")
 public class Items {
 	@Context
 	UriInfo uriInfo;
 
-	private static StorageService service;
-
-	public void setStorageService(StorageService service) {
-		Items.service = service;
-	}
+	@Autowired
+	private StorageService service;
 
 	private static final Logger logger = LoggerFactory.getLogger(Items.class);
 
@@ -44,6 +41,9 @@ public class Items {
 	public Response getItems() {
 		try {
 			List<URI> guids = service.listGuids();
+			for (URI uri : guids) {
+				logger.info(uri.toString());
+			}
 			return Response.ok(AtomFactory.buildAtom(guids))
 					.type(MediaType.APPLICATION_ATOM_XML).build();
 		} catch (IOException e) {
@@ -53,7 +53,7 @@ public class Items {
 	}
 
 	@GET
-	@Path("{guid:\\w{8}}")
+	@Path("{guid}")
 	public Response getItem(@PathParam("guid") String guid) {
 		try {
 			List<URI> dsids = service.listDatastreams(guid);
@@ -66,7 +66,7 @@ public class Items {
 	}
 
 	@GET
-	@Path("{guid:\\w{8}}/{dsid}")
+	@Path("{guid}/{dsid}")
 	public Response getDatastream(@PathParam("guid") String guid,
 			@PathParam("dsid") String dsid) {
 		List<URI> dsids = null;
@@ -95,7 +95,7 @@ public class Items {
 	}
 
 	@GET
-	@Path("{guid:\\w{8}}/{dsid}/{serialNumber:\\d+}")
+	@Path("{guid}/{dsid}/{serialNumber:\\d+}")
 	public Response getDatastreamBySerialNumber(@PathParam("guid") String guid,
 			@PathParam("dsid") String dsid,
 			@PathParam("serialNumber") String serialNumber) {

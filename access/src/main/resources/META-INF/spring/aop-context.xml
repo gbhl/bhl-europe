@@ -8,8 +8,6 @@
 	
 	<aop:aspectj-autoproxy proxy-target-class="true"/>
 	
-	<bean class="com.bhle.access.rest.Download" />
-	
 	<bean class="com.bhle.access.download.offline.OfflineProcessingAspect" />
 	
 </beans>

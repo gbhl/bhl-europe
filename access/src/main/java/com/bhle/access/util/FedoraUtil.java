@@ -1,5 +1,6 @@
 package com.bhle.access.util;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -26,9 +27,9 @@ import com.yourmediashelf.fedora.generated.access.DatastreamType;
 public class FedoraUtil {
 	private static final Logger logger = LoggerFactory
 			.getLogger(FedoraUtil.class);
-	
+
 	public static final String PAGE_MODEL = "bhle-cmodel:pageCModel";
-	
+
 	private static FedoraClient client;
 
 	@Autowired
@@ -95,11 +96,11 @@ public class FedoraUtil {
 	public static String[] getAllMembers(String pid, String contentModel) {
 		String query = "select $object from <#ri> "
 				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + pid
-				+ "> " + "and $object <fedora-model:hasModel> <info:fedora/" + contentModel + ">)";
+				+ "> " + "and $object <fedora-model:hasModel> <info:fedora/"
+				+ contentModel + ">)";
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
-					.lang("itql").format("csv").type("tuples")
-					.execute(client);
+					.lang("itql").format("csv").type("tuples").execute(client);
 			String csv = IOUtils.toString(riSearchResponse
 					.getEntityInputStream());
 			return CsvUtil.readOneColumnCsv(csv);
@@ -109,5 +110,21 @@ public class FedoraUtil {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public static void ingestFOXML(File file) {
+		try {
+			FedoraClient.ingest().content(file).execute(client);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void purgeObject(String pid) {
+		try {
+			FedoraClient.purgeObject(pid).execute(client);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		}
 	}
 }

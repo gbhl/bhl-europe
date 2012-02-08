@@ -4,11 +4,13 @@ import java.net.URI;
 
 import org.akubraproject.map.IdMapper;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.bhle.access.download.offline.storage.OfflineProductIdMapper;
 
 public class OfflineTest {
+	@Ignore
 	@Test
 	public void testOfflineProductIdMapper(){
 		IdMapper mapper = new OfflineProductIdMapper();

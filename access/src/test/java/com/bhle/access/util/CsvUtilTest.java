@@ -27,7 +27,7 @@ public class CsvUtilTest implements ResourceLoaderAware {
 	@Before
 	public void init() {
 		pidCvs = resourceLoader
-				.getResource("classpath:com/bhle/access/util/pids.csv");
+				.getResource("classpath:com/bhle/access/sample/pids.csv");
 	}
 
 	@Test

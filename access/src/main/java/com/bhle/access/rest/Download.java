@@ -17,6 +17,7 @@ import javax.ws.rs.core.StreamingOutput;
 import org.apache.commons.io.IOUtils;
 
 import com.bhle.access.download.JpegPackageGenerator;
+import com.bhle.access.download.OcrGenerator;
 import com.bhle.access.download.PageURIExtractor;
 import com.bhle.access.download.PageURIExtractorImpl;
 import com.bhle.access.download.PdfGenerator;
@@ -30,7 +31,7 @@ public class Download {
 	private static PageURIExtractor PID_EXTRACTOR = new PageURIExtractorImpl();
 
 	@GET
-	@Path("{guid:\\w{8}}/jpg")
+	@Path("{guid}/jpg")
 	@Produces("application/x-zip-compressed")
 	@Offlinable()
 	public Response downloadJpeg(
@@ -48,12 +49,8 @@ public class Download {
 		}
 	}
 
-	public Response downloadOcr(String guid, String ranges) {
-		return null;
-	}
-
 	@GET
-	@Path("{guid:\\w{8}}/pdf")
+	@Path("{guid}/pdf")
 	@Produces("application/pdf")
 	@Offlinable()
 	public Response downloadPdf(
@@ -64,6 +61,23 @@ public class Download {
 		byte[] bytes;
 		try {
 			bytes = PdfGenerator.generate(pageURIs, resolution);
+			return Response.ok(wrapByteArrayAsStreamingOutput(bytes)).build();
+		} catch (IOException e) {
+			e.printStackTrace();
+			return Response.serverError().build();
+		}
+	}
+	
+	@GET
+	@Path("{guid}/ocr")
+	@Produces("text/plain")
+	public Response downloadOcr(
+			@PathParam("guid") String guid,
+			@DefaultValue("") @QueryParam("ranges") String ranges) {
+		String[] pageURIs = PID_EXTRACTOR.getPageURIs(guid, ranges);
+		byte[] bytes;
+		try {
+			bytes = OcrGenerator.generate(pageURIs);
 			return Response.ok(wrapByteArrayAsStreamingOutput(bytes)).build();
 		} catch (IOException e) {
 			e.printStackTrace();

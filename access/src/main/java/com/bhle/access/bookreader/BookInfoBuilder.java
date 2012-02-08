@@ -11,6 +11,7 @@ import org.im4java.core.InfoException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.bhle.access.download.OcrGenerator;
 import com.bhle.access.util.DjatokaURLBuilder;
 import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.FedoraUtil;
@@ -31,6 +32,7 @@ public class BookInfoBuilder {
 
 	private static BookInfo buildBookInfo(String guid) {
 		BookInfo book = new BookInfo();
+		book.setGuid(guid);
 		Olef olef = getOlef(guid);
 		book.setOlef(olef);
 		book.setTitle(olef.getTitle());
@@ -52,10 +54,17 @@ public class BookInfoBuilder {
 			page.setName(olef.getPageName(i));
 			setPageUrl(pageUris[i], page);
 			setPageWidthAndHeight(pageUris[i], page);
-
+			page.setScientificNames(olef.getScientificNames(i));
+			setPageOcr(pageUris[i], page);
 			book.addPage(page);
 		}
 
+	}
+
+	private static void setPageOcr(String pageUri, PageInfo page) {
+		FedoraURI fedoraUri = new FedoraURI(URI.create(pageUri + "/OCR"));
+		URI staticUri = StaticURI.toStaticHttpUri(fedoraUri);
+		page.setOcrUrl(staticUri.toString());
 	}
 
 	private static void setEntryPage(BookInfo book, Olef olef) {

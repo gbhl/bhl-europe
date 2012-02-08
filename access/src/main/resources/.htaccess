@@ -1,6 +1,6 @@
 <IfModule alias_module>
-	Alias /access D:/temp
-	<Directory D:/temp>
+	Alias /static /mnt/nfs/dev/data/access/items
+	<Directory /mnt/nfs/dev/data/access/items>
 		Order allow,deny
 		Allow from all
 		Options Indexes
@@ -8,8 +8,8 @@
 		
 		<IfModule mod_rewrite.c> 
 			RewriteEngine On
-			RewriteBase /access
-			RewriteRule ^(\w{2})(\w{2})(\w{2})(\w{2})/?(.*)$ $1/$2/$3/$4/$1$2$3$4/$5
+			RewriteBase /static
+			RewriteRule ^(\w{8})(\w{8})(\w{8})/?(.*)$ $1/$2/$3/$1$2$3/$4
 		</IfModule>
 	</Directory>
 </IfModule>

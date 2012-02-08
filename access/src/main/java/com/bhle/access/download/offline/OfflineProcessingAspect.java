@@ -10,6 +10,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.bhle.access.util.SystemManagementUtil;
 import com.sun.jersey.api.view.Viewable;
 
 @Aspect
@@ -48,6 +49,6 @@ public class OfflineProcessingAspect {
 	}
 
 	private boolean CanBeRealTime() {
-		return true;
+		return !SystemManagementUtil.isBusy();
 	}
 }
