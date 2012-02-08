@@ -1,18 +1,20 @@
 package com.bhle.ingest.integration;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
-import org.apache.commons.io.FilenameUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.integration.file.DefaultDirectoryScanner;
 
 public class ReadySipFolderScanner extends DefaultDirectoryScanner {
+	
+	private static final Logger logger = LoggerFactory
+			.getLogger(ReadySipFolderScanner.class);
 
 	@Value("${ingest.directory.name}")
 	private String SIP_DIR_NAME;
@@ -28,11 +30,12 @@ public class ReadySipFolderScanner extends DefaultDirectoryScanner {
 
 	@Override
 	protected File[] listEligibleFiles(File directory) {
-		
 		if (directory.isFile()) {
 			return new File[0];
 		}
 
+		logger.info("Scanning File/Directory: "  + directory.getAbsolutePath());
+		
 		File[] rootFiles = directory.listFiles();
 		List<File> files = new ArrayList<File>(rootFiles.length);
 		for (File rootFile : rootFiles) {
