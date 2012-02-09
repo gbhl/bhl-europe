@@ -2,16 +2,23 @@ package com.bhle.access.bookreader;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.util.Arrays;
+import java.util.List;
 
+import net.sf.json.JSONObject;
+
+import org.apache.commons.io.IOUtils;
 import org.im4java.core.Info;
 import org.im4java.core.InfoException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import com.bhle.access.download.OcrGenerator;
+import com.bhle.access.domain.Derivative;
+import com.bhle.access.storage.StorageService;
 import com.bhle.access.util.DjatokaURLBuilder;
 import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.FedoraUtil;
@@ -19,6 +26,15 @@ import com.bhle.access.util.Olef;
 import com.bhle.access.util.StaticURI;
 
 public class BookInfoBuilder {
+
+	private static StorageService storageService;
+
+	@Autowired
+	public static void setStorageService(StorageService service) {
+		BookInfoBuilder.storageService = service;
+	}
+
+	private static String DSID = "BOOKREADER";
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(BookInfoBuilder.class);
@@ -116,6 +132,37 @@ public class BookInfoBuilder {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	public static void save(BookInfo bookInfo) {
+		Derivative derivative = new Derivative();
+		derivative.setPid(FedoraURI.getPidFromGuid(bookInfo.getGuid()));
+		derivative.setDsId(DSID);
+		JSONObject json = JSONObject.fromObject(bookInfo);
+		derivative.setInputStream(IOUtils.toInputStream(json.toString()));
+		storageService.updateDerivative(derivative);
+	}
+
+	public static BookInfo read(String guid) {
+		try {
+			InputStream in = storageService.openDatastream(guid, DSID, null);
+			String bookInfoJson = IOUtils.toString(in);
+			return (BookInfo) JSONObject.toBean(
+					JSONObject.fromObject(bookInfoJson), BookInfo.class);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static boolean exists(String guid) {
+		try {
+			List<URI> uris = storageService.getDatastream(guid, DSID);
+			return uris.size() > 0;
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
 }

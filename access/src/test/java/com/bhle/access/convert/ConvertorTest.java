@@ -47,8 +47,8 @@ public class ConvertorTest implements ResourceLoaderAware {
 
 	@Before
 	public void init() {
-//		String myPath = "C:\\Program Files\\ImageMagick";
-//		ProcessStarter.setGlobalSearchPath(myPath);
+		String myPath = "C:\\Program Files\\ImageMagick";
+		ProcessStarter.setGlobalSearchPath(myPath);
 
 		initialBookObject();
 		initialPageObject();

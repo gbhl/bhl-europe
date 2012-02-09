@@ -34,11 +34,6 @@ import com.sun.jersey.api.view.Viewable;
 @Path("stream")
 public class Stream {
 
-	@Autowired
-	private StorageService service;
-
-	private static String DSID = "BOOKREADER";
-
 	@GET
 	@Path("{guid}")
 	@Produces(MediaType.TEXT_HTML)
@@ -46,47 +41,15 @@ public class Stream {
 			@DefaultValue("false") @QueryParam("refresh") boolean refresh) {
 		BookInfo bookInfo = null;
 
-		if (!refresh && isBookInfoAvailable(guid)) {
-			bookInfo = readPregeneratedBookInfo(guid);
+		if (!refresh && BookInfoBuilder.exists(guid)) {
+			bookInfo = BookInfoBuilder.read(guid);
 		} else {
 			bookInfo = BookInfoBuilder.build(guid);
-			storeBoonInfo(guid, bookInfo);
+			BookInfoBuilder.save(bookInfo);
 		}
 
 		JSONObject json = JSONObject.fromObject(bookInfo);
 
 		return new Viewable("/bookreader", json.toString());
-	}
-
-	private BookInfo readPregeneratedBookInfo(String guid) {
-		try {
-			InputStream in = service.openDatastream(guid, DSID, null);
-			String bookInfoJson = IOUtils.toString(in);
-			return (BookInfo) JSONObject.toBean(
-					JSONObject.fromObject(bookInfoJson), BookInfo.class);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
-	private void storeBoonInfo(String guid, BookInfo bookInfo) {
-		Derivative derivative = new Derivative();
-		derivative.setPid(FedoraURI.getPidFromGuid(guid));
-		derivative.setDsId(DSID);
-		JSONObject json = JSONObject.fromObject(bookInfo);
-		derivative.setInputStream(IOUtils.toInputStream(json.toString()));
-		service.updateDerivative(derivative);
-
-	}
-
-	private boolean isBookInfoAvailable(String guid) {
-		try {
-			List<URI> uris = service.getDatastream(guid, DSID);
-			return uris.size() > 0;
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return false;
 	}
 }

@@ -13,12 +13,16 @@ import org.im4java.process.ProcessStarter;
 
 public class ImageUtil {
 
+	private static int DEFAULT_MAX_HEIGHT = 1920;
+	private static int DEFAULT_MAX_WEIGHT = 1920;
+
 	static {
-//		String myPath = "C:\\Program Files\\ImageMagick";
-//		ProcessStarter.setGlobalSearchPath(myPath);
+		String myPath = "C:\\Program Files\\ImageMagick";
+		ProcessStarter.setGlobalSearchPath(myPath);
 	}
 
-	public static InputStream tiffToJp2(InputStream tiffIn) {
+	public static InputStream tiffToJp2(InputStream tiffIn, int maxHeight,
+			int maxWidth) {
 		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
 
 		Pipe pipeIn = new Pipe(tiffIn, null);
@@ -26,6 +30,7 @@ public class ImageUtil {
 
 		IMOperation op = new IMOperation();
 		op.addImage("-");
+		op.resize(maxHeight, maxWidth);
 		op.addImage("jp2:-");
 
 		ConvertCmd convert = new ConvertCmd();
@@ -53,5 +58,9 @@ public class ImageUtil {
 
 		return byteIn;
 	}
-	
+
+	public static InputStream tiffToJp2(InputStream tiffIn) {
+		return tiffToJp2(tiffIn, DEFAULT_MAX_HEIGHT, DEFAULT_MAX_WEIGHT);
+	}
+
 }

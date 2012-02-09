@@ -9,7 +9,6 @@ import com.bhle.access.util.Olef;
 
 public class BookInfo {
 	private String guid;
-	
 	private String title;
 	private URL url;
 	private int entryPageIndex;

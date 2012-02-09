@@ -6,6 +6,5 @@
 
 	<bean class="com.bhle.access.rest.Download" />
 	<bean class="com.bhle.access.rest.Items" />
-	<bean class="com.bhle.access.rest.Stream" />
 
 </beans>

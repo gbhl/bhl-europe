@@ -19,6 +19,7 @@
 	<import resource="classpath*:/META-INF/spring/offline-context.xml" />
 	<import resource="classpath*:/META-INF/spring/static-context.xml" />
 	<import resource="classpath*:/META-INF/spring/rest-context.xml" />
+	<import resource="classpath*:/META-INF/spring/bookreader-context.xml" />
 
 
 </beans>

@@ -7,7 +7,7 @@ import com.bhle.access.convert.AbstractDataStreamConvertor;
 public class BookInfoConvertor extends AbstractDataStreamConvertor{
 
 	public String[] getContentModels() {
-		return null;
+		return new String[0];
 	}
 
 	public String getDatastreamId() {
