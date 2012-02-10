@@ -8,6 +8,7 @@ import junit.framework.Assert;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.ResourceLoaderAware;
@@ -63,6 +64,7 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testOlef2BibTex() {
 		try {
@@ -73,6 +75,7 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testOlef2Endnote() {
 		try {

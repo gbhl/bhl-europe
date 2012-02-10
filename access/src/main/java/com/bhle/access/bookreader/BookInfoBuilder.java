@@ -10,6 +10,7 @@ import java.util.List;
 
 import net.sf.json.JSONObject;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.im4java.core.Info;
 import org.im4java.core.InfoException;
@@ -29,9 +30,8 @@ public class BookInfoBuilder {
 
 	private static StorageService storageService;
 
-	@Autowired
-	public static void setStorageService(StorageService service) {
-		BookInfoBuilder.storageService = service;
+	public void setStorageService(StorageService storageService) {
+		BookInfoBuilder.storageService = storageService;
 	}
 
 	private static String DSID = "BOOKREADER";
@@ -104,16 +104,17 @@ public class BookInfoBuilder {
 	private static void setPageWidthAndHeight(String pageUri, PageInfo page) {
 		File pageFile = getPageFilePath(pageUri);
 		try {
-			Info info = new Info(pageFile.getAbsolutePath(), true);
-			page.setHeight(info.getImageHeight());
-			page.setWidth(info.getImageWidth());
-		} catch (InfoException e) {
+			String rawContent = FileUtils.readFileToString(pageFile);
+			String[] dimensions = rawContent.split(",");
+			page.setHeight(Integer.valueOf(dimensions[0]));
+			page.setWidth(Integer.valueOf(dimensions[1]));
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	private static File getPageFilePath(String pageUri) {
-		FedoraURI fedoraUri = new FedoraURI(URI.create(pageUri + "/JP2"));
+		FedoraURI fedoraUri = new FedoraURI(URI.create(pageUri + "/IMAGE_INFO"));
 		File file = new File(StaticURI.toStaticFileUri(fedoraUri));
 		return file;
 	}
