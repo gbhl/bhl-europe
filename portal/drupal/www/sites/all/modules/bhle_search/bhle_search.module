@@ -28,6 +28,7 @@
  */
 // Pre-defined variables (note: defaults are based on Solr's default schema)
 define('BHLE_SEARCH_FACET_LIMIT', 1000); // need to index more items then shown
+define('BHLE_SEARCH_FACET_LIST_LIMIT', 1000); // limit of taxons in facet block for each field
 define('BHLE_SEARCH_DEFAULT_LIMIT', 12);
 define('BHLE_SEARCH_TITLE_FIELD', 'name');
 define('BHLE_SEARCH_AUTHOR_FIELD', 'author');
@@ -253,7 +254,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'OR',
             '#attributes' => array(
                 'class' => array('operator-or' , 'edit-or'),
-                'tabindex' => (7*$id+3),
+                'tabindex' => (7*$id+3), 
             ),
         ),
 
@@ -404,7 +405,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         ),
         '#validate' => array(
             'bhle_search_advanced_add_validate'
-
+            
         ),
         '#attributes' => array('tabindex' => ($tabindex+8),),
     );
@@ -738,10 +739,12 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         return array();
     }
     //set parameters to get the requested page
-    //$params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT;
-    $params['rows'] = BHLE_SEARCH_FACET_LIMIT;
-    //$params['start'] = pager_find_page() * BHLE_SEARCH_DEFAULT_LIMIT;
-    $params['start'] = 0;
+    if ($_GET['per_list']) { $params['rows'] = $_GET['per_list']; } else { $params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT; }    
+    $params['start'] = pager_find_page() * BHLE_SEARCH_DEFAULT_LIMIT;
+    
+    $facetparams = $params;
+    $facetparams['rows'] = BHLE_SEARCH_FACET_LIMIT;
+    $facetparams['start'] = 0;
 
     try {
         // Query solr
@@ -763,6 +766,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $_SESSION['bhle_search']['numFound'] = $response->numFound;
         pager_default_initialize($response->numFound, BHLE_SEARCH_DEFAULT_LIMIT);
         if ($response->numFound > 0) {
+          dpm($response);
             $docs = $response->docs;
             $doc_index = 0;
 
@@ -794,8 +798,10 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
               }
             }
             foreach($facet_prepare as $field_name => $field_value) {
-              arsort($facet_prepare[$field_name]);
-              $values = array_slice($facet_prepare[$field_name], 0, 8, TRUE);
+              //dpm($facet_prepare[$field_name]);
+              ksort($facet_prepare[$field_name]);
+              //dpm($facet_prepare[$field_name]);
+              $values = array_slice($facet_prepare[$field_name], 0, BHLE_SEARCH_FACET_LIST_LIMIT, TRUE);
               $i = 1;
               foreach($values as $delta => $value) {
                 $bhle_facet['fields'][$field_name][$i]['#label'] = $delta;
@@ -808,8 +814,8 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
             $_SESSION['bhle_search']['facet']['fields'] = $bhle_facet['fields'];
             /* END PREPARE FACET  */
 
-            for ($i = $display_start; $i < $display_end; ++$i) {
-                $doc = $docs[$i];
+            foreach ($docs as $doc) {
+                //$doc = $docs[$i];
                 $even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
                 $results[$doc_index] = array();
                 $results[$doc_index]['item_order'] = ($doc_index + 1);
@@ -1195,7 +1201,7 @@ function bhle_search_preprocess_search_result(&$variables) {
     $variables['content_type'] = $variables['result']['content_type'];
     $variables['PID'] = $variables['result']['PID'];
     $variables['item_order'] = $variables['result']['item_order'];
-
+    
     foreach ($additional_classes as $class) {
         $variables['classes_array'][] = $class;
     }
