@@ -860,6 +860,7 @@ function bhle_search_search_result_field_map_for($type = 'unknown') {
         case 'journal':
         case 'journal-article':
         case 'book':
+        default:
             return array(
                 // for book:
                 "title" => "mods_title",
