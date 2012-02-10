@@ -254,7 +254,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#default_value' => 'OR',
             '#attributes' => array(
                 'class' => array('operator-or' , 'edit-or'),
-                'tabindex' => (7*$id+3), 
+                'tabindex' => (7*$id+3),
             ),
         ),
 
@@ -405,7 +405,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         ),
         '#validate' => array(
             'bhle_search_advanced_add_validate'
-            
+
         ),
         '#attributes' => array('tabindex' => ($tabindex+8),),
     );
@@ -739,9 +739,9 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         return array();
     }
     //set parameters to get the requested page
-    if ($_GET['per_list']) { $params['rows'] = $_GET['per_list']; } else { $params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT; }    
+    if ($_GET['per_list']) { $params['rows'] = $_GET['per_list']; } else { $params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT; }
     $params['start'] = pager_find_page() * BHLE_SEARCH_DEFAULT_LIMIT;
-    
+
     $facetparams = $params;
     $facetparams['rows'] = BHLE_SEARCH_FACET_LIMIT;
     $facetparams['start'] = 0;
@@ -766,7 +766,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $_SESSION['bhle_search']['numFound'] = $response->numFound;
         pager_default_initialize($response->numFound, BHLE_SEARCH_DEFAULT_LIMIT);
         if ($response->numFound > 0) {
-          dpm($response);
+//             if(module_exists('devel')) { dpm($response); };
             $docs = $response->docs;
             $doc_index = 0;
 
@@ -1201,7 +1201,7 @@ function bhle_search_preprocess_search_result(&$variables) {
     $variables['content_type'] = $variables['result']['content_type'];
     $variables['PID'] = $variables['result']['PID'];
     $variables['item_order'] = $variables['result']['item_order'];
-    
+
     foreach ($additional_classes as $class) {
         $variables['classes_array'][] = $class;
     }
