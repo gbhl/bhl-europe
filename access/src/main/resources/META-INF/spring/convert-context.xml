@@ -15,18 +15,28 @@
 		<property name="convertors">
 			<list>
 				<ref bean="tiff2Jp2Convertor" />
+				<ref bean="tiff2SizeConvertor" />
 				<ref bean="ocr2OcrConvertor" />
 				<ref bean="Olef2DcConvertor" />
 				<ref bean="Olef2OlefConvertor" />
 				<ref bean="Olef2ModsConvertor" />
 				<ref bean="Olef2Marc21Convertor" />
-				<ref bean="Olef2BibTexConvertor" />
-				<ref bean="Olef2EndnoteConvertor" />
+				<!-- <ref bean="Olef2BibTexConvertor" />
+				<ref bean="Olef2EndnoteConvertor" /> -->
 				<ref bean="bookInfoConvertor" />
 			</list>
 		</property>
 	</bean>
 
+	<bean id="tiff2SizeConvertor" class="com.bhle.access.convert.Tiff2SizeConvertor">
+		<property name="contentModels">
+			<list>
+				<value>info:fedora/bhle-cmodel:pageCModel</value>
+				<value>info:fedora/bhle-cmodel:imageCModel</value>
+			</list>
+		</property>
+	</bean>
+	
 	<bean id="tiff2Jp2Convertor" class="com.bhle.access.convert.Tiff2JpegConvertor">
 		<property name="contentModels">
 			<list>
@@ -89,7 +99,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2BibTexConvertor" class="com.bhle.access.convert.Olef2BibTexConvertor">
+<!-- 	<bean id="Olef2BibTexConvertor" class="com.bhle.access.convert.Olef2BibTexConvertor">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -98,9 +108,9 @@
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 
-	<bean id="Olef2EndnoteConvertor" class="com.bhle.access.convert.Olef2EndnoteConvertor">
+<!-- 	<bean id="Olef2EndnoteConvertor" class="com.bhle.access.convert.Olef2EndnoteConvertor">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -109,7 +119,7 @@
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 
 	<bean id="metadataUtil" class="com.bhle.access.util.MetadataUtil" />
 

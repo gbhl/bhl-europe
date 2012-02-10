@@ -5,6 +5,7 @@ import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.ResourceLoaderAware;
@@ -30,6 +31,7 @@ public class BibUtilsTest implements ResourceLoaderAware {
 				.getResource("classpath:com/bhle/access/sample/MODS.xml");
 	}
 
+	@Ignore
 	@Test
 	public void testModsToBib(){
 		InputStream in;
@@ -41,6 +43,7 @@ public class BibUtilsTest implements ResourceLoaderAware {
 		}
 	}
 	
+	@Ignore
 	@Test
 	public void testModsToEnd(){
 		InputStream in;

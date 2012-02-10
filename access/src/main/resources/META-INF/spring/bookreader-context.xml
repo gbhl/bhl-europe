@@ -4,7 +4,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
 	<bean id="bookInfoBuilder" class="com.bhle.access.bookreader.BookInfoBuilder"
 		p:storageService-ref="storageService" />
 

@@ -12,7 +12,6 @@
 	<import resource="classpath*:/META-INF/spring/akubra-context.xml" />
 	<import resource="classpath*:/META-INF/spring/jms-context.xml" />
 	<import resource="classpath*:/META-INF/spring/convert-context.xml" />
-	<import resource="classpath*:/META-INF/spring/aop-context.xml" />
 	<import resource="classpath*:/META-INF/spring/integration-context.xml" />
 	<import resource="classpath*:/META-INF/spring/mail-context.xml" />
 <!-- 	<import resource="classpath*:/META-INF/spring/security-context.xml" /> -->
