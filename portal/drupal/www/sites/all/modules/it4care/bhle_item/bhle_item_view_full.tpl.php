@@ -47,7 +47,7 @@ unset($item->olef_scientific_name);
   </div>
 
   <div id="tabs-3" class="biblio-marc21">
-    <div class="download-button"><a href="#" title="<?php print t('Download MARC21'); ?>"><?php print t('Download MARC21'); ?></a></div>
+<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="download-button"><a href="http://bhl-int.nhm.ac.uk/static/<?php print $pid; ?>/<?php print $pid; ?>_marc21.xml" " title="<?php print t('Download MARC21'); ?>"><?php print t('Download MARC21'); ?></a></div>
     <p><?php print t('No data for '); ?><?php print t('MARC21'); ?></p>
   </div>
 
@@ -57,7 +57,7 @@ unset($item->olef_scientific_name);
   </div>
 
   <div id="tabs-5" class="biblio-mods">
-    <div class="download-button"><a href="#" title="<?php print t('Download MODS'); ?>"> <?php print t('Download MODS'); ?></a></div>
+<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="download-button"><a href="http://bhl-int.nhm.ac.uk/static/<?php print $pid; ?>/<?php print $pid; ?>_mods.xml" " title="<?php print t('Download MODS'); ?>"><?php print t('Download MODS'); ?></a></div>
     <ul>
       <?php if ($rendered['mods_title']) { ?><li><label><?php print t('Title'); ?></label><p><?php print $rendered['mods_title']; ?></p></li><?php } ?>
       <?php if ($rendered['mods_name']) { ?><li><label><?php print t('Author'); ?></label><p><?php print $rendered['mods_name']; ?></p></li><?php } ?>
@@ -74,7 +74,7 @@ unset($item->olef_scientific_name);
   </div>
 
   <div id="tabs-6" class="biblio-dc">
-    <div class="download-button"><a href="#" title="<?php print t('Download Dublin Core'); ?>"><?php print t('Download Dublin Core'); ?></a></div>
+<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="download-button"><a href="http://bhl-int.nhm.ac.uk/static/<?php print $pid; ?>/<?php print $pid; ?>_dc.xml" " title="<?php print t('Download Dublin Core'); ?>"><?php print t('Download Dublin Core'); ?></a></div>
     <p><?php print t('No data for '); ?><?php print t('Dublin Core'); ?></p>
   </div>
 
