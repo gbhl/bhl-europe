@@ -47,9 +47,6 @@ public class ConvertorTest implements ResourceLoaderAware {
 
 	@Before
 	public void init() {
-		String myPath = "C:\\Program Files\\ImageMagick";
-		ProcessStarter.setGlobalSearchPath(myPath);
-
 		initialBookObject();
 		initialPageObject();
 	}
@@ -122,17 +119,13 @@ public class ConvertorTest implements ResourceLoaderAware {
 
 	@Test
 	public void testOlefConvertors() {
-		Olef2BibTexConvertor olef2BibTexConvertor = new Olef2BibTexConvertor();
 		Olef2DcConvertor olef2DcConvertor = new Olef2DcConvertor();
-		Olef2EndnoteConvertor olef2EndnoteConvertor = new Olef2EndnoteConvertor();
 		Olef2Marc21Convertor olef2Marc21Convertor = new Olef2Marc21Convertor();
 		Olef2ModsConvertor olef2ModsConvertor = new Olef2ModsConvertor();
 		Olef2OlefConvertor olef2OlefConvertor = new Olef2OlefConvertor();
 		
 		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
-		convertors.add(olef2BibTexConvertor);
 		convertors.add(olef2DcConvertor);
-		convertors.add(olef2EndnoteConvertor);
 		convertors.add(olef2Marc21Convertor);
 		convertors.add(olef2ModsConvertor);
 		convertors.add(olef2OlefConvertor);
@@ -142,6 +135,6 @@ public class ConvertorTest implements ResourceLoaderAware {
 		Derivative[] derivatives = ConvertorManager
 				.derive(olefDatastreamWrapper);
 		
-		Assert.assertEquals(6, derivatives.length);
+		Assert.assertEquals(4, derivatives.length);
 	}
 }

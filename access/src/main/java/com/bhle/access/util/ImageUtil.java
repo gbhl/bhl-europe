@@ -1,25 +1,30 @@
 package com.bhle.access.util;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.kahadb.util.ByteArrayInputStream;
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IM4JavaException;
 import org.im4java.core.IMOperation;
+import org.im4java.core.Info;
+import org.im4java.core.InfoException;
 import org.im4java.process.Pipe;
 import org.im4java.process.ProcessStarter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ImageUtil {
 
+	private static final Logger logger = LoggerFactory
+			.getLogger(ImageUtil.class);
+	
 	private static int DEFAULT_MAX_HEIGHT = 1920;
-	private static int DEFAULT_MAX_WEIGHT = 1920;
-
-	static {
-		String myPath = "C:\\Program Files\\ImageMagick";
-		ProcessStarter.setGlobalSearchPath(myPath);
-	}
+	private static int DEFAULT_MAX_WIDTH = 1920;
 
 	public static InputStream tiffToJp2(InputStream tiffIn, int maxHeight,
 			int maxWidth) {
@@ -60,7 +65,39 @@ public class ImageUtil {
 	}
 
 	public static InputStream tiffToJp2(InputStream tiffIn) {
-		return tiffToJp2(tiffIn, DEFAULT_MAX_HEIGHT, DEFAULT_MAX_WEIGHT);
+		return tiffToJp2(tiffIn, DEFAULT_MAX_HEIGHT, DEFAULT_MAX_WIDTH);
 	}
 
+	public static InputStream tiffToJp2Size(InputStream tiffIn) {
+		int height = 0;
+		int width = 0;
+		try {
+			File tmpFile = File.createTempFile("temp", "tiff");
+			IOUtils.copy(tiffIn, new FileOutputStream(tmpFile));
+			Info info = new Info(tmpFile.getAbsolutePath(), true);
+
+			int tiffHeight = info.getImageHeight();
+			height = tiffHeight;
+			int tiffWidth = info.getImageWidth();
+			width = tiffWidth;
+			if (tiffHeight > DEFAULT_MAX_HEIGHT || tiffWidth > DEFAULT_MAX_WIDTH){
+				if (tiffHeight > tiffWidth) {
+					double ratio = DEFAULT_MAX_HEIGHT / tiffHeight;
+					height = DEFAULT_MAX_HEIGHT;
+					width = (int) (tiffWidth / ratio);
+				} else {
+					double ratio = DEFAULT_MAX_WIDTH / tiffWidth;
+					height = (int) (tiffHeight / ratio);
+					width = DEFAULT_MAX_WIDTH;
+				}
+			}
+			
+			tmpFile.delete();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InfoException e) {
+			e.printStackTrace();
+		}
+		return IOUtils.toInputStream(height + "," + width);
+	}
 }

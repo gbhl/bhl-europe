@@ -66,7 +66,7 @@
 					<xsl:variable name="resourceUri" select="@rdf:resource"/>
 					<field name="contentType">
 						<xsl:value-of
-							select="substring-before( substring-after($resourceUri, 'islandora:'), 'CModel')"
+							select="substring-before( substring-after($resourceUri, 'bhle-cmodel:'), 'CModel')"
 						/>
 					</field>
 				</xsl:for-each>

@@ -40,12 +40,6 @@ public class ImageConversionTest implements ResourceLoaderAware {
 
 	private ConvertCmd convert;
 
-	@Before
-	public void init() {
-		String myPath = "C:\\Program Files\\ImageMagick";
-		ProcessStarter.setGlobalSearchPath(myPath);
-	}
-
 	@Test
 	public void testTiffToJp2() throws Exception {
 		Resource tiff = resourceLoader
