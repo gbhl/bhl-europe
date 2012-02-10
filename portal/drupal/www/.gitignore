@@ -2,5 +2,16 @@
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
-sites/*/files
+#sites/*/files
 sites/*/private
+
+# Ignore eclipse ide project files
+.settings/
+.buildpath
+.project
+
+# Ignore other
+info.php
+
+# No more .htacess hacks
+.htaccess
