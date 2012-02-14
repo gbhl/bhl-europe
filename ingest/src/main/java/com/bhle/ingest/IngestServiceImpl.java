@@ -11,6 +11,7 @@ import com.bhle.ingest.batch.IngestException;
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.response.FedoraResponse;
+import com.yourmediashelf.fedora.client.response.IngestResponse;
 
 public class IngestServiceImpl {
 
@@ -25,10 +26,9 @@ public class IngestServiceImpl {
 
 	@ServiceActivator
 	public int ingestMETS(Message<File> message) throws IngestException {
-		FedoraResponse response = null;;
+		IngestResponse response = null;
 		try {
-			response = FedoraClient.ingest()
-					.content(message.getPayload())
+			response = FedoraClient.ingest().content(message.getPayload())
 					.format("info:fedora/fedora-system:METSFedoraExt-1.1")
 					.execute(client);
 		} catch (FedoraClientException e) {

@@ -30,12 +30,10 @@ public class ReadySipFolderScanner extends DefaultDirectoryScanner {
 
 	@Override
 	protected File[] listEligibleFiles(File directory) {
-		if (directory.isFile()) {
+		if (directory.isFile() || !directory.canRead()) {
 			return new File[0];
 		}
 
-		logger.info("Scanning File/Directory: "  + directory.getAbsolutePath());
-		
 		File[] rootFiles = directory.listFiles();
 		List<File> files = new ArrayList<File>(rootFiles.length);
 		for (File rootFile : rootFiles) {

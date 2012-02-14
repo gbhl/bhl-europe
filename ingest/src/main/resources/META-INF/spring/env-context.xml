@@ -6,11 +6,11 @@
 
 	<bean id="placeholderProperties"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesMode" value="2"/>
 		<property name="locations">
 			<list>
 				<value>classpath:/org/springframework/batch/admin/bootstrap/batch.properties</value>
 				<value>classpath*:ingest.properties</value>
-				<value>classpath*:batch-default.properties</value>
 			</list>
 		</property>
 	</bean>
