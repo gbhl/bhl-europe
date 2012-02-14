@@ -20,6 +20,7 @@ public class SipWriter implements ItemWriter<File> {
 	@Autowired
 	private IngestService ingestor;
 	
+	
 	@Override
 	public void write(List<? extends File> files) throws Exception {
 		for (File file : files) {

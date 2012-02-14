@@ -31,7 +31,6 @@ public class JobLaunchRequestTransformer {
 
 		Job batchIngestJob = null;
 		try {
-			System.out.println(jobLocator.getJobNames());
 			batchIngestJob = jobLocator.getJob("batchIngestJob");
 		} catch (NoSuchJobException e) {
 			e.printStackTrace();
