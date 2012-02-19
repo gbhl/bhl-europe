@@ -225,7 +225,7 @@ BookReader.prototype.init = function() {
         } else if (3 == e.data.mode){
             e.data.prepareThumbnailView();
         } else {
-            //console.log('drawing 2 page view');
+            console.log('drawing 2 page view');
             
             // We only need to prepare again in autofit (size of spread changes)
             if (e.data.twoPage.autofit) {
@@ -284,7 +284,7 @@ BookReader.prototype.init = function() {
         this.displayedIndices=[0];
         this.firstIndex = startIndex;
         this.displayedIndices = [this.firstIndex];
-        //console.log('titleLeaf: %d', this.titleLeaf);
+        console.log('titleLeaf: %d', this.titleLeaf);
         //console.log('displayedIndices: %s', this.displayedIndices);
         this.prepareTwoPageView();
     }
@@ -1380,7 +1380,6 @@ BookReader.prototype.jumpToIndex = function(index, pageX, pageY) {
 // switchMode()
 //______________________________________________________________________________
 BookReader.prototype.switchMode = function(mode) {
-
     if (mode == this.mode) {
         return;
     }
@@ -1415,7 +1414,7 @@ BookReader.prototype.switchMode = function(mode) {
     } else {
         // $$$ why don't we save autofit?
         // this.twoPage.autofit = null; // Take zoom level from other mode
-        this.twoPageCalculateReductionFactors();
+    	this.twoPageCalculateReductionFactors();
         this.reduce = this.quantizeReduce(this.reduce, this.twoPage.reductionFactors);
         this.prepareTwoPageView();
         this.twoPageCenterView(0.5, 0.5); // $$$ TODO preserve center
@@ -1496,7 +1495,8 @@ BookReader.prototype.prepareThumbnailView = function() {
 // even as the page sizes change.  To e.g. keep the middle of the book in the middle of the BRcontent
 // div requires adjusting the offset of BRtwpageview and/or scrolling in BRcontent.
 BookReader.prototype.prepareTwoPageView = function(centerPercentageX, centerPercentageY) {
-    $('#BRcontainer').empty();
+    console.log('prepareTwoPageView');
+	$('#BRcontainer').empty();
     $('#BRcontainer').css('overflow', 'auto');
         
     // We want to display two facing pages.  We may be missing
@@ -1936,6 +1936,7 @@ BookReader.prototype.onePageCalculateReductionFactors = function( width, height 
 }
 
 BookReader.prototype.twoPageCalculateReductionFactors = function() {    
+	console.log(this.twoPage.currentIndexL);
     this.twoPage.reductionFactors = this.reductionFactors.concat(
         [
             { reduce: this.getIdealSpreadSize( this.twoPage.currentIndexL, this.twoPage.currentIndexR ).reduce,
@@ -2296,9 +2297,9 @@ BookReader.prototype.flipLeftToRight = function(newIndexL, newIndexR) {
             self.prefetch();            
             self.animating = false;
             
-			self.removeAllToolBox();
-			self.addToolBox(newIndexL, $(self.prefetchedImgs[newIndexL]));
-            self.addToolBox(newIndexR, $(self.prefetchedImgs[newIndexR]));
+//			self.removeAllToolBox();
+//			self.addToolBox(newIndexL, $(self.prefetchedImgs[newIndexL]));
+//            self.addToolBox(newIndexR, $(self.prefetchedImgs[newIndexR]));
             
             self.updateSearchHilites2UP();
             self.updatePageNumBox2UP();
