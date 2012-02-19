@@ -28,6 +28,8 @@ br.getPageWidth = function(index) {
 // Return the height of a given page. Here we assume all images are 1200 pixels
 // high
 br.getPageHeight = function(index) {
+	console.log('getPageHeight ' + index);
+	console.log(bookInfo.pages[index].height);
 	return bookInfo.pages[index].height;
 }
 
@@ -55,6 +57,7 @@ br.getPageSide = function(index) {
 // spread that contains the given index. The return values may be
 // null if there is no facing page or the index is invalid.
 br.getSpreadIndices = function(pindex) {   
+	console.log('getSpreadIndices' + pindex);
     var spreadIndices = [null, null]; 
     if ('rl' == this.pageProgression) {
         // Right to Left
@@ -87,6 +90,8 @@ br.getSpreadIndices = function(pindex) {
 // such
 // as a title page and table of contents.
 br.getPageNum = function(index) {
+	console.log('getPageNum ' + index);
+	console.log(bookInfo.pages[index].name);
     return bookInfo.pages[index].name;
 }
 
@@ -112,22 +117,3 @@ br.init();
 $('#BRtoolbar').find('.read').hide();
 $('#textSrch').hide();
 $('#btnSrch').hide();
-
-$('#BRpage').after('<div id="BRpagebox">Go to:<input type="text"/></div>');
-$('#BRpagebox').find('input').val(br.getPageNum(br.currentIndex()));
-$('#BRpagebox').find('input').change(function(){
-	br.jumpToIndex(br.getPageIndex($(this).val()));
-});
-
-$(".BRicon.info").before('<button class="BRicon download"></button>');
-$('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
-$('body').append(br.blankDownloadDiv());
-br.buildDownloadDiv($('#BRdownload'));
-$('#BRdownload').before($('#BRinfo'));
-
-var mainDiv = $('<div id="main" />');
-$('#BookReader').wrap(mainDiv);
-$('#BookReader').before(br.buildCollapsableBox());
-
-$('body').append(br.blankOCRDiv());
-$('#BRocr').before($('#BRinfo'));

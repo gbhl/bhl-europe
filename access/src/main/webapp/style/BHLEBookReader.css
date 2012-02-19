@@ -7,10 +7,6 @@
 	display: none;
 }
 
-#BRcontainer {
-	overflow: hidden;
-}
-
 div#BRnav {
 	position: absolute;
 }
@@ -168,7 +164,7 @@ fieldset .thumbnailFieldset {
 #BRpagination select {
 	height: 100%;
 	width: 100%;
-	overflow: scroll;
+	overflow: auto;
 }
 
 #BRboxhead {
