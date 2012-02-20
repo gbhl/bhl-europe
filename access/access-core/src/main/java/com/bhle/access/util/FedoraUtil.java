@@ -40,7 +40,7 @@ public class FedoraUtil {
 	public static List<String> getAllObjectsPids() {
 		try {
 			FindObjectsResponse findObjectsResponse = FedoraClient
-					.findObjects().terms("*").pid().execute(client);
+					.findObjects().terms("*").pid().maxResults(Integer.MAX_VALUE).execute(client);
 			return findObjectsResponse.getPids();
 		} catch (FedoraClientException e) {
 			e.printStackTrace();

@@ -3,6 +3,7 @@ package com.bhle.access.util;
 import java.util.List;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ public class FedoraUtilTest {
 	private static final Logger logger = LoggerFactory
 			.getLogger(FedoraUtilTest.class);
 
+	@Ignore
 	@Test
 	public void testGetAllObjects() {
 		List<String> pids = FedoraUtil.getAllObjectsPids();
