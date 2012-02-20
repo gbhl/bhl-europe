@@ -46,7 +46,7 @@ public class BatchIngestTest implements ResourceLoaderAware {
 	@Before
 	public void init() {
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

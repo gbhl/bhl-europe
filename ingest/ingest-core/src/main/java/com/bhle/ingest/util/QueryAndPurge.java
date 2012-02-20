@@ -3,6 +3,7 @@ package com.bhle.ingest.util;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -31,12 +32,21 @@ public class QueryAndPurge {
 		FedoraClient client = (FedoraClient) applicationContext
 				.getBean("fedoraClient");
 
-		FindObjectsResponse findObjectsResponse = FedoraClient.findObjects()
-				.terms(query).maxResults(Integer.MAX_VALUE).pid()
-				.execute(client);
-
-		List<String> pids = findObjectsResponse.getPids();
-
+		List<String> pids = new LinkedList<String>();
+		String token = null;
+		
+		do {
+			FindObjectsResponse findObjectsResponse = null;
+			try {
+				findObjectsResponse = FedoraClient
+				.findObjects().terms("*").pid().sessionToken(token).maxResults(Integer.MAX_VALUE).execute(client);
+			} catch (FedoraClientException e) {
+				e.printStackTrace();
+			}
+			pids.addAll(findObjectsResponse.getPids());
+			token = findObjectsResponse.getToken();
+		} while (token != null && !token.equals(""));
+		
 		System.out.println("Objects (count: " + pids.size() + "):");
 		for (String pid : pids) {
 			System.out.println(pid);
