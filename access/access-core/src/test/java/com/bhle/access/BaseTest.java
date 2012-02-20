@@ -57,6 +57,11 @@ public class BaseTest implements ResourceLoaderAware {
 				.getResource("classpath:com/bhle/access/sample/bhle_10706-a00000000000132805961115-00001.xml");
 		FedoraUtil.ingestFOXML(monograhObject.getFile());
 		FedoraUtil.ingestFOXML(pageObject.getFile());
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		logger.info("Done");
 	}
 

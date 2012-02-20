@@ -135,11 +135,11 @@ $(".BRicon.info").before('<button class="BRicon download"></button>');
 $('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
 $('body').append(br.blankDownloadDiv());
 br.buildDownloadDiv($('#BRdownload'));
-$('#BRdownload').before($('#BRinfo'));
+$('#BRdownload').before($('#BRshare'));
 
 var mainDiv = $('<div id="main" />');
 $('#BookReader').wrap(mainDiv);
 $('#BookReader').before(br.buildCollapsableBox());
 
 $('body').append(br.blankOCRDiv());
-$('#BRocr').before($('#BRinfo'));
+$('#BRocr').before($('#BRshare'));

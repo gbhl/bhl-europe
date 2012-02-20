@@ -19,13 +19,13 @@ public class StorageService {
 			.getLogger(StorageService.class);
 
 	private LowLevelStorage defaultStorages;
-	
+
 	public void setDefaultStorages(LowLevelStorage defaultStorages) {
 		this.defaultStorages = defaultStorages;
 	}
-	
+
 	private LowLevelStorage offlineStorages;
-	
+
 	public void setOfflineStorages(LowLevelStorage offlineStorages) {
 		this.offlineStorages = offlineStorages;
 	}
@@ -72,11 +72,17 @@ public class StorageService {
 	public InputStream openDatastream(String guid, String dsid,
 			String serialNumber) throws IOException {
 		List<URI> uris = getDatastream(guid, dsid);
+
+		if (uris.size() == 0) {
+			throw new IOException("Datastream " + guid + " " + dsid
+					+ " not found");
+		}
+
 		if (serialNumber == null && uris.size() > 1) {
 			throw new IOException();
 		} else {
 			FedoraURI fedoraURI = new FedoraURI(uris.get(0));
-			return defaultStorages.get(fedoraURI.getPid(),fedoraURI.getDsid());
+			return defaultStorages.get(fedoraURI.getPid(), fedoraURI.getDsid());
 		}
 	}
 
@@ -94,7 +100,7 @@ public class StorageService {
 
 		try {
 			defaultStorages.replace(derivative.getPid(), derivative.getDsId(),
-								derivative.getInputStream());
+					derivative.getInputStream());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

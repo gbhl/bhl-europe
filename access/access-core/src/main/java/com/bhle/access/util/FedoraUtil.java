@@ -3,6 +3,7 @@ package com.bhle.access.util;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
@@ -11,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.csvreader.CsvReader;
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
@@ -38,14 +38,22 @@ public class FedoraUtil {
 	}
 
 	public static List<String> getAllObjectsPids() {
-		try {
-			FindObjectsResponse findObjectsResponse = FedoraClient
-					.findObjects().terms("*").pid().maxResults(Integer.MAX_VALUE).execute(client);
-			return findObjectsResponse.getPids();
-		} catch (FedoraClientException e) {
-			e.printStackTrace();
-		}
-		return null;
+		List<String> pids = new LinkedList<String>();
+		String token = null;
+		
+		do {
+			FindObjectsResponse findObjectsResponse = null;
+			try {
+				findObjectsResponse = FedoraClient
+				.findObjects().terms("*").pid().sessionToken(token).maxResults(Integer.MAX_VALUE).execute(client);
+			} catch (FedoraClientException e) {
+				e.printStackTrace();
+			}
+			pids.addAll(findObjectsResponse.getPids());
+			token = findObjectsResponse.getToken();
+		} while (token != null && !token.equals(""));
+		
+		return pids;
 	}
 
 	public static List<String> getContentModels(String pid) {
