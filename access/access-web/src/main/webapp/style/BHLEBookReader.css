@@ -21,7 +21,6 @@ a.logo {
 
 #BRreturn a {
 	margin-left: 10px;
-	position: absolute;
 	top: 0px;
 }
 
@@ -164,7 +163,6 @@ fieldset .thumbnailFieldset {
 }
 
 #BRpagination select {
-	height: 100%;
 	width: 100%;
 	overflow: auto;
 }
