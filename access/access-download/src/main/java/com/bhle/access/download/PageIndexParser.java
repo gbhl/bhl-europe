@@ -17,7 +17,7 @@ public class PageIndexParser {
 	private static final Logger logger = LoggerFactory
 			.getLogger(PageIndexParser.class);
 
-	private static String INDEX_REGEX = "n\\d+|n\\d+-n\\d+";
+	private static String INDEX_REGEX = "\\d+|\\d+-\\d+|n\\d+|n\\d+-n\\d+";
 
 	private static DecimalFormat PAGE_INDEX_FORMATTER = new DecimalFormat(
 			"00000");
@@ -27,17 +27,17 @@ public class PageIndexParser {
 
 		if (range.contains("-")) {
 
-			logger.info("Parge Index Range: " + range);
+			logger.debug("Parge Index Range: " + range);
 
 			String[] limits = range.split("-");
 			String lowerBound = limits[0];
 			String higherBound = limits[1];
 
-			int lowPageIndex = Integer.valueOf(lowerBound.substring(1));
+			int lowPageIndex = getPageIndex(lowerBound);
 			String lowerSerialNumber = PAGE_INDEX_FORMATTER
 					.format(lowPageIndex);
 
-			int highPageIndex = Integer.valueOf(higherBound.substring(1));
+			int highPageIndex = getPageIndex(higherBound);
 			String higherSerialNumber = PAGE_INDEX_FORMATTER
 					.format(highPageIndex);
 
@@ -51,7 +51,7 @@ public class PageIndexParser {
 
 			for (int i = 0; i < pageUris.length; i++) {
 				FedoraURI fedoraUri = new FedoraURI(URI.create(pageUris[i]));
-				logger.info(fedoraUri.getSerialNumber());
+				logger.debug(fedoraUri.getSerialNumber());
 				if (lowerSerialNumber.equals(fedoraUri.getSerialNumber())) {
 					from = i;
 				}
@@ -61,16 +61,14 @@ public class PageIndexParser {
 				}
 			}
 
-			logger.info("from: " + from);
-			logger.info("to: " + to);
+			logger.debug("from: {} to {}", from, to);
 
 			return Arrays.copyOfRange(pageUris, from, to + 1);
 		} else {
 
-			logger.info("Parge Single Index: " + range);
+			logger.debug("Parge Single Index: " + range);
 
-			// remove "n"
-			int pageIndex = Integer.valueOf(range.substring(1));
+			int pageIndex = getPageIndex(range);
 			String serialNumber = PAGE_INDEX_FORMATTER.format(pageIndex);
 
 			for (String pageUri : pageUris) {
@@ -82,6 +80,14 @@ public class PageIndexParser {
 			}
 		}
 		return result.toArray(new String[result.size()]);
+	}
+
+	private static int getPageIndex(String range) {
+		if(range.startsWith("n")){
+			throw new IllegalArgumentException("Not implemented yet");
+		} else {
+			return Integer.valueOf(range);
+		}
 	}
 
 	private static String getFirstSerialNumber(String[] pageUris) {

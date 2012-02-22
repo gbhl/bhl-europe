@@ -28,8 +28,7 @@
 
 	<!-- JMS ConnectionFactory to use, configuring the embedded broker using 
 		XML -->
-	<amq:connectionFactory id="jmsFactory"
-		brokerURL="tcp://localhost:51515" />
+	<amq:connectionFactory id="jmsFactory" brokerURL="tcp://localhost:51515" />
 
 	<!-- JMS Producer Configuration -->
 	<bean id="jmsProducerConnectionFactory"
@@ -40,29 +39,10 @@
 		p:connectionFactory-ref="jmsProducerConnectionFactory"
 		p:defaultDestination-ref="destination" />
 
-	<bean id="initializer" class="com.bhle.access.jms.FedoraJmsInitializer" />
-
-	<bean id="messagingClient"
-		class="com.yourmediashelf.fedora.client.messaging.MessagingClient">
-		<constructor-arg value="accessTest" />
-		<constructor-arg ref="fedoraJmsContainer" />
-		<constructor-arg>
-			<props>
-				<prop key="java.naming.factory.initial">${java.naming.factory.initial}</prop>
-				<prop key="java.naming.provider.url">tcp://localhost:51515</prop>
-				<prop key="connection.factory.name">${connection.factory.name}</prop>
-				<prop key="topic.fedora">fedora.apim.update</prop>
-			</props>
-		</constructor-arg>
-		<constructor-arg value="true" />
-	</bean>
-
-	<bean id="fedoraJmsContainer" class="com.bhle.access.jms.listener.FedoraJmsContainer">
-		<property name="listeners">
-			<list>
-				<bean class="com.bhle.access.jms.AtomFedoraJmsListenerDumb" />
-			</list>
-		</property>
+	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+		<property name="connectionFactory" ref="jmsFactory" />
+		<property name="destination" ref="destination" />
+		<property name="messageListener" ref="atomFedoraJmsListenerDumbAdapter" />
 	</bean>
 
 	<bean id="fedoraJmsAtomMessageStubUtil" class="com.bhle.access.jms.FedoraJmsAtomMessageStubUtil">
@@ -92,4 +72,13 @@
 	<bean id="jmsProducer" class="com.bhle.access.jms.FedoraJmsProducerStub" />
 
 	<bean id="atomFedoraJmsListenerDumb" class="com.bhle.access.jms.AtomFedoraJmsListenerDumb" />
+
+	<bean id="atomFedoraJmsListenerDumbAdapter"
+		class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
+		<property name="delegate" ref="atomFedoraJmsListenerDumb" />
+		<property name="defaultListenerMethod" value="onMessage" />
+		<property name="messageConverter" ref="messageConverter" />
+	</bean>
+
+	<bean id="messageConverter" class="com.bhle.access.jms.util.FedoraJmsMessageConverter" />
 </beans>

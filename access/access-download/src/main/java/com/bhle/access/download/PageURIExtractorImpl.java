@@ -12,30 +12,25 @@ import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.FedoraUtil;
 
 public class PageURIExtractorImpl implements PageURIExtractor {
-	
+
 	private static final Logger logger = LoggerFactory
 			.getLogger(PageURIExtractorImpl.class);
 
-//	private static String INDEX_REGEX = "n\\d+|n\\d+-n\\d+";
-//	private static String PAGE_NAME_REGEX = "\\w+|\\w+-\\w+";
+	// private static String INDEX_REGEX = "n\\d+|n\\d+-n\\d+";
+	// private static String PAGE_NAME_REGEX = "\\w+|\\w+-\\w+";
 
-	private String[] pageUris;
-
-	public String[] getPageURIs(String guid, String rangesParameter) {
-		
+	public String[] getPageURIs(String rangesParameter, String[] allPageUris) {
 		List<String> pageURIs = new ArrayList<String>();
-
-		pageUris = FedoraUtil.getAllMembers(FedoraURI.getPidFromGuid(guid),
-				FedoraUtil.PAGE_MODEL);
-		Arrays.sort(pageUris);
 
 		String[] ranges = splitRanges(rangesParameter);
 
+		// No delimiter
 		if (ranges.length < 2) {
-			return pageUris;
+			return allPageUris;
 		} else {
+			logger.debug("Number of ranges: {}", ranges.length);
 			for (String range : ranges) {
-				String[] pageUriFromRange = transformRanges(range);
+				String[] pageUriFromRange = transformRanges(range, allPageUris);
 				pageURIs.addAll(Arrays.asList(pageUriFromRange));
 			}
 		}
@@ -43,21 +38,30 @@ public class PageURIExtractorImpl implements PageURIExtractor {
 		return pageURIs.toArray(new String[pageURIs.size()]);
 	}
 
+	public String[] getPageURIs(String guid, String rangesParameter) {
+
+		String[] allPageUris = FedoraUtil.getAllMembers(
+				FedoraURI.getPidFromGuid(guid), FedoraUtil.PAGE_MODEL);
+
+		Arrays.sort(allPageUris);
+
+		return getPageURIs(rangesParameter, allPageUris);
+	}
+
 	private String[] splitRanges(String rangesParameter) {
 		return rangesParameter.split(",");
 	}
 
-	private String[] transformRanges(String range) {
+	private String[] transformRanges(String range, String[] allPageUris) {
 		if (PageIndexParser.isValid(range)) {
-			return PageIndexParser.parse(range, pageUris);
-		} 
-//		else if (isPageName(range)) {
-			// TODO: not implemented yet
-			// return PageNameParser.parse(range, pageUris);
-//		}
+			return PageIndexParser.parse(range, allPageUris);
+		}
+		// else if (isPageName(range)) {
+		// TODO: not implemented yet
+		// return PageNameParser.parse(range, pageUris);
+		// }
 
-		return null;
+		throw new IllegalArgumentException("range is not valid");
 	}
-
 
 }

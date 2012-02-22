@@ -1,31 +1,21 @@
 package com.bhle.access.jms;
 
-import javax.jms.JMSException;
-import javax.jms.Message;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jms.support.converter.MessageConversionException;
-import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.stereotype.Component;
 
-import com.bhle.access.jms.listener.FedoraJmsListener;
 import com.bhle.access.jms.util.FedoraAtomMessage;
 
 @Component
-public class AtomFedoraJmsListenerDumb implements FedoraJmsListener {
+public class AtomFedoraJmsListenerDumb {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(AtomFedoraJmsListenerDumb.class);
 
-	@Autowired
-	private MessageConverter messageConverter;
-
 	private static FedoraAtomMessage ATOM_MESSAGE;
 
-	public void onMessage(Message message) {
-		ATOM_MESSAGE = convertMessage(message);
+	public void onMessage(FedoraAtomMessage message) {
+		ATOM_MESSAGE = message;
 
 		switch (ATOM_MESSAGE.getMethodName()) {
 		case INGEST:
@@ -50,18 +40,6 @@ public class AtomFedoraJmsListenerDumb implements FedoraJmsListener {
 		default:
 			throw new IllegalArgumentException();
 		}
-
-	}
-
-	private FedoraAtomMessage convertMessage(Message message) {
-		try {
-			return (FedoraAtomMessage) messageConverter.fromMessage(message);
-		} catch (MessageConversionException e) {
-			e.printStackTrace();
-		} catch (JMSException e) {
-			e.printStackTrace();
-		}
-		return ATOM_MESSAGE;
 	}
 
 	public FedoraAtomMessage getAtomMessage() {

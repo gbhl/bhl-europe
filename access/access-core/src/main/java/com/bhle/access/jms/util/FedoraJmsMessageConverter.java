@@ -7,9 +7,7 @@ import javax.jms.TextMessage;
 
 import org.springframework.jms.support.converter.MessageConversionException;
 import org.springframework.jms.support.converter.MessageConverter;
-import org.springframework.stereotype.Component;
 
-@Component
 public class FedoraJmsMessageConverter implements MessageConverter{
 
 	public Object fromMessage(Message message) throws JMSException,

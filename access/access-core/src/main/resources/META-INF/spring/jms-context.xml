@@ -12,30 +12,28 @@
                            http://activemq.apache.org/schema/core 
                            http://activemq.apache.org/schema/core/activemq-core.xsd">
 
-	<context:component-scan base-package="com.bhle.access.jms.*" />
+	<!-- ActiveMQ Destination -->
+	<amq:topic id="destination" physicalName="fedora.apim.update" />
 
-	<bean id="initializer" class="com.bhle.access.jms.FedoraJmsInitializer" scope="singleton" />
+	<!-- JMS ConnectionFactory to use, configuring the embedded broker using 
+		XML -->
+	<amq:connectionFactory id="jmsFactory"
+		brokerURL="${java.naming.provider.url}" />
 
-	<bean id="messagingClient"
-		class="com.yourmediashelf.fedora.client.messaging.MessagingClient">
-		<constructor-arg value="access" />
-		<constructor-arg ref="fedoraJmsContainer" />
-		<constructor-arg>
-			<props>
-				<prop key="java.naming.factory.initial">${java.naming.factory.initial}</prop>
-				<prop key="java.naming.provider.url">${java.naming.provider.url}</prop>
-				<prop key="connection.factory.name">${connection.factory.name}</prop>
-				<prop key="topic.fedora">fedora.apim.update</prop>
-			</props>
-		</constructor-arg>
-		<constructor-arg value="true" />
+	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+		<property name="connectionFactory" ref="jmsFactory" />
+		<property name="destination" ref="destination" />
+		<property name="messageListener" ref="atomFedoraJmsListenerAdapter" />
 	</bean>
 
-	<bean id="fedoraJmsContainer" class="com.bhle.access.jms.listener.FedoraJmsContainer">
-		<property name="listeners">
-			<list>
-				<ref bean="atomFedoraJmsListener" />
-			</list>
-		</property>
+	<bean id="atomFedoraJmsListenerAdapter"
+		class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
+		<property name="delegate" ref="atomFedoraJmsListener" />
+		<property name="defaultListenerMethod" value="onMessage" />
+		<property name="messageConverter" ref="fedoraJmsMessageConverter" />
 	</bean>
+	
+	<bean id="atomFedoraJmsListener" class="com.bhle.access.jms.AtomFedoraJmsListener" />
+	
+	<bean id="fedoraJmsMessageConverter" class="com.bhle.access.jms.util.FedoraJmsMessageConverter"/>
 </beans>

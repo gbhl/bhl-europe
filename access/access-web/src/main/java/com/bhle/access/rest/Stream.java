@@ -1,10 +1,5 @@
 package com.bhle.access.rest;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URI;
-import java.util.List;
-
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -12,21 +7,15 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.ext.Provider;
 
 import net.sf.json.JSONObject;
 
-import org.apache.commons.io.IOUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.bhle.access.bookreader.BookInfo;
 import com.bhle.access.bookreader.BookInfoBuilder;
-import com.bhle.access.domain.Derivative;
-import com.bhle.access.storage.StorageService;
-import com.bhle.access.util.FedoraURI;
-import com.bhle.access.util.FedoraUtil;
+import com.bhle.access.bookreader.search.SearchService;
 import com.sun.jersey.api.view.Viewable;
 
 @Component
@@ -51,5 +40,13 @@ public class Stream {
 		JSONObject json = JSONObject.fromObject(bookInfo);
 
 		return new Viewable("/bookreader", json.toString());
+	}
+	
+	@GET
+	@Path("search/{guid}")
+	@Produces("application/json")
+	public String search(@PathParam("guid") String guid,
+			@QueryParam("query") String query) {
+		return SearchService.query(guid, query);
 	}
 }

@@ -120,26 +120,8 @@ br.init();
 // read-aloud and search need backend compenents and are not supported in the
 // demo
 $('#BRtoolbar').find('.read').hide();
-$('#textSrch').hide();
-$('#btnSrch').hide();
 
-
-
-$('#BRpage').after('<div id="BRpagebox">Go to:<input type="text"/></div>');
-$('#BRpagebox').find('input').val(br.getPageNum(br.currentIndex()));
-$('#BRpagebox').find('input').change(function(){
-	br.jumpToIndex(br.getPageIndex($(this).val()));
-});
-
-$(".BRicon.info").before('<button class="BRicon download"></button>');
-$('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
-$('body').append(br.blankDownloadDiv());
-br.buildDownloadDiv($('#BRdownload'));
-$('#BRdownload').before($('#BRshare'));
-
-var mainDiv = $('<div id="main" />');
-$('#BookReader').wrap(mainDiv);
-$('#BookReader').before(br.buildCollapsableBox());
-
-$('body').append(br.blankOCRDiv());
-$('#BRocr').before($('#BRshare'));
+br.appendPageBox();
+br.appendDownloadButtonAndDialog();
+br.appendOCRDialog();
+br.appendCollapsableBox();

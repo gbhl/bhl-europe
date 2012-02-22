@@ -34,16 +34,16 @@ public class PairtreeIdMapper implements IdMapper {
 	}
 
 	public URI getExternalId(URI internalId) throws NullPointerException {
-		logger.info("Receive Internal ID: " + internalId);
+		logger.debug("Receive Internal ID: " + internalId);
 		String externalPath = pathMapper.getExternalPath(internalId, FedoraURI.DEFAULT_NAMESPACE);
 		String externalFile = fileMapper.getExternalFile(internalId);
 		URI externalId = URI.create(FedoraURI.DEFAULT_SCHEME + ":fedora/" + externalPath + "/" + externalFile);
-		logger.info("Return External ID: " + externalId.toString());
+		logger.debug("Return External ID: " + externalId.toString());
 		return externalId;
 	}
 
 	public URI getInternalId(URI externalId) throws NullPointerException {
-		logger.info("Receive External ID: " + externalId);
+		logger.debug("Receive External ID: " + externalId);
 		String internalPath = pathMapper.getInternalPath(externalId);
 		String internalFile = fileMapper.getInternalFile(externalId);
 		URI internalId = null;
@@ -53,7 +53,7 @@ public class PairtreeIdMapper implements IdMapper {
 			internalId = URI.create(internalScheme + ":" + internalPath + "/"
 					+ internalFile);
 		}
-		logger.info("Return Internal ID: " + internalId.toString());
+		logger.debug("Return Internal ID: " + internalId.toString());
 		return internalId;
 	}
 

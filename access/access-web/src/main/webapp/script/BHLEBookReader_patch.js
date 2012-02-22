@@ -14,7 +14,8 @@ BookReader.prototype.getToolBox = function(index) {
         +     "<button class='BRicon add_page' title='Add this page to download basket'></button>"
 		+     "<button class='BRicon remove_page' title='Remove this page from download basket'></button>"
 		+     "<button class='BRicon ocr' title='Display OCR of this page'></button>"
-		//+     "<button class='BRicon ubio' title='Show Scientific Names on this page'></button>"
+		// + "<button class='BRicon ubio' title='Show Scientific Names on this
+		// page'></button>"
         +   "</span>"
         + "</div>"
 	);
@@ -187,9 +188,9 @@ BookReader.prototype.updateOCRDialog = function(index){
         '<form method="post" action="">',
                 '<fieldset class="ocrFieldset">',
                 '</fieldset>',
-            //'<fieldset class="center">',
-            //    '<button type="submit"">Correct it!</button>',
-            //'</fieldset>',
+            // '<fieldset class="center">',
+            // '<button type="submit"">Correct it!</button>',
+            // '</fieldset>',
         '</form>'].join('\n'));
 	
 	jForm.find('.ocrFieldset').append('<iframe src="' + this.getPageOCRURI(index) + '"/>');
@@ -230,7 +231,7 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 			break;
 	}
 	
-	var url = '../../download/' + br.bookInfo.guid + '/';
+	var url = '../download/' + br.bookInfo.guid + '/';
 	url += method;
 	url += '?ranges=';
 	
@@ -249,23 +250,18 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 }
 
 BookReader.prototype.search = function(term) {
-    //console.log('search called with term=' + term);
-    
+    // console.log('search called with term=' + term);
     $('#textSrch').blur(); //cause mobile safari to hide the keyboard     
     
-    var url = 'http://'+this.server.replace(/:.+/, ''); //remove the port and userdir
-    url    += '/fulltext/inside.php?item_id='+this.bookId;
-    url    += '&doc='+this.subPrefix;   //TODO: test with subitem
-    url    += '&path='+this.bookPath.replace(new RegExp('/'+this.subPrefix+'$'), ''); //remove subPrefix from end of path
-    url    += '&q='+escape(term);
-    //console.log('search url='+url);
+    var url = 'search/' + this.bookInfo.guid + '?query=' + escape(term);
     
     term = term.replace(/\//g, ' '); // strip slashes, since this goes in the url
     this.searchTerm = term;
     
     this.removeSearchResults();
     this.showProgressPopup('<img id="searchmarker" src="'+this.imagesBaseURL + 'marker_srch-on.png'+'"> Search results will appear below...');
-    $.ajax({url:url, dataType:'jsonp', jsonpCallback:'br.BRSearchCallback'});    
+    //$.ajax({url:url, dataType:'jsonp', jsonpCallback:'br.BRSearchCallback'});
+	$.ajax({url:url, dataType:'json', success: function(data){br.BRSearchCallback(data);}});  
 }
 
 BookReader.prototype.leafNumToIndex = function(pageNum) {
@@ -308,10 +304,10 @@ BookReader.prototype.buildDownloadDiv = function(jDownloadDiv)
                 '<fieldset class="thumbnailFieldset">',
                 '</fieldset>',
             '</fieldset>',
-//			'<fieldset>',
-//                '<input type="checkbox" id="whole_book" name="whole_book" ></input>',
-//				'<label for="whole_book">Select the whole literature</label>',
-//			'</fieldset>',
+// '<fieldset>',
+// '<input type="checkbox" id="whole_book" name="whole_book" ></input>',
+// '<label for="whole_book">Select the whole literature</label>',
+// '</fieldset>',
 			'<fieldset class="format_selection">',
 				'<label for="format">Format:</label>',
                 '<fieldset class="format_selection">',
@@ -344,16 +340,16 @@ BookReader.prototype.buildDownloadDiv = function(jDownloadDiv)
 		jForm.find('.thumbnailFieldset').append(tns);
 	}
 	
-//	jForm.find('#whole_book').click(function(){
-//		if ($(this).is(':checked')){
-//			$('.thumbnailFieldset').parent().slideUp('slow');
-//			// Update the height of the colorbox
-//			$('#cboxLoadedContent').css('height', '');
-//			$('#cboxContent').css('height', '');
-//		} else {
-//			$('.thumbnailFieldset').parent().slideDown('slow');
-//		}
-//	});
+// jForm.find('#whole_book').click(function(){
+// if ($(this).is(':checked')){
+// $('.thumbnailFieldset').parent().slideUp('slow');
+// // Update the height of the colorbox
+// $('#cboxLoadedContent').css('height', '');
+// $('#cboxContent').css('height', '');
+// } else {
+// $('.thumbnailFieldset').parent().slideDown('slow');
+// }
+// });
 	  
     jForm.appendTo(jDownloadDiv);
     jForm = ''; // closure
@@ -381,6 +377,7 @@ BookReader.prototype.buildCollapsableBox = function(){
 	box.find('#BRboxcontent').append(this.buildPageList());
 	box.find('#BRboxcontent').append(this.buildScientificNameList());
 	
+	var self = this;
 	box.find('#BRboxhead').click(function() {
 		if ($(this).hasClass('BRexpand')) {
 			$(this).animate({
@@ -391,6 +388,9 @@ BookReader.prototype.buildCollapsableBox = function(){
 			});
 			$('#BookReader').animate({
 				left : "210px",
+			}, function(){
+				console.log('Callback!');
+				self.prepareView();
 			});
 			$(this).addClass('BRcollapse').removeClass('BRexpand');
 		} else {
@@ -402,9 +402,13 @@ BookReader.prototype.buildCollapsableBox = function(){
 			});
 			$('#BookReader').animate({
 				left : "0px",
+			}, function(){
+				console.log('Callback!');
+				self.prepareView();
 			});
 			$(this).addClass('BRexpand').removeClass('BRcollapse');
 		}
+
 	})
 	
     box.find('#BRboxhead').mouseover(function(){
@@ -502,4 +506,44 @@ BookReader.prototype.updateScientificNameList = function(index){
 			nameList.append(nameEntry);
 		}
 	}
+}
+
+BookReader.prototype.appendPageBox = function(){
+	$('#BRpage').after('<div id="BRpagebox">Go to:<input type="text"/></div>');
+	$('#BRpagebox').find('input').val(br.getPageNum(br.currentIndex()));
+	$('#BRpagebox').find('input').change(function(){
+		br.jumpToIndex(br.getPageIndex($(this).val()));
+	});
+}
+
+BookReader.prototype.appendDownloadButtonAndDialog = function(){
+	var hiddenDiv = $('<div style="display: none;" />');
+	$('body').append(hiddenDiv);
+	
+	$(".BRicon.info").before('<button class="BRicon download"></button>');
+	$('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
+	hiddenDiv.append(br.blankDownloadDiv());
+}
+
+BookReader.prototype.appendOCRDialog = function(){
+	var hiddenDiv = $('<div style="display: none;" />');
+	$('body').append(hiddenDiv);
+	
+	hiddenDiv.append(br.blankOCRDiv());
+}
+
+BookReader.prototype.appendCollapsableBox = function(){
+	var mainDiv = $('<div id="main" />');
+	$('#BookReader').wrap(mainDiv);
+	$('#BookReader').before(br.buildCollapsableBox());
+}
+
+BookReader.prototype.prepareView = function(){
+    if (this.constMode1up == this.mode) {
+        this.prepareOnePageView();
+    } else if (this.constModeThumb == this.mode) {
+        this.prepareThumbnailView();
+    } else {
+        this.prepareTwoPageView();
+    }
 }
