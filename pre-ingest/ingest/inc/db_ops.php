@@ -28,8 +28,6 @@ if($sub_action=="save_cp_details")
         metadata_ws='".$metadata_ws."' 
         where user_id=".$user_id;
     
-    // col user_directory is maintained by analyzer
-
     // BESTAETIGUNG UM UMSETZEN EVTL. DADURCH GEAENDERTER REALTIME USER VARIABLEN
     if (mysql_select($query,$db)>0) { 
         $endmsg = "Account data successfully updated!";
@@ -93,8 +91,12 @@ if($sub_action=="save_dir_details")
              $nextPK = nextPK("content",$db,"content_id");
 
              // FILE OR DIR CREATE TIME FOR SORTING
-             $ctime = @filectime($arrKeys[$i]);
-             if ($ctime=="") time();
+             // $ctime = @filectime($arrKeys[$i]);
+             
+             $ctime = @filectime($_POST[$arrKeys[$i]]);
+             
+             if ($ctime=="") $ctime = time();
+             
              $ctime = date("Y-m-d H:i:s",$ctime);
              
              // SIZE ESTIMATION (DIR|FILE)

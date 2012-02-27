@@ -2,11 +2,11 @@
 // ********************************************
 // ** FILE:    GLOBALS.PHP                   **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    05.11.2011                    **
+// ** DATE:    10.02.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-define("_APP_VERSION",       "1.0 beta 1");
+define("_APP_VERSION",       "1.1 stable");
 
 define("_APP_NAME",          "BHL-E Content Portal & Ingestion");
 

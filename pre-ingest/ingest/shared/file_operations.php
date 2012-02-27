@@ -185,6 +185,7 @@ function read_file($filename)
  * @return  array   FILTERED LINES OF FILE
  *
  * 2ND PARAMETER DEFINES LINES WHICH CONTAIN THESE CHARACTERS ONLY(!) WILL BE EXCLUDED
+ * 
  * IF INVERTED = TRUE LINES TO IGNORE BECOME LINES TO RETURN
  */
 function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePrefix="",
@@ -207,8 +208,8 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
             
             if (!$inverted)
             {
-                if ($ignoreCase)    $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
-                else                $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
+                if ($ignoreCase) $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
+                else             $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
 
                 if ($probeLine != "")
                 {
@@ -216,8 +217,7 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
                     $rVal[] = $line;
                 }
             }
-            else
-            {
+            else {
                     if (($commentLinePrefix=="")||(substr($line,0,strlen($commentLinePrefix))!=$commentLinePrefix))
                     {
                         if ($ignoreCase)    $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
@@ -225,7 +225,7 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
 
                         if ($line!=$probeLine)  $rVal[] = $line;
                     }
-            }
+                }
         }
         fclose($fp);
 

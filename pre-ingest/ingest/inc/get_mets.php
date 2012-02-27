@@ -32,21 +32,25 @@ echo "<h3>Prepare METS Files for media and its parts</h3><pre>";
 
 
 
-
-
 // TIFFS IN CONTENT TABELLE WERDEN BEI IMAGES UND PDFS AKTUELL GEHALTEN DAHER VERWENDBAR
 $query    = "select content_pages_tiff from content where content_id=" . 
-        $content_id." order by content_pages_tiff desc";
+        $content_id." order by content_pages_tiff asc";
 $arrTiffs = explode(_TRENNER, abfrage($query, $db));
-$nPages   = count($arrTiffs);
+$arrTiffs = sortShortFirst($arrTiffs);  // IMPORTANT PRE SORT
 
-sort($arrTiffs);    // important pre sort pages from 1 ... n
+
+// OCR IN CONTENT TABELLE WERDEN BEI IMAGES UND PDFS AKTUELL GEHALTEN DAHER VERWENDBAR
+$query    = "select content_pages_text from content where content_id=" . 
+        $content_id." order by content_pages_text asc";
+$arrOCR   = explode(_TRENNER, abfrage($query, $db));
+$arrOCR   = sortShortFirst($arrOCR);   // IMPORTANT PRE SORT
+
 
 $filesGenerated = 0;
 
 // LOOP FOR BOOK + ALL PAGES
 
-for ($i=0;$i<=$nPages;$i++)     // nPages + 1 book
+for ($i=0;$i<=$cPages;$i++)     // $cPages + 1 book
 {
     ob_start();
     
@@ -70,19 +74,19 @@ for ($i=0;$i<=$nPages;$i++)     // nPages + 1 book
     }
     
     $docRoot = $domDoc->documentElement;
-    
+
     // returns a new instance of class DOMNodeList
     $allElements = $domDoc->getElementsByTagName('*');
-    
+
     // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
     foreach( $allElements as $curElement )
     {
          $nodeAttributes = $curElement->attributes;
          $nodeValue      = trim($curElement->nodeValue);
          $nodeName       = trim($curElement->nodeName);
-         
+
          if ($i==0) include("inc/mets_book.php");
-         if ($i>0) include("inc/mets_page.php");
+         if ($i>0)  include("inc/mets_page.php");
     }
 
     $xmlStr = $domDoc->saveXML();
@@ -98,14 +102,14 @@ for ($i=0;$i<=$nPages;$i++)     // nPages + 1 book
         echo "METS file: ".basename($metsFile)." \t\t generated...\n";
     }
     else
-    echo _ERR."METS file: ".basename($metsFile)." \t\t generation failed!\n";
+        echo _ERR."METS file: ".basename($metsFile)." \t\t generation failed!\n";
     
     @ob_end_flush();
     @ob_flush();
     @flush();    
 }
 
-if ($filesGenerated>($nPages-2))  $ingestReady = true;
+if ($filesGenerated>($cPages-2))  $ingestReady = true;
 
 echo "\n\n</pre>\n";
 

@@ -24,6 +24,12 @@
  * 
  */
 
+$jobRunning = is_content_job_running($line[0]);
+
+$text201 = "currently running or in queue ...";
+
+
+
 
 // METADATA (1)
 $command = "onClick=\"javascript: popup_win('gm','"._SYSTEM."?menu_nav=get_metadata&content_id=".$line[0]."',1000,500);\""; 
@@ -37,12 +43,14 @@ else                     icon("metadata0.png","Metadata already prepared.",$comm
 // IMAGES (2)
 $command = "onClick=\"javascript: popup_win('pi','"._SYSTEM."?menu_nav=get_images&content_id=".$line[0]."',1000,500);\"";
 
-if ($line[10]==0) 
-    icon("tif32_00.png","Prepare Metadata first!");
+if (($jobRunning) && ($line[10]==1))
+    icon("tif32_anim.gif",      "Image Processing ".$text201);
+else if ($line[10]==0) 
+    icon("tif32_00.png",        "Prepare Metadata first!");
 else if ($line[10]==1)    
-    icon("tif32.png","Prepare Page Images now...",$command); 
+    icon("tif32.png",           "Prepare Page Images now...",$command); 
 else 
-    icon("tif32_0.png","Images already prepared.",$command); 
+    icon("tif32_0.png",         "Images already prepared.",$command); 
 
 
 // OCR (3)
@@ -50,7 +58,10 @@ else
 if (!$isPDF)   // FALLS NICHT PDF
 {
     $command = "onClick=\"javascript: popup_win('po','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."',1000,500);\"";
-    if ($line[10]<2)
+    
+    if (($jobRunning) && ($line[10]==2))
+        icon("ocr_anim.gif",       "OCR ".$text201);
+    else if ($line[10]<2)
         icon("ocr00.png",          "Prepare Metadata and Page Images first!");
     else if ($line[10]==2)    
         icon("ocr.png",            "Generate OCR for all Pages now...",$command); 
@@ -60,24 +71,30 @@ if (!$isPDF)   // FALLS NICHT PDF
 else           // PDF TO TEXT & TIF HERE
 {
     $command = "onClick=\"javascript: popup_win('pp','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."&pdf=1',1000,500);\"";
-    if ($line[10]<2)    
-        icon("pdf2tiff00.png",      "Prepare Metadata and Page Images first!");
+    
+    if (($jobRunning) && ($line[10]==2))
+        icon("pdf2txt_anim.gif",   "PDF to Text ".$text201);
+    else if ($line[10]<2)    
+        icon("pdf2txt00.png",      "Prepare Metadata and Page Images first!");
     else if ($line[10]==2)
-        icon("pdf2tiff.png",        "Prepare PDF Text now...",$command); 
+        icon("pdf2txt.png",        "Prepare PDF Text now...",$command); 
     else
-        icon("pdf2tiff0.png",       "PDF Text already prepared.",$command); 
+        icon("pdf2txt0.png",       "PDF Text already prepared.",$command); 
 }
 
 
 // TAXON (4)
 $command = "onClick=\"javascript: popup_win('tx','"._SYSTEM."?menu_nav=get_taxons&content_id=".$line[0]."',1000,500);\"";
 
-if ($line[10]<3) 
+if (($jobRunning) && ($line[10]==3))
+    icon("taxon_anim.gif",          "Taxonfinder ".$text201);
+else if ($line[10]<3) 
     icon("taxon00.png",             "Prepare (OCR) Text first!");
 else if ($line[10]==3)    
     icon("taxon.png",               "Prepare/Gather Taxonometric Information now...",$command); 
 else 
     icon("taxon0.png",              "Taxonometric Information already present.",$command); 
+
 
 
 // FORMAT SPECS (5) - MEDIA ATTRIBUTES
@@ -104,7 +121,7 @@ if ((file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_FINISHED))||
         <li><u><a href='"._SYSTEM."?menu_nav=ingest_list&sub_action=reset_ingest&content_id=".$line[0]."' target=_blank>Reset AIP to status \"not ingested\" and remove flag \"ready for ingest\"...</a></u><br>
         <font size=1>Enables you to re-prepare steps and/or re-ingest...</font></li><br>
         </ul>
-        </div>";    
+        </div>";
 
 $endJS .= "
 

@@ -129,7 +129,13 @@ function queue_add($queueFile, $arrQueueCommands)
         if ($content2write!="")
         $nBytes = file_put_contents($queueFile, "\n".$content2write."\n", FILE_APPEND);
 
-        if($nBytes>0)   return $nBytes. " Bytes / ".$linesAdded." commands queued.\n";
+        if($nBytes>0)   
+        {
+            return $nBytes. " Bytes / ".$linesAdded." commands queued.\n";
+            
+            // MAKE CHECK COPY 
+            // file_put_contents($queueFile.".chk", "\n".$content2write."\n", FILE_APPEND);
+        }
         else            return _ERR." Queueing failed or commands already queued!";
     }
     
@@ -210,6 +216,105 @@ function getOCRlang($content_id)
     echo "Taking default OCR language (".$retLang.") ...\n";
     
     return $retLang;
+}
+
+
+
+
+// *******************************
+function sortShortFirst($arrToSort)
+// *******************************
+// EXAMPLE SORT SUPPORT:
+// maas_et_al_2011_annonaceae_index_nordic.pdf_100_PDF_100.txt
+// maas_et_al_2011_annonaceae_index_nordic.pdf_1_PDF_1.txt
+/* 
+ * example: 
+$arrToSort = array(
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_50_PDF_11.txt',
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_200_PDF_1.txt',
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_100_PDF_100.txt',
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_1_PDF_1.txt'
+    
+);
+
+echo_pre( sortShortFirst($arrToSort));
+
+*/
+{
+    $arrSorted = $arrToSort;
+    $nElements = count($arrSorted);
+    
+    sort($arrSorted);
+    
+    // BUILD MULTI ARRAY WITH LENGTH AS INDEX
+    
+    $arrTemp = array();
+    $minLen  = 0;
+    $maxLen  = 0;
+    
+    for ($i=0;$i<$nElements;$i++)
+    {
+        $curLen = strlen($arrSorted[$i]);
+
+        $arrTemp[($curLen)][] = $arrSorted[$i];
+
+        if ($minLen>$curLen)    $minLen = $curLen;
+        if ($maxLen<$curLen)    $maxLen = $curLen;
+    }
+    
+    // ES DARF NICHT MEHR SORT V. WERDEN, DENN SORTIERUNG KILLT KEYS!
+    
+    // FALLS GLEICHLANG, RETURNIERE NORMAL SORTIERTEN EINGANGSARRAY
+    if ($maxLen==$minLen)   return $arrSorted;
+
+    reset($arrTemp);
+    
+    // UNTERSCHIEDL. LAENGEN -> KURZE ZUERST
+    // SORT INDIVIDUAL LENGTH ARRAYS AND ADD ALL TOGETHER WITH SHORTEST FIRST
+    $arrReturn = array();
+    
+    for ($curLen=$minLen;$curLen<=$maxLen;$curLen++)
+    {
+        if (array_key_exists($curLen, $arrTemp))
+        {
+            sort($arrTemp[$curLen]);               // IM AKTUELLEN LAENGE ARRAY SORTIEREN
+            $arrReturn = array_merge($arrReturn,$arrTemp[$curLen]);
+        }
+    }
+    
+    // echo_pre($arrReturn);
+    
+    return $arrReturn;
+}
+
+
+
+// ************************************************************
+function is_content_job_running($contentID,$regard_queued=true)
+// ************************************************************
+{
+    $contentID = (int) $contentID;
+    
+    // EXISTIEREN CONTENT ID JOB FILES IN EXEC DIR UNTERVERZEICHNISSEN
+    // SEE INIT.PHP
+    
+    $arrJobFiles = getContentFiles(_QUEUE_RUNDIR,'single_suffix',false,_QUEUE_SUFFIX,2);
+    
+    // QUEUE DIR AUCH BERUECKSICHTIGEN
+    if ($regard_queued)
+    $arrJobFiles = array_merge($arrJobFiles,getContentFiles(_USER_WORKDIR,'single_suffix',false,_QUEUE_SUFFIX,2));
+    
+    $nJobFiles   = count($arrJobFiles);
+    $contentJobs = 0;
+
+    for ($i=0;$i<$nJobFiles;$i++)
+    {
+        if (instr(basename($arrJobFiles[$i]),_QUEUE_PREFIX.$contentID._QUEUE_SUFFIX))  $contentJobs++;
+    }
+    
+    if ($contentJobs>0)   return true;
+    
+    return false;
 }
 
 

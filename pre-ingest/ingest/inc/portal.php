@@ -76,7 +76,7 @@
 
 		<br>
 		<h1>Member Login</h2>
-                <form  name="frm_login" method="post" action="index.php" style="margin: 0px 0px 0px 0px;">
+                <form  name="frm_login" method="post"   action="index.php?menu_nav=ingest_list" style="margin: 0px 0px 0px 0px;">
                 <input type="hidden"   name="menu_nav"  value="ingest_list">
 		<input type="text"     name="user_name" size=30><br>
 		<input type="password" name="user_pwd"  size=30 style="margin-top: 2px;"><br>
@@ -86,7 +86,7 @@
 		  
 </div>
 
-<div id=logodiv>
+<div id=logodiv style='position: absolute; left: 0px; width: 100%; bottom: 15px; text-align:center;'>
 
 <a href='http://www.bhl-europe.eu/' target='_blank'><img src="img/logo.png" width=277 height=92 border=0></a>
 

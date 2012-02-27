@@ -31,7 +31,7 @@ else if (($menu_nav=='portal')||($menu_nav=='ingest_list'))
 <script type="text/javascript" src="js/jquery/ui/jquery.ui.dialog.js"></script>
 <script type="text/javascript" src="js/jquery/ui/jquery.ui.effects.core.js"></script>
 
-
+<script type="text/javascript" src="js/jquery.tools.tooltips.js"></script>
 
 
 <script type="text/javascript">
@@ -65,7 +65,6 @@ jQuery.noConflict();
 );
 
 
-
 <?php
 
 if ($menu_nav=='ingest_list')
@@ -93,12 +92,51 @@ $( "button4", ".demo" ).click(function() { <?php echo $a4; ?>  });
 $( "button5", ".demo" ).click(function() { <?php echo $a5; ?>  });
 
 
+// ********************
+// ***** TOOLTIPS *****
+// ********************
+$("#mytable img[title]").tooltip({
+
+// each trashcan image works as a trigger
+tip: '#tooltip',
+
+// custom positioning
+position: 'bottom center',
+
+// move tooltip a little bit to the right
+offset: [10, 0],
+
+// there is no delay when the mouse is moved away from the trigger
+delay: 0
+});
+
+
+
+//  $(document).ready(function() {
+
+$("#ar a[title]").tooltip({
+
+position: 'bottom center',
+
+// tweak the position
+offset: [10, -30],
+
+// use the "slide" effect
+effect: 'slide',  opacity: 1
+
+// add dynamic plugin with optional configuration for bottom edge
+}).dynamic({ bottom: { direction: 'down', bounce: true } });
+
+// });
+
+
+
 <?php
 
 }
 
 ?>
-    
+
 })(jQuery);  //  abschluss
 
 </script>
