@@ -80,7 +80,7 @@ else
 
 // PPMS WIEDER ZAEHLEN
 if (!_QUEUE_MODE)
-$nPPM = getContentFiles($contentDir, 'single_suffix', true,'.ppm');
+$nPPM = count(getContentFiles($contentDir, 'single_suffix', true,'.ppm'));
 
 
 ?>

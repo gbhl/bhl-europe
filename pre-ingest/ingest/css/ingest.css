@@ -24,3 +24,25 @@
     
     
 }
+
+
+.tooltip {
+	display:none;
+	background:transparent url(../img/sky_arrow.png);
+	font-size:11px;
+	height:70px;
+	width:160px;
+	padding:30px 25px 25px 25px;
+	color:#000;	
+        line-height: 15px;
+        text-align: justify;
+}
+
+
+div {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    min-height: 0px;
+}
+

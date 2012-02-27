@@ -12,14 +12,12 @@ echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIF files from various s
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $nTiffs   = count($arrTiffs);
 
-
 if ($nTiffs >= $cPages)    echo "All tiff files present - nothing to do!\n";
 else 
 {   
     if ($isPDF) include("inc/pdf2ppm.php");      // RUFT FALLS PPM EXISTIEREN SELBST IMAGES2TIFF AUF
     else        include("inc/images2tiff.php");  // KEIN PDF
 }
-
 
 // NEU ZAEHLEN
 $nTiffs   = count($arrTiffs);
@@ -38,11 +36,8 @@ if ($nTiffs >= $cPages)
 }
 else if (!_QUEUE_MODE) 
 {
- 
     if (!$isPDF)   echo _ERR . "Not all necessary page image files could be prepared!";
     else           echo "INFO: ".$nPPM." PPMs created. <b>RUN THIS STEP AGAIN TO CREATE TIFFS</b> from them!";
-
 }
-
 
 ?>

@@ -11,7 +11,7 @@ insert into users (
     user_config,
     user_config_smt,
     user_memo,
-    user_directory,
+    -- user_directory,
     queue_mode,
     metadata_ws) 
     values (

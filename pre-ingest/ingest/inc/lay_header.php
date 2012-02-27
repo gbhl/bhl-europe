@@ -14,7 +14,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server" >
 <title><?php echo _APP_NAME." | v."._APP_VERSION; ?></title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" href="css/reset-min.css" type="text/css" />
 <link rel="stylesheet" href="css/portal.css"    type="text/css" media="all" charset="utf-8" />

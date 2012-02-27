@@ -10,17 +10,18 @@
 // ATTRIBUTE DES AKTUELLEN NODES BEARBEITEN
 foreach ($nodeAttributes as $nodeAttribute)
 {
-    if ($nodeAttribute->name == 'OBJID')
+    if ($nodeName=='METS:mets')
     {
-      $curElement->setAttribute('OBJID',urlencode($objID));
+        if ($nodeAttribute->name == 'OBJID')
+            $curElement->setAttribute('OBJID',str_replace("/","-",($objID)));
     }
     
     // rdf:Description --> rdf:about="info:fedora/bhle:a0hhmgs0"
     if ($nodeName=='rdf:Description')
     {
         if ($nodeAttribute->name == 'about')
-        $curElement->setAttribute('rdf:about','info:fedora/'.urlencode($objID));
-    }    
+        $curElement->setAttribute('rdf:about','info:fedora/'.str_replace("/","-",($objID)));
+    }
 }
 
 
@@ -29,7 +30,7 @@ foreach ($nodeAttributes as $nodeAttribute)
 
 if ($nodeName=='dc:identifier')
 {
-    $curElement->nodeValue = urlencode($objID);
+    $curElement->nodeValue = str_replace("/","-",($objID));
 }
 
 
@@ -50,14 +51,18 @@ if ($nodeValue=='*olefdata')
     {
         $arrAway = array("<?xml version=\"1.0\" encoding=\"utf-8\"?>","<olef>","</olef>");
 
-        $olefXML = html_entity_decode(implode("\n",file_get_content_filtered(_OLEF_FILE, $arrAway,"",true)));
+        $olefXML = html_entity_decode(implode("\n",
+                file_get_content_filtered(_OLEF_FILE, $arrAway, "", true)));
         
         // PLATZHALTER NODE ENTFERNEN
         $removeNode = $docRoot->getElementsByTagName('olef')->item(0);
-        $oldnode    = $curElement->removeChild($removeNode);            // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
+        
+        // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
+        $oldnode    = $curElement->removeChild($removeNode);
 
         // OLEF EINFUEGEN
-        $node    = $domDoc->createElement("olef","\n".$olefXML."\n");
+        // $node    = $domDoc->createTextNode("olef","\n".$olefXML."\n");
+        $node    = $domDoc->createTextNode("<olef>\n".$olefXML."\n</olef>\n");
         $newnode = $curElement->appendChild($node);
      }
 }

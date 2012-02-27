@@ -13,8 +13,6 @@ define("_ABS",                      str_replace("//","/",$_SERVER['DOCUMENT_ROOT
 // URL TO THE INGEST APPLICATION (bhl-int.nhm.ac.uk)
 define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/");
 
-define("_UPLOADS_HOME",             "http://bhl-celsus.nhm.ac.uk/uploads/");
-
 // TECHNICAL CONTACT
 define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
 
@@ -28,7 +26,13 @@ define("_WORK_DIR",                 _ABS."temp/");
 define("_CONTENT_ROOT",             "G:/dev/nhm/ingest/uploads/");
 
 // REVERSE LOOKUP URL MUST POINT TO THE _CONTENT_ROOT AND END WITH /
-define("_REVERSE_LOOKUP_URL",       "http://bhl-celsus.nhm.ac.uk/uploads/");
+// USED 4 CLIENT SIDE ACCESS TO CONTENT AND .AIP FILES
+//                                  "http://bhl-celsus.nhm.ac.uk/uploads/");   
+define("_REVERSE_LOOKUP_URL",       "http://bhl-int.nhm.ac.uk/preingest/assets/");
+
+// GUI (ms)
+define("_GUI_REFRESH",		    "120000");
+
 
 define("_AIP_DIR",		    ".aip");
 define("_AIP_OLEF_FN",		    "olef.xml");
@@ -73,7 +77,7 @@ define("_NOID_PREFIX",              "99999/a0");
 // -----------------------------
 // ---- SCHEMA MAPPING TOOL ----
 // -----------------------------
-define("_JAVA_BIN",                 "\"C:/Program Files/Java/jre7/bin/java.exe\"");
+define("_JAVA_BIN",                 "\"java.exe\"");  // C:/Program Files/Java/jre7/bin/
 define("_SCHEMA_MAPPER",            "G:/dev/nhm/ingest/bin/smt/SMT-cli.jar");
 define("_SMT",                      _JAVA_BIN." -jar "._SCHEMA_MAPPER." ");
 
@@ -87,7 +91,15 @@ define("_IMG_BITPERPIXEL",          8);
 define("_IMG_ORI_WIDTH",            2048);
 define("_IMG_ORI_HEIGHT",           2048);
 
-define("_IMG_CONVERT_PARAMS",       "");
+define("_IMG_CONVERT_PARAMS",       "");  // -compress lzw 
+
+
+// -----------------
+// ---- QUEUING ----
+// -----------------
+define("_QUEUE_RUNDIR",             _ABS."queuing/running/");
+define("_QUEUE_ARCHIVE",            _ABS."queuing/archive/");
+define("_LOG",                      _ABS."log/");
 
 
 // ----------------------------

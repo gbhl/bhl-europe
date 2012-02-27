@@ -17,6 +17,9 @@ include("provider_details.php");
 
 
 // ADMIN MY FILES
+
+echo "<center>\n";
+
 include("content_list.php");
 
 
@@ -24,8 +27,10 @@ include("content_list.php");
 
 ?>
 
-<div id=logodiv>
+<div id=logodiv style="margin-top:20px;">
 
 <a href='http://www.bhl-europe.eu/' target='_blank'><img src="img/logo.png" width=277 height=92 border=0></a>
 
 </div>
+
+</center>

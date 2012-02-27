@@ -21,8 +21,7 @@ $arrTaxons = array();
 // TAXONSFILES
 $arrTaxonsF = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT); 
 $nTaxonsF   = count($arrTaxonsF);
-
-sort($arrTaxonsF);
+$arrTaxonsF = sortShortFirst($arrTaxonsF);  // IMPORTANT PRE SORT
 
 $pattern  = "<nameString>";
 $patternE = "</nameString>";
@@ -58,8 +57,8 @@ reset($arrTaxons);
 
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $nTiffs   = count($arrTiffs);
+$arrTiffs = sortShortFirst($arrTiffs);  // IMPORTANT PRE SORT
 
-sort($arrTiffs);
 
 // LOAD OLEF TO DOM
 $domDoc   = new DOMDocument();

@@ -56,6 +56,11 @@ if (isset($user_id))
     else                                                                define ("_QUEUE_MODE",  false);
     
     define("_USER_CONTENT_ROOT", clean_path(_CONTENT_ROOT."/".$arrProvider['user_content_home']));
+    
+    define("_USER_WORKDIR",      clean_path(_WORK_DIR . $arrProvider['user_content_id'] . "/"));
+    
+    // GENERATE USER WORK DIR
+    if (!is_dir(_USER_WORKDIR))  @mkdir(_USER_WORKDIR);
 }
 
 
@@ -63,26 +68,26 @@ if (isset($user_id))
 // CONTENT VORAB INFOS
 if ((isset($content_id)) && (is_numeric($content_id))) 
 {
+    $krit = " from content where content_id=" . $content_id;
+    
     // VORAB CONTENT DIR HOLEN
-    $contentDir  = abfrage("select content_root from content where content_id=" . $content_id,$db);
-    $contentName = abfrage("select content_name from content where content_id=" . $content_id,$db);
-    $cPages      = (int)abfrage("select content_pages from content where content_id=" . $content_id,$db);
+    $contentDir  = abfrage("select content_root  ".$krit,$db);
     
-    $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");          // AIP DIR
-    $workDir     = clean_path(_WORK_DIR . $arrProvider['user_content_id'] . "/");
+    $contentName = abfrage("select content_name  ".$krit,$db);
 
-
-    // GENERATE WORK DIR
-    if (!is_dir($workDir))      @mkdir($workDir);
+    $cPages = (int)abfrage("select content_pages ".$krit,$db);
+    
+    // GENERATE .AIP DIR
+    $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");
     if (!is_dir($destDir))      @mkdir($destDir);
-    
-    $curQueueFile = clean_path($workDir._QUEUE_PREFIX.$content_id._QUEUE_SUFFIX);
+
+    $curQueueFile = clean_path(_USER_WORKDIR._QUEUE_PREFIX.$content_id._QUEUE_SUFFIX);
     
     $isPDF = false;
 
     if (isPDF($contentName))
-    { 
-        $isPDF = true; 
+    {
+        $isPDF = true;
         $sourcePDF = clean_path($contentDir."/".$contentName);
     }
     

@@ -15,15 +15,14 @@
 
 include_once(_SHARED."pdf_tools.php");
 
-
 $relativePDF = basename($sourcePDF);
-$nPages      = getNumPagesInPDF(array($sourcePDF));
 
-echo "<h3>Try to extract text from ".$nPages." pages in " . $relativePDF . 
+
+echo "<h3>Try to extract text from ".$cPages." pages in " . $relativePDF . 
         " <font size=-2>(1 Step Operation, please be patient...</font></h3><pre>";
 
 // EINZELNE PAGES EXTRAHIEREN AUS DEM PDF
-for ($i=1;$i<=$nPages;$i++)
+for ($i=1;$i<=$cPages;$i++)
 {
     ob_start();
     

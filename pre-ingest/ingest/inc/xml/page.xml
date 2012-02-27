@@ -35,7 +35,12 @@ xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/
 <METS:fileGrp ID="DATASTREAMS">
 <METS:fileGrp ID="TIFF">
 <METS:file ID="TIFF.0" MIMETYPE="image/tiff" OWNERID="M">
-<METS:FLocat xlink:title="TIFF" LOCTYPE="URL" xlink:href="http://www.fileformat.info/format/tiff/sample/592c6ebdafc349a2b03d40be86fd6484/download"/>
+<METS:FLocat xlink:title="TIFF" LOCTYPE="URL" xlink:href=""/>
+</METS:file>
+</METS:fileGrp>
+<METS:fileGrp ID="OCR">
+<METS:file ID="OCR.0" MIMETYPE="text/plain" OWNERID="M">
+<METS:FLocat xlink:title="OCR"  LOCTYPE="URL" xlink:href=""/>
 </METS:file>
 </METS:fileGrp>
 </METS:fileGrp>

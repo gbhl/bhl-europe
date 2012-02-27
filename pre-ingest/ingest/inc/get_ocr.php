@@ -13,7 +13,6 @@ echo "<h1 style='margin-top: 3px;'>Preparing & Generating Plain Texts</h1>";
 $arrTextFiles = getContentFiles($contentDir, 'single_suffix', true,'.txt'); 
 $nTextFiles   = count($arrTextFiles);
 
-
 if ($nTextFiles >= $cPages)    echo "All text files present - nothing to do!\n";
 else 
 {   
@@ -22,10 +21,8 @@ else
     else        include("inc/ocr_tiff.php");   // TESSERACT OCR
 }
 
-
 // NEU ZAEHLEN
 $nTextFiles = count($arrTextFiles);
-
 
 // IN JEDEM FALL OB VORH. ODER GERADE ERZEUGT DIE DATENBANK UPDATEN
 if ($nTextFiles >= $cPages) 
@@ -41,6 +38,5 @@ if ($nTextFiles >= $cPages)
 }
 else if (!_QUEUE_MODE) 
     echo _ERR . "Not all necessary text files could be prepared!";
-
 
 ?>

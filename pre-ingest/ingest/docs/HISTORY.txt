@@ -6,6 +6,69 @@
 
 
 
+
+OLEF TESTS 
+
+FIX: OLEF MISMATCH AND TERMINATION WHILE ADDING TO METS FIXED
+
+FIX: CENTRAL AND INITIAL MEDIA PAGE NUMBER AQUISITION OPTIMIZED 
+
+BASIC SUPPORT FOR SERIALS AND THEIR REALTIONSHIPS
+
+PARTIAL DATABASE REBUILD FOR CHANGES BELOW IN PRODUCTION, PRESERVING MANAGED CONTENT
+
+GUI CHANGED TO UTF-8 (utf8_general_ci)
+
+ALL DATABASE TABLES CHANGED TO UTF-8
+
+FIX: SOFT REFRESH WITHOUT CONFIRM FOR RELOAD PAGE (E.G. FIREFOX)
+
+ENHANCEMENTS IN FILE TREES
+
+MANAGED CONTENT DATES DISPLAY OPTIMIZED
+
+BUFIX: CONTENT CREATE TIME DETECTION ON SERVER FIXED 
+
+CONTEXT TOOLTIPS ESTABLISHED 
+
+REMOVED EXPLICIT LZW COMPRESSION OF TIFF DUE DRAMATIC FILESIZE INCREASE IN TESTS
+BECAUSE IT REPLACES ORIGINAL (MUCH HIGHER) JPEG COMPRESSION, WHEN CONVERTING JPEG
+SOURCES.
+
+AUTOMATIC REFRESH OF INGEST LIST MAIN VIEW (_GUI_REFRESH in ms - config.php) 
+WITH REALTIME DISPLAY OF REFRESH INFORMATION
+
+BETTER QUEUE CLEANUP
+
+CORRECTED IMAGES (TITLES) FOR PDF2TXT 
+
+STARTED CHM HELP & DOCUMENTATION (docs/help.chm/)
+
+VARIOUS NEW CONFIG VARIABLES FOR BETTER TRANSPARENCY
+
+FIXED QUEUE LOGGING
+
+ADD TO QUEUE NOW CHECKS IN REALTIME WHAT IS CURRENTLY GATHERED BY THE QUEUE
+PARALLEL SCRIPT AND THEREFORE ONLY ALLOWS COMMANDS TO BE QUEUED WHICH ARE
+NOT QUEUED CURRENTLY AND ARE NOT EXECUTED CURRENTLY!
+
+TIF CONVERT: added -compress lzw (config.php)
+
+SUPPORT FOR SOME NEW DEFINED METS TAGS AND ATTRIBUTES (LABEL, P.NO., TITLE ...)
+
+NEW PAGE FILE NOTATION AWARE SORTING ALGORITHM
+
+TAXON REVERSE LOOKUP FILE URL ENCODING REMOVED (WE CAN NOT SUPPORT 
+FILENAMES WITH BLANKS - FSG).
+
+OCR FILE EMBEDDING IN PAGE METS REWORKED.
+
+GUID ENCODING CHANGED BACK TO RAW GUID REPLACING / WITH -
+
+TAXON REVERSE LOOKUP FILE URL ENCODING ADDED
+
+LOGO POSITION MISMATCH FIXED.
+
 NAMESPACE ATTRIBUTE FOR DWC ADDED (http://rs.tdwg.org/dwc/terms/)
 AND NAMESPACE FOR ACCCESSCONDITION (MODS) FIXED.
 
@@ -18,27 +81,27 @@ COMPLETE REWORK OF PAGE AND TAXON ELEMENTS ADDED TO OLEF.
 AFFECTS ALL NODES IN ITEMINFORMATION CONTAINER.
 
 ...
-<itemInformation>
-    <files>
-        <file>
-            <reference type="path">onzeflorabeschri00oude_0231.tif</reference>
-            <pages>
-                <page>
-                    <name>231</name>
-                    <taxon>
-                        <dwc:scientificName>Lentibulariaceae</dwc:scientificName>
-                    </taxon>
-                    <taxon>
-                        <dwc:scientificName>Oleaceae</dwc:scientificName>
-                    </taxon>
+&lt;itemInformation&gt
+    &lt;files&gt
+        &lt;file&gt
+            &lt;reference type="path"&gtonzeflorabeschri00oude_0231.tif&lt;/reference&gt
+            &lt;pages&gt
+                &lt;page&gt
+                    &lt;name&gt231&lt;/name&gt
+                    &lt;taxon&gt
+                        &lt;dwc:scientificName&gtLentibulariaceae&lt;/dwc:scientificName&gt
+                    &lt;/taxon&gt
+                    &lt;taxon&gt
+                        &lt;dwc:scientificName&gtOleaceae&lt;/dwc:scientificName&gt
+                    &lt;/taxon&gt
 ...
-                </page>
-            </pages>
-        </file>
-    </files>
-</itemInformation>
-</element>
-</olef>
+                &lt;/page&gt
+            &lt;/pages&gt
+        &lt;/file&gt
+    &lt;/files&gt
+&lt;/itemInformation&gt
+&lt;/element&gt
+&lt;/olef&gt
 
 
 CHANGED QUEUE LOGGING
