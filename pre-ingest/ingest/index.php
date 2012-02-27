@@ -105,16 +105,12 @@ switch($menu_nav)
         include_once("inc/ingest_log.php");
         break;
 
-    case "show_user_dir":
-        echo "<h1 style='margin-top: 6px;'>Last Analyzed Upload Filestructure Elements <font size=-1> (from Management Database, not realtime, created by last Upload Analyze)<br>For realtime directory listings click on the folder icons in '<b>my Preferences</b>'.</font></h1>";
-        print_dir_arr(explode(_TRENNER,abfrage("select user_directory from users where user_id=".$user_id)));
-        break;
-    
     case "show_content_root":
         echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (1st level overview only)</font></h1>";
         print_dir_arr(getDirectory(_CONTENT_ROOT,array(),0,"",1));
         break;
 
+    case "show_user_dir":
     case "show_user_content_root":
         echo "<h1 style='margin-top: 6px;'>Your Content Root <font size=-1> (for orientation purposes only)</font></h1>";
         print_dir_arr(getDirectory(_USER_CONTENT_ROOT,array(),0,"",_ANALYZE_MAX_DEPTH));        
@@ -165,6 +161,7 @@ switch($menu_nav)
         include_once("inc/portal.php");
         break;
 }
+
 
 // *****************************************************
 

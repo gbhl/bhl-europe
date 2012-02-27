@@ -52,7 +52,7 @@ function isPagedata($path)
 // ***************************************************************************
 // TYPES: single_suffix|metadata|pagedata|bookdata|ocrdata 
 // ***************************************************************************
-function getContentFiles($path,$type='metadata',$include_aip=true,$additional_suffix="")
+function getContentFiles($path,$type='metadata',$include_aip=true,$additional_suffix="",$depth=0)
 {
     $arrPageFiles = array();    
 
@@ -92,13 +92,13 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
     
     reset($arrPageExt);    
     
-    // DIRECTORY EINLESEN ( NICHT REKURIV - JOURNALS ? !!!)
-    $arrFiles       = getDirectory(clean_path($path),array(),0,"",0);
+    // DIRECTORY EINLESEN
+    $arrFiles       = getDirectory(clean_path($path),array(),0,"",$depth);
 
-    if (($include_aip)&&(is_dir(clean_path($path."/"._AIP_DIR)))) {
-        $arrFiles   = getDirectory(clean_path($path."/"._AIP_DIR),$arrFiles,0,"",0);
+    // HAENGT NOCHMAL .AIP FILES DAZU FALLS DEPHT == 0
+    if ((((int)$depth==0))&&($include_aip)&&(is_dir(clean_path($path."/"._AIP_DIR)))) {
+        $arrFiles   = getDirectory(clean_path($path."/"._AIP_DIR),$arrFiles,0,"",$depth);
     }
-
    
     $nFiles = count($arrFiles);
     
@@ -107,7 +107,7 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
         _AIP_OLEF_FN,_THUMB_BGRD,_THUMB_FN);
 
     for ($i = 0; $i < $nFiles; $i++) 
-    { 
+    {
         $pos = strrpos($arrFiles[$i],".");
        
         if (($pos!==false)&&(!in_array(basename($arrFiles[$i]),$arrCF)))
@@ -122,57 +122,6 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
 
     return $arrPageFiles;
 }
-
-
-
-
-
-// DEPRECATED
-// ****************************************************************
-function getFilesFromDatabase($user_id,$content_dir,$type2find='metadata')
-// ****************************************************************
-{
-    $arrUserDir  = explode(_TRENNER,abfrage("select user_directory from users where user_id=".$user_id));
-
-    $nUserDir    = count($arrUserDir);
-
-    $interesting = false;
-    
-    $arrRet      = array();
-
-    for ($i=0;$i<$nUserDir;$i++)
-    {
-            if (!instr($arrUserDir[$i],"/"._AIP_DIR))   // LEAF AWAY BECAUSE OF ORDER FOR INTERESTING 
-            {
-            // AB CONTENT VERZEICHNIS WIRDS DAS EINE VERZ. INTERESTING
-            if (is_dir(_CONTENT_ROOT.$arrUserDir[$i]))
-            {
-                if (_CONTENT_ROOT.$arrUserDir[$i]==$content_dir)    $interesting = true;
-                else $interesting = false;
-            }
-
-            // metadata
-            if (($interesting)&&($type2find=='metadata')&&(isMetadata($arrUserDir[$i])))
-                return _CONTENT_ROOT.$arrUserDir[$i]; // only 1 metdata file returned
-            
-            // pagesource
-            if (($interesting)&&($type2find=='pagesource')&&(isPagedata($arrUserDir[$i])))	
-                $arrRet[] = _CONTENT_ROOT.$arrUserDir[$i];
-            
-            // tiff
-            if (($interesting)&&($type2find=='tiff')&&(instr(basename($arrUserDir[$i]),array(".tif",".tiff"),true,true)))	
-                $arrRet[] = _CONTENT_ROOT.$arrUserDir[$i];           
-             
-            // text
-            if (($interesting)&&($type2find=='text')&&(instr(basename($arrUserDir[$i]),array(".txt",".text",".ocr"),true,true)))	
-                $arrRet[] = _CONTENT_ROOT.$arrUserDir[$i];
-            }
-    }
-
-    return $arrRet;
-}
-
-
 
 
 ?>

@@ -13,17 +13,16 @@
 // http://code.google.com/p/tesseract-ocr/downloads/list
 
 
-// TIFFS VON DATENBANK HOLEN DA IN USER_DIRECTORY ALTSTAND VON ANALYZE 
+// TIFFS VON DATENBANK HOLEN 
 $query = "select content_pages_tiff from content where content_id=" . $content_id;
 $arrTiffs = explode(_TRENNER, abfrage($query, $db));
-$nPages   = count($arrTiffs);
 
 
-echo "<h3>Try to recognize Text in " . $nPages . " Page Images.</h3><pre>\n";
+echo "<h3>Try to recognize Text in " . $cPages . " Page Images.</h3><pre>\n";
 
 $ocrLang = getOCRlang($content_id);
 
-for ($i = 0; $i < $nPages; $i++) 
+for ($i = 0; $i < $cPages; $i++) 
 {
     ob_start();
 

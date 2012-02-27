@@ -86,9 +86,13 @@ else    // INITIALER AUFBAU MIT SOFORTIGEM AJAX REQUEST
         border-left: solid 1px #BBB;
         border-bottom: solid 1px #FFF;
         border-right: solid 1px #FFF;
-        background: #FFF;
-        overflow: scroll;
+        background-color: #fff;
+        overflow: auto;
         padding: 1px;
+	opacity: 0.75;
+	-moz-opacity: 0.75;
+	filter: alpha(opacity=75);    
+        color: #000;
 }
 
 </style>
@@ -118,9 +122,11 @@ js_end();
 ?>
 
 <div class="example">
-<h2><?php echo "...".substr(str_replace(_CONTENT_ROOT,"",$root),-42); ?></h2>
+<h3><?php echo "/ ... ".substr(str_replace(_CONTENT_ROOT,"",$root),-42); ?></h3>
+
 <div id="fileTreeContainer" class="cont1"></div>
 </div>
+
 
 <?php
 

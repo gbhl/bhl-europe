@@ -10,8 +10,6 @@
 #        TESTING
 # *************************************************
 #
-# */30 * * * * sh /var/www/ingest/queuing/run_preingest_jobs.sh  > /dev/null 2>&1
-#
 # find <workdir> -maxdepth 1 -name '*.sh' -type f -exec sh {} ';'
 
 # INITS
@@ -43,7 +41,7 @@ find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
 # **********************************
 # INVOKE SCRIPTS IN CURRENT $execDir
 # **********************************
-find $execDir -maxdepth 1 -name '*.sh' -type f -exec sh {} ';' > $logDest
+find $execDir -maxdepth 1 -name '*.sh' -type f -exec sh {} >> $logDest ';'
 
 
 # ARCHIVE & CLEANUP
@@ -52,7 +50,12 @@ find $execDir -maxdepth 1 -name '*.sh' -type f -exec mv {} $archDir ';'
 
 # CLEAN EMPTY (30MIN) LOGS
 
-find $rootDir/log/ -name '*.log' -type f -size 0 -exec rm -f {} ';'
+find $rootDir/log/ -name '*.log' -type f -size 0    -exec rm -f {} ';'
+
+find $rootDir/log/ -name '*.log' -type f -mtime +31 -exec rm -f {} ';'
+
+find $archDir      -name '*.sh'  -type f -mtime +31 -exec rm -f {} ';'
+
 
 # ETWAIGE ARTEFAKTE DROPPEN
 

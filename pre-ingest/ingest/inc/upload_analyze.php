@@ -34,7 +34,7 @@ $arrDir = getDirectory($analyzeDir,array(),0,array('.', '..',_AIP_DIR ),_ANALYZE
 $csvDir = implode(_TRENNER,$arrDir);
 $csvDir = str_replace(_CONTENT_ROOT,"",$csvDir);
 
-mysql_select("update users set user_directory='".mysql_clean_string($csvDir)."' where user_id=".$user_id,$db);
+// mysql_select("update users set user_directory='".mysql_clean_string($csvDir)."' where user_id=".$user_id,$db);
 
 // $out2 = ob_get_contents();
 @ob_end_clean();

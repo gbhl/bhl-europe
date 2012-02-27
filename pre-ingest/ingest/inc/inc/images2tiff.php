@@ -15,24 +15,22 @@ unset($arrTiffs);
 
 $arrTiffs = array();
 
-
 $arrPageSources = getContentFiles($contentDir, 'pagedata', true); // tif, ppm, ...
-$nPages = count($arrPageSources);
 
 
-if ($nPages==0) echo _ERR." No Page Sources found.)";
+if ($cPages==0) echo _ERR." No Page Sources found.)";
 else 
 {
-    echo "<h3>Try to convert " . $nPages . " foreign Page Sources to TIF.</h3><pre>";
+    echo "<h3>Try to convert " . $cPages . " foreign Page Sources to TIF.</h3><pre>";
 
-    for ($i = 0; $i < $nPages; $i++) 
+    for ($i = 0; $i < $cPages; $i++) 
     {
         ob_start();
 
         $outputFile = substr($arrPageSources[$i], 0, strrpos($arrPageSources[$i], ".")) . ".tif";
         $outputFile = $destDir . basename($outputFile);
 
-        $myCmd = _IMG_MAGICK_CONVERT . " \"" . $arrPageSources[$i] . "\" \"" . $outputFile."\"";
+        $myCmd = _IMG_MAGICK_CONVERT . _IMG_CONVERT_PARAMS . " \"" . $arrPageSources[$i] . "\" \"" . $outputFile."\"";
         $myCmd = exec_prepare($myCmd);
         
         if (!_QUEUE_MODE) 

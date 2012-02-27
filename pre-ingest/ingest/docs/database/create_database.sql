@@ -2,7 +2,7 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-CREATE SCHEMA IF NOT EXISTS `int_pi_pi` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci ;
+CREATE SCHEMA IF NOT EXISTS `int_pi_pi` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
 USE `int_pi_pi` ;
 
 -- -----------------------------------------------------
@@ -20,11 +20,12 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`users` (
   `user_config` TEXT NULL ,
   `user_config_smt` TEXT NULL ,
   `user_memo` TEXT NULL ,
-  `user_directory` LONGTEXT NULL ,
   `queue_mode` TINYINT UNSIGNED NULL DEFAULT 0 ,
   `metadata_ws` VARCHAR(1024) NULL ,
   PRIMARY KEY (`user_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -38,7 +39,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingest_log` (
   `log_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ,
   `log_text` LONGTEXT NULL ,
   PRIMARY KEY (`log_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -53,7 +56,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingest_structure` (
   `ingest_structure_version` INT UNSIGNED NULL DEFAULT 1 ,
   `ingest_structure_status` ENUM('valid','invalid') NULL DEFAULT 'invalid' ,
   PRIMARY KEY (`ingest_structure_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -75,7 +80,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingests` (
   `ingest_do_taxon` TINYINT UNSIGNED NULL DEFAULT 1 ,
   `ingest_do_sm` TINYINT UNSIGNED NULL DEFAULT 1 ,
   PRIMARY KEY (`ingest_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -104,7 +111,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`content` (
   `content_pages_formatinfo` LONGTEXT NULL ,
   `content_ipr` TEXT NULL ,
   PRIMARY KEY (`content_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -118,7 +127,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`user_session` (
   `user_id` INT UNSIGNED NOT NULL ,
   `last_action` DATETIME NULL ,
   PRIMARY KEY (`session_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -132,7 +143,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`content_guid` (
   `released` DATETIME NOT NULL ,
   `last_action` DATETIME NULL ,
   PRIMARY KEY (`content_id`, `guid`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -150,7 +163,9 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`page_object` (
   `volume` VARCHAR(255) NULL ,
   `article` VARCHAR(255) NULL ,
   PRIMARY KEY (`page_id`) )
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 
@@ -163,9 +178,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 SET AUTOCOMMIT=0;
 USE `int_pi_pi`;
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`, `queue_mode`, `metadata_ws`) VALUES ('1', 'mehrrath', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, NULL, '1', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`, `queue_mode`, `metadata_ws`) VALUES ('2', 'nhmw', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, NULL, '1', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`, `queue_mode`, `metadata_ws`) VALUES ('3', 'NBGB', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'NBGB', 'NBGB', '1', NULL, '-m c -cm 4 -if <input_file> -of <output_file> -ife ISO-8859-15', 'The metadata looks fine, all plain MARC21 records which convert fine.', NULL, '1', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `user_directory`, `queue_mode`, `metadata_ws`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'testdata', 'admin', '1', NULL, '-m c -cm 5 -if <input_file> -of <output_file>', 'die spices Daten sind jetzt vorbereitet und in einer flachen Struktur am Server.', NULL, '0', NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('1', 'mehrrath', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('2', 'nhmw', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('5', 'nbgb', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'be-nbgb/Upload_20110930', 'nbgb', '1', NULL, '-m c -cm 4 -if <input_file> -of <output_file> -ife ISO-8859-15', 'The metadata looks fine, all plain MARC21 records which convert fine.', '1', NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'testdata/spices_prepared', 'admin', '1', NULL, '-m c -cm 5 -if <input_file> -of <output_file>', 'The metadata looks fine, all plain MARC21 records which convert fine.', '0', NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('3', 'test', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 COMMIT;

@@ -17,8 +17,8 @@ if (!file_exists($thumbIMG))
         @mkdir(dirname($thumbIMG));
         
         $arrCF = getContentFiles($line[3], 'pagedata', false);
-
-        sort($arrCF);
+        
+        $arrCF = sortShortFirst($arrCF);     // IMPORTANT PRE SORT
 
         $myCmd = _IMG_MAGICK_CONVERT . " -resize "._THUMB_SIZE." \"" . $arrCF[$thumbPage] . "\" \"" . $thumbIMG."\"";
         $myCmd = exec_prepare($myCmd);
