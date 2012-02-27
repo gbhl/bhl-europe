@@ -11,7 +11,7 @@
 define("_ABS",                      str_replace("//","/",dirname($_SERVER['SCRIPT_FILENAME'])."/"));
 
 // URL TO THE INGEST APPLICATION (bhl-int.nhm.ac.uk)
-define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/");
+define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/preingest/");
 
 // TECHNICAL CONTACT
 define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
