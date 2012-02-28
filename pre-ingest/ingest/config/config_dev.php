@@ -8,7 +8,7 @@
 
 
 // ABSOLUTE PATH TO THE INGEST APPLICATION ROOT (WHERE INGEST.PHP RESIDE!)
-define("_ABS",                      str_replace("//","/",dirname($_SERVER['SCRIPT_FILENAME'])."/"));
+define("_ABS",                      str_replace("//","/",$_SERVER['DOCUMENT_ROOT']."/"));
 
 // URL TO THE INGEST APPLICATION (bhl-int.nhm.ac.uk)
 define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/");
