@@ -102,8 +102,9 @@ $containerElement = $domDoc->getElementsByTagName('element')->item(0);
 // CLEANUP FIRST IF PART TO ADD EXISTS
 $dropNode = $docRoot->getElementsByTagName($arrNewNodes[0])->item(0);
 
+// VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
 if (($dropNode)&&($dropNode!=null))
-$containerElement->removeChild($dropNode);      // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
+$containerElement->removeChild($dropNode);
 
 
 
@@ -120,7 +121,8 @@ $containerElement = $containerElement->appendChild($domDoc->createElement($arrNe
 
 for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 {
-    $curParent = $containerElement; // $domDoc->getElementsByTagName('files')->item(0);  // start element wieder auf file
+    // $domDoc->getElementsByTagName('files')->item(0);  // start element wieder auf file
+    $curParent = $containerElement;
     
     for ($curNode=2;$curNode<$nNewNodes;$curNode++)             // von file bis taxon
     {
@@ -131,6 +133,33 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
         
         switch($curNodeName)
         {
+            case 'page':
+
+             $pageType = "PAGE";  // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3.tif
+             
+             $pos1 = strrpos($arrTiffs[$curTiff],"_");
+             
+             if ($pos1!==false)
+             {
+                 $pageTypePart = substr($arrTiffs[$curTiff],0,$pos1);
+                 $pos2 = strrpos($pageTypePart,"_");
+                 
+                 if ($pos2!==false)
+                 {
+                     $pageTypePart = substr($pageTypePart,$pos2+1);
+
+                     $pageType = trim($pageTypePart);
+
+                     unset($pageTypePart);
+                 }
+             }
+             
+             if ($pageType=="") $pageType = "PAGE";
+             
+             $node->setAttribute("pageType",$pageType);
+             $curParent = $curParent->appendChild($node);        // TYP DER PAGE GEM. FSG
+            break;
+        
             case 'reference':
              $node->setAttribute("type", "path");
              $node->nodeValue = $arrTiffs[$curTiff];          
@@ -172,10 +201,9 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
             default:
               $curParent = $curParent->appendChild($node);          // WIRD ZU NEUEM PARENT NODE
         }
-       
-       
+
        unset($node);
-       
+
     }
 }
 
