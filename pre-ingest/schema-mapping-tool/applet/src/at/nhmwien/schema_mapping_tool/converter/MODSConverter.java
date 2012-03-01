@@ -15,7 +15,7 @@ import java.io.InputStream;
 public class MODSConverter {
     public static void convertToOLEF( File inputFile, File outputFile ) throws Exception {
         // Now load the XSL from the internal resources
-        InputStream xslFile = MODSConverter.class.getResourceAsStream( "resources/MODS2OLEF_v0.2.xsl" );
+        InputStream xslFile = MODSConverter.class.getResourceAsStream( "resources/MODS2OLEF.xsl" );
         XSLTransformer.transform(inputFile, outputFile, xslFile);
     }
 }

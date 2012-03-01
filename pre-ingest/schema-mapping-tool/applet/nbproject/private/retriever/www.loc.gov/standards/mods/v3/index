@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                        "http://www.w3.org/TR/html40/loose.dtd">
+<html>
+<head>
+<title>Metadata Object Description Schema (MODS)</title>
+<base href="http://www.loc.gov/standards/mods/v3/mods-v3-namespace.html">
+<meta name="keywords" content="mods metadata object description schema web site library congress xml official site library congress">
+<meta name="description" content="The MODS schema is intended to be able to carry selected data from existing MARC 21 records as well as to enable the creation of original resource description records.">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="../mods.css" type="text/css">
+<script type="text/javascript" src="http://www.loc.gov/global/foresee/foresee-trigger.js"></script></head>
+<body link="#000099" vlink="#0066CC" bgcolor="#FFFFFF">
+<table width=670 cellpadding=4 cellspacing=0 border=0 align=center>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><img src="images/mods.gif" width="600" height="80" alt="Metadata Object Description Schema: Official Web Site"></td>
+  </tr>
+    <tr> 
+    <td><img src="images/mods-arrow.gif" width="600" height="20" alt=""></td>
+  </tr>
+  <tr> 
+    <td> 
+      <h1 align="center">MODS Version 3  Namespace Page </h1>
+      <h3 align="left">The namespace identifier for MODS Version 3 (all MODS 3.x versions) is </h3>
+      <h2 align="center"><a href="http://www.loc.gov/mods/v3">http://www.loc.gov/mods/v3</a></h2>
+      <p align="left">MODS schemas that use this namespace:</p>
+      <ul>
+        <li><a href="http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">MODS Version 3.0</a></li>
+        <li><a href="http://www.loc.gov/standards/mods/v3/mods-3-1.xsd">MODS Version 3.1</a></li>
+        <li><a href="http://www.loc.gov/standards/mods/v3/mods-3-2.xsd">MODS Version 3.2</a></li>
+        <li><a href="http://www.loc.gov/standards/mods/v3/mods-3-3.xsd">MODS Version 3.3</a>  </li>
+        <li><a href="http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">MODS Version 3.4</a></li>
+      </ul>
+      <p>Other Known Schemas that use this namespace:</p>
+      <ul>
+        <li><a href="http://www.loc.gov/standards/mads/mads.xsd">MADS </a></li>
+      </ul>
+      <p>The lastest major-version-3 version of the MODS schema (i.e. 3.x for the highest value of x for which there is an official version), currently 3.4 --in addition to the link cited above -- will always be found at:</p>
+      <h3><a href="http://www.loc.gov/standards/mods/v3/mods.xsd">http://www.loc.gov/standards/mods/v3/mods.xsd</a></h3>
+      <h2>&nbsp;</h2>
+      <h2>The MODS V3 Namespace </h2>
+      <p> see <a href="http://www.loc.gov/standards/mods//v3/mods-v3-namespace.html">MODS Version 3 DRAFT Namespace Definition Document</a>. </p>
+      <p>&nbsp;</p>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td width="78%"><br>
+&nbsp;&nbsp;
+      <!-- #BeginDate format:Am1 -->March 24, 2011<!-- #EndDate -->          </td>
+          <td width="22%" align="right"><a href="mailto:ndmso@loc.gov">Contact Us</a></td>
+        </tr>
+  </table>  </tr>
+</table>
+<script type='text/javascript' src='http://www.loc.gov/global/s_code.js'></script></body>
+</html>
