@@ -77,7 +77,7 @@ define("_NOID_PREFIX",              "10706/a0");
 // -----------------------------
 // ---- SCHEMA MAPPING TOOL ----
 // -----------------------------
-define("_JAVA_BIN",                 "/mnt/nfs-demeter/dev/jdk1.6.0_24/bin/java");  // C:/Program Files/Java/jre7/bin/
+define("_JAVA_BIN",                 "/mnt/nfs/dev/jdk1.6.0_24/bin/java");  // C:/Program Files/Java/jre7/bin/
 define("_SCHEMA_MAPPER",            "/opt/pre-ingest/smt-cli/SMT-cli.jar");
 define("_SMT",                      _JAVA_BIN." -jar "._SCHEMA_MAPPER." ");
 
