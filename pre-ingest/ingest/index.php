@@ -81,7 +81,10 @@ switch($menu_nav)
         include_once("inc/ingest_detail.php");
         break;
     
-    case "get_metadata":   // olef + guid
+    // *******************************
+    // PREPARATION STEP KERNEL TARGETS
+    // *******************************
+    case "get_metadata":    // olef + guid
     case "get_images":
     case "get_ocr":
     case "get_taxons":
