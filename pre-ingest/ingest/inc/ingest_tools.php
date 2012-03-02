@@ -318,4 +318,62 @@ function is_content_job_running($contentID,$regard_queued=true)
 }
 
 
+
+// ************************************************************
+function getPageInfoFromFile($file_name,$part='type',$curIdx=0)
+// ************************************************************
+// 
+// AB ELEMENT 3 SIND ALLES PAGE NUMBERS !
+// $part .... prefix[0], sequence[1], type[2], pagenumbers[3] .... [n]
+// 
+// NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
+{
+     $minParts = 4;
+     
+     $pos1  = strrpos($file_name,".");
+     
+     if ($pos1!==false) $file_name = substr($file_name,0,$pos1);
+     
+     $arrReturn = explode("_",$file_name);
+     $nArr      = count($arrReturn);
+     
+     // FEHLERBEHANDLUNG
+     if ($nArr<$minParts)
+     {
+         if ($nArr==2)      $arrReturn = array_merge($arrReturn,array('PAGE',$curIdx+1));
+         else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curIdx+1));
+         else return false;
+     }
+     
+     return $arrReturn;
+     
+     /*
+     
+     $pageType = "";
+
+     $pos1 = strrpos($file_name,"_");
+
+     if ($pos1!==false)
+     {
+         $pageTypePart = substr($file_name,0,$pos1);
+
+         $pos2 = strrpos($pageTypePart,"_");
+
+         if ($pos2!==false)
+         {
+             $pageTypePart = substr($pageTypePart,$pos2+1);
+
+             $pageType = trim($pageTypePart);
+
+             unset($pageTypePart);
+         }
+     }
+
+     if ($pageType=="") $pageType = "PAGE";    
+     
+     return trim(strtoupper($pageType)); */
+     
+}
+
+
 ?>

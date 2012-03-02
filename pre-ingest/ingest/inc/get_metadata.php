@@ -95,7 +95,7 @@ else
         echo "\n\n</pre>\n";    
 
         // NUR BEI GUID STEP OK
-        if (($cGUID!="") &&($olef!=""))
+        if (($cGUID!="")&&($olef!=""))
         {
             mysql_select("update content set content_status='in preparation', 
                 content_olef='" . mysql_clean_string($olef) .
