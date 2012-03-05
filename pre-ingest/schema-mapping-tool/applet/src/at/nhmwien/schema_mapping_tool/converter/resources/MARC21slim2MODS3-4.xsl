@@ -6,8 +6,10 @@
 	<xsl:strip-space elements="*"/>
 
 	<!-- Maintenance note: For each revision, change the content of <recordInfo><recordOrigin> to reflect the new revision number.
-	MARC21slim2MODS3-4 (Revision 1.74) 20110715
+	MARC21slim2MODS3-4 (Revision 1.76) 20120201
 
+Revision 1.76 - Fixed 242 - 2012/02/01 tmee
+Revision 1.75 - Fixed 653 - 2012/01/31 tmee
 Revision 1.74 - Fixed 510 note - 2011/07/15 tmee
 Revision 1.73 - Fixed 506 540 - 2011/07/11 tmee
 Revision 1.72 - Fixed frequency error - 2011/07/07 and 2011/07/14 tmee
@@ -205,18 +207,6 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 					</xsl:otherwise>
 				</xsl:choose>
 
-				<!-- 1/04 fix -->
-
-				<title>
-					<xsl:call-template name="chopPunctuation">
-						<xsl:with-param name="chopString">
-							<xsl:call-template name="subfieldSelect">
-								<!-- 1/04 removed $h, b -->
-								<xsl:with-param name="codes">a</xsl:with-param>
-							</xsl:call-template>
-						</xsl:with-param>
-					</xsl:call-template>
-				</title>
 				<!-- 1/04 fix -->
 				<xsl:call-template name="subtitle"/>
 				<xsl:call-template name="part"/>
@@ -854,11 +844,12 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 				</frequency>
 			</xsl:for-each>
 			<!--	1.67 1.72	-->
-			
+
 			<xsl:if test="$typeOf008='SE'">
 				<xsl:for-each select="marc:controlfield[@tag=008]">
-					<xsl:variable name="controlField008-18" select="substring($controlField008,19,1)"/>
-					<xsl:variable name="frequency">                                 
+					<xsl:variable name="controlField008-18"
+						select="substring($controlField008,19,1)"/>
+					<xsl:variable name="frequency">
 						<frequency>
 							<xsl:choose>
 								<xsl:when test="$controlField008-18='a'">Annual</xsl:when>
@@ -869,16 +860,21 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 								<xsl:when test="$controlField008-18='f'">Semiannual</xsl:when>
 								<xsl:when test="$controlField008-18='g'">Biennial</xsl:when>
 								<xsl:when test="$controlField008-18='h'">Triennial</xsl:when>
-								<xsl:when test="$controlField008-18='i'">Three times a week</xsl:when>
-								<xsl:when test="$controlField008-18='j'">Three times a month</xsl:when>
-								<xsl:when test="$controlField008-18='k'">Continuously updated</xsl:when>
+								<xsl:when test="$controlField008-18='i'">Three times a
+									week</xsl:when>
+								<xsl:when test="$controlField008-18='j'">Three times a
+									month</xsl:when>
+								<xsl:when test="$controlField008-18='k'">Continuously
+									updated</xsl:when>
 								<xsl:when test="$controlField008-18='m'">Monthly</xsl:when>
 								<xsl:when test="$controlField008-18='q'">Quarterly</xsl:when>
 								<xsl:when test="$controlField008-18='s'">Semimonthly</xsl:when>
-								<xsl:when test="$controlField008-18='t'">Three times a year</xsl:when>
+								<xsl:when test="$controlField008-18='t'">Three times a
+									year</xsl:when>
 								<xsl:when test="$controlField008-18='u'">Unknown</xsl:when>
 								<xsl:when test="$controlField008-18='w'">Weekly</xsl:when>
-								<xsl:when test="$controlField008-18='#'">Completely irregular</xsl:when>
+								<xsl:when test="$controlField008-18='#'">Completely
+									irregular</xsl:when>
 								<xsl:otherwise/>
 							</xsl:choose>
 						</frequency>
@@ -1560,11 +1556,11 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 		<xsl:for-each select="marc:datafield[@tag=521]">
 			<xsl:call-template name="createTargetAudienceFrom521"/>
 		</xsl:for-each>
-		
+
 		<xsl:for-each select="marc:datafield[@tag=506]">
 			<xsl:call-template name="createAccessConditionFrom506"/>
 		</xsl:for-each>
-		
+
 		<xsl:for-each select="marc:datafield[@tag=540]">
 			<xsl:call-template name="createAccessConditionFrom540"/>
 		</xsl:for-each>
@@ -1758,6 +1754,10 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 			<xsl:call-template name="createSubGeoFrom651"/>
 		</xsl:for-each>
 
+		<xsl:for-each select="marc:datafield[@tag=653]">
+			<xsl:call-template name="createSubFrom653"/>
+		</xsl:for-each>
+
 		<xsl:for-each select="marc:datafield[@tag=656]">
 			<xsl:call-template name="createSubFrom656"/>
 		</xsl:for-each>
@@ -1823,7 +1823,7 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 		</xsl:for-each>
 
 		<!-- tmee 1.40 1.74-->
-		
+
 		<xsl:for-each select="marc:datafield[@tag=510]">
 			<relatedItem type="isReferencedBy">
 				<xsl:for-each select="marc:subfield[@code='a']">
@@ -2494,7 +2494,7 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 			</xsl:for-each>
 
 			<recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
-				(Revision 1.74)</recordOrigin>
+				(Revision 1.76 2012/02/01)</recordOrigin>
 
 			<xsl:for-each select="marc:datafield[@tag=040]/marc:subfield[@code='b']">
 				<languageOfCataloging>
@@ -2927,6 +2927,39 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 				</xsl:if>
 			</xsl:if>
 		</xsl:if>
+	</xsl:template>
+	<!-- 1.75 
+		fix -->
+	<xsl:template name="subject653Type">
+		<xsl:if test="@ind2!=' '">
+			<xsl:if test="@ind2!='0'">
+				<xsl:if test="@ind2!='4'">
+					<xsl:if test="@ind2!='5'">
+						<xsl:if test="@ind2!='6'">
+							<xsl:if test="@ind2!='7'">
+								<xsl:if test="@ind2!='8'">
+									<xsl:if test="@ind2!='7'">
+										<xsl:if test="@ind2!='8'">
+											<xsl:if test="@ind2!='9'">
+												<xsl:attribute name="type">
+												<xsl:choose>
+												<xsl:when test="@ind2=1">personal</xsl:when>
+												<xsl:when test="@ind2=2">corporate</xsl:when>
+												<xsl:when test="@ind2=3">conference</xsl:when>
+												</xsl:choose>
+												</xsl:attribute>
+											</xsl:if>
+										</xsl:if>
+									</xsl:if>
+								</xsl:if>
+							</xsl:if>
+						</xsl:if>
+					</xsl:if>
+				</xsl:if>
+			</xsl:if>
+		</xsl:if>
+
+
 	</xsl:template>
 	<xsl:template name="subjectAnyOrder">
 		<xsl:for-each select="marc:subfield[@code='v' or @code='x' or @code='y' or @code='z']">
@@ -4620,18 +4653,18 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 				<xsl:call-template name="role"/>
 			</name>
 			<xsl:if test="marc:subfield[@code='t']">
-			<titleInfo>
-				<title>
-					<xsl:call-template name="chopPunctuation">
-						<xsl:with-param name="chopString">
-							<xsl:call-template name="subfieldSelect">
-								<xsl:with-param name="codes">t</xsl:with-param>
-							</xsl:call-template>
-						</xsl:with-param>
-					</xsl:call-template>
-				</title>
-				<xsl:call-template name="part"/>
-			</titleInfo>
+				<titleInfo>
+					<title>
+						<xsl:call-template name="chopPunctuation">
+							<xsl:with-param name="chopString">
+								<xsl:call-template name="subfieldSelect">
+									<xsl:with-param name="codes">t</xsl:with-param>
+								</xsl:call-template>
+							</xsl:with-param>
+						</xsl:call-template>
+					</title>
+					<xsl:call-template name="part"/>
+				</titleInfo>
 			</xsl:if>
 			<xsl:call-template name="subjectAnyOrder"/>
 		</subject>
@@ -4662,18 +4695,18 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 				<xsl:call-template name="role"/>
 			</name>
 			<xsl:if test="marc:subfield[@code='t']">
-			<titleInfo>
-				<title>
-					<xsl:call-template name="chopPunctuation">
-						<xsl:with-param name="chopString">
-							<xsl:call-template name="subfieldSelect">
-								<xsl:with-param name="codes">t</xsl:with-param>
-							</xsl:call-template>
-						</xsl:with-param>
-					</xsl:call-template>
-				</title>
-				<xsl:call-template name="part"/>
-			</titleInfo>
+				<titleInfo>
+					<title>
+						<xsl:call-template name="chopPunctuation">
+							<xsl:with-param name="chopString">
+								<xsl:call-template name="subfieldSelect">
+									<xsl:with-param name="codes">t</xsl:with-param>
+								</xsl:call-template>
+							</xsl:with-param>
+						</xsl:call-template>
+					</title>
+					<xsl:call-template name="part"/>
+				</titleInfo>
 			</xsl:if>
 			<xsl:call-template name="subjectAnyOrder"/>
 		</subject>
@@ -4698,18 +4731,18 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 				</xsl:for-each>
 			</name>
 			<xsl:if test="marc:subfield[@code='t']">
-			<titleInfo>
-				<title>
-					<xsl:call-template name="chopPunctuation">
-						<xsl:with-param name="chopString">
-							<xsl:call-template name="subfieldSelect">
-								<xsl:with-param name="codes">tpn</xsl:with-param>
-							</xsl:call-template>
-						</xsl:with-param>
-					</xsl:call-template>
-				</title>
-				<xsl:call-template name="part"/>
-			</titleInfo>
+				<titleInfo>
+					<title>
+						<xsl:call-template name="chopPunctuation">
+							<xsl:with-param name="chopString">
+								<xsl:call-template name="subfieldSelect">
+									<xsl:with-param name="codes">tpn</xsl:with-param>
+								</xsl:call-template>
+							</xsl:with-param>
+						</xsl:call-template>
+					</title>
+					<xsl:call-template name="part"/>
+				</titleInfo>
 			</xsl:if>
 			<xsl:call-template name="subjectAnyOrder"/>
 		</subject>
@@ -4791,14 +4824,71 @@ Revision 1.02 - Added Log Comment  2003/03/24 19:37:42  ckeith
 	</xsl:template>
 
 	<xsl:template name="createSubFrom653">
-		<subject>
-			<xsl:call-template name="xxx880"/>
-			<xsl:for-each select="marc:subfield[@code='a']">
+
+		<xsl:if test="@ind2=' '">
+			<subject>
 				<topic>
 					<xsl:value-of select="."/>
 				</topic>
-			</xsl:for-each>
-		</subject>
+			</subject>
+		</xsl:if>
+		<xsl:if test="@ind2='0'">
+			<subject>
+				<topic>
+					<xsl:value-of select="."/>
+				</topic>
+			</subject>
+		</xsl:if>
+
+		<xsl:if test="@ind2='1'">
+			<subject>
+				<name type="personal">
+				<namePart>
+					<xsl:value-of select="."/>
+				</namePart>
+				</name>
+			</subject>
+		</xsl:if>
+		<xsl:if test="@ind2='2'">
+			<subject>
+				<name type="corporate">
+				<namePart>
+					<xsl:value-of select="."/>
+				</namePart>
+				</name>
+			</subject>
+		</xsl:if>
+		<xsl:if test="@ind2='3'">
+			<subject>
+				<name type="conference">
+				<namePart>
+					<xsl:value-of select="."/>
+				</namePart>
+				</name>
+			</subject>
+		</xsl:if>
+		<xsl:if test="@ind2=4">
+			<subject>
+				<temporal>
+					<xsl:value-of select="."/>
+				</temporal>
+			</subject>
+		</xsl:if>
+		<xsl:if test="@ind2=5">
+			<subject>
+				<geographic>
+					<xsl:value-of select="."/>
+				</geographic>
+			</subject>
+		</xsl:if>
+
+		<xsl:if test="@ind2=6">
+			<subject>
+				<genre>
+					<xsl:value-of select="."/>
+				</genre>
+			</subject>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template name="createSubFrom656">
