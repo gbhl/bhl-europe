@@ -44,7 +44,7 @@ define("_THUMB_BGRD",               "thumb_frame_55_70.png");
 
 
 // GENERAL WEBSERVICE PARAMETER
-define("_WEBSERVICE_TIMEOUT",        10);
+define("_WEBSERVICE_TIMEOUT",        25);
 
 
 // DATABASE DETAILS
@@ -72,13 +72,14 @@ define("_ANALYZE_MAX_DEPTH",        20);            // MAX DIRECTORY STRUCTURE D
 // --------------
 define("_NOID",                     "/usr/local/bin/noid -f /var/www/nd/kt5/ mint 1");
 define("_NOID_PREFIX",              "10706/a0");
+define("_MINTER_WS",                "http://bhl-mandible.nhm.ac.uk:3000/mint");
 
 
 // -----------------------------
 // ---- SCHEMA MAPPING TOOL ----
 // -----------------------------
-define("_JAVA_BIN",                 "/mnt/nfs-demeter/dev/jdk1.6.0_24/bin/java");  // C:/Program Files/Java/jre7/bin/
-define("_SCHEMA_MAPPER",            "/opt/pre-ingest/smt-cli/SMT-cli.jar");
+define("_JAVA_BIN",                 "/mnt/nfs/dev/jdk1.6.0_24/bin/java");
+define("_SCHEMA_MAPPER",            realpath(_ABS."../schema-mapping-tool/cli/dist/smt-cli.jar"));
 define("_SMT",                      _JAVA_BIN." -jar "._SCHEMA_MAPPER." ");
 
 
@@ -114,9 +115,10 @@ define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm -r 80 ");
 // ---- OCR SPECIFIC ----
 // ----------------------
 define("_OCR_ABS",                  "/usr/local/bin/");
+// define("_OCR_DAT",                  "/usr/local/share/tessdata/");
 define("_OCR_DAT",                  _OCR_ABS."tessdata/");
 define("_TESSERACT",                _OCR_ABS."tesseract");
-define("_OCR_TIMEOUT",              20);
+define("_OCR_TIMEOUT",              25);
 
 
 // -------------------------------
