@@ -122,7 +122,9 @@ $containerElement = $containerElement->appendChild($domDoc->createElement($arrNe
 for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 {
     // $domDoc->getElementsByTagName('files')->item(0);  // start element wieder auf file
-    $curParent = $containerElement;
+    
+    $curParent    = $containerElement;
+    $arrPageInfos = getPageInfoFromFile($arrTiffs[$curTiff],$curTiff);
     
     for ($curNode=2;$curNode<$nNewNodes;$curNode++)             // von file bis taxon
     {
@@ -134,29 +136,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
         switch($curNodeName)
         {
             case 'page':
-
-             $pageType = "PAGE";  // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3.tif
-             
-             $pos1 = strrpos($arrTiffs[$curTiff],"_");
-             
-             if ($pos1!==false)
-             {
-                 $pageTypePart = substr($arrTiffs[$curTiff],0,$pos1);
-                 $pos2 = strrpos($pageTypePart,"_");
-                 
-                 if ($pos2!==false)
-                 {
-                     $pageTypePart = substr($pageTypePart,$pos2+1);
-
-                     $pageType = trim($pageTypePart);
-
-                     unset($pageTypePart);
-                 }
-             }
-             
-             if ($pageType=="") $pageType = "PAGE";
-             
-             $node->setAttribute("pageType",$pageType);
+             $node->setAttribute("pageType",$arrPageInfos[2]);
              $curParent = $curParent->appendChild($node);        // TYP DER PAGE GEM. FSG
             break;
         
@@ -167,12 +147,22 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
             break;
             
             case 'name':
-              $node->nodeValue = $curTiff+1;
+              $pageInfos = $arrPageInfos[3];
+              
+              // SUPPORT FUER 4 SEITEN PRO FILE
+              if ((array_key_exists(4, $arrPageInfos))&&($arrPageInfos[4]!=""))   
+                      $pageInfos .= ",".$arrPageInfos[4];
+              if ((array_key_exists(5, $arrPageInfos))&&($arrPageInfos[5]!=""))    
+                      $pageInfos .= ",".$arrPageInfos[5];
+              if ((array_key_exists(6, $arrPageInfos))&&($arrPageInfos[6]!=""))    
+                      $pageInfos .= ",".$arrPageInfos[6];
+                                    
+              $node->nodeValue = $pageInfos;
               $curParent->appendChild($node);                    // WIRD NICHT ZU PARENTELEMENT
             break;
         
             case 'taxon':
-                
+
                 // SCHLEIFE UEBER ALLE GEFUNDEN TAXONS AUF DIESER SEITE - 'dwc:scientificName'
                 if (trim(str_replace(array(","," "),"",$arrTaxons[($curTiff+1)]))!="")
                 {

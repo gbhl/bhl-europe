@@ -72,6 +72,7 @@ define("_ANALYZE_MAX_DEPTH",        20);            // MAX DIRECTORY STRUCTURE D
 // --------------
 define("_NOID",                     "G:/dev/nhm/ingest/bin/noid/noid -f G:/dev/nhm/ingest/bin/noid/noid/ mint 1");
 define("_NOID_PREFIX",              "99999/a0");
+define("_MINTER_WS",                "");
 
 
 // -----------------------------
