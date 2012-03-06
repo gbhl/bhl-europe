@@ -16,7 +16,7 @@
 
 now=`date +%Y_%m_%d_%H_%M_%S`
 
-rootDir="/var/www/ingest"
+rootDir="/mnt/nfs/dev/opt/pre-ingest/ingest"
 
 # _WORK_DIR (CONFIG.PHP)
 sourceDir="$rootDir/temp/"
