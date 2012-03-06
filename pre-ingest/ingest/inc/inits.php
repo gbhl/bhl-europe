@@ -77,6 +77,8 @@ if ((isset($content_id)) && (is_numeric($content_id)))
 
     $cPages = (int)abfrage("select content_pages ".$krit,$db);
     
+    $cType  = abfrage("select content_type ".$krit,$db);
+    
     // GENERATE .AIP DIR
     $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");
     if (!is_dir($destDir))      @mkdir($destDir);

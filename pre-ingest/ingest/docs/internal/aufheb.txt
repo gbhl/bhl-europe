@@ -1,6 +1,34 @@
 
 
 
+
+ /*
+
+ $pageType = "";
+
+ $pos1 = strrpos($file_name,"_");
+
+ if ($pos1!==false)
+ {
+     $pageTypePart = substr($file_name,0,$pos1);
+
+     $pos2 = strrpos($pageTypePart,"_");
+
+     if ($pos2!==false)
+     {
+         $pageTypePart = substr($pageTypePart,$pos2+1);
+
+         $pageType = trim($pageTypePart);
+
+         unset($pageTypePart);
+     }
+ }
+
+ if ($pageType=="") $pageType = "PAGE";    
+
+ return trim(strtoupper($pageType)); */
+
+
 // DEPRECATED
 // ****************************************************************
 function getFilesFromDatabase($user_id,$content_dir,$type2find='metadata')

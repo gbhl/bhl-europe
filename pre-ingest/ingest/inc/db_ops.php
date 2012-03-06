@@ -170,9 +170,19 @@ if ($sub_action=="save_ingest_settings")
 
                 mysql_select($query,$db);
          }
+         
+         if (instr($arrKeys[$i],"content_type"))
+         {
+                $curContentID   = substr($arrKeys[$i],strrpos($arrKeys[$i],"_")+1);
+                $curContentType = $_POST[$arrKeys[$i]];
+
+                $query = "update content set content_type='".
+                        mysql_clean_string($curContentType)."' where content_id=".$curContentID;
+
+                mysql_select($query,$db);
+         }
+
     }
-    
-    // !!! SPEICHERN DER CONTENT TYPS UND INGEST STATUS EVTL. HIER
     
 }
 

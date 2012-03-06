@@ -139,7 +139,7 @@ if ($nrows>0)
         echo _TD;
         
         // CONTENT TYPE 
-        arr_dropdown($arrEnumCTypes,"content_type' disabled style='background-color: #eeeeff; width:120px;",$line[4],1,"","",true);
+        arr_dropdown($arrEnumCTypes,"content_type_".$line[0]."' style='background-color: #eeeeff; width:120px;",$line[4],1,"","",true);
         nl();
 
         // INGEST STATUS

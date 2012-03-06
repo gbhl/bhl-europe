@@ -327,52 +327,55 @@ function getPageInfoFromFile($file_name,$part='type',$curIdx=0)
 // $part .... prefix[0], sequence[1], type[2], pagenumbers[3] .... [n]
 // 
 // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
+// 
+// maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
 {
-     $minParts = 4;
+     $arrReturn = array();
+     $minParts  = 4;
+     $file_name = basename($file_name);
+     $pos1      = strrpos($file_name,".");
      
-     $pos1  = strrpos($file_name,".");
+     if ($pos1!==false) $file_name = substr($file_name,0,$pos1);    // EXTENSION WEG
      
-     if ($pos1!==false) $file_name = substr($file_name,0,$pos1);
-     
-     $arrReturn = explode("_",$file_name);
-     $nArr      = count($arrReturn);
-     
-     // FEHLERBEHANDLUNG
-     if ($nArr<$minParts)
+     // *****************
+     // NON PDF - TIF ...
+     // *****************
+     if (!isPDF($file_name))     
      {
-         if ($nArr==2)      $arrReturn = array_merge($arrReturn,array('PAGE',$curIdx+1));
-         else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curIdx+1));
-         else return false;
+         $arrReturn = explode("_",$file_name);
+         $nArr      = count($arrReturn);
+
+         // FEHLERBEHANDLUNG
+         if ($nArr<$minParts)
+         {
+             if ($nArr==2)      $arrReturn = array_merge($arrReturn,array('PAGE',$curIdx+1));
+             else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curIdx+1));
+             else
+             {
+                echo "Error: Filename convention broken, rename your page files according to File Submission Guidelines (FSG).\n;";
+                return false;
+             }
+         }
+     }
+     // ***
+     // PDF
+     // ***
+     else
+     {
+         $pos1 = strrpos($file_name,"-");       // NACH LETZTEM BINDESTRICH PAGENUMBER
+         
+         if ($pos1!==false) 
+         {
+             $pageNumber = substr($file_name,$pos1+1);
+             
+             if (!is_numeric($pageNumber)) $pageNumber = $curIdx+1;
+             
+             $arrReturn = array(substr($file_name,0,$pos1),1,'PAGE',$pageNumber);
+         }
+         
      }
      
      return $arrReturn;
-     
-     /*
-     
-     $pageType = "";
-
-     $pos1 = strrpos($file_name,"_");
-
-     if ($pos1!==false)
-     {
-         $pageTypePart = substr($file_name,0,$pos1);
-
-         $pos2 = strrpos($pageTypePart,"_");
-
-         if ($pos2!==false)
-         {
-             $pageTypePart = substr($pageTypePart,$pos2+1);
-
-             $pageType = trim($pageTypePart);
-
-             unset($pageTypePart);
-         }
-     }
-
-     if ($pageType=="") $pageType = "PAGE";    
-     
-     return trim(strtoupper($pageType)); */
-     
 }
 
 
