@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/integration"
-	xmlns:int-file="http://www.springframework.org/schema/integration/file"
+	xmlns:amq="http://activemq.apache.org/schema/core" xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
 	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd
                            http://www.springframework.org/schema/integration
-							http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
-							http://www.springframework.org/schema/integration/file
-							http://www.springframework.org/schema/integration/file/spring-integration-file-2.0.xsd">
+							http://www.springframework.org/schema/integration/spring-integration.xsd
+							http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd
+							http://www.springframework.org/schema/integration/jms
+							http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd">
 
 	<context:component-scan base-package="com.bhle.ingest.integration" />
 
-	<poller default="true">
-		<interval-trigger interval="${ingest.poller.interval}" />
+	<poller default="true" max-messages-per-poll="1000">
+		<interval-trigger interval="10000" />
 	</poller>
 
-	<int-file:inbound-channel-adapter id="filesystemInboundAdapter"
-		directory="file:${ingest.sip.directory}" filter="compositeFilter"
-		channel="inboundFileChannel" scanner="sipDirectoryScanner">
-	</int-file:inbound-channel-adapter>
-	<beans:bean id="sipDirectoryScanner"
-		class="com.bhle.ingest.integration.ReadySipFolderScanner" />
+	<channel id="inboundJMSMessageChannel" />
 
-	<beans:bean id="compositeFilter"
-		class="org.springframework.integration.file.filters.CompositeFileListFilter">
-		<beans:constructor-arg>
-			<beans:list>
-				<beans:bean
-					class="org.springframework.integration.file.filters.AcceptOnceFileListFilter" />
-			</beans:list>
-		</beans:constructor-arg>
-	</beans:bean>
+	<int-jms:message-driven-channel-adapter
+		channel="inboundJMSMessageChannel" extract-payload="true"
+		destination="inboundDestination" connection-factory="connectionFactory" />
+
+	<beans:bean id="inboundJMSMessageProcessor"
+		class="com.bhle.ingest.integration.InboundJMSMessageProcessor" />
+	<service-activator input-channel="inboundJMSMessageChannel"
+		output-channel="inboundFileChannel" ref="inboundJMSMessageProcessor" />
 
 	<channel id="inboundFileChannel" />
 

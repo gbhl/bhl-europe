@@ -24,7 +24,7 @@ public class SipWriter implements ItemWriter<File> {
 	@Override
 	public void write(List<? extends File> files) throws Exception {
 		for (File file : files) {
-			logger.info("Ingesting File: " + file.getName());
+			logger.info("Ingest File: " + file.getName());
 			ingestor.ingestItem(file);
 		}
 	}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<if condition='isDefined("IS_DEBUG")'>
+		<then>
+			<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+				<encoder>
+					<Pattern>[%thread][%level][%file:%line] - %msg%n</Pattern>
+				</encoder>
+			</appender>
+			<root level="debug">
+				<appender-ref ref="STDOUT" />
+			</root>
+		</then>
+		<else>
+			<appender name="FILE"
+				class="ch.qos.logback.core.rolling.RollingFileAppender">
+				<file>${log.path}/ingest.log</file>
+				<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+					<fileNamePattern>logs/ingest.%d{MM-dd-yyyy}.log.zip
+					</fileNamePattern>
+				</rollingPolicy>
+				<layout class="ch.qos.logback.classic.PatternLayout">
+					<pattern>%d{HH:mm:ss} %msg%n
+					</pattern>
+				</layout>
+			</appender>
+			<root level="info">
+				<appender-ref ref="FILE" />
+			</root>
+		</else>
+	</if>
+
+</configuration>

@@ -6,7 +6,7 @@
 	<parent>
 		<artifactId>ingest-parent</artifactId>
 		<groupId>com.bhle</groupId>
-		<version>1.4</version>
+		<version>1.5</version>
 	</parent>
 	<groupId>com.bhle</groupId>
 	<artifactId>ingest-core</artifactId>
@@ -26,6 +26,13 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>activemq</groupId>
+			<artifactId>activemq-spring</artifactId>
+			<version>2.1</version>
+			<type>jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>3.1.0.RELEASE</version>
@@ -36,6 +43,16 @@
 			<groupId>com.yourmediashelf.fedora.client</groupId>
 			<artifactId>fedora-client</artifactId>
 			<version>0.1.6</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-log4j12</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -56,6 +73,20 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-integration</artifactId>
 			<version>1.2.1.RELEASE</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jcl-over-slf4j</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-log4j12</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -63,9 +94,40 @@
 			<version>2.1</version>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+			<version>3.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<version>5.3.0</version>
+			<artifactId>activemq-all</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.integration</groupId>
 			<artifactId>spring-integration-file</artifactId>
 			<version>2.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-jms</artifactId>
+			<version>2.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xbean</groupId>
+			<artifactId>xbean-spring</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>0.9.9</version>
+		</dependency>
+		<dependency>
+			<groupId>janino</groupId>
+			<artifactId>janino</artifactId>
+			<version>2.5.10</version>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 

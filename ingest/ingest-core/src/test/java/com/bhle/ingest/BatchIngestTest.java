@@ -1,6 +1,7 @@
 package com.bhle.ingest;
 
-import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import junit.framework.Assert;
 
@@ -18,18 +19,11 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.bhle.ingest.jms.PreingestJmsProducerStub;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
 public class BatchIngestTest implements ResourceLoaderAware {
-
-	@Value("${ingest.directory.name}")
-	private String ingest_directory_name;
-
-	@Value("${ingest.running.filename}")
-	private String ingest_running_filename;
-
-	@Value("${ingest.done.filename}")
-	private String ingest_done_filename;
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(BatchIngestTest.class);
@@ -41,37 +35,40 @@ public class BatchIngestTest implements ResourceLoaderAware {
 	}
 
 	@Autowired
+	private PreingestJmsProducerStub jmsProducer;
+
+	@Value("${jms.message.guid}")
+	private String MSG_GUID_NAME;
+	@Value("${jms.message.uri}")
+	private String MSG_URI_NAME;
+
+	@Autowired
 	private FedoraServiceImpl service;
 
 	@Before
-	public void init() {
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+	public void init() throws Exception {
+		Map<String, String> messageBody = new HashMap<String, String>();
+		logger.info("Create Test Message...");
+		
+		messageBody.put(MSG_GUID_NAME, "10706-a00000000000132805961115");
+		logger.info("MessageBody: {}:{}", MSG_GUID_NAME,
+				"10706-a00000000000132805961115");
+
+		Resource aip = resourceLoader
+				.getResource("classpath:/com/bhle/ingest/.aip");
+		messageBody.put(MSG_URI_NAME, aip.getURI().toString());
+		logger.info("MessageBody: {}:{}", MSG_URI_NAME, aip.getURI().toString());
+
+		jmsProducer.send(messageBody);
+		
+		Thread.sleep(3000);
 	}
 
 	@Test
-	public void testExistenceOfSampleByPurge() {
+	public void testExistenceOfSampleByPurge() throws InterruptedException {
 		int statusCode = service.purge("bhle:10706-a00000000000132805961115");
 		Assert.assertEquals(200, statusCode);
-	}
-
-	@After
-	public void destroy() {
-		Resource ingestRunningFile = resourceLoader
-				.getResource("classpath:/com/bhle/ingest/"
-						+ ingest_directory_name + "/" + ingest_running_filename);
-		Resource ingestDoneFile = resourceLoader
-				.getResource("classpath:/com/bhle/ingest/"
-						+ ingest_directory_name + "/" + ingest_done_filename);
-
-		try {
-			ingestRunningFile.getFile().delete();
-			ingestDoneFile.getFile().delete();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		
+		Thread.sleep(2000);
 	}
 }

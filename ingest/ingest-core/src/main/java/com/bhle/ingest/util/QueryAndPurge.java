@@ -34,19 +34,19 @@ public class QueryAndPurge {
 
 		List<String> pids = new LinkedList<String>();
 		String token = null;
-		
 		do {
 			FindObjectsResponse findObjectsResponse = null;
 			try {
-				findObjectsResponse = FedoraClient
-				.findObjects().terms("*").pid().sessionToken(token).maxResults(Integer.MAX_VALUE).execute(client);
+				findObjectsResponse = FedoraClient.findObjects().terms(query)
+						.pid().sessionToken(token)
+						.maxResults(Integer.MAX_VALUE).execute(client);
 			} catch (FedoraClientException e) {
 				e.printStackTrace();
 			}
 			pids.addAll(findObjectsResponse.getPids());
 			token = findObjectsResponse.getToken();
 		} while (token != null && !token.equals(""));
-		
+
 		System.out.println("Objects (count: " + pids.size() + "):");
 		for (String pid : pids) {
 			System.out.println(pid);

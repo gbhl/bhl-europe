@@ -4,11 +4,9 @@ import java.io.File;
 import java.net.URI;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Sip {
 	
-	public static final String JOB_PARAM_URI_KEY = "SIP_URI";
+	public static final String JOB_PARAM_URI_KEY = "URI";
 	
 	private static SipItemsExtractor extractor;
 	

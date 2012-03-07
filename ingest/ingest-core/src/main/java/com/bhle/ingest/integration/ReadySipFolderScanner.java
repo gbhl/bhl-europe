@@ -49,9 +49,6 @@ public class ReadySipFolderScanner extends DefaultDirectoryScanner {
 			}
 		}
 
-		for (File file : files) {
-			logger.info(file.getAbsolutePath());
-		}
 		return files.toArray(new File[files.size()]);
 	}
 
