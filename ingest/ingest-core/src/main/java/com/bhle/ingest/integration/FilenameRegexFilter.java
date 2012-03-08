@@ -19,7 +19,6 @@ public class FilenameRegexFilter implements FilenameFilter {
 	
 	@Override
 	public boolean accept(File dir, String name) {
-		logger.info("Reading file: " + name);
 		return name.matches(regex);
 	}
 

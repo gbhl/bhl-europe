@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/integration"
-	xmlns:int-file="http://www.springframework.org/schema/integration/file"
-	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jms="http://www.springframework.org/schema/jms" xmlns:amq="http://activemq.apache.org/schema/core"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd
-                           http://www.springframework.org/schema/integration
-							http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
-							http://www.springframework.org/schema/integration/file
-							http://www.springframework.org/schema/integration/file/spring-integration-file-2.0.xsd">
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd">
 
-	<beans:import resource="classpath:/META-INF/spring/batch/jobs/batch-ingest-job.xml" />
+	<import
+		resource="classpath:/META-INF/spring/batch/jobs/batch-ingest-job.xml" />
 
-	<beans:import resource="classpath:/META-INF/spring/env-context.xml" />
-	<beans:import resource="classpath:/META-INF/spring/commons-context.xml" />
-	<beans:import resource="classpath:/META-INF/spring/execution-context.xml" />
-	<beans:import resource="classpath:/META-INF/spring/integration-context.xml" />
+	<import resource="classpath:/META-INF/spring/master-context.xml" />
 
+	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="destination" ref="outboundDestination" />
+		<property name="messageListener" ref="preingestJmsConsumerAdapter" />
+	</bean>
 
-	<int-file:inbound-channel-adapter id="filesystemInboundAdapter"
-		directory="classpath:com/bhle/ingest" filter="compositeFilter"
-		channel="inboundFileChannel" scanner="sipDirectoryScanner" />
-</beans:beans>
+	<bean id="preingestJmsProducerTemplate" class="org.springframework.jms.core.JmsTemplate"
+		p:connectionFactory-ref="connectionFactory" p:defaultDestination-ref="inboundDestination" />
+
+	<bean id="preingestJmsProducer" class="com.bhle.ingest.jms.PreingestJmsProducerStub" />
+	<bean id="preingestJmsConsumer" class="com.bhle.ingest.jms.PreingestJmsConsumerStub" />
+
+	<bean id="preingestJmsConsumerAdapter"
+		class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
+		<property name="delegate" ref="preingestJmsConsumer" />
+		<property name="defaultListenerMethod" value="onMessage" />
+	</bean>
+
+</beans>
