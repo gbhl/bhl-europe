@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<METS:mets xmlns:METS="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EXT_VERSION="1.1" OBJID="bhle:99999-a0000000000013297666581" LABEL="Monograph" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
+<METS:metsHdr RECORDSTATUS="Active">
+</METS:metsHdr>
+<METS:amdSec ID="DC">
+<METS:techMD ID="DC1.0">
+<METS:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" LABEL="Dublin Core Record for this object" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/">
+<METS:xmlData>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title>Monograph</dc:title>
+<dc:identifier>bhle:99999-a0000000000013297666581</dc:identifier>
+</oai_dc:dc>
+</METS:xmlData></METS:mdWrap>
+</METS:techMD>
+</METS:amdSec>
+<METS:amdSec ID="RELS-EXT">
+<METS:techMD ID="RELS-EXT.0">
+<METS:mdWrap MIMETYPE="application/rdf+xml" MDTYPE="OTHER" LABEL="Fedora Object-to-Object Relationship Metadata">
+<METS:xmlData>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about="info:fedora/bhle:99999-a0000000000013297666581">
+<hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/bhle-cmodel:monographCModel"/>
+</rdf:Description>
+</rdf:RDF>
+</METS:xmlData></METS:mdWrap>
+</METS:techMD>
+</METS:amdSec>
+<METS:amdSec ID="OLEF">
+<METS:techMD ID="OLEF.0">
+<METS:mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" LABEL="OLEF Metadata">
+<METS:xmlData>
+<olef>
+<element>
+<bibliographicInformation>
+<mods:titleInfo xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:title>Antwerpsche analytische flora inhoudende de beschyving van alle planten, welke in de provincie Antwerpen, in de vrye natuer, groeijen of er algemeen gekweekt worden. Eerste deel</mods:title>
+</mods:titleInfo>
+<mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:namePart>Van Heurck, Henri</mods:namePart>
+<mods:namePart>1838-1909</mods:namePart>
+</mods:name>
+<mods:name xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:namePart>De Beucker, J.I.</mods:namePart>
+</mods:name>
+<mods:typeOfResource xmlns:mods="http://www.loc.gov/mods/v3">text</mods:typeOfResource>
+<mods:originInfo xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:place>
+<mods:placeTerm>Antwerpen</mods:placeTerm>
+</mods:place>
+<mods:publisher>Drukkery der weduwe Jos. Van Ishoven</mods:publisher>
+<mods:dateIssued>1861</mods:dateIssued>
+<mods:issuance>monographic</mods:issuance>
+</mods:originInfo>
+<mods:language xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:languageTerm>dut</mods:languageTerm>
+</mods:language>
+<mods:physicalDescription xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:form>print</mods:form>
+<mods:extent>xxxvi, 192 p.</mods:extent>
+</mods:physicalDescription>
+<mods:note xmlns:mods="http://www.loc.gov/mods/v3">Only part 1 published</mods:note>
+<mods:subject xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:topic>BEL Belgium &amp; GDL</mods:topic>
+</mods:subject>
+<mods:location xmlns:mods="http://www.loc.gov/mods/v3"/>
+<mods:identifier xmlns:mods="http://www.loc.gov/mods/v3">Drukkery der weduwe Jos. Van Ishoven Drukkery der weduwe Jos. Van Ishoven</mods:identifier>
+<mods:recordInfo xmlns:mods="http://www.loc.gov/mods/v3">
+<mods:recordCreationDate>040401</mods:recordCreationDate>
+<mods:recordChangeDate>20110817161551.0</mods:recordChangeDate>
+<mods:recordIdentifier>VBS1/95564</mods:recordIdentifier>
+<mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+(Revision 1.74)</mods:recordOrigin>
+</mods:recordInfo>
+<mods:accessCondition xmlns:mods="http://www.loc.gov/mods/v3" type="use and reproduction">test2</mods:accessCondition></bibliographicInformation>
+<itemInformation><files><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif</reference><pages>
+<page pageType="PAGE">
+<name>000001</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000002.tif</reference><pages>
+<page pageType="PAGE">
+<name>000002</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000003.tif</reference><pages>
+<page pageType="PAGE">
+<name>000003</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000004.tif</reference><pages>
+<page pageType="PAGE">
+<name>000004</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000005.tif</reference><pages>
+<page pageType="PAGE">
+<name>000005</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000006.tif</reference><pages>
+<page pageType="PAGE">
+<name>000006</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000007.tif</reference><pages>
+<page pageType="PAGE">
+<name>000007</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000008.tif</reference><pages>
+<page pageType="PAGE">
+<name>000008</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000009.tif</reference><pages>
+<page pageType="PAGE">
+<name>000009</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000010.tif</reference><pages>
+<page pageType="PAGE">
+<name>000010</name></page></pages></file><file>
+<reference type="path">G:/dev/nhm/ingest/uploads/testdata/spices_prepared/testpdf_tax/.aip/maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000011.tif</reference><pages>
+<page pageType="PAGE">
+<name>000011</name></page></pages></file></files></itemInformation></element>
+</olef>
+</METS:xmlData></METS:mdWrap>
+</METS:techMD>
+</METS:amdSec>
+</METS:mets>
