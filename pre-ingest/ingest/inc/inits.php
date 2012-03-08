@@ -1,8 +1,8 @@
 <?php
 
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * GLOBAL INITS
+ * 
  */
 
 // http://at.php.net/manual/de/reserved.variables.argv.php

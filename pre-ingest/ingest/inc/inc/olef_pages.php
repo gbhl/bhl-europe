@@ -24,20 +24,46 @@ $nTaxonsF   = count($arrTaxonsF);
 $arrTaxonsF = sortShortFirst($arrTaxonsF);  // IMPORTANT PRE SORT
 
 $pattern  = "<nameString>";
-$patternE = "</nameString>";
+$patternE = "</nameString><namebankID>";    // ONLY TAXONS WITH NAMEBANKID
+
 
 for ($i=0;$i<$nTaxonsF;$i++)
 {   
+    $before = file_get_contents($arrTaxonsF[$i]);
+    
+    $after = str_ireplace(
+            array("</nameString>\n<namebankID>","</nameString>\n\n<namebankID>"),
+            $patternE."\n",
+            $before);
+
+    file_put_contents($arrTaxonsF[$i], $after);
+    
     // TAXON FILE LADEN & TAXONS HOLEN
     $arrTaxons[($i+1)] = "".str_ireplace(array($pattern,$patternE),"",
-            implode(_TRENNER,file_get_content_filtered($arrTaxonsF[$i],array($pattern),"<!",true,true)));
+    implode(_TRENNER,file_get_content_filtered($arrTaxonsF[$i],array($patternE),"<!",true,true)));
+
+
     /*
      <results>
       <allNames>
-      <entity>
-      <nameString>Abies</nameString>
-      <namebankID>2645028</namebankID>
-      </entity>
+     * 
+     * 
+  </entity>
+  <entity>
+  <nameString>Oleaceae</nameString>
+  <namebankID>459706</namebankID>
+  </entity>
+  <entity>
+  <nameString>Orchidales</nameString>
+
+  <namebankID>467838</namebankID>
+  </entity>
+  <entity>
+  <nameString>Oxalidaceae</nameString>
+  <namebankID>456438</namebankID>
+  </entity>
+  <entity>
+     * 
      * 
      *
       </allNames>
@@ -109,10 +135,10 @@ $containerElement->removeChild($dropNode);
 
 
 // ADD itemInformation
-$containerElement = $containerElement->appendChild($domDoc->createElement($arrNewNodes[0])); 
+$containerElement = $containerElement->appendChild($domDoc->createElement("olef:".$arrNewNodes[0])); 
 
 // ADD files
-$containerElement = $containerElement->appendChild($domDoc->createElement($arrNewNodes[1]));  
+$containerElement = $containerElement->appendChild($domDoc->createElement("olef:".$arrNewNodes[1]));  
 
 
 // ***********************************************************************
@@ -124,43 +150,48 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
     // $domDoc->getElementsByTagName('files')->item(0);  // start element wieder auf file
     
     $curParent    = $containerElement;
-    $arrPageInfos = getPageInfoFromFile($arrTiffs[$curTiff],$curTiff);
+    $arrPageInfos = getPageInfoFromFile($arrTiffs[$curTiff],$curTiff+1);
     
     for ($curNode=2;$curNode<$nNewNodes;$curNode++)             // von file bis taxon
     {
         $curNodeName  = $arrNewNodes[$curNode];
         
         if ($curNodeName!='taxon')                              // taxon verwaltet sich selbst
-        $node = $domDoc->createElement($curNodeName,"\n");      // no value here
+        $node = $domDoc->createElement("olef:".$curNodeName,"\n");      // no value here
         
         switch($curNodeName)
         {
-            case 'page':
-             $node->setAttribute("pageType",$arrPageInfos[2]);
-             $curParent = $curParent->appendChild($node);        // TYP DER PAGE GEM. FSG
-            break;
-        
             case 'reference':
              $node->setAttribute("type", "path");
              $node->nodeValue = $arrTiffs[$curTiff];          
              $curParent->appendChild($node);                     // WIRD NICHT ZU PARENTELEMENT
             break;
-            
-            case 'name':
-              $pageInfos = $arrPageInfos[3];
-              
-              // SUPPORT FUER 4 SEITEN PRO FILE
-              if ((array_key_exists(4, $arrPageInfos))&&($arrPageInfos[4]!=""))   
-                      $pageInfos .= ",".$arrPageInfos[4];
-              if ((array_key_exists(5, $arrPageInfos))&&($arrPageInfos[5]!=""))    
-                      $pageInfos .= ",".$arrPageInfos[5];
-              if ((array_key_exists(6, $arrPageInfos))&&($arrPageInfos[6]!=""))    
-                      $pageInfos .= ",".$arrPageInfos[6];
-                                    
-              $node->nodeValue = $pageInfos;
-              $curParent->appendChild($node);                    // WIRD NICHT ZU PARENTELEMENT
+        
+
+            case 'page':
+             $node->setAttribute("pageType",$arrPageInfos[2]);
+             $curParent = $curParent->appendChild($node);        // TYP DER PAGE GEM. FSG
             break;
         
+
+            case 'name':
+
+              // KEIN NAME NODE WENN PAGE LEER
+              // MEHRERE NAME NODES WENN MEHRERE PAGES
+                
+              for ($i=3;$i<7;$i++)      // SUPPORT FUER 4 SEITEN PRO FILE
+              {
+                  if ((array_key_exists($i, $arrPageInfos))&&($arrPageInfos[$i]!=""))
+                  {
+                      if ($i>3) $node  = $domDoc->createElement("olef:".$curNodeName,"\n");
+
+                      $node->nodeValue = $arrPageInfos[$i];
+                      $curParent->appendChild($node);          // WIRD NICHT ZU PARENTELEMENT
+                  }
+              }
+            break;
+        
+            
             case 'taxon':
 
                 // SCHLEIFE UEBER ALLE GEFUNDEN TAXONS AUF DIESER SEITE - 'dwc:scientificName'
@@ -175,7 +206,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
                         
                         if ($curTaxon!="")
                         {
-                            $node = $domDoc->createElement($curNodeName,"\n");  // taxon node
+                            $node = $domDoc->createElement("olef:".$curNodeName,"\n");  // taxon node
                             $curTaxonNode = $curParent->appendChild($node);
 
                             $node = $domDoc->createElement("dwc:scientificName",$curTaxon);  // taxon string
@@ -185,7 +216,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
                         }
                     }
                 }
-                                                                    // da letzter newNode zurueck zum element container
+                         // DA LETZTER NEWNODE ZURUECK ZUM ELEMENT CONTAINER
                 break;
             
             default:

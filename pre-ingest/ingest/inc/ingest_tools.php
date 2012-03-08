@@ -16,7 +16,7 @@ function get_provider_details($user_id)
     if (is_numeric($user_id))
     {
         $query = "select user_name, user_content_home, user_content_id, is_admin, 
-            user_config, user_config_smt, user_memo, queue_mode, metadata_ws 
+            user_config, user_config_smt, user_memo, queue_mode, metadata_ws, default_ipr  
             from "._USER_TAB." where user_id=".$user_id;
 
         return mysql_get_line($query);
@@ -319,9 +319,9 @@ function is_content_job_running($contentID,$regard_queued=true)
 
 
 
-// ************************************************************
-function getPageInfoFromFile($file_name,$part='type',$curIdx=0)
-// ************************************************************
+// ****************************************************************************
+function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
+// ****************************************************************************
 // 
 // AB ELEMENT 3 SIND ALLES PAGE NUMBERS !
 // $part .... prefix[0], sequence[1], type[2], pagenumbers[3] .... [n]
@@ -335,7 +335,7 @@ function getPageInfoFromFile($file_name,$part='type',$curIdx=0)
      $file_name = basename($file_name);
      $pos1      = strrpos($file_name,".");
      
-     if ($pos1!==false) $file_name = substr($file_name,0,$pos1);    // EXTENSION WEG
+     if ($pos1!==false) $file_name = substr($file_name,0,$pos1);    // LETZTE EXTENSION WEG
      
      // *****************
      // NON PDF - TIF ...
@@ -346,36 +346,40 @@ function getPageInfoFromFile($file_name,$part='type',$curIdx=0)
          $nArr      = count($arrReturn);
 
          // FEHLERBEHANDLUNG
-         if ($nArr<$minParts)
+         if (($nArr<$minParts)&&($errorTolerant))
          {
-             if ($nArr==2)      $arrReturn = array_merge($arrReturn,array('PAGE',$curIdx+1));
-             else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curIdx+1));
-             else
-             {
-                echo "Error: Filename convention broken, rename your page files according to File Submission Guidelines (FSG).\n;";
-                return false;
-             }
+             if ($nArr==2)      $arrReturn = array_merge($arrReturn,array('PAGE',$curOrderNumber));
+             else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curOrderNumber));
          }
      }
      // ***
      // PDF
      // ***
-     else
+     else 
      {
-         $pos1 = strrpos($file_name,"-");       // NACH LETZTEM BINDESTRICH PAGENUMBER
-         
-         if ($pos1!==false) 
-         {
-             $pageNumber = substr($file_name,$pos1+1);
-             
-             if (!is_numeric($pageNumber)) $pageNumber = $curIdx+1;
-             
-             $arrReturn = array(substr($file_name,0,$pos1),1,'PAGE',$pageNumber);
-         }
-         
-     }
-     
-     return $arrReturn;
+        $pageNumber = "";
+        
+        // NACH LETZTEM BINDESTRICH PAGENUMBER
+
+        $pos1 = strrpos($file_name, "-");
+
+        if ($pos1 !== false)    $pageNumber = substr($file_name, $pos1 + 1);
+
+        if (!is_numeric($pageNumber)) $pageNumber = $curOrderNumber;
+
+        // PDF-FILENAME | SEQUENCE | TYP | PAGENUMBER   (SEQUENCE=PAGENUMBER)
+        $arrReturn = array(substr($file_name, 0, $pos1), $pageNumber, 'PAGE', $pageNumber);
+        
+        // !!! PDF ANALYSE HIER
+    }
+
+    if (count($arrReturn) < $minParts) 
+    {
+        echo _ERR."Filename convention broken! rename your page files according to File Submission Guidelines (FSG).\n;";
+        return false;
+    }
+
+    return $arrReturn;
 }
 
 

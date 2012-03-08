@@ -22,6 +22,7 @@ CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`users` (
   `user_memo` TEXT NULL ,
   `queue_mode` TINYINT UNSIGNED NULL DEFAULT 0 ,
   `metadata_ws` VARCHAR(1024) NULL ,
+  `default_ipr` VARCHAR(255) NULL ,
   PRIMARY KEY (`user_id`) )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
@@ -178,10 +179,10 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 SET AUTOCOMMIT=0;
 USE `int_pi_pi`;
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('1', 'mehrrath', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('2', 'nhmw', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('5', 'nbgb', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'be-nbgb/Upload_20110930', 'nbgb', '1', NULL, '-m c -cm 4 -if <input_file> -of <output_file> -ife ISO-8859-15', 'The metadata looks fine, all plain MARC21 records which convert fine.', '1', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'testdata/spices_prepared', 'admin', '1', NULL, '-m c -cm 5 -if <input_file> -of <output_file>', 'The metadata looks fine, all plain MARC21 records which convert fine.', '0', NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`) VALUES ('3', 'test', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('1', 'mehrrath', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL, NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('2', 'nhmw', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL, NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('5', 'nbgb', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'be-nbgb/Upload_20110930', 'nbgb', '1', NULL, '-m c -cm 4 -if <input_file> -of <output_file> -ife ISO-8859-15', 'The metadata looks fine, all plain MARC21 records which convert fine.', '1', NULL, NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'testdata/spices_prepared', 'admin', '1', NULL, '-m c -cm 5 -if <input_file> -of <output_file>', 'The metadata looks fine, all plain MARC21 records which convert fine.', '0', NULL, NULL);
+INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('3', 'test', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 COMMIT;

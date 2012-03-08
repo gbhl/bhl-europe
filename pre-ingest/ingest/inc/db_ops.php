@@ -18,6 +18,8 @@ if($sub_action=="save_cp_details")
     if ((!isset($queue_mode))||(!is_numeric($queue_mode)))    $queue_mode = 0;
     if (!isset($user_memo))         $user_memo         = $arrProvider['user_memo'];
     
+    if (!isset($default_ipr))       $default_ipr       = $arrProvider['default_ipr'];
+    
     $query  = "update users set 
         user_content_home='".$user_content_home."', 
         user_content_id='".$user_content_id."', 
@@ -25,7 +27,8 @@ if($sub_action=="save_cp_details")
         user_config_smt='".$user_config_smt."',
         queue_mode=".$queue_mode.",
         user_memo='".$user_memo."',
-        metadata_ws='".$metadata_ws."' 
+        metadata_ws='".$metadata_ws."',
+        default_ipr='".$default_ipr."'
         where user_id=".$user_id;
     
     // BESTAETIGUNG UM UMSETZEN EVTL. DADURCH GEAENDERTER REALTIME USER VARIABLEN
@@ -38,6 +41,7 @@ if($sub_action=="save_cp_details")
         $arrProvider['queue_mode']        = $queue_mode;
         $arrProvider['user_memo']         = $user_memo;
         $arrProvider['metadata_ws']       = $metadata_ws;
+        $arrProvider['default_ipr']       = $default_ipr;
     }
 
     // *****************

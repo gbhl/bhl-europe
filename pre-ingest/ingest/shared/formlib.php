@@ -465,7 +465,7 @@ function arr_dropdown($myArr,$feldname="",$wert=1,$size=1,$title="",$js="",$noKe
     {
         if ($title != "") echo "\n\n<font class=eingabetitel>".$title."</font>";
 
-        echo "\n\n<select class=eingabefeld name='".$feldname."' ";
+        echo "\n\n<select class='eingabefeld' name='".$feldname."' ";
 
         if (is_numeric($size))  echo " size='".$size."' ";
 

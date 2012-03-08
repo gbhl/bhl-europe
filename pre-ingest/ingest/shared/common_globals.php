@@ -13,10 +13,10 @@
 // ************************************
 // *** REGISTRIERTE FEHLERMELDUNGEN ***
 // ************************************
-define("_ERR",				    "\n<br><b>Error:</b> ");
+define("_ERR",				"\n<br><b>Error:</b> ");
 
 define("_DB_ERROR_CONNECT",		_ERR."Could not connect to database server.");
-define("_DB_ERROR_SELECTDB",    _ERR."Could not select specified database.");
+define("_DB_ERROR_SELECTDB",            _ERR."Could not select specified database.");
 define("_DB_ERROR_QUERY",		_ERR."Could not execute database query correctly.");
 define("_DB_PARSING",			_ERR."Could not parse sql correctly.");
 define("_WRONG_USERID",			_ERR."Wrong System Call, user ID may be wrong.");
@@ -25,8 +25,8 @@ define("_LOGIN_FAILED",			_ERR."Login data not accepted !\\n\\nPlease take care 
 define("_WRONG_REQUEST",		_ERR."Wrong request, required information is not available. Access details logged!");
 define("_ERR_COOKIE",			_ERR."Cannot set a cookie, please check your browser configuration.");
 define("_ERR_ORA_LOGIN",		_ERR."Because of missing login data the database could not be connected.");
-define("_ERR_ORA_ENV",          _ERR."The Oracle Environment is not valid. (ORACLE_HOME, etc.)");
-define("_DEPRECATED",           _ERR."This function is deprecated, ask your support.");
+define("_ERR_ORA_ENV",                  _ERR."The Oracle Environment is not valid. (ORACLE_HOME, etc.)");
+define("_DEPRECATED",                   _ERR."This function is deprecated, ask your support.");
 
 
 // ***********************************

@@ -1,4 +1,5 @@
 
+/* PRE-INGEST INTERNAL CSS */
 
 .folderlist
 {
@@ -7,42 +8,60 @@
     font-weight: bold;
 }
 
+
 .schalter
 {
     background-color: #DDEEFF
 }
 
+
 .eingabetitel
 {
-    
-    
+
 }
 
 
 .eingabefeld
 {
-    
-    
+
 }
 
 
-.tooltip {
-	display:none;
-	background:transparent url(../img/sky_arrow.png);
-	font-size:11px;
-	height:70px;
-	width:160px;
-	padding:30px 25px 25px 25px;
-	color:#000;	
-        line-height: 15px;
-        text-align: justify;
+.tooltip 
+{
+    display:        none;
+    background:     transparent url(../img/sky_arrow.png);
+    font-size:      11px;
+    height:         70px;
+    width:          160px;
+    padding:        30px 25px 25px 25px;
+    color:          #000;
+    line-height:    15px;
+    text-align:     justify;
 }
 
 
-div {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    height: auto;
+div 
+{
+    margin:     0px 0px 0px 0px;
+    padding:    0px 0px 0px 0px;
+    height:     auto;
     min-height: 0px;
+}
+
+
+.contenttable
+{
+    border:            3px solid #C1DBFF; 
+    font:              11px verdana; 
+    background-color:  white; 
+    margin-top:        33px;
+}
+
+
+.cname { 
+    margin-top: 10px; 
+    padding-top: 2px; padding-bottom: 4px; text-shadow: #555 3px 2px 4px;
+    border: 1px solid #bbb; text-align: center; width: 250px;
 }
 

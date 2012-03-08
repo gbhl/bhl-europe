@@ -16,17 +16,9 @@ $tabCols = 6;
 </div>
 
 
-
-
 <style>
 
 th { border-left: 1px solid white; border-bottom: 1px solid black; }
-
-.cname { 
-    margin-top: 10px; 
-    padding-top: 2px; padding-bottom: 4px; text-shadow: #555 3px 2px 4px;
-    border: 1px solid #bbb; text-align: center; width: 250px;
-}
 
 </style>
 
@@ -36,9 +28,7 @@ form("form_ingest_manager");
 hidden("menu_nav",$menu_nav);
 hidden("sub_action","save_ingest_settings");
 
-
-echo "<table id=\"mytable\" width=1000 style='border: 3px solid #C1DBFF; font: 11px verdana; background-color: white; margin-top: 33px;'>
-<tr><td colspan=".($tabCols-1)." align=left nowrap>";
+echo "<table id=\"mytable\" class=\"contenttable\"><tr><td colspan=\"".($tabCols-1)."\" align=\"left\">";
 
 ?>
 
@@ -98,7 +88,7 @@ $query = "select content_id, date_format(content_ctime,'%Y.%m.%d'),
     content_status, content_size, content_pages, content_last_succ_step, content_ipr      
     from content 
     where content_root like '%".$arrProvider['user_content_home']."%' 
-        order by content_ctime desc, content_atime desc ";
+    order by content_ctime desc, content_atime desc ";
 
 $result = mysql_select($query);
 $nrows  = mysql_num_rows($result);
@@ -114,28 +104,28 @@ if ($nrows>0)
         // TIMES
         echo "<tr style=\"border-bottom: 1px solid #888888;\"><td>";
         
-        echo "<table border=0 cellmargin=0 cellpadding=0><tr><td>";
-        
         // TRY GET & DISPLAY MEDIA PREVIEW
+        echo "<table border=0 cellmargin=0 cellpadding=0><tr><td>";
         include("inc/mediathumb.php");
-        
         echo "</td><td valign=middle align=center><font size=1>";
-
         // DATES
         echo $line[1]."<br><font color=\"#aaaaaa\">".$line[2]."</font></font>";
-        
         echo _TAB;
+        
         
         echo _TD;
         
-        // CONTENT DEST.    "._CONTENT_ROOT."
-        // echo "<font color=#aaaaaa>...</font><font style=\"color: black; font-weight: bold; \">".substr(,-40)."</font>";
-
+        // CONTENT DEST
         echo str_replace("eingabefeld","cname",textfeld("content_name_".$line[0]." readonly ",
                 $line[5],20,98,"","",false,false));
+        // echo "<font color=#aaaaaa>...</font><font style=\"color: black; font-weight: bold; \">".substr(,-40)."</font>";
         lz();
-        icon("folder_32.png","Explore the media directory, check & open media files.<br><br>".str_replace(_CONTENT_ROOT,"",$line[3]),"onClick=\"javascript: popup_win('ft','"._SYSTEM."?menu_nav=file_tree&start_root=".urlencode(clean_path(str_replace(_CONTENT_ROOT,"",$line[3]))."/")."',560,440);\"");
-       
+        
+        $myAction = "popup_win('ft','"._SYSTEM."?menu_nav=file_tree&start_root=".urlencode(clean_path(str_replace(_CONTENT_ROOT,"",$line[3]))."/")."',560,440);";
+        
+        icon("folder_32.png","Explore the media directory, check & open media files.<br><br>".str_replace(_CONTENT_ROOT,
+        "",$line[3]),"onClick=\"javascript: ".$myAction."\"");
+
         echo _TD;
         
         // CONTENT TYPE 
@@ -143,14 +133,21 @@ if ($nrows>0)
         nl();
 
         // INGEST STATUS
-        arr_dropdown($arrEnumCStatus,"content_status_".$line[0]."' disabled style='margin-top: 2px; background-color: #eeffee; width:120px;",$line[7],1,"","",true);
+        arr_dropdown($arrEnumCStatus,"content_status_".$line[0]."' disabled style='margin-top: 3px; background-color: #eeffee; width:120px;",$line[7],1,"","",true);
 
         echo "</td><td align=center>";
 
-        // ALIAS / IPR INFO
-        textfeld("content_alias_".$line[0]." style=\"border: 1px solid blue; text-align: center; width: 150px; font-weight: bold;\" ",$line[6],19,98,"","",false); 
+        // ALIAS
+        textfeld("content_alias_".$line[0]." style=\"border: 1px solid blue; text-align: center; width: 150px; color: blue; font-weight: bold;\" ",$line[6],19,98,"","",false); 
         nl();
-        textfeld("content_ipr_".$line[0]." style=\"margin-top: 4px; border: 1px solid #11FF0B; text-align: center; width: 150px; font-weight: normal;\" ",$line[11],19,254,"","",false);
+        
+        // IPR INFO
+        if ($line[11]=='') 
+            $line[11] = abfrage("select default_ipr from "._USER_TAB." where user_id=".$user_id,$db);
+                
+        arr_dropdown($arrIPR,"content_ipr_".$line[0]."' style='border: 2px solid #11FF0B; margin-top: 3px; width: 150px;",$line[11],1,"","",false);
+        
+        // textfeld("content_ipr_".$line[0]." style=\"margin-top: 4px; border: 1px solid #11FF0B; text-align: center; width: 150px; font-weight: normal;\" ",$line[11],19,254,"","",false);
 
         // PAGES AND SIZE
         if (($line['content_pages']=="")||($line['content_pages']==0))

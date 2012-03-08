@@ -59,13 +59,12 @@ if ((isset($content_id))&&(is_numeric($content_id)))
 else
     echo _ERR . " Content ID is missing...";
 
-nl(2);
+nl();
 
 // CLOSE & REFRESH PARENT
-close_ingest_popup("CLOSE here to auto refresh your management list behind ...");
+close_ingest_popup("CLOSE here to Auto-Refresh your management list behind...");
 
 nl(2);
-
 
 @ob_end_flush();
 @ob_flush();

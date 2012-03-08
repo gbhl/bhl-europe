@@ -80,14 +80,40 @@ else
 
     include_once("inc/metadata.php");
 
-    if (file_exists($outputFile)) 
+    if (file_exists(_OLEF_FILE)) 
     {
-        $olef = file_get_contents($outputFile);
+        $olef = file_get_contents(_OLEF_FILE);
         echo "\n<h2>OLEF Result: &nbsp; ";
         icon("green_16.png");
         echo "</h2>";
 
         echo "<hr>\n<pre>" . htmlspecialchars($olef) . " \n\n";
+        
+
+        // IPR EXTRAHIEREN
+        $content_ipr = "";
+        if (instr($olef, "accessCondition",true,true))      // instr($haystack, $needle, $ignoreCase, $oneMatchOnly)
+        {
+            $pos1        = stripos($olef,"accessCondition");
+            $pos2        = stripos($olef,">",$pos1+14);
+            $pos3        = stripos($olef,"<",$pos2+1);
+            $content_ipr = str_replace("\n","",trim(substr($olef,$pos2+1,$pos3-($pos2+1))));
+        }
+
+        // NUR EIN GUELTIGER EINTRAG WIRD UEBERNOMMEN
+        if (!instr($content_ipr,array_keys($arrIPR),true,true))  $content_ipr = "";
+                
+        if ($content_ipr == "")
+        $content_ipr = abfrage("select default_ipr from "._USER_TAB." where user_id=".$user_id,$db);
+
+        // CONTENT IPR UPDATE
+        $query = "update content set content_ipr = '".$content_ipr."' where content_id=".$content_id;
+        mysql_select($query,$db);
+        
+        echo "\nContent IPR: ".$content_ipr."\n\n";
+        
+        unset($content_ipr);
+
 
         $cGUID = "";
         include("inc/guid_minter.php");

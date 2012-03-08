@@ -91,12 +91,18 @@ lz();
 icon("folder_16.png","Explore this Directory.","onClick=\"javascript: popup_win('cr','"._SYSTEM."?menu_nav=show_user_content_root',1000,500);\"");
 
 
-
+// WEBSERVICE
 
 echo _TR."Metadata Webservice"._TD;  
 textfeld("metadata_ws ".$extraTag,$arrProvider['metadata_ws'],62,900);
 lz();
 icon("exclam_16.png","Preferred setting. If set webservice is used before local file.");
+
+
+// DEFAULT IPR
+
+echo _TR."Default Intellectual <br>Property Right"._TD;  
+arr_dropdown($arrIPR,"default_ipr' style='border: 2px solid #11FF0B; margin-top: 3px; width: 150px;",$arrProvider['default_ipr'],1,"","",false);
 
 
 

@@ -27,7 +27,7 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 {
     $ipr = abfrage("select content_ipr from content where content_id=".$content_id);
     
-    if ($ipr!="") 
+    if ($ipr!="")
     {
         // LOAD OLEF TO DOM
         $domDoc   = new DOMDocument();
@@ -49,7 +49,7 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
         }
 
         // SPEICHERN MODIFIZIERTEN OLEF
-        if ($domDoc->save(_OLEF_FILE)>0) echo "Missing IPR Information added ...... ok\n";
+        if ($domDoc->save(_OLEF_FILE)>0) echo "Missing IPR Information added ... ok\n";
         else                             echo _ERR." IPR Information failed!\n";
     }
     else 
@@ -59,6 +59,27 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
         $ingestReady = false;
     }
 }
+// !!! FALLS NICHT IN ARRAY VORKOMMEN DEN VORH. NODE UEBERSCHREIBEN MIT CONTENT_IPR DB DATA
+
+
+
+// *************************
+// ADD OLEF NAMESPACE PREFIX
+// *************************
+/*
+if (!file_content_exists(_OLEF_FILE,"<olef:",true,true))
+{
+    $before = file_get_contents(_OLEF_FILE);
+    $after  = str_replace(
+            array("</",     "<",     "<olef:/olef:","</olef:/olef:","</olef:mods:","<olef:mods:","<olef: ","</olef: ","</olef:olef:","<olef:olef:","</olef:dwc:","<olef:dwc:"),
+            array("</olef:","<olef:","<olef:",      "</olef:",      "</mods:",     "<mods:",     "<olef:", "</olef:", "</olef:",     "<olef:"     ,"</dwc:",     "<dwc:"),
+            $before);
+    
+    file_put_contents(_OLEF_FILE,$after);
+    
+    unset($before); unset($after);
+}
+*/
 
 echo "OLEF mods done.\n";
 

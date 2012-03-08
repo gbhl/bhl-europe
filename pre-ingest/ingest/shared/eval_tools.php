@@ -52,4 +52,43 @@ function prepare_eval($phrase)
 
 
 
+
+/**
+ * EVAL INLINE PHP CODE EMBEDDED, E.G. IN HTML
+ *
+ * @param String $myContent
+ * @return static + evaluated output string
+
+ DEPRECATED???
+
+ */
+// USE $GLOBALS['***'] VARIABLE TO ACCESS RUNTIME VARS IN EVAL CODE!
+function eval_inline_php($myContent,$onlyEval=false)
+// *************************************************
+{
+	$rVal = "";
+
+	// PHP INCLUDES
+	$pos1 = strpos($myContent,"<?php");
+
+	if (!($pos1===false))
+	{
+		$pos2 = strpos($myContent,"?>",$pos1);
+
+		$rVal .= substr($myContent,0,$pos1);
+
+		// BLOCK AUSWERTEN
+		$evalTxt = substr($myContent,$pos1+5,($pos2)-($pos1+5));
+		eval($evalTxt);
+
+		// RUECKGABE BLOCK DAVOR UND DANACH
+		if (!$onlyEval) return $rVal.substr($myContent,$pos2+2);
+	}
+	else
+		return $myContent;
+
+	return "";
+}
+
+
 ?>

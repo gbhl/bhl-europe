@@ -2,20 +2,17 @@
 // ********************************************
 // ** FILE:    METADATA.PHP                  **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    20.12.2011                    **
+// ** DATE:    06.02.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
-
 
 $myCmd = _SMT;
 
 $myParams   = abfrage("select user_config_smt from users as wert where user_id=" . $user_id, $db);
 
-$outputFile = $destDir._AIP_OLEF_FN;
-
 $myParams   = str_replace(array("<input_file>", "<input file>"),  "\"".$inputFile."\"", $myParams);
 
-$myParams   = str_replace(array("<output_file>", "<output file>"),"\"".$outputFile."\"", $myParams);
+$myParams   = str_replace(array("<output_file>", "<output file>"),"\""._OLEF_FILE."\"", $myParams);
 
 @ob_end_clean();
 
