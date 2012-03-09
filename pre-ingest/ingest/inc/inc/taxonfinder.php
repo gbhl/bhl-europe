@@ -35,10 +35,6 @@ Selaginella riddellii van Eselt.
  * 
  */
 
-// TEXTFILES ERMITTELN (IN UPLOAD ODER .AIP)
-$arrPagesTextFiles = getContentFiles($contentDir,'ocrdata',true);
-$nTextFiles = count($arrPagesTextFiles);
-
 $resource_context = stream_context_create(array(
     'http' => array(
         'timeout' => _WEBSERVICE_TIMEOUT

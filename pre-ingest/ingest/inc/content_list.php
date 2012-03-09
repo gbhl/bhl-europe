@@ -138,7 +138,7 @@ if ($nrows>0)
         echo "</td><td align=center>";
 
         // ALIAS
-        textfeld("content_alias_".$line[0]." style=\"border: 1px solid blue; text-align: center; width: 150px; color: blue; font-weight: bold;\" ",$line[6],19,98,"","",false); 
+        textfeld("content_alias_".$line[0]." style=\"border: 1px solid #4D86CD; text-align: center; width: 150px; color: #4D86CD; font-weight: bold;\" ",$line[6],19,98,"","",false); 
         nl();
         
         // IPR INFO

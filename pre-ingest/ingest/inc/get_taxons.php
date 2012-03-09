@@ -16,7 +16,11 @@ echo "<h1 style='margin-top: 3px;'>Run Taxon Finder Service for pages text</h1>"
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 $arrTaxons = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT); 
 $nTaxons   = count($arrTaxons);
-$nTextFiles= 0;
+
+
+// TEXTFILES ERMITTELN (IN UPLOAD ODER .AIP)
+$arrPagesTextFiles = getContentFiles($contentDir,'ocrdata',true);
+$nTextFiles = count($arrPagesTextFiles);
 
 
 if ($nTaxons >= $cPages)  echo "All taxonometric files present - nothing to do!\n";
@@ -37,8 +41,8 @@ if ($nTaxons >= $cPages)
     mysql_select("update content set content_pages_taxon='" . $csvTextfiles 
             . "' where content_id=" . $content_id);
 
-    // $endmsg .= $nTaxons . " files generated and database updated successfully.";
-    $endmsg .= "For ".$nTextFiles." text files ".$nTaxons." taxon files (.tax) generated and database updated successfully.";
+    $endmsg .= "For ".$nTextFiles." text files ".$nTaxons.
+            " taxon files (.tax) generated/found. Database updated successfully.";
 } 
 else if (!_QUEUE_MODE) 
     echo _ERR . "Not all necessary taxonometric files could be prepared!";
