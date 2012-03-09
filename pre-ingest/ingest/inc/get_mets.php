@@ -66,7 +66,7 @@ for ($i=0;$i<=$cPages;$i++)     // $cPages + 1 book
     else
     {
         // OBJID + PAGE NR.
-        $pageID = $objID."-".substr("00000".$i,-5); // interne page id = OBJID
+        $pageID = $objID."-".substr("00000".$i,-5); // interne page id = OBJID   !!!! oder reale page nr??
         
         $cur_tiff = basename($arrTiffs[($i-1)]);
         $metsFile = $destDir.str_replace(array(":","/"),"_",$pageID).".xml";   // FILENAME

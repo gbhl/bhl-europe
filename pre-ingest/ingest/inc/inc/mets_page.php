@@ -12,7 +12,7 @@ foreach ($nodeAttributes as $nodeAttribute)
             $curElement->setAttribute('OBJID',str_replace("/","-",($pageID)));
         
         if ($nodeAttribute->name == 'LABEL')        
-            $curElement->setAttribute('LABEL','Page '.$i);
+            $curElement->setAttribute('LABEL','Page '.$i);  // !!! richtige nr verwenden
     }
     
     // PAGE TIFF & OCR PATHS

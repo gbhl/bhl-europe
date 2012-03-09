@@ -2,7 +2,7 @@
 // ******************************************
 // ** FILE:    FILE_OPERATIONS.PHP         **
 // ** PURPOSE: SHARED LIBARY               **
-// ** DATE:    13.04.2011                  **
+// ** DATE:    13.03.2012                  **
 // ** AUTHOR:  ANDREAS MEHRRATH            **
 // ******************************************
 /*
@@ -97,7 +97,9 @@ function get_file_value($file_name,$value,$retCol=0,$ignoreCase=false)
 
 	if (file_exists($file_name))
 	{
-		if ($fp = fopen($file_name,"r"))
+                $fp = @fopen($file_name,"r");
+                
+		if ($fp)
 		{
 			while (!feof($fp))
 			{
@@ -111,8 +113,9 @@ function get_file_value($file_name,$value,$retCol=0,$ignoreCase=false)
 					break;
 				}
 			}
-			@fclose($fp);
 		}
+                
+                @fclose($fp);
 	}
 	return $retVal;
 }
@@ -131,14 +134,20 @@ function get_file_value($file_name,$value,$retCol=0,$ignoreCase=false)
 function write_file($filename,$content="",$mode="w")
 // *************************************************
 {
-	if ($fp = fopen($filename,$mode))
+        $fp = @fopen($filename,$mode);
+                
+	if ($fp)
 	{
 		fputs($fp,$content);
+                
 		@fclose($fp);
+                
 		return true;
 	}
-	else
-		return false;
+	
+        @fclose($fp);
+		
+        return false;
 }
 
 
@@ -158,14 +167,17 @@ function read_file($filename)
 {
 	$content = false;
 
-	if ($fp = fopen($filename,"r"))
+        $fp = @fopen($filename,"r");
+        
+	if ($fp)
 	{
 		while (!feof($fp))
 		{
 			$content .= fgets($fp);
 		}
-		@fclose($fp);
 	}
+        
+        @fclose($fp);
 
 	return $content;
 }
@@ -199,7 +211,10 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
 
     $fp = @fopen($fileName,"r");
 
-    if (!$fp) return false;
+    if (!$fp) { 
+        @fclose($fp); 
+        return false;
+    }
     else
     {
         while (!feof($fp))
@@ -227,10 +242,12 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
                     }
                 }
         }
-        fclose($fp);
+        @fclose($fp);
 
         return $rVal;
     }
+    
+    @fclose($fp);
     
     return false;
 }
