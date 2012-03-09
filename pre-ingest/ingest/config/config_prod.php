@@ -49,8 +49,8 @@ define("_WEBSERVICE_TIMEOUT",        25);
 
 // DATABASE DETAILS
 define("_DB_SERVER",                "bhl-db1");     
-define("_DB_USER",                  "bhletech");     
-define("_DB_PWD",                   "bh!3t3ch");
+define("_DB_USER",                  "${DB_USERNAME}");     
+define("_DB_PWD",                   "${DB_PASSWORD}");
 define("_DB_MAIN",                  "int_pi_pi");     
 define("_DB_DEBUG",                 true);
 
