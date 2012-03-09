@@ -26,7 +26,6 @@ $arrTaxonsF = sortShortFirst($arrTaxonsF);  // IMPORTANT PRE SORT
 $pattern  = "<nameString>";
 $patternE = "</nameString><namebankID>";    // ONLY TAXONS WITH NAMEBANKID
 
-
 for ($i=0;$i<$nTaxonsF;$i++)
 {   
     // TAXON FILE LADEN & TAXONS HOLEN
@@ -34,27 +33,30 @@ for ($i=0;$i<$nTaxonsF;$i++)
     
     // LEERE NAMEBANKIDS WEG
     $after = str_ireplace(
-            array("<namebankID></namebankID>","<namebankID> </namebankID>","<namebankID>  </namebankID>",
-                "<namebankID>\n</namebankID>","<namebankID>\n </namebankID>","<namebankID>\n  </namebankID>",
-                "<namebankID>\n\n</namebankID>","<namebankID>\n\n </namebankID>","<namebankID>\n\n  </namebankID>"),
+            array("\t","\r",
+                "<namebankID></namebankID>",
+                "<namebankID>\n</namebankID>","<namebankID>\n\n</namebankID>",
+                "<namebankID>\n </namebankID>","<namebankID>\n\n </namebankID>",
+                "<namebankID>\n  </namebankID>","<namebankID>\n\n  </namebankID>"),
             "",$before);
     
     // NAMEBANK ID ELEMENTS IN GLEICHE ZEILE BRINGEN WIE nameString
     $after = str_ireplace(
-            array("</nameString>\n<namebankID>","</nameString>\n\n<namebankID>","</nameString>\n\n <namebankID>",
-                "</nameString>\n\n  <namebankID>","</nameString>\n <namebankID>","</nameString>\n  <namebankID>"),
+            array("</nameString>\n<namebankID>","</nameString>\n\n<namebankID>",
+                "</nameString>\n <namebankID>","</nameString>\n\n <namebankID>",
+                "</nameString>\n  <namebankID>","</nameString>\n\n  <namebankID>"),
             $patternE."\n",
             $after);
 
     // MEHRFACHE LEERZEILEN WEG
-    $after = str_ireplace(array("\n\n\n","\n\n"),"\n",$after);
+    $after = str_ireplace(array("\n\n\n\n","\n\n\n","\n\n"),"\n",$after);
 
     file_put_contents($arrTaxonsF[$i], $after);
-    
+
     
     // HOLEN DER TAXONS AUS AUFBEREITUNG MIT FILTER (NUR JENE MIT NAMEBANKID)
     $arrLines = file_get_content_filtered($arrTaxonsF[$i],array($patternE),"<!",true,true);
-    $nLines = count($arrLines);
+    $nLines   = count($arrLines);
     
     for ($j=0;$j<$nLines;$j++)
     {
@@ -63,9 +65,12 @@ for ($i=0;$i<$nTaxonsF;$i++)
     
     reset($arrLines);
             
-    $arrTaxons[($i+1)] = "".str_ireplace(array($pattern,$patternE,"</nameString>"),"",implode(_TRENNER,$arrLines));
+    $arrTaxons[($i+1)] = "".str_ireplace(array($pattern,$patternE,"</nameString>"),"",
+            implode(_TRENNER,$arrLines));
 
     unset($arrLines);
+    unset($before);
+    unset($after);
     
     /*
      <results>
