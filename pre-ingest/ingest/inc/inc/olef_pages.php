@@ -29,20 +29,44 @@ $patternE = "</nameString><namebankID>";    // ONLY TAXONS WITH NAMEBANKID
 
 for ($i=0;$i<$nTaxonsF;$i++)
 {   
+    // TAXON FILE LADEN & TAXONS HOLEN
     $before = file_get_contents($arrTaxonsF[$i]);
     
+    // LEERE NAMEBANKIDS WEG
     $after = str_ireplace(
-            array("</nameString>\n<namebankID>","</nameString>\n\n<namebankID>"),
+            array("<namebankID></namebankID>","<namebankID> </namebankID>","<namebankID>  </namebankID>",
+                "<namebankID>\n</namebankID>","<namebankID>\n </namebankID>","<namebankID>\n  </namebankID>",
+                "<namebankID>\n\n</namebankID>","<namebankID>\n\n </namebankID>","<namebankID>\n\n  </namebankID>"),
+            "",$before);
+    
+    // NAMEBANK ID ELEMENTS IN GLEICHE ZEILE BRINGEN WIE nameString
+    $after = str_ireplace(
+            array("</nameString>\n<namebankID>","</nameString>\n\n<namebankID>","</nameString>\n\n <namebankID>",
+                "</nameString>\n\n  <namebankID>","</nameString>\n <namebankID>","</nameString>\n  <namebankID>"),
             $patternE."\n",
-            $before);
+            $after);
+
+    // MEHRFACHE LEERZEILEN WEG
+    $after = str_ireplace(array("\n\n\n","\n\n"),"\n",$after);
 
     file_put_contents($arrTaxonsF[$i], $after);
     
-    // TAXON FILE LADEN & TAXONS HOLEN
-    $arrTaxons[($i+1)] = "".str_ireplace(array($pattern,$patternE),"",
-    implode(_TRENNER,file_get_content_filtered($arrTaxonsF[$i],array($patternE),"<!",true,true)));
+    
+    // HOLEN DER TAXONS AUS AUFBEREITUNG MIT FILTER (NUR JENE MIT NAMEBANKID)
+    $arrLines = file_get_content_filtered($arrTaxonsF[$i],array($patternE),"<!",true,true);
+    $nLines = count($arrLines);
+    
+    for ($j=0;$j<$nLines;$j++)
+    {
+        $arrLines[$j] = substr($arrLines[$j],0,stripos($arrLines[$j],"</nameString>"));
+    }
+    
+    reset($arrLines);
+            
+    $arrTaxons[($i+1)] = "".str_ireplace(array($pattern,$patternE,"</nameString>"),"",implode(_TRENNER,$arrLines));
 
-
+    unset($arrLines);
+    
     /*
      <results>
       <allNames>
@@ -178,6 +202,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 
               // KEIN NAME NODE WENN PAGE LEER
               // MEHRERE NAME NODES WENN MEHRERE PAGES
+              // !!! MEHRERE PAGE ELEMENT STATT MEHRERE NAME
                 
               for ($i=3;$i<7;$i++)      // SUPPORT FUER 4 SEITEN PRO FILE
               {

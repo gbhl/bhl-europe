@@ -26,9 +26,15 @@ function getNumPagesInPDF(array $arguments = array())
 {
     @list($PDFPath) = $arguments;
     $stream = @fopen($PDFPath, "r");
+    
     $PDFContent = @fread($stream, filesize($PDFPath));
+    
     if (!$stream || !$PDFContent)
+    {
+        @fclose($stream);
         return false;
+    }
+        
 
     $firstValue = 0;
     $secondValue = 0;
@@ -39,7 +45,11 @@ function getNumPagesInPDF(array $arguments = array())
     if (preg_match_all("/\/Count\s+([0-9]+)/s", $PDFContent, $matches)) {
         $secondValue = max($matches[1]);
     }
+    
+    @fclose($stream);
+    
     return (($secondValue != 0) ? $secondValue : max($firstValue, $secondValue));
+    
 }
 
 
