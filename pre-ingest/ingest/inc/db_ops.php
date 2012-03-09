@@ -17,7 +17,6 @@ if($sub_action=="save_cp_details")
     if (!isset($user_config_smt))   $user_config_smt   = $arrProvider['user_config_smt'];
     if ((!isset($queue_mode))||(!is_numeric($queue_mode)))    $queue_mode = 0;
     if (!isset($user_memo))         $user_memo         = $arrProvider['user_memo'];
-    
     if (!isset($default_ipr))       $default_ipr       = $arrProvider['default_ipr'];
     
     $query  = "update users set 
