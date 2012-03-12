@@ -129,6 +129,12 @@ define("_TAXON_FINDIT",             "http://www.ubio.org/webservices/service.php
 define("_TAXON_TESTFILE",           "http://www.ubio.org/tools/Small.txt");
 
 
+// -----------------------------
+// ---- METS / OLEF SPECIFIC ---
+// -----------------------------
+define ("_DEFAULT_PAGETYPE",        "PAGE");
+
+
 // -------------------------
 // ---- FEDORA SPECIFIC ----
 // -------------------------
@@ -166,6 +172,7 @@ $arrIPR = array(
 );
 
 
+define ("_DEFAULT_IPR",               0);
 
 
 ?>

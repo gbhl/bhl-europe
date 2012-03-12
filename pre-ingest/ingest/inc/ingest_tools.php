@@ -19,11 +19,28 @@ function get_provider_details($user_id)
             user_config, user_config_smt, user_memo, queue_mode, metadata_ws, default_ipr  
             from "._USER_TAB." where user_id=".$user_id;
 
-        return mysql_get_line($query);
+        if (is_numeric($user_id)) return mysql_get_line($query);
     }
     
     return false;    
 }
+
+
+
+// **************************************
+// CONTENT DETAILS HOLEN
+// **************************************
+function get_content_details($content_id)
+{
+    $query = "select 
+        content_root, content_name, content_pages, content_type, content_ipr, content_alias, content_status, 
+        content_ctime, content_atime, content_size, content_last_succ_step, content_guid
+        from content where content_id=".$content_id;
+    
+    if (is_numeric($content_id))    return mysql_get_line($query);
+    else                            return false;
+}
+
 
 
 
@@ -329,9 +346,13 @@ function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
 // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
 // 
 // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
+// 
+// HINT:      
+// ALL INFORMATION EXCEPT ID AND SEQUENCE IN THE FILENAME ARE OPTIONAL.
 {
      $arrReturn = array();
-     $minParts  = 4;
+     $minParts  = 2;    
+     $optParts  = 4;
      $file_name = basename($file_name);
      $pos1      = strrpos($file_name,".");
      
@@ -346,9 +367,9 @@ function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
          $nArr      = count($arrReturn);
 
          // FEHLERBEHANDLUNG
-         if (($nArr<$minParts)&&($errorTolerant))
+         if (($nArr<$optParts)&&($errorTolerant))
          {
-             if ($nArr==2)      $arrReturn = array_merge($arrReturn,array('PAGE',$curOrderNumber));
+             if ($nArr==2)      $arrReturn = array_merge($arrReturn,array(_DEFAULT_PAGETYPE,$curOrderNumber));
              else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curOrderNumber));
          }
      }
@@ -358,24 +379,39 @@ function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
      else 
      {
         $pageNumber = "";
+        $seqNumber = "";
         
+        $errorTolerant = true;
+
         // NACH LETZTEM BINDESTRICH PAGENUMBER
 
         $pos1 = strrpos($file_name, "-");
 
-        if ($pos1 !== false)    $pageNumber = substr($file_name, $pos1 + 1);
+        if ($pos1 !== false)    $seqNumber = substr($file_name, $pos1 + 1);
 
-        if (!is_numeric($pageNumber)) $pageNumber = $curOrderNumber;
+        if ((!is_numeric($seqNumber))&&($errorTolerant))
+        {
+            $seqNumber  = $curOrderNumber;
+        }
+        
+        $pageNumber = $seqNumber;       // VORAB OHNE WEITERE ANALYSE
+        
 
         // PDF-FILENAME | SEQUENCE | TYP | PAGENUMBER   (SEQUENCE=PAGENUMBER)
-        $arrReturn = array(substr($file_name, 0, $pos1), $pageNumber, 'PAGE', $pageNumber);
+        $arrReturn = array(substr($file_name, 0, $pos1), $seqNumber, _DEFAULT_PAGETYPE, $pageNumber);
         
-        // !!! PDF ANALYSE HIER
+        
+        // ********************
+        // WEITERE PDF ANALYSE
+        // ********************
+        // !!! t.b.d. 
+        // GATHERING OF REAL PAGE NUMBER AND PAGE TYPE FROM PDF PROPERTIES
+        
     }
 
     if (count($arrReturn) < $minParts) 
     {
-        echo _ERR."Filename convention broken! rename your page files according to File Submission Guidelines (FSG).\n;";
+        echo _ERR."Filename convention broken! Rename your page files according to File Submission Guidelines (FSG)!\n;";
         return false;
     }
 

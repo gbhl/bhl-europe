@@ -176,17 +176,17 @@ $containerElement = $containerElement->appendChild($domDoc->createElement("olef:
 
 for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 {
-    // $domDoc->getElementsByTagName('files')->item(0);  // start element wieder auf file
+    // $domDoc->getElementsByTagName('files')->item(0);         // START ELEMENT WIEDER AUF FILE
     
     $curParent    = $containerElement;
     $arrPageInfos = getPageInfoFromFile($arrTiffs[$curTiff],$curTiff+1);
     
-    for ($curNode=2;$curNode<$nNewNodes;$curNode++)             // von file bis taxon
+    for ($curNode=2;$curNode<$nNewNodes;$curNode++)             // VON FILE BIS TAXON
     {
         $curNodeName  = $arrNewNodes[$curNode];
         
-        if ($curNodeName!='taxon')                              // taxon verwaltet sich selbst
-        $node = $domDoc->createElement("olef:".$curNodeName,"\n");      // no value here
+        if ($curNodeName!='taxon')                                      // TAXON VERWALTET SICH SELBST
+        $node = $domDoc->createElement("olef:".$curNodeName,"\n");      // NO VALUE HERE
         
         switch($curNodeName)
         {
@@ -197,11 +197,12 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
             break;
         
 
-            case 'page':
-             $node->setAttribute("pageType",$arrPageInfos[2]);
-             $curParent = $curParent->appendChild($node);        // TYP DER PAGE GEM. FSG
+            case 'page':                                        // TYP DER PAGE GEM. FSG
+             if ($arrPageInfos[2]!="")  $node->setAttribute("pageType",$arrPageInfos[2]);
+             else                       $node->setAttribute("pageType",_DEFAULT_PAGETYPE);
+             $curParent = $curParent->appendChild($node);
             break;
-        
+
 
             case 'name':
 
@@ -259,12 +260,12 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 }
 
 
+
 // SPEICHERN MODIFIZIERTEN OLEF
-if ($domDoc->save(_OLEF_FILE)>0) echo "OLEF saved ..... ok\n";
-else                             echo _ERR." OLEF pages could not be written!\n";
 
+if ($domDoc->save(_OLEF_FILE)>0) echo "OLEF saved, OLEF pages generated ... ok\n";
+else                             echo _ERR." OLEF page elements could not be written!\n";
 
-echo "OLEF pages generated.\n";
 
 echo "\n\n</pre>\n";
 

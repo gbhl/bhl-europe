@@ -20,6 +20,7 @@ function button_pdf($abs_file_name,$orientation="right")
 }
 
 
+
 // **************************************************
 function getNumPagesInPDF(array $arguments = array()) 
 // **************************************************
@@ -33,8 +34,7 @@ function getNumPagesInPDF(array $arguments = array())
     {
         @fclose($stream);
         return false;
-    }
-        
+    }        
 
     $firstValue = 0;
     $secondValue = 0;

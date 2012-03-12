@@ -25,9 +25,8 @@ echo "<h3>Finishing OLEF Data</h3><pre>";
 
 if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 {
-    $ipr = abfrage("select content_ipr from content where content_id=".$content_id);
-    
-    if ($ipr!="")
+
+    if ($arrContentDetails['content_ipr']!="")
     {
         // LOAD OLEF TO DOM
         $domDoc   = new DOMDocument();
@@ -35,7 +34,7 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 
         // ADD NODE     mods:accessCondition to bibliographicInformation
 
-        $node = $domDoc->createElement("mods:accessCondition",$ipr);
+        $node = $domDoc->createElement("mods:accessCondition",$arrContentDetails['content_ipr']);
 
         $node->setAttribute("xmlns:mods", "http://www.loc.gov/mods/v3");
         $node->setAttribute("type", "use and reproduction");
@@ -54,12 +53,13 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
     }
     else 
     {
-        echo _ERR."IPR Information missing in delivered Metadata so please enter 
-            Intellectual Property Rights (IPR) information!\n";
+        echo _ERR."IPR Information missing in delivered Metadata! Please select 
+            Intellectual Property Rights (IPR) and SAVE them!\n";
         $ingestReady = false;
     }
 }
-// !!! FALLS NICHT IN ARRAY VORKOMMEN DEN VORH. NODE UEBERSCHREIBEN MIT CONTENT_IPR DB DATA
+
+
 
 
 

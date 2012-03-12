@@ -2,12 +2,13 @@
 // ********************************************
 // ** FILE:    UPLOAD_ANALYZE.PHP            **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    05.11.2011                    **
+// ** DATE:    05.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
 include_once(_SHARED."formlib.php");
 include_once(_SHARED."imagelib.php");
+include_once(_SHARED."pdf_tools.php");
 
 
 if (!isset($analyzeDir))    die(_ERR." No Directory set.");
@@ -115,8 +116,8 @@ if ($anzDir>0)
            if ((($isDir)||($isPDF)))
            {
                // LOOK IF ALREADY ACTIVE (2 TEIL IST WEGEN PDFS DIRNAME EBENFALLS KEINE CHECKBOX MEHR)
-               if ((((int)abfrage("select count(*) from content where content_root='".$arrDir[$i]."'",$db))>0)||
-                   (((int)abfrage("select count(*) from content where content_root='".dirname($arrDir[$i])."'",$db))>0))
+               if ((((int)abfrage("select count(1) from content where content_root='".$arrDir[$i]."'",$db))>0)||
+                   (((int)abfrage("select count(1) from content where content_root='".dirname($arrDir[$i])."'",$db))>0))
                    icon("green_16.png", "Already under management, disable in management view only...");
                else 
                {
@@ -131,9 +132,8 @@ if ($anzDir>0)
                    }
                    else if ($isPDF) 
                    {
-                       include_once(_SHARED."pdf_tools.php");
                        checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
-                       echo "<br>".getNumPagesInPDF(array($arrDir[$i]))." P.";
+                       echo "<br>".getNumPagesInPDF(array($arrDir[$i]))." p.";
                        
                        // FALLS VORIGES DIR DAS DIESES PDFS WAR DEAKTIVIERE DESSEN VORIGE CHECKBOX WIEDER
                        if (instr($arrDir[$i],$last_listed_dir)) 

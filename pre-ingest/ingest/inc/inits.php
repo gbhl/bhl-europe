@@ -1,13 +1,17 @@
 <?php
-
-/*
- * GLOBAL INITS
- * 
- */
+// ********************************************
+// ** FILE:    INITS.PHP                     **
+// ** PURPOSE: BHLE INGESTION & PREPARATION  **
+// ** DATE:    13.03.2012                    **
+// ** AUTHOR:  ANDREAS MEHRRATH              **
+// ********************************************
 
 // http://at.php.net/manual/de/reserved.variables.argv.php
 
+
+// *******************
 // INITS
+// *******************
 if (_CLI_EXECUTION)                           $menu_nav="selftest";
 else 
     if ((!isset($menu_nav))||($menu_nav=="")) $menu_nav="portal";
@@ -15,9 +19,9 @@ else
 if (!isset($db))    $db=_DB_MAIN;
 
 
-
+// *******************
 // AUSWAHLFELDER DB
-
+// *******************
 $arrEnumCStatus = mysql_enum_array('content','content_status',$db); 
 
 $arrEnumIStatus = mysql_enum_array('ingests','ingest_status',$db);
@@ -25,8 +29,9 @@ $arrEnumIStatus = mysql_enum_array('ingests','ingest_status',$db);
 $arrEnumCTypes  = mysql_enum_array('content','content_type',$db);
 
 
+// *******************
 // CLI JOBS (DEPRECATED)
-
+// *******************
 if ((isset($argv)) && (array_key_exists(1, $argv)))
 {
 	if ($arg[1]=='job_prepare_ingest') $menu_nav='job_prepare_ingest';
@@ -34,13 +39,16 @@ if ((isset($argv)) && (array_key_exists(1, $argv)))
 }
 
 
+// *******************
 // SESSION
-
+// *******************
 if (!_CLI_EXECUTION) include_once(_SHARED."session.php");
 
 
 
+// *******************
 // PROVIDER DETAILS
+// *******************
 if (isset($user_id))
 {
     $arrProvider = get_provider_details($user_id);
@@ -65,19 +73,17 @@ if (isset($user_id))
 
 
 
+// *******************
 // CONTENT VORAB INFOS
+// *******************
 if ((isset($content_id)) && (is_numeric($content_id))) 
 {
-    $krit = " from content where content_id=" . $content_id;
-    
-    // VORAB CONTENT DIR HOLEN
-    $contentDir  = abfrage("select content_root  ".$krit,$db);
-    
-    $contentName = abfrage("select content_name  ".$krit,$db);
-
-    $cPages = (int)abfrage("select content_pages ".$krit,$db);
-    
-    $cType       = abfrage("select content_type  ".$krit,$db);
+    $arrContentDetails = get_content_details($content_id);
+   
+    $contentDir  = $arrContentDetails['content_root'];
+    $contentName = $arrContentDetails['content_name'];
+    $cPages      = $arrContentDetails['content_pages'];
+    $cType       = $arrContentDetails['content_type'];
     
     // GENERATE .AIP DIR
     $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");

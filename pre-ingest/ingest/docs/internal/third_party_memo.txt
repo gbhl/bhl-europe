@@ -3,6 +3,33 @@
 ********************
 
 
+
+
+wir hatten gerade Tech-Call und ich wollte dir ein kurzes Update geben:
+
+- Die aktuelle Version des PI-Tools ist jetzt am Test Server und es wird
+begonnen die ersten Samples durchlaufen zu lassen. Sollten diese in
+Ordnung gehen wird mit dem eigentlichen Ingest begonnen.
+
+- Die Issues #371 und #379 sind daher bis Mittwoch zu beheben. Ab dann
+muss der Content komplett und ordentlich durchlaufen (für Monographien).
+- Der Issue #309 ist bis Donnerstag fertig zu stellen. Danach wird das
+PI Tool sowie der Ingest Teil komplett auf ActiveMQ umgestellt (Ingest
+ist bereits fertig und bereit dafür).
+
+
+----
+Tested with latest version of integration. Here is how to reproduce:
+
+Select an arbitrary content. Add it to ingest list. Run through all steps, finally create the METS output. 
+Open METS output and search for "accessCondition" -> nothing found.
+
+This only happens if you do not save your ingest list at least once, which means 
+the IPR-Statement from the users preferences are not written to the METS by default.
+
+---------------------------------
+
+
 The selected IPR license text must be written to the olef:bibliographicInformation/mods:accessCondition field.
 
 See issue #319 for the original description.
@@ -11,6 +38,188 @@ See http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#accesscond
 
 @chris-sleep
 @lobajuluwa
+
+
+---------------------------------
+
+
+
+
+if so let me know 
+
+the sequence of a pdf (always 1 ?)
+
+currently for pdf sequence = pagenumber
+
+
+maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
+
+
+where 000001 is the extracted page sequence number 
+
+
+
+
+
+
+
+
+PreIngest needs to dispatch a message to Ingest using ActiveMQ.
+
+In order to maintain communication in an easy way a PHP-class for wrapping the communication should be coded.
+
+Requirements:
+- Connect to ActiveMQ
+- Send message to Ingest notifying it of items ready for ingest (pass required information as parameters to function call)
+- Receive messages from Ingest confirming the successfull ingest (by returning the GUID)
+
+See issue #309 for reference!
+
+@ZhengLIAtos: Please implement such a class in PHP so that Andreas can easily integrate it into the PI-application.
+
+@lobajuluwa 
+@chris-sleep 
+@mehrrath 
+
+Sending Request…
+ PreIngest needs to dispatch a message to Ingest using ActiveMQ.
+
+In order to maintain communication in an easy way a PHP-class for wrapping the communication should be coded.
+
+Requirements:
+- Connect to ActiveMQ
+- Send message to Ingest notifying it of items ready for ingest (pass required information as parameters to function call)
+- Receive messages from Ingest confirming the successfull ingest (by returning the GUID)
+
+See issue #309 for reference!
+
+@ZhengLIAtos: Please implement such a class in PHP so that Andreas can easily integrate it into the PI-application.
+
+@lobajuluwa 
+@chris-sleep 
+@mehrrath  CancelUpdate Issue 
+2 participants
+  
+People who have participated in this issue wkollernhm  ZhengLIAtos 
+ 
+ZhengLIAtos commented 
+19 days ago 
+There was a problem with your request, please try again
+
+EditDeleteHere is a stomp-client from stomp,
+http://stomp.fusesource.org/release/php/1.0/stomp-php-1.0.0.tar.gz, let's
+define the message body and test it after the installation of ActiveMQ +
+Stomp.
+
+As discussed before, here is a list of details of messages from MQ:
+
+   1. Message is sent via queue, but not topic.
+   2. From Pre-ingest. Message contains file URI pointing to the location
+   of AIP and GUID of the item to be ingested.
+   3. From Ingest. Message contains the status (SUCCESS, FAIL) and the
+   tracestack of exception
+
+
+2012/2/22 wkollernhm <
+reply@reply.github.comShow quoted text
+
+
+
+
+Sending Request…
+Here is a stomp-client from stomp,
+http://stomp.fusesource.org/release/php/1.0/stomp-php-1.0.0.tar.gz, let's
+define the message body and test it after the installation of ActiveMQ +
+Stomp.
+
+As discussed before, here is a list of details of messages from MQ:
+
+   1. Message is sent via queue, but not topic.
+   2. From Pre-ingest. Message contains file URI pointing to the location
+   of AIP and GUID of the item to be ingested.
+   3. From Ingest. Message contains the status (SUCCESS, FAIL) and the
+   tracestack of exception
+
+
+2012/2/22 wkollernhm <
+reply@reply.github.com
+>
+
+> PreIngest needs to dispatch a message to Ingest using ActiveMQ.
+>
+> In order to maintain communication in an easy way a PHP-class for wrapping
+> the communication should be coded.
+>
+> Requirements:
+> - Connect to ActiveMQ
+> - Send message to Ingest notifying it of items ready for ingest (pass
+> required information as parameters to function call)
+> - Receive messages from Ingest confirming the successfull ingest (by
+> returning the GUID)
+>
+> See issue #309 for reference!
+>
+> @ZhengLIAtos: Please implement such a class in PHP so that Andreas can
+> easily integrate it into the PI-application.
+>
+> @lobajuluwa
+> @chris-sleep
+> @mehrrath
+>
+> ---
+> Reply to this email directly or view it on GitHub:
+> https://github.com/bhle/bhle/issues/322
+> CancelUpdate Comment 
+ 
+wkollernhm commented 
+19 days ago 
+There was a problem with your request, please try again
+
+EditDelete
+Please wrap this functionality in a PHP class! Andreas should just need to call a simple PHP-Method for sending a new message to Ingest and call another function for receiving a message from Ingest!
+
+Sending Request…
+Please wrap this functionality in a PHP class! Andreas should just need to call a simple PHP-Method for sending a new message to Ingest and call another function for receiving a message from Ingest! CancelUpdate Comment 
+ 
+ZhengLIAtos commented 
+14 days ago 
+There was a problem with your request, please try again
+
+EditDelete
+Done.
+
+Please take a look at int1 dev/stomp-client/MessageClient.php
+there are send.php and receive.php simulating messaging between Pre-ingest and Ingest.
+
+Sending Request…
+Done.
+
+Please take a look at int1 dev/stomp-client/MessageClient.php
+there are send.php and receive.php simulating messaging between Pre-ingest and Ingest. CancelUpdate Comment 
+Closed  ZhengLIAtos closed the issue 14 days ago 
+
+ 
+wkollernhm referenced this issue 
+5 days ago 
+Open Issue #309: Replace PI notification text file to ActiveMQ message 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

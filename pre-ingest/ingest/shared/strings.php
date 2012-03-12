@@ -59,6 +59,9 @@ function instr($haystack,$needle,$ignoreCase=false,$oneMatchOnly=false)
             else { 
                 if ((instr($haystack,$needle[$i],$ignoreCase,$oneMatchOnly))) return true;   } 
         }
+        
+        if (!$oneMatchOnly) return true;   // HAETTE SCHON FALSE ZURUECKGEGEBEN
+        else                return false;  // WENN EINE MATCH GEFUNDEN WAERE, HATTE SCHON TRUE ZURUECKGEGEBEN
     }
     else
     {
@@ -75,6 +78,7 @@ function instr($haystack,$needle,$ignoreCase=false,$oneMatchOnly=false)
 
         return false;
     }
+    
 }
 
 
@@ -85,7 +89,7 @@ function instr($haystack,$needle,$ignoreCase=false,$oneMatchOnly=false)
  * @desc Gibt Anzahl numerischer Zeichen im Uebergabestring zurueck.
 */
 function anz_numeric($myString)
-// **************************
+// ****************************
 {
     // URSPRUNGSLAENGE ABZUEGLICH LAENGE OHNE NUMERISCHE ZEICHEN IST ANZAHL DIESER
     $len1 = strlen($myString);
