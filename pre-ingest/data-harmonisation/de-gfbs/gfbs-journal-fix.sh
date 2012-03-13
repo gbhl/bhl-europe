@@ -18,6 +18,10 @@ if [ $3 = 'clear' ]; then
 	CLEAR_TARGET=1
 fi
 
+if [ -z $BHL_UTILS ]; then
+	echo "environment variabel BHL_UTILS not set, see https://github.com/bhle/bhle/tree/master/pre-ingest/data-harmonisation"
+fi
+
 
 IN_FOLDER=$1
 OUT_ROOT=$2
@@ -111,12 +115,23 @@ do
 
 	 	# turn FIRST_PAGE string into plain number
 		# eg. 244.e1 => 244 AND ii => 9999
-		ARTICLE_ID=(`echo $FIRST_PAGE | sed -e "s,^\([0-9i]*\)\(.*$\),\1," -e "s,i,99,g"`)
+		ARTICLE_ID=(`echo $FIRST_PAGE | sed -e "s,^\([0-9i]*\)\(.*$\),\1,"`)
+		
+		# check for roman numerical
+		# the awk script returns 0 if it was an arabic number
+		# roman numbers are beeing used at the end of the jounal
+		# so add 100000 to the roman number value to move it at the end
+		ARTICLE_ID_CONVERTED=(`echo $ARTICLE_ID |  awk -f $BHL_UTILS/roman_arabic.awk`)
+		if [ $ARTICLE_ID_CONVERTED  -gt 0 ]; then
+			ARTICLE_ID=$[100000+$ARTICLE_ID_CONVERTED]
+	 	fi
+
 		ARTICLE_ID=(`printf %06d $ARTICLE_ID`)
-	 	
+
+		
 	 	# create new folder name
 	 	NEW_FOLDER_NAME="${SERIAL_ID}_${ARTICLE_ID}"
-	 	echo "  renaming article folder '$ARTICLE_FOLDER' to $NEW_FOLDER_NAME"
+	 	echo "  new folder name: $NEW_FOLDER_NAME"
 	 	#mv $ARTICLE_FOLDER $NEW_FOLDER_NAME
 	done
 	cd $WORKDIR
