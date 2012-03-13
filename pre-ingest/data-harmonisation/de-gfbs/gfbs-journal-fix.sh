@@ -14,7 +14,7 @@ fi
 if [ -z $2 ]; then
 	echo "Missing required 2nd parameter: <target-root-folder>"
 fi
-if [ $3 == 'clear' ]; then
+if [ $3 = 'clear' ]; then
 	CLEAR_TARGET=1
 fi
 
@@ -29,7 +29,7 @@ OUT_ROOT=$2
 #	$1 : output file
 #
 postprocess-xml() {
-	tidy -xml --quiet yes --show-warnings no $1 | sed -e "s/ce://g" -e "s/sb://g" -e "s/xlink://g" -e "s/mml://g" >	$2
+	tidy -xml --quiet yes --show-warnings no $1 | sed -e "s/ce://g" -e "s/sb://g" -e "s/xlink://g" -e "s/mml://g" -e "s/tb://g" >	$2
 }
 
 
@@ -106,7 +106,7 @@ do
 	 	echo "  PII: $PII"
 
 		# find first page in isuue metadata
-	 	XPATH_QUERY="//include-item/pii[text() = \"$PII\"]/following-sibling::pages/first-page"
+	 	XPATH_QUERY="//include-item/pii[text() = '$PII']/following-sibling::pages/first-page"
 	 	FIRST_PAGE=(`xmlstarlet sel -t -v "$XPATH_QUERY" /tmp/gfbs-issue.xml`)
 	 	echo "  FIRST_PAGE: $FIRST_PAGE"
 
