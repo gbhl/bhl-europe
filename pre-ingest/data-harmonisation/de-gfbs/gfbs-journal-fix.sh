@@ -2,12 +2,10 @@
 
 ####################################################
 #
-# Configuration
-#
-#
-
-
-#
+# Harmonization script for the GFBS uploads 
+# which is suitable for the old issue folder structure,
+# that is all folders named like  v1i1 etc.
+#  
 ####################################################
 
 if [ -z $1 ]; then
