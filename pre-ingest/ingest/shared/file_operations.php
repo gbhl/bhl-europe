@@ -267,13 +267,13 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
  * @return  boolean true|false
  *
  */
-function file_content_exists($myFile,$myContent,$ignoreCase=false,$oneMatchOnly=false)
-// ***********************************************************************************
+function file_content_exists($myFile,$myContent,$ignoreCase=false,$oneMatchOnly=false,$maxlen=null)
+// ************************************************************************************************
 {
-    if (is_readable($myFile))   $fContent = file_get_contents($myFile);
-    else return false;
+    if (!is_readable($myFile)) return false;
     
-    return instr($fContent,$myContent,$ignoreCase,$oneMatchOnly);
+    return instr(file_get_contents($myFile, false, null, -1, $maxlen),
+            $myContent,$ignoreCase,$oneMatchOnly);
 }
 
 
