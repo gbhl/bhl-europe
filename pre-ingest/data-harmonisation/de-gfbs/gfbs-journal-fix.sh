@@ -37,7 +37,6 @@ postprocess-xml() {
 # STEP 1: rename the IN_FOLDER /eg:./journal) to reflect the serial ID 
 #  * SerialID : <ce:pii>S1439-6092.*</ce:pii>
 #
-
 IFS_TMP=$IFS
 IFS='
 '
