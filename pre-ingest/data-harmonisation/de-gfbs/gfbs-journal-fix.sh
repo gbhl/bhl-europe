@@ -114,8 +114,8 @@ do
 	 	echo "  FIRST_PAGE: $FIRST_PAGE"
 
 	 	# turn FIRST_PAGE string into plain number
-		# eg. 244.e1 => 244 AND ii => 9999
-		ARTICLE_ID=(`echo $FIRST_PAGE | sed -e "s,^\([0-9i]*\)\(.*$\),\1,"`)
+		# eg. 244.e1 => 244
+		ARTICLE_ID=(`echo $FIRST_PAGE | sed -e "s,^\([^\.]*\)\(.*$\),\1,"`)
 		
 		# check for roman numerical
 		# the awk script returns 0 if it was an arabic number
@@ -123,6 +123,7 @@ do
 		# so add 100000 to the roman number value to move it at the end
 		ARTICLE_ID_CONVERTED=(`echo $ARTICLE_ID |  awk -f $BHL_UTILS/roman_arabic.awk`)
 		if [ $ARTICLE_ID_CONVERTED  -gt 0 ]; then
+			echo "  has roman page number: $ARTICLE_ID_CONVERTED"
 			ARTICLE_ID=$[100000+$ARTICLE_ID_CONVERTED]
 	 	fi
 
