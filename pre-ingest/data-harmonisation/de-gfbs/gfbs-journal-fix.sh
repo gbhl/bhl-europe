@@ -82,7 +82,7 @@ echo "WORKDIR: $WORKDIR"
 IFS_TMP=$IFS
 IFS='
 '
-ISSUE_FOLDERS_OLD=(`find -maxdepth 1  -type d -regex "\./v[0-9]i.*"`)
+ISSUE_FOLDERS_OLD=(`find -maxdepth 1  -type d -regex "\./v[0-9][is].*"`)
 VOLUME_FOLDERS_NEW=(`find -maxdepth 1  -type d -regex "\./VOL=.*"`)
 IFS=$IFS_TMP
 
@@ -94,7 +94,7 @@ IFS=$IFS_TMP
 for ISSUE_FOLDER in "${ISSUE_FOLDERS_OLD[@]}"
 do
 	#create volume level folder if it is missing
-	VOLUME_FOLDER=(`echo $ISSUE_FOLDER | sed -e "s,\(v[0-9]*\)\(i.*\),\1,g" -e "s,v,VOL=,"`)
+	VOLUME_FOLDER=(`echo $ISSUE_FOLDER | sed -e "s,\(v[0-9]*\)\([is].*\),\1,g" -e "s,v,VOL=,"`)
 	if [ ! -d $VOLUME_FOLDER ]; then
 		mkdir $VOLUME_FOLDER
 	fi
@@ -167,7 +167,7 @@ do
 	for ISSUE_FOLDER in "${ISSUE_FOLDERS[@]}"
 	do
 		cd $ISSUE_FOLDER
-		
+
 		IFS_TMP=$IFS
 		IFS='
 		'
