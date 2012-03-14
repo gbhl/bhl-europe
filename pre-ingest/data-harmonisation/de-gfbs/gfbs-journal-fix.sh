@@ -13,7 +13,7 @@ fi
 if [ -z $2 ]; then
 	echo "Missing required 2nd parameter: <target-root-folder>"
 fi
-if [ $3 = 'clear' ]; then
+if [ -n $3 -a $3 == 'clear' ]; then
 	CLEAR_TARGET=1
 fi
 
@@ -167,10 +167,7 @@ do
 	for ISSUE_FOLDER in "${ISSUE_FOLDERS[@]}"
 	do
 		cd $ISSUE_FOLDER
-		# fix invalid xml
-		postprocess-xml "$WORKDIR/$ISSUE_FOLDER/issue.xml" "/tmp/gfbs-issue.xml"
-
-		set -x
+		
 		IFS_TMP=$IFS
 		IFS='
 		'
