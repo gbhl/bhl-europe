@@ -128,7 +128,6 @@ do
 	 	fi
 
 		ARTICLE_ID=(`printf %06d $ARTICLE_ID`)
-
 		
 	 	# create new folder name
 	 	NEW_FOLDER_NAME="${SERIAL_ID}_${ARTICLE_ID}"
