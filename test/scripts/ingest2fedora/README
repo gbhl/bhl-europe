@@ -1,7 +1,0 @@
-This jar extract the information in mets files and ingest them into Fedora Repository
-
-java -jar bookingester.jar [baseURL] [username] [password] [testmode] [/path/to/files]
-
-baseURL - base URL for fedora
-testmode - (Optional) turn the program to run only once and ingest all mets files in [/path/to/files]
-/path/to/files - (Optional) folder of mets files
