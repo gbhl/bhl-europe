@@ -3,8 +3,7 @@
 ####################################################
 #
 # Harmonization script for the GFBS uploads 
-# which is suitable for the old issue folder structure,
-# that is all folders named like  v1i1 etc.
+# which is suitable for the old and new folder structure,
 #  
 ####################################################
 
@@ -74,20 +73,32 @@ WORKDIR=(`pwd`)
 echo "WORKDIR: $WORKDIR"
 
 #
-# STEP 3: split article level folder names into InternalID_SequenceNumber use from articel 
-#         level metadatfile for getting information
-#   * InternalID: = $SERIAL_ID
-#   * SequenceNumber: page number  :<sb:pages><sb:first-page>(/d*)</sb:first-page	
+# STEP 3: split article level folder names into InternalID_SequenceNumber 
 #
-#	HINT: pdf 2 tiff: http://stackoverflow.com/questions/6002261/pdf-to-tiff-imagemagick-problem
-#
+# HINT: pdf 2 tiff: http://stackoverflow.com/questions/6002261/pdf-to-tiff-imagemagick-problem
+ 
+# we need to process the 'old' and 'new' folder structure differently 
+# => STEP 3.A and STEP 3.B
 IFS_TMP=$IFS
 IFS='
 '
-ISSUE_FOLDERS=(`find -maxdepth 1  -type d -regex "\./v[^\.=]*"`)
+ISSUE_FOLDERS_OLD=(`find -maxdepth 1  -type d -regex "\./v[0-9]i.*"`)
+VOLUME_FOLDERS_NEW=(`find -maxdepth 1  -type d -regex "\./VOL=.*"`)
 IFS=$IFS_TMP
-for ISSUE_FOLDER in "${ISSUE_FOLDERS[@]}"
+
+# STEP 3.A: process "old" folder structure
+#   * InternalID: = $SERIAL_ID
+#   * SequenceNumber: page number  :<sb:pages><sb:first-page>(/d*)</sb:first-page	
+#
+#
+for ISSUE_FOLDER in "${ISSUE_FOLDERS_OLD[@]}"
 do
+	#create volume level folder if it is missing
+	VOLUME_FOLDER=(`echo $ISSUE_FOLDER | sed -e "s,\(v[0-9]*\)\(i.*\),\1,g" -e "s,v,VOL=,"`)
+	if [ ! -d $VOLUME_FOLDER ]; then
+		mkdir $VOLUME_FOLDER
+	fi
+
 	cd $ISSUE_FOLDER
 	# fix invalid xml
 	postprocess-xml "$WORKDIR/$ISSUE_FOLDER/issue.xml" "/tmp/gfbs-issue.xml"
@@ -132,9 +143,49 @@ do
 		
 	 	# create new folder name
 	 	NEW_FOLDER_NAME="${SERIAL_ID}_${ARTICLE_ID}"
-	 	echo "  new folder name: $NEW_FOLDER_NAME"
-	 	#mv $ARTICLE_FOLDER $NEW_FOLDER_NAME
+	 	echo "  new folder name: $ARTICLE_FOLDER $NEW_FOLDER_NAME"
+	 	cd ..
+	 	mv $ARTICLE_FOLDER $NEW_FOLDER_NAME
 	done
 	cd $WORKDIR
+	echo "  moving new issue folder into volume folder $VOLUME_FOLDER/"
+	mv $ISSUE_FOLDER $VOLUME_FOLDER/
 done
+
+# STEP 3.B: process "new" folder structure
+#   * InternalID: = $SERIAL_ID
+#   * SequenceNumber: page number  :<sb:pages><sb:first-page>(/d*)</sb:first-page	
+#
+#
+for VOLUME_FOLDER in "${VOLUME_FOLDERS_NEW[@]}"
+do
+	cd $VOLUME_FOLDER
+	IFS_TMP=$IFS
+		IFS='
+		'
+		ISSUE_FOLDERS=(`find -maxdepth 1  -type d -regex "\./ISU=[^\.]*"`)
+		IFS=$IFS_TMP
+	for ISSUE_FOLDER in "${ISSUE_FOLDERS[@]}"
+	do
+		cd $ISSUE_FOLDER
+		# fix invalid xml
+		postprocess-xml "$WORKDIR/$ISSUE_FOLDER/issue.xml" "/tmp/gfbs-issue.xml"
+
+		set -x
+		IFS_TMP=$IFS
+		IFS='
+		'
+		ARTICLE_FOLDERS=(`find -maxdepth 1  -type d -regex "\./ART=[^\.]*"`)
+		IFS=$IFS_TMP
+		for ARTICLE_FOLDER in "${ARTICLE_FOLDERS[@]}"
+		do
+			NEW_FOLDER_NAME=(`echo $ARTICLE_FOLDER | sed -e "s,ART=,${SERIAL_ID}_,"`)
+			mv $ARTICLE_FOLDER $NEW_FOLDER_NAME
+		done
+		cd ..
+	done
+	cd ..
+done
+
+
 
