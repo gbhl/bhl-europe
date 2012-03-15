@@ -32,7 +32,70 @@ $nPPM   = count($arrPPM);
 // GENERATE TIFs FROM PPM
 if ($nPPM>0)
 {
-    echo "<h3>PPMs found - going directly to conversion to tif</h3>";
+    // PPM UMBENENNEN NACH KONVENTION !!! PRUEFEN
+    // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.ppm
+    // maas et al 2011 annonaceae index nordic j bot 29 3 257-356_1.ppm
+    
+    echo "<h3>PPMs found - file name convention renaming check invoked</h3>Pages renaming: ";
+    $nRenamed=0;
+    
+    for ($i=0;$i<$nPPM;$i++)
+    {
+        if (instr(basename($arrPPM[$i]),".pdf"))
+        {
+            
+            
+            $newPPMname = str_replace(
+                    array(
+                        "-0000000000",
+                        "-000000000",
+                        "-00000000",
+                        "-0000000",
+                        "-000000",
+                        "-00000",
+                        "-0000",
+                        "-000",
+                        "-00",
+                        "-0"),"_",basename($arrPPM[$i]));
+            
+            $newPPMname = str_replace(
+                    array(".pdf"
+                        ),"",$newPPMname);
+            
+
+            // ********************
+            // WEITERE PDF ANALYSE
+            // ********************
+            // !!! t.b.d. 
+            // GATHERING OF REAL(!) PAGE NUMBER AND PAGE TYPE FROM PDF PROPERTIES
+            
+            $seqNumber  = substr($newPPMname,strrpos($newPPMname,"_")+1);
+            $seqNumber  = str_replace(".ppm","",$seqNumber);
+            
+            $pageNumber = $seqNumber;       // WHEN MISSING IN PPDF METADATA
+            
+            // TYPE UND PAGE NUMBER ANHAENGEN
+            $newPPMname = str_replace(".ppm","_"._DEFAULT_PAGETYPE."_".$pageNumber.".ppm",$newPPMname);
+
+            // NEUEN ABSOLUT PFAD BAUEN
+            $newPPMname = str_replace(basename($arrPPM[$i]),"",$arrPPM[$i]).$newPPMname;            
+
+            if (rename($arrPPM[$i],$newPPMname))
+            {
+                echo $i.",";
+                $nRenamed++;
+            }
+        }
+    }
+    
+    if ($nRenamed>0)
+    {
+        $arrPPM = getContentFiles($contentDir, 'single_suffix', true,'.ppm');
+        $nPPM   = count($arrPPM);
+    }
+    
+    echo "<h3>PPMs checked, now going directly to conversion to TIF</h3>";
+    
     include("images2tiff.php");
 }
 // GENERATE PPM

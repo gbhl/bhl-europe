@@ -57,7 +57,7 @@ function instr($haystack,$needle,$ignoreCase=false,$oneMatchOnly=false)
             
             // ONE PARTLY MATCH ENOUGH
             else { 
-                if ((instr($haystack,$needle[$i],$ignoreCase,$oneMatchOnly))) return true;   } 
+                if ( (instr($haystack,$needle[$i],$ignoreCase,$oneMatchOnly))) return true;  } 
         }
         
         if (!$oneMatchOnly) return true;   // HAETTE SCHON FALSE ZURUECKGEGEBEN
@@ -70,7 +70,7 @@ function instr($haystack,$needle,$ignoreCase=false,$oneMatchOnly=false)
         if ( (strlen($haystack)>0) and (strlen($needle)>0) )
         {
             if ($ignoreCase)	$pos = stripos($haystack, $needle);
-            else		$pos = strpos($haystack, $needle);
+            else		$pos =  strpos($haystack, $needle);
 
             if ($pos === false)  return false;
             else                 return true;
