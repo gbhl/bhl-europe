@@ -278,4 +278,18 @@ function file_content_exists($myFile,$myContent,$ignoreCase=false,$oneMatchOnly=
 
 
 
+// ***************************************
+function file_remove_extension($file_name)
+// ***************************************
+{
+     $pos1 = strrpos($file_name,".");
+     
+     if ($pos1!==false) $file_name = substr($file_name,0,$pos1);    // LETZTE EXTENSION WEG
+     
+     return $file_name;
+}
+
+
+
+
 ?>

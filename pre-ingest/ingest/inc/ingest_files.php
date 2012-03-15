@@ -124,4 +124,202 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
 }
 
 
+
+// *******************************
+function sortShortFirst($arrToSort)
+// *******************************
+// EXAMPLE SORT SUPPORT:
+// maas_et_al_2011_annonaceae_index_nordic.pdf_100_PDF_100.txt
+// maas_et_al_2011_annonaceae_index_nordic.pdf_1_PDF_1.txt
+/* 
+ * example: 
+$arrToSort = array(
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_50_PDF_11.txt',
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_200_PDF_1.txt',
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_100_PDF_100.txt',
+    'maas_et_al_2011_annonaceae_index_nordic.pdf_1_PDF_1.txt'
+    
+);
+
+echo_pre( sortShortFirst($arrToSort));
+
+*/
+{
+    $arrSorted = $arrToSort;
+    $nElements = count($arrSorted);
+    
+    sort($arrSorted);
+    
+    // BUILD MULTI ARRAY WITH LENGTH AS INDEX
+    
+    $arrTemp = array();
+    $minLen  = 0;
+    $maxLen  = 0;
+    
+    for ($i=0;$i<$nElements;$i++)
+    {
+        $curLen = strlen($arrSorted[$i]);
+
+        $arrTemp[($curLen)][] = $arrSorted[$i];
+
+        if ($minLen>$curLen)    $minLen = $curLen;
+        if ($maxLen<$curLen)    $maxLen = $curLen;
+    }
+    
+    // ES DARF NICHT MEHR SORT V. WERDEN, DENN SORTIERUNG KILLT KEYS!
+    
+    // FALLS GLEICHLANG, RETURNIERE NORMAL SORTIERTEN EINGANGSARRAY
+    if ($maxLen==$minLen)   return $arrSorted;
+
+    reset($arrTemp);
+    
+    // UNTERSCHIEDL. LAENGEN -> KURZE ZUERST
+    // SORT INDIVIDUAL LENGTH ARRAYS AND ADD ALL TOGETHER WITH SHORTEST FIRST
+    $arrReturn = array();
+    
+    for ($curLen=$minLen;$curLen<=$maxLen;$curLen++)
+    {
+        if (array_key_exists($curLen, $arrTemp))
+        {
+            sort($arrTemp[$curLen]);               // IM AKTUELLEN LAENGE ARRAY SORTIEREN
+            $arrReturn = array_merge($arrReturn,$arrTemp[$curLen]);
+        }
+    }
+    
+    // echo_pre($arrReturn);
+    
+    return $arrReturn;
+}
+
+
+
+
+
+// ****************************************************************************
+function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
+// ****************************************************************************
+// 
+// AB ELEMENT 3 SIND ALLES PAGE NUMBERS !
+// $part .... prefix[0], sequence[1], type[2], pagenumbers[3] .... [n]
+// 
+// NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
+// 
+// maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
+// ODER
+// maas et al 2011 annonaceae index nordic j bot 29 3 257-356_1_PAGE_1.tif
+// HINT:      
+// ALL INFORMATION EXCEPT ID AND SEQUENCE IN THE FILENAME ARE OPTIONAL.
+{
+     include_once(_SHARED."file_operations.php");
+     
+     $arrReturn = array();
+     $minParts  = 2;    
+     $optParts  = 4;
+     
+     $file_name = file_remove_extension(basename($file_name));
+
+     $arrReturn = explode("_",$file_name);
+     $nArr      = count($arrReturn);     
+     
+     // FEHLERBEHANDLUNG
+     if (($nArr<$optParts)&&($errorTolerant))
+     {
+        if ($nArr==2)      $arrReturn = array_merge($arrReturn,array(_DEFAULT_PAGETYPE,$curOrderNumber));
+        else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curOrderNumber));
+     }
+
+     // PREFIX | SEQUENCE | TYPE | PAGENUMBER   (SEQUENCE=PAGENUMBER)
+
+     if (count($arrReturn) < $minParts) 
+     {
+        echo _ERR."Filename convention broken! Rename your page files according to<br>\nFile 
+            Submission Guidelines (FSG: PREFIX | SEQUENCE | TYPE | PAGENUMBER)!\n;";
+        return false;
+     }
+
+    return $arrReturn;
+}
+
+
+
+
+// **************************************************
+function sortPageFiles($arrToSort,$sortBy='sequence')
+// **************************************************
+// SORTIERT IM PAGENUMBER MODUS NACH SEQUENCE WENN PAGE NUMBERS FEHLEN
+{
+    if ($sortBy=='pagenumber')  $sortBy = 3;    // pagenumber sort
+    else                        $sortBy = 2;    // sequence sort
+    
+    $sortShortFirst = false;
+
+    if (is_array($arrToSort))
+    {
+        $nElements = count($arrToSort);
+        
+        if ($nElements>1)
+        {
+            
+            // ZUSAMMENSETZUNG MIT STICHPROBE EVALUIEREN
+            $arrFileParts = getPageInfoFromFile($arrToSort[0]);
+
+            // PAGE NUMBER OD. SEQUENCE INFO VORHANDEN
+            if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))   
+            {
+                if ($sortBy==2) $sortShortFirst = true;
+                else 
+                {
+                    $sortBy = $sortBy-1;    // ALTERNATIV AUF SEQUENCE ZURUECKSPRINGEN
+                    
+                    if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
+                    {
+                        $sortShortFirst = true;
+                    }
+                }
+            }
+
+
+            // NUR SORTSHORTFIRST MOEGLICH
+            if ($sortShortFirst)    return sortShortFirst($arrToSort);
+            else
+            {
+                $arrSortedPages = array();                
+                $arrSortSeqence = array();
+                // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
+                // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
+
+                // SORTIEREN NACH SORTBY SPALTE
+                
+                // MIT BETREFFENDER SPALTE GEINDEXTER ARRAY AUFBAU
+                for ($i=0;$i<$nElements;$i++)
+                {
+                    $arrCur = getPageInfoFromFile($arrToSort[$i]);
+                    $arrSortSeqence[] = $arrCur[$sortBy];
+                }
+
+                sort($arrSortSeqence);      // asort ... erh. idx
+
+                // SORTIERTEN ARRAY ERZEUGEN
+                for ($i=0;$i<$nElements;$i++)
+                {
+                    $arrSortedPages[$i] = $arrToSort[$i];
+                    
+                    $arrCur = getPageInfoFromFile($arrToSort[$i]);
+                }
+                
+                
+                // SORTIEREN DES NEUEN ARRAYS !!!!
+                
+                // hier original array 
+            }
+        }
+        else return $arrToSort;
+        
+    }
+
+    return false;
+}
+
+
+
 ?>
