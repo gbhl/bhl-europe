@@ -219,11 +219,21 @@ if($sub_action=="reset_ingest")
     
     @unlink(clean_path($destDir."/")._FEDORA_CF_FINISHED);
     @unlink(clean_path($destDir."/")._FEDORA_CF_READY);
-    
-    // !!! ALLE NICHT OLEF XML AUCH LOESCHEN HIER
-    
-    $endmsg .= "Selected content no longer marked as -ingest ready- and no longer marked as -ingested-.";
+
+    // ALLE NICHT OLEF XML AUCH LOESCHEN HIER
+    $arrXML = getContentFiles($destDir, 'single_suffix', true, '.xml');
+    $nXML   = count($arrXML);
+
+    for ($i=0;$i<$nXML;$i++)
+    {
+        if (!instr($arrXML[$i],_AIP_OLEF_FN,true)) @unlink($arrXML[$i]);
+    }
+
+    if (getContentSteps($content_id)>4) setContentSteps($content_id, 4);
+   
+    $endmsg .= "Selected content no longer -ingest ready- or in state -ingested-. Selected content METS dropped too!";
 }
+
 
 
 ?>

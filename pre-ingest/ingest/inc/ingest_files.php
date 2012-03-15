@@ -246,10 +246,11 @@ function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
 // **************************************************
 function sortPageFiles($arrToSort,$sortBy='sequence')
 // **************************************************
+// SORTIERT FILES DEFAULT NACH SEQUENCE NUMMER
 // SORTIERT IM PAGENUMBER MODUS NACH SEQUENCE WENN PAGE NUMBERS FEHLEN
 {
-    if ($sortBy=='pagenumber')  $sortBy = 3;    // pagenumber sort
-    else                        $sortBy = 2;    // sequence sort
+    if ($sortBy=='pagenumber')  $sortBy = 3;    // pagenumber sort index
+    else                        $sortBy = 2;    // sequence sort index
     
     $sortShortFirst = false;
 
@@ -259,18 +260,17 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
         
         if ($nElements>1)
         {
-            
             // ZUSAMMENSETZUNG MIT STICHPROBE EVALUIEREN
             $arrFileParts = getPageInfoFromFile($arrToSort[0]);
 
             // PAGE NUMBER OD. SEQUENCE INFO VORHANDEN
-            if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))   
+            if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
             {
                 if ($sortBy==2) $sortShortFirst = true;
-                else 
+                else
                 {
                     $sortBy = $sortBy-1;    // ALTERNATIV AUF SEQUENCE ZURUECKSPRINGEN
-                    
+
                     if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
                     {
                         $sortShortFirst = true;
@@ -278,39 +278,34 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                 }
             }
 
-
             // NUR SORTSHORTFIRST MOEGLICH
             if ($sortShortFirst)    return sortShortFirst($arrToSort);
             else
             {
-                $arrSortedPages = array();                
-                $arrSortSeqence = array();
+                // OPTIMALE SORTIERUNG NACH SPALTE MOEGLICH
                 // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
                 // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
+                $arrSortable = array();
 
-                // SORTIEREN NACH SORTBY SPALTE
-                
                 // MIT BETREFFENDER SPALTE GEINDEXTER ARRAY AUFBAU
                 for ($i=0;$i<$nElements;$i++)
                 {
-                    $arrCur = getPageInfoFromFile($arrToSort[$i]);
-                    $arrSortSeqence[] = $arrCur[$sortBy];
+                    $partsCur = getPageInfoFromFile();
+                    $arrSortable[($partsCur[$sortBy])] = $arrToSort[$i];
                 }
 
-                sort($arrSortSeqence);      // asort ... erh. idx
-
-                // SORTIERTEN ARRAY ERZEUGEN
-                for ($i=0;$i<$nElements;$i++)
+                ksort($arrSortable);
+                reset($arrSortable);
+                
+                $arrSorted = array();
+                
+                // KEYS DES SORTIERTEN ARRAYS WIEDER VON 0...N AUFBAUEN
+                while (list($key, $val) = each($arrSortable)) 
                 {
-                    $arrSortedPages[$i] = $arrToSort[$i];
-                    
-                    $arrCur = getPageInfoFromFile($arrToSort[$i]);
+                    $arrSorted[] = $val;
                 }
                 
-                
-                // SORTIEREN DES NEUEN ARRAYS !!!!
-                
-                // hier original array 
+                return $arrSorted;
             }
         }
         else return $arrToSort;

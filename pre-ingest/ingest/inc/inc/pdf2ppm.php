@@ -32,7 +32,6 @@ $nPPM   = count($arrPPM);
 // GENERATE TIFs FROM PPM
 if ($nPPM>0)
 {
-    // PPM UMBENENNEN NACH KONVENTION !!! PRUEFEN
     // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.ppm
     // maas et al 2011 annonaceae index nordic j bot 29 3 257-356_1.ppm
     
@@ -43,8 +42,6 @@ if ($nPPM>0)
     {
         if (instr(basename($arrPPM[$i]),".pdf"))
         {
-            
-            
             $newPPMname = str_replace(
                     array(
                         "-0000000000",
@@ -61,19 +58,17 @@ if ($nPPM>0)
             $newPPMname = str_replace(
                     array(".pdf"
                         ),"",$newPPMname);
-            
 
-            // ********************
-            // WEITERE PDF ANALYSE
-            // ********************
-            // !!! t.b.d. 
+            // **************************
+            //   WEITERE PDF ANALYSE !!!
+            // **************************
             // GATHERING OF REAL(!) PAGE NUMBER AND PAGE TYPE FROM PDF PROPERTIES
             
             $seqNumber  = substr($newPPMname,strrpos($newPPMname,"_")+1);
             $seqNumber  = str_replace(".ppm","",$seqNumber);
-            
+
             $pageNumber = $seqNumber;       // WHEN MISSING IN PPDF METADATA
-            
+
             // TYPE UND PAGE NUMBER ANHAENGEN
             $newPPMname = str_replace(".ppm","_"._DEFAULT_PAGETYPE."_".$pageNumber.".ppm",$newPPMname);
 
