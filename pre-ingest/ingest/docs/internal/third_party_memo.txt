@@ -3,19 +3,6 @@
 ********************
 
 
-wir hatten gerade Tech-Call und ich wollte dir ein kurzes Update geben:
-
-- Die aktuelle Version des PI-Tools ist jetzt am Test Server und es wird
-begonnen die ersten Samples durchlaufen zu lassen. Sollten diese in
-Ordnung gehen wird mit dem eigentlichen Ingest begonnen.
-
-- Die Issues #371 und #379 sind daher bis Mittwoch zu beheben. Ab dann
-muss der Content komplett und ordentlich durchlaufen (für Monographien).
-- Der Issue #309 ist bis Donnerstag fertig zu stellen. Danach wird das
-PI Tool sowie der Ingest Teil komplett auf ActiveMQ umgestellt (Ingest
-ist bereits fertig und bereit dafür).
-
-
 ----
 Tested with latest version of integration. Here is how to reproduce:
 
