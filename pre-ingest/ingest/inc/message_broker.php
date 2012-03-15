@@ -77,23 +77,6 @@ function test_mb()
 
 /*
  
-Hi Andy,
-
-Actually, you don't need to maintain the message queue on your side, because ActiveMQ 
- * stores all un-read message and that's the reason why we choose a message queue but 
- * not a message topic. On the other hand, Ingest Tool only provides details of each 
- * batch ingest after each batch job finishes, so there is no RUNNING status that 
- * Preingest can receive.
-
-
-There are several suggestions and corrections
-1. Please move the stomp-client folder (except examples) into your project.
-2.�Apologies, I missed the GUID field in the ingest's response. Therefore, the 
- * response (in structure of Map) should include GUID, STATUS and EXCEPTIONS (optional)
-3. Regularly receive responses (every 5 minutes) from ActiveMQ and update the 
- * status of the corresponding items in Preingest (I presume that all status are stored 
- * in database), but not to check the status on its own initiative.
-
 
   
  */
