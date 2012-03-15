@@ -32,14 +32,14 @@ function mb_send_ready($content_guid,$content_aip)
     "URI": $uri
     */
 
-    $messageHelper->informIngest($content_guid, "file://".$content_aip);
+    return $messageHelper->informIngest($content_guid, "file://".$content_aip);
 }
 
 
 // ***********************************************
 // CHECK INFORMATION FROM INGEST
 // ***********************************************
-function check_state($content_guid)
+function check_state($content_guid="")
 // ***********************************************
 {
     $messageHelper = new MessageHelper(_MB_URL);
@@ -56,7 +56,10 @@ function check_state($content_guid)
     */
     $msg = $messageHelper->receive();
     
-    // print_r($msg->map);
+    print_r($msg->map);
+    
+    return $msg;
+    
     // Following process after receiving reports from Ingest Tool...
 }
 
@@ -68,16 +71,21 @@ function check_state($content_guid)
 function test_mb()
 // ***********************************************
 {
-
-    // t.b.d.
-
+    echo mb_send_ready("test-guid-123","/dev/null");
+    
+    nl(2);
+    
+    sleep(10);
+    
+    echo_pre(check_state());
 }
 
 
 
-/*
- 
 
-  
- */
+// TEST
+if ((isset($debug))&&($debug==1))   test_mb();
+    
+    
+    
 ?>

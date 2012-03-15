@@ -92,6 +92,11 @@ switch($menu_nav)
         include_once("inc/step_kernel.php");
         break;
 
+    case "test_mb":
+        $debug = 1;
+        include_once("inc/message_broker.php");
+        break;
+
  /*   case "job_prepare_ingest":
         include_once("inc/job_prepare_ingest.php");
         break;
