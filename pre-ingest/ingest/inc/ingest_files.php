@@ -296,20 +296,19 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
 
                 ksort($arrSortable);
                 reset($arrSortable);
-                
+
                 $arrSorted = array();
-                
+
                 // KEYS DES SORTIERTEN ARRAYS WIEDER VON 0...N AUFBAUEN
                 while (list($key, $val) = each($arrSortable)) 
                 {
                     $arrSorted[] = $val;
                 }
-                
+
                 return $arrSorted;
             }
         }
         else return $arrToSort;
-        
     }
 
     return false;
