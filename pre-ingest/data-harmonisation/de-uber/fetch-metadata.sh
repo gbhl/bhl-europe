@@ -1,13 +1,22 @@
 #!/bin/bash -e
 
+NEW_FOLDER="uber-fixed"
+
 AA="oc.hu"
 BB="rlin.de"
 CC="${AA}-be${BB}"
 
+WORKDIR=(`pwd`)
+
+echo "clearing folder $NEW_FOLDER"
+rm -rf $NEW_FOLDER
+mkdir $NEW_FOLDER
 
 find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
-	echo $DIR
-	cd $DIR
+	echo "processing $DIR ..."
+	cp -r $DIR $NEW_FOLDER/$DIR
+
+	cd $NEW_FOLDER/$DIR
 	curl -o metadata.oai_dc https://ed${CC}/OAI-2.0\?verb\=GetRecord\&identifier\=oai:HUBerlin.de:${DIR}\&metadataPrefix\=oai_dc
 	curl -o metadata.oai_ems https://ed${CC}/OAI-2.0\?verb\=GetRecord\&identifier\=oai:HUBerlin.de:${DIR}\&metadataPrefix\=oai_ems
 
@@ -32,5 +41,5 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	rm -f index.*  
 	rm -f robots.txt
 	
-	cd ..
+	cd $WORKDIR
 done
