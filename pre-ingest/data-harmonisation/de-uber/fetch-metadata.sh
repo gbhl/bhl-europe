@@ -21,15 +21,16 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	#
 	wget --no-directories --no-parent -r "${BASE_URL}work/"
 	# clean up
-	find -name "index.*" | xargs rm 
-	rm robots.txt
+	rm -f index.*
+	rm -f robots.txt
 
 	#
 	# download tiffs
 	#
-	#wget --no-directories --no-parent -r "${BASE_URL}tif/"
+	wget --no-directories --no-parent -r "${BASE_URL}tif/"
 	# clean up
-	find -name "index.*" | xargs rm 
-	rm robots.txt
-
+	rm -f index.*  
+	rm -f robots.txt
+	
+	cd ..
 done
