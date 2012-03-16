@@ -36,14 +36,14 @@ echo "<h3>Prepare METS Files for media and its parts</h3><pre>";
 $query    = "select content_pages_tiff from content where content_id=" . 
         $content_id." order by content_pages_tiff asc";
 $arrTiffs = explode(_TRENNER, abfrage($query, $db));
-$arrTiffs = sortShortFirst($arrTiffs);  // IMPORTANT PRE SORT
+$arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
 
 
 // OCR IN CONTENT TABELLE WERDEN BEI IMAGES UND PDFS AKTUELL GEHALTEN DAHER VERWENDBAR
 $query    = "select content_pages_text from content where content_id=" . 
         $content_id." order by content_pages_text asc";
 $arrOCR   = explode(_TRENNER, abfrage($query, $db));
-$arrOCR   = sortShortFirst($arrOCR);   // IMPORTANT PRE SORT
+$arrOCR   = sortPageFiles($arrOCR);   // IMPORTANT PRE SORT
 
 
 $filesGenerated = 0;

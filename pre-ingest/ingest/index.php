@@ -165,6 +165,11 @@ switch($menu_nav)
         die();
         break;
 
+    case "test":
+        include_once("inc/test.php");
+        die();
+        break;
+    
     default:
         include_once("inc/portal.php");
         break;

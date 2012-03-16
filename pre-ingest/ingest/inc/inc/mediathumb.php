@@ -15,10 +15,9 @@ if (!file_exists($thumbIMG))
     if (!$isPDF)
     {
         @mkdir(dirname($thumbIMG));
-        
+
         $arrCF = getContentFiles($line[3], 'pagedata', false);
-        
-        $arrCF = sortShortFirst($arrCF);     // IMPORTANT PRE SORT
+        $arrCF = sortPageFiles($arrCF);     // IMPORTANT PRE SORT
 
         $myCmd = _IMG_MAGICK_CONVERT . " -resize "._THUMB_SIZE." \"" . $arrCF[$thumbPage] . "\" \"" . $thumbIMG."\"";
         $myCmd = exec_prepare($myCmd);

@@ -141,8 +141,6 @@ $arrToSort = array(
     
 );
 
-echo_pre( sortShortFirst($arrToSort));
-
 */
 {
     $arrSorted = $arrToSort;
@@ -196,7 +194,7 @@ echo_pre( sortShortFirst($arrToSort));
 
 
 // ****************************************************************************
-function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
+function getPageInfoFromFile($file_path,$curOrderNumber=1,$errorTolerant=false)
 // ****************************************************************************
 // 
 // AB ELEMENT 3 SIND ALLES PAGE NUMBERS !
@@ -215,12 +213,13 @@ function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
      $arrReturn = array();
      $minParts  = 2;    
      $optParts  = 4;
-     
-     $file_name = file_remove_extension(basename($file_name));
+
+     $file_ext  = file_get_extension(basename($file_path));
+     $file_name = file_remove_extension(basename($file_path));
 
      $arrReturn = explode("_",$file_name);
-     $nArr      = count($arrReturn);     
-     
+     $nArr      = count($arrReturn);
+
      // FEHLERBEHANDLUNG
      if (($nArr<$optParts)&&($errorTolerant))
      {
@@ -232,8 +231,11 @@ function getPageInfoFromFile($file_name,$curOrderNumber=1,$errorTolerant=false)
 
      if (count($arrReturn) < $minParts) 
      {
-        echo _ERR."Filename convention broken! Rename your page files according to<br>\nFile 
-            Submission Guidelines (FSG: PREFIX | SEQUENCE | TYPE | PAGENUMBER)!\n;";
+        echo _ERR."Filename convention broken! Minimal requirements (PREFIX_SEQUENCE nomenclatur) not fulfilled.<br>\n 
+            Please rename your uploaded page files according to the File Submission Guidelines.<br>\n
+            (FSG: <b>PREFIX | SEQUENCE | [TYPE | PAGENUMBER]</b>)!<br>\n
+            Affected File: <font color=red><b>".$file_name.$file_ext."</b></font><br>\n";
+
         return false;
      }
 
@@ -248,10 +250,12 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
 // **************************************************
 // SORTIERT FILES DEFAULT NACH SEQUENCE NUMMER
 // SORTIERT IM PAGENUMBER MODUS NACH SEQUENCE WENN PAGE NUMBERS FEHLEN
+// WENN NOMENKLATUR NICHT STIMMT KOMMT SORTSHORTFIRST() ZUM EINSATZ
+// PRE-SEQ-TYPE-PNO
 {
-    if ($sortBy=='pagenumber')  $sortBy = 3;    // pagenumber sort index
-    else                        $sortBy = 2;    // sequence sort index
-    
+    if ($sortBy=='pagenumber')  $sortBy = 2;    // pagenumber sort index
+    else                        $sortBy = 1;    // sequence sort index
+
     $sortShortFirst = false;
 
     if (is_array($arrToSort))
@@ -263,20 +267,24 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
             // ZUSAMMENSETZUNG MIT STICHPROBE EVALUIEREN
             $arrFileParts = getPageInfoFromFile($arrToSort[0]);
 
-            // PAGE NUMBER OD. SEQUENCE INFO VORHANDEN
-            if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
+            if ($arrFileParts)  // FALLS MINDESTENS MIN. NOMENKLATUR VORH.
             {
-                if ($sortBy==2) $sortShortFirst = true;
-                else
+                // PAGE NUMBER OD. SEQUENCE INFO VORHANDEN
+                if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
                 {
-                    $sortBy = $sortBy-1;    // ALTERNATIV AUF SEQUENCE ZURUECKSPRINGEN
-
-                    if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
+                    if ($sortBy==1) $sortShortFirst = true;
+                    else
                     {
-                        $sortShortFirst = true;
+                        $sortBy = $sortBy-1;    // ALTERNATIV AUF SEQUENCE ZURUECKSPRINGEN
+
+                        if ((!array_key_exists($sortBy,$arrFileParts))||($arrFileParts[$sortBy]==""))
+                        {
+                            $sortShortFirst = true;
+                        }
                     }
                 }
             }
+            else $sortShortFirst = true;
 
             // NUR SORTSHORTFIRST MOEGLICH
             if ($sortShortFirst)    return sortShortFirst($arrToSort);
@@ -290,12 +298,14 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                 // MIT BETREFFENDER SPALTE GEINDEXTER ARRAY AUFBAU
                 for ($i=0;$i<$nElements;$i++)
                 {
-                    $partsCur = getPageInfoFromFile();
+                    $partsCur                          = getPageInfoFromFile($arrToSort[$i]);
                     $arrSortable[($partsCur[$sortBy])] = $arrToSort[$i];
                 }
 
                 ksort($arrSortable);
                 reset($arrSortable);
+                
+                // echo_pre($arrSortable);
 
                 $arrSorted = array();
 

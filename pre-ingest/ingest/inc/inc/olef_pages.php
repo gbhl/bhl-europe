@@ -21,7 +21,7 @@ $arrTaxons = array();
 // TAXONSFILES
 $arrTaxonsF = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT); 
 $nTaxonsF   = count($arrTaxonsF);
-$arrTaxonsF = sortShortFirst($arrTaxonsF);  // IMPORTANT PRE SORT
+$arrTaxonsF = sortPageFiles($arrTaxonsF);  // IMPORTANT PRE SORT
 
 $pattern  = "<nameString>";
 $patternE = "</nameString><namebankID>";    // ONLY TAXONS WITH NAMEBANKID
@@ -112,7 +112,7 @@ reset($arrTaxons);
 
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $nTiffs   = count($arrTiffs);
-$arrTiffs = sortShortFirst($arrTiffs);  // IMPORTANT PRE SORT
+$arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
 
 
 // LOAD OLEF TO DOM
