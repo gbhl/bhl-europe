@@ -17,8 +17,8 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	cp -r $DIR $NEW_FOLDER/$DIR
 
 	cd $NEW_FOLDER/$DIR
-	curl -o metadata.oai_dc https://ed${CC}/OAI-2.0\?verb\=GetRecord\&identifier\=oai:HUBerlin.de:${DIR}\&metadataPrefix\=oai_dc
-	curl -o metadata.oai_ems https://ed${CC}/OAI-2.0\?verb\=GetRecord\&identifier\=oai:HUBerlin.de:${DIR}\&metadataPrefix\=oai_ems
+	curl --progress-bar -o metadata.oai_dc https://ed${CC}/OAI-2.0\?verb\=GetRecord\&identifier\=oai:HUBerlin.de:${DIR}\&metadataPrefix\=oai_dc
+	curl --progress-bar -o metadata.oai_ems https://ed${CC}/OAI-2.0\?verb\=GetRecord\&identifier\=oai:HUBerlin.de:${DIR}\&metadataPrefix\=oai_ems
 
 	#
 	# get base url
@@ -28,7 +28,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	#
 	# download addisional metadata
 	#
-	wget --no-directories --no-parent -r "${BASE_URL}work/"
+	wget --no-directories --no-parent --progress=dot:mega -r "${BASE_URL}work/"
 	# clean up
 	rm -f index.*
 	rm -f robots.txt
@@ -36,7 +36,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	#
 	# download tiffs
 	#
-	wget --no-directories --no-parent -r "${BASE_URL}tif/"
+	wget --no-directories --no-parent --progress=dot:mega -r "${BASE_URL}tif/"
 	# clean up
 	rm -f index.*  
 	rm -f robots.txt
