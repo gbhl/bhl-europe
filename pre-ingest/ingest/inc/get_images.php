@@ -12,7 +12,7 @@ echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIF files from various s
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $nTiffs   = count($arrTiffs);
 
-if ($nTiffs >= $cPages)    echo "All tiff files present - nothing to do!\n";
+if ($nTiffs >= $cPages)    echo "All TIF files present - nothing to do!\n";
 else 
 {   
     if ($isPDF) include("inc/pdf2ppm.php");      // RUFT FALLS PPM EXISTIEREN SELBST IMAGES2TIFF AUF

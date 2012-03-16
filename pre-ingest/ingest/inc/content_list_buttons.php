@@ -118,7 +118,7 @@ if ((file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_FINISHED))||
         <br><ul>
         <li><u><a href='#' ".$command.">Regenerate ingest package (OLEF mods, page METS)...</a></u></li><br>
 	<li><u><a href='"._FEDORA_ADMIN_GUI."' target=_blank>Show Ingest Log on Fedora...</a></u></li><br>
-        <li><u><a href='"._SYSTEM."?menu_nav=ingest_list&sub_action=reset_ingest&content_id=".$line[0]."' target=_blank>Reset AIP to status \"not ingested\" and remove flag \"ready for ingest\"...</a></u><br>
+        <li><u><a href='"._SYSTEM."?menu_nav=ingest_list&sub_action=reset_ingest&content_id=".$line[0]."' target=_blank>Reset AIP to status \"not ingested\", removed flag \"ready for ingest\" and METS files...</a></u><br>
         <font size=1>Enables you to re-prepare steps and/or re-ingest...</font></li><br>
         </ul>
         </div>";

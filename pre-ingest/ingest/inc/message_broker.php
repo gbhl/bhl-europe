@@ -32,14 +32,14 @@ function mb_send_ready($content_guid,$content_aip)
     "URI": $uri
     */
 
-    $messageHelper->informIngest($content_guid, "file://".$content_aip);
+    return $messageHelper->informIngest($content_guid, "file://".$content_aip);
 }
 
 
 // ***********************************************
 // CHECK INFORMATION FROM INGEST
 // ***********************************************
-function check_state($content_guid)
+function check_state($content_guid="")
 // ***********************************************
 {
     $messageHelper = new MessageHelper(_MB_URL);
@@ -56,7 +56,10 @@ function check_state($content_guid)
     */
     $msg = $messageHelper->receive();
     
-    // print_r($msg->map);
+    print_r($msg->map);
+    
+    return $msg;
+    
     // Following process after receiving reports from Ingest Tool...
 }
 
@@ -68,33 +71,21 @@ function check_state($content_guid)
 function test_mb()
 // ***********************************************
 {
-
-    // t.b.d.
-
+    echo mb_send_ready("test-guid-123","/dev/null");
+    
+    nl(2);
+    
+    sleep(10);
+    
+    echo_pre(check_state());
 }
 
 
 
-/*
- 
-Hi Andy,
 
-Actually, you don't need to maintain the message queue on your side, because ActiveMQ 
- * stores all un-read message and that's the reason why we choose a message queue but 
- * not a message topic. On the other hand, Ingest Tool only provides details of each 
- * batch ingest after each batch job finishes, so there is no RUNNING status that 
- * Preingest can receive.
-
-
-There are several suggestions and corrections
-1. Please move the stomp-client folder (except examples) into your project.
-2.�Apologies, I missed the GUID field in the ingest's response. Therefore, the 
- * response (in structure of Map) should include GUID, STATUS and EXCEPTIONS (optional)
-3. Regularly receive responses (every 5 minutes) from ActiveMQ and update the 
- * status of the corresponding items in Preingest (I presume that all status are stored 
- * in database), but not to check the status on its own initiative.
-
-
-  
- */
+// TEST
+if ((isset($debug))&&($debug==1))   test_mb();
+    
+    
+    
 ?>

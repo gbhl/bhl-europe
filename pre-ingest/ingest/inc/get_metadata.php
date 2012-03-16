@@ -112,16 +112,16 @@ else
         if ($content_ipr == "") 
         {
             $content_ipr = $arrProvider['default_ipr'];
-            
+
             // KEIN GUELTIGER DEFAULT WERT BISLANG
             if (!instr($content_ipr,array_keys($arrIPR),true,true))  
             {
                 // USER DEFAULT EINTRAGEN UND ZU AKTUELLEM IPR MACHEN
-                mysql_select("update "._USER_TAB." set default_ipr='".$arrIPR[_DEFAULT_IPR]."' where user_id=".$user_id,$db);
-                
-                echo "\nContent IPR default auto set in user preferences. Please check them.\n\n";
-                
-                $content_ipr = $arrIPR[_DEFAULT_IPR];
+                mysql_select("update "._USER_TAB." set default_ipr='".$arrIPR[(_DEFAULT_IPR)]."' where user_id=".$user_id,$db);
+
+                echo "\nContent IPR default auto set in your preferences. Please check them.\n\n";
+
+                $content_ipr = $arrIPR[(_DEFAULT_IPR)];
             }
         }
 

@@ -196,13 +196,14 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
              $curParent->appendChild($node);                     // WIRD NICHT ZU PARENTELEMENT
             break;
         
-
-            case 'page':                                        // TYP DER PAGE GEM. FSG
-             if ($arrPageInfos[2]!="")  $node->setAttribute("pageType",$arrPageInfos[2]);
-             else                       $node->setAttribute("pageType",_DEFAULT_PAGETYPE);
+            case 'page':                                         // TYP DER PAGE GEM. FSG
+             if ((is_array($arrPageInfos))&&($arrPageInfos[2]!=""))  
+                $node->setAttribute("pageType",$arrPageInfos[2]);
+             else                       
+                $node->setAttribute("pageType",_DEFAULT_PAGETYPE);
+                
              $curParent = $curParent->appendChild($node);
             break;
-
 
             case 'name':
 
@@ -212,7 +213,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
                 
               for ($i=3;$i<7;$i++)      // SUPPORT FUER 4 SEITEN PRO FILE
               {
-                  if ((array_key_exists($i, $arrPageInfos))&&($arrPageInfos[$i]!=""))
+                  if ((is_array($arrPageInfos))&&(array_key_exists($i, $arrPageInfos))&&($arrPageInfos[$i]!=""))
                   {
                       if ($i>3) $node  = $domDoc->createElement("olef:".$curNodeName,"\n");
 

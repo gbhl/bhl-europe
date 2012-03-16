@@ -181,7 +181,7 @@ define ("_DEFAULT_IPR",               0);
     tcp://bhl-mandible.nhm.ac.uk:61614 for production
     tcp://bhl-mandible.nhm.ac.uk:61615 for test
 */
-define ("_MB_ABS",                   "/mnt/nfs-demeter/development/stomp-client/");
+define ("_MB_ABS",                   _ABS."stomp-client/");
 define ("_MB_URL",                   "tcp://bhl-mandible.nhm.ac.uk:61613");
 
 
