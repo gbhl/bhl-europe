@@ -1,6 +1,5 @@
 package com.bhle.ingest.integration;
 
-import java.io.File;
 import java.net.URI;
 import java.util.Map;
 
@@ -10,6 +9,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.integration.Message;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.integration.support.MessageBuilder;
+
+import com.bhle.ingest.Sip;
 
 public class InboundJMSMessageProcessor {
 
@@ -30,7 +31,7 @@ public class InboundJMSMessageProcessor {
 			.getLogger(InboundJMSMessageProcessor.class);
 
 	@ServiceActivator
-	public Message<File> handleIncomingJmsMessage(
+	public Message<Sip> handleIncomingJmsMessage(
 			Message<Map<String, Object>> inboundJmsMessage) throws Throwable {
 		Map<String, Object> msg = inboundJmsMessage.getPayload();
 		String guid = (String) msg.get(MSG_GUID_NAME);
@@ -42,8 +43,8 @@ public class InboundJMSMessageProcessor {
 
 		logger.info("Receive JMS message: GUID:{}; URI:{}", guid, uri);
 
-		File file = new File(URI.create(uri));
+		Sip sip = new Sip(guid, URI.create(uri));
 
-		return MessageBuilder.withPayload(file).build();
+		return MessageBuilder.withPayload(sip).build();
 	}
 }

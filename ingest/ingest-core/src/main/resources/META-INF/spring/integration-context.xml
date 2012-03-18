@@ -29,12 +29,12 @@
 	<beans:bean id="inboundJMSMessageProcessor"
 		class="com.bhle.ingest.integration.InboundJMSMessageProcessor" />
 	<service-activator input-channel="inboundJMSMessageChannel"
-		output-channel="inboundFileChannel" ref="inboundJMSMessageProcessor" />
+		output-channel="inboundSipChannel" ref="inboundJMSMessageProcessor" />
 
-	<channel id="inboundFileChannel" />
+	<!-- <channel id="inboundFileChannel" />
 
 	<transformer input-channel="inboundFileChannel"
-		output-channel="inboundSipChannel" ref="sipTransformer" />
+		output-channel="inboundSipChannel" ref="sipTransformer" /> -->
 
 	<channel id="inboundSipChannel">
 		<queue />

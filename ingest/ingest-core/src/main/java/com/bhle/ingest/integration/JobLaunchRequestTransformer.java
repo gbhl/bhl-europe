@@ -23,6 +23,8 @@ public class JobLaunchRequestTransformer {
 	@Transformer
 	public Message<JobLaunchRequest> transform(Message<Sip> sipMessage) {
 		JobParametersBuilder jobParametersBuilder = new JobParametersBuilder();
+		jobParametersBuilder.addString(Sip.JOB_PARAM_GUID_KEY, sipMessage
+				.getPayload().getGuid());
 		jobParametersBuilder.addString(Sip.JOB_PARAM_URI_KEY, sipMessage
 				.getPayload().getURI().toString());
 		JobParameters jobParameters = jobParametersBuilder.toJobParameters();
