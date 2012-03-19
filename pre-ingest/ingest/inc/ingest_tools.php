@@ -2,7 +2,7 @@
 // ********************************************
 // ** FILE:    INGEST_TOOLS.PHP              **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    23.11.2011                    **
+// ** DATE:    19.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
@@ -161,12 +161,17 @@ function queue_add($queueFile, $arrQueueCommands)
 
 
 
-// *****************************************
-function close_ingest_popup($button_text="")
-// *****************************************
+// ********************************************************
+function close_ingest_popup($button_text="",$refresh=true)
+// ********************************************************
 // BUTTON CLOSES CURRENT POPUP AND RE-LOADS INGEST_LIST
 {
+   include_once(_SHARED."formlib.php");
+   
+   if ($refresh)
    button($button_text,"if (opener.document) { opener.document.body.focus(); opener.document.location.href='"._SYSTEM."?menu_nav=ingest_list'; } window.close();",900,-1);
+   else
+   button($button_text,"window.close();",900,-1);
 }
 
 

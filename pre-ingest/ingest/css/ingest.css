@@ -65,3 +65,14 @@ div
     border: 1px solid #bbb; text-align: center; width: 250px;
 }
 
+
+.contentlist
+{
+ width:        980px;
+ margin-left:  2px; 
+ border:       1px solid green;
+ border-color: green; 
+ background-color: white; 
+ font:         11px courier new;
+}
+

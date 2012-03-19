@@ -1,4 +1,10 @@
 <?php
+// ********************************************
+// ** FILE:    DB_OPS.PHP                    **
+// ** PURPOSE: BHLE INGESTION & PREPARATION  **
+// ** DATE:    19.03.2012                    **
+// ** AUTHOR:  ANDREAS MEHRRATH              **
+// ********************************************
 
 /*
  * MANIPULATIVE DATABASE OPERATIONS AFTER POSTS
@@ -125,6 +131,8 @@ if($sub_action=="save_dir_details")
                  $croot = $_POST[$arrKeys[$i]];
                  $cname = str_replace(urldecode($analyzeDir),'',$_POST[$arrKeys[$i]]);
                  $cname = str_replace(_CONTENT_ROOT,'',$cname);
+                 
+                 if ($cname=='') $cname = urldecode($dirSelected);  // take selected content dir name
              }
 
              $inserted += mysql_select($query." (".$nextPK.",'".$croot."','".$cname."',now(),'".$ctime."',".$fsize.",".$cpages.")",$db);

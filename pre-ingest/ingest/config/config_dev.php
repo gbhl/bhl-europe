@@ -6,6 +6,8 @@
 // ** AUTHOR:  ANDREAS MEHRRATH         **
 // ***************************************
 
+// RUNTIME MODE (development|production)
+define("_MODE",                     "development");
 
 // ABSOLUTE PATH TO THE INGEST APPLICATION ROOT (WHERE INGEST.PHP RESIDE!)
 define("_ABS",                      str_replace("//","/",$_SERVER['DOCUMENT_ROOT']."/"));
@@ -41,6 +43,10 @@ define("_SELF_ADMIN",               false);        // SELF ADMIN OF CP SETTINGS 
 define("_THUMB_FN",                 "thumb.png");
 define("_THUMB_SIZE",               "45x60");
 define("_THUMB_BGRD",               "thumb_frame_55_70.png");
+
+
+// MAX LENGTH OF SELECTION LISTS PER PAGE (E.G. CONTENT ANALYZER LIST LENGTH)
+define("_MAX_LISTLEN",              "2000");
 
 
 // GENERAL WEBSERVICE PARAMETER

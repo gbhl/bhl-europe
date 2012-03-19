@@ -2,7 +2,7 @@
 // ********************************************
 // ** FILE:    MESSAGE_BROKER.PHP            **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    13.03.2012                    **
+// ** DATE:    19.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
@@ -71,7 +71,7 @@ function check_state($content_guid="")
 function test_mb()
 // ***********************************************
 {
-    echo mb_send_ready("test-guid-123","/dev/null");
+    echo_pre(mb_send_ready("test-guid-123","/dev/null"));
     
     nl(2);
     
@@ -83,9 +83,17 @@ function test_mb()
 
 
 
+
+
 // TEST
-if ((isset($debug))&&($debug==1))   test_mb();
+if ((isset($debug))&&($debug==1))   
+{
+    echo "NOW TESTING MB.\n\n";
     
-    
+    test_mb();
+
+    echo "END TESTING MB.\n\n";
+}
+
     
 ?>

@@ -2,7 +2,7 @@
 // ********************************************
 // ** FILE:    INDEX.PHP                     **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    05.11.2011                    **
+// ** DATE:    19.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 // MAIN INGESTION KERNEL
@@ -92,11 +92,6 @@ switch($menu_nav)
         include_once("inc/step_kernel.php");
         break;
 
-    case "test_mb":
-        $debug = 1;
-        include_once("inc/message_broker.php");
-        break;
-
  /*   case "job_prepare_ingest":
         include_once("inc/job_prepare_ingest.php");
         break;
@@ -116,37 +111,40 @@ switch($menu_nav)
     case "show_content_root":
         echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (1st level overview only)</font></h1>";
         print_dir_arr(getDirectory(_CONTENT_ROOT,array(),0,"",1));
+        nl(); close_ingest_popup("close",false);
         break;
 
     case "show_user_dir":
     case "show_user_content_root":
         echo "<h1 style='margin-top: 6px;'>Your Content Root <font size=-1> (for orientation purposes only)</font></h1>";
-        print_dir_arr(getDirectory(_USER_CONTENT_ROOT,array(),0,"",_ANALYZE_MAX_DEPTH));        
+        print_dir_arr(getDirectory(_USER_CONTENT_ROOT,array(),0,"",_ANALYZE_MAX_DEPTH));      
+        nl(); close_ingest_popup("close",false);
         break;
     
     case "show_working_dir":
         echo "<h1 style='margin-top: 6px;'>Working Directory<font size=-1> (for orientation purposes only)</font></h1>";
-        print_dir_arr(getDirectory(_WORK_DIR.$arrProvider['user_content_id'],array(),0,"",_ANALYZE_MAX_DEPTH));        
+        print_dir_arr(getDirectory(_WORK_DIR.$arrProvider['user_content_id'],array(),0,"",_ANALYZE_MAX_DEPTH)); 
+        nl(); close_ingest_popup("close",false);
         break;
 
     case "selftest":
         include_once("inc/selftest.php");                
         break;
-    
+
     case "admin":
         include_once("inc/admin.php");        
         break;
-    
+
     case "about":
         show_help_file(_ABS."docs/README.txt");
         break;
-    
+
     case "help":
         show_help_file(_ABS."docs/HELP.txt");
         show_help_file(_ABS."docs/HISTORY.txt");
         show_help_file(_ABS."docs/INSTALL.txt");
         break;
-    
+
     case "file_tree": 
         // WIRD VON CONTEN_LIST UND AJAX AUFGERUFEN
 
@@ -169,6 +167,11 @@ switch($menu_nav)
         include_once("inc/test.php");
         die();
         break;
+    
+    case "test_mb":
+        $debug = 1;
+        include_once("inc/message_broker.php");
+        break;    
     
     default:
         include_once("inc/portal.php");

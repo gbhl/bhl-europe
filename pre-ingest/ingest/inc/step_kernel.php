@@ -27,15 +27,13 @@ if ((isset($content_id))&&(is_numeric($content_id)))
     // VORAB INFOS UEBER CONTENT UND BEREITS ERSTELLTES HOLEN
     $arrQueueCommands = array();
     
-    if (!instr($_SERVER['HTTP_HOST'],"localhost"))
-    progressBar("Please wait operation in progress...", "processing.gif", 
+    if (_MODE=='production') progressBar("Please wait operation in progress...", "processing.gif",
             "margin-top: 75px; left: 350px;", "visible", 2);
 
     // INVOKE TARGET SCRIPT
     include_once("inc/" . $menu_nav.".php");
 
-    if (!instr($_SERVER['HTTP_HOST'],"localhost"))
-    close_progressBar();    
+    if (_MODE=='production') close_progressBar();    
 
     if ($menu_nav=='get_mets')
     {

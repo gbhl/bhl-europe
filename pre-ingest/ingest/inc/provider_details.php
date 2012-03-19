@@ -19,7 +19,7 @@ form('cp_details');
 hidden("menu_nav",$menu_nav);
 hidden("sub_action","save_cp_details");
 
-echo "<table cellspacing=3 cellpadding=3 width=650 border=1 style='font: 12px verdana; color: #1A3B72; background-color: #E4EBF7;'>";
+echo "<table cellspacing=3 cellpadding=3 width=680 border=1 style='font: 12px verdana; color: #1A3B72; background-color: #E4EBF7;'>";
 echo "<tr><th colspan=2 style=\"height: 33px; \">".
         icon("preferences.png","","","","",false)." my Preferences"._TR;
 
@@ -102,7 +102,7 @@ icon("exclam_16.png","Preferred setting. If set webservice is used before local 
 // DEFAULT IPR
 
 echo _TR."Default Intellectual <br>Property Right"._TD;  
-arr_dropdown($arrIPR,"default_ipr' style='border: 2px solid #11FF0B; margin-top: 3px; width: 150px;",$arrProvider['default_ipr'],1,"","",false);
+arr_dropdown($arrIPR,"default_ipr' style='border: 2px solid #11FF0B; margin-top: 3px; width: 400px;",$arrProvider['default_ipr'],1,"","",false);
 
 
 
@@ -111,8 +111,8 @@ textarea("user_memo",$arrProvider['user_memo'],"","",
 		"<br>My Personal Ingest Notes<br>","",true,"border: 1px solid black; width: 640px; height: 70px;"); 
 
 echo "</td></tr><tr><td align=center colspan=2>
-<input type=\"submit\" class=\"button\" value=\"Save\" style=\"width: 449px;\">
-<input type=\"button\" class=\"button\" value=\"Close\" onClick=\"document.getElementById('pd_div').style.visibility = 'hidden';\" style=\"width: 189px;\">    ";
+<input type=\"submit\" class=\"button\" value=\"Save\" style=\"width: 459px;\">
+<input type=\"button\" class=\"button\" value=\"Close\" onClick=\"document.getElementById('pd_div').style.visibility = 'hidden';\" style=\"width: 199px;\">    ";
 
 echo _TAB;
 
