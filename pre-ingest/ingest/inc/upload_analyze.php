@@ -47,7 +47,7 @@ if ( (!isset($dirSelected)) || (!is_dir(clean_path($analyzeDir."/".$dirSelected)
     $arrDir = getDirectory($analyzeDir,array(),0,array('.', '..',_AIP_DIR ),0);
     $anzDir = count($arrDir);
     
-    echo _TABLE;
+    echo "<table cellpadding=3 cellspacing=3 border=0 style='border: 1px solid black;'>\n";
     
     if ($anzDir>0)
     {
@@ -125,6 +125,13 @@ else
                 echo "<b>".count($arrDir)." Element(s) found <font size=1>(Viewing ".($offset+1)."-".($maxidx+1).")</font><br>
 			<font color=green>Please check the objects you want to manage and save.</font>"; nl();
 
+                // UP TO $dirSelected SELECTION
+                abs_l(-30,0); lz(2);
+                icon("folder_32_up.png","Up to re-select starting folder...",
+                        "onClick=\"document.location.href='".
+                        _SYSTEM."?menu_nav=upload_analyze&analyzeDir=".urlencode(_USER_CONTENT_ROOT)."';\"");
+                abs_e();
+                
                 // BLAETTERN
                 if (_MODE=='development')   $minPages = 0;      // test
                 else                        $minPages = 1;
@@ -159,6 +166,8 @@ else
 
                     abs_e();
                 }
+                
+                
 
 
                 // LIST
@@ -166,9 +175,9 @@ else
 			<tr><th>PATH | INFO &nbsp; (target files/directories [filtered])</th>
                         <th width=70>Activate Content Root/File</th></tr>";
 
-                // ******************************
-                for ($i=$offset;$i<=$maxidx;$i++)
-                // ******************************
+                // **********************************
+                for ($i=$offset;$i<=($maxidx+1);$i++)
+                // **********************************
 		{
 		   ob_start();
 		   
@@ -176,29 +185,26 @@ else
 		   $isPDF     = false;
 		   $isDir     = false;
 		   
-		   if ($i<$anzDir) 
+		   if ($i<($maxidx+1))
 		   {
-			if (is_dir($arrDir[$i]))     $isDir=true;
-			else if (isPDF($arrDir[$i])) $isPDF=true;
+			if      (is_dir($arrDir[$i]))  $isDir=true;
+			else if (isPDF($arrDir[$i]))   $isPDF=true;
 		   }
 		   
-		   // if ($isPDF) echo $arrDir[$i];
-		   
 		   // PAGES LINE
-		   if ((($cur_pages<>0)&&(($isDir)||($isPDF)))||($i==$anzDir)) {
+		   if ((($cur_pages<>0)&&(($isDir)||($isPDF)))||($i==($maxidx+1))) {
 			   
 			   echo "<tr><td align=right>";
 			   icon("picture.gif");
 			   echo " Number of valid page objects for this (image files, scans, ...) </td><td align=center>".$cur_pages." p.";
 			   echo "</td></tr>\n";
 			   $cur_pages=0;
-			   
-			   if ($i==$anzDir) break(1);   // RAUS FALLS LETZTER SCHON VORIGER WAR
 		   }
-			 
+
+                   if ($i==($maxidx+1)) break(1);   // RAUS FALLS LETZTER SCHON VORIGER WAR
+
 		   $isPageData = isPagedata($arrDir[$i]);
-		   
-		  
+
 		   // PAGE DATA FILES NICHT LISTEN (UEBERSICHTLICHKEIT)
 		   if (!$isPageData) 
 		   {
@@ -215,7 +221,6 @@ else
 
 			   // AUSGABE AKTUELLER ZEILE
 			   echo ">".str_replace(_CONTENT_ROOT,"",$arrDir[$i])."</td><td align=center>";
-			   
 			 
 			   // ONLY DIRS AND PDFS CAN BE ACTIVATED
 			   if ((($isDir)||($isPDF)))
