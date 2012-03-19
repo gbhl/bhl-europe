@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import com.bhle.ingest.Sip;
 import com.bhle.ingest.jms.IngestJmsProducer;
 
 @Component
@@ -31,6 +32,7 @@ public class BatchIngestListener {
 
 	private void reportViaJms(JobExecution jobExecution) {
 		Map<String, String> messageBody = new HashMap<String, String>();
+		messageBody.put("GUID", jobExecution.getJobInstance().getJobParameters().getString(Sip.JOB_PARAM_GUID_KEY));
 		messageBody.put("STATUS", jobExecution.getStatus().toString());
 		if (jobExecution.getStatus().isUnsuccessful()){
 			StringBuffer exceptions = new StringBuffer();

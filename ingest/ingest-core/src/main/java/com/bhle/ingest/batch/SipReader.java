@@ -30,9 +30,10 @@ public class SipReader implements ItemReader<File> {
 	public File read() throws Exception, UnexpectedInputException,
 			ParseException, NonTransientResourceException {
 		if (iterator == null) {
-			URI sipUri = URI.create(stepExecution.getJobParameters().getString(
+			String guid = stepExecution.getJobParameters().getString(Sip.JOB_PARAM_GUID_KEY);
+			URI uri = URI.create(stepExecution.getJobParameters().getString(
 					Sip.JOB_PARAM_URI_KEY));
-			Sip sip = new Sip(sipUri);
+			Sip sip = new Sip(guid, uri);
 			iterator = sip.getItems().iterator();
 		}
 		if (iterator.hasNext()){

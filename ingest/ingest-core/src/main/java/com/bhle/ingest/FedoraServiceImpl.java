@@ -2,8 +2,6 @@ package com.bhle.ingest;
 
 import java.io.File;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.integration.Message;
 import org.springframework.integration.annotation.ServiceActivator;
 
@@ -14,9 +12,6 @@ import com.yourmediashelf.fedora.client.response.FedoraResponse;
 import com.yourmediashelf.fedora.client.response.IngestResponse;
 
 public class FedoraServiceImpl {
-
-	private static final Logger logger = LoggerFactory
-			.getLogger(FedoraServiceImpl.class);
 
 	private FedoraClient client;
 
