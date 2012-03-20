@@ -34,7 +34,7 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-admin-manager</artifactId>
 			<version>1.2.1.RELEASE</version>
-			<scope>runtime</scope>
+			
 			<exclusions>
 				<exclusion>
 					<artifactId>slf4j-api</artifactId>
@@ -54,7 +54,7 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-admin-resources</artifactId>
 			<version>1.2.1.RELEASE</version>
-			<scope>runtime</scope>
+			
 			<exclusions>
 				<exclusion>
 					<artifactId>slf4j-api</artifactId>
@@ -70,12 +70,18 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.18</version>
 			<scope>runtime</scope>
 		</dependency>
+		
+		
+		
+		
 	</dependencies>
 
 	<build>
@@ -90,6 +96,7 @@
 				<artifactId>tomcat6-maven-plugin</artifactId>
 				<version>2.0-beta-1</version>
 			</plugin>
+			
 		</plugins>
 		<resources>
 			<resource>

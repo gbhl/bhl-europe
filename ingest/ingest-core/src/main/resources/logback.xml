@@ -9,7 +9,7 @@
 			<fileNamePattern>logs/ingest.%d{MM-dd-yyyy}.log.zip
 					</fileNamePattern>
 		</rollingPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
+		<layout class="ch.qos.logback.classic.html.HTMLLayout">
 			<pattern>[%thread][%level][%file:%line] - %msg%n</pattern>
 		</layout>
 	</appender>
