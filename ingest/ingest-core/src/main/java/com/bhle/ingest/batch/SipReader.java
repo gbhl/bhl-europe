@@ -25,21 +25,23 @@ public class SipReader implements ItemReader<File> {
 	}
 
 	private Iterator<File> iterator;
-	
+
 	@Override
 	public File read() throws Exception, UnexpectedInputException,
 			ParseException, NonTransientResourceException {
 		if (iterator == null) {
-			String guid = stepExecution.getJobParameters().getString(Sip.JOB_PARAM_GUID_KEY);
+			String guid = stepExecution.getJobParameters().getString(
+					Sip.JOB_PARAM_GUID_KEY);
 			URI uri = URI.create(stepExecution.getJobParameters().getString(
 					Sip.JOB_PARAM_URI_KEY));
 			Sip sip = new Sip(guid, uri);
 			iterator = sip.getItems().iterator();
 		}
-		if (iterator.hasNext()){
+		if (iterator.hasNext()) {
 			File file = iterator.next();
 			return file;
 		} else {
+			iterator = null;
 			return null;
 		}
 	}
