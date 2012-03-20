@@ -2,10 +2,15 @@
        TODO
 ********************
 
-
-
-analyzer blaettern
 stomp
+content provider token uppercase to 
+
+If the mods:recordContentSource field already contains the logged in content provider, no change is required. If the mods:recordContent does not exist or contains an entry which is not equal to the content provider login, add a new field with the login data.
+
+Logged in content provider refers to the provider-token preference in upper case.
+
+As mods:recordContentSource indicates the digitizing institution, the logged in content provider should be added as 
+
 
 
 ----

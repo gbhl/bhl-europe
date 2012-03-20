@@ -8,10 +8,6 @@
 
 // see docs/internal/stomp_info.txt
 
-/*
-define ("_MB_ABS",    "/mnt/nfs-demeter/development/stomp-client/");
-define ("_MB_URL",    "tcp://bhl-mandible.nhm.ac.uk:61613");
-*/
 
 require_once(_MB_ABS."MessageHelper.php");
 
@@ -75,7 +71,7 @@ function test_mb()
     
     nl(2);
     
-    sleep(10);
+    sleep(2);
     
     echo_pre(check_state());
 }

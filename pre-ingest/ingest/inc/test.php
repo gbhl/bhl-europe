@@ -25,6 +25,4 @@ sortPageFiles($arrToSort) // ,$sortBy='sequence'
         );
 
 
-
-
 ?>

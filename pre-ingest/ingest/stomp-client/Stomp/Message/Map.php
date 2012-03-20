@@ -18,7 +18,7 @@
 
 /* vim: set expandtab tabstop=3 shiftwidth=3: */
 
-require_once 'Stomp/Message.php';
+require_once _MB_ABS.'Stomp/Message.php';
 
 /**
  * Message that contains a set of name-value pairs
