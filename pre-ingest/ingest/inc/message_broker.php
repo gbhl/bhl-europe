@@ -54,6 +54,8 @@ function check_state($content_guid="")
     
     print_r($msg->map);
     
+    $messageHelper->unsubscribe();
+    
     return $msg;
     
     // Following process after receiving reports from Ingest Tool...
