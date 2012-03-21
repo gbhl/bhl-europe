@@ -8,7 +8,7 @@ class MessageHelper {
 	protected $_brokerUrl = null;
 	
 	protected $_client = null;
-	protected $_queue = "/queue/preingest";
+	protected $_queue = "/topic/preingest";
 	
 	public function __construct ($brokerUrl) {
 		$this->_brokerUrl = $brokerUrl;
