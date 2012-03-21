@@ -16,14 +16,5 @@
 			</props>
 		</property>
 	</bean>
-	
-	<bean id="LogProperties"
-		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="locations">
-			<list>
-				<value>classpath*:/batch-default.properties</value>
-			</list>
-		</property>
-	</bean>
 
 </beans>
