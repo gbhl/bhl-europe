@@ -9,12 +9,23 @@
 			<fileNamePattern>logs/ingest.%d{MM-dd-yyyy}.log.zip
 					</fileNamePattern>
 		</rollingPolicy>
-		<layout class="ch.qos.logback.classic.html.HTMLLayout">
+		<layout class="ch.qos.logback.classic.PatternLayout">
 			<pattern>[%thread][%level][%file:%line] - %msg%n</pattern>
 		</layout>
 	</appender>
-	<root level="info">
+
+	<appender name="HTML" class="ch.qos.logback.core.FileAppender">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout class="ch.qos.logback.classic.html.HTMLLayout">
+				<pattern>%relative%thread%mdc%level%logger%msg</pattern>
+			</layout>
+		</encoder>
+		<file>${log.path}/ingest.html</file>
+	</appender>
+
+	<root level="debug">
 		<appender-ref ref="FILE" />
+		<appender-ref ref="HTML" />
 	</root>
 
 </configuration>

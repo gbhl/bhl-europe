@@ -20,6 +20,6 @@ function refreshLog(){
 
 </script>
 
-<div id="loadLog" style="width:600px;height:400px; overflow-y:scroll; border:1px solid;"/> 
+<div id="loadLog" style="overflow-y:scroll; border:1px solid;"/> 
 
 
