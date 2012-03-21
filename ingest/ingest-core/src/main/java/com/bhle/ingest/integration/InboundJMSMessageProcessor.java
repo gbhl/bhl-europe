@@ -13,6 +13,9 @@ import org.springframework.integration.support.MessageBuilder;
 import com.bhle.ingest.Sip;
 
 public class InboundJMSMessageProcessor {
+	
+	private static final Logger logger = LoggerFactory
+			.getLogger(InboundJMSMessageProcessor.class);
 
 	private static String MSG_GUID_NAME;
 	private static String MSG_URI_NAME;
@@ -27,21 +30,18 @@ public class InboundJMSMessageProcessor {
 		MSG_URI_NAME = uriName;
 	}
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(InboundJMSMessageProcessor.class);
-
 	@ServiceActivator
 	public Message<Sip> handleIncomingJmsMessage(
 			Message<Map<String, Object>> inboundJmsMessage) throws Throwable {
 		Map<String, Object> msg = inboundJmsMessage.getPayload();
 		String guid = (String) msg.get(MSG_GUID_NAME);
 		String uri = (String) msg.get(MSG_URI_NAME);
-
+		
 		if (uri == null || uri.equals("")) {
 			throw new IllegalArgumentException("Message must contain URI");
 		}
 
-		logger.info("Receive JMS message: GUID:{}; URI:{}", guid, uri);
+		logger.info("Receive JMS message: {}", msg);
 
 		Sip sip = new Sip(guid, URI.create(uri));
 
