@@ -8,15 +8,16 @@
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd
                            http://activemq.apache.org/schema/core 
-                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+                           http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd">
 
-	<amq:queue id="inboundDestination" physicalName="${jms.inbound.queue}" />
+	<amq:topic id="inboundDestination" physicalName="${jms.inbound.topic}" />
 	<amq:topic id="outboundDestination" physicalName="${jms.outbound.topic}" />
 
-	<amq:connectionFactory id="connectionFactory" brokerURL="${jms.broker.url}" />
+	<amq:connectionFactory id="ingestConsumerConnectionFactory" brokerURL="${jms.broker.url}" clientID="ingest"/>
+	<amq:connectionFactory id="ingestProducerConnectionFactory" brokerURL="${jms.broker.url}" />
 
 	<bean id="ingestJmsProducerTemplate" class="org.springframework.jms.core.JmsTemplate"
-		p:connectionFactory-ref="connectionFactory" p:defaultDestination-ref="outboundDestination" />
+		p:connectionFactory-ref="ingestProducerConnectionFactory" p:defaultDestination-ref="outboundDestination" />
 
 	<bean id="ingestJmsProducer" class="com.bhle.ingest.jms.IngestJmsProducer"/>
 </beans>

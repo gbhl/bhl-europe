@@ -50,9 +50,9 @@ public class BatchIngestTest implements ResourceLoaderAware {
 		Map<String, String> messageBody = new HashMap<String, String>();
 		logger.info("Create Test Message...");
 		
-		messageBody.put(MSG_GUID_NAME, "10706-a00000000000132805961115");
+		messageBody.put(MSG_GUID_NAME, "10706-a0000000000000000000test");
 		logger.info("MessageBody: {}:{}", MSG_GUID_NAME,
-				"10706-a00000000000132805961115");
+				"10706-a0000000000000000000test");
 
 		Resource aip = resourceLoader
 				.getResource("classpath:/com/bhle/ingest/.aip");
@@ -66,7 +66,7 @@ public class BatchIngestTest implements ResourceLoaderAware {
 
 	@Test
 	public void testExistenceOfSampleByPurge() throws InterruptedException {
-		int statusCode = service.purge("bhle:10706-a00000000000132805961115");
+		int statusCode = service.purge("bhle:10706-a0000000000000000000test");
 		Assert.assertEquals(200, statusCode);
 		
 		Thread.sleep(2000);

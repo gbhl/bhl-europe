@@ -10,18 +10,20 @@
                            http://www.springframework.org/schema/jms 
                            http://www.springframework.org/schema/jms/spring-jms.xsd
                            http://activemq.apache.org/schema/core 
-                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+                           http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd">
 
 	<import resource="classpath:/META-INF/spring/master-context.xml" />
 
 	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
-		<property name="connectionFactory" ref="connectionFactory" />
+		<property name="connectionFactory" ref="preingestConnectionFactory" />
 		<property name="destination" ref="outboundDestination" />
 		<property name="messageListener" ref="preingestJmsConsumerAdapter" />
 	</bean>
 
+	<amq:connectionFactory id="preingestConnectionFactory" brokerURL="${jms.broker.url}"/>
+
 	<bean id="preingestJmsProducerTemplate" class="org.springframework.jms.core.JmsTemplate"
-		p:connectionFactory-ref="connectionFactory" p:defaultDestination-ref="inboundDestination" />
+		p:connectionFactory-ref="preingestConnectionFactory" p:defaultDestination-ref="inboundDestination"/>
 
 	<bean id="preingestJmsProducer" class="com.bhle.ingest.jms.PreingestJmsProducerStub" />
 	<bean id="preingestJmsConsumer" class="com.bhle.ingest.jms.PreingestJmsConsumerStub" />
