@@ -54,6 +54,37 @@ function check_state($content_guid="")
     
     print_r($msg->map);
     
+    $messageHelper->unsubscribe();
+    
+    return $msg;
+    
+    // Following process after receiving reports from Ingest Tool...
+}
+
+// ***********************************************
+// ECHO INFORMATION FROM PREINGEST
+// ***********************************************
+function echo()
+// ***********************************************
+{
+    $messageHelper = new MessageHelper(_MB_URL);
+    
+    /*
+    Subscribe to ActiveMQ topic named 'ingest' by default
+    */
+    $messageHelper->subscribe("/topic/preingest");
+    /*
+    Wait and receive message from topic 'ingest' (60 seconds)
+    Message content:
+        "STATUS": ["COMPLETED", "FAILED"]
+        "EXCEPTIONS"(if FAILED): stackTrace from Batch Ingest
+    */
+    $msg = $messageHelper->receive();
+    
+    print_r($msg->map);
+    
+    $messageHelper->unsubscribe("/topic/preingest");
+    
     return $msg;
     
     // Following process after receiving reports from Ingest Tool...
@@ -67,13 +98,15 @@ function check_state($content_guid="")
 function test_mb()
 // ***********************************************
 {
+    echo_pre(echo());
+    
     echo_pre(mb_send_ready("test-guid-123","/dev/null"));
     
     nl(2);
     
     sleep(2);
     
-    echo_pre(check_state());
+    echo_pre(echo());
 }
 
 
