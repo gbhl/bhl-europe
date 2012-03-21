@@ -34,6 +34,7 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-admin-manager</artifactId>
 			<version>1.2.1.RELEASE</version>
+			
 			<exclusions>
 				<exclusion>
 					<artifactId>spring-core</artifactId>
