@@ -5,7 +5,9 @@
 // ** DATE:    19.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
-
+// http://activemq.apache.org/stomp.html
+// http://bhl-int.nhm.ac.uk/admin
+// https://github.com/bhle/bhle/issues/309
 // see docs/internal/stomp_info.txt
 
 
@@ -61,10 +63,11 @@ function check_state($content_guid="")
     // Following process after receiving reports from Ingest Tool...
 }
 
+
 // ***********************************************
 // ECHO INFORMATION FROM PREINGEST
 // ***********************************************
-function echo()
+function get_topic()
 // ***********************************************
 {
     $messageHelper = new MessageHelper(_MB_URL);
@@ -98,7 +101,7 @@ function echo()
 function test_mb()
 // ***********************************************
 {
-    echo_pre(echo());
+    echo_pre(get_topic());
     
     echo_pre(mb_send_ready("test-guid-123","/dev/null"));
     
@@ -106,11 +109,10 @@ function test_mb()
     
     sleep(2);
     
-    echo_pre(echo());
+//  echo_pre(check_state());
+
+    echo_pre(get_topic());
 }
-
-
-
 
 
 

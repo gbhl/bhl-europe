@@ -13,14 +13,14 @@ foreach ($nodeAttributes as $nodeAttribute)
     if ($nodeName=='METS:mets')
     {
         if ($nodeAttribute->name == 'OBJID')
-            $curElement->setAttribute('OBJID',str_replace("/","-",($objID)));
+            $curElement->setAttribute('OBJID',$cleanObjID);
     }
     
     // rdf:Description --> rdf:about="info:fedora/bhle:a0hhmgs0"
     if ($nodeName=='rdf:Description')
     {
         if ($nodeAttribute->name == 'about')
-        $curElement->setAttribute('rdf:about','info:fedora/'.str_replace("/","-",($objID)));
+        $curElement->setAttribute('rdf:about','info:fedora/'.$cleanObjID);
     }
 }
 
@@ -30,7 +30,7 @@ foreach ($nodeAttributes as $nodeAttribute)
 
 if ($nodeName=='dc:identifier')
 {
-    $curElement->nodeValue = str_replace("/","-",($objID));
+    $curElement->nodeValue = $cleanObjID;
 }
 
 

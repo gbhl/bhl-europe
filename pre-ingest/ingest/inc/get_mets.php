@@ -19,8 +19,9 @@ if (!isset($content_id))   die(_ERR." Need content information, ID to prepare ME
 
 // INITS
 
-$cGUID  = abfrage("select content_guid from content where content_id=".$content_id,$db);
-$objID = "bhle:".$cGUID;
+$cGUID      = abfrage("select content_guid from content where content_id=".$content_id,$db);
+$objID      = "bhle:".$cGUID;
+$cleanObjID = str_replace("/","-",$objID);
 
 
 // OLEF FERTIGSTELLEN
@@ -66,8 +67,7 @@ for ($i=0;$i<=$cPages;$i++)     // $cPages + 1 book
     else
     {
         // OBJID + PAGE NR.
-        $pageID = $objID."-".substr("00000".$i,-5); // interne page id = OBJID   !!!! oder reale page nr??
-        
+        $pageID = $objID."-".substr("00000".$i,-5);     // interne page id = OBJID   !!!! oder reale page nr??
         $cur_tiff = basename($arrTiffs[($i-1)]);
         $metsFile = $destDir.str_replace(array(":","/"),"_",$pageID).".xml";   // FILENAME
         $domDoc->load(_ABS."inc/xml/page.xml");
@@ -109,7 +109,11 @@ for ($i=0;$i<=$cPages;$i++)     // $cPages + 1 book
     @flush();    
 }
 
-if ($filesGenerated>($cPages-2))  $ingestReady = true;
+
+if ($filesGenerated<($cPages-2)) {
+    echo _ERR."METS files creation failed (".$filesGenerated."/".$cPages." generated)!\n"; 
+    $ingestReady = false;
+    }
 
 echo "\n\n</pre>\n";
 

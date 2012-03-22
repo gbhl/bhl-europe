@@ -2,43 +2,6 @@
        TODO
 ********************
 
-stomp
-content provider token uppercase to 
-
-If the mods:recordContentSource field already contains the logged in content provider, no change is required. If the mods:recordContent does not exist or contains an entry which is not equal to the content provider login, add a new field with the login data.
-
-Logged in content provider refers to the provider-token preference in upper case.
-
-As mods:recordContentSource indicates the digitizing institution, the logged in content provider should be added as 
-
-
-
-----
-Tested with latest version of integration. Here is how to reproduce:
-
-Select an arbitrary content. Add it to ingest list. Run through all steps, finally create the METS output. 
-Open METS output and search for "accessCondition" -> nothing found.
-
-This only happens if you do not save your ingest list at least once, which means 
-the IPR-Statement from the users preferences are not written to the METS by default.
-
----------------------------------
-
-
-The selected IPR license text must be written to the olef:bibliographicInformation/mods:accessCondition field.
-
-See issue #319 for the original description.
-
-See http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#accesscondition for a detailed description of the field.
-
-@chris-sleep
-@lobajuluwa
-
-
----------------------------------
-
-
-
 
 if so let me know 
 
@@ -46,15 +9,9 @@ the sequence of a pdf (always 1 ?)
 
 currently for pdf sequence = pagenumber
 
-
 maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
 
-
 where 000001 is the extracted page sequence number 
-
-
-
-
 
 
 

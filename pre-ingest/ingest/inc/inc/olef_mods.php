@@ -25,7 +25,6 @@ echo "<h3>Finishing OLEF Data</h3><pre>";
 
 if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 {
-
     if ($arrContentDetails['content_ipr']!="")
     {
         // LOAD OLEF TO DOM
@@ -33,23 +32,20 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
         @$domDoc->load(_OLEF_FILE);
 
         // ADD NODE     mods:accessCondition to bibliographicInformation
-
         $node = $domDoc->createElement("mods:accessCondition",$arrContentDetails['content_ipr']);
-
         $node->setAttribute("xmlns:mods", "http://www.loc.gov/mods/v3");
         $node->setAttribute("type", "use and reproduction");
 
         $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
-        foreach($bis as $bi)
-        {
+        foreach($bis as $bi) {
          $element = $bi;
          $newnode = $element->appendChild($node);
         }
 
         // SPEICHERN MODIFIZIERTEN OLEF
         if ($domDoc->save(_OLEF_FILE)>0) echo "Missing IPR Information added ... ok\n";
-        else                             echo _ERR." IPR Information failed!\n";
+        else                             { echo _ERR." IPR Information addition failed!\n"; $ingestReady = false; }
     }
     else 
     {
@@ -61,11 +57,44 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 
 
 
+// ************************
+// mods:recordContentSource
+// ************************
+// ADD TAG IF NOT EQUAL TO CURRENT LOGGED IN CONTENT PROVIDER UPPERCASE
+// https://github.com/bhle/bhle/issues/365
+
+$recordContentSource = strtoupper(trim($arrProvider['user_content_id']));
+if ($recordContentSource=='') $recordContentSource = strtoupper(trim($arrProvider['user_name']));
+
+if ((!file_content_exists(_OLEF_FILE,"mods:recordContentSource",true,true))||
+    (!file_content_exists(_OLEF_FILE,"mods:recordContentSource>".$recordContentSource,true,true)))
+{
+    // LOAD OLEF TO DOM
+    $domDoc   = new DOMDocument();
+    @$domDoc->load(_OLEF_FILE);
+
+    // ADD NODE     mods:recordContentSource to bibliographicInformation
+    $node = $domDoc->createElement("mods:recordContentSource",  $recordContentSource);
+
+    $bis = $domDoc->getElementsByTagName("bibliographicInformation");
+
+    foreach($bis as $bi) {
+        $element = $bi;
+        $newnode = $element->appendChild($node);
+    }
+
+    // SPEICHERN MODIFIZIERTEN OLEF
+    if ($domDoc->save(_OLEF_FILE)>0) echo "Missing Provider Information added ... ok\n";
+    else                             echo _ERR." Provider Information addition failed!\n";
+}
+
 
 
 // *************************
 // ADD OLEF NAMESPACE PREFIX
 // *************************
+// DEPRECATED: SOLUTION NOW IN <olef_pages.php>
+
 /*
 if (!file_content_exists(_OLEF_FILE,"<olef:",true,true))
 {
