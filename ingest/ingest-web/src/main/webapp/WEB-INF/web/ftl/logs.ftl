@@ -12,9 +12,6 @@ function refreshLog(){
     		document.getElementById("loadLog").innerHTML+data;
     }
     );
-	
-	
-	
 }
 
 

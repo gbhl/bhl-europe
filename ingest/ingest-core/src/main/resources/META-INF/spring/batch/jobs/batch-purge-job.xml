@@ -11,7 +11,7 @@
 
 	<context:component-scan base-package="com.bhle.ingest.batch" />
 
-	<job id="batchPurgeJob" restartable="true">
+	<job id="batchPurgeJob">
 		<step id="main">
 			<tasklet>
 				<chunk reader="aipReader" writer="aipPurger" commit-interval="${batch.commit.interval}" />
