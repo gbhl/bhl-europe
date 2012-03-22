@@ -53,30 +53,33 @@ public class Olef {
 
 	public String getEntryPage() {
 		return (String) evaluateXpath(
-				"//reference[@type='title']/following-sibling::pages/page/name/text()",
+				"count(//olef:reference[lower-case(@type)='title']/../preceding-sibling::*)+1",
 				XPathConstants.STRING);
 	}
 
 	public String getPageName(int i) {
 		// TODO need more spec
 		String pageName = (String) evaluateXpath(
-				"//itemInformation/files/file["+ (i + 1) +"]/pages/page/name/text()",
+				"//olef:itemInformation/olef:files/olef:file[" + (i + 1)
+						+ "]/olef:pages/olef:page/olef:name/text()",
 				XPathConstants.STRING);
-		if(pageName == null || pageName.equals("")){
+		if (pageName == null || pageName.equals("")) {
 			System.out.println("Not Found");
-			pageName = String.valueOf(i+1);
+			pageName = String.valueOf(i + 1);
 		}
 		return pageName;
 	}
-	
+
 	public List<String> getScientificNames(int i) {
 		NodeList scientificNameNodes = (NodeList) evaluateXpath(
-				"//itemInformation/files/file["+ (i + 1) +" ]/pages/page/taxon/dwc:scientificName/text()",
+				"//olef:itemInformation/olef:files/olef:file["
+						+ (i + 1)
+						+ "]/olef:pages/olef:page/olef:taxon/dwc:scientificName/text()",
 				XPathConstants.NODESET);
-		
+
 		List<String> scientificNames = new ArrayList<String>();
-		
-		for (int j = 0; j < scientificNameNodes.getLength(); j++){
+
+		for (int j = 0; j < scientificNameNodes.getLength(); j++) {
 			scientificNames.add(scientificNameNodes.item(j).getNodeValue());
 		}
 		return scientificNames;

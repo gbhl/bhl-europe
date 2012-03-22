@@ -4,7 +4,7 @@
 
 	<groupId>com.bhle</groupId>
 	<artifactId>access-parent</artifactId>
-	<version>1.2</version>
+	<version>1.3</version>
 	<packaging>pom</packaging>
 
 	<name>access-parent</name>
@@ -15,13 +15,14 @@
 		<module>access-static</module>
 		<module>access-download</module>
 		<module>access-bookreader</module>
+		<module>access-oai</module>
 		<module>access-web</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<build>
 		<plugins>
 			<plugin>

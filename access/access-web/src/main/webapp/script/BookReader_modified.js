@@ -1298,7 +1298,7 @@ BookReader.prototype.jumpToPage = function(pageNum) {
 //______________________________________________________________________________
 BookReader.prototype.jumpToIndex = function(index, pageX, pageY) {
 
-	$(document).trigger('jumpToIndex', [index]);
+//	$(document).trigger('jumpToIndex', [index]);
 	
 	this.willChangeToIndex(index);
 
@@ -2356,6 +2356,7 @@ BookReader.prototype.flipFwdToIndex = function(index) {
  */
 BookReader.prototype.willChangeToIndex = function(index)
 {
+	$(document).trigger('jumpToIndex', [index]);
     // Update navbar position icon - leads page change animation
     this.updateNavIndex(index);
 }

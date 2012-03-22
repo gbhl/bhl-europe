@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+
+  <table name="rcAdmin" engine="InnoDB">
+    <comment>
+      Administrative data.  This table only contains one row.
+    </comment>
+    <column name="pollingEnabled"  type="int(11)"      notNull="true">
+      If 0, 
+      This is the time reported by OAIDriver.getLatestDate().
+    </column>
+    <column name="identifyPath"    type="varchar(28)"  notNull="false">
+      The location of the Identify.xml file in the cache.
+    </column>
+  </table>
+ 
+  <table name="rcItem" primaryKey="itemKey" engine="InnoDB">
+    <column name="itemKey"        type="int(11)"                                        autoIncrement="true"/>
+    <column name="identifier"     type="varchar(255)" notNull="true" index="identifier"/>
+  </table>
+  
+  <table name="rcRecord" primaryKey="recordKey" engine="InnoDB">
+    <column name="recordKey"      type="int(11)"                                        autoIncrement="true"/>
+    <column name="itemKey"        type="int(11)"      notNull="true" index="itemKey"/>
+    <column name="formatKey"      type="int(11)"      notNull="true" index="formatKey"/>
+    <column name="modDate"        type="bigint"       notNull="false" index="modDate"/>
+    <column name="xmlPath"        type="varchar(28)"  notNull="true" index="xmlPath"/>
+  </table>
+  
+  <table name="rcFormat" primaryKey="formatKey" engine="InnoDB">
+    <column name="formatKey"      type="int(11)"                                        autoIncrement="true"/>
+    <column name="mdPrefix"       type="varchar(255)" notNull="true"/>
+    <column name="namespaceURI"   type="varchar(255)" notNull="true"/>
+    <column name="schemaLocation" type="varchar(255)" notNull="true"/>
+    <column name="lastPollDate"   type="bigint"       notNull="true" default="0">
+      <comment>
+        In epoch-ms, this is the last date that the remote source was 
+        successfully polled for changes to records in this format.
+        Zero means the remote source has not yet been polled for records
+        in this format.
+      </comment>
+    </column>
+  </table>
+  
+  <table name="rcSet" primaryKey="setKey" engine="InnoDB">
+    <column name="setKey"         type="int(11)"                                        autoIncrement="true"/>
+    <column name="setSpec"        type="varchar(255)" notNull="true"/>
+    <column name="xmlPath"        type="varchar(28)"  notNull="true" index="xmlPath"/>
+  </table>
+  
+  <table name="rcMembership" engine="InnoDB">
+    <comment>
+      Contains inferred membership information, based on setSpec syntax.
+    </comment>
+    <column name="setKey"         type="int(11)"      notNull="true" index="setKey"/>
+    <column name="recordKey"      type="int(11)"      notNull="true" index="recordKey"/>
+  </table>
+
+  <table name="rcQueue" primaryKey="queueKey" engine="InnoDB">
+    <comment>
+      A queue of record information.  This is where updates are intially placed
+      before the actual record xml content is retrieved from the remote source.
+      Upon successful retrieval, rows are removed from this table and put
+      into the main tables.  In the event of failure, rows are moved from
+      this table into the rcFailure table.
+    </comment>
+    <column name="queueKey"       type="bigint"       notNull="true"                    autoIncrement="true"/>
+    <column name="identifier"     type="varchar(255)" notNull="true"/>
+    <column name="mdPrefix"       type="varchar(255)" notNull="true"/>
+    <column name="sourceInfo"     type="text"         notNull="true"/>
+    <column name="queueSource"    type="varchar(1)"   notNull="true"/>
+  </table>
+
+  <table name="rcFailure" primaryKey="identifier,mdPrefix" engine="InnoDB">
+    <comment>
+      A list of record info from rcQueue which failed to be updated for any
+      reason.  If failCount is below some configured threshold, these will
+      be copied to rcQueue (with queueSource='F') for retrying at regular
+      intervals.  Rows are deleted from this table only when a retry succeeds.
+    </comment>  
+    <column name="identifier"     type="varchar(255)" notNull="true"/>
+    <column name="mdPrefix"       type="varchar(255)" notNull="true"/>
+    <column name="sourceInfo"     type="text"         notNull="true"/>
+    <column name="failCount"      type="int(11)"      notNull="true" index="failCount"/>
+    <column name="firstFailDate"  type="varchar(20)"  notNull="true"/>
+    <column name="lastFailDate"   type="varchar(20)"  notNull="true"/>
+    <column name="lastFailReason" type="text"         notNull="true"/>
+  </table>
+  
+  <table name="rcPrunable" primaryKey="pruneKey" engine="InnoDB">
+    <comment>
+      A list of xmlPaths of files that can to be deleted from the cache
+      because they are no longer referenced in the database.
+    </comment>
+    <column name="pruneKey"       type="bigint"       notNull="true"                    autoIncrement="true"/>
+    <column name="xmlPath"        type="varchar(28)"  notNull="true"/>
+  </table>
+  
+</database>

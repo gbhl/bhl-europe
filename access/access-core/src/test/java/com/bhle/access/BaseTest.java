@@ -28,6 +28,9 @@ public class BaseTest implements ResourceLoaderAware {
 
 	private static ResourceLoader resourceLoader;
 
+	public static String MONOGRAPH_PID = "bhle:10706-a00000000000132805961115";
+	public static String PAGE_PID = "bhle:10706-a00000000000132805961115-00001";
+
 	public void setResourceLoader(ResourceLoader resourceLoader) {
 		BaseTest.resourceLoader = resourceLoader;
 	}
@@ -55,10 +58,10 @@ public class BaseTest implements ResourceLoaderAware {
 				.getResource("classpath:com/bhle/access/sample/bhle_10706-a00000000000132805961115.xml");
 		Resource pageObject = resourceLoader
 				.getResource("classpath:com/bhle/access/sample/bhle_10706-a00000000000132805961115-00001.xml");
-		FedoraUtil.ingestFOXML(monograhObject.getFile());
-		FedoraUtil.ingestFOXML(pageObject.getFile());
+		FedoraUtil.ingestFOXML(monograhObject.getInputStream());
+		FedoraUtil.ingestFOXML(pageObject.getInputStream());
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -68,8 +71,8 @@ public class BaseTest implements ResourceLoaderAware {
 	@After
 	public void destroy() {
 		logger.info("Purging samples...");
-		FedoraUtil.purgeObject("bhle:10706-a00000000000132805961115");
-		FedoraUtil.purgeObject("bhle:10706-a00000000000132805961115-00001");
+		FedoraUtil.purgeObject(MONOGRAPH_PID);
+		FedoraUtil.purgeObject(PAGE_PID);
 		List<String> pids = FedoraUtil.getAllObjectsPids();
 		Assert.assrt(!pids.contains("bhle:10706-a00000000000132805961115"));
 		Assert.assrt(!pids

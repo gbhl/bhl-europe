@@ -5,10 +5,13 @@ import java.net.URI;
 import java.util.List;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.TestExecutionListeners;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.Assert;
 
 import com.bhle.access.storage.StorageService;
@@ -26,9 +29,9 @@ public class DerivativesFunctionalTest extends BaseTest {
 	public void testExistenceOfDerivatives() throws IOException,
 			InterruptedException {
 		logger.info("testExistenceOfDerivatives");
-//		Assert.notNull(service.openDatastream("a00000000000132805961115",
-//				"OLEF", null));
-//		Assert.notNull(service.openDatastream("a00000000000132805961115",
-//				"JP2", "00001"));
+		// Assert.notNull(service.openDatastream("a00000000000132805961115",
+		// "OLEF", null));
+		// Assert.notNull(service.openDatastream("a00000000000132805961115",
+		// "JP2", "00001"));
 	}
 }

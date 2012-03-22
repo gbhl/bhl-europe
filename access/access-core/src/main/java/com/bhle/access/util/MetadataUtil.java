@@ -31,8 +31,7 @@ public class MetadataUtil implements ResourceLoaderAware {
 				.getResource("classpath:xslt/OLEF2simpleDC.xsl");
 		try {
 			xslInputStream = olef2DcXsl.getInputStream();
-			InputStream result = transformXMLInputStream(xmlInputStream,
-					xslInputStream);
+			InputStream result = transform(xmlInputStream, xslInputStream);
 			return result;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -49,12 +48,11 @@ public class MetadataUtil implements ResourceLoaderAware {
 
 	public static InputStream olefToMods(InputStream xmlInputStream) {
 		InputStream xslInputStream = null;
-		Resource olef2DcXsl = resourceLoader
+		Resource olef2ModsXsl = resourceLoader
 				.getResource("classpath:xslt/OLEF2MODS.xsl");
 		try {
-			xslInputStream = olef2DcXsl.getInputStream();
-			InputStream result = transformXMLInputStream(xmlInputStream,
-					xslInputStream);
+			xslInputStream = olef2ModsXsl.getInputStream();
+			InputStream result = transform(xmlInputStream, xslInputStream);
 			return result;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -69,14 +67,34 @@ public class MetadataUtil implements ResourceLoaderAware {
 		return null;
 	}
 
-	public static InputStream olefToMarc21(InputStream xmlInputStream) {
+	public static InputStream olefToEse(InputStream xmlInputStream) {
+		InputStream xslInputStream = null;
+		Resource olef2EseXsl = resourceLoader
+				.getResource("classpath:xslt/OLEF2ESE.xsl");
+		try {
+			xslInputStream = olef2EseXsl.getInputStream();
+			InputStream result = transform(xmlInputStream, xslInputStream);
+			return result;
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				xmlInputStream.close();
+				xslInputStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
+	}
+
+	public static InputStream olefToMarcxml(InputStream xmlInputStream) {
 		InputStream xslInputStream = null;
 		Resource olef2DcXsl = resourceLoader
 				.getResource("classpath:xslt/OLEF2MARC21slim.xsl");
 		try {
 			xslInputStream = olef2DcXsl.getInputStream();
-			InputStream result = transformXMLInputStream(xmlInputStream,
-					xslInputStream);
+			InputStream result = transform(xmlInputStream, xslInputStream);
 			return result;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -111,8 +129,8 @@ public class MetadataUtil implements ResourceLoaderAware {
 		return BibUtils.mods2Endnote(modsInputStream);
 	}
 
-	private static InputStream transformXMLInputStream(
-			InputStream xmlInputStream, InputStream xslInputStream) {
+	public static InputStream transform(InputStream xmlInputStream,
+			InputStream xslInputStream) {
 		ByteArrayOutputStream bout = new ByteArrayOutputStream();
 
 		try {

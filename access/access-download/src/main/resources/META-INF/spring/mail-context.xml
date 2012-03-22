@@ -22,17 +22,33 @@
 		</property>
 	</bean>
 
-	<bean id="userFailureMail" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="from@no-spam.com" />
+	<bean id="failedMail" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="loylizh@gmail.com" />
 		<property name="to" value="loylizh@gmail.com" />
 		<property name="subject" value="[BHLE]Offline processing error" />
 		<property name="text">
 			<value>
 <![CDATA[
 Dear Administrator,
+
 An error occurred when generating the following file :
 Persistent ID : %s
 at %s
+]]>
+			</value>
+		</property>
+	</bean>
+
+	<bean id="successfulMail" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="loylizh@gmail.com" />
+		<property name="subject" value="[BHLE] Your requested digital copy is ready" />
+		<property name="text">
+			<value>
+<![CDATA[
+Dear User,
+
+Please click the following link to download your requested digital copy :
+link : ${download.offline.fetch.path}?path=${link}
 ]]>
 			</value>
 		</property>

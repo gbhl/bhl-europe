@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:mods="http://www.loc.gov/mods/v3" exclude-result-prefixes="mods"
+	xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:srw_dc="info:srw/schema/1/dc-schema"
 	xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
@@ -40,7 +41,7 @@ Version 1.0	2007-05-04 Tracy Meehleib <tmee@loc.gov>
 	<xsl:output method="xml" indent="yes"/>
 	
 	<xsl:template match="/">
-		<xsl:for-each select="//bibliographicInformation">
+		<xsl:for-each select="//olef:bibliographicInformation">
 		<oai_dc:dc xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
 			<xsl:apply-templates/>
 		</oai_dc:dc>

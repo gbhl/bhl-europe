@@ -10,7 +10,7 @@
 	<bean id="thumbnailBuilder" class="com.bhle.access.bookreader.ThumbnailBuilder"
 		p:storageService-ref="storageService" />
 
-	<bean id="extendedConvertorManager" parent="convertorManager">
+	<bean id="bookreaderExtendedConvertorManager" parent="convertorManager">
 		<property name="convertors">
 			<list merge="true">
 				<ref bean="bookInfoConvertor" />

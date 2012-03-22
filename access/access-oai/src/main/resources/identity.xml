@@ -1,0 +1,39 @@
+<Identify>
+  <repositoryName>Test Repository</repositoryName>
+  <baseURL>http://example.org/oai</baseURL>
+  <protocolVersion>2.0</protocolVersion>
+  <adminEmail>someone@somwhere.org</adminEmail>
+  <earliestDatestamp>2005-04-01T12:00:00Z</earliestDatestamp>
+  <deletedRecord>transient</deletedRecord>
+  <granularity>YYYY-MM-DDThh:mm:ssZ</granularity>
+  <compression>deflate</compression>
+  <description>
+    <oai-identifier 
+      xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation=
+          "http://www.openarchives.org/OAI/2.0/oai-identifier
+      http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+      <scheme>oai</scheme>
+      <repositoryIdentifier>example.org</repositoryIdentifier>
+      <delimiter>:</delimiter>
+      <sampleIdentifier>oai:example.org:item1</sampleIdentifier>
+    </oai-identifier>
+  </description>
+  <description>
+    <friends 
+        xmlns="http://www.openarchives.org/OAI/2.0/friends/" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/friends/
+       http://www.openarchives.org/OAI/2.0/friends.xsd">
+     <baseURL>http://oai.east.org/foo/</baseURL>
+     <baseURL>http://oai.hq.org/bar/</baseURL>
+     <baseURL>http://oai.south.org/repo.cgi</baseURL>
+   </friends>
+  </description>
+  <description>
+    <anything>
+      <thing name="any"/>
+    </anything>
+  </description>
+</Identify>

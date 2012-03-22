@@ -2,7 +2,6 @@ package com.bhle.access.download;
 
 import java.util.Map;
 
-
 public class Resolution {
 	private String resolution;
 	private static Map<String, Integer> MAP;
