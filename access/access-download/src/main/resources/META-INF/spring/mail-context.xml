@@ -14,12 +14,12 @@
 		<property name="password" value="${mail.password}" />
 
 		<!-- Only set for GMail -->
-		<property name="javaMailProperties">
+		<!-- <property name="javaMailProperties">
 			<props>
 				<prop key="mail.smtp.auth">true</prop>
 				<prop key="mail.smtp.starttls.enable">true</prop>
 			</props>
-		</property>
+		</property> -->
 	</bean>
 
 	<bean id="failedMail" class="org.springframework.mail.SimpleMailMessage">
@@ -48,7 +48,7 @@ at %s
 Dear User,
 
 Please click the following link to download your requested digital copy :
-link : ${download.offline.fetch.path}?path=${link}
+link : ${download.offline.fetch.path}?path=[link]
 ]]>
 			</value>
 		</property>

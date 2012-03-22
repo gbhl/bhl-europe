@@ -32,7 +32,7 @@ public class DownloadEmailResponseBuilder implements DownloadResponseBuilder {
 	private void sendEmail(DownloadRequest request,
 			OfflineDownloadResponse response) {
 		mail.setText(mail.getText().replace(
-				"${link}",
+				"[link]",
 				DownloadLocationHelper.encrypt(response.getBlob().getId()
 						.getSchemeSpecificPart())));
 		mail.setTo(((OfflineDownloadRequest) request).getEmail());
