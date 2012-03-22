@@ -34,6 +34,7 @@ public class ConvertorManager {
 				results.add(derivative);
 			}
 		}
+		datastream.close();
 		return results.toArray(new Derivative[] {});
 	}
 

@@ -25,6 +25,7 @@ public class DatastreamWrapper {
 		if (data == null) {
 			try {
 				data = IOUtils.toByteArray(inputStream);
+				inputStream.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -58,6 +59,10 @@ public class DatastreamWrapper {
 
 	public void setMimeType(String mimeType) {
 		this.mimeType = mimeType;
+	}
+
+	public void close() {
+		data = null;
 	}
 
 }

@@ -1,5 +1,6 @@
 package com.bhle.access.domain;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +43,15 @@ public class Derivative {
 	
 	public List<DatastreamConvertor> getConvertors() {
 		return convertors;
+	}
+	
+	public void close(){
+		try {
+			inputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		convertors = null;
 	}
 
 	

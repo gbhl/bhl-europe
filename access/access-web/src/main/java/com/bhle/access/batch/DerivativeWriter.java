@@ -21,6 +21,7 @@ public class DerivativeWriter implements ItemWriter<Derivative[]> {
 		for (Derivative[] derivatives : items) {
 			for (Derivative derivative : derivatives) {
 				store.updateDerivative(derivative);
+				derivative.close();
 			}
 		}
 

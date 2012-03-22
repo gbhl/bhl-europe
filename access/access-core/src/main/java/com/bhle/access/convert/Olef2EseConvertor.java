@@ -1,6 +1,5 @@
 package com.bhle.access.convert;
 
-import java.io.IOException;
 import java.io.InputStream;
 
 import org.springframework.core.io.Resource;

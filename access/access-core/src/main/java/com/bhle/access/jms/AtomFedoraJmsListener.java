@@ -32,6 +32,7 @@ public class AtomFedoraJmsListener {
 					.derive(objectWrapper);
 			for (Derivative derivative : objectDerivatives) {
 				storageService.updateDerivative(derivative);
+				derivative.close();
 			}
 			break;
 		case PURGE_OBJECT:
@@ -48,6 +49,7 @@ public class AtomFedoraJmsListener {
 					.derive(datastreamWrapper);
 			for (Derivative derivative : datastreamDerivatives) {
 				storageService.updateDerivative(derivative);
+				derivative.close();
 			}
 			break;
 		case PURGE_DATASTREAM:
