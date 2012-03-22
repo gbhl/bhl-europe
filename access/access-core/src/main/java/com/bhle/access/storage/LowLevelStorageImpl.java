@@ -94,6 +94,8 @@ public class LowLevelStorageImpl implements LowLevelStorage {
 		Blob blob = getBlob(connection, pid, dsId);
 		OutputStream out = openOutputStream(blob);
 		IOUtils.copy(in, out);
+		out.close();
+		in.close();
 		connection.close();
 	}
 
