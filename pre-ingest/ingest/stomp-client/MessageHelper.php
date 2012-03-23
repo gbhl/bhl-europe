@@ -8,8 +8,7 @@ class MessageHelper {
 	protected $_brokerUrl = null;
 	
 	protected $_client = null;
-	protected $_outbound_queue = "/queue/preingest";
-	protected $_inbound_topic = "/topic/ingest";
+	protected $_queue = "/queue/preingest";
 	
 	public function __construct ($brokerUrl) {
 		$this->_brokerUrl = $brokerUrl;
@@ -19,7 +18,7 @@ class MessageHelper {
 	}
 
 	public function informIngest ($guid, $uri) {
-		$this->_client->send($this->_outbound_queue, $this->transformToMapMessage($guid, $uri), array('persistent'=>'true'));
+		$this->_client->send($this->_queue, $this->transformToMapMessage($guid, $uri), array('persistent'=>'true'));
 	}
 	
 	private function transformToMapMessage ($guid, $uri) {
@@ -31,19 +30,7 @@ class MessageHelper {
 	}
 	
 	public function subscribe() {
-		$this->_client->subscribe($this->_inbound_topic);
-	}
-	
-	public function subscribe($topic) {
-		$this->_client->subscribe($topic);
-	}
-	
-	public function unsubscribe() {
-		$this->_client->unsubscribe($this->_inbound_topic);
-	}
-	
-	public function unsubscribe($topic) {
-		$this->_client->unsubscribe($topic);
+		$this->_client->subscribe($this->_queue);
 	}
 	
 	public function receive() {
