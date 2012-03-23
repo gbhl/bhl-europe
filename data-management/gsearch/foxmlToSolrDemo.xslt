@@ -148,7 +148,7 @@
 			<xsl:call-template name="mods" />
 		</xsl:for-each>
 		<xsl:for-each select="olef:element/olef:itemInformation">
-			<xsl:for-each select="files/file/pages/page/taxon/dwc:scientificName">
+			<xsl:for-each select="olef:files/olef:file/olef:pages/olef:page/olef:taxon/dwc:scientificName">
 				<xsl:element name="field">
 					<xsl:attribute name="name">olef_scientific_name</xsl:attribute>
 					<xsl:value-of select="." />
