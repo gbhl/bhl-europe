@@ -13,7 +13,7 @@
 	<amq:queue id="inboundDestination" physicalName="${jms.inbound.topic}" />
 	<amq:topic id="outboundDestination" physicalName="${jms.outbound.topic}" />
 
-	<amq:connectionFactory id="ingestConsumerConnectionFactory" brokerURL="${jms.broker.url}" clientID="ingest"/>
+	<amq:connectionFactory id="ingestConsumerConnectionFactory" brokerURL="${jms.broker.url}"/>
 	<amq:connectionFactory id="ingestProducerConnectionFactory" brokerURL="${jms.broker.url}" />
 
 	<bean id="ingestJmsProducerTemplate" class="org.springframework.jms.core.JmsTemplate"
