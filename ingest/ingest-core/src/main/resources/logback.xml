@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration>
-	<property name="log.path" value="${log.path}" />
+	<!--<property name="log.path" value="${logPath}" />  -->
+	<!-- if use resource the classpath is WEB-INF -->
+	<!--<property resource="XXX" />-->
+	
+	<!-- use resource the classpath is ingest-web -->
+	<property file="src/main/resources/batch-default.properties" />
 
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
