@@ -37,7 +37,7 @@ public class RecordProviderTest {
 	
 	@Test
 	public void testListESERecords(){
-		 Collection<Record> records = recordProvider.getRecordCollection(new Date(0), new Date(), "mods");
+		 Collection<Record> records = recordProvider.getRecordCollection(new Date(0), new Date(), "ese");
 		 for (Record record : records) {
 			System.out.println(record);
 		}
