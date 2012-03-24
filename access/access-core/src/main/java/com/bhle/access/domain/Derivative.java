@@ -51,7 +51,6 @@ public class Derivative {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		convertors = null;
 	}
 
 	

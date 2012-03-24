@@ -22,7 +22,7 @@ public class ImageUtil {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(ImageUtil.class);
-	
+
 	private static int DEFAULT_MAX_HEIGHT = 1920;
 	private static int DEFAULT_MAX_WIDTH = 1920;
 
@@ -51,11 +51,12 @@ public class ImageUtil {
 		} catch (IM4JavaException e) {
 			e.printStackTrace();
 		}
-
+		
 		ByteArrayInputStream byteIn = new ByteArrayInputStream(
 				byteOut.toByteArray());
 
 		try {
+			tiffIn.close();
 			byteOut.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -67,7 +68,7 @@ public class ImageUtil {
 	public static InputStream tiffToJp2(InputStream tiffIn) {
 		return tiffToJp2(tiffIn, DEFAULT_MAX_HEIGHT, DEFAULT_MAX_WIDTH);
 	}
-	
+
 	public static InputStream jp2ToThumbnail(InputStream jp2In) {
 		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
 
@@ -97,6 +98,7 @@ public class ImageUtil {
 				byteOut.toByteArray());
 
 		try {
+			jp2In.close();
 			byteOut.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -117,7 +119,8 @@ public class ImageUtil {
 			height = tiffHeight;
 			int tiffWidth = info.getImageWidth();
 			width = tiffWidth;
-			if (tiffHeight > DEFAULT_MAX_HEIGHT || tiffWidth > DEFAULT_MAX_WIDTH){
+			if (tiffHeight > DEFAULT_MAX_HEIGHT
+					|| tiffWidth > DEFAULT_MAX_WIDTH) {
 				if (tiffHeight > tiffWidth) {
 					double ratio = tiffHeight / DEFAULT_MAX_HEIGHT;
 					height = DEFAULT_MAX_HEIGHT;
@@ -128,7 +131,8 @@ public class ImageUtil {
 					width = DEFAULT_MAX_WIDTH;
 				}
 			}
-			
+
+			tiffIn.close();
 			tmpFile.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -137,6 +141,5 @@ public class ImageUtil {
 		}
 		return IOUtils.toInputStream(height + "," + width);
 	}
-	
-	
+
 }

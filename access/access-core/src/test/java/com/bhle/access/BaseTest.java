@@ -26,13 +26,13 @@ public class BaseTest implements ResourceLoaderAware {
 	private static final Logger logger = LoggerFactory
 			.getLogger(BaseTest.class);
 
-	private static ResourceLoader resourceLoader;
+	protected ResourceLoader resourceLoader;
 
-	public static String MONOGRAPH_PID = "bhle:10706-a00000000000132805961115";
-	public static String PAGE_PID = "bhle:10706-a00000000000132805961115-00001";
+	public String MONOGRAPH_PID = "bhle:10706-a00000000000132805961115";
+	public String PAGE_PID = "bhle:10706-a00000000000132805961115-00001";
 
 	public void setResourceLoader(ResourceLoader resourceLoader) {
-		BaseTest.resourceLoader = resourceLoader;
+		this.resourceLoader = resourceLoader;
 	}
 
 	@Before
@@ -68,7 +68,7 @@ public class BaseTest implements ResourceLoaderAware {
 		logger.info("Done");
 	}
 
-	@After
+//	@After
 	public void destroy() {
 		logger.info("Purging samples...");
 		FedoraUtil.purgeObject(MONOGRAPH_PID);
