@@ -40,9 +40,6 @@ public class Items {
 	public Response getItems() {
 		try {
 			List<URI> guids = service.listGuids();
-			for (URI uri : guids) {
-				logger.info(uri.toString());
-			}
 			return Response.ok(AtomFactory.buildAtom(guids))
 					.type(MediaType.APPLICATION_ATOM_XML).build();
 		} catch (IOException e) {

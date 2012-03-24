@@ -20,9 +20,6 @@ import com.bhle.access.util.StaticURI;
 
 public class RecordProviderImpl implements RecordProvider {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(RecordProviderImpl.class);
-
 	private SetInfoPrivoder setInfoPrivoder;
 
 	private MetadataFormatProvider metadataFormatProvider;

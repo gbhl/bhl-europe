@@ -41,20 +41,17 @@ public class OAIDriverImpl implements OAIDriver {
 
 	public RemoteIterator<MetadataFormat> listMetadataFormats()
 			throws RepositoryException {
-		System.out.println("listMetadataFormats");
 		return new RemoteIteratorImpl<MetadataFormat>(metadataFormatProvider
 				.getMetadataFormatCollection().iterator());
 	}
 
 	public RemoteIterator<Record> listRecords(Date from, Date until,
 			String mdPrefix) throws RepositoryException {
-		System.out.println("listRecords");
 		return new RemoteIteratorImpl<Record>(recordProvider
 				.getRecordCollection(from, until, mdPrefix).iterator());
 	}
 
 	public RemoteIterator<SetInfo> listSetInfo() throws RepositoryException {
-		System.out.println("listSetInfo");
 		return new RemoteIteratorImpl<SetInfo>(setInfoPrivoder
 				.getSetInfoCollection().iterator());
 	}
