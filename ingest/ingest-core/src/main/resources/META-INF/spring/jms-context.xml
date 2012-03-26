@@ -10,7 +10,7 @@
                            http://activemq.apache.org/schema/core 
                            http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd">
 
-	<amq:queue id="inboundDestination" physicalName="${jms.inbound.topic}" />
+	<amq:queue id="inboundDestination" physicalName="${jms.inbound.queue}" />
 	<amq:topic id="outboundDestination" physicalName="${jms.outbound.topic}" />
 
 	<amq:connectionFactory id="ingestConsumerConnectionFactory" brokerURL="${jms.broker.url}"/>
