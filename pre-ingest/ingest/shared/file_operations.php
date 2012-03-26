@@ -258,8 +258,6 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
 
 
 
-
-
 /**
  * CHECKT FILE AUF VORHANDENSEIN DIVERSER INHALTE (ARRAY)
  *
@@ -306,6 +304,7 @@ function file_get_extension($file_name)
 // ***************************************
 function file_remove_extension($file_name)
 // ***************************************
+// ENTFERNT (NUR LETZTE) EXTENSION
 {
      $pos1 = strrpos($file_name,".");
      
@@ -313,8 +312,6 @@ function file_remove_extension($file_name)
      
      return $file_name;
 }
-
-
 
 
 ?>
