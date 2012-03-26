@@ -190,7 +190,7 @@ KEIN AUTO INCREMENT
 ----------------------------
 
 
-attraktive popup hilfe über den icons alles in einem schritt zusammefassen ?
+attraktive popup hilfe ueber den icons alles in einem schritt zusammefassen ?
 
 support 4 all steps together?
 
@@ -230,11 +230,11 @@ schauen ob ppm in datenbank landen content_page_tifs
        BUGS
 ********************
 
-> - Der "Ingest Status" wird nicht aktualisiert (Übersicht)
+> - Der "Ingest Status" wird nicht aktualisiert (Uebersicht)
 bug: fixing planned 
 
-> - Der letzte Schritt (Ingest) wird automatisch ausgelöst (bzw. ausgegraut)
-automatisch ausgelöst - erklärung bitte?
+> - Der letzte Schritt (Ingest) wird automatisch ausgeloest (bzw. ausgegraut)
+automatisch ausgeloest - erklaerung bitte?
 
 
 // http://tomdancer.com/setting-a-timeout-on-file_get_contents-for-urls/
@@ -310,7 +310,7 @@ kernpunkt mets 2 fedora part:  FedoraMetsMarshallerService.java
 PreIngest/src/main/java/at/co/ait/domain/services/MetsMarshallerService.java?r=329
 
 
-./web ist lediglich das webinterface bestehend unzulängliches
+./web ist lediglich das webinterface bestehend unzulaengliches
 logging
 
 Der externe Link auf den Pre-Ingest Server lautet:
@@ -328,9 +328,9 @@ http://bhl-celsus.nhm.ac.uk/uploads/
 
 http://bhl-celsus.nhm.ac.uk/uploads/RBGE/Florav1-3/Volume1/
 
-festlegung der verz. stuktur über deliverable 2.1 (liegt im bhl wiki und heisst) 2pt1
+festlegung der verz. stuktur ueber deliverable 2.1 (liegt im bhl wiki und heisst) 2pt1
 
-transfer von pre-ingest in den git hub master zweig von google code rüber 
+transfer von pre-ingest in den git hub master zweig von google code rueber 
 google code stirbt
 
 http://fedora-commons.org/

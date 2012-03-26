@@ -48,7 +48,8 @@ if ((isset($content_id))&&(is_numeric($content_id)))
             // ACTIVE MQ MESSAGE (STOMP)
             include_once("message_broker.php");
 
-            if (mb_send_ready($cGUID,$destDir))     $fText .= "ActiveMQ ingest message sent.";
+            if ((_MODE=='production') && (mb_send_ready($cGUID,$destDir)))
+                $fText .= "ActiveMQ ingest message sent.";
 
             $endmsg .= $fText;
 

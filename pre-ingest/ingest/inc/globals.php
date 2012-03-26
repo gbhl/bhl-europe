@@ -6,7 +6,7 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-define("_APP_VERSION",       "1.66 beta");
+define("_APP_VERSION",       "1.68 beta");
 
 define("_APP_NAME",          "BHL-E Content Portal & Ingestion");
 
