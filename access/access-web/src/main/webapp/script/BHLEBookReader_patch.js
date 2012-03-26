@@ -549,6 +549,7 @@ BookReader.prototype.appendDownloadButtonAndDialog = function(){
 	$(".BRicon.info").before('<button class="BRicon download"></button>');
 	$('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
 	hiddenDiv.append(br.blankDownloadDiv());
+	this.updateDownloadDialog();
 }
 
 BookReader.prototype.appendOCRDialog = function(){

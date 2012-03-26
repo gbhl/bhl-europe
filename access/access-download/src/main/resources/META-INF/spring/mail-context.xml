@@ -23,8 +23,8 @@
 	</bean>
 
 	<bean id="failedMail" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="loylizh@gmail.com" />
-		<property name="to" value="loylizh@gmail.com" />
+		<property name="from" value="bhladmin@nhm.ac.uk" />
+		<property name="to" value="bhladmin@nhm.ac.uk" />
 		<property name="subject" value="[BHLE]Offline processing error" />
 		<property name="text">
 			<value>
@@ -40,7 +40,7 @@ at %s
 	</bean>
 
 	<bean id="successfulMail" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="loylizh@gmail.com" />
+		<property name="from" value="bhladmin@nhm.ac.uk" />
 		<property name="subject" value="[BHLE] Your requested digital copy is ready" />
 		<property name="text">
 			<value>

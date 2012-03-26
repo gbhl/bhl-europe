@@ -13,7 +13,7 @@
 	<import resource="classpath*:/META-INF/spring/integration-context.xml" />
 	<import resource="classpath*:/META-INF/spring/mail-context.xml" />
 	<import resource="classpath*:/META-INF/spring/akubra-context.xml" />
-	<!-- <import resource="classpath*:/META-INF/spring/schedule-context.xml" /> -->
+	<import resource="classpath*:/META-INF/spring/schedule-context.xml" />
 
 	<bean id="djatokaURLBuilder" class="com.bhle.access.util.DjatokaURLBuilder"
 		p:baseUrl="${djatoka.baseUrl}" />
