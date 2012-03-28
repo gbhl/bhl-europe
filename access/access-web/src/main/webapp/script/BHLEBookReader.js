@@ -16,7 +16,7 @@ $.event.props = res;
 br = new BookReader();
 
 br.bookInfo = bookInfo;
-
+console.log(br.bookInfo);
 // Return the width of a given page. Here we assume all images are 800 pixels
 // wide
 br.getPageWidth = function(index) {

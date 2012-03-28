@@ -1,5 +1,6 @@
 package com.bhle.access.convert;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.bhle.access.domain.DatastreamWrapper;
 import com.bhle.access.domain.Derivative;
 import com.bhle.access.domain.DigitalObjectWrapper;
+import com.bhle.access.util.RereadabelBufferedInputStream;
 
 public class ConvertorManager {
 
@@ -29,10 +31,17 @@ public class ConvertorManager {
 		for (DatastreamConvertor convertor : convertors) {
 			Derivative derivative = convertor.derive(datastream);
 			if (derivative != null) {
-				logger.info("Convert " + datastream.getDigitalObject().getPid() + "/" + convertor.getDatastreamId() + " to "
+				logger.info("Convert " + datastream.getDigitalObject().getPid()
+						+ "/" + convertor.getDatastreamId() + " to "
 						+ convertor.getDerivativeId());
 				results.add(derivative);
 			}
+		}
+		try {
+			((RereadabelBufferedInputStream) datastream.getInputStream())
+					.closeCompletely();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 		return results.toArray(new Derivative[] {});
 	}
@@ -65,7 +74,7 @@ public class ConvertorManager {
 		}
 		return null;
 	}
-	
+
 	public static String getSuffix(String dsid) {
 		for (DatastreamConvertor convertor : convertors) {
 			if (convertor.getDerivativeId().equalsIgnoreCase(dsid)) {

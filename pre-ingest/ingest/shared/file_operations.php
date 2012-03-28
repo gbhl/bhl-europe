@@ -206,8 +206,7 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
 {
     $rVal = array();
 
-    if (!is_array($arrLinesToRemove))
-    $arrLinesToRemove = array(" ","#","*","-","_","=",".",":","~");
+    if (!is_array($arrLinesToRemove)) $arrLinesToRemove = array(" ","#","*","-","_","=",".",":","~");
 
     $fp = @fopen($fileName,"r");
 
@@ -221,23 +220,28 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
         {
             $line = trim(trim(fgets($fp)),"\x00..\x1F");
             
+            // 1. $arrLinesToRemove WEG (DIE NUR AUS ZU ENTFERNENDEN ZEICHEN BESTEHEN)
             if (!$inverted)
             {
                 if ($ignoreCase) $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
-                else             $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
+                else             $probeLine = trim( str_replace($arrLinesToRemove,"",$line));
 
                 if ($probeLine != "")
                 {
-                    if (($commentLinePrefix=="")||(substr($line,0,strlen($commentLinePrefix))!=$commentLinePrefix))
+                    // KEINE KOMMENTARZEILEN
+                    if (($commentLinePrefix=="")||(substr(trim($line),0,strlen($commentLinePrefix))!=$commentLinePrefix))
                     $rVal[] = $line;
                 }
             }
+            // 2. ZEILEN DIE EINEN EINTRAG VON $arrLinesToRemove BEINHALTEN RUECKGEBEN
             else {
-                    if (($commentLinePrefix=="")||(substr($line,0,strlen($commentLinePrefix))!=$commentLinePrefix))
+                    // KEINE KOMMENTARZEILEN
+                    if (($commentLinePrefix=="")||(substr(trim($line),0,strlen($commentLinePrefix))!=$commentLinePrefix))
                     {
                         if ($ignoreCase)    $probeLine = trim(str_ireplace($arrLinesToRemove,"",$line)); 
-                        else                $probeLine = trim(str_replace($arrLinesToRemove,"",$line));
+                        else                $probeLine = trim( str_replace($arrLinesToRemove,"",$line));
 
+                        // EIN EINTRAG WURDE MIN. ERSETZT
                         if ($line!=$probeLine)  $rVal[] = $line;
                     }
                 }
@@ -251,8 +255,6 @@ function file_get_content_filtered($fileName,$arrLinesToRemove="",$commentLinePr
     
     return false;
 }
-
-
 
 
 
@@ -272,8 +274,15 @@ function file_content_exists($myFile,$myContent,$ignoreCase=false,$oneMatchOnly=
 {
     if (!is_readable($myFile)) return false;
     
-    return instr(file_get_contents($myFile, false, null, -1, $maxlen),
-            $myContent,$ignoreCase,$oneMatchOnly);
+    // DEFINED IN THE PHP SOURCE CODE AS PHP_STREAM_COPY_ALL, AND BECAUSE THAT IS NOT 
+    // AVAILABLE TO US MERE MORTAL USERS, THAT CONSTANT IS DEFINED AS  ((SIZE_T)-1) OR -1 
+
+    if (($maxlen!=null)&&(is_numeric($maxlen)))
+        return instr(file_get_contents($myFile, false, null, -1, $maxlen),
+        $myContent,$ignoreCase,$oneMatchOnly);
+    else
+        return instr(file_get_contents($myFile, false, null, -1),
+        $myContent,$ignoreCase,$oneMatchOnly);
 }
 
 
@@ -295,6 +304,7 @@ function file_get_extension($file_name)
 // ***************************************
 function file_remove_extension($file_name)
 // ***************************************
+// ENTFERNT (NUR LETZTE) EXTENSION
 {
      $pos1 = strrpos($file_name,".");
      
@@ -302,8 +312,6 @@ function file_remove_extension($file_name)
      
      return $file_name;
 }
-
-
 
 
 ?>

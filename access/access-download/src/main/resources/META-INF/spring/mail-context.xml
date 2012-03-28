@@ -14,25 +14,41 @@
 		<property name="password" value="${mail.password}" />
 
 		<!-- Only set for GMail -->
-		<property name="javaMailProperties">
+		<!-- <property name="javaMailProperties">
 			<props>
 				<prop key="mail.smtp.auth">true</prop>
 				<prop key="mail.smtp.starttls.enable">true</prop>
 			</props>
-		</property>
+		</property> -->
 	</bean>
 
-	<bean id="userFailureMail" class="org.springframework.mail.SimpleMailMessage">
-		<property name="from" value="from@no-spam.com" />
-		<property name="to" value="loylizh@gmail.com" />
+	<bean id="failedMail" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="bhladmin@nhm.ac.uk" />
+		<property name="to" value="bhladmin@nhm.ac.uk" />
 		<property name="subject" value="[BHLE]Offline processing error" />
 		<property name="text">
 			<value>
 <![CDATA[
 Dear Administrator,
+
 An error occurred when generating the following file :
 Persistent ID : %s
 at %s
+]]>
+			</value>
+		</property>
+	</bean>
+
+	<bean id="successfulMail" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from" value="bhladmin@nhm.ac.uk" />
+		<property name="subject" value="[BHLE] Your requested digital copy is ready" />
+		<property name="text">
+			<value>
+<![CDATA[
+Dear User,
+
+Please click the following link to download your requested digital copy :
+link : ${download.offline.fetch.path}?path=[link]
 ]]>
 			</value>
 		</property>

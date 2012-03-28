@@ -2,59 +2,23 @@
        TODO
 ********************
 
-stomp
-content provider token uppercase to 
-
-If the mods:recordContentSource field already contains the logged in content provider, no change is required. If the mods:recordContent does not exist or contains an entry which is not equal to the content provider login, add a new field with the login data.
-
-Logged in content provider refers to the provider-token preference in upper case.
-
-As mods:recordContentSource indicates the digitizing institution, the logged in content provider should be added as 
-
-
-
-----
-Tested with latest version of integration. Here is how to reproduce:
-
-Select an arbitrary content. Add it to ingest list. Run through all steps, finally create the METS output. 
-Open METS output and search for "accessCondition" -> nothing found.
-
-This only happens if you do not save your ingest list at least once, which means 
-the IPR-Statement from the users preferences are not written to the METS by default.
-
----------------------------------
-
-
-The selected IPR license text must be written to the olef:bibliographicInformation/mods:accessCondition field.
-
-See issue #319 for the original description.
-
-See http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#accesscondition for a detailed description of the field.
-
-@chris-sleep
-@lobajuluwa
-
-
----------------------------------
 
 
 
 
-if so let me know 
+define("_DB_USER",                  "bhletech");
+define("_DB_PWD",                   "bh!3t3ch");
+
+
+
 
 the sequence of a pdf (always 1 ?)
 
 currently for pdf sequence = pagenumber
 
-
 maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
 
-
 where 000001 is the extracted page sequence number 
-
-
-
-
 
 
 
@@ -233,7 +197,7 @@ KEIN AUTO INCREMENT
 ----------------------------
 
 
-attraktive popup hilfe über den icons alles in einem schritt zusammefassen ?
+attraktive popup hilfe ueber den icons alles in einem schritt zusammefassen ?
 
 support 4 all steps together?
 
@@ -273,11 +237,11 @@ schauen ob ppm in datenbank landen content_page_tifs
        BUGS
 ********************
 
-> - Der "Ingest Status" wird nicht aktualisiert (Übersicht)
+> - Der "Ingest Status" wird nicht aktualisiert (Uebersicht)
 bug: fixing planned 
 
-> - Der letzte Schritt (Ingest) wird automatisch ausgelöst (bzw. ausgegraut)
-automatisch ausgelöst - erklärung bitte?
+> - Der letzte Schritt (Ingest) wird automatisch ausgeloest (bzw. ausgegraut)
+automatisch ausgeloest - erklaerung bitte?
 
 
 // http://tomdancer.com/setting-a-timeout-on-file_get_contents-for-urls/
@@ -353,7 +317,7 @@ kernpunkt mets 2 fedora part:  FedoraMetsMarshallerService.java
 PreIngest/src/main/java/at/co/ait/domain/services/MetsMarshallerService.java?r=329
 
 
-./web ist lediglich das webinterface bestehend unzulängliches
+./web ist lediglich das webinterface bestehend unzulaengliches
 logging
 
 Der externe Link auf den Pre-Ingest Server lautet:
@@ -371,9 +335,9 @@ http://bhl-celsus.nhm.ac.uk/uploads/
 
 http://bhl-celsus.nhm.ac.uk/uploads/RBGE/Florav1-3/Volume1/
 
-festlegung der verz. stuktur über deliverable 2.1 (liegt im bhl wiki und heisst) 2pt1
+festlegung der verz. stuktur ueber deliverable 2.1 (liegt im bhl wiki und heisst) 2pt1
 
-transfer von pre-ingest in den git hub master zweig von google code rüber 
+transfer von pre-ingest in den git hub master zweig von google code rueber 
 google code stirbt
 
 http://fedora-commons.org/

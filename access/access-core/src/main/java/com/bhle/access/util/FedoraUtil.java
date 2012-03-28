@@ -3,9 +3,11 @@ package com.bhle.access.util;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +17,8 @@ import org.springframework.stereotype.Component;
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
+import com.yourmediashelf.fedora.client.request.FedoraRequest;
+import com.yourmediashelf.fedora.client.request.GetObjectProfile;
 import com.yourmediashelf.fedora.client.response.FedoraResponse;
 import com.yourmediashelf.fedora.client.response.FindObjectsResponse;
 import com.yourmediashelf.fedora.client.response.GetDatastreamResponse;
@@ -40,19 +44,20 @@ public class FedoraUtil {
 	public static List<String> getAllObjectsPids() {
 		List<String> pids = new LinkedList<String>();
 		String token = null;
-		
+
 		do {
 			FindObjectsResponse findObjectsResponse = null;
 			try {
-				findObjectsResponse = FedoraClient
-				.findObjects().terms("*").pid().sessionToken(token).maxResults(Integer.MAX_VALUE).execute(client);
+				findObjectsResponse = FedoraClient.findObjects().terms("*")
+						.pid().sessionToken(token)
+						.maxResults(Integer.MAX_VALUE).execute(client);
 			} catch (FedoraClientException e) {
 				e.printStackTrace();
 			}
 			pids.addAll(findObjectsResponse.getPids());
 			token = findObjectsResponse.getToken();
 		} while (token != null && !token.equals(""));
-		
+
 		return pids;
 	}
 
@@ -120,10 +125,51 @@ public class FedoraUtil {
 		return null;
 	}
 
+	public static String[] getAllInstances(String contentModel) {
+		String query = "select $object from <#ri> "
+				+ "where $object <fedora-model:hasModel> <info:fedora/"
+				+ contentModel + ">";
+		try {
+			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
+					.lang("itql").format("csv").type("tuples").execute(client);
+			String csv = IOUtils.toString(riSearchResponse
+					.getEntityInputStream());
+			return CsvUtil.readOneColumnCsv(csv);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static Date getLastModifiedDate(String pid) {
+		try {
+			GetObjectProfileResponse response = FedoraClient.getObjectProfile(pid).execute(client);
+			return response.getLastModifiedDate();
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		}
+		return null;
+		
+	}
+
 	public static void ingestFOXML(File file) {
 		try {
 			FedoraClient.ingest().content(file).execute(client);
 		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void ingestFOXML(InputStream in) {
+		try {
+			File tmp = File.createTempFile("FEDORATMP", null);
+			IOUtils.copy(in, FileUtils.openOutputStream(tmp));
+			FedoraClient.ingest().content(tmp).execute(client);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

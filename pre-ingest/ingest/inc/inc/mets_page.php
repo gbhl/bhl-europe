@@ -37,7 +37,7 @@ foreach ($nodeAttributes as $nodeAttribute)
     if ($nodeName=='isMemberOf')
     {
         if ($nodeAttribute->name == 'resource')
-        $curElement->setAttribute('rdf:resource','info:fedora/'.str_replace("/","-",($objID)));
+        $curElement->setAttribute('rdf:resource','info:fedora/'.$cleanObjID);
     }
         
 }

@@ -11,7 +11,7 @@
 include_once(_SHARED . "formlib.php");
 include_once(_SHARED . "imagelib.php");
 
-$ingestReady = false;       // SET TO TRUE IF LAST STEP SUCCEEDS
+$ingestReady = true;   // SET TO TRUE IF LAST STEP SUCCEEDS
 
 ?>
 
@@ -31,7 +31,7 @@ if ((isset($content_id))&&(is_numeric($content_id)))
             "margin-top: 75px; left: 350px;", "visible", 2);
 
     // INVOKE TARGET SCRIPT
-    include_once("inc/" . $menu_nav.".php");
+    include_once($menu_nav.".php");
 
     if (_MODE=='production') close_progressBar();    
 
@@ -40,14 +40,22 @@ if ((isset($content_id))&&(is_numeric($content_id)))
         // WRITE INGEST READY FILE 
         if ($ingestReady) 
         {
-            $fText = "This AIP is marked as ready for ingest for Fedora.";
-            
-            file_put_contents($destDir._FEDORA_CF_READY,date("Y-m-d H:i:s")."\t".$fText);
+            $fText = "This AIP is marked as ready for ingest for Fedora. ";
+
+            // CONTROLFILE
+            @file_put_contents($destDir._FEDORA_CF_READY,date("Y-m-d H:i:s")."\t".$fText);
+
+            // ACTIVE MQ MESSAGE (STOMP)
+            include_once("message_broker.php");
+
+            if ((_MODE=='production') && (mb_send_ready($cGUID,$destDir)))
+                $fText .= "ActiveMQ ingest message sent.";
 
             $endmsg .= $fText;
 
             unset($fText);
         }
+        else  $endmsg .= "Due some missing information the package is not ready for ingest.";
     }
     else if ((_QUEUE_MODE)&&($menu_nav!='get_metadata'))
     {

@@ -11,6 +11,7 @@ import org.im4java.core.Info;
 import org.im4java.core.InfoException;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.ResourceLoaderAware;
@@ -82,6 +83,7 @@ public class ConvertorTest implements ResourceLoaderAware {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testTiff2JpegConvertor() {
 		Tiff2JpegConvertor tiffConvertor = new Tiff2JpegConvertor();
@@ -116,13 +118,14 @@ public class ConvertorTest implements ResourceLoaderAware {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testOlefConvertors() {
 		Olef2DcConvertor olef2DcConvertor = new Olef2DcConvertor();
 		Olef2Marc21Convertor olef2Marc21Convertor = new Olef2Marc21Convertor();
 		Olef2ModsConvertor olef2ModsConvertor = new Olef2ModsConvertor();
 		Olef2OlefConvertor olef2OlefConvertor = new Olef2OlefConvertor();
-		
+
 		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
 		convertors.add(olef2DcConvertor);
 		convertors.add(olef2Marc21Convertor);
@@ -133,7 +136,7 @@ public class ConvertorTest implements ResourceLoaderAware {
 
 		Derivative[] derivatives = ConvertorManager
 				.derive(olefDatastreamWrapper);
-		
+
 		Assert.assertEquals(4, derivatives.length);
 	}
 }

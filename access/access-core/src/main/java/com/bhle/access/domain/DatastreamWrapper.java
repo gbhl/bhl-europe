@@ -1,11 +1,8 @@
 package com.bhle.access.domain;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 
-import org.apache.commons.io.IOUtils;
+import com.bhle.access.util.RereadabelBufferedInputStream;
 
 public class DatastreamWrapper {
 	private InputStream inputStream;
@@ -13,27 +10,17 @@ public class DatastreamWrapper {
 	private String dsid;
 	private String mimeType;
 
-	private byte[] data;
-
 	public DatastreamWrapper(String dsid) {
 		this.dsid = dsid;
 	}
 
-	// Buffer Datastream for multiple reads
 	public InputStream getInputStream() {
-		// not buffered yet
-		if (data == null) {
-			try {
-				data = IOUtils.toByteArray(inputStream);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		return new ByteArrayInputStream(data);
+		return inputStream;
 	}
 
+	// Buffer Datastream for multiple reads
 	public void setInputStream(InputStream inputStream) {
-		this.inputStream = inputStream;
+		this.inputStream = new RereadabelBufferedInputStream(inputStream);
 	}
 
 	public DigitalObjectWrapper getDigitalObject() {

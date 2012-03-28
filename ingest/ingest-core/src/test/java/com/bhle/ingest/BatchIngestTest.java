@@ -60,7 +60,7 @@ public class BatchIngestTest implements ResourceLoaderAware {
 
 		jmsProducer.send(messageBody);
 		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 
 	@Test
@@ -68,6 +68,6 @@ public class BatchIngestTest implements ResourceLoaderAware {
 		int statusCode = service.purge("bhle:10706-a0000000000000000000test");
 		Assert.assertEquals(200, statusCode);
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 	}
 }

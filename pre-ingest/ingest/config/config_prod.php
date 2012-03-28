@@ -175,7 +175,7 @@ $arrIPR = array(
 "http://www.europeana.eu/rights/unknown/"=>              "Europeana: Unknown copyright status"
 );
 
-define ("_DEFAULT_IPR",               0);
+define ("_DEFAULT_IPR",               0);                // REFERENCES TO THE LIST ABOVE (0...N)
 
 
 

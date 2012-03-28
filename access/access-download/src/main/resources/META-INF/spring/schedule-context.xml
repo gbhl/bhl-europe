@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context
+						http://www.springframework.org/schema/context/spring-context-3.0.xsd
+						http://www.springframework.org/schema/task
+						http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+	<task:scheduler id="offlineScheduler" />
+	<task:executor id="offlineExecutor" />
+	<task:annotation-driven scheduler="offlineScheduler"
+		executor="offlineExecutor" />
+		
+	<bean id="expiredFileCleaningJob"
+		class="com.bhle.access.download.schedule.ExpiredFileCleaningJob" />
+
+</beans>

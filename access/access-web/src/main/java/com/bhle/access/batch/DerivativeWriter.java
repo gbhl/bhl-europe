@@ -2,6 +2,7 @@ package com.bhle.access.batch;
 
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +22,7 @@ public class DerivativeWriter implements ItemWriter<Derivative[]> {
 		for (Derivative[] derivatives : items) {
 			for (Derivative derivative : derivatives) {
 				store.updateDerivative(derivative);
+				derivative.getInputStream().close();
 			}
 		}
 

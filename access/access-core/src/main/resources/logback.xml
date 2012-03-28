@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log.path}/access.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logs/access.%d{MM-dd-yyyy}.log.zip
+					</fileNamePattern>
+		</rollingPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>[%thread][%level][%file:%line] - %msg%n</pattern>
+		</layout>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="FILE" />
+	</root>
+
+</configuration>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration>
-
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<file>${log.path}/ingest.log</file>
@@ -23,7 +22,7 @@
 		<file>${log.path}/ingest.html</file>
 	</appender>
 
-	<root level="debug">
+	<root level="info">
 		<appender-ref ref="FILE" />
 		<appender-ref ref="HTML" />
 	</root>

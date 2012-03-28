@@ -6,6 +6,7 @@
 	xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:mods="http://www.loc.gov/mods/v3"
+	xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/"
 	xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
@@ -143,11 +144,11 @@
 	</xsl:template>
 
 	<xsl:template match="olef" name="olef">
-		<xsl:for-each select="element/bibliographicInformation">
+		<xsl:for-each select="olef:element/olef:bibliographicInformation">
 			<xsl:call-template name="mods" />
 		</xsl:for-each>
-		<xsl:for-each select="element/itemInformation">
-			<xsl:for-each select="files/file/pages/page/taxon/dwc:scientificName">
+		<xsl:for-each select="olef:element/olef:itemInformation">
+			<xsl:for-each select="olef:files/olef:file/olef:pages/olef:page/olef:taxon/dwc:scientificName">
 				<xsl:element name="field">
 					<xsl:attribute name="name">olef_scientific_name</xsl:attribute>
 					<xsl:value-of select="." />

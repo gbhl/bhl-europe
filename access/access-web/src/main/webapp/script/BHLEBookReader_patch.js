@@ -14,8 +14,6 @@ BookReader.prototype.getToolBox = function(index) {
         +     "<button class='BRicon add_page' title='Add this page to download basket'></button>"
 		+     "<button class='BRicon remove_page' title='Remove this page from download basket'></button>"
 		+     "<button class='BRicon ocr' title='Display OCR of this page'></button>"
-		// + "<button class='BRicon ubio' title='Show Scientific Names on this
-		// page'></button>"
         +   "</span>"
         + "</div>"
 	);
@@ -75,6 +73,9 @@ BookReader.prototype.addToolBox = function (index, page) {
 			}
 			self.positionToolBox(toolbox, page);
 			toolbox.show();
+			
+			//dirty code to trigger event
+			$(document).trigger('jumpToIndex', [index]);
         }).mouseout(function () {
 			toolbox.hide();
         });
@@ -203,8 +204,12 @@ BookReader.prototype.showPageOCR = function(index){
 	$.colorbox({inline: true, opacity: "0.5", href: "#BRocr", height: "500px"});
 }
 
-BookReader.prototype.startDownload = function(format, quality, ranges, whole) 
+BookReader.prototype.clickDownload = function(format, quality, ranges, email, whole) 
 {
+	if (ranges.length == 0){
+		return;
+	}
+	
 	var method = '';
 	switch(parseInt(format)){
 		case 1:
@@ -233,34 +238,39 @@ BookReader.prototype.startDownload = function(format, quality, ranges, whole)
 	
 	var url = '../download/' + br.bookInfo.guid + '/';
 	url += method;
-	url += '?ranges=';
 	
-	if (!whole && ranges.length != 0){
-		url += ranges;
-	} else if (!whole && ranges.length == 0){
-		return;
+	var self = this;
+	if (method == 'pdf' || method == 'jpg'){
+		self.showProgressPopup('Your request is sending to the server');
+		$.post(url, {ranges: ranges.toString(), resolution: resolution, email: email}, function(data){
+			$.colorbox.close();
+			$(self.popup).html('The server has received your request, please wait for our notification letter');
+			setTimeout(function(){
+				$(self.popup).fadeOut('slow', function() {
+	                self.removeProgressPopup();
+	            })        
+	        },3000);
+		});
+	} else if (method = 'ocr'){
+		url += '?ranges=' + ranges;
+		window.open(url);
 	}
-	
-	if (method != 'ocr'){
-		url += '&resolution=';
-		url += resolution;
-	} 
 
-	window.open(url);
 }
 
 BookReader.prototype.search = function(term) {
     // console.log('search called with term=' + term);
-    $('#textSrch').blur(); //cause mobile safari to hide the keyboard     
+    $('#textSrch').blur(); // cause mobile safari to hide the keyboard
     
     var url = 'search/' + this.bookInfo.guid + '?query=' + escape(term);
     
-    term = term.replace(/\//g, ' '); // strip slashes, since this goes in the url
+    term = term.replace(/\//g, ' '); // strip slashes, since this goes in the
+										// url
     this.searchTerm = term;
     
     this.removeSearchResults();
     this.showProgressPopup('<img id="searchmarker" src="'+this.imagesBaseURL + 'marker_srch-on.png'+'"> Search results will appear below...');
-    //$.ajax({url:url, dataType:'jsonp', jsonpCallback:'br.BRSearchCallback'});
+    // $.ajax({url:url, dataType:'jsonp', jsonpCallback:'br.BRSearchCallback'});
 	$.ajax({url:url, dataType:'json', success: function(data){br.BRSearchCallback(data);}});  
 }
 
@@ -319,25 +329,39 @@ BookReader.prototype.buildDownloadDiv = function(jDownloadDiv)
                         '<img src="' + this.imagesBaseURL + 'JPEG.png"/>',
 				'</fieldset>',
             '</fieldset>',
-			'<fieldset>',
+			'<fieldset class="format">',
 				'<label for="format">Quality:</label>',
 					'<select name="quality">',
 					 '<option value="high">High</option>',
 					  '<option value="medium" selected="selected">Medium</option>',
 					  '<option value="low">Low</option>',
 					'</select>',
-				'</fieldset>',
+			'</fieldset>',
+			'<fieldset class="email">',
+			'<label for="email">E-mail:</label>',
+				'<input name="email"/>',
+			'</fieldset>',
             '<fieldset class="center">',
-                '<button type="button" onclick="$.fn.colorbox.close(); br.startDownload($(\'input:radio[name=format]:checked\').val(), $(\'select[name=quality]\').get(0).selectedIndex, br.selectedPages, $(\'#whole_book\').is(\':checked\'));">Download</button>',
+                '<button type="button" onclick="br.clickDownload($(\'input:radio[name=format]:checked\').val(), $(\'select[name=quality]\').get(0).selectedIndex, br.selectedPages, $(\'input[name=email]\').val(), $(\'#whole_book\').is(\':checked\'));">Download</button>',
             '</fieldset>',
         '</form>'].join('\n'));
 	
-	var tns = this.getBasketThumbnails();
+	jForm.find(':radio').click(function(){
+		if (this.value == 2) {
+			$('.email').slideUp('slow');
+			$('.format').slideUp('slow');
+		} else {
+			$('.email').slideDown('slow');
+			$('.format').slideDown('slow');
+		}
+		$('#cboxLoadedContent').css('height', '');
+		$('#cboxContent').css('height', '');
+	});
 	
 	if (this.selectedPages.length == 0){
-		jForm.find('.thumbnailFieldset').append('(Empty)');
+		jForm.find('.thumbnailFieldset').append('Your download list is empty.');
 	} else {
-		jForm.find('.thumbnailFieldset').append(tns);
+		jForm.find('.thumbnailFieldset').append(this.getBasketThumbnails());
 	}
 	
 // jForm.find('#whole_book').click(function(){
@@ -389,7 +413,6 @@ BookReader.prototype.buildCollapsableBox = function(){
 			$('#BookReader').animate({
 				left : "210px",
 			}, function(){
-				console.log('Callback!');
 				self.prepareView();
 			});
 			$(this).addClass('BRcollapse').removeClass('BRexpand');
@@ -403,7 +426,6 @@ BookReader.prototype.buildCollapsableBox = function(){
 			$('#BookReader').animate({
 				left : "0px",
 			}, function(){
-				console.log('Callback!');
 				self.prepareView();
 			});
 			$(this).addClass('BRexpand').removeClass('BRcollapse');
@@ -495,6 +517,10 @@ BookReader.prototype.updateScientificNameList = function(index){
 	var nameList = $('#BRscientificNames').find('ol');
 	nameList.empty();
 	
+	if(undefined == this.bookInfo.pages[index]){
+		return;
+	}
+	
 	if(this.bookInfo.pages[index].scientificNames.length == 0){
 		var msgEntry = $('<li />');
 		msgEntry.text('No Names Found');
@@ -523,6 +549,7 @@ BookReader.prototype.appendDownloadButtonAndDialog = function(){
 	$(".BRicon.info").before('<button class="BRicon download"></button>');
 	$('#BRtoolbar').find('.download').colorbox({inline: true, opacity: "0.5", href: "#BRdownload", onLoad: function() { br.autoStop(); br.ttsStop(); } });
 	hiddenDiv.append(br.blankDownloadDiv());
+	this.updateDownloadDialog();
 }
 
 BookReader.prototype.appendOCRDialog = function(){

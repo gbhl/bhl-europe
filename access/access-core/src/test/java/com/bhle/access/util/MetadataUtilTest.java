@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -20,6 +22,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
 public class MetadataUtilTest implements ResourceLoaderAware {
+
+	private static final Logger logger = LoggerFactory
+			.getLogger(MetadataUtilTest.class);
+
 	private ResourceLoader resourceLoader;
 
 	public void setResourceLoader(ResourceLoader resourceLoader) {
@@ -38,7 +44,9 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 	public void testOlef2Dc() {
 		try {
 			InputStream in = MetadataUtil.olefToDc(olef.getInputStream());
-			print(in);
+			String dc = IOUtils.toString(in);
+			logger.debug(dc);
+			Assert.assertNotNull(dc);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -48,17 +56,34 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 	public void testOlef2Mods() {
 		try {
 			InputStream in = MetadataUtil.olefToMods(olef.getInputStream());
-			print(in);
+			String mods = IOUtils.toString(in);
+			logger.debug(mods);
+			Assert.assertNotNull(mods);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	@Test
+	public void testOlef2Ese() {
+		try {
+			InputStream in = MetadataUtil.olefToEse(olef.getInputStream());
+			String ese = IOUtils.toString(in);
+			logger.debug(ese);
+			Assert.assertNotNull(ese);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Ignore
+	@Test
 	public void testOlef2Marc21() {
 		try {
-			InputStream in = MetadataUtil.olefToMarc21(olef.getInputStream());
-			print(in);
+			InputStream in = MetadataUtil.olefToMarcxml(olef.getInputStream());
+			String marc21 = IOUtils.toString(in);
+			logger.debug(marc21);
+			Assert.assertNotNull(marc21);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -69,7 +94,9 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 	public void testOlef2BibTex() {
 		try {
 			InputStream in = MetadataUtil.olefToBibText(olef.getInputStream());
-			print(in);
+			String bib = IOUtils.toString(in);
+			logger.debug(bib);
+			Assert.assertNotNull(bib);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -80,7 +107,9 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 	public void testOlef2Endnote() {
 		try {
 			InputStream in = MetadataUtil.olefToEndnote(olef.getInputStream());
-			print(in);
+			String end = IOUtils.toString(in);
+			logger.debug(end);
+			Assert.assertNotNull(end);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -91,37 +120,34 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 		try {
 			Olef olefDoc = new Olef(olef.getInputStream());
 			String title = olefDoc.getTitle();
-			Assert.assertEquals("Billeder af Nordens flora", title);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	@Test
-	public void testGetOlefEntryPage() {
-		try {
-			Olef olefDoc = new Olef(olef.getInputStream());
-			String entryPage = olefDoc.getEntryPage();
-			Assert.assertEquals("18", entryPage);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	@Test
-	public void testOlefScientificNames(){
-		try {
-			Olef olefDoc = new Olef(olef.getInputStream());
-			List<String> names = olefDoc.getScientificNames(8);
-			Assert.assertEquals(39, names.size());
+			Assert.assertEquals(
+					"vegetation of Caithness considered in relation to the geology",
+					title);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	private void print(InputStream in) {
+	@Test
+	public void testGetOlefEntryPage() {
 		try {
-			IOUtils.copy(in, System.out);
+			Olef olefDoc = new Olef(olef.getInputStream());
+			String entryPage = olefDoc.getEntryPage();
+			Assert.assertEquals("2", entryPage);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void testOlefScientificNames() {
+		try {
+			Olef olefDoc = new Olef(olef.getInputStream());
+			List<String> names = olefDoc.getScientificNames(6);
+			for (String name : names) {
+				logger.debug(name);
+			}
+			Assert.assertEquals(1, names.size());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -30,7 +30,7 @@ public class Olef2Marc21Convertor extends AbstractDataStreamConvertor{
 
 	@Override
 	public InputStream doConvert(InputStream inputStream) {
-		return MetadataUtil.olefToMarc21(inputStream);
+		return MetadataUtil.olefToMarcxml(inputStream);
 	}
 
 	public String getDerivativeMimeType() {
