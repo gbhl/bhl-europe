@@ -75,7 +75,7 @@ function get_topic()
     /*
     Subscribe to ActiveMQ topic named 'ingest' by default
     */
-    $messageHelper->subscribe("/topic/preingest");
+    $messageHelper->subscribe("/topic/ingest");
     /*
     Wait and receive message from topic 'ingest' (60 seconds)
     Message content:
@@ -86,7 +86,7 @@ function get_topic()
     
     print_r($msg->map);
     
-    $messageHelper->unsubscribe("/topic/preingest");
+    $messageHelper->unsubscribe("/topic/ingest");
     
     return $msg;
     
