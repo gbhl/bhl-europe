@@ -3,7 +3,9 @@ package com.bhle.ingest.batch;
 import java.io.File;
 import java.net.URI;
 import java.util.Iterator;
+import java.util.List;
 
+import org.springframework.batch.core.JobExecutionException;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.annotation.BeforeStep;
 import org.springframework.batch.item.ItemReader;
@@ -35,6 +37,10 @@ public class SipReader implements ItemReader<File> {
 			URI uri = URI.create(stepExecution.getJobParameters().getString(
 					Sip.JOB_PARAM_URI_KEY));
 			Sip sip = new Sip(guid, uri);
+			List<File> items = sip.getItems();
+			if (items.isEmpty()){
+				throw new UnexpectedInputException("SIP has no item");
+			}
 			iterator = sip.getItems().iterator();
 		}
 		if (iterator.hasNext()) {
