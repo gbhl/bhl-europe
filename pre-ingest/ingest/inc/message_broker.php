@@ -43,8 +43,6 @@ function check_state()
 	$messageHelper = new MessageHelper("tcp://bhl-mandible.nhm.ac.uk:61613");
 	// add get_topic as a callback function
 	$messageHelper->subscribe('get_topic');
-	
-	return $messageHelper;
 }
 
 
