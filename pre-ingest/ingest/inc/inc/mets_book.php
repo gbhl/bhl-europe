@@ -46,23 +46,34 @@ if ($nodeValue=='*olefdata')
     </METS:xmlData></METS:mdWrap>
     </METS:techMD>
     </METS:amdSec>
+     
+    <olef>
+    <olef:olef xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/">
+    <olef:element>
+    ......
+    </olef:olef>
+    </olef> 
+     
     */
     if ($nodeName=='METS:xmlData')
     {
-        $arrAway = array("<?xml version=\"1.0\" encoding=\"utf-8\"?>","<olef>","</olef>");
+        $arrAway = array("<?xml version=\"1.0\" encoding=\"utf-8\"?>"," ","\n");   // "<olef>","</olef>",
 
         $olefXML = html_entity_decode(implode("\n",
                 file_get_content_filtered(_OLEF_FILE, $arrAway, "", true)));
         
-        // PLATZHALTER NODE ENTFERNEN
+        // OLEF PLATZHALTER NODE IM TEMPLATE ENTFERNEN
         $removeNode = $docRoot->getElementsByTagName('olef')->item(0);
+        if ($removeNode!=null)
+        $oldnode    = $curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
         
-        // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
-        $oldnode    = $curElement->removeChild($removeNode);
+        $removeNode = $docRoot->getElementsByTagName('olef:olef')->item(0);
+        if ($removeNode!=null)
+        $oldnode    = $curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
 
         // OLEF EINFUEGEN
         // $node    = $domDoc->createTextNode("olef","\n".$olefXML."\n");
-        $node    = $domDoc->createTextNode("<olef>\n".$olefXML."\n</olef>\n");
+        $node    = $domDoc->createTextNode($olefXML."\n");
         $newnode = $curElement->appendChild($node);
      }
 }

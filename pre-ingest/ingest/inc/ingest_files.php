@@ -234,7 +234,7 @@ function getPageInfoFromFile($file_path,$curOrderNumber=1,$errorTolerant=false)
         echo _ERR."Filename convention broken! Minimal requirements (PREFIX_SEQUENCE nomenclatur) not fulfilled.<br>\n 
             Please rename your uploaded page files according to the File Submission Guidelines.<br>\n
             (FSG: <b>PREFIX | SEQUENCE | [TYPE | PAGENUMBER]</b>)!<br>\n
-            Affected File: <font color=red><b>".$file_name.$file_ext."</b></font><br>\n";
+            Affected File: <font color=red><b>".(basename($file_path))."</b></font><br>\n";
 
         return false;
      }

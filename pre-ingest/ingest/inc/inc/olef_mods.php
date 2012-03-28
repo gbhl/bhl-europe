@@ -2,7 +2,7 @@
 // ********************************************
 // ** FILE:    OLEF_MODS.PHP                 **
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
-// ** DATE:    23.01.2012                    **
+// ** DATE:    23.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
@@ -33,8 +33,8 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 
         // ADD NODE     mods:accessCondition to bibliographicInformation
         $node = $domDoc->createElement("mods:accessCondition",$arrContentDetails['content_ipr']);
-        $node->setAttribute("xmlns:mods", "http://www.loc.gov/mods/v3");
-        $node->setAttribute("type", "use and reproduction");
+        $node->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
+        $node->setAttribute("type",         "use and reproduction");
 
         $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
@@ -63,19 +63,47 @@ if (!file_content_exists(_OLEF_FILE,"accessCondition",true,true))
 // ADD TAG IF NOT EQUAL TO CURRENT LOGGED IN CONTENT PROVIDER UPPERCASE
 // https://github.com/bhle/bhle/issues/365
 
+$newNodeName = "recordContentSource";
+
 $recordContentSource = strtoupper(trim($arrProvider['user_content_id']));
 if ($recordContentSource=='') $recordContentSource = strtoupper(trim($arrProvider['user_name']));
 
-if ((!file_content_exists(_OLEF_FILE,"mods:recordContentSource",true,true))||
-    (!file_content_exists(_OLEF_FILE,"mods:recordContentSource>".$recordContentSource,true,true)))
+// EXISTIERT RICHTIGER EINTRAG BEREITS?
+if ((!file_content_exists(_OLEF_FILE,$recordContentSource."</mods:".$newNodeName,true,true)))    
 {
     // LOAD OLEF TO DOM
     $domDoc   = new DOMDocument();
     @$domDoc->load(_OLEF_FILE);
 
-    // ADD NODE     mods:recordContentSource to bibliographicInformation
-    $node = $domDoc->createElement("mods:recordContentSource",  $recordContentSource);
+    // 1. ETWAIGE VORH. FALSCHE EINTRAEGE LOESCHEN (FALSCH DA OBIGE IF BEDINGUNG NICHT ERFUELLT)
+    // -----------------------------------------------------------------------------------------
+    $docRoot = $domDoc->documentElement;
+    
+    $allElements = $domDoc->getElementsByTagName('*');      // RETURNS A NEW INSTANCE OF CLASS DOMNODELIST
 
+    // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
+    foreach( $allElements as $curElement )
+    {
+         $nodeAttributes = $curElement->attributes;
+         $nodeValue      = trim($curElement->nodeValue);
+         $nodeName       = trim($curElement->nodeName);
+
+         if ($nodeName=='olef:bibliographicInformation')    // IMMER MIT PREFIX !
+         {
+            $removeNode = $docRoot->getElementsByTagName($newNodeName)->item(0);
+            if ($removeNode!=null)
+            $oldnode    = $curElement->removeChild($removeNode);    // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
+
+            $removeNode = $docRoot->getElementsByTagName('mods:'.$newNodeName)->item(0);
+            if ($removeNode!=null)
+            $oldnode    = $curElement->removeChild($removeNode);    // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
+         }
+    }
+    
+    // 2. ADD RIGHT NODE     mods:recordContentSource to bibliographicInformation
+    $node = $domDoc->createElement("mods:".$newNodeName,  $recordContentSource);
+    $node->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
+    
     $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
     foreach($bis as $bi) {

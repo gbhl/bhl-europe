@@ -75,8 +75,7 @@ for ($i=0;$i<=$cPages;$i++)     // $cPages + 1 book
     
     $docRoot = $domDoc->documentElement;
 
-    // returns a new instance of class DOMNodeList
-    $allElements = $domDoc->getElementsByTagName('*');
+    $allElements = $domDoc->getElementsByTagName('*');      // RETURNS A NEW INSTANCE OF CLASS DOMNODELIST
 
     // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
     foreach( $allElements as $curElement )
