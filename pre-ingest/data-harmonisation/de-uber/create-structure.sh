@@ -32,11 +32,14 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	echo "processing $DIR ..."
 	cd $DIR
 	
+	BOOK_OUT_FOLDER=${OUT_FOLDER}/$DIR
+	SCANS_FOLDER=tiff
+	
 	# create top level folder
-	mkdir ${OUT_FOLDER}/$DIR
+	mkdir $BOOK_OUT_FOLDER
 	
 	# copy metadata for top level
-	cp *.oai_* ${OUT_FOLDER}/$DIR/
+	cp *.oai_* $BOOK_OUT_FOLDER
 
 	# read doc-types
 	DOC_TYPES=(`xmlstarlet sel $NAMESPACES_OAIDC -t -m "//dc:type[contains(text(), 'doc-type:')]" -v "text()" -n  metadata.oai_dc`)
@@ -61,9 +64,9 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 
 				rm -f ._* # remove all awk generated files
 				
-				awk -f $WORKDIR/create-structure.awk $METADATAFILE
+				awk -v 	targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $METADATAFILE
 
-					 cat  ._filenames
+					 #cat  ._filenames
 					 
 					 #dosome
 					 #echo $VALUE
