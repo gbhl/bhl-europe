@@ -68,7 +68,7 @@ public class BaseTest implements ResourceLoaderAware {
 		logger.info("Done");
 	}
 
-//	@After
+	@After
 	public void destroy() {
 		logger.info("Purging samples...");
 		FedoraUtil.purgeObject(MONOGRAPH_PID);
