@@ -26,10 +26,7 @@ public class ThumbnailBuilder {
 	public static InputStream build(String guid) {
 		Olef olef = getOlef(guid);
 		String entryPageName = olef.getEntryPage();
-		int entryPageIndex = 1;
-		if (!entryPageName.equals("")) {
-			entryPageIndex = Integer.valueOf(olef.getEntryPage()) - 1;
-		}
+		int entryPageIndex = Integer.valueOf(olef.getEntryPage());
 
 		FedoraURI entryPageUri = FedoraURI.getFedoraUri(guid, entryPageIndex,
 				"JP2");
@@ -75,7 +72,7 @@ public class ThumbnailBuilder {
 		}
 		return false;
 	}
-	
+
 	public static void save(String guid, InputStream thumbnailInputStream) {
 		Derivative derivative = new Derivative();
 		derivative.setPid(FedoraURI.getPidFromGuid(guid));

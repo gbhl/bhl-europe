@@ -9,7 +9,7 @@
 		<IfModule mod_rewrite.c> 
 			RewriteEngine On
 			RewriteBase /static
-			RewriteRule ^(\w{4})(\w{4})/?(.*)$ $1/$2/$1$2/$3
+			RewriteRule ^(\w{2})(\w{2})(\w{2})(\w{2})/?(.*)$ $1/$2/$3/$4/$1$2$3$4/$5
 		</IfModule>
 	</Directory>
 </IfModule>
