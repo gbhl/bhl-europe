@@ -18,6 +18,7 @@ NAMESPACES_OAIDC="-N oai_dc=http://www.openarchives.org/OAI/2.0/oai_dc/ -N dc=ht
 
 # prepare
 #
+echo "clearing old target folder ..."
 rm -rf $OUT_FOLDER
 mkdir -p $OUT_FOLDER
 cd $IN_FOLDER
