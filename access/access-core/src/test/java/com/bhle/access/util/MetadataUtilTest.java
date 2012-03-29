@@ -89,6 +89,7 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testOlef2BibTex() {
 		try {
@@ -101,6 +102,7 @@ public class MetadataUtilTest implements ResourceLoaderAware {
 		}
 	}
 
+	@Ignore
 	@Test
 	public void testOlef2Endnote() {
 		try {

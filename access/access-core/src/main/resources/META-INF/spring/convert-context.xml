@@ -22,8 +22,8 @@
 				<ref bean="Olef2ModsConvertor" />
 				<ref bean="Olef2EseConvertor" />
 				<!-- <ref bean="Olef2Marc21Convertor" /> -->
-				<ref bean="Olef2BibTexConvertor" />
-				<ref bean="Olef2EndnoteConvertor" />
+				<!-- <ref bean="Olef2BibTexConvertor" />
+				<ref bean="Olef2EndnoteConvertor" /> -->
 			</list>
 		</property>
 	</bean>
@@ -134,7 +134,7 @@
 
 	<bean id="metadataUtil" class="com.bhle.access.util.MetadataUtil" />
 
-	<bean id="bibUtils" class="com.bhle.access.util.BibUtils">
+	<!-- <bean id="bibUtils" class="com.bhle.access.util.BibUtils">
 		<property name="LINUX_XML2BIB">
 			<value>classpath:bibutils/linux/xml2bib</value>
 		</property>
@@ -147,6 +147,6 @@
 		<property name="WIN_XML2END">
 			<value>classpath:bibutils/windows/xml2end.exe</value>
 		</property>
-	</bean>
+	</bean> -->
 
 </beans>
