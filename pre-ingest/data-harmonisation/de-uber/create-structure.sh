@@ -62,8 +62,6 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 				#	 {if (doPrint==1 && ! match($0,"^--.*") && length($0) > 0 ) print $0}' $METADATAFILE > sequence.txt
 				#
 
-				rm -f ._* # remove all awk generated files
-				
 				awk -v 	targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $METADATAFILE
 
 					 #cat  ._filenames

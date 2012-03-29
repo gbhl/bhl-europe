@@ -63,8 +63,9 @@ END {
  	while( dirList | getline > 0) {
  		# extract page number from tiff file
  		p=$0
-		sub("^0*", "", p);
-		sub(".tif", "", p);
+ 		sub("^.*_0", "", p); # remove everything up to the start of the page number
+		sub("^0*", "", p); # remove all remaining leading zeros
+		sub(".tif", "", p); # remove filename extension
 
 		if(chapters[p]){ # [EOC] = end of Chapter
 			if(chapters[p] == "[EOC]"){
