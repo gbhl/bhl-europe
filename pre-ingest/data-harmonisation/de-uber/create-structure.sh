@@ -49,7 +49,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 
 		if [[ -d work ]]; then
 			# if a txt metadata file exists
-			METADATAFILE=(`grep -rl -e "-- STRUCTURE --" work/`)
+			METADATAFILE=(`find -name "*.txt" | xargs grep -rl -e "-- STRUCTURE --" work/`)
 			if [[ $METADATAFILE ]]; then
 				echo "  using structure from txt metadata file $METADATAFILE"
 				
