@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-NEW_FOLDER="uber-fixed"
+NEW_FOLDER="uber-fetched"
 
 AA="oc.hu"
 BB="rlin.de"
@@ -42,7 +42,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	#
 	# get the index page of the book viewer (contains an TOC)
 	curl  $CURL_OPTIONS -o index.tmp "${BASE_URL}XML/index.xml"
-	tidy --quiet yes --show-warnings no -xml index.xml | xmllint --format - > index.xml
+	tidy --quiet yes --show-warnings no -xml index.tmp | xmllint --format - > index.xml
 	rm index.tmp
 
 
