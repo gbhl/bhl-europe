@@ -3,6 +3,22 @@
 #
 #
 
+function splitPagesRange(string) {
+	pages[1] = "";
+	pages[2] = "";
+	fromPage = "";
+	toPage = "";
+	
+	n=split(string, pages, "-"); 
+	if(n == 2){
+		fromPage=pages[1];
+		toPage=pages[2];
+	} else {
+		fromPage=$2;
+		toPage=$2;
+	}
+}
+
 BEGIN {
 	if( targetFolder == "" || scansFolder ==""){
 		print "targetFolder and scansFolder must be specified when executing this script";
@@ -19,20 +35,35 @@ BEGIN {
 	pageTypeMap["part"] = "page";
 	pageTypeMap["tocmap"] = "index";
 
-}
-{if ($1 == "ID_Inventar:") {id=$2; print id >> "._id"} }
-{if (index($0, "STRUCTURE")) inStructure=1} 
-{if (index($0, "SEQUENCE")) inStructure=0} 
-{if (inStructure==1 && ! match($0,"^--.*") && length($2) > 0 ) { 
+	inSequence=0;
+	inStructure=0;
 
-		n=split($2, pages, "-"); 
-		if(n == 2){
-			fromPage=pages[1];
-			toPage=pages[2];
-		} else {
-			fromPage=$2;
-			toPage=$2;
-		}
+}
+#
+# part detection
+#
+{
+	if ($1 == "ID_Inventar:") {id=$2;} 
+}
+{
+	if ( index($0, "STRUCTURE") ) {
+		inStructure=1;
+		inSequence=0;
+	}
+} 
+{
+	if ( index($0, "SEQUENCE")) {
+		inStructure=0; 
+		inSequence=1;
+	}
+}
+#
+# parsing
+# 
+{
+	if (inStructure==1 && ! match($0,"^--.*") && length($2) > 0 ) { 
+
+		splitPagesRange($2);
 
 		# one line per chapter subfolder
 		i=3;
@@ -73,7 +104,42 @@ BEGIN {
 
 	}
 }
+{	
+	if (inSequence==1 && ! match($0,"^--.*") && length($1) > 0 ) { 
 
+		# parse page sequence number to printed number information
+		splitPagesRange($1);
+		indexFrom = fromPage;
+		indexTo= toPage;
+
+		#print $1, indexFrom, indexTo;
+		
+		if($3) {
+			splitPagesRange($3);
+			printedfromPage = fromPage;
+			#print "   printed: ", $3, printedfromPage;
+		} else {
+			printedfromPage = "";
+		}
+
+		if(printedfromPage != "") {	
+			currentIndex = indexFrom;
+			i = 0;
+			while(currentIndex <= indexTo){
+				print currentIndex, printedfromPage + i;
+				printedPage[currentIndex] = printedfromPage + i;
+				# increase counter
+				i++;
+				currentIndex = indexFrom + i;
+			}
+		}
+
+
+	}
+}
+#
+# processing
+#
 END {
 	dirList = "ls -1 " scansFolder;
 	# start output in targetFolder
@@ -85,6 +151,7 @@ END {
 		sub("^0*", "", p); # remove all remaining leading zeros
 		sub(".tif", "", p); # remove filename extension
 
+		# handle chapters: create sub folder, print title file, etc
 		if(chapters[p]){ # [EOC] = end of Chapter
 			if(chapters[p] == "[EOC]"){
 				print "CHAPTER: " p ": " chapters[p];
@@ -100,11 +167,18 @@ END {
 			}
 		}
 
+		# process image files
 		if(filenames[p]){
-			newFilename = filenames[p] ".tiff"
+			if(printedPage[p] != ""){
+				newFilename = filenames[p] "_" printedPage[p] ".tif";
+			} else {
+				newFilename = filenames[p] ".tif";
+			}
+			
 		} else {
 			newFilename = $0;
 		}
+
 		# copy scan to new folder and give it a new name
 		system("cp " scansFolder "/" $0 " " outDir "/" newFilename);
 	}
