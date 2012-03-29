@@ -2,11 +2,23 @@
 #
 #
 #
+
 BEGIN {
 	if( targetFolder == "" || scansFolder ==""){
 		print "targetFolder and scansFolder must be specified when executing this script";
 		exit;
 	}
+	# mapping of non standart uber page types to BHL-E page types:
+	pageTypeMap["chapter"] = "page";
+	pageTypeMap["titlepage"] = "title";
+	pageTypeMap["foreword"] = "preface";
+	pageTypeMap["errata"] = "page";
+	pageTypeMap["toc"] = "index";
+	pageTypeMap["tocimage"] = "index";
+	pageTypeMap["tocplates"] = "index";
+	pageTypeMap["part"] = "page";
+	pageTypeMap["tocmap"] = "index";
+
 }
 {if ($1 == "ID_Inventar:") {id=$2; print id >> "._id"} }
 {if (index($0, "STRUCTURE")) inStructure=1} 
@@ -37,20 +49,26 @@ BEGIN {
 			lastToken = $i;
 			i++;
 		}
-		print fromPage ": " chapterLine;
+		
 		# avoid empty chapter lines
 		gsub("\s", "", chapterLine);
 		if(chapterLine != ""){	
 			chapters[fromPage] = chapterLine;
 			eocPage = toPage + 1;
-			print "eocPage " eocPage;
 			chapters[eocPage] = "[EOC]"; # end of Chapter, will potentially be overwritten by next chapter start
 		}
 		
+		pageType = $1;
+		if(pageTypeMap[pageType]) {
+			pageType = pageTypeMap[pageType];
+		}
+		pageType = toupper(pageType);
 		# one image filename per line
 		for(p=fromPage; p<=toPage; p++) {
-		#print id "_" p  "_" $1 >> "._filenames";
-		filenames[p] = id "_" p  "_" $1
+			#print id "_" p  "_" $1 >> "._filenames";
+			paddedp = sprintf("%08d", p);
+			print paddedp;
+			filenames[p] = id "_" paddedp  "_" pageType
 		}
 
 	}
@@ -76,6 +94,7 @@ END {
 					chapterDir = id "_" p;
 					print "CHAPTER: " p ": " chapters[p];
 					system("mkdir " targetFolder "/" chapterDir);
+					print chapters[p] > targetFolder "/" chapterDir "/chapter-title.txt"; 
 				}
 				outDir = targetFolder "/" chapterDir;
 			}
