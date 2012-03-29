@@ -53,7 +53,7 @@ public class Olef {
 
 	public String getEntryPage() {
 		return (String) evaluateXpath(
-				"count(//olef:reference[@type='title' or @type='Title' or @type='TITLE']/../preceding-sibling::*)+1",
+				"count(//olef:page[@pageType='title' or @pageType='Title' or @pageType='TITLE']/../../preceding-sibling::*)+1",
 				XPathConstants.STRING);
 	}
 
