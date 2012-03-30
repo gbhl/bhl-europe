@@ -117,7 +117,7 @@ $arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
 
 // LOAD OLEF TO DOM
 $domDoc   = new DOMDocument();
-@$domDoc->load(_OLEF_FILE);
+@$domDoc->load($olef_file);
 
 $docRoot = $domDoc->documentElement;
 
@@ -155,11 +155,10 @@ $containerElement = $domDoc->getElementsByTagName('element')->item(0);
 
 
 // CLEANUP FIRST IF PART TO ADD EXISTS
-$dropNode = $docRoot->getElementsByTagName($arrNewNodes[0])->item(0);
-
-// VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
-if (($dropNode)&&($dropNode!=null))
-$containerElement->removeChild($dropNode);
+$dropNode = null;
+$dropNode = @$docRoot->getElementsByTagName($arrNewNodes[0])->item(0);
+if (($dropNode)&&($dropNode!=null)&&($dropNode!='null'))            // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
+@$containerElement->removeChild($dropNode);
 
 
 
@@ -264,7 +263,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 
 // SPEICHERN MODIFIZIERTEN OLEF
 
-if ($domDoc->save(_OLEF_FILE)>0) echo "OLEF saved, OLEF pages generated ... ok\n";
+if ($domDoc->save($olef_file)>0) echo "OLEF saved, OLEF pages generated ... ok\n";
 else                             echo _ERR." OLEF page elements could not be written!\n";
 
 

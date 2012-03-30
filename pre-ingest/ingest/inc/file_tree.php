@@ -24,7 +24,7 @@ loadMessage 	Message to display while initial tree loads (can be HTML) 	Loadingâ
 
 $showTime = true;
 
-if ((isset($root))&&(isset($start_root)))
+if (  (isset($root)) && (isset($start_root)) && (instr($root,_CONTENT_ROOT,true,true)) )
 {
 
 // AJAX REQUERST LIEFERT VAR DIR MIT
@@ -132,7 +132,8 @@ js_end();
 
 }
 }       // ISSET ROOT
-
+else
+    echo _ERR."Security problematic, connection details etc. logged..."
 
 
 ?>

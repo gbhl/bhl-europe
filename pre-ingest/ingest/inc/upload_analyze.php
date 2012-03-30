@@ -25,7 +25,12 @@ else                        $analyzeDir = clean_path($analyzeDir);
 ob_start();
 
 echo "<center><h2 style='margin-top: 5px ! important;'>Content Analyzer - <font color=green>activates new Content</font>
-    <br><font color=blue size=2><b>From your home directory: ".$analyzeDir."/...</b></font></h2>";
+    <br><font color=blue size=2><b>From your home directory: ".$analyzeDir."/...</b>
+    <br>For SERIALS check only the serials root folder!</font></h2>";
+
+form('dir_details');
+hidden("menu_nav",      $menu_nav);
+
 
 if (_MODE=='production')
 progressBar("Please wait, reading Files<br>to database...","processing.gif","margin-top: 55px; left: 350px;","visible",2);
@@ -47,10 +52,14 @@ if ( (!isset($dirSelected)) || (!is_dir(clean_path($analyzeDir."/".$dirSelected)
     $arrDir = getDirectory($analyzeDir,array(),0,array('.', '..',_AIP_DIR ),0);
     $anzDir = count($arrDir);
     
-    echo "<table cellpadding=3 cellspacing=3 border=0 style='border: 1px solid black;'>\n";
     
     if ($anzDir>0)
     {
+        hidden("sub_action",    "save_dir_details");
+        hidden("analyzeDir",    urlencode($analyzeDir));
+
+        echo "<table cellpadding=\"3\" cellspacing=\"3\" border=\"0\" style=\"border: 1px solid black;\">\n";        
+
         for ($i=0;$i<$anzDir;$i++)    
         {
             if (is_dir($arrDir[$i]))    
@@ -59,17 +68,31 @@ if ( (!isset($dirSelected)) || (!is_dir(clean_path($analyzeDir."/".$dirSelected)
                 
                 $myUrl = _SYSTEM."?menu_nav=".$menu_nav."&analyzeDir=".urlencode($analyzeDir)."&dirSelected=".$curRelativeDir;
                 
-                echo "<tr style='background-color: white;' onMouseOver=\"this.style.backgroundColor='#ffffaa';\" onMouseOut=\"this.style.backgroundColor='white';\">
-                    <td style='width: 550px;'><a style='text-decoration: none;' href=\"".$myUrl."\">";
+                echo "<tr style=\"background-color: white;\" onMouseOver=\"this.style.backgroundColor='#ffffaa';\" onMouseOut=\"this.style.backgroundColor='white';\">
+                    <td style=\"width: 550px;\"><a style=\"text-decoration: none;\" href=\"".$myUrl."\">";
                 
-                icon("folder_16.png");  echo " .".$curRelativeDir."</a><br></td></tr>\n";
+                icon("folder_16.png");  echo " .".$curRelativeDir."</a><br>";
+                
+                echo _TD;
+                
+                $myJS = "onClick=\"javascript: if (this.checked) { if (!confirm('Do you really want to activate content at your root?')) { this.checked=false; } }    \"";
+                
+                checkbox("enable_".$i,0,"",$myJS,"","",true,$arrDir[$i]);
+                
+                // checkbox($variable, $checked, $title, $js_action, $text_position, $tabindex, $echome, $value)
+                
+                echo "</tr>\n";
             }
         }
+        
+        echo _TAB;
+        nl();
+        button("SAVE - your current activation selection","submit",900);
     }
     else
         echo $strNoContent;
     
-    echo _TAB;
+   
     
     if (_MODE=='production') close_progressBar();
     
@@ -97,16 +120,13 @@ else
 
         if (_MODE=='production') close_progressBar();
 
-	form('dir_details');
-	 
+
 	if ($anzDir>0)
 	{
 		if ((!isset($curpage))||(!is_numeric($curpage))) $curpage = 1;            // _MAX_LISTLEN page
                 
-		hidden("menu_nav",      $menu_nav);
 		hidden("sub_action",    "save_dir_details");
                 hidden("curpage",       $curpage);
-                
 		hidden("analyzeDir",    urlencode(str_replace($dirSelected,"",$analyzeDir)));
                 hidden("dirSelected",   urlencode($dirSelected));
 
