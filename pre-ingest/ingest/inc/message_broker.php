@@ -37,60 +37,27 @@ function mb_send_ready($content_guid,$content_aip)
 // ***********************************************
 // CHECK INFORMATION FROM INGEST
 // ***********************************************
-function check_state($content_guid="")
+function check_state()
 // ***********************************************
 {
-    $messageHelper = new MessageHelper(_MB_URL);
-    
-    /*
-    Subscribe to ActiveMQ topic named 'ingest' by default
-    */
-    $messageHelper->subscribe();
-    /*
-    Wait and receive message from topic 'ingest' (60 seconds)
-    Message content:
-        "STATUS": ["COMPLETED", "FAILED"]
-        "EXCEPTIONS"(if FAILED): stackTrace from Batch Ingest
-    */
-    $msg = $messageHelper->receive();
-    
-    print_r($msg->map);
-    
-    $messageHelper->unsubscribe();
-    
-    return $msg;
-    
-    // Following process after receiving reports from Ingest Tool...
+	$messageHelper = new MessageHelper("tcp://bhl-mandible.nhm.ac.uk:61613");
+	// add get_topic as a callback function
+	$messageHelper->subscribe('get_topic');
 }
 
 
 // ***********************************************
-// ECHO INFORMATION FROM PREINGEST
+// ECHO INFORMATION FROM INGEST
 // ***********************************************
-function get_topic()
+function get_topic($msg)
 // ***********************************************
 {
-    $messageHelper = new MessageHelper(_MB_URL);
-    
-    /*
-    Subscribe to ActiveMQ topic named 'ingest' by default
-    */
-    $messageHelper->subscribe("/topic/ingest");
-    /*
-    Wait and receive message from topic 'ingest' (60 seconds)
-    Message content:
-        "STATUS": ["COMPLETED", "FAILED"]
-        "EXCEPTIONS"(if FAILED): stackTrace from Batch Ingest
-    */
-    $msg = $messageHelper->receive();
-    
-    print_r($msg->map);
-    
-    $messageHelper->unsubscribe("/topic/ingest");
-    
-    return $msg;
-    
-    // Following process after receiving reports from Ingest Tool...
+ 	$body = json_decode($msg->body);
+	echo_pre("guid: ".$body->GUID);
+	echo_pre("status: ".$body->STATUS);
+	if ($body->STATUS == "FAILED") {
+		echo_pre("exceptions: ".$body->EXCEPTIONS);
+	}
 }
 
 
@@ -101,17 +68,13 @@ function get_topic()
 function test_mb()
 // ***********************************************
 {
-    echo_pre(get_topic());
+    $messageHelper = check_state();
     
-    echo_pre(mb_send_ready("test-guid-123","/dev/null"));
-    
-    nl(2);
-    
-    sleep(2);
-    
-//  echo_pre(check_state());
-
-    echo_pre(get_topic());
+    mb_send_ready("test-guid-123","/dev/null");
+	
+	// A thread as a subscriber will echo the message from ingest with exceptions because /dev/null has no eligible item
+	
+	$messageHelper->unsubscribe();
 }
 
 

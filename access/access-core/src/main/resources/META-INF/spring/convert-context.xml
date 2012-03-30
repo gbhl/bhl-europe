@@ -22,8 +22,8 @@
 				<ref bean="Olef2ModsConvertor" />
 				<ref bean="Olef2EseConvertor" />
 				<!-- <ref bean="Olef2Marc21Convertor" /> -->
-				<!-- <ref bean="Olef2BibTexConvertor" /> <ref bean="Olef2EndnoteConvertor" 
-					/> -->
+				<!-- <ref bean="Olef2BibTexConvertor" />
+				<ref bean="Olef2EndnoteConvertor" /> -->
 			</list>
 		</property>
 	</bean>
@@ -110,25 +110,43 @@
 		</property>
 	</bean>
 
-	<!-- <bean id="Olef2BibTexConvertor" class="com.bhle.access.convert.Olef2BibTexConvertor"> 
-		<property name="contentModels"> <list> <value>info:fedora/bhle-cmodel:monographCModel</value> 
-		<value>info:fedora/bhle-cmodel:serialCModel</value> <value>info:fedora/bhle-cmodel:volumeCModel</value> 
-		<value>info:fedora/bhle-cmodel:chapterCModel</value> </list> </property> 
-		</bean> -->
+	<bean id="Olef2BibTexConvertor" class="com.bhle.access.convert.Olef2BibTexConvertor">
+		<property name="contentModels">
+			<list>
+				<value>info:fedora/bhle-cmodel:monographCModel</value>
+				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:volumeCModel</value>
+				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+			</list>
+		</property>
+	</bean>
 
-	<!-- <bean id="Olef2EndnoteConvertor" class="com.bhle.access.convert.Olef2EndnoteConvertor"> 
-		<property name="contentModels"> <list> <value>info:fedora/bhle-cmodel:monographCModel</value> 
-		<value>info:fedora/bhle-cmodel:serialCModel</value> <value>info:fedora/bhle-cmodel:volumeCModel</value> 
-		<value>info:fedora/bhle-cmodel:chapterCModel</value> </list> </property> 
-		</bean> -->
+	<bean id="Olef2EndnoteConvertor" class="com.bhle.access.convert.Olef2EndnoteConvertor">
+		<property name="contentModels">
+			<list>
+				<value>info:fedora/bhle-cmodel:monographCModel</value>
+				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:volumeCModel</value>
+				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+			</list>
+		</property>
+	</bean>
 
 	<bean id="metadataUtil" class="com.bhle.access.util.MetadataUtil" />
 
-	<!-- <bean id="bibUtils" class="com.bhle.access.util.BibUtils"> <property 
-		name="LINUX_XML2BIB"> <value>classpath:bibutils/linux/xml2bib</value> </property> 
-		<property name="LINUX_XML2END"> <value>classpath:bibutils/linux/xml2end</value> 
-		</property> <property name="WIN_XML2BIB"> <value>classpath:bibutils/windows/xml2bib.exe</value> 
-		</property> <property name="WIN_XML2END"> <value>classpath:bibutils/windows/xml2end.exe</value> 
-		</property> </bean> -->
+	<!-- <bean id="bibUtils" class="com.bhle.access.util.BibUtils">
+		<property name="LINUX_XML2BIB">
+			<value>classpath:bibutils/linux/xml2bib</value>
+		</property>
+		<property name="LINUX_XML2END">
+			<value>classpath:bibutils/linux/xml2end</value>
+		</property>
+		<property name="WIN_XML2BIB">
+			<value>classpath:bibutils/windows/xml2bib.exe</value>
+		</property>
+		<property name="WIN_XML2END">
+			<value>classpath:bibutils/windows/xml2end.exe</value>
+		</property>
+	</bean> -->
 
 </beans>

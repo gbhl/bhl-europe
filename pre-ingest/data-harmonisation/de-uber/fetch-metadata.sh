@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-NEW_FOLDER="uber-fixed"
+NEW_FOLDER="uber-fetched"
 
 AA="oc.hu"
 BB="rlin.de"
@@ -42,13 +42,13 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	#
 	# get the index page of the book viewer (contains an TOC)
 	curl  $CURL_OPTIONS -o index.tmp "${BASE_URL}XML/index.xml"
-	tidy --quiet yes --show-warnings no -xml index.xml | xmllint --format - > index.xml
+	tidy --quiet yes --show-warnings no -xml index.tmp | xmllint --format - > index.xml
 	rm index.tmp
 
 
 	# try the work directory
 	wget --progress=dot:mega -O work-index.xml "${BASE_URL}work/"
-	# only download if it is an http server directory index, this avoids 
+	# only download if it is an apache server directory index
 	is_dir_index=(`grep "Index of /ebind/mfn/"  work-index.xml`)
 	rm work-index.xml
 	echo $is_dir_index
@@ -71,6 +71,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	# clean up
 	rm -f index.*  
 	rm -f robots.txt
-
 	cd $WORKDIR
+
+	echo "FINISHED fetching metadata and files !!!!"
 done

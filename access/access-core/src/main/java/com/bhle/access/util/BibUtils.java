@@ -35,6 +35,10 @@ public class BibUtils {
 			try {
 				XML2BIB_PATH = LINUX_XML2BIB.getFile().getAbsolutePath();
 				XML2END_PATH = LINUX_XML2END.getFile().getAbsolutePath();
+				File xml2Bib = new File(XML2BIB_PATH);
+				xml2Bib.setExecutable(true, false);
+				File xml2End = new File(XML2END_PATH);
+				xml2End.setExecutable(true, false);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
