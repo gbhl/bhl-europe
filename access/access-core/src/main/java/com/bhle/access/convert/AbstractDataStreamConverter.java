@@ -14,11 +14,11 @@ import com.bhle.access.domain.DatastreamWrapper;
 import com.bhle.access.domain.Derivative;
 
 @Component
-public abstract class AbstractDataStreamConvertor implements
-		DatastreamConvertor {
+public abstract class AbstractDataStreamConverter implements
+		DatastreamConverter {
 
 	private static final Logger logger = LoggerFactory
-			.getLogger(AbstractDataStreamConvertor.class);
+			.getLogger(AbstractDataStreamConverter.class);
 
 	public boolean isApplicable(DatastreamWrapper datastream) {
 		return datastream.getDigitalObject().hasModel(getContentModels())

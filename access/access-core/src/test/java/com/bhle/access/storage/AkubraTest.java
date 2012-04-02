@@ -24,9 +24,9 @@ import org.springframework.test.annotation.ExpectedException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.bhle.access.convert.ConvertorManager;
-import com.bhle.access.convert.DatastreamConvertor;
-import com.bhle.access.convert.Olef2OlefConvertor;
+import com.bhle.access.convert.ConverterManager;
+import com.bhle.access.convert.DatastreamConverter;
+import com.bhle.access.convert.Olef2OlefConverter;
 import com.bhle.access.storage.akubra.mapper.file.FileMapper;
 import com.bhle.access.storage.akubra.mapper.file.SubFolderFileMapper;
 
@@ -45,10 +45,10 @@ public class AkubraTest {
 
 	@Before
 	public void init() {
-		Olef2OlefConvertor olefConvertor = new Olef2OlefConvertor();
-		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
+		Olef2OlefConverter olefConvertor = new Olef2OlefConverter();
+		List<DatastreamConverter> convertors = new ArrayList<DatastreamConverter>();
 		convertors.add(olefConvertor);
-		ConvertorManager.convertors = convertors;
+		ConverterManager.converters = convertors;
 	}
 
 	@Test

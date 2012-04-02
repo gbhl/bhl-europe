@@ -4,7 +4,7 @@ import com.bhle.access.domain.DatastreamWrapper;
 import com.bhle.access.domain.Derivative;
 
 
-public interface DatastreamConvertor {
+public interface DatastreamConverter {
 	public Derivative derive(DatastreamWrapper datastreamWrapper);
 
 	public Derivative deriveInformation(DatastreamWrapper datastream);

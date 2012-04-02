@@ -1,14 +1,21 @@
 package com.bhle.access.download;
 
-public class BasicDownloadRequest implements DownloadRequest{
+import org.akubraproject.Blob;
+
+import com.bhle.access.util.Resolution;
+
+public class BasicDownloadRequest implements DownloadRequest {
 
 	ContentType contentType;
 	String[] pageURIs;
 	Resolution resolution;
-	
+
+	Blob blob;
+	boolean isOffline;
+
 	public BasicDownloadRequest() {
 	}
-	
+
 	public BasicDownloadRequest(ContentType contentType, String[] pageURIs,
 			Resolution resolution) {
 		super();
@@ -32,6 +39,11 @@ public class BasicDownloadRequest implements DownloadRequest{
 		return resolution;
 	}
 
+	@Override
+	public Blob getBlob() {
+		return blob;
+	}
+
 	public void setContentType(ContentType contentType) {
 		this.contentType = contentType;
 	}
@@ -43,7 +55,14 @@ public class BasicDownloadRequest implements DownloadRequest{
 	public void setResolution(Resolution resolution) {
 		this.resolution = resolution;
 	}
-	
-	
-	
+
+	public void setBlob(Blob blob) {
+		this.blob = blob;
+	}
+
+	@Override
+	public boolean isOffline() {
+		return isOffline;
+	}
+
 }

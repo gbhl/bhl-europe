@@ -16,9 +16,9 @@ public class OfflineDownloadResponssFetcher {
 	public OfflineDownloadResponse fetch(String email, String filename)
 			throws IOException {
 		OfflineDownloadResponse response = new OfflineDownloadResponse();
-		Blob blob = storage.getBlob(email, filename);
+		Blob blob = storage.fetchBlob(email, filename);
 		if (blob.exists()) {
-			response.setBlob(storage.getBlob(email, filename));
+			response.setBlob(storage.fetchBlob(email, filename));
 		} else {
 			throw new IOException("Content not found");
 		}

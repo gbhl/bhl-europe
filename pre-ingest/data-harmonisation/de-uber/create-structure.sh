@@ -18,6 +18,7 @@ NAMESPACES_OAIDC="-N oai_dc=http://www.openarchives.org/OAI/2.0/oai_dc/ -N dc=ht
 
 # prepare
 #
+echo "clearing old target folder ..."
 rm -rf $OUT_FOLDER
 mkdir -p $OUT_FOLDER
 cd $IN_FOLDER
@@ -46,7 +47,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 		if [[ -d work ]]; then
 
 			# if a txt metadata file exists
-			METADATAFILE=(`grep -rl -e "-- STRUCTURE --" work/`)
+			METADATAFILE=(`find -name "*.txt" | xargs grep -l -e "-- STRUCTURE --"`)
 			if [[ $METADATAFILE ]]; then
 				echo "  using structure from txt metadata file $METADATAFILE"
 				

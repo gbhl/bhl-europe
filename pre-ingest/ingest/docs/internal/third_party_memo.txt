@@ -5,11 +5,8 @@
 
 
 
-
-define("_DB_USER",                  "bhletech");
-define("_DB_PWD",                   "bh!3t3ch");
-
-
+if ((!isset($sLevel))||($sLevel==1))    $olef_file = _OLEF_FILE;
+else                                    $olef_file = $destDir._AIP_OLEF_FN;
 
 
 the sequence of a pdf (always 1 ?)
@@ -344,6 +341,33 @@ http://fedora-commons.org/
 
 
 file:///D:/nhm/bhl-bits-doku/html/annotated.html
+
+
+
+
+*********************
+*** GOOD TO KNOW ****
+*********************
+
+protokoll, am 29.3.2012
+
+erstmalige information (!!)  über test instanz wo selbst deployed werden kann und testdaten nicht verloren gehen
+
+zugeständnis, dass serials keine hinweise über stufen besitzten zu welchen die daten in ihnen gehören -> mein vorschlag das 4 ebenen
+konstant geliefert werden wurde akzeptiert
+
+erstmalige information das pdf pagination kein beispiel gesendet wurde da momentan nun vernachlässigbar (keine infos dazu bislang obwohl x-fach nachgefragt)
+
+mein vorschlag .aip für jede stufe eigens zu liefern wurde akzeptiert und wird von nhmw an zheng etc. kommuniziert
+
+bislang immer noch kein wirkliches beispiel an korrekten serials verfügbar
+
+erstmals(!!!) wurde der link zu einem halbwegs korrekten serial beispiel geliefert, dies ist zwingend nötig und es kann nicht auf fsg
+verwiesen werden diese sind welsentlich zu schwach für eine alleinige spezifikation und lassen duzende fragen offen welche durch beispieldaten 
+entschärft werden können.
+
+hinweis auf abgabe der serials am freitag (d.h. in wenigen worten: 1 werktag zeit f. umsetzung besprochener änderungen wünsche)
+
 
 
 

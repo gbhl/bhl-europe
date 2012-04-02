@@ -4,21 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="bookInfoBuilder" class="com.bhle.access.bookreader.BookInfoBuilder"
-		p:storageService-ref="storageService" />
-
-	<bean id="thumbnailBuilder" class="com.bhle.access.bookreader.ThumbnailBuilder"
-		p:storageService-ref="storageService" />
-
-	<bean id="bookreaderExtendedConvertorManager" parent="convertorManager">
-		<property name="convertors">
-			<list merge="true">
-				<ref bean="bookInfoConvertor" />
-				<ref bean="thumbnailConvertor" />
-			</list>
-		</property>
-	</bean>
-
-	<bean id="bookInfoConvertor" class="com.bhle.access.bookreader.BookInfoConvertor" />
-	<bean id="thumbnailConvertor" class="com.bhle.access.bookreader.ThumbnailConvertor" />
+	<import resource="classpath*:/META-INF/spring/static-context.xml" />
+	<import resource="classpath*:/META-INF/spring/bookreader-convert-context.xml" />
+	
 </beans>

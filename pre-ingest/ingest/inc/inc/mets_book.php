@@ -60,16 +60,18 @@ if ($nodeValue=='*olefdata')
         $arrAway = array("<?xml version=\"1.0\" encoding=\"utf-8\"?>"," ","\n");   // "<olef>","</olef>",
 
         $olefXML = html_entity_decode(implode("\n",
-                file_get_content_filtered(_OLEF_FILE, $arrAway, "", true)));
+                file_get_content_filtered($olef_file, $arrAway, "", true)));
         
         // OLEF PLATZHALTER NODE IM TEMPLATE ENTFERNEN
-        $removeNode = $docRoot->getElementsByTagName('olef')->item(0);
-        if ($removeNode!=null)
-        $oldnode    = $curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
+        $removeNode = null;
+        $removeNode = @$docRoot->getElementsByTagName('olef')->item(0);
+        if (($removeNode!=null)&&($removeNode!='null')&&($removeNode))
+        @$curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
         
-        $removeNode = $docRoot->getElementsByTagName('olef:olef')->item(0);
-        if ($removeNode!=null)
-        $oldnode    = $curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
+        $removeNode = null;
+        $removeNode = @$docRoot->getElementsByTagName('olef:olef')->item(0);
+        if (($removeNode!=null)&&($removeNode!='null')&&($removeNode))
+        @$curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
 
         // OLEF EINFUEGEN
         // $node    = $domDoc->createTextNode("olef","\n".$olefXML."\n");

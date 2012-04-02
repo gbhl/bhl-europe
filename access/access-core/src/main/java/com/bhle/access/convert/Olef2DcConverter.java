@@ -4,14 +4,14 @@ import java.io.InputStream;
 
 import com.bhle.access.util.MetadataUtil;
 
-public class Olef2BibTexConvertor extends AbstractDataStreamConvertor {
+public class Olef2DcConverter extends AbstractDataStreamConverter{
 
 	private static String[] contentModels;
-
+	
 	public static void setContentModels(String[] contentModels) {
-		Olef2BibTexConvertor.contentModels = contentModels;
+		Olef2DcConverter.contentModels = contentModels;
 	}
-
+	
 	public String[] getContentModels() {
 		return contentModels;
 	}
@@ -21,20 +21,20 @@ public class Olef2BibTexConvertor extends AbstractDataStreamConvertor {
 	}
 
 	public String getDerivativeId() {
-		return "BIBTEX";
+		return "DC";
 	}
 
 	public String getDerivativeSuffix() {
-		return "bib";
+		return "xml";
 	}
 
 	@Override
 	public InputStream doConvert(InputStream inputStream) {
-		return MetadataUtil.olefToBibText(inputStream);
+		return MetadataUtil.olefToDc(inputStream);
 	}
 
 	public String getDerivativeMimeType() {
-		return "text/plain";
+		return "text/xml";
 	}
 
 }

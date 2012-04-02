@@ -5,7 +5,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bhle.access.convert.ConvertorManager;
+import com.bhle.access.convert.ConverterManager;
 import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.StaticURI;
 import com.sun.syndication.feed.atom.Content;
@@ -83,7 +83,7 @@ public class AtomFactory {
 			link.setHref("./" + fedoraURI.getDsid().toLowerCase() + "/"
 					+ fedoraURI.getSerialNumber());
 		}
-		link.setType(ConvertorManager.getMimeType(fedoraURI.getDsid()));
+		link.setType(ConverterManager.getMimeType(fedoraURI.getDsid()));
 		links.add(link);
 	}
 }

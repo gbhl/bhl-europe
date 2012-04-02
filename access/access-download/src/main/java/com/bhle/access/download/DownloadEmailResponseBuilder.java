@@ -18,8 +18,7 @@ public class DownloadEmailResponseBuilder implements DownloadResponseBuilder {
 	private SimpleMailMessage mail;
 
 	@Override
-	public DownloadResponse build(DownloadRequest request, Blob blob,
-			byte[] bytes) {
+	public DownloadResponse build(DownloadRequest request, Blob blob) {
 		OfflineDownloadResponse response = new OfflineDownloadResponse();
 		response.setRequest(request);
 		response.setBlob(blob);

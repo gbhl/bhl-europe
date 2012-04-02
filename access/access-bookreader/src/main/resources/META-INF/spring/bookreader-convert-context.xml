@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bookInfoBuilder" class="com.bhle.access.bookreader.BookInfoBuilder"
+		p:storageService-ref="storageService" />
+
+	<bean id="thumbnailBuilder" class="com.bhle.access.bookreader.ThumbnailBuilder"
+		p:storageService-ref="storageService" />
+
+	<bean id="bookreaderExtendedConverterManager" parent="converterManager">
+		<property name="converters">
+			<list merge="true">
+				<ref bean="bookInfoConverter" />
+				<ref bean="thumbnailConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="bookInfoConverter" class="com.bhle.access.bookreader.BookInfoConverter" />
+	<bean id="thumbnailConverter" class="com.bhle.access.bookreader.ThumbnailConverter" />
+	
+	<bean id="bookreaderExtendedAfterBatchIngestConverterManager" parent="afterBatchIngestConverterManager">
+		<property name="converters">
+			<list merge="true">
+				<ref bean="bookInfoConverter" />
+				<ref bean="thumbnailConverter" />
+			</list>
+		</property>
+	</bean>
+</beans>

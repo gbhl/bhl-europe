@@ -164,7 +164,6 @@ BEGIN {
 			currentIndex = indexFrom;
 			i = 0;
 			while(currentIndex <= indexTo){
-				print currentIndex, printedfromPage + i;
 				printedPage[currentIndex] = printedfromPage + i;
 				# increase counter
 				i++;

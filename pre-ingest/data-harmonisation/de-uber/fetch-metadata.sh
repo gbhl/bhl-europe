@@ -71,6 +71,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	# clean up
 	rm -f index.*  
 	rm -f robots.txt
-
 	cd $WORKDIR
+
+	echo "FINISHED fetching metadata and files !!!!"
 done

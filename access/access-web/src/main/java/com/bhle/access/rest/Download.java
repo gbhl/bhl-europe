@@ -34,10 +34,10 @@ import com.bhle.access.download.OfflineDownloadRequest;
 import com.bhle.access.download.OfflineDownloadResponse;
 import com.bhle.access.download.OfflineDownloadResponssFetcher;
 import com.bhle.access.download.OnlineDownloadResponse;
-import com.bhle.access.download.Resolution;
 import com.bhle.access.download.generator.OcrGenerator;
 import com.bhle.access.download.generator.PageURIExtractor;
 import com.bhle.access.download.generator.PageURIExtractorImpl;
+import com.bhle.access.util.Resolution;
 import com.sun.jersey.api.NotFoundException;
 
 @Path("download")

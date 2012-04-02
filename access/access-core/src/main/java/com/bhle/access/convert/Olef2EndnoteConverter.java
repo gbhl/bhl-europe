@@ -4,12 +4,12 @@ import java.io.InputStream;
 
 import com.bhle.access.util.MetadataUtil;
 
-public class Olef2ModsConvertor extends AbstractDataStreamConvertor{
+public class Olef2EndnoteConverter extends AbstractDataStreamConverter{
 
 	private static String[] contentModels;
 	
 	public static void setContentModels(String[] contentModels) {
-		Olef2ModsConvertor.contentModels = contentModels;
+		Olef2EndnoteConverter.contentModels = contentModels;
 	}
 	
 	public String[] getContentModels() {
@@ -21,20 +21,20 @@ public class Olef2ModsConvertor extends AbstractDataStreamConvertor{
 	}
 
 	public String getDerivativeId() {
-		return "MODS";
+		return "ENDNOTE";
 	}
 
 	public String getDerivativeSuffix() {
-		return "xml";
+		return "end";
 	}
 
 	@Override
 	public InputStream doConvert(InputStream inputStream) {
-		return MetadataUtil.olefToMods(inputStream);
+		return MetadataUtil.olefToEndnote(inputStream);
 	}
 
 	public String getDerivativeMimeType() {
-		return "text/xml";
+		return "text/plain";
 	}
 
 }

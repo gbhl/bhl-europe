@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:batch="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context 
-                           http://www.springframework.org/schema/context/spring-context.xsd
-                           http://www.springframework.org/schema/batch
-                           http://www.springframework.org/schema/batch/spring-batch-2.1.xsd">
+                           http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<context:component-scan base-package="com.bhle.access.convert" />
 
-	<bean id="convertorManager" class="com.bhle.access.convert.ConvertorManager">
-		<property name="convertors">
+	<bean id="afterBatchIngestConverterManager"
+		class="com.bhle.access.convert.AfterBatchIngestConverterManager">
+		<property name="converters">
 			<list>
-				<ref bean="tiff2Jp2Convertor" />
-				<ref bean="tiff2SizeConvertor" />
-				<ref bean="ocr2OcrConvertor" />
-				<ref bean="Olef2DcConvertor" />
-				<ref bean="Olef2OlefConvertor" />
-				<ref bean="Olef2ModsConvertor" />
-				<ref bean="Olef2EseConvertor" />
-				<!-- <ref bean="Olef2Marc21Convertor" /> -->
-				<!-- <ref bean="Olef2BibTexConvertor" />
-				<ref bean="Olef2EndnoteConvertor" /> -->
 			</list>
 		</property>
 	</bean>
 
-	<bean id="tiff2SizeConvertor" class="com.bhle.access.convert.Tiff2SizeConvertor">
+	<bean id="converterManager" class="com.bhle.access.convert.ConverterManager">
+		<property name="converters">
+			<list>
+				<ref bean="tiff2Jp2Converter" />
+				<ref bean="ocr2OcrConverter" />
+				<ref bean="Olef2DcConverter" />
+				<ref bean="Olef2OlefConverter" />
+				<ref bean="Olef2ModsConverter" />
+				<ref bean="Olef2EseConverter" />
+				<!-- <ref bean="Olef2Marc21Converter" /> -->
+				<!-- <ref bean="Olef2BibTexConverter" /> <ref bean="Olef2EndnoteConverter" 
+					/> -->
+			</list>
+		</property>
+	</bean>
+
+	<bean id="tiff2Jp2Converter" class="com.bhle.access.convert.Tiff2JpegConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:pageCModel</value>
@@ -37,7 +42,7 @@
 		</property>
 	</bean>
 
-	<bean id="tiff2Jp2Convertor" class="com.bhle.access.convert.Tiff2JpegConvertor">
+	<bean id="ocr2OcrConverter" class="com.bhle.access.convert.Ocr2OcrConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:pageCModel</value>
@@ -46,16 +51,7 @@
 		</property>
 	</bean>
 
-	<bean id="ocr2OcrConvertor" class="com.bhle.access.convert.Ocr2OcrConvertor">
-		<property name="contentModels">
-			<list>
-				<value>info:fedora/bhle-cmodel:pageCModel</value>
-				<value>info:fedora/bhle-cmodel:imageCModel</value>
-			</list>
-		</property>
-	</bean>
-
-	<bean id="Olef2OlefConvertor" class="com.bhle.access.convert.Olef2OlefConvertor">
+	<bean id="Olef2OlefConverter" class="com.bhle.access.convert.Olef2OlefConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -66,7 +62,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2DcConvertor" class="com.bhle.access.convert.Olef2DcConvertor">
+	<bean id="Olef2DcConverter" class="com.bhle.access.convert.Olef2DcConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -77,7 +73,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2ModsConvertor" class="com.bhle.access.convert.Olef2ModsConvertor">
+	<bean id="Olef2ModsConverter" class="com.bhle.access.convert.Olef2ModsConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -88,7 +84,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2Marc21Convertor" class="com.bhle.access.convert.Olef2Marc21Convertor">
+	<bean id="Olef2Marc21Converter" class="com.bhle.access.convert.Olef2Marc21Converter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -99,7 +95,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2EseConvertor" class="com.bhle.access.convert.Olef2EseConvertor">
+	<bean id="Olef2EseConverter" class="com.bhle.access.convert.Olef2EseConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -110,7 +106,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2BibTexConvertor" class="com.bhle.access.convert.Olef2BibTexConvertor">
+	<bean id="Olef2BibTexConverter" class="com.bhle.access.convert.Olef2BibTexConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -121,7 +117,7 @@
 		</property>
 	</bean>
 
-	<bean id="Olef2EndnoteConvertor" class="com.bhle.access.convert.Olef2EndnoteConvertor">
+	<bean id="Olef2EndnoteConverter" class="com.bhle.access.convert.Olef2EndnoteConverter">
 		<property name="contentModels">
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
@@ -134,19 +130,11 @@
 
 	<bean id="metadataUtil" class="com.bhle.access.util.MetadataUtil" />
 
-	<!-- <bean id="bibUtils" class="com.bhle.access.util.BibUtils">
-		<property name="LINUX_XML2BIB">
-			<value>classpath:bibutils/linux/xml2bib</value>
-		</property>
-		<property name="LINUX_XML2END">
-			<value>classpath:bibutils/linux/xml2end</value>
-		</property>
-		<property name="WIN_XML2BIB">
-			<value>classpath:bibutils/windows/xml2bib.exe</value>
-		</property>
-		<property name="WIN_XML2END">
-			<value>classpath:bibutils/windows/xml2end.exe</value>
-		</property>
-	</bean> -->
+	<!-- <bean id="bibUtils" class="com.bhle.access.util.BibUtils"> <property 
+		name="LINUX_XML2BIB"> <value>classpath:bibutils/linux/xml2bib</value> </property> 
+		<property name="LINUX_XML2END"> <value>classpath:bibutils/linux/xml2end</value> 
+		</property> <property name="WIN_XML2BIB"> <value>classpath:bibutils/windows/xml2bib.exe</value> 
+		</property> <property name="WIN_XML2END"> <value>classpath:bibutils/windows/xml2end.exe</value> 
+		</property> </bean> -->
 
 </beans>

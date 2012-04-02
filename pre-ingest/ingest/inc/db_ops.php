@@ -123,7 +123,7 @@ if($sub_action=="save_dir_details")
              }
              else  // BILDDATEN SELBEN TYPS IM ROOT ZAEHLEN (NICHT REKURSIV!)
              {
-                $cpages = (int) count(getContentFiles($_POST[$arrKeys[$i]],'pagedata'));
+                $cpages = (int) count(getContentFiles($_POST[$arrKeys[$i]],'pagedata',false));
              }
              
              if ($isPDF) { $croot = dirname($_POST[$arrKeys[$i]]); $cname=basename($_POST[$arrKeys[$i]]); }
@@ -135,7 +135,12 @@ if($sub_action=="save_dir_details")
                  if ($cname=='') $cname = urldecode($dirSelected);  // take selected content dir name
              }
 
-             $inserted += mysql_select($query." (".$nextPK.",'".$croot."','".$cname."',now(),'".$ctime."',".$fsize.",".$cpages.")",$db);
+             // INSERT MANAGED CONTENT
+             if (((int)abfrage("select count(1) from content where content_root='".$croot."'",$db))==0)
+                  $inserted += mysql_select($query." (".$nextPK.",'".$croot."','".$cname."',now(),'".
+                          $ctime."',".$fsize.",".$cpages.")",$db);
+             else
+                  $endmsg .= "Content already under management!";
          }
      }
     }

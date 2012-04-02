@@ -10,7 +10,6 @@
 echo "<h3>Finishing OLEF Pages</h3><pre>";
 
 
-
 // ******************
 // * PAGES + TAXONS *
 // ******************
@@ -20,8 +19,9 @@ $arrTaxons = array();
 
 // TAXONSFILES
 $arrTaxonsF = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT); 
-$nTaxonsF   = count($arrTaxonsF);
 $arrTaxonsF = sortPageFiles($arrTaxonsF);  // IMPORTANT PRE SORT
+$nTaxonsF   = count($arrTaxonsF);
+
 
 $pattern  = "<nameString>";
 $patternE = "</nameString><namebankID>";    // ONLY TAXONS WITH NAMEBANKID
@@ -111,13 +111,14 @@ reset($arrTaxons);
 // ****************************************************************
 
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
-$nTiffs   = count($arrTiffs);
 $arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
+$nTiffs   = count($arrTiffs);
+
 
 
 // LOAD OLEF TO DOM
 $domDoc   = new DOMDocument();
-@$domDoc->load(_OLEF_FILE);
+@$domDoc->load($olef_file);
 
 $docRoot = $domDoc->documentElement;
 
@@ -155,11 +156,10 @@ $containerElement = $domDoc->getElementsByTagName('element')->item(0);
 
 
 // CLEANUP FIRST IF PART TO ADD EXISTS
-$dropNode = $docRoot->getElementsByTagName($arrNewNodes[0])->item(0);
-
-// VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
-if (($dropNode)&&($dropNode!=null))
-$containerElement->removeChild($dropNode);
+$dropNode = null;
+$dropNode = @$docRoot->getElementsByTagName($arrNewNodes[0])->item(0);
+if (($dropNode)&&($dropNode!=null)&&($dropNode!='null'))            // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
+@$containerElement->removeChild($dropNode);
 
 
 
@@ -197,7 +197,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
             break;
         
             case 'page':                                         // TYP DER PAGE GEM. FSG
-             if ((is_array($arrPageInfos))&&($arrPageInfos[2]!=""))  
+             if (($arrPageInfos)&&(is_array($arrPageInfos))&&(array_key_exists(2, $arrPageInfos))&&($arrPageInfos[2]!=""))  
                 $node->setAttribute("pageType",$arrPageInfos[2]);
              else                       
                 $node->setAttribute("pageType",_DEFAULT_PAGETYPE);
@@ -213,7 +213,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
                 
               for ($i=3;$i<7;$i++)      // SUPPORT FUER 4 SEITEN PRO FILE
               {
-                  if ((is_array($arrPageInfos))&&(array_key_exists($i, $arrPageInfos))&&($arrPageInfos[$i]!=""))
+                  if (($arrPageInfos)&&(is_array($arrPageInfos))&&(array_key_exists($i, $arrPageInfos))&&($arrPageInfos[$i]!=""))
                   {
                       if ($i>3) $node  = $domDoc->createElement("olef:".$curNodeName,"\n");
 
@@ -264,7 +264,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
 
 // SPEICHERN MODIFIZIERTEN OLEF
 
-if ($domDoc->save(_OLEF_FILE)>0) echo "OLEF saved, OLEF pages generated ... ok\n";
+if ($domDoc->save($olef_file)>0) echo "OLEF saved, OLEF pages generated ... ok\n";
 else                             echo _ERR." OLEF page elements could not be written!\n";
 
 

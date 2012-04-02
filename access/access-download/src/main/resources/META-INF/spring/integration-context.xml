@@ -11,7 +11,7 @@
 							http://www.springframework.org/schema/integration/spring-integration-2.0.xsd">
 
 	<poller default="true" max-messages-per-poll="1000">
-		<interval-trigger interval="10000" />
+		<interval-trigger interval="1000" />
 	</poller>
 
 	<channel id="inboundDownloadRequestChannel">

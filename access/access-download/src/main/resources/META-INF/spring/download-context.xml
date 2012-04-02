@@ -10,38 +10,13 @@
 	<context:component-scan base-package="com.bhle.access.download" />
 
 	<import resource="classpath*:/META-INF/spring/env-context.xml" />
+	<import resource="classpath*:/META-INF/spring/static-context.xml" />
+	<import resource="classpath*:/META-INF/spring/downaload-convert-context.xml" />
 	<import resource="classpath*:/META-INF/spring/integration-context.xml" />
 	<import resource="classpath*:/META-INF/spring/mail-context.xml" />
 	<import resource="classpath*:/META-INF/spring/akubra-context.xml" />
 	<import resource="classpath*:/META-INF/spring/schedule-context.xml" />
 
-	<bean id="djatokaURLBuilder" class="com.bhle.access.util.DjatokaURLBuilder"
-		p:baseUrl="${djatoka.baseUrl}" />
-
-	<bean class="com.bhle.access.download.Resolution">
-		<property name="map">
-			<map>
-				<entry>
-					<key>
-						<value>high</value>
-					</key>
-					<value>${djatoka.level.high}</value>
-				</entry>
-				<entry>
-					<key>
-						<value>medium</value>
-					</key>
-					<value>${djatoka.level.medium}</value>
-				</entry>
-				<entry>
-					<key>
-						<value>low</value>
-					</key>
-					<value>${djatoka.level.low}</value>
-				</entry>
-			</map>
-		</property>
-	</bean>
 
 	<bean id="downloadLocationHelper" class="com.bhle.access.download.DownloadLocationHelper">
 		<constructor-arg name="encryptor">

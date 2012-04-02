@@ -13,14 +13,18 @@
 // http://code.google.com/p/tesseract-ocr/downloads/list
 
 
-// TIFFS VON DATENBANK HOLEN 
-$query = "select content_pages_tiff from content where content_id=" . $content_id;
-$arrTiffs = explode(_TRENNER, abfrage($query, $db));
+// TIFFS ERMITTELN
+// $query = "select content_pages_tiff from content where content_id=" . $content_id;
+// $arrTiffs = explode(_TRENNER, abfrage($query, $db));
+
+$arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
+// $nTiffs   = count($arrTiffs);
+
 
 
 echo "<h3>Try to recognize Text in " . $cPages . " Page Images.</h3><pre>\n";
 
-$ocrLang = getOCRlang($content_id);
+$ocrLang = getOCRlang($content_id,$olef_file);
 
 for ($i = 0; $i < $cPages; $i++) 
 {
@@ -32,7 +36,7 @@ for ($i = 0; $i < $cPages; $i++)
     // export TESSDATA_PREFIX=/some/path/to/tessdata
     // tesseract <image.tif> <outputbasename> [-l <langid>] [configs]
 
-    $myCmd = _TESSERACT . " \"" . _CONTENT_ROOT . $arrTiffs[$i] . "\" \"" . $outputFile . "\" -l ".$ocrLang." ";
+    $myCmd = _TESSERACT . " \"" . $arrTiffs[$i] . "\" \"" . $outputFile . "\" -l ".$ocrLang." ";
     $myCmd = exec_prepare($myCmd);    
     
     if (!_QUEUE_MODE)

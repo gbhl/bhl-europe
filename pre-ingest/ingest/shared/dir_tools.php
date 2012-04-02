@@ -2,16 +2,15 @@
 // ********************************************
 // ** FILE:    DIR_TOOLS.PHP                 **
 // ** PURPOSE: GENERAL UTILITIES             **
-// ** DATE:    05.11.2011                    **
+// ** DATE:    05.12.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
 
 
-// ******************************************************************************************
-function getDirectory( $path = '.', $arrContents=array(),$level = 0, 
-        $ignore = array('.', '..' ), $max_levels=1000)
-// ******************************************************************************************
+// ***************************************************************************************
+function getDirectory($path='.',$arrContents=array(),$level=0,$ignore="",$max_levels=1000)
+// ***************************************************************************************
 {
     // INITS
     if ($ignore=="")      $ignore = array('.', '..' );
@@ -100,11 +99,13 @@ function rrmdir($dir)
 
 
 
-// *******************************************************************************************
-function print_dir_arr($arrDir,$arrIcons=array("folder_16.png","file_16.png"),$dirsOnly=false)
-// *******************************************************************************************
+// **********************************************************************
+function print_dir_arr($arrDir,$arrIcons="",$dirsOnly=false,$abs_path="")
+// **********************************************************************
 {
     include_once(_SHARED."imagelib.php");
+    
+    if ($arrIcons=="")  $arrIcons = array("folder_16.png","file_16.png");
 
     echo "<div id=\"folderlist\" name=\"folderlist\" class=\"folderlist\">";
 
@@ -115,7 +116,7 @@ function print_dir_arr($arrDir,$arrIcons=array("folder_16.png","file_16.png"),$d
     {
      for ($i=0;$i<$nFiles;$i++)
      {
-            if ((is_dir($arrDir[$i]))||(is_dir(_CONTENT_ROOT.$arrDir[$i])))
+            if ((is_dir($arrDir[$i]))||(is_dir($abs_path.$arrDir[$i])))
                     icon($arrIcons[0]);
             else	if (!$dirsOnly)					
                     icon($arrIcons[1]);

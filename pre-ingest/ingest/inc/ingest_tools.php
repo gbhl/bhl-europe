@@ -126,8 +126,8 @@ function queue_add($queueFile, $arrQueueCommands)
     include_once(_SHARED."file_operations.php");
     
     $content2write = "";
-    $linesAdded=0;
-    $nBytes=0;
+    $linesAdded = 0;
+    $nBytes = 0;
 
     $nCommands = count($arrQueueCommands);
 
@@ -188,9 +188,9 @@ function getReverseLookupURL($absPath)
 }
 
 
-// *****************************
-function getOCRlang($content_id)
-// *****************************
+// ***************************************************
+function getOCRlang($content_id,$olef_file=_OLEF_FILE)
+// ***************************************************
 {
     // SET $tesseractMappings/_TESSERACT_DEAULT_LANG
     include(_ABS."config/tesseract_config.php");    // x-times not once
@@ -200,7 +200,7 @@ function getOCRlang($content_id)
     
     // LOAD OLEF TO DOM
     $domDoc   = new DOMDocument();
-    $domDoc->load(_OLEF_FILE);
+    $domDoc->load($olef_file);
 
     // SEARCH FOR mods:languageTerm
     $allElements = $domDoc->getElementsByTagName('*');

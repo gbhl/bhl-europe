@@ -9,7 +9,7 @@
 // RUNTIME MODE (development|production)
 define("_MODE",                     "development");
 
-// ABSOLUTE PATH TO THE INGEST APPLICATION ROOT (WHERE INGEST.PHP RESIDE!)
+// ABSOLUTE PATH TO THE INGEST APPLICATION ROOT (WHERE index.php RESIDE!)
 define("_ABS",                      str_replace("//","/",$_SERVER['DOCUMENT_ROOT']."/"));
 
 // URL TO THE INGEST APPLICATION (bhl-int.nhm.ac.uk)
@@ -70,7 +70,7 @@ define("_METADATA_EXT",             ".xml,.marc,.mrc,.XML,.MARC,.MRC");
 define("_OCRDATA_EXT",              ".txt,.ocr,.TXT,.OCR");
 define("_TAXON_EXT",                ".tax");        // DEFINE HERE ONLY 1 EXTENSION
 
-define("_ANALYZE_MAX_DEPTH",        20);            // MAX DIRECTORY STRUCTURE DEPTH
+define("_ANALYZE_MAX_DEPTH",        6);            // MAX DIRECTORY STRUCTURE DEPTH
 
 
 // --------------

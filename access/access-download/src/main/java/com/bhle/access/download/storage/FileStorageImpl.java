@@ -22,12 +22,12 @@ public class FileStorageImpl implements FileStorage {
 	}
 
 	@Override
-	public Blob getBlob(OfflineDownloadRequest request) {
-		return getBlob(request.getEmail(), request.generateFilename());
+	public Blob fetchBlob(OfflineDownloadRequest request) {
+		return fetchBlob(request.getEmail(), request.generateFilename());
 	}
 	
 	@Override
-	public Blob getBlob(String email, String filename) {
+	public Blob fetchBlob(String email, String filename) {
 		BlobStoreConnection connection = openConnection(blobStore);
 		return getBlob(connection, email, filename);
 	}
