@@ -51,8 +51,8 @@ if (file_exists($olef_file))
     }
 
     // OLEF FERTIGSTELLEN
-    include_once("inc/olef_pages.php");
-    include_once("inc/olef_mods.php");
+    include("inc/olef_pages.php");
+    include("inc/olef_mods.php");
 
     
     // METS FERTIGSTELLEN
