@@ -18,11 +18,13 @@ $old_destDir    = $destDir;
 $old_olef_file  = $olef_file;
 $old_cPages     = $cPages;
 
+$stepFinished   = true;         // GRUNDSAETZLICH AUF TRUE
+
 if ($sLevel > 0) {
 eval("
 
 \$contentDir = \$L".$sLevel."Directory[\$l".$sLevel."];
-\$destDir    = clean_path(\$contentDir . \"/\" . _AIP_DIR . \"/\");  if (!is_dir(\$destDir)) @mkdir(\$destDir);
+\$destDir    = clean_path(\$contentDir . \"/\" . _AIP_DIR . \"/\");
 \$olef_file  = clean_path(\$destDir.     \"/\" . _AIP_OLEF_FN);
 \$cPages     = (int) count(getContentFiles(\$contentDir,'pagedata',false));
 
@@ -33,10 +35,16 @@ if (\$cPages==0) \$cPages = (int) count(getContentFiles(\$contentDir,'pagedata',
 
 
 // STEP AUSFUEHRUNG FUER AKTUELLES VERZ. FALLS NOCH NICHT ERFOLGT
-if (!in_array($contentDir,$arrAnalyzedDirs))  
+if ((!in_array($contentDir,$arrAnalyzedDirs))&&(!is_dir_empty($contentDir,true)))  // ZUMINDEST METADATEN...
 {
-    include($menu_nav.".php");
+    if (!is_dir($destDir)) @mkdir($destDir);        // WO NOETIG .AIP ANLEGEN
     
+    $stepFinished   = false;                        // ZURUECKSETZEN DA FOLG. STEP ERFOLGREICH SEIN MUSS...
+
+    // ***********************
+    include($menu_nav.".php");
+    // ***********************
+
     $arrAnalyzedDirs[] = $contentDir;
 
     // KOMMANDOS QUEUEN ODER ABSCHLUSS 
@@ -69,10 +77,15 @@ if (!in_array($contentDir,$arrAnalyzedDirs))
     else if ($menu_nav=='get_metadata')
     {
         // SAVE SERIAL ITEM GUID SEPARATELY
-        if (file_exists($olef_file)) file_put_contents(clean_path(dirname($olef_file)."/guid.txt"), $cGUID);
+        if (file_exists($olef_file)) file_put_contents(clean_path(dirname($olef_file)."/"._AIP_GUID_FN), $cGUID);
     }
 
 }
+
+
+// WENN DIESER SERIAL STEP NICHT ERFOGREICH WIRD DIE GESAMTE LEVEL BEARBEITUNG UNGUELTIG
+if (!$stepFinished) $allLevelsDone = false;
+
 
 $contentDir = $old_contentDir;
 $destDir    = $old_destDir;
@@ -80,5 +93,8 @@ $olef_file  = $old_olef_file;
 $cPages     = $old_cPages;
 
 unset($arrQueueCommands);
+
+unset($stepFinished);
+
 
 ?>

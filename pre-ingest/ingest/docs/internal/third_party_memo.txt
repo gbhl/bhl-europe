@@ -4,9 +4,15 @@
 
 
 
+download 
 
-if ((!isset($sLevel))||($sLevel==1))    $olef_file = _OLEF_FILE;
-else                                    $olef_file = $destDir._AIP_OLEF_FN;
+/mnt/nfs-demeter/upload/providers/de-ubfrankfurt/BJ2248281
+
+serial beispiel
+
+/BJ2248281
+
+
 
 
 the sequence of a pdf (always 1 ?)

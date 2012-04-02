@@ -8,6 +8,7 @@
 // GET TAXONS VIA WEBSERVICE
 // ********************************************
 // TEST-URL: http://localhost/index.php?menu_nav=get_taxons&contentDir=
+$curStep = 4;
 
 
 echo "<h1 style='margin-top: 3px;'>Run Taxon Finder Service for pages text</h1>";
@@ -34,7 +35,9 @@ $nTaxons  = count($arrTaxons);
 if ($nTaxons >= $cPages) 
 {
     // IF SUCCESSFUL SET STATE TO 4
-    if (getContentSteps($content_id)<4) setContentSteps($content_id, 4);
+    if ($cType == 'monograph') {
+        if (getContentSteps($content_id)<$curStep) setContentSteps($content_id, $curStep);
+    }
     
     $csvTextfiles = implode(_TRENNER, $arrTaxons);
     $csvTextfiles = str_replace(_CONTENT_ROOT, "", $csvTextfiles);
@@ -43,9 +46,14 @@ if ($nTaxons >= $cPages)
 
     $endmsg .= "For ".$nTextFiles." text files ".$nTaxons.
             " taxon files (.tax) generated/found. Database updated successfully.";
+    
+    $stepFinished = true;    
 }
 else if (!_QUEUE_MODE) 
+{
     echo _ERR . "Not all necessary taxonometric files could be prepared!";
+    $stepErrors = true;
+}
 
 
 ?>
