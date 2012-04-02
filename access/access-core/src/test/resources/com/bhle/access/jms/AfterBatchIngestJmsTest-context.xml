@@ -12,7 +12,7 @@
                            http://activemq.apache.org/schema/core 
                            http://activemq.apache.org/schema/core/activemq-core.xsd">
 
-	<amq:topic id="ingestDestination" physicalName="ingest" />
+	<amq:topic id="ingestDestination" physicalName="TEST.INGEST" />
 
 	<bean id="jmsProducerConnectionFactory"
 		class="org.springframework.jms.connection.SingleConnectionFactory"
