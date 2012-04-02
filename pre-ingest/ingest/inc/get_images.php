@@ -35,7 +35,7 @@ if ($nTiffs >= $cPages)
     $csvTiffs = str_replace(_CONTENT_ROOT, "", $csvTiffs);
     mysql_select("update content set content_pages_tiff='" . $csvTiffs . "' where content_id=" . $content_id);
 
-    $endmsg .= $nTiffs . " files generated and database updated successfully.\\n";
+    $endmsg .= "For ".str_replace(_USER_CONTENT_ROOT,"",$contentDir).": ".$nTiffs . " files generated and database updated.\\n";
     
     $stepFinished = true;
 }
