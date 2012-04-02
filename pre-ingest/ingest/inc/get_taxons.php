@@ -14,7 +14,7 @@ echo "<h1 style='margin-top: 3px;'>Run Taxon Finder Service for pages text</h1>"
 
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
-$arrTaxons = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT); 
+$arrTaxons = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT);
 $nTaxons   = count($arrTaxons);
 
 

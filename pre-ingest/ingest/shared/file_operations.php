@@ -290,7 +290,7 @@ function file_content_exists($myFile,$myContent,$ignoreCase=false,$oneMatchOnly=
 // ************************************
 function file_get_extension($file_name)
 // ************************************
-// LIEFERT EXTENSION MIT PUNKT
+// LIEFERT (LETZTE) EXTENSION MIT PUNKT
 {
      $pos1 = strrpos($file_name,".");
      

@@ -126,8 +126,8 @@ function queue_add($queueFile, $arrQueueCommands)
     include_once(_SHARED."file_operations.php");
     
     $content2write = "";
-    $linesAdded=0;
-    $nBytes=0;
+    $linesAdded = 0;
+    $nBytes = 0;
 
     $nCommands = count($arrQueueCommands);
 

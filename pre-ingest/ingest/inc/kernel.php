@@ -23,7 +23,7 @@ $ingestReady = true;   // SET TO TRUE IF LAST STEP SUCCEEDS
 
 if ((isset($content_id))&&(is_numeric($content_id))) 
 {
-    if (($cType=='serial')||(!$isPDF))  include_once("inc/serial_kernel.php");
+    if (($cType=='serial')&&(!$isPDF))  include_once("inc/serial_kernel.php");
     else                                include_once("inc/step_kernel.php");
 }
 else
