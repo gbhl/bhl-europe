@@ -22,10 +22,6 @@ rm -rf $OUT_FOLDER
 mkdir -p $OUT_FOLDER
 cd $IN_FOLDER
 
-dosome() {
-	VALUE="OK"
-}
-
 # Main loop over folders
 #
 find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
@@ -48,35 +44,21 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 		echo "  processing as Monograph"
 
 		if [[ -d work ]]; then
+
 			# if a txt metadata file exists
 			METADATAFILE=(`grep -rl -e "-- STRUCTURE --" work/`)
 			if [[ $METADATAFILE ]]; then
 				echo "  using structure from txt metadata file $METADATAFILE"
 				
-				# extract structure (and sequence)
-				#awk '{if (index($0, "STRUCTURE")) doPrint=1} 
-				#	 {if (index($0, "SEQUENCE")) doPrint=0} 
-				#	 {if (doPrint==1 && ! match($0,"^--.*") && length($0) > 0 ) print $0}' $METADATAFILE > structure.txt
-
-				#awk '{if (index($0, "SEQUENCE")) doPrint=1} 
-				#	 {if (doPrint==1 && ! match($0,"^--.*") && length($0) > 0 ) print $0}' $METADATAFILE > sequence.txt
-				#
-
-				awk -v 	targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $METADATAFILE
-
-					 #cat  ._filenames
-					 
-					 #dosome
-					 #echo $VALUE
-
-
+				awk -v targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $METADATAFILE
 			fi
 
-
+		else 
+			echo "  no '.work/' folder with metadata, thus doing plain copy of scans"
+			cp $SCANS_FOLDER/*.tif $BOOK_OUT_FOLDER/
 		fi
 
-
-	fi
+	fi # END processing as Monograph
 	cd ..
 done
 
