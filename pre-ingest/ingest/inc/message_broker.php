@@ -9,7 +9,9 @@
 // http://bhl-int.nhm.ac.uk/admin
 // https://github.com/bhle/bhle/issues/309
 // see docs/internal/stomp_info.txt
-
+// 
+// CONTROL:
+// http://bhl-int.nhm.ac.uk/admin/queues.jsp
 
 require_once(_MB_ABS."MessageHelper.php");
 
@@ -21,17 +23,54 @@ function mb_send_ready($content_guid,$content_aip)
 // ***********************************************
 {
     $messageHelper = new MessageHelper(_MB_URL);
-    
+
     /*
     MessageHelper::informIngest($guid, $uri)
     send a map message to a message queue named 'preingest'
     Messasge content:
     "GUID": $guid
     "URI": $uri
+$messageHelper = new MessageHelper("tcp://bhl-mandible.nhm.ac.uk:61613");
+$messageHelper->informIngest("10706-aaaaaa", "file:///dev/null");
+
     */
 
     return $messageHelper->informIngest($content_guid, "file://".$content_aip);
 }
+
+
+// ***********************************************
+// CHECK INFORMATION FROM INGEST
+// ***********************************************
+function check_state_old($content_guid="")
+// ***********************************************
+{
+    $messageHelper = new MessageHelper(_MB_URL);
+    
+    /*
+    Subscribe to ActiveMQ topic named 'ingest' by default
+    */
+    $messageHelper->subscribe();
+    /*
+    Wait and receive message from topic 'ingest' (60 seconds)
+    Message content:
+        "STATUS": ["COMPLETED", "FAILED"]
+        "EXCEPTIONS"(if FAILED): stackTrace from Batch Ingest
+    */
+    $msg = $messageHelper->receive();
+    
+    print_r($msg->map);
+    
+    $messageHelper->unsubscribe();
+    
+    return $msg;
+    
+    // Following process after receiving reports from Ingest Tool...
+}
+
+
+
+
 
 
 // ***********************************************
@@ -49,6 +88,33 @@ function check_state()
 // ***********************************************
 // ECHO INFORMATION FROM INGEST
 // ***********************************************
+function get_topic_old()
+// ***********************************************
+{
+    $messageHelper = new MessageHelper(_MB_URL);
+    
+    /*
+    Subscribe to ActiveMQ topic named 'ingest' by default
+    */
+    $messageHelper->subscribe("/topic/preingest");
+    /*
+    Wait and receive message from topic 'ingest' (60 seconds)
+    Message content:
+        "STATUS": ["COMPLETED", "FAILED"]
+        "EXCEPTIONS"(if FAILED): stackTrace from Batch Ingest
+    */
+    $msg = $messageHelper->receive();
+    
+    print_r($msg->map);
+    
+    $messageHelper->unsubscribe("/topic/preingest");
+    
+    return $msg;
+    
+    // Following process after receiving reports from Ingest Tool...
+}
+
+
 function get_topic($msg)
 // ***********************************************
 {
@@ -65,6 +131,23 @@ function get_topic($msg)
 // ***********************************************
 // TEST MESSAGE BROKER AVAILABILITY
 // ***********************************************
+function test_mb_old()
+// ***********************************************
+{
+    echo_pre(get_topic());
+    
+    echo_pre(mb_send_ready("test-guid-123","/dev/null"));
+    
+    nl(2);
+    
+    sleep(2);
+    
+//  echo_pre(check_state());
+
+    echo_pre(get_topic());
+}
+
+
 function test_mb()
 // ***********************************************
 {

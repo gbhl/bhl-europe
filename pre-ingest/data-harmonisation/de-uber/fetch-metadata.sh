@@ -48,7 +48,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 
 	# try the work directory
 	wget --progress=dot:mega -O work-index.xml "${BASE_URL}work/"
-	# only download if it is an http server directory index, this avoids 
+	# only download if it is an apache server directory index
 	is_dir_index=(`grep "Index of /ebind/mfn/"  work-index.xml`)
 	rm work-index.xml
 	echo $is_dir_index
@@ -71,6 +71,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	# clean up
 	rm -f index.*  
 	rm -f robots.txt
-
 	cd $WORKDIR
+
+	echo "FINISHED fetching metadata and files !!!!"
 done

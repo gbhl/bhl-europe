@@ -10,8 +10,9 @@ echo "<h1 style='margin-top: 3px;'>Preparing & Generating Plain Texts</h1>";
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 
-$arrTextFiles = getContentFiles($contentDir, 'single_suffix', true,'.txt'); 
+$arrTextFiles = getContentFiles($contentDir, 'ocrdata',true);
 $nTextFiles   = count($arrTextFiles);
+
 
 if ($nTextFiles >= $cPages)    echo "All text files present - nothing to do!\n";
 else 

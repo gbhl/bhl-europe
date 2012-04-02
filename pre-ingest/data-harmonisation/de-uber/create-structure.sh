@@ -18,6 +18,7 @@ NAMESPACES_OAIDC="-N oai_dc=http://www.openarchives.org/OAI/2.0/oai_dc/ -N dc=ht
 
 # prepare
 #
+echo "clearing old target folder ..."
 rm -rf $OUT_FOLDER
 mkdir -p $OUT_FOLDER
 cd $IN_FOLDER
@@ -32,11 +33,14 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	echo "processing $DIR ..."
 	cd $DIR
 	
+	BOOK_OUT_FOLDER=${OUT_FOLDER}/$DIR
+	SCANS_FOLDER=tiff
+	
 	# create top level folder
-	mkdir ${OUT_FOLDER}/$DIR
+	mkdir $BOOK_OUT_FOLDER
 	
 	# copy metadata for top level
-	cp *.oai_* ${OUT_FOLDER}/$DIR/
+	cp *.oai_* $BOOK_OUT_FOLDER
 
 	# read doc-types
 	DOC_TYPES=(`xmlstarlet sel $NAMESPACES_OAIDC -t -m "//dc:type[contains(text(), 'doc-type:')]" -v "text()" -n  metadata.oai_dc`)
@@ -46,7 +50,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 
 		if [[ -d work ]]; then
 			# if a txt metadata file exists
-			METADATAFILE=(`grep -rl -e "-- STRUCTURE --" work/`)
+			METADATAFILE=(`find -name "*.txt" | xargs grep -l -e "-- STRUCTURE --"`)
 			if [[ $METADATAFILE ]]; then
 				echo "  using structure from txt metadata file $METADATAFILE"
 				
@@ -59,48 +63,9 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 				#	 {if (doPrint==1 && ! match($0,"^--.*") && length($0) > 0 ) print $0}' $METADATAFILE > sequence.txt
 				#
 
-				rm -f ._* # remove all awk generated files
-				
-				awk '{if (index($0, "STRUCTURE")) doPrint=1} 
-					 {if (index($0, "SEQUENCE")) doPrint=0} 
-					 {if ($1 == "ID_Inventar:") {id=$2; print id >> "._id"} }
-					 {if (doPrint==1 && ! match($0,"^--.*") && length($2) > 0 ) { 
+				awk -v 	targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $METADATAFILE
 
-					 		n=split($2, pages, "-"); 
-					 		if(n == 2){
-					 			fromPage=pages[1];
-					 			toPage=pages[2];
-					 		} else {
-					 			fromPage=$2;
-					 			toPage=$2;
-					 		}
-
-					 		# one line per chapter subfolder
-					 		i=3;
-					 		chapterLine = "";
-					 		while($i != "") {
-					 			isPageNumber = match($i,"[0-9]+\x2E.*")
-					 			if( lastToken == $i || !isPageNumber ) {
-					 				if(isPageNumber) {
-					 					chapterLine = chapterLine $i;
-						 			} else {
-						 				chapterLine = chapterLine " " $i;
-						 			}
-					 			}	
-					 			lastToken = $i;
-					 			i++;
-					 		}
-					    	print p, chapterLine >> "._chapters";
-					 		
-					 		# one image filename per line
-					 		for(p=fromPage; p<=toPage; p++) {
-					    		print id "_" p  "_" $1 >> "._filenames";
-					 		}
-
-					 	}
-					  }' $METADATAFILE
-
-					 cat  ._filenames
+					 #cat  ._filenames
 					 
 					 #dosome
 					 #echo $VALUE

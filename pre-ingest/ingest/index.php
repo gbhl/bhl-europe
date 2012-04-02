@@ -68,19 +68,19 @@ switch($menu_nav)
     case "ingest_list":
         include_once("inc/ingest_list.php");
         break;
-    
+
     case "ingest":
         include_once("inc/ingest.php");
         break;
-    
+
     case "upload_analyze":
         include_once("inc/upload_analyze.php");
         break;
-    
+
     case "ingest_detail":
         include_once("inc/ingest_detail.php");
         break;
-    
+
     // *******************************
     // PREPARATION STEP KERNEL TARGETS
     // *******************************
@@ -89,41 +89,33 @@ switch($menu_nav)
     case "get_ocr":
     case "get_taxons":
     case "get_mets":
-        include_once("inc/step_kernel.php");
+        include_once("inc/kernel.php");
         break;
-
- /*   case "job_prepare_ingest":
-        include_once("inc/job_prepare_ingest.php");
-        break;
-
-    case "job_ingest_fedora":
-        include_once("inc/job_ingest_fedora.php");
-        break; */
 
     case "ingest_history":
         include_once('inc/ingest_history.php');
         break;
-    
+
     case "ingest_log":
         include_once("inc/ingest_log.php");
         break;
 
     case "show_content_root":
         echo "<h1 style='margin-top: 6px;'>Content Root <font size=-1> (1st level overview only)</font></h1>";
-        print_dir_arr(getDirectory(_CONTENT_ROOT,array(),0,"",1));
+        print_dir_arr(getDirectory(_CONTENT_ROOT,array(),0,"",1),"",false,_CONTENT_ROOT);
         nl(); close_ingest_popup("close",false);
         break;
 
     case "show_user_dir":
     case "show_user_content_root":
         echo "<h1 style='margin-top: 6px;'>Your Content Root <font size=-1> (for orientation purposes only)</font></h1>";
-        print_dir_arr(getDirectory(_USER_CONTENT_ROOT,array(),0,"",_ANALYZE_MAX_DEPTH));      
+        print_dir_arr(getDirectory(_USER_CONTENT_ROOT,array(),0,"",_ANALYZE_MAX_DEPTH),"",false,_CONTENT_ROOT);      
         nl(); close_ingest_popup("close",false);
         break;
     
     case "show_working_dir":
         echo "<h1 style='margin-top: 6px;'>Working Directory<font size=-1> (for orientation purposes only)</font></h1>";
-        print_dir_arr(getDirectory(_WORK_DIR.$arrProvider['user_content_id'],array(),0,"",_ANALYZE_MAX_DEPTH)); 
+        print_dir_arr(getDirectory(_WORK_DIR.$arrProvider['user_content_id'],array(),0,"",_ANALYZE_MAX_DEPTH),"",false,_CONTENT_ROOT); 
         nl(); close_ingest_popup("close",false);
         break;
 

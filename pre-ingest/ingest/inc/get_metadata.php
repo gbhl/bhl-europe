@@ -13,6 +13,7 @@ ob_start();
 
 $inputFile = "";
 
+
 // **********************************
 // A) WEBSERVICE METADATA PROVIDER WS
 // **********************************
@@ -78,11 +79,11 @@ else
     @flush(); 
     sleep(1);
 
-    include_once("inc/metadata.php");
+    include("inc/metadata.php");
 
-    if (file_exists(_OLEF_FILE)) 
+    if (file_exists($olef_file)) 
     {
-        $olef = file_get_contents(_OLEF_FILE);
+        $olef = file_get_contents($olef_file);
         
         echo "\n<h2>OLEF Result: &nbsp; "; icon("green_16.png");  echo "</h2>";
 

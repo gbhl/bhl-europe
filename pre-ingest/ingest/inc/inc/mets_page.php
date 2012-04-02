@@ -9,7 +9,7 @@ foreach ($nodeAttributes as $nodeAttribute)
     if ($nodeName=='METS:mets')
     {
         if ($nodeAttribute->name == 'OBJID')
-            $curElement->setAttribute('OBJID',str_replace("/","-",($pageID)));
+            $curElement->setAttribute('OBJID',$cleanPageID);
         
         if ($nodeAttribute->name == 'LABEL')        
             $curElement->setAttribute('LABEL','Page '.$i);  // !!! richtige nr verwenden
@@ -19,17 +19,17 @@ foreach ($nodeAttributes as $nodeAttribute)
     if (($nodeName=='METS:FLocat')&&($nodeAttribute->name == 'href'))
     {
         if ($curElement->getAttribute('xlink:title')=='TIFF')
-            $curElement->setAttribute('xlink:href',"file://".clean_path(_CONTENT_ROOT.$arrTiffs[($i-1)]));
+            $curElement->setAttribute('xlink:href',"file://".clean_path($arrTiffs[($i-1)]));
         
         if ($curElement->getAttribute('xlink:title')=='OCR')
-            $curElement->setAttribute('xlink:href',"file://".clean_path(_CONTENT_ROOT.$arrOCR[($i-1)]));
+            $curElement->setAttribute('xlink:href',"file://".clean_path($arrOCR[($i-1)]));
     }
     
     // rdf:Description --> rdf:about="info:fedora/bhle:a0hhmgs3-00002"
     if ($nodeName=='rdf:Description')
     {
         if ($nodeAttribute->name == 'about')
-        $curElement->setAttribute('rdf:about','info:fedora/'.str_replace("/","-",($pageID)));
+        $curElement->setAttribute('rdf:about','info:fedora/'.$cleanPageID);
     }
     
     // <isMemberOf  --> rdf:resource="info:fedora/bhle:a0hhmgs3"
@@ -39,7 +39,6 @@ foreach ($nodeAttributes as $nodeAttribute)
         if ($nodeAttribute->name == 'resource')
         $curElement->setAttribute('rdf:resource','info:fedora/'.$cleanObjID);
     }
-        
 }
 
 
@@ -47,7 +46,7 @@ foreach ($nodeAttributes as $nodeAttribute)
 
 if ($nodeName=='dc:identifier')
 {
-    $curElement->nodeValue = str_replace("/","-",($pageID));
+    $curElement->nodeValue = $cleanPageID;
 }
 
 if ($nodeName=='dc:title')
