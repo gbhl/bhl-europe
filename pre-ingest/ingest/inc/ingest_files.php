@@ -99,9 +99,9 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
     if ((((int)$depth==0))&&($include_aip)&&(is_dir(clean_path($path."/"._AIP_DIR)))) {
         $arrFiles   = getDirectory(clean_path($path."/"._AIP_DIR),$arrFiles,0,"",$depth);
     }
-   
+
     $nFiles = count($arrFiles);
-    
+
     // CONTROL FILES ETC. ZUM IGNORIEREN
     $arrCF = array(_FEDORA_CF_READY,_FEDORA_CF_FINISHED,_FEDORA_CF_RUNNING,
         _AIP_OLEF_FN,_THUMB_BGRD,_THUMB_FN);
@@ -109,13 +109,13 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
     for ($i = 0; $i < $nFiles; $i++) 
     {
         $pos = strrpos($arrFiles[$i],".");
-       
+
         if (($pos!==false)&&(!in_array(basename($arrFiles[$i]),$arrCF)))
         {   
             $importantPart = substr($arrFiles[$i],$pos);
-            
+
             // ANHAENGEN FALLS DIESER SUFFIX GESUCHT IST
-            if (instr(strtolower($importantPart), $arrPageExt, true, true))
+            if ((strlen($arrFiles[$i])>3)&&(instr(strtolower($importantPart), $arrPageExt, true, true)))
                 $arrPageFiles[] = $arrFiles[$i];
         }
     }
@@ -194,7 +194,7 @@ $arrToSort = array(
 
 
 // ****************************************************************************
-function getPageInfoFromFile($file_path,$curOrderNumber=1,$errorTolerant=false)
+function getPageInfoFromFile($file_path,$curOrderNumber="",$errorTolerant=false)
 // ****************************************************************************
 // 
 // AB ELEMENT 3 SIND ALLES PAGE NUMBERS !
@@ -209,32 +209,39 @@ function getPageInfoFromFile($file_path,$curOrderNumber=1,$errorTolerant=false)
 // ALL INFORMATION EXCEPT ID AND SEQUENCE IN THE FILENAME ARE OPTIONAL.
 {
      include_once(_SHARED."file_operations.php");
-     
+
      $arrReturn = array();
-     $minParts  = 2;    
+     $minParts  = 2;
      $optParts  = 4;
 
-     $file_ext  = file_get_extension(basename($file_path));
      $file_name = file_remove_extension(basename($file_path));
+
+     // MAX. 2 EXTENSIONS WEG (Z.B. .tif.tax) NICHT BEI PDF (da z.b.: xxxxxxxxxx.pdf_7_PDF_7.tax)
+     if (!isPDF($file_name)) $file_name = file_remove_extension($file_name);
 
      $arrReturn = explode("_",$file_name);
      $nArr      = count($arrReturn);
 
      // FEHLERBEHANDLUNG
-     if (($nArr<$optParts)&&($errorTolerant))
+     if (($nArr<$optParts)&&($errorTolerant)&&(is_numeric($curOrderNumber)))
      {
         if ($nArr==2)      $arrReturn = array_merge($arrReturn,array(_DEFAULT_PAGETYPE,$curOrderNumber));
         else if ($nArr==3) $arrReturn = array_merge($arrReturn,array($curOrderNumber));
+        
+        $nArr = count($arrReturn);
      }
 
      // PREFIX | SEQUENCE | TYPE | PAGENUMBER   (SEQUENCE=PAGENUMBER)
 
-     if (count($arrReturn) < $minParts) 
+     if ($nArr < $minParts) 
      {
+        if (basename($file_path)!="") $errFile = basename($file_path);
+        else                          $errFile = $file_path;
+        
         echo _ERR."Filename convention broken! Minimal requirements (PREFIX_SEQUENCE nomenclatur) not fulfilled.<br>\n 
             Please rename your uploaded page files according to the File Submission Guidelines.<br>\n
             (FSG: <b>PREFIX | SEQUENCE | [TYPE | PAGENUMBER]</b>)!<br>\n
-            Affected File: <font color=red><b>".(basename($file_path))."</b></font><br>\n";
+            Affected File: <font color=red><b>".$errFile."</b></font><br>\n";
 
         return false;
      }
@@ -252,6 +259,7 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
 // SORTIERT IM PAGENUMBER MODUS NACH SEQUENCE WENN PAGE NUMBERS FEHLEN
 // WENN NOMENKLATUR NICHT STIMMT KOMMT SORTSHORTFIRST() ZUM EINSATZ
 // PRE-SEQ-TYPE-PNO
+// AUF FUER TAXON FILES
 {
     if ($sortBy=='pagenumber')  $sortBy = 2;    // pagenumber sort index
     else                        $sortBy = 1;    // sequence sort index
@@ -294,14 +302,26 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                 // NBGB013726AIGR1889FLOREELE00_0007_PAGE_3_4_5.tif
                 // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
                 $arrSortable = array();
-
+                $arrMerker   = array();
+                
                 // MIT BETREFFENDER SPALTE GEINDEXTER ARRAY AUFBAU
                 for ($i=0;$i<$nElements;$i++)
                 {
                     $partsCur = getPageInfoFromFile($arrToSort[$i]);
 
-                    if (is_numeric($partsCur[$sortBy])) $arrSortable[($partsCur[$sortBy])] = $arrToSort[$i];
-                    else  echo _ERR." There is a filename mismatch (".$arrToSort[$i].")\n<br>";
+                    if ($partsCur) 
+                    {
+                        $curKey   = $partsCur[$sortBy];
+
+                        if (is_numeric($curKey))
+                        {
+                            if (!in_array($curKey,$arrMerker))  $arrSortable[($curKey)] = $arrToSort[$i];
+                            else                                echo ERR." Duplicate Sortig Kriteria found; Filename: ".basename($arrToSort[$i])."\n<br>";
+
+                            $arrMerker[] = $curKey;
+                        }
+                        else echo _ERR." There is a filename mismatch (".basename($arrToSort[$i]).")\n<br>";
+                    }
                 }
 
                 ksort($arrSortable);        // key sort
@@ -325,6 +345,60 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
 
     return false;
 }
+
+
+
+// *************************************************************
+function getParentInfo($contentDir,$sLevel=1,$target="guid.txt")
+// *************************************************************
+{
+    if ($sLevel>1)
+    {
+        if (substr($contentDir,(strlen($contentDir)-1),1)=="/")    $contentDir = substr($contentDir,0,(strlen($contentDir)-1));
+
+        $parentDir = dirname($contentDir); // uebergeordnetes verz.
+        $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target); // target darin?
+                
+        if (file_exists($curFile)) return trim(file_get_contents($curFile));
+        
+        if ($sLevel==2) return "";
+        
+        $parentDir = dirname($parentDir);
+        $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target);
+        
+        if (file_exists($curFile)) return trim(file_get_contents($curFile));
+        
+        if ($sLevel==3) return "";
+                
+        $parentDir = dirname($parentDir);
+        $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target);
+        
+        if (file_exists($curFile)) return trim(file_get_contents($curFile)); 
+    }
+
+    return "";
+}
+
+
+
+// GET GUID FROM FIRST EXISTING PARENT RELATIVE TO 
+// $contentDir (A PARENT LEVEL CAN BE EMTPY AND 
+// THEREFORE THE PARENT 2 LAYERS UP!)
+function getParentGuid($contentDir,$sLevel=1)
+{
+    return getParentInfo($contentDir,$sLevel,"guid.txt");
+}
+
+
+
+// GET OLEF FROM FIRST EXISTING PARENT RELATIVE TO 
+// $contentDir (A PARENT LEVEL CAN BE EMTPY AND 
+// THEREFORE THE PARENT 2 LAYERS UP!)
+function getParentOlef($contentDir,$sLevel=1)
+{
+    return getParentInfo($contentDir,$sLevel,_AIP_OLEF_FN);
+}
+
 
 
 

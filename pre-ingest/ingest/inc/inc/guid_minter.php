@@ -1,10 +1,14 @@
 <?php
-
+// ********************************************
+// ** FILE:    GUID_MINTER.PHP               **
+// ** PURPOSE: BHLE INGESTION & PREPARATION  **
+// ** DATE:    23.03.2012                    **
+// ** AUTHOR:  ANDREAS MEHRRATH              **
+// ********************************************
 /*
   GET GUID
   INVOKED BY GET_METADATA.PHP
- * 
- * 
+  
   Based on Noid from CPAN by Kunze.
 
   Used following schema to setup NOID:
@@ -107,9 +111,6 @@ if ($cGUID=="")
     }
 }
 
-
-
 echo "Minted GUID: <font color=#64FF0F><b>".$cGUID."</b></font> \n";
-
 
 ?>

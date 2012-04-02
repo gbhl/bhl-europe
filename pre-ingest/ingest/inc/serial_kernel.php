@@ -62,9 +62,6 @@ https://bhl.wikispaces.com/file/view/BHL-Europe_File+Submission+Guidelines.pdf
 * 
 */
 
-// VORAB INFOS UEBER CONTENT UND BEREITS ERSTELLTES HOLEN
-$arrQueueCommands = array();
-
 $arrIgnoreDirs = array('.', '..','.aip','.AIP');
 
 
@@ -72,55 +69,56 @@ if (_MODE=='production')
 progressBar("Please wait operation in progress...", "processing.gif","margin-top: 75px; left: 350px;", "visible", 2);
 
 
+
+
 // SERIAL LEVELS ANALYSIEREN
 
 $arrSerialLevels = array("Serial","Section","Volume","Article");
 $nSerialLevels   = count($arrSerialLevels);
 
-
-$l1ready = false;
-$l2ready = false;
-$l3ready = false;
-$l4ready = false;
+$arrAnalyzedDirs = array();
 
 $nMarked = 0;
 $nSent   = 0;
 
 
-// getDirectory($source, $arrContents, $level, $ignore, $max_levels)
+$sLevel  = 0;
+
+include("serial_kernel_step.php");
+
 $L1Directory = getDirectory($contentDir, "", 0, $arrIgnoreDirs, 0);     // serial root
 $L1n         = count($L1Directory);
-$sLevel      = 1;
 
 for ($l1=0;$l1<$L1n;$l1++)
 {
-    // ************************************************************* analyze ebene 1
-    if (!$l1ready)  { include($menu_nav.".php"); $l1ready = true; } 
-    // *************************************************************
+    $sLevel = 1;
     
-    if (is_dir($L1Directory[$l1]))      // FUER JEDES DIR AUF EBENE 1 
+    if (is_dir($L1Directory[$l1]))      // FUER JEDE section 
     {
         include("serial_kernel_step.php");
         
         $L2Directory = getDirectory($L1Directory[$l1], "", 0, $arrIgnoreDirs, 0); 
         $L2n         = count($L2Directory);
-        $sLevel      = 2;
 
         for ($l2=0;$l2<$L2n;$l2++)
         {
-            if (is_dir($L2Directory[$l2]))  // FUER JEDES DIR AUF EBENE 2 
+            $sLevel = 2;
+
+            if (is_dir($L2Directory[$l2]))  // FUER JEDES volume 
             {
                 include("serial_kernel_step.php");
-                
+
                 $L3Directory = getDirectory($L2Directory[$l2], "", 0, $arrIgnoreDirs, 0); 
                 $L3n         = count($L3Directory);
-                $sLevel      = 3;
-                
+
                 for ($l3=0;$l3<$L3n;$l3++)
                 {
-                    if (is_dir($L3Directory[$l3]))      // ARTIKEL, FUER JEDES DIR AUF EBENE 3 (=LETZTE EBENE 4)
+                    $sLevel      = 3;
+
+                    if (is_dir($L3Directory[$l3]))      // FUER JEDEN artikel
                     {
                         include("serial_kernel_step.php");
+           
                     }
                 }
             }
@@ -132,7 +130,8 @@ if (_MODE=='production') close_progressBar();
 
 
 
-// ** get_mets **
+
+// ** GET_METS POST NOTES **
 
 if ($nMarked > 0)   $endmsg .= $nMarked." AIP(s) marked as ready for ingest for Fedora. ";
 if ($nSent   > 0)   $endmsg .= $nSent." ActiveMQ ingest message(s) sent.";

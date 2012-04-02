@@ -34,6 +34,8 @@ Selaginella riddellii van Eselt.
  * 
  * 
  */
+include_once(_SHARED."file_operations.php");
+
 
 $resource_context = stream_context_create(array(
     'http' => array(
@@ -42,62 +44,59 @@ $resource_context = stream_context_create(array(
         )
 );
 
-if ($nTextFiles==0) die(_ERR."No page text/OCR files found in upload or "._AIP_DIR." directory!");
-
-echo "<h3>Try to get taxons for ".$nTextFiles." text files.</h3><pre>";
-
-
-// FUER ALLE TEXTFILES TAXON WEBSERVICE AUFRUFEN
-for ($i = 0; $i < $nTextFiles; $i++) 
+if ($nTextFiles==0)     echo _ERR."No page text/OCR files found in upload or "._AIP_DIR." directory!";
+else
 {
-    ob_start();
-    
-    // $outputFile   = str_replace("//","/",$contentDir."/"._AIP_DIR."/".basename($arrPagesTextFiles[$i]).".TAX");
-    $outputFile = substr(basename($arrPagesTextFiles[$i]), 0, strrpos(basename($arrPagesTextFiles[$i]), '.'));
-    
-    // DARF KEIN .TXT IN SICH TRAGEN
-    $outputFile = clean_path($destDir . $outputFile . _TAXON_EXT);
+    echo "<h3>Try to get taxons for ".$nTextFiles." text files.</h3><pre>";
 
-    $myURL = _TAXON_FINDER . getReverseLookupURL($arrPagesTextFiles[$i]);
-  
-    if (!_QUEUE_MODE)
+    // FUER ALLE TEXTFILES TAXON WEBSERVICE AUFRUFEN
+    for ($i = 0; $i < $nTextFiles; $i++) 
     {
-        echo "Try to analyze " . basename($arrPagesTextFiles[$i]) . " ...\n".$myURL."\n";
-       
-        // TAXONFINDING
-        $strXMLTaxons = file_get_contents($myURL, 0, $resource_context);
-        $nBytes = false;
+        ob_start();
 
-        // WRITE TAXON FILE FOR PAGE IF NOT EMPTY
-        if (!empty($strXMLTaxons)) 
+        // DARF KEIN .TXT IN SICH TRAGEN
+        $outputFile = clean_path($destDir . file_remove_extension(basename($arrPagesTextFiles[$i])) . _TAXON_EXT);
+
+        $myURL = _TAXON_FINDER . getReverseLookupURL($arrPagesTextFiles[$i]);
+
+        if (!_QUEUE_MODE)
         {
-            $nBytes = file_put_contents($outputFile, $strXMLTaxons);
+            echo "Try to analyze " . basename($arrPagesTextFiles[$i]) . " ...\n".$myURL."\n";
 
-            if ($nBytes !== false) {
-                echo $nBytes . " bytes written, ok.\n";
-                $arrTaxons[] = str_replace(_CONTENT_ROOT,'',$outputFile);
+            // TAXONFINDING
+            $strXMLTaxons = file_get_contents($myURL, 0, $resource_context);
+            $nBytes = false;
+
+            // WRITE TAXON FILE FOR PAGE IF NOT EMPTY
+            if (!empty($strXMLTaxons)) 
+            {
+                $nBytes = file_put_contents($outputFile, $strXMLTaxons);
+
+                if ($nBytes !== false) {
+                    echo $nBytes . " bytes written, ok.\n";
+                    $arrTaxons[] = str_replace(_CONTENT_ROOT,'',$outputFile);
+                }
+                else    echo "No taxons returned or connection error.\n";
             }
-            else    echo "No taxons returned or connection error.\n";
+
+            echo "\n";
         }
-        
-        echo "\n";
-    }
-    else
-    {
-        // IN QUEUE WIRD TAXONFINDER UEBER WGET AUSGEFUEHRT NICHT PER PHP COMMANDS
-        $myCmd = "wget -t 1 -O ".$outputFile." \"".$myURL."\"";
-        
-        // INGEST SCRIPT COMMANDS
-        echo $myCmd . "\n";
-        $arrQueueCommands[] = $myCmd;        
+        else
+        {
+            // IN QUEUE WIRD TAXONFINDER UEBER WGET AUSGEFUEHRT NICHT PER PHP COMMANDS
+            $myCmd = "wget -t 1 -O ".$outputFile." \"".$myURL."\"";
+
+            // INGEST SCRIPT COMMANDS
+            echo $myCmd . "\n";
+            $arrQueueCommands[] = $myCmd;        
+        }
+
+        @ob_end_flush();
+        @ob_flush();
+        @flush();
     }
 
-    @ob_end_flush();
-    @ob_flush();
-    @flush();
+    echo "\n\n</pre>\n";
 }
-
-echo "\n\n</pre>\n";
-
 
 ?>
