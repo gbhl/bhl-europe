@@ -47,6 +47,7 @@ BEGIN {
 
 	inSequence=0;
 	inStructure=0;
+	chapterTemplate="chapter-template-dc.xml";
 	id="";
 
 }
@@ -206,7 +207,12 @@ END {
 					chapterDir = id "_" p;
 					print "CHAPTER: " p ": " chapters[p];
 					system("mkdir " targetFolder "/" chapterDir);
-					print chapters[p] > targetFolder "/" chapterDir "/chapter-title.txt"; 
+					print chapters[p] > targetFolder "/" chapterDir "/chapter-title.txt";
+
+					# create chapter level metadata file
+					replacementString = chapters[p];
+					gsub(",", "\,", replacementString); # escape all the comma for to use them in sed
+					system("sed -e \"s,##title##," replacementString ",\" " targetFolder "/" chapterTemplate " > " targetFolder "/" chapterDir "/metadata-dc.xml") ;
 				}
 				outDir = targetFolder "/" chapterDir;
 			}
@@ -223,7 +229,6 @@ END {
 		} else {
 			newFilename = $0;
 		}
-		print "cp " scansFolder "/" $0 " " outDir "/" newFilename;
 		# copy scan to new folder and give it a new name
 		system("cp " scansFolder "/" $0 " " outDir "/" newFilename);
 	}
