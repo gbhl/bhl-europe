@@ -43,10 +43,6 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	# convert .oai_dc metadata to pure .dc
 	xmlstarlet tr $BHL_UTILS/oai_dc-to-dc.xsl metadata.oai_dc >  $BOOK_OUT_FOLDER/metadata-dc.xml
 
-	# prepare chapter level 
- 	xmlstarlet tr $BHL_UTILS/chapter-level-dc.xsl metadata.oai_dc > $BOOK_OUT_FOLDER/chapter-template-dc.xml
-
-
 	# read doc-types
 	DOC_TYPES=(`xmlstarlet sel $NAMESPACES_OAIDC -t -m "//dc:type[contains(text(), 'doc-type:')]" -v "text()" -n  metadata.oai_dc`)
 	
@@ -59,6 +55,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 			METADATAFILE=(`find -name "*.txt" | xargs grep -l -e "-- STRUCTURE --"`)
 			if [[ $METADATAFILE ]]; then
 				echo "  using structure from txt metadata file $METADATAFILE"
+				iconv -f ISO-8859-15 -t UTF-8  $METADATAFILE > $BOOK_OUT_FOLDER/metadata-and-structure.txt
 
 				echo "  preparing chapter level metadata template"
 				# 1. rename all dc:identifier to dc:isPartOf
@@ -68,7 +65,7 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 				xmlstarlet tr $BHL_UTILS/chapter-level-dc.xsl metadata.oai_dc > $BOOK_OUT_FOLDER/chapter-template-dc.xml
 
 				echo "  running create-structure.awk  ..."
-				awk -v targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $METADATAFILE
+				awk -v targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $BOOK_OUT_FOLDER/metadata-and-structure.txt
 
 				# clean up
 				rm $BOOK_OUT_FOLDER/chapter-template-dc.xml

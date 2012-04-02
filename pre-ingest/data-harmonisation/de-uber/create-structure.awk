@@ -207,12 +207,17 @@ END {
 					chapterDir = id "_" p;
 					print "CHAPTER: " p ": " chapters[p];
 					system("mkdir " targetFolder "/" chapterDir);
-					print chapters[p] > targetFolder "/" chapterDir "/chapter-title.txt";
-
+					
 					# create chapter level metadata file
-					replacementString = chapters[p];
-					gsub(",", "\,", replacementString); # escape all the comma for to use them in sed
-					system("sed -e \"s,##title##," replacementString ",\" " targetFolder "/" chapterTemplate " > " targetFolder "/" chapterDir "/metadata-dc.xml") ;
+					chapterTitleFile = targetFolder "/" chapterDir "/chapter-title.xml";
+					print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<title>" chapters[p] "</title>" > chapterTitleFile;
+					system("xmlstarlet tr " ENVIRON["BHL_UTILS"] "/chapter-level-dc.xsl -s titleFile='" chapterTitleFile "' " targetFolder "/metadata.oai_dc > " targetFolder "/" chapterDir "/metadata-dc.xml");
+
+					#replacementString = chapters[p];
+					#gsub(",", "\,", replacementString); # escape all the comma for to use them in sed
+					#gsub("\`", "\\\`,", replacementString)
+					#print "### sed -e \"s,##title##," replacementString ",\" " targetFolder "/" chapterTemplate;
+					#system("sed -e \"s,##title##," replacementString ",\" " targetFolder "/" chapterTemplate " > " targetFolder "/" chapterDir "/metadata-dc.xml") ;
 				}
 				outDir = targetFolder "/" chapterDir;
 			}
