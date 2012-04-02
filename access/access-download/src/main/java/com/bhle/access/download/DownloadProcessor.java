@@ -5,6 +5,7 @@ import java.io.OutputStream;
 
 import org.akubraproject.Blob;
 import org.akubraproject.DuplicateBlobException;
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +19,10 @@ import com.bhle.access.download.storage.FileStorage;
 
 @Component
 public class DownloadProcessor {
-	
+
 	private static final Logger logger = LoggerFactory
 			.getLogger(DownloadProcessor.class);
-	
+
 	@Autowired
 	private FileStorage storage;
 
@@ -31,52 +32,48 @@ public class DownloadProcessor {
 	@ServiceActivator
 	public DownloadResponse process(DownloadRequest request) {
 
+		Blob blob = request.getBlob();
+		if (blob == null && request.isOffline()) {
+			blob = storage.fetchBlob((OfflineDownloadRequest) request);
+		}
+		OutputStream out = null;
+		try {
+			out = blob.openOutputStream(-1, true);
+		} catch (DuplicateBlobException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		switch (request.getContentType()) {
 		case PDF:
 			try {
-				Blob blob = storage.getBlob((OfflineDownloadRequest) request);
-				OutputStream out = null;
-				try {
-					out = blob.openOutputStream(-1, true);
-				} catch (DuplicateBlobException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
 				PdfGenerator.generate(request.getPageURIs(),
 						request.getResolution(), out);
-				return responseBuilderFactory.createBuilder(request).build(
-						request, blob, null);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			IOUtils.closeQuietly(out);
+			return responseBuilderFactory.createBuilder(request).build(request,
+					blob);
 		case JPEG:
-			Blob blob = storage.getBlob((OfflineDownloadRequest) request);
-			OutputStream out = null;
-			try {
-				out = blob.openOutputStream(-1, true);
-			} catch (DuplicateBlobException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 			try {
 				JpegPackageGenerator.generate(request.getPageURIs(),
 						request.getResolution(), out);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			IOUtils.closeQuietly(out);
 			return responseBuilderFactory.createBuilder(request).build(request,
-					blob, null);
+					blob);
 		case OCR:
-			byte[] bytes = null;
 			try {
-				bytes = OcrGenerator.generate(request.getPageURIs());
+				OcrGenerator.generate(request.getPageURIs(), out);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+			IOUtils.closeQuietly(out);
 			return responseBuilderFactory.createBuilder(request).build(request,
-					null, bytes);
+					blob);
 		default:
 			throw new IllegalArgumentException();
 		}

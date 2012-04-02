@@ -89,13 +89,13 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
         for($i=0;$i<count($arrPageExt);$i++)
                 $arrPageExt[$i] = $arrPageExt[$i].$additional_suffix;
     }
-    
-    reset($arrPageExt);    
-    
+
+    reset($arrPageExt);
+
     // DIRECTORY EINLESEN
     $arrFiles       = getDirectory(clean_path($path),array(),0,"",$depth);
 
-    // HAENGT NOCHMAL .AIP FILES DAZU FALLS DEPHT == 0
+    // HAENGT NOCHMAL .AIP FILES DAZU FALLS DEPTH == 0
     if ((((int)$depth==0))&&($include_aip)&&(is_dir(clean_path($path."/"._AIP_DIR)))) {
         $arrFiles   = getDirectory(clean_path($path."/"._AIP_DIR),$arrFiles,0,"",$depth);
     }
@@ -298,16 +298,18 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                 // MIT BETREFFENDER SPALTE GEINDEXTER ARRAY AUFBAU
                 for ($i=0;$i<$nElements;$i++)
                 {
-                    $partsCur                          = getPageInfoFromFile($arrToSort[$i]);
-                    $arrSortable[($partsCur[$sortBy])] = $arrToSort[$i];
+                    $partsCur = getPageInfoFromFile($arrToSort[$i]);
+
+                    if (is_numeric($partsCur[$sortBy])) $arrSortable[($partsCur[$sortBy])] = $arrToSort[$i];
+                    else  echo _ERR." There is a filename mismatch (".$arrToSort[$i].")\n<br>";
                 }
 
-                ksort($arrSortable);
+                ksort($arrSortable);        // key sort
                 reset($arrSortable);
                 
                 // echo_pre($arrSortable);
 
-                $arrSorted = array();
+                $arrSorted = array();       // ausgabe array
 
                 // KEYS DES SORTIERTEN ARRAYS WIEDER VON 0...N AUFBAUEN
                 while (list($key, $val) = each($arrSortable)) 

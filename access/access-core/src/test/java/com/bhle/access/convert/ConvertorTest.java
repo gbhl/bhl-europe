@@ -86,13 +86,13 @@ public class ConvertorTest implements ResourceLoaderAware {
 	@Ignore
 	@Test
 	public void testTiff2JpegConvertor() {
-		Tiff2JpegConvertor tiffConvertor = new Tiff2JpegConvertor();
-		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
+		Tiff2JpegConverter tiffConvertor = new Tiff2JpegConverter();
+		List<DatastreamConverter> convertors = new ArrayList<DatastreamConverter>();
 		convertors.add(tiffConvertor);
 
-		ConvertorManager.convertors = convertors;
+		ConverterManager.converters = convertors;
 
-		Derivative[] derivatives = ConvertorManager
+		Derivative[] derivatives = ConverterManager
 				.derive(tiffDatastreamWrapper);
 		Assert.assertEquals(1, derivatives.length);
 
@@ -121,20 +121,20 @@ public class ConvertorTest implements ResourceLoaderAware {
 	@Ignore
 	@Test
 	public void testOlefConvertors() {
-		Olef2DcConvertor olef2DcConvertor = new Olef2DcConvertor();
-		Olef2Marc21Convertor olef2Marc21Convertor = new Olef2Marc21Convertor();
-		Olef2ModsConvertor olef2ModsConvertor = new Olef2ModsConvertor();
-		Olef2OlefConvertor olef2OlefConvertor = new Olef2OlefConvertor();
+		Olef2DcConverter olef2DcConvertor = new Olef2DcConverter();
+		Olef2Marc21Converter olef2Marc21Convertor = new Olef2Marc21Converter();
+		Olef2ModsConverter olef2ModsConvertor = new Olef2ModsConverter();
+		Olef2OlefConverter olef2OlefConvertor = new Olef2OlefConverter();
 
-		List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
+		List<DatastreamConverter> convertors = new ArrayList<DatastreamConverter>();
 		convertors.add(olef2DcConvertor);
 		convertors.add(olef2Marc21Convertor);
 		convertors.add(olef2ModsConvertor);
 		convertors.add(olef2OlefConvertor);
 
-		ConvertorManager.convertors = convertors;
+		ConverterManager.converters = convertors;
 
-		Derivative[] derivatives = ConvertorManager
+		Derivative[] derivatives = ConverterManager
 				.derive(olefDatastreamWrapper);
 
 		Assert.assertEquals(4, derivatives.length);

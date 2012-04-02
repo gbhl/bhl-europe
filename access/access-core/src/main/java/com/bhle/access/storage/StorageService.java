@@ -24,12 +24,6 @@ public class StorageService {
 		this.defaultStorages = defaultStorages;
 	}
 
-	private LowLevelStorage offlineStorages;
-
-	public void setOfflineStorages(LowLevelStorage offlineStorages) {
-		this.offlineStorages = offlineStorages;
-	}
-
 	public List<URI> listGuids() throws IOException {
 		List<URI> guidUris = new ArrayList<URI>();
 		Set<String> guidSet = new HashSet<String>();

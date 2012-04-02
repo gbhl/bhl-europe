@@ -7,12 +7,13 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bhle.access.download.Resolution;
 import com.bhle.access.util.DjatokaURLBuilder;
 import com.bhle.access.util.FedoraURI;
+import com.bhle.access.util.Resolution;
 import com.bhle.access.util.StaticURI;
 import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Document;
@@ -38,15 +39,16 @@ public class PdfGenerator {
 	public static void generate(String[] pageURIs, Resolution resolution, OutputStream out)
 			throws IOException {
 		Document document = initialPDF();
-
+		
 		try {
-			PdfWriter writer = PdfWriter.getInstance(document, out);
+			PdfWriter.getInstance(document, out);
 			document.open();
 			mergeAllPages(pageURIs, resolution, document);
 		} catch (DocumentException e) {
 			e.printStackTrace();
 		} finally {
 			document.close();
+			IOUtils.closeQuietly(out);
 		}
 	}
 

@@ -51,7 +51,7 @@ public class ImageUtil {
 		} catch (IM4JavaException e) {
 			e.printStackTrace();
 		}
-		
+
 		ByteArrayInputStream byteIn = new ByteArrayInputStream(
 				byteOut.toByteArray());
 
@@ -107,7 +107,7 @@ public class ImageUtil {
 		return byteIn;
 	}
 
-	public static InputStream tiffToJp2Size(InputStream tiffIn) {
+	public static int[] tiffToJp2Size(InputStream tiffIn) {
 		int height = 0;
 		int width = 0;
 		try {
@@ -139,7 +139,7 @@ public class ImageUtil {
 		} catch (InfoException e) {
 			e.printStackTrace();
 		}
-		return IOUtils.toInputStream(height + "," + width);
+		return new int[] { height, width };
 	}
 
 }

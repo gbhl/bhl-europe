@@ -5,21 +5,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class DownloadResponseBuilderFactory {
-	
+
 	@Autowired
 	private DownloadEmailResponseBuilder emailResponseBuilder;
-	
+
 	@Autowired
-	private DowloadOnlineResponseBuilder onlineResponseBuilder;
-	
+	private DowloadBasicResponseBuilder basicResponseBuilder;
+
 	public DownloadResponseBuilder createBuilder(DownloadRequest request) {
-		switch (request.getContentType()) {
-		case JPEG:
+		if (request.isOffline()) {
 			return emailResponseBuilder;
-		case PDF:
-			return emailResponseBuilder;
-		default:
-			return onlineResponseBuilder;
+		} else {
+			return basicResponseBuilder;
 		}
 	}
 }

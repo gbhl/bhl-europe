@@ -3,7 +3,7 @@
 /*
  * MISC. TEST SCRIPT
  * 
- * http://localhost/index.php?menu_nav=test
+ * http://localhost/index.php?menu_nav=test&content_id=3
  */
 
 
@@ -23,6 +23,31 @@ $arrToSort = array(
 echo_pre(
 sortPageFiles($arrToSort) // ,$sortBy='sequence'
         );
+
+
+
+
+
+
+$arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
+$nTiffs   = count($arrTiffs);
+
+echo _TABLE;
+
+echo_pre($arrTiffs);
+
+
+// TIFFS VON DATENBANK HOLEN 
+$query = "select content_pages_tiff from content where content_id=" . $content_id;
+$arrTiffs = explode(_TRENNER, abfrage($query, $db));
+
+
+echo _TD;
+
+echo_pre($arrTiffs);
+
+echo _TAB;
+
 
 
 ?>

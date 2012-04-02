@@ -111,6 +111,9 @@ public class FedoraUtil {
 				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + pid
 				+ "> " + "and $object <fedora-model:hasModel> <info:fedora/"
 				+ contentModel + ">)";
+		
+		logger.debug("RI Search:" + query);
+		
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
 					.lang("itql").format("csv").type("tuples").execute(client);

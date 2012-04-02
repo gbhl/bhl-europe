@@ -69,38 +69,41 @@ if (isset($user_id))
     
     // GENERATE USER WORK DIR
     if (!is_dir(_USER_WORKDIR))  @mkdir(_USER_WORKDIR);
-}
 
 
 
-// *******************
-// CONTENT VORAB INFOS
-// *******************
-if ((isset($content_id)) && (is_numeric($content_id))) 
-{
-    $arrContentDetails = get_content_details($content_id);
-   
-    $contentDir  = $arrContentDetails['content_root'];
-    $contentName = $arrContentDetails['content_name'];
-    $cPages      = $arrContentDetails['content_pages'];
-    $cType       = $arrContentDetails['content_type'];
-    
-    // GENERATE .AIP DIR
-    $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");
-    if (!is_dir($destDir))      @mkdir($destDir);
 
-    $curQueueFile = clean_path(_USER_WORKDIR._QUEUE_PREFIX.$content_id._QUEUE_SUFFIX);
-    
-    $isPDF = false;
-
-    if (isPDF($contentName))
+    // *******************
+    // CONTENT VORAB INFOS
+    // *******************
+    if ((isset($content_id)) && (is_numeric($content_id))) 
     {
-        $isPDF = true;
-        $sourcePDF = clean_path($contentDir."/".$contentName);
+        $arrContentDetails = get_content_details($content_id);
+
+        $contentDir  = $arrContentDetails['content_root'];
+        $contentName = $arrContentDetails['content_name'];
+        $cPages      = $arrContentDetails['content_pages'];
+        $cType       = $arrContentDetails['content_type'];
+
+        // GENERATE .AIP DIR
+        $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");
+        if (!is_dir($destDir))      @mkdir($destDir);
+
+        $curQueueFile = clean_path(_USER_WORKDIR._QUEUE_PREFIX.$content_id._QUEUE_SUFFIX);
+
+        $isPDF = false;
+
+        if (isPDF($contentName))
+        {
+            $isPDF = true;
+            $sourcePDF = clean_path($contentDir."/".$contentName);
+        }
+
+        define("_OLEF_FILE",        $destDir._AIP_OLEF_FN);
+
+        $olef_file = _OLEF_FILE;
     }
     
-    define("_OLEF_FILE",        $destDir._AIP_OLEF_FN);
 }
-
 
 ?>

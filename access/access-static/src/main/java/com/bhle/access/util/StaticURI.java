@@ -28,19 +28,19 @@ public class StaticURI {
 		StaticURI.ID_MAPPER = idMapper;
 	}
 
-	public static URI toStaticHttpUri(FedoraURI fedoraUrl) {
+	public static URI toStaticHttpUri(FedoraURI fedoraUri) {
 		URI staticHttpUri = null;
-		staticHttpUri = URI.create(BASE_URL + fedoraUrl.getGuid() + "/"
-				+ ID_MAPPER.getFileMapper().getInternalFile(fedoraUrl.toURI()));
+		staticHttpUri = URI.create(BASE_URL + fedoraUri.getGuid() + "/"
+				+ ID_MAPPER.getFileMapper().getInternalFile(fedoraUri.toURI()));
 		return staticHttpUri;
 	}
 
-	public static URI toStaticFileUri(FedoraURI fedoraUrl) {
+	public static URI toStaticFileUri(FedoraURI fedoraUri) {
 		URI staticFileUri = null;
 		staticFileUri = URI.create("file:///"
 				+ BAST_DIR
 				+ "/"
-				+ ID_MAPPER.getInternalId(fedoraUrl.toURI())
+				+ ID_MAPPER.getInternalId(fedoraUri.toURI())
 						.getSchemeSpecificPart());
 		return staticFileUri;
 	}

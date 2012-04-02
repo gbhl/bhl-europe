@@ -14,21 +14,21 @@ import com.bhle.access.domain.Derivative;
 import com.bhle.access.domain.DigitalObjectWrapper;
 import com.bhle.access.util.RereadabelBufferedInputStream;
 
-public class ConvertorManager {
+public class ConverterManager {
 
 	private static final Logger logger = LoggerFactory
-			.getLogger(ConvertorManager.class);
+			.getLogger(ConverterManager.class);
 
-	public static List<DatastreamConvertor> convertors;
+	public static List<DatastreamConverter> converters;
 
 	@Autowired
-	public void setConvertors(List<DatastreamConvertor> convertors) {
-		ConvertorManager.convertors = convertors;
+	public void setConverters(List<DatastreamConverter> convertors) {
+		ConverterManager.converters = convertors;
 	}
 
 	public static Derivative[] derive(DatastreamWrapper datastream) {
 		List<Derivative> results = new ArrayList<Derivative>();
-		for (DatastreamConvertor convertor : convertors) {
+		for (DatastreamConverter convertor : converters) {
 			Derivative derivative = convertor.derive(datastream);
 			if (derivative != null) {
 				logger.info("Convert " + datastream.getDigitalObject().getPid()
@@ -57,7 +57,7 @@ public class ConvertorManager {
 
 	public static Derivative[] deriveInformation(DatastreamWrapper datastream) {
 		List<Derivative> results = new ArrayList<Derivative>();
-		for (DatastreamConvertor convertor : convertors) {
+		for (DatastreamConverter convertor : converters) {
 			Derivative derivative = convertor.deriveInformation(datastream);
 			if (derivative != null) {
 				results.add(derivative);
@@ -67,7 +67,7 @@ public class ConvertorManager {
 	}
 
 	public static String getMimeType(String dsid) {
-		for (DatastreamConvertor convertor : convertors) {
+		for (DatastreamConverter convertor : converters) {
 			if (convertor.getDerivativeId().equalsIgnoreCase(dsid)) {
 				return convertor.getDerivativeMimeType();
 			}
@@ -76,7 +76,7 @@ public class ConvertorManager {
 	}
 
 	public static String getSuffix(String dsid) {
-		for (DatastreamConvertor convertor : convertors) {
+		for (DatastreamConverter convertor : converters) {
 			if (convertor.getDerivativeId().equalsIgnoreCase(dsid)) {
 				return convertor.getDerivativeSuffix();
 			}

@@ -4,12 +4,12 @@ import java.io.InputStream;
 
 import com.bhle.access.util.MetadataUtil;
 
-public class Olef2DcConvertor extends AbstractDataStreamConvertor{
+public class Olef2ModsConverter extends AbstractDataStreamConverter{
 
 	private static String[] contentModels;
 	
 	public static void setContentModels(String[] contentModels) {
-		Olef2DcConvertor.contentModels = contentModels;
+		Olef2ModsConverter.contentModels = contentModels;
 	}
 	
 	public String[] getContentModels() {
@@ -21,7 +21,7 @@ public class Olef2DcConvertor extends AbstractDataStreamConvertor{
 	}
 
 	public String getDerivativeId() {
-		return "DC";
+		return "MODS";
 	}
 
 	public String getDerivativeSuffix() {
@@ -30,7 +30,7 @@ public class Olef2DcConvertor extends AbstractDataStreamConvertor{
 
 	@Override
 	public InputStream doConvert(InputStream inputStream) {
-		return MetadataUtil.olefToDc(inputStream);
+		return MetadataUtil.olefToMods(inputStream);
 	}
 
 	public String getDerivativeMimeType() {

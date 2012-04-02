@@ -8,11 +8,11 @@
 
 $myCmd = _SMT;
 
-$myParams   = abfrage("select user_config_smt from users as wert where user_id=" . $user_id, $db);
+$myParams   = $arrProvider['user_config_smt'];
 
 $myParams   = str_replace(array("<input_file>", "<input file>"),  "\"".$inputFile."\"", $myParams);
 
-$myParams   = str_replace(array("<output_file>", "<output file>"),"\""._OLEF_FILE."\"", $myParams);
+$myParams   = str_replace(array("<output_file>", "<output file>"),"\"".$olef_file."\"", $myParams);
 
 @ob_end_clean();
 
@@ -27,6 +27,9 @@ if ((!is_array($inputFile)) && (file_exists($inputFile)))
 {
     $output = array();
     $return_var = "";
+    @unlink($olef_file);
+    
+    echo "\n\nCommand: ".$myCmd."\n";
     
     $rLine = @exec($myCmd, $output, $return_var);
 

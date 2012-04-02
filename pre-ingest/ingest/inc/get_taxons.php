@@ -43,7 +43,7 @@ if ($nTaxons >= $cPages)
 
     $endmsg .= "For ".$nTextFiles." text files ".$nTaxons.
             " taxon files (.tax) generated/found. Database updated successfully.";
-} 
+}
 else if (!_QUEUE_MODE) 
     echo _ERR . "Not all necessary taxonometric files could be prepared!";
 

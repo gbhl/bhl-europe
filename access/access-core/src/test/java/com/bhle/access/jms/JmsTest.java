@@ -87,4 +87,8 @@ public class JmsTest {
 		atom = atomListener.getAtomMessage();
 		Assert.assertEquals(Method.MODIFY_DATASTREAM, atom.getMethodName());
 	}
+	
+	public void testReceiveBatchIngestMessageFromIngest(){
+		producer.send("{\"GUID\":bhle:a000test, \"STATUS\":COMPLETED}");
+	}
 }

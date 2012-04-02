@@ -17,9 +17,10 @@ include_once(_SHARED."file_operations.php");
 
 if (!isset($content_id))   die(_ERR." Need content information, ID to prepare METS!");
 
+// *****
 // INITS
-
-$cGUID      = abfrage("select content_guid from content where content_id=".$content_id,$db);
+// *****
+$cGUID      = $arrContentDetails['content_guid'];
 $objID      = "bhle:".$cGUID;
 $cleanObjID = str_replace("/","-",$objID);
 
@@ -34,17 +35,22 @@ echo "<h3>Prepare METS Files for media and its parts</h3><pre>";
 
 
 // TIFFS IN CONTENT TABELLE WERDEN BEI IMAGES UND PDFS AKTUELL GEHALTEN DAHER VERWENDBAR
-$query    = "select content_pages_tiff from content where content_id=" . 
-        $content_id." order by content_pages_tiff asc";
-$arrTiffs = explode(_TRENNER, abfrage($query, $db));
-$arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
+// $query    = "select content_pages_tiff from content where content_id=" . $content_id." order by content_pages_tiff asc";
+// $arrTiffs = explode(_TRENNER, abfrage($query, $db));
+
+$arrTiffs  = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
+// $nTiffs = count($arrTiffs);
+$arrTiffs  = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
 
 
 // OCR IN CONTENT TABELLE WERDEN BEI IMAGES UND PDFS AKTUELL GEHALTEN DAHER VERWENDBAR
-$query    = "select content_pages_text from content where content_id=" . 
-        $content_id." order by content_pages_text asc";
-$arrOCR   = explode(_TRENNER, abfrage($query, $db));
+// $query    = "select content_pages_text from content where content_id=" . $content_id." order by content_pages_text asc";
+// $arrOCR   = explode(_TRENNER, abfrage($query, $db));
+
+$arrOCR   = getContentFiles($contentDir, 'ocrdata',true);
+// $nOCR  = count($arrOCR);
 $arrOCR   = sortPageFiles($arrOCR);   // IMPORTANT PRE SORT
+
 
 
 $filesGenerated = 0;
@@ -67,9 +73,10 @@ for ($i=0;$i<=$cPages;$i++)     // $cPages + 1 book
     else
     {
         // OBJID + PAGE NR.
-        $pageID = $objID."-".substr("00000".$i,-5);     // interne page id = OBJID   !!!! oder reale page nr??
-        $cur_tiff = basename($arrTiffs[($i-1)]);
-        $metsFile = $destDir.str_replace(array(":","/"),"_",$pageID).".xml";   // FILENAME
+        $pageID      = $objID."-".substr("00000".$i,-5);     // interne page id = OBJID   !!!! oder reale page nr??
+        $cleanPageID = str_replace("/","-",$pageID);
+        $cur_tiff    = basename($arrTiffs[($i-1)]);
+        $metsFile    = $destDir.str_replace(array(":","/"),"_",$pageID).".xml";   // FILENAME
         $domDoc->load(_ABS."inc/xml/page.xml");
     }
     

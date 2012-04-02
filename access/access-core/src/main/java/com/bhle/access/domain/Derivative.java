@@ -5,13 +5,13 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bhle.access.convert.DatastreamConvertor;
+import com.bhle.access.convert.DatastreamConverter;
 
 public class Derivative {
 	private String pid;
 	private String dsId;
 	private InputStream inputStream;
-	private List<DatastreamConvertor> convertors = new ArrayList<DatastreamConvertor>();
+	private List<DatastreamConverter> convertors = new ArrayList<DatastreamConverter>();
 
 	public String getPid() {
 		return pid;
@@ -37,11 +37,11 @@ public class Derivative {
 		this.inputStream = inputStream;
 	}
 
-	public void addConvertor(DatastreamConvertor convertor) {
+	public void addConvertor(DatastreamConverter convertor) {
 		this.convertors.add(convertor);
 	}
 	
-	public List<DatastreamConvertor> getConvertors() {
+	public List<DatastreamConverter> getConvertors() {
 		return convertors;
 	}
 	

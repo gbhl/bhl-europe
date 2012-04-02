@@ -2,39 +2,40 @@ package com.bhle.access.convert;
 
 import java.io.InputStream;
 
-import com.bhle.access.util.MetadataUtil;
+import com.bhle.access.util.ImageUtil;
 
-public class Olef2EndnoteConvertor extends AbstractDataStreamConvertor{
+public class Tiff2JpegConverter extends AbstractDataStreamConverter {
 
 	private static String[] contentModels;
 	
 	public static void setContentModels(String[] contentModels) {
-		Olef2EndnoteConvertor.contentModels = contentModels;
+		Tiff2JpegConverter.contentModels = contentModels;
 	}
-	
+
+
 	public String[] getContentModels() {
 		return contentModels;
 	}
 
 	public String getDatastreamId() {
-		return "OLEF";
+		return "TIFF";
 	}
 
 	public String getDerivativeId() {
-		return "ENDNOTE";
+		return "JP2";
 	}
 
 	public String getDerivativeSuffix() {
-		return "end";
+		return "jp2";
 	}
 
 	@Override
 	public InputStream doConvert(InputStream inputStream) {
-		return MetadataUtil.olefToEndnote(inputStream);
+		return ImageUtil.tiffToJp2(inputStream);
 	}
 
 	public String getDerivativeMimeType() {
-		return "text/plain";
+		return "image/jp2";
 	}
 
 }

@@ -69,7 +69,7 @@
 
 	<bean id="messageConvertor" class="com.bhle.access.jms.util.FedoraJmsMessageConverter" />
 
-	<bean id="jmsProducer" class="com.bhle.access.jms.FedoraJmsProducerStub" />
+	<bean id="jmsProducer" class="com.bhle.access.jms.JmsProducerStub" />
 
 	<bean id="atomFedoraJmsListenerDumb" class="com.bhle.access.jms.AtomFedoraJmsListenerDumb" />
 

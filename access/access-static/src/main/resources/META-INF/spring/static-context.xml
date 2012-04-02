@@ -12,4 +12,32 @@
 	<bean id="staticURI" class="com.bhle.access.util.StaticURI"
 		p:baseUrl="${apache.baseUrl}" p:baseDir="${fileSystem.derivatives.blobStore.path}"
 		p:idMapper-ref="pairTreeIdMapper" />
+
+	<bean id="djatokaURLBuilder" class="com.bhle.access.util.DjatokaURLBuilder"
+		p:baseUrl="${djatoka.baseUrl}" />
+
+	<bean class="com.bhle.access.util.Resolution">
+		<property name="map">
+			<map>
+				<entry>
+					<key>
+						<value>high</value>
+					</key>
+					<value>${djatoka.level.high}</value>
+				</entry>
+				<entry>
+					<key>
+						<value>medium</value>
+					</key>
+					<value>${djatoka.level.medium}</value>
+				</entry>
+				<entry>
+					<key>
+						<value>low</value>
+					</key>
+					<value>${djatoka.level.low}</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
 </beans>

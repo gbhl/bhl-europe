@@ -2,37 +2,48 @@ package com.bhle.access.convert;
 
 import java.io.InputStream;
 
-public class Olef2OlefConvertor extends AbstractDataStreamConvertor {
+import org.springframework.core.io.Resource;
+
+import com.bhle.access.util.MetadataUtil;
+
+public class Olef2EseConverter extends AbstractDataStreamConverter {
+
+	private Resource xslt;
 
 	private static String[] contentModels;
-	
+
 	public static void setContentModels(String[] contentModels) {
-		Olef2OlefConvertor.contentModels = contentModels;
+		Olef2EseConverter.contentModels = contentModels;
 	}
 
 	@Override
-	public InputStream doConvert(InputStream inputStream) {
-		return inputStream;
-	}
-
 	public String[] getContentModels() {
 		return contentModels;
 	}
 
+	@Override
 	public String getDatastreamId() {
 		return "OLEF";
 	}
 
+	@Override
 	public String getDerivativeId() {
-		return "OLEF";
+		return "ESE";
 	}
 
+	@Override
 	public String getDerivativeSuffix() {
 		return "xml";
 	}
 
+	@Override
 	public String getDerivativeMimeType() {
 		return "text/xml";
+	}
+
+	@Override
+	public InputStream doConvert(InputStream inputStream) {
+		return MetadataUtil.olefToEse(inputStream);
 	}
 
 }
