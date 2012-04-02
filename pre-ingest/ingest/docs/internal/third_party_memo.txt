@@ -3,51 +3,6 @@
 ********************
 
 
-neuen stomp !!!! https://github.com/bhle/bhle/issues/309
-
-
-
-
-The minted GUID should be stored in metadata as well.
-
-https://github.com/bhle/bhle/issues/389
-
-
-
-
-
-HP Fatal error: Uncaught exception 'DOMException' with message 'Not Found Error' 
-n /var/www/ingest/inc/inc/olef_mods.php:95\nStack trace:\n#0 /var/www/ingest/inc/inc/olef_mods.php(95): 
-DOMNode->removeChild(Object(DOMElement))\n#1 /var/www/ingest/inc/get_mets.php(29): 
-include_once('/var/www/ingest...')\n#2 /var/www/ingest/inc/step_kernel.php(34): 
-include_once('/var/www/ingest...')\n#3 /var/www/ingest/index.php(92): 
-include_once('/var/www/ingest...')\n#4 {main}\n thrown in /var/www/ingest/inc/inc/olef_mods.php on line 95, 
-referer: http://bhl-test.nhm.ac.uk/preingest/index.php?menu_nav=ingest_list 
-
-
-C:\WINNT>"java.exe" -jar G:\dev\nhm\ingest\bin\smt\SMT-cli.jar  -m c -cm 5 -if "G:\dev\nhm\ingest\uploads\testdata\spice
-s_prepared\testpdf_tax2\billederafnorden01lind_marc.xml" -of "G:\dev\nhm\ingest\uploads\testdata\spices_prepared\testpdf
-_tax2\.aip\olef.xml"
-Starting conversion of MARCXML to OLEF...Compiler-Warnungen:
-  line 5075: Attribut "authority" ausserhalb des Elements.
-ERROR:  'Connection timed out: connect'
-FATAL ERROR:  'Stylesheet konnte nicht kompiliert werden'
-Error while running in convert Mode!
-
-javax.xml.transform.TransformerConfigurationException: Stylesheet konnte nicht kompiliert werden
-        at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTemplates(Unknown Source)
-        at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTransformer(Unknown Source)
-        at at.nhmwien.schema_mapping_tool.converter.XSLTransformer.transform(XSLTransformer.java:29)
-        at at.nhmwien.schema_mapping_tool.converter.MARCXMLConverter.convertToMODS(MARCXMLConverter.java:20)
-        at at.nhmwien.schema_mapping_tool.converter.MARCXMLConverter.convertToOLEF(MARCXMLConverter.java:27)
-        at smtcli.Main.convertMode(Main.java:326)
-        at smtcli.Main.main(Main.java:125)
-
-
-
-define("_DB_USER",                  "bhletech");
-define("_DB_PWD",                   "bh!3t3ch");
-
 
 
 if ((!isset($sLevel))||($sLevel==1))    $olef_file = _OLEF_FILE;

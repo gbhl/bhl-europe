@@ -77,10 +77,11 @@ if ( (!isset($dirSelected)) || (!is_dir(clean_path($analyzeDir."/".$dirSelected)
                 
                 $myJS = "onClick=\"javascript: if (this.checked) { if (!confirm('Do you really want to activate content at your root?')) { this.checked=false; } }    \"";
                 
-                checkbox("enable_".$i,0,"",$myJS,"","",true,$arrDir[$i]);
-                
-                // checkbox($variable, $checked, $title, $js_action, $text_position, $tabindex, $echome, $value)
-                
+                if (((int)abfrage("select count(1) from content where content_root='".$arrDir[$i]."'",$db))==0)
+                    checkbox("enable_".$i,0,"",$myJS,"","",true,$arrDir[$i]);
+                else
+                    icon("green_16.png", "Already under management, disable in management view only...");
+
                 echo "</tr>\n";
             }
         }

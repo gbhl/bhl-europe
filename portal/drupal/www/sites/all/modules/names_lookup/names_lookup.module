@@ -56,7 +56,7 @@ function names_lookup_common_name_col( $common_name ) {
     $common_name = str_replace( "*", "%", $common_name );
     $accepted_names = array();
     
-    $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&name=";
+    $col_base = "http://www.catalogueoflife.org/annual-checklist/col/webservice?response=full&format=php&name=";
     
     // Send the request to the webserver
     $response = _names_lookup_webservice_request( $common_name, $col_base . urlencode($common_name) );
