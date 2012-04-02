@@ -9,6 +9,6 @@
 
 	<import resource="classpath*:/META-INF/spring/static-context.xml" />
 	
-	<import resource="classpath*:/META-INF/spring/bookreader-context.xml" />
+	<import resource="classpath*:/META-INF/spring/download-context.xml" />
 
 </beans>

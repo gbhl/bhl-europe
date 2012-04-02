@@ -5,6 +5,7 @@ import java.net.URI;
 import com.bhle.access.download.generator.JpegPackageGenerator;
 import com.bhle.access.download.generator.PdfGenerator;
 import com.bhle.access.util.FedoraURI;
+import com.bhle.access.util.Resolution;
 
 public class OfflineDownloadRequest extends BasicDownloadRequest {
 	String email;
@@ -41,4 +42,11 @@ public class OfflineDownloadRequest extends BasicDownloadRequest {
 		FedoraURI fedoraUri = new FedoraURI(URI.create(this.pageURIs[0]));
 		return fedoraUri.getGuid() + "." + suffix;
 	}
+
+	@Override
+	public boolean isOffline() {
+		return true;
+	}
+	
+	
 }

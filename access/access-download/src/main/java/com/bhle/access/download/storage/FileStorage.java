@@ -5,6 +5,6 @@ import org.akubraproject.Blob;
 import com.bhle.access.download.OfflineDownloadRequest;
 
 public interface FileStorage {
-	public Blob getBlob(OfflineDownloadRequest request);
-	public Blob getBlob(String email, String filename);
+	public Blob fetchBlob(OfflineDownloadRequest request);
+	public Blob fetchBlob(String email, String filename);
 }

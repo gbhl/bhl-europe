@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import com.bhle.access.convert.ConvertorManager;
+import com.bhle.access.convert.ConverterManager;
 import com.bhle.access.feed.AtomFactory;
 import com.bhle.access.storage.StorageService;
 import com.sun.jersey.api.NotFoundException;
@@ -78,7 +78,7 @@ public class Items {
 		} else if (dsids.size() == 1) {
 			try {
 				InputStream in = service.openDatastream(guid, dsid, null);
-				return Response.ok(in).type(ConvertorManager.getMimeType(dsid))
+				return Response.ok(in).type(ConverterManager.getMimeType(dsid))
 						.build();
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -98,7 +98,7 @@ public class Items {
 		InputStream in;
 		try {
 			in = service.openDatastream(guid, dsid, serialNumber);
-			return Response.ok(in).type(ConvertorManager.getMimeType(dsid))
+			return Response.ok(in).type(ConverterManager.getMimeType(dsid))
 					.build();
 		} catch (Exception e) {
 			e.printStackTrace();

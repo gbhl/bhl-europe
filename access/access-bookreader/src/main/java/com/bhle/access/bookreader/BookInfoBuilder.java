@@ -1,6 +1,7 @@
 package com.bhle.access.bookreader;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -23,6 +24,7 @@ import com.bhle.access.storage.StorageService;
 import com.bhle.access.util.DjatokaURLBuilder;
 import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.FedoraUtil;
+import com.bhle.access.util.ImageUtil;
 import com.bhle.access.util.Olef;
 import com.bhle.access.util.StaticURI;
 
@@ -40,9 +42,13 @@ public class BookInfoBuilder {
 			.getLogger(BookInfoBuilder.class);
 
 	public static BookInfo build(String guid) {
+		logger.debug("Build BookReader Information");
+		
 		BookInfo book = buildBookInfo(guid);
 		buildPageInfo(book, guid);
 		buildTableOfContent(book, guid);
+		
+		logger.debug("BookReader Information: {}", book.getTitle());
 		return book;
 	}
 
@@ -102,19 +108,19 @@ public class BookInfoBuilder {
 	}
 
 	private static void setPageWidthAndHeight(String pageUri, PageInfo page) {
-		File pageFile = getPageFilePath(pageUri);
 		try {
-			String rawContent = FileUtils.readFileToString(pageFile);
-			String[] dimensions = rawContent.split(",");
-			page.setHeight(Integer.valueOf(dimensions[0]));
-			page.setWidth(Integer.valueOf(dimensions[1]));
+			File pageFile = getPageFilePath(pageUri);
+			int[] dimensions = ImageUtil.tiffToJp2Size(new FileInputStream(
+					pageFile));
+			page.setHeight(dimensions[0]);
+			page.setWidth(dimensions[1]);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	private static File getPageFilePath(String pageUri) {
-		FedoraURI fedoraUri = new FedoraURI(URI.create(pageUri + "/IMAGE_INFO"));
+		FedoraURI fedoraUri = new FedoraURI(URI.create(pageUri + "/JP2"));
 		File file = new File(StaticURI.toStaticFileUri(fedoraUri));
 		return file;
 	}
@@ -127,7 +133,7 @@ public class BookInfoBuilder {
 	private static Olef getOlef(String guid) {
 		try {
 			FedoraURI olefUri = FedoraURI.getFedoraUri(guid, "OLEF");
-			URI olefHttpUri = StaticURI.toStaticHttpUri(olefUri);
+			URI olefHttpUri = StaticURI.toStaticFileUri(olefUri);
 			return new Olef(olefHttpUri.toURL());
 		} catch (IOException e) {
 			e.printStackTrace();

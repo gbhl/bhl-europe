@@ -2,40 +2,37 @@ package com.bhle.access.convert;
 
 import java.io.InputStream;
 
-import com.bhle.access.util.ImageUtil;
-
-public class Tiff2JpegConvertor extends AbstractDataStreamConvertor {
+public class Olef2OlefConverter extends AbstractDataStreamConverter {
 
 	private static String[] contentModels;
 	
 	public static void setContentModels(String[] contentModels) {
-		Tiff2JpegConvertor.contentModels = contentModels;
+		Olef2OlefConverter.contentModels = contentModels;
 	}
 
+	@Override
+	public InputStream doConvert(InputStream inputStream) {
+		return inputStream;
+	}
 
 	public String[] getContentModels() {
 		return contentModels;
 	}
 
 	public String getDatastreamId() {
-		return "TIFF";
+		return "OLEF";
 	}
 
 	public String getDerivativeId() {
-		return "JP2";
+		return "OLEF";
 	}
 
 	public String getDerivativeSuffix() {
-		return "jp2";
-	}
-
-	@Override
-	public InputStream doConvert(InputStream inputStream) {
-		return ImageUtil.tiffToJp2(inputStream);
+		return "xml";
 	}
 
 	public String getDerivativeMimeType() {
-		return "image/jp2";
+		return "text/xml";
 	}
 
 }

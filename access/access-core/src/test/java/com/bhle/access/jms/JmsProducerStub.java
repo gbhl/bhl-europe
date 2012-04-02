@@ -12,7 +12,7 @@ import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FedoraJmsProducerStub implements JmsProducer {
+public class JmsProducerStub implements JmsProducer {
 
 	@Autowired
 	@Qualifier(value = "jmsProducerTemplate")

@@ -2,48 +2,39 @@ package com.bhle.access.convert;
 
 import java.io.InputStream;
 
-import org.springframework.core.io.Resource;
-
 import com.bhle.access.util.MetadataUtil;
 
-public class Olef2EseConvertor extends AbstractDataStreamConvertor {
-
-	private Resource xslt;
+public class Olef2Marc21Converter extends AbstractDataStreamConverter{
 
 	private static String[] contentModels;
-
+	
 	public static void setContentModels(String[] contentModels) {
-		Olef2EseConvertor.contentModels = contentModels;
+		Olef2Marc21Converter.contentModels = contentModels;
 	}
-
-	@Override
+	
 	public String[] getContentModels() {
 		return contentModels;
 	}
 
-	@Override
 	public String getDatastreamId() {
 		return "OLEF";
 	}
 
-	@Override
 	public String getDerivativeId() {
-		return "ESE";
+		return "MARC21";
 	}
 
-	@Override
 	public String getDerivativeSuffix() {
 		return "xml";
 	}
 
 	@Override
-	public String getDerivativeMimeType() {
-		return "text/xml";
+	public InputStream doConvert(InputStream inputStream) {
+		return MetadataUtil.olefToMarcxml(inputStream);
 	}
 
-	@Override
-	public InputStream doConvert(InputStream inputStream) {
-		return MetadataUtil.olefToEse(inputStream);
+	public String getDerivativeMimeType() {
+		return "text/xml";
 	}
 
 }

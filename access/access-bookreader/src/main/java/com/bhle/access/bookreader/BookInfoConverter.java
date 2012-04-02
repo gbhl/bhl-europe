@@ -2,9 +2,11 @@ package com.bhle.access.bookreader;
 
 import java.io.InputStream;
 
-import com.bhle.access.convert.AbstractDataStreamConvertor;
+import com.bhle.access.convert.AbstractDataStreamConverter;
+import com.bhle.access.convert.AfterBatchIngestConvertor;
 
-public class BookInfoConvertor extends AbstractDataStreamConvertor{
+public class BookInfoConverter extends AbstractDataStreamConverter implements
+		AfterBatchIngestConvertor {
 
 	public String[] getContentModels() {
 		return new String[0];
@@ -29,6 +31,12 @@ public class BookInfoConvertor extends AbstractDataStreamConvertor{
 	@Override
 	public InputStream doConvert(InputStream inputStream) {
 		return null;
+	}
+
+	@Override
+	public void convert(String guid) {
+		BookInfo info = BookInfoBuilder.build(guid);
+		BookInfoBuilder.save(info);
 	}
 
 }

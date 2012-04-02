@@ -18,7 +18,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class LowLevelStorageImpl implements LowLevelStorage {
-	
+
 	private static final Logger logger = LoggerFactory
 			.getLogger(LowLevelStorageImpl.class);
 
@@ -52,6 +52,18 @@ public class LowLevelStorageImpl implements LowLevelStorage {
 			return connection.getBlob(getExternalKey(pid, dsId), null);
 		} catch (UnsupportedIdException e) {
 			e.printStackTrace();
+		} catch (UnsupportedOperationException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public Blob getBlob(String pid, String dsId) {
+		try {
+			BlobStoreConnection connection = blobStore.openConnection(null, null);
+			return getBlob(connection, pid, dsId);
 		} catch (UnsupportedOperationException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -113,7 +125,7 @@ public class LowLevelStorageImpl implements LowLevelStorage {
 			URI uri = iterator.next();
 			ids.add(uri);
 		}
-
+		connection.close();
 		return ids;
 	}
 

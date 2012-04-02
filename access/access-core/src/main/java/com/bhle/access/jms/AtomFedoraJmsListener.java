@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.bhle.access.convert.ConvertorManager;
+import com.bhle.access.convert.ConverterManager;
 import com.bhle.access.domain.DatastreamFactory;
 import com.bhle.access.domain.DatastreamWrapper;
 import com.bhle.access.domain.Derivative;
@@ -18,8 +18,12 @@ public class AtomFedoraJmsListener {
 	private static final Logger logger = LoggerFactory
 			.getLogger(AtomFedoraJmsListener.class);
 
+	private static StorageService storageService;
+	
 	@Autowired(required = true)
-	private StorageService storageService;
+	public void setStorageService(StorageService storageService) {
+		AtomFedoraJmsListener.storageService = storageService;
+	}
 
 	public void onMessage(FedoraAtomMessage message) {
 
@@ -28,7 +32,7 @@ public class AtomFedoraJmsListener {
 			logger.debug("Generate derivatives after ingest");
 			DigitalObjectWrapper objectWrapper = DigitalObjectFactory
 					.build(message);
-			Derivative[] objectDerivatives = ConvertorManager
+			Derivative[] objectDerivatives = ConverterManager
 					.derive(objectWrapper);
 			for (Derivative derivative : objectDerivatives) {
 				storageService.updateDerivative(derivative);
@@ -45,7 +49,7 @@ public class AtomFedoraJmsListener {
 			logger.debug("Delete derivatives after modifyDatastream");
 			DatastreamWrapper datastreamWrapper = DatastreamFactory
 					.build(message);
-			Derivative[] datastreamDerivatives = ConvertorManager
+			Derivative[] datastreamDerivatives = ConverterManager
 					.derive(datastreamWrapper);
 			for (Derivative derivative : datastreamDerivatives) {
 				storageService.updateDerivative(derivative);
@@ -56,7 +60,7 @@ public class AtomFedoraJmsListener {
 			logger.debug("Delete derivatives after purgeDatastream");
 			DatastreamWrapper datastream = DatastreamFactory
 					.buildInformation(message);
-			Derivative[] derivativesInformation = ConvertorManager
+			Derivative[] derivativesInformation = ConverterManager
 					.deriveInformation(datastream);
 			for (Derivative derivative : derivativesInformation) {
 				storageService.deleteDerivative(derivative);

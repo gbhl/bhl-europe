@@ -30,7 +30,7 @@ public class ThumbnailBuilder {
 
 		FedoraURI entryPageUri = FedoraURI.getFedoraUri(guid, entryPageIndex,
 				"JP2");
-		URI entryPageHttpUri = StaticURI.toStaticHttpUri(entryPageUri);
+		URI entryPageHttpUri = StaticURI.toStaticFileUri(entryPageUri);
 		InputStream jp2InputStream = null;
 		try {
 			jp2InputStream = entryPageHttpUri.toURL().openStream();

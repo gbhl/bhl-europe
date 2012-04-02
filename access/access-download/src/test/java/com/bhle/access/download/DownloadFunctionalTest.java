@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 
 import com.bhle.access.BaseTest;
+import com.bhle.access.util.Resolution;
 
 @ContextConfiguration
 public class DownloadFunctionalTest extends BaseTest {

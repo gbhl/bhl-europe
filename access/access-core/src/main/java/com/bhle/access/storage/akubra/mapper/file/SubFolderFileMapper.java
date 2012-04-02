@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.bhle.access.convert.ConvertorManager;
+import com.bhle.access.convert.ConverterManager;
 import com.bhle.access.util.FedoraURI;
 
 public class SubFolderFileMapper implements FileMapper {
@@ -40,7 +40,7 @@ public class SubFolderFileMapper implements FileMapper {
 			fileName.append("_*");
 		}
 
-		String suffix = ConvertorManager.getSuffix(fedoraURI.getDsid());
+		String suffix = ConverterManager.getSuffix(fedoraURI.getDsid());
 		if (suffix != null) {
 			fileName.append("." + suffix);
 		} else {

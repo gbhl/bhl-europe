@@ -11,9 +11,9 @@ import java.util.zip.ZipOutputStream;
 
 import org.apache.commons.io.IOUtils;
 
-import com.bhle.access.download.Resolution;
 import com.bhle.access.util.DjatokaURLBuilder;
 import com.bhle.access.util.FedoraURI;
+import com.bhle.access.util.Resolution;
 import com.bhle.access.util.StaticURI;
 
 public class JpegPackageGenerator {

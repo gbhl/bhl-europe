@@ -2,6 +2,7 @@ package com.bhle.access.util;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,6 +10,7 @@ import java.io.InputStreamReader;
 
 import javax.annotation.PostConstruct;
 
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 
@@ -24,31 +26,25 @@ public class BibUtils {
 
 	@PostConstruct
 	public void init() {
+		String suffix = null;
 		if (OSValidator.isWindows()) {
-			try {
-				XML2BIB_PATH = WIN_XML2BIB.getFile().getAbsolutePath();
-				XML2END_PATH = WIN_XML2END.getFile().getAbsolutePath();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			suffix = ".exe";
 		} else if (OSValidator.isUnix()) {
-			try {
-				XML2BIB_PATH = LINUX_XML2BIB.getFile().getAbsolutePath();
-				XML2END_PATH = LINUX_XML2END.getFile().getAbsolutePath();
-				File xml2Bib = new File(XML2BIB_PATH);
-				xml2Bib.setExecutable(true, false);
-				File xml2End = new File(XML2END_PATH);
-				xml2End.setExecutable(true, false);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} else {
-			try {
-				throw new UnsupportedOperationSystem();
-			} catch (UnsupportedOperationSystem e) {
-				e.printStackTrace();
-			}
+			suffix = ".sh";
 		}
+		try {
+			File bib = copyInputStreamToTmpFile(WIN_XML2BIB.getInputStream(),
+					suffix);
+			XML2BIB_PATH = bib.getAbsolutePath();
+//			bib.setExecutable(true, false);
+			File end = copyInputStreamToTmpFile(WIN_XML2END.getInputStream(),
+					suffix);
+			XML2END_PATH = end.getAbsolutePath();
+//			end.setExecutable(true, false);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	@Autowired
@@ -73,11 +69,11 @@ public class BibUtils {
 
 	public static InputStream mods2BibTex(InputStream modsInputStream) {
 		try {
-			File tmp = copyInputStreamToTmpFile(modsInputStream);
+			File tmp = copyInputStreamToTmpFile(modsInputStream, null);
 			ProcessBuilder pb;
 			if (OSValidator.isWindows()) {
-				pb = new ProcessBuilder("cmd.exe", "/C",
-						XML2BIB_PATH, tmp.getAbsolutePath());
+				pb = new ProcessBuilder("cmd.exe", "/C", XML2BIB_PATH,
+						tmp.getAbsolutePath());
 			} else {
 				pb = new ProcessBuilder(XML2BIB_PATH, tmp.getAbsolutePath());
 			}
@@ -91,11 +87,11 @@ public class BibUtils {
 
 	public static InputStream mods2Endnote(InputStream modsInputStream) {
 		try {
-			File tmp = copyInputStreamToTmpFile(modsInputStream);
+			File tmp = copyInputStreamToTmpFile(modsInputStream, null);
 			ProcessBuilder pb;
 			if (OSValidator.isWindows()) {
-				pb = new ProcessBuilder("cmd.exe", "/C",
-						XML2END_PATH, tmp.getAbsolutePath());
+				pb = new ProcessBuilder("cmd.exe", "/C", XML2END_PATH,
+						tmp.getAbsolutePath());
 			} else {
 				pb = new ProcessBuilder(XML2END_PATH, tmp.getAbsolutePath());
 			}
@@ -107,22 +103,13 @@ public class BibUtils {
 		return null;
 	}
 
-	private static File copyInputStreamToTmpFile(InputStream modsInputStream)
+	private static File copyInputStreamToTmpFile(InputStream in, String suffix)
 			throws IOException {
-		File tmp = File.createTempFile("bibutils", null);
-		tmp.deleteOnExit();
-		FileWriter fw = new FileWriter(tmp);
-		BufferedReader br = new BufferedReader(new InputStreamReader(
-				modsInputStream));
-		String line = null;
-		try {
-			while ((line = br.readLine()) != null) {
-				fw.append(line);
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		fw.close();
+		File tmp = File.createTempFile("bibutils", suffix);
+//		tmp.deleteOnExit();
+		FileOutputStream out = new FileOutputStream(tmp);
+		IOUtils.copy(in, out);
+		out.close();
 		return tmp;
 	}
 }
