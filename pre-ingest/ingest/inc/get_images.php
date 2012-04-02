@@ -7,7 +7,13 @@
 // ********************************************
 $curStep = 2;
 
-echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIF files from various sources</h1>";
+echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIF files from provided sources ";
+
+if ($cType == 'serial')
+    echo "<br><font size=1 color=blue>For: .".str_replace(_USER_CONTENT_ROOT,"",$contentDir)."</font>";
+
+echo "</h1>";
+
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
@@ -35,8 +41,8 @@ if ($nTiffs >= $cPages)
     $csvTiffs = str_replace(_CONTENT_ROOT, "", $csvTiffs);
     mysql_select("update content set content_pages_tiff='" . $csvTiffs . "' where content_id=" . $content_id);
 
-    $endmsg .= "For ".str_replace(_USER_CONTENT_ROOT,"",$contentDir).": ".$nTiffs . " files generated and database updated.\\n";
-    
+    $endmsg .= ".".str_replace(_USER_CONTENT_ROOT,"",$contentDir).": ".$nTiffs . " files generated and database updated.\\n";
+
     $stepFinished = true;
 }
 else if (!_QUEUE_MODE) 

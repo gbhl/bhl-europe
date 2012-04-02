@@ -70,9 +70,15 @@ if (!file_exists($inputFile))
 }
 else
 {
-    echo "<h1 style='margin-top: 3px;'>Mapping Your Metadata to OLEF Repository Standard</h1>";
+    echo "<h1 style='margin-top: 3px;'>Mapping Metadata to OLEF Repository Standard ";
+
+    if ($cType == 'serial')
+        echo "<br><font size=1 color=blue>For: .".str_replace(_USER_CONTENT_ROOT,"",$contentDir)."</font>";
+
+    echo "</h1>";
+
     echo invisible_html(1024*5);
-    
+
     echo "Executing Schema Mapper...<pre>\n";    
 
     @ob_end_flush();
