@@ -183,6 +183,9 @@ function i18n_menu_menu_update($menu) {
   if (!i18n_object_langcode($menu)) {
     i18n_string_object_update('menu', $menu);
   }
+
+  // Clear all menu caches.
+  menu_cache_clear_all();
 }
 
 /**
@@ -214,7 +217,7 @@ function i18n_menu_menu_link_update($link) {
         $translation_set = $link['translation_set'];
         $translation_set
           ->add_item($link)
-          ->save(TRUE);   
+          ->save(TRUE);
       }
     }
     elseif ($link['language'] === LANGUAGE_NONE && !empty($link['original_item']['i18n_tsid'])) {
@@ -310,7 +313,7 @@ function i18n_menu_help($path, $arg) {
       $output .= '<p>' . t('The multilingual options of a menu must be configured before individual menu items can be translated. Go to the <a href="@menu-admin">Menus administration page</a> and follow the "edit menu" link to the menu in question.', array('@menu-admin' => url('admin/structure/menu') ) ) . '</p>';
       $output .= '<p>' . t('To search and translate strings, use the <a href="@translate-interface">translation interface</a> pages.', array('@translate-interface' => url('admin/config/regional/translate'))) . '</p>';
       return $output;
-      
+
     case 'admin/config/regional/i18n':
       $output = '<p>'. t('Menus and menu items can be translated on the <a href="@configure_menus">Menu administration page</a>.', array('@configure_menus' => url('admin/structure/menu'))) .'</p>';
       return $output;
@@ -559,7 +562,7 @@ function i18n_menu_form_menu_edit_item_alter(&$form, &$form_state) {
       else {
         // Create object and stick the source information in the translation set
         $translation_set = i18n_translation_set_build('menu_link')
-          ->add_item($source_item);     
+          ->add_item($source_item);
       }
       $form['link_path']['#default_value'] = $source_item['link_path'];
 
@@ -777,8 +780,12 @@ function i18n_menu_init() {
   if (!empty($tab_root)) {
     $path_candidates[$tab_root['path']] = $tab_root['path'];
   }
-   // Retrieve a list of menu names, ordered by preference.
+  // Retrieve a list of menu names, ordered by preference.
   $menu_names = menu_get_active_menu_names();
+  // Use an illegal menu name as the key for the preferred menu link.
+  $selected_menu = MENU_PREFERRED_LINK;
+  // Put the selected menu at the front of the list.
+  array_unshift($menu_names, $selected_menu);
 
   $query = db_select('menu_links', 'ml', array('fetch' => PDO::FETCH_ASSOC));
   $query->leftJoin('menu_router', 'm', 'm.path = ml.router_path');
@@ -797,24 +804,31 @@ function i18n_menu_init() {
   foreach ($query->execute() as $candidate) {
     $candidate['weight'] = $candidate['link_weight'];
     $candidates[$candidate['link_path']][$candidate['menu_name']] = $candidate;
+    // Add any menus not already in the menu name search list.
+    if (!in_array($candidate['menu_name'], $menu_names)) {
+      $menu_names[] = $candidate['menu_name'];
+    }
   }
 
-  // Pick the most specific link, in the most preferred menu.
-   foreach ($path_candidates as $link_path) {
-      if (!isset($candidates[$link_path])) {
-        continue;
-      }
+  // Store the most specific link for each menu. Also save the most specific
+  // link of the most preferred menu in $preferred_link.
+  foreach ($path_candidates as $link_path) {
+    if (isset($candidates[$link_path])) {
       foreach ($menu_names as $menu_name) {
-        if (!isset($candidates[$link_path][$menu_name])) {
-          continue;
+        if (empty($preferred_links[$path][$menu_name]) && isset($candidates[$link_path][$menu_name])) {
+          $candidate_item = $candidates[$link_path][$menu_name];
+          $map = explode('/', $path);
+          _menu_translate($candidate_item, $map);
+          if ($candidate_item['access']) {
+            $preferred_links[$path][$menu_name] = $candidate_item;
+            if (empty($preferred_links[$path][MENU_PREFERRED_LINK])) {
+              // Store the most specific link.
+              $preferred_links[$path][MENU_PREFERRED_LINK] = $candidate_item;
+            }
+          }
         }
-        $candidate_item = $candidates[$link_path][$menu_name];
-        $map = explode('/', $path);
-        _menu_translate($candidate_item, $map);
-        if ($candidate_item['access']) {
-          $preferred_links[$path] = $candidate_item;
-        }
-        break 2;
       }
     }
+  }
 }
+

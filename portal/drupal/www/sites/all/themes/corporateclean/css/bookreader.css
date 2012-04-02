@@ -1,0 +1,11 @@
+/* CSS Document */
+body.page-bhle-read #content-inside {width:100%}
+body.page-bhle-read.no-sidebars #main {width:100%}
+body.page-bhle-read #footer,
+body.page-bhle-read #footer-bottom {display:none}
+body.page-bhle-read #main .content-inner {overflow:hidden}
+
+/*body.page-bhle-read #content_top, body.page-bhle-read span.slider-content-top {position:absolute}*/
+body.page-bhle-read #content_top {display:none}
+
+iframe.bookreader {height:600px}

@@ -12,6 +12,7 @@ function i18n_node_i18n_object_info() {
   $info['node_type'] = array(
     'title' => t('Node type'),
     'key' => 'type',
+    'load callback' => 'node_type_get_type',
     'placeholders' => array(
     	'%node_type' => 'type',
     ),

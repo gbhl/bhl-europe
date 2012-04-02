@@ -19,7 +19,8 @@ include_once 'l10n_update.check.inc';
  */
 function l10n_update_batch_download($updates) {
   foreach ($updates as $update) {
-    $operations[] = array('_l10n_update_batch_download', array($update));
+    $id = $update->filename;
+    $operations[] = array('_l10n_update_batch_download', array($id, $update));
   }
   return _l10n_update_create_batch($operations);
 }
@@ -39,7 +40,8 @@ function l10n_update_batch_download($updates) {
  */
 function l10n_update_batch_import($updates, $import_mode) {
   foreach ($updates as $update) {
-    $operations[] = array('_l10n_update_batch_import', array($update, $import_mode));
+    $id = $update->filename;
+    $operations[] = array('_l10n_update_batch_import', array($id, $update, $import_mode));
   }
   return _l10n_update_create_batch($operations);
 }
@@ -55,15 +57,16 @@ function l10n_update_batch_import($updates, $import_mode) {
  */
 function l10n_update_batch_multiple($updates, $import_mode) {
   foreach ($updates as $update) {
+    $id = $update->filename;
     if ($update->type == 'download') {
-      $operations[] = array('_l10n_update_batch_download', array($update));
-      $operations[] = array('_l10n_update_batch_import', array(NULL, $import_mode));
+      $operations[] = array('_l10n_update_batch_download', array($id, $update));
+      $operations[] = array('_l10n_update_batch_import', array($id, NULL, $import_mode));
     }
     else {
-      $operations[] = array('_l10n_update_batch_import', array($update, $import_mode));
+      $operations[] = array('_l10n_update_batch_import', array($id, $update, $import_mode));
     }
     // This one takes always parameters from results.
-    $operations[] = array('_l10n_update_batch_history', array(NULL));
+    $operations[] = array('_l10n_update_batch_history', array($id));
   }
   if (!empty($operations)) {
     return _l10n_update_create_batch($operations);
@@ -100,34 +103,45 @@ function _l10n_update_create_batch($operations = array()) {
 /**
  * Batch process: Download a file.
  *
- * @param $update
- *   Source object to be downloaded.
+ * @param $id
+ *   Batch id to identify batch results.
+ *   Result of this batch function are stored in $context['result']
+ *   identified by this $id.
+ * @param $file
+ *   File to be downloaded.
  * @param $context
  *   Batch context array.
  */
-function _l10n_update_batch_download($update, &$context) {
+function _l10n_update_batch_download($id, $file, &$context) {
   $t = get_t();
-  if (l10n_update_source_download($update)) {
-    $context['message'] = $t('Importing downloaded translation: %url.', array('%url' => $update->fileurl));
-    $context['results'][] = $update;
+  if (l10n_update_source_download($file)) {
+    $context['message'] = $t('Importing: %name.', array('%name' => $file->filename));
+    $context['results'][$id] = array('file' => $file);
   }
   else {
-    drupal_set_message($t('Failed download from %url', array('%url' => $update->fileurl)), 'error');
+    $context['results'][$id] = array('file' => $file, 'fail' => TRUE);
   }
 }
 
 /**
  * Batch process: Update the download history table.
  *
- * @param $update
- *   Source object to be updated.
+ * @param $id
+ *   Batch id to identify batch results.
+ *   Result of this batch function are stored in $context['result']
+ *   identified by this $id.
  * @param $context
  *   Batch context array.
  */
-function _l10n_update_batch_history($update, &$context) {
-  if ($update = _l10n_update_batch_param($update, $context)) {
-    l10n_update_source_history($update);
-    $context['results'][] = $update;
+function _l10n_update_batch_history($id, &$context) {
+  $t = get_t();
+  // The batch import is performed in a number of steps. History update is
+  // always the last step. The details of the downloaded/imported file are
+  // stored in $context['results'] array.
+  if (isset($context['results'][$id]['file']) && !isset($context['results'][$id]['fail'])) {
+    $file = $context['results'][$id]['file'];
+    l10n_update_source_history($file);
+    $context['message'] = $t('Imported: %name.', array('%name' => $file->filename));
   }
 }
 
@@ -137,6 +151,10 @@ function _l10n_update_batch_history($update, &$context) {
  * This takes a file parameter or continues from previous batch
  * which should have downloaded a file.
  *
+ * @param $id
+ *   Batch id to identify batch results.
+ *   Result of this batch function are stored in $context['result']
+ *   identified by this $id.
  * @param $file
  *   File to be imported. If empty, the file will be taken from $context['results'].
  * @param $mode
@@ -144,40 +162,23 @@ function _l10n_update_batch_history($update, &$context) {
  * @param $context
  *   Batch context array.
  */
-function _l10n_update_batch_import($file, $mode, &$context) {
+function _l10n_update_batch_import($id, $file, $mode, &$context) {
   $t = get_t();
-  if ($file = _l10n_update_batch_param($file, $context)) {
-    if (l10n_update_source_import($file, $mode)) {
-      $context['results'][] = $file;
-      if ($file->type == 'download') {
-        drupal_set_message($t('Successfully downloaded and imported translation from %url', array('%url' => $file->fileurl)));
-      }
-      else {
-        drupal_set_message($t('Imported translation file %name.', array('%name' => $file->uri)));
-      }
+  // The batch import is performed in two or three steps.
+  // If import is performed after file download the file details of the download
+  // are used which are stored in the $context['results'] array.
+  // If a locally stored file is imported, the file details are placed in $file.
+  if (empty($file) && isset($context['results'][$id]['file']) && !isset($context['results'][$id]['fail'])) {
+    $file = $context['results'][$id]['file'];
+  }
+  if ($file) {
+    if ($import_result = l10n_update_source_import($file, $mode)) {
+      $context['message'] = $t('Imported: %name.', array('%name' => $file->filename));
+      $context['results'][$id] = array_merge((array)$context['results'][$id], $import_result, array('file' => $file));
     }
     else {
-      drupal_set_message($t('Failed import of translation file %name.', array('%name' => $file->uri)), 'error');
+      $context['results'][$id] = array_merge((array)$context['results'][$id], array('fail' => TRUE), array('file' => $file));
     }
-  }
-}
-
-/**
- * Batch process: Get parameter from results of previous batch if not present.
- *
- * @param $param
- *   Batch parameters.
- * @param $context
- *   Batch context array.
- * @return unknown_type
- *   Batch results.
- */
-function _l10n_update_batch_param($param, &$context) {
-  if (isset($param)) {
-    return $param;
-  }
-  elseif (!empty($context['results'])) {
-    return array_pop($context['results']);
   }
 }
 
@@ -190,9 +191,76 @@ function _l10n_update_batch_param($param, &$context) {
  *   Batch results.
  */
 function _l10n_update_batch_finished($success, $results) {
+  $totals = array();    // Sum of added, updated and deleted translations.
+  $total_skip = 0;      // Sum of skipped translations
+  $messages = array();  // User feedback messages.
+  $project_fail = $project_success = array(); // Project names of succesfull and failed imports.
   $t = get_t();
+
   if ($success) {
-    drupal_set_message($t('Successfully imported translations.'));
+    // Summarize results of added, updated, deleted and skiped translations.
+    // Added, updated and deleted are summarized per language to be displayed accordingly.
+    foreach ($results as $result) {
+      if (isset($result['fail'])) {
+        // Collect project names of the failed imports.
+        $project_fail[$result['file']->name] = $result['file']->name;
+      }
+      else {
+        $language = $result['language'];
+
+        // Initialize variables to prevent PHP Notices.
+        if (!isset($totals[$language])) {
+          $totals[$language] = array();
+          $totals[$language]['add'] = $totals[$language]['update'] = $totals[$language]['delete'] = 0;
+        }
+
+        // Summarize added, updated, deleted and skiped translations.
+        $totals[$language]['add'] += $result['add'];
+        $totals[$language]['update'] += $result['update'];
+        $totals[$language]['delete'] += $result['delete'];
+        $total_skip += $result['skip'];
+
+        // Collect project names of the succesfull imports.
+        $project_success[$result['file']->name] = $result['file']->name;
+      }
+    }
+
+    // Messages of succesfull translation update results.
+    if ($project_success) {
+      $messages[] = format_plural(count($project_success), 'One project updated: @projects.', '@count projects updated: @projects.', array('@projects' => implode(', ', $project_success)));
+      $languages = language_list();
+      foreach ($totals as $language => $total) {
+        $messages[] = $t('%language translation strings added: !add, updated: !update, deleted: !delete.', array(
+          '%language' => $languages[$language]->name,
+          '!add' => $total['add'],
+          '!update' => $total['update'],
+          '!delete' => $total['delete'],
+        ));
+      }
+      drupal_set_message(implode("<br />\n", $messages));
+
+      // Warning for disallowed HTML.
+      if ($total_skip) {
+        drupal_set_message(
+          format_plural(
+            $total_skip,
+            'One translation string was skipped because it contains disallowed HTML. See !log_messages for details.',
+            '@count translation strings were skipped because they contain disallowed HTML. See !log_messages for details.',
+            array('!log_messages' => l(t('Recent log messages'), 'admin/reports/dblog'))),
+        'warning');
+      }
+    }
+
+    // Error for failed imports.
+    if ($project_fail) {
+      drupal_set_message(
+        format_plural(
+          count($project_fail),
+          'Translations of one project were not imported: @projects.',
+          'Translations of @count projects were not imported: @projects',
+          array('@projects' => implode(', ', $project_fail))),
+      'error');
+    }
   }
   else {
     drupal_set_message($t('Error importing translations.'), 'error');

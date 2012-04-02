@@ -1,0 +1,9 @@
+name = BHL-E items tagging
+description = Custom module
+core = 7.x
+package = BHLE
+dependencies[] = transliteration
+dependencies[] = bhle_item
+
+version = "7.x-1.0"
+core = "7.x"

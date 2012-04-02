@@ -13,7 +13,7 @@ class i18n_object_wrapper {
    */
   public function __construct($type, $object) {
     $this->type = $type;
-    $this->object = $object;
+    $this->object = is_scalar($object) ? $this->load_object($object) : $object;
   }
 
   /**
@@ -71,10 +71,27 @@ class i18n_object_wrapper {
   }
 
   /**
-   * Get real object or array
+   * Get real object or array.
    */
   public function get_object() {
     return $this->object;
+  }
+
+  /**
+   * Load real object or array.
+   *
+   * @param $object
+   */
+  function load_object($object) {
+    if ($callback = $this->get_info('load callback', NULL)) {
+      $this->object = call_user_func($callback, $object);
+    }
+    elseif ($entity_type = $this->get_info('entity', NULL)) {
+      $entity = entity_load($entity_type, array($object));
+      $this->object = $entity ? reset($entity) : FALSE;
+    }
+
+    return $this->get_object();
   }
 
   /**
@@ -102,6 +119,12 @@ class i18n_object_wrapper {
    */
   public function get_title() {
     return entity_label($this->type, $this->object);
+  }
+  /**
+   * Get object type
+   */
+  public function get_type() {
+    return $this->type;
   }
 
   /**

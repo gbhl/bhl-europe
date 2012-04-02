@@ -26,6 +26,8 @@ function i18n_contact_i18n_object_info() {
     'title' => t('Contact category'),
     // The object key field.
     'key' => 'cid',
+    // The object load callback.
+    'load callback' => 'contact_load',
     // Placeholders for automatic paths.
     'placeholders' => array(
       '%contact' => 'cid',

@@ -478,15 +478,20 @@ function apachesolr_search_block_view($delta = '') {
     if ($block && node_access('view', $node)) {
       // Get our specific environment for the MLT block
       $env_id = (!empty($block['mlt_env_id'])) ? $block['mlt_env_id'] : '';
-      $solr = apachesolr_get_solr($env_id);
-      $docs = apachesolr_search_mlt_suggestions($block, apachesolr_document_id($node->nid), $solr);
-      if (!empty($docs)) {
-        $suggestions['subject'] = check_plain($block['name']);
-        $suggestions['content'] = array(
-          '#theme' => 'apachesolr_search_mlt_recommendation_block',
-          '#docs' => $docs,
-          '#delta' => $delta
-        );
+      try {
+        $solr = apachesolr_get_solr($env_id);
+        $docs = apachesolr_search_mlt_suggestions($block, apachesolr_document_id($node->nid), $solr);
+        if (!empty($docs)) {
+          $suggestions['subject'] = check_plain($block['name']);
+          $suggestions['content'] = array(
+            '#theme' => 'apachesolr_search_mlt_recommendation_block',
+            '#docs' => $docs,
+            '#delta' => $delta
+          );
+        }
+      }
+      catch (Exception $e) {
+        watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
       }
     }
     return $suggestions;
@@ -931,7 +936,7 @@ function apachesolr_search_run_empty($name, array $params = array(), $base_path 
   $query = apachesolr_drupal_query($name, $params, '', $base_path, $solr);
   $query->addParam('rows', '0');
   $solr_id = $query->solr('getId');
-  list($final_query, $response) = apachesolr_do_query($query, 0);
+  list($final_query, $response) = apachesolr_do_query($query);
   apachesolr_has_searched($solr_id, TRUE);
 }
 
@@ -961,8 +966,12 @@ function apachesolr_search_run($name, array $params = array(), $solrsort = '', $
   if ($query->getParam('q')) {
     apachesolr_search_add_spellcheck_params($query);
   }
+  
   // Add custom params after we add the default params
   $query->addParams($params);
+
+  // Add the paging parameters
+  $query->page = $page;
 
   apachesolr_search_add_boost_params($query);
   if ($query->getParam('q')) {
@@ -985,6 +994,7 @@ function apachesolr_search_run($name, array $params = array(), $solrsort = '', $
     // No highlighting, use the teaser as a snippet.
     $query->addParam('fl', 'teaser');
   }
+
   list($final_query, $response) = apachesolr_do_query($query, $page);
   $solr_id = $query->solr('getId');
   apachesolr_has_searched($solr_id, TRUE);

@@ -106,7 +106,7 @@ function l10n_update_schema() {
         'default' => '',
       ),
       'timestamp' => array(
-        'description' => 'Unix timestamp of the last file downloaded.',
+        'description' => 'Unix timestamp of the time the file was downloaded or saved to disk. Zero if not yet downloaded',
         'type' => 'int',
         'not null' => FALSE,
         'disp-width' => '11',
@@ -125,22 +125,8 @@ function l10n_update_schema() {
         'not null' => TRUE,
         'default' => 1,
       ),
-      'last_updated' => array(
-        'description' => 'Unix timestamp of last time project was updated.',
-        'type' => 'int',
-        'not null' => FALSE,
-        'disp-width' => '11',
-        'default' => 0,
-      ),
       'last_checked' => array(
-        'description' => 'Unix timestamp of last time project was updated.',
-        'type' => 'int',
-        'not null' => FALSE,
-        'disp-width' => '11',
-        'default' => 0,
-      ),
-      'import_date' => array(
-        'description' => 'Unix timestamp of the last file downloaded.',
+        'description' => 'Unix timestamp of the last time this translation was downloaded from or checked at remote server and confirmed to be the most recent release available.',
         'type' => 'int',
         'not null' => FALSE,
         'disp-width' => '11',
@@ -149,6 +135,10 @@ function l10n_update_schema() {
     ),
     'primary key' => array('project', 'language'),
   );
+
+  $schema['cache_l10n_update'] = drupal_get_schema_unprocessed('system', 'cache');
+  $schema['cache_l10n_update']['description'] = 'Cache table for the Localization Update module to store information about available releases, fetched from central server.';
+
   return $schema;
 }
 
@@ -249,4 +239,46 @@ function l10n_update_update_6002() {
     db_add_field('locales_target', 'l10n_status', array('type' => 'int', 'not null' => TRUE, 'default' => 0));
   }
   return t('Resolved possible l10n_status field conflict in locales_target.');
+}
+
+/**
+ * Rename filepath to uri in {l10n_update_file} table.
+ */
+function l10n_update_update_7001() {
+  // Only do this update if the field exists from D6.
+  // If it doesn't, we've got a pure D7 site that doesn't need it.
+  if (db_field_exists('l10n_update_file', 'filepath')) {
+    db_change_field('l10n_update_file', 'filepath', 'uri', array(
+      'description' => 'File system path for importing the file.',
+      'type' => 'varchar',
+      'length' => 255,
+      'not null' => TRUE,
+      'default' => '',
+    ));
+  }
+}
+
+/**
+ * Delete 'last_updated' field from {l10n_update_file} table.
+ */
+function l10n_update_update_7002() {
+  db_drop_field('l10n_update_file', 'last_updated');
+}
+
+/**
+ * Delete 'import_date' field from {l10n_update_file} table.
+ */
+function l10n_update_update_7003() {
+  db_drop_field('l10n_update_file', 'import_date');
+}
+
+/**
+ * Create {cache_l10n_update} table.
+ */
+function l10n_update_update_7004() {
+  if (!db_table_exists('cache_l10n_update')) {
+    $schema = drupal_get_schema_unprocessed('system', 'cache');
+    $schema['description'] = 'Cache table for the Localization Update module to store information about available releases, fetched from central server.';
+    db_create_table('cache_l10n_update', $schema);
+  }
 }

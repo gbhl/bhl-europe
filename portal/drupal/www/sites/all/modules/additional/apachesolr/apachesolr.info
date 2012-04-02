@@ -8,6 +8,7 @@ files[] = apachesolr.install
 files[] = apachesolr.module
 files[] = apachesolr.admin.inc
 files[] = apachesolr.index.inc
+files[] = apachesolr.interface.inc
 files[] = Drupal_Apache_Solr_Service.php
 files[] = Apache_Solr_Document.php
 files[] = Solr_Base_Query.php
@@ -22,9 +23,9 @@ files[] = tests/solr_base_query.test
 files[] = tests/solr_base_subquery.test
 files[] = tests/solr_document.test
 
-; Information added by drupal.org packaging script on 2012-01-12
-version = "7.x-1.0-beta15"
+; Information added by drupal.org packaging script on 2012-02-02
+version = "7.x-1.0-beta16"
 core = "7.x"
 project = "apachesolr"
-datestamp = "1326383737"
+datestamp = "1328160337"
 

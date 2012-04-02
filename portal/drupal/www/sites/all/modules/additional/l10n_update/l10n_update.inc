@@ -73,7 +73,7 @@ function l10n_update_download_import($download_url, $locale, $mode = LOCALE_IMPO
  *   Download mode. How to treat exising and modified translations.
  *
  * @return boolean
- *   TRUE on success.
+ *   Result array on success. FALSE on failure
  */
 function l10n_update_import_file($file, $locale, $mode = LOCALE_IMPORT_OVERWRITE) {
   // If the file is a uri, create a $file object
@@ -106,13 +106,24 @@ function l10n_update_download_file($download_url, $destination = NULL) {
   if ($file) {
     $variables['%tmpfile'] = $file;
     // We download and store the file (in one if statement! Isnt't that neat ;) ).
-    if (($contents = drupal_http_request($download_url)) && file_put_contents($file, $contents->data)) {
+    // @todo remove the timeout once we use the batch API to download the files.
+    if (($contents = drupal_http_request($download_url, array('timeout' => 90))) && $contents->code == 200 && $file_result = file_put_contents($file, $contents->data)) {
       watchdog('l10n_update', 'Successfully downloaded %download_link to %tmpfile', $variables);
       return $file;
     }
     else {
-      watchdog('l10n_update', 'Unable to download and save %download_link file to %tmpfile.', $variables, WATCHDOG_ERROR);
+      if (isset($contents->error)) {
+        watchdog('l10n_update', 'An error occured during the download operation: %error.', array('%error' => $contents->error), WATCHDOG_ERROR);
+      }
+      elseif (isset($contents->code) && $contents->code != 200) {
+        watchdog('l10n_update', 'An error occured during the download operation: HTTP status code %code.', array('%code' => $contents->code), WATCHDOG_ERROR);
+      }
+      if (isset($file_result)) {
+        // file_put_contents() was called but returned FALSE.
+        watchdog('l10n_update', 'Unable to save %download_link file to %tmpfile.', $variables, WATCHDOG_ERROR);
+      }
     }
+
   }
   else {
     $variables['%tmpdir'] = file_directory_temp();
@@ -198,6 +209,39 @@ function l10n_update_delete_file_history($langcode) {
   db_delete('l10n_update_file')
     ->condition('language', $langcode)
     ->execute();
+}
+
+/**
+ * Flag the file history as up to date.
+ *
+ * Compare history data in the {l10n_update_file} table with translations
+ * available at translations server(s). Update the 'last_checked' timestamp of
+ * the files which are up to date.
+ *
+ * @param $available
+ *   Available translations as retreived from remote server.
+ */
+function l10n_update_flag_history($available) {
+  if ($history = l10n_update_get_history()) {
+    foreach($history as $name => $project) {
+      foreach ($project as $langcode => $current) {
+        if (isset($available[$name][$langcode])) {
+          $update = $available[$name][$langcode];
+          // When the available update is equal to the current translation the current
+          // is marked checked in the {l10n_update_file} table.
+          if (_l10n_update_source_compare($current, $update) == 0 && $current->version == $update->version) {
+            db_update('l10n_update_file')
+              ->fields(array(
+                'last_checked' => REQUEST_TIME,
+              ))
+              ->condition('project', $current->project)
+              ->condition('language', $current->language)
+              ->execute();
+          }
+        }
+      }
+    }
+  }
 }
 
 /**

@@ -16,7 +16,7 @@ class i18nTaxonomyTestCase extends Drupali18nTestCase {
   }
 
   function setUp() {
-    parent::setUp('i18n_taxonomy', 'field_test');
+    parent::setUp(array('i18n_taxonomy', 'field_test'));
     parent::setUpLanguages();
 
     // Create users.
@@ -35,7 +35,7 @@ class i18nTaxonomyTestCase extends Drupali18nTestCase {
 
 function testTaxonomyTermLocalize() {
     $this->drupalLogin($this->admin_user);
-    // Make Input Format "Filtert Text" translatable
+    // Make Input Format "Filter Text" translatable
     $edit = array(
       'i18n_string_allowed_formats[filtered_html]' => 'filtered_html',
       'i18n_string_allowed_formats[plain_text]' => 'plain_text',
@@ -139,6 +139,25 @@ function testTaxonomyTermLocalize() {
     // Term translations are used for language switching.
     $language_switcher = language_negotiation_get_switch_links(LANGUAGE_TYPE_INTERFACE, 'taxonomy/term/' . $en_term->tid);
     $this->assertEqual($language_switcher->links[$this->secondary_language]['href'], 'taxonomy/term/' . $es_term->tid, 'Term translations are used for language switching.');
+  }
+
+  /**
+   * Tests the implementation of 'options_list_callback' for term reference fields.
+   * Enable and disable the callback properly. Avoid WSOD!
+   */
+  function testTaxonomyFieldCallback() {
+    $field_name = 'taxonomy_term_test_field';
+    $field = field_create_field(array(
+      'field_name' => $field_name,
+      'type' => 'taxonomy_term_reference',
+    ));
+    $field = field_info_field($field_name);
+    $callback = 'i18n_taxonomy_allowed_values';
+    $this->assertTrue(function_exists($callback), "Function $callback exists.");
+    $this->assertEqual($field['settings']['options_list_callback'], $callback, "$callback ist option list callback.");
+    module_disable(array('i18n_taxonomy'));
+    $field = field_info_field($field_name);
+    $this->assertNotEqual($field['settings']['options_list_callback'], $callback, "$callback ist option list callback.");
   }
 
   // Create vocabulary with given fields

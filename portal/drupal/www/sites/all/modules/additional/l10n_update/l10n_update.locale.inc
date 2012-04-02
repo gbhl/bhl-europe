@@ -20,7 +20,7 @@
  *   Text group to import PO file into (eg. 'default' for interface translations)
  *
  * @return boolean
- *   TRUE on success, FALSE on error. An error message is displayed.
+ *   Result array on success. FALSE on failure
  */
 function _l10n_update_locale_import_po($file, $langcode, $mode, $group = NULL) {
   // Try to allocate enough time to parse and import the data.
@@ -53,14 +53,20 @@ function _l10n_update_locale_import_po($file, $langcode, $mode, $group = NULL) {
   // Rebuild the menu, strings may have changed.
   menu_rebuild();
 
-  drupal_set_message(t('The translation was successfully imported. There are %number newly created translated strings, %update strings were updated and %delete strings were removed.', array('%number' => $additions, '%update' => $updates, '%delete' => $deletes)));
   watchdog('locale', 'Imported %file into %locale: %number new strings added, %update updated and %delete removed.', array('%file' => $file->filename, '%locale' => $langcode, '%number' => $additions, '%update' => $updates, '%delete' => $deletes));
   if ($skips) {
-    $skip_message = format_plural($skips, 'One translation string was skipped because it contains disallowed HTML.', '@count translation strings were skipped because they contain disallowed HTML.');
-    drupal_set_message($skip_message);
     watchdog('locale', '@count disallowed HTML string(s) in %file', array('@count' => $skips, '%file' => $file->uri), WATCHDOG_WARNING);
   }
-  return TRUE;
+
+  // Return results of this import.
+  return array(
+    'file' => $file,
+    'language' => $langcode,
+    'add' => $additions,
+    'update' => $updates,
+    'delete' => $deletes,
+    'skip' => $skips,
+  );
 }
 
 /**
@@ -374,6 +380,7 @@ function _l10n_update_locale_import_one_string_db(&$report, $langcode, $context,
     if ($textgroup == "default" && !locale_string_is_safe($translation)) {
       $report['skips']++;
       $lid = 0;
+      watchdog('locale', 'Disallowed HTML detected. String not imported: %string', array('%string' => $translation), WATCHDOG_WARNING);
     }
     elseif ($lid) {
       // We have this source string saved already.
@@ -400,7 +407,7 @@ function _l10n_update_locale_import_one_string_db(&$report, $langcode, $context,
 
         $report['additions']++;
       }
-      elseif ($exists->l10n_status == L10N_UPDATE_STRING_DEFAULT || $mode == LOCALE_IMPORT_OVERWRITE) {
+      elseif (($exists->l10n_status == L10N_UPDATE_STRING_DEFAULT && $mode == LOCALE_UPDATE_OVERRIDE_DEFAULT) || $mode == LOCALE_IMPORT_OVERWRITE) {
         // Translation exists, only overwrite if instructed.
         db_update('locales_target')
           ->fields(array(
