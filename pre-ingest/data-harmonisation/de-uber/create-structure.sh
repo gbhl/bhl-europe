@@ -65,7 +65,8 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 				xmlstarlet tr $BHL_UTILS/chapter-level-dc.xsl metadata.oai_dc > $BOOK_OUT_FOLDER/chapter-template-dc.xml
 
 				echo "  running create-structure.awk  ..."
-				awk -v targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $BOOK_OUT_FOLDER/metadata-and-structure.txt
+				# awk defaults on debian to mawk which causes memory corruptions !!!
+				gawk -v targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $BOOK_OUT_FOLDER/metadata-and-structure.txt
 
 				# clean up
 				rm $BOOK_OUT_FOLDER/chapter-template-dc.xml
