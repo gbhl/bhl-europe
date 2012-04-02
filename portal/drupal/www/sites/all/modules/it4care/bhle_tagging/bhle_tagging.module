@@ -182,8 +182,8 @@ function bhle_tagging_block_view($delta = '') {
   switch ($delta) {
     case 'basket':      
       $block['subject'] = t('Your basket');
-      if (is_array($_SESSION['bhle-tagging'])) {
-        $block['content'] = t('@items items in basket', array('@items' => count($_SESSION['bhle-tagging'])));
+      if (count($_SESSION['bhle-tagging'])) {
+        $block['content'] = l(t('@items items in basket', array('@items' => count($_SESSION['bhle-tagging']))), 'bhle-basket');
       } else {
         $block['content'] = t('No items in basket');
       }
