@@ -12,6 +12,9 @@
 
 // $destDir .... path to mets files
 
+$curStep = 5;
+
+
 include_once(_SHARED."file_operations.php");
 
 
@@ -26,7 +29,7 @@ if (file_exists($olef_file))
     // *****
     if ($cType=='serial')
     {
-        $cGUID       = file_get_contents(clean_path($destDir."/guid.txt"));
+        $cGUID       = trim(file_get_contents(clean_path($destDir."/"._AIP_GUID_FN)));
         $objID       = "bhle:".$cGUID;
         $cleanObjID  = str_replace("/","-",$objID);
         $pGUID       = getParentGuid($contentDir,$sLevel);
@@ -131,16 +134,19 @@ if (file_exists($olef_file))
     }
 
 
-    if ($filesGenerated<($cPages-2)) {
+    if ($filesGenerated<($cPages-2)) 
+    {
         echo _ERR."METS files creation failed (".$filesGenerated."/".$cPages." generated)!\n"; 
         $ingestReady = false;
-        }
+        $stepErrors = true;
+    }
+    else
+        $stepFinished = true;
 
     echo "\n\n</pre>\n";
 }
-
-
-
+else
+    $stepErrors = true;
 
 
 ?>

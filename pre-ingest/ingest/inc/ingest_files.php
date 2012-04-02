@@ -104,7 +104,7 @@ function getContentFiles($path,$type='metadata',$include_aip=true,$additional_su
 
     // CONTROL FILES ETC. ZUM IGNORIEREN
     $arrCF = array(_FEDORA_CF_READY,_FEDORA_CF_FINISHED,_FEDORA_CF_RUNNING,
-        _AIP_OLEF_FN,_THUMB_BGRD,_THUMB_FN);
+        _AIP_OLEF_FN,_AIP_GUID_FN,_THUMB_BGRD,_THUMB_FN);
 
     for ($i = 0; $i < $nFiles; $i++) 
     {
@@ -348,9 +348,9 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
 
 
 
-// *************************************************************
-function getParentInfo($contentDir,$sLevel=1,$target="guid.txt")
-// *************************************************************
+// **************************************************************
+function getParentInfo($contentDir,$sLevel=1,$target=_AIP_GUID_FN)
+// **************************************************************
 {
     if ($sLevel>1)
     {
@@ -386,7 +386,7 @@ function getParentInfo($contentDir,$sLevel=1,$target="guid.txt")
 // THEREFORE THE PARENT 2 LAYERS UP!)
 function getParentGuid($contentDir,$sLevel=1)
 {
-    return getParentInfo($contentDir,$sLevel,"guid.txt");
+    return getParentInfo($contentDir,$sLevel,_AIP_GUID_FN);
 }
 
 

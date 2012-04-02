@@ -217,7 +217,17 @@ if ($sub_action == "drop_content")
         // DELETE QUEUE SCRIPT FILE
         @unlink($curQueueFile);
 
-        rrmdir($destDir);   // AIP DIR DROP
+        // ALLE .AIP DIR UNTER CONTENTDIR LOESCHEN
+        $arrFiles = getDirectory($contentDir,array(),0,"",_ANALYZE_MAX_DEPTH);
+        $nFiles   = count($arrFiles);
+
+        for ($i=0;$i<$nFiles;$i++)
+        {
+            if ((is_dir($arrFiles[$i]))&&(instr($arrFiles[$i],_AIP_DIR,true,true)))
+            {
+                @rrmdir($arrFiles[$i]);    // AIP DIR DROP
+            }
+        }
 
         $endmsg .= "Content " . $content_id . " removed from management. Queue/Workdir/"._AIP_DIR." cleaned up.";
 
@@ -226,10 +236,10 @@ if ($sub_action == "drop_content")
 }
 
 
+
 // RESET INGEST TO NOT INGESTED VIA DELETE OF CONTROLFILES
 if($sub_action=="reset_ingest")
 {
-    
     @unlink(clean_path($destDir."/")._FEDORA_CF_FINISHED);
     @unlink(clean_path($destDir."/")._FEDORA_CF_READY);
 
@@ -242,6 +252,7 @@ if($sub_action=="reset_ingest")
         if (!instr($arrXML[$i],_AIP_OLEF_FN,true)) @unlink($arrXML[$i]);
     }
 
+    // RUECKSETZEN AUF VORLETZTEN STEP (TAXON)
     if (getContentSteps($content_id)>4) setContentSteps($content_id, 4);
    
     $endmsg .= "Selected content no longer -ingest ready- or in state -ingested-. Selected content METS dropped too!";

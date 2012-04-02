@@ -76,12 +76,14 @@ progressBar("Please wait operation in progress...", "processing.gif","margin-top
 $arrSerialLevels = array("Serial","Section","Volume","Article");
 $nSerialLevels   = count($arrSerialLevels);
 
+$stepErrors      = false;       // INDIKATOR: STEP DURCHFUEHRUNG VERURSACHTE KEINE PROBLEME 
+                                // NUR BEI REALTIME PROCESSING AUSSAGEKRAEFTIG, DAHER AKTUELL KEIN KRITERIUM
+$allLevelsDone   = false;       // INDIKATOR: ERWARTETE OUTPUTS DES STEPS SIND ALLE VORHANDEN
+
 $arrAnalyzedDirs = array();
 
 $nMarked = 0;
 $nSent   = 0;
-
-
 $sLevel  = 0;
 
 include("serial_kernel_step.php");
@@ -113,7 +115,7 @@ for ($l1=0;$l1<$L1n;$l1++)
 
                 for ($l3=0;$l3<$L3n;$l3++)
                 {
-                    $sLevel      = 3;
+                    $sLevel = 3;
 
                     if (is_dir($L3Directory[$l3]))      // FUER JEDEN artikel
                     {
@@ -129,9 +131,19 @@ for ($l1=0;$l1<$L1n;$l1++)
 if (_MODE=='production') close_progressBar();
 
 
+// *** LAST SUCC STEP FUER SERIALS ***
+
+if ((isset($curStep))&&(!$stepErrors)&&($allLevelsDone)) 
+{
+    if (getContentSteps($content_id)<$curStep)  setContentSteps($content_id, $curStep);
+}
 
 
-// ** GET_METS POST NOTES **
+if ($stepErrors)
+    echo "\n<br>"._ERR." This step on the serial was not successful, please check errors above.<br>\n";
+
+
+// *** GET_METS POST NOTES ***
 
 if ($nMarked > 0)   $endmsg .= $nMarked." AIP(s) marked as ready for ingest for Fedora. ";
 if ($nSent   > 0)   $endmsg .= $nSent." ActiveMQ ingest message(s) sent.";
