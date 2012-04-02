@@ -4,8 +4,9 @@ define('BHLE_TAGGING_REMOVE', 'Remove from basket');
 
 define('BHLE_TAGGING_ADDED', '<a href="/bhle-basket"><strong>Added to your basket:</strong></a><br/><em>@item</em>');
 define('BHLE_TAGGING_REMOVED', '<a href="/bhle-basket"><strong>Removed from your basket:</strong></a><br /><em>@item</em>');
+
 /**
- * Implementats hook_menu().
+ * Implements hook_menu().
  */
 function bhle_tagging_menu() {
   $items['bhle-basket'] = array(
@@ -156,9 +157,11 @@ function bhle_tagging_ajax_callback($form, $form_state) {
     $form['submit']['do']['#value'] = t(BHLE_TAGGING_REMOVE);
     $form['bhle-tagging-action']['#value'] = 'remove';
   }
-
+  $basket = module_invoke('bhle_tagging', 'block_view', 'basket');
+  
   $commands = array();
   $commands[] = ajax_command_insert(NULL, drupal_render($form));
+  $commands[] = ajax_command_insert('#bhle-tagging-basket', $basket['content']);
   $commands[] = ajax_command_before('#results', theme('status_messages'));
   return array('#type' => 'ajax', '#commands' => $commands);
 }
@@ -180,13 +183,15 @@ function bhle_tagging_block_info() {
 function bhle_tagging_block_view($delta = '') {
   $block = array();
   switch ($delta) {
-    case 'basket':      
+    case 'basket':
       $block['subject'] = t('Your basket');
+      $block['content'] = '<div id="bhle-tagging-basket">';
       if (count($_SESSION['bhle-tagging'])) {
-        $block['content'] = l(t('@items items in basket', array('@items' => count($_SESSION['bhle-tagging']))), 'bhle-basket');
+        $block['content'] .= l(t('@items items in basket', array('@items' => count($_SESSION['bhle-tagging']))), 'bhle-basket');
       } else {
-        $block['content'] = t('No items in basket');
+        $block['content'] .= t('No items in basket');
       }
+      $block['content'] .= '</div>';
       break;
   }
   return $block;

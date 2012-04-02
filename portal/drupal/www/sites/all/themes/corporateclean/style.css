@@ -89,7 +89,7 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 #block-locale-language ul li {
   margin:0px; padding:0px; width: 125px;
   background-color: transparent;
-  background-position:5px .9em;
+  background-position:5px .7em;
   background-repeat:no-repeat; 
 }                             
 #block-locale-language ul li .locale-untranslated {display:none;}                        
@@ -121,7 +121,17 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 #block-locale-language li.it {background-image: url('images/flags/it.png');}
 #block-locale-language li.pt-pt {background-image: url('images/flags/pt-pt.png');} 
 #block-locale-language li.es {background-image: url('images/flags/es.png');}
+#block-locale-language li.da {background-image: url('images/flags/dk.png');}
+#block-locale-language li.nl {background-image: url('images/flags/nl.png');}
+#block-locale-language li.hu {background-image: url('images/flags/hu.png');}
+#block-locale-language li.da {background-image: url('images/flags/dk.png');}
+#block-locale-language li.pl {background-image: url('images/flags/pl.png');}
+#block-locale-language li.ru {background-image: url('images/flags/ru.png');}
+#block-locale-language li.sv {background-image: url('images/flags/se.png');}
 
+/*Block BHLE Tagging*/
+#block-bhle-tagging-basket {float:right; margin-right:145px; padding-top:5px}
+#block-bhle-tagging-basket .content {font-size: 116.7%; height: 18px; line-height: 166.7%}
 
 /* Top content */
 #content_top {background: transparent url('images/bg-content-top-small.png') no-repeat 50% bottom;}
