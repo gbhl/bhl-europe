@@ -82,7 +82,7 @@ function drush_l10n_update_status() {
           $row[] = t('Up to date');
         }
         else {
-          $row[] = t('No information');          
+          $row[] = t('No information');
         }
       }
       $table[] = $row;
@@ -128,7 +128,7 @@ function drush_l10n_update() {
       drush_backend_batch_process();
     }
     else {
-      drush_log(dt('Cannot find any translation updates.'), 'error');
+      drush_log(dt('All translations up to date'), 'status');
     }
   }
 }

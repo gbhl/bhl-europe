@@ -15,7 +15,7 @@ function block_class_preprocess_block(&$vars) {
  */
 function block_class($block) {
   $ret = db_query('SELECT css_class FROM {block_class} WHERE module = :module AND delta = :delta', array(':module' => $block->module, ':delta' => $block->delta))->fetchField();
-  return $ret ? $ret : '';
+  return $ret ? check_plain ($ret) : '';
 }
 
 
@@ -24,6 +24,7 @@ function block_class($block) {
  */
 function block_class_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'block_admin_configure' || $form_id == 'block_add_block_form') {
+    $block = new stdClass;
     $block->module = $form['module']['#value'];
     $block->delta = $form['delta']['#value'];
     $css_class = block_class($block);

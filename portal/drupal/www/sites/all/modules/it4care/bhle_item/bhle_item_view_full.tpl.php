@@ -5,6 +5,8 @@
  *
  * The array $rendered
  * The object $item
+ * 
+ * Summary, Abstract, MODS, Endnote, Bibtex  
  *
  */
 //dpm($item);
@@ -16,71 +18,37 @@ unset($item->olef_scientific_name);
 
   <ul>
     <li class="first"><a href="#tabs-1" class="active biblio-summary"><?php print t('Summary'); ?></a></li>
-    <li><a href="#tabs-2" class="active biblio-abstract"><?php print t('Abstract'); ?></a></li>
-    <li><a href="#tabs-3" class="active biblio-marc21"><?php print t('MARC21'); ?></a></li>
-    <li><a href="#tabs-4" class="active biblio-marcxml"><?php print t('MARCXML'); ?></a></li>
-    <li><a href="#tabs-5" class="active biblio-mods"><?php print t('MODS'); ?></a></li>
-    <li><a href="#tabs-6" class="active biblio-dc"><?php print t('Dublin Core'); ?></a></li>
-    <li><a href="#tabs-7" class="active biblio-refnum"><?php print t('RefNum'); ?></a></li> 
+    <?php if ($rendered['abstract']) { ?><li><a href="#tabs-2" class="active biblio-abstract"><?php print t('Abstract'); ?></a></li><?php } ?>
+    <li><a href="#tabs-3" class="active biblio-mods"><?php print t('MODS'); ?></a></li>
+    <li><a href="#tabs-4" class="active biblio-endnote"><?php print t('Endnote'); ?></a></li>
+    <li><a href="#tabs-5" class="active biblio-bibtex"><?php print t('Bibtex'); ?></a></li>
   </ul>
 
   <div id="tabs-1" class="biblio-summary">
-    <div class="download-button"><a href="#" title="<?php print t('Download Summary'); ?>"> <?php print t('Download Summary'); ?></a></div>
-    <ul>
-      <?php if ($rendered['dc_title']) { ?><li><label><?php print t('Title'); ?></label><p><?php print $rendered['dc_title']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_name']) { ?><li><label><?php print t('Author'); ?></label><p><?php print $rendered['mods_name']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_date_issued']) { ?><li><label><?php print t('Year'); ?></label><p><?php print $rendered['mods_date_issued']; ?></p></li><?php } ?>
-      <?php if ($rendered['page_range']) { ?><li><label><?php print t('Page range'); ?></label><p>&nbsp;</p></li><?php } ?>
-      <?php if ($rendered['journal_title']) { ?><li><label><?php print t('Journal title'); ?></label><p>&nbsp;</p></li><?php } ?>
-      <?php if ($rendered['volume_title']) { ?><li><label><?php print t('Volume title'); ?></label><p>&nbsp;</p></li><?php } ?>
-      <?php if ($rendered['mods_publisher']) { ?><li><label><?php print t('Publisher'); ?></label><p><?php print $rendered['mods_publisher']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_origin']) { ?><li><label><?php print t('Place of publishing'); ?></label><p><?php print $rendered['mods_origin']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_language']) { ?><li><label><?php print t('Language of the text'); ?></label><p><?php print $rendered['mods_language']; ?></p></li><?php } ?>
-      <?php if ($rendered['fgs_ownerId']) { ?><li><label><?php print t('Content provider'); ?></label><p><?php print $rendered['fgs_ownerId']; ?></p></li><?php } ?>
-      <?php if ($rendered['grib']) { ?><li><label><?php print t('GRIB?'); ?></label><p>&nbsp;</p></li><?php } ?>
-    </ul>
+    <?php if ($rendered['dl_link_summary']) { print '<div class="download-button">' . $rendered['dl_link_summary'] . '</div>'; } ?>
+    <?php if ($rendered['meta_summary_source']) { print $rendered['meta_summary_source']; } ?>
   </div>
 
+  <?php if ($rendered['abstract']) { ?>
   <div id="tabs-2" class="biblio-abstract">
-    <div class="download-button"><a href="#" title="<?php print t('Download Abstract'); ?>"> <?php print t('Download Abstract'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('Abstract'); ?></p>
+    <?php if ($rendered['dl_link_abstract']) { print '<div class="download-button">' . $rendered['dl_link_abstract'] . '</div>'; } ?>
+    <?php if ($rendered['abstract']) { print $rendered['abstract']; } ?>
+  </div>
+  <?php } ?>
+
+  <div id="tabs-3" class="biblio-mods">
+    <?php if ($rendered['dl_link_mods']) { print '<div class="download-button">' . $rendered['dl_link_mods'] . '</div>'; } ?>
+    <?php if ($rendered['meta_mods_source']) { print '<pre>' . $rendered['meta_mods_source'] . '</pre>'; } ?>
   </div>
 
-  <div id="tabs-3" class="biblio-marc21">
-<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="download-button"><a href="http://bhl-int.nhm.ac.uk/static/<?php print $pid; ?>/<?php print $pid; ?>_marc21.xml" " title="<?php print t('Download MARC21'); ?>"><?php print t('Download MARC21'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('MARC21'); ?></p>
+  <div id="tabs-4" class="biblio-endnote">
+    <?php if ($rendered['dl_link_endnote']) { print '<div class="download-button">' . $rendered['dl_link_endnote'] . '</div>'; } ?>
+    <?php if ($rendered['meta_endnote_source']) { print '<pre>' . $rendered['meta_endnote_source'] . '</pre>'; } ?>
   </div>
 
-  <div id="tabs-4" class="biblio-marcxml">
-    <div class="download-button"><a href="#" title="<?php print t('Download MARCXML'); ?>"><?php print t('Download MARCXML'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('MARCXML'); ?></p>
-  </div>
-
-  <div id="tabs-5" class="biblio-mods">
-<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="download-button"><a href="http://bhl-int.nhm.ac.uk/static/<?php print $pid; ?>/<?php print $pid; ?>_mods.xml" " title="<?php print t('Download MODS'); ?>"><?php print t('Download MODS'); ?></a></div>
-    <ul>
-      <?php if ($rendered['mods_title']) { ?><li><label><?php print t('Title'); ?></label><p><?php print $rendered['mods_title']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_name']) { ?><li><label><?php print t('Author'); ?></label><p><?php print $rendered['mods_name']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_date_issued']) { ?><li><label><?php print t('Year'); ?></label><p><?php print $rendered['mods_date_issued']; ?></p></li><?php } ?>
-      <?php if ($rendered['page_range']) { ?><li><label><?php print t('Page range'); ?></label><p>&nbsp;</p></li><?php } ?>
-      <?php if ($rendered['journal_title']) { ?><li><label><?php print t('Journal title'); ?></label><p>&nbsp;</p></li><?php } ?>
-      <?php if ($rendered['volume_title']) { ?><li><label><?php print t('Volume title'); ?></label><p>&nbsp;</p></li><?php } ?>
-      <?php if ($rendered['mods_publisher']) { ?><li><label><?php print t('Publisher'); ?></label><p><?php print $rendered['mods_publisher']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_origin']) { ?><li><label><?php print t('Place of publishing'); ?></label><p><?php print $rendered['mods_origin']; ?></p></li><?php } ?>
-      <?php if ($rendered['mods_language']) { ?><li><label><?php print t('Language of the text'); ?></label><p><?php print $rendered['mods_language']; ?></p></li><?php } ?>
-      <?php if ($rendered['fgs_ownerId']) { ?><li><label><?php print t('Content provider'); ?></label><p><?php print $rendered['fgs_ownerId']; ?></p></li><?php } ?>
-      <?php if ($rendered['grib']) { ?><li><label><?php print t('GRIB?'); ?></label><p>&nbsp;</p></li><?php } ?>
-    </ul>
-  </div>
-
-  <div id="tabs-6" class="biblio-dc">
-<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="download-button"><a href="http://bhl-int.nhm.ac.uk/static/<?php print $pid; ?>/<?php print $pid; ?>_dc.xml" " title="<?php print t('Download Dublin Core'); ?>"><?php print t('Download Dublin Core'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('Dublin Core'); ?></p>
-  </div>
-
-  <div id="tabs-7" class="biblio-refnum">
-    <div class="download-button"><a href="#" title="<?php print t('Download RefNum'); ?>"><?php print t('Download RefNum'); ?></a></div>
-    <p><?php print t('No data for '); ?><?php print t('RefNum'); ?></p>
+  <div id="tabs-5" class="biblio-bibtex">
+    <?php if ($rendered['dl_link_bibtex']) { print '<div class="download-button">' . $rendered['dl_link_bibtex'] . '</div>'; } ?>
+    <?php if ($rendered['meta_bibtex_source']) { print '<pre>' . $rendered['meta_bibtex_source'] . '</pre>'; } ?>
   </div>
 
 </div>

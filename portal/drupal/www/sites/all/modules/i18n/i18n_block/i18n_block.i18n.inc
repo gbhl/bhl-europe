@@ -11,6 +11,7 @@ function i18n_block_i18n_object_info() {
   $info['block'] = array(
     'title' => t('Block'),
     'class' => 'i18n_block_object',
+    'load callback' => 'block_load',
     'key' => array('module', 'delta'),
     'placeholders' => array(
     	'%module' => 'module',

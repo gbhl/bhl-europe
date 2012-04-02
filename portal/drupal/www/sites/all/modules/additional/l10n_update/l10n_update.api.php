@@ -44,7 +44,7 @@ function hook_l10n_update_projects_alter(&$projects) {
   // Using this hook the localization server specification can be altered or
   // added. The 'l10n path' element is optional but can be specified to override
   // the translation download path specified in the 10n_server.xml file.
-  $project['existing_example_project'] = array(
+  $projects['existing_example_project'] = array(
     'info' => array(
       'l10n server' => 'example.com',
       'l10n url' => 'http://example.com/files/translations/l10n_server.xml',
@@ -56,8 +56,9 @@ function hook_l10n_update_projects_alter(&$projects) {
   // exist as a real module or theme project but is treated by the localization
   // update module as one. The below data is the minumum to be specified.
   // As in the previous example the 'l10n path' element is optional.
-  $project['new_example_project'] = array(
+  $projects['new_example_project'] = array(
     'project_type'  => 'module',
+    'name' => 'new_example_project',
     'info' => array(
       'version' => '6.x-1.5',
       'core' => '6.x',

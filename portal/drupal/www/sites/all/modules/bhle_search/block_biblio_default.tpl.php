@@ -15,7 +15,7 @@
 
   <div class="collection-id">
     <p><label><?php print t('Collection'); ?></label> <a href="#" title="<?php print t('Collection'); ?>"> <?php print $collection; ?></a></p>
-    <p><label><?php print t('intern BHLE ID'); ?></label> <?php print $intern_bhle_id; ?></p>
+   <?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><p><label><?php print t('intern BHLE ID'); ?></label><?php print $pid; ?></p>
   </div>
 
   <div class="content-preview"><img src="<?php print $content_preview; ?>" alt="" /></div>
@@ -28,9 +28,8 @@
       <?php endforeach; ?>
 
     </div>
-    <div class="biblio-read-link"><a href="#" title="<?php print t('Reed selected volume'); ?>"><?php print t('READ SELECTED VOLUME'); ?></a></div>
-  </div>
-
+<?php $str = arg(1); $pos = strpos($str, '-'); $pid = substr($str, $pos+1);?><div class="biblio-read-link"><a href="http://bhl-int.nhm.ac.uk/access/stream/<?php print $pid; ?>/<?php print $pid; ?>_mods.xml" " title="<?php print t('Read selected volume'); ?>"><?php print t('READ SELECTED VOLUME'); ?></a></div>
+</div>
   <div class="biblio-action-block-wrapper">
     <div class="biblio-action-block">
       <div class="biblio-action-radios">

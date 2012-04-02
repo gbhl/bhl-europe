@@ -5,6 +5,7 @@
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
+$curStep = 2;
 
 echo "<h1 style='margin-top: 3px;'>Preparing/Generating TIF files from various sources</h1>";
 
@@ -26,18 +27,24 @@ $nTiffs   = count($arrTiffs);
 if ($nTiffs >= $cPages)
 {
     // IF SUCCESSFUL SET STATE TO 2
-    if (getContentSteps($content_id)<2) setContentSteps($content_id, 2);
+    if ($cType == 'monograph') {
+        if (getContentSteps($content_id)<$curStep) setContentSteps($content_id, $curStep);
+    }
 
     $csvTiffs = implode(_TRENNER, $arrTiffs);
     $csvTiffs = str_replace(_CONTENT_ROOT, "", $csvTiffs);
     mysql_select("update content set content_pages_tiff='" . $csvTiffs . "' where content_id=" . $content_id);
 
     $endmsg .= $nTiffs . " files generated and database updated successfully.";
+    
+    $stepFinished = true;
 }
 else if (!_QUEUE_MODE) 
 {
-    if (!$isPDF)   echo _ERR . "Not all necessary page image files could be prepared!";
-    else           echo "INFO: ".$nPPM." PPMs created. <b>RUN THIS STEP AGAIN TO CREATE TIFFS</b> from them!";
+    if (!$isPDF)   { echo _ERR . "Not all necessary page image files could be prepared!"; $stepErrors = true;    }
+    else           { echo "INFO: ".$nPPM." PPMs created. <b>RUN THIS STEP AGAIN TO CREATE TIFFs</b> from them!"; }
 }
+
+
 
 ?>

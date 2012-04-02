@@ -441,6 +441,9 @@ class i18n_string_textgroup_default {
 
   /**
    * Remove string object.
+   * 
+   * @return
+   *   SAVED_DELETED | FALSE (If the operation failed because no source)
    */
   public function string_remove($i18nstring, $options = array()) {
     $options += array('watchdog' => TRUE, 'messages' => $this->debug);
@@ -458,7 +461,7 @@ class i18n_string_textgroup_default {
       return SAVED_DELETED;
     }
     else {
-      if($options['messages']) {
+      if ($options['messages']) {
         drupal_set_message(t('Cannot delete string, not found %location for text group %textgroup: %string', $i18nstring->get_args()));
       }
       return FALSE;
@@ -495,18 +498,21 @@ class i18n_string_textgroup_default {
    *   - 'messages', whether to produce user messages.
    *   - 'check', whether to check string format and then update/delete if not allowed.
    * @return status
-   *   SAVED_UPDATED | SAVED_NEW | SAVED_DELETED
+   *   SAVED_UPDATED | SAVED_NEW | SAVED_DELETED | FALSE (If the string is to be removed but has no source)
    */
   public function string_update($i18nstring, $options = array()) {
     $options += array('watchdog' => TRUE, 'messages' => FALSE, 'check' => TRUE);
-    if (!$options['check'] || !$this->string_check($i18nstring, $options)) {
-      $status = $this->string_remove($i18nstring, $options);
-    }
-    elseif ($i18nstring->get_string()) {
+    if ((!$options['check'] || $this->string_check($i18nstring, $options)) && $i18nstring->get_string()) {
+      // String is ok, has a value so we store it into the database.
       $status = $this->string_add($i18nstring, $options);
     }
-    else {
+    elseif ($i18nstring->get_source()) {
+      // Just remove it if we already had a source created before.
       $status = $this->string_remove($i18nstring, $options);
+    }
+    else {
+      // String didn't pass validation or we have an empty string but was not stored anyway.
+      $status = FALSE;
     }
     if ($options['messages']) {
       switch ($status) {

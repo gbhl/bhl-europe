@@ -1,6 +1,39 @@
+2012-03-15
+New stable release 7.x-1.8
+
+Bug fixes:
+[#1371660] by dczepierga: CKFinder requirement check needs fixed
+
+2012-03-14
+New stable release 7.x-1.7
+
+New features:
+[#1338044] by dczepierga: Add option to disable Toolbar wizard
+[#1349330] by dczepierga: Add configuration option to set CKFinder library path
+
+Bug fixes:
+[#1345738] by michal_cksource: Included js files to toolbar drag & drop should be minified
+[#1361846] by mrsimonelliott: CKEditor Doesn't Load on 'Long Text' CCK Field
+[#1371660] by dczepierga: CKFinder requirement check needs fixed
+[#1043230] by KoCo: D7 administration Toolbar overlays CKEditor in maximized mode
+[#1357794] by dczepierga: invalid attribute disc-type in ckeditor.css
+[#1324990] by michal_cksource: Access to private file (download) problems
+[#1343310] by michal_cksource: Change settings for private download
+[#1351470] by dczepierga: CKeditor plugins added with hook_ckeditor_plugin button not appearing in the toolbar
+[#1329980] by jherencia: Problem with CKEditor module update
+[#1347682] by jherencia: D6 to D7 - error in update #7003 when running update.php
+[#1350382] by michal_cksource: Improve regex pattern to find plugins for CKEditor
+[#1349304] by michal_cksource: Change descriptions in CKEditor's help page
+[#1343310] by michal_cksource: Change settings for private download
+[#1348196] by michal_cksource: Change for default path for CKFinder settings
+[#1346818] by michal_cksource: Change for Full toolbar buttons
+[#1345658] by michal_cksource: Enable Drupal Breaks plugin on default
+
 2011-11-10
 New stable relase 7.x-1.6
-[#1337064] Fix Fatal error: Call to undefined function db_fetch_object()
+
+Bug fixes:
+[#1337064] by michal_cksource: Fix Fatal error: Call to undefined function db_fetch_object()
 
 2011-11-09
 New stable relase 7.x-1.5
@@ -17,7 +50,7 @@ Bug fixes:
 
 
 2011-10-26
-New stable relase 7.x-1.4
+New stable release 7.x-1.4
 
 -- 2011-10-24
 - [#1319658] by michal_cksource: Correct language list in the CKEditor profile configuration

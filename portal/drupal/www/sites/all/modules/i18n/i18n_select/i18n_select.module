@@ -149,6 +149,14 @@ function i18n_select_query_node_access_alter(QueryAlterableInterface $query) {
     // Mark query as altered
     $query->addTag('i18n_select');
   }
+
+  // Rewrite pager for taxonomy term pages.
+  if ($mode && ($table_alias = i18n_select_check_table($query, 'taxonomy_index', 'tid')) && i18n_select_check_query($query, $table_alias)) {
+    $query->join('node', 'n', 't.nid = n.nid');
+    $query->condition('n.language', i18n_select_langcodes());
+    // Mark query as altered
+    $query->addTag('i18n_select');
+  }
 }
 
 /**

@@ -65,9 +65,9 @@ function ctools_modal_add_js() {
   );
 
   drupal_add_js($settings, 'setting');
-  drupal_add_js('misc/jquery.form.js');
-  drupal_add_js('misc/progress.js');
-  drupal_add_js('misc/ajax.js');
+  drupal_add_library('system', 'jquery.form');
+  drupal_add_library('system', 'drupal.progress');
+  drupal_add_library('system', 'drupal.ajax');
   ctools_add_js('modal');
 
   ctools_add_css('modal');
@@ -208,8 +208,8 @@ function ctools_modal_form_wrapper($form_id, &$form_state) {
   );
 
   $output = drupal_build_form($form_id, $form_state);
-  if (!empty($form_state['ajax']) && empty($form_state['executed'])) {
-    return ctools_modal_form_render($form_state, $output);
+ if (!empty($form_state['ajax']) && (!$form_state['executed'] || $form_state['rebuild'])) {
+     return ctools_modal_form_render($form_state, $output);
   }
 
   return $output;
@@ -227,7 +227,7 @@ function ctools_modal_form_render($form_state, $output) {
 
   // If there are messages for the form, render them.
   if ($messages = theme('status_messages')) {
-    $output = '<div class="messages">' . $messages . '</div>' . $output;
+    $output = $messages . $output;
   }
 
   $commands = array();

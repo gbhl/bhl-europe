@@ -57,7 +57,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 }
 .sidebar-panel.search-summary-sidebar #edit-search a {
   padding:5px 34px 5px 5px; display:block;
-  color: #006626; font-weight:bold; 
+  color: #006626; font-weight:bold;    font-size:91.7%;
   background: transparent url('../images/icon-editsearch.png') no-repeat right bottom;
 }
 .sidebar-panel.search-summary-sidebar #edit-search a.expand {background-position:right top;}

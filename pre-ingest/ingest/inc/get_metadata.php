@@ -9,6 +9,8 @@
 // TO OLEF FORMAT 
 // ********************************************
 
+$curStep = 1;
+
 ob_start();
 
 $inputFile = "";
@@ -108,13 +110,25 @@ else
                     $content_id.",'".$cGUID."',now(),now())");
 
             // IF SUCCESSFUL SET STATE TO 1 
-            if (getContentSteps($content_id)<1) setContentSteps($content_id, 1);
+            if ($cType == 'monograph') {
+                if (getContentSteps($content_id)<$curStep) setContentSteps($content_id, $curStep);
+            }
+            
+            $stepFinished = true;
+        }
+        else {
+            echo _ERR . "Could not generate Metadata OLEF/GUID! (Metadata/Minter missing or not functional)";
+            $stepErrors = true;
         }
 
         unset($olef);
     }
-    else
-        echo _ERR . "Could not generate OLEF/GUID! (Metadata/Minter missing or not interpretable.)";
+    else 
+    {
+        echo _ERR . "Could not generate METADATA.";
+        $stepErrors = true;
+    }
 }
+
 
 ?>

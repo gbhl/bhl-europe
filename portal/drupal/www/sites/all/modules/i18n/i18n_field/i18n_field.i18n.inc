@@ -12,6 +12,7 @@ function i18n_field_i18n_object_info() {
     'title' => t('Field'),
     'class' => 'i18n_field',
     'key' => 'field_name',
+    'load callback' => 'field_info_field',
     'placeholders' => array(
     	'%field_ui_menu' => 'field_name',
       '%field_type' => 'type',

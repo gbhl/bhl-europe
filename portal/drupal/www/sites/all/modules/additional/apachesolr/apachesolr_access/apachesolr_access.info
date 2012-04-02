@@ -7,9 +7,9 @@ core = 7.x
 files[] = apachesolr_access.module
 files[] = tests/apachesolr_access.test
 
-; Information added by drupal.org packaging script on 2012-01-12
-version = "7.x-1.0-beta15"
+; Information added by drupal.org packaging script on 2012-02-02
+version = "7.x-1.0-beta16"
 core = "7.x"
 project = "apachesolr"
-datestamp = "1326383737"
+datestamp = "1328160337"
 

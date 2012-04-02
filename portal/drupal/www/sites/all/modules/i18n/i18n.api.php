@@ -2,7 +2,7 @@
 /**
  * @file
  * API documentation for Internationalization module
- * 
+ *
  * Most i18n hooks can be placed on each module.i18n.inc file but in this case
  * such file must be listed in the module.info file.
  */
@@ -10,9 +10,9 @@
 
 /**
  * Provide information about object types handled by i18n system.
- * 
+ *
  * @see i18n_object_info()
- * 
+ *
  * Other features like translation sets (i18n_translation) or string translation (i18n_string)
  * rely on the information provided by this hook for automating string translation
  */
@@ -34,7 +34,7 @@ function hook_i18n_object_info() {
     // Only in this case we provide a 'list callback'.
     'list callback' => 'node_type_get_types',
     // Metadata for string translation
-    // In this case we are defining fields and keys for string translation's string names 
+    // In this case we are defining fields and keys for string translation's string names
     // String ids are of the form: [textgroup]:[type]:[key]:[property]
     // Thus in this case we'll have string names like
     // - node:type:story:name
@@ -92,7 +92,7 @@ function hook_i18n_object_info() {
 
 /**
  * Alter i18n object information provided by modules with the previous hook
- * 
+ *
  * @see i18n_object_info()
  */
 function hook_i18n_object_info_alter(&$info) {
@@ -100,9 +100,9 @@ function hook_i18n_object_info_alter(&$info) {
 
 /**
  * Provide information about available translations for specific path.
- * 
+ *
  * @see i18n_get_path_translations($path)
- * 
+ *
  * @param $path
  *   Internal path to translate.
  * @return array
@@ -124,6 +124,5 @@ function hook_i18n_translate_path($path) {
 /**
  * Alter path translations
  */
-fuction hook_i18n_translate_path_alter(&$translations, $path) {
-  
+function hook_i18n_translate_path_alter(&$translations, $path) {
 }

@@ -10,6 +10,7 @@
 @import "css/css3.css";
 @import "css/sidebar.css";
 @import "css/biblio.css";
+@import "css/bookreader.css";
 
 body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-height:1.417; color:#fff; background-color:#38691f;}
 #page-wrapper {background:#fff url('images/bg-fish.jpg') no-repeat 50% 109px;}
@@ -36,22 +37,23 @@ a:hover {text-decoration:underline;}
 
 #header-inside {
   position:relative; margin: 0px auto; padding: 0px; 
-  height: 98px; width:1010px; 
+  height: 80px; width:1010px; 
   background: transparent url('images/bg_header-small.jpg') left top no-repeat;
 } 
 .front #header-inside {height:126px; background-image:url('images/bg_header.jpg');}
 
-#header-inside-left {float:left; width:244px; padding:5px 10px 0px; margin:0;}
+#header-inside-left {float:left; width:244px; padding:3px 10px 0px; margin:0;}
 .front #header-inside-left {padding:20px 10px 10px;}
 
-#logo {display:block; margin:0; padding:0; height:81px; width:202px; overflow:hidden;}
+#logo {display:block; margin:0; padding:0; height:68px; width:172px; overflow:hidden;}
 .front #logo {height:82px; width:244px;}   
 #logo a,
 #logo img {padding:0; margin:0; display:block; background:transparent none;}
 
 p#skip-link {top: 24px; left: 40px; width: 200px;}
 
-#header-inside-right {float:right; width:700px; padding:15px 10px 5px 10px;}
+#header-inside-right {float:right; width:700px; padding:5px 10px 5px 10px;}
+.front #header-inside-right {padding-top:15px}
 .region-header {position:relative; width:700px; padding:0px;}
 .region-header #block-menu-menu-useraccount {margin-top:45px;}
 .region-header #block-menu-menu-useraccount ul {list-style-type:none; display:block;  padding:0; margin:0;}
@@ -87,7 +89,7 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 #block-locale-language ul li {
   margin:0px; padding:0px; width: 125px;
   background-color: transparent;
-  background-position:5px .9em;
+  background-position:5px .7em;
   background-repeat:no-repeat; 
 }                             
 #block-locale-language ul li .locale-untranslated {display:none;}                        
@@ -119,7 +121,17 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 #block-locale-language li.it {background-image: url('images/flags/it.png');}
 #block-locale-language li.pt-pt {background-image: url('images/flags/pt-pt.png');} 
 #block-locale-language li.es {background-image: url('images/flags/es.png');}
+#block-locale-language li.da {background-image: url('images/flags/dk.png');}
+#block-locale-language li.nl {background-image: url('images/flags/nl.png');}
+#block-locale-language li.hu {background-image: url('images/flags/hu.png');}
+#block-locale-language li.da {background-image: url('images/flags/dk.png');}
+#block-locale-language li.pl {background-image: url('images/flags/pl.png');}
+#block-locale-language li.ru {background-image: url('images/flags/ru.png');}
+#block-locale-language li.sv {background-image: url('images/flags/se.png');}
 
+/*Block BHLE Tagging*/
+#block-bhle-tagging-basket {float:right; margin-right:145px; padding-top:5px}
+#block-bhle-tagging-basket .content {font-size: 116.7%; height: 18px; line-height: 166.7%}
 
 /* Top content */
 #content_top {background: transparent url('images/bg-content-top-small.png') no-repeat 50% bottom;}
@@ -133,6 +145,8 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 } 
 #content_top .region-content-top p {margin:0;}
 #content_top .node.node-teaser {margin-bottom: 0px;}
+
+span.slider-content-top {display:block; width:25px; height:5px; overflow:hidden; margin:2px auto; cursor:pointer; background:transparent url('images/bg_dot.png') center top no-repeat}
 
 
 /* Top menu */
@@ -166,6 +180,7 @@ p#skip-link {top: 24px; left: 40px; width: 200px;}
 
 .front #content {padding:20px 0 0 0;  }
 #content-inside {width:1010px; margin:0px auto; overflow:hidden;}
+
 #first-time {display:none;}
 
 #main {width: 100%; min-height:490px; margin:0px; padding:0px;}
