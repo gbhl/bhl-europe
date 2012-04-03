@@ -1,5 +1,18 @@
 #!/bin/bash 
 
+#
+# prepare
+#
+if [[ $BHL_UTILS == "" && -r ./prepare-env.sh ]]; then
+	source ./prepare-env.sh
+	echo "./prepare-env.sh sourced"
+else 
+	if [[ $BHL_UTILS == "" ]]; then
+		echo "./prepare-env.sh not found you may whant to specify BHL_UTILS manually !!!"
+		exit;
+	fi
+fi
+
 NEW_FOLDER="uber-fetched"
 
 AA="oc.hu"
@@ -87,5 +100,5 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	rm -f robots.txt
 	cd $WORKDIR
 
-	echo "FINISHED fetching metadata and files !!!!"
 done
+echo "FINISHED fetching metadata and files !!!!"
