@@ -58,6 +58,7 @@ function node_i18n_sync_options($entity_type, $bundle_name) {
     return array(
       'uid' => array('title' => t('Author')),
       'status' => array('title' => t('Status')),
+      'created' => array('title' => t('Post date')),
       'promote' => array('title' => t('Promote')),
       'moderate' =>  array('title' => t('Moderate')),
       'sticky' => array('title' => t('Sticky')),

@@ -143,15 +143,21 @@ jQuery.noConflict();
 } // NUR FALLS INGEST FINISHED
 
 
-if ($line[10]<4)
-    icon("planning00.png",             "Media not ready for release!");
-else if (($line[10]==4)&&(!file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY)))
-    icon("planning.png",               "Check & Release Media now...",$command); 
-else { 
-      icon("planning0.png",
+if ($line[10]>3)
+{
+    if (file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY))
+    {
+         icon("planning0.png",
               "Media was already released and ingested see Fedora logs.",
               "onClick=\"\"","","",true,false,"ingestButton_".$line[0]);
-     }
+    }
+    else icon("planning.png",          "Check & Release Media now...",$command);
+}
+else
+    icon("planning00.png",             "Media not ready for release!");
+
+
+
 
 
 // DROP INGEST

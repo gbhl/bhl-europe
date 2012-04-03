@@ -2,7 +2,7 @@
 
 <div class="content"<?php print $content_attributes; ?>>
 <div class="content-inner">
-<h2><?php print $block->subject ?></h2>
+<h2><?php print t($block->subject); ?></h2>
 <?php print $content ?>
 </div>
 </div>

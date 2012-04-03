@@ -543,7 +543,7 @@ function apachesolr_mark_entity($entity_type, $entity_id) {
            ->fields('node', array('nid'))
            ->where("uid = :uid", array(':uid' => $account->uid));
          $update = db_update($table)
-           ->condition('nid', $nids, 'IN')
+           ->condition('entity_id', $nids, 'IN')
            ->fields(array('changed' => REQUEST_TIME))
            ->execute();
      }
@@ -578,7 +578,7 @@ function apachesolr_taxonomy_term_update($term) {
         ->fields('taxonomy_index', array('nid'))
         ->where("tid = :tid", array(':tid' => $term->tid));
       $update = db_update($table)
-        ->condition('nid', $nids, 'IN')
+        ->condition('entity_id', $nids, 'IN')
         ->fields(array('changed' => REQUEST_TIME))
         ->execute();
   }
@@ -663,7 +663,7 @@ function apachesolr_node_type_update($info) {
           ->fields('node', array('nid'))
           ->where("type = :new OR type = :old", array(':new' => $info->type, ':old' => $info->old_type));
         $update = db_update($table)
-          ->condition('nid', $nids, 'IN')
+          ->condition('entity_id', $nids, 'IN')
           ->fields(array('changed' => REQUEST_TIME))
           ->execute();
     }
@@ -760,9 +760,12 @@ function apachesolr_set_last_index_position($env_id, $entity_type, $last_changed
 /**
  * Clear a specific environment, or clear all.
  */
-function apachesolr_clear_last_index_position($env_id, $entity_type = NULL) {
+function apachesolr_clear_last_index_position($env_id = NULL, $entity_type = NULL) {
   $stored = variable_get('apachesolr_index_last', array());
-  if ($entity_type) {
+  if (empty($env_id)) {
+    $stored = array();
+  }
+  elseif ($entity_type) {
     unset($stored[$env_id][$entity_type]);
   }
   else {
@@ -987,7 +990,12 @@ function apachesolr_default_environment($env_id = NULL) {
  * number of solr objects to be used based on a name whie maps to
  * the host, port, path combination.
  * Get an instance like this:
- *   $solr = apachesolr_get_solr();
+ *   try {
+ *     $solr = apachesolr_get_solr();
+ *   }
+ *   catch (Exception $e) {
+ *     watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+ *   }
  *
  * @throws Exception
  */
@@ -999,18 +1007,23 @@ function apachesolr_get_solr($env_id = NULL) {
     $env_id = apachesolr_default_environment();
   }
 
-  $class = $environments[$env_id]['service_class'];
+  if (isset($environments[$env_id])) {
+    $class = $environments[$env_id]['service_class'];
 
-  if (empty($solr_cache[$env_id])) {
-    // Use the default class if none is specified.
-    if (empty($class)) {
-      $class = variable_get('apachesolr_service_class', 'DrupalApacheSolrService');
+    if (empty($solr_cache[$env_id])) {
+      // Use the default class if none is specified.
+      if (empty($class)) {
+        $class = variable_get('apachesolr_service_class', 'DrupalApacheSolrService');
+      }
+      // Takes advantage of auto-loading.
+      $solr = new $class($environments[$env_id]['url'], $env_id);
+      $solr_cache[$env_id] = $solr;
     }
-    // Takes advantage of auto-loading.
-    $solr = new $class($environments[$env_id]['url'], $env_id);
-    $solr_cache[$env_id] = $solr;
+    return $solr_cache[$env_id];
   }
-  return $solr_cache[$env_id];
+  else {
+    throw new Exception('No default Apache Solr environment.');
+  }
 }
 
 /**
@@ -1033,11 +1046,23 @@ function apachesolr_load_all_environments() {
   else {
     $environments = db_query('SELECT * FROM {apachesolr_environment}')->fetchAllAssoc('env_id', PDO::FETCH_ASSOC);
     foreach ($environments as $id => &$environment) {
+      $environment['conf'] = array();
       $conf = db_query('SELECT name, value FROM {apachesolr_environment_variable} WHERE env_id = :env_id', array('env_id' => $id))->fetchAllAssoc('name', PDO::FETCH_ASSOC);
       foreach ($conf as $name => $data) {
         $environment['conf'][$name] = unserialize($data['value']);
       }
     }
+
+    if (module_exists('ctools')) {
+      ctools_include('export');
+      $defaults = ctools_export_load_object('apachesolr_environment', 'all');
+      foreach ($defaults as $env_id => $default) {
+        if (!isset($environments[$env_id])) {
+          $environments[$env_id] = (array) $default;
+        }
+      }
+    }
+
     cache_set('apachesolr:environments', $environments, 'cache_apachesolr');
   }
   return $environments;
@@ -1165,7 +1190,13 @@ function apachesolr_create_unique_id($existing, $id) {
  */
 function apachesolr_environment_save($environment) {
   $default = array('env_id' => NULL, 'name' => '', 'url' => '', 'service_class' => '');
-  $is_new = !apachesolr_environment_load($environment['env_id']);
+
+  $old_environment = apachesolr_environment_load($environment['env_id']);
+  $is_new = FALSE;
+  if (!$old_environment || isset($old_environment['in_code_only'])) {
+    $is_new = TRUE;
+  }
+
   $conf = isset($environment['conf']) ? $environment['conf'] : array();
   // Remove any unexpected fields.
   // @todo - get this from the schema?.
@@ -1283,7 +1314,7 @@ function apachesolr_server_status($url, $class = NULL) {
  *
  * @throws Exception
  */
-function apachesolr_do_query(DrupalSolrQueryInterface $current_query, $page = 0) {
+function apachesolr_do_query(DrupalSolrQueryInterface $current_query) {
   if (!is_object($current_query)) {
     throw new Exception(t('NULL query object in function apachesolr_do_query()'));
   }
@@ -1325,7 +1356,7 @@ function apachesolr_do_query(DrupalSolrQueryInterface $current_query, $page = 0)
     // A module implementing HOOK_apachesolr_query_alter() aborted the search.
     return array(NULL, array());
   }
-  $query->addParam('start', $page * $query->getParam('rows'));
+  $query->addParam('start', $query->page * $query->getParam('rows'));
 
   $keys = $query->getParam('q');
 
@@ -1457,12 +1488,20 @@ function apachesolr_current_query($env_id, DrupalSolrQueryInterface $query = NUL
 }
 
 /**
+ *
+ */
+
+/**
  * Construct a dynamic index name based on information about a field.
  *
- * array('index_type' => 'integer',
- *        'multiple' => TRUE,
- *        'name' => 'fieldname',
- *        ),
+ * @param array $field
+ *   array(
+ *     'index_type' => 'integer',
+ *     'multiple' => TRUE,
+ *     'name' => 'fieldname',
+ *   ),
+ * @return string
+ *   Fieldname as it appears in the solr index
  */
 function apachesolr_index_key($field) {
   $index_type = !empty($field['index_type']) ? $field['index_type'] : NULL;
@@ -1472,6 +1511,9 @@ function apachesolr_index_key($field) {
       break;
     case 'text-omitNorms':
       $type_prefix = 'to';
+      break;
+    case 'text-unstemmed':
+      $type_prefix = 'tu';
       break;
     case 'text-edgeNgram':
       $type_prefix = 'te';
@@ -1491,14 +1533,8 @@ function apachesolr_index_key($field) {
     case 'double':
       $type_prefix = 'p'; // double; sortable d was used for date.
       break;
-    case 'sint':
-      $type_prefix = 'is'; // long integer sortable (deprecated)
-      break;
     case 'boolean':
       $type_prefix = 'b';
-      break;
-    case 'date':
-      $type_prefix = 'd'; // date trie
       break;
     case 'tint':
       $type_prefix = 'it'; // long integer trie; sortable, best for range queries
@@ -1510,13 +1546,40 @@ function apachesolr_index_key($field) {
       $type_prefix = 'ft'; // float trie; sortable, best for range queries.
       break;
     case 'tdouble':
-      $type_prefix = 'pt'; // double trie; d was used for date.
+      $type_prefix = 'pt'; // double trie;
+      break;
+    case 'sint':
+      $type_prefix = 'is'; // long integer sortable (deprecated)
+      break;
+    case 'half-sint':
+      $type_prefix = 'hs'; // 32 bit integer long sortable (deprecated)
       break;
     case 'sfloat':
-      $type_prefix = 'fs'; // float, sortable (use for sorting missing last).
+      $type_prefix = 'fs'; // float, sortable (use for sorting missing last) (deprecated).
       break;
     case 'sdouble':
-      $type_prefix = 'ps'; // double sortable; (use for sorting missing last).
+      $type_prefix = 'ps'; // double sortable; (use for sorting missing last) (deprecated).
+      break;
+    case 'date':
+      $type_prefix = 'd'; // date trie (sortable)
+      break;
+    case 'date-deprecated':
+      $type_prefix = 'dd'; // date (regular)
+      break;
+    case 'binary':
+      $type_prefix = 'x'; // Anything that is base64 encoded
+      break;
+    case 'storage':
+      $type_prefix = 'z'; // Anything that just need to be stored, not indexed
+      break;
+    case 'point':
+      $type_prefix = 'point'; // PointType. "52.3672174,4.9126891"
+      break;
+    case 'location':
+      $type_prefix = 'loc'; // LatLonType. "52.3672174,4.9126891"
+      break;
+    case 'geohash':
+      $type_prefix = 'geo'; // GeohashField. "42.6" http://en.wikipedia.org/wiki/Geohash
       break;
     case 'string':
     default:
@@ -1763,10 +1826,10 @@ function apachesolr_entity_fields($entity_type = 'node') {
       $mappings[$key] += array(
         'dependency plugins' => array('bundle', 'role'),
         'map callback' => FALSE,
+        'name callback' => '',
         'hierarchy callback' => FALSE,
         'indexing_callback' => '',
         'index_type' => 'string',
-        'name_callback' => '',
         'facets' => FALSE,
         'facet missing allowed' => FALSE,
         'facet mincount allowed' => FALSE,
@@ -1795,7 +1858,7 @@ function apachesolr_entity_fields($entity_type = 'node') {
 
         // @todo: for fields like taxonomy we are indexing multiple Solr fields
         // per entity field, but are keying on a single Solr field name here.
-        $function = !empty($row['name_callback']) ? $row['name_callback'] : NULL;
+        $function = !empty($row['name callback']) ? $row['name callback'] : NULL;
         if ($function && is_callable($function)) {
           $row['name'] = $function($field);
         }
@@ -2356,4 +2419,52 @@ function theme_apachesolr_settings_title($vars) {
   }
 
   return $output;
+}
+
+/**
+ * Callback for saving Apache Solr environment CTools exportables.
+ *
+ * CTools uses objects, while Apache Solr uses arrays; turn CTools value into an
+ * array, then call the normal save function.
+ *
+ * @param stdclass $environment
+ *   An environment object.
+ */
+function apachesolr_ctools_environment_save($environment) {
+  apachesolr_environment_save((array) $environment);
+}
+
+/**
+ * Callback for reverting Apache Solr environment CTools exportables.
+ *
+ * @param mixed $env_id
+ *   An environment machine name. CTools may provide an id OR a complete
+ *   environment object; Since Apache Solr loads environments as arrays, this
+ *   may also be an environment array.
+ */
+function apachesolr_ctools_environment_delete($env_id) {
+  if (is_object($env_id) || is_array($env_id)) {
+    $env_id = (object) $env_id;
+    $env_id = $env_id->env_id;
+  }
+  apachesolr_environment_delete($env_id);
+}
+
+/**
+ * Callback for exporting Apache Solr environments as CTools exportables.
+ *
+ * @param array $environment
+ *   An environment array from Apache Solr.
+ * @param string $indent
+ *   White space for indentation from CTools.
+ */
+function apachesolr_ctools_environment_export($environment, $indent) {
+  ctools_include('export');
+  $environment = (object) $environment;
+  // Re-load the enviroment, since in some cases the conf
+  // is stripped since it's not in the actual schema.
+  $environment = (object) apachesolr_environment_load($environment->env_id);
+  $additions_top = array();
+  $additions_bottom = array('conf' => $environment->conf);
+  return ctools_export_object('apachesolr_environment', $environment, $indent, NULL, $additions_top, $additions_bottom);
 }

@@ -38,6 +38,7 @@ define("_GUI_REFRESH",		    "120000");
 
 define("_AIP_DIR",		    ".aip");
 define("_AIP_OLEF_FN",		    "olef.xml");
+define("_AIP_GUID_FN",              "aip.guid");
 define("_SELF_ADMIN",               false);        // SELF ADMIN OF CP SETTINGS ON|OFF
 
 define("_THUMB_FN",                 "thumb.png");

@@ -32,20 +32,33 @@ function i18n_string_translate_page_object($object_type, $object_value, $languag
  * Provide a core translation module like overview page for this object.
  */
 function i18n_string_translate_page_overview($object, $strings) {
-  include_once DRUPAL_ROOT . '/includes/language.inc';
+  $build['i18n_overview'] = drupal_get_form('i18n_string_translate_page_overview_form', $object, $strings);
+  return $build;
+}
+
+/**
+ * Provide a core translation module like overview page for this object.
+ */
+function i18n_string_translate_page_overview_form($form, &$form_state, $object, $strings) {
+  //include_once DRUPAL_ROOT . '/includes/language.inc';
   // Set the default item key, assume it's the first.
   $item_title = reset($strings);
-  $header = array(t('Language'), t('Title'), t('Status'), t('Operations'));
+  $header = array(
+    'language' => t('Language'), 
+    'title' => t('Title'), 
+    'status' => t('Status'), 
+    'operations' => t('Operations')
+  );
   $source_language = variable_get_value('i18n_string_source_language');
   $rows = array();
 
   foreach (language_list() as $langcode => $language) {
     if ($langcode == $source_language) {
-      $rows[] = array(
-        $language->name . ' ' . t('(source)'),
-        check_plain($item_title->get_string()),
-        t('original'),
-        l(t('edit'), $object->get_edit_path()),
+      $items = array(
+        'language' => check_plain($language->name) . ' ' . t('(source)'),
+        'title' => check_plain($item_title->get_string()),
+        'status' => t('original'),
+        'operations' => l(t('edit'), $object->get_edit_path()),
       );
     }
     else {
@@ -58,30 +71,57 @@ function i18n_string_translate_page_overview($object, $strings) {
         }
       }
       // Translate the item that was requested to be displayed as title.
-      $rows[] = array(
-        $language->name,
-        $item_title->format_translation($langcode, array('sanitize default' => TRUE)),
-        $translated ? t('translated') : t('not translated'),
-        l(t('translate'), $object->get_translate_path($langcode), array('query' => drupal_get_destination())),
+      $items = array(
+        'language' => check_plain($language->name),
+        'title' => $item_title->format_translation($langcode, array('sanitize default' => TRUE)),
+        'status' => $translated ? t('translated') : t('not translated'),
+        'operations' => l(t('translate'), $object->get_translate_path($langcode), array('query' => drupal_get_destination())),
       );
     }
+    foreach ($items as $key => $markup) {
+      $rows[$langcode][$key] = $markup;
+      //$form['#rows'][$langcode][$key]['#markup'] = $markup;
+    }
   }
-
-  $build['i18n_string_translation_overview'] = array(
-    '#theme' => 'table',
+  // Build a form so it can be altered later, with all this information.
+  $form['object'] = array('#type' => 'value', '#value' => $object);
+  $form['source_language'] = array('#type' => 'value', '#value' => $source_language);
+  $form['languages'] = array(
     '#header' => $header,
     '#rows' => $rows,
+    '#theme' => 'table',
   );
-
-  return $build;
+  return $form;
 }
 
 /**
  * Form builder callback for in-place string translation.
+ * 
+ * @param $strings
+ *   Array of strings indexed by string name (may be indexed by group key too if $groups is present)
+ * @param $langcode
+ *   Language code to translate to.
+ * @param $groups
+ *   Optional groups to provide some string grouping. Array with group key and title pairs.
  */
-function i18n_string_translate_page_form($form, &$form_state, $strings, $langcode) {
+function i18n_string_translate_page_form($form, &$form_state, $strings, $langcode, $groups = NULL) {
   $form = i18n_string_translate_page_form_base($form, $langcode);
-  $form['strings'] += i18n_string_translate_page_form_strings($strings, $langcode);
+  if ($groups) {
+    $form['string_groups'] = array('#type' => 'value', '#value' => $groups);
+    foreach ($groups as $key => $title) {
+      $form['display'] = array(
+        '#type' => 'vertical_tabs',
+      );
+      $form['strings'][$key] = array(
+        '#group' => 'display',
+        '#title' => $title,
+        '#type' => 'fieldset',
+      ) + i18n_string_translate_page_form_strings($strings[$key], $langcode);
+    }
+  }
+  else {
+    $form['strings']['all'] = i18n_string_translate_page_form_strings($strings, $langcode);
+  }
   return $form;
 }
 
@@ -93,13 +133,10 @@ function i18n_string_translate_page_form_base($form, $langcode, $redirect = NULL
     '#type' => 'value',
     '#value' => $langcode,
   );
-  $form['strings'] = array(
-    // Use a tree, so we can access the values easily.
-    '#tree' => TRUE,
-  );
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Save translation'),
+    '#weight' => 10,
   );
   if ($redirect) {
     $form['#redirect'] = array(
@@ -133,10 +170,17 @@ function i18n_string_translate_page_form_strings($strings, $langcode) {
         $description = '<h5>' . t('Text format: @name', array('@name' => $format->name)) . '</h5>' . theme('filter_tips', array('tips' => _filter_tips($format->format, FALSE)));
       }
     }
-    // If we don't have a source we create it
-    if (!$source && empty($disabled)) {
-      $item->update(array('messages' => TRUE));
-      $source = $item->get_source();
+    // If we don't have a source we create it.
+    if (!$source && !$disabled) {
+      // Enable messages just as a reminder these strings are not being updated properly.
+      $status = $item->update(array('messages' => TRUE));
+      if ($status === FALSE || $status === SAVED_DELETED) {
+        // We don't have a source string so nothing to translate here
+        $disabled = TRUE;
+      }
+      else {
+        $source = $item->get_source();
+      }
     }
     $default_value = $item->format_translation($langcode, array('langcode' => $langcode, 'sanitize' => FALSE, 'debug' => FALSE));
     $form[$item->get_name()] = array(
@@ -145,8 +189,9 @@ function i18n_string_translate_page_form_strings($strings, $langcode) {
       '#default_value' => $default_value,
       '#disabled' => $disabled,
       '#description' => $description,
-      '#i18n_string_format' => !empty($source) ? $source->format : 0,
-      '#rows' => min(ceil(str_word_count($default_value) / 12), 10),
+      '#i18n_string_format' => $source ? $source->format : 0,
+      // If disabled, provide smaller textarea (that can be expanded anyway).
+      '#rows' => $disabled ? 1 : min(ceil(str_word_count($default_value) / 12), 10),
       '#parents' => array('strings', $item->get_name()),
     );
   }

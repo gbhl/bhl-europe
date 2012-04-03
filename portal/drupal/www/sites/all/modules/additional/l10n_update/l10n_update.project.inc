@@ -33,7 +33,7 @@ function l10n_update_build_projects() {
   $current = l10n_update_get_projects(NULL, TRUE);
   // Now get the new project list, just enabled ones
   $projects = l10n_update_project_list();
-  
+
   // Mark all previous projects as disabled and store new project data
   db_update('l10n_update_project')
     ->fields(array(
@@ -42,7 +42,37 @@ function l10n_update_build_projects() {
     ->execute();
 
   $default_server = l10n_update_default_server();
+
+  if (module_exists('update')) {
+    $projects_info = update_get_available(TRUE);
+  }
   foreach ($projects as $name => $data) {
+    if (isset($projects_info[$name]['releases']) && $projects_info[$name]['project_status'] != 'not-fetched') {
+      // Find out if a dev version is installed.
+      if (preg_match("/^[0-9]+\.x-([0-9]+)\..*-dev$/", $data['info']['version'], $matches)) {
+        // Find a suitable release to use as alternative translation.
+        foreach ($projects_info[$name]['releases'] as $project_release) {
+          // The first release with the same major release number which is not 
+          // a dev release is the one. Releases are sorted the most recent first.
+          if ($project_release['version_major'] == $matches[1] &&
+              (!isset($project_release['version_extra']) || $project_release['version_extra'] != 'dev')) {
+            $release = $project_release;
+            break;
+          }
+        }
+      }
+      elseif ($name == "drupal" || preg_match("/HEAD/", $data['info']['version'], $matches)) {
+        // Pick latest available release.
+        $release = array_shift($projects_info[$name]['releases']);
+      }
+
+      if (!empty($release['version'])) {
+        $data['info']['version'] = $release['version'];
+      }
+
+      unset($release);
+    }
+
     $data += array(
       'version' => isset($data['info']['version']) ? $data['info']['version'] : '',
       'core' => isset($data['info']['core']) ? $data['info']['core'] : DRUPAL_CORE_COMPATIBILITY,
@@ -89,38 +119,40 @@ function l10n_update_project_list() {
   _l10n_update_project_info_list($projects, system_rebuild_module_data(), 'module', $disabled);
   _l10n_update_project_info_list($projects, system_rebuild_theme_data(), 'theme', $disabled);
   // Allow other modules to alter projects before fetching and comparing.
-  drupal_alter('update_projects', $projects);
+  drupal_alter('l10n_update_projects', $projects);
   return $projects;
 }
 
 /**
- * Refresh projects after enabling/disabling modules
+ * Refresh projects after enabling modules
  *
  * When new projects are installed, set a batch for locale import / update
+ *
+ * @param $modules
+ *   Array of module names.
  */
-function l10n_update_project_refresh() {
-  // Get previous enabled/disabled projects
-  $prev_enabled = l10n_update_get_projects();
-  $prev_all = l10n_update_get_projects(FALSE, TRUE);
-  // Get all current projects, also rebuild table data
+function l10n_update_project_refresh($modules) {
+  module_load_include('check.inc', 'l10n_update');
+  $projects = array();
+
+  // Get all current projects, including the recently installed.
   $current_projects = l10n_update_build_projects();
-  $enabled = array_diff(array_keys($current_projects), array_keys($prev_enabled));
-  $installed = array_diff(array_keys($current_projects), array_keys($prev_all));
-  // If there are newly installed projects, create batch for projects x languages
-  if ($installed) {
-    module_load_include('check.inc', 'l10n_update');
-    foreach ($installed as $name) {
+  // Collect project data of newly installed projects.
+  foreach ($modules as $name) {
+    if (isset($current_projects[$name])) {
       $projects[$name] = $current_projects[$name];
     }
-    if ($available = l10n_update_check_projects($projects)) {
-      $history = l10n_update_get_history();
-      if ($updates = l10n_update_build_updates($history, $available)) {
-        module_load_include('batch.inc', 'l10n_update');
-        // Filter out updates in other languages. If no languages, all of them will be updated
-        $updates = _l10n_update_prepare_updates($updates);
-        $batch = l10n_update_batch_multiple($updates, variable_get('l10n_update_import_mode', LOCALE_IMPORT_KEEP));
-        batch_set($batch);
-      }
+  }
+
+  // If a translation is available and if update is required, lets go.
+  if ($projects && $available = l10n_update_check_projects($projects)) {
+    $history = l10n_update_get_history();
+    if ($updates = l10n_update_build_updates($history, $available)) {
+      module_load_include('batch.inc', 'l10n_update');
+      // Filter out updates in other languages. If no languages, all of them will be updated
+      $updates = _l10n_update_prepare_updates($updates);
+      $batch = l10n_update_batch_multiple($updates, variable_get('l10n_update_import_mode', LOCALE_IMPORT_KEEP));
+      batch_set($batch);
     }
   }
 }

@@ -273,10 +273,14 @@ class SolrBaseQuery extends SolrFilterSubQuery implements DrupalSolrQueryInterfa
    * environment id
    */
   protected $name;
+
   // Makes sure we always have a valid sort.
   protected $solrsort = array('#name' => 'score', '#direction' => 'desc');
   // A flag to allow the search to be aborted.
   public $abort_search = FALSE;
+  
+  // A flag to check if need to retrieve another page of the result set
+  public $page = 0;
 
   /**
    * @param $env_id

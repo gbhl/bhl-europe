@@ -369,6 +369,7 @@ function i18n_taxonomy_allowed_values($field) {
 function i18n_taxonomy_i18n_translate_path($path) {
   if (preg_match("/^(taxonomy\/term\/)([^\/]*)(.*)$/", $path, $matches)) {
     $links = array();
+    $term = FALSE;
     // If single term, treat it differently
     if (is_numeric($matches[2]) && !$matches[3]) {
       $term = taxonomy_term_load($matches[2]);
@@ -617,7 +618,7 @@ function i18n_taxonomy_taxonomy_term_presave($term) {
       }
       // Only for the case the term has no language, it may need to be removed from translation set
       if (empty($term->language)) {
-        $term->trid = 0;
+        $term->i18n_tsid = 0;
       }
       break;
   }
@@ -1186,4 +1187,23 @@ function i18n_taxonomy_views_api() {
   return array(
     'api' => 3,
   );
+}
+
+/**
+ * Implements hook_module_enabled().
+ *
+ * Updates options_list_callback for taxonomy term fields.
+ *
+ * @param $modules
+ */
+function i18n_taxonomy_modules_enabled($modules) {
+  $modules = drupal_map_assoc($modules);
+  if (isset($modules['i18n_taxonomy'])) {
+    foreach (field_info_fields() as $fieldname => $field) {
+        if ($field['type'] == 'taxonomy_term_reference') {
+          $field['settings']['options_list_callback'] = 'i18n_taxonomy_allowed_values';
+          field_update_field($field);
+        }
+      }
+  }
 }

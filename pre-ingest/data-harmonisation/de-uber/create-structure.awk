@@ -19,6 +19,16 @@ function splitPagesRange(string) {
 	}
 }
 
+function arrayKeyExists(arr, key) {
+   return(key in arr)
+}
+
+function arrayGetValue(arr, key) {
+	if (key in arr) {
+   		return	arr[key];
+	}
+}
+
 BEGIN {
 	if( targetFolder == "" || scansFolder ==""){
 		print "targetFolder and scansFolder must be specified when executing this script";
@@ -37,13 +47,19 @@ BEGIN {
 
 	inSequence=0;
 	inStructure=0;
+	id="";
 
 }
 #
 # part detection
 #
 {
-	if ($1 == "ID_Inventar:") {id=$2;} 
+	if ( id == "" && ( $1 == "ID_Inventar:" ||  $1 == "ID-Aleph:")  && $2 != "" ) {
+		id=$2;
+		gsub("[ \t\n\r]+$", "", id); #remove trailing whitespace
+		gsub("[^a-zA-Z0-9_]", "-", id); 
+		print id > targetFolder "/InternalIdentifier.txt"
+	} 
 }
 {
 	if ( index($0, "STRUCTURE") ) {
@@ -63,33 +79,54 @@ BEGIN {
 {
 	if (inStructure==1 && ! match($0,"^--.*") && length($2) > 0 ) { 
 
+
+		pageType = tolower($1);
 		splitPagesRange($2);
 
-		# one line per chapter subfolder
-		i=3;
-		chapterLine = "";
-		while($i != "") {
-			isChapterNumber = match($i,"[0-9]+\x2E.*")
-			if( lastToken == $i || !isChapterNumber ) {
-				if(isChapterNumber) {
-					chapterLine = chapterLine $i;
- 			} else {
- 				chapterLine = chapterLine " " $i;
- 			}
-			}	
-			lastToken = $i;
-			i++;
+		#
+		# create ChapterMap
+		#
+		#
+		if(pageType == "chapter") {
+			# one line per chapter subfolder
+			i=3;
+			chapterLine = "";
+			while($i != "") {
+				isChapterNumber = match($i,"[0-9]+\x2E.*")
+				if( lastToken == $i || !isChapterNumber ) {
+					if(isChapterNumber) {
+						chapterLine = chapterLine $i;
+		 			} else {
+		 				chapterLine = chapterLine " " $i;
+		 			}
+				}	
+				lastToken = $i;
+				i++;
+			}
+			
+			# avoid empty chapter lines
+			if(!match(chapterLine, "^[ \t]*$")) {
+				if(lastEOC < fromPage) {
+					# end of Chapter, will potentially be overwritten by next chapter start	
+					# the very last will EOC be set in the END section !!
+					chapters[lastEOC] = "[EOC]";
+				}
+				chapters[fromPage] = chapterLine;
+				lastEOC =  toPage + 1;
+			}
+		} else if(pageType == "section" || pageType == "subsection") {
+			# extend the chapter to cover also the subsection
+			lastEOC =  toPage + 1;
+		} else {
+			if(lastEOC > 0) {
+				chapters[lastEOC] = "[EOC]";
+				lastEOC = -1;
+			}
 		}
-		
-		# avoid empty chapter lines
-		gsub("\s", "", chapterLine);
-		if(chapterLine != ""){	
-			chapters[fromPage] = chapterLine;
-			eocPage = toPage + 1;
-			chapters[eocPage] = "[EOC]"; # end of Chapter, will potentially be overwritten by next chapter start
-		}
-		
-		pageType = $1;
+
+		#
+		# create fileNameMap
+		#
 		if(pageTypeMap[pageType]) {
 			pageType = pageTypeMap[pageType];
 		}
@@ -98,12 +135,13 @@ BEGIN {
 		for(p=fromPage; p<=toPage; p++) {
 			#print id "_" p  "_" $1 >> "._filenames";
 			paddedp = sprintf("%08d", p);
-			print paddedp;
+			# print paddedp;
 			filenames[p] = id "_" paddedp  "_" pageType
 		}
 
 	}
 }
+
 {	
 	if (inSequence==1 && ! match($0,"^--.*") && length($1) > 0 ) { 
 
@@ -140,9 +178,17 @@ BEGIN {
 # processing
 #
 END {
-	dirList = "ls -1 " scansFolder;
+	# set the EOC for the last chapter if it exists
+	if(lastEOC > 0) {
+		chapters[lastEOC] = "[EOC]";
+		lastEOC = -1;
+	}
+
 	# start output in targetFolder
 	outDir = targetFolder;
+
+	# loop over scans
+	dirList = "ls -1 " scansFolder;
  	while( dirList | getline > 0) {
  		# extract page number from tiff file
  		p=$0
@@ -151,8 +197,8 @@ END {
 		sub(".tif", "", p); # remove filename extension
 
 		# handle chapters: create sub folder, print title file, etc
-		if(chapters[p]){ # [EOC] = end of Chapter
-			if(chapters[p] == "[EOC]"){
+		if( arrayGetValue( chapters, p) ) { 
+			if(chapters[p] == "[EOC]"){ # [EOC] = end of Chapter
 				print "CHAPTER: " p ": " chapters[p];
 				outDir = targetFolder;
 			} else {
@@ -167,7 +213,7 @@ END {
 		}
 
 		# process image files
-		if(filenames[p]){
+		if( arrayGetValue(filenames, p) ){
 			if(printedPage[p] != ""){
 				newFilename = filenames[p] "_" printedPage[p] ".tif";
 			} else {
@@ -177,7 +223,7 @@ END {
 		} else {
 			newFilename = $0;
 		}
-
+		print "cp " scansFolder "/" $0 " " outDir "/" newFilename;
 		# copy scan to new folder and give it a new name
 		system("cp " scansFolder "/" $0 " " outDir "/" newFilename);
 	}
@@ -185,7 +231,8 @@ END {
 	#	print p ": " filenames[p];
 	#}
 	#for (p in chapters) {
-	#	print "CHAPTER: " p ": " chapters[p];
+	#	print("CHAPTER: " p ": " chapters[p]) > "chapters.txt";
 	#}
+
 	print "DONE"
 }

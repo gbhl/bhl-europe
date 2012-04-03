@@ -6,12 +6,11 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-
-// VORAB INFOS UEBER CONTENT UND BEREITS ERSTELLTES HOLEN
 $arrQueueCommands = array();
 
 if (_MODE=='production') 
 progressBar("Please wait operation in progress...", "processing.gif","margin-top: 75px; left: 350px;", "visible", 2);
+
 
 // INVOKE TARGET SCRIPT
 include_once($menu_nav.".php");
@@ -45,5 +44,6 @@ else if ((_QUEUE_MODE)&&($menu_nav!='get_metadata'))
     echo queue_add($curQueueFile, $arrQueueCommands);
 }
 
+unset($arrQueueCommands);
 
 ?>

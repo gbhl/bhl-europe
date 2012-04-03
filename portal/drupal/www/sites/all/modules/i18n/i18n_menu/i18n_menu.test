@@ -14,7 +14,7 @@ class i18nMenuTestCase extends Drupali18nTestCase {
   }
 
   function setUp() {
-    parent::setUp('i18n_menu');
+    parent::setUp(array('i18n_menu'));
     parent::setUpLanguages(array('administer menu'));
   }
 
@@ -31,12 +31,12 @@ class i18nMenuTestCase extends Drupali18nTestCase {
     $block['delta'] = $menu['menu_name'];
     $this->moveBlockToRegion($block, 'sidebar_first');
 
-    $this->drupalGet('');
+    $this->drupalGet('<front>');
     $this->assertText($neutral_item['link_title']);
     $this->assertText($default_item['link_title']);
     $this->assertNoText($secondary_item['link_title']);
 
-    $this->drupalGet($this->secondary_language);
+    $this->i18nGet($this->secondary_language, '<front>');
     $this->assertText($neutral_item['link_title']);
     $this->assertNoText($default_item['link_title']);
     $this->assertText($secondary_item['link_title']);
@@ -51,12 +51,12 @@ class i18nMenuTestCase extends Drupali18nTestCase {
     $default_item = $this->createMenuLink(array('menu_name' => 'main-menu', 'language' => $this->default_language));
     $secondary_item = $this->createMenuLink(array('menu_name' => 'main-menu', 'language' => $this->secondary_language));
 
-    $this->drupalGet('');
+    $this->drupalGet('<front>');
     $this->assertText($neutral_item['link_title']);
     $this->assertText($default_item['link_title']);
     $this->assertNoText($secondary_item['link_title']);
 
-    $this->drupalGet($this->secondary_language);
+    $this->i18nGet($this->secondary_language, '<front>');
     $this->assertText($neutral_item['link_title']);
     $this->assertNoText($default_item['link_title']);
     $this->assertText($secondary_item['link_title']);
@@ -67,12 +67,12 @@ class i18nMenuTestCase extends Drupali18nTestCase {
     $block['delta'] = 'main-menu';
     $this->moveBlockToRegion($block, 'sidebar_first');
 
-    $this->drupalGet('');
+    $this->drupalGet('<front>');
     $this->assertText($neutral_item['link_title']);
     $this->assertText($default_item['link_title']);
     $this->assertNoText($secondary_item['link_title']);
 
-    $this->drupalGet($this->secondary_language);
+    $this->i18nGet($this->secondary_language, '<front>');
     $this->assertText($neutral_item['link_title']);
     $this->assertNoText($default_item['link_title']);
     $this->assertText($secondary_item['link_title']);
@@ -185,7 +185,6 @@ class i18nMenuTestCase extends Drupali18nTestCase {
       'language' => $this->secondary_language,
     );
     $this->drupalPost('admin/structure/menu/add', $edit, t('Save'));
-
     return menu_load('menu-' . $edit['menu_name']);
   }
 

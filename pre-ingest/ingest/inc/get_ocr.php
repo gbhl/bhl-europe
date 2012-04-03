@@ -5,8 +5,17 @@
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
+$curStep = 3;
 
-echo "<h1 style='margin-top: 3px;'>Preparing & Generating Plain Texts</h1>";
+
+echo "<h1 style='margin-top: 3px;'>Preparing/Extracting Plain Texts ";
+
+if ($cType == 'serial')
+    echo "<br><font size=1 color=blue>For: .".str_replace(_USER_CONTENT_ROOT,"",$contentDir)."</font>";
+
+echo "</h1>";
+
+
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 
@@ -29,15 +38,23 @@ $nTextFiles = count($arrTextFiles);
 if ($nTextFiles >= $cPages) 
 {
     // IF SUCCESSFUL SET STATE TO 3
-    if (getContentSteps($content_id)<3) setContentSteps($content_id, 3);
+    if ($cType == 'monograph') {
+        if (getContentSteps($content_id)<$curStep) setContentSteps($content_id, $curStep);
+    }
 
     $csvTextfiles = implode(_TRENNER, $arrTextFiles);
     $csvTextfiles = str_replace(_CONTENT_ROOT, "", $csvTextfiles);
     mysql_select("update content set content_pages_text='" . $csvTextfiles . "' where content_id=" . $content_id);
 
     $endmsg .= $nTextFiles . " files generated and database updated successfully.";
+
+    $stepFinished = true;
 }
 else if (!_QUEUE_MODE) 
+{
     echo _ERR . "Not all necessary text files could be prepared!";
+    $stepErrors = true;
+}
+
 
 ?>

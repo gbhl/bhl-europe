@@ -15,17 +15,20 @@ function apachesolr_index_entities($env_id, $limit) {
     // With each pass through the callback, retrieve the next group of nids.
     $rows = apachesolr_index_get_entities_to_index($env_id, $entity_type, $limit);
     $documents = array();
-
     foreach ($rows as $row) {
       $documents = array_merge($documents, apachesolr_index_entity_to_documents($row, $env_id));
-  }
+    }
 
-    $indexed = apachesolr_index_send_to_solr($env_id, $documents);
-    if ($indexed !== FALSE && $indexed > 0) {
-      $entities_processed += count($rows);
-      $last_row = end($rows);
-      apachesolr_set_last_index_position($env_id, $entity_type, $last_row->changed, $last_row->entity_id);
-      apachesolr_set_last_index_updated($env_id, REQUEST_TIME);
+    // When there are no documents to send we do not want to execute the
+    // indexing function either
+    if (!empty($documents)) {
+      $indexed = apachesolr_index_send_to_solr($env_id, $documents);
+      if ($indexed !== FALSE && $indexed > 0) {
+        $entities_processed += count($rows);
+        $last_row = end($rows);
+        apachesolr_set_last_index_position($env_id, $entity_type, $last_row->changed, $last_row->entity_id);
+        apachesolr_set_last_index_updated($env_id, REQUEST_TIME);
+      }
     }
   }
   return $entities_processed;
@@ -38,18 +41,18 @@ function apachesolr_index_status($env_id) {
   $remaining = 0;
   $total = 0;
 
-  foreach (entity_get_info() as $type => $info) {
-    $bundles = apachesolr_get_index_bundles($env_id, $type);
+  foreach (entity_get_info() as $entity_type => $info) {
+    $bundles = apachesolr_get_index_bundles($env_id, $entity_type);
     if (empty($bundles)) {
       continue;
     }
 
-    $table = apachesolr_get_indexer_table($type);
+    $table = apachesolr_get_indexer_table($entity_type);
     $query = db_select($table, 'asn')->condition('asn.status', 1)->condition('asn.bundle', $bundles);
     $total += $query->countQuery()->execute()->fetchField();
 
     // Get $last_entity_id and $last_change.
-    extract(apachesolr_get_last_index_position($env_id, $type));
+    extract(apachesolr_get_last_index_position($env_id, $entity_type));
     // Find the next batch of entities to index for this entity type.  Note that
     // for ordering we're grabbing the oldest first and then ordering by ID so
     // that we get a definitive order.
@@ -66,7 +69,7 @@ function apachesolr_index_status($env_id) {
 
     if ($table == 'apachesolr_index_entities') {
       // Other, entity-specific tables don't need this condition.
-      $query->condition('aie.entity_type', $type);
+      $query->condition('aie.entity_type', $entity_type);
     }
     $remaining += $query->countQuery()->execute()->fetchField();
   }
@@ -178,6 +181,10 @@ function apachesolr_index_send_to_solr($env_id, $documents) {
   }
   catch (Exception $e) {
     watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+    return FALSE;
+  }
+  // Do not index when we do not have any documents to send
+  if (empty($documents)) {
     return FALSE;
   }
 
@@ -331,7 +338,7 @@ function apachesolr_index_get_entities_to_index($env_id, $entity_type, $limit) {
 
   if ($table == 'apachesolr_index_entities') {
     // Other, entity-specific tables don't need this condition.
-    $query->condition('aie.entity_type', $type);
+    $query->condition('aie.entity_type', $entity_type);
   }
   $query->range(0, $limit);
   $records = $query->execute();
@@ -349,17 +356,22 @@ function apachesolr_index_get_entities_to_index($env_id, $entity_type, $limit) {
  */
 function apachesolr_index_delete_index($env_id) {
   // Instantiate a new Solr object.
-  $solr = apachesolr_get_solr($env_id);
-  $query = '*:*';
+  try {
+    $solr = apachesolr_get_solr($env_id);
+    $query = '*:*';
 
-  // Allow other modules to modify the delete query.
-  // For example, use the site hash so that you only delete this site's
-  // content:  $query = 'hash:' . apachesolr_site_hash()
-  drupal_alter('apachesolr_delete_index', $query);
-  $solr->deleteByQuery($query);
-  $solr->commit();
-  apachesolr_clear_last_index_position($env_id);
-  apachesolr_set_last_index_updated($env_id, REQUEST_TIME);
+    // Allow other modules to modify the delete query.
+    // For example, use the site hash so that you only delete this site's
+    // content:  $query = 'hash:' . apachesolr_site_hash()
+    drupal_alter('apachesolr_delete_index', $query);
+    $solr->deleteByQuery($query);
+    $solr->commit();
+    apachesolr_clear_last_index_position($env_id);
+    apachesolr_set_last_index_updated($env_id, REQUEST_TIME);
+  }
+  catch (Exception $e) {
+    watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+  }
 }
 
 /**
@@ -1034,13 +1046,13 @@ function apachesolr_index_nodeapi_mass_update($nodes, $table = NULL) {
     if ($published_ids) {
       db_update($table)
         ->fields(array('changed' => REQUEST_TIME, 'status' => 1))
-        ->condition('nid', array_keys($published_ids), 'IN')
+        ->condition('entity_id', array_keys($published_ids), 'IN')
         ->execute();
     }
     if ($unpublished_ids) {
       db_update($table)
         ->fields(array('changed' => REQUEST_TIME, 'status' => 0))
-        ->condition('nid', array_keys($unpublished_ids), 'IN')
+        ->condition('entity_id', array_keys($unpublished_ids), 'IN')
         ->execute();
     }
     return TRUE;
@@ -1083,7 +1095,7 @@ function apachesolr_index_nodeapi_mass_delete($nodes, $table = NULL) {
     apachesolr_set_last_index_updated($env_id, REQUEST_TIME);
     // There was no exception, so update the table.
     db_delete($table)
-      ->condition('nid', $nids, 'IN')
+      ->condition('entity_id', $nids, 'IN')
       ->execute();
     return TRUE;
   }

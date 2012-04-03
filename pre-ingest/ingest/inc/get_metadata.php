@@ -9,6 +9,8 @@
 // TO OLEF FORMAT 
 // ********************************************
 
+$curStep = 1;
+
 ob_start();
 
 $inputFile = "";
@@ -21,8 +23,7 @@ $metadata_ws = trim($arrProvider['metadata_ws']);
 
 if ($metadata_ws != "")
 {
-   
-    echo "<h3 style='margin-top: 3px;'>Try to get Metadata from Webservice</h3>";
+    echo "<h3 style='margin-top: 3px;'>Try to get MetaData from Webservice</h3>";
 
     $resource_context = stream_context_create(array(
         'http' => array(
@@ -69,9 +70,15 @@ if (!file_exists($inputFile))
 }
 else
 {
-    echo "<h1 style='margin-top: 3px;'>Mapping Your Metadata to OLEF Repository Standard</h1>";
+    echo "<h1 style='margin-top: 3px;'>Mapping Metadata to OLEF Repository Standard ";
+
+    if ($cType == 'serial')
+        echo "<br><font size=1 color=blue>For: .".str_replace(_USER_CONTENT_ROOT,"",$contentDir)."</font>";
+
+    echo "</h1>";
+
     echo invisible_html(1024*5);
-    
+
     echo "Executing Schema Mapper...<pre>\n";    
 
     @ob_end_flush();
@@ -88,59 +95,15 @@ else
         echo "\n<h2>OLEF Result: &nbsp; "; icon("green_16.png");  echo "</h2>";
 
         echo "<hr>\n<pre>" . htmlspecialchars($olef) . " \n\n";
-        
 
-        // IPR EXTRAHIEREN
-        $content_ipr = "";
-        
-        if (instr($olef, "accessCondition",true,true))
-        {
-            $pos1        = stripos($olef,"accessCondition");
-            $pos2        = stripos($olef,">",$pos1+14);
-            $pos3        = stripos($olef,"<",$pos2+1);
-            $content_ipr = str_replace("\n","",trim(substr($olef,$pos2+1,$pos3-($pos2+1))));
-            
-            echo "\nContent IPR: ".$content_ipr." .... found in OLEF.\n\n";
-        }
-
-        // NUR EIN GUELTIGER EINTRAG WIRD UEBERNOMMEN
-        if (($content_ipr != "")&&(!instr($content_ipr,array_keys($arrIPR),true,true)))
-        {
-            $content_ipr = "";
-        }
-
-        // KEINE GUELTIGEN DATEN VORHANDEN
-        if ($content_ipr == "") 
-        {
-            $content_ipr = $arrProvider['default_ipr'];
-
-            // KEIN GUELTIGER DEFAULT WERT BISLANG
-            if (!instr($content_ipr,array_keys($arrIPR),true,true))  
-            {
-                // USER DEFAULT EINTRAGEN UND ZU AKTUELLEM IPR MACHEN
-                mysql_select("update "._USER_TAB." set default_ipr='".$arrIPR[(_DEFAULT_IPR)]."' where user_id=".$user_id,$db);
-
-                echo "\nContent IPR default auto set in your preferences. Please check them.\n\n";
-
-                $content_ipr = $arrIPR[(_DEFAULT_IPR)];
-            }
-        }
-
-        // CONTENT IPR UPDATE
-        $query = "update content set content_ipr = '".$content_ipr."' where content_id=".$content_id;
-        mysql_select($query,$db);
-
-        echo "\nContent IPR: ".$content_ipr." .... auto selected.\n\n";
-
-        unset($content_ipr);
-
+        // IPR EXTRAHIEREN / FESTLEGEN
+        include("inc/ipr_info.php");
 
         // GUID MINTING
-        
         $cGUID = "";
         include("inc/guid_minter.php");
 
-        echo "\n\n</pre>\n";    
+        echo "\n\n</pre>\n";
 
         // NUR BEI GUID STEP OK
         if (($cGUID!="")&&($olef!=""))
@@ -153,13 +116,25 @@ else
                     $content_id.",'".$cGUID."',now(),now())");
 
             // IF SUCCESSFUL SET STATE TO 1 
-            if (getContentSteps($content_id)<1) setContentSteps($content_id, 1);
+            if ($cType == 'monograph') {
+                if (getContentSteps($content_id)<$curStep) setContentSteps($content_id, $curStep);
+            }
+            
+            $stepFinished = true;
+        }
+        else {
+            echo _ERR . "Could not generate Metadata OLEF/GUID! (Metadata/Minter missing or not functional)";
+            $stepErrors = true;
         }
 
         unset($olef);
     }
-    else
-        echo _ERR . "Could not generate OLEF/GUID! (Metadata/Minter missing or not interpretable.)";
+    else 
+    {
+        echo _ERR . "Could not generate METADATA.";
+        $stepErrors = true;
+    }
 }
+
 
 ?>

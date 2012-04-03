@@ -87,7 +87,8 @@
   <div class="result-actions">
       <p class="result-buttons view-read radius gradient-vertical-grey">
       	<a title="<?php print t('View record'); ?>" href="/bhle-view/<?php print $PID; ?>" class="link-view first"><?php print t('View record'); ?></a>
-      	<a title="Read <?php print t($content_type) ?>" href="/fedora/objects/<?php print(urlencode($PID)); ?>/methods/bhle-service%3AbookSdef/bookreader?ui=full#page/1/mode/2up" class="link-read last"><?php print t('Read ' . $content_type) ?></a>
+      	<a title="Read <?php print t($content_type) ?>" href="/bhle-read/<?php print $PID; ?>" class="link-read last"><?php print t('Read ' . $content_type) ?></a>
+        <?php print drupal_render(drupal_get_form('bhle_tagging_operation_form', $PID, $title)); ?>
       </p>
 
 <!--      

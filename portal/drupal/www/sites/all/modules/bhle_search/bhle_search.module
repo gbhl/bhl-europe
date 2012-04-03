@@ -36,6 +36,7 @@ define('BHLE_SEARCH_YEAR_FIELD', 'last_modified');
 define('BHLE_SEARCH_SCIENTIFIC_NAME_FIELD', 'keywords');
 define('BHLE_SEARCH_COMMON_NAME_FIELD', 'keywords_copy');
 define('BHLE_SEARCH_DEFAULT_TERM', 'type what do you want to search');
+define('BHLE_ENVIRONMENT', 'http://www.bhl-europe.eu');
 /**
  * Suggested default metadata fields for Advanced search mapped to mods solr fields:
   a.	All metadata fields - including the abstract [=all]
@@ -1123,7 +1124,14 @@ function bhle_search_config_simple_form($form, &$form_state) {
         '#description' => t('Semi-colon separated list with names of other fields searchable via Solr.'),
         '#required' => TRUE,
     );
-
+    $form['bhle_environment'] = array(
+        '#type' => 'textfield',
+        '#title' => t('BHLE environment.'),
+        '#default_value' => variable_get('bhle_environment', BHLE_ENVIRONMENT),
+        '#size' => 30,
+        '#description' => t('For example http://bhl-int.nhm.ac.uk . Without slash.'),
+        '#required' => TRUE,
+    );
     // Load all environments from the apachesolr module and list them in our settings
     $environments = apachesolr_load_all_environments();
     $options = array();

@@ -24,8 +24,8 @@ if (!file_content_exists($olef_file,"olef:guid",true,true))
     $node1 = $domDoc->createElement("olef:guid",$objID);
 
     $node1b=false;
-    if (($cType=='serial')&&($sLevel>1)) $node1b = $domDoc->createElement("olef:parentGUID",$objParentID);
-
+    if($objParentID!="") $node1b = $domDoc->createElement("olef:parentGUID",$objParentID);
+ 
     $bis = $domDoc->getElementsByTagName("element");
 
     foreach($bis as $bi)
@@ -105,7 +105,7 @@ if ((!file_content_exists($olef_file,$recordContentSource."</mods:".$newNodeName
 
     // 1. ETWAIGE VORH. FALSCHE EINTRAEGE LOESCHEN (FALSCH DA OBIGE IF BEDINGUNG NICHT ERFUELLT)
     // -----------------------------------------------------------------------------------------
-    $docRoot = $domDoc->documentElement;
+    /* $docRoot = $domDoc->documentElement;
     
     $allElements = $domDoc->getElementsByTagName('*');      // RETURNS A NEW INSTANCE OF CLASS DOMNODELIST
 
@@ -130,7 +130,7 @@ if ((!file_content_exists($olef_file,$recordContentSource."</mods:".$newNodeName
             @$curElement->removeChild($removeNode);    // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
          }
     }
-    
+    */
     // 2. ADD (NEW) RIGHT NODE     mods:recordContentSource to bibliographicInformation
     // --------------------------------------------------------------------------------
     $node3 = $domDoc->createElement("mods:".$newNodeName,  $recordContentSource);

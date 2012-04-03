@@ -68,9 +68,9 @@ drupal_add_js('jQuery(document).ready(function($) {
        });
        
        $("#results-view-type span").toggle(function () {
-         $(this ).text("' . t('LIST') . '"); 
-       }, function () {
          $(this ).text("' . t('TABLE') . '"); 
+       }, function () {
+         $(this ).text("' . t('LIST') . '"); 
        });       
       
        $("#accordion").tabs("div.block-aggregator",{
@@ -114,4 +114,14 @@ function corporateclean_page_alter(&$page) {
     unset($page['content']['system_main']['search_form']);
   }
 }
+
+/**
+ * Override or insert variables into the page template.
+ */
+function corporateclean_preprocess_page(&$vars) {
+  if (arg(0) == 'bhle-read') {
+    $vars['title'] = FALSE;
+  }
+}
+
 ?>

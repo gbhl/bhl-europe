@@ -1,7 +1,14 @@
 <?php
-
+define('BHLE_MODS_URI', 'static/%bid/%bid_mods.xml');
+define('BHLE_ENDNOTE_URI', 'static/%bid/%bid_endnote.end');
+define('BHLE_BIBTEX_URI', 'static/%bid/%bid_bibtex.bib');
+define('BHLE_THUMBNAIL_URI', 'static/%bid/%bid_thumbnail.jpg');
+define('BHLE_READER_URI', 'access/stream/%bid');
+define('BHLE_PDF_URI', 'static/%bid/%bid_pdf.pdf');
+define('BHLE_JP2_URI', 'static/%bid/%bid_jpg.zip');
+define('BHLE_OCR_URI', 'static/%bid/%bid_ocr.txt');
 /**
- * Implementation of hook_menu().
+ * Implementats hook_menu().
  */
 function bhle_item_menu() {
   $items['bhle-view/%'] = array(
@@ -9,6 +16,22 @@ function bhle_item_menu() {
     'title arguments' => array(1),
     'page callback' => 'bhle_item_page_view',
     'page arguments' => array(1),
+    'access callback' => 'bhle_item_access',
+    'type' => MENU_CALLBACK,
+  );
+  $items['bhle-read/%'] = array(
+    'title callback' => 'bhle_item_page_title',
+    'title arguments' => array(1),
+    'page callback' => 'bhle_item_page_read',
+    'page arguments' => array(1),
+    'access callback' => 'bhle_item_access',
+    'type' => MENU_CALLBACK,
+  );
+  $items['bhle-download/%/%'] = array(
+    'title callback' => 'bhle_item_page_title',
+    'title arguments' => array(2),
+    'page callback' => 'bhle_item_download',
+    'page arguments' => array(2, 1),
     'access callback' => 'bhle_item_access',
     'type' => MENU_CALLBACK,
   );
@@ -20,7 +43,7 @@ function bhle_item_menu() {
  */
 function bhle_item_page_title($pid) {
   $item = bhle_item_load($pid);
-  return $item->dc_title[0];
+  return $item->mods_title[0];
 }
 
 /**
@@ -62,63 +85,133 @@ function bhle_item_theme() {
       ),
       'template' => 'bhle_item_view_teaser',
     ),
+    'bhle_item_block' => array(
+      'variables' => array(
+        'item' => NULL,
+        'rendered' => NULL,
+        'bid' => NULL,
+      ),
+      'template' => 'bhle_item_view_block',
+    ),
   );
-}
-
-/**
- * Custom preprocess
- */
-function _template_preprocess_bhle_item_view($item) {
-  $rendered['dc_title'] = _solrdoc_getField($item, 'dc_title');
-  $rendered['dc_identifier'] = _solrdoc_getField($item, 'dc_identifier');
-
-  $rendered['contentType'] = _solrdoc_getField($item, 'contentType');
-  $rendered['spell'] = _solrdoc_getField($item, 'spell');
-
-  $rendered['fgs_ownerId'] = _solrdoc_getField($item, 'fgs_ownerId');
-  $rendered['fgs_createdDate'] = _solrdoc_getField($item, 'fgs_createdDate');
-  $rendered['fgs_lastModifiedDate'] = _solrdoc_getField($item, 'fgs_lastModifiedDate');
-  $rendered['fgs_label'] = _solrdoc_getField($item, 'fgs_label');
-  $rendered['fgs_state'] = _solrdoc_getField($item, 'fgs_state');
-
-
-
-  $rendered['mods_publisher'] = _solrdoc_getField($item, 'mods_publisher');
-  $rendered['mods_subject_topic'] = _solrdoc_getField($item, 'mods_subject_topic');
-  $rendered['mods_subject'] = _solrdoc_getField($item, 'mods_subject');
-  $rendered['mods_type_of_resource__exact'] = _solrdoc_getField($item, 'mods_type_of_resource__exact');
-  $rendered['mods_title'] = _solrdoc_getField($item, 'mods_title');
-  $rendered['mods_place__exact'] = _solrdoc_getField($item, 'mods_place__exact');
-  $rendered['mods_publisher__exact'] = _solrdoc_getField($item, 'mods_publisher__exact');
-  $rendered['mods_language'] = _solrdoc_getField($item, 'mods_language');
-  $rendered['mods_record_content_source'] = _solrdoc_getField($item, 'mods_record_content_source');
-  $rendered['mods_record_content_source__exact'] = _solrdoc_getField($item, 'mods_record_content_source__exact');
-  $rendered['mods_origin'] = _solrdoc_getField($item, 'mods_origin');
-  $rendered['mods_date_issued'] = _solrdoc_getField($item, 'mods_date_issued');
-  $rendered['mods_language__exact'] = _solrdoc_getField($item, 'mods_language__exact');
-  $rendered['mods_type_of_resource'] = _solrdoc_getField($item, 'mods_type_of_resource');
-  $rendered['mods_name'] = _solrdoc_getField($item, 'mods_name');
-  $rendered['mods_date_issued__exact'] = _solrdoc_getField($item, 'mods_date_issued__exact');
-  $rendered['mods_title__exact'] = _solrdoc_getField($item, 'mods_title__exact');
-  $rendered['mods_subject__exact'] = _solrdoc_getField($item, 'mods_subject__exact');
-  $rendered['mods_place'] = _solrdoc_getField($item, 'mods_place');
-  $rendered['mods_name__exact'] = _solrdoc_getField($item, 'mods_name__exact');
-  ksort($rendered);
-  return $rendered;
 }
 
 /**
  * Load item object from Solr.
  */
 function bhle_item_load($pid) {
-  $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
-  $query = 'PID:(' . str_replace(':', '\:', arg(1)) . ')'; // TODO: better argument handling
-  $results = array();
-  $params = array();
-  $params['rows'] = 1;
-  $responseObj = $solr->search($query, $params);
-  $response = $responseObj->response;
-  return $response->docs[0];
+  $item = &drupal_static(__FUNCTION__);
+  if (!isset($item)) {
+    $solrstart = microtime(true);
+    $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+    $query = 'PID:(' . str_replace(':', '\:', $pid) . ')'; // TODO: better argument handling
+    $results = array();
+    $params = array();
+    $params['rows'] = 1;
+    $responseObj = $solr->search($query, $params);
+    $response = $responseObj->response;
+    $solrend = microtime(true);
+    $solrruntime = $solrend - $solrstart;
+    //dpm('query: ' . $solrruntime);
+    $item = $response->docs[0];
+  }
+  return $item;
+}
+
+/**
+ * Custom preprocess
+ */
+function _template_preprocess_bhle_item($item) {
+  $rendered = &drupal_static(__FUNCTION__);
+  if (!isset($rendered)) {
+    $pid = $item->PID;
+    $pos = strpos($pid, '-');
+    $bid = substr($pid, $pos + 1);
+
+    $rendered['dc_title'] = _solrdoc_getField($item, 'dc_title');
+    $rendered['dc_identifier'] = _solrdoc_getField($item, 'dc_identifier');
+
+    $rendered['contentType'] = _solrdoc_getField($item, 'contentType');
+    $rendered['spell'] = _solrdoc_getField($item, 'spell');
+
+    $rendered['fgs_ownerId'] = _solrdoc_getField($item, 'fgs_ownerId');
+    $rendered['fgs_createdDate'] = _solrdoc_getField($item, 'fgs_createdDate');
+    $rendered['fgs_lastModifiedDate'] = _solrdoc_getField($item, 'fgs_lastModifiedDate');
+    $rendered['fgs_label'] = _solrdoc_getField($item, 'fgs_label');
+    $rendered['fgs_state'] = _solrdoc_getField($item, 'fgs_state');
+
+    $rendered['mods_publisher'] = _solrdoc_getField($item, 'mods_publisher');
+    $rendered['mods_subject_topic'] = _solrdoc_getField($item, 'mods_subject_topic');
+    $rendered['mods_subject'] = _solrdoc_getField($item, 'mods_subject');
+    $rendered['mods_type_of_resource__exact'] = _solrdoc_getField($item, 'mods_type_of_resource__exact');
+    $rendered['mods_title'] = _solrdoc_getField($item, 'mods_title');
+    $rendered['mods_place__exact'] = _solrdoc_getField($item, 'mods_place__exact');
+    $rendered['mods_publisher__exact'] = _solrdoc_getField($item, 'mods_publisher__exact');
+    $rendered['mods_language'] = _solrdoc_getField($item, 'mods_language');
+    $rendered['mods_record_content_source'] = _solrdoc_getField($item, 'mods_record_content_source');
+    $rendered['mods_record_content_source__exact'] = _solrdoc_getField($item, 'mods_record_content_source__exact');
+    $rendered['mods_origin'] = _solrdoc_getField($item, 'mods_origin');
+    $rendered['mods_date_issued'] = _solrdoc_getField($item, 'mods_date_issued');
+    $rendered['mods_language__exact'] = _solrdoc_getField($item, 'mods_language__exact');
+    $rendered['mods_type_of_resource'] = _solrdoc_getField($item, 'mods_type_of_resource');
+    $rendered['mods_name'] = _solrdoc_getField($item, 'mods_name');
+    $rendered['mods_date_issued__exact'] = _solrdoc_getField($item, 'mods_date_issued__exact');
+    $rendered['mods_title__exact'] = _solrdoc_getField($item, 'mods_title__exact');
+    $rendered['mods_subject__exact'] = _solrdoc_getField($item, 'mods_subject__exact');
+    $rendered['mods_place'] = _solrdoc_getField($item, 'mods_place');
+    $rendered['mods_name__exact'] = _solrdoc_getField($item, 'mods_name__exact');
+
+    $summary = '';
+    if ($rendered['mods_title']) { $summary .= '<li><label>' . t('Title') . '</label><p>' . $rendered['mods_title'] . '</p></li>'; }
+    if ($rendered['mods_name']) { $summary .= '<li><label>' . t('Author') . '</label><p>' . $rendered['mods_name'] . '</p></li>'; }
+    if ($rendered['mods_date_issued']) { $summary .= '<li><label>' . t('Year') . '</label><p>' . $rendered['mods_date_issued'] . '</p></li>'; }
+    if ($rendered['page_range']) { $summary .= '<li><label>' . t('Page range') . '</label><p>&nbsp;</p></li>'; }
+    if ($rendered['journal_title']) { $summary .= '<li><label>' . t('Journal title') . '</label><p>&nbsp;</p></li>'; }
+    if ($rendered['volume_title']) { $summary .= '<li><label>' . t('Volume title') . '</label><p>&nbsp;</p></li>'; }
+    if ($rendered['mods_publisher']) { $summary .= '<li><label>' . t('Publisher') . '</label><p>' . $rendered['mods_publisher'] . '</p></li>'; }
+    if ($rendered['mods_origin']) { $summary .= '<li><label>' . t('Place of publishing') . '</label><p>' . $rendered['mods_origin'] . '</p></li>'; }
+    if ($rendered['mods_language']) { $summary .= '<li><label>' . t('Language of the text') . '</label><p>' . $rendered['mods_language'] .'</p></li>'; }
+    if ($rendered['fgs_ownerId']) { $summary .= '<li><label>' . t('Content provider') . '</label><p>' . $rendered['fgs_ownerId'] .'</p></li>'; }
+    if ($rendered['grib']) { $summary .= '<li><label>' . t('GRIB?') . '</label><p>&nbsp;</p></li>'; }
+    
+    if ($summary) { $rendered['meta_summary_source'] = '<ul>' . $summary . '<ul>'; }
+    
+    $summary_link = 'bhle-download/summary/' . $pid;
+    $rendered['dl_link_summary'] = l(t('Download Summary'), $summary_link);
+
+    $mods_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
+    $mods_request = drupal_http_request($mods_url);
+    $rendered['meta_mods_source'] = htmlentities($mods_request->data, ENT_QUOTES, 'UTF-8');
+    $mods_link = 'bhle-download/mods/' . $pid;
+    $rendered['dl_link_mods'] = l(t('Download MODS'), $mods_link);
+    
+    $endnote_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_ENDNOTE_URI);
+    $endnote_request = drupal_http_request($endnote_url);
+    $rendered['meta_endnote_source'] = htmlentities($endnote_request->data, ENT_QUOTES, 'UTF-8');
+    $endnote_link = 'bhle-download/endnote/' . $pid;
+    $rendered['dl_link_endnote'] = l(t('Download Endnote'), $endnote_link);
+
+    $bibtex_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_BIBTEX_URI);
+    $bibtex_request = drupal_http_request($bibtex_url);
+    $rendered['meta_bibtex_source'] = htmlentities($bibtex_request->data, ENT_QUOTES, 'UTF-8');
+    $bibtex_link = 'bhle-download/bibtex/' . $pid;
+    $rendered['dl_link_bibtex'] = l(t('Download BibTex'), $bibtex_link);
+
+    $rendered['thumbnail'] = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_THUMBNAIL_URI);
+    $rendered['read_more_link'] = l('READ SELECTED VOLUME', 'bhle-read/' . $pid);
+    
+    $pdf_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_PDF_URI);
+    $rendered['dl_link_pdf'] = l('PDF', $pdf_url, array('attributes' => array('class' => 'biblio-action biblio-action-pdf first')));
+
+    $ocr_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_OCR_URI);
+    $rendered['dl_link_ocr'] = l('OCR', $ocr_url, array('attributes' => array('class' => 'biblio-action biblio-action-ocr')));
+
+    $jp2_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_JP2_URI);
+    $rendered['dl_link_jp2'] = l('JP2', $jp2_url, array('attributes' => array('class' => 'biblio-action biblio-action-jp2 last')));
+    
+    ksort($rendered);
+  }
+  return $rendered;
 }
 
 /**
@@ -126,6 +219,110 @@ function bhle_item_load($pid) {
  */
 function bhle_item_page_view($pid) {
   $item = bhle_item_load($pid);
-  $rendered = _template_preprocess_bhle_item_view($item);
+  $rendered = _template_preprocess_bhle_item($item);
   return theme('bhle_item_full', array('item' => $item, 'rendered' => $rendered));
+}
+
+/**
+ * Menu callback; reader in iframe
+ */
+function bhle_item_page_read($pid) {
+  drupal_add_js(drupal_get_path('module', 'bhle_item') . '/bhle_item.js');
+  $pos = strpos($pid, '-');
+  $bid = substr($pid, $pos + 1);
+  $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_READER_URI);
+  
+  $output = '<iframe src="' . $url . '" width="100%" class="bookreader">';
+  $output .= '</iframe>';
+  return $output;
+}
+
+/**
+ * Menu callback; download file
+ */
+function bhle_item_download($pid, $type = 'summary') {
+  $pos = strpos($pid, '-');
+  $bid = substr($pid, $pos + 1);
+  switch ($type) {
+    case 'summary':
+      $item = bhle_item_load($pid);
+      $rendered = _template_preprocess_bhle_item($item);
+      $content = str_replace('</label>', ': ', $rendered['meta_summary_source']);
+      $content = str_replace('</li>', "\r\n", $content);
+      $content = strip_tags($content);
+      break;
+    case 'abstract' :
+      $item = bhle_item_load($pid);
+      $rendered = _template_preprocess_bhle_item($item);
+      $content = $rendered['meta_abstract_source'];
+      break;
+      break;
+    case 'mods':
+      $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
+      break;
+    case 'endnote':
+      $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_ENDNOTE_URI);
+      break;
+    case 'bibtex':
+      $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
+      break;
+  }
+  
+  switch ($type) {
+    default:
+      $type = 'summary';
+      
+    case 'summary':
+    case 'abstract':
+      header('Content-Type: text/plain');
+      header('Content-Length: ' . strlen($content));
+      header('Content-Disposition: attachment; filename="' . $bid . '_' . $type . '.txt"');
+      print $content;
+      drupal_exit();
+      break;
+    case 'mods':
+    case 'endnote':
+    case 'bibtex':
+      $response = drupal_http_request($url);
+      $content = $response->data;
+      header('Content-Type: ' . $response->header['content-length']);
+      header('Content-Length: ' . $response->header['content-type']);
+      header('Content-Disposition: attachment; filename="' . basename($url) . '"');
+      header('Content-Transfer-Encoding: binary\n');
+      print $content;
+      drupal_exit();
+  }
+}
+
+/**
+ * Implements hook hook_block_info()
+ *
+ */
+function bhle_item_block_info() {
+  $blocks['book_detail'] = array(
+    'info' => t('Book detail'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook hook_block_view()
+ *
+ */
+function bhle_item_block_view($delta = '') {
+  //dpm($delta, 'delta');
+  $block = array();
+  switch ($delta) {
+    case 'book_detail':
+      $pos = strpos(arg(1), '-');
+      $bid = substr(arg(1), $pos + 1);
+      $item = bhle_item_load(arg(1));
+      $rendered = _template_preprocess_bhle_item($item);
+      
+      $block['subject'] = t('Bibliographic information of...');
+      $block['content'] = theme('bhle_item_block', array('item' => $item, 'rendered' => $rendered, 'bid' => $bid));
+      break;
+  }
+  return $block;
 }
