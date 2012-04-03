@@ -48,7 +48,6 @@ public class BookInfoBuilder {
 		buildPageInfo(book, guid);
 		buildTableOfContent(book, guid);
 		
-		logger.debug("BookReader Information: {}", book.getTitle());
 		return book;
 	}
 

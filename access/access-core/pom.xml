@@ -137,6 +137,16 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<filtering>true</filtering>
+				<excludes>
+					<exclude>bibutils/*/*</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<includes>
+					<include>bibutils/*/*</include>
+				</includes>
 			</resource>
 		</resources>
 		<plugins>

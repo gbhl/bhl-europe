@@ -1,12 +1,9 @@
 package com.bhle.access.util;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 import javax.annotation.PostConstruct;
 
@@ -26,23 +23,30 @@ public class BibUtils {
 
 	@PostConstruct
 	public void init() {
-		String suffix = null;
 		if (OSValidator.isWindows()) {
-			suffix = ".exe";
+			try {
+				File bib = copyInputStreamToTmpFile(
+						WIN_XML2BIB.getInputStream(), ".exe");
+				XML2BIB_PATH = bib.getAbsolutePath();
+				File end = copyInputStreamToTmpFile(
+						WIN_XML2END.getInputStream(), ".exe");
+				XML2END_PATH = end.getAbsolutePath();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		} else if (OSValidator.isUnix()) {
-			suffix = ".sh";
-		}
-		try {
-			File bib = copyInputStreamToTmpFile(WIN_XML2BIB.getInputStream(),
-					suffix);
-			XML2BIB_PATH = bib.getAbsolutePath();
-//			bib.setExecutable(true, false);
-			File end = copyInputStreamToTmpFile(WIN_XML2END.getInputStream(),
-					suffix);
-			XML2END_PATH = end.getAbsolutePath();
-//			end.setExecutable(true, false);
-		} catch (IOException e) {
-			e.printStackTrace();
+			try {
+				File bib = copyInputStreamToTmpFile(
+						LINUX_XML2BIB.getInputStream(), "");
+				XML2BIB_PATH = bib.getAbsolutePath();
+				 bib.setExecutable(true, false);
+				File end = copyInputStreamToTmpFile(
+						LINUX_XML2END.getInputStream(), "");
+				XML2END_PATH = end.getAbsolutePath();
+				 end.setExecutable(true, false);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 	}
@@ -95,6 +99,7 @@ public class BibUtils {
 			} else {
 				pb = new ProcessBuilder(XML2END_PATH, tmp.getAbsolutePath());
 			}
+			System.out.println(XML2END_PATH + " " + tmp.getAbsolutePath());
 			Process process = pb.start();
 			return process.getInputStream();
 		} catch (IOException e) {
@@ -106,7 +111,7 @@ public class BibUtils {
 	private static File copyInputStreamToTmpFile(InputStream in, String suffix)
 			throws IOException {
 		File tmp = File.createTempFile("bibutils", suffix);
-//		tmp.deleteOnExit();
+		tmp.deleteOnExit();
 		FileOutputStream out = new FileOutputStream(tmp);
 		IOUtils.copy(in, out);
 		out.close();

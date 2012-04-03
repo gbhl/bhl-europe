@@ -32,8 +32,14 @@ if (file_exists($olef_file))
         $cGUID       = trim(file_get_contents(clean_path($destDir."/"._AIP_GUID_FN)));
         $objID       = "bhle:".$cGUID;
         $cleanObjID  = str_replace("/","-",$objID);
+
+        // PARENT
         $pGUID       = getParentGuid($contentDir,$sLevel);
-        $objParentID = "bhle:".$pGUID;
+
+        if ($pGUID!="") $objParentID = "bhle:".$pGUID;
+        else            $objParentID = "";
+
+        $cleanObjParentID  = str_replace("/","-",$objParentID);
     }
     else
     {
@@ -45,8 +51,8 @@ if (file_exists($olef_file))
     }
 
     // OLEF FERTIGSTELLEN
-    include_once("inc/olef_pages.php");
-    include_once("inc/olef_mods.php");
+    include("inc/olef_pages.php");
+    include("inc/olef_mods.php");
 
     
     // METS FERTIGSTELLEN

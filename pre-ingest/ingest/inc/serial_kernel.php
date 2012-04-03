@@ -78,7 +78,7 @@ $nSerialLevels   = count($arrSerialLevels);
 
 $stepErrors      = false;       // INDIKATOR: STEP DURCHFUEHRUNG VERURSACHTE KEINE PROBLEME 
                                 // NUR BEI REALTIME PROCESSING AUSSAGEKRAEFTIG, DAHER AKTUELL KEIN KRITERIUM
-$allLevelsDone   = false;       // INDIKATOR: ERWARTETE OUTPUTS DES STEPS SIND ALLE VORHANDEN
+$allLevelsDone   = true;        // INDIKATOR: ERWARTETE OUTPUTS DES STEPS SIND ALLE VORHANDEN
 
 $arrAnalyzedDirs = array();
 

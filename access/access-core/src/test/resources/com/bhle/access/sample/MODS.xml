@@ -1,25 +1,47 @@
-<mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
-  <titleInfo>
-    <title>Charles Darwin and the Origin of species; addresses, etc., in America and England in the year of the two anniversaries, by Edward Bagnall Poulton ... Published Nov. 24, 1909, being the fiftieth anniversary of the publication of &apos;The origin of species&apos;.</title>
-  </titleInfo>
-  <name type="personal">
-    <namePart>Poulton, Edward Bagnall, Sir, 1856-1943.</namePart>
-  </name>
-  <typeOfResource>text</typeOfResource>
-  <originInfo>
-    <place>
-      <placeTerm type="text">London,</placeTerm>
-    </place>
-    <publisher>Longmans, Green, and co.,</publisher>
-    <dateIssued>1909.</dateIssued>
-  </originInfo>
-  <language>
-    <languageTerm authority="iso639-2b" type="text">English</languageTerm>
-  </language>
-  <subject>
-    <topic>Darwin, Charles,</topic>
-  </subject>
-  <recordInfo>
-    <recordContentSource authority="marcorg">DLC/ICU</recordContentSource>
-  </recordInfo>
-</mods>
+<?xml version="1.0" encoding="UTF-8"?>
+<mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-0.xsd">
+<mods:titleInfo xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:title>Billeder af Nordens flora</mods:title>
+      </mods:titleInfo>
+<mods:titleInfo xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:title>Nordens flora</mods:title>
+      </mods:titleInfo>
+<mods:name xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:namePart>Lindman, C. A. M. (Carl Axel Magnus)</mods:namePart>
+        <mods:namePart>1856-1928</mods:namePart>
+      </mods:name>
+<mods:typeOfResource xmlns:dwc="http://rs.tdwg.org/dwc/terms/">text</mods:typeOfResource>
+<mods:originInfo xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:place>
+          <mods:placeTerm>dk</mods:placeTerm>
+        </mods:place>
+        <mods:place>
+          <mods:placeTerm>K?benhavn</mods:placeTerm>
+        </mods:place>
+        <mods:publisher>G.E.C. Gad</mods:publisher>
+        <mods:dateIssued>1901-1903 [i.e. 1907]</mods:dateIssued>
+        <mods:dateIssued>1901</mods:dateIssued>
+        <mods:dateIssued>1907</mods:dateIssued>
+        <mods:issuance>monographic</mods:issuance>
+      </mods:originInfo>
+<mods:language xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:languageTerm>dan</mods:languageTerm>
+      </mods:language>
+<mods:physicalDescription xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:form>print</mods:form>
+        <mods:extent>3 v. illus. 24 cm.</mods:extent>
+      </mods:physicalDescription>
+<mods:subject xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:topic>Plants</mods:topic>
+        <mods:geographic>Scandinavia</mods:geographic>
+        <mods:genre>Pictorial works</mods:genre>
+      </mods:subject>
+<mods:recordInfo xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+        <mods:recordContentSource>VXG</mods:recordContentSource>
+        <mods:recordCreationDate>880601</mods:recordCreationDate>
+        <mods:recordChangeDate>19880601174235.0</mods:recordChangeDate>
+        <mods:recordIdentifier>ocm18028662</mods:recordIdentifier>
+        <mods:recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.74)</mods:recordOrigin>
+      </mods:recordInfo>
+</mods:mods>

@@ -30,7 +30,7 @@ public class BookReaderTest extends AfterBatchIngestJmsTest {
 		logger.debug("Send a message {}", msg);
 		jmsProducer.send(msg);
 		
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		
 		try {
 			testBookInfoGeneration();

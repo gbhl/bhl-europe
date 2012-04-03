@@ -8,7 +8,14 @@
 $curStep = 3;
 
 
-echo "<h1 style='margin-top: 3px;'>Preparing & Generating Plain Texts</h1>";
+echo "<h1 style='margin-top: 3px;'>Preparing/Extracting Plain Texts ";
+
+if ($cType == 'serial')
+    echo "<br><font size=1 color=blue>For: .".str_replace(_USER_CONTENT_ROOT,"",$contentDir)."</font>";
+
+echo "</h1>";
+
+
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 
@@ -40,7 +47,7 @@ if ($nTextFiles >= $cPages)
     mysql_select("update content set content_pages_text='" . $csvTextfiles . "' where content_id=" . $content_id);
 
     $endmsg .= $nTextFiles . " files generated and database updated successfully.";
-    
+
     $stepFinished = true;
 }
 else if (!_QUEUE_MODE) 
