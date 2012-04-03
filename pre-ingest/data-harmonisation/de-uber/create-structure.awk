@@ -80,13 +80,11 @@ BEGIN {
 {
 	if (inStructure==1 && ! match($0,"^--.*") && length($2) > 0 ) { 
 
-
 		pageType = tolower($1);
 		splitPagesRange($2);
 
 		#
 		# create ChapterMap
-		#
 		#
 		if(pageType == "chapter") {
 			# one line per chapter subfolder
@@ -113,6 +111,7 @@ BEGIN {
 					chapters[lastEOC] = "[EOC]";
 				}
 				chapters[fromPage] = chapterLine;
+				print chapterLine;
 				lastEOC =  toPage + 1;
 			}
 		} else if(pageType == "section" || pageType == "subsection") {
@@ -240,9 +239,9 @@ END {
 	#for (p in filenames) {
 	#	print p ": " filenames[p];
 	#}
-	#for (p in chapters) {
-	#	print("CHAPTER: " p ": " chapters[p]) > "chapters.txt";
-	#}
+	for (p in chapters) {
+		print("CHAPTER: " p ": " chapters[p]) > "chapters.txt";
+	}
 
 	print "DONE"
 }

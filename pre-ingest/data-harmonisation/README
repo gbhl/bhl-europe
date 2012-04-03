@@ -2,4 +2,13 @@ This folder contains tools and scripts used for harmonizing  data, folders and f
 
 The subfolder names in here are matching the content provider specific upload folder name on the server. 
 
-Some scripts may use scripts and files contained in the utils folder and will therefore require the environent variable BHL_UTILS to be set to that folder. 
+Some scripts may use scripts and files contained in the utils folder and will therefore require the environent variable BHL_UTILS to be set to that folder. Some scripts try setting the BHL_UTILS env variabel by sourcing the ./prepare-env.sh script if this is available.
+
+```
+if [[ ! $BHL_UTILS  -a -r ./prepare-env.sh ]]; then
+	source ./prepare-env.sh
+else 
+	"./prepare-env.sh not found you may whant to specify BHL_UTILS manually !!!"
+	exit;
+fi
+```
