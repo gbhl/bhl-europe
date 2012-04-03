@@ -23,8 +23,10 @@ if [[ $BHL_UTILS == "" && -r ./prepare-env.sh ]]; then
 	source ./prepare-env.sh
 	echo "./prepare-env.sh sourced"
 else 
-	echo "./prepare-env.sh not found you may whant to specify BHL_UTILS manually !!!"
-	exit;
+	if [[ $BHL_UTILS == "" ]]; then
+		echo "./prepare-env.sh not found you may whant to specify BHL_UTILS manually !!!"
+		exit;
+	fi
 fi
 
 echo "clearing old target folder ..."
@@ -66,22 +68,13 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 				echo "  using structure from txt metadata file $METADATAFILE"
 				iconv -f ISO-8859-15 -t UTF-8  $METADATAFILE > $BOOK_OUT_FOLDER/metadata-and-structure.txt
 
-				##DELETE# echo "  preparing chapter level metadata template"
-				# 1. rename all dc:identifier to dc:isPartOf
-				# 2. delete dc:format
-				# 3. delete dc:title
-				# 4. add placeholder <dc:title>{$title}</dc:title>
-				#DELETE# xmlstarlet tr $BHL_UTILS/chapter-level-dc.xsl metadata.oai_dc > $BOOK_OUT_FOLDER/chapter-template-dc.xml
-
 				echo "  running create-structure.awk  ..."
 
 				# awk defaults on debian to mawk which causes memory corruptions !!!
+				#set -x
 				gawk -v targetFolder=$BOOK_OUT_FOLDER -v scansFolder=$SCANS_FOLDER -f $WORKDIR/create-structure.awk $BOOK_OUT_FOLDER/metadata-and-structure.txt
+				#set +x
 
-
-				# clean up
-				#DELETE# rm $BOOK_OUT_FOLDER/chapter-template-dc.xml
-				
 			else 
 				echo "  no metadata txt file found in ./work/, thus doing plain copy of scans"
 				cp $SCANS_FOLDER/*.tif $BOOK_OUT_FOLDER/
