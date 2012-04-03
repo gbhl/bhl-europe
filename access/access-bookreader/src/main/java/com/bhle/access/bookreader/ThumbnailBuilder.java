@@ -6,6 +6,9 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.bhle.access.domain.Derivative;
 import com.bhle.access.storage.StorageService;
 import com.bhle.access.util.FedoraURI;
@@ -15,6 +18,9 @@ import com.bhle.access.util.StaticURI;
 
 public class ThumbnailBuilder {
 
+	private static final Logger logger = LoggerFactory
+			.getLogger(ThumbnailBuilder.class);
+	
 	private static StorageService storageService;
 
 	public void setStorageService(StorageService storageService) {
@@ -24,6 +30,8 @@ public class ThumbnailBuilder {
 	private static String DSID = "THUMBNAIL";
 
 	public static InputStream build(String guid) {
+		logger.debug("Build Thumbnail");
+		
 		Olef olef = getOlef(guid);
 		String entryPageName = olef.getEntryPage();
 		int entryPageIndex = Integer.valueOf(olef.getEntryPage());

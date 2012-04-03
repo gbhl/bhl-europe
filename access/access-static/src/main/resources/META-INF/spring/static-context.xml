@@ -23,19 +23,19 @@
 					<key>
 						<value>high</value>
 					</key>
-					<value>${djatoka.level.high}</value>
+					<value>5</value>
 				</entry>
 				<entry>
 					<key>
 						<value>medium</value>
 					</key>
-					<value>${djatoka.level.medium}</value>
+					<value>3</value>
 				</entry>
 				<entry>
 					<key>
 						<value>low</value>
 					</key>
-					<value>${djatoka.level.low}</value>
+					<value>1</value>
 				</entry>
 			</map>
 		</property>
