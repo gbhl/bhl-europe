@@ -41,4 +41,12 @@ public class FedoraServiceImpl {
 		}
 		return response.getStatus();
 	}
+
+	public void activate(String pid) {
+		try {
+			FedoraClient.modifyObject(pid).state("A").execute(client);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		}
+	}
 }
