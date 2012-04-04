@@ -5,7 +5,7 @@
 // ** DATE:    23.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
-// OLEF MODIFICATIONS
+// OLEF MODIFICATIONS POSTPROCESSING
 
 echo "<h3>Finishing OLEF Data</h3><pre>";
 

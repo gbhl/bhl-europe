@@ -91,7 +91,14 @@ if (file_exists($olef_file))
         if ($i==0) 
         {
             $metsFile = $destDir.str_replace(array(":","/"),"_",$objID).".xml";   // FILENAME
-            $domDoc->load(_ABS."inc/xml/monograph.xml");
+            
+            if ($cType=='serial')
+            {
+                // INCLUDE TEMPLATE FOR CURRENT LEVEL
+                $domDoc->load(_ABS."inc/xml/".$arrSerialLevels[$sLevel].".xml");
+            }
+            else
+                $domDoc->load(_ABS."inc/xml/monograph.xml");
         }
         // PAGE METS
         else

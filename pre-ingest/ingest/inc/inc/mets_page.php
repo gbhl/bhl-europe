@@ -31,7 +31,7 @@ foreach ($nodeAttributes as $nodeAttribute)
         if ($nodeAttribute->name == 'about')
         $curElement->setAttribute('rdf:about','info:fedora/'.$cleanPageID);
     }
-    
+
     // <isMemberOf  --> rdf:resource="info:fedora/bhle:a0hhmgs3"
     //                  rdf:resource="info:fedora/bhle:10706/a0000000000013270571001"
     if ($nodeName=='isMemberOf')
