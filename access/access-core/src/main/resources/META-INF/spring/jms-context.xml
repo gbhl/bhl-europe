@@ -20,40 +20,15 @@
 	<amq:connectionFactory id="jmsFactory"
 		brokerURL="${java.naming.provider.url}" />
 
-	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
-		<property name="connectionFactory" ref="jmsFactory" />
-		<property name="destination" ref="updateDestination" />
-		<property name="messageListener" ref="atomFedoraJmsListenerAdapter" />
-	</bean>
-
-	<bean id="atomFedoraJmsListenerAdapter"
-		class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
-		<property name="delegate" ref="atomFedoraJmsListener" />
-		<property name="defaultListenerMethod" value="onMessage" />
-		<property name="messageConverter" ref="fedoraJmsMessageConverter" />
-	</bean>
-
-	<bean id="atomFedoraJmsListener" class="com.bhle.access.jms.AtomFedoraJmsListener" />
+	<!-- <bean class="org.springframework.jms.listener.SimpleMessageListenerContainer"> 
+		<property name="connectionFactory" ref="jmsFactory" /> <property name="destination" 
+		ref="updateDestination" /> <property name="messageListener" ref="atomFedoraJmsListenerAdapter" 
+		/> </bean> <bean id="atomFedoraJmsListenerAdapter" class="org.springframework.jms.listener.adapter.MessageListenerAdapter"> 
+		<property name="delegate" ref="atomFedoraJmsListener" /> <property name="defaultListenerMethod" 
+		value="onMessage" /> <property name="messageConverter" ref="fedoraJmsMessageConverter" 
+		/> </bean> <bean id="atomFedoraJmsListener" class="com.bhle.access.jms.AtomFedoraJmsListener" 
+		/> -->
 
 	<bean id="fedoraJmsMessageConverter" class="com.bhle.access.jms.util.FedoraJmsMessageConverter" />
 
-	<amq:topic id="ingestDestination" physicalName="ingest" />
-
-	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
-		<property name="connectionFactory" ref="jmsFactory" />
-		<property name="destination" ref="ingestDestination" />
-		<property name="messageListener" ref="afterBatchIngestJmsListenerAdapter" />
-	</bean>
-
-	<bean id="afterBatchIngestJmsListenerAdapter"
-		class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
-		<property name="delegate" ref="afterBatchIngestJmsListener" />
-		<property name="defaultListenerMethod" value="onMessage" />
-		<property name="messageConverter" ref="batchIngestJsonMessageConverter" />
-	</bean>
-
-	<bean id="afterBatchIngestJmsListener" class="com.bhle.access.jms.AfterBatchIngestJmsListener" />
-
-	<bean id="batchIngestJsonMessageConverter"
-		class="com.bhle.access.jms.util.BatchIngestJsonMessageConverter" />
 </beans>

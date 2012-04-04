@@ -9,6 +9,10 @@ public class AfterBatchIngestConverterManager {
 		AfterBatchIngestConverterManager.converters = convertors;
 	}
 
+	public static List<AfterBatchIngestConvertor> getConverters() {
+		return converters;
+	}
+
 	public static void allConvert(String guid) {
 		for (AfterBatchIngestConvertor convertor : converters) {
 			convertor.convert(guid);

@@ -12,25 +12,20 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 
+import com.bhle.access.BaseTest;
 import com.bhle.access.bookreader.search.SearchService;
-import com.bhle.access.jms.AfterBatchIngestJmsTest;
 import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.StaticURI;
 
 @ContextConfiguration
-public class BookReaderTest extends AfterBatchIngestJmsTest {
+public class BookReaderTest extends BaseTest {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(BookReaderTest.class);
 	
 	@Test
 	public void testPostIngestDerivatives() throws InterruptedException {
-		
-		String msg = "{\"GUID\":\"a000test\", \"STATUS\":\"COMPLETED\"}";
-		logger.debug("Send a message {}", msg);
-		jmsProducer.send(msg);
-		
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		
 		try {
 			testBookInfoGeneration();

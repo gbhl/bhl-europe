@@ -11,15 +11,18 @@
 
 	<context:component-scan base-package="com.bhle.access.batch" />
 
-	<bean id="derivativeWriter" class="com.bhle.access.batch.DerivativeWriter"
-		p:store-ref="storageService" />
-
-	<batch:job id="updateDerivative" restartable="true">
-		<batch:description>Re-generate all derivatives from Fedora Repository</batch:description>
-		<batch:step id="updateDerivative_step1">
+	<batch:job id="generateDerivatives">
+		<batch:description>Generate all object-based derivatives from Fedora Repository</batch:description>
+		<batch:step id="generateObjectBasedDerivatives" next="generatePackageBasedDerivatives">
 			<batch:tasklet>
-				<batch:chunk reader="fedoraObjectReader" processor="conversionProcessor"
-					writer="derivativeWriter" commit-interval="${batch.commit.interval}" />
+				<batch:chunk reader="fedoraObjectReader" processor="singleObjectConversionProcessor"
+					writer="datastreamDerivativeWriter" commit-interval="${batch.commit.interval}" />
+			</batch:tasklet>
+		</batch:step>
+		<batch:step id="generatePackageBasedDerivatives">
+			<batch:tasklet>
+				<batch:chunk reader="afterBatchIngestConverterReader"
+					writer="packageDerivativeWriter" commit-interval="1" />
 			</batch:tasklet>
 		</batch:step>
 	</batch:job>

@@ -12,7 +12,7 @@
 	<import resource="classpath*:/META-INF/spring/env-context.xml" />
 	<import resource="classpath*:/META-INF/spring/static-context.xml" />
 	<import resource="classpath*:/META-INF/spring/downaload-convert-context.xml" />
-	<import resource="classpath*:/META-INF/spring/integration-context.xml" />
+	<import resource="classpath*:/META-INF/spring/download-integration-context.xml" />
 	<import resource="classpath*:/META-INF/spring/mail-context.xml" />
 	<import resource="classpath*:/META-INF/spring/akubra-context.xml" />
 	<import resource="classpath*:/META-INF/spring/schedule-context.xml" />

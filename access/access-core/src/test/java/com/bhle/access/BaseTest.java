@@ -61,10 +61,12 @@ public class BaseTest implements ResourceLoaderAware {
 		FedoraUtil.ingestFOXML(monograhObject.getInputStream());
 		FedoraUtil.ingestFOXML(pageObject.getInputStream());
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(8000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		logger.info("Activate samples...");
+		FedoraUtil.activateObject("bhle:10706-a000test");
 		logger.info("Done");
 	}
 

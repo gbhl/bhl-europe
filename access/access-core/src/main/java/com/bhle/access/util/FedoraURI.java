@@ -107,5 +107,4 @@ public class FedoraURI {
 		return new FedoraURI(URI.create(DEFAULT_SCHEME + ":fedora/"
 				+ getPidFromGuid(guid) + "-" + serialNumber + "/" + dsid));
 	}
-
 }
