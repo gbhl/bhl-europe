@@ -1,5 +1,18 @@
 #!/bin/bash 
 
+#
+# prepare
+#
+if [[ $BHL_UTILS == "" && -r ./prepare-env.sh ]]; then
+	source ./prepare-env.sh
+	echo "./prepare-env.sh sourced"
+else 
+	if [[ $BHL_UTILS == "" ]]; then
+		echo "./prepare-env.sh not found you may whant to specify BHL_UTILS manually !!!"
+		exit;
+	fi
+fi
+
 NEW_FOLDER="uber-fetched"
 
 AA="oc.hu"
@@ -68,10 +81,24 @@ find -type d -regex "^./[0-9]*$" | egrep -o "[0-9]*" | while read DIR; do
 	mkdir tiff
 	cd tiff
 	wget $WGET_OPTIONS "${BASE_URL}tif/"
+	tiffCount=(`ls -1 | wc -l`)
+	if [[ $tiffCount == 0 ]]; then
+		echo "No tiffs downloaded, will extract tiffs from pdf ..."
+		resolution=(`egrep -o "<ems:resolution>([0-9]+)</ems:resolution>" ../metadata.oai_ems  | sed "s,[^0-9],,g"`)
+		if [[ $resolution == "" ]]; then
+			echo "no ems:resolution found, using 400 dpi as default"
+		else
+			echo "resolution found: " $resolution
+		fi
+		# start tiff extration expecting only one pdf
+		$BHL_UTILS/pdf2tiff ../*.pdf ./ $resolution
+	else
+		echo $tiffCount" tiffs downloaded"	
+	fi
 	# clean up
 	rm -f index.*  
 	rm -f robots.txt
 	cd $WORKDIR
 
-	echo "FINISHED fetching metadata and files !!!!"
 done
+echo "FINISHED fetching metadata and files !!!!"

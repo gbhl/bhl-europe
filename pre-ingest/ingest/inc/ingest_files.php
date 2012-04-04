@@ -303,7 +303,8 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                 // maas et al 2011 annonaceae index nordic j bot 29 3 257-356.pdf-000001.tif
                 $arrSortable = array();
                 $arrMerker   = array();
-                
+                $notified    = false;
+
                 // MIT BETREFFENDER SPALTE GEINDEXTER ARRAY AUFBAU
                 for ($i=0;$i<$nElements;$i++)
                 {
@@ -316,11 +317,17 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                         if (is_numeric($curKey))
                         {
                             if (!in_array($curKey,$arrMerker))  $arrSortable[($curKey)] = $arrToSort[$i];
-                            else                                echo ERR." Duplicate Sortig Kriteria found; Filename: ".basename($arrToSort[$i])."\n<br>";
+                            else if (!$notified) {
+                                echo ERR."One or more duplicate Sortig Kriteria(s) : <b>".$curKey."</b> : e.g. in file ".basename($arrToSort[$i])." !\n<br>";
+                                $notified = true;
+                            }
 
                             $arrMerker[] = $curKey;
                         }
-                        else echo _ERR." There is a filename mismatch (".basename($arrToSort[$i]).")\n<br>";
+                        else if (!$notified) {
+                            echo _ERR." There is a (Sortig Kriteria) filename part missing (".basename($arrToSort[$i]).")\n<br>";
+                            $notified = true;
+                        }
                     }
                 }
 
@@ -351,24 +358,27 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
 // **************************************************************
 function getParentInfo($contentDir,$sLevel=1,$target=_AIP_GUID_FN)
 // **************************************************************
+// LEVEL 0 ... SERIAL   ->   3 ... ARTICLE
 {
-    if ($sLevel>1)
+    if ($sLevel>0)
     {
-        if (substr($contentDir,(strlen($contentDir)-1),1)=="/")    $contentDir = substr($contentDir,0,(strlen($contentDir)-1));
+        // PHP 4. COMPAT. LETZTE SLASH WEG
+        if (substr($contentDir,(strlen($contentDir)-1),1)=="/")    
+                $contentDir = substr($contentDir,0,(strlen($contentDir)-1));
 
-        $parentDir = dirname($contentDir); // uebergeordnetes verz.
-        $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target); // target darin?
-                
+        $parentDir = dirname($contentDir);                             // UEBERGEORDNETES VERZ.
+        $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target);  // TARGET DARIN?
+
         if (file_exists($curFile)) return trim(file_get_contents($curFile));
-        
-        if ($sLevel==2) return "";
-        
+
+        if ($sLevel==1) return "";
+
         $parentDir = dirname($parentDir);
         $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target);
         
         if (file_exists($curFile)) return trim(file_get_contents($curFile));
         
-        if ($sLevel==3) return "";
+        if ($sLevel==2) return "";
                 
         $parentDir = dirname($parentDir);
         $curFile   = clean_path($parentDir."/"._AIP_DIR."/".$target);

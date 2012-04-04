@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# extracts uncompressed 24-bit RGB  tiffs from a pdf
+#
+if [[ $1 == "" || $2 == "" || $3 == "" ]]; then
+	echo "USAGE:";
+	echo "\t pdf2tiff SOURCE_PDF TARGET_FOLDER RESOLUTION [FILE_POSTFIX]"
+	exit
+fi
+
+if [[ ! -r $1 ]]; then
+	echo "ERROR: SOURCE_PDF '"$1"' is not readable or does not exist"
+	exit
+fi
+
+if [[ ! -d $2 ]]; then
+	echo "ERROR: TARGET_FOLDER '"$2"' is not a directory"
+fi
+
+if [[ $3 != "" ]]; then
+	RESOLUTION=$3
+	echo "RESOLUTION set to '"$3"' dpi"
+fi
+
+FILE_POSTFIX="from-pdf"
+if [[ $4 != "" ]]; then
+	FILE_POSTFIX=$4
+	echo "\t using FILE_POSTFIX '"$FILE_POSTFIX
+fi
+
+gs -dNOPAUSE -sDEVICE=tiff24nc -dBATCH -r$RESOLUTION -sOutputFile=${2}/${FILE_POSTFIX}_%06d.tif $1 | grep --color=never "Processing pages"
+
+fileCount=(`ls -1 ${2}/ | wc -l`)
+echo "DONE: "$fileCount" tiffs extracted"

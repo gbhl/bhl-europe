@@ -79,13 +79,11 @@ BEGIN {
 {
 	if (inStructure==1 && ! match($0,"^--.*") && length($2) > 0 ) { 
 
-
 		pageType = tolower($1);
 		splitPagesRange($2);
 
 		#
 		# create ChapterMap
-		#
 		#
 		if(pageType == "chapter") {
 			# one line per chapter subfolder
@@ -112,6 +110,7 @@ BEGIN {
 					chapters[lastEOC] = "[EOC]";
 				}
 				chapters[fromPage] = chapterLine;
+				#print chapterLine;
 				lastEOC =  toPage + 1;
 			}
 		} else if(pageType == "section" || pageType == "subsection") {
@@ -135,7 +134,7 @@ BEGIN {
 		for(p=fromPage; p<=toPage; p++) {
 			#print id "_" p  "_" $1 >> "._filenames";
 			paddedp = sprintf("%08d", p);
-			# print paddedp;
+			#print paddedp; #DEBUG##
 			filenames[p] = id "_" paddedp  "_" pageType
 		}
 
@@ -150,12 +149,12 @@ BEGIN {
 		indexFrom = fromPage;
 		indexTo= toPage;
 
-		#print $1, indexFrom, indexTo;
+		#print $1, indexFrom, indexTo;  #DEBUG##
 		
 		if($3) {
 			splitPagesRange($3);
 			printedfromPage = fromPage;
-			#print "   printed: ", $3, printedfromPage;
+			#print "   printed: ", $3, printedfromPage; #DEBUG##
 		} else {
 			printedfromPage = "";
 		}
@@ -195,11 +194,12 @@ END {
  		sub("^.*_0", "", p); # remove everything up to the start of the page number
 		sub("^0*", "", p); # remove all remaining leading zeros
 		sub(".tif", "", p); # remove filename extension
+		#print "page:" p; #DEBUG#
 
 		# handle chapters: create sub folder, print title file, etc
 		if( arrayGetValue( chapters, p) ) { 
 			if(chapters[p] == "[EOC]"){ # [EOC] = end of Chapter
-				print "CHAPTER: " p ": " chapters[p];
+				#print "CHAPTER: " p ": " chapters[p];
 				outDir = targetFolder;
 			} else {
 				if(currentChapter != chapters[p]){	
@@ -215,20 +215,22 @@ END {
 		# process image files
 		if( arrayGetValue(filenames, p) ){
 			if(printedPage[p] != ""){
+				# has printed page number
 				newFilename = filenames[p] "_" printedPage[p] ".tif";
 			} else {
 				newFilename = filenames[p] ".tif";
 			}
 			
 		} else {
-			newFilename = $0;
+			newFilename = id "_" sprintf("%08d", p) ".tif";
 		}
-		print "cp " scansFolder "/" $0 " " outDir "/" newFilename;
+		#print "cp " scansFolder "/" $0 " " outDir "/" newFilename;
 		# copy scan to new folder and give it a new name
 		system("cp " scansFolder "/" $0 " " outDir "/" newFilename);
 	}
+
 	#for (p in filenames) {
-	#	print p ": " filenames[p];
+	#	print( p ": " filenames[p]);
 	#}
 	#for (p in chapters) {
 	#	print("CHAPTER: " p ": " chapters[p]) > "chapters.txt";
