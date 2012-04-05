@@ -16,7 +16,7 @@
 		<batch:step id="generateObjectBasedDerivatives" next="generatePackageBasedDerivatives">
 			<batch:tasklet>
 				<batch:chunk reader="fedoraObjectReader" processor="singleObjectConversionProcessor"
-					writer="datastreamDerivativeWriter" commit-interval="${batch.commit.interval}" />
+					writer="datastreamDerivativeWriter" commit-interval="1" />
 			</batch:tasklet>
 		</batch:step>
 		<batch:step id="generatePackageBasedDerivatives">
