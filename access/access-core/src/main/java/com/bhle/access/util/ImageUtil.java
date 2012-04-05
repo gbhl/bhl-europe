@@ -32,6 +32,7 @@ public class ImageUtil {
 		File tmpJp2 = null;
 		try {
 			tmpJp2 = File.createTempFile("bhle", ".jp2");
+			tmpJp2.deleteOnExit();
 		} catch (IOException e2) {
 			e2.printStackTrace();
 		}
@@ -78,6 +79,7 @@ public class ImageUtil {
 		File tmpTn = null;
 		try {
 			tmpTn = File.createTempFile("bhle", ".jpeg");
+			tmpTn.deleteOnExit();
 		} catch (IOException e2) {
 			e2.printStackTrace();
 		}
