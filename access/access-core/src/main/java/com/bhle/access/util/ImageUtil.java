@@ -13,7 +13,6 @@ import org.im4java.core.IM4JavaException;
 import org.im4java.core.IMOperation;
 import org.im4java.core.Info;
 import org.im4java.core.InfoException;
-import org.im4java.process.Pipe;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -62,6 +61,7 @@ public class ImageUtil {
 
 		try {
 			tiffIn.close();
+			tmpTiff.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -109,10 +109,10 @@ public class ImageUtil {
 
 		try {
 			jp2In.close();
+			tmpJp2.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 		return fileIn;
 	}
 

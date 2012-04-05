@@ -1,26 +1,44 @@
 package com.bhle.access.domain;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 
-import com.bhle.access.util.RereadabelBufferedInputStream;
+import org.apache.commons.io.IOUtils;
 
 public class DatastreamWrapper {
-	private InputStream inputStream;
 	private DigitalObjectWrapper digitalObject;
 	private String dsid;
 	private String mimeType;
+
+	private File tmp;
 
 	public DatastreamWrapper(String dsid) {
 		this.dsid = dsid;
 	}
 
 	public InputStream getInputStream() {
-		return inputStream;
+		try {
+			return new FileInputStream(tmp);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
-	// Buffer Datastream for multiple reads
 	public void setInputStream(InputStream inputStream) {
-		this.inputStream = new RereadabelBufferedInputStream(inputStream);
+		try {
+			tmp = File.createTempFile("bhle", null);
+			FileOutputStream out = new FileOutputStream(tmp);
+			IOUtils.copy(inputStream, out);
+			out.close();
+			inputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public DigitalObjectWrapper getDigitalObject() {
@@ -45,6 +63,10 @@ public class DatastreamWrapper {
 
 	public void setMimeType(String mimeType) {
 		this.mimeType = mimeType;
+	}
+	
+	public void close() {
+		tmp.delete();
 	}
 
 }
