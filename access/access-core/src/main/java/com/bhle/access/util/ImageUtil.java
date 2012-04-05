@@ -1,5 +1,6 @@
 package com.bhle.access.util;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -30,7 +31,7 @@ public class ImageUtil {
 
 		File tmpJp2 = null;
 		try {
-			tmpJp2 = File.createTempFile("bhle", ".jp2");
+			tmpJp2 = File.createTempFile("derivative_image", ".jp2");
 			tmpJp2.deleteOnExit();
 		} catch (IOException e2) {
 			e2.printStackTrace();
@@ -52,21 +53,32 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		FileInputStream fileIn = null;
+		ByteArrayInputStream byteIn = null;
 		try {
-			fileIn = new FileInputStream(tmpJp2);
+			FileInputStream fileIn = new FileInputStream(tmpJp2);
+			byteIn = new ByteArrayInputStream(IOUtils.toByteArray(fileIn));
+			fileIn.close();
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
-		}
-
-		try {
-			tiffIn.close();
-			tmpTiff.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		return fileIn;
+		try {
+			tiffIn.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		if (!tmpTiff.delete() && tmpTiff.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpTiff);
+		}
+		
+		if (!tmpJp2.delete() && tmpJp2.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpJp2);
+		}
+
+		return byteIn;
 	}
 
 	public static InputStream tiffToJp2(InputStream tiffIn) {
@@ -78,7 +90,7 @@ public class ImageUtil {
 
 		File tmpTn = null;
 		try {
-			tmpTn = File.createTempFile("bhle", ".jpeg");
+			tmpTn = File.createTempFile("derivative_image", ".jpeg");
 			tmpTn.deleteOnExit();
 		} catch (IOException e2) {
 			e2.printStackTrace();
@@ -100,20 +112,32 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		FileInputStream fileIn = null;
+		ByteArrayInputStream byteIn = null;
 		try {
-			fileIn = new FileInputStream(tmpTn);
+			FileInputStream fileIn = new FileInputStream(tmpTn);
+			byteIn = new ByteArrayInputStream(IOUtils.toByteArray(fileIn));
+			fileIn.close();
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 
 		try {
 			jp2In.close();
-			tmpJp2.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return fileIn;
+		
+		if (!tmpJp2.delete() && tmpJp2.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpJp2);
+		}
+		
+		if (!tmpTn.delete() && tmpTn.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpTn);
+		}
+
+		return byteIn;
 	}
 
 	public static int[] tiffToJp2Size(InputStream tiffIn) {
@@ -153,7 +177,7 @@ public class ImageUtil {
 
 	private static File copyToTempFile(InputStream in) {
 		try {
-			File tmp = File.createTempFile("bhle", null);
+			File tmp = File.createTempFile("derivative_image", null);
 			FileOutputStream fileOut = new FileOutputStream(tmp);
 			IOUtils.copy(in, fileOut);
 			fileOut.close();

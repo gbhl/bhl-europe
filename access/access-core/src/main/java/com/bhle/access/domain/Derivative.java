@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
+
 import com.bhle.access.convert.DatastreamConverter;
 
 public class Derivative {
@@ -56,10 +58,6 @@ public class Derivative {
 
 	public void close() {
 		datastream.close();
-		try {
-			inputStream.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		IOUtils.closeQuietly(inputStream);
 	}
 }

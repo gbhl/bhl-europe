@@ -8,8 +8,14 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DatastreamWrapper {
+	
+	private static final Logger logger = LoggerFactory
+			.getLogger(DatastreamWrapper.class);
+	
 	private DigitalObjectWrapper digitalObject;
 	private String dsid;
 	private String mimeType;
@@ -24,7 +30,7 @@ public class DatastreamWrapper {
 	public InputStream getInputStream() {
 		if (tmp == null) {
 			try {
-				tmp = File.createTempFile("bhle", null);
+				tmp = File.createTempFile("datastream", null);
 				FileOutputStream out = new FileOutputStream(tmp);
 				IOUtils.copy(inputStream, out);
 				out.close();
@@ -72,7 +78,9 @@ public class DatastreamWrapper {
 	public void close() {
 		IOUtils.closeQuietly(inputStream);
 		if (tmp != null) {
-			tmp.delete();
+			if (!tmp.delete() && tmp.exists()) {
+				logger.warn("Cannot delete temp files {}" , tmp);
+			}
 		}
 	}
 

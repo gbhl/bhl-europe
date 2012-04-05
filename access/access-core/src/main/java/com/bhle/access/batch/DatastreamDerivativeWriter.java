@@ -25,9 +25,9 @@ public class DatastreamDerivativeWriter implements ItemWriter<Derivative[]> {
 				store.updateDerivative(derivative);
 			}
 			
-//			for (Derivative derivative : derivatives) {
-//				derivative.close();
-//			}
+			for (Derivative derivative : derivatives) {
+				derivative.close();
+			}
 		}
 
 	}
