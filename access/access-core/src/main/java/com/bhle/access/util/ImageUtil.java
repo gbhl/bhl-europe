@@ -2,6 +2,8 @@ package com.bhle.access.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,10 +30,19 @@ public class ImageUtil {
 
 	public static InputStream tiffToJp2(InputStream tiffIn, int maxHeight,
 			int maxWidth) {
-		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+		File tmp = null;
+		FileOutputStream fileOut = null;
+		try {
+			tmp = File.createTempFile("bhle", ".jp2");
+			tmp.deleteOnExit();
+			fileOut = new FileOutputStream(tmp);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 
 		Pipe pipeIn = new Pipe(tiffIn, null);
-		Pipe pipeOut = new Pipe(null, byteOut);
+		Pipe pipeOut = new Pipe(null, fileOut);
 
 		IMOperation op = new IMOperation();
 		op.addImage("-");
@@ -52,17 +63,21 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		ByteArrayInputStream byteIn = new ByteArrayInputStream(
-				byteOut.toByteArray());
+		FileInputStream fileIn = null;
+		try {
+			fileIn = new FileInputStream(tmp);
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
 
 		try {
 			tiffIn.close();
-			byteOut.close();
+			fileOut.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		return byteIn;
+		return fileIn;
 	}
 
 	public static InputStream tiffToJp2(InputStream tiffIn) {
@@ -70,10 +85,19 @@ public class ImageUtil {
 	}
 
 	public static InputStream jp2ToThumbnail(InputStream jp2In) {
-		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+		File tmp = null;
+		FileOutputStream fileOut = null;
+		try {
+			tmp = File.createTempFile("bhle", ".jpeg");
+			tmp.deleteOnExit();
+			fileOut = new FileOutputStream(tmp);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 
 		Pipe pipeIn = new Pipe(jp2In, null);
-		Pipe pipeOut = new Pipe(null, byteOut);
+		Pipe pipeOut = new Pipe(null, fileOut);
 
 		IMOperation op = new IMOperation();
 		op.thumbnail(150);
@@ -94,17 +118,21 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		ByteArrayInputStream byteIn = new ByteArrayInputStream(
-				byteOut.toByteArray());
+		FileInputStream fileIn = null;
+		try {
+			fileIn = new FileInputStream(tmp);
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		}
 
 		try {
 			jp2In.close();
-			byteOut.close();
+			fileOut.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		return byteIn;
+		return fileIn;
 	}
 
 	public static int[] tiffToJp2Size(InputStream tiffIn) {
