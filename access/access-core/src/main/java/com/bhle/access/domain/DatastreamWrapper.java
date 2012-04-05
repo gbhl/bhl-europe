@@ -15,12 +15,24 @@ public class DatastreamWrapper {
 	private String mimeType;
 
 	private File tmp;
+	private InputStream inputStream;
 
 	public DatastreamWrapper(String dsid) {
 		this.dsid = dsid;
 	}
 
 	public InputStream getInputStream() {
+		if (tmp == null) {
+			try {
+				tmp = File.createTempFile("bhle", null);
+				FileOutputStream out = new FileOutputStream(tmp);
+				IOUtils.copy(inputStream, out);
+				out.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
 		try {
 			return new FileInputStream(tmp);
 		} catch (FileNotFoundException e) {
@@ -30,15 +42,7 @@ public class DatastreamWrapper {
 	}
 
 	public void setInputStream(InputStream inputStream) {
-		try {
-			tmp = File.createTempFile("bhle", null);
-			FileOutputStream out = new FileOutputStream(tmp);
-			IOUtils.copy(inputStream, out);
-			out.close();
-			inputStream.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		this.inputStream = inputStream;
 	}
 
 	public DigitalObjectWrapper getDigitalObject() {
@@ -66,7 +70,10 @@ public class DatastreamWrapper {
 	}
 
 	public void close() {
-		tmp.delete();
+		IOUtils.closeQuietly(inputStream);
+		if (tmp != null) {
+			tmp.delete();
+		}
 	}
 
 }
