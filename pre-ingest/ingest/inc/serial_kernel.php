@@ -73,7 +73,7 @@ progressBar("Please wait operation in progress...", "processing.gif","margin-top
 
 // SERIAL LEVELS ANALYSIEREN
 
-$arrSerialLevels = array("Serial","Section","Volume","Article");
+$arrSerialLevels = array("serial","section","volume","article");
 $nSerialLevels   = count($arrSerialLevels);
 
 $stepErrors      = false;       // INDIKATOR: STEP DURCHFUEHRUNG VERURSACHTE KEINE PROBLEME 
