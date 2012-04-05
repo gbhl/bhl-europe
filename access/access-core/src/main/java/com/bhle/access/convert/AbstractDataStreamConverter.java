@@ -40,8 +40,8 @@ public abstract class AbstractDataStreamConverter implements
 	public Derivative derive(DatastreamWrapper datastreamWrapper) {
 		Derivative derivative = deriveInformation(datastreamWrapper);
 		if (derivative != null) {
-			derivative.setInputStream(doConvert(datastreamWrapper
-					.getInputStream()));
+			InputStream in = datastreamWrapper.getInputStream();
+			derivative.setInputStream(doConvert(in));
 			return derivative;
 		} else {
 			return null;
