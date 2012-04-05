@@ -39,16 +39,6 @@ public class DatastreamWrapper {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		try {
-			tmp = File.createTempFile("bhle", null);
-			tmp.deleteOnExit();
-			FileOutputStream out = new FileOutputStream(tmp);
-			IOUtils.copy(inputStream, out);
-			out.close();
-			inputStream.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public DigitalObjectWrapper getDigitalObject() {

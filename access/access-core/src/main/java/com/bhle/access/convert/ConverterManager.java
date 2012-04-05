@@ -42,7 +42,6 @@ public class ConverterManager {
 		List<Derivative> results = new ArrayList<Derivative>();
 		for (DatastreamWrapper datastreamWrapper : object.getDatastreams()) {
 			results.addAll(Arrays.asList(derive(datastreamWrapper)));
-			datastreamWrapper.close();
 		}
 		return results.toArray(new Derivative[] {});
 	}

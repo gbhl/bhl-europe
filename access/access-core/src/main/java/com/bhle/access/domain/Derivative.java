@@ -11,6 +11,7 @@ public class Derivative {
 	private String pid;
 	private String dsId;
 	private InputStream inputStream;
+	private DatastreamWrapper datastream;
 	private List<DatastreamConverter> convertors = new ArrayList<DatastreamConverter>();
 
 	public String getPid() {
@@ -40,18 +41,25 @@ public class Derivative {
 	public void addConvertor(DatastreamConverter convertor) {
 		this.convertors.add(convertor);
 	}
-	
+
 	public List<DatastreamConverter> getConvertors() {
 		return convertors;
 	}
-	
-	public void close(){
+
+	public DatastreamWrapper getDatastream() {
+		return datastream;
+	}
+
+	public void setDatastream(DatastreamWrapper datastream) {
+		this.datastream = datastream;
+	}
+
+	public void close() {
+		datastream.close();
 		try {
 			inputStream.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
-	
 }

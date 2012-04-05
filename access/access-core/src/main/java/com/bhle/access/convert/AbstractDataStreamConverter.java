@@ -31,6 +31,7 @@ public abstract class AbstractDataStreamConverter implements
 			derivative.addConvertor(this);
 			derivative.setDsId(getDerivativeId());
 			derivative.setPid(datastream.getDigitalObject().getPid());
+			derivative.setDatastream(datastream);
 			return derivative;
 		} else {
 			return null;
