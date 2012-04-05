@@ -39,6 +39,16 @@ public class DatastreamWrapper {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		try {
+			tmp = File.createTempFile("bhle", null);
+			tmp.deleteOnExit();
+			FileOutputStream out = new FileOutputStream(tmp);
+			IOUtils.copy(inputStream, out);
+			out.close();
+			inputStream.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public DigitalObjectWrapper getDigitalObject() {
@@ -64,7 +74,7 @@ public class DatastreamWrapper {
 	public void setMimeType(String mimeType) {
 		this.mimeType = mimeType;
 	}
-	
+
 	public void close() {
 		tmp.delete();
 	}
