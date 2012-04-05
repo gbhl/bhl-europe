@@ -1,5 +1,6 @@
 package com.bhle.access.util;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IM4JavaException;
@@ -52,21 +54,27 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		FileInputStream fileIn = null;
+		ByteArrayInputStream byteIn = null;
 		try {
-			fileIn = new FileInputStream(tmpJp2);
+			FileInputStream fileIn = new FileInputStream(tmpJp2);
+			byteIn = new ByteArrayInputStream(IOUtils.toByteArray(fileIn));
+			fileIn.close();
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
-		}
-
-		try {
-			tiffIn.close();
-			tmpTiff.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		return fileIn;
+		try {
+			tiffIn.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		tmpTiff.delete();
+		tmpJp2.delete();
+
+		return byteIn;
 	}
 
 	public static InputStream tiffToJp2(InputStream tiffIn) {
@@ -100,20 +108,27 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		FileInputStream fileIn = null;
+		ByteArrayInputStream byteIn = null;
 		try {
-			fileIn = new FileInputStream(tmpTn);
+			FileInputStream fileIn = new FileInputStream(tmpTn);
+			byteIn = new ByteArrayInputStream(IOUtils.toByteArray(fileIn));
+			fileIn.close();
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 
 		try {
 			jp2In.close();
-			tmpJp2.delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return fileIn;
+
+		tmpJp2.delete();
+		tmpTn.delete();
+
+		return byteIn;
 	}
 
 	public static int[] tiffToJp2Size(InputStream tiffIn) {
