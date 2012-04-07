@@ -20,7 +20,7 @@
 
 	<int-jms:message-driven-channel-adapter
 		channel="inboundFedoraMessageChannel" extract-payload="true"
-		destination="updateDestination" connection-factory="jmsFactory"
+		destination="updateDestination" connection-factory="jmsFactory" 
 		message-converter="fedoraJmsMessageConverter" />
 
 	<service-activator input-channel="inboundFedoraMessageChannel"
