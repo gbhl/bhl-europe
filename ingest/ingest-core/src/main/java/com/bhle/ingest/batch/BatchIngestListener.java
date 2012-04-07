@@ -33,6 +33,17 @@ public class BatchIngestListener {
 	@AfterJob
 	public void afterJob(JobExecution jobExecution) {
 		reportViaJms(jobExecution);
+		activateItem(jobExecution);
+	}
+
+	private void activateItem(JobExecution jobExecution) {
+		try {
+			// give enough time for Fedora to build index
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+
 		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
 			String guid = jobExecution.getJobInstance().getJobParameters()
 					.getString(Sip.JOB_PARAM_GUID_KEY);
