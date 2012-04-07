@@ -5,11 +5,13 @@ import java.util.List;
 import org.springframework.batch.core.StepExecution;
 import org.springframework.batch.core.annotation.BeforeStep;
 import org.springframework.batch.item.ItemWriter;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.bhle.access.convert.AfterBatchIngestConvertor;
 
 @Component
+@Scope("step")
 public class PackageDerivativeWriter implements
 		ItemWriter<AfterBatchIngestConvertor> {
 

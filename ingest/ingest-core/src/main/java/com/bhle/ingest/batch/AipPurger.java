@@ -6,11 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.yourmediashelf.fedora.client.FedoraClient;
 
 @Component
+@Scope("step")
 public class AipPurger implements ItemWriter<String> {
 
 	private static final Logger logger = LoggerFactory

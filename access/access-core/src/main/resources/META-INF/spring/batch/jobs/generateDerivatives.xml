@@ -14,13 +14,13 @@
 	<batch:job id="generateDerivatives">
 		<batch:description>Generate all object-based derivatives from Fedora Repository</batch:description>
 		<batch:step id="generateObjectBasedDerivatives" next="generatePackageBasedDerivatives">
-			<batch:tasklet>
+			<batch:tasklet allow-start-if-complete="true">
 				<batch:chunk reader="fedoraObjectReader" processor="singleObjectConversionProcessor"
 					writer="datastreamDerivativeWriter" commit-interval="1" />
 			</batch:tasklet>
 		</batch:step>
 		<batch:step id="generatePackageBasedDerivatives">
-			<batch:tasklet>
+			<batch:tasklet allow-start-if-complete="true">
 				<batch:chunk reader="afterBatchIngestConverterReader"
 					writer="packageDerivativeWriter" commit-interval="1" />
 			</batch:tasklet>

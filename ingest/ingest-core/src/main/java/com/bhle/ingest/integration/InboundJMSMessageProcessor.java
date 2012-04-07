@@ -1,7 +1,6 @@
 package com.bhle.ingest.integration;
 
 import java.net.URI;
-import java.util.Map;
 
 import net.sf.json.JSONObject;
 

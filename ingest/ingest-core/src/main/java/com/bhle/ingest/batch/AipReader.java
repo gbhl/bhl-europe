@@ -1,7 +1,6 @@
 package com.bhle.ingest.batch;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.batch.core.StepExecution;
@@ -11,6 +10,7 @@ import org.springframework.batch.item.NonTransientResourceException;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.bhle.ingest.util.CsvUtil;
@@ -19,6 +19,7 @@ import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.response.RiSearchResponse;
 
 @Component
+@Scope("step")
 public class AipReader implements ItemReader<String> {
 
 	private String[] pids;
@@ -40,6 +41,7 @@ public class AipReader implements ItemReader<String> {
 	@Override
 	public String read() throws Exception, UnexpectedInputException,
 			ParseException, NonTransientResourceException {
+
 		if (pids == null) {
 			String guid = stepExecution.getJobParameters().getString(GUID);
 			pids = getAllMemberOfGuid(guid);

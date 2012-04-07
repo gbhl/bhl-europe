@@ -7,6 +7,7 @@ import org.springframework.batch.core.annotation.BeforeStep;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.bhle.access.domain.DigitalObjectFactory;
@@ -14,6 +15,7 @@ import com.bhle.access.domain.DigitalObjectWrapper;
 import com.bhle.access.util.FedoraUtil;
 
 @Component
+@Scope("step")
 public class FedoraObjectReader implements ItemReader<DigitalObjectWrapper> {
 
 	private static final Logger logger = LoggerFactory
@@ -34,6 +36,7 @@ public class FedoraObjectReader implements ItemReader<DigitalObjectWrapper> {
 
 	public DigitalObjectWrapper read() throws Exception,
 			UnexpectedInputException, ParseException {
+		
 		if (pids == null) {
 			String pid = stepExecution.getJobParameters().getString(
 					JOB_PARAM_PID_KEY);
