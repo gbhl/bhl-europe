@@ -9,10 +9,23 @@
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.bhle.ingest.batch" />
+	<beans:bean id="sipReader" class="com.bhle.ingest.batch.SipReader"
+		scope="step">
+		<beans:property name="guid" value="#{jobParameters[GUID]}" />
+		<beans:property name="uri" value="#{jobParameters[URI]}" />
+	</beans:bean>
+
+	<beans:bean id="sipWriter" class="com.bhle.ingest.batch.SipWriter">
+		<beans:property name="ingestor" ref="fedoraGateway" />
+	</beans:bean>
+
+	<beans:bean id="batchIngestListener" class="com.bhle.ingest.batch.BatchIngestListener">
+		<beans:property name="jmsProducer" ref="ingestJmsProducer" />
+		<beans:property name="fedoraService" ref="fedoraServiceImpl" />
+	</beans:bean>
 
 	<job id="batchIngestJob">
-	<description>Batch Ingest</description>
+		<description>Batch Ingest</description>
 		<step id="main">
 			<tasklet>
 				<chunk reader="sipReader" writer="sipWriter" commit-interval="${batch.commit.interval}" />

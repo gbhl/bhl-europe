@@ -15,9 +15,9 @@ public class PageIndexParserTest {
 	@Test
 	public void testSingleIndexParser(){
 		String range = "2";
-		String[] pageUris = new String[]{"info:fedora/bhle:10706-a00000000000132805961115-00001", "info:fedora/bhle:10706-a00000000000132805961115-00002"};
+		String[] pageUris = new String[]{"info:fedora/bhle:10706-a000test-00001", "info:fedora/bhle:10706-a000test-00002"};
 		String[] result = PageIndexParser.parse(range, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00002", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[0]);
 
 		range = "3";
 		result = PageIndexParser.parse(range, pageUris);
@@ -27,23 +27,23 @@ public class PageIndexParserTest {
 	@Test
 	public void testRangeIndexParser(){
 		String range = "1-2";
-		String[] pageUris = new String[]{"info:fedora/bhle:10706-a00000000000132805961115-00001", "info:fedora/bhle:10706-a00000000000132805961115-00002"};
+		String[] pageUris = new String[]{"info:fedora/bhle:10706-a000test-00001", "info:fedora/bhle:10706-a000test-00002"};
 		String[] result = PageIndexParser.parse(range, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00001", result[0]);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00002", result[1]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[1]);
 		
 		range = "0-3";
 		result = PageIndexParser.parse(range, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00001", result[0]);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00002", result[1]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[1]);
 		
 		range = "2-3";
 		result = PageIndexParser.parse(range, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00002", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[0]);
 		
 		range = "0-1";
 		result = PageIndexParser.parse(range, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00001", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
 	}
 	
 	

@@ -6,7 +6,7 @@
 
 	<bean id="downloadExtendedConverterManager" parent="converterManager">
 		<property name="converters">
-			<list merge="true">
+			<list>
 				<ref bean="completePdfConverter" />
 				<ref bean="completeJpegConverter" />
 				<ref bean="completeOcrConverter" />
@@ -17,10 +17,11 @@
 	<bean id="completePdfConverter" class="com.bhle.access.download.convert.CompletePdfConverter" />
 	<bean id="completeJpegConverter" class="com.bhle.access.download.convert.CompleteJpegConverter" />
 	<bean id="completeOcrConverter" class="com.bhle.access.download.convert.CompleteOcrConverter" />
-	
-	<bean id="downloadExtendedAfterBatchIngestConverterManager" parent="afterBatchIngestConverterManager">
+
+	<bean id="downloadExtendedAfterBatchIngestConverterManager"
+		parent="afterBatchIngestConverterManager">
 		<property name="converters">
-			<list merge="true">
+			<list>
 				<ref bean="completePdfConverter" />
 				<ref bean="completeJpegConverter" />
 				<ref bean="completeOcrConverter" />

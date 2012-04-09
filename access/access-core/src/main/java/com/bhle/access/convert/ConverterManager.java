@@ -21,7 +21,11 @@ public class ConverterManager {
 
 	@Autowired
 	public void setConverters(List<DatastreamConverter> convertors) {
-		ConverterManager.converters = convertors;
+		if (ConverterManager.converters == null) {
+			ConverterManager.converters = convertors;
+		} else {
+			ConverterManager.converters.addAll(convertors);
+		}
 	}
 
 	public static Derivative[] derive(DatastreamWrapper datastream) {

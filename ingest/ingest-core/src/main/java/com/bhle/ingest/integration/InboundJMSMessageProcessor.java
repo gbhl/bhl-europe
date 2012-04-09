@@ -39,6 +39,10 @@ public class InboundJMSMessageProcessor {
 		String guid = json.getString(MSG_GUID_NAME);
 		String uri = json.getString(MSG_URI_NAME);
 
+		if (!guid.startsWith("bhle:")) {
+			guid = "bhle:" + guid;
+		}
+
 		if (uri == null || uri.equals("")) {
 			throw new IllegalArgumentException("Message must contain URI");
 		}

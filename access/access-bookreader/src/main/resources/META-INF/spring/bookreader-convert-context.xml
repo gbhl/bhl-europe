@@ -12,7 +12,7 @@
 
 	<bean id="bookreaderExtendedConverterManager" parent="converterManager">
 		<property name="converters">
-			<list merge="true">
+			<list>
 				<ref bean="bookInfoConverter" />
 				<ref bean="thumbnailConverter" />
 			</list>
@@ -24,7 +24,7 @@
 	
 	<bean id="bookreaderExtendedAfterBatchIngestConverterManager" parent="afterBatchIngestConverterManager">
 		<property name="converters">
-			<list merge="true">
+			<list>
 				<ref bean="bookInfoConverter" />
 				<ref bean="thumbnailConverter" />
 			</list>

@@ -73,7 +73,5 @@ public class BatchIngestTest implements ResourceLoaderAware {
 		
 		statusCode = service.purge("bhle:10706-a000test-00002");
 		Assert.assertEquals(200, statusCode);
-		
-		Thread.sleep(5000);
 	}
 }

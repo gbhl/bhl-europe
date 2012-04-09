@@ -56,12 +56,12 @@ public class AkubraTest {
 		FileMapper fileMapper = new SubFolderFileMapper();
 
 		String internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:10706-a00000000000132805961115-00001/JPG"));
-		Assert.assertEquals("jpg/a00000000000132805961115_00001.*", internalFile);
+				.create("info:fedora/bhle:10706-a000test-00001/JPG"));
+		Assert.assertEquals("jpg/a000test_00001.*", internalFile);
 
 		internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:10706-a00000000000132805961115-00001"));
-		Assert.assertEquals("*/a00000000000132805961115_00001.*", internalFile);
+				.create("info:fedora/bhle:10706-a000test-00001"));
+		Assert.assertEquals("*/a000test_00001.*", internalFile);
 	}
 
 	@Test
@@ -69,12 +69,12 @@ public class AkubraTest {
 		FileMapper fileMapper = new SubFolderFileMapper();
 
 		String internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:10706-a00000000000132805961115/JP2"));
-		Assert.assertEquals("a00000000000132805961115_jp2.*", internalFile);
+				.create("info:fedora/bhle:10706-a000test/JP2"));
+		Assert.assertEquals("a000test_jp2.*", internalFile);
 
 		internalFile = fileMapper.getInternalFile(URI
-				.create("info:fedora/bhle:10706-a00000000000132805961115"));
-		Assert.assertEquals("a00000000000132805961115_*.*", internalFile);
+				.create("info:fedora/bhle:10706-a000test"));
+		Assert.assertEquals("a000test_*.*", internalFile);
 	}
 
 	@Test
@@ -82,11 +82,11 @@ public class AkubraTest {
 		FileMapper fileMapper = new SubFolderFileMapper();
 
 		String externalFile = fileMapper.getExternalFile(URI
-				.create("file:a0000000/00001328/05961115/a00000000000132805961115/a00000000000132805961115_dc.xml"));
+				.create("file:a0/00/te/st/a000test/a000test_dc.xml"));
 		Assert.assertEquals("DC", externalFile);
 
 		externalFile = fileMapper.getExternalFile(URI
-				.create("file:a0000000/00001328/05961115/a00000000000132805961115/dc/a00000000000132805961115_00001.xml"));
+				.create("file:a0/00/te/st/a000test/dc/a000test_00001.xml"));
 		Assert.assertEquals("DC", externalFile);
 	}
 
@@ -96,8 +96,8 @@ public class AkubraTest {
 		BlobStoreConnection connnection = blobStore.openConnection(null, null);
 		Blob blob = null;
 		try {
-			blob = connnection.getBlob(new URI("info:fedora/bhle:10706-a00000000000132805961115/OLEF"),
-					null);
+			blob = connnection.getBlob(new URI(
+					"info:fedora/bhle:10706-a000test/OLEF"), null);
 		} catch (UnsupportedIdException e) {
 			e.printStackTrace();
 		} catch (UnsupportedOperationException e) {
@@ -123,8 +123,8 @@ public class AkubraTest {
 		}
 
 		try {
-			blob = connnection.getBlob(new URI("info:fedora/bhle:10706-a00000000000132805961115/OLEF"),
-					null);
+			blob = connnection.getBlob(new URI(
+					"info:fedora/bhle:10706-a000test/OLEF"), null);
 			Assert.assertTrue(blob.exists());
 			blob.delete();
 			Assert.assertFalse(blob.exists());
@@ -141,7 +141,7 @@ public class AkubraTest {
 		BlobStoreConnection connnection = blobStore.openConnection(null, null);
 		try {
 			Blob blob = connnection.getBlob(new URI(
-					"info:fedora/bhle:10706-a00000000000132805961115/JPG"), null);
+					"info:fedora/bhle:10706-a000test/JPG"), null);
 			blob.openOutputStream(-1, true);
 		} catch (URISyntaxException e) {
 			e.printStackTrace();

@@ -6,21 +6,19 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemWriter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import com.bhle.ingest.FedoraService;
 
-@Component
-@Scope("step")
 public class SipWriter implements ItemWriter<File> {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(SipWriter.class);
 	
-	@Autowired
 	private FedoraService ingestor;
+	
+	public void setIngestor(FedoraService ingestor) {
+		this.ingestor = ingestor;
+	}
 	
 	
 	@Override

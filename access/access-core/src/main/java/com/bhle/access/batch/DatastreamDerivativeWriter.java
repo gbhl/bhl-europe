@@ -4,19 +4,14 @@ import java.util.List;
 
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import com.bhle.access.domain.Derivative;
 import com.bhle.access.storage.StorageService;
 
-@Component
-@Scope("step")
 public class DatastreamDerivativeWriter implements ItemWriter<Derivative[]> {
 
 	private static StorageService store;
 	
-	@Autowired
 	public void setStore(StorageService store) {
 		DatastreamDerivativeWriter.store = store;
 	}

@@ -6,7 +6,11 @@ public class AfterBatchIngestConverterManager {
 	private static List<AfterBatchIngestConvertor> converters;
 
 	public void setConverters(List<AfterBatchIngestConvertor> convertors) {
-		AfterBatchIngestConverterManager.converters = convertors;
+		if (AfterBatchIngestConverterManager.converters == null) {
+			AfterBatchIngestConverterManager.converters = convertors;
+		} else {
+			AfterBatchIngestConverterManager.converters.addAll(convertors);
+		}
 	}
 
 	public static List<AfterBatchIngestConvertor> getConverters() {
