@@ -41,14 +41,6 @@
 			</plugin>
 		</plugins>
 	</build>
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</reporting>
 	<repositories>
 		<repository>
 			<id>duraspace-thirdparty</id>
@@ -73,7 +65,7 @@
 				</property>
 			</activation>
 			<build>
-				<finalName>${artifactId}-test-${version}</finalName>
+				<finalName>${project.artifactId}-test-${project.version}</finalName>
 				<plugins>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
@@ -108,7 +100,7 @@
 				</property>
 			</activation>
 			<build>
-				<finalName>${artifactId}-prod-${version}</finalName>
+				<finalName>${project.artifactId}-prod-${project.version}</finalName>
 				<plugins>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
