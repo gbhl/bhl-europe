@@ -88,7 +88,7 @@
 								<configuration>
 									<files>
 										<file>${project.parent.basedir}/environment-test.properties</file>
-										<file>${project.basedir}/environment-test.properties</file>
+										<file>environment-test.properties</file>
 									</files>
 									<quiet>true</quiet>
 								</configuration>
@@ -123,7 +123,7 @@
 								<configuration>
 									<files>
 										<file>${project.parent.basedir}/environment-prod.properties</file>
-										<file>${project.basedir}/environment-prod.properties</file>
+										<file>environment-prod.properties</file>
 									</files>
 									<quiet>true</quiet>
 								</configuration>
