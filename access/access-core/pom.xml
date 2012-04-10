@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bhle</groupId>
 	<artifactId>access-core</artifactId>
-	<version>${project.parent.version}</version>
+	<version>1.3</version>
 	<name>access-core</name>
 	<url>http://maven.apache.org</url>
 	<properties>

@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bhle</groupId>
 	<artifactId>ingest-web</artifactId>
-	<version>${project.parent.version}</version>
+	<version>1.5</version>
 	<packaging>war</packaging>
 	<name>ingest-web</name>
 	<url>http://maven.apache.org</url>
