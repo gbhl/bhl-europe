@@ -87,8 +87,8 @@
 								</goals>
 								<configuration>
 									<files>
-										<file>${project.parent.basedir}/pom-test.properties</file>
-										<file>${project.basedir}/pom-test.properties</file>
+										<file>${project.parent.basedir}/environment-test.properties</file>
+										<file>${project.basedir}/environment-test.properties</file>
 									</files>
 									<quiet>true</quiet>
 								</configuration>
@@ -122,8 +122,10 @@
 								</goals>
 								<configuration>
 									<files>
-										<file>pom-prod.properties</file>
+										<file>${project.parent.basedir}/environment-prod.properties</file>
+										<file>${project.basedir}/environment-prod.properties</file>
 									</files>
+									<quiet>true</quiet>
 								</configuration>
 							</execution>
 						</executions>
