@@ -29,10 +29,11 @@
           <div id="header-menu">
 
             <div id="header-menu-inside">
-            <?php 
-          	$main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); 
-          	print drupal_render($main_menu_tree);
-	          ?>
+	          
+	          <?php if ($page['header_menu']): ?>
+              <?php print render($page['header_menu']); ?>
+            <?php endif; ?>
+	          
             </div><!-- EOF: #header-menu-inside -->
 
         </div><!-- EOF: #header-menu -->

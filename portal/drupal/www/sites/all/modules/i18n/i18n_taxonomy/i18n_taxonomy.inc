@@ -9,7 +9,7 @@
  */
 class i18n_taxonomy_translation_set extends i18n_translation_set {
   /**
-   * Load all path translations
+   * Load all term translations
    */
   public function load_translations() {
     return i18n_translation_set_index(taxonomy_term_load_multiple(array(), array('i18n_tsid' => $this->tsid)));
@@ -20,7 +20,7 @@ class i18n_taxonomy_translation_set extends i18n_translation_set {
   function get_path_placeholders($op = 'list') {
     $values = parent::get_path_placeholders($op);
     if (!empty($this->bundle)) {
-      $values['%taxonomy_vocabulary_machine_name'] = $this->bundle; 
+      $values['%taxonomy_vocabulary_machine_name'] = $this->bundle;
     }
     return $values;
   }

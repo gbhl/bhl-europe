@@ -229,8 +229,7 @@ class i18n_object_wrapper {
    * Get object translation set info
    */
   public function get_translation_info($property, $default = NULL) {
-    $info = $this->get_info('translation set');
-    return $info && isset($info[$property]) ? $info[$property] : $default;
+    return function_exists('i18n_translation_set_info') ? i18n_translation_set_info($this->type, $property, $default) : $default;
   }
   /**
    * Get object string translation info

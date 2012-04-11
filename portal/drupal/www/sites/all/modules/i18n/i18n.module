@@ -375,6 +375,17 @@ function i18n_object_field($object, $field, $default = NULL) {
     }
     return $values;
   }
+  elseif (strpos($field, '.')) {
+    // Access nested properties with the form 'name1.name2..', will map to $object->name1->name2...
+    $names = explode('.', $field);
+    $current = array_shift($names);
+    if ($nested = i18n_object_field($object, $current)) {
+      return i18n_object_field($nested, implode('.', $names), $default);
+    }
+    else {
+      return $default;
+    }
+  }
   elseif (is_object($object)) {
     return isset($object->$field) ? $object->$field : $default;
   }
@@ -407,7 +418,7 @@ function i18n_object_translate_access($type, $object) {
 
 /**
  * Get translations for path.
- * 
+ *
  * @param $path
  *   Path to get translations for or '<front>' for front page.
  */

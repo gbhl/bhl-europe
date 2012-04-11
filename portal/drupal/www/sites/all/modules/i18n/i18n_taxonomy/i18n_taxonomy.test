@@ -31,6 +31,7 @@ class i18nTaxonomyTestCase extends Drupali18nTestCase {
       filter_permission_name($filtered_html_format),
       filter_permission_name($full_html_format),
     ));
+    $this->translator = $this->drupalCreateUser(array('translate interface', 'translate user-defined strings'));
   }
 
 function testTaxonomyTermLocalize() {

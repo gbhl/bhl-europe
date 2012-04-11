@@ -315,7 +315,7 @@ function _i18n_node_references($string, $match = 'contains', $params = array(), 
       break;
 
     case 'starts_with':
-      $query->condition('n.title', $string . '%', LIKE);
+      $query->condition('n.title', $string . '%', 'LIKE');
       break;
 
     case 'contains':

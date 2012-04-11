@@ -4,16 +4,24 @@
  * Internationalization (i18n) package. Multilingual variables API.
  */
 
-// Which cache to use for multilingual variables
-define('I18N_VARIABLE_CACHE', 'cache_bootstrap');
+/**
+ * Implements hook_language_init()
+ */
+function i18n_variable_language_init() {
+  if (drupal_multilingual()) {
+    i18n_variable_initialize();
+  }
+}
 
 /**
- * Implements hook_boot()
- * 
- * Initialize variables, that will be used to decide on site_frontpage
+ * Implements hook_variable_realm_controller().
  */
-function i18n_variable_boot() {
-  
+function i18n_variable_variable_realm_controller() {
+  $realm['language'] = array(
+    'weight' => 100,
+    'class' => 'VariableStoreRealmController',
+  );
+  return $realm;
 }
 
 /**
@@ -33,15 +41,6 @@ function i18n_variable_menu() {
 }
 
 /**
- * Implements hook_language_init()
- */
-function i18n_variable_language_init() {
-  if (drupal_multilingual()) {
-    i18n_variable_initialize();
-  }
-}
-
-/**
  * Initialization of multilingual variables.
  *
  * @param $langcode
@@ -51,7 +50,8 @@ function i18n_variable_initialize($language = NULL) {
   $language = $language ? $language : i18n_variable_language();
   $GLOBALS['language_variable'] = $language;
   $variables = i18n_variable_load($language->language);
-  variable_realm_switch('language', $language->language, $variables);
+  variable_realm_add('language', $language->language, $variables, 10);
+  variable_realm_switch('language', $language->language);
 }
 
 /**
@@ -103,7 +103,7 @@ function i18n_variable_form_alter(&$form, &$form_state, $form_id) {
       $form['#i18n_variables'] = $i18n_variables;
       $form += i18n_variable_form_selector();
     }
-  }  
+  }
 }
 
 /**
@@ -124,7 +124,7 @@ function i18n_variable_form_selector() {
   }
   $form['i18n_variable']['i18n_language_select'] = array(
     '#title' => t('Select language'),
-    '#type' => 'item',  
+    '#type' => 'item',
     '#markup' => implode(' | ', $items),
   );
   return $form;
@@ -144,7 +144,7 @@ function i18n_variable_list($name = NULL) {
 
 /**
 * Load language variables into array.
-* 
+*
 * Pull variables from the store but filter out the ones that are not multilingual.
 */
 function i18n_variable_load($langcode) {
@@ -210,7 +210,7 @@ function i18n_variable_form_submit($form, &$form_state) {
 
 /**
  * Save multilingual variables and remove them from form.
- * 
+ *
  * Note the theme variable has already been set into 'i18n_variable_theme_settings'
  */
 function i18n_variable_theme_form_submit($form, &$form_state) {
@@ -239,6 +239,7 @@ function i18n_variable_theme_form_submit($form, &$form_state) {
  */
 function i18n_variable_set($name, $value, $langcode) {
   variable_store_set('language', $langcode, $name, $value);
+  variable_realm_set('language', $langcode, $name, $value);
 }
 
 /**
@@ -258,4 +259,5 @@ function i18n_variable_get($name, $langcode, $default = NULL) {
  */
 function i18n_variable_del($name, $langcode) {
   variable_store_del('language', $langcode, $name);
+  variable_realm_del('language', $langcode, $name);
 }

@@ -258,7 +258,7 @@ margin-bottom: 0px;
   overflow:hidden;
 }
 .page-search-bhle form.search-form .form-type-textfield.form-item input {
-  display:block; width:408px; height:13px; padding:5px; margin:0px;
+  display:block; width:408px; height:23px; padding:0 5px; margin:0px;
   color:#004226; font-size:125%; line-height:1;   
   background:transparent none; border:none;
   overflow:hidden;
