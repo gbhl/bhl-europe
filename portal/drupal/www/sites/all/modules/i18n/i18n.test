@@ -10,9 +10,8 @@ class Drupali18nTestCase extends DrupalWebTestCase {
   protected $secondary_language;
 
   function setUpLanguages($admin_permissions = array()) {
-    // Setup users.
-    $this->admin_user = $this->drupalCreateUser(array_merge(array('bypass node access', 'administer nodes', 'administer languages', 'administer content types', 'administer blocks', 'access administration pages'), $admin_permissions));
-    $this->translator = $this->drupalCreateUser(array('translate interface'));
+    // Setup admin user.
+    $this->admin_user = $this->drupalCreateUser(array_merge(array('bypass node access', 'administer nodes', 'administer languages', 'administer content types', 'administer blocks', 'access administration pages', 'translate interface'), $admin_permissions));
 
     $this->drupalLogin($this->admin_user);
 
@@ -43,11 +42,12 @@ class Drupali18nTestCase extends DrupalWebTestCase {
     );
 
     $type = node_type_get_type($settings['type']);
-
-    $this->translator = $this->drupalCreateUser(array(
+    // Create content editor with translation permissions.
+    $this->content_editor = $this->drupalCreateUser(array(
       'create ' . $type->type . ' content',
       'edit own ' . $type->type . ' content',
       'translate content',
+      'translate interface',
     ));
 
     $this->drupalLogin($this->admin_user);

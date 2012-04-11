@@ -183,9 +183,10 @@ public class FedoraUtil {
 
 	public static void ingestFOXML(InputStream in) {
 		try {
-			File tmp = File.createTempFile("FEDORATMP", null);
+			File tmp = File.createTempFile("ingest", null);
 			IOUtils.copy(in, FileUtils.openOutputStream(tmp));
 			FedoraClient.ingest().content(tmp).execute(client);
+			tmp.delete();
 		} catch (FedoraClientException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

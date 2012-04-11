@@ -6,13 +6,12 @@
  */
 
 // Load locale library
-include_once './includes/locale.inc';
+include_once DRUPAL_ROOT . '/includes/locale.inc';
 
 /**
  * Form callback. Refresh textgroups.
  */
 function i18n_string_admin_refresh_form() {
-  module_load_include('inc', 'i18n_string');
   // Select textgroup/s. Just the ones that have a 'refresh callback'
   $groups = array();
   foreach (i18n_string_group_info() as $name => $info) {
@@ -63,7 +62,7 @@ function i18n_string_admin_refresh_form_submit($form, &$form_state) {
  */
 function i18n_string_refresh_group($group, $delete = FALSE) {
   $result = FALSE;
-  
+
   // Compile all strings for this group
   if ($strings = i18n_string_group_string_list($group)) {
     i18n_string_refresh_string_list($strings);
@@ -179,7 +178,7 @@ function i18n_string_refresh_enabled_modules($modules) {
   foreach ($modules as $module) {
     if ($strings = i18n_string_module_string_list($module)) {
       $count += i18n_string_refresh_string_list($strings);
-     
+
     }
     // Call module refresh if exists
     module_invoke($module, 'i18n_string_refresh', 'all');
@@ -287,7 +286,7 @@ function i18n_string_module_string_list($module) {
   if ($groups = module_invoke($module, 'i18n_string_info')) {
     foreach ($groups as $group) {
       $strings = i18n_string_array_merge($strings, i18n_string_group_string_list($group));
-    }   
+    }
   }
   else {
     $groups = array();
@@ -311,137 +310,4 @@ function i18n_string_module_string_list($module) {
     }
   }
   return $strings;
-}
-
-/**
- * User interface for string editing.
- */
-function i18n_string_locale_translate_edit_form($form, &$form_state, $lid) {
-  // Fetch source string, if possible.
-  $source = db_query('SELECT source, context, textgroup, location FROM {locales_source} WHERE lid = :lid', array(':lid' => $lid))->fetchObject();
-  if (!$source) {
-    drupal_set_message(t('String not found.'), 'error');
-    drupal_goto('admin/config/regional/translate/translate');
-  }
-
-  // Add original text to the top and some values for form altering.
-  $form['original'] = array(
-    '#type'  => 'item',
-    '#title' => t('Original text'),
-    '#markup' => check_plain(wordwrap($source->source, 0)),
-  );
-  if (!empty($source->context)) {
-    $form['context'] = array(
-      '#type' => 'item',
-      '#title' => t('Context'),
-      '#markup' => check_plain($source->context),
-    );
-  }
-  $form['lid'] = array(
-    '#type'  => 'value',
-    '#value' => $lid
-  );
-  $form['textgroup'] = array(
-    '#type'  => 'value',
-    '#value' => $source->textgroup,
-  );
-  $form['location'] = array(
-    '#type'  => 'value',
-    '#value' => $source->location
-  );
-
-  // Include default form controls with empty values for all languages.
-  // This ensures that the languages are always in the same order in forms.
-  $languages = language_list();
-
-  // We don't need the default language value, that value is in $source.
-  $omit = $source->textgroup == 'default' ? 'en' : i18n_string_source_language();
-  unset($languages[($omit)]);
-  $form['translations'] = array('#tree' => TRUE);
-  // Approximate the number of rows to use in the default textarea.
-  $rows = min(ceil(str_word_count($source->source) / 12), 10);
-  foreach ($languages as $langcode => $language) {
-    $form['translations'][$langcode] = array(
-      '#type' => 'textarea',
-      '#title' => t($language->name),
-      '#rows' => $rows,
-      '#default_value' => '',
-    );
-  }
-
-  // Fetch translations and fill in default values in the form.
-  $result = db_query("SELECT DISTINCT translation, language FROM {locales_target} WHERE lid = :lid AND language <> :omit", array(':lid' => $lid, ':omit' => $omit));
-  foreach ($result as $translation) {
-    $form['translations'][$translation->language]['#default_value'] = $translation->translation;
-  }
-
-  $form['actions'] = array('#type' => 'actions');
-  $form['actions']['submit'] = array('#type' => 'submit', '#value' => t('Save translations'));
-  
-  // Restrict filter permissions and handle validation and submission for i18n strings
-  $context = db_select('i18n_string', 'i18ns')
-    ->fields('i18ns')
-    ->condition('lid', $form['lid']['#value'])
-    ->execute()
-    ->fetchObject();
-  if ($source->textgroup != 'default' && $context) {
-    $form['i18n_string_context'] = array('#type' => 'value', '#value' => $context);
-    if ($context->format) {
-      $formats = filter_formats();
-      $format = $formats[$context->format];
-      $disabled = !filter_access($format);
-      if ($disabled) {
-        drupal_set_message(t('This string uses the %name text format. You are not allowed to translate or edit texts with this format.', array('%name' => $format->name)), 'warning');
-      }
-      foreach (element_children($form['translations']) as $langcode) {
-        $form['translations'][$langcode]['#disabled'] = $disabled;
-      }
-      $form['translations']['format_help'] = array(
-        '#type' => 'markup',
-        '#markup' => '<h5>' . t('Text format: @name', array('@name' => $format->name)) . '</h5>' . theme('filter_tips', array('tips' => _filter_tips($context->format, FALSE))),
-      );
-      $form['submit']['#disabled'] = $disabled;
-    }
-  }
-  return $form;
-}
-
-/**
- * Process string editing form validations.
- *
- * If it is an allowed format, skip default validation, the text will be filtered later
- */
-function i18n_string_locale_translate_edit_form_validate($form, &$form_state) {
-  if (empty($form_state['values']['i18n_string_context']) || empty($form_state['values']['i18n_string_context']->format)) {
-    // If not text format use regular validation for all strings
-    $copy_state = $form_state;
-    $copy_state['values']['textgroup'] = 'default';
-    module_load_include('admin.inc', 'locale');
-    locale_translate_edit_form_validate($form, $copy_state);
-  }
-  elseif (!i18n_string_translate_access($form_state['values']['i18n_string_context'])) {
-    form_set_error('translations', t('You are not allowed to translate or edit texts with this text format.'));
-  }
-}
-
-/**
- * Process string editing form submissions.
- *
- * Mark translations as current.
- */
-function i18n_string_locale_translate_edit_form_submit($form, &$form_state) {
-  // Invoke locale submission.
-  module_load_include('admin.inc', 'locale');
-  locale_translate_edit_form_submit($form, $form_state);
-  $lid = $form_state['values']['lid'];
-  foreach ($form_state['values']['translations'] as $key => $value) {
-    if (!empty($value)) {
-      // An update has been made, so we assume the translation is now current.
-      db_update('locales_target')
-        ->fields(array('i18n_status' => I18N_STRING_STATUS_CURRENT))
-        ->condition('lid', $lid)
-        ->condition('language', $key)
-        ->execute();
-    }
-  }
 }

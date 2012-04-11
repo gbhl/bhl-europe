@@ -1,7 +1,6 @@
 package com.bhle.ingest.integration;
 
 import java.net.URI;
-import java.util.Map;
 
 import net.sf.json.JSONObject;
 
@@ -39,6 +38,10 @@ public class InboundJMSMessageProcessor {
 		JSONObject json = JSONObject.fromObject(msg);
 		String guid = json.getString(MSG_GUID_NAME);
 		String uri = json.getString(MSG_URI_NAME);
+
+		if (!guid.startsWith("bhle:")) {
+			guid = "bhle:" + guid;
+		}
 
 		if (uri == null || uri.equals("")) {
 			throw new IllegalArgumentException("Message must contain URI");

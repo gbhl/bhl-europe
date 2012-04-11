@@ -6,26 +6,19 @@ import java.net.MalformedURLException;
 import java.net.URI;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ContextConfiguration;
 
 import com.bhle.access.BaseTest;
-import com.bhle.access.bookreader.search.SearchService;
 import com.bhle.access.util.FedoraURI;
 import com.bhle.access.util.StaticURI;
 
 @ContextConfiguration
 public class BookReaderTest extends BaseTest {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(BookReaderTest.class);
-	
 	@Test
 	public void testPostIngestDerivatives() throws InterruptedException {
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		
 		try {
 			testBookInfoGeneration();
@@ -55,13 +48,5 @@ public class BookReaderTest extends BaseTest {
 		InputStream in = uri.toURL().openStream();
 		Assert.assertTrue(in.available() > 0);
 		in.close();
-	}
-
-	@Ignore
-	@Test
-	public void testSearch() {
-		String result = SearchService.query("a00000000000132805961115",
-				"Standley");
-		System.out.println(result);
 	}
 }

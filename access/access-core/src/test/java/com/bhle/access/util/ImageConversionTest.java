@@ -4,15 +4,19 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 
 import junit.framework.Assert;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IM4JavaException;
 import org.im4java.core.IMOperation;
 import org.im4java.core.Info;
 import org.im4java.process.Pipe;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.ResourceLoaderAware;
@@ -20,6 +24,8 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import ch.qos.logback.core.util.FileUtil;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
@@ -36,26 +42,22 @@ public class ImageConversionTest implements ResourceLoaderAware {
 		Resource tiff = resourceLoader
 				.getResource("classpath:com/bhle/access/sample/sample.TIF");
 
-		String currentPath = tiff.getFile().getParent();
-		String tiffPath = tiff.getFile().getAbsolutePath();
-		String jp2Path = currentPath + File.separator + "sample.jp2";
+		InputStream jp2In = ImageUtil.tiffToJp2(tiff.getInputStream());
 
-		IMOperation op = new IMOperation();
-		op.addImage(tiffPath);
-		op.addImage(jp2Path);
-
-		ConvertCmd convert = new ConvertCmd();
-		convert.run(op);
-
-		File jp2 = new File(jp2Path);
+		File jp2 = File.createTempFile("test", ".jp2");
 		Assert.assertTrue(jp2.exists());
 
-		Info info = new Info(jp2Path, true);
+		FileOutputStream jp2Out = new FileOutputStream(jp2);
+
+		IOUtils.copy(jp2In, jp2Out);
+
+		Info info = new Info(jp2.getAbsolutePath(), true);
 		Assert.assertEquals("JP2", info.getImageFormat());
 
 		jp2.delete();
 	}
 
+	@Ignore
 	@Test
 	public void testPiping() throws IOException, InterruptedException,
 			IM4JavaException {

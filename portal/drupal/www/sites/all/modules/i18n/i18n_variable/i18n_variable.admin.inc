@@ -56,7 +56,12 @@ function i18n_variable_admin_settings_submit($form, $form_state) {
   }
   variable_set('i18n_variable_conf', $variables);
   // Spawn multiple variables and translate into actual variables
-  variable_set('i18n_variable_list', variable_children($variables));
-  // Clear list from cache
-  cache_clear_all('*', I18N_VARIABLE_CACHE, TRUE);
+  $new_list = variable_children($variables);
+  variable_set('i18n_variable_list', $new_list);
+  // Delete variables from store that are not in the new list.
+  $old_list = variable_store_list_all('language', NULL);
+  foreach (array_diff($old_list, $new_list) as $name) {
+    variable_store_delete_all('language', NULL, $name);
+    drupal_set_message(t('Deleted existing values of %name from multilingual variables.', array('%name' => $name)));
+  }
 }

@@ -14,8 +14,9 @@ class i18nMenuTestCase extends Drupali18nTestCase {
   }
 
   function setUp() {
-    parent::setUp(array('i18n_menu'));
+    parent::setUp(array('i18n_menu', 'translation'));
     parent::setUpLanguages(array('administer menu'));
+    $this->translator = $this->drupalCreateUser(array('translate interface', 'translate user-defined strings'));
   }
 
   function testMenuTranslateLocalize() {
@@ -76,6 +77,76 @@ class i18nMenuTestCase extends Drupali18nTestCase {
     $this->assertText($neutral_item['link_title']);
     $this->assertNoText($default_item['link_title']);
     $this->assertText($secondary_item['link_title']);
+  }
+
+  /**
+   * Test menu items for nodes.
+   */
+  function testNodeMenuItems() {
+    // Create menu and display it in a block.
+    $menu = $this->createMenu(array(
+      'i18n_mode' => I18N_MODE_MULTIPLE,
+      'language' => LANGUAGE_NONE,
+      'menu_name' => 'test',
+    ));
+
+    $neutral_item = $this->createMenuLink(array('menu_name' => $menu['menu_name']));
+    $block['title'] = $menu['title'];
+    $block['module'] = 'menu';
+    $block['delta'] = $menu['menu_name'];
+    $this->moveBlockToRegion($block, 'sidebar_first');
+    $menu_parent = $menu['menu_name'] . ':0';
+    // Create content type 'page', translation enabled, login as translator
+    parent::setUpContentTranslation();
+    $settings = array(
+      'menu_options[' . $menu['menu_name'] .']' => TRUE,
+      'menu_parent' => $menu_parent,
+      'node_options[promote]' => FALSE,
+    );
+    $this->drupalPost('admin/structure/types/manage/page/edit', $settings, t('Save content type'));
+
+    // Create nodes with language and menu item: es, en, und
+    $edit = array(
+      'menu[enabled]' => TRUE,
+      'menu[parent]' => $menu_parent,
+      'promote' => FALSE,
+    );
+    // English Page => English menu item
+    $en_title = $this->randomName(10);
+    $en_body = $this->randomString(50);
+    $nodes[] = $en_node = $this->createNode('page', $en_title, $en_body, 'en', $edit + array('menu[link_title]' => $en_title));
+    // Spanish page => Spanish menu item
+    $es_title = $this->randomName(10);
+    $es_body = $this->randomString(50);
+    $nodes[] = $es_node = $this->createNode('page', $es_title, $es_body, 'es', $edit + array('menu[link_title]' => $es_title));
+    // Language neutral page, localicable menu item
+    $und_title = $this->randomName(10);
+    $und_body = $this->randomString(50);
+    $nodes[] = $und_node = $this->createNode('page', $und_title, $und_body, LANGUAGE_NONE, $edit + array('menu[link_title]' => $und_title));
+    // Check menu items have right language and we cannot edit them.
+    foreach ($nodes as $node) {
+      menu_node_prepare($node);
+      $this->assertEqual($node->menu['language'], $node->language, 'Menu item has the same language that the node it belongs to.');
+      $this->drupalGet('admin/structure/menu/item/' . $node->menu['mlid'] . '/edit');
+      $this->assertText(t('This menu item belongs to a node, so it will have the same language as the node and cannot be localized.'));
+      $this->assertNoField('language', 'We cannot edit language for menu items that belong to nodes.');
+    }
+    // Check menu items show up for the right language.
+    $this->drupalGet('<front>');
+    $this->assertText($en_title);
+    $this->assertNoText($es_title);
+    $this->assertText($und_title);
+    $this->i18nGet('es', '<front>');
+    $this->assertText($es_title);
+    $this->assertNoText($en_title);
+    $this->assertText($und_title);
+    // Create string translation for neutral menu item and check it shows up
+    $translation = $this->randomName(10);
+    $this->createStringTranslation('menu', $und_title, array('es' => $translation));
+    $this->drupalGet('<front>');
+    $this->assertText($und_title);
+    $this->i18nGet('es', '<front>');
+    $this->assertText($translation);
   }
 
   /**

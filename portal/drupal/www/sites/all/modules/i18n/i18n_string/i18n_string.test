@@ -26,6 +26,7 @@ class i18nStringTestCase extends Drupali18nTestCase {
     // We can use any of the modules that define a text group, to use it for testing
     parent::setUp('i18n_string', 'i18n_menu');
     parent::setUpLanguages();
+    $this->translator = $this->drupalCreateUser(array('translate interface', 'translate user-defined strings'));
   }
 
   /**

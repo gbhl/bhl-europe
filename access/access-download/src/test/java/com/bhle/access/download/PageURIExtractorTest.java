@@ -19,19 +19,19 @@ public class PageURIExtractorTest {
 	@Test
 	public void testExtractingSingeIndex(){
 		String rangesParameter = "1,2";
-		String[] pageUris = new String[]{"info:fedora/bhle:10706-a00000000000132805961115-00001", "info:fedora/bhle:10706-a00000000000132805961115-00002"};
+		String[] pageUris = new String[]{"info:fedora/bhle:10706-a000test-00001", "info:fedora/bhle:10706-a000test-00002"};
 		String[] result = extractor.getPageURIs(rangesParameter, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00001", result[0]);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00002", result[1]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[1]);
 	}
 	
 	@Test
 	public void testExtractingRanges(){
 		String rangesParameter = "1-1,1-2";
-		String[] pageUris = new String[]{"info:fedora/bhle:10706-a00000000000132805961115-00001", "info:fedora/bhle:10706-a00000000000132805961115-00002"};
+		String[] pageUris = new String[]{"info:fedora/bhle:10706-a000test-00001", "info:fedora/bhle:10706-a000test-00002"};
 		String[] result = extractor.getPageURIs(rangesParameter, pageUris);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00001", result[0]);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00001", result[1]);
-		Assert.assertEquals("info:fedora/bhle:10706-a00000000000132805961115-00002", result[2]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[1]);
+		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[2]);
 	}
 }

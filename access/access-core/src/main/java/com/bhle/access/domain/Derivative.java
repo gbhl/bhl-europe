@@ -5,12 +5,15 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.io.IOUtils;
+
 import com.bhle.access.convert.DatastreamConverter;
 
 public class Derivative {
 	private String pid;
 	private String dsId;
 	private InputStream inputStream;
+	private DatastreamWrapper datastream;
 	private List<DatastreamConverter> convertors = new ArrayList<DatastreamConverter>();
 
 	public String getPid() {
@@ -40,18 +43,21 @@ public class Derivative {
 	public void addConvertor(DatastreamConverter convertor) {
 		this.convertors.add(convertor);
 	}
-	
+
 	public List<DatastreamConverter> getConvertors() {
 		return convertors;
 	}
-	
-	public void close(){
-		try {
-			inputStream.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+
+	public DatastreamWrapper getDatastream() {
+		return datastream;
 	}
 
-	
+	public void setDatastream(DatastreamWrapper datastream) {
+		this.datastream = datastream;
+	}
+
+	public void close() {
+		datastream.close();
+		IOUtils.closeQuietly(inputStream);
+	}
 }

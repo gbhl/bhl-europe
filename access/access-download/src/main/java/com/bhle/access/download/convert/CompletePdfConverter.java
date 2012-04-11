@@ -1,6 +1,7 @@
 package com.bhle.access.download.convert;
 
 import java.io.InputStream;
+import java.util.concurrent.ExecutionException;
 
 import org.akubraproject.Blob;
 import org.slf4j.Logger;
@@ -60,7 +61,8 @@ public class CompletePdfConverter extends AbstractDataStreamConverter implements
 	@Override
 	public void convert(String guid) {
 
-		logger.debug("Start generate complete PDF at medium resoltuion...");
+		logger.info("Convert bhle:" + guid
+				+ " to full PDF at medium resoltuion");
 
 		BasicDownloadRequest request = new BasicDownloadRequest();
 		Blob blob = lowLevelStorage.getBlob(FedoraURI.getPidFromGuid(guid),

@@ -22,6 +22,10 @@ public class InboundFedoraMessageProcessor {
 		if (fedoraMessage.getMethodName() == Method.MODIFY_OBJECT) {
 			String state = fedoraMessage.getState();
 			if (state != null && state.equals("A")) {
+				if (!logger.isDebugEnabled()) {
+					// wait enough time for Fedora to insert resource index
+					Thread.sleep(10000);
+				}
 				return MessageBuilder.withPayload(fedoraMessage.getPid())
 						.build();
 			}

@@ -31,6 +31,7 @@ public abstract class AbstractDataStreamConverter implements
 			derivative.addConvertor(this);
 			derivative.setDsId(getDerivativeId());
 			derivative.setPid(datastream.getDigitalObject().getPid());
+			derivative.setDatastream(datastream);
 			return derivative;
 		} else {
 			return null;
@@ -40,8 +41,8 @@ public abstract class AbstractDataStreamConverter implements
 	public Derivative derive(DatastreamWrapper datastreamWrapper) {
 		Derivative derivative = deriveInformation(datastreamWrapper);
 		if (derivative != null) {
-			derivative.setInputStream(doConvert(datastreamWrapper
-					.getInputStream()));
+			InputStream in = datastreamWrapper.getInputStream();
+			derivative.setInputStream(doConvert(in));
 			return derivative;
 		} else {
 			return null;
