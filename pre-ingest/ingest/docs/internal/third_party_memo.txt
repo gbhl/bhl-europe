@@ -3,6 +3,20 @@
 ********************
 
 
+
+
+bhl-test(1).nhm.ac.uk/preingest
+$HOME/bin deploy_ingest.sh
+
+db_name in config_prod.php umsetzen (test)
+
+issue 365 kontrolle nur ergänzen+hierachie
+beispiel serien 328 monograph serial kernel verw
+383 serial guid zu parent unter recordinfo !
+kein output in leerer section 
+
+
+
 autodetect of serial and monograph
 
 
