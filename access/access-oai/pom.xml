@@ -67,6 +67,14 @@
 				<artifactId>maven-jetty-plugin</artifactId>
 				<version>6.0.0</version>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<outputDirectory>dist</outputDirectory>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<repositories>
@@ -83,4 +91,30 @@
 			<url>file://${project.basedir}/lib</url>
 		</repository>
 	</repositories>
+
+	<profiles>
+		<profile>
+			<id>test</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+				<property>
+					<name>environment</name>
+					<value>test</value>
+				</property>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-war-plugin</artifactId>
+						<version>2.0</version>
+						<configuration>
+							<warName>${project.artifactId}-test-${project.version}</warName>
+							<outputDirectory>dist</outputDirectory>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
