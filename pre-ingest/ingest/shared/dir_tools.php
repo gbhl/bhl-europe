@@ -170,7 +170,7 @@ function dir_depth($path,$ignore="")
     $arrLengths = array();
     $arrLengths[] = 0;
 
-    $arrDir = getDirectory($path,$arrContents=array(),0,$ignore);
+    $arrDir = getDirectory($path,"",0,$ignore);
     $nDir   = count($arrDir);
     
     for ($i=0;$i<$nDir;$i++) 
