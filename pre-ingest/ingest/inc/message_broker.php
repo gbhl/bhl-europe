@@ -31,11 +31,11 @@ function mb_send_ready($content_guid,$content_aip)
     "GUID": $guid
     "URI": $uri
 $messageHelper = new MessageHelper("tcp://bhl-mandible.nhm.ac.uk:61613");
-$messageHelper->informIngest("10706-aaaaaa", "file:///dev/null");
+$messageHelper->informIngest("bhle:10706/aaaaaa", "file:///dev/null");
 
     */
 
-    return $messageHelper->informIngest($content_guid, "file://".$content_aip);
+    return $messageHelper->informIngest("bhle:".$content_guid, "file://".$content_aip);
 }
 
 

@@ -72,8 +72,8 @@ h2.search-result-title{display:none;}
   width:140px; padding:0px; margin:0px;
 }
 #results-sort-box #results-list-type-box #results-view-type {  
-  padding:6px 9px 2px; margin:0px;
-  width:121px; line-height:1.0; height:17px;
+  padding:6px 7px 2px; margin:0px;
+  width:125px; line-height:1.0; height:17px;
   
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 100%); /* FF3.6+ */
@@ -305,4 +305,5 @@ overflow: hidden;
 }
 #results #search-results li.search-result .result-actions .result-buttons a.last {float:right;} 
 
+#results #search-results li.search-result .result-actions .result-buttons input {width:184px; height:20px; padding:0; line-height:1.0; font-size:91.7%; color:#006626; border:none;background-color:transparent; cursor:pointer}
  

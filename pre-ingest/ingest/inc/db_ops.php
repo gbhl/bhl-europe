@@ -137,7 +137,7 @@ if($sub_action=="save_dir_details")
                  
                  if ($cname=='') $cname = urldecode($dirSelected);  // take selected content dir name
                  
-                 if (dir_depth($croot)>=2) $cTyp = "serial";
+                 if (dir_depth($croot,array("..",".",".aip",".AIP"))>=2) $cTyp = "serial";
              }
 
              // INSERT MANAGED CONTENT

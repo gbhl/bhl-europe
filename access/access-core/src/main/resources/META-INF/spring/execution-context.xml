@@ -18,4 +18,24 @@
 		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean"
 		p:transactionManager-ref="transactionManager" />
 
+	<bean id="jobLoader"
+		class="org.springframework.batch.core.configuration.support.AutomaticJobRegistrar">
+		<property name="applicationContextFactories">
+			<bean
+				class="org.springframework.batch.core.configuration.support.ClasspathXmlApplicationContextsFactoryBean">
+				<property name="resources"
+					value="classpath*:/META-INF/spring/batch/jobs/*.xml" />
+			</bean>
+		</property>
+		<property name="jobLoader">
+			<bean
+				class="org.springframework.batch.core.configuration.support.DefaultJobLoader">
+				<property name="jobRegistry" ref="jobRegistry" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="jobRegistry"
+		class="org.springframework.batch.core.configuration.support.MapJobRegistry" />
+
 </beans>

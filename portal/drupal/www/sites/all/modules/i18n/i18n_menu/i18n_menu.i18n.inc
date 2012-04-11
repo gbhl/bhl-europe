@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook i18n_object_info()
+ * Implements hook_i18n_object_info().
  */
 function i18n_menu_i18n_object_info() {
   $info['menu'] = array(
@@ -54,21 +54,36 @@ function i18n_menu_i18n_object_info() {
       'textgroup' => 'menu',
       'type' => 'item',
       'properties' => array(
-        'title' => t('Title'),
-        'description' => t('Description'),
+        'title' => array(
+          'title' => t('Title'),
+          'field' => 'link_title',
+        ),
+        'description' => array(
+          'title' => t('Description'),
+          'field' => 'options.attributes.title',
+        ),
       ),
     ),
-    'translation set' => array(
-      'class' => 'i18n_menu_link_translation_set',
-      'table' => 'menu_links',
-      'field' => 'i18n_tsid',
-      'parent' => 'menu',
-      'placeholder' => '%i18n_menu_translation',
-      'list path' => 'admin/structure/menu/manage/translation',
-      'edit path' => 'admin/structure/menu/manage/translation/edit/%i18n_menu_translation',
-      'delete path' => 'admin/structure/menu/manage/translation/delete/%i18n_menu_translation',
-      'page callback' => 'i18n_menu_item_translation_page',
-    ),
+    'translation set' => TRUE,
+  );
+  return $info;
+}
+
+/**
+ * Implements hook_i18n_translation_set_info()
+ */
+function i18n_menu_i18n_translation_set_info() {
+  $info['menu_link'] = array(
+    'title' => t('Menu link'),
+    'class' => 'i18n_menu_link_translation_set',
+    'table' => 'menu_links',
+    'field' => 'i18n_tsid',
+    'parent' => 'menu',
+    'placeholder' => '%i18n_menu_translation',
+    'list path' => 'admin/structure/menu/manage/translation',
+    'edit path' => 'admin/structure/menu/manage/translation/edit/%i18n_menu_translation',
+    'delete path' => 'admin/structure/menu/manage/translation/delete/%i18n_menu_translation',
+    'page callback' => 'i18n_menu_item_translation_page',
   );
   return $info;
 }
@@ -113,14 +128,3 @@ function i18n_menu_item_translation_page($type, $item) {
   return $build;
 }
 
-/**
- * Implements hook_i18n_string_list_TEXTGROUP_alter()
- */
-function i18n_menu_i18n_string_list_menu_alter(&$strings, $type = NULL, $object = NULL) {
-  if ($type == 'menu_link' && $object) {
-    if (isset($object['options']['attributes']['title'])) {
-    	$strings['menu']['item'][$object['mlid']]['title']['string'] = $object['link_title']; 
-      $strings['menu']['item'][$object['mlid']]['description']['string'] = $object['options']['attributes']['title'];
-    }  
-  }
-}

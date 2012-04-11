@@ -225,7 +225,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
 
     // Check if a valid term was passed
     if (empty($term))
-        $term = BHLE_SEARCH_DEFAULT_TERM;
+        $term = t(BHLE_SEARCH_DEFAULT_TERM);
 
     $form['condition_' . $id] = array(
         '#type' => 'fieldset',
@@ -323,7 +323,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     unset($form['basic']);
 
     // Check if we have to add a new condition, or if the conditions array is empty
-    if( count($_SESSION['bhle_search']['conditions']) <= 0 || (isset($form_state['values']) && $form_state['values']['op'] == t('Add field')) )  {
+    if( count($_SESSION['bhle_search']['conditions']) <= 0 || (isset($form_state['values']) && $form_state['values']['op'] == t('Add field') . ' / AND') )  {
         $_SESSION['bhle_search']['conditions'][] = array('term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0);
     }
     // else check if we want to remove one
@@ -397,7 +397,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     );
     $form['add'] = array(
         '#type' => 'button',
-        '#value' => t('Add field'),
+        '#value' => t('Add field') . ' / AND',
         '#weight' => $weight++,
         '#ajax' => array(
             'callback' => 'bhle_search_advanced_add_ajax',

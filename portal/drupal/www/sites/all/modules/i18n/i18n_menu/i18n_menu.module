@@ -242,7 +242,7 @@ function i18n_menu_menu_link_update($link) {
       ->execute();
   }
   // Update translatable strings if any
-  if (isset($link['options']['attributes']['title']) && !empty($link['customized']) && i18n_menu_mode($link['menu_name'], I18N_MODE_LOCALIZE) && !i18n_object_langcode($link)) {
+  if (!empty($link['customized']) && i18n_menu_mode($link['menu_name'], I18N_MODE_LOCALIZE) && !i18n_object_langcode($link)) {
     i18n_string_object_update('menu_link', $link);
   }
 }
@@ -289,7 +289,7 @@ function i18n_menu_mode($name, $mode = NULL) {
  */
 function i18n_menu_translated_menu_link_alter(&$item, $map) {
   if (!empty($item['customized']) && empty($item['language']) && !empty($item['access']) && empty($item['hidden']) && empty($item['i18n_menu'])) {
-    $item['title'] = _i18n_menu_link_title($item);
+    $item['link_title'] = _i18n_menu_link_title($item);
     if ($description = _i18n_menu_link_description($item)) {
       $item['localized_options']['attributes']['title'] = $description;
     }
@@ -544,8 +544,8 @@ function i18n_menu_form_menu_edit_menu_alter(&$form, &$form_state) {
 function i18n_menu_form_menu_edit_item_alter(&$form, &$form_state) {
   $item = &$form['original_item']['#value'];
   $item['language'] = i18n_menu_item_get_language($item);
-  // Check whether this item belongs to a node object
-  $node_item = isset($item['router_path']) && $item['router_path'] == 'node/%';
+  // Check whether this item belongs to a node object and it is a supported type.
+  $node_item = ($node = i18n_menu_item_get_node($item)) && i18n_menu_node_supported_type($node->type);
   if (!$node_item && i18n_menu_mode($item['menu_name'], I18N_MODE_TRANSLATE)) {
     //$form['i18n'] = array('#type' => 'fieldset');
     $form['i18n']['language'] = array(
@@ -560,7 +560,7 @@ function i18n_menu_form_menu_edit_item_alter(&$form, &$form_state) {
         $translation_set = i18n_translation_set_load($source_item['i18n_tsid']);
       }
       else {
-        // Create object and stick the source information in the translation set
+        // Create object and stick the source information in the translation set.
         $translation_set = i18n_translation_set_build('menu_link')
           ->add_item($source_item);
       }
@@ -664,17 +664,40 @@ function i18n_menu_item_get_language($item) {
 function i18n_menu_form_node_form_alter(&$form, &$form_state, $form_id) {
   if (isset($form['menu'])) {
     $node = $form['#node'];
-    $link = $form['#node']->menu;
+    $link = $node->menu;
     if (!empty($link['mlid'])) {
+      // Preserve the menu item language whatever it is.
       $form['menu']['link']['language'] = array('#type' => 'value', '#value' => $link['language']);
     }
-    else {
-      // Set menu language to node language.
+    elseif (i18n_menu_node_supported_type($node->type)) {
+      // Set menu language to node language but only if it is a supported node type.
       $form['menu']['link']['language'] = array('#type' => 'value', '#value' => $node->language);
+    }
+    else {
+      $form['menu']['link']['language'] = array('#type' => 'value', '#value' => LANGUAGE_NONE);
     }
     // Customized must be set to 1 to save language.
     $form['menu']['link']['customized'] = array('#type' => 'value', '#value' => 1);
   }
+}
+
+/**
+ * Check whether a node type has multilingual support (but not entity translation).
+ */
+function i18n_menu_node_supported_type($type) {
+  $supported = &drupal_static(__FUNCTION__);
+  if (!isset($supported[$type])) {
+    $mode = variable_get('language_content_type_' . $type, 0);
+    $supported[$type] = $mode == 1 || $mode == 2; // 2 == TRANSLATION_ENABLED
+  }
+  return $supported[$type];
+}
+
+/**
+ * Get the node object for a menu item.
+ */
+function i18n_menu_item_get_node($item) {
+  return isset($item['router_path']) && $item['router_path'] == 'node/%' ? node_load(arg(1, $item['link_path'])) : NULL;
 }
 
 /**
@@ -683,8 +706,10 @@ function i18n_menu_form_node_form_alter(&$form, &$form_state, $form_id) {
  * Set menu link language to node language
  */
 function i18n_menu_node_presave($node) {
-  if (!empty($node->menu) && isset($node->language)) {
+  if (!empty($node->menu) && isset($node->language) && i18n_menu_node_supported_type($node->type)) {
     $node->menu['language'] = i18n_object_langcode($node, LANGUAGE_NONE);
+    // Store node type with menu item so we can quickly access it later.
+    $node->menu['options']['node_type'] = $node->type;
   }
 }
 

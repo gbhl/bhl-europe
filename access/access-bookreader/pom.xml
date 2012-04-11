@@ -6,11 +6,11 @@
 	<parent>
 		<artifactId>access-parent</artifactId>
 		<groupId>com.bhle</groupId>
-		<version>1.2</version>
+		<version>1.3</version>
 	</parent>
 	<groupId>com.bhle</groupId>
 	<artifactId>access-bookreader</artifactId>
-	<version>${project.parent.version}</version>
+	<version>1.3</version>
 	<name>access-bookreader</name>
 	<url>http://maven.apache.org</url>
 	<properties>

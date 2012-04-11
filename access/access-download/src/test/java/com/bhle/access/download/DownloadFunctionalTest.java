@@ -41,7 +41,7 @@ public class DownloadFunctionalTest extends BaseTest {
 		request.setContentType(ContentType.PDF);
 		request.setResolution(new Resolution("medium"));
 		request.setPageURIs(new String[] { "info:fedora/"
-				+ "bhle:10706-a00000000000132805961115-00001" });
+				+ "bhle:10706-a000test-00001" });
 		Future<DownloadResponse> futureResponse = gateway.download(request);
 		try {
 			OfflineDownloadResponse response = (OfflineDownloadResponse) futureResponse
@@ -62,7 +62,7 @@ public class DownloadFunctionalTest extends BaseTest {
 		request.setContentType(ContentType.JPEG);
 		request.setResolution(new Resolution("medium"));
 		request.setPageURIs(new String[] { "info:fedora/"
-				+ "bhle:10706-a00000000000132805961115-00001" });
+				+ "bhle:10706-a000test-00001" });
 		Future<DownloadResponse> futureResponse = gateway.download(request);
 		try {
 			OfflineDownloadResponse response = (OfflineDownloadResponse) futureResponse
@@ -81,7 +81,7 @@ public class DownloadFunctionalTest extends BaseTest {
 		BasicDownloadRequest request = new BasicDownloadRequest();
 		request.setContentType(ContentType.OCR);
 		request.setPageURIs(new String[] { "info:fedora/"
-				+ "bhle:10706-a00000000000132805961115-00001" });
+				+ "bhle:10706-a000test-00001" });
 		Future<DownloadResponse> futureResponse = gateway.download(request);
 		try {
 			OnlineDownloadResponse response = (OnlineDownloadResponse) futureResponse

@@ -23,7 +23,7 @@ public class CompleteDerivativesTest extends BaseTest {
 
 	@Test
 	public void testPostIngestDerivatives() throws InterruptedException {
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 
 		try {
 			testPdfGeneration();

@@ -1,20 +1,19 @@
 package com.bhle.access.util;
 
-import java.io.ByteArrayOutputStream;
+import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.kahadb.util.ByteArrayInputStream;
 import org.im4java.core.ConvertCmd;
 import org.im4java.core.IM4JavaException;
 import org.im4java.core.IMOperation;
 import org.im4java.core.Info;
 import org.im4java.core.InfoException;
-import org.im4java.process.Pipe;
-import org.im4java.process.ProcessStarter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,20 +27,22 @@ public class ImageUtil {
 
 	public static InputStream tiffToJp2(InputStream tiffIn, int maxHeight,
 			int maxWidth) {
-		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+		File tmpTiff = copyToTempFile(tiffIn);
 
-		Pipe pipeIn = new Pipe(tiffIn, null);
-		Pipe pipeOut = new Pipe(null, byteOut);
+		File tmpJp2 = null;
+		try {
+			tmpJp2 = File.createTempFile("derivative_image", ".jp2");
+			tmpJp2.deleteOnExit();
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 
 		IMOperation op = new IMOperation();
-		op.addImage("-");
+		op.addImage(tmpTiff.getAbsolutePath());
 		op.resize(maxHeight, maxWidth);
-		op.addImage("jp2:-");
+		op.addImage(tmpJp2.getAbsolutePath());
 
 		ConvertCmd convert = new ConvertCmd();
-		convert.setInputProvider(pipeIn);
-		convert.setOutputConsumer(pipeOut);
-		// convert.setAsyncMode(true);
 		try {
 			convert.run(op);
 		} catch (IOException e) {
@@ -52,14 +53,29 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		ByteArrayInputStream byteIn = new ByteArrayInputStream(
-				byteOut.toByteArray());
+		ByteArrayInputStream byteIn = null;
+		try {
+			FileInputStream fileIn = new FileInputStream(tmpJp2);
+			byteIn = new ByteArrayInputStream(IOUtils.toByteArray(fileIn));
+			fileIn.close();
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		try {
 			tiffIn.close();
-			byteOut.close();
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+
+		if (!tmpTiff.delete() && tmpTiff.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpTiff);
+		}
+		
+		if (!tmpJp2.delete() && tmpJp2.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpJp2);
 		}
 
 		return byteIn;
@@ -70,20 +86,22 @@ public class ImageUtil {
 	}
 
 	public static InputStream jp2ToThumbnail(InputStream jp2In) {
-		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+		File tmpJp2 = copyToTempFile(jp2In);
 
-		Pipe pipeIn = new Pipe(jp2In, null);
-		Pipe pipeOut = new Pipe(null, byteOut);
+		File tmpTn = null;
+		try {
+			tmpTn = File.createTempFile("derivative_image", ".jpeg");
+			tmpTn.deleteOnExit();
+		} catch (IOException e2) {
+			e2.printStackTrace();
+		}
 
 		IMOperation op = new IMOperation();
 		op.thumbnail(150);
-		op.addImage("-");
-		op.addImage("jpeg:-");
+		op.addImage(tmpJp2.getAbsolutePath());
+		op.addImage(tmpTn.getAbsolutePath());
 
 		ConvertCmd convert = new ConvertCmd();
-		convert.setInputProvider(pipeIn);
-		convert.setOutputConsumer(pipeOut);
-		// convert.setAsyncMode(true);
 		try {
 			convert.run(op);
 		} catch (IOException e) {
@@ -94,14 +112,29 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 
-		ByteArrayInputStream byteIn = new ByteArrayInputStream(
-				byteOut.toByteArray());
+		ByteArrayInputStream byteIn = null;
+		try {
+			FileInputStream fileIn = new FileInputStream(tmpTn);
+			byteIn = new ByteArrayInputStream(IOUtils.toByteArray(fileIn));
+			fileIn.close();
+		} catch (FileNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		try {
 			jp2In.close();
-			byteOut.close();
 		} catch (IOException e) {
 			e.printStackTrace();
+		}
+		
+		if (!tmpJp2.delete() && tmpJp2.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpJp2);
+		}
+		
+		if (!tmpTn.delete() && tmpTn.exists()) {
+			logger.warn("Cannot delete temp files {}" , tmpTn);
 		}
 
 		return byteIn;
@@ -140,6 +173,19 @@ public class ImageUtil {
 			e.printStackTrace();
 		}
 		return new int[] { height, width };
+	}
+
+	private static File copyToTempFile(InputStream in) {
+		try {
+			File tmp = File.createTempFile("derivative_image", null);
+			FileOutputStream fileOut = new FileOutputStream(tmp);
+			IOUtils.copy(in, fileOut);
+			fileOut.close();
+			return tmp;
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }

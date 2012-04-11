@@ -20,3 +20,14 @@ function i18n_variable_variable_info($options = array()) {
   );
   return $variables;
 }
+
+/**
+ * Implements hook_variable_realm_keys()
+ */
+function i18n_variable_variable_realm_info() {
+  $realm['language'] = array(
+    'title' => t('Language'),
+    'keys' => locale_language_list('name', TRUE),
+  );
+  return $realm;
+}

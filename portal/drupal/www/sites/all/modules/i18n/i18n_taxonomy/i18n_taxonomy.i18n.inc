@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook i18n_object_info()
+ * Implements hook_i18n_object_info().
  */
 function i18n_taxonomy_i18n_object_info() {
   $info['taxonomy_term'] = array(
@@ -20,17 +20,7 @@ function i18n_taxonomy_i18n_object_info() {
     'edit path' => 'taxonomy/term/%taxonomy_term/edit',
     // Auto-generate translate tab
     'translate tab' => 'taxonomy/term/%taxonomy_term/translate',
-    'translation set' => array(
-      'class' => 'i18n_taxonomy_translation_set',
-      'table' => 'taxonomy_term_data',
-      'field' => 'i18n_tsid',
-      'parent' => 'taxonomy_vocabulary',
-      'placeholder' => '%i18n_taxonomy_translation_set',
-      'list path' => 'admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list/sets',
-      'edit path' => 'admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list/sets/edit/%i18n_taxonomy_translation_set',
-      'delete path' => 'admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list/sets/delete/%i18n_taxonomy_translation_set',
-      'page callback' => 'i18n_taxonomy_term_translation_page',
-    ),
+    'translation set' => TRUE,
     'string translation' => array(
       'textgroup' => 'taxonomy',
       'type' => 'term',
@@ -71,6 +61,25 @@ function i18n_taxonomy_i18n_object_info() {
       'item name' => t('terms'),
       'options' => array(I18N_MODE_NONE, I18N_MODE_LOCALIZE, I18N_MODE_TRANSLATE, I18N_MODE_LANGUAGE),
     ),
+  );
+  return $info;
+}
+
+/**
+ * Implements hook_i18n_translation_set_info()
+ */
+function i18n_taxonomy_i18n_translation_set_info() {
+  $info['taxonomy_term'] = array(
+    'title' => t('Taxonomy term'),
+    'class' => 'i18n_taxonomy_translation_set',
+    'table' => 'taxonomy_term_data',
+    'field' => 'i18n_tsid',
+    'parent' => 'taxonomy_vocabulary',
+    'placeholder' => '%i18n_taxonomy_translation_set',
+    'list path' => 'admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list/sets',
+    'edit path' => 'admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list/sets/edit/%i18n_taxonomy_translation_set',
+    'delete path' => 'admin/structure/taxonomy/%taxonomy_vocabulary_machine_name/list/sets/delete/%i18n_taxonomy_translation_set',
+    'page callback' => 'i18n_taxonomy_term_translation_page',
   );
   return $info;
 }
