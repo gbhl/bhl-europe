@@ -52,9 +52,8 @@ public class AipReader implements ItemReader<String> {
 
 	private String[] getAllMemberOfGuid(String guid) {
 		String query = "select $object from <#ri> "
-				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:bhle:"
-				+ guid + "> " + "or $object <dc:identifier> " + "'" + guid
-				+ "')";
+				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + guid
+				+ "> " + "or $object <dc:identifier> " + "'" + guid + "')";
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
 					.lang("itql").format("csv").type("tuples").execute(client);
