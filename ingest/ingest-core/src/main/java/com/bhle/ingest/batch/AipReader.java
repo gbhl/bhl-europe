@@ -9,7 +9,6 @@ import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.NonTransientResourceException;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bhle.ingest.util.CsvUtil;
 import com.yourmediashelf.fedora.client.FedoraClient;
@@ -21,8 +20,11 @@ public class AipReader implements ItemReader<String> {
 	private String[] pids;
 	private int index = 0;
 
-	@Autowired
 	private FedoraClient client;
+
+	public void setClient(FedoraClient client) {
+		this.client = client;
+	}
 
 	private String guid;
 
@@ -51,7 +53,7 @@ public class AipReader implements ItemReader<String> {
 	private String[] getAllMemberOfGuid(String guid) {
 		String query = "select $object from <#ri> "
 				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:bhle:"
-				+ guid + "> " + "or $object <dc:identifier> " + "'bhle:" + guid
+				+ guid + "> " + "or $object <dc:identifier> " + "'" + guid
 				+ "')";
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
