@@ -156,5 +156,30 @@ function is_dir_empty($myDir,$CountOnlyFiles=false)
 
 
 
+// **************************************
+// RETURN MAX. DEPHT OF A GIVEN DIRECTORY
+// = MAX NUMBER OF NESTED DIRECTORIES 
+// INSIDE THE DIRECTORY (RELATIVE!)
+// **************************************
+function dir_depth($path,$ignore="")
+{
+    // INITS    
+    $path = str_replace("\\","/",$path);
+    if ($ignore=="") $ignore = array('.', '..' );
+
+    $arrLengths = array();
+    $arrLengths[] = 0;
+
+    $arrDir = getDirectory($path,"",0,$ignore);
+    $nDir   = count($arrDir);
+    
+    for ($i=0;$i<$nDir;$i++) 
+    if (is_dir($arrDir[$i])) $arrLengths[] = (int) count(explode("/",str_replace($path,"",$arrDir[$i])));
+
+    rsort($arrLengths);
+    
+    return $arrLengths[0];
+}
+
 
 ?>

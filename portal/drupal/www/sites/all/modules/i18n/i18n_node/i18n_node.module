@@ -377,7 +377,7 @@ function i18n_node_form_search_form_alter(&$form, &$form_state) {
     //$form['advanced']['language'] = _i18n_language_select();
     if (!empty($form['advanced']['type'])) {
       foreach ($form['advanced']['type']['#options'] as $type => $name) {
-        $form['advanced']['type']['#options'][$type] = i18n_node_type_translate($type, 'name', $name);
+        $form['advanced']['type']['#options'][$type] = i18n_node_translate_type($type, 'name', $name);
       }
     }
   }

@@ -35,7 +35,7 @@ class i18nSyncTestCase extends Drupali18nTestCase {
     $this->drupalPost(NULL, array(), t('Save settings'));
 
     // Create some content and check selection modes
-    $this->drupalLogin($this->translator);
+    $this->drupalLogin($this->content_editor);
 
     // variable_set('language_content_type_story', 1);
     $source = $this->createNode('page', $this->randomName(), $this->randomString(20), language_default('language'), array('field_tags[und]' => $tag_name = $this->randomName()));
@@ -60,7 +60,7 @@ class i18nSyncTestCase extends Drupali18nTestCase {
     $edit = array(
       'promote' => 1,
       'sticky' => 1,
-    	'field_tags[und]' => $new_tag,
+      'field_tags[und]' => $new_tag,
     );
     $this->drupalPost('node/' . $source->nid . '/edit', $edit, t('Save'));
     $terms = taxonomy_get_term_by_name($new_tag);

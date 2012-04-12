@@ -69,7 +69,7 @@ if($sub_action=="save_dir_details")
 {
     $inserted = 0;
     $query    = "insert into content (content_id,content_root,content_name,
-        content_atime,content_ctime,content_size,content_pages) values ";
+        content_atime,content_ctime,content_size,content_pages,content_type) values ";
     
     // CHECKBOXEN LIEFERN PER VAR.NAMEN DIE ZU AKTIVIERENDEN VERZEICHNISSE
     $arrKeys = array_keys($_POST);
@@ -126,21 +126,28 @@ if($sub_action=="save_dir_details")
                 $cpages = (int) count(getContentFiles($_POST[$arrKeys[$i]],'pagedata',false));
              }
              
+             $cTyp = 'monograph';
+             
              if ($isPDF) { $croot = dirname($_POST[$arrKeys[$i]]); $cname=basename($_POST[$arrKeys[$i]]); }
-             else        { 
+             else 
+             {
                  $croot = $_POST[$arrKeys[$i]];
                  $cname = str_replace(urldecode($analyzeDir),'',$_POST[$arrKeys[$i]]);
                  $cname = str_replace(_CONTENT_ROOT,'',$cname);
                  
                  if ($cname=='') $cname = urldecode($dirSelected);  // take selected content dir name
+                 
+                 if (dir_depth($croot,array("..",".",".aip",".AIP"))>=2) $cTyp = "serial";
              }
 
              // INSERT MANAGED CONTENT
              if (((int)abfrage("select count(1) from content where content_root='".$croot."'",$db))==0)
                   $inserted += mysql_select($query." (".$nextPK.",'".$croot."','".$cname."',now(),'".
-                          $ctime."',".$fsize.",".$cpages.")",$db);
+                          $ctime."',".$fsize.",".$cpages.",'".$cTyp."')",$db);
              else
                   $endmsg .= "Content already under management!";
+
+             unset($cTyp);
          }
      }
     }
@@ -199,7 +206,7 @@ if ($sub_action=="save_ingest_settings")
          }
 
     }
-    
+
 }
 
 

@@ -17,8 +17,8 @@ class i18nFieldTestCase extends Drupali18nTestCase {
 
   function setUp() {
     parent::setUp('i18n_field', 'field_test');
-    parent::setUpLanguages(array('translate interface', 'access field_test content', 'administer field_test content'));
-
+    parent::setUpLanguages(array('access field_test content', 'administer field_test content'));
+    $this->translator = $this->drupalCreateUser(array('translate interface', 'translate user-defined strings'));
   }
 
   /**

@@ -17,6 +17,7 @@ class i18nBlocksTestCase extends Drupali18nTestCase {
   function setUp() {
     parent::setUp('i18n_block');
     parent::setUpLanguages();
+    $this->translator = $this->drupalCreateUser(array('translate interface', 'translate user-defined strings'));
 
     $format = filter_default_format();
     variable_set('i18n_string_allowed_formats', array($format => $format));
@@ -25,7 +26,7 @@ class i18nBlocksTestCase extends Drupali18nTestCase {
 
   function testBlockTranslation() {
 
-    $block_translater = $this->drupalCreateUser(array('administer blocks', 'translate interface'));
+    $block_translater = $this->drupalCreateUser(array('administer blocks', 'translate interface', 'translate user-defined strings'));
 
     // Display Language switcher block
     $switcher = array('module' => 'locale', 'delta' => 'language', 'title' => t('Languages'));
@@ -70,7 +71,7 @@ class i18nBlocksTestCase extends Drupali18nTestCase {
     $this->assertText(t('translated'));
 
     $this->clickLink(t('translate'));
-    debug($translations);
+
     $this->assertFieldByName('strings[blocks:block:' . $box2['delta'] . ':title]', $translations['title']['es']);
     $this->assertFieldByName('strings[blocks:block:' . $box2['delta'] . ':body]', $translations['body']['es']);
 

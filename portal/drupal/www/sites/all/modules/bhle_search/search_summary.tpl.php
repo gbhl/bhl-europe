@@ -34,8 +34,8 @@
 
 ?>
 
-<div id="search_type"><?php print(isset($matches_for) ? "Advanced" : "Simple" );?> search</div>
-<p id="edit-search"><a href="#" title="Edit search query"><?php print t('EDIT SEARCH'); ?></a></p>
+<div id="search_type"><?php print t((isset($matches_for) ? 'Advanced' : 'Simple') . ' search'); ?></div>
+<p id="edit-search"><a href="#" title="<?php print t('Edit search query'); ?>"><?php print t('EDIT SEARCH'); ?></a></p>
 
 <div class="search-summary search-summary-<?php print $classes; ?>">
 	<div class="number_of_results">
@@ -47,10 +47,10 @@
 		<ul id="searched-querry" class="collapsing-content">
 		<?php $i=1; foreach ($matches_for['info'] as $info) : ?>
 			<li>
-				<?php if($info['exact_phrase'] == 1) :?><span class="exact">exact:</span><?php endif; ?>
+				<?php if($info['exact_phrase'] == 1) :?><span class="exact"><?php print t('exact'); ?>:</span><?php endif; ?>
 				<span class="terms"><?php print $info['term']; ?></span>
 				<?php if(isset($info['term_expanded'])) : ?>
-					<span class="terms_expanded"> expanded to: <?php print $info['term_expanded']; ?></span>
+					<span class="terms_expanded"> <?php print t('expanded to'); ?>: <?php print $info['term_expanded']; ?></span>
 				<?php endif; ?>
 				<span class="count">(<?php print $info['count']; ?>)</span>
 				<span class="field"><?php print $info['field_label']; ?></span>

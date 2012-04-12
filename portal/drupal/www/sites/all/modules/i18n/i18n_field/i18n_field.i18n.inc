@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook i18n_object_info()
+ * Implements hook_i18n_object_info().
  */
 function i18n_field_i18n_object_info() {
   $info['field'] = array(
