@@ -20,13 +20,13 @@ public class BatchIngestListener {
 			.getLogger(BatchIngestListener.class);
 
 	private IngestJmsProducer jmsProducer;
-	
+
 	public void setJmsProducer(IngestJmsProducer jmsProducer) {
 		this.jmsProducer = jmsProducer;
 	}
 
 	private FedoraServiceImpl fedoraService;
-	
+
 	public void setFedoraService(FedoraServiceImpl fedoraService) {
 		this.fedoraService = fedoraService;
 	}
@@ -34,17 +34,33 @@ public class BatchIngestListener {
 	@AfterJob
 	public void afterJob(JobExecution jobExecution) {
 		reportViaJms(jobExecution);
-		activateItem(jobExecution);
+
+		String guid = jobExecution.getJobInstance().getJobParameters()
+				.getString(Sip.JOB_PARAM_GUID_KEY);
+
+		if (jobExecution.getStatus().isUnsuccessful()) {
+			purgeItem(guid);
+		} else {
+			activateItem(guid);
+		}
 	}
 
-	private void activateItem(JobExecution jobExecution) {
-		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
-			String guid = jobExecution.getJobInstance().getJobParameters()
-					.getString(Sip.JOB_PARAM_GUID_KEY);
-			String pid = guid.replace("/", "-");
-			logger.debug("Activate object: {}", pid);
-			fedoraService.activate(pid);
+	private void purgeItem(String guid) {
+		String pid = guid.replace("/", "-");
+		logger.info("Delete all members of object: {}", pid);
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
+		fedoraService.purgeAllMembers(pid);
+
+	}
+
+	private void activateItem(String guid) {
+		String pid = guid.replace("/", "-");
+		logger.info("Activate object: {}", pid);
+		fedoraService.activate(pid);
 	}
 
 	private void reportViaJms(JobExecution jobExecution) {
