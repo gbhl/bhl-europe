@@ -84,6 +84,10 @@ public class AkubraTest {
 		String externalFile = fileMapper.getExternalFile(URI
 				.create("file:a0/00/te/st/a000test/a000test_dc.xml"));
 		Assert.assertEquals("DC", externalFile);
+		
+		externalFile = fileMapper.getExternalFile(URI
+				.create("file:a0/00/te/st/a000test/a000test_full_dc.xml"));
+		Assert.assertEquals("FULL_DC", externalFile);
 
 		externalFile = fileMapper.getExternalFile(URI
 				.create("file:a0/00/te/st/a000test/dc/a000test_00001.xml"));

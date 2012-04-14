@@ -32,7 +32,7 @@
 		<description>Generate all object-based derivatives from Fedora
 			Repository</description>
 		<step id="generateObjectBasedDerivatives">
-			<tasklet allow-start-if-complete="true">
+			<tasklet>
 				<chunk reader="fedoraObjectReader" processor="singleObjectConversionProcessor"
 					writer="datastreamDerivativeWriter" commit-interval="${batch.commit.interval}" />
 			</tasklet>

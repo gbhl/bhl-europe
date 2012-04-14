@@ -72,7 +72,13 @@ public class CompletePdfConverter extends AbstractDataStreamConverter implements
 		request.setResolution(new Resolution("medium"));
 		String[] pageUris = PID_EXTRACTOR.getPageURIs(guid, "");
 		request.setPageURIs(pageUris);
-		downloadGateway.download(request);
+		try {
+			downloadGateway.download(request).get();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override

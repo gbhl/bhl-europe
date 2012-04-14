@@ -107,6 +107,10 @@ br.numLeafs = bookInfo.pages.length;
 br.bookTitle= bookInfo.title;
 br.bookUrl  = bookInfo.url;
 
+if ('undefined' != typeof(bookInfo.pages[parseInt(bookInfo.entryPageIndex)])){
+	br.titleLeaf = bookInfo.pages[parseInt(bookInfo.entryPageIndex)].name;
+}
+
 // Override the path used to find UI images
 br.imagesBaseURL = '../images/';
 

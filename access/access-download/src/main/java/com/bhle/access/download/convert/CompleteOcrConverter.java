@@ -70,7 +70,13 @@ public class CompleteOcrConverter extends AbstractDataStreamConverter implements
 		request.setContentType(ContentType.OCR);
 		String[] pageUris = PID_EXTRACTOR.getPageURIs(guid, "");
 		request.setPageURIs(pageUris);
-		downloadGateway.download(request);
+		try {
+			downloadGateway.download(request).get();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
