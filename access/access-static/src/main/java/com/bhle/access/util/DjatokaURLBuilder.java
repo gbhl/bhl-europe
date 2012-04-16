@@ -10,6 +10,7 @@ public class DjatokaURLBuilder {
 	private static final String RFT_ID = "rft_id";
 	private static final String SVC_ID = "svc_id";
 	private static final String SVC_FORMAT = "svc.format";
+	private static final String SVC_VAL_FMT = "svc_val_fmt";
 	private static final String SVC_LEVEL = "svc.level";
 
 	private static final int DEFAULT_LEVEL = 3;
@@ -21,17 +22,18 @@ public class DjatokaURLBuilder {
 	public static URL build(URL referent) {
 		return build(referent, DEFAULT_LEVEL);
 	}
-	
+
 	public static URL build(URL referent, int level) {
 		URL url = null;
 		try {
 			url = new URL(BASE_URL + "resolver?" + getUrlVersion() + "&"
 					+ getRefId(referent) + "&" + getSvcId() + "&"
-					+ getSvcFormat() + "&" + getSvcLevel(level));
+					+ getSvcFormat() + "&" + getSvcValFmt() + "&"
+					+ getSvcLevel(level));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
-		
+
 		return url;
 	}
 
@@ -53,6 +55,10 @@ public class DjatokaURLBuilder {
 
 	private static String getRefId(URL referent) {
 		return getParameter(RFT_ID, referent.toString());
+	}
+
+	public static String getSvcValFmt() {
+		return getParameter(SVC_VAL_FMT, "info:ofi/fmt:kev:mtx:jpeg2000");
 	}
 
 	private static String getParameter(String key, String value) {
