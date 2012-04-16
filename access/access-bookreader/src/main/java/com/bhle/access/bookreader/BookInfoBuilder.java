@@ -11,13 +11,9 @@ import java.util.List;
 
 import net.sf.json.JSONObject;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.im4java.core.Info;
-import org.im4java.core.InfoException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bhle.access.domain.Derivative;
 import com.bhle.access.storage.StorageService;

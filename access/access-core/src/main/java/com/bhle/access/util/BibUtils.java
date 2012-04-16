@@ -99,7 +99,6 @@ public class BibUtils {
 			} else {
 				pb = new ProcessBuilder(XML2END_PATH, tmp.getAbsolutePath());
 			}
-			System.out.println(XML2END_PATH + " " + tmp.getAbsolutePath());
 			Process process = pb.start();
 			return process.getInputStream();
 		} catch (IOException e) {

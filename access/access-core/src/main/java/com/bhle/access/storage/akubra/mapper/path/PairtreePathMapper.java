@@ -1,6 +1,7 @@
 package com.bhle.access.storage.akubra.mapper.path;
 
 import java.net.URI;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -8,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import com.bhle.access.util.FedoraURI;
 
 public class PairtreePathMapper implements PathMapper {
-	
+
 	private int fixedPathLength;
 
 	public PairtreePathMapper(int fixedPathLength) {
@@ -20,7 +21,7 @@ public class PairtreePathMapper implements PathMapper {
 		StringBuffer fullPath = new StringBuffer();
 
 		String guid = fedoraURI.getGuid();
-		
+
 		int pathLengthCount = 0;
 		for (int i = 0; i < guid.length(); i++) {
 			fullPath.append(guid.charAt(i));
@@ -39,15 +40,16 @@ public class PairtreePathMapper implements PathMapper {
 		String pid = null;
 		int lashSlash = path.lastIndexOf("/");
 		String fileName = path.substring(lashSlash + 1);
-		String[] fileNameFrags = fileName.split("[_\\.]");
-		
-		
-		if (fileNameFrags.length == 3) {
-			if (Pattern.matches("\\d+", fileNameFrags[1])){
-				pid = FedoraURI.getPidFromGuid(fileNameFrags[0]) + "-" + fileNameFrags[1];
+		Pattern pattern = Pattern.compile("^([^_/]+)_(\\S+)\\.(\\w+)$");
+		Matcher matcher = pattern.matcher(fileName);
+
+		if (matcher.find()) {
+			if (Pattern.matches("\\d+", matcher.group(2))) {
+				pid = FedoraURI.getPidFromGuid(matcher.group(1)) + "-"
+						+ matcher.group(2);
 				return pid;
 			} else {
-				pid = FedoraURI.getPidFromGuid(fileNameFrags[0]);
+				pid = FedoraURI.getPidFromGuid(matcher.group(1));
 				return pid;
 			}
 		} else {

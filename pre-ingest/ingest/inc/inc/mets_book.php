@@ -1,6 +1,12 @@
 <?php
+// ********************************************
+// ** FILE:    METS_BOOK.PHP                 **
+// ** PURPOSE: BHLE INGESTION & PREPARATION  **
+// ** DATE:    23.03.2012                    **
+// ** AUTHOR:  ANDREAS MEHRRATH              **
+// ********************************************
 
-// PARSE + EDIT BOOK XML
+// PARSE + EDIT BOOK XML OR SERIAL LEVEL MAIN XML
 
 // INCOMING: $curElement, $nodeAttributes, $nodeValue
 
@@ -22,6 +28,16 @@ foreach ($nodeAttributes as $nodeAttribute)
         if ($nodeAttribute->name == 'about')
         $curElement->setAttribute('rdf:about','info:fedora/'.$cleanObjID);
     }
+
+    // <isMemberOf  --> rdf:resource="info:fedora/bhle:a0hhmgs3"
+    //                  rdf:resource="info:fedora/bhle:10706/a0000000000013270571001"
+    // SERIALS CHILD - sLevel > 0
+    if ($nodeName=='isMemberOf')
+    {
+        if (($nodeAttribute->name == 'resource')&&($cleanObjParentID!=""))
+        $curElement->setAttribute('rdf:resource','info:fedora/'.$cleanObjParentID);
+    }
+    
 }
 
 

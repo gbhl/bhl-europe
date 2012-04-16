@@ -40,7 +40,7 @@ class i18nSelectTestCase extends Drupali18nTestCase {
     $this->drupalPost(NULL, array(), t('Save settings'));
 
     // Create some content and check selection modes
-    $this->drupalLogin($this->translator);
+    $this->drupalLogin($this->content_editor);
 
     // variable_set('language_content_type_story', 1);
     $neutral = $this->drupalCreateNode(array('type' => 'page', 'promote' => 1));

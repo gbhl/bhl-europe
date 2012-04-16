@@ -13,6 +13,4 @@
 	<import resource="classpath*:/META-INF/spring/integration-context.xml" />
 	<import resource="classpath*:/META-INF/spring/jms-context.xml" />
 	
-	<import resource="classpath*:/META-INF/spring/batch/jobs/batch-ingest-job.xml" />
-	
 </beans>

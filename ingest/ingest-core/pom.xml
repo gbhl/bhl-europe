@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.bhle</groupId>
 	<artifactId>ingest-core</artifactId>
-	<version>${project.parent.version}</version>
+	<version>1.5</version>
 	<packaging>jar</packaging>
 	<name>ingest-core</name>
 	<url>http://maven.apache.org</url>
@@ -158,4 +158,5 @@
 			<url>https://m2.duraspace.org/content/repositories/thirdparty</url>
 		</repository>
 	</repositories>
+
 </project>

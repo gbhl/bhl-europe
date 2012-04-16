@@ -17,8 +17,6 @@ import org.springframework.stereotype.Component;
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraClientException;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
-import com.yourmediashelf.fedora.client.request.FedoraRequest;
-import com.yourmediashelf.fedora.client.request.GetObjectProfile;
 import com.yourmediashelf.fedora.client.response.FedoraResponse;
 import com.yourmediashelf.fedora.client.response.FindObjectsResponse;
 import com.yourmediashelf.fedora.client.response.GetDatastreamResponse;
@@ -111,8 +109,25 @@ public class FedoraUtil {
 				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + pid
 				+ "> " + "and $object <fedora-model:hasModel> <info:fedora/"
 				+ contentModel + ">)";
-		
-		logger.debug("RI Search:" + query);
+
+		try {
+			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
+					.lang("itql").format("csv").type("tuples").execute(client);
+			String csv = IOUtils.toString(riSearchResponse
+					.getEntityInputStream());
+			return CsvUtil.readOneColumnCsv(csv);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static String[] getAllMemberOfPid(String pid) {
+		String query = "select $object from <#ri> "
+				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + pid
+				+ "> " + "or $object <dc:identifier> " + "'" + pid + "')";
 		
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
@@ -148,13 +163,14 @@ public class FedoraUtil {
 
 	public static Date getLastModifiedDate(String pid) {
 		try {
-			GetObjectProfileResponse response = FedoraClient.getObjectProfile(pid).execute(client);
+			GetObjectProfileResponse response = FedoraClient.getObjectProfile(
+					pid).execute(client);
 			return response.getLastModifiedDate();
 		} catch (FedoraClientException e) {
 			e.printStackTrace();
 		}
 		return null;
-		
+
 	}
 
 	public static void ingestFOXML(File file) {
@@ -167,9 +183,10 @@ public class FedoraUtil {
 
 	public static void ingestFOXML(InputStream in) {
 		try {
-			File tmp = File.createTempFile("FEDORATMP", null);
+			File tmp = File.createTempFile("ingest", null);
 			IOUtils.copy(in, FileUtils.openOutputStream(tmp));
 			FedoraClient.ingest().content(tmp).execute(client);
+			tmp.delete();
 		} catch (FedoraClientException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -180,6 +197,14 @@ public class FedoraUtil {
 	public static void purgeObject(String pid) {
 		try {
 			FedoraClient.purgeObject(pid).execute(client);
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void activateObject(String pid) {
+		try {
+			FedoraClient.modifyObject(pid).state("A").execute(client);
 		} catch (FedoraClientException e) {
 			e.printStackTrace();
 		}

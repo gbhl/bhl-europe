@@ -9,8 +9,7 @@
 		<import resource="classpath*:/META-INF/spring/master-context.xml" />
 		<import resource="classpath*:/META-INF/spring/jms-context.xml" />
 		<import resource="classpath*:/META-INF/spring/static-context.xml" />
-		<import resource="classpath*:/META-INF/spring/download-context.xml" />
 		<import resource="classpath*:/META-INF/spring/bookreader-context.xml" />
+		<import resource="classpath*:/META-INF/spring/download-context.xml" />
 		<import resource="classpath*:/META-INF/spring/rest-context.xml" />
-		<import resource="classpath*:/META-INF/spring/oai-context.xml" />
 </beans>

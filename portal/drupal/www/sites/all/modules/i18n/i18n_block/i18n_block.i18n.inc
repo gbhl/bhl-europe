@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook i18n_object_info()
+ * Implements hook_i18n_object_info().
  */
 function i18n_block_i18n_object_info() {
   $info['block'] = array(

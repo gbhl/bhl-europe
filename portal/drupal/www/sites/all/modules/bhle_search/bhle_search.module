@@ -29,7 +29,7 @@
 // Pre-defined variables (note: defaults are based on Solr's default schema)
 define('BHLE_SEARCH_FACET_LIMIT', 1000); // need to index more items then shown
 define('BHLE_SEARCH_FACET_LIST_LIMIT', 1000); // limit of taxons in facet block for each field
-define('BHLE_SEARCH_DEFAULT_LIMIT', 12);
+define('BHLE_SEARCH_DEFAULT_LIMIT', 10);
 define('BHLE_SEARCH_TITLE_FIELD', 'name');
 define('BHLE_SEARCH_AUTHOR_FIELD', 'author');
 define('BHLE_SEARCH_YEAR_FIELD', 'last_modified');
@@ -225,7 +225,7 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
 
     // Check if a valid term was passed
     if (empty($term))
-        $term = BHLE_SEARCH_DEFAULT_TERM;
+        $term = t(BHLE_SEARCH_DEFAULT_TERM);
 
     $form['condition_' . $id] = array(
         '#type' => 'fieldset',
@@ -323,7 +323,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     unset($form['basic']);
 
     // Check if we have to add a new condition, or if the conditions array is empty
-    if( count($_SESSION['bhle_search']['conditions']) <= 0 || (isset($form_state['values']) && $form_state['values']['op'] == t('Add field')) )  {
+    if( count($_SESSION['bhle_search']['conditions']) <= 0 || (isset($form_state['values']) && $form_state['values']['op'] == t('Add field') . ' / AND') )  {
         $_SESSION['bhle_search']['conditions'][] = array('term' => '', 'field' => '', 'operator' => '', 'exact_phrase' => 0);
     }
     // else check if we want to remove one
@@ -397,7 +397,7 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
     );
     $form['add'] = array(
         '#type' => 'button',
-        '#value' => t('Add field'),
+        '#value' => t('Add field') . ' / AND',
         '#weight' => $weight++,
         '#ajax' => array(
             'callback' => 'bhle_search_advanced_add_ajax',
@@ -740,19 +740,30 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         return array();
     }
     //set parameters to get the requested page
-    if ($_GET['per_list']) { $params['rows'] = $_GET['per_list']; } else { $params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT; }
-    $params['start'] = pager_find_page() * BHLE_SEARCH_DEFAULT_LIMIT;
-
-    $facetparams = $params;
-    $facetparams['rows'] = BHLE_SEARCH_FACET_LIMIT;
-    $facetparams['start'] = 0;
+    if ($_GET['per_list']) {
+      $params['rows'] = $_GET['per_list'];
+      $_SESSION['bhle-per-page'] = $_GET['per_list'];
+    } elseif ($_SESSION['bhle-per-page']){
+      $params['rows'] = $_SESSION['bhle-per-page'];
+    } else {
+      $_SESSION['bhle-per-page'] = BHLE_SEARCH_DEFAULT_LIMIT;
+      $params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT;
+    }
+    $params['start'] = pager_find_page() * $params['rows'];
+    
 
     try {
-        // Query solr
-        //dpm('query: ' . $query);
-        //$query = '(mods_title:flora OR mods_author:darwin OR contentType:book) AND mods_record_content_source:(DLC)';
+        $params['facet'] = 'true';
+        $facet_field_map = bhle_search_facet_field_map();
+        foreach ($facet_field_map as $facet_field => $facet_name) {
+          $params['facet.field'][] = $facet_field;
+        }
+        
         $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
+        $facets = $responseObj->facet_counts->facet_fields;
+        //dpm($response);
+        //dpm($facets, 'facets');
         // Check if we found something
         // ----------------------------------------------
         // configuration of the result list items
@@ -765,39 +776,37 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         // ----------------------------------------------
 
         $_SESSION['bhle_search']['numFound'] = $response->numFound;
-        pager_default_initialize($response->numFound, BHLE_SEARCH_DEFAULT_LIMIT);
+        pager_default_initialize($response->numFound,  $params['rows']);
         if ($response->numFound > 0) {
 //             if(module_exists('devel')) { dpm($response); };
             $docs = $response->docs;
-            $doc_index = 0;
-
+            $doc_index = 0;            
+            
             // specify rows(docs) to display on page
-            $more = $display_start + BHLE_SEARCH_DEFAULT_LIMIT; // just shortener
+            $more = $display_start +  $params['rows']; // just shortener
             $less = $display_start + $response->numFound; // just shortener
-            $display_start = pager_find_page() * BHLE_SEARCH_DEFAULT_LIMIT;
-            $display_end = $response->numFound < BHLE_SEARCH_DEFAULT_LIMIT ? $less : $more;
-
+            $display_start = pager_find_page() *  $params['rows'];
+            $display_end = $response->numFound <  $params['rows'] ? $less : $more;
+            
+            
+            global $bhle_pager;
+            $bhle_pager['total_pages'] = $response->numFound / $params['rows'];
+            $bhle_pager['current_page'] = pager_find_page();
 
 
             /* PREPARE FACET FOR BLOCK */
-            $facet_field_map = bhle_search_facet_field_map(); // TODO: check if simple of advanced
+            // TODO: check if simple of advanced
             global $bhle_facet;
-
-            foreach ($docs as $doc) { // prepare for facets
-              foreach($facet_field_map as $field_name => $field_label) {
-                //$facet_prepare[$field_name]['#title'] = $field_label;
-                if (is_array($doc->$field_name)) {
-                  foreach ($doc->$field_name as $field_value) {
-                    $facet_prepare[$field_name][$field_value]++;
-                    //dpm($field_value);
-                  }
-                } else {
-                  $field_value = _solrdoc_getField($doc, $field_name);
-                  $facet_prepare[$field_name][$field_value]++;
+            //dpm($responseObj);
+            foreach($facets as $field_name => $field) {
+              foreach ($field as $name => $value) {
+                if(ord($name) != 1 && $value) {
+                  $facet_prepare[$field_name][$name] = $value;
                 }
 
               }
             }
+            
             foreach($facet_prepare as $field_name => $field_value) {
               //dpm($facet_prepare[$field_name]);
               ksort($facet_prepare[$field_name]);
@@ -812,9 +821,10 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
               }
               unset($i);
             }
+            
             $_SESSION['bhle_search']['facet']['fields'] = $bhle_facet['fields'];
             /* END PREPARE FACET  */
-
+            $doc_index = $params['start'];
             foreach ($docs as $doc) {
                 //$doc = $docs[$i];
                 $even_odd = $doc_index % 2 == 0 ? 'even' : 'odd';
@@ -885,19 +895,19 @@ function bhle_search_facet_field_map($type = 'simple') {
         case 'advanced':
             return array(
               "contentType" => t("Material type"),
-              "mods_name" => t("Author name"),
-              "mods_date_issued" => t("Year"),
+              "mods_name__exact" => t("Author name"),
+              "mods_date_issued__exact" => t("Year"),
               "mods_language" => t("Language"),
-              "mods_record_content_source" => t("Content provider"),
+              "mods_record_content_source__exact" => t("Content provider"),
               "olef_scientific_name" => t("Scientific name")
             );
         case 'simple':
             return array(
               "contentType" => t("Material type"),
-              "mods_name" => t("Author name"),
-              "mods_date_issued" => t("Year"),
+              "mods_name__exact" => t("Author name"),
+              "mods_date_issued__exact" => t("Year"),
               "mods_language" => t("Language"),
-              "mods_record_content_source" => t("Content provider"),
+              "mods_record_content_source__exact" => t("Content provider"),
               "olef_scientific_name" => t("Scientific name")
             );
     }

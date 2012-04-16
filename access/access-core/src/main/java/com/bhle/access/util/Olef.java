@@ -64,7 +64,6 @@ public class Olef {
 						+ "]/olef:pages/olef:page/olef:name/text()",
 				XPathConstants.STRING);
 		if (pageName == null || pageName.equals("")) {
-			System.out.println("Not Found");
 			pageName = String.valueOf(i + 1);
 		}
 		return pageName;

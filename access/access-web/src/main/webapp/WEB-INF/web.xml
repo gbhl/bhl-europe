@@ -3,20 +3,26 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 	<display-name>BHL-E Access Web Application</display-name>
-	
+
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			classpath:/org/springframework/batch/admin/web/resources/webapp-config.xml
 		</param-value>
 	</context-param>
-	
+
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<!-- <filter-mapping> <filter-name>springSecurityFilterChain</filter-name> 
-		<url-pattern>/*</url-pattern> </filter-mapping> -->
+	<filter>
+		<filter-name>HiddenMethodFilter</filter-name>
+		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>HiddenMethodFilter</filter-name>
+		<servlet-name>Batch Servlet</servlet-name>
+	</filter-mapping>
 
 	<servlet>
 		<servlet-name>Batch Servlet</servlet-name>

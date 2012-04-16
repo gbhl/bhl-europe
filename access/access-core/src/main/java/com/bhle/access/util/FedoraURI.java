@@ -44,7 +44,7 @@ public class FedoraURI {
 		this.scheme = uri.getScheme();
 		String path = uri.getSchemeSpecificPart();
 		Pattern pattern = Pattern
-				.compile("^fedora/((\\w+):(?:[^-/]+)-([^-/]+)-?(\\d*))/?(\\w*)$");
+				.compile("^fedora/((\\w+):(?:[^-/]+)-([^-/]+)-?(\\d*))/?(\\S*)$");
 		Matcher matcher = pattern.matcher(path);
 		if (matcher.find()) {
 			pid = matcher.group(1);
@@ -107,5 +107,4 @@ public class FedoraURI {
 		return new FedoraURI(URI.create(DEFAULT_SCHEME + ":fedora/"
 				+ getPidFromGuid(guid) + "-" + serialNumber + "/" + dsid));
 	}
-
 }

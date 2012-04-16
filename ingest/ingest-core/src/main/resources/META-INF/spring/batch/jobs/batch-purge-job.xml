@@ -9,11 +9,19 @@
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<context:component-scan base-package="com.bhle.ingest.batch" />
+	<beans:bean id="aipReader" class="com.bhle.ingest.batch.AipReader"
+		scope="step">
+		<beans:property name="guid" value="#{jobParameters[GUID]}" />
+		<beans:property name="client" ref="fedoraClient" />
+	</beans:bean>
+
+	<beans:bean id="aipPurger" class="com.bhle.ingest.batch.AipPurger">
+		<beans:property name="client" ref="fedoraClient" />
+	</beans:bean>
 
 	<job id="batchPurgeJob">
 		<step id="main">
-			<tasklet>
+			<tasklet allow-start-if-complete="true">
 				<chunk reader="aipReader" writer="aipPurger" commit-interval="${batch.commit.interval}" />
 			</tasklet>
 		</step>

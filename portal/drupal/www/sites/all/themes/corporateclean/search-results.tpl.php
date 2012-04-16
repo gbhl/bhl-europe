@@ -32,15 +32,19 @@
 
       <div id="results-number-box">
         <div id="results-number-label">
-          <?php print t('Items per page:'); ?> <span></span></a>                            
+          <?php print t('Items per page:') . ' ' . $_SESSION['bhle-per-page']; ?> <span></span></a>                            
         </div>
         <ul id="results-number">
-          <li><a href="?per_list=5">5</a></li>
-          <li class="selected"><a href="?per_list=10">10</a></li>
-          <li><a href="?per_list=15">15</a></li>
-          <li><a href="?per_list=20">20</a></li>
-          <li><a href="?per_list=25">25</a></li>
-          <li><a href="?per_list=30">30</a></li>
+          <?php
+          $nums = array(5, 10, 15, 20, 25, 30);
+          foreach ($nums as $num) {
+            if($_SESSION['bhle-per-page'] == $num) {
+              print '<li class="selected"><a href="?per_list=' . $num . '">' . $num . '</a></li>';
+            } else {
+              print '<li><a href="?per_list=' . $num . '">' . $num . '</a></li>';
+            }
+          }
+          ?>
         </ul>
       </div>
 

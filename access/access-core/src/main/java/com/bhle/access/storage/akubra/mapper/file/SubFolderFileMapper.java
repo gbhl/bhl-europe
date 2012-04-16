@@ -1,6 +1,7 @@
 package com.bhle.access.storage.akubra.mapper.file;
 
 import java.net.URI;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
@@ -10,7 +11,7 @@ import com.bhle.access.convert.ConverterManager;
 import com.bhle.access.util.FedoraURI;
 
 public class SubFolderFileMapper implements FileMapper {
-	
+
 	private static final Logger logger = LoggerFactory
 			.getLogger(SubFolderFileMapper.class);
 
@@ -54,15 +55,16 @@ public class SubFolderFileMapper implements FileMapper {
 		String dsid = null;
 		int lashSlash = path.lastIndexOf("/");
 		String fileName = path.substring(lashSlash + 1);
-		String[] fileNameFrags = fileName.split("[_\\.]");
+		Pattern pattern = Pattern.compile("^([^_/]+)_(\\S+)\\.(\\w+)$");
+		Matcher matcher = pattern.matcher(fileName);
 
-		if (fileNameFrags.length == 3) {
-			if (Pattern.matches("\\d+", fileNameFrags[1])) {
+		if (matcher.find()) {
+			if (Pattern.matches("\\d+", matcher.group(2))) {
 				int secondToLast = path.lastIndexOf("/", lashSlash - 1);
 				dsid = path.substring(secondToLast + 1, lashSlash);
 				return dsid.toUpperCase();
 			} else {
-				dsid = fileNameFrags[1];
+				dsid = matcher.group(2);
 				return dsid.toUpperCase();
 			}
 		} else {

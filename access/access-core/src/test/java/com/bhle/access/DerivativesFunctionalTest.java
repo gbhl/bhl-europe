@@ -35,6 +35,6 @@ public class DerivativesFunctionalTest extends BaseTest {
 	@Test
 	public void testExistenceOfDerivatives() throws IOException,
 			InterruptedException {
-		logger.info("testExistenceOfDerivatives");
+		Thread.sleep(5000);
 	}
 }

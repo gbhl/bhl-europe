@@ -123,5 +123,4 @@ function corporateclean_preprocess_page(&$vars) {
     $vars['title'] = FALSE;
   }
 }
-
 ?>

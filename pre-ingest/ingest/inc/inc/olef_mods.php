@@ -5,7 +5,7 @@
 // ** DATE:    23.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
-// OLEF MODIFICATIONS
+// OLEF MODIFICATIONS POSTPROCESSING
 
 echo "<h3>Finishing OLEF Data</h3><pre>";
 
@@ -135,12 +135,27 @@ if ((!file_content_exists($olef_file,$recordContentSource."</mods:".$newNodeName
     // --------------------------------------------------------------------------------
     $node3 = $domDoc->createElement("mods:".$newNodeName,  $recordContentSource);
     $node3->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
-    
-    $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
+    $done = false;
+    
+    $bis = $domDoc->getElementsByTagName("recordInfo");
+    
     foreach($bis as $bi) {
         $element = $bi;
         $newnode = $element->appendChild($node3);
+        $done=true;
+    }
+    
+    unset($bis); unset($bi);
+    
+    if (!$done){
+        $bis = $domDoc->getElementsByTagName("mods:recordInfo");
+        
+        foreach($bis as $bi) {
+            $element = $bi;
+            $newnode = $element->appendChild($node3);
+            $done=true;
+        }        
     }
 
     // SPEICHERN MODIFIZIERTEN OLEF

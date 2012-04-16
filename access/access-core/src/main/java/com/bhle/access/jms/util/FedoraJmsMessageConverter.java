@@ -5,11 +5,13 @@ import javax.jms.Message;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.jms.support.converter.MessageConversionException;
 import org.springframework.jms.support.converter.MessageConverter;
 
 public class FedoraJmsMessageConverter implements MessageConverter{
-
+	
 	public Object fromMessage(Message message) throws JMSException,
 			MessageConversionException {
 		TextMessage tm = (TextMessage) message;

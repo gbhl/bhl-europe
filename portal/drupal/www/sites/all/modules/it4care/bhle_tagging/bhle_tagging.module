@@ -15,6 +15,11 @@ function bhle_tagging_menu() {
     'access callback' => 'bhle_tagging_access',
     'type' => MENU_CALLBACK,
   );
+  $items['bhle-basket/download'] = array(
+    'page callback' => 'bhle_tagging_basket_download',
+    'access callback' => 'bhle_tagging_access',
+    'type' => MENU_CALLBACK,
+  );
   $items['bhle-tagging/%'] = array(
     'title callback' => 'bhle_tagging_operation_title',
     'title arguments' => array(1),
@@ -67,9 +72,18 @@ function bhle_tagging_operation_title($pid) {
  */
 function bhle_tagging_basket_page() {
   if(is_array($_SESSION['bhle-tagging'])) {
+    $header = array(t('ID'), t('Title'), t('Remove from basket'));
     foreach ($_SESSION['bhle-tagging'] as $pid => $item) {
-      $output .= l($item, 'bhle-view/' . $pid) . ' ( ' . $pid . ' )<br />';
+      $rows[] = array(
+        $pid,
+        l($item, 'bhle-view/' . $pid),
+        drupal_render(drupal_get_form('bhle_tagging_operation_form', $pid, $title))
+      );
     }
+    $output = theme('table', array('header' => $header, 'rows' => $rows));
+//    $output .= '<div class="messages ok">';
+    $output .= l(t('Download metadata from my basket'), 'bhle-basket/download', array('attributes' => array('class' => 'bhle-basket-button')));
+//    $output .= '</div>';
   } else {
     $output = t('No item in your basket.');
   }
@@ -87,7 +101,7 @@ function bhle_tagging_operation_form($form, &$form_state, $pid = NULL, $title = 
   drupal_load('module', 'transliteration');
   module_load_all_includes('inc', 'transliteration');
   $safe_pid = str_replace(':', '-', transliteration_get($pid));
-  $form['#prefix'] = '<div id="bhle-tag-' . $safe_pid . '">';
+  $form['#prefix'] = '<div id="bhle-tag-' . $safe_pid . '" class="result-buttons radius gradient-vertical-grey">';
   $form['#suffix'] = '</div>';
   //$form['#action'] = 'bhle-tagging/' . $pid;
   $form['submit']['do'] = array(
@@ -195,4 +209,117 @@ function bhle_tagging_block_view($delta = '') {
       break;
   }
   return $block;
+}
+
+
+function bhle_tagging_basket_download() {
+  if(is_array($_SESSION['bhle-tagging'])) {
+    foreach($_SESSION['bhle-tagging'] as $pid => $item) {
+      drupal_load('module', 'bhle_item');
+      $uri_mods = bhle_tagging_prepare_meta($pid, 'mods');
+      if($uri_mods) { $files[] = $uri_mods; }
+      
+      $uri_endnote = bhle_tagging_prepare_meta($pid, 'endnote');
+      if($uri_endnote) { $files[] = $uri_endnote; }
+      
+      $uri_bibtex = bhle_tagging_prepare_meta($pid, 'bibtex');
+      if($uri_bibtex) { $files[] = $uri_bibtex; }
+      
+      $uri_abstract = bhle_tagging_prepare_meta($pid, 'abstract');
+      if($uri_abstract) { $files[] = $uri_abstract; }
+      
+      $uri_summary = bhle_tagging_prepare_meta($pid, 'summary');
+      if($uri_summary) { $files[] = $uri_summary; }
+    }
+    
+    $zip = new ZipArchive();
+    $zipuri = 'temporary://bhl-europe-basket--' . date('Y-m-d--h-m-s') .'.zip';
+    $filename = drupal_realpath($zipuri);
+    
+    
+    if ($zip->open($filename, ZIPARCHIVE::CREATE)!== TRUE) {
+      $output .= "cannot open <$filename><br />";
+    } else {
+      foreach ($files as $fileuri) {
+        $zip->addFile(drupal_realpath($fileuri), basename($fileuri));
+        $output .= "numfiles: " . $zip->numFiles . "<br />";
+        $output .= "status:" . $zip->status . "<br />";
+      }
+      $zip->close();
+    }
+    
+        
+    $headers = array(
+      'Content-Disposition:' => 'attachment; filename="' . basename($zipuri) . '"',
+      'Content-Transfer-Encoding' => 'binary',
+      'Content-Type'              => 'force-download',
+    );
+    file_transfer($zipuri, $headers);
+    
+  } else {
+    return t('No items in basket to download.');
+  }
+}
+
+function bhle_tagging_prepare_meta($pid, $type = 'summary') {
+  $pos = strpos($pid, '-');
+  $bid = substr($pid, $pos + 1);
+  switch ($type) {
+    case 'summary':
+    case 'abstract':
+      $ext = 'txt';
+      break;
+    default:
+      $ext = $type;
+      break;
+  }
+
+  $uri = 'temporary://' . transliteration_get($bid) . '_' . $type . '.' . $ext;
+  if(!file_exists($uri)) {
+    switch ($type) {
+      case 'summary':
+        $item = bhle_item_load($pid);
+        $rendered = _template_preprocess_bhle_item($item);
+        $content = str_replace('</label>', ': ', $rendered['meta_summary_source']);
+        $content = str_replace('</li>', "\r\n", $content);
+        $content = strip_tags($content);
+        break;
+      case 'abstract' :
+        $item = bhle_item_load($pid);
+        $rendered = _template_preprocess_bhle_item($item);
+        $content = $rendered['meta_abstract_source'];
+        break;
+        break;
+      case 'mods':
+        $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
+        break;
+      case 'endnote':
+        $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_ENDNOTE_URI);
+        break;
+      case 'bibtex':
+        $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
+        break;
+    }
+
+    switch ($type) {
+      default:
+        $type = 'summary';
+
+      case 'summary':
+      case 'abstract':
+        $data = $content;
+        break;
+      case 'mods':
+      case 'endnote':
+      case 'bibtex':
+        $response = drupal_http_request($url);
+        $data = $response->data;
+    }
+    if(!empty($data)) {
+      file_save_data($data, $uri, FILE_EXISTS_REPLACE);
+    } else {
+      return false;
+    }
+  }
+  return $uri;
 }

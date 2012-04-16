@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jms="http://www.springframework.org/schema/jms" xmlns:amq="http://activemq.apache.org/schema/core"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd">
+
+	<import resource="classpath:/META-INF/spring/master-context.xml" />
+	
+	<amq:queue id="inboundDestination" physicalName="TEST.PREINGEST" />
+	<amq:topic id="outboundDestination" physicalName="TEST.INGEST" />
+
+	<bean class="org.springframework.jms.listener.SimpleMessageListenerContainer">
+		<property name="connectionFactory" ref="preingestConnectionFactory" />
+		<property name="destination" ref="outboundDestination" />
+		<property name="messageListener" ref="preingestJmsConsumerAdapter" />
+	</bean>
+
+	<amq:connectionFactory id="preingestConnectionFactory" brokerURL="${jms.broker.url}"/>
+
+	<bean id="preingestJmsProducerTemplate" class="org.springframework.jms.core.JmsTemplate"
+		p:connectionFactory-ref="preingestConnectionFactory" p:defaultDestination-ref="inboundDestination"/>
+
+	<bean id="preingestJmsProducer" class="com.bhle.ingest.jms.PreingestJmsProducerStub" />
+	<bean id="preingestJmsConsumer" class="com.bhle.ingest.jms.PreingestJmsConsumerStub" />
+
+	<bean id="preingestJmsConsumerAdapter"
+		class="org.springframework.jms.listener.adapter.MessageListenerAdapter">
+		<property name="delegate" ref="preingestJmsConsumer" />
+		<property name="defaultListenerMethod" value="onMessage" />
+	</bean>
+
+</beans>

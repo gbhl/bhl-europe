@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/integration"
+	xmlns:amq="http://activemq.apache.org/schema/core" xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context 
+                        http://www.springframework.org/schema/context/spring-context.xsd
+                        http://www.springframework.org/schema/integration
+						http://www.springframework.org/schema/integration/spring-integration.xsd
+						http://activemq.apache.org/schema/core 
+                        http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd
+						http://www.springframework.org/schema/integration/jms
+						http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd">
+
+	<context:component-scan base-package="com.bhle.access.integration" />
+
+	<channel id="inboundFedoraMessageChannel" />
+
+	<int-jms:message-driven-channel-adapter
+		channel="inboundFedoraMessageChannel" extract-payload="true"
+		destination="updateDestination" connection-factory="jmsFactory" 
+		message-converter="fedoraJmsMessageConverter" />
+
+	<service-activator input-channel="inboundFedoraMessageChannel"
+		output-channel="inboundPidChannel" ref="inboundFedoraMessageProcessor" />
+
+	<channel id="inboundPidChannel" />
+
+	<transformer ref="jobLaunchRequestTransformer"
+		input-channel="inboundPidChannel" output-channel="jobLaunchChannel" />
+
+	<channel id="jobLaunchChannel" />
+
+	<beans:bean id="jobMessageHandler"
+		class="org.springframework.batch.integration.launch.JobLaunchingMessageHandler">
+		<beans:constructor-arg ref="jobLauncher" />
+	</beans:bean>
+	<service-activator input-channel="jobLaunchChannel"
+		output-channel="statusChannel" ref="jobMessageHandler" />
+
+	<channel id="statusChannel">
+		<queue capacity="100" />
+	</channel>
+
+</beans:beans>

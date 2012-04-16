@@ -210,6 +210,8 @@ function i18n_string_update_7000() {
   variable_del('i18nstrings_allowed_textgroups');
   // If we've got old table from D6, move data to new one
   if (db_table_exists('i18n_strings')) {
+    // First of all clean up strings that don't have a locale source, see http://drupal.org/node/1186692
+    db_query("DELETE FROM {i18n_strings} WHERE lid NOT IN (SELECT lid FROM {locales_source})");
     db_query("INSERT INTO {i18n_string}(lid, objectid, type, property, objectindex, format) SELECT lid, objectid, type, property, objectindex, format FROM {i18n_strings}");
     // Update and populate textgroup field
     db_query("UPDATE {i18n_string} s SET s.textgroup = (SELECT l.textgroup FROM {locales_source} l WHERE l.lid = s.lid)");
@@ -232,26 +234,26 @@ function i18n_string_update_7001() {
  * Notes for update script
  */
 // Added fields: context, textgroup
-// 
+//
 // Drop all indexes from locales_source
 // Update format field
 // Update string names: profile, cck => field
-// Update string names: 
+// Update string names:
 
 /**
  * Old strings to update. All these will be handled by i18n_field module
- * 
+ *
  * 'cck:field:'. $content_type .'-'. $field_name .':widget_label'
  *  --> 'field:$field_name:$bundle:label' (though not used atm)
  * 'cck:field:'. $content_type .'-'. $field_name .':widget_description'
  *  --> 'field:$field_name:$bundle:description'
  * 'cck:fieldgroup:'. $content_type .'-'. $group_name .':display_description'
- * 'cck:fieldgroup:'. $content_type .'-'. $group_name .':form_description', $group['settings']['form']['description']); 
- * 
+ * 'cck:fieldgroup:'. $content_type .'-'. $group_name .':form_description', $group['settings']['form']['description']);
+ *
  * Profile:
  * profile:field:$field_name:title|explanation|options
  * "profile:category", $field->category
- * 
+ *
  * Node type
  *  nodetype:type:[type]:[property] -> node:type:[type]:[property]
  *  Property names: title -> title_label

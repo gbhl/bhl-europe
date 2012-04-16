@@ -19,7 +19,7 @@ function i18n_page_menu_items() {
     if (!empty($info['translate tab'])) {
       $path = $info['translate tab'];
       $localize = module_exists('i18n_string') && !empty($info['string translation']);
-      $translate = module_exists('i18n_translation') && !empty($info['translation set']);
+      $translate = module_exists('i18n_translation') && i18n_translation_set_info($type);
       if ($translate && $localize) {
         $page_callback = 'i18n_page_translate_tab';
       }

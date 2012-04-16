@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.commons.io.comparator.NameFileComparator;
+
 import com.bhle.ingest.integration.FilenameRegexFilter;
 
 public class SipItemsExtractorImpl implements SipItemsExtractor {
@@ -22,6 +24,7 @@ public class SipItemsExtractorImpl implements SipItemsExtractor {
 		if(sipItems == null){
 			return Collections.emptyList();
 		}
+		Arrays.sort(sipItems, NameFileComparator.NAME_COMPARATOR);
 		return Arrays.asList(sipItems);
 	}
 

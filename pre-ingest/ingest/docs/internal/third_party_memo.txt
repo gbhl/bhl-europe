@@ -5,6 +5,29 @@
 
 
 
+bhl-test(1).nhm.ac.uk/preingest
+$HOME/bin deploy_ingest.sh
+
+db_name in config_prod.php umsetzen (test)
+
+issue 365 kontrolle nur ergänzen+hierachie
+beispiel serien 328 monograph serial kernel verw
+383 serial guid zu parent unter recordinfo !
+kein output in leerer section 
+
+
+
+autodetect of serial and monograph
+
+
+
+
+RELS-EXT content is not correctly written for serial content.
+
+No relations to upper-level items is written and furthermore all items are marked as "monographCModel".
+
+
+
 xml templates für 
 andere ebenen einführen 
 

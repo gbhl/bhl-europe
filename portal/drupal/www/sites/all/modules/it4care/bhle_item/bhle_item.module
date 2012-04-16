@@ -4,9 +4,9 @@ define('BHLE_ENDNOTE_URI', 'static/%bid/%bid_endnote.end');
 define('BHLE_BIBTEX_URI', 'static/%bid/%bid_bibtex.bib');
 define('BHLE_THUMBNAIL_URI', 'static/%bid/%bid_thumbnail.jpg');
 define('BHLE_READER_URI', 'access/stream/%bid');
-define('BHLE_PDF_URI', 'static/%bid/%bid_pdf.pdf');
-define('BHLE_JP2_URI', 'static/%bid/%bid_jpg.zip');
-define('BHLE_OCR_URI', 'static/%bid/%bid_ocr.txt');
+define('BHLE_PDF_URI', 'static/%bid/%bid_full_pdf.pdf');
+define('BHLE_JP2_URI', 'static/%bid/%bid_full_jpg.zip');
+define('BHLE_OCR_URI', 'static/%bid/%bid_full_ocr.txt');
 /**
  * Implementats hook_menu().
  */
@@ -198,7 +198,7 @@ function _template_preprocess_bhle_item($item) {
     $rendered['dl_link_bibtex'] = l(t('Download BibTex'), $bibtex_link);
 
     $rendered['thumbnail'] = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_THUMBNAIL_URI);
-    $rendered['read_more_link'] = l('READ SELECTED VOLUME', 'bhle-read/' . $pid);
+    $rendered['read_more_link'] = l(t('READ SELECTED ITEM'), 'bhle-read/' . $pid);
     
     $pdf_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_PDF_URI);
     $rendered['dl_link_pdf'] = l('PDF', $pdf_url, array('attributes' => array('class' => 'biblio-action biblio-action-pdf first')));

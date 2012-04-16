@@ -65,6 +65,8 @@ public class BaseTest implements ResourceLoaderAware {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		logger.info("Activate samples...");
+		FedoraUtil.activateObject("bhle:10706-a000test");
 		logger.info("Done");
 	}
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/integration"
+	xmlns:amq="http://activemq.apache.org/schema/core" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/integration
+							http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<poller default="true" max-messages-per-poll="1000">
+		<interval-trigger interval="1000" fixed-rate="true" />
+	</poller>
+
+	<channel id="inboundDownloadRequestChannel">
+		<priority-queue comparator="downloadRequestPrioritizer" />
+	</channel>
+	<beans:bean id="downloadRequestPrioritizer"
+		class="com.bhle.access.download.DownloadRequestPrioritizer" />
+
+	<gateway id="downloadGateway" service-interface="com.bhle.access.download.DownloadGateway">
+		<method name="download" request-channel="inboundDownloadRequestChannel"
+			reply-channel="outBoundDownloadResponseChannel" />
+	</gateway>
+
+	<service-activator input-channel="inboundDownloadRequestChannel"
+		output-channel="outBoundDownloadResponseChannel" ref="downloadProcessor" />
+
+	<channel id="outBoundDownloadResponseChannel" />
+
+</beans:beans>

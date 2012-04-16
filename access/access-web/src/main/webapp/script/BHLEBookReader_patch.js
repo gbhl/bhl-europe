@@ -74,7 +74,7 @@ BookReader.prototype.addToolBox = function (index, page) {
 			self.positionToolBox(toolbox, page);
 			toolbox.show();
 			
-			//dirty code to trigger event
+			// dirty code to trigger event
 			$(document).trigger('jumpToIndex', [index]);
         }).mouseout(function () {
 			toolbox.hide();
@@ -275,7 +275,12 @@ BookReader.prototype.search = function(term) {
 }
 
 BookReader.prototype.leafNumToIndex = function(pageNum) {
-    return pageNum - 1;
+	for ( var i = 0; i < this.bookInfo.length; i++) {
+		if (pageNum == this.bookInfo.pages[i].name){
+			return i;
+		}
+	}
+	return 0;
 }
 
 BookReader.prototype.blankDownloadDiv = function() {
