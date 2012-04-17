@@ -1,11 +1,11 @@
 package com.bhle.access.bookreader;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URI;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,16 +34,32 @@ public class BookInfoBuilder {
 
 	private static String DSID = "BOOKREADER";
 
+	private static String GUID_BANK_ID;
+
+	public void setGuidBankId(String bankId) {
+		BookInfoBuilder.GUID_BANK_ID = bankId;
+	}
+
+	private static URL DOMAIN_NAME;
+
+	public void setDomainName(String domain) {
+		try {
+			BookInfoBuilder.DOMAIN_NAME = new URL(domain);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+	}
+
 	private static final Logger logger = LoggerFactory
 			.getLogger(BookInfoBuilder.class);
 
 	public static BookInfo build(String guid) {
 		logger.debug("Build BookReader Information");
-		
+
 		BookInfo book = buildBookInfo(guid);
 		buildPageInfo(book, guid);
 		buildTableOfContent(book, guid);
-		
+
 		return book;
 	}
 
@@ -53,6 +69,8 @@ public class BookInfoBuilder {
 		Olef olef = getOlef(guid);
 		book.setOlef(olef);
 		book.setTitle(olef.getTitle());
+		book.setUrl(DOMAIN_NAME + "/portal/bhle-view/bhle:" + GUID_BANK_ID
+				+ "-" + guid);
 		setEntryPage(book, olef);
 		return book;
 	}
@@ -103,15 +121,10 @@ public class BookInfoBuilder {
 	}
 
 	private static void setPageWidthAndHeight(String pageUri, PageInfo page) {
-		try {
-			File pageFile = getPageFilePath(pageUri);
-			int[] dimensions = ImageUtil.tiffToJp2Size(new FileInputStream(
-					pageFile));
-			page.setHeight(dimensions[0]);
-			page.setWidth(dimensions[1]);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		File pageFile = getPageFilePath(pageUri);
+		int[] dimensions = ImageUtil.tiffToJp2Size(pageFile.getAbsolutePath());
+		page.setHeight(dimensions[0]);
+		page.setWidth(dimensions[1]);
 	}
 
 	private static File getPageFilePath(String pageUri) {
@@ -141,7 +154,8 @@ public class BookInfoBuilder {
 		derivative.setPid(FedoraURI.getPidFromGuid(bookInfo.getGuid()));
 		derivative.setDsId(DSID);
 		JSONObject json = JSONObject.fromObject(bookInfo);
-		derivative.setInputStream(IOUtils.toInputStream(json.toString()));
+		InputStream in = IOUtils.toInputStream(json.toString());
+		derivative.setInputStream(in);
 		storageService.updateDerivative(derivative);
 	}
 

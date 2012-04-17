@@ -35,6 +35,7 @@ public class JpegPackageGenerator {
 		for (String pageURI : pageURIs) {
 			AddPageEntry(zipOut, pageURI, resolution);
 		}
+		zipOut.close();
 	}
 
 	private static void AddPageEntry(ZipOutputStream zipOut, String pageUri,
@@ -51,7 +52,7 @@ public class JpegPackageGenerator {
 			URL djatokaURL = DjatokaURLBuilder.build(uri.toURL(), resolution.getLevel());
 			InputStream in = djatokaURL.openStream();
 			IOUtils.copy(in, zipOut);
-			zipOut.close();
+			in.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

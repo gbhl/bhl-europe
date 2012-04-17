@@ -1,16 +1,14 @@
 package com.bhle.access.bookreader;
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
 
 import com.bhle.access.util.Olef;
 
 public class BookInfo {
 	private String guid;
 	private String title;
-	private URL url;
+	private String url;
 	private int entryPageIndex;
 	private List<PageInfo> pages = new ArrayList<PageInfo>();
 
@@ -34,11 +32,11 @@ public class BookInfo {
 		this.title = title;
 	}
 
-	public URL getUrl() {
+	public String getUrl() {
 		return url;
 	}
 
-	public void setUrl(URL url) {
+	public void setUrl(String url) {
 		this.url = url;
 	}
 

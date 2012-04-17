@@ -6,5 +6,7 @@
 
 	<import resource="classpath*:/META-INF/spring/static-context.xml" />
 	<import resource="classpath*:/META-INF/spring/bookreader-convert-context.xml" />
-	
+
+	<bean id="searchService" class="com.bhle.access.bookreader.search.SearchService"
+		p:storageService-ref="storageService"></bean>
 </beans>

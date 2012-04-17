@@ -26,16 +26,16 @@
 				</europeana:rights>
 				<europeana:dataProvider>
 					<xsl:value-of
-						select="//olef:bibliographicInformation/mods:recordContentSource" />
+						select="//olef:bibliographicInformation/mods:recordInfo/mods:recordContentSource" />
 				</europeana:dataProvider>
 				<xsl:for-each select="//olef:guid">
 					<europeana:isShownAt>
 						<xsl:value-of
-							select="concat('http://www.bhl-europe.eu/bhle-view/bhle:', text())" />
+							select="concat('${domain.name}/portal/bhle-view/', translate(text(), '/', '-'))" />
 					</europeana:isShownAt>
 					<europeana:isShownBy>
 						<xsl:value-of
-							select="concat('http://www.bhl-europe.eu/stream/', substring-after(text(), '/'))" />
+							select="concat('${domain.name}/access/stream/', substring-after(text(), '/'))" />
 					</europeana:isShownBy>
 				</xsl:for-each>
 			</europeana:record>

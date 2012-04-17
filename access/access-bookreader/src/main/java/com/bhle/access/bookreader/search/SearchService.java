@@ -7,12 +7,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import com.bhle.access.storage.StorageService;
 import com.bhle.access.util.FedoraURI;
-import com.bhle.access.util.FedoraUtil;
 import com.bhle.access.util.StaticURI;
 
 public class SearchService {
+
+	private static final Logger logger = LoggerFactory
+			.getLogger(SearchService.class);
+
+	private static StorageService storageService;
+
+	public void setStorageService(StorageService storageService) {
+		SearchService.storageService = storageService;
+	}
+
 	public static String query(String guid, String queries) {
 		String[] queriesArray = queries.split(" ");
 
@@ -20,7 +32,7 @@ public class SearchService {
 		for (StringWithBox pageText : getPageTexts(guid)) {
 			for (String query : queriesArray) {
 				if (pageText.contains(query)) {
-//					pageText.populateWithBox();
+					// pageText.populateWithBox();
 					result.add(pageText, query);
 				}
 			}
@@ -29,14 +41,21 @@ public class SearchService {
 	}
 
 	private static List<StringWithBox> getPageTexts(String guid) {
-		String[] pageUris = FedoraUtil.getAllMembers(
-				FedoraURI.getPidFromGuid(guid), FedoraUtil.PAGE_MODEL);
+		// String[] pageUris = FedoraUtil.getAllMembers(
+		// FedoraURI.getPidFromGuid(guid), FedoraUtil.PAGE_MODEL);
+
+		List<URI> dsUris = null;
+		try {
+			dsUris = storageService.getDatastream(guid, "OCR");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 		List<StringWithBox> result = new ArrayList<StringWithBox>();
-		
-		for (String pageUri : pageUris) {
-			FedoraURI pageFedoraUri = new FedoraURI(URI.create(pageUri + "/OCR"));
-			URI pageHttpUri = StaticURI.toStaticHttpUri(pageFedoraUri);
+
+		for (URI dsUri : dsUris) {
+			FedoraURI pageFedoraUri = new FedoraURI(dsUri);
+			URI pageHttpUri = StaticURI.toStaticFileUri(pageFedoraUri);
 			String text = "";
 			try {
 				text = IOUtils.toString(pageHttpUri.toURL().openStream());
@@ -45,7 +64,7 @@ public class SearchService {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			
+
 			int sequence = Integer.valueOf(pageFedoraUri.getSerialNumber());
 			result.add(new StringWithBox(sequence, text));
 		}

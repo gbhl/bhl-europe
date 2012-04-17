@@ -71,11 +71,11 @@ public class ImageUtil {
 		}
 
 		if (!tmpTiff.delete() && tmpTiff.exists()) {
-			logger.warn("Cannot delete temp files {}" , tmpTiff);
+			logger.warn("Cannot delete temp files {}", tmpTiff);
 		}
-		
+
 		if (!tmpJp2.delete() && tmpJp2.exists()) {
-			logger.warn("Cannot delete temp files {}" , tmpJp2);
+			logger.warn("Cannot delete temp files {}", tmpJp2);
 		}
 
 		return byteIn;
@@ -128,25 +128,23 @@ public class ImageUtil {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		if (!tmpJp2.delete() && tmpJp2.exists()) {
-			logger.warn("Cannot delete temp files {}" , tmpJp2);
+			logger.warn("Cannot delete temp files {}", tmpJp2);
 		}
-		
+
 		if (!tmpTn.delete() && tmpTn.exists()) {
-			logger.warn("Cannot delete temp files {}" , tmpTn);
+			logger.warn("Cannot delete temp files {}", tmpTn);
 		}
 
 		return byteIn;
 	}
 
-	public static int[] tiffToJp2Size(InputStream tiffIn) {
+	public static int[] tiffToJp2Size(String path) {
 		int height = 0;
 		int width = 0;
 		try {
-			File tmpFile = File.createTempFile("temp", "tiff");
-			IOUtils.copy(tiffIn, new FileOutputStream(tmpFile));
-			Info info = new Info(tmpFile.getAbsolutePath(), true);
+			Info info = new Info(path, true);
 
 			int tiffHeight = info.getImageHeight();
 			height = tiffHeight;
@@ -164,15 +162,25 @@ public class ImageUtil {
 					width = DEFAULT_MAX_WIDTH;
 				}
 			}
-
-			tiffIn.close();
-			tmpFile.delete();
-		} catch (IOException e) {
-			e.printStackTrace();
 		} catch (InfoException e) {
 			e.printStackTrace();
 		}
 		return new int[] { height, width };
+	}
+
+	public static int[] tiffToJp2Size(InputStream tiffIn) {
+		try {
+			File tmpFile = File.createTempFile("temp", "tiff");
+			IOUtils.copy(tiffIn, new FileOutputStream(tmpFile));
+			tiffIn.close();
+			return tiffToJp2Size(tmpFile.getAbsolutePath());
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return new int[] { 0, 0 };
 	}
 
 	private static File copyToTempFile(InputStream in) {

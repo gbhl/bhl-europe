@@ -5,9 +5,11 @@
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="bookInfoBuilder" class="com.bhle.access.bookreader.BookInfoBuilder"
-		p:storageService-ref="storageService" />
+		p:storageService-ref="storageService" p:guidBankId="${guid.bankID}"
+		p:domainName="${domain.name}" />
 
-	<bean id="thumbnailBuilder" class="com.bhle.access.bookreader.ThumbnailBuilder"
+	<bean id="
+		thumbnailBuilder " class="com.bhle.access.bookreader.ThumbnailBuilder"
 		p:storageService-ref="storageService" />
 
 	<bean id="bookreaderExtendedConverterManager" parent="converterManager">
@@ -21,8 +23,9 @@
 
 	<bean id="bookInfoConverter" class="com.bhle.access.bookreader.BookInfoConverter" />
 	<bean id="thumbnailConverter" class="com.bhle.access.bookreader.ThumbnailConverter" />
-	
-	<bean id="bookreaderExtendedAfterBatchIngestConverterManager" parent="afterBatchIngestConverterManager">
+
+	<bean id="bookreaderExtendedAfterBatchIngestConverterManager"
+		parent="afterBatchIngestConverterManager">
 		<property name="converters">
 			<list>
 				<ref bean="bookInfoConverter" />

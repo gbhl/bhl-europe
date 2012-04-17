@@ -6,9 +6,15 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class StringWithBox extends HashMap<Integer, Box> {
+	private static final Logger logger = LoggerFactory
+			.getLogger(StringWithBox.class);
+
 	private static final long serialVersionUID = 1L;
-	
+
 	private String text;
 	private String query;
 	private int sequence;
@@ -34,6 +40,7 @@ public class StringWithBox extends HashMap<Integer, Box> {
 
 		if (m.find()) {
 			this.query = text.substring(m.start(), m.end());
+			logger.debug("Find query {} in {}", new String[] { query, text });
 			return true;
 		} else {
 			return false;
