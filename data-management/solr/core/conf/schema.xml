@@ -637,6 +637,14 @@
     <copyField source="mods_date_issued" dest="all"/>
     <copyField source="mods_date_issued" dest="all__exact"/>
 
+
+    <!-- scientific name  -->
+    <field name="olef_scientific_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="olef_scientific_name__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="olef_scientific_name__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="olef_scientific_name" dest="olef_scientific_name__exact"/>
+    <copyField source="olef_scientific_name" dest="olef_scientific_name__facet"/>
+
 	<!--   -->
     <field name="mods_type_of_resource" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_type_of_resource__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
@@ -700,12 +708,7 @@
     <copyField source="mods_abstract" dest="all"/>
     <copyField source="mods_abstract" dest="all__exact"/>
 
-    <!-- Scientific name searching -->
-    <field name="olef_scientific_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
-    <!-- Scientific name entry for triggering common name expansion -->
-    <field name="olef_common_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
-    <copyField source="olef_scientific_name" dest="all"/>
-    <copyField source="olef_scientific_name" dest="olef_common_name"/>
+
 
    <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
         will be used if the name matches any of the patterns.
