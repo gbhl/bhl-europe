@@ -4,14 +4,10 @@
  */
 package smtcli;
 
+import at.nhmwien.schema_mapping_tool.converter.*;
 import at.nhmwien.schema_mapping_tool.mappingProcess.*;
 import at.nhmwien.schema_mapping_tool.fileProcessors.*;
 
-import at.nhmwien.schema_mapping_tool.converter.MARC21Converter;
-import at.nhmwien.schema_mapping_tool.converter.MARCXMLConverter;
-import at.nhmwien.schema_mapping_tool.converter.MODSConverter;
-import at.nhmwien.schema_mapping_tool.converter.REFNUMConverter;
-import at.nhmwien.schema_mapping_tool.converter.XSLTransformer;
 
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.PosixParser;
@@ -59,7 +55,7 @@ public class Main {
         options.addOption("lfpo", "list-file-processor-options", false, "List available options for a given file-processor (use -ifp or -ofp)" );
 
         options.addOption("m", "mode", true, "Select operating mode (c = conversion, m = mapping, x = xslt)" );
-        options.addOption("cm", "conversion-mode", true, "Select conversion mode (only used for mode = c)\n1 = MARC21 to MARCXML\n2 = MARC21 to MODS\n3 = MARCXML to MODS\n4 = MARC21 to OLEF\n5 = MARCXML to OLEF\n6 = MODS to OLEF\n7 = refNum to OLEF");
+        options.addOption("cm", "conversion-mode", true, "Select conversion mode (only used for mode = c)\n1 = MARC21 to MARCXML\n2 = MARC21 to MODS\n3 = MARCXML to MODS\n4 = MARC21 to OLEF\n5 = MARCXML to OLEF\n6 = MODS to OLEF\n7 = refNum to OLEF\n8 = passthrough");
 
         options.addOption( "iip", "input-id-prefix", true, "Prefix all input IDs with the given string, used to e.g. traverse down an XML tree." );
         options.addOption( "ct", "count-threshold", true, "Create new output file every <arg> entries." );
@@ -336,6 +332,11 @@ public class Main {
             case 7:
                 System.out.print( "Starting conversion of refNum to OLEF..." );
                 REFNUMConverter.convertToOLEF(inputFile, outputFile);
+                System.out.println( "done!" );
+                break;
+            case 8:
+                System.out.print( "Passing through..." );
+                PassthroughConverter.passthrough(inputFile, outputFile, inputEncoding, outputEncoding);
                 System.out.println( "done!" );
                 break;
             default:
