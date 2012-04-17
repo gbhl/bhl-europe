@@ -2898,7 +2898,7 @@ BookReader.prototype.BRSearchCallback = function(results) {
     
     var i;    
     for (i=0; i<results.matches.length; i++) {        
-        br.addSearchResult(results.matches[i].text, br.leafNumToIndex(results.matches[i].par[0].page));
+        br.addSearchResult(results.matches[i].text, results.matches[i].par[0].page);
     }
     br.updateSearchHilites();
     br.removeProgressPopup();

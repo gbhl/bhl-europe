@@ -59,7 +59,7 @@ public class BookReaderTest extends BaseTest {
 	}
 
 	public void testSearch() {
-		String json = SearchService.query("a000test", "Standley");
+		String json = SearchService.query("a000test", "Test OCR 2");
 		logger.debug(json);
 	}
 }

@@ -29,7 +29,8 @@ public class BaseTest implements ResourceLoaderAware {
 	protected ResourceLoader resourceLoader;
 
 	public String MONOGRAPH_PID = "bhle:10706-a000test";
-	public String PAGE_PID = "bhle:10706-a000test-00001";
+	public String PAGE_1_PID = "bhle:10706-a000test-00001";
+	public String PAGE_2_PID = "bhle:10706-a000test-00002";
 
 	public void setResourceLoader(ResourceLoader resourceLoader) {
 		this.resourceLoader = resourceLoader;
@@ -56,10 +57,13 @@ public class BaseTest implements ResourceLoaderAware {
 		logger.info("Ingesting samples...");
 		Resource monograhObject = resourceLoader
 				.getResource("classpath:com/bhle/access/sample/bhle_10706-a000test.xml");
-		Resource pageObject = resourceLoader
+		Resource page1Object = resourceLoader
 				.getResource("classpath:com/bhle/access/sample/bhle_10706-a000test-00001.xml");
+		Resource page2Object = resourceLoader
+				.getResource("classpath:com/bhle/access/sample/bhle_10706-a000test-00002.xml");
 		FedoraUtil.ingestFOXML(monograhObject.getInputStream());
-		FedoraUtil.ingestFOXML(pageObject.getInputStream());
+		FedoraUtil.ingestFOXML(page1Object.getInputStream());
+		FedoraUtil.ingestFOXML(page2Object.getInputStream());
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
@@ -74,11 +78,12 @@ public class BaseTest implements ResourceLoaderAware {
 	public void destroy() {
 		logger.info("Purging samples...");
 		FedoraUtil.purgeObject(MONOGRAPH_PID);
-		FedoraUtil.purgeObject(PAGE_PID);
+		FedoraUtil.purgeObject(PAGE_1_PID);
+		FedoraUtil.purgeObject(PAGE_2_PID);
 		List<String> pids = FedoraUtil.getAllObjectsPids();
 		Assert.assrt(!pids.contains("bhle:10706-a000test"));
-		Assert.assrt(!pids
-				.contains("bhle:10706-a000test-00001"));
+		Assert.assrt(!pids.contains("bhle:10706-a000test-00001"));
+		Assert.assrt(!pids.contains("bhle:10706-a000test-00002"));
 		logger.info("Done");
 	}
 

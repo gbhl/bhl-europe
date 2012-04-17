@@ -41,9 +41,6 @@ public class SearchService {
 	}
 
 	private static List<StringWithBox> getPageTexts(String guid) {
-		// String[] pageUris = FedoraUtil.getAllMembers(
-		// FedoraURI.getPidFromGuid(guid), FedoraUtil.PAGE_MODEL);
-
 		List<URI> dsUris = null;
 		try {
 			dsUris = storageService.getDatastream(guid, "OCR");
@@ -66,7 +63,7 @@ public class SearchService {
 			}
 
 			int sequence = Integer.valueOf(pageFedoraUri.getSerialNumber());
-			result.add(new StringWithBox(sequence, text));
+			result.add(new StringWithBox(sequence - 1, text));
 		}
 		return result;
 	}

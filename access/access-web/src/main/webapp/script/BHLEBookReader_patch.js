@@ -275,7 +275,7 @@ BookReader.prototype.search = function(term) {
 }
 
 BookReader.prototype.leafNumToIndex = function(pageNum) {
-	for ( var i = 0; i < this.bookInfo.length; i++) {
+	for ( var i = 0; i < this.bookInfo.pages.length; i++) {
 		if (pageNum == this.bookInfo.pages[i].name){
 			return i;
 		}
