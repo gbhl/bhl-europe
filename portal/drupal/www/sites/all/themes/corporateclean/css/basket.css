@@ -1,0 +1,16 @@
+/* CSS Document */
+
+#bhle-tagging-basket-download-form .form-checkboxes {height:75px; overflow:hidden}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox {position:relative; float:left; width:48px; height:60px; text-align:center}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox .form-checkbox {/*display:none*/}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox label {display:block; width:30px; height:30px; overflow:hidden; text-indent:-9999px; margin:5px auto 0 auto; cursor:pointer; border:2px solid #fff; background:transparent url('../images/bg_basket-ico.png') left top no-repeat}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox.form-item-types-summary label {background-position:0 0}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox.form-item-types-mods label {background-position:-30px 0}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox.form-item-types-endnote label {background-position:-60px 0}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox.form-item-types-bibtex label {background-position:-90px 0}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox.form-item-types-olef label {background-position:-120px 0}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox.form-item-types-all label {background-position:-150px 0}
+#bhle-tagging-basket-download-form .form-checkboxes .form-item.form-type-checkbox label.checked {-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; border-color:#006626; }
+
+#bhle-tagging-basket-download-form .div-form-submit {float:left; width:184px; height:20px; margin:0 10px 0 0; padding:1px}
+#bhle-tagging-basket-download-form .form-submit {width:184px; height:20px; padding:0; line-height:1.0; font-size:91.7%; color:#006626; background-color:transparent; border:none} 

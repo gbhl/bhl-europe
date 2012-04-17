@@ -754,7 +754,6 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 
     try {
         $params['facet'] = 'true';
-        $params['facet.limit'] = 50000;
         $facet_field_map = bhle_search_facet_field_map();
         foreach ($facet_field_map as $facet_field => $facet_name) {
           $params['facet.field'][] = $facet_field;
@@ -763,9 +762,9 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
         $facets = $responseObj->facet_counts->facet_fields;
-        //dpm($responseObj->request, 'request');
-        //dpm($response, 'response result');
-        //dpm($facets, 'facets');
+        dpm($responseObj->request, 'request');
+        dpm($response, 'response result');
+        dpm($facets, 'facets');
         // Check if we found something
         // ----------------------------------------------
         // configuration of the result list items
@@ -1491,6 +1490,11 @@ function template_preprocess_search_summary(&$variables) {
             $expanded_term = $summary_element['query']['query_term'];
             if ($expanded_term !== $entered_term)  {
                 $variables['matches_for']['info'][$i]['term_expanded'] = check_plain($expanded_term);
+            }
+        }
+    }
+}
+);
             }
         }
     }
