@@ -6,11 +6,6 @@
 package at.nhmwien.schema_mapping_tool.converter;
 
 import java.io.*;
-import org.marc4j.MarcReader;
-import org.marc4j.MarcStreamReader;
-import org.marc4j.MarcXmlWriter;
-import org.marc4j.marc.Record;
-
 import java.nio.charset.Charset;
 
 /**
