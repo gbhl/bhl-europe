@@ -1,4 +1,5 @@
 <?php
+define('BHLE_OLEF_URI', 'static/%bid/%bid_olef.xml');
 define('BHLE_MODS_URI', 'static/%bid/%bid_mods.xml');
 define('BHLE_ENDNOTE_URI', 'static/%bid/%bid_endnote.end');
 define('BHLE_BIBTEX_URI', 'static/%bid/%bid_bibtex.bib');
@@ -185,9 +186,15 @@ function _template_preprocess_bhle_item($item) {
     $mods_link = 'bhle-download/mods/' . $pid;
     $rendered['dl_link_mods'] = l(t('Download MODS'), $mods_link);
     
+    $olef_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_OLEF_URI);
+    $olef_request = drupal_http_request($olef_url);
+    $rendered['meta_olef_source'] = htmlentities($olef_request->data, ENT_QUOTES, 'UTF-8');
+    $olef_link = 'bhle-download/olef/' . $pid;
+    $rendered['dl_link_olef'] = l(t('Download OLEF'), $olef_link);
+    
     $endnote_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_ENDNOTE_URI);
     $endnote_request = drupal_http_request($endnote_url);
-    $rendered['meta_endnote_source'] = htmlentities($endnote_request->data, ENT_QUOTES, 'UTF-8');
+    $rendered['meta_endnote_source'] = htmlentities($endnote_request->data, ENT_QUOTES, 'ISO-8859-1');
     $endnote_link = 'bhle-download/endnote/' . $pid;
     $rendered['dl_link_endnote'] = l(t('Download Endnote'), $endnote_link);
 
@@ -256,6 +263,8 @@ function bhle_item_download($pid, $type = 'summary') {
       $rendered = _template_preprocess_bhle_item($item);
       $content = $rendered['meta_abstract_source'];
       break;
+    case 'olef':
+      $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_OLEF_URI);
       break;
     case 'mods':
       $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
@@ -264,14 +273,11 @@ function bhle_item_download($pid, $type = 'summary') {
       $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_ENDNOTE_URI);
       break;
     case 'bibtex':
-      $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_MODS_URI);
+      $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_BIBTEX_URI);
       break;
   }
   
   switch ($type) {
-    default:
-      $type = 'summary';
-      
     case 'summary':
     case 'abstract':
       header('Content-Type: text/plain');
@@ -280,11 +286,15 @@ function bhle_item_download($pid, $type = 'summary') {
       print $content;
       drupal_exit();
       break;
+    
+    case 'olef':
     case 'mods':
     case 'endnote':
     case 'bibtex':
       $response = drupal_http_request($url);
       $content = $response->data;
+      //dsm($response, 'response');
+      //dsm($content, 'content');
       header('Content-Type: ' . $response->header['content-length']);
       header('Content-Length: ' . $response->header['content-type']);
       header('Content-Disposition: attachment; filename="' . basename($url) . '"');
