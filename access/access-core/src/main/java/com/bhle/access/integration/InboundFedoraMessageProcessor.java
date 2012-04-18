@@ -24,7 +24,7 @@ public class InboundFedoraMessageProcessor {
 			if (state != null && state.equals("A")) {
 				if (!logger.isDebugEnabled()) {
 					// wait enough time for Fedora to insert resource index
-					Thread.sleep(10000);
+					Thread.sleep(60000);
 				}
 				return MessageBuilder.withPayload(fedoraMessage.getPid())
 						.build();

@@ -6,7 +6,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.akubraproject.UnsupportedIdException;
-import org.springframework.beans.factory.annotation.Value;
 
 public class FedoraURI {
 

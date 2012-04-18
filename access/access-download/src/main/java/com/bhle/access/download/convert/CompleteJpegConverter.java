@@ -40,12 +40,12 @@ public class CompleteJpegConverter extends AbstractDataStreamConverter
 
 	@Override
 	public String getDatastreamId() {
-		return "FULL_JPEG";
+		return "FULL_JPG";
 	}
 
 	@Override
 	public String getDerivativeId() {
-		return "FULL_JPEG";
+		return "FULL_JPG";
 	}
 
 	@Override

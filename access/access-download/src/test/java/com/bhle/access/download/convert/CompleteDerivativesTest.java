@@ -45,7 +45,7 @@ public class CompleteDerivativesTest extends BaseTest {
 	}
 
 	private void testJpegGeneration() throws MalformedURLException, IOException {
-		FedoraURI fedoraURI = FedoraURI.getFedoraUri("a000test", "full_jpeg");
+		FedoraURI fedoraURI = FedoraURI.getFedoraUri("a000test", "full_jpg");
 		URI uri = StaticURI.toStaticFileUri(fedoraURI);
 		InputStream in = uri.toURL().openStream();
 		Assert.assertTrue(in.available() > 0);
