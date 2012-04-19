@@ -50,7 +50,7 @@ OUT=/tmp/post2solr.out.xml
 
 SAVEIFS=$IFS
 IFS=$'\n'
-FILE_LIST=($(grep -rl "rdf:resource=\"info:fedora/bhle-cmodel:monographCModel\"" ./))
+FILE_LIST=($(grep -Erl "rdf:resource=\"info:fedora/bhle-cmodel:(monographCModel|serialCModel|sectionCModel|articleCModel|chapterCModel)\"" ./))
 IFS=$SAVEIFS
 
 echo "Filelist: "$FILE_LIST
