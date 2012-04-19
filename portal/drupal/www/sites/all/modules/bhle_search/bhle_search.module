@@ -754,6 +754,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 
     try {
         $params['facet'] = 'true';
+        $params['facet.limit'] = 50000;
         $facet_field_map = bhle_search_facet_field_map();
         foreach ($facet_field_map as $facet_field => $facet_name) {
           $params['facet.field'][] = $facet_field;
@@ -762,7 +763,8 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
         $facets = $responseObj->facet_counts->facet_fields;
-        //dpm($response);
+        //dpm($responseObj->request, 'request');
+        //dpm($response, 'response result');
         //dpm($facets, 'facets');
         // Check if we found something
         // ----------------------------------------------
@@ -895,20 +897,20 @@ function bhle_search_facet_field_map($type = 'simple') {
         case 'advanced':
             return array(
               "contentType" => t("Material type"),
-              "mods_name__exact" => t("Author name"),
-              "mods_date_issued__exact" => t("Year"),
+              "mods_name__facet" => t("Author name"),
+              "mods_date_issued__facet" => t("Year"),
               "mods_language" => t("Language"),
-              "mods_record_content_source__exact" => t("Content provider"),
-              "olef_scientific_name" => t("Scientific name")
+              "mods_record_content_source__facet" => t("Content provider"),
+              "olef_scientific_name__facet" => t("Scientific name")
             );
         case 'simple':
             return array(
               "contentType" => t("Material type"),
-              "mods_name__exact" => t("Author name"),
-              "mods_date_issued__exact" => t("Year"),
+              "mods_name__facet" => t("Author name"),
+              "mods_date_issued__facet" => t("Year"),
               "mods_language" => t("Language"),
-              "mods_record_content_source__exact" => t("Content provider"),
-              "olef_scientific_name" => t("Scientific name")
+              "mods_record_content_source__facet" => t("Content provider"),
+              "olef_scientific_name__facet" => t("Scientific name")
             );
     }
 }

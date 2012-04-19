@@ -9,8 +9,8 @@
  * Summary, Abstract, MODS, Endnote, Bibtex  
  *
  */
-//dpm($item);
 unset($item->olef_scientific_name);
+dpm($item);
 //dpm($rendered);
 ?>
 <!-- bhle item template -->
@@ -22,6 +22,7 @@ unset($item->olef_scientific_name);
     <li><a href="#tabs-3" class="active biblio-mods"><?php print t('MODS'); ?></a></li>
     <li><a href="#tabs-4" class="active biblio-endnote"><?php print t('Endnote'); ?></a></li>
     <li><a href="#tabs-5" class="active biblio-bibtex"><?php print t('Bibtex'); ?></a></li>
+    <li><a href="#tabs-6" class="active biblio-olef"><?php print t('OLEF'); ?></a></li>
   </ul>
 
   <div id="tabs-1" class="biblio-summary">
@@ -51,6 +52,11 @@ unset($item->olef_scientific_name);
     <?php if ($rendered['meta_bibtex_source']) { print '<pre>' . $rendered['meta_bibtex_source'] . '</pre>'; } ?>
   </div>
 
+  <div id="tabs-6" class="biblio-oleft">
+    <?php if ($rendered['dl_link_olef']) { print '<div class="download-button">' . $rendered['dl_link_olef'] . '</div>'; } ?>
+    <?php if ($rendered['meta_olef_source']) { print '<pre>' . $rendered['meta_olef_source'] . '</pre>'; } ?>
+  </div>
+  
 </div>
 
 

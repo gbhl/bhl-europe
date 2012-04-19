@@ -105,9 +105,10 @@ public class BookInfoBuilder {
 	private static void setEntryPage(BookInfo book, Olef olef) {
 		String entryPage = olef.getEntryPage();
 		if (entryPage.equals("")) {
-			book.setEntryPageIndex(1);
+			book.setEntryPageIndex(0);
 		} else {
-			book.setEntryPageIndex(Integer.valueOf(olef.getEntryPage()));
+			int entryPageIndex = Integer.valueOf(olef.getEntryPage()) - 1;
+			book.setEntryPageIndex(entryPageIndex);
 		}
 	}
 

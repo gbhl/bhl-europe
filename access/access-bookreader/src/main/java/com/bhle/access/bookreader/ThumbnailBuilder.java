@@ -20,7 +20,7 @@ public class ThumbnailBuilder {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(ThumbnailBuilder.class);
-	
+
 	private static StorageService storageService;
 
 	public void setStorageService(StorageService storageService) {
@@ -31,13 +31,16 @@ public class ThumbnailBuilder {
 
 	public static InputStream build(String guid) {
 		logger.debug("Build Thumbnail");
-		
-		Olef olef = getOlef(guid);
-		String entryPageName = olef.getEntryPage();
-		int entryPageIndex = Integer.valueOf(olef.getEntryPage());
 
-		FedoraURI entryPageUri = FedoraURI.getFedoraUri(guid, entryPageIndex,
-				"JP2");
+		Olef olef = getOlef(guid);
+
+		String entryPage = olef.getEntryPage();
+		if (entryPage.equals("")) {
+			entryPage = "1";
+		}
+		int entryPageSequence = Integer.valueOf(entryPage);
+		FedoraURI entryPageUri = FedoraURI.getFedoraUri(guid,
+				entryPageSequence, "JP2");
 		URI entryPageHttpUri = StaticURI.toStaticFileUri(entryPageUri);
 		InputStream jp2InputStream = null;
 		try {
