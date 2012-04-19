@@ -134,7 +134,7 @@ if ((!file_content_exists($olef_file,$recordContentSource."</mods:".$newNodeName
     // 2. ADD (NEW) RIGHT NODE     mods:recordContentSource to bibliographicInformation
     // --------------------------------------------------------------------------------
     $node3 = $domDoc->createElement("mods:".$newNodeName,  $recordContentSource);
-    $node3->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
+    //$node3->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
 
     $done = false;
     
