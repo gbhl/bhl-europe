@@ -32,7 +32,7 @@
 			<xsl:if
 				test="not(foxml:digitalObject/foxml:datastream[@ID='METHODMAP'] or foxml:digitalObject/foxml:datastream[@ID='DS-COMPOSITE-MODEL'])">
 				<xsl:if
-					test="starts-with($PID,'bhle') and foxml:digitalObject/foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/rdf:RDF/rdf:Description/*[local-name()='hasModel' and (@rdf:resource='info:fedora/bhle-cmodel:monographCModel' or @rdf:resource='info:fedora/bhle-cmodel:volumeCModel' or @rdf:resource='info:fedora/bhle-cmodel:chapterCModel')]">
+					test="starts-with($PID,'bhle') and foxml:digitalObject/foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/rdf:RDF/rdf:Description/*[local-name()='hasModel' and (@rdf:resource='info:fedora/bhle-cmodel:monographCModel' or @rdf:resource='info:fedora/bhle-cmodel:volumeCModel' or @rdf:resource='info:fedora/bhle-cmodel:chapterCModel' or @rdf:resource='info:fedora/bhle-cmodel:serialCModel' or @rdf:resource='info:fedora/bhle-cmodel:sectionCModel' or @rdf:resource='info:fedora/bhle-cmodel:articleCModel')]">
 					<xsl:apply-templates mode="activeFedoraObject"/>
 				</xsl:if>
 			</xsl:if>
@@ -44,7 +44,7 @@
 			<xsl:if
 				test="not(foxml:digitalObject/foxml:datastream[@ID='METHODMAP'] or foxml:digitalObject/foxml:datastream[@ID='DS-COMPOSITE-MODEL'])">
 				<xsl:if
-					test="starts-with($PID,'bhle') and foxml:digitalObject/foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/rdf:RDF/rdf:Description/*[local-name()='hasModel' and (@rdf:resource='info:fedora/bhle-cmodel:monographCModel' or @rdf:resource='info:fedora/bhle-cmodel:volumeCModel' or @rdf:resource='info:fedora/bhle-cmodel:chapterCModel')]">
+					test="starts-with($PID,'bhle') and foxml:digitalObject/foxml:datastream/foxml:datastreamVersion[last()]/foxml:xmlContent/rdf:RDF/rdf:Description/*[local-name()='hasModel' and (@rdf:resource='info:fedora/bhle-cmodel:monographCModel' or @rdf:resource='info:fedora/bhle-cmodel:volumeCModel' or @rdf:resource='info:fedora/bhle-cmodel:chapterCModel' or @rdf:resource='info:fedora/bhle-cmodel:serialCModel' or @rdf:resource='info:fedora/bhle-cmodel:sectionCModel' or @rdf:resource='info:fedora/bhle-cmodel:articleCModel')]">
 					<xsl:apply-templates mode="inactiveFedoraObject"/>
 				</xsl:if>
 			</xsl:if>
