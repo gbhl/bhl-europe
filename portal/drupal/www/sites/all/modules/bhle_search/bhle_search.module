@@ -27,8 +27,7 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 // Pre-defined variables (note: defaults are based on Solr's default schema)
-define('BHLE_SEARCH_FACET_LIMIT', 1000); // need to index more items then shown
-define('BHLE_SEARCH_FACET_LIST_LIMIT', 1000); // limit of taxons in facet block for each field
+define('BHLE_SEARCH_FACET_LIST_LIMIT', PHP_INT_MAX); // limit of taxons in facet block for each field (was 1000 now set to PHP_INT_MAX)
 define('BHLE_SEARCH_DEFAULT_LIMIT', 10);
 define('BHLE_SEARCH_TITLE_FIELD', 'name');
 define('BHLE_SEARCH_AUTHOR_FIELD', 'author');
@@ -90,7 +89,7 @@ function bhle_search_init() {
     );
     $_SESSION['bhle_search']['conditions'][] = $condition;
   }
-  
+
   if ($_GET['action'] == 'addfacet' && $_SESSION['bhle_search']['facet']['last'] != $_GET['last'] && $_GET['source'] == 'advanced') {
     $_SESSION['bhle_search']['facet']['last'] = $_GET['last'];
     $orig_field = $_GET['field']; // TODO: escape for security
@@ -758,7 +757,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 
     try {
         $params['facet'] = 'true';
-        $params['facet.limit'] = 50000;
+        $params['facet.limit'] = -1;
         $facet_field_map = bhle_search_facet_field_map();
         foreach ($facet_field_map as $facet_field => $facet_name) {
           $params['facet.field'][] = $facet_field;
