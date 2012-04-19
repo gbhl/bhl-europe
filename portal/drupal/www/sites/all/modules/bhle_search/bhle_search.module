@@ -79,7 +79,8 @@ function bhle_search_init() {
     unset($_SESSION['bhle_search']['conditions']);
     $_SESSION['bhle_search']['simple_search'] = FALSE;
     $_SESSION['bhle_search']['facet']['last'] = $_GET['last'];
-    $field = $_GET['field']; // TODO: escape for security
+    $orig_field = $_GET['field']; // TODO: escape for security
+    $field = str_replace('__facet', '', $_GET['field']); // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
     $condition = array(
       'term' => bhle_search_solr_escape(urldecode($key)),
@@ -89,12 +90,14 @@ function bhle_search_init() {
     );
     $_SESSION['bhle_search']['conditions'][] = $condition;
   }
+  
   if ($_GET['action'] == 'addfacet' && $_SESSION['bhle_search']['facet']['last'] != $_GET['last'] && $_GET['source'] == 'advanced') {
     $_SESSION['bhle_search']['facet']['last'] = $_GET['last'];
-    $field = $_GET['field']; // TODO: escape for security
+    $orig_field = $_GET['field']; // TODO: escape for security
+    $field = str_replace('__facet', '', $_GET['field']); // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
     $condition = array(
-      'term' => bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$field][$key]['#label']),
+      'term' => bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label']),
       'field' => $field,
       'operator' => 'AND',
       'exact_phrase' => 0
@@ -103,14 +106,15 @@ function bhle_search_init() {
   }
   if ($_GET['action'] == 'removefacet' && $_SESSION['bhle_search']['facet']['last'] != $_GET['last']) {
     $_SESSION['bhle_search']['facet']['last'] = $_GET['last'];
-    $field = $_GET['field']; // TODO: escape for security
+    $orig_field = $_GET['field']; // TODO: escape for security
+    $field = str_replace('__facet', '', $_GET['field']); // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
     foreach ($_SESSION['bhle_search']['conditions'] as $delta => $condition) {
       if ($condition['field'] == $field &&
             (
-              $condition['term'] == $_SESSION['bhle_search']['facet']['fields'][$field][$key]['#label'] ||
-              bhle_search_solr_escape($condition['term']) == $_SESSION['bhle_search']['facet']['fields'][$field][$key]['#label'] ||
-              $condition['term'] == bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$field][$key]['#label'])
+              $condition['term'] == $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'] ||
+              bhle_search_solr_escape($condition['term']) == $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'] ||
+              $condition['term'] == bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'])
             )
           ){
         unset($_SESSION['bhle_search']['conditions'][$delta]);
@@ -118,6 +122,7 @@ function bhle_search_init() {
     }
   }
   /* END FACET HANDLING */
+  //dpm($_SESSION);
 }
 
 /**
@@ -1352,7 +1357,7 @@ function bhle_search_block_view($delta = '') {
                 if (is_numeric($key)) {
                   $source = 'advanced';
                   foreach($_SESSION['bhle_search']['conditions'] as $condition) {
-                    if ($condition['field'] == $field_name &&
+                    if ($condition['field'] == str_replace('__facet', '', $field_name) &&
                          ($condition['term'] == $val['#label'] || bhle_search_solr_escape($condition['term']) == $val['#label'] || $condition['term'] == bhle_search_solr_escape($val['#label']))
                        ) {
                       $delete = TRUE;
