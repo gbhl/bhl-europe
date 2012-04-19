@@ -558,11 +558,10 @@ function bhle_search_conditions($keys = null) {
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
     // are the only allowed characters are: *, ?, [, ]
-    $escaped_str = str_replace(array(
-                '+', '-', '&&', '||', '!', '(', ')', '{', '}', '^', '"', '~', ':', '\\',
-                    ), array(
-                '\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\^', '\\"', '\\~', '\\:', '\\\\',
-                    ), $string);
+    $escaped_str = str_replace(
+            array('\\', '+', '-', '&&', '||', '!', '(', ')', '{', '}', '^', '"', '~', ':'),
+            array('\\\\', '\+', '\-', '\&\&', '\|\|', '\!', '\(', '\)', '\{', '\}', '\^', '\"', '\~', '\\:'),
+            $string);
 
     // allow using escape sequences like \\[ in the original $string
     $escaped_str = str_replace('\\\\\\', '', $escaped_str);
@@ -750,7 +749,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
       $params['rows'] = BHLE_SEARCH_DEFAULT_LIMIT;
     }
     $params['start'] = pager_find_page() * $params['rows'];
-    
+
 
     try {
         $params['facet'] = 'true';
@@ -759,7 +758,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         foreach ($facet_field_map as $facet_field => $facet_name) {
           $params['facet.field'][] = $facet_field;
         }
-        
+
         $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
         $facets = $responseObj->facet_counts->facet_fields;
@@ -782,15 +781,15 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         if ($response->numFound > 0) {
 //             if(module_exists('devel')) { dpm($response); };
             $docs = $response->docs;
-            $doc_index = 0;            
-            
+            $doc_index = 0;
+
             // specify rows(docs) to display on page
             $more = $display_start +  $params['rows']; // just shortener
             $less = $display_start + $response->numFound; // just shortener
             $display_start = pager_find_page() *  $params['rows'];
             $display_end = $response->numFound <  $params['rows'] ? $less : $more;
-            
-            
+
+
             global $bhle_pager;
             $bhle_pager['total_pages'] = $response->numFound / $params['rows'];
             $bhle_pager['current_page'] = pager_find_page();
@@ -808,7 +807,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 
               }
             }
-            
+
             foreach($facet_prepare as $field_name => $field_value) {
               //dpm($facet_prepare[$field_name]);
               ksort($facet_prepare[$field_name]);
@@ -823,7 +822,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
               }
               unset($i);
             }
-            
+
             $_SESSION['bhle_search']['facet']['fields'] = $bhle_facet['fields'];
             /* END PREPARE FACET  */
             $doc_index = $params['start'];
@@ -1435,7 +1434,8 @@ function bhle_search_search_summary_add_hit_count() {
         foreach ($search_summary as $summary_element) {
             $query_item = $summary_element['query'];
             if (trim($query_item['query_term'])) { // check for empty term
-                $params['facet.query'][] = _wildcard_save_query_token($query_item['query_field'], ($query_item['query_term'] ? $query_item['query_term'] : '""'));
+                $queryTerm= ($query_item['query_term'] ? $query_item['query_term'] : '""');
+                $params['facet.query'][] = _wildcard_save_query_token($query_item['query_field'], bhle_search_solr_escape($queryTerm));
             }
         }
         // Query solr for facet query
