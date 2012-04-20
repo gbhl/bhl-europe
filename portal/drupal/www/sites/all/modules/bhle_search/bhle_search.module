@@ -591,8 +591,11 @@ function bhle_search_solr_escape($string) {
  */
 function _bhle_search_solr_escape_brakets($string){
 
+    // since lokkbehind with variable length is not allowed the pattern has to be applied
+    // two times.
     static $replace_pattern_ev = '/\[(?![^\s]+\s+TO\s[^\s]+\])/'; // evers pattern
     static $replace_pattern_rev = '/\](?![^\s]+\s+OT\s[^\s]+\[)/'; // invers pattern
+
     // apply pattern with lookkahead to string
     $escaped_str = preg_replace($replace_pattern_ev, "\\[", $string);
     $escaped_str = strrev($escaped_str);
