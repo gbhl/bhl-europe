@@ -4,7 +4,7 @@ LABEL="Monograph"
 xmlns:METS="http://www.loc.gov/METS/"
 xmlns:xlink="http://www.w3.org/1999/xlink"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd"
+xsi:schemaLocation="http://www.loc.gov/METS/ http://www.fedora.info/definitions/1/0/mets-fedora-ext1-1.xsd">
 <METS:metsHdr CREATEDATE="2012-02-01T08:21:17.527Z" LASTMODDATE="2012-02-16T03:04:13.312Z" RECORDSTATUS="Active">
 </METS:metsHdr>
 <METS:amdSec ID="DC" STATUS="A" VERSIONABLE="true">
