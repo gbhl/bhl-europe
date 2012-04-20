@@ -82,7 +82,7 @@ function bhle_search_init() {
     $field = str_replace('__facet', '', $_GET['field']); // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
     $condition = array(
-      'term' => bhle_search_solr_escape(urldecode($key)),
+      'term' => urldecode($key),
       'field' => $field,
       'operator' => 'AND',
       'exact_phrase' => 0
@@ -96,7 +96,7 @@ function bhle_search_init() {
     $field = str_replace('__facet', '', $_GET['field']); // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
     $condition = array(
-      'term' => bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label']),
+      'term' => $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'],
       'field' => $field,
       'operator' => 'AND',
       'exact_phrase' => 0
@@ -112,8 +112,8 @@ function bhle_search_init() {
       if ($condition['field'] == $field &&
             (
               $condition['term'] == $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'] ||
-              bhle_search_solr_escape($condition['term']) == $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'] ||
-              $condition['term'] == bhle_search_solr_escape($_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'])
+              $condition['term'] == $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label'] ||
+              $condition['term'] == $_SESSION['bhle_search']['facet']['fields'][$orig_field][$key]['#label']
             )
           ){
         unset($_SESSION['bhle_search']['conditions'][$delta]);
@@ -558,19 +558,51 @@ function bhle_search_conditions($keys = null) {
 
 /**
  * Helper function for escaping a string for use in a solr query
+ * @param $string an string or array
  */
 function bhle_search_solr_escape($string) {
     // + - && || ! ( ) { } [ ] ^ " ~ * ? : \ => see http://lucene.apache.org/java/3_4_0/queryparsersyntax.html#Escaping%20Special%20Characters
     // are the only allowed characters are: *, ?, [, ]
     $escaped_str = str_replace(
-            array('\\', '+', '-', '&&', '||', '!', '(', ')', '{', '}', '^', '"', '~', ':'),
-            array('\\\\', '\+', '\-', '\&\&', '\|\|', '\!', '\(', '\)', '\{', '\}', '\^', '\"', '\~', '\\:'),
+            array('+', '-', '&&', '||', '!', '(', ')', '{', '}', '^', '"', '~', ':'),
+            array('\\+', '\\-', '\\&\\&', '\\|\\|', '\\!', '\\(', '\\)', '\\{', '\\}', '\\^', '\\"', '\\~', '\\:'),
             $string);
 
-    // allow using escape sequences like \\[ in the original $string
-    $escaped_str = str_replace('\\\\\\', '', $escaped_str);
+    // second step:
+    // escape all brakets '[' and ']' except those used in range patters
+    // like [1867 TO 1912]
+    if(is_array($escaped_str)){
+      foreach($escaped_str as $key=>$value) {
+          $escaped_str[$key] = _bhle_search_solr_escape_brakets($value);
+      }
+    } else {
+        $escaped_str = _bhle_search_solr_escape_brakets($escaped_str);
+    }
+
     return $escaped_str;
 }
+
+/**
+ * private helper function for escaping brakets in strings for use in a solr query.
+ * Will escape all brakets '[' and ']' except those used in range patters,
+ * like [1867 TO 1912]
+ *
+ * @param $string an string
+ */
+function _bhle_search_solr_escape_brakets($string){
+
+    static $replace_pattern_ev = '/\[(?![^\s]+\s+TO\s[^\s]+\])/'; // evers pattern
+    static $replace_pattern_rev = '/\](?![^\s]+\s+OT\s[^\s]+\[)/'; // invers pattern
+    // apply pattern with lookkahead to string
+    $escaped_str = preg_replace($replace_pattern_ev, "\\[", $string);
+    $escaped_str = strrev($escaped_str);
+    // apply pattern with lookkahead to inverted string
+    $escaped_str = preg_replace($replace_pattern_rev, "]\\", $escaped_str);
+    // restore original orientation of string
+    $escaped_str = strrev($escaped_str);
+    return $escaped_str;
+}
+
 
 /**
  * Helper function which converts an array of terms into a solr query
@@ -1397,7 +1429,7 @@ function bhle_search_search_summary_add($condition = null, $query = null) {
         $_search_summary = array();
     }
     if ($condition != null && $query != null) {
-        $_search_summary[] = array('condition' => $condition, 'query' => bhle_search_solr_escape($query));
+        $_search_summary[] = array('condition' => $condition, 'query' => $query);
     }
 
     return $_search_summary;
@@ -1439,7 +1471,7 @@ function bhle_search_search_summary_add_hit_count() {
             $query_item = $summary_element['query'];
             if (trim($query_item['query_term'])) { // check for empty term
                 $queryTerm= ($query_item['query_term'] ? $query_item['query_term'] : '""');
-                $params['facet.query'][] = _wildcard_save_query_token($query_item['query_field'], bhle_search_solr_escape($queryTerm));
+                $params['facet.query'][] = _wildcard_save_query_token($query_item['query_field'], $queryTerm);
             }
         }
         // Query solr for facet query
@@ -1493,7 +1525,7 @@ function template_preprocess_search_summary(&$variables) {
 
             $entered_term = $condition['term'];
             $expanded_term = $summary_element['query']['query_term'];
-            if ($expanded_term !== $entered_term)  {
+            if ($expanded_term !== bhle_search_solr_escape($entered_term))  {
                 $variables['matches_for']['info'][$i]['term_expanded'] = check_plain($expanded_term);
             }
         }
