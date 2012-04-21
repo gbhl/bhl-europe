@@ -10,7 +10,7 @@
                            http://www.springframework.org/schema/integration
 							http://www.springframework.org/schema/integration/spring-integration.xsd
 							http://activemq.apache.org/schema/core 
-                           http://activemq.apache.org/schema/core/activemq-core-5.3.0.xsd
+                           http://activemq.apache.org/schema/core/activemq-core.xsd
 							http://www.springframework.org/schema/integration/jms
 							http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd">
 

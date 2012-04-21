@@ -28,6 +28,9 @@
 	<beans:bean id="packageDerivativeWriter"
 		class="com.bhle.access.batch.PackageDerivativeWriter" />
 
+	<beans:bean id="batchAccessListener" class="com.bhle.access.batch.BatchAccessListener"/>
+		
+
 	<job id="generateDerivatives">
 		<description>Generate all object-based derivatives from Fedora
 			Repository</description>
@@ -45,6 +48,9 @@
 					commit-interval="1" />
 			</tasklet>
 		</step>
+		<listeners>
+				<listener ref="batchAccessListener" />
+		</listeners>
 	</job>
 
 </beans:beans>
