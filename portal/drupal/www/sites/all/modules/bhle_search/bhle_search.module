@@ -676,6 +676,10 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         // Get the query field
         $query_field = $condition['field'];
 
+        if( strpos($query_field, "mods_title") !== false ) {
+            $params['bq'] = "mods_title__sort:" . $query_term . "^100";
+        }
+
         if(_is_combination_field($query_field)){
             // prepate $query_field to be used in the dismax query parameter 'qf'
             // multiple field names are concatenated with '+'
@@ -699,6 +703,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
                 $query_field .= '__exact';
             }
         }
+
 
         // Check if search term expansion is turned on
         if ($_SESSION['bhle_search']['expand_search']) {
