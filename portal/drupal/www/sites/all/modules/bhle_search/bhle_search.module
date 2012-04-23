@@ -501,7 +501,8 @@ function bhle_search_advanced_validate($form, &$form_state) {
         }
         $values['num_conditions'] = 0;
         unset($_SESSION['bhle_search']['conditions']);
-        unset($_SESSION['numFound']);
+        unset($_SESSION['bhle_search']['numFound']);
+//         bhle_search_search_summary_clear();
     }
 
 
@@ -826,12 +827,19 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
           $params['facet.field'][] = $facet_field;
         }
 
+
+        /******************************
+         *    EXECUTE THE SEARCH
+         ******************************/
         $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
         $facets = $responseObj->facet_counts->facet_fields;
         if(isset($responseObj->highlighting)){
             $highlighting = (array) $responseObj->highlighting;
         }
+
+
+
         //dpm($responseObj->request, 'request');
         //dpm($response, 'response result');
         //dpm($facets, 'facets');
