@@ -12,20 +12,10 @@
 		thumbnailBuilder " class="com.bhle.access.bookreader.ThumbnailBuilder"
 		p:storageService-ref="storageService" />
 
-	<bean id="bookreaderExtendedConverterManager" parent="converterManager">
-		<property name="converters">
-			<list>
-				<ref bean="bookInfoConverter" />
-				<ref bean="thumbnailConverter" />
-			</list>
-		</property>
-	</bean>
-
 	<bean id="bookInfoConverter" class="com.bhle.access.bookreader.BookInfoConverter" />
 	<bean id="thumbnailConverter" class="com.bhle.access.bookreader.ThumbnailConverter" />
 
-	<bean id="bookreaderExtendedAfterBatchIngestConverterManager"
-		parent="afterBatchIngestConverterManager">
+	<bean id="bookreaderExtendedConverterManager" parent="converterManager">
 		<property name="converters">
 			<list>
 				<ref bean="bookInfoConverter" />

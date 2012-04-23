@@ -96,6 +96,10 @@ public class FedoraURI {
 		return FedoraURI.DEFAULT_NAMESPACE + ":" + GUID_BANK_ID + "-" + guid;
 	}
 
+	public static String getGuidFromPid(String pid) {
+		return pid.split("-")[1];
+	}
+
 	public static FedoraURI getFedoraUri(String guid, String dsid) {
 		return new FedoraURI(URI.create(DEFAULT_SCHEME + ":fedora/"
 				+ getPidFromGuid(guid) + "/" + dsid));

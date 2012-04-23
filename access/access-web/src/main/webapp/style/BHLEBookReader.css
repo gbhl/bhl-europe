@@ -7,6 +7,10 @@
 	display: none;
 }
 
+#BookReader {
+	left: 210px;
+}
+
 div#BRnav {
 	position: absolute;
 }
@@ -147,7 +151,7 @@ fieldset .thumbnailFieldset {
 
 #BRbox {
 	position: fixed;
-	left: -200px;
+	left: 0px;
 	top: 0px;
 	z-index: 999;
 	width: 200px;
@@ -174,7 +178,7 @@ fieldset .thumbnailFieldset {
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 10px;
-	opacity: .25;
+	opacity: 1;
 	height: 100%;
 	-webkit-box-shadow: 1px 1px 1px 1px gray;
 	-moz-box-shadow: 1px 1px 1px 1px gray;
