@@ -41,7 +41,7 @@ public class BatchIngestListener {
 		if (jobExecution.getStatus().isUnsuccessful()) {
 			purgeItem(guid);
 		} else {
-			activateItem(guid);
+			//activateItem(guid);
 		}
 	}
 
@@ -57,11 +57,11 @@ public class BatchIngestListener {
 
 	}
 
-	private void activateItem(String guid) {
-		String pid = guid.replace("/", "-");
-		logger.info("Activate object: {}", pid);
-		fedoraService.activate(pid);
-	}
+//	private void activateItem(String guid) {
+//		String pid = guid.replace("/", "-");
+//		logger.info("Activate object: {}", pid);
+//		fedoraService.activate(pid);
+//	}
 
 	private void reportViaJms(JobExecution jobExecution) {
 		Map<String, String> messageBody = new HashMap<String, String>();

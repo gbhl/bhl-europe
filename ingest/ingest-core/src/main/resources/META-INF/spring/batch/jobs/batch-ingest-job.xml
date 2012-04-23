@@ -23,13 +23,21 @@
 		<beans:property name="jmsProducer" ref="ingestJmsProducer" />
 		<beans:property name="fedoraService" ref="fedoraServiceImpl" />
 	</beans:bean>
+	
+	<beans:bean id="bookActivator" class="com.bhle.ingest.batch.BookActivator" scope="step">
+		<beans:property name="fedoraService" ref="fedoraServiceImpl"/>
+		<beans:property name="guid" value="#{jobParameters[GUID]}" />
+	</beans:bean>
 
 	<job id="batchIngestJob">
 		<description>Batch Ingest</description>
-		<step id="main">
+		<step id="main" next="activeBook">
 			<tasklet>
 				<chunk reader="sipReader" writer="sipWriter" commit-interval="${batch.commit.interval}" />
 			</tasklet>
+		</step>
+		<step id="activeBook">
+			<tasklet ref="bookActivator" />
 		</step>
 		<listeners>
 			<listener ref="batchIngestListener" />

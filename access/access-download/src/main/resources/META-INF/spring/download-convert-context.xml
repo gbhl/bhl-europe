@@ -4,27 +4,16 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<bean id="fullPdfConverter" class="com.bhle.access.download.convert.FullPdfConverter" />
+	<bean id="fullJpegConverter" class="com.bhle.access.download.convert.FullJpegConverter" />
+	<bean id="fullOcrConverter" class="com.bhle.access.download.convert.FullOcrConverter" />
+
 	<bean id="downloadExtendedConverterManager" parent="converterManager">
 		<property name="converters">
 			<list>
-				<ref bean="completePdfConverter" />
-				<ref bean="completeJpegConverter" />
-				<ref bean="completeOcrConverter" />
-			</list>
-		</property>
-	</bean>
-
-	<bean id="completePdfConverter" class="com.bhle.access.download.convert.CompletePdfConverter" />
-	<bean id="completeJpegConverter" class="com.bhle.access.download.convert.CompleteJpegConverter" />
-	<bean id="completeOcrConverter" class="com.bhle.access.download.convert.CompleteOcrConverter" />
-
-	<bean id="downloadExtendedAfterBatchIngestConverterManager"
-		parent="afterBatchIngestConverterManager">
-		<property name="converters">
-			<list>
-				<ref bean="completePdfConverter" />
-				<ref bean="completeJpegConverter" />
-				<ref bean="completeOcrConverter" />
+				<ref bean="fullPdfConverter" />
+				<ref bean="fullJpegConverter" />
+				<ref bean="fullOcrConverter" />
 			</list>
 		</property>
 	</bean>

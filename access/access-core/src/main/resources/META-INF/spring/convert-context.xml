@@ -9,14 +9,6 @@
 
 	<context:component-scan base-package="com.bhle.access.convert" />
 
-	<bean id="afterBatchIngestConverterManager"
-		class="com.bhle.access.convert.AfterBatchIngestConverterManager">
-		<property name="converters">
-			<list>
-			</list>
-		</property>
-	</bean>
-
 	<bean id="converterManager" class="com.bhle.access.convert.ConverterManager">
 		<property name="converters">
 			<list>
@@ -56,8 +48,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>
@@ -67,8 +61,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>
@@ -78,8 +74,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>
@@ -89,8 +87,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>
@@ -100,8 +100,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>
@@ -111,8 +113,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>
@@ -122,8 +126,10 @@
 			<list>
 				<value>info:fedora/bhle-cmodel:monographCModel</value>
 				<value>info:fedora/bhle-cmodel:serialCModel</value>
+				<value>info:fedora/bhle-cmodel:sectionCModel</value>
 				<value>info:fedora/bhle-cmodel:volumeCModel</value>
 				<value>info:fedora/bhle-cmodel:chapterCModel</value>
+				<value>info:fedora/bhle-cmodel:articleCModel</value>
 			</list>
 		</property>
 	</bean>

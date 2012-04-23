@@ -9,8 +9,6 @@ import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,8 +25,6 @@ import com.yourmediashelf.fedora.generated.access.DatastreamType;
 
 @Component
 public class FedoraUtil {
-	private static final Logger logger = LoggerFactory
-			.getLogger(FedoraUtil.class);
 
 	public static final String PAGE_MODEL = "bhle-cmodel:pageCModel";
 
@@ -124,7 +120,7 @@ public class FedoraUtil {
 		return null;
 	}
 
-	public static String[] getAllMemberOfPid(String pid) {
+	public static String[] getAllMembersOfPid(String pid) {
 		String query = "select $object from <#ri> "
 				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + pid
 				+ "> " + "or $object <dc:identifier> " + "'" + pid + "')";
