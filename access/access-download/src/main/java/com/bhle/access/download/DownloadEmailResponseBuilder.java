@@ -23,7 +23,9 @@ public class DownloadEmailResponseBuilder implements DownloadResponseBuilder {
 		response.setRequest(request);
 		response.setBlob(blob);
 
-		sendEmail(request, response);
+		if (request.isOffline()) {
+			sendEmail(request, response);
+		}
 
 		return response;
 	}

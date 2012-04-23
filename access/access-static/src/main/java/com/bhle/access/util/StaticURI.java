@@ -3,9 +3,6 @@ package com.bhle.access.util;
 import java.net.URI;
 import java.net.URL;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.bhle.access.storage.akubra.mapper.PairtreeIdMapper;
 
 public class StaticURI {

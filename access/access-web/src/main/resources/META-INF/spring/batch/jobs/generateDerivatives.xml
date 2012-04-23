@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/batch
+                           http://www.springframework.org/schema/batch/spring-batch-2.1.xsd">
+
+	<beans:bean id="generationExecutionDecider"
+		class="com.bhle.access.batch.GenerationExecutionDecider" />
+
+	<beans:bean id="fedoraObjectReader" class="com.bhle.access.batch.FedoraObjectReader"
+		scope="step">
+		<beans:property name="pid" value="#{jobParameters[PID]}" />
+		<beans:property name="decider" ref="generationExecutionDecider" />
+	</beans:bean>
+
+	<beans:bean id="singleObjectConversionProcessor"
+		class="com.bhle.access.batch.SingleObjectConversionProcessor" />
+
+	<beans:bean id="datastreamDerivativeWriter"
+		class="com.bhle.access.batch.DatastreamDerivativeWriter">
+		<beans:property name="store" ref="storageService" />
+	</beans:bean>
+
+	<beans:bean id="thumbnailTasklet"
+		class="com.bhle.access.bookreader.batch.ThumbnailTasklet" scope="step">
+		<beans:property name="pid" value="#{jobParameters[PID]}" />
+	</beans:bean>
+
+	<beans:bean id="bookInfoTasklet"
+		class="com.bhle.access.bookreader.batch.BookInfoTasklet" scope="step">
+		<beans:property name="pid" value="#{jobParameters[PID]}" />
+	</beans:bean>
+
+	<beans:bean id="fullPdfTasklet"
+		class="com.bhle.access.download.batch.FullPdfTasklet" scope="step">
+		<beans:property name="pid" value="#{jobParameters[PID]}" />
+		<beans:property name="lowLevelStorage" ref="lowLevelStorage" />
+		<beans:property name="downloadGateway" ref="downloadGateway" />
+	</beans:bean>
+
+	<beans:bean id="fullJpegTasklet"
+		class="com.bhle.access.download.batch.FullJpegTasklet" scope="step">
+		<beans:property name="pid" value="#{jobParameters[PID]}" />
+		<beans:property name="lowLevelStorage" ref="lowLevelStorage" />
+		<beans:property name="downloadGateway" ref="downloadGateway" />
+	</beans:bean>
+
+	<beans:bean id="fullOcrTasklet"
+		class="com.bhle.access.download.batch.FullOcrTasklet" scope="step">
+		<beans:property name="pid" value="#{jobParameters[PID]}" />
+		<beans:property name="lowLevelStorage" ref="lowLevelStorage" />
+		<beans:property name="downloadGateway" ref="downloadGateway" />
+	</beans:bean>
+	<job id="generateDerivatives">
+		<description>Generate all object-based derivatives from Fedora
+			Repository</description>
+		<step id="generateObjectBasedDerivatives" next="decision">
+			<tasklet>
+				<chunk reader="fedoraObjectReader" processor="singleObjectConversionProcessor"
+					writer="datastreamDerivativeWriter" commit-interval="${batch.commit.interval}" />
+			</tasklet>
+		</step>
+		<decision decider="generationExecutionDecider" id="decision">
+			<end on="NO_PAGE" />
+			<next on="COMPLETED" to="generateThumbnail" />
+		</decision>
+		<step id="generateThumbnail">
+			<tasklet ref="thumbnailTasklet" />
+			<next on="*" to="generateBookInfo" />
+		</step>
+		<step id="generateBookInfo">
+			<tasklet ref="bookInfoTasklet" />
+			<next on="*" to="generateFullPdf" />
+		</step>
+		<step id="generateFullPdf">
+			<tasklet ref="fullPdfTasklet" />
+			<next on="*" to="generateFullJpeg" />
+		</step>
+		<step id="generateFullJpeg">
+			<tasklet ref="fullJpegTasklet" />
+			<next on="*" to="generateFullOcr" />
+		</step>
+		<step id="generateFullOcr">
+			<tasklet ref="fullOcrTasklet" />
+		</step>
+	</job>
+
+</beans:beans>

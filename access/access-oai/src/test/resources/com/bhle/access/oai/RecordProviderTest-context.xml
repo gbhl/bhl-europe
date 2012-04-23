@@ -7,7 +7,10 @@
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<import resource="classpath*:/META-INF/spring/master-context.xml" />
+	<import resource="classpath*:/META-INF/spring/env-context.xml" />
+	<import resource="classpath*:/META-INF/spring/commons-context.xml" />
+	<import resource="classpath*:/META-INF/spring/akubra-context.xml" />
+	<import resource="classpath*:/META-INF/spring/convert-context.xml" />
 	<import resource="classpath*:/META-INF/spring/static-context.xml" />
 
 </beans>

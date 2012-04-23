@@ -1,5 +1,7 @@
 package com.bhle.access.batch;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.StepExecution;
@@ -27,10 +29,17 @@ public class FedoraObjectReader implements ItemReader<DigitalObjectWrapper> {
 		this.pid = pid;
 	}
 
+	public GenerationExecutionDecider decider;
+
+	public void setDecider(GenerationExecutionDecider decider) {
+		this.decider = decider;
+	}
+
 	@BeforeStep
 	public void init(StepExecution stepExecution) {
 		// this.stepExecution = stepExecution;
-		pids = FedoraUtil.getAllMemberOfPid(pid);
+		this.pids = FedoraUtil.getAllMembersOfPid(pid);
+		this.decider.init();
 	}
 
 	public DigitalObjectWrapper read() throws Exception,
@@ -39,9 +48,17 @@ public class FedoraObjectReader implements ItemReader<DigitalObjectWrapper> {
 			String pid = pids[index].split("/")[1];
 			index++;
 			logger.info("Reading: {}", pid);
-			return DigitalObjectFactory.build(pid);
+			DigitalObjectWrapper digitalObject = DigitalObjectFactory
+					.build(pid);
+			setContentModelsToDecider(digitalObject);
+			return digitalObject;
 		}
 		return null;
 
+	}
+
+	private void setContentModelsToDecider(DigitalObjectWrapper digitalObject) {
+		List<String> contentModels = digitalObject.getConternModels();
+		decider.addContentModels(contentModels);
 	}
 }

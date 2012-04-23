@@ -1,29 +1,34 @@
-package com.bhle.access.bookreader;
+package com.bhle.access.download.convert;
 
 import java.io.InputStream;
 
 import com.bhle.access.convert.AbstractDataStreamConverter;
 
-public class BookInfoConverter extends AbstractDataStreamConverter {
+public class FullJpegConverter extends AbstractDataStreamConverter {
 
+	@Override
 	public String[] getContentModels() {
-		return new String[0];
+		return new String[] {};
 	}
 
+	@Override
 	public String getDatastreamId() {
-		return "BOOKREADER";
+		return "FULL_JPG";
 	}
 
+	@Override
 	public String getDerivativeId() {
-		return "BOOKREADER";
+		return "FULL_JPG";
 	}
 
+	@Override
 	public String getDerivativeSuffix() {
-		return "json";
+		return "zip";
 	}
 
+	@Override
 	public String getDerivativeMimeType() {
-		return "application/json";
+		return "application/x-zip-compressed";
 	}
 
 	@Override

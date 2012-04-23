@@ -398,7 +398,7 @@ BookReader.prototype.updatePageBoxPageNum = function(index) {
 
 BookReader.prototype.buildCollapsableBox = function(){
 	var box = $(['<div id="BRbox">',
-	                	'<div id="BRboxhead" class="BRexpand" />',
+	                	'<div id="BRboxhead" class="BRcollapse" />',
 	                	'<div id="BRboxcontent" />',
 	                '</div>'
 	                ].join('\n'));

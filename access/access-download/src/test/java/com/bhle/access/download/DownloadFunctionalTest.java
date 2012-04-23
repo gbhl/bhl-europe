@@ -12,20 +12,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 
-import com.bhle.access.BaseTest;
 import com.bhle.access.util.Resolution;
 
+@Ignore
 @ContextConfiguration
-public class DownloadFunctionalTest extends BaseTest {
+public class DownloadFunctionalTest {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(DownloadFunctionalTest.class);
 
 	@Autowired
 	private DownloadGateway gateway;
-
-	@Autowired
-	private DownloadProcessor processor;
 
 	@Ignore
 	@Test
