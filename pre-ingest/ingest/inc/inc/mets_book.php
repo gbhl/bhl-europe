@@ -77,7 +77,7 @@ if ($nodeValue=='*olefdata')
         // Load original OLEF
         $olefDom = new DOMDocument();
         $olefDom->load($olef_file);
-
+        
         // Remove OLEF placeholders in template
         $removeNode = null;
         $removeNode = @$docRoot->getElementsByTagName('olef')->item(0);
@@ -88,8 +88,8 @@ if ($nodeValue=='*olefdata')
         $removeNode = @$docRoot->getElementsByTagName('olef:olef')->item(0);
         if (($removeNode!=null)&&($removeNode!='null')&&($removeNode))
         @$curElement->removeChild($removeNode);           // Everything below parent has to be removed
-
+        
         // Insert OLEF
-        $newnode = $curElement->importNode($olefDom->documentElement);
+        $newnode = $curElement->appendChild($domDoc->importNode($olefDom->documentElement, true));
      }
 }
