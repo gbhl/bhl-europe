@@ -1,7 +1,5 @@
 package com.bhle.access.download.batch;
 
-import java.util.concurrent.ExecutionException;
-
 import org.akubraproject.Blob;
 import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.scope.context.ChunkContext;
@@ -51,13 +49,7 @@ public class FullPdfTasklet implements Tasklet {
 		request.setResolution(new Resolution("medium"));
 		String[] pageUris = PID_EXTRACTOR.getPageURIs(guid, "");
 		request.setPageURIs(pageUris);
-		try {
-			downloadGateway.download(request).get();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (ExecutionException e) {
-			e.printStackTrace();
-		}
+		downloadGateway.download(request).get();
 		return RepeatStatus.FINISHED;
 	}
 

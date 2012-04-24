@@ -20,12 +20,19 @@ public class SipWriter implements ItemWriter<File> {
 		this.ingestor = ingestor;
 	}
 	
+	private BatchIngestTracker batchIngestTracker;
+	
+	public void setBatchIngestTracker(BatchIngestTracker batchIngestTracker) {
+		this.batchIngestTracker = batchIngestTracker;
+	}
+	
 	
 	@Override
 	public void write(List<? extends File> files) throws Exception {
 		for (File file : files) {
 			logger.info("Ingest File: " + file.getName());
-			ingestor.ingestItem(file);
+			String pid = ingestor.ingestItem(file);
+			batchIngestTracker.addPid(pid);
 		}
 	}
 

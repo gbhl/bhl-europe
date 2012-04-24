@@ -15,12 +15,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
-import org.springframework.test.annotation.ExpectedException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.bhle.ingest.jms.PreingestJmsProducerStub;
-import com.yourmediashelf.fedora.client.FedoraClientException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
@@ -67,7 +65,10 @@ public class RollbackTest implements ResourceLoaderAware {
 	@Test
 	public void testExistenceOfSampleByPurge() throws InterruptedException {
 		int statusCode = service.purge("bhle:10706-a000test");
+		Assert.assertEquals(-1, statusCode);
 		statusCode = service.purge("bhle:10706-a000test-00001");
+		Assert.assertEquals(-1, statusCode);
 		statusCode = service.purge("bhle:10706-a000test-00002");
+		Assert.assertEquals(-1, statusCode);
 	}
 }

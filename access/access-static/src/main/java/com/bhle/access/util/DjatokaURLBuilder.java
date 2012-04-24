@@ -13,7 +13,7 @@ public class DjatokaURLBuilder {
 	private static final String SVC_VAL_FMT = "svc_val_fmt";
 	private static final String SVC_LEVEL = "svc.level";
 
-	private static final int DEFAULT_LEVEL = 3;
+	private static final int DEFAULT_LEVEL = 5;
 
 	public void setBaseUrl(String baseUrl) {
 		BASE_URL = baseUrl;

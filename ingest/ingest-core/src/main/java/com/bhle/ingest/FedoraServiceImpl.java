@@ -29,7 +29,7 @@ public class FedoraServiceImpl {
 	}
 
 	@ServiceActivator
-	public int ingestMETS(Message<File> message) throws IngestException {
+	public String ingestMETS(Message<File> message) throws IngestException {
 		IngestResponse response = null;
 		try {
 			response = FedoraClient.ingest().content(message.getPayload())
@@ -38,7 +38,7 @@ public class FedoraServiceImpl {
 		} catch (FedoraClientException e) {
 			throw new IngestException(e);
 		}
-		return response.getStatus();
+		return response.getPid();
 	}
 
 	public int purge(String pid) {

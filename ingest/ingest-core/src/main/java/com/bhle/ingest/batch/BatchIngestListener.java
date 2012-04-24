@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.annotation.AfterJob;
 
@@ -31,37 +30,26 @@ public class BatchIngestListener {
 		this.fedoraService = fedoraService;
 	}
 
+	private BatchIngestTracker batchIngestTracker;
+
+	public void setBatchIngestTracker(BatchIngestTracker batchIngestTracker) {
+		this.batchIngestTracker = batchIngestTracker;
+	}
+
 	@AfterJob
 	public void afterJob(JobExecution jobExecution) {
 		reportViaJms(jobExecution);
 
-		String guid = jobExecution.getJobInstance().getJobParameters()
-				.getString(Sip.JOB_PARAM_GUID_KEY);
-
 		if (jobExecution.getStatus().isUnsuccessful()) {
-			purgeItem(guid);
-		} else {
-			//activateItem(guid);
+			purgeItems(batchIngestTracker);
 		}
 	}
 
-	private void purgeItem(String guid) {
-		String pid = guid.replace("/", "-");
-		logger.info("Delete all members of object: {}", pid);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
+	private void purgeItems(BatchIngestTracker batchIngestTracker) {
+		for (String pid : batchIngestTracker.getPids()) {
+			fedoraService.purge(pid);
 		}
-		fedoraService.purgeAllMembers(pid);
-
 	}
-
-//	private void activateItem(String guid) {
-//		String pid = guid.replace("/", "-");
-//		logger.info("Activate object: {}", pid);
-//		fedoraService.activate(pid);
-//	}
 
 	private void reportViaJms(JobExecution jobExecution) {
 		Map<String, String> messageBody = new HashMap<String, String>();

@@ -53,7 +53,7 @@ public class BookInfoBuilder {
 	private static final Logger logger = LoggerFactory
 			.getLogger(BookInfoBuilder.class);
 
-	public static BookInfo build(String guid) {
+	public static BookInfo build(String guid) throws IOException {
 		logger.debug("Build BookReader Information");
 
 		BookInfo book = buildBookInfo(guid);
@@ -63,7 +63,7 @@ public class BookInfoBuilder {
 		return book;
 	}
 
-	private static BookInfo buildBookInfo(String guid) {
+	private static BookInfo buildBookInfo(String guid) throws IOException {
 		BookInfo book = new BookInfo();
 		book.setGuid(guid);
 		Olef olef = getOlef(guid);
@@ -139,15 +139,10 @@ public class BookInfoBuilder {
 		return StaticURI.toStaticHttpUri(fedoraUri);
 	}
 
-	private static Olef getOlef(String guid) {
-		try {
-			FedoraURI olefUri = FedoraURI.getFedoraUri(guid, "OLEF");
-			URI olefHttpUri = StaticURI.toStaticFileUri(olefUri);
-			return new Olef(olefHttpUri.toURL());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
+	private static Olef getOlef(String guid) throws IOException {
+		FedoraURI olefUri = FedoraURI.getFedoraUri(guid, "OLEF");
+		URI olefHttpUri = StaticURI.toStaticFileUri(olefUri);
+		return new Olef(olefHttpUri.toURL());
 	}
 
 	public static void save(BookInfo bookInfo) {

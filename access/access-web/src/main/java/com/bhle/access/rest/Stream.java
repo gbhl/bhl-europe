@@ -1,5 +1,7 @@
 package com.bhle.access.rest;
 
+import java.io.IOException;
+
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -33,8 +35,12 @@ public class Stream {
 		if (!refresh && BookInfoBuilder.exists(guid)) {
 			bookInfo = BookInfoBuilder.read(guid);
 		} else {
-			bookInfo = BookInfoBuilder.build(guid);
-			BookInfoBuilder.save(bookInfo);
+			try {
+				bookInfo = BookInfoBuilder.build(guid);
+				BookInfoBuilder.save(bookInfo);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 		JSONObject json = JSONObject.fromObject(bookInfo);
