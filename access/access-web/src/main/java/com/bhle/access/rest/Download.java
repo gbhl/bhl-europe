@@ -4,8 +4,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
 
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.FormParam;
@@ -25,15 +23,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bhle.access.bookreader.ThumbnailBuilder;
-import com.bhle.access.download.BasicDownloadRequest;
 import com.bhle.access.download.ContentType;
 import com.bhle.access.download.DownloadGateway;
 import com.bhle.access.download.DownloadLocationHelper;
-import com.bhle.access.download.DownloadResponse;
 import com.bhle.access.download.OfflineDownloadRequest;
 import com.bhle.access.download.OfflineDownloadResponse;
 import com.bhle.access.download.OfflineDownloadResponssFetcher;
-import com.bhle.access.download.OnlineDownloadResponse;
 import com.bhle.access.download.generator.OcrGenerator;
 import com.bhle.access.download.generator.PageURIExtractor;
 import com.bhle.access.download.generator.PageURIExtractorImpl;
@@ -112,8 +107,8 @@ public class Download {
 				e.printStackTrace();
 			}
 		} else {
-			InputStream is = ThumbnailBuilder.build(guid);
 			try {
+				InputStream is = ThumbnailBuilder.build(guid);
 				bytes = IOUtils.toByteArray(is);
 			} catch (IOException e) {
 				e.printStackTrace();
