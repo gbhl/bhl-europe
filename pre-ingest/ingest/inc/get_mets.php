@@ -128,7 +128,7 @@ if (file_exists($olef_file))
 
         $xmlStr = $domDoc->saveXML();
 
-        $xmlStr = str_replace(array("&gt;","&lt;","\n\n"),array(">","<","\n"),$xmlStr);
+        //$xmlStr = str_replace(array("&gt;","&lt;","\n\n"),array(">","<","\n"),$xmlStr);
 
         // OLD: $domDoc->save($metsFile)>0) 
         if (file_put_contents($metsFile, $xmlStr)>0) 
