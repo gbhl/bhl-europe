@@ -55,4 +55,9 @@ to
 was
 will
 with
+# additional stopwords for other common languages (only for testing purposes,
+# in production identifying the language and applying lang sepcific stopwords is crucial!)
+el
+
+
 

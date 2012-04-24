@@ -432,6 +432,15 @@
       </analyzer>
     </fieldType>
 
+    <fieldType name="boost" class="solr.TextField" positionIncrementGap="100" sortMissingLast="true">
+      <analyzer>
+        <filter class="solr.ICUNormalizer2FilterFactory" name="nfkc_cf" mode="compose"/>
+        <filter class="solr.StopFilterFactory" words="stopwords.txt" ignoreCase="true"/>
+        <tokenizer class="solr.KeywordTokenizerFactory"/>
+        <filter class="solr.LowerCaseFilterFactory"/>
+      </analyzer>
+    </fieldType>
+
     <!-- This is an example of using the KeywordTokenizer along
          With various TokenFilterFactories to produce a sortable field
          that does not include some properties of the source text
@@ -611,7 +620,9 @@
     <field name="mods_title__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_title__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <field name="mods_title__browse" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
+    <field name="mods_title__boost" type="boost" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_title" dest="mods_title__exact"/>
+    <copyField source="mods_title" dest="mods_title__boost"/>
     <copyField source="mods_title" dest="all"/>
     <copyField source="mods_title" dest="all__exact"/>
 
