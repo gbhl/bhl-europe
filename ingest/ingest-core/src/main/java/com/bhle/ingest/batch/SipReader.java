@@ -25,6 +25,14 @@ public class SipReader implements ItemReader<File> {
 			throw new UnexpectedInputException("SIP has no item");
 		}
 		iterator = sip.getItems().iterator();
+
+		batchIngestTracker.init();
+	}
+
+	private BatchIngestTracker batchIngestTracker;
+
+	public void setBatchIngestTracker(BatchIngestTracker batchIngestTracker) {
+		this.batchIngestTracker = batchIngestTracker;
 	}
 
 	private Iterator<File> iterator;

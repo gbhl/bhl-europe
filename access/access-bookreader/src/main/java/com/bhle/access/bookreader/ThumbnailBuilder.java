@@ -29,7 +29,7 @@ public class ThumbnailBuilder {
 
 	private static String DSID = "THUMBNAIL";
 
-	public static InputStream build(String guid) {
+	public static InputStream build(String guid) throws IOException {
 		logger.debug("Build Thumbnail");
 
 		Olef olef = getOlef(guid);
@@ -43,13 +43,7 @@ public class ThumbnailBuilder {
 				entryPageSequence, "JP2");
 		URI entryPageHttpUri = StaticURI.toStaticFileUri(entryPageUri);
 		InputStream jp2InputStream = null;
-		try {
-			jp2InputStream = entryPageHttpUri.toURL().openStream();
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		jp2InputStream = entryPageHttpUri.toURL().openStream();
 		return ImageUtil.jp2ToThumbnail(jp2InputStream);
 	}
 
