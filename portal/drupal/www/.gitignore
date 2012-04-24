@@ -3,6 +3,7 @@ sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
 #sites/*/files
+sites/*/files/languages/*.js
 sites/*/private
 
 # Ignore eclipse ide project files
