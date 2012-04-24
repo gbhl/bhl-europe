@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    23.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  Wolfgang Koller               **
 // ********************************************
 
 // PARSE + EDIT BOOK XML OR SERIAL LEVEL MAIN XML
@@ -73,28 +74,22 @@ if ($nodeValue=='*olefdata')
     */
     if ($nodeName=='METS:xmlData')
     {
-        $arrAway = array("<?xml version=\"1.0\" encoding=\"utf-8\"?>"," ","\n");   // "<olef>","</olef>",
+        // Load original OLEF
+        $olefDom = new DOMDocument();
+        $olefDom->load($olef_file);
 
-        $olefXML = html_entity_decode(implode("\n",
-                file_get_content_filtered($olef_file, $arrAway, "", true)));
-        
-        // OLEF PLATZHALTER NODE IM TEMPLATE ENTFERNEN
+        // Remove OLEF placeholders in template
         $removeNode = null;
         $removeNode = @$docRoot->getElementsByTagName('olef')->item(0);
         if (($removeNode!=null)&&($removeNode!='null')&&($removeNode))
-        @$curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
+        @$curElement->removeChild($removeNode);           // Everything below parent has to be removed
         
         $removeNode = null;
         $removeNode = @$docRoot->getElementsByTagName('olef:olef')->item(0);
         if (($removeNode!=null)&&($removeNode!='null')&&($removeNode))
-        @$curElement->removeChild($removeNode);           // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
+        @$curElement->removeChild($removeNode);           // Everything below parent has to be removed
 
-        // OLEF EINFUEGEN
-        // $node    = $domDoc->createTextNode("olef","\n".$olefXML."\n");
-        $node    = $domDoc->createTextNode($olefXML."\n");
-        $newnode = $curElement->appendChild($node);
+        // Insert OLEF
+        $newnode = $curElement->importNode($olefDom->documentElement);
      }
 }
-
-
-?>
