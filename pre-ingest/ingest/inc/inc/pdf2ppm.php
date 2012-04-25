@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 
 // GENERIERE PPM/TIFFs AUS PDFs
@@ -102,8 +103,9 @@ else
 
     echo invisible_html(1024 * 5);
     
-    $outputFile = $destDir.$relativePDF;  // not real output file is pdftoppm root!
-                                          // PPM-root-nnnnnn.ppm, where nnnnnn is the page number. 
+    $outputFile = $destDir . str_replace("_", "", $relativePDF);    // not real output file is pdftoppm root!
+                                                                    // PPM-root-nnnnnn.ppm, where nnnnnn is the page number. 
+                                                                    // Remove '_' since they will confuse the final page parsing step
 
     $myCmd = _PDFTOPPM . " \"" . $sourcePDF . "\" \"" . $outputFile."\""; 
     $myCmd = exec_prepare($myCmd); 
@@ -139,6 +141,3 @@ else
 // PPMS WIEDER ZAEHLEN
 if (!_QUEUE_MODE)
 $nPPM = count(getContentFiles($contentDir, 'single_suffix', true,'.ppm'));
-
-
-?>
