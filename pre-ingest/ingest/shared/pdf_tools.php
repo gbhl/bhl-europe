@@ -47,6 +47,15 @@ function getNumPagesInPDF(array $arguments = array())
     return false;
 }
 
+/**
+ * Cleanup name of PDF and remove all invalid characters
+ * @param string $pdfName Name of PDF to clean up
+ * @return string cleaned PDF name 
+ */
+function cleanPDFName( $pdfName ) {
+    return str_replace(array('_', '-'), '', $pdfName);
+}
+
 
 
 // ***********************************
@@ -130,5 +139,3 @@ function php2pdf($url)
 
 }
 
-
-?>
