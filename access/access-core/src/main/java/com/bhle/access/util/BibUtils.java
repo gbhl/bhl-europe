@@ -21,8 +21,7 @@ public class BibUtils {
 	private static String XML2BIB_PATH;
 	private static String XML2END_PATH;
 
-	@PostConstruct
-	public void init() {
+	public static void copyExecutablesToTmp() {
 		if (OSValidator.isWindows()) {
 			try {
 				File bib = copyInputStreamToTmpFile(
@@ -39,16 +38,20 @@ public class BibUtils {
 				File bib = copyInputStreamToTmpFile(
 						LINUX_XML2BIB.getInputStream(), "");
 				XML2BIB_PATH = bib.getAbsolutePath();
-				 bib.setExecutable(true, false);
+				bib.setExecutable(true, false);
 				File end = copyInputStreamToTmpFile(
 						LINUX_XML2END.getInputStream(), "");
 				XML2END_PATH = end.getAbsolutePath();
-				 end.setExecutable(true, false);
+				end.setExecutable(true, false);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
+	}
 
+	@PostConstruct
+	public void init() {
+		copyExecutablesToTmp();
 	}
 
 	@Autowired
@@ -72,6 +75,10 @@ public class BibUtils {
 	}
 
 	public static InputStream mods2BibTex(InputStream modsInputStream) {
+		File xml2BibFile = new File(XML2BIB_PATH);
+		if (!xml2BibFile.exists()) {
+			copyExecutablesToTmp();
+		}
 		try {
 			File tmp = copyInputStreamToTmpFile(modsInputStream, null);
 			ProcessBuilder pb;
@@ -90,6 +97,10 @@ public class BibUtils {
 	}
 
 	public static InputStream mods2Endnote(InputStream modsInputStream) {
+		File xml2EndFile = new File(XML2END_PATH);
+		if (!xml2EndFile.exists()) {
+			copyExecutablesToTmp();
+		}
 		try {
 			File tmp = copyInputStreamToTmpFile(modsInputStream, null);
 			ProcessBuilder pb;
