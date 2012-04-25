@@ -7,7 +7,6 @@ import org.springframework.batch.core.configuration.JobLocator;
 import org.springframework.batch.core.launch.NoSuchJobException;
 import org.springframework.batch.integration.launch.JobLaunchRequest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.integration.Message;
 import org.springframework.integration.annotation.Transformer;
 import org.springframework.integration.support.MessageBuilder;
