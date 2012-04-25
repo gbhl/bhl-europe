@@ -31,7 +31,7 @@ function getNumPagesInPDF(array $arguments = array())
     $return_val = -1;
     
     // Execute PDF-Info to get details
-    exec( _PDFINFO . " " . $PDFPath, $output, $return_val );
+    exec( _PDFINFO . " " . escapeshellarg($PDFPath), $output, $return_val );
     // Check if reading PDF-Info was successfull
     if( $return_val != 0 ) return false;
     
@@ -54,6 +54,73 @@ function getNumPagesInPDF(array $arguments = array())
  */
 function cleanPDFName( $pdfName ) {
     return str_replace(array('_', '-'), '', $pdfName);
+}
+
+function readPDFStructure( $pdfName ) {
+    $output = array();
+    $return_val = -1;
+    $pdfStructure = array();
+    
+    // Prepare dump_data command
+    $cmd = _PDFTK . ' ' . escapeshellarg($pdfName) . ' ' . _PDFTK_DATA;
+    
+    // Run dump_data
+    exec($cmd, $output, $return_val);
+    
+    // Check if we got some output
+    if( $return_val != 0 ) return false;
+    
+    // Now parse the content
+    $currStructure = array();
+    for( $j = 0; $j < count($output); $j++ ) {
+        list($info, $value) = split($output[$j]);
+        $info = trim($info);
+        $value = trim($value);
+        
+        // Check if a new section is starting, or this is the last line
+        if( $info == 'PageLabelNewIndex' || $j == (count($output) - 1) ) {
+            // Check if we have a valid last entry
+            if( isset($currStructure['PageLabelNumStyle']) ) {
+                $pdfStructurePart = array();
+                $pageCount = $value - $currStructure['PageLabelNewIndex'];
+                switch($currStructure['PageLabelNumStyle']) {
+                    case 'NoNumber':
+                        $pdfStructurePart = array_fill($currStructure['PageLabelNewIndex'], $pageCount, $currStructure['PageLabelPrefix']);
+                        break;
+                    case 'LowercaseLetters':
+                        break;
+                    case 'UppercaseLetters':
+                        break;
+                    case 'LowercaseRomanNumerals':
+                        break;
+                    case 'UppercaseRomanNumerals':
+                        break;
+                    case 'DecimalArabicNumerals':
+                        for( $i = 0; $i < $pageCount; $i++ ) {
+                            $pdfStructurePart[$currStructure['PageLabelNewIndex'] + $i] = $currStructure['PageLabelStart'] + $i;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                
+                // Finally merge the partial structure into the complete pdf-Structure
+                $pdfStructure = array_merge($pdfStructure, $pdfStructurePart);
+            }
+
+            // Reset current structure information
+            $currStructure = array();
+        }
+        
+        // Remember info in current structure
+        $currStructure[$info] = $value;
+    }
+    
+    // Check if we were able to analyze the structure
+    if( count($pdfStructure) <= 0 ) return false;
+    
+    // Return PDF-Structure
+    return $pdfStructure;
 }
 
 

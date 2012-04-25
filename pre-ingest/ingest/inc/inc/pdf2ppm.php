@@ -43,6 +43,9 @@ if ($nPPM>0)
     foreach( $arrPPM as $entryPPM ) {
         $namePPM = preg_replace( '/\-(\d+)\.ppm$/i', '_$1.ppm', $entryPPM);
         
+        $pdfStructure = readPDFStructure($sourcePDF);
+        var_export( $pdfStructure );
+        
         // Rename suffix created by pdftoppm to conform to FSG standard
         if( !rename( $entryPPM, $namePPM ) ) {
             echo 'Error: Unable to rename ' . $entryPPM . '<br />\n';

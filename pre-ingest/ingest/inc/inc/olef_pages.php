@@ -217,7 +217,7 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
                   {
                       if ($i>3) $node  = $domDoc->createElement("olef:".$curNodeName,"\n");
 
-                      $node->nodeValue = $arrPageInfos[$i];
+                      $node->nodeValue = strtolower($arrPageInfos[$i]);     // Make sure our page names are all lower case
                       $curParent->appendChild($node);          // WIRD NICHT ZU PARENTELEMENT
                   }
               }
