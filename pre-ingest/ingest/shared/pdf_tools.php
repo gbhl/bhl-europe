@@ -4,6 +4,7 @@
 // ** PURPOSE: TA ORACLE SYSTEM VIEW    **
 // ** DATE:    25.10.2007               **
 // ** AUTHOR:  ANDREAS MEHRRATH         **
+// ** AUTHOR:  WOLFGANG KOLLER          **
 // ***************************************
 
 
@@ -26,29 +27,33 @@ function getNumPagesInPDF(array $arguments = array())
 // **************************************************
 {
     @list($PDFPath) = $arguments;
-    $stream = @fopen($PDFPath, "r");
-
-    $PDFContent = @fread($stream, filesize($PDFPath));
-
-    if (!$stream || !$PDFContent)
-    {
-        @fclose($stream);
-        return false;
-    }        
-
-    $firstValue = 0;
-    $secondValue = 0;
-    if (preg_match("/\/N\s+([0-9]+)/", $PDFContent, $matches)) {
-        $firstValue = $matches[1];
+    $output = array();
+    $return_val = -1;
+    
+    // Execute PDF-Info to get details
+    exec( _PDFINFO . " " . $PDFPath, $output, $return_val );
+    // Check if reading PDF-Info was successfull
+    if( $return_val != 0 ) return false;
+    
+    // Find page info
+    foreach( $output as $line ) {
+        list($info, $value) = explode(':', $line);
+        
+        if( trim($info) == 'Pages' ) {
+            return trim($value);
+        }
     }
+    
+    return false;
+}
 
-    if (preg_match_all("/\/Count\s+([0-9]+)/s", $PDFContent, $matches)) {
-        $secondValue = max($matches[1]);
-    }
-
-    @fclose($stream);
-
-    return (($secondValue != 0) ? $secondValue : max($firstValue, $secondValue));
+/**
+ * Cleanup name of PDF and remove all invalid characters
+ * @param string $pdfName Name of PDF to clean up
+ * @return string cleaned PDF name 
+ */
+function cleanPDFName( $pdfName ) {
+    return str_replace(array('_', '-'), '', $pdfName);
 }
 
 
@@ -134,5 +139,3 @@ function php2pdf($url)
 
 }
 
-
-?>
