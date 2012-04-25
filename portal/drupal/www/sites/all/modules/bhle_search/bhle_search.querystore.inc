@@ -32,24 +32,58 @@ function bhle_search_field_formatter_info() {
 */
 function bhle_search_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
 
+    $header = array(
+        t('Name'),
+        t('Query'),
+        array(
+              'data' => t('Operations'),
+              'colspan' => 2,
+        ),
+    );
+    $rows = array();
+
     foreach ($items as $delta => $item) {
 
         $stored_query_info = unserialize($item['value']);
 
-        $html = '<div class="stored_query" >';
-        $html .= '<span class="name">' . $stored_query_info['name'] .'</span><span class="query">';
-        $html .= var_export($stored_query_info['data'], true);
-        $html .= '</span>';
-//         $html .= l(t('Load query'), 'bhle_search/querystore/'.$stored_query_info['name'].'/load') . ' ';
-        $html .= l(t('Execute query'), 'bhle_search/querystore/'.$stored_query_info['name'].'/execute') . ' ';
-        $html .= l(t('Delete query'), 'bhle_search/querystore/'.$stored_query_info['name'].'/delete') . ' ';
-        $html .= '</div>';
+        //TODO put into theme -------------
+        $query = t('expand search') . ': ' . ($stored_query_info['data']['expand_search'] == 0 ? t('no') : t('yes') );
+	    $query .= ' | ' . t('exact word / phrase') . ': ' .( $stored_query_info['data']['exact_phrase'] == 0 ? t('no') : t('yes') );
+        $query .= '<ul class="query">';
+        $stored_query_info['data'];
+        foreach($stored_query_info['data']['conditions'] as $condition){
+            $query_row = "";
+            $query_row .= human_readable_field_name($condition['field']) . ": " . $condition['term'];
+            if($condition['exact_phrase'] != null) {
+                $query_row .= ' ('. t('exact') . ')';
+            }
+            $query .= '<li>' . check_plain($query_row) . '</li>';
+        }
+        $query .= '</ul>';
+        // --------------------------------
+
+        $rows[] = array (
+            'data' => array(
+                check_plain($stored_query_info['name']),
+                $query,
+                l(t('Execute query'), 'bhle_search/querystore/'.$stored_query_info['name'].'/execute'),
+                l(t('Delete query'), 'bhle_search/querystore/'.$stored_query_info['name'].'/delete'),
+    //          l(t('Load query'), 'bhle_search/querystore/'.$stored_query_info['name'].'/load'),
+            )
+        );
 
         $elements[$delta] = array(
         	'#markup' => $html,
             );
     }
-    return $elements;
+
+    $build['querystore_table'] = array(
+        '#theme' => 'table',
+        '#header' => $header,
+        '#rows' => $rows,
+    );
+
+    return array($build);
 }
 
 /**
