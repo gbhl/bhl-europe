@@ -26,7 +26,7 @@ public class SipReader implements ItemReader<File> {
 		}
 		iterator = sip.getItems().iterator();
 
-		batchIngestTracker.init();
+		batchIngestTracker.init(guid);
 	}
 
 	private BatchIngestTracker batchIngestTracker;
