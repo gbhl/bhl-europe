@@ -16,7 +16,9 @@
 		<beans:property name="batchIngestTracker" ref="batchIngestTracker" />
 	</beans:bean>
 
-	<beans:bean id="sipWriter" class="com.bhle.ingest.batch.SipWriter">
+	<beans:bean id="sipWriter" class="com.bhle.ingest.batch.SipWriter"
+		scope="step">
+		<beans:property name="guid" value="#{jobParameters[GUID]}" />
 		<beans:property name="ingestor" ref="fedoraGateway" />
 		<beans:property name="batchIngestTracker" ref="batchIngestTracker" />
 	</beans:bean>

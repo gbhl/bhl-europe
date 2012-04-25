@@ -2,31 +2,36 @@ package com.bhle.ingest.batch;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class BatchIngestTrackerImpl implements BatchIngestTracker {
 
-	private static final Logger logger = LoggerFactory
-			.getLogger(BatchIngestTrackerImpl.class);
-	
-	private List<String> pids;
+	private Map<String, List<String>> map = new ConcurrentHashMap<String, List<String>>();
 
 	@Override
-	public void addPid(String pid) {
-		logger.debug("Add {} to tracker", pid);
-		pids.add(pid);
+	public void init(String guid) {
+		List<String> members = map.get(guid);
+		if (members == null) {
+			members = new ArrayList<String>();
+			map.put(guid, members);
+		}
 	}
 
 	@Override
-	public List<String> getPids() {
-		return pids;
+	public void addMember(String guid, String memberId) {
+		List<String> members = map.get(guid);
+		members.add(memberId);
 	}
 
 	@Override
-	public void init() {
-		pids = new ArrayList<String>();
+	public List<String> getMembers(String guid) {
+		return map.get(guid);
+	}
+
+	@Override
+	public void remove(String guid) {
+		map.remove(guid);
 	}
 
 }

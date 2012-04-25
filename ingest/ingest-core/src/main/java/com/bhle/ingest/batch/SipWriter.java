@@ -13,26 +13,31 @@ public class SipWriter implements ItemWriter<File> {
 
 	private static final Logger logger = LoggerFactory
 			.getLogger(SipWriter.class);
-	
+
 	private FedoraService ingestor;
-	
+
 	public void setIngestor(FedoraService ingestor) {
 		this.ingestor = ingestor;
 	}
-	
+
+	private String guid;
+
+	public void setGuid(String guid) {
+		this.guid = guid;
+	}
+
 	private BatchIngestTracker batchIngestTracker;
-	
+
 	public void setBatchIngestTracker(BatchIngestTracker batchIngestTracker) {
 		this.batchIngestTracker = batchIngestTracker;
 	}
-	
-	
+
 	@Override
 	public void write(List<? extends File> files) throws Exception {
 		for (File file : files) {
 			logger.info("Ingest File: " + file.getName());
 			String pid = ingestor.ingestItem(file);
-			batchIngestTracker.addPid(pid);
+			batchIngestTracker.addMember(guid, pid);
 		}
 	}
 

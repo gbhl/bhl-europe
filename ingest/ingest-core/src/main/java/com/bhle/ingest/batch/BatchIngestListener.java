@@ -40,13 +40,17 @@ public class BatchIngestListener {
 	public void afterJob(JobExecution jobExecution) {
 		reportViaJms(jobExecution);
 
+		String guid = jobExecution.getJobInstance().getJobParameters()
+				.getString(Sip.JOB_PARAM_GUID_KEY);
 		if (jobExecution.getStatus().isUnsuccessful()) {
-			purgeItems(batchIngestTracker);
+			purgeItems(batchIngestTracker, guid);
 		}
+		
+		batchIngestTracker.remove(guid);
 	}
 
-	private void purgeItems(BatchIngestTracker batchIngestTracker) {
-		for (String pid : batchIngestTracker.getPids()) {
+	private void purgeItems(BatchIngestTracker batchIngestTracker, String guid) {
+		for (String pid : batchIngestTracker.getMembers(guid)) {
 			fedoraService.purge(pid);
 		}
 	}
