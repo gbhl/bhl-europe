@@ -55,7 +55,7 @@ define('BHLE_SEARCH_HIGHLIGHT_FIELDS', 'mods_title,mods_name');
   n.	Journal/Serial (content type) [- NA -]
  *
  */
-define('BHLE_SEARCH_FIELDS', 'PID;mods_language;mods_place;mods_record_content_source;mods_abstract');
+define('BHLE_SEARCH_FIELDS', 'PID;mods_language;mods_place;mods_record_content_source;mods_abstract;contentType');
 
 /**
  * Implements hook_init()
@@ -1261,10 +1261,12 @@ function field_name_label($field_name){
 	static $field_name_label_map;
 
 	if(!isset($field_name_label_map)){
-		$field_name_label_map = array("date_issued"=>'Year', 'name'=>'Author');
+		$field_name_label_map = array("date_issued"=>'Year', 'name'=>'Author', 'contentType'=>'Material type');
 	}
 
-	$label = substr($field_name, strpos($field_name, '_') + 1);
+	$_pos = strpos($field_name, '_');
+	$firstSeparatorPosition = $_pos !== false ? $_pos +1 : 0;
+	$label = substr($field_name, $firstSeparatorPosition);
 	if(isset($field_name_label_map[$label])){
 		return t($field_name_label_map[$label]);
 	} else {
