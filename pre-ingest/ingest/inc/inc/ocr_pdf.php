@@ -32,7 +32,9 @@ for ($i=1;$i<=$cPages;$i++)
     
     $myCmd = str_replace("SSSS",$sourcePDF,_PDFTOTEXT);
     
-    $outputFile = $destDir.$relativePDF."_".$i."_PDF_".$i.".txt";
+    $outputFile = $destDir . sprintf('%s_%0'. strlen($cPages) . 'd.tif.txt', basename(cleanPDFName($relativePDF), '.pdf'), $i );
+    
+    //$outputFile = $destDir.$relativePDF."_".$i."_PDF_".$i.".txt";
 
     // FIRST - LAST PAGE  - OUTPUT FILE 
     $myCmd = str_replace(array('FFFF','LLLL','OOOO'),array($i,$i,$outputFile),$myCmd);
