@@ -41,7 +41,7 @@ if ($nPPM>0)
     
     for ($i=0;$i<$nPPM;$i++)
     {
-        if (instr(basename($arrPPM[$i]),".pdf"))
+        /*if (instr(basename($arrPPM[$i]),".pdf"))
         {
             $newPPMname = str_replace(
                     array(
@@ -81,7 +81,7 @@ if ($nPPM>0)
                 echo $i.",";
                 $nRenamed++;
             }
-        }
+        }*/
     }
     
     if ($nRenamed>0)
@@ -103,7 +103,7 @@ else
 
     echo invisible_html(1024 * 5);
     
-    $outputFile = $destDir . str_replace("_", "", $relativePDF);    // not real output file is pdftoppm root!
+    $outputFile = $destDir . basename(str_replace("_", "", $relativePDF), '.pdf');    // not real output file is pdftoppm root!
                                                                     // PPM-root-nnnnnn.ppm, where nnnnnn is the page number. 
                                                                     // Remove '_' since they will confuse the final page parsing step
 
