@@ -677,7 +677,7 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
         $query_field = $condition['field'];
 
         if( strpos($query_field, "mods_title") !== false ) {
-            $params['bq'] = "mods_title__sort:" . $query_term . "^100";
+            $params['bq'] = "mods_title__boost:" . $query_term . "^100";
         }
 
         if(_is_combination_field($query_field)){
