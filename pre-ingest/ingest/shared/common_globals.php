@@ -148,34 +148,6 @@ if (defined("_DOC_ROOT"))                      define("_WIN_DRV",substr(_DOC_ROO
 
 $development = false;
 
-// ***********************************
-// *** SERVERSPEZIFISCHE PARAMETER ***
-// ***********************************
-// ALSO USEABLE: echo __DIR__;
-switch (trim(_SERVER))
-{
-    // ES SOLLTE NICHTS PER LOCALHOST AUGERUFEN WERDEN 127.0.0.1
-    case '':              // CLI & PROD
-    case '10.1.84.9':     
-        if (file_exists(dirname(__FILE__)."/common_ta_vm007.php")) 
-        include_once("common_ta_vm007.php");           
-    break;
-    case '10.1.48.161':   
-        if (file_exists(dirname(__FILE__)."/common_ta_p1apexdb01.php")) 
-        include_once("common_ta_p1apexdb01.php"); 
-    break;  
-//  case '10.1.50.215':   
-//      if (file_exists(dirname(__FILE__)."/common_ta_wrzsora1.php")) 
-//      include_once("common_ta_wrzsora1.php");  
-//  break; 
-    default:              
-        if (file_exists(dirname(__FILE__)."/common_ta_lokal.php")) 
-        include_once("common_ta_lokal.php");           
-    break;
-}
-
-
-
 // *********************************
 // *** WEITERE ABGELEITETE PFADE ***
 // *********************************
