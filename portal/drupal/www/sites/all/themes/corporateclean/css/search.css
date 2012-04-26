@@ -1,8 +1,8 @@
-.front #content-inside .region-content {width:1010px;} 
+.front #content-inside .region-content {width:1010px;}
 
 .front #block-search-form {
   position:relative; float:left; margin:0px;
-  width:700px; height:140px; 
+  width:700px; height:140px;
   background:transparent url('../images/bg-simplesearch.png') no-repeat 0px 0px;
 }
 .front #block-search-form h2,
@@ -15,7 +15,7 @@ form .form-item,
 form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
 .front #block-search-form .container-inline label {
-  float:left; margin:0px; padding:15px 30px 25px; 
+  float:left; margin:0px; padding:15px 30px 25px;
   color:#006626; font-weight:bold; font-size: 116.7%;
   background:transparent url('../images/bg-simple-search-tab-right.png') no-repeat right top;
 }
@@ -33,17 +33,17 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 .front #block-search-form .form-item.form-type-textfield {float:left; width:552px; padding-left:28px;}
 /*
 .front #block-search-form .form-item.form-type-textfield input.form-text {
-  clear:left; float:left; 
-  width:520px; padding:5px; margin:7px 10px 5px 35px; 
-  font-size:166.7%;  text-align:center; color:#8bc53f; 
+  clear:left; float:left;
+  width:520px; padding:5px; margin:7px 10px 5px 35px;
+  font-size:166.7%;  text-align:center; color:#8bc53f;
   border:none; background: transparent none;
 }
 */
 
 .front #block-search-form .form-item.form-type-textfield input.form-text {
-  clear:left; float:left; 
-  width:536px; height:34px; padding:5px; margin:0px 10px 5px 0px; 
-  font-size:166.7%;  text-align:center; color:#8bc53f; 
+  clear:left; float:left;
+  width:536px; height:34px; padding:5px; margin:0px 10px 5px 0px;
+  font-size:166.7%;  text-align:center; color:#8bc53f;
   background:#fff none;
   border:1px #8bc53f solid;
   -webkit-border-radius: 4px;
@@ -65,29 +65,29 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 */
   border:none;
   overflow:hidden; cursor:pointer;
-} 
+}
 
 
 .front #content-inside .region-content .simple-search-links {float:right; position:relative; width:300px;}
 
 .front #content-inside .region-content p.advanced-search {
-  position:absolute; top:0px; right:10px; 
-  margin:0px; padding:15px 20px 5px 0; 
-  width:140px; text-align:right; font-size:116.7%; 
+  position:absolute; top:0px; right:10px;
+  margin:0px; padding:15px 20px 5px 0;
+  width:140px; text-align:right; font-size:116.7%;
   background:transparent url('../images/icon-arrow.png') no-repeat right 17px;
 }
 .front #content-inside .region-content p.advanced-search a {margin:0px; padding:0px; color:#006626; font-weight:bold; line-height:1; text-decoration:none;}
 .front #content-inside .region-content p.advanced-search a:hover {text-decoration:underline;}
 
 .front #content-inside .region-content p.advanced-buttons {
-  display:block; margin:0px; padding:43px 0 0 0; 
+  display:block; margin:0px; padding:43px 0 0 0;
   width:289px; height:80px;
   background:transparent url('../images/bg-simplesearch-links.png') no-repeat 0px bottom;
 }
 .front #content-inside .region-content p.advanced-buttons a {
-  display:block; margin:0px; padding:25px 4px 25px 60px; 
+  display:block; margin:0px; padding:25px 4px 25px 60px;
   width:80px; height:30px;  color:#006626; font-size:150%;
- /* text-indent: -50000px; */ 
+ /* text-indent: -50000px; */
   overflow:hidden;
 }
 /*.front #content-inside .region-content p.advanced-buttons a:hover {text-decoration:none;}*/
@@ -114,21 +114,21 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 /*
   float:left; height:20px; margin:0px;
   padding: 15px 25px 15px 30px; font-size:116.7%;
-  color: #006626; font-weight: bold; 
+  color: #006626; font-weight: bold;
  */
-}                                 
+}
 .page-search-bhle #content #main ul,
-.page-search-bhle #content #content_preface ul { margin-left:5px; padding-left:20px; list-style-type: disc;}   
+.page-search-bhle #content #content_preface ul { margin-left:5px; padding-left:20px; list-style-type: disc;}
 .page-search-bhle.no-sidebars #content #main .advanced-search-link,
 .page-search-bhle #content #content_preface .advanced-search-link {
   float:right; position:relative;
   z-index:20;
 }
 .page-search-bhle.no-sidebars #content #main .advanced-search-link p.simple-search,
-.page-search-bhle #content #content_preface .advanced-search-link p.simple-search { 
-  margin:0px; padding:17px 20px 3px 0; 
+.page-search-bhle #content #content_preface .advanced-search-link p.simple-search {
+  margin:0px; padding:17px 20px 3px 0;
   position:absolute; top:0px; right:10px;
-  width:240px; text-align:right; font-size:116.7%; 
+  width:240px; text-align:right; font-size:116.7%;
   background:transparent url('../images/icon-arrow.png') no-repeat right 17px;
 }
 .page-search-bhle.no-sidebars #content #main .advanced-search-link p.simple-search a,
@@ -139,11 +139,11 @@ form .form-actions {margin-top: 0px; margin-bottom: 0px;}
 
 /* .page-search-bhle.no-sidebars #content #main .region-content, */
 .page-search-bhle #content #content_preface .region-content-preface {
-  clear:both; position:relative; padding: 0px; 
-  width:1010px; 
+  clear:both; position:relative; padding: 0px;
+  width:1010px;
   background:transparent url('../images/bg-advsearchbox-top.png') no-repeat left top;
-  /*background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;*/  
-} 
+  /*background:transparent url('../images/bg-advanced-search-form2-buttons.png') no-repeat 1px bottom;*/
+}
 #content.source-browse #content_preface .region-content-preface {background:transparent none;}
 
 .page-search-bhle form.search-form {
@@ -162,7 +162,7 @@ margin-bottom: 0px;
 }
 
 .page-search-bhle form.search-form label {
-  float:left; margin:0px; padding:20px 35px 10px 30px; 
+  float:left; margin:0px; padding:20px 35px 10px 30px;
   color:#006626; font-weight:bold; font-size: 116.7%; height:25px;
   background:transparent url('../images/bg-advsearchbox-top-tab-right.png') no-repeat right top;
 }
@@ -174,12 +174,12 @@ margin-bottom: 0px;
 .page-search-bhle form.search-form div.fields-block-wrapper {
   clear:both;
   margin:0px; padding:0px 11px 0px 9px; width:990px;
-  background:transparent url('../images/bg-advsearchbox-bg.png') repeat-y left top;  
+  background:transparent url('../images/bg-advsearchbox-bg.png') repeat-y left top;
   overflow:hidden;
 }
 .page-search-bhle form.search-form div.fields-block {
-  margin:-6px 0 0 0; padding:0px; width:990px; position:relative; 
-  
+  margin:-6px 0 0 0; padding:0px; width:990px; position:relative;
+
 /*  background: #cde6ab url('../images/bg-advsearchbox-first.png') repeat-x left top; */
 
   background: rgb(221,238,199); /* Old browsers */
@@ -192,7 +192,7 @@ margin-bottom: 0px;
   background: -ms-linear-gradient(top,  rgba(221,238,199,1) 0%,rgba(205,230,171,1) 100%); /* IE10+ */
   background: linear-gradient(top,  rgba(221,238,199,1) 0%,rgba(205,230,171,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddeec7', endColorstr='#cde6ab',GradientType=0 ); /* IE6-8 */
-  
+
   overflow:hidden;
 }
 
@@ -217,11 +217,11 @@ margin-bottom: 0px;
 */
 
 .page-search-bhle form.search-form fieldset.form-wrapper .fieldset-wrapper {
-  margin:0px; padding:14px 17px 11px 20px; 
+  margin:0px; padding:14px 17px 11px 20px;
   width:953px; height:34px;
   font-size:100%; color: #006626;
   border-color: #cde6ab;
-  border:none; 
+  border:none;
 }
 .page-search-bhle form.search-form fieldset.form-wrapper .fieldset-wrapper {
 /*  background: #cde6ab url('../images/bg-advsearchbox-first.png') repeat-x left top; */
@@ -232,72 +232,72 @@ margin-bottom: 0px;
   float:left; display:inline; padding:15px 10px 0px 20px;
 }
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search label,
-.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase label {color:#006626; font-size:116.7%; font-weight:bold; margin:0px; padding:0px;}                                                                 
+.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase label {color:#006626; font-size:116.7%; font-weight:bold; margin:0px; padding:0px;}
 
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search label {float:right; }
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search input {float:left; margin-top:3px; margin-right:10px;}
 
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase {
-  /*position:absolute; left:180px; top:15px;*/ 
-/* margin:0px; padding:0px 10px 5px; width:400px; height:25px; overflow:hidden; */ 
+  /*position:absolute; left:180px; top:15px;*/
+/* margin:0px; padding:0px 10px 5px; width:400px; height:25px; overflow:hidden; */
   position:absolute; right:405px; display:inline; /* padding:15px 4px 0px 20px; */
-  padding: 0px; margin:15px 0px 0px 20px;  
+  padding: 0px; margin:15px 0px 0px 20px;
   height:17px; background-color:#006626; overflow:hidden;
 }
 
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase label {
-  float:left; margin:0px; padding:2px 10px 0px 0px; height:15px; background-color:#fff; line-height:1.0; 
+  float:left; margin:0px; padding:2px 10px 0px 0px; height:15px; background-color:#fff; line-height:1.0;
 }
 .page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-exact-phrase input {
   float:right; margin:2px; padding:0px; height:13px; width:13px;
 }
 
 .page-search-bhle form.search-form .form-type-textfield.form-item {
-  float:left; padding:5px 10px 6px 5px; margin:0px;  width:418px; height:23px; 
+  float:left; padding:5px 10px 6px 5px; margin:0px;  width:418px; height:23px;
 /*  background: transparent url('../images/bg-advsearchbox-textfield.png') no-repeat left top; */
   overflow:hidden;
 }
 .page-search-bhle form.search-form .form-type-textfield.form-item input {
   display:block; width:408px; height:23px; padding:0 5px; margin:0px;
-  color:#004226; font-size:125%; line-height:1;   
+  color:#004226; font-size:125%; line-height:1;
   background:transparent none; border:none;
   overflow:hidden;
 }
 
 .page-search-bhle form.search-form .fieldset-wrapper .operator-or.edit-or.form-submit {
-  float:left; padding:0px; margin:6px 6px 6px 12px;  width:40px; height:22px; 
+  float:left; padding:0px; margin:6px 6px 6px 12px;  width:40px; height:22px;
 /*  background: transparent url('../images/btn-operator-or.png') no-repeat right top;      */
   overflow:hidden;
 }
 .page-search-bhle form.search-form .fieldset-wrapper .operator-not.edit-not.form-submit {
-  float:left; padding:0px; margin:6px 12px 6px 6px;  width:40px; height:22px; 
+  float:left; padding:0px; margin:6px 12px 6px 6px;  width:40px; height:22px;
 /*  background: transparent url('../images/btn-operator-not.png') no-repeat right top; */
   overflow:hidden;
 }
 
 .page-search-bhle form.search-form .fieldset-wrapper .form-type-checkbox.form-item {
-  float:left; /* padding:10px 13px 11px 12px; margin:0px; */ 
+  float:left; /* padding:10px 13px 11px 12px; margin:0px; */
   background-color:#006626; margin:8px 11px 9px 10px; padding:0px;
-  width:17px; height:17px; 
+  width:17px; height:17px;
 /*  background: transparent url('../images/bg-advsearchbox-textfield.png') no-repeat right top; */
   overflow:hidden;
 }
 .page-search-bhle form.search-form .fieldset-wrapper .form-type-checkbox.form-item input.exact-phrase {
-  display:block; 
+  display:block;
   margin:2px; padding:0px; height:13px; width:13px;
 }
 
 .page-search-bhle form.search-form .form-item.form-type-select {float:left; padding:0px 0px 0px 24px;}
 .page-search-bhle form.search-form .form-item.form-type-select.form-item-operator-0 {display:none;}
 .page-search-bhle #content form.search-form .form-item.form-type-select a.select-field {
-  display:block;  height:34px; width:280px !important; 
-  background:transparent url('../images/btn-advsearch-selfield.png') no-repeat right top; border:none;  
+  display:block;  height:34px; width:280px !important;
+  background:transparent url('../images/btn-advsearch-selfield.png') no-repeat right top; border:none;
   padding:0px; color:#fff; font-weight:bold;
 }
 .page-search-bhle form.search-form .form-item.form-type-select a.select-field:hover {text-decoration:none;}
 .page-search-bhle form.search-form .form-item.form-type-select a.select-field span.ui-selectmenu-status {
   display:block;  height:14px; width:225px !important;
-  padding: 10px 10px 12px 15px; 
+  padding: 10px 10px 12px 15px;
   background:transparent url('../images/btn-advsearch-selfield.png') no-repeat left top; border:none;
 }
 .page-search-bhle form.search-form .form-item.form-type-select a.select-field .ui-selectmenu-icon.ui-icon {
@@ -309,14 +309,14 @@ margin-bottom: 0px;
 .block.advanced-search-form-2-skelet .form-type-select.form-item-relation {float:left; padding:0px 0px 0px 15px; width:95px; overflow:hidden;}
 
 .page-search-bhle form.search-form .form-item.form-type-select a.select-operator {
-  display:block;  height:45px;  width:93px !important; 
-  background:transparent url('../images/btn-advsearch-seloperator.png') no-repeat left top; border:none;   
+  display:block;  height:45px;  width:93px !important;
+  background:transparent url('../images/btn-advsearch-seloperator.png') no-repeat left top; border:none;
   padding:0px; color:#fff; font-weight:bold;
 }
 .page-search-bhle form.search-form .form-item.form-type-select a.select-operator:hover {text-decoration:none;}
 .page-search-bhle form.search-form .form-item.form-type-select a.select-operator span.ui-selectmenu-status {
   display:block;  height:20px; width:45px !important;
-  padding: 13px 3px 12px 15px;  
+  padding: 13px 3px 12px 15px;
   background:transparent url('../images/btn-advsearch-selfield.png') no-repeat left top; border:none;
 }
 .page-search-bhle form.search-form .form-item.form-type-select a.select-operator .ui-selectmenu-icon.ui-icon {
@@ -339,66 +339,79 @@ background: #a4d268 /* url(images/ui-bg_flat_75_a4d268_40x100.png) 50% 50% repea
 /* .page-search-bhle form#search-form .edit-addfield {background: transparent url('../images/btn-advsearch-add.png') no-repeat right top;} */
 .page-search-bhle form.search-form .edit-delfield {background: transparent url('../images/btn-advsearch-del.png') no-repeat right top;}
 /*.page-search-bhle form#search-form .last.form-wrapper#edit-condition-1 .edit-delfield {display:none;}*/
-                                   
+
 
 .page-search-bhle form.search-form #edit-reset {/*position:absolute; left:790px;  margin-top:23px;*/}
 .page-search-bhle form.search-form #edit-submit {/*position:absolute; left:892px; margin-top:17px;*/}
 
 .page-search-bhle form.search-form #edit-add,
 .page-search-bhle form.search-form #edit-add--2 {
-  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 35px 0px 10px;  
-  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;    
+  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 35px 0px 10px;
+  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;
   background: transparent url('../images/btn-add.png') no-repeat right top;
-  border:none; cursor:pointer; 
+  border:none; cursor:pointer;
 }
 
 .page-search-bhle form.search-form #edit-save,
 .page-search-bhle form.search-form #edit-save--2 {
-  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 10px 0px;  
-  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;    
+  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 10px 0px;
+  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;
   background: transparent url('../images/btn-save.png') no-repeat right top;
-  border:none; cursor:pointer; 
+  border:none; cursor:pointer;
 }
+.page-search-bhle form.search-form #save-disabled {
+  float:right; display:block; padding:0px 40px 5px 5px; margin:26px 10px 0px;
+  height:30px; font-size: 141.7%; color: #898989; font-weight: bold;
+  background: transparent url('../images/btn-save-disabled.png') no-repeat right top;
+  border:none; cursor:pointer;
+}
+.pseudo_button {
+	line-height: 0.9em;
+}
+.pseudo_button .hint{
+	font-size: 0.7em; font-weight: normal;
+}
+
 .page-search-bhle form.search-form #edit-save {/*display:none;*/}
 
 .page-search-bhle form.search-form #edit-reset,
 .page-search-bhle form.search-form #edit-reset--2 {
-  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 20px 0px; 
-  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;      
+  float:right; display:block; padding:5px 40px 5px 5px; margin:26px 20px 0px;
+  height:30px; font-size: 141.7%; color: #006626; font-weight: bold;
   background: transparent url('../images/btn-reset.png') no-repeat right top;
-  border:none;  cursor:pointer; 
+  border:none;  cursor:pointer;
 }
 
 .page-search-bhle form.search-form #edit-submit,
 .page-search-bhle form.search-form #edit-submit--2 {
-  float:right; display:block; padding:0px; margin:16px 26px 0px 0px; 
-  width:92px; height:47px; text-indent: -50000px; cursor:pointer;  
+  float:right; display:block; padding:0px; margin:16px 26px 0px 0px;
+  width:92px; height:47px; text-indent: -50000px; cursor:pointer;
   background: transparent url('../images/btn-search.png') no-repeat left top;
-  /*background:transparent none;*/    
-  border:none; overflow:hidden; 
-} 
+  /*background:transparent none;*/
+  border:none; overflow:hidden;
+}
 
 
 
 .page-search-bhle form.search-form table {
-  padding: 0px; margin:0px; 
+  padding: 0px; margin:0px;
   width:990px; color: #006626;
 }
 .page-search-bhle form.search-form table tr {
-  position:relative; display:block; 
-  margin:0px; padding:15px 15px 15px 20px; 
+  position:relative; display:block;
+  margin:0px; padding:15px 15px 15px 20px;
   width:955px; height:40px;
   background:transparent url('../images/bg-advanced-search-form2-tr.png') no-repeat -9px 0px;
 }
 .page-search-bhle form.search-form table th,
 .page-search-bhle form.search-form table td {
-  padding:0px; margin:0px; 
+  padding:0px; margin:0px;
   width:auto; font-size:100%; color: #006626;
   border:none; background: transparent none;
-}           
+}
 .page-search-bhle form.search-form table tr div.form-type-textfield {position:absolute; left:30px; top:20px;}
 .page-search-bhle form.search-form table tr div.form-type-textfield input {
-  width:480px; 
+  width:480px;
   color:#004226;font-size:166.7%; line-height:1;
   background:transparent none; border:none;
 }
@@ -408,6 +421,6 @@ background: #a4d268 /* url(images/ui-bg_flat_75_a4d268_40x100.png) 50% 50% repea
 }
 .page-search-bhle form.search-form table tr div.form-type-select {position:absolute; left:575px; top:12px;}
 .page-search-bhle form.search-form table tr div.form-type-select select {
-  width:180px !important; height:47px; 
+  width:180px !important; height:47px;
   background:transparent none; border:none;
 }
