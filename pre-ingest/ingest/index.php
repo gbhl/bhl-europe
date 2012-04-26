@@ -138,8 +138,8 @@ switch($menu_nav)
         break;
 
     case "file_tree": 
-        // WIRD VON CONTEN_LIST UND AJAX AUFGERUFEN
-
+        // Remove invalid path names from $start_root
+        $start_root = str_replace(array('../', './'), '', $start_root);
         if ((isset($start_root))&&($start_root!="/")) {
             $root = urldecode($start_root);
             $root = clean_path(_CONTENT_ROOT."/".str_replace(_CONTENT_ROOT,"",$root));
