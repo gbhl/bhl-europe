@@ -87,6 +87,23 @@ function bhle_search_field_formatter_view($entity_type, $entity, $field, $instan
 }
 
 /**
+ * Implements hook_field_attach_form()
+ *
+ * hides the query store on the user profile edit page
+ */
+function bhle_search_field_attach_form($entity_type, $entity, &$form, &$form_state, $langcode) {
+
+    if($entity_type == 'user'){
+        if(isset($form_state['field'][BHLE_SEARCH_FIELD_QUERYSTORE])) {
+            unset($form_state['field'][BHLE_SEARCH_FIELD_QUERYSTORE]);
+        }
+        if(isset($form[BHLE_SEARCH_FIELD_QUERYSTORE])) {
+            unset($form[BHLE_SEARCH_FIELD_QUERYSTORE]);
+        }
+    }
+}
+
+/**
  * Creates nessecary fields
  *
  * TODO move into module update and install script
