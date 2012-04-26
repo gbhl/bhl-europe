@@ -338,6 +338,8 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
  * (aka Advanced Search)
  */
 function bhle_search_form_search_form_alter(&$form, $form_state) {
+    global $user;
+
     // Remove basic form since we build a completely custom one
     unset($form['basic']);
 
@@ -435,13 +437,27 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         '#weight' => $weight++,
         '#attributes' => array('tabindex' => 0,),
     );
-    $form['save'] = array(
-        '#type' => 'submit',
-        '#value' => t('Save Query'),
-        '#weight' => $weight++,
-        '#attributes' => array('tabindex' => ($tabindex+9),),
-    );
+    if ($user->uid==0) {
+        // anonymous = not logged in
+        $form['save-disabled'] = array(
+            '#markup'=> l(
+                t('Save Query') . '<br /><span class="hint"> (' . t('login required') .')</span>',
+                'user/login',
+                array(
+                	'attributes' => array('id'=>'save-disabled', 'class'=>array('pseudo_button')),
+                	'html'=>true,
+                )),
+            '#weight' => $weight++,
+        );
 
+    } else {
+        $form['save'] = array(
+            '#type' => 'submit',
+            '#value' => t('Save Query'),
+            '#weight' => $weight++,
+            '#attributes' => array('tabindex' => ($tabindex+9),),
+        );
+    }
     $form['save_query_name'] = array(
     	'#type' => 'hidden',
         '#value' => "",
