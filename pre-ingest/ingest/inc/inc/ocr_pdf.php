@@ -1,4 +1,7 @@
 <?php
+/**
+ * @author Wolfgang Koller 
+ */
 
 // GENERIERE TEXT AUS PDFS
 // 
@@ -17,6 +20,20 @@ include_once(_SHARED."pdf_tools.php");
 
 $relativePDF = basename($sourcePDF);
 
+// We need TIF names for naming the output files
+$arrTiffs_raw = getContentFiles($contentDir, 'single_suffix', true,'.tif');
+$arrTiffs = array();
+// Build a sequence index
+foreach( $arrTiffs_raw as $entryTiff ) {
+    $matches = array();
+    $tiffName = basename($entryTiff);
+
+    // Find sequence-number in TIF name
+    if( preg_match('/^[^_]+_(\d+)/i', $tiffName, $matches) > 0 ) {
+        $sequence = intval($matches[1]);
+        $arrTiffs[$sequence] = $entryTiff;
+    }
+}
 
 echo "<h3>Try to extract text from ".$cPages." pages in " . $relativePDF . 
         " <font size=-2>(1 Step Operation, please be patient...</font></h3><pre>";
@@ -32,9 +49,8 @@ for ($i=1;$i<=$cPages;$i++)
     
     $myCmd = str_replace("SSSS",$sourcePDF,_PDFTOTEXT);
     
-    $outputFile = $destDir . sprintf('%s_%0'. strlen($cPages) . 'd.tif.txt', basename(cleanPDFName($relativePDF), '.pdf'), $i );
-    
-    //$outputFile = $destDir.$relativePDF."_".$i."_PDF_".$i.".txt";
+    // Find output name based on sequence number
+    $outputFile = $arrTiffs[$i] . '.txt';
 
     // FIRST - LAST PAGE  - OUTPUT FILE 
     $myCmd = str_replace(array('FFFF','LLLL','OOOO'),array($i,$i,$outputFile),$myCmd);
@@ -67,6 +83,3 @@ for ($i=1;$i<=$cPages;$i++)
 }
 
 echo "\n\n</pre>\n";
-
-
-?>

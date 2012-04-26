@@ -30,7 +30,6 @@ $relativePDF = basename($sourcePDF);
 $arrPPM = getContentFiles($contentDir, 'single_suffix', true,'.ppm');
 $nPPM   = count($arrPPM);
 
-
 // GENERATE TIFs FROM PPM
 if ($nPPM>0)
 {
@@ -40,12 +39,32 @@ if ($nPPM>0)
     echo "<h3>PPMs found - file name convention renaming check invoked</h3>Pages renaming: ";
     $nRenamed=0;
     
+    $pdfStructure = pdfInfo::read($sourcePDF)->getStructure();
+    var_export( $pdfStructure );
+    
     foreach( $arrPPM as $entryPPM ) {
         $namePPM = preg_replace( '/\-(\d+)\.ppm$/i', '_$1.ppm', $entryPPM);
         
-        $pdfStructure = readPDFStructure($sourcePDF);
-        var_export( $pdfStructure );
-        
+        // Check if we have a structure information
+        if( $pdfStructure != false ) {
+            // Find sequence of current page
+            $matches = array();
+            if( preg_match('/(\d+)\.ppm$/i', $namePPM, $matches) > 0 ) {
+                $sequence = intval($matches[1]);
+                $pageInfo = $pdfStructure[$sequence];
+                
+                // If it is a number, we use it as printed page number
+                if(is_numeric($pageInfo)) {
+                    $namePPM = preg_replace( '/\.ppm$/', '_page_' . $pageInfo . '.ppm', $namePPM );
+                }
+                // Else we use it as page-type
+                else {
+                    $pageInfo = preg_replace( array('/\s/', '/_/', '/\./'), '', $pageInfo );
+                    $namePPM = preg_replace( '/\.ppm$/', '_' . $pageInfo . '.ppm', $namePPM );
+                }
+            }
+        }
+
         // Rename suffix created by pdftoppm to conform to FSG standard
         if( !rename( $entryPPM, $namePPM ) ) {
             echo 'Error: Unable to rename ' . $entryPPM . '<br />\n';
