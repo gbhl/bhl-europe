@@ -119,7 +119,7 @@ if($sub_action=="save_dir_details")
              if ($isPDF)
              {
                 include_once(_SHARED."pdf_tools.php");
-                $cpages = (int) getNumPagesInPDF(array($_POST[$arrKeys[$i]]));
+                $cpages = (int) pdfInfo::read($_POST[$arrKeys[$i]])->getNumPages();
              }
              else  // BILDDATEN SELBEN TYPS IM ROOT ZAEHLEN (NICHT REKURSIV!)
              {

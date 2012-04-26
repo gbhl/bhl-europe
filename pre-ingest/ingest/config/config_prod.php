@@ -119,6 +119,11 @@ define("_PDFTOTEXT",                _XPDF_ABS."pdftotext -nopgbrk -eol unix -f F
 define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm -r 80 ");
 define("_PDFINFO",                  _XPDF_ABS.'pdfinfo');
 
+/**
+ * PDFTK Paths & Parameters 
+ */
+define("_PDFTK",                    '/usr/bin/pdftk');
+define("_PDFTK_DATA",               'dump_data_utf8');
 
 // ----------------------
 // ---- OCR SPECIFIC ----

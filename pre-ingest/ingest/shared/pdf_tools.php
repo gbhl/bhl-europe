@@ -7,7 +7,8 @@
 // ** AUTHOR:  WOLFGANG KOLLER          **
 // ***************************************
 
-
+// Include the pdfInfo class
+include_once( _SHARED . 'pdfInfo.php' );
 
 // *****************************************************
 function button_pdf($abs_file_name,$orientation="right")
@@ -20,33 +21,6 @@ function button_pdf($abs_file_name,$orientation="right")
     if ($orientation=="right") abs_e();
 }
 
-
-
-// **************************************************
-function getNumPagesInPDF(array $arguments = array()) 
-// **************************************************
-{
-    @list($PDFPath) = $arguments;
-    $output = array();
-    $return_val = -1;
-    
-    // Execute PDF-Info to get details
-    exec( _PDFINFO . " " . $PDFPath, $output, $return_val );
-    // Check if reading PDF-Info was successfull
-    if( $return_val != 0 ) return false;
-    
-    // Find page info
-    foreach( $output as $line ) {
-        list($info, $value) = explode(':', $line);
-        
-        if( trim($info) == 'Pages' ) {
-            return trim($value);
-        }
-    }
-    
-    return false;
-}
-
 /**
  * Cleanup name of PDF and remove all invalid characters
  * @param string $pdfName Name of PDF to clean up
@@ -55,8 +29,6 @@ function getNumPagesInPDF(array $arguments = array())
 function cleanPDFName( $pdfName ) {
     return str_replace(array('_', '-'), '', $pdfName);
 }
-
-
 
 // ***********************************
 function php2pdf($url)
