@@ -55,7 +55,7 @@ if ($nPPM>0)
                 
                 // If it is a number, we use it as printed page number
                 if(is_numeric($pageInfo)) {
-                    $namePPM = preg_replace( '/\.ppm$/', '_page_' . $pageInfo . '.ppm', $namePPM );
+                    $namePPM = preg_replace( '/\.ppm$/', '_' . _DEFAULT_PAGETYPE . '_' . $pageInfo . '.ppm', $namePPM );
                 }
                 // Else we use it as page-type
                 else {

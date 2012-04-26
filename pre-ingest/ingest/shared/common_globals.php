@@ -4,6 +4,7 @@
 // ** PURPOSE: GLOBAL VALUES            **
 // ** DATE:    08.05.2011               **
 // ** AUTHOR:  ANDREAS MEHRRATH         **
+// ** AUTHOR:  WOLFGANG KOLLER          **
 // ***************************************
 
 // http://at2.php.net/reserved.variables
