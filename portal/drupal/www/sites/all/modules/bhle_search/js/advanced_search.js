@@ -26,37 +26,66 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 var bhle_search = {
+
     exact_phrase: function( p_exact ) {
         // WARNING: attr is pre jQuery 1.6 - if there is ever an upgrade we have to switch to "prop"
         jQuery( 'input[name^="exact_phrase_"]' ).attr( 'checked', p_exact.attr('checked') );
     },
+
     or_not_operators: function () {
         // WARNING: live is pre jQuery 1.6 - if there is ever an upgrade we have to switch to "jQuery(document).on(…"
         jQuery('.operator-or, .operator-not').live('click', function(){
           var $input        = jQuery('.form-item input.form-text', jQuery(this).parent());
-          
+
           // If the field is filled with placeholder text, empty it first
           if ( $input.val() == jQuery('.fieldset-wrapper label:first').text())
             $input.val('');
-                    
+
           // Select operator by class
           var operator      = '';
           if ( jQuery(this).attr('class').indexOf('operator-or') >= 0 )
             operator = ' OR ';
           if ( jQuery(this).attr('class').indexOf('operator-not') >= 0 )
             operator = ' NOT ';
-          
+
           // Do operator insertion
           var insertPos = ( $input.cursorPosition() == 0 ) ? $input.val().length : $input.cursorPosition() ;
           $input.val( $input.val().substring(0, insertPos) + operator + $input.val().substring(insertPos) );
           $input.focus();
-          
-          return false;  
+
+          return false;
         });
+    },
+
+    save_query_dialog: function () {
+    	jQuery('#edit-save--2').click(function(event){
+    			jQuery(this).colorbox(
+    					{
+    						html: '<h3>Please enter a name for the query to be stored:</h3>'
+    							+ '<form><input id="save-query-dialog-name" name="name" type="text" size="30" maxlength="30" />'
+    							+ '<br /><input id="save-query-dialog-ok" type="button" value="OK"></form>',
+    							onComplete: function(){
+    								// Callback that fires right after loaded content is displayed.
+    								jQuery('#save-query-dialog-ok').click(function(event){
+    									// set the chosen name
+    									name = jQuery('#save-query-dialog-name').val();
+    									jQuery('input[name="save_query_name"]').val(name);
+
+    									// simulate submit button:
+    									// <input id="edit-save" class="form-submit" type="submit" value="Save Query" name="op" tabindex="9">
+    									localizedValue = jQuery('#edit-save--2').val();
+    									jQuery('#edit-save--2').after('<input type="hidden" name="op" value="' + localizedValue +'"/>');
+    									jQuery('#search-form--2').submit();
+    								})
+    							}
+    					}
+    			); // [END colorbox]
+    	}) // [END event handler]
     }
 }
 
 jQuery(document).ready( bhle_search.or_not_operators );
+jQuery(document).ready( bhle_search.save_query_dialog );
 
 
 // jQuery method for getting input cursor position
