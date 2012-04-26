@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 // GET METADATA VIA SCHEMA MAPPING TOOL (SMT)
 // TO OLEF FORMAT 
@@ -33,7 +34,8 @@ if ($metadata_ws != "")
     );
 
     // DIRECTORY NAME IS KEY TO GATHER
-    $metadataFile = clean_path($contentDir."/metadata_ws.xml");
+    $wsFile = clean_path($destDir."/metadata.ws");
+    $metadataFile = clean_path($destDir."/metadata.xml");
     $wsKey = $contentName;
     $pos   = strrpos($wsKey,"/");
     
@@ -48,8 +50,32 @@ if ($metadata_ws != "")
     echo "Try to get metadata over: <b>".$myURL."</b>"; nl(2);
 
     // DIRECTORY NAME IS KEY TO GATHER
-    if (file_put_contents($metadataFile,file_get_contents($myURL, 0, $resource_context))>0)
-    $inputFile = $metadataFile;
+    if (file_put_contents($wsFile,file_get_contents($myURL, 0, $resource_context))>0) {
+        
+        // Find metadata within envelope
+        $wsDoc = new DOMDocument();
+        $wsDoc->load($wsFile);
+        $metadata = $wsDoc->getElementsByTagNameNS('http://www.openarchives.org/OAI/2.0/', 'metadata')->item(0);
+        for($i = 0; $i < $metadata->childNodes->length; $i++) {
+            $currNode = $metadata->childNodes->item($i);
+            
+            if($currNode->nodeType == XML_ELEMENT_NODE) {
+                $metadata = $currNode;
+                break;
+            }
+        }
+        
+        // Extract metadata content and copy it over
+        $metadataDoc = new DOMDocument();
+        $metadata = $metadataDoc->importNode($metadata, true);
+        $metadataDoc->appendChild( $metadata );
+
+        // Save metadata & remove webservice cached result
+        $metadataDoc->save($metadataFile);
+        //unlink($wsFile);
+
+        $inputFile = $metadataFile;
+    }
 }
 
 // ***********************************
