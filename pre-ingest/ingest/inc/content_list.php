@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 
 nl();
@@ -190,7 +191,7 @@ if ($nrows>0)
     function reloadList()
     // ******************
     {
-        window.location.href = window.location.href;
+        window.location.replace('<?php echo _SYSTEM; ?>?menu_nav=ingest_list');
     }
 
     showRest();
