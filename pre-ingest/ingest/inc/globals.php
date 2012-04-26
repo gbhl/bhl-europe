@@ -6,7 +6,7 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ********************************************
 
-define("_APP_VERSION",       "1.80 beta (serials 1.3)");
+define("_APP_VERSION",       "1.81 beta (serials 1.3)");
 
 define("_APP_NAME",          "BHL-E Content Portal & Ingestion");
 
@@ -29,6 +29,3 @@ define("_QUEUE_SUFFIX",     ".sh");
 
 
 include_once(_ABS."shared/common_globals.php");
-
-        
-?>
