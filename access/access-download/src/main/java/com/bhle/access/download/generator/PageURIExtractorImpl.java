@@ -15,16 +15,13 @@ public class PageURIExtractorImpl implements PageURIExtractor {
 	private static final Logger logger = LoggerFactory
 			.getLogger(PageURIExtractorImpl.class);
 
-	// private static String INDEX_REGEX = "n\\d+|n\\d+-n\\d+";
-	// private static String PAGE_NAME_REGEX = "\\w+|\\w+-\\w+";
-
 	public String[] getPageURIs(String rangesParameter, String[] allPageUris) {
 		List<String> pageURIs = new ArrayList<String>();
 
 		String[] ranges = splitRanges(rangesParameter);
 
 		// No delimiter
-		if (ranges.length < 2) {
+		if (ranges.length < 2 && rangesParameter.equals("")) {
 			return allPageUris;
 		} else {
 			logger.debug("Number of ranges: {}", ranges.length);
