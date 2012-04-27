@@ -4,9 +4,11 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 $curStep = 3;
 
+include_once(_SHARED."pdf_tools.php");
 
 echo "<h1 style='margin-top: 3px;'>Preparing/Extracting Plain Texts ";
 
@@ -15,20 +17,38 @@ if ($cType == 'serial')
 
 echo "</h1>";
 
-
-
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
 
 $arrTextFiles = getContentFiles($contentDir, 'ocrdata',true);
 $nTextFiles   = count($arrTextFiles);
 
-
 if ($nTextFiles >= $cPages)    echo "All text files present - nothing to do!\n";
 else 
 {   
     $nTextFiles = 0;
-    if ($isPDF) include("inc/ocr_pdf.php");    // PDF TO TEXT CONVERT  
-    else        include("inc/ocr_tiff.php");   // TESSERACT OCR
+    if ($isPDF) {
+        if( pdfInfo::read($sourcePDF)->hasText() ) {
+            include("inc/ocr_pdf.php");   // PDF TO TEXT CONVERT  
+        }
+        else {
+            include("inc/ocr_tiff.php");   // TESSERACT OCR
+        }
+    }
+    else {
+        // If this is not a PDF, we still might have a PDF in the file-tree
+        // which we can use for extracting the OCR text
+        $arrPDFs = getContentFiles($contentDir, 'bookdata', false);
+
+        // Check if we found a PDF, and use the first hit for extracting the
+        // OCR text
+        if(count($arrPDFs) > 0) {
+            $sourcePDF = $arrPDFs[0];
+            include("inc/ocr_pdf.php");
+        }
+        else {
+            include("inc/ocr_tiff.php");   // TESSERACT OCR
+        }
+    }
 }
 
 // NEU ZAEHLEN
@@ -55,6 +75,3 @@ else if (!_QUEUE_MODE)
     echo _ERR . "Not all necessary text files could be prepared!";
     $stepErrors = true;
 }
-
-
-?>
