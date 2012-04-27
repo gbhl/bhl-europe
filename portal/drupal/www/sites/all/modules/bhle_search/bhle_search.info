@@ -3,4 +3,8 @@ description = Implements simple as well as advanced search for the BHL-Europe po
 version = 0.8
 core = 7.x
 package = Search
+
 dependencies[] = apachesolr
+dependencies[] = entity
+dependencies[] = colorbox
+

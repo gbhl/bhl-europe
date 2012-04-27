@@ -26,7 +26,16 @@
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-// Pre-defined variables (note: defaults are based on Solr's default schema)
+
+/*
+ * Load required files
+ */
+$bhle_search_module_path = drupal_get_path('module', 'bhle_search');
+require_once ($bhle_search_module_path .'/bhle_search.querystore.inc');
+
+/*
+ * Pre-defined variables (note: defaults are based on Solr's default schema)
+ */
 define('BHLE_SEARCH_FACET_LIST_LIMIT', PHP_INT_MAX); // limit of taxons in facet block for each field (was 1000 now set to PHP_INT_MAX)
 define('BHLE_SEARCH_DEFAULT_LIMIT', 10);
 define('BHLE_SEARCH_TITLE_FIELD', 'name');
@@ -61,6 +70,11 @@ define('BHLE_SEARCH_FIELDS', 'PID;mods_language;mods_place;mods_record_content_s
  * Implements hook_init()
  */
 function bhle_search_init() {
+
+  // create additonal required user profile fields if not yet done
+  bhle_search_check_fields();
+//   bhle_search_drop_fields();
+
   // Initialize the session array (if necessary)
   if (!isset($_SESSION['bhle_search']) || !isset($_SESSION['bhle_search']['conditions'])) {
       $_SESSION['bhle_search'] = array(
@@ -324,6 +338,8 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
  * (aka Advanced Search)
  */
 function bhle_search_form_search_form_alter(&$form, $form_state) {
+    global $user;
+
     // Remove basic form since we build a completely custom one
     unset($form['basic']);
 
@@ -421,11 +437,31 @@ function bhle_search_form_search_form_alter(&$form, $form_state) {
         '#weight' => $weight++,
         '#attributes' => array('tabindex' => 0,),
     );
-    $form['save'] = array(
-        '#type' => 'submit',
-        '#value' => t('Save Query'),
+    if ($user->uid==0) {
+        // anonymous = not logged in
+        $form['save-disabled'] = array(
+            '#markup'=> l(
+                t('Save Query') . '<br /><span class="hint"> (' . t('login required') .')</span>',
+                'user/login',
+                array(
+                	'attributes' => array('id'=>'save-disabled', 'class'=>array('pseudo_button')),
+                	'html'=>true,
+                )),
+            '#weight' => $weight++,
+        );
+
+    } else {
+        $form['save'] = array(
+            '#type' => 'submit',
+            '#value' => t('Save Query'),
+            '#weight' => $weight++,
+            '#attributes' => array('tabindex' => ($tabindex+9),),
+        );
+    }
+    $form['save_query_name'] = array(
+    	'#type' => 'hidden',
+        '#value' => "",
         '#weight' => $weight++,
-        '#attributes' => array('tabindex' => ($tabindex+9),),
     );
 
     // Add custom validate handler
@@ -488,9 +524,12 @@ function bhle_search_simple_validate($form, &$form_state) {
  */
 function bhle_search_advanced_validate($form, &$form_state) {
 
-
-    // reset the search if reset has been clicked
-    if(isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#value'] == 'Reset'){
+    /*
+     * RESET:
+     *
+     * reset the search if reset has been clicked
+     */
+    if(isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#id'] == 'edit-reset'){
         for ($i = 0; $i <= $form_state['values']['num_conditions']; $i++) {
             unset($form_state['values']['term_' . $i]);
             unset($form_state['values']['field_' . $i]);
@@ -500,39 +539,72 @@ function bhle_search_advanced_validate($form, &$form_state) {
             unset($form_state['values']['exact_phrase_' . $i]);
         }
         $values['num_conditions'] = 0;
-        unset($_SESSION['bhle_search']['conditions']);
         unset($_SESSION['bhle_search']['numFound']);
-//         bhle_search_search_summary_clear();
+
+        $_SESSION['bhle_search']['conditions'] = array();
+        $_SESSION['bhle_search']['expand_search'] = false;
+        $_SESSION['bhle_search']['exact_phrase'] = false;
+    } else
+
+    /*
+     * SAVE QUERY
+     */
+    if(isset($form_state['clicked_button']['#value']) && $form_state['clicked_button']['#id'] == 'edit-save'){
+        $query_data = array();
+        // need to read directly from $_REQUEST since drupal seems to
+        // filter out hidden form element value wich have been changed during roundtrip
+        $name = $_REQUEST['save_query_name'];
+        bhle_search_advanced_read_from_formstate($form_state, $query_data);
+        bhle_search_querystore_save($query_data, $name);
+        drupal_set_message(t("Your query has been saved as '" . l($name, "user/") . "'"), 'status');
     }
 
+    /*
+     * EXECUTE QUERY:
+     *
+     * to let the query execute write all query attributed into the session variable
+     */
+    else {
+        bhle_search_advanced_read_from_formstate($form_state, $_SESSION['bhle_search']);
+    }
+
+    // Unfortunately drupal forces us to set the processed_keys even if we have a complete custom search function
+    $form_state['values']['processed_keys'] = "empty";
+}
+
+function bhle_search_advanced_read_from_formstate($form_state, &$target_array){
 
     $conditions = array();
     $values = $form_state['values'];
     for ($i = 0; $i <= $values['num_conditions']; $i++) {
         // Check if condition-row exists (might have been removed client-side)
         if (!isset($values['term_' . $i]))
-            continue;
+        continue;
 
         // Fetch the current term
         $term = trim($values['term_' . $i]);
         // Check term for validity
         if (!empty($term) && $term != BHLE_SEARCH_DEFAULT_TERM) {
-            $conditions[] = array('term' => $term, 'field' => $values['field_' . $i], 'operator' => $values['operator_' . $i], 'exact_phrase' => $values['exact_phrase_' . $i]);
+            $conditions[] = array(
+                'term' => $term,
+                'field' => $values['field_' . $i],
+                'operator' => $values['operator_' . $i],
+                'exact_phrase' => $values['exact_phrase_' . $i]
+            );
         }
     }
 
-    // Unfortunately drupal forces us to set the processed_keys even if we have a complete custom search function
-    $form_state['values']['processed_keys'] = "empty";
-
     // Official way to handle sessions is by directly writing into the super-globals
     // See: http://api.drupal.org/api/drupal/includes--session.inc
-    $_SESSION['bhle_search']['conditions'] = $conditions;
-    $_SESSION['bhle_search']['expand_search'] = $values['expand_search'];
-    $_SESSION['bhle_search']['exact_phrase'] = $values['exact_phrase'];
+    $target_array['conditions'] = $conditions;
+    $target_array['expand_search'] = $values['expand_search'];
+    $target_array['exact_phrase'] = $values['exact_phrase'];
 
     // Remember advanced search as our starting point
-    $_SESSION['bhle_search']['simple_search'] = false;
+    $target_array['simple_search'] = false;
+
 }
+
 
 /**
  * Callback (AJAX) when the 'Add Field' button is clicked
@@ -820,7 +892,8 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
 
     // add highlighting parameters
     $params["hl"]="true";
-    $params["hl.fragsize"] = 0;
+    $params["hl.fragsize"] = 0; // TODO should go into solrconfig
+    $params["hl.snippets"] = 10; // TODO should go into solrconfig
     $params["hl.requireFieldMatch"]="true";
     $params["hl.fl"] = join(',', $highlight_fields);
 
@@ -1168,6 +1241,63 @@ function bhle_search_menu() {
         'access arguments' => array('access administration pages'),
         'type' => MENU_LOCAL_TASK,
     );
+
+    $items['bhle_search/querystore/%/delete'] = array(
+            'title' => 'Stored queries',
+            'page callback' => 'bhle_search_querystore_action',
+    		'access callback' => 'user_access',
+        	'access arguments' => array('use advanced search'),
+            // page callbacks args are: $goto_path, $action, $name
+            'page arguments' => array('user/','delete', 2),
+            'type' => MENU_CALLBACK
+    );
+    $items['bhle_search/querystore/%/execute'] = array(
+                'title' => 'Stored queries',
+                'page callback' => 'bhle_search_querystore_action',
+        		'access callback' => 'user_access',
+            	'access arguments' => array('use advanced search'),
+    // page callbacks args are: $goto_path, $action, $name
+                'page arguments' => array('search/bhle/empty','execute', 2),
+                'type' => MENU_CALLBACK
+    );
+	/*
+    $items['user/bhle_search'] = array(
+        'title' => 'Stored queries',
+        'page callback' => 'bhle_search_stored_queries_view',
+        'page arguments' => array('user'),
+        'access callback' => 'user_view_access',
+        'type' => MENU_LOCAL_TASK,
+        'file' => 'bhle_search.pages.inc',
+        'weight' => 100,
+    );
+    $items['user/%user/bhle_search'] = array(
+        'title' => 'Stored queries',
+        'page callback' => 'bhle_search_stored_queries_view',
+        'page arguments' => array('user'),
+        'access callback' => 'user_view_access',
+        'type' => MENU_LOCAL_TASK,
+        'file' => 'bhle_search.pages.inc',
+        'weight' => 100,
+    );
+    $items['user/%user/bhle_search/add'] = array(
+        'title' => 'Stored queries',
+        'page callback' => 'bhle_search_stored_queries_add',
+        'page arguments' => array('user'),
+        'access callback' => 'user_view_access',
+        'type' => MENU_LOCAL_TASK,
+        'file' => 'bhle_search.pages.inc',
+        'weight' => 100,
+    );
+    $items['user/%user/bhle_search/delete'] = array(
+        'title' => 'Stored queries',
+        'page callback' => 'bhle_search_stored_queries_delete',
+        'page arguments' => array('user'),
+        'access callback' => 'user_view_access',
+        'type' => MENU_LOCAL_TASK,
+        'file' => 'bhle_search.pages.inc',
+        'weight' => 100,
+    );
+     */
 
 
     return $items;

@@ -4,6 +4,7 @@
 // ** PURPOSE: CUSTOM CONFIGURATION     **
 // ** DATE:    21.11.2011               **
 // ** AUTHOR:  ANDREAS MEHRRATH         **
+// ** AUTHOR:  WOLFGANG KOLLER          **
 // ***************************************
 
 // RUNTIME MODE (development|production)
@@ -116,7 +117,13 @@ define("_LOG",                      _ABS."log/");
 define("_XPDF_ABS",                 "/usr/bin/");
 define("_PDFTOTEXT",                _XPDF_ABS."pdftotext -nopgbrk -eol unix -f FFFF -l LLLL \"SSSS\" \"OOOO\"");
 define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm -r 80 ");
+define("_PDFINFO",                  _XPDF_ABS.'pdfinfo');
 
+/**
+ * PDFTK Paths & Parameters 
+ */
+define("_PDFTK",                    '/usr/bin/pdftk');
+define("_PDFTK_DATA",               'dump_data_utf8');
 
 // ----------------------
 // ---- OCR SPECIFIC ----

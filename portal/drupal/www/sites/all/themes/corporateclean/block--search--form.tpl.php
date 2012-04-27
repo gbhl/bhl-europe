@@ -7,12 +7,12 @@
   <?php print render($title_suffix); ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <p class="advanced-search"><a class="advanced-search-link" href="search/bhle" title="<?php print t('Advanced search');?>"><?php print t('Advanced search');?></a></p>
+    <p class="advanced-search"><?php print l(t('Advanced search'), 'search/bhle', array('attributes' => array('class' => array('advanced-search-link'), 'title' => t('Advanced search')))); ?></p>
     <?php print $content ?>
   </div>
 
 </div>
   
 <div class="simple-search-links">
-  <p class="advanced-buttons"><a class="browse-link" href="/browse" title="Browse"><?php print t('Browse'); ?></a> <a class="tutorial-link colorbox-inline" href="?width=500&amp;height=500&amp;inline=true#tutorial-inline-content" title="Tutorial"><?php print t('Tutorial'); ?></a></p>
+  <p class="advanced-buttons"><?php print l(t('Browse'), 'browse', array('attributes' => array('class' => array('browse-link'), 'title' => t('Browse')))); ?> <?php print l(t('Tutorial'), 'browse', array('attributes' => array('class' => array('tutorial-link', 'colorbox-inline'), 'title' => t('Tutorial')), 'query' => array('inline' => 'true', 'width' => '500', 'height' => '500'), 'fragment' => 'tutorial-inline-content')); ?></p>
 </div>

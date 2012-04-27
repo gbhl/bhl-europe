@@ -264,7 +264,7 @@ else
 					   else if ($isPDF) 
 					   {
 						   checkbox("enable_".$i,0,"","","","",true,$arrDir[$i]);
-						   echo "<br>".getNumPagesInPDF(array($arrDir[$i]))." p.";
+						   echo "<br>". pdfInfo::read($arrDir[$i])->getNumPages() ." p.";
 						   
 						   // FALLS VORIGES DIR DAS DIESES PDFS WAR DEAKTIVIERE DESSEN VORIGE CHECKBOX WIEDER
 						   if (instr($arrDir[$i],$last_listed_dir)) 

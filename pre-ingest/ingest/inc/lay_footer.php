@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 
 
@@ -29,7 +30,7 @@ else if (($menu_nav=='portal')||($menu_nav=='ingest_list'))
 <script type="text/javascript" src="js/jquery/ui/jquery.ui.draggable.js"></script>
 <script type="text/javascript" src="js/jquery/ui/jquery.ui.resizable.js"></script>
 <script type="text/javascript" src="js/jquery/ui/jquery.ui.dialog.js"></script>
-<script type="text/javascript" src="js/jquery/ui/jquery.ui.effects.core.js"></script>
+<script type="text/javascript" src="js/jquery/ui/jquery.effects.core.js"></script>
 
 <script type="text/javascript" src="js/jquery.tools.tooltips.js"></script>
 
