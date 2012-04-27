@@ -15,7 +15,7 @@ public class DownloadEmailResponseBuilder implements DownloadResponseBuilder {
 
 	@Autowired
 	@Qualifier("successfulMail")
-	private SimpleMailMessage mail;
+	private SimpleMailMessage successfulMail;
 
 	@Override
 	public DownloadResponse build(DownloadRequest request, Blob blob) {
@@ -32,11 +32,12 @@ public class DownloadEmailResponseBuilder implements DownloadResponseBuilder {
 
 	private void sendEmail(DownloadRequest request,
 			OfflineDownloadResponse response) {
-		mail.setText(mail.getText().replace(
+		SimpleMailMessage message = new SimpleMailMessage(successfulMail);
+		message.setText(successfulMail.getText().replace(
 				"[link]",
 				DownloadLocationHelper.encrypt(response.getBlob().getId()
 						.getSchemeSpecificPart())));
-		mail.setTo(((OfflineDownloadRequest) request).getEmail());
-		mailSender.send(mail);
+		message.setTo(((OfflineDownloadRequest) request).getEmail());
+		mailSender.send(message);
 	}
 }
