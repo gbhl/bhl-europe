@@ -267,11 +267,11 @@ else
 						   echo "<br>". pdfInfo::read($arrDir[$i])->getNumPages() ." p.";
 						   
 						   // FALLS VORIGES DIR DAS DIESES PDFS WAR DEAKTIVIERE DESSEN VORIGE CHECKBOX WIEDER
-						   if (instr($arrDir[$i],$last_listed_dir)) 
+						   /*if (instr($arrDir[$i],$last_listed_dir)) 
 						   {
 							   js_command("myObj = document.forms.dir_details.".$last_listed_dir_cb."; 
 								   if (IsElement(myObj)) { myObj.disabled = true; }");
-						   }
+						   }*/
 					   }
 				   }
 			   }

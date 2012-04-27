@@ -50,7 +50,7 @@ for ($i=1;$i<=$cPages;$i++)
     $myCmd = str_replace("SSSS",$sourcePDF,_PDFTOTEXT);
     
     // Find output name based on sequence number
-    $outputFile = $arrTiffs[$i] . '.txt';
+    $outputFile = $destDir . basename($arrTiffs[$i]) . '.txt';
 
     // FIRST - LAST PAGE  - OUTPUT FILE 
     $myCmd = str_replace(array('FFFF','LLLL','OOOO'),array($i,$i,$outputFile),$myCmd);

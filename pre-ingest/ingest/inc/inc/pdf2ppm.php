@@ -40,7 +40,6 @@ if ($nPPM>0)
     $nRenamed=0;
     
     $pdfStructure = pdfInfo::read($sourcePDF)->getStructure();
-    var_export( $pdfStructure );
     
     foreach( $arrPPM as $entryPPM ) {
         $namePPM = preg_replace( '/\-(\d+)\.ppm$/i', '_$1.ppm', $entryPPM);
