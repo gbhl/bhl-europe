@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    23.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 // OLEF MODIFICATIONS POSTPROCESSING
 
@@ -91,78 +92,79 @@ if (!file_content_exists($olef_file,"accessCondition",true,true))
 // ADD TAG IF NOT EQUAL TO CURRENT LOGGED IN CONTENT PROVIDER UPPERCASE
 // https://github.com/bhle/bhle/issues/365
 
-$newNodeName = "recordContentSource";
-
+// Construct correct recordcontent source name
 $recordContentSource = strtoupper(trim($arrProvider['user_content_id']));
 if ($recordContentSource=='') $recordContentSource = strtoupper(trim($arrProvider['user_name']));
 
-// EXISTIERT RICHTIGER EINTRAG BEREITS?
-if ((!file_content_exists($olef_file,$recordContentSource."</mods:".$newNodeName,true,true)))    
-{
-    // LOAD OLEF TO DOM
-    $domDoc   = new DOMDocument();
-    @$domDoc->load($olef_file);
+// Create DOMDocument from OLEF-File
+$domDoc   = new DOMDocument();
+$domDoc->load($olef_file);
 
-    // 1. ETWAIGE VORH. FALSCHE EINTRAEGE LOESCHEN (FALSCH DA OBIGE IF BEDINGUNG NICHT ERFUELLT)
-    // -----------------------------------------------------------------------------------------
-    /* $docRoot = $domDoc->documentElement;
-    
-    $allElements = $domDoc->getElementsByTagName('*');      // RETURNS A NEW INSTANCE OF CLASS DOMNODELIST
-
-    // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
-    foreach( $allElements as $curElement )
-    {
-         $nodeAttributes = $curElement->attributes;
-         $nodeValue      = trim($curElement->nodeValue);
-         $nodeName       = trim($curElement->nodeName);
-
-         if ($nodeName=='olef:bibliographicInformation')    // IMMER MIT PREFIX !
-         {
-            $removeNode = null;
-            $removeNode = @$docRoot->getElementsByTagName($newNodeName)->item(0);
-            // var_dump($removeNode); echo_pre($removeNode);
-            if (($removeNode!=null)&&($removeNode)&&($removeNode!='null'))
-            @$curElement->removeChild($removeNode);    // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
-
-            $removeNode = null;
-            $removeNode = @$docRoot->getElementsByTagName('mods:'.$newNodeName)->item(0);
-            if (($removeNode!=null)&&($removeNode)&&($removeNode!='null'))
-            @$curElement->removeChild($removeNode);    // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN
-         }
-    }
-    */
-    // 2. ADD (NEW) RIGHT NODE     mods:recordContentSource to bibliographicInformation
-    // --------------------------------------------------------------------------------
-    $node3 = $domDoc->createElement("mods:".$newNodeName,  $recordContentSource);
-    //$node3->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
-
-    $done = false;
-    
-    $bis = $domDoc->getElementsByTagName("recordInfo");
-    
-    foreach($bis as $bi) {
-        $element = $bi;
-        $newnode = $element->appendChild($node3);
-        $done=true;
-    }
-    
-    unset($bis); unset($bi);
-    
-    if (!$done){
-        $bis = $domDoc->getElementsByTagName("mods:recordInfo");
-        
-        foreach($bis as $bi) {
-            $element = $bi;
-            $newnode = $element->appendChild($node3);
-            $done=true;
-        }        
-    }
-
-    // SPEICHERN MODIFIZIERTEN OLEF
-    if ($domDoc->save($olef_file)>0) echo "Missing Provider Information added ... ok\n";
-    else                             echo _ERR." Provider Information addition failed!\n";
+// Find olef namespace URI
+$olefNodes = $domDoc->getElementsByTagName( 'olef' );
+if( $olefNodes->length <= 0 ) {
+    echo _ERR . 'Not a valid OLEF input!\n';
 }
+else {
+    // Use first node to find out the namespace-uri
+    $olefNode = $olefNodes->item(0);
+    $olefNS = $olefNode->namespaceURI;
+    
+    // Find bibliographicInformation
+    $biNodes = $domDoc->getElementsByTagNameNS($olefNS, 'bibliographicInformation');
+    if( $biNodes->length <= 0 ) {
+        echo _ERR . 'No bibliographicInformation found - check your metadata!\n';
+    }
+    else {
+        $biNode = $biNodes->item(0);
+        
+        // Find the first sub-entry to find the mods namespace-uri
+        $biNodeChilds = $biNode->childNodes;
+        $modsNS = 'http://www.loc.gov/mods/v3';     // Default namespace, but mustn't be the correct one (due to versioning)
+        for( $i = 0; $i < $biNodeChilds->length; $i++ ) {
+            $biNodeChild = $biNodeChilds->item($i);
+            if( $biNodeChild->nodeType == XML_ELEMENT_NODE ) {
+                $modsNS = $biNodeChild->namespaceURI;
+                break;
+            }
+        }
+        
+        // Try to find existing recordContentSource entry
+        $bRcsEntryFound = false;
+        $rcsNodes = $domDoc->getElementsByTagNameNS($modsNS, 'recordContentSource');
+        for( $i = 0; $i < $rcsNodes->length; $i++ ) {
+            // Check if node already contains correct entry
+            if( strcasecmp($rcsNodes->item($i)->nodeValue, $recordContentSource) == 0 ) {
+                $bRcsEntryFound = true;
+                break;
+            }
+        }
 
+        // If we did not find a valid entry, add it
+        if( !$bRcsEntryFound ) {
+            // Create missing recordContentSource
+            $rcsNode = $domDoc->createElementNS($modsNS, 'recordContentSource', $recordContentSource );
+
+            // Try to find recordInfo node
+            $riNodes = $domDoc->getElementsByTagNameNS($modsNS, 'recordInfo');
+            $riNode = null;
+            // Attach recordContentSource node to first recordInfo node
+            if( $riNodes->length > 0 ) {
+                $riNode = $riNodes->item(0);
+            }
+            else {
+                // Create new recordInfo node
+                $riNode = $domDoc->createElementNS($modsNS, 'recordInfo' );
+                $biNode->appendChild($riNode);
+            }
+            // Finally append recordContentSource node
+            $riNode->appendChild($rcsNode);
+
+            // Save modified OLEF xml
+            $domDoc->save($olef_file);
+        }
+    }
+}
 
 
 // *************************
