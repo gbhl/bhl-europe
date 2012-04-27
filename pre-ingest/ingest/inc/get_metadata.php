@@ -45,7 +45,7 @@ if ($metadata_ws != "")
         if ($wsKey=="") $wsKey = basename($contentName);    // nimmt auch /etc/  --> etc
     }
 
-    $myURL = $metadata_ws.$wsKey;    
+    $myURL = $metadata_ws.$wsKey;
     
     echo "Try to get metadata over: <b>".$myURL."</b>"; nl(2);
 
@@ -55,26 +55,32 @@ if ($metadata_ws != "")
         // Find metadata within envelope
         $wsDoc = new DOMDocument();
         $wsDoc->load($wsFile);
-        $metadata = $wsDoc->getElementsByTagNameNS('http://www.openarchives.org/OAI/2.0/', 'metadata')->item(0);
-        for($i = 0; $i < $metadata->childNodes->length; $i++) {
-            $currNode = $metadata->childNodes->item($i);
+        $metadataNode = $wsDoc->getElementsByTagNameNS('http://www.openarchives.org/OAI/2.0/', 'metadata')->item(0);
+        $metadataContent = null;
+        // Find first child-node which is an element
+        for($i = 0; $i < $metadataNode->childNodes->length; $i++) {
+            $currNode = $metadataNode->childNodes->item($i);
             
             if($currNode->nodeType == XML_ELEMENT_NODE) {
-                $metadata = $currNode;
+                $metadataContent = $currNode;
                 break;
             }
         }
         
-        // Extract metadata content and copy it over
-        $metadataDoc = new DOMDocument();
-        $metadata = $metadataDoc->importNode($metadata, true);
-        $metadataDoc->appendChild( $metadata );
+        // Check if we found some metadata content
+        if( $metadataContent != null ) {
+            // Extract metadata content and copy it over
+            $metadataDoc = new DOMDocument();
+            $metadataContent = $metadataDoc->importNode($metadataContent, true);
+            $metadataDoc->appendChild( $metadataContent );
 
-        // Save metadata & remove webservice cached result
-        $metadataDoc->save($metadataFile);
-        //unlink($wsFile);
+            // Save metadata & remove webservice cached result
+            $metadataDoc->save($metadataFile);
+            unlink($wsFile);
 
-        $inputFile = $metadataFile;
+            // Set new metadata-file as input
+            $inputFile = $metadataFile;
+        }
     }
 }
 
