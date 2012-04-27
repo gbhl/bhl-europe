@@ -6,21 +6,18 @@
  * @since 2012-04-26
  */
 class pdfInfo {
-    private $m_pdftkInfo = array();
+    private $m_pdftkInfo = null;
     private $m_numPages = -1;
     private $m_structure = null;
-    
+    private $m_bHasText = null;
+    private $m_pdfName = "";
+
     /**
-     * Prevent direct instantiation 
+     * Used from static constructor function
+     * @param string $p_pdfName Name of PDF file
      */
-    private function __construct( $p_pdftkOutput ) {
-        // Read PDF-TK output and put it into a structured array
-        foreach( $p_pdftkOutput as $line ) {
-            $lineParts = explode(':', $line);
-            if( count($lineParts) < 2 ) continue;
-            
-            $this->m_pdftkInfo[] = array( trim($lineParts[0]), trim($lineParts[1]) );
-        }
+    private function __construct( $p_pdfName ) {
+        $this->m_pdfName = $p_pdfName;
     }
 
     /**
@@ -30,6 +27,10 @@ class pdfInfo {
     public function getNumPages() {
         // Check if we already found the page-count
         if( $this->m_numPages >= 0 ) return $this->m_numPages;
+        
+        // We need the pdftk info for this
+        // (note the function takes care of not re-running the tool)
+        $this->runPDFtk();
         
         // Find NumerOfPages in pdftk-output
         $this->m_numPages = 0;
@@ -51,6 +52,10 @@ class pdfInfo {
     public function getStructure() {
         // Check if we already parsed the structure
         if( $this->m_structure != null ) return $this->m_structure;
+        
+        // We need the pdftk info for this
+        // (note the function takes care of not re-running the tool)
+        $this->runPDFtk();
         
         // Prepare structure variables
         $this->m_structure = array();
@@ -130,6 +135,18 @@ class pdfInfo {
         // Return the structured array
         return $pdfStructurePart;
     }
+    
+    /**
+     * Returns true if the PDF has embedded text
+     * @return bool True if PDF has embedded text, false otherwise 
+     */
+    public function hasText() {
+        // We need the pdffonts info for this
+        // (note the function takes care of not re-running the tool)
+        $this->runPDFfonts();
+        
+        return $this->m_bHasText;
+    }
 
     /**
      * Static access function for receiving an object of type pdfInfo
@@ -142,18 +159,62 @@ class pdfInfo {
             return false;
         }
         
+        // Now instantiate a pdfInfo object and return it
+        return (new pdfInfo($p_pdfName));
+    }
+    
+    /**
+     * Run pdftk and extract the information from it
+     * @return boolean true on success, false on error
+     */
+    private function runPDFtk() {
+        // Check if we already extracted the info
+        if( $this->m_pdftkInfo != null ) return true;
+        $this->m_pdftkInfo = array();
+        
         // Prepare pdftk command
-        $output = array();
+        $pdftkOutput = array();
         $return_val = -1;
-        $pdftk_cmd = _PDFTK . ' ' . escapeshellarg($p_pdfName) . ' ' . _PDFTK_DATA;
-        
+        $pdftk_cmd = _PDFTK . ' ' . escapeshellarg($this->m_pdfName) . ' ' . _PDFTK_DATA;
         // Run pdftk command
-        exec($pdftk_cmd, $output, $return_val);
+        exec($pdftk_cmd, $pdftkOutput, $return_val);
+        // Check if command executed successfully
+        if( $return_val != 0 ) return false;
+
+        // Read PDF-TK output and put it into a structured array
+        foreach( $pdftkOutput as $line ) {
+            $lineParts = explode(':', $line);
+            if( count($lineParts) < 2 ) continue;
+            
+            $this->m_pdftkInfo[] = array( trim($lineParts[0]), trim($lineParts[1]) );
+        }
         
+        return true;
+    }
+    
+    /**
+     * Run pdffonts and extract the information from it
+     * @return boolean true on success, false on error
+     */
+    private function runPDFfonts() {
+        // Check if we already extracted the info
+        if( $this->m_bHasText != null ) return true;
+        $this->m_bHasText = false;
+        
+        // Run pdffonts command to check if PDF has embedded text
+        $pdffontsOutput = array();
+        $return_val = -1;
+        $pdffonts_cmd = _PDFFONTS . ' ' . escapeshellarg($this->m_pdfName);
+        // Run pdftk command
+        exec($pdffonts_cmd, $pdffontsOutput, $return_val);
         // Check if we got some output
         if( $return_val != 0 ) return false;
         
-        // Now instantiate a pdfInfo object and return it
-        return (new pdfInfo( $output ));
+        // Check if we have at least one font (pdffonts outputs two header lines)
+        if( count($pdffontsOutput) > 2 ) {
+            $this->m_bHasText = true;
+        }
+        
+        return true;
     }
 }
