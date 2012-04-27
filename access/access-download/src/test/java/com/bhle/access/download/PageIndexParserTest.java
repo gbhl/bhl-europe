@@ -14,9 +14,10 @@ import com.bhle.access.download.generator.PageIndexParser;
 public class PageIndexParserTest {
 	@Test
 	public void testSingleIndexParser(){
-		String range = "2";
+		String range = "1";
 		String[] pageUris = new String[]{"info:fedora/bhle:10706-a000test-00001", "info:fedora/bhle:10706-a000test-00002"};
 		String[] result = PageIndexParser.parse(range, pageUris);
+		Assert.assertEquals(1, result.length);
 		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[0]);
 
 		range = "3";
@@ -26,7 +27,7 @@ public class PageIndexParserTest {
 	
 	@Test
 	public void testRangeIndexParser(){
-		String range = "1-2";
+		String range = "0-1";
 		String[] pageUris = new String[]{"info:fedora/bhle:10706-a000test-00001", "info:fedora/bhle:10706-a000test-00002"};
 		String[] result = PageIndexParser.parse(range, pageUris);
 		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
@@ -37,11 +38,11 @@ public class PageIndexParserTest {
 		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
 		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[1]);
 		
-		range = "2-3";
+		range = "1-2";
 		result = PageIndexParser.parse(range, pageUris);
 		Assert.assertEquals("info:fedora/bhle:10706-a000test-00002", result[0]);
 		
-		range = "0-1";
+		range = "0-0";
 		result = PageIndexParser.parse(range, pageUris);
 		Assert.assertEquals("info:fedora/bhle:10706-a000test-00001", result[0]);
 	}

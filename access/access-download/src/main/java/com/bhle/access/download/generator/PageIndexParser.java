@@ -83,10 +83,11 @@ public class PageIndexParser {
 	}
 
 	private static int getPageIndex(String range) {
-		if(range.startsWith("n")){
+		if (range.startsWith("n")) {
 			throw new IllegalArgumentException("Not implemented yet");
 		} else {
-			return Integer.valueOf(range);
+			// BookReader starts from 0, while page serial number starts from 0
+			return Integer.valueOf(range) + 1;
 		}
 	}
 
