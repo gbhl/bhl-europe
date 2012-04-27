@@ -1508,6 +1508,8 @@ function bhle_search_block_info() {
     );
     $blocks['top_menue'] = array(
             'info' => t('BHL-E Top menu'),
+            'visibility' => BLOCK_VISIBILITY_NOTLISTED,
+            'pages' => '<front>',
             'cache' => DRUPAL_CACHE_GLOBAL,
     );
     return $blocks;
