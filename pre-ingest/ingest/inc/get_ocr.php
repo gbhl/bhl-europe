@@ -7,6 +7,7 @@
 // ********************************************
 $curStep = 3;
 
+include_once(_SHARED."pdf_tools.php");
 
 echo "<h1 style='margin-top: 3px;'>Preparing/Extracting Plain Texts ";
 
@@ -27,8 +28,12 @@ if ($nTextFiles >= $cPages)    echo "All text files present - nothing to do!\n";
 else 
 {   
     $nTextFiles = 0;
-    if ($isPDF) include("inc/ocr_pdf.php");    // PDF TO TEXT CONVERT  
-    else        include("inc/ocr_tiff.php");   // TESSERACT OCR
+    if ($isPDF && pdfInfo::read($sourcePDF)->hasText() ) {
+        include("inc/ocr_pdf.php");   // PDF TO TEXT CONVERT  
+    }
+    else {
+        include("inc/ocr_tiff.php");   // TESSERACT OCR
+    }
 }
 
 // NEU ZAEHLEN
