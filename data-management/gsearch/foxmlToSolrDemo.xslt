@@ -52,7 +52,7 @@
 	</xsl:template>
 
 	<xsl:template match="/foxml:digitalObject" mode="activeFedoraObject">
-		<add>
+		<add overwrite="true" commitWithin="1000" allowDups="false">
 			<doc>
 				<field name="PID">
 					<xsl:value-of select="$PID"/>
@@ -179,7 +179,7 @@
 		The setSpec will be broken up into individual elements by the java processing -->
 
 		<!--
-		        First accurrence of title in the current mods element for sorting, 
+		        First accurrence of title in the current mods element for sorting,
 		       circumventing problems with multiple title entries
 		-->
 		<xsl:variable name="firstTitleNonSort" select="*/mods:title[1]"/>
@@ -196,7 +196,7 @@
 			<!-- excluding mods:nonSort, mods:subTitle -->
 			<xsl:value-of select="substring(translate(normalize-space($firstTitleNonSort), ' ', '_'), 1, 4)"/>
 		</xsl:element>
-		
+
 
 		<xsl:for-each select="mods:*">
 			<!-- titleInfo -->
