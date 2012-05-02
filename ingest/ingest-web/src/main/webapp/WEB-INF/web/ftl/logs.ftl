@@ -6,7 +6,7 @@ window.setInterval("refreshLog()",3000);
 
 function refreshLog(){
 
-    $.get("/ingest-web/refresh", function(data){
+    $.get("/ingest/refresh", function(data){
     
     	document.getElementById("loadLog").innerHTML=
     		document.getElementById("loadLog").innerHTML+data;
