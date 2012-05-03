@@ -91,5 +91,9 @@ if ($nodeValue=='*olefdata')
         
         // Insert OLEF
         $newnode = $curElement->appendChild($domDoc->importNode($olefDom->documentElement, true));
-     }
+
+        $attr = $domDoc->createAttribute( 'xmlns:xsi' );
+        $attr->value = 'http://www.w3.org/2001/XMLSchema-instance';
+        $newnode->appendChild( $attr );
+    }
 }
