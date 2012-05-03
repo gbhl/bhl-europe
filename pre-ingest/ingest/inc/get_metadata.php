@@ -70,12 +70,13 @@ if ($metadata_ws != "")
         // Check if we found some metadata content
         if( $metadataContent != null ) {
             // Extract metadata content and copy it over
-            $metadataDoc = new DOMDocument();
+            $metadataDoc = new DOMDocument('1.0');
+            $metadataDoc->formatOutput = true;
             $metadataContent = $metadataDoc->importNode($metadataContent, true);
             $metadataDoc->appendChild( $metadataContent );
 
             // Save metadata & remove webservice cached result
-            $metadataDoc->save($metadataFile);
+            file_put_contents($metadataFile, $metadataDoc->saveXML());
             unlink($wsFile);
 
             // Set new metadata-file as input
