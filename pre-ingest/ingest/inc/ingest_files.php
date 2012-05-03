@@ -318,14 +318,14 @@ function sortPageFiles($arrToSort,$sortBy='sequence')
                         {
                             if (!in_array($curKey,$arrMerker))  $arrSortable[($curKey)] = $arrToSort[$i];
                             else if (!$notified) {
-                                echo ERR."One or more duplicate Sortig Kriteria(s) : <b>".$curKey."</b> : e.g. in file ".basename($arrToSort[$i])." !\n<br>";
+                                echo ERR."Duplicate sequence number for sorting criteria: <b>".$curKey."</b> : e.g. in file ".basename($arrToSort[$i])." !\n<br>";
                                 $notified = true;
                             }
 
                             $arrMerker[] = $curKey;
                         }
                         else if (!$notified) {
-                            echo _ERR." There is a (Sortig Kriteria) filename part missing (".basename($arrToSort[$i]).")\n<br>";
+                            echo _ERR." There is a (sorting criteria) filename part missing (".basename($arrToSort[$i]).")\n<br>";
                             $notified = true;
                         }
                     }
