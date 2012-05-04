@@ -169,7 +169,7 @@ function _i18n_menu_get_options($menus, $available_menus, $item, $langcode) {
   $options = array();
   foreach ($menus as $menu_name => $title) {
     if (isset($available_menus[$menu_name])) {
-      if ($tree = i18n_menu_tree_all_data($menu_name, $langcode, NULL)) {  
+      if ($tree = i18n_menu_tree_all_data($menu_name, $langcode, NULL)) {
         $options[$menu_name . ':0'] = '<' . $title . '>';
         _menu_parents_recurse($tree, $menu_name, '--', $options, $item['mlid'], $limit);
       }
@@ -224,6 +224,7 @@ function i18n_menu_translation_item_overview($item, $translation_set = NULL) {
 
   $type = variable_get('translation_language_type', LANGUAGE_TYPE_INTERFACE);
   $header = array(t('Language'), t('Title'), t('Operations'));
+  $rows = array();
 
   foreach (i18n_language_list() as $langcode => $language_name) {
     $options = array();

@@ -38,7 +38,7 @@ function i18n_variable_info($options = array()) {
 function i18n_variable_type_info() {
   // Multiple variable per language options
   $types['multiple_language'] = array(
-    'title' => t('Multiple'),
+    'title' => t('Multiple language'),
     'element' => array('#type' => 'fieldset'),
     'build callback' => 'variable_build_multiple',
     'format callback' => 'variable_format_multiple',
@@ -60,8 +60,6 @@ function i18n_variable_option_list($variable, $options = array()) {
     I18N_LANGUAGE_EXTENDED => t('All defined languages will be allowed.', array(), $options),
   );
 }
-
-
 
 /**
  * Callback for multiple per-language variables

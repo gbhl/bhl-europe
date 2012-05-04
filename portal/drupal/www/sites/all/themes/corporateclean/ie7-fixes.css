@@ -1,0 +1,39 @@
+/* CSS Document */
+
+#header-inside {z-index:1}
+.region-header {z-index:2}
+#block-locale-language {z-index:3}
+#block-locale-language ul {height:40px; z-index:4}
+#block-locale-language ul:hover {height:auto}
+#block-locale-language ul li {position:static; z-index:5}
+#block-locale-language ul li a {display:none; position:static}
+#block-locale-language ul:hover li a, #block-locale-language ul li a.session-active {display:block; position:static}
+#block-locale-language ul li a.session-active {position:absolute; top:0}
+#block-locale-language ul:hover li a.session-active {position:static}
+
+.front #block-search-form .container-inline .form-item.form-type-checkbox input,
+.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search input {margin-top:0}
+.front #block-search-form .container-inline .form-item.form-type-checkbox label,
+.page-search-bhle form.search-form .form-item.form-type-checkbox.form-item-expand-search label {float:left}
+
+.front #block-search-form .form-wrapper#edit-actions input.form-submit,
+.page-search-bhle form.search-form .edit-delfield,
+.page-search-bhle form.search-form #edit-submit, .page-search-bhle form.search-form #edit-submit--2 {font-size:0; line-height:0}
+
+#footer #user-login-form {position:static}
+#footer #user-login-form .form-actions {float:left; position:relative; left:125px; top:50px;}
+
+#header-menu {margin-top:12px}
+.block.top-menu ul li {zoom:1; *display:inline}
+
+#content .block-quicktabs.browse-tabs h2 {position:absolute; width:150px}
+#content .browse-tabs .ui-tabs ul.ui-tabs-nav, .page-search-bhle #content #content_preface .ui-tabs ul.ui-tabs-nav {margin-left:150px}
+
+#results-sort-box #results-list-type-box #results-view-type span {float:none}
+#results-sort-box #results-number-box #results-number-label span {display:none}
+#results #search-results.catalog li.search-result {height:220px}
+#results #search-results.catalog li.search-result h3.result-title {z-index:4}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-author {z-index:3}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-year {z-index:2}
+#results #search-results.catalog li.search-result .search-snippet-info li.metadata-publisher {z-index:1}
+#results #search-results.catalog li.search-result .search-snippet-info li.search-info-item {margin:0}
