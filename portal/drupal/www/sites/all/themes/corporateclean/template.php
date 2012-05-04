@@ -123,4 +123,14 @@ function corporateclean_preprocess_page(&$vars) {
     $vars['title'] = FALSE;
   }
 }
+
+/**
+ * Override or insert variables into the html template.
+ */
+function corporateclean_preprocess_html(&$vars) {
+  // Set IE7 stylesheet
+  $theme_path = base_path() . path_to_theme();
+  $vars['ie7_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie7-fixes.css" />' . "\n";
+}
+
 ?>

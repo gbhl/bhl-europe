@@ -36,7 +36,7 @@
 #content .browse-tabs .ui-tabs .ui-tabs-panel .browse-provider a {
   display:block; float:left; 
   padding:5px 20px; margin:0px 0px 11px 9px;
-  height:26px; width:auto;  
+  height:26px; line-height:26px; width:auto;  
   text-align:center; color:#006626; font-size:125%; text-decoration:none;
 /*  background:transparent url('../images/lbl-facet-filter-result.png') no-repeat left top; */
   background-color:#fff;
@@ -145,7 +145,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbedc3', end
 #content .browse-tabs .ui-tabs .ui-tabs-panel a {
   display:block; float:left; 
   padding:5px; margin:0px 0px 11px 9px;
-  height:26px; width:27px;  
+  height:26px; line-height:26px; width:27px;  
   text-align:center; color:#006626; font-size:150%; text-decoration:none;
 /*  background:transparent url('../images/lbl-facet-filter-result.png') no-repeat left top; */
   background-color:#fff;
@@ -271,7 +271,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f0ce', end
 #content .browse-tabs .ui-tabs .ui-tabs-panel .view-browse-content-wrapper .view-content a, 
 #content .browse-tabs .ui-tabs .ui-tabs-panel .browse-year .view-content a {
   display:block; padding:5px 10px; 
-  height:26px; width:43px; text-decoration:none;  
+  height:26px; line-height:26px; width:43px; text-decoration:none;  
   text-align:center; color:#006626; font-size:150%;
   /* background:transparent url('../images/lbl-facet-range-result.png') no-repeat right top; */
     background-color:#fff;

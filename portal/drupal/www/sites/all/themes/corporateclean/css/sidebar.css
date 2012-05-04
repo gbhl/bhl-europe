@@ -35,6 +35,7 @@
 	padding: 5px 13px 0px 13px;
 	width: 250px; min-height:50px; color: #000;
 	overflow: hidden;
+	border-bottom:1px solid #aad472; /*-IE8 fix*/
 
 	background: rgb(222,239,201); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */

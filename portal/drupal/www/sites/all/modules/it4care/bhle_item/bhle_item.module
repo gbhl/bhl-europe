@@ -123,7 +123,7 @@ function bhle_item_load($pid) {
  * Custom preprocess
  */
 function _template_preprocess_bhle_item($item) {
-  dpm($item);
+  //dpm($item);
   $rendered = &drupal_static(__FUNCTION__);
   if (!isset($rendered)) {
     $pid = $item->PID;
