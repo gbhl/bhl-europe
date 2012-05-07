@@ -36,13 +36,13 @@ if ($metadata_ws != "")
     // DIRECTORY NAME IS KEY TO GATHER
     $wsFile = clean_path($destDir."/metadata.ws");
     $metadataFile = clean_path($destDir."/metadata.xml");
-    $wsKey = $contentName;
+    $wsKey = $contentDir;
     $pos   = strrpos($wsKey,"/");
     
     if ($pos!==false)
     {
         $wsKey = substr($wsKey,$pos+1);
-        if ($wsKey=="") $wsKey = basename($contentName);    // nimmt auch /etc/  --> etc
+        if ($wsKey=="") $wsKey = basename($contentDir);    // nimmt auch /etc/  --> etc
     }
 
     $myURL = $metadata_ws.$wsKey;
