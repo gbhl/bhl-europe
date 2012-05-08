@@ -23,17 +23,23 @@ $stepFinished   = true;         // GRUNDSAETZLICH AUF TRUE
 
 if ($sLevel > 0) {
 eval("
-
 \$contentDir = \$L".$sLevel."Directory[\$l".$sLevel."];
-\$destDir    = clean_path(\$contentDir . \"/\" . _AIP_DIR . \"/\");
-\$olef_file  = clean_path(\$destDir.     \"/\" . _AIP_OLEF_FN);
-\$cPages     = (int) count(getContentFiles(\$contentDir,'pagedata',false));
-
-if (\$cPages==0) \$cPages = (int) count(getContentFiles(\$contentDir,'pagedata',true));
-
 ");
 }
 
+$destDir    = clean_path($contentDir . "/" . _AIP_DIR . "/");
+$olef_file  = clean_path($destDir.     "/" . _AIP_OLEF_FN);
+$cPages     = (int) count(getContentFiles($contentDir,'pagedata',false,"",0));
+if ( $cPages == 0 ) $cPages = (int) count(getContentFiles( $contentDir,'pagedata',true,"",0));
+// If we still have no pages, check if we have a PDF
+if ( $cPages == 0 ) {
+    $pdfs = getContentFiles( $contentDir,'bookdata',false,"",0);
+    
+    // If we have a PDF, read the page numbers from it
+    if( count($pdfs) > 0 ) {
+        $cPages = pdfInfo::read($pdfs[0])->getNumPages();
+    }
+}
 
 // Execute step for current directory
 // Check if directory contains a least one file, or if we are processing

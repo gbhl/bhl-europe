@@ -16,7 +16,7 @@ echo "</h1>";
 
 
 // BEREITS BEREITGESTELLT (ODER ERZEUGT IM QUEUEING)?
-$arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
+$arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif', 0); 
 $nTiffs   = count($arrTiffs);
 
 if ($nTiffs >= $cPages)    echo "All TIF files present - nothing to do!\n";
