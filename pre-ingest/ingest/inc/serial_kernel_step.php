@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    27.03.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 // SERIAL KERNEL STEP CODE KOMPRIMIERUNG - ANTI REDUNDANZ
 
@@ -34,9 +35,10 @@ if (\$cPages==0) \$cPages = (int) count(getContentFiles(\$contentDir,'pagedata',
 }
 
 
-// STEP AUSFUEHRUNG FUER AKTUELLES VERZ. FALLS NOCH NICHT ERFOLGT
-if ((!in_array($contentDir,$arrAnalyzedDirs))&&(!is_dir_empty($contentDir,true)))  // ZUMINDEST METADATEN...
-{
+// Execute step for current directory
+// Check if directory contains a least one file, or if we are processing
+// the metadata (since for OAI-PMH providers the directory might be empty)
+if( !in_array($contentDir,$arrAnalyzedDirs) && (!is_dir_empty($contentDir,true) || $menu_nav == 'get_metadata') ) { //&&(!is_dir_empty($contentDir,true))) {
     if (!is_dir($destDir)) @mkdir($destDir);        // WO NOETIG .AIP ANLEGEN
     
     $stepFinished   = false;                        // ZURUECKSETZEN DA FOLG. STEP ERFOLGREICH SEIN MUSS...
@@ -44,6 +46,11 @@ if ((!in_array($contentDir,$arrAnalyzedDirs))&&(!is_dir_empty($contentDir,true))
     // ***********************
     include($menu_nav.".php");
     // ***********************
+    
+    // Metadata fetching for section(s) might fail, since it is optional
+    if( $sLevel == 1 && $menu_nav == 'get_metadata' && $stepFinished == false ) {
+        $stepFinished = true;
+    }
 
     $arrAnalyzedDirs[] = $contentDir;
 
@@ -95,6 +102,3 @@ $cPages     = $old_cPages;
 unset($arrQueueCommands);
 
 unset($stepFinished);
-
-
-?>
