@@ -37,8 +37,9 @@ if ($metadata_ws != "")
     $wsFile = clean_path($destDir."/metadata.ws");
     $metadataFile = clean_path($destDir."/metadata.xml");
     $wsKey = $contentDir;
-    $pos   = strrpos($wsKey,"/");
     
+    // Check if we have a slash in the webservice name
+    $pos   = strrpos($wsKey,"/");
     if ($pos!==false)
     {
         $wsKey = substr($wsKey,$pos+1);
