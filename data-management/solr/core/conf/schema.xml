@@ -570,6 +570,8 @@
 
    <field name="PID" type="string" indexed="true" stored="true" required="true" />
 
+   <field name="mods_identifier" type="string" indexed="true" stored="true" required="false" multiValued="true" />
+
    <!--
       catchall text fields
    -->
