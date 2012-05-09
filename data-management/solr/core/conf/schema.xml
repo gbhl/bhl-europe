@@ -655,8 +655,13 @@
     <field name="olef_scientific_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="olef_scientific_name__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="olef_scientific_name__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="olef_scientific_name" dest="all"/>
     <copyField source="olef_scientific_name" dest="olef_scientific_name__exact"/>
     <copyField source="olef_scientific_name" dest="olef_scientific_name__facet"/>
+
+    <!-- Scientific name entry for triggering common name expansion -->
+    <field name="olef_common_name" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="olef_scientific_name" dest="olef_common_name"/>
 
 	<!--   -->
     <field name="mods_type_of_resource" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
