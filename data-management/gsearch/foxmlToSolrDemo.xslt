@@ -199,6 +199,16 @@
 
 
 		<xsl:for-each select="mods:*">
+			<!-- identifier -->
+			<xsl:if test="(local-name() = 'identifier') and (@type != '')">
+				<xsl:element name="field">
+					<xsl:attribute name="name">mods_identifier</xsl:attribute>
+					<xsl:value-of select="@type" />
+					<xsl:text>:</xsl:text>
+					<xsl:value-of select="." />
+				</xsl:element>
+			</xsl:if>
+
 			<!-- titleInfo -->
 			<xsl:if test="local-name() = 'titleInfo'">
 				<xsl:call-template name="mods-titleInfo"/>
