@@ -11,6 +11,7 @@
 // REQUIRES: $sLevel     
 
 // eval("echo \"Entering \".\$L".$sLevel."Directory[\$l".$sLevel."];");
+include_once(_SHARED."pdf_tools.php");
 
 $arrQueueCommands = array();
 
@@ -27,17 +28,20 @@ eval("
 ");
 }
 
+$isPDF      = false;
 $destDir    = clean_path($contentDir . "/" . _AIP_DIR . "/");
 $olef_file  = clean_path($destDir.     "/" . _AIP_OLEF_FN);
 $cPages     = (int) count(getContentFiles($contentDir,'pagedata',false,"",0));
-if ( $cPages == 0 ) $cPages = (int) count(getContentFiles( $contentDir,'pagedata',true,"",0));
+//if ( $cPages == 0 ) $cPages = (int) count(getContentFiles( $contentDir,'pagedata',true,"",0));
 // If we still have no pages, check if we have a PDF
 if ( $cPages == 0 ) {
     $pdfs = getContentFiles( $contentDir,'bookdata',false,"",0);
     
     // If we have a PDF, read the page numbers from it
     if( count($pdfs) > 0 ) {
-        $cPages = pdfInfo::read($pdfs[0])->getNumPages();
+        $sourcePDF = $pdfs[0];
+        $cPages = pdfInfo::read($sourcePDF)->getNumPages();
+        $isPDF = true;
     }
 }
 
