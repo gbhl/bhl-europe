@@ -48,7 +48,7 @@ if ( $cPages == 0 ) {
 // Execute step for current directory
 // Check if directory contains a least one file, or if we are processing
 // the metadata (since for OAI-PMH providers the directory might be empty)
-if( !in_array($contentDir,$arrAnalyzedDirs) && (!is_dir_empty($contentDir,true) || $menu_nav == 'get_metadata') ) { //&&(!is_dir_empty($contentDir,true))) {
+if( !in_array($contentDir,$arrAnalyzedDirs) && (!is_dir_empty($contentDir,true) || $menu_nav == 'get_metadata' || $menu_nav == 'get_mets' ) ) { //&&(!is_dir_empty($contentDir,true))) {
     if (!is_dir($destDir)) @mkdir($destDir);        // WO NOETIG .AIP ANLEGEN
     
     $stepFinished   = false;                        // ZURUECKSETZEN DA FOLG. STEP ERFOLGREICH SEIN MUSS...
