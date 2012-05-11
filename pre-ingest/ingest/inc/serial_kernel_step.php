@@ -83,7 +83,9 @@ if( !in_array($contentDir,$arrAnalyzedDirs) && (!is_dir_empty($contentDir,true) 
                 $nSent++;
             }
         }
-        else  $endmsg .= "Package in ".str_replace(_CONTENT_ROOT,'',$contentDir)." is not ready for ingest (see msgs. above).";
+        else if ( !$stepFinished ) {
+            $endmsg .= "Package in ".str_replace(_CONTENT_ROOT,'',$contentDir)." is not ready for ingest (see msgs. above).";
+        }
     }
     // 2. QUEUING BEI ALLEN ANDEREN SCHRITTEN AUSSER METADATEN
     else if ((_QUEUE_MODE)&&($menu_nav!='get_metadata'))

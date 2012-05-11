@@ -161,7 +161,13 @@ if (file_exists($olef_file))
 
     echo "\n\n</pre>\n";
 }
-else {
+// Check if we have an empty dir (e.g. for section level)
+else if( is_dir_empty($contentDir,true) ) {
     $stepFinished = true;
+    $ingestReady = false;
+    
+}
+else {
+    $stepFinished = false;
     $ingestReady = false;
 }
