@@ -7,6 +7,7 @@
  */
 class pdfInfo {
     private $m_pdftkInfo = null;
+    private $m_pdfFontsInfo = null;
     private $m_numPages = -1;
     private $m_structure = null;
     private $m_bHasText = null;
@@ -18,6 +19,32 @@ class pdfInfo {
      */
     private function __construct( $p_pdfName ) {
         $this->m_pdfName = $p_pdfName;
+
+        // Check if we have a cached information for this PDF
+        $result = mysql_select( "SELECT * FROM `pdf_info` WHERE `file_name` = '" . mysql_escape_string($this->m_pdfName) . "'" );
+        if( mysql_num_rows($result) > 0 ) {
+            $row = mysql_fetch_array($result, MYSQL_ASSOC);
+            
+            $this->m_pdfFontsInfo = unserialize($row['pdfFonts_info']);
+            $this->m_pdftkInfo = unserialize($row['pdftk_info']);
+        }
+        // if not run our analyzing tools to fetch all the info
+        else {
+            $this->runPDFfonts();
+            $this->runPDFtk();
+            
+            // Store the tool output in the database to cache it
+            mysql_select( "
+                INSERT INTO `pdf_info`
+                ( `file_name`, `pdfFonts_info`, `pdftk_info` )
+                values
+                (
+                '" . mysql_escape_string($this->m_pdfName) . "', 
+                '" . mysql_escape_string(serialize($this->m_pdfFontsInfo)) . "',
+                '" . mysql_escape_string(serialize($this->m_pdftkInfo)) . "'
+                )"  );
+        }
+        
     }
 
     /**
@@ -27,10 +54,6 @@ class pdfInfo {
     public function getNumPages() {
         // Check if we already found the page-count
         if( $this->m_numPages >= 0 ) return $this->m_numPages;
-        
-        // We need the pdftk info for this
-        // (note the function takes care of not re-running the tool)
-        $this->runPDFtk();
         
         // Find NumerOfPages in pdftk-output
         $this->m_numPages = 0;
@@ -52,10 +75,6 @@ class pdfInfo {
     public function getStructure() {
         // Check if we already parsed the structure
         if( $this->m_structure != null ) return $this->m_structure;
-        
-        // We need the pdftk info for this
-        // (note the function takes care of not re-running the tool)
-        $this->runPDFtk();
         
         // Prepare structure variables
         $this->m_structure = array();
@@ -141,9 +160,16 @@ class pdfInfo {
      * @return bool True if PDF has embedded text, false otherwise 
      */
     public function hasText() {
-        // We need the pdffonts info for this
-        // (note the function takes care of not re-running the tool)
-        $this->runPDFfonts();
+        // Check if we already know about the text
+        if( $this->m_bHasText != null ) return $this->m_bHasText;
+
+        // Check if we have at least one font (pdffonts outputs two header lines)
+        if( count($this->m_pdfFontsInfo) > 2 ) {
+            $this->m_bHasText = true;
+        }
+        else {
+            $this->m_bHasText = false;
+        }
         
         return $this->m_bHasText;
     }
@@ -198,23 +224,17 @@ class pdfInfo {
      */
     private function runPDFfonts() {
         // Check if we already extracted the info
-        if( $this->m_bHasText != null ) return true;
-        $this->m_bHasText = false;
+        if( $this->m_pdfFontsInfo != null ) return true;
+        $this->m_pdfFontsInfo = array();
         
         // Run pdffonts command to check if PDF has embedded text
-        $pdffontsOutput = array();
         $return_val = -1;
         $pdffonts_cmd = _PDFFONTS . ' ' . escapeshellarg($this->m_pdfName);
         // Run pdftk command
-        exec($pdffonts_cmd, $pdffontsOutput, $return_val);
+        exec($pdffonts_cmd, $this->m_pdfFontsInfo, $return_val);
         // Check if we got some output
         if( $return_val != 0 ) return false;
-        
-        // Check if we have at least one font (pdffonts outputs two header lines)
-        if( count($pdffontsOutput) > 2 ) {
-            $this->m_bHasText = true;
-        }
-        
+                
         return true;
     }
 }
