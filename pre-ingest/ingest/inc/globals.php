@@ -4,9 +4,10 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    10.02.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 
-define("_APP_VERSION",       "1.81 beta (serials 1.3)");
+define("_APP_VERSION",       "1.90");
 
 define("_APP_NAME",          "BHL-E Content Portal & Ingestion");
 
