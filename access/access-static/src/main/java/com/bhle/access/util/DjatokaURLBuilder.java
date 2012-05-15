@@ -13,14 +13,15 @@ public class DjatokaURLBuilder {
 	private static final String SVC_VAL_FMT = "svc_val_fmt";
 	private static final String SVC_LEVEL = "svc.level";
 
-	private static final int DEFAULT_LEVEL = 5;
+	private static final String DEFAULT_RESOLUTION = "medium";
 
 	public void setBaseUrl(String baseUrl) {
 		BASE_URL = baseUrl;
 	}
 
 	public static URL build(URL referent) {
-		return build(referent, DEFAULT_LEVEL);
+		Resolution resolution = new Resolution(DEFAULT_RESOLUTION);
+		return build(referent, resolution.getLevel());
 	}
 
 	public static URL build(URL referent, int level) {
