@@ -16,8 +16,8 @@
     		<property name="taskExecutor" ref="taskExecutor" />
    	</bean>
     
-    	<bean id=”taskExecutor” class=”org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor”
-    		p:corePoolSize=”1″ p:maxPoolSize=”1″/>
+    	 <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" 
+    	p:corePoolSize="1" p:maxPoolSize="1"/>
 
 	<bean id="jobRepository"
 		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean"
