@@ -13,11 +13,10 @@
 	<bean id="jobLauncher"
 		class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
 		<property name="jobRepository" ref="jobRepository" />
-    		<property name="taskExecutor" ref="taskExecutor" />
+    	<property name="taskExecutor" ref="jobLauncherTaskExecutor" />
    	</bean>
     
-    	 <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" 
-    	p:corePoolSize="1" p:maxPoolSize="1"/>
+    <task:executor id="jobLauncherTaskExecutor" pool-size="1" rejection-policy="ABORT" />
 
 	<bean id="jobRepository"
 		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean"

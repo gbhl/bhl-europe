@@ -18,8 +18,9 @@
 		<property name="taskExecutor" ref="jobLauncherTaskExecutor" />
 	</bean>
 
-	<task:executor id="jobLauncherTaskExecutor" pool-size="1" rejection-policy="ABORT" />
-
+	<!--<task:executor id="jobLauncherTaskExecutor" pool-size="1" rejection-policy="ABORT" />-->
+	<bean id="jobLauncherTaskExecutor" class="org.springframework.core.task.SyncTaskExecutor"/>
+	
 	<task:executor id="poolTaskExecutor" pool-size="600" rejection-policy="CALLER_RUNS" />
 
 	<bean id="throttledTaskExecutor" class="org.springframework.batch.admin.util.ThrottledTaskExecutor">
