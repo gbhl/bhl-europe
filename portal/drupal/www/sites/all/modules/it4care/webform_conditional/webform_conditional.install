@@ -1,0 +1,110 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the webform_conditional module.
+ *
+ */
+
+/**
+ * @file
+ * Used for module updates
+ *
+ * @author Ted Bowman <ted@tedbow.com>
+ */
+function webform_conditional_update_6000() {
+  $sql = "SELECT name, form_key, type, extra,cid,nid FROM {webform_component}";
+  $result = db_query($sql);
+  if ($result) {
+    while ($row = db_fetch_array($result)) {
+      $extra = unserialize($row['extra']);
+      $extra['webform_conditional_field_key'] = trim($extra['webform_conditional_field_key']);
+      if (!empty($extra['webform_conditional_field_key'])) {
+        $row['extra'] = $extra;
+        $rows[] = $row;
+      }
+    }
+    if ($rows) {
+      //keep track of which dependent components coould not be update because keys are not unique
+      $cannot_update = array();
+      foreach ($rows as $row) {
+        if (empty($cannot_update[$row['nid']][$row['extra']['webform_conditional_field_key']])) {
+          $sql = "SELECT count(cid) FROM {webform_component} WHERE nid = %d and form_key = '%s'";
+          $count = db_query("SELECT count(cid) FROM {webform_component} WHERE nid = :nid and form_key = :form_key", array(':nid' => $row['nid'], ':form_key' => $row['extra']['webform_conditional_field_key']))->fetchField();
+          if ($count == 1) {
+            //can only update if key appears once in webform node
+            $sql = "SELECT cid FROM {webform_component} WHERE nid = %d and form_key = '%s'";
+            //get cid to replace key
+            $dependet_cid = db_query("SELECT cid FROM {webform_component} WHERE nid = :nid and form_key = :form_key", array(':nid' => $row['nid'], ':form_key' => $row['extra']['webform_conditional_field_key']))->fetchField();
+            //no longer storing key
+            unset($row['extra']['webform_conditional_field_key']);
+            $row['extra']['webform_conditional_cid'] = $dependet_cid;
+            $row['extra']['webform_conditional_field_value'] = str_replace("|", "\n", $row['extra']['webform_conditional_field_value']);
+            $row['extra']['webform_conditional_operator '] = "=";
+            $extra = serialize($row['extra']);
+            //can't use update_sql here becauce of serialized data??? is that right?
+            // Update the SQL database
+            $and = db_and()->condition('nid', $row['nid'])->condition('cid', $row['cid']);
+            $success = db_update('webform_component')
+              ->fields(array(
+              'extra' => $extra,
+            ))
+              ->condition($and)
+              ->execute();
+            $affected = db_affected_rows();
+            if (!$success || $affected != 1) {
+              watchdog("wfc_conditional", "Webform_conditional could not update. Could not update webform_component table.", NULL, WATCHDOG_ERROR);
+              $ret['#abort'] = array('success' => FALSE);
+              return $ret;
+            }
+          }
+          else {
+            $cannot_update[$row['nid']][$row['extra']['webform_conditional_field_key']][] = $row['form_key'];
+          }
+        }
+      }
+    }
+    if (!empty($cannot_update)) {
+      $error_msg = "For Webform conditional the following problems were found during the update:<br /><ul>";
+      foreach ($cannot_update as $nid => $conditional_keys) {
+        $error_msg .= "<li>In Node $nid the following dependent field keys were not unique:<ul>";
+        foreach ($conditional_keys as $conditional_key => $keys) {
+          $error_msg .= "<li>$conditional_key used by these components: " . implode(", ", $keys) . "<li>";
+        }
+        $error_msg .= "</ul></li>";
+      }
+      $error_msg .= "</ul>";
+      drupal_set_message(check_plain($error_msg), "warning");
+    }
+  }
+  // hook_update_N() no longer returns a $ret array. Instead, return
+  // nothing or a translated string indicating the update ran successfully.
+  // See http://drupal.org/node/224333#update_sql.
+  return t('TODO Add a descriptive string here to show in the UI.') /* array() */;
+}
+/**
+ * @todo Please document this function.
+ * @see http://drupal.org/node/1354
+ */
+function webform_conditional_update_6001() {
+  $ret = array();
+  $sql = "SELECT nid, cid,extra FROM {webform_component}";
+  $result = db_query($sql);
+  if ($result) {
+    while ($row = db_fetch_array($result)) {
+      $extra = unserialize($row['extra']);
+      if (!empty($extra['webform_conditional_mandatory'])) {
+        $update_components[$row['nid']][] = $row['cid'];
+      }
+    }
+    if ($update_components) {
+      foreach ($update_components as $nid => $cids) {
+        // TODO update_sql has been removed. Use the database API for any schema or data changes.
+        $ret[] = array() /* update_sql("UPDATE {webform_component} SET mandatory = 1 where nid = $nid and cid in (" . implode(",", $cids) . ")") */;
+      }
+    }
+  }
+  // hook_update_N() no longer returns a $ret array. Instead, return
+  // nothing or a translated string indicating the update ran successfully.
+  // See http://drupal.org/node/224333#update_sql.
+  return t('TODO Add a descriptive string here to show in the UI.') /* $ret */;
+}

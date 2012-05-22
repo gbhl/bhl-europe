@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * Implementation of hook_requirements().
+ */
+function zend_requirements($phrase) {
+  $requirements = array();
+  if ($phrase == 'runtime') {
+    $requirements['zend'] = array('title' => 'Zend Framework');
+    if (!zend_get_path()) {
+      $requirements['zend']['value'] = t('Not installed');
+      $requirements['zend']['description'] = t('The <a href="@url" target="_blank">Zend Framework</a> was not found.', array('@url' => 'http://framework.zend.com'));
+      $requirements['zend']['severity'] = REQUIREMENT_WARNING;
+    }
+    else {
+      $requirements['zend']['value'] = Zend_Version::VERSION;
+      $requirements['zend']['severity'] = REQUIREMENT_OK;
+    }
+  }
+  return $requirements;
+}
+
+/**
+ * Implementation of hook_install().
+ */
+function zend_install() {
+  // Setting the weight to -999999999 will cause zend_init() to run before other
+  // hook_init() implementations providing the Zend Framework as early as possible.
+  // @todo Update to use db api.
+  db_query("UPDATE {system} SET weight = -999999999 WHERE name = 'zend' AND type = 'module'");
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function zend_uninstall() {
+  variable_del('zend_path');
+}

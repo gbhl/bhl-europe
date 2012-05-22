@@ -1,0 +1,731 @@
+<?php
+
+/**
+ * @file
+ * This module adds the ability to have hidden conditional fields on Webforms.  It requires the Webform module version 3.x
+ *
+ * Currently fields and fieldset can be dependent on Select components.
+ *
+ * @author Ted Bowman <ted@tedbow.com>
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * @param array $form
+ * @param arrray $form_state
+ */
+function webform_conditional_form_webform_component_edit_form_alter(&$form, &$form_state) {
+  //not all types are hideable by this module
+  if (_webform_conditional_type_is_hideable($form['type']['#value'])) {
+    $triggerComponents = _webform_conditional_possible_trigger_components($form['nid']['#value'], $form['cid']['#value']);
+    if (!empty($triggerComponents)) {
+      //if there are any same page component add function to handle values
+      array_unshift($form['#submit'], 'webform_condtional_component_edit_submit');
+      $form['conditional']['#access'] = TRUE;
+      $form['conditional']['extra']['conditional_component']['#options'] = $form['conditional']['extra']['conditional_component']['#options'] + $triggerComponents;
+      $default_value = trim($form['conditional']['extra']['conditional_values']['#default_value']);
+      if (empty($default_value)) {
+        //no regular conditional values
+        if (!empty($form['cid']['#value'])) {
+          $sql = "SELECT extra FROM {webform_component} where nid = :nid and cid = :cid";
+          $result = db_query($sql, array(':nid' => $form['nid']['#value'], ':cid' => $form['cid']['#value']));
+          if ($row = $result->fetchAssoc()) {
+            //not dealing with a new component
+            $extra = unserialize($row['extra']);
+            $default_value = trim(isset($extra['webform_conditional_field_value']) ? $extra['webform_conditional_field_value'] : '');
+            //don't check for empty b/c 0 could only value
+            if ($default_value !== '') {
+              //has existing value from this module
+              $form['conditional']['extra']['conditional_values']['#default_value'] = $extra['webform_conditional_field_value'];
+              $form['conditional']['extra']['conditional_component']['#default_value'] = ($extra['webform_conditional_cid'] ? $extra['webform_conditional_cid'] : 0);
+              $form['conditional']['extra']['conditional_operator']['#default_value'] = $extra['webform_conditional_operator'];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * If you a same page component was selected change how it is stored
+ * @param $form
+ * @param $form_state
+ */
+function webform_condtional_component_edit_submit($form, &$form_state) {
+  $triggerComponents = _webform_conditional_possible_trigger_components($form['nid']['#value'], $form['cid']['#value'], FALSE);
+  $values = trim($form_state['values']['extra']['conditional_values']);
+  if (array_key_exists($form_state['values']['extra']['conditional_component'], $triggerComponents)) {
+    //handle with this module'
+    //don't check for empty b/c 0 could only value
+    if ($values !== '') {
+      $form_state['values']['extra']['webform_conditional_field_value'] = $values;
+      $form_state['values']['extra']['webform_conditional_cid'] = $form_state['values']['extra']['conditional_component'];
+      $form_state['values']['extra']['webform_conditional_operator'] = $form_state['values']['extra']['conditional_operator'];
+    }
+    //clear out old values
+    $form_state['values']['extra']['conditional_component'] = '';
+    $form_state['values']['extra']['conditional_operator'] = '';
+    $form_state['values']['extra']['conditional_values'] = '';
+  }
+}
+
+/*
+ * Implements hook_form_alter().
+ * Edit Webform
+ * Add Javascript to describe dependent fields
+ * Add validation of hidden conditional fields
+ */
+
+function webform_conditional_form_alter(&$form, $form_state, $form_id) {
+  //todo: change to look only at beginning of string
+  static $called_forms = array();
+  if (strstr($form_id, 'webform_client_form_') && isset($form['submitted'])) {
+    if (isset($form['#webform_conditional_js'])) {
+      return;
+    }
+    $nid = $form['details']['nid']['#value'];
+    if (in_array($nid, $called_forms)) {
+      //return;
+    }
+    else {
+      $called_forms[] = $nid;
+    }
+    $sql = "SELECT * FROM {webform_component} where nid = :nid";
+    $result = db_query($sql, array(':nid' => $nid));
+    while ($row = $result->fetchAssoc()) {
+      $rows[$row['cid']] = $row;
+    }
+    foreach ($rows as $row) {
+      //see if field is on this page
+      $extra = NULL;
+      $field = _webform_conditional_get_field($form['submitted'], $row['cid']);
+      if (!empty($field)) {
+        $extra = unserialize($row['extra']);
+        $row['extra'] = $extra;
+        if (isset($extra['webform_conditional_cid']) && $extra['webform_conditional_cid']) {
+          if (!_webform_conditional_get_field($form['submitted'], $extra['webform_conditional_cid'])) {
+            //watchdog('webform_conditional', "Error webform, nid=$nid.  The field {$row['form_key']} was not hidden because it's dependent field {$extra['webform_conditional_field_key']} was not on the form.", NULL, WATCHDOG_WARNING);
+            continue;
+          }
+          //take into account different systems line breaks
+          $monitor_field_values = _webform_conditional_convert_textarea_lines_to_array($extra['webform_conditional_field_value']);
+          if (!isset($js_fields[$rows[$extra['webform_conditional_cid']]['form_key']])) {
+            $js_fields[$rows[$extra['webform_conditional_cid']]['form_key']]['css_id'] = _webform_conditional_get_css_id($form['details']['nid']['#value'], $extra['webform_conditional_cid']);
+          }
+          $js_fields[$rows[$extra['webform_conditional_cid']]['form_key']]['dependent_fields'][$row['form_key']] = array(
+            'type' => $row['type'],
+            'monitor_cid' => $extra['webform_conditional_cid'],
+            'monitor_field_key' => $rows[$extra['webform_conditional_cid']]['form_key'],
+            'monitor_field_value' => $monitor_field_values,
+            'monitor_field_trigger' => isset($extra['webform_conditional_trigger']) ? $extra['webform_conditional_trigger'] : '',
+            'operator' => isset($extra['webform_conditional_operator']) ? $extra['webform_conditional_operator'] : "=",
+            'default_value' => $row['value'],
+            'css_id' => _webform_conditional_get_css_id($form['details']['nid']['#value'], $row['cid']),
+          );
+        }
+        if ($row['type'] != 'fieldset' && _webform_condtional_component_is_conditional($row, $nid)) {
+          //!empty($extra['webform_conditional_cid']) || ($row['pid'] != 0 && $row['mandatory'] == 1))
+          //get the reference the form element
+          $form_element = &_webform_conditional_get_field($form['submitted'], $row['cid']);
+          $form_element['#after_build'][] = "webform_conditional_element_after_build";
+          if ($row['mandatory']) {
+            $form_element['#pre_render'][] = "webform_elment_pre_render_add_required";
+          }
+        }
+      }
+    }
+    //can't add javascript in this function or it will not be added if the form is built from cache.  Need to run "after_build" function
+    $form['#after_build'][] = 'webform_conditional_add_js';
+    $js_settings = array(
+      // Rewrite previous settings if the form is being rebuilt.
+      'fields' => isset($js_fields) ? $js_fields : FALSE,
+      'nid' => $nid,
+      'showSpeed' => NULL, //'fast',
+    );
+    //store JavaScript variable for the webform_conditional_add_js function
+    $form['#webform_conditional_js'] = $js_settings;
+  }
+}
+
+/**
+ * This function is attached to all conditonal elements that are also required
+ * This resets the #required setting which is removed if a element is hidden
+ * @param $form_element
+ * @return boolean
+ */
+function webform_elment_pre_render_add_required($form_element) {
+  $form_element['#required'] = TRUE;
+  return $form_element;
+}
+
+/**
+ * Determine whether a component is conditional(via this module) by direct trigger or b/c inside a conditional fieldset
+ * @param array $component Component array
+ * @param int $nid Node that component belongs to
+ * @return boolean
+ */
+function _webform_condtional_component_is_conditional($component, $nid) {
+  static $form_components;
+  if (empty($form_components[$nid])) {
+    //possible to have more than on webform on a page so store with nid
+    $form_components[$nid] = _webform_conditional_get_all_components($nid, array());
+  }
+  if (!empty($component['extra']['webform_conditional_cid'])) {
+    //this element doesn't have a direct trigger and is not within a fieldset
+    return TRUE;
+  }
+  elseif (empty($component['pid'])) {
+    return FALSE;
+  }
+  //this element is conditional if its fieldset is conditional
+  return _webform_condtional_component_is_conditional($form_components[$nid][$component['pid']], $nid);
+}
+
+/**
+ * Change textarea string input to array of lines
+ * @param string $textarea_value
+ * @return array
+ */
+function _webform_conditional_convert_textarea_lines_to_array($textarea_value) {
+  $textarea_value = str_replace("\r\n", "\n", $textarea_value);
+  $textarea_value = str_replace("\r", "\n", $textarea_value);
+  return explode("\n", $textarea_value);
+}
+
+/**
+ * When the form is being built AFTER it is submitted then this function will make components that were hidden not required
+ * @param $form_element
+ * @param $form_state
+ *
+ * @return boolean
+ */
+function webform_conditional_element_after_build($form_element, &$form_state) {
+  //only do this when the form is being submitted NOT displayed
+  if (!empty($form_state['input'])) {
+    $submitted_values = _webform_conditional_get_submitted_values($form_state);
+    //load the components into a flattened array
+    $components = _webform_conditional_get_all_components($form_element['#webform_component']['nid'], $submitted_values);
+    $was_hidden = _webform_conditional_was_hidden($form_element['#webform_component']['cid'], $components);
+    if ($was_hidden) {
+      //deal with webform_grid types
+      if (isset($form_element['#type']) && $form_element['#type'] == 'webform_grid') {
+        foreach ($form_element as &$element) {
+          //one level of depth is enough, as webform_grid won't go further
+          if (is_array($element) && isset($element['#required'])) {
+            $element['#required'] = FALSE;
+          }
+        }
+      }
+      //deal with select_or_other types
+      if (isset($form_element['#select_type'])) {
+        $form_element['#type'] = 'select_or_other';
+        $form_element['select']['#required'] = FALSE;
+        $form_element['other']['#required'] = FALSE;
+      }
+      $form_element['#required'] = FALSE;
+      _webform_condtional_clear_element_values($form_element);
+    }
+  }
+  return $form_element;
+}
+
+/**
+ * This any component this return the CSS id that Webform creates for the div element that wraps a component
+ * This will id will be used on the client side to show/hide components
+ *
+ * @param $nid
+ *  Node id for a component
+ * @param $cid
+ *  Component id
+ *
+ * @return string
+ *  css id
+ */
+function _webform_conditional_get_css_id($nid, $cid) {
+  $components = _webform_conditional_get_all_components($nid);
+  $css_id = str_replace("_", "-", $components[$cid]['form_key']);
+  $parent_cid = $components[$cid]['pid'];
+  while ($parent_cid) {
+    $css_id = str_replace("_", "-", $components[$parent_cid]['form_key']) . "--" . $css_id;
+    $parent_cid = $components[$parent_cid]['pid'];
+  }
+  return "webform-component-$css_id";
+}
+
+/**
+ * Function run #after_build on webform.  This ensures that Javascript is added even if form is built from cache. 
+ * @param array $form
+ * @param array $form_state
+ * @return array
+ *  The form
+ */
+function webform_conditional_add_js(&$form, $form_state) {
+  // If the form is being rebuilt we need to reset the previous settings,
+  // otherwise array_merge_recursive() will turn string values into arrays.
+  $javascript = &drupal_static('drupal_add_js', array());
+  foreach ($javascript['settings']['data'] as $delta => $settings) {
+    if (key($settings) == 'webform_conditional') {
+      unset($javascript['settings']['data'][$delta]);
+      break;
+    }
+  }
+  drupal_add_js(array('webform_conditional' => $form['#webform_conditional_js']), array('type' => "setting", 'scope' => JS_DEFAULT));
+  drupal_add_js(drupal_get_path('module', 'webform_conditional') . '/webform_conditional.js');
+  return $form;
+}
+
+/**
+ * Get the values submited values from the form_state
+ * @param  $form_state
+ *  From hook_form_alter
+ * @return
+ *  Array of submitted values
+ */
+function _webform_conditional_get_submitted_values($form_state) {
+  //get component tree
+  if (isset($form_state['storage'])) {
+    $tree = $form_state['storage']['component_tree']['children'];
+  }
+  else {
+    $tree = $form_state['webform']['component_tree']['children'];
+  }
+  //get components that are on the current page
+  if (!empty($form_state['values']['details']['page_num'])) {
+    $page_num = $form_state['values']['details']['page_num'];
+    if ($form_state['clicked_button']['#id'] == 'edit-previous') {
+      $page_num--;
+    }
+    elseif ($form_state['clicked_button']['#id'] == 'edit-next') {
+      $page_num++;
+    }
+    $tree = _webform_conditional_get_page_tree($tree, $page_num);
+  }
+
+  //load the submitted values into the component tree
+  return _webform_conditional_get_submitted_array($tree, $form_state['values']['submitted']);
+}
+
+/**
+ * Clear the submitted values for an element
+ * @param $element
+ */
+
+/**
+ * Clear the submitted values for an element
+ * @param $element
+ */
+function _webform_condtional_clear_element_values(&$element) {
+  //select_type deals with values from the select_or_other module
+  if (!isset($element['#select_type']) && (!isset($element['#type']) || $element['#type'] == 'markup')) {
+    //markup fields don't have user input to clear
+    //markup is default
+    return;
+  }
+  if (isset($element['#value']) && is_array($element['#value'])) {
+
+    foreach ($element['#value'] as $key => $value) {
+      $element['#value'][$key] = '';
+    }
+  }
+  else {
+    $element['#value'] = '';
+  }
+  //handle special cases types
+  switch ($element['#type']) {
+    case 'date':
+      $element['month']['#value'] = '';
+      $element['day']['#value'] = '';
+      $element['year']['#value'] = '';
+      break;
+    case 'webform_grid':
+      foreach ($element as &$elem) {
+        //one level of depth is enough, as webform_grid won't go further
+        if (is_array($elem) && array_key_exists('#value', $elem)) {
+          $elem['#value'] = '';
+        }
+      }
+      break;
+    case 'select_or_other':
+      if (is_array($element['select']['#value'])) {
+        foreach ($element['select']['#value'] as $key => $value) {
+          $element['select']['#value'][$key] = '';
+        }
+      }
+      else {
+        $element['select']['#value'] = '';
+      }
+      if (is_array($element['other']['#value'])) {
+        foreach ($element['other']['#value'] as $key => $value) {
+          $element['other']['#value'][$key] = '';
+        }
+      }
+      else {
+        $element['other']['#value'] = '';
+      }
+      break;
+    //@todo Add other comoponet types that need special clearing logic
+  }
+}
+
+/**
+ * Return components of current page only
+ * @param array $children Nested Component Tree
+ * @param int $page_num Current page
+ * @return array components of current page only
+ */
+function _webform_conditional_get_page_tree($children, $page_num) {
+  $page_tree = array();
+  foreach ($children as $cid => $child) {
+    if ($child['page_num'] == $page_num) {
+      $page_tree[$cid] = $child;
+    }
+  }
+  return $page_tree;
+}
+
+/**
+ * Convert the nested submit array to a flattened array
+ * @param array $children Nested component tree
+ * @param array $submitted Nested submitted values
+ * @return array flattened submit array
+ */
+function _webform_conditional_get_submitted_array($children, $submitted) {
+  if (empty($children)) {
+    return array();
+  }
+  $submitted_data = array();
+  foreach ($children as $cid => $child) {
+    if (array_key_exists($child['form_key'], $submitted)) {
+      if ($child['type'] != 'fieldset') {
+        $submitted_data[$cid]['value'] = $submitted[$child['form_key']];
+      }
+      else {
+        $submitted_data = $submitted_data + _webform_conditional_get_submitted_array($child['children'], $submitted[$child['form_key']]);
+      }
+    }
+  }
+  return $submitted_data;
+}
+
+/**
+ * Implements hook_webform_submission_presave().
+ *
+ * Check to see if components should have been hidden
+ * @param object $node
+ * @param object $submission
+ */
+function webform_conditional_webform_submission_presave($node, &$submission) {
+  $components = _webform_conditional_get_all_components($submission->nid, $submission->data);
+  $cleared_data = array();
+  foreach ($submission->data as $cid => $value) {
+    if (!_webform_conditional_was_hidden($cid, $components)) {
+      $cleared_data[$cid] = $value;
+    }
+  }
+  $submission->data = $cleared_data;
+}
+
+/**
+ * Determine if component should have been hidden on form
+ * A component can be hidden 1 of 3 ways
+ * 1. It is hidden b/c of the value of its direct trigger
+ * 2. It is hidden b/c it's direct trigger is hidden
+ * 3. It is hidden bc/ it is inside a fieldset is hidden
+ * @param integer $cid
+ * @param array $components
+ * @return boolean TRUE if element should have been hidden
+ */
+function _webform_conditional_was_hidden($cid, $components) {
+  $fieldset_hidden = FALSE;
+  $trigger_hidden = FALSE;
+  $this_hidden = FALSE;
+  if (!empty($components[$cid]['extra']['webform_conditional_cid'])) {
+    //was hidden conditional
+    foreach ($components as $component) {
+      if ($component['cid'] == $components[$cid]['extra']['webform_conditional_cid']) {
+        $trigger_field = $component;
+        break;
+      }
+    }
+    $show_values = _webform_conditional_convert_textarea_lines_to_array($components[$cid]['extra']['webform_conditional_field_value']);
+    if (is_array($trigger_field['value'])) {
+      $match_values = array_intersect($show_values, $trigger_field['value']);
+      if (count($match_values) == 0) {
+        $matched = FALSE;
+      }
+      else {
+        $matched = TRUE;
+      }
+    }
+    else {
+      $matched = in_array($trigger_field['value'], $show_values);
+    }
+    $this_hidden = (!$matched && $components[$cid]['extra']['webform_conditional_operator'] == "=") || ($matched && $components[$cid]['extra']['webform_conditional_operator'] == "!=");
+    if (!$this_hidden) {
+      //trigger matched - check if trigger should be shown
+      if (!empty($trigger_field['extra']['webform_conditional_cid'])) {
+        $trigger_hidden = _webform_conditional_was_hidden($trigger_field['cid'], $components);
+      }
+    }
+  }
+  //wasn't hidden conditional - still could have been belonged to a hidden fieldset
+  if (!empty($components[$cid]['pid'])) {
+    //this belongs to a fieldset check if it was hidden
+    $fieldset_hidden = _webform_conditional_was_hidden($components[$cid]['pid'], $components);
+  }
+  //can be hidden 1 of 3 ways
+  return $this_hidden || $trigger_hidden || $fieldset_hidden;
+}
+
+/**
+ * @return The types of elements that should be used as a conditional trigger.
+ */
+function webform_conditional_trigger_types() {
+  $types = array('select');
+  drupal_alter('webform_conditional_trigger_types', $types);
+  return $types;
+}
+
+/**
+ * select all the components this component could be dependent on
+ * for now this is limited to single select
+ * @param int $nid
+ * @param int $cid
+ * @param boolean $return_groups
+ * @return array:
+ */
+function _webform_conditional_possible_trigger_components($nid, $cid, $return_groups = TRUE) {
+  $new_component = empty($cid);
+
+  $trigger_types = webform_conditional_trigger_types();
+  $get_component_types = array_merge($trigger_types, array('pagebreak', 'fieldset'));
+  $query = db_select('webform_component', 'w')
+      ->fields('w', array('name', 'form_key', 'type', 'extra', 'cid', 'weight', 'pid'))
+      ->condition('nid', $nid)
+      ->orderBy('weight', 'ASC');
+  if (!$new_component) {
+    //** all a fieldset can't be dependent on a field contained in itself(check pid)
+    $baseComponent = _webform_conditional_get_base_component($nid, $cid);
+    $query->condition('pid', $cid, '<>');
+    // Add or condition
+    $or = db_or()
+        ->condition('type', $get_component_types)
+        ->condition('cid', $cid);
+    $query->condition($or);
+  }
+  else {
+    $baseComponent['cid'] = '';
+    $query->condition('type', $get_component_types);
+  }
+
+  $result = $query->execute();
+  $fieldOptions[''] = "";
+  $currPageNum = 1;
+  $prePageBreakWeight = -999999999999;
+  $postPageBreakWeight = 999999999999;
+  $foundPage = FALSE;
+  //loop through results to find the correct page that this element is one
+  while ($row = $result->fetchAssoc()) {
+    if (empty($row['pid'])) {
+      //get base components on this page - not in a fieldset
+      if ($postPageBreakWeight == 999999999999) {
+        if ($baseComponent['cid'] == $row['cid']) {
+          $foundPage = TRUE;
+        }
+        if ($row['type'] == 'pagebreak') {
+          if (!$foundPage) {
+            $prePageBreakWeight = $row['weight'];
+            $currPage = $row['name'];
+          }
+          else {
+            $postPageBreakWeight = $row['weight'];
+          }
+        }
+        $rows[] = $row;
+      }
+    }
+    else {
+      //all elements that are under fieldsets
+      $child_element_rows[$row['cid']] = $row;
+    }
+  }
+  $currPage = '';
+  if (!empty($rows)) {
+    $components = array();
+    //loop through base components to see if they are after the pagebreak(if any) and before the basecomponent for the particular component
+    foreach ($rows as $row) {
+      $postWeight = isset($baseComponent['weight']) ? $baseComponent['weight'] : $postPageBreakWeight;
+      if ($row['weight'] > $prePageBreakWeight && $row['weight'] <= $postWeight && $row['cid'] != $cid) {
+        if ($row['type'] == 'fieldset') {
+          if (!empty($child_element_rows)) {
+            //add the available components inside this fieldset
+            _webform_condtional_get_usable_child_elements($components, $row, $child_element_rows, $cid, $currPage, $return_groups);
+          }
+        }
+        else {
+          if (empty($currPage) || !$return_groups) {
+            $components[$row['cid']] = $row['name'];
+          }
+          else {
+            $components[$currPage][$row['cid']] = $row['name'];
+          }
+        }
+      }
+    }
+  }
+  if (!empty($components)) {
+    return $components;
+  }
+  else {
+    //no matching components
+    return array();
+  }
+}
+
+/**
+ * Gets all child components under $fieldset_component that can be used as triggers for the component - $current_cid
+ * @param array $components
+ * @param array $fieldset_component
+ * @param array $form_components
+ * @param int $current_cid
+ * @param string $label
+ * @param boolean $return_groups
+ */
+function _webform_condtional_get_usable_child_elements(&$components, $fieldset_component, $form_components, $current_cid, $label, $return_groups = FALSE) {
+  if ($current_cid == $fieldset_component['cid']) {
+    return NULL;
+  }
+  //don't add fieldset for now b/c Webform doesn't do this
+  //$label = "$label--{$row['name']}";
+  foreach ($form_components as $child) {
+    if ($child['cid'] == $current_cid) {
+      continue;
+    }
+    if ($child['pid'] == $fieldset_component['cid']) {
+      if ($child['type'] != 'fieldset' && isset($form_components[$child['cid']]) && (empty($current_cid) || !isset($form_components[$current_cid]) || ($form_components[$current_cid]['pid'] != $child['pid'] || $form_components[$current_cid]['weight'] > $child['weight']))) {
+        //the child element is not a fieldset AND (it either is not within the same fieldset as excluded component OR it appears lower in the fieldset(weight) then the excluded component)
+        if ($return_groups && !empty($label)) {
+          $components[$label][$child['cid']] = $child['name'];
+        }
+        else {
+          $components[$child['cid']] = $child['name'];
+        }
+      }
+      else {
+        if ($child['type'] == 'fieldset' && (empty($current_cid) || $child['pid'] != $form_components[$current_cid]['pid'])) {
+          //if child is fieldset and either(no current component or child isn't the fieldset that the current belongs to
+          _webform_condtional_get_usable_child_elements($components, $child, $form_components, $current_cid, $label, $return_groups);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Get the top level fieldset that this component belongs too or itself if not inside a fieldset.
+ * @param $nid
+ * @param $cid
+ *
+ * @return
+ *  Component as an array.
+ */
+function _webform_conditional_get_base_component($nid, $cid) {
+  $components = _webform_conditional_get_all_components($nid);
+  $component = $components[$cid];
+  while ($component['pid']) {
+    $component = $components[$component['pid']];
+  }
+  return $component;
+}
+
+/**
+ * Get all the Webform Components for a node
+ * If submitted_data given add to each component
+ * @param int $nid
+ * @param array $submitted_data
+ * @return array
+ */
+function _webform_conditional_get_all_components($nid, $submitted_data = array()) {
+  $sql = "SELECT * FROM {webform_component} where nid = :nid";
+  $result = db_query($sql, array(':nid' => $nid));
+  $components = array();
+  while ($component = $result->fetchAssoc()) {
+    $component['extra'] = unserialize($component['extra']);
+    if (!isset($component['extra']['webform_conditional_operator'])) {
+      $component['extra']['webform_conditional_operator'] = "=";
+    }
+    $components[$component['cid']] = $component;
+    if (isset($submitted_data[$component['cid']])) {
+      $components[$component['cid']]['value'] = $submitted_data[$component['cid']]['value'];
+    }
+  }
+  return $components;
+}
+
+/**
+ * Determine if component type is hideable
+ * Pagebreak and hidden types are not hideable
+ * @param string $type
+ * @return boolean
+ */
+function _webform_conditional_type_is_hideable($type) {
+  $notHideAble = array('pagebreak', 'hidden');
+  return !in_array($type, $notHideAble);
+}
+
+/**
+ * Get field from a list of fields
+ * @param array $fields
+ * @param int $cid
+ * @return array|NULL
+ */
+function &_webform_conditional_get_field(&$fields, $cid) {
+  foreach ($fields as $key => &$field) {
+    if (is_array($fields[$key]) && isset($fields[$key]['#webform_component']) && $fields[$key]['#webform_component']['cid'] == $cid) {
+      return $field;
+    }
+  }
+  foreach ($fields as $key => &$field) {
+    if (is_array($fields[$key]) && isset($fields[$key]['#type']) && $fields[$key]['#type'] == 'fieldset') {
+      if ($innerField = & _webform_conditional_get_field($fields[$key], $cid)) {
+        return $innerField;
+      }
+    }
+  }
+  $null = NULL;
+  return $null;
+}
+
+/**
+ * Implements hook_webform_submission_render_alter().
+ * Remove elements that would not have been show according to the Hidden Conditional Rules
+ * *** This will look at the current rules for this Webform.  If the rules were changed after this submission they will not hide the field that were hidden at the time of submission
+ * @param array $submission Webform submission to be rendered
+ */
+function webform_conditional_webform_submission_render_alter(&$submission) {
+  //load the components into a flattened array
+  $components = _webform_conditional_get_all_components($submission['#node']->nid, $submission['#submission']->data);
+  $form_fields = element_children($submission);
+  _webform_conditional_hide_submission_elements($submission, $components);
+}
+
+/**
+ * unset submission children
+ * @param array $submission_children
+ * @param array $components
+ */
+function _webform_conditional_hide_submission_elements(&$submission_children, $components) {
+  foreach ($submission_children as $key => &$child) {
+    if (element_child($key)) {
+      if (_webform_conditional_was_hidden($child['#webform_component']['cid'], $components)) {
+        unset($submission_children[$key]);
+      }
+      else {
+        if ($child['#webform_component']['type'] == 'fieldset') {
+          _webform_conditional_hide_submission_elements($child, $components);
+        }
+      }
+    }
+  }
+}

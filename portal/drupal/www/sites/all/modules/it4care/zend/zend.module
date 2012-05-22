@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * The Zend module for Drupal ensures that the Zend Framework is installed.
+ */
+
+/**
+ * Implements hook_init().
+ */
+function zend_init() {
+  // Due to the dependance on the libraries module being included, we wait until
+  // hook_init() to register the Zend Loader.
+  if ($path = zend_get_path()) {
+    // Add Zend to the include path. We need to pop the /Zend off the end.
+    $zend_path = substr($path, 0, -5);
+    set_include_path(get_include_path() . PATH_SEPARATOR . DRUPAL_ROOT . DIRECTORY_SEPARATOR . $zend_path);
+    require_once $path .'/Loader/Autoloader.php';
+    Zend_Loader_Autoloader::getInstance();
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function zend_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#zend':
+      return '<p>'. t('The Zend Framework is an open source web application framework for developing PHP 5 web applications.') .'</p>';
+    case 'admin/settings/zend':
+      return '<p>'. t('The Zend Framework is an open source web application framework for developing PHP 5 web applications. The following are configruation options for its installation.') .'</p>';
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function zend_menu() {
+  $items['admin/config/development/zend'] = array(
+    'title' => 'Zend Framework',
+    'description' => 'Configuration options for the Zend Framework',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('zend_admin'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'zend.admin.inc',
+  );
+  $items['admin/config/development/zend/settings'] = array(
+    'title' => 'Settings',
+    'description' => 'General settings relating to the Zend Framework.',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+  return $items;
+}
+
+
+/**
+ * Retrieve the expected path to the Zend Framework.
+ *
+ * @return
+ *   The path where the Zend Framework is to be expected to be installed.
+ */
+function zend_get_path() {
+  // A path can be configured to the location of the library.
+  $path = variable_get('zend_path', FALSE);
+
+  if (!$path) {
+    // Check if the libraries module is installed and if the Zend Framework is
+    // being supplied through the libraries module.
+    if (module_exists('libraries')) {
+      $libraries = libraries_get_libraries();
+      if (isset($libraries['Zend'])) {
+        $path = libraries_get_path('Zend');
+      }
+    }
+
+    // Check if the Zend Framework is in the include path.
+    if (!$path) {
+      $include_paths = explode(PATH_SEPARATOR, get_include_path());
+        foreach ($include_paths as $include_path) {
+          if (is_dir($include_path .'/Zend')) {
+            $path = $include_path .'/Zend';
+            break;
+          }
+        }
+    }
+  }
+
+  return $path;
+}

@@ -1,0 +1,10 @@
+name = BHL-E feedback
+description = Gemini integration
+core = 7.x
+package = BHLE
+dependencies[] = webform
+dependencies[] = zend
+dependencies[] = libraries
+
+version = "7.x-1.0"
+core = "7.x"

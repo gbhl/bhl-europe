@@ -31,7 +31,7 @@ function bhle_item_menu() {
   $items['bhle-download/%/%'] = array(
     'title callback' => 'bhle_item_page_title',
     'title arguments' => array(2),
-    'page callback' => 'bhle_item_download',
+    'page callback' => 'bhle_item_download', 
     'page arguments' => array(2, 1),
     'access callback' => 'bhle_item_access',
     'type' => MENU_CALLBACK,
@@ -116,6 +116,7 @@ function bhle_item_load($pid) {
     //dpm('query: ' . $solrruntime);
     $item = $response->docs[0];
   }
+  dpm($item);
   return $item;
 }
 
@@ -162,6 +163,8 @@ function _template_preprocess_bhle_item($item) {
     $rendered['mods_subject__exact'] = _solrdoc_getField($item, 'mods_subject__exact');
     $rendered['mods_place'] = _solrdoc_getField($item, 'mods_place');
     $rendered['mods_name__exact'] = _solrdoc_getField($item, 'mods_name__exact');
+    $rendered['mods_subject_geographic'] = _solrdoc_getField($item, 'mods_subject_geographic');
+    
 
     $summary = '';
     if ($rendered['mods_title']) { $summary .= '<li><label>' . t('Title') . '</label><p>' . $rendered['mods_title'] . '</p></li>'; }
@@ -171,9 +174,9 @@ function _template_preprocess_bhle_item($item) {
     if ($rendered['journal_title']) { $summary .= '<li><label>' . t('Journal title') . '</label><p>&nbsp;</p></li>'; }
     if ($rendered['volume_title']) { $summary .= '<li><label>' . t('Volume title') . '</label><p>&nbsp;</p></li>'; }
     if ($rendered['mods_publisher']) { $summary .= '<li><label>' . t('Publisher') . '</label><p>' . $rendered['mods_publisher'] . '</p></li>'; }
-    if ($rendered['mods_origin']) { $summary .= '<li><label>' . t('Place of publishing') . '</label><p>' . $rendered['mods_origin'] . '</p></li>'; }
+    if ($rendered['mods_subject_geographic']) { $summary .= '<li><label>' . t('Place of publishing') . '</label><p>' . $rendered['mods_subject_geographic'] . '</p></li>'; }
     if ($rendered['mods_language']) { $summary .= '<li><label>' . t('Language of the text') . '</label><p>' . $rendered['mods_language'] .'</p></li>'; }
-    if ($rendered['fgs_ownerId']) { $summary .= '<li><label>' . t('Content provider') . '</label><p>' . $rendered['fgs_ownerId'] .'</p></li>'; }
+    if ($rendered['mods_record_content_source']) { $summary .= '<li><label>' . t('Content provider') . '</label><p>' . $rendered['mods_record_content_source'] .'</p></li>'; }
     if ($rendered['grib']) { $summary .= '<li><label>' . t('GRIB?') . '</label><p>&nbsp;</p></li>'; }
     
     if ($summary) { $rendered['meta_summary_source'] = '<ul>' . $summary . '<ul>'; }

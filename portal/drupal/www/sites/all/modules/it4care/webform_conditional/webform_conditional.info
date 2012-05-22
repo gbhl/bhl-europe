@@ -1,0 +1,15 @@
+; $Id: $
+name = Webform Conditional
+description = Allows Webform components to be hidden dependent on the value of other components
+core = 7.x
+package = Webform
+dependencies[]=webform
+files[] = webform_conditional.install
+files[] = webform_conditional.module
+
+; Information added by drupal.org packaging script on 2012-04-15
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "webform_conditional"
+datestamp = "1334510511"
+
