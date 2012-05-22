@@ -16,7 +16,7 @@
     	<property name="taskExecutor" ref="jobLauncherTaskExecutor" />
    	</bean>
     
-    <task:executor id="jobLauncherTaskExecutor" pool-size="1" rejection-policy="ABORT" />
+    	<bean id="jobLauncherTaskExecutor" class="org.springframework.core.task.SyncTaskExecutor"/>
 
 	<bean id="jobRepository"
 		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean"
