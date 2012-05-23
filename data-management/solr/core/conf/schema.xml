@@ -674,7 +674,7 @@
     <copyField source="mods_type_of_resource" dest="all"/>
     <copyField source="mods_type_of_resource" dest="all__exact"/>
 
-	<!-- keywords on subject  -->
+    <!-- keywords on subject  -->
     <field name="mods_subject" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_subject__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_subject__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
@@ -685,7 +685,7 @@
     <copyField source="mods_subject" dest="all"/>
     <copyField source="mods_subject" dest="all__exact"/>
 
-	<!-- publisher -->
+    <!-- publisher -->
     <field name="mods_publisher" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_publisher__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <copyField source="mods_publisher" dest="mods_publisher__exact"/>
@@ -695,11 +695,14 @@
     <!-- place of publication -->
     <field name="mods_place" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_place__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_place__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <field name="mods_place__sort" type="sorting" indexed="true" multiValued="false" termVectors="false" stored="false" required="false"/>
     <copyField source="mods_place" dest="mods_place__exact"/>
+    <copyField source="mods_place" dest="mods_place__facet"/>
     <copyField source="mods_place" dest="all"/>
     <copyField source="mods_place" dest="all__exact"/>
 
-	<!-- content provider -->
+    <!-- content provider -->
     <field name="mods_record_content_source" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_record_content_source__exact" type="text_exact" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
     <field name="mods_record_content_source__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
@@ -725,6 +728,18 @@
     <copyField source="mods_abstract" dest="mods_abstract__exact"/>
     <copyField source="mods_abstract" dest="all"/>
     <copyField source="mods_abstract" dest="all__exact"/>
+
+    <!-- rights -->
+    <field name="mods_rights" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_rights__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="mods_rights" dest="mods_rights__facet"/>
+    <copyField source="mods_rights" dest="all"/>
+
+    <field name="mods_accessCondition" type="text_general" indexed="true" multiValued="true" termVectors="false" stored="true" required="false"/>
+    <field name="mods_accessCondition__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="mods_accessCondition" dest="mods_accessCondition__facet"/>
+    <copyField source="mods_accessCondition" dest="all"/>
+
 
 
 

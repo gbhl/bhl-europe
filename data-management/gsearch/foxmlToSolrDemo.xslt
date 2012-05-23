@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- $Id: foxmlToSolr.xslt $ -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
@@ -199,16 +199,6 @@
 
 
 		<xsl:for-each select="mods:*">
-			<!-- identifier -->
-			<xsl:if test="(local-name() = 'identifier') and (@type != '')">
-				<xsl:element name="field">
-					<xsl:attribute name="name">mods_identifier</xsl:attribute>
-					<xsl:value-of select="@type" />
-					<xsl:text>:</xsl:text>
-					<xsl:value-of select="." />
-				</xsl:element>
-			</xsl:if>
-
 			<!-- titleInfo -->
 			<xsl:if test="local-name() = 'titleInfo'">
 				<xsl:call-template name="mods-titleInfo"/>
@@ -304,12 +294,8 @@
 			<!-- location -->
 			<xsl:apply-templates select="mods:location"> </xsl:apply-templates>
 
-			<!-- accessCondition -->
-			<xsl:apply-templates select="mods:accessCondition"/>
-
-			<!-- recordInfo -->
-			<xsl:if
-				test="local-name() = 'recordInfo' and child::*[local-name() = 'recordContentSource']">
+				<!-- recordInfo -->
+			<xsl:if test="local-name() = 'recordInfo' and child::*[local-name() = 'recordContentSource']">
 				<xsl:for-each select="mods:recordContentSource">
 					<xsl:element name="field">
 						<xsl:attribute name="name">mods_record_content_source</xsl:attribute>
@@ -318,10 +304,14 @@
 				</xsl:for-each>
 			</xsl:if>
 
+			<!-- accessCondition -->
+			<xsl:if test="local-name() = 'accessCondition'">
+				<xsl:call-template name="mods-accessCondition"/>
+			</xsl:if>
+		
 		</xsl:for-each>
 
 	</xsl:template>
-
 
 
 	<xsl:template match="mods:name" name="mods-name">
@@ -587,16 +577,12 @@
 			</xsl:when>
 		</xsl:choose>
 
-		<xsl:if test="mods:place/mods:placeTerm[@type='text']">
-			<xsl:element name="field">
-				<xsl:attribute name="name">mods_place</xsl:attribute>
-				<xsl:for-each select="mods:place/mods:placeTerm[@type='text']">
-					<xsl:if test=". != ''">
-						<xsl:value-of select="."/>
-					</xsl:if>
-				</xsl:for-each>
-			</xsl:element>
-		</xsl:if>
+    		<xsl:for-each select="mods:place/mods:placeTerm">
+      			<xsl:element name="field">
+              			<xsl:attribute name="name">mods_place</xsl:attribute>
+              			<xsl:value-of select="."/>
+      			</xsl:element>
+    		</xsl:for-each>
 
 		<xsl:if test="mods:publisher">
 			<xsl:element name="field">
@@ -812,5 +798,13 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template match="mods:accessCondition" name="mods-accessCondition">
+		<xsl:element name="field">
+			<xsl:attribute name="name">
+				<xsl:text>mods_accessCondition</xsl:text>
+			</xsl:attribute>
+			<xsl:value-of select="."/>
+		</xsl:element>
+	</xsl:template>
 
 </xsl:stylesheet>
