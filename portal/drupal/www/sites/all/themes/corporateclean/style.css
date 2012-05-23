@@ -12,6 +12,7 @@
 @import "css/biblio.css";
 @import "css/bookreader.css";
 @import "css/basket.css";
+@import "css/feedback.css";
 
 body {font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:75%; line-height:1.417; color:#fff; background-color:#38691f;}
 #page-wrapper {background:#fff url('images/bg-fish.jpg') no-repeat 50% 109px;}

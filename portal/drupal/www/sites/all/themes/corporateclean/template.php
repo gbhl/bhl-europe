@@ -131,6 +131,14 @@ function corporateclean_preprocess_html(&$vars) {
   // Set IE7 stylesheet
   $theme_path = base_path() . path_to_theme();
   $vars['ie7_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie7-fixes.css" />' . "\n";
+  
+}
+
+function corporateclean_js_alter(&$javascript) {
+  if ($_GET['q'] == 'node/22503') {
+    unset($javascript['sites/all/modules/it4care/selectmenu/js/jquery.ui.selectmenu/jquery.ui.selectmenu.js']);
+    unset($javascript['sites/all/modules/it4care/selectmenu/js/selectmenu.js']);
+  }
 }
 
 ?>
