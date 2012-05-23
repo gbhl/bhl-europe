@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package at.nhmwien.schema_mapping_tool.converter;
 
 import org.marc4j.MarcReader;
