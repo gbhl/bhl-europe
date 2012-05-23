@@ -156,7 +156,7 @@ COLLATE = utf8_general_ci;
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `pdf_info` (
   `pdf_info_id` INT NOT NULL AUTO_INCREMENT ,
-  `file_name` TEXT NOT NULL ,
+  `file_name` VARCHAR(255) NOT NULL ,
   `pdfFonts_info` TEXT NOT NULL ,
   `pdftk_info` TEXT NOT NULL ,
   PRIMARY KEY (`pdf_info_id`) ,

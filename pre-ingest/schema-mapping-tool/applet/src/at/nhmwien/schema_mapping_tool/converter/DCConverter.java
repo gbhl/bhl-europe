@@ -7,18 +7,18 @@ import java.io.InputStream;
  *
  * @author wkoller
  */
-public class MARCXMLConverter {
+public class DCConverter {
     public static void convertToMODS( File inputFile, File outputFile ) throws Exception {
-        // Now load the XSL from the internal resources
-        InputStream xslFile = MARCXMLConverter.class.getResourceAsStream( "resources/MARC21slim2MODS3-4.xsl" );
+        InputStream xslFile = MARCXMLConverter.class.getResourceAsStream( "resources/simpleDC2MODS.xsl" );
         XSLTransformer.transform(inputFile, outputFile, xslFile);
     }
-
+    
     public static void convertToOLEF( File inputFile, File outputFile ) throws Exception {
-        File tempFile = File.createTempFile( "smt_conversion_marcxmlOlef", ".tmp" );
-
+        File tempFile = File.createTempFile( "smt_conversion_dcOlef", ".tmp" );
+        
         // Finally do the conversion
-        MARCXMLConverter.convertToMODS(inputFile, tempFile);
+        DCConverter.convertToMODS(inputFile, tempFile);
         MODSConverter.convertToOLEF(tempFile, outputFile);
     }
+    
 }
