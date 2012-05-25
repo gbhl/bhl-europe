@@ -13,10 +13,12 @@
  * Implements hook_menu().
  */
 function i18n_field_menu() {
+  $items = array();
+
   // Ensure the following is not executed until field_bundles is working and
   // tables are updated. Needed to avoid errors on initial installation.
   if (!module_exists('field_ui') || defined('MAINTENANCE_MODE')) {
-    return;
+    return $items;
   }
 
   // Create tabs for all possible bundles. From field_ui_menu().

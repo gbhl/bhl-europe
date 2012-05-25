@@ -1,0 +1,45 @@
+<?php
+
+function bhle_feedback_webform_submission_insert($node, $submission) {
+  //dpm($node, 'node');
+  //dpm($submission, 'submission');
+  if (in_array($node->nid, array(22503))) {
+    $body = 'Posted by: ' . $submission->data[2]['value'][0] . '<br />';
+    $body .= $submission->data[3]['value'][0] . '<br />';
+    $body .= '------------------' . '<br />';
+    $body .= $submission->data[5]['value'][0] . '<br />';
+    $xml =
+      '<IssueEN>
+        <ProjectID>9</ProjectID>
+        <IssueSummary>' . $submission->data[4]['value'][0] . '</IssueSummary>
+        <IssueLongDesc>' . htmlspecialchars($body) . '</IssueLongDesc>
+        <ReportedBy>-1</ReportedBy>
+        <IssueType>19</IssueType>
+        <IssuePriority>1</IssuePriority>
+      </IssueEN>';
+
+    
+    //$gemini_url = 'http://10.0.0.108/api/issues.ashx/issuespartial';
+    //$gemini_user = base64_encode('manager');
+    
+    
+    $gemini_url = 'http://biodiversitylibrary.countersoft.net/api/issues.ashx/issuespartial';
+    $gemini_user = base64_encode('henning.scholz');
+    $gemini_token = base64_encode('d3r47fsrvz');
+
+    $client = new Zend_Http_Client();
+    $client->setUri($gemini_url);
+    $client->setMethod(Zend_Http_Client::POST);
+    // Set headers 
+    $client->setHeaders('Content-type', 'text/xml');
+    $client->setHeaders('Accept', 'application/json');
+
+    $client->setHeaders('gemini-username-token', $gemini_user);
+    $client->setHeaders('gemini-api-token', $gemini_token);
+    $client->setRawData($xml);
+    
+    $response = $client->request();
+    //dpm($client->getLastRequest());
+    //dpm(json_decode($response->getBody()));
+  }
+}

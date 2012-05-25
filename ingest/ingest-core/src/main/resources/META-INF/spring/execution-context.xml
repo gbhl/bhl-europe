@@ -11,8 +11,12 @@
 		class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
 
 	<bean id="jobLauncher"
-		class="org.springframework.batch.core.launch.support.SimpleJobLauncher"
-		p:jobRepository-ref="jobRepository" />
+		class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+		<property name="jobRepository" ref="jobRepository" />
+    	<property name="taskExecutor" ref="jobLauncherTaskExecutor" />
+   	</bean>
+    
+    	<bean id="jobLauncherTaskExecutor" class="org.springframework.core.task.SyncTaskExecutor"/>
 
 	<bean id="jobRepository"
 		class="org.springframework.batch.core.repository.support.MapJobRepositoryFactoryBean"

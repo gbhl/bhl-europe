@@ -9,6 +9,7 @@
  *
  */
 //dpm($rendered, 'rendered');
+global $language;
 ?>
 
 <p id="search-step-back-link">
@@ -17,7 +18,7 @@
 <div class="biblio-context-panel">
   <div class="collection-id">
     <p>
-      <label><?php print t('Collection'); ?>:</label> <a href="/collection/nbn" title="<?php print t('Collection'); ?>"><?php print $rendered['mods_record_content_source']; ?></a>
+      <label><?php print t('Collection'); ?>:</label> <a href="<?php print 'http://www.bhle.eu/en/partners'; ?>" target="_blank" title="<?php print t('Collection'); ?>"><?php print $rendered['mods_record_content_source']; ?></a>
     </p>
     <p>
       <label>ID:</label> <?php print $bid; ?>

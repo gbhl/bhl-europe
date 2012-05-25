@@ -36,13 +36,14 @@ if ($metadata_ws != "")
     // DIRECTORY NAME IS KEY TO GATHER
     $wsFile = clean_path($destDir."/metadata.ws");
     $metadataFile = clean_path($destDir."/metadata.xml");
-    $wsKey = $contentName;
-    $pos   = strrpos($wsKey,"/");
+    $wsKey = $contentDir;
     
+    // Check if we have a slash in the webservice name
+    $pos   = strrpos($wsKey,"/");
     if ($pos!==false)
     {
         $wsKey = substr($wsKey,$pos+1);
-        if ($wsKey=="") $wsKey = basename($contentName);    // nimmt auch /etc/  --> etc
+        if ($wsKey=="") $wsKey = basename($contentDir);    // nimmt auch /etc/  --> etc
     }
 
     $myURL = $metadata_ws.$wsKey;
@@ -70,12 +71,13 @@ if ($metadata_ws != "")
         // Check if we found some metadata content
         if( $metadataContent != null ) {
             // Extract metadata content and copy it over
-            $metadataDoc = new DOMDocument();
+            $metadataDoc = new DOMDocument('1.0');
+            $metadataDoc->formatOutput = true;
             $metadataContent = $metadataDoc->importNode($metadataContent, true);
             $metadataDoc->appendChild( $metadataContent );
 
             // Save metadata & remove webservice cached result
-            $metadataDoc->save($metadataFile);
+            file_put_contents($metadataFile, $metadataDoc->saveXML());
             unlink($wsFile);
 
             // Set new metadata-file as input

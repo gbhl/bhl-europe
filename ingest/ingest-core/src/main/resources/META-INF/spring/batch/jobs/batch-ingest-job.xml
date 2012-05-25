@@ -41,7 +41,7 @@
 	<job id="batchIngestJob">
 		<description>Batch Ingest</description>
 		<step id="ingest" next="activation">
-			<tasklet>
+			<tasklet task-executor="taskExecutor" throttle-limit="1">
 				<chunk reader="sipReader" writer="sipWriter" commit-interval="${batch.commit.interval}" />
 			</tasklet>
 		</step>
@@ -52,5 +52,6 @@
 			<listener ref="batchIngestListener" />
 		</listeners>
 	</job>
+	<beans:bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor"/>
 
 </beans:beans>

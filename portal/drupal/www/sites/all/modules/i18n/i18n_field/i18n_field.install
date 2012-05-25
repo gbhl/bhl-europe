@@ -41,7 +41,7 @@ function i18n_field_update_7000() {
     ->condition('type', 'field');
   foreach ($query->execute() as $string) {
     $string->textgroup = 'field';
-    list($bundle, $field) = split('-', $string->objectid);
+    list($bundle, $field) = explode('-', $string->objectid);
     $string->type = $field;
     $string->objectid = $bundle;
     $string->property = str_replace('widget_', '', $string->property);

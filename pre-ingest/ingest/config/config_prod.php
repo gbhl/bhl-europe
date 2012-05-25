@@ -124,7 +124,7 @@ define("_PDFFONTS",                 _XPDF_ABS.'pdffonts');
  * PDFTK Paths & Parameters 
  */
 define("_PDFTK",                    '/usr/bin/pdftk');
-define("_PDFTK_DATA",               'dump_data_utf8');
+define("_PDFTK_DATA",               'dump_data');
 
 // ----------------------
 // ---- OCR SPECIFIC ----

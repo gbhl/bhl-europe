@@ -7,6 +7,10 @@
 //echo "Timing (s): " . ($end - $start);
 // END TEST CODE
 
+define( 'BHLE_NAMES_LOOKUP_COL_ANNUAL', 'http://www.catalogueoflife.org/annual-checklist/col/' );
+define( 'BHLE_NAMES_LOOKUP_COL_DYNAMICALLY', 'http://webservice.catalogueoflife.org/' );
+define( 'BHLE_NAMES_LOOKUP_PESI', 'http://www.eu-nomen.eu/portal/soap.php?wsdl=1' );
+
 /**
  * PUBLIC INTERFACE FUNCTIONS START
  */
@@ -56,7 +60,7 @@ function names_lookup_common_name_col( $common_name ) {
     $common_name = str_replace( "*", "%", $common_name );
     $accepted_names = array();
     
-    $col_base = "http://www.catalogueoflife.org/annual-checklist/col/webservice?response=full&format=php&name=";
+    $col_base = variable_get( 'names_lookup_col_webservice_instance', BHLE_NAMES_LOOKUP_COL_DYNAMICALLY ) . 'webservice?response=full&format=php&name=';
     
     // Send the request to the webserver
     $response = _names_lookup_webservice_request( $common_name, $col_base . urlencode($common_name) );
@@ -140,7 +144,7 @@ function names_lookup_synonyms_col( $scientific_name ) {
     $scientific_name = str_replace( "*", "%", $scientific_name );
     $synonym_names = array();
     
-    $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&name=";
+    $col_base = variable_get( 'names_lookup_col_webservice_instance', BHLE_NAMES_LOOKUP_COL_DYNAMICALLY ) . 'webservice?response=full&format=php&name=';
     
     // Send the request to the webserver
     $response = _names_lookup_webservice_request( $scientific_name, $col_base . urlencode($scientific_name) );
@@ -191,7 +195,7 @@ function names_lookup_accepted_col( $scientific_name ) {
     $scientific_name = str_replace( "*", "%", $scientific_name );
     $synonym_names = array();
     
-    $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&name=";
+    $col_base = variable_get( 'names_lookup_col_webservice_instance', BHLE_NAMES_LOOKUP_COL_DYNAMICALLY ) . 'webservice?response=full&format=php&name=';
     
     // Send the request to the webserver
     $response = _names_lookup_webservice_request( $scientific_name, $col_base . urlencode($scientific_name) );
@@ -217,7 +221,7 @@ function names_lookup_accepted_col( $scientific_name ) {
                 // Check for a valid synonym-id
                 if( $sn_id <= 0 ) continue;
                 
-                $col_base = "http://www.catalogueoflife.org/col/webservice?response=full&format=php&id=";
+                $col_base = variable_get( 'names_lookup_col_webservice_instance', BHLE_NAMES_LOOKUP_COL_DYNAMICALLY ) . 'webservice?response=full&format=php&id=';
                 $response = _names_lookup_webservice_request( $sn_id, $col_base . urlencode($sn_id) );
             }
         }
@@ -277,7 +281,7 @@ function _names_lookup_soap_cache( $function_name, $parameter ) {
         $response = unserialize($cache_result->data);
     } else {
         try {
-            $soapClient = new SoapClient( "http://www.eu-nomen.eu/portal/soap.php?wsdl=1" );
+            $soapClient = new SoapClient( BHLE_NAMES_LOOKUP_PESI );
             $response = $soapClient->$function_name( $parameter );
 
             // Cache the result
@@ -338,6 +342,19 @@ function names_lookup_config_form($form, &$form_state) {
         '#maxlength' => 3,
         '#description' => t('The maximum age of a cached entry.'),
         '#required' => TRUE,
+    );
+
+    $form['names_lookup_col_webservice_instance'] = array(
+        '#type' => 'select',
+        '#title' => t('Select the CoL webservice instance you would like to use'),
+        '#default_value' => "",
+        '#description' => t('Select one of the two CoL webservice instances you would like to use for querying.'),
+        '#required' => TRUE,
+        '#options' => array(
+            BHLE_NAMES_LOOKUP_COL_DYNAMICALLY => t( 'dynamically updated edition' ),
+            BHLE_NAMES_LOOKUP_COL_ANNUAL => t( 'annual checklist service' ),
+        ),
+        '#default_value' => variable_get( 'names_lookup_col_webservice_instance', BHLE_NAMES_LOOKUP_COL_DYNAMICALLY ),
     );
 
     $form['names_lookup_sample_query'] = array(

@@ -2,15 +2,11 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-CREATE SCHEMA IF NOT EXISTS `int_pi_pi` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-USE `int_pi_pi` ;
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`users`
+-- Table `users`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`users` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`users` (
+CREATE  TABLE IF NOT EXISTS `users` (
   `user_id` INT UNSIGNED NOT NULL ,
   `user_name` VARCHAR(45) NULL ,
   `user_pwd` VARCHAR(45) NULL ,
@@ -30,11 +26,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`ingest_log`
+-- Table `ingest_log`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`ingest_log` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingest_log` (
+CREATE  TABLE IF NOT EXISTS `ingest_log` (
   `log_id` INT UNSIGNED NOT NULL ,
   `ingest_id` INT UNSIGNED NULL ,
   `log_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ,
@@ -46,11 +40,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`ingest_structure`
+-- Table `ingest_structure`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`ingest_structure` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingest_structure` (
+CREATE  TABLE IF NOT EXISTS `ingest_structure` (
   `ingest_structure_id` INT UNSIGNED NOT NULL ,
   `ingest_id` INT UNSIGNED NULL ,
   `ingest_structure` MEDIUMTEXT NULL ,
@@ -63,11 +55,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`ingests`
+-- Table `ingests`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`ingests` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`ingests` (
+CREATE  TABLE IF NOT EXISTS `ingests` (
   `ingest_id` INT UNSIGNED NOT NULL ,
   `content_id` INT UNSIGNED NULL ,
   `user_id` INT UNSIGNED NULL ,
@@ -87,11 +77,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`content`
+-- Table `content`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`content` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`content` (
+CREATE  TABLE IF NOT EXISTS `content` (
   `content_id` INT UNSIGNED NOT NULL ,
   `content_root` VARCHAR(1024) NULL ,
   `content_name` VARCHAR(255) NULL ,
@@ -118,11 +106,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`user_session`
+-- Table `user_session`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`user_session` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`user_session` (
+CREATE  TABLE IF NOT EXISTS `user_session` (
   `session_id` INT UNSIGNED NOT NULL ,
   `session_id_raw` VARCHAR(255) NULL ,
   `user_id` INT UNSIGNED NOT NULL ,
@@ -134,11 +120,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`content_guid`
+-- Table `content_guid`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`content_guid` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`content_guid` (
+CREATE  TABLE IF NOT EXISTS `content_guid` (
   `content_id` INT UNSIGNED NOT NULL ,
   `guid` VARCHAR(255) NOT NULL ,
   `released` DATETIME NOT NULL ,
@@ -150,11 +134,9 @@ COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
--- Table `int_pi_pi`.`page_object`
+-- Table `page_object`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `int_pi_pi`.`page_object` ;
-
-CREATE  TABLE IF NOT EXISTS `int_pi_pi`.`page_object` (
+CREATE  TABLE IF NOT EXISTS `page_object` (
   `page_id` BIGINT UNSIGNED NOT NULL ,
   `content_id` INT UNSIGNED NULL ,
   `page_type` VARCHAR(100) NULL ,
@@ -169,20 +151,22 @@ DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
 
+-- -----------------------------------------------------
+-- Table `pdf_info`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `pdf_info` (
+  `pdf_info_id` INT NOT NULL AUTO_INCREMENT ,
+  `file_name` VARCHAR(255) NOT NULL ,
+  `pdfFonts_info` TEXT NOT NULL ,
+  `pdftk_info` TEXT NOT NULL ,
+  PRIMARY KEY (`pdf_info_id`) ,
+  UNIQUE INDEX `file_name_UNIQUE` (`file_name` ASC) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-
--- -----------------------------------------------------
--- Data for table `int_pi_pi`.`users`
--- -----------------------------------------------------
-SET AUTOCOMMIT=0;
-USE `int_pi_pi`;
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('1', 'mehrrath', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL, NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('2', 'nhmw', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'at-nhmw', 'nhmw', '1', NULL, NULL, NULL, '1', NULL, NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('5', 'nbgb', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'be-nbgb/Upload_20110930', 'nbgb', '1', NULL, '-m c -cm 4 -if <input_file> -of <output_file> -ife ISO-8859-15', 'The metadata looks fine, all plain MARC21 records which convert fine.', '1', NULL, NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('4', 'admin', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', 'testdata/spices_prepared', 'admin', '1', NULL, '-m c -cm 5 -if <input_file> -of <output_file>', 'The metadata looks fine, all plain MARC21 records which convert fine.', '0', NULL, NULL);
-INSERT INTO `int_pi_pi`.`users` (`user_id`, `user_name`, `user_pwd`, `user_content_home`, `user_content_id`, `is_admin`, `user_config`, `user_config_smt`, `user_memo`, `queue_mode`, `metadata_ws`, `default_ipr`) VALUES ('3', 'test', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-
-COMMIT;

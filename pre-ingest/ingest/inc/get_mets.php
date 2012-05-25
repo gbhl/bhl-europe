@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    05.11.2011                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 // CREATE METS CONTROL FILES FOR INGEST
 // ********************************************
@@ -153,13 +154,20 @@ if (file_exists($olef_file))
         $ingestReady = false;
         $stepErrors = true;
     }
-    else
+    else {
         $stepFinished = true;
+        $ingestReady = true;
+    }
 
     echo "\n\n</pre>\n";
 }
-else
-    $stepErrors = true;
-
-
-?>
+// Check if we have an empty dir (e.g. for section level)
+else if( is_dir_empty($contentDir,true) ) {
+    $stepFinished = true;
+    $ingestReady = false;
+    
+}
+else {
+    $stepFinished = false;
+    $ingestReady = false;
+}

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 	<!--
 	    Version 1.0 created 2006-11-01 by Clay Redding <cred@loc.gov>
 	    
@@ -25,12 +25,12 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sru_dc="info:srw/schema/1/dc-schema" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" exclude-result-prefixes="sru_dc oai_dc dc" version="1.0">
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
-    <xsl:include href="inc/dcmiType.xsl"/>
-    <xsl:include href="inc/mimeType.xsl"/>
-    <xsl:include href="inc/csdgm.xsl"/>
-    <xsl:include href="inc/forms.xsl"/>
-    <xsl:include href="inc/iso3166-1.xsl"/>
-    <xsl:include href="inc/iso639-2.xsl"/>
+    <xsl:include href="http://www.loc.gov/standards/mods/inc/dcmiType.xsl"/>
+    <xsl:include href="http://www.loc.gov/standards/mods/inc/mimeType.xsl"/>
+    <xsl:include href="http://www.loc.gov/standards/mods/inc/csdgm.xsl"/>
+    <xsl:include href="http://www.loc.gov/standards/mods/inc/forms.xsl"/>
+    <xsl:include href="http://www.loc.gov/standards/mods/inc/iso3166-1.xsl"/>
+    <xsl:include href="http://www.loc.gov/standards/mods/inc/iso639-2.xsl"/>
     <!-- Do you have a Handle server?  If so, specify the base URI below including the trailing slash a la: http://hdl.loc.gov/ -->
     <xsl:variable name="handleServer">
 		<xsl:text>http://hdl.loc.gov/</xsl:text>

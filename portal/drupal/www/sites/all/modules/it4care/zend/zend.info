@@ -1,0 +1,14 @@
+name = Zend Framework
+description = Ensures that the Zend Framework is installed.
+package = Zend Framework
+core = 7.x
+files[] = zend.module
+files[] = zend.admin.inc
+configure = admin/config/development/zend
+
+; Information added by drupal.org packaging script on 2011-05-14
+version = "7.x-1.0-beta1"
+core = "7.x"
+project = "zend"
+datestamp = "1305395217"
+

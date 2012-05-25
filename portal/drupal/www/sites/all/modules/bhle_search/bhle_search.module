@@ -32,7 +32,6 @@
  */
 $bhle_search_module_path = drupal_get_path('module', 'bhle_search');
 require_once ($bhle_search_module_path .'/bhle_search.querystore.inc');
-require_once ($bhle_search_module_path .'/bhle_search.block.inc');
 
 /*
  * Pre-defined variables (note: defaults are based on Solr's default schema)
@@ -1506,12 +1505,6 @@ function bhle_search_block_info() {
         'info' => t('BHL-E Facet list advanced'),
         'cache' => DRUPAL_NO_CACHE,
     );
-    $blocks['top_menue'] = array(
-            'info' => t('BHL-E Top menu'),
-            'visibility' => BLOCK_VISIBILITY_NOTLISTED,
-            'pages' => '<front>',
-            'cache' => DRUPAL_CACHE_GLOBAL,
-    );
     return $blocks;
 }
 
@@ -1549,17 +1542,75 @@ function bhle_search_block_view($delta = '') {
                 );
             }
             break;
-        case 'top_menue':
-            return bhle_search_block_view_top_menue();
-            break;
+
+        case 'simple_facet':
+//           global $bhle_facet;
+//           $block['subject'] = t('Facet list');
+//           $block['content']['#type'] = 'markup';
+//           $block['content']['#markup'] = '';
+//           if(is_array($bhle_facet)) {
+//             $block['content']['#markup'] .= '<p id="facet-list-grip-multiple" class="collapsing-multiple-grip">' . t('Collapse / expand all') . '</p>';
+//             $block['content']['#markup'] .= '<div class="facet-list collapsing-multiple">';
+//             foreach($bhle_facet['fields'] as $field_name => $field) {
+//               $block['content']['#markup'] .= '<div class="facet-item"><h3 class="collapsing-grip"><a href="#">' . $field['#title'] . '</a></h3>';
+//               $block['content']['#markup'] .= '<ul class="collapsing-content">';
+//               foreach($field as $key => $val) {
+//                 if (is_numeric($key)) {
+//                   $source = 'simple';
+//                   if(!$val['#label']) {
+//                     $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+//                     $block['content']['#markup'] .= '<li><span class="value">' . t('Not set') . ':' . ' ' . $val['#count'] . '</span></li>'; // TODO: use theme_list
+//                   } else {
+//                     $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+//                     $block['content']['#markup'] .= '<li>' . l($val['#label'] . ':', 'search/bhle/empty', $params) . ' <span class="value">' . $val['#count'] . '</span></li>'; // TODO: use theme_list
+//                   }
+//                   unset($delete);
+//                 }
+//               }
+//               $block['content']['#markup'] .= '</ul></div>';
+//             }
+//             $block['content']['#markup'] .= '</div>';
+//           }
+//           break;
         case 'advanced_facet':
           global $bhle_facet;
-          bhle_search_block_view_advanced_facet($bhle_facet);
+          $block['subject'] = t('Facet list');
+          $block['content']['#type'] = 'markup';
+          $block['content']['#markup'] = '';
+          if(is_array($bhle_facet)) {
+            $block['content']['#markup'] .= '<p id="facet-list-grip-multiple" class="collapsing-multiple-grip">' . t('Collapse / expand all') . '</p>';
+            $block['content']['#markup'] .= '<div class="facet-list collapsing-multiple">';
+            foreach($bhle_facet['fields'] as $field_name => $field) {
+              $block['content']['#markup'] .= '<div class="facet-item"><h3 class="collapsing-grip"><a href="#">' . $field['#title'] . '</a></h3>';
+              $block['content']['#markup'] .= '<ul class="collapsing-content">';
+              foreach($field as $key => $val) {
+                if (is_numeric($key)) {
+                  $source = 'advanced';
+                  foreach($_SESSION['bhle_search']['conditions'] as $condition) {
+                    if ($condition['field'] == str_replace('__facet', '', $field_name) &&
+                         ($condition['term'] == $val['#label'] || bhle_search_solr_escape($condition['term']) == $val['#label'] || $condition['term'] == bhle_search_solr_escape($val['#label']))
+                       ) {
+                      $delete = TRUE;
+                    }
+                  }
+                  if($delete) {
+                    $params = array('query' => array('action' => 'removefacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+                    $block['content']['#markup'] .= '<li>' . l(t('REMOVE:'), 'search/bhle/empty', $params) . ' <span class="value">' . $val['#label'] . '</span></li>';
+                  } elseif(!$val['#label']) {
+                    $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+                    $block['content']['#markup'] .= '<li><span class="value">' . t('Not set') . ':' . ' ' . $val['#count'] . '</span></li>'; // TODO: use theme_list
+                  } else {
+                    $params = array('query' => array('action' => 'addfacet', 'field' => $field_name, 'key' => $key, 'source' => $source, 'last' => md5(time())));
+                    $block['content']['#markup'] .= '<li>' . l($val['#label'] . ':', 'search/bhle/empty', $params) . ' <span class="value">' . $val['#count'] . '</span></li>'; // TODO: use theme_list
+                  }
+                  unset($delete);
+                }
+              }
+              $block['content']['#markup'] .= '</ul></div>';
+            }
+            $block['content']['#markup'] .= '</div>';
+          }
           break;
-          //         case 'simple_facet':
-          //           global $bhle_facet;
-          //           bhle_search_block_view_simple_facet($bhle_facet);
-          //           break;
     }
 
     return $block;

@@ -261,3 +261,22 @@ function i18n_variable_del($name, $langcode) {
   variable_store_del('language', $langcode, $name);
   variable_realm_del('language', $langcode, $name);
 }
+
+/**
+ * Implements hook_module_implements_alter().
+ *
+ * Move i18n_variable_form_alter() to the end of the list to
+ * translate variables added while hook_form_alter().
+ *
+ * @param $implementations
+ *   All implementations of the given hook.
+ * @param $hook
+ *   Name of the hook.
+ */
+function i18n_variable_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'form_alter') {
+    $group = $implementations['i18n_variable'];
+    unset($implementations['i18n_variable']);
+    $implementations['i18n_variable'] = $group;
+  }
+}

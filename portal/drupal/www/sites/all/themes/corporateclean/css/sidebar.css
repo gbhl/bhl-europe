@@ -35,6 +35,7 @@
 	padding: 5px 13px 0px 13px;
 	width: 250px; min-height:50px; color: #000;
 	overflow: hidden;
+	border-bottom:1px solid #aad472; /*-IE8 fix*/
 
 	background: rgb(222,239,201); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -57,7 +58,7 @@ background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIH
 }
 .sidebar-panel.search-summary-sidebar #edit-search a {
   padding:5px 34px 5px 5px; display:block;
-  color: #006626; font-weight:bold;    font-size:91.7%;
+  color: #006626; font-weight:bold; text-transform:uppercase;    font-size:91.7%;
   background: transparent url('../images/icon-editsearch.png') no-repeat right bottom;
 }
 .sidebar-panel.search-summary-sidebar #edit-search a.expand {background-position:right top;}

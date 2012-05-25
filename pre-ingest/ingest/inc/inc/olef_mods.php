@@ -61,9 +61,8 @@ if (!file_content_exists($olef_file,"accessCondition",true,true))
         @$domDoc->load($olef_file);
 
         // ADD NODE     mods:accessCondition to bibliographicInformation
-        $node2 = $domDoc->createElement("mods:accessCondition",$arrContentDetails['content_ipr']);
-        $node2->setAttribute("xmlns:mods",   "http://www.loc.gov/mods/v3");
-        $node2->setAttribute("type",         "use and reproduction");
+        $node2 = $domDoc->createElementNS('http://www.loc.gov/mods/v3', 'mods:accessCondition', $arrContentDetails['content_ipr'] );
+        $node2->setAttributeNS('http://www.loc.gov/mods/v3', 'type', 'use and reproduction' );
 
         $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
@@ -118,18 +117,8 @@ else {
     else {
         $biNode = $biNodes->item(0);
         
-        // Find the first sub-entry to find the mods namespace-uri
-        $biNodeChilds = $biNode->childNodes;
-        $modsNS = 'http://www.loc.gov/mods/v3';     // Default namespace, but mustn't be the correct one (due to versioning)
-        for( $i = 0; $i < $biNodeChilds->length; $i++ ) {
-            $biNodeChild = $biNodeChilds->item($i);
-            if( $biNodeChild->nodeType == XML_ELEMENT_NODE ) {
-                $modsNS = $biNodeChild->namespaceURI;
-                break;
-            }
-        }
-        
         // Try to find existing recordContentSource entry
+        $modsNS = 'http://www.loc.gov/mods/v3';     // Default mods namespace
         $bRcsEntryFound = false;
         $rcsNodes = $domDoc->getElementsByTagNameNS($modsNS, 'recordContentSource');
         for( $i = 0; $i < $rcsNodes->length; $i++ ) {

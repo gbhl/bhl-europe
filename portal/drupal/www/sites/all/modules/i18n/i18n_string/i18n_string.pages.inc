@@ -122,7 +122,6 @@ function i18n_string_translate_page_form($form, &$form_state, $strings, $langcod
         '#title' => $title,
         '#type' => 'fieldset',
       ) + i18n_string_translate_page_form_strings($strings[$key], $langcode);
-      $form['string_list']['#value'] += $strings[$key];
     }
   }
   else {
@@ -199,7 +198,8 @@ function i18n_string_translate_page_form_strings($strings, $langcode) {
       //'#i18n_string_format' => $source ? $source->format : 0,
       // If disabled, provide smaller textarea (that can be expanded anyway).
       '#rows' => $disabled ? 1 : min(ceil(str_word_count($default_value) / 12), 10),
-      '#parents' => array('strings', $item->get_name()),
+      // Change the parent for disabled strings so we don't get empty values later
+      '#parents' => array($disabled ? 'disabled_strings': 'strings', $item->get_name()),
     );
   }
   return $form;

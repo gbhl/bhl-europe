@@ -38,7 +38,8 @@ public class RealTimeLogBackContentProvider implements ContentProvider {
 		String content = "";
 
 		if (randomFile == null) {
-			return content;
+			//return content;
+                              return "can not open log file";
 		}
 
 		try {

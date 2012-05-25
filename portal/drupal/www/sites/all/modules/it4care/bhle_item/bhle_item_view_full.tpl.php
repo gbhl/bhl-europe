@@ -10,7 +10,7 @@
  *
  */
 unset($item->olef_scientific_name);
-dpm($item);
+//dpm($item);
 //dpm($rendered);
 ?>
 <!-- bhle item template -->
