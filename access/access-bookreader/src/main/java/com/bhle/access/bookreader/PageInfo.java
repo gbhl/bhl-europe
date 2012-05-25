@@ -3,17 +3,18 @@ package com.bhle.access.bookreader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PageInfo implements Comparable<PageInfo>{
+public class PageInfo implements Comparable<PageInfo> {
 	private String name;
 	private int index;
-	
+	private String type;
+
 	private int width;
 	private int height;
-	
+
 	private String url;
-	
+
 	private String ocrUrl;
-	
+
 	private List<String> scientificNames = new ArrayList<String>();
 
 	public String getName() {
@@ -48,7 +49,6 @@ public class PageInfo implements Comparable<PageInfo>{
 		this.height = height;
 	}
 
-
 	public String getUrl() {
 		return url;
 	}
@@ -76,4 +76,13 @@ public class PageInfo implements Comparable<PageInfo>{
 	public void setOcrUrl(String ocrUrl) {
 		this.ocrUrl = ocrUrl;
 	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 }

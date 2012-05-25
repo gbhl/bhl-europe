@@ -156,8 +156,12 @@ BookReader.prototype.init = function() {
     this.pageScale = this.reduce; // preserve current reduce
     
     // Find start index and mode if set in location hash
+    console.log(parent.frames.length);
     var params = {};
-    if (window.location.hash) {
+    // BookReader is embedded in a parent window
+    if (parent.frames.length != 0 && parent.location.hash) {
+    	params = this.paramsFromFragment(parent.location.hash);
+    } else if (window.location.hash) {
         // params explicitly set in URL
         params = this.paramsFromFragment(window.location.hash);
     } else {
@@ -4642,7 +4646,10 @@ BookReader.prototype.getPageName = function(index) {
 BookReader.prototype.updateLocationHash = function() {
     var newHash = '#' + this.fragmentFromParams(this.paramsFromCurrent());
     window.location.replace(newHash);
-    
+    //If parent window exists, also update hash in parent window
+    if (parent.frames.length != 0) {
+    	parent.location.hash = newHash;
+    }
     // This is the variable checked in the timer. Only user-generated changes
     // to the URL will trigger the event.
     this.oldLocationHash = newHash;

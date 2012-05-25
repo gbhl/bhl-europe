@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>List of Entries</h1>
-	
+
 		<h2>Items</h2>
 		<li>
 			List of items/derivatives: 
@@ -15,12 +15,12 @@
 			List datastreams: ./items/<input /><button>Go</button>
 		</li>
 		<li>List datastreams: ./items/<input />/<input /><button>Go</button> or ./items/{guid}/{datastream_id}/{serialnumber}</li>
-		
+
 		<h2>BookReader</h2>
 		<li>
 			Open Book Reader: ./stream/<input /><button>Go</button>
 		</li>
-		
+
 		<h2>Download</h2>
 			<li>PDF: ./download/{guid}/pdf?ranges={ranges}&resolution={resolution}</li>
 			<li>JPEG (in zip): ./download/{guid}/jpg?ranges={ranges}&resolution={resolution}</li>

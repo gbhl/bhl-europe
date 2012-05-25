@@ -22,6 +22,8 @@ import org.springframework.stereotype.Component;
 import com.bhle.access.convert.ConverterManager;
 import com.bhle.access.feed.AtomFactory;
 import com.bhle.access.storage.StorageService;
+import com.bhle.access.util.FedoraURI;
+import com.bhle.access.util.FedoraUtil;
 import com.sun.jersey.api.NotFoundException;
 
 @Component
@@ -104,5 +106,19 @@ public class Items {
 			e.printStackTrace();
 			throw new NotFoundException();
 		}
+	}
+	
+	@GET
+	@Path("{guid}/members")
+	public Response getMembers(@PathParam("guid") String guid){
+		String result = FedoraUtil.getAllMembersExceptPage(FedoraURI.getPidFromGuid(guid));
+		return Response.ok(result).build();
+	}
+	
+	@GET
+	@Path("{guid}/parent")
+	public Response getParent(@PathParam("guid") String guid){
+		String result = FedoraUtil.getParent(FedoraURI.getPidFromGuid(guid));
+		return Response.ok(result).build();
 	}
 }

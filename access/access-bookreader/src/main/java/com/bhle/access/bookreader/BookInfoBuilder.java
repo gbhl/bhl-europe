@@ -87,6 +87,7 @@ public class BookInfoBuilder {
 			PageInfo page = new PageInfo();
 			page.setIndex(i);
 			page.setName(olef.getPageName(i));
+			page.setType(olef.getPageType(i));
 			setPageUrl(pageUris[i], page);
 			setPageWidthAndHeight(pageUris[i], page);
 			page.setScientificNames(olef.getScientificNames(i));

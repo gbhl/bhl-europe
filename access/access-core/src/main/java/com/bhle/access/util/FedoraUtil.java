@@ -156,6 +156,44 @@ public class FedoraUtil {
 		}
 		return null;
 	}
+	
+	public static String getAllMembersExceptPage(String pid) {
+		String query = "select $object from <#ri> "
+				+ "where $object <fedora-rels-ext:isMemberOf> <fedora:" + pid
+				+ "> " + "minus $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:pageCModel";
+		
+		try {
+			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
+					.lang("itql").format("csv").type("tuples").execute(client);
+			String csv = IOUtils.toString(riSearchResponse
+					.getEntityInputStream());
+			return csv;
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static String getParent(String pid) {
+		String query = "select $object from <#ri> "
+				+ "where <fedora:" + pid
+				+ "> <fedora-rels-ext:isMemberOf> $object";
+		
+		try {
+			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
+					.lang("itql").format("csv").type("tuples").execute(client);
+			String csv = IOUtils.toString(riSearchResponse
+					.getEntityInputStream());
+			return csv;
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 	public static Date getLastModifiedDate(String pid) {
 		try {

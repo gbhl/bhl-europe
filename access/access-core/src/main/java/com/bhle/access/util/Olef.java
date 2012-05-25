@@ -63,10 +63,16 @@ public class Olef {
 				"//olef:itemInformation/olef:files/olef:file[" + (i + 1)
 						+ "]/olef:pages/olef:page/olef:name/text()",
 				XPathConstants.STRING);
-		if (pageName == null || pageName.equals("")) {
-			pageName = String.valueOf(i + 1);
-		}
 		return pageName;
+	}
+
+	public String getPageType(int i) {
+		// TODO need more spec
+		String pageType = (String) evaluateXpath(
+				"//olef:itemInformation/olef:files/olef:file[" + (i + 1)
+						+ "]/olef:pages/olef:page/@pageType",
+				XPathConstants.STRING);
+		return pageType;
 	}
 
 	public List<String> getScientificNames(int i) {
