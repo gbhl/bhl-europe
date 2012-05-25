@@ -570,8 +570,12 @@
 
    <field name="PID" type="string" indexed="true" stored="true" required="true" />
 
+   <!-- identifiers -->
+   
    <field name="mods_identifier" type="string" indexed="true" stored="true" required="false" multiValued="true" />
-
+   <field name="olef_guid" type="string" indexed="true" stored="true" required="true" />
+   <field name="olef_parentGUID" type="string" indexed="true" stored="true" required="false" />
+   
    <!--
       catchall text fields
    -->
