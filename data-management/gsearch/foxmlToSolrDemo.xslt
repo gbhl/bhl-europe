@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- $Id: foxmlToSolr.xslt $ -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:exts="xalan://dk.defxws.fedoragsearch.server.GenericOperationsImpl"
@@ -154,6 +154,18 @@
 					<xsl:value-of select="." />
 				</xsl:element>
 			</xsl:for-each>
+		</xsl:for-each>
+		<xsl:for-each select="olef:element/olef:guid">
+			<xsl:element name="field">
+				<xsl:attribute name="name">olef_guid</xsl:attribute>
+				<xsl:value-of select="."/>
+			</xsl:element>
+		</xsl:for-each>
+		<xsl:for-each select="olef:element/olef:parentGUID">
+			<xsl:element name="field">
+				<xsl:attribute name="name">olef_parentGUID</xsl:attribute>
+				<xsl:value-of select="."/>
+			</xsl:element>
 		</xsl:for-each>
 		<!-- As soon as OLEF content from Pre-ingest is coming, we will activate this rule -->
 		<!--<xsl:element name="field">
