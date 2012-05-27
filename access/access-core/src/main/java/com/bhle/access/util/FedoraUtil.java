@@ -124,7 +124,7 @@ public class FedoraUtil {
 		String query = "select $object from <#ri> "
 				+ "where ($object <fedora-rels-ext:isMemberOf> <fedora:" + pid
 				+ "> " + "or $object <dc:identifier> " + "'" + pid + "')";
-		
+
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
 					.lang("itql").format("csv").type("tuples").execute(client);
@@ -156,12 +156,14 @@ public class FedoraUtil {
 		}
 		return null;
 	}
-	
+
 	public static String getAllMembersExceptPage(String pid) {
 		String query = "select $object from <#ri> "
-				+ "where $object <fedora-rels-ext:isMemberOf> <fedora:" + pid
-				+ "> " + "minus $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:pageCModel";
-		
+				+ "where $object <fedora-rels-ext:isMemberOf> <fedora:"
+				+ pid
+				+ "> "
+				+ "minus $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:pageCModel>";
+
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
 					.lang("itql").format("csv").type("tuples").execute(client);
@@ -175,18 +177,40 @@ public class FedoraUtil {
 		}
 		return null;
 	}
-	
+
 	public static String getParent(String pid) {
-		String query = "select $object from <#ri> "
-				+ "where <fedora:" + pid
+		String query = "select $object from <#ri> " + "where <fedora:" + pid
 				+ "> <fedora-rels-ext:isMemberOf> $object";
-		
+
 		try {
 			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
 					.lang("itql").format("csv").type("tuples").execute(client);
 			String csv = IOUtils.toString(riSearchResponse
 					.getEntityInputStream());
 			return csv;
+		} catch (FedoraClientException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static String[] getAllBookObjects() {
+		String query = "select $object from <#ri> "
+				+ "where $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:monographCModel> "
+				+ "or $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:serialCModel> "
+				+ "or $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:sectionCModel> "
+				+ "or $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:volumeCModel> "
+				+ "or $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:chapterCModel> "
+				+ "or $object <fedora-model:hasModel> <info:fedora/bhle-cmodel:articleCModel>";
+
+		try {
+			RiSearchResponse riSearchResponse = FedoraClient.riSearch(query)
+					.lang("itql").format("csv").type("tuples").execute(client);
+			String csv = IOUtils.toString(riSearchResponse
+					.getEntityInputStream());
+			return CsvUtil.readOneColumnCsv(csv);
 		} catch (FedoraClientException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

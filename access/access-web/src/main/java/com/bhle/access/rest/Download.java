@@ -18,8 +18,6 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.StreamingOutput;
 
 import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bhle.access.bookreader.ThumbnailBuilder;
@@ -37,9 +35,6 @@ import com.sun.jersey.api.NotFoundException;
 
 @Path("download")
 public class Download {
-
-	private static final Logger logger = LoggerFactory
-			.getLogger(Download.class);
 
 	private static PageURIExtractor PID_EXTRACTOR = new PageURIExtractorImpl();
 
@@ -72,7 +67,6 @@ public class Download {
 			@DefaultValue("medium") @FormParam("resolution") Resolution resolution,
 			@FormParam("email") String email) {
 		String[] pageURIs = PID_EXTRACTOR.getPageURIs(guid, ranges);
-		logger.info(ranges);
 		downloadGateway.download(new OfflineDownloadRequest(ContentType.PDF,
 				pageURIs, resolution, email));
 		return Response.ok().build();
@@ -123,8 +117,6 @@ public class Download {
 	@Path("offline")
 	public Response offlineDownload(@QueryParam("path") String path) {
 
-		logger.info(path);
-
 		String plainText = DownloadLocationHelper.decrypt(path);
 		String[] parts = plainText.split("/");
 		if (parts.length != 2) {
@@ -132,8 +124,6 @@ public class Download {
 		}
 		String email = parts[0];
 		String filename = parts[1];
-
-		logger.info("{} {}", email, filename);
 
 		try {
 			final OfflineDownloadResponse response = downloadResponseFetcher

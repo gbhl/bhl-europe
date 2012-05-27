@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns="http://www.springframework.org/schema/batch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/batch
+                           http://www.springframework.org/schema/batch/spring-batch-2.1.xsd">
+
+	<beans:bean id="allBookObjectReader" class="com.bhle.access.batch.AllBookObjectReader" />
+
+	<beans:bean id="derivativeGenerationJobCreator"
+		class="com.bhle.access.batch.DerivativeGenerationJobCreator"
+		p:jobLocator-ref="jobRegistry" p:jobLauncher-ref="jobLauncher" />
+
+	<job id="generateAllDerivatives">
+		<step id="createJobsForAllBooks">
+			<tasklet>
+				<chunk reader="allBookObjectReader" writer="derivativeGenerationJobCreator"
+					commit-interval="1" />
+			</tasklet>
+		</step>
+	</job>
+
+</beans:beans>

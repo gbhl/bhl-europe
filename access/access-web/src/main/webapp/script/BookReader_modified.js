@@ -156,7 +156,7 @@ BookReader.prototype.init = function() {
     this.pageScale = this.reduce; // preserve current reduce
     
     // Find start index and mode if set in location hash
-    console.log(parent.frames.length);
+    // console.log(parent.frames.length);
     var params = {};
     // BookReader is embedded in a parent window
     if (parent.frames.length != 0 && parent.location.hash) {

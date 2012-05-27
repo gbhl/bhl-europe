@@ -6,6 +6,32 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<bean class="com.bhle.access.batch.resume.JobExecutionResumer" />
+	<bean id="jobExecutionResumer" class="com.bhle.access.batch.resume.JobExecutionResumer" />
+
+	<bean id="timerFactory" class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref bean="scheduledTask" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="jobExecutionResumerTask"
+		class="org.springframework.scheduling.timer.MethodInvokingTimerTaskFactoryBean">
+		<property name="targetObject" ref="jobExecutionResumer" />
+		<property name="targetMethod" value="resumeAllInteruptedRunningJobs" />
+	</bean>
+
+	<bean id="scheduledTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<property name="delay">
+			<value>0</value>
+		</property>
+		<property name="period">
+			<value>-1</value>
+		</property>
+		<property name="timerTask">
+			<ref bean="jobExecutionResumerTask" />
+		</property>
+	</bean>
 
 </beans>
