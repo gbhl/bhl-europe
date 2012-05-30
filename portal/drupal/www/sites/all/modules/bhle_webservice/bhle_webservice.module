@@ -1,0 +1,45 @@
+<?php
+/**
+ * Implements hook_permission()
+ */
+function bhle_webservice_permission() {
+    return array(
+        'bhle webservice searchForName' => array(
+            'title' => 'Search for names',
+            'description' => 'Search for names found within archived items'
+        )
+    );
+}
+
+/**
+ * Implements hook_services_resources() 
+ */
+function bhle_webservice_services_resources() {
+    return array(
+        'bhle_webservice' => array(
+            'searchForName' => array(
+                'help' => 'Search for a name and return the bibliography for it',
+                'file' => array('type' => 'inc', 'module' => 'bhle_webservice'),
+                'callback' => '_bhle_webservice_searchForName',
+                'access callback' => '_bhle_webservice_access',
+                'access arguments' => array('bhle webservice searchForName'),
+                'args' => array(
+                    array(
+                        'name' => 'name',
+                        'optional' => FALSE,
+                        'type' => 'string',
+                        'description' => 'Name to search for',
+                        'source' => 'data'
+                    )
+                ),
+            ),
+        ),
+    );
+}
+
+/**
+ * Access callback for bhle_webservice module
+ */
+function _bhle_webservice_access($op) {
+    return true;
+}

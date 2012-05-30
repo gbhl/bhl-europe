@@ -1,0 +1,9 @@
+name = BHL-E webservice
+description = BHL-E webservice module which provides the resource for the Services module
+version = 0.1
+core = 7.x
+package = Services
+
+dependencies[] = apachesolr
+dependencies[] = bhle_search
+dependencies[] = services
