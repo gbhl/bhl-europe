@@ -11,7 +11,10 @@ function _bhle_webservice_searchForName($name) {
     try {
         $responseObj = $solr->search($query, array());
         
-        return (object)array( 'docs' => $responseObj->response->docs);
+        return (object)array(
+            'numFound' => $responseObj->response->numFound,
+            'docs' => $responseObj->response->docs
+        );
     }
     catch( Exception $e ) {
         return (object)array( 'error' => $result = $e->getMessage());
