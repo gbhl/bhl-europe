@@ -1,0 +1,16 @@
+name = Soap Server
+description = Provides SOAP server for Services 3.x
+package = Services - servers
+dependencies[] = services
+core = 7.x
+recommends[] = devel
+recommends[] = geshifilter
+files[] = soap_server.test
+files[] = wsdl/soap_server.wsdl.inc
+
+; Information added by drupal.org packaging script on 2011-12-06
+version = "7.x-3.0-beta1"
+core = "7.x"
+project = "soap_server"
+datestamp = "1323189343"
+
