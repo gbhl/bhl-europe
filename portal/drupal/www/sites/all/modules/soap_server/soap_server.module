@@ -1,0 +1,421 @@
+<?php
+/**
+ * @file
+ * Enable SOAP for services module (7.x-3.x).
+ *
+ * The XMLRPC style {resource}.{method} method names have been replaced with
+ * {resource}_{method} which are valid PHP function names.
+ *
+ * The WSDL provides type information for request parameters which is generated from the resource
+ * info. Response
+ */
+
+/**
+ * Drupal core hooks.
+ */
+
+/**
+ * Implementation of hook_menu().
+ */
+function soap_server_menu() {
+  $items['soap_server/debug_wsdl/%soap_server_endpoint'] = array(
+    'type' => MENU_CALLBACK,
+    'title' => 'Soap Server 3 Debug WSDL',
+    'page callback' => 'soap_server_debug_wsdl',
+    'page arguments' => array(2),
+    'access arguments' => array('debug soap server'),
+  );
+    $items['soap_server/debug_client/%soap_server_endpoint/%node'] = array(
+    'title'            => 'Soap Server Debug Client',
+    'access arguments' => array('debug soap server'),
+    'page callback'    => 'soap_server_debug_client',
+    'page arguments'   => array(2, 3),
+    'type'             => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * endpoint menu loader
+ *
+ * Return the services endpoint object from the endpoint name.
+ *
+ * @param unknown_type $endpoint_name
+ */
+function soap_server_endpoint_load($endpoint_name) {
+  $endpoint = services_endpoint_load($endpoint_name);
+  if (is_object($endpoint)) {
+    return $endpoint;
+  }
+  return FALSE;
+}
+
+/**
+ * Implementation of hook_permission().
+ */
+function soap_server_permission() {
+  return array(
+    'access soap server' => array(
+      'title' => t('Access SOAP Server'),
+    ),
+    'debug soap server' => array(
+      'title' => t('Debug SOAP Server'),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_server_info().
+ *
+ * This function tells services module that we are providing a server
+ */
+function soap_server_server_info() {
+  return array(
+    'name' => 'SOAP',
+  );
+}
+
+/**
+ * Services 3 hooks.
+ */
+
+/**
+ * Implementation of hook_server().
+ *
+ * The services endpoint callback function that handles all requests to a SOAP
+ * server 3 endpoint. If ?wsdl is appended to the URL, the WSDL is served.
+ */
+function soap_server_server() {
+  $info =  services_server_info_object();
+  $endpoint = services_endpoint_load($info->endpoint);
+  $get = $_GET;
+  // Serve the WSDL if ?wsdl is appended to the URL.
+  if (in_array('wsdl', array_keys($get))) {
+    // The soap_server_wsdl_output() function delivers the WSDL and exits.
+    soap_server_wsdl_output($endpoint);
+  }
+  // Disable the WSDL cache so it's not stored in memory or on disk.
+  // TODO: The cache should be enabled by default and disabled if services has the
+  // debug setting set.  However we would need to empty the WSDL cache on a drupal
+  // cache_clear_all hook
+  ini_set("soap.wsdl_cache_enabled", "0");
+  $wsdl_url = url($endpoint->path, array('absolute' => TRUE, )) . '?wsdl';
+  try {
+    $server = new SoapServer($wsdl_url);
+    $server->setClass('ServicesSoapServer');
+    $server->handle();
+  }
+  catch (Exception $e) {
+    watchdog('soap_server', $e->getMessage(), NULL, 'error');
+  }
+  exit;
+}
+
+/**
+ * Get a WSDL for the given endpoint.
+ *
+ * The WSDL provides a soap method for each method of the configured resources.
+ * See /admin/build/services/your_endpoint/resources
+ *
+ * @param $endpoint
+ */
+function soap_server_get_wsdl($endpoint) {
+  $requests = '';
+  $responses = '';
+  $port_type_operations = '';
+  $binding_operations = '';
+
+  // allow other modules to provide the wsdl
+  $wsdl_overrides = module_invoke_all('soap_server_wsdl', $endpoint);
+  if (is_array($wsdl_overrides) && !empty($wsdl_overrides)) {
+    // if there is more than 1 wsdl the first takes priority allowing modules to override others by
+    // setting system weight
+    $wsdl = array_shift($wsdl_overrides); 
+    return $wsdl;
+  }
+  $service_endpoint = url($endpoint->path, array('absolute' => TRUE));
+  // get the content of the schema for each hose_xml profile using the standard namespace xs:
+  $methods = _soap_server_get_methods($endpoint->name);
+  foreach ($methods as $method_name => $method_config) {
+    // requests can specify which field to use to identify the node - default is nid
+    $parts = "";
+    // add parameters from the args array in the resource
+    if (!empty($method_config['args'])) {
+      foreach ((array)$method_config['args'] as $arg) {
+        switch ($arg['type']) {
+          case 'int':
+          case 'string':
+          case 'struct':
+          case 'array':
+            $parts .= "
+    <part name='"  . $arg['name'] ."' type='xsd:". $arg['type'] ."' />"; 
+            break;
+          // we can work out how to deal with other parameter types later
+          default:
+            $parts .= "
+    <part name='". $arg['name'] ."' type='xsd:any'/>";
+        }    
+      }
+    }
+    $requests .= "
+  <message name='". $method_name ."_request'>". $parts ."
+  </message>";
+    // we don't know what the response will be so go for struct - seems like this is appropriate
+    // for most resources
+    $responses .= "
+  <message name='". $method_name ."_response'>
+    <part name='response_object' type='xsd:struct'/>
+  </message>";
+    $port_type_operations .= "
+  <operation name='$method_name'>
+    <input message='tns:". $method_name ."_request'/>
+    <output message='tns:". $method_name ."_response'/>
+  </operation>";
+    $binding_operations .= "
+  <operation name='$method_name'>
+    <soap:operation soapAction='urn:xmethods-delayed-quotes#$method_name'/>
+    <input>
+      <soap:body 
+      	use='literal' 
+      	namespace='urn:xmethods-delayed-quotes' />
+    </input>
+    <output>
+      <soap:body 
+      	use='literal' 
+      	namespace='urn:xmethods-delayed-quotes' />
+    </output>
+  </operation>
+";
+  }
+  $include = drupal_get_path('module', 'soap_server') . '/wsdl/soap_server.wsdl.inc';
+  if (!is_file($include)) {
+    return t("Could not load include @inc", array('@inc' => $include));
+  }
+  else {
+    require_once($include);
+    // $wsdl_content is assigned in the include file
+    return $wsdl_content;
+  }
+}
+
+/**
+ * Delivers XML suitable for supplying WSDL to Soap clients.
+ *
+ * @param $xml
+ *   The content of the WSDL to serve
+ */
+function soap_server_wsdl_output($endpoint) {
+  $wsdl_content = soap_server_get_wsdl($endpoint);
+  ob_end_clean();
+  drupal_add_http_header('Connection', 'close', FALSE);
+  drupal_add_http_header('Content-Length', drupal_strlen($wsdl_content), TRUE);
+  drupal_add_http_header('Content-Type', 'application/wsdl+xml; charset=utf-8', TRUE);
+  drupal_add_http_header('Date', date('r'), TRUE);
+  echo $wsdl_content;
+  exit;
+}
+
+
+/**
+ * Soap Server 3 Class for handling soap requests.
+ */
+class ServicesSoapServer {
+  public function __call($method_name, $args) {
+    // Handle the request.
+    $info =  services_server_info_object();
+    $endpoint = services_endpoint_load($info->endpoint);
+    $services_method_name = str_replace('_soap_', '.', $method_name);   
+    $controller = services_controller_get($services_method_name, $endpoint->name);
+    // make sure any arguments not passed have default values inserted if they are supplied 
+    // TODO: should we be validating argument types here?
+    foreach ($controller['args'] as $key => $arg_config) {
+      if (!isset($args[$key]) && isset($arg_config['default value'])) {
+        $args[$key] = $arg_config['default value'];
+      }
+    }
+    
+    if ($endpoint->debug) {
+      watchdog('soap server', "METHOD_NAME:<pre>". print_r($method_name, TRUE)."</pre");
+      watchdog('soap server', "ENDPOINT:<pre>". print_r($endpoint, TRUE)."</pre");
+      watchdog('soap server', "ARGS:<pre>". print_r($args, TRUE)."</pre");
+      watchdog('soap server', "CONTROLLER:<pre>". print_r($controller, TRUE)."</pre");
+    }
+    try {
+      $ret = services_controller_execute($controller, $args);
+    }
+    catch (Exception $e) {
+      $code = $e->getCode();
+      $soap_fault = new SoapFault($e->getMessage(), $code);
+      watchdog('soap_server', $e->getMessage(), NULL, 'error');
+      throw $soap_fault;
+    }
+    return $ret;
+  }
+}
+
+/**
+ * Return a list of service methods for the endopint
+ * Method names are created from {resource}_{method} or {resource}_action_{method}
+ * NB: These method names are different from the XMLRPC names because PHP5 can't have a . in function
+ * names
+ *
+ * @param $endpoint
+ */
+function _soap_server_get_methods($endpoint) {
+  $supported_methods = array();
+  $resources = services_get_resources($endpoint);
+  // traverse the resources retrieving valid methods and action methods
+  // TODO: inspect services to confirm the validity of this approach
+  foreach ($resources as $resource_name => $resource_info) {
+    foreach ($resource_info as $method_name => $method_data) {
+      if (!is_array($method_data)) {
+        // it's not a method
+        continue;
+      }
+      if ( isset($method_data['callback'])) {
+        // if this element has a callback we'll assume it is a method
+        $soap_method_name = $resource_name .'_soap_'. $method_name;
+        $supported_methods[$soap_method_name] = $method_data;
+      }
+      if ($method_name == "actions") {
+        // TODO: confirm that all actions elements are valid methods
+        foreach ($method_data as $action_name => $action_data) {
+          $soap_method_name = $resource_name .'_soap_'. $action_name;
+          $supported_methods[$soap_method_name] = $action_data;
+        }
+      }
+    }
+  }
+  return $supported_methods;
+}
+
+/**
+ * Debug function for soap_server services. The devel module is required to use
+ * this function.
+ *
+ * @param $nid
+ */
+function soap_server_debug_client($endpoint, $node) {
+  if (!module_exists('devel')) {
+    drupal_set_message(t('Devel module is required for the debug client function.'), 'error');
+    return t("fail");
+  }
+  $debug_output = array(
+    'endpoint' => $endpoint,
+  	'node' => $node,
+  );
+  if (empty($endpoint)) {
+    watchdog('soap_server', 'no endpoint obj in debug client', 'error');
+    return 'fail - no endpoint obj in debug client';
+  }
+  ini_set("soap.wsdl_cache_enabled", "0"); // disabling WSDL cache
+  $wsdl_url = url($endpoint->path, array('absolute' => TRUE, )) . '?wsdl';
+  try {
+    $client = new SoapClient($wsdl_url, array(
+      'trace' => 1,
+    	'cache_wsdl' => WSDL_CACHE_NONE
+    ));
+    // show the available functions as specified in the WSDL
+    $functions = $client->__getFunctions();
+    $debug_output['client functions'] = $functions;
+    
+    // retrieve a node  -  need node access for anonymous
+    $return = $client->node_soap_retrieve($node->nid);
+    $response = $client->__getLastResponse();
+    $request = $client->__getLastRequest();
+    $debug_output["node_soap_retrieve"] = array(
+      $node->nid => array('request' => $request, 'response' => $response, 'return' => $return)
+    );
+    
+    //retrieve a variable - enable services "get a system variable" permission for anonymous
+    $return = $client->system_soap_get_variable('css_js_query_string');
+    $response = $client->__getLastResponse();
+    $request = $client->__getLastRequest();
+    $debug_output["system_soap_get_variable"] = array(
+      'css_js_query_string' => array('request' => $request, 'response' => $response, 'return' => $return)
+    );  
+    
+    // retrieve a user  - needs acess for anonymous
+    $return = $client->user_soap_retrieve(1);  // anonymous user needs "access user profiles" perm
+    $response = $client->__getLastResponse();
+    $request = $client->__getLastRequest();
+    $debug_output["user_soap_retrieve"] = array(
+      1 => array('request' => $request, 'response' => $response, 'return' => $return)
+    );
+    
+  } catch (Exception $e) {
+    $debug_output['client'] = $e;
+  }
+  dsm($debug_output);
+  return t("done");
+}
+
+/**
+ * Display the content of the WSDL for debugging.
+ *
+ * @param $endpoint
+ */
+function soap_server_debug_wsdl($endpoint) {
+  $wsdl_content = soap_server_get_wsdl($endpoint);
+  $wsdl_content = _soap_server_beautify_wsdl($wsdl_content);
+  if (module_exists('geshifilter')) {
+    $geshi_inc = drupal_get_path('module', 'geshifilter') .'/geshifilter.pages.inc';
+    require_once $geshi_inc;
+    $wsdl_content = geshifilter_geshi_process($wsdl_content, 'xml', TRUE);
+  }
+  else {
+    $wsdl_content = "<code>". htmlspecialchars($wsdl_content) ."</code>";
+  }
+  return $wsdl_content;
+}
+
+/**
+ * Make the WSDL look nice.  
+ * 
+ * WARNING: This is NOT a general XML formatter because it will remove whitespace
+ * between tags and in CDATA blocks
+ * 
+ * @param unknown_type $xml
+ */
+function _soap_server_beautify_wsdl($xml) { 
+  // remove whitespace between tags
+  $xml = preg_replace('/(>)(\s*)(<)/', '$1$3', $xml);
+  // limit spaces and tabs one space
+  $xml = preg_replace('/([ \t]{2,})/', ' ', $xml);
+  // add marker linefeeds to aid the pretty-tokeniser (adds a linefeed between all tag-end boundaries)
+  $xml = preg_replace('/(>)\s*(<)(\/*)/', "$1\n$2$3", $xml);
+  
+  // now indent the tags
+  $token      = strtok($xml, "\n");
+  $result     = ''; // holds formatted version as it is built
+  $pad        = 1; // initial indent
+  $matches    = array(); // returns from preg_matches()
+  
+  // scan each line and adjust indent based on opening/closing tags
+  while ($token !== false) : 
+  
+    // test for the various tag states
+    
+    // 1. open and closing tags on same line - no change
+    if (preg_match('/.+<\/\w[^>]*>$/', $token, $matches)) : 
+      $indent=0;
+    // 2. closing tag - outdent now
+    elseif (preg_match('/^<\/\w/', $token, $matches)) :
+      $pad--;
+    // 3. opening tag - don't pad this one, only subsequent tags
+    elseif (preg_match('/^<\w[^>]*[^\/]>.*$/', $token, $matches)) :
+      $indent=1;
+    // 4. no indentation needed
+    else :
+      $indent = 0; 
+    endif;
+    
+    // pad the line with the required number of leading spaces
+    $line    = str_pad($token, strlen($token)+$pad, ' ', STR_PAD_LEFT);
+    $result .= $line . "\n"; // add to the cumulative result, with linefeed
+    $token   = strtok("\n"); // get the next token
+    $pad    += $indent; // update the pad size for subsequent lines    
+  endwhile; 
+  
+  return $result;
+}
