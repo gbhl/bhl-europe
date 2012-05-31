@@ -482,17 +482,7 @@ BookReader.prototype.buildPageList = function(){
 	var self = this;
 	for (i = 0; i < this.bookInfo.pages.length; i++){
 		var pageEntry = $('<option />');
-		var pageType = this.bookInfo.pages[i].type.toLowerCase().capitalize();
-		var pageName = this.bookInfo.pages[i].name;
-		if (pageType != '' && pageName != '') {
-			pageEntry.text(pageType + ' ' + pageName);
-		} else if (pageType == '' && pageName != ''){
-			pageEntry.text(pageName);
-		} else if (pageType != '' && pageName == ''){
-			pageEntry.text(pageType);
-		} else {
-			pageEntry.text('N/A');
-		}
+		pageEntry.text(this.getPageName(i));
 		
 		pageList.append(pageEntry);
 		(function() {
@@ -593,4 +583,16 @@ BookReader.prototype.prepareView = function(){
     } else {
         this.prepareTwoPageView();
     }
+}
+
+BookReader.prototype.updateNavPageNum = function(index) {
+    var pageNum = this.getPageNum(index);
+    var pageStr;
+    if (pageNum[0] == 'n') { // funny index
+        pageStr = index + 1 + ' / ' + this.numLeafs; // Accessible index starts at 0 (alas) so we add 1 to make human
+    } else {
+        pageStr = this.getPageName(index);
+    }
+    
+    $('#pagenum .currentpage').text(pageStr);
 }

@@ -16,7 +16,7 @@ $.event.props = res;
 br = new BookReader();
 
 br.bookInfo = bookInfo;
-console.log(br.bookInfo);
+
 // Return the width of a given page. Here we assume all images are 800 pixels
 // wide
 br.getPageWidth = function(index) {
@@ -97,6 +97,21 @@ br.getPageNum = function(index) {
 		return bookInfo.pages[index].name;
 	} else {
 		index + '1';
+	}
+}
+
+//(Override) Returns the name of the page as it should be displayed in the user interface
+br.getPageName = function(index) {
+	var pageType = this.bookInfo.pages[index].type.toLowerCase().capitalize();
+	var pageName = this.bookInfo.pages[index].name;
+	if (pageType != '' && pageName != '') {
+		return pageType + ' ' + pageName;
+	} else if (pageType == '' && pageName != ''){
+		return pageName;
+	} else if (pageType != '' && pageName == ''){
+		return pageType;
+	} else {
+		return 'N/A';
 	}
 }
 
