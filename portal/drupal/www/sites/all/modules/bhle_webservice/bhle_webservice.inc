@@ -33,7 +33,7 @@ function _bhle_webservice_searchForName($name, $format = 'mods') {
         
         return (object)array(
             'numFound' => $responseObj->response->numFound,
-            'docs' => $responseObj->response->docs
+            'docs' => $docs
         );
     }
     catch( Exception $e ) {
