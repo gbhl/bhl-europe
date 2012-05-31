@@ -12,7 +12,7 @@
 		p:dataSource-ref="dataSource" p:transactionManager-ref="transactionManager"
 		p:validateTransactionState="false" />
 
-	<task:executor id="jobLauncherTaskExecutor" pool-size="1"
+	<task:executor id="jobLauncherTaskExecutor" pool-size="5"
 		rejection-policy="ABORT" />
 
 </beans>

@@ -73,7 +73,6 @@ public class OAIDriverImpl implements OAIDriver {
 		xml.append(getRecordHeader(itemID, info));
 		xml.append(getRecordMetadata(mdPrefix, info));
 		xml.append("</record>");
-		System.out.println(xml.toString());
 		writer.write(xml.toString());
 	}
 

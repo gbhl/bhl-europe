@@ -91,6 +91,10 @@ String.prototype.trimPx = function() {
         return 0;
 }
 
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 BookReader.prototype.positionToolBox = function (toolbox, page) {
 	toolbox.css('position', 'absolute');
 	toolbox.css('left', page.position().left + page.width()/2 - toolbox.width()/2 );
@@ -478,7 +482,18 @@ BookReader.prototype.buildPageList = function(){
 	var self = this;
 	for (i = 0; i < this.bookInfo.pages.length; i++){
 		var pageEntry = $('<option />');
-		pageEntry.text(this.bookInfo.pages[i].name);
+		var pageType = this.bookInfo.pages[i].type.toLowerCase().capitalize();
+		var pageName = this.bookInfo.pages[i].name;
+		if (pageType != '' && pageName != '') {
+			pageEntry.text(pageType + ' ' + pageName);
+		} else if (pageType == '' && pageName != ''){
+			pageEntry.text(pageName);
+		} else if (pageType != '' && pageName == ''){
+			pageEntry.text(pageType);
+		} else {
+			pageEntry.text('N/A');
+		}
+		
 		pageList.append(pageEntry);
 		(function() {
 			var index = i;
