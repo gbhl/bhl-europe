@@ -31,12 +31,12 @@ function _bhle_webservice_searchForName($name, $format = 'mods') {
             $modsDom->loadXML($mods_content);
             
             // Process transformation
-            $docs[] = _bhle_webservice_convertDOMtoArray($modsDom->documentElement);
+            $docs[] = _bhle_webservice_convertDOMtoObject($modsDom->documentElement);
         }
         
         return (object)array(
             'numFound' => $responseObj->response->numFound,
-            'docs' => $docs
+            'docs' => (object)$docs
         );
     }
     catch( Exception $e ) {
@@ -44,17 +44,19 @@ function _bhle_webservice_searchForName($name, $format = 'mods') {
     }
 }
 
-function _bhle_webservice_convertDOMtoArray( $p_DOMNode ) {
+function _bhle_webservice_convertDOMtoObject( $p_DOMNode ) {
     $domArray = array();
     
     foreach( $p_DOMNode->childNodes as $childNode ) {
+        if( $childNode->nodeType != XML_ELEMENT_NODE ) continue;
+        
         if( $childNode->hasChildNodes() ) {
-            $domArray[$childNode->nodeName] = _bhle_webservice_convertDOMtoArray($childNode);
+            $domArray[$childNode->nodeName] = _bhle_webservice_convertDOMtoObject($childNode);
         }
         else {
             $domArray[$childNode->nodeName] = $childNode->nodeValue;
         }
     }
     
-    return $domArray;
+    return (object)$domArray;
 }
