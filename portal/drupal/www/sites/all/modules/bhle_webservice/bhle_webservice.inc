@@ -26,9 +26,12 @@ function _bhle_webservice_searchForName($name, $format = 'mods') {
             // Create correct URL and fetch it
             $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $PID, BHLE_MODS_URI);
             $mods_content = drupal_http_request($url)->data;
+            // Construct DOM-object from string
+            $modsDom = new DOMDocument();
+            $modsDom->loadXML($mods_content);
             
-            // Store mods-content as result
-            $docs[] = $mods_content;
+            // Process transformation
+            $docs[] = _bhle_webservice_convertDOMtoArray($modsDom->documentElement);
         }
         
         return (object)array(
@@ -39,4 +42,19 @@ function _bhle_webservice_searchForName($name, $format = 'mods') {
     catch( Exception $e ) {
         return (object)array( 'error' => $result = $e->getMessage());
     }
+}
+
+function _bhle_webservice_convertDOMtoArray( $p_DOMNode ) {
+    $domArray = array();
+    
+    foreach( $p_DOMNode->childNodes as $childNode ) {
+        if( $childNode->hasChildNodes() ) {
+            $domArray[$childNode->nodeName] = _bhle_webservice_convertDOMtoArray($childNode);
+        }
+        else {
+            $domArray[$childNode->nodeName] = $childNode->nodeValue;
+        }
+    }
+    
+    return $domArray;
 }
