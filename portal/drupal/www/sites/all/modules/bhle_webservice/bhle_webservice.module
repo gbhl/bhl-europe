@@ -30,6 +30,13 @@ function bhle_webservice_services_resources() {
                         'type' => 'string',
                         'description' => 'Name to search for',
                         'source' => 'data'
+                    ),
+                    array(
+                        'name' => 'format',
+                        'optional' => TRUE,
+                        'type' => 'string',
+                        'description' => 'Format to return the response in (currently only MODS is supported)',
+                        'source' => 'data'
                     )
                 ),
             ),
