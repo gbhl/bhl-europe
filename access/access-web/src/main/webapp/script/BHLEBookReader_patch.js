@@ -91,6 +91,10 @@ String.prototype.trimPx = function() {
         return 0;
 }
 
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 BookReader.prototype.positionToolBox = function (toolbox, page) {
 	toolbox.css('position', 'absolute');
 	toolbox.css('left', page.position().left + page.width()/2 - toolbox.width()/2 );
@@ -478,7 +482,8 @@ BookReader.prototype.buildPageList = function(){
 	var self = this;
 	for (i = 0; i < this.bookInfo.pages.length; i++){
 		var pageEntry = $('<option />');
-		pageEntry.text(this.bookInfo.pages[i].name);
+		pageEntry.text(this.getPageName(i));
+		
 		pageList.append(pageEntry);
 		(function() {
 			var index = i;
@@ -578,4 +583,16 @@ BookReader.prototype.prepareView = function(){
     } else {
         this.prepareTwoPageView();
     }
+}
+
+BookReader.prototype.updateNavPageNum = function(index) {
+    var pageNum = this.getPageNum(index);
+    var pageStr;
+    if (pageNum[0] == 'n') { // funny index
+        pageStr = index + 1 + ' / ' + this.numLeafs; // Accessible index starts at 0 (alas) so we add 1 to make human
+    } else {
+        pageStr = this.getPageName(index);
+    }
+    
+    $('#pagenum .currentpage').text(pageStr);
 }

@@ -6,7 +6,10 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			classpath:/META-INF/spring/master-context.xml
+			classpath:/META-INF/spring/env-context.xml
+			classpath:/META-INF/spring/commons-context.xml
+			classpath:/META-INF/spring/akubra-context.xml
+			classpath:/META-INF/spring/convert-context.xml
 			classpath:/META-INF/spring/static-context.xml
 		</param-value>
 	</context-param>
