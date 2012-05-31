@@ -1,0 +1,110 @@
+<?php
+/**
+ * @file
+ * Simpletest case for soap_server module.
+ *
+ * Verify SOAP server provides valid WSDL file and handles requests properly.
+ */
+
+/**
+ * Functionality tests for email example module.
+ */
+class SoapServerTestCase extends DrupalWebTestCase {
+
+  /**
+   * Save endpoint settings for testing.
+   * 
+   * @var array
+   */
+  protected $endpoint;
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Soap Server',
+      'description' => 'Verify Soap server implementation.',
+      'group' => 'Services',
+    );
+  }
+
+  function setUp(){
+    // Enable soap_server should enable also services.
+    parent::setUp(array('ctools', 'services', 'soap_server'));
+
+    // Login as services administrator.
+    $user = $this->drupalCreateUser(array('administer services', 'access content', 'administer site configuration'));
+    $this->drupalLogin($user);
+
+    // Create a SOAP endpoint.
+    $this->endpoint = array(
+      'name'   => 'soap_server_test_endpoint',
+      'server' => 'soap_server',
+      'path'   => 'services/soap/simpletest',
+    );
+    $this->drupalPost(
+      'admin/structure/services/add',
+      $this->endpoint,
+      t('Save')
+    );
+    $this->assertRaw('soap_server_test_endpoint</td>', t('Endpoint %name successfully saved.', 
+      array('%name' => $this->endpoint['name'])));
+
+    // Enable system resources
+    $resources = array(
+      'system/connect/actions' => TRUE,
+      'system/get_variable/actions' => TRUE,
+      'system/set_variable/actions' => TRUE,
+    );
+    $this->drupalPost(
+      'admin/structure/services/list/' . $this->endpoint['name'] . '/resources',
+      $resources,
+      t('Save')
+    );
+    $this->assertRaw(t('Resources have been saved'));
+  }
+  
+  /**
+   * Verify WSDL generation.
+   */
+  function testWSDLGeneration() {
+  	$wsdl_url = $this->getAbsoluteUrl($this->endpoint['path'] . '?wsdl');
+		$this->verbose(print_r(array('wsdl_url' => $wsdl_url), TRUE));
+		$wsdl_file = file_get_contents($wsdl_url);
+		$this->verbose('<pre>'. $wsdl_file .'</pre>');
+		$this->assertTrue(strstr($wsdl_file, "<definitions name='soap_server'"), t('WSDL exists'));
+  }
+
+  /**
+   * Verify SOAP server handler.
+   */
+  function testSOAPHandler() {
+    $wsdl_url = $this->getAbsoluteUrl($this->endpoint['path'] . '?wsdl');
+    // exceptions will not work in this context.
+    $options2 = array();
+    $options = array('trace' => 1, 'exceptions' => TRUE);
+    if (preg_match('/simpletest\d+/', $this->databasePrefix, $matches)) {
+      $options2 += array('user_agent' => drupal_generate_test_ua($matches[0]));
+      $this->verbose(print_r($options2, TRUE));
+    }
+    try {
+      $client = new SoapClient($wsdl_url, $options);
+      $result = $client->__getFunctions();
+      $this->verbose(json_encode($result));
+
+      if (is_soap_fault($result)) {
+        $this->fail('Return service available functions.');
+      }
+      else {
+        $this->assertTrue(strstr($result[0], 'system_soap_connect') , t('System connect method found.'));
+        $this->assertTrue(strstr($result[1], 'system_soap_get_variable') , t('System get_variable method found.'));
+        $this->assertTrue(strstr($result[2], 'system_soap_set_variable') , t('System set_variable method found.'));
+      }
+    }
+    catch (Exception $e) {
+      $this->assert(FALSE, t('Exception thrown.'));
+    }
+  }
+
+}
+
+
+
