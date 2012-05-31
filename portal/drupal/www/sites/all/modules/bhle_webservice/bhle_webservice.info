@@ -6,4 +6,5 @@ package = Services
 
 dependencies[] = apachesolr
 dependencies[] = bhle_search
+dependencies[] = bhle_item
 dependencies[] = services
