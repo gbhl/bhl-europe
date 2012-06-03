@@ -10,6 +10,7 @@
  */
 //dpm($rendered, 'rendered');
 global $language;
+//dpm($item);
 ?>
 
 <p id="search-step-back-link">
@@ -24,20 +25,22 @@ global $language;
       <label>ID:</label> <?php print $bid; ?>
     </p>
   </div>
-  <div class="content-preview">
-    <img src="<?php print $rendered['thumbnail']; ?>" alt="">
+  <div class="content-preview content-type-<?php print $item->contentType[0]; ?>">
+    <?php
+      if(!in_array($rendered['contentType'], array('journal', 'section', 'volume'))) {
+        print '<img src="' . $rendered['thumbnail'] . '" alt="">';
+      }
+    ?>
   </div>
   <div class="biblio-read-links-block">
     <?php 
-    /*
-    <div class="biblio-read-years">
-      <a href="/period/1670">1670</a>
-      <a href="/period/1910">1910</a>
-      <a href="/period/1930">1930</a>
-      <a href="/period/1960">1960</a>
-    </div>
-     * 
-     */
+    if($rendered['child_links']) {
+      print '<div class="biblio-read-years">';
+      foreach ($rendered['child_links'] as $rendered_link) {
+        print  $rendered_link;
+      }
+      print '</div>';
+    } else {
     ?>
     <div class="biblio-read-link">
       <?php print $rendered['read_more_link']; ?>
@@ -48,5 +51,6 @@ global $language;
         <?php print $rendered['dl_link_jp2']; ?>
       </div>
     </div>
+    <?php } ?>
   </div>
 </div>

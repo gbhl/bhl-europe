@@ -167,6 +167,9 @@ h2.search-result-title{display:none;}
 #results #search-results.list li.search-result .content-type-logo span.bitmap {top:19px; height:104px; width:92px;}
 
 #results #search-results li.search-result.content-type-journal .content-type-logo span.bitmap {background-image: url('../images/icon-content-type-journal.png');}
+#results #search-results li.search-result.content-type-section .content-type-logo span.bitmap {background-image: url('../images/icon-content-type-section.png');}
+#results #search-results li.search-result.content-type-serial .content-type-logo span.bitmap {background-image: url('../images/icon-content-type-serial.png');}
+#results #search-results li.search-result.content-type-volume .content-type-logo span.bitmap {background-image: url('../images/icon-content-type-volume.png');}
 #results #search-results li.search-result.content-type-monograph .content-type-logo span.bitmap,
 #results #search-results li.search-result.content-type-book .content-type-logo span.bitmap {background-image: url('../images/icon-content-type-monograph.png');}
 #results #search-results li.search-result.content-type-article .content-type-logo span.bitmap,
@@ -298,6 +301,9 @@ overflow: hidden;
   display:block; padding:4px 4px 1px; margin:0px;
   height:15px; width:84px; font-size:91.7%; color:#006626;
   text-decoration:none; text-align:center; line-height:1.0;
+}
+#results #search-results li.search-result .result-actions .result-buttons a.full {
+  width:184px;
 }
 #results #search-results li.search-result .result-actions .result-buttons a:hover {text-decoration:underline;}
 #results #search-results li.search-result .result-actions .result-buttons a.first {

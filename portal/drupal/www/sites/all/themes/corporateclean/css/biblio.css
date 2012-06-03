@@ -184,7 +184,10 @@
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .collection-id p a {color:#006626;}
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .collection-id p a:hover {text-decoration:underline;}
 
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview {margin-top:10px; text-align:center;}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview {margin-top:10px; text-align:center; background-color:transparent; background-position:center center; background-repeat:no-repeat}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.content-type-serial {height:210px; background-image:url('../images/icon-biblio-content-type-serial.png')}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.content-type-section {height:210px; background-image:url('../images/icon-biblio-content-type-section.png')}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.content-type-volume {height:210px; background-image:url('../images/icon-biblio-content-type-volume.png')}
 
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-links-block {
@@ -215,10 +218,11 @@
 }
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a {
-  display:block; float:left;
+  display:block;
   margin:3px; padding: 7px 10px 3px;
-  height: 26px; width: 43px;
-  text-decoration: none; text-align: center; color: #006626; font-size: 150%;
+  height: 20px;
+  width: 188px;
+  text-decoration: none; text-align: left; color: #006626;
 /*  background: transparent url('../images/lbl-facet-range-result.png') no-repeat right top; */
   background-color:#fff;
   

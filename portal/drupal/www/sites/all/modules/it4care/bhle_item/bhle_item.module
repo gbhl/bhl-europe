@@ -8,6 +8,8 @@ define('BHLE_READER_URI', 'access/stream/%bid');
 define('BHLE_PDF_URI', 'static/%bid/%bid_full_pdf.pdf');
 define('BHLE_JP2_URI', 'static/%bid/%bid_full_jpg.zip');
 define('BHLE_OCR_URI', 'static/%bid/%bid_full_ocr.txt');
+define('BHLE_CHILDREN_URI', 'access/items/%bid/members');
+
 /**
  * Implementats hook_menu().
  */
@@ -103,10 +105,11 @@ function bhle_item_theme() {
 function bhle_item_load($pid) {
   $item = &drupal_static(__FUNCTION__);
   if (!isset($item)) {
+    $pos = strpos($pid, '-');
+    $bid = substr($pid, $pos + 1);
     $solrstart = microtime(true);
     $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
     $query = 'PID:(' . str_replace(':', '\:', $pid) . ')'; // TODO: better argument handling
-    $results = array();
     $params = array();
     $params['rows'] = 1;
     $responseObj = $solr->search($query, $params);
@@ -115,8 +118,32 @@ function bhle_item_load($pid) {
     $solrruntime = $solrend - $solrstart;
     //dpm('query: ' . $solrruntime);
     $item = $response->docs[0];
+    
+    $url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_CHILDREN_URI);
+    $request = drupal_http_request($url);
+    $array = explode("\n", $request->data);
+    foreach ($array as $line) {
+      if(stristr($line, 'info:fedora/bhle:')) {
+        $explode = explode('/', $line);
+        $child_id = $explode[1];
+        $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+        $query = 'PID:(' . str_replace(':', '\:', $child_id) . ')'; // TODO: better argument handling
+        $params = array();
+        $params['rows'] = 1;
+        $responseObj = $solr->search($query, $params);
+        $response = $responseObj->response;
+        $subitem = $response->docs[0];
+        //dpm('query: ' . $solrruntime);
+        $child = array(
+          'pid' => $child_id,
+          'title' => _solrdoc_getField($subitem, 'mods_title'),
+          'item' => $subitem,
+        );
+        $item->childs[] = $child;
+      }
+    }
+    //dpm($item);
   }
-  dpm($item);
   return $item;
 }
 
@@ -164,6 +191,19 @@ function _template_preprocess_bhle_item($item) {
     $rendered['mods_place'] = _solrdoc_getField($item, 'mods_place');
     $rendered['mods_name__exact'] = _solrdoc_getField($item, 'mods_name__exact');
     $rendered['mods_subject_geographic'] = _solrdoc_getField($item, 'mods_subject_geographic');
+    $rendered['mods_accessCondition'] = _solrdoc_getField($item, 'mods_accessCondition');
+    $rendered['mods_rights'] = _solrdoc_getField($item, 'mods_rights');
+    $rights = array();
+    if(valid_url(strip_tags($rendered['mods_accessCondition']), TRUE)) {
+      $rendered['mods_accessCondition'] = l($rendered['mods_accessCondition'], $rendered['mods_accessCondition'], array('absolute' => TRUE));
+    }
+    if(valid_url(strip_tags($rendered['mods_rights']), TRUE)) {
+      $rendered['mods_rights'] = l($rendered['mods_rights'], $rendered['mods_rights'], array('absolute' => TRUE));
+    }
+    
+    if ($item->mods_accessCondition) { $rights[] = $rendered['mods_accessCondition']; }
+    if ($item->mods_rights) { $rights[] = $rendered['mods_rights']; }
+    $rendered['rights'] = implode(', ', $rights);
     
 
     $summary = '';
@@ -174,10 +214,12 @@ function _template_preprocess_bhle_item($item) {
     if ($rendered['journal_title']) { $summary .= '<li><label>' . t('Journal title') . '</label><p>&nbsp;</p></li>'; }
     if ($rendered['volume_title']) { $summary .= '<li><label>' . t('Volume title') . '</label><p>&nbsp;</p></li>'; }
     if ($rendered['mods_publisher']) { $summary .= '<li><label>' . t('Publisher') . '</label><p>' . $rendered['mods_publisher'] . '</p></li>'; }
-    if ($rendered['mods_subject_geographic']) { $summary .= '<li><label>' . t('Place of publishing') . '</label><p>' . $rendered['mods_subject_geographic'] . '</p></li>'; }
+    if ($rendered['mods_place']) { $summary .= '<li><label>' . t('Place of publishing') . '</label><p>' . $rendered['mods_place'] . '</p></li>'; }
     if ($rendered['mods_language']) { $summary .= '<li><label>' . t('Language of the text') . '</label><p>' . $rendered['mods_language'] .'</p></li>'; }
     if ($rendered['mods_record_content_source']) { $summary .= '<li><label>' . t('Content provider') . '</label><p>' . $rendered['mods_record_content_source'] .'</p></li>'; }
-    if ($rendered['grib']) { $summary .= '<li><label>' . t('GRIB?') . '</label><p>&nbsp;</p></li>'; }
+    if ($rendered['rights']) { $summary .= '<li><label>' . t('Rights') . '</label><p>' . $rendered['rights'] .'</p></li>'; }
+    
+    //if ($rendered['grib']) { $summary .= '<li><label>' . t('GRIB?') . '</label><p>&nbsp;</p></li>'; }
     
     if ($summary) { $rendered['meta_summary_source'] = '<ul>' . $summary . '<ul>'; }
     
@@ -219,6 +261,12 @@ function _template_preprocess_bhle_item($item) {
 
     $jp2_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_JP2_URI);
     $rendered['dl_link_jp2'] = l('JP2', $jp2_url, array('attributes' => array('class' => 'biblio-action biblio-action-jp2 last')));
+    
+    if($item->childs) {
+      foreach($item->childs as $child) {
+        $rendered['child_links'][] = l($child['title'], 'bhle-view/' . $child['pid']);
+      }
+    }
     
     ksort($rendered);
   }
