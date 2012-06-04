@@ -10,7 +10,7 @@
  */
 //dpm($rendered, 'rendered');
 global $language;
-//dpm($item);
+dpm($item);
 ?>
 
 <p id="search-step-back-link">
@@ -27,21 +27,21 @@ global $language;
   </div>
   <div class="content-preview content-type-<?php print $item->contentType[0]; ?>">
     <?php
-      if(!in_array($rendered['contentType'], array('journal', 'section', 'volume'))) {
+      if(!$item->childs) {
         print '<img src="' . $rendered['thumbnail'] . '" alt="">';
       }
     ?>
   </div>
   <div class="biblio-read-links-block">
-    <?php 
-    if($rendered['child_links']) {
-      print '<div class="biblio-read-years">';
-      foreach ($rendered['child_links'] as $rendered_link) {
-        print  $rendered_link;
-      }
-      print '</div>';
-    } else {
-    ?>
+    <?php if ($rendered['child_links']): ?>
+      <div class="biblio-read-years">
+        <ul>
+    <?php foreach ($rendered['child_links'] as $rendered_link): ?>
+        <li><?php print $rendered_link; ?></li>
+    <?php endforeach; ?>
+        </ul>
+      </div>
+    <?php else: ?>
     <div class="biblio-read-link">
       <?php print $rendered['read_more_link']; ?>
       <div class="biblio-download-title"><?php print t('Download as format') . ':<br />'; ?></div>
@@ -51,6 +51,6 @@ global $language;
         <?php print $rendered['dl_link_jp2']; ?>
       </div>
     </div>
-    <?php } ?>
+    <?php endif; ?>
   </div>
 </div>

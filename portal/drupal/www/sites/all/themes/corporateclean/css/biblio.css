@@ -213,13 +213,19 @@
 }
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years { 
-  padding-bottom:3px; width: 215px; overflow:hidden;
+  padding-bottom:3px; width: 215px; /*overflow:hidden;*/
   background:transparent url('../images/bg-sidebar-biblio-years-underline.png') no-repeat left bottom;
+}
+
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years ul li {
+  position:relative; overflow:visible;
+  height:32px;
+  padding:3px
 }
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a {
   display:block;
-  margin:3px; padding: 7px 10px 3px;
+  padding: 7px 10px 3px;
   height: 20px;
   width: 188px;
   text-decoration: none; text-align: left; color: #006626;
@@ -231,8 +237,22 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  
+  overflow:hidden
 }
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a:hover {/* background-position:left top; */ background-color:#8bc53f;}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a:hover {
+  /* background-position:left top; */
+  background-color:#8bc53f;
+  position:absolute; top:3pxpx; left:3px;
+  height:auto;color:#006626;
+  min-height:20px;
+  text-decoration:none;
+  z-index:1000;
+  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-links-block .biblio-read-link {
   margin:0px 3px; padding:5px 0px 0px; width:209px; 
