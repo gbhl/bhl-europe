@@ -99,6 +99,27 @@ function bhle_item_theme() {
   );
 }
 
+function bhle_item_load_parents($ppid) {
+  $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+  $query = 'PID:(' . str_replace(':', '\:', str_replace('/', '-', $ppid)) . ')'; // TODO: better argument handling
+  $params = array();
+  $params['rows'] = 1;
+  $responseObj = $solr->search($query, $params);
+  $response = $responseObj->response;
+  //dpm('query: ' . $solrruntime);
+  $item = $response->docs[0];
+  $ret = array();
+  $ret[] = $item;
+  if($item->olef_parentGUID) {
+    $next = bhle_item_load_parents($item->olef_parentGUID);
+    foreach ($next as $n) {
+      $ret[] = $n;
+    }
+  }
+  
+  return $ret;
+}
+
 /**
  * Load item object from Solr.
  */
@@ -134,15 +155,25 @@ function bhle_item_load($pid) {
         $response = $responseObj->response;
         $subitem = $response->docs[0];
         //dpm('query: ' . $solrruntime);
+        $mods_title = _solrdoc_getField($subitem, 'mods_title');
+        if($mods_title) {
+          $title = $mods_title;
+        } else {
+          $title = _solrdoc_getField($subitem, 'dc_title');
+        }
         $child = array(
           'pid' => $child_id,
-          'title' => _solrdoc_getField($subitem, 'mods_title'),
+          'title' => $title,
           'item' => $subitem,
         );
         $item->childs[] = $child;
       }
     }
-    //dpm($item);
+    if($item->olef_parentGUID) {
+      $item->parents = bhle_item_load_parents($item->olef_parentGUID);
+      krsort($item->parents);
+    }
+    dpm($item);
   }
   return $item;
 }
@@ -207,7 +238,27 @@ function _template_preprocess_bhle_item($item) {
     
 
     $summary = '';
-    if ($rendered['mods_title']) { $summary .= '<li><label>' . t('Title') . '</label><p>' . $rendered['mods_title'] . '</p></li>'; }
+    if($item->parents) {
+      foreach ($item->parents as $parent) {
+        $mods_title_parent =_solrdoc_getField($parent, 'mods_title');
+        if($mods_title_parent) {
+          $parent_title = $mods_title_parent;
+        } else {
+          $parent_title =_solrdoc_getField($parent, 'dc_title');
+        }
+        $rendered['parent_links'][] = l($parent_title, 'bhle-view/' . _solrdoc_getField($parent, 'PID'));
+      }
+      $summary_title = implode(', ', $rendered['parent_links']) . ', ';
+    }
+    if($item->mods_title) {
+      $summary_title .= $rendered['mods_title'];
+      $rendered['title'] = $rendered['mods_title'];
+    } else {
+     $summary_title .= $rendered['dc_title']; 
+     $rendered['title'] = $rendered['dc_title'];
+    }
+    
+    if ($summary_title) { $summary .= '<li><label>' . t('Title') . '</label><p>' . $summary_title . '</p></li>'; }
     if ($rendered['mods_name']) { $summary .= '<li><label>' . t('Author') . '</label><p>' . $rendered['mods_name'] . '</p></li>'; }
     if ($rendered['mods_date_issued']) { $summary .= '<li><label>' . t('Year') . '</label><p>' . $rendered['mods_date_issued'] . '</p></li>'; }
     if ($rendered['page_range']) { $summary .= '<li><label>' . t('Page range') . '</label><p>&nbsp;</p></li>'; }
