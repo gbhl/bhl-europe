@@ -10,7 +10,7 @@
  */
 //dpm($rendered, 'rendered');
 global $language;
-dpm($item);
+//dpm($item);
 ?>
 
 <p id="search-step-back-link">

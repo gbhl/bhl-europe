@@ -86,7 +86,7 @@ drupal_add_js('jQuery(document).ready(function($) {
 );
    
 drupal_add_library('system', 'ui.slider');
-drupal_add_js(drupal_get_path('theme', 'corporateclean') . '/js/custom.js');
+//drupal_add_js(drupal_get_path('theme', 'corporateclean') . '/js/custom.js');
  
 function corporateclean_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {

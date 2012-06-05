@@ -173,7 +173,7 @@ function bhle_item_load($pid) {
       $item->parents = bhle_item_load_parents($item->olef_parentGUID);
       krsort($item->parents);
     }
-    dpm($item);
+    //dpm($item);
   }
   return $item;
 }

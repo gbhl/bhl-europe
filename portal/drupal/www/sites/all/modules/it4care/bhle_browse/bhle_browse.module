@@ -1,0 +1,222 @@
+<?php
+
+/**
+ * Implements hook_block_info();
+ */
+function bhle_browse_block_info() {
+  $blocks = array();
+  /*
+    $blocks['title'] = array(
+    'info' => t('BHL-E Browse by title'),
+    'cache' => DRUPAL_NO_CACHE,
+    );
+    $blocks['author'] = array(
+    'info' => t('BHL-E Browse by author'),
+    'cache' => DRUPAL_NO_CACHE,
+    );
+    $blocks['journal'] = array(
+    'info' => t('BHL-E Browse by journal'),
+    'cache' => DRUPAL_NO_CACHE,
+    );
+    $blocks['date'] = array(
+    'info' => t('BHL-E Browse by date issued'),
+    'cache' => DRUPAL_NO_CACHE,
+    );
+   * 
+   */
+  $blocks['provider'] = array(
+    'info' => t('BHL-E Browse by content provider'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view();
+ */
+function bhle_browse_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    /*
+      case 'title':
+      $block['subject'] = t('Title');
+      $block['content']['#markup'] = 'aaa';
+      break;
+      case 'date':
+      $block['subject'] = t('Date issued');
+      $block['content']['#markup'] = bhle_browse_date();
+      break;
+     * 
+     */
+    case 'provider':
+      $block['subject'] = t('Content provider');
+      $block['content']['#markup'] = bhle_browse_provider();
+      break;
+  }
+  return $block;
+}
+
+function bhle_browse_date() {
+  return 'aa';
+}
+
+function bhle_browse_provider() {
+  $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+  $query = 'PID:(*)'; // TODO: better argument handling
+  $params = array();
+  $params['rows'] = 1;
+  $params['facet'] = 'true';
+  $params['facet.limit'] = -1;
+
+  $params['facet.field'][] = 'mods_record_content_source__facet';
+
+
+  $responseObj = $solr->search($query, $params);
+  $publishers = $responseObj->facet_counts->facet_fields->mods_record_content_source__facet;
+  foreach ($publishers as $label => $val) {
+    $key = $label;
+    $params = array('query' => array('action' => 'addfacet', 'field' => 'mods_record_content_source', 'key' => urlencode($key), 'source' => 'browse', 'last' => md5(time())));
+    if ($label != '_empty_') {
+      $output .= l($label, 'search/bhle/empty', $params);
+    }
+    $i++;
+  }
+
+
+  //dpm($responseObj->facet_counts->facet_fields->mods_record_content_source__facet, 'C PROVIDERS');
+  return $output;
+}
+
+function bhle_browse_cron() {
+  $last = variable_get('bhle_browse_last_update_years', 0);
+  if ((time() - $last > 3600 * 24)) {
+    $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+    $query = 'PID:(*)'; // TODO: better argument handling
+    $params = array();
+    $params['rows'] = 1;
+    $params['facet'] = 'true';
+    $params['facet.limit'] = -1;
+    $params['facet.field'][] = 'mods_date_issued__facet';
+    $responseObj = $solr->search($query, $params);
+    $publishers = $responseObj->facet_counts->facet_fields->mods_date_issued__facet;
+    foreach ($publishers as $label => $val) {
+
+      $replace = preg_replace('/\D/', ' ', $label);
+      $arr = explode(' ', $replace);
+      foreach ($arr as $year) {
+        $year = intval(abs(intval(trim($year)) / 10)) * 10;
+        //dpm($year);
+        if ($year && $year < date('Y') + 1) {
+          $term = taxonomy_get_term_by_name($year, 'period');
+          if (!$term) {
+            $term = new stdClass();
+            $term->name = $year;
+            $term->vid = 14;
+            $term->field_year[LANGUAGE_NONE][0]['value'] = $year;
+            taxonomy_term_save($term);
+          }
+          $years[] = $year;
+        }
+      }
+    }
+    dsm($years);
+    variable_set('bhle_browse_min_year', min($years));
+    variable_set('bhle_browse_max_year', max($years));
+
+    $r = db_select('taxonomy_term_data', 'td')
+      ->fields('td')
+      ->condition('vid', 14)
+      ->execute()
+      ->fetchAll();
+
+    dsm($r);
+    foreach ($terms as $term) {
+      if(!in_array($term->name, $years)) {
+        taxonomy_term_delete($term->tid);
+      }
+    }
+
+    //dpm($responseObj->facet_counts->facet_fields->mods_date_issued__facet, 'C PROVIDERS');
+  }
+}
+
+function bhle_browse_init() {
+  
+  $min = variable_get('bhle_browse_min_year', 1500);
+  $max = variable_get('bhle_browse_max_year', date('Y') + 1);
+  //dpm($min, 'min');
+  $js = '(function ($) {
+  Drupal.behaviors.customSlider = {
+    attach: function() {
+
+      var min = $("input#edit-slider-filter-min");
+      var max = $("input#edit-slider-filter-max");
+
+      if (!min.length || !max.length) {
+        return;
+      }
+          
+      var init_min = (\'\' == min.val()) ? ' . $min . ' : min.val();
+      var init_max = (\'\' == max.val()) ? ' . $max . ' : max.val();
+
+      min.val(init_min);
+      max.val(init_max);
+
+      min.parents(\'div.views-widget:not(.ajax-processed)\').addClass(\'ajax-processed\').before(
+        $(\'<div></div>\').slider({
+             range: true,
+             min:  ' . $min . ',     // Adjust slider min and max to the range 
+             max:  ' . $max . ',     // of the exposed filter.
+             step: 10,
+             values: [init_min, init_max],
+
+             slide: function(event, ui){
+                min.val(ui.values[0]);
+                $(\'a.ui-slider-min\').text(ui.values[0]);
+                max.val(ui.values[1]);
+                $(\'a.ui-slider-max\').text(ui.values[1]);
+             },
+
+      			 stop: function(event, ui){
+      			  	$(this).parents(\'form\').find(\'.ctools-auto-submit-click\').click();
+      			 },             
+        })
+      );      // Add .hide() before the \';\' to remove the input elements altogether.
+
+      $(\'a.ui-slider-min\').text(init_min);
+      $(\'a.ui-slider-max\').text(init_max);
+    }
+  };
+})(jQuery);
+
+(function ($) {
+  Drupal.behaviors.customSliderContentTop = {
+    attach: function (context, settings) {
+    
+      $(\'.not-front #content_top\').once(\'customSliderContentTop\', function () {
+        
+        var contentTop = $(this);
+        
+        contentTop.after(\'<span class="slider-content-top" title="\' + Drupal.t(\'Close\') + \'"></span>\');
+        
+        contentTop.next().click(function() {
+          contentTop.slideToggle(\'slow\', function() {
+            if (contentTop.is(\':hidden\')) {
+              contentTop.next().attr(\'title\', Drupal.t(\'Expand\'));
+            } else {
+              contentTop.next().attr(\'title\', Drupal.t(\'Close\'));  
+            }
+          });
+        });
+        
+      });
+      
+      $(\'a.external-link\').attr(\'target\', \'_blank\');
+
+    }
+  };
+
+})(jQuery);';
+
+  drupal_add_js($js, 'inline');
+}

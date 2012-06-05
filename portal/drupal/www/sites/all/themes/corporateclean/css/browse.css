@@ -111,7 +111,8 @@
   overflow: hidden;
 }
 #content .browse-tabs .ui-tabs .ui-tabs-panel .block-views,
-#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block {
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-bhle-browse {
   display: block;    clear:both;
   position:relative; margin:0px; padding: 0 11px 0 9px; width:990px;
   background:transparent url('../images/bg-facet-range-bg.png') repeat-y right top; 
@@ -119,7 +120,8 @@
 }
 #content .browse-tabs .ui-tabs .ui-tabs-panel .block-block.browse-provider .content-inner {padding-top:10px;}
 #content .browse-tabs .ui-tabs .ui-tabs-panel .block-views .content,
-#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block .content {
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-block .content,
+#content .browse-tabs .ui-tabs .ui-tabs-panel .block-bhle-browse .content {
   margin:0px; padding:0px; width:990px; /* min-height:230px; */ overflow:hidden;
   /* background:#c8e3a3 url('../images/bg-facet-range-gradient.png') repeat-x left top; */
 
