@@ -24,6 +24,10 @@ function bhle_browse_block_info() {
     );
    * 
    */
+  $blocks['serial'] = array(
+    'info' => t('BHL-E Browse by journal title'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
   $blocks['provider'] = array(
     'info' => t('BHL-E Browse by content provider'),
     'cache' => DRUPAL_NO_CACHE,
@@ -52,12 +56,46 @@ function bhle_browse_block_view($delta = '') {
       $block['subject'] = t('Content provider');
       $block['content']['#markup'] = bhle_browse_provider();
       break;
+    case 'serial':
+      $block['subject'] = t('Journal title');
+      $block['content']['#markup'] = bhle_browse_serial();
+      break;
   }
   return $block;
 }
 
 function bhle_browse_date() {
   return 'aa';
+}
+
+function bhle_browse_serial() {
+  $solr = apachesolr_get_solr(variable_get('bhle_search_solr_core'));
+  $query = 'contentType:(serial)'; // TODO: better argument handling
+  $params = array();
+  $params['rows'] = 1;
+  $params['facet'] = 'true';
+  $params['facet.limit'] = -1;
+
+  $params['facet.field'][] = 'mods_title__facet';
+
+
+  $responseObj = $solr->search($query, $params);
+  $publishers = $responseObj->facet_counts->facet_fields->mods_title__facet;
+  $output = '<ul>';
+  foreach ($publishers as $label => $val) {
+    $key = $label;
+    $params = array('query' => array('action' => 'addfacet', 'field' => 'journal', 'key' => urlencode($key), 'source' => 'browse', 'last' => md5(time())));
+    
+    if ($val) {
+      $output .= '<li>' . l($label, 'search/bhle/empty', $params) . '</li>';
+    }
+    $i++;
+  }
+  $output .= '</ul>';
+
+
+  //dpm($publishers, 'C PROVIDERS');
+  return $output;
 }
 
 function bhle_browse_provider() {

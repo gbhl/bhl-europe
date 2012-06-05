@@ -43,6 +43,7 @@ define('BHLE_SEARCH_AUTHOR_FIELD', 'author');
 define('BHLE_SEARCH_YEAR_FIELD', 'last_modified');
 define('BHLE_SEARCH_SCIENTIFIC_NAME_FIELD', 'keywords');
 define('BHLE_SEARCH_COMMON_NAME_FIELD', 'keywords_copy');
+define('BHLE_SEARCH_CONTENTTYPE_FIELD', 'contentType');
 define('BHLE_SEARCH_DEFAULT_TERM', 'type what do you want to search');
 define('BHLE_ENVIRONMENT', 'http://www.bhl-europe.eu');
 define('BHLE_SEARCH_HIGHLIGHT_FIELDS', 'mods_title,mods_name');
@@ -96,12 +97,28 @@ function bhle_search_init() {
     $orig_field = $_GET['field']; // TODO: escape for security
     $field = str_replace('__facet', '', $_GET['field']); // TODO: escape for security
     $key = $_GET['key']; // TODO: escape for security
-    $condition = array(
-      'term' => urldecode($key),
-      'field' => $field,
-      'operator' => 'AND',
-      'exact_phrase' => 0
-    );
+    if($_GET['field'] == 'journal') {
+      $cond = array(
+        'term' => 'serial',
+        'field' => 'contentType',
+        'operator' => 'AND',
+        'exact_phrase' => 0
+      );
+      $_SESSION['bhle_search']['conditions'][] = $cond;
+      $condition = array(
+        'term' => urldecode($key),
+        'field' => 'mods_title',
+        'operator' => 'AND',
+        'exact_phrase' => 0
+      );
+    } else {
+      $condition = array(
+        'term' => urldecode($key),
+        'field' => $field,
+        'operator' => 'AND',
+        'exact_phrase' => 0
+      );
+    }
     $_SESSION['bhle_search']['conditions'][] = $condition;
   }
 
@@ -1409,7 +1426,7 @@ function get_default_field_names() {
     static $names;
 
     if(!$names){
-        $names = array ('title', 'author', 'year', 'scientific_name', 'common_name');
+        $names = array ('title', 'author', 'year', 'scientific_name', 'common_name', 'contentType');
     }
 
     return $names;

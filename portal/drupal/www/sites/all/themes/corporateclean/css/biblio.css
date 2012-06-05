@@ -243,7 +243,7 @@
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-years a:hover {
   /* background-position:left top; */
   background-color:#8bc53f;
-  position:absolute; top:3pxpx; left:3px;
+  position:absolute; top:3px; left:3px;
   height:auto;color:#006626;
   min-height:20px;
   text-decoration:none;
