@@ -116,7 +116,7 @@ define("_LOG",                      _ABS."log/");
 // ----------------------------
 define("_XPDF_ABS",                 "/usr/bin/");
 define("_PDFTOTEXT",                _XPDF_ABS."pdftotext -nopgbrk -eol unix -f FFFF -l LLLL \"SSSS\" \"OOOO\"");
-define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm -r 80 ");
+define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm -r 300 ");
 define("_PDFINFO",                  _XPDF_ABS.'pdfinfo');
 define("_PDFFONTS",                 _XPDF_ABS.'pdffonts');
 
