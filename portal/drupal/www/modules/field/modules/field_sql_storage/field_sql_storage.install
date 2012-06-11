@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file
- * Install, update and uninstall functions for the field_sql_storage module.
- */
+* @file
+* Install, update and uninstall functions for the field_sql_storage module.
+*/
 
 /**
- * Implements hook_schema().
- */
+* Implements hook_schema().
+*/
 function field_sql_storage_schema() {
   $schema = array();
 
@@ -25,13 +25,13 @@ function field_sql_storage_schema() {
 }
 
 /**
- * Utility function: write field data directly to SQL storage.
- *
- * This function can be used for databases whose schema is at field module
- * version 7000 or higher.
- *
- * @ingroup update-api-6.x-to-7.x
- */
+* Utility function: write field data directly to SQL storage.
+*
+* This function can be used for databases whose schema is at field module
+* version 7000 or higher.
+*
+* @ingroup update-api-6.x-to-7.x
+*/
 function _update_7000_field_sql_storage_write($entity_type, $bundle, $entity_id, $revision_id, $field_name, $data) {
   $table_name = "field_data_{$field_name}";
   $revision_name = "field_revision_{$field_name}";
@@ -82,13 +82,13 @@ function _update_7000_field_sql_storage_write($entity_type, $bundle, $entity_id,
 }
 
 /**
- * @addtogroup updates-6.x-to-7.x
- * @{
- */
+* @addtogroup updates-6.x-to-7.x
+* @{
+*/
 
 /**
- * Field SQL storage update version placeholder.
- */
+* Field SQL storage update version placeholder.
+*/
 function field_sql_storage_update_7000() {
   // Some update helper functions (such as
   // _update_7000_field_sql_storage_write()) modify the database directly. They
@@ -100,8 +100,8 @@ function field_sql_storage_update_7000() {
 }
 
 /**
- * Remove the field_config_entity_type table and store 'entity_type' strings.
- */
+* Remove the field_config_entity_type table and store 'entity_type' strings.
+*/
 function field_sql_storage_update_7001(&$sandbox) {
   if (!isset($sandbox['progress'])) {
     // Collect current etids.
@@ -192,8 +192,8 @@ function field_sql_storage_update_7001(&$sandbox) {
 }
 
 /**
- * Fix primary keys in field revision data tables.
- */
+* Fix primary keys in field revision data tables.
+*/
 function field_sql_storage_update_7002() {
   $results = db_select('field_config', 'fc', array('fetch' => PDO::FETCH_ASSOC))
     ->fields('fc')
@@ -211,5 +211,5 @@ function field_sql_storage_update_7002() {
 }
 
 /**
- * @} End of "addtogroup updates-6.x-to-7.x"
- */
+* @} End of "addtogroup updates-6.x-to-7.x"
+*/

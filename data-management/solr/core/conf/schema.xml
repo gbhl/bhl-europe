@@ -744,7 +744,8 @@
     <copyField source="mods_accessCondition" dest="mods_accessCondition__facet"/>
     <copyField source="mods_accessCondition" dest="all"/>
 
-
+    <field name="mods_title__facet" type="string" indexed="true" multiValued="true" termVectors="false" stored="false" required="false"/>
+    <copyField source="mods_title" dest="mods_title__facet"/>
 
 
    <!-- Dynamic field definitions.  If a field name is not found, dynamicFields
