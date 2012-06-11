@@ -4,16 +4,17 @@
 // ** PURPOSE: CUSTOM CONFIGURATION     **
 // ** DATE:    21.11.2011               **
 // ** AUTHOR:  ANDREAS MEHRRATH         **
+// ** AUTHOR:  WOLFGANG KOLLER          **
 // ***************************************
 
 // RUNTIME MODE (development|production)
-define("_MODE",                     "development");
+define("_MODE",                     "production");
 
 // ABSOLUTE PATH TO THE INGEST APPLICATION ROOT (WHERE index.php RESIDE!)
-define("_ABS",                      str_replace("//","/",$_SERVER['DOCUMENT_ROOT']."/"));
+define("_ABS",                      str_replace("//","/",dirname($_SERVER['SCRIPT_FILENAME'])."/"));
 
 // URL TO THE INGEST APPLICATION (bhl-int.nhm.ac.uk)
-define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/");
+define("_HOME",                     "http://".$_SERVER['HTTP_HOST']."/preingest/");
 
 // TECHNICAL CONTACT
 define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
@@ -25,7 +26,7 @@ define("_CONTACT_EMAIL",            "heimo.rainer@nhm-wien.ac.at");
 // BE DROPPED BY AN UPGRADE
 
 define("_WORK_DIR",                 _ABS."temp/");
-define("_CONTENT_ROOT",             "G:/dev/nhm/ingest/uploads/");
+define("_CONTENT_ROOT",             "/mnt/nfs/upload/providers/");
 
 // REVERSE LOOKUP URL MUST POINT TO THE _CONTENT_ROOT AND END WITH /
 // USED 4 CLIENT SIDE ACCESS TO CONTENT AND .AIP FILES
@@ -51,13 +52,13 @@ define("_MAX_LISTLEN",              "2000");
 
 
 // GENERAL WEBSERVICE PARAMETER
-define("_WEBSERVICE_TIMEOUT",        10);
+define("_WEBSERVICE_TIMEOUT",        25);
 
 
 // DATABASE DETAILS
-define("_DB_SERVER",                "127.0.0.1");     
-define("_DB_USER",                  "root");     
-define("_DB_PWD",                   "root");
+define("_DB_SERVER",                "bhl-db1");     
+define("_DB_USER",                  "${DB_USERNAME}");     
+define("_DB_PWD",                   "${DB_PASSWORD}");
 define("_DB_MAIN",                  "int_pi_pi");     
 define("_DB_DEBUG",                 true);
 
@@ -77,23 +78,23 @@ define("_ANALYZE_MAX_DEPTH",        6);            // MAX DIRECTORY STRUCTURE DE
 // --------------
 // ---- NOID ----
 // --------------
-define("_NOID",                     "G:/dev/nhm/ingest/bin/noid/noid -f G:/dev/nhm/ingest/bin/noid/noid/ mint 1");
-define("_NOID_PREFIX",              "99999/a0");
-define("_MINTER_WS",                "");
+define("_NOID",                     "/usr/local/bin/noid -f /var/www/nd/kt5/ mint 1");
+define("_NOID_PREFIX",              "10706/a0");
+define("_MINTER_WS",                "http://bhl-mandible.nhm.ac.uk:3000/mint");
 
 
 // -----------------------------
 // ---- SCHEMA MAPPING TOOL ----
 // -----------------------------
-define("_JAVA_BIN",                 "\"java.exe\"");  // C:/Program Files/Java/jre7/bin/
-define("_SCHEMA_MAPPER",            "G:/dev/nhm/ingest/bin/smt/SMT-cli.jar");
+define("_JAVA_BIN",                 "/mnt/nfs/dev/jdk1.6.0_24/bin/java");
+define("_SCHEMA_MAPPER",            realpath(_ABS."../schema-mapping-tool/cli/dist/smt-cli.jar"));
 define("_SMT",                      _JAVA_BIN." -jar "._SCHEMA_MAPPER." ");
 
 
 // -------------------------------------
 // ---- IMAGE MANIPULATION SPECIFIC ----
 // -------------------------------------
-define("_IMG_MAGICK_CONVERT",       "G:/dev/nhm/ingest/bin/imagemagick/convert.exe");
+define("_IMG_MAGICK_CONVERT",       "/usr/bin/convert");
 define("_IMG_BITPERPIXEL",          8);
 
 define("_IMG_ORI_WIDTH",            2048);
@@ -113,18 +114,25 @@ define("_LOG",                      _ABS."log/");
 // ----------------------------
 // ---- PDF 2 TXT SPECIFIC ----
 // ----------------------------
-define("_XPDF_ABS",                 "G:/dev/nhm/ingest/bin/xpdf/bin32/");
+define("_XPDF_ABS",                 "/usr/bin/");
 define("_PDFTOTEXT",                _XPDF_ABS."pdftotext -nopgbrk -eol unix -f FFFF -l LLLL \"SSSS\" \"OOOO\"");
-define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm.exe -r 40 ");
+define("_PDFTOPPM",                 _XPDF_ABS."pdftoppm -r 80 ");
+define("_PDFINFO",                  _XPDF_ABS.'pdfinfo');
+define("_PDFFONTS",                 _XPDF_ABS.'pdffonts');
 
+/**
+ * PDFTK Paths & Parameters 
+ */
+define("_PDFTK",                    '/usr/bin/pdftk');
+define("_PDFTK_DATA",               'dump_data');
 
 // ----------------------
 // ---- OCR SPECIFIC ----
 // ----------------------
-define("_OCR_ABS",                  "G:/dev/nhm/ingest/bin/tesseract/");
+define("_OCR_ABS",                  "/usr/local/bin/");     // /usr/local/share/tessdata/
 define("_OCR_DAT",                  _OCR_ABS."tessdata/");
-define("_TESSERACT",                _OCR_ABS."tesseract.exe");
-define("_OCR_TIMEOUT",              20);
+define("_TESSERACT",                _OCR_ABS."tesseract");
+define("_OCR_TIMEOUT",              25);
 
 
 // -------------------------------
@@ -191,6 +199,11 @@ define ("_DEFAULT_IPR",               0);                // REFERENCES TO THE LI
 define ("_MB_ABS",                   _ABS."stomp-client/");
 define ("_MB_URL",                   "tcp://bhl-mandible.nhm.ac.uk:61613");
 
+// -----------------------------
+// --- Namespace definitions ---
+// -----------------------------
 
-
-?>
+define( '_NAMESPACE_MODS',          'http://www.loc.gov/mods/v3' );
+define( '_NAMESPACE_DC',            'http://purl.org/dc/elements/1.1/' );
+define( '_NAMESPACE_METS',          'http://www.loc.gov/METS/' );
+define( '_NAMESPACE_RDF_SYNTAX',    'http://www.w3.org/1999/02/22-rdf-syntax-ns#' );

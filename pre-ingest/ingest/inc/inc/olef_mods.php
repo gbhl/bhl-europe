@@ -118,9 +118,8 @@ else {
         $biNode = $biNodes->item(0);
         
         // Try to find existing recordContentSource entry
-        $modsNS = 'http://www.loc.gov/mods/v3';     // Default mods namespace
         $bRcsEntryFound = false;
-        $rcsNodes = $domDoc->getElementsByTagNameNS($modsNS, 'recordContentSource');
+        $rcsNodes = $domDoc->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordContentSource');
         for( $i = 0; $i < $rcsNodes->length; $i++ ) {
             // Check if node already contains correct entry
             if( strcasecmp($rcsNodes->item($i)->nodeValue, $recordContentSource) == 0 ) {
@@ -132,10 +131,10 @@ else {
         // If we did not find a valid entry, add it
         if( !$bRcsEntryFound ) {
             // Create missing recordContentSource
-            $rcsNode = $domDoc->createElementNS($modsNS, 'recordContentSource', $recordContentSource );
+            $rcsNode = $domDoc->createElementNS(_NAMESPACE_MODS, 'recordContentSource', $recordContentSource );
 
             // Try to find recordInfo node
-            $riNodes = $domDoc->getElementsByTagNameNS($modsNS, 'recordInfo');
+            $riNodes = $domDoc->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordInfo');
             $riNode = null;
             // Attach recordContentSource node to first recordInfo node
             if( $riNodes->length > 0 ) {
@@ -143,7 +142,7 @@ else {
             }
             else {
                 // Create new recordInfo node
-                $riNode = $domDoc->createElementNS($modsNS, 'recordInfo' );
+                $riNode = $domDoc->createElementNS(_NAMESPACE_MODS, 'recordInfo' );
                 $biNode->appendChild($riNode);
             }
             // Finally append recordContentSource node
