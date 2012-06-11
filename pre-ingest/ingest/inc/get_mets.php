@@ -113,7 +113,6 @@ if (file_exists($olef_file))
         }
 
         $docRoot = $domDoc->documentElement;
-
         $allElements = $domDoc->getElementsByTagName('*');      // RETURNS A NEW INSTANCE OF CLASS DOMNODELIST
 
         // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
@@ -127,6 +126,8 @@ if (file_exists($olef_file))
             if ($i>0)  include("inc/mets_page.php");
         }
 
+        // Nicely format the output
+        $domDoc->formatOutput = true;
         $xmlStr = $domDoc->saveXML();
 
         //$xmlStr = str_replace(array("&gt;","&lt;","\n\n"),array(">","<","\n"),$xmlStr);

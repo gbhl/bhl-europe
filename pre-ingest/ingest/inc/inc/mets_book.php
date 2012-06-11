@@ -11,6 +11,26 @@
 
 // INCOMING: $curElement, $nodeAttributes, $nodeValue
 
+/*// Find root mets node
+$metsNodeList = $domDoc->getElementsByTagNameNS(_NAMESPACE_METS, 'mets');
+if( $metsNodeList->length > 0 ) {
+    $metsNode = $metsNodeList->item(0);
+    
+    // Updated OBJ-ID attribute
+    $metsNode->setAttribute( 'OBJID', $cleanObjID );
+    
+    // Find rdf description node
+    $rdfDescriptionNodeList = $dom->getElementyByTagNameNS(_NAMESPACE_RDF_SYNTAX, 'Description');
+    if( $rdfDescriptionNodeList->length > 0 ) {
+        $rdfDescriptionNode = $rdfDescriptionNodeList->item(0);
+        
+        $rdfDescriptionNode->setAttributeNS();
+    }
+}
+// Fatal - no root mets entry found - failing
+else {
+    
+}*/
 
 
 
@@ -77,6 +97,18 @@ if ($nodeValue=='*olefdata')
         // Load original OLEF
         $olefDom = new DOMDocument();
         $olefDom->load($olef_file);
+        
+        // Find title tag for use within dc:title
+        $titleInfoNodeList = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'titleInfo');
+        // Check if we found a titleInfo entry
+        if( $titleInfoNodeList->length > 0 ) {
+            // Find all dublin-core title fields
+            $titleNodeList = $domDoc->getElementsByTagNameNS(_NAMESPACE_DC, 'title');
+            // Cycle through entries and assign them the mods titleInfo value
+            for( $i = 0; $i < $titleNodeList->length; $i++ ) {
+                $titleNodeList->item($i)->nodeValue = $titleInfoNodeList->item(0)->nodeValue;
+            }
+        }
         
         // Remove OLEF placeholders in template
         $removeNode = null;
