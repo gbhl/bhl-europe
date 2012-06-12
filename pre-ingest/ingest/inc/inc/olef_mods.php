@@ -61,8 +61,8 @@ if (!file_content_exists($olef_file,"accessCondition",true,true))
         @$domDoc->load($olef_file);
 
         // ADD NODE     mods:accessCondition to bibliographicInformation
-        $node2 = $domDoc->createElementNS('http://www.loc.gov/mods/v3', 'mods:accessCondition', $arrContentDetails['content_ipr'] );
-        $node2->setAttributeNS('http://www.loc.gov/mods/v3', 'type', 'use and reproduction' );
+        $node2 = $domDoc->createElementNS(_NAMESPACE_MODS, 'accessCondition', $arrContentDetails['content_ipr'] );
+        $node2->setAttributeNS(_NAMESPACE_MODS, 'type', 'use and reproduction' );
 
         $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
@@ -108,6 +108,23 @@ else {
     // Use first node to find out the namespace-uri
     $olefNode = $olefNodes->item(0);
     $olefNS = $olefNode->namespaceURI;
+    
+    // Check if the level information is set, if not add it
+    $levelNodes = $domDoc->getElementsByTagNameNS($olefNS, 'level');
+    if( $levelNodes->length <= 0 ) {
+        $levelNode = $domDoc->createElementNS($olefNS, 'level');
+        
+        // Check if we are within a serial
+        if( $cType=='serial' ) {
+            $levelNode->nodeValue = $arrSerialLevels[$sLevel];
+        }
+        else {
+            $levelNode->nodeValue = 'monograph';
+        }
+        
+        // Finally append node
+        $olefNode->appendChild($levelNode);
+    }
     
     // Find bibliographicInformation
     $biNodes = $domDoc->getElementsByTagNameNS($olefNS, 'bibliographicInformation');
@@ -175,7 +192,7 @@ if (!file_content_exists($olef_file,"<olef:",true,true))
 }
 */
 
-echo "OLEF mods done.\n";
+echo "Updating OLEF information done.\n";
 
 echo "\n\n</pre>\n";
 

@@ -4,6 +4,7 @@
 // ** PURPOSE: BHLE INGESTION & PREPARATION  **
 // ** DATE:    23.01.2012                    **
 // ** AUTHOR:  ANDREAS MEHRRATH              **
+// ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 // ENTSPRECHENDES PAGE OBJEKT IN OLEF MIT PAGE SEITEN (ALS NAMEN) UND TAXONS ERZEUGEN
 
@@ -201,6 +202,9 @@ for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
                 $node->setAttribute("pageType",$arrPageInfos[2]);
              else                       
                 $node->setAttribute("pageType",_DEFAULT_PAGETYPE);
+             
+             // Add absolute sequence to page info
+             $node->setAttribute('sequence', $arrPageInfos[1]);
                 
              $curParent = $curParent->appendChild($node);
             break;
@@ -269,7 +273,3 @@ else                             echo _ERR." OLEF page elements could not be wri
 
 
 echo "\n\n</pre>\n";
-
-
-
-?>
