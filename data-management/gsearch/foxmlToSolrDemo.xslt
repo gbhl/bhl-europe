@@ -6,7 +6,6 @@
 	xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:mods="http://www.loc.gov/mods/v3"
-	xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/"
 	xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
@@ -143,29 +142,36 @@
 		</delete>
 	</xsl:template>
 
+        <!-- OLEF processing tempate, uses local-name() to be compatible with different namespaces -->
 	<xsl:template match="olef" name="olef">
-		<xsl:for-each select="olef:element/olef:bibliographicInformation">
-			<xsl:call-template name="mods" />
-		</xsl:for-each>
-		<xsl:for-each select="olef:element/olef:itemInformation">
-			<xsl:for-each select="olef:files/olef:file/olef:pages/olef:page/olef:taxon/dwc:scientificName">
-				<xsl:element name="field">
-					<xsl:attribute name="name">olef_scientific_name</xsl:attribute>
-					<xsl:value-of select="." />
-				</xsl:element>
-			</xsl:for-each>
-		</xsl:for-each>
-		<xsl:for-each select="olef:element/olef:guid">
-			<xsl:element name="field">
-				<xsl:attribute name="name">olef_guid</xsl:attribute>
-				<xsl:value-of select="."/>
-			</xsl:element>
-		</xsl:for-each>
-		<xsl:for-each select="olef:element/olef:parentGUID">
-			<xsl:element name="field">
-				<xsl:attribute name="name">olef_parentGUID</xsl:attribute>
-				<xsl:value-of select="."/>
-			</xsl:element>
+		<xsl:for-each select="*[local-name()='element']">
+                    <!-- bibliographic information -->
+                    <xsl:for-each select="*[local-name()='bibliographicInformation']">
+                            <xsl:call-template name="mods" />
+                    </xsl:for-each>
+                    <!-- item information -->
+                    <xsl:for-each select="*[local-name()='itemInformation']">
+                            <xsl:for-each select="*[local-name()='files']/*[local-name()='file']/*[local-name()='pages']/*[local-name()='page']/*[local-name()='taxon']/dwc:scientificName">
+                                    <xsl:element name="field">
+                                            <xsl:attribute name="name">olef_scientific_name</xsl:attribute>
+                                            <xsl:value-of select="." />
+                                    </xsl:element>
+                            </xsl:for-each>
+                    </xsl:for-each>
+                    <!-- guid -->
+                    <xsl:for-each select="*[local-name()='guid']">
+                            <xsl:element name="field">
+                                    <xsl:attribute name="name">olef_guid</xsl:attribute>
+                                    <xsl:value-of select="."/>
+                            </xsl:element>
+                    </xsl:for-each>
+                    <!-- parent guid -->
+                    <xsl:for-each select="*[local-name()='parentGUID']">
+                            <xsl:element name="field">
+                                    <xsl:attribute name="name">olef_parentGUID</xsl:attribute>
+                                    <xsl:value-of select="."/>
+                            </xsl:element>
+                    </xsl:for-each>
 		</xsl:for-each>
 		<!-- As soon as OLEF content from Pre-ingest is coming, we will activate this rule -->
 		<!--<xsl:element name="field">
