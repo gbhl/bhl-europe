@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v1/">
   <xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
 
-  <!-- XSL MODS to OLEF v0.5 -->
+  <!-- XSL MODS to OLEF v0.6 -->
 
   <!-- Rename all elements and add the mods: namespace prefix -->
   <xsl:template match="*" priority="0">
@@ -38,9 +38,6 @@
   <!-- If we have a root-mods entry: rename the mods element and add all required upper elements -->
   <xsl:template match="/mods:mods" priority="1">
     <xsl:element name="olef:olef">
-      <!--<xsl:attribute name="xmlns:xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:attribute>-->
-      <!--<xsl:attribute name="xmlns:mods">http://www.loc.gov/mods/v3</xsl:attribute>
-      <xsl:attribute name="xsi:noNamespaceSchemaLocation">http://bhl.nhm-wien.ac.at/schemas/olef/0.2/olef_v0.2.xsd</xsl:attribute>-->
       <xsl:element name="olef:element">
         <xsl:element name="olef:bibliographicInformation">
           <xsl:apply-templates />
