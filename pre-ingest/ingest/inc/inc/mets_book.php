@@ -105,8 +105,8 @@ if ($nodeValue=='*olefdata')
             // Find all dublin-core title fields
             $titleNodeList = $domDoc->getElementsByTagNameNS(_NAMESPACE_DC, 'title');
             // Cycle through entries and assign them the mods titleInfo value
-            for( $i = 0; $i < $titleNodeList->length; $i++ ) {
-                $titleNodeList->item($i)->nodeValue = $titleInfoNodeList->item(0)->nodeValue;
+            for( $k = 0; $k < $titleNodeList->length; $k++ ) {
+                $titleNodeList->item($k)->nodeValue = $titleInfoNodeList->item(0)->nodeValue;
             }
         }
         
