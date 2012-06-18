@@ -3,7 +3,7 @@
 	<xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
 		<xsl:variable name="var_refNum" select="refNum:refNum"/>
-		<olef xmlns="http://www.bhl-europe.eu/bhl-schema/v0.3/" xmlns:o-ex="http://odrl.net/1.1/ODRL-EX" xmlns:dcelem="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:enc="http://www.w3.org/2001/04/xmlenc#">
+		<olef xmlns="http://www.bhl-europe.eu/bhl-schema/v1/" xmlns:o-ex="http://odrl.net/1.1/ODRL-EX" xmlns:dcelem="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:enc="http://www.w3.org/2001/04/xmlenc#">
 			<xsl:attribute name="xsi:schemaLocation" namespace="http://www.w3.org/2001/XMLSchema-instance">http://www.bhl-europe.eu/bhl-schema/v0.3/ http://www.bhl-europe.eu/bhl-schema/v0.3/OLEF_v0.3.xsd</xsl:attribute>
 			<element xmlns="">
 				<bibliographicInformation>
