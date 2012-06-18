@@ -24,9 +24,18 @@ class MessageHelper {
 	 * Send a message containing GUID and URI to ActiveMQ queue ('preingest' by default) to indicate this SIP is ready to ingest.
 	 */
 	public function informIngest ($guid, $uri) {
+            try {
 		$this->_client->connect();
 		$this->_client->send($this->_queue, $this->transformToMapMessage($guid, $uri), array('persistent'=>'true'));
 		$this->_client->disconnect();
+                
+                return true;
+            }
+            catch(Exception $e) {
+                print($e->getMessage());
+            }
+
+            return false;
 	}
 	
 	/**
