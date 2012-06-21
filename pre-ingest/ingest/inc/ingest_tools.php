@@ -211,7 +211,7 @@ function getOCRlang($content_id,$olef_file=_OLEF_FILE)
       // $nodeAttributes = $curElement->attributes;
          $nodeName = trim($curElement->nodeName);
          
-         if ($nodeName=="mods:language")
+         if ($nodeName=="mods:languageTerm")
          {
              $olefLang = strtolower(trim($curElement->nodeValue));
              break;

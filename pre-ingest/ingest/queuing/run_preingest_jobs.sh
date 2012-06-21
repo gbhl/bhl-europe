@@ -40,11 +40,14 @@ find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
 
 # **********************************
 # INVOKE SCRIPTS IN CURRENT $execDir
+# invoke mv on each after the exec so that reporting back to the web interface is in synch
+# rather than waiting for all to complete
 # **********************************
-find $execDir -maxdepth 1 -name '*.sh' -type f -exec sh {} >> $logDest ';'
-
+find $execDir -maxdepth 1 -name '*.sh' -type f -exec sh {} >> $logDest ';' -exec
+ mv {} $archDir ';'
 
 # ARCHIVE & CLEANUP
+# should no longer be needed
 
 find $execDir -maxdepth 1 -name '*.sh' -type f -exec mv {} $archDir ';'
 

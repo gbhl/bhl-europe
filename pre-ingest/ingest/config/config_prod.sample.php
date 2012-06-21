@@ -130,7 +130,7 @@ define("_PDFTK_DATA",               'dump_data');
 // ---- OCR SPECIFIC ----
 // ----------------------
 define("_OCR_ABS",                  "/usr/local/bin/");     // /usr/local/share/tessdata/
-define("_OCR_DAT",                  _OCR_ABS."tessdata/");
+define("_OCR_DAT",                  "/usr/local/share/tessdata/");
 define("_TESSERACT",                _OCR_ABS."tesseract");
 define("_OCR_TIMEOUT",              25);
 
