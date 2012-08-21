@@ -43,9 +43,9 @@
 		<step id="ingest" next="activation">
 			<tasklet task-executor="taskExecutor" throttle-limit="1">
 				<chunk reader="sipReader" writer="sipWriter" commit-interval="${batch.commit.interval}" retry-limit="5">
-                                    <retriable-exception-classes>
+                                    <retryable-exception-classes>
                                         <include class="com.bhle.ingest.batch.IngestException" />
-                                    </retriable-exception-classes>
+                                    </retryable-exception-classes>
                                 </chunk>
 			</tasklet>
 		</step>
