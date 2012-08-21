@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # *************************************************
 # A. MEHRRATH PRE-INGEST JOB RUNNER [BASIC VERSION]
 # W. KOLLER CODE FOR PARALLEL PROCESSING ADDED
