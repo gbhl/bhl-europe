@@ -28,10 +28,17 @@
 
 $tesseractMappings = array (
     'eng'=>',english,us,uk,kingdom,common,england,engl,eng,en,',
-    'deu'=>',deutsch,german,de,deu,deut,ge,germ,',
-    'fra'=>',france,francaise,frenc,french,franz,fr,fra,fran,',
+    'deu'=>',deutsch,german,de,deu,deut,ge,germ,ger,',
+    'fra'=>',france,francaise,frenc,french,franz,fr,fra,fran,fre,',
     'dan'=>',danish,dan,dk,',
-    'spa'=>',spanish,espaniol,esp,es,span,espan,'
+    'spa'=>',spanish,espaniol,esp,es,span,espan,',
+	'fin'=>',finnish,fin,fi,',
+    'hun'=>',hungarian,hun,hu,',
+    'ces'=>',czech,cz,ceska,ces,',
+    'por'=>',portuguese,por,pt,',
+    'pol'=>',polish,pol,pl,',
+    'ita'=>',italian,ita,it,',
+    'nld'=>',dutch,dut,nl,nld,'
 );
 
 

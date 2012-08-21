@@ -78,7 +78,6 @@ while [ 1 ]; do
 done
 
 # ARCHIVE & CLEANUP
-
 find $execDir -maxdepth 1 -name '*.sh' -type f -exec mv {} $archDir ';'
 
 # CLEAN EMPTY (30MIN) LOGS

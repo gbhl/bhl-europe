@@ -29,6 +29,9 @@ if ((!is_array($inputFile)) && (file_exists($inputFile)))
     $return_var = "";
     @unlink($olef_file);
     
+	# ensure the subshell locale is UTF-8
+	$myCmd = 'LANG="en_GB.UTF-8"; ' .$myCmd;
+	
     echo "\n\nCommand: ".$myCmd."\n";
     
     $rLine = @exec($myCmd, $output, $return_var);
