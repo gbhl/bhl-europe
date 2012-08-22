@@ -96,14 +96,36 @@ $nrows  = mysql_num_rows($result);
 
 if ($nrows>0)
 {
-    $line = mysql_fetch_array($result);
+    $ingestedItems = array();
     
-    while ($line)
+    while( ($line = mysql_fetch_array($result)) || count($ingestedItems) > 0 )
     {
+        // Ingested items are displayed last
+        if( $line && $line[10]>3 ) {
+            $ingestedItems[] = $line;
+            continue;
+        }
+        // If line is false, then only ingestedItems are left
+        else {
+            $line = array_shift($ingestedItems);
+        }
+        
+        // Check status of item
+        $jobRunning = is_content_job_running($line[0]);
+        $ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
+
         $isPDF = isPDF($line[5]);
 
         // TIMES
-        echo "<tr style=\"border-bottom: 1px solid #888888;\"><td>";
+        if( $jobRunning ) {
+            echo '<tr style="border-bottom: 1px solid #888888;"><td>';
+        }
+        else if( $ingestDone ) {
+            echo '<tr style="border-bottom: 1px solid #DCDCDC;"><td>';
+        }
+        else {
+            echo '<tr style="border-bottom: 1px solid #888888; background-color: #BBFFBB;"><td>';
+        }
         
         // TRY GET & DISPLAY MEDIA PREVIEW
         echo "<table border=0 cellmargin=0 cellpadding=0><tr><td>";
@@ -163,8 +185,6 @@ if ($nrows>0)
         include("content_list_buttons.php");
 
         echo "</td></tr>\n";
-
-        $line = mysql_fetch_array($result);
     }
     
     echo _TAB;
