@@ -42,8 +42,7 @@ if ($menu_nav=='get_mets')
 else if ((_QUEUE_MODE)&&($menu_nav!='get_metadata'))
 {
     echo queue_add($curQueueFile, $arrQueueCommands);
+    echo queue_done($curQueueFile);
 }
 
 unset($arrQueueCommands);
-
-?>

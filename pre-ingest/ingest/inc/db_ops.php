@@ -223,6 +223,7 @@ if ($sub_action == "drop_content")
 
         // DELETE QUEUE SCRIPT FILE
         @unlink($curQueueFile);
+        @unlink($curQueueFile . _QUEUE_SUFFIX);
 
         // ALLE .AIP DIR UNTER CONTENTDIR LOESCHEN
         $arrFiles = getDirectory($contentDir,array(),0,"",_ANALYZE_MAX_DEPTH);
