@@ -59,7 +59,8 @@ find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
 # **********************************
 for file in ${execDir}*.sh
 do
-    sh $file &>> ${logDest} &
+    # run script, once it is done move to archive dir
+    bash $file &>> ${logDest} && mv $file $archDir &
     let processCount+=1
 
     # prevent spawning to many processes
@@ -76,9 +77,6 @@ while [ 1 ]; do
         break
     fi
 done
-
-# ARCHIVE & CLEANUP
-find $execDir -maxdepth 1 -name '*.sh' -type f -exec mv {} $archDir ';'
 
 # CLEAN EMPTY (30MIN) LOGS
 
