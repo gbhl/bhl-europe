@@ -24,8 +24,6 @@
  * 
  */
 
-$jobRunning = is_content_job_running($line[0]);
-
 $text201 = "currently running or in queue ...";
 
 
@@ -145,7 +143,7 @@ jQuery.noConflict();
 
 if ($line[10]>3)
 {
-    if (file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY))
+    if ($ingestDone)
     {
          icon("planning0.png",
               "Media was already released and ingested see Fedora logs.",
