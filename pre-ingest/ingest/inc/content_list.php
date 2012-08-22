@@ -106,7 +106,7 @@ if ($nrows>0)
             continue;
         }
         // If line is false, then only ingestedItems are left
-        else {
+        else if(count($ingestedItems) > 0) {
             $line = array_shift($ingestedItems);
         }
         
@@ -121,7 +121,7 @@ if ($nrows>0)
             echo '<tr style="border-bottom: 1px solid #888888;"><td>';
         }
         else if( $ingestDone ) {
-            echo '<tr style="border-bottom: 1px solid #DCDCDC;"><td>';
+            echo '<tr style="border-bottom: 1px solid #888888; background-color: #DCDCDC;"><td>';
         }
         else {
             echo '<tr style="border-bottom: 1px solid #888888; background-color: #BBFFBB;"><td>';
