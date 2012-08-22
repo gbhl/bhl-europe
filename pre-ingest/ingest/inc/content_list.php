@@ -100,19 +100,27 @@ if ($nrows>0)
     
     while( ($line = mysql_fetch_array($result)) || count($ingestedItems) > 0 )
     {
+        $ingestDone = false;
+
         // Ingested items are displayed last
-        if( $line && $line[10]>3 ) {
-            $ingestedItems[] = $line;
-            continue;
+        if( $line ) {
+            // Check ingest status of item
+            $ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
+            
+            if( $line[10]>3 && $ingestDone ) {
+                $ingestedItems[] = $line;
+                continue;
+            }
         }
         // If line is false, then only ingestedItems are left
-        else if(count($ingestedItems) > 0) {
+        else {
             $line = array_shift($ingestedItems);
+            // Check ingest status of item
+            $ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
         }
         
-        // Check status of item
+        // check if a job is currently running
         $jobRunning = is_content_job_running($line[0]);
-        $ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
 
         $isPDF = isPDF($line[5]);
 
