@@ -130,6 +130,11 @@ for ($l1=0;$l1<$L1n;$l1++)
 
 if (_MODE=='production') close_progressBar();
 
+// if queueing is enabled, we have to finalize the queuing after all steps are done
+if(_QUEUE_MODE) {
+    queue_done($curQueueFile);
+}
+
 
 // *** LAST SUCC STEP FUER SERIALS ***
 

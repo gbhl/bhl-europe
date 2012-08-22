@@ -133,7 +133,7 @@ function queue_add($queueFile, $arrQueueCommands)
 
     if ($nCommands>0)
     {
-        for ($i=0;$i<$nCommands;$i++)
+        /*for ($i=0;$i<$nCommands;$i++)
         {
             // ONLY ADD COMMAND IF NOT EXISTING
             if (!file_content_exists($queueFile,$arrQueueCommands[$i],true,true))
@@ -141,7 +141,9 @@ function queue_add($queueFile, $arrQueueCommands)
                 $content2write .= $arrQueueCommands[$i]."\n";
                 $linesAdded++;
             }
-        }
+        }*/
+        // Write all commands straight ahead
+        $content2write = implode('\n', $arrQueueCommands);
 
         if ($content2write!="")
         $nBytes = file_put_contents($queueFile, "\n".$content2write."\n", FILE_APPEND);
@@ -159,6 +161,18 @@ function queue_add($queueFile, $arrQueueCommands)
     return "Info: Nothing queued.";
 }
 
+/**
+ * Called once the queueing for this step is done, renames the file so that it gets picked up by the scheduler script
+ * @param string $queueFile Name of original queue file
+ * @return string status message
+ */
+function queue_done($queueFile) {
+    if( rename($queueFile, $queueFile . _QUEUE_SUFFIX) ) {
+        return "Queue file successfully renamed";
+    }
+    
+    return "Unable to rename queue file - queueing not successful";
+}
 
 
 // ********************************************************
