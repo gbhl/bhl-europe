@@ -89,7 +89,7 @@ if (isset($user_id))
         $destDir     = clean_path($contentDir . "/" . _AIP_DIR . "/");
         if (!is_dir($destDir))      @mkdir($destDir);
 
-        $curQueueFile = clean_path(_USER_WORKDIR._QUEUE_PREFIX.$content_id._QUEUE_SUFFIX);
+        $curQueueFile = clean_path(_USER_WORKDIR._QUEUE_PREFIX.$content_id);
 
         $isPDF = false;
 
@@ -105,5 +105,3 @@ if (isset($user_id))
     }
     
 }
-
-?>
