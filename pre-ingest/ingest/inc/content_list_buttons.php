@@ -39,7 +39,7 @@ else                     icon("metadata0.png","Metadata already prepared.",$comm
 // -------- queueable methods start -----
 
 // IMAGES (2)
-$command = "onClick=\"javascript: popup_win('pi','"._SYSTEM."?menu_nav=get_images&content_id=".$line[0]."',1000,500);\"";
+$command = "onClick=\"javascript: popup_win('pi_" . $line[0] . "','"._SYSTEM."?menu_nav=get_images&content_id=".$line[0]."',1000,500);\"";
 
 if (($jobRunning) && ($line[10]==1))
     icon("tif32_anim.gif",      "Image Processing ".$text201);
@@ -55,7 +55,7 @@ else
 
 if (!$isPDF)   // FALLS NICHT PDF
 {
-    $command = "onClick=\"javascript: popup_win('po','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."',1000,500);\"";
+    $command = "onClick=\"javascript: popup_win('po_" . $line[0] . "','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."',1000,500);\"";
     
     if (($jobRunning) && ($line[10]==2))
         icon("ocr_anim.gif",       "OCR ".$text201);
@@ -68,7 +68,7 @@ if (!$isPDF)   // FALLS NICHT PDF
 }
 else           // PDF TO TEXT & TIF HERE
 {
-    $command = "onClick=\"javascript: popup_win('pp','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."&pdf=1',1000,500);\"";
+    $command = "onClick=\"javascript: popup_win('pp_" . $line[0] . "','"._SYSTEM."?menu_nav=get_ocr&content_id=".$line[0]."&pdf=1',1000,500);\"";
     
     if (($jobRunning) && ($line[10]==2))
         icon("pdf2txt_anim.gif",   "PDF to Text ".$text201);
@@ -82,7 +82,7 @@ else           // PDF TO TEXT & TIF HERE
 
 
 // TAXON (4)
-$command = "onClick=\"javascript: popup_win('tx','"._SYSTEM."?menu_nav=get_taxons&content_id=".$line[0]."',1000,500);\"";
+$command = "onClick=\"javascript: popup_win('tx_" . $line[0] . "','"._SYSTEM."?menu_nav=get_taxons&content_id=".$line[0]."',1000,500);\"";
 
 if (($jobRunning) && ($line[10]==3))
     icon("taxon_anim.gif",          "Taxonfinder ".$text201);
@@ -101,7 +101,7 @@ else
 
 // METS INGEST CONTROL FILES
 
-$command = "onClick=\"javascript: popup_win('in','"._SYSTEM."?menu_nav=get_mets&content_id=".$line[0]."',1000,500);\"";
+$command = "onClick=\"javascript: popup_win('in_" . $line[0] . "','"._SYSTEM."?menu_nav=get_mets&content_id=".$line[0]."',1000,500);\"";
 
 if (!isset($endJS)) $endJS = "";
 
