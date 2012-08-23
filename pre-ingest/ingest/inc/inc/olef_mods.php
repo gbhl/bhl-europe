@@ -59,10 +59,20 @@ if (!file_content_exists($olef_file,"accessCondition",true,true))
         // LOAD OLEF TO DOM
         $domDoc   = new DOMDocument();
         @$domDoc->load($olef_file);
+        
+        // Find the titleInfo tag, which always should be present and extract the namespace prefix
+        $modsns_prefix = 'mods';
+        $tis = $domDoc->getElementsByTagNameNS(_NAMESPACE_MODS, 'titleInfo');
+        if( $tis->length > 0 ) {
+            $modsns_prefix = $tis->item(0)->prefix;
+        }
 
         // ADD NODE     mods:accessCondition to bibliographicInformation
-        $node2 = $domDoc->createElementNS(_NAMESPACE_MODS, 'accessCondition', $arrContentDetails['content_ipr'] );
-        $node2->setAttributeNS(_NAMESPACE_MODS, 'type', 'use and reproduction' );
+        // We are using this quirky way, since the PHP XML processor seems to have a problem with pre-defined namespace prefixes
+        //$node2 = $domDoc->createElementNS(_NAMESPACE_MODS, 'accessCondition', $arrContentDetails['content_ipr'] );
+        $node2 = $domDoc->createElement($modsns_prefix . ':accessCondition', $arrContentDetails['content_ipr']);
+        $node2->setAttribute('xmlns:' . $modsns_prefix, _NAMESPACE_MODS);
+        $node2->setAttribute($modsns_prefix . ':type', 'use and reproduction' );
 
         $bis = $domDoc->getElementsByTagName("bibliographicInformation");
 
