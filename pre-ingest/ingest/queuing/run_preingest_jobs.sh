@@ -7,11 +7,10 @@
 # PARALLELISM THROUGH TIME DEPENDANT EXECUTION 
 # DIRECTORY (SCIPTS MOVE TO).
 # *************************************************
-# TODOS: UMLEITUNG DER AUSGABE IN (ERR) LOGFILE
-#        TESTING
-# *************************************************
-#
+
+# ******
 # CONFIG
+# ******
 rootDir="/mnt/nfs/dev/opt/pre-ingest/ingest"
 
 # Enable monitor mode
@@ -23,10 +22,9 @@ function childDone
     let processCount-=1
 }
 
-# Enable monitoring of childs
-trap "childDone" SIGCHLD
-
+# ****
 # INIT
+# ****
 # process counting
 processCount=0
 # maximum processes limited to number of CPUs
@@ -57,11 +55,17 @@ find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
 # INVOKE SCRIPTS IN CURRENT $execDir
 # optimized to allow parallel processing of all sh files within a single run
 # **********************************
+# Enable monitoring of childs
+trap "childDone" SIGCHLD
+
+# cycle through all scripts waiting to be executed
 for file in ${execDir}*.sh
 do
     # run script, once it is done move to archive dir
     bash $file &>> ${logDest} && mv $file $archDir &
     let processCount+=1
+
+    echo "Executing $file ($processCount / $maxProcesses)"
 
     # prevent spawning to many processes
     while [ $processCount -ge $maxProcesses ]; do
@@ -70,30 +74,26 @@ do
 done
 
 # wait for all processes to finish
-while [ 1 ]; do
+while [ $processCount -gt 0 ]; do
     wait
-    if [ $? -eq 0 ]
-    then
-        break
-    fi
 done
 
+# disable monitoring of childs
+trap - SIGCHLD
+
+# ************************
 # CLEAN EMPTY (30MIN) LOGS
-
+# ************************
 find $rootDir/log/ -name '*.log' -type f -size 0    -exec rm -f {} ';'
-
 find $rootDir/log/ -name '*.log' -type f -mtime +31 -exec rm -f {} ';'
-
 find $archDir      -name '*.sh'  -type f -mtime +31 -exec rm -f {} ';'
 
 
-# ETWAIGE ARTEFAKTE DROPPEN
-
+# **************
+# DROP ARTEFACTS
+# **************
 rm -f $execDir'*.*'
-
 rmdir $execDir
 
 # -- end --
-
 printf '\n******************** END ********************\n\n'
-
