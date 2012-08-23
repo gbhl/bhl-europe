@@ -7,7 +7,7 @@
 // ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 
-define("_APP_VERSION",       "1.97");
+define("_APP_VERSION",       "1.98");
 
 define("_APP_NAME",          "BHL-E Content Portal & Ingestion");
 
