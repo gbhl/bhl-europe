@@ -143,7 +143,7 @@ function queue_add($queueFile, $arrQueueCommands)
             }
         }*/
         // Write all commands straight ahead
-        $content2write = implode('\n', $arrQueueCommands);
+        $content2write = implode("\n", $arrQueueCommands);
 
         if ($content2write!="")
         $nBytes = file_put_contents($queueFile, "\n".$content2write."\n", FILE_APPEND);
