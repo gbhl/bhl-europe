@@ -13,9 +13,9 @@
 # ******
 rootDir="/mnt/nfs/dev/opt/pre-ingest/ingest"
 
-# Enable monitor mode
-set -m
-
+# *********
+# FUNCTIONS
+# *********
 # trap function for handling exiting childs
 function childDone
 {
@@ -25,6 +25,13 @@ function childDone
 # ****
 # INIT
 # ****
+# log file
+now=`date +"%Y%m%d-%H%M"`
+logDest="$rootDir/log/$now.log"
+
+# redirect complete output to log file
+exec &> $logDest 
+
 # process counting
 processCount=0
 # maximum processes limited to number of CPUs
@@ -33,20 +40,19 @@ maxProcesses=`cat /proc/cpuinfo | grep processor | wc -l`
 # working dir
 sourceDir="$rootDir/temp/"
 
-# log file
-now=`date +%Y_%m_%d_%H_%M_%S`
-logDest="$rootDir/log/log_$now.log"
 
 # queueing dirs
-execDir="$rootDir/queuing/running/preparation_$now/"
-archDir="$rootDir/queuing/archive/"
+runDir="preparation_$now/"
+execDir="$rootDir/queuing/running/$runDir"
+archDir="$rootDir/queuing/archive/$runDir"
 
 printf '\n*********************************************************************************************************\n'
 printf "TRY TO GET AND EXECUTE SCRIPTS FROM $sourceDir IN $execDir.\n"
 printf '*********************************************************************************************************\n'
 
-# create execution directory
+# create execution & archive directory
 mkdir $execDir
+mkdir $archDir
 
 # MOVE CP'S SCRIPTS TO INDIVIDUAL EXECUTION DIRECTORY (1 INVOKE ONLY)
 find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
@@ -56,13 +62,14 @@ find $sourceDir -maxdepth 2 -name '*.sh' -type f -exec mv {} $execDir ';'
 # optimized to allow parallel processing of all sh files within a single run
 # **********************************
 # Enable monitoring of childs
+set -m
 trap "childDone" SIGCHLD
 
 # cycle through all scripts waiting to be executed
 for file in ${execDir}*.sh
 do
     # run script, once it is done move to archive dir
-    bash $file &>> ${logDest} && mv $file $archDir &
+    bash $file && mv $file $archDir &
     let processCount+=1
 
     echo "Executing $file ($processCount / $maxProcesses)"
@@ -84,9 +91,9 @@ trap - SIGCHLD
 # ************************
 # CLEAN EMPTY (30MIN) LOGS
 # ************************
-find $rootDir/log/ -name '*.log' -type f -size 0    -exec rm -f {} ';'
-find $rootDir/log/ -name '*.log' -type f -mtime +31 -exec rm -f {} ';'
-find $archDir      -name '*.sh'  -type f -mtime +31 -exec rm -f {} ';'
+#find $rootDir/log/ -name '*.log' -type f -size 0    -exec rm -f {} ';'
+#find $rootDir/log/ -name '*.log' -type f -mtime +31 -exec rm -f {} ';'
+#find $archDir      -name '*.sh'  -type f -mtime +31 -exec rm -f {} ';'
 
 
 # **************
