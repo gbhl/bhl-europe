@@ -30,7 +30,7 @@ $text201 = "currently running or in queue ...";
 
 
 // METADATA (1)
-$command = "onClick=\"javascript: popup_win('gm','"._SYSTEM."?menu_nav=get_metadata&content_id=".$line[0]."',1000,500);\""; 
+$command = "onClick=\"javascript: popup_win('gm_" . $line[0] . "','"._SYSTEM."?menu_nav=get_metadata&content_id=".$line[0]."',1000,500);\""; 
 
 if ($line[10]==0)        icon("metadata.png","Prepare Metadata now...",$command); 
 else                     icon("metadata0.png","Metadata already prepared.",$command); 
