@@ -50,7 +50,10 @@ public class InboundJMSMessageProcessor {
 		logger.info("Receive JMS message: {}", msg);
 
 		Sip sip = new Sip(guid, URI.create(uri));
+		Message<Sip> message = MessageBuilder.withPayload(sip).build();
 
-		return MessageBuilder.withPayload(sip).build();
+		logger.info("Returning Message<Sip>: {}", message.toString());
+
+		return message;
 	}
 }
