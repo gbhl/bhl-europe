@@ -34,26 +34,28 @@ public class InboundJMSMessageProcessor {
 	@ServiceActivator
 	public Message<Sip> handleIncomingJmsMessage(
 			Message<String> inboundJmsMessage) throws Throwable {
-		String msg = inboundJmsMessage.getPayload();
-		JSONObject json = JSONObject.fromObject(msg);
-		String guid = json.getString(MSG_GUID_NAME);
-		String uri = json.getString(MSG_URI_NAME);
-
-		if (!guid.startsWith("bhle:")) {
-			guid = "bhle:" + guid;
-		}
-
-		if (uri == null || uri.equals("")) {
-			throw new IllegalArgumentException("Message must contain URI");
-		}
-
-		logger.info("Receive JMS message: {}", msg);
-
-		Sip sip = new Sip(guid, URI.create(uri));
-		Message<Sip> message = MessageBuilder.withPayload(sip).build();
-
-		logger.info("Returning Message<Sip>: {}", message.toString());
-
-		return message;
+//		String msg = inboundJmsMessage.getPayload();
+//		JSONObject json = JSONObject.fromObject(msg);
+//		String guid = json.getString(MSG_GUID_NAME);
+//		String uri = json.getString(MSG_URI_NAME);
+//
+//		if (!guid.startsWith("bhle:")) {
+//			guid = "bhle:" + guid;
+//		}
+//
+//		if (uri == null || uri.equals("")) {
+//			throw new IllegalArgumentException("Message must contain URI");
+//		}
+//
+//		logger.info("Receive JMS message: {}", msg);
+//
+//		Sip sip = new Sip(guid, URI.create(uri));
+//		Message<Sip> message = MessageBuilder.withPayload(sip).build();
+//
+//		logger.info("Returning Message<Sip>: {}", message.toString());
+//
+//		return message;
+		
+		return null;
 	}
 }
