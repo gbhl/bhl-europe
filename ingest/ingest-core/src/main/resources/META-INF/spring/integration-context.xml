@@ -29,12 +29,16 @@
 		channel="inboundJMSMessageChannel" extract-payload="true"
 		destination="inboundDestination" connection-factory="ingestConsumerConnectionFactory" />
 
+	<beans:bean id="jmsToJobProcessor"
+		class="com.bhle.ingest.integration.JMSToJobProcessor">
+	</beans:bean>
+
 	<beans:bean id="inboundJMSMessageProcessor"
 		class="com.bhle.ingest.integration.InboundJMSMessageProcessor" />
 	<!-- inboundJMSMessageChannel -->
 	<service-activator output-channel="inboundSipChannel"
 		ref="inboundJMSMessageProcessor"
-		input-channel="" />
+		input-channel="inboundJMSMessageChannel" />
 
 	<!-- <channel id="inboundFileChannel" />
 
@@ -78,7 +82,4 @@
 	<service-activator input-channel="inboundJMSMessageChannel"
 		output-channel="jobLaunchChannel" ref="jmsToJobProcessor">
 	</service-activator>
-	<beans:bean id="jmsToJobProcessor"
-		class="com.bhle.ingest.integration.JMSToJobProcessor">
-	</beans:bean>
 </beans:beans>
