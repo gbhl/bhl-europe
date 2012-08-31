@@ -1,59 +1,66 @@
 <?php
+// ********************************************
+// ** FILE:    METS_PAGE.PHP                 **
+// ** PURPOSE: prepare page METS data        **
+// ** DATE:    31.08.2012                    **
+// ** AUTHOR:  Wolfgang Koller               **
+// ********************************************
 
-// PARSE + EDIT PAGE XML
+// find root METS element
+$metsElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_METS, 'mets');
+if( $metsElements->length <= 0 ) {
+    throw new Exception("METS root element not found");
+}
+// get (first) root element and assign OBJID
+$metsElement = $metsElements->item(0);
+$metsElement->setAttribute('OBJID', $cleanPageID);
+$metsElement->setAttribute('LABEL', 'Page ' . $i);
 
-
-// ATTRIBUTE DES AKTUELLEN NODES BEARBEITEN
-foreach ($nodeAttributes as $nodeAttribute)
-{
-    if ($nodeName=='METS:mets')
-    {
-        if ($nodeAttribute->name == 'OBJID')
-            $curElement->setAttribute('OBJID',$cleanPageID);
-        
-        if ($nodeAttribute->name == 'LABEL')        
-            $curElement->setAttribute('LABEL','Page '.$i);  // !!! richtige nr verwenden
-    }
-    
-    // PAGE TIFF & OCR PATHS
-    if (($nodeName=='METS:FLocat')&&($nodeAttribute->name == 'href'))
-    {
-        if ($curElement->getAttribute('xlink:title')=='TIFF')
-            $curElement->setAttribute('xlink:href',"file://".clean_path($arrTiffs[($i-1)]));
-        
-        if ($curElement->getAttribute('xlink:title')=='OCR')
-            $curElement->setAttribute('xlink:href',"file://".clean_path($arrOCR[($i-1)]));
-    }
-    
-    // rdf:Description --> rdf:about="info:fedora/bhle:a0hhmgs3-00002"
-    if ($nodeName=='rdf:Description')
-    {
-        if ($nodeAttribute->name == 'about')
-        $curElement->setAttribute('rdf:about','info:fedora/'.$cleanPageID);
-    }
-
-    // <isMemberOf  --> rdf:resource="info:fedora/bhle:a0hhmgs3"
-    //                  rdf:resource="info:fedora/bhle:10706/a0000000000013270571001"
-    if ($nodeName=='isMemberOf')
-    {
-        if ($nodeAttribute->name == 'resource')
-        $curElement->setAttribute('rdf:resource','info:fedora/'.$cleanObjID);
+// find file references
+$flocatElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_METS, 'FLocat');
+if( $flocatElements->length <= 0 ) {
+    throw new Exception("METS FLocat element(s) not found");
+}
+// update all found file references
+foreach( $flocatElements as $flocatElement ) {
+    switch( $flocatElement->getAttributeNS(_NAMESPACE_XLINK, 'title') ) {
+        case 'TIFF':
+            $flocatElement->setAttributeNS(_NAMESPACE_XLINK, 'href', "file://".clean_path($arrTiffs[($i-1)]));
+            break;
+        case 'OCR':
+            $flocatElement->setAttributeNS(_NAMESPACE_XLINK, 'href', "file://".clean_path($arrOCR[($i-1)]));
+            break;
     }
 }
 
-
-// VALUES DES AKTUELLEN NODES BEARBEITEN
-
-if ($nodeName=='dc:identifier')
-{
-    $curElement->nodeValue = $cleanPageID;
+// find rdf:Description
+$rdfElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_RDF_SYNTAX, 'Description');
+if( $rdfElements->length <= 0 ) {
+    throw new Exception("rdf:Description element not found!");
 }
+$rdfElement = $rdfElements->item(0);
+$rdfElement->setAttributeNS(_NAMESPACE_RDF_SYNTAX, 'about', 'info:fedora/'.$cleanPageID);
 
-if ($nodeName=='dc:title')
-{
-    $curElement->nodeValue = "Page ".$i;    // !!! GET PAGE NUMBER FROM $CUR_TIFF BASENAME ?
+// update isMemberOf info as well
+$imoElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_FEDORA_RELATIONS, 'isMemberOf');
+if( $imoElements->length <= 0 ) {
+    throw new Exception("isMemberOf element not found!");
 }
+$imoElement = $imoElements->item(0);
+$imoElement->setAttributeNS(_NAMESPACE_RDF_SYNTAX, 'resource', 'info:fedora/'.$cleanObjID);
 
+// update dc:identifier
+$identifierElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_DC, 'identifier');
+if( $identifierElements->length <= 0 ) {
+    throw new Exception("dc:identifier element not found!");
+}
+$identifierElement = $identifierElements->item(0);
+$identifierElement->nodeValue = $cleanPageID;
 
-
-?>
+// update dc:title
+$identifierElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_DC, 'title');
+if( $identifierElements->length <= 0 ) {
+    throw new Exception("dc:title element not found!");
+}
+$identifierElement = $identifierElements->item(0);
+$identifierElement->nodeValue = "Page " . $i;
