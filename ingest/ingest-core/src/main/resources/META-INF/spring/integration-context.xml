@@ -36,21 +36,16 @@
 	<beans:bean id="inboundJMSMessageProcessor"
 		class="com.bhle.ingest.integration.InboundJMSMessageProcessor" />
 	<!-- inboundJMSMessageChannel -->
-	<service-activator output-channel="inboundSipChannel"
-		ref="inboundJMSMessageProcessor"
-		input-channel="inboundJMSMessageChannel" />
+	
 
 	<!-- <channel id="inboundFileChannel" />
 
 	<transformer input-channel="inboundFileChannel"
 		output-channel="inboundSipChannel" ref="sipTransformer" /> -->
 
-	<channel id="inboundSipChannel">
-		<queue />
-	</channel>
+	
 
-	<transformer ref="jobLaunchRequestTransformer"
-		input-channel="inboundSipChannel" output-channel="jobLaunchChannel" />
+	
 
 	<channel id="jobLaunchChannel" />
 
@@ -58,8 +53,8 @@
 		class="org.springframework.batch.integration.launch.JobLaunchingMessageHandler">
 		<beans:constructor-arg ref="jobLauncher" />
 	</beans:bean>
-	<service-activator input-channel="jobLaunchChannel"
-		output-channel="statusChannel" ref="jobMessageHandler" />
+	<service-activator output-channel="statusChannel"
+		ref="jobMessageHandler" input-channel="jobLaunchChannel" />
 
 	<channel id="statusChannel">
 		<queue capacity="100" />
@@ -80,6 +75,6 @@
 		output-channel="fedoraReplyChannel" ref="fedoraServiceImpl" />
 
 	<service-activator input-channel="inboundJMSMessageChannel"
-		output-channel="jobLaunchChannel" ref="jmsToJobProcessor">
+		ref="jmsToJobProcessor" output-channel="jobLaunchChannel">
 	</service-activator>
 </beans:beans>
