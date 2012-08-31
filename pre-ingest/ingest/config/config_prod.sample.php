@@ -203,7 +203,9 @@ define ("_MB_URL",                   "tcp://bhl-mandible.nhm.ac.uk:61613");
 // --- Namespace definitions ---
 // -----------------------------
 
-define( '_NAMESPACE_MODS',          'http://www.loc.gov/mods/v3' );
-define( '_NAMESPACE_DC',            'http://purl.org/dc/elements/1.1/' );
-define( '_NAMESPACE_METS',          'http://www.loc.gov/METS/' );
-define( '_NAMESPACE_RDF_SYNTAX',    'http://www.w3.org/1999/02/22-rdf-syntax-ns#' );
+define( '_NAMESPACE_MODS',             'http://www.loc.gov/mods/v3' );
+define( '_NAMESPACE_DC',               'http://purl.org/dc/elements/1.1/' );
+define( '_NAMESPACE_METS',             'http://www.loc.gov/METS/' );
+define( '_NAMESPACE_RDF_SYNTAX',       'http://www.w3.org/1999/02/22-rdf-syntax-ns#' );
+define( '_NAMESPACE_FEDORA_RELATIONS', 'info:fedora/fedora-system:def/relations-external#');
+define( '_NAMESPACE_XLINK',            'http://www.w3.org/1999/xlink');
