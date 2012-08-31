@@ -86,7 +86,7 @@ if (file_exists($olef_file))
     {
         ob_start();
 
-        $domDoc = new DOMDocument();    
+        $domDoc = new DOMDocument();
 
         // BOOK METS BEFORE PAGE 1 - MONOGRAPH METS
         if ($i==0) 
@@ -112,37 +112,30 @@ if (file_exists($olef_file))
             $domDoc->load(_ABS."inc/xml/page.xml");
         }
 
-        $docRoot = $domDoc->documentElement;
-        $allElements = $domDoc->getElementsByTagName('*');      // RETURNS A NEW INSTANCE OF CLASS DOMNODELIST
-
-        // NODES DES JEW. TEMPATES DURCHGEHEN UND BEARBEITEN
-        foreach( $allElements as $curElement )
-        {
-            $nodeAttributes = $curElement->attributes;
-            $nodeValue      = trim($curElement->nodeValue);
-            $nodeName       = trim($curElement->nodeName);
-
+        // update mets files
+        try {
             if ($i==0) include("inc/mets_book.php");
             if ($i>0)  include("inc/mets_page.php");
+
+            // Nicely format the output
+            $domDoc->formatOutput = true;
+
+            // write file to output
+            if (file_put_contents($metsFile, $domDoc->saveXML())>0) { 
+                $filesGenerated++;
+
+                echo "METS file: ".basename($metsFile)." \t\t generated...\n";
+            }
+            else {
+                echo _ERR."METS file: ".basename($metsFile)." \t\t generation failed!\n";
+            }
+
+        }
+        catch(Exception $e) {
+            echo _ERR . " METS file generation: " . $e->getMessage();
         }
 
-        // Nicely format the output
-        $domDoc->formatOutput = true;
-        $xmlStr = $domDoc->saveXML();
-
-        //$xmlStr = str_replace(array("&gt;","&lt;","\n\n"),array(">","<","\n"),$xmlStr);
-
-        // OLD: $domDoc->save($metsFile)>0) 
-        if (file_put_contents($metsFile, $xmlStr)>0) 
-        { 
-            $filesGenerated++;
-
-            // LOG
-            echo "METS file: ".basename($metsFile)." \t\t generated...\n";
-        }
-        else
-            echo _ERR."METS file: ".basename($metsFile)." \t\t generation failed!\n";
-
+        // send output
         @ob_end_flush();
         @ob_flush();
         @flush();    
