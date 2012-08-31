@@ -8,202 +8,98 @@
 // ********************************************
 // OLEF MODIFICATIONS POSTPROCESSING
 
-echo "<h3>Finishing OLEF Data</h3><pre>";
-
-
-
-// **********************
-// ADD GUID + PARENT GUID
-// **********************
-if (!file_content_exists($olef_file,"olef:guid",true,true))
-{
-    // LOAD OLEF TO DOM
-    $domDoc   = new DOMDocument();
-    @$domDoc->load($olef_file);
-
-    // ADD NODE TO OLEF ELEMENT
-    $node1 = $domDoc->createElement("olef:guid",$objID);
-
-    $node1b=false;
-    if($objParentID!="") $node1b = $domDoc->createElement("olef:parentGUID",$objParentID);
- 
-    $bis = $domDoc->getElementsByTagName("element");
-
-    foreach($bis as $bi)
-    {
-        $element = $bi;
-        $newnode = $element->appendChild($node1);       // guid
-        if ($node1b) $element->appendChild($node1b);    // parent guid
-    }
-
-    // SPEICHERN MODIFIZIERTEN OLEF
-    if ($domDoc->save($olef_file)>0) echo "GUID added ... ok\n";
-    else                             { echo _ERR." GUID addition failed!\n"; $ingestReady = false; }
+// find root "element" entry of olef data
+$elementElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'element');
+if( $elementElements->length <= 0 ) {
+    throw new Exception("OLEF root 'element' not found!: " . $_NAMESPACE_OLEF_PREFIX);
 }
+$elementElement = $elementElements->item(0);
 
-
-
-// ***************************************
-//  ADD INTELLECTUAL PROPERTY RIGHTS (IPR) 
-// ***************************************
-/* $arrFind = array(
-    'accessCondition<bibliographicInformation><mods:',
-    '<bibliographicInformation>\n<mods:',
-    '<bibliographicInformation>\n\n<mods:');
-    http://www.loc.gov/standards/mods/v3/mods-userguide-elements.html#accesscondition
-*/
-if (!file_content_exists($olef_file,"accessCondition",true,true))
-{
-    if ($arrContentDetails['content_ipr']!="")
-    {
-        // LOAD OLEF TO DOM
-        $domDoc   = new DOMDocument();
-        @$domDoc->load($olef_file);
-        
-        // Find the titleInfo tag, which always should be present and extract the namespace prefix
-        $modsns_prefix = 'mods';
-        $tis = $domDoc->getElementsByTagNameNS(_NAMESPACE_MODS, 'titleInfo');
-        if( $tis->length > 0 ) {
-            $modsns_prefix = $tis->item(0)->prefix;
-        }
-
-        // ADD NODE     mods:accessCondition to bibliographicInformation
-        // We are using this quirky way, since the PHP XML processor seems to have a problem with pre-defined namespace prefixes
-        //$node2 = $domDoc->createElementNS(_NAMESPACE_MODS, 'accessCondition', $arrContentDetails['content_ipr'] );
-        $node2 = $domDoc->createElement($modsns_prefix . ':accessCondition', $arrContentDetails['content_ipr']);
-        $node2->setAttribute('xmlns:' . $modsns_prefix, _NAMESPACE_MODS);
-        $node2->setAttribute($modsns_prefix . ':type', 'use and reproduction' );
-
-        $bis = $domDoc->getElementsByTagName("bibliographicInformation");
-
-        foreach($bis as $bi) {
-         $element = $bi;
-         $newnode = $element->appendChild($node2);
-        }
-
-        // SPEICHERN MODIFIZIERTEN OLEF
-        if ($domDoc->save($olef_file)>0) echo "Missing IPR Information added ... ok\n";
-        else                             { echo _ERR." IPR Information addition failed!\n"; $ingestReady = false; }
-    }
-    else 
-    {
-        echo _ERR."IPR Information missing in delivered Metadata! Please select 
-            Intellectual Property Rights (IPR) and SAVE them!\n";
-        $ingestReady = false;
-    }
-}
-
-
-
-// ************************
-// mods:recordContentSource
-// ************************
-// ADD TAG IF NOT EQUAL TO CURRENT LOGGED IN CONTENT PROVIDER UPPERCASE
-// https://github.com/bhle/bhle/issues/365
-
-// Construct correct recordcontent source name
-$recordContentSource = strtoupper(trim($arrProvider['user_content_id']));
-if ($recordContentSource=='') $recordContentSource = strtoupper(trim($arrProvider['user_name']));
-
-// Create DOMDocument from OLEF-File
-$domDoc   = new DOMDocument();
-$domDoc->load($olef_file);
-
-// Find olef namespace URI
-$olefNodes = $domDoc->getElementsByTagName( 'olef' );
-if( $olefNodes->length <= 0 ) {
-    echo _ERR . 'Not a valid OLEF input!\n';
+// update guid information
+$guidElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'guid');
+$guidElement = null;
+if( $guidElements->length > 0 ) {
+    $guidElement = $guidElements->item(0);
 }
 else {
-    // Use first node to find out the namespace-uri
-    $olefNode = $olefNodes->item(0);
-    $olefNS = $olefNode->namespaceURI;
-    
-    // Check if the level information is set, if not add it
-    $levelNodes = $domDoc->getElementsByTagNameNS($olefNS, 'level');
-    if( $levelNodes->length <= 0 ) {
-        $levelNode = $domDoc->createElementNS($olefNS, 'level');
-        
-        // Check if we are within a serial
-        if( $cType=='serial' ) {
-            $levelNode->nodeValue = $arrSerialLevels[$sLevel];
-        }
-        else {
-            $levelNode->nodeValue = 'monograph';
-        }
-        
-        // Finally append node
-        $olefNode->appendChild($levelNode);
-    }
-    
-    // Find bibliographicInformation
-    $biNodes = $domDoc->getElementsByTagNameNS($olefNS, 'bibliographicInformation');
-    if( $biNodes->length <= 0 ) {
-        echo _ERR . 'No bibliographicInformation found - check your metadata!\n';
+    $guidElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'guid');
+    $elementElement->appendChild( $guidElement );
+}
+$guidElement->nodeValue = $objID;
+
+// update parent-guid information
+if( $objParentID != "" ) {
+    $parentGuidElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'parentGUID');
+    $parentGuidElement = null;
+    if( $parentGuidElements->length > 0 ) {
+        $parentGuidElement = $parentGuidElements->item(0);
     }
     else {
-        $biNode = $biNodes->item(0);
-        
-        // Try to find existing recordContentSource entry
-        $bRcsEntryFound = false;
-        $rcsNodes = $domDoc->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordContentSource');
-        for( $i = 0; $i < $rcsNodes->length; $i++ ) {
-            // Check if node already contains correct entry
-            if( strcasecmp($rcsNodes->item($i)->nodeValue, $recordContentSource) == 0 ) {
-                $bRcsEntryFound = true;
-                break;
-            }
-        }
+        $parentGuidElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'parentGUID');
+        $elementElement->appendChild( $parentGuidElement );
+    }
+    $parentGuidElement = $objParentID;
+}
 
-        // If we did not find a valid entry, add it
-        if( !$bRcsEntryFound ) {
-            // Create missing recordContentSource
-            $rcsNode = $domDoc->createElementNS(_NAMESPACE_MODS, 'recordContentSource', $recordContentSource );
+// add IPR information (if it doesn't exist)
+$acElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'accessCondition');
+if( $acElements->length <= 0 ) {
 
-            // Try to find recordInfo node
-            $riNodes = $domDoc->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordInfo');
-            $riNode = null;
-            // Attach recordContentSource node to first recordInfo node
-            if( $riNodes->length > 0 ) {
-                $riNode = $riNodes->item(0);
-            }
-            else {
-                // Create new recordInfo node
-                $riNode = $domDoc->createElementNS(_NAMESPACE_MODS, 'recordInfo' );
-                $biNode->appendChild($riNode);
-            }
-            // Finally append recordContentSource node
-            $riNode->appendChild($rcsNode);
+    $acElement = $olefDom->createElement($_NAMESPACE_MODS_PREFIX . 'accessCondition');
+    $acElement->setAttribute($_NAMESPACE_MODS_PREFIX . 'type', 'use and reproduction' );
+    
+    // find bibliographic information and append accessCondition element
+    $biElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, "bibliographicInformation");
+    if( $biElements->length <= 0 ) {
+        throw new Exception("Unable to find bibliographicInformation");
+    }
+    $biElements->item(0)->appendChild($acElement);
+}
+else {
+    $acElement = $acElements->item(0);
+}
+$acElement->nodeValue = $arrContentDetails['content_ipr'];
 
-            // Save modified OLEF xml
-            $domDoc->save($olef_file);
+// find bibliographic information
+$biElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, "bibliographicInformation");
+if( $biElements->length <= 0 ) {
+    throw new Exception("Unable to find bibliographicInformation");
+}
+$biElement = $biElements->item(0);
+
+// Construct correct recordcontentsource name
+$recordContentSource = strtoupper(trim($arrProvider['user_content_id']));
+if ($recordContentSource=='') $recordContentSource = strtoupper(trim($arrProvider['user_name']));
+// find recordContentSource entries
+$rcsElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordContentSource');
+$rcsElement = null;
+if( $rcsElements->length > 0 ) {
+    foreach( $rcsElements as $currRcsElement ) {
+        if( $currRcsElement->nodeValue == $recordContentSource ) {
+            $rcsElement = $currRcsElement;
+            break;
         }
     }
 }
+// check if we found a valid entry, if not create one
+if( $rcsElement == null ) {
+    $rcsElement = $olefDom->createElement($_NAMESPACE_MODS_PREFIX . 'recordContentSource');
 
-
-// *************************
-// ADD OLEF NAMESPACE PREFIX
-// *************************
-// DEPRECATED: SOLUTION NOW IN <olef_pages.php>
-
-/*
-if (!file_content_exists($olef_file,"<olef:",true,true))
-{
-    $before = file_get_contents($olef_file);
-    $after  = str_replace(
-            array("</",     "<",     "<olef:/olef:","</olef:/olef:","</olef:mods:","<olef:mods:","<olef: ","</olef: ","</olef:olef:","<olef:olef:","</olef:dwc:","<olef:dwc:"),
-            array("</olef:","<olef:","<olef:",      "</olef:",      "</mods:",     "<mods:",     "<olef:", "</olef:", "</olef:",     "<olef:"     ,"</dwc:",     "<dwc:"),
-            $before);
-    
-    file_put_contents($olef_file,$after);
-    
-    unset($before); unset($after);
+    // Try to find recordInfo node
+    $riElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordInfo');
+    $riElement = null;
+    // Attach recordContentSource node to first recordInfo node
+    if( $riElements->length > 0 ) {
+        $riElement = $riElements->item(0);
+    }
+    else {
+        // Create new recordInfo node
+        $riElement = $olefDom->createElement($_NAMESPACE_MODS_PREFIX . 'recordInfo' );
+        $biElement->appendChild($riElement);
+    }
+    // Finally append recordContentSource node
+    $riElement->appendChild($rcsElement);
 }
-*/
+$rcsElement->nodeValue = $recordContentSource;
 
-echo "Updating OLEF information done.\n";
-
-echo "\n\n</pre>\n";
-
-?>
+echo "OLEF data updated.\n";
