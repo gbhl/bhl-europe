@@ -8,7 +8,7 @@
 // ********************************************
 
 // find root METS element
-$metsElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_METS, 'mets');
+$metsElements = $metsDom->getElementsByTagNameNS(_NAMESPACE_METS, 'mets');
 if( $metsElements->length <= 0 ) {
     throw new Exception("METS root element not found");
 }
@@ -17,7 +17,7 @@ $metsElement = $metsElements->item(0);
 $metsElement->setAttribute('OBJID', $cleanObjID);
 
 // find rdf:Description
-$rdfElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_RDF_SYNTAX, 'Description');
+$rdfElements = $metsDom->getElementsByTagNameNS(_NAMESPACE_RDF_SYNTAX, 'Description');
 if( $rdfElements->length <= 0 ) {
     throw new Exception("rdf:Description element not found!");
 }
@@ -25,14 +25,14 @@ $rdfElement = $rdfElements->item(0);
 $rdfElement->setAttributeNS(_NAMESPACE_RDF_SYNTAX, 'about', 'info:fedora/'.$cleanObjID);
 
 // check if we have a isMemberOf info as well
-$imoElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_FEDORA_RELATIONS, 'isMemberOf');
+$imoElements = $metsDom->getElementsByTagNameNS(_NAMESPACE_FEDORA_RELATIONS, 'isMemberOf');
 if( $imoElements->length > 0 ) {
     $imoElement = $imoElements->item(0);
     $imoElement->setAttributeNS(_NAMESPACE_RDF_SYNTAX, 'resource', 'info:fedora/'.$cleanObjParentID);
 }
 
 // update dc:identifier
-$identifierElements = $domDoc->getElementsByTagNameNS(_NAMESPACE_DC, 'identifier');
+$identifierElements = $metsDom->getElementsByTagNameNS(_NAMESPACE_DC, 'identifier');
 if( $identifierElements->length <= 0 ) {
     throw new Exception("dc:identifier element not found!");
 }
@@ -40,21 +40,17 @@ $identifierElement = $identifierElements->item(0);
 $identifierElement->nodeValue = $cleanObjID;
 
 // find olef-node
-$olefElements = $domDoc->getElementsByTagName('olef');
+$olefElements = $metsDom->getElementsByTagName('olef');
 if( $olefElements->length > 0 ) {
     $olefElement = $olefElements->item(0);
     $xmlDataElement = $olefElement->parentNode;
-
-    // Load original OLEF
-    $olefDom = new DOMDocument();
-    $olefDom->load($olef_file);
 
     // Find title tag for use within dc:title
     $titleInfoNodeList = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'titleInfo');
     // Check if we found a titleInfo entry
     if( $titleInfoNodeList->length > 0 ) {
         // Find all dublin-core title fields
-        $titleNodeList = $domDoc->getElementsByTagNameNS(_NAMESPACE_DC, 'title');
+        $titleNodeList = $metsDom->getElementsByTagNameNS(_NAMESPACE_DC, 'title');
         // Cycle through entries and assign them the mods titleInfo value
         for( $k = 0; $k < $titleNodeList->length; $k++ ) {
             $titleNodeList->item($k)->nodeValue = trim($titleInfoNodeList->item(0)->nodeValue);
@@ -67,5 +63,5 @@ if( $olefElements->length > 0 ) {
     $olefDom->documentElement->setAttributeNode($attr);
 
     // replace olef placeholder element
-    $xmlDataElement->replaceChild($domDoc->importNode($olefDom->documentElement, true), $olefElement);
+    $xmlDataElement->replaceChild($metsDom->importNode($olefDom->documentElement, true), $olefElement);
 }

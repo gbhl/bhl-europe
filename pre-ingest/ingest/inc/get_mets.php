@@ -50,10 +50,56 @@ if (file_exists($olef_file))
         $pGUID       = "";
         $objParentID = "";
     }
+    
+    // load OLEF dom
+    $olefDom = DOMDocument::load($olef_file);
+    $olefDom->formatOutput = true;
+    
+    // find namespace prefixes, sind the automatic handling of the
+    // PHP-DOMDocument seems to have problems with pre-defined prefixes
+    // find OLEF namespace prefix
+    $olefNodes = $olefDom->getElementsByTagName( 'olef' );
+    if( $olefNodes->length <= 0 ) {
+        throw new Exception('Not a valid OLEF input!');
+    }
+    $olefNode = $olefNodes->item(0);
+    $_NAMESPACE_OLEF_PREFIX = $olefNode->prefix;
+    if( !empty($_NAMESPACE_OLEF_PREFIX) ) {
+        $_NAMESPACE_OLEF_PREFIX .= ':';
+    }
+    $_NAMESPACE_OLEF = $olefNode->namespaceURI;
 
+    // find MODS namespace prefix
+    $tiNodes = $olefDom->getElementsByTagName( 'mods' );
+    $_NAMESPACE_MODS_PREFIX = 'mods';
+    if( $tiNodes->length <= 0 ) {
+        $olefNode->setAttribute( 'xmlns:' . $_NAMESPACE_MODS_PREFIX, _NAMESPACE_MODS );
+    }
+    else {
+        $_NAMESPACE_MODS_PREFIX = $tiNodes->item(0)->prefix;
+    }
+    if( !empty($_NAMESPACE_MODS_PREFIX) ) {
+        $_NAMESPACE_MODS_PREFIX .= ':';
+    }
+
+    // find DWC namespace prefix
+    $_NAMESPACE_DWC_PREFIX = 'dwc';
+    $olefNode->setAttribute( 'xmlns:' . $_NAMESPACE_DWC_PREFIX, _NAMESPACE_DWC );
+    if( !empty($_NAMESPACE_DWC_PREFIX) ) {
+        $_NAMESPACE_DWC_PREFIX .= ':';
+    }
+    
     // OLEF FERTIGSTELLEN
-    include("inc/olef_pages.php");
-    include("inc/olef_mods.php");
+    echo '<h3>Finishing OLEF Pages & Data</h3><pre>';
+    try {
+        // OLEF FERTIGSTELLEN
+        include("inc/olef_pages.php");
+        include("inc/olef_mods.php");
+    }
+    catch( Exception $e ) {
+        echo _ERR. " Unable to complete OLEF: " . $e->getMessage();
+    }
+    echo "</pre>\n";
 
     
     // METS FERTIGSTELLEN
@@ -86,7 +132,7 @@ if (file_exists($olef_file))
     {
         ob_start();
 
-        $domDoc = new DOMDocument();
+        $metsDom = null;
 
         // BOOK METS BEFORE PAGE 1 - MONOGRAPH METS
         if ($i==0) 
@@ -96,10 +142,10 @@ if (file_exists($olef_file))
             if ($cType=='serial')
             {
                 // INCLUDE TEMPLATE FOR CURRENT LEVEL
-                $domDoc->load(_ABS."inc/xml/".$arrSerialLevels[$sLevel].".xml");
+                $metsDom = DOMDocument::load(_ABS."inc/xml/".$arrSerialLevels[$sLevel].".xml");
             }
             else
-                $domDoc->load(_ABS."inc/xml/monograph.xml");
+                $metsDom = DOMDocument::load(_ABS."inc/xml/monograph.xml");
         }
         // PAGE METS
         else
@@ -109,19 +155,18 @@ if (file_exists($olef_file))
             $cleanPageID = str_replace("/","-",$pageID);
             $cur_tiff    = basename($arrTiffs[($i-1)]);
             $metsFile    = $destDir.str_replace(array(":","/"),"_",$pageID).".xml";   // FILENAME
-            $domDoc->load(_ABS."inc/xml/page.xml");
+            $metsDom = DOMDocument::load(_ABS."inc/xml/page.xml");
         }
+        $metsDom->preserveWhiteSpace = false;
+        $metsDom->formatOutput = true;
 
         // update mets files
         try {
             if ($i==0) include("inc/mets_book.php");
             if ($i>0)  include("inc/mets_page.php");
 
-            // Nicely format the output
-            $domDoc->formatOutput = true;
-
             // write file to output
-            if (file_put_contents($metsFile, $domDoc->saveXML())>0) { 
+            if (file_put_contents($metsFile, $metsDom->saveXML())>0) { 
                 $filesGenerated++;
 
                 echo "METS file: ".basename($metsFile)." \t\t generated...\n";
