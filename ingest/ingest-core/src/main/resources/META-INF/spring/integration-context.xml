@@ -30,7 +30,8 @@
 		destination="inboundDestination" connection-factory="ingestConsumerConnectionFactory" />
 
 	<beans:bean id="jmsToJobProcessor"
-		class="com.bhle.ingest.integration.JMSToJobProcessor">
+		class="com.bhle.ingest.integration.JMSToJobProcessor"
+		depends-on="batchIngestJob">
 	</beans:bean>
 
 	<beans:bean id="inboundJMSMessageProcessor"
