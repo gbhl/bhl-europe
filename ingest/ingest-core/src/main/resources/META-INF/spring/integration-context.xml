@@ -24,14 +24,13 @@
 	</poller>
 
 	<channel id="inboundJMSMessageChannel" />
-
+	
 	<int-jms:message-driven-channel-adapter
 		channel="inboundJMSMessageChannel" extract-payload="true"
 		destination="inboundDestination" connection-factory="ingestConsumerConnectionFactory" />
 
 	<beans:bean id="jmsToJobProcessor"
-		class="com.bhle.ingest.integration.JMSToJobProcessor"
-		depends-on="batchIngestJob">
+		class="com.bhle.ingest.integration.JMSToJobProcessor">
 	</beans:bean>
 
 	<beans:bean id="inboundJMSMessageProcessor"
@@ -72,10 +71,11 @@
 	<beans:bean id="fedoraServiceImpl" class="com.bhle.ingest.FedoraServiceImpl">
 		<beans:constructor-arg ref="fedoraClient" />
 	</beans:bean>
-	<service-activator input-channel="fedoraRequestChannel"
-		output-channel="fedoraReplyChannel" ref="fedoraServiceImpl" />
+	<service-activator output-channel="fedoraReplyChannel"
+		ref="fedoraServiceImpl" input-channel="fedoraRequestChannel" />
 
 	<service-activator input-channel="inboundJMSMessageChannel"
 		ref="jmsToJobProcessor" output-channel="jobLaunchChannel">
 	</service-activator>
+	
 </beans:beans>
