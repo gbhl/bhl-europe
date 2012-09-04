@@ -209,3 +209,4 @@ define( '_NAMESPACE_METS',             'http://www.loc.gov/METS/' );
 define( '_NAMESPACE_RDF_SYNTAX',       'http://www.w3.org/1999/02/22-rdf-syntax-ns#' );
 define( '_NAMESPACE_FEDORA_RELATIONS', 'info:fedora/fedora-system:def/relations-external#');
 define( '_NAMESPACE_XLINK',            'http://www.w3.org/1999/xlink');
+define( '_NAMESPACE_DWC',              'http://rs.tdwg.org/dwc/terms/');

@@ -6,270 +6,105 @@
 // ** AUTHOR:  ANDREAS MEHRRATH              **
 // ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
-// ENTSPRECHENDES PAGE OBJEKT IN OLEF MIT PAGE SEITEN (ALS NAMEN) UND TAXONS ERZEUGEN
 
-echo "<h3>Finishing OLEF Pages</h3><pre>";
+// find root 'element'
+$elementElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'element');
+if( $elementElements->length <= 0 ) {
+    throw new Exception("OLEF root 'element' not found (pages)!: " . $_NAMESPACE_OLEF_PREFIX);
+}
+$elementElement = $elementElements->item(0);
 
-
-// ******************
-// * PAGES + TAXONS *
-// ******************
-
-// PAGE - TAXON ARRAY AUFBAUEN
-$arrTaxons = array();
-
-// TAXONSFILES
-$arrTaxonsF = getContentFiles($contentDir, 'single_suffix', true,_TAXON_EXT); 
-$arrTaxonsF = sortPageFiles($arrTaxonsF);  // IMPORTANT PRE SORT
-$nTaxonsF   = count($arrTaxonsF);
-
-
-$pattern  = "<nameString>";
-$patternE = "</nameString><namebankID>";    // ONLY TAXONS WITH NAMEBANKID
-
-for ($i=0;$i<$nTaxonsF;$i++)
-{   
-    // TAXON FILE LADEN & TAXONS HOLEN
-    $before = file_get_contents($arrTaxonsF[$i]);
-    
-    // LEERE NAMEBANKIDS WEG
-    $after = str_ireplace(
-            array("\t","\r",
-                "<namebankID></namebankID>",
-                "<namebankID>\n</namebankID>","<namebankID>\n\n</namebankID>",
-                "<namebankID>\n </namebankID>","<namebankID>\n\n </namebankID>",
-                "<namebankID>\n  </namebankID>","<namebankID>\n\n  </namebankID>"),
-            "",$before);
-    
-    // NAMEBANK ID ELEMENTS IN GLEICHE ZEILE BRINGEN WIE nameString
-    $after = str_ireplace(
-            array("</nameString>\n<namebankID>","</nameString>\n\n<namebankID>",
-                "</nameString>\n <namebankID>","</nameString>\n\n <namebankID>",
-                "</nameString>\n  <namebankID>","</nameString>\n\n  <namebankID>"),
-            $patternE."\n",
-            $after);
-
-    // MEHRFACHE LEERZEILEN WEG
-    $after = str_ireplace(array("\n\n\n\n","\n\n\n","\n\n"),"\n",$after);
-
-    file_put_contents($arrTaxonsF[$i], $after);
-
-    
-    // HOLEN DER TAXONS AUS AUFBEREITUNG MIT FILTER (NUR JENE MIT NAMEBANKID)
-    $arrLines = file_get_content_filtered($arrTaxonsF[$i],array($patternE),"<!",true,true);
-    $nLines   = count($arrLines);
-    
-    for ($j=0;$j<$nLines;$j++)
-    {
-        $arrLines[$j] = substr($arrLines[$j],0,stripos($arrLines[$j],"</nameString>"));
-    }
-    
-    reset($arrLines);
-            
-    $arrTaxons[($i+1)] = "".str_ireplace(array($pattern,$patternE,"</nameString>"),"",
-            implode(_TRENNER,$arrLines));
-
-    unset($arrLines);
-    unset($before);
-    unset($after);
-    
-    /*
-     <results>
-      <allNames>
-     * 
-     * 
-  </entity>
-  <entity>
-  <nameString>Oleaceae</nameString>
-  <namebankID>459706</namebankID>
-  </entity>
-  <entity>
-  <nameString>Orchidales</nameString>
-
-  <namebankID>467838</namebankID>
-  </entity>
-  <entity>
-  <nameString>Oxalidaceae</nameString>
-  <namebankID>456438</namebankID>
-  </entity>
-  <entity>
-     * 
-     * 
-     *
-      </allNames>
-      </results>
-     */
+// find itemInformation tag
+$iiElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'itemInformation');
+$iiElement = null;
+if( $iiElements->length > 0 ) {
+    $iiElement = $iiElements->item(0);
+}
+else {
+    $iiElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'itemInformation');
+    $elementElement->appendChild( $iiElement );
 }
 
-reset($arrTaxons);
+// find files element
+$fsElements = $iiElement->getElementsByTagNameNS($_NAMESPACE_OLEF, 'files');
+$fsElement = null;
+if( $fsElements->length > 0 ) {
+    $fsElement = $fsElements->item(0);
+}
+else {
+    $fsElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'files');
+    $iiElement->appendChild($fsElement);
+}
 
-// echo_pre($arrTaxons);
-
-
-
-// ****************************************************************
-// ALLE PAGE OBJEKTE ERZEUGEN UND TAXONS HINZUFUEGEN FALLS MOEGLICH
-// ****************************************************************
-
+// list all tifs (therefor pages) to be processed
 $arrTiffs = getContentFiles($contentDir, 'single_suffix', true,'.tif'); 
 $arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
-$nTiffs   = count($arrTiffs);
 
-
-
-// LOAD OLEF TO DOM
-$domDoc   = new DOMDocument();
-@$domDoc->load($olef_file);
-
-$docRoot = $domDoc->documentElement;
-
-/* 
-<level>monograph</level>
- * ...
-<itemInformation>
-    <files>
-        <file>
-            <reference type="path">onzeflorabeschri00oude_0231.tif</reference>
-            <pages>
-                <page>
-                    <name>231</name>
-                    <taxon>
-                        <dwc:scientificName>Lentibulariaceae</dwc:scientificName>
-                    </taxon>
-                    <taxon>
-                        <dwc:scientificName>Oleaceae</dwc:scientificName>
-                    </taxon>
-                </page>
-            </pages>
-        </file>
-    </files>
-</itemInformation>
-</element>
-</olef>
-*/
-
-// ZUSATZHIERARCHIE DIE EINZUBAUEN IST
-$arrNewNodes = array('itemInformation','files','file','reference','pages','page','name','taxon');
-$nNewNodes   = count($arrNewNodes);
-
-
-$containerElement = $domDoc->getElementsByTagName('element')->item(0);
-
-
-// CLEANUP FIRST IF PART TO ADD EXISTS
-$dropNode = null;
-$dropNode = @$docRoot->getElementsByTagName($arrNewNodes[0])->item(0);
-if (($dropNode)&&($dropNode!=null)&&($dropNode!='null'))            // VOM PARENT WEG MUSS DAS CHILD GELOESCHT WERDEN!
-@$containerElement->removeChild($dropNode);
-
-
-
-// ADD itemInformation
-$containerElement = $containerElement->appendChild($domDoc->createElement("olef:".$arrNewNodes[0])); 
-
-// ADD files
-$containerElement = $containerElement->appendChild($domDoc->createElement("olef:".$arrNewNodes[1]));  
-
-
-// ***********************************************************************
-// SCHLEIFE UEBER ALLE TIFFS UND ALLE HINZUZUFUEGENDEN ATTRIBUTE PRO SEITE
-// ***********************************************************************
-
-for ($curTiff=0;$curTiff<$nTiffs;$curTiff++)
-{
-    // $domDoc->getElementsByTagName('files')->item(0);         // START ELEMENT WIEDER AUF FILE
+// generate page information (including scientific names) for each file
+foreach( $arrTiffs as $tiffIndex => $tiffFile ) {
+    // derive taxon-filename from tiff-filename
+    $taxonFile = $tiffFile . _TAXON_EXT;
+    // extract page information from filename
+    $arrPageInfos = getPageInfoFromFile($tiffFile);
+    if( !isset($arrPageInfos[2]) ) $arrPageInfos[2] = _DEFAULT_PAGETYPE;
     
-    $curParent    = $containerElement;
-    $arrPageInfos = getPageInfoFromFile($arrTiffs[$curTiff],$curTiff+1);
+    // create file-element for OLEF
+    $fElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'file');
+    $fElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'type', 'image');
+    $fsElement->appendChild($fElement);
     
-    for ($curNode=2;$curNode<$nNewNodes;$curNode++)             // VON FILE BIS TAXON
-    {
-        $curNodeName  = $arrNewNodes[$curNode];
+    // create reference element for file
+    $rElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'reference');
+    $rElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'type', 'path');
+    $rElement->nodeValue = $tiffFile;
+    $fElement->appendChild($rElement);
+    
+    // create pages element
+    $psElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'pages');
+    $fElement->appendChild($psElement);
+    
+    // create page entry
+    $pElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'page');
+    $pElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'pageType', $arrPageInfos[2]);
+    $pElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'sequence', $arrPageInfos[1]);
+    // check if we have page-name info
+    if( isset($arrPageInfos[3]) ) {
+        $pnElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'name', $arrPageInfos[3]);
+        $pElement->appendChild($pnElement);
+    }
+    $psElement->appendChild($pElement);
+    
+    // load taxonFinder result and add any found taxon-names to the OLEF
+    $domTaxons = @DOMDocument::load($taxonFile);
+    if( $domTaxons ) {
+        echo "Found taxons!";
         
-        if ($curNodeName!='taxon')                                      // TAXON VERWALTET SICH SELBST
-        $node = $domDoc->createElement("olef:".$curNodeName,"\n");      // NO VALUE HERE
-        
-        switch($curNodeName)
-        {
-            case 'reference':
-             $node->setAttribute("type", "path");
-             $node->nodeValue = $arrTiffs[$curTiff];          
-             $curParent->appendChild($node);                     // WIRD NICHT ZU PARENTELEMENT
-            break;
-        
-            case 'page':                                         // TYP DER PAGE GEM. FSG
-             if (($arrPageInfos)&&(is_array($arrPageInfos))&&(array_key_exists(2, $arrPageInfos))&&($arrPageInfos[2]!=""))  
-                $node->setAttribute("pageType",$arrPageInfos[2]);
-             else                       
-                $node->setAttribute("pageType",_DEFAULT_PAGETYPE);
-             
-             // Add absolute sequence to page info
-             $node->setAttribute('sequence', $arrPageInfos[1]);
-                
-             $curParent = $curParent->appendChild($node);
-            break;
+        // find all entity elements
+        $entityElements = $domTaxons->getElementsByTagName('entity');
+        foreach( $entityElements as $entityElement ) {
 
-            case 'name':
-
-              // KEIN NAME NODE WENN PAGE LEER
-              // MEHRERE NAME NODES WENN MEHRERE PAGES
-              // !!! MEHRERE PAGE ELEMENT STATT MEHRERE NAME
-                
-              for ($i=3;$i<7;$i++)      // SUPPORT FUER 4 SEITEN PRO FILE
-              {
-                  if (($arrPageInfos)&&(is_array($arrPageInfos))&&(array_key_exists($i, $arrPageInfos))&&($arrPageInfos[$i]!=""))
-                  {
-                      if ($i>3) $node  = $domDoc->createElement("olef:".$curNodeName,"\n");
-
-                      $node->nodeValue = strtolower($arrPageInfos[$i]);     // Make sure our page names are all lower case
-                      $curParent->appendChild($node);          // WIRD NICHT ZU PARENTELEMENT
-                  }
-              }
-            break;
-        
-            
-            case 'taxon':
-
-                // SCHLEIFE UEBER ALLE GEFUNDEN TAXONS AUF DIESER SEITE - 'dwc:scientificName'
-                if (trim(str_replace(array(","," "),"",$arrTaxons[($curTiff+1)]))!="")
-                {
-                    $arrPageTaxons = explode(_TRENNER,$arrTaxons[($curTiff+1)]);
-                    $nPageTaxons   = count($arrPageTaxons);
-                    
-                    for ($i=0;$i<$nPageTaxons;$i++)
-                    {
-                        $curTaxon = trim($arrPageTaxons[$i]);
-                        
-                        if ($curTaxon!="")
-                        {
-                            $node = $domDoc->createElement("olef:".$curNodeName,"\n");  // taxon node
-                            $curTaxonNode = $curParent->appendChild($node);
-
-                            $node = $domDoc->createElement("dwc:scientificName",$curTaxon);  // taxon string
-                            $node->setAttribute("xmlns:dwc", "http://rs.tdwg.org/dwc/terms/");
-
-                            $curTaxonNode->appendChild($node);
-                        }
-                    }
+            // check if we have a valid namebankID
+            $bNamebankID = false;
+            $nameString = null;
+            foreach( $entityElement->childNodes as $entityChildElement ) {
+                switch( $entityChildElement->nodeName ) {
+                    case 'namebankID':
+                        $bNamebankID = true;
+                        break;
+                    case 'nameString':
+                        $nameString = $entityChildElement->nodeValue;
+                        break;
                 }
-                         // DA LETZTER NEWNODE ZURUECK ZUM ELEMENT CONTAINER
-                break;
-            
-            default:
-              $curParent = $curParent->appendChild($node);          // WIRD ZU NEUEM PARENT NODE
+            }
+
+            // if we do not have a namebank ID, skip to next entry
+            if( !$bNamebankID ) continue;
+
+            // add name to page of OLEF
+            $tElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'taxon');
+            $pElement->appendChild($tElement);
+            $snElement = $olefDom->createElement($_NAMESPACE_DWC_PREFIX . 'scientificName', $nameString);
+            $tElement->appendChild($snElement);
         }
-
-       unset($node);
-
     }
 }
-
-
-
-// SPEICHERN MODIFIZIERTEN OLEF
-
-if ($domDoc->save($olef_file)>0) echo "OLEF saved, OLEF pages generated ... ok\n";
-else                             echo _ERR." OLEF page elements could not be written!\n";
-
-
-echo "\n\n</pre>\n";
