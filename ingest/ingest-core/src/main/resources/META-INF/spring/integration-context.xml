@@ -23,8 +23,10 @@
 		<interval-trigger interval="10000" />
 	</poller>
 
-	<channel id="inboundJMSMessageChannel" />
-	
+	<channel id="inboundJMSMessageChannel">
+		<queue />
+	</channel>
+
 	<int-jms:message-driven-channel-adapter
 		channel="inboundJMSMessageChannel" extract-payload="true"
 		destination="inboundDestination" connection-factory="ingestConsumerConnectionFactory" />
