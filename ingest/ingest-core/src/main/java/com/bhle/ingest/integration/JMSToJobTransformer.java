@@ -10,6 +10,7 @@ import org.springframework.integration.Message;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.integration.annotation.Transformer;
 import org.springframework.integration.support.MessageBuilder;
+import org.springframework.stereotype.Component;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersBuilder;
@@ -17,6 +18,7 @@ import org.springframework.batch.core.configuration.JobLocator;
 import org.springframework.batch.core.launch.NoSuchJobException;
 import org.springframework.batch.integration.launch.JobLaunchRequest;
 
+@Component
 public class JMSToJobTransformer {
 
 	private static final Logger logger = LoggerFactory
