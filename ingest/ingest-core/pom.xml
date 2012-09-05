@@ -35,14 +35,13 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>3.1.0.RELEASE</version>
-			<type>jar</type>
+			<version>3.1.2.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.yourmediashelf.fedora.client</groupId>
 			<artifactId>fedora-client</artifactId>
-			<version>0.1.6</version>
+			<version>0.6</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>slf4j-api</artifactId>
@@ -67,7 +66,7 @@
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-core</artifactId>
-			<version>2.1.9.RELEASE</version>
+			<version>2.1.8.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
@@ -91,7 +90,7 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.1</version>
+			<version>2.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -116,7 +115,7 @@
 		<dependency>
 			<groupId>org.apache.xbean</groupId>
 			<artifactId>xbean-spring</artifactId>
-			<version>3.8</version>
+			<version>3.11.1</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sourceforge.javacsv</groupId>
@@ -126,7 +125,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.6</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-httpclient</groupId>
@@ -138,6 +137,11 @@
 			<artifactId>json-lib</artifactId>
 			<version>2.4</version>
 			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.6</version>
 		</dependency>
 	</dependencies>
 
