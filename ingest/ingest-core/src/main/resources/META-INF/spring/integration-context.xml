@@ -76,8 +76,13 @@
 	<service-activator output-channel="fedoraReplyChannel"
 		ref="fedoraServiceImpl" input-channel="fedoraRequestChannel" />
 
-	<service-activator input-channel="inboundJMSMessageChannel"
-		ref="jmsToJobProcessor" output-channel="jobLaunchChannel">
-	</service-activator>
 	
+
+	<transformer id="preingestMessageTransformer"
+		input-channel="inboundJMSMessageChannel"
+		output-channel="jobLaunchChannel">
+	<poller>
+		<interval-trigger interval="1000" />
+	</poller>
+	</transformer>
 </beans:beans>
