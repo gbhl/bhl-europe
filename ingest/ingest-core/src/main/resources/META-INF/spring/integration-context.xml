@@ -80,7 +80,8 @@
 
 	<transformer id="preingestMessageTransformer"
 		input-channel="inboundJMSMessageChannel"
-		output-channel="jobLaunchChannel">
+		output-channel="jobLaunchChannel"
+		ref="com.bhle.ingest.integration.JMSToJobTransformer">
 	<poller>
 		<interval-trigger interval="1000" />
 	</poller>
