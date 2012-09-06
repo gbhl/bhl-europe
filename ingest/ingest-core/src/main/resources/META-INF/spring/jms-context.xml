@@ -17,7 +17,6 @@
 		brokerURL="${jms.broker.url}">
 		<property name="sessionCacheSize" value="10"></property>
 		<property name="cacheProducers" value="false"></property>
-		
 		<property name="cacheConsumers" value="false"></property>
 	</amq:connectionFactory>
 	<amq:connectionFactory id="ingestProducerConnectionFactory" brokerURL="${jms.broker.url}" />
