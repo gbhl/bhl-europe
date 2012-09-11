@@ -15,9 +15,11 @@
 	<amq:topic id="outboundDestination" physicalName="${jms.outbound.topic}" />
 
 	<amq:connectionFactory id="ingestConsumerConnectionFactory"
-		brokerURL="${jms.broker.url}"
-		prefetchPolicy="ingestConsumerPrefetchPolicy">
-	
+		brokerURL="${jms.broker.url}">
+
+	<amq:prefetchPolicy>
+		<amq:prefetchPolicy all="1" />
+	</amq:prefetchPolicy>
 	</amq:connectionFactory>
 	<amq:connectionFactory id="ingestProducerConnectionFactory" brokerURL="${jms.broker.url}" />
 
@@ -25,5 +27,5 @@
 		p:connectionFactory-ref="ingestProducerConnectionFactory" p:defaultDestination-ref="outboundDestination" />
 
 	<bean id="ingestJmsProducer" class="com.bhle.ingest.jms.IngestJmsProducer"/>
-	<amq:prefetchPolicy id="ingestConsumerPrefetchPolicy" all="1" />
+	
 </beans>
