@@ -105,9 +105,8 @@ if ($nrows>0)
         // Ingested items are displayed last
         if( $line ) {
             // Check ingest status of item
-            $ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
-            
-            if( $line[10]>3 && $ingestDone ) {
+            //$ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
+            if( $line[10] == 5 ) {
                 $ingestedItems[] = $line;
                 continue;
             }
@@ -115,13 +114,12 @@ if ($nrows>0)
         // If line is false, then only ingestedItems are left
         else {
             $line = array_shift($ingestedItems);
-            // Check ingest status of item
-            $ingestDone = file_exists(clean_path($line[3]."/"._AIP_DIR."/")._FEDORA_CF_READY);
+            $ingestDone = true;
         }
         
         // check if a job is currently running
         $jobRunning = is_content_job_running($line[0]);
-
+        // check if we have a PDF
         $isPDF = isPDF($line[5]);
 
         // TIMES
