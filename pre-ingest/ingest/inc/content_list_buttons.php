@@ -117,31 +117,64 @@ if( $line[10] == 4 ) {
 }
 // already ingested
 else if( $line[10] == 5 ) {
-    echo "<div id=\"dialog_".$line[0]."\" title=\""._APP_NAME." - Ingest \">
-        <br><ul>
-        <li><u><a href='#' ".$command.">Regenerate ingest package (OLEF mods, page METS)...</a></u></li><br>
-	<li><u><a href='"._FEDORA_ADMIN_GUI."' target=_blank>Show Ingest Log on Fedora...</a></u></li><br>
-        <li><u><a href='"._SYSTEM."?menu_nav=ingest_list&sub_action=reset_ingest&content_id=".$line[0]."' target=_blank>Reset AIP to status \"not ingested\", removed flag \"ready for ingest\" and METS files...</a></u><br>
-        <font size=1>Enables you to re-prepare steps and/or re-ingest...</font></li><br>
-        </ul>
-        </div>";
+    // check if ingest is still running
+    $queueResult = mysql_select("SELECT * FROM `ingest_queue` WHERE `content_id` = '" . $line[0] . "' AND `ingest_status` != 'finished'");
+    $bQueueFailed = false;
+    $bQueueRunning = false;
+    $bQueueFinished = true;
+    if( mysql_num_rows($queueResult) > 0 ) {
+        $bQueueFinished = false;
+        
+        while( ($queueRow = mysql_fetch_array($queueResult)) ) {
+            $queueStatus = $queueRow['ingest_status'];
 
-    $endJS .= "
-    jQuery.noConflict();
-    (function($) 
-    {
-        $( \"#dialog_".$line[0]."\" ).dialog({  autoOpen: false, width: 600, height: 320, draggable:true, modal: false,  buttons: { \"Close\": function() { $(this).dialog(\"close\"); } }   });
+            if( $queueStatus == 'error' ) {
+                $bQueueFailed = true;
+                break;
+            }
+            else if( $queueStatus == 'running' ) {
+                $bQueueRunning = true;
+            }
+        }
+    }
+    
+    // evaluate queue statuses
+    if( $bQueueFailed ) {
+        icon("planning_failed.png", "Ingest failed, please contact administrator");
+    }
+    else if( $bQueueRunning ) {
+        icon("planning_anim.gif", "Ingest ".$text201);
+    }
+    else if( $bQueueFinished ) {
+        echo "<div id=\"dialog_".$line[0]."\" title=\""._APP_NAME." - Ingest \">
+            <br><ul>
+            <li><u><a href='#' ".$command.">Regenerate ingest package (OLEF mods, page METS)...</a></u></li><br>
+            <li><u><a href='"._FEDORA_ADMIN_GUI."' target=_blank>Show Ingest Log on Fedora...</a></u></li><br>
+            <li><u><a href='"._SYSTEM."?menu_nav=ingest_list&sub_action=reset_ingest&content_id=".$line[0]."' target=_blank>Reset AIP to status \"not ingested\", removed flag \"ready for ingest\" and METS files...</a></u><br>
+            <font size=1>Enables you to re-prepare steps and/or re-ingest...</font></li><br>
+            </ul>
+            </div>";
 
-        $('#ingestButton_".$line[0]."').click(function() 
+        $endJS .= "
+        jQuery.noConflict();
+        (function($) 
         {
-            $( \"#dialog_".$line[0]."\" ).dialog('open');
-        });
-    })(jQuery);
-    ";
+            $( \"#dialog_".$line[0]."\" ).dialog({  autoOpen: false, width: 600, height: 320, draggable:true, modal: false,  buttons: { \"Close\": function() { $(this).dialog(\"close\"); } }   });
 
-    icon("planning0.png",
-        "Already ingested see Fedora logs.",
-        "onClick=\"\"","","",true,false,"ingestButton_".$line[0]);
+            $('#ingestButton_".$line[0]."').click(function() 
+            {
+                $( \"#dialog_".$line[0]."\" ).dialog('open');
+            });
+        })(jQuery);
+        ";
+
+        icon("planning0.png",
+            "Already ingested see Fedora logs.",
+            "onClick=\"\"","","",true,false,"ingestButton_".$line[0]);
+    }
+    else {
+        icon("planning_queued.png", "Ingest queued, waiting for processing");
+    }
 }
 else {
     icon("planning00.png",             "Media not ready for release!");
