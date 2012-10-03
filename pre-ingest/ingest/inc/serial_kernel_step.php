@@ -73,15 +73,20 @@ if( !in_array($contentDir,$arrAnalyzedDirs) && (!is_dir_empty($contentDir,true) 
         if ($ingestReady) 
         {
             // CONTROLFILE
-            if (@file_put_contents($destDir._FEDORA_CF_READY,date("Y-m-d H:i:s")."\tSet ready."))
+            //if (@file_put_contents($destDir._FEDORA_CF_READY,date("Y-m-d H:i:s")."\tSet ready."))
             $nMarked++;
 
             // ACTIVE MQ MESSAGE (STOMP)
-            include_once("message_broker.php");
-
+            /*include_once("message_broker.php");
             if ((_MODE=='production') && (mb_send_ready($cGUID,$destDir))) {
                 $nSent++;
-            }
+            }*/
+            // add entry to ingest queue
+            mysql_select("INSERT INTO `ingest_queue`
+                (`content_id`, `guid`, `sip_path`)
+                values
+                ('" . $content_id . "', '" . mysql_escape_string($cGUID) . "', '" . mysql_escape_string($destDir) . "')"
+            );
         }
         else if ( !$stepFinished ) {
             $endmsg .= "Package in ".str_replace(_CONTENT_ROOT,'',$contentDir)." is not ready for ingest (see msgs. above).";

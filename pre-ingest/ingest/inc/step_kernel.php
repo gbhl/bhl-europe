@@ -25,13 +25,18 @@ if ($menu_nav=='get_mets')
         $fText = "This AIP is marked as ready for ingest for Fedora. ";
 
         // CONTROLFILE
-        @file_put_contents($destDir._FEDORA_CF_READY,date("Y-m-d H:i:s")."\t".$fText);
+        //@file_put_contents($destDir._FEDORA_CF_READY,date("Y-m-d H:i:s")."\t".$fText);
 
         // ACTIVE MQ MESSAGE (STOMP)
-        include_once("message_broker.php");
-
+        /*include_once("message_broker.php");
         if ((_MODE=='production') && (mb_send_ready($cGUID,$destDir)))
-            $fText .= "ActiveMQ ingest message sent.";
+            $fText .= "ActiveMQ ingest message sent.";*/
+        // add entry to ingest queue
+        mysql_select("INSERT INTO `ingest_queue`
+            (`content_id`, `guid`, `sip_path`)
+            values
+            ('" . $content_id . "', '" . mysql_escape_string($cGUID) . "', '" . mysql_escape_string($destDir) . "')"
+        );
 
         $endmsg .= $fText;
 
