@@ -171,6 +171,11 @@ if (file_exists($olef_file))
                 $filesGenerated++;
 
                 echo "METS file: ".basename($metsFile)." \t\t generated...\n";
+
+                // IF SUCCESSFUL SET STATE TO 5
+                if ($cType == 'monograph') {
+                    if (getContentSteps($content_id)<$curStep) setContentSteps($content_id, $curStep);
+                }
             }
             else {
                 echo _ERR."METS file: ".basename($metsFile)." \t\t generation failed!\n";
