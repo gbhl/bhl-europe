@@ -25,6 +25,9 @@ public class FedoraThread extends IngestThread {
         this.m_sipPath = p_sipPath;
         
         InitLogger(FedoraThread.class);
+        
+        // update ingest entry to be waiting
+        setStatus("waiting");
     }
     
     /**

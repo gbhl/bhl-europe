@@ -61,7 +61,7 @@ if( $olefElements->length > 0 ) {
     $attr = $olefDom->createAttribute( 'xmlns:xsi' );
     $attr->value = 'http://www.w3.org/2001/XMLSchema-instance';
     $olefDom->documentElement->setAttributeNode($attr);
-
+    
     // replace olef placeholder element
     $xmlDataElement->replaceChild($metsDom->importNode($olefDom->documentElement, true), $olefElement);
 }
