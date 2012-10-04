@@ -17,6 +17,7 @@ $curStep = 5;
 
 
 include_once(_SHARED."file_operations.php");
+include_once(_SHARED."AutoDOMDocument.php");
 
 
 if (!isset($content_id))   die(_ERR." Need content information, ID to prepare METS!");
@@ -52,44 +53,18 @@ if (file_exists($olef_file))
     }
     
     // load OLEF dom
-    $olefDom = new DOMDocument();
+    $olefDom = new AutoDOMDocument();
     $olefDom->load($olef_file);
     $olefDom->formatOutput = true;
     
-    // find namespace prefixes, sind the automatic handling of the
-    // PHP-DOMDocument seems to have problems with pre-defined prefixes
-    // find OLEF namespace prefix
+    // find OLEF namespace prefix (since this might change)
     $olefNodes = $olefDom->getElementsByTagName( 'olef' );
     if( $olefNodes->length <= 0 ) {
         throw new Exception('Not a valid OLEF input!');
     }
     $olefNode = $olefNodes->item(0);
-    $_NAMESPACE_OLEF_PREFIX = $olefNode->prefix;
-    if( !empty($_NAMESPACE_OLEF_PREFIX) ) {
-        $_NAMESPACE_OLEF_PREFIX .= ':';
-    }
     $_NAMESPACE_OLEF = $olefNode->namespaceURI;
 
-    // find MODS namespace prefix (since titleInfo shoud always be present)
-    $tiNodes = $olefDom->getElementsByTagName( 'titleInfo' );
-    $_NAMESPACE_MODS_PREFIX = 'mods';
-    if( $tiNodes->length <= 0 ) {
-        $olefNode->setAttribute( 'xmlns:' . $_NAMESPACE_MODS_PREFIX, _NAMESPACE_MODS );
-    }
-    else {
-        $_NAMESPACE_MODS_PREFIX = $tiNodes->item(0)->prefix;
-    }
-    if( !empty($_NAMESPACE_MODS_PREFIX) ) {
-        $_NAMESPACE_MODS_PREFIX .= ':';
-    }
-
-    // find DWC namespace prefix
-    $_NAMESPACE_DWC_PREFIX = 'dwc';
-    $olefNode->setAttribute( 'xmlns:' . $_NAMESPACE_DWC_PREFIX, _NAMESPACE_DWC );
-    if( !empty($_NAMESPACE_DWC_PREFIX) ) {
-        $_NAMESPACE_DWC_PREFIX .= ':';
-    }
-    
     // OLEF FERTIGSTELLEN
     echo '<h3>Finishing OLEF Pages & Data</h3><pre>';
     try {
