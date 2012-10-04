@@ -52,7 +52,8 @@ if (file_exists($olef_file))
     }
     
     // load OLEF dom
-    $olefDom = DOMDocument::load($olef_file);
+    $olefDom = new DOMDocument();
+    $olefDom->load($olef_file);
     $olefDom->formatOutput = true;
     
     // find namespace prefixes, sind the automatic handling of the
@@ -132,7 +133,7 @@ if (file_exists($olef_file))
     {
         ob_start();
 
-        $metsDom = null;
+        $metsDom = new DOMDocument();
 
         // BOOK METS BEFORE PAGE 1 - MONOGRAPH METS
         if ($i==0) 
@@ -142,10 +143,10 @@ if (file_exists($olef_file))
             if ($cType=='serial')
             {
                 // INCLUDE TEMPLATE FOR CURRENT LEVEL
-                $metsDom = DOMDocument::load(_ABS."inc/xml/".$arrSerialLevels[$sLevel].".xml");
+                $metsDom->load(_ABS."inc/xml/".$arrSerialLevels[$sLevel].".xml");
             }
             else
-                $metsDom = DOMDocument::load(_ABS."inc/xml/monograph.xml");
+                $metsDom->load(_ABS."inc/xml/monograph.xml");
         }
         // PAGE METS
         else
@@ -155,7 +156,7 @@ if (file_exists($olef_file))
             $cleanPageID = str_replace("/","-",$pageID);
             $cur_tiff    = basename($arrTiffs[($i-1)]);
             $metsFile    = $destDir.str_replace(array(":","/"),"_",$pageID).".xml";   // FILENAME
-            $metsDom = DOMDocument::load(_ABS."inc/xml/page.xml");
+            $metsDom->load(_ABS."inc/xml/page.xml");
         }
         $metsDom->preserveWhiteSpace = false;
         $metsDom->formatOutput = true;
