@@ -70,8 +70,8 @@ if (file_exists($olef_file))
     }
     $_NAMESPACE_OLEF = $olefNode->namespaceURI;
 
-    // find MODS namespace prefix
-    $tiNodes = $olefDom->getElementsByTagName( 'mods' );
+    // find MODS namespace prefix (since titleInfo shoud always be present)
+    $tiNodes = $olefDom->getElementsByTagName( 'titleInfo' );
     $_NAMESPACE_MODS_PREFIX = 'mods';
     if( $tiNodes->length <= 0 ) {
         $olefNode->setAttribute( 'xmlns:' . $_NAMESPACE_MODS_PREFIX, _NAMESPACE_MODS );
