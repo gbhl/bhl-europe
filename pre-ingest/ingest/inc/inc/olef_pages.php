@@ -10,7 +10,7 @@
 // find root 'element'
 $elementElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'element');
 if( $elementElements->length <= 0 ) {
-    throw new Exception("OLEF root 'element' not found (pages)!: " . $_NAMESPACE_OLEF_PREFIX);
+    throw new Exception("OLEF root 'element' not found (pages)!");
 }
 $elementElement = $elementElements->item(0);
 
@@ -21,8 +21,7 @@ if( $iiElements->length > 0 ) {
     $iiElement = $iiElements->item(0);
 }
 else {
-    $iiElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'itemInformation');
-    $elementElement->appendChild( $iiElement );
+    $iiElement = $olefDom->appendChild($elementElement, $_NAMESPACE_OLEF, 'itemInformation');
 }
 
 // find files element
@@ -32,8 +31,7 @@ if( $fsElements->length > 0 ) {
     $fsElement = $fsElements->item(0);
 }
 else {
-    $fsElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'files');
-    $iiElement->appendChild($fsElement);
+    $fsElement = $olefDom->appendChild($iiElement, $_NAMESPACE_OLEF, 'files');
 }
 
 // list all tifs (therefor pages) to be processed
@@ -49,30 +47,24 @@ foreach( $arrTiffs as $tiffIndex => $tiffFile ) {
     if( !isset($arrPageInfos[2]) ) $arrPageInfos[2] = _DEFAULT_PAGETYPE;
     
     // create file-element for OLEF
-    $fElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'file');
-    $fElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'type', 'image');
-    $fsElement->appendChild($fElement);
+    $fElement = $olefDom->appendChild($fsElement, $_NAMESPACE_OLEF, 'file');
+    $fElement->setAttributeNS($_NAMESPACE_OLEF, 'type', 'image');
     
     // create reference element for file
-    $rElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'reference');
-    $rElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'type', 'path');
-    $rElement->nodeValue = $tiffFile;
-    $fElement->appendChild($rElement);
+    $rElement = $olefDom->appendChild($fElement, $_NAMESPACE_OLEF, 'reference', $tiffFile);
+    $rElement->setAttributeNS($_NAMESPACE_OLEF, 'type', 'path');
     
     // create pages element
-    $psElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'pages');
-    $fElement->appendChild($psElement);
+    $psElement = $olefDom->appendChild($fElement, $_NAMESPACE_OLEF, 'pages');
     
     // create page entry
-    $pElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'page');
-    $pElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'pageType', $arrPageInfos[2]);
-    $pElement->setAttribute($_NAMESPACE_OLEF_PREFIX . 'sequence', $arrPageInfos[1]);
+    $pElement = $olefDom->appendChild($psElement, $_NAMESPACE_OLEF, 'page');
+    $pElement->setAttributeNS($_NAMESPACE_OLEF, 'pageType', $arrPageInfos[2]);
+    $pElement->setAttributeNS($_NAMESPACE_OLEF, 'sequence', $arrPageInfos[1]);
     // check if we have page-name info
     if( isset($arrPageInfos[3]) ) {
-        $pnElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'name', $arrPageInfos[3]);
-        $pElement->appendChild($pnElement);
+        $pnElement = $olefDom->appendChild($pElement, $_NAMESPACE_OLEF, 'name', $arrPageInfos[3]);
     }
-    $psElement->appendChild($pElement);
     
     // load taxonFinder result and add any found taxon-names to the OLEF
     $domTaxons = new DOMDocument();
@@ -101,10 +93,8 @@ foreach( $arrTiffs as $tiffIndex => $tiffFile ) {
             if( !$bNamebankID ) continue;
 
             // add name to page of OLEF
-            $tElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'taxon');
-            $pElement->appendChild($tElement);
-            $snElement = $olefDom->createElement($_NAMESPACE_DWC_PREFIX . 'scientificName', $nameString);
-            $tElement->appendChild($snElement);
+            $tElement = $olefDom->appendChild($pElement, $_NAMESPACE_OLEF, 'taxon');
+            $snElement = $olefDom->appendChild($tElement, _NAMESPACE_DWC, 'scientificName', $nameString);
         }
     }
 }
