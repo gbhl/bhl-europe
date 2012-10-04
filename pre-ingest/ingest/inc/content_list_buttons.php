@@ -122,11 +122,15 @@ else if( $line[10] == 5 ) {
     $bQueueFailed = false;
     $bQueueRunning = false;
     $bQueueFinished = true;
+    $itemsDone = 0;
+    $itemCount = 0;
     if( mysql_num_rows($queueResult) > 0 ) {
         $bQueueFinished = false;
         
         while( ($queueRow = mysql_fetch_array($queueResult)) ) {
             $queueStatus = $queueRow['ingest_status'];
+            $itemsDone += $queueRow['items_done'];
+            $itemCount += $queueRow['item_count'];
 
             if( $queueStatus == 'error' ) {
                 $bQueueFailed = true;
@@ -143,7 +147,7 @@ else if( $line[10] == 5 ) {
         icon("planning_failed.png", "Ingest failed, please contact administrator");
     }
     else if( $bQueueRunning ) {
-        icon("planning_anim.gif", "Ingest ".$text201);
+        icon("planning_anim.gif", "Ingest currently running [" . $itemsDone . "/" . $itemCount . "]");
     }
     else if( $bQueueFinished ) {
         echo "<div id=\"dialog_".$line[0]."\" title=\""._APP_NAME." - Ingest \">

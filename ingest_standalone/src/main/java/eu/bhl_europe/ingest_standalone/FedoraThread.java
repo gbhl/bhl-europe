@@ -31,7 +31,7 @@ public class FedoraThread extends IngestThread {
      * helper function for updating the status of the currently handled ingest item
      * @param p_status status to set for the ingest item
      */
-    private void updateStatus(String p_status) {
+    private void setStatus(String p_status) {
         Connection conn = null;
         PreparedStatement stmt = null;
         
@@ -58,7 +58,72 @@ public class FedoraThread extends IngestThread {
                 conn = null;
             }
         }
+    }
+    
+    /**
+     * set the item count to process
+     * @param p_item_count 
+     */
+    private void setItemCount(int p_item_count) {
+        Connection conn = null;
+        PreparedStatement stmt = null;
         
+        try {
+            // obtain connection to database
+            conn = getConnection();
+            // update queue entry status
+            stmt = conn.prepareStatement("UPDATE `ingest_queue` SET `item_count` = ? WHERE `id` = ?");
+            stmt.setInt(1, p_item_count);
+            stmt.setInt(2, m_queueId);
+            stmt.execute();
+        }
+        catch(Exception e) {
+            m_logger.error(e.getMessage());
+            e.printStackTrace();
+        }
+        finally {
+            if( stmt != null ) {
+                try {stmt.close();}catch(Exception e) {}
+                stmt = null;
+            }
+            if( conn != null ) {
+                try {conn.close();}catch(Exception e) {}
+                conn = null;
+            }
+        }
+    }
+    
+    /**
+     * Set the items which are processed
+     * @param p_items_done 
+     */
+    private void setItemsDone(int p_items_done) {
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        
+        try {
+            // obtain connection to database
+            conn = getConnection();
+            // update queue entry status
+            stmt = conn.prepareStatement("UPDATE `ingest_queue` SET `items_done` = ? WHERE `id` = ?");
+            stmt.setInt(1, p_items_done);
+            stmt.setInt(2, m_queueId);
+            stmt.execute();
+        }
+        catch(Exception e) {
+            m_logger.error(e.getMessage());
+            e.printStackTrace();
+        }
+        finally {
+            if( stmt != null ) {
+                try {stmt.close();}catch(Exception e) {}
+                stmt = null;
+            }
+            if( conn != null ) {
+                try {conn.close();}catch(Exception e) {}
+                conn = null;
+            }
+        }
     }
 
     @Override
@@ -67,7 +132,7 @@ public class FedoraThread extends IngestThread {
         
         try {
             // update queue entry to be running
-            updateStatus("running");
+            setStatus("running");
             
             // prepare file name filter
             FilenameFilter sipFileFilter = new SipFileFilter();
@@ -87,13 +152,20 @@ public class FedoraThread extends IngestThread {
                     Ingest.m_settings.getProperty("fedora.client.password")
             );
             m_fedoraClient = new FedoraClient(fedoraCredentials);
+            
+            // set items to process
+            setItemCount(m_sipFiles.length);
+            int itemsDone = 0;
 
             // now process them all
             for( File sipFile : m_sipFiles ) {
                 try {
                     IngestResponse ingestResponse = FedoraClient.ingest().content(sipFile).format("info:fedora/fedora-system:METSFedoraExt-1.1").execute(m_fedoraClient);
                     m_logger.info("Item successfully ingested [" + sipFile + "] / [" + ingestResponse.getPid() + "]");
-                    
+                    itemsDone++;
+
+                    // update processed items
+                    setItemsDone(itemsDone);
                 }
                 catch( Exception e ) {
                     m_logger.error("Error while ingesting item [" + m_sipPath + "] / [" + sipFile + "]");
@@ -105,7 +177,7 @@ public class FedoraThread extends IngestThread {
             }
 
             // update status
-            updateStatus("finished");
+            setStatus("finished");
         }
         catch( Exception e ) {
             m_logger.error("Error while processing sip-Directory [" + m_sipPath + "]");
@@ -113,7 +185,7 @@ public class FedoraThread extends IngestThread {
             e.printStackTrace();
             
             // update status
-            updateStatus("error");
+            setStatus("error");
         }
         
         // execute run method of super class
