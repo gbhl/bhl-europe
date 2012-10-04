@@ -7,11 +7,10 @@
 // ** AUTHOR:  WOLFGANG KOLLER               **
 // ********************************************
 // OLEF MODIFICATIONS POSTPROCESSING
-
 // find root "element" entry of olef data
 $elementElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'element');
 if( $elementElements->length <= 0 ) {
-    throw new Exception("OLEF root 'element' not found!: " . $_NAMESPACE_OLEF_PREFIX);
+    throw new Exception("OLEF root 'element' not found!: " . $_NAMESPACE_OLEF);
 }
 $elementElement = $elementElements->item(0);
 
@@ -22,8 +21,7 @@ if( $guidElements->length > 0 ) {
     $guidElement = $guidElements->item(0);
 }
 else {
-    $guidElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'guid');
-    $elementElement->appendChild( $guidElement );
+    $guidElement = $olefDom->appendChild($elementElement, $_NAMESPACE_OLEF, 'guid');
 }
 $guidElement->nodeValue = $objID;
 
@@ -35,30 +33,10 @@ if( $objParentID != "" ) {
         $parentGuidElement = $parentGuidElements->item(0);
     }
     else {
-        $parentGuidElement = $olefDom->createElement($_NAMESPACE_OLEF_PREFIX . 'parentGUID');
-        $elementElement->appendChild( $parentGuidElement );
+        $parentGuidElement = $olefDom->appendChild($elementElement, $_NAMESPACE_OLEF, 'parentGUID');
     }
     $parentGuidElement = $objParentID;
 }
-
-// add IPR information (if it doesn't exist)
-$acElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'accessCondition');
-if( $acElements->length <= 0 ) {
-
-    $acElement = $olefDom->createElement($_NAMESPACE_MODS_PREFIX . 'accessCondition');
-    $acElement->setAttribute($_NAMESPACE_MODS_PREFIX . 'type', 'use and reproduction' );
-    
-    // find bibliographic information and append accessCondition element
-    $biElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, "bibliographicInformation");
-    if( $biElements->length <= 0 ) {
-        throw new Exception("Unable to find bibliographicInformation");
-    }
-    $biElements->item(0)->appendChild($acElement);
-}
-else {
-    $acElement = $acElements->item(0);
-}
-$acElement->nodeValue = $arrContentDetails['content_ipr'];
 
 // find bibliographic information
 $biElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, "bibliographicInformation");
@@ -66,6 +44,17 @@ if( $biElements->length <= 0 ) {
     throw new Exception("Unable to find bibliographicInformation");
 }
 $biElement = $biElements->item(0);
+
+// add IPR information (if it doesn't exist)
+$acElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'accessCondition');
+if( $acElements->length <= 0 ) {
+    $acElement = $olefDom->appendChild($biElement, _NAMESPACE_MODS, 'accessCondition');
+    $acElement->setAttributeNS(_NAMESPACE_MODS, 'type', 'use and reproduction' );
+}
+else {
+    $acElement = $acElements->item(0);
+}
+$acElement->nodeValue = $arrContentDetails['content_ipr'];
 
 // Construct correct recordcontentsource name
 $recordContentSource = strtoupper(trim($arrProvider['user_content_id']));
@@ -83,8 +72,6 @@ if( $rcsElements->length > 0 ) {
 }
 // check if we found a valid entry, if not create one
 if( $rcsElement == null ) {
-    $rcsElement = $olefDom->createElement($_NAMESPACE_MODS_PREFIX . 'recordContentSource');
-
     // Try to find recordInfo node
     $riElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'recordInfo');
     $riElement = null;
@@ -94,11 +81,9 @@ if( $rcsElement == null ) {
     }
     else {
         // Create new recordInfo node
-        $riElement = $olefDom->createElement($_NAMESPACE_MODS_PREFIX . 'recordInfo' );
-        $biElement->appendChild($riElement);
+        $riElement = $olefDom->appendChild($biElement, _NAMESPACE_MODS, 'recordInfo' );
     }
-    // Finally append recordContentSource node
-    $riElement->appendChild($rcsElement);
+    $rcsElement = $olefDom->appendChild($riElement, _NAMESPACE_MODS, 'recordContentSource');
 }
 $rcsElement->nodeValue = $recordContentSource;
 
