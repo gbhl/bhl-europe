@@ -75,8 +75,8 @@ foreach( $arrTiffs as $tiffIndex => $tiffFile ) {
     $psElement->appendChild($pElement);
     
     // load taxonFinder result and add any found taxon-names to the OLEF
-    $domTaxons = @DOMDocument::load($taxonFile);
-    if( $domTaxons ) {
+    $domTaxons = new DOMDocument();
+    if( $domTaxons->load($taxonFile) ) {
         echo "Found taxons!";
         
         // find all entity elements
