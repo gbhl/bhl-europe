@@ -44,6 +44,7 @@ $olefElements = $metsDom->getElementsByTagName('olef');
 if( $olefElements->length > 0 ) {
     $olefElement = $olefElements->item(0);
     $xmlDataElement = $olefElement->parentNode;
+    $xmlDataElement->removeChild($olefElement);
 
     // Find title tag for use within dc:title
     $titleInfoNodeList = $olefDom->getElementsByTagNameNS(_NAMESPACE_MODS, 'titleInfo');
@@ -62,6 +63,10 @@ if( $olefElements->length > 0 ) {
     $attr->value = 'http://www.w3.org/2001/XMLSchema-instance';
     $olefDom->documentElement->setAttributeNode($attr);
     
+    $olefContentNode = $metsDom->createDocumentFragment();
+    $olefContentNode->appendXML( str_replace( '<?xml version="1.0" encoding="utf-8"?>','', $olefDom->saveXML()) );
+    $xmlDataElement->appendChild($olefContentNode);
+    
     // replace olef placeholder element
-    $xmlDataElement->replaceChild($metsDom->importNode($olefDom->documentElement, true), $olefElement);
+    //$xmlDataElement->replaceChild($metsDom->importNode($olefDom->documentElement, true), $olefElement);
 }
