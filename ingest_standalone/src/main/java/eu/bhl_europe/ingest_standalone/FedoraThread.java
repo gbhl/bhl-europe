@@ -20,12 +20,14 @@ import java.util.List;
 public class FedoraThread extends IngestThread {
     private int m_queueId = 0;
     private String m_sipPath = null;
+    private String m_guid = null;
     private File[] m_sipFiles = null;
     private FedoraClient m_fedoraClient = null;
 
-    public FedoraThread(int p_queueId, String p_sipPath) {
+    public FedoraThread(int p_queueId, String p_guid, String p_sipPath) {
         this.m_queueId = p_queueId;
         this.m_sipPath = p_sipPath;
+        this.m_guid = p_guid;
         
         InitLogger(FedoraThread.class);
         
@@ -185,7 +187,7 @@ public class FedoraThread extends IngestThread {
                         m_logger.error("Can't construct PID from filename, skipping [" + sipFile.getName() + "]");
                         continue;
                     }
-                    
+
                     // check if item already exists, if yes skip it
                     FindObjectsResponse findObjectsResponse = FedoraClient.findObjects().pid().query(URLEncoder.encode("pid=" + pid, "UTF-8")).execute(m_fedoraClient);
                     List<String> pids = findObjectsResponse.getPids();
@@ -210,6 +212,9 @@ public class FedoraThread extends IngestThread {
                     throw new Exception("Error during ingest");
                 }
             }
+
+            // once all files are ingested, call modifyObject on main entry to trigger access
+            FedoraClient.modifyObject("bhle:" + m_guid).state("A").execute(m_fedoraClient);
 
             // update status
             setStatus("finished");

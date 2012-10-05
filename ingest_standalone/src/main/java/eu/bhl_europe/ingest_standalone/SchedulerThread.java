@@ -52,10 +52,11 @@ public class SchedulerThread extends IngestThread {
             while( rs.next() ) {
                 int queueId = rs.getInt("id");
                 String sipPath = rs.getString("sip_path");
+                String guid = rs.getString("guid");
                 
                 m_logger.info("Executing queued item [" + queueId + "/" + sipPath + "]");
                 
-                FedoraThread fedoraThread = new FedoraThread(queueId, sipPath);
+                FedoraThread fedoraThread = new FedoraThread(queueId, guid, sipPath);
                 m_threadPool.submit(fedoraThread);
             }
             
