@@ -131,7 +131,7 @@ public class FedoraThread extends IngestThread {
 
     @Override
     public void run() {
-        m_logger.info("[FedoraThread] [" + m_queueId + "/" + m_sipPath + "]");
+        m_logger.info("Running [" + m_queueId + "/" + m_sipPath + "]");
         
         try {
             // update queue entry to be running
