@@ -19,26 +19,27 @@ public class Ingest
         // load properties
         try {
             m_settings.load(Ingest.class.getResourceAsStream("/ingest.properties"));
+            
+            // init done
+            logger.info("Init done");
+
+            // start main loop
+            while(true) {
+                try {
+                    // start scheduler thread and wait for it to finish
+                    SchedulerThread scheduler = new SchedulerThread();
+                    scheduler.start();
+                    scheduler.waitFor();
+                }
+                catch( Exception e ) {
+                    logger.error(e.getMessage());
+                    e.printStackTrace();
+                }
+            }
         }
         catch(Exception e) {
             logger.error(e.getMessage());
             e.printStackTrace();
-        }
-
-        logger.info("Init done");
-
-        // start main loop
-        while(true) {
-            try {
-                // start scheduler thread and wait for it to finish
-                SchedulerThread scheduler = new SchedulerThread();
-                scheduler.start();
-                scheduler.waitFor();
-            }
-            catch( Exception e ) {
-                logger.error(e.getMessage());
-                e.printStackTrace();
-            }
         }
     }
 

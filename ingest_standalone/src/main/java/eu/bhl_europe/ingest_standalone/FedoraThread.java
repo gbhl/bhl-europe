@@ -4,11 +4,14 @@ package eu.bhl_europe.ingest_standalone;
 
 import com.yourmediashelf.fedora.client.FedoraClient;
 import com.yourmediashelf.fedora.client.FedoraCredentials;
+import com.yourmediashelf.fedora.client.response.FindObjectsResponse;
 import com.yourmediashelf.fedora.client.response.IngestResponse;
 import java.io.File;
 import java.io.FilenameFilter;
+import java.net.URLEncoder;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.util.List;
 
 /**
  * ingest an item into fedora
@@ -128,10 +131,24 @@ public class FedoraThread extends IngestThread {
             }
         }
     }
+    
+    private String getPIDFromFile( File p_file ) {
+        int extIndex = p_file.getName().lastIndexOf('.');
+        if( extIndex > 0 ) {
+            String fileName = p_file.getName().substring(0, extIndex);
+            
+            fileName = fileName.replaceAll("_", "-");
+            fileName = fileName.replaceFirst("bhle-", "bhle:");
+            
+            return fileName;
+        }
+        
+        return null;
+    }
 
     @Override
     public void run() {
-        m_logger.info("[FedoraThread] [" + m_queueId + "/" + m_sipPath + "]");
+        m_logger.info("Running [" + m_queueId + "/" + m_sipPath + "]");
         
         try {
             // update queue entry to be running
@@ -163,6 +180,21 @@ public class FedoraThread extends IngestThread {
             // now process them all
             for( File sipFile : m_sipFiles ) {
                 try {
+                    String pid = getPIDFromFile(sipFile);
+                    if( pid == null ) {
+                        m_logger.error("Can't construct PID from filename, skipping [" + sipFile.getName() + "]");
+                        continue;
+                    }
+                    
+                    // check if item already exists, if yes skip it
+                    FindObjectsResponse findObjectsResponse = FedoraClient.findObjects().pid().query(URLEncoder.encode("pid=" + pid, "UTF-8")).execute(m_fedoraClient);
+                    List<String> pids = findObjectsResponse.getPids();
+                    if( !pids.isEmpty() ) {
+                        m_logger.info("PID already found in Fedora, skipping [" + sipFile.getName() + "/" + pid + "]");
+                        continue;
+                    }
+
+                    // finally execute the ingest
                     IngestResponse ingestResponse = FedoraClient.ingest().content(sipFile).format("info:fedora/fedora-system:METSFedoraExt-1.1").execute(m_fedoraClient);
                     m_logger.info("Item successfully ingested [" + sipFile + "] / [" + ingestResponse.getPid() + "]");
                     itemsDone++;
