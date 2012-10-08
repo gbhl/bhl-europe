@@ -85,7 +85,7 @@ if( !in_array($contentDir,$arrAnalyzedDirs) && (!is_dir_empty($contentDir,true) 
             mysql_select("INSERT INTO `ingest_queue`
                 (`content_id`, `guid`, `sip_path`)
                 values
-                ('" . $content_id . "', 'bhle:" . mysql_escape_string($cGUID) . "', '" . mysql_escape_string($destDir) . "')"
+                ('" . $content_id . "', '" . mysql_escape_string($cleanObjID) . "', '" . mysql_escape_string($destDir) . "')"
             );
         }
         else if ( !$stepFinished ) {

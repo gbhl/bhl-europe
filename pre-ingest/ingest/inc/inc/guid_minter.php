@@ -112,8 +112,4 @@ if ($cGUID=="")
     }
 }
 
-// replace slash with hyphen, since fedora can't handle slashes in GUIDs
-// e.g. 10706/a0bcc2h6 => 10706-a0bcc2h6
-$cGUID = str_replace('/', '-', $cGUID);
-
 echo "Minted GUID: <font color=#64FF0F><b>".$cGUID."</b></font> \n";
