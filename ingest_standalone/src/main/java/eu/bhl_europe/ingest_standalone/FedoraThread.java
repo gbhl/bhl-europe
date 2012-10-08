@@ -212,9 +212,9 @@ public class FedoraThread extends IngestThread {
                     throw new Exception("Error during ingest");
                 }
             }
-
             // once all files are ingested, call modifyObject on main entry to trigger access
-            FedoraClient.modifyObject("bhle:" + m_guid).state("A").execute(m_fedoraClient);
+            m_logger.debug("Activating object with GUID: " + m_guid);
+            FedoraClient.modifyObject(m_guid).state("A").execute(m_fedoraClient);
 
             // update status
             setStatus("finished");
