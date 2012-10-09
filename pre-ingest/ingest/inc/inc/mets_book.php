@@ -59,12 +59,15 @@ if( $olefElements->length > 0 ) {
     }
     
     // make sure that the xsi namespace is defined
-    $attr = $olefDom->createAttribute( 'xmlns:xsi' );
-    $attr->value = 'http://www.w3.org/2001/XMLSchema-instance';
-    $olefDom->documentElement->setAttributeNode($attr);
+    $xsiAttribute = $olefNode->getAttribute('xmlns:xsi');
+    if( empty($xsiAttribute) ) {
+        $olefNode->setAttribute('xmlns:xsi', 'http://www.w3.org/2001/XMLSchema-instance' );
+    }
     
     $olefContentNode = $metsDom->createDocumentFragment();
-    $olefContentNode->appendXML( str_replace( '<?xml version="1.0" encoding="utf-8"?>','', $olefDom->saveXML()) );
+    if( !$olefContentNode->appendXML( preg_replace( '/<\?xml .*\?>/i', '', $olefDom->saveXML()) ) ) {
+        throw new Exception('Unable to append OLEF to METS!');
+    }
     $xmlDataElement->appendChild($olefContentNode);
     
     // replace olef placeholder element

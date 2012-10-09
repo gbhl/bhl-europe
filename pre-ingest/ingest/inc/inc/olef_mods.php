@@ -8,38 +8,38 @@
 // ********************************************
 // OLEF MODIFICATIONS POSTPROCESSING
 // find root "element" entry of olef data
-$elementElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'element');
+$elementElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_OLEF, 'element');
 if( $elementElements->length <= 0 ) {
-    throw new Exception("OLEF root 'element' not found!: " . $_NAMESPACE_OLEF);
+    throw new Exception("OLEF root 'element' not found!: " . _NAMESPACE_OLEF);
 }
 $elementElement = $elementElements->item(0);
 
 // update guid information
-$guidElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'guid');
+$guidElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_OLEF, 'guid');
 $guidElement = null;
 if( $guidElements->length > 0 ) {
     $guidElement = $guidElements->item(0);
 }
 else {
-    $guidElement = $olefDom->appendChild($elementElement, $_NAMESPACE_OLEF, 'guid');
+    $guidElement = $olefDom->appendChild($elementElement, _NAMESPACE_OLEF, 'guid');
 }
 $guidElement->nodeValue = $objID;
 
 // update parent-guid information
 if( $objParentID != "" ) {
-    $parentGuidElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, 'parentGUID');
+    $parentGuidElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_OLEF, 'parentGUID');
     $parentGuidElement = null;
     if( $parentGuidElements->length > 0 ) {
         $parentGuidElement = $parentGuidElements->item(0);
     }
     else {
-        $parentGuidElement = $olefDom->appendChild($elementElement, $_NAMESPACE_OLEF, 'parentGUID');
+        $parentGuidElement = $olefDom->appendChild($elementElement, _NAMESPACE_OLEF, 'parentGUID');
     }
     $parentGuidElement = $objParentID;
 }
 
 // find bibliographic information
-$biElements = $olefDom->getElementsByTagNameNS($_NAMESPACE_OLEF, "bibliographicInformation");
+$biElements = $olefDom->getElementsByTagNameNS(_NAMESPACE_OLEF, "bibliographicInformation");
 if( $biElements->length <= 0 ) {
     throw new Exception("Unable to find bibliographicInformation");
 }
