@@ -2,7 +2,8 @@
 <xsl:stylesheet version="1.0"
 	xmlns:xlink="http://www.w3.org/1999/xlink" 
 	xmlns:mods="http://www.loc.gov/mods/v3"
-	xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/"	
+	xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v1/"	
+	xmlns:olef03="http://www.bhl-europe.eu/bhl-schema/v0.3/"	
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	exclude-result-prefixes="mods xlink" 
 	xmlns:marc="http://www.loc.gov/MARC21/slim">
@@ -13,7 +14,7 @@
 	<xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
 	<xsl:template match="/">
-		<xsl:for-each select="//olef:element">
+		<xsl:for-each select="//olef:element | //olef03:element">
 			<xsl:apply-templates/>
 		</xsl:for-each>
 	</xsl:template>

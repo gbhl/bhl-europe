@@ -70,7 +70,7 @@ public class Olef {
 		// TODO need more spec
 		String pageType = (String) evaluateXpath(
 				"//olef:itemInformation/olef:files/olef:file[" + (i + 1)
-						+ "]/olef:pages/olef:page/@pageType",
+						+ "]/olef:pages/olef:page/@olef:pageType",
 				XPathConstants.STRING);
 		return pageType;
 	}
