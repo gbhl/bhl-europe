@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mods="http://www.loc.gov/mods/v3"
-	exclude-result-prefixes="mods" xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v0.3/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:europeana="http://www.europeana.eu/schemas/ese/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mods="http://www.loc.gov/mods/v3"
+	exclude-result-prefixes="mods"
+	xmlns:olef="http://www.bhl-europe.eu/bhl-schema/v1/"
+	xmlns:olef03="http://www.bhl-europe.eu/bhl-schema/v0.3/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:europeana="http://www.europeana.eu/schemas/ese/"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 	<xsl:output method="xml" indent="yes" />
@@ -14,7 +18,7 @@
 			xsi:schemaLocation="http://www.europeana.eu/schemas/ese/ 
 								http://www.europeana.eu/schemas/ese/ESE-V3.4.xsd">
 			<europeana:record>
-				<xsl:for-each select="//olef:bibliographicInformation">
+				<xsl:for-each select="//olef:bibliographicInformation | //olef03:bibliographicInformation">
 					<xsl:apply-templates />
 				</xsl:for-each>
 
@@ -22,13 +26,13 @@
 				<europeana:type>IMAGE</europeana:type>
 				<europeana:rights>
 					<xsl:value-of
-						select="//olef:bibliographicInformation/mods:accessCondition" />
+						select="//olef:bibliographicInformation/mods:accessCondition | //olef03:bibliographicInformation/mods:accessCondition" />
 				</europeana:rights>
 				<europeana:dataProvider>
 					<xsl:value-of
-						select="//olef:bibliographicInformation/mods:recordInfo/mods:recordContentSource" />
+						select="//olef:bibliographicInformation/mods:recordInfo/mods:recordContentSource | //olef03:bibliographicInformation/mods:recordInfo/mods:recordContentSource" />
 				</europeana:dataProvider>
-				<xsl:for-each select="//olef:guid">
+				<xsl:for-each select="//olef:guid | //olef03:guid">
 					<europeana:isShownAt>
 						<xsl:value-of
 							select="concat('${domain.name}/portal/bhle-view/', translate(text(), '/', '-'))" />
