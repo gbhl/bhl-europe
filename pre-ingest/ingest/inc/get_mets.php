@@ -52,19 +52,27 @@ if (file_exists($olef_file))
         $objParentID = "";
     }
     
+    // always make sure we upgrade the OLEF to the latest version
+    $olefXSLT = new XSLTProcessor();
+    $olefXSLDoc = new DOMDocument();
+    $olefXSLDoc->load(_ABS . "inc/xml/OLEFUpdate.xsl");
+    $olefXSLT->importStylesheet($olefXSLDoc);
+    
     // load OLEF dom
     $olefDom = new AutoDOMDocument();
     $olefDom->load($olef_file);
+    
+    // apply update transformation
+    $olefDom->loadXML($olefXSLT->transformToXml($olefDom));
     $olefDom->formatOutput = true;
     
-    // find OLEF namespace prefix (since this might change)
-    $olefNodes = $olefDom->getElementsByTagName( 'olef' );
+    // find main olef node
+    $olefNodes = $olefDom->getElementsByTagNameNS(_NAMESPACE_OLEF, 'olef' );
     if( $olefNodes->length <= 0 ) {
         throw new Exception('Not a valid OLEF input!');
     }
     $olefNode = $olefNodes->item(0);
-    $_NAMESPACE_OLEF = $olefNode->namespaceURI;
-
+    
     // OLEF FERTIGSTELLEN
     echo '<h3>Finishing OLEF Pages & Data</h3><pre>';
     try {

@@ -12,7 +12,7 @@ public class OlefNamespaceContext implements NamespaceContext {
 		} else if (prefix.equals("dwc")) {
 			return "http://rs.tdwg.org/dwc/terms/";
 		} else if (prefix.equals("olef")) {
-			return "http://www.bhl-europe.eu/bhl-schema/v0.3/";
+			return "http://www.bhl-europe.eu/bhl-schema/v1/";
 		}
 		return null;
 	}
