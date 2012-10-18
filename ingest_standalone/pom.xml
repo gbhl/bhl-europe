@@ -84,6 +84,7 @@
                 </property>
             </activation>
             <build>
+                <directory>target_prod</directory>
                 <plugins>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
