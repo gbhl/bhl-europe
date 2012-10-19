@@ -23,7 +23,7 @@
 
 	<int-jms:message-driven-channel-adapter
 		channel="inboundFedoraMessageChannel" extract-payload="true"
-		destination="updateDestination" connection-factory="jmsFactory"
+		connection-factory="jmsFactory"
 		message-converter="fedoraJmsMessageConverter"
 		container="accessListenerContainer" />
 
@@ -51,7 +51,7 @@
 	<beans:bean id="accessListenerContainer"
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 	<beans:property name="concurrentConsumers" value="1"></beans:property>
-	<beans:property name="connectionFactory" value="jmsFactory"></beans:property>
+	<beans:property name="connectionFactory" ref="jmsFactory"></beans:property>
 	<beans:property name="destinationName" value="fedora.apim.update"></beans:property>
 	<beans:property name="sessionTransacted" value="true"></beans:property>
 	<beans:property name="pubSubDomain" value="true"></beans:property>
