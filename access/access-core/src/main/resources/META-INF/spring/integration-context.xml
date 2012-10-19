@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/integration"
-	xmlns:amq="http://activemq.apache.org/schema/core" xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
-	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/integration"
+	xmlns:amq="http://activemq.apache.org/schema/core"
+	xmlns:int-jms="http://www.springframework.org/schema/integration/jms"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
                         http://www.springframework.org/schema/beans/spring-beans.xsd
                         http://www.springframework.org/schema/context 
@@ -20,8 +23,9 @@
 
 	<int-jms:message-driven-channel-adapter
 		channel="inboundFedoraMessageChannel" extract-payload="true"
-		destination="updateDestination" connection-factory="jmsFactory" 
-		message-converter="fedoraJmsMessageConverter" />
+		destination="updateDestination" connection-factory="jmsFactory"
+		message-converter="fedoraJmsMessageConverter"
+		container="accessListenerContainer" />
 
 	<service-activator input-channel="inboundFedoraMessageChannel"
 		output-channel="inboundPidChannel" ref="inboundFedoraMessageProcessor" />
@@ -44,4 +48,16 @@
 		<queue capacity="100" />
 	</channel>
 
+	<beans:bean id="accessListenerContainer"
+		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+	<beans:property name="concurrentConsumers" value="1"></beans:property>
+	<beans:property name="connectionFactory" value="jmsFactory"></beans:property>
+	<beans:property name="destinationName" value="fedora.apim.update"></beans:property>
+	<beans:property name="sessionTransacted" value="true"></beans:property>
+	<beans:property name="pubSubDomain" value="true"></beans:property>
+	<beans:property name="subscriptionDurable" value="true"></beans:property>
+	<beans:property name="durableSubscriptionName"
+		value="${jms.broker.clientId}">
+	</beans:property>
+	</beans:bean>
 </beans:beans>
