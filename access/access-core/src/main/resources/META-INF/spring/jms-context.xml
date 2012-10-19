@@ -18,7 +18,7 @@
 	<!-- JMS ConnectionFactory to use, configuring the embedded broker using 
 		XML -->
 	<amq:connectionFactory id="jmsFactory"
-		brokerURL="${jms.broker.url}" />
+		brokerURL="${jms.broker.url}" clientID="${jms.broker.clientId}" />
 
 	<!-- <bean class="org.springframework.jms.listener.SimpleMessageListenerContainer"> 
 		<property name="connectionFactory" ref="jmsFactory" /> <property name="destination" 
