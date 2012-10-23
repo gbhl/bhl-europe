@@ -118,19 +118,15 @@ if( $line[10] == 4 ) {
 // already ingested
 else if( $line[10] == 5 ) {
     // check if ingest is still running
-    $queueResult = mysql_select("SELECT * FROM `ingest_queue` WHERE `content_id` = '" . $line[0] . "' AND `ingest_status` != 'finished'");
+    $queueResult = mysql_select("SELECT `ingest_status` FROM `ingest_queue` WHERE `content_id` = '" . $line[0] . "' AND `ingest_status` != 'finished'");
     $bQueueFailed = false;
     $bQueueRunning = false;
     $bQueueFinished = true;
-    $itemsDone = 0;
-    $itemCount = 0;
     if( mysql_num_rows($queueResult) > 0 ) {
         $bQueueFinished = false;
         
         while( ($queueRow = mysql_fetch_array($queueResult)) ) {
             $queueStatus = $queueRow['ingest_status'];
-            $itemsDone += $queueRow['items_done'];
-            $itemCount += $queueRow['item_count'];
 
             if( $queueStatus == 'error' ) {
                 $bQueueFailed = true;
@@ -147,6 +143,16 @@ else if( $line[10] == 5 ) {
         icon("planning_failed.png", "Ingest failed, please contact administrator");
     }
     else if( $bQueueRunning ) {
+        // fetch item counts
+        $itemCount = 0;
+        $itemsDone = 0;
+        $countResult = mysql_select("SELECT sum(`item_count`) AS `item_count`, sum(`items_done`) AS `items_done` FROM `ingest_queue` WHERE `content_id` = '" . $line[0] . "' GROUP BY `content_id`");
+        if( mysql_num_rows($countResult) > 0 ) {
+            $countRow = mysql_fetch_array($countResult);
+            $itemCount = $countRow['item_count'];
+            $itemsDone = $countRow['items_done'];
+        }
+        
         icon("planning_anim.gif", "Ingest currently running [" . $itemsDone . "/" . $itemCount . "]");
     }
     else if( $bQueueFinished ) {
