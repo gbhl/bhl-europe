@@ -109,6 +109,11 @@ public class XMLProcessor extends FileProcessor {
         }
     }
 
+    @Override
+    public void skipEntry() throws Exception {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
     private void addNode( Node currNode ) {
         this.addNode(currNode, "");
     }

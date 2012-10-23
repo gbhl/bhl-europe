@@ -213,6 +213,9 @@ public class Main {
                     MappingsHandler.Self().setMapping(inputFieldID, outputFieldID, mr);
                 }
             }
+            
+            // save skip filters
+            MappingsHandler.Self().setSkipFilter(MapFileHandler.self().getSkipFilters());
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(2);

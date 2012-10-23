@@ -109,6 +109,11 @@ public class MappingProcess {
         this.entriesDone = 0;
     }
 
+    /**
+     * execute a mapping step
+     * @return false if error occured / finished, true on success
+     * @throws Exception 
+     */
     public boolean processMapping() throws Exception {
         if (this.ifp == null || this.ofp == null || this.inputFile == null || this.outputFile == null || this.outputCharset == null || this.inputCharset == null || this.persistentMappings == null || this.tempMappings == null ) {
             System.err.println("[MappingProcess] Set input and output settings before calling processMapping()");
@@ -148,6 +153,16 @@ public class MappingProcess {
                 }
 
                 persistentMappings = new HashMap<String, String>();
+            }
+            
+            // check if we match a skip filter
+            if( MappingsHandler.Self().matchSkipFilter(fr.getIDRecord(), fr.getRecordContent()) ) {
+                ofp.skipEntry();    // discard anything mapped so far in this entry
+                ifp.nextEntry();    // continue with next entry
+                
+                //System.out.println("[INFO] Skipping entry due to applying skip-filter.");
+                
+                return true;
             }
             
             // Prefix the IDRecord with the inputIDOffsetPrefix

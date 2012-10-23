@@ -588,6 +588,14 @@ public class MARCProcessor extends FileProcessor {
         }
     }
 
+    @Override
+    public void skipEntry() throws Exception {
+        // just drop the current record & start with a fresh one
+        if( writer != null ) {
+            currWriteRecord = factory.newRecord();
+        }
+    }
+
     /**
      * Called to indicate that the current file processing is done
      */
