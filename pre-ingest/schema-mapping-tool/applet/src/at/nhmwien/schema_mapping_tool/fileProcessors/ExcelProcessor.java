@@ -99,6 +99,11 @@ public class ExcelProcessor extends FileProcessor {
         this.currRow++;
     }
 
+    @Override
+    public void skipEntry() throws Exception {
+        this.recordsStack.clear();
+    }
+
     public void addDataRecord( DataRecord nRecord, boolean bAddNew, boolean bReplaceAll ) {
         for( int i = 0; i < this.recordsStack.size(); i++ ) {
             DataRecord currRecord = this.recordsStack.get(i);

@@ -20,6 +20,7 @@ public class MappingsHandler implements Iterator<Entry<String,HashMap<String,Map
     private int mappingCount = 0;                                       // Count the mappings
     private ArrayList<String> outputOrder = new ArrayList<String>();
     private ArrayList<String> inputOrder = new ArrayList<String>();
+    private HashMap<String,String> skipFilter = new HashMap<String, String>();
 
     private static MappingsHandler mySelf = null;   // Static Reference Pointer to own instance
 
@@ -41,6 +42,50 @@ public class MappingsHandler implements Iterator<Entry<String,HashMap<String,Map
     private MappingsHandler() {
         //this.fromMappings = new HashMap<String,ArrayList<String>>();
         this.outputMappings = new HashMap<String,HashMap<String,MappingRecord>>();
+    }
+    
+    /**
+     * Add an entry to the skip filter
+     * @param IDInput Field to apply the filter to
+     * @param match String to match
+     */
+    public void addSkipFilter( String IDInput, String match ) {
+        this.skipFilter.put(IDInput, match);
+    }
+    
+    /**
+     * Return the skip filter
+     */
+    public HashMap<String, String> getSkipFilter() {
+        return this.skipFilter;
+    }
+
+    /**
+     * Replace all skip-filters with new ones
+     * @param p_skipFilter 
+     */
+    public void setSkipFilter(HashMap<String, String> p_skipFilter) {
+        if( p_skipFilter != null ) {
+            this.skipFilter = p_skipFilter;
+        }
+    }
+    
+    /**
+     * Check if a given entry matches a skip filter
+     * @param IDInput ID of input element
+     * @param content content of element to match against
+     * @return true on match, false if not
+     */
+    public boolean matchSkipFilter( String IDInput, String content ) {
+        if( IDInput == null || content == null ) return false;
+        
+        String skipRegex = this.skipFilter.get(IDInput);
+        
+        if( skipRegex != null && content.matches(skipRegex) ) {
+            return true;
+        }
+        
+        return false;
     }
 
     /**
@@ -188,6 +233,7 @@ public class MappingsHandler implements Iterator<Entry<String,HashMap<String,Map
         this.outputOrder.clear();
         this.inputOrder.clear();
         this.mappingCount = 0;
+        this.skipFilter.clear();
     }
 
     /**

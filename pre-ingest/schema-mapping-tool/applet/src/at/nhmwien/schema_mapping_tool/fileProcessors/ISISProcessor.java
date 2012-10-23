@@ -52,7 +52,7 @@ public class ISISProcessor extends FileProcessor {
     }
 
     public void nextEntry() {
-        // Check if we are in read modee
+        // Check if we are in read mode
         if( this.controlStruct != null ) {
             String[] nextRecord = new String[1];
 
@@ -167,6 +167,11 @@ public class ISISProcessor extends FileProcessor {
 
             this.writeBuffer = new HashMap<String, HashMap<Character,String>>();
         }
+    }
+
+    @Override
+    public void skipEntry() throws Exception {
+        this.writeBuffer = new HashMap<String, HashMap<Character,String>>();
     }
     
     public void done() {

@@ -40,6 +40,8 @@ public abstract class FileProcessor implements Iterator<DataRecord> {
     public abstract void prepareFileWrite() throws Exception;    // Called to tell the processor that we will use it for WRITING
 
     public abstract void nextEntry() throws Exception;   // Indicator function for the interface to start with a new record / read the next entry - do not forget to call "Collections.sort( this.recordsStack )"!!
+    
+    public abstract void skipEntry() throws Exception;  // skips & drops the current entry, e.g. because of filter conditions
 
     public abstract void done();        // Called to indicate that the processing is done (e.g. close files, etc.)
 

@@ -49,6 +49,7 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
     ManipulationsWindow mw;
     JDBCWindow jdcbw;
     AddFieldWindow afw;
+    FilterWindow m_fw;
 
     FileNameExtensionFilter mapFilter = null;   // Filter for mapping files
     FileNameExtensionFilter iso2709Filter = null;   // Filter for MARC21 (ISO2709) files
@@ -86,6 +87,7 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
         mw = new ManipulationsWindow();
         jdcbw = new JDBCWindow();
         afw = new AddFieldWindow();
+        m_fw = new FilterWindow();
 
         // Initialize file-filters
         String iso2709FileExts[] = { "mrc", "mrk" };
@@ -194,6 +196,7 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
         exitMenuItem = new javax.swing.JMenuItem();
         manipulationMenu = new javax.swing.JMenu();
         globalVMMenuItem = new javax.swing.JMenuItem();
+        filterMenuItem = new javax.swing.JMenuItem();
         toolsMenu = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         marcToMarcXMLMenuItem = new javax.swing.JMenuItem();
@@ -391,6 +394,14 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
         });
         manipulationMenu.add(globalVMMenuItem);
 
+        filterMenuItem.setText("Filter");
+        filterMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filterMenuItemActionPerformed(evt);
+            }
+        });
+        manipulationMenu.add(filterMenuItem);
+
         menuBar.add(manipulationMenu);
 
         toolsMenu.setText("Tools");
@@ -467,7 +478,7 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, scrollPane, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 870, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, toolBar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 870, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, toolBar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 870, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -676,6 +687,7 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
                 MapFileHandler.self().setManipulations(ManipulationsHandler.self().getManipulations());
                 MapFileHandler.self().setInputFields(inputFields);
                 MapFileHandler.self().setOutputFields(outputFields);
+                MapFileHandler.self().setSkipFilters(MappingsHandler.Self().getSkipFilter());
 
                 MapFileHandler.self().saveFile(file);
 
@@ -691,6 +703,9 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
                 fos.close();*/
 
                 this.setTitle(this.defaultTitle + " - " + file.getName());
+                
+                // remember saved file
+                this.currMappingFile = file;
             }
             catch( Exception e ) {
                 e.printStackTrace();
@@ -765,6 +780,9 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
                         this.doMapMove();
                     }
                 }
+                
+                // setup skip filters loaded from file
+                MappingsHandler.Self().setSkipFilter(MapFileHandler.self().getSkipFilters());
 
                 // Unset the selected input fields
                 this.selectedInputMFP = null;
@@ -1056,6 +1074,10 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
             }
         }
     }//GEN-LAST:event_refnumToOlefMenuItemActionPerformed
+
+    private void filterMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filterMenuItemActionPerformed
+        this.m_fw.setVisible(true);
+    }//GEN-LAST:event_filterMenuItemActionPerformed
 
     public void openSchema( int fieldType, String schemaName ) {
         LinkedHashMap<String,LinkedHashMap> fields = SchemaHandler.self().getSchemaFields( schemaName );
@@ -1415,6 +1437,7 @@ public class MainWindow extends javax.swing.JFrame implements ItemListener {
     private javax.swing.JButton doUnmapButton;
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuItem filterMenuItem;
     private javax.swing.JMenu formatFilesMenu;
     private javax.swing.JMenuItem generalManipulationMenuItem;
     private javax.swing.JMenuItem globalVMMenuItem;

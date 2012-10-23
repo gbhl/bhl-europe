@@ -142,6 +142,11 @@ public class JDBCProcessor extends FileProcessor {
         }
     }
 
+    @Override
+    public void skipEntry() throws Exception {
+        this.recordsStack.clear();
+    }
+
     public DataRecord getDataRecord( String IDRecord ) {
         DataRecord nRecord = new DataRecord();
         nRecord.setIDRecord(IDRecord);

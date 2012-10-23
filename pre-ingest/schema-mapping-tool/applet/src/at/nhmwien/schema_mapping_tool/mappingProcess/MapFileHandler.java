@@ -53,6 +53,7 @@ public class MapFileHandler {
     private HashMap<String,ArrayList<ManipulationRecord>> manipulations = null;
     private LinkedHashMap<String,LinkedHashMap> inputFields = null;
     private LinkedHashMap<String,LinkedHashMap> outputFields = null;
+    private HashMap<String,String> skipFilters = null;
 
     /**
      * Loads a given file into the instance, properties can be requested using the getter functions
@@ -71,6 +72,10 @@ public class MapFileHandler {
         this.setManipulations((HashMap<String, ArrayList<ManipulationRecord>>) ois.readObject());
         this.setInputFields((LinkedHashMap<String, LinkedHashMap>) ois.readObject());
         this.setOutputFields((LinkedHashMap<String, LinkedHashMap>) ois.readObject());
+        
+        // for backwards compatibility, this is optional
+        try { this.setSkipFilters((HashMap<String, String>) ois.readObject()); }
+        catch(Exception e) {}
 
         ois.close();
         fis.close();
@@ -98,6 +103,7 @@ public class MapFileHandler {
         oos.writeObject(this.getManipulations());
         oos.writeObject(this.getInputFields());
         oos.writeObject(this.getOutputFields());
+        oos.writeObject(this.getSkipFilters());
 
         oos.close();
         fos.close();
@@ -166,5 +172,13 @@ public class MapFileHandler {
      */
     public void setOutputFields(LinkedHashMap<String, LinkedHashMap> outputFields) {
         this.outputFields = outputFields;
+    }
+
+    public HashMap<String, String> getSkipFilters() {
+        return skipFilters;
+    }
+
+    public void setSkipFilters(HashMap<String, String> skipFilters) {
+        this.skipFilters = skipFilters;
     }
 }

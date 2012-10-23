@@ -10,5 +10,6 @@ settings.php
 target
 bin
 dist
-/pre-ingest/data-harmonisation/fr-nmhn/nbproject/private/
-/pre-ingest/data-harmonisation/fr-nmhn/nbproject/
+nbproject/private
+nbproject
+target_prod
