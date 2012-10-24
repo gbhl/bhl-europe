@@ -82,7 +82,7 @@ public class ISISProcessor extends FileProcessor {
             catch( Exception e ) {
                 e.printStackTrace();
             }
-
+            
             // Add the MFN-Number to the stack
             // TODO Replace IDRecord once custom field adding is supported
             DataRecord nRecord = new DataRecord();
@@ -97,7 +97,12 @@ public class ISISProcessor extends FileProcessor {
             Pattern p = Pattern.compile("<(\\d+)>(.*)</\\1>");
             Matcher m = p.matcher(recordContent);
 
+            // temporary stack used for sorting
+            TreeMap<String,ArrayList<ArrayList<DataRecord>>> currRecordsStack = new TreeMap<String,ArrayList<ArrayList<DataRecord>>>();
+            
+            // parse & add all fields
             while (m.find()) {
+                ArrayList<DataRecord> currFieldRecords = new ArrayList<DataRecord>();
                 //System.out.println( "Found: " + m.group(1) + " / Content: " + m.group(2) + " / " + (int) m.group(2).charAt(3) );
 
                 /*if( m.group(1).equals( "260$a" ) ) {
@@ -112,7 +117,8 @@ public class ISISProcessor extends FileProcessor {
                 nRecord.setIDRecord( fieldCode );
                 nRecord.setRecordContent( m.group(2) );
 
-                this.recordsStack.add(nRecord);
+                //this.recordsStack.add(nRecord);
+                currFieldRecords.add(nRecord);
 
                 // Find the sub-fields and add them to the stack
                 String[] subFields = m.group(2).split("\\^");
@@ -123,13 +129,38 @@ public class ISISProcessor extends FileProcessor {
                         nRecord.setIDRecord(fieldCode + DataRecord.getIDSeperator() + subFields[i].charAt(0));
                         nRecord.setRecordContent(subFields[i].substring(1));
 
-                        this.recordsStack.add(nRecord);
+                        //this.recordsStack.add(nRecord);
+                        currFieldRecords.add(nRecord);
+                    }
+                }
+                Collections.sort(currFieldRecords);
+                
+                // fetch fitting entry from temporary stack
+                ArrayList<ArrayList<DataRecord>> currRecordsStackEntry = currRecordsStack.get(fieldCode);
+                if( currRecordsStackEntry == null ) {
+                    currRecordsStackEntry = new ArrayList<ArrayList<DataRecord>>();
+                }
+                // add the new (sorted) record to the stack
+                currRecordsStackEntry.add(currFieldRecords);
+                currRecordsStack.put(fieldCode, currRecordsStackEntry);
+            }
+            
+            // add the temporary stack to the internal recordsStack
+            // we use this as the entries are now correctly sorted
+            Iterator<Map.Entry<String,ArrayList<ArrayList<DataRecord>>>> crs_It = currRecordsStack.entrySet().iterator();
+            while( crs_It.hasNext() ) {
+                Map.Entry<String,ArrayList<ArrayList<DataRecord>>> currEntry = crs_It.next();
+                Iterator<ArrayList<DataRecord>> ce_It = currEntry.getValue().iterator();
+                while(ce_It.hasNext()) {
+                    Iterator<DataRecord> dr_it = ce_It.next().iterator();
+                    while( dr_it.hasNext() ) {
+                        this.recordsStack.add(dr_it.next());
                     }
                 }
             }
 
             // Sort collection by fieldID (refer to the compareTo implementation in DataRecord class)
-            Collections.sort( this.recordsStack );
+            //Collections.sort( this.recordsStack );
         }
         // Check if we are in write mode
         else if( this.writeBuffer != null ) {
