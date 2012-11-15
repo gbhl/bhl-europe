@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Enable captcha, bhle_captcha. Rever bhle_captcha feature.
+ */
+function bhle_feedback_update_7100(&$sandbox){
+  module_enable(array('ctools', 'features', 'strongarm', 'captcha', 'image_captcha'));
+  module_enable(array('bhle_captcha'));
+  features_revert(array('bhle_captcha'));
+}

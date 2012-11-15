@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BHLE captcha settings feature.
+ */
+
+include_once 'bhle_captcha.features.inc';
