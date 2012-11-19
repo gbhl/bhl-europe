@@ -32,14 +32,12 @@ public class Ingest
                     scheduler.waitFor();
                 }
                 catch( Exception e ) {
-                    logger.error(e.getMessage());
-                    e.printStackTrace();
+                    logger.error(e.getMessage(),e);
                 }
             }
         }
         catch(Exception e) {
-            logger.error(e.getMessage());
-            e.printStackTrace();
+            logger.error(e.getMessage(),e);
         }
     }
 

@@ -130,4 +130,11 @@ public abstract class FileProcessor implements Iterator<DataRecord> {
     public void addDataRecord( DataRecord nRecord, boolean bAddNew ) {
         addDataRecord( nRecord, bAddNew, false );
     }
+    
+    /**
+     * clear the records-stack (required if we skip an entry)
+     */
+    public void clearStack() {
+        this.recordsStack.clear();
+    }
 }

@@ -53,8 +53,7 @@ public class FedoraThread extends IngestThread {
             stmt.execute();
         }
         catch(Exception e) {
-            m_logger.error(e.getMessage());
-            e.printStackTrace();
+            m_logger.error(e.getMessage(), e);
         }
         finally {
             if( stmt != null ) {
@@ -86,8 +85,7 @@ public class FedoraThread extends IngestThread {
             stmt.execute();
         }
         catch(Exception e) {
-            m_logger.error(e.getMessage());
-            e.printStackTrace();
+            m_logger.error(e.getMessage(),e);
         }
         finally {
             if( stmt != null ) {
@@ -119,8 +117,7 @@ public class FedoraThread extends IngestThread {
             stmt.execute();
         }
         catch(Exception e) {
-            m_logger.error(e.getMessage());
-            e.printStackTrace();
+            m_logger.error(e.getMessage(),e);
         }
         finally {
             if( stmt != null ) {
@@ -206,8 +203,7 @@ public class FedoraThread extends IngestThread {
                 }
                 catch( Exception e ) {
                     m_logger.error("Error while ingesting item [" + m_sipPath + "] / [" + sipFile + "]");
-                    m_logger.error(e.getMessage());
-                    e.printStackTrace();
+                    m_logger.error(e.getMessage(),e);
                     
                     throw new Exception("Error during ingest");
                 }
@@ -221,8 +217,7 @@ public class FedoraThread extends IngestThread {
         }
         catch( Exception e ) {
             m_logger.error("Error while processing sip-Directory [" + m_sipPath + "]");
-            m_logger.error(e.getMessage());
-            e.printStackTrace();
+            m_logger.error(e.getMessage(),e);
             
             // update status
             setStatus("error");

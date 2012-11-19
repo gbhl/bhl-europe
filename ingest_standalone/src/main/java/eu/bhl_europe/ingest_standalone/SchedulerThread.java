@@ -64,8 +64,7 @@ public class SchedulerThread extends IngestThread {
             sleep(60000);
         }
         catch( Exception e ) {
-            m_logger.error(e.getMessage());
-            e.printStackTrace();
+            m_logger.error(e.getMessage(),e);
         }
         // close database resources & clean up
         finally {
