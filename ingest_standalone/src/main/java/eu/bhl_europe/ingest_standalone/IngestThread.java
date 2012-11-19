@@ -31,8 +31,7 @@ public abstract class IngestThread extends Thread {
                     );
         }
         catch(Exception e) {
-            System.err.println(e.getMessage());
-            e.printStackTrace();
+            m_logger.error(e.getMessage(),e);
         }
         
         return null;

@@ -11,6 +11,7 @@ import java.io.FileInputStream;
 import java.io.OutputStream;
 import java.io.FileOutputStream;
 import java.nio.charset.Charset;
+import org.marc4j.MarcPermissiveStreamReader;
 
 /**
  *
@@ -21,7 +22,9 @@ public class MARC21Converter {
         InputStream in = new FileInputStream(inputFile);
         OutputStream out = new FileOutputStream(outputFile);
 
-        MarcReader reader = new MarcStreamReader(in, inputEncoding );
+        //MarcReader reader = new MarcStreamReader(in, inputEncoding );
+        MarcReader reader = new MarcPermissiveStreamReader(in,true,true,"IS05426");
+        System.err.println("Using IS05426 for conversion");
         MarcXmlWriter writer = new MarcXmlWriter(out, outputEncoding, true);
 
         while (reader.hasNext()) {
