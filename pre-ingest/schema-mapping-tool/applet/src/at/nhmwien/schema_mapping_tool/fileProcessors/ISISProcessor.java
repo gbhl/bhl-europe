@@ -62,7 +62,7 @@ public class ISISProcessor extends FileProcessor {
             while( returnCode != ErrorCodes.ZERO ) {
                 returnCode = ISISAPI.IsisRecRead(spaceHandler, 0, currIndex);
 
-                if( returnCode != ErrorCodes.ZERO ) System.out.println( "Skipping Record " + currIndex );
+                if( returnCode != ErrorCodes.ZERO ) System.out.println( "\nSkipping Record " + currIndex );
                 
                 currIndex++;
             }

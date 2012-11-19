@@ -81,7 +81,9 @@ public class MappingsHandler implements Iterator<Entry<String,HashMap<String,Map
         
         String skipRegex = this.skipFilter.get(IDInput);
         
-        if( skipRegex != null && content.matches(skipRegex) ) {
+        //if( skipRegex != null ) System.out.println("skipFilter: " + IDInput + " / " + skipRegex + " / " + content);
+        
+        if( skipRegex == null || content.matches(skipRegex) ) {
             return true;
         }
         

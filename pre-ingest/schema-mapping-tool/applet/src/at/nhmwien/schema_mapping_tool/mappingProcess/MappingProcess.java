@@ -34,6 +34,7 @@ public class MappingProcess {
 
     protected int entriesDone = 0;
     protected int countThreshold = 0;
+    protected int entriesFiltered = 0;
 
     public MappingProcess() {
     }
@@ -63,6 +64,13 @@ public class MappingProcess {
 
     public int getEntriesDone() {
         return this.entriesDone;
+    }
+    
+    /**
+     * Return the number of entries filtered during processing
+     */
+    public int getEntriedFiltered() {
+        return this.entriesFiltered;
     }
 
     public void prepare() throws Exception {
@@ -107,6 +115,7 @@ public class MappingProcess {
         this.bDataMapped = false;
         this.persistentMappings = new HashMap<String, String>();
         this.entriesDone = 0;
+        this.entriesFiltered = 0;
     }
 
     /**
@@ -156,9 +165,11 @@ public class MappingProcess {
             }
             
             // check if we match a skip filter
-            if( MappingsHandler.Self().matchSkipFilter(fr.getIDRecord(), fr.getRecordContent()) ) {
+            if( !MappingsHandler.Self().matchSkipFilter(fr.getIDRecord(), fr.getRecordContent()) ) {
+                bDataMapped = false;
                 ofp.skipEntry();    // discard anything mapped so far in this entry
-                ifp.nextEntry();    // continue with next entry
+                ifp.clearStack();   // clear any remaining content
+                this.entriesFiltered++;
                 
                 //System.out.println("[INFO] Skipping entry due to applying skip-filter.");
                 
