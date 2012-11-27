@@ -57,7 +57,8 @@
      18 - Descriptive cataloging form
          # - Non-ISBD
          a - AACR 2
-         i - ISBD
+         c - ISBD punctuation omitted
+         i - ISBD punctuation included
          p - Partial ISBD (BK) [OBSOLETE]
          r - Provisional (VM MP MU) [OBSOLETE]
          u - Unknown
@@ -109,7 +110,8 @@
         m - Computer file/Electronic resource
      01-04 - Undefined
      05 - Target audience
-     06-08 - Undefined
+     06 - Form of item
+     07-08 - Undefined
      09 - Type of computer file
      10 - Undefined
      11 - Government publication
@@ -223,13 +225,18 @@
          e - Synthetic
          f - Skin
          g - Textile
+         i - Plastic
          j - Glass
+         l - Vinyl
+         n - Vellum
          p - Plaster
          q - Flexible base photographic, positive
          r - Flexible base photographic, negative
          s - Non-flexible base photographic, positive
          t - Non-flexible base photographic, negative
          u - Unknown
+         v - Leather
+         w - Parchment
          y - Other photographic medium
          z - Other
          | - No attempt to code
@@ -261,9 +268,12 @@
          a - Tape cartridge
          b - Chip cartridge
          c - Computer optical disc cartridge
+         d - Computer disc, type unspecified
+         e - Computer disc cartridge, type unspecified
          f - Tape cassette
          h - Tape reel
          j - Magnetic disk
+         k - Computer card
          m - Magneto-optical disc
          o - Optical disc
          r - Remote
@@ -363,8 +373,13 @@
          e - Synthetic
          f - Skin
          g - Textile
+         i - Plastic
+         l - Vinyl
+         n - Vellum
          p - Plaster
          u - Unknown
+         v - Leather
+         w - Parchment
          z - Other
          | - No attempt to code
       05 - Type of reproduction
@@ -438,7 +453,7 @@
       01 - Specific material designation
          c - Filmstrip cartridge
          d - Filmslip
-         f - Other filmstrip type
+         f - Filmstrip, type unspecified
          o - Filmstrip roll
          s - Slide
          t - Transparency
@@ -529,6 +544,8 @@
          e - Microfiche
          f - Microfiche cassette
          g - Microopaque
+         h - Microfilm slip
+         j - Mircrofilm roll
          u - Unspecified
          z - Other
          | - No attempt to code
@@ -603,6 +620,7 @@
       00 - Category of material
          k - Nonprojected graphic
       01 - Specific material designation
+         a - Activity card
          c - Collage
          d - Drawing
          e - Painting
@@ -611,10 +629,16 @@
          h - Photoprint
          i - Picture
          j - Print
+         k - Poster
          l - Technical drawing
          n - Chart
          o - Flash card
+         p - Postcard
+         q - Icon
+         r - Radiograph
+         s - Study print
          u - Unspecified
+         v - Photograph, type unspecified
          z - Other
          | - No attempt to code
       02 - Undefined
@@ -636,7 +660,10 @@
          f - Skin
          g - Textile
          h - Metal
+         i - Plastic
+         l - Vinyl
          m - Mixed collection
+         n - Vellum
          o - Paper
          p - Plaster
          q - Hardboard
@@ -644,6 +671,8 @@
          s - Stone
          t - Wood
          u - Unknown
+         v - Leather
+         w - Parchment
          z - Other
          | - No attempt to code
       05 - Secondary support material
@@ -656,7 +685,10 @@
          f - Skin
          g - Textile
          h - Metal
+         i - Plastic
+         l - Vinyl
          m - Mixed collection
+         n - Vellum
          o - Paper
          p - Plaster
          q - Hardboard
@@ -664,6 +696,8 @@
          s - Stone
          t - Wood
          u - Unknown
+         v - Leather
+         w - Parchment
          z - Other
          | - No attempt to code
    007--MOTION PICTURE
@@ -673,6 +707,7 @@
       01 - Specific material designation
          c - Film cartridge
          f - Film cassette
+         o - Film roll
          r - Film reel
          u - Unspecified
          z - Other
@@ -1289,6 +1324,8 @@
          g - Punched paper tape [OBSOLETE]
          h - Magnetic tape [OBSOLETE]
          i - Multimedia [OBSOLETE]
+         o - Online
+         q - Direct electronic
          r - Regular print reproduction
          s - Electronic
          z - Other form of reproduction [OBSOLETE]
@@ -1418,7 +1455,10 @@
          g - General
          j - Juvenile
          | - No attempt to code
-      23-25 - Undefined
+      23 - Form of item
+         o - Online
+         q - Direct electronic
+      24-25 - Undefined
       26 - Type of computer file
          a - Numeric data
          b - Computer program
@@ -1494,6 +1534,8 @@
          bh - Transverse Mercator
          bi - Gauss-Kruger
          bj - Equirectangular
+         bk - Krovak
+         bl - Cassini-Soldner
          bo - Oblique Mercator
          br - Robinson
          bs - Space oblique Mercator
@@ -1560,6 +1602,8 @@
          c - Microopaque
          d - Large print
          f - Braille
+         o - Online
+         q - Direct electronic
          r - Regular print reproduction
          s - Electronic
          | - No attempt to code
@@ -1616,6 +1660,7 @@
          df - Dance forms
          dv - Divertimentos, serenades, cassations, divertissements, notturni
          fg - Fugues
+         fl - Flamenco
          fm - Folk music
          ft - Fantasias
          gm - Gospel music
@@ -1657,19 +1702,26 @@
          su - Suites
          sy - Symphonies
          tc - Toccatas
+         tl - Teatro lirico
          ts - Trio-sonatas
          uu - Unknown
+         vi - Villancicos 
          vr - Variations
          wz - Waltzes
+         za - Zarzuelas
          zz - Other
          || - No attempt to code
       20 - Format of music
          a - Full score
          b - Full score, miniature or study size
          c - Accompaniment reduced for keyboard
-         d - Voice score
+         d - Voice score with accompaniment omitted
          e - Condensed score or piano-conductor score
          g - Close score
+         h - Chorus score
+         i - Condensed score
+         j - Performer-conductor part
+         k - Vocal score
          m - Multiple score formats
          n - Not applicable
          u - Unknown
@@ -1709,6 +1761,8 @@
          g - Punched paper tape [   ]
          h - Magnetic tape [OBSOLETE]
          i - Multimedia [OBSOLETE]
+         o - Online
+         q - Direct electronic
          r - Regular print reproduction
          s - Electronic
          x - Other form of reproduction [OBSOLETE]
@@ -1833,6 +1887,8 @@
          g - Punched paper tape [OBSOLETE]
          h - Magnetic tape [OBSOLETE] 
          i - Multimedia [OBSOLETE]
+         o - Online
+         q - Direct electronic
          s - Electronic
          x - Other physical medium [OBSOLETE]
          z - Other physical medium [OBSOLETE]
@@ -1847,6 +1903,8 @@
          g - Punched paper tape [OBSOLETE]
          h - Magnetic tape [OBSOLETE]
          i - Multimedia [OBSOLETE]
+         o - Online
+         q - Direct electronic
          r - Regular print reproduction
          s - Electronic
          z - Other form of reproduction [OBSOLETE]
@@ -2047,6 +2105,8 @@
          c - Microopaque
          d - Large print
          f - Braille
+         o - Online
+         q - Direct electronic
          r - Regular print reproduction
          s - Electronic
          | - No attempt to code
@@ -2101,7 +2161,9 @@
          h - Magnetic tape [OBSOLETE]
          i - Multimedia [OBSOLETE]
          j - Handwritten transcript [OBSOLETE]
+         o - Online
          p - Photocopy [OBSOLETE]
+         q - Direct electronic
          r - Regular print reproduction
          s - Electronic
          t - Typewritten transcript [OBSOLETE]
@@ -2133,6 +2195,22 @@
          d - Control by folder
          e - Control by item
          u - Unknown
+
+  009 - PHYSICAL DESCRIPTION FIXED-FIELD FOR ARCHIVAL COLLECTION (VM) - [OBSOLETE]
+    Character Positions
+      00 - Genealogical stage
+      01 - Technical stage
+      02 - Color stage
+      03 - Film emulsion
+      04 - Film base
+      05 - Negative or positive sound
+      06 - Additional types of color
+      07 - Longitudinal shrinkage
+      08 - Perforation shrinkage
+      09 - Film deterioration
+      10 - Completeness
+      11-14 - Film inspection date
+
 
 --Number and Code Fields (01X-04X)--
 010 - LIBRARY OF CONGRESS CONTROL NUMBER (NR)
@@ -2211,7 +2289,7 @@
       Second - Display constant controller
          # - Copyright or legal deposit number
          8 - No display constant controller generated
-   Subfield Code
+   Subfield Codes
       $a - Copyright or legal deposit number (R)
       $b - Assigning agency (NR)
       $d - Date (NR)
@@ -2227,7 +2305,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Copyright article-fee code (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -2292,7 +2370,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Overseas acquisition number (R)
       $8 - Field link and sequence number (R)
 
@@ -2342,6 +2420,7 @@
    Subfield Codes
       $a - Publisher number (NR)
       $b - Source (NR)
+      $q - Qualifying information (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -2413,6 +2492,9 @@
       $a - Formatted date/time (R)
       $b - Geographic classification area code (R)
       $c - Geographic classification subarea code (R)
+      $p - Place of event (R)
+      $0 - Record control number (R)
+      $2 - Source of term (R)
       $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -2450,7 +2532,9 @@
       $x - Beginning date (NR)
       $y - Ending date (NR)
       $z - Name of extraterrestrial body  (NR)
+      $0 - Authority record control number or standard number (R)
       $2 - Source  (NR)
+      $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -2492,7 +2576,7 @@
       $g - Additional format characteristics (R)
       $n - Note (R)
       $6 - Linkage (NR)
-       $8 - Field link and sequence number (R)
+      $8 - Field link and sequence number (R)
 
 038 - RECORD CONTENT LICENSOR (NR)
    Indicators
@@ -2516,7 +2600,7 @@
       $b - Language of cataloging (NR)
       $c - Transcribing agency (NR)
       $d - Modifying agency (R)
-      $e - Description conventions (NR)
+      $e - Description conventions (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -2538,8 +2622,12 @@
       $e - Language code of librettos (R)
       $f - Language code of table of contents (R)
       $g - Language code of accompanying material other than librettos (R)
-      $h - Language code of original and/or intermediate translations of text (R)
+      $h - Language code of original and/or intermediate translations of text (R) [REDEFINED]
+      $h - Language code of original (R)
       $j - Language code of subtitles or captions (R)
+      $k - Language code of intermediate translations (R)
+      $m - Language code of original accompanying materials other than librettos (R)
+      $n - Language code of original libretto (R)
       $2 - Source of code (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -2550,7 +2638,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Authentication code (R)
          dc - Dublin Core 
          dhca - Dance Heritage Coalition Access Project
@@ -2588,10 +2676,11 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Geographic area code (R)
       $b - Local GAC code (R)
       $c - ISO code (R)
+      $0 - Authority record control number or standard number (R)
       $2 - Source of local code (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -2602,7 +2691,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - MARC country code (R)
       $b - Local subentity code (R)
       $c - ISO country code (R)
@@ -2975,11 +3064,13 @@
 
 080 - UNIVERSAL DECIMAL CLASSIFICATION NUMBER (R)
    Indicators
-      First - Undefined
-         # - Undefined
+      First - Type of edition
+         # - No information provided
+         0 - Full
+         1 - Abridged
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Universal Decimal Classification number (NR)
       $b - Item number (NR)
       $x - Common auxiliary subdivision (R)
@@ -2994,6 +3085,7 @@
          0 - Full edition
          1 - Abridged edition
          2 - Abridged NST version (BK MU VM SE) [OBSOLETE]
+         7 - Other edition specified in subfield $2
       Second - Source of classification number
          # - No information provided
          0 - Assigned by LC
@@ -3013,6 +3105,7 @@
       First - Type of edition
          0 - Full edition
          1 - Abridged edition
+         7 - Other edition specified in subfield $2
       Second - Undefined
          # - Undefined
    Subfield Codes
@@ -3035,6 +3128,7 @@
    Subfield Codes
       $a - Classification number (R)
       $b - Item number (NR)
+      $q - Assigning agency (NR)
       $2 - Source of number (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -3106,7 +3200,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Shelf location (NR)
 
 091 - MICROFILM SHELF LOCATION (AM) [OBSOLETE]
@@ -3115,7 +3209,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Microfilm shelf location (NR)
 
 
@@ -3518,14 +3612,15 @@
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
-257 - COUNTRY OF PRODUCING ENTITY FOR ARCHIVAL FILMS (NR)
+257 - COUNTRY OF PRODUCING ENTITY (R)
    Indicators
       First - Undefined
          # - Undefined
       Second - Undefined
          # - Undefined
    Subfield Codes
-      $a - Country of producing entity (NR)
+      $a - Country of producing entity (R)
+      $2 - Source (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -3566,7 +3661,7 @@
       $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
-
+	  
 261 - IMPRINT STATEMENT FOR FILMS (Pre-AACR 1 Revised) (NR) [LOCAL]
    Indicators
       First - Undefined
@@ -3603,8 +3698,28 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Projected publication date (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+	  
+264 - PRODUCTION, PUBLICATION, DISTRIBUTION, MANUFACTURE, AND COPYRIGHT NOTICE (R)
+   Indicators
+      First - Sequence of statements
+         # - Not applicable/No information provided/Earliest
+         2 - Intervening
+         3 - Current/latest
+      Second - Function of entity
+         0 - Production
+         1 - Publication
+         2 - Distribution
+         3 - Manufacture
+         4 - Copyright notice date
+   Subfield Codes
+      $a - Place of production, publication, distribution, manufacture (R)
+      $b - Name of producer, publisher, distributor, manufacturer (R)
+      $c - Date of production, publication, distribution, manufacture, or copyright notice (R)
+      $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -3734,7 +3849,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Playing time (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -3801,7 +3916,49 @@
       $b - Dates of former publication frequency (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
-
+	  
+336 - CONTENT TYPE (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Content type term (R)
+      $b - Content type code (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+	  
+337 - MEDIA TYPE (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Media type term (R)
+      $b - Media type code (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+	  
+338 - CARRIER TYPE (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Carrier type term (R)
+      $b - Carrier type code (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)	
+	          	  
 340 - PHYSICAL MEDIUM (R)
    Indicators 
       First - Undefined
@@ -3817,6 +3974,13 @@
       $f - Production rate/ratio (R)
       $h - Location within medium (R)
       $i - Technical specifications of medium (R)
+      $j - Generation (R)
+      $k - Layout (R)
+      $m - Book format (R)
+      $n - Font size (R)
+      $o - Polarity (R)
+      $0 - Authority record control number or standard number (R)
+      $2 - Source (NR)
       $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -3880,6 +4044,76 @@
       $g - Bearing units (NR)
       $h - Bearing reference direction (NR)
       $i - Bearing reference meridian (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+	  
+344 - SOUND CHARACTERISTICS (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Type of recording (R)
+      $b - Recording medium (R)
+      $c - Playing speed (R)
+      $d - Groove characteristic (R)
+      $e - Track configuration (R)
+      $f - Tape configuration (R)
+      $g - Configuration of playback channels (R)
+      $h - Special playback characteristics (R)
+      $0 - Authority record control number or standard number (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+
+345 - PROJECTION CHARACTERISTICS OF MOVING IMAGE (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Presentation format (R)
+      $b - Projection speed (R)
+      $0 - Authority record control number or standard number (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+	  
+346 - VIDEO CHARACTERISTICS (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Video format (R)
+      $b - Broadcast standard (R)
+      $0 - Authority record control number or standard number (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+
+347 - DIGITAL FILE CHARACTERISTICS (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - File type (R)
+      $b - Encoding format (R)
+      $c - File size (R)
+      $d - Resolution (R)
+      $e - Regional encoding (R)
+      $f - Transmission speed (R)
+      $0 - Authority record control number or standard number (R)
+      $2 - Source (NR)
+      $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -3972,7 +4206,7 @@
          # - Undefined
       Second - Undefined
          # - Undefined
-   Subfield Code
+   Subfield Codes
       $a - Rental price (NR)
 
 362 - DATES OF PUBLICATION AND/OR SEQUENTIAL DESIGNATION (R)
@@ -4060,6 +4294,96 @@
       $k - MARC country code (NR)
       $m - Identification of agency (NR)
       $2 - Source of availability status code (NR)
+      $6 - Linkage (NR) 
+      $8 - Field link and sequence number (R)
+	  
+377 - ASSOCIATED LANGUAGE (R)
+   Indicators
+      First - Undefined
+         # - Undefined 
+      Second - Source of code
+         # - MARC language code
+         7 - Source specified in subfield $2
+   Subfield Codes
+      $a - Language code (R)
+      $l - Language term (R)
+      $2 - Source (NR)
+      $6 - Linkage (NR) 
+      $8 - Field link and sequence number (R)
+	  
+380 - FORM OF WORK (R)
+   Indicators
+      First - Undefined
+         # - Undefined 
+      Second - Undefined
+         # - Undefined 
+   Subfield Codes
+      $a - Form of work (R)
+      $0 - Record control number (R)
+      $2 - Source of term (NR)
+      $6 - Linkage (NR) 
+      $8 - Field link and sequence number (R)
+	  
+381 - OTHER DISTINGUISHING CHARACTERISTICS OF WORK OR EXPRESSION (R)
+   Indicators
+      First - Undefined
+         # - Undefined 
+      Second - Undefined
+         # - Undefined 
+   Subfield Codes
+      $a - Other distinguishing characteristic (R)
+      $u - Uniform Resource Identifier (R)
+      $v - Source of information (R)
+      $0 - Record control number (R)
+      $2 - Source of term (NR)
+      $6 - Linkage (NR) 
+      $8 - Field link and sequence number (R)
+	  
+382 - MEDIUM OF PERFORMANCE (R)
+   Indicators
+      First - Undefined
+         # - Undefined 
+      Second - Undefined
+         # - Undefined 
+   Subfield Codes
+      $a - Medium of performance (R)
+      $b - Soloist (R)
+      $d - Doubling instrument (R)
+      $n - Number of performers of the same medium (R)
+      $p - Alternative medium of performance (R)
+      $s - Total number of performers (R)
+      $v - Note (R)
+      $0 - Record control number (R)
+      $2 - Source of term (NR)
+      $6 - Linkage (NR) 
+      $8 - Field link and sequence number (R)
+	  
+383 - NUMERIC DESIGNATION OF MUSICAL WORK (R)
+   Indicators
+      First - Undefined
+         # - Undefined 
+      Second - Undefined
+         # - Undefined 
+   Subfield Codes
+      $a - Serial number (R)
+      $b - Opus number (R)
+      $c - Thematic index number (R)
+      $d - Thematic index code (NR)
+      $e - Publisher associated with opus number (NR)
+      $2 - Source (NR)
+      $6 - Linkage (NR) 
+      $8 - Field link and sequence number (R)
+	  
+384 - KEY (NR)
+   Indicators
+      First - Key type
+         # - Relationship to original unknown
+         0 - Original key
+         1 - Transposed key 
+      Second - Undefined
+         # - Undefined 
+   Subfield Codes
+      $a - Key (NR)
       $6 - Linkage (NR) 
       $8 - Field link and sequence number (R)
 
@@ -4184,7 +4508,7 @@
       $a - Series statement (R)
       $l - Library of Congress call number (NR)
       $v - Volume number/sequential designation  (R)
-      $x - International Standard Serial Number (NR)
+      $x - International Standard Serial Number (R)
       $3 - Materials specified
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -4335,6 +4659,7 @@
       $a - Name of source (NR)
       $b - Coverage of source (NR)
       $c - Location within source (NR)
+      $u - Uniform Resource Identifier (R)
       $x - International Standard Serial Number (NR)
       $3 - Materials specified (NR)
       $6 - Linkage (NR)
@@ -4447,6 +4772,11 @@
          # - Undefined
    Subfield Codes
       $a - Date/time and place of an event note (NR)
+      $d - Date of event (R)
+      $o - Other event information (R)
+      $p - Place of event (R)
+      $0 - Record control number (R)
+      $2 - Source of term (R)
       $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
@@ -4493,7 +4823,7 @@
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
-522 - GEOGRAPHIC COVERAGE NOTE (R)
+  522 - GEOGRAPHIC COVERAGE NOTE (R)
    Indicators
       First - Display constant controller
          # - Geographic coverage
@@ -4642,6 +4972,7 @@
       $t - Title statement of original (NR)
       $x - International Standard Serial Number (R)
       $z - International Standard Book Number (R)
+      $3 - Materials specified (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -4936,6 +5267,7 @@
    Subfield Codes
       $a - History (NR)
       $b - Time of collation (NR) [OBSOLETE]
+      $0 - Uniform Resource Identifier (R)
       $3 - Materials specified (NR)
       $5 - Institution to which field applies (NR)
       $6 - Linkage (NR)
@@ -5107,7 +5439,7 @@
       $5 - Institution to which field applies (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
-
+	  
 586 - AWARDS NOTE (R)
    Indicators
       First - Display constant controller
@@ -5118,6 +5450,18 @@
    Subfield Codes
       $a - Awards note (NR)
       $3 - Materials specified (NR)
+      $6 - Linkage (NR)
+      $8 - Field link and sequence number (R)
+	  
+588 - SOURCE OF DESCRIPTION NOTE (R)
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Source of description note (NR)
+      $5 - Institution to which field applies (NR)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 	  
@@ -5159,7 +5503,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Personal name (NR)
@@ -5206,7 +5550,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Corporate name or jurisdiction name as entry element (NR)
@@ -5251,7 +5595,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Meeting name or jurisdiction name as entry element (NR)
@@ -5294,7 +5638,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Uniform title (NR)
@@ -5334,7 +5678,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Chronological term (NR)
@@ -5362,7 +5706,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Topical term or geographic name as entry element (NR)
@@ -5392,7 +5736,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Geographic name (NR)
@@ -5478,7 +5822,7 @@
          3 - National Agricultural Library subject authority file
          4 - Source not specified
          5 - Canadian Subject Headings
-         6 - R�pertoire de vedettes-mati�re
+         6 - Répertoire de vedettes-matière
          7 - Source specified in subfield $2
    Subfield Codes
       $a - Genre/form data or focus term (NR)
@@ -5593,6 +5937,7 @@
       $f - Date of a work (NR)
       $g - Miscellaneous information (NR)
       $h - Medium (NR)
+      $i - Relationship information (R)
       $j - Attribution qualifier (R) 
       $k - Form subheading (R)
       $l - Language of a work (NR)
@@ -5665,6 +6010,7 @@
       $f - Date of a work (NR)
       $g - Miscellaneous information (NR)
       $h - Medium (NR)
+      $i - Relationship information (R)
       $k - Form subheading (R)
       $l - Language of a work (NR)
       $m - Medium of performance for music (R)
@@ -5705,6 +6051,7 @@
       $f - Date of a work (NR)
       $g - Miscellaneous information (NR)
       $h - Medium (NR)
+      $i - Relationship information (R)
       $j - Relator term (R)
       $k - Form subheading (R)
       $l - Language of a work (NR)
@@ -5783,6 +6130,7 @@
       $f - Date of a work (NR)
       $g - Miscellaneous information (NR)
       $h - Medium (NR)
+      $i - Relationship information (R)
       $k - Form subheading (R)
       $l - Language of a work (NR)
       $m - Medium of performance for music (R)
@@ -5899,7 +6247,7 @@
       $2 - Source of term (NR) 
       $3 - Materials specified (NR)
       $6 - Linkage (NR)
-          $8 - Field link and sequence number (R)
+      $8 - Field link and sequence number (R)
 
 
 --Linking Entry Fields (76X-78X)--
@@ -5916,9 +6264,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $m - Material-specific details (NR)
       $n - Note (R)
       $o - Other item identifier (R)
@@ -5928,6 +6276,7 @@
       $w - Record control number (R)
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -5949,9 +6298,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $m - Material-specific details (NR)
       $n - Note (R)
       $o - Other item identifier (R)
@@ -5961,6 +6310,7 @@
       $w - Record control number (R)
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -5982,9 +6332,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -5998,6 +6348,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6019,9 +6370,9 @@
       $b - Edition (NR) 
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6035,6 +6386,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6056,9 +6408,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR) 
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6072,6 +6424,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6094,9 +6447,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6110,6 +6463,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Stan dard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6130,9 +6484,9 @@
       $a - Main entry heading (NR)
       $b - Edition (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6148,6 +6502,7 @@
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
       $3 - Materials specified (NR)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6169,9 +6524,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6184,6 +6539,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6211,9 +6567,9 @@
       $d - Place, publisher, and date of publication (NR)
       $e - Language code (NR)
       $f - Country code (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6227,6 +6583,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6248,9 +6605,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6264,6 +6621,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6285,9 +6643,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6298,6 +6656,7 @@
       $w - Record control number (R)
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6325,9 +6684,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6341,6 +6700,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6369,9 +6729,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6385,6 +6745,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6406,9 +6767,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $j - Period of content (NR)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
@@ -6424,6 +6785,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6432,7 +6794,7 @@
          3 - Bibliographic level
       $8 - Field link and sequence number (R)
 
-787 - NONSPECIFIC RELATIONSHIP ENTRY (R)
+787 - OTHER RELATIONSHIP ENTRY (R)
    Indicators
       First - Note controller
          0 - Display note
@@ -6445,9 +6807,9 @@
       $b - Edition (NR)
       $c - Qualifying information (NR)
       $d - Place, publisher, and date of publication (NR)
-      $g - Relationship information (R)
+      $g - Related parts (R)
       $h - Physical description (NR)
-      $i - Display text (NR)
+      $i - Relationship information (R)
       $k - Series data for related item (R)
       $m - Material-specific details (NR)
       $n - Note (R)
@@ -6460,6 +6822,7 @@
       $x - International Standard Serial Number (NR)
       $y - CODEN designation (NR)
       $z - International Standard Book Number (R)
+      $4 - Relationship code (R)
       $6 - Linkage (NR)
       $7 - Control subfield (NR)
          0 - Type of main entry heading
@@ -6505,6 +6868,7 @@
       $0 - Authority record control number (R)
       $3 - Materials specified (NR)
       $4 - Relator code (R)
+      $5 - Institution to which field applies (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -6541,6 +6905,7 @@
       $0 - Authority record control number (R)
       $3 - Materials specified (NR)
       $4 - Relator code (R)
+      $5 - Institution to which field applies (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -6575,6 +6940,7 @@
       $0 - Authority record control number (R)
       $3 - Materials specified (NR)
       $4 - Relator code (R)
+      $5 - Institution to which field applies (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -6604,6 +6970,7 @@
       $x - International Standard Serial Number (NR)
       $0 - Authority record control number (R)
       $3 - Materials specified (NR)
+      $5 - Institution to which field applies (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
 
@@ -6642,6 +7009,23 @@
       $d - Inclusive dates (NR) (MU VM SE) [OBSOLETE]
       $e - Retention statement (NR) (CF MU VM SE) [OBSOLETE]
       $8 - Field link and sequence number (R)
+
+  851 - LOCATION (R) [OBSOLETE]
+   Indicators
+      First - Undefined
+         # - Undefined
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Name (custodian or owner) (NR)
+      $b - Institutional division (NR)
+      $c - Street address (NR)
+      $d - Country (NR)
+      $e - Location of units (NR)
+      $f - Item number (NR)
+      $g - Repository location code (NR)
+      $3 - Materials specified (NR)
+      $6 - Linkage (NR)
 
 852 - LOCATION (R)
    Indicators
@@ -6789,6 +7173,25 @@
       $w - Replacement bibliographic record control number (R)
       $6 - Linkage (NR)
       $8 - Field link and sequence number (R)
+	  
+883 - MACHINE-GENERATED METADATA PROVENANCE (R)
+   Indicators
+      First - Method of machine assignment
+         # - No information provided/not applicable
+         0 - Fully machine-generated
+         1 - Partially machine-generated
+      Second - Undefined
+         # - Undefined
+   Subfield Codes
+      $a - Generation process (NR)
+      $c - Confidence value (NR)
+      $d - Generation date (NR)
+      $q - Generation agency (NR)
+      $x - Validity end date (NR)
+      $u - Uniform Resource Identifier (NR)
+      $w - Bibliographic record control number (R)
+      $0 - Authority record control number or standard number (R)
+      $8 - Field link and sequence number (R)
 
 886 - FOREIGN MARC INFORMATION FIELD (R)
    Indicators
@@ -6813,4 +7216,4 @@
          # - Undefined
    Subfield Codes
       $a - Content of non-MARC field (NR)
-      $2 - Source of data (NR)    
+      $2 - Source of data (NR)

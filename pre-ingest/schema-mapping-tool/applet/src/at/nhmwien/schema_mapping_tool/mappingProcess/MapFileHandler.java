@@ -22,8 +22,11 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.List;
 
 /**
  *
@@ -49,7 +52,7 @@ public class MapFileHandler {
         return MapFileHandler.mySelf;
     }
 
-    private HashMap<String,HashMap<String,MappingRecord>> mappings = null;
+    private LinkedHashMap<String,HashMap<String,MappingRecord>> mappings = null;
     private HashMap<String,ArrayList<ManipulationRecord>> manipulations = null;
     private LinkedHashMap<String,LinkedHashMap> inputFields = null;
     private LinkedHashMap<String,LinkedHashMap> outputFields = null;
@@ -129,7 +132,18 @@ public class MapFileHandler {
      * @param mappings the mappings to set
      */
     public void setMappings(HashMap<String, HashMap<String, MappingRecord>> mappings) {
-        this.mappings = mappings;
+        this.mappings = new LinkedHashMap<String, HashMap<String, MappingRecord>>();
+
+        // fetch keys & sort them by name
+        List<String> keys = new ArrayList<String>(mappings.keySet());
+        Collections.sort(keys);
+        
+        // add keys to sorted list
+        Iterator<String> k_it = keys.iterator();
+        while(k_it.hasNext()) {
+            String currKey = k_it.next();
+            this.mappings.put(currKey, mappings.get(currKey));
+        }
     }
 
     /**
