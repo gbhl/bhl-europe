@@ -433,7 +433,10 @@
 				<xsl:element name="field">
 					<xsl:attribute name="name">mods_title</xsl:attribute>
 					<!-- including nsort because this is keyword search spec -->
-					<xsl:value-of select="$nsort"/>
+                                        <xsl:if test="$nsort != ''">
+        					<xsl:value-of select="$nsort"/>
+                                                <xsl:text> </xsl:text>
+                                        </xsl:if>
 					<xsl:value-of select="$titl"/>
 
 					<xsl:for-each select="mods:subTitle">
