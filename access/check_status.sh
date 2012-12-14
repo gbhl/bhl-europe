@@ -15,10 +15,10 @@ ACCESS_PATH=
 FORCE_TIMEOUT=240
 
 # fetch the status
-ACCESS_STATUS=`curl ${ACCESS_URL} -u ${ACCESS_USER}:${ACCESS_PASSWORD} | grep lastJobExecutionStatus | grep -i start`
+ACCESS_STATUS=`curl ${ACCESS_URL} -u ${ACCESS_USER}:${ACCESS_PASSWORD} | grep 'lastJobExecutionStatus' | grep -i 'start'`
 
 # check if jobs are running
-if [ -z ${ACCESS_STATUS} ]
+if [ -z "${ACCESS_STATUS}" ]
 then
     echo "No more jobs running - restarting access!"
 
