@@ -1,14 +1,16 @@
 #!/bin/bash
+. $HOME/.profile
 #
 # small script which checks if access is still processing content, if not it restarts it
 #
 
-# MUST FILL IN
+#
+# CONFIG
+#
 ACCESS_URL=
 ACCESS_USER=
 ACCESS_PASSWORD=
 ACCESS_PATH=
-CATALINA_PID=
 # OPTIONAL CONFIG
 FORCE_TIMEOUT=240
 
