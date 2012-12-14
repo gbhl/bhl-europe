@@ -69,6 +69,7 @@ function handleEntry( $p_name, $p_path ) {
         }
         
         // Read structural excel file
+        $fileInfo = array();
         $excelReader = new Spreadsheet_Excel_Reader($structureFile);
         $rowCount = $excelReader->rowcount();
         $sequence = 0;
@@ -76,6 +77,8 @@ function handleEntry( $p_name, $p_path ) {
             $type = $excelReader->val($row, 1);
             $filename = $excelReader->val($row, 16);
             $element_type = $excelReader->val($row, 17);
+            $title = $excelReader->val($row, 21);
+            $authors = $excelReader->val($row, 22);
             
             // extract identifier from filename
             $pathInfo = pathinfo($filename);
@@ -96,6 +99,7 @@ function handleEntry( $p_name, $p_path ) {
                     // construct basic filename from identifier
                     $filename = str_replace('_', '-', $identifier);
                     $filename .= '_' . sprintf('%04d', $sequence);
+                    $basename = $filename;
                     
                     switch( $element_type ) {
                         // cover
@@ -120,15 +124,44 @@ function handleEntry( $p_name, $p_path ) {
                     $filename .= '.tif';
                     echo "Renaming to '$filename'\n";
                     
+                    $fileInfo[$identifier] = array(
+                        'filename' => $filename,
+                        'basename' => $basename,
+                        'structure' => false
+                    );
+                    
                     // copy & rename file to final version
                     copy($subPath . $subEntry . '_TIFF/' . $identifier . '.tif', $destinationPath . $filename);
                     
                     break;
                 // table of contents
                 case 'TOC':
+                    if( empty($identifier) ) continue;
+                    
                     echo "TOC: '$identifier' has type '$element_type'\n";
+                    
+                    $fileInfo[$identifier]['structure'] = true;
+                    $fileInfo[$identifier]['title'] = $title;
+                    $fileInfo[$identifier]['authors'] = $authors;
                     break;
             }
         }
+        
+        // move files into correct sub-folders
+        $currDestinationPath = $destinationPath;
+        foreach( $fileInfo as $identifier => $info ) {
+            // check if we have to create a new sub-folder
+            if( $info['structure'] ) {
+                $currDestinationPath = $destinationPath . $info['basename'] . '/';
+                mkdir($currDestinationPath);
+            }
+            
+            // move file to sub-folder
+            if( $currDestinationPath != $destinationPath ) {
+                rename($destinationPath . $info['filename'], $currDestinationPath . $info['filename']);
+            }
+        }
+        
+        var_export($fileInfo);
     }
 }
