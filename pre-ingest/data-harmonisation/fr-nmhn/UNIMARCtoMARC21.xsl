@@ -43,15 +43,35 @@
         -->
         
         <xsl:choose>
-            <!-- ISSN -->
+            <!-- issn / 011 => 022 -->
             <xsl:when test="$tag = '011'">
-                <xsl:call-template name="create_datafield">
-                    <xsl:with-param name="tag" select="'022'" />
-                    <xsl:with-param name="code" select="'a'" />
-                    <xsl:with-param name="content" select="marc:subfield[@code='a']" />
+                <xsl:call-template name="translate_datafield">
+                    <xsl:with-param name="dest_tag" select="'022'" />
+                    <xsl:with-param name="src_code" select="'a'" />
+                </xsl:call-template>
+            </xsl:when>
+            <!-- title / 200 => 245 -->
+            <xsl:when test="$tag = '200'">
+                <xsl:call-template name="translate_datafield">
+                    <xsl:with-param name="dest_tag" select="'245'" />
+                    <xsl:with-param name="src_code" select="'a'" />
                 </xsl:call-template>
             </xsl:when>
         </xsl:choose>
+    </xsl:template>
+    
+    <!-- translate a given datafield into a new one -->
+    <xsl:template name="translate_datafield">
+        <xsl:param name="dest_tag" />
+        <xsl:param name="src_code" />
+        <xsl:param name="dest_code" select="$src_code" />
+
+        <!-- create translated datafield entry -->        
+        <xsl:call-template name="create_datafield">
+            <xsl:with-param name="tag" select="$dest_tag" />
+            <xsl:with-param name="code" select="$dest_code" />
+            <xsl:with-param name="content" select="marc:subfield[@code=$src_code]" />
+        </xsl:call-template>
     </xsl:template>
     
     <!-- helper template for creating arbitrary datafields -->
