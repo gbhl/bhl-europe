@@ -5,6 +5,8 @@
 $contentDir = "/home/wkoller/Desktop/fr-mnhn/main/";
 $destinationDir = "/home/wkoller/Desktop/fr-mnhn/prepared/";
 $structureDir = "/home/wkoller/Desktop/fr-mnhn/structure/";
+$smtJar = '/home/wkoller/Documents/Programming/NetBeans/NHM/bhle/pre-ingest/schema-mapping-tool/cli/dist/smt-cli.jar';
+$javaBin = '/usr/bin/java';
 
 /**
  * program start 
@@ -35,6 +37,8 @@ if( $dirHandle ) {
 function handleEntry( $p_name, $p_path ) {
     global $structureDir;
     global $destinationDir;
+    global $javaBin;
+    global $smtJar;
     
     // create structure dir path
     $currStructureDir = $structureDir . $p_name . '/';
@@ -47,6 +51,15 @@ function handleEntry( $p_name, $p_path ) {
     
     // generate main processing dir
     $seriesDir = $destinationDir . $p_name . '/';
+    $md_isoFile = $p_path . $p_name . '.iso';
+    $md_xmlFile = $seriesDir . $p_name . '.xml';
+    $md_xmlMarc21File = $seriesDir . $p_name . '_marc21.xml';
+    mkdir($seriesDir);
+    
+    // convert metadata
+    system( $javaBin . ' -jar ' . $smtJar . ' -m c -cm 1 -if ' . $md_isoFile . ' -of ' . $md_xmlFile );
+    system( $javaBin . ' -jar ' . $smtJar . ' -m x -if ' . $md_xmlFile . ' -of ' . $md_xmlMarc21File . ' -map UNIMARCtoMARC21.xsl' );
+    unlink($md_xmlFile);
     
     // Cycle through each entry and handle them
     $contentHandle = dir($p_path);
