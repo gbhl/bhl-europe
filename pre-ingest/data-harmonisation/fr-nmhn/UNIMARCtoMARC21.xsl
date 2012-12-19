@@ -193,14 +193,7 @@
             <xsl:attribute name="marc:tag">
                 <xsl:value-of select="$tag" />
             </xsl:attribute>
-            <!-- create subfield entry -->
-<!--            <xsl:element name="marc:subfield">
-                <xsl:attribute name="marc:code">
-                    <xsl:value-of select="$code" />
-                </xsl:attribute>
-                 assign content to subfield 
-                <xsl:value-of select="$content" />
-            </xsl:element>-->
+            <!-- create subfield entries -->
             <xsl:for-each select="marc:subfield">
                 <xsl:if test="contains($src_code, @code)" >
                     <xsl:call-template name="create_subfield">
