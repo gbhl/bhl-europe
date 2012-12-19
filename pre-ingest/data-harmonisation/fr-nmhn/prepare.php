@@ -22,7 +22,7 @@ if( $dirHandle ) {
         echo $path . "\n";
         if( is_dir($path) ) {
             // create output directory & handle content
-            mkdir( $destinationDir . $entry );
+            //mkdir( $destinationDir . $entry );
             handleEntry( $entry, $path );
         }
     }
@@ -45,6 +45,9 @@ function handleEntry( $p_name, $p_path ) {
         return;
     }
     
+    // generate main processing dir
+    $seriesDir = $destinationDir . $p_name . '/';
+    
     // Cycle through each entry and handle them
     $contentHandle = dir($p_path);
     while( $subEntry = $contentHandle->read() ) {
@@ -55,9 +58,19 @@ function handleEntry( $p_name, $p_path ) {
         if( !is_dir($subPath) ) continue;
         echo "Found sub-content '$subPath'\n";
         
+        // generate section dir name
+        $subEntryComponents = explode('_', $subEntry);
+        // remove last element
+        unset($subEntryComponents[count($subEntryComponents) - 1]);
+        // glue back together
+        $sectionDir = $seriesDir . implode('_', $subEntryComponents) . '/';
+        
+        // generate volume dir name
+        $volumeDir = $sectionDir . $subEntry . '/';
+        
         // create directory in destination path
-        $destinationPath = $destinationDir . $p_name . '/' . $subEntry . '/';
-        mkdir( $destinationPath );
+        $destinationPath = $volumeDir;
+        mkdir( $destinationPath, 0777, true );
         
         // Construct structure file name
         $structureFile = $currStructureDir . $subEntry . '.xls';
