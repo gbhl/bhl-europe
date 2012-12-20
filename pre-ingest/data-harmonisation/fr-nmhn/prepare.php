@@ -61,6 +61,7 @@ function handleEntry( $p_name, $p_path ) {
     $md_xmlFile = $seriesDir . $p_name . '.xml';
     $md_seriesFile = $seriesDir . $md_xmlFileName;
     mkdir($seriesDir);
+    $md_seriesUpdated = false;
     
     // convert metadata
     system( $javaBin . ' -jar ' . $smtJar . ' -m c -cm 1 -if ' . $md_isoFile . ' -of ' . $md_xmlFile );
@@ -114,6 +115,8 @@ function handleEntry( $p_name, $p_path ) {
             $authors = utf8_encode($excelReader->val($row, 22));
             $vol_part = utf8_encode($excelReader->val($row, 7));
             $num_part = utf8_encode($excelReader->val($row, 8));
+            $notebib = utf8_encode($excelReader->val($row, 6));
+            $edit_date = utf8_encode($excelReader->val($row, 12));
             
             // extract identifier from filename
             $pathInfo = pathinfo($filename);
@@ -181,6 +184,24 @@ function handleEntry( $p_name, $p_path ) {
                     break;
                 // section / volume information
                 case 'S':
+                    // check if we updated series before
+                    if( !$md_seriesUpdated ) {
+                        // update series metadata
+                        $domSeries = new AutoDOMDocument(null, 'utf-8');
+                        $domSeries->load($md_seriesFile);
+                        // create XPath to search for title field
+                        $domXPath = new DOMXPath($domSeries);
+                        $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
+                        $titleField = $titleFields->item(0);
+                        // add series info as remainder
+                        $remainderField = $domSeries->appendChild($titleField, _MARC_NAMESPACE, 'subfield', $notebib);
+                        $remainderField->setAttributeNS(_MARC_NAMESPACE, 'code', 'b');
+                        // save back series metadata file
+                        $domSeries->save($md_seriesFile);
+                        
+                        $md_seriesUpdated = true;
+                    }
+                    
                     // check section metadata
                     $md_sectionFile = $sectionDir . $md_xmlFileName;
                     if( !file_exists($md_sectionFile) ) {
@@ -214,6 +235,13 @@ function handleEntry( $p_name, $p_path ) {
                         // create subfield & append it
                         $subfield = $domVolume->appendChild($titleField, _MARC_NAMESPACE, 'subfield', $num_part);
                         $subfield->setAttributeNS(_MARC_NAMESPACE, 'code', 'p');
+                        
+                        // find publication info & add date to it
+                        $publicationFields = $domXPath->query("*/marc:datafield[@marc:tag='260']");
+                        $publicationField = $publicationFields->item(0);
+                        // create subfield & append it
+                        $subfield = $domVolume->appendChild($publicationField, _MARC_NAMESPACE, 'subfield', $edit_date);
+                        $subfield->setAttributeNS(_MARC_NAMESPACE, 'code', 'c');
 
                         // save updated document
                         $domVolume->save($md_volumeFile);

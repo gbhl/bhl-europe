@@ -57,7 +57,7 @@
             <xsl:when test="$tag = '210'">
                 <xsl:call-template name="translate_datafield">
                     <xsl:with-param name="dest_tag" select="'260'" />
-                    <xsl:with-param name="src_code" select="'abcdefgh'" />
+                    <xsl:with-param name="src_code" select="'acdegh'" />
                     <xsl:with-param name="dest_code" select="'abcefg'" />
                 </xsl:call-template>
             </xsl:when>
