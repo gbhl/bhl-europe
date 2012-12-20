@@ -290,18 +290,20 @@ function bhle_search_advanced_add_condition(&$form, $id, $total_count, $term = B
             '#type' => 'button',
             '#default_value' => 'OR',
             '#attributes' => array(
-                'class' => array('operator-or' , 'edit-or'),
+                'class' => array('operator-or' , 'edit-or', 'form-submit'),
                 'tabindex' => (7*$id+3),
             ),
+            '#button_type' => 'button',
         ),
 
         'operator_not_' . $id => array(
             '#type' => 'button',
             '#default_value' => 'NOT',
             '#attributes' => array(
-                'class' => array('operator-not' , 'edit-not'),
+                'class' => array('operator-not' , 'edit-not', 'form-submit'),
                 'tabindex' => (7*$id+4),
             ),
+            '#button_type' => 'button',
         ),
 
         'exact_phrase_' . $id => array(
@@ -928,6 +930,11 @@ function bhle_search_search_execute($keys = NULL, $conditions = NULL) {
          ******************************/
         $responseObj = $solr->search($query, $params);
         $response = $responseObj->response;
+
+        dpm($responseObj);
+        foreach($responseObj->facet_counts->facet_fields->mods_record_content_source__facet as $aaaa => $aaa) {
+          dpm(mb_strlen($aaaa) . ' - ' . mb_strlen(trim($aaaa)) . ' - ' . trim($aaaa) . ' - ' . $aaaa);
+        }
         $facets = $responseObj->facet_counts->facet_fields;
         if(isset($responseObj->highlighting)){
             $highlighting = (array) $responseObj->highlighting;
@@ -1078,7 +1085,7 @@ function bhle_search_facet_field_map($type = 'simple') {
               "mods_date_issued__facet" => t("Year"),
               "mods_language" => t("Language"),
               "mods_record_content_source__facet" => t("Content provider"),
-              "olef_scientific_name__facet" => t("Scientific name")
+              //"olef_scientific_name__facet" => t("Scientific name")
             );
         case 'simple':
             return array(
@@ -1087,7 +1094,7 @@ function bhle_search_facet_field_map($type = 'simple') {
               "mods_date_issued__facet" => t("Year"),
               "mods_language" => t("Language"),
               "mods_record_content_source__facet" => t("Content provider"),
-              "olef_scientific_name__facet" => t("Scientific name")
+              //"olef_scientific_name__facet" => t("Scientific name")
             );
     }
 }

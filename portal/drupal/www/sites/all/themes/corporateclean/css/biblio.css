@@ -184,10 +184,12 @@
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .collection-id p a {color:#006626;}
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .collection-id p a:hover {text-decoration:underline;}
 
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview {margin-top:10px; text-align:center; background-color:transparent; background-position:center center; background-repeat:no-repeat}
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.content-type-serial {height:210px; background-image:url('../images/icon-biblio-content-type-serial.png')}
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.content-type-section {height:210px; background-image:url('../images/icon-biblio-content-type-section.png')}
-.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.content-type-volume {height:210px; background-image:url('../images/icon-biblio-content-type-volume.png')}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview {margin-top:10px; text-align:center}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.icon {background-color:transparent; background-position:center center; background-repeat:no-repeat}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.icon.content-type-serial {height:210px; background-image:url('../images/icon-biblio-content-type-serial.png')}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.icon.content-type-section {height:210px; background-image:url('../images/icon-biblio-content-type-section.png')}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.icon.content-type-volume {height:210px; background-image:url('../images/icon-biblio-content-type-volume.png')}
+.one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .content-preview.image {background:none}
 
 
 .one-sidebar.sidebar-second #sidebar-second .biblio-context-panel .biblio-read-links-block {

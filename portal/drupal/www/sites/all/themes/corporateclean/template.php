@@ -131,7 +131,6 @@ function corporateclean_preprocess_html(&$vars) {
   // Set IE7 stylesheet
   $theme_path = base_path() . path_to_theme();
   $vars['ie7_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie7-fixes.css" />' . "\n";
-  
 }
 
 function corporateclean_js_alter(&$javascript) {
@@ -139,6 +138,48 @@ function corporateclean_js_alter(&$javascript) {
     unset($javascript['sites/all/modules/it4care/selectmenu/js/jquery.ui.selectmenu/jquery.ui.selectmenu.js']);
     unset($javascript['sites/all/modules/it4care/selectmenu/js/selectmenu.js']);
   }
+}
+
+/**
+ * Override default theme implementation to present the source of the feed.
+ */
+function corporateclean_preprocess_aggregator_feed_source(&$vars) {
+  unset($vars['source_icon']); // Disable feed icon
+}
+
+/**
+ * Returns HTML for a button form element.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - element: An associative array containing the properties of the element.
+ *     Properties used: #attributes, #button_type, #name, #value.
+ *
+ * @ingroup themeable
+ * 
+ * Override input type="submit" -> type="button"  
+ */
+function corporateclean_button($variables) {
+  $element = $variables['element'];
+  
+  $type = strtolower($element['#button_type']);
+  switch ($type) {
+    case 'reset':
+    case 'button':
+      break;
+    default:
+      $type = 'submit';
+  }
+  $element['#attributes']['type'] = $type;
+  
+  element_set_attributes($element, array('id', 'name', 'value'));
+
+  $element['#attributes']['class'][] = 'form-' . $element['#button_type'];
+  if (!empty($element['#attributes']['disabled'])) {
+    $element['#attributes']['class'][] = 'form-button-disabled';
+  }
+
+  return '<input' . drupal_attributes($element['#attributes']) . ' />';
 }
 
 ?>

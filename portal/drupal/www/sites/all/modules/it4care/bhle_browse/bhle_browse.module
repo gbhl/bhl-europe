@@ -146,7 +146,7 @@ function bhle_browse_cron() {
         //dpm($year);
         if ($year && $year < date('Y') + 1) {
           $term = taxonomy_get_term_by_name($year, 'period');
-          if (!$term) {
+          if (!$term && $year > 1000) {
             $term = new stdClass();
             $term->name = $year;
             $term->vid = 14;
@@ -157,7 +157,7 @@ function bhle_browse_cron() {
         }
       }
     }
-    dsm($years);
+    //dsm($years);
     variable_set('bhle_browse_min_year', min($years));
     variable_set('bhle_browse_max_year', max($years));
 
@@ -167,7 +167,7 @@ function bhle_browse_cron() {
       ->execute()
       ->fetchAll();
 
-    dsm($r);
+    //dsm($r);
     foreach ($terms as $term) {
       if(!in_array($term->name, $years)) {
         taxonomy_term_delete($term->tid);

@@ -25,9 +25,9 @@ global $language;
       <label>ID:</label> <?php print $bid; ?>
     </p>
   </div>
-  <div class="content-preview content-type-<?php print $item->contentType[0]; ?>">
+  <div class="content-preview content-type-<?php print $item->contentType[0]; if($rendered['image']) { print ' image'; } else { print ' icon'; } ?>">
     <?php
-      if(!$item->childs) {
+      if(!$item->childs && $rendered['image']) {
         print '<img src="' . $rendered['thumbnail'] . '" alt="">';
       }
     ?>

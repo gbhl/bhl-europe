@@ -302,6 +302,16 @@ function _template_preprocess_bhle_item($item) {
     $rendered['dl_link_bibtex'] = l(t('Download BibTex'), $bibtex_link);
 
     $rendered['thumbnail'] = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_THUMBNAIL_URI);
+    
+    $request = get_headers($rendered['thumbnail']);
+    foreach($request as $header) {
+      $pos = stripos($header,'200 OK');
+      if($pos !== FALSE) {
+        $rendered['image'] = 1;
+      }
+    }
+    
+    
     $rendered['read_more_link'] = l(t('READ SELECTED ITEM'), 'bhle-read/' . $pid);
     
     $pdf_url = variable_get('bhle_environment', BHLE_ENVIRONMENT) . '/' . str_replace('%bid', $bid, BHLE_PDF_URI);
