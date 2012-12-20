@@ -5,7 +5,7 @@
 $contentDir = "/home/wkoller/Desktop/fr-mnhn/main/";
 $destinationDir = "/home/wkoller/Desktop/fr-mnhn/prepared/";
 $structureDir = "/home/wkoller/Desktop/fr-mnhn/structure/";
-$smtJar = '/home/wkoller/Documents/Programming/NetBeans/NHM/bhle/pre-ingest/schema-mapping-tool/cli/dist/smt-cli.jar';
+$smtJar = 'smt-cli/smt-cli.jar';
 $javaBin = '/usr/bin/java';
 
 define('_MARC_NAMESPACE', 'http://www.loc.gov/MARC21/slim');
