@@ -110,10 +110,10 @@ function handleEntry( $p_name, $p_path ) {
             $type = $excelReader->val($row, 1);
             $filename = $excelReader->val($row, 16);
             $element_type = $excelReader->val($row, 17);
-            $title = $excelReader->val($row, 21);
-            $authors = $excelReader->val($row, 22);
-            $vol_part = $excelReader->val($row, 7);
-            $num_part = $excelReader->val($row, 8);
+            $title = utf8_encode($excelReader->val($row, 21));
+            $authors = utf8_encode($excelReader->val($row, 22));
+            $vol_part = utf8_encode($excelReader->val($row, 7));
+            $num_part = utf8_encode($excelReader->val($row, 8));
             
             // extract identifier from filename
             $pathInfo = pathinfo($filename);
@@ -187,7 +187,7 @@ function handleEntry( $p_name, $p_path ) {
                         // copy series metadata
                         copy($md_seriesFile, $md_sectionFile);
                         // load section metadata as DOMDocument
-                        $domSection = new AutoDOMDocument();
+                        $domSection = new AutoDOMDocument(null, 'utf-8');
                         $domSection->load($md_sectionFile);
                         // create XPath to search for title field
                         $domXPath = new DOMXPath($domSection);
@@ -205,7 +205,7 @@ function handleEntry( $p_name, $p_path ) {
                         // copy section metadata
                         copy($md_sectionFile, $md_volumeFile);
                         // load volume metadata as DOMDocument
-                        $domVolume = new AutoDOMDocument();
+                        $domVolume = new AutoDOMDocument(null, 'utf-8');
                         $domVolume->load($md_volumeFile);
                         // create XPath to search for title field
                         $domXPath = new DOMXPath($domVolume);
@@ -232,7 +232,51 @@ function handleEntry( $p_name, $p_path ) {
                 
                 // create metadata for this article
                 $md_articleFile = $currDestinationPath . $md_xmlFileName;
+                // copy volume metadata
                 copy($md_volumeFile, $md_articleFile);
+                // load article metadata as DOMDocument
+                $domArticle = new AutoDOMDocument(null, 'utf-8');
+                $domArticle->load($md_articleFile);
+                // create XPath to search for title field
+                $domXPath = new DOMXPath($domArticle);
+                $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
+                $titleField = $titleFields->item(0);
+                $recordField = $titleField->parentNode;
+                // find relevant title fields and copy them across to the host-entry tag
+                $titleField_title = $domXPath->query("marc:subfield[@marc:code='a']", $titleField)->item(0);
+                $titleField_parts = $domXPath->query("marc:subfield[@marc:code='p']", $titleField);
+                // create new host entry field
+                $hostEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
+                $hostEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '773');
+                // append new information to host entry
+                $hostEntry_title = $domArticle->appendChild($hostEntry, _MARC_NAMESPACE, 'subfield', $titleField_title->nodeValue);
+                $hostEntry_title->setAttributeNS(_MARC_NAMESPACE, 'code', 't');
+                $hostEntry_part = '';
+                for( $l = 0; $l < $titleField_parts->length; $l++ ) {
+                    $hostEntry_part .= ((empty($hostEntry_part)) ? '' : '; ');
+                    $hostEntry_part .= $titleField_parts->item($l)->nodeValue;
+                }
+                $hostEntry_part = $domArticle->appendChild($hostEntry, _MARC_NAMESPACE, 'subfield', $hostEntry_part);
+                $hostEntry_part->setAttributeNS(_MARC_NAMESPACE, 'code', 'g');
+                
+                // delete old title entries
+                for( $l = 0; $l < $titleFields->length; $l++ ) {
+                    $titleFields->item($l)->parentNode->removeChild($titleFields->item($l));
+                }
+                
+                // create new title entry for article
+                $titleEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
+                $titleEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '245');
+                $titleEntry_title = $domArticle->appendChild($titleEntry, _MARC_NAMESPACE, 'subfield', $info['title']);
+                $titleEntry_title->setAttributeNS(_MARC_NAMESPACE, 'code', 'a');
+                // create new author entry for article
+                $authorEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
+                $authorEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '100');
+                $authorEntry_name = $domArticle->appendChild($authorEntry, _MARC_NAMESPACE, 'subfield', $info['authors']);
+                $authorEntry_name->setAttributeNS(_MARC_NAMESPACE, 'code', 'a');
+                
+                // save updated document
+                $domArticle->save($md_articleFile);
             }
             
             // move file to sub-folder
@@ -241,6 +285,6 @@ function handleEntry( $p_name, $p_path ) {
             }
         }
         
-        var_export($fileInfo);
+        //var_export($fileInfo);
     }
 }
