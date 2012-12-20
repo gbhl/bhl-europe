@@ -10,13 +10,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:marc="http://www.loc.gov/MARC21/slim">
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
-    <!--<xsl:template match="marc:*">
-        <xsl:copy>
-            <xsl:copy-of select="@*" />
-            <xsl:apply-templates />
-        </xsl:copy>
-    </xsl:template>-->
-    
+    <!-- ignore everything by default -->
     <xsl:template match="*"></xsl:template>
     
     <xsl:template match="marc:collection">
