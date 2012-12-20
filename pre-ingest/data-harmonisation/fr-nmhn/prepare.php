@@ -270,14 +270,22 @@ function handleEntry( $p_name, $p_path ) {
                 $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
                 $titleField = $titleFields->item(0);
                 $recordField = $titleField->parentNode;
+
                 // find relevant title fields and copy them across to the host-entry tag
                 $titleField_title = $domXPath->query("marc:subfield[@marc:code='a']", $titleField)->item(0);
+                $titleField_remainders = $domXPath->query("marc:subfield[@marc:code='b']", $titleField);
                 $titleField_parts = $domXPath->query("marc:subfield[@marc:code='p']", $titleField);
                 // create new host entry field
                 $hostEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
                 $hostEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '773');
+
+                // create title statement
+                $hostEntry_title = $titleField_title->nodeValue;
+                foreach( $titleField_remainders as $titleField_remainder ) {
+                    $hostEntry_title .= ' ' . $titleField_remainder->nodeValue;
+                }
                 // append new information to host entry
-                $hostEntry_title = $domArticle->appendChild($hostEntry, _MARC_NAMESPACE, 'subfield', $titleField_title->nodeValue);
+                $hostEntry_title = $domArticle->appendChild($hostEntry, _MARC_NAMESPACE, 'subfield', $hostEntry_title);
                 $hostEntry_title->setAttributeNS(_MARC_NAMESPACE, 'code', 't');
                 $hostEntry_part = '';
                 for( $l = 0; $l < $titleField_parts->length; $l++ ) {
