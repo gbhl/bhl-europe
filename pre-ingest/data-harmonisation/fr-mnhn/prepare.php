@@ -60,6 +60,14 @@ function handleEntry( $p_name, $p_path ) {
     $md_isoFile = $p_path . $p_name . '.iso';
     $md_xmlFile = $seriesDir . $p_name . '.xml';
     $md_seriesFile = $seriesDir . $md_xmlFileName;
+    
+    //check if series dir already exists, if yes skip it
+    if(file_exists($seriesDir) ) {
+        echo "WARNING: '$seriesDir' already exists, skipping processing!\n";
+        return;
+    }
+    
+    // create series dir and start processing
     mkdir($seriesDir);
     $md_seriesUpdated = false;
     
@@ -108,9 +116,9 @@ function handleEntry( $p_name, $p_path ) {
         $rowCount = $excelReader->rowcount();
         $sequence = 0;
         for( $row = 1; $row <= $rowCount; $row++ ) {
-            $type = $excelReader->val($row, 1);
-            $filename = $excelReader->val($row, 16);
-            $element_type = $excelReader->val($row, 17);
+            $type = utf8_encode($excelReader->val($row, 1));
+            $filename = utf8_encode($excelReader->val($row, 16));
+            $element_type = utf8_encode($excelReader->val($row, 17));
             $title = utf8_encode($excelReader->val($row, 21));
             $authors = utf8_encode($excelReader->val($row, 22));
             $vol_part = utf8_encode($excelReader->val($row, 7));
@@ -144,6 +152,8 @@ function handleEntry( $p_name, $p_path ) {
                     switch( $element_type ) {
                         // cover
                         case 'couverture':
+                        case 'coueverture':
+                        case 'couveture':
                             $filename .= '_COVER';
                             break;
                         // page
@@ -153,6 +163,7 @@ function handleEntry( $p_name, $p_path ) {
                                 $filename .= '_' . $element_type_parts[1];
                             }
                             break;
+                        // blank
                         case 'non':
                             // non might have sub-types due to blank in name
                             switch( $element_type_full ) {
@@ -163,6 +174,13 @@ function handleEntry( $p_name, $p_path ) {
                                     echo "ERROR: Unknown element-type '$element_type_full'\n";
                                     break;
                             
+                            }
+                            break;
+                        // plate
+                        case 'planche':
+                            $filename .= '_PLATE';
+                            if( isset($element_type_parts[1]) ) {
+                                $filename .= '_' . $element_type_parts[1];
                             }
                             break;
                         default:
