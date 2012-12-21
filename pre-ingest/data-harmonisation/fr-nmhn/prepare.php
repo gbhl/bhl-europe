@@ -11,7 +11,7 @@ $javaBin = '/usr/bin/java';
 define('_MARC_NAMESPACE', 'http://www.loc.gov/MARC21/slim');
 
 /**
- * program start 
+ * program start
  */
 require("excel_reader2.php");
 require("AutoDOMDocument.php");
@@ -127,12 +127,14 @@ function handleEntry( $p_name, $p_path ) {
                 // element numbering
                 case "E":
                     $sequence++;
-                    echo "'$identifier' has type '$element_type'\n";
                     // check for extra info
+                    $element_type_full = $element_type;
                     $element_type_parts = explode(' ', $element_type);
                     if( count($element_type_parts) > 1 ) {
+                        // pages have a number suffix
                         $element_type = $element_type_parts[0];
                     }
+                    echo "'$identifier' has type '$element_type'\n";
                     
                     // construct basic filename from identifier
                     $filename = str_replace('_', '-', $identifier);
@@ -151,11 +153,20 @@ function handleEntry( $p_name, $p_path ) {
                                 $filename .= '_' . $element_type_parts[1];
                             }
                             break;
-                        case 'non numérotée':
-                            $filename .= '_BLANK';
+                        case 'non':
+                            // non might have sub-types due to blank in name
+                            switch( $element_type_full ) {
+                                case 'non numérotée':
+                                    $filename .= '_BLANK';
+                                    break;
+                                default:
+                                    echo "ERROR: Unknown element-type '$element_type_full'\n";
+                                    break;
+                            
+                            }
                             break;
                         default:
-                            echo "ERROR: Unknown element-type!";
+                            echo "ERROR: Unknown element-type '$element_type'\n";
                             break;
                     }
                     // Append final tif
