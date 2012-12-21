@@ -161,6 +161,7 @@ function handleEntry( $p_name, $p_path ) {
                                 $filename .= '_' . $element_type_parts[1];
                             }
                             break;
+                        // blank
                         case 'non':
                             // non might have sub-types due to blank in name
                             switch( $element_type_full ) {
@@ -171,6 +172,13 @@ function handleEntry( $p_name, $p_path ) {
                                     echo "ERROR: Unknown element-type '$element_type_full'\n";
                                     break;
                             
+                            }
+                            break;
+                        // plate
+                        case 'planche':
+                            $filename .= '_PLATE';
+                            if( isset($element_type_parts[1]) ) {
+                                $filename .= '_' . $element_type_parts[1];
                             }
                             break;
                         default:
