@@ -108,9 +108,9 @@ function handleEntry( $p_name, $p_path ) {
         $rowCount = $excelReader->rowcount();
         $sequence = 0;
         for( $row = 1; $row <= $rowCount; $row++ ) {
-            $type = $excelReader->val($row, 1);
-            $filename = $excelReader->val($row, 16);
-            $element_type = $excelReader->val($row, 17);
+            $type = utf8_encode($excelReader->val($row, 1));
+            $filename = utf8_encode($excelReader->val($row, 16));
+            $element_type = utf8_encode($excelReader->val($row, 17));
             $title = utf8_encode($excelReader->val($row, 21));
             $authors = utf8_encode($excelReader->val($row, 22));
             $vol_part = utf8_encode($excelReader->val($row, 7));
