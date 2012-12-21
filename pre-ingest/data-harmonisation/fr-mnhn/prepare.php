@@ -152,6 +152,8 @@ function handleEntry( $p_name, $p_path ) {
                     switch( $element_type ) {
                         // cover
                         case 'couverture':
+                        case 'coueverture':
+                        case 'couveture':
                             $filename .= '_COVER';
                             break;
                         // page
