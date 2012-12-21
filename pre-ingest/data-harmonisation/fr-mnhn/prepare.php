@@ -60,6 +60,14 @@ function handleEntry( $p_name, $p_path ) {
     $md_isoFile = $p_path . $p_name . '.iso';
     $md_xmlFile = $seriesDir . $p_name . '.xml';
     $md_seriesFile = $seriesDir . $md_xmlFileName;
+    
+    //check if series dir already exists, if yes skip it
+    if(file_exists($seriesDir) ) {
+        echo "WARNING: '$seriesDir' already exists, skipping processing!\n";
+        return;
+    }
+    
+    // create series dir and start processing
     mkdir($seriesDir);
     $md_seriesUpdated = false;
     
