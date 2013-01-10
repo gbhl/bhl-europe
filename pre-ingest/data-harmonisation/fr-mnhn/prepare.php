@@ -220,11 +220,12 @@ function handleEntry( $p_name, $p_path ) {
                         $domSeries->load($md_seriesFile);
                         // create XPath to search for title field
                         $domXPath = new DOMXPath($domSeries);
-                        $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
+                        $domXPath->registerNamespace('marc', _MARC_NAMESPACE);
+                        $titleFields = $domXPath->query("*/marc:datafield[@tag='245']");
                         $titleField = $titleFields->item(0);
                         // add series info as remainder
                         $remainderField = $domSeries->appendChild($titleField, _MARC_NAMESPACE, 'subfield', $notebib);
-                        $remainderField->setAttributeNS(_MARC_NAMESPACE, 'code', 'b');
+                        $remainderField->setAttribute( 'code', 'b');
                         // save back series metadata file
                         $domSeries->save($md_seriesFile);
                         
@@ -241,11 +242,12 @@ function handleEntry( $p_name, $p_path ) {
                         $domSection->load($md_sectionFile);
                         // create XPath to search for title field
                         $domXPath = new DOMXPath($domSection);
-                        $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
+                        $domXPath->registerNamespace('marc', _MARC_NAMESPACE);
+                        $titleFields = $domXPath->query("*/marc:datafield[@tag='245']");
                         $titleField = $titleFields->item(0);
                         // create subfield & append it
                         $subfield = $domSection->appendChild($titleField, _MARC_NAMESPACE, 'subfield', $vol_part);
-                        $subfield->setAttributeNS(_MARC_NAMESPACE, 'code', 'p');
+                        $subfield->setAttribute( 'code', 'p');
 
                         // save updated document
                         $domSection->save($md_sectionFile);
@@ -259,18 +261,19 @@ function handleEntry( $p_name, $p_path ) {
                         $domVolume->load($md_volumeFile);
                         // create XPath to search for title field
                         $domXPath = new DOMXPath($domVolume);
-                        $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
+                        $domXPath->registerNamespace('marc', _MARC_NAMESPACE);
+                        $titleFields = $domXPath->query("*/marc:datafield[@tag='245']");
                         $titleField = $titleFields->item(0);
                         // create subfield & append it
                         $subfield = $domVolume->appendChild($titleField, _MARC_NAMESPACE, 'subfield', $num_part);
-                        $subfield->setAttributeNS(_MARC_NAMESPACE, 'code', 'p');
+                        $subfield->setAttribute( 'code', 'p');
                         
                         // find publication info & add date to it
-                        $publicationFields = $domXPath->query("*/marc:datafield[@marc:tag='260']");
+                        $publicationFields = $domXPath->query("*/marc:datafield[@tag='260']");
                         $publicationField = $publicationFields->item(0);
                         // create subfield & append it
                         $subfield = $domVolume->appendChild($publicationField, _MARC_NAMESPACE, 'subfield', $edit_date);
-                        $subfield->setAttributeNS(_MARC_NAMESPACE, 'code', 'c');
+                        $subfield->setAttribute( 'code', 'c');
 
                         // save updated document
                         $domVolume->save($md_volumeFile);
@@ -296,17 +299,18 @@ function handleEntry( $p_name, $p_path ) {
                 $domArticle->load($md_articleFile);
                 // create XPath to search for title field
                 $domXPath = new DOMXPath($domArticle);
-                $titleFields = $domXPath->query("*/marc:datafield[@marc:tag='245']");
+                $domXPath->registerNamespace('marc', _MARC_NAMESPACE);
+                $titleFields = $domXPath->query("*/marc:datafield[@tag='245']");
                 $titleField = $titleFields->item(0);
                 $recordField = $titleField->parentNode;
 
                 // find relevant title fields and copy them across to the host-entry tag
-                $titleField_title = $domXPath->query("marc:subfield[@marc:code='a']", $titleField)->item(0);
-                $titleField_remainders = $domXPath->query("marc:subfield[@marc:code='b']", $titleField);
-                $titleField_parts = $domXPath->query("marc:subfield[@marc:code='p']", $titleField);
+                $titleField_title = $domXPath->query("marc:subfield[@code='a']", $titleField)->item(0);
+                $titleField_remainders = $domXPath->query("marc:subfield[@code='b']", $titleField);
+                $titleField_parts = $domXPath->query("marc:subfield[@code='p']", $titleField);
                 // create new host entry field
                 $hostEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
-                $hostEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '773');
+                $hostEntry->setAttribute( 'tag', '773');
 
                 // create title statement
                 $hostEntry_title = $titleField_title->nodeValue;
@@ -315,14 +319,14 @@ function handleEntry( $p_name, $p_path ) {
                 }
                 // append new information to host entry
                 $hostEntry_title = $domArticle->appendChild($hostEntry, _MARC_NAMESPACE, 'subfield', $hostEntry_title);
-                $hostEntry_title->setAttributeNS(_MARC_NAMESPACE, 'code', 't');
+                $hostEntry_title->setAttribute( 'code', 't');
                 $hostEntry_part = '';
                 for( $l = 0; $l < $titleField_parts->length; $l++ ) {
                     $hostEntry_part .= ((empty($hostEntry_part)) ? '' : '; ');
                     $hostEntry_part .= $titleField_parts->item($l)->nodeValue;
                 }
                 $hostEntry_part = $domArticle->appendChild($hostEntry, _MARC_NAMESPACE, 'subfield', $hostEntry_part);
-                $hostEntry_part->setAttributeNS(_MARC_NAMESPACE, 'code', 'g');
+                $hostEntry_part->setAttribute( 'code', 'g');
                 
                 // delete old title entries
                 for( $l = 0; $l < $titleFields->length; $l++ ) {
@@ -331,14 +335,14 @@ function handleEntry( $p_name, $p_path ) {
                 
                 // create new title entry for article
                 $titleEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
-                $titleEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '245');
+                $titleEntry->setAttribute( 'tag', '245');
                 $titleEntry_title = $domArticle->appendChild($titleEntry, _MARC_NAMESPACE, 'subfield', $info['title']);
-                $titleEntry_title->setAttributeNS(_MARC_NAMESPACE, 'code', 'a');
+                $titleEntry_title->setAttribute( 'code', 'a');
                 // create new author entry for article
                 $authorEntry = $domArticle->appendChild($recordField, _MARC_NAMESPACE, 'datafield');
-                $authorEntry->setAttributeNS(_MARC_NAMESPACE, 'tag', '100');
+                $authorEntry->setAttribute( 'tag', '100');
                 $authorEntry_name = $domArticle->appendChild($authorEntry, _MARC_NAMESPACE, 'subfield', $info['authors']);
-                $authorEntry_name->setAttributeNS(_MARC_NAMESPACE, 'code', 'a');
+                $authorEntry_name->setAttribute( 'code', 'a');
                 
                 // save updated document
                 $domArticle->save($md_articleFile);
