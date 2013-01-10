@@ -14,9 +14,9 @@
     <xsl:template match="*"></xsl:template>
     
     <xsl:template match="marc:collection">
-        <xsl:element name="marc:collection">
+        <xsl:element name="collection" namespace="http://www.loc.gov/MARC21/slim">
             <xsl:for-each select="marc:record">
-                <xsl:element name="marc:record">
+                <xsl:element name="record" namespace="http://www.loc.gov/MARC21/slim">
                     <xsl:for-each select="marc:datafield">
                         <xsl:call-template name="datafield" />
                     </xsl:for-each>
@@ -168,8 +168,8 @@
         <xsl:param name="content" />
         
         <!-- subfield element -->
-        <xsl:element name="marc:subfield">
-            <xsl:attribute name="marc:code">
+        <xsl:element name="subfield" namespace="http://www.loc.gov/MARC21/slim">
+            <xsl:attribute name="code">
                 <xsl:value-of select="$code" />
             </xsl:attribute>
             <xsl:value-of select="$content" />
@@ -183,8 +183,8 @@
         <xsl:param name="dest_code" select="$src_code" />
         
         <!-- create wrapping datafield -->
-        <xsl:element name="marc:datafield">
-            <xsl:attribute name="marc:tag">
+        <xsl:element name="datafield" namespace="http://www.loc.gov/MARC21/slim">
+            <xsl:attribute name="tag">
                 <xsl:value-of select="$tag" />
             </xsl:attribute>
             <!-- create subfield entries -->
