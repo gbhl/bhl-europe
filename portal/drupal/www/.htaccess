@@ -62,6 +62,10 @@ DirectoryIndex index.php index.html index.htm
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
+  # Redirect from bhl-europe.eu to www.bhl-europe.eu (only for production)
+  RewriteCond %{HTTP_HOST} ^bhl-europe\.eu [NC]
+  RewriteRule ^(.*)$ http://www.bhl-europe.eu/$1 [L,R,NE]
+
   # Block access to "hidden" directories whose names begin with a period. This
   # includes directories used by version control systems such as Subversion or
   # Git to store control files. Files whose names begin with a period, as well
