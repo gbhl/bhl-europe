@@ -35,7 +35,7 @@ if( $objParentID != "" ) {
     else {
         $parentGuidElement = $olefDom->appendChild($elementElement, _NAMESPACE_OLEF, 'parentGUID');
     }
-    $parentGuidElement = $objParentID;
+    $parentGuidElement->nodeValue = $objParentID;
 }
 
 // find bibliographic information
