@@ -149,11 +149,17 @@ function handleEntry( $p_name, $p_path ) {
                     $filename .= '_' . sprintf('%04d', $sequence);
                     $basename = $filename;
                     
-                    switch( $element_type ) {
+                    switch(strtolower($element_type)) {
                         // cover
                         case 'couverture':
                         case 'coueverture':
                         case 'couveture':
+                        case 'couvetrure':
+                        case 'couvrerture':
+                        case 'coverture':
+                        case 'coucerture':
+                        case 'couvertue':
+                        case 'coucerture':
                             $filename .= '_COVER';
                             break;
                         // page
@@ -166,8 +172,12 @@ function handleEntry( $p_name, $p_path ) {
                         // blank
                         case 'non':
                             // non might have sub-types due to blank in name
-                            switch( $element_type_full ) {
+                            switch(strtolower($element_type_full)) {
                                 case 'non numérotée':
+                                case 'non  numérotée':
+                                case 'non':
+                                case 'non numéroté':
+                                case 'non numérotéee':
                                     $filename .= '_BLANK';
                                     break;
                                 default:
@@ -178,6 +188,7 @@ function handleEntry( $p_name, $p_path ) {
                             break;
                         // plate
                         case 'planche':
+                        case 'planche1':
                             $filename .= '_PLATE';
                             if( isset($element_type_parts[1]) ) {
                                 $filename .= '_' . $element_type_parts[1];
