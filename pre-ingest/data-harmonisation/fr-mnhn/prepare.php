@@ -178,6 +178,7 @@ function handleEntry( $p_name, $p_path ) {
                                 case 'non':
                                 case 'non numéroté':
                                 case 'non numérotéee':
+                                case 'non numerotée':
                                     $filename .= '_BLANK';
                                     break;
                                 default:
