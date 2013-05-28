@@ -41,7 +41,7 @@ $arrTiffs = sortPageFiles($arrTiffs);  // IMPORTANT PRE SORT
 // generate page information (including scientific names) for each file
 foreach( $arrTiffs as $tiffIndex => $tiffFile ) {
     // derive taxon-filename from tiff-filename
-    $taxonFile = $tiffFile . _TAXON_EXT;
+    $taxonFile = clean_path($destDir . basename($tiffFile) . _TAXON_EXT);
     // extract page information from filename
     $arrPageInfos = getPageInfoFromFile($tiffFile);
     if( !isset($arrPageInfos[2]) ) $arrPageInfos[2] = _DEFAULT_PAGETYPE;
