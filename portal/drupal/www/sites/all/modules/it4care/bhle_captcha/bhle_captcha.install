@@ -1,0 +1,131 @@
+<?php
+define('BHLE_CAPTCHA_QUESTION_EN', 'Which month is first in year?');
+//define('BHLE_CAPTCHA_ANSWER_EN', 'January');
+
+define('BHLE_CAPTCHA_QUESTION_CS', 'Který měsíc je první v roce?');
+//define('BHLE_CAPTCHA_ANSWER_CS', 'Leden');
+
+define('BHLE_CAPTCHA_QUESTION_DA', '');
+//define('BHLE_CAPTCHA_ANSWER_DA', '');
+
+define('BHLE_CAPTCHA_QUESTION_NL', '');
+//define('BHLE_CAPTCHA_ANSWER_NL', '');
+
+define('BHLE_CAPTCHA_QUESTION_FI', '');
+//define('BHLE_CAPTCHA_ANSWER_FI', '');
+
+define('BHLE_CAPTCHA_QUESTION_FR', '');
+//define('BHLE_CAPTCHA_ANSWER_FR', '');
+
+define('BHLE_CAPTCHA_QUESTION_DE', '');
+//define('BHLE_CAPTCHA_ANSWER_DE', '');
+
+define('BHLE_CAPTCHA_QUESTION_HU', '');
+//define('BHLE_CAPTCHA_ANSWER_HU', '');
+
+define('BHLE_CAPTCHA_QUESTION_IT', '');
+//define('BHLE_CAPTCHA_ANSWER_IT', '');
+
+define('BHLE_CAPTCHA_QUESTION_PL', '');
+//define('BHLE_CAPTCHA_ANSWER_PL', '');
+
+define('BHLE_CAPTCHA_QUESTION_PT', '');
+//define('BHLE_CAPTCHA_ANSWER_PT', '');
+
+define('BHLE_CAPTCHA_QUESTION_RU', '');
+//define('BHLE_CAPTCHA_ANSWER_RU', '');
+
+define('BHLE_CAPTCHA_QUESTION_ES', '');
+//define('BHLE_CAPTCHA_ANSWER_ES', '');
+
+define('BHLE_CAPTCHA_QUESTION_SV', '');
+//define('BHLE_CAPTCHA_ANSWER_SV', '');
+
+
+/**
+ * Implements hook_enable();
+ */
+function bhle_captcha_enable() {
+  bhle_captcha_update_7000(array());
+  bhle_captcha_update_7001(array());
+}
+
+/**
+ * Set default translations
+ */
+function bhle_captcha_update_7002(&$sandbox) {
+  $qq = db_query("select * from {locales_source} WHERE source LIKE :q", array(':q' => BHLE_CAPTCHA_QUESTION_EN))->fetch();
+  if($qq->lid) {
+    $lid = $qq->lid;
+  } else {
+    $record = array(
+      'location' => '/admin/config/people/captcha/riddler',
+      'textgroup' => 'default',
+      'source' => BHLE_CAPTCHA_QUESTION_EN
+    );
+    drupal_write_record('locales_source', $record);
+    $lid = $record['lid'];
+  }
+  db_query("DELETE FROM {locales_target} WHERE lid = :lid", array(':lid' => $lid));
+  $questions = array(
+    'cs' => BHLE_CAPTCHA_QUESTION_CS,
+    'da' => BHLE_CAPTCHA_QUESTION_DA,
+    'nl' => BHLE_CAPTCHA_QUESTION_NL,
+    'fi' => BHLE_CAPTCHA_QUESTION_FI,
+    'fr' => BHLE_CAPTCHA_QUESTION_FR,
+    'de' => BHLE_CAPTCHA_QUESTION_DE,
+    'hu' => BHLE_CAPTCHA_QUESTION_HU,
+    'it' => BHLE_CAPTCHA_QUESTION_IT,
+    'pl' => BHLE_CAPTCHA_QUESTION_PL,
+    'pt-pt' => BHLE_CAPTCHA_QUESTION_PT,
+    'pt' => BHLE_CAPTCHA_QUESTION_PT,
+    'ru' => BHLE_CAPTCHA_QUESTION_RU,
+    'es' => BHLE_CAPTCHA_QUESTION_ES,
+    'sv' => BHLE_CAPTCHA_QUESTION_SV,
+  );
+  foreach ($questions as $lang => $question) {
+    $record = array(
+      'lid' => $lid,
+      'translation' => $question,
+      'language' => $lang,
+    );
+    drupal_write_record('locales_target', $record);
+  }
+  
+  /*
+  $qa = db_query("select * from {locales_source} WHERE source LIKE :q", array(':q' => BHLE_CAPTCHA_ANSWER_EN))->fetch();
+  if($qa->lid) {
+    $lid = $qa->lid;
+  } else {
+    $record = array(
+      'location' => '/admin/config/people/captcha/riddler',
+      'textgroup' => 'default',
+      'source' => BHLE_CAPTCHA_ANSWER_EN
+    );
+    drupal_write_record('locales_source', $record);
+    $lid = $record['lid'];
+  }
+  db_query("DELETE FROM {locales_target} WHERE lid = :lid", array(':lid' => $lid));
+  $answers = array(
+    'cs' => BHLE_CAPTCHA_ANSWER_CS,
+  );
+  foreach ($answers as $lang => $answer) {
+    $record = array(
+      'lid' => $lid,
+      'translation' => $answer,
+      'language' => $lang,
+    );
+    drupal_write_record('locales_target', $record);
+  }
+   * 
+   */
+}
+
+/**
+ * Set default questions
+ */
+function bhle_captcha_update_7000(&$sandbox) {
+  db_query("TRUNCATE TABLE {riddler_questions};");
+  $record = array('question' => BHLE_CAPTCHA_QUESTION_EN, 'answer' => BHLE_CAPTCHA_ANSWER_EN);
+  drupal_write_record('riddler_questions', $record);
+}
