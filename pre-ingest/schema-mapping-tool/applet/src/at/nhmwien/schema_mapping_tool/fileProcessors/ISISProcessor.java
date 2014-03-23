@@ -6,6 +6,7 @@
 package at.nhmwien.schema_mapping_tool.fileProcessors;
 
 import ISISJAVA.*;
+import at.nhmwien.schema_mapping_tool.mappingProcess.MappingsHandler;
 import java.util.regex.*;
 import java.util.*;
 
@@ -83,6 +84,12 @@ public class ISISProcessor extends FileProcessor {
                 e.printStackTrace();
             }
             
+            // check if the record ends  with an ">", if not append it
+            // this is due to a bug in the ISISAPI
+            if(recordContent.charAt(recordContent.length()-1) != '>') {
+                recordContent += ">";
+            }
+            
             // Add the MFN-Number to the stack
             // TODO Replace IDRecord once custom field adding is supported
             DataRecord nRecord = new DataRecord();
@@ -119,6 +126,7 @@ public class ISISProcessor extends FileProcessor {
 
                 //this.recordsStack.add(nRecord);
                 currFieldRecords.add(nRecord);
+                //System.out.println("Adding: " + nRecord.toString());
 
                 // Find the sub-fields and add them to the stack
                 String[] subFields = m.group(2).split("\\^");
@@ -131,6 +139,7 @@ public class ISISProcessor extends FileProcessor {
 
                         //this.recordsStack.add(nRecord);
                         currFieldRecords.add(nRecord);
+                        //System.out.println("Adding: " + nRecord.toString());
                     }
                 }
                 Collections.sort(currFieldRecords);
@@ -145,6 +154,9 @@ public class ISISProcessor extends FileProcessor {
                 currRecordsStack.put(fieldCode, currRecordsStackEntry);
             }
             
+            // create temporary stack
+            ArrayList<DataRecord> temporaryStack = new ArrayList<DataRecord>();
+            
             // add the temporary stack to the internal recordsStack
             // we use this as the entries are now correctly sorted
             Iterator<Map.Entry<String,ArrayList<ArrayList<DataRecord>>>> crs_It = currRecordsStack.entrySet().iterator();
@@ -154,13 +166,49 @@ public class ISISProcessor extends FileProcessor {
                 while(ce_It.hasNext()) {
                     Iterator<DataRecord> dr_it = ce_It.next().iterator();
                     while( dr_it.hasNext() ) {
-                        this.recordsStack.add(dr_it.next());
+                        temporaryStack.add(dr_it.next());
                     }
                 }
             }
+            
+            // sort by fieldOrder
+            ArrayList<String> baseFieldIDRecords = new ArrayList<String>();
+            ArrayList<String> fieldOrder = MappingsHandler.Self().getInputOrder();
+            for( int i = 0; i < fieldOrder.size(); i++ ) {
+                String currOrderIDRecord = fieldOrder.get(i);
 
-            // Sort collection by fieldID (refer to the compareTo implementation in DataRecord class)
-            //Collections.sort( this.recordsStack );
+                for( int j = 0; j < temporaryStack.size(); j++ ) {
+                    
+                    DataRecord currRecord = temporaryStack.get(j);
+                    String currIDrecord = currRecord.IDRecord;
+                    String currBaseIDRecord = currIDrecord.substring(0,3);
+                    
+                    // ignore any non-base entries if we handled them before
+                    if( currIDrecord.length() > 3 && baseFieldIDRecords.contains(currBaseIDRecord) ) continue;
+                    
+                    if( currIDrecord.equals(currOrderIDRecord) ) {
+                        this.recordsStack.add(currRecord);
+                        
+                        // add sub-fields directly afterwards, but only for base records
+                        if( currIDrecord.length() == 3 ) {
+                            baseFieldIDRecords.add(currIDrecord);
+                            
+                            for( j = j + 1; j < temporaryStack.size(); j++ ) {
+                                DataRecord currNextRecord = temporaryStack.get(j);
+                                String currNextIDRecord = currNextRecord.IDRecord.substring(0, 3);
+                                
+                                if( currNextIDRecord.equals(currIDrecord) ) {
+                                    this.recordsStack.add(currNextRecord);
+                                }
+                                else {
+                                    j--;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         // Check if we are in write mode
         else if( this.writeBuffer != null ) {

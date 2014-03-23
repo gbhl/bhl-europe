@@ -85,4 +85,9 @@ public class DataRecord implements Comparable<DataRecord> {
 
         //return this.IDRecord.compareTo( otherRecord.getIDRecord() );
     }
+
+    @Override
+    public String toString() {
+        return IDRecord + " / " + RecordContent;
+    }
 }

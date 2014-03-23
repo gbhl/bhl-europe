@@ -223,7 +223,7 @@ public class Main {
 
         // Set input and output order (if provided by the config file)
         if( config.containsKey( "config.input-field-order" ) ) MappingsHandler.Self().setInputOrder( (ArrayList<String>) config.getProperty( "config.input-field-order") );;
-        if( config.containsKey( "config.output-field-order" ) ) MappingsHandler.Self().setInputOrder( (ArrayList<String>) config.getProperty( "config.output-field-order") );;
+        if( config.containsKey( "config.output-field-order" ) ) MappingsHandler.Self().setOutputOrder( (ArrayList<String>) config.getProperty( "config.output-field-order") );;
 
         //
         // START PROCESSING HERE
